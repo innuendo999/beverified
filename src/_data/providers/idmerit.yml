@@ -4,13 +4,13 @@ alternate_names: []
 status: published
 seo:
   title: 'IDMERIT Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'IDMERIT review: budget identity-verification API with the cheapest published rate in this category, from $0.10/user/month. Features, pricing, pros & cons, alternatives.'
+  description: 'IDMERIT review: budget-positioned identity-verification API covering 180+ countries and 440+ data sources, listed from $0.10/user/month on Capterra. Features, pricing, pros & cons, alternatives.'
   h1: 'IDMERIT Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/idmerit.jpg
   background: '#8A5CF0'
   wordmark: null
-tagline: Budget identity-verification API with the cheapest published rate in this category
+tagline: Budget-positioned identity-verification API with broad country and data-source coverage
 score: 4.3
 grade: Good
 primary_category: cheap-kyc
@@ -22,54 +22,70 @@ link:
   url: https://www.idmerit.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-07-28'
+last_verified: '2026-10-18'
 updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: 'IDMERIT''s pitch is straightforward: identity verification across 180+ countries starting at $0.10 per user per month, the lowest published rate in this batch. It''s self-funded and smaller than venture-backed rivals, which shows up in brand recognition and depth of add-on tooling, but for teams that just need broad, affordable document and data-source checks, the price is hard to beat.'
+verdict: 'IDMERIT''s pitch is straightforward: identity verification across 180+ countries and territories from 440+ data sources, with a starting price of $0.10 per user per month on its Capterra listing. IDMERIT itself does not publish a rate card and quotes by country, module and volume. It is smaller than venture-backed rivals, which shows up in brand recognition and depth of add-on tooling, but for teams that need broad, affordable document and data-source checks it is worth a quote.'
 what_is:
-- IDMERIT is an identity-verification and fraud-prevention API provider founded in 2014 and headquartered in Carlsbad, California, by Tony Raval. Unlike most venture-backed competitors in this category, IDMERIT has raised no outside funding, building its business instead on serving banks, fintechs, and e-commerce platforms that need affordable identity checks across a wide footprint of countries and data sources.
+- IDMERIT is an identity-verification and fraud-prevention API provider headquartered in San Diego, California, and led by CEO Tony Raval. It says it has sourced identity data for over a decade and is an Inc. 5000 company. Its services include global identity data checks (IDMkyc), ID scanning with facial biometrics (IDMscan), AML screening (IDMaml), business verification (IDMkyb), device fingerprinting, live agent verification and telecom and utility data checks, serving banks, fintechs and e-commerce platforms.
 features:
-- Identity verification across 180+ countries with 440+ underlying data sources.
-- Support for 580+ document types with OCR and barcode recognition.
-- Biometric checks with liveness detection and multi-factor authentication.
-- AML, KYC, and PEP/OFAC screening bundled with core identity checks.
-- Business verification and Video KYC for onboarding.
-- GDPR, HIPAA, and CCPA-compliant data handling.
+- Identity verification across 180+ countries and territories with 440+ underlying data sources.
+- Support for 580+ ID types with document scanning and validation in under 30 seconds.
+- Biometric face matching and live agent verification (IDMlive).
+- AML, KYC and PEP/OFAC screening against 13M+ red-flagged profiles.
+- Business verification covering 330M+ businesses in 140+ jurisdictions.
+- Vendor-stated GDPR, HIPAA and CCPA compliance.
 pricing:
-  summary: IDMERIT's Basic plan starts at $0.10 per user per month for core identity verification, the lowest published entry rate among the providers in this batch. Additional modules like AML/KYC screening and Video KYC are available on higher tiers, quoted based on volume and feature mix.
+  summary: Pricing is not published; IDMERIT quotes on request. Its FAQ says IDMkyc pricing varies by country and IDMscan by module, with discounts for volume and term. Capterra lists a Basic plan from $0.10 per user per month, which is a marketplace listing rather than a rate card on IDMERIT's own site.
   plans:
-  - tier: Basic
+  - tier: Basic (Capterra listing)
     price: $0.10 / user / mo
-    note: Core identity verification
-    extra: Higher tiers add AML/KYC and video verification
-  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as third-party estimates or unverified are not the vendor''s official rate.'
-  verified: null
-  items: []
+    note: Identity verification; third-party listing, not on IDMERIT's site
+    extra: Other modules quoted by country, module and volume
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: List price on IDMERIT's site
+    value: Not published; quoted by country, module and volume
+    kind: official
+    source: 3
+    verified: '2026-10'
+  - label: Free testing
+    value: Sandbox and a manually checked sample of about 100 rows; larger multi-country tests carry a flat fee
+    kind: official
+    source: 3
+    verified: '2026-10'
+  - label: Starting price, Basic plan (Capterra listing)
+    value: $0.10 per user per month
+    kind: third_party
+    source: 4
+    verified: '2026-10'
 facts:
 - label: From
-  value: $0.10/user/mo
-  source: null
+  value: $0.10/user/mo (Capterra listing)
+  source: 4
 - label: Effective
-  value: $0.10/check (Basic)
-  source: null
+  value: Not publicly disclosed
 - label: Founded
-  value: '2014'
-  source: null
+  value: Not publicly disclosed
 - label: HQ
-  value: Carlsbad, CA
-  source: null
+  value: San Diego, CA
+  source: 2
+  evidence: vendor
 - label: Regions
-  value: 180+ countries
-  source: null
+  value: 180+ countries and territories
+  source: 1
+  evidence: vendor
 - label: Compliance
-  value: GDPR, HIPAA, CCPA
-  source: null
+  value: GDPR, HIPAA, CCPA (vendor-stated)
+  source: 1
+  evidence: vendor
 pros:
-- Lowest published entry rate in this batch, at $0.10/user/month
-- 'Broad footprint: 180+ countries, 580+ document types, 440+ data sources'
-- Self-funded and profitable-by-design, without investor pressure to upsell
+- Low listed entry price, from $0.10 per user per month on Capterra
+- 'Broad footprint: 180+ countries, 580+ ID types, 440+ data sources'
+- Free sandbox and sample testing before you commit
 cons:
 - Smaller brand recognition than venture-backed competitors
-- Narrower depth on advanced fraud/AML tooling than category leaders
+- No rate card on its own site; prices vary by country and module
 - Limited public information on enterprise-scale support and SLAs
 alternatives:
 - slug: trulioo
@@ -82,40 +98,78 @@ choose_instead:
 - slug: trulioo
   text: you need a broader, more established data-layer platform and enterprise pricing is workable.
 - slug: sumsub
-  text: you want an all-in-one KYC/AML platform with a proven track record at similar per-check pricing.
+  text: you want an all-in-one KYC/AML platform with a proven track record and a published rate card.
 user_reviews:
-  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  legacy_note: null
   praise:
-  - 'Pricing (frequently cited): reviewers highlight the low per-user cost relative to competitors.'
-  - 'Ease of implementation: users describe straightforward integration and responsive support.'
+  - 'Pricing: Capterra reviewers highlight the low cost.'
+  - 'Ease of implementation: Capterra reviewers describe easy integration, responsive support and fast, accurate verification.'
   criticize:
-  - 'Feature depth: some reviews note fewer advanced fraud-detection features than larger platforms.'
-  - 'Brand maturity: smaller companies sometimes want a more established vendor for procurement reasons.'
+  - 'Feature depth: fewer advanced fraud-detection features than larger platforms.'
+  - 'Brand maturity: some buyers want a more established vendor for procurement reasons.'
   by_profile:
-  - Startups and SMBs value IDMERIT for its low per-check cost at meaningful volume.
+  - Startups and SMBs value IDMERIT for its low entry price.
   - Businesses in emerging markets benefit from its broad country and document coverage.
   - Larger enterprises more often evaluate it alongside better-funded competitors before committing.
 faq:
 - q: How much does IDMERIT cost?
-  a: IDMERIT's Basic plan starts at $0.10 per user per month for core identity verification, one of the lowest published rates in this category. AML/KYC and Video KYC modules are priced on higher tiers.
+  a: Pricing is not published on IDMERIT's site; it quotes by country, module and volume. Capterra lists a Basic plan starting at $0.10 per user per month, but that is a marketplace listing, not an official rate card.
 - q: How many countries does IDMERIT cover?
-  a: IDMERIT verifies identities across 180+ countries using more than 440 data sources and support for 580+ document types.
-- q: Is IDMERIT venture-funded?
-  a: No. IDMERIT has not raised outside funding; it has grown as a self-funded, profitable business since its 2014 founding.
+  a: IDMERIT says it verifies identities across 180+ countries and territories using 440+ data sources, with support for 580+ ID types.
+- q: Does IDMERIT offer a free trial?
+  a: Not a standard trial. Its FAQ describes free testing through a sandbox with sample data or a manually checked sample of about 100 rows; larger multi-country tests carry a flat fee.
 - q: Does IDMERIT support AML screening?
-  a: Yes. IDMERIT offers AML, KYC, and PEP/OFAC screening alongside its core identity-verification checks.
+  a: Yes. IDMERIT offers AML, KYC, and PEP/OFAC screening (IDMaml) alongside its core identity-verification checks.
 - q: What is the best alternative to IDMERIT?
-  a: Sumsub is the best alternative if you want a more established, published-pricing all-in-one platform. Trulioo is the closest fit for broader data-layer proofing at enterprise scale.
+  a: Sumsub is the best alternative if you want a more established all-in-one platform with a published rate card. Trulioo is the closest fit for broader data-layer proofing at enterprise scale.
 - q: Who are IDMERIT's main competitors?
-  a: IDMERIT competes with Trulioo and Sumsub mainly on price. Its published per-user rate is the lowest in this category.
+  a: IDMERIT competes with Trulioo and Sumsub, mainly on price and data-source coverage.
 segments: []
 capabilities: {}
-certifications: []
-user_ratings: []
+certifications:
+- name: SOC 2 Type 2
+  what: Security controls audit
+  status: vendor_stated
+  source: 1
+- name: ISO/IEC 27001
+  what: Information security
+  status: vendor_stated
+  source: 1
+user_ratings:
+- platform: G2
+  rating: 4.9
+  count: 19
+  checked: '2026-10'
+  url: https://www.g2.com/sellers/idmerit
+- platform: Capterra
+  rating: 4.7
+  count: 3
+  checked: '2026-10'
+  url: https://www.capterra.com/p/172041/FS-ISAC
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
-sources: []
+sources:
+- title: IDMERIT homepage (services, coverage, compliance)
+  publisher: IDMERIT
+  url: https://www.idmerit.com/
+  accessed: '2026-10'
+- title: Our Story
+  publisher: IDMERIT
+  url: https://www.idmerit.com/our-story/
+  accessed: '2026-10'
+- title: FAQs
+  publisher: IDMERIT
+  url: https://www.idmerit.com/faqs/
+  accessed: '2026-10'
+- title: IDMERIT Identity Verification pricing and reviews
+  publisher: Capterra
+  url: https://www.capterra.com/p/172041/FS-ISAC
+  accessed: '2026-10'
+- title: IDMERIT seller profile and reviews
+  publisher: G2
+  url: https://www.g2.com/sellers/idmerit
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -124,7 +178,15 @@ entity:
   - https://www.linkedin.com/company/idmerit
   - https://www.crunchbase.com/organization/idmerit
 legacy_issues: []
-legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure above directly against IDMERIT's official pricing page and profiles before this page goes live.
+legacy_editorial_note: null
+verification_notes:
+- Founding year conflicts across third parties (G2 seller profile 2014, GetApp 2016); IDMERIT's own pages state none. Set to Not publicly disclosed.
+- HQ San Diego per IDMERIT's Our Story page; G2 seller profile says Carlsbad, CA. The old page said Carlsbad.
+- IDMERIT's Our Story and FAQ pages still say "over 90 countries" and "600+ databases"; homepage says 180+ countries and 440+ sources. Homepage figures used.
+- The $0.10 per user per month figure appears only on Capterra/GetApp listings, not on idmerit.com; the pricing page did not load.
+- The old claim that IDMERIT is self-funded with no outside funding could not be confirmed and was removed.
+- Video KYC as a named product not found; IDMlive (live agent verification) listed instead.
+- SOC 2 Type 2 and ISO 27001 are logos on the homepage only; no certificate opened.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

@@ -113,7 +113,7 @@ alternatives:
   best_for: Developer-Friendly
 choose_instead:
 - slug: sumsub
-  text: you want a broader all-in-one compliance suite with crypto and travel-rule depth.
+  text: you want published compliance-tier pricing that bundles AML screening and a 14-day free trial.
 - slug: jumio
   text: you need the broadest enterprise track record and don't mind sales-only pricing.
 - slug: onfido
@@ -139,7 +139,7 @@ faq:
 - q: Can Shufti Pro deploy on-premise?
   a: Yes. Shufti Pro supports SaaS, private-cloud, and on-premise deployment, which suits clients with strict data-residency requirements.
 - q: What is the best alternative to Shufti Pro?
-  a: Sumsub is the strongest alternative if you want a broader all-in-one compliance suite with crypto coverage.
+  a: Sumsub is the strongest alternative if you want a published compliance tier that bundles AML screening, ongoing monitoring and a free trial.
 - q: Who are Shufti Pro's main competitors?
   a: Shufti Pro competes with Sumsub, Jumio, and Onfido, differentiating mainly through geographic/language breadth and flexible deployment options.
 segments: []
@@ -232,7 +232,7 @@ verification_notes:
 - Brand: the site and press now use "Shufti"; the legal entity and iBeta letters use "Shufti Pro". No rebrand announcement was found. Added "Shufti" to alternate_names.
 - Old office list (US, Poland, UAE) replaced; Poland is not among the eight offices listed.
 - Homepage claims a Trustpilot 4.8; Trustpilot was not opened, so it is not recorded.
-- choose_instead for Sumsub rewritten because "published per-check pricing instead of a sales quote" no longer distinguishes Sumsub; Sumsub's own pricing was not re-checked here.
+- choose_instead and FAQ for Sumsub rewritten because "published per-check pricing instead of a sales quote" no longer distinguishes Sumsub; the new wording uses Sumsub's own record (src/_data/providers/sumsub.yml), not re-checked here.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

@@ -23,62 +23,88 @@ link:
   url: https://sumsub.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-07-25'
+last_verified: '2026-10-18'
 updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: 'Sumsub stands out in this category for one simple reason: it publishes its prices. It also has a unified KYC, KYB, transaction-monitoring and fraud-prevention suite that''s popular with crypto exchanges and fintechs, which makes it the easiest all-in-one platform in this batch to evaluate without a sales call. Minimum monthly commitments can be steep for very small teams.'
+verdict: 'Sumsub stands out in this category for one simple reason: it publishes its prices. It also offers KYC, KYB, transaction monitoring and fraud prevention in one platform that is popular with crypto exchanges and fintechs, which makes it the easiest all-in-one platform in this batch to evaluate without a sales call. Minimum monthly commitments can be steep for very small teams, and KYB, non-document checks and transaction monitoring sit in the custom plan.'
 what_is:
-- Sumsub is a KYC/AML verification platform founded in 2015 and headquartered in London, with roughly 595 employees. It serves more than 2,000 clients, including Binance, Bybit, Wirex, and TransferGo, and is particularly strong with crypto and fintech businesses that need document verification, biometric checks, and AML screening in one platform.
+- Sumsub (legal name Sum and Substance Ltd) is a KYC/AML verification platform founded in 2015, with its registered office in London and offices in Singapore, Riga, Limassol, Berlin, Miami, Dubai and Tel Aviv. It says it is trusted by more than 4,000 companies, including Bybit and Wirex, and is particularly strong with crypto and fintech businesses that need document verification, biometric checks and AML screening in one platform.
 features:
-- Document and biometric verification with liveness and face match, with around a 99% completion rate in roughly one second.
-- Non-document verification against government databases.
-- Sanctions and PEP screening across OFAC, UN, HMT, EU, and DFAT lists.
+- Document and biometric verification with liveness and face match, covering 14,000+ document types in 220+ countries and territories, with a stated 20-second average verification time.
+- Non-document verification against government and other databases.
+- Sanctions and PEP screening, including OFAC, UN, HMT, EU and DFAT lists.
 - KYB and UBO (ultimate beneficial owner) verification for business onboarding.
-- Ongoing transaction monitoring for AML compliance.
+- Transaction monitoring for AML compliance.
 - Fraud-prevention tooling layered on top of the core verification flow.
 pricing:
-  summary: 'Sumsub publishes its pricing: Basic runs $1.35 per verification with a $149/month minimum, aimed at non-regulated fraud and pass-rate use cases. Compliance runs $1.85 per verification with a $299/month minimum, adding AML screening, ongoing monitoring, and proof-of-address checks. Enterprise pricing is custom above that. Both published tiers include a 14-day free trial.'
+  summary: 'Sumsub publishes its pricing. Basic is $1.35 per verification with a $149 monthly minimum, aimed at non-regulated businesses, and covers ID verification, liveness and face match, reusable KYC, email and phone checks and Travel Rule. Compliance is $1.85 per verification with a $299 monthly minimum and adds AML screening, ongoing AML monitoring and address verification. A custom plan, quoted on request, adds non-document verification, business verification, transaction monitoring and fraud prevention. A 14-day free trial includes 50 free checks.'
   plans:
   - tier: Basic
     price: $1.35 / verification
-    note: '$149/mo minimum: non-regulated, fraud and pass-rate use cases'
-    extra: 14-day free trial available
+    note: '$149/mo minimum: non-regulated businesses, ID verification, liveness and face match'
+    extra: 14-day free trial with 50 checks
   - tier: Compliance
     price: $1.85 / verification
-    note: '$299/mo minimum: adds AML screening, ongoing monitoring and proof of address'
-    extra: 14-day free trial available
-  - tier: Enterprise
+    note: '$299/mo minimum: adds AML screening, ongoing monitoring and address verification'
+    extra: 14-day free trial with 50 checks
+  - tier: Custom plan
     price: Custom
-    note: Volume pricing & dedicated support
+    note: Adds non-doc checks, business verification, transaction monitoring, fraud prevention
     extra: Contact sales for a quote
-  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as third-party estimates are not the vendor''s official rate.'
-  verified: null
-  items: []
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Basic
+    value: $1.35 / verification, $149 monthly minimum
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Compliance
+    value: $1.85 / verification, $299 monthly minimum
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Custom plan
+    value: Quoted on request
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Free trial
+    value: 14 days, 50 free checks
+    kind: official
+    source: 1
+    verified: '2026-10'
 facts:
 - label: From
   value: $1.35/verification
-  source: null
+  source: 1
+  evidence: vendor
 - label: Effective
-  value: $1.35 to $1.85/check
-  source: null
+  value: $1.35 to $1.85/verification on published plans
+  source: 1
+  evidence: vendor
 - label: Founded
   value: '2015'
-  source: null
+  source: 5
+  evidence: independent
 - label: HQ
-  value: London, UK
-  source: null
+  value: London, UK (registered office)
+  source: 5
+  evidence: independent
 - label: Regions
-  value: 220+ countries
-  source: null
+  value: 220+ countries and territories
+  source: 3
+  evidence: vendor
 - label: Clients
-  value: 2,000+ incl. Binance, Bybit
-  source: null
+  value: 4,000+ companies, incl. Bybit and Wirex
+  source: 2
+  evidence: vendor
 pros:
 - Transparent, published pricing, which is rare in this category
-- 'Genuinely unified platform: KYC, KYB, monitoring, and fraud prevention in one suite'
+- 'Unified platform: KYC, KYB, monitoring, and fraud prevention in one suite'
 - Strong track record with crypto exchanges and fintechs specifically
 cons:
-- Minimum monthly commitments can be steep for very small teams
-- API documentation could be improved, per some user reviews
+- Minimum monthly commitments ($149 and $299) can be steep for very small teams
+- KYB, non-document checks and transaction monitoring are only in the custom, quote-based plan
 - Some reviewers report occasional false-positive flags
 alternatives:
 - slug: jumio
@@ -98,38 +124,115 @@ choose_instead:
 - slug: trulioo
   text: non-documentary, database-driven identity proofing matters more than an all-in-one suite.
 user_reviews:
-  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  legacy_note: null
   praise:
-  - 'Pricing transparency (frequently cited): reviewers consistently call out the published rate card as a differentiator.'
+  - 'Pricing transparency: reviewers call out the published rate card as a differentiator.'
   - 'Platform breadth: users like having KYC, KYB and monitoring in one system instead of stitching tools together.'
   criticize:
-  - 'Minimum commitments: smaller teams sometimes find the $149 to $299/mo floor high relative to their volume.'
+  - 'Minimum commitments: smaller teams can find the $149 to $299 monthly floor high relative to their volume.'
   - 'False positives: some reviews mention occasional over-flagging that needs manual review.'
   by_profile:
-  - Crypto exchanges and fintechs are Sumsub's strongest customer profile, citing its screening depth.
+  - Crypto exchanges and fintechs are Sumsub's strongest customer profile.
   - Mid-market teams value having KYC, KYB, and AML monitoring under one contract.
   - Very small teams sometimes find monthly minimums high relative to their verification volume.
 faq:
 - q: How much does Sumsub cost?
-  a: Sumsub's Basic plan is $1.35 per verification with a $149/month minimum; Compliance is $1.85 per verification with a $299/month minimum and adds AML screening and ongoing monitoring. Enterprise pricing is custom. Both published tiers include a 14-day free trial.
+  a: Sumsub's Basic plan is $1.35 per verification with a $149 monthly minimum. Compliance is $1.85 per verification with a $299 monthly minimum and adds AML screening, ongoing monitoring and address checks. A custom plan with KYB, non-document checks and transaction monitoring is quoted on request. A 14-day free trial includes 50 checks.
 - q: Does Sumsub support KYB?
-  a: Yes. Sumsub includes KYB and UBO verification for business onboarding alongside its individual identity-verification tools.
+  a: Yes. Sumsub offers business verification, including UBO checks, in its custom plan alongside its individual identity-verification tools.
 - q: Is Sumsub good for crypto businesses?
-  a: Yes. Crypto exchanges including Binance, Bybit and Wirex use Sumsub for its combined KYC, AML and transaction-monitoring capabilities.
-- q: How does Sumsub compare to Jumio?
-  a: Sumsub publishes its pricing and bundles KYC, KYB, and monitoring in one platform; Jumio has greater enterprise scale but requires a sales call for pricing.
+  a: Sumsub is widely used in crypto. Bybit has used it since 2021 and Wirex is listed as a customer, and its plans include Travel Rule support.
+- q: Has Sumsub's liveness check been independently tested?
+  a: Yes. iBeta lists Sumsub Liveness as passing ISO/IEC 30107-3 presentation attack detection testing at Level 1 (Feb 2025), Level 2 (Mar 2025) and Level 3 (Sep 2026).
 - q: What is the best alternative to Sumsub?
   a: Trulioo is the strongest alternative if non-documentary, database-driven proofing matters more than an all-in-one suite. Jumio is the closest match on enterprise scale.
 - q: Who are Sumsub's main competitors?
   a: Sumsub competes with Jumio, Onfido, and Trulioo, differentiating mainly through published pricing and a unified KYC/KYB/monitoring platform.
 segments: []
 capabilities: {}
-certifications: []
-user_ratings: []
+certifications:
+- name: iBeta ISO/IEC 30107-3 PAD Level 3
+  what: Liveness, Sumsub Liveness (Sep 2026)
+  status: confirmed
+  source: 6
+- name: iBeta ISO/IEC 30107-3 PAD Level 2
+  what: Liveness, Sumsub Liveness (Mar 2025)
+  status: confirmed
+  source: 6
+- name: iBeta ISO/IEC 30107-3 PAD Level 1
+  what: Liveness, Sumsub Liveness (Feb 2025)
+  status: confirmed
+  source: 6
+- name: ISO/IEC 27001
+  what: Information security
+  status: vendor_stated
+  source: 4
+- name: SOC 2 Type 2
+  what: Security controls attestation
+  status: vendor_stated
+  source: 4
+- name: PCI DSS
+  what: Payment card data security
+  status: vendor_stated
+  source: 4
+- name: ETSI EN 319 / TS 119 (eIDAS)
+  what: Trust services conformity
+  status: vendor_stated
+  source: 4
+- name: ISO/IEC 29003:2018
+  what: Identity proofing
+  status: vendor_stated
+  source: 4
+user_ratings:
+- platform: G2
+  rating: 4.6
+  count: 129
+  checked: '2026-10'
+  url: https://www.g2.com/products/sumsub/reviews
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
-sources: []
+sources:
+- title: Pricing
+  publisher: Sumsub
+  url: https://sumsub.com/pricing/
+  accessed: '2026-10'
+- title: About Sumsub
+  publisher: Sumsub
+  url: https://sumsub.com/about/
+  accessed: '2026-10'
+- title: ID verification
+  publisher: Sumsub
+  url: https://sumsub.com/id-verification/
+  accessed: '2026-10'
+- title: Sumsub Trust Center
+  publisher: Sumsub
+  url: https://sumsub.com/sumsub-trust-center/
+  accessed: '2026-10'
+- title: SUM AND SUBSTANCE LTD (09688671)
+  publisher: Companies House
+  url: https://find-and-update.company-information.service.gov.uk/company/09688671
+  accessed: '2026-10'
+- title: ISO 30107-3 presentation attack detection confirmation letters
+  publisher: iBeta Quality Assurance
+  url: https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/
+  accessed: '2026-10'
+- title: Bybit success story
+  publisher: Sumsub
+  url: https://sumsub.com/customers/bybit/
+  accessed: '2026-10'
+- title: Customers
+  publisher: Sumsub
+  url: https://sumsub.com/customers/
+  accessed: '2026-10'
+- title: AML screening
+  publisher: Sumsub
+  url: https://sumsub.com/aml-screening/
+  accessed: '2026-10'
+- title: Sumsub reviews
+  publisher: G2
+  url: https://www.g2.com/products/sumsub/reviews
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -138,7 +241,16 @@ entity:
   - https://www.linkedin.com/company/sumsub
   - https://www.crunchbase.com/organization/sumsub
 legacy_issues: []
-legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every third-party estimate above directly against Sumsub's official pricing page and profiles before this page goes live.
+legacy_editorial_note: null
+verification_notes:
+- 'Binance and TransferGo: not on the current customers page; only a 2023 Benzinga article (not opened) mentions Binance. Removed. Bybit confirmed by a vendor case study (source 7); Wirex on the customers page (source 8).'
+- '595 employees: not found on vendor pages; removed.'
+- 'Clients 2,000+ is outdated; vendor now says 4,000+ (sources 2 and homepage).'
+- '"99% completion rate in roughly one second": not found. ID verification page states 20 seconds average (source 3).'
+- 'Trust Center lists 17 items (also ISO 22301, 27017, 27018, 31000, 9001, 29115, SOC 1 Type 1, pen testing). Only the main ones are listed in certifications; none opened as a certificate except iBeta letters on the iBeta list. The iBeta entries are under vendor name Raritex Trade, product Sumsub Liveness.'
+- 'The free trial is described for the plans in general, not per tier.'
+- 'G2 rating page showed 129 reviews; a G2 pricing page the same day showed 130. Themes could not be read; kept as general statements without counts.'
+- 'API documentation con: no source; replaced with a sourced plan-scope con.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

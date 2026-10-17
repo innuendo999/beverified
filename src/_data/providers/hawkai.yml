@@ -4,13 +4,13 @@ alternate_names: []
 status: published
 seo:
   title: 'Hawk AI Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'Hawk AI review: explainable-AI transaction monitoring with a pattern-sharing network across institutions. Features, pricing, pros & cons, alternatives.'
+  description: 'Hawk AI review: explainable-AI AML transaction monitoring, screening and fraud detection for banks and fintechs. Features, pricing, pros & cons, alternatives.'
   h1: 'Hawk AI Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/hawkai.webp
   background: '#835AEB'
   wordmark: null
-tagline: Explainable-AI transaction monitoring with a pattern-sharing network across institutions
+tagline: Explainable-AI AML transaction monitoring, screening and fraud detection for banks and fintechs
 score: 4.6
 grade: Great
 primary_category: aml/banks
@@ -22,51 +22,62 @@ link:
   url: https://www.hawk.ai
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-07-29'
+last_verified: '2026-10-18'
 updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: Hawk (formerly HAWK:AI) built one of the earlier explainable-AI approaches to AML transaction monitoring, pairing rules with behavioral AI and a cross-institution pattern-sharing network that creates a network effect against novel crime patterns. Serving Tier-1 banks down to mid-market fintechs, it reports roughly 90% alert accuracy and 50 to 70% fewer false positives.
+verdict: Hawk (formerly HAWK:AI) built one of the earlier explainable-AI approaches to AML transaction monitoring, pairing rules with behavioral AI and adding screening, fraud detection and AI agents for investigations on one platform. It serves Tier-1 banks down to mid-market fintechs, and by its own figures cuts false alerts by 70% and AML investigation time by 62%.
 what_is:
-- Hawk is an AML transaction-monitoring and screening company founded in 2018 and headquartered in Munich, Germany, by CEO Tobias Schweiger and Wolfgang Berner (formerly branded HAWK:AI). Backed by €51.8M in Series C funding led by One Peak (with earlier backing from Macquarie, Rabobank, and others), it serves 80+ clients globally, from Tier-1 banks to mid-market fintechs including Ecobank, VakifBank International, and Worldline.
+- Hawk is an AML, screening and fraud-prevention company founded in 2018 in Munich, Germany, by Tobias Schweiger (CEO) and Wolfgang Berner; it was originally known as HAWK:AI and its legal entity is Hawk AI GmbH. In April 2025 it raised a $56 million Series C led by One Peak, with Macquarie Capital, Rabobank, BlackFin Capital Partners and others, and at that point served more than 80 clients from Tier-1 banks to mid-market fintechs. Customers shown on its site include Ecobank, Vakif Bank, Synctera, VR Payment, Ebury and Alviere.
 features:
-- AML transaction monitoring combining rules and behavioral AI.
-- Payments and customer screening against sanctions/watchlists.
-- Transaction fraud detection.
-- Customer risk rating using static and dynamic data.
-- Patent-pending Explainable AI for audit-ready decisioning.
-- Cross-institution pattern-data pooling and sharing (network effect).
+- AML transaction monitoring combining rules and behavioral AI, plus an AML AI overlay for existing systems.
+- Customer and payment screening against sanctions and watchlists.
+- Transaction fraud, check fraud, and scam and mule detection, with a combined FRAML option.
+- Customer risk rating and entity risk detection.
+- Explainable AI for audit-ready decisioning.
+- AI agents for AML investigations, CDD and screening, with a unified case manager and SAR/CTR filing.
 pricing:
-  summary: Hawk does not publish pricing; its AML transaction-monitoring platform is licensed to financial institutions based on volume and module selection.
+  summary: Pricing is not published; Hawk quotes on request. Its platform is licensed to financial institutions based on volume and module selection.
   plans:
   - tier: Enterprise Quote
     price: Custom
-    note: Transaction-monitoring platform licensing
+    note: AML, screening and fraud platform licensing
     extra: Not publicly disclosed; contact sales
-  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
-  verified: null
-  items: []
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Published pricing
+    value: None; quote on request
+    kind: official
+    source: 2
+    verified: '2026-10'
 facts:
 - label: From
   value: Custom quote
-  source: null
-- label: Effective
-  value: Not disclosed
-  source: null
+  source: 2
+  evidence: vendor
 - label: Founded
   value: '2018'
-  source: null
+  source: 1
+  evidence: vendor
 - label: HQ
   value: Munich, Germany
-  source: null
-- label: Regions
-  value: Global
-  source: null
+  source: 3
+  evidence: vendor
+- label: Clients
+  value: 80+ (Apr 2025)
+  source: 4
+  evidence: independent
 - label: Funding
-  value: €51.8M Series C (One Peak)
-  source: null
+  value: $56M Series C, Apr 2025 (led by One Peak)
+  source: 4
+  evidence: independent
+- label: Certifications
+  value: ISO/IEC 27001:2022, SOC 2 Type II (vendor-stated)
+  source: 5
+  evidence: vendor
 pros:
 - Explainable AI built for regulator-facing audit transparency
-- Cross-institution pattern-sharing network creates a genuine network effect against novel crime
-- Reported ~90% alert accuracy and 50 to 70% fewer false positives
+- AML monitoring, screening and fraud detection on one platform with a unified case manager
+- Vendor-reported 70% fewer false alerts and 62% less AML investigation time
 cons:
 - Enterprise/mid-market focus, not built for very small teams
 - No published pricing
@@ -89,38 +100,72 @@ choose_instead:
 - slug: nice-actimize
   text: you want the widest end-to-end financial-crime product suite.
 user_reviews:
-  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  legacy_note: null
   praise:
-  - 'Explainability (frequently cited): reviewers highlight audit-ready reasoning behind AI-flagged alerts.'
-  - 'Network effect: users note that pattern-sharing across institutions catches novel fraud faster.'
+  - 'Explainability: AI-flagged alerts come with reasoning that compliance teams can show to auditors.'
+  - 'Fewer false positives: lower alert volumes are the main operational benefit buyers look for.'
   criticize:
-  - 'Scale fit: some reviewers note it''s built for mid-market and enterprise teams rather than the smallest ones.'
+  - 'Scale fit: built for mid-market and enterprise teams rather than the smallest ones.'
   - 'Pricing opacity: no published rate card.'
   by_profile:
   - Tier-1 and mid-market banks value Hawk's explainable-AI audit trail for regulators.
-  - Payment companies benefit from the cross-institution pattern-sharing network.
+  - Payment companies and fintechs use the combined fraud and AML (FRAML) setup.
   - Very small teams typically evaluate lighter-weight, self-serve AML tools instead.
 faq:
 - q: How much does Hawk cost?
-  a: Hawk does not publish pricing; its transaction-monitoring platform is licensed to financial institutions based on volume and module selection.
+  a: Hawk does not publish pricing; its platform is licensed to financial institutions based on volume and module selection.
 - q: What is explainable AI in Hawk's platform?
-  a: Hawk's patent-pending Explainable AI produces audit-ready reasoning behind AI-flagged alerts, aimed at satisfying regulator scrutiny.
-- q: What is Hawk's pattern-sharing network?
-  a: Hawk pools and shares transaction pattern data across client institutions, creating a network effect that helps catch novel fraud and money-laundering patterns faster.
+  a: Hawk's explainable AI shows the reasoning behind AI-flagged alerts, so investigators and auditors can see why a transaction or customer was flagged.
+- q: What is FRAML?
+  a: FRAML is Hawk's combined fraud and AML offering, which brings fraud and AML data together on one platform instead of separate systems.
 - q: Who uses Hawk?
-  a: Hawk serves more than 80 clients globally, from Tier-1 banks to mid-market fintechs, including Ecobank, VakifBank International, and Worldline.
+  a: Hawk had more than 80 clients in April 2025, from Tier-1 banks to mid-market fintechs. Customers shown on its site include Ecobank, Vakif Bank, Synctera, VR Payment, Ebury and Alviere.
+- q: Is Hawk SOC 2 audited?
+  a: Hawk says it holds ISO/IEC 27001:2022 certification and has completed a SOC 2 Type II examination; its published SOC 2 executive summary names A-Lign as the auditor.
 - q: What is the best alternative to Hawk?
   a: Feedzai is the best alternative for Tier-1 bank-scale real-time payment fraud. ComplyAdvantage is the closest fit for sanctions/PEP data depth.
 - q: Who are Hawk's main competitors?
-  a: Hawk competes with Feedzai, ComplyAdvantage, and NICE Actimize, differentiating through explainable AI and cross-institution pattern sharing.
+  a: Hawk competes with Feedzai, ComplyAdvantage, and NICE Actimize, differentiating through explainable AI across AML, screening and fraud.
 segments: []
 capabilities: {}
-certifications: []
+certifications:
+- name: ISO/IEC 27001:2022
+  what: Information security
+  status: vendor_stated
+  source: 5
+- name: SOC 2 Type II
+  what: Security controls report (A-Lign)
+  status: vendor_stated
+  source: 6
 user_ratings: []
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
-sources: []
+sources:
+- title: About Hawk
+  publisher: Hawk
+  url: https://hawk.ai/about-us
+  accessed: '2026-10'
+- title: Hawk homepage
+  publisher: Hawk
+  url: https://hawk.ai/
+  accessed: '2026-10'
+- title: Imprint (Hawk AI GmbH)
+  publisher: Hawk
+  url: https://hawk.ai/imprint
+  accessed: '2026-10'
+- title: Hawk raises $56 million in Series C funding to help banks fight financial crime
+  publisher: Finovate
+  url: https://finovate.com/hawk-raises-56-million-in-series-c-funding-to-help-banks-fight-financial-crime/
+  accessed: '2026-10'
+- title: Information security
+  publisher: Hawk
+  url: https://hawk.ai/security-compliance/information-security
+  accessed: '2026-10'
+- title: Hawk SOC 2 executive summary
+  publisher: Hawk
+  url: https://insights.hawk.ai/hubfs/Marketing/Trust%20Center/Compliance/Hawk-SOC2-Executive-Summary.pdf
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -129,7 +174,16 @@ entity:
   - https://www.linkedin.com/company/hawk-ai
   - https://www.crunchbase.com/organization/hawk-ai
 legacy_issues: []
-legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against Hawk AI's official pricing page and profiles before this page goes live.
+legacy_editorial_note: null
+verification_notes:
+- '"Roughly 90% alert accuracy" and "50 to 70% fewer false positives" not found; replaced with current homepage figures (70% fewer false alerts, 62% less investigation time), which are vendor claims with no methodology.'
+- 'Cross-institution "pattern-sharing network" not found on the current homepage or about page; removed from tagline, pros, features, FAQ and user themes. Could not search further (search budget exhausted); re-check if Hawk still markets a consortium or network feature.'
+- '"Patent-pending" explainable AI not found on pages opened; wording removed.'
+- '"€51.8M Series C" not confirmed; sources give $56M (Finovate, 8 Apr 2025; Finextra). Euro figure dropped.'
+- Worldline not shown among current customer logos; replaced with the logos and case studies on the homepage. VakifBank International is shown as "Vakif Bank".
+- Client count 80+ is from April 2025 coverage; no current count on Hawk's site.
+- ISO/IEC 27001 certificate PDF is linked from Hawk's page but was not opened; certification body not named. SOC 2 executive summary (A-Lign, Apr to Jul 2023 observation period) does not state the report type explicitly; Hawk's page calls it Type II. Both kept as vendor-stated.
+- G2 page could not be fetched; no user ratings added. User review themes are general statements, not counted themes.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
