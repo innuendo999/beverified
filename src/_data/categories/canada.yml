@@ -6,9 +6,6 @@ seo:
   h1: Best KYC & AML Providers for Canada in 2026
 breadcrumb_label: Best KYC & AML Providers for Canada
 quick_answer: KYCAID is the best overall pick with clean FINTRAC-aligned workflows. Veriff leads on biometric accuracy for consumer onboarding, and Onfido has the broadest bilingual EN/FR document support. We compared 4 providers on document coverage, bilingual support, and FINTRAC-readiness below.
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-24'
 legacy_stats:
 - value: '4'
@@ -49,23 +46,6 @@ explainer_html:
   <a class="entity-card__cta" href="/methodology/">See how we evaluate every provider on this list in our full methodology →</a>
 
   </section>'
-- '<section class="section-border-top" style="padding:28px 0;">
-
-  <h2 style="font-size:16px;margin-bottom:14px;">Related categories</h2>
-
-  <div style="display:flex;gap:8px;flex-wrap:wrap;">
-
-  <a class="tag-pill" href="/providers/aml/banks/" style="font-size:13px;padding:8px 14px;">AML for Banks</a>
-
-  <a class="tag-pill" href="/providers/identity-verification/" style="font-size:13px;padding:8px 14px;">Identity Verification</a>
-
-  <a class="tag-pill" href="/providers/brazil/" style="font-size:13px;padding:8px 14px;">Brazil</a>
-
-  <a class="tag-pill" href="/providers/india/" style="font-size:13px;padding:8px 14px;">India</a>
-
-  </div>
-
-  </section>'
 faq:
 - q: Who regulates KYC/AML in Canada?
   a: FINTRAC sets customer due diligence and reporting obligations for money services businesses and financial entities, while OSFI supervises the ongoing risk management of federally regulated banks and insurers.
@@ -79,7 +59,15 @@ faq:
   a: FINTRAC governs onboarding-level customer due diligence and suspicious-transaction reporting; OSFI oversees the broader ongoing risk-management practices of federally regulated financial institutions.
 - q: Do Canadian KYC rules differ by province?
   a: Federal AML rules apply nationwide, but accepted ID document formats — such as provincial driver's licences — vary by province, so document coverage needs to span all of them.
-adjacent: []
+adjacent:
+- aml/banks
+- identity-verification
+- brazil
+- india
 capability_columns: []
 faq_templates: []
 legacy_issues: []
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

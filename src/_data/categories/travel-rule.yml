@@ -6,9 +6,6 @@ seo:
   h1: Best Crypto Travel Rule Providers in 2026
 breadcrumb_label: Best Crypto Travel Rule Providers
 quick_answer: Notabene leads on hosted, protocol-based exchange across VASPs. Sygna Bridge is the top pick for high-volume exchanges, and VerifyVASP has the strongest APAC coverage. If you need to self-host and keep data in your own environment, 21 Analytics is the option to look at. We compared 5 providers on protocol and network support, counterparty coverage, and message reliability below.
-reviewer:
-  name: David Okafor
-  credential: null
 last_verified: '2026-09-15'
 legacy_stats:
 - value: '5'
@@ -71,23 +68,6 @@ explainer_html:
   <a class="entity-card__cta" href="/methodology/">See how we evaluate every provider on this list in our full methodology →</a>
 
   </section>'
-- '<section class="section-border-top" style="padding:28px 0;">
-
-  <h2 style="font-size:16px;margin-bottom:14px;">Related categories</h2>
-
-  <div style="display:flex;gap:8px;flex-wrap:wrap;">
-
-  <a class="tag-pill" href="/providers/crypto/" style="font-size:13px;padding:8px 14px;">Crypto KYC</a>
-
-  <a class="tag-pill" href="/providers/aml/" style="font-size:13px;padding:8px 14px;">AML Software</a>
-
-  <a class="tag-pill" href="/providers/aml/banks/" style="font-size:13px;padding:8px 14px;">AML for Banks</a>
-
-  <a class="tag-pill" href="/providers/kyb/" style="font-size:13px;padding:8px 14px;">KYB (Know Your Business)</a>
-
-  </div>
-
-  </section>'
 faq:
 - q: What is the crypto Travel Rule?
   a: The Travel Rule, FATF Recommendation 16, requires a sending Virtual Asset Service Provider (VASP) to pass originator and beneficiary information to the receiving VASP before or during a transfer above the relevant threshold.
@@ -103,7 +83,15 @@ faq:
   a: Interoperability varies by provider. Some connect to shared networks such as TRUST and TRP, while others run their own protocol — for example, Notabene uses TAP and VODE and does not connect to TRP, OpenVASP or Shyft. Check a provider's networks against your counterparties before you commit.
 - q: Which Travel Rule provider works with self-hosted wallets?
   a: 21 Analytics verifies self-hosted (non-custodial) wallet ownership in one step using AOPP, the Address Ownership Proof Protocol — useful when a VASP needs to prove who controls an external wallet before releasing funds.
-adjacent: []
+adjacent:
+- crypto
+- aml
+- aml/banks
+- kyb
 capability_columns: []
 faq_templates: []
 legacy_issues: []
+author: andrii-klymenko
+legacy_reviewer:
+  name: David Okafor
+  credential: null

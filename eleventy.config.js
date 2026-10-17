@@ -29,6 +29,8 @@ export default function (eleventyConfig) {
     return d ? `${MONTHS[m - 1]} ${d}, ${y}` : `${MONTHS[m - 1]} ${y}`;
   });
 
+  eleventyConfig.addFilter("pad2", (n) => String(n).padStart(2, "0"));
+
   eleventyConfig.addFilter("score1", (n) => (n == null ? "" : Number(n).toFixed(1)));
 
   // Providers object -> array sorted by name
@@ -46,6 +48,13 @@ export default function (eleventyConfig) {
     }
     return out.sort((a, b) => a.pos - b.pos);
   });
+
+  // Legacy explainer markup: drop inline styles and old classes, keep structure.
+  eleventyConfig.addFilter("cleanHtml", (html) => String(html || "")
+    .replace(/\s+style="[^"]*"/g, "")
+    .replace(/\s+class="(?!callout")[^"]*"/g, "")
+    .replace(/\s+id="[^"]*"/g, "")
+    .replace(/^<section[^>]*>|<\/section>$/g, ""));
 
   eleventyConfig.addFilter("json", (v) => JSON.stringify(v).replace(/</g, "\\u003c"));
 

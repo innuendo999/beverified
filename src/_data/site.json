@@ -187,11 +187,13 @@
     "nav": [
       {
         "label": "Use cases",
-        "href": "/#use-case"
+        "href": "/#use-case",
+        "key": "use-cases"
       },
       {
         "label": "Regions",
-        "href": "/#region"
+        "href": "/#region",
+        "key": "regions"
       },
       {
         "label": "Reviews",

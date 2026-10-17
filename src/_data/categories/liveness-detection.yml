@@ -6,9 +6,6 @@ seo:
   h1: Best Liveness Detection Providers in 2026
 breadcrumb_label: Best Liveness Detection Providers
 quick_answer: iProov leads on presentation-attack accuracy, FaceTec is the top pick for 3D-depth liveness, and Onfido is best when you want liveness bundled with document checks. We compared 4 providers on capture speed, spoof resistance, and sensor compatibility below.
-reviewer:
-  name: David Okafor
-  credential: null
 last_verified: '2026-07-24'
 legacy_stats:
 - value: '4'
@@ -49,23 +46,6 @@ explainer_html:
   <a class="entity-card__cta" href="/methodology/">See how we evaluate every provider on this list in our full methodology →</a>
 
   </section>'
-- '<section class="section-border-top" style="padding:28px 0;">
-
-  <h2 style="font-size:16px;margin-bottom:14px;">Related categories</h2>
-
-  <div style="display:flex;gap:8px;flex-wrap:wrap;">
-
-  <a class="tag-pill" href="/providers/identity-verification/" style="font-size:13px;padding:8px 14px;">Identity Verification</a>
-
-  <a class="tag-pill" href="/providers/e-kyc/" style="font-size:13px;padding:8px 14px;">eKYC</a>
-
-  <a class="tag-pill" href="/providers/cheap-kyc/" style="font-size:13px;padding:8px 14px;">Cheap KYC</a>
-
-  <a class="tag-pill" href="/providers/aml/banks/" style="font-size:13px;padding:8px 14px;">AML for Banks</a>
-
-  </div>
-
-  </section>'
 faq:
 - q: What is liveness detection?
   a: Liveness detection is the technology that proves a face in front of a camera belongs to a live human, not a photo, mask, deepfake, or injected video feed.
@@ -79,7 +59,15 @@ faq:
   a: Modern PAD engines are specifically tuned against injection attacks, including deepfake video feeds and virtual cameras, though detection quality varies meaningfully between vendors.
 - q: How fast is a typical liveness check?
   a: Most consumer-facing liveness checks complete in one to three seconds, since long capture times increase both user drop-off and false rejections.
-adjacent: []
+adjacent:
+- identity-verification
+- e-kyc
+- cheap-kyc
+- aml/banks
 capability_columns: []
 faq_templates: []
 legacy_issues: []
+author: andrii-klymenko
+legacy_reviewer:
+  name: David Okafor
+  credential: null

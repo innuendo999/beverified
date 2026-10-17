@@ -6,9 +6,6 @@ seo:
   h1: Best AML Software Providers in 2026
 breadcrumb_label: Best AML Software Providers
 quick_answer: Sumsub is the best overall AML software for most businesses, thanks to 120+ built-in watchlists and fast onboarding. ComplyAdvantage suits large enterprises needing deep transaction monitoring, and Trulioo is the top budget pick at under $1 per check. We compared 10 providers on pricing, coverage, and screening depth below.
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-24'
 legacy_stats:
 - value: '10'
@@ -51,29 +48,6 @@ explainer_html:
   <a class="entity-card__cta" href="/methodology/">See how we evaluate every provider on this list in our full methodology →</a>
 
   </section>'
-- '<section class="section-border-top" style="padding:28px 0;">
-
-  <h2 style="font-size:16px;margin-bottom:14px;">Related categories</h2>
-
-  <div style="display:flex;gap:8px;flex-wrap:wrap;">
-
-  <a class="tag-pill" href="/providers/aml/banks/" style="font-size:13px;padding:8px 14px;">AML for Banks</a>
-
-  <a class="tag-pill" href="/providers/crypto/" style="font-size:13px;padding:8px 14px;">Crypto KYC</a>
-
-  <a class="tag-pill" href="/providers/kyb/" style="font-size:13px;padding:8px 14px;">KYB (Know Your Business)</a>
-
-  <a class="tag-pill" href="/providers/e-kyc/" style="font-size:13px;padding:8px 14px;">eKYC</a>
-
-  <a class="tag-pill" href="/providers/identity-verification/" style="font-size:13px;padding:8px 14px;">Identity Verification</a>
-
-  <a class="tag-pill" href="/providers/cheap-kyc/" style="font-size:13px;padding:8px 14px;">Cheap KYC Providers</a>
-
-  <a class="tag-pill" href="/providers/travel-rule/" style="font-size:13px;padding:8px 14px;">Travel Rule Compliance</a>
-
-  </div>
-
-  </section>'
 faq:
 - q: What is AML software?
   a: AML (Anti-Money Laundering) software helps businesses detect, prevent, and report suspicious financial activity, combining identity verification, watchlist screening, and transaction monitoring in one platform.
@@ -87,7 +61,18 @@ faq:
   a: Yes. Many providers on this list offer pay-as-you-go or tiered pricing, so a startup can start with per-check pricing and upgrade as transaction volume grows.
 - q: How often are sanctions and PEP lists updated?
   a: Reputable AML providers refresh sanctions, PEP, and adverse-media data daily or in near real time, since regulators can add or remove names at any time.
-adjacent: []
+adjacent:
+- aml/banks
+- crypto
+- kyb
+- e-kyc
+- identity-verification
+- cheap-kyc
+- travel-rule
 capability_columns: []
 faq_templates: []
 legacy_issues: []
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS
