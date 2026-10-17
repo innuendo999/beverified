@@ -20,6 +20,7 @@ layout: v3.njk
       <div class="byline__author"><img class="avatar" src="{{ author.photo }}" alt=""><span>By {% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}<strong style="font-weight:500;color:var(--ink)">{{ author.name }}</strong>{% endif %}</span></div>
       {%- endif %}
       {%- if c.last_verified %}{% if author %}<span class="dot" aria-hidden="true">·</span>{% endif %}<span><span class="tick" aria-hidden="true">✓</span> Last verified <time datetime="{{ c.last_verified }}">{{ c.last_verified | displayDate }}</time></span>{% endif %}
+      {%- if c.updated and c.updated > c.last_verified %}<span class="dot" aria-hidden="true">·</span><span>Updated <time datetime="{{ c.updated }}">{{ c.updated | displayDate }}</time></span>{% endif %}
     </div>
   </section>
 

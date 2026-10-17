@@ -8,7 +8,7 @@ export default {
   eleventyComputed: {
     seoTitle: (d) => d.p.seo?.title || `${d.p.name} Review | BeVerified`,
     seoDescription: (d) => d.p.seo?.description,
-    updated: (d) => d.p.last_verified,
+    updated: (d) => [d.p.updated, d.p.last_verified].filter(Boolean).sort().pop(),
     author: (d) => d.authors?.[d.p.author] || null,
     alts: (d) => (d.p.choose_instead || [])
       .filter((a) => a.slug && d.providers[a.slug])
@@ -41,7 +41,7 @@ export default {
         {
           "@type": "WebPage", "@id": `${url}#webpage`, url, name: p.seo?.h1 || p.name,
           about: { "@id": `${url}#software` },
-          ...(p.last_verified ? { dateModified: p.last_verified } : {}),
+          ...(p.updated || p.last_verified ? { dateModified: [p.updated, p.last_verified].filter(Boolean).sort().pop() } : {}),
         },
         {
           "@type": "BreadcrumbList",

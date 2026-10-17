@@ -44,6 +44,7 @@ layout: v3.njk
         {%- if author %}<span class="dot" aria-hidden="true">·</span>{% endif %}
         <span><span class="tick" aria-hidden="true">✓</span> Last verified <time datetime="{{ p.last_verified }}">{{ p.last_verified | displayDate }}</time></span>
         {%- endif %}
+        {%- if p.updated and p.updated > p.last_verified %}<span class="dot" aria-hidden="true">·</span><span>Updated <time datetime="{{ p.updated }}">{{ p.updated | displayDate }}</time></span>{% endif %}
       </div>
     </div>
     {%- if p.score != null %}
@@ -307,7 +308,7 @@ layout: v3.njk
       <div class="author-box__meta">
         {%- if author.url %}<a href="{{ author.url }}">Author profile →</a>{% endif %}
         {%- if author.linkedin %}<a href="{{ author.linkedin }}" rel="noopener" target="_blank">LinkedIn ↗</a>{% endif %}
-        {%- if p.last_verified %}<span>Updated {{ p.last_verified | displayDate }}</span>{% endif %}
+        {%- if updated %}<span>Updated {{ updated | displayDate }}</span>{% endif %}
       </div>
     </div>
   </section>
@@ -324,6 +325,7 @@ layout: v3.njk
     </div>
     {%- endfor %}
     {%- if p.last_verified %}<div class="fact"><div class="fact__line"><span>Last verified</span><span class="num">{{ p.last_verified | displayDate }}</span></div></div>{% endif %}
+    {%- if p.updated and p.updated > p.last_verified %}<div class="fact"><div class="fact__line"><span>Updated</span><span class="num">{{ p.updated | displayDate }}</span></div></div>{% endif %}
     {%- if p.link.url %}
     <div style="padding:12px 20px 14px;border-top:1px solid var(--line-soft)">
       <a class="btn btn--primary btn--block" href="{{ p.link.url }}" rel="sponsored nofollow noopener" target="_blank">Visit site ↗</a>
