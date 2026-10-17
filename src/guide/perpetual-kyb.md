@@ -51,7 +51,7 @@ sources:
     accessed: 2026-10
   - title: "Companies House confirms identity verification rollout from 18 November 2025"
     publisher: "GOV.UK, Companies House"
-    url: "https://www.gov.uk/government/news/companies-house-confirms-identity-verification-rollout-from-18-november-2025."
+    url: "https://www.gov.uk/government/news/companies-house-confirms-identity-verification-rollout-from-18-november-2025"
     accessed: 2026-10
   - title: "The Money Laundering, Terrorist Financing and Transfer of Funds Regulations 2017, regulation 28"
     publisher: "legislation.gov.uk"
@@ -87,7 +87,7 @@ That collection got more flexible in February 2026. A [FinCEN order](https://www
 
 ### United Kingdom
 
-[Regulation 28(11)](https://www.legislation.gov.uk/uksi/2017/692/regulation/28) of the Money Laundering Regulations 2017 requires ongoing monitoring and keeping CDD information up to date. Registry data has also become more trustworthy: since [18 November 2025](https://www.gov.uk/government/news/companies-house-confirms-identity-verification-rollout-from-18-november-2025.) new directors and people with significant control must verify their identity with Companies House under the Economic Crime and Corporate Transparency Act 2023, with a 12-month transition for existing ones. Verified registry entries make a change on the register a more meaningful trigger.
+[Regulation 28(11)](https://www.legislation.gov.uk/uksi/2017/692/regulation/28) of the Money Laundering Regulations 2017 requires ongoing monitoring and keeping CDD information up to date. Registry data has also become more trustworthy: since [18 November 2025](https://www.gov.uk/government/news/companies-house-confirms-identity-verification-rollout-from-18-november-2025) new directors and people with significant control must verify their identity with Companies House under the Economic Crime and Corporate Transparency Act 2023, with a 12-month transition for existing ones. Verified registry entries make a change on the register a more meaningful trigger.
 
 ## Inside a perpetual KYB setup
 

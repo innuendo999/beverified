@@ -37,7 +37,7 @@ sources:
     accessed: 2026-10
   - title: "Companies House confirms identity verification rollout from 18 November 2025"
     publisher: "GOV.UK, Companies House"
-    url: "https://www.gov.uk/government/news/companies-house-confirms-identity-verification-rollout-from-18-november-2025."
+    url: "https://www.gov.uk/government/news/companies-house-confirms-identity-verification-rollout-from-18-november-2025"
     accessed: 2026-10
   - title: "Final Report: Draft RTS under Article 28(1) of Regulation (EU) 2024/1624"
     publisher: "Anti-Money Laundering Authority (AMLA)"
@@ -86,7 +86,7 @@ We reviewed developments up to October 2026. Several changes affect corporate KY
 
 - **US: risk-based beneficial ownership refresh.** A [FinCEN order of 13 February 2026](https://www.fincen.gov/system/files/2026-02/FinCEN-Order-CCDExceptiveRelief.pdf) means covered institutions verify a legal entity customer's beneficial owners at first account opening, when facts cast doubt on earlier information, and as their risk-based ongoing due diligence requires, rather than at every new account.
 - **US: no central register for domestic companies.** On 11 August 2026 Treasury [announced a final rule](https://home.treasury.gov/news/press-releases/sb0603) permanently ending beneficial ownership reporting to FinCEN by US companies and US persons. Banks rely on their own CDD collection.
-- **UK: verified registry data.** Since [18 November 2025](https://www.gov.uk/government/news/companies-house-confirms-identity-verification-rollout-from-18-november-2025.), new directors and people with significant control must verify their identity with Companies House, with a 12-month transition for existing ones.
+- **UK: verified registry data.** Since [18 November 2025](https://www.gov.uk/government/news/companies-house-confirms-identity-verification-rollout-from-18-november-2025), new directors and people with significant control must verify their identity with Companies House, with a 12-month transition for existing ones.
 - **EU: registers are not enough.** AMLA's [final draft CDD standards](https://www.amla.europa.eu/document/download/e15ab2e5-4074-4de8-bb9d-613dd8b7fdd1_en?filename=Final%20Report%20-%20draft%20RTS%2028%281%29%20AMLR.pdf), published on 30 September 2026, say central beneficial ownership registers are not sufficient on their own for verification, while recent official extracts from public registers count as reliable and independent sources. The AML Regulation they implement [applies from 10 July 2027](https://www.springlex.eu/en/packages/aml/amlr-regulation/article-90/).
 
 Taken together, these push banks toward the model this piece described: gather official data automatically, keep it linked to its source, and refresh it when something changes.
