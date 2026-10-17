@@ -108,6 +108,13 @@ layout: v3.njk
     <section class="legacy-prose">{{ h | cleanHtml | safe }}</section>
     {%- endfor %}
 
+    {%- set reading = collections.articles | articlesAbout("categories", c.slug, 3) %}
+    {%- if reading.length %}
+    <section aria-labelledby="rd-h">
+      <h2 id="rd-h" class="h-section">Guides and news</h2>
+      <div class="grid-3">{% for a in reading %}{% include "v3/post-card.njk" %}{% endfor %}</div>
+    </section>
+    {%- endif %}
     {%- if c.faq and c.faq.length %}
     <section aria-labelledby="faq-h" style="max-width:760px">
       <h2 id="faq-h" class="h-section" style="margin-bottom:12px">FAQ</h2>

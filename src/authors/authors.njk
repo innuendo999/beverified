@@ -20,7 +20,8 @@ ogType: profile
       {%- if who.linkedin %}<a href="{{ who.linkedin }}" rel="me noopener" target="_blank">LinkedIn <span aria-hidden="true">↗</span></a>{% endif %}
       <a href="{{ site.v3.methodologyHref }}">Editorial standards <span aria-hidden="true">→</span></a>
       <a href="{{ site.v3.disclosureHref }}">How we make money <span aria-hidden="true">→</span></a>
-      <div class="author-side__stat"><b>{{ written.length }}</b>reviews</div>
+      {%- set posts = collections.articles | byAuthor(who.key) %}
+      <div class="author-side__stats"><div class="author-side__stat"><b>{{ written.length }}</b>reviews</div>{% if posts.length %}<div class="author-side__stat"><b>{{ posts.length }}</b>posts</div>{% endif %}</div>
     </div>
   </section>
   {%- if written.length %}
@@ -37,6 +38,12 @@ ogType: profile
       </li>
       {%- endfor %}
     </ul>
+  </section>
+  {%- endif %}
+  {%- if posts.length %}
+  <section aria-labelledby="po-h" style="margin-top:56px">
+    <h2 id="po-h" class="h-section" style="margin-bottom:16px">Posts</h2>
+    <div class="grid-3">{% for a in posts %}{% include "v3/post-card.njk" %}{% endfor %}</div>
   </section>
   {%- endif %}
 </main>

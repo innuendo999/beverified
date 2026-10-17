@@ -268,6 +268,13 @@ layout: v3.njk
   </section>
   {%- endif %}
 
+  {%- set reading = collections.articles | articlesAbout("providers", p.slug) %}
+  {%- if reading.length %}
+  <section id="reading" aria-labelledby="rd-h">
+    <h2 id="rd-h" class="h-section">Related reading</h2>
+    <div class="grid-2 reading">{% for a in reading %}{% include "v3/post-card.njk" %}{% endfor %}</div>
+  </section>
+  {%- endif %}
   {%- if p.faq and p.faq.length %}
   <section id="faq" aria-labelledby="faq-h">
     <h2 id="faq-h" class="h-section" style="margin-bottom:12px">FAQ</h2>

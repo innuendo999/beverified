@@ -24,6 +24,9 @@ All pages are generated from templates + data. There is no hand-written page HTM
 | Use cases hub `/use-cases/`, Regions hub `/regions/` | `src/hubs/*.njk`; cards from `home.yml` (`group`, `area`) + `rankings.yml` |
 | Author pages `/authors/<slug>/` | `src/authors/authors.njk`; one page per `authors.yml` entry with `url`; review list = providers with that `author` |
 | 404 | `src/404.njk` (popular reviews = top 4 by score) |
+| Articles (guides, news, research) at old URLs `/guide/`, `/news/`, `/publications/` | `src/<section>/<slug>.md`, spec `docs/article-spec.md`, validate `node scripts/checks/articles.mjs`; layout `src/_layouts/article.njk`. Related posts, "Related reading" on reviews and "Guides and news" on rankings come from front matter `providers`, `categories`, `topics` |
+| Blog index `/blog/` and archives `/category/<section>/` | `src/blog.njk` + `src/_data/blogArchives.js` |
+| Legacy URLs `/author/beverified/` (refresh to author page), `/contact-us/` | `src/legacy/` |
 | Font | self-hosted `src/assets/fonts/Geist-Variable.woff2`. Keep the site free of third-party requests, cookies and analytics: the privacy policy promises it |
 | For providers page | `src/placement-options/index.njk` |
 | Field definitions | `docs/data-schema.md` |
@@ -31,9 +34,11 @@ All pages are generated from templates + data. There is no hand-written page HTM
 | Search Console / Bing exports | `data/gsc/`, `data/bing/` |
 | Generated reports | `reports/` |
 
+In shared includes use `allProviders` / `allCategories`, not `providers` / `categories`: article front matter shadows those names.
+
 Templates hide any block whose data is empty, so filling a field in YAML is enough to make a section appear. Computed values (rank positions, alternatives, nav pills, JSON-LD) live in the `*.11tydata.js` file next to each template.
 
-Planned, not built yet: blog, topic pages, comparison pages (`comparisons.yml`), `entities.yml`.
+Planned, not built yet: topic pages, comparison pages (`comparisons.yml`), `entities.yml`.
 
 ## Commands
 

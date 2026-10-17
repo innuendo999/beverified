@@ -1,5 +1,9 @@
 import yaml from "js-yaml";
 
+// YAML front matter turns 2026-10-18 into a Date; normalise to "2026-10-18".
+const isoDate = (v) => (v instanceof Date ? v.toISOString().slice(0, 10) : String(v || ""));
+const slugify = (t) => String(t).toLowerCase().replace(/<[^>]+>/g, "").replace(/&[a-z]+;/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+const SECTION_LABEL = { guide: "Guide", news: "News", publications: "Research" };
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 export default function (eleventyConfig) {
@@ -14,6 +18,40 @@ export default function (eleventyConfig) {
   // Passthrough files must not also be processed as templates.
   eleventyConfig.ignores.add("src/googlecb6dc6a16be14e4c.html");
 
+  // ---- Articles (src/guide, src/news, src/publications). Spec: docs/article-spec.md ----
+  eleventyConfig.amendLibrary("md", (md) => {
+    md.core.ruler.push("heading_ids", (state) => {
+      const t = state.tokens;
+      for (let i = 0; i < t.length; i++) {
+        if (t[i].type === "heading_open" && (t[i].tag === "h2" || t[i].tag === "h3") && !t[i].attrGet("id"))
+          t[i].attrSet("id", slugify(t[i + 1].content));
+      }
+    });
+  });
+  const articleTime = (a) => isoDate(a.data.published || a.data.updated);
+  eleventyConfig.addCollection("articles", (api) =>
+    api.getFilteredByGlob(["src/guide/*.md", "src/news/*.md", "src/publications/*.md"])
+      .sort((a, b) => articleTime(b).localeCompare(articleTime(a))));
+  eleventyConfig.addFilter("iso", isoDate);
+  eleventyConfig.addFilter("sectionLabel", (s) => SECTION_LABEL[s] || s);
+  eleventyConfig.addFilter("readingTime", (html) =>
+    Math.max(1, Math.round(String(html || "").replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length / 220)));
+  // [{id, title}] from rendered <h2 id> headings
+  eleventyConfig.addFilter("headingToc", (html) =>
+    [...String(html || "").matchAll(/<h2 id="([^"]+)">([\s\S]*?)<\/h2>/g)].map((m) => ({ id: m[1], title: m[2].replace(/<[^>]+>/g, "") })));
+  // Articles mentioning a provider slug or a category key
+  eleventyConfig.addFilter("articlesAbout", (list, kind, key, n = 4) =>
+    (list || []).filter((a) => (a.data[kind === "providers" ? "provList" : "catList"] || []).includes(key)).slice(0, n));
+  eleventyConfig.addFilter("byAuthor", (list, key) => (list || []).filter((a) => a.data.author === key));
+  eleventyConfig.addFilter("inSection", (list, section) => section === "all" ? list : (list || []).filter((a) => a.data.section === section));
+  // Top n related articles by shared providers (2), categories (1), topics (2); newest first on ties
+  eleventyConfig.addFilter("relatedPosts", (list, url, data, n = 3) => {
+    const sh = (a, b) => (a || []).filter((x) => (b || []).includes(x)).length;
+    return (list || []).filter((a) => a.url !== url)
+      .map((a, i) => ({ a, i, s: 2 * sh(a.data.provList, data.providers) + sh(a.data.catList, data.categories) + 2 * sh(a.data.topics, data.topics) }))
+      .sort((x, y) => y.s - x.s || x.i - y.i).slice(0, n).map((x) => x.a);
+  });
+
   // ---- Filters used by the V3 templates ----
 
   // 5-segment rating meter: [100, 100, 100, 100, 60] for 4.6
@@ -23,7 +61,7 @@ export default function (eleventyConfig) {
   // "2026-07-25" -> "Jul 25, 2026"; "2026-07" -> "Jul 2026"
   eleventyConfig.addFilter("displayDate", (iso) => {
     if (!iso) return "";
-    const [y, m, d] = String(iso).split("-").map(Number);
+    const [y, m, d] = isoDate(iso).split("-").map(Number);
     return d ? `${MONTHS[m - 1]} ${d}, ${y}` : `${MONTHS[m - 1]} ${y}`;
   });
 

@@ -8,7 +8,7 @@
       </div>
       <nav class="site-footer__col" aria-label="Use cases"><h2>Use cases</h2>{% for l in f.useCases %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% endfor %}</nav>
       <nav class="site-footer__col" aria-label="Regions"><h2>Regions</h2>{% for l in f.regions %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% endfor %}</nav>
-      <nav class="site-footer__col" aria-label="Providers"><h2>Providers A–Z</h2>{% for p in (providers | byName) %}{% if loop.index <= f.providersShown %}<a href="/providers/{{ p.slug }}/">{{ p.name }}</a>{% endif %}{% endfor %}<a class="more" href="/providers/">All providers →</a></nav>
+      <nav class="site-footer__col" aria-label="Providers"><h2>Providers A–Z</h2>{% for p in (allProviders | byName) %}{% if loop.index <= f.providersShown %}<a href="/providers/{{ p.slug }}/">{{ p.name }}</a>{% endif %}{% endfor %}<a class="more" href="/providers/">All providers →</a></nav>
       <nav class="site-footer__col" aria-label="Company"><h2>Company</h2>{% for l in f.company %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% endfor %}</nav>
       {%- if f.legal.length %}
       <nav class="site-footer__col" aria-label="Legal"><h2>Legal</h2>{% for l in f.legal %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% endfor %}</nav>

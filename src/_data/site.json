@@ -75,6 +75,11 @@
         "label": "Reviews",
         "href": "/providers/",
         "key": "reviews"
+      },
+      {
+        "label": "Blog",
+        "href": "/blog/",
+        "key": "blog"
       }
     ],
     "navAside": {
@@ -167,7 +172,7 @@
         ],
         [
           "Contact",
-          "mailto:support@beverified.org"
+          "/contact-us/"
         ]
       ],
       "legal": [
