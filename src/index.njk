@@ -1,0 +1,129 @@
+---
+layout: v3.njk
+---
+{#- Homepage. Design: design/Homepage V3 - BeVerified (Desktop).dc.html. Content: src/_data/home.yml -#}
+<main id="main">
+<section class="hero" aria-labelledby="hero-h1">
+  <slab-field class="hero__field" theme="light" mode="loop" filter="0" win="0.04,0.66,0.52,0.97" cx="0.38" cy="0.8" scale="1.2" mask="radial-gradient(ellipse 60% 48% at 30% 100%, #000 45%, transparent 100%)"></slab-field>
+  <div class="hero__inner">
+    <div>
+      <h1 id="hero-h1" class="hero__h1">{{ home.h1 }} <span>{{ home.h1_muted }}</span></h1>
+      <p class="hero__lede">{{ home.lede }}</p>
+      <div class="cta-row">
+        <a class="btn btn--primary" href="#top-rated">See top providers</a>
+        <a class="btn btn--secondary" href="#use-case">Browse by use case</a>
+      </div>
+    </div>
+    <div class="card picks" role="region" aria-labelledby="qp-h">
+      <div class="picks__head"><h2 id="qp-h">Quick picks</h2><span>From our editorial scores</span></div>
+      <ol>
+        {%- for q in picks %}
+        <li class="picks__item">
+          <span class="pill{% if loop.first %} pill--dark{% endif %}">{% if loop.first %}◆ {% endif %}{{ q.label }}</span>
+          <div class="picks__row">
+            <div style="min-width:0">
+              <div class="picks__logo">{% if q.p.logo.wordmark %}<img src="{{ q.p.logo.wordmark }}" alt="{{ q.p.name }}">{% else %}<b>{{ q.p.name }}</b>{% endif %}</div>
+              <p class="picks__reason">{{ q.reason or q.p.tagline }}</p>
+              <a href="/providers/{{ q.p.slug }}/" style="font-size:14px;font-weight:500">Read review →</a>
+            </div>
+            <div class="picks__score" role="img" aria-label="{{ q.p.score | score1 }} out of 5">
+              <div aria-hidden="true"><b>{{ q.p.score | score1 }}</b><small>/ 5</small></div>
+              <div class="meter meter--sm" aria-hidden="true">{% for w in (q.p.score | meter) %}<span><i style="width:{{ w }}%"></i></span>{% endfor %}</div>
+            </div>
+          </div>
+        </li>
+        {%- endfor %}
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="container home-section home-section--strip" aria-labelledby="logos-cap">
+  <p id="logos-cap" class="strip__cap">Independently reviewed providers</p>
+  <ul class="strip">{% for p in strip %}<li><a href="/providers/{{ p.slug }}/" aria-label="{{ p.name }} review"><img loading="lazy" src="{{ p.logo.wordmark }}" alt="{{ p.name }}"></a></li>{% endfor %}</ul>
+</section>
+
+<section id="use-case" class="container home-section home-uc" aria-labelledby="uc-h">
+  <div class="home-uc__intro">
+    <h2 id="uc-h" class="h-split h-split--xl">Pick by use case.<span>Real counts</span></h2>
+    <p>Each ranking lists exactly the providers we compared for that job.</p>
+  </div>
+  <div class="grid-2">
+    {%- for u in useCases %}
+    <a class="card uc-card" href="{{ u.url }}">
+      <b>{{ u.name }}</b>
+      <p>{{ u.def }}</p>
+      <ol>{% for t in u.top %}<li><span>{{ loop.index }}</span>{{ t }}</li>{% endfor %}</ol>
+      <span class="uc-card__go">See all {{ u.count }} providers →</span>
+    </a>
+    {%- endfor %}
+  </div>
+</section>
+
+<section id="region" class="container home-section" aria-labelledby="rg-h">
+  <div class="section-head"><h2 id="rg-h" class="h-split h-split--xl">Pick by region.<span>Local regulators, local documents</span></h2><a class="btn btn--secondary btn--sm" href="/providers/">All providers</a></div>
+  <div class="regions">
+    <div class="card regions__map">
+      <div class="map">
+        <div class="map__eq" aria-hidden="true"></div>
+        {%- for r in regions %}
+        <a class="map__pin{% if r.side == "left" %} map__pin--left{% endif %}" href="{{ r.url }}" style="left:{{ r.x }}%;top:{{ r.y }}%" aria-label="{{ r.name }}{% if r.guide %}: {{ r.count }} providers compared{% else %}: browse reviews{% endif %}">
+          <i class="{% if r.guide %}is-guide{% endif %}"></i><span>{{ r.short }}{% if r.guide %} · {{ r.count }}{% endif %}</span>
+        </a>
+        {%- endfor %}
+      </div>
+      <div class="map__legend"><span><i class="is-guide"></i>Country guide with ranking</span><span><i></i>Browse the reviews directory</span></div>
+    </div>
+    <ul class="card regions__list">
+      {%- for r in regions %}
+      <li><a href="{{ r.url }}"><span><b>{{ r.name }}</b> <small>· {{ r.reg }}</small></span><span class="num">{% if r.guide %}{{ r.count }} providers compared{% else %}Browse directory{% endif %} →</span></a></li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section id="top-rated" class="container home-section" aria-labelledby="tr-h">
+  <div class="section-head"><h2 id="tr-h" class="h-split h-split--xl">Top rated providers.<span>In true score order</span></h2><a class="btn btn--secondary btn--sm" href="/providers/">See all providers</a></div>
+  <ol class="grid-4 top-grid">
+    {%- for p in topRated %}
+    <li>
+      <a class="card top-card{% if loop.first %} top-card--first{% endif %}" href="/providers/{{ p.slug }}/" aria-label="{{ p.name }}: {{ p.score | score1 }} out of 5. Read review">
+        <div class="top-card__head">{% if p.logo.wordmark %}<img src="{{ p.logo.wordmark }}" alt="" loading="lazy">{% else %}<b class="top-card__wm">{{ p.name }}</b>{% endif %}<span>{{ loop.index | pad2 }}</span></div>
+        {%- if loop.first %}<span class="pill pill--dark" style="align-self:flex-start;margin-top:12px">◆ Editor's choice</span>{% endif %}
+        <div class="top-card__name">{{ p.name }}</div>
+        <div class="top-card__score" aria-hidden="true"><b>{{ p.score | score1 }}</b><small>/ 5</small></div>
+        <div class="meter meter--sm" aria-hidden="true">{% for w in (p.score | meter) %}<span><i style="width:{{ w }}%"></i></span>{% endfor %}</div>
+        {%- if p.best_for %}<span class="pill" style="align-self:flex-start;margin-top:16px">Best for · {{ p.best_for }}</span>{% endif %}
+        <p class="top-card__reason">{{ p.tagline }}</p>
+        <span class="top-card__go">Read review →</span>
+      </a>
+    </li>
+    {%- endfor %}
+  </ol>
+</section>
+
+<section id="how-we-evaluate" class="container home-section" aria-labelledby="eval-h">
+  <div class="section-head"><h2 id="eval-h" class="h-split h-split--xl">How we evaluate.<span>One rubric for every provider</span></h2><a class="btn btn--secondary btn--sm" href="{{ site.v3.methodologyHref }}">Full methodology</a></div>
+  <div class="card weights" style="padding:32px">
+    <div>
+      <div style="font-size:14px;color:var(--muted);margin-bottom:16px">Weights · {{ site.v3.methodologyVersion }}</div>
+      {%- for r in site.v3.rubric %}<div class="weights__row"><span>{{ r.name }}</span><span class="bar" aria-hidden="true"><i style="width:{{ r.weight * 4 }}%"></i></span><span>{{ r.weight }}%</span></div>{% endfor %}
+    </div>
+    <div class="weights__key" style="gap:24px">
+      <div><div style="color:var(--muted);margin-bottom:4px">Re-verification</div><div style="font-size:15px;color:var(--ink)">{{ home.recheck }}. “Last verified” changes only after a real re-check.</div></div>
+      <div><div style="color:var(--muted);margin-bottom:4px">Affiliate policy</div><div style="font-size:15px;color:var(--ink)">{{ site.v3.disclosure }}</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="container home-section home-uc" aria-labelledby="faq-h">
+  <div class="home-uc__intro"><h2 id="faq-h" class="h-split h-split--xl">Questions<span>buyers ask.</span></h2></div>
+  <div class="faq">{% for f in faqs %}<details{% if loop.first %} open{% endif %}><summary><h3>{{ f.q }}</h3></summary><p>{{ f.a }}</p></details>{% endfor %}</div>
+</section>
+
+<section id="for-providers" class="container home-section home-fp" aria-labelledby="fp-h">
+  <h2 id="fp-h">For providers</h2>
+  <a class="card fp-card" href="/placement-options/"><span><b>Claim your profile</b><small>Correct facts and add documentation</small></span><span aria-hidden="true">→</span></a>
+</section>
+</main>
+<script src="/assets/js/slab-field.js" defer></script>

@@ -1,0 +1,56 @@
+# Homepage content. Scores, logos and counts are NOT typed here:
+# they come from src/_data/providers and src/_data/rankings.yml.
+seo:
+  title: KYC & AML Software Reviews and Rankings 2026 | BeVerified
+  description: Independent reviews and rankings of KYC, KYB and AML software, compared on coverage, accuracy, pricing and support.
+h1: Find the right KYC & AML provider.
+h1_muted: Independently reviewed
+lede: Independent reviews and rankings of KYC, KYB and AML software, compared on coverage, accuracy, pricing and support.
+
+quick_picks:            # label + provider slug; reason = provider tagline unless set
+  - { label: Best overall, slug: sumsub }
+  - { label: Best for crypto, slug: kycaid }
+  - { label: Best budget option, slug: trulioo }
+
+logo_strip: [sumsub, complyadvantage, onfido, kycaid, feedzai, trulioo, jumio, seon]
+
+use_cases:              # category slug in rankings.yml; top 3 and count are computed
+  - { name: AML, slug: aml, def: "Screening against sanctions, PEP and adverse-media lists, plus ongoing transaction monitoring." }
+  - { name: KYB, slug: kyb, def: "Verifying a business, its registry record and its ultimate beneficial owners." }
+  - { name: eKYC, slug: e-kyc, def: "Remote onboarding checks: document, selfie and data checks at account opening." }
+  - { name: Identity Verification, slug: identity-verification, def: "Remote checks that a person is who they claim, from document plus selfie, reused across the account lifecycle." }
+  - { name: Liveness Detection, slug: liveness-detection, def: "Proving a real, present person is on camera, not a photo, mask or deepfake." }
+  - { name: Crypto KYC, slug: crypto, def: "Onboarding checks for exchanges and wallets, often paired with wallet screening." }
+  - { name: Travel Rule, slug: travel-rule, def: "Exchanging originator and beneficiary data between VASPs under FATF R.16." }
+  - { name: AML for Banks, slug: aml/banks, def: "Monitoring and case management built for Tier-1 volume and examiner review." }
+  - { name: Budget KYC, slug: cheap-kyc, def: "Providers with published per-check or monthly pricing and low minimums." }
+
+regions:                # x/y = % position on the map grid; slug = region ranking page if one exists
+  - { name: United Kingdom, short: UK, reg: FCA, x: 49.6, y: 21, side: left }
+  - { name: European Union, short: EU, reg: AMLA, x: 53, y: 24 }
+  - { name: United States, short: US, reg: FinCEN, x: 23, y: 31, side: left }
+  - { name: UAE, short: UAE, reg: CBUAE, x: 65.5, y: 36.5, side: left }
+  - { name: Singapore, short: Singapore, reg: MAS, x: 78.8, y: 49.2, side: left }
+  - { name: India, short: India, reg: RBI, x: 71, y: 38, slug: india }
+  - { name: Brazil, short: Brazil, reg: BACEN, x: 36, y: 63, slug: brazil }
+  - { name: Mexico, short: Mexico, reg: CNBV, x: 22, y: 39, slug: mexico, side: left }
+  - { name: Nigeria, short: Nigeria, reg: CBN, x: 52, y: 45 }
+  - { name: Canada, short: Canada, reg: FINTRAC, x: 22, y: 22, slug: canada, side: left }
+  - { name: Peru, short: Peru, reg: SBS, x: 29, y: 56, slug: peru, side: left }
+
+top_rated_count: 8
+recheck: Every 90 days
+
+faq:   # questions from Google Search Console (homepage, last 3 months, Oct 2026)
+  - q: Is BeVerified the same as BeenVerified?
+    a: No. BeVerified.org is an independent review site for KYC, KYB and AML software used by compliance teams. It is a different organisation from BeenVerified, the US people-search service, and it does not run background checks or sell personal records.
+  - q: Can BeVerified verify my identity or my business?
+    a: No. We don't perform identity, business or AML checks ourselves. We compare the providers that do, so you can choose one to run checks for your customers. Start with a use case (eKYC, KYB or AML) to see the providers we ranked for it.
+  - q: Which trusted KYC platform gets the highest ratings from compliance teams?
+    a: "{top}"   # generated from provider scores
+  - q: Which beneficial ownership (KYB) check provider is worth the investment?
+    a: "{kyb}"   # generated from the KYB ranking
+  - q: Is there a free KYC check?
+    a: BeVerified doesn't run checks, free or paid. For low-cost options, see our Budget KYC ranking, and check each review for the vendor's published pricing and trial terms.
+  - q: What does "verified" mean on a BeVerified AML or KYC review?
+    a: It means we re-checked the provider's pricing, coverage and certifications on the date shown. Reviews are re-checked every 90 days, and the "Last verified" date only changes after a real re-check. We may earn a commission from some links. Payment never changes scores or ranking order.
