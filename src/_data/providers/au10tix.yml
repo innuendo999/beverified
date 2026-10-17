@@ -4,7 +4,7 @@ alternate_names: []
 status: published
 seo:
   title: 'AU10TIX Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'AU10TIX review: fully automated identity verification in 4-8 seconds, backed by a 60+ company anti-fraud consortium. Features, pricing, pros & cons, alternatives.'
+  description: 'AU10TIX review: fully automated identity verification with consortium-based serial fraud detection across 60+ companies. Plans from a $500 monthly minimum. Features, pricing, pros & cons, alternatives.'
   h1: 'AU10TIX Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/au10tix.png
@@ -22,54 +22,86 @@ link:
   url: https://www.au10tix.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-07-28'
+last_verified: '2026-10-18'
 updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: AU10TIX runs 100% automated verification in 4 to 8 seconds. It is built on forensic document-security roots and a consortium of 60+ companies that spots organized mass-fraud and deepfake attacks other vendors miss individually. It's enterprise-first with custom pricing, not a self-serve tool for small teams, but the anti-fraud network effect is a genuine differentiator.
+verdict: AU10TIX describes its platform as 100% automated identity verification. It is built on document-forensics roots and cross-references data across a consortium of 60+ companies to spot serial and coordinated fraud that single vendors can miss. Entry plans carry a $500 monthly minimum and per-check prices are quoted, so it suits teams with steady volume more than very small ones. The consortium network effect is a genuine differentiator.
 what_is:
-- AU10TIX is an identity-verification company founded in 2002 and headquartered in Hod Hasharon/Tel Aviv, Israel, by Ron Atzmon and Gil Atzmon, operating as a subsidiary of ICTS International with roughly 205 employees. Built on airport and border-security document-forensics expertise, it runs fully automated onboarding and coordinates a consortium of 60+ companies to detect organized, cross-platform mass-fraud patterns.
+- AU10TIX is an identity-verification company founded in 2002, according to the company. It is majority owned by ICTS International N.V., with TPG and Oak HC/FT among its preferred shareholders. AU10TIX lists offices in London, New York and Singapore and R&D centres in Israel and Eastern Europe. Its roots are in airport and border-security document forensics. It runs automated onboarding and cross-references data across a consortium of 60+ companies to detect serial, cross-platform fraud patterns.
 features:
-- 100% automated identity verification completed in 4 to 8 seconds.
-- Forensic-grade document authentication rooted in border-security technology.
-- Cryptographic signature validation against government data sources.
-- Facial and data cross-checks against official databases.
-- Mass-fraud pattern detection via a 60+ company consortium.
-- Reported $24B+ in fraud prevented across billions of verifications.
+- Automated document and biometric verification (liveness and face match), which the vendor describes as 100% automated.
+- 180+ forgery detection tests, plus deepfake and injection detection on the Enhanced plan.
+- Serial Fraud Monitor and consortium verification across 60+ companies.
+- Proof of address, AML screening and manual review on the Enhanced plan.
+- Business verification (KYB), database verification, age estimation and Reusable Digital ID on the Enterprise plan.
+- The vendor reports over $33 billion in identity fraud prevented (company-reported figure).
 pricing:
-  summary: AU10TIX does not publish pricing; its automated verification platform is licensed to enterprises based on volume.
+  summary: AU10TIX publishes three plans. Basic KYC and Enhanced KYC each carry a $500 monthly minimum, and Enterprise is quoted. Per-check prices are not published.
   plans:
-  - tier: Enterprise Quote
+  - tier: Basic KYC
+    price: $500 monthly minimum
+    note: ID verification, liveness and face match, case management, 180+ forgery tests
+    extra: Per-check price quoted on request
+  - tier: Enhanced KYC
+    price: $500 monthly minimum
+    note: Adds deepfake detection, proof of address, AML screening, serial fraud detection, manual review
+    extra: Per-check price quoted on request
+  - tier: Enterprise
     price: Custom
-    note: Automated IDV licensing, volume-based
+    note: Adds KYB, database verification, age estimation, Reusable Digital ID, account manager
     extra: Contact sales for a quote
-  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
-  verified: null
-  items: []
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Basic KYC
+    value: $500 monthly minimum
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Enhanced KYC
+    value: $500 monthly minimum
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Enterprise
+    value: Quote on request
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Per-check price
+    value: Not publicly disclosed
+    kind: official
+    source: 1
+    verified: '2026-10'
 facts:
 - label: From
-  value: Custom quote
-  source: null
+  value: $500 monthly minimum
+  source: 1
+  evidence: vendor
 - label: Effective
-  value: Not disclosed
-  source: null
+  value: Not publicly disclosed
 - label: Founded
   value: '2002'
-  source: null
-- label: HQ
-  value: Hod Hasharon, Israel
-  source: null
-- label: Regions
-  value: Global
-  source: null
+  source: 4
+  evidence: vendor
+- label: Offices
+  value: London, New York, Singapore; R&D in Israel and Eastern Europe
+  source: 4
+  evidence: vendor
+- label: Owner
+  value: ICTS International N.V. (68.69% as of the 2021 share sale)
+  source: 5
+  evidence: independent
 - label: Funding
-  value: $80M raised (TPG, Oak HC/FT)
-  source: null
+  value: $80M in 2019 preferred shares ($60M TPG, $20M Oak HC/FT)
+  source: 5
+  evidence: independent
 pros:
-- Fully automated verification in 4 to 8 seconds
-- Consortium-based detection of organized mass-fraud and deepfake attacks
+- Automated verification with UK DIATF certification for right to work, right to rent and DBS checks
+- Consortium-based detection of serial fraud and deepfake attacks
 - Deep forensic/security roots from border-control technology
 cons:
-- Enterprise-oriented, less self-serve for startups
-- No published pricing
+- $500 monthly minimum on entry plans rules out very low volumes
+- Per-check prices are not published
 - Narrower AML-workflow depth than dedicated AML platforms
 alternatives:
 - slug: incode
@@ -89,38 +121,95 @@ choose_instead:
 - slug: onfido
   text: stronger developer SDKs matter more than consortium-based mass-fraud detection.
 user_reviews:
-  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  legacy_note: null
   praise:
-  - 'Speed (frequently cited): reviewers highlight the 4 to 8 second automated verification.'
-  - 'Fraud detection: users note strong catch rates against organized, cross-platform fraud rings.'
+  - 'Speed: reviewers describe verification as fast and largely automated.'
+  - 'Fraud detection: users value detection of organized, cross-platform fraud.'
   criticize:
-  - 'Self-serve access: some reviewers note it''s built for enterprise procurement rather than quick self-signup.'
-  - 'Pricing opacity: no published rate card.'
+  - 'Self-serve access: it is built around sales-led onboarding rather than instant self-signup.'
+  - 'Pricing: per-check rates are only available on request.'
   by_profile:
   - Large platforms facing organized mass-fraud rings value the consortium detection network.
   - Enterprises with border-security or forensic-document requirements favor its heritage.
-  - Smaller teams needing self-serve signup often evaluate more accessible competitors first.
+  - Smaller teams below the $500 monthly minimum often evaluate more accessible competitors first.
 faq:
 - q: How much does AU10TIX cost?
-  a: AU10TIX does not publish pricing; its automated verification platform is licensed to enterprises based on volume.
+  a: The Basic KYC and Enhanced KYC plans each have a $500 monthly minimum. Enterprise pricing is quoted, and per-check prices are not published.
 - q: How fast is AU10TIX verification?
-  a: AU10TIX completes fully automated identity verification in 4 to 8 seconds.
+  a: AU10TIX does not publish a standard verification time. A customer case study on its site says ID document checks moved from hours or days to within 10 seconds.
 - q: What is AU10TIX's fraud consortium?
-  a: AU10TIX coordinates a consortium of more than 60 companies to detect organized, cross-platform mass-fraud and deepfake attack patterns that individual vendors might miss.
+  a: AU10TIX cross-references data across a consortium of more than 60 companies to detect serial, cross-platform fraud and deepfake attack patterns that individual vendors might miss.
 - q: Who owns AU10TIX?
-  a: AU10TIX operates as a subsidiary of ICTS International and has raised $80M from TPG and Oak HC/FT.
+  a: ICTS International N.V. holds the majority of AU10TIX's share capital. TPG and Oak HC/FT invested a combined $80M in preferred shares in 2019.
 - q: What is the best alternative to AU10TIX?
   a: Incode is the best alternative for the largest proprietary identity dataset. Jumio is the closest fit for enterprise scale.
 - q: Who are AU10TIX's main competitors?
-  a: AU10TIX competes with Incode, Jumio, and Onfido, differentiating through fully automated verification and consortium-based mass-fraud detection.
+  a: AU10TIX competes with Incode, Jumio, and Onfido, differentiating through automated verification and consortium-based mass-fraud detection.
 segments: []
 capabilities: {}
-certifications: []
-user_ratings: []
+certifications:
+- name: UK DIATF certified identity service
+  what: Right to work, right to rent, DBS (Kantara Initiative UK)
+  status: vendor_stated
+  source: 4
+- name: ISO/IEC 27001
+  what: Information security
+  status: vendor_stated
+  source: 2
+- name: ISO/IEC 27701
+  what: Privacy information management
+  status: vendor_stated
+  source: 2
+- name: SOC 2 Type II
+  what: Security, availability, confidentiality controls
+  status: vendor_stated
+  source: 2
+- name: ISO/IEC 30107-3 PAD Levels 1 and 2 (iBeta)
+  what: Liveness, presentation attack detection
+  status: vendor_stated
+  source: 2
+- name: Kantara IAL2
+  what: NIST SP 800-63A identity assurance
+  status: vendor_stated
+  source: 2
+- name: TX-RAMP Level 2
+  what: Texas public-sector cloud security
+  status: vendor_stated
+  source: 2
+user_ratings:
+- platform: G2
+  rating: 4.5
+  count: 43
+  checked: '2026-10'
+  url: https://www.g2.com/products/au10tix/reviews
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
-sources: []
+sources:
+- title: AU10TIX pricing
+  publisher: AU10TIX
+  url: https://www.au10tix.com/pricing/
+  accessed: '2026-10'
+- title: Trust Center
+  publisher: AU10TIX
+  url: https://www.au10tix.com/trust-center/
+  accessed: '2026-10'
+- title: AU10TIX homepage
+  publisher: AU10TIX
+  url: https://www.au10tix.com/
+  accessed: '2026-10'
+- title: AU10TIX extends UK DIATF certification to cover DBS checks (20 Jul 2026)
+  publisher: AU10TIX
+  url: https://www.au10tix.com/press-releases/au10tix-extends-uk-diatf-certification-to-cover-disclosure-and-barring-service-dbs-checks/
+  accessed: '2026-10'
+- title: ICTS International N.V. Form 20-F, fiscal year 2023
+  publisher: US SEC (EDGAR)
+  url: https://www.sec.gov/Archives/edgar/data/0001010134/000117891324001679/zk2431357.htm
+  accessed: '2026-10'
+- title: AU10TIX reviews
+  publisher: G2
+  url: https://www.g2.com/products/au10tix/reviews
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -129,7 +218,16 @@ entity:
   - https://www.linkedin.com/company/au10tix
   - https://www.crunchbase.com/organization/au10tix
 legacy_issues: []
-legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against AU10TIX's official pricing page and profiles before this page goes live.
+legacy_editorial_note: null
+verification_notes:
+- 'HQ "Hod Hasharon/Tel Aviv, Israel" not stated on any vendor page opened; vendor boilerplate says founded in 2002 in the Netherlands and lists R&D in Israel. HQ fact replaced with Offices.'
+- 'Founders "Ron Atzmon and Gil Atzmon" and "roughly 205 employees" not found in any source opened. Removed.'
+- '"4 to 8 seconds" verification time not found on current vendor pages; homepage case study (FXCM) says within 10 seconds. Removed from pros, features, FAQ and user themes.'
+- '"$24B+ fraud prevented" replaced with the current vendor figure "over $33 billion" (press release Jul 2026). The homepage also says "$5B saved on average annual fraud". Both are company-reported.'
+- 'Ownership percentages are from the June 2021 share sale described in the FY2023 20-F; later changes not checked.'
+- 'UK DIATF certification is vendor-stated (press releases name Kantara Initiative UK as certifier); the UK DVS register entry itself could not be opened. Other certifications are listed on the Trust Center without certificate links (evidence pack on request). iBeta letter not found on ibeta.com.'
+- 'Pricing page FAQ uses different tier names (Basic, Advanced, Corporate) than the plan cards (Basic KYC, Enhanced KYC, Enterprise). We use the plan card names.'
+- 'G2 rating visible (4.5, 43 reviews); review text not read in full, so themes are general statements without counts.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

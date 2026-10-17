@@ -4,7 +4,7 @@ alternate_names: []
 status: published
 seo:
   title: 'Persona Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'Persona review: modular, no-code identity verification infrastructure for product teams building custom KYC/AML flows. Features, pricing, pros & cons, alternatives.'
+  description: 'Persona review: modular, no-code identity verification infrastructure for product teams building custom KYC/AML flows. Features, pricing from $250/month, pros & cons, alternatives.'
   h1: 'Persona Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/persona.png
@@ -23,54 +23,89 @@ link:
   url: https://withpersona.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-07-28'
+last_verified: '2026-10-18'
 updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: 'Persona''s pitch is flexibility: reusable, customizable verification templates that product teams assemble into their own onboarding flows rather than a single fixed workflow. That configurability is a real strength for teams with unusual requirements, though it means a steeper setup curve and less out-of-the-box AML depth than specialized screening vendors.'
+verdict: 'Persona''s pitch is flexibility: reusable, customizable verification templates that product teams assemble into their own onboarding flows rather than a single fixed workflow. That configurability is a real strength for teams with unusual requirements, though it means a steeper setup curve and less out-of-the-box AML depth than specialized screening vendors. Entry pricing is published (Essential from $250 a month on a 12-month term); larger plans are quoted.'
 what_is:
-- Persona is an identity-verification infrastructure company founded in 2018 and headquartered in San Francisco, California, by CEO Rick Song and Charles Yeh. It provides a no-code workflow builder and reusable verification templates combining document, biometric, and database checks, aimed at product teams building custom onboarding and KYC/AML flows.
+- Persona is an identity-verification infrastructure company founded in 2018 and headquartered in San Francisco, California, by CEO Rick Song and Charles Yeh. It raised a $200 million Series D at a $2 billion valuation in April 2025. It provides a no-code workflow builder and reusable verification templates combining document, biometric, and database checks, with KYC, KYB, AML, age assurance, case management and link analysis (Graph), aimed at product teams building custom onboarding flows. In April 2026 its Persona for Government product received FedRAMP Moderate authorization.
 features:
-- No-code workflow builder with reusable, customizable templates.
-- Document, biometric, and database-based identity checks.
-- Age verification alongside identity and KYC/AML checks.
-- Orchestration across multiple verification methods and data sources.
-- Case management for manual review workflows.
+- No-code workflow builder (Workflows) with reusable, customizable templates.
+- Document, selfie, and database-based identity checks, plus KYB business verification.
+- 'Age assurance: selfie age estimation, email-based inference, phone, credit card, ID, database and digital ID checks, with a reusable verified age attribute.'
+- Orchestration across multiple verification methods and data sources, with Graph link analysis for coordinated fraud.
+- Case management (Cases) for manual review workflows.
 - Developer-first APIs and SDKs.
 pricing:
-  summary: Persona does not publish standard pricing; some pay-as-you-go elements are reported by third parties, but rates should be confirmed directly with sales.
+  summary: Persona publishes an entry price. The Essential plan starts at $250 a month with a 12-month minimum term; Growth and Enterprise are quoted on request. Billing is per successful verification, and an eligible-startup program offers a year of free services on select products.
   plans:
-  - tier: Custom Quote
+  - tier: Essential
+    price: From $250/month
+    note: 12-month minimum contract term
+    extra: Templated, pre-configured identity services
+  - tier: Growth
     price: Custom
-    note: Usage-based elements reported by third parties; not officially published
+    note: Full suite of verification checks and fraud tools, including KYB
     extra: Contact sales for a quote
-  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
-  verified: null
-  items: []
+  - tier: Enterprise
+    price: Custom
+    note: Custom multi-product pricing
+    extra: Contact sales for a quote
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Essential plan
+    value: From $250 per month (12-month minimum term)
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Growth and Enterprise plans
+    value: Quote on request
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Billing basis
+    value: Per successful verification; drop-offs from user error not charged
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Startup Program
+    value: One year of free services on select products for eligible startups
+    kind: official
+    source: 1
+    verified: '2026-10'
 facts:
 - label: From
-  value: Custom quote
-  source: null
+  value: $250/month (Essential, 12-month term)
+  source: 1
+  evidence: vendor
 - label: Effective
-  value: Not disclosed
+  value: Not publicly disclosed
   source: null
 - label: Founded
   value: '2018'
-  source: null
+  source: 5
+  evidence: vendor
 - label: HQ
   value: San Francisco, CA
-  source: null
+  source: 5
+  evidence: vendor
 - label: Regions
   value: Global
   source: null
+- label: Valuation
+  value: $2B (Series D, April 2025)
+  source: 4
+  evidence: independent
 - label: Focus
   value: Customizable orchestration
   source: null
 pros:
 - Highly customizable, reusable workflow templates
 - Flexible fit for non-regulated and product-led use cases alike
-- Strong developer tooling and orchestration
+- Strong developer tooling and orchestration, with FedRAMP Moderate authorization for its government product
 cons:
 - Flexibility means a steeper configuration curve
-- No officially published pricing
+- Only the entry plan has a published price, and it carries a 12-month minimum term
 - Less specialized AML data depth than dedicated screening vendors
 alternatives:
 - slug: sumsub
@@ -90,20 +125,20 @@ choose_instead:
 - slug: onfido
   text: you want enterprise-grade document SDKs without building custom orchestration.
 user_reviews:
-  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  legacy_note: null
   praise:
-  - 'Customization (frequently cited): reviewers highlight the flexibility of reusable templates.'
+  - 'Customization: reviewers highlight the flexibility of reusable templates.'
   - 'Developer experience: users note strong APIs and orchestration tooling.'
   criticize:
-  - 'Setup complexity: some reviews note configuration takes longer than with fixed-flow competitors.'
-  - 'Pricing opacity: no officially published rate card.'
+  - 'Setup complexity: configuration can take longer than with fixed-flow competitors.'
+  - 'Pricing: beyond the entry plan, rates are quote-only.'
   by_profile:
   - Product-led teams with unusual onboarding requirements value Persona's configurability.
   - Companies scaling across multiple verification use cases reuse templates across flows.
   - Teams wanting a fixed, ready-made flow sometimes prefer simpler competitors.
 faq:
 - q: How much does Persona cost?
-  a: Persona does not publish standard pricing; some pay-as-you-go elements are reported by third parties, but rates should be confirmed with sales.
+  a: Persona's Essential plan starts at $250 a month with a 12-month minimum term. Growth and Enterprise plans are quoted on request. Billing is per successful verification, and eligible startups can apply for a year of free services on select products.
 - q: Is Persona no-code?
   a: Yes. Persona offers a no-code workflow builder with reusable, customizable verification templates.
 - q: Does Persona support KYB?
@@ -116,12 +151,89 @@ faq:
   a: Persona competes with Sumsub, ComplyCube, and Onfido, differentiating through customizable, reusable workflow orchestration.
 segments: []
 capabilities: {}
-certifications: []
-user_ratings: []
+certifications:
+- name: FedRAMP Moderate (Persona for Government)
+  what: US federal cloud security, certified since 10 Apr 2026
+  status: confirmed
+  source: 3
+- name: ISO/IEC 30107-3 Level 2 (iBeta)
+  what: Liveness / presentation attack detection, Persona Selfie Liveness 2.0 (Nov 2023)
+  status: confirmed
+  source: 6
+- name: SOC 2 Type II
+  what: Security controls audit
+  status: vendor_stated
+  source: 2
+- name: ISO/IEC 27001
+  what: Information security
+  status: vendor_stated
+  source: 2
+- name: Kantara (NIST SP 800-63)
+  what: US identity assurance
+  status: vendor_stated
+  source: 2
+- name: HIPAA
+  what: US health data
+  status: vendor_stated
+  source: 2
+- name: Age Check Certification Scheme
+  what: Age assurance (UK)
+  status: vendor_stated
+  source: 2
+- name: KJM
+  what: Age verification (Germany)
+  status: vendor_stated
+  source: 2
+user_ratings:
+- platform: G2
+  rating: 4.2
+  count: 48
+  checked: '2026-10'
+  url: https://www.g2.com/products/persona-persona/reviews
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
-sources: []
+sources:
+- title: Persona pricing
+  publisher: Persona
+  url: https://withpersona.com/pricing
+  accessed: '2026-10'
+- title: Persona security
+  publisher: Persona
+  url: https://withpersona.com/security
+  accessed: '2026-10'
+- title: 'FedRAMP Marketplace: Persona for Government'
+  publisher: FedRAMP (US GSA)
+  url: https://fedramp.gov/marketplace/products/FR2504154395XL
+  accessed: '2026-10'
+- title: Identity verification firm Persona hits $2bn valuation following $200m funding round (30 April 2025)
+  publisher: FinTech Global
+  url: https://fintech.global/?p=198974
+  accessed: '2026-10'
+- title: Persona achieves FedRAMP Moderate authorization (21 May 2026)
+  publisher: 01net (press release)
+  url: https://www.01net.it/persona-achieves-fedramp-moderate-authorization-giving-federal-agencies-modern-identity-verification/
+  accessed: '2026-10'
+- title: ISO 30107-3 presentation attack detection confirmation letters
+  publisher: iBeta Quality Assurance
+  url: https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/
+  accessed: '2026-10'
+- title: Persona homepage
+  publisher: Persona
+  url: https://withpersona.com/
+  accessed: '2026-10'
+- title: 'Age assurance: how Persona can help determine an individual''s age'
+  publisher: Persona Help Center
+  url: https://help.withpersona.com/articles/6sBm3U81qDvDMyQ4bxTKVB/
+  accessed: '2026-10'
+- title: Persona (identity verification service)
+  publisher: Wikipedia
+  url: https://en.wikipedia.org/wiki/Persona_(identity_verification_service)
+  accessed: '2026-10'
+- title: Persona reviews
+  publisher: G2
+  url: https://www.g2.com/products/persona-persona/reviews
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -130,7 +242,13 @@ entity:
   - https://www.linkedin.com/company/personaidentities
   - https://www.crunchbase.com/organization/persona-0dcc
 legacy_issues: []
-legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against Persona's official pricing page and profiles before this page goes live.
+legacy_editorial_note: null
+verification_notes:
+- Founders Rick Song and Charles Yeh confirmed only on Wikipedia (source 9); no Persona page opened names Charles Yeh.
+- G2 product page showed 4.2 from 48 reviews; Persona's own homepage cites Gartner Peer Insights 4.5 from 70 reviews (as of 7 Jul 2026). Gartner page not opened.
+- Kantara Trust Status List did not render; Kantara listed as vendor_stated.
+- Feb 2026 Wikipedia items (exposed code on a FedRAMP instance; Discord ending an age-verification trial) are noted for editorial awareness but not added to the page.
+- Regions value Global kept without a source; Persona publishes no country count on pages opened.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

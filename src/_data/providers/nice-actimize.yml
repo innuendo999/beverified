@@ -4,13 +4,13 @@ alternate_names: []
 status: published
 seo:
   title: 'NICE Actimize Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'NICE Actimize review: the broadest financial-crime and compliance suite, backed by publicly traded NICE Ltd. Features, pricing, pros & cons, alternatives.'
+  description: 'NICE Actimize review: a broad financial-crime and compliance suite owned by NICE Ltd, which is exploring a sale of the unit. Features, pricing, pros & cons, alternatives.'
   h1: 'NICE Actimize Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/nice-actimize.png
   background: '#5A2FD1'
   wordmark: null
-tagline: The broadest financial-crime and compliance suite, backed by a public parent company
+tagline: A broad financial-crime and compliance suite, owned by NICE Ltd while a sale of the unit is explored
 score: 4.6
 grade: Great
 primary_category: aml/banks
@@ -22,55 +22,68 @@ link:
   url: https://www.niceactimize.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-07-29'
+last_verified: '2026-10-18'
 updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: 'NICE Actimize is the largest, widest-scoped financial-crime platform in this category. It covers suspicious-activity monitoring, watchlist screening, entity risk, KYC/CDD and regulatory reporting under one roof, backed by its publicly traded parent NICE Ltd (NASDAQ: NICE). That scale suits tier-1 banks and regulators; smaller organizations may find it over-engineered.'
+verdict: 'NICE Actimize is one of the widest-scoped financial-crime platforms in this category. It covers suspicious-activity monitoring, sanctions screening, entity risk, customer due diligence and regulatory reporting under one vendor, and says over 1,000 organizations in more than 70 countries use it. It is owned by NICE Ltd (Nasdaq: NICE), which has been running a sale process for the unit since November 2025; in September 2026 Brookfield was reported to be in exclusive talks, with no deal announced. That scale suits large banks; smaller organizations may find it more than they need.'
 what_is:
-- 'NICE Actimize is a financial-crime, risk, and compliance platform founded in 1999 and headquartered in Hoboken, New Jersey, operating as part of NICE Ltd (NASDAQ: NICE, founded 1986). Led by Actimize CEO Craig Costigan, it serves global and regional financial institutions and government regulators, including clients like DNB, Aberdeen Group, and TF Bank.'
+- 'NICE Actimize is a financial-crime, risk and compliance software vendor. Actimize was founded in Israel in 1999 and bought by NICE in 2007 for about $280 million; its press releases are datelined Hoboken, New Jersey. Craig Costigan is CEO. Parent NICE Ltd (Nasdaq: NICE) put the unit up for sale in November 2025, and in September 2026 Brookfield was reported to have secured exclusivity in talks at about $2 billion, though the deal was not final. Named clients in recent announcements include Aberdeen Group (X-Sight AML, 2025) and TF Bank (AML Essentials, 2024).'
 features:
-- 'SAM: Suspicious Activity Monitoring across transactions.'
-- 'WL-X: watchlist and sanctions screening.'
-- X-Sight Entity Risk for entity-centric risk scoring.
-- KYC/CDD and sanctions screening workflows.
-- STAR/CTR automated regulatory reporting.
-- AML Essentials (cloud, faster deployment) and Xceed integrated FRAML platform with graph-based ML analytics.
+- 'SAM: Suspicious Activity Monitoring for transactions.'
+- 'WL-X: AI-assisted sanctions and watchlist screening for parties and payments, in real time or batch.'
+- X-Sight Entity Risk, a single risk profile and score per entity using identity resolution, network analytics and machine learning.
+- Customer due diligence and KYC lifecycle workflows.
+- STAR suspicious activity reporting and CTR processing automation for regulatory reporting.
+- AML Essentials (cloud AML suite for mid-sized institutions) and Xceed, a single AI platform for fraud prevention and AML (FRAML) aimed at credit unions and community banks.
 pricing:
-  summary: NICE Actimize does not publish pricing; its enterprise financial-crime suite is licensed to institutions based on module selection and scale.
+  summary: Pricing is not published; NICE Actimize quotes on request.
   plans:
   - tier: Enterprise Quote
     price: Custom
-    note: Financial-crime suite licensing for tier-1 institutions
+    note: Licensing depends on modules and scale
     extra: Contact sales for a quote
-  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
-  verified: null
-  items: []
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Published pricing
+    value: Not published; quote on request
+    kind: official
+    source: 1
+    verified: '2026-10'
 facts:
 - label: From
   value: Custom quote
   source: null
 - label: Effective
-  value: Not disclosed
+  value: Not publicly disclosed
   source: null
 - label: Founded
   value: '1999'
-  source: null
+  source: 4
+  evidence: independent
 - label: HQ
   value: Hoboken, NJ
-  source: null
+  source: 2
+  evidence: vendor
 - label: Regions
-  value: Global
-  source: null
+  value: 70+ countries
+  source: 2
+  evidence: vendor
 - label: Parent Company
-  value: 'NICE Ltd (NASDAQ: NICE)'
-  source: null
+  value: 'NICE Ltd (Nasdaq: NICE)'
+  source: 3
+  evidence: vendor
+- label: Ownership status
+  value: Sale process; Brookfield in exclusive talks (Sep 2026, not final)
+  source: 6
+  evidence: independent
 pros:
-- Broadest end-to-end financial-crime product portfolio in this category
-- Entity-centric AI/ML depth trusted by tier-1 banks and regulators
-- Backed by publicly traded parent NICE Ltd, adding transparency and stability
+- One of the broadest end-to-end financial-crime product portfolios in this category
+- Entity-centric risk scoring (X-Sight Entity Risk) built on identity resolution, network analytics and machine learning
+- Large installed base, with over 1,000 organizations in more than 70 countries according to the vendor
 cons:
-- Can be over-engineered for smaller organizations
+- Can be more than smaller organizations need
 - Resource-intensive deployment
-- Custom, enterprise-only pricing
+- No published pricing; quotes only
 alternatives:
 - slug: quantexa
   name: Quantexa
@@ -89,26 +102,26 @@ choose_instead:
 - slug: complyadvantage
   text: you want a lighter-weight AML screening layer rather than a full enterprise suite.
 user_reviews:
-  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  legacy_note: null
   praise:
-  - 'Product breadth (frequently cited): reviewers like having AML, fraud and compliance in one portfolio.'
-  - 'Trust and stability: clients note confidence from NICE Ltd''s public-company backing.'
+  - 'Product breadth: having AML, fraud and compliance modules from one vendor is the main draw.'
+  - 'Track record: buyers value a long-established vendor with a large installed base.'
   criticize:
-  - 'Over-engineering: some reviewers note the platform can be more than smaller organizations need.'
+  - 'Scale of the platform: it can be more than smaller organizations need.'
   - 'Deployment resources: implementation takes significant time and staff.'
   by_profile:
-  - Tier-1 banks and government regulators are NICE Actimize's core customer base.
+  - Large banks and financial institutions are NICE Actimize's core customer base.
   - Large financial institutions value the breadth of AML, fraud, and compliance modules in one vendor.
   - Smaller organizations typically evaluate lighter, faster-to-deploy alternatives.
 faq:
 - q: How much does NICE Actimize cost?
-  a: NICE Actimize does not publish pricing; its suite is licensed to institutions based on module selection and scale.
+  a: NICE Actimize does not publish pricing; it quotes on request based on the modules and scale you need.
 - q: Who owns NICE Actimize?
-  a: 'NICE Actimize operates as part of NICE Ltd, a publicly traded company (NASDAQ: NICE) founded in 1986.'
+  a: 'NICE Actimize is part of NICE Ltd (Nasdaq: NICE), which bought Actimize in 2007. NICE has been running a sale process for the unit since November 2025, and in September 2026 Brookfield was reported to be in exclusive talks to buy it for about $2 billion. No deal had been announced as of October 2026.'
 - q: What is Xceed?
-  a: Xceed is NICE Actimize's integrated FRAML (fraud + AML) platform combining graph-based analytics with machine learning.
+  a: Xceed is NICE Actimize's AI platform that combines fraud prevention and AML compliance (FRAML) in one system, aimed at credit unions and community banks.
 - q: What is AML Essentials?
-  a: AML Essentials is NICE Actimize's cloud-based offering built for faster deployment than its full enterprise suite.
+  a: AML Essentials is NICE Actimize's cloud AML suite for mid-sized institutions, covering transaction monitoring, customer due diligence and screening. TF Bank chose it in 2024.
 - q: What is the best alternative to NICE Actimize?
   a: Quantexa is the best alternative if entity-resolution and graph analytics are the priority. Feedzai is the closest fit for focused, real-time payment fraud.
 - q: Who are NICE Actimize's main competitors?
@@ -120,7 +133,67 @@ user_ratings: []
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
-sources: []
+sources:
+- title: NICE Actimize homepage
+  publisher: NICE Actimize
+  url: https://www.niceactimize.com/
+  accessed: '2026-10'
+- title: NICE Actimize Positioned as a Leading Luminary in Celent's 2026 KYC Solutionscape
+  publisher: Business Wire
+  url: https://www.businesswire.com/news/home/20260317094211/en/NICE-Actimize-Positioned-as-a-Leading-Luminary-in-Celent%E2%80%99s-2026-KYC-Solutionscape-and-Technology-Capabilities-Matrix
+  accessed: '2026-10'
+- title: Press release with About NiCE boilerplate (17 March 2026)
+  publisher: NiCE
+  url: https://www.nice.com/press-releases/nice-actimize-positioned-as-a-leading-luminary-in-celents-2026-kyc-solutionscape-and-technology-capabilities-matrix
+  accessed: '2026-10'
+- title: 'NICE Actimize: success story'
+  publisher: Israel Innovation Authority
+  url: https://innovationisrael.org.il/en/success_story/nice-actimize/
+  accessed: '2026-10'
+- title: NICE to acquire Actimize (2 July 2007)
+  publisher: FTV Capital
+  url: https://ftvcapital.com/2007/nice-to-acquire-actimize-pioneering-convergence-of-real-time-transaction-and-interaction-analytics-solutions
+  accessed: '2026-10'
+- title: Brookfield reportedly in exclusive talks to buy Actimize for about $2 billion (23 September 2026)
+  publisher: CTech (Calcalist)
+  url: https://www.calcalistech.com/ctechnews/article/iazqvedg2
+  accessed: '2026-10'
+- title: NICE puts Actimize up for sale (24 November 2025)
+  publisher: CTech (Calcalist)
+  url: https://www.calcalistech.com/ctechnews/article/syc7hf11zwx
+  accessed: '2026-10'
+- title: NICE Actimize leadership team
+  publisher: NICE Actimize
+  url: https://www.niceactimize.com/leadership-team
+  accessed: '2026-10'
+- title: WL-X sanctions screening
+  publisher: NICE Actimize
+  url: https://www.niceactimize.com/anti-money-laundering/sanctions-screening
+  accessed: '2026-10'
+- title: X-Sight Entity Risk
+  publisher: NICE Actimize
+  url: https://www.niceactimize.com/xsight/entity-risk
+  accessed: '2026-10'
+- title: Suspicious Transaction Activity Reporting (STAR)
+  publisher: NICE Actimize
+  url: https://www.niceactimize.com/anti-money-laundering/suspicious-transaction-activity-reporting
+  accessed: '2026-10'
+- title: Xceed AI FRAML
+  publisher: NICE Actimize
+  url: https://www.niceactimize.com/xceed
+  accessed: '2026-10'
+- title: NICE Actimize AML SaaS solutions chosen by TF Bank (21 November 2024)
+  publisher: FinTech Futures
+  url: https://www.fintechfutures.com/press-releases/nice-actimize-aml-saas-solutions-chosen-by-tf-bank-to-elevate-its-financial-crime-program
+  accessed: '2026-10'
+- title: NICE Actimize X-Sight AML solutions selected by Aberdeen Group (14 July 2025)
+  publisher: Business Wire
+  url: https://www.businesswire.com/news/home/20250714567457/en/nice-actimize-x-sight-aml-solutions-selected-by-aberdeen-group-to-enhance-its-financial-crime-operations
+  accessed: '2026-10'
+- title: NICE earnings call puts reported Actimize sale update in context (15 May 2026)
+  publisher: A-Team Insight
+  url: https://a-teaminsight.com/blog/nice-earnings-call-puts-reported-actimize-sale-update-in-context/?brand=rti
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -129,7 +202,13 @@ entity:
   - https://www.linkedin.com/company/nice-actimize
   - https://www.crunchbase.com/organization/actimize
 legacy_issues: []
-legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against NICE Actimize's official pricing page and profiles before this page goes live.
+legacy_editorial_note: null
+verification_notes:
+- Ownership is in flux. Brookfield exclusive talks were reported on 23 Sep 2026 (CTech citing Sky News); no signed deal found as of 2026-10-18. Re-check before next release.
+- HQ Hoboken taken from press release datelines; no registry entry checked.
+- No security certifications (ISO 27001, SOC 2) are published on niceactimize.com or the NiCE trust center page; none listed.
+- No G2 or Gartner Peer Insights page could be opened; user ratings left empty and theme counts removed.
+- DNB as a named client could not be confirmed and was removed.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

@@ -4,7 +4,7 @@ alternate_names: []
 status: published
 seo:
   title: 'AiPrise Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'AiPrise review: unified KYC/KYB API built for emerging markets, with an AI Compliance Copilot. Features, pricing, pros & cons, alternatives.'
+  description: 'AiPrise review: unified KYC/KYB API covering 200+ countries, with AI agents and a Compliance Co-pilot. Features, pricing, pros & cons, alternatives.'
   h1: 'AiPrise Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/aiprise.jpg
@@ -22,54 +22,64 @@ link:
   url: https://www.aiprise.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-07-29'
+last_verified: '2026-10-18'
 updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: AiPrise combines individual KYC and business KYB verification through one API, aimed at businesses onboarding customers across 200+ countries including many emerging markets. Its AI Compliance Copilot automates case review and enhanced due diligence report generation, though company details like exact HQ and founding year aren't consistently public.
+verdict: AiPrise combines individual KYC and business KYB verification through one API, aimed at businesses onboarding customers across 200+ countries, including many emerging markets. Its AI agents and Compliance Co-pilot target case review and analyst workload. It is a young company (Y Combinator, Summer 2022) that raised a $12.5M Series A in October 2025, so its track record is shorter than the category leaders'.
 what_is:
-- AiPrise is a global KYC/KYB verification company founded by Chaitanya Sarda, US-based (exact headquarters location not consistently disclosed publicly), having raised two funding rounds. It provides identity and business verification across 200+ countries with a particular focus on emerging markets, combined with an AI Compliance Copilot for automating due diligence work.
+- AiPrise is a KYC/KYB verification company based in San Francisco, founded in 2022 by Chaitanya Sarda (CEO) and Rushabh Shah (Co-CEO) and part of Y Combinator's Summer 2022 batch. It raised a $12.5M Series A led by Headline in October 2025. It provides identity and business verification across 200+ countries, with government eKYC checks in 70+ countries, and adds AI agents and a Compliance Co-pilot for compliance casework.
 features:
-- 'KYB: business registry data, ownership verification and social signals.'
-- 'KYC: document verification, biometric selfie match and local ID checks.'
-- Ongoing fraud monitoring.
-- Customizable rule engines for risk workflows.
-- AI Compliance Copilot for case review and document analysis.
-- Automated enhanced due diligence (EDD) report generation.
+- 'KYB: global business registry search and business verification.'
+- 'KYC: document authenticity checks, local document verification and government eKYC checks in 70+ countries.'
+- Proof of address and proof of source of funds verification.
+- Fraud and risk scoring.
+- Compliance Co-pilot for case review.
+- AI agents (AML, document and website agents); the vendor claims the AML agent cuts false positives by 95%.
 pricing:
-  summary: AiPrise does not publish pricing; its KYC/KYB platform is quoted based on client volume and requirements.
+  summary: Pricing is not published; AiPrise quotes on request based on volume and requirements. Capterra lists no free trial.
   plans:
   - tier: Custom Quote
     price: Custom
     note: KYC/KYB platform licensing
     extra: Not publicly disclosed; contact sales
-  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
-  verified: null
-  items: []
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Published prices
+    value: Not publicly disclosed; quote on request
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Free trial
+    value: Not available (per Capterra listing)
+    kind: third_party
+    source: 6
+    verified: '2026-10'
 facts:
 - label: From
-  value: Custom quote
-  source: null
+  value: Not publicly disclosed
 - label: Effective
-  value: Not disclosed
-  source: null
+  value: Not publicly disclosed
 - label: Founded
-  value: Not disclosed
-  source: null
+  value: '2022'
+  source: 2
 - label: HQ
-  value: US-based
-  source: null
+  value: San Francisco, CA
+  source: 2
 - label: Regions
   value: 200+ countries
-  source: null
-- label: Focus
-  value: Emerging-market KYC+KYB
-  source: null
+  source: 1
+  evidence: vendor
+- label: Funding
+  value: $12.5M Series A led by Headline (Oct 2025)
+  source: 3
+  evidence: vendor
 pros:
 - Wide global and emerging-market coverage through a single API
-- AI Compliance Copilot automates enhanced due diligence work
+- AI agents and a Compliance Co-pilot aimed at cutting manual review work
 - Combines individual KYC and business KYB in one platform
 cons:
 - Younger brand with smaller scale than category leaders
-- Some company details (HQ, founding year) are not consistently public
+- Few public user reviews so far
 - No published pricing
 alternatives:
 - slug: idmerit
@@ -87,40 +97,78 @@ choose_instead:
 - slug: complycube
   text: you want simpler API-first KYC/AML without an AI compliance copilot.
 - slug: vespia
-  text: business verification depth across 300+ jurisdictions matters more than combined KYC+KYB in one API.
+  text: business verification depth matters more than combined KYC+KYB in one API.
 user_reviews:
-  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  legacy_note: null
   praise:
-  - 'AI Copilot (frequently cited): reviewers highlight automation of due diligence casework.'
-  - 'Coverage breadth: users note a strong fit for onboarding customers in emerging markets.'
+  - 'Automation: reviewers describe faster compliance decisions with less manual work.'
+  - 'Coverage breadth: users note a fit for onboarding customers and businesses across many countries.'
   criticize:
-  - 'Transparency: some reviewers note limited public company information.'
+  - 'Track record: a young vendor with few public reviews so far.'
   - 'Brand scale: smaller than established category leaders.'
   by_profile:
   - Businesses onboarding customers across emerging markets value AiPrise's coverage.
-  - Compliance teams use the AI Copilot to speed up EDD casework.
+  - Compliance teams use the AI agents and Co-pilot to speed up casework.
   - Enterprises wanting a more established vendor track record often evaluate larger competitors.
 faq:
 - q: How much does AiPrise cost?
   a: AiPrise does not publish pricing; its KYC/KYB platform is quoted based on client volume and requirements.
 - q: What is AiPrise's AI Compliance Copilot?
-  a: It's an AI tool that automates case review, document analysis, and enhanced due diligence (EDD) report generation.
+  a: It is an AI assistant for compliance case review. AiPrise also offers AI agents for AML screening, document checks and website reviews.
 - q: Does AiPrise support KYB?
-  a: Yes, AiPrise combines business KYB verification (registry data, ownership and social signals) with individual KYC in one API.
+  a: Yes. AiPrise combines business verification with global registry search and individual KYC in one API.
 - q: How many countries does AiPrise cover?
-  a: AiPrise covers 200+ countries, with a particular focus on emerging markets.
+  a: AiPrise says it covers 200+ countries, with government eKYC checks in 70+ countries.
 - q: What is the best alternative to AiPrise?
   a: IDMERIT is the best alternative for a more established, lower-cost provider. Vespia is the closest fit for deep KYB specialization.
 - q: Who are AiPrise's main competitors?
   a: AiPrise competes with IDMERIT, ComplyCube, and Vespia, differentiating through its unified KYC+KYB API and AI Compliance Copilot.
 segments: []
 capabilities: {}
-certifications: []
-user_ratings: []
+certifications:
+- name: SOC 2 Type II
+  what: Security controls report
+  status: vendor_stated
+  source: 1
+user_ratings:
+- platform: G2
+  rating: 4.7
+  count: 28
+  checked: '2026-10'
+  url: https://www.g2.com/products/aiprise/reviews
+- platform: Capterra
+  rating: 5.0
+  count: 1
+  checked: '2026-10'
+  url: https://www.capterra.com/p/10030052/AiPrise/
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
-sources: []
+sources:
+- title: AiPrise homepage
+  publisher: AiPrise
+  url: https://www.aiprise.com/
+  accessed: '2026-10'
+- title: AiPrise company profile
+  publisher: Y Combinator
+  url: https://www.ycombinator.com/companies/aiprise
+  accessed: '2026-10'
+- title: 'AiPrise: $12.5 million closed to build global compliance infrastructure'
+  publisher: Pulse 2.0
+  url: https://pulse2.com/aiprise-12-5-million-series-a/amp/
+  accessed: '2026-10'
+- title: AiPrise monthly review, October 2025
+  publisher: AiPrise
+  url: https://www.aiprise.com/blog/aiprise-monthly-review-october-2025
+  accessed: '2026-10'
+- title: AiPrise reviews
+  publisher: G2
+  url: https://www.g2.com/products/aiprise/reviews
+  accessed: '2026-10'
+- title: AiPrise software
+  publisher: Capterra
+  url: https://www.capterra.com/p/10030052/AiPrise/
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -129,7 +177,17 @@ entity:
   - https://www.linkedin.com/company/aiprise
   - https://www.crunchbase.com/organization/aiprise
 legacy_issues: []
-legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against AiPrise's official pricing page and profiles before this page goes live.
+legacy_editorial_note: null
+verification_notes:
+- 'The vendor pricing page (aiprise.com/pricing) could not be loaded on 2026-10-18; no prices were found on the homepage, G2 or Capterra. Re-check the pricing page before treating "not published" as final.'
+- 'Founded 2022 and San Francisco HQ come from the Y Combinator profile (no evidence label: accelerator listing, not a registry). About and security pages could not be loaded.'
+- 'Co-founder surname differs between sources: Y Combinator and Pulse 2.0 say Rushabh Shah; Tech Company News says Rushabh Doshi. We use Shah.'
+- 'Total funding not confirmed from a primary source (one article says $2.0M seed plus $12.5M Series A, about $14.5M). Only the Series A is shown.'
+- 'Customer count: homepage says 200+ compliance teams; an Oct 2025 article said 150+ clients. Not shown as a fact.'
+- 'Old feature claims "ownership verification and social signals", "biometric selfie match", "customizable rule engines" and "automated EDD report generation" not found on the homepage. Reworded to current homepage features.'
+- 'SOC 2 Type II is a homepage footer badge; no report opened. ISO 27001 not claimed.'
+- 'Vespia choose-instead reason dropped "300+ jurisdictions" (Vespia figure not re-checked in this pass).'
+- 'G2 rating visible (4.7, 28 reviews); review text not read in full, so themes are general statements without counts.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

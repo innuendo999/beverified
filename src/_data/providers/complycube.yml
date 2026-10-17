@@ -4,7 +4,7 @@ alternate_names: []
 status: published
 seo:
   title: 'ComplyCube Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'ComplyCube review: API-first KYC/AML platform aimed at straightforward developer integration. Features, pricing, pros & cons, alternatives.'
+  description: 'ComplyCube review: API-first KYC/AML platform with published per-check pricing and plans from $99 a month. Features, pricing, pros & cons, alternatives.'
   h1: 'ComplyCube Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/complycube.webp
@@ -22,54 +22,112 @@ link:
   url: https://www.complycube.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-07-28'
+last_verified: '2026-10-18'
 updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: ComplyCube is a smaller, API-first challenger in a category dominated by better-funded platforms, pitching itself on straightforward integration for document verification, biometrics, and AML screening. It's a reasonable fit for mid-market teams that want a developer-friendly onboarding API, though it doesn't have the scale or published pricing transparency of the category's larger players.
+verdict: ComplyCube is a smaller, API-first challenger in a category dominated by better-funded platforms, pitching itself on straightforward integration for document verification, biometrics, and AML screening. It's a reasonable fit for small and mid-market teams that want a developer-friendly onboarding API. Unlike most vendors in this category it publishes per-check prices and self-serve plans, though it doesn't have the scale or brand recognition of the category's larger players.
 what_is:
-- ComplyCube is a KYC and AML technology company headquartered in London, UK, offering an API-first platform for identity verification, biometric authentication, and AML screening. It targets fintechs and regulated businesses that want document verification, liveness checks, and sanctions/PEP screening through a single integration, positioned as a more accessible alternative to enterprise-only IDV platforms.
+- ComplyCube is a KYC and AML technology company based in London, UK, operated by Teemo Technology Ltd. It offers an API-first platform for identity verification, biometric authentication, KYB and AML screening, and says it supports 220+ countries and territories. It targets fintechs and regulated businesses that want document verification, liveness checks, and sanctions/PEP screening through a single integration, positioned as a more accessible alternative to enterprise-only IDV platforms. Its identity service is certified under the UK digital identity and attributes trust framework (DIATF).
 features:
 - Document verification with OCR and authenticity checks.
 - Biometric face-match and liveness detection.
-- 'AML screening: sanctions, PEP and adverse media.'
+- 'AML screening: sanctions, PEP, adverse media, watchlists and continuous monitoring.'
 - KYB (business verification) alongside individual identity checks.
-- Video KYC for higher-assurance onboarding.
-- API and SDK integration aimed at fast developer implementation.
+- eID verification, NFC chip verification and video liveness for higher-assurance onboarding (some on higher plans).
+- Web and mobile SDKs, a REST API and a no-code workflow builder.
 pricing:
-  summary: ComplyCube does not publish standard pricing; its document, biometric, and AML-screening checks are quoted per volume via sales.
+  summary: ComplyCube publishes self-serve plans and per-check prices. Starter costs $99 a month and Core $299 a month, with the monthly fee used as credit for checks and only successful verifications billed. Growth and Enterprise plans are quoted on request.
   plans:
-  - tier: Custom Quote
+  - tier: Starter
+    price: $99/month
+    note: Monthly fee becomes usage credit for any check
+    extra: AML screening, identity verification, workflows, API and dashboard
+  - tier: Core
+    price: $299/month
+    note: Lower per-check rates than Starter
+    extra: Adds proof of address, fraud intelligence, batch processing, custom branding
+  - tier: Growth
     price: Custom
-    note: Per-check pricing quoted via sales
+    note: Adds eID, database checks, NFC chip verification, premium support
     extra: Contact sales for a quote
-  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
-  verified: null
-  items: []
+  - tier: Enterprise
+    price: Custom
+    note: Case management, dedicated infrastructure with SLA, white-labelled workflows
+    extra: Contact sales for a quote
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Starter plan
+    value: $99 per month (credited against checks)
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Core plan
+    value: $299 per month (credited against checks)
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Standard AML screening
+    value: $0.50 (Starter) / $0.35 (Core) per check
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Document verification
+    value: $1.05 (Starter) / $0.75 (Core) per check
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Liveness and face match (photo)
+    value: $0.35 (Starter) / $0.20 (Core) per check
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Continuous AML monitoring
+    value: $0.03 per profile per month
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Minimum commitment
+    value: None beyond the monthly plan fee
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Growth and Enterprise
+    value: Quote on request
+    kind: official
+    source: 1
+    verified: '2026-10'
 facts:
 - label: From
-  value: Custom quote
-  source: null
-- label: Effective
-  value: Not disclosed
-  source: null
-- label: Founded
-  value: '2016'
-  source: null
+  value: $99/month (Starter)
+  source: 1
+  evidence: vendor
+- label: Per check
+  value: From $0.20 (Core liveness) to $1.05 (Starter document check)
+  source: 1
+  evidence: vendor
+- label: Legal entity
+  value: Teemo Technology Ltd (UK, incorporated Jan 2020)
+  source: 5
+  evidence: independent
 - label: HQ
   value: London, UK
-  source: null
+  source: 4
+  evidence: independent
 - label: Regions
-  value: Global
-  source: null
+  value: 220+ countries and territories
+  source: 3
+  evidence: vendor
 - label: Certifications
-  value: ISO 27001, GDPR
-  source: null
+  value: UK DIATF (register), ISO/IEC 27001 (vendor-stated)
+  source: 4
+  evidence: independent
 pros:
-- API-first design aimed at fast developer integration
-- Bundles document, biometric, and AML screening in one platform
-- ISO 27001-aligned security posture for a smaller vendor
+- API-first design with web and mobile SDKs aimed at fast developer integration
+- Published per-check prices and self-serve plans from $99 a month
+- Certified UK DIATF identity service, with ISO/IEC 27001 and ISO/IEC 30107-3 claims on its trust page
 cons:
 - Smaller scale and brand recognition than category leaders
-- No published pricing
+- Growth and Enterprise tiers, and checks such as NFC and video liveness, are quote-only
 - Less independent track record and case-study depth than larger competitors
 alternatives:
 - slug: sumsub
@@ -83,44 +141,103 @@ alternatives:
   best_for: Developer-Friendly
 choose_instead:
 - slug: sumsub
-  text: you want published pricing and a more established, larger-scale all-in-one platform.
+  text: you want a more established, larger-scale all-in-one platform.
 - slug: shufti-pro
-  text: you need wider country/language coverage than a smaller API-first vendor typically offers.
+  text: you want a vendor with a longer enterprise track record across many languages and markets.
 - slug: onfido
   text: you want a more established developer-tools ecosystem at enterprise scale.
 user_reviews:
-  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  legacy_note: null
   praise:
-  - 'Integration speed (frequently cited): reviewers highlight quick API and SDK setup for developer teams.'
-  - 'Bundled scope: users note that having document, biometric and AML checks in one place is convenient for smaller teams.'
+  - 'Integration: the API and SDKs are the main reason developer teams shortlist it.'
+  - 'Bundled scope: having document, biometric and AML checks in one place suits smaller teams.'
   criticize:
-  - 'Scale: some reviewers note less brand recognition and case-study depth than category leaders.'
-  - 'Pricing opacity: no published rate card, quote only.'
+  - 'Scale: less brand recognition and case-study depth than category leaders.'
+  - 'Plan limits: some checks and features are only available on quote-based tiers.'
   by_profile:
-  - Mid-market fintechs value ComplyCube's API-first, developer-friendly integration.
-  - Smaller compliance teams appreciate having document, biometric, and AML checks bundled together.
-  - Enterprises needing broad global coverage more often evaluate larger, more established platforms.
+  - Small and mid-market fintechs can start on a self-serve plan and use the API directly.
+  - Smaller compliance teams get document, biometric, and AML checks bundled together.
+  - Enterprises needing a long track record at scale more often evaluate larger, more established platforms.
 faq:
 - q: How much does ComplyCube cost?
-  a: ComplyCube does not publish standard pricing; its checks are quoted per volume via sales.
+  a: ComplyCube publishes its prices. The Starter plan is $99 a month and Core is $299 a month, with the fee used as credit for checks. Per-check prices start at $0.20 for a photo liveness check on Core; a document check costs $1.05 on Starter. Growth and Enterprise plans are quoted on request.
 - q: Does ComplyCube support KYB?
   a: Yes. ComplyCube offers business verification (KYB) alongside its individual identity-verification and AML screening tools.
 - q: Is ComplyCube good for developers?
-  a: Yes, ComplyCube is built API-first, aimed at fast integration for development teams building onboarding flows.
+  a: Yes, ComplyCube is built API-first, with web and mobile SDKs and a no-code workflow builder for teams that do not want to code the flow.
 - q: Does ComplyCube do AML screening?
-  a: Yes. ComplyCube includes sanctions, PEP, and adverse-media screening alongside its document and biometric verification.
+  a: Yes. ComplyCube includes sanctions, PEP, watchlist and adverse-media screening with continuous monitoring, alongside its document and biometric verification.
+- q: Is ComplyCube certified under the UK trust framework?
+  a: Yes. The UK government register lists the ComplyCube Platform (Teemo Technology Ltd) as a certified identity service, certified by Kantara on 30 March 2026 until 30 March 2029.
 - q: What is the best alternative to ComplyCube?
-  a: Sumsub is the best alternative for published pricing and a more established, larger-scale platform. Shufti Pro is the closest fit for broader country and language coverage.
+  a: Sumsub is the best alternative for a more established, larger-scale platform. Shufti Pro is the closest fit if you want a vendor with a longer enterprise track record.
 - q: Who are ComplyCube's main competitors?
-  a: ComplyCube competes with Sumsub, Shufti Pro, and Onfido, differentiating through its API-first focus on fast developer integration.
+  a: ComplyCube competes with Sumsub, Shufti Pro, and Onfido, differentiating through its API-first focus and published pricing.
 segments: []
 capabilities: {}
-certifications: []
-user_ratings: []
+certifications:
+- name: UK DIATF certified identity service
+  what: UK digital identity trust framework (Kantara, Mar 2026 to Mar 2029)
+  status: confirmed
+  source: 4
+- name: ISO/IEC 27001:2022
+  what: Information security
+  status: vendor_stated
+  source: 2
+- name: ISO 9001:2015
+  what: Quality management
+  status: vendor_stated
+  source: 2
+- name: ISO/IEC 30107-3 Level 2
+  what: Liveness / presentation attack detection (lab not named)
+  status: vendor_stated
+  source: 2
+- name: Cyber Essentials
+  what: UK baseline cyber security
+  status: vendor_stated
+  source: 2
+- name: ACCS 4:2020 (Age Check Certification Scheme)
+  what: Age assurance
+  status: vendor_stated
+  source: 2
+user_ratings:
+- platform: G2
+  rating: 5.0
+  count: 70
+  checked: '2026-10'
+  url: https://www.g2.com/products/complycube/reviews
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
-sources: []
+sources:
+- title: ComplyCube pricing
+  publisher: ComplyCube
+  url: https://www.complycube.com/en/pricing/
+  accessed: '2026-10'
+- title: Security & Compliance Center
+  publisher: ComplyCube
+  url: https://www.complycube.com/en/company/security-compliance-center/
+  accessed: '2026-10'
+- title: About ComplyCube
+  publisher: ComplyCube
+  url: https://www.complycube.com/en/about-us/
+  accessed: '2026-10'
+- title: 'Register of digital verification services: ComplyCube Platform'
+  publisher: UK Government (DSIT)
+  url: https://www.access-dvs-register.service.gov.uk/register/service-details?serviceId=274
+  accessed: '2026-10'
+- title: 'Companies House search: Teemo Technology Ltd (12392069)'
+  publisher: Companies House
+  url: https://find-and-update.company-information.service.gov.uk/search/companies?q=teemo+technology
+  accessed: '2026-10'
+- title: ComplyCube homepage
+  publisher: ComplyCube
+  url: https://www.complycube.com/en/
+  accessed: '2026-10'
+- title: ComplyCube reviews
+  publisher: G2
+  url: https://www.g2.com/products/complycube/reviews
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -129,7 +246,14 @@ entity:
   - https://www.linkedin.com/company/complycube
   - https://www.crunchbase.com/organization/complycube
 legacy_issues: []
-legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure above directly against ComplyCube's official pricing page and profiles before this page goes live.
+legacy_editorial_note: null
+verification_notes:
+- Founding year not stated by the vendor. Old page said 2016; the operating company Teemo Technology Ltd was incorporated on 8 Jan 2020 (Companies House) and CB Insights also says 2020. Founded fact removed rather than guessed.
+- London address on the register and Companies House is Crown House, 27 Old Gloucester Street, a registered-office address; actual office footprint not confirmed.
+- ISO/IEC 27001, ISO 9001, ISO/IEC 30107-3 (lab not named), Cyber Essentials and ACCS certifications are vendor-stated only; no certificate or lab letter opened.
+- Per-check price column mapping (Starter vs Core) is inferred from the order on the pricing page; the page does not label columns explicitly.
+- Video KYC (agent-led video identification) not found on current vendor pages; feature rewritten to video liveness, eID and NFC, which appear on the pricing page.
+- G2 rating visible (5.0, 70 reviews) but review text is behind a login, so user review themes are general statements, not counted themes.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

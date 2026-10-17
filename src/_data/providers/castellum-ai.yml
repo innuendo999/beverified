@@ -4,7 +4,7 @@ alternate_names: []
 status: published
 seo:
   title: 'Castellum.AI Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'Castellum.AI review: in-house risk data refreshed every 5 minutes, built by an ex-OFAC sanctions expert. Features, pricing, pros & cons, alternatives.'
+  description: 'Castellum.AI review: in-house risk data with 1,000+ watchlists refreshed every 5 minutes, built by an ex-OFAC sanctions expert. Features, pricing, pros & cons, alternatives.'
   h1: 'Castellum.AI Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/castellum-ai.jpg
@@ -22,51 +22,62 @@ link:
   url: https://www.castellum.ai
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-07-29'
+last_verified: '2026-10-18'
 updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: Castellum.AI runs its own sanctions and risk database, updated every 5 minutes across 1,000+ lists, instead of reselling third-party data. Founder Peter Piatetsky built it on his direct experience at the US Treasury's OFAC. Its agentic AI reportedly resolves 83% of L1/L2 alerts instantly with a 94% cut in false positives, with explainability built in for audits.
+verdict: Castellum.AI runs its own sanctions and risk database, with 1,000+ watchlists updated every 5 minutes, instead of reselling third-party data. Founder Peter Piatetsky previously worked at the US Treasury, including OFAC. The company says its AI agents instantly resolve 83% of L1 and L2 alerts and cut false positives by 94%, with an AI governance layer for audit and oversight.
 what_is:
-- Castellum.AI is a sanctions and risk-data screening company founded in 2019 and headquartered in New York, co-founded by CEO Peter Piatetsky, a former US Treasury/OFAC official, and CTO Julian Vasilkoski. With roughly 26 employees and about $12.6M raised from investors including Spider Capital and NewFund, it maintains an in-house database of 200,000+ sources and 1,000+ sanctions lists (OFAC, UN, UK HMT, EU), refreshed every 5 minutes.
+- Castellum.AI is a financial-crimes compliance platform based in New York that combines in-house risk data, AML/KYC screening and AI agents. CEO and co-founder Peter Piatetsky worked at OFAC and other US Treasury offices and later ran US compliance for a major Asian bank. The company raised a $4M seed round led by Spider Capital in 2023 and an $8.5M Series A led by Curql in 2025. It says its data draws on 200,000+ sources, with 1,000+ sanctions and PEP watchlists updated every 5 minutes.
 features:
-- Real-time sanctions, PEP, and adverse-media screening.
-- Beneficial-ownership, forced-labor, and supply-chain risk screening.
-- 'Agentic AI alert resolution: a reported 83% of L1/L2 alerts resolved instantly.'
-- Reported 94% reduction in false positives.
-- Explainable, audit-ready decisioning with PDF investigation reports.
-- Perpetual KYC (pKYC) support.
+- Sanctions, PEP and AI-powered adverse-media screening.
+- KYC/KYB onboarding, real-time monitoring, transaction screening and lookbacks.
+- Beneficial ownership and shelf company data.
+- 'Arbiter AI agents for alert resolution: the vendor says 83% of L1 and L2 alerts are resolved instantly.'
+- The vendor reports 94% fewer false positives (company-reported figure).
+- AI Governance Center for oversight and audit of agent decisions.
 pricing:
-  summary: Castellum.AI does not publish pricing; its screening platform is licensed based on client volume and requirements.
+  summary: Pricing is not published; Castellum.AI quotes on request. The pricing page describes an online platform, a compliance API and bulk data delivery, and links to a money-back guarantee.
   plans:
   - tier: Custom Quote
     price: Custom
-    note: Sanctions/risk screening platform licensing
+    note: Platform, API or bulk data delivery
     extra: Not publicly disclosed; contact sales
-  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
-  verified: null
-  items: []
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Published prices
+    value: Not publicly disclosed; quote on request
+    kind: official
+    source: 3
+    verified: '2026-10'
+  - label: Delivery options
+    value: Online platform, compliance API, bulk data
+    kind: official
+    source: 3
+    verified: '2026-10'
 facts:
 - label: From
-  value: Custom quote
-  source: null
+  value: Not publicly disclosed
 - label: Effective
-  value: Not disclosed
-  source: null
+  value: Not publicly disclosed
 - label: Founded
   value: '2019'
-  source: null
+  source: 7
 - label: HQ
   value: New York, NY
-  source: null
-- label: Regions
-  value: Global
-  source: null
+  source: 4
+  evidence: vendor
+- label: Data
+  value: 1,000+ watchlists updated every 5 minutes; 200,000+ sources
+  source: 1
+  evidence: vendor
 - label: Funding
-  value: ~$12.6M raised
-  source: null
+  value: $4M seed (2023) and $8.5M Series A (2025)
+  source: 5
+  evidence: vendor
 pros:
 - In-house risk data refreshed every 5 minutes, unusually current for the category
-- Founder brings direct US Treasury/OFAC sanctions expertise
-- Explainable agentic AI designed for audit-ready alert resolution
+- Founder brings direct US Treasury/OFAC sanctions experience
+- AI agents with a governance layer designed for audit-ready alert resolution
 cons:
 - Smaller team and scale than category giants
 - Screening/data-focused rather than a full identity-verification platform
@@ -89,38 +100,66 @@ choose_instead:
 - slug: namescan
   text: you want simple, on-demand screening for occasional checks.
 user_reviews:
-  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
-  praise:
-  - 'Data freshness (frequently cited): reviewers highlight the 5-minute refresh cycle as unusually current.'
-  - 'Explainability: users note the audit-ready reasoning behind AI-resolved alerts.'
-  criticize:
-  - 'Scale: some reviewers note a smaller team relative to enterprise AML vendors.'
-  - 'Scope: focused on screening and data rather than full identity verification.'
+  legacy_note: null
+  praise: []
+  criticize: []
   by_profile:
-  - Community and sponsor banks value Castellum.AI's current data and explainable AI.
-  - Crypto exchanges use it for real-time sanctions and beneficial-ownership screening.
-  - Government agencies benefit from the founder's direct OFAC/Treasury sanctions expertise.
+  - Community and sponsor banks, credit unions and fintechs are named customer types.
+  - Crypto exchanges use it for real-time sanctions screening.
+  - Teams that want explainable AI alert handling may value its governance layer.
 faq:
 - q: How much does Castellum.AI cost?
-  a: Castellum.AI does not publish pricing; its screening platform is licensed based on client volume and requirements.
+  a: Castellum.AI does not publish pricing. It quotes on request for its platform, API and bulk data options.
 - q: How often is Castellum.AI's data updated?
-  a: Castellum.AI refreshes its in-house database of 1,000+ sanctions lists every 5 minutes.
+  a: Castellum.AI says its 1,000+ sanctions and PEP watchlists are updated every 5 minutes.
 - q: Who founded Castellum.AI?
-  a: Castellum.AI was founded in 2019 by CEO Peter Piatetsky, a former US Treasury/OFAC official, and CTO Julian Vasilkoski.
+  a: Castellum.AI was co-founded by CEO Peter Piatetsky, who previously worked at OFAC and other offices of the US Treasury. Third-party data gives 2019 as the founding year.
 - q: What does Castellum.AI's agentic AI do?
-  a: Castellum.AI's agentic AI reportedly resolves 83% of L1/L2 alerts instantly and reduces false positives by 94%, with explainable, audit-ready reasoning.
+  a: Castellum.AI says its Arbiter AI agents instantly resolve 83% of L1 and L2 alerts and cut false positives by 94%, with an AI Governance Center for oversight.
 - q: What is the best alternative to Castellum.AI?
   a: ComplyAdvantage is the best alternative for a larger, established financial-crime database. Sanction Scanner is the closest fit for accessible mid-market pricing.
 - q: Who are Castellum.AI's main competitors?
   a: Castellum.AI competes with ComplyAdvantage, Sanction Scanner, and NameScan, differentiating through in-house, frequently refreshed risk data and explainable agentic AI.
 segments: []
 capabilities: {}
-certifications: []
+certifications:
+- name: SOC 2 Type 2
+  what: Security controls report
+  status: vendor_stated
+  source: 1
 user_ratings: []
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
-sources: []
+sources:
+- title: Castellum.AI homepage
+  publisher: Castellum.AI
+  url: https://www.castellum.ai/
+  accessed: '2026-10'
+- title: About
+  publisher: Castellum.AI
+  url: https://www.castellum.ai/about
+  accessed: '2026-10'
+- title: Pricing
+  publisher: Castellum.AI
+  url: https://www.castellum.ai/pricing
+  accessed: '2026-10'
+- title: Castellum.AI raises $4M in Spider Capital led round
+  publisher: Business Wire
+  url: https://www.businesswire.com/news/home/20231025586717/en/Castellum.AI-raises-4M-in-Spider-Capital-led-Round-to-Scale-Compliance-Screening-for-Enterprises
+  accessed: '2026-10'
+- title: Castellum.AI raises $8.5M Series A
+  publisher: Business Wire
+  url: https://www.businesswire.com/news/home/20250708026127/en/Castellum.AI-Raises-8.5M-Series-A-To-Accelerate-AI-Agent-and-AMLKYC-Platform-Adoption
+  accessed: '2026-10'
+- title: Announcing our seed investment
+  publisher: Castellum.AI
+  url: https://www.castellum.ai/announcing-our-seed-investment
+  accessed: '2026-10'
+- title: Castellum.AI company profile
+  publisher: CB Insights
+  url: https://www.cbinsights.com/compare/castellumai-vs-fincom
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -129,7 +168,17 @@ entity:
   - https://www.linkedin.com/company/castellum-ai
   - https://www.crunchbase.com/organization/castellum-ai
 legacy_issues: []
-legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against Castellum.AI's official pricing page and profiles before this page goes live.
+legacy_editorial_note: null
+verification_notes:
+- 'Founded 2019 comes only from CB Insights (third-party aggregator, no evidence label). Vendor pages give no founding year; the seed post says the beta launched in March 2022.'
+- 'CTO "Julian Vasilkoski" not confirmed: the about page lists Lee Roggenkamp as CTO and Marissa Venuto as COO, and does not name a second co-founder. Removed.'
+- '"Roughly 26 employees" not found. Removed. Funding "~$12.6M" replaced with the two press-released rounds ($4M + $8.5M); CB Insights shows $12.65M total.'
+- 'Investor "NewFund" is named in the 2023 seed release; Series A led by Curql with BTech Consortium and Framework Venture Partners.'
+- 'List names "OFAC, UN, UK HMT, EU" not checked list by list; dropped from prose. Vendor wording is "1,000+ watchlists", not "1,000+ sanctions lists".'
+- 'Features "forced-labor and supply-chain risk screening", "PDF investigation reports" and "Perpetual KYC" not found on current vendor pages. Removed.'
+- 'G2 shows no reviews for Castellum.AI, so the old "frequently cited" review themes had no visible basis. Praise and criticism themes removed; by_profile reworded to customer types named in the Series A release.'
+- 'SOC 2 Type 2 is a homepage badge only; no report opened.'
+- 'Pricing page mentions a money-back guarantee; its terms were not read.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

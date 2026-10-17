@@ -4,13 +4,13 @@ alternate_names: []
 status: published
 seo:
   title: 'Veriff Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'Veriff review: AI plus human-review identity verification across 230+ countries with published starter pricing from $49/mo. Features, pricing, pros & cons, alternatives.'
+  description: 'Veriff review: AI plus human-review identity verification across 230+ countries with published self-serve pricing from a $49 monthly minimum. Features, pricing, pros & cons, alternatives.'
   h1: 'Veriff Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/veriff.jpg
   background: '#8A5CF0'
   wordmark: null
-tagline: AI plus human-review IDV with deep document coverage and public starter pricing
+tagline: AI plus human-review IDV with deep document coverage and public self-serve pricing
 score: 4.6
 grade: Great
 primary_category: identity-verification
@@ -22,63 +22,123 @@ link:
   url: https://www.veriff.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-07-29'
+last_verified: '2026-10-18'
 updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: Veriff pairs AI decisioning with human review across 12,000+ document types and 230+ countries. The Estonian unicorn is built to catch deepfakes with an iBeta Level 2-certified liveness check. Its published starter tiers ($49 to $209/mo) are unusually transparent for this category, though premium tiers cost more than budget-first competitors.
+verdict: 'Veriff pairs automated decisions with human review (on its Plus and Premium plans) and says it supports 12,500+ government-issued ID documents from 230+ countries and territories. Its passive liveness check passed iBeta''s ISO/IEC 30107-3 Level 2 test in 2024, and its UK service is on the government''s DIATF register. Self-serve plans are published, with a $49, $99 or $209 monthly minimum plus $0.80 to $1.89 per verification. That is unusually transparent for this category, though the per-check fees on the higher tiers cost more than budget-first competitors.'
 what_is:
-- Veriff is an identity-verification company founded in October 2015 and headquartered in Tallinn, Estonia, by CEO Kaarel Kotkas and Janer Gorohhov, with offices added in New York (2019), London (2020), and Barcelona (2021). A unicorn since raising venture funding, it acquired device-intelligence company BrowserID in 2019 and verifies identities across 12,000+ document types in 230+ countries and 48 languages.
+- 'Veriff is an identity-verification company based in Tallinn, Estonia. Veriff OÜ was entered in the Estonian business register on 20 October 2015. Kaarel Kotkas founded the company and is its CEO; Janer Gorohhov is also listed as a co-founder. Veriff acquired device-intelligence company BrowserID in January 2019, opened its first foreign office in New York later that year, and raised a $100 million Series C at a reported $1.5 billion valuation in early 2022.'
+- 'Veriff says it supports 12,500+ government-issued ID documents from 230+ countries and territories and serves 3,000+ businesses. In February 2026 it announced the acquisition of Estonian KYB provider Vespia, and it now offers business verification through a limited access program.'
 features:
-- Document verification and biometric face match across 12,000+ document types.
-- Passive liveness detection with deepfake resistance, iBeta Level 2 certified.
-- AML screening, database verification, and proof-of-address checks.
-- Age validation and business verification.
-- Device intelligence via its 2019 BrowserID acquisition.
-- Web, iOS, and Android SDKs with published API.
+- Document verification and biometric face match; Veriff lists 12,500+ supported ID documents.
+- Passive liveness detection with deepfake and injected-media detection, tested by iBeta to ISO/IEC 30107-3 Level 1 and Level 2.
+- AML screening (PEP, sanctions and adverse media), database verification, and proof-of-address checks.
+- Age validation, plus selfie-based age estimation without an ID document.
+- Business verification (KYB) from 300+ jurisdictions, offered through a limited access program after the Vespia acquisition.
+- Fraud tools that cross-link risky identities, documents and devices, building on its 2019 BrowserID acquisition.
+- Hosted verification page, SDKs and webhooks.
 pricing:
-  summary: 'Veriff publishes starter tiers: Essential at $49/month, Plus at $99/month, and Premium at $209/month, with custom enterprise pricing above that for higher volumes.'
+  summary: 'Veriff publishes self-serve plans that combine a monthly minimum with a per-verification fee: Essential ($49 minimum, $0.80 per verification), Plus ($99, $1.39) and Premium ($209, $1.89). Enterprise pricing for 5,000+ verifications a month is quoted on request. PEP and sanctions screening costs $0.64 extra per verification, and a 15-day free trial covers up to 50 sessions.'
   plans:
   - tier: Essential
-    price: $49 / mo
-    note: Entry-level plan
-    extra: Scales with usage
+    price: $49 / mo minimum
+    note: $0.80 per verification; fully automated decisions
+    extra: 3-month data retention
   - tier: Plus
-    price: $99 / mo
-    note: Additional features and volume
-    extra: Scales with usage
+    price: $99 / mo minimum
+    note: $1.39 per verification; AI plus verification specialists
+    extra: 6-month data retention, video recording, risk insights
   - tier: Premium
-    price: $209 / mo
-    note: Full feature set
-    extra: Custom above this tier
-  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
-  verified: null
-  items: []
+    price: $209 / mo minimum
+    note: $1.89 per verification; hybrid review, most customisable
+    extra: Adds analytics, CSV export and session deletion API
+  - tier: Enterprise
+    price: Custom
+    note: For 5,000+ verifications a month
+    extra: Volume pricing discounts
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Essential
+    value: $49/month minimum plus $0.80 per verification
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Plus
+    value: $99/month minimum plus $1.39 per verification
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Premium
+    value: $209/month minimum plus $1.89 per verification
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Enterprise
+    value: Quoted on request (5,000+ verifications a month)
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: PEP and sanctions add-on
+    value: +$0.64 per verification
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Ongoing monitoring add-on
+    value: +$0.09 per verification
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Extended data retention (2 years)
+    value: +$0.30 per verification
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Free trial
+    value: 15 days, up to 50 sessions, no credit card
+    kind: official
+    source: 2
+    verified: '2026-10'
 facts:
 - label: From
-  value: $49/mo
-  source: null
+  value: $49/mo minimum + $0.80 per verification
+  source: 1
+  evidence: vendor
 - label: Effective
-  value: $49 to $209/mo (tiers)
-  source: null
+  value: $0.80 to $1.89 per verification (self-serve)
+  source: 1
+  evidence: vendor
 - label: Founded
   value: Oct 2015
-  source: null
+  source: 5
+  evidence: independent
 - label: HQ
   value: Tallinn, Estonia
-  source: null
+  source: 5
+  evidence: independent
 - label: Regions
-  value: 230+ countries
-  source: null
+  value: 230+ countries and territories
+  source: 3
+  evidence: vendor
+- label: Documents
+  value: 12,500+ ID documents
+  source: 3
+  evidence: vendor
 - label: Certification
-  value: iBeta Level 2 liveness
-  source: null
+  value: iBeta ISO/IEC 30107-3 Level 2 liveness
+  source: 6
+  evidence: independent
+- label: UK DIATF
+  value: Certified, valid to Jan 2029
+  source: 9
+  evidence: independent
 pros:
-- Published starter pricing, which is rare in this category
-- 'Deep document and language coverage: 12,000+ document types, 48 languages'
-- AI+human hybrid review built to resist deepfake attacks
+- Published self-serve pricing with per-verification rates, which is rare in this category
+- 'Broad document coverage: 12,500+ ID documents from 230+ countries and territories, per Veriff'
+- Passive liveness tested by iBeta to ISO/IEC 30107-3 Level 2, plus UK DIATF certification
 cons:
-- Archive-access limits noted in some reviews
-- Low-bandwidth mobile connections can stretch decision time
-- Premium tier costs more than several budget-first competitors
+- Per-verification fees sit on top of the monthly minimum, and AML screening is a paid add-on
+- Some G2 reviewers report verification glitches and call the service expensive
+- End users on Trustpilot report selfie capture failures and failed checks with no reason given
 alternatives:
 - slug: sumsub
   name: Sumsub
@@ -97,38 +157,150 @@ choose_instead:
 - slug: onfido
   text: stronger developer SDKs matter more than published starter pricing.
 user_reviews:
-  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  legacy_note: null
   praise:
-  - 'Document coverage (frequently cited): reviewers highlight depth across document types and languages.'
-  - 'Deepfake resistance: users trust the AI-plus-human review against synthetic fraud.'
+  - 'Verification speed: G2 reviewers most often mention quick verification and several document submission options.'
+  - 'Ease of use: reviewers find document submission and integration straightforward.'
   criticize:
-  - 'Archive access: some reviews mention limits on retrieving past verification records.'
-  - 'Mobile performance: low-bandwidth connections can slow decision times.'
+  - 'Verification issues and cost: some G2 reviewers report glitches that slow approvals, and some want lower prices.'
+  - 'End-user experience: Trustpilot reviews, mostly from people asked to verify, describe selfie capture failures and unexplained rejections.'
   by_profile:
-  - Startups value Veriff's published starter tiers for predictable budgeting.
-  - Global platforms benefit from its deep document and language coverage.
-  - Enterprises with very high volume typically move to custom pricing above Premium.
+  - Startups value Veriff's published self-serve plans for predictable budgeting.
+  - Global platforms benefit from its deep document coverage.
+  - Companies above 5,000 verifications a month move to custom Enterprise pricing.
 faq:
 - q: How much does Veriff cost?
-  a: 'Veriff publishes starter tiers: Essential at $49/month, Plus at $99/month, and Premium at $209/month, with custom pricing above that for enterprise volume.'
+  a: 'Veriff publishes self-serve plans with a monthly minimum plus a per-verification fee: Essential ($49 minimum, $0.80 per verification), Plus ($99, $1.39) and Premium ($209, $1.89). Enterprise pricing for 5,000+ verifications a month is quoted on request, and PEP and sanctions screening is a $0.64 add-on.'
 - q: Does Veriff detect deepfakes?
-  a: Yes. Veriff's passive liveness detection is iBeta Level 2 certified and built to resist deepfake and presentation attacks.
+  a: Veriff says its passive liveness check detects deepfakes and injected media. The liveness product passed iBeta's ISO/IEC 30107-3 Level 1 and Level 2 presentation attack tests in 2024.
 - q: How many countries does Veriff cover?
-  a: Veriff verifies documents across 230+ countries and territories, supporting 12,000+ document types and 48 languages.
+  a: Veriff says it supports 12,500+ government-issued ID documents from 230+ countries and territories.
 - q: Who founded Veriff?
-  a: Veriff was founded in October 2015 by CEO Kaarel Kotkas and Janer Gorohhov, headquartered in Tallinn, Estonia.
+  a: Kaarel Kotkas founded Veriff in 2015 and is its CEO; Janer Gorohhov is also listed as a co-founder. Veriff OÜ was registered in Estonia in October 2015, with its legal address in Tallinn.
+- q: Does Veriff offer KYB?
+  a: Yes. Veriff announced the acquisition of KYB provider Vespia in February 2026. Its business verification product draws on register data from 300+ jurisdictions and is offered through a limited access program.
 - q: What is the best alternative to Veriff?
   a: Sumsub is the best alternative for a unified KYC/KYB/monitoring suite. iDenfy is the closest fit for pay-per-approved pricing.
 - q: Who are Veriff's main competitors?
-  a: Veriff competes with Sumsub, iDenfy, and Onfido, differentiating through document/language depth and published starter pricing.
+  a: Veriff competes with Sumsub, iDenfy, and Onfido, differentiating through document depth and published self-serve pricing.
 segments: []
 capabilities: {}
-certifications: []
-user_ratings: []
+certifications:
+- name: ISO/IEC 30107-3 Level 2 (iBeta)
+  what: Liveness, presentation attack detection
+  status: confirmed
+  source: 6
+- name: ISO/IEC 30107-3 Level 1 (iBeta)
+  what: Liveness, presentation attack detection
+  status: confirmed
+  source: 6
+- name: UK DIATF (gamma 0.4)
+  what: Identity and component service, Right to Work and Right to Rent
+  status: confirmed
+  source: 9
+- name: ISO/IEC 27001:2022
+  what: Information security, extended to ISO/IEC 27017 and 27018
+  status: vendor_stated
+  source: 8
+- name: SOC 2 Type II
+  what: Security controls report
+  status: vendor_stated
+  source: 8
+- name: Cyber Essentials
+  what: UK cyber security baseline
+  status: vendor_stated
+  source: 8
+user_ratings:
+- platform: G2
+  rating: 4.5
+  count: 60
+  checked: '2026-10'
+  url: https://www.g2.com/products/veriff/reviews
+- platform: Trustpilot
+  rating: 1.3
+  count: 239
+  checked: '2026-10'
+  url: https://www.trustpilot.com/review/veriff.com
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
-sources: []
+sources:
+- title: Veriff pricing
+  publisher: Veriff
+  url: https://www.veriff.com/pricing
+  accessed: '2026-10'
+- title: Self-serve plans
+  publisher: Veriff
+  url: https://www.veriff.com/plans/self-serve
+  accessed: '2026-10'
+- title: Veriff homepage
+  publisher: Veriff
+  url: https://www.veriff.com/
+  accessed: '2026-10'
+- title: About Veriff
+  publisher: Veriff
+  url: https://www.veriff.com/about
+  accessed: '2026-10'
+- title: Veriff OÜ (registry code 12932944)
+  publisher: Estonian e-Business Register
+  url: https://ariregister.rik.ee/eng/company/12932944
+  accessed: '2026-10'
+- title: ISO 30107-3 presentation attack detection confirmation letters
+  publisher: iBeta Quality Assurance
+  url: https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/
+  accessed: '2026-10'
+- title: Veriff achieves iBeta Level 2 biometric liveness detection compliance
+  publisher: GlobeNewswire
+  url: https://www.globenewswire.com/news-release/2024/09/17/2947339/0/en/Veriff-achieves-iBeta-Level-2-biometric-liveness-detection-compliance.html
+  accessed: '2026-10'
+- title: Security and compliance
+  publisher: Veriff
+  url: https://veriff.com/security-and-compliance
+  accessed: '2026-10'
+- title: Register of digital verification services (search Veriff)
+  publisher: GOV.UK, Office for Digital Identities and Attributes
+  url: https://www.access-dvs-register.service.gov.uk/register?SearchText=Veriff
+  accessed: '2026-10'
+- title: Liveness
+  publisher: Veriff
+  url: https://www.veriff.com/product/liveness
+  accessed: '2026-10'
+- title: Know your business
+  publisher: Veriff
+  url: https://www.veriff.com/product/know-your-business
+  accessed: '2026-10'
+- title: Veriff acquires Vespia (press release, 5 February 2026)
+  publisher: Veriff
+  url: https://www.veriff.com/pr-news/kyb-business-verification
+  accessed: '2026-10'
+- title: KYB limited access program sign-up
+  publisher: Veriff
+  url: https://www.veriff.com/kyb-signup
+  accessed: '2026-10'
+- title: Estonian online authentication startup Veriff acquires BrowserID
+  publisher: Tech.eu
+  url: https://tech.eu/2019/01/23/estonian-online-authentication-startup-veriff-acquires-browserid/
+  accessed: '2026-10'
+- title: Digital ID verification platform Veriff raises $100m Series C at $1.5bn valuation
+  publisher: FinTech Futures
+  url: https://www.fintechfutures.com/biometrics-id-verification/digital-id-verification-platform-veriff-raises-100m-series-c-at-1-5bn-valuation
+  accessed: '2026-10'
+- title: Veriff
+  publisher: Wikipedia
+  url: https://en.wikipedia.org/wiki/Veriff
+  accessed: '2026-10'
+- title: Age estimation
+  publisher: Veriff
+  url: https://www.veriff.com/product/age-estimation
+  accessed: '2026-10'
+- title: Veriff reviews
+  publisher: G2
+  url: https://www.g2.com/products/veriff/reviews
+  accessed: '2026-10'
+- title: Veriff reviews
+  publisher: Trustpilot
+  url: https://www.trustpilot.com/review/veriff.com
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -137,7 +309,17 @@ entity:
   - https://www.linkedin.com/company/veriff
   - https://www.crunchbase.com/organization/veriff
 legacy_issues: []
-legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against Veriff's official pricing page and profiles before this page goes live.
+legacy_editorial_note: null
+verification_notes:
+- Language count differs between Veriff pages (48 on the about page, 50 on the homepage); removed from prose.
+- Pricing page calculator and the bundled add-on total ($0.09) do not reconcile with the listed per-unit prices; we show only the per-unit figures.
+- Veriff pricing pages showed a "not available in your location" banner from our fetch location; prices are as displayed.
+- Co-founder Janer Gorohhov and the New York office (2019) come from Wikipedia only. London (2020) and Barcelona (2021) offices were not confirmed and were removed.
+- ISO/IEC 27001, SOC 2 Type II and Cyber Essentials are vendor-stated; trust.veriff.com was not opened.
+- Human review applies to Plus and Premium (hybrid); Essential is fully automated.
+- KYB is offered through a limited access program as of Oct 2026; general availability not confirmed.
+- Old claims "archive-access limits" and "low-bandwidth mobile slows decisions" were not found in visible G2 reviews and were removed.
+- Capterra listing at /p/180802/Veriff/ shows reviews of an unrelated expense product; not used.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

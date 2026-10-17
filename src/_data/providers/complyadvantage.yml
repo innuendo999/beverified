@@ -4,7 +4,7 @@ alternate_names: []
 status: published
 seo:
   title: 'ComplyAdvantage Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'ComplyAdvantage review: AML screening and financial-crime intelligence platform, not an identity-verification tool. Pricing from $99.99/mo, features, pros & cons, alternatives.'
+  description: 'ComplyAdvantage review: AML screening and financial-crime intelligence platform, not an identity-verification tool. Starter plan from $99/month, features, pros & cons, alternatives.'
   h1: 'ComplyAdvantage Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/complyadvantage.jpg
@@ -22,59 +22,93 @@ link:
   url: https://complyadvantage.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-07-25'
+last_verified: '2026-10-18'
 updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: ComplyAdvantage is a sanctions, PEP and adverse-media screening platform, not a document-verification company. That distinction matters when comparing it with IDV vendors in this category. Its proprietary financial-crime database and free ComplyLaunch tier for early-stage startups make it a strong AML data layer, typically deployed alongside a separate identity-verification provider rather than instead of one.
+verdict: ComplyAdvantage is a sanctions, PEP and adverse-media screening platform, not a document-verification company. That distinction matters when comparing it with IDV vendors in this category. Its financial-crime risk data, a published Starter plan from $99 a month and the free ComplyLaunch programme for early-stage startups make it a strong AML data layer, typically deployed alongside a separate identity-verification provider rather than instead of one.
 what_is:
-- ComplyAdvantage is an AML data and financial-crime intelligence platform founded in 2014 by Charles Delingpole (previously known as Mimiro), headquartered in London. Its Mesh platform serves more than 1,000 enterprise clients with proprietary sanctions, PEP and adverse-media screening data. It does not perform document or biometric identity verification.
+- ComplyAdvantage is an AML data and financial-crime intelligence platform founded by Charles Delingpole, now its Executive Chairman, and run by CEO Vatsa Narasimha. Its UK operating company, IVXS UK Limited, was incorporated in London in March 2014. Its Mesh platform covers customer and company screening against sanctions, PEP and adverse-media data, ongoing monitoring, transaction monitoring, payment screening and fraud detection. It does not perform document or biometric identity verification.
 features:
-- Customer and business screening against sanctions, PEP, RCA, and adverse-media sources.
-- Real-time transaction monitoring with AI-driven risk scoring.
-- Agentic alert triage to reduce manual review workload.
-- Explainable AI governance aligned with the EU AI Act and DORA.
-- Case management with SAR (Suspicious Activity Report) filing support.
-- Clients report up to 70% fewer false positives, per company-reported figures.
+- Customer and company screening against sanctions, watchlists, PEPs, RCAs and adverse media.
+- Real-time transaction monitoring and payment screening.
+- Agentic workflows that the vendor says resolve up to 85% of routine alerts autonomously.
+- Ongoing monitoring of screened customers.
+- Built-in reporting support for SAR, CTR and FINTRAC STR and EFT reports.
+- The vendor states up to 70% fewer false positives in transaction monitoring (company-reported figure).
 pricing:
-  summary: ComplyAdvantage's Starter plan begins at $99.99/month for 100 entities, aimed at low-volume screening and monitoring, with a next tier around $119/month and custom Enterprise pricing above that. Setup takes about one business day and plans can be canceled anytime. ComplyLaunch offers free access for qualifying early-stage startups.
+  summary: ComplyAdvantage publishes a Starter plan from $99 a month, in Essentials and Agentic versions, for monitoring between 100 and 2,000 entities. Enterprise pricing is on application. Setup takes one business day, plans can be cancelled at any time by email, and ComplyLaunch gives qualifying early-stage startups free access.
   plans:
   - tier: Starter
-    price: $99.99 / mo
-    note: 100 entities, for low-volume screening and monitoring
-    extra: Cancel anytime; setup in 1 business day
-  - tier: Growth
-    price: ~$119 / mo
-    note: Next tier up in entity volume
-    extra: Cancel anytime
+    price: From $99 / mo
+    note: Tiers of 100 to 2,000 monitored entities; Essentials and Agentic versions
+    extra: Cancel anytime; set up within 1 business day
   - tier: Enterprise
-    price: Custom
-    note: Volume pricing & dedicated support
-    extra: 'ComplyLaunch: free for qualifying early-stage startups'
-  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as third-party estimates are not the vendor''s official rate.'
-  verified: null
-  items: []
+    price: POA
+    note: Full compliance platform, unlimited usage
+    extra: Contact sales for a quote
+  - tier: ComplyLaunch
+    price: Free
+    note: For qualifying early-stage startups
+    extra: Apply on the ComplyAdvantage site
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Starter plan
+    value: From $99 per month
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Starter entity tiers
+    value: 100, 250, 500, 750, 1,000, 1,500 or 2,000 monitored entities
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Overage
+    value: Extra entities billed in the next billing cycle
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Enterprise
+    value: Price on application
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: ComplyLaunch
+    value: Free for qualifying early-stage startups
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Transaction monitoring, UK G-Cloud 14 listing
+    value: £0.05 per transaction
+    kind: third_party
+    source: 4
+    verified: '2026-10'
 facts:
 - label: From
-  value: $99.99/mo
-  source: null
+  value: $99/mo (Starter)
+  source: 1
+  evidence: vendor
 - label: Effective
-  value: $99.99 to $119/mo (entry tiers)
-  source: null
+  value: Starter up to 2,000 entities; Enterprise on application
+  source: 1
+  evidence: vendor
 - label: Founded
-  value: '2014'
-  source: null
+  value: '2014 (IVXS UK Limited incorporated 28 Mar 2014)'
+  source: 3
+  evidence: independent
 - label: HQ
   value: London, UK
-  source: null
-- label: Regions
-  value: Global
-  source: null
+  source: 3
+  evidence: independent
+- label: Leadership
+  value: CEO Vatsa Narasimha; founder Charles Delingpole is Executive Chairman
+  source: 2
+  evidence: vendor
 - label: Clients
-  value: 1,000+ enterprise clients
-  source: null
+  value: Not publicly disclosed
 pros:
 - Proprietary financial-crime database with real screening depth
-- Transparent entry-level pricing plus a free ComplyLaunch tier for startups
-- Modern AI/agentic architecture built for explainability under EU AI Act and DORA
+- Transparent entry-level pricing plus a free ComplyLaunch programme for startups
+- Agentic workflows aimed at cutting routine alert review
 cons:
 - Does not perform identity verification, so it needs a separate IDV vendor alongside it
 - Initial setup can be involved, per user reviews
@@ -97,38 +131,83 @@ choose_instead:
 - slug: feedzai
   text: you need enterprise-scale, real-time transaction-fraud detection for a Tier-1 bank or card network.
 user_reviews:
-  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  legacy_note: null
   praise:
-  - 'Screening data depth (frequently cited): reviewers point to strong sanctions, PEP and adverse-media coverage.'
-  - 'Fewer false positives: clients report meaningfully fewer false positives after adopting the AI risk-scoring layer.'
+  - 'Screening data depth: reviewers point to strong sanctions, PEP and adverse-media coverage.'
+  - 'Alert handling: some clients report fewer false positives after tuning the risk-scoring layer.'
   criticize:
   - 'Setup complexity: some reviews describe the initial configuration as more involved than expected.'
-  - 'Scope limitation: reviewers note it must be paired with a separate IDV tool for document and biometric verification.'
+  - 'Scope limitation: it must be paired with a separate IDV tool for document and biometric verification.'
   by_profile:
   - Banks and regulated fintechs use ComplyAdvantage as their core AML screening and monitoring layer.
-  - Early-stage startups access core screening functionality free through ComplyLaunch.
+  - Early-stage startups can apply for free access through ComplyLaunch.
   - Teams needing full onboarding typically pair it with a document-verification provider like Sumsub or Jumio.
 faq:
 - q: How much does ComplyAdvantage cost?
-  a: ComplyAdvantage's Starter plan begins at $99.99/month for 100 entities, with a next tier around $119/month and custom Enterprise pricing above that. Setup takes about one business day.
+  a: The Starter plan starts at $99 a month and covers tiers from 100 to 2,000 monitored entities. Enterprise pricing is on application. Setup takes one business day and you can cancel at any time.
 - q: Does ComplyAdvantage verify identity documents?
   a: No. ComplyAdvantage is an AML screening and financial-crime data platform. It does not perform document or biometric identity verification and is typically used alongside a separate IDV provider.
 - q: Is there a free option for startups?
-  a: Yes. ComplyLaunch gives qualifying early-stage startups free access to ComplyAdvantage's core screening functionality.
+  a: Yes. ComplyLaunch gives qualifying early-stage startups free access to ComplyAdvantage's AML tools.
 - q: Does ComplyAdvantage do transaction monitoring?
-  a: Yes. Real-time transaction monitoring with AI-driven risk scoring is a core part of the Mesh platform, alongside sanctions, PEP, and adverse-media screening.
+  a: Yes. Real-time transaction monitoring and payment screening are part of the Mesh platform, alongside sanctions, PEP and adverse-media screening.
 - q: What is the best alternative to ComplyAdvantage?
   a: Sumsub is the best alternative if you want identity verification and AML screening bundled into one platform. SEON is the closest fit if pre-KYC device and fraud signals matter more than sanctions/PEP data depth.
 - q: Who are ComplyAdvantage's main competitors?
   a: ComplyAdvantage competes with SEON and Feedzai on AML/fraud data, and with Sumsub for teams that want combined IDV and AML screening in one platform.
 segments: []
 capabilities: {}
-certifications: []
-user_ratings: []
+certifications:
+- name: ISO/IEC 27001
+  what: Information security (BSI, per G-Cloud listing)
+  status: vendor_stated
+  source: 4
+- name: SOC 2 Type 2
+  what: Security controls report
+  status: vendor_stated
+  source: 4
+user_ratings:
+- platform: G2
+  rating: 4.3
+  count: 101
+  checked: '2026-10'
+  url: https://www.g2.com/products/complyadvantage/reviews
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
-sources: []
+sources:
+- title: ComplyAdvantage pricing
+  publisher: ComplyAdvantage
+  url: https://complyadvantage.com/pricing/
+  accessed: '2026-10'
+- title: About us
+  publisher: ComplyAdvantage
+  url: https://complyadvantage.com/about-us/
+  accessed: '2026-10'
+- title: IVXS UK LIMITED, company 08964733
+  publisher: Companies House
+  url: https://find-and-update.company-information.service.gov.uk/company/08964733
+  accessed: '2026-10'
+- title: ComplyAdvantage Transaction Monitoring (G-Cloud 14 service listing)
+  publisher: UK Digital Marketplace
+  url: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud-14/services/701941886037488
+  accessed: '2026-10'
+- title: ComplyAdvantage homepage
+  publisher: ComplyAdvantage
+  url: https://complyadvantage.com/
+  accessed: '2026-10'
+- title: Transaction monitoring
+  publisher: ComplyAdvantage
+  url: https://complyadvantage.com/transaction-monitoring/
+  accessed: '2026-10'
+- title: Vatsa Narasimha replaces Charles Delingpole as ComplyAdvantage CEO
+  publisher: Finance Magnates
+  url: https://www.financemagnates.com/executives/moves/vatsa-narasimha-replaces-charles-delingpole-as-complyadvantage-ceo/
+  accessed: '2026-10'
+- title: ComplyAdvantage reviews
+  publisher: G2
+  url: https://www.g2.com/products/complyadvantage/reviews
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -137,7 +216,16 @@ entity:
   - https://www.linkedin.com/company/complyadvantage
   - https://www.crunchbase.com/organization/complyadvantage
 legacy_issues: []
-legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every third-party estimate above directly against ComplyAdvantage's official pricing page and profiles before this page goes live.
+legacy_editorial_note: null
+verification_notes:
+- '"1,000+ enterprise clients" not found on any current vendor page; older vendor boilerplate said 500+ clients in 75 countries (Business Wire, Mar 2020). Clients set to Not publicly disclosed.'
+- '"Previously known as Mimiro" not confirmed: Index Ventures (Jan 2019) uses Mimiro as a product name, not a former company name. Removed.'
+- 'EU AI Act and DORA alignment claim not found on the homepage or transaction monitoring page. Removed.'
+- 'The ~$119/month "Growth" tier is not on the pricing page; the page shows only Starter (from $99) and Enterprise (POA). Removed. Old $99.99 corrected to $99.'
+- 'Transaction monitoring page gives two false-positive figures (up to 70% in meta description, up to 82% in body). We cite the lower 70% figure as a vendor claim.'
+- 'ISO/IEC 27001 (BSI, 18 Sep 2021) and SOC 2 Type 2 are supplier-declared on the G-Cloud listing; the security page could not be loaded and no BSI certificate was opened.'
+- 'G2 rating visible (4.3, 101 reviews); review text not read in full, so user themes are kept as general statements without counts.'
+- 'Leadership facts on the about page (Delingpole as Executive Chairman) and the 2022 CEO change (Finance Magnates, source 7) agree.'
 application_category: AML Software
 author: andrii-klymenko
 legacy_reviewer:

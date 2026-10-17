@@ -4,13 +4,13 @@ alternate_names: []
 status: published
 seo:
   title: 'MemberCheck Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'MemberCheck review: four-tier PEP and sanctions screening, sister product to NameScan. Features, pricing, pros & cons, alternatives.'
+  description: 'MemberCheck review: PEP, sanctions and adverse-media screening with ID verification, a Nexiant brand and sister product to NameScan. Features, pricing, pros & cons, alternatives.'
   h1: 'MemberCheck Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/membercheck.webp
   background: '#7C4DEA'
   wordmark: null
-tagline: Four-tier PEP and sanctions screening, sister product to NameScan
+tagline: PEP, sanctions and adverse-media screening for regulated businesses, sister product to NameScan
 score: 4.3
 grade: Good
 primary_category: aml
@@ -22,54 +22,64 @@ link:
   url: https://membercheck.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-07-29'
+last_verified: '2026-10-18'
 updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: 'MemberCheck runs a four-tier PEP screening process alongside sanctions and adverse-media checks, positioned for managed AML workflows with enhanced due diligence and daily ongoing monitoring. It''s operated by the same owner as NameScan (Neurocom Group) but targets a different use case: managed compliance programs rather than on-demand self-serve checks.'
+verdict: 'MemberCheck screens customers against 1,000+ PEP and sanctions watchlists alongside adverse-media checks, positioned for managed AML workflows with enhanced due diligence and ongoing monitoring. It sits in the same group as NameScan (MemberCheck says it operates under Neurocom Group, and both now appear as Nexiant brands) but targets a different use case: sales-led compliance programs rather than on-demand self-serve checks.'
 what_is:
-- MemberCheck is an AML/CTF screening company founded in 2007 and headquartered in Chatswood, New South Wales, Australia. It is operated by the Neurocom Group, which also owns NameScan. It screens against thousands of sanctions lists with a four-tier PEP and RCA process plus global adverse-media coverage, serving accounting, casino, financial-services, legal, real-estate, and crypto/VASP clients.
+- MemberCheck is an AML/CTF screening company established in 2008. It says it operates under Neurocom Group, founded in 1992, which also runs NameScan and GPayments, and its site now presents it as a Nexiant brand. Nexiant AI Pty Ltd is registered in Chatswood, New South Wales, Australia. MemberCheck screens against 1,000+ PEP and sanctions watchlists in 195 countries plus adverse media from thousands of monitored sources, and says it serves 13,000+ customers in accounting, casinos and betting, financial services, legal, real estate and crypto exchanges.
 features:
-- Four-tier PEP and RCA (relatives and close associates) screening.
-- Sanctions and global adverse-media screening.
-- ID verification with face match and liveness.
-- Enhanced due diligence workflows.
-- Ongoing daily monitoring and alerts.
-- RESTful API, dashboard, and AML consulting services.
+- PEP and sanctions screening against 1,000+ watchlists, with match scoring and an audit trail.
+- Adverse-media screening from thousands of monitored sources.
+- ID verification with document and biometric checks.
+- Know Your Business (KYB) ownership and UBO assessment, enhanced due diligence and risk assessment.
+- Ongoing monitoring and transaction monitoring with configurable rules; database updated daily.
+- API integration and a web dashboard.
 pricing:
-  summary: MemberCheck offers pay-as-you-go and subscription pricing; a third-party-reported entry rate is roughly $90 for 50 scans (third-party report, not confirmed by the vendor).
+  summary: Pricing is not published; MemberCheck quotes on request through a demo form that asks for anticipated annual scan volume.
   plans:
-  - tier: Pay-As-You-Go / Subscription
-    price: ~$90 / 50 scans
-    note: Third-party reported entry pricing
-    extra: Subscription tiers available for higher volume
-  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
-  verified: null
-  items: []
+  - tier: Quote on request
+    price: Custom
+    note: Demo form asks for annual scan volume (under 10,000, 10,000 to 50,000, over 50,000)
+    extra: Contact sales for a quote
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: All plans
+    value: Not published, quote on request
+    kind: official
+    source: 3
+    verified: '2026-10'
 facts:
 - label: From
-  value: ~$90/50 scans (3rd-party est.)
-  source: null
+  value: Custom quote
+  source: 3
+  evidence: vendor
 - label: Effective
-  value: Not disclosed
+  value: Not publicly disclosed
   source: null
 - label: Founded
-  value: '2007'
-  source: null
+  value: '2008'
+  source: 2
+  evidence: vendor
 - label: HQ
-  value: Chatswood, NSW, Australia
-  source: null
+  value: Chatswood, NSW, Australia (Nexiant AI Pty Ltd)
+  source: 5
+  evidence: independent
 - label: Regions
-  value: Global
-  source: null
+  value: 195 countries
+  source: 1
+  evidence: vendor
 - label: Ownership
-  value: 'Neurocom Group (sister: NameScan)'
-  source: null
+  value: 'Neurocom Group, presented as a Nexiant brand (sister: NameScan)'
+  source: 2
+  evidence: vendor
 pros:
-- Four-tier PEP screening depth, including RCA coverage
-- Flexible RESTful API for building a custom front-end
-- Daily ongoing monitoring with alerting
+- Broad screening coverage, with 1,000+ PEP and sanctions watchlists and adverse media
+- API integration for building a custom front-end
+- Ongoing monitoring, with the screening database updated daily
 cons:
-- Headquartered outside the EU, a data-residency consideration for some EU clients (though data is also held in the EU)
-- Smaller brand than enterprise AML platforms
+- Australian-based group with no published hosting region, a data-residency question for some EU clients
+- Smaller brand than enterprise AML platforms, and no published pricing
 - Screening-focused rather than a full IDV/lifecycle platform
 alternatives:
 - slug: namescan
@@ -83,44 +93,81 @@ alternatives:
   best_for: Mid-Market API-First
 choose_instead:
 - slug: namescan
-  text: you want on-demand, self-serve screening rather than a managed AML workflow. NameScan is MemberCheck's sister product; Neurocom Group runs both.
+  text: you want on-demand, self-serve screening rather than a managed AML workflow. NameScan is MemberCheck's sister product in the same group.
 - slug: smartsearch
   text: you need JMLSG-compliant UK individual and business screening.
 - slug: sanction-scanner
   text: you want API-first screening built for mid-market fintechs.
 user_reviews:
-  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
-  praise:
-  - 'PEP depth (frequently cited): reviewers highlight the four-tier screening process.'
-  - 'API flexibility: users note the RESTful API supports custom front-end builds.'
-  criticize:
-  - 'Data residency: some EU clients raise questions about the Australian HQ, despite EU data storage options.'
-  - 'Brand scale: smaller than enterprise AML platforms.'
+  legacy_note: null
+  praise: []
+  criticize: []
   by_profile:
-  - Accounting, legal, and real-estate firms use MemberCheck for managed AML/CTF workflows.
-  - Crypto and VASP businesses value its sanctions/PEP screening depth.
-  - Businesses wanting simple self-serve checks often use sister product NameScan instead.
+  - Accounting, legal, and real-estate firms are among the sectors MemberCheck targets for AML/CTF workflows, including Australia's Tranche 2 sectors.
+  - Crypto exchanges and casinos are also listed among its industries.
+  - Businesses wanting simple self-serve checks may prefer sister product NameScan.
 faq:
 - q: How much does MemberCheck cost?
-  a: MemberCheck offers pay-as-you-go and subscription pricing; a third-party-reported rate is around $90 for 50 scans. Check current pricing directly with MemberCheck.
+  a: MemberCheck does not publish pricing. Its pricing page is a demo request form that asks for your anticipated annual scan volume, and sales quotes from there.
 - q: Is MemberCheck related to NameScan?
-  a: Yes. MemberCheck and NameScan are both operated by the Neurocom Group; MemberCheck targets managed AML workflows while NameScan focuses on on-demand self-serve screening.
-- q: What is MemberCheck's PEP screening process?
-  a: MemberCheck uses a four-tier PEP and RCA (relatives and close associates) screening process alongside sanctions and adverse-media checks.
+  a: Yes. MemberCheck says it operates under Neurocom Group, which also runs NameScan, and both now appear as Nexiant brands. MemberCheck targets sales-led AML workflows while NameScan focuses on pay-as-you-go self-serve screening.
+- q: What does MemberCheck screen against?
+  a: MemberCheck screens against 1,000+ PEP and sanctions watchlists covering 195 countries, plus adverse media from thousands of monitored sources.
 - q: Does MemberCheck offer ongoing monitoring?
-  a: Yes, MemberCheck provides daily ongoing monitoring with alerts for existing customers.
+  a: Yes, MemberCheck lists ongoing monitoring and transaction monitoring with configurable rules, and says its database is updated daily.
 - q: What is the best alternative to MemberCheck?
   a: NameScan is the closest alternative for self-serve, on-demand screening. SmartSearch is a strong fit for UK JMLSG compliance specifically.
 - q: Who are MemberCheck's main competitors?
   a: MemberCheck competes with SmartSearch and Sanction Scanner, and shares ownership with sister product NameScan.
 segments: []
 capabilities: {}
-certifications: []
-user_ratings: []
+certifications:
+- name: ISO/IEC 27001:2022
+  what: Information security
+  status: vendor_stated
+  source: 2
+- name: ISO/IEC 27701:2019
+  what: Privacy information management
+  status: vendor_stated
+  source: 2
+user_ratings:
+- platform: G2
+  rating: 5.0
+  count: 1
+  checked: '2026-10'
+  url: https://www.g2.com/products/membercheck/reviews
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
-sources: []
+sources:
+- title: MemberCheck homepage
+  publisher: MemberCheck
+  url: https://membercheck.com
+  accessed: '2026-10'
+- title: About us
+  publisher: MemberCheck
+  url: https://membercheck.com/about-us/
+  accessed: '2026-10'
+- title: Pricing (demo request)
+  publisher: MemberCheck
+  url: https://membercheck.com/pricing/
+  accessed: '2026-10'
+- title: Sub-processors
+  publisher: MemberCheck
+  url: https://membercheck.com/sub-processors/
+  accessed: '2026-10'
+- title: NEXIANT AI PTY LTD, ABN 90 673 693 019
+  publisher: Australian Business Register
+  url: https://abr.business.gov.au/ABN/View?abn=90673693019
+  accessed: '2026-10'
+- title: Nexiant homepage
+  publisher: Nexiant
+  url: https://nexiant.ai
+  accessed: '2026-10'
+- title: MemberCheck reviews
+  publisher: G2
+  url: https://www.g2.com/products/membercheck/reviews
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -129,7 +176,17 @@ entity:
   - https://www.linkedin.com/company/membercheck
   - https://www.crunchbase.com/organization/membercheck
 legacy_issues: []
-legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against MemberCheck's official pricing page and profiles before this page goes live.
+legacy_editorial_note: null
+verification_notes:
+- 'Founded: old page said 2007; MemberCheck about page says "established in 2008".'
+- 'Ownership: about page says MemberCheck operates under Neurocom Group (est. 1992); homepage logo says "a Nexiant brand", and Nexiant (G2 seller page, founded 2024) groups MemberCheck, NameScan, GPayments and FraudShield. Legal relationship between Neurocom and Nexiant AI Pty Ltd (ABN active from 15 Dec 2023) not confirmed.'
+- 'HQ: MemberCheck pages give no address. Chatswood is taken from the Nexiant AI Pty Ltd ABR record (NSW 2067) and the shared Railway St address on NameScan and Nexiant G2 pages.'
+- 'Four-tier PEP and RCA screening: not found on current MemberCheck pages; removed from tagline, features, pros and FAQ.'
+- 'Pricing: old page showed about $90 for 50 scans (third-party, no source recorded). No source found; MemberCheck pricing page is a demo form. Removed.'
+- 'EU data storage: old con said data is also held in the EU. Sub-processors page lists AWS and Google (United States) and no hosting region. Removed.'
+- 'Face match and liveness: homepage says "biometric checks" only; wording changed.'
+- 'ISO 27001:2022 and ISO 27701:2019 are vendor-stated; no certificate or certification body register found.'
+- 'User ratings: G2 has a single review dated July 2019; themes removed. The Capterra MemberCheck URL tried resolved to an unrelated product.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

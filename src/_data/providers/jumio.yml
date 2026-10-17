@@ -4,13 +4,13 @@ alternate_names: []
 status: published
 seo:
   title: 'Jumio Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'Jumio review: enterprise-scale identity verification with 1B+ verifications processed. See features, pricing, pros & cons, and alternatives.'
+  description: 'Jumio review: enterprise-scale identity verification with 1B+ transactions processed. See features, pricing, pros & cons, and alternatives.'
   h1: 'Jumio Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/jumio.png
   background: '#7C4DEA'
   wordmark: /assets/img/wordmarks/jumio.png
-tagline: Enterprise-scale IDV and KYX platform built for Fortune-500 volume
+tagline: Enterprise-scale identity verification and AML platform built for high volume
 score: 4.5
 grade: Very Good
 primary_category: identity-verification
@@ -23,58 +23,78 @@ link:
   url: https://www.jumio.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-07-25'
+last_verified: '2026-10-18'
 updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: 'Jumio is built for enterprise-scale identity verification: more than a billion verifications processed, Tier-1 bank and marketplace clients, and a KYX platform that extends beyond onboarding into continuous risk monitoring. That scale comes at the cost of pricing transparency: rates are quoted through sales, and third-party estimates put effective per-verification costs meaningfully above budget-tier competitors.'
+verdict: 'Jumio is built for enterprise-scale identity verification: more than a billion transactions processed, bank and marketplace clients, and a platform that extends beyond onboarding into ongoing risk monitoring. That scale comes at the cost of pricing transparency. Rates are quoted through sales, and Vendr''s buyer data puts the median annual contract at about $55,850.'
 what_is:
-- Jumio is an identity-verification and KYX ("Know Your Everything") platform founded in 2010, headquartered in Palo Alto/Sunnyvale, California, with additional offices in Vienna, London, Singapore, New York, and Montréal. It has processed more than 1 billion identity verifications and is positioned for large enterprises (banks, marketplaces and fintechs) that need document and biometric verification alongside AML screening at global scale.
+- Jumio is an identity-verification company founded in 2010 and based in Sunnyvale, California, with offices and representation in North America, Latin America, Europe, Asia Pacific and the Middle East. It says it has processed more than 1 billion transactions across more than 200 countries and territories. It is backed by Centana Growth Partners, Great Hill Partners and Millennium Technology Value Partners, and Mark Lorion became CEO in April 2026. Jumio sells to large enterprises (banks, marketplaces and fintechs) that need document and biometric verification alongside AML screening at global scale.
 features:
-- Document verification with automated authenticity checks across 3,500+ ID types from 200+ countries.
-- Biometric face match with liveness detection to prevent spoofing and deepfakes.
-- AML screening and watchlist monitoring available as an add-on module.
-- KYX Platform for continuous, ongoing risk monitoring beyond initial onboarding.
-- On-premise and cloud deployment options for enterprise infrastructure requirements.
-- 24/7 enterprise support with dedicated account management.
+- Document verification across 5,000+ ID types from 200 countries and territories.
+- Selfie verification and liveness detection to prevent spoofing and deepfakes.
+- AML screening covering sanctions, PEPs and adverse media, with ongoing monitoring after onboarding.
+- Jumio Platform with orchestration, a rules engine, risk signals and AI risk scoring.
+- Jumio Watch for continuous risk analysis beyond initial onboarding.
+- selfie.DONE reusable biometric credentials for returning users.
 pricing:
-  summary: Jumio does not publish pricing; contracts are volume-based and quoted through sales. Third-party estimates put the effective cost at roughly $0.90 to $2.30 per verification. That is an external estimate, not Jumio's official rate, and AML screening or premium support typically add to it.
+  summary: Jumio does not publish pricing; contracts are volume-based and quoted through sales. Vendr's buyer data (updated February 2026) shows a median annual contract of $55,850, with deals ranging from $5,832 to $213,684 a year. These are third-party figures, not Jumio's official rates.
   plans:
   - tier: Custom Quote
     price: Custom
     note: Volume-based enterprise pricing via sales
     extra: Contact sales
-  - tier: Third-Party Estimate
-    price: $0.90 to $2.30
-    note: Per verification (external estimate, not Jumio's official pricing)
-    extra: AML screening & premium support billed separately
-  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as third-party estimates are not the vendor''s official rate.'
-  verified: null
-  items: []
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: List price
+    value: Not published; quoted by sales
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: Median annual contract (Vendr buyer data, Feb 2026)
+    value: $55,850 per year
+    kind: third_party
+    source: 8
+    verified: '2026-10'
+  - label: Annual contract range (Vendr buyer data, Feb 2026)
+    value: $5,832 to $213,684 per year
+    kind: third_party
+    source: 8
+    verified: '2026-10'
+  - label: Market range for 100,000 to 500,000 verifications a year (Vendr, general market positioning)
+    value: About $1.50 to $3 per verification
+    kind: third_party
+    source: 8
+    verified: '2026-10'
 facts:
 - label: From
   value: Custom quote
-  source: null
-- label: Effective
-  value: ~$0.90 to $2.30/check (3rd-party est.)
-  source: null
+  source: 2
+  evidence: vendor
+- label: Median contract
+  value: $55,850/yr (Vendr, 3rd-party)
+  source: 8
 - label: Founded
   value: '2010'
-  source: null
+  source: 7
 - label: HQ
-  value: Palo Alto/Sunnyvale, CA
-  source: null
+  value: Sunnyvale, CA
+  source: 1
+  evidence: vendor
 - label: Regions
-  value: 200+ countries
-  source: null
-- label: Funding
-  value: $233M+ raised (Series D)
-  source: null
+  value: 200+ countries and territories
+  source: 1
+  evidence: vendor
+- label: Investors
+  value: Centana, Great Hill, Millennium Technology Value Partners
+  source: 1
+  evidence: vendor
 pros:
-- Global scale and platform maturity, with over 1 billion verifications processed
-- 'Broadest document coverage in this batch: 3,500+ ID types across 200+ countries'
-- 24/7 enterprise support built for Tier-1 bank and marketplace requirements
+- Global scale and platform maturity, with more than 1 billion transactions processed
+- 'Broad document coverage: 5,000+ ID types across 200 countries and territories'
+- Liveness detection independently tested by iBeta to ISO/IEC 30107-3 Level 2
 cons:
 - Pricing is available only through sales, with no published rate card
-- Third-party cost estimates run higher than several budget-tier competitors
+- Third-party contract data points to a high median annual spend
 - Heavier integration lift for teams without dedicated developer resources
 alternatives:
 - slug: onfido
@@ -94,38 +114,95 @@ choose_instead:
 - slug: regula
   text: document-authentication depth matters more than a full cloud onboarding platform, and on-premise deployment is a requirement.
 user_reviews:
-  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  legacy_note: null
   praise:
-  - 'Scale and reliability (frequently cited): enterprise reviewers point to consistent uptime at very high verification volumes.'
-  - 'Fraud-detection maturity: reviewers note mature models built on a large historical verification dataset.'
+  - 'Scale and reliability: enterprise reviewers point to consistent performance at high verification volumes.'
+  - 'Fraud-detection maturity: reviewers note mature models built on a large verification history.'
   criticize:
-  - 'Pricing transparency: the most consistently cited complaint is the lack of any published rate card.'
+  - 'Pricing transparency: there is no published rate card.'
   - 'Cost at scale: some reviewers say per-verification costs run higher than mid-market alternatives.'
   by_profile:
-  - Tier-1 banks and large marketplaces are Jumio's core customer profile.
+  - Large banks and marketplaces are Jumio's core customer profile.
   - Mid-market fintechs more often cite cost as a reason to evaluate alternatives.
-  - Enterprises with existing AML programs use Jumio's screening module as a bundled add-on rather than a standalone tool.
+  - Enterprises with existing AML programs can add Jumio's screening alongside identity verification.
 faq:
 - q: How much does Jumio cost?
-  a: Jumio does not publish pricing; it quotes volume-based enterprise contracts through sales. Third-party estimates suggest an effective cost of roughly $0.90 to $2.30 per verification, though this is not Jumio's official rate.
+  a: Jumio does not publish pricing; it quotes volume-based enterprise contracts through sales. Vendr's buyer data shows a median annual contract of $55,850, with a range of $5,832 to $213,684 a year. These are third-party figures, not Jumio's official rates.
 - q: Does Jumio include AML screening?
-  a: AML watchlist and sanctions screening is available as an add-on module alongside Jumio's core document and biometric verification.
+  a: Jumio offers AML screening covering sanctions, PEPs and adverse media, with ongoing monitoring after onboarding. Ask sales how it is packaged in your contract.
 - q: Is Jumio good for startups?
   a: Jumio is built primarily for enterprise-scale deployments; its sales-quoted, volume-based pricing tends to suit large organizations more than early-stage startups.
 - q: How does Jumio compare to Onfido?
-  a: Both offer broad document coverage and enterprise-grade verification. Onfido has stronger developer SDKs and is now backed by Entrust's security infrastructure, while Jumio has processed a larger cumulative volume of verifications.
+  a: Both offer broad document coverage and enterprise-grade verification. Onfido has stronger developer SDKs and is now backed by Entrust's security infrastructure, while Jumio emphasizes its processed-transaction scale and identity intelligence platform.
 - q: What is the best alternative to Jumio?
   a: Sumsub is the strongest alternative for teams that want published pricing and a unified KYC/KYB/monitoring platform. Onfido is the closest match for enterprise-grade document coverage with stronger developer tooling.
 - q: Who are Jumio's main competitors?
-  a: Jumio competes with Onfido, Sumsub, and Regula, differentiating mainly on its processed-verification scale and enterprise support model.
+  a: Jumio competes with Onfido, Sumsub, and Regula, differentiating mainly on its processed-transaction scale and enterprise focus.
 segments: []
 capabilities: {}
-certifications: []
-user_ratings: []
+certifications:
+- name: ISO/IEC 27001:2022
+  what: Information security
+  status: vendor_stated
+  source: 4
+- name: SOC 2 Type 2
+  what: Security controls audit
+  status: vendor_stated
+  source: 4
+- name: PCI DSS
+  what: Payment card data security
+  status: vendor_stated
+  source: 4
+- name: ISO/IEC 30107-3 Level 2 (iBeta)
+  what: Liveness / presentation attack detection
+  status: confirmed
+  source: 5
+user_ratings:
+- platform: G2
+  rating: 4.1
+  count: 38
+  checked: '2026-10'
+  url: https://www.g2.com/products/jumio/reviews
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
-sources: []
+sources:
+- title: Jumio Announces Mark Lorion as Chief Executive Officer
+  publisher: Jumio
+  url: https://www.jumio.com/about/press-releases/mark-lorion-chief-executive-officer/
+  accessed: '2026-10'
+- title: Jumio homepage (products and platform figures)
+  publisher: Jumio
+  url: https://www.jumio.com/
+  accessed: '2026-10'
+- title: Global Coverage
+  publisher: Jumio
+  url: https://www.jumio.com/global-coverage/
+  accessed: '2026-10'
+- title: Certified security and data protection (Privacy Center)
+  publisher: Jumio
+  url: https://jumio.com/privacy-center/jumio-you
+  accessed: '2026-10'
+- title: Jumio PAD Level 2 Confirmation Letter (11 September 2025)
+  publisher: iBeta Quality Assurance
+  url: https://www.ibeta.com/wp-content/uploads/2025/10/250911-Jumio-PAD-Level-2-Confirmation-Letter.pdf
+  accessed: '2026-10'
+- title: Jumio AML Screening
+  publisher: Jumio
+  url: https://www.jumio.com/products/aml-screening/
+  accessed: '2026-10'
+- title: Jumio
+  publisher: Wikipedia
+  url: https://en.wikipedia.org/wiki/Jumio
+  accessed: '2026-10'
+- title: Jumio buyer guide and pricing data
+  publisher: Vendr
+  url: https://vendr.com/buyer-guides/jumio
+  accessed: '2026-10'
+- title: Jumio reviews
+  publisher: G2
+  url: https://www.g2.com/products/jumio/reviews
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -134,7 +211,15 @@ entity:
   - https://www.linkedin.com/company/jumio
   - https://www.crunchbase.com/organization/jumio
 legacy_issues: []
-legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every third-party estimate above directly against Jumio's official pricing page and profiles before this page goes live.
+legacy_editorial_note: null
+verification_notes:
+- Founding year 2010 comes from Wikipedia only; Jumio's own pages checked do not state it.
+- ISO 27001, SOC 2 Type 2 and PCI DSS are vendor-stated; trust.jumio.com did not load, and no certificate or register entry was opened.
+- Old figure of $0.90 to $2.30 per verification had no traceable source and was removed; replaced with Vendr buyer data.
+- Old funding figure ($233M+, Series D) could not be sourced and was removed; investors listed instead.
+- On-premise deployment, 24/7 support and the KYX brand were not found on Jumio's current pages and were removed.
+- G2 rating read via a fetched copy of the page; spot-check the count before relying on it. Capterra showed 0 reviews for Jumio.
+- Ranking cards (identity-verification, aml, e-kyc) still show legacy_price_shown $1.15/verification, which has no source.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

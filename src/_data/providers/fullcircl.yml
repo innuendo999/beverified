@@ -1,10 +1,11 @@
 slug: fullcircl
 name: FullCircl
-alternate_names: []
+alternate_names:
+- nCino Identity Solutions
 status: published
 seo:
   title: 'FullCircl Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'FullCircl review: orchestration platform unifying KYB, KYC, AML, and IDV in one B2B onboarding interface. Features, pricing, pros & cons, alternatives.'
+  description: 'FullCircl (now nCino Identity Solutions) review: orchestration platform unifying KYB, KYC, AML, and IDV for regulated onboarding. Features, pricing, pros & cons, alternatives.'
   h1: 'FullCircl Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/fullcircl.png
@@ -19,56 +20,67 @@ categories:
 - kyb
 - aml
 link:
-  url: https://fullcircl.com
+  url: https://www.identitysolutions.ncino.com/
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-07-29'
+last_verified: '2026-10-18'
 updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: 'FullCircl''s pitch is consolidation: official registry data plus premium data sources unified into one interface covering KYB, KYC, AML, and identity verification, with a relationship-management layer aimed at B2B onboarding and sales teams. It''s UK/EU-centric, and its exact founding year (the company formed from a merger of DueDil and Artesian).'
+verdict: 'FullCircl is now part of nCino, which completed its acquisition in November 2024, and the product is sold as nCino Identity Solutions; fullcircl.com redirects there. The pitch is still consolidation: one API and orchestration layer over 400+ identity verification services, covering KYB, KYC, AML, fraud and identity verification, plus business-intelligence tools for sales and onboarding teams. It grew from UK roots (DueDil, Artesian and W2) and suits regulated businesses that want registry and identity data in one place.'
 what_is:
-- FullCircl is a UK-headquartered compliance-orchestration platform (its precise founding year is not consistently disclosed publicly; it was formed from a merger of DueDil and Artesian) that unifies KYB, KYC, AML, and identity verification with official registry data and premium sources for corporate and individual clients across the UK and EU.
+- FullCircl was a UK-based compliance-orchestration and customer-lifecycle platform formed when DueDil and Artesian merged in 2021. It bought Cardiff-based W2 Global Data Solutions in 2023, and US banking-software company nCino agreed to buy it in October 2024 for $135 million in cash, closing the deal on 5 November 2024. The platform is now marketed as nCino Identity Solutions. It offers identity verification, KYC, AML, fraud prevention, KYB, age verification and affordability checks through a single REST API connected to 400+ verification services, and says it covers 246 countries and territories and serves 2,700+ institutions.
 features:
-- Unified orchestration across KYB, KYC, AML, and identity verification.
-- Compliance screening against official registry data.
-- Aggregation of registry data with premium third-party sources.
-- Relationship-management tooling alongside compliance workflows.
+- Unified orchestration across KYB, KYC, AML, fraud and identity verification.
+- Single REST API connecting to 400+ identity verification services.
+- KYB data on 365 million entities, including company ownership and financial data.
+- SmartAcquire business-intelligence tooling for sales and onboarding teams.
 - Onboarding plus ongoing monitoring.
-- Single-interface workflow reducing tool fragmentation.
+- Age verification and affordability checks for gambling operators.
 pricing:
-  summary: FullCircl does not publish pricing; its orchestration platform is quoted based on client requirements and data-source selection.
+  summary: Pricing is not published; nCino Identity Solutions (formerly FullCircl) quotes on request.
   plans:
   - tier: Custom Quote
     price: Custom
     note: Orchestration platform licensing
     extra: Not publicly disclosed; contact sales
-  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
-  verified: null
-  items: []
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Published pricing
+    value: None; quote on request
+    kind: official
+    source: 1
+    verified: '2026-10'
 facts:
 - label: From
   value: Custom quote
-  source: null
-- label: Effective
-  value: Not disclosed
-  source: null
-- label: Founded
-  value: Not disclosed
-  source: null
+  source: 1
+  evidence: vendor
+- label: Owner
+  value: nCino (acquisition completed 5 Nov 2024)
+  source: 3
+  evidence: independent
+- label: Current brand
+  value: nCino Identity Solutions
+  source: 1
+  evidence: vendor
+- label: Origin
+  value: Merger of DueDil and Artesian (2021)
+  source: 5
+  evidence: independent
 - label: HQ
   value: United Kingdom
-  source: null
-- label: Regions
-  value: UK, EU
-  source: null
-- label: Origin
-  value: Merger of DueDil & Artesian
-  source: null
+  source: 2
+  evidence: vendor
+- label: Coverage
+  value: 246 countries and territories
+  source: 1
+  evidence: vendor
 pros:
-- Unifies multiple compliance and data sources into one interface, reducing fragmentation
-- Relationship-management layer connects compliance to B2B sales/onboarding workflows
-- Deep UK/EU registry data coverage
+- Unifies 400+ verification and data services behind one API, reducing fragmentation
+- Business-intelligence layer (SmartAcquire) connects compliance data to B2B sales and onboarding
+- Backed by nCino, a listed banking-software company, since November 2024
 cons:
-- UK/EU-centric focus, less suited to global-first businesses
+- Brand and product transition after the nCino acquisition; FullCircl branding is retired
 - No published pricing
 - Orchestration depth depends on the underlying integrated data sources
 alternatives:
@@ -85,34 +97,36 @@ choose_instead:
 - slug: kychub
   text: you want broader no-code orchestration across the full financial-crime lifecycle.
 - slug: complycube
-  text: you want simpler, lower-cost API-first identity/AML checks.
+  text: you want simpler API-first identity/AML checks with published per-check prices.
 - slug: gbg
   text: you want a larger, publicly traded data-network provider with location intelligence.
 user_reviews:
-  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  legacy_note: null
   praise:
-  - 'Consolidation (frequently cited): reviewers highlight less fragmentation from unifying data sources.'
-  - 'Relationship management: users see the sales and onboarding integration as a practical differentiator.'
+  - 'Consolidation: one interface over many data sources means less tool fragmentation.'
+  - 'Business intelligence: compliance data feeding sales and onboarding is a practical differentiator.'
   criticize:
-  - 'Geographic focus: some reviewers note it''s UK/EU-centric.'
+  - 'Transition: the move from FullCircl to the nCino brand can make products and support harder to follow.'
   - 'Pricing opacity: no published rate card.'
   by_profile:
-  - UK and EU B2B companies value FullCircl's unified compliance-plus-relationship-management approach.
+  - UK B2B lenders and regulated firms value combined registry, KYB and identity data.
   - Sales and onboarding teams benefit from compliance data feeding directly into relationship workflows.
-  - Global businesses outside the UK/EU often evaluate broader international platforms instead.
+  - Banks already on nCino may find it easier to adopt as part of the same vendor.
 faq:
 - q: How much does FullCircl cost?
-  a: FullCircl does not publish pricing; its orchestration platform is quoted based on client requirements and data-source selection.
+  a: Pricing is not published. nCino Identity Solutions, the current name for FullCircl's platform, quotes on request.
+- q: Is FullCircl still operating?
+  a: The platform still operates, but under nCino. nCino completed its acquisition of FullCircl on 5 November 2024, and fullcircl.com now redirects to nCino Identity Solutions.
 - q: What is FullCircl's history?
-  a: FullCircl was formed from a merger of DueDil and Artesian; its precise founding year is not consistently disclosed publicly.
+  a: FullCircl was formed when DueDil and Artesian merged in 2021. It acquired W2 Global Data Solutions in 2023 and was bought by nCino in 2024.
 - q: Does FullCircl cover both KYB and KYC?
-  a: Yes, FullCircl unifies KYB, KYC, AML, and identity verification in one orchestration interface.
+  a: Yes. The platform covers KYB, KYC, AML, fraud prevention and identity verification through one API and orchestration layer.
 - q: Is FullCircl focused on a specific region?
-  a: Yes, FullCircl is UK/EU-centric, drawing on official UK/EU registry data alongside premium sources.
+  a: Its roots and customer base are in the UK, but nCino Identity Solutions says it covers 246 countries and territories through its connected data sources.
 - q: What is the best alternative to FullCircl?
   a: KYC Hub is the best alternative for broader no-code AML lifecycle orchestration. GBG is the closest fit for a larger, publicly traded data network.
 - q: Who are FullCircl's main competitors?
-  a: FullCircl competes with KYC Hub, ComplyCube, and GBG, differentiating through its relationship-management layer alongside compliance orchestration.
+  a: FullCircl competes with KYC Hub, ComplyCube, and GBG, differentiating through its business-intelligence layer alongside compliance orchestration.
 segments: []
 capabilities: {}
 certifications: []
@@ -120,7 +134,31 @@ user_ratings: []
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
-sources: []
+sources:
+- title: nCino Identity Solutions homepage (fullcircl.com redirects here)
+  publisher: nCino
+  url: https://www.identitysolutions.ncino.com/
+  accessed: '2026-10'
+- title: nCino signs definitive agreement to acquire FullCircl
+  publisher: nCino
+  url: https://www.ncino.com/news/ncino-to-acquire-fullcircl
+  accessed: '2026-10'
+- title: nCino third quarter fiscal 2025 results (Form 8-K exhibit)
+  publisher: US SEC (EDGAR)
+  url: https://www.sec.gov/Archives/edgar/data/1902733/000190273324000192/thirdquarterfy25earningspr.htm
+  accessed: '2026-10'
+- title: FullCircl reinforces compliance suite with W2 Global Data Solutions acquisition
+  publisher: FinTech Futures
+  url: https://www.fintechfutures.com/m-a/fullcircl-reinforces-compliance-suite-with-w2-global-data-solutions-acquisition
+  accessed: '2026-10'
+- title: Duedil
+  publisher: Wikipedia
+  url: https://en.wikipedia.org/wiki/Duedil
+  accessed: '2026-10'
+- title: 'Companies House search: FullCircl Limited (13944944)'
+  publisher: Companies House
+  url: https://find-and-update.company-information.service.gov.uk/search/companies?q=fullcircl
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -129,7 +167,16 @@ entity:
   - https://www.linkedin.com/company/fullcircl
   - https://www.crunchbase.com/organization/fullcircl
 legacy_issues: []
-legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against FullCircl's official pricing page and profiles before this page goes live.
+legacy_editorial_note: null
+verification_notes:
+- FullCircl was acquired by nCino (agreement 30 Oct 2024, $135M cash; completed 5 Nov 2024 per nCino 8-K). fullcircl.com 302-redirects to identitysolutions.ncino.com. link.url updated to the current site; name and slug kept per spec.
+- Companies House lists FULLCIRCL LIMITED (13944944, incorporated 28 Feb 2022) as in liquidation. Likely a post-acquisition group restructuring, but the type of liquidation was not opened or confirmed; not stated on the page.
+- Founding year left out. DueDil was founded in 2011 and merged with Artesian in Aug 2021 (Wikipedia); FullCircl as a brand dates from 2021/2022. Wikipedia is used only for the merger year.
+- Old "UK, EU" regions claim replaced by the vendor's 246 countries and territories figure; actual depth outside the UK not tested.
+- No certifications published on the nCino Identity Solutions site; none listed. Old page claimed none.
+- The pricing page URL errored; homepage shows no pricing, so "not published" is based on the homepage and demo-request flow.
+- No G2 or Capterra rating opened. User review themes are general statements, not counted themes.
+- Customer counts differ by source (600 in 2023, 400+ in Oct 2024, 2,700+ institutions on today's site, which likely includes W2 and nCino figures); the current site figure is used.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

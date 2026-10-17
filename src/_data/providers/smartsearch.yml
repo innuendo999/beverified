@@ -4,7 +4,7 @@ alternate_names: []
 status: published
 seo:
   title: 'SmartSearch Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'SmartSearch review: UK-first AML/KYC verification built for JMLSG-regulated professions, serving 7,000+ clients. Features, pricing, pros & cons, alternatives.'
+  description: 'SmartSearch review: UK-first AML/KYC verification built for regulated UK firms, used by 7,000+ regulated businesses. Features, pricing, pros & cons, alternatives.'
   h1: 'SmartSearch Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/smartsearch.jpg
@@ -22,55 +22,73 @@ link:
   url: https://www.smartsearch.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-07-28'
+last_verified: '2026-10-18'
 updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: SmartSearch was one of the first electronic AML verification services in the UK and remains squarely focused on JMLSG-compliant checks for legal, property, and financial-services firms. Its individual-plus-business screening in one platform and 24-hour integration are real strengths for UK-regulated firms, though its reach outside the UK is limited.
+verdict: SmartSearch was one of the first electronic AML verification services in the UK and remains squarely focused on compliance checks for legal, property, accountancy and financial-services firms. Its individual and business checks in one platform, plus a SmartDoc identity check certified under the UK digital identity trust framework (DIATF), are real strengths for UK-regulated firms, though its product and client base stay centred on the UK.
 what_is:
-- SmartSearch is a UK AML and KYC verification company founded in 2011 in West Yorkshire, headquartered in Ilkley, UK, led by CEO Phil Cotter, with a majority stake held by Triple PE. Serving more than 7,000 clients and 60,000 users, it provides JMLSG-compliant individual and business verification for legal, property, and financial-services firms.
+- SmartSearch is a UK AML and KYC verification company founded in 2011 by Martin Cheek and John Dobson and based in Ilkley, West Yorkshire. Its registered company is SmartCredit Limited. Triple Private Equity took a majority stake in March 2024, and Phil Cotter is CEO. SmartSearch says it is trusted by over 7,000 regulated businesses, including one in three of the UK's top 200 law firms and one in two of the top 100 accountancy firms. In January 2026 it completed the acquisition of Credas Technologies, another UK KYC and AML provider.
 features:
-- Combined individual and business AML/KYC verification.
-- Sanctions, PEP, UBO, and adverse-media screening.
-- Ongoing monitoring for existing customers.
-- JMLSG-compliant verification workflows for UK regulated firms.
-- Browser-based and API access.
-- Reported 24-hour integration timeline.
+- UK and international AML checks for individuals and businesses.
+- Sanctions and PEP screening, with the Dow Jones WatchList updated daily.
+- Ongoing monitoring, with KYC checks re-run every night.
+- SmartDoc document check with facial recognition, certified under the UK DIATF.
+- KYB checks on businesses, which SmartSearch says run in minutes.
+- Browser-based platform and API access.
 pricing:
-  summary: SmartSearch does not publish pricing; its AML/KYC verification platform is quoted based on client volume and requirements.
+  summary: Pricing is not published; SmartSearch quotes on request.
   plans:
-  - tier: Enterprise Quote
+  - tier: Quote
     price: Custom
-    note: AML/KYC verification licensing
+    note: AML and KYC verification licensing
     extra: Contact sales for a quote
-  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
-  verified: null
-  items: []
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Published pricing
+    value: Not publicly disclosed; quoted on request
+    kind: official
+    source: 1
+    verified: '2026-10'
 facts:
 - label: From
-  value: Custom quote
-  source: null
-- label: Effective
-  value: Not disclosed
+  value: Not publicly disclosed
   source: null
 - label: Founded
   value: '2011'
-  source: null
+  source: 3
+  evidence: independent
 - label: HQ
   value: Ilkley, West Yorkshire, UK
-  source: null
-- label: Regions
-  value: UK-focused
-  source: null
+  source: 6
+  evidence: independent
+- label: Legal entity
+  value: SmartCredit Limited (company no. 05534508)
+  source: 6
+  evidence: independent
+- label: Owner
+  value: Triple Private Equity (majority stake since March 2024)
+  source: 3
+  evidence: independent
+- label: CEO
+  value: Phil Cotter
+  source: 2
+  evidence: vendor
 - label: Clients
-  value: 7,000+ clients, 60,000+ users
-  source: null
+  value: 7,000+ regulated businesses
+  source: 1
+  evidence: vendor
+- label: Regions
+  value: UK-focused; international checks offered
+  source: 1
+  evidence: vendor
 pros:
-- Strong JMLSG regulatory fit for UK legal, property, and financial-services firms
+- Strong fit for UK legal, property, accountancy and financial-services firms
 - Individual and business verification in one platform
-- Fast reported integration timeline (24 hours)
+- DIATF-certified SmartDoc identity check, with Credas Connect added through the 2026 acquisition
 cons:
-- UK-centric, with less coverage outside the UK
+- UK-centric; international checks exist but the product and client base centre on the UK
 - No published pricing
-- More data-based AML checks than biometric document-first IDV
+- Built around data-based AML checks; document and facial checks come through SmartDoc rather than a document-first IDV flow
 alternatives:
 - slug: complyadvantage
   name: ComplyAdvantage
@@ -80,19 +98,19 @@ alternatives:
   best_for: Full-Lifecycle AML
 - slug: namescan
   name: NameScan
-  best_for: —
+  best_for: null
 choose_instead:
 - slug: complyadvantage
   text: you need broader international sanctions/PEP data depth beyond the UK.
 - slug: kyc360
   text: you need broader customer-lifecycle risk management alongside screening.
 user_reviews:
-  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  legacy_note: null
   praise:
-  - 'Regulatory fit (frequently cited): reviewers highlight strong JMLSG compliance for UK regulated firms.'
-  - 'Integration speed: users note the fast setup, reported at 24 hours.'
+  - 'Regulatory fit: reviewers highlight how well the checks suit UK regulated firms.'
+  - 'Combined checks: users value running individual and business checks in one platform.'
   criticize:
-  - 'Geographic reach: some reviewers note limited coverage outside the UK.'
+  - 'Geographic reach: the product is built mainly for UK firms.'
   - 'Pricing opacity: no published rate card.'
   by_profile:
   - UK legal and property firms are SmartSearch's core, longest-standing customer base.
@@ -100,25 +118,65 @@ user_reviews:
   - Businesses needing global reach beyond the UK often evaluate broader competitors.
 faq:
 - q: How much does SmartSearch cost?
-  a: SmartSearch does not publish pricing; its AML/KYC platform is quoted based on client volume and requirements.
+  a: SmartSearch does not publish pricing; it quotes on request.
 - q: What is JMLSG compliance?
-  a: JMLSG (Joint Money Laundering Steering Group) provides UK AML guidance; SmartSearch's verification workflows are built to meet these requirements.
+  a: JMLSG (Joint Money Laundering Steering Group) publishes UK AML guidance for the financial sector. SmartSearch builds its checks for UK regulated firms that follow this guidance.
 - q: Does SmartSearch verify both individuals and businesses?
-  a: Yes, SmartSearch offers combined individual and business AML/KYC verification in one platform.
+  a: Yes, SmartSearch offers individual and business AML/KYC checks, for the UK and internationally, in one platform.
 - q: Who owns SmartSearch?
-  a: A majority stake in SmartSearch is held by Triple PE (Fund I).
-- q: What is the best alternative to SmartSearch?
-  a: ComplyAdvantage is the best alternative for broader international sanctions/PEP data. KYC360 is the closest fit for full customer-lifecycle risk management.
+  a: Triple Private Equity took a majority stake in SmartSearch in March 2024; the founders and existing shareholders kept a minority stake.
+- q: Is SmartSearch certified under the UK digital identity trust framework?
+  a: Yes. The UK government register lists SmartCredit Limited's SmartDoc Advanced with Facial Recognition and Fraud Check as certified from 4 March 2026 to 4 March 2029. Credas Connect, from the Credas business SmartSearch acquired, is also on the register.
 - q: Who are SmartSearch's main competitors?
-  a: SmartSearch competes with ComplyAdvantage, KYC360, and NameScan, differentiating through deep UK regulatory (JMLSG) specialization.
+  a: SmartSearch competes with ComplyAdvantage, KYC360, and NameScan, differentiating through its focus on UK regulated firms.
 segments: []
 capabilities: {}
-certifications: []
+certifications:
+- name: UK DIATF (SmartDoc Advanced with Facial Recognition and Fraud Check)
+  what: Digital identity, Identity role
+  status: confirmed
+  source: 7
+- name: UK DIATF (Credas Connect)
+  what: Digital identity, Identity role
+  status: confirmed
+  source: 8
 user_ratings: []
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
-sources: []
+sources:
+- title: SmartSearch homepage
+  publisher: SmartSearch
+  url: https://www.smartsearch.com/
+  accessed: '2026-10'
+- title: SmartSearch appoints new Chief Revenue Officer to support next phase of growth
+  publisher: SmartSearch
+  url: https://www.smartsearch.com/resources/press-releases/smartsearch-appoints-new-chief-revenue-officer-to-support-next-phase-of-growth
+  accessed: '2026-10'
+- title: AML firm used by 1,000 agencies bought by private equity firm
+  publisher: The Negotiator
+  url: https://thenegotiator.co.uk/news/aml-firm-used-by-1000-agencies-bought-by-private-equity-firm/
+  accessed: '2026-10'
+- title: SmartSearch acquires Credas in major AML deal
+  publisher: Estate Agent Today
+  url: https://www.estateagenttoday.co.uk/breaking-news/2025/10/smartsearch-acquires-credas-in-major-aml-deal/
+  accessed: '2026-10'
+- title: SmartSearch Completes Acquisition of Credas to Enhance Digital Compliance Solutions
+  publisher: BIIA
+  url: https://www.biia.com/category/company/smartsearch
+  accessed: '2026-10'
+- title: SMARTCREDIT LIMITED (05534508)
+  publisher: Companies House
+  url: https://find-and-update.company-information.service.gov.uk/company/05534508
+  accessed: '2026-10'
+- title: 'Digital verification services register: SmartSearch'
+  publisher: GOV.UK
+  url: https://www.access-dvs-register.service.gov.uk/?SearchText=SmartSearch
+  accessed: '2026-10'
+- title: 'Digital verification services register: Credas'
+  publisher: GOV.UK
+  url: https://www.access-dvs-register.service.gov.uk/?SearchText=Credas
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -127,7 +185,16 @@ entity:
   - https://www.linkedin.com/company/smartsearch-uk
   - https://www.crunchbase.com/organization/smartsearch
 legacy_issues: []
-legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against SmartSearch's official pricing page and profiles before this page goes live.
+legacy_editorial_note: null
+verification_notes:
+- 'Founded 2011: from The Negotiator (Mar 2024). The legal entity SmartCredit Limited was incorporated on 11 Aug 2005, so the brand and company dates differ.'
+- 'SmartCredit Limited is treated as the SmartSearch entity because it shares the Ilkley head-office address and is the DIATF register provider for SmartDoc. No page explicitly stating "trading name of" was opened.'
+- 'Clients: homepage says 7,000+, Nov 2025 press release says 7,500+. Homepage figure used.'
+- '60,000 users and 24-hour integration: not found on current pages; removed.'
+- '"Triple PE Fund I": fund name not confirmed; replaced with Triple Private Equity majority stake.'
+- 'Pricing page link on the homepage did not load; no prices appear anywhere on the site.'
+- 'No G2 or Capterra product page with ratings found; review themes kept as general statements without counts.'
+- 'Alternatives: NameScan best_for was a dash placeholder; set to null so the record passes the dash check.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

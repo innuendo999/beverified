@@ -4,7 +4,7 @@ alternate_names: []
 status: published
 seo:
   title: 'NameScan Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'NameScan review: accessible on-demand PEP, sanctions, and adverse-media screening for SMEs. Features, pricing, pros & cons, alternatives.'
+  description: 'NameScan review: accessible pay-as-you-go PEP, sanctions, and adverse-media screening for SMEs, from $2.00 per scan. Features, pricing, pros & cons, alternatives.'
   h1: 'NameScan Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/namescan.png
@@ -22,55 +22,104 @@ link:
   url: https://namescan.io
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-07-28'
+last_verified: '2026-10-18'
 updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: 'NameScan targets a segment most AML platforms overlook: legal, real-estate, and crypto SMEs that need one-off or batch sanctions/PEP checks without an enterprise-lifecycle platform. It''s simple and self-serve where larger competitors require a sales conversation, though its scope and scale are narrower than full-service AML vendors.'
+verdict: 'NameScan targets a segment most AML platforms overlook: legal, real-estate, and crypto SMEs that need one-off or batch sanctions/PEP checks without an enterprise-lifecycle platform. It''s simple and self-serve, with published pay-as-you-go prices from $2.00 per scan and no contract, where larger competitors require a sales conversation, though its scope and scale are narrower than full-service AML vendors.'
 what_is:
-- NameScan is a sanctions, PEP, and adverse-media screening company founded in 2016 and headquartered in Chatswood, New South Wales, Australia. It serves finance, legal, real-estate, and crypto businesses with global sanctions, PEP, and adverse-media datasets, positioned as an accessible, self-serve option for SMEs that don't need a full enterprise AML lifecycle platform.
+- NameScan is a sanctions, PEP, and adverse-media screening service based in Chatswood, New South Wales, Australia, and a member of the Neurocom Group alongside sister company MemberCheck. G2 lists it as founded in 2016. It serves accountants, betting, financial institutions, insurance, legal, precious metals, real-estate and virtual currency businesses, and says it has 27,000+ customers across 195 countries. It is positioned as an accessible, self-serve option for SMEs that don't need a full enterprise AML lifecycle platform.
 features:
-- PEP and sanctions screening against global datasets.
+- PEP and sanctions screening (OFAC, UN, EU, UK, Australian and other regimes) from 20,000+ government and watchlist sources, updated daily.
+- Two data tiers, Emerald (NameScan's own database, 700,000+ profiles) and Sapphire (Acuris Risk Intelligence data).
 - Adverse-media screening.
-- Identity verification alongside screening checks.
-- Ongoing monitoring for existing customers.
-- Batch screening for higher-volume needs.
-- API access for integration into existing workflows.
+- ID verification with document authentication and biometric liveness, sold as separate credits.
+- Know Your Business (KYB) company checks.
+- Batch upload and a RESTful API with a Developer Centre.
 pricing:
-  summary: NameScan offers both on-demand and subscription screening options; current rates are on NameScan's pricing page.
+  summary: NameScan publishes pay-as-you-go prices in USD. Screening starts at $2.00 per scan on a 100-scan package and falls to $1.40 per scan at 1,000 scans; Emerald packages go as low as $1.40 and Sapphire packages as low as $1.70 per scan. Packages are valid for 12 months, with no contract, no monthly minimum and no setup fee. ID verification and KYB are billed separately per check.
   plans:
-  - tier: On-Demand / Subscription
-    price: Custom
-    note: On-demand and subscription screening packages
+  - tier: Emerald packages
+    price: $2.00 to $1.40 / scan
+    note: 100-scan to 1,000-scan packages, NameScan database
+    extra: Valid 12 months, no contract or minimum
+  - tier: Sapphire packages
+    price: From $1.70 / scan
+    note: Acuris Risk Intelligence data
+    extra: Valid 12 months, no contract or minimum
+  - tier: ID Verification and KYB
+    price: Per check
+    note: Separate pay-as-you-go credits
     extra: Not publicly disclosed
-  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
-  verified: null
-  items: []
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: 100-scan package
+    value: $2.00 USD / scan
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: 1,000-scan package
+    value: $1.40 USD / scan
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Emerald packages
+    value: As low as $1.40 USD / scan
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Sapphire packages
+    value: As low as $1.70 USD / scan
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Package validity
+    value: 12 months from purchase
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: Contract, minimum, setup fee
+    value: None
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: ID verification, KYB
+    value: Billed per check, price not listed
+    kind: official
+    source: 2
+    verified: '2026-10'
 facts:
 - label: From
-  value: Custom quote
-  source: null
+  value: $2.00 USD per scan
+  source: 1
+  evidence: vendor
 - label: Effective
-  value: Not disclosed
-  source: null
+  value: $1.40 to $2.00 USD per scan
+  source: 1
+  evidence: vendor
 - label: Founded
   value: '2016'
-  source: null
+  source: 4
+  evidence: vendor
 - label: HQ
   value: Chatswood, NSW, Australia
-  source: null
+  source: 3
+  evidence: vendor
 - label: Regions
-  value: Global
-  source: null
+  value: 195 countries
+  source: 1
+  evidence: vendor
 - label: Focus
   value: On-demand SME screening
-  source: null
+  source: 2
+  evidence: vendor
 pros:
-- Accessible, self-serve on-demand screening for SMEs
-- Simple setup without an enterprise sales process
+- Accessible, self-serve pay-as-you-go screening for SMEs, with published per-scan prices
+- Simple setup without an enterprise sales process or contract
 - Batch and API options for scaling beyond one-off checks
 cons:
 - Narrower scope than full enterprise AML-lifecycle platforms
 - Smaller scale and brand than category leaders
-- Screening-focused rather than full onboarding/monitoring lifecycle
+- Prepaid packages expire after 12 months
 alternatives:
 - slug: smartsearch
   name: SmartSearch
@@ -89,38 +138,76 @@ choose_instead:
 - slug: kyc360
   text: you need full customer-lifecycle AML management, beyond on-demand checks.
 user_reviews:
-  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  legacy_note: null
   praise:
-  - 'Accessibility (frequently cited): reviewers highlight simple self-serve signup for SMEs.'
-  - 'Batch and API options: users note the flexibility to scale beyond one-off checks.'
+  - 'Ease of use: Capterra reviewers describe the dashboard as intuitive.'
+  - 'API and standalone use: reviewers note checks can run from the dashboard without integration, and that the API is well documented.'
   criticize:
-  - 'Scope: some reviewers note it''s narrower than full enterprise AML-lifecycle platforms.'
-  - 'Scale: smaller brand and team than category leaders.'
+  - 'Credits: a reviewer objects to minimum credit packages that expire after a year.'
+  - 'Name formats: a reviewer says family-name-first formats do not fit the input fields well.'
   by_profile:
-  - Legal and real-estate SMEs use NameScan for occasional or batch compliance checks.
-  - Crypto businesses value the accessible, self-serve setup.
+  - Legal and real-estate SMEs may use NameScan for occasional or batch compliance checks.
+  - Crypto businesses may value the accessible, self-serve setup.
   - Larger enterprises needing full lifecycle management typically evaluate bigger platforms.
 faq:
 - q: How much does NameScan cost?
-  a: NameScan offers on-demand and subscription screening options; verify current rates directly on NameScan's pricing page.
+  a: NameScan publishes pay-as-you-go prices from $2.00 USD per scan on a 100-scan package, down to $1.40 per scan at 1,000 scans. Sapphire packages start at $1.70 per scan. Packages last 12 months, with no contract, minimum or setup fee.
 - q: Who uses NameScan?
-  a: NameScan serves finance, legal, real-estate, and crypto SMEs needing sanctions, PEP, and adverse-media screening.
+  a: NameScan serves accountants, betting, financial institutions, insurance, legal, precious metals, real-estate and virtual currency businesses needing sanctions, PEP, and adverse-media screening.
 - q: Does NameScan offer batch screening?
-  a: Yes, NameScan supports batch screening alongside on-demand checks and API access.
+  a: Yes, NameScan supports batch uploads alongside dashboard checks and a RESTful API.
 - q: Where is NameScan based?
-  a: NameScan is headquartered in Chatswood, New South Wales, Australia, founded in 2016.
+  a: NameScan lists its office in Chatswood, New South Wales, Australia. G2 lists it as founded in 2016.
 - q: What is the best alternative to NameScan?
   a: SmartSearch is the best alternative for JMLSG-compliant UK screening at larger scale. ComplyAdvantage is the closest fit for enterprise-scale data depth.
 - q: Who are NameScan's main competitors?
   a: NameScan competes with SmartSearch, ComplyAdvantage, and KYC360, differentiating through accessible, self-serve on-demand pricing for SMEs.
 segments: []
 capabilities: {}
-certifications: []
-user_ratings: []
+certifications:
+- name: ISO/IEC 27001:2022
+  what: Information security
+  status: vendor_stated
+  source: 3
+- name: ISO/IEC 27701:2019
+  what: Privacy information management
+  status: vendor_stated
+  source: 3
+user_ratings:
+- platform: Capterra
+  rating: 4.5
+  count: 22
+  checked: '2026-10'
+  url: https://www.capterra.ca/reviews/1034209/namescan
+- platform: G2
+  rating: 3.9
+  count: 8
+  checked: '2026-10'
+  url: https://www.g2.com/sellers/name-scan
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
-sources: []
+sources:
+- title: NameScan homepage
+  publisher: NameScan
+  url: https://namescan.io
+  accessed: '2026-10'
+- title: Pricing
+  publisher: NameScan
+  url: https://namescan.io/pricing
+  accessed: '2026-10'
+- title: About
+  publisher: NameScan
+  url: https://namescan.io/about
+  accessed: '2026-10'
+- title: Name Scan seller profile
+  publisher: G2
+  url: https://www.g2.com/sellers/name-scan
+  accessed: '2026-10'
+- title: NameScan reviews
+  publisher: Capterra Canada
+  url: https://www.capterra.ca/reviews/1034209/namescan
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -129,7 +216,14 @@ entity:
   - https://www.linkedin.com/company/namescan
   - https://www.crunchbase.com/organization/namescan
 legacy_issues: []
-legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against NameScan's official pricing page and profiles before this page goes live.
+legacy_editorial_note: null
+verification_notes:
+- 'Pricing: old page said custom, on-demand and subscription. NameScan publishes pay-as-you-go per-scan prices; no subscription is described. Package prices are taken from the homepage because the pricing page selector did not render as text.'
+- 'Founded 2016: only from the G2 seller profile (vendor-supplied). Capterra Canada shows the listed vendor as MemberCheck, founded 2008, and calls NameScan part of the Nexiant group.'
+- 'Ownership: NameScan pages say it is a member of the Neurocom Group; Nexiant (nexiant.ai) also lists "NameScan Pay As You Go". Relationship not confirmed.'
+- 'Ongoing monitoring: old feature list said ongoing monitoring; no monitoring feature is described on the current homepage or pricing page. Replaced with KYB.'
+- 'ISO 27001:2022 and ISO 27701:2019 vendor-stated on the about page; no certificate found. Logo alt text "ALAD-BAT CMS Accredited" not explained; not listed.'
+- 'User review themes rewritten from the five reviews visible on Capterra Canada; old "frequently cited" labels removed.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

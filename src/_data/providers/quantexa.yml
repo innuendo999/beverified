@@ -4,13 +4,13 @@ alternate_names: []
 status: published
 seo:
   title: 'Quantexa Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'Quantexa review: contextual decision intelligence built on entity resolution and graph analytics, valued at ~$2.6B. Features, pricing, pros & cons, alternatives.'
+  description: 'Quantexa review: decision intelligence built on entity resolution and graph analytics, valued at about $2.6B in 2025. Features, pricing, pros & cons, alternatives.'
   h1: 'Quantexa Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/quantexa.jpg
   background: '#835AEB'
   wordmark: null
-tagline: Contextual decision intelligence built on entity resolution and graph analytics
+tagline: Decision intelligence built on entity resolution and graph analytics
 score: 4.6
 grade: Great
 primary_category: aml
@@ -22,53 +22,62 @@ link:
   url: https://www.quantexa.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-07-29'
+last_verified: '2026-10-18'
 updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: 'Quantexa''s foundation is entity resolution: stitching fragmented, siloed data into a single graph network to surface hidden relationships. Its AML, fraud and KYC applications build on that rather than on transaction-monitoring rules alone. Valued at roughly $2.6B in 2025 and serving tier-1 banks and governments, it''s built for enterprise scale, not smaller teams.'
+verdict: 'Quantexa''s foundation is entity resolution: stitching fragmented, siloed data into a single graph network to surface hidden relationships. Its AML, fraud and KYC applications build on that rather than on transaction-monitoring rules alone. Valued at about $2.6B after its March 2025 Series F and naming HSBC, Standard Chartered and ING among its users, it is built mainly for enterprise scale, though a separate Cloud AML product now targets US mid-size and community banks.'
 what_is:
-- Quantexa is a contextual decision-intelligence company founded in 2016 and headquartered in London, UK, co-founded by CEO Vishal Marria, with more than 800 employees and a valuation of approximately $2.6 billion as of 2025. Its platform resolves fragmented data into unified entities and network graphs to power AML, fraud detection, and KYC applications for tier-1 banks, governments, and large enterprises across 70+ countries.
+- Quantexa is a decision-intelligence software company founded in 2016 and headquartered in London, UK, led by co-founder and CEO Vishal Marria. It reports more than 900 employees, 17 offices and activity in 100 countries, and was valued at about $2.6 billion when it raised a $175 million Series F in March 2025. Its Decision Intelligence Platform resolves fragmented data into unified entities and network graphs to power AML, fraud detection, and KYC applications for banks, insurers, telecoms and government agencies. In August 2026 Marria told Reuters the company could list in the UK, the US or both, with no timing set.
 features:
 - 'Entity resolution: unifying fragmented data into single, resolved entities.'
-- Network and graph analytics to surface hidden relationships.
-- Contextual monitoring for AML and financial-crime detection.
+- Graph analytics to surface hidden relationships.
+- Contextual monitoring for AML and financial-crime detection, plus Quantexa Cloud AML for US mid-size and community banks.
 - Fraud detection built on the same graph foundation.
 - KYC and data-management applications.
-- Enterprise-scale big-data architecture.
+- Quantexa AI and Q Assist generative AI tools on top of the platform.
 pricing:
-  summary: Quantexa does not publish pricing; its enterprise platform is licensed to tier-1 institutions based on data scale and deployment scope.
+  summary: Pricing is not published; Quantexa quotes on request.
   plans:
   - tier: Enterprise Quote
     price: Custom
-    note: Contextual Decision Intelligence platform licensing
+    note: Decision Intelligence Platform licensing
     extra: Contact sales for a quote
-  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
-  verified: null
-  items: []
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Published pricing
+    value: Not published; quote on request
+    kind: official
+    source: 2
+    verified: '2026-10'
 facts:
 - label: From
   value: Custom quote
   source: null
 - label: Effective
-  value: Not disclosed
+  value: Not publicly disclosed
   source: null
 - label: Founded
   value: '2016'
-  source: null
+  source: 1
+  evidence: vendor
 - label: HQ
   value: London, UK
-  source: null
+  source: 1
+  evidence: vendor
 - label: Regions
-  value: 70+ countries
-  source: null
+  value: 100 countries
+  source: 1
+  evidence: vendor
 - label: Valuation
-  value: ~$2.6B (2025)
-  source: null
+  value: About $2.6B (Series F, March 2025)
+  source: 4
+  evidence: independent
 pros:
 - Genuinely differentiated entity-resolution and graph-analytics depth
-- Enterprise/tier-1 scale trusted by major banks and governments
+- Enterprise scale, with HSBC, Standard Chartered and ING among named users
 - Broad applicability across AML, fraud, and KYC from one data foundation
 cons:
-- Enterprise-oriented, expensive and complex for smaller organizations
+- Core platform is enterprise-oriented and complex for smaller organizations
 - No published pricing
 - Requires significant data and implementation resources
 alternatives:
@@ -89,38 +98,90 @@ choose_instead:
 - slug: napier
   text: a sandboxed, AI-native transaction-monitoring specialist fits better than an entity-resolution platform.
 user_reviews:
-  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
-  praise:
-  - 'Entity resolution (frequently cited): reviewers say it uncovers hidden relationships other tools miss.'
-  - 'Enterprise scale: clients note confidence from tier-1 bank and government deployments.'
-  criticize:
-  - 'Implementation complexity: some reviewers note significant data and resource requirements to deploy.'
-  - 'Cost and complexity: out of reach for smaller organizations.'
+  legacy_note: null
+  praise: []
+  criticize: []
   by_profile:
-  - Tier-1 banks and government regulators are Quantexa's core customer profile.
+  - Large banks and government agencies are Quantexa's core customer profile.
   - Large enterprises with complex, siloed data benefit most from entity resolution.
   - Smaller compliance teams typically evaluate lighter-weight, faster-to-deploy platforms instead.
 faq:
 - q: How much does Quantexa cost?
-  a: Quantexa does not publish pricing; its platform is licensed to tier-1 institutions based on data scale and deployment scope.
+  a: Quantexa does not publish pricing; it quotes on request based on data scale and deployment scope.
 - q: What is entity resolution?
   a: Entity resolution is the process of unifying fragmented data points across systems into single, resolved entities. It is the foundation of Quantexa's graph-analytics platform.
 - q: What is Quantexa's valuation?
-  a: Quantexa was valued at approximately $2.6 billion as of 2025.
+  a: Quantexa was valued at about $2.6 billion when it raised a $175 million Series F led by Teachers' Venture Growth in March 2025. In August 2026 its CEO said a UK or US listing was possible, with no timing set.
 - q: What use cases does Quantexa support?
-  a: Quantexa's Contextual Decision Intelligence platform supports AML/financial-crime detection, fraud detection, KYC, and broader data management.
+  a: Quantexa's Decision Intelligence Platform supports AML and financial-crime detection, fraud detection, KYC, customer intelligence, risk management and broader data management.
 - q: What is the best alternative to Quantexa?
   a: NICE Actimize is the best alternative for the broadest end-to-end financial-crime suite. Feedzai is the closest fit for Tier-1 payment-fraud scale.
 - q: Who are Quantexa's main competitors?
   a: Quantexa competes with NICE Actimize, Feedzai, and Napier, differentiating through its entity-resolution and graph-analytics foundation.
 segments: []
 capabilities: {}
-certifications: []
+certifications:
+- name: ISO/IEC 27001:2022
+  what: Information security
+  status: vendor_stated
+  source: 3
+- name: ISO/IEC 27017:2015
+  what: Cloud security controls
+  status: vendor_stated
+  source: 3
+- name: ISO 22301
+  what: Business continuity
+  status: vendor_stated
+  source: 3
+- name: ISO 9001:2015
+  what: Quality management
+  status: vendor_stated
+  source: 3
+- name: SOC 2
+  what: Security controls audit (type not stated)
+  status: vendor_stated
+  source: 3
+- name: Cyber Essentials Plus
+  what: UK cyber security
+  status: vendor_stated
+  source: 3
+- name: IRAP
+  what: Australian government security assessment
+  status: vendor_stated
+  source: 3
+- name: NHS DSPT
+  what: UK health data security
+  status: vendor_stated
+  source: 3
 user_ratings: []
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
-sources: []
+sources:
+- title: About Quantexa
+  publisher: Quantexa
+  url: https://www.quantexa.com/about/
+  accessed: '2026-10'
+- title: Quantexa homepage
+  publisher: Quantexa
+  url: https://www.quantexa.com/
+  accessed: '2026-10'
+- title: Quantexa Trust and Policy Center
+  publisher: Quantexa
+  url: https://trust.quantexa.com/
+  accessed: '2026-10'
+- title: British data group Quantexa explores UK, US IPO, sources say (Reuters, 19 August 2026)
+  publisher: Global Banking and Finance Review
+  url: https://www.globalbankingandfinance.com/british-data-group-quantexa-explores-uk-us-ipo-sources-say/
+  accessed: '2026-10'
+- title: Quantexa
+  publisher: Wikipedia
+  url: https://en.wikipedia.org/wiki/Quantexa
+  accessed: '2026-10'
+- title: Quantexa reviews
+  publisher: G2
+  url: https://www.g2.com/products/quantexa/reviews
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -129,7 +190,12 @@ entity:
   - https://www.linkedin.com/company/quantexa
   - https://www.crunchbase.com/organization/quantexa
 legacy_issues: []
-legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against Quantexa's official pricing page and profiles before this page goes live.
+legacy_editorial_note: null
+verification_notes:
+- G2 shows no reviews for Quantexa (source 6), so the old review themes attributed to G2 and Capterra could not have come from G2; praise and criticize removed. Gartner Peer Insights not opened.
+- Certifications are vendor-stated only (Trust Center); no certification-body register opened. SOC 2 type not stated; Trust Center updates mention Type 1 reports.
+- CEO and co-founder role for Vishal Marria from Wikipedia and Reuters (sources 4, 5); about page names him as the person who founded the company in 2016.
+- IPO plans and possible Warburg Pincus stake sale (Aug 2026) are early stage; re-check before next release.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

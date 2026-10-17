@@ -22,59 +22,84 @@ link:
   url: https://seon.io
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-07-25'
+last_verified: '2026-10-18'
 updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: 'SEON''s edge is signal, not documents: it scores fraud risk from email, phone, IP, device, and browser data before a user ever submits an ID. That makes it a strong pre-KYC layer and AML complement, but it''s not a document or biometric verification tool on its own. Most teams pair it with a dedicated IDV platform.'
+verdict: 'SEON''s edge is signal, not documents: it scores fraud risk from email, phone, IP, device, and browser data before a user ever submits an ID. That makes it a strong pre-KYC layer and AML complement. SEON added its own document and liveness verification in January 2026, starting with Europe, but that product is new, and many teams will still pair SEON with an established IDV platform.'
 what_is:
-- SEON is a fraud-prevention and AML platform founded in 2017 in Budapest by Tamás Kádár and Bence Jendruszák, now headquartered in Austin, Texas, with offices in Budapest, London, Singapore, and Jakarta. It serves more than 5,000 businesses and analyzes over 900 digital and device signals to score fraud risk. The company reports having helped prevent more than $300 billion in fraud losses.
+- SEON is a fraud-prevention and AML platform founded in 2017 in Budapest by Tamás Kádár and Bence Jendruszák, now headquartered in Austin, Texas, with offices in London, Budapest, Jakarta and Singapore. It says it protects more than 5,000 businesses and analyzes more than 1,100 first-party data signals to score fraud risk. The company reports having helped prevent more than $300 billion in fraud losses. In September 2025 it raised an $80 million Series C led by Sixth Street, and in January 2026 it launched identity verification with document, liveness and proof-of-address checks.
 features:
 - Digital footprint and device intelligence across email, phone, IP, device, and browser signals.
 - Real-time fraud scoring at the point of onboarding.
-- Natural-language rule builder for configuring fraud logic without code.
-- Explainable AI scoring for audit and compliance review.
-- Unified fraud-prevention and AML screening in one workflow.
-- Pre-KYC screening and transaction monitoring.
+- AI-assisted rule builder that creates rules and filters from a plain-language description.
+- Explainable scoring that shows which signals drove the AI score.
+- AML screening and AML transaction monitoring alongside fraud prevention (Premium plan).
+- Identity verification with document checks, selfie liveness and proof of address (launched January 2026, Europe first).
 pricing:
-  summary: SEON's Starter plan begins at $699/month for entry-level fraud and AML screening; Premium pricing is custom above that, scaled to usage and feature needs.
+  summary: SEON's Starter plan is $699 a month and includes 2,500 fraud checks, 10 user accounts and 50 custom rules; case management and AML compliance are not included. Premium, which adds AML, case management and unlimited API calls, is priced on request. Both plans offer a free trial; its length is not stated.
   plans:
   - tier: Starter
     price: $699 / mo
-    note: Entry-level fraud/AML screening
-    extra: Scales with usage
+    note: 2,500 fraud checks per month, 10 users, 50 custom rules
+    extra: No AML compliance or case management
   - tier: Premium
     price: Custom
-    note: Full feature set, volume pricing
+    note: Adds AML compliance, case management, unlimited API calls and users
     extra: Contact sales for a quote
-  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as third-party estimates are not the vendor''s official rate.'
-  verified: null
-  items: []
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Starter plan
+    value: $699 per month, 2,500 fraud checks per month
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Starter limits
+    value: 10 user accounts, 50 custom rules; AML and case management not included
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Premium plan
+    value: Custom quote
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Free trial
+    value: Available on request; length not stated
+    kind: official
+    source: 1
+    verified: '2026-10'
 facts:
 - label: From
-  value: $699/mo
-  source: null
+  value: $699/mo (2,500 fraud checks)
+  source: 1
+  evidence: vendor
 - label: Effective
-  value: From $699/mo (Premium custom)
+  value: Not publicly disclosed
   source: null
 - label: Founded
   value: '2017'
-  source: null
+  source: 2
+  evidence: vendor
 - label: HQ
   value: Austin, TX
-  source: null
-- label: Regions
-  value: Global
-  source: null
+  source: 3
+  evidence: vendor
+- label: Funding
+  value: $80M Series C (Sept 2025), $187M total
+  source: 9
+  evidence: independent
 - label: Clients
   value: 5,000+ businesses
-  source: null
+  source: 2
+  evidence: vendor
 pros:
 - Transparent Starter-tier pricing, unlike most AML/fraud-data competitors
 - Deep device and digital-footprint enrichment for pre-KYC screening
 - Fast to integrate as a fraud-scoring layer ahead of a full KYC flow
 cons:
-- Not a document or biometric identity-verification tool on its own
+- Its document and liveness verification only launched in January 2026, with a Europe-first rollout
 - Premium-tier pricing is not published
-- Best used as a complement to a dedicated IDV platform, not a full replacement
+- AML screening and case management are not in the Starter plan
 alternatives:
 - slug: complyadvantage
   name: ComplyAdvantage
@@ -91,12 +116,11 @@ choose_instead:
 - slug: feedzai
   text: you need enterprise-scale, real-time payment-fraud detection built for Tier-1 banks.
 user_reviews:
-  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  legacy_note: null
   praise:
-  - 'Digital-footprint signals (frequently cited): reviewers highlight catching fraud before full KYC begins.'
-  - 'Rule builder: users can configure fraud rules without engineering support.'
+  - 'Digital-footprint signals: the product is built to catch fraud before full KYC begins.'
+  - 'Rule builder: rules can be configured without engineering support.'
   criticize:
-  - 'Document/biometric gap: some reviewers note it needs pairing with a separate IDV tool for full onboarding.'
   - 'Premium pricing: the higher tier requires a sales conversation with no published rate.'
   by_profile:
   - Fintechs and marketplaces use SEON as a pre-KYC fraud filter ahead of a dedicated IDV step.
@@ -104,25 +128,78 @@ user_reviews:
   - Very early-stage teams sometimes find the $699/mo Starter tier a meaningful commitment.
 faq:
 - q: How much does SEON cost?
-  a: SEON's Starter plan begins at $699/month for entry-level fraud and AML screening; Premium pricing is custom and scales with usage and feature needs.
+  a: SEON's Starter plan is $699 a month for 2,500 fraud checks, 10 users and 50 custom rules, without AML compliance or case management. Premium adds those and is priced on request.
 - q: Does SEON verify identity documents?
-  a: No. SEON is a fraud-prevention and digital-footprint intelligence platform, typically used ahead of or alongside a document-verification provider rather than as a replacement for one.
+  a: Yes, since January 2026. SEON launched identity verification with document checks, biometric liveness and proof of address, with the initial rollout focused on Europe. Many teams still pair SEON's fraud signals with an established document-verification provider.
 - q: What signals does SEON analyze?
-  a: SEON analyzes more than 900 digital and device signals, including email, phone, IP, device, and browser data, to score fraud risk in real time.
+  a: SEON says it analyzes more than 1,100 first-party data signals, including email, phone, IP, device, and browser data, to score fraud risk in real time.
 - q: Does SEON do AML screening?
-  a: Yes. SEON combines fraud-risk scoring with AML screening in one workflow, in addition to its pre-KYC digital-footprint analysis.
+  a: Yes. SEON offers AML screening and AML transaction monitoring alongside fraud scoring. On the pricing page, AML compliance is part of the Premium plan, not Starter.
 - q: What is the best alternative to SEON?
   a: ComplyAdvantage is the best alternative if sanctions and PEP watchlist data depth matters more than pre-KYC device signals. Feedzai is the closest fit for enterprise-scale payment-fraud detection.
 - q: Who are SEON's main competitors?
   a: SEON competes with ComplyAdvantage and Feedzai on the fraud/AML side, differentiating through its digital-footprint and device-intelligence signals.
 segments: []
 capabilities: {}
-certifications: []
-user_ratings: []
+certifications:
+- name: ISO/IEC 27001
+  what: Information security
+  status: vendor_stated
+  source: 7
+- name: SOC 2 Type 2
+  what: Security controls report
+  status: vendor_stated
+  source: 7
+user_ratings:
+- platform: G2
+  rating: 4.6
+  count: 394
+  checked: '2026-10'
+  url: https://www.g2.com/products/seon/reviews
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
-sources: []
+sources:
+- title: SEON pricing
+  publisher: SEON
+  url: https://seon.io/pricing/
+  accessed: '2026-10'
+- title: About SEON
+  publisher: SEON
+  url: https://seon.io/about-us/
+  accessed: '2026-10'
+- title: SEON structured info
+  publisher: SEON
+  url: https://seon.io/structured-info/
+  accessed: '2026-10'
+- title: SEON homepage (products and signals)
+  publisher: SEON
+  url: https://seon.io/
+  accessed: '2026-10'
+- title: SEON Launches Identity Verification Built on Real-Time Fraud Intelligence
+  publisher: SEON
+  url: https://seon.io/resources/news/seon-launches-identity-verification-built-on-real-time-fraud-intelligence/
+  accessed: '2026-10'
+- title: SEON ID verification solution
+  publisher: SEON
+  url: https://seon.io/products/identity-verification/
+  accessed: '2026-10'
+- title: SEON privacy and security whitepaper
+  publisher: SEON
+  url: https://seon.io/legal-and-security/seon-privacy-and-security-whitepaper
+  accessed: '2026-10'
+- title: SEON is now ISO 27001 certified
+  publisher: SEON
+  url: https://seon.io/resources/seon-is-now-iso27001-certified/
+  accessed: '2026-10'
+- title: Seon raises USD 80 million to fight online fraud
+  publisher: KrASIA
+  url: https://kr-asia.com/pulses/157381
+  accessed: '2026-10'
+- title: SEON reviews
+  publisher: G2
+  url: https://www.g2.com/products/seon/reviews
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -131,7 +208,12 @@ entity:
   - https://www.linkedin.com/company/seon-technologies
   - https://www.crunchbase.com/organization/seon
 legacy_issues: []
-legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every third-party estimate above directly against SEON's official pricing page and profiles before this page goes live.
+legacy_editorial_note: null
+verification_notes:
+- ISO 27001 and SOC 2 Type 2 are vendor-stated. The 2020 announcement names Eurocert as the ISO 27001 auditor, but no certificate or register entry was opened; trust.seon.io loads dynamically and showed no content.
+- The IDV product page states no document-type or country counts and no iBeta or other PAD test; none were added.
+- alternatives[2] has slug 'aml' for Sardine (should be 'sardine'); not changed because alternatives is a do-not-change field.
+- User review themes not visible on G2; kept as general statements. The "document/biometric gap" theme was dropped because SEON now offers IDV.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

@@ -4,7 +4,7 @@ alternate_names: []
 status: published
 seo:
   title: 'Feedzai Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'Feedzai review: enterprise payment-fraud and transaction-monitoring platform protecting $8T+ annually across Tier-1 banks. Features, pricing, pros & cons, alternatives.'
+  description: 'Feedzai review: enterprise fraud, AML and transaction-monitoring platform that says it secures $9T in payments a year. Features, pricing, pros & cons, alternatives.'
   h1: 'Feedzai Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/feedzai.svg
@@ -22,51 +22,62 @@ link:
   url: https://feedzai.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-07-25'
+last_verified: '2026-10-18'
 updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: 'Feedzai operates at a different scale than most of this batch: real-time machine-learning fraud detection deployed across roughly 80% of the Fortune 500 and four of North America''s five largest banks, protecting more than $8 trillion in transactions annually by the company''s own figures. That scale is built for tier-1 institutions. Pricing is enterprise-only, and integration timelines reflect it.'
+verdict: 'Feedzai operates at a different scale than most of this batch: real-time AI fraud and AML detection that, by the company''s own figures, secures about $9 trillion in payments a year and protects around 1 billion consumers, with banks and processors such as Mastercard, Fiserv, CaixaBank and Raiffeisen Bank International among its named customers. That scale is built for large institutions. Pricing is enterprise-only, and integration timelines reflect it.'
 what_is:
-- Feedzai is a payment-fraud detection and transaction-monitoring company founded in 2011 and headquartered in Coimbra, Portugal, with a US headquarters in San Mateo, California, and an office in the UK. Led by CEO Nuno Sebastião alongside co-founders Pedro Bizarro and Paulo Marques, Feedzai became a unicorn in 2021 and, by its own figures, protects more than $8 trillion in transactions annually across roughly 80% of the Fortune 500 and four of the five largest banks in North America.
+- Feedzai is a fraud-prevention and AML company founded in 2011 in Coimbra, Portugal, by Nuno Sebastião, Pedro Bizarro and Paulo Marques. Nuno Sebastião is co-founder, chairman and CEO. It lists offices in Coimbra, Lisbon, Porto, London, New York and Atlanta. Feedzai became a unicorn in 2021, bought DemystData in 2025 and raised a roughly $75 million Series E in October 2025 at a valuation above $2 billion. By its own figures it processes 120 billion events and secures $9 trillion in payments a year. It was also selected as the primary fraud detection provider for the ECB's proposed digital euro.
 features:
-- Real-time machine-learning transaction fraud detection.
-- RiskOps platform combining fraud detection, case management, and risk orchestration.
-- Device intelligence layered into transaction scoring.
-- Customizable fraud-detection workflows per institution.
-- Transaction scoring across the full customer lifecycle, beyond onboarding.
-- Built for the volume and latency requirements of Tier-1 banks and card networks.
+- Real-time AI transaction fraud, new-account fraud and scam detection.
+- RiskOps platform combining fraud, identity and AML, with RiskOps Studio for strategy configuration, investigations and reporting.
+- Device intelligence and behavioral biometrics layered into risk scoring.
+- AML transaction monitoring and watchlist screening.
+- Feedzai IQ network intelligence and the Farol AI agent for risk analysis and investigations.
+- Built for the volume and latency requirements of large banks, processors and card networks.
 pricing:
-  summary: Feedzai does not publish pricing; enterprise contracts are quoted through sales. Its cost structure and implementation model target tier-1 banks and card networks rather than early-stage teams.
+  summary: Pricing is not published; Feedzai quotes on request. Its cost structure and implementation model target large banks, processors and card networks rather than early-stage teams.
   plans:
   - tier: Enterprise Quote
     price: Custom
-    note: Enterprise contracts via sales, sized for tier-1 institutions
+    note: Enterprise contracts via sales, sized for large institutions
     extra: Contact sales for a quote
-  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as third-party estimates are not the vendor''s official rate.'
-  verified: null
-  items: []
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Published pricing
+    value: None; quote on request
+    kind: official
+    source: 2
+    verified: '2026-10'
 facts:
 - label: From
   value: Custom quote
-  source: null
-- label: Effective
-  value: Not disclosed
-  source: null
+  source: 2
+  evidence: vendor
 - label: Founded
-  value: '2011'
-  source: null
-- label: HQ
-  value: 'Coimbra, Portugal (US HQ: San Mateo, CA)'
-  source: null
-- label: Regions
-  value: Global
-  source: null
+  value: 2011, Coimbra, Portugal
+  source: 7
+  evidence: independent
+- label: Offices
+  value: Coimbra, Lisbon, Porto, London, New York, Atlanta
+  source: 5
+  evidence: vendor
+- label: CEO
+  value: Nuno Sebastião (co-founder)
+  source: 4
+  evidence: vendor
+- label: Funding
+  value: About $75M Series E (Oct 2025), valuation above $2B
+  source: 6
+  evidence: independent
 - label: Scale
-  value: $8T+ protected annually
-  source: null
+  value: $9T in payments secured a year (company figure)
+  source: 1
+  evidence: vendor
 pros:
-- 'Proven at very large scale: deployed at about 80% of the Fortune 500 and 4 of the top 5 North American banks'
-- Real-time ML fraud detection built for very high transaction volumes
-- Transaction scoring across the full lifecycle, beyond onboarding
+- 'Proven at very large scale: $9T in payments a year by its own figures, with customers such as Mastercard, Fiserv and CaixaBank'
+- Real-time AI fraud detection built for very high transaction volumes
+- Covers fraud, identity and AML transaction monitoring across the full lifecycle, beyond onboarding
 cons:
 - Enterprise-only pricing, not accessible for smaller teams
 - Overkill for companies below tier-1/tier-2 transaction volume
@@ -87,26 +98,28 @@ choose_instead:
 - slug: complyadvantage
   text: watchlist and adverse-media screening depth matters more than real-time payment-fraud scoring.
 user_reviews:
-  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  legacy_note: null
   praise:
-  - 'Scale and reliability (frequently cited): enterprise reviewers highlight consistent performance at very high transaction volumes.'
-  - 'Real-time detection: reviewers note the ML models catch fraud patterns quickly across large datasets.'
+  - 'Scale: the platform is designed for consistent performance at very high transaction volumes.'
+  - 'Real-time detection: the ML models score transactions as they happen across large datasets.'
   criticize:
   - 'Accessibility: the enterprise-only pricing and implementation model puts it out of reach for smaller teams.'
-  - 'Implementation time: some reviews note longer setup timelines than lighter fraud tools.'
+  - 'Implementation time: enterprise deployments take longer to set up than lighter fraud tools.'
   by_profile:
-  - Tier-1 banks and card networks are Feedzai's core customer profile.
-  - Large marketplaces adopt RiskOps for transaction risk across the full lifecycle, beyond onboarding.
+  - Large banks, processors and card networks are Feedzai's core customer profile.
+  - Payment companies and acquirers use RiskOps for transaction risk across the full lifecycle, beyond onboarding.
   - Smaller fintechs typically look to SEON or ComplyAdvantage instead, given Feedzai's enterprise-only pricing.
 faq:
 - q: How much does Feedzai cost?
-  a: Feedzai does not publish pricing. Enterprise contracts are quoted through sales, and its cost structure is built for tier-1 banks and card networks rather than early-stage teams.
+  a: Feedzai does not publish pricing. Enterprise contracts are quoted through sales, and its cost structure is built for large banks, processors and card networks rather than early-stage teams.
 - q: Is Feedzai good for startups?
-  a: Not typically. Feedzai's enterprise-only pricing and implementation model target tier-1 institutions; smaller teams usually look at lighter-weight tools like SEON.
+  a: Not typically. Feedzai's enterprise-only pricing and implementation model target large institutions; smaller teams usually look at lighter-weight tools like SEON.
 - q: What is RiskOps?
-  a: RiskOps is Feedzai's platform combining real-time fraud detection, case management, and risk orchestration into one workflow across the customer lifecycle.
-- q: How many banks use Feedzai?
-  a: By the company's own figures, Feedzai is deployed at roughly 80% of the Fortune 500 and four of the five largest banks in North America, protecting more than $8 trillion in transactions annually.
+  a: RiskOps is Feedzai's platform that combines fraud prevention, identity and AML in one place, with RiskOps Studio for strategy configuration, investigations and reporting.
+- q: How big is Feedzai?
+  a: By the company's own figures, Feedzai processes 120 billion events and secures $9 trillion in payments a year, protecting about 1 billion consumers. Named customers include Mastercard, Fiserv, CaixaBank and Raiffeisen Bank International.
+- q: Who owns Feedzai?
+  a: Feedzai is a privately held company founded in Portugal in 2011. Its October 2025 Series E of about $75 million valued it above $2 billion.
 - q: What is the best alternative to Feedzai?
   a: SEON is the best alternative for a lighter-weight, faster-to-deploy fraud tool. ComplyAdvantage is the closest fit if sanctions/PEP screening depth matters more than payment-fraud scoring.
 - q: Who are Feedzai's main competitors?
@@ -118,7 +131,35 @@ user_ratings: []
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
-sources: []
+sources:
+- title: About Feedzai
+  publisher: Feedzai
+  url: https://www.feedzai.com/about-us/
+  accessed: '2026-10'
+- title: Feedzai homepage
+  publisher: Feedzai
+  url: https://www.feedzai.com/
+  accessed: '2026-10'
+- title: RiskOps platform
+  publisher: Feedzai
+  url: https://www.feedzai.com/riskops/
+  accessed: '2026-10'
+- title: Leadership
+  publisher: Feedzai
+  url: https://www.feedzai.com/leadership/
+  accessed: '2026-10'
+- title: Contact us (offices)
+  publisher: Feedzai
+  url: https://www.feedzai.com/contact-us/
+  accessed: '2026-10'
+- title: Feedzai's valuation jumps to $2bn following $75m Series E investment
+  publisher: FinTech Futures
+  url: https://www.fintechfutures.com/venture-capital-funding/feedzais-valuation-jumps-to-2bn-following-75m-series-e-investment
+  accessed: '2026-10'
+- title: Portuguese unicorn Feedzai buys Australian company Demyst for 100 million dollars
+  publisher: ECO News
+  url: https://econews.pt/2025/04/23/portuguese-unicorn-feedzai-buys-australian-company-demyst-for-100-million-dollars/
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -127,7 +168,15 @@ entity:
   - https://www.linkedin.com/company/feedzai
   - https://www.crunchbase.com/organization/feedzai
 legacy_issues: []
-legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every third-party estimate above directly against Feedzai's official pricing page and profiles before this page goes live.
+legacy_editorial_note: null
+verification_notes:
+- 'The old claims "about 80% of the Fortune 500" and "four of the five largest North American banks" were not found on any current Feedzai page or news source we opened; removed.'
+- '"$8T+ protected" replaced by the current vendor figure of $9T in payments a year (about-us and homepage).'
+- US HQ in San Mateo is no longer listed; the contact page lists six offices without naming a headquarters. Old HQ fact replaced by the office list.
+- Paulo Marques is named as a co-founder by ECO News (2025) but is not on the current leadership page.
+- No certifications are published on Feedzai's site; trust.feedzai.com blocks automated access. A Feedzai job ad mentions PCI DSS, ISO/IEC 27001/27701 and SOC 2 as standards the team works to, which is not a certification claim, so nothing is listed.
+- G2 profile exists but shows no reviews (checked 2026-10); no user ratings added. User review themes are general statements, not counted themes.
+- DemystData deal value (about $100M) is from unnamed sources in ECO News; not used in the page.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

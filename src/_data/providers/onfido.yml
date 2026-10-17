@@ -1,16 +1,17 @@
 slug: onfido
 name: Onfido
-alternate_names: []
+alternate_names:
+- Entrust Identity Verification
 status: published
 seo:
   title: 'Onfido Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'Onfido review: AI document and biometric identity verification, now backed by Entrust. Features, sales-only pricing, pros & cons, and alternatives.'
+  description: 'Onfido review: AI document and biometric identity verification, now sold as Entrust Identity Verification. Features, sales-only pricing, pros & cons, and alternatives.'
   h1: 'Onfido Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/onfido.png
   background: '#5A2FD1'
   wordmark: /assets/img/wordmarks/onfido.png
-tagline: AI document and biometric verification, now backed by Entrust's security infrastructure
+tagline: AI document and biometric verification, now sold under the Entrust brand
 score: 4.5
 grade: Very Good
 primary_category: identity-verification
@@ -20,54 +21,67 @@ categories:
 - aml
 - liveness-detection
 link:
-  url: https://onfido.com
+  url: https://www.entrust.com/products/identity-verification
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-07-25'
+last_verified: '2026-10-18'
 updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: Onfido pairs strong developer tooling with broad document coverage, and since its 2024 acquisition by Entrust, it now sits inside a larger identity-security portfolio. It's a solid enterprise IDV choice for teams that want SDK depth and optional AML screening, though pricing remains sales-only and support responsiveness gets mixed reviews.
+verdict: Onfido pairs strong developer tooling with broad document coverage. Entrust completed its acquisition in April 2024, and the product is now sold as Entrust Identity Verification, with onfido.com redirecting to Entrust. It is a solid enterprise IDV choice for teams that want SDK depth and optional watchlist screening, though pricing remains sales-only and support responsiveness gets mixed reviews.
 what_is:
-- Onfido is an AI-powered document and biometric identity-verification company founded in 2012 in Oxford, England, by Husayn Kassai, Eamon Jubbawy, and Ruhul Amin, headquartered in London with offices in New York, Albuquerque, Lisbon, and Singapore. Entrust acquired Onfido in April 2024, and it now operates as part of Entrust's broader identity-security portfolio while retaining its own brand.
+- Onfido is an AI-powered document and biometric identity-verification company founded in 2012, according to Entrust; its UK company, Onfido Ltd, was incorporated in December 2010 and is registered in London. Entrust completed its acquisition of Onfido in April 2024, when Onfido reported more than $140 million in annual revenue and over 1,200 customers. The product now sits in Entrust's identity-security portfolio as Entrust Identity Verification, described by Entrust as built on Onfido technology.
 features:
-- Document verification powered by Onfido's Atlas AI engine.
-- Biometric face match with active and passive liveness detection.
-- Watchlist and AML screening (sanctions, PEP, adverse media), with optional ongoing monitoring.
-- SDKs and APIs built for fintech and web3 integration.
-- Coverage across 2,500+ document types from 195 countries.
-- Available via AWS Marketplace for simplified enterprise procurement.
+- Document verification with AI models built on tens of millions of verifications, plus NFC chip reading where the document supports it.
+- Biometric face match with liveness detection (Motion), tested by iBeta to ISO/IEC 30107-3.
+- Watchlist screening against sanctions, PEP, adverse media and global watchlists, with optional re-screening every 24 hours.
+- Smart Capture SDK, APIs and the Workflow Studio no-code builder.
+- Coverage of more than 2,500 document types across 195 countries.
+- Integrations with Microsoft Entra Verified ID and Okta Workforce Identity.
 pricing:
-  summary: Onfido uses customized, volume-based pricing quoted via sales; there is no published rate card, though higher-volume contracts qualify for lower per-verification rates.
+  summary: Pricing is not published; Entrust quotes Onfido (Entrust Identity Verification) on request through sales.
   plans:
   - tier: Custom Quote
     price: Custom
-    note: Volume-based pricing quoted via sales
-    extra: Higher volumes qualify for lower per-verification rates
-  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as third-party estimates are not the vendor''s official rate.'
-  verified: null
-  items: []
+    note: Quoted via Entrust sales
+    extra: Contact sales for a quote
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Published pricing
+    value: Not published; contact sales
+    kind: official
+    source: 1
+    verified: '2026-10'
 facts:
 - label: From
   value: Custom quote
   source: null
 - label: Effective
-  value: Not disclosed
+  value: Not publicly disclosed
   source: null
 - label: Founded
   value: '2012'
-  source: null
+  source: 5
+  evidence: vendor
+- label: Legal entity
+  value: Onfido Ltd (UK, incorporated Dec 2010)
+  source: 7
+  evidence: independent
 - label: HQ
   value: London, UK
-  source: null
+  source: 7
+  evidence: independent
 - label: Regions
   value: 195 countries
-  source: null
+  source: 2
+  evidence: vendor
 - label: Ownership
-  value: Part of Entrust (acquired 2024)
-  source: null
+  value: Part of Entrust (acquired April 2024)
+  source: 5
+  evidence: vendor
 pros:
 - Strong developer SDKs and API tooling
-- 'Near-global document coverage: 2,500+ document types across 195 countries'
-- Backed by Entrust's broader identity-security infrastructure since 2024
+- 'Near-global document coverage: more than 2,500 document types across 195 countries'
+- Liveness tested by iBeta to ISO/IEC 30107-3, with Level 2 letters for Onfido Liveness (2022)
 cons:
 - No published pricing; quoted via sales only
 - Enterprise focus can be pricier for mid-market teams than some competitors
@@ -90,38 +104,87 @@ choose_instead:
 - slug: trulioo
   text: non-documentary, database-driven identity proofing is the priority.
 user_reviews:
-  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  legacy_note: null
   praise:
-  - 'Developer experience (frequently cited): reviewers highlight clean SDKs and API documentation for integration.'
+  - 'Developer experience: reviewers highlight clean SDKs and API documentation for integration.'
   - 'Document coverage: enterprise reviews call out the near-global coverage favorably.'
   criticize:
   - 'Support responsiveness: some reviews describe slower response times than expected for enterprise accounts.'
-  - 'Pricing transparency: sales-only pricing is a recurring friction point in reviews.'
+  - 'Pricing transparency: sales-only pricing is a friction point.'
   by_profile:
-  - Fintechs and web3 companies value Onfido's SDK depth and API-first integration.
-  - Enterprises benefit from AWS Marketplace procurement and Entrust's security backing.
+  - Fintechs value Onfido's SDK depth and API-first integration.
+  - Enterprises that already use Entrust identity and access products can buy verification from the same vendor.
   - Mid-market teams sometimes find enterprise-focused pricing less competitive than smaller vendors.
 faq:
 - q: How much does Onfido cost?
-  a: Onfido uses customized, volume-based pricing quoted via sales, with no published rate card; higher-volume contracts qualify for lower per-verification rates.
+  a: Onfido, now Entrust Identity Verification, does not publish pricing. Entrust quotes it through sales.
 - q: Who owns Onfido?
-  a: Entrust acquired Onfido in April 2024. Onfido continues to operate under its own brand as part of Entrust's identity-security portfolio.
+  a: Entrust completed its acquisition of Onfido in April 2024. The product is now marketed as Entrust Identity Verification, and onfido.com redirects to Entrust's site.
 - q: Does Onfido include AML screening?
-  a: Yes. Onfido offers watchlist and AML screening (sanctions, PEP and adverse media) with optional ongoing monitoring, alongside its core document and biometric verification.
+  a: Yes. Entrust's watchlist screening checks customers against sanctions, PEP, adverse media and global watchlists, with optional re-screening every 24 hours, alongside document and biometric verification.
 - q: How many countries does Onfido cover?
-  a: Onfido supports 2,500+ document types across 195 countries.
+  a: Entrust says it supports more than 2,500 document types across 195 countries.
 - q: What is the best alternative to Onfido?
   a: Sumsub is the best alternative for published pricing and a unified KYC/KYB/monitoring suite. Jumio is the closest match on enterprise processed-verification scale.
 - q: Who are Onfido's main competitors?
-  a: Onfido competes with Jumio, Sumsub, and Trulioo, differentiating through developer-focused SDKs and, since 2024, Entrust's security backing.
+  a: Onfido competes with Jumio, Sumsub, and Trulioo, differentiating through developer-focused SDKs and, since 2024, its place in Entrust's identity-security portfolio.
 segments: []
 capabilities: {}
-certifications: []
-user_ratings: []
+certifications:
+- name: ISO/IEC 30107-3 Level 2 (iBeta)
+  what: Liveness / presentation attack detection, Onfido Liveness 2.0 on iOS (Jan 2022) and Android (Jun 2022)
+  status: confirmed
+  source: 8
+- name: ISO/IEC 30107-3 Level 1 (iBeta)
+  what: Liveness / presentation attack detection, Entrust Facial Similarity Report Motion v2.0 (Jul 2026)
+  status: confirmed
+  source: 8
+user_ratings:
+- platform: G2
+  rating: 4.4
+  count: 157
+  checked: '2026-10'
+  url: https://www.g2.com/products/onfido/reviews
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
-sources: []
+sources:
+- title: Entrust Identity Verification
+  publisher: Entrust
+  url: https://www.entrust.com/products/identity-verification
+  accessed: '2026-10'
+- title: Global ID verification, supported documents
+  publisher: Entrust
+  url: https://www.entrust.com/products/identity-verification/document-verification/supported-documents/
+  accessed: '2026-10'
+- title: Document verification solutions
+  publisher: Entrust
+  url: https://www.entrust.com/products/identity-verification/document-verification
+  accessed: '2026-10'
+- title: Watchlist screening and monitoring solutions
+  publisher: Entrust
+  url: https://www.entrust.com/products/identity-verification/data-verification/watchlist
+  accessed: '2026-10'
+- title: Entrust completes acquisition of Onfido (9 April 2024)
+  publisher: Entrust
+  url: https://www.entrust.com/company/newsroom/entrust-completes-acquisition-of-onfido-creating-a-new-era-of-identity-centric-security
+  accessed: '2026-10'
+- title: Entrust Identity Verification SDK documentation
+  publisher: Entrust
+  url: https://documentation.identity.entrust.com/sdk/
+  accessed: '2026-10'
+- title: 'Companies House search: Onfido Ltd (07479524)'
+  publisher: Companies House
+  url: https://find-and-update.company-information.service.gov.uk/search/companies?q=onfido
+  accessed: '2026-10'
+- title: ISO 30107-3 presentation attack detection confirmation letters
+  publisher: iBeta Quality Assurance
+  url: https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/
+  accessed: '2026-10'
+- title: Entrust IDV (formerly Onfido) reviews
+  publisher: G2
+  url: https://www.g2.com/products/onfido/reviews
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -130,7 +193,15 @@ entity:
   - https://www.linkedin.com/company/onfido
   - https://www.crunchbase.com/organization/onfido
 legacy_issues: []
-legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every third-party estimate above directly against Onfido's official pricing page and profiles before this page goes live.
+legacy_editorial_note: null
+verification_notes:
+- onfido.com now 302-redirects to entrust.com/products/identity-verification; link.url updated. Owner should confirm whether the outbound link type or wordmark should change to Entrust.
+- Founded 2012 is Entrust's statement; Companies House shows Onfido Ltd incorporated 29 Dec 2010. Both shown.
+- Founders and office list (New York, Albuquerque, Lisbon, Singapore) not confirmed on any page opened; removed.
+- Atlas AI engine name no longer appears on the Entrust document verification page; removed.
+- AWS Marketplace listing could not be opened (robots block); removed.
+- No ISO 27001 or SOC 2 statement found on current Entrust IDV pages; none listed. A 2020 Onfido SOC 2 Type 2 release exists but was not opened.
+- G2 rating read from the product page header; review themes not visible, kept as general statements without counts.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

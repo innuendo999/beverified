@@ -4,13 +4,13 @@ alternate_names: []
 status: published
 seo:
   title: 'AMLRanger Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'AMLRanger review: a sanctions and watchlist screening tool with company facts pending independent verification. Features, pricing, pros & cons, alternatives.'
+  description: 'AMLRanger review: Ondato''s free AI assistant for sanctions, PEP and adverse-media checks. Features, pricing, pros & cons, alternatives.'
   h1: 'AMLRanger Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/amlranger.webp
   background: '#5A2FD1'
   wordmark: null
-tagline: AML screening tool; company facts not independently verified
+tagline: Ondato's free AI assistant for sanctions, PEP and adverse-media checks
 score: 4.2
 grade: Good
 primary_category: aml
@@ -18,55 +18,69 @@ legacy_rank_claim: 'ranked #6 in AML'
 categories:
 - aml
 link:
-  url: null
+  url: https://amlranger.ai/
   type: null
   legacy_rel: null
-last_verified: '2026-07-28'
+last_verified: '2026-10-18'
 updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: AMLRanger positions itself as a sanctions and watchlist screening tool for smaller compliance teams. We could not independently verify its founding year, headquarters or funding history from public sources, so treat the specifics on this page as provisional until confirmed with the vendor.
+verdict: AMLRanger (styled AML Ranger) is not a separate company. It is an AI screening assistant made by Ondato, the London-headquartered KYC and AML vendor, and went live in October 2025. It runs sanctions, PEP and adverse-media checks and returns short sourced reports, and it is free to use with monthly credits. It suits quick individual checks; teams that need case management, ongoing monitoring or an API should look at Ondato's main AML software or a dedicated screening platform.
 what_is:
-- AMLRanger is an AML screening tool focused on sanctions, PEP, and watchlist checks for compliance teams. Public company information (founding year, headquarters, leadership, and funding) could not be independently confirmed at the time of writing; this page will be updated once those details are verified directly with the vendor.
+- AMLRanger is an AI-powered AML screening assistant launched by Ondato in October 2025. It offers three assistants (PEP Screening Ranger, Sanctions Screening Ranger and Adverse Media Ranger) that search global and local sources in real time and summarise findings with sources, in under 30 seconds per check according to Ondato. It is free to use with monthly credits. Ondato was founded in 2018, is headquartered in London and runs R&D in Vilnius, Lithuania.
 features:
-- Sanctions and watchlist screening for customer onboarding.
-- PEP (politically exposed person) checks.
-- Adverse-media screening.
-- Case management for flagged matches.
-- API-based integration for onboarding workflows.
-- Ongoing monitoring for ongoing customer risk.
+- Sanctions screening assistant.
+- PEP screening assistant.
+- Multilingual adverse-media screening assistant.
+- Real-time analysis across global and local data sources.
+- Uses context to reduce false positives, according to Ondato.
+- Short reports with sources, in under 30 seconds per check according to Ondato.
 pricing:
-  summary: AMLRanger's pricing is not publicly disclosed and could not be independently verified; contact the vendor directly for current rates.
+  summary: AMLRanger is free to use, with free credits that renew each month. No paid tiers have been announced.
   plans:
-  - tier: Custom Quote
-    price: Custom
-    note: Not publicly disclosed
-    extra: Contact vendor directly for a quote
-  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
-  verified: null
-  items: []
+  - tier: Free
+    price: $0
+    note: Monthly free credits
+    extra: No paid tiers listed
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Price
+    value: Free to use, monthly free credits
+    kind: third_party
+    source: 2
+    verified: '2026-10'
+  - label: Paid tiers
+    value: Not publicly disclosed
+    kind: third_party
+    source: 2
+    verified: '2026-10'
 facts:
 - label: From
-  value: Not disclosed
-  source: null
+  value: Free (monthly credits)
+  source: 2
 - label: Effective
-  value: Not disclosed
-  source: null
-- label: Founded
-  value: Unverified
-  source: null
-- label: HQ
-  value: Unverified
-  source: null
-- label: Regions
-  value: Not disclosed
-  source: null
+  value: Not publicly disclosed
+- label: Maker
+  value: Ondato
+  source: 1
+- label: Launched
+  value: October 2025
+  source: 1
+- label: Ondato founded
+  value: '2018'
+  source: 4
+  evidence: vendor
+- label: Ondato HQ
+  value: London, UK (R&D in Vilnius)
+  source: 4
+  evidence: vendor
 pros:
-- Focused specifically on sanctions/PEP/watchlist screening
-- API-based integration for onboarding workflows
-- Case management included for flagged matches
+- Free to use, with credits that renew monthly
+- Covers sanctions, PEP and adverse-media checks with sourced summaries
+- Built by Ondato, an established KYC and AML vendor
 cons:
-- Company facts (founding, HQ, funding) could not be independently verified
-- No published pricing found
-- Less public track record than established category competitors
+- An assistant for individual checks, with no announced case management, ongoing monitoring or API
+- Data sources and paid limits are not documented publicly
+- New product (launched October 2025) with little public track record
 alternatives:
 - slug: complyadvantage
   name: ComplyAdvantage
@@ -81,30 +95,26 @@ choose_instead:
 - slug: complyadvantage
   text: you want a proprietary financial-crime database with a verified track record and enterprise clients.
 - slug: napier
-  text: you want a sandboxed, AI-native transaction-monitoring platform with 150+ verified institutional clients.
+  text: you want an AI-native transaction-monitoring platform built for regulated institutions.
 - slug: seon
   text: device and digital-footprint fraud signals matter more than watchlist screening alone.
 user_reviews:
-  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
-  praise:
-  - 'Screening focus: available third-party mentions describe a straightforward, screening-first tool.'
-  - 'API integration: noted as simple to wire into onboarding flows.'
-  criticize:
-  - 'Verifiability: little independent information is available about the company''s history and scale.'
-  - 'Pricing opacity: no published rate found.'
+  legacy_note: null
+  praise: []
+  criticize: []
   by_profile:
-  - Smaller compliance teams evaluating a focused screening tool may consider AMLRanger alongside better-documented competitors.
-  - Teams prioritizing vendor track record and public transparency should weigh this gap carefully.
-  - Confirm current company details directly with the vendor before including it in a shortlist.
+  - Small compliance teams can use it for quick, free one-off sanctions, PEP and adverse-media checks.
+  - Teams that need ongoing monitoring, case management or API screening should look at Ondato's main AML software or other platforms.
+  - Regulated firms should confirm data sources and audit trail before relying on it as their main screening tool.
 faq:
 - q: How much does AMLRanger cost?
-  a: AMLRanger's pricing is not publicly disclosed and could not be independently verified; contact the vendor directly for current rates.
-- q: Who founded AMLRanger and when?
-  a: This could not be independently verified from public sources at the time of writing. Confirm directly with the vendor before relying on any specific founding date.
-- q: Where is AMLRanger headquartered?
-  a: AMLRanger's headquarters could not be independently verified from public sources; confirm directly with the vendor.
+  a: AMLRanger is free to use, with free credits that renew each month. No paid tiers have been announced.
+- q: Who makes AMLRanger?
+  a: AMLRanger is a product of Ondato, a KYC and AML vendor founded in 2018 and headquartered in London. It went live in October 2025.
+- q: Where is AMLRanger's company headquartered?
+  a: Ondato, which makes AMLRanger, lists its headquarters in London and its R&D centre in Vilnius, Lithuania.
 - q: What does AMLRanger screen for?
-  a: Based on available information, AMLRanger focuses on sanctions, PEP, and watchlist screening with case management for flagged matches.
+  a: AMLRanger has three assistants for sanctions, PEP and adverse-media screening. Each returns a short report with sources.
 - q: What is the best alternative to AMLRanger?
   a: ComplyAdvantage is the best-documented alternative with a verified enterprise track record. Napier AI is the closest fit for AI-native transaction monitoring.
 - q: Who are AMLRanger's competitors?
@@ -116,13 +126,43 @@ user_ratings: []
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
-sources: []
+sources:
+- title: Ondato's AML Ranger automates real-time AML checks
+  publisher: FinTech Global
+  url: https://fintech.global/2025/10/22/ondatos-aml-ranger-automates-real-time-aml-checks/
+  accessed: '2026-10'
+- title: 'Ondato launches AML Ranger: AI assistant tool automating real-time AML compliance'
+  publisher: AML Network
+  url: https://amlnetwork.org/aml-news/ondato-launches-aml-ranger-ai-assistant-tool-automating-real-time-aml-compliance/
+  accessed: '2026-10'
+- title: AML Ranger
+  publisher: Ondato
+  url: https://amlranger.ai/
+  accessed: '2026-10'
+- title: About us
+  publisher: Ondato
+  url: https://ondato.com/about-us/
+  accessed: '2026-10'
+- title: AML software
+  publisher: Ondato
+  url: https://ondato.com/aml-software/
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://amlranger.ai/
 legacy_issues: []
-legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure above directly against AMLRanger's official pricing page and profiles before this page goes live.
+legacy_editorial_note: null
+verification_notes:
+- 'Main finding: AMLRanger is a product of Ondato (AML Ranger), launched October 2025, not a standalone company. Old "founding year/HQ unverified" text replaced with Ondato facts.'
+- 'amlranger.ai rendered only metadata (description and author tag naming Ondato); pricing and feature details come from press coverage of the launch (FinTech Global, AML Network), so pricing items are third_party.'
+- 'Old features "case management", "API-based integration" and "ongoing monitoring" are not mentioned for AML Ranger; they belong to Ondato''s main AML software (source 5). Removed from this record.'
+- 'link.url set to https://amlranger.ai/ (was null). link.type left null for the owner to decide.'
+- 'Napier choose-instead reason dropped "150+ verified institutional clients" (Napier figure not re-checked in this pass).'
+- 'No G2 or Capterra listing found for AML Ranger; unverified review themes removed.'
+- 'No certifications claimed for AML Ranger. Ondato''s about page shows GDPR, "ISO (levels 1 and 2)", KJM and NIST badges for Ondato in general; not attached to this product.'
+- 'Alternatives do not include Ondato itself (alternatives field is locked); consider adding an Ondato review or alternative.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
