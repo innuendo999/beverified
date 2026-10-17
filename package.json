@@ -8,7 +8,8 @@
     "check": "node scripts/checks/content.mjs && node scripts/checks/links.mjs",
     "gaps": "node scripts/checks/gaps.mjs",
     "inventory": "python3 scripts/inventory.py",
-    "extract": "python3 scripts/extract.py"
+    "extract": "python3 scripts/extract.py",
+    "check:strict": "node scripts/checks/content.mjs --strict && node scripts/checks/links.mjs --strict"
   },
   "devDependencies": {
     "@11ty/eleventy": "3.1.2",
