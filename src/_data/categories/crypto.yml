@@ -1,0 +1,87 @@
+slug: crypto
+url: /providers/crypto/
+seo:
+  title: Top Crypto KYC Providers in 2026 | BeVerified
+  description: 'KYCAID, Sumsub, ComplyAdvantage, Chainalysis, and Notabene compared: the top crypto KYC providers in 2026, ranked on wallet-risk accuracy, sanctions coverage, and Travel Rule readiness.'
+  h1: Top Crypto KYC Providers in 2026
+breadcrumb_label: Top Crypto KYC Providers
+quick_answer: KYCAID is the best overall crypto KYC platform for most exchanges, combining onboarding checks with wallet screening. Chainalysis is the top pick for on-chain forensics depth, and Notabene leads on Travel Rule protocol interoperability. We compared 5 providers on wallet-risk accuracy, sanctions coverage, and Travel Rule readiness below.
+reviewer:
+  name: David Okafor
+  credential: null
+last_verified: '2026-07-24'
+legacy_stats:
+- value: '5'
+  label: providers compared
+- value: 30+
+  label: chains covered
+- value: Jul 2026
+  label: last updated
+explainer_html:
+- '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
+
+  <h2 style="font-size:19px;margin-bottom:10px;">What Crypto KYC Verifies — On-Chain and Off-Chain</h2>
+
+  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">Crypto KYC does two jobs traditional KYC doesn''t: it verifies the person behind a wallet, and it screens the wallet''s on-chain history for exposure to sanctioned addresses, mixers, and darknet markets. The obligation to share that verification data between exchanges — not just check it internally — comes from FATF Recommendation 16, the Travel Rule.</p>
+
+  <h3 style="font-size:14.5px;margin-bottom:10px;">Core capabilities compliance teams typically require</h3>
+
+  <ul style="margin:0 0 18px;padding-left:20px;font-size:14.5px;line-height:1.75;">
+
+  <li style="list-style:disc;">Wallet risk scoring against known illicit-activity clusters</li>
+
+  <li style="list-style:disc;">Real-time sanctioned-address screening (OFAC SDN and equivalent lists)</li>
+
+  <li style="list-style:disc;">Travel Rule message exchange between VASPs, typically over IVMS101-based protocols such as TRP, OpenVASP, Shyft, or VerifyVASP</li>
+
+  <li style="list-style:disc;">Ongoing on-chain transaction monitoring (KYT) as a wallet''s risk profile changes after onboarding</li>
+
+  </ul>
+
+  <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from AML</h3>
+
+  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Crypto KYC screens wallets and on-chain flows specifically; general <a href="/providers/aml/">AML software</a> screens traditional banking transactions and PEP/sanctions lists. The screening engines often overlap — several platforms in this list also appear in our AML category — but a crypto-specific vendor is built to read blockchain data natively.</p>
+
+  <h3 style="font-size:14.5px;margin-bottom:8px;">Regulatory context</h3>
+
+  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Key references: FATF Recommendation 16 (the Travel Rule), the EU''s MiCA framework, and the VASP (Virtual Asset Service Provider) designation that determines which Travel Rule obligations apply to a given business.</p>
+
+  <a class="entity-card__cta" href="/methodology/">See how we evaluate every provider on this list in our full methodology →</a>
+
+  </section>'
+- '<section class="section-border-top" style="padding:28px 0;">
+
+  <h2 style="font-size:16px;margin-bottom:14px;">Related categories</h2>
+
+  <div style="display:flex;gap:8px;flex-wrap:wrap;">
+
+  <a class="tag-pill" href="/providers/aml/" style="font-size:13px;padding:8px 14px;">AML Software</a>
+
+  <a class="tag-pill" href="/providers/kyb/" style="font-size:13px;padding:8px 14px;">KYB (Know Your Business)</a>
+
+  <a class="tag-pill" href="/providers/e-kyc/" style="font-size:13px;padding:8px 14px;">eKYC</a>
+
+  <a class="tag-pill" href="/providers/identity-verification/" style="font-size:13px;padding:8px 14px;">Identity Verification</a>
+
+  <a class="tag-pill" href="/providers/travel-rule/" style="font-size:13px;padding:8px 14px;">Travel Rule Compliance</a>
+
+  </div>
+
+  </section>'
+faq:
+- q: What is crypto KYC?
+  a: Crypto KYC verifies the identity of a person opening an exchange or wallet account, and pairs that with wallet-risk screening so the exchange knows whether the funds are tied to sanctioned or illicit addresses.
+- q: What's the difference between KYT and KYC?
+  a: KYC verifies who a person is at signup. Know Your Transaction (KYT) monitors on-chain activity afterward, since a wallet that looked clean at onboarding can later interact with a sanctioned address.
+- q: Do I need Travel Rule compliance software if I only serve retail crypto users?
+  a: Likely yes above the relevant transfer threshold. FATF Recommendation 16 applies to Virtual Asset Service Providers regardless of whether their end users are retail or institutional.
+- q: What is a VASP?
+  a: A Virtual Asset Service Provider (VASP) is any business that exchanges, transfers, or safekeeps virtual assets on behalf of customers — exchanges, custodians, and many wallet providers all qualify.
+- q: How does crypto KYC differ from traditional AML?
+  a: Crypto KYC screens wallets and on-chain transaction flows specifically. Traditional AML software screens banking transactions and PEP/sanctions lists; the two disciplines often share the same underlying screening engine.
+- q: Does MiCA require Travel Rule compliance?
+  a: MiCA governs crypto-asset issuance and service-provider licensing in the EU; the EU's separate Transfer of Funds Regulation (TFR) is what applies the Travel Rule to crypto transfers, and the two frameworks are designed to work together.
+adjacent: []
+capability_columns: []
+faq_templates: []
+legacy_issues: []

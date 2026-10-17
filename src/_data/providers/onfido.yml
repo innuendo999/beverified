@@ -1,0 +1,133 @@
+slug: onfido
+name: Onfido
+alternate_names: []
+status: published
+seo:
+  title: 'Onfido Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Onfido review: AI document and biometric identity verification, now backed by Entrust. Features, sales-only pricing, pros & cons, and alternatives.'
+  h1: 'Onfido Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/onfido.png
+  background: '#5A2FD1'
+tagline: AI document and biometric verification, now backed by Entrust's security infrastructure
+score: 4.5
+grade: Very Good
+primary_category: identity-verification
+legacy_rank_claim: 'ranked #5 in Identity Verification'
+categories:
+- identity-verification
+- aml
+- liveness-detection
+link:
+  url: https://onfido.com
+  type: null
+  legacy_rel: nofollow sponsored
+reviewer:
+  name: Elena Marsh
+  credential: CAMS
+last_verified: '2026-07-25'
+verdict: Onfido pairs strong developer tooling with broad document coverage, and since its 2024 acquisition by Entrust, it now sits inside a larger identity-security portfolio. It's a solid enterprise IDV choice for teams that want SDK depth and optional AML screening, though pricing remains sales-only and support responsiveness gets mixed reviews.
+what_is:
+- Onfido is an AI-powered document and biometric identity-verification company founded in 2012 in Oxford, England, by Husayn Kassai, Eamon Jubbawy, and Ruhul Amin, headquartered in London with offices in New York, Albuquerque, Lisbon, and Singapore. Entrust acquired Onfido in April 2024, and it now operates as part of Entrust's broader identity-security portfolio while retaining its own brand.
+features:
+- Document verification powered by Onfido's Atlas AI engine.
+- Biometric face match with active and passive liveness detection.
+- Watchlist and AML screening — sanctions, PEP, adverse media, with optional ongoing monitoring.
+- SDKs and APIs built for fintech and web3 integration.
+- Coverage across 2,500+ document types from 195 countries.
+- Available via AWS Marketplace for simplified enterprise procurement.
+pricing:
+  summary: Onfido uses customized, volume-based pricing quoted via sales; there is no published rate card, though higher-volume contracts qualify for lower per-verification rates.
+  plans:
+  - tier: Custom Quote
+    price: Custom
+    note: Volume-based pricing quoted via sales
+    extra: Higher volumes qualify for lower per-verification rates
+  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as third-party estimates are not the vendor''s official rate.'
+  verified: null
+  items: []
+facts:
+- label: From
+  value: Custom quote
+  source: null
+- label: Effective
+  value: Not disclosed
+  source: null
+- label: Founded
+  value: '2012'
+  source: null
+- label: HQ
+  value: London, UK
+  source: null
+- label: Regions
+  value: 195 countries
+  source: null
+- label: Ownership
+  value: Part of Entrust (acquired 2024)
+  source: null
+pros:
+- Strong developer SDKs and API tooling
+- Near-global document coverage — 2,500+ document types across 195 countries
+- Backed by Entrust's broader identity-security infrastructure since 2024
+cons:
+- No published pricing — quoted via sales only
+- Enterprise focus can be pricier for mid-market teams than some competitors
+- Mixed reviews on support responsiveness
+alternatives:
+- slug: jumio
+  name: Jumio
+  best_for: Most Popular
+- slug: sumsub
+  name: Sumsub
+  best_for: Editor's Choice
+- slug: trulioo
+  name: Trulioo
+  best_for: Best for Data-Layer Proofing
+choose_instead:
+- slug: jumio
+  text: you want the largest processed-verification scale in enterprise IDV.
+- slug: sumsub
+  text: published pricing and a unified KYC/KYB/monitoring suite matter more than SDK depth.
+- slug: trulioo
+  text: non-documentary, database-driven identity proofing is the priority.
+user_reviews:
+  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  praise:
+  - Developer experience (frequently cited) — reviewers highlight clean SDKs and API documentation for integration.
+  - Document coverage — near-global coverage is called out favorably in enterprise reviews.
+  criticize:
+  - Support responsiveness — some reviews describe slower response times than expected for enterprise accounts.
+  - Pricing transparency — sales-only pricing is a recurring friction point in reviews.
+  by_profile:
+  - Fintechs and web3 companies value Onfido's SDK depth and API-first integration.
+  - Enterprises benefit from AWS Marketplace procurement and Entrust's security backing.
+  - Mid-market teams sometimes find enterprise-focused pricing less competitive than smaller vendors.
+faq:
+- q: How much does Onfido cost?
+  a: Onfido uses customized, volume-based pricing quoted via sales, with no published rate card; higher-volume contracts qualify for lower per-verification rates.
+- q: Who owns Onfido?
+  a: Entrust acquired Onfido in April 2024. Onfido continues to operate under its own brand as part of Entrust's identity-security portfolio.
+- q: Does Onfido include AML screening?
+  a: Yes. Onfido offers watchlist and AML screening — sanctions, PEP, and adverse media — with optional ongoing monitoring, alongside its core document and biometric verification.
+- q: How many countries does Onfido cover?
+  a: Onfido supports 2,500+ document types across 195 countries.
+- q: What is the best alternative to Onfido?
+  a: Sumsub is the best alternative for published pricing and a unified KYC/KYB/monitoring suite. Jumio is the closest match on enterprise processed-verification scale.
+- q: Who are Onfido's main competitors?
+  a: Onfido competes with Jumio, Sumsub, and Trulioo, differentiating through developer-focused SDKs and, since 2024, Entrust's security backing.
+segments: []
+capabilities: {}
+certifications: []
+user_ratings: []
+use_case_verdicts: []
+score_breakdown: []
+hands_on: null
+sources: []
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as: []
+legacy_issues:
+- editorial_note
+- screenshot_placeholder
+legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every third-party estimate above directly against Onfido's official pricing page and profiles before this page goes live.

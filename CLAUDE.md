@@ -17,13 +17,22 @@ Full plan, decisions and prompts: `docs/redesign-plan.md`. Read only the section
 | Reviews directory | `src/providers/index.html` |
 | Methodology, Placement options | `src/methodology/`, `src/placement-options/` (own header/footer, not shared) |
 
-Planned (not built yet): `src/_data/rankings.yml`, `comparisons.yml`, `entities.yml`, provider data as `src/providers/<slug>.md` front matter, layouts in `src/_layouts/`. See plan sections 5–9.
+| Provider data (single source of truth for score, pricing, facts…) | `src/_data/providers/<slug>.yml` |
+| Ranked lists per category / region (order = rank) | `src/_data/rankings.yml` |
+| Category / region content | `src/_data/categories/<slug>.yml` |
+| Field definitions | `docs/data-schema.md` |
+| Search Console / Bing exports | `data/gsc/`, `data/bing/` |
+| Generated reports (inventory, gaps, rating conflicts, missing URLs) | `reports/` |
+
+The data files were extracted from the old pages and are not rendered yet; the pages in `src/providers/` are still the old HTML until the new templates land. Planned: `comparisons.yml`, `entities.yml`, layouts in `src/_layouts/`. See plan sections 5–9.
 
 ## Commands
 
 - `npm run build` — build into `_site/`
 - `npm run serve` — local preview
-- `npm run check` — content checks on `_site/` (report only for now; CI will switch to `--strict`)
+- `npm run check` — content + internal link checks on `_site/` (report only for now; CI will switch to `--strict`)
+- `npm run gaps` — regenerate `reports/content-gaps.csv`
+- `npm run inventory` / `npm run extract` — one-off migration scripts (Python: bs4, PyYAML). `extract` overwrites `src/_data`; do not re-run after the data has been edited by hand.
 
 ## Rules
 

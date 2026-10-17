@@ -1,0 +1,132 @@
+slug: regula
+name: Regula
+alternate_names: []
+status: published
+seo:
+  title: 'Regula Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Regula review: document-authentication SDK and forensic template library covering 16,000+ ID templates from 254 countries. Features, pricing, pros & cons, alternatives.'
+  h1: 'Regula Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/regula.png
+  background: '#8A5CF0'
+tagline: Document-authentication SDK and forensic template library, not a full onboarding platform
+score: 4.6
+grade: Great
+primary_category: identity-verification
+legacy_rank_claim: 'ranked #3 in Identity Verification'
+categories:
+- identity-verification
+- liveness-detection
+link:
+  url: https://www.regulaforensics.com
+  type: null
+  legacy_rel: nofollow sponsored
+reviewer:
+  name: Elena Marsh
+  credential: CAMS
+last_verified: '2026-07-25'
+verdict: Regula is the deepest document-forensics option in identity verification, built for teams that need to catch sophisticated document fraud rather than run a full onboarding flow. Its 16,000-template library and on-device deployment suit banks and border agencies with strict data-residency rules, but it ships as an SDK and hardware reader, not a plug-and-play platform, and pricing is quoted per project rather than published.
+what_is:
+- Regula is a document-authentication and biometric-verification technology company founded in 1992 and headquartered in Daugavpils, Latvia, under CEO Arif Mamedov and co-founder Ivan Shumsky. Rather than selling a hosted onboarding platform, Regula licenses a Document Reader SDK and Face SDK — plus proprietary hardware document readers — to banks, border-control agencies, and fintechs that need forensic-level document authentication built into their own systems.
+features:
+- Document Reader SDK with OCR, MRZ parsing, and RFID/NFC chip reading for e-passports and ID cards.
+- Forensic-level authenticity checks against a 16,000+ template library covering 254 countries and territories.
+- Face SDK combining biometric face match with liveness detection.
+- On-premise and on-device deployment options so verification data never leaves client infrastructure.
+- Proprietary hardware document readers alongside the software SDKs.
+- Support for 30+ languages across SDK and hardware interfaces.
+pricing:
+  summary: Regula does not publish pricing; it is quoted per project depending on whether you license the Document Reader/Face SDK, hardware readers, or both, and at what deployment scale. There is no published per-check or per-seat rate to benchmark against.
+  plans:
+  - tier: Project-Based License
+    price: Custom
+    note: SDK license (on-device) or hardware document readers, quoted per project
+    extra: Contact sales for a project quote
+  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as third-party estimates are not the vendor''s official rate.'
+  verified: null
+  items: []
+facts:
+- label: From
+  value: Custom quote
+  source: null
+- label: Effective
+  value: Not disclosed
+  source: null
+- label: Founded
+  value: '1992'
+  source: null
+- label: HQ
+  value: Daugavpils, Latvia
+  source: null
+- label: Regions
+  value: 254 countries/territories
+  source: null
+- label: Recognition
+  value: Gartner MQ 2025
+  source: null
+pros:
+- Largest document template library in the category (16,000+ templates, 254 countries/territories)
+- On-premise and on-device deployment for strict data-residency requirements
+- Three decades of forensic document-authentication expertise, recognized in Gartner's 2025 Magic Quadrant for Identity Verification
+cons:
+- Pricing is opaque — quoted per project, with no published starting rate
+- Ships as an SDK/hardware toolkit rather than a no-code onboarding platform
+- Narrower focus on document authenticity than on broader AML/onboarding workflow
+alternatives:
+- slug: jumio
+  name: Jumio
+  best_for: Most Popular
+- slug: onfido
+  name: Onfido
+  best_for: Developer-Friendly
+- slug: sumsub
+  name: Sumsub
+  best_for: Editor's Choice
+choose_instead:
+- slug: jumio
+  text: you want a cloud onboarding platform rather than an SDK, with broader AML workflow built in.
+- slug: onfido
+  text: you need strong developer SDKs plus AML watchlist screening bundled into one cloud platform.
+- slug: sumsub
+  text: you want an all-in-one KYC/AML platform with transparent published pricing instead of project quotes.
+user_reviews:
+  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  praise:
+  - Template coverage (cited in several third-party evaluations) — reviewers note it catches document fraud that generic OCR tools miss.
+  - Deployment flexibility — on-premise and on-device options are called out favorably by clients with strict data-residency needs.
+  criticize:
+  - Pricing opacity — reviewers frequently flag the lack of published rates as a friction point during procurement.
+  - Integration effort — as an SDK rather than a hosted platform, it typically requires more engineering time to stand up.
+  by_profile:
+  - Banks and border-control agencies value the on-device/on-premise deployment for data residency.
+  - Fintechs pair Regula's document SDK with a separate platform for biometric onboarding and AML screening.
+  - Smaller teams without in-house engineering resources tend to prefer hosted platforms over an SDK license.
+faq:
+- q: How much does Regula cost?
+  a: Regula does not publish pricing. Its Document Reader SDK, Face SDK, and hardware document readers are quoted per project based on deployment scale, so there's no published per-check rate to compare against.
+- q: Does Regula offer a hosted, no-code platform?
+  a: No. Regula ships as an SDK and hardware toolkit for teams to integrate into their own systems, not a hosted, no-code onboarding platform.
+- q: Can Regula run on-premise?
+  a: Yes. On-premise and on-device deployment are core to Regula's positioning, letting verification data stay inside a client's own infrastructure — a requirement for many banks and government agencies.
+- q: How many document templates does Regula support?
+  a: Regula's library covers 16,000+ ID templates from 254 countries and territories, one of the largest in the category.
+- q: What is the best alternative to Regula?
+  a: Sumsub is the strongest alternative if you want a hosted, all-in-one platform with published pricing. Jumio is the closest match for enterprise-scale cloud onboarding.
+- q: Who are Regula's main competitors?
+  a: Regula competes with Jumio, Onfido, and Sumsub, though it differentiates by selling a document-authentication SDK and hardware readers rather than a full hosted onboarding platform.
+segments: []
+capabilities: {}
+certifications: []
+user_ratings: []
+use_case_verdicts: []
+score_breakdown: []
+hands_on: null
+sources: []
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as: []
+legacy_issues:
+- editorial_note
+- screenshot_placeholder
+legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every third-party estimate above directly against Regula's official pricing page and profiles before this page goes live.

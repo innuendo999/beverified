@@ -1,0 +1,132 @@
+slug: hawkai
+name: Hawk AI
+alternate_names: []
+status: published
+seo:
+  title: 'Hawk AI Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Hawk AI review: explainable-AI transaction monitoring with a pattern-sharing network across institutions. Features, pricing, pros & cons, alternatives.'
+  h1: 'Hawk AI Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/hawkai.webp
+  background: '#835AEB'
+tagline: Explainable-AI transaction monitoring with a pattern-sharing network across institutions
+score: 4.6
+grade: Great
+primary_category: aml/banks
+legacy_rank_claim: 'ranked #4 in AML for Banks'
+categories:
+- aml/banks
+- aml
+link:
+  url: https://www.hawk.ai
+  type: null
+  legacy_rel: nofollow sponsored
+reviewer:
+  name: Elena Marsh
+  credential: CAMS
+last_verified: '2026-07-29'
+verdict: Hawk (formerly HAWK:AI) built one of the earlier explainable-AI approaches to AML transaction monitoring, pairing rules with behavioral AI and a cross-institution pattern-sharing network that creates a network effect against novel crime patterns. Serving Tier-1 banks down to mid-market fintechs, it reports roughly 90% alert accuracy and 50–70% fewer false positives.
+what_is:
+- Hawk is an AML transaction-monitoring and screening company founded in 2018 and headquartered in Munich, Germany, by CEO Tobias Schweiger and Wolfgang Berner (formerly branded HAWK:AI). Backed by €51.8M in Series C funding led by One Peak (with earlier backing from Macquarie, Rabobank, and others), it serves 80+ clients globally, from Tier-1 banks to mid-market fintechs including Ecobank, VakifBank International, and Worldline.
+features:
+- AML transaction monitoring combining rules and behavioral AI.
+- Payments and customer screening against sanctions/watchlists.
+- Transaction fraud detection.
+- Customer risk rating using static and dynamic data.
+- Patent-pending Explainable AI for audit-ready decisioning.
+- Cross-institution pattern-data pooling and sharing (network effect).
+pricing:
+  summary: Hawk does not publish pricing; its AML transaction-monitoring platform is licensed to financial institutions based on volume and module selection.
+  plans:
+  - tier: Enterprise Quote
+    price: Custom
+    note: Transaction-monitoring platform licensing
+    extra: Not publicly disclosed — contact sales
+  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
+  verified: null
+  items: []
+facts:
+- label: From
+  value: Custom quote
+  source: null
+- label: Effective
+  value: Not disclosed
+  source: null
+- label: Founded
+  value: '2018'
+  source: null
+- label: HQ
+  value: Munich, Germany
+  source: null
+- label: Regions
+  value: Global
+  source: null
+- label: Funding
+  value: €51.8M Series C (One Peak)
+  source: null
+pros:
+- Explainable AI built for regulator-facing audit transparency
+- Cross-institution pattern-sharing network creates a genuine network effect against novel crime
+- Reported ~90% alert accuracy and 50–70% fewer false positives
+cons:
+- Enterprise/mid-market focus, not built for very small teams
+- No published pricing
+- Transaction-monitoring/AML focus, not document-first identity verification
+alternatives:
+- slug: feedzai
+  name: Feedzai
+  best_for: Best for Payment Fraud at Scale
+- slug: complyadvantage
+  name: ComplyAdvantage
+  best_for: Best for Sanctions/PEP Data
+- slug: nice-actimize
+  name: NICE Actimize
+  best_for: Broadest Enterprise Suite
+choose_instead:
+- slug: feedzai
+  text: you need Tier-1 bank-scale, real-time payment-fraud detection specifically.
+- slug: complyadvantage
+  text: you want a larger proprietary sanctions/PEP database over transaction-monitoring depth.
+- slug: nice-actimize
+  text: you want the widest end-to-end financial-crime product suite.
+user_reviews:
+  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  praise:
+  - Explainability (frequently cited) — reviewers highlight audit-ready reasoning behind AI-flagged alerts.
+  - Network effect — users note pattern-sharing across institutions catching novel fraud faster.
+  criticize:
+  - Scale fit — some reviewers note it's built for mid-market/enterprise, not the smallest teams.
+  - Pricing opacity — no published rate card.
+  by_profile:
+  - Tier-1 and mid-market banks value Hawk's explainable-AI audit trail for regulators.
+  - Payment companies benefit from the cross-institution pattern-sharing network.
+  - Very small teams typically evaluate lighter-weight, self-serve AML tools instead.
+faq:
+- q: How much does Hawk cost?
+  a: Hawk does not publish pricing; its transaction-monitoring platform is licensed to financial institutions based on volume and module selection.
+- q: What is explainable AI in Hawk's platform?
+  a: Hawk's patent-pending Explainable AI produces audit-ready reasoning behind AI-flagged alerts, aimed at satisfying regulator scrutiny.
+- q: What is Hawk's pattern-sharing network?
+  a: Hawk pools and shares transaction pattern data across client institutions, creating a network effect that helps catch novel fraud and money-laundering patterns faster.
+- q: Who uses Hawk?
+  a: Hawk serves more than 80 clients globally, from Tier-1 banks to mid-market fintechs, including Ecobank, VakifBank International, and Worldline.
+- q: What is the best alternative to Hawk?
+  a: Feedzai is the best alternative for Tier-1 bank-scale real-time payment fraud. ComplyAdvantage is the closest fit for sanctions/PEP data depth.
+- q: Who are Hawk's main competitors?
+  a: Hawk competes with Feedzai, ComplyAdvantage, and NICE Actimize, differentiating through explainable AI and cross-institution pattern sharing.
+segments: []
+capabilities: {}
+certifications: []
+user_ratings: []
+use_case_verdicts: []
+score_breakdown: []
+hands_on: null
+sources: []
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as: []
+legacy_issues:
+- editorial_note
+- screenshot_placeholder
+legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against Hawk AI's official pricing page and profiles before this page goes live.

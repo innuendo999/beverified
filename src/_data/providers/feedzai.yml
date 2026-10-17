@@ -1,0 +1,130 @@
+slug: feedzai
+name: Feedzai
+alternate_names: []
+status: published
+seo:
+  title: 'Feedzai Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Feedzai review: enterprise payment-fraud and transaction-monitoring platform protecting $8T+ annually across Tier-1 banks. Features, pricing, pros & cons, alternatives.'
+  h1: 'Feedzai Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/feedzai.svg
+  background: '#835AEB'
+tagline: Enterprise payment-fraud and transaction-monitoring platform for Tier-1 banks
+score: 4.6
+grade: Great
+primary_category: aml/banks
+legacy_rank_claim: 'ranked #2 in AML'
+categories:
+- aml/banks
+- aml
+link:
+  url: https://feedzai.com
+  type: null
+  legacy_rel: nofollow sponsored
+reviewer:
+  name: Elena Marsh
+  credential: CAMS
+last_verified: '2026-07-25'
+verdict: 'Feedzai operates at a different scale than most of this batch: real-time machine-learning fraud detection deployed across roughly 80% of the Fortune 500 and four of North America''s five largest banks, protecting more than $8 trillion in transactions annually by the company''s own figures. That scale is built for tier-1 institutions — pricing is enterprise-only, and integration timelines reflect it.'
+what_is:
+- Feedzai is a payment-fraud detection and transaction-monitoring company founded in 2011 and headquartered in Coimbra, Portugal, with a US headquarters in San Mateo, California, and an office in the UK. Led by CEO Nuno Sebastião alongside co-founders Pedro Bizarro and Paulo Marques, Feedzai became a unicorn in 2021 and, by its own figures, protects more than $8 trillion in transactions annually across roughly 80% of the Fortune 500 and four of the five largest banks in North America.
+features:
+- Real-time machine-learning transaction fraud detection.
+- RiskOps platform combining fraud detection, case management, and risk orchestration.
+- Device intelligence layered into transaction scoring.
+- Customizable fraud-detection workflows per institution.
+- Transaction scoring across the full customer lifecycle, not just onboarding.
+- Built for the volume and latency requirements of Tier-1 banks and card networks.
+pricing:
+  summary: Feedzai does not publish pricing; enterprise contracts are quoted through sales. Its cost structure and implementation model target tier-1 banks and card networks rather than early-stage teams.
+  plans:
+  - tier: Enterprise Quote
+    price: Custom
+    note: Enterprise contracts via sales, sized for tier-1 institutions
+    extra: Contact sales for a quote
+  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as third-party estimates are not the vendor''s official rate.'
+  verified: null
+  items: []
+facts:
+- label: From
+  value: Custom quote
+  source: null
+- label: Effective
+  value: Not disclosed
+  source: null
+- label: Founded
+  value: '2011'
+  source: null
+- label: HQ
+  value: 'Coimbra, Portugal (US HQ: San Mateo, CA)'
+  source: null
+- label: Regions
+  value: Global
+  source: null
+- label: Scale
+  value: $8T+ protected annually
+  source: null
+pros:
+- Massive proven scale — deployed at ~80% of the Fortune 500 and 4 of the top 5 North American banks
+- Real-time ML fraud detection built for very high transaction volumes
+- Full-lifecycle transaction scoring, not just at onboarding
+cons:
+- Enterprise-only pricing, not accessible for smaller teams
+- Overkill for companies below tier-1/tier-2 transaction volume
+- Longer implementation timelines than lighter-weight fraud tools
+alternatives:
+- slug: seon
+  name: SEON
+  best_for: Best for Pre-KYC Fraud Signals
+- slug: complyadvantage
+  name: ComplyAdvantage
+  best_for: Best for Sanctions/PEP Data
+- slug: aml
+  name: Sardine
+  best_for: Device-Risk Fraud Scoring
+choose_instead:
+- slug: seon
+  text: you want a lighter-weight, faster-to-deploy fraud and digital-footprint tool instead of a full enterprise RiskOps platform.
+- slug: complyadvantage
+  text: watchlist and adverse-media screening depth matters more than real-time payment-fraud scoring.
+user_reviews:
+  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  praise:
+  - Scale and reliability (frequently cited) — enterprise reviewers highlight consistent performance at very high transaction volumes.
+  - Real-time detection — reviewers note the ML models catch fraud patterns quickly across large datasets.
+  criticize:
+  - Accessibility — the enterprise-only pricing and implementation model puts it out of reach for smaller teams.
+  - Implementation time — some reviews note longer setup timelines than lighter fraud tools.
+  by_profile:
+  - Tier-1 banks and card networks are Feedzai's core customer profile.
+  - Large marketplaces adopt RiskOps for full-lifecycle transaction risk, not just onboarding.
+  - Smaller fintechs typically look to SEON or ComplyAdvantage instead, given Feedzai's enterprise-only pricing.
+faq:
+- q: How much does Feedzai cost?
+  a: Feedzai does not publish pricing. Enterprise contracts are quoted through sales, and its cost structure is built for tier-1 banks and card networks rather than early-stage teams.
+- q: Is Feedzai good for startups?
+  a: Not typically. Feedzai's enterprise-only pricing and implementation model target tier-1 institutions; smaller teams usually look at lighter-weight tools like SEON.
+- q: What is RiskOps?
+  a: RiskOps is Feedzai's platform combining real-time fraud detection, case management, and risk orchestration into one workflow across the customer lifecycle.
+- q: How many banks use Feedzai?
+  a: By the company's own figures, Feedzai is deployed at roughly 80% of the Fortune 500 and four of the five largest banks in North America, protecting more than $8 trillion in transactions annually.
+- q: What is the best alternative to Feedzai?
+  a: SEON is the best alternative for a lighter-weight, faster-to-deploy fraud tool. ComplyAdvantage is the closest fit if sanctions/PEP screening depth matters more than payment-fraud scoring.
+- q: Who are Feedzai's main competitors?
+  a: Feedzai competes with SEON and ComplyAdvantage on the fraud/AML side, differentiating through its scale and focus on real-time payment fraud for the largest financial institutions.
+segments: []
+capabilities: {}
+certifications: []
+user_ratings: []
+use_case_verdicts: []
+score_breakdown: []
+hands_on: null
+sources: []
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as: []
+legacy_issues:
+- editorial_note
+- screenshot_placeholder
+legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every third-party estimate above directly against Feedzai's official pricing page and profiles before this page goes live.

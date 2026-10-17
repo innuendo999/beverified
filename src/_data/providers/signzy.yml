@@ -1,0 +1,137 @@
+slug: signzy
+name: Signzy
+alternate_names: []
+status: published
+seo:
+  title: 'Signzy Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Signzy review: no-code KYC/KYB builder built for India''s BFSI market, distributed globally via Mastercard. Features, pricing, pros & cons, alternatives.'
+  h1: 'Signzy Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/signzy.png
+  background: '#7247DE'
+tagline: No-code KYC/KYB builder built for India's BFSI market, distributed globally via Mastercard
+score: 4.4
+grade: Very Good
+primary_category: e-kyc
+legacy_rank_claim: 'ranked #16 in Identity Verification'
+categories:
+- identity-verification
+- kyb
+- e-kyc
+link:
+  url: https://signzy.com
+  type: null
+  legacy_rel: nofollow sponsored
+reviewer:
+  name: Elena Marsh
+  credential: CAMS
+last_verified: '2026-07-29'
+verdict: Signzy's no-code visual workflow builder is deeply specialized for India — Aadhaar e-KYC, V-CIP video verification, and GSTIN business lookups — while a 2020 Mastercard alliance extends its video-KYC distribution globally. It's the strongest option here for India-specific BFSI compliance, though its depth outside that market requires more configuration.
+what_is:
+- 'Signzy is a no-code KYC/KYB/AML platform founded in 2015 in Bengaluru, India, by an IIT-trained trio: CEO Ankit Ratan, Arpit Ratan, and Ankur Pandey, having raised more than $38.7M from investors including Kalaari, SAP, and Mastercard. It serves the largest Indian banks, 10 Fortune 30 companies, and a top-3 US acquiring bank, distributing its video-KYC technology globally through a 2020 Mastercard alliance.'
+features:
+- No-code visual workflow builder for KYC/KYB flows.
+- Individual KYC — V-CIP video verification, Aadhaar e-KYC, face match, document OCR.
+- Business KYC/KYB — GSTIN lookups, MCA director checks, UBO identification, business address verification.
+- AML and sanctions screening.
+- Fraud monitoring, expanded after its 2024 acquisition of Difenz.
+- Distribution via Microsoft Azure Marketplace and Mastercard's global alliance.
+pricing:
+  summary: Signzy's India-market pricing is reported by third parties at roughly ₹5–₹35 per AML/sanctions check plus a ₹2–15 lakh annual platform commitment for the no-code builder; verify current rates directly with Signzy, especially outside India.
+  plans:
+  - tier: Per-Check (India, reported)
+    price: ₹5–₹35 / check
+    note: AML/sanctions screening, third-party reported
+    extra: null
+  - tier: Platform Fee (India, reported)
+    price: ₹2–15 lakh / yr
+    note: No-code platform enterprise commit, third-party reported
+    extra: Contact sales for global pricing
+  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
+  verified: null
+  items: []
+facts:
+- label: From
+  value: ₹5/check (India, reported)
+  source: null
+- label: Effective
+  value: Verify before publish
+  source: null
+- label: Founded
+  value: '2015'
+  source: null
+- label: HQ
+  value: Bengaluru, India
+  source: null
+- label: Regions
+  value: India, global via Mastercard
+  source: null
+- label: Funding
+  value: $38.7M+ raised (Kalaari, SAP, Mastercard)
+  source: null
+pros:
+- 'Deep India-specific coverage: Aadhaar e-KYC, GSTIN, V-CIP video verification'
+- No-code drag-and-drop builder accessible to BFSI compliance teams
+- Global distribution reach via its Mastercard alliance
+cons:
+- Depth is concentrated in India; other markets need more configuration
+- Enterprise-commit platform fee structure, per reported pricing
+- Younger global brand outside India
+alternatives:
+- slug: idmerit
+  name: IDMERIT
+  best_for: Broadest Budget Coverage
+- slug: complycube
+  name: ComplyCube
+  best_for: API-First Budget Pick
+- slug: kychub
+  name: KYC Hub
+  best_for: No-Code AML Orchestration
+choose_instead:
+- slug: idmerit
+  text: you need lower-cost, broad multi-country coverage rather than India-specific depth.
+- slug: complycube
+  text: you want simpler API-first integration without India-specific regulatory depth.
+- slug: kychub
+  text: you want no-code orchestration across the full AML lifecycle, not just KYC/KYB.
+user_reviews:
+  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  praise:
+  - India-market depth (frequently cited) — reviewers highlight Aadhaar/GSTIN/V-CIP coverage as best-in-class for the market.
+  - No-code builder — users note compliance teams can configure flows without engineering support.
+  criticize:
+  - Non-India depth — some reviewers note more setup is needed for markets outside India.
+  - Platform-fee structure — the enterprise-commit model is a consideration for smaller teams.
+  by_profile:
+  - Indian banks and BFSI institutions are Signzy's deepest, longest-standing customer base.
+  - Fortune 30 companies use its Mastercard-distributed video-KYC technology globally.
+  - Businesses outside India with no India-specific needs often evaluate other no-code builders first.
+faq:
+- q: How much does Signzy cost?
+  a: Signzy's India-market pricing is reported by third parties at roughly ₹5–₹35 per AML/sanctions check plus a ₹2–15 lakh annual platform fee; verify current rates directly with Signzy.
+- q: Does Signzy support Aadhaar verification?
+  a: Yes. Signzy supports Aadhaar e-KYC and V-CIP (video customer identification process) alongside document OCR and face match.
+- q: Does Signzy verify businesses?
+  a: Yes, Signzy's KYB tools include GSTIN lookups, MCA director checks, UBO identification, and business address verification.
+- q: How does Signzy distribute globally?
+  a: Signzy distributes its video-KYC technology globally through a 2020 alliance with Mastercard.
+- q: What is the best alternative to Signzy?
+  a: IDMERIT is the best alternative for broader, lower-cost multi-country coverage. KYC Hub is the closest fit for no-code AML lifecycle orchestration.
+- q: Who are Signzy's main competitors?
+  a: Signzy competes with IDMERIT, ComplyCube, and KYC Hub, differentiating through deep India-specific regulatory coverage.
+segments: []
+capabilities: {}
+certifications: []
+user_ratings: []
+use_case_verdicts: []
+score_breakdown: []
+hands_on: null
+sources: []
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as: []
+legacy_issues:
+- editorial_note
+- screenshot_placeholder
+legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against Signzy's official pricing page and profiles before this page goes live.

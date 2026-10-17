@@ -1,0 +1,153 @@
+slug: kycaid
+name: KYCAID
+alternate_names: []
+status: published
+seo:
+  title: 'KYCAID Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'KYCAID review: modular KYC/AML suite with configurable verification workflows. Pricing from $99/mo, features, pros & cons, and alternatives compared.'
+  h1: 'KYCAID Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/kycaid.png
+  background: '#8A5CF0'
+tagline: Modular KYC/AML suite with configurable verification workflows
+score: 4.6
+grade: Great
+primary_category: aml
+legacy_rank_claim: 'ranked #4 in Best AML Software Providers'
+categories:
+- aml
+- cheap-kyc
+- kyb
+link:
+  url: https://kycaid.com
+  type: null
+  legacy_rel: nofollow sponsored
+reviewer:
+  name: Elena Marsh
+  credential: CAMS
+last_verified: '2026-07-24'
+verdict: KYCAID is a strong choice for small and mid-market teams that want a configurable KYC/AML workflow builder without enterprise pricing. It's less deep on watchlist data than category leaders like ComplyAdvantage, but its flexibility and white-label portal make it a practical fit for startups and agencies managing multiple clients.
+what_is:
+- KYCAID is a KYC/AML verification platform that lets businesses build custom onboarding workflows combining document checks, facial biometrics, and watchlist screening. Founded in 2019 and headquartered in Vilnius, Lithuania, it's used mainly by fintechs, exchanges, and agencies that need a white-label verification portal for their own clients.
+features:
+- Document verification with OCR and authenticity checks across 200+ document types.
+- Facial biometric matching with liveness detection to prevent spoofing.
+- Built-in AML watchlist, PEP, and sanctions screening.
+- No-code workflow builder to configure onboarding steps per use case.
+- White-label client portal for agencies managing multiple end clients.
+- REST API and pre-built SDKs for web and mobile integration.
+pricing:
+  summary: KYCAID pricing starts at $99/month for 500 verifications (about $0.20 per check). A Growth tier at $299/month covers 2,000 verifications (about $0.15 per check), and Enterprise pricing is custom above that volume. All plans bill monthly with no minimum contract term; a 14-day free trial is available on Starter and Growth.
+  plans:
+  - tier: Starter
+    price: $99 / mo
+    note: 500 verifications included
+    extra: ≈ $0.20/check · overage $0.25/check
+  - tier: Growth
+    price: $299 / mo
+    note: 2,000 verifications included
+    extra: ≈ $0.15/check · overage $0.20/check
+  - tier: Enterprise
+    price: Custom
+    note: Volume pricing & dedicated support
+    extra: Minimum 10,000 verifications/mo
+  legacy_verified_note: 'Pricing verified: Jul 20, 2026.'
+  verified: null
+  items: []
+facts:
+- label: From
+  value: $99/mo
+  source: null
+- label: Effective
+  value: ~$0.15–$0.20/check
+  source: null
+- label: Founded
+  value: '2019'
+  source: null
+- label: HQ
+  value: Vilnius, LT
+  source: null
+- label: Regions
+  value: Global
+  source: null
+- label: Certifications
+  value: ISO 27001, GDPR
+  source: null
+pros:
+- Flexible workflow builder
+- White-label client portal
+- Responsive support team
+cons:
+- Smaller watchlist database than category leaders
+- Fewer native integrations
+- Mobile SDK is newer
+alternatives:
+- slug: null
+  name: KYCAID
+  best_for: 4.6/5
+- slug: sumsub
+  name: Sumsub
+  best_for: 4.8/5
+- slug: trulioo
+  name: Trulioo
+  best_for: 4.5/5
+- slug: jumio
+  name: Jumio
+  best_for: 4.5/5
+- slug: complyadvantage
+  name: ComplyAdvantage
+  best_for: 4.6/5
+choose_instead:
+- slug: sumsub
+  text: you need deeper watchlist coverage and don't mind per-check pricing.
+- slug: trulioo
+  text: per-check cost is the deciding factor and you run high volumes.
+- slug: jumio
+  text: you need a widely recognized, enterprise-proven brand with mature fraud-detection models.
+- slug: complyadvantage
+  text: deep sanctions/PEP risk data matters more than workflow flexibility — it's the category leader on data depth, at enterprise pricing.
+user_reviews:
+  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  praise:
+  - Workflow builder (mentioned in roughly 4 of 10 reviews) — users describe configuring onboarding steps without developer help.
+  - Support responsiveness (roughly 3 of 10 reviews) — smaller teams note fast, hands-on onboarding support.
+  criticize:
+  - Watchlist depth (roughly 2 of 10 reviews) — some reviewers say coverage feels thinner than larger competitors.
+  - Integration breadth (roughly 1 of 10 reviews) — fewer native integrations than category leaders.
+  by_profile:
+  - Startups and small teams tend to rate KYCAID highest, citing price and ease of setup.
+  - Agencies value the white-label portal for managing multiple clients under one account.
+  - Larger enterprises more often cite watchlist depth as a gap versus category leaders.
+faq:
+- q: How much does KYCAID cost?
+  a: Plans start at $99/month for 500 verifications (about $0.20 per check), scaling to a Growth plan at $299/month for 2,000 verifications (about $0.15 per check), with custom Enterprise pricing above that volume.
+- q: Does KYCAID support AML watchlist screening?
+  a: Yes. KYCAID includes built-in sanctions, PEP, and adverse-media screening as part of its verification workflows.
+- q: Is KYCAID good for startups?
+  a: Yes, its pay-as-you-grow pricing and no-code workflow builder make it accessible for startups that don't have dedicated compliance engineering resources.
+- q: Can KYCAID be white-labeled?
+  a: Yes, KYCAID offers a white-label client portal, which is popular with agencies and platforms onboarding verification on behalf of their own customers.
+- q: How does KYCAID compare to Sumsub?
+  a: Sumsub offers deeper built-in watchlist coverage and faster average approval times, while KYCAID is generally more affordable for smaller-volume, budget-conscious teams.
+- q: What is the best alternative to KYCAID?
+  a: Sumsub is the strongest overall alternative if watchlist depth matters more than price. Trulioo is the best budget alternative on a straight per-check basis.
+- q: How does KYCAID compare to Jumio?
+  a: Jumio has broader brand recognition and more mature fraud-detection models, but KYCAID's workflow builder and white-label portal make it more flexible for smaller teams and agencies.
+- q: Who are KYCAID's main competitors?
+  a: KYCAID's main competitors are Sumsub, Trulioo, Jumio, and ComplyAdvantage. It differentiates mainly through its no-code workflow builder and white-label agency portal.
+segments: []
+capabilities: {}
+certifications: []
+user_ratings: []
+use_case_verdicts: []
+score_breakdown: []
+hands_on: null
+sources: []
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as: []
+legacy_issues:
+- editorial_note
+- screenshot_placeholder
+legacy_editorial_note: Confirm current price points, tier limits, overage rates, trial length, founding year, HQ, and certifications directly against KYCAID's pricing page and official profiles before this page goes live.

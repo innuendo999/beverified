@@ -1,0 +1,140 @@
+slug: complyadvantage
+name: ComplyAdvantage
+alternate_names: []
+status: published
+seo:
+  title: 'ComplyAdvantage Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'ComplyAdvantage review: AML screening and financial-crime intelligence platform, not an identity-verification tool. Pricing from $99.99/mo, features, pros & cons, alternatives.'
+  h1: 'ComplyAdvantage Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/complyadvantage.jpg
+  background: '#9B6EF3'
+tagline: AML screening and financial-crime intelligence — not an identity-verification tool
+score: 4.6
+grade: Great
+primary_category: aml
+legacy_rank_claim: 'ranked #1 in AML'
+categories:
+- aml
+- aml/banks
+link:
+  url: https://complyadvantage.com
+  type: null
+  legacy_rel: nofollow sponsored
+reviewer:
+  name: Elena Marsh
+  credential: CAMS
+last_verified: '2026-07-25'
+verdict: ComplyAdvantage is a sanctions, PEP, and adverse-media screening platform, not a document-verification company — a distinction that matters when comparing it to IDV vendors in this category. Its proprietary financial-crime database and free ComplyLaunch tier for early-stage startups make it a strong AML data layer, typically deployed alongside a separate identity-verification provider rather than instead of one.
+what_is:
+- ComplyAdvantage is an AML data and financial-crime intelligence platform founded in 2014 by Charles Delingpole (previously known as Mimiro), headquartered in London. Its Mesh platform serves more than 1,000 enterprise clients with proprietary sanctions, PEP, and adverse-media screening data — it does not perform document or biometric identity verification.
+features:
+- Customer and business screening against sanctions, PEP, RCA, and adverse-media sources.
+- Real-time transaction monitoring with AI-driven risk scoring.
+- Agentic alert triage to reduce manual review workload.
+- Explainable AI governance aligned with the EU AI Act and DORA.
+- Case management with SAR (Suspicious Activity Report) filing support.
+- Clients report up to 70% fewer false positives, per company-reported figures.
+pricing:
+  summary: ComplyAdvantage's Starter plan begins at $99.99/month for 100 entities, aimed at low-volume screening and monitoring, with a next tier around $119/month and custom Enterprise pricing above that. Setup takes about one business day and plans can be canceled anytime. ComplyLaunch offers free access for qualifying early-stage startups.
+  plans:
+  - tier: Starter
+    price: $99.99 / mo
+    note: 100 entities — low-volume screening/monitoring
+    extra: Cancel anytime; setup in 1 business day
+  - tier: Growth
+    price: ~$119 / mo
+    note: Next tier up in entity volume
+    extra: Cancel anytime
+  - tier: Enterprise
+    price: Custom
+    note: Volume pricing & dedicated support
+    extra: 'ComplyLaunch: free for qualifying early-stage startups'
+  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as third-party estimates are not the vendor''s official rate.'
+  verified: null
+  items: []
+facts:
+- label: From
+  value: $99.99/mo
+  source: null
+- label: Effective
+  value: $99.99–$119/mo (entry tiers)
+  source: null
+- label: Founded
+  value: '2014'
+  source: null
+- label: HQ
+  value: London, UK
+  source: null
+- label: Regions
+  value: Global
+  source: null
+- label: Clients
+  value: 1,000+ enterprise clients
+  source: null
+pros:
+- Proprietary financial-crime database with real screening depth
+- Transparent entry-level pricing plus a free ComplyLaunch tier for startups
+- Modern AI/agentic architecture built for explainability under EU AI Act and DORA
+cons:
+- Does not perform identity verification — needs a separate IDV vendor alongside it
+- Initial setup can be involved, per user reviews
+- Alert re-scoring workflows have room for improvement, per user reviews
+alternatives:
+- slug: sumsub
+  name: Sumsub
+  best_for: Best for Combined IDV+AML
+- slug: seon
+  name: SEON
+  best_for: Best for Pre-KYC Fraud Signals
+- slug: feedzai
+  name: Feedzai
+  best_for: Best for Payment Fraud at Scale
+choose_instead:
+- slug: sumsub
+  text: you want identity verification and AML screening in a single platform instead of two vendors.
+- slug: seon
+  text: device and digital-footprint fraud signals matter more than sanctions/PEP data depth.
+- slug: feedzai
+  text: you need enterprise-scale, real-time transaction-fraud detection for a Tier-1 bank or card network.
+user_reviews:
+  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  praise:
+  - Screening data depth (frequently cited) — reviewers point to strong sanctions/PEP/adverse-media coverage.
+  - Reduced false positives — clients report meaningfully fewer false positives after adopting the AI risk-scoring layer.
+  criticize:
+  - Setup complexity — some reviews describe the initial configuration as more involved than expected.
+  - Scope limitation — reviewers note it must be paired with a separate IDV tool for document/biometric verification.
+  by_profile:
+  - Banks and regulated fintechs use ComplyAdvantage as their core AML screening and monitoring layer.
+  - Early-stage startups access core screening functionality free through ComplyLaunch.
+  - Teams needing full onboarding typically pair it with a document-verification provider like Sumsub or Jumio.
+faq:
+- q: How much does ComplyAdvantage cost?
+  a: ComplyAdvantage's Starter plan begins at $99.99/month for 100 entities, with a next tier around $119/month and custom Enterprise pricing above that. Setup takes about one business day.
+- q: Does ComplyAdvantage verify identity documents?
+  a: No. ComplyAdvantage is an AML screening and financial-crime data platform — it does not perform document or biometric identity verification, and is typically used alongside a separate IDV provider.
+- q: Is there a free option for startups?
+  a: Yes. ComplyLaunch gives qualifying early-stage startups free access to ComplyAdvantage's core screening functionality.
+- q: Does ComplyAdvantage do transaction monitoring?
+  a: Yes. Real-time transaction monitoring with AI-driven risk scoring is a core part of the Mesh platform, alongside sanctions, PEP, and adverse-media screening.
+- q: What is the best alternative to ComplyAdvantage?
+  a: Sumsub is the best alternative if you want identity verification and AML screening bundled into one platform. SEON is the closest fit if pre-KYC device and fraud signals matter more than sanctions/PEP data depth.
+- q: Who are ComplyAdvantage's main competitors?
+  a: ComplyAdvantage competes with SEON and Feedzai on AML/fraud data, and with Sumsub for teams that want combined IDV and AML screening in one platform.
+segments: []
+capabilities: {}
+certifications: []
+user_ratings: []
+use_case_verdicts: []
+score_breakdown: []
+hands_on: null
+sources: []
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as: []
+legacy_issues:
+- editorial_note
+- screenshot_placeholder
+legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every third-party estimate above directly against ComplyAdvantage's official pricing page and profiles before this page goes live.

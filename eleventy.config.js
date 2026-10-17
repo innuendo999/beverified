@@ -1,4 +1,9 @@
+import yaml from "js-yaml";
+
 export default function (eleventyConfig) {
+  // YAML data files in src/_data (providers, categories, rankings).
+  eleventyConfig.addDataExtension("yml,yaml", (contents) => yaml.load(contents));
+
   // Static files copied as-is.
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/CNAME");

@@ -1,0 +1,132 @@
+slug: sanction-scanner
+name: Sanction Scanner
+alternate_names: []
+status: published
+seo:
+  title: 'Sanction Scanner Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Sanction Scanner review: API-first AML screening built for mid-market, without enterprise price tags. Features, pricing, pros & cons, alternatives.'
+  h1: 'Sanction Scanner Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/sanction-scanner.png
+  background: '#5E35D6'
+tagline: API-first AML screening built for mid-market, without enterprise price tags
+score: 4.3
+grade: Good
+primary_category: aml
+legacy_rank_claim: 'ranked #14 in AML'
+categories:
+- aml
+- crypto
+link:
+  url: https://sanctionscanner.com
+  type: null
+  legacy_rel: nofollow sponsored
+reviewer:
+  name: Elena Marsh
+  credential: CAMS
+last_verified: '2026-07-29'
+verdict: 'Sanction Scanner''s pitch is accessibility: enterprise-grade sanctions, PEP, and adverse-media screening without a six-figure contract or a six-month implementation. Backed by Mastercard Lighthouse Turkiye and TT Ventures, and named to Deloitte''s Turkey Technology Fast 50 in 2025, it''s a reasonable mid-market fit, though its scale and screening depth trail category giants.'
+what_is:
+- Sanction Scanner is an AML screening company founded around 2018–2019 (sources vary) and headquartered with offices in both Istanbul, Turkey, and London, UK, led by founder and CEO Fatih Coskun with roughly 26–27 employees. Backed by Mastercard Lighthouse Turkiye and TT Ventures, it serves 800+ clients across 70+ countries, including banks, neobanks, payment companies, fintechs, crypto exchanges, insurance, and lending businesses.
+features:
+- Real-time AML name screening — sanctions, PEP, and adverse media.
+- Transaction monitoring and fraud detection.
+- Customer risk assessment with adjustable risk parameters.
+- API-first architecture for fast integration.
+- Minimal-configuration setup aimed at quick go-live.
+- Coverage across 70+ countries and multiple regulated sectors.
+pricing:
+  summary: Sanction Scanner's entry pricing is reported by third parties at around €990/month for its API-first, mid-market-focused plan; verify current rates directly with Sanction Scanner before publishing specific figures.
+  plans:
+  - tier: Entry (reported)
+    price: €990 / mo
+    note: Third-party reported entry rate, API-first mid-market plan
+    extra: Higher tiers for larger volume
+  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
+  verified: null
+  items: []
+facts:
+- label: From
+  value: ~€990/mo (3rd-party est.)
+  source: null
+- label: Effective
+  value: Verify before publish
+  source: null
+- label: Founded
+  value: 2018–2019
+  source: null
+- label: HQ
+  value: Istanbul, Turkey & London, UK
+  source: null
+- label: Regions
+  value: 70+ countries
+  source: null
+- label: Recognition
+  value: Deloitte Turkey Fast 50 (2025)
+  source: null
+pros:
+- Accessible entry pricing for mid-market teams
+- Fast setup with minimal configuration required
+- API-first architecture built for quick integration
+cons:
+- Smaller team and scale than category giants
+- Screening depth trails enterprise AML platforms like NICE Actimize or ComplyAdvantage
+- Data-residency considerations for some EU clients given its Turkey/UK dual presence
+alternatives:
+- slug: complyadvantage
+  name: ComplyAdvantage
+  best_for: Best for Sanctions/PEP Data
+- slug: membercheck
+  name: MemberCheck
+  best_for: Four-Tier PEP Screening
+- slug: namescan
+  name: NameScan
+  best_for: On-Demand SME Screening
+choose_instead:
+- slug: complyadvantage
+  text: you need enterprise-scale proprietary financial-crime data depth.
+- slug: membercheck
+  text: deeper PEP/RCA tiering matters more than API-first mid-market pricing.
+- slug: namescan
+  text: you want simple on-demand checks rather than a full mid-market AML platform.
+user_reviews:
+  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  praise:
+  - Setup speed (frequently cited) — reviewers highlight quick, low-configuration onboarding.
+  - Pricing accessibility — users note entry pricing is reasonable for mid-market budgets.
+  criticize:
+  - Scale — some reviewers note a smaller team relative to enterprise AML vendors.
+  - Screening depth — reviews suggest it trails the largest AML data platforms in coverage depth.
+  by_profile:
+  - Neobanks and fintechs value Sanction Scanner's accessible, fast-to-deploy screening.
+  - Crypto exchanges use it for real-time sanctions/PEP checks at reasonable cost.
+  - Enterprises needing the deepest screening data typically evaluate larger platforms.
+faq:
+- q: How much does Sanction Scanner cost?
+  a: Sanction Scanner's entry pricing is reported by third parties at around €990/month for its API-first plan; verify current rates directly with the vendor.
+- q: Where is Sanction Scanner based?
+  a: Sanction Scanner has offices in both Istanbul, Turkey, and London, UK, founded around 2018–2019 (sources vary on the exact year).
+- q: Who backs Sanction Scanner?
+  a: Sanction Scanner is backed by Mastercard Lighthouse Turkiye and TT Ventures.
+- q: How many clients does Sanction Scanner serve?
+  a: Sanction Scanner serves more than 800 clients across 70+ countries.
+- q: What is the best alternative to Sanction Scanner?
+  a: ComplyAdvantage is the best alternative for enterprise-scale sanctions/PEP data depth. MemberCheck is the closest fit for deeper four-tier PEP screening.
+- q: Who are Sanction Scanner's main competitors?
+  a: Sanction Scanner competes with ComplyAdvantage, MemberCheck, and NameScan, differentiating through accessible, API-first mid-market pricing.
+segments: []
+capabilities: {}
+certifications: []
+user_ratings: []
+use_case_verdicts: []
+score_breakdown: []
+hands_on: null
+sources: []
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as: []
+legacy_issues:
+- editorial_note
+- screenshot_placeholder
+legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against Sanction Scanner's official pricing page and profiles before this page goes live.

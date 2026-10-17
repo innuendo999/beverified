@@ -1,0 +1,93 @@
+slug: identity-verification
+url: /providers/identity-verification/
+seo:
+  title: Top Identity Verification Companies in 2026 | BeVerified
+  description: 'KYCAID, Onfido, Jumio, and Persona compared: the top identity verification companies in 2026, ranked on liveness accuracy, coverage, and account-lifecycle reach.'
+  h1: Top Identity Verification Companies in 2026
+breadcrumb_label: Top Identity Verification Companies
+quick_answer: KYCAID is the best overall identity verification platform for most businesses, since one workflow covers onboarding and ongoing re-verification. Onfido leads on biometric liveness for high-risk moments, and Jumio is the safest choice for global scale. We compared 4 providers on liveness accuracy, coverage, and lifecycle reach below.
+reviewer:
+  name: Priya Nathan
+  credential: CIPP/E
+last_verified: '2026-07-24'
+legacy_stats:
+- value: '4'
+  label: providers compared
+- value: 70%
+  label: less manual review, top vendors
+- value: Jul 2026
+  label: last updated
+explainer_html:
+- '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
+
+  <h2 style="font-size:19px;margin-bottom:10px;">What Identity Verification Covers Beyond Onboarding</h2>
+
+  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">Identity verification is the umbrella discipline that includes eKYC''s one-time onboarding check, but doesn''t stop there. The same document-and-biometric engine gets reused at login, before a high-risk transaction, or after a password reset — anywhere a business needs proof that the person acting is still the person who signed up. That ongoing use is why presentation-attack detection and deepfake resistance matter more here than at onboarding alone.</p>
+
+  <h3 style="font-size:14.5px;margin-bottom:10px;">Core capabilities compliance teams typically require</h3>
+
+  <ul style="margin:0 0 18px;padding-left:20px;font-size:14.5px;line-height:1.75;">
+
+  <li style="list-style:disc;">Document and biometric verification reused across the account lifecycle, not just at sign-up</li>
+
+  <li style="list-style:disc;">Liveness and presentation-attack detection (PAD) tuned against injection attacks and deepfakes</li>
+
+  <li style="list-style:disc;">Device and behavioral signals layered onto document/biometric checks for step-up authentication</li>
+
+  <li style="list-style:disc;">Privacy-by-design data handling for biometric templates</li>
+
+  </ul>
+
+  <div class="callout" style="margin-bottom:18px;">
+
+  <p><strong>Tip:</strong> teams that layer document fraud checks, biometrics, and device intelligence in a single API report up to 70% less manual review than teams running each check separately.</p>
+
+  </div>
+
+  <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from eKYC</h3>
+
+  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;"><a href="/providers/e-kyc/">eKYC</a> is the one-time gate at account opening. Identity verification is the broader, ongoing layer — the same vendor''s engine often powers both, but a business buying only eKYC may still need a separate contract for post-onboarding fraud checks.</p>
+
+  <h3 style="font-size:14.5px;margin-bottom:8px;">Regulatory context</h3>
+
+  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Key references: ISO/IEC 30107, the presentation-attack-detection standard for biometric systems; NIST SP 800-63, the US digital identity guidelines; and GDPR/CCPA privacy-by-design obligations that govern how biometric templates are stored.</p>
+
+  <a class="entity-card__cta" href="/methodology/">See how we evaluate every provider on this list in our full methodology →</a>
+
+  </section>'
+- '<section class="section-border-top" style="padding:28px 0;">
+
+  <h2 style="font-size:16px;margin-bottom:14px;">Related categories</h2>
+
+  <div style="display:flex;gap:8px;flex-wrap:wrap;">
+
+  <a class="tag-pill" href="/providers/e-kyc/" style="font-size:13px;padding:8px 14px;">eKYC</a>
+
+  <a class="tag-pill" href="/providers/aml/" style="font-size:13px;padding:8px 14px;">AML Software</a>
+
+  <a class="tag-pill" href="/providers/kyb/" style="font-size:13px;padding:8px 14px;">KYB (Know Your Business)</a>
+
+  <a class="tag-pill" href="/providers/crypto/" style="font-size:13px;padding:8px 14px;">Crypto KYC</a>
+
+  <a class="tag-pill" href="/providers/liveness-detection/" style="font-size:13px;padding:8px 14px;">Liveness Detection</a>
+
+  </div>
+
+  </section>'
+faq:
+- q: Is identity verification the same as KYC?
+  a: KYC is typically the onboarding-moment check. Identity verification is the broader discipline that includes onboarding but also covers login, high-risk transactions, and account-recovery moments throughout the relationship.
+- q: How do vendors detect deepfakes?
+  a: Presentation attack detection (PAD) analyzes texture, depth, and motion cues that synthetic or replayed video typically fails to reproduce, per the ISO/IEC 30107 testing standard.
+- q: When does identity verification run besides onboarding?
+  a: Common triggers include login from a new device, a high-value or high-risk transaction, and password or account-recovery requests.
+- q: What is presentation attack detection?
+  a: Presentation attack detection is the set of techniques biometric systems use to tell a live human from a photo, mask, deepfake, or injected video feed, standardized under ISO/IEC 30107.
+- q: Do identity verification vendors store biometric data?
+  a: Practices vary by vendor and jurisdiction. Under privacy-by-design principles required by GDPR and CCPA, most vendors store a mathematical template rather than the raw image, with defined retention limits.
+- q: How is NIST SP 800-63 relevant to identity verification?
+  a: NIST SP 800-63 defines US federal assurance levels for identity proofing and authentication, and many commercial identity verification vendors benchmark their own controls against it.
+adjacent: []
+capability_columns: []
+faq_templates: []
+legacy_issues: []

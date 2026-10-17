@@ -1,0 +1,134 @@
+slug: seon
+name: SEON
+alternate_names: []
+status: published
+seo:
+  title: 'SEON Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'SEON review: digital-footprint and device intelligence for fraud prevention and pre-KYC screening, from $699/mo. Features, pricing, pros & cons, alternatives.'
+  h1: 'SEON Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/seon.png
+  background: '#6A3FE8'
+tagline: Digital-footprint and device intelligence for fraud prevention and pre-KYC screening
+score: 4.5
+grade: Very Good
+primary_category: aml
+legacy_rank_claim: 'ranked #3 in AML'
+categories:
+- aml
+- crypto
+link:
+  url: https://seon.io
+  type: null
+  legacy_rel: nofollow sponsored
+reviewer:
+  name: Elena Marsh
+  credential: CAMS
+last_verified: '2026-07-25'
+verdict: 'SEON''s edge is signal, not documents: it scores fraud risk from email, phone, IP, device, and browser data before a user ever submits an ID. That makes it a strong pre-KYC layer and AML complement, but it''s not a document or biometric verification tool on its own — most teams pair it with a dedicated IDV platform.'
+what_is:
+- SEON is a fraud-prevention and AML platform founded in 2017 in Budapest by Tamás Kádár and Bence Jendruszák, now headquartered in Austin, Texas, with offices in Budapest, London, Singapore, and Jakarta. It serves more than 5,000 businesses, analyzing over 900 digital and device signals to score fraud risk — the company reports having helped prevent more than $300 billion in fraud losses.
+features:
+- Digital footprint and device intelligence across email, phone, IP, device, and browser signals.
+- Real-time fraud scoring at the point of onboarding.
+- Natural-language rule builder for configuring fraud logic without code.
+- Explainable AI scoring for audit and compliance review.
+- Unified fraud-prevention and AML screening in one workflow.
+- Pre-KYC screening and transaction monitoring.
+pricing:
+  summary: SEON's Starter plan begins at $699/month for entry-level fraud and AML screening; Premium pricing is custom above that, scaled to usage and feature needs.
+  plans:
+  - tier: Starter
+    price: $699 / mo
+    note: Entry-level fraud/AML screening
+    extra: Scales with usage
+  - tier: Premium
+    price: Custom
+    note: Full feature set, volume pricing
+    extra: Contact sales for a quote
+  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as third-party estimates are not the vendor''s official rate.'
+  verified: null
+  items: []
+facts:
+- label: From
+  value: $699/mo
+  source: null
+- label: Effective
+  value: From $699/mo (Premium custom)
+  source: null
+- label: Founded
+  value: '2017'
+  source: null
+- label: HQ
+  value: Austin, TX
+  source: null
+- label: Regions
+  value: Global
+  source: null
+- label: Clients
+  value: 5,000+ businesses
+  source: null
+pros:
+- Transparent Starter-tier pricing, unlike most AML/fraud-data competitors
+- Deep device and digital-footprint enrichment for pre-KYC screening
+- Fast to integrate as a fraud-scoring layer ahead of a full KYC flow
+cons:
+- Not a document or biometric identity-verification tool on its own
+- Premium-tier pricing is not published
+- Best used as a complement to a dedicated IDV platform, not a full replacement
+alternatives:
+- slug: complyadvantage
+  name: ComplyAdvantage
+  best_for: Best for Sanctions/PEP Data
+- slug: feedzai
+  name: Feedzai
+  best_for: Best for Payment Fraud at Scale
+- slug: aml
+  name: Sardine
+  best_for: Device-Risk Fraud Scoring
+choose_instead:
+- slug: complyadvantage
+  text: watchlist and adverse-media data depth matters more than pre-KYC device signals.
+- slug: feedzai
+  text: you need enterprise-scale, real-time payment-fraud detection built for Tier-1 banks.
+user_reviews:
+  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  praise:
+  - Digital-footprint signals (frequently cited) — reviewers highlight catching fraud before full KYC begins.
+  - Rule builder — users note configuring fraud rules without needing engineering support.
+  criticize:
+  - Document/biometric gap — some reviewers note it needs pairing with a separate IDV tool for full onboarding.
+  - Premium pricing — the higher tier requires a sales conversation with no published rate.
+  by_profile:
+  - Fintechs and marketplaces use SEON as a pre-KYC fraud filter ahead of a dedicated IDV step.
+  - Teams already using a document-verification platform add SEON specifically for device/digital-footprint signals.
+  - Very early-stage teams sometimes find the $699/mo Starter tier a meaningful commitment.
+faq:
+- q: How much does SEON cost?
+  a: SEON's Starter plan begins at $699/month for entry-level fraud and AML screening; Premium pricing is custom and scales with usage and feature needs.
+- q: Does SEON verify identity documents?
+  a: No. SEON is a fraud-prevention and digital-footprint intelligence platform, typically used ahead of or alongside a document-verification provider rather than as a replacement for one.
+- q: What signals does SEON analyze?
+  a: SEON analyzes more than 900 digital and device signals, including email, phone, IP, device, and browser data, to score fraud risk in real time.
+- q: Does SEON do AML screening?
+  a: Yes. SEON combines fraud-risk scoring with AML screening in one workflow, in addition to its pre-KYC digital-footprint analysis.
+- q: What is the best alternative to SEON?
+  a: ComplyAdvantage is the best alternative if sanctions and PEP watchlist data depth matters more than pre-KYC device signals. Feedzai is the closest fit for enterprise-scale payment-fraud detection.
+- q: Who are SEON's main competitors?
+  a: SEON competes with ComplyAdvantage and Feedzai on the fraud/AML side, differentiating through its digital-footprint and device-intelligence signals.
+segments: []
+capabilities: {}
+certifications: []
+user_ratings: []
+use_case_verdicts: []
+score_breakdown: []
+hands_on: null
+sources: []
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as: []
+legacy_issues:
+- editorial_note
+- screenshot_placeholder
+legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every third-party estimate above directly against SEON's official pricing page and profiles before this page goes live.

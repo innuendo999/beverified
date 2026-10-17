@@ -1,0 +1,132 @@
+slug: idenfy
+name: iDenfy
+alternate_names: []
+status: published
+seo:
+  title: 'iDenfy Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'iDenfy review: pay-per-approved identity verification with human review on every case. Features, pricing, pros & cons, alternatives.'
+  h1: 'iDenfy Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/idenfy.png
+  background: '#6A3FE8'
+tagline: Pay-per-approved pricing — you only pay for verifications that pass
+score: 4.5
+grade: Very Good
+primary_category: identity-verification
+legacy_rank_claim: 'ranked #14 in Identity Verification'
+categories:
+- identity-verification
+- kyb
+link:
+  url: https://www.idenfy.com
+  type: null
+  legacy_rel: nofollow sponsored
+reviewer:
+  name: Elena Marsh
+  credential: CAMS
+last_verified: '2026-07-28'
+verdict: 'iDenfy''s pricing model is its headline feature: you pay only for approved verifications, with rejected checks billed at nothing — a genuinely unusual structure in a category dominated by per-attempt or subscription pricing. Add human review of every case and it''s a strong fit for cost-conscious fintech, crypto, and gaming teams, even if its brand scale trails category leaders.'
+what_is:
+- iDenfy is an identity-verification company founded in 2017 (originally Identifikaciniai Projektai) and headquartered in Kaunas, Lithuania, co-founded by CEO Domantas Ciulde and Gediminas Ciulde. It serves fintech, crypto, gaming, and marketplace businesses with a three-layer AI and human-reviewed verification process, offering an EU-hosted option and templates for EEA national ID documents.
+features:
+- AI biometric, liveness, and document verification with human review on every case.
+- KYB and business verification.
+- Proxy detection and fraud scoring.
+- AML screening and ongoing monitoring.
+- NFC-based document verification.
+- Pay-per-approved pricing model — rejected verifications aren't billed.
+pricing:
+  summary: iDenfy bills only for approved verifications rather than every attempt — the company reports up to 70% savings versus pay-per-completed-verification models. Contact iDenfy directly for current per-approved rates.
+  plans:
+  - tier: Pay-Per-Approved
+    price: Custom
+    note: Billed only for approved verifications; rejected checks are free
+    extra: Contact for current rate
+  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
+  verified: null
+  items: []
+facts:
+- label: From
+  value: Pay-per-approved
+  source: null
+- label: Effective
+  value: Not disclosed
+  source: null
+- label: Founded
+  value: '2017'
+  source: null
+- label: HQ
+  value: Kaunas, Lithuania
+  source: null
+- label: Regions
+  value: EU-focused, global clients
+  source: null
+- label: Model
+  value: Pay-per-approved pricing
+  source: null
+pros:
+- Pay-per-approved pricing — rejected verifications cost nothing
+- Human review on every verification case
+- Competitive pricing against premium vendors, with strong API documentation
+cons:
+- Smaller brand and scale than category leaders
+- Mobile UX on low-spec devices is worth testing before committing, per reviews
+- Primary focus and case studies skew toward the EU market
+alternatives:
+- slug: sumsub
+  name: Sumsub
+  best_for: Editor's Choice
+- slug: complycube
+  name: ComplyCube
+  best_for: API-First Budget Pick
+- slug: shufti-pro
+  name: Shufti Pro
+  best_for: Broadest Coverage
+choose_instead:
+- slug: sumsub
+  text: you want a larger-scale, published per-check pricing platform.
+- slug: complycube
+  text: you want a comparably budget-friendly API-first alternative.
+- slug: shufti-pro
+  text: you need broader country and language coverage than a smaller EU-focused vendor.
+user_reviews:
+  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  praise:
+  - Pricing model (frequently cited) — reviewers highlight the pay-per-approved structure as predictable and fair.
+  - API documentation — users note clear, easy-to-implement docs.
+  criticize:
+  - Mobile performance — some reviews suggest testing UX on low-spec devices before committing.
+  - Brand scale — smaller than category leaders, which matters for some procurement processes.
+  by_profile:
+  - Cost-conscious fintech, crypto, and gaming teams value the pay-per-approved model.
+  - EU-based businesses benefit from EEA-specific document templates and EU hosting.
+  - Larger enterprises sometimes prefer a bigger-brand vendor for procurement reasons.
+faq:
+- q: How does iDenfy's pricing work?
+  a: iDenfy charges only for approved verifications — rejected checks aren't billed, which the company reports can save up to 70% versus pay-per-completed-verification pricing. Contact iDenfy for current rates.
+- q: Does iDenfy use human review?
+  a: Yes, every verification case at iDenfy includes a human review step alongside its AI-driven checks.
+- q: Does iDenfy support KYB?
+  a: Yes, iDenfy offers business verification (KYB) alongside individual identity checks.
+- q: Where is iDenfy based?
+  a: iDenfy is headquartered in Kaunas, Lithuania, and offers an EU-hosted option with EEA-specific document templates.
+- q: What is the best alternative to iDenfy?
+  a: Sumsub is the best alternative for larger scale and published pricing. ComplyCube is the closest fit for a comparably budget-friendly API-first option.
+- q: Who are iDenfy's main competitors?
+  a: iDenfy competes with Sumsub, ComplyCube, and Shufti Pro, differentiating through its pay-per-approved pricing and human-reviewed process.
+segments: []
+capabilities: {}
+certifications: []
+user_ratings: []
+use_case_verdicts: []
+score_breakdown: []
+hands_on: null
+sources: []
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as: []
+legacy_issues:
+- editorial_note
+- screenshot_placeholder
+legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against iDenfy's official pricing page and profiles before this page goes live.

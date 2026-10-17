@@ -1,0 +1,132 @@
+slug: gbg
+name: GBG
+alternate_names: []
+status: published
+seo:
+  title: 'GBG Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'GBG review: publicly traded, data-centric identity and location-intelligence network spanning 280+ sources and 190 countries. Features, pricing, pros & cons, alternatives.'
+  h1: 'GBG Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/gbg.jpg
+  background: '#9B6EF3'
+tagline: Publicly traded, data-centric identity and location-intelligence network
+score: 4.5
+grade: Very Good
+primary_category: identity-verification
+legacy_rank_claim: 'ranked #13 in Identity Verification'
+categories:
+- identity-verification
+- kyb
+link:
+  url: https://www.gbg.com
+  type: null
+  legacy_rel: nofollow sponsored
+reviewer:
+  name: Elena Marsh
+  credential: CAMS
+last_verified: '2026-07-28'
+verdict: GBG is the rare publicly traded company in this category (LSE:GBG, FTSE 250), built around a genuinely massive data network — 280+ sources across 190 countries — plus a unique location-intelligence layer via its Loqate acquisition. It's less about slick no-code UX and more about deep data infrastructure, grown through a string of acquisitions (IDology, Acuant, Cloudcheck).
+what_is:
+- GBG is a publicly traded identity-data and location-intelligence company founded in 1989 and headquartered in Chester, UK, led by CEO Dev Dhiman, with roughly 1,100 employees and revenue of £282.7M in 2025. It combines identity verification, document verification, and location intelligence (via its Loqate product) across a network of 280+ data sources and 190 countries, expanded through acquisitions including IDology, Acuant, and Cloudcheck.
+features:
+- Identity data matching and verification across 280+ data sources.
+- Document verification alongside identity checks.
+- Location intelligence via Loqate for address verification.
+- Synthetic-identity detection.
+- GBG Trust Network — a consortium of 400+ businesses across 80+ countries.
+- GBG Identity Score and 80+ modules within GBG Go.
+pricing:
+  summary: GBG does not publish pricing; its identity and location-intelligence products are licensed to enterprises based on volume and module selection.
+  plans:
+  - tier: Enterprise Quote
+    price: Custom
+    note: Identity/location data licensing, volume-based
+    extra: Contact sales for a quote
+  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
+  verified: null
+  items: []
+facts:
+- label: From
+  value: Custom quote
+  source: null
+- label: Effective
+  value: Not disclosed
+  source: null
+- label: Founded
+  value: '1989'
+  source: null
+- label: HQ
+  value: Chester, UK
+  source: null
+- label: Regions
+  value: 190 countries
+  source: null
+- label: Status
+  value: Public (LSE:GBG, FTSE 250)
+  source: null
+pros:
+- Publicly traded (LSE:GBG, FTSE 250) — unusual transparency and stability for the category
+- 'Massive data network: 280+ sources, 190 countries, 4.4B+ people'
+- Unique location-intelligence layer via Loqate, not just identity data
+cons:
+- Data-centric approach, less focused on no-code UX
+- No published pricing
+- Broad product lineup spanning multiple acquisitions can be complex to navigate
+alternatives:
+- slug: trulioo
+  name: Trulioo
+  best_for: Best for Data-Layer Proofing
+- slug: sumsub
+  name: Sumsub
+  best_for: Editor's Choice
+- slug: kyc360
+  name: KYC360
+  best_for: AML Lifecycle Specialist
+choose_instead:
+- slug: trulioo
+  text: you want a comparable data-layer platform without a location-intelligence focus.
+- slug: sumsub
+  text: you want published pricing and a unified, simpler all-in-one platform.
+- slug: kyc360
+  text: ongoing AML lifecycle management matters more than location/identity data breadth.
+user_reviews:
+  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  praise:
+  - Data network breadth (frequently cited) — reviewers highlight the scale of GBG's data sources and consortium.
+  - Stability — clients note confidence from GBG's public-company status.
+  criticize:
+  - Complexity — some reviewers note the broad, acquisition-built product lineup takes time to navigate.
+  - Pricing opacity — no published rate card.
+  by_profile:
+  - Enterprises needing both identity and address/location intelligence value having both from one vendor.
+  - Public-company procurement teams appreciate GBG's listed-company transparency.
+  - Teams wanting a simpler, single-product platform sometimes prefer more focused competitors.
+faq:
+- q: How much does GBG cost?
+  a: GBG does not publish pricing; its identity and location-intelligence products are licensed based on volume and module selection.
+- q: Is GBG a public company?
+  a: Yes. GBG plc is listed on the London Stock Exchange (LSE:GBG) and is a constituent of the FTSE 250.
+- q: What is Loqate?
+  a: Loqate is GBG's location-intelligence product for address verification, acquired to extend its identity-data platform.
+- q: What companies has GBG acquired?
+  a: GBG has acquired IDology and Acuant in the US and Cloudcheck in New Zealand, among others, to build out its identity-data network.
+- q: What is the best alternative to GBG?
+  a: Trulioo is the best alternative for comparable data-layer proofing. Sumsub is the closest fit for published pricing and a simpler unified platform.
+- q: Who are GBG's main competitors?
+  a: GBG competes with Trulioo, Sumsub, and KYC360, differentiating through its data network scale and unique location-intelligence layer.
+segments: []
+capabilities: {}
+certifications: []
+user_ratings: []
+use_case_verdicts: []
+score_breakdown: []
+hands_on: null
+sources: []
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as: []
+legacy_issues:
+- editorial_note
+- screenshot_placeholder
+legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against GBG's official pricing page and profiles before this page goes live.

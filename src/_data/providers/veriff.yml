@@ -1,0 +1,140 @@
+slug: veriff
+name: Veriff
+alternate_names: []
+status: published
+seo:
+  title: 'Veriff Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Veriff review: AI plus human-review identity verification across 230+ countries with published starter pricing from $49/mo. Features, pricing, pros & cons, alternatives.'
+  h1: 'Veriff Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/veriff.jpg
+  background: '#8A5CF0'
+tagline: AI plus human-review IDV with deep document coverage and public starter pricing
+score: 4.6
+grade: Great
+primary_category: identity-verification
+legacy_rank_claim: 'ranked #2 in Identity Verification'
+categories:
+- identity-verification
+- liveness-detection
+link:
+  url: https://www.veriff.com
+  type: null
+  legacy_rel: nofollow sponsored
+reviewer:
+  name: Elena Marsh
+  credential: CAMS
+last_verified: '2026-07-29'
+verdict: Veriff pairs AI decisioning with human review across 12,000+ document types and 230+ countries — an Estonian unicorn built to catch deepfakes with an iBeta Level 2-certified liveness check. Its published starter tiers ($49–$209/mo) are a rare transparency win in this category, though premium tiers cost more than budget-first competitors.
+what_is:
+- Veriff is an identity-verification company founded in October 2015 and headquartered in Tallinn, Estonia, by CEO Kaarel Kotkas and Janer Gorohhov, with offices added in New York (2019), London (2020), and Barcelona (2021). A unicorn since raising venture funding, it acquired device-intelligence company BrowserID in 2019 and verifies identities across 12,000+ document types in 230+ countries and 48 languages.
+features:
+- Document verification and biometric face match across 12,000+ document types.
+- Passive liveness detection with deepfake resistance, iBeta Level 2 certified.
+- AML screening, database verification, and proof-of-address checks.
+- Age validation and business verification.
+- Device intelligence via its 2019 BrowserID acquisition.
+- Web, iOS, and Android SDKs with published API.
+pricing:
+  summary: 'Veriff publishes starter tiers: Essential at $49/month, Plus at $99/month, and Premium at $209/month, with custom enterprise pricing above that for higher volumes.'
+  plans:
+  - tier: Essential
+    price: $49 / mo
+    note: Entry-level plan
+    extra: Scales with usage
+  - tier: Plus
+    price: $99 / mo
+    note: Additional features and volume
+    extra: Scales with usage
+  - tier: Premium
+    price: $209 / mo
+    note: Full feature set
+    extra: Custom above this tier
+  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
+  verified: null
+  items: []
+facts:
+- label: From
+  value: $49/mo
+  source: null
+- label: Effective
+  value: $49–$209/mo (tiers)
+  source: null
+- label: Founded
+  value: Oct 2015
+  source: null
+- label: HQ
+  value: Tallinn, Estonia
+  source: null
+- label: Regions
+  value: 230+ countries
+  source: null
+- label: Certification
+  value: iBeta Level 2 liveness
+  source: null
+pros:
+- Published starter pricing — rare transparency in this category
+- 'Deep document and language coverage: 12,000+ document types, 48 languages'
+- AI+human hybrid review built to resist deepfake attacks
+cons:
+- Archive-access limits noted in some reviews
+- Low-bandwidth mobile connections can stretch decision time
+- Premium tier costs more than several budget-first competitors
+alternatives:
+- slug: sumsub
+  name: Sumsub
+  best_for: Editor's Choice
+- slug: idenfy
+  name: iDenfy
+  best_for: Pay-Per-Approved
+- slug: onfido
+  name: Onfido
+  best_for: Developer-Friendly
+choose_instead:
+- slug: sumsub
+  text: you want a unified KYC/KYB/monitoring suite alongside published pricing.
+- slug: idenfy
+  text: you want to pay only for approved verifications instead of tiered subscriptions.
+- slug: onfido
+  text: stronger developer SDKs matter more than published starter pricing.
+user_reviews:
+  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  praise:
+  - Document coverage (frequently cited) — reviewers highlight depth across document types and languages.
+  - Deepfake resistance — users note confidence in the AI+human hybrid review against synthetic fraud.
+  criticize:
+  - Archive access — some reviews mention limits on retrieving past verification records.
+  - Mobile performance — low-bandwidth connections can slow decision times.
+  by_profile:
+  - Startups value Veriff's published starter tiers for predictable budgeting.
+  - Global platforms benefit from its deep document and language coverage.
+  - Enterprises with very high volume typically move to custom pricing above Premium.
+faq:
+- q: How much does Veriff cost?
+  a: 'Veriff publishes starter tiers: Essential at $49/month, Plus at $99/month, and Premium at $209/month, with custom pricing above that for enterprise volume.'
+- q: Does Veriff detect deepfakes?
+  a: Yes. Veriff's passive liveness detection is iBeta Level 2 certified and built to resist deepfake and presentation attacks.
+- q: How many countries does Veriff cover?
+  a: Veriff verifies documents across 230+ countries and territories, supporting 12,000+ document types and 48 languages.
+- q: Who founded Veriff?
+  a: Veriff was founded in October 2015 by CEO Kaarel Kotkas and Janer Gorohhov, headquartered in Tallinn, Estonia.
+- q: What is the best alternative to Veriff?
+  a: Sumsub is the best alternative for a unified KYC/KYB/monitoring suite. iDenfy is the closest fit for pay-per-approved pricing.
+- q: Who are Veriff's main competitors?
+  a: Veriff competes with Sumsub, iDenfy, and Onfido, differentiating through document/language depth and published starter pricing.
+segments: []
+capabilities: {}
+certifications: []
+user_ratings: []
+use_case_verdicts: []
+score_breakdown: []
+hands_on: null
+sources: []
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as: []
+legacy_issues:
+- editorial_note
+- screenshot_placeholder
+legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against Veriff's official pricing page and profiles before this page goes live.

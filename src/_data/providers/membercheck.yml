@@ -1,0 +1,132 @@
+slug: membercheck
+name: MemberCheck
+alternate_names: []
+status: published
+seo:
+  title: 'MemberCheck Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'MemberCheck review: four-tier PEP and sanctions screening, sister product to NameScan. Features, pricing, pros & cons, alternatives.'
+  h1: 'MemberCheck Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/membercheck.webp
+  background: '#7C4DEA'
+tagline: Four-tier PEP and sanctions screening, sister product to NameScan
+score: 4.3
+grade: Good
+primary_category: aml
+legacy_rank_claim: 'ranked #12 in AML'
+categories:
+- aml
+- crypto
+link:
+  url: https://membercheck.com
+  type: null
+  legacy_rel: nofollow sponsored
+reviewer:
+  name: Elena Marsh
+  credential: CAMS
+last_verified: '2026-07-29'
+verdict: 'MemberCheck runs a four-tier PEP screening process alongside sanctions and adverse-media checks, positioned for managed AML workflows with enhanced due diligence and daily ongoing monitoring. It''s operated by the same owner as NameScan (Neurocom Group) but targets a different use case: managed compliance programs rather than on-demand self-serve checks.'
+what_is:
+- MemberCheck is an AML/CTF screening company founded in 2007 and headquartered in Chatswood, New South Wales, Australia, operated by the Neurocom Group — the same owner as NameScan. It screens against thousands of sanctions lists with a four-tier PEP and RCA process plus global adverse-media coverage, serving accounting, casino, financial-services, legal, real-estate, and crypto/VASP clients.
+features:
+- Four-tier PEP and RCA (relatives and close associates) screening.
+- Sanctions and global adverse-media screening.
+- ID verification with face match and liveness.
+- Enhanced due diligence workflows.
+- Ongoing daily monitoring and alerts.
+- RESTful API, dashboard, and AML consulting services.
+pricing:
+  summary: MemberCheck offers pay-as-you-go and subscription pricing; a third-party-reported entry rate is roughly $90 for 50 scans, though this should be verified directly with MemberCheck before publishing.
+  plans:
+  - tier: Pay-As-You-Go / Subscription
+    price: ~$90 / 50 scans
+    note: Third-party reported entry pricing
+    extra: Subscription tiers available for higher volume
+  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
+  verified: null
+  items: []
+facts:
+- label: From
+  value: ~$90/50 scans (3rd-party est.)
+  source: null
+- label: Effective
+  value: Verify before publish
+  source: null
+- label: Founded
+  value: '2007'
+  source: null
+- label: HQ
+  value: Chatswood, NSW, Australia
+  source: null
+- label: Regions
+  value: Global
+  source: null
+- label: Ownership
+  value: 'Neurocom Group (sister: NameScan)'
+  source: null
+pros:
+- Four-tier PEP screening depth, including RCA coverage
+- Flexible RESTful API for building a custom front-end
+- Daily ongoing monitoring with alerting
+cons:
+- Headquartered outside the EU, a data-residency consideration for some EU clients (though data is also held in the EU)
+- Smaller brand than enterprise AML platforms
+- Screening-focused rather than a full IDV/lifecycle platform
+alternatives:
+- slug: namescan
+  name: NameScan
+  best_for: Sister Product (Self-Serve)
+- slug: smartsearch
+  name: SmartSearch
+  best_for: UK Regulatory Specialist
+- slug: sanction-scanner
+  name: Sanction Scanner
+  best_for: Mid-Market API-First
+choose_instead:
+- slug: namescan
+  text: you want on-demand, self-serve screening rather than a managed AML workflow — NameScan is MemberCheck's sister product, both operated by Neurocom Group.
+- slug: smartsearch
+  text: you need JMLSG-compliant UK individual and business screening.
+- slug: sanction-scanner
+  text: you want API-first screening built for mid-market fintechs.
+user_reviews:
+  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  praise:
+  - PEP depth (frequently cited) — reviewers highlight the four-tier screening process.
+  - API flexibility — users note the RESTful API supports custom front-end builds.
+  criticize:
+  - Data residency — some EU clients raise questions about the Australian HQ, despite EU data storage options.
+  - Brand scale — smaller than enterprise AML platforms.
+  by_profile:
+  - Accounting, legal, and real-estate firms use MemberCheck for managed AML/CTF workflows.
+  - Crypto and VASP businesses value its sanctions/PEP screening depth.
+  - Businesses wanting simple self-serve checks often use sister product NameScan instead.
+faq:
+- q: How much does MemberCheck cost?
+  a: MemberCheck offers pay-as-you-go and subscription pricing; a third-party-reported rate is around $90 for 50 scans — verify current pricing directly with MemberCheck.
+- q: Is MemberCheck related to NameScan?
+  a: Yes. MemberCheck and NameScan are both operated by the Neurocom Group; MemberCheck targets managed AML workflows while NameScan focuses on on-demand self-serve screening.
+- q: What is MemberCheck's PEP screening process?
+  a: MemberCheck uses a four-tier PEP and RCA (relatives and close associates) screening process alongside sanctions and adverse-media checks.
+- q: Does MemberCheck offer ongoing monitoring?
+  a: Yes, MemberCheck provides daily ongoing monitoring with alerts for existing customers.
+- q: What is the best alternative to MemberCheck?
+  a: NameScan is the closest alternative for self-serve, on-demand screening. SmartSearch is a strong fit for UK JMLSG compliance specifically.
+- q: Who are MemberCheck's main competitors?
+  a: MemberCheck competes with SmartSearch and Sanction Scanner, and shares ownership with sister product NameScan.
+segments: []
+capabilities: {}
+certifications: []
+user_ratings: []
+use_case_verdicts: []
+score_breakdown: []
+hands_on: null
+sources: []
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as: []
+legacy_issues:
+- editorial_note
+- screenshot_placeholder
+legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against MemberCheck's official pricing page and profiles before this page goes live.

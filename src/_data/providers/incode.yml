@@ -1,0 +1,132 @@
+slug: incode
+name: Incode
+alternate_names: []
+status: published
+seo:
+  title: 'Incode Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Incode review: omnichannel biometric IDV built on one of the largest proprietary identity datasets, a two-time Gartner MQ Leader. Features, pricing, pros & cons, alternatives.'
+  h1: 'Incode Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/incode.png
+  background: '#5E35D6'
+tagline: Omnichannel biometric IDV built on one of the largest proprietary identity datasets
+score: 4.7
+grade: Great
+primary_category: identity-verification
+legacy_rank_claim: 'ranked #12 in Identity Verification'
+categories:
+- identity-verification
+- liveness-detection
+link:
+  url: https://incode.com
+  type: null
+  legacy_rel: nofollow sponsored
+reviewer:
+  name: Elena Marsh
+  credential: CAMS
+last_verified: '2026-07-28'
+verdict: Incode's Omni platform handles onboarding and ongoing authentication in one system, trained on more than 400 million identity profiles — among the largest proprietary datasets in the category — and it's been named a Gartner Magic Quadrant Leader two years running. Its 2025 acquisition of AuthenticID adds further consolidation, though pricing remains enterprise-only.
+what_is:
+- Incode is an identity-verification company founded by CEO Ricardo Amper, headquartered in San Francisco, California, and valued at $1.25B since becoming a unicorn in 2021. With more than 600 employees across 25+ nationalities, it processes 4.1B+ identity checks per year on a proprietary dataset of 400M+ identity profiles, serving Fortune 500 companies, neobanks, and governments across 200+ countries.
+features:
+- Incode Omni — end-to-end onboarding and ongoing authentication in one platform.
+- Facial recognition with passive liveness detection.
+- Document authentication with deepfake detection.
+- Fraud prevention built on a 400M+ profile proprietary dataset.
+- Top-ranked performance in NIST FRTE biometric benchmarks.
+- Single-platform approach across onboarding and authentication.
+pricing:
+  summary: Incode does not publish pricing; its Omni platform is licensed to enterprises based on volume and deployment scope.
+  plans:
+  - tier: Enterprise Quote
+    price: Custom
+    note: Omnichannel IDV licensing, volume-based
+    extra: Contact sales for a quote
+  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
+  verified: null
+  items: []
+facts:
+- label: From
+  value: Custom quote
+  source: null
+- label: Effective
+  value: Not disclosed
+  source: null
+- label: Founded
+  value: Unicorn since 2021
+  source: null
+- label: HQ
+  value: San Francisco, CA
+  source: null
+- label: Regions
+  value: 200+ countries
+  source: null
+- label: Recognition
+  value: Gartner MQ Leader 2024 & 2025
+  source: null
+pros:
+- One of the largest proprietary identity datasets (400M+ profiles) for AI model training
+- Gartner Magic Quadrant Leader in 2024 and 2025
+- End-to-end omnichannel onboarding and authentication in one platform
+cons:
+- Enterprise-oriented, pricier for smaller teams
+- No published pricing
+- Less specialized AML depth than dedicated screening vendors
+alternatives:
+- slug: jumio
+  name: Jumio
+  best_for: Most Popular
+- slug: au10tix
+  name: AU10TIX
+  best_for: Fastest Automated IDV
+- slug: onfido
+  name: Onfido
+  best_for: Developer-Friendly
+choose_instead:
+- slug: jumio
+  text: you want the largest processed-verification scale in enterprise IDV.
+- slug: au10tix
+  text: you need fully automated, consortium-based mass-fraud detection over dataset scale.
+- slug: onfido
+  text: stronger developer SDKs matter more than proprietary dataset size.
+user_reviews:
+  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  praise:
+  - Dataset scale (frequently cited) — reviewers highlight model accuracy from its large proprietary identity dataset.
+  - Recognition — clients note confidence from consecutive Gartner Leader placements.
+  criticize:
+  - Cost — some reviewers note enterprise pricing is out of reach for smaller teams.
+  - Pricing opacity — no published rate card.
+  by_profile:
+  - Fortune 500 companies and governments value Incode's dataset scale and recognition.
+  - Neobanks use Incode Omni for combined onboarding and ongoing authentication.
+  - Smaller teams more often evaluate lighter, published-pricing competitors.
+faq:
+- q: How much does Incode cost?
+  a: Incode does not publish pricing; its Omni platform is licensed to enterprises based on volume and deployment scope.
+- q: What is Incode Omni?
+  a: Incode Omni is an end-to-end platform combining identity onboarding and ongoing biometric authentication in one system.
+- q: Has Incode made any acquisitions?
+  a: Yes. Incode acquired MataMap in 2024 and AuthenticID in 2025 as part of its consolidation strategy.
+- q: Is Incode recognized by analysts?
+  a: Yes, Incode has been named a Gartner Magic Quadrant Leader for identity verification in both 2024 and 2025.
+- q: What is the best alternative to Incode?
+  a: Jumio is the best alternative for enterprise processed-verification scale. AU10TIX is the closest fit for fully automated, consortium-based fraud detection.
+- q: Who are Incode's main competitors?
+  a: Incode competes with Jumio, AU10TIX, and Onfido, differentiating through its large proprietary dataset and omnichannel single-platform approach.
+segments: []
+capabilities: {}
+certifications: []
+user_ratings: []
+use_case_verdicts: []
+score_breakdown: []
+hands_on: null
+sources: []
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as: []
+legacy_issues:
+- editorial_note
+- screenshot_placeholder
+legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against Incode's official pricing page and profiles before this page goes live.
