@@ -24,7 +24,7 @@ faq:
   - q: "Is Kenya still on the FATF grey list?"
     a: "Yes. Kenya was on the FATF list of jurisdictions under increased monitoring published on 19 June 2026."
   - q: "What does a listing mean for EU firms?"
-    a: "Obliged entities must apply enhanced due diligence to relationships and transactions involving the listed country, such as more information on the customer and beneficial owners, source of funds, senior management approval and closer ongoing monitoring."
+    a: "Under Article 18a of Directive (EU) 2015/849, obliged entities must apply enhanced due diligence to relationships and transactions involving the listed country: more information on the customer and beneficial owners, source of funds and wealth, reasons for transactions, senior management approval and enhanced monitoring."
 sources:
   - title: "Commission Delegated Regulation (EU) 2025/1184"
     publisher: "EUR-Lex"
@@ -54,6 +54,10 @@ sources:
     publisher: "FATF"
     url: "https://www.fatf-gafi.org/en/publications/Fatfgeneral/outcomes-fatf-plenary-june-2026.html"
     accessed: 2026-10
+  - title: "Directive (EU) 2015/849, consolidated version of 30 June 2021 (Article 18a)"
+    publisher: "EUR-Lex"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015L0849-20210630"
+    accessed: 2026-10
   - title: "The Money Laundering, Terrorist Financing and Transfer of Funds Regulations 2017, regulation 33"
     publisher: "legislation.gov.uk"
     url: "https://www.legislation.gov.uk/uksi/2017/692/regulation/33"
@@ -64,28 +68,29 @@ The European Commission added Kenya and Côte d'Ivoire to its list of high-risk 
 
 ## What the 2025 update did
 
-The EU list mirrors the FATF's work: a country lands on it when the Commission finds strategic deficiencies in its AML/CFT regime, usually after the FATF has placed it under increased monitoring. Regulation 2025/1184 was one of the larger updates in recent years.
+The EU list mirrors the FATF's work: a country lands on it when the Commission finds strategic deficiencies in its AML/CFT regime, usually after the FATF has placed it under increased monitoring. Regulation 2025/1184 changed 18 entries at once.
 
 | Added (10) | Removed (8) |
 |---|---|
 | Algeria, Angola, Côte d'Ivoire, Kenya, Laos, Lebanon, Monaco, Namibia, Nepal, Venezuela | Barbados, Gibraltar, Jamaica, Panama, the Philippines, Senegal, Uganda, the United Arab Emirates |
 
-Kenya and Côte d'Ivoire were both on the FATF list of jurisdictions under increased monitoring at the time. Each had made a high-level political commitment and agreed an action plan with the FATF, which is the condition for being on the "grey list" rather than the call-for-action list.
+Kenya and Côte d'Ivoire were both on the FATF list of jurisdictions under increased monitoring at the time. The EU list covers countries that have given a written high-level political commitment to fix their deficiencies and have agreed an action plan with the FATF.
 
 ## What it means for EU businesses
 
-Under EU AML rules, a listing triggers enhanced due diligence (EDD) for business relationships and transactions involving the country. In practice that means:
+Under [Article 18a of the Fourth AML Directive](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015L0849-20210630), a listing triggers enhanced due diligence (EDD) for business relationships and transactions involving the country. The measures are:
 
-- more information on the customer and its beneficial owners;
+- more information on the customer and its beneficial owners, and on the intended nature of the relationship;
 - information on the source of funds and source of wealth;
+- the reasons for intended or performed transactions;
 - senior management approval to start or continue the relationship;
-- closer ongoing monitoring of transactions.
+- enhanced monitoring, with more controls and selected transaction patterns flagged for review.
 
 For a payment firm onboarding a Nairobi merchant or a bank with an Abidjan correspondent, the work lands in [KYB](/providers/kyb/) and [AML screening and monitoring](/providers/aml/) processes. Country risk scoring needs to pick up the new list on the date it takes effect, not when someone next reviews the risk matrix. Teams that run [perpetual KYB](/guide/perpetual-kyb/) can trigger reviews of affected customers automatically when the list changes.
 
 ## The UK position
 
-The UK runs its own rules. Regulation 33 of the [Money Laundering Regulations 2017](https://www.legislation.gov.uk/uksi/2017/692/regulation/33) ties mandatory EDD to countries on the FATF call-for-action list, and lists FATF evaluations among the geographical risk factors firms must consider. Kenya and Côte d'Ivoire are on the FATF increased monitoring list, not the call-for-action list, so UK firms treat them through their risk assessment rather than an automatic EDD rule. Firms working in both markets often apply the stricter EU treatment across the board.
+The UK runs its own rules. Regulation 33 of the [Money Laundering Regulations 2017](https://www.legislation.gov.uk/uksi/2017/692/regulation/33) ties mandatory EDD to countries on the FATF call-for-action list, and lists FATF evaluations among the geographical risk factors firms must consider. Kenya and Côte d'Ivoire are on the FATF increased monitoring list, not the call-for-action list, so UK firms treat them through their risk assessment rather than an automatic EDD rule.
 
 ## What has happened since
 
@@ -97,4 +102,4 @@ The Commission's page now lists 26 countries: Afghanistan, Algeria, Angola, Boli
 
 **The FATF lists have moved further.** On [24 October 2025](https://www.fatf-gafi.org/en/publications/High-risk-and-other-monitored-jurisdictions/increased-monitoring-october-2025.html) the FATF removed Burkina Faso, Mozambique, Nigeria and South Africa from increased monitoring. At its [June 2026 plenary](https://www.fatf-gafi.org/en/publications/Fatfgeneral/outcomes-fatf-plenary-june-2026.html) it added Bosnia and Herzegovina and Iraq and removed Algeria and Namibia. The [19 June 2026 list](https://www.fatf-gafi.org/en/publications/High-risk-and-other-monitored-jurisdictions/increased-monitoring-june-2026.html) still includes Kenya. For Côte d'Ivoire, the FATF made an initial determination that it has substantially completed its action plan, so an on-site visit comes next before any delisting.
 
-That leaves a gap: Algeria and Namibia are off the FATF grey list but, as of the Commission's latest update, still on the EU list. The EU usually catches up through a new delegated regulation, so watch for one after the FATF's next plenary.
+That leaves a gap: Algeria and Namibia are off the FATF grey list but, as of the Commission's latest update, still on the EU list. Any change to the EU list needs a new delegated regulation, and we will update this page when one is published.
