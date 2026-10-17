@@ -1,0 +1,21 @@
+---
+layout: v3.njk
+---
+{#- Generic text page (Methodology, For providers, About, legal). Design: design/Text Page V3 (Desktop).dc.html -#}
+{%- set toc = content | toc -%}
+<div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li class="sep" aria-hidden="true">›</li><li aria-current="page">{{ h1 }}</li></ol></nav>
+  <header class="text-hero">
+    <h1 class="h-display">{{ h1 }}</h1>
+    {%- if lede %}<p>{{ lede }}</p>{% endif %}
+  </header>
+  <div class="text-layout{% if not toc.length %} text-layout--single{% endif %}">
+    {%- if toc.length %}
+    <nav class="toc" aria-label="On this page">
+      <div class="toc__title">On this page</div>
+      {%- for t in toc %}<a href="#{{ t.id }}">{{ t.title | safe }}</a>{% endfor %}
+    </nav>
+    {%- endif %}
+    <main id="main" class="text-body legacy-prose">{{ content | safe }}</main>
+  </div>
+</div>

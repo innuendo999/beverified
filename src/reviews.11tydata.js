@@ -1,7 +1,7 @@
 // Computed data for provider review pages (src/reviews.njk).
 // Everything comes from src/_data/providers/<slug>.yml; nothing is typed here.
 export default {
-  pagination: { data: "providers", size: 1, alias: "p", resolve: "values" },
+  pagination: { data: "providers", size: 1, alias: "p", resolve: "values", addAllPagesToCollections: true },
   permalink: (data) => `/providers/${data.p.slug}/`,
   navCurrent: "reviews",
   ogType: "article",

@@ -2,7 +2,7 @@
 // Content: src/_data/categories/<slug>.yml; order and cards: src/_data/rankings.yml;
 // scores, logos and links always come from the provider records.
 export default {
-  pagination: { data: "categories", size: 1, alias: "c", resolve: "values" },
+  pagination: { data: "categories", size: 1, alias: "c", resolve: "values", addAllPagesToCollections: true },
   permalink: (data) => data.c.url,
   eleventyComputed: {
     navCurrent: (d) => (["brazil", "canada", "india", "mexico", "peru"].includes(d.c.slug) ? "regions" : "use-cases"),

@@ -56,6 +56,15 @@ export default function (eleventyConfig) {
     .replace(/\s+id="[^"]*"/g, "")
     .replace(/^<section[^>]*>|<\/section>$/g, ""));
 
+  // Table of contents from <section id="..."> ... <h2>Title</h2> pairs in rendered content.
+  eleventyConfig.addFilter("toc", (html) => {
+    const out = [];
+    for (const m of String(html || "").matchAll(/<section[^>]*\sid="([^"]+)"[^>]*>\s*(?:<[^h][^>]*>\s*)*<h2[^>]*>([\s\S]*?)<\/h2>/g)) {
+      out.push({ id: m[1], title: m[2].replace(/<[^>]+>/g, "").trim() });
+    }
+    return out;
+  });
+
   eleventyConfig.addFilter("json", (v) => JSON.stringify(v).replace(/</g, "\\u003c"));
 
   return {

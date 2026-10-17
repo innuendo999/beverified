@@ -6,25 +6,29 @@ Full plan, decisions and prompts: `docs/redesign-plan.md`. Read only the section
 
 ## Where things live
 
+All pages are generated from templates + data. There is no hand-written page HTML left except `src/backup-files/` (legacy, excluded in robots.txt).
+
 | To change | Edit |
 |---|---|
-| Header menu, footer links, footer disclosure text | `src/_data/site.json` |
-| Header / footer markup | `src/_includes/header.njk`, `src/_includes/footer.njk` |
-| A page's footer date or meta line | that page's front matter (`updated`, `footerMeta`) |
-| Styles / scripts | `src/assets/css/style.css`, `src/assets/js/site.js` |
-| Provider review pages | `src/providers/<slug>/index.html` |
-| Category and region ranking pages | `src/providers/<category>/index.html` (aml, aml/banks, kyb, e-kyc, identity-verification, crypto, liveness-detection, cheap-kyc, travel-rule, brazil, canada, india, mexico, peru) |
-| Reviews directory | `src/providers/index.html` |
-| Methodology, Placement options | `src/methodology/`, `src/placement-options/` (own header/footer, not shared) |
-
-| Provider data (single source of truth for score, pricing, facts…) | `src/_data/providers/<slug>.yml` |
-| Ranked lists per category / region (order = rank) | `src/_data/rankings.yml` |
-| Category / region content | `src/_data/categories/<slug>.yml` |
+| Header menu, footer columns, disclosure text, rubric weights, evidence labels | `src/_data/site.json` → `v3` |
+| Header / footer / page shell | `src/_includes/v3/header.njk`, `footer.njk`, `src/_layouts/v3.njk` |
+| Styles (tokens + components, incl. mobile) | `src/assets/css/v3.css` |
+| One provider (score, pricing, facts, pros/cons, FAQ, link, logo) | `src/_data/providers/<slug>.yml` → rendered by `src/reviews.njk` at `/providers/<slug>/` |
+| Ranked lists per category / region (order = rank, award, card copy) | `src/_data/rankings.yml` |
+| Category / region page copy (quick answer, explainer, FAQ, related) | `src/_data/categories/<slug>.yml` → `src/categories.njk` |
+| Homepage copy, quick picks, use-case cards, regions map | `src/_data/home.yml` → `src/index.njk` |
+| Reviews directory (`/providers/`), unreviewed tracked providers | `src/directory.njk`, `src/_data/tracked.yml` |
+| Authors (byline, author box) | `src/_data/authors.yml` |
+| Methodology page copy | `src/methodology/index.njk` (layout `text.njk`) |
+| For providers page | `src/placement-options/index.njk` |
 | Field definitions | `docs/data-schema.md` |
+| Design reference (Claude Design export) | `design/` (open with a browser; not deployed) |
 | Search Console / Bing exports | `data/gsc/`, `data/bing/` |
-| Generated reports (inventory, gaps, rating conflicts, missing URLs) | `reports/` |
+| Generated reports | `reports/` |
 
-The data files were extracted from the old pages and are not rendered yet; the pages in `src/providers/` are still the old HTML until the new templates land. Planned: `comparisons.yml`, `entities.yml`, layouts in `src/_layouts/`. See plan sections 5–9.
+Templates hide any block whose data is empty, so filling a field in YAML is enough to make a section appear. Computed values (rank positions, alternatives, nav pills, JSON-LD) live in the `*.11tydata.js` file next to each template.
+
+Planned, not built yet: blog, topic pages, use-case and region hubs, comparison pages (`comparisons.yml`), `entities.yml`.
 
 ## Commands
 
