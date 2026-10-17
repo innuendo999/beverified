@@ -396,3 +396,9 @@ Rules: body text ≥16px, tap targets ≥44px, no horizontal page scroll, no con
 - Whether to allow AI training crawlers (GPTBot, Google-Extended).
 - Which score is correct for Onfido (4.5 vs 4.6) and the real per-category rankings.
 - When hands-on testing starts and for which providers first.
+
+## Status, Oct 18, 2026 (branch `redesign`)
+
+Built since step 1: review, category, home, directory, methodology v3.0, For providers, plus `/use-cases/`, `/regions/`, `/authors/andrii-klymenko/`, `/about/`, `/privacy/`, `/terms/` and `/404.html`. Header nav now points to the hubs. Geist is self-hosted; the site makes no third-party requests and sets no cookies (the privacy policy relies on this). Privacy and Terms are a baseline and should be reviewed by a lawyer; no governing-law clause yet because the operator's legal entity and country are not recorded.
+
+Open before release: merge `redesign` into `main`; decide on governing law / operator details; re-check provider `last_verified` dates (July 2026) against the 90-day promise; restore or redirect old GSC URLs (reports/gsc-missing-urls.csv).
