@@ -1,146 +1,98 @@
 ---
 layout: text.njk
-seoTitle: "Our Methodology — How BeVerified Scores KYC & AML Providers"
-seoDescription: "We score every KYC and AML provider against 42 criteria across six weighted categories. See the rubric, our data-collection process, and our conflict-of-interest disclosure."
+seoTitle: "Our Methodology: How BeVerified Scores KYC & AML Providers"
+seoDescription: "How BeVerified scores KYC, KYB and AML providers: six weighted criteria, public evidence labelled by source, re-checks, corrections and how we make money."
 h1: "Our Methodology"
-lede: "We score every KYC and AML provider in this directory against 42 criteria across six weighted categories. No score is assigned by hand without a documented source behind it."
+lede: "We score KYC, KYB and AML providers against six weighted criteria, using evidence anyone can check. Every claim on a review is labelled with where it came from."
+updated: "2026-10-18"
 ---
-<div>
 <section>
-<p>Methodology v2.3 · Last updated July 18, 2026 · <a href="#changelog">See what changed →</a></p>
+<p>Methodology {{ site.v3.methodologyVersion }} · Last updated Oct 18, 2026 · <a href="#changelog">What changed</a></p>
 </section>
-<div>
-<main>
-<section id="who-evaluates">
-<h2>Who evaluates providers</h2>
-<div>
-<div>
-<div aria-hidden="true">EM</div>
-<div>Elena Marsh, CAMS</div>
-<div>Lead Analyst</div>
-<p>Eight years running AML transaction-monitoring programs at a mid-size European bank before joining BeVerified in 2023.</p>
-</div>
-<div>
-<div aria-hidden="true">DO</div>
-<div>David Okafor</div>
-<div>Data &amp; Pricing Verification</div>
-<p>Confirms every published price against the vendor's sales team every quarter.</p>
-</div>
-<div>
-<div aria-hidden="true">PN</div>
-<div>Priya Nathan, CIPP/E</div>
-<div>Compliance &amp; Standards</div>
-<p>Cross-checks certification claims against issuing bodies, including ISO and the AICPA for SOC 2.</p>
-</div>
-</div>
-</section>
+
 <section id="rubric">
 <h2>Scoring rubric</h2>
-<div>
-<div><div>Compliance &amp; certifications</div><div><div></div></div><div>25%</div></div>
-<div><div>Coverage (jurisdictions &amp; documents)</div><div><div></div></div><div>20%</div></div>
-<div><div>Pricing transparency</div><div><div></div></div><div>20%</div></div>
-<div><div>Integration &amp; API depth</div><div><div></div></div><div>15%</div></div>
-<div><div>Support responsiveness</div><div><div></div></div><div>10%</div></div>
-<div><div>Track record</div><div><div></div></div><div>10%</div></div>
-</div>
-<div>
+<p>Each provider gets an editorial score from 1 to 5. It is the weighted result of six criteria:</p>
 <table>
-<caption>Scoring rubric criteria, weights, what is checked, and data source</caption>
-<thead><tr><th scope="col">Criterion</th><th scope="col">Weight</th><th scope="col">What we check</th><th scope="col">Data source</th></tr></thead>
+<caption>Scoring criteria, weights and what we look at</caption>
+<thead><tr><th scope="col">Criterion</th><th scope="col">Weight</th><th scope="col">What we look at</th></tr></thead>
 <tbody>
-<tr><th scope="row">Compliance &amp; certifications</th><td>25%</td><td>Verified ISO/IEC 27001 and SOC 2 Type II certificates, sanctions-list coverage, and jurisdiction licensing.</td><td>Certificate registries, vendor audit letters</td></tr>
-<tr><th scope="row">Coverage (jurisdictions &amp; documents)</th><td>20%</td><td>Supported countries, document types, and languages, tested against a standard 15-document set.</td><td>Hands-on sandbox testing</td></tr>
-<tr><th scope="row">Pricing transparency</th><td>20%</td><td>Whether list pricing is public, and how closely it matches the quote our team receives from sales.</td><td>Vendor sales team, public pricing pages</td></tr>
-<tr><th scope="row">Integration &amp; API depth</th><td>15%</td><td>Time to first successful sandbox call, SDK coverage, and webhook reliability over a 48-hour test window.</td><td>Hands-on sandbox testing</td></tr>
-<tr><th scope="row">Support responsiveness</th><td>10%</td><td>Average first-response time across five test tickets submitted at different times of day.</td><td>Internal testing log</td></tr>
-<tr><th scope="row">Track record</th><td>10%</td><td>Public regulatory actions, data-breach disclosures, and litigation involving the vendor over the past five years.</td><td>Regulatory databases, court records, press coverage</td></tr>
+<tr><th scope="row">Compliance &amp; certifications</th><td>25%</td><td>Security and privacy certifications (ISO/IEC 27001, SOC 2), liveness test results (ISO/IEC 30107-3), entries in public registers such as the UK digital identity trust framework, and regulatory licences.</td></tr>
+<tr><th scope="row">Coverage</th><td>20%</td><td>Countries, document types and data sources the vendor says it supports.</td></tr>
+<tr><th scope="row">Pricing transparency</th><td>20%</td><td>Whether prices are published, how clear the pricing model is, and what third parties report when they are not.</td></tr>
+<tr><th scope="row">Integration &amp; API depth</th><td>15%</td><td>Public API documentation, SDK platforms, sandbox availability and release activity.</td></tr>
+<tr><th scope="row">Support responsiveness</th><td>10%</td><td>Published support channels and hours, and what users report on review platforms.</td></tr>
+<tr><th scope="row">Track record</th><td>10%</td><td>Company history, ownership changes, and public regulatory actions, data-breach disclosures or litigation.</td></tr>
 </tbody>
 </table>
-</div>
+<p>If we can't find public information for a criterion, the review says "Not publicly disclosed" for it and we don't guess a sub-score.</p>
+<p>We are adding the per-criterion breakdown to every review. Where a review doesn't show it yet, the score is our overall editorial judgement against the same six criteria.</p>
 </section>
-<section id="process">
-<h2>How we collect the data</h2>
-<ol>
-<li><div aria-hidden="true">1</div><div><div>Sandbox testing</div><p>Our analysts run real verification flows in each vendor's test environment.</p></div></li>
-<li><div aria-hidden="true">2</div><div><div>Regulatory filings review</div><p>Public enforcement actions and licensing records are checked against vendor claims.</p></div></li>
-<li><div aria-hidden="true">3</div><div><div>Cross-referencing</div><p>G2, Trustpilot, and Capterra reviews are checked against our own findings.</p></div></li>
-<li><div aria-hidden="true">4</div><div><div>Price verification</div><p>A quote is requested from the vendor's sales team and compared to public pricing pages.</p></div></li>
-</ol>
-</section>
-<section id="score-guide">
-<h2>What the score means</h2>
-<div>
-<div><div>90–100</div><div>Amazing</div></div>
-<div><div>75–89</div><div>Strong</div></div>
-<div><div>60–74</div><div>Good</div></div>
-<div><div>Below 60</div><div>Needs improvement</div></div>
-</div>
-<p>A score reflects how a provider performed against our rubric at the time of testing. It is not a warranty and does not replace your own legal or security review.</p>
-</section>
-<section id="limitations">
-<h2>What this score does not measure</h2>
+
+<section id="evidence">
+<h2>Where the evidence comes from</h2>
+<p>Every fact on a review carries one of four labels, so you can see how much weight to give it:</p>
 <ul>
-<li><span aria-hidden="true">−</span><p>We do not load-test any vendor's API beyond a 48-hour sandbox window, so our support scores don't reflect performance at production scale.</p></li>
-<li><span aria-hidden="true">−</span><p>We do not have access to non-public regulatory examinations, only public enforcement actions and disclosures.</p></li>
-<li><span aria-hidden="true">−</span><p>A score is not a legal opinion. Selecting a top-ranked provider does not itself satisfy a regulator's expectations for vendor due diligence.</p></li>
+<li><strong>Independent:</strong> a test lab, a government register or a public benchmark, for example an iBeta test letter, a NIST evaluation or a certification register.</li>
+<li><strong>Vendor-stated:</strong> the vendor's own website, documentation, trust centre or pricing page.</li>
+<li><strong>User-reported:</strong> review platforms such as G2, Capterra and Gartner Peer Insights. We show these ratings separately; they are not part of our score.</li>
+<li><strong>Hands-on:</strong> our own test of the product.</li>
+</ul>
+<p>Numbered sources at the end of each review link to the page we used and the date we accessed it. Prices show the month we last checked them, and third-party price estimates are marked as such.</p>
+</section>
+
+<section id="hands-on">
+<h2>Hands-on testing</h2>
+<p>Most reviews are currently based on public evidence. When we test a product ourselves, the review gets a "Manually tested" badge and a Hands-on test section with the test date and results. Reviews without that section have not been tested hands-on.</p>
+</section>
+
+<section id="freshness">
+<h2>How we keep reviews current</h2>
+<p>We aim to re-check each review every 90 days. The "Last verified" date changes only after we have actually re-checked the provider's pricing, coverage and certifications, not when we edit wording.</p>
+</section>
+
+<section id="ranking">
+<h2>How rankings are ordered</h2>
+<p>Category and country rankings are ordered by each provider's score. When two providers have the same score, we keep the order they had before the tie. Providers we list but haven't reviewed in full yet appear after the reviewed ones, without a score.</p>
+</section>
+
+<section id="limitations">
+<h2>What the score does not measure</h2>
+<ul>
+<li>We don't load-test vendor APIs, so a score says nothing about performance at production scale.</li>
+<li>We only see public regulatory actions and disclosures, not private examinations.</li>
+<li>A score is an editorial opinion, not a legal opinion. Choosing a high-scoring provider does not by itself meet a regulator's expectations for vendor due diligence.</li>
 </ul>
 </section>
+
 <section id="disclosure">
-<h2>Conflicts of interest &amp; monetization</h2>
-<p>BeVerified earns a commission when a reader signs up with a provider through a link on this site, and providers can pay to appear in a featured slot on category pages. Paid placement changes where a provider is displayed. It does not change the score above it — that number comes from the rubric on this page, calculated the same way for every vendor whether or not they advertise with us.</p>
+<h2>How we make money</h2>
+<p>BeVerified may earn a commission when a reader signs up with a provider through a link on this site. Payment never changes scores or ranking order.</p>
+<p>We don't sell featured placements at the moment. If that changes, paid placements will be clearly labelled on the page and described here.</p>
 </section>
+
 <section id="corrections">
-<h2>Correction policy</h2>
-<p>If a provider or reader believes a data point is wrong, email <a href="mailto:corrections@beverified.org">corrections@beverified.org</a> with a source. We review disputed line items within 5 business days and update the entry immediately if the claim checks out.</p>
+<h2>Corrections</h2>
+<p>If you think a fact on a review is wrong, email <a href="mailto:support@beverified.org?subject=Correction">support@beverified.org</a> with a source. We check every request and update the review when the source supports the change. Providers can correct facts this way; they can't change a score or a ranking position.</p>
 </section>
+
 <section id="changelog">
-<h2>Version history</h2>
-<ol>
-<li><div>v2.3<br/><span>Jul 18, 2026</span></div><p>Added Track record as a standalone category (10%); reduced Support responsiveness from 15% to 10%.</p></li>
-<li><div>v2.2<br/><span>Mar 2, 2026</span></div><p>Added SOC 2 Type II to certification checks; previously we only checked ISO/IEC 27001.</p></li>
-<li><div>v2.1<br/><span>Nov 14, 2025</span></div><p>Introduced the five-ticket support responsiveness test, replacing single-ticket sampling.</p></li>
-<li><div>v2.0<br/><span>Jun 1, 2025</span></div><p>First public version of this methodology.</p></li>
-</ol>
+<h2>What changed</h2>
+<ul>
+<li><strong>Oct 18, 2026:</strong> rewritten to describe how reviews are actually built today: public evidence labelled by source, hands-on testing marked separately, rankings ordered by score.</li>
+</ul>
 </section>
+
 <section id="faq">
 <h2>Frequently asked questions</h2>
-<div>
-<details><summary>Can a provider pay for the #1 spot?</summary><p>No. Paid placement can secure a labeled "Featured" or "Sponsored" slot in a category list, but it does not raise a provider's score. Score and placement are calculated and displayed separately.</p></details>
-<details><summary>How often do you update scores?</summary><p>We re-test every provider at least once per quarter and update pricing data on a rolling 90-day cycle.</p></details>
-<details><summary>Who funds BeVerified?</summary><p>Affiliate commissions from provider sign-ups and paid featured placements. See the disclosure above for how that is separated from scoring.</p></details>
-<details><summary>Do vendors see their score before publication?</summary><p>We share draft scores with vendors for factual review only. Vendors can correct factual errors; they cannot request a different opinion score.</p></details>
-<details><summary>What happens if a provider disputes a score?</summary><p>They can submit corrections with supporting evidence to corrections@beverified.org; we review within 5 business days.</p></details>
-<details><summary>Does a high score guarantee compliance for my business?</summary><p>No. A score reflects our rubric, not a legal opinion. You should still complete your own due diligence before signing a contract.</p></details>
-</div>
+<details><summary>Can a provider pay for the #1 spot?</summary><p>No. Rankings are ordered by score, and payment never changes a score or a ranking position.</p></details>
+<details><summary>How often do you update reviews?</summary><p>We aim to re-check each review every 90 days. The "Last verified" date on each page shows when that last happened.</p></details>
+<details><summary>Who funds BeVerified?</summary><p>Affiliate commissions from some provider sign-ups. See How we make money above.</p></details>
+<details><summary>Can a provider correct its review?</summary><p>Yes, with a source we can check. Accepted corrections update the facts; the score only moves if the rubric says it should.</p></details>
+<details><summary>Does a high score mean a provider is compliant for my business?</summary><p>No. A score reflects our rubric, not a legal opinion. Do your own due diligence before signing a contract.</p></details>
 </section>
-</main>
-<aside>
-<div>
-<p>This page</p>
-<p><strong>Version</strong> v2.3</p>
-<p><strong>Updated</strong> Jul 18, 2026</p>
-<a href="#top">Download methodology (PDF)</a>
-<a href="mailto:corrections@beverified.org">Report a correction</a>
-</div>
-<nav aria-label="On this page">
-<p>Jump to</p>
-<ul>
-<li><a href="#who-evaluates">Who evaluates providers</a></li>
-<li><a href="#rubric">Scoring rubric</a></li>
-<li><a href="#process">Data collection</a></li>
-<li><a href="#score-guide">What the score means</a></li>
-<li><a href="#limitations">Limitations</a></li>
-<li><a href="#disclosure">Conflicts of interest</a></li>
-<li><a href="#corrections">Correction policy</a></li>
-<li><a href="#changelog">Version history</a></li>
-</ul>
-</nav>
-</aside>
-</div>
-</div>
-<section aria-labelledby="cta-heading">
-<h2 id="cta-heading">See rankings built on this methodology</h2>
-<p>Every category page on BeVerified is scored using the rubric above.</p>
-<div><a href="/providers/aml/">Browse rankings</a></div>
+
+<section>
+<h2>See the rankings</h2>
+<p>Every category and country ranking on BeVerified uses this rubric. <a href="/providers/">Browse all providers</a>.</p>
 </section>
