@@ -402,3 +402,9 @@ Rules: body text ≥16px, tap targets ≥44px, no horizontal page scroll, no con
 Built since step 1: review, category, home, directory, methodology v3.0, For providers, plus `/use-cases/`, `/regions/`, `/authors/andrii-klymenko/`, `/about/`, `/privacy/`, `/terms/` and `/404.html`. Header nav now points to the hubs. Geist is self-hosted; the site makes no third-party requests and sets no cookies (the privacy policy relies on this). Privacy and Terms are a baseline and should be reviewed by a lawyer; no governing-law clause yet because the operator's legal entity and country are not recorded.
 
 Open before release: merge `redesign` into `main`; decide on governing law / operator details; re-check provider `last_verified` dates (July 2026) against the 90-day promise; restore or redirect old GSC URLs (reports/gsc-missing-urls.csv).
+
+## Status, Oct 18, 2026 (later): old articles restored
+
+26 articles from the old WordPress site (7 guides, 7 research, 12 news) are back at their original URLs, refreshed against primary sources as of October 2026, with internal links to reviews, rankings and sibling articles. /blog/ and the old /category/guide|news|publications/ archives exist; /contact-us/ and /author/beverified/ are restored. Reviews show "Related reading", rankings show "Guides and news". Spec: docs/article-spec.md; validator: scripts/checks/articles.mjs.
+
+Still missing from the GSC list: /providers/age-verification/ (old category: needs an age-verification ranking), /category/providers/ (could point to /providers/ or /use-cases/), /tag/ofac/, and the three one-impression stray URLs.

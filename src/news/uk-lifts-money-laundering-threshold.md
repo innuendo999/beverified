@@ -72,7 +72,7 @@ Under the [Home Office guidance](https://www.gov.uk/government/publications/mone
 - The separate section 330 duty to report knowledge or suspicion of money laundering is unaffected. A sub-threshold payment can still need a SAR.
 - Sanctions screening and customer due diligence obligations are untouched by the Order.
 
-For banks, the practical change is in workflow: fewer consent requests sitting in a queue, more reliance on internal rules to spot split payments and decide when a SAR is still due. Teams comparing monitoring and case management tools can start with our [AML software for banks](/providers/aml/banks/) ranking or the wider [AML ranking](/providers/aml/).
+For banks, the practical change is in workflow: fewer consent requests sitting in a queue, more reliance on internal rules to spot split payments and decide when a SAR is still due. Teams comparing monitoring and case management tools can start with our [AML software for banks](/providers/aml/banks/) ranking or the wider [AML ranking](/providers/aml/), or browse by country on our [regions hub](/regions/).
 
 ## What to check internally
 

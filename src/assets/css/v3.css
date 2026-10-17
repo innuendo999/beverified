@@ -651,3 +651,4 @@ a.chip:hover { border-color: var(--line-hover); color: var(--ink); text-decorati
 @media (max-width: 1024px) { .art-layout { grid-template-columns: minmax(0, 1fr); gap: 0; } .art-toc { display: none; } }
 @media (max-width: 860px) { .art__body h2 { font-size: 24px; } .art__provs li { grid-template-columns: minmax(0,1fr) auto; } .art__provs li > a { grid-column: 1 / -1; } }
 .author-side__stats { display: flex; gap: 32px; }
+.post-card p { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }

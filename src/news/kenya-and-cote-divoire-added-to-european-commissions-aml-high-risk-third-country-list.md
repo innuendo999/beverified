@@ -86,7 +86,7 @@ Under [Article 18a of the Fourth AML Directive](https://eur-lex.europa.eu/legal-
 - senior management approval to start or continue the relationship;
 - enhanced monitoring, with more controls and selected transaction patterns flagged for review.
 
-For a payment firm onboarding a Nairobi merchant or a bank with an Abidjan correspondent, the work lands in [KYB](/providers/kyb/) and [AML screening and monitoring](/providers/aml/) processes. Country risk scoring needs to pick up the new list on the date it takes effect, not when someone next reviews the risk matrix. Teams that run [perpetual KYB](/guide/perpetual-kyb/) can trigger reviews of affected customers automatically when the list changes.
+For a payment firm onboarding a Nairobi merchant or a bank with an Abidjan correspondent, the work lands in [KYB](/providers/kyb/) and [AML screening and monitoring](/providers/aml/) processes. Country risk scoring needs to pick up the new list on the date it takes effect, not when someone next reviews the risk matrix. Providers can also be compared by country on our [regions hub](/regions/). Teams that run [perpetual KYB](/guide/perpetual-kyb/) can trigger reviews of affected customers automatically when the list changes.
 
 ## The UK position
 
