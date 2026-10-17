@@ -4,50 +4,50 @@ aml/banks:
   - slug: complyadvantage
     name: ComplyAdvantage
     award: Editor's Choice
-    tagline: Real-time sanctions, PEP, and transaction monitoring built for Tier-1 throughput.
+    tagline: Sanctions, PEP and adverse-media screening plus real-time transaction monitoring for regulated institutions.
     coverage: Global
     size: null
     pros:
-    - Handles high-volume real-time monitoring without added latency
-    - Strong model governance and alert explainability
-    - Trusted by large regulated banks
+    - Real-time transaction monitoring and payment screening, with vendor-stated sub-second latency
+    - Agentic workflows that the vendor says resolve up to 85% of routine alerts
+    - Built-in reporting support for SAR, CTR and FINTRAC reports
     cons:
-    - Enterprise-only pricing
-    - Requires significant integration work
-    - Best suited to teams with dedicated compliance engineering
-    legacy_price_shown: Custom pricing
+    - Does not perform identity verification, so it needs a separate IDV vendor
+    - Initial setup can be involved, per user reviews
+    - Enterprise tier with unlimited usage is quoted only
+    legacy_price_shown: From $99/mo
     legacy_rating_shown: 4.7
     segments: []
   - slug: nice-actimize
     name: NICE Actimize
-    award: Best for Legacy Core Integration
-    tagline: Deep, proven integrations with decades-old core banking systems.
+    award: Best End-to-End Financial-Crime Suite
+    tagline: Broad financial-crime suite covering transaction monitoring, screening, entity risk and regulatory reporting.
     coverage: Global
     size: null
     pros:
-    - Widest track record integrating with legacy core banking
-    - Mature case-management tooling for examiners
-    - Broad rail coverage including SWIFT
+    - Long track record with large banks; over 1,000 organizations in 70+ countries use it, per the vendor
+    - Real-time or batch sanctions screening for parties and payments (WL-X)
+    - STAR suspicious activity reporting and CTR processing automation
     cons:
-    - Implementation timelines run long
-    - Steep learning curve for smaller teams
-    - Pricing requires a sales conversation
+    - Resource-intensive deployment
+    - Can be more than smaller organizations need
+    - Ownership in flux while NICE explores a sale of the unit
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.6
     segments: []
   - slug: feedzai
     name: Feedzai
-    award: Best for AI Explainability
-    tagline: Explainable machine-learning models built to satisfy examiner review.
+    award: Best for Payment Fraud at Scale
+    tagline: Real-time AI fraud and AML detection built for large banks and processors.
     coverage: Global
     size: null
     pros:
-    - Strong alert-level explainability for regulators
-    - Modern ML-based detection models
-    - Good developer tooling
+    - Secures $9T in payments a year, by its own figures, for customers such as Mastercard, Fiserv and CaixaBank
+    - Real-time AI fraud detection built for very high transaction volumes
+    - Fraud, identity and AML in one RiskOps platform
     cons:
-    - Smaller footprint at the largest global banks
-    - Enterprise-oriented onboarding
+    - Built for large institutions; heavy for smaller teams
+    - Longer implementation timelines than lighter-weight fraud tools
     - Pricing not published
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.6
@@ -75,35 +75,35 @@ aml:
   - slug: sumsub
     name: Sumsub
     award: Editor's Choice
-    tagline: All-in-one KYC/AML verification platform built for fast-scaling fintechs.
+    tagline: All-in-one KYC/AML platform with published per-verification pricing.
     coverage: Global
     size: SMB to Enterprise
     pros:
-    - 120+ built-in AML watchlists
-    - No-code onboarding flow builder
-    - Fast approval, avg. 40 seconds
+    - Sanctions and PEP screening, including OFAC, UN, HMT, EU and DFAT lists
+    - KYC, KYB, transaction monitoring and fraud prevention in one platform
+    - Stated average verification time of 20 seconds
     cons:
-    - Per-verification pricing can add up at scale
-    - Advanced fraud tools cost extra
-    - Limited on-premise deployment
-    legacy_price_shown: $1.99/verification
+    - AML screening starts on the Compliance plan ($1.85 per verification, $299 monthly minimum)
+    - KYB, transaction monitoring and fraud prevention are only in the custom, quoted plan
+    - Some reviewers report occasional false-positive flags
+    legacy_price_shown: From $1.35/verification
     legacy_rating_shown: 4.8
     segments: []
   - slug: complyadvantage
     name: ComplyAdvantage
     award: Best for Enterprise
-    tagline: AI-driven AML risk data and transaction monitoring for regulated enterprises.
+    tagline: AML risk data, agentic alert workflows and real-time transaction monitoring for regulated businesses.
     coverage: Global
-    size: Enterprise
+    size: SMB to Enterprise
     pros:
-    - Real-time sanctions & PEP data
-    - Deep transaction-monitoring rules engine
-    - Strong API-first architecture
+    - Proprietary sanctions, PEP and adverse-media data
+    - Real-time transaction monitoring and payment screening
+    - Starter plan from $99/month, plus free ComplyLaunch access for qualifying startups
     cons:
-    - Steep learning curve for smaller teams
-    - Usually needs an implementation partner
-    - Pricing is not published
-    legacy_price_shown: Custom pricing
+    - Initial setup can be involved, per user reviews
+    - Does not perform identity verification, so it needs a separate IDV vendor
+    - Enterprise tier with unlimited usage is quoted only
+    legacy_price_shown: From $99/mo
     legacy_rating_shown: 4.7
     segments: []
   - slug: kycaid
@@ -113,65 +113,65 @@ aml:
     coverage: Global
     size: SMB to Mid-market
     pros:
-    - Flexible workflow builder
-    - White-label client portal
-    - Responsive support team
+    - Customisable verification flows from one dashboard
+    - White labeling on the Enterprise plan
+    - 24/7 chat support with a stated 15-minute response SLA
     cons:
     - Smaller watchlist database than category leaders
-    - Fewer native integrations
-    - Mobile SDK is newer
-    legacy_price_shown: $99/mo
+    - Adverse-media screening is not listed among its AML checks
+    - Native mobile SDKs are not documented in its public docs
+    legacy_price_shown: From €0.75/verification
     legacy_rating_shown: 4.6
     segments: []
   - slug: trulioo
     name: Trulioo
-    award: Best Budget Option
-    tagline: Global identity network covering 100+ countries at competitive per-check rates.
+    award: Best for Global Identity Data
+    tagline: Global identity network covering 195 countries, with screening against 6,000+ watchlists.
     coverage: Global
-    size: SMB to Mid-market
+    size: Enterprise
     pros:
-    - Wide global document coverage
-    - Simple pay-as-you-go pricing
-    - Quick self-serve setup
+    - Person and business verification across 195 countries
+    - Screens against 6,000+ watchlists, per Trulioo
+    - Database checks for non-documentary identity proofing
     cons:
-    - Interface feels dated versus newer entrants
-    - Watchlist screening is an add-on
-    - Support response times vary by plan
-    legacy_price_shown: $0.85/check
+    - No published pricing; rates are quoted on request
+    - Needs meaningful technical resources to integrate its data-API model
+    - Leans toward a data API rather than a no-code, UX-first platform
+    legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.5
     segments: []
   - slug: onfido
     name: Onfido
     award: Best for Identity Verification
-    tagline: Document and biometric identity verification with strong liveness detection.
-    coverage: Global, strongest in UK/EU
+    tagline: Document and biometric identity verification, now sold as Entrust Identity Verification.
+    coverage: Global, 195 countries
     size: Mid-market to Enterprise
     pros:
-    - Industry-leading liveness detection
-    - Broad document type support
-    - Strong developer SDKs
+    - Liveness tested by iBeta to ISO/IEC 30107-3 (Level 2, 2022)
+    - More than 2,500 document types across 195 countries
+    - Strong developer SDKs and API tooling
     cons:
     - AML/watchlist screening is a separate module
-    - Enterprise-oriented pricing
-    - Onboarding can take several weeks
+    - No published pricing; quoted via Entrust sales
+    - Mixed reviews on support responsiveness
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.6
     segments: []
   - slug: jumio
     name: Jumio
     award: Most Popular
-    tagline: Widely-adopted identity verification and AML screening for global platforms.
-    coverage: Global, strong in US
+    tagline: Widely adopted identity verification and AML screening for global platforms.
+    coverage: Global, 200+ countries and territories
     size: Mid-market to Enterprise
     pros:
-    - Very high brand recognition & trust
-    - Mature fraud-detection models
-    - Strong regional data-center coverage
+    - More than 1 billion transactions processed
+    - AML screening with ongoing monitoring after onboarding
+    - 5,000+ ID types across 200 countries and territories
     cons:
-    - Higher cost than budget alternatives
-    - Contracts often require annual commitment
-    - Customization needs dev resources
-    legacy_price_shown: $1.15/verification
+    - Pricing only via sales quote, with no published rate card
+    - Third-party data (Vendr) puts the median annual contract at $55,850
+    - Heavier integration lift for teams without dedicated developers
+    legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.5
     segments: []
   - slug: null
@@ -198,7 +198,7 @@ aml:
     coverage: Global
     size: Enterprise
     pros:
-    - Massive proprietary risk-data network
+    - Large proprietary risk-data network
     - Covers KYC, AML, and fraud in one vendor
     - Deep regulatory reporting tools
     cons:
@@ -248,52 +248,52 @@ brazil:
   - slug: sumsub
     name: Sumsub
     award: Editor's Choice
-    tagline: Fast decisioning built to match Pix instant-payment onboarding volume.
+    tagline: Document, biometric and AML checks in one platform, with a stated 20-second average verification time.
     coverage: Global
     size: null
     pros:
-    - Median decision time under 40 seconds
-    - No-code workflow builder
+    - Stated average verification time of 20 seconds
     - Combines document and biometric checks
+    - Published per-verification pricing from $1.35
     cons:
-    - Per-check pricing can add up at high volume
-    - Advanced fraud tools cost extra
-    - Local registry depth lighter than Brazil-only vendors
-    legacy_price_shown: $0.99/check
+    - Monthly minimums of $149 and $299 on the published plans
+    - Non-document database checks and KYB are only in the custom, quoted plan
+    - Some reviewers report occasional false-positive flags
+    legacy_price_shown: From $1.35/verification
     legacy_rating_shown: 4.6
     segments: []
   - slug: kycaid
     name: KYCAID
     award: null
-    tagline: CPF/CNPJ verification with hybrid automation and manual review fallback.
-    coverage: Global, strong in LatAm
+    tagline: Configurable KYC flows with CPF number checks among its country modules.
+    coverage: Global
     size: null
     pros:
-    - Reads CPF and CNPJ formats natively
-    - Configurable workflow builder
-    - Human review for edge cases
+    - CPF number checks available as a pay-as-you-go module
+    - Customisable verification flows from one dashboard
+    - Company check (KYB) covering UBOs and authorised persons
     cons:
-    - Smaller local support team than regional specialists
-    - Fewer native LatAm integrations than local vendors
-    - Newer to the Brazilian market specifically
-    legacy_price_shown: $99/mo
+    - Smaller watchlist database than category leaders
+    - Fewer native integrations
+    - Company check and ongoing monitoring prices are not published
+    legacy_price_shown: From €0.75/verification
     legacy_rating_shown: 4.6
     segments: []
   - slug: trulioo
     name: Trulioo
     award: Best for Multi-Country Expansion
-    tagline: Combines Brazil coverage with a wider Latin American registry network.
-    coverage: Global, LatAm coverage
+    tagline: One platform for person and business checks across 195 countries, for teams expanding beyond Brazil.
+    coverage: Global, 195 countries
     size: null
     pros:
-    - Useful for teams expanding across multiple LatAm markets
-    - Simple pay-as-you-go pricing
+    - One integration covers person and business checks across 195 countries
+    - Database checks for non-documentary identity proofing
     - Combines individual and business checks
     cons:
-    - Local document-fraud detection less deep than Brazil-only vendors
-    - Watchlist screening sold separately
-    - Interface feels dated versus newer entrants
-    legacy_price_shown: $0.85/check
+    - No published pricing; rates are quoted on request
+    - Needs meaningful technical resources to integrate
+    - Leans toward a data API rather than a no-code platform
+    legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.4
     segments: []
   - slug: null
@@ -303,7 +303,7 @@ brazil:
     coverage: Brazil-focused
     size: null
     pros:
-    - Deepest local CPF/CNPJ registry integration
+    - Local CPF/CNPJ registry integration
     - Strong document-fraud detection for Brazilian IDs
     - Established relationships with Brazilian institutions
     cons:
@@ -319,69 +319,69 @@ canada:
   - slug: kycaid
     name: KYCAID
     award: Editor's Choice
-    tagline: FINTRAC-aligned onboarding workflows with a configurable rule engine.
+    tagline: Configurable onboarding flows with built-in AML screening and published per-verification prices.
     coverage: Global
     size: null
     pros:
-    - Configurable workflow builder for Canadian document sets
-    - Human review fallback for edge cases
-    - Straightforward pricing
+    - Customisable verification flows from one dashboard
+    - Built-in PEP and sanctions screening with ongoing monitoring
+    - Published per-verification prices from €0.75
     cons:
-    - Smaller Canadian client base than legacy vendors
-    - Bilingual support depth varies by feature
-    - Newer to the Canadian market specifically
-    legacy_price_shown: $99/mo
+    - Prices are published in euros, not Canadian dollars
+    - Fewer native integrations
+    - Smaller watchlist database than category leaders
+    legacy_price_shown: From €0.75/verification
     legacy_rating_shown: 4.6
     segments: []
   - slug: veriff
     name: Veriff
     award: Best for Biometric Accuracy
-    tagline: High-confidence liveness checks tuned for Canadian ID formats.
+    tagline: Passive liveness tested by iBeta to Level 2, with 12,500+ supported ID documents.
     coverage: Global
     size: null
     pros:
-    - Industry-leading liveness detection
-    - Reads passports, provincial licences, and PR cards
-    - Median decision time under 30 seconds
+    - Passive liveness tested by iBeta to ISO/IEC 30107-3 Level 2
+    - Supports 12,500+ ID documents from 230+ countries and territories, per Veriff
+    - Published self-serve pricing from $0.80 per verification
     cons:
-    - AML/watchlist screening sold separately
-    - Enterprise-leaning contracts
-    - Onboarding integration can take weeks
-    legacy_price_shown: Custom pricing
+    - AML/watchlist screening is a paid add-on ($0.64 per verification)
+    - Per-verification fees sit on top of a monthly minimum
+    - Some G2 reviewers report verification glitches
+    legacy_price_shown: From $0.80/verification ($49/mo min)
     legacy_rating_shown: 4.6
     segments: []
   - slug: onfido
     name: Onfido
-    award: Best Bilingual EN/FR Support
-    tagline: Broad document coverage with strong bilingual EN/FR onboarding flows.
+    award: Best for Developer SDKs
+    tagline: Broad document coverage with SDKs, APIs and a no-code Workflow Studio.
     coverage: Global
     size: null
     pros:
-    - Strong bilingual EN/FR flow support
-    - Broad document-type coverage
-    - Solid liveness detection
+    - Strong developer SDKs and API tooling
+    - More than 2,500 document types across 195 countries
+    - Workflow Studio no-code builder
     cons:
     - AML/watchlist screening is a separate module
-    - Enterprise-oriented pricing
-    - Onboarding can take several weeks
+    - No published pricing; quoted via Entrust sales
+    - Mixed reviews on support responsiveness
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.6
     segments: []
   - slug: trulioo
     name: Trulioo
-    award: Best for PIPEDA Data Residency
-    tagline: Canadian-headquartered vendor with local data-residency options.
+    award: Best Canadian-Headquartered Vendor
+    tagline: Vancouver-headquartered vendor verifying people and businesses across 195 countries.
     coverage: Global, HQ in Canada
     size: null
     pros:
-    - Canadian data-residency options for PIPEDA alignment
-    - Wide international document coverage
-    - Simple pay-as-you-go pricing
+    - Headquartered in Vancouver, Canada
+    - 14,000+ ID document types and 700M business entities, per Trulioo
+    - Database checks for non-documentary identity proofing
     cons:
-    - Watchlist screening sold as an add-on
-    - Interface feels dated versus newer entrants
-    - UBO-mapping depth varies by country
-    legacy_price_shown: $0.95/check
+    - No published pricing; rates are quoted on request
+    - Needs meaningful technical resources to integrate
+    - Leans toward a data API rather than a no-code platform
+    legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.5
     segments: []
 cheap-kyc:
@@ -390,69 +390,69 @@ cheap-kyc:
   - slug: sumsub
     name: Sumsub
     award: Editor's Choice
-    tagline: Pay-as-you-go pricing that scales smoothly as check volume grows.
+    tagline: Published per-verification pricing from $1.35, with a 14-day free trial.
     coverage: Global
     size: null
     pros:
-    - No-code workflow builder included at every tier
-    - Volume discounts apply automatically
-    - Fast approval times
+    - Published per-verification prices on two self-serve plans
+    - 14-day free trial with 50 free checks
+    - Basic plan includes liveness, face match, reusable KYC, and email and phone checks
     cons:
-    - Per-check pricing can add up at very high volume
-    - Advanced fraud tools cost extra
-    - Onboarding support is largely self-serve
-    legacy_price_shown: $0.99/check
+    - $149 monthly minimum on the cheapest plan
+    - AML screening needs the $1.85 Compliance plan, with a $299 monthly minimum
+    - Fraud prevention, KYB and transaction monitoring are only in the custom plan
+    legacy_price_shown: From $1.35/verification
     legacy_rating_shown: 4.6
     segments: []
   - slug: kycaid
     name: KYCAID
     award: null
-    tagline: Transparent per-check pricing with volume discounts published up front.
+    tagline: Published per-verification bundles from €0.75, with €50 credit on registration.
     coverage: Global
     size: null
     pros:
-    - Lowest published per-check price in this category
-    - No mandatory minimum commitment
-    - Core sanctions/PEP screening included by default
+    - Published per-verification prices with €50 starting credit
+    - AML screening included from the €0.85 Standard bundle
+    - Country number checks from €0.05 per check
     cons:
-    - Advanced automation features cost extra
+    - Company check and monitoring prices are not published
     - Smaller watchlist database than enterprise vendors
-    - Support hours skew to EU business hours
-    legacy_price_shown: $0.35/check
+    - Custom volume pricing starts only at 10,000 verifications a month
+    legacy_price_shown: From €0.75/verification
     legacy_rating_shown: 4.6
     segments: []
   - slug: trulioo
     name: Trulioo
-    award: Best Pay-As-You-Go
-    tagline: Simple pay-as-you-go pricing with no annual contract required.
+    award: Best for Non-Documentary Checks
+    tagline: Per-transaction pricing model listed on G2, with rates quoted on request.
     coverage: Global
     size: null
     pros:
-    - No long-term contract required
-    - Wide international document coverage
-    - Combines individual and business checks in one API
+    - Per-transaction pricing model with a free trial, per its G2 listing
+    - Database checks for non-documentary identity proofing
+    - Combines individual and business checks in one platform
     cons:
-    - Interface feels dated versus newer entrants
-    - Watchlist screening sold separately
-    - Discount tiers require higher monthly volume
-    legacy_price_shown: $0.75/check
+    - No published rates, so costs cannot be compared up front
+    - Needs meaningful technical resources to integrate
+    - Leans toward a data API rather than a no-code platform
+    legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.4
     segments: []
   - slug: null
     name: Ondato
-    award: Best Free Tier
-    tagline: A genuinely usable free tier for testing before committing budget.
+    award: Self-Serve EU Option
+    tagline: Self-serve KYC from Ondato, the London-headquartered KYC and AML vendor.
     coverage: Strongest in EU
     size: null
     pros:
-    - Free tier covers real integration testing, beyond a demo
     - Fast self-serve setup
-    - Simple, published pricing page
+    - Built by an established KYC and AML vendor
+    - Ondato also makes the free AMLRanger screening assistant
     cons:
     - Registry depth lighter outside EU
     - Smaller support team than larger vendors
-    - Advanced STP automation costs extra
-    legacy_price_shown: Free tier
+    - Not yet reviewed by BeVerified; confirm current pricing with the vendor
+    legacy_price_shown: See vendor site
     legacy_rating_shown: 4.4
     segments: []
 crypto:
@@ -461,52 +461,52 @@ crypto:
   - slug: sumsub
     name: Sumsub
     award: Editor's Choice
-    tagline: Bundles onboarding KYC with wallet risk scoring and Travel Rule messaging.
+    tagline: Onboarding KYC, AML screening and Travel Rule support in one platform, with published pricing.
     coverage: Global
     size: SMB to Enterprise
     pros:
-    - Wallet risk scoring built into the same platform as onboarding
-    - No-code workflow builder
-    - Fast approval, avg. 40 seconds
+    - Travel Rule support included in the published plans
+    - Used by crypto businesses including Bybit and Wirex
+    - Stated average verification time of 20 seconds
     cons:
-    - Per-verification pricing can add up at scale
-    - On-chain forensics less deep than dedicated analytics vendors
-    - Advanced fraud tools cost extra
-    legacy_price_shown: $1.99/verification
+    - Monthly minimums of $149 and $299 on the published plans
+    - No wallet screening or on-chain analytics listed in its features
+    - Fraud prevention and transaction monitoring are only in the custom plan
+    legacy_price_shown: From $1.35/verification
     legacy_rating_shown: 4.7
     segments: []
   - slug: kycaid
     name: KYCAID
     award: null
-    tagline: Modular on-chain/off-chain workflow with manual review for high-risk wallets.
+    tagline: Configurable KYC and AML flows for exchanges and platforms, with source-of-funds checks.
     coverage: Global
     size: SMB to Mid-market
     pros:
-    - Combines wallet screening with onboarding KYC in one flow
-    - Configurable risk thresholds
-    - Human review for edge-case wallets
+    - Source of funds and payment method checks as add-on modules
+    - Built-in PEP and sanctions screening with ongoing monitoring
+    - Customisable verification flows from one dashboard
     cons:
-    - On-chain analytics shallower than dedicated blockchain-forensics vendors
-    - Smaller Travel Rule protocol network
-    - Newer to crypto specifically
-    legacy_price_shown: $149/mo
+    - No wallet screening or on-chain analytics listed
+    - No Travel Rule support listed
+    - Smaller watchlist database than category leaders
+    legacy_price_shown: From €0.75/verification
     legacy_rating_shown: 4.6
     segments: []
   - slug: complyadvantage
     name: ComplyAdvantage
     award: Best for Enterprise Risk Data
-    tagline: Off-chain sanctions and PEP data paired with wallet-risk feeds for VASPs.
+    tagline: Off-chain sanctions, PEP and adverse-media data with real-time transaction monitoring.
     coverage: Global
-    size: Enterprise
+    size: SMB to Enterprise
     pros:
-    - Real-time sanctions and PEP data
-    - Strong transaction-monitoring rules engine
-    - Trusted by regulated exchanges
+    - Sanctions, PEP and adverse-media screening with ongoing monitoring
+    - Real-time transaction monitoring and payment screening
+    - Starter plan from $99/month is published
     cons:
     - Not a native blockchain-analytics engine
-    - Steep learning curve for smaller teams
-    - Pricing is not published
-    legacy_price_shown: Custom pricing
+    - Initial setup can be involved, per user reviews
+    - No identity verification, so onboarding KYC needs a second vendor
+    legacy_price_shown: From $99/mo
     legacy_rating_shown: 4.6
     segments: []
   - slug: null
@@ -516,7 +516,7 @@ crypto:
     coverage: Global
     size: Mid-market to Enterprise
     pros:
-    - Deepest on-chain forensics in this category
+    - Dedicated on-chain forensics and KYT tooling
     - Address Screening flags sanctioned wallets pre-transfer
     - Widely trusted by regulators and law enforcement
     cons:
@@ -529,11 +529,11 @@ crypto:
   - slug: null
     name: Notabene
     award: Best for Travel Rule Messaging
-    tagline: Protocol-interoperable IVMS101 message exchange between VASPs.
+    tagline: Hosted IVMS101 message exchange between VASPs.
     coverage: Global, strong in EU
     size: Mid-market to Enterprise
     pros:
-    - Broad Travel Rule protocol interoperability (TRP, OpenVASP, Shyft)
+    - Hosted SaaS with a fast path to go live
     - Built specifically around FATF R.16 workflows
     - Strong counterparty due-diligence tooling
     cons:
@@ -549,51 +549,51 @@ e-kyc:
   - slug: kycaid
     name: KYCAID
     award: Editor's Choice
-    tagline: Modular eKYC onboarding with a human-in-the-loop fallback for documents automated checks reject.
+    tagline: Modular eKYC onboarding with document, face and liveness checks in a customisable flow.
     coverage: Global
     size: SMB to Mid-market
     pros:
-    - Hybrid AI + manual review recovers borderline scans
-    - Configurable workflow builder, no code
-    - White-label onboarding UI
+    - Document and face verification with liveness checks
+    - Customisable verification flows from one dashboard, with multiple workspaces
+    - White labeling on the Enterprise plan
     cons:
     - Smaller watchlist database than category leaders
     - Fewer native integrations
-    - Mobile SDK is newer
-    legacy_price_shown: $99/mo
+    - Native mobile SDKs are not documented in its public docs
+    legacy_price_shown: From €0.75/verification
     legacy_rating_shown: 4.7
     segments: []
   - slug: veriff
     name: Veriff
     award: Best for Biometric Accuracy
-    tagline: Selfie-first eKYC built around fast, high-confidence liveness checks.
-    coverage: Global, strongest in EU
-    size: Mid-market to Enterprise
+    tagline: Document and selfie eKYC with passive liveness that detects deepfakes and injected media, per Veriff.
+    coverage: Global, 230+ countries and territories
+    size: SMB to Enterprise
     pros:
-    - Industry-leading liveness detection
-    - Reads NFC chip and MRZ across 190+ document types
-    - Median decision time under 30 seconds
+    - Passive liveness tested by iBeta to ISO/IEC 30107-3 Level 2
+    - Supports 12,500+ ID documents from 230+ countries and territories, per Veriff
+    - AI decisions plus verification specialists on the Plus and Premium plans
     cons:
-    - AML/watchlist screening sold as a separate module
-    - Enterprise-leaning contracts
-    - Onboarding integration can take several weeks
-    legacy_price_shown: Custom pricing
+    - AML/watchlist screening is a paid add-on ($0.64 per verification)
+    - Per-verification fees sit on top of a monthly minimum
+    - End users on Trustpilot report selfie capture failures
+    legacy_price_shown: From $0.80/verification ($49/mo min)
     legacy_rating_shown: 4.6
     segments: []
   - slug: onfido
     name: Onfido
     award: Best for Global Coverage
     tagline: Document and biometric eKYC with broad international document support.
-    coverage: Global, strongest in UK/EU
+    coverage: Global, 195 countries
     size: Mid-market to Enterprise
     pros:
     - Strong developer SDKs
-    - Broad document-type coverage
-    - Solid liveness detection
+    - More than 2,500 document types across 195 countries
+    - Liveness tested by iBeta to ISO/IEC 30107-3 (Level 2, 2022)
     cons:
     - AML/watchlist screening is a separate module
-    - Enterprise-oriented pricing
-    - Onboarding can take several weeks
+    - No published pricing; quoted via Entrust sales
+    - Mixed reviews on support responsiveness
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.6
     segments: []
@@ -601,17 +601,17 @@ e-kyc:
     name: Jumio
     award: Most Widely Deployed
     tagline: Widely adopted eKYC and identity-proofing platform for global onboarding.
-    coverage: Global, strong in US
+    coverage: Global, 200+ countries and territories
     size: Mid-market to Enterprise
     pros:
-    - High brand recognition and trust
-    - Mature fraud-detection models
-    - Strong regional data-center coverage
+    - More than 1 billion transactions processed
+    - 5,000+ ID types across 200 countries and territories
+    - Liveness tested by iBeta to ISO/IEC 30107-3 Level 2
     cons:
-    - Higher cost than budget alternatives
-    - Contracts often require annual commitment
-    - Customization needs dev resources
-    legacy_price_shown: $1.15/verification
+    - Pricing only via sales quote, with no published rate card
+    - Third-party data (Vendr) puts the median annual contract at $55,850
+    - Heavier integration lift for teams without dedicated developers
+    legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.5
     segments: []
 identity-verification:
@@ -620,50 +620,50 @@ identity-verification:
   - slug: kycaid
     name: KYCAID
     award: Editor's Choice
-    tagline: Continuous verification that reuses the same engine at onboarding and at step-up moments.
+    tagline: Customisable identity verification flows covering document, face and liveness checks in 200+ countries.
     coverage: Global
     size: SMB to Mid-market
     pros:
-    - One workflow builder covers onboarding and re-verification
-    - Configurable step-up triggers
-    - Human-in-the-loop fallback for edge cases
+    - Customisable verification flows from one dashboard
+    - Document and face verification with liveness checks
+    - Ongoing AML monitoring after onboarding
     cons:
-    - Deepfake-specific detection less mature than category specialists
-    - Smaller device-intelligence dataset
-    - Newer to ongoing-assurance use cases
-    legacy_price_shown: $99/mo
+    - Native mobile SDKs are not documented in its public docs
+    - Fewer native integrations
+    - Security certifications are stated in its privacy policy, with no certificate published
+    legacy_price_shown: From €0.75/verification
     legacy_rating_shown: 4.6
     segments: []
   - slug: persona
     name: Persona
     award: Best for Flexible Orchestration
-    tagline: Configurable verification flows spanning onboarding, login, and high-risk transactions.
-    coverage: Global, strong in US
+    tagline: Configurable no-code verification flows built from reusable templates.
+    coverage: Global
     size: Mid-market to Enterprise
     pros:
     - Highly flexible no-code flow builder
-    - Strong device and behavioral signal layer
+    - Graph link analysis for coordinated fraud
     - Good for teams needing varied flows per use case
     cons:
-    - Fewer built-in AML watchlists than category leaders
-    - Best suited to teams with dedicated implementation time
-    - Pricing is not published
-    legacy_price_shown: Custom pricing
+    - Less specialized AML data depth than dedicated screening vendors
+    - Flexibility means a steeper configuration curve
+    - Only the entry Essential plan is priced, with a 12-month minimum term
+    legacy_price_shown: From $250/mo
     legacy_rating_shown: 4.6
     segments: []
   - slug: onfido
     name: Onfido
     award: Best for Biometric Liveness
-    tagline: Liveness at presentation-attack-detection grade, built for login and high-risk moments as well as onboarding.
-    coverage: Global, strongest in UK/EU
+    tagline: iBeta-tested liveness and face match on top of document checks across 195 countries.
+    coverage: Global, 195 countries
     size: Mid-market to Enterprise
     pros:
-    - Industry-leading liveness and PAD
-    - Broad document-type support
+    - Liveness tested by iBeta to ISO/IEC 30107-3 (Level 2, 2022)
+    - More than 2,500 document types across 195 countries
     - Strong developer SDKs
     cons:
-    - Ongoing/step-up verification pricing is enterprise-oriented
-    - Onboarding can take several weeks
+    - Newest liveness version (Motion v2.0) holds an iBeta Level 1 letter, not Level 2
+    - No published pricing; quoted via Entrust sales
     - AML/watchlist screening is separate
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.7
@@ -672,17 +672,17 @@ identity-verification:
     name: Jumio
     award: Most Popular
     tagline: Identity assurance reused across the account lifecycle for global platforms.
-    coverage: Global, strong in US
+    coverage: Global, 200+ countries and territories
     size: Mid-market to Enterprise
     pros:
-    - High brand recognition and trust
-    - Mature fraud-detection models
-    - Strong regional data-center coverage
+    - More than 1 billion transactions processed
+    - Jumio Watch for continuous risk analysis after onboarding
+    - Liveness tested by iBeta to ISO/IEC 30107-3 Level 2
     cons:
-    - Higher cost than budget alternatives
-    - Contracts often require annual commitment
-    - Customization needs dev resources
-    legacy_price_shown: $1.15/verification
+    - Pricing only via sales quote, with no published rate card
+    - Third-party data (Vendr) puts the median annual contract at $55,850
+    - Heavier integration lift for teams without dedicated developers
+    legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.5
     segments: []
 india:
@@ -691,52 +691,52 @@ india:
   - slug: kycaid
     name: KYCAID
     award: Editor's Choice
-    tagline: Aadhaar-enabled eKYC with CKYC registry lookups built in.
-    coverage: Global, strong in South Asia
+    tagline: Configurable eKYC flows with an Aadhaar OTP check listed among its country modules.
+    coverage: Global
     size: null
     pros:
-    - Aadhaar and CKYC integration out of the box
-    - Configurable workflow builder
-    - Human review fallback for edge cases
+    - Aadhaar SMS OTP check listed on its pricing page
+    - Customisable verification flows from one dashboard
+    - Published per-verification prices from €0.75
     cons:
-    - Smaller local support team than India-only vendors
-    - Fewer native UPI integrations than local specialists
-    - Newer to the Indian market specifically
-    legacy_price_shown: $99/mo
+    - No CKYC registry lookup listed
+    - Smaller watchlist database than category leaders
+    - Fewer native integrations
+    legacy_price_shown: From €0.75/verification
     legacy_rating_shown: 4.6
     segments: []
   - slug: onfido
     name: Onfido
     award: Best Document-Fraud Detection
-    tagline: Strong document-fraud detection layered on top of Aadhaar/PAN checks.
+    tagline: AI document verification with NFC chip reading where supported, plus biometric liveness.
     coverage: Global
     size: null
     pros:
-    - Strong document-fraud detection models
-    - Broad document-type coverage
-    - Solid liveness detection
+    - AI document models built on tens of millions of verifications
+    - More than 2,500 document types across 195 countries
+    - Liveness tested by iBeta to ISO/IEC 30107-3 (Level 2, 2022)
     cons:
-    - CKYC integration requires additional setup
-    - Enterprise-oriented pricing
-    - Onboarding can take several weeks
+    - No Aadhaar, PAN or CKYC integrations listed on Entrust pages
+    - No published pricing; quoted via Entrust sales
+    - AML/watchlist screening is a separate module
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.6
     segments: []
   - slug: trulioo
     name: Trulioo
     award: Best for Multi-Country Expansion
-    tagline: Combines India coverage with a wider South Asian registry network.
-    coverage: Global, South Asia coverage
+    tagline: One platform for person and business checks across 195 countries, for teams expanding beyond India.
+    coverage: Global, 195 countries
     size: null
     pros:
-    - Useful for teams expanding across multiple South Asian markets
-    - Simple pay-as-you-go pricing
+    - One integration covers person and business checks across 195 countries
+    - Database checks for non-documentary identity proofing
     - Combines individual and business checks
     cons:
-    - CKYC integration depth lighter than India-only vendors
-    - Watchlist screening sold separately
-    - Interface feels dated versus newer entrants
-    legacy_price_shown: $0.85/check
+    - No published pricing; rates are quoted on request
+    - Needs meaningful technical resources to integrate
+    - Leans toward a data API rather than a no-code platform
+    legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.4
     segments: []
   - slug: signzy
@@ -746,11 +746,11 @@ india:
     coverage: India-focused
     size: null
     pros:
-    - Deepest India-specific registry integration
+    - Deep India-specific registry integration (Aadhaar, PAN, CKYC)
     - Strong relationships with Indian banks
     - PAN cross-checking built in
     cons:
-    - Limited coverage outside India
+    - Depth is concentrated in India; US and Middle East coverage is newer
     - Smaller international brand recognition
     - Pricing not published
     legacy_price_shown: Custom pricing
@@ -762,69 +762,69 @@ kyb:
   - slug: kycaid
     name: KYCAID
     award: Editor's Choice
-    tagline: Automated UBO mapping backed by a Compliance-as-a-Service team for jurisdictions too messy for pure AI.
+    tagline: Company checks covering corporate documents, business address, UBOs and authorised persons, inside a customisable flow.
     coverage: Global
     size: SMB to Mid-market
     pros:
-    - Hybrid automation plus manual escalation for opaque ownership chains
-    - Highly customizable rule engine
-    - Responsive dedicated compliance support
+    - Company check covers UBOs and authorised persons
+    - Customisable verification flows from one dashboard
+    - Dedicated account manager and compliance team on the Enterprise plan
     cons:
-    - Registry coverage thinner outside core markets
-    - Smaller brand recognition than legacy vendors
-    - Reporting dashboards feel basic
-    legacy_price_shown: $129/mo
+    - Company check prices are not published
+    - Smaller watchlist database than category leaders
+    - Fewer native integrations
+    legacy_price_shown: From €0.75/verification
     legacy_rating_shown: 4.7
     segments: []
   - slug: veriff
     name: Veriff
-    award: Best for Director Verification
-    tagline: Ties the onboarding user biometrically to the company's listed directors in real time.
-    coverage: Global, strongest in EU
-    size: Mid-market to Enterprise
+    award: Best for KYB Plus Biometric IDV
+    tagline: Biometric identity verification with KYB from 300+ jurisdictions, offered through a limited access program.
+    coverage: Global
+    size: SMB to Enterprise
     pros:
-    - Real-time director-to-applicant biometric match
-    - Strong in high-risk sectors like crypto and high-value payments
-    - Fast onboarding flow
+    - KYB draws on register data from 300+ jurisdictions, per Veriff
+    - Passive liveness tested by iBeta to Level 2 for checking the people behind a business
+    - Published self-serve pricing for individual checks
     cons:
-    - UBO registry depth narrower than dedicated KYB specialists
-    - Pricing skews enterprise
-    - Newer entrant to business verification specifically
-    legacy_price_shown: Custom pricing
+    - KYB offered only through a limited access program as of Oct 2026
+    - KYB pricing is not published
+    - AML/watchlist screening is a paid add-on
+    legacy_price_shown: From $0.80/verification ($49/mo min)
     legacy_rating_shown: 4.6
     segments: []
   - slug: complyadvantage
     name: ComplyAdvantage
     award: Best for Enterprise Risk Data
-    tagline: Layers UBO risk scoring on top of its AML sanctions and adverse-media data.
+    tagline: Screens companies against sanctions, PEP and adverse-media data, with ongoing monitoring.
     coverage: Global
-    size: Enterprise
+    size: SMB to Enterprise
     pros:
-    - Deep risk-data overlay on top of ownership structures
-    - Strong API-first architecture
-    - Trusted by large regulated enterprises
+    - Company screening against sanctions, watchlists and adverse media
+    - Ongoing monitoring of screened entities
+    - Starter plan from $99/month is published
     cons:
-    - Steep learning curve for smaller teams
-    - Usually needs an implementation partner
-    - Pricing is not published
-    legacy_price_shown: Custom pricing
+    - No company registry or UBO lookups listed in its features
+    - Initial setup can be involved, per user reviews
+    - Enterprise tier with unlimited usage is quoted only
+    legacy_price_shown: From $99/mo
     legacy_rating_shown: 4.6
     segments: []
   - slug: trulioo
     name: Trulioo
     award: Best for Global Registry Reach
-    tagline: GlobalGateway network reaches business registries across 100+ countries.
+    tagline: KYB on 700 million business entities across 195 countries, per Trulioo.
     coverage: Global
-    size: SMB to Mid-market
+    size: Enterprise
     pros:
-    - Wide international registry coverage
-    - Simple pay-as-you-go pricing
-    - Combines individual and business verification in one API
+    - KYB on 700M business entities, per Trulioo
+    - Combines individual and business verification in one platform
+    - Credit decisioning added to its KYB product in November 2025
     cons:
-    - UBO-mapping depth varies by country
-    - Interface feels dated versus newer entrants
-    - Watchlist screening is an add-on
-    legacy_price_shown: $0.95/check
+    - No published pricing; rates are quoted on request
+    - Needs meaningful technical resources to integrate
+    - Leans toward a data API rather than a no-code platform
+    legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.5
     segments: []
   - slug: null
@@ -847,11 +847,11 @@ kyb:
   - slug: null
     name: Kyckr
     award: Best for Registry Breadth
-    tagline: Direct feeds from 250+ global company registries for ownership verification.
+    tagline: Direct feeds from global company registries for ownership verification.
     coverage: Global
     size: Mid-market to Enterprise
     pros:
-    - Broadest direct-registry network in this category
+    - Direct-registry network rather than cached data
     - Strong for cross-border corporate structures
     - API-first data delivery
     cons:
@@ -863,19 +863,19 @@ kyb:
     segments: []
   - slug: null
     name: Ondato
-    award: Best Budget KYB
-    tagline: Affordable UBO mapping and registry checks for SMB compliance teams.
+    award: Best for SMB KYB
+    tagline: UBO mapping and registry checks for SMB compliance teams.
     coverage: Strongest in EU
     size: SMB
     pros:
-    - Lowest per-check pricing in this category
+    - Aimed at SMB compliance teams
     - Fast self-serve setup
     - Covers document plus registry checks in one flow
     cons:
     - Registry depth lighter in emerging markets
     - Smaller support team than enterprise vendors
-    - Advanced STP automation costs extra
-    legacy_price_shown: $0.60/check
+    - Not yet reviewed by BeVerified; confirm current pricing with the vendor
+    legacy_price_shown: See vendor site
     legacy_rating_shown: 4.3
     segments: []
 liveness-detection:
@@ -884,41 +884,41 @@ liveness-detection:
   - slug: veriff
     name: Veriff
     award: Editor's Choice
-    tagline: Fast liveness capture tuned for high-conversion consumer onboarding.
-    coverage: Global, strongest in EU
+    tagline: Passive liveness with deepfake and injected-media detection, tested by iBeta to Level 2.
+    coverage: Global, 230+ countries and territories
     size: null
     pros:
-    - Median capture time under 30 seconds including document scan
-    - High-confidence liveness scoring
-    - Good mobile SDK performance
+    - Passive liveness tested by iBeta to ISO/IEC 30107-3 Level 1 and Level 2
+    - Deepfake and injected-media detection, per Veriff
+    - Hosted verification page, SDKs and webhooks
     cons:
-    - Liveness sold as part of a broader package, not standalone
-    - Enterprise-leaning contracts
-    - Pricing not published
-    legacy_price_shown: Custom pricing
+    - Per-verification fees sit on top of a monthly minimum
+    - End users on Trustpilot report selfie capture failures
+    - Some G2 reviewers report verification glitches and call the service expensive
+    legacy_price_shown: From $0.80/verification ($49/mo min)
     legacy_rating_shown: 4.6
     segments: []
   - slug: onfido
     name: Onfido
     award: Best Bundled with Document Checks
     tagline: Liveness detection bundled into a broader document-and-biometric flow.
-    coverage: Global, strongest in UK/EU
+    coverage: Global, 195 countries
     size: null
     pros:
     - One vendor for liveness plus document verification
-    - Broad document-type coverage
+    - More than 2,500 document types across 195 countries
     - Strong developer SDKs
     cons:
-    - Liveness alone is not sold standalone
-    - Enterprise-oriented pricing
-    - Onboarding can take several weeks
+    - Newest liveness version (Motion v2.0) holds an iBeta Level 1 letter, not Level 2
+    - No published pricing; quoted via Entrust sales
+    - Mixed reviews on support responsiveness
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.6
     segments: []
   - slug: null
     name: iProov
     award: null
-    tagline: Cloud-verified liveness with industry-leading presentation-attack accuracy.
+    tagline: Cloud-verified liveness focused on presentation-attack resistance.
     coverage: Global
     size: null
     pros:
@@ -955,69 +955,69 @@ mexico:
   - slug: sumsub
     name: Sumsub
     award: Editor's Choice
-    tagline: Self-serve platform built to scale with growing fintech applicant volume.
+    tagline: Self-serve plans with published pricing for fintechs onboarding growing applicant volume.
     coverage: Global
     size: null
     pros:
-    - No-code workflow builder
+    - Published per-verification pricing with a 14-day free trial
     - Combines document and biometric checks
-    - Fast approval, avg. 40 seconds
+    - Stated average verification time of 20 seconds
     cons:
-    - Per-check pricing can add up at high volume
-    - Advanced fraud tools cost extra
-    - Local registry depth lighter than Mexico-only vendors
-    legacy_price_shown: $0.99/check
+    - Monthly minimums of $149 and $299 on the published plans
+    - Non-document database checks are only in the custom, quoted plan
+    - Some reviewers report occasional false-positive flags
+    legacy_price_shown: From $1.35/verification
     legacy_rating_shown: 4.6
     segments: []
   - slug: kycaid
     name: KYCAID
     award: null
-    tagline: CNBV/Ley Fintech-aligned onboarding with a configurable rule engine.
-    coverage: Global, strong in LatAm
+    tagline: Configurable KYC flows with CURP number checks among its country modules.
+    coverage: Global
     size: null
     pros:
-    - Reads INE and CURP-linked documents
-    - Configurable workflow builder
-    - Human review fallback for edge cases
+    - CURP number checks available as a pay-as-you-go module
+    - Customisable verification flows from one dashboard
+    - 24/7 chat support with a stated 15-minute response SLA
     cons:
-    - Smaller local support team than regional specialists
-    - Fewer native LatAm integrations than local vendors
-    - Newer to the Mexican market specifically
-    legacy_price_shown: $99/mo
+    - Smaller watchlist database than category leaders
+    - Fewer native integrations
+    - Company check and ongoing monitoring prices are not published
+    legacy_price_shown: From €0.75/verification
     legacy_rating_shown: 4.6
     segments: []
   - slug: veriff
     name: Veriff
     award: Best for Biometric Accuracy
-    tagline: High-confidence liveness checks tuned for Mexican ID formats.
+    tagline: Passive liveness and document checks covering 12,500+ ID documents, per Veriff.
     coverage: Global
     size: null
     pros:
-    - Industry-leading liveness detection
-    - Reads INE and passport formats
-    - Median decision time under 30 seconds
+    - Passive liveness tested by iBeta to ISO/IEC 30107-3 Level 2
+    - Supports 12,500+ ID documents from 230+ countries and territories, per Veriff
+    - Published self-serve pricing from $0.80 per verification
     cons:
-    - AML/watchlist screening sold separately
-    - Enterprise-leaning contracts
-    - Onboarding integration can take weeks
-    legacy_price_shown: Custom pricing
+    - AML/watchlist screening is a paid add-on ($0.64 per verification)
+    - Per-verification fees sit on top of a monthly minimum
+    - End users on Trustpilot report selfie capture failures
+    legacy_price_shown: From $0.80/verification ($49/mo min)
     legacy_rating_shown: 4.6
     segments: []
   - slug: trulioo
     name: Trulioo
     award: Best for Multi-Country Expansion
-    tagline: Combines Mexico coverage with a wider Latin American registry network.
-    coverage: Global, LatAm coverage
+    tagline: One platform for person and business checks across 195 countries, for teams expanding beyond Mexico.
+    coverage: Global, 195 countries
     size: null
     pros:
-    - Useful for teams expanding across multiple LatAm markets
-    - Simple pay-as-you-go pricing
+    - One integration covers person and business checks across 195 countries
+    - Database checks for non-documentary identity proofing
     - Combines individual and business checks
     cons:
-    - Local document-fraud detection less deep than Mexico-only vendors
-    - Watchlist screening sold separately
-    - Interface feels dated versus newer entrants
-    legacy_price_shown: $0.85/check
+    - No published pricing; rates are quoted on request
+    - Needs meaningful technical resources to integrate
+    - Leans toward a data API rather than a no-code platform
+    legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.4
     segments: []
 peru:
@@ -1026,69 +1026,69 @@ peru:
   - slug: sumsub
     name: Sumsub
     award: Editor's Choice
-    tagline: Self-serve platform built to scale with growing fintech applicant volume.
+    tagline: Self-serve plans with published pricing for fintechs onboarding growing applicant volume.
     coverage: Global
     size: null
     pros:
-    - No-code workflow builder
+    - Published per-verification pricing with a 14-day free trial
     - Combines document and biometric checks
-    - Fast approval, avg. 40 seconds
+    - Stated average verification time of 20 seconds
     cons:
-    - Per-check pricing can add up at high volume
-    - Advanced fraud tools cost extra
-    - Local registry depth lighter than Peru-only vendors
-    legacy_price_shown: $0.99/check
+    - Monthly minimums of $149 and $299 on the published plans
+    - Non-document database checks are only in the custom, quoted plan
+    - Some reviewers report occasional false-positive flags
+    legacy_price_shown: From $1.35/verification
     legacy_rating_shown: 4.6
     segments: []
   - slug: kycaid
     name: KYCAID
     award: null
-    tagline: DNI parsing with SBS-aligned onboarding workflows built in.
-    coverage: Global, strong in LatAm
+    tagline: Configurable KYC flows with DNI number checks among its country modules.
+    coverage: Global
     size: null
     pros:
-    - Reads DNI documents natively
-    - Configurable workflow builder
-    - Human review fallback for edge cases
+    - DNI number checks available as a pay-as-you-go module
+    - Customisable verification flows from one dashboard
+    - Built-in PEP and sanctions screening with ongoing monitoring
     cons:
-    - Smaller local support team than regional specialists
-    - Fewer native LatAm integrations than local vendors
-    - Newer to the Peruvian market specifically
-    legacy_price_shown: $99/mo
+    - Smaller watchlist database than category leaders
+    - Native mobile SDKs are not documented in its public docs
+    - Company check and ongoing monitoring prices are not published
+    legacy_price_shown: From €0.75/verification
     legacy_rating_shown: 4.6
     segments: []
   - slug: veriff
     name: Veriff
     award: Best for Biometric Accuracy
-    tagline: High-confidence liveness checks tuned for Peruvian ID formats.
+    tagline: Passive liveness and document checks covering 12,500+ ID documents, per Veriff.
     coverage: Global
     size: null
     pros:
-    - Industry-leading liveness detection
-    - Reads DNI and passport formats
-    - Median decision time under 30 seconds
+    - Passive liveness tested by iBeta to ISO/IEC 30107-3 Level 2
+    - Supports 12,500+ ID documents from 230+ countries and territories, per Veriff
+    - 15-day free trial covering up to 50 sessions
     cons:
-    - AML/watchlist screening sold separately
-    - Enterprise-leaning contracts
-    - Onboarding integration can take weeks
-    legacy_price_shown: Custom pricing
+    - AML/watchlist screening is a paid add-on ($0.64 per verification)
+    - Per-verification fees sit on top of a monthly minimum
+    - Some G2 reviewers report verification glitches
+    legacy_price_shown: From $0.80/verification ($49/mo min)
     legacy_rating_shown: 4.6
     segments: []
   - slug: trulioo
     name: Trulioo
     award: Best for Multi-Country Expansion
-    tagline: Combines Peru coverage with a wider Latin American registry network.
-    coverage: Global, LatAm coverage
+    tagline: One platform for person and business checks across 195 countries, for teams expanding beyond Peru.
+    coverage: Global, 195 countries
     size: null
     pros:
-    - Useful for teams expanding across multiple LatAm markets
-    - Simple pay-as-you-go pricing
+    - One integration covers person and business checks across 195 countries
+    - Database checks for non-documentary identity proofing
     - Combines individual and business checks
     cons:
-    - Local document-fraud detection less deep than Peru-only vendors
-    - Watchlist screening sold separately
-    - Interface feels dated versus newer entrants
-    legacy_price_shown: $0.85/check
+    - No published pricing; rates are quoted on request
+    - Needs meaningful technical resources to integrate
+    - Leans toward a data API rather than a no-code platform
+    legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.4
     segments: []
 travel-rule:
@@ -1131,7 +1131,7 @@ travel-rule:
   - slug: null
     name: VerifyVASP
     award: Best APAC Coverage
-    tagline: Widest VASP network coverage across Asia-Pacific exchanges.
+    tagline: VASP network focused on Asia-Pacific exchanges.
     coverage: Strongest in APAC
     size: null
     pros:
@@ -1196,41 +1196,41 @@ age-verification:
     - Its 99.8% age estimation accuracy figure is a vendor claim, not an independent test
     - A full KYC platform can be more than a simple age gate needs
     - Email and phone based age checks are not listed on its age verification page
-    legacy_price_shown: $1.99/verification
+    legacy_price_shown: From $1.35/verification
     legacy_rating_shown: null
     segments: []
   - slug: incode
     name: Incode
     award: Best on-device age estimation
-    tagline: Face age estimation that runs on the user's phone, so the selfie does not have to leave the device.
+    tagline: On-device face age estimation, backed by passive liveness tested by iBeta to Level 3.
     coverage: Global
     size: Mid-market to Enterprise
     pros:
     - Age and liveness models run on the device
-    - No document upload, external app or redirect for the estimation step
-    - Failed checks are rerouted to another method automatically
+    - Passive liveness tested by iBeta to ISO/IEC 30107-3 Level 3
+    - Non-document and digital ID (mDL, eID, wallet) verification paths
     cons:
-    - Its age assurance page names no specific regulation or regulator approval
-    - The fallback method is not described publicly
+    - Its Age Check Certification Scheme listing is vendor-stated; we did not confirm a register entry
+    - Enterprise-oriented, so pricier for smaller teams
     - No public pricing
-    legacy_price_shown: null
+    legacy_price_shown: Custom pricing
     legacy_rating_shown: null
     segments: []
   - slug: persona
     name: Persona
     award: Most age check methods
-    tagline: The widest menu of age checks we found, from selfie estimation and email inference to ID, database and digital ID.
-    coverage: Global, strong in US
+    tagline: Age checks from selfie estimation and email inference to ID, database and digital ID, in one platform.
+    coverage: Global
     size: Mid-market to Enterprise
     pros:
-    - Selfie age estimation, email-based inference, mobile operator, credit card, ID, database and digital ID checks
+    - Selfie age estimation, email-based inference, phone, credit card, ID, database and digital ID checks
     - Users can reuse a verified age attribute such as 18+
     - Flows are configurable per market and risk level
     cons:
     - You assemble and tune the flows yourself
-    - Custom pricing only
+    - Only the entry plan is priced (from $250/month on a 12-month term); larger plans are quoted
     - Method details sit in help-centre articles rather than a single product page
-    legacy_price_shown: Custom pricing
+    legacy_price_shown: From $250/mo
     legacy_rating_shown: null
     segments: []
   - slug: shufti-pro
@@ -1247,7 +1247,7 @@ age-verification:
     - Its Online Safety Act notes refer to Ofcom's draft codes, so check them against the final guidance
     - Email and mobile based estimation are not listed
     - Database coverage by country is not detailed on the page
-    legacy_price_shown: null
+    legacy_price_shown: Free (10/mo); from $1.50/verification
     legacy_rating_shown: null
     segments: []
   - slug: veriff
@@ -1263,58 +1263,58 @@ age-verification:
     cons:
     - No document fallback described on its age estimation page
     - No published accuracy figures for age estimation
-    - Custom pricing for age estimation
-    legacy_price_shown: Custom pricing
+    - Age estimation is not priced separately in its published plans
+    legacy_price_shown: From $0.80/verification ($49/mo min)
     legacy_rating_shown: null
     segments: []
   - slug: kycaid
     name: KYCAID
     award: Best for document-based checks
-    tagline: Document and selfie verification with database checks, aimed at adult sites and regulated platforms.
+    tagline: Document and face verification with liveness, plus address, tax number and mobile number checks.
     coverage: Global
     size: SMB to Mid-market
     pros:
-    - ID document check with selfie face match
-    - Extra database, SMS and email code checks available
-    - Low published entry price
+    - ID document check with face verification and liveness
+    - Address, tax number and mobile number checks as add-on modules
+    - Published entry price of €0.75 per verification
     cons:
-    - No facial age estimation listed on its age verification page
+    - No facial age estimation listed among its features
     - Document-first flows add friction for simple age gates
     - Names no age assurance certification or regulator approval
-    legacy_price_shown: $99/mo
+    legacy_price_shown: From €0.75/verification
     legacy_rating_shown: null
     segments: []
   - slug: idenfy
     name: iDenfy
     award: Best pay-per-approval pricing
-    tagline: Document and non-document age checks, billed only for approved verifications.
+    tagline: Document and selfie age checks, with an option to pay only for approved verifications.
     coverage: Global
     size: null
     pros:
-    - Document and non-document digital ID workflows
-    - Selfie verification with active or passive liveness
-    - Charges only for approved verifications
+    - Document and selfie verification with liveness
+    - Option to pay only for approved verifications (add-on, +$0.50 per check)
+    - In-house manual review, with 24/7 coverage as an add-on
     cons:
-    - Its age estimation product is not described on the age verification page
+    - $135 monthly minimum on the self-serve plans
     - Names no regulator approval for age assurance
-    - No price shown on the age verification page
-    legacy_price_shown: null
+    - Age-specific pricing is not published separately
+    legacy_price_shown: $1.35/verification
     legacy_rating_shown: null
     segments: []
   - slug: verifymy
     name: VerifyMy
     award: Best age assurance specialist
-    tagline: Age assurance only, including email-based age estimation, with ISO/IEC 27566-1 certification and German KJM approval.
+    tagline: Age assurance and content moderation, including email-based age estimation, with ISO/IEC 27566-1 certification and German KJM approval.
     coverage: Global
     size: null
     pros:
-    - Email address age estimation, plus mobile, credit bureau, facial estimation, ID and credit card checks
-    - States ISO/IEC 27566-1 certification by the Age Check Certification Scheme
+    - Email address age estimation, plus mobile, name and address, facial estimation, ID and credit card checks
+    - ISO/IEC 27566-1 certified, confirmed on the ACCS register
     - States German KJM approval
     cons:
-    - Age assurance only, so KYC or AML needs a second vendor
+    - Not a full KYC or AML platform, so regulated onboarding needs a second vendor
     - Lowest overall score in this list
     - No public pricing
-    legacy_price_shown: null
+    legacy_price_shown: Custom pricing
     legacy_rating_shown: null
     segments: []

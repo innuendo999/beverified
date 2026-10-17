@@ -408,3 +408,9 @@ Open before release: merge `redesign` into `main`; decide on governing law / ope
 26 articles from the old WordPress site (7 guides, 7 research, 12 news) are back at their original URLs, refreshed against primary sources as of October 2026, with internal links to reviews, rankings and sibling articles. /blog/ and the old /category/guide|news|publications/ archives exist; /contact-us/ and /author/beverified/ are restored. Reviews show "Related reading", rankings show "Guides and news". Spec: docs/article-spec.md; validator: scripts/checks/articles.mjs.
 
 Still missing from the GSC list: /providers/age-verification/ (old category: needs an age-verification ranking), /category/providers/ (could point to /providers/ or /use-cases/), /tag/ofac/, and the three one-impression stray URLs.
+
+## Status, Oct 18, 2026 (later): facts re-checked
+
+All 46 provider records re-checked against primary sources (docs/verification-spec.md): numbered sources, evidence labels, certification status, pricing verified Oct 2026, last_verified 2026-10-18, migration notes removed. Ranking cards, category quick answers and articles aligned with the corrected records. Reports per provider in reports/verification/.
+
+Open editorial decisions (scores unchanged until the owner decides): AMLRanger (Ondato's free assistant), Vespia (sold only via Veriff), FullCircl (now nCino Identity Solutions), Onfido (now Entrust IDV), NICE Actimize (being sold), RelyComply (cyber incident 16 Sep 2026; core claims unconfirmed), HorusCheck (nothing verifiable), IDMERIT (no published price), Hawk AI (network claim unconfirmed), SEON (now has document IDV), Shufti Pro (possible upward), Jumio awards "Most Popular"/"Most Widely Deployed" unsupported.

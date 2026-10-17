@@ -30,6 +30,7 @@ All pages are generated from templates + data. There is no hand-written page HTM
 | Font | self-hosted `src/assets/fonts/Geist-Variable.woff2`. Keep the site free of third-party requests, cookies and analytics: the privacy policy promises it |
 | For providers page | `src/placement-options/index.njk` |
 | Field definitions | `docs/data-schema.md` |
+| Fact re-check of a provider (every 90 days) | `docs/verification-spec.md`, validate `node scripts/checks/provider.mjs <slug>`, report in `reports/verification/<slug>.md`. `last_verified` = fact re-check, `updated` = content edit |
 | Design reference (Claude Design export) | `design/` (open with a browser; not deployed) |
 | Search Console / Bing exports | `data/gsc/`, `data/bing/` |
 | Generated reports | `reports/` |
