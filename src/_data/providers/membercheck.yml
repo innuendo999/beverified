@@ -34,7 +34,7 @@ features:
 - Ongoing daily monitoring and alerts.
 - RESTful API, dashboard, and AML consulting services.
 pricing:
-  summary: MemberCheck offers pay-as-you-go and subscription pricing; a third-party-reported entry rate is roughly $90 for 50 scans, though this should be verified directly with MemberCheck before publishing.
+  summary: MemberCheck offers pay-as-you-go and subscription pricing; a third-party-reported entry rate is roughly $90 for 50 scans (third-party report, not confirmed by the vendor).
   plans:
   - tier: Pay-As-You-Go / Subscription
     price: ~$90 / 50 scans
@@ -48,7 +48,7 @@ facts:
   value: ~$90/50 scans (3rd-party est.)
   source: null
 - label: Effective
-  value: Verify before publish
+  value: Not disclosed
   source: null
 - label: Founded
   value: '2007'

@@ -58,9 +58,6 @@ facts:
 - label: Regions
   value: Not disclosed
   source: null
-- label: Note
-  value: Facts pending verification
-  source: null
 pros:
 - Focused specifically on sanctions/PEP/watchlist screening
 - API-based integration for onboarding workflows

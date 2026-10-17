@@ -25,18 +25,18 @@ link:
 last_verified: '2026-07-29'
 verdict: HorusCheck appears in provider listings as a KYC/AML verification tool, but most specifics — founding year, headquarters, pricing, and detailed coverage — could not be independently confirmed from public sources at the time of writing. Treat this page as a provisional, honestly minimal profile until those details are verified directly with the vendor.
 what_is:
-- HorusCheck is listed as a KYC/AML verification provider. Its founding year, headquarters, detailed feature set, and coverage figures are not publicly disclosed in sources available at the time of writing and should be verified directly with the company before publishing specific claims.
+- HorusCheck is listed as a KYC/AML verification provider. Its founding year, headquarters, detailed feature set, and coverage figures are not publicly disclosed in sources available at the time of writing.
 features:
 - Identity verification (general capability, per available listings).
 - KYC and AML checks (general capability, per available listings).
-- Specific feature depth not independently confirmed — verify before publish.
+- Specific feature depth not independently confirmed
 pricing:
-  summary: HorusCheck's pricing is not publicly disclosed and could not be independently verified; contact the vendor directly for current rates before publishing any specific figures.
+  summary: HorusCheck's pricing is not publicly disclosed and could not be independently verified; contact the vendor directly for current rates.
   plans:
   - tier: Not Publicly Disclosed
     price: Not public
     note: Contact vendor directly for pricing details
-    extra: Verify before publish
+    extra: null
   legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
   verified: null
   items: []
@@ -55,9 +55,6 @@ facts:
   source: null
 - label: Regions
   value: Not disclosed
-  source: null
-- label: Note
-  value: Facts pending verification
   source: null
 pros:
 - Appears as a dedicated KYC/AML verification option in provider listings

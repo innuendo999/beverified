@@ -25,7 +25,7 @@ link:
 last_verified: '2026-07-29'
 verdict: AiPrise combines individual KYC and business KYB verification through one API, aimed at businesses onboarding customers across 200+ countries including many emerging markets. Its AI Compliance Copilot automates case review and enhanced due diligence report generation, though company details like exact HQ and founding year aren't consistently public.
 what_is:
-- AiPrise is a global KYC/KYB verification company founded by Chaitanya Sarda, US-based (exact headquarters location not consistently disclosed publicly — verify before publish), having raised two funding rounds. It provides identity and business verification across 200+ countries with a particular focus on emerging markets, combined with an AI Compliance Copilot for automating due diligence work.
+- AiPrise is a global KYC/KYB verification company founded by Chaitanya Sarda, US-based (exact headquarters location not consistently disclosed publicly), having raised two funding rounds. It provides identity and business verification across 200+ countries with a particular focus on emerging markets, combined with an AI Compliance Copilot for automating due diligence work.
 features:
 - KYB — business registry data, ownership verification, and social signals.
 - KYC — document verification, biometric selfie match, and local ID checks.
@@ -51,10 +51,10 @@ facts:
   value: Not disclosed
   source: null
 - label: Founded
-  value: Not disclosed — verify before publish
+  value: Not disclosed
   source: null
 - label: HQ
-  value: US-based — verify before publish
+  value: US-based
   source: null
 - label: Regions
   value: 200+ countries
@@ -68,7 +68,7 @@ pros:
 - Combines individual KYC and business KYB in one platform
 cons:
 - Younger brand with smaller scale than category leaders
-- Some company details (HQ, founding year) are not consistently public — verify before publish
+- Some company details (HQ, founding year) are not consistently public
 - No published pricing
 alternatives:
 - slug: idmerit

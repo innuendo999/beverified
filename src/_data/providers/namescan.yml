@@ -34,12 +34,12 @@ features:
 - Batch screening for higher-volume needs.
 - API access for integration into existing workflows.
 pricing:
-  summary: NameScan offers both on-demand and subscription screening options; current rates should be verified directly on NameScan's pricing page before publishing specific figures.
+  summary: NameScan offers both on-demand and subscription screening options; current rates are on NameScan's pricing page.
   plans:
   - tier: On-Demand / Subscription
     price: Custom
     note: On-demand and subscription screening packages
-    extra: Not publicly disclosed — verify before publish
+    extra: Not publicly disclosed
   legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
   verified: null
   items: []
