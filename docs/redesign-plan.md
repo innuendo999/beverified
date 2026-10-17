@@ -17,6 +17,8 @@ Last updated: 2026-10-17. Captures the decisions made in the redesign working se
   3. Providers directory A–Z + generic text page (Methodology, About, How we make money, Privacy, Terms, author variant)
 - **Then Claude Code:** migrate to Eleventy (11ty) on GitHub Pages (section 5).
 
+**Update 2026-10-18 (night):** rankings now ordered by provider score (ties keep order, unreviewed last; Editor's Choice follows #1; Sponsored Placement awards removed; quick answers and homepage quick picks rewritten to match). Methodology rewritten (v3.0): fictional evaluators, sandbox/ticket testing, sales-quote checks, "42 criteria", score bands and invented version history removed; describes public-evidence method. All rendered copy passed through invisible-characters (clean) and humanizer (374 sentences rewritten, no em/en dashes left; CI now fails on dashes in visible copy).
+
 ## 2. Decisions made by the owner (do not reverse without asking)
 
 Homepage:
