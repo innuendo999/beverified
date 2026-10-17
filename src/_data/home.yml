@@ -9,8 +9,8 @@ lede: Independent reviews and rankings of KYC, KYB and AML software, compared on
 
 quick_picks:            # label + provider slug; reason = provider tagline unless set
   - { label: Best overall, slug: sumsub }
-  - { label: Best for crypto, slug: kycaid }
-  - { label: Best budget option, slug: trulioo }
+  - { label: Best for KYB, slug: kycaid }          # #1 in rankings.yml → kyb
+  - { label: Best for liveness, slug: veriff }     # #1 in rankings.yml → liveness-detection
 
 logo_strip: [sumsub, complyadvantage, onfido, kycaid, feedzai, trulioo, jumio, seon]
 

@@ -106,6 +106,23 @@ aml:
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.7
     segments: []
+  - slug: kycaid
+    name: KYCAID
+    award: null
+    tagline: Modular KYC/AML suite with configurable verification workflows.
+    coverage: Global
+    size: SMB to Mid-market
+    pros:
+    - Flexible workflow builder
+    - White-label client portal
+    - Responsive support team
+    cons:
+    - Smaller watchlist database than category leaders
+    - Fewer native integrations
+    - Mobile SDK is newer
+    legacy_price_shown: $99/mo
+    legacy_rating_shown: 4.6
+    segments: []
   - slug: trulioo
     name: Trulioo
     award: Best Budget Option
@@ -122,23 +139,6 @@ aml:
     - Support response times vary by plan
     legacy_price_shown: $0.85/check
     legacy_rating_shown: 4.5
-    segments: []
-  - slug: kycaid
-    name: KYCAID
-    award: Sponsored Placement
-    tagline: Modular KYC/AML suite with configurable verification workflows.
-    coverage: Global
-    size: SMB to Mid-market
-    pros:
-    - Flexible workflow builder
-    - White-label client portal
-    - Responsive support team
-    cons:
-    - Smaller watchlist database than category leaders
-    - Fewer native integrations
-    - Mobile SDK is newer
-    legacy_price_shown: $99/mo
-    legacy_rating_shown: 4.6
     segments: []
   - slug: onfido
     name: Onfido
@@ -193,7 +193,7 @@ aml:
     segments: []
   - slug: null
     name: LexisNexis Risk Solutions
-    award: Sponsored Placement
+    award: null
     tagline: Risk data and identity intelligence spanning KYC, AML, and fraud.
     coverage: Global
     size: Enterprise
@@ -245,26 +245,9 @@ aml:
 brazil:
   title: Best KYC & AML Providers for Brazil in 2026
   providers:
-  - slug: kycaid
-    name: KYCAID
-    award: Editor's Choice
-    tagline: CPF/CNPJ verification with hybrid automation and manual review fallback.
-    coverage: Global, strong in LatAm
-    size: null
-    pros:
-    - Reads CPF and CNPJ formats natively
-    - Configurable workflow builder
-    - Human review for edge cases
-    cons:
-    - Smaller local support team than regional specialists
-    - Fewer native LatAm integrations than local vendors
-    - Newer to the Brazilian market specifically
-    legacy_price_shown: $99/mo
-    legacy_rating_shown: 4.6
-    segments: []
   - slug: sumsub
     name: Sumsub
-    award: Best for Pix-Speed Onboarding
+    award: Editor's Choice
     tagline: Fast decisioning built to match Pix instant-payment onboarding volume.
     coverage: Global
     size: null
@@ -279,22 +262,22 @@ brazil:
     legacy_price_shown: $0.99/check
     legacy_rating_shown: 4.6
     segments: []
-  - slug: null
-    name: idwall
-    award: Best Local Registry Depth
-    tagline: Brazilian identity verification with deep local registry integrations.
-    coverage: Brazil-focused
+  - slug: kycaid
+    name: KYCAID
+    award: null
+    tagline: CPF/CNPJ verification with hybrid automation and manual review fallback.
+    coverage: Global, strong in LatAm
     size: null
     pros:
-    - Deepest local CPF/CNPJ registry integration
-    - Strong document-fraud detection for Brazilian IDs
-    - Established relationships with Brazilian institutions
+    - Reads CPF and CNPJ formats natively
+    - Configurable workflow builder
+    - Human review for edge cases
     cons:
-    - Limited coverage outside Brazil
-    - Smaller international brand recognition
-    - Pricing not published
-    legacy_price_shown: Custom pricing
-    legacy_rating_shown: 4.5
+    - Smaller local support team than regional specialists
+    - Fewer native LatAm integrations than local vendors
+    - Newer to the Brazilian market specifically
+    legacy_price_shown: $99/mo
+    legacy_rating_shown: 4.6
     segments: []
   - slug: trulioo
     name: Trulioo
@@ -312,6 +295,23 @@ brazil:
     - Interface feels dated versus newer entrants
     legacy_price_shown: $0.85/check
     legacy_rating_shown: 4.4
+    segments: []
+  - slug: null
+    name: idwall
+    award: Best Local Registry Depth
+    tagline: Brazilian identity verification with deep local registry integrations.
+    coverage: Brazil-focused
+    size: null
+    pros:
+    - Deepest local CPF/CNPJ registry integration
+    - Strong document-fraud detection for Brazilian IDs
+    - Established relationships with Brazilian institutions
+    cons:
+    - Limited coverage outside Brazil
+    - Smaller international brand recognition
+    - Pricing not published
+    legacy_price_shown: Custom pricing
+    legacy_rating_shown: 4.5
     segments: []
 canada:
   title: Best KYC & AML Providers for Canada in 2026
@@ -387,43 +387,9 @@ canada:
 cheap-kyc:
   title: Best Cheap KYC Providers in 2026
   providers:
-  - slug: kycaid
-    name: KYCAID
-    award: Editor's Choice
-    tagline: Transparent per-check pricing with volume discounts published up front.
-    coverage: Global
-    size: null
-    pros:
-    - Lowest published per-check price in this category
-    - No mandatory minimum commitment
-    - Core sanctions/PEP screening included by default
-    cons:
-    - Advanced automation features cost extra
-    - Smaller watchlist database than enterprise vendors
-    - Support hours skew to EU business hours
-    legacy_price_shown: $0.35/check
-    legacy_rating_shown: 4.6
-    segments: []
-  - slug: null
-    name: Ondato
-    award: Best Free Tier
-    tagline: A genuinely usable free tier for testing before committing budget.
-    coverage: Strongest in EU
-    size: null
-    pros:
-    - Free tier covers real integration testing, not just a demo
-    - Fast self-serve setup
-    - Simple, published pricing page
-    cons:
-    - Registry depth lighter outside EU
-    - Smaller support team than larger vendors
-    - Advanced STP automation costs extra
-    legacy_price_shown: Free tier
-    legacy_rating_shown: 4.4
-    segments: []
   - slug: sumsub
     name: Sumsub
-    award: Best for Scaling Self-Serve
+    award: Editor's Choice
     tagline: Pay-as-you-go pricing that scales smoothly as check volume grows.
     coverage: Global
     size: null
@@ -436,6 +402,23 @@ cheap-kyc:
     - Advanced fraud tools cost extra
     - Onboarding support is largely self-serve
     legacy_price_shown: $0.99/check
+    legacy_rating_shown: 4.6
+    segments: []
+  - slug: kycaid
+    name: KYCAID
+    award: null
+    tagline: Transparent per-check pricing with volume discounts published up front.
+    coverage: Global
+    size: null
+    pros:
+    - Lowest published per-check price in this category
+    - No mandatory minimum commitment
+    - Core sanctions/PEP screening included by default
+    cons:
+    - Advanced automation features cost extra
+    - Smaller watchlist database than enterprise vendors
+    - Support hours skew to EU business hours
+    legacy_price_shown: $0.35/check
     legacy_rating_shown: 4.6
     segments: []
   - slug: trulioo
@@ -455,29 +438,29 @@ cheap-kyc:
     legacy_price_shown: $0.75/check
     legacy_rating_shown: 4.4
     segments: []
+  - slug: null
+    name: Ondato
+    award: Best Free Tier
+    tagline: A genuinely usable free tier for testing before committing budget.
+    coverage: Strongest in EU
+    size: null
+    pros:
+    - Free tier covers real integration testing, not just a demo
+    - Fast self-serve setup
+    - Simple, published pricing page
+    cons:
+    - Registry depth lighter outside EU
+    - Smaller support team than larger vendors
+    - Advanced STP automation costs extra
+    legacy_price_shown: Free tier
+    legacy_rating_shown: 4.4
+    segments: []
 crypto:
   title: Top Crypto KYC Providers in 2026
   providers:
-  - slug: kycaid
-    name: KYCAID
-    award: Editor's Choice
-    tagline: Modular on-chain/off-chain workflow with manual review for high-risk wallets.
-    coverage: Global
-    size: SMB to Mid-market
-    pros:
-    - Combines wallet screening with onboarding KYC in one flow
-    - Configurable risk thresholds
-    - Human review for edge-case wallets
-    cons:
-    - On-chain analytics shallower than dedicated blockchain-forensics vendors
-    - Smaller Travel Rule protocol network
-    - Newer to crypto specifically
-    legacy_price_shown: $149/mo
-    legacy_rating_shown: 4.6
-    segments: []
   - slug: sumsub
     name: Sumsub
-    award: Best All-in-One
+    award: Editor's Choice
     tagline: Bundles onboarding KYC with wallet risk scoring and Travel Rule messaging.
     coverage: Global
     size: SMB to Enterprise
@@ -491,6 +474,23 @@ crypto:
     - Advanced fraud tools cost extra
     legacy_price_shown: $1.99/verification
     legacy_rating_shown: 4.7
+    segments: []
+  - slug: kycaid
+    name: KYCAID
+    award: null
+    tagline: Modular on-chain/off-chain workflow with manual review for high-risk wallets.
+    coverage: Global
+    size: SMB to Mid-market
+    pros:
+    - Combines wallet screening with onboarding KYC in one flow
+    - Configurable risk thresholds
+    - Human review for edge-case wallets
+    cons:
+    - On-chain analytics shallower than dedicated blockchain-forensics vendors
+    - Smaller Travel Rule protocol network
+    - Newer to crypto specifically
+    legacy_price_shown: $149/mo
+    legacy_rating_shown: 4.6
     segments: []
   - slug: complyadvantage
     name: ComplyAdvantage
@@ -634,6 +634,23 @@ identity-verification:
     legacy_price_shown: $99/mo
     legacy_rating_shown: 4.6
     segments: []
+  - slug: persona
+    name: Persona
+    award: Best for Flexible Orchestration
+    tagline: Configurable verification flows spanning onboarding, login, and high-risk transactions.
+    coverage: Global, strong in US
+    size: Mid-market to Enterprise
+    pros:
+    - Highly flexible no-code flow builder
+    - Strong device and behavioral signal layer
+    - Good for teams needing varied flows per use case
+    cons:
+    - Fewer built-in AML watchlists than category leaders
+    - Best suited to teams with dedicated implementation time
+    - Pricing is not published
+    legacy_price_shown: Custom pricing
+    legacy_rating_shown: 4.6
+    segments: []
   - slug: onfido
     name: Onfido
     award: Best for Biometric Liveness
@@ -668,23 +685,6 @@ identity-verification:
     legacy_price_shown: $1.15/verification
     legacy_rating_shown: 4.5
     segments: []
-  - slug: persona
-    name: Persona
-    award: Best for Flexible Orchestration
-    tagline: Configurable verification flows spanning onboarding, login, and high-risk transactions.
-    coverage: Global, strong in US
-    size: Mid-market to Enterprise
-    pros:
-    - Highly flexible no-code flow builder
-    - Strong device and behavioral signal layer
-    - Good for teams needing varied flows per use case
-    cons:
-    - Fewer built-in AML watchlists than category leaders
-    - Best suited to teams with dedicated implementation time
-    - Pricing is not published
-    legacy_price_shown: Custom pricing
-    legacy_rating_shown: 4.6
-    segments: []
 india:
   title: Best KYC & AML Providers for India in 2026
   providers:
@@ -704,23 +704,6 @@ india:
     - Newer to the Indian market specifically
     legacy_price_shown: $99/mo
     legacy_rating_shown: 4.6
-    segments: []
-  - slug: signzy
-    name: Signzy
-    award: Best India-Specific Registry Depth
-    tagline: India-focused RegTech with deep Aadhaar, PAN, and CKYC connections.
-    coverage: India-focused
-    size: null
-    pros:
-    - Deepest India-specific registry integration
-    - Strong relationships with Indian banks
-    - PAN cross-checking built in
-    cons:
-    - Limited coverage outside India
-    - Smaller international brand recognition
-    - Pricing not published
-    legacy_price_shown: Custom pricing
-    legacy_rating_shown: 4.5
     segments: []
   - slug: onfido
     name: Onfido
@@ -755,6 +738,23 @@ india:
     - Interface feels dated versus newer entrants
     legacy_price_shown: $0.85/check
     legacy_rating_shown: 4.4
+    segments: []
+  - slug: signzy
+    name: Signzy
+    award: Best India-Specific Registry Depth
+    tagline: India-focused RegTech with deep Aadhaar, PAN, and CKYC connections.
+    coverage: India-focused
+    size: null
+    pros:
+    - Deepest India-specific registry integration
+    - Strong relationships with Indian banks
+    - PAN cross-checking built in
+    cons:
+    - Limited coverage outside India
+    - Smaller international brand recognition
+    - Pricing not published
+    legacy_price_shown: Custom pricing
+    legacy_rating_shown: 4.5
     segments: []
 kyb:
   title: Best KYB Solution Providers in 2026
@@ -793,23 +793,6 @@ kyb:
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.6
     segments: []
-  - slug: trulioo
-    name: Trulioo
-    award: Best for Global Registry Reach
-    tagline: GlobalGateway network reaches business registries across 100+ countries.
-    coverage: Global
-    size: SMB to Mid-market
-    pros:
-    - Wide international registry coverage
-    - Simple pay-as-you-go pricing
-    - Combines individual and business verification in one API
-    cons:
-    - UBO-mapping depth varies by country
-    - Interface feels dated versus newer entrants
-    - Watchlist screening is an add-on
-    legacy_price_shown: $0.95/check
-    legacy_rating_shown: 4.5
-    segments: []
   - slug: complyadvantage
     name: ComplyAdvantage
     award: Best for Enterprise Risk Data
@@ -826,6 +809,23 @@ kyb:
     - Pricing is not published
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.6
+    segments: []
+  - slug: trulioo
+    name: Trulioo
+    award: Best for Global Registry Reach
+    tagline: GlobalGateway network reaches business registries across 100+ countries.
+    coverage: Global
+    size: SMB to Mid-market
+    pros:
+    - Wide international registry coverage
+    - Simple pay-as-you-go pricing
+    - Combines individual and business verification in one API
+    cons:
+    - UBO-mapping depth varies by country
+    - Interface feels dated versus newer entrants
+    - Watchlist screening is an add-on
+    legacy_price_shown: $0.95/check
+    legacy_rating_shown: 4.5
     segments: []
   - slug: null
     name: Encompass
@@ -881,9 +881,43 @@ kyb:
 liveness-detection:
   title: Best Liveness Detection Providers in 2026
   providers:
+  - slug: veriff
+    name: Veriff
+    award: Editor's Choice
+    tagline: Fast liveness capture tuned for high-conversion consumer onboarding.
+    coverage: Global, strongest in EU
+    size: null
+    pros:
+    - Median capture time under 30 seconds including document scan
+    - High-confidence liveness scoring
+    - Good mobile SDK performance
+    cons:
+    - Liveness sold as part of a broader package, not standalone
+    - Enterprise-leaning contracts
+    - Pricing not published
+    legacy_price_shown: Custom pricing
+    legacy_rating_shown: 4.6
+    segments: []
+  - slug: onfido
+    name: Onfido
+    award: Best Bundled with Document Checks
+    tagline: Liveness detection bundled into a broader document-and-biometric flow.
+    coverage: Global, strongest in UK/EU
+    size: null
+    pros:
+    - One vendor for liveness plus document verification
+    - Broad document-type coverage
+    - Strong developer SDKs
+    cons:
+    - Liveness alone is not sold standalone
+    - Enterprise-oriented pricing
+    - Onboarding can take several weeks
+    legacy_price_shown: Custom pricing
+    legacy_rating_shown: 4.6
+    segments: []
   - slug: null
     name: iProov
-    award: Editor's Choice
+    award: null
     tagline: Cloud-verified liveness with industry-leading presentation-attack accuracy.
     coverage: Global
     size: null
@@ -915,63 +949,12 @@ liveness-detection:
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.7
     segments: []
-  - slug: onfido
-    name: Onfido
-    award: Best Bundled with Document Checks
-    tagline: Liveness detection bundled into a broader document-and-biometric flow.
-    coverage: Global, strongest in UK/EU
-    size: null
-    pros:
-    - One vendor for liveness plus document verification
-    - Broad document-type coverage
-    - Strong developer SDKs
-    cons:
-    - Liveness alone is not sold standalone
-    - Enterprise-oriented pricing
-    - Onboarding can take several weeks
-    legacy_price_shown: Custom pricing
-    legacy_rating_shown: 4.6
-    segments: []
-  - slug: veriff
-    name: Veriff
-    award: Best for Speed
-    tagline: Fast liveness capture tuned for high-conversion consumer onboarding.
-    coverage: Global, strongest in EU
-    size: null
-    pros:
-    - Median capture time under 30 seconds including document scan
-    - High-confidence liveness scoring
-    - Good mobile SDK performance
-    cons:
-    - Liveness sold as part of a broader package, not standalone
-    - Enterprise-leaning contracts
-    - Pricing not published
-    legacy_price_shown: Custom pricing
-    legacy_rating_shown: 4.6
-    segments: []
 mexico:
   title: Best KYC & AML Providers for Mexico in 2026
   providers:
-  - slug: kycaid
-    name: KYCAID
-    award: Editor's Choice
-    tagline: CNBV/Ley Fintech-aligned onboarding with a configurable rule engine.
-    coverage: Global, strong in LatAm
-    size: null
-    pros:
-    - Reads INE and CURP-linked documents
-    - Configurable workflow builder
-    - Human review fallback for edge cases
-    cons:
-    - Smaller local support team than regional specialists
-    - Fewer native LatAm integrations than local vendors
-    - Newer to the Mexican market specifically
-    legacy_price_shown: $99/mo
-    legacy_rating_shown: 4.6
-    segments: []
   - slug: sumsub
     name: Sumsub
-    award: Best for Scaling Fintechs
+    award: Editor's Choice
     tagline: Self-serve platform built to scale with growing fintech applicant volume.
     coverage: Global
     size: null
@@ -984,6 +967,23 @@ mexico:
     - Advanced fraud tools cost extra
     - Local registry depth lighter than Mexico-only vendors
     legacy_price_shown: $0.99/check
+    legacy_rating_shown: 4.6
+    segments: []
+  - slug: kycaid
+    name: KYCAID
+    award: null
+    tagline: CNBV/Ley Fintech-aligned onboarding with a configurable rule engine.
+    coverage: Global, strong in LatAm
+    size: null
+    pros:
+    - Reads INE and CURP-linked documents
+    - Configurable workflow builder
+    - Human review fallback for edge cases
+    cons:
+    - Smaller local support team than regional specialists
+    - Fewer native LatAm integrations than local vendors
+    - Newer to the Mexican market specifically
+    legacy_price_shown: $99/mo
     legacy_rating_shown: 4.6
     segments: []
   - slug: veriff
@@ -1023,26 +1023,9 @@ mexico:
 peru:
   title: Best KYC & AML Providers for Peru in 2026
   providers:
-  - slug: kycaid
-    name: KYCAID
-    award: Editor's Choice
-    tagline: DNI parsing with SBS-aligned onboarding workflows built in.
-    coverage: Global, strong in LatAm
-    size: null
-    pros:
-    - Reads DNI documents natively
-    - Configurable workflow builder
-    - Human review fallback for edge cases
-    cons:
-    - Smaller local support team than regional specialists
-    - Fewer native LatAm integrations than local vendors
-    - Newer to the Peruvian market specifically
-    legacy_price_shown: $99/mo
-    legacy_rating_shown: 4.6
-    segments: []
   - slug: sumsub
     name: Sumsub
-    award: Best for Scaling Fintechs
+    award: Editor's Choice
     tagline: Self-serve platform built to scale with growing fintech applicant volume.
     coverage: Global
     size: null
@@ -1055,6 +1038,23 @@ peru:
     - Advanced fraud tools cost extra
     - Local registry depth lighter than Peru-only vendors
     legacy_price_shown: $0.99/check
+    legacy_rating_shown: 4.6
+    segments: []
+  - slug: kycaid
+    name: KYCAID
+    award: null
+    tagline: DNI parsing with SBS-aligned onboarding workflows built in.
+    coverage: Global, strong in LatAm
+    size: null
+    pros:
+    - Reads DNI documents natively
+    - Configurable workflow builder
+    - Human review fallback for edge cases
+    cons:
+    - Smaller local support team than regional specialists
+    - Fewer native LatAm integrations than local vendors
+    - Newer to the Peruvian market specifically
+    legacy_price_shown: $99/mo
     legacy_rating_shown: 4.6
     segments: []
   - slug: veriff
