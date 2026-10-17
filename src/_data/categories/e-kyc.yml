@@ -17,7 +17,7 @@ legacy_stats:
 explainer_html:
 - '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
 
-  <h2 style="font-size:19px;margin-bottom:10px;">What eKYC Actually Verifies</h2>
+  <h2 style="font-size:19px;margin-bottom:10px;">What eKYC verifies</h2>
 
   <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">Electronic KYC confirms that the person opening an account is who they claim to be, using a government-issued document and a live selfie, before any money moves. In the EU, the legal basis usually traces back to eIDAS, the electronic-identification regulation; most eKYC vendors read a document''s MRZ line or NFC chip and match it against a biometric selfie in under a minute.</p>
 
@@ -35,9 +35,9 @@ explainer_html:
 
   </ul>
 
-  <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from Identity Verification</h3>
+  <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from identity verification</h3>
 
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">eKYC is the one-time gate at account opening. Broader <a href="/providers/identity-verification/">identity verification</a> tools keep checking a user''s identity at login, high-risk transactions, and password resets — often reusing the same biometric engine.</p>
+  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">eKYC is the one-time gate at account opening. Broader <a href="/providers/identity-verification/">identity verification</a> tools keep checking a user''s identity at login, high-risk transactions and password resets, often with the same biometric engine.</p>
 
   <h3 style="font-size:14.5px;margin-bottom:8px;">Regulatory context</h3>
 

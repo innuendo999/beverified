@@ -16,6 +16,7 @@ const PATTERNS = [
   { name: "template placeholder", re: /\{[a-z_]+(\.[a-z_\[\]]+)*\}/ },
   { name: "placeholder graphic", re: /product screenshot\s*[—-]\s*dashboard view/i },
   { name: "lorem ipsum", re: /lorem ipsum/i },
+  { name: "em/en dash in copy (humanizer rule)", re: /(?<!A)[\u2014\u2013](?!Z)/, text: true },
 ];
 
 function* htmlFiles(dir) {
@@ -30,9 +31,10 @@ function* htmlFiles(dir) {
 const strict = process.argv.includes("--strict");
 let hits = 0;
 for (const file of htmlFiles(ROOT)) {
-  const text = readFileSync(file, "utf8").replace(/<script[\s\S]*?<\/script>/g, "");
-  for (const { name, re } of PATTERNS) {
-    if (re.test(text)) {
+  const html = readFileSync(file, "utf8").replace(/<script[\s\S]*?<\/script>/g, "");
+  const visible = html.replace(/<[^>]+>/g, " ");
+  for (const { name, re, text } of PATTERNS) {
+    if (re.test(text ? visible : html)) {
       hits++;
       console.log(`${file}: ${name}`);
     }

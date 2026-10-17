@@ -24,9 +24,9 @@ link:
   type: null
   legacy_rel: nofollow sponsored
 last_verified: '2026-07-25'
-verdict: 'Jumio is built for enterprise-scale identity verification — more than a billion verifications processed, Tier-1 bank and marketplace clients, and a KYX platform that extends beyond onboarding into continuous risk monitoring. That scale comes at the cost of pricing transparency: rates are quoted through sales, and third-party estimates put effective per-verification costs meaningfully above budget-tier competitors.'
+verdict: 'Jumio is built for enterprise-scale identity verification: more than a billion verifications processed, Tier-1 bank and marketplace clients, and a KYX platform that extends beyond onboarding into continuous risk monitoring. That scale comes at the cost of pricing transparency: rates are quoted through sales, and third-party estimates put effective per-verification costs meaningfully above budget-tier competitors.'
 what_is:
-- Jumio is an identity-verification and KYX ("Know Your Everything") platform founded in 2010, headquartered in Palo Alto/Sunnyvale, California, with additional offices in Vienna, London, Singapore, New York, and Montréal. It has processed more than 1 billion identity verifications and is positioned for large enterprises — banks, marketplaces, and fintechs — that need document and biometric verification alongside AML screening at global scale.
+- Jumio is an identity-verification and KYX ("Know Your Everything") platform founded in 2010, headquartered in Palo Alto/Sunnyvale, California, with additional offices in Vienna, London, Singapore, New York, and Montréal. It has processed more than 1 billion identity verifications and is positioned for large enterprises (banks, marketplaces and fintechs) that need document and biometric verification alongside AML screening at global scale.
 features:
 - Document verification with automated authenticity checks across 3,500+ ID types from 200+ countries.
 - Biometric face match with liveness detection to prevent spoofing and deepfakes.
@@ -35,14 +35,14 @@ features:
 - On-premise and cloud deployment options for enterprise infrastructure requirements.
 - 24/7 enterprise support with dedicated account management.
 pricing:
-  summary: Jumio does not publish pricing; contracts are volume-based and quoted through sales. Third-party estimates put the effective cost at roughly $0.90–$2.30 per verification, though this is an external estimate, not Jumio's official rate, and AML screening or premium support typically add to that base cost.
+  summary: Jumio does not publish pricing; contracts are volume-based and quoted through sales. Third-party estimates put the effective cost at roughly $0.90 to $2.30 per verification. That is an external estimate, not Jumio's official rate, and AML screening or premium support typically add to it.
   plans:
   - tier: Custom Quote
     price: Custom
     note: Volume-based enterprise pricing via sales
     extra: Contact sales
   - tier: Third-Party Estimate
-    price: $0.90–$2.30
+    price: $0.90 to $2.30
     note: Per verification (external estimate, not Jumio's official pricing)
     extra: AML screening & premium support billed separately
   legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as third-party estimates are not the vendor''s official rate.'
@@ -53,7 +53,7 @@ facts:
   value: Custom quote
   source: null
 - label: Effective
-  value: ~$0.90–$2.30/check (3rd-party est.)
+  value: ~$0.90 to $2.30/check (3rd-party est.)
   source: null
 - label: Founded
   value: '2010'
@@ -68,7 +68,7 @@ facts:
   value: $233M+ raised (Series D)
   source: null
 pros:
-- Global scale and platform maturity — over 1 billion verifications processed
+- Global scale and platform maturity, with over 1 billion verifications processed
 - 'Broadest document coverage in this batch: 3,500+ ID types across 200+ countries'
 - 24/7 enterprise support built for Tier-1 bank and marketplace requirements
 cons:
@@ -95,18 +95,18 @@ choose_instead:
 user_reviews:
   legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
   praise:
-  - Scale and reliability (frequently cited) — enterprise reviewers point to consistent uptime at very high verification volumes.
-  - Fraud-detection maturity — reviewers note mature models built on a large historical verification dataset.
+  - 'Scale and reliability (frequently cited): enterprise reviewers point to consistent uptime at very high verification volumes.'
+  - 'Fraud-detection maturity: reviewers note mature models built on a large historical verification dataset.'
   criticize:
-  - Pricing transparency — the most consistently cited complaint is the lack of any published rate card.
-  - Cost at scale — some reviewers say per-verification costs run higher than mid-market alternatives.
+  - 'Pricing transparency: the most consistently cited complaint is the lack of any published rate card.'
+  - 'Cost at scale: some reviewers say per-verification costs run higher than mid-market alternatives.'
   by_profile:
   - Tier-1 banks and large marketplaces are Jumio's core customer profile.
   - Mid-market fintechs more often cite cost as a reason to evaluate alternatives.
   - Enterprises with existing AML programs use Jumio's screening module as a bundled add-on rather than a standalone tool.
 faq:
 - q: How much does Jumio cost?
-  a: Jumio does not publish pricing; it quotes volume-based enterprise contracts through sales. Third-party estimates suggest an effective cost of roughly $0.90–$2.30 per verification, though this is not Jumio's official rate.
+  a: Jumio does not publish pricing; it quotes volume-based enterprise contracts through sales. Third-party estimates suggest an effective cost of roughly $0.90 to $2.30 per verification, though this is not Jumio's official rate.
 - q: Does Jumio include AML screening?
   a: AML watchlist and sanctions screening is available as an add-on module alongside Jumio's core document and biometric verification.
 - q: Is Jumio good for startups?

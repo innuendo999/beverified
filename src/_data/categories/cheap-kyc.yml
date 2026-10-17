@@ -17,9 +17,9 @@ legacy_stats:
 explainer_html:
 - '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
 
-  <h2 style="font-size:19px;margin-bottom:10px;">What "Affordable" Actually Means in KYC Pricing</h2>
+  <h2 style="font-size:19px;margin-bottom:10px;">What affordable means in KYC pricing</h2>
 
-  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">Budget-tier KYC pricing usually breaks down into three levers: price per check, volume-discount tiers, and what vendors don''t put on the pricing page — minimum monthly commitments and overage fees. A genuinely affordable provider publishes all three, or comes close to it in a single sales-call email exchange.</p>
+  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">Budget-tier KYC pricing usually comes down to price per check, volume-discount tiers, and what vendors leave off the pricing page: minimum monthly commitments and overage fees. A genuinely affordable provider publishes all three, or comes close to it in a single sales-call email exchange.</p>
 
   <h3 style="font-size:14.5px;margin-bottom:10px;">Core capabilities compliance teams typically require</h3>
 
@@ -35,13 +35,13 @@ explainer_html:
 
   </ul>
 
-  <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from AML for Banks</h3>
+  <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from AML for banks</h3>
 
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;"><a href="/providers/aml/banks/">AML for Banks</a> providers are priced for Tier-1 institutions running real-time monitoring at massive transaction volume; this category serves the opposite end of the market — early-stage fintechs and small platforms that need core compliance without enterprise pricing.</p>
+  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;"><a href="/providers/aml/banks/">AML for Banks</a> providers are priced for Tier-1 institutions running real-time monitoring at massive transaction volume. This category serves the other end of the market: early-stage fintechs and small platforms that need core compliance without enterprise pricing.</p>
 
   <h3 style="font-size:14.5px;margin-bottom:8px;">Regulatory context</h3>
 
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Even budget-tier tools need to meet the same baseline sanctions/PEP screening obligations as enterprise ones — affordability applies to price, not to compliance coverage.</p>
+  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Even budget-tier tools must meet the same baseline sanctions/PEP screening obligations as enterprise ones. A lower price doesn''t mean lighter compliance coverage.</p>
 
   <a class="entity-card__cta" href="/methodology/">See how we evaluate every provider on this list in our full methodology →</a>
 
@@ -50,15 +50,15 @@ faq:
 - q: What counts as "cheap" KYC pricing?
   a: Genuinely affordable KYC pricing publishes price-per-check and volume-discount tiers up front, without mandatory minimum monthly commitments or hidden overage fees.
 - q: Do cheap KYC providers cut corners on compliance?
-  a: They shouldn't. Budget-tier tools still need to meet the same baseline sanctions and PEP screening obligations as enterprise tools — affordability applies to price, not to compliance coverage.
+  a: They shouldn't. Budget-tier tools still have to meet the same baseline sanctions and PEP screening obligations as enterprise tools. A lower price doesn't mean lighter compliance coverage.
 - q: Is a free KYC tier actually free?
   a: Most free tiers cap the number of monthly checks and are meant for testing an integration before committing budget, not for running production volume indefinitely.
 - q: What's the difference between cheap KYC and AML for Banks?
-  a: AML for Banks providers are priced for Tier-1 institutions running enterprise-scale monitoring. Cheap KYC serves the opposite end of the market — early-stage teams that need core compliance without enterprise pricing.
+  a: 'AML for Banks providers are priced for Tier-1 institutions running enterprise-scale monitoring. Cheap KYC serves the other end of the market: early-stage teams that need core compliance without enterprise pricing.'
 - q: Do volume discounts kick in automatically?
   a: Most vendors apply volume discounts automatically once monthly check counts cross a published threshold, though some require a manual plan upgrade or a sales conversation.
 - q: Should I avoid long-term contracts on a budget KYC plan?
-  a: Generally yes for early-stage teams — pay-as-you-go or month-to-month terms keep costs predictable and make it easier to switch vendors as volume or requirements change.
+  a: Generally yes for early-stage teams. Pay-as-you-go or month-to-month terms keep costs predictable and make it easier to switch vendors as volume or requirements change.
 adjacent:
 - aml/banks
 - e-kyc

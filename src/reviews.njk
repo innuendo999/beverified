@@ -98,7 +98,7 @@ layout: v3.njk
         {%- if b.score != null %}
         <span class="crit-score" role="img" aria-label="{{ b.criterion }} {{ b.score | score1 }} out of 5"><span class="bar" aria-hidden="true"><i style="width:{{ b.score * 20 }}%"></i></span><b aria-hidden="true">{{ b.score | score1 }}</b></span>
         {%- else %}
-        <span class="not-scored"><span>Not publicly disclosed — not scored</span></span>
+        <span class="not-scored"><span>Not publicly disclosed, so not scored</span></span>
         {%- endif %}
         {%- if b.evidence and ev[b.evidence] %}<span class="evidence"><span aria-hidden="true">{{ ev[b.evidence].icon }}</span>{{ ev[b.evidence].label }}</span>{% endif %}
       </div>
@@ -169,14 +169,14 @@ layout: v3.njk
   {%- if p.certifications and p.certifications.length %}
   <section id="certifications" aria-labelledby="cert-h">
     <h2 id="cert-h" class="h-section h-section--tight">Certifications &amp; independent tests</h2>
-    <p class="section-lede">“Confirmed” means we found the certificate or register entry ourselves.</p>
+    <p class="section-lede">"Confirmed" means we found the certificate or register entry ourselves.</p>
     <div class="card">
       {%- for c in p.certifications %}
       <div class="row">
         <div class="cert-name"><div>{{ c.name }}</div>{% if c.what %}<div>{{ c.what }}</div>{% endif %}</div>
         {%- if c.status == "confirmed" %}<span class="status status--ok"><span aria-hidden="true">✓</span>Confirmed</span>
         {%- elif c.status == "vendor_stated" %}<span class="status"><span aria-hidden="true">◇</span>Vendor-stated</span>
-        {%- else %}<span class="status status--none"><span aria-hidden="true">–</span>Not found</span>{% endif %}
+        {%- else %}<span class="status status--none">Not found</span>{% endif %}
         {%- if c.source %}<a style="font-size:14px" href="#src-{{ c.source }}">{% if c.status == "confirmed" %}View record{% else %}Vendor claim{% endif %} [{{ c.source }}]</a>{% endif %}
       </div>
       {%- endfor %}
@@ -284,7 +284,7 @@ layout: v3.njk
     <h2 id="src-h" class="h-section">Sources</h2>
     <ol class="sources">
       {%- for s in p.sources %}
-      <li id="src-{{ loop.index }}"><span>[{{ loop.index }}]</span><span><a href="{{ s.url }}" rel="noopener">{{ s.title }}</a>{% if s.publisher %} <span style="color:var(--body)">— {{ s.publisher }}</span>{% endif %}</span><span>{% if s.accessed %}Accessed {{ s.accessed | displayDate }}{% endif %}</span></li>
+      <li id="src-{{ loop.index }}"><span>[{{ loop.index }}]</span><span><a href="{{ s.url }}" rel="noopener">{{ s.title }}</a>{% if s.publisher %} <span style="color:var(--body)">({{ s.publisher }})</span>{% endif %}</span><span>{% if s.accessed %}Accessed {{ s.accessed | displayDate }}{% endif %}</span></li>
       {%- endfor %}
     </ol>
   </section>

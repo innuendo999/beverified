@@ -17,9 +17,9 @@ legacy_stats:
 explainer_html:
 - '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
 
-  <h2 style="font-size:19px;margin-bottom:10px;">What AML for Banks Requires at Tier-1 Scale</h2>
+  <h2 style="font-size:19px;margin-bottom:10px;">What AML for banks requires at Tier-1 scale</h2>
 
-  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">AML software built for banks has to screen and monitor transactions in real time across millions of daily events, explain every alert to an examiner on demand, and plug into decades-old core banking rails — requirements a mid-market AML tool rarely has to meet.</p>
+  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">AML software built for banks has to screen and monitor transactions in real time across millions of daily events, explain every alert to an examiner on demand, and plug into decades-old core banking rails. A mid-market AML tool rarely has to meet those requirements.</p>
 
   <h3 style="font-size:14.5px;margin-bottom:10px;">Core capabilities compliance teams typically require</h3>
 
@@ -41,16 +41,16 @@ explainer_html:
 
   <h3 style="font-size:14.5px;margin-bottom:8px;">Regulatory context</h3>
 
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Key references: the EU''s AMLA (Anti-Money Laundering Authority), U.S. FinCEN Notices of Proposed Rulemaking (NPRMs), and the payment rails — SWIFT, SEPA, FedNow, RTP — that monitoring systems must ingest directly.</p>
+  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Key references: the EU''s AMLA (Anti-Money Laundering Authority), U.S. FinCEN Notices of Proposed Rulemaking (NPRMs), and the payment rails (SWIFT, SEPA, FedNow, RTP) that monitoring systems must ingest directly.</p>
 
   <a class="entity-card__cta" href="/methodology/">See how we evaluate every provider on this list in our full methodology →</a>
 
   </section>'
 faq:
 - q: How is AML for banks different from AML software in general?
-  a: Bank-grade AML software has to run real-time transaction monitoring across millions of daily events, explain every alert to an examiner, and integrate with decades-old core banking systems — requirements most mid-market AML tools aren't built to meet.
+  a: Bank-grade AML software has to run real-time transaction monitoring across millions of daily events, explain every alert to an examiner, and integrate with decades-old core banking systems. Most mid-market AML tools aren't built for that.
 - q: What is AI explainability in AML monitoring?
-  a: Explainability means the system can show a regulator or auditor exactly why a transaction triggered an alert, not just that it did. It's a growing requirement as banks adopt machine-learning-based monitoring models.
+  a: Explainability means the system can show a regulator or auditor exactly why a transaction triggered an alert. It's a growing requirement as banks adopt machine-learning-based monitoring models.
 - q: What payment rails does bank AML software need to monitor?
   a: Most Tier-1 deployments need coverage across SWIFT for cross-border wire transfers, SEPA for euro-area payments, and real-time domestic rails like FedNow and RTP in the US.
 - q: What is the EU's AMLA?

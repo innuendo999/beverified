@@ -10,7 +10,7 @@ logo:
   src: /assets/img/logos/idenfy.png
   background: '#6A3FE8'
   wordmark: null
-tagline: Pay-per-approved pricing — you only pay for verifications that pass
+tagline: 'Pay-per-approved pricing: you only pay for verifications that pass'
 score: 4.5
 grade: Very Good
 primary_category: identity-verification
@@ -23,7 +23,7 @@ link:
   type: null
   legacy_rel: nofollow sponsored
 last_verified: '2026-07-28'
-verdict: 'iDenfy''s pricing model is its headline feature: you pay only for approved verifications, with rejected checks billed at nothing — a genuinely unusual structure in a category dominated by per-attempt or subscription pricing. Add human review of every case and it''s a strong fit for cost-conscious fintech, crypto, and gaming teams, even if its brand scale trails category leaders.'
+verdict: 'iDenfy''s pricing model is its headline feature: you pay only for approved verifications, and rejected checks cost nothing. That is unusual in a category dominated by per-attempt or subscription pricing. Add human review of every case and it''s a strong fit for cost-conscious fintech, crypto, and gaming teams, even if its brand scale trails category leaders.'
 what_is:
 - iDenfy is an identity-verification company founded in 2017 (originally Identifikaciniai Projektai) and headquartered in Kaunas, Lithuania, co-founded by CEO Domantas Ciulde and Gediminas Ciulde. It serves fintech, crypto, gaming, and marketplace businesses with a three-layer AI and human-reviewed verification process, offering an EU-hosted option and templates for EEA national ID documents.
 features:
@@ -32,9 +32,9 @@ features:
 - Proxy detection and fraud scoring.
 - AML screening and ongoing monitoring.
 - NFC-based document verification.
-- Pay-per-approved pricing model — rejected verifications aren't billed.
+- 'Pay-per-approved pricing model: rejected verifications aren''t billed.'
 pricing:
-  summary: iDenfy bills only for approved verifications rather than every attempt — the company reports up to 70% savings versus pay-per-completed-verification models. Contact iDenfy directly for current per-approved rates.
+  summary: iDenfy bills only for approved verifications rather than every attempt. The company reports up to 70% savings versus pay-per-completed-verification models. Contact iDenfy directly for current per-approved rates.
   plans:
   - tier: Pay-Per-Approved
     price: Custom
@@ -63,7 +63,7 @@ facts:
   value: Pay-per-approved pricing
   source: null
 pros:
-- Pay-per-approved pricing — rejected verifications cost nothing
+- 'Pay-per-approved pricing: rejected verifications cost nothing'
 - Human review on every verification case
 - Competitive pricing against premium vendors, with strong API documentation
 cons:
@@ -90,18 +90,18 @@ choose_instead:
 user_reviews:
   legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
   praise:
-  - Pricing model (frequently cited) — reviewers highlight the pay-per-approved structure as predictable and fair.
-  - API documentation — users note clear, easy-to-implement docs.
+  - 'Pricing model (frequently cited): reviewers describe the pay-per-approved structure as predictable and fair.'
+  - 'API documentation: users note clear, easy-to-implement docs.'
   criticize:
-  - Mobile performance — some reviews suggest testing UX on low-spec devices before committing.
-  - Brand scale — smaller than category leaders, which matters for some procurement processes.
+  - 'Mobile performance: some reviews suggest testing UX on low-spec devices before committing.'
+  - 'Brand scale: smaller than category leaders, which matters for some procurement processes.'
   by_profile:
   - Cost-conscious fintech, crypto, and gaming teams value the pay-per-approved model.
   - EU-based businesses benefit from EEA-specific document templates and EU hosting.
   - Larger enterprises sometimes prefer a bigger-brand vendor for procurement reasons.
 faq:
 - q: How does iDenfy's pricing work?
-  a: iDenfy charges only for approved verifications — rejected checks aren't billed, which the company reports can save up to 70% versus pay-per-completed-verification pricing. Contact iDenfy for current rates.
+  a: iDenfy charges only for approved verifications. Rejected checks aren't billed, which the company reports can save up to 70% versus pay-per-completed-verification pricing. Contact iDenfy for current rates.
 - q: Does iDenfy use human review?
   a: Yes, every verification case at iDenfy includes a human review step alongside its AI-driven checks.
 - q: Does iDenfy support KYB?

@@ -17,15 +17,15 @@ legacy_stats:
 explainer_html:
 - '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
 
-  <h2 style="font-size:19px;margin-bottom:10px;">What Identity Verification Covers Beyond Onboarding</h2>
+  <h2 style="font-size:19px;margin-bottom:10px;">What identity verification covers beyond onboarding</h2>
 
-  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">Identity verification is the umbrella discipline that includes eKYC''s one-time onboarding check, but doesn''t stop there. The same document-and-biometric engine gets reused at login, before a high-risk transaction, or after a password reset — anywhere a business needs proof that the person acting is still the person who signed up. That ongoing use is why presentation-attack detection and deepfake resistance matter more here than at onboarding alone.</p>
+  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">Identity verification is the umbrella discipline that includes eKYC''s one-time onboarding check, but doesn''t stop there. The same document-and-biometric engine gets reused at login, before a high-risk transaction, or after a password reset: anywhere a business needs proof that the person acting is still the person who signed up. That ongoing use is why presentation-attack detection and deepfake resistance matter more here than at onboarding alone.</p>
 
   <h3 style="font-size:14.5px;margin-bottom:10px;">Core capabilities compliance teams typically require</h3>
 
   <ul style="margin:0 0 18px;padding-left:20px;font-size:14.5px;line-height:1.75;">
 
-  <li style="list-style:disc;">Document and biometric verification reused across the account lifecycle, not just at sign-up</li>
+  <li style="list-style:disc;">Document and biometric verification reused across the account lifecycle, from sign-up onward</li>
 
   <li style="list-style:disc;">Liveness and presentation-attack detection (PAD) tuned against injection attacks and deepfakes</li>
 
@@ -43,7 +43,7 @@ explainer_html:
 
   <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from eKYC</h3>
 
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;"><a href="/providers/e-kyc/">eKYC</a> is the one-time gate at account opening. Identity verification is the broader, ongoing layer — the same vendor''s engine often powers both, but a business buying only eKYC may still need a separate contract for post-onboarding fraud checks.</p>
+  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;"><a href="/providers/e-kyc/">eKYC</a> is the one-time gate at account opening. Identity verification is the broader, ongoing layer. The same vendor''s engine often powers both, but a business buying only eKYC may still need a separate contract for post-onboarding fraud checks.</p>
 
   <h3 style="font-size:14.5px;margin-bottom:8px;">Regulatory context</h3>
 

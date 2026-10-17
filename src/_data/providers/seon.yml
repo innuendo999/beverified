@@ -23,9 +23,9 @@ link:
   type: null
   legacy_rel: nofollow sponsored
 last_verified: '2026-07-25'
-verdict: 'SEON''s edge is signal, not documents: it scores fraud risk from email, phone, IP, device, and browser data before a user ever submits an ID. That makes it a strong pre-KYC layer and AML complement, but it''s not a document or biometric verification tool on its own — most teams pair it with a dedicated IDV platform.'
+verdict: 'SEON''s edge is signal, not documents: it scores fraud risk from email, phone, IP, device, and browser data before a user ever submits an ID. That makes it a strong pre-KYC layer and AML complement, but it''s not a document or biometric verification tool on its own. Most teams pair it with a dedicated IDV platform.'
 what_is:
-- SEON is a fraud-prevention and AML platform founded in 2017 in Budapest by Tamás Kádár and Bence Jendruszák, now headquartered in Austin, Texas, with offices in Budapest, London, Singapore, and Jakarta. It serves more than 5,000 businesses, analyzing over 900 digital and device signals to score fraud risk — the company reports having helped prevent more than $300 billion in fraud losses.
+- SEON is a fraud-prevention and AML platform founded in 2017 in Budapest by Tamás Kádár and Bence Jendruszák, now headquartered in Austin, Texas, with offices in Budapest, London, Singapore, and Jakarta. It serves more than 5,000 businesses and analyzes over 900 digital and device signals to score fraud risk. The company reports having helped prevent more than $300 billion in fraud losses.
 features:
 - Digital footprint and device intelligence across email, phone, IP, device, and browser signals.
 - Real-time fraud scoring at the point of onboarding.
@@ -92,11 +92,11 @@ choose_instead:
 user_reviews:
   legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
   praise:
-  - Digital-footprint signals (frequently cited) — reviewers highlight catching fraud before full KYC begins.
-  - Rule builder — users note configuring fraud rules without needing engineering support.
+  - 'Digital-footprint signals (frequently cited): reviewers highlight catching fraud before full KYC begins.'
+  - 'Rule builder: users can configure fraud rules without engineering support.'
   criticize:
-  - Document/biometric gap — some reviewers note it needs pairing with a separate IDV tool for full onboarding.
-  - Premium pricing — the higher tier requires a sales conversation with no published rate.
+  - 'Document/biometric gap: some reviewers note it needs pairing with a separate IDV tool for full onboarding.'
+  - 'Premium pricing: the higher tier requires a sales conversation with no published rate.'
   by_profile:
   - Fintechs and marketplaces use SEON as a pre-KYC fraud filter ahead of a dedicated IDV step.
   - Teams already using a document-verification platform add SEON specifically for device/digital-footprint signals.

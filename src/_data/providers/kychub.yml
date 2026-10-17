@@ -27,18 +27,18 @@ verdict: KYC Hub's OpsFlow builder lets compliance teams configure onboarding, m
 what_is:
 - KYC Hub is a financial-crime compliance platform founded in 2018 and headquartered in London, with additional offices in the US, India, and Singapore, co-founded by Jay Rao and Farnoush Mirmoeini. With roughly 102 employees, it serves banks, fintechs, lenders, and crypto businesses through OpsFlow, a low/no-code orchestration builder covering onboarding, screening, monitoring, and case escalation in one platform.
 features:
-- OpsFlow — low/no-code builder for onboarding, monitoring, and escalation workflows.
+- 'OpsFlow: low/no-code builder for onboarding, monitoring and escalation workflows.'
 - KYC, KYB, and AML screening in one platform.
 - Rule-based and behavioral transaction monitoring.
 - 200+ data integrations and a global knowledge graph of high-risk entities.
 - Case management with region-specific data residency.
 - ISO 27001 and GDPR compliant; verification in under 5 seconds.
 pricing:
-  summary: KYC Hub markets transparent pay-as-you-go tiers rather than opaque enterprise quotes, though specific rates are not published — contact sales for current pricing.
+  summary: KYC Hub markets transparent pay-as-you-go tiers rather than opaque enterprise quotes, though specific rates are not published. Contact sales for current pricing.
   plans:
   - tier: Pay-As-You-Go
     price: Custom
-    note: Transparent usage-based billing — no fees hidden behind opaque quotes
+    note: Transparent usage-based billing with no fees hidden behind opaque quotes
     extra: Contact for current rate
   legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
   verified: null
@@ -64,7 +64,7 @@ facts:
   source: null
 pros:
 - Full financial-crime lifecycle (identity, screening, monitoring, case management) in one no-code platform
-- Fast go-live — weeks rather than months, per the vendor
+- 'Fast go-live: weeks rather than months, per the vendor'
 - Transparent pay-as-you-go positioning versus opaque enterprise-only quotes
 cons:
 - Dashboard performance can strain at very large-bank scale, per reviews
@@ -90,18 +90,18 @@ choose_instead:
 user_reviews:
   legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
   praise:
-  - Full-lifecycle coverage (frequently cited) — reviewers highlight not needing to stitch together separate tools.
-  - Fast implementation — users note go-live in weeks rather than months.
+  - 'Full-lifecycle coverage (frequently cited): reviewers like not having to stitch together separate tools.'
+  - 'Fast implementation: users note go-live in weeks rather than months.'
   criticize:
-  - Dashboard scale — some reviews mention performance limits for very large institutions.
-  - Reporting depth — advanced visualizations sometimes require exporting data elsewhere.
+  - 'Dashboard scale: some reviews mention performance limits for very large institutions.'
+  - 'Reporting depth: advanced visualizations sometimes require exporting data elsewhere.'
   by_profile:
   - Mid-size banks and fintechs value having identity, screening, and monitoring unified in one platform.
   - Crypto businesses use its knowledge graph for high-risk entity detection.
   - Very large banks with complex dashboard needs sometimes evaluate bigger-scale competitors.
 faq:
 - q: How much does KYC Hub cost?
-  a: KYC Hub uses transparent pay-as-you-go tiers rather than opaque enterprise quotes, though specific rates aren't published — contact sales for current pricing.
+  a: KYC Hub uses transparent pay-as-you-go tiers rather than opaque enterprise quotes, though specific rates aren't published. Contact sales for current pricing.
 - q: What is OpsFlow?
   a: OpsFlow is KYC Hub's low/no-code builder for configuring onboarding, monitoring, and escalation workflows without engineering support.
 - q: Does KYC Hub cover the full compliance lifecycle?

@@ -25,7 +25,7 @@ link:
 last_verified: '2026-07-29'
 verdict: 'MemberCheck runs a four-tier PEP screening process alongside sanctions and adverse-media checks, positioned for managed AML workflows with enhanced due diligence and daily ongoing monitoring. It''s operated by the same owner as NameScan (Neurocom Group) but targets a different use case: managed compliance programs rather than on-demand self-serve checks.'
 what_is:
-- MemberCheck is an AML/CTF screening company founded in 2007 and headquartered in Chatswood, New South Wales, Australia, operated by the Neurocom Group — the same owner as NameScan. It screens against thousands of sanctions lists with a four-tier PEP and RCA process plus global adverse-media coverage, serving accounting, casino, financial-services, legal, real-estate, and crypto/VASP clients.
+- MemberCheck is an AML/CTF screening company founded in 2007 and headquartered in Chatswood, New South Wales, Australia. It is operated by the Neurocom Group, which also owns NameScan. It screens against thousands of sanctions lists with a four-tier PEP and RCA process plus global adverse-media coverage, serving accounting, casino, financial-services, legal, real-estate, and crypto/VASP clients.
 features:
 - Four-tier PEP and RCA (relatives and close associates) screening.
 - Sanctions and global adverse-media screening.
@@ -82,7 +82,7 @@ alternatives:
   best_for: Mid-Market API-First
 choose_instead:
 - slug: namescan
-  text: you want on-demand, self-serve screening rather than a managed AML workflow — NameScan is MemberCheck's sister product, both operated by Neurocom Group.
+  text: you want on-demand, self-serve screening rather than a managed AML workflow. NameScan is MemberCheck's sister product; Neurocom Group runs both.
 - slug: smartsearch
   text: you need JMLSG-compliant UK individual and business screening.
 - slug: sanction-scanner
@@ -90,18 +90,18 @@ choose_instead:
 user_reviews:
   legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
   praise:
-  - PEP depth (frequently cited) — reviewers highlight the four-tier screening process.
-  - API flexibility — users note the RESTful API supports custom front-end builds.
+  - 'PEP depth (frequently cited): reviewers highlight the four-tier screening process.'
+  - 'API flexibility: users note the RESTful API supports custom front-end builds.'
   criticize:
-  - Data residency — some EU clients raise questions about the Australian HQ, despite EU data storage options.
-  - Brand scale — smaller than enterprise AML platforms.
+  - 'Data residency: some EU clients raise questions about the Australian HQ, despite EU data storage options.'
+  - 'Brand scale: smaller than enterprise AML platforms.'
   by_profile:
   - Accounting, legal, and real-estate firms use MemberCheck for managed AML/CTF workflows.
   - Crypto and VASP businesses value its sanctions/PEP screening depth.
   - Businesses wanting simple self-serve checks often use sister product NameScan instead.
 faq:
 - q: How much does MemberCheck cost?
-  a: MemberCheck offers pay-as-you-go and subscription pricing; a third-party-reported rate is around $90 for 50 scans — verify current pricing directly with MemberCheck.
+  a: MemberCheck offers pay-as-you-go and subscription pricing; a third-party-reported rate is around $90 for 50 scans. Check current pricing directly with MemberCheck.
 - q: Is MemberCheck related to NameScan?
   a: Yes. MemberCheck and NameScan are both operated by the Neurocom Group; MemberCheck targets managed AML workflows while NameScan focuses on on-demand self-serve screening.
 - q: What is MemberCheck's PEP screening process?

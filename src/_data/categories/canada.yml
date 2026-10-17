@@ -17,7 +17,7 @@ legacy_stats:
 explainer_html:
 - '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
 
-  <h2 style="font-size:19px;margin-bottom:10px;">What "Canada-Ready KYC" Really Means</h2>
+  <h2 style="font-size:19px;margin-bottom:10px;">What Canada-ready KYC means</h2>
 
   <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">FINTRAC sets customer due diligence and reporting obligations for money services businesses and financial entities operating in Canada, while OSFI supervises the ongoing risk management of federally regulated banks and insurers. A provider built for this market accepts Canadian passports, provincial driver''s licences, and PR cards, and supports bilingual EN/FR flows for Quebec and nationwide deployments.</p>
 
@@ -35,9 +35,9 @@ explainer_html:
 
   </ul>
 
-  <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from AML for Banks</h3>
+  <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from AML for banks</h3>
 
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Meeting FINTRAC''s onboarding rule is separate from the ongoing transaction monitoring OSFI expects federally regulated institutions to run — see <a href="/providers/aml/banks/">AML for Banks</a> for that ongoing-monitoring layer.</p>
+  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Meeting FINTRAC''s onboarding rule is separate from the ongoing transaction monitoring OSFI expects federally regulated institutions to run. See <a href="/providers/aml/banks/">AML for Banks</a> for that ongoing-monitoring layer.</p>
 
   <h3 style="font-size:14.5px;margin-bottom:8px;">How we evaluate vendors</h3>
 
@@ -54,11 +54,11 @@ faq:
 - q: What documents do Canadian KYC providers accept?
   a: Common accepted documents include Canadian passports, provincial driver's licences, and Permanent Resident (PR) cards.
 - q: How does PIPEDA affect KYC vendor selection?
-  a: PIPEDA sets federal privacy obligations for how personal information, including identity documents and biometric data, is collected, used, and stored — a factor in choosing where a vendor hosts data.
+  a: PIPEDA sets federal privacy obligations for how personal information, including identity documents and biometric data, is collected, used and stored. That affects where you want a vendor to host data.
 - q: What's the difference between FINTRAC and OSFI requirements?
   a: FINTRAC governs onboarding-level customer due diligence and suspicious-transaction reporting; OSFI oversees the broader ongoing risk-management practices of federally regulated financial institutions.
 - q: Do Canadian KYC rules differ by province?
-  a: Federal AML rules apply nationwide, but accepted ID document formats — such as provincial driver's licences — vary by province, so document coverage needs to span all of them.
+  a: Federal AML rules apply nationwide, but accepted ID document formats, such as provincial driver's licences, vary by province, so document coverage needs to span all of them.
 adjacent:
 - aml/banks
 - identity-verification

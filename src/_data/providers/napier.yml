@@ -67,7 +67,7 @@ pros:
 - Trusted by 150+ institutions including Banco do Brasil and Australia Post
 - Strong multilingual matching (25+ languages) reduces false positives from localization issues
 cons:
-- Does not perform identity verification — needs a separate IDV vendor alongside it
+- Does not perform identity verification, so it needs a separate IDV vendor alongside it
 - No published pricing
 - Enterprise-only focus, less suited to early-stage fintechs
 alternatives:
@@ -84,17 +84,17 @@ choose_instead:
 - slug: complyadvantage
   text: you want a broader proprietary financial-crime database alongside transaction monitoring.
 - slug: unit21
-  text: you want AI that executes full investigations end-to-end, not just detection and screening.
+  text: you want AI that carries out full investigations end to end, beyond detection and screening.
 - slug: amlranger
   text: a narrower, screening-only tool fits your needs better than a full monitoring platform.
 user_reviews:
   legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
   praise:
-  - Sandbox testing (frequently cited) — reviewers highlight Napier Continuum for safely tuning detection rules before going live.
-  - Multilingual matching — users note fewer false positives from name variants across languages.
+  - 'Sandbox testing (frequently cited): reviewers like Napier Continuum for safely tuning detection rules before going live.'
+  - 'Multilingual matching: users note fewer false positives from name variants across languages.'
   criticize:
-  - Scope limitation — reviewers note it must be paired with a separate IDV tool for document/biometric verification.
-  - Pricing opacity — no published rate card, quote-only.
+  - 'Scope limitation: reviewers note it must be paired with a separate IDV tool for document and biometric verification.'
+  - 'Pricing opacity: no published rate card, quote only.'
   by_profile:
   - Financial institutions and insurers use Napier for core transaction-monitoring and screening needs.
   - Postal and payments organizations like Australia Post use it for trade-compliance screening.
@@ -103,7 +103,7 @@ faq:
 - q: How much does Napier AI cost?
   a: Napier AI does not publish pricing; its AML platform is licensed to financial institutions based on volume and module selection.
 - q: Does Napier AI verify identity documents?
-  a: No. Napier AI is a transaction-monitoring and sanctions-screening platform — it does not perform document or biometric identity verification.
+  a: No. Napier AI is a transaction-monitoring and sanctions-screening platform. It does not perform document or biometric identity verification.
 - q: What is Napier Continuum?
   a: Napier Continuum is a sandbox environment that lets compliance teams test and tune detection models before deploying them in production.
 - q: Who uses Napier AI?

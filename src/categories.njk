@@ -37,8 +37,8 @@ layout: v3.njk
         <tr>
           <td class="num">{{ e.rank }}</td>
           <th scope="row" style="font-weight:500;text-align:left"><span class="rank-table__prov">{% if e.q and e.q.logo.wordmark %}<img class="wordmark wordmark--sm" src="{{ e.q.logo.wordmark }}" alt="" style="height:18px;max-width:80px">{% endif %}{{ e.r.name }}{% if e.rank == 1 %} <span class="pill pill--dark" style="font-size:12px;padding:1px 8px">◆ {{ e.r.award or "Top pick" }}</span>{% endif %}</span></th>
-          <td class="num">{% if e.q and e.q.score != null %}<strong>{{ e.q.score | score1 }}</strong> <span style="color:var(--muted)">/ 5</span>{% else %}<span style="color:var(--muted)">—</span>{% endif %}</td>
-          <td class="hide-sm">{{ e.r.legacy_price_shown or "—" }}</td>
+          <td class="num">{% if e.q and e.q.score != null %}<strong>{{ e.q.score | score1 }}</strong> <span style="color:var(--muted)">/ 5</span>{% else %}<span style="color:var(--muted);font-size:14px">Not reviewed</span>{% endif %}</td>
+          <td class="hide-sm">{{ e.r.legacy_price_shown or "Not listed" }}</td>
           <td class="hide-sm" style="color:var(--body)">{% if e.rank > 1 %}{{ e.r.award }}{% endif %}</td>
           <td>{% if e.q %}<a href="/providers/{{ e.q.slug }}/">Read review →</a>{% else %}<span style="color:var(--muted);font-size:14px">Review coming</span>{% endif %}</td>
         </tr>

@@ -17,7 +17,7 @@ legacy_stats:
 explainer_html:
 - '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
 
-  <h2 style="font-size:19px;margin-bottom:10px;">What "Brazil-Ready KYC" Really Means</h2>
+  <h2 style="font-size:19px;margin-bottom:10px;">What Brazil-ready KYC means</h2>
 
   <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">Brazil''s Central Bank, BACEN, sets customer due diligence rules for regulated financial institutions, while COAF, the financial intelligence unit, receives suspicious-activity reports. A provider built for this market verifies individuals against their CPF and businesses against their CNPJ, and keeps decisioning fast enough to match Pix, Brazil''s instant-payment rail, which settles transfers in seconds.</p>
 
@@ -37,7 +37,7 @@ explainer_html:
 
   <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from KYB</h3>
 
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Verifying a CNPJ registration and its beneficial owners is closer to <a href="/providers/kyb/">KYB</a> than individual KYC — several providers on this list also appear on our KYB page for that reason.</p>
+  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Verifying a CNPJ registration and its beneficial owners is closer to <a href="/providers/kyb/">KYB</a> than individual KYC, which is why several providers on this list also appear on our KYB page.</p>
 
   <h3 style="font-size:14.5px;margin-bottom:8px;">How we evaluate vendors</h3>
 

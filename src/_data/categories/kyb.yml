@@ -17,9 +17,9 @@ legacy_stats:
 explainer_html:
 - '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
 
-  <h2 style="font-size:19px;margin-bottom:10px;">What KYB Actually Verifies</h2>
+  <h2 style="font-size:19px;margin-bottom:10px;">What KYB verifies</h2>
 
-  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">Know Your Business confirms the legal entity behind an account — its registration, its ownership structure, and the humans who ultimately control it. Where eKYC checks an individual against a document, KYB checks a company against a registry, then keeps peeling back ownership layers until it reaches a real person: the Ultimate Beneficial Owner (UBO). FATF Recommendations 24 and 25 set the global baseline for that beneficial-ownership disclosure.</p>
+  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">Know Your Business confirms the legal entity behind an account: its registration, its ownership structure, and the people who ultimately control it. Where eKYC checks an individual against a document, KYB checks a company against a registry, then keeps peeling back ownership layers until it reaches a real person: the Ultimate Beneficial Owner (UBO). FATF Recommendations 24 and 25 set the global baseline for that beneficial-ownership disclosure.</p>
 
   <h3 style="font-size:14.5px;margin-bottom:10px;">Core capabilities compliance teams typically require</h3>
 
@@ -27,7 +27,7 @@ explainer_html:
 
   <li style="list-style:disc;">Live pulls from official company registries (Companies House, Sirene, and equivalents), not cached snapshots</li>
 
-  <li style="list-style:disc;">UBO mapping through layered ownership structures — the "onion peeling" problem</li>
+  <li style="list-style:disc;">UBO mapping through layered ownership structures (the "onion peeling" problem)</li>
 
   <li style="list-style:disc;">Level 1 automation (document checks) vs. Level 2 straight-through processing (STP) that resolves UBOs without a human touch</li>
 
@@ -45,7 +45,7 @@ explainer_html:
 
   <h3 style="font-size:14.5px;margin-bottom:8px;">Regulatory context</h3>
 
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Key frameworks: FATF Recommendations 24/25 on beneficial ownership, and the corporate registries — Companies House (UK), Sirene (France), and similar national systems — that KYB providers query directly or through cached feeds.</p>
+  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Key frameworks: FATF Recommendations 24/25 on beneficial ownership, and the corporate registries (Companies House in the UK, Sirene in France, and similar national systems) that KYB providers query directly or through cached feeds.</p>
 
   <a class="entity-card__cta" href="/methodology/">See how we evaluate every provider on this list in our full methodology →</a>
 

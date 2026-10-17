@@ -17,7 +17,7 @@ legacy_stats:
 explainer_html:
 - '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
 
-  <h2 style="font-size:19px;margin-bottom:10px;">What Liveness Detection Actually Tests</h2>
+  <h2 style="font-size:19px;margin-bottom:10px;">What liveness detection tests</h2>
 
   <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">Liveness detection is the narrow technology layer that proves a face in front of a camera is a live human, not a photo, mask, or injected video feed. It''s one component inside a broader identity-verification workflow, not the workflow itself.</p>
 
@@ -35,7 +35,7 @@ explainer_html:
 
   </ul>
 
-  <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from Identity Verification</h3>
+  <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from identity verification</h3>
 
   <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Liveness detection is the technology layer; <a href="/providers/identity-verification/">identity verification</a> is the full workflow that wraps liveness with document checks, watchlists, and step-up triggers across the account lifecycle.</p>
 

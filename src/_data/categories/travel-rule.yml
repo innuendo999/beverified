@@ -17,9 +17,9 @@ legacy_stats:
 explainer_html:
 - '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
 
-  <h2 style="font-size:19px;margin-bottom:10px;">What the Crypto Travel Rule Actually Requires</h2>
+  <h2 style="font-size:19px;margin-bottom:10px;">What the crypto Travel Rule requires</h2>
 
-  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">FATF Recommendation 16, the Travel Rule, requires a sending VASP to pass originator and beneficiary information to the receiving VASP before or during a virtual-asset transfer above the relevant threshold — not to screen the wallet itself, which is a separate crypto KYC function.</p>
+  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">FATF Recommendation 16, the Travel Rule, requires a sending VASP to pass originator and beneficiary information to the receiving VASP before or during a virtual-asset transfer above the relevant threshold. Screening the wallet itself is a separate crypto KYC function.</p>
 
   <h3 style="font-size:14.5px;margin-bottom:10px;">Core capabilities compliance teams typically require</h3>
 
@@ -31,11 +31,11 @@ explainer_html:
 
   <li style="list-style:disc;">Counterparty due diligence before a transfer completes</li>
 
-  <li style="list-style:disc;">Handling the "Sunrise Issue" — the gap where the receiving jurisdiction hasn''t yet adopted equivalent rules</li>
+  <li style="list-style:disc;">Handling the "Sunrise Issue", the gap where the receiving jurisdiction hasn''t yet adopted equivalent rules</li>
 
   </ul>
 
-  <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from Crypto KYC</h3>
+  <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from crypto KYC</h3>
 
   <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Travel Rule software exchanges identity data between VASPs at transfer time; <a href="/providers/crypto/">crypto KYC</a> screens the wallet''s own risk and onboarding history. Most platforms in this list also appear in Crypto KYC, since the same VASP often runs both.</p>
 
@@ -49,21 +49,21 @@ explainer_html:
 
   <ul style="margin:0 0 18px;padding-left:20px;font-size:14.5px;line-height:1.75;">
 
-  <li id="protocol-trust" style="list-style:disc;"><strong>TRUST</strong> — a Travel Rule network used by many regulated US exchanges to exchange originator and beneficiary data.</li>
+  <li id="protocol-trust" style="list-style:disc;"><strong>TRUST</strong> is a Travel Rule network used by many regulated US exchanges to exchange originator and beneficiary data.</li>
 
-  <li id="protocol-trp" style="list-style:disc;"><strong>TRP (Travel Rule Protocol)</strong> — an open, vendor-neutral standard for VASP-to-VASP messaging, designed to reduce lock-in.</li>
+  <li id="protocol-trp" style="list-style:disc;"><strong>TRP (Travel Rule Protocol)</strong> is an open, vendor-neutral standard for VASP-to-VASP messaging, designed to reduce lock-in.</li>
 
-  <li id="protocol-tap" style="list-style:disc;"><strong>TAP</strong> — Notabene''s own protocol; it works alongside VODE and does not bridge to TRP, OpenVASP or Shyft.</li>
+  <li id="protocol-tap" style="list-style:disc;"><strong>TAP</strong> is Notabene''s own protocol. It works alongside VODE and does not bridge to TRP, OpenVASP or Shyft.</li>
 
-  <li id="protocol-aopp" style="list-style:disc;"><strong>AOPP (Address Ownership Proof Protocol)</strong> — a one-step method to prove a customer controls a self-hosted wallet, used by 21 Analytics.</li>
+  <li id="protocol-aopp" style="list-style:disc;"><strong>AOPP (Address Ownership Proof Protocol)</strong> is a one-step method to prove a customer controls a self-hosted wallet, used by 21 Analytics.</li>
 
-  <li id="protocol-ivms101" style="list-style:disc;"><strong>IVMS101</strong> — the shared data model that defines how identity data is formatted so different systems can read it.</li>
+  <li id="protocol-ivms101" style="list-style:disc;"><strong>IVMS101</strong> is the shared data model that defines how identity data is formatted so different systems can read it.</li>
 
   </ul>
 
   <h3 id="us-context" style="font-size:14.5px;margin-bottom:8px;">Travel Rule in the United States</h3>
 
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">In the US, Travel Rule obligations trace back to FinCEN and the Bank Secrecy Act, which apply a recordkeeping and transmittal requirement to qualifying transfers. Many regulated US exchanges exchange this data over the TRUST network, which is why network reach — not just protocol support — matters when a provider serves the US market.</p>
+  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">In the US, Travel Rule obligations trace back to FinCEN and the Bank Secrecy Act, which apply a recordkeeping and transmittal requirement to qualifying transfers. Many regulated US exchanges exchange this data over the TRUST network, so network reach matters as much as protocol support when a provider serves the US market.</p>
 
   <a class="entity-card__cta" href="/methodology/">See how we evaluate every provider on this list in our full methodology →</a>
 
@@ -78,11 +78,11 @@ faq:
 - q: What is the "Sunrise Issue"?
   a: The Sunrise Issue refers to the compliance gap that arises when a sending VASP's jurisdiction has implemented Travel Rule requirements but the receiving jurisdiction has not yet adopted equivalent rules.
 - q: Do all crypto transfers require Travel Rule data?
-  a: No — most jurisdictions apply a minimum transfer threshold below which Travel Rule data exchange isn't required, though thresholds vary by country.
+  a: No. Most jurisdictions apply a minimum transfer threshold below which Travel Rule data exchange isn't required, though thresholds vary by country.
 - q: Can different Travel Rule protocols talk to each other?
-  a: Interoperability varies by provider. Some connect to shared networks such as TRUST and TRP, while others run their own protocol — for example, Notabene uses TAP and VODE and does not connect to TRP, OpenVASP or Shyft. Check a provider's networks against your counterparties before you commit.
+  a: Interoperability varies by provider. Some connect to shared networks such as TRUST and TRP, while others run their own protocol. Notabene, for example, uses TAP and VODE and does not connect to TRP, OpenVASP or Shyft. Check a provider's networks against your counterparties before you commit.
 - q: Which Travel Rule provider works with self-hosted wallets?
-  a: 21 Analytics verifies self-hosted (non-custodial) wallet ownership in one step using AOPP, the Address Ownership Proof Protocol — useful when a VASP needs to prove who controls an external wallet before releasing funds.
+  a: 21 Analytics verifies self-hosted (non-custodial) wallet ownership in one step using AOPP, the Address Ownership Proof Protocol. That helps when a VASP needs to prove who controls an external wallet before releasing funds.
 adjacent:
 - crypto
 - aml

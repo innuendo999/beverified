@@ -23,13 +23,13 @@ link:
   type: null
   legacy_rel: nofollow sponsored
 last_verified: '2026-07-29'
-verdict: Castellum.AI runs its own sanctions and risk database — updated every 5 minutes across 1,000+ lists — rather than reselling third-party data, built by founder Peter Piatetsky's direct experience at the US Treasury's OFAC. Its agentic AI reportedly resolves 83% of L1/L2 alerts instantly with a 94% cut in false positives, with explainability built in for audits.
+verdict: Castellum.AI runs its own sanctions and risk database, updated every 5 minutes across 1,000+ lists, instead of reselling third-party data. Founder Peter Piatetsky built it on his direct experience at the US Treasury's OFAC. Its agentic AI reportedly resolves 83% of L1/L2 alerts instantly with a 94% cut in false positives, with explainability built in for audits.
 what_is:
 - Castellum.AI is a sanctions and risk-data screening company founded in 2019 and headquartered in New York, co-founded by CEO Peter Piatetsky, a former US Treasury/OFAC official, and CTO Julian Vasilkoski. With roughly 26 employees and about $12.6M raised from investors including Spider Capital and NewFund, it maintains an in-house database of 200,000+ sources and 1,000+ sanctions lists (OFAC, UN, UK HMT, EU), refreshed every 5 minutes.
 features:
 - Real-time sanctions, PEP, and adverse-media screening.
 - Beneficial-ownership, forced-labor, and supply-chain risk screening.
-- Agentic AI alert resolution — reported 83% of L1/L2 alerts resolved instantly.
+- 'Agentic AI alert resolution: a reported 83% of L1/L2 alerts resolved instantly.'
 - Reported 94% reduction in false positives.
 - Explainable, audit-ready decisioning with PDF investigation reports.
 - Perpetual KYC (pKYC) support.
@@ -39,7 +39,7 @@ pricing:
   - tier: Custom Quote
     price: Custom
     note: Sanctions/risk screening platform licensing
-    extra: Not publicly disclosed — contact sales
+    extra: Not publicly disclosed; contact sales
   legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
   verified: null
   items: []
@@ -63,7 +63,7 @@ facts:
   value: ~$12.6M raised
   source: null
 pros:
-- In-house risk data refreshed every 5 minutes — unusually current for the category
+- In-house risk data refreshed every 5 minutes, unusually current for the category
 - Founder brings direct US Treasury/OFAC sanctions expertise
 - Explainable agentic AI designed for audit-ready alert resolution
 cons:
@@ -90,11 +90,11 @@ choose_instead:
 user_reviews:
   legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
   praise:
-  - Data freshness (frequently cited) — reviewers highlight the 5-minute refresh cycle as unusually current.
-  - Explainability — users note the audit-ready reasoning behind AI-resolved alerts.
+  - 'Data freshness (frequently cited): reviewers highlight the 5-minute refresh cycle as unusually current.'
+  - 'Explainability: users note the audit-ready reasoning behind AI-resolved alerts.'
   criticize:
-  - Scale — some reviewers note a smaller team relative to enterprise AML vendors.
-  - Scope — screening/data-focused rather than full identity verification.
+  - 'Scale: some reviewers note a smaller team relative to enterprise AML vendors.'
+  - 'Scope: focused on screening and data rather than full identity verification.'
   by_profile:
   - Community and sponsor banks value Castellum.AI's current data and explainable AI.
   - Crypto exchanges use it for real-time sanctions and beneficial-ownership screening.

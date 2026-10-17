@@ -31,10 +31,10 @@ features:
 - Support for 580+ document types with OCR and barcode recognition.
 - Biometric checks with liveness detection and multi-factor authentication.
 - AML, KYC, and PEP/OFAC screening bundled with core identity checks.
-- Business verification and Video KYC for enhanced onboarding flows.
+- Business verification and Video KYC for onboarding.
 - GDPR, HIPAA, and CCPA-compliant data handling.
 pricing:
-  summary: IDMERIT's Basic plan starts at $0.10 per user per month for core identity verification — the lowest published entry rate among the providers in this batch. Additional modules like AML/KYC screening and Video KYC are available on higher tiers, quoted based on volume and feature mix.
+  summary: IDMERIT's Basic plan starts at $0.10 per user per month for core identity verification, the lowest published entry rate among the providers in this batch. Additional modules like AML/KYC screening and Video KYC are available on higher tiers, quoted based on volume and feature mix.
   plans:
   - tier: Basic
     price: $0.10 / user / mo
@@ -85,11 +85,11 @@ choose_instead:
 user_reviews:
   legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
   praise:
-  - Pricing (frequently cited) — reviewers highlight the low per-user cost relative to competitors.
-  - Ease of implementation — users describe straightforward integration and responsive support.
+  - 'Pricing (frequently cited): reviewers highlight the low per-user cost relative to competitors.'
+  - 'Ease of implementation: users describe straightforward integration and responsive support.'
   criticize:
-  - Feature depth — some reviews note fewer advanced fraud-detection features than larger platforms.
-  - Brand maturity — smaller companies sometimes want a more established vendor for procurement reasons.
+  - 'Feature depth: some reviews note fewer advanced fraud-detection features than larger platforms.'
+  - 'Brand maturity: smaller companies sometimes want a more established vendor for procurement reasons.'
   by_profile:
   - Startups and SMBs value IDMERIT for its low per-check cost at meaningful volume.
   - Businesses in emerging markets benefit from its broad country and document coverage.
@@ -106,7 +106,7 @@ faq:
 - q: What is the best alternative to IDMERIT?
   a: Sumsub is the best alternative if you want a more established, published-pricing all-in-one platform. Trulioo is the closest fit for broader data-layer proofing at enterprise scale.
 - q: Who are IDMERIT's main competitors?
-  a: IDMERIT competes with Trulioo and Sumsub, differentiating mainly on price — its published per-user rate is the lowest in this category.
+  a: IDMERIT competes with Trulioo and Sumsub mainly on price. Its published per-user rate is the lowest in this category.
 segments: []
 capabilities: {}
 certifications: []

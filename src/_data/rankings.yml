@@ -445,7 +445,7 @@ cheap-kyc:
     coverage: Strongest in EU
     size: null
     pros:
-    - Free tier covers real integration testing, not just a demo
+    - Free tier covers real integration testing, beyond a demo
     - Fast self-serve setup
     - Simple, published pricing page
     cons:
@@ -654,7 +654,7 @@ identity-verification:
   - slug: onfido
     name: Onfido
     award: Best for Biometric Liveness
-    tagline: Presentation-attack-detection-grade liveness built for login and high-risk moments, not just onboarding.
+    tagline: Liveness at presentation-attack-detection grade, built for login and high-risk moments as well as onboarding.
     coverage: Global, strongest in UK/EU
     size: Mid-market to Enterprise
     pros:
@@ -1105,7 +1105,7 @@ travel-rule:
     - Strong counterparty due-diligence tooling
     - Hosted SaaS with a fast path to go live
     cons:
-    - Runs on its own protocol, TAP, alongside VODE — it does not connect to TRP, OpenVASP or Shyft, so check your counterparties' networks first
+    - Runs on its own protocol, TAP, alongside VODE. It does not connect to TRP, OpenVASP or Shyft, so check your counterparties' networks first
     - Not a full KYC/onboarding platform on its own
     - Best paired with a separate wallet-screening tool
     legacy_price_shown: Custom pricing
@@ -1169,11 +1169,11 @@ travel-rule:
     coverage: Global, strong in Europe
     size: null
     pros:
-    - Connects to the networks most regulated VASPs already use — TRUST and TRP
-    - Enterprise-grade security through on-premises hosting — data stays in your environment
+    - 'Connects to the networks most regulated VASPs already use: TRUST and TRP'
+    - 'Enterprise-grade security through on-premises hosting: data stays in your environment'
     - One-click self-hosted wallet ownership verification via AOPP
     cons:
-    - Self-hosted, so it needs infrastructure you run — not a hosted SaaS
+    - Self-hosted, so it needs infrastructure you run; it is not a hosted SaaS
     - Built for established operations rather than early-stage startups
     - Pricing comes through a sales conversation, not a public page
     legacy_price_shown: On request

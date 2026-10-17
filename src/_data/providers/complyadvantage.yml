@@ -10,7 +10,7 @@ logo:
   src: /assets/img/logos/complyadvantage.jpg
   background: '#9B6EF3'
   wordmark: /assets/img/wordmarks/complyadvantage.png
-tagline: AML screening and financial-crime intelligence — not an identity-verification tool
+tagline: AML screening and financial-crime intelligence; not an identity-verification tool
 score: 4.6
 grade: Great
 primary_category: aml
@@ -23,9 +23,9 @@ link:
   type: null
   legacy_rel: nofollow sponsored
 last_verified: '2026-07-25'
-verdict: ComplyAdvantage is a sanctions, PEP, and adverse-media screening platform, not a document-verification company — a distinction that matters when comparing it to IDV vendors in this category. Its proprietary financial-crime database and free ComplyLaunch tier for early-stage startups make it a strong AML data layer, typically deployed alongside a separate identity-verification provider rather than instead of one.
+verdict: ComplyAdvantage is a sanctions, PEP and adverse-media screening platform, not a document-verification company. That distinction matters when comparing it with IDV vendors in this category. Its proprietary financial-crime database and free ComplyLaunch tier for early-stage startups make it a strong AML data layer, typically deployed alongside a separate identity-verification provider rather than instead of one.
 what_is:
-- ComplyAdvantage is an AML data and financial-crime intelligence platform founded in 2014 by Charles Delingpole (previously known as Mimiro), headquartered in London. Its Mesh platform serves more than 1,000 enterprise clients with proprietary sanctions, PEP, and adverse-media screening data — it does not perform document or biometric identity verification.
+- ComplyAdvantage is an AML data and financial-crime intelligence platform founded in 2014 by Charles Delingpole (previously known as Mimiro), headquartered in London. Its Mesh platform serves more than 1,000 enterprise clients with proprietary sanctions, PEP and adverse-media screening data. It does not perform document or biometric identity verification.
 features:
 - Customer and business screening against sanctions, PEP, RCA, and adverse-media sources.
 - Real-time transaction monitoring with AI-driven risk scoring.
@@ -38,7 +38,7 @@ pricing:
   plans:
   - tier: Starter
     price: $99.99 / mo
-    note: 100 entities — low-volume screening/monitoring
+    note: 100 entities, for low-volume screening and monitoring
     extra: Cancel anytime; setup in 1 business day
   - tier: Growth
     price: ~$119 / mo
@@ -56,7 +56,7 @@ facts:
   value: $99.99/mo
   source: null
 - label: Effective
-  value: $99.99–$119/mo (entry tiers)
+  value: $99.99 to $119/mo (entry tiers)
   source: null
 - label: Founded
   value: '2014'
@@ -75,7 +75,7 @@ pros:
 - Transparent entry-level pricing plus a free ComplyLaunch tier for startups
 - Modern AI/agentic architecture built for explainability under EU AI Act and DORA
 cons:
-- Does not perform identity verification — needs a separate IDV vendor alongside it
+- Does not perform identity verification, so it needs a separate IDV vendor alongside it
 - Initial setup can be involved, per user reviews
 - Alert re-scoring workflows have room for improvement, per user reviews
 alternatives:
@@ -98,11 +98,11 @@ choose_instead:
 user_reviews:
   legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
   praise:
-  - Screening data depth (frequently cited) — reviewers point to strong sanctions/PEP/adverse-media coverage.
-  - Reduced false positives — clients report meaningfully fewer false positives after adopting the AI risk-scoring layer.
+  - 'Screening data depth (frequently cited): reviewers point to strong sanctions, PEP and adverse-media coverage.'
+  - 'Fewer false positives: clients report meaningfully fewer false positives after adopting the AI risk-scoring layer.'
   criticize:
-  - Setup complexity — some reviews describe the initial configuration as more involved than expected.
-  - Scope limitation — reviewers note it must be paired with a separate IDV tool for document/biometric verification.
+  - 'Setup complexity: some reviews describe the initial configuration as more involved than expected.'
+  - 'Scope limitation: reviewers note it must be paired with a separate IDV tool for document and biometric verification.'
   by_profile:
   - Banks and regulated fintechs use ComplyAdvantage as their core AML screening and monitoring layer.
   - Early-stage startups access core screening functionality free through ComplyLaunch.
@@ -111,7 +111,7 @@ faq:
 - q: How much does ComplyAdvantage cost?
   a: ComplyAdvantage's Starter plan begins at $99.99/month for 100 entities, with a next tier around $119/month and custom Enterprise pricing above that. Setup takes about one business day.
 - q: Does ComplyAdvantage verify identity documents?
-  a: No. ComplyAdvantage is an AML screening and financial-crime data platform — it does not perform document or biometric identity verification, and is typically used alongside a separate IDV provider.
+  a: No. ComplyAdvantage is an AML screening and financial-crime data platform. It does not perform document or biometric identity verification and is typically used alongside a separate IDV provider.
 - q: Is there a free option for startups?
   a: Yes. ComplyLaunch gives qualifying early-stage startups free access to ComplyAdvantage's core screening functionality.
 - q: Does ComplyAdvantage do transaction monitoring?

@@ -30,7 +30,7 @@ what_is:
 features:
 - Document verification powered by Onfido's Atlas AI engine.
 - Biometric face match with active and passive liveness detection.
-- Watchlist and AML screening — sanctions, PEP, adverse media, with optional ongoing monitoring.
+- Watchlist and AML screening (sanctions, PEP, adverse media), with optional ongoing monitoring.
 - SDKs and APIs built for fintech and web3 integration.
 - Coverage across 2,500+ document types from 195 countries.
 - Available via AWS Marketplace for simplified enterprise procurement.
@@ -65,10 +65,10 @@ facts:
   source: null
 pros:
 - Strong developer SDKs and API tooling
-- Near-global document coverage — 2,500+ document types across 195 countries
+- 'Near-global document coverage: 2,500+ document types across 195 countries'
 - Backed by Entrust's broader identity-security infrastructure since 2024
 cons:
-- No published pricing — quoted via sales only
+- No published pricing; quoted via sales only
 - Enterprise focus can be pricier for mid-market teams than some competitors
 - Mixed reviews on support responsiveness
 alternatives:
@@ -91,11 +91,11 @@ choose_instead:
 user_reviews:
   legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
   praise:
-  - Developer experience (frequently cited) — reviewers highlight clean SDKs and API documentation for integration.
-  - Document coverage — near-global coverage is called out favorably in enterprise reviews.
+  - 'Developer experience (frequently cited): reviewers highlight clean SDKs and API documentation for integration.'
+  - 'Document coverage: enterprise reviews call out the near-global coverage favorably.'
   criticize:
-  - Support responsiveness — some reviews describe slower response times than expected for enterprise accounts.
-  - Pricing transparency — sales-only pricing is a recurring friction point in reviews.
+  - 'Support responsiveness: some reviews describe slower response times than expected for enterprise accounts.'
+  - 'Pricing transparency: sales-only pricing is a recurring friction point in reviews.'
   by_profile:
   - Fintechs and web3 companies value Onfido's SDK depth and API-first integration.
   - Enterprises benefit from AWS Marketplace procurement and Entrust's security backing.
@@ -106,7 +106,7 @@ faq:
 - q: Who owns Onfido?
   a: Entrust acquired Onfido in April 2024. Onfido continues to operate under its own brand as part of Entrust's identity-security portfolio.
 - q: Does Onfido include AML screening?
-  a: Yes. Onfido offers watchlist and AML screening — sanctions, PEP, and adverse media — with optional ongoing monitoring, alongside its core document and biometric verification.
+  a: Yes. Onfido offers watchlist and AML screening (sanctions, PEP and adverse media) with optional ongoing monitoring, alongside its core document and biometric verification.
 - q: How many countries does Onfido cover?
   a: Onfido supports 2,500+ document types across 195 countries.
 - q: What is the best alternative to Onfido?

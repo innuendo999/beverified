@@ -17,9 +17,9 @@ legacy_stats:
 explainer_html:
 - '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
 
-  <h2 style="font-size:19px;margin-bottom:10px;">What Crypto KYC Verifies — On-Chain and Off-Chain</h2>
+  <h2 style="font-size:19px;margin-bottom:10px;">What crypto KYC verifies on-chain and off-chain</h2>
 
-  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">Crypto KYC does two jobs traditional KYC doesn''t: it verifies the person behind a wallet, and it screens the wallet''s on-chain history for exposure to sanctioned addresses, mixers, and darknet markets. The obligation to share that verification data between exchanges — not just check it internally — comes from FATF Recommendation 16, the Travel Rule.</p>
+  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">Crypto KYC does two jobs traditional KYC doesn''t: it verifies the person behind a wallet, and it screens the wallet''s on-chain history for exposure to sanctioned addresses, mixers, and darknet markets. The obligation to share that verification data between exchanges, rather than only check it internally, comes from FATF Recommendation 16, the Travel Rule.</p>
 
   <h3 style="font-size:14.5px;margin-bottom:10px;">Core capabilities compliance teams typically require</h3>
 
@@ -37,7 +37,7 @@ explainer_html:
 
   <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from AML</h3>
 
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Crypto KYC screens wallets and on-chain flows specifically; general <a href="/providers/aml/">AML software</a> screens traditional banking transactions and PEP/sanctions lists. The screening engines often overlap — several platforms in this list also appear in our AML category — but a crypto-specific vendor is built to read blockchain data natively.</p>
+  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Crypto KYC screens wallets and on-chain flows specifically; general <a href="/providers/aml/">AML software</a> screens traditional banking transactions and PEP/sanctions lists. The screening engines often overlap (several platforms here also appear in our AML category), but a crypto-specific vendor is built to read blockchain data natively.</p>
 
   <h3 style="font-size:14.5px;margin-bottom:8px;">Regulatory context</h3>
 
@@ -54,7 +54,7 @@ faq:
 - q: Do I need Travel Rule compliance software if I only serve retail crypto users?
   a: Likely yes above the relevant transfer threshold. FATF Recommendation 16 applies to Virtual Asset Service Providers regardless of whether their end users are retail or institutional.
 - q: What is a VASP?
-  a: A Virtual Asset Service Provider (VASP) is any business that exchanges, transfers, or safekeeps virtual assets on behalf of customers — exchanges, custodians, and many wallet providers all qualify.
+  a: A Virtual Asset Service Provider (VASP) is any business that exchanges, transfers or safekeeps virtual assets on behalf of customers. Exchanges, custodians and many wallet providers all qualify.
 - q: How does crypto KYC differ from traditional AML?
   a: Crypto KYC screens wallets and on-chain transaction flows specifically. Traditional AML software screens banking transactions and PEP/sanctions lists; the two disciplines often share the same underlying screening engine.
 - q: Does MiCA require Travel Rule compliance?

@@ -110,7 +110,7 @@ layout: v3.njk
       {%- for r in site.v3.rubric %}<div class="weights__row"><span>{{ r.name }}</span><span class="bar" aria-hidden="true"><i style="width:{{ r.weight * 4 }}%"></i></span><span>{{ r.weight }}%</span></div>{% endfor %}
     </div>
     <div class="weights__key" style="gap:24px">
-      <div><div style="color:var(--muted);margin-bottom:4px">Re-verification</div><div style="font-size:15px;color:var(--ink)">{{ home.recheck }}. “Last verified” changes only after a real re-check.</div></div>
+      <div><div style="color:var(--muted);margin-bottom:4px">Re-verification</div><div style="font-size:15px;color:var(--ink)">{{ home.recheck }}. "Last verified" changes only after a real re-check.</div></div>
       <div><div style="color:var(--muted);margin-bottom:4px">Affiliate policy</div><div style="font-size:15px;color:var(--ink)">{{ site.v3.disclosure }}</div></div>
     </div>
   </div>

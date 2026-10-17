@@ -17,7 +17,7 @@ legacy_stats:
 explainer_html:
 - '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
 
-  <h2 style="font-size:19px;margin-bottom:10px;">What AML Software Actually Checks</h2>
+  <h2 style="font-size:19px;margin-bottom:10px;">What AML software checks</h2>
 
   <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">Anti-money laundering software screens customers and transactions against sanctions lists, politically exposed persons (PEP) databases, and adverse media, then routes anything unusual to a human reviewer. In the US, that screening typically maps to OFAC''s Specially Designated Nationals List and FinCEN''s suspicious activity reporting rules. Providers serving banks in the EU operate under the sixth Anti-Money Laundering Directive (AMLD6).</p>
 
@@ -37,7 +37,7 @@ explainer_html:
 
   </ul>
 
-  <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from KYB and Crypto KYC</h3>
+  <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from KYB and crypto KYC</h3>
 
   <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">AML software screens ongoing customer activity; <a href="/providers/kyb/">KYB</a> verifies a business''s legal existence and beneficial owners at onboarding. <a href="/providers/crypto/">Crypto KYC</a> applies the same screening discipline to wallets and on-chain flows. Most banks run several of these, often from different vendors.</p>
 

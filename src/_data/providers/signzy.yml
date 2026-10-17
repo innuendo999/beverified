@@ -24,25 +24,25 @@ link:
   type: null
   legacy_rel: nofollow sponsored
 last_verified: '2026-07-29'
-verdict: Signzy's no-code visual workflow builder is deeply specialized for India — Aadhaar e-KYC, V-CIP video verification, and GSTIN business lookups — while a 2020 Mastercard alliance extends its video-KYC distribution globally. It's the strongest option here for India-specific BFSI compliance, though its depth outside that market requires more configuration.
+verdict: Signzy's no-code visual workflow builder is specialized for India (Aadhaar e-KYC, V-CIP video verification and GSTIN business lookups), while a 2020 Mastercard alliance extends its video-KYC distribution globally. It's the strongest option here for India-specific BFSI compliance, though its depth outside that market requires more configuration.
 what_is:
 - 'Signzy is a no-code KYC/KYB/AML platform founded in 2015 in Bengaluru, India, by an IIT-trained trio: CEO Ankit Ratan, Arpit Ratan, and Ankur Pandey, having raised more than $38.7M from investors including Kalaari, SAP, and Mastercard. It serves the largest Indian banks, 10 Fortune 30 companies, and a top-3 US acquiring bank, distributing its video-KYC technology globally through a 2020 Mastercard alliance.'
 features:
 - No-code visual workflow builder for KYC/KYB flows.
-- Individual KYC — V-CIP video verification, Aadhaar e-KYC, face match, document OCR.
-- Business KYC/KYB — GSTIN lookups, MCA director checks, UBO identification, business address verification.
+- 'Individual KYC: V-CIP video verification, Aadhaar e-KYC, face match, document OCR.'
+- 'Business KYC/KYB: GSTIN lookups, MCA director checks, UBO identification, business address verification.'
 - AML and sanctions screening.
 - Fraud monitoring, expanded after its 2024 acquisition of Difenz.
 - Distribution via Microsoft Azure Marketplace and Mastercard's global alliance.
 pricing:
-  summary: Signzy's India-market pricing is reported by third parties at roughly ₹5–₹35 per AML/sanctions check plus a ₹2–15 lakh annual platform commitment for the no-code builder; verify current rates directly with Signzy, especially outside India.
+  summary: Signzy's India-market pricing is reported by third parties at roughly ₹5 to ₹35 per AML/sanctions check plus a ₹2 to 15 lakh annual platform commitment for the no-code builder. Check current rates directly with Signzy, especially outside India.
   plans:
   - tier: Per-Check (India, reported)
-    price: ₹5–₹35 / check
+    price: ₹5 to ₹35 / check
     note: AML/sanctions screening, third-party reported
     extra: null
   - tier: Platform Fee (India, reported)
-    price: ₹2–15 lakh / yr
+    price: ₹2 to 15 lakh / yr
     note: No-code platform enterprise commit, third-party reported
     extra: Contact sales for global pricing
   legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
@@ -91,22 +91,22 @@ choose_instead:
 - slug: complycube
   text: you want simpler API-first integration without India-specific regulatory depth.
 - slug: kychub
-  text: you want no-code orchestration across the full AML lifecycle, not just KYC/KYB.
+  text: you want no-code orchestration across the full AML lifecycle, beyond KYC/KYB.
 user_reviews:
   legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
   praise:
-  - India-market depth (frequently cited) — reviewers highlight Aadhaar/GSTIN/V-CIP coverage as best-in-class for the market.
-  - No-code builder — users note compliance teams can configure flows without engineering support.
+  - 'India-market depth (frequently cited): reviewers rate its Aadhaar, GSTIN and V-CIP coverage as the strongest for the market.'
+  - 'No-code builder: compliance teams can configure flows without engineering support.'
   criticize:
-  - Non-India depth — some reviewers note more setup is needed for markets outside India.
-  - Platform-fee structure — the enterprise-commit model is a consideration for smaller teams.
+  - 'Non-India depth: some reviewers note more setup is needed for markets outside India.'
+  - 'Platform-fee structure: the enterprise-commit model is a consideration for smaller teams.'
   by_profile:
   - Indian banks and BFSI institutions are Signzy's deepest, longest-standing customer base.
   - Fortune 30 companies use its Mastercard-distributed video-KYC technology globally.
   - Businesses outside India with no India-specific needs often evaluate other no-code builders first.
 faq:
 - q: How much does Signzy cost?
-  a: Signzy's India-market pricing is reported by third parties at roughly ₹5–₹35 per AML/sanctions check plus a ₹2–15 lakh annual platform fee; verify current rates directly with Signzy.
+  a: Signzy's India-market pricing is reported by third parties at roughly ₹5 to ₹35 per AML/sanctions check plus a ₹2 to 15 lakh annual platform fee. Check current rates directly with Signzy.
 - q: Does Signzy support Aadhaar verification?
   a: Yes. Signzy supports Aadhaar e-KYC and V-CIP (video customer identification process) alongside document OCR and face match.
 - q: Does Signzy verify businesses?

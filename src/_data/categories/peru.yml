@@ -17,7 +17,7 @@ legacy_stats:
 explainer_html:
 - '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
 
-  <h2 style="font-size:19px;margin-bottom:10px;">What Peru-Ready KYC/AML Actually Requires</h2>
+  <h2 style="font-size:19px;margin-bottom:10px;">What Peru-ready KYC/AML requires</h2>
 
   <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">Peru''s financial regulator, the SBS (Superintendencia de Banca, Seguros y AFP), sets customer due diligence rules for banks and fintechs, while suspicious-activity reports route through the UIF, the country''s financial intelligence unit. A provider built for this market reads Peruvian national ID documents (DNI) reliably, checks against local and international sanctions/PEP lists, and keeps latency low as onboarding volume spikes.</p>
 
@@ -37,7 +37,7 @@ explainer_html:
 
   <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from Brazil or Mexico</h3>
 
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Unlike <a href="/providers/brazil/">Brazil''s</a> CPF/CNPJ-centric checks or <a href="/providers/mexico/">Mexico''s</a> CNBV framework, Peru-focused providers need to map directly to SBS supervisory categories and UIF reporting formats — a mismatch here is one of the most common reasons onboarding stacks fail local audits.</p>
+  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Unlike <a href="/providers/brazil/">Brazil''s</a> CPF/CNPJ-centric checks or <a href="/providers/mexico/">Mexico''s</a> CNBV framework, Peru-focused providers need to map directly to SBS supervisory categories and UIF reporting formats. A mismatch here is one of the most common reasons onboarding stacks fail local audits.</p>
 
   <h3 style="font-size:14.5px;margin-bottom:8px;">Regulatory context</h3>
 

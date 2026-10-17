@@ -27,8 +27,8 @@ verdict: AiPrise combines individual KYC and business KYB verification through o
 what_is:
 - AiPrise is a global KYC/KYB verification company founded by Chaitanya Sarda, US-based (exact headquarters location not consistently disclosed publicly), having raised two funding rounds. It provides identity and business verification across 200+ countries with a particular focus on emerging markets, combined with an AI Compliance Copilot for automating due diligence work.
 features:
-- KYB — business registry data, ownership verification, and social signals.
-- KYC — document verification, biometric selfie match, and local ID checks.
+- 'KYB: business registry data, ownership verification and social signals.'
+- 'KYC: document verification, biometric selfie match and local ID checks.'
 - Ongoing fraud monitoring.
 - Customizable rule engines for risk workflows.
 - AI Compliance Copilot for case review and document analysis.
@@ -39,7 +39,7 @@ pricing:
   - tier: Custom Quote
     price: Custom
     note: KYC/KYB platform licensing
-    extra: Not publicly disclosed — contact sales
+    extra: Not publicly disclosed; contact sales
   legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
   verified: null
   items: []
@@ -90,11 +90,11 @@ choose_instead:
 user_reviews:
   legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
   praise:
-  - AI Copilot (frequently cited) — reviewers highlight automation of due diligence casework.
-  - Coverage breadth — users note strong fit for onboarding customers in emerging markets.
+  - 'AI Copilot (frequently cited): reviewers highlight automation of due diligence casework.'
+  - 'Coverage breadth: users note a strong fit for onboarding customers in emerging markets.'
   criticize:
-  - Transparency — some reviewers note limited public company information.
-  - Brand scale — smaller than established category leaders.
+  - 'Transparency: some reviewers note limited public company information.'
+  - 'Brand scale: smaller than established category leaders.'
   by_profile:
   - Businesses onboarding customers across emerging markets value AiPrise's coverage.
   - Compliance teams use the AI Copilot to speed up EDD casework.
@@ -105,7 +105,7 @@ faq:
 - q: What is AiPrise's AI Compliance Copilot?
   a: It's an AI tool that automates case review, document analysis, and enhanced due diligence (EDD) report generation.
 - q: Does AiPrise support KYB?
-  a: Yes, AiPrise combines business KYB verification — registry data, ownership, and social signals — with individual KYC in one API.
+  a: Yes, AiPrise combines business KYB verification (registry data, ownership and social signals) with individual KYC in one API.
 - q: How many countries does AiPrise cover?
   a: AiPrise covers 200+ countries, with a particular focus on emerging markets.
 - q: What is the best alternative to AiPrise?

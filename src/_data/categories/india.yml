@@ -17,7 +17,7 @@ legacy_stats:
 explainer_html:
 - '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
 
-  <h2 style="font-size:19px;margin-bottom:10px;">What "India-Ready KYC" Really Means</h2>
+  <h2 style="font-size:19px;margin-bottom:10px;">What India-ready KYC means</h2>
 
   <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">The RBI issues the KYC Master Direction that regulated entities in India must follow, while FIU-IND, the financial intelligence unit, receives suspicious-transaction reports. A provider built for this market supports Aadhaar-enabled eKYC, cross-checks a customer''s PAN, and integrates with CKYC, the Central KYC Registry that lets a verified record be reused across institutions.</p>
 
@@ -54,7 +54,7 @@ faq:
 - q: What is CKYC?
   a: The Central KYC Registry (CKYC) is a shared national database that stores verified KYC records, so a customer verified once by one institution doesn't need to repeat full KYC at another.
 - q: Why does UPI matter for KYC in India?
-  a: UPI's real-time payment volume creates onboarding pressure similar to Brazil's Pix — providers need fast decisioning to keep pace with instant account funding.
+  a: UPI's real-time payment volume creates onboarding pressure similar to Brazil's Pix, so providers need fast decisioning to keep pace with instant account funding.
 - q: What is PAN and why is it used in KYC?
   a: PAN (Permanent Account Number) is India's tax identification number, commonly cross-checked during KYC to link a verified identity to financial and tax records.
 - q: How does India's eKYC differ from eKYC elsewhere?

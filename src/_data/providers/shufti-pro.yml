@@ -24,9 +24,9 @@ link:
   type: null
   legacy_rel: nofollow sponsored
 last_verified: '2026-07-25'
-verdict: 'Shufti Pro''s pitch is breadth: 230+ countries and territories, 10,000+ document types, and 150+ languages, built on a proprietary AI stack rather than licensed third-party models. Flexible deployment — cloud, private cloud, or on-premise — makes it a fit for teams with data-residency constraints, though like most competitors here, actual pricing requires a quote.'
+verdict: 'Shufti Pro''s pitch is breadth: 230+ countries and territories, 10,000+ document types, and 150+ languages, built on a proprietary AI stack rather than licensed third-party models. Flexible deployment (cloud, private cloud or on-premise) makes it a fit for teams with data-residency constraints, though, as with most competitors here, actual pricing requires a quote.'
 what_is:
-- Shufti Pro is an identity-verification and KYC/AML platform founded in 2017 by Victor Fredung and Shahid Hanif, headquartered in London with offices in the US, Poland, and the UAE. It's built around a proprietary AI verification stack — rather than reselling third-party models — and markets itself on the breadth of its geographic, document, and language coverage.
+- Shufti Pro is an identity-verification and KYC/AML platform founded in 2017 by Victor Fredung and Shahid Hanif, headquartered in London with offices in the US, Poland, and the UAE. It's built around a proprietary AI verification stack instead of resold third-party models, and markets itself on the breadth of its geographic, document and language coverage.
 features:
 - Document verification and facial biometrics with liveness and deepfake detection.
 - KYB (business verification) alongside individual identity checks.
@@ -35,14 +35,14 @@ features:
 - Age verification for regulated industries.
 - Cloud, private cloud, and on-premise deployment options.
 pricing:
-  summary: Shufti Pro does not publish standard pricing; plans are quoted via sales, though a 7-day free trial is available to test the platform first. Third-party estimates place the effective cost at roughly $0.50–$1.70 per verification — an external estimate, not an official rate, and setup fees apply on some plans.
+  summary: Shufti Pro does not publish standard pricing; plans are quoted via sales, though a 7-day free trial is available to test the platform first. Third-party estimates place the effective cost at roughly $0.50 to $1.70 per verification. That is an external estimate, not an official rate, and setup fees apply on some plans.
   plans:
   - tier: Custom Quote
     price: Custom
     note: Plan and volume quoted via sales
     extra: 7-day free trial available
   - tier: Third-Party Estimate
-    price: $0.50–$1.70
+    price: $0.50 to $1.70
     note: Per verification (external estimate, not Shufti Pro's official pricing)
     extra: Setup fees may apply on some plans
   legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as third-party estimates are not the vendor''s official rate.'
@@ -53,7 +53,7 @@ facts:
   value: Custom quote (7-day trial)
   source: null
 - label: Effective
-  value: ~$0.50–$1.70/check (3rd-party est.)
+  value: ~$0.50 to $1.70/check (3rd-party est.)
   source: null
 - label: Founded
   value: '2017'
@@ -68,11 +68,11 @@ facts:
   value: ISO 27001:2022, SOC 2, GDPR
   source: null
 pros:
-- Widest geographic and language coverage in this batch — 230+ countries, 150+ languages
+- 'Widest geographic and language coverage in this batch: 230+ countries, 150+ languages'
 - Proprietary AI stack, not resold third-party models
 - 'Flexible deployment: cloud, private cloud, or on-premise'
 cons:
-- No published pricing — quotes only, plus setup fees on some plans
+- 'No published pricing: quotes only, plus setup fees on some plans'
 - API documentation could be more thorough, per user reviews
 - Full pricing picture requires a sales conversation beyond the free trial
 alternatives:
@@ -95,18 +95,18 @@ choose_instead:
 user_reviews:
   legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
   praise:
-  - Coverage breadth (frequently cited) — reviewers highlight the number of supported countries, document types, and languages.
-  - Deployment flexibility — on-premise and private-cloud options are called out by regulated clients.
+  - 'Coverage breadth (frequently cited): reviewers highlight the number of supported countries, document types and languages.'
+  - 'Deployment flexibility: regulated clients call out the on-premise and private-cloud options.'
   criticize:
-  - API documentation — several reviews suggest it could be more detailed for faster integration.
-  - Pricing opacity — no published rate card outside the third-party estimate range.
+  - 'API documentation: several reviews suggest it could be more detailed for faster integration.'
+  - 'Pricing opacity: no published rate card outside the third-party estimate range.'
   by_profile:
   - Global platforms serving many jurisdictions value the breadth of country and language coverage.
   - Regulated industries favor the private-cloud and on-premise deployment options.
   - Smaller teams sometimes find the sales-quote process slower than providers with published pricing.
 faq:
 - q: How much does Shufti Pro cost?
-  a: Shufti Pro does not publish standard pricing; plans are quoted via sales. Third-party estimates put the effective cost at roughly $0.50–$1.70 per verification, and a 7-day free trial is available.
+  a: Shufti Pro does not publish standard pricing; plans are quoted via sales. Third-party estimates put the effective cost at roughly $0.50 to $1.70 per verification, and a 7-day free trial is available.
 - q: Does Shufti Pro support KYB?
   a: Yes. Shufti Pro offers business verification (KYB) alongside its individual identity-verification and AML screening tools.
 - q: What certifications does Shufti Pro hold?
