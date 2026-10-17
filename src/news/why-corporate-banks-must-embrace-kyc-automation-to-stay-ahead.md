@@ -78,7 +78,7 @@ A faster, source-linked process helps on both sides. Compliance gets consistent 
 
 The usual caution applies. Automation only helps if the data underneath is clean and the rules are documented. Banks should ask vendors about registry coverage in their markets, how documents are parsed, how decisions are logged and how the tool connects to existing client lifecycle systems. Security certifications should be checked against the certificate itself, not a sales deck. For a fuller treatment, see our publication on [KYC automation for banks](/publications/kyc-automation-for-banks/).
 
-Our [KYB software ranking](/providers/kyb/) compares providers that collect registry and ownership data, including [FullCircl](/providers/fullcircl/), which orchestrates KYB, KYC and AML on official registry data, and [Strise](/providers/strise/), which builds company data into a knowledge graph. Enterprise monitoring platforms are covered in our [AML software for banks](/providers/aml/banks/) list.
+Our [KYB software ranking](/providers/kyb/) compares providers that collect registry and ownership data, including [FullCircl](/providers/fullcircl/), now owned by nCino and sold as nCino Identity Solutions, which orchestrates KYB, KYC and AML checks through one API, and [Strise](/providers/strise/), which builds company data into a knowledge graph. Enterprise monitoring platforms are covered in our [AML software for banks](/providers/aml/banks/) list.
 
 ## What has happened since
 

@@ -70,7 +70,7 @@ Our view then, and now: the distinction between age estimation, age verification
 
 Platforms facing age rules usually combine three layers: a self-declared birthdate, a background signal (behavioural inference or facial estimation) and a fallback that proves age on demand. The weak point is the hand-off between layers. If the fallback is slow, or only offers an ID upload, the friction falls on the people the model got wrong.
 
-Vendors in this space differ mainly in the fallback options they give. [VerifyMy](/providers/verifymy/), for example, offers email-based age estimation alongside document, credit card, mobile number and video checks, which gives users a choice that does not require an ID document. For document-based fallbacks, providers in our [identity verification rankings](/providers/identity-verification/) handle the ID and selfie step, and [liveness detection](/providers/liveness-detection/) is what stops a photo of someone older being used.
+Vendors in this space differ mainly in the fallback options they give. [VerifyMy](/providers/verifymy/), for example, offers email-based age estimation alongside document, credit card, mobile number and facial age estimation checks, which gives users a choice that does not require an ID document. For document-based fallbacks, providers in our [identity verification rankings](/providers/identity-verification/) handle the ID and selfie step, and [liveness detection](/providers/liveness-detection/) is what stops a photo of someone older being used.
 
 ## What has happened since
 

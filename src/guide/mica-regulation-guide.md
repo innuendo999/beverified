@@ -192,7 +192,7 @@ The [EBA Travel Rule Guidelines](https://www.eba.europa.eu/publications-and-medi
 
 On the AML side, the EU's new [Anti-Money Laundering Authority](https://www.amla.europa.eu/about-amla_en) in Frankfurt is due to select 40 obliged entities for direct supervision during 2027 and start supervising them in 2028.
 
-Customer onboarding for a CASP is standard KYC with crypto-specific risk factors. Vendors that sell to exchanges include [Sumsub](/providers/sumsub/), which lists exchanges such as Binance and Bybit among its clients, and [ComplyAdvantage](/providers/complyadvantage/) for sanctions, PEP and adverse-media screening (see also our [AML software ranking](/providers/aml/)). Our [crypto KYC ranking](/providers/crypto/) compares the options. Firms that need ongoing reviews after onboarding can read our guide to [perpetual KYC](/guide/perpetual-kyc/).
+Customer onboarding for a CASP is standard KYC with crypto-specific risk factors. Vendors that sell to exchanges include [Sumsub](/providers/sumsub/), which names the exchange Bybit among its clients, and [ComplyAdvantage](/providers/complyadvantage/) for sanctions, PEP and adverse-media screening (see also our [AML software ranking](/providers/aml/)). Our [crypto KYC ranking](/providers/crypto/) compares the options. Firms that need ongoing reviews after onboarding can read our guide to [perpetual KYC](/guide/perpetual-kyc/).
 
 ## Checking the ESMA register
 

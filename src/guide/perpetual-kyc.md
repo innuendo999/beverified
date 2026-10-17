@@ -133,9 +133,9 @@ Build versus buy usually comes down to whether you already have good data plumbi
 
 Several providers in our rankings support ongoing or perpetual monitoring, according to their records.
 
-- [KYC360](/providers/kyc360/) (formerly RiskScreen, acquired by Experian in October 2025) offers perpetual monitoring across the customer lifecycle on Dow Jones screening data.
+- [KYC360](/providers/kyc360/) (which evolved from the RiskScreen product and is now owned by Experian, which announced the deal in October 2025) offers customer lifecycle management and remediation of existing customer files, with sanctions and PEP screening on Dow Jones data.
 - [Napier](/providers/napier/) has a Perpetual Client Risk Assessment module that re-scores customer risk continuously, alongside transaction monitoring and screening.
-- [Castellum.AI](/providers/castellum-ai/) lists pKYC support on top of sanctions, PEP and adverse-media data it refreshes every 5 minutes.
+- [Castellum.AI](/providers/castellum-ai/) offers real-time monitoring and lookbacks on top of sanctions, PEP and adverse-media data from 1,000+ watchlists it updates every 5 minutes.
 - [ComplyAdvantage](/providers/complyadvantage/) combines sanctions, PEP and adverse-media screening with real-time transaction monitoring, but does not verify identity documents.
 
 For a wider comparison, see our [AML software ranking](/providers/aml/) and the [AML software for banks](/providers/aml/banks/) list. How we score providers is set out in our [methodology](/methodology/).

@@ -79,4 +79,4 @@ Our February 2025 article pointed to the new EU AML Authority as a source of reg
 
 The single EU rulebook, [Regulation (EU) 2024/1624](https://eur-lex.europa.eu/eli/reg/2024/1624/oj), applies from 10 July 2027. From then on, customer due diligence rules in EU member states come from one directly applicable regulation instead of national laws transposing a directive.
 
-The Wolfsberg Negative News Screening FAQs published in 2022 are still the version listed on the Wolfsberg resources page in October 2026. Among the providers named above, KYC360 was acquired by Experian in October 2025.
+The Wolfsberg Negative News Screening FAQs published in 2022 are still the version listed on the Wolfsberg resources page in October 2026. Among the providers named above, Experian announced its acquisition of KYC360 in October 2025.

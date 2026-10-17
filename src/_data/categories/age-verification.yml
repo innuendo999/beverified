@@ -36,7 +36,7 @@ faq:
 - q: Can you check age without an ID?
   a: Yes. Facial age estimation, email-based age estimation, mobile operator checks, credit card checks and open banking all check age without an identity document. Most providers fall back to an ID check when the result is close to the age limit.
 - q: What does VerifyMy do?
-  a: VerifyMy is an age assurance specialist. Its page lists email address age estimation, mobile and credit bureau checks, facial age estimation, ID document with face match and credit card checks, and states ISO/IEC 27566-1 certification and German KJM approval. It does not offer KYC or AML screening.
+  a: VerifyMy specialises in age assurance and content moderation. Its page lists email address age estimation, mobile number, name and address, facial age estimation, ID document with face match and credit card checks. The Age Check Certification Scheme register lists its platform as certified to ISO/IEC 27566-1, and it states German KJM approval. It does not offer KYC or AML screening.
 adjacent:
 - liveness-detection
 - identity-verification

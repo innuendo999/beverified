@@ -23,7 +23,7 @@ faq:
   - q: "What changes should trigger a perpetual KYB review?"
     a: "Common triggers are new or removed directors, a change in shareholders or beneficial owners, a status change such as insolvency or strike-off, a sanctions or PEP match on the company or its people, adverse media, and activity that does not fit the customer's profile."
   - q: "What are the best perpetual KYB solutions?"
-    a: "It depends on your markets and stack. Among providers we review, FullCircl, Strise, KYC Hub, SmartSearch and iDenfy list KYB together with ongoing monitoring in their records. Check registry coverage for your countries, how changes are detected and how alerts reach your case management."
+    a: "It depends on your markets and stack. Among providers we review, FullCircl (now nCino Identity Solutions), Strise, KYC Hub, SmartSearch and iDenfy list KYB together with ongoing monitoring in their records. Check registry coverage for your countries, how changes are detected and how alerts reach your case management."
 sources:
   - title: "AMLR Article 26: Ongoing monitoring of the business relationship (text of OJ L, 2024/1624)"
     publisher: "Springlex"
@@ -130,7 +130,7 @@ The list below includes only providers whose records on our site show both KYB a
 
 | Provider | What our review records |
 |---|---|
-| [FullCircl](/providers/fullcircl/) | Orchestration of KYB, KYC, AML and IDV on official registry data, with onboarding plus ongoing monitoring; UK and EU focus |
+| [FullCircl](/providers/fullcircl/) (now nCino Identity Solutions) | Orchestration of KYB, KYC, AML, fraud and IDV through one API, with KYB data on 365 million entities and onboarding plus ongoing monitoring; owned by nCino since November 2024 |
 | [Strise](/providers/strise/) | KYB and company data on a knowledge graph, AML screening and ongoing monitoring of existing customers |
 | [KYC Hub](/providers/kychub/) | KYC, KYB and AML screening in one platform, with a no-code builder for onboarding, monitoring and escalation workflows |
 | [SmartSearch](/providers/smartsearch/) | Individual and business AML/KYC checks for UK regulated firms, with ongoing monitoring |

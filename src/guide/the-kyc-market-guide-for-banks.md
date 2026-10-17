@@ -114,10 +114,10 @@ The table below shows how some of the providers we review fit those categories, 
 
 | Layer | Example providers we review | What their record shows |
 |---|---|---|
-| Identity verification | [Veriff](/providers/veriff/) | Document and biometric checks across 12,000+ document types, with AI plus human review |
-| National eID | [Signicat](/providers/signicat/) | 35+ European eID methods, signing and onboarding in one platform |
-| Global data and KYB | [Trulioo](/providers/trulioo/) | GlobalGateway identity and business verification across 195 countries |
-| Lifecycle KYC and screening | [KYC360](/providers/kyc360/) | Onboarding, screening and perpetual monitoring; acquired by Experian in October 2025 |
+| Identity verification | [Veriff](/providers/veriff/) | Document and biometric checks across 12,500+ government-issued ID documents, with human review on its Plus and Premium plans |
+| National eID | [Signicat](/providers/signicat/) | 35+ eID methods and digital wallets, mostly European, plus signing and onboarding in one platform |
+| Global data and KYB | [Trulioo](/providers/trulioo/) | Identity and business verification across 195 countries, with KYB on 700 million business entities |
+| Lifecycle KYC and screening | [KYC360](/providers/kyc360/) | Onboarding, screening, lifecycle management and remediation; owned by Experian, which announced the acquisition in October 2025 |
 | Enterprise financial crime suite | [NICE Actimize](/providers/nice-actimize/) | KYC/CDD, watchlist screening, transaction monitoring and regulatory reporting |
 
 For full comparisons see our rankings of [identity verification providers](/providers/identity-verification/) and [AML software for banks](/providers/aml/banks/).

@@ -81,7 +81,7 @@ The Fifth AML Directive had required Member States to make beneficial ownership 
 
 Registers are one of the first sources a compliance team checks when verifying who owns a business customer. When a country is slow to set up access, the data is still there but harder to reach, and the process differs from one member state to the next. In practice teams fall back on company documents, declarations from the customer and commercial data providers.
 
-[KYB platforms](/providers/kyb/) package registry data from many countries. [FullCircl](/providers/fullcircl/) focuses on official UK and EU registry data, and [Vespia](/providers/vespia/), now owned by Veriff, covers business registry data in more than 300 jurisdictions. Register access still matters underneath those tools, because what a vendor can pull from a country depends on what that country releases. Our [perpetual KYB guide](/guide/perpetual-kyb/) covers keeping ownership data current after onboarding.
+[KYB platforms](/providers/kyb/) package registry data from many countries. [FullCircl](/providers/fullcircl/), now sold by nCino as nCino Identity Solutions, offers KYB data on 365 million entities, and [Vespia](/providers/vespia/), now part of Veriff, covers business registry data in more than 300 jurisdictions; Veriff sells it through a KYB limited access program rather than as a standalone product. Register access still matters underneath those tools, because what a vendor can pull from a country depends on what that country releases. Our [perpetual KYB guide](/guide/perpetual-kyb/) covers keeping ownership data current after onboarding.
 
 ## What has happened since
 

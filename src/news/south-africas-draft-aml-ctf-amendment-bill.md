@@ -71,7 +71,7 @@ There are also technical amendments to other anti-money laundering and anti-corr
 
 Most of the changes tighten rules that already exist rather than invent new ones. Companies face firmer consequences for not keeping beneficial ownership information, which matters to anyone doing [KYB checks on South African entities](/providers/kyb/). The FIC Act changes on new technologies and anonymous clients feed straight into how accountable institutions onboard customers and run [AML screening and monitoring](/providers/aml/).
 
-Local vendors pitch to that demand. [RelyComply](/providers/relycomply/), headquartered in Cape Town, is one example of a South African platform that combines KYC, KYB and AML in one product. For tools that cover more countries, see our [regions hub](/regions/).
+Local vendors pitch to that demand. [RelyComply](/providers/relycomply/), with offices in Johannesburg and Cape Town, is one example of a South African platform that combines KYC, KYB and AML in one product. For tools that cover more countries, see our [regions hub](/regions/).
 
 The bill does not change any duty by itself until Parliament passes it. Firms still work under the FIC Act as it stands today.
 
