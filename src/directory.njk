@@ -1,0 +1,50 @@
+---
+layout: v3.njk
+---
+{#- Reviews directory. Design: design/Providers Directory V3 (Desktop).dc.html -#}
+{%- set have = [] -%}
+<main id="main" class="container dir">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li class="sep" aria-hidden="true">›</li><li aria-current="page">Providers</li></ol></nav>
+  <h1 class="h-display" style="margin:28px 0 16px">All KYC &amp; AML providers</h1>
+  <p class="dir__lede">Every provider we track, A to Z, with its BeVerified score and what it's best for. Providers we haven't reviewed yet are listed without a score.</p>
+  <div class="dir__tabs" role="group" aria-label="Filter by use case">
+    {%- for f in filters %}<button type="button" data-filter="{{ f[0] }}"{% if loop.first %} aria-pressed="true"{% else %} aria-pressed="false"{% endif %}>{{ f[1] }}</button>{% endfor %}
+  </div>
+  <nav class="dir__az" aria-label="Jump to letter">
+    {%- for L in letters %}{% set found = false %}{% for g in groups %}{% if g.letter == L %}{% set found = true %}{% endif %}{% endfor %}
+    {%- if found %}<a href="#letter-{{ L }}">{{ L }}</a>{% else %}<span aria-hidden="true">{{ L }}</span>{% endif %}{% endfor %}
+  </nav>
+  {%- for g in groups %}
+  <section class="dir__group" id="letter-{{ g.letter }}" aria-label="{{ g.letter }}">
+    <h2>{{ g.letter }}</h2>
+    <ul class="card dir__list">
+      {%- for r in g.items %}
+      <li class="dir__row" data-cats="{{ r.cats | join('|') }}">
+        <span class="dir__name">{% if r.p and r.p.logo.wordmark %}<img src="{{ r.p.logo.wordmark }}" alt="{{ r.name }}" loading="lazy">{% else %}{{ r.name }}{% endif %}</span>
+        {%- if r.p and r.p.score != null %}
+        <span class="dir__score" role="img" aria-label="{{ r.p.score | score1 }} out of 5"><b>{{ r.p.score | score1 }}</b> <small>/ 5</small></span>
+        {%- else %}<span class="dir__score"><span class="pill" style="color:var(--body)">Review coming</span></span>{% endif %}
+        <span class="dir__desc">{{ r.p.best_for if (r.p and r.p.best_for) else r.desc }}</span>
+        <span class="dir__cats">{% for c in r.cats %}<span class="evidence evidence--sm">{{ c }}</span>{% endfor %}</span>
+        <span class="dir__go">{% if r.p %}<a class="btn btn--secondary btn--sm" href="/providers/{{ r.p.slug }}/">Read review</a>{% endif %}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endfor %}
+  <p class="dir__empty" hidden>No providers in this use case yet.</p>
+</main>
+<script>
+(function () {
+  var btns = document.querySelectorAll('.dir__tabs button');
+  btns.forEach(function (b) { b.addEventListener('click', function () {
+    var f = b.getAttribute('data-filter'), shown = 0;
+    btns.forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+    document.querySelectorAll('.dir__row').forEach(function (r) {
+      var ok = !f || r.getAttribute('data-cats').split('|').indexOf(f) > -1; r.hidden = !ok; if (ok) shown++;
+    });
+    document.querySelectorAll('.dir__group').forEach(function (g) { g.hidden = !g.querySelector('.dir__row:not([hidden])'); });
+    document.querySelector('.dir__empty').hidden = shown > 0;
+  }); });
+})();
+</script>

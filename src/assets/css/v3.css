@@ -460,3 +460,34 @@ h1, h2, h3, p, ul, ol, figure { margin: 0; }
   .regions__map { display: none; }
   .picks__reason { white-space: normal; }
 }
+
+/* ---------- Directory ---------- */
+.dir { padding-bottom: 96px; }
+.dir__lede { font-size: 17px; line-height: 1.55; color: var(--body); max-width: 640px; margin-bottom: 28px; }
+.dir__tabs { display: flex; flex-wrap: wrap; gap: 4px 22px; border-bottom: 1px solid var(--line); margin-bottom: 24px; }
+.dir__tabs button { background: none; border: none; border-bottom: 2px solid transparent; padding: 8px 0 10px; font-size: 15px; color: var(--body); cursor: pointer; }
+.dir__tabs button[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--ink); font-weight: 500; }
+.dir__az { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 28px; }
+.dir__az a, .dir__az span { width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; border-radius: 8px; font-size: 14px; }
+.dir__az a { background: var(--surface); border: 1px solid var(--line-strong); color: var(--ink); }
+.dir__az a:hover { border-color: var(--line-hover); text-decoration: none; }
+.dir__az span { color: var(--line-dashed); }
+.dir__group { margin-bottom: 28px; scroll-margin-top: 80px; }
+.dir__group h2 { font-size: 22px; font-weight: 600; color: var(--muted); margin-bottom: 10px; }
+.dir__list { list-style: none; padding: 0; }
+.dir__row { display: grid; grid-template-columns: 170px 110px minmax(0,1fr) auto auto; gap: 16px; align-items: center; padding: 12px 22px; border-top: 1px solid var(--line-soft); }
+.dir__row:first-child { border-top: none; }
+.dir__name { font-size: 15px; font-weight: 600; }
+.dir__name img { height: 20px; width: auto; max-width: 130px; object-fit: contain; object-position: left center; display: block; }
+.dir__score b { font-size: 17px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.dir__score small { color: var(--muted); }
+.dir__desc { font-size: 14px; color: var(--body); min-width: 0; }
+.dir__cats { display: flex; flex-wrap: wrap; gap: 4px; justify-content: flex-end; }
+.dir__go { min-width: 108px; text-align: right; }
+.dir__empty { color: var(--body); }
+@media (max-width: 860px) {
+  .dir__row { grid-template-columns: minmax(0,1fr) auto; }
+  .dir__desc, .dir__cats { grid-column: 1 / -1; }
+  .dir__cats { justify-content: flex-start; }
+  .dir__go { grid-column: 1 / -1; text-align: left; }
+}

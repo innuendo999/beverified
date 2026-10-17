@@ -12,6 +12,8 @@ const PATTERNS = [
   { name: "TODO / TBD", re: /\b(TODO|TBD)\b/ },
   { name: "pending verification", re: /pending verification/i },
   { name: "confirm before publish", re: /confirm[^.<]{0,40}before (this page goes live|publish)/i },
+  { name: "verify before publish", re: /verif(y|ied)[^.<]{0,40}before publish/i },
+  { name: "template placeholder", re: /\{[a-z_]+(\.[a-z_\[\]]+)*\}/ },
   { name: "placeholder graphic", re: /product screenshot\s*[—-]\s*dashboard view/i },
   { name: "lorem ipsum", re: /lorem ipsum/i },
 ];
