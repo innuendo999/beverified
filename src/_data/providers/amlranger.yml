@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/amlranger.webp
   background: '#5A2FD1'
+  wordmark: null
 tagline: AML screening tool — company facts pending independent verification
 score: 4.2
 grade: Good
@@ -20,9 +21,6 @@ link:
   url: null
   type: null
   legacy_rel: null
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-28'
 verdict: AMLRanger positions itself as a sanctions and watchlist screening tool for smaller compliance teams. Unlike the other providers in this batch, we were not able to independently verify its founding year, headquarters, or funding history from public sources — treat the specifics on this page as provisional until confirmed directly with the vendor.
 what_is:
@@ -129,3 +127,8 @@ legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure above directly against AMLRanger's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/strise.png
   background: '#9166F2'
+  wordmark: null
 tagline: Autonomous, agentic AML operations built to cut routine compliance work
 score: 4.4
 grade: Very Good
@@ -21,9 +22,6 @@ link:
   url: https://strise.ai
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-29'
 verdict: Strise builds agentic AI to automate routine AML compliance work — the company reports cutting manual effort by up to 80% — using a knowledge-graph approach to corporate data out of Norway. It's a smaller, newer player with limited public detail on its exact founding year and scale, so treat specifics as provisional pending direct verification.
 what_is:
@@ -125,8 +123,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://strise.ai
+  - https://www.linkedin.com/company/strise
+  - https://www.crunchbase.com/organization/strise
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against Strise's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

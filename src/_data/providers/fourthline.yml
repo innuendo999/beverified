@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/fourthline.webp
   background: '#9B6EF3'
+  wordmark: null
 tagline: Bank-grade KYC/AML built for regulated European institutions
 score: 4.5
 grade: Very Good
@@ -22,9 +23,6 @@ link:
   url: https://www.fourthline.com
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-28'
 verdict: Fourthline built its reputation inside Europe's regulated financial sector — N26, Trade Republic, Qonto, and Western Union are among its clients — combining identity verification, AML screening, and continuous re-KYC in a single API. It's deliberately focused on financial institutions rather than chasing every vertical, and in 2026 announced plans to merge with Veridas into a combined global identity platform.
 what_is:
@@ -126,8 +124,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://www.fourthline.com
+  - https://www.linkedin.com/company/fourthline
+  - https://www.crunchbase.com/organization/fourthline
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure above directly against Fourthline's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

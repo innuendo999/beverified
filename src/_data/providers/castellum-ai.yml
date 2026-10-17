@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/castellum-ai.jpg
   background: '#642de0'
+  wordmark: null
 tagline: In-house risk data refreshed every 5 minutes, built by an ex-OFAC sanctions expert
 score: 4.5
 grade: Very Good
@@ -21,9 +22,6 @@ link:
   url: https://www.castellum.ai
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-29'
 verdict: Castellum.AI runs its own sanctions and risk database — updated every 5 minutes across 1,000+ lists — rather than reselling third-party data, built by founder Peter Piatetsky's direct experience at the US Treasury's OFAC. Its agentic AI reportedly resolves 83% of L1/L2 alerts instantly with a 94% cut in false positives, with explainability built in for audits.
 what_is:
@@ -125,8 +123,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://www.castellum.ai
+  - https://www.linkedin.com/company/castellum-ai
+  - https://www.crunchbase.com/organization/castellum-ai
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against Castellum.AI's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

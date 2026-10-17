@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/kycaid.png
   background: '#8A5CF0'
+  wordmark: /assets/img/wordmarks/kycaid.png
 tagline: Modular KYC/AML suite with configurable verification workflows
 score: 4.6
 grade: Great
@@ -22,9 +23,6 @@ link:
   url: https://kycaid.com
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-24'
 verdict: KYCAID is a strong choice for small and mid-market teams that want a configurable KYC/AML workflow builder without enterprise pricing. It's less deep on watchlist data than category leaders like ComplyAdvantage, but its flexibility and white-label portal make it a practical fit for startups and agencies managing multiple clients.
 what_is:
@@ -146,8 +144,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://kycaid.com
+  - https://www.linkedin.com/company/kycaid
+  - https://www.crunchbase.com/organization/kycaid
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, tier limits, overage rates, trial length, founding year, HQ, and certifications directly against KYCAID's pricing page and official profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

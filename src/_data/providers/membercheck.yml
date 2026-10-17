@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/membercheck.webp
   background: '#7C4DEA'
+  wordmark: null
 tagline: Four-tier PEP and sanctions screening, sister product to NameScan
 score: 4.3
 grade: Good
@@ -21,9 +22,6 @@ link:
   url: https://membercheck.com
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-29'
 verdict: 'MemberCheck runs a four-tier PEP screening process alongside sanctions and adverse-media checks, positioned for managed AML workflows with enhanced due diligence and daily ongoing monitoring. It''s operated by the same owner as NameScan (Neurocom Group) but targets a different use case: managed compliance programs rather than on-demand self-serve checks.'
 what_is:
@@ -125,8 +123,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://membercheck.com
+  - https://www.linkedin.com/company/membercheck
+  - https://www.crunchbase.com/organization/membercheck
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against MemberCheck's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

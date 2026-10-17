@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/smartsearch.jpg
   background: '#7247DE'
+  wordmark: null
 tagline: UK-first AML/KYC verification built for JMLSG-regulated professions
 score: 4.4
 grade: Very Good
@@ -21,9 +22,6 @@ link:
   url: https://www.smartsearch.com
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-28'
 verdict: SmartSearch was one of the first electronic AML verification services in the UK and remains squarely focused on JMLSG-compliant checks for legal, property, and financial-services firms. Its individual-plus-business screening in one platform and 24-hour integration are real strengths for UK-regulated firms, though its reach outside the UK is limited.
 what_is:
@@ -123,8 +121,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://www.smartsearch.com
+  - https://www.linkedin.com/company/smartsearch-uk
+  - https://www.crunchbase.com/organization/smartsearch
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against SmartSearch's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

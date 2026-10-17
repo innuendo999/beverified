@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/persona.png
   background: '#7C4DEA'
+  wordmark: null
 tagline: Modular identity infrastructure built for product teams to assemble their own flows
 score: 4.6
 grade: Great
@@ -22,9 +23,6 @@ link:
   url: https://withpersona.com
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-28'
 verdict: 'Persona''s pitch is flexibility: reusable, customizable verification templates that product teams assemble into their own onboarding flows rather than a single fixed workflow. That configurability is a real strength for teams with unusual requirements, though it means a steeper setup curve and less out-of-the-box AML depth than specialized screening vendors.'
 what_is:
@@ -126,8 +124,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://withpersona.com
+  - https://www.linkedin.com/company/personaidentities
+  - https://www.crunchbase.com/organization/persona-0dcc
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against Persona's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

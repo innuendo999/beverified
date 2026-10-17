@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/nice-actimize.png
   background: '#5A2FD1'
+  wordmark: null
 tagline: The broadest financial-crime and compliance suite, backed by a public parent company
 score: 4.6
 grade: Great
@@ -21,9 +22,6 @@ link:
   url: https://www.niceactimize.com
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-29'
 verdict: 'NICE Actimize is the largest, widest-scoped financial-crime platform in this category — covering suspicious-activity monitoring, watchlist screening, entity risk, KYC/CDD, and regulatory reporting under one roof — backed by publicly traded parent NICE Ltd (NASDAQ: NICE). That scale suits tier-1 banks and regulators; smaller organizations may find it over-engineered.'
 what_is:
@@ -125,8 +123,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://www.niceactimize.com
+  - https://www.linkedin.com/company/nice-actimize
+  - https://www.crunchbase.com/organization/actimize
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against NICE Actimize's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/quantexa.jpg
   background: '#835AEB'
+  wordmark: null
 tagline: Contextual decision intelligence built on entity resolution and graph analytics
 score: 4.6
 grade: Great
@@ -21,9 +22,6 @@ link:
   url: https://www.quantexa.com
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-29'
 verdict: 'Quantexa''s foundation is entity resolution: stitching fragmented, siloed data into a single graph network to surface hidden relationships — the basis for its AML, fraud, and KYC applications rather than transaction-monitoring rules alone. Valued at roughly $2.6B in 2025 and serving tier-1 banks and governments, it''s built for enterprise scale, not smaller teams.'
 what_is:
@@ -125,8 +123,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://www.quantexa.com
+  - https://www.linkedin.com/company/quantexa
+  - https://www.crunchbase.com/organization/quantexa
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against Quantexa's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

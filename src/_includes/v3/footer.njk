@@ -1,0 +1,22 @@
+{%- set f = site.v3.footer %}
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__cols">
+      <div class="site-footer__about">
+        <a class="brand" href="/" aria-label="BeVerified home">{% include "v3/logo.njk" %}</a>
+        <p>{{ f.about }}</p>
+      </div>
+      <nav class="site-footer__col" aria-label="Use cases"><h2>Use cases</h2>{% for l in f.useCases %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% endfor %}</nav>
+      <nav class="site-footer__col" aria-label="Regions"><h2>Regions</h2>{% for l in f.regions %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% endfor %}</nav>
+      <nav class="site-footer__col" aria-label="Providers"><h2>Providers A–Z</h2>{% for p in (providers | byName) %}{% if loop.index <= f.providersShown %}<a href="/providers/{{ p.slug }}/">{{ p.name }}</a>{% endif %}{% endfor %}<a class="more" href="/providers/">All providers →</a></nav>
+      <nav class="site-footer__col" aria-label="Company"><h2>Company</h2>{% for l in f.company %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% endfor %}</nav>
+      {%- if f.legal.length %}
+      <nav class="site-footer__col" aria-label="Legal"><h2>Legal</h2>{% for l in f.legal %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% endfor %}</nav>
+      {%- endif %}
+    </div>
+    <div class="site-footer__bottom">
+      <p><strong>Disclosure.</strong> {{ site.v3.disclosure }} Scores are editorial opinions based on the published methodology, not legal advice.</p>
+      <div>{{ f.copyright }}{% if updated %}<br>Page updated {{ updated | displayDate }}{% endif %}</div>
+    </div>
+  </div>
+</footer>

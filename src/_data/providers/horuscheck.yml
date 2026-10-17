@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/horuscheck.webp
   background: '#9166F2'
+  wordmark: null
 tagline: KYC/AML verification provider — most company details pending independent verification
 score: 4.1
 grade: Good
@@ -21,9 +22,6 @@ link:
   url: null
   type: null
   legacy_rel: null
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-29'
 verdict: HorusCheck appears in provider listings as a KYC/AML verification tool, but most specifics — founding year, headquarters, pricing, and detailed coverage — could not be independently confirmed from public sources at the time of writing. Treat this page as a provisional, honestly minimal profile until those details are verified directly with the vendor.
 what_is:
@@ -124,3 +122,8 @@ legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against HorusCheck's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/trulioo.png
   background: '#7247DE'
+  wordmark: /assets/img/wordmarks/trulioo.png
 tagline: Global identity data layer spanning 5B+ people and 700M+ business entities
 score: 4.5
 grade: Very Good
@@ -22,9 +23,6 @@ link:
   url: https://www.trulioo.com
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-25'
 verdict: 'Trulioo''s differentiator is data breadth rather than document scanning alone: its GlobalGateway platform checks identity against government and other databases across 195 countries, covering more than 5 billion people and 700 million business entities. That makes it a strong choice for non-documentary proofing and KYB, though it leans more toward a data-API product than a polished no-code UX.'
 what_is:
@@ -130,8 +128,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://www.trulioo.com
+  - https://www.linkedin.com/company/trulioo
+  - https://www.crunchbase.com/organization/trulioo
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every third-party estimate above directly against Trulioo's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

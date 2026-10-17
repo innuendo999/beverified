@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/onfido.png
   background: '#5A2FD1'
+  wordmark: /assets/img/wordmarks/onfido.png
 tagline: AI document and biometric verification, now backed by Entrust's security infrastructure
 score: 4.5
 grade: Very Good
@@ -22,9 +23,6 @@ link:
   url: https://onfido.com
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-25'
 verdict: Onfido pairs strong developer tooling with broad document coverage, and since its 2024 acquisition by Entrust, it now sits inside a larger identity-security portfolio. It's a solid enterprise IDV choice for teams that want SDK depth and optional AML screening, though pricing remains sales-only and support responsiveness gets mixed reviews.
 what_is:
@@ -126,8 +124,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://onfido.com
+  - https://www.linkedin.com/company/onfido
+  - https://www.crunchbase.com/organization/onfido
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every third-party estimate above directly against Onfido's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

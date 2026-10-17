@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/veriff.jpg
   background: '#8A5CF0'
+  wordmark: null
 tagline: AI plus human-review IDV with deep document coverage and public starter pricing
 score: 4.6
 grade: Great
@@ -21,9 +22,6 @@ link:
   url: https://www.veriff.com
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-29'
 verdict: Veriff pairs AI decisioning with human review across 12,000+ document types and 230+ countries — an Estonian unicorn built to catch deepfakes with an iBeta Level 2-certified liveness check. Its published starter tiers ($49–$209/mo) are a rare transparency win in this category, though premium tiers cost more than budget-first competitors.
 what_is:
@@ -133,8 +131,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://www.veriff.com
+  - https://www.linkedin.com/company/veriff
+  - https://www.crunchbase.com/organization/veriff
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against Veriff's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

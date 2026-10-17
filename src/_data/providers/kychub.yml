@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/kychub.jpg
   background: '#835AEB'
+  wordmark: null
 tagline: No-code financial-crime orchestration covering the full lifecycle in one platform
 score: 4.5
 grade: Very Good
@@ -21,9 +22,6 @@ link:
   url: https://www.kychub.com
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-28'
 verdict: KYC Hub's OpsFlow builder lets compliance teams configure onboarding, monitoring, and escalation without code, unifying identity, screening, and transaction monitoring in one platform rather than stitching together point solutions. Its pay-as-you-go pricing is refreshingly transparent for the category, though its dashboards can strain at very large-bank scale.
 what_is:
@@ -125,8 +123,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://www.kychub.com
+  - https://www.linkedin.com/company/kyc-hub
+  - https://www.crunchbase.com/organization/kyc-hub
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against KYC Hub's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

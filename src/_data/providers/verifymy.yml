@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/verifymy.webp
   background: '#5E35D6'
+  wordmark: null
 tagline: Age assurance specialist, including a proprietary email-based age-estimation method
 score: 4.4
 grade: Very Good
@@ -20,9 +21,6 @@ link:
   url: https://verifymy.io
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-28'
 verdict: 'VerifyMy is narrower than most providers in this batch by design: it focuses specifically on age assurance, with a proprietary method that estimates age from just an email address alongside more conventional document and video checks. That focus makes it a strong fit for platforms with age-gating obligations, though it''s not a general-purpose identity-verification or AML platform.'
 what_is:
@@ -124,8 +122,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://verifymy.io
+  - https://www.linkedin.com/company/verifymy
+  - https://www.crunchbase.com/organization/verifymyage
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure above directly against VerifyMy's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

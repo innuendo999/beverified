@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/complyadvantage.jpg
   background: '#9B6EF3'
+  wordmark: /assets/img/wordmarks/complyadvantage.png
 tagline: AML screening and financial-crime intelligence — not an identity-verification tool
 score: 4.6
 grade: Great
@@ -21,9 +22,6 @@ link:
   url: https://complyadvantage.com
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-25'
 verdict: ComplyAdvantage is a sanctions, PEP, and adverse-media screening platform, not a document-verification company — a distinction that matters when comparing it to IDV vendors in this category. Its proprietary financial-crime database and free ComplyLaunch tier for early-stage startups make it a strong AML data layer, typically deployed alongside a separate identity-verification provider rather than instead of one.
 what_is:
@@ -133,8 +131,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://complyadvantage.com
+  - https://www.linkedin.com/company/complyadvantage
+  - https://www.crunchbase.com/organization/complyadvantage
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every third-party estimate above directly against ComplyAdvantage's official pricing page and profiles before this page goes live.
+application_category: AML Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

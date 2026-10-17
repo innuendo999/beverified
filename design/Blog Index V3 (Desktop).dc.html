@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Insights on KYC, AML and identity verification | BeVerified</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+html, body { margin:0; background:#F7F6F3; color:#14141A; }
+body { font-family:'Geist', ui-sans-serif, system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
+a { color:#5B2BD9; text-decoration:none; }
+a:hover { color:#4A1FBF; text-decoration:underline; text-underline-offset:3px; }
+:focus-visible { outline:2px solid #5B2BD9; outline-offset:3px; border-radius:6px; }
+</style>
+<script src="./bv-blog.js"></script>
+</helmet>
+<div style="background:#F7F6F3; color:#14141A; min-height:100vh; font-family:'Geist', ui-sans-serif, system-ui, sans-serif;">
+
+<header data-component="header" style="position:sticky; top:0; z-index:100; background:rgba(247,246,243,0.92); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:1px solid #E6E4DF;">
+  <div style="max-width:1200px; margin:0 auto; padding:0 32px; height:60px; display:flex; align-items:center; gap:40px;">
+    <a href="Homepage V3 - BeVerified (Desktop).dc.html" aria-label="BeVerified home" style="display:flex; align-items:center; gap:9px; text-decoration:none;">
+      <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="display:block;"><rect x="3" y="12" width="4.5" height="9" rx="1" fill="#14141A"></rect><rect x="9.75" y="8" width="4.5" height="13" rx="1" fill="#14141A"></rect><rect x="16.5" y="3" width="4.5" height="18" rx="1" fill="#5B2BD9"></rect></svg>
+      <span style="font-weight:600; font-size:17px; letter-spacing:-0.03em; color:#14141A;">BeVerified</span>
+    </a>
+    <nav aria-label="Primary" style="display:flex; gap:28px; flex:1;">
+      <a href="Homepage V3 - BeVerified (Desktop).dc.html#use-cases" style="font-size:15px; color:#4A4A55;">Use cases</a>
+      <a href="Homepage V3 - BeVerified (Desktop).dc.html#regions" style="font-size:15px; color:#4A4A55;">Regions</a>
+      <a href="Reviews Directory - BeVerified (Desktop).dc.html" style="font-size:15px; color:#4A4A55;">Reviews</a>
+      <a href="Blog Index V3 (Desktop).dc.html" style="font-size:15px; color:#14141A; font-weight:500;">Blog</a>
+    </nav>
+    <a href="Homepage V3 - BeVerified (Desktop).dc.html#for-providers" style="font-size:15px; color:#14141A;">For providers</a>
+  </div>
+</header>
+
+<sc-if value="{{ showFields }}" hint-placeholder-val="{{ true }}">
+  <div style="max-width:1200px; margin:16px auto 0; padding:0 32px;"><p style="margin:0; font-size:13px; font-weight:500; color:#6B4A00; background:#FFF3D1; border:1px dashed #D9A93A; padding:8px 12px; border-radius:8px;">Template · sample posts. Chips, featured post and grid are generated from <span style="font-family:'Geist Mono', monospace;">{posts[]}</span> and <span style="font-family:'Geist Mono', monospace;">{post.entities[]}</span>.</p></div>
+</sc-if>
+
+<main style="max-width:1200px; margin:0 auto; padding:0 32px;">
+  <nav data-component="breadcrumb" aria-label="Breadcrumb" style="padding:20px 0 0; font-size:14px; color:#4A4A55; display:flex; gap:8px;"><a href="Homepage V3 - BeVerified (Desktop).dc.html" style="color:#4A4A55;">Home</a><span aria-hidden="true" style="color:#9C988F;">›</span><span aria-current="page" style="color:#14141A;">Blog</span></nav>
+  <h1 style="margin:28px 0 12px; font-size:52px; line-height:1.03; letter-spacing:-0.045em; font-weight:600; max-width:820px; text-wrap:balance;">{{ h1 }}</h1>
+  <p style="margin:0 0 28px; font-size:18px; line-height:1.55; color:#4A4A55; max-width:680px;">{{ desc }}</p>
+
+  <nav aria-label="Post types" style="display:flex; gap:28px; border-bottom:1px solid #D6D3CC; margin-bottom:32px;">
+    <sc-for list="{{ tabs }}" as="t" hint-placeholder-count="5">
+      <a href="#" onClick="{{ t.onClick }}" aria-current="{{ t.current }}" style="font-size:15px; padding:0 0 12px; color:{{ t.color }}; font-weight:{{ t.weight }}; border-bottom:2px solid {{ t.line }}; margin-bottom:-1px; text-decoration:none;">{{ t.label }}</a>
+    </sc-for>
+  </nav>
+
+  <sc-if value="{{ hasFeatured }}" hint-placeholder-val="{{ true }}">
+    <a href="{{ featured.href }}" data-component="post-card" style="display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); gap:0; background:#FFFFFF; border:1px solid #E6E4DF; border-radius:22px; overflow:hidden; text-decoration:none; color:#14141A; margin-bottom:28px;" style-hover="border-color:#9C988F; text-decoration:none; color:#14141A;">
+      <div style="padding:36px; display:flex; flex-direction:column;">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:16px;"><span style="font-size:13px; font-weight:500; color:#FFFFFF; background:#14141A; padding:3px 10px; border-radius:999px;">Featured · {{ featured.type }}</span></div>
+        <h2 style="margin:0 0 14px; font-size:36px; line-height:1.08; letter-spacing:-0.035em; font-weight:600; text-wrap:balance;">{{ featured.title }}</h2>
+        <p style="margin:0 0 20px; font-size:17px; line-height:1.55; color:#4A4A55;">{{ featured.excerpt }}</p>
+        <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:24px;">
+          <sc-for list="{{ featured.chips }}" as="c" hint-placeholder-count="3"><span data-component="entity-chip" style="display:inline-flex; align-items:center; gap:6px; font-size:13px; color:#14141A; background:#F7F6F3; border:1px solid #E0DDD6; padding:3px 10px; border-radius:999px;"><span aria-hidden="true" style="color:#6A6A74;">{{ c.glyph }}</span>{{ c.label }}</span></sc-for>
+        </div>
+        <div style="margin-top:auto; display:flex; align-items:center; gap:10px; font-size:14px; color:#4A4A55;"><img src="authors/andrii-klymenko.png" alt="" style="width:28px; height:28px; border-radius:999px; object-fit:cover; object-position:40% 25%; display:block;">Andrii Klymenko · {{ featured.published }} · {{ featured.reading }}</div>
+      </div>
+      <div style="background:#F1EFEA; border-left:1px solid #E6E4DF; padding:36px; display:flex; flex-direction:column; justify-content:flex-end;">
+        <div style="font-size:72px; font-weight:600; letter-spacing:-0.05em; line-height:0.95;">{{ featured.cover }}</div>
+        <div style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00; margin-top:12px;">{{ fl.cover }}</div>
+      </div>
+    </a>
+  </sc-if>
+
+  <ul style="list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); grid-auto-rows:1fr; gap:16px;">
+    <sc-for list="{{ grid }}" as="p" hint-placeholder-count="6">
+      <li style="display:flex; min-width:0;">
+        <a href="{{ p.href }}" data-component="post-card" style="flex:1; min-width:0; display:flex; flex-direction:column; background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px; overflow:hidden; text-decoration:none; color:#14141A; transition:transform .2s ease, border-color .2s ease;" style-hover="transform:translateY(-2px); border-color:#9C988F; text-decoration:none; color:#14141A;">
+          <sc-if value="{{ p.hasCover }}" hint-placeholder-val="{{ false }}"><div style="height:150px; background:#E9E6DF; border-bottom:1px solid #E6E4DF; display:flex; align-items:flex-end; padding:14px 18px; box-sizing:border-box; font-family:'Geist Mono', monospace; font-size:12px; color:#6A6A74;">{post.cover.src} · 16:9</div></sc-if>
+          <div style="padding:20px; display:flex; flex-direction:column; flex:1;">
+            <span style="align-self:flex-start; font-size:13px; font-weight:500; border:1px solid #D6D3CC; padding:2px 9px; border-radius:999px; margin-bottom:12px;">{{ p.type }}</span>
+            <h3 style="margin:0 0 8px; font-size:19px; line-height:1.25; letter-spacing:-0.015em; font-weight:600; text-wrap:pretty;">{{ p.title }}</h3>
+            <p style="margin:0 0 14px; font-size:14px; line-height:1.5; color:#4A4A55; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;">{{ p.excerpt }}</p>
+            <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px;"><sc-for list="{{ p.chips }}" as="c" hint-placeholder-count="3"><span style="display:inline-flex; align-items:center; gap:5px; font-size:12px; background:#F7F6F3; border:1px solid #E0DDD6; padding:2px 8px; border-radius:999px;"><span aria-hidden="true" style="color:#6A6A74;">{{ c.glyph }}</span>{{ c.label }}</span></sc-for></div>
+            <div style="margin-top:auto; padding-top:12px; border-top:1px solid #EEECE7; font-size:13px; color:#4A4A55; font-variant-numeric:tabular-nums;">Andrii Klymenko · {{ p.published }} · {{ p.reading }}</div>
+          </div>
+        </a>
+      </li>
+    </sc-for>
+  </ul>
+  <code style="display:block; margin-top:10px; font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00;">{{ fl.grid }}</code>
+
+  <nav aria-label="Pagination" style="display:flex; justify-content:center; gap:6px; margin:40px 0 0; font-size:15px;">
+    <span style="padding:8px 14px; color:#9C988F;">← Newer</span>
+    <span aria-current="page" style="padding:8px 14px; background:#14141A; color:#FFFFFF; border-radius:10px;">1</span>
+    <a href="#" style="padding:8px 14px; color:#14141A; border:1px solid #E0DDD6; border-radius:10px; background:#FFFFFF;">2</a>
+    <a href="#" style="padding:8px 14px; color:#14141A; border:1px solid #E0DDD6; border-radius:10px; background:#FFFFFF;">3</a>
+    <a href="#" style="padding:8px 14px; color:#14141A;">Older →</a>
+  </nav>
+
+  <section aria-labelledby="topics-h" style="padding:72px 0 96px;">
+    <h2 id="topics-h" style="margin:0 0 16px; font-size:24px; letter-spacing:-0.02em; font-weight:600;">Browse by topic</h2>
+    <div style="display:flex; flex-wrap:wrap; gap:8px;">
+      <sc-for list="{{ topics }}" as="c" hint-placeholder-count="8"><a href="{{ c.href }}" data-component="entity-chip" style="display:inline-flex; align-items:center; gap:7px; font-size:15px; color:#14141A; background:#FFFFFF; border:1px solid #D6D3CC; padding:7px 14px; border-radius:999px; text-decoration:none;" style-hover="border-color:#9C988F; text-decoration:none; color:#14141A;"><span aria-hidden="true" style="color:#6A6A74;">{{ c.glyph }}</span>{{ c.label }}</a></sc-for>
+    </div>
+    <code style="display:block; margin-top:10px; font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00;">{{ fl.topics }}</code>
+  </section>
+</main>
+
+<footer data-component="footer" style="background:#EFEDE8; border-top:1px solid #E0DDD6;">
+  <div style="max-width:1200px; margin:0 auto; padding:40px 32px 28px; display:flex; justify-content:space-between; gap:32px; font-size:14px; color:#4A4A55;"><span>Independent reviews of KYC, KYB and AML software.</span><span>© 2026 BeVerified.org · <a href="Methodology Page - BeVerified (Desktop).dc.html">Editorial standards</a></span></div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;archive&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;none&quot;,&quot;regulation&quot;],&quot;default&quot;:&quot;none&quot;,&quot;tsType&quot;:&quot;'none' | 'regulation'&quot;,&quot;section&quot;:&quot;Variant&quot;},&quot;showFields&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Variant&quot;}}">
+class Component extends DCLogic {
+  state = { tab: 'All' };
+  componentDidMount() { if (!window.BVBlog) { this._on = () => this.forceUpdate(); window.addEventListener('bv-blog-ready', this._on); } }
+  componentWillUnmount() { if (this._on) window.removeEventListener('bv-blog-ready', this._on); }
+  renderVals() {
+    const B = window.BVBlog;
+    if (!B) return {};
+    const show = this.props.showFields !== false, F = (s) => (show ? s : '');
+    const tab = this.props.archive === 'regulation' ? 'Regulation' : this.state.tab;
+    const typeOf = { News: 'News', Guides: 'Guide', Research: 'Research', Regulation: 'Regulation' };
+    const card = (p) => ({ ...p, chips: p.entities.slice(0, 3).map(B.chip), hasCover: !!p.cover });
+    const list = B.posts.filter((p) => tab === 'All' || p.type === typeOf[tab]);
+    const feat = tab === 'All' ? list.find((p) => p.type === 'Research' || p.type === 'Guide') : null;
+    const isReg = tab === 'Regulation';
+    return {
+      showFields: show,
+      h1: isReg ? 'Regulation updates for KYC and AML teams' : 'Insights on KYC, AML and identity verification',
+      desc: isReg ? 'What new rules and standards mean for onboarding, screening and monitoring — FATF, eIDAS, AMLA and national regulators.' : 'News, guides and research from the BeVerified review team, linked to the providers and rules they cover.',
+      tabs: B.types.map((t) => ({ label: t, current: t === tab ? 'page' : 'false', color: t === tab ? '#14141A' : '#4A4A55', weight: t === tab ? 600 : 400, line: t === tab ? '#14141A' : 'transparent', onClick: (e) => { e.preventDefault(); this.setState({ tab: t }); } })),
+      hasFeatured: !!feat,
+      featured: feat ? { ...card(feat), cover: feat.type === 'Guide' ? '$ / check' : 'Research' } : {},
+      grid: list.filter((p) => p !== feat).map(card),
+      topics: B.topics.map(B.chip),
+      fl: { cover: F('{post.cover.src | typographic fallback}'), grid: F('{posts[].type} {posts[].title} {posts[].excerpt} {post.entities[0..2]} {posts[].published} {posts[].reading_time}'), topics: F('{topics[] → /topic/<entity>/}') },
+    };
+  }
+}
+</script>
+</body>
+</html>

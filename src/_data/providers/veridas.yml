@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/veridas.png
   background: '#7C4DEA'
+  wordmark: null
 tagline: Proprietary face and voice biometrics, NIST-tested and backed by BBVA
 score: 4.6
 grade: Great
@@ -21,9 +22,6 @@ link:
   url: https://veridas.com
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-28'
 verdict: Veridas built its name on proprietary biometrics — facial and voice recognition that score near the top of independent NIST testing — rather than reselling third-party models. Backed by BBVA since its founding, it's strongest in Spain, Latin America, and Europe, though its funding and global scale trail category leaders built on larger venture rounds.
 what_is:
@@ -125,8 +123,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://veridas.com
+  - https://www.linkedin.com/company/veridas
+  - https://www.crunchbase.com/organization/veridas
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure above directly against Veridas's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

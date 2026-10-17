@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/idnow.jpg
   background: '#7247DE'
+  wordmark: null
 tagline: German eKYC leader, built on BaFin-compliant video identification
 score: 4.5
 grade: Very Good
@@ -21,9 +22,6 @@ link:
   url: https://www.idnow.io
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-28'
 verdict: IDnow made its name on VideoIdent, the human-video identity check that satisfies Germany's strict BaFin financial-regulator requirements — a compliance bar few global competitors are built around. Its 2022 acquisition of France's Ariadnext extended that strength across Europe, though its brand and case studies still skew most heavily toward the DACH region.
 what_is:
@@ -125,8 +123,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://www.idnow.io
+  - https://www.linkedin.com/company/idnow
+  - https://www.crunchbase.com/organization/idnow
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure above directly against IDnow's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

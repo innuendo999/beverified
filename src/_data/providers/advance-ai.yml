@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/advance-ai.webp
   background: '#7C4DEA'
+  wordmark: null
 tagline: Digital identity and credit risk built for Southeast Asian and APAC emerging markets
 score: 4.3
 grade: Good
@@ -21,9 +22,6 @@ link:
   url: https://www.advance.ai
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-29'
 verdict: Advance.AI focuses on emerging-market identity verification and credit risk across Southeast Asia and APAC, part of the broader Advance Intelligence Group. Several company details — exact founding year and precise coverage figures — aren't consistently published, so treat those specifics as provisional pending direct verification before publishing.
 what_is:
@@ -125,8 +123,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://www.advance.ai
+  - https://www.linkedin.com/company/advance-ai
+  - https://www.crunchbase.com/organization/advance-ai
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against Advance.AI's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

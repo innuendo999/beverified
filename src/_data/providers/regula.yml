@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/regula.png
   background: '#8A5CF0'
+  wordmark: null
 tagline: Document-authentication SDK and forensic template library, not a full onboarding platform
 score: 4.6
 grade: Great
@@ -21,9 +22,6 @@ link:
   url: https://www.regulaforensics.com
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-25'
 verdict: Regula is the deepest document-forensics option in identity verification, built for teams that need to catch sophisticated document fraud rather than run a full onboarding flow. Its 16,000-template library and on-device deployment suit banks and border agencies with strict data-residency rules, but it ships as an SDK and hardware reader, not a plug-and-play platform, and pricing is quoted per project rather than published.
 what_is:
@@ -125,8 +123,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://www.regulaforensics.com
+  - https://www.linkedin.com/company/regula-forensics
+  - https://www.crunchbase.com/organization/regula
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every third-party estimate above directly against Regula's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

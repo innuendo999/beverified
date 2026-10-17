@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/vespia.webp
   background: '#7C4DEA'
+  wordmark: null
 tagline: Fast global KYB, now being integrated into Veriff following a February 2026 acquisition
 score: 4.4
 grade: Very Good
@@ -21,9 +22,6 @@ link:
   url: https://www.vespia.io
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-29'
 verdict: Vespia built an AI-powered KYB platform covering business registry data across 300+ jurisdictions, founded by former Veriff team members. In February 2026, Veriff acquired Vespia, with its KYB technology being folded into Veriff's platform and commercial availability expected by mid-2026 — so evaluate it today as a business-verification specialist heading toward a larger combined platform.
 what_is:
@@ -125,8 +123,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://www.vespia.io
+  - https://www.linkedin.com/company/vespia
+  - https://www.crunchbase.com/organization/vespia
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against Vespia's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

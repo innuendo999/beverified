@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/feedzai.svg
   background: '#835AEB'
+  wordmark: /assets/img/wordmarks/feedzai.png
 tagline: Enterprise payment-fraud and transaction-monitoring platform for Tier-1 banks
 score: 4.6
 grade: Great
@@ -21,9 +22,6 @@ link:
   url: https://feedzai.com
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-25'
 verdict: 'Feedzai operates at a different scale than most of this batch: real-time machine-learning fraud detection deployed across roughly 80% of the Fortune 500 and four of North America''s five largest banks, protecting more than $8 trillion in transactions annually by the company''s own figures. That scale is built for tier-1 institutions — pricing is enterprise-only, and integration timelines reflect it.'
 what_is:
@@ -123,8 +121,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://feedzai.com
+  - https://www.linkedin.com/company/feedzai
+  - https://www.crunchbase.com/organization/feedzai
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every third-party estimate above directly against Feedzai's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

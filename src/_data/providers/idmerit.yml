@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/idmerit.jpg
   background: '#8A5CF0'
+  wordmark: null
 tagline: Budget identity-verification API with the cheapest published rate in this category
 score: 4.3
 grade: Good
@@ -21,9 +22,6 @@ link:
   url: https://www.idmerit.com
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-28'
 verdict: 'IDMERIT''s pitch is straightforward: identity verification across 180+ countries starting at $0.10 per user per month, the lowest published rate in this batch. It''s self-funded and smaller than venture-backed rivals, which shows up in brand recognition and depth of add-on tooling, but for teams that just need broad, affordable document and data-source checks, the price is hard to beat.'
 what_is:
@@ -120,8 +118,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://www.idmerit.com
+  - https://www.linkedin.com/company/idmerit
+  - https://www.crunchbase.com/organization/idmerit
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure above directly against IDMERIT's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

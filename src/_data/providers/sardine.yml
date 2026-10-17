@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/sardine.jpg
   background: '#6F3EE0'
+  wordmark: null
 tagline: Device and behavior intelligence that stops fraud before the transaction happens
 score: 4.5
 grade: Very Good
@@ -21,9 +22,6 @@ link:
   url: https://www.sardine.ai
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-28'
 verdict: Sardine scores fraud risk from device fingerprinting and behavior biometrics before a transaction completes, then extends into AML monitoring, case management, and instant settlement — an unusual combination. Backed by a16z, Visa, and Experian and used by Santander and Travelex, it's built for financial institutions rather than small self-serve teams.
 what_is:
@@ -125,8 +123,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://www.sardine.ai
+  - https://www.linkedin.com/company/sardineai
+  - https://www.crunchbase.com/organization/sardine
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against Sardine's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

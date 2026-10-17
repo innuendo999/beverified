@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ seoTitle }}</title>
+{%- if seoDescription %}
+<meta name="description" content="{{ seoDescription }}">
+{%- endif %}
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<meta property="og:type" content="{{ ogType or 'website' }}">
+<meta property="og:title" content="{{ seoTitle }}">
+{%- if seoDescription %}
+<meta property="og:description" content="{{ seoDescription }}">
+{%- endif %}
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/v3.css">
+{%- if jsonld %}
+<script type="application/ld+json">{{ jsonld | json | safe }}</script>
+{%- endif %}
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+{% include "v3/header.njk" %}
+{{ content | safe }}
+{% include "v3/footer.njk" %}
+<script>
+(function () {
+  var h = document.querySelector('.site-header'), b = document.querySelector('.nav-toggle');
+  if (h && b) b.addEventListener('click', function () {
+    var open = h.classList.toggle('is-open'); b.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+})();
+</script>
+</body>
+</html>

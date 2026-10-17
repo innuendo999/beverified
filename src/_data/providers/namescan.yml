@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/namescan.png
   background: '#9166F2'
+  wordmark: null
 tagline: Accessible on-demand PEP, sanctions, and adverse-media screening for SMEs
 score: 4.3
 grade: Good
@@ -21,9 +22,6 @@ link:
   url: https://namescan.io
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-28'
 verdict: 'NameScan targets a segment most AML platforms overlook: legal, real-estate, and crypto SMEs that need one-off or batch sanctions/PEP checks without an enterprise-lifecycle platform. It''s simple and self-serve where larger competitors require a sales conversation, though its scope and scale are narrower than full-service AML vendors.'
 what_is:
@@ -125,8 +123,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://namescan.io
+  - https://www.linkedin.com/company/namescan
+  - https://www.crunchbase.com/organization/namescan
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against NameScan's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

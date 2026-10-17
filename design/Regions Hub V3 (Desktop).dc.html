@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>KYC &amp; AML providers by country | BeVerified</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+html, body { margin:0; background:#F7F6F3; color:#14141A; }
+body { font-family:'Geist', ui-sans-serif, system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
+a { color:#5B2BD9; text-decoration:none; }
+a:hover { color:#4A1FBF; text-decoration:underline; text-underline-offset:3px; }
+:focus-visible { outline:2px solid #5B2BD9; outline-offset:3px; border-radius:6px; }
+</style>
+<script src="./bv-data.js"></script>
+</helmet>
+<div style="background:#F7F6F3; color:#14141A; min-height:100vh; font-family:'Geist', ui-sans-serif, system-ui, sans-serif;">
+<header data-component="header" style="position:sticky; top:0; z-index:100; background:rgba(247,246,243,0.92); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:1px solid #E6E4DF;">
+  <div style="max-width:1200px; margin:0 auto; padding:0 32px; height:60px; display:flex; align-items:center; gap:40px;">
+    <a href="Homepage V3 - BeVerified (Desktop).dc.html" aria-label="BeVerified home" style="display:flex; align-items:center; gap:9px; text-decoration:none;"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="display:block;"><rect x="3" y="12" width="4.5" height="9" rx="1" fill="#14141A"></rect><rect x="9.75" y="8" width="4.5" height="13" rx="1" fill="#14141A"></rect><rect x="16.5" y="3" width="4.5" height="18" rx="1" fill="#5B2BD9"></rect></svg><span style="font-weight:600; font-size:17px; letter-spacing:-0.03em; color:#14141A;">BeVerified</span></a>
+    <nav aria-label="Primary" style="display:flex; gap:28px; flex:1;"><a href="Use Cases Hub V3 (Desktop).dc.html" style="font-size:15px; color:#4A4A55;">Use cases</a><a href="Regions Hub V3 (Desktop).dc.html" style="font-size:15px; color:#14141A; font-weight:500;">Regions</a><a href="Providers Directory V3 (Desktop).dc.html" style="font-size:15px; color:#4A4A55;">Reviews</a><a href="Blog Index V3 (Desktop).dc.html" style="font-size:15px; color:#4A4A55;">Blog</a></nav>
+    <a href="Homepage V3 - BeVerified (Desktop).dc.html#for-providers" style="font-size:15px; color:#14141A;">For providers</a>
+  </div>
+</header>
+
+<main style="max-width:1200px; margin:0 auto; padding:0 32px 96px;">
+  <nav data-component="breadcrumb" aria-label="Breadcrumb" style="padding:20px 0 0; font-size:14px; color:#4A4A55; display:flex; gap:8px;"><a href="Homepage V3 - BeVerified (Desktop).dc.html" style="color:#4A4A55;">Home</a><span aria-hidden="true" style="color:#9C988F;">›</span><span aria-current="page" style="color:#14141A;">Regions</span></nav>
+  <h1 style="margin:28px 0 12px; font-size:52px; line-height:1.03; letter-spacing:-0.045em; font-weight:600;">KYC &amp; AML providers by country</h1>
+  <p style="margin:0 0 40px; font-size:18px; line-height:1.55; color:#4A4A55; max-width:700px;">Local regulators, ID documents and registries decide which provider fits a market. Each country ranking compares providers on the documents and rules that apply there.</p>
+
+  <h2 style="margin:0 0 14px; font-size:15px; font-weight:600; color:#6A6A74;">Priority markets</h2>
+  <div style="display:grid; grid-template-columns:repeat(5, minmax(0,1fr)); gap:12px; margin-bottom:56px;">
+    <sc-for list="{{ priority }}" as="r" hint-placeholder-count="10">
+      <div style="display:flex;">
+        <sc-if value="{{ r.live }}" hint-placeholder-val="{{ true }}">
+          <a href="{{ r.href }}" data-component="region-card" style="flex:1; display:flex; flex-direction:column; min-height:150px; background:#FFFFFF; border:1px solid #E6E4DF; border-radius:16px; padding:18px; text-decoration:none; color:#14141A;" style-hover="border-color:#9C988F; text-decoration:none; color:#14141A;">
+            <span style="font-size:19px; font-weight:600; letter-spacing:-0.02em;">{{ r.name }}</span>
+            <span style="font-size:14px; color:#4A4A55; margin-top:4px;">{{ r.reg }}</span>
+            <span style="margin-top:auto; display:flex; justify-content:space-between; padding-top:12px; border-top:1px solid #EEECE7; font-size:14px;"><span style="font-variant-numeric:tabular-nums; color:#4A4A55;">{{ r.count }} providers</span><span style="font-weight:500; color:#5B2BD9;">→</span></span>
+          </a>
+        </sc-if>
+        <sc-if value="{{ r.soon }}" hint-placeholder-val="{{ false }}">
+          <div data-component="region-card" aria-disabled="true" style="flex:1; display:flex; flex-direction:column; min-height:150px; background:#FBFAF8; border:1px dashed #D6D3CC; border-radius:16px; padding:18px; color:#14141A;">
+            <span style="font-size:19px; font-weight:600; letter-spacing:-0.02em;">{{ r.name }}</span>
+            <span style="font-size:14px; color:#4A4A55; margin-top:4px;">{{ r.reg }}</span>
+            <span style="margin-top:auto; padding-top:12px; border-top:1px dashed #E0DDD6; font-size:14px; color:#4A4A55;">Coming soon</span>
+          </div>
+        </sc-if>
+      </div>
+    </sc-for>
+  </div>
+
+  <sc-for list="{{ continents }}" as="c" hint-placeholder-count="5">
+    <section style="margin-bottom:32px;">
+      <h2 style="margin:0 0 12px; font-size:22px; letter-spacing:-0.02em; font-weight:600;">{{ c.name }}</h2>
+      <div data-component="region-row" style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:16px;">
+        <sc-for list="{{ c.rows }}" as="r" hint-placeholder-count="3">
+          <div style="border-top:1px solid #EEECE7;">
+            <sc-if value="{{ r.live }}" hint-placeholder-val="{{ true }}"><a href="{{ r.href }}" style="display:flex; flex-wrap:wrap; align-items:center; gap:6px 20px; padding:13px 20px; text-decoration:none; color:#14141A;" style-hover="background:#FBFAF8; text-decoration:none; color:#14141A;"><span style="flex:1 1 200px; font-size:16px; font-weight:500;">{{ r.name }}</span><span style="flex:0 0 160px; font-size:14px; color:#4A4A55;">{{ r.reg }}</span><span style="flex:0 0 120px; font-size:14px; color:#4A4A55; font-variant-numeric:tabular-nums;">{{ r.count }} providers</span><span style="font-size:14px; font-weight:500; color:#5B2BD9;">See ranking →</span></a></sc-if>
+            <sc-if value="{{ r.soon }}" hint-placeholder-val="{{ false }}"><div style="display:flex; flex-wrap:wrap; align-items:center; gap:6px 20px; padding:13px 20px; color:#14141A;"><span style="flex:1 1 200px; font-size:16px; font-weight:500;">{{ r.name }}</span><span style="flex:0 0 160px; font-size:14px; color:#4A4A55;">{{ r.reg }}</span><span style="flex:0 0 120px; font-size:14px; color:#9C988F;">—</span><span style="font-size:14px; color:#4A4A55; border:1px dashed #BDB9B0; padding:1px 9px; border-radius:999px;">Coming soon</span></div></sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+  </sc-for>
+  <code style="display:block; font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00;">{regions[].name} {regions[].regulator} {regions[].count | null → “Coming soon”}</code>
+</main>
+<footer data-component="footer" style="background:#EFEDE8; border-top:1px solid #E0DDD6;"><div style="max-width:1200px; margin:0 auto; padding:40px 32px 28px; display:flex; justify-content:space-between; gap:32px; font-size:14px; color:#4A4A55;"><span>Independent reviews of KYC, KYB and AML software.</span><span>© 2026 BeVerified.org · <a href="Methodology Page - BeVerified (Desktop).dc.html">Methodology</a></span></div></footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() { if (!window.BV) { this._on = () => this.forceUpdate(); window.addEventListener('bv-data-ready', this._on); } }
+  componentWillUnmount() { if (this._on) window.removeEventListener('bv-data-ready', this._on); }
+  renderVals() {
+    const D = window.BV;
+    if (!D) return {};
+    const r = (x) => ({ name: x.name, reg: x.reg, href: x.href, count: x.count, live: !!x.page, soon: !x.page });
+    const byId = (id) => D.regions.find((x) => x.id === id);
+    const extra = (name, reg) => ({ name, reg, live: false, soon: true });
+    const priority = ['uk', 'eu', 'us', 'uae', 'sg', 'in', 'br', 'mx', 'ng', 'ca'].map((id) => r(byId(id)));
+    const continents = [
+      ['Europe', [r(byId('uk')), r(byId('eu')), extra('Germany', 'BaFin'), extra('France', 'ACPR')]],
+      ['North America', [r(byId('us')), r(byId('ca')), r(byId('mx'))]],
+      ['Latin America', [r(byId('br')), r(byId('pe')), extra('Colombia', 'SFC')]],
+      ['Asia-Pacific', [r(byId('sg')), r(byId('in')), extra('Australia', 'AUSTRAC'), extra('Hong Kong', 'HKMA')]],
+      ['Middle East & Africa', [r(byId('uae')), r(byId('ng')), extra('South Africa', 'FIC')]],
+    ].map(([name, rows]) => ({ name, rows }));
+    return { priority, continents };
+  }
+}
+</script>
+</body>
+</html>

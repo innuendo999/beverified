@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/jumio.png
   background: '#7C4DEA'
+  wordmark: /assets/img/wordmarks/jumio.png
 tagline: Enterprise-scale IDV and KYX platform built for Fortune-500 volume
 score: 4.5
 grade: Very Good
@@ -22,9 +23,6 @@ link:
   url: https://www.jumio.com
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-25'
 verdict: 'Jumio is built for enterprise-scale identity verification — more than a billion verifications processed, Tier-1 bank and marketplace clients, and a KYX platform that extends beyond onboarding into continuous risk monitoring. That scale comes at the cost of pricing transparency: rates are quoted through sales, and third-party estimates put effective per-verification costs meaningfully above budget-tier competitors.'
 what_is:
@@ -130,8 +128,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://www.jumio.com
+  - https://www.linkedin.com/company/jumio
+  - https://www.crunchbase.com/organization/jumio
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every third-party estimate above directly against Jumio's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

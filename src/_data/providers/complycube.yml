@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/complycube.webp
   background: '#9166F2'
+  wordmark: null
 tagline: API-first KYC/AML platform aimed at straightforward developer integration
 score: 4.3
 grade: Good
@@ -21,9 +22,6 @@ link:
   url: https://www.complycube.com
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-28'
 verdict: ComplyCube is a smaller, API-first challenger in a category dominated by better-funded platforms, pitching itself on straightforward integration for document verification, biometrics, and AML screening. It's a reasonable fit for mid-market teams that want a developer-friendly onboarding API, though it doesn't have the scale or published pricing transparency of the category's larger players.
 what_is:
@@ -125,8 +123,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://www.complycube.com
+  - https://www.linkedin.com/company/complycube
+  - https://www.crunchbase.com/organization/complycube
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure above directly against ComplyCube's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

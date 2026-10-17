@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/kyc360.webp
   background: '#5A2FD1'
+  wordmark: null
 tagline: Full-lifecycle AML platform built on deep founder expertise, now backed by Experian
 score: 4.5
 grade: Very Good
@@ -21,9 +22,6 @@ link:
   url: https://kyc360.com
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-28'
 verdict: KYC360 was acquired by Experian in October 2025, adding data-network backing to a platform already built on unusually deep AML expertise — founder Stephen Platt also founded the International Compliance Association. Its price-by-searches model (not per-seat) suits firms with variable screening volume, though the Experian integration is still in progress.
 what_is:
@@ -129,8 +127,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://kyc360.com
+  - https://www.linkedin.com/company/riskscreen
+  - https://www.crunchbase.com/organization/riskscreen
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against KYC360's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

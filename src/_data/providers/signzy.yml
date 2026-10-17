@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/signzy.png
   background: '#7247DE'
+  wordmark: null
 tagline: No-code KYC/KYB builder built for India's BFSI market, distributed globally via Mastercard
 score: 4.4
 grade: Very Good
@@ -22,9 +23,6 @@ link:
   url: https://signzy.com
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-29'
 verdict: Signzy's no-code visual workflow builder is deeply specialized for India — Aadhaar e-KYC, V-CIP video verification, and GSTIN business lookups — while a 2020 Mastercard alliance extends its video-KYC distribution globally. It's the strongest option here for India-specific BFSI compliance, though its depth outside that market requires more configuration.
 what_is:
@@ -130,8 +128,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://signzy.com
+  - https://www.linkedin.com/company/signzy
+  - https://www.crunchbase.com/organization/signzy
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against Signzy's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

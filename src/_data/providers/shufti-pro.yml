@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/shufti-pro.png
   background: '#6F3EE0'
+  wordmark: null
 tagline: AI-driven identity verification with the widest geographic and language coverage in the category
 score: 4.6
 grade: Great
@@ -22,9 +23,6 @@ link:
   url: https://shuftipro.com
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-25'
 verdict: 'Shufti Pro''s pitch is breadth: 230+ countries and territories, 10,000+ document types, and 150+ languages, built on a proprietary AI stack rather than licensed third-party models. Flexible deployment — cloud, private cloud, or on-premise — makes it a fit for teams with data-residency constraints, though like most competitors here, actual pricing requires a quote.'
 what_is:
@@ -130,8 +128,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://shuftipro.com
+  - https://www.linkedin.com/company/shuftipro
+  - https://www.crunchbase.com/organization/shufti-pro
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every third-party estimate above directly against Shufti Pro's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

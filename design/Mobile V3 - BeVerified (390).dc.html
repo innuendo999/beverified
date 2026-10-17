@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<title>BeVerified · Mobile 390</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+html, body { margin:0; background:#E4E1DA; color:#14141A; }
+body { font-family:'Geist', ui-sans-serif, system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
+a { color:#5B2BD9; text-decoration:none; }
+a:hover { color:#4A1FBF; }
+button { font-family:inherit; }
+:focus-visible { outline:2px solid #5B2BD9; outline-offset:2px; border-radius:6px; }
+</style>
+<script src="./bv-data.js"></script>
+</helmet>
+
+<section style="padding:64px 64px 32px;">
+  <div style="font-size:14px; color:#4A4A55; margin-bottom:6px;">BeVerified · Mobile 390px · same tokens as desktop V3</div>
+  <h1 style="margin:0 0 8px; font-size:44px; letter-spacing:-0.04em; font-weight:600;">Mobile frames</h1>
+  <p style="margin:0; font-size:16px; line-height:1.55; color:#4A4A55; max-width:860px;">Rules: body ≥16px · tap targets ≥44px · no horizontal page scroll (only inside nav pills and tables) · nothing removed vs desktop — long blocks collapse. Every state is named <code style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9;">m-component · state</code>.</p>
+</section>
+
+<section aria-label="Mobile component sheet" style="padding:24px 64px 48px;">
+  <h2 style="margin:0 0 24px; font-size:26px; letter-spacing:-0.03em; font-weight:600;">1 · Component sheet — mobile states</h2>
+  <div style="display:flex; gap:40px; align-items:flex-start; flex-wrap:wrap;">
+
+    <figure style="margin:0; display:flex; flex-direction:column; gap:10px;">
+      <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9;">m-header · closed  /  m-header · menu-open</figcaption>
+      <div style="width:390px; background:#F7F6F3; border:1px solid #D6D3CC; border-radius:28px; overflow:hidden; margin-bottom:16px;">
+        <header style="height:56px; padding:0 6px 0 16px; display:flex; align-items:center; justify-content:space-between; background:#F7F6F3; border-bottom:1px solid #E6E4DF;">
+          <span style="display:flex; align-items:center; gap:8px;"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="display:block;"><rect x="3" y="12" width="4.5" height="9" rx="1" fill="#14141A"></rect><rect x="9.75" y="8" width="4.5" height="13" rx="1" fill="#14141A"></rect><rect x="16.5" y="3" width="4.5" height="18" rx="1" fill="#5B2BD9"></rect></svg><span style="font-weight:600; font-size:17px; letter-spacing:-0.03em;">BeVerified</span></span>
+          <button type="button" aria-label="Open menu" aria-expanded="false" style="width:44px; height:44px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px; background:transparent; border:none; padding:0;"><span style="width:20px; height:1.5px; background:#14141A;"></span><span style="width:20px; height:1.5px; background:#14141A;"></span></button>
+        </header>
+      </div>
+      <div style="width:390px; height:560px; background:#F7F6F3; border:1px solid #D6D3CC; border-radius:28px; overflow:hidden;">
+        <header style="height:56px; padding:0 6px 0 16px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid #E6E4DF;">
+          <span style="display:flex; align-items:center; gap:8px;"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="display:block;"><rect x="3" y="12" width="4.5" height="9" rx="1" fill="#14141A"></rect><rect x="9.75" y="8" width="4.5" height="13" rx="1" fill="#14141A"></rect><rect x="16.5" y="3" width="4.5" height="18" rx="1" fill="#5B2BD9"></rect></svg><span style="font-weight:600; font-size:17px; letter-spacing:-0.03em;">BeVerified</span></span>
+          <button type="button" aria-label="Close menu" aria-expanded="true" style="width:44px; height:44px; display:flex; align-items:center; justify-content:center; background:transparent; border:none; padding:0; font-size:22px; color:#14141A;">✕</button>
+        </header>
+        <nav aria-label="Primary" style="padding:8px 16px;">
+          <sc-for list="{{ menu }}" as="m" hint-placeholder-count="4"><a href="#" style="display:flex; align-items:center; justify-content:space-between; min-height:56px; font-size:20px; font-weight:500; letter-spacing:-0.02em; color:#14141A; border-bottom:1px solid #E6E4DF;">{{ m }}<span aria-hidden="true" style="color:#9C988F; font-size:18px;">›</span></a></sc-for>
+          <a href="#" style="display:flex; align-items:center; justify-content:space-between; min-height:56px; margin-top:16px; padding:0 16px; font-size:17px; font-weight:500; color:#14141A; background:#FFFFFF; border:1px solid #D6D3CC; border-radius:14px;">For providers<span aria-hidden="true" style="color:#9C988F;">›</span></a>
+          <p style="margin:20px 0 0; font-size:14px; line-height:1.5; color:#4A4A55;">No search, no compare in the menu — same as desktop.</p>
+        </nav>
+      </div>
+    </figure>
+
+    <figure style="margin:0; display:flex; flex-direction:column; gap:10px;">
+      <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9;">m-footer · accordion (tap a column)</figcaption>
+      <footer style="width:390px; box-sizing:border-box; background:#EFEDE8; border:1px solid #D6D3CC; border-radius:28px; overflow:hidden; padding:24px 16px 28px;">
+        <span style="display:flex; align-items:center; gap:8px; margin-bottom:8px;"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="display:block;"><rect x="3" y="12" width="4.5" height="9" rx="1" fill="#14141A"></rect><rect x="9.75" y="8" width="4.5" height="13" rx="1" fill="#14141A"></rect><rect x="16.5" y="3" width="4.5" height="18" rx="1" fill="#5B2BD9"></rect></svg><span style="font-weight:600; font-size:17px; letter-spacing:-0.03em;">BeVerified</span></span>
+        <p style="margin:0 0 16px; font-size:16px; line-height:1.5; color:#4A4A55;">Independent reviews of KYC, KYB and AML software.</p>
+        <div style="border-top:1px solid #D6D3CC;">
+          <sc-for list="{{ footerGroups }}" as="g" hint-placeholder-count="5">
+            <div style="border-bottom:1px solid #D6D3CC;">
+              <button type="button" onClick="{{ g.onToggle }}" aria-expanded="{{ g.open }}" style="width:100%; min-height:52px; display:flex; justify-content:space-between; align-items:center; background:transparent; border:none; padding:0; font-size:16px; font-weight:600; color:#14141A; text-align:left;">{{ g.name }}<span aria-hidden="true" style="font-size:20px; font-weight:400; color:#6A6A74;">{{ g.icon }}</span></button>
+              <sc-if value="{{ g.open }}" hint-placeholder-val="{{ false }}"><div style="padding:0 0 10px;"><sc-for list="{{ g.links }}" as="l" hint-placeholder-count="4"><a href="#" style="display:flex; align-items:center; min-height:44px; font-size:16px; color:#4A4A55;">{{ l }}</a></sc-for></div></sc-if>
+            </div>
+          </sc-for>
+        </div>
+        <p style="margin:18px 0 0; font-size:14px; line-height:1.55; color:#4A4A55;"><strong style="color:#14141A; font-weight:600;">Disclosure.</strong> {{ disclosure }}</p>
+        <p style="margin:10px 0 0; font-size:14px; color:#4A4A55;">© 2026 BeVerified.org</p>
+      </footer>
+    </figure>
+
+    <figure style="margin:0; display:flex; flex-direction:column; gap:10px;">
+      <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9;">m-provider-card · editors-choice / default / logo-fallback</figcaption>
+      <div style="width:390px; box-sizing:border-box; background:#F7F6F3; border:1px solid #D6D3CC; border-radius:28px; padding:16px; display:flex; flex-direction:column; gap:12px;">
+        <sc-for list="{{ cards }}" as="p" hint-placeholder-count="3">
+          <a href="#" style="position:relative; display:flex; flex-direction:column; background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px; padding:18px 18px 4px; color:#14141A; text-decoration:none;">
+            <sc-if value="{{ p.editors }}" hint-placeholder-val="{{ false }}"><span aria-hidden="true" style="position:absolute; inset:-1px; border:1.5px solid #5B2BD9; border-radius:18px; pointer-events:none;"></span></sc-if>
+            <div style="display:flex; justify-content:space-between; align-items:center; height:30px;">
+              <sc-if value="{{ p.hasLogo }}" hint-placeholder-val="{{ true }}"><img src="{{ p.logo }}" alt="" style="height:28px; width:auto; max-width:170px; object-fit:contain; display:block;"></sc-if>
+              <sc-if value="{{ p.noLogo }}" hint-placeholder-val="{{ false }}"><span style="font-size:20px; font-weight:700; letter-spacing:-0.035em;">{{ p.name }}</span></sc-if>
+              <span style="font-size:26px; font-weight:500; color:#8A8790; font-variant-numeric:tabular-nums;">{{ p.rankText }}</span>
+            </div>
+            <sc-if value="{{ p.editors }}" hint-placeholder-val="{{ false }}"><span style="align-self:flex-start; display:inline-flex; align-items:center; gap:6px; margin-top:10px; font-size:13px; font-weight:500; color:#FFFFFF; background:#14141A; padding:3px 10px; border-radius:999px;"><span aria-hidden="true" style="width:6px; height:6px; background:#FFFFFF; transform:rotate(45deg);"></span>Editor’s choice</span></sc-if>
+            <div style="font-size:18px; font-weight:600; margin-top:12px;">{{ p.name }}</div>
+            <div role="img" aria-label="{{ p.aria }}" style="margin-top:8px;"><span aria-hidden="true" style="font-size:34px; font-weight:600; letter-spacing:-0.045em; font-variant-numeric:tabular-nums;">{{ p.scoreText }}</span><span aria-hidden="true" style="font-size:15px; color:#6A6A74;"> / 5</span><span aria-hidden="true" style="display:flex; gap:3px; margin-top:8px;"><sc-for list="{{ p.segs }}" as="sg" hint-placeholder-count="5"><span style="flex:1; height:4px; border-radius:2px; background:#E6E4DF; overflow:hidden;"><span style="display:block; height:100%; width:{{ sg.w }}; background:#14141A;"></span></span></sc-for></span></div>
+            <span style="align-self:flex-start; max-width:100%; box-sizing:border-box; margin-top:12px; font-size:13px; border:1px solid #D6D3CC; padding:3px 10px; border-radius:999px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Best for&nbsp;·&nbsp;{{ p.bestFor }}</span>
+            <p style="margin:10px 0 0; font-size:16px; line-height:1.5; color:#4A4A55; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;">{{ p.reason }}</p>
+            <div style="margin-top:14px; border-top:1px solid #EEECE7; min-height:48px; display:flex; justify-content:space-between; align-items:center;"><span style="font-size:16px; font-weight:500; color:#5B2BD9;">Read review →</span><span style="font-size:13px; color:#6A6A74;">{{ p.tags }}</span></div>
+          </a>
+        </sc-for>
+      </div>
+    </figure>
+
+    <figure style="margin:0; display:flex; flex-direction:column; gap:10px;">
+      <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9;">m-quick-pick-row · m-rating · m-badge · m-evidence-tag · m-entity-chip</figcaption>
+      <div style="width:390px; box-sizing:border-box; background:#F7F6F3; border:1px solid #D6D3CC; border-radius:28px; padding:16px; display:flex; flex-direction:column; gap:20px;">
+        <div>
+          <div style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00; margin-bottom:8px;">m-quick-pick-row · top / default</div>
+          <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:16px; padding:0 16px;">
+            <sc-for list="{{ qpTwo }}" as="q" hint-placeholder-count="2">
+              <div style="padding:14px 0 4px; border-top:1px solid {{ q.line }};">
+                <sc-if value="{{ q.isTop }}" hint-placeholder-val="{{ true }}"><span style="display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:500; color:#FFFFFF; background:#14141A; padding:3px 10px; border-radius:999px;"><span aria-hidden="true" style="width:6px; height:6px; background:#FFFFFF; transform:rotate(45deg);"></span>{{ q.label }}</span></sc-if>
+                <sc-if value="{{ q.notTop }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex; font-size:13px; font-weight:500; border:1px solid #D6D3CC; padding:2px 10px; border-radius:999px;">{{ q.label }}</span></sc-if>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-top:10px;"><img src="{{ q.logo }}" alt="{{ q.name }}" style="height:22px; width:auto; max-width:150px; object-fit:contain; display:block;"><span role="img" aria-label="{{ q.aria }}" style="font-size:22px; font-weight:600; letter-spacing:-0.03em; font-variant-numeric:tabular-nums;">{{ q.scoreText }}<span style="font-size:14px; font-weight:400; color:#6A6A74;"> / 5</span></span></div>
+                <p style="margin:8px 0 0; font-size:16px; line-height:1.5; color:#4A4A55;">{{ q.reason }}</p>
+                <a href="#" style="display:flex; align-items:center; min-height:44px; font-size:16px; font-weight:500;">Read review →</a>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        <div>
+          <div style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00; margin-bottom:8px;">m-rating · large / inline</div>
+          <div style="display:flex; gap:12px;">
+            <div role="img" aria-label="4.6 out of 5, Excellent" style="flex:1; background:#FFFFFF; border:1.5px solid #14141A; border-radius:16px; padding:14px 16px;"><div aria-hidden="true" style="display:flex; align-items:baseline; gap:4px;"><span style="font-size:40px; font-weight:600; letter-spacing:-0.05em; line-height:1;">4.6</span><span style="font-size:15px; color:#6A6A74;">/ 5</span></div><div aria-hidden="true" style="display:flex; gap:3px; margin-top:10px;"><sc-for list="{{ segs46 }}" as="sg" hint-placeholder-count="5"><span style="flex:1; height:5px; border-radius:2px; background:#E6E4DF; overflow:hidden;"><span style="display:block; height:100%; width:{{ sg.w }}; background:#14141A;"></span></span></sc-for></div><div style="font-size:14px; font-weight:600; margin-top:8px;">Excellent</div></div>
+            <div style="flex:1; background:#FFFFFF; border:1px solid #E6E4DF; border-radius:16px; padding:14px 16px; display:flex; flex-direction:column; justify-content:center;"><span role="img" aria-label="4.6 out of 5" style="font-size:20px; font-weight:600; font-variant-numeric:tabular-nums;">4.6 <span style="font-size:14px; font-weight:400; color:#6A6A74;">/ 5</span></span><span style="font-size:14px; color:#4A4A55; margin-top:4px;">rows &amp; tables</span></div>
+          </div>
+        </div>
+        <div>
+          <div style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00; margin-bottom:8px;">m-badge</div>
+          <div style="display:flex; flex-wrap:wrap; gap:8px;">
+            <span style="display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:500; color:#FFFFFF; background:#14141A; padding:4px 10px; border-radius:999px;"><span aria-hidden="true" style="width:6px; height:6px; background:#FFFFFF; transform:rotate(45deg);"></span>Editor’s choice</span>
+            <span style="display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:500; color:#FFFFFF; background:#14141A; padding:4px 10px; border-radius:999px;"><span aria-hidden="true">▲</span>Manually tested</span>
+            <span style="display:inline-flex; font-size:13px; border:1px solid #D6D3CC; background:#FFFFFF; padding:3px 10px; border-radius:999px;">Best for&nbsp;·&nbsp;Self-serve IDV</span>
+            <span style="display:inline-flex; gap:6px; font-size:13px; font-weight:500; color:#FFFFFF; background:#14141A; padding:3px 10px; border-radius:999px;"><span aria-hidden="true">●</span>News</span>
+            <span style="display:inline-flex; font-size:13px; border:1px solid #D6D3CC; background:#FFFFFF; padding:3px 10px; border-radius:999px;">Guide</span>
+            <span style="display:inline-flex; font-size:13px; color:#4A4A55; border:1px dashed #BDB9B0; padding:3px 10px; border-radius:999px;">Review coming</span>
+          </div>
+        </div>
+        <div>
+          <div style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00; margin-bottom:8px;">m-evidence-tag (non-interactive, ≥13px)</div>
+          <div style="display:flex; flex-wrap:wrap; gap:8px;"><sc-for list="{{ ev }}" as="e" hint-placeholder-count="4"><span style="display:inline-flex; align-items:center; gap:6px; font-size:13px; border:1px solid #D6D3CC; background:#FFFFFF; padding:3px 10px; border-radius:999px;"><span aria-hidden="true">{{ e.icon }}</span>{{ e.label }}</span></sc-for></div>
+        </div>
+        <div>
+          <div style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00; margin-bottom:8px;">m-entity-chip (44px tap height)</div>
+          <div style="display:flex; flex-wrap:wrap; gap:8px;"><sc-for list="{{ chips }}" as="c" hint-placeholder-count="5"><a href="#" style="display:inline-flex; align-items:center; gap:7px; min-height:44px; box-sizing:border-box; font-size:15px; color:#14141A; background:#FFFFFF; border:1px solid #D6D3CC; padding:0 14px; border-radius:999px;"><span aria-hidden="true" style="color:#6A6A74;">{{ c.g }}</span>{{ c.label }}</a></sc-for></div>
+          <p style="margin:8px 0 0; font-size:14px; line-height:1.5; color:#4A4A55;">Links follow the desktop rule: provider → review, category → ranking, region → region page, other → topic page.</p>
+        </div>
+      </div>
+    </figure>
+
+    <figure style="margin:0; display:flex; flex-direction:column; gap:10px;">
+      <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9;">m-cta-row · affiliate / paid / none  ·  m-tag-popover · tapped</figcaption>
+      <div style="width:390px; box-sizing:border-box; background:#F7F6F3; border:1px solid #D6D3CC; border-radius:28px; padding:16px; display:flex; flex-direction:column; gap:14px;">
+        <sc-for list="{{ ctas }}" as="s" hint-placeholder-count="3">
+          <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:16px; padding:14px 16px 16px;">
+            <div style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00; margin-bottom:10px;">{{ s.label }}</div>
+            <div style="min-height:156px; display:flex; flex-direction:column; gap:8px;">
+              <sc-if value="{{ s.hasBtn }}" hint-placeholder-val="{{ true }}"><a href="#" rel="sponsored nofollow noopener" style="display:flex; align-items:center; justify-content:center; height:48px; font-size:16px; font-weight:500; color:#FFFFFF; background:#14141A; border-radius:999px; text-decoration:none;">Visit site ↗</a></sc-if>
+              <sc-if value="{{ s.hasBtn }}" hint-placeholder-val="{{ true }}">
+                <div>
+                  <button type="button" onClick="{{ s.toggle }}" aria-expanded="{{ s.open }}" aria-controls="{{ s.tipId }}" style="min-height:44px; display:flex; align-items:center; background:transparent; border:none; padding:0; cursor:pointer;">
+                    <sc-if value="{{ s.isAff }}" hint-placeholder-val="{{ true }}"><span style="display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:500; color:#14141A; background:#FFFFFF; border:1px solid #9C988F; padding:3px 9px; border-radius:6px;"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6.5 9.5l3-3M7 4.5l1.2-1.2a2.6 2.6 0 013.7 3.7L10.7 8.2M9 11.5l-1.2 1.2a2.6 2.6 0 01-3.7-3.7l1.2-1.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>Affiliate link<span aria-hidden="true" style="color:#6A6A74; margin-left:2px;">ⓘ</span></span></sc-if>
+                    <sc-if value="{{ s.isPaid }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:500; color:#14141A; background:#EFEDE8; border:1px dashed #6A6A74; padding:3px 9px; border-radius:6px;"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.6"></rect><path d="M8 4.5v7M10 6.2c-.3-.7-1-1.1-2-1.1-1.1 0-1.9.6-1.9 1.4 0 1.9 4 .9 4 2.9 0 .8-.9 1.4-2.1 1.4-1 0-1.8-.4-2.1-1.1" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"></path></svg>Sponsored link<span aria-hidden="true" style="color:#6A6A74; margin-left:2px;">ⓘ</span></span></sc-if>
+                  </button>
+                  <sc-if value="{{ s.open }}" hint-placeholder-val="{{ false }}">
+                    <div id="{{ s.tipId }}" role="region" style="margin:2px 0 4px; display:flex; gap:10px; align-items:flex-start; background:#14141A; color:#FFFFFF; border-radius:12px; padding:12px 6px 12px 14px;">
+                      <span style="flex:1; font-size:15px; line-height:1.45;">{{ s.tip }}</span>
+                      <button type="button" onClick="{{ s.toggle }}" aria-label="Close" style="width:44px; height:44px; flex-shrink:0; margin:-10px 0 -10px; background:transparent; border:none; color:#FFFFFF; font-size:18px; cursor:pointer;">✕</button>
+                    </div>
+                  </sc-if>
+                </div>
+              </sc-if>
+              <a href="#" style="display:flex; align-items:center; justify-content:center; height:48px; font-size:16px; font-weight:500; color:#14141A; background:#FFFFFF; border:1px solid #D6D3CC; border-radius:999px; text-decoration:none; box-sizing:border-box;">Read review</a>
+              <sc-if value="{{ s.isNone }}" hint-placeholder-val="{{ false }}"><a href="#" rel="noopener" style="display:flex; align-items:center; justify-content:center; min-height:44px; font-size:16px; color:#4A4A55; text-decoration:underline; text-underline-offset:3px;">Official website ↗</a></sc-if>
+            </div>
+          </div>
+        </sc-for>
+        <p style="margin:0; font-size:14px; line-height:1.5; color:#4A4A55;">Tap the tag to open the explanation inline (no hover on touch). It pushes content down instead of floating, so it never covers the button. Each block keeps a 156px minimum, so cards line up across states.</p>
+      </div>
+    </figure>
+
+    <figure style="margin:0; display:flex; flex-direction:column; gap:10px;">
+      <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9;">m-faq · open / closed  ·  m-post-card · no-cover / cover</figcaption>
+      <div style="width:390px; box-sizing:border-box; background:#F7F6F3; border:1px solid #D6D3CC; border-radius:28px; padding:16px; display:flex; flex-direction:column; gap:16px;">
+        <div style="border-top:1px solid #D6D3CC;">
+          <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="3">
+            <div style="border-bottom:1px solid #D6D3CC;">
+              <button type="button" onClick="{{ f.onToggle }}" aria-expanded="{{ f.open }}" style="width:100%; min-height:56px; display:flex; justify-content:space-between; align-items:center; gap:16px; background:transparent; border:none; padding:12px 0; text-align:left; font-size:17px; font-weight:500; color:#14141A; cursor:pointer;"><span>{{ f.q }}</span><span aria-hidden="true" style="font-size:22px; color:#6A6A74; font-weight:400;">{{ f.icon }}</span></button>
+              <sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}"><p style="margin:0; padding:0 0 16px; font-size:16px; line-height:1.6; color:#4A4A55;">{{ f.a }}</p></sc-if>
+            </div>
+          </sc-for>
+        </div>
+        <sc-for list="{{ posts }}" as="p" hint-placeholder-count="2">
+          <a href="#" style="display:flex; flex-direction:column; background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px; overflow:hidden; color:#14141A; text-decoration:none;">
+            <sc-if value="{{ p.cover }}" hint-placeholder-val="{{ false }}"><div style="aspect-ratio:16 / 9; background:#E9E6DF; border-bottom:1px solid #E6E4DF; display:flex; align-items:flex-end; padding:12px 16px; box-sizing:border-box; font-family:'Geist Mono', monospace; font-size:12px; color:#6A6A74;">{post.cover.src} · 16:9</div></sc-if>
+            <div style="padding:16px 18px 18px;">
+              <span style="display:inline-flex; font-size:13px; font-weight:500; border:1px solid #D6D3CC; padding:2px 9px; border-radius:999px; margin-bottom:10px;">{{ p.type }}</span>
+              <h3 style="margin:0 0 6px; font-size:19px; line-height:1.25; font-weight:600;">{{ p.title }}</h3>
+              <p style="margin:0 0 12px; font-size:16px; line-height:1.5; color:#4A4A55; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;">{{ p.excerpt }}</p>
+              <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:12px;"><sc-for list="{{ p.chips }}" as="c" hint-placeholder-count="3"><span style="display:inline-flex; gap:5px; font-size:13px; background:#F7F6F3; border:1px solid #E0DDD6; padding:2px 9px; border-radius:999px;"><span aria-hidden="true" style="color:#6A6A74;">{{ c.g }}</span>{{ c.label }}</span></sc-for></div>
+              <div style="padding-top:10px; border-top:1px solid #EEECE7; font-size:14px; color:#4A4A55;">Andrii Klymenko · Mon DD, YYYY · 0 min read</div>
+            </div>
+          </a>
+        </sc-for>
+        <p style="margin:0; font-size:14px; line-height:1.5; color:#4A4A55;">Chips inside a post-card are labels, not separate links (the whole card is one tap target).</p>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<section aria-label="Mobile pages" style="padding:24px 64px 48px;">
+  <h2 style="margin:0 0 6px; font-size:26px; letter-spacing:-0.03em; font-weight:600;">2–4 · Pages — first screens</h2>
+  <p style="margin:0 0 24px; font-size:15px; color:#4A4A55;">Dashed violet lines mark each 844px screen fold.</p>
+  <div style="display:flex; gap:40px; align-items:flex-start; flex-wrap:wrap;">
+
+    <figure style="margin:0; display:flex; flex-direction:column; gap:10px;">
+      <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9;">2 · Homepage · screens 1–2</figcaption>
+      <div style="position:relative; width:390px; height:1688px; background:#F7F6F3; border:1px solid #D6D3CC; border-radius:28px; overflow:hidden;">
+        <header style="height:56px; padding:0 6px 0 16px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid #E6E4DF;">
+          <span style="display:flex; align-items:center; gap:8px;"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="display:block;"><rect x="3" y="12" width="4.5" height="9" rx="1" fill="#14141A"></rect><rect x="9.75" y="8" width="4.5" height="13" rx="1" fill="#14141A"></rect><rect x="16.5" y="3" width="4.5" height="18" rx="1" fill="#5B2BD9"></rect></svg><span style="font-weight:600; font-size:17px; letter-spacing:-0.03em;">BeVerified</span></span>
+          <button type="button" aria-label="Open menu" style="width:44px; height:44px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px; background:transparent; border:none; padding:0;"><span style="width:20px; height:1.5px; background:#14141A;"></span><span style="width:20px; height:1.5px; background:#14141A;"></span></button>
+        </header>
+        <div style="padding:28px 16px 0;">
+          <h1 style="margin:0 0 14px; font-size:40px; line-height:1.03; letter-spacing:-0.045em; font-weight:600; text-wrap:balance;">Find the right KYC &amp; AML provider. <span style="color:#6A6A74;">Independently reviewed.</span></h1>
+          <p style="margin:0 0 22px; font-size:17px; line-height:1.55; color:#4A4A55;">Independent reviews and rankings of KYC, KYB and AML software, compared on coverage, accuracy, pricing and support.</p>
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <a href="#" style="display:flex; align-items:center; justify-content:center; height:50px; font-size:16px; font-weight:500; color:#FFFFFF; background:#14141A; border-radius:999px; text-decoration:none;">See top providers</a>
+            <a href="#" style="display:flex; align-items:center; justify-content:center; height:50px; box-sizing:border-box; font-size:16px; font-weight:500; color:#14141A; background:#FFFFFF; border:1px solid #D6D3CC; border-radius:999px; text-decoration:none;">Browse by use case</a>
+          </div>
+        </div>
+        <div aria-hidden="true" style="position:relative; height:240px; margin:8px 0 -110px;">
+          <x-import component-from-global-scope="slab-field" from="./slab-field.js" theme="light" mode="static" t="9.6" filter="0" win="0.06,0.08,0.94,0.46" cx="0.5" cy="0.4" scale="1.5" ui="0.85" chip="top" mask="linear-gradient(180deg, transparent 0%, #000 18%, #000 52%, transparent 92%)" style="position:absolute; inset:0;" hint-size="100%,240px"></x-import>
+        </div>
+        <div style="position:relative; z-index:1; padding:0 16px;">
+          <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px; box-shadow:0 18px 40px rgba(40,32,20,0.08);">
+            <div style="display:flex; justify-content:space-between; align-items:center; padding:14px 16px; border-bottom:1px solid #EEECE7;"><span style="font-size:17px; font-weight:600;">Quick picks</span><a href="#" style="display:flex; align-items:center; min-height:44px; font-size:15px; font-weight:500;">All providers →</a></div>
+            <ol style="list-style:none; margin:0; padding:0 16px;">
+              <sc-for list="{{ qp }}" as="q" hint-placeholder-count="3">
+                <li style="padding:14px 0 4px; border-top:1px solid {{ q.line }};">
+                  <sc-if value="{{ q.isTop }}" hint-placeholder-val="{{ true }}"><span style="display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:500; color:#FFFFFF; background:#14141A; padding:3px 10px; border-radius:999px;"><span aria-hidden="true" style="width:6px; height:6px; background:#FFFFFF; transform:rotate(45deg);"></span>{{ q.label }}</span></sc-if>
+                  <sc-if value="{{ q.notTop }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex; font-size:13px; font-weight:500; border:1px solid #D6D3CC; padding:2px 10px; border-radius:999px;">{{ q.label }}</span></sc-if>
+                  <div style="display:flex; justify-content:space-between; align-items:center; margin-top:10px;"><img src="{{ q.logo }}" alt="{{ q.name }}" style="height:22px; width:auto; max-width:150px; object-fit:contain; display:block;"><span role="img" aria-label="{{ q.aria }}" style="font-size:22px; font-weight:600; letter-spacing:-0.03em; font-variant-numeric:tabular-nums;">{{ q.scoreText }}<span style="font-size:14px; font-weight:400; color:#6A6A74;"> / 5</span></span></div>
+                  <p style="margin:8px 0 0; font-size:16px; line-height:1.5; color:#4A4A55;">{{ q.reason }}</p>
+                  <a href="#" style="display:flex; align-items:center; min-height:44px; font-size:16px; font-weight:500;">Read review →</a>
+                </li>
+              </sc-for>
+            </ol>
+          </div>
+        </div>
+        <section style="padding:48px 16px 0;">
+          <p style="margin:0 0 18px; text-align:center; font-size:15px; color:#4A4A55;">Independently reviewed providers</p>
+          <ul style="list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:4px 12px;"><sc-for list="{{ strip }}" as="l" hint-placeholder-count="6"><li><a href="#" aria-label="{{ l.name }} review" style="display:flex; align-items:center; justify-content:center; height:52px;"><img src="{{ l.logo }}" alt="" style="height:20px; width:auto; max-width:96px; object-fit:contain; display:block;"></a></li></sc-for></ul>
+          <a href="#" style="display:flex; align-items:center; justify-content:center; min-height:44px; margin-top:4px; font-size:15px; font-weight:500;">See all providers →</a>
+        </section>
+        <section style="padding:40px 16px 0;">
+          <h2 style="margin:0 0 16px; font-size:32px; line-height:1.05; letter-spacing:-0.04em; font-weight:600;">Top rated providers. <span style="color:#6A6A74;">In true score order.</span></h2>
+          <div style="background:#FFFFFF; border:1.5px solid #5B2BD9; border-radius:18px; padding:18px; height:180px; box-sizing:border-box;"><div style="display:flex; justify-content:space-between;"><img src="logos/sumsub.png" alt="Sumsub" style="height:28px; width:auto; display:block;"><span style="font-size:26px; font-weight:500; color:#8A8790;">01</span></div><span style="display:inline-flex; align-items:center; gap:6px; margin-top:10px; font-size:13px; font-weight:500; color:#FFFFFF; background:#14141A; padding:3px 10px; border-radius:999px;"><span aria-hidden="true" style="width:6px; height:6px; background:#FFFFFF; transform:rotate(45deg);"></span>Editor’s choice</span></div>
+        </section>
+        <div aria-hidden="true" style="position:absolute; left:0; right:0; top:844px; border-top:1.5px dashed #5B2BD9; pointer-events:none;"><span style="position:absolute; right:10px; top:4px; font-family:'Geist Mono', monospace; font-size:11px; color:#5B2BD9; background:#F7F6F3; padding:0 4px;">screen 2 ↓</span></div>
+      </div>
+    </figure>
+
+    <figure style="margin:0; display:flex; flex-direction:column; gap:10px;">
+      <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9;">3 · Provider review (Onfido) · screens 1–3</figcaption>
+      <div style="position:relative; width:390px; height:2532px; background:#F7F6F3; border:1px solid #D6D3CC; border-radius:28px; overflow:hidden;">
+        <header style="height:56px; padding:0 6px 0 16px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid #E6E4DF;">
+          <span style="display:flex; align-items:center; gap:8px;"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="display:block;"><rect x="3" y="12" width="4.5" height="9" rx="1" fill="#14141A"></rect><rect x="9.75" y="8" width="4.5" height="13" rx="1" fill="#14141A"></rect><rect x="16.5" y="3" width="4.5" height="18" rx="1" fill="#5B2BD9"></rect></svg><span style="font-weight:600; font-size:17px; letter-spacing:-0.03em;">BeVerified</span></span>
+          <button type="button" aria-label="Open menu" style="width:44px; height:44px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px; background:transparent; border:none; padding:0;"><span style="width:20px; height:1.5px; background:#14141A;"></span><span style="width:20px; height:1.5px; background:#14141A;"></span></button>
+        </header>
+        <div style="padding:0 16px;">
+          <nav aria-label="Breadcrumb" style="display:flex; align-items:center; gap:6px; min-height:44px; font-size:14px; color:#4A4A55;"><a href="#" style="color:#4A4A55;">Home</a><span aria-hidden="true" style="color:#9C988F;">›</span><a href="#" style="color:#4A4A55;">Reviews</a><span aria-hidden="true" style="color:#9C988F;">›</span><span style="color:#14141A;">Onfido</span></nav>
+          <div style="display:flex; align-items:center; gap:10px; margin:8px 0 12px; flex-wrap:wrap;"><img src="logos/onfido.png" alt="Onfido logo" style="height:26px; width:auto; display:block;"><span style="font-size:14px; color:#4A4A55;">now Entrust Identity Verification</span></div>
+          <h1 style="margin:0 0 14px; font-size:32px; line-height:1.08; letter-spacing:-0.04em; font-weight:600; text-wrap:balance;">Onfido (Entrust Identity Verification) Review 2026</h1>
+          <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px;"><span style="display:inline-flex; align-items:center; font-size:13px; border:1px solid #D6D3CC; background:#FFFFFF; padding:3px 10px; border-radius:999px;">Best for&nbsp;·&nbsp;Document + biometric IDV</span></div>
+          <a href="#" style="display:flex; align-items:center; min-height:44px; font-size:16px; font-weight:500;">Ranked #3 in Identity Verification →</a>
+          <div role="img" aria-label="BeVerified score 4.6 out of 5, Excellent" style="background:#FFFFFF; border:1.5px solid #14141A; border-radius:18px; padding:18px; margin:6px 0 14px;">
+            <div aria-hidden="true" style="font-size:14px; color:#4A4A55; margin-bottom:8px;">BeVerified score</div>
+            <div aria-hidden="true" style="display:flex; align-items:baseline; gap:6px;"><span style="font-size:48px; font-weight:600; letter-spacing:-0.05em; line-height:1;">4.6</span><span style="font-size:16px; color:#6A6A74;">/ 5</span><span style="margin-left:auto; font-size:16px; font-weight:600;">Excellent</span></div>
+            <div aria-hidden="true" style="display:flex; gap:4px; margin-top:12px;"><sc-for list="{{ segs46 }}" as="sg" hint-placeholder-count="5"><span style="flex:1; height:6px; border-radius:3px; background:#E6E4DF; overflow:hidden;"><span style="display:block; height:100%; width:{{ sg.w }}; background:#14141A;"></span></span></sc-for></div>
+            <a href="#" style="display:flex; align-items:center; min-height:44px; margin-top:4px; font-size:15px; font-weight:500;">See breakdown ↓</a>
+          </div>
+          <div style="display:flex; align-items:center; gap:10px; font-size:14px; color:#4A4A55; margin-bottom:4px;"><img src="authors/andrii-klymenko.png" alt="" style="width:32px; height:32px; border-radius:999px; object-fit:cover; object-position:40% 25%; display:block;"><span>By <a href="#" style="font-weight:500;">Andrii Klymenko</a></span></div>
+          <div style="display:flex; align-items:center; gap:6px; min-height:32px; font-size:14px; color:#4A4A55;"><span aria-hidden="true" style="color:#1B7A4B;">✓</span>Last verified <span style="color:#14141A;">{{ lastVerified }}</span></div>
+          <p style="margin:16px 0 18px; font-size:17px; line-height:1.6; color:#14141A;">{{ shortAnswer }}</p>
+
+          <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:16px; margin-bottom:18px;">
+            <button type="button" onClick="{{ toggleQf }}" aria-expanded="{{ qfOpen }}" aria-controls="m-qf" style="width:100%; min-height:56px; display:flex; justify-content:space-between; align-items:center; background:transparent; border:none; padding:0 16px; font-size:17px; font-weight:600; color:#14141A; cursor:pointer; text-align:left; gap:12px;"><span style="flex:1; min-width:0; white-space:nowrap;">Quick facts <span style="font-size:14px; font-weight:400; color:#6A6A74;">· {{ qfCount }} facts</span></span><span aria-hidden="true" style="font-size:22px; font-weight:400; color:#6A6A74;">{{ qfIcon }}</span></button>
+            <sc-if value="{{ qfClosed }}" hint-placeholder-val="{{ true }}"><div style="padding:0 16px 14px; font-size:15px; color:#4A4A55;">From price: Not published · Owner: Entrust · HQ: London</div></sc-if>
+            <sc-if value="{{ qfOpen }}" hint-placeholder-val="{{ false }}">
+              <div id="m-qf">
+                <sc-for list="{{ quickFacts }}" as="q" hint-placeholder-count="8">
+                  <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:4px 12px; padding:11px 16px; border-top:1px solid #EEECE7;"><span style="font-size:15px; color:#4A4A55;">{{ q.k }}</span><span style="font-size:16px; font-weight:500; text-align:right;">{{ q.v }}</span><span style="width:100%; display:flex;"><span style="display:inline-flex; align-items:center; gap:5px; font-size:13px; border:1px solid #D6D3CC; padding:1px 8px; border-radius:999px;"><span aria-hidden="true">{{ q.ev.icon }}</span>{{ q.ev.label }}</span></span></div>
+                </sc-for>
+              </div>
+            </sc-if>
+          </div>
+
+          <p style="margin:0 0 12px; font-size:16px; line-height:1.5; color:#4A4A55;">{{ disclosure }} <a href="#">How we make money →</a></p>
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <a href="#" style="display:flex; align-items:center; justify-content:center; height:48px; box-sizing:border-box; font-size:16px; font-weight:500; color:#14141A; background:#FFFFFF; border:1px solid #D6D3CC; border-radius:999px; text-decoration:none;">See alternatives</a>
+            <a href="#" rel="noopener" style="display:flex; align-items:center; justify-content:center; min-height:44px; font-size:16px; color:#4A4A55; text-decoration:underline; text-underline-offset:3px;">Official website ↗</a>
+          </div>
+          <div style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00; margin-top:4px;">{provider.link.type} = none (sample)</div>
+        </div>
+
+        <nav aria-label="On this page" style="position:relative; margin-top:24px; border-top:1px solid #E6E4DF; border-bottom:1px solid #E6E4DF; background:#F7F6F3;">
+          <div style="display:flex; gap:8px; overflow-x:auto; padding:8px 16px; scrollbar-width:none;">
+            <sc-for list="{{ navPills }}" as="n" hint-placeholder-count="12"><a href="#" style="flex-shrink:0; display:flex; align-items:center; min-height:44px; box-sizing:border-box; font-size:15px; color:{{ n.color }}; background:{{ n.bg }}; border:1px solid {{ n.border }}; padding:0 16px; border-radius:999px; white-space:nowrap; text-decoration:none;">{{ n.label }}</a></sc-for>
+          </div>
+          <span aria-hidden="true" style="position:absolute; top:0; right:0; bottom:0; width:48px; background:linear-gradient(90deg, rgba(247,246,243,0), #F7F6F3 70%); pointer-events:none; display:flex; align-items:center; justify-content:flex-end; padding-right:8px; color:#6A6A74; font-size:16px;">›</span>
+        </nav>
+        <div style="font-family:'Geist Mono', monospace; font-size:11px; color:#8A5A00; padding:6px 16px 0;">m-in-page-nav · sticky under header · swipe</div>
+
+        <section style="padding:24px 16px 0;">
+          <h2 style="margin:0 0 14px; font-size:28px; line-height:1.1; letter-spacing:-0.03em; font-weight:600;">Our verdict</h2>
+          <p style="margin:0 0 14px; font-size:17px; line-height:1.65; color:#4A4A55;">Onfido’s strength is the identity check itself: document plus selfie verification with liveness, delivered through mature SDKs <a href="#" style="font-size:13px; vertical-align:super;">[4]</a>. Its weakness for compliance buyers is scope — watchlist screening is a separate module and ongoing AML monitoring is not the core product <a href="#" style="font-size:13px; vertical-align:super;">[4]</a>.</p>
+          <p style="margin:0 0 28px; font-size:17px; line-height:1.65; color:#4A4A55;">Since April 2024 Onfido is owned by Entrust and is moving to the Entrust Identity Verification brand <a href="#" style="font-size:13px; vertical-align:super;">[1]</a>.</p>
+          <h2 style="margin:0 0 6px; font-size:28px; line-height:1.1; letter-spacing:-0.03em; font-weight:600;">Score breakdown</h2>
+          <p style="margin:0 0 14px; font-size:16px; color:#4A4A55;">Six weighted criteria from our methodology {{ methodologyVersion }}.</p>
+          <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:16px;">
+            <sc-for list="{{ breakdown }}" as="b" hint-placeholder-count="6">
+              <div style="padding:13px 16px; border-top:1px solid {{ b.line }};">
+                <div style="display:flex; justify-content:space-between; gap:12px; font-size:16px; margin-bottom:8px;"><span>{{ b.name }}</span><span style="color:#4A4A55; font-variant-numeric:tabular-nums;">{{ b.weight }}%</span></div>
+                <sc-if value="{{ b.has }}" hint-placeholder-val="{{ true }}"><div style="display:flex; align-items:center; gap:10px;"><span style="flex:1; height:6px; background:#EEECE7; border-radius:999px; overflow:hidden;"><span style="display:block; height:100%; width:80%; background:#14141A;"></span></span><strong style="font-size:16px; font-weight:600;">4.0</strong></div></sc-if>
+                <sc-if value="{{ b.none }}" hint-placeholder-val="{{ false }}"><span style="display:inline-block; font-size:14px; color:#4A4A55; border:1px dashed #BDB9B0; border-radius:8px; padding:3px 10px;">Not publicly disclosed — not scored</span></sc-if>
+                <div style="margin-top:8px;"><span style="display:inline-flex; align-items:center; gap:5px; font-size:13px; border:1px solid #D6D3CC; padding:1px 8px; border-radius:999px;"><span aria-hidden="true">{{ b.ev.icon }}</span>{{ b.ev.label }}</span></div>
+              </div>
+            </sc-for>
+          </div>
+        </section>
+        <div aria-hidden="true" style="position:absolute; left:0; right:0; top:844px; border-top:1.5px dashed #5B2BD9; pointer-events:none;"><span style="position:absolute; right:10px; top:4px; font-family:'Geist Mono', monospace; font-size:11px; color:#5B2BD9; background:#F7F6F3; padding:0 4px;">screen 2 ↓</span></div>
+        <div aria-hidden="true" style="position:absolute; left:0; right:0; top:1688px; border-top:1.5px dashed #5B2BD9; pointer-events:none;"><span style="position:absolute; right:10px; top:4px; font-family:'Geist Mono', monospace; font-size:11px; color:#5B2BD9; background:#F7F6F3; padding:0 4px;">screen 3 ↓</span></div>
+      </div>
+    </figure>
+
+    <figure style="margin:0; display:flex; flex-direction:column; gap:10px;">
+      <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9;">4 · Category (Identity Verification) · screens 1–3</figcaption>
+      <div style="position:relative; width:390px; height:2580px; background:#F7F6F3; border:1px solid #D6D3CC; border-radius:28px; overflow:hidden;">
+        <header style="height:56px; padding:0 6px 0 16px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid #E6E4DF;">
+          <span style="display:flex; align-items:center; gap:8px;"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="display:block;"><rect x="3" y="12" width="4.5" height="9" rx="1" fill="#14141A"></rect><rect x="9.75" y="8" width="4.5" height="13" rx="1" fill="#14141A"></rect><rect x="16.5" y="3" width="4.5" height="18" rx="1" fill="#5B2BD9"></rect></svg><span style="font-weight:600; font-size:17px; letter-spacing:-0.03em;">BeVerified</span></span>
+          <button type="button" aria-label="Open menu" style="width:44px; height:44px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px; background:transparent; border:none; padding:0;"><span style="width:20px; height:1.5px; background:#14141A;"></span><span style="width:20px; height:1.5px; background:#14141A;"></span></button>
+        </header>
+        <div style="padding:0 16px;">
+          <nav aria-label="Breadcrumb" style="display:flex; align-items:center; gap:6px; min-height:44px; font-size:14px; color:#4A4A55;"><a href="#" style="color:#4A4A55;">Home</a><span aria-hidden="true" style="color:#9C988F;">›</span><a href="#" style="color:#4A4A55;">Use cases</a><span aria-hidden="true" style="color:#9C988F;">›</span><span style="color:#14141A;">Identity Verification</span></nav>
+          <h1 style="margin:8px 0 14px; font-size:34px; line-height:1.06; letter-spacing:-0.04em; font-weight:600; text-wrap:balance;">Top {{ count }} Identity Verification Providers in 2026</h1>
+          <p style="margin:0 0 16px; font-size:17px; line-height:1.6; color:#14141A;"><strong style="font-weight:600;">Sumsub</strong> is our top identity verification pick for most teams, because one platform covers document checks, liveness and AML screening. <strong style="font-weight:600;">Onfido (Entrust)</strong> wins on document-and-biometric depth for enterprise onboarding, and <strong style="font-weight:600;">KYCAID</strong> on configurable workflows at a lower entry price. We compared {{ count }} providers on compliance, coverage, pricing transparency, integration, support and track record.</p>
+          <div style="display:flex; align-items:center; gap:10px; font-size:14px; color:#4A4A55;"><img src="authors/andrii-klymenko.png" alt="" style="width:32px; height:32px; border-radius:999px; object-fit:cover; object-position:40% 25%; display:block;"><span>By <a href="#" style="font-weight:500;">Andrii Klymenko</a></span></div>
+          <div style="display:flex; align-items:center; gap:6px; min-height:32px; font-size:14px; color:#4A4A55;"><span aria-hidden="true" style="color:#1B7A4B;">✓</span>Last verified <span style="color:#14141A;">{{ lastVerified }}</span></div>
+        </div>
+        <nav aria-label="Ranked providers" style="position:relative; margin-top:16px;">
+          <div style="display:flex; gap:8px; overflow-x:auto; padding:0 16px; scrollbar-width:none;"><sc-for list="{{ ranked }}" as="p" hint-placeholder-count="5"><a href="#" style="flex-shrink:0; display:flex; align-items:center; gap:8px; min-height:44px; box-sizing:border-box; background:#FFFFFF; border:1px solid #E0DDD6; border-radius:12px; padding:0 14px 0 10px;"><span style="font-size:14px; color:#8A8790;">{{ p.rankText }}</span><img src="{{ p.logo }}" alt="{{ p.name }}" style="height:16px; width:auto; max-width:84px; object-fit:contain; display:block;"></a></sc-for></div>
+          <span aria-hidden="true" style="position:absolute; top:0; right:0; bottom:0; width:40px; background:linear-gradient(90deg, rgba(247,246,243,0), #F7F6F3 70%); pointer-events:none;"></span>
+        </nav>
+
+        <section style="padding:24px 16px 0;">
+          <div style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00; margin-bottom:8px;">m-ranking-table · stacked rows</div>
+          <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:16px;">
+            <p style="margin:0; padding:14px 16px 10px; font-size:15px; line-height:1.45; color:#4A4A55;">Identity verification providers ranked by BeVerified score, with starting price and the month it was verified.</p>
+            <ol style="list-style:none; margin:0; padding:0;">
+              <sc-for list="{{ ranked }}" as="p" hint-placeholder-count="5">
+                <li style="padding:14px 16px 2px; border-top:1px solid #EEECE7;">
+                  <div style="display:flex; align-items:center; gap:10px;"><span style="font-size:15px; color:#6A6A74; width:16px; font-variant-numeric:tabular-nums;">{{ p.rank }}</span><img src="{{ p.logo }}" alt="" style="height:18px; width:auto; max-width:100px; object-fit:contain; display:block;"><span style="font-size:16px; font-weight:500; flex:1; min-width:0;">{{ p.name }}</span><span role="img" aria-label="{{ p.aria }}" style="font-size:17px; font-weight:600; font-variant-numeric:tabular-nums;">{{ p.scoreText }}</span></div>
+                  <sc-if value="{{ p.editors }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex; align-items:center; gap:5px; margin:8px 0 0 26px; font-size:12px; font-weight:500; color:#FFFFFF; background:#14141A; padding:2px 8px; border-radius:999px;"><span aria-hidden="true" style="width:5px; height:5px; background:#FFFFFF; transform:rotate(45deg);"></span>Editor’s choice</span></sc-if>
+                  <dl style="margin:8px 0 0 26px; display:grid; grid-template-columns:auto minmax(0,1fr); gap:2px 10px; font-size:15px;"><dt style="color:#6A6A74;">From</dt><dd style="margin:0; font-variant-numeric:tabular-nums;">{{ p.priceFrom }} <span style="color:#6A6A74; font-size:14px;">· verified {{ p.verified }}</span></dd><dt style="color:#6A6A74;">Best for</dt><dd style="margin:0; color:#4A4A55;">{{ p.bestFor }}</dd></dl>
+                  <a href="#" style="display:flex; align-items:center; min-height:44px; margin-left:26px; font-size:15px; font-weight:500;">Read review →</a>
+                </li>
+              </sc-for>
+            </ol>
+          </div>
+          <p style="margin:24px 0 12px; font-size:16px; line-height:1.5; color:#4A4A55;">{{ disclosure }} <a href="#">How we make money →</a></p>
+
+          <div style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00; margin-bottom:8px;">m-ranked-card · #1 (editors-choice, affiliate)</div>
+          <article style="position:relative; background:#FFFFFF; border:1px solid #E6E4DF; border-radius:20px; padding:18px;">
+            <span aria-hidden="true" style="position:absolute; inset:-1px; border:1.5px solid #5B2BD9; border-radius:20px; pointer-events:none;"></span>
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;"><span aria-hidden="true" style="font-size:48px; font-weight:600; letter-spacing:-0.05em; line-height:0.9; color:#8A8790;">01</span><div role="img" aria-label="{{ first.aria }}" style="text-align:right;"><span aria-hidden="true" style="font-size:36px; font-weight:600; letter-spacing:-0.045em; line-height:1;">{{ first.scoreText }}</span><span aria-hidden="true" style="font-size:15px; color:#6A6A74;"> / 5</span><span aria-hidden="true" style="display:flex; gap:3px; margin-top:8px; width:120px; margin-left:auto;"><sc-for list="{{ first.segs }}" as="sg" hint-placeholder-count="5"><span style="flex:1; height:5px; border-radius:2px; background:#E6E4DF; overflow:hidden;"><span style="display:block; height:100%; width:{{ sg.w }}; background:#14141A;"></span></span></sc-for></span></div></div>
+            <span style="display:inline-flex; align-items:center; gap:6px; margin-top:14px; font-size:13px; font-weight:500; color:#FFFFFF; background:#14141A; padding:3px 10px; border-radius:999px;"><span aria-hidden="true" style="width:6px; height:6px; background:#FFFFFF; transform:rotate(45deg);"></span>Editor’s choice</span>
+            <div style="display:flex; align-items:center; gap:12px; margin-top:14px;"><img src="{{ first.logo }}" alt="" style="height:26px; width:auto; display:block;"><h2 style="margin:0; font-size:22px; font-weight:600; letter-spacing:-0.02em;">{{ first.name }}</h2></div>
+            <p style="margin:10px 0 14px; font-size:16px; line-height:1.5; color:#4A4A55;">One platform for document checks, liveness and AML screening.</p>
+            <dl style="margin:0 0 16px; display:grid; grid-template-columns:auto minmax(0,1fr); gap:6px 12px; font-size:15px;"><dt style="color:#6A6A74;">Coverage</dt><dd style="margin:0;">000 countries</dd><dt style="color:#6A6A74;">Fits</dt><dd style="margin:0;">Mid-market to enterprise</dd><dt style="color:#6A6A74;">Pricing</dt><dd style="margin:0;">Per check</dd></dl>
+            <div style="border:1px solid #EEECE7; border-radius:14px; padding:4px 14px; margin-bottom:10px;"><div style="font-size:15px; font-weight:600; padding:8px 0 4px;">+ Pros</div><sc-for list="{{ firstPros }}" as="x" hint-placeholder-count="3"><div style="padding:8px 0; border-top:1px solid #EEECE7; font-size:16px; line-height:1.45;">{{ x }}</div></sc-for></div>
+            <div style="border:1px solid #EEECE7; border-radius:14px; padding:4px 14px; margin-bottom:16px;"><div style="font-size:15px; font-weight:600; padding:8px 0 4px;">− Cons</div><sc-for list="{{ firstCons }}" as="x" hint-placeholder-count="3"><div style="padding:8px 0; border-top:1px solid #EEECE7; font-size:16px; line-height:1.45;">{{ x }}</div></sc-for></div>
+            <div style="display:flex; flex-wrap:wrap; align-items:center; gap:6px 10px; padding-top:14px; border-top:1px solid #EEECE7; margin-bottom:14px; font-size:15px;"><span><span style="color:#6A6A74;">From</span> <strong style="font-weight:600;">$0.00 / check</strong></span><span style="color:#6A6A74; font-size:14px;">verified Mon YYYY</span><span style="display:inline-flex; align-items:center; gap:5px; font-size:13px; border:1px solid #D6D3CC; padding:1px 8px; border-radius:999px;"><span aria-hidden="true">◇</span>Vendor-stated</span></div>
+            <div style="display:flex; flex-direction:column; gap:8px;">
+              <a href="#" rel="sponsored nofollow noopener" style="display:flex; align-items:center; justify-content:center; height:48px; font-size:16px; font-weight:500; color:#FFFFFF; background:#14141A; border-radius:999px; text-decoration:none;">Visit site ↗</a>
+              <button type="button" style="align-self:flex-start; min-height:44px; display:flex; align-items:center; background:transparent; border:none; padding:0;"><span style="display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:500; color:#14141A; border:1px solid #9C988F; padding:3px 9px; border-radius:6px;"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6.5 9.5l3-3M7 4.5l1.2-1.2a2.6 2.6 0 013.7 3.7L10.7 8.2M9 11.5l-1.2 1.2a2.6 2.6 0 01-3.7-3.7l1.2-1.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>Affiliate link<span aria-hidden="true" style="color:#6A6A74;">ⓘ</span></span></button>
+              <a href="#" style="display:flex; align-items:center; justify-content:center; height:48px; box-sizing:border-box; font-size:16px; font-weight:500; color:#14141A; background:#FFFFFF; border:1px solid #D6D3CC; border-radius:999px; text-decoration:none;">Read full review</a>
+            </div>
+          </article>
+        </section>
+        <div aria-hidden="true" style="position:absolute; left:0; right:0; top:844px; border-top:1.5px dashed #5B2BD9; pointer-events:none;"><span style="position:absolute; right:10px; top:4px; font-family:'Geist Mono', monospace; font-size:11px; color:#5B2BD9; background:#F7F6F3; padding:0 4px;">screen 2 ↓</span></div>
+        <div aria-hidden="true" style="position:absolute; left:0; right:0; top:1688px; border-top:1.5px dashed #5B2BD9; pointer-events:none;"><span style="position:absolute; right:10px; top:4px; font-family:'Geist Mono', monospace; font-size:11px; color:#5B2BD9; background:#F7F6F3; padding:0 4px;">screen 3 ↓</span></div>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<section aria-label="Table patterns" style="padding:24px 64px 96px;">
+  <h2 style="margin:0 0 24px; font-size:26px; letter-spacing:-0.03em; font-weight:600;">5 · Table patterns</h2>
+  <div style="display:flex; gap:40px; align-items:flex-start; flex-wrap:wrap;">
+
+    <figure style="margin:0; display:flex; flex-direction:column; gap:10px;">
+      <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9;">m-capability-matrix · sticky first column + swipe</figcaption>
+      <div style="width:390px; box-sizing:border-box; background:#F7F6F3; border:1px solid #D6D3CC; border-radius:28px; padding:24px 16px;">
+        <h3 style="margin:0 0 6px; font-size:24px; letter-spacing:-0.03em; font-weight:600;">Capabilities by use case</h3>
+        <p style="margin:0 0 12px; font-size:13px; font-weight:500; color:#6B4A00; background:#FFF3D1; border:1px dashed #D9A93A; padding:5px 9px; border-radius:6px; display:inline-block;">Sample verdicts · {use_cases[].verdict}</p>
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px; font-size:15px; color:#4A4A55;"><svg width="22" height="14" viewBox="0 0 22 14" fill="none" aria-hidden="true"><path d="M1 7h18M14 2l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>Swipe to see all 5 use cases</div>
+        <div style="position:relative; background:#FFFFFF; border:1px solid #E6E4DF; border-radius:16px; overflow:hidden;">
+          <div role="region" aria-label="Capability matrix, scrolls sideways" tabindex="0" style="overflow-x:auto; overflow-y:hidden; scrollbar-width:thin; padding-bottom:6px;">
+            <table style="border-collapse:separate; border-spacing:0; min-width:640px; font-size:15px;">
+              <thead><tr style="text-align:left; font-size:13px; color:#6A6A74;"><th scope="col" style="position:sticky; left:0; z-index:2; background:#FFFFFF; font-weight:500; padding:12px 14px; width:116px; border-right:1px solid #E6E4DF; box-shadow:6px 0 10px -6px rgba(20,20,26,0.15);">Provider</th><sc-for list="{{ matrixCols }}" as="c" hint-placeholder-count="5"><th scope="col" style="font-weight:500; padding:12px 14px; white-space:nowrap;">{{ c }}</th></sc-for></tr></thead>
+              <tbody>
+                <sc-for list="{{ matrix }}" as="r" hint-placeholder-count="5">
+                  <tr><th scope="row" style="position:sticky; left:0; z-index:1; background:#FFFFFF; text-align:left; font-weight:500; padding:12px 14px; border-top:1px solid #EEECE7; border-right:1px solid #E6E4DF; box-shadow:6px 0 10px -6px rgba(20,20,26,0.15); white-space:nowrap;">{{ r.name }}</th><sc-for list="{{ r.cells }}" as="c" hint-placeholder-count="5"><td style="padding:12px 14px; border-top:1px solid #EEECE7; white-space:nowrap;"><span aria-hidden="true" style="font-size:11px; letter-spacing:1px; margin-right:5px;">{{ c.dots }}</span>{{ c.v }}</td></sc-for></tr>
+                </sc-for>
+              </tbody>
+            </table>
+          </div>
+          <span aria-hidden="true" style="position:absolute; top:0; right:0; bottom:0; width:36px; background:linear-gradient(90deg, rgba(255,255,255,0), #FFFFFF); pointer-events:none;"></span>
+        </div>
+        <div style="display:flex; gap:6px; justify-content:center; margin-top:10px;" aria-hidden="true"><span style="width:18px; height:4px; border-radius:2px; background:#14141A;"></span><span style="width:6px; height:4px; border-radius:2px; background:#BDB9B0;"></span><span style="width:6px; height:4px; border-radius:2px; background:#BDB9B0;"></span></div>
+        <p style="margin:12px 0 0; font-size:14px; line-height:1.5; color:#4A4A55;">Only the table scrolls — the page never does. First column stays pinned with a soft edge shadow; the right fade + arrow hint disappear once scrolled to the end.</p>
+      </div>
+    </figure>
+
+    <figure style="margin:0; display:flex; flex-direction:column; gap:10px;">
+      <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9;">m-vs-table · two columns, criterion above each pair</figcaption>
+      <div style="width:390px; box-sizing:border-box; background:#F7F6F3; border:1px solid #D6D3CC; border-radius:28px; padding:24px 16px;">
+        <h3 style="margin:0 0 14px; font-size:24px; letter-spacing:-0.03em; font-weight:600;">Jumio vs Onfido — side by side</h3>
+        <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:16px; overflow:hidden;">
+          <div style="display:grid; grid-template-columns:1fr 1fr; border-bottom:1px solid #E6E4DF;"><div style="display:flex; align-items:center; justify-content:center; height:56px; border-right:1px solid #EEECE7;"><img src="logos/jumio.png" alt="Jumio" style="height:20px; width:auto; display:block;"></div><div style="display:flex; align-items:center; justify-content:center; height:56px;"><img src="logos/onfido.png" alt="Onfido" style="height:20px; width:auto; display:block;"></div></div>
+          <sc-for list="{{ vsRows }}" as="r" hint-placeholder-count="10">
+            <div style="border-top:1px solid #EEECE7;">
+              <div style="padding:10px 14px 2px; font-size:14px; font-weight:500; color:#4A4A55;">{{ r.k }}<sc-if value="{{ r.hasW }}" hint-placeholder-val="{{ false }}"><span style="font-weight:400; color:#6A6A74;"> · {{ r.w }}%</span></sc-if></div>
+              <div style="display:grid; grid-template-columns:1fr 1fr;">
+                <div style="padding:6px 14px 12px; background:{{ r.aBg }}; font-size:16px; font-weight:{{ r.aW }}; font-variant-numeric:tabular-nums; border-right:1px solid #EEECE7;">{{ r.aMark }}{{ r.a }}<sc-if value="{{ r.hasEv }}" hint-placeholder-val="{{ false }}"><div style="margin-top:6px;"><span style="display:inline-flex; gap:5px; font-size:12px; font-weight:400; border:1px solid #D6D3CC; padding:0 7px; border-radius:999px;"><span aria-hidden="true">{{ r.evA.icon }}</span>{{ r.evA.label }}</span></div></sc-if></div>
+                <div style="padding:6px 14px 12px; background:{{ r.bBg }}; font-size:16px; font-weight:{{ r.bW }}; font-variant-numeric:tabular-nums;">{{ r.bMark }}{{ r.b }}<sc-if value="{{ r.hasEv }}" hint-placeholder-val="{{ false }}"><div style="margin-top:6px;"><span style="display:inline-flex; gap:5px; font-size:12px; font-weight:400; border:1px solid #D6D3CC; padding:0 7px; border-radius:999px;"><span aria-hidden="true">{{ r.evB.icon }}</span>{{ r.evB.label }}</span></div></sc-if></div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+        <p style="margin:12px 0 0; font-size:14px; line-height:1.5; color:#4A4A55;">▸ + bold + soft violet tint marks the stronger side (reads in grayscale). Logos stay pinned as a header row while scrolling the page.</p>
+      </div>
+    </figure>
+  </div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { footer: 0, faq: 0, tip: 'affiliate', qf: false };
+  componentDidMount() { if (!window.BV) { this._on = () => this.forceUpdate(); window.addEventListener('bv-data-ready', this._on); } }
+  componentWillUnmount() { if (this._on) window.removeEventListener('bv-data-ready', this._on); }
+  renderVals() {
+    const D = window.BV;
+    if (!D) return {};
+    const st = this.state, m = D.meta;
+    const segs = (s) => [0, 1, 2, 3, 4].map((i) => ({ w: Math.max(0, Math.min(1, s - i)) * 100 + '%' }));
+    const fmt = (p) => ({ name: p.name, logo: p.logo, scoreText: p.score.toFixed(1), aria: p.score.toFixed(1) + ' out of 5', segs: segs(p.score), bestFor: p.bestFor, reason: p.reason });
+    const top = (id) => D.editorialTop.find((p) => p.id === id);
+    const EV = { ind: { icon: '◆', label: 'Independent' }, ven: { icon: '◇', label: 'Vendor-stated' }, usr: { icon: '●', label: 'User-reported' }, hand: { icon: '▲', label: 'Hands-on' } };
+    const qp = D.quickPicks.map((q, i) => ({ ...fmt(q), label: q.label, isTop: i === 0, notTop: i !== 0, line: i === 0 ? 'transparent' : '#EEECE7' }));
+    const tags = (p) => (p.uc || []).map((u) => D.tagNames[u]).join(' · ');
+    const cards = [
+      { ...fmt(top('sumsub')), rankText: '01', editors: true, hasLogo: true, noLogo: false, tags: tags(top('sumsub')) },
+      { ...fmt(top('onfido')), rankText: '03', editors: false, hasLogo: true, noLogo: false, tags: tags(top('onfido')) },
+      { ...fmt(top('feedzai')), logo: '', rankText: '05', editors: false, hasLogo: false, noLogo: true, tags: tags(top('feedzai')) },
+    ];
+    const FG = [['Use cases', D.useCases.map((u) => u.name)], ['Regions', D.regions.filter((r) => r.page).map((r) => r.name)], ['Providers A–Z', D.reviewed.slice(0, 6).map((r) => r.name).concat(['All providers →'])], ['Company', ['About', 'Methodology', 'How we make money', 'Contact', 'For providers']], ['Legal', ['Privacy', 'Terms']]];
+    const TIPS = { affiliate: 'We earn a commission if you sign up through this link. It never affects scores or ranking.', paid: 'The provider paid for this link. It never affects scores or ranking.' };
+    const ctas = ['affiliate', 'paid', 'none'].map((type) => ({ type, label: 'm-cta-row · ' + type + (type === 'affiliate' ? ' (tag tapped)' : ''), hasBtn: type !== 'none', isAff: type === 'affiliate', isPaid: type === 'paid', isNone: type === 'none', open: st.tip === type, tip: TIPS[type] || '', tipId: 'm-tip-' + type, toggle: () => this.setState((s) => ({ tip: s.tip === type ? null : type })) }));
+    const faqRaw = [['How much does Onfido cost?', 'Onfido doesn’t publish a rate card. Pricing is custom and volume-based, quoted by Entrust’s sales team.'], ['Who owns Onfido?', 'Entrust, since April 9, 2024.'], ['Does Onfido do AML screening?', 'Watchlist screening is a separate module; there’s no ongoing transaction monitoring.']];
+    const SAMPLE = [['sumsub', '$0.00 / check'], ['onfido', 'Sales quote only'], ['kycaid', '$0.00 / mo'], ['trulioo', '$0.00 / check'], ['jumio', 'Sales quote only']];
+    const ranked = SAMPLE.map(([id, priceFrom], i) => ({ ...fmt(top(id)), rank: i + 1, rankText: String(i + 1).padStart(2, '0'), editors: i === 0, priceFrom, verified: 'Mon YYYY' }));
+    const V = { Strong: '●●●', Adequate: '●●○', Limited: '●○○', 'Not offered': '○○○' };
+    const MX = { sumsub: ['Strong', 'Strong', 'Strong', 'Adequate', 'Strong'], onfido: ['Strong', 'Limited', 'Adequate', 'Strong', 'Not offered'], kycaid: ['Strong', 'Adequate', 'Adequate', 'Adequate', 'Strong'], trulioo: ['Strong', 'Strong', 'Adequate', 'Limited', 'Limited'], jumio: ['Strong', 'Limited', 'Adequate', 'Strong', 'Limited'] };
+    const J = top('jumio'), O = top('onfido'), S = '#F3F0FC';
+    const row = (k, a, b, o) => { o = o || {}; const win = o.win; return { k, a, b, w: o.w, hasW: !!o.w, hasEv: !!o.ev, evA: o.ev ? o.ev[0] : EV.ven, evB: o.ev ? o.ev[1] : EV.ven, aBg: win === 'a' ? S : '#FFFFFF', bBg: win === 'b' ? S : '#FFFFFF', aW: win === 'a' ? 600 : 400, bW: win === 'b' ? 600 : 400, aMark: win === 'a' ? '▸ ' : '', bMark: win === 'b' ? '▸ ' : '' }; };
+    const subs = ['a', 'b', null, 'b', 'a', null];
+    const vsRows = [
+      row('BeVerified score', J.score.toFixed(1), O.score.toFixed(1), { win: O.score > J.score ? 'b' : 'a' }),
+      ...D.rubric.map((r, i) => { const w = subs[i]; return row(r.name, w === 'b' ? '3.0' : '4.0', w === 'a' ? '3.0' : '4.0', { w: r.weight, win: w }); }),
+      row('Starting price', 'Sales quote only', 'Sales quote only', { ev: [EV.ven, EV.ven] }),
+      row('Founded', 'YYYY', '2012', { ev: [EV.ind, EV.ind] }),
+      row('Owner', '{owner}', 'Entrust (since 2024)', { ev: [EV.ind, EV.ind] }),
+    ];
+    const navLabels = ['Verdict', 'Score', 'Use cases', 'Pricing', 'Ownership', 'Certifications', 'Hands-on test', 'Pros & cons', 'User ratings', 'Alternatives', 'FAQ', 'Sources'];
+    const evB = [EV.ind, EV.hand, EV.ven, EV.hand, EV.ven, EV.ind];
+    return {
+      disclosure: m.disclosure, lastVerified: m.lastVerified, methodologyVersion: m.methodologyVersion,
+      menu: ['Use cases', 'Regions', 'Reviews', 'Blog'],
+      footerGroups: FG.map(([name, links], i) => ({ name, links, open: st.footer === i, icon: st.footer === i ? '−' : '+', onToggle: () => this.setState({ footer: st.footer === i ? -1 : i }) })),
+      cards, qp, qpTwo: qp.slice(0, 2), segs46: segs(4.6),
+      ev: [EV.ind, EV.ven, EV.usr, EV.hand],
+      chips: [{ g: '●', label: 'Onfido' }, { g: '▤', label: 'Liveness Detection' }, { g: '◎', label: 'Brazil' }, { g: '§', label: 'FATF Travel Rule' }, { g: '■', label: 'Entrust' }],
+      ctas,
+      faqs: faqRaw.map(([q, a], i) => ({ q, a, open: st.faq === i, icon: st.faq === i ? '−' : '+', onToggle: () => this.setState({ faq: st.faq === i ? -1 : i }) })),
+      posts: [
+        { type: 'Guide', title: 'How much does KYC cost per check in 2026?', excerpt: 'Per-check, monthly and annual models compared, with the published prices we verified.', chips: [{ g: '#', label: 'Per-check pricing' }, { g: '●', label: 'Sumsub' }, { g: '●', label: 'KYCAID' }], cover: false },
+        { type: 'News', title: 'Entrust completes Onfido acquisition: what it means for KYC buyers', excerpt: 'Contracts, product names and roadmap after the April 2024 deal.', chips: [{ g: '●', label: 'Onfido' }, { g: '■', label: 'Entrust' }], cover: true },
+      ],
+      strip: D.editorialTop.map((p) => ({ name: p.name, logo: p.logo })),
+      shortAnswer: 'Onfido, now Entrust Identity Verification, suits regulated fintechs and marketplaces that need document and selfie checks with mature liveness detection. The trade-off: AML screening is a separate module and there’s no transaction monitoring, so most teams add a second vendor. No public rate card; third-party estimates are labelled as such below.',
+      quickFacts: [['From price', 'Not published', EV.ven], ['Pricing model', 'Sales quote', EV.ven], ['Founded', '2012', EV.ind], ['HQ', 'London, UK', EV.ind], ['Owner', 'Entrust', EV.ind], ['Coverage', '000 countries · 0,000 docs', EV.ven], ['Certifications', '0 confirmed', EV.ind], ['Last verified', m.lastVerified, EV.hand]].map(([k, v, ev]) => ({ k, v, ev })),
+      qfCount: 8, qfOpen: st.qf, qfClosed: !st.qf, qfIcon: st.qf ? '−' : '+', toggleQf: () => this.setState({ qf: !st.qf }),
+      navPills: navLabels.map((label, i) => ({ label, color: i === 0 ? '#FFFFFF' : '#14141A', bg: i === 0 ? '#14141A' : '#FFFFFF', border: i === 0 ? '#14141A' : '#E0DDD6' })),
+      breakdown: D.rubric.map((r, i) => ({ name: r.name, weight: r.weight, has: i !== 4, none: i === 4, ev: evB[i], line: i === 0 ? 'transparent' : '#EEECE7' })),
+      count: ranked.length, ranked, first: ranked[0],
+      firstPros: ['Document, selfie and AML in one flow', 'No-code workflow builder', 'Published entry pricing'],
+      firstCons: ['Per-check cost adds up at volume', 'Advanced fraud tools cost extra', 'Limited on-premise option'],
+      matrixCols: ['KYC onboarding', 'KYB', 'AML', 'Fraud & deepfakes', 'Crypto'],
+      matrix: Object.keys(MX).map((id) => ({ name: top(id).name.replace(' by Entrust', ''), cells: MX[id].map((v) => ({ v, dots: V[v] })) })),
+      vsRows,
+    };
+  }
+}
+</script>
+</body>
+</html>

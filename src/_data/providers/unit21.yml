@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/unit21.jpg
   background: '#6F3EE0'
+  wordmark: null
 tagline: Agentic AI platform that runs full fraud and AML investigations, not just alerts
 score: 4.6
 grade: Great
@@ -21,9 +22,6 @@ link:
   url: https://www.unit21.ai
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-28'
 verdict: 'Unit21''s newer AI Suite goes further than most fraud/AML tools: its agents execute the investigation lifecycle end-to-end — ingesting alerts, analyzing entity networks, and drafting regulator-ready narratives — rather than just summarizing cases for a human analyst. That ambition is backed by real customers (Chime, Green Dot, Sallie Mae), though pricing is enterprise-only and not published.'
 what_is:
@@ -125,8 +123,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://www.unit21.ai
+  - https://www.linkedin.com/company/unit21
+  - https://www.crunchbase.com/organization/unit21
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure above directly against Unit21's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

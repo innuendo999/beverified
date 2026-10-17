@@ -1,0 +1,327 @@
+---
+layout: v3.njk
+---
+{#- Provider review page. Design: design/Review Page V3 - Onfido (Desktop).dc.html
+    Data: src/_data/providers/<slug>.yml. Blocks without data are not rendered. -#}
+{%- set ev = site.v3.evidence -%}
+{%- set ranked = p.slug | rankedIn(rankings, categories) -%}
+{%- set best = ranked[0] -%}
+{%- set hasBreakdown = p.score_breakdown and p.score_breakdown.length -%}
+
+<div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="/">Home</a></li><li class="sep" aria-hidden="true">›</li>
+      <li><a href="/providers/">Reviews</a></li><li class="sep" aria-hidden="true">›</li>
+      <li aria-current="page">{{ p.name }}</li>
+    </ol>
+  </nav>
+
+  <section class="review-hero" aria-labelledby="h1">
+    <div>
+      <div class="review-hero__brand">
+        {%- if p.logo.wordmark %}
+        <img class="wordmark" src="{{ p.logo.wordmark }}" alt="{{ p.name }} logo">
+        {%- else %}
+        <span class="wordmark-text">{{ p.name }}</span>
+        {%- endif %}
+        {%- if p.alternate_names and p.alternate_names.length %}<span>now {{ p.alternate_names[0] }}</span>{% endif %}
+      </div>
+      <h1 id="h1" class="h-display">{{ p.seo.h1 or (p.name + " Review") }}</h1>
+      <div class="review-hero__tags">
+        {%- if p.best_for %}<span class="pill">Best for&nbsp;·&nbsp;{{ p.best_for }}</span>{% endif %}
+        {%- if best %}<a href="{{ best.url }}">Ranked #{{ best.pos }} in {{ best.title }} →</a>{% endif %}
+        {%- if p.hands_on %}<span class="pill pill--dark"><span aria-hidden="true">▲</span>Manually tested</span>{% endif %}
+      </div>
+      <div class="byline">
+        {%- if author %}
+        <div class="byline__author">
+          <img class="avatar" src="{{ author.photo }}" alt="">
+          <span>By {% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}<strong style="font-weight:500;color:var(--ink)">{{ author.name }}</strong>{% endif %}</span>
+        </div>
+        {%- endif %}
+        {%- if p.last_verified %}
+        {%- if author %}<span class="dot" aria-hidden="true">·</span>{% endif %}
+        <span><span class="tick" aria-hidden="true">✓</span> Last verified <time datetime="{{ p.last_verified }}">{{ p.last_verified | displayDate }}</time></span>
+        {%- endif %}
+      </div>
+    </div>
+    {%- if p.score != null %}
+    <div class="score-card" role="img" aria-label="BeVerified score {{ p.score | score1 }} out of 5{% if p.grade %}, {{ p.grade }}{% endif %}">
+      <div class="score-card__label">BeVerified score</div>
+      <div class="score-card__value" aria-hidden="true">
+        <span class="score-card__num">{{ p.score | score1 }}</span><span class="score-card__of">/ 5</span>
+        {%- if p.grade %}<span class="score-card__grade">{{ p.grade }}</span>{% endif %}
+      </div>
+      <div class="meter" aria-hidden="true">{% for w in (p.score | meter) %}<span><i style="width:{{ w }}%"></i></span>{% endfor %}</div>
+      {%- if hasBreakdown %}<div class="score-card__foot"><a href="#score">See breakdown ↓</a></div>{% endif %}
+    </div>
+    {%- endif %}
+  </section>
+
+  {%- if p.verdict %}
+  <section class="short-answer" aria-label="Short answer"><p>{{ p.verdict }}</p></section>
+  {%- endif %}
+
+  <div class="cta-block">
+    {%- if p.link.url %}
+    <p class="disclosure-line">{{ site.v3.disclosure }} <a href="{{ site.v3.disclosureHref }}">How we make money →</a></p>
+    {%- endif %}
+    <div class="cta-row">
+      {%- if p.link.url %}<a class="btn btn--primary" href="{{ p.link.url }}" rel="sponsored nofollow noopener" target="_blank">Visit site <span aria-hidden="true">↗</span></a>{% endif %}
+      {%- if alts.length %}<a class="btn btn--secondary" href="#alternatives">See alternatives</a>{% endif %}
+    </div>
+  </div>
+</div>
+
+<nav class="page-nav" aria-label="On this page">
+  <div class="page-nav__inner">{% for n in navItems %}<a class="pill-link" href="#{{ n[0] }}">{{ n[1] }}</a>{% endfor %}</div>
+</nav>
+
+<div class="review-body">
+<main id="main" class="review-main">
+
+  <section id="what-is" aria-labelledby="what-is-h">
+    <h2 id="what-is-h" class="h-section">What is {{ p.name }}?</h2>
+    <div class="prose">{% for para in p.what_is %}<p>{{ para }}</p>{% endfor %}</div>
+  </section>
+
+  {%- if hasBreakdown %}
+  <section id="score" aria-labelledby="score-h">
+    <h2 id="score-h" class="h-section h-section--tight">Score breakdown</h2>
+    <p class="section-lede">{{ site.v3.rubric.length }} weighted criteria from <a href="{{ site.v3.methodologyHref }}">our methodology {{ site.v3.methodologyVersion }}</a>.</p>
+    <div class="card">
+      <div class="row row--head"><span style="flex:1 1 180px">Criterion · weight</span><span style="flex:1 1 160px">Sub-score</span><span>Evidence</span></div>
+      {%- for b in p.score_breakdown %}
+      <div class="row">
+        <span class="crit"><span>{{ b.criterion }}</span><span>{{ b.weight }}%</span></span>
+        {%- if b.score != null %}
+        <span class="crit-score" role="img" aria-label="{{ b.criterion }} {{ b.score | score1 }} out of 5"><span class="bar" aria-hidden="true"><i style="width:{{ b.score * 20 }}%"></i></span><b aria-hidden="true">{{ b.score | score1 }}</b></span>
+        {%- else %}
+        <span class="not-scored"><span>Not publicly disclosed — not scored</span></span>
+        {%- endif %}
+        {%- if b.evidence and ev[b.evidence] %}<span class="evidence"><span aria-hidden="true">{{ ev[b.evidence].icon }}</span>{{ ev[b.evidence].label }}</span>{% endif %}
+      </div>
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endif %}
+
+  {%- if p.use_case_verdicts and p.use_case_verdicts.length %}
+  {%- set dots = { "Strong": "●●●", "Adequate": "●●○", "Limited": "●○○", "Not offered": "○○○" } %}
+  <section id="use-cases" aria-labelledby="uc-h">
+    <h2 id="uc-h" class="h-section">{{ p.name }} for…</h2>
+    <div class="card">
+      {%- for u in p.use_case_verdicts %}
+      <div class="row">
+        <span class="verdict-name">{{ u.use_case }}</span>
+        <span class="verdict-level"><i aria-hidden="true">{{ dots[u.verdict] }}</i>{{ u.verdict }}</span>
+        <span class="verdict-reason">{{ u.reason }}</span>
+        {%- if u.evidence and ev[u.evidence] %}<span class="evidence"><span aria-hidden="true">{{ ev[u.evidence].icon }}</span>{{ ev[u.evidence].label }}</span>{% endif %}
+        {%- if u.source %}<a class="src-ref--inline" style="font-size:12px" href="#src-{{ u.source }}" aria-label="Source {{ u.source }}">[{{ u.source }}]</a>{% endif %}
+      </div>
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endif %}
+
+  <section id="pricing" aria-labelledby="pr-h">
+    <div class="price-head">
+      <h2 id="pr-h" class="h-section">Pricing</h2>
+      {%- if p.pricing.verified %}<span>Pricing verified: <strong>{{ p.pricing.verified | displayDate }}</strong></span>{% endif %}
+    </div>
+    {%- if p.pricing.summary %}<div class="prose" style="margin-bottom:20px"><p>{{ p.pricing.summary }}</p></div>{% endif %}
+    {%- set official = pricingOfficial %}{% set estimates = pricingEstimates %}
+    {%- if official.length or estimates.length %}
+    <div class="price-grid">
+      {%- if official.length %}
+      <div class="card card--strong price-block">
+        <div class="price-block__head"><span>Official information</span><span class="evidence"><span aria-hidden="true">{{ ev.vendor.icon }}</span>{{ ev.vendor.label }}</span></div>
+        {%- for i in official %}<div class="kv"><span>{{ i.label }}</span><span>{{ i.value }}{% if i.source %} <a href="#src-{{ i.source }}" style="font-size:12px">[{{ i.source }}]</a>{% endif %}</span></div>{% endfor %}
+      </div>
+      {%- endif %}
+      {%- if estimates.length %}
+      <div class="card card--sunk price-block">
+        <div class="price-block__head"><span>Third-party estimates</span><span style="font-weight:400;font-size:13px;color:var(--body)">Not official</span></div>
+        {%- for e in estimates %}
+        <div style="padding:10px 0;border-top:1px solid var(--line-mid)">
+          <div style="display:flex;justify-content:space-between;gap:12px;font-size:15px"><span class="num" style="font-weight:600">{{ e.value }}</span>{% if e.source %}<a href="#src-{{ e.source }}" style="font-size:12px">[{{ e.source }}]</a>{% endif %}</div>
+          <div style="font-size:14px;color:var(--body);margin-top:2px">{{ e.label }}{% if e.verified %} · checked {{ e.verified | displayDate }}{% endif %}</div>
+        </div>
+        {%- endfor %}
+      </div>
+      {%- endif %}
+    </div>
+    {%- elif p.pricing.plans and p.pricing.plans.length %}
+    <div class="plans">
+      {%- for pl in p.pricing.plans %}
+      <div class="card plan">
+        {%- if pl.tier %}<div class="plan__tier">{{ pl.tier }}</div>{% endif %}
+        <div class="plan__price">{{ pl.price }}</div>
+        {%- if pl.note %}<p>{{ pl.note }}</p>{% endif %}
+        {%- if pl.extra %}<p style="margin-top:6px">{{ pl.extra }}</p>{% endif %}
+      </div>
+      {%- endfor %}
+    </div>
+    {%- endif %}
+  </section>
+
+  {%- if p.certifications and p.certifications.length %}
+  <section id="certifications" aria-labelledby="cert-h">
+    <h2 id="cert-h" class="h-section h-section--tight">Certifications &amp; independent tests</h2>
+    <p class="section-lede">“Confirmed” means we found the certificate or register entry ourselves.</p>
+    <div class="card">
+      {%- for c in p.certifications %}
+      <div class="row">
+        <div class="cert-name"><div>{{ c.name }}</div>{% if c.what %}<div>{{ c.what }}</div>{% endif %}</div>
+        {%- if c.status == "confirmed" %}<span class="status status--ok"><span aria-hidden="true">✓</span>Confirmed</span>
+        {%- elif c.status == "vendor_stated" %}<span class="status"><span aria-hidden="true">◇</span>Vendor-stated</span>
+        {%- else %}<span class="status status--none"><span aria-hidden="true">–</span>Not found</span>{% endif %}
+        {%- if c.source %}<a style="font-size:14px" href="#src-{{ c.source }}">{% if c.status == "confirmed" %}View record{% else %}Vendor claim{% endif %} [{{ c.source }}]</a>{% endif %}
+      </div>
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endif %}
+
+  {%- if p.hands_on %}
+  <section id="hands-on" aria-labelledby="ho-h">
+    <h2 id="ho-h" class="h-section">Hands-on test</h2>
+    <div class="card">
+      <div class="row"><span>Tested {{ p.hands_on.date | displayDate }}</span>{% if p.hands_on.median_time %}<span>Median time to verify: <strong class="num">{{ p.hands_on.median_time }}</strong></span>{% endif %}</div>
+      {%- for s in p.hands_on.steps %}
+      <div class="row"><span style="flex:1">{{ s.name }}</span>{% if s.pass %}<span class="status status--ok"><span aria-hidden="true">✓</span>Pass</span>{% else %}<span class="status" style="color:var(--bad)"><span aria-hidden="true">✕</span>Fail</span>{% endif %}</div>
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endif %}
+
+  {%- if p.features and p.features.length %}
+  <section id="features" aria-labelledby="ft-h">
+    <h2 id="ft-h" class="h-section">Key features</h2>
+    <ul class="features">{% for f in p.features %}<li><span>{{ f }}</span></li>{% endfor %}</ul>
+  </section>
+  {%- endif %}
+
+  <section id="pros-cons" aria-labelledby="pc-h">
+    <h2 id="pc-h" class="h-section">Pros &amp; cons</h2>
+    <div class="grid-2">
+      <div class="card card--pad">
+        <h3 class="pc-head"><span class="pc-icon pc-icon--pro" aria-hidden="true">+</span>Pros</h3>
+        {%- for t in p.pros %}<div class="list-row"><span>{{ t }}</span></div>{% endfor %}
+      </div>
+      <div class="card card--pad">
+        <h3 class="pc-head"><span class="pc-icon pc-icon--con" aria-hidden="true">−</span>Cons</h3>
+        {%- for t in p.cons %}<div class="list-row"><span>{{ t }}</span></div>{% endfor %}
+      </div>
+    </div>
+  </section>
+
+  {%- set ur = p.user_reviews %}
+  {%- if (p.user_ratings and p.user_ratings.length) or (ur and ur.praise and ur.praise.length) %}
+  <section id="user-ratings" aria-labelledby="ur-h">
+    <h2 id="ur-h" class="h-section h-section--tight">User ratings</h2>
+    <p class="note-pill"><span aria-hidden="true">●</span>User ratings are not part of our score</p>
+    {%- if p.user_ratings and p.user_ratings.length %}
+    <div class="ratings-box" style="margin-bottom:14px">
+      {%- for r in p.user_ratings %}
+      <div class="row">
+        <span style="font-weight:500;flex:1 1 160px">{{ r.platform }}</span>
+        <span class="num">{{ r.rating }} <span style="color:var(--muted)">/ 5</span></span>
+        {%- if r.count %}<span class="num" style="color:var(--body)">{{ r.count }} reviews</span>{% endif %}
+        {%- if r.checked %}<span style="color:var(--body);font-size:14px">checked {{ r.checked | displayDate }}</span>{% endif %}
+        {%- if r.url %}<a href="{{ r.url }}" rel="noopener" target="_blank" style="font-size:14px">Open ↗</a>{% endif %}
+      </div>
+      {%- endfor %}
+    </div>
+    {%- endif %}
+    {%- if ur and ur.praise and ur.praise.length %}
+    <div class="grid-2">
+      <div class="card card--pad"><h3 class="card__title">What users praise</h3>{% for t in ur.praise %}<div class="theme-row">{{ t }}</div>{% endfor %}</div>
+      <div class="card card--pad"><h3 class="card__title">What users criticise</h3>{% for t in ur.criticize %}<div class="theme-row">{{ t }}</div>{% endfor %}</div>
+    </div>
+    {%- if ur.legacy_note %}<p style="font-size:13px;color:var(--muted);margin-top:10px">{{ ur.legacy_note }}</p>{% endif %}
+    {%- endif %}
+  </section>
+  {%- endif %}
+
+  {%- if alts.length %}
+  <section id="alternatives" aria-labelledby="alt-h">
+    <h2 id="alt-h" class="h-section">Alternatives</h2>
+    <div class="card">
+      {%- for x in alts %}
+      <a class="alt-row" href="/providers/{{ x.q.slug }}/">
+        {%- if x.q.logo.wordmark %}<img class="wordmark wordmark--sm" loading="lazy" src="{{ x.q.logo.wordmark }}" alt="{{ x.q.name }}">{% else %}<span class="wordmark-text wordmark-text--sm">{{ x.q.name }}</span>{% endif %}
+        <span class="alt-row__text"><strong>Choose {{ x.q.name }} instead</strong> if {{ x.text }}</span>
+        {%- if x.q.score != null %}<span class="score-inline" role="img" aria-label="{{ x.q.score | score1 }} out of 5">{{ x.q.score | score1 }} <small>/ 5</small></span>{% endif %}
+        <span class="alt-row__go">Read review →</span>
+      </a>
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endif %}
+
+  {%- if ranked.length %}
+  <section id="ranked-in" aria-labelledby="ri-h">
+    <h2 id="ri-h" class="h-section">Ranked in</h2>
+    <ul class="ranked-in grid-3">{% for r in ranked %}<li><a href="{{ r.url }}"><b>#{{ r.pos }}</b><span>{{ r.title }}</span></a></li>{% endfor %}</ul>
+  </section>
+  {%- endif %}
+
+  {%- if p.faq and p.faq.length %}
+  <section id="faq" aria-labelledby="faq-h">
+    <h2 id="faq-h" class="h-section" style="margin-bottom:12px">FAQ</h2>
+    <div class="faq">
+      {%- for f in p.faq %}
+      <details{% if loop.first %} open{% endif %}><summary><h3>{{ f.q }}</h3></summary><p>{{ f.a }}</p></details>
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endif %}
+
+  {%- if p.sources and p.sources.length %}
+  <section id="sources" aria-labelledby="src-h">
+    <h2 id="src-h" class="h-section">Sources</h2>
+    <ol class="sources">
+      {%- for s in p.sources %}
+      <li id="src-{{ loop.index }}"><span>[{{ loop.index }}]</span><span><a href="{{ s.url }}" rel="noopener">{{ s.title }}</a>{% if s.publisher %} <span style="color:var(--body)">— {{ s.publisher }}</span>{% endif %}</span><span>{% if s.accessed %}Accessed {{ s.accessed | displayDate }}{% endif %}</span></li>
+      {%- endfor %}
+    </ol>
+  </section>
+  {%- endif %}
+
+  {%- if author %}
+  <section class="card author-box" aria-label="About the author">
+    <img class="avatar avatar--lg" src="{{ author.photo }}" alt="{{ author.name }}">
+    <div>
+      <div class="author-box__name">{{ author.name }}</div>
+      <div class="author-box__role">{{ author.role }}</div>
+      <p>{{ author.bio }}</p>
+      <div class="author-box__meta">
+        {%- if author.url %}<a href="{{ author.url }}">Author profile →</a>{% endif %}
+        {%- if author.linkedin %}<a href="{{ author.linkedin }}" rel="noopener" target="_blank">LinkedIn ↗</a>{% endif %}
+        {%- if p.last_verified %}<span>Updated {{ p.last_verified | displayDate }}</span>{% endif %}
+      </div>
+    </div>
+  </section>
+  {%- endif %}
+</main>
+
+<aside class="review-aside" aria-label="Quick facts">
+  <div class="card" style="padding:6px 0">
+    <div style="padding:12px 20px 8px;font-size:15px;font-weight:600">Quick facts</div>
+    {%- for f in p.facts %}
+    <div class="fact">
+      <div class="fact__line"><span>{{ f.label }}</span><span>{{ f.value }}</span></div>
+      {%- if f.source and f.evidence and ev[f.evidence] %}<div class="fact__ev"><span class="evidence evidence--sm"><span aria-hidden="true">{{ ev[f.evidence].icon }}</span>{{ ev[f.evidence].label }}</span></div>{% endif %}
+    </div>
+    {%- endfor %}
+    {%- if p.last_verified %}<div class="fact"><div class="fact__line"><span>Last verified</span><span class="num">{{ p.last_verified | displayDate }}</span></div></div>{% endif %}
+    {%- if p.link.url %}
+    <div style="padding:12px 20px 14px;border-top:1px solid var(--line-soft)">
+      <a class="btn btn--primary btn--block" href="{{ p.link.url }}" rel="sponsored nofollow noopener" target="_blank">Visit site ↗</a>
+    </div>
+    {%- endif %}
+  </div>
+</aside>
+</div>

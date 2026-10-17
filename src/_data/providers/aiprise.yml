@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/aiprise.jpg
   background: '#8A5CF0'
+  wordmark: null
 tagline: Unified KYC/KYB API built for emerging markets, with an AI Compliance Copilot
 score: 4.4
 grade: Very Good
@@ -21,9 +22,6 @@ link:
   url: https://www.aiprise.com
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-29'
 verdict: AiPrise combines individual KYC and business KYB verification through one API, aimed at businesses onboarding customers across 200+ countries including many emerging markets. Its AI Compliance Copilot automates case review and enhanced due diligence report generation, though company details like exact HQ and founding year aren't consistently public.
 what_is:
@@ -125,8 +123,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://www.aiprise.com
+  - https://www.linkedin.com/company/aiprise
+  - https://www.crunchbase.com/organization/aiprise
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against AiPrise's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

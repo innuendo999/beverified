@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/hawkai.webp
   background: '#835AEB'
+  wordmark: null
 tagline: Explainable-AI transaction monitoring with a pattern-sharing network across institutions
 score: 4.6
 grade: Great
@@ -21,9 +22,6 @@ link:
   url: https://www.hawk.ai
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-29'
 verdict: Hawk (formerly HAWK:AI) built one of the earlier explainable-AI approaches to AML transaction monitoring, pairing rules with behavioral AI and a cross-institution pattern-sharing network that creates a network effect against novel crime patterns. Serving Tier-1 banks down to mid-market fintechs, it reports roughly 90% alert accuracy and 50–70% fewer false positives.
 what_is:
@@ -125,8 +123,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://www.hawk.ai
+  - https://www.linkedin.com/company/hawk-ai
+  - https://www.crunchbase.com/organization/hawk-ai
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against Hawk AI's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

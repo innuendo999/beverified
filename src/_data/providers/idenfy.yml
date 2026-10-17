@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/idenfy.png
   background: '#6A3FE8'
+  wordmark: null
 tagline: Pay-per-approved pricing — you only pay for verifications that pass
 score: 4.5
 grade: Very Good
@@ -21,9 +22,6 @@ link:
   url: https://www.idenfy.com
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-28'
 verdict: 'iDenfy''s pricing model is its headline feature: you pay only for approved verifications, with rejected checks billed at nothing — a genuinely unusual structure in a category dominated by per-attempt or subscription pricing. Add human review of every case and it''s a strong fit for cost-conscious fintech, crypto, and gaming teams, even if its brand scale trails category leaders.'
 what_is:
@@ -125,8 +123,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://www.idenfy.com
+  - https://www.linkedin.com/company/idenfy
+  - https://www.crunchbase.com/organization/idenfy
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against iDenfy's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

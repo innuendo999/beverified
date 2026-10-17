@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Topic | BeVerified</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+html, body { margin:0; background:#F7F6F3; color:#14141A; }
+body { font-family:'Geist', ui-sans-serif, system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
+a { color:#5B2BD9; text-decoration:none; }
+a:hover { color:#4A1FBF; text-decoration:underline; text-underline-offset:3px; }
+:focus-visible { outline:2px solid #5B2BD9; outline-offset:3px; border-radius:6px; }
+</style>
+<script src="./bv-data.js"></script>
+<script src="./bv-blog.js"></script>
+</helmet>
+<div style="background:#F7F6F3; color:#14141A; min-height:100vh; font-family:'Geist', ui-sans-serif, system-ui, sans-serif;">
+<header data-component="header" style="position:sticky; top:0; z-index:100; background:rgba(247,246,243,0.92); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:1px solid #E6E4DF;">
+  <div style="max-width:1200px; margin:0 auto; padding:0 32px; height:60px; display:flex; align-items:center; gap:40px;">
+    <a href="Homepage V3 - BeVerified (Desktop).dc.html" aria-label="BeVerified home" style="display:flex; align-items:center; gap:9px; text-decoration:none;"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="display:block;"><rect x="3" y="12" width="4.5" height="9" rx="1" fill="#14141A"></rect><rect x="9.75" y="8" width="4.5" height="13" rx="1" fill="#14141A"></rect><rect x="16.5" y="3" width="4.5" height="18" rx="1" fill="#5B2BD9"></rect></svg><span style="font-weight:600; font-size:17px; letter-spacing:-0.03em; color:#14141A;">BeVerified</span></a>
+    <nav aria-label="Primary" style="display:flex; gap:28px; flex:1;"><a href="Use Cases Hub V3 (Desktop).dc.html" style="font-size:15px; color:#4A4A55;">Use cases</a><a href="Regions Hub V3 (Desktop).dc.html" style="font-size:15px; color:#4A4A55;">Regions</a><a href="Providers Directory V3 (Desktop).dc.html" style="font-size:15px; color:#4A4A55;">Reviews</a><a href="Blog Index V3 (Desktop).dc.html" style="font-size:15px; color:#14141A; font-weight:500;">Blog</a></nav>
+    <a href="Homepage V3 - BeVerified (Desktop).dc.html#for-providers" style="font-size:15px; color:#14141A;">For providers</a>
+  </div>
+</header>
+
+<main style="max-width:1200px; margin:0 auto; padding:0 32px 96px;">
+  <nav data-component="breadcrumb" aria-label="Breadcrumb" style="padding:20px 0 0; font-size:14px; color:#4A4A55; display:flex; gap:8px;"><a href="Homepage V3 - BeVerified (Desktop).dc.html" style="color:#4A4A55;">Home</a><span aria-hidden="true" style="color:#9C988F;">›</span><a href="Blog Index V3 (Desktop).dc.html" style="color:#4A4A55;">Blog</a><span aria-hidden="true" style="color:#9C988F;">›</span><span aria-current="page" style="color:#14141A;">{{ name }}</span></nav>
+  <div style="display:flex; align-items:center; gap:10px; margin:28px 0 12px;"><span data-component="entity-chip" style="display:inline-flex; align-items:center; gap:6px; font-size:13px; background:#FFFFFF; border:1px solid #D6D3CC; padding:2px 10px; border-radius:999px;"><span aria-hidden="true" style="color:#6A6A74;">{{ glyph }}</span>{{ kind }}</span><code style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00;">{entity.type} {entity.slug}</code></div>
+  <h1 style="margin:0 0 14px; font-size:52px; line-height:1.03; letter-spacing:-0.045em; font-weight:600;">{{ name }}</h1>
+  <p style="margin:0 0 12px; font-size:18px; line-height:1.6; color:#4A4A55; max-width:760px;">{{ intro }}</p>
+  <sc-if value="{{ hasOwned }}" hint-placeholder-val="{{ false }}">
+    <a href="{{ ownedHref }}" style="display:inline-flex; align-items:center; gap:12px; margin-top:6px; background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:12px 16px; text-decoration:none; color:#14141A;" style-hover="border-color:#9C988F; text-decoration:none; color:#14141A;"><span style="font-size:14px; color:#4A4A55;">Owns</span><img src="logos/onfido.png" alt="Onfido" style="height:20px; width:auto; display:block;"><span style="font-size:14px; font-weight:500; color:#5B2BD9;">Read the Onfido review →</span></a>
+  </sc-if>
+
+  <sc-if value="{{ hasRankings }}" hint-placeholder-val="{{ true }}">
+    <section style="padding:56px 0 0;">
+      <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:14px;"><h2 style="margin:0; font-size:26px; letter-spacing:-0.03em; font-weight:600;">Related rankings</h2><code style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00;">{related_rankings[]} ← {entities[]}</code></div>
+      <div style="display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:12px;">
+        <sc-for list="{{ rankings }}" as="r" hint-placeholder-count="3"><a href="{{ r.href }}" data-component="related-category-card" style="display:flex; flex-direction:column; background:#FFFFFF; border:1px solid #E6E4DF; border-radius:16px; padding:18px; text-decoration:none; color:#14141A;" style-hover="border-color:#9C988F; text-decoration:none; color:#14141A;"><span style="font-size:17px; font-weight:600; margin-bottom:6px;">{{ r.name }}</span><span style="font-size:14px; line-height:1.45; color:#4A4A55; margin-bottom:14px;">{{ r.def }}</span><span style="margin-top:auto; font-size:14px; font-weight:500; color:#5B2BD9;">See all {{ r.count }} providers →</span></a></sc-for>
+      </div>
+    </section>
+  </sc-if>
+
+  <sc-if value="{{ hasProviders }}" hint-placeholder-val="{{ true }}">
+    <section style="padding:48px 0 0;">
+      <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:14px;"><h2 style="margin:0; font-size:26px; letter-spacing:-0.03em; font-weight:600;">Providers involved</h2><code style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00;">{providers_involved[]} ← {entities[]} where type = provider</code></div>
+      <div data-component="mentioned-provider" style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:16px;">
+        <sc-for list="{{ providers }}" as="m" hint-placeholder-count="3">
+          <div style="border-top:1px solid #EEECE7;">
+            <sc-if value="{{ m.reviewed }}" hint-placeholder-val="{{ true }}"><a href="{{ m.href }}" style="display:flex; flex-wrap:wrap; align-items:center; gap:8px 18px; padding:13px 18px; text-decoration:none; color:#14141A;" style-hover="background:#FBFAF8; text-decoration:none; color:#14141A;"><span style="flex:0 0 130px; display:flex;"><sc-if value="{{ m.hasLogo }}" hint-placeholder-val="{{ false }}"><img loading="lazy" src="{{ m.logo }}" alt="{{ m.name }}" style="height:20px; width:auto; max-width:120px; object-fit:contain; display:block;"></sc-if><sc-if value="{{ m.noLogo }}" hint-placeholder-val="{{ true }}"><span style="font-size:16px; font-weight:700; letter-spacing:-0.03em;">{{ m.name }}</span></sc-if></span><span style="flex:1 1 200px; font-size:14px; color:#4A4A55;">Best for {{ m.bestFor }}</span><span style="font-size:16px; font-weight:600; font-variant-numeric:tabular-nums;">{{ m.scoreText }} <span style="font-size:13px; font-weight:400; color:#6A6A74;">/ 5</span></span><span style="font-size:14px; font-weight:500; color:#5B2BD9;">Read review →</span></a></sc-if>
+            <sc-if value="{{ m.coming }}" hint-placeholder-val="{{ false }}"><div style="display:flex; flex-wrap:wrap; align-items:center; gap:8px 18px; padding:13px 18px;"><span style="flex:0 0 130px; font-size:16px; font-weight:700; letter-spacing:-0.03em;">{{ m.name }}</span><span style="flex:1 1 200px; font-size:14px; color:#4A4A55;">Ranked in {{ m.rankedIn }}</span><span style="font-size:13px; color:#4A4A55; border:1px dashed #BDB9B0; padding:1px 9px; border-radius:999px;">Review coming</span></div></sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+  </sc-if>
+
+  <sc-if value="{{ hasPosts }}" hint-placeholder-val="{{ true }}">
+    <section style="padding:48px 0 0;">
+      <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:14px;"><h2 style="margin:0; font-size:26px; letter-spacing:-0.03em; font-weight:600;">Latest posts</h2><code style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00;">{posts[]} where {post.entities[]} includes this entity</code></div>
+      <ul style="list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); grid-auto-rows:1fr; gap:14px;">
+        <sc-for list="{{ posts }}" as="p" hint-placeholder-count="3"><li style="display:flex;"><a href="{{ p.href }}" data-component="post-card" style="flex:1; display:flex; flex-direction:column; background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px; padding:20px; text-decoration:none; color:#14141A;" style-hover="border-color:#9C988F; text-decoration:none; color:#14141A;"><span style="align-self:flex-start; font-size:13px; font-weight:500; border:1px solid #D6D3CC; padding:2px 9px; border-radius:999px; margin-bottom:12px;">{{ p.type }}</span><h3 style="margin:0 0 8px; font-size:18px; line-height:1.25; font-weight:600;">{{ p.title }}</h3><p style="margin:0 0 14px; font-size:14px; line-height:1.5; color:#4A4A55; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;">{{ p.excerpt }}</p><div style="margin-top:auto; padding-top:12px; border-top:1px solid #EEECE7; font-size:13px; color:#4A4A55;">{{ p.published }} · {{ p.reading }}</div></a></li></sc-for>
+      </ul>
+      <nav aria-label="Pagination" style="display:flex; justify-content:center; gap:6px; margin-top:22px; font-size:14px;"><span aria-current="page" style="padding:6px 12px; background:#14141A; color:#FFFFFF; border-radius:8px;">1</span><a href="#" style="padding:6px 12px; border:1px solid #E0DDD6; border-radius:8px; background:#FFFFFF; color:#14141A;">2</a><a href="#" style="padding:6px 12px; color:#14141A;">Older →</a></nav>
+    </section>
+  </sc-if>
+
+  <sc-if value="{{ hasComparisons }}" hint-placeholder-val="{{ false }}">
+    <section style="padding:48px 0 0;">
+      <h2 style="margin:0 0 14px; font-size:26px; letter-spacing:-0.03em; font-weight:600;">Related comparisons</h2>
+      <div data-component="comparison-pills" style="display:flex; flex-wrap:wrap; gap:8px;"><sc-for list="{{ comparisons }}" as="c" hint-placeholder-count="2"><a href="{{ c.href }}" style="font-size:15px; color:#14141A; background:#FFFFFF; border:1px solid #D6D3CC; padding:9px 16px; border-radius:999px;">{{ c.label }} →</a></sc-for></div>
+    </section>
+  </sc-if>
+  <sc-if value="{{ noComparisons }}" hint-placeholder-val="{{ true }}">
+    <p style="margin:40px 0 0; font-size:13px; font-weight:500; color:#6B4A00; background:#FFF3D1; border:1px dashed #D9A93A; padding:6px 10px; border-radius:6px; display:inline-block;">Design note: “Related comparisons” has no items for this entity, so the block is not rendered.</p>
+  </sc-if>
+</main>
+<footer data-component="footer" style="background:#EFEDE8; border-top:1px solid #E0DDD6;"><div style="max-width:1200px; margin:0 auto; padding:40px 32px 28px; display:flex; justify-content:space-between; gap:32px; font-size:14px; color:#4A4A55;"><span>Independent reviews of KYC, KYB and AML software.</span><span>© 2026 BeVerified.org · <a href="Methodology Page - BeVerified (Desktop).dc.html">Methodology</a></span></div></footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;topic&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;travel-rule&quot;,&quot;entrust&quot;],&quot;default&quot;:&quot;travel-rule&quot;,&quot;tsType&quot;:&quot;'travel-rule' | 'entrust'&quot;,&quot;section&quot;:&quot;Variant&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() { this._on = () => this.forceUpdate(); window.addEventListener('bv-data-ready', this._on); window.addEventListener('bv-blog-ready', this._on); }
+  componentWillUnmount() { window.removeEventListener('bv-data-ready', this._on); window.removeEventListener('bv-blog-ready', this._on); }
+  renderVals() {
+    const D = window.BV, B = window.BVBlog;
+    if (!D || !B) return {};
+    const isEntrust = this.props.topic === 'entrust';
+    const uc = (id) => D.useCases.find((u) => u.id === id);
+    const C = (n) => 'Category Page - ' + n + ' (Desktop).dc.html';
+    const prov = (id) => { const p = D.editorialTop.find((x) => x.id === id); return { name: p.name, logo: p.logo, hasLogo: true, noLogo: false, href: p.href, bestFor: p.bestFor, scoreText: p.score.toFixed(1), reviewed: true, coming: false }; };
+    const coming = (name, rankedIn) => ({ name, rankedIn, reviewed: false, coming: true });
+    const T = isEntrust ? {
+      name: 'Entrust', kind: 'Company', glyph: B.glyph.company, ents: ['entrust', 'onfido'],
+      intro: 'Entrust is a Minneapolis-based identity and data-security company. It completed its acquisition of Onfido in April 2024 and is moving the product to the Entrust Identity Verification brand — so Entrust appears here through the Onfido review.',
+      hasOwned: true, ownedHref: D.byId.onfido.href,
+      rankings: [{ name: 'Identity Verification', def: uc('idv').def, count: 4, href: C('Top Identity Verification Companies') }, { name: 'eKYC', def: 'Fully remote onboarding in one flow.', count: 4, href: C('Best eKYC Solution Providers') }, { name: uc('live').name, def: uc('live').def, count: uc('live').count, href: uc('live').href }],
+      providers: [prov('onfido')],
+      comparisons: [{ label: 'Jumio vs Onfido', href: 'Comparison V3 - Jumio vs Onfido (Desktop).dc.html' }],
+    } : {
+      name: 'FATF Travel Rule', kind: 'Regulation', glyph: B.glyph.regulation, ents: ['travelRule', 'fatf16'],
+      intro: 'FATF Recommendation 16 requires virtual-asset service providers to pass originator and beneficiary information along with transfers. It is why exchanges and wallets need Travel Rule messaging alongside their KYC and AML stack.',
+      hasOwned: false, ownedHref: '#',
+      rankings: [uc('travel'), uc('crypto')].map((u) => ({ name: u.name, def: u.def, count: u.count, href: u.href })),
+      providers: [coming('Notabene', 'Travel Rule'), coming('Sygna Bridge', 'Travel Rule'), coming('VerifyVASP', 'Travel Rule'), prov('sumsub')],
+      comparisons: [],
+    };
+    const posts = B.posts.filter((p) => p.entities.some((e) => T.ents.includes(e))).map((p) => ({ ...p }));
+    return {
+      ...T, posts,
+      hasRankings: T.rankings.length > 0, hasProviders: T.providers.length > 0, hasPosts: posts.length > 0,
+      hasComparisons: T.comparisons.length > 0, noComparisons: T.comparisons.length === 0,
+    };
+  }
+}
+</script>
+</body>
+</html>

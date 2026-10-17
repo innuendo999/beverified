@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Jumio vs Onfido (2026) | BeVerified</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+html, body { margin:0; background:#F7F6F3; color:#14141A; }
+body { font-family:'Geist', ui-sans-serif, system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
+a { color:#5B2BD9; text-decoration:none; }
+a:hover { color:#4A1FBF; text-decoration:underline; text-underline-offset:3px; }
+button { font-family:inherit; }
+:focus-visible { outline:2px solid #5B2BD9; outline-offset:3px; border-radius:6px; }
+</style>
+<script src="./bv-data.js"></script>
+</helmet>
+<div style="background:#F7F6F3; color:#14141A; min-height:100vh; font-family:'Geist', ui-sans-serif, system-ui, sans-serif;">
+
+<header data-component="header" style="position:sticky; top:0; z-index:100; background:rgba(247,246,243,0.92); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:1px solid #E6E4DF;">
+  <div style="max-width:1200px; margin:0 auto; padding:0 32px; height:60px; display:flex; align-items:center; gap:40px;">
+    <a href="Homepage V3 - BeVerified (Desktop).dc.html" aria-label="BeVerified home" style="display:flex; align-items:center; gap:9px; text-decoration:none;">
+      <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="display:block;"><rect x="3" y="12" width="4.5" height="9" rx="1" fill="#14141A"></rect><rect x="9.75" y="8" width="4.5" height="13" rx="1" fill="#14141A"></rect><rect x="16.5" y="3" width="4.5" height="18" rx="1" fill="#5B2BD9"></rect></svg>
+      <span style="font-weight:600; font-size:17px; letter-spacing:-0.03em; color:#14141A;">BeVerified</span>
+    </a>
+    <nav aria-label="Primary" style="display:flex; gap:28px; flex:1;">
+      <a href="Homepage V3 - BeVerified (Desktop).dc.html#use-cases" style="font-size:15px; color:#4A4A55;">Use cases</a>
+      <a href="Homepage V3 - BeVerified (Desktop).dc.html#regions" style="font-size:15px; color:#4A4A55;">Regions</a>
+      <a href="Reviews Directory - BeVerified (Desktop).dc.html" style="font-size:15px; color:#14141A; font-weight:500;">Reviews</a>
+    </nav>
+    <a href="Homepage V3 - BeVerified (Desktop).dc.html#for-providers" style="font-size:15px; color:#14141A;">For providers</a>
+  </div>
+</header>
+
+<sc-if value="{{ showFields }}" hint-placeholder-val="{{ true }}">
+  <div style="max-width:1200px; margin:16px auto 0; padding:0 32px;"><p style="margin:0; font-size:13px; font-weight:500; color:#6B4A00; background:#FFF3D1; border:1px dashed #D9A93A; padding:8px 12px; border-radius:8px;">Template · same fields as the provider review page. Values tagged <span style="font-family:'Geist Mono', monospace;">{field}</span> are neutral samples. Known facts: Onfido founded 2012, London, owner Entrust (2024).</p></div>
+</sc-if>
+
+<div style="max-width:1000px; margin:0 auto; padding:0 32px;">
+  <nav data-component="breadcrumb" aria-label="Breadcrumb" style="padding:20px 0 0;">
+    <ol style="list-style:none; margin:0; padding:0; display:flex; gap:8px; font-size:14px; color:#4A4A55;">
+      <li><a href="Homepage V3 - BeVerified (Desktop).dc.html" style="color:#4A4A55;">Home</a></li><li aria-hidden="true" style="color:#9C988F;">›</li>
+      <li><a href="Reviews Directory - BeVerified (Desktop).dc.html" style="color:#4A4A55;">Reviews</a></li><li aria-hidden="true" style="color:#9C988F;">›</li>
+      <li aria-current="page" style="color:#14141A;">Jumio vs Onfido</li>
+    </ol>
+  </nav>
+
+  <h1 style="margin:28px 0 18px; font-size:52px; line-height:1.03; letter-spacing:-0.045em; font-weight:600;">Jumio vs Onfido (2026)</h1>
+  <p style="margin:0 0 20px; font-size:19px; line-height:1.6; max-width:820px; text-wrap:pretty;">Choose <strong style="font-weight:600;">Jumio</strong> if you want identity verification and AML screening under one enterprise contract. Choose <strong style="font-weight:600;">Onfido</strong>, now Entrust Identity Verification, if your priority is document-and-selfie depth and you already have, or plan to add, a separate screening vendor. Neither publishes a rate card.</p>
+  <div style="display:flex; align-items:center; gap:16px; font-size:14px; color:#4A4A55; margin-bottom:36px;">
+    <span data-component="author-byline" style="display:flex; align-items:center; gap:10px;"><img src="authors/andrii-klymenko.png" alt="" style="width:32px; height:32px; border-radius:999px; object-fit:cover; object-position:40% 25%; border:1px solid #E0DDD6; display:block;">By <a href="{{ reviewerHref }}" style="font-weight:500;">{{ reviewerName }}</a></span>
+    <span aria-hidden="true" style="color:#9C988F;">·</span>
+    <span data-component="last-verified" style="display:inline-flex; gap:6px;"><span aria-hidden="true" style="color:#1B7A4B;">✓</span>Last verified <span style="color:#14141A;">{{ lastVerified }}</span></span>
+  </div>
+
+  <div data-component="vs-header" style="display:grid; grid-template-columns:minmax(0,1fr) 56px minmax(0,1fr); gap:0; align-items:stretch; margin-bottom:14px;">
+    <sc-for list="{{ sides }}" as="s" hint-placeholder-count="2">
+      <div style="display:contents;">
+        <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px; padding:22px;">
+          <img src="{{ s.logo }}" alt="" style="height:26px; width:auto; display:block; margin-bottom:14px;">
+          <div style="font-size:20px; font-weight:600; margin-bottom:10px;">{{ s.name }}</div>
+          <div data-component="rating" role="img" aria-label="{{ s.aria }}" style="margin-bottom:12px;"><span aria-hidden="true" style="font-size:40px; font-weight:600; letter-spacing:-0.045em; font-variant-numeric:tabular-nums;">{{ s.scoreText }}</span><span aria-hidden="true" style="font-size:15px; color:#6A6A74;"> / 5</span>
+            <div aria-hidden="true" style="display:flex; gap:3px; margin-top:8px;"><sc-for list="{{ s.segs }}" as="sg" hint-placeholder-count="5"><span style="flex:1; height:4px; border-radius:2px; background:#E6E4DF; overflow:hidden;"><span style="display:block; height:100%; width:{{ sg.w }}; background:#14141A;"></span></span></sc-for></div>
+          </div>
+          <span data-component="badge" style="display:inline-flex; font-size:13px; border:1px solid #D6D3CC; padding:2px 10px; border-radius:999px; margin-bottom:14px;">Best for&nbsp;·&nbsp;{{ s.bestFor }}</span>
+          <div><a href="{{ s.href }}" style="font-size:14px; font-weight:500;">Read review →</a></div>
+        </div>
+        <sc-if value="{{ s.first }}" hint-placeholder-val="{{ true }}"><div style="display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:600; color:#8A8790;">vs</div></sc-if>
+      </div>
+    </sc-for>
+  </div>
+
+  <section aria-labelledby="t-h" style="padding:44px 0 0;">
+    <h2 data-component="section-header" id="t-h" style="margin:0 0 16px; font-size:32px; letter-spacing:-0.03em; font-weight:600;">Side by side</h2>
+    <div data-component="vs-table" style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px; overflow:hidden;">
+      <table style="width:100%; border-collapse:collapse; font-size:15px;">
+        <caption style="caption-side:top; text-align:left; padding:14px 22px 6px; font-size:14px; color:#4A4A55;">Jumio and Onfido compared on our rubric and company facts. ▸ marks the stronger side.</caption>
+        <thead><tr style="font-size:13px; color:#6A6A74; text-align:left;"><th scope="col" style="font-weight:500; padding:10px 22px; width:34%;">Criterion</th><th scope="col" style="font-weight:500; padding:10px 12px;">Jumio</th><th scope="col" style="font-weight:500; padding:10px 22px 10px 12px;">Onfido</th></tr></thead>
+        <tbody>
+          <sc-for list="{{ rows }}" as="r" hint-placeholder-count="12">
+            <tr style="border-top:1px solid #EEECE7;">
+              <th scope="row" style="padding:12px 22px; text-align:left; font-weight:500;">{{ r.k }}<sc-if value="{{ r.hasW }}" hint-placeholder-val="{{ false }}"><span style="color:#6A6A74; font-weight:400; font-size:14px;"> · {{ r.w }}%</span></sc-if><div style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00; font-weight:400;">{{ r.f }}</div></th>
+              <td style="padding:12px; background:{{ r.aBg }};"><span style="font-variant-numeric:tabular-nums; font-weight:{{ r.aW }};">{{ r.aMark }}{{ r.a }}</span><sc-if value="{{ r.hasEv }}" hint-placeholder-val="{{ false }}"> <span data-component="evidence-tag" style="display:inline-flex; gap:5px; font-size:12px; border:1px solid #D6D3CC; padding:0 7px; border-radius:999px; margin-left:4px;"><span aria-hidden="true">{{ r.aEv.icon }}</span>{{ r.aEv.label }}</span></sc-if></td>
+              <td style="padding:12px 22px 12px 12px; background:{{ r.bBg }};"><span style="font-variant-numeric:tabular-nums; font-weight:{{ r.bW }};">{{ r.bMark }}{{ r.b }}</span><sc-if value="{{ r.hasEv }}" hint-placeholder-val="{{ false }}"> <span style="display:inline-flex; gap:5px; font-size:12px; border:1px solid #D6D3CC; padding:0 7px; border-radius:999px; margin-left:4px;"><span aria-hidden="true">{{ r.bEv.icon }}</span>{{ r.bEv.label }}</span></sc-if></td>
+            </tr>
+          </sc-for>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="u-h" style="padding:64px 0 0;">
+    <h2 id="u-h" style="margin:0 0 16px; font-size:32px; letter-spacing:-0.03em; font-weight:600;">Use-case verdicts</h2>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px;">
+      <div style="display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) minmax(0,1fr); gap:12px; padding:10px 22px; font-size:13px; color:#6A6A74;"><span>Use case</span><span>Jumio</span><span>Onfido</span></div>
+      <sc-for list="{{ useCases }}" as="u" hint-placeholder-count="5">
+        <div style="display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) minmax(0,1fr); gap:12px; padding:12px 22px; border-top:1px solid #EEECE7; font-size:15px;"><span style="font-weight:500;">{{ u.k }}</span><span style="display:inline-flex; gap:6px;"><span aria-hidden="true" style="font-size:12px; letter-spacing:1px;">{{ u.aD }}</span>{{ u.a }}</span><span style="display:inline-flex; gap:6px;"><span aria-hidden="true" style="font-size:12px; letter-spacing:1px;">{{ u.bD }}</span>{{ u.b }}</span></div>
+      </sc-for>
+      <div style="padding:10px 22px; border-top:1px solid #EEECE7; font-size:12px; color:#8A5A00; font-family:'Geist Mono', monospace;">{{ fl.useCases }}</div>
+    </div>
+  </section>
+
+  <section aria-labelledby="ur-h" style="padding:64px 0 0;">
+    <h2 id="ur-h" style="margin:0 0 8px; font-size:32px; letter-spacing:-0.03em; font-weight:600;">User ratings</h2>
+    <p style="margin:0 0 16px; display:inline-flex; gap:8px; font-size:14px; font-weight:500; border:1px solid #D6D3CC; background:#FFFFFF; padding:4px 12px; border-radius:999px;"><span aria-hidden="true">●</span>User ratings are not part of our score</p>
+    <div data-component="user-rating-row" style="background:#F1EFEA; border:1px solid #E0DDD6; border-radius:18px;">
+      <div style="display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) minmax(0,1fr); gap:12px; padding:10px 22px; font-size:13px; color:#6A6A74;"><span>Platform</span><span>Jumio</span><span>Onfido</span></div>
+      <sc-for list="{{ ratings }}" as="r" hint-placeholder-count="3">
+        <div style="display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) minmax(0,1fr); gap:12px; padding:12px 22px; border-top:1px solid #E0DDD6; font-size:15px;"><span style="font-weight:500;">{{ r.p }}</span><span style="font-variant-numeric:tabular-nums;">0.0 / 5 · 000 reviews</span><span style="font-variant-numeric:tabular-nums;">0.0 / 5 · 000 reviews</span></div>
+      </sc-for>
+      <div style="padding:10px 22px; border-top:1px solid #E0DDD6; font-size:12px; color:#8A5A00; font-family:'Geist Mono', monospace;">{{ fl.ratings }}</div>
+    </div>
+  </section>
+
+  <section aria-label="Visit providers" style="padding:64px 0 0;">
+    <p data-component="disclosure-line" style="margin:0 0 14px; font-size:15px; line-height:1.5; color:#4A4A55;">{{ disclosure }} <a href="Methodology Page - BeVerified (Desktop).dc.html#disclosure">How we make money →</a></p>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+      <sc-for list="{{ sides }}" as="s" hint-placeholder-count="2">
+        <div data-component="cta-row" style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:16px; padding:16px 18px; display:flex; align-items:center; justify-content:space-between; gap:12px;"><img src="{{ s.logo }}" alt="{{ s.name }}" style="height:22px; width:auto; display:block;"><span style="display:flex; gap:8px;"><a href="{{ s.href }}" style="font-size:14px; font-weight:500; color:#14141A; border:1px solid #D6D3CC; padding:8px 14px; border-radius:999px;">Read review</a><a href="#" rel="sponsored nofollow noopener" target="_blank" style="font-size:14px; font-weight:500; color:#FFFFFF; background:#14141A; padding:9px 16px; border-radius:999px;">Visit site ↗</a></span></div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section aria-labelledby="faq-h" style="padding:64px 0 0;">
+    <h2 id="faq-h" style="margin:0 0 12px; font-size:32px; letter-spacing:-0.03em; font-weight:600;">FAQ</h2>
+    <div data-component="faq" style="border-top:1px solid #D6D3CC;">
+      <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="4">
+        <div style="border-bottom:1px solid #D6D3CC;">
+          <h3 style="margin:0;"><button type="button" onClick="{{ f.onToggle }}" aria-expanded="{{ f.open }}" style="width:100%; display:flex; justify-content:space-between; gap:24px; background:transparent; border:none; color:#14141A; text-align:left; padding:18px 0; cursor:pointer; font-size:17px; font-weight:500;"><span>{{ f.q }}</span><span aria-hidden="true" style="color:#6A6A74;">{{ f.icon }}</span></button></h3>
+          <sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}"><p style="margin:0; padding:0 40px 18px 0; font-size:16px; line-height:1.6; color:#4A4A55;">{{ f.a }}</p></sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section aria-labelledby="oc-h" style="padding:64px 0 0;">
+    <h2 id="oc-h" style="margin:0 0 14px; font-size:24px; letter-spacing:-0.02em; font-weight:600;">Other comparisons</h2>
+    <div data-component="comparison-pills" style="display:flex; flex-wrap:wrap; gap:8px;"><a href="#" style="font-size:15px; color:#14141A; background:#FFFFFF; border:1px solid #D6D3CC; padding:9px 16px; border-radius:999px;">Onfido vs Veriff →</a><a href="#" style="font-size:15px; color:#14141A; background:#FFFFFF; border:1px solid #D6D3CC; padding:9px 16px; border-radius:999px;">Sumsub vs Onfido →</a><a href="#" style="font-size:15px; color:#14141A; background:#FFFFFF; border:1px solid #D6D3CC; padding:9px 16px; border-radius:999px;">Jumio vs Sumsub →</a></div>
+  </section>
+
+  <section aria-labelledby="src-h" style="padding:64px 0 96px;">
+    <h2 id="src-h" style="margin:0 0 14px; font-size:24px; letter-spacing:-0.02em; font-weight:600;">Sources</h2>
+    <ol data-component="sources-list" style="list-style:none; margin:0; padding:0; border-top:1px solid #D6D3CC;">
+      <sc-for list="{{ sources }}" as="s" hint-placeholder-count="4"><li id="src-{{ s.n }}" style="display:flex; flex-wrap:wrap; gap:4px 12px; padding:11px 0; border-bottom:1px solid #E6E4DF; font-size:15px;"><span style="flex:0 0 32px; color:#6A6A74;">[{{ s.n }}]</span><span style="flex:1 1 400px;">{{ s.t }} <span style="color:#4A4A55;">— {{ s.p }}</span></span><span style="font-size:14px; color:#4A4A55;">Accessed Mon DD, YYYY</span></li></sc-for>
+    </ol>
+  </section>
+</div>
+
+<footer data-component="footer" style="background:#EFEDE8; border-top:1px solid #E0DDD6;">
+  <div style="max-width:1200px; margin:0 auto; padding:40px 32px 28px; display:flex; justify-content:space-between; gap:32px; font-size:14px; color:#4A4A55;"><p style="margin:0; max-width:720px;"><strong style="color:#14141A; font-weight:600;">Disclosure.</strong> {{ disclosure }}</p><span>© 2026 BeVerified.org</span></div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showFields&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;States&quot;}}">
+class Component extends DCLogic {
+  state = { faq: 0 };
+  componentDidMount() { if (!window.BV) { this._on = () => this.forceUpdate(); window.addEventListener('bv-data-ready', this._on); } }
+  componentWillUnmount() { if (this._on) window.removeEventListener('bv-data-ready', this._on); }
+  renderVals() {
+    const D = window.BV;
+    if (!D) return {};
+    const st = this.state, m = D.meta, show = this.props.showFields !== false, F = (s) => (show ? s : '');
+    const EV = { ind: { icon: '◆', label: 'Independent' }, ven: { icon: '◇', label: 'Vendor-stated' } };
+    const segs = (s) => [0, 1, 2, 3, 4].map((i) => ({ w: Math.max(0, Math.min(1, s - i)) * 100 + '%' }));
+    const J = D.editorialTop.find((p) => p.id === 'jumio'), O = D.editorialTop.find((p) => p.id === 'onfido');
+    const side = (p, first) => ({ name: p.name, logo: p.logo, href: p.href, bestFor: p.bestFor, scoreText: p.score.toFixed(1), aria: p.score.toFixed(1) + ' out of 5', segs: segs(p.score), first });
+    const row = (k, a, b, o) => {
+      const win = o && o.win; const S = '#F3F0FC';
+      return { k, a, b, f: F(o && o.f ? o.f : ''), w: o && o.w, hasW: !!(o && o.w), hasEv: !!(o && o.ev), aEv: o && o.ev ? o.ev[0] : EV.ven, bEv: o && o.ev ? o.ev[1] : EV.ven,
+        aBg: win === 'a' ? S : 'transparent', bBg: win === 'b' ? S : 'transparent', aW: win === 'a' ? 600 : 400, bW: win === 'b' ? 600 : 400, aMark: win === 'a' ? '▸ ' : '', bMark: win === 'b' ? '▸ ' : '' };
+    };
+    const subs = [['a', 'b'], ['b', 'a'], [null, null], ['b', 'a'], ['a', 'b'], [null, null]];
+    const rows = [
+      row('BeVerified score', J.score.toFixed(1), O.score.toFixed(1), { win: O.score > J.score ? 'b' : 'a', f: '{provider.score}' }),
+      ...D.rubric.map((r, i) => { const w = subs[i][0]; const vA = w === 'a' ? '4.0' : w === 'b' ? '3.0' : '4.0'; const vB = w === 'b' ? '4.0' : w === 'a' ? '3.0' : '4.0'; return row(r.name, vA, vB, { w: r.weight, win: w, f: i === 0 ? '{score_breakdown[].score}' : '' }); }),
+      row('Starting price', 'Sales quote only', 'Sales quote only', { f: '{pricing.from} · verified {pricing.verified}', ev: [EV.ven, EV.ven] }),
+      row('Pricing model', '{pricing.model}', 'Custom, volume-based', { f: '{pricing.model}', ev: [EV.ven, EV.ven] }),
+      row('Founded', 'YYYY', '2012', { f: '{facts.founded}', ev: [EV.ind, EV.ind] }),
+      row('HQ', '{City, Country}', 'London, UK', { f: '{facts.hq}', ev: [EV.ind, EV.ind] }),
+      row('Owner', '{owner}', 'Entrust (since 2024)', { f: '{facts.owner}', ev: [EV.ind, EV.ind] }),
+      row('Coverage', '000 countries', '000 countries', { f: '{facts.coverage}', ev: [EV.ven, EV.ven] }),
+      row('Certifications', '0 confirmed · 0 vendor-stated', '0 confirmed · 0 vendor-stated', { f: '{certifications[].status}', ev: [EV.ind, EV.ind] }),
+    ];
+    const V = { Strong: '●●●', Adequate: '●●○', Limited: '●○○', 'Not offered': '○○○' };
+    const useCases = [['KYC onboarding', 'Strong', 'Strong'], ['KYB', 'Limited', 'Limited'], ['AML screening & monitoring', 'Adequate', 'Adequate'], ['Fraud & deepfakes', 'Strong', 'Strong'], ['Crypto', 'Limited', 'Not offered']].map(([k, a, b]) => ({ k, a, b, aD: V[a], bD: V[b] }));
+    return {
+      showFields: show, reviewerName: D.reviewer.name, reviewerHref: D.reviewer.href, lastVerified: m.lastVerified, disclosure: m.disclosure,
+      sides: [side(J, true), side(O, false)], rows, useCases,
+      ratings: ['G2', 'Capterra', 'Gartner Peer Insights'].map((p) => ({ p })),
+      faqs: [
+        ['Is Jumio or Onfido better?', `On our scores, ${O.name} (${O.score.toFixed(1)}) edges ${J.name} (${J.score.toFixed(1)}). Pick Jumio if you want AML screening in the same contract; pick Onfido for document-and-selfie depth.`],
+        ['Which is cheaper, Jumio or Onfido?', 'Neither publishes a rate card; both quote by volume. Compare written quotes on the same volume, modules and contract length.'],
+        ['Is Onfido now part of Entrust?', 'Yes. Entrust completed its acquisition of Onfido on April 9, 2024, and is moving it to the Entrust Identity Verification brand.'],
+        ['Do Jumio and Onfido offer AML screening?', 'Both offer watchlist screening, but neither is a full transaction-monitoring platform. Most banks and fintechs add a dedicated AML vendor.'],
+      ].map(([q, a], i) => ({ q, a, open: st.faq === i, icon: st.faq === i ? '−' : '+', onToggle: () => this.setState({ faq: st.faq === i ? -1 : i }) })),
+      sources: [['Entrust Completes Acquisition of Onfido, Creating A New Era of Identity-Centric Security', 'Entrust newsroom'], ['Onfido Limited — company overview', 'Companies House (UK)'], ['{Jumio company source}', '{publisher}'], ['{vendor pricing pages}', 'Jumio · Onfido / Entrust']].map(([t, p], i) => ({ n: i + 1, t, p })),
+      fl: { useCases: F('{use_cases[].verdict} for each provider'), ratings: F('{user_ratings[].platform} {user_ratings[].rating} {user_ratings[].count} {user_ratings[].checked}') },
+    };
+  }
+}
+</script>
+</body>
+</html>

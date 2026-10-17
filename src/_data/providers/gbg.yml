@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/gbg.jpg
   background: '#9B6EF3'
+  wordmark: null
 tagline: Publicly traded, data-centric identity and location-intelligence network
 score: 4.5
 grade: Very Good
@@ -21,9 +22,6 @@ link:
   url: https://www.gbg.com
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-28'
 verdict: GBG is the rare publicly traded company in this category (LSE:GBG, FTSE 250), built around a genuinely massive data network — 280+ sources across 190 countries — plus a unique location-intelligence layer via its Loqate acquisition. It's less about slick no-code UX and more about deep data infrastructure, grown through a string of acquisitions (IDology, Acuant, Cloudcheck).
 what_is:
@@ -125,8 +123,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://www.gbg.com
+  - https://www.linkedin.com/company/gbgplc
+  - https://www.crunchbase.com/organization/gb-group
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against GBG's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

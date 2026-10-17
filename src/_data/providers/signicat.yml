@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/signicat.png
   background: '#6A3FE8'
+  wordmark: null
 tagline: Pan-European digital identity platform built through a decade of acquisitions
 score: 4.6
 grade: Great
@@ -21,9 +22,6 @@ link:
   url: https://www.signicat.com
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-28'
 verdict: 'Signicat''s breadth is its case: 35+ national electronic-ID methods, e-signatures, and KYC/AML onboarding unified in one platform, built through nearly a decade of acquisitions (Idfy, Connectis, Encap Security, Sphonic, and others). As an EU-qualified trust service provider, it''s a natural fit for pan-European onboarding, though its per-country breadth is more valuable in Europe than elsewhere.'
 what_is:
@@ -125,8 +123,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://www.signicat.com
+  - https://www.linkedin.com/company/signicat
+  - https://www.crunchbase.com/organization/signicat
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure above directly against Signicat's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

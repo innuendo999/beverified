@@ -9,6 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/relycomply.webp
   background: '#6F3EE0'
+  wordmark: null
 tagline: Explainable-AI anti-financial-crime platform with emerging-market bias mitigation
 score: 4.4
 grade: Very Good
@@ -21,9 +22,6 @@ link:
   url: https://relycomply.com
   type: null
   legacy_rel: nofollow sponsored
-reviewer:
-  name: Elena Marsh
-  credential: CAMS
 last_verified: '2026-07-29'
 verdict: RelyComply unifies KYC, KYB, and AML in one platform built around explainable AI — designed to make false-positive reductions auditable rather than a black box — with particular attention to bias mitigation for emerging markets. Its October 2025 UK launch extends South African roots into a new region, though the brand is still young outside Africa.
 what_is:
@@ -125,8 +123,16 @@ sources: []
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://relycomply.com
+  - https://www.linkedin.com/company/relycomply
+  - https://www.crunchbase.com/organization/relycomply
 legacy_issues:
 - editorial_note
 - screenshot_placeholder
 legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against RelyComply's official pricing page and profiles before this page goes live.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

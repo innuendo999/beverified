@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+html, body { margin:0; background:#F7F6F3; color:#14141A; }
+body { font-family:'Geist', ui-sans-serif, system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
+a { color:#5B2BD9; text-decoration:none; }
+a:hover { color:#4A1FBF; text-decoration:underline; }
+</style>
+<script src="./bv-data.js"></script>
+</helmet>
+<div style="width:1440px; box-sizing:border-box; padding:64px 80px 96px; background:#F7F6F3; font-family:'Geist', ui-sans-serif, system-ui, sans-serif; color:#14141A;">
+
+<header style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:56px; padding-bottom:24px; border-bottom:1px solid #D6D3CC;">
+  <div>
+    <div style="font-size:14px; color:#6A6A74; margin-bottom:8px;">BeVerified · Light · shared by homepage and review template</div>
+    <h1 style="margin:0; font-size:48px; line-height:1.04; letter-spacing:-0.04em; font-weight:600;">Component sheet</h1>
+  </div>
+  <div style="display:flex; gap:10px;">
+    <a href="Homepage V3 - BeVerified (Desktop).dc.html" style="font-size:14px; color:#14141A; background:#FFFFFF; border:1px solid #D6D3CC; padding:8px 15px; border-radius:999px;">Homepage</a>
+    <a href="Review Page V3 - Onfido (Desktop).dc.html" style="font-size:14px; color:#14141A; background:#FFFFFF; border:1px solid #D6D3CC; padding:8px 15px; border-radius:999px;">Review template</a>
+  </div>
+</header>
+
+<h2 style="margin:0 0 24px; font-size:28px; letter-spacing:-0.03em; font-weight:600;">Core components</h2>
+<div style="display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:20px; margin-bottom:72px;">
+
+  <figure style="grid-column:span 3; margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">header</figcaption>
+    <div style="background:rgba(247,246,243,0.92); border:1px solid #E6E4DF; border-radius:14px; height:60px; padding:0 24px; display:flex; align-items:center; gap:40px;">
+      <span style="display:flex; align-items:center; gap:9px;"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="12" width="4.5" height="9" rx="1" fill="#14141A"></rect><rect x="9.75" y="8" width="4.5" height="13" rx="1" fill="#14141A"></rect><rect x="16.5" y="3" width="4.5" height="18" rx="1" fill="#5B2BD9"></rect></svg><span style="font-weight:600; font-size:17px; letter-spacing:-0.03em;">BeVerified</span></span>
+      <span style="display:flex; gap:28px; flex:1; font-size:15px; color:#4A4A55;"><span>Use cases</span><span>Regions</span><span style="color:#14141A; font-weight:500;">Reviews</span></span>
+      <span style="font-size:15px;">For providers</span>
+    </div>
+  </figure>
+
+  <figure style="margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">breadcrumb</figcaption>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:20px; font-size:14px; color:#4A4A55; display:flex; gap:8px;">Home <span style="color:#9C988F;">›</span> Reviews <span style="color:#9C988F;">›</span> <span style="color:#14141A;">Onfido</span></div>
+  </figure>
+
+  <figure style="margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">rating</figcaption>
+    <div role="img" aria-label="4.6 out of 5" style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:18px 20px;">
+      <div style="display:flex; align-items:baseline; gap:5px;"><span style="font-size:40px; font-weight:600; letter-spacing:-0.045em; line-height:1; font-variant-numeric:tabular-nums;">4.6</span><span style="font-size:15px; color:#6A6A74;">/ 5</span><span style="margin-left:auto; font-size:15px; font-weight:600;">Excellent</span></div>
+      <div style="display:flex; gap:3px; margin-top:10px;"><sc-for list="{{ segs46 }}" as="sg" hint-placeholder-count="5"><span style="flex:1; height:4px; border-radius:2px; background:#E6E4DF; overflow:hidden;"><span style="display:block; height:100%; width:{{ sg.w }}; background:#14141A;"></span></span></sc-for></div>
+      <div style="font-size:13px; color:#4A4A55; margin-top:8px;">SR text: “4.6 out of 5”. No star glyphs.</div>
+    </div>
+  </figure>
+
+  <figure style="margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">badge</figcaption>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:20px; display:flex; flex-wrap:wrap; gap:8px;">
+      <span style="display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:500; color:#FFFFFF; background:#14141A; padding:3px 10px; border-radius:999px;"><span aria-hidden="true" style="width:6px; height:6px; background:#FFFFFF; transform:rotate(45deg);"></span>Editor’s choice</span>
+      <span style="display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:500; color:#FFFFFF; background:#14141A; padding:3px 10px; border-radius:999px;"><span aria-hidden="true">▲</span>Manually tested</span>
+      <span style="display:inline-flex; font-size:13px; border:1px solid #D6D3CC; padding:2px 10px; border-radius:999px;">Best for&nbsp;·&nbsp;Document + biometric IDV</span>
+      <span style="display:inline-flex; gap:6px; font-size:13px; font-weight:500; color:#FFFFFF; background:#14141A; padding:2px 9px; border-radius:999px;"><span aria-hidden="true">●</span>News</span>
+      <span style="display:inline-flex; font-size:13px; border:1px solid #D6D3CC; padding:2px 9px; border-radius:999px;">Guide</span>
+    </div>
+  </figure>
+
+  <figure style="margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">evidence-tag</figcaption>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:20px; display:flex; flex-direction:column; gap:10px;">
+      <sc-for list="{{ ev }}" as="e" hint-placeholder-count="4">
+        <div style="display:flex; align-items:center; gap:12px;"><span style="display:inline-flex; align-items:center; gap:6px; font-size:13px; border:1px solid #D6D3CC; padding:2px 9px; border-radius:999px; white-space:nowrap;"><span aria-hidden="true">{{ e.icon }}</span>{{ e.label }}</span><span style="font-size:13px; color:#4A4A55;">{{ e.desc }}</span></div>
+      </sc-for>
+      <div style="font-size:13px; color:#4A4A55;">Shape + text, never colour alone.</div>
+    </div>
+  </figure>
+
+  <figure style="margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">source-ref · field-label</figcaption>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:20px; font-size:15px; line-height:1.7; color:#4A4A55;">
+      Entrust completed the acquisition on April 9, 2024 <a href="#" style="font-size:12px; vertical-align:super;">[1]</a>.
+      <div style="margin-top:10px;">Founded 2012 <code style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00;">{facts.founded}</code></div>
+      <div style="font-size:13px; margin-top:6px;">field-label is a design-file annotation only; hidden in production.</div>
+    </div>
+  </figure>
+
+  <figure style="margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">author-byline · last-verified</figcaption>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:20px; display:flex; flex-direction:column; gap:12px; font-size:14px; color:#4A4A55;">
+      <div style="display:flex; align-items:center; gap:10px;"><img src="authors/andrii-klymenko.png" alt="" style="width:32px; height:32px; border-radius:999px; object-fit:cover; object-position:40% 25%; border:1px solid #E0DDD6; display:block;"><span>By <a href="#" style="font-weight:500;">Andrii Klymenko</a></span></div>
+      <div style="display:flex; align-items:center; gap:6px;"><span aria-hidden="true" style="color:#1B7A4B;">✓</span>Last verified <span style="color:#14141A; font-variant-numeric:tabular-nums;">Jul 24, 2026</span></div>
+    </div>
+  </figure>
+
+  <figure style="margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">disclosure-line · cta-row</figcaption>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:20px;">
+      <p style="margin:0 0 12px; font-size:15px; line-height:1.5; color:#4A4A55;">{{ disclosure }} <a href="#">How we make money →</a></p>
+      <div style="display:flex; gap:10px;"><span style="font-size:15px; font-weight:500; color:#FFFFFF; background:#14141A; padding:11px 20px; border-radius:999px;">Visit site ↗</span><span style="font-size:15px; font-weight:500; background:#FFFFFF; border:1px solid #D6D3CC; padding:10px 19px; border-radius:999px;">See alternatives</span></div>
+    </div>
+  </figure>
+
+  <figure style="margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">section-header</figcaption>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:20px; display:flex; flex-direction:column; gap:16px;">
+      <div><div style="font-size:13px; color:#4A4A55; margin-bottom:4px;">Hub (homepage) · 48px</div><div style="font-size:30px; line-height:1.04; letter-spacing:-0.04em; font-weight:600;">Top rated providers.<br><span style="color:#6A6A74;">In true score order.</span></div></div>
+      <div><div style="font-size:13px; color:#4A4A55; margin-bottom:4px;">Long-read (review) · 32px</div><div style="font-size:24px; letter-spacing:-0.03em; font-weight:600;">Score breakdown</div></div>
+    </div>
+  </figure>
+
+  <figure style="margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">in-page-nav</figcaption>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:20px; display:flex; flex-wrap:wrap; gap:6px;">
+      <sc-for list="{{ navPills }}" as="n" hint-placeholder-count="6"><span style="font-size:14px; background:#FFFFFF; border:1px solid #E0DDD6; padding:5px 12px; border-radius:999px;">{{ n }}</span></sc-for>
+      <div style="width:100%; font-size:13px; color:#4A4A55; margin-top:6px;">Sticky below header. “Hands-on test” pill only when filled.</div>
+    </div>
+  </figure>
+
+  <figure style="grid-column:span 2; margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">pros-cons</figcaption>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+      <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:16px 18px;"><div style="display:flex; align-items:center; gap:8px; font-size:15px; font-weight:600; margin-bottom:4px;"><span aria-hidden="true" style="width:20px; height:20px; border-radius:999px; background:#14141A; color:#FFFFFF; display:flex; align-items:center; justify-content:center; font-size:13px;">+</span>Pros</div><sc-for list="{{ pros }}" as="p" hint-placeholder-count="3"><div style="display:flex; justify-content:space-between; gap:10px; padding:9px 0; border-top:1px solid #EEECE7; font-size:14px;"><span>{{ p }}</span><a href="#" style="font-size:12px;">[4]</a></div></sc-for></div>
+      <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:16px 18px;"><div style="display:flex; align-items:center; gap:8px; font-size:15px; font-weight:600; margin-bottom:4px;"><span aria-hidden="true" style="width:20px; height:20px; border-radius:999px; border:1.5px solid #14141A; box-sizing:border-box; display:flex; align-items:center; justify-content:center; font-size:13px;">−</span>Cons</div><sc-for list="{{ cons }}" as="p" hint-placeholder-count="3"><div style="display:flex; justify-content:space-between; gap:10px; padding:9px 0; border-top:1px solid #EEECE7; font-size:14px;"><span>{{ p }}</span><a href="#" style="font-size:12px;">[4]</a></div></sc-for></div>
+    </div>
+  </figure>
+
+  <figure style="margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">faq</figcaption>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:4px 20px;">
+      <div style="display:flex; justify-content:space-between; padding:14px 0; border-bottom:1px solid #D6D3CC; font-size:16px; font-weight:500;"><span>Who owns Onfido?</span><span style="color:#6A6A74;">−</span></div>
+      <p style="margin:0; padding:10px 0 14px; font-size:15px; line-height:1.55; color:#4A4A55; border-bottom:1px solid #D6D3CC;">Entrust, since April 9, 2024.</p>
+      <div style="display:flex; justify-content:space-between; padding:14px 0; font-size:16px; font-weight:500;"><span>Does Onfido do AML screening?</span><span style="color:#6A6A74;">+</span></div>
+    </div>
+  </figure>
+
+  <figure style="margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">provider-card</figcaption>
+    <div style="position:relative; background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px; padding:20px 20px 16px; display:flex; flex-direction:column;">
+      <span aria-hidden="true" style="position:absolute; inset:-1px; border:1.5px solid #5B2BD9; border-radius:18px;"></span>
+      <div style="display:flex; justify-content:space-between; align-items:center; height:30px;"><img src="logos/sumsub.png" alt="" style="height:26px; width:auto; display:block;"><span style="font-size:26px; font-weight:500; color:#8A8790; font-variant-numeric:tabular-nums;">01</span></div>
+      <span style="align-self:flex-start; display:inline-flex; align-items:center; gap:6px; margin-top:10px; font-size:13px; font-weight:500; color:#FFFFFF; background:#14141A; padding:3px 10px; border-radius:999px;"><span aria-hidden="true" style="width:6px; height:6px; background:#FFFFFF; transform:rotate(45deg);"></span>Editor’s choice</span>
+      <div style="font-size:18px; font-weight:600; margin-top:12px;">Sumsub</div>
+      <div style="display:flex; align-items:baseline; gap:4px; margin-top:10px;"><span style="font-size:36px; font-weight:600; letter-spacing:-0.045em; line-height:1;">4.8</span><span style="font-size:15px; color:#6A6A74;">/ 5</span></div>
+      <div style="display:flex; gap:3px; margin-top:8px;"><sc-for list="{{ segs48 }}" as="sg" hint-placeholder-count="5"><span style="flex:1; height:4px; border-radius:2px; background:#E6E4DF; overflow:hidden;"><span style="display:block; height:100%; width:{{ sg.w }}; background:#14141A;"></span></span></sc-for></div>
+      <div style="margin-top:14px; padding-top:12px; border-top:1px solid #EEECE7; display:flex; justify-content:space-between; font-size:14px;"><span style="color:#5B2BD9; font-weight:500;">Read review →</span><span style="color:#6A6A74; font-size:13px;">IDV · AML · KYB</span></div>
+    </div>
+    <div style="font-size:13px; color:#4A4A55; margin-top:8px;">Full states: <a href="Homepage V3 - Component Sheet.dc.html">Homepage V3 sheet</a></div>
+  </figure>
+
+  <figure style="grid-column:span 2; margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">footer</figcaption>
+    <div style="background:#EFEDE8; border:1px solid #E0DDD6; border-radius:14px; padding:24px; display:grid; grid-template-columns:1.4fr repeat(4, 1fr); gap:20px; font-size:14px; color:#4A4A55;">
+      <div><div style="font-weight:600; color:#14141A; margin-bottom:6px;">BeVerified</div>Independent reviews of KYC, KYB and AML software.</div>
+      <div><div style="font-weight:600; color:#14141A; margin-bottom:6px;">Use cases</div>AML<br>KYB<br>Liveness</div>
+      <div><div style="font-weight:600; color:#14141A; margin-bottom:6px;">Regions</div>Brazil<br>India<br>Canada</div>
+      <div><div style="font-weight:600; color:#14141A; margin-bottom:6px;">Company</div>Methodology<br>How we make money</div>
+      <div><div style="font-weight:600; color:#14141A; margin-bottom:6px;">Legal</div>Privacy<br>Terms</div>
+    </div>
+  </figure>
+</div>
+
+<h2 style="margin:0 0 6px; font-size:28px; letter-spacing:-0.03em; font-weight:600;">Review template components</h2>
+<p style="margin:0 0 24px; font-size:15px; color:#4A4A55;">New components added for the provider review page.</p>
+<div style="display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:20px; margin-bottom:72px;">
+
+  <figure style="margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">quick-facts</figcaption>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:4px 0;">
+      <sc-for list="{{ qf }}" as="q" hint-placeholder-count="3"><div style="display:grid; grid-template-columns:minmax(0,1fr) auto auto; gap:12px; align-items:center; padding:11px 18px; border-top:1px solid #EEECE7; font-size:14px;"><span style="color:#4A4A55;">{{ q.k }}</span><span style="font-weight:500;">{{ q.v }}</span><span style="display:inline-flex; gap:5px; font-size:12px; border:1px solid #D6D3CC; padding:1px 8px; border-radius:999px;"><span aria-hidden="true">{{ q.ev.icon }}</span>{{ q.ev.label }}</span></div></sc-for>
+    </div>
+  </figure>
+
+  <figure style="margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">score-breakdown (row states)</figcaption>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px;">
+      <div style="display:grid; grid-template-columns:minmax(0,1.2fr) 50px minmax(0,1.6fr) 130px; gap:14px; align-items:center; padding:13px 18px; font-size:14px;"><span>Coverage</span><span style="color:#4A4A55;">20%</span><span style="display:flex; align-items:center; gap:10px;"><span style="flex:1; height:6px; background:#EEECE7; border-radius:999px; overflow:hidden;"><span style="display:block; height:100%; width:80%; background:#14141A;"></span></span><strong style="font-weight:600;">4.0</strong></span><span style="justify-self:start; display:inline-flex; gap:5px; font-size:12px; border:1px solid #D6D3CC; padding:1px 8px; border-radius:999px;">▲ Hands-on</span></div>
+      <div style="display:grid; grid-template-columns:minmax(0,1.2fr) 50px minmax(0,1.6fr) 130px; gap:14px; align-items:center; padding:13px 18px; border-top:1px solid #EEECE7; font-size:14px;"><span>Support</span><span style="color:#4A4A55;">10%</span><span style="justify-self:start; font-size:13px; color:#4A4A55; border:1px dashed #BDB9B0; border-radius:8px; padding:2px 9px;">Not publicly disclosed — not scored</span><span style="justify-self:start; display:inline-flex; gap:5px; font-size:12px; border:1px solid #D6D3CC; padding:1px 8px; border-radius:999px;">◇ Vendor-stated</span></div>
+    </div>
+  </figure>
+
+  <figure style="margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">verdict-table (4 verdict levels)</figcaption>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px;">
+      <sc-for list="{{ verdicts }}" as="v" hint-placeholder-count="4"><div style="display:grid; grid-template-columns:140px minmax(0,1fr); gap:12px; padding:11px 18px; border-top:1px solid #EEECE7; font-size:14px;"><span style="display:inline-flex; gap:6px; font-weight:500;"><span aria-hidden="true" style="font-size:12px; letter-spacing:1px;">{{ v.dots }}</span>{{ v.label }}</span><span style="color:#4A4A55;">{{ v.desc }}</span></div></sc-for>
+    </div>
+  </figure>
+
+  <figure style="margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">cert-row (3 states)</figcaption>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px;">
+      <div style="display:grid; grid-template-columns:minmax(0,1fr) 140px 120px; gap:12px; padding:12px 18px; font-size:14px;"><span>ISO/IEC 30107-3 (iBeta)</span><span style="color:#1B7A4B; font-weight:500;">✓ Confirmed</span><a href="#">View record [9]</a></div>
+      <div style="display:grid; grid-template-columns:minmax(0,1fr) 140px 120px; gap:12px; padding:12px 18px; border-top:1px solid #EEECE7; font-size:14px;"><span>ISO/IEC 27001</span><span style="font-weight:500;">◇ Vendor-stated</span><a href="#">Vendor claim [4]</a></div>
+      <div style="display:grid; grid-template-columns:minmax(0,1fr) 140px 120px; gap:12px; padding:12px 18px; border-top:1px solid #EEECE7; font-size:14px;"><span>NIST FRTE</span><span style="color:#4A4A55;">– Not found</span><span></span></div>
+    </div>
+  </figure>
+
+  <figure style="margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">user-rating-row</figcaption>
+    <div style="background:#F1EFEA; border:1px solid #E0DDD6; border-radius:14px; padding:14px 18px;">
+      <div style="display:inline-flex; gap:8px; font-size:13px; font-weight:500; border:1px solid #D6D3CC; background:#FFFFFF; padding:3px 10px; border-radius:999px; margin-bottom:10px;"><span aria-hidden="true">●</span>User ratings are not part of our score</div>
+      <div style="display:grid; grid-template-columns:minmax(0,1fr) 80px 110px 70px; gap:12px; font-size:14px;"><span style="font-weight:500;">G2</span><span>0.0 / 5</span><span style="color:#4A4A55;">000 reviews</span><a href="#">Open [6]</a></div>
+    </div>
+  </figure>
+
+  <figure style="margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">alt-row</figcaption>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:14px 18px; display:grid; grid-template-columns:110px minmax(0,1fr) 70px; gap:14px; align-items:center;">
+      <img src="logos/kycaid.png" alt="KYCAID" style="height:20px; width:auto; display:block;">
+      <span style="font-size:14px; line-height:1.5;"><strong style="font-weight:600;">Choose KYCAID instead</strong> if you need published pricing and a no-code workflow.</span>
+      <span style="font-size:16px; font-weight:600;">4.6 <span style="font-size:13px; font-weight:400; color:#6A6A74;">/ 5</span></span>
+    </div>
+  </figure>
+
+  <figure style="margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">sources-list</figcaption>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:4px 18px;">
+      <div style="display:grid; grid-template-columns:32px minmax(0,1fr) 150px; gap:10px; padding:10px 0; font-size:14px;"><span style="color:#6A6A74;">[1]</span><span><a href="#">Entrust Completes Acquisition of Onfido…</a> <span style="color:#4A4A55;">— Entrust newsroom</span></span><span style="color:#4A4A55; text-align:right;">Accessed Mon DD, YYYY</span></div>
+      <div style="display:grid; grid-template-columns:32px minmax(0,1fr) 150px; gap:10px; padding:10px 0; border-top:1px solid #EEECE7; font-size:14px;"><span style="color:#6A6A74;">[2]</span><span><a href="#">Onfido Limited — company overview</a> <span style="color:#4A4A55;">— Companies House</span></span><span style="color:#4A4A55; text-align:right;">Accessed Mon DD, YYYY</span></div>
+    </div>
+  </figure>
+
+  <figure style="margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">author-box</figcaption>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:18px; display:grid; grid-template-columns:56px minmax(0,1fr); gap:14px;">
+      <img src="authors/andrii-klymenko.png" alt="Andrii Klymenko" style="width:56px; height:56px; border-radius:999px; object-fit:cover; object-position:40% 25%; border:1px solid #E0DDD6; display:block;">
+      <div><div style="font-size:16px; font-weight:600;">Andrii Klymenko</div><div style="font-size:14px; color:#4A4A55; margin:2px 0 8px;">Author &amp; editor, BeVerified</div><div style="font-size:13px; color:#4A4A55;">Author profile → · LinkedIn ↗ · Published Mon DD, YYYY · Updated Jul 24, 2026</div></div>
+    </div>
+  </figure>
+
+  <figure style="margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">hands-on-screenshot (renders only with data)</figcaption>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:18px; font-size:14px; line-height:1.5; color:#4A4A55;">Row of up to 3 screenshots, 16:10, radius 10, 1px hairline, caption under each (<span style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00;">{hands_on.screenshots[].caption}</span>). If the array is empty, the row is not rendered — no placeholder frames.</div>
+  </figure>
+</div>
+
+<h2 style="margin:0 0 6px; font-size:28px; letter-spacing:-0.03em; font-weight:600;">Edge cases</h2>
+<p style="margin:0 0 24px; font-size:15px; color:#4A4A55;">Small frames, not full pages.</p>
+<div style="display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:20px;">
+
+  <figure style="margin:0;">
+    <figcaption style="font-size:14px; font-weight:600; margin-bottom:8px;">Header · with “Manually tested” (hands-on filled)</figcaption>
+    <div style="background:#F7F6F3; border:1px solid #E6E4DF; border-radius:14px; padding:22px;">
+      <img src="logos/onfido.png" alt="" style="height:24px; width:auto; display:block; margin-bottom:12px;">
+      <div style="font-size:26px; line-height:1.1; letter-spacing:-0.035em; font-weight:600; margin-bottom:12px;">Onfido (Entrust Identity Verification) Review 2026</div>
+      <div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center;"><span style="font-size:13px; background:#FFFFFF; border:1px solid #D6D3CC; padding:2px 10px; border-radius:999px;">Best for&nbsp;·&nbsp;Document + biometric IDV</span><span style="display:inline-flex; gap:6px; font-size:13px; font-weight:500; color:#FFFFFF; background:#14141A; padding:3px 10px; border-radius:999px;"><span aria-hidden="true">▲</span>Manually tested</span></div>
+    </div>
+  </figure>
+
+  <figure style="margin:0;">
+    <figcaption style="font-size:14px; font-weight:600; margin-bottom:8px;">Header · without badge (hands-on empty — default)</figcaption>
+    <div style="background:#F7F6F3; border:1px solid #E6E4DF; border-radius:14px; padding:22px;">
+      <img src="logos/onfido.png" alt="" style="height:24px; width:auto; display:block; margin-bottom:12px;">
+      <div style="font-size:26px; line-height:1.1; letter-spacing:-0.035em; font-weight:600; margin-bottom:12px;">Onfido (Entrust Identity Verification) Review 2026</div>
+      <div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center;"><span style="font-size:13px; background:#FFFFFF; border:1px solid #D6D3CC; padding:2px 10px; border-radius:999px;">Best for&nbsp;·&nbsp;Document + biometric IDV</span></div>
+    </div>
+  </figure>
+
+  <figure style="margin:0;">
+    <figcaption style="font-size:14px; font-weight:600; margin-bottom:8px;">No logo + very long name (wordmark fallback)</figcaption>
+    <div style="background:#F7F6F3; border:1px solid #E6E4DF; border-radius:14px; padding:22px; display:grid; grid-template-columns:minmax(0,1fr) 150px; gap:20px; align-items:start;">
+      <div style="min-width:0;">
+        <div style="font-size:20px; font-weight:700; letter-spacing:-0.035em; margin-bottom:12px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">{provider.name}</div>
+        <div style="font-size:26px; line-height:1.1; letter-spacing:-0.035em; font-weight:600; text-wrap:balance;">LexisNexis Risk Solutions Identity &amp; Compliance Suite Review 2026</div>
+        <div style="font-size:13px; color:#4A4A55; margin-top:10px;">H1 wraps up to 3 lines; wordmark truncates with an ellipsis at one line.</div>
+      </div>
+      <div style="background:#FFFFFF; border:1.5px solid #14141A; border-radius:14px; padding:14px;"><div style="font-size:32px; font-weight:600; letter-spacing:-0.045em; line-height:1;">0.0<span style="font-size:14px; font-weight:400; color:#6A6A74;"> / 5</span></div><div style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00; margin-top:6px;">{score}</div></div>
+    </div>
+  </figure>
+
+  <figure style="margin:0;">
+    <figcaption style="font-size:14px; font-weight:600; margin-bottom:8px;">Score breakdown · 2 of 6 not publicly disclosed</figcaption>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px;">
+      <sc-for list="{{ bd2 }}" as="b" hint-placeholder-count="6">
+        <div style="display:grid; grid-template-columns:minmax(0,1.3fr) 44px minmax(0,1.5fr); gap:12px; align-items:center; padding:10px 18px; border-top:1px solid #EEECE7; font-size:14px;">
+          <span>{{ b.name }}</span><span style="color:#4A4A55;">{{ b.weight }}%</span>
+          <sc-if value="{{ b.has }}" hint-placeholder-val="{{ true }}"><span style="display:flex; align-items:center; gap:10px;"><span style="flex:1; height:6px; background:#EEECE7; border-radius:999px; overflow:hidden;"><span style="display:block; height:100%; width:80%; background:#14141A;"></span></span><strong style="font-weight:600;">4.0</strong></span></sc-if>
+          <sc-if value="{{ b.none }}" hint-placeholder-val="{{ false }}"><span style="justify-self:start; font-size:13px; color:#4A4A55; border:1px dashed #BDB9B0; border-radius:8px; padding:2px 9px;">Not publicly disclosed — not scored</span></sc-if>
+        </div>
+      </sc-for>
+      <div style="padding:10px 18px; border-top:1px solid #EEECE7; font-size:13px; color:#4A4A55;">Overall score is computed on the remaining weights; the page states “Based on 4 of 6 criteria”.</div>
+    </div>
+  </figure>
+
+  <figure style="margin:0;">
+    <figcaption style="font-size:14px; font-weight:600; margin-bottom:8px;">Published self-serve pricing · 3 plans (Veriff, vendor-stated)</figcaption>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:18px;">
+      <div style="display:flex; justify-content:space-between; margin-bottom:12px; font-size:14px;"><span style="display:inline-flex; gap:6px; font-size:13px; border:1px solid #D6D3CC; padding:2px 9px; border-radius:999px;"><span aria-hidden="true">◇</span>Vendor-stated</span><span style="color:#4A4A55;">Pricing verified: <strong style="color:#14141A; font-weight:600;">Jul 2026</strong></span></div>
+      <div style="display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:10px;">
+        <sc-for list="{{ plans }}" as="p" hint-placeholder-count="3">
+          <div style="border:1px solid #E0DDD6; border-radius:12px; padding:14px;"><div style="font-size:14px; color:#4A4A55;">{{ p.name }}</div><div style="font-size:26px; font-weight:600; letter-spacing:-0.03em; font-variant-numeric:tabular-nums; margin-top:4px;">{{ p.price }}<span style="font-size:14px; font-weight:400; color:#6A6A74;"> / mo</span></div><a href="#" style="font-size:12px;">[src]</a></div>
+        </sc-for>
+      </div>
+    </div>
+  </figure>
+
+  <figure style="margin:0;">
+    <figcaption style="font-size:14px; font-weight:600; margin-bottom:8px;">Pricing · sales-only</figcaption>
+    <div style="background:#FFFFFF; border:1.5px solid #14141A; border-radius:14px; padding:18px;">
+      <div style="display:flex; justify-content:space-between; margin-bottom:10px;"><span style="font-size:15px; font-weight:600;">Official information</span><span style="display:inline-flex; gap:6px; font-size:13px; border:1px solid #D6D3CC; padding:2px 9px; border-radius:999px;"><span aria-hidden="true">◇</span>Vendor-stated</span></div>
+      <div style="font-size:22px; font-weight:600;">Sales quote only</div>
+      <p style="margin:6px 0 0; font-size:14px; color:#4A4A55;">No public rate card. Third-party estimates appear in a separate dashed block, never in this one.</p>
+    </div>
+  </figure>
+
+  <figure style="margin:0;">
+    <figcaption style="font-size:14px; font-weight:600; margin-bottom:8px;">Hands-on · empty state (hidden on live pages)</figcaption>
+    <div style="border:1.5px dashed #BDB9B0; border-radius:14px; padding:20px; background:#FBFAF8;">
+      <div style="display:inline-flex; font-size:13px; font-weight:500; color:#6B4A00; background:#FFF3D1; border:1px dashed #D9A93A; padding:2px 8px; border-radius:6px; margin-bottom:10px;">Hidden on live pages until filled</div>
+      <div style="font-size:16px; font-weight:600;">Not tested yet</div>
+    </div>
+  </figure>
+</div>
+
+<h2 style="margin:72px 0 6px; font-size:28px; letter-spacing:-0.03em; font-weight:600;">Category &amp; comparison components</h2>
+<p style="margin:0 0 24px; font-size:15px; color:#4A4A55;">Added for <a href="Category Page V3 - Identity Verification (Desktop).dc.html">Category template</a> and <a href="Comparison V3 - Jumio vs Onfido (Desktop).dc.html">X vs Y layout</a>.</p>
+<div style="display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:20px;">
+  <figure style="margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">jump-nav</figcaption>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:16px; display:flex; flex-wrap:wrap; gap:8px;">
+      <span style="display:flex; align-items:center; gap:8px; border:1px solid #E0DDD6; border-radius:12px; padding:7px 12px 7px 9px;"><span style="font-size:13px; color:#8A8790;">01</span><img src="logos/sumsub.png" alt="Sumsub" style="height:16px; width:auto; display:block;"></span>
+      <span style="display:flex; align-items:center; gap:8px; border:1px solid #E0DDD6; border-radius:12px; padding:7px 12px 7px 9px;"><span style="font-size:13px; color:#8A8790;">02</span><img src="logos/onfido.png" alt="Onfido" style="height:16px; width:auto; display:block;"></span>
+      <span style="display:flex; align-items:center; gap:8px; border:1px solid #E0DDD6; border-radius:12px; padding:7px 12px 7px 9px;"><span style="font-size:13px; color:#8A8790;">03</span><span style="font-size:14px; font-weight:700; letter-spacing:-0.03em;">{provider.name}</span></span>
+    </div>
+  </figure>
+  <figure style="margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">ranking-table (row)</figcaption>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:12px 18px; display:flex; flex-wrap:wrap; gap:8px 16px; align-items:center; font-size:14px;"><span style="color:#6A6A74;">1</span><img src="logos/sumsub.png" alt="" style="height:16px; width:auto; display:block;"><strong style="font-weight:500;">Sumsub</strong><span style="font-size:12px; color:#FFFFFF; background:#14141A; padding:1px 8px; border-radius:999px;">◆ Editor’s choice</span><span style="font-weight:600;">4.8</span><span>$0.00 / check <span style="color:#6A6A74;">· verified Mon YYYY</span></span></div>
+  </figure>
+  <figure style="margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">ranked-card (anatomy)</figcaption>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:16px 18px; font-size:14px; line-height:1.7; color:#4A4A55;">Large rank numeral · award badge {rankings[].award} · logo + name · rating · one-line positioning (wraps to 2 lines max) · meta row (coverage, fit, pricing model) · pros-cons 3+3 · price + verified + evidence-tag · cta-row (Visit site, Read full review) · optional “Compare: X vs Y” link. #1 gets the 1.5px violet frame.</div>
+  </figure>
+  <figure style="margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">checklist-item · pricing-overview-row</figcaption>
+    <div style="display:flex; flex-direction:column; gap:10px;">
+      <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:14px 16px; display:grid; grid-template-columns:28px minmax(0,1fr); gap:10px; font-size:14px;"><span style="color:#8A8790;">02</span><span><strong style="display:block; font-weight:600;">Liveness certification</strong><span style="color:#4A4A55;">Published ISO/IEC 30107-3 test letter, level and lab.</span></span></div>
+      <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:12px 16px; display:flex; flex-wrap:wrap; gap:6px 16px; font-size:14px;"><strong style="font-weight:500;">Onfido by Entrust</strong><span style="color:#4A4A55;">Sales quote</span><strong style="font-weight:600;">Sales quote only</strong><span style="font-size:12px; border:1px solid #D6D3CC; padding:0 7px; border-radius:999px;">◇ Vendor-stated</span></div>
+    </div>
+  </figure>
+  <figure style="margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">comparison-pills · related-category-card</figcaption>
+    <div style="display:flex; flex-direction:column; gap:10px;">
+      <div style="display:flex; flex-wrap:wrap; gap:8px;"><span style="font-size:14px; background:#FFFFFF; border:1px solid #D6D3CC; padding:7px 14px; border-radius:999px;">Jumio vs Onfido →</span><span style="font-size:13px; color:#4A4A55; align-self:center;">Block hidden when no approved pages.</span></div>
+      <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:14px 16px;"><div style="font-size:16px; font-weight:600;">Liveness Detection</div><div style="font-size:14px; color:#4A4A55; margin:4px 0 10px;">Proving a real, present person is on camera.</div><span style="font-size:14px; font-weight:500; color:#5B2BD9;">See all 4 providers →</span></div>
+    </div>
+  </figure>
+  <figure style="margin:0;">
+    <figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">vs-header · vs-table</figcaption>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; overflow:hidden; font-size:14px;">
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; padding:10px 16px; color:#6A6A74; font-size:13px;"><span>Criterion</span><span>Jumio</span><span>Onfido</span></div>
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; border-top:1px solid #EEECE7;"><span style="padding:10px 16px; font-weight:500;">Coverage · 20%</span><span style="padding:10px 16px;">3.0</span><span style="padding:10px 16px; background:#F3F0FC; font-weight:600;">▸ 4.0</span></div>
+      <div style="padding:8px 16px; border-top:1px solid #EEECE7; font-size:13px; color:#4A4A55;">Stronger side: ▸ + weight + soft violet tint (reads in grayscale via ▸).</div>
+    </div>
+  </figure>
+</div>
+
+<h2 style="margin:72px 0 6px; font-size:28px; letter-spacing:-0.03em; font-weight:600;">Category template variants</h2>
+<p style="margin:0 0 24px; font-size:15px; color:#4A4A55;">Small frames — only the listed blocks change.</p>
+<div style="display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:20px;">
+  <figure style="margin:0;">
+    <figcaption style="font-size:14px; font-weight:600; margin-bottom:8px;">Region page · Brazil (H1, short answer, explainer, regulatory)</figcaption>
+    <div style="background:#F7F6F3; border:1px solid #E6E4DF; border-radius:14px; padding:22px; display:flex; flex-direction:column; gap:14px;">
+      <div style="font-size:13px; color:#4A4A55;">Home › Regions › Brazil</div>
+      <div style="font-size:30px; line-height:1.05; letter-spacing:-0.04em; font-weight:600;">Top {count} KYC Providers in Brazil</div>
+      <p style="margin:0; font-size:15px; line-height:1.55;"><strong style="font-weight:600;">KYCAID</strong> is our overall pick for Brazil, reading CPF and CNPJ formats natively at a low entry price. <strong style="font-weight:600;">Sumsub</strong> wins on decision speed for Pix-era onboarding volume. We compared {count} providers on compliance, coverage, pricing, integration, support and track record.</p>
+      <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:12px; padding:12px 14px; font-size:14px; line-height:1.5; color:#4A4A55;"><strong style="color:#14141A; font-weight:600;">Explainer</strong> — what KYC means for Brazilian fintechs: CPF/CNPJ validation, Receita Federal data checks and PEP lists.</div>
+      <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:12px; font-size:14px;">
+        <div style="display:flex; gap:12px; padding:10px 14px;"><strong style="flex:0 0 150px; font-weight:600;">BACEN Circular 3.978/2020</strong><span style="color:#4A4A55;">AML/CFT policy and customer due diligence for regulated institutions <span style="font-size:12px; color:#5B2BD9;">[1]</span></span></div>
+        <div style="display:flex; gap:12px; padding:10px 14px; border-top:1px solid #EEECE7;"><strong style="flex:0 0 150px; font-weight:600;">LGPD (Law 13.709/2018)</strong><span style="color:#4A4A55;">Biometric data is sensitive personal data <span style="font-size:12px; color:#5B2BD9;">[2]</span></span></div>
+        <div style="display:flex; gap:12px; padding:10px 14px; border-top:1px solid #EEECE7;"><strong style="flex:0 0 150px; font-weight:600;">Law 9.613/1998</strong><span style="color:#4A4A55;">Brazil’s anti-money-laundering law; COAF reporting <span style="font-size:12px; color:#5B2BD9;">[3]</span></span></div>
+      </div>
+    </div>
+  </figure>
+  <figure style="margin:0;">
+    <figcaption style="font-size:14px; font-weight:600; margin-bottom:8px;">Short state · only 3 providers (no padding to 10)</figcaption>
+    <div style="background:#F7F6F3; border:1px solid #E6E4DF; border-radius:14px; padding:22px; display:flex; flex-direction:column; gap:12px;">
+      <div style="font-size:30px; line-height:1.05; letter-spacing:-0.04em; font-weight:600;">Top 3 Crypto Travel Rule Providers in 2026</div>
+      <div style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00;">{count} = rankings.length = 3</div>
+      <div style="display:flex; gap:8px;"><span style="font-size:13px; border:1px solid #E0DDD6; background:#FFFFFF; border-radius:10px; padding:6px 10px;">01 {provider.name}</span><span style="font-size:13px; border:1px solid #E0DDD6; background:#FFFFFF; border-radius:10px; padding:6px 10px;">02 {provider.name}</span><span style="font-size:13px; border:1px solid #E0DDD6; background:#FFFFFF; border-radius:10px; padding:6px 10px;">03 {provider.name}</span></div>
+      <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:12px; font-size:14px;">
+        <div style="display:flex; gap:12px; padding:10px 14px;"><span style="color:#6A6A74;">1</span><span style="flex:1;">{provider.name}</span><strong style="font-weight:600;">0.0</strong></div>
+        <div style="display:flex; gap:12px; padding:10px 14px; border-top:1px solid #EEECE7;"><span style="color:#6A6A74;">2</span><span style="flex:1;">{provider.name}</span><strong style="font-weight:600;">0.0</strong></div>
+        <div style="display:flex; gap:12px; padding:10px 14px; border-top:1px solid #EEECE7;"><span style="color:#6A6A74;">3</span><span style="flex:1;">{provider.name}</span><strong style="font-weight:600;">0.0</strong></div>
+      </div>
+      <div style="font-size:13px; color:#4A4A55;">Table and cards end at 3. Popular comparisons block hidden (none approved). No “See top 10” anywhere.</div>
+    </div>
+  </figure>
+</div>
+
+<section id="cta-row-states" style="margin-top:72px;">
+  <h2 style="margin:0 0 6px; font-size:28px; letter-spacing:-0.03em; font-weight:600;">cta-row · link states</h2>
+  <p style="margin:0 0 10px; font-size:15px; line-height:1.55; color:#4A4A55; max-width:860px;">Driven by <code style="font-family:'Geist Mono', monospace; font-size:13px; color:#8A5A00;">{provider.link.type}</code> = <strong style="font-weight:600; color:#14141A;">affiliate</strong> | <strong style="font-weight:600; color:#14141A;">paid</strong> | <strong style="font-weight:600; color:#14141A;">none</strong>. “Read review” appears in every state. The CTA block reserves the same height in all three, so cards stay equal. Hover, focus or tap a tag to see its popover.</p>
+  <div style="display:flex; gap:18px; flex-wrap:wrap; margin:0 0 28px; font-size:14px; color:#4A4A55;">
+    <span style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:500; color:#14141A; border:1px solid #9C988F; padding:2px 8px; border-radius:6px;"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6.5 9.5l3-3M7 4.5l1.2-1.2a2.6 2.6 0 013.7 3.7L10.7 8.2M9 11.5l-1.2 1.2a2.6 2.6 0 01-3.7-3.7l1.2-1.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>Affiliate link</span><span>chain icon · outlined tag</span>
+    <span style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:500; color:#14141A; background:#EFEDE8; border:1px dashed #6A6A74; padding:2px 8px; border-radius:6px;"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.6"></rect><path d="M8 4.5v7M10 6.2c-.3-.7-1-1.1-2-1.1-1.1 0-1.9.6-1.9 1.4 0 1.9 4 .9 4 2.9 0 .8-.9 1.4-2.1 1.4-1 0-1.8-.4-2.1-1.1" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"></path></svg>Sponsored link</span><span>dollar-in-square icon · dashed tinted tag</span>
+  </div>
+
+  <h3 style="margin:0 0 12px; font-size:17px; font-weight:600;">On a ranked category card</h3>
+  <div style="display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:16px; align-items:stretch; margin-bottom:40px;">
+    <sc-for list="{{ lsCard }}" as="s" hint-placeholder-count="3">
+      <figure style="margin:0; display:flex; flex-direction:column; gap:8px;">
+        <figcaption style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00;">{{ s.typeLabel }}</figcaption>
+        <div style="flex:1; display:flex; flex-direction:column; background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px; padding:20px;">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:10px;">
+            <span style="font-size:40px; font-weight:600; letter-spacing:-0.05em; line-height:0.9; color:#8A8790; font-variant-numeric:tabular-nums;">03</span>
+            <span style="text-align:right;"><span style="font-size:30px; font-weight:600; letter-spacing:-0.045em; font-variant-numeric:tabular-nums;">4.6</span><span style="font-size:14px; color:#6A6A74;"> / 5</span></span>
+          </div>
+          <span style="align-self:flex-start; font-size:13px; font-weight:500; border:1px solid #D6D3CC; padding:2px 10px; border-radius:999px; margin-bottom:12px;">Best for configurable workflows</span>
+          <div style="display:flex; align-items:center; gap:10px; margin-bottom:6px;"><img src="logos/kycaid.png" alt="KYCAID" style="height:22px; width:auto; display:block;"></div>
+          <p style="margin:0 0 16px; font-size:14px; line-height:1.5; color:#4A4A55;">Configurable KYC and AML workflows with a human review fallback.</p>
+          <div style="margin-top:auto; padding-top:14px; border-top:1px solid #EEECE7; min-height:74px; box-sizing:content-box; display:flex; flex-direction:column; gap:8px;">
+            <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+              <sc-if value="{{ s.hasBtn }}" hint-placeholder-val="{{ true }}"><a href="#" rel="sponsored nofollow noopener" style="font-size:14px; font-weight:500; color:#FFFFFF; background:#14141A; padding:10px 18px; border-radius:999px; text-decoration:none;">Visit site ↗</a></sc-if>
+              <a href="#" style="font-size:14px; font-weight:500; color:#14141A; background:#FFFFFF; border:1px solid #D6D3CC; padding:9px 16px; border-radius:999px; text-decoration:none;">Read review</a>
+              <sc-if value="{{ s.isNone }}" hint-placeholder-val="{{ false }}"><a href="#" rel="noopener" style="font-size:14px; color:#4A4A55; text-decoration:underline; text-underline-offset:3px; margin-left:4px;">Official website ↗</a></sc-if>
+            </div>
+            <sc-if value="{{ s.hasBtn }}" hint-placeholder-val="{{ true }}">
+              <span style="position:relative; align-self:flex-start;">
+                <sc-if value="{{ s.isAff }}" hint-placeholder-val="{{ true }}"><button type="button" aria-describedby="{{ s.tipId }}" onMouseEnter="{{ s.show }}" onMouseLeave="{{ s.hide }}" onFocus="{{ s.show }}" onBlur="{{ s.hide }}" onClick="{{ s.toggle }}" style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:500; color:#14141A; background:#FFFFFF; border:1px solid #9C988F; padding:2px 8px; border-radius:6px; cursor:help;"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6.5 9.5l3-3M7 4.5l1.2-1.2a2.6 2.6 0 013.7 3.7L10.7 8.2M9 11.5l-1.2 1.2a2.6 2.6 0 01-3.7-3.7l1.2-1.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>{{ s.tag }}</button></sc-if>
+                <sc-if value="{{ s.isPaid }}" hint-placeholder-val="{{ false }}"><button type="button" aria-describedby="{{ s.tipId }}" onMouseEnter="{{ s.show }}" onMouseLeave="{{ s.hide }}" onFocus="{{ s.show }}" onBlur="{{ s.hide }}" onClick="{{ s.toggle }}" style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:500; color:#14141A; background:#EFEDE8; border:1px dashed #6A6A74; padding:2px 8px; border-radius:6px; cursor:help;"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.6"></rect><path d="M8 4.5v7M10 6.2c-.3-.7-1-1.1-2-1.1-1.1 0-1.9.6-1.9 1.4 0 1.9 4 .9 4 2.9 0 .8-.9 1.4-2.1 1.4-1 0-1.8-.4-2.1-1.1" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"></path></svg>{{ s.tag }}</button></sc-if>
+                <span id="{{ s.tipId }}" role="tooltip" style="position:absolute; left:0; top:calc(100% + 8px); width:260px; z-index:20; font-size:13px; line-height:1.45; color:#FFFFFF; background:#14141A; padding:10px 12px; border-radius:10px; box-shadow:0 10px 30px rgba(20,20,26,0.18); opacity:{{ s.tipOpacity }}; visibility:{{ s.tipVis }}; transition:opacity .15s ease;">{{ s.tipText }}</span>
+              </span>
+            </sc-if>
+          </div>
+        </div>
+      </figure>
+    </sc-for>
+  </div>
+
+  <h3 style="margin:0 0 12px; font-size:17px; font-weight:600;">On the provider review header</h3>
+  <div style="display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:16px; align-items:stretch; margin-bottom:40px;">
+    <sc-for list="{{ lsHeader }}" as="s" hint-placeholder-count="3">
+      <figure style="margin:0; display:flex; flex-direction:column; gap:8px;">
+        <figcaption style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00;">{{ s.typeLabel }}</figcaption>
+        <div style="flex:1; display:flex; flex-direction:column; background:#F7F6F3; border:1px solid #E6E4DF; border-radius:18px; padding:20px;">
+          <img src="logos/onfido.png" alt="" style="height:22px; width:auto; display:block; align-self:flex-start; margin-bottom:12px;">
+          <div style="font-size:22px; line-height:1.12; letter-spacing:-0.03em; font-weight:600; margin-bottom:10px;">Onfido (Entrust Identity Verification) Review 2026</div>
+          <div style="display:flex; align-items:baseline; gap:6px; margin-bottom:6px;"><span style="font-size:28px; font-weight:600; letter-spacing:-0.04em;">4.6</span><span style="font-size:14px; color:#6A6A74;">/ 5 · Excellent</span></div>
+          <div style="display:flex; align-items:center; gap:8px; font-size:13px; color:#4A4A55; margin-bottom:14px;"><img src="authors/andrii-klymenko.png" alt="" style="width:22px; height:22px; border-radius:999px; object-fit:cover; object-position:40% 25%; display:block;">Andrii Klymenko · Last verified Jul 24, 2026</div>
+          <p style="margin:0 0 10px; font-size:13px; line-height:1.45; color:#4A4A55;">{disclosure-line}</p>
+          <div style="margin-top:auto; min-height:74px; display:flex; flex-direction:column; gap:8px;">
+            <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+              <sc-if value="{{ s.hasBtn }}" hint-placeholder-val="{{ true }}"><a href="#" rel="sponsored nofollow noopener" style="font-size:14px; font-weight:500; color:#FFFFFF; background:#14141A; padding:10px 18px; border-radius:999px; text-decoration:none;">Visit site ↗</a></sc-if>
+              <a href="#" style="font-size:14px; font-weight:500; color:#14141A; background:#FFFFFF; border:1px solid #D6D3CC; padding:9px 16px; border-radius:999px; text-decoration:none;">See alternatives</a>
+              <sc-if value="{{ s.isNone }}" hint-placeholder-val="{{ false }}"><a href="#" rel="noopener" style="font-size:14px; color:#4A4A55; text-decoration:underline; text-underline-offset:3px; margin-left:4px;">Official website ↗</a></sc-if>
+            </div>
+            <sc-if value="{{ s.hasBtn }}" hint-placeholder-val="{{ true }}">
+              <span style="position:relative; align-self:flex-start;">
+                <sc-if value="{{ s.isAff }}" hint-placeholder-val="{{ true }}"><button type="button" aria-describedby="{{ s.tipId }}" onMouseEnter="{{ s.show }}" onMouseLeave="{{ s.hide }}" onFocus="{{ s.show }}" onBlur="{{ s.hide }}" onClick="{{ s.toggle }}" style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:500; color:#14141A; background:#FFFFFF; border:1px solid #9C988F; padding:2px 8px; border-radius:6px; cursor:help;"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6.5 9.5l3-3M7 4.5l1.2-1.2a2.6 2.6 0 013.7 3.7L10.7 8.2M9 11.5l-1.2 1.2a2.6 2.6 0 01-3.7-3.7l1.2-1.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>{{ s.tag }}</button></sc-if>
+                <sc-if value="{{ s.isPaid }}" hint-placeholder-val="{{ false }}"><button type="button" aria-describedby="{{ s.tipId }}" onMouseEnter="{{ s.show }}" onMouseLeave="{{ s.hide }}" onFocus="{{ s.show }}" onBlur="{{ s.hide }}" onClick="{{ s.toggle }}" style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:500; color:#14141A; background:#EFEDE8; border:1px dashed #6A6A74; padding:2px 8px; border-radius:6px; cursor:help;"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.6"></rect><path d="M8 4.5v7M10 6.2c-.3-.7-1-1.1-2-1.1-1.1 0-1.9.6-1.9 1.4 0 1.9 4 .9 4 2.9 0 .8-.9 1.4-2.1 1.4-1 0-1.8-.4-2.1-1.1" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"></path></svg>{{ s.tag }}</button></sc-if>
+                <span id="{{ s.tipId }}" role="tooltip" style="position:absolute; left:0; top:calc(100% + 8px); width:260px; z-index:20; font-size:13px; line-height:1.45; color:#FFFFFF; background:#14141A; padding:10px 12px; border-radius:10px; box-shadow:0 10px 30px rgba(20,20,26,0.18); opacity:{{ s.tipOpacity }}; visibility:{{ s.tipVis }}; transition:opacity .15s ease;">{{ s.tipText }}</span>
+              </span>
+            </sc-if>
+          </div>
+        </div>
+      </figure>
+    </sc-for>
+  </div>
+
+  <h3 style="margin:0 0 12px; font-size:17px; font-weight:600;">On a Quick picks row</h3>
+  <div style="display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:16px; align-items:stretch;">
+    <sc-for list="{{ lsQp }}" as="s" hint-placeholder-count="3">
+      <figure style="margin:0; display:flex; flex-direction:column; gap:8px;">
+        <figcaption style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00;">{{ s.typeLabel }}</figcaption>
+        <div style="flex:1; display:flex; flex-direction:column; background:#FFFFFF; border:1px solid #E6E4DF; border-radius:16px; padding:16px 18px;">
+          <span style="align-self:flex-start; display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:500; color:#FFFFFF; background:#14141A; padding:3px 10px; border-radius:999px; margin-bottom:10px;"><span aria-hidden="true" style="width:6px; height:6px; background:#FFFFFF; transform:rotate(45deg);"></span>Best overall</span>
+          <div style="display:grid; grid-template-columns:minmax(0,1fr) auto; gap:12px; align-items:start; margin-bottom:12px;">
+            <div style="min-width:0;"><img src="logos/sumsub.png" alt="Sumsub" style="height:20px; width:auto; display:block; margin-bottom:6px;"><p style="margin:0; font-size:14px; line-height:1.45; color:#4A4A55;">IDV, AML screening and transaction monitoring on one platform.</p></div>
+            <span style="font-size:20px; font-weight:600; letter-spacing:-0.03em; font-variant-numeric:tabular-nums;">4.8<span style="font-size:13px; font-weight:400; color:#6A6A74;"> / 5</span></span>
+          </div>
+          <div style="margin-top:auto; padding-top:12px; border-top:1px solid #EEECE7; min-height:66px; display:flex; flex-direction:column; gap:8px;">
+            <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+              <sc-if value="{{ s.hasBtn }}" hint-placeholder-val="{{ true }}"><a href="#" rel="sponsored nofollow noopener" style="font-size:13px; font-weight:500; color:#FFFFFF; background:#14141A; padding:8px 14px; border-radius:999px; text-decoration:none;">Visit site ↗</a></sc-if>
+              <a href="#" style="font-size:13px; font-weight:500; color:#14141A; background:#FFFFFF; border:1px solid #D6D3CC; padding:7px 13px; border-radius:999px; text-decoration:none;">Read review</a>
+              <sc-if value="{{ s.isNone }}" hint-placeholder-val="{{ false }}"><a href="#" rel="noopener" style="font-size:13px; color:#4A4A55; text-decoration:underline; text-underline-offset:3px; margin-left:4px;">Official website ↗</a></sc-if>
+            </div>
+            <sc-if value="{{ s.hasBtn }}" hint-placeholder-val="{{ true }}">
+              <span style="position:relative; align-self:flex-start;">
+                <sc-if value="{{ s.isAff }}" hint-placeholder-val="{{ true }}"><button type="button" aria-describedby="{{ s.tipId }}" onMouseEnter="{{ s.show }}" onMouseLeave="{{ s.hide }}" onFocus="{{ s.show }}" onBlur="{{ s.hide }}" onClick="{{ s.toggle }}" style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:500; color:#14141A; background:#FFFFFF; border:1px solid #9C988F; padding:2px 8px; border-radius:6px; cursor:help;"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6.5 9.5l3-3M7 4.5l1.2-1.2a2.6 2.6 0 013.7 3.7L10.7 8.2M9 11.5l-1.2 1.2a2.6 2.6 0 01-3.7-3.7l1.2-1.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>{{ s.tag }}</button></sc-if>
+                <sc-if value="{{ s.isPaid }}" hint-placeholder-val="{{ false }}"><button type="button" aria-describedby="{{ s.tipId }}" onMouseEnter="{{ s.show }}" onMouseLeave="{{ s.hide }}" onFocus="{{ s.show }}" onBlur="{{ s.hide }}" onClick="{{ s.toggle }}" style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:500; color:#14141A; background:#EFEDE8; border:1px dashed #6A6A74; padding:2px 8px; border-radius:6px; cursor:help;"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.6"></rect><path d="M8 4.5v7M10 6.2c-.3-.7-1-1.1-2-1.1-1.1 0-1.9.6-1.9 1.4 0 1.9 4 .9 4 2.9 0 .8-.9 1.4-2.1 1.4-1 0-1.8-.4-2.1-1.1" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"></path></svg>{{ s.tag }}</button></sc-if>
+                <span id="{{ s.tipId }}" role="tooltip" style="position:absolute; left:0; top:calc(100% + 8px); width:260px; z-index:20; font-size:13px; line-height:1.45; color:#FFFFFF; background:#14141A; padding:10px 12px; border-radius:10px; box-shadow:0 10px 30px rgba(20,20,26,0.18); opacity:{{ s.tipOpacity }}; visibility:{{ s.tipVis }}; transition:opacity .15s ease;">{{ s.tipText }}</span>
+              </span>
+            </sc-if>
+          </div>
+        </div>
+      </figure>
+    </sc-for>
+  </div>
+  <p style="margin:24px 0 0; font-size:14px; line-height:1.55; color:#4A4A55; max-width:860px;">Directory rows use the same states at small size; the tag carries the popover text as its accessible description.</p>
+  <p style="margin:12px 0 0; font-size:14px; line-height:1.55; color:#4A4A55; max-width:860px;">Rules: affiliate and paid links use <code style="font-family:'Geist Mono', monospace; font-size:12px;">rel="sponsored nofollow"</code>; “Official website” uses <code style="font-family:'Geist Mono', monospace; font-size:12px;">rel="noopener"</code> only. The tag sits directly under the primary button so it’s read before the click. Popover opens on hover, keyboard focus or tap, and closes on blur or Esc.</p>
+</section>
+
+<section style="margin-top:72px;">
+  <h2 style="margin:0 0 6px; font-size:28px; letter-spacing:-0.03em; font-weight:600;">entity-chip · link rule</h2>
+  <p style="margin:0 0 20px; font-size:15px; color:#4A4A55; max-width:860px;">Every post, hub and topic page declares <code style="font-family:'Geist Mono', monospace; font-size:13px; color:#8A5A00;">{entities[]}</code>. A chip’s destination comes from its type. There is no glossary — no definition pages or tooltips.</p>
+  <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:16px; margin-bottom:28px;">
+    <div style="display:grid; grid-template-columns:200px 220px minmax(0,1fr); gap:16px; padding:10px 20px; font-size:13px; color:#6A6A74;"><span>Entity type</span><span>Chip</span><span>Links to</span></div>
+    <div style="display:grid; grid-template-columns:200px 220px minmax(0,1fr); gap:16px; align-items:center; padding:12px 20px; border-top:1px solid #EEECE7; font-size:14px;"><span style="font-weight:500;">provider (reviewed)</span><span><span style="display:inline-flex; gap:6px; background:#F7F6F3; border:1px solid #E0DDD6; padding:3px 10px; border-radius:999px;"><span style="color:#6A6A74;">●</span>Onfido</span></span><span style="color:#4A4A55;">its review page · /reviews/onfido/</span></div>
+    <div style="display:grid; grid-template-columns:200px 220px minmax(0,1fr); gap:16px; align-items:center; padding:12px 20px; border-top:1px solid #EEECE7; font-size:14px;"><span style="font-weight:500;">category</span><span><span style="display:inline-flex; gap:6px; background:#F7F6F3; border:1px solid #E0DDD6; padding:3px 10px; border-radius:999px;"><span style="color:#6A6A74;">▤</span>Liveness Detection</span></span><span style="color:#4A4A55;">its ranking page · /liveness-detection/</span></div>
+    <div style="display:grid; grid-template-columns:200px 220px minmax(0,1fr); gap:16px; align-items:center; padding:12px 20px; border-top:1px solid #EEECE7; font-size:14px;"><span style="font-weight:500;">region</span><span><span style="display:inline-flex; gap:6px; background:#F7F6F3; border:1px solid #E0DDD6; padding:3px 10px; border-radius:999px;"><span style="color:#6A6A74;">◎</span>Brazil</span></span><span style="color:#4A4A55;">its region page · /regions/brazil/</span></div>
+    <div style="display:grid; grid-template-columns:200px 220px minmax(0,1fr); gap:16px; align-items:center; padding:12px 20px; border-top:1px solid #EEECE7; font-size:14px;"><span style="font-weight:500;">topic · regulation · company not reviewed</span><span style="display:flex; flex-wrap:wrap; gap:6px;"><span style="display:inline-flex; gap:6px; background:#F7F6F3; border:1px solid #E0DDD6; padding:3px 10px; border-radius:999px;"><span style="color:#6A6A74;">§</span>FATF Travel Rule</span><span style="display:inline-flex; gap:6px; background:#F7F6F3; border:1px solid #E0DDD6; padding:3px 10px; border-radius:999px;"><span style="color:#6A6A74;">■</span>Entrust</span></span><span style="color:#4A4A55;">its topic page · /blog/topic/&lt;slug&gt;/ — <a href="Topic Page V3 (Desktop).dc.html">example</a></span></div>
+  </div>
+
+  <h2 style="margin:0 0 20px; font-size:28px; letter-spacing:-0.03em; font-weight:600;">Blog, hub &amp; directory components</h2>
+  <div style="display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:20px;">
+    <figure style="margin:0;"><figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">post-card</figcaption><div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px; padding:18px;"><span style="font-size:12px; font-weight:500; border:1px solid #D6D3CC; padding:2px 9px; border-radius:999px;">Guide</span><div style="font-size:17px; font-weight:600; line-height:1.25; margin:10px 0 6px;">How much does KYC cost per check in 2026?</div><div style="font-size:14px; color:#4A4A55; margin-bottom:10px;">Two-line excerpt, clamped…</div><div style="display:flex; gap:5px; margin-bottom:10px;"><span style="font-size:12px; background:#F7F6F3; border:1px solid #E0DDD6; padding:1px 8px; border-radius:999px;"># Per-check pricing</span><span style="font-size:12px; background:#F7F6F3; border:1px solid #E0DDD6; padding:1px 8px; border-radius:999px;">● Sumsub</span></div><div style="padding-top:10px; border-top:1px solid #EEECE7; font-size:13px; color:#4A4A55;">Author · Mon DD, YYYY · 0 min read</div></div><div style="font-size:13px; color:#4A4A55; margin-top:6px;">Complete without a cover; cover adds a 16:9 band on top.</div></figure>
+    <figure style="margin:0;"><figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">key-takeaways · toc</figcaption><div style="background:#FFFFFF; border:1.5px solid #14141A; border-radius:14px; padding:14px 18px; font-size:14px; line-height:1.5; margin-bottom:10px;"><strong style="font-weight:600;">Key takeaways</strong><ul style="margin:6px 0 0; padding-left:18px;"><li>3–5 quotable bullets</li><li>Real sentences, no teasers</li></ul></div><div style="border-left:1px solid #D6D3CC; font-size:14px;"><div style="padding:5px 12px; border-left:2px solid #14141A; margin-left:-1px; font-weight:600;">Current section</div><div style="padding:5px 12px; color:#4A4A55;">Next section</div></div></figure>
+    <figure style="margin:0;"><figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">mentioned-provider · related-posts</figcaption><div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:12px 16px; display:flex; flex-wrap:wrap; align-items:center; gap:10px 16px; font-size:14px; margin-bottom:10px;"><img src="logos/sumsub.png" alt="Sumsub" style="height:18px; width:auto; display:block;"><span style="flex:1; color:#4A4A55;">Best for All-in-one KYC + AML</span><strong style="font-weight:600;">4.8</strong><span style="color:#5B2BD9; font-weight:500;">Read review →</span></div><div style="font-size:13px; color:#4A4A55;"><code style="font-family:'Geist Mono', monospace; color:#8A5A00;">{related_posts[]}</code> = top 3 posts by shared <code style="font-family:'Geist Mono', monospace; color:#8A5A00;">{post.entities[]}</code></div></figure>
+    <figure style="margin:0;"><figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">hub-category-card</figcaption><div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:16px; padding:18px;"><div style="font-size:18px; font-weight:600;">AML</div><div style="font-size:14px; color:#4A4A55; margin:4px 0 12px;">Screening and ongoing monitoring.</div><div style="display:flex; gap:12px; align-items:center; margin-bottom:12px;"><img src="logos/sumsub.png" alt="" style="height:16px; width:auto; display:block;"><img src="logos/complyadvantage.png" alt="" style="height:16px; width:auto; display:block;"><img src="logos/trulioo.png" alt="" style="height:16px; width:auto; display:block;"></div><div style="display:flex; justify-content:space-between; padding-top:10px; border-top:1px solid #EEECE7; font-size:14px;"><span style="color:#4A4A55;">{count} providers</span><span style="color:#5B2BD9; font-weight:500;">See ranking →</span></div></div></figure>
+    <figure style="margin:0;"><figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">region-card · region-row (live / coming soon)</figcaption><div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;"><div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:14px;"><div style="font-size:16px; font-weight:600;">Brazil</div><div style="font-size:13px; color:#4A4A55;">BACEN</div><div style="font-size:13px; color:#4A4A55; margin-top:14px;">4 providers →</div></div><div style="background:#FBFAF8; border:1px dashed #D6D3CC; border-radius:14px; padding:14px;"><div style="font-size:16px; font-weight:600;">UK</div><div style="font-size:13px; color:#4A4A55;">FCA</div><div style="font-size:13px; color:#4A4A55; margin-top:14px;">Coming soon</div></div></div><div style="font-size:13px; color:#4A4A55; margin-top:6px;">“Coming soon” is not a link.</div></figure>
+    <figure style="margin:0;"><figcaption style="font-family:'Geist Mono', monospace; font-size:13px; color:#5B2BD9; margin-bottom:8px;">directory-row · az-jump</figcaption><div style="display:flex; gap:3px; margin-bottom:10px;"><span style="width:26px; height:26px; display:flex; align-items:center; justify-content:center; font-size:13px; background:#FFFFFF; border:1px solid #E0DDD6; border-radius:7px;">A</span><span style="width:26px; height:26px; display:flex; align-items:center; justify-content:center; font-size:13px; color:#BDB9B0;">B</span><span style="width:26px; height:26px; display:flex; align-items:center; justify-content:center; font-size:13px; background:#FFFFFF; border:1px solid #E0DDD6; border-radius:7px;">C</span></div><div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; font-size:14px;"><div style="display:flex; gap:12px; align-items:center; padding:10px 14px;"><img src="logos/kycaid.png" alt="KYCAID" style="height:16px; width:auto; display:block;"><strong style="font-weight:600;">4.6</strong><span style="flex:1; color:#4A4A55;">Configurable workflows</span><span style="font-size:12px; color:#5B2BD9;">Read review</span></div><div style="display:flex; gap:12px; align-items:center; padding:10px 14px; border-top:1px solid #EEECE7;"><strong style="font-weight:700;">Notabene</strong><span style="font-size:12px; border:1px dashed #BDB9B0; padding:0 7px; border-radius:999px;">Review coming</span><span style="flex:1;"></span><span style="font-size:12px; color:#4A4A55; text-decoration:underline;">Official website ↗</span></div></div></figure>
+  </div>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440}}">
+class Component extends DCLogic {
+  state = { tip: null };
+  linkStates() {
+    const T = {
+      affiliate: { tag: 'Affiliate link', tip: 'We earn a commission if you sign up through this link. It never affects scores or ranking.' },
+      paid: { tag: 'Sponsored link', tip: 'The provider paid for this link. It never affects scores or ranking.' },
+      none: { tag: '', tip: '' },
+    };
+    const mk = (ctx) => ['affiliate', 'paid', 'none'].map((type) => {
+      const key = ctx + '-' + type, open = this.state.tip === key;
+      return {
+        type, typeLabel: '{provider.link.type} = ' + type, isAff: type === 'affiliate', isPaid: type === 'paid', isNone: type === 'none', hasBtn: type !== 'none',
+        tag: T[type].tag, tipText: T[type].tip, tipId: 'tip-' + key, tipOpen: open, tipOpacity: open ? 1 : 0, tipVis: open ? 'visible' : 'hidden',
+        show: () => this.setState({ tip: key }), hide: () => this.setState((s) => (s.tip === key ? { tip: null } : null)),
+        toggle: () => this.setState((s) => ({ tip: s.tip === key ? null : key })),
+      };
+    });
+    return { lsCard: mk('card'), lsHeader: mk('header'), lsQp: mk('qp') };
+  }
+  componentDidMount() {
+    this._esc = (e) => { if (e.key === 'Escape') this.setState({ tip: null }); };
+    window.addEventListener('keydown', this._esc);
+    if (!window.BV) { this._on = () => this.forceUpdate(); window.addEventListener('bv-data-ready', this._on); } }
+  componentWillUnmount() { if (this._on) window.removeEventListener('bv-data-ready', this._on); }
+  renderVals() {
+    const D = window.BV;
+    const segs = (s) => [0, 1, 2, 3, 4].map((i) => ({ w: Math.max(0, Math.min(1, s - i)) * 100 + '%' }));
+    const ev = [
+      { icon: '◆', label: 'Independent', desc: 'Lab, government register, benchmark' },
+      { icon: '◇', label: 'Vendor-stated', desc: 'Vendor website or docs' },
+      { icon: '●', label: 'User-reported', desc: 'G2, Capterra, Gartner Peer Insights' },
+      { icon: '▲', label: 'Hands-on', desc: 'Our own test' },
+    ];
+    const rubric = D ? D.rubric : [];
+    return {
+      segs46: segs(4.6), segs48: segs(4.8), ev,
+      disclosure: D ? D.meta.disclosure : '',
+      navPills: ['Verdict', 'Score', 'Use cases', 'Pricing', 'Ownership', 'Hands-on test'],
+      pros: ['Mature liveness detection', 'Broad document-type support', 'Well-documented SDKs'],
+      cons: ['AML screening is a separate module', 'No public rate card', 'Integration can take weeks'],
+      qf: [{ k: 'Founded', v: '2012', ev: ev[0] }, { k: 'From price', v: 'Not published', ev: ev[1] }, { k: 'Last verified', v: 'Jul 24, 2026', ev: ev[3] }],
+      verdicts: [
+        { label: 'Strong', dots: '●●●', desc: 'Core product, documented and tested' },
+        { label: 'Adequate', dots: '●●○', desc: 'Covered, with gaps or add-ons' },
+        { label: 'Limited', dots: '●○○', desc: 'Partial or indirect support' },
+        { label: 'Not offered', dots: '○○○', desc: 'No product for this use case' },
+      ],
+      bd2: rubric.map((r, i) => ({ name: r.name, weight: r.weight, has: !(i === 3 || i === 4), none: i === 3 || i === 4 })),
+      plans: [{ name: 'Essential', price: '$49' }, { name: 'Plus', price: '$99' }, { name: 'Premium', price: '$209' }],
+      ...this.linkStates(),
+    };
+  }
+}
+</script>
+</body>
+</html>
