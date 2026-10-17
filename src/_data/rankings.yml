@@ -1179,3 +1179,142 @@ travel-rule:
     legacy_price_shown: On request
     legacy_rating_shown: 4.8
     segments: []
+age-verification:
+  title: Best Age Verification Providers in 2026
+  providers:
+  - slug: sumsub
+    name: Sumsub
+    award: Editor's Choice
+    tagline: Document checks, selfie age estimation and database checks in one platform, with published per-verification pricing.
+    coverage: Global
+    size: SMB to Enterprise
+    pros:
+    - Offers document, selfie age estimation and non-document database checks from one account
+    - Lists KJM approval for the German market on its age verification page
+    - Publishes per-verification pricing
+    cons:
+    - Its 99.8% age estimation accuracy figure is a vendor claim, not an independent test
+    - A full KYC platform can be more than a simple age gate needs
+    - Email and phone based age checks are not listed on its age verification page
+    legacy_price_shown: $1.99/verification
+    legacy_rating_shown: null
+    segments: []
+  - slug: incode
+    name: Incode
+    award: Best on-device age estimation
+    tagline: Face age estimation that runs on the user's phone, so the selfie does not have to leave the device.
+    coverage: Global
+    size: Mid-market to Enterprise
+    pros:
+    - Age and liveness models run on the device
+    - No document upload, external app or redirect for the estimation step
+    - Failed checks are rerouted to another method automatically
+    cons:
+    - Its age assurance page names no specific regulation or regulator approval
+    - The fallback method is not described publicly
+    - No public pricing
+    legacy_price_shown: null
+    legacy_rating_shown: null
+    segments: []
+  - slug: persona
+    name: Persona
+    award: Most age check methods
+    tagline: The widest menu of age checks we found, from selfie estimation and email inference to ID, database and digital ID.
+    coverage: Global, strong in US
+    size: Mid-market to Enterprise
+    pros:
+    - Selfie age estimation, email-based inference, mobile operator, credit card, ID, database and digital ID checks
+    - Users can reuse a verified age attribute such as 18+
+    - Flows are configurable per market and risk level
+    cons:
+    - You assemble and tune the flows yourself
+    - Custom pricing only
+    - Method details sit in help-centre articles rather than a single product page
+    legacy_price_shown: Custom pricing
+    legacy_rating_shown: null
+    segments: []
+  - slug: shufti-pro
+    name: Shufti Pro
+    award: Best step-up flows
+    tagline: Facial age estimation that steps up to database or document checks when the score is below your threshold.
+    coverage: Global
+    size: null
+    pros:
+    - Facial estimation, ID document checks and authoritative database lookups
+    - Step-up to a stronger check when the estimate falls below an operator-set threshold
+    - Zero-knowledge proof credential lets returning users skip a fresh check
+    cons:
+    - Its Online Safety Act notes refer to Ofcom's draft codes, so check them against the final guidance
+    - Email and mobile based estimation are not listed
+    - Database coverage by country is not detailed on the page
+    legacy_price_shown: null
+    legacy_rating_shown: null
+    segments: []
+  - slug: veriff
+    name: Veriff
+    award: Best selfie-only estimation
+    tagline: Selfie age estimation with no document, returning a result in seconds with liveness and fraud checks built in.
+    coverage: Global
+    size: null
+    pros:
+    - Estimates age from one selfie with no identity document
+    - Liveness and fraud checks run in real time with no extra steps for the user
+    - Lists ISO/IEC 30107-3 presentation attack testing
+    cons:
+    - No document fallback described on its age estimation page
+    - No published accuracy figures for age estimation
+    - Custom pricing for age estimation
+    legacy_price_shown: Custom pricing
+    legacy_rating_shown: null
+    segments: []
+  - slug: kycaid
+    name: KYCAID
+    award: Best for document-based checks
+    tagline: Document and selfie verification with database checks, aimed at adult sites and regulated platforms.
+    coverage: Global
+    size: SMB to Mid-market
+    pros:
+    - ID document check with selfie face match
+    - Extra database, SMS and email code checks available
+    - Low published entry price
+    cons:
+    - No facial age estimation listed on its age verification page
+    - Document-first flows add friction for simple age gates
+    - Names no age assurance certification or regulator approval
+    legacy_price_shown: $99/mo
+    legacy_rating_shown: null
+    segments: []
+  - slug: idenfy
+    name: iDenfy
+    award: Best pay-per-approval pricing
+    tagline: Document and non-document age checks, billed only for approved verifications.
+    coverage: Global
+    size: null
+    pros:
+    - Document and non-document digital ID workflows
+    - Selfie verification with active or passive liveness
+    - Charges only for approved verifications
+    cons:
+    - Its age estimation product is not described on the age verification page
+    - Names no regulator approval for age assurance
+    - No price shown on the age verification page
+    legacy_price_shown: null
+    legacy_rating_shown: null
+    segments: []
+  - slug: verifymy
+    name: VerifyMy
+    award: Best age assurance specialist
+    tagline: Age assurance only, including email-based age estimation, with ISO/IEC 27566-1 certification and German KJM approval.
+    coverage: Global
+    size: null
+    pros:
+    - Email address age estimation, plus mobile, credit bureau, facial estimation, ID and credit card checks
+    - States ISO/IEC 27566-1 certification by the Age Check Certification Scheme
+    - States German KJM approval
+    cons:
+    - Age assurance only, so KYC or AML needs a second vendor
+    - Lowest overall score in this list
+    - No public pricing
+    legacy_price_shown: null
+    legacy_rating_shown: null
+    segments: []

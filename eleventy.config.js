@@ -3,6 +3,8 @@ import yaml from "js-yaml";
 // YAML front matter turns 2026-10-18 into a Date; normalise to "2026-10-18".
 const isoDate = (v) => (v instanceof Date ? v.toISOString().slice(0, 10) : String(v || ""));
 const slugify = (t) => String(t).toLowerCase().replace(/<[^>]+>/g, "").replace(/&[a-z]+;/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+// Article front matter lists (providers, categories) shadow global objects of the same name.
+const arr = (v) => (Array.isArray(v) ? v : []);
 const SECTION_LABEL = { guide: "Guide", news: "News", publications: "Research" };
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
@@ -41,14 +43,14 @@ export default function (eleventyConfig) {
     [...String(html || "").matchAll(/<h2 id="([^"]+)">([\s\S]*?)<\/h2>/g)].map((m) => ({ id: m[1], title: m[2].replace(/<[^>]+>/g, "") })));
   // Articles mentioning a provider slug or a category key
   eleventyConfig.addFilter("articlesAbout", (list, kind, key, n = 4) =>
-    (list || []).filter((a) => (a.data[kind === "providers" ? "provList" : "catList"] || []).includes(key)).slice(0, n));
+    (list || []).filter((a) => arr(a.data[kind === "providers" ? "provider_slugs" : "ranking_keys"]).includes(key)).slice(0, n));
   eleventyConfig.addFilter("byAuthor", (list, key) => (list || []).filter((a) => a.data.author === key));
   eleventyConfig.addFilter("inSection", (list, section) => section === "all" ? list : (list || []).filter((a) => a.data.section === section));
   // Top n related articles by shared providers (2), categories (1), topics (2); newest first on ties
   eleventyConfig.addFilter("relatedPosts", (list, url, data, n = 3) => {
     const sh = (a, b) => (a || []).filter((x) => (b || []).includes(x)).length;
     return (list || []).filter((a) => a.url !== url)
-      .map((a, i) => ({ a, i, s: 2 * sh(a.data.provList, data.providers) + sh(a.data.catList, data.categories) + 2 * sh(a.data.topics, data.topics) }))
+      .map((a, i) => ({ a, i, s: 2 * sh(arr(a.data.provider_slugs), data.providers) + sh(arr(a.data.ranking_keys), data.categories) + 2 * sh(a.data.topics, data.topics) }))
       .sort((x, y) => y.s - x.s || x.i - y.i).slice(0, n).map((x) => x.a);
   });
 

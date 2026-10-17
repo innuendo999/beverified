@@ -14,8 +14,8 @@ takeaways:
   - "PACE replaces Basic Access Control as the stronger way to open the chip; where a chip supports both, Doc 9303 says PACE shall be used."
   - "The ICAO Public Key Directory had 110 participants as of June 2026 and moved to a new system in March 2026."
 topics: [NFC Passport, ePassport, Document Verification, ICAO 9303]
-providers: [regula, sumsub, onfido, idenfy]
-categories: [identity-verification, e-kyc, liveness-detection]
+provider_slugs: [regula, sumsub, onfido, idenfy]
+ranking_keys: [identity-verification, e-kyc, liveness-detection]
 faq:
   - q: "What is an NFC passport?"
     a: "It is a passport with a contactless chip, also called an ePassport or eMRTD. The chip stores the data page details and the facial image, signed by the issuing country, and a phone or reader with NFC can read it once it has the access key from the printed MRZ or CAN."

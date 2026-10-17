@@ -13,8 +13,8 @@ takeaways:
   - "The EU AML Regulation (EU) 2024/1624 applies from 10 July 2027, replacing national readings of customer due diligence rules."
   - "AMLA will select about 40 obliged entities in 2027 and start supervising them directly in 2028."
 topics: [Adverse Media, Customer Due Diligence, AML Screening, AMLA]
-providers: [complyadvantage, kyc360, sanction-scanner, smartsearch]
-categories: [aml, kyb]
+provider_slugs: [complyadvantage, kyc360, sanction-scanner, smartsearch]
+ranking_keys: [aml, kyb]
 faq:
   - q: "What is negative news screening?"
     a: "Checking public sources such as news outlets and court reports for information linking a customer, director or owner to financial crime. It is also called adverse media screening."

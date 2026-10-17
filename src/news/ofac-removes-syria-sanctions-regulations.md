@@ -13,8 +13,8 @@ takeaways:
   - "Conduct before 1 July 2025 can still be investigated and penalised."
   - "Since then, the Caesar Act was repealed (18 December 2025) and Syria's State Sponsor of Terrorism designation was rescinded (24 August 2026)."
 topics: [OFAC, Syria, Sanctions screening]
-providers: [complyadvantage, castellum-ai]
-categories: [aml, aml/banks]
+provider_slugs: [complyadvantage, castellum-ai]
+ranking_keys: [aml, aml/banks]
 faq:
   - q: "Are there still US sanctions on Syria?"
     a: "There is no country-wide programme any more, but targeted sanctions remain on Bashar al-Assad, former regime figures, Captagon traffickers and others under the PAARSS programme and counter-terrorism authorities. Screening for those SDN entries is still required."

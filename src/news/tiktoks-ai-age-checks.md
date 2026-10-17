@@ -14,8 +14,8 @@ takeaways:
   - "TikTok and ByteDance agreed in August 2026 to pay $400 million to settle the US Justice Department's COPPA case."
   - "Ofcom opened a formal investigation into TikTok's age assurance under the Online Safety Act on 16 July 2026."
 topics: [Age Assurance, TikTok, Online Safety, Facial Age Estimation]
-providers: [verifymy]
-categories: [liveness-detection, identity-verification]
+provider_slugs: [verifymy]
+ranking_keys: [age-verification, liveness-detection, identity-verification]
 faq:
   - q: "How does TikTok check your age?"
     a: "Users enter a date of birth at sign-up. TikTok also uses a model that predicts from profile information, videos and on-platform behaviour whether an account may belong to someone under 13, and sends flagged accounts to human moderators."

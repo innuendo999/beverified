@@ -13,8 +13,8 @@ takeaways:
   - "AMLA's final draft CDD standards (30 September 2026) say central beneficial ownership registers are not enough on their own to verify ownership."
   - "Since August 2026, US companies no longer report beneficial ownership to FinCEN, so US banks rely on their own CDD collection, which a February 2026 FinCEN order lets them refresh on a risk basis."
 topics: [Perpetual KYB, Beneficial Ownership, Ongoing Monitoring, Business Verification]
-providers: [fullcircl, strise, kychub, smartsearch, idenfy]
-categories: [kyb, aml]
+provider_slugs: [fullcircl, strise, kychub, smartsearch, idenfy]
+ranking_keys: [kyb, aml]
 faq:
   - q: "What is perpetual KYB?"
     a: "Perpetual KYB is continuous due diligence on business customers. Instead of re-checking a company only at a scheduled review, the firm monitors registry, ownership, screening and activity data and reviews the customer when a relevant change appears."

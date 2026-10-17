@@ -14,8 +14,8 @@ takeaways:
   - "High-risk obligations under the EU AI Act for Annex III systems were postponed from 2 August 2026 to 2 December 2027 by the AI Omnibus published in July 2026."
   - "Implementation usually goes in this order: map the current process, fix data, automate the high-volume low-risk path first, then extend to ongoing monitoring."
 topics: [KYC Automation, Banking, Customer Onboarding, Perpetual KYC]
-providers: [nice-actimize, signicat, sumsub, complyadvantage]
-categories: [aml/banks, e-kyc, kyb]
+provider_slugs: [nice-actimize, signicat, sumsub, complyadvantage]
+ranking_keys: [aml/banks, e-kyc, kyb]
 faq:
   - q: "What is KYC automation?"
     a: "KYC automation is the use of software to perform know-your-customer steps, such as identity verification, document checks, sanctions and PEP screening, risk scoring and ongoing monitoring, with less manual work and a recorded trail for each decision."

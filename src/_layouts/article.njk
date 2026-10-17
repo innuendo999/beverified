@@ -3,7 +3,7 @@ layout: v3.njk
 ---
 {#- Article (guide, news, research). Design: design/Blog Post V3 (Desktop).dc.html. Content: src/<section>/<slug>.md, spec docs/article-spec.md -#}
 {%- set toc = content | headingToc -%}
-{%- set related = collections.articles | relatedPosts(page.url, { providers: provList, categories: catList, topics: topics }) -%}
+{%- set related = collections.articles | relatedPosts(page.url, { providers: provider_slugs, categories: ranking_keys, topics: topics }) -%}
 <div class="container">
   <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li class="sep" aria-hidden="true">›</li><li><a href="/blog/">Blog</a></li><li class="sep" aria-hidden="true">›</li><li><a href="/category/{{ section }}/">{{ section | sectionLabel }}</a></li></ol></nav>
   <div class="art-layout">

@@ -14,8 +14,8 @@ takeaways:
   - "The EU list had 26 countries as of the Commission's latest update; Kenya and Côte d'Ivoire are both on it."
   - "On the FATF's 19 June 2026 grey list, Côte d'Ivoire had substantially completed its action plan and was awaiting an on-site visit; Kenya remained listed."
 topics: [EU High-Risk Third Countries, FATF Grey List, Enhanced Due Diligence, Kenya]
-providers: []
-categories: [aml, kyb]
+provider_slugs: []
+ranking_keys: [aml, kyb]
 faq:
   - q: "Are Kenya and Côte d'Ivoire on the EU high-risk third country list?"
     a: "Yes. Both were added by Delegated Regulation (EU) 2025/1184 with effect from 5 August 2025 and were still listed as of the Commission's January 2026 update."

@@ -13,8 +13,8 @@ takeaways:
   - "In banking, whitelisting usually means trusted payees, approved IP addresses for API access, or customers cleared as false positives in sanctions screening."
   - "A whitelist entry in sanctions screening never replaces re-screening when the sanctions list or the customer's data changes."
 topics: [Whitelist, Allowlist, Sanctions screening]
-providers: [complyadvantage, castellum-ai, sanction-scanner]
-categories: [aml, crypto]
+provider_slugs: [complyadvantage, castellum-ai, sanction-scanner]
+ranking_keys: [aml, crypto]
 faq:
   - q: "What does whitelisted mean?"
     a: "Whitelisted means something has been put on an approved list, so it is let through without the block or extra check that applies to everything else. A whitelisted email sender skips the spam filter; a whitelisted IP address can reach a system others cannot."

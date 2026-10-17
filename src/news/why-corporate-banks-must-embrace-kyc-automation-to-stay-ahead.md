@@ -13,8 +13,8 @@ takeaways:
   - "Encompass Corporation launched its EC360 platform, which hosts the EC Public Automation product discussed in this piece, on 4 February 2025."
   - "Since publication, FinCEN made beneficial ownership re-verification risk-based (February 2026), and AMLA said central registers alone are not enough to verify ownership (September 2026)."
 topics: [KYC Automation, Corporate Banking, KYB, Beneficial Ownership]
-providers: [fullcircl, strise]
-categories: [kyb, aml/banks]
+provider_slugs: [fullcircl, strise]
+ranking_keys: [kyb, aml/banks]
 faq:
   - q: "Why is corporate KYC slower than retail KYC?"
     a: "A business customer has an ownership chain, directors and beneficial owners, each of whom needs checking, and the evidence sits in registries and filings that differ by country. Collecting and reconciling it by hand takes analyst time."

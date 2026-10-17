@@ -13,8 +13,8 @@ takeaways:
   - "In Burton-Taylor's 2024 report, LexisNexis held 35.3% of the market, LSEG 28.0%, Moody's 12.3% and Dow Jones Risk & Compliance 11.8%."
   - "The 2026 edition, dated 7 July 2026, projects $3.4 billion for 2026, up 18.2%."
 topics: [AML Market, KYC Data, Sanctions Screening, AI in Compliance]
-providers: [complyadvantage, kyc360]
-categories: [aml, aml/banks]
+provider_slugs: [complyadvantage, kyc360]
+ranking_keys: [aml, aml/banks]
 faq:
   - q: "How much do financial institutions spend on AML and KYC data?"
     a: "Burton-Taylor projected $2.9 billion for 2025 and $3.4 billion for 2026. The figure covers spending on AML and KYC data and services bought from vendors, not staff or in-house systems."

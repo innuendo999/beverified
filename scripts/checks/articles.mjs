@@ -36,12 +36,13 @@ for (const f of only) {
   let fm;
   try { fm = matter(raw); } catch (e) { err(f, "front matter does not parse: " + e.message); continue; }
   const d = fm.data, body = fm.content;
-  for (const k of ["title", "seoTitle", "seoDescription", "lede", "section", "updated", "author", "takeaways", "topics", "categories", "faq", "sources"])
+  if (d.providers || d.categories) err(f, "use provider_slugs / ranking_keys, not providers / categories (they shadow global data)");
+  for (const k of ["title", "seoTitle", "seoDescription", "lede", "section", "updated", "author", "takeaways", "topics", "ranking_keys", "faq", "sources"])
     if (d[k] == null || (Array.isArray(d[k]) && !d[k].length)) err(f, `missing ${k}`);
   if (!SECTIONS.includes(d.section)) err(f, `section must be one of ${SECTIONS}`);
   if (d.section && path.basename(path.dirname(f)) !== d.section) err(f, "section does not match folder");
-  for (const p of d.providers || []) if (!providers.has(p)) err(f, `unknown provider slug ${p}`);
-  for (const c of d.categories || []) if (!rankings[c]) err(f, `unknown category key ${c}`);
+  for (const p of d.provider_slugs || []) if (!providers.has(p)) err(f, `unknown provider slug ${p}`);
+  for (const c of d.ranking_keys || []) if (!rankings[c]) err(f, `unknown category key ${c}`);
   for (const s of d.sources || []) if (!s.url || !/^https?:\/\//.test(s.url) || !s.title || !s.accessed) err(f, `incomplete source ${JSON.stringify(s)}`);
   for (const q of d.faq || []) if (!q.q || !q.a) err(f, "faq item needs q and a");
   if ((d.seoTitle || "").length > 65) err(f, `seoTitle ${d.seoTitle.length} chars`);

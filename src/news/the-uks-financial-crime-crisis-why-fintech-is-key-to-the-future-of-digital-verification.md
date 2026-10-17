@@ -14,8 +14,8 @@ takeaways:
   - "The Home Office Fraud Strategy 2026 to 2029 says the government will consider digital company identities, building on the CFIT blueprint."
   - "Companies House identity verification for directors and PSCs became mandatory on 18 November 2025."
 topics: [UK Fraud, Digital Identity, KYB, Companies House]
-providers: [fullcircl, smartsearch, gbg]
-categories: [kyb, identity-verification]
+provider_slugs: [fullcircl, smartsearch, gbg]
+ranking_keys: [kyb, identity-verification]
 faq:
   - q: "How much is lost to fraud in the UK?"
     a: "UK Finance reports £1.28 billion of payment fraud losses in 2025. The Home Office estimates the total cost of fraud against individuals and businesses in England and Wales at at least £14.4 billion in 2023 to 2024."

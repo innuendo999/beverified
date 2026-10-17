@@ -14,8 +14,8 @@ takeaways:
   - "The EU AML Regulation applies from 10 July 2027 and AMLA starts direct supervision during 2028."
   - "Public does not mean free to use: the Dutch regulator fined Clearview AI €30.5 million in 2024 for scraping faces from the web without a legal basis."
 topics: [OSINT, Fraud Prevention, KYB, Due Diligence]
-providers: [seon]
-categories: [kyb, aml, identity-verification]
+provider_slugs: [seon]
+ranking_keys: [kyb, aml, identity-verification]
 faq:
   - q: "What is OSINT in fraud prevention?"
     a: "It is the use of publicly available information, such as company registries, court records, news, websites, domain records and social media, to confirm who a customer or counterparty is and to spot signs of fraud or hidden risk."

@@ -14,8 +14,8 @@ takeaways:
   - "Coinbase said in May 2025 that bribed support staff leaked data, including ID document images, of 69,461 users, with an estimated cost of $180 million to $400 million."
   - "An Arizona woman was sentenced in July 2025 to 102 months for running a laptop farm that used 68 stolen US identities to place North Korean IT workers."
 topics: [Identity Theft, Data Breach, Synthetic Identity, Fraud Prevention]
-providers: [seon]
-categories: [identity-verification, liveness-detection, aml]
+provider_slugs: [seon]
+ranking_keys: [identity-verification, liveness-detection, aml]
 faq:
   - q: "What is the biggest identity theft case in history?"
     a: "By people affected with core identifiers exposed, the 2017 Equifax breach is among the largest: about 147 million US consumers had names, birth dates and Social Security numbers stolen. The National Public Data leak in 2024 involved more records by the hacker's claim, but the company's Maine breach notice reported 1.3 million people."

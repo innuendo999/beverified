@@ -14,8 +14,8 @@ takeaways:
   - "FinCEN's October 2025 SAR FAQs say separate continuing activity reviews are not required and transactions near the $10,000 CTR threshold do not by themselves require a SAR."
   - "Most programs combine rules with behavioural or machine-learning models, and should test coverage so every product and payment type actually reaches the monitoring engine."
 topics: [Transaction Monitoring, AML, Suspicious Activity Reports, Banking]
-providers: [nice-actimize, feedzai, hawkai, unit21, napier]
-categories: [aml, aml/banks]
+provider_slugs: [nice-actimize, feedzai, hawkai, unit21, napier]
+ranking_keys: [aml, aml/banks]
 faq:
   - q: "What is transaction monitoring?"
     a: "Transaction monitoring is the process of reviewing customer transactions, in real time or in batches, to detect activity that is unusual for that customer and may indicate money laundering, terrorist financing, fraud or sanctions evasion."

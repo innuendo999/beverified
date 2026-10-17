@@ -14,8 +14,8 @@ takeaways:
   - "OFAC's 50 Percent Rule applies to SDNs and, per OFAC FAQ 373, to entities owned 50 percent or more by persons subject to the SSI directives."
   - "Screening only the SDN list misses OFAC's non-SDN lists, which OFAC's own search tool includes."
 topics: [OFAC, SDN list, Sanctions screening]
-providers: [castellum-ai, complyadvantage, namescan]
-categories: [aml, aml/banks]
+provider_slugs: [castellum-ai, complyadvantage, namescan]
+ranking_keys: [aml, aml/banks]
 faq:
   - q: "What is the difference between the FSE list and the SDN list?"
     a: "The SDN list blocks the property of listed parties. The FSE list named foreign persons who violated or helped evade US sanctions on Iran; US persons are prohibited from transactions involving them, but they are not automatically SDNs. The FSE list has been empty since 18 December 2025."

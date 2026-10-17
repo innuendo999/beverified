@@ -23,6 +23,7 @@ use_cases:              # group = section on /use-cases/; category slug in ranki
   - { name: Crypto KYC, slug: crypto, group: Crypto, def: "Onboarding checks for exchanges and wallets, often paired with wallet screening." }
   - { name: Travel Rule, slug: travel-rule, group: Crypto, def: "Exchanging originator and beneficiary data between VASPs under FATF R.16." }
   - { name: AML for Banks, slug: aml/banks, group: Financial crime, def: "Monitoring and case management built for Tier-1 volume and examiner review." }
+  - { name: Age Verification, slug: age-verification, group: Identity, def: "Checking a user is over a set age, by selfie or email estimation, ID document or database." }
   - { name: Budget KYC, slug: cheap-kyc, group: Budget, def: "Providers with published per-check or monthly pricing and low minimums." }
 
 regions:                # area = section on /regions/; x/y = % position on the map grid; slug = region ranking page if one exists

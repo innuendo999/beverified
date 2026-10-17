@@ -13,8 +13,8 @@ takeaways:
   - "Above £3,000 a DAML request to the UK Financial Intelligence Unit is still needed, and the section 330 duty to report suspicion is unaffected."
   - "In 2024 about 23,000 DAMLs were filed for amounts between £1,000 and £3,000, and 182 of them were refused."
 topics: [DAML, Suspicious Activity Reports, UK AML]
-providers: []
-categories: [aml/banks, aml]
+provider_slugs: []
+ranking_keys: [aml/banks, aml]
 faq:
   - q: "What is the DAML threshold in the UK?"
     a: "£3,000 since 31 July 2025, for both the operating account exemption and the exit and pay away exemption in section 339A of the Proceeds of Crime Act 2002. It was £1,000 before that."

@@ -13,8 +13,8 @@ takeaways:
   - "In the US, banks must keep customer information updated on a risk basis; a FinCEN order of 13 February 2026 ended the need to re-verify beneficial owners at every new account opening for existing legal entity customers."
   - "A pKYC program needs a list of triggers, a risk model that reacts to them, clear rules on what is automated and what goes to an analyst, and an audit trail for each decision."
 topics: [Perpetual KYC, Ongoing Monitoring, Customer Due Diligence, EU AML Package]
-providers: [kyc360, napier, castellum-ai, complyadvantage]
-categories: [aml, aml/banks]
+provider_slugs: [kyc360, napier, castellum-ai, complyadvantage]
+ranking_keys: [aml, aml/banks]
 faq:
   - q: "What is perpetual KYC?"
     a: "Perpetual KYC (pKYC) is an approach to ongoing customer due diligence in which a customer's profile and risk rating are updated whenever relevant new information arrives, instead of only during scheduled periodic reviews."

@@ -14,8 +14,8 @@ takeaways:
   - "In July 2026 Andy Burnham, before taking office as Prime Minister on 20 July, said the government would not go ahead with the national digital ID scheme."
   - "Employers' right to work checks continue under Home Office guidance, last updated on 1 October 2026."
 topics: [Digital ID, Right to Work, Age Verification, UK]
-providers: [verifymy]
-categories: [identity-verification, e-kyc]
+provider_slugs: [verifymy]
+ranking_keys: [age-verification, identity-verification, e-kyc]
 faq:
   - q: "Will UK teenagers get a digital ID?"
     a: "Not under current plans. The 2025 proposal offered the ID from age 16 and consulted on 13, but the incoming Prime Minister said in July 2026 that the government would not go ahead with the national digital ID scheme."

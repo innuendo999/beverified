@@ -14,8 +14,8 @@ takeaways:
   - "Treasury published a revised 2025 version of the bill on 14 January 2026, with comments due by 13 February 2026."
   - "South Africa's next FATF mutual evaluation is set to start in mid-2026 and finish in October 2027."
 topics: [South Africa, FATF Grey List, FIC Act, Beneficial Ownership]
-providers: [relycomply]
-categories: [aml, kyb]
+provider_slugs: [relycomply]
+ranking_keys: [aml, kyb]
 faq:
   - q: "Is South Africa still on the FATF grey list?"
     a: "No. The FATF removed South Africa from its list of jurisdictions under increased monitoring on 24 October 2025. The EU then took South Africa off its own high-risk third country list with effect from 29 January 2026."

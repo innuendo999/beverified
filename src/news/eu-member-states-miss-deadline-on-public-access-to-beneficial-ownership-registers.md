@@ -13,8 +13,8 @@ takeaways:
   - "In September 2025 the Commission sent letters of formal notice to Belgium, Croatia, Cyprus, Denmark, Estonia, Germany, Greece, Italy, Poland, Slovakia and Sweden."
   - "Articles 11, 12, 13 and 15 of AMLD6, the full access regime, had to be transposed by 10 July 2026; in September 2026 the Commission opened cases against 18 states for missing it."
 topics: [Beneficial Ownership, AMLD6, EU AML Package, KYB]
-providers: [fullcircl, vespia]
-categories: [kyb, aml]
+provider_slugs: [fullcircl, vespia]
+ranking_keys: [kyb, aml]
 faq:
   - q: "Are EU beneficial ownership registers public?"
     a: "Not in general. After the CJEU's November 2022 ruling, AMLD6 limits access to authorities, obliged entities and people who can demonstrate a legitimate interest. Journalists, civil society organisations and some other groups are presumed to have one."

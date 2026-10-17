@@ -14,8 +14,8 @@ takeaways:
   - "The Transfer of Funds Regulation (EU) 2023/1113 has applied since 30 December 2024 and requires originator and beneficiary data on crypto transfers regardless of amount."
   - "Check any provider on the ESMA Interim MiCA Register, which ESMA republishes weekly."
 topics: [MiCA, CASP Authorisation, Travel Rule, Stablecoins, ESMA]
-providers: [sumsub, complyadvantage]
-categories: [crypto, travel-rule, aml]
+provider_slugs: [sumsub, complyadvantage]
+ranking_keys: [crypto, travel-rule, aml]
 faq:
   - q: "What is MiCA compliance?"
     a: "It means meeting the rules of the EU Markets in Crypto-Assets Regulation (EU) 2023/1114: holding CASP authorisation (or an Article 60 notification) to provide crypto-asset services, meeting prudential, conduct and custody rules, and, for token issuers, the white paper and stablecoin requirements."

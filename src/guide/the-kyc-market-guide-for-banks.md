@@ -13,8 +13,8 @@ takeaways:
   - "EU member states must offer European Digital Identity Wallets by the end of 2026, and firms legally required to identify customers will have to accept them for authentication."
   - "The EU AML Regulation applies from 10 July 2027; AMLA plans to select about 40 entities for direct supervision during 2027 and start supervising them during 2028."
 topics: [KYC, Banking, Digital Identity, EU AML Package, AI Act]
-providers: [veriff, signicat, trulioo, nice-actimize, kyc360]
-categories: [aml/banks, identity-verification, kyb]
+provider_slugs: [veriff, signicat, trulioo, nice-actimize, kyc360]
+ranking_keys: [aml/banks, identity-verification, kyb]
 faq:
   - q: "What are the main parts of a KYC program for banks?"
     a: "Customer identification (collecting and verifying identity data), customer due diligence with enhanced due diligence for higher-risk customers, and ongoing monitoring that keeps the customer profile and risk rating current."

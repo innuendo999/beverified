@@ -20,8 +20,8 @@ author: andrii-klymenko
 takeaways:                  # 3-5 bullets, each one sentence, each a real fact or instruction
   - "..."
 topics: [Whitelist, Sanctions screening]   # 2-5 short topic tags, Title Case
-providers: [complyadvantage, sumsub]       # provider slugs from src/_data/providers that the article genuinely discusses (0-6)
-categories: [aml, kyb]                     # ranking keys from src/_data/rankings.yml relevant to the reader (1-3)
+provider_slugs: [complyadvantage, sumsub]  # provider slugs from src/_data/providers that the article genuinely discusses (0-6)
+ranking_keys: [aml, kyb]                   # ranking keys from src/_data/rankings.yml relevant to the reader (1-3)
 faq:                                       # 3-5, use real search queries where given
   - q: "What does whitelisted mean?"
     a: "Plain answer, 1-3 sentences."

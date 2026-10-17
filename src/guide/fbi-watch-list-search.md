@@ -14,8 +14,8 @@ takeaways:
   - "Law enforcement reaches banks through FinCEN's 314(a) program, which posts requests every two weeks and asks institutions to report matches within two weeks."
   - "Travellers who are repeatedly delayed or denied boarding can file a redress inquiry through DHS TRIP."
 topics: [Watchlist screening, OFAC, Counter-terrorist financing]
-providers: [complyadvantage, castellum-ai, namescan, membercheck]
-categories: [aml, aml/banks]
+provider_slugs: [complyadvantage, castellum-ai, namescan, membercheck]
+ranking_keys: [aml, aml/banks]
 faq:
   - q: "Can I search the FBI watch list?"
     a: "No. The terrorist watchlist is not public, and the FBI's Threat Screening Center does not confirm whether anyone is on it. You can search the FBI's public Most Wanted pages and OFAC's sanctions lists, which are different things."

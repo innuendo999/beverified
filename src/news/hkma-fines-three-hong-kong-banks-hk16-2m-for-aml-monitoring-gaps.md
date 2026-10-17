@@ -13,8 +13,8 @@ takeaways:
   - "Indian Overseas Bank's Hong Kong branch was also reprimanded and must run a look-back review, submit a remedial plan and get an independent assessment of the fix."
   - "The breaches fall under Schedule 2 of the Anti-Money Laundering and Counter-Terrorist Financing Ordinance (Cap. 615)."
 topics: [HKMA, Transaction Monitoring, Hong Kong, AML Enforcement]
-providers: [nice-actimize, feedzai]
-categories: [aml/banks, aml]
+provider_slugs: [nice-actimize, feedzai]
+ranking_keys: [aml/banks, aml]
 faq:
   - q: "Which banks did the HKMA fine in July 2025?"
     a: "Indian Overseas Bank, Hong Kong Branch (HK$8.5M), Bank of Communications (Hong Kong) Limited (HK$4M) and Bank of Communications Co., Ltd., Hong Kong Branch (HK$3.7M), a total of HK$16.2M."

@@ -14,8 +14,8 @@ takeaways:
   - "Entities owned 50 percent or more by blocked persons are blocked even when they are not on the list."
   - "OFAC penalties totalled $265.7 million in 2025 and $296.0 million in 2026 up to mid-October."
 topics: [OFAC, SDN list, Sanctions screening, Banking]
-providers: [complyadvantage, castellum-ai, smartsearch]
-categories: [aml/banks, aml]
+provider_slugs: [complyadvantage, castellum-ai, smartsearch]
+ranking_keys: [aml/banks, aml]
 faq:
   - q: "What are the OFAC sanctions lists?"
     a: "The main one is the Specially Designated Nationals and Blocked Persons (SDN) list. OFAC also publishes non-SDN lists: SSI, FSE, NS-MBS, NS-PLC, CAPTA and NS-CMIC. Each has its own legal basis and restrictions."

@@ -9,10 +9,8 @@ export const articleData = (section) => ({
   permalink: (d) => `/${section}/${d.page.fileSlug}/`,
   eleventyComputed: {
     au: (d) => d.authors?.[d.author] || null,
-    provList: (d) => (Array.isArray(d.providers) ? d.providers : []),
-    catList: (d) => (Array.isArray(d.categories) ? d.categories : []),
-    mentioned: (d) => (Array.isArray(d.providers) ? d.providers : []).map((s) => d.allProviders?.[s]).filter(Boolean),
-    rankingsFor: (d) => (Array.isArray(d.categories) ? d.categories : []).map((k) => ({ c: d.allCategories?.[k], n: d.rankings?.[k]?.providers?.length || 0 })).filter((x) => x.c),
+    mentioned: (d) => (d.provider_slugs || []).map((s) => d.allProviders?.[s]).filter(Boolean),
+    rankingsFor: (d) => (d.ranking_keys || []).map((k) => ({ c: d.allCategories?.[k], n: d.rankings?.[k]?.providers?.length || 0 })).filter((x) => x.c),
     jsonld: (d) => {
       const url = `${d.site.url}/${section}/${d.page.fileSlug}/`;
       const au = d.authors?.[d.author];
@@ -25,7 +23,7 @@ export const articleData = (section) => ({
           ...(au ? { author: { "@type": "Person", "@id": `${d.site.url}${au.url}#person`, name: au.name, url: `${d.site.url}${au.url}` } } : {}),
           publisher: { "@id": `${d.site.url}/#organization` },
           ...(d.topics?.length ? { keywords: d.topics.join(", ") } : {}),
-          ...(Array.isArray(d.providers) && d.providers.length ? { mentions: d.providers.map((s) => ({ "@id": `${d.site.url}/providers/${s}/#software` })) } : {}),
+          ...(d.provider_slugs?.length ? { mentions: d.provider_slugs.map((s) => ({ "@id": `${d.site.url}/providers/${s}/#software` })) } : {}),
           ...((d.sources || []).length ? { citation: d.sources.map((s) => s.url) } : {}),
         },
         { "@type": "BreadcrumbList", itemListElement: [

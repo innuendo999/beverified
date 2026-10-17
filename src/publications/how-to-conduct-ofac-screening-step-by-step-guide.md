@@ -14,8 +14,8 @@ takeaways:
   - "Since March 2025, OFAC records must be kept for at least 10 years, up from five."
   - "OFAC's October 2026 Bank of America settlement shows that delayed list updates and badly ranked alerts lead to penalties even when the bank owns screening software."
 topics: [OFAC, Sanctions screening, AML compliance]
-providers: [complyadvantage, castellum-ai, sanction-scanner, namescan]
-categories: [aml, aml/banks, crypto]
+provider_slugs: [complyadvantage, castellum-ai, sanction-scanner, namescan]
+ranking_keys: [aml, aml/banks, crypto]
 faq:
   - q: "What are the OFAC screening requirements?"
     a: "US persons must not deal with blocked parties and must block their property, report blocked property and rejected transactions within 10 business days, and keep records for 10 years. No rule spells out a specific screening program, but examiners and OFAC expect a risk-based one that includes list screening."
