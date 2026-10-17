@@ -4,7 +4,7 @@ alternate_names: []
 status: published
 seo:
   title: 'Signicat Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'Signicat review: pan-European digital identity platform with 35+ national eID methods, built through a decade of acquisitions. Features, pricing, pros & cons, alternatives.'
+  description: 'Signicat review: pan-European digital identity platform with 35+ eID methods and wallets, built through years of acquisitions. Features, pricing, pros & cons, alternatives.'
   h1: 'Signicat Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/signicat.png
@@ -22,49 +22,69 @@ link:
   url: https://www.signicat.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-07-28'
+last_verified: '2026-10-18'
 updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: 'Signicat''s breadth is its case: 35+ national electronic-ID methods, e-signatures, and KYC/AML onboarding unified in one platform, built through nearly a decade of acquisitions (Idfy, Connectis, Encap Security, Sphonic, and others). As an EU-qualified trust service provider, it''s a natural fit for pan-European onboarding, though its per-country breadth is more valuable in Europe than elsewhere.'
+verdict: 'Signicat''s breadth is its case: 35+ electronic-ID methods and digital wallets, e-signatures, and KYC/AML onboarding in one platform, built through a run of acquisitions since 2019 (Connectis, Encap, Dokobit, Electronic IDentification, Sphonic and, in 2025, Inverid''s ReadID). It is an EU qualified trust service provider and holds a DNV-issued ISO 27001 certificate, which makes it a natural fit for pan-European onboarding, though its per-country breadth is more valuable in Europe than elsewhere.'
 what_is:
-- Signicat is a digital-identity and electronic-trust platform founded in 2006 as a spin-off of Kantega, headquartered in Trondheim, Norway, and backed by Nordic Capital since 2019. It unifies identity verification, authentication, electronic signing, and KYC/AML onboarding for more than 1,300 enterprise customers across banking, government, and insurance, built up through acquisitions including Idfy, Connectis, Encap Security, and the UK fraud-and-AML specialist Sphonic.
+- Signicat is a digital-identity and electronic-trust platform that has operated since 2006, headquartered in Trondheim, Norway, and owned by Nordic Capital since 2019. It covers identity proofing, authentication, electronic signing and trust orchestration, and says more than 21,000 companies use its solutions. It grew through acquisitions including Connectis, Encap, Dokobit, Electronic IDentification, the UK anti-fraud and identity specialist Sphonic (2022) and Inverid, maker of the NFC-based ReadID (2025).
 features:
-- 35+ national electronic-ID (eID) verification methods across Europe.
-- Document and biometric identity verification for KYC/KYB onboarding.
-- Electronic signing and identity orchestration in one platform.
-- AML/KYC-compliant onboarding workflows aligned with eIDAS.
-- Fraud and financial-crime detection via its Sphonic acquisition.
-- EU Qualified Trust Service Provider (QTSP) status.
+- 35+ electronic-ID (eID) methods and digital wallets, mostly European.
+- ID document and biometric verification, including NFC chip reading through ReadID.
+- Electronic signing (API and Dokobit portal) and trust orchestration in one platform.
+- PEP, sanctions and adverse-media data sources within the onboarding platform.
+- Fraud and identity risk tooling, expanded through the 2022 Sphonic acquisition.
+- EU Qualified Trust Service Provider (QTSP) services under eIDAS.
 pricing:
-  summary: Signicat does not publish pricing; its digital-identity platform is licensed to enterprises based on module selection (identity verification, e-signing, KYC/AML) and volume.
+  summary: Pricing is not published; Signicat quotes on request. Its pricing page says costs combine setup, subscription and transaction fees, that transaction prices depend on the identity methods used, with volume discounts, and that a free developer account is available.
   plans:
   - tier: Enterprise Quote
     price: Custom
-    note: Modular identity, signing, and KYC/AML licensing
-    extra: Contact sales for a quote
-  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as third-party estimates or unverified are not the vendor''s official rate.'
-  verified: null
-  items: []
+    note: Setup, subscription and transaction fees
+    extra: Free developer account; contact sales for a quote
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Pricing model
+    value: Setup, subscription and transaction fees; quote on request
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: Transaction pricing
+    value: Depends on identity methods used; volume discounts apply
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: Free developer account
+    value: Available
+    kind: official
+    source: 2
+    verified: '2026-10'
 facts:
 - label: From
   value: Custom quote
-  source: null
+  source: 2
+  evidence: vendor
 - label: Effective
-  value: Not disclosed
+  value: Not publicly disclosed
   source: null
 - label: Founded
   value: '2006'
-  source: null
+  source: 8
+  evidence: vendor
 - label: HQ
   value: Trondheim, Norway
-  source: null
+  source: 4
+  evidence: vendor
 - label: Regions
-  value: Europe (14+ countries)
-  source: null
+  value: Europe (offices in 12 countries)
+  source: 4
+  evidence: vendor
 - label: Certifications
-  value: EU QTSP, eIDAS-compliant
-  source: null
+  value: ISO/IEC 27001:2022 (DNV), EU QTSP
+  source: 6
+  evidence: independent
 pros:
-- Broadest national eID method coverage in Europe (35+ methods)
+- Broad European eID coverage (35+ eID methods and digital wallets)
 - EU Qualified Trust Service Provider (QTSP) status under eIDAS
 - Built comprehensive breadth through acquisitions rather than starting from scratch
 cons:
@@ -89,12 +109,12 @@ choose_instead:
 - slug: sumsub
   text: you want published pricing and broader non-European/crypto coverage.
 user_reviews:
-  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  legacy_note: null
   praise:
-  - 'eID breadth (frequently cited): reviewers highlight the number of national identity methods supported across Europe.'
-  - 'Trust-service credibility: clients note confidence from its EU QTSP status.'
+  - 'eID breadth: the number of identity methods supported across Europe is the main draw.'
+  - 'Trust-service credibility: its EU QTSP status matters for regulated buyers.'
   criticize:
-  - 'Product cohesion: some reviewers note the platform feels assembled from multiple acquisitions rather than built as one system.'
+  - 'Product cohesion: the platform is assembled from several acquisitions rather than built as one system.'
   - 'Pricing opacity: no published rate card, quote only.'
   by_profile:
   - European banks and government agencies value Signicat's national eID breadth.
@@ -102,25 +122,102 @@ user_reviews:
   - Businesses outside Europe more often evaluate globally focused competitors instead.
 faq:
 - q: How much does Signicat cost?
-  a: Signicat does not publish pricing; its platform is licensed based on module selection (identity verification, e-signing, KYC/AML) and volume.
+  a: Signicat does not publish prices. Its pricing page says costs combine setup, subscription and transaction fees, with transaction prices depending on the identity methods used and volume discounts applied. A free developer account is available.
 - q: What is an EU Qualified Trust Service Provider?
-  a: A QTSP is a provider authorized under the EU's eIDAS regulation to issue qualified electronic signatures and trust services; Signicat holds this status.
+  a: A QTSP is a provider authorized under the EU's eIDAS regulation to provide qualified trust services such as qualified certificates, time-stamps and signature validation. Signicat lists QTSP entries in Norway, Spain and Lithuania (through Dokobit).
 - q: How many identity methods does Signicat support?
-  a: Signicat supports 35+ national electronic-ID (eID) verification methods across Europe, one of the broadest sets in the category.
+  a: Signicat says it supports 35+ electronic identity methods and digital wallets, most of them European.
 - q: Does Signicat do AML screening?
-  a: Yes, through its 2022 acquisition of the UK-based fraud-and-AML specialist Sphonic, Signicat added financial-crime detection to its identity platform.
+  a: Signicat offers access to PEP, sanctions and adverse-media data sources within its platform, and it added anti-fraud and identity technology through its April 2022 acquisition of the UK company Sphonic.
 - q: What is the best alternative to Signicat?
   a: IDnow is the best alternative for BaFin-compliant video identification in Germany specifically. Sumsub is the closest fit for published pricing and global/crypto coverage.
 - q: Who are Signicat's main competitors?
   a: Signicat competes with IDnow, Onfido, and Sumsub, differentiating through the breadth of national eID methods it supports across Europe.
 segments: []
 capabilities: {}
-certifications: []
-user_ratings: []
+certifications:
+- name: ISO/IEC 27001:2022
+  what: Information security (DNV, valid to Oct 2029)
+  status: confirmed
+  source: 6
+- name: UK DIATF (ReadID)
+  what: UK digital identity trust framework
+  status: confirmed
+  source: 7
+- name: eIDAS Qualified Trust Service Provider
+  what: Qualified trust services
+  status: vendor_stated
+  source: 5
+- name: SOC 2
+  what: Security controls report
+  status: vendor_stated
+  source: 5
+- name: Cyber Essentials Plus
+  what: UK cyber security scheme
+  status: vendor_stated
+  source: 5
+- name: ENS High (Spain)
+  what: Spanish National Security Framework
+  status: vendor_stated
+  source: 5
+user_ratings:
+- platform: G2
+  rating: 4.4
+  count: 8
+  checked: '2026-10'
+  url: https://www.g2.com/products/signicat/reviews
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
-sources: []
+sources:
+- title: About Signicat
+  publisher: Signicat
+  url: https://www.signicat.com/about
+  accessed: '2026-10'
+- title: Signicat pricing
+  publisher: Signicat
+  url: https://www.signicat.com/pricing
+  accessed: '2026-10'
+- title: Signicat homepage (products and customers)
+  publisher: Signicat
+  url: https://www.signicat.com/
+  accessed: '2026-10'
+- title: Signicat contact and offices
+  publisher: Signicat
+  url: https://www.signicat.com/contact
+  accessed: '2026-10'
+- title: Signicat Security and Compliance Centre
+  publisher: Signicat
+  url: https://www.signicat.com/security-trust
+  accessed: '2026-10'
+- title: ISO/IEC 27001:2022 certificate C849517, Signicat AS
+  publisher: DNV Business Assurance
+  url: https://d2qcmozihn2auk.cloudfront.net/documents/ISO-IEC_27001-ENG-C849517-1-20261012.pdf
+  accessed: '2026-10'
+- title: Digital verification services register, Signicat B.V. (ReadID)
+  publisher: GOV.UK
+  url: https://www.access-dvs-register.service.gov.uk/register/provider-details?providerId=69
+  accessed: '2026-10'
+- title: Signicat acquires Sphonic
+  publisher: Signicat
+  url: https://www.signicat.com/press-releases/signicat-acquires-sphonic
+  accessed: '2026-10'
+- title: Signicat and Connectis join forces to create major European player on digital ID market
+  publisher: SIDN
+  url: https://www.sidn.nl/en/news-and-blogs/signicat-and-connectis-join-forces-to-create-major-european-player-on
+  accessed: '2026-10'
+- title: Signicat übernimmt Inverid
+  publisher: Startbase
+  url: https://www.startbase.de/news/signicat-uebernimmt-inverid/
+  accessed: '2026-10'
+- title: PEP and sanctions screening, a guide to compliance and risk management
+  publisher: Signicat
+  url: https://www.signicat.com/blog/pep-and-sanctions-screening-a-guide-to-compliance-and-risk-management
+  accessed: '2026-10'
+- title: Signicat reviews
+  publisher: G2
+  url: https://www.g2.com/products/signicat/reviews
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -129,7 +226,16 @@ entity:
   - https://www.linkedin.com/company/signicat
   - https://www.crunchbase.com/organization/signicat
 legacy_issues: []
-legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure above directly against Signicat's official pricing page and profiles before this page goes live.
+legacy_editorial_note: null
+verification_notes:
+- EU QTSP status is vendor-stated here; Signicat links to EU Trusted List entries (NO, ES, LT) but the trusted-list browser is a dynamic app and was not read.
+- ISO 27001 confirmed from the DNV certificate PDF itself (C849517, Signicat AS, valid 12 Oct 2026 to 11 Oct 2029); the DNV certificate checker blocked automated access.
+- UK DIATF register entry for Signicat B.V. (ReadID) opened; the page did not show role or certificate dates.
+- SOC 2 statement on the security page refers to Type 1 for 2018 and Type 2 for 2019; no current report confirmed.
+- Idfy was removed from the acquisitions list (no source opened) and "spin-off of Kantega" removed (no source opened).
+- Customer count changed from 1,300+ enterprise customers to the vendor's current "more than 21,000 companies"; the two figures may count different things.
+- Homepage claims "over 240 identity methods", which appears to include data sources; we keep the About page's 35+ eID methods and digital wallets.
+- G2 has only 8 reviews; user review themes are kept as general statements.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

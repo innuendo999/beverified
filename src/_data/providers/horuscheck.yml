@@ -4,13 +4,13 @@ alternate_names: []
 status: published
 seo:
   title: 'HorusCheck Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'HorusCheck review: KYC/AML verification provider — most company details pending independent verification. Features, pricing, pros & cons, alternatives.'
+  description: 'HorusCheck (Horus Checks) review: self-service KYC, KYB and AML platform with pay-as-you-go pricing; company details not published. Features, pricing, pros & cons, alternatives.'
   h1: 'HorusCheck Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/horuscheck.webp
   background: '#9166F2'
   wordmark: null
-tagline: KYC/AML verification provider; most company details not independently verified
+tagline: Self-service KYC, KYB and AML platform; company details not publicly disclosed
 score: 4.1
 grade: Good
 primary_category: aml
@@ -19,51 +19,61 @@ categories:
 - aml
 - identity-verification
 link:
-  url: null
+  url: https://horuscheck.io
   type: null
   legacy_rel: null
-last_verified: '2026-07-29'
+last_verified: '2026-10-18'
 updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: HorusCheck appears in provider listings as a KYC/AML verification tool, but most specifics (founding year, headquarters, pricing and detailed coverage) could not be independently confirmed from public sources at the time of writing. Treat this page as a provisional, honestly minimal profile until those details are verified directly with the vendor.
+verdict: HorusCheck, which brands itself Horus Checks, sells a self-service KYC, KYB and AML platform with document checks, liveness, watchlist screening and a no-code flow builder. Its website does not name the company behind it, its location, founding year or prices, so treat it as a lightly documented option and confirm those details with the vendor before shortlisting.
 what_is:
-- HorusCheck is listed as a KYC/AML verification provider. Its founding year, headquarters, detailed feature set, and coverage figures are not publicly disclosed in sources available at the time of writing.
+- HorusCheck (Horus Checks, horuscheck.io) is a self-service compliance platform for KYC, KYB and AML checks, aimed at both regulated and non-regulated businesses such as banks, crypto exchanges, fintech, gaming, hospitality, insurtech, real estate and travel. It offers ID document verification with OCR and MRZ validation across 14,000+ document templates, one-shot and 3D liveness with face matching, AML watchlist and sanctions screening, KYB with registry and UBO checks, and a no-code verification flow builder. Its website, terms and privacy policy do not name a legal entity, address or founding year.
 features:
-- Identity verification (general capability, per available listings).
-- KYC and AML checks (general capability, per available listings).
-- Specific feature depth not independently confirmed
+- ID document verification with OCR and MRZ validation across 14,000+ document templates.
+- One-shot and 3D liveness detection with face matching.
+- Real-time AML screening against global watchlists and sanctions lists.
+- KYB with data collection, registry verification and UBO checks.
+- No-code flow builder with routing by risk score, geography or document type.
+- Self-service console with pay-as-you-go pricing.
 pricing:
-  summary: HorusCheck's pricing is not publicly disclosed and could not be independently verified; contact the vendor directly for current rates.
+  summary: Pricing is not published as figures; Horus Checks describes its model as pay as you go and quotes on request.
   plans:
-  - tier: Not Publicly Disclosed
-    price: Not public
-    note: Contact vendor directly for pricing details
-    extra: null
-  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
-  verified: null
-  items: []
+  - tier: Pay as you go
+    price: Not published
+    note: Usage-based; no prices shown on the website
+    extra: Contact the vendor or sign up in the console
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Pricing model
+    value: Pay as you go; no prices published
+    kind: official
+    source: 1
+    verified: '2026-10'
 facts:
 - label: From
-  value: Not disclosed
-  source: null
-- label: Effective
-  value: Not disclosed
-  source: null
+  value: Not publicly disclosed
+- label: Model
+  value: Pay as you go
+  source: 1
+  evidence: vendor
 - label: Founded
-  value: Unverified
-  source: null
+  value: Not publicly disclosed
 - label: HQ
-  value: Unverified
-  source: null
+  value: Not publicly disclosed
 - label: Regions
-  value: Not disclosed
-  source: null
+  value: Not publicly disclosed
+- label: Documents
+  value: 14,000+ ID templates
+  source: 1
+  evidence: vendor
 pros:
-- Appears as a dedicated KYC/AML verification option in provider listings
-- Positioned specifically around identity and compliance checks
+- Covers KYC, KYB and AML screening in one self-service platform
+- No-code verification flow builder with risk-based routing
+- Pay-as-you-go model with a self-service console, no sales cycle required
 cons:
-- Limited public information available on company history, HQ, and scale
-- No independently verifiable pricing or detailed feature set
-- Founding year and coverage figures require direct vendor confirmation
+- Website does not name the company, its address or founding year
+- No prices published despite the pay-as-you-go model
+- No certifications or independent test results published beyond a GDPR badge
 alternatives:
 - slug: complycube
   name: ComplyCube
@@ -78,30 +88,30 @@ choose_instead:
 - slug: complycube
   text: you want a better-documented, API-first KYC/AML platform with a verified track record.
 - slug: idenfy
-  text: you want transparent, verifiable pay-per-approved pricing.
+  text: you want published per-check pricing with an option to pay only for approved verifications.
 - slug: kycaid
   text: you want a more thoroughly documented all-in-one KYC/AML platform.
 user_reviews:
-  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  legacy_note: null
   praise:
-  - 'Category listing (available information): HorusCheck appears among KYC/AML verification tools in provider directories.'
+  - 'Scope: HorusCheck covers KYC, KYB and AML checks in one self-service product.'
   criticize:
-  - 'Verifiability: little independent information is available about the company''s history, scale and pricing.'
+  - 'Transparency: little public information is available about the company behind the product, its scale and its pricing.'
   by_profile:
-  - Businesses evaluating HorusCheck should independently verify company details before committing.
+  - Businesses evaluating HorusCheck should confirm the legal entity and data-hosting location before signing.
   - Teams prioritizing vendor track record and public transparency may want to weigh this gap carefully.
-  - Confirm current company information directly with the vendor before including it in a shortlist.
+  - Ask for pricing and any security certifications in writing before including it in a shortlist.
 faq:
 - q: How much does HorusCheck cost?
-  a: HorusCheck's pricing is not publicly disclosed and could not be independently verified; contact the vendor directly for current rates.
+  a: Pricing is not published as figures; Horus Checks describes its model as pay as you go and quotes on request.
 - q: Who founded HorusCheck and when?
-  a: This could not be independently verified from public sources at the time of writing. Confirm directly with the vendor before relying on any specific founding date.
+  a: Not publicly disclosed. The website, terms and privacy policy do not name the company, its founders or its founding year.
 - q: Where is HorusCheck headquartered?
-  a: HorusCheck's headquarters could not be independently verified from public sources; confirm directly with the vendor.
+  a: Not publicly disclosed. The website gives only a contact form and says data is held on GDPR-compliant infrastructure, without naming a country.
 - q: What does HorusCheck offer?
-  a: Based on available listings, HorusCheck is positioned as a KYC/AML identity-verification tool; detailed feature specifics require direct vendor confirmation.
+  a: ID document verification with OCR and MRZ checks across 14,000+ templates, liveness and face matching, AML watchlist and sanctions screening, KYB with UBO checks and a no-code flow builder.
 - q: What is the best alternative to HorusCheck?
-  a: ComplyCube is the best-documented alternative with a verified API-first track record. iDenfy is the closest fit for transparent, verifiable pricing.
+  a: ComplyCube is the best-documented alternative with a verified API-first track record. iDenfy is the closest fit for published per-check pricing.
 - q: Who are HorusCheck's competitors?
   a: HorusCheck is positioned alongside ComplyCube, iDenfy, and KYCAID in the KYC/AML verification space.
 segments: []
@@ -111,13 +121,32 @@ user_ratings: []
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
-sources: []
+sources:
+- title: Horus Checks homepage (products, pricing model)
+  publisher: Horus Checks
+  url: https://horuscheck.io/
+  accessed: '2026-10'
+- title: Terms and conditions
+  publisher: Horus Checks
+  url: https://horuscheck.io/terms
+  accessed: '2026-10'
+- title: Privacy policy
+  publisher: Horus Checks
+  url: https://horuscheck.io/privacy
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
-  same_as: []
+  same_as:
+  - https://horuscheck.io
 legacy_issues: []
-legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against HorusCheck's official pricing page and profiles before this page goes live.
+legacy_editorial_note: null
+verification_notes:
+- Legal entity, registration number, address, founding year and country are not on the website, terms or privacy policy; no registry entry could be matched.
+- Pricing section on horuscheck.io shows only the heading "A flexible pay as you go solution"; figures may load by script and were not visible.
+- No review-platform listings (G2, Capterra, Trustpilot) found for HorusCheck.
+- link.url set to https://horuscheck.io (previously empty); link.type left for the owner.
+- The old page had only 2 pros; a third was added from the homepage.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
