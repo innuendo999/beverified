@@ -1,0 +1,21 @@
+<footer class="site-footer">
+  <div class="container">
+    <p class="footer-meta"><span>Updated {{ updated }}</span><span aria-hidden="true">·</span><span>{{ footerMeta or "Reviewed by 3 compliance analysts" }}</span></p>
+    <nav class="footer-grid" aria-label="Footer">
+{%- for col in site.footer.columns %}
+      <div class="footer-col">
+        <p class="footer-col-title">{{ col.title | safe }}</p>
+{%- for link in col.links %}
+        <a href="{{ link.href }}">{{ link.label }}</a>
+{%- endfor %}
+{%- if page.url == "/" and col.homeExtraLinks %}
+{%- for link in col.homeExtraLinks %}
+        <a href="{{ link.href }}">{{ link.label }}</a>
+{%- endfor %}
+{%- endif %}
+      </div>
+{%- endfor %}
+    </nav>
+    <p class="footer-disclosure"{% if disclosureId %} id="{{ disclosureId }}"{% endif %}>{{ site.footer.disclosure }}</p>
+  </div>
+</footer>

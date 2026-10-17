@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(./_site/**)",
+      "Read(./node_modules/**)",
+      "Read(./src/backup-files/**)"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="/" aria-label="BeVerified home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">Be<em>Verified</em></span>
+    </a>
+    <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
+      <span class="visually-hidden">Toggle menu</span>
+      <span class="nav-toggle-icon" aria-hidden="true"></span>
+    </button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+{%- for item in site.header.nav %}
+{%- if page.url == "/" and item.homeHref %}
+      <a href="{{ item.homeHref }}">{{ item.label }}</a>
+{%- elif item.key and item.key == navCurrent %}
+      <a href="{{ item.currentHref or item.href }}" aria-current="page">{{ item.label }}</a>
+{%- else %}
+      <a href="{{ item.href }}">{{ item.label }}</a>
+{%- endif %}
+{%- endfor %}
+    </nav>
+    <a class="btn btn-outline btn-sm header-cta" href="{{ site.header.cta.href }}">{{ site.header.cta.label }}</a>
+  </div>
+</header>
