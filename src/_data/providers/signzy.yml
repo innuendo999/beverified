@@ -4,7 +4,7 @@ alternate_names: []
 status: published
 seo:
   title: 'Signzy Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'Signzy review: no-code KYC/KYB builder built for India''s BFSI market, distributed globally via Mastercard. Features, pricing, pros & cons, alternatives.'
+  description: 'Signzy review: no-code KYC/KYB builder built for India''s BFSI market, with a global video-KYC partnership with Mastercard. Features, pricing, pros & cons, alternatives.'
   h1: 'Signzy Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/signzy.png
@@ -23,58 +23,64 @@ link:
   url: https://signzy.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-07-29'
+last_verified: '2026-10-18'
 updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: Signzy's no-code visual workflow builder is specialized for India (Aadhaar e-KYC, V-CIP video verification and GSTIN business lookups), while a 2020 Mastercard alliance extends its video-KYC distribution globally. It's the strongest option here for India-specific BFSI compliance, though its depth outside that market requires more configuration.
+verdict: Signzy's no-code onboarding platform is specialized for India (Aadhaar-based checks, CKYC and RBI-compliant V-CIP video verification), while a 2020 Mastercard partnership set out to roll its video KYC out globally. It's the strongest option here for India-specific BFSI compliance, though its depth outside that market requires more configuration.
 what_is:
-- 'Signzy is a no-code KYC/KYB/AML platform founded in 2015 in Bengaluru, India, by an IIT-trained trio: CEO Ankit Ratan, Arpit Ratan, and Ankur Pandey, having raised more than $38.7M from investors including Kalaari, SAP, and Mastercard. It serves the largest Indian banks, 10 Fortune 30 companies, and a top-3 US acquiring bank, distributing its video-KYC technology globally through a 2020 Mastercard alliance.'
+- 'Signzy is a no-code KYC/KYB/AML platform founded in 2015 in Bengaluru, India, by Ankit Ratan (CEO), Arpit Ratan and Ankur Pandey. It has raised more than $37 million from investors including Gaja Capital, Vertex Ventures, Arkam Ventures, Kalaari and Mastercard. It says more than 1,800 financial institutions and technology companies use it, and it lists offices in India, the US and the UAE. In 2020 Mastercard partnered with Signzy for a global rollout of its video-KYC solution.'
 features:
-- No-code visual workflow builder for KYC/KYB flows.
-- 'Individual KYC: V-CIP video verification, Aadhaar e-KYC, face match, document OCR.'
-- 'Business KYC/KYB: GSTIN lookups, MCA director checks, UBO identification, business address verification.'
-- AML and sanctions screening.
-- Fraud monitoring, expanded after its 2024 acquisition of Difenz.
-- Distribution via Microsoft Azure Marketplace and Mastercard's global alliance.
+- No-code platform for designing onboarding and KYC/KYB journeys.
+- 'Individual KYC: RBI-compliant V-CIP video verification, face match against PAN and Aadhaar, CKYC search and upload.'
+- 'Business KYC/KYB: business verification against registered documents and government databases, plus UBO checks.'
+- Real-time sanctions and PEP screening.
+- Transaction monitoring and fraud detection, expanded after its 2024 acquisition of Difenz.
+- Bank account verification (penny drop, IFSC check) and Aadhaar eSign.
 pricing:
-  summary: Signzy's India-market pricing is reported by third parties at roughly ₹5 to ₹35 per AML/sanctions check plus a ₹2 to 15 lakh annual platform commitment for the no-code builder. Check current rates directly with Signzy, especially outside India.
+  summary: Pricing is not published; Signzy quotes on request. Signzy describes its pricing as pay-as-you-go and modular, so you can pay for specific APIs rather than the full suite.
   plans:
-  - tier: Per-Check (India, reported)
-    price: ₹5 to ₹35 / check
-    note: AML/sanctions screening, third-party reported
-    extra: null
-  - tier: Platform Fee (India, reported)
-    price: ₹2 to 15 lakh / yr
-    note: No-code platform enterprise commit, third-party reported
-    extra: Contact sales for global pricing
-  legacy_verified_note: 'Pricing verified: Jul 2026, from publicly available sources; figures marked as unverified are not the vendor''s official rate.'
-  verified: null
-  items: []
+  - tier: Custom Quote
+    price: Custom
+    note: Pay-as-you-go, modular by API
+    extra: Contact sales for a quote
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Pricing model
+    value: Pay-as-you-go, modular by API; quote on request
+    kind: official
+    source: 9
+    verified: '2026-10'
 facts:
 - label: From
-  value: ₹5/check (India, reported)
-  source: null
+  value: Custom quote
+  source: 9
+  evidence: vendor
 - label: Effective
-  value: Not disclosed
+  value: Not publicly disclosed
   source: null
 - label: Founded
   value: '2015'
-  source: null
+  source: 6
+  evidence: independent
 - label: HQ
   value: Bengaluru, India
-  source: null
+  source: 1
+  evidence: vendor
 - label: Regions
-  value: India, global via Mastercard
-  source: null
+  value: India, US, Middle East
+  source: 1
+  evidence: vendor
 - label: Funding
-  value: $38.7M+ raised (Kalaari, SAP, Mastercard)
-  source: null
+  value: $37M+ raised (Feb 2024)
+  source: 7
+  evidence: independent
 pros:
-- 'Deep India-specific coverage: Aadhaar e-KYC, GSTIN, V-CIP video verification'
-- No-code drag-and-drop builder accessible to BFSI compliance teams
-- Global distribution reach via its Mastercard alliance
+- 'Deep India-specific coverage: Aadhaar-based checks, CKYC, V-CIP video verification'
+- No-code builder accessible to BFSI compliance teams
+- Global video-KYC partnership with Mastercard
 cons:
 - Depth is concentrated in India; other markets need more configuration
-- Enterprise-commit platform fee structure, per reported pricing
+- No published pricing
 - Younger global brand outside India
 alternatives:
 - slug: idmerit
@@ -94,38 +100,86 @@ choose_instead:
 - slug: kychub
   text: you want no-code orchestration across the full AML lifecycle, beyond KYC/KYB.
 user_reviews:
-  legacy_note: Aggregated from third-party review platforms (G2, Capterra) as of Jul 2026. Not verbatim quotes; user reviews average shown separately from our editorial score.
+  legacy_note: null
   praise:
-  - 'India-market depth (frequently cited): reviewers rate its Aadhaar, GSTIN and V-CIP coverage as the strongest for the market.'
+  - 'India-market depth: Aadhaar, CKYC and V-CIP coverage is the main draw for Indian BFSI buyers.'
   - 'No-code builder: compliance teams can configure flows without engineering support.'
   criticize:
-  - 'Non-India depth: some reviewers note more setup is needed for markets outside India.'
-  - 'Platform-fee structure: the enterprise-commit model is a consideration for smaller teams.'
+  - 'Non-India depth: markets outside India need more setup.'
+  - 'Pricing opacity: no published rate card.'
   by_profile:
   - Indian banks and BFSI institutions are Signzy's deepest, longest-standing customer base.
-  - Fortune 30 companies use its Mastercard-distributed video-KYC technology globally.
+  - Banks and payment companies outside India use its video-KYC technology, which Mastercard set out to roll out globally.
   - Businesses outside India with no India-specific needs often evaluate other no-code builders first.
 faq:
 - q: How much does Signzy cost?
-  a: Signzy's India-market pricing is reported by third parties at roughly ₹5 to ₹35 per AML/sanctions check plus a ₹2 to 15 lakh annual platform fee. Check current rates directly with Signzy.
+  a: Signzy does not publish pricing. It describes its pricing as pay-as-you-go and modular, and quotes on request.
 - q: Does Signzy support Aadhaar verification?
-  a: Yes. Signzy supports Aadhaar e-KYC and V-CIP (video customer identification process) alongside document OCR and face match.
+  a: Yes. Signzy's video KYC supports RBI-compliant V-CIP (video customer identification process) with live face match against PAN, Aadhaar and other IDs, and it also offers CKYC and Aadhaar eSign.
 - q: Does Signzy verify businesses?
-  a: Yes, Signzy's KYB tools include GSTIN lookups, MCA director checks, UBO identification, and business address verification.
+  a: Yes. Signzy's business verification checks registered documents and government databases and includes UBO checks.
 - q: How does Signzy distribute globally?
-  a: Signzy distributes its video-KYC technology globally through a 2020 alliance with Mastercard.
+  a: Mastercard partnered with Signzy in October 2020 for a global rollout of its video-KYC solution. Signzy also lists offices in the US and Dubai.
 - q: What is the best alternative to Signzy?
   a: IDMERIT is the best alternative for broader, lower-cost multi-country coverage. KYC Hub is the closest fit for no-code AML lifecycle orchestration.
 - q: Who are Signzy's main competitors?
   a: Signzy competes with IDMERIT, ComplyCube, and KYC Hub, differentiating through deep India-specific regulatory coverage.
 segments: []
 capabilities: {}
-certifications: []
+certifications:
+- name: ISO/IEC 27001
+  what: Information security
+  status: vendor_stated
+  source: 1
+- name: SOC 2 Type II
+  what: Security controls report
+  status: vendor_stated
+  source: 1
+- name: PCI DSS
+  what: Payment card data security
+  status: vendor_stated
+  source: 1
 user_ratings: []
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
-sources: []
+sources:
+- title: About Signzy
+  publisher: Signzy
+  url: https://www.signzy.com/about-us
+  accessed: '2026-10'
+- title: Signzy homepage (products)
+  publisher: Signzy
+  url: https://www.signzy.com/
+  accessed: '2026-10'
+- title: Signzy video KYC
+  publisher: Signzy
+  url: https://www.signzy.com/video-kyc
+  accessed: '2026-10'
+- title: Signzy fintech APIs
+  publisher: Signzy
+  url: https://www.signzy.com/fintech-api
+  accessed: '2026-10'
+- title: GSTIN verification for KYB in India
+  publisher: Signzy
+  url: https://www.signzy.com/general-glossary/gstin-india
+  accessed: '2026-10'
+- title: Signzy raises Rs 210 crore in Gaja Capital-led funding
+  publisher: People Matters
+  url: https://www.peoplematters.in/news/funding-investment/signzy-raises-rs-210-crore-in-gaja-capital-led-funding-35423
+  accessed: '2026-10'
+- title: Fintech SaaS Startup Signzy Acquires Difenz To Bolster Compliance Solution Offerings
+  publisher: Inc42
+  url: https://inc42.com/?p=443991
+  accessed: '2026-10'
+- title: Mastercard Partners with Signzy for Global Rollout of Video KYC
+  publisher: Mastercard
+  url: https://www.mastercard.com/news/ap/en/newsroom/press-releases/en/2020/october/mastercard-partners-with-signzy-for-global-rollout-of-video-kyc
+  accessed: '2026-10'
+- title: Signzy vs Veriff
+  publisher: Signzy
+  url: https://www.signzy.com/blogs/signzy-vs-veriff
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -134,7 +188,15 @@ entity:
   - https://www.linkedin.com/company/signzy
   - https://www.crunchbase.com/organization/signzy
 legacy_issues: []
-legacy_editorial_note: Confirm current price points, founding year, HQ, certifications, and every unverified figure directly against Signzy's official pricing page and profiles before this page goes live.
+legacy_editorial_note: null
+verification_notes:
+- The third-party India price figures (Rs 5 to Rs 35 per check, Rs 2 to 15 lakh annual platform fee) had no source and were removed. signzy.com/pricing did not load.
+- Funding changed from $38.7M+ to "more than $37 million" (Inc42, Feb 2024). SAP as an investor was not confirmed and was removed. Mastercard took part in the 2020 $5.4M round per People Matters.
+- The customer claim "10 Fortune 30 companies" was removed (no source). Mastercard's 2020 release cited the 4 largest Indian banks and a top-3 US acquiring bank; these are 2020 vendor claims and are not repeated as current facts. About page says 1,800+ financial institutions and technology companies; the homepage says 500+ global companies.
+- GSTIN lookups and MCA director checks were removed as product claims; Signzy's GSTIN page discusses GSTIN verification generally and mentions MCA records only in an FAQ. Microsoft Azure Marketplace distribution was not confirmed and was removed.
+- The "IIT-trained" founders claim was removed (no source opened).
+- ISO 27001, SOC 2 Type II and PCI DSS are vendor-stated only.
+- G2 page did not load; no user rating recorded. User review themes kept as general statements.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
