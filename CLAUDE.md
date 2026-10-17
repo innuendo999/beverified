@@ -6,7 +6,7 @@ Full plan, decisions and prompts: `docs/redesign-plan.md`. Read only the section
 
 ## Where things live
 
-All pages are generated from templates + data. There is no hand-written page HTML left except `src/backup-files/` (legacy, excluded in robots.txt).
+All pages are generated from templates + data. There is no hand-written page HTML left.
 
 | To change | Edit |
 |---|---|
@@ -20,6 +20,11 @@ All pages are generated from templates + data. There is no hand-written page HTM
 | Reviews directory (`/providers/`), unreviewed tracked providers | `src/directory.njk`, `src/_data/tracked.yml` |
 | Authors (byline, author box) | `src/_data/authors.yml` |
 | Methodology page copy | `src/methodology/index.njk` (layout `text.njk`) |
+| About, Privacy, Terms | `src/about/`, `src/privacy/`, `src/terms/` (layout `text.njk`; legal text is a baseline, have a lawyer review it) |
+| Use cases hub `/use-cases/`, Regions hub `/regions/` | `src/hubs/*.njk`; cards from `home.yml` (`group`, `area`) + `rankings.yml` |
+| Author pages `/authors/<slug>/` | `src/authors/authors.njk`; one page per `authors.yml` entry with `url`; review list = providers with that `author` |
+| 404 | `src/404.njk` (popular reviews = top 4 by score) |
+| Font | self-hosted `src/assets/fonts/Geist-Variable.woff2`. Keep the site free of third-party requests, cookies and analytics: the privacy policy promises it |
 | For providers page | `src/placement-options/index.njk` |
 | Field definitions | `docs/data-schema.md` |
 | Design reference (Claude Design export) | `design/` (open with a browser; not deployed) |
@@ -28,7 +33,7 @@ All pages are generated from templates + data. There is no hand-written page HTM
 
 Templates hide any block whose data is empty, so filling a field in YAML is enough to make a section appear. Computed values (rank positions, alternatives, nav pills, JSON-LD) live in the `*.11tydata.js` file next to each template.
 
-Planned, not built yet: blog, topic pages, use-case and region hubs, comparison pages (`comparisons.yml`), `entities.yml`.
+Planned, not built yet: blog, topic pages, comparison pages (`comparisons.yml`), `entities.yml`.
 
 ## Commands
 

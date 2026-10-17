@@ -10,11 +10,9 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/CNAME");
   eleventyConfig.addPassthroughCopy("src/googlecb6dc6a16be14e4c.html");
-  eleventyConfig.addPassthroughCopy("src/backup-files");
 
   // Passthrough files must not also be processed as templates.
   eleventyConfig.ignores.add("src/googlecb6dc6a16be14e4c.html");
-  eleventyConfig.ignores.add("src/backup-files/**");
 
   // ---- Filters used by the V3 templates ----
 

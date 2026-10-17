@@ -1,0 +1,38 @@
+---
+layout: v3.njk
+---
+{#- Regions hub. Design: design/Regions Hub V3 (Desktop).dc.html. Data: home.yml → regions, rankings.yml -#}
+<main id="main" class="container hub">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li class="sep" aria-hidden="true">›</li><li aria-current="page">Regions</li></ol></nav>
+  <header class="text-hero">
+    <h1 class="h-display">KYC &amp; AML providers by country</h1>
+    <p>Local regulators, ID documents and company registries decide which provider fits a market. Each country ranking compares providers on the documents and rules that apply there.</p>
+  </header>
+  {%- if guides.length %}
+  <section class="hub__group" aria-labelledby="guides-h">
+    <h2 id="guides-h" class="hub__label">Country rankings</h2>
+    <div class="grid-3">
+      {%- for m in guides %}
+      <a class="card hub-card" href="{{ m.url }}">
+        <b>{{ m.name }}</b>
+        <p>Regulator: {{ m.reg }}</p>
+        {%- if m.top.length %}<p class="hub-card__top">Top ranked: {{ m.top | join(", ") }}</p>{% endif %}
+        <span class="hub-card__foot"><span>{{ m.count }} providers</span><span class="hub-card__go">See ranking →</span></span>
+      </a>
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endif %}
+  <section class="hub__group" aria-labelledby="all-h">
+    <h2 id="all-h" class="h-section">All markets we track</h2>
+    {%- for a in areas %}
+    <h3 class="hub__area">{{ a.name }}</h3>
+    <ul class="card hub-list">
+      {%- for m in a.items %}
+      <li><span class="hub-list__name">{{ m.name }}</span><span class="hub-list__reg">{{ m.reg }}</span><span class="hub-list__count">{% if m.url %}{{ m.count }} providers{% endif %}</span><span class="hub-list__go">{% if m.url %}<a href="{{ m.url }}">See ranking →</a>{% else %}<span class="pill pill--soon">Coming soon</span>{% endif %}</span></li>
+      {%- endfor %}
+    </ul>
+    {%- endfor %}
+    <p class="hub__note">No country guide yet for your market? Start with a <a href="/use-cases/">use-case ranking</a> and check coverage on each review.</p>
+  </section>
+</main>

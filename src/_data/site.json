@@ -3,7 +3,7 @@
   "url": "https://beverified.org",
   "v3": {
     "disclosure": "We may earn a commission from some links. Payment never changes scores or ranking order.",
-    "disclosureHref": "/placement-options/",
+    "disclosureHref": "/methodology/#disclosure",
     "methodologyVersion": "v3.0",
     "methodologyHref": "/methodology/",
     "rubric": [
@@ -63,12 +63,12 @@
     "nav": [
       {
         "label": "Use cases",
-        "href": "/#use-case",
+        "href": "/use-cases/",
         "key": "use-cases"
       },
       {
         "label": "Regions",
-        "href": "/#region",
+        "href": "/regions/",
         "key": "regions"
       },
       {
@@ -119,6 +119,10 @@
         [
           "Budget KYC",
           "/providers/cheap-kyc/"
+        ],
+        [
+          "All use cases",
+          "/use-cases/"
         ]
       ],
       "regions": [
@@ -141,10 +145,18 @@
         [
           "Peru",
           "/providers/peru/"
+        ],
+        [
+          "All regions",
+          "/regions/"
         ]
       ],
       "providersShown": 10,
       "company": [
+        [
+          "About",
+          "/about/"
+        ],
         [
           "Methodology",
           "/methodology/"
@@ -158,7 +170,16 @@
           "mailto:support@beverified.org"
         ]
       ],
-      "legal": [],
+      "legal": [
+        [
+          "Privacy policy",
+          "/privacy/"
+        ],
+        [
+          "Terms of use",
+          "/terms/"
+        ]
+      ],
       "copyright": "© 2026 BeVerified.org · support@beverified.org"
     }
   }

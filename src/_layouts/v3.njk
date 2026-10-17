@@ -7,6 +7,9 @@
 {%- if seoDescription %}
 <meta name="description" content="{{ seoDescription }}">
 {%- endif %}
+{%- if noindex %}
+<meta name="robots" content="noindex">
+{%- endif %}
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 <meta property="og:type" content="{{ ogType or 'website' }}">
 <meta property="og:title" content="{{ seoTitle }}">
@@ -15,9 +18,7 @@
 {%- endif %}
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta name="twitter:card" content="summary">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="/assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/v3.css">
 {%- if jsonld %}
 <script type="application/ld+json">{{ jsonld | json | safe }}</script>

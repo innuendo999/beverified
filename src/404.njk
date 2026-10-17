@@ -1,0 +1,26 @@
+---
+layout: v3.njk
+permalink: /404.html
+eleventyExcludeFromCollections: true
+noindex: true
+seoTitle: "Page not found | BeVerified"
+---
+{#- 404. Design: design/404 V3 (Desktop).dc.html. Popular reviews = top 4 by score (404.11tydata.js) -#}
+<main id="main" class="container nf">
+  <div>
+    <div class="nf__code">404</div>
+    <h1 class="h-display">This page isn’t here.</h1>
+    <p>It may have moved when we reorganised our reviews. Try one of these instead.</p>
+    <div class="pill-row">{% for item in site.v3.nav %}<a class="pill-link" href="{{ item.href }}">{{ item.label }}</a>{% endfor %}</div>
+  </div>
+  {%- if popular.length %}
+  <div>
+    <div class="nf__label">Popular reviews</div>
+    <ul class="card nf__list">
+      {%- for p in popular %}
+      <li><span>{% if p.logo.wordmark %}<img src="{{ p.logo.wordmark }}" alt="{{ p.name }}">{% else %}<strong>{{ p.name }}</strong>{% endif %}</span><b>{{ p.score | score1 }}</b><a href="/providers/{{ p.slug }}/">Read review →</a></li>
+      {%- endfor %}
+    </ul>
+  </div>
+  {%- endif %}
+</main>

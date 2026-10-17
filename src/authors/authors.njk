@@ -1,0 +1,42 @@
+---
+layout: v3.njk
+ogType: profile
+---
+{#- Author page. Design: design/Author Page V3 - Andrii Klymenko (Desktop).dc.html. Data: authors.yml + providers -#}
+<main id="main" class="container hub">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li class="sep" aria-hidden="true">›</li><li aria-current="page">{{ who.name }}</li></ol></nav>
+  <section class="author-hero" aria-labelledby="h1">
+    {%- if who.photo %}<img class="author-hero__photo" src="{{ who.photo }}" alt="{{ who.name }}" width="168" height="168">{% endif %}
+    <div>
+      <h1 id="h1" class="h-display">{{ who.name }}</h1>
+      <p class="author-hero__role">{{ who.role }}</p>
+      <p class="author-hero__bio">{{ who.bio }}</p>
+      {%- if who.expertise.length %}
+      <div style="margin-top:20px"><div class="author-side__label">Areas of expertise</div><div class="pill-row" style="margin-top:6px">{% for e in who.expertise %}<span class="pill">{{ e }}</span>{% endfor %}</div></div>
+      {%- endif %}
+    </div>
+    <div class="card author-side">
+      <div class="author-side__label">Profiles</div>
+      {%- if who.linkedin %}<a href="{{ who.linkedin }}" rel="me noopener" target="_blank">LinkedIn <span aria-hidden="true">↗</span></a>{% endif %}
+      <a href="{{ site.v3.methodologyHref }}">Editorial standards <span aria-hidden="true">→</span></a>
+      <a href="{{ site.v3.disclosureHref }}">How we make money <span aria-hidden="true">→</span></a>
+      <div class="author-side__stat"><b>{{ written.length }}</b>reviews</div>
+    </div>
+  </section>
+  {%- if written.length %}
+  <section aria-labelledby="rw-h">
+    <h2 id="rw-h" class="h-section" style="margin-bottom:16px">Reviews written</h2>
+    <ul class="card author-rows">
+      {%- for p in written %}
+      <li>
+        <span>{% if p.logo.wordmark %}<img src="{{ p.logo.wordmark }}" alt="{{ p.name }}" loading="lazy">{% else %}<span class="author-rows__name">{{ p.name }}</span>{% endif %}</span>
+        <span class="author-rows__desc">{% if p.best_for %}Best for {{ p.best_for }}{% else %}{{ p.tagline }}{% endif %}</span>
+        <span class="author-rows__score">{% if p.score != null %}<b>{{ p.score | score1 }}</b> <small>/ 5</small>{% endif %}</span>
+        <span class="author-rows__date">{% if p.last_verified %}Verified {{ p.last_verified | displayDate }}{% endif %}</span>
+        <a class="author-rows__go" href="/providers/{{ p.slug }}/">Read review →</a>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+</main>

@@ -14,29 +14,29 @@ quick_picks:            # label + provider slug; reason = provider tagline unles
 
 logo_strip: [sumsub, complyadvantage, onfido, kycaid, feedzai, trulioo, jumio, seon]
 
-use_cases:              # category slug in rankings.yml; top 3 and count are computed
-  - { name: AML, slug: aml, def: "Screening against sanctions, PEP and adverse-media lists, plus ongoing transaction monitoring." }
-  - { name: KYB, slug: kyb, def: "Verifying a business, its registry record and its ultimate beneficial owners." }
-  - { name: eKYC, slug: e-kyc, def: "Remote onboarding checks: document, selfie and data checks at account opening." }
-  - { name: Identity Verification, slug: identity-verification, def: "Remote checks that a person is who they claim, from document plus selfie, reused across the account lifecycle." }
-  - { name: Liveness Detection, slug: liveness-detection, def: "Proving a real, present person is on camera, not a photo, mask or deepfake." }
-  - { name: Crypto KYC, slug: crypto, def: "Onboarding checks for exchanges and wallets, often paired with wallet screening." }
-  - { name: Travel Rule, slug: travel-rule, def: "Exchanging originator and beneficiary data between VASPs under FATF R.16." }
-  - { name: AML for Banks, slug: aml/banks, def: "Monitoring and case management built for Tier-1 volume and examiner review." }
-  - { name: Budget KYC, slug: cheap-kyc, def: "Providers with published per-check or monthly pricing and low minimums." }
+use_cases:              # group = section on /use-cases/; category slug in rankings.yml; top 3 and count are computed
+  - { name: AML, slug: aml, group: Financial crime, def: "Screening against sanctions, PEP and adverse-media lists, plus ongoing transaction monitoring." }
+  - { name: KYB, slug: kyb, group: Business, def: "Verifying a business, its registry record and its ultimate beneficial owners." }
+  - { name: eKYC, slug: e-kyc, group: Identity, def: "Remote onboarding checks: document, selfie and data checks at account opening." }
+  - { name: Identity Verification, slug: identity-verification, group: Identity, def: "Remote checks that a person is who they claim, from document plus selfie, reused across the account lifecycle." }
+  - { name: Liveness Detection, slug: liveness-detection, group: Identity, def: "Proving a real, present person is on camera, not a photo, mask or deepfake." }
+  - { name: Crypto KYC, slug: crypto, group: Crypto, def: "Onboarding checks for exchanges and wallets, often paired with wallet screening." }
+  - { name: Travel Rule, slug: travel-rule, group: Crypto, def: "Exchanging originator and beneficiary data between VASPs under FATF R.16." }
+  - { name: AML for Banks, slug: aml/banks, group: Financial crime, def: "Monitoring and case management built for Tier-1 volume and examiner review." }
+  - { name: Budget KYC, slug: cheap-kyc, group: Budget, def: "Providers with published per-check or monthly pricing and low minimums." }
 
-regions:                # x/y = % position on the map grid; slug = region ranking page if one exists
-  - { name: United Kingdom, short: UK, reg: FCA, x: 49.6, y: 21, side: left }
-  - { name: European Union, short: EU, reg: AMLA, x: 53, y: 24 }
-  - { name: United States, short: US, reg: FinCEN, x: 23, y: 31, side: left }
-  - { name: UAE, short: UAE, reg: CBUAE, x: 65.5, y: 36.5, side: left }
-  - { name: Singapore, short: Singapore, reg: MAS, x: 78.8, y: 49.2, side: left }
-  - { name: India, short: India, reg: RBI, x: 71, y: 38, slug: india }
-  - { name: Brazil, short: Brazil, reg: BACEN, x: 36, y: 63, slug: brazil }
-  - { name: Mexico, short: Mexico, reg: CNBV, x: 22, y: 39, slug: mexico, side: left }
-  - { name: Nigeria, short: Nigeria, reg: CBN, x: 52, y: 45 }
-  - { name: Canada, short: Canada, reg: FINTRAC, x: 22, y: 22, slug: canada, side: left }
-  - { name: Peru, short: Peru, reg: SBS, x: 29, y: 56, slug: peru, side: left }
+regions:                # area = section on /regions/; x/y = % position on the map grid; slug = region ranking page if one exists
+  - { name: United Kingdom, short: UK, area: Europe, reg: FCA, x: 49.6, y: 21, side: left }
+  - { name: European Union, short: EU, area: Europe, reg: AMLA, x: 53, y: 24 }
+  - { name: United States, short: US, area: North America, reg: FinCEN, x: 23, y: 31, side: left }
+  - { name: UAE, short: UAE, area: Middle East & Africa, reg: CBUAE, x: 65.5, y: 36.5, side: left }
+  - { name: Singapore, short: Singapore, area: Asia-Pacific, reg: MAS, x: 78.8, y: 49.2, side: left }
+  - { name: India, short: India, area: Asia-Pacific, reg: RBI, x: 71, y: 38, slug: india }
+  - { name: Brazil, short: Brazil, area: Latin America, reg: BACEN, x: 36, y: 63, slug: brazil }
+  - { name: Mexico, short: Mexico, area: North America, reg: CNBV, x: 22, y: 39, slug: mexico, side: left }
+  - { name: Nigeria, short: Nigeria, area: Middle East & Africa, reg: CBN, x: 52, y: 45 }
+  - { name: Canada, short: Canada, area: North America, reg: FINTRAC, x: 22, y: 22, slug: canada, side: left }
+  - { name: Peru, short: Peru, area: Latin America, reg: SBS, x: 29, y: 56, slug: peru, side: left }
 
 top_rated_count: 8
 recheck: We aim to re-check every review every 90 days

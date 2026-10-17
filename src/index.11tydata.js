@@ -31,7 +31,8 @@ export default {
       "@context": "https://schema.org",
       "@graph": [
         { "@type": "Organization", "@id": `${d.site.url}/#organization`, name: "BeVerified", url: `${d.site.url}/`,
-          email: "support@beverified.org", publishingPrinciples: `${d.site.url}/methodology/` },
+          email: "support@beverified.org", publishingPrinciples: `${d.site.url}/methodology/`,
+          foundingDate: "2021", },
         { "@type": "WebSite", "@id": `${d.site.url}/#website`, url: `${d.site.url}/`, name: "BeVerified",
           publisher: { "@id": `${d.site.url}/#organization` } },
       ],
