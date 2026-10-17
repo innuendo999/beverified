@@ -6,6 +6,8 @@ Last updated: 2026-10-17. Captures the decisions made in the redesign working se
 
 ## 1. Status
 
+**Update 2026-10-18:** all page designs finished in Claude Design. Code work started in repo `innuendo999/beverified`, branch `redesign`: step 1 done (11ty, shared header/footer from `src/_data/site.json`, output byte-identical to the live site, deploy workflow, content check script reporting 96 issues — editorial notes and screenshot placeholders on provider pages, CLAUDE.md, skills in `.claude/skills/`). Steps 2–4 done (same branch): reports in `reports/` (content-inventory, gsc-missing-urls, rating-conflicts, content-gaps), data in `src/_data` (46 providers, 14 categories, rankings.yml), schema draft in `docs/data-schema.md`. Findings: 34 URLs with ~19.6k impressions in GSC no longer exist on the site (old /guide/, /publications/, /news/, /category/ content and /providers/age-verification/; top: /guide/what-is-a-whitelist/ 8.7k impressions); 6 providers show different ratings across pages and 13 of 14 category pages show card ratings that differ from review scores; 8 categories rank 17 providers with no review page; KYCAID is #1 in 11 of 14 categories; 2 broken links in the directory (hawk-ai, kyc-hub); biggest page by impressions is /providers/aml/ (21k, avg pos 49). Bing: ~1,000 AI citations per day across ~30 pages vs ~1 click/day. Next: design export into `design/`, then step 5 (templates). Before merging to main: switch repo Settings → Pages → Source to "GitHub Actions".
+
 - **Homepage redesign — done** (Claude Design, light theme, desktop 1440px).
 - **Next in Claude Design (desktop only, to save credits):**
   1. Component sheet + Provider review page (prompt in section 9)
