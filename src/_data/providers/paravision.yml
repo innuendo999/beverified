@@ -1,0 +1,410 @@
+slug: paravision
+name: Paravision
+alternate_names:
+- Paravision, Inc.
+- Everalbum, Inc.
+- Ever AI
+status: published
+seo:
+  title: 'Paravision Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Paravision review: face recognition, iBeta-tested passive liveness, deepfake detection and ACCS-certified age estimation, sold as SDKs to identity platforms. Features, pricing, pros & cons, alternatives.'
+  h1: 'Paravision Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: null
+  background: null
+  wordmark: null
+tagline: Face recognition, passive liveness, deepfake detection and age estimation, sold as SDKs and containers to identity platforms and integrators
+score: 3.9
+grade: Good
+primary_category: liveness-detection
+categories:
+- liveness-detection
+- age-verification
+link:
+  url: https://www.paravision.ai
+  type: none
+last_verified: '2026-10-18'
+updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+verdict: Paravision is a biometrics supplier, not a KYC platform. It licenses face recognition, passive liveness, deepfake detection and age estimation as SDKs and Docker containers to companies that build identity products, and Persona, Entrust and ID.me appear among its named partners. The independent evidence is strong. iBeta's published letters confirm ISO/IEC 30107-3 Level 1 and Level 2 results for its liveness (2023 versions), the ACCS register lists its age estimator at Level 3 until March 2027, and the DHS RIVR 2025 results match the figures Paravision gives for its entries. A compliance team still needs a separate vendor for documents, screening and case handling. Prices are not published, we found no ISO/IEC 27001 or SOC 2 claim, and the company is bound until 2041 by a 2021 FTC order over its former Ever photo app. Shortlist it if you are building your own verification stack or want to know whose face engine sits inside your IDV vendor.
+what_is:
+- Paravision, Inc. is a San Francisco company that develops face biometrics and sells them to other businesses. Its products are Face Recognition (1:1 verification and 1:N search), Liveness (passive presentation attack detection from a single frame, now at version 2.0), Deepfake Detection (face swaps, expression swaps and fully synthetic faces, version 2.0 launched in June 2025), Age Estimation, an ISO/ICAO image quality suite for travel documents and a Contactless Corridor for walk-through border and airport checks. It ships them as C++ and Python server SDKs, Kotlin and Swift mobile SDKs, edge SDKs for NVIDIA, Ambarella, Hailo and Rockchip chips, and Docker containers that run on-premises or in AWS, Azure or Google Cloud. Buyers are identity platforms, device makers and system integrators. Its partners page names Persona, ID.me, Entrust, HID, secunet, SITA and Toppan Next Tech, and in December 2025 Persona and Paravision said Persona's entry to Australia's Age Assurance Technology Trial was built on Paravision's age estimation.
+- The company began as Everalbum, maker of the Ever photo storage app, which had raised $8 million by 2016. Its face recognition started as a feature of that app. The business rebranded from Ever AI to Paravision in August 2019 and closed the Ever app in 2020. In January 2021 the FTC alleged that Everalbum had turned on face recognition by default for most Ever users despite saying it would not, and had kept photos and videos of users who deactivated their accounts. The final order of May 2021 names "Everalbum, Inc., also doing business as Ever and Paravision", required it to delete models and algorithms built with Ever users' biometric data, and runs for 20 years. The company neither admitted nor denied the allegations, and in its 2022 compliance report it said it had made the required deletions and that the technology it sells was not trained on Ever data. Doug Aley is chief executive. Paravision raised a $23 million round in May 2021 led by J2 Ventures, with HID Global taking part, and in September 2026 the US State Department awarded it a contract worth up to $6.5 million for digital identity assurance.
+features:
+- Face Recognition SDKs and containers for 1:1 verification and 1:N search, plus Paravision Search for large galleries over REST and gRPC.
+- Passive liveness from a single selfie frame on iOS, Android and webcams, with server-side checks on Windows and Linux.
+- Deepfake Detection 2.0, which scores still images and video frames for face swaps, expression swaps and fully synthetic faces.
+- Age Estimation from a face image, certified by the Age Check Certification Scheme at Level 3 (Highly Effective Compliance).
+- Image quality checks, including an ISO/ICAO suite for passport and visa photos, with live capture feedback on sharpness, lighting and pose.
+- Deployment on-premises, in AWS, Azure or Google Cloud, on mobile devices or on edge chips from NVIDIA, Ambarella, Hailo and Rockchip.
+pricing:
+  summary: Pricing is not published; Paravision quotes on request. Its contact page offers a demo, not a free trial or evaluation licence, and we found no third-party price for any of its products.
+  plans:
+  - tier: Custom Quote
+    price: Custom
+    note: SDK or container licence for face recognition, liveness, deepfake detection or age estimation
+    extra: Request a demo through the contact form
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Published pricing
+    value: None; demo request form only
+    kind: official
+    source: 10
+    verified: '2026-10'
+  - label: Free trial
+    value: None offered on the site
+    kind: official
+    source: 10
+    verified: '2026-10'
+  - label: GetApp listing
+    value: No pricing information
+    kind: third_party
+    source: 39
+    verified: '2026-10'
+facts:
+- label: From
+  value: Not publicly disclosed
+- label: Buyers
+  value: Identity platforms, device makers and integrators (partners named include Persona, ID.me, Entrust and HID)
+  source: 9
+  evidence: vendor
+- label: Legal entity
+  value: Paravision, Inc., formerly Everalbum, Inc.
+  source: 32
+  evidence: vendor
+- label: HQ
+  value: San Francisco, California
+  source: 10
+  evidence: vendor
+- label: Founded
+  value: Not publicly disclosed
+- label: CEO
+  value: Doug Aley
+  source: 2
+  evidence: vendor
+- label: Funding
+  value: $23M round, May 2021, led by J2 Ventures with HID Global
+  source: 37
+  evidence: independent
+- label: Deployment
+  value: SDKs (server, mobile, edge) and Docker containers, on-premises or cloud
+  source: 5
+  evidence: vendor
+- label: Certifications
+  value: iBeta ISO/IEC 30107-3 Level 1 and 2 (2023) and ACCS Level 3 age estimation, both confirmed; no ISO/IEC 27001 or SOC 2 claim found
+  source: 12
+  evidence: independent
+pros:
+- Liveness confirmed by iBeta to ISO/IEC 30107-3 Level 2, and DHS RIVR 2025 results match the figures Paravision gives for its entries
+- Age estimation listed at ACCS Level 3 (Highly Effective Compliance), valid to March 2027
+- Runs on-premises, in your own cloud, on phones or on edge chips, so face images can stay inside your own systems
+cons:
+- A component supplier, with no document checks, AML screening or case management of its own
+- No published pricing, trial or public developer documentation, and no ISO/IEC 27001 or SOC 2 claim
+- Bound until 2041 by a 2021 FTC order over its former Ever photo app's use of face recognition
+alternatives:
+- slug: veridas
+  name: Veridas
+  best_for: Own Face and Voice Biometrics
+- slug: incode
+  name: Incode
+  best_for: Full IDV with On-Device Liveness
+- slug: regula
+  name: Regula
+  best_for: Document Forensics
+choose_instead:
+- slug: veridas
+  text: you want a vendor that builds its own face and voice biometrics and also sells document verification, with iBeta-tested liveness and vendor-stated ISO/IEC 27001 and SOC 2.
+- slug: incode
+  text: you want a complete identity verification product, with documents, liveness and age checks in one flow, instead of components to integrate yourself.
+- slug: regula
+  text: you are building your own stack and need document authentication SDKs to pair with a face engine, with self-hosted deployment.
+user_reviews:
+  legacy_note: null
+  praise: []
+  criticize: []
+  by_profile:
+  - Identity platforms, device makers and integrators that build their own verification flow are Paravision's buyers; its face engine reaches end users through products such as Persona.
+  - Banks, governments and border programmes that need face matching, liveness or deepfake checks to run on their own servers or devices should put it on the shortlist.
+  - Compliance teams that want a ready KYC product should buy an IDV platform instead, and can ask that vendor whose face and liveness engine it uses.
+faq:
+- q: What does Paravision sell?
+  a: Face recognition (1:1 and 1:N), passive liveness detection, deepfake and synthetic face detection, age estimation, image quality checks and a walk-through Contactless Corridor. It sells them as SDKs and Docker containers to companies that build identity, travel, access control and payments products, not as a hosted KYC service for end customers.
+- q: Is Paravision a KYC provider?
+  a: Not on its own. It does not verify identity documents, screen sanctions lists or manage cases. Identity platforms license its face matching, liveness or age estimation and build the rest. Its partners page names Persona, ID.me and Entrust among them.
+- q: How much does Paravision cost?
+  a: Paravision does not publish pricing. Its contact page offers a demo, and licences are quoted. We found no free trial and no third-party price.
+- q: Has Paravision's liveness been independently tested?
+  a: Yes. iBeta's published letters show Paravision Liveness v1.0 passed ISO/IEC 30107-3 Level 1 in October 2023 and v1.2 passed Level 2 in December 2023, with no successful attacks in the Level 2 test on an iPhone 13. In the DHS RIVR 2025 PAD track, the published results list the system Paravision says is its own (P9) at under 1.7% APCER and under 0.5% BPCER. Paravision also reports a Level 3 evaluation of Liveness 2.0 by Ingenium Biometrics in 2025, but we did not see Ingenium's report.
+- q: How does Paravision rank in NIST face recognition tests?
+  a: Paravision says its paravision-018 and paravision-019 algorithms ranked in the top 5 globally on NIST's Visa-Border benchmark for 1:1 and 1:N in July 2025, and fourth for 1:1 in January 2026. NIST's FRTE pages list results by algorithm, but we could not read the result tables, so these ranks are vendor-stated here.
+- q: Is Paravision's age estimation certified?
+  a: Yes. The Age Check Certification Scheme register lists Paravision Inc's Age Estimator at Level 3, Highly Effective Compliance, against ACCS 1:2020, with an expiry date of 18 March 2027.
+- q: What was the FTC case against Paravision?
+  a: In 2021 the FTC settled with Everalbum, Inc., Paravision's former name, over its Ever photo app. The FTC alleged the app turned on face recognition by default for most users despite saying it would not, and kept photos and videos of users who deactivated their accounts. The final order of May 2021 required the company to delete models and algorithms built with Ever users' biometric data and runs for 20 years. The company neither admitted nor denied the allegations and says its current technology was not trained on Ever data.
+- q: What is the best alternative to Paravision?
+  a: If you want a full verification product, Incode and Veridas combine their own biometrics with document checks. If you are assembling your own stack, Regula's document authentication SDKs pair with a face engine such as Paravision's.
+segments: []
+capabilities: {}
+certifications:
+- name: iBeta ISO/IEC 30107-3 PAD Level 2
+  what: Liveness, Paravision Liveness v1.2 on iPhone 13, iOS 16.6 (Dec 2023), 0% APCER
+  status: confirmed
+  source: 13
+- name: iBeta ISO/IEC 30107-3 PAD Level 1
+  what: Liveness, Paravision Liveness v1.0 (Oct 2023)
+  status: confirmed
+  source: 12
+- name: ACCS Level 3 age estimation
+  what: Age Estimator, Highly Effective Compliance under ACCS 1:2020, expires 18 Mar 2027
+  status: confirmed
+  source: 23
+- name: DHS RIVR 2025 PAD track
+  what: Government liveness test; results list system P9 at under 1.7% APCER and under 0.5% BPCER; Paravision says P9 is its system
+  status: vendor_stated
+  source: 16
+- name: DHS RIVR 2025 Selfie Match to Document track
+  what: Government face match test; results list system MTDS 12 at under 0.01% FMR and under 0.08% FNMR; Paravision says MTDS 12 is its system
+  status: vendor_stated
+  source: 17
+- name: NIST FRTE 1:1 and 1:N (2025 and 2026)
+  what: Face recognition benchmark, top 5 on Visa-Border per Paravision
+  status: vendor_stated
+  source: 20
+- name: Ingenium Level 3 PAD evaluation
+  what: Liveness 2.0 (Aug 2025), per Paravision; report available on request
+  status: vendor_stated
+  source: 15
+user_ratings: []
+use_case_verdicts: []
+score_breakdown:
+- criterion: Compliance & certifications
+  weight: 25
+  score: 4.5
+  note: iBeta's published letters confirm ISO/IEC 30107-3 Level 1 and Level 2 results for Paravision Liveness (2023 versions, not the current 2.0), the ACCS register lists its age estimator at Level 3 to March 2027, and DHS RIVR 2025 results match the figures Paravision gives for its entries, but we found no ISO/IEC 27001 or SOC 2 claim and its NIST ranks are vendor-stated.
+  evidence: independent
+- criterion: Coverage
+  weight: 20
+  score: 3.8
+  note: Paravision covers face recognition, liveness, deepfake detection, age estimation and image quality, but it has no document verification, data sources or screening, so a compliance team needs another vendor for those checks.
+  evidence: vendor
+- criterion: Pricing transparency
+  weight: 20
+  score: 3.0
+  note: No prices, plans, trial or evaluation licence are published, the contact page offers a demo only, and GetApp shows no pricing information.
+  evidence: vendor
+- criterion: Integration & API depth
+  weight: 15
+  score: 4.3
+  note: Paravision lists server SDKs in C++ and Python, Kotlin and Swift mobile SDKs, edge SDKs for four chip families, Docker containers and a REST and gRPC search service, but there is no public developer documentation, sandbox or change log.
+  evidence: vendor
+- criterion: Support responsiveness
+  weight: 10
+  score: 3.5
+  note: The site offers a demo form and obfuscated email links only, with no published support hours or SLA, and GetApp shows no user reviews.
+  evidence: vendor
+- criterion: Track record
+  weight: 10
+  score: 3.8
+  note: The company has sold face recognition as Paravision since 2019 and won US government work in 2026, but it is bound to 2041 by a 2021 FTC order over its former Ever app, and the outcome of a 2020 BIPA suit filed over the same app is not reported in the sources we found.
+  evidence: independent
+hands_on: null
+sources:
+- title: Paravision homepage
+  publisher: Paravision
+  url: https://www.paravision.ai
+  accessed: '2026-10'
+- title: Company
+  publisher: Paravision
+  url: https://www.paravision.ai/company/
+  accessed: '2026-10'
+- title: Trust
+  publisher: Paravision
+  url: https://www.paravision.ai/trust/
+  accessed: '2026-10'
+- title: Benchmarks
+  publisher: Paravision
+  url: https://www.paravision.ai/benchmarks/
+  accessed: '2026-10'
+- title: Face recognition technology
+  publisher: Paravision
+  url: https://www.paravision.ai/product/face-recognition-technology/
+  accessed: '2026-10'
+- title: Liveness detection technology
+  publisher: Paravision
+  url: https://www.paravision.ai/liveness/
+  accessed: '2026-10'
+- title: Deepfake detection
+  publisher: Paravision
+  url: https://www.paravision.ai/deepfake-detection/
+  accessed: '2026-10'
+- title: Age estimation
+  publisher: Paravision
+  url: https://www.paravision.ai/product/age-estimation/
+  accessed: '2026-10'
+- title: Partners
+  publisher: Paravision
+  url: https://www.paravision.ai/partners/
+  accessed: '2026-10'
+- title: Contact
+  publisher: Paravision
+  url: https://www.paravision.ai/contact/
+  accessed: '2026-10'
+- title: Privacy policy
+  publisher: Paravision
+  url: https://www.paravision.ai/privacy-policy/
+  accessed: '2026-10'
+- title: ISO 30107-3 presentation attack detection confirmation letters
+  publisher: iBeta Quality Assurance
+  url: https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/
+  accessed: '2026-10'
+- title: Paravision PAD Level 2 confirmation letter (28 December 2023)
+  publisher: iBeta Quality Assurance
+  url: https://www.ibeta.com/wp-content/uploads/2024/01/231228-Paravision-PAD-Level-2-Confirmation-Letter.pdf
+  accessed: '2026-10'
+- title: Paravision unveils next generation liveness technology with breakthrough performance
+  publisher: Paravision
+  url: https://www.paravision.ai/news/paravision-unveils-next-generation-liveness-technology-with-breakthrough-performance/
+  accessed: '2026-10'
+- title: Paravision Liveness delivers breakthrough performance in Ingenium PAD evaluation
+  publisher: Paravision
+  url: https://www.paravision.ai/news/paravision-liveness-delivers-breakthrough-performance-in-ingenium-pad-evaluation/
+  accessed: '2026-10'
+- title: Paravision leads DHS RIVR PAD evaluation, outperforming all passive and active liveness systems
+  publisher: Paravision
+  url: https://www.paravision.ai/news/paravision-leads-dhs-rivr-pad-evaluation-outperforming-all-passive-and-active-liveness-systems/
+  accessed: '2026-10'
+- title: Paravision achieves top performance in DHS Remote Identity Validation Rally (RIVR) for selfie-to-ID verification
+  publisher: Paravision
+  url: https://www.paravision.ai/news/paravision-achieves-top-performance-in-dhs-remote-identity-validation-rally-rivr-for-selfie-to-id-verification/
+  accessed: '2026-10'
+- title: Remote Identity Validation Rally results
+  publisher: Maryland Test Facility (DHS S&T)
+  url: https://mdtf.org/rivr/Results?Length=0
+  accessed: '2026-10'
+- title: RIVR results show targeted selfie biometric spoof attacks divide the field
+  publisher: Biometric Update
+  url: https://www.biometricupdate.com/202601/rivr-results-show-targeted-selfie-biometric-spoof-attacks-divide-the-field
+  accessed: '2026-10'
+- title: Paravision delivers world-class performance in latest NIST FRTE evaluations
+  publisher: Paravision
+  url: https://www.paravision.ai/news/paravision-delivers-world-class-performance-in-latest-nist-frte-evaluations-ranking-in-top-5-globally-for-both-face-verification-and-identification/
+  accessed: '2026-10'
+- title: Face Recognition Technology Evaluation (FRTE) 1:1 Verification
+  publisher: NIST
+  url: https://pages.nist.gov/frvt/html/frvt11.html
+  accessed: '2026-10'
+- title: Paravision Age Estimation achieves highest level certification from the ACCS
+  publisher: Paravision
+  url: https://www.paravision.ai/news/paravision-age-estimation-achieves-highest-level-certification-from-the-accs/
+  accessed: '2026-10'
+- title: Registry entry, Paravision Inc (age estimation)
+  publisher: Age Check Certification Scheme
+  url: https://accscheme.com/registry/age-estimation/paravision-inc/
+  accessed: '2026-10'
+- title: Persona and Paravision achieve leading accuracy in Australia Age Assurance Technology Trial
+  publisher: Paravision
+  url: https://www.paravision.ai/news/persona-and-paravision-achieve-leading-accuracy-in-australia-age-assurance-technology-trial/
+  accessed: '2026-10'
+- title: Paravision launches new deepfake and synthetic image detection capabilities
+  publisher: Paravision
+  url: https://www.paravision.ai/news/paravision-launches-new-deepfake-and-synthetic-image-detection-capabilities/
+  accessed: '2026-10'
+- title: Paravision named Resilient Trust Leader in Financial Services Biometric Digital Identity Prism Report
+  publisher: Paravision
+  url: https://www.paravision.ai/news/paravision-named-resilient-trust-leader-in-financial-services-biometric-digital-identity-prism-report/
+  accessed: '2026-10'
+- title: Newsroom
+  publisher: Paravision
+  url: https://www.paravision.ai/newsroom/
+  accessed: '2026-10'
+- title: US State Department awards Paravision up to $6.5M for digital identity assurance
+  publisher: Biometric Update
+  url: https://www.biometricupdate.com/202610/us-state-department-awards-paravision-up-to-6-5m-for-digital-identity-assurance
+  accessed: '2026-10'
+- title: Everalbum, Inc., In the Matter of (FTC matter 192 3172)
+  publisher: US Federal Trade Commission
+  url: https://www.ftc.gov/legal-library/browse/cases-proceedings/192-3172-everalbum-inc-matter
+  accessed: '2026-10'
+- title: FTC finalizes settlement with photo app developer related to misuse of facial recognition technology
+  publisher: US Federal Trade Commission
+  url: https://www.ftc.gov/news-events/news/press-releases/2021/05/ftc-finalizes-settlement-photo-app-developer-related-misuse-facial-recognition-technology
+  accessed: '2026-10'
+- title: Everalbum, Inc. decision and order (May 2021)
+  publisher: US Federal Trade Commission
+  url: https://www.ftc.gov/system/files/documents/cases/1923172_-_everalbum_decision_final.pdf
+  accessed: '2026-10'
+- title: Compliance report of Paravision, Inc. (5 May 2022)
+  publisher: US Federal Trade Commission
+  url: https://www.ftc.gov/system/files/ftc_gov/pdf/paravision_compliance_report_redacted.pdf
+  accessed: '2026-10'
+- title: Why we are closing the Ever photo storage service and what it means for Paravision face recognition
+  publisher: Paravision
+  url: https://www.paravision.ai/news/why-we-are-closing-the-ever-photo-storage-service-and-what-it-means-for-paravision-face-recognition/
+  accessed: '2026-10'
+- title: Ever AI to rebrand to Paravision
+  publisher: Identity Week
+  url: https://identityweek.net/ever-ai-to-rebrand-to-paravision/
+  accessed: '2026-10'
+- title: Fast-growing photo app Everalbum, a chart-topper on iOS, comes to Android
+  publisher: TechCrunch
+  url: https://techcrunch.com/?p=1277734
+  accessed: '2026-10'
+- title: HID Global invests in Paravision, a leading provider of facial recognition and computer vision technology
+  publisher: Business Wire (HID Global release)
+  url: https://www.businesswire.com/news/home/20210511005469/en/HID-Global-Invests-in-Paravision-a-Leading-Provider-of-Facial-Recognition-and-Computer-Vision-Technology
+  accessed: '2026-10'
+- title: HID Global contributes to $23 million round of Paravision funding
+  publisher: ID Tech Wire
+  url: https://idtechwire.com/hid-global-contributes-23-million-round-paravision-funding-051207/
+  accessed: '2026-10'
+- title: Lawsuit alleges biometric privacy violations from face recognition algorithm training
+  publisher: Biometric Update
+  url: https://www.biometricupdate.com/202010/lawsuit-alleges-biometric-privacy-violations-from-face-recognition-algorithm-training
+  accessed: '2026-10'
+- title: Paravision
+  publisher: GetApp
+  url: https://www.getapp.com/all-software/a/paravision/
+  accessed: '2026-10'
+- title: Making sense of DHS RIVR PAD in a world of iBeta
+  publisher: Paravision
+  url: https://www.paravision.ai/news/making-sense-of-dhs-rivr-pad-in-a-world-of-ibeta/
+  accessed: '2026-10'
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://www.paravision.ai
+  - https://en.wikipedia.org/wiki/Paravision_(identity_verification_service)
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- 'New record, first review. Paravision asked to be listed and sent no product details; everything comes from public pages opened on 2026-10-18. link.type set to none (no commercial relationship recorded). No logo or wordmark file yet.'
+- 'Score 3.9 is below the lowest existing record (Zyphe 4.0). No grade word is defined below 4.0 in the existing records; "Good" (used for 4.0 to 4.3) is applied. Editor to confirm or set a separate band.'
+- 'Buyer type: Paravision sells components (SDKs, Docker containers, edge SDKs) to platforms and integrators. Partners page names HID, ID.me, Persona, Entrust, PopID, secunet, SITA, Toppan Next Tech, Globant, Imprivata, Plastic Omnium, Vicon, Brivo and OP''nSoft; homepage logos add CheckIn, Ingenico and eConnect. Roles inferred from partner descriptions; not labelled as customers by Paravision. Only Persona (Dec 2025 joint release), ID.me, Entrust and HID used in the record.'
+- 'iBeta: letters page lists Paravision Liveness v1.0 Level 1 (16 Oct 2023) and v1.2 Level 2 (28 Dec 2023). Level 2 letter opened: iPhone 13, iOS 16.6, tests 5 to 28 Dec 2023, 5 PAI species, 750 attacks, APCER 0%, BPCER not stated in the letter. No iBeta letter found for Liveness 2.0 (launched Mar 2025) in the visible list; page text was long and the fetcher read it in two parts, the second part ending mid-table at 2020 entries.'
+- 'DHS RIVR 2025: MdTF results page (vendors anonymised) shows PAD system 9 at BPCER <0.5%, APCER <1.7%, run time <2.3 s, and SMTD system 12 at FMR <0.01%, FNMR <0.08%, selfie FTXR 0%, document FTXR <0.35%. These match Paravision''s releases, which identify P9 and MTDS 12 as its systems. Biometric Update (Jan 2026) reports the MTDS 12 attribution as Paravision''s own claim. Status vendor_stated for the attribution. Goal colour coding not readable in text. DHS RIVR program page (dhs.gov) failed to load.'
+- 'DHS RIVTD 2024 Track 3 ("lowest combined error rate and fastest processing time" for the earlier Liveness) and DHS Biometric Technology Rally 2021 to 2023 results are vendor claims only; not used.'
+- 'NIST FRTE: Paravision release (28 Jul 2025) names paravision-018 (1:1) and paravision-019 (1:N), top 5 on Visa-Border for both; Trust page claims 4th on 1:1 Visa-Border (Jan 2026, FNMR 0.0015 at FMR 1e-6) and 5th on 1:N (Jul 2025). NIST FRTE 1:1 and 1:N pages opened (last updated 2026-10-06 and 2026-10-05) but result tables are script-rendered and not readable; NIST report PDF and report cards failed to fetch. Identity Week (Aug 2019) reports it ranked first in FRVT 1:1 Ongoing in July 2019. All NIST ranks left vendor_stated; confirm in a browser at the next re-check.'
+- 'Ingenium Biometrics Level 3 PAD evaluation of Liveness 2.0 (Aug 2025, 1,900+ attempts, 190 PAIs): vendor release and Biometric Update headline only; Ingenium''s report not opened (available on request).'
+- 'ACCS: registry entry opened: Paravision Inc, Age Estimator, Level 3 Highly Effective Compliance, ACCS 1:2020 and BS ISO/IEC/IEEE 29119-3:2013, expiry 18/03/2027; issue date 19/03/2025 inferred from the certificate file name only. Separate ACCS bias evaluation (Apr 2025, 100% precision across groups, MAE 1.1 to 1.6 years) is vendor-reported; not used.'
+- 'Australia AATT: Persona and Paravision joint release (Dec 2025) says Persona''s platform, built on Paravision age estimation, had MAE 1.56 years, lowest in the trial. AATT report not opened; figures not used. Biometric Update also reports Persona and Paravision powering Substack age estimation (Dec 2025); article not opened.'
+- 'ISO/IEC 27001 and SOC 2: no claim found on the homepage, Trust page, privacy policy or in search. Not listed as certifications. Privacy policy (last modified 22 May 2024) covers marketing and website data only; no biometric retention terms or processor role stated.'
+- 'FTC: matter 192 3172, Everalbum, Inc. Proposed complaint and consent agreement 11 Jan 2021; final complaint and decision and order 7 May 2021 (Commission vote 4-0). Order defines respondent as "Everalbum, Inc., also doing business as Ever and Paravision, and its successors and assigns", requires deletion of Affected Work Product (models or algorithms developed in whole or part using Ever users'' biometric information) within 90 days, and terminates 20 years from issuance (so 2041). Respondent neither admits nor denies the allegations. Compliance report of Paravision, Inc. (5 May 2022, signed by Doug Aley) states the name change to Paravision, Inc. on 7 Sept 2021, Ever shut down Sept 2020, deletions confirmed to the FTC, and that sold technology was not trained on Ever data. The Jan 2021 FTC press release failed to load; the May 2021 release was used. Wikipedia''s description of the FTC case (mentions ID photos) does not match the FTC documents and was not used.'
+- 'BIPA: Biometric Update (Oct 2020) reports a proposed class action by Lynette Walton against Paravision in a California federal court over use of Ever images to train face recognition. No outcome found in searches; stated only as filed, without outcome.'
+- 'History: TechCrunch (Feb 2016) names Everalbum co-founders Andrew Dudum, Don Holly, Jack Abraham, Charlie Melbye and Jon Mumm and $8M raised (Khosla Ventures led). Founding year not stated in any source opened; shown as Not publicly disclosed. Identity Week (12 Aug 2019) reports the Ever AI to Paravision rebrand. Paravision''s Aug 2020 post says Ever users were notified on 31 Jul 2020.'
+- 'HQ and addresses: contact page says San Francisco HQ (no street address). FTC compliance report (2022): 1160 Gorgas Ave, San Francisco, and Paravision Canada Ltd., Vancouver. Privacy policy: 548 Market St, PMB 812416, San Francisco. Biometric Update profile: 8 California Street, San Francisco. Only the city is used.'
+- 'Funding: $23M round, May 2021 (Business Wire HID release, SDM, ID Tech Wire naming J2 Ventures as lead). Wikipedia says $21M and lists J2 Ventures, HID Global, Marlinspike Capital, Atomic VC, Icon Ventures, Perot Jain and Red Cell Partners; not used. No later round found.'
+- 'Leadership (company page): Doug Aley (CEO), Tiffany Lee (CFO, appointed Jan 2026), Kamil Chaudhary (General Counsel and SVP Data Acquisition), Charlie Rice (CTO), Joey Pritikin (CPO), Stuart Lieblich (SVP Business Development).'
+- 'State Department: Biometric Update (17 Oct 2026) reports a firm-fixed-price award on 23 Sept 2026 worth up to $6.5M ($1.3M obligated), through 22 Sept 2031, contract 19AQMM26C0850 on USAspending, small-business set-aside with one offer; products not identified. USAspending not opened.'
+- 'Other 2026 news (titles from the newsroom only, not opened): ISO/ICAO Image Quality Suite (Sept 2026), UK ETA support (Jan 2026), emaratech Red Carpet Smart Corridor at Dubai International Airport (Jan 2026). Prism report (Aug 2026, Acuity Market Intelligence) release opened; not used as evidence.'
+- 'Deepfake Detection: version 2.0 launched 3 Jun 2025; product page says trained on 1.6M+ deepfake and synthetic images and cites a Five Eyes government partner (unnamed). No independent test found. "Up to 97%" error improvement over 1.0 not used.'
+- 'Liveness 2.0 claims (90%+ BPCER reduction, 40%+ fewer failures to acquire, 2x speed) are vendor-only; not used.'
+- 'Developer docs: no public documentation, sandbox, change log or trial found. SDK languages and platforms from the face recognition page.'
+- 'User ratings: GetApp shows 0 reviews and no pricing; no G2 page found in search; Capterra Singapore and Software Advice listings found in search but not opened. user_ratings left empty.'
+- 'Wikidata id not found; kg_mid unknown. LinkedIn not opened.'
+application_category: Identity Verification Software
+author: andrii-klymenko
+directory_categories:
+- Liveness Detection
+- Age Verification
