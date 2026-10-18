@@ -1,0 +1,188 @@
+slug: advance-ai
+name: Advance.AI
+alternate_names: []
+status: published
+seo:
+  title: 'Advance.AI Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Advance.AI review: digital identity verification, KYC/KYB, AML and credit scoring built for Southeast Asian and emerging markets. Features, pricing, pros & cons, alternatives.'
+  h1: 'Advance.AI Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/advance-ai.webp
+  background: '#7C4DEA'
+  wordmark: null
+tagline: Digital identity and credit risk built for Southeast Asian and APAC emerging markets
+score: 4.3
+grade: Good
+primary_category: identity-verification
+legacy_rank_claim: 'ranked #17 in Identity Verification'
+categories:
+- identity-verification
+- e-kyc
+link:
+  url: https://www.advance.ai
+  type: null
+  legacy_rel: nofollow sponsored
+last_verified: '2026-10-18'
+updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+verdict: Advance.AI focuses on emerging-market identity verification, KYC/KYB, AML and credit scoring, with its strongest footprint in Southeast Asia. It was founded in Singapore in 2016 and is part of Singapore-headquartered Advance Intelligence Group. It does not publish coverage figures, customer counts or prices, so buyers outside its core markets should confirm country support before committing.
+what_is:
+- Advance.AI was founded in Singapore in August 2016 and is part of Singapore-headquartered Advance Intelligence Group, whose backers include SoftBank Vision Fund 2, Warburg Pincus, Northstar and EDBI. It launched in Singapore, China, Indonesia, India, Vietnam and the Philippines and later expanded into Mexico and Nigeria. Its AdvanGuard suite covers identity and document verification, face authentication with liveness detection and know-your-business checks, alongside AML, compliance and credit-scoring products for lenders.
+features:
+- Identity and document verification (AdvanGuard suite).
+- Face authentication with liveness detection.
+- Know Your Business (KYB) checks.
+- Configurable end-to-end eKYC workflows.
+- AML, compliance and risk management solutions.
+- Credit scoring for lenders, such as its Facial Multi-loan Score.
+pricing:
+  summary: Pricing is not published; Advance.AI quotes on request. Its pricing page describes usage-based billing from a prepaid balance, prepaid capacity measured in queries per second, and pay-as-you-go license periods, and lets you sign up free to test the services.
+  plans:
+  - tier: Usage-based
+    price: Custom
+    note: Add funds and pay per use, or prepay capacity (QPS) or a license period
+    extra: Free sign-up to test; rates on request
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Published prices
+    value: Not publicly disclosed; quote on request
+    kind: official
+    source: 3
+    verified: '2026-10'
+  - label: Billing models
+    value: Usage-based, prepaid QPS capacity, or license period
+    kind: official
+    source: 3
+    verified: '2026-10'
+  - label: Trial
+    value: Free sign-up to test services
+    kind: official
+    source: 3
+    verified: '2026-10'
+facts:
+- label: From
+  value: Not publicly disclosed
+- label: Effective
+  value: Not publicly disclosed
+- label: Founded
+  value: '2016'
+  source: 1
+  evidence: vendor
+- label: HQ
+  value: Singapore
+  source: 1
+  evidence: vendor
+- label: Owner
+  value: Advance Intelligence Group
+  source: 1
+  evidence: vendor
+- label: Markets
+  value: Singapore, China, Indonesia, India, Vietnam, Philippines; later Mexico and Nigeria
+  source: 1
+  evidence: vendor
+pros:
+- Strong regional focus on APAC/Southeast Asian emerging markets
+- Combines identity verification with credit scoring in one vendor
+- Part of the broader Advance Intelligence Group ecosystem
+cons:
+- Coverage and customer-count figures are not published
+- Smaller presence outside APAC/Southeast Asia
+- No published pricing
+alternatives:
+- slug: idmerit
+  name: IDMERIT
+  best_for: Broadest Budget Coverage
+- slug: trulioo
+  name: Trulioo
+  best_for: Best for Data-Layer Proofing
+- slug: shufti-pro
+  name: Shufti Pro
+  best_for: Broadest Coverage
+choose_instead:
+- slug: idmerit
+  text: you need broader multi-country coverage beyond Southeast Asia/APAC.
+- slug: trulioo
+  text: you want a comparable data-layer platform with published global reach.
+- slug: shufti-pro
+  text: you need wider country/language coverage than an APAC-focused vendor.
+user_reviews:
+  legacy_note: null
+  praise: []
+  criticize: []
+  by_profile:
+  - Lenders and fintechs in Southeast Asia and APAC are Advance.AI's core customer base.
+  - Businesses needing combined identity checks and credit scoring for emerging markets are a good fit.
+  - Companies operating primarily outside APAC should verify regional coverage before committing.
+faq:
+- q: How much does Advance.AI cost?
+  a: Advance.AI does not publish prices. Its pricing page offers usage-based, prepaid capacity and license-period billing, with rates on request and free sign-up to test.
+- q: Where is Advance.AI based?
+  a: Advance.AI was founded in Singapore in 2016 and is part of Singapore-headquartered Advance Intelligence Group.
+- q: What markets does Advance.AI focus on?
+  a: Advance.AI focuses on Southeast Asia. It launched in Singapore, China, Indonesia, India, Vietnam and the Philippines and later expanded into Mexico and Nigeria.
+- q: Does Advance.AI offer credit-risk assessment?
+  a: Yes. Advance.AI offers credit-scoring products for lenders, such as its Facial Multi-loan Score, alongside identity verification.
+- q: What is the best alternative to Advance.AI?
+  a: IDMERIT is the best alternative for broader multi-country coverage. Trulioo is the closest fit for global data-layer proofing.
+- q: Who are Advance.AI's main competitors?
+  a: Advance.AI competes with IDMERIT, Trulioo, and Shufti Pro, differentiating through its Southeast Asia/APAC emerging-market focus.
+segments: []
+capabilities: {}
+certifications:
+- name: ISO/IEC 27001:2013
+  what: Information security (obtained Feb 2020, Indonesia)
+  status: vendor_stated
+  source: 1
+- name: ISO/IEC 30107-3 PAD Level 2 (iBeta)
+  what: Liveness, presentation attack detection (Oct 2024)
+  status: vendor_stated
+  source: 4
+user_ratings: []
+use_case_verdicts: []
+score_breakdown: []
+hands_on: null
+sources:
+- title: About us
+  publisher: ADVANCE.AI
+  url: https://www.advance.ai/about-us
+  accessed: '2026-10'
+- title: ADVANCE.AI homepage
+  publisher: ADVANCE.AI
+  url: https://www.advance.ai/
+  accessed: '2026-10'
+- title: Pricing
+  publisher: ADVANCE.AI
+  url: https://www.advance.ai/pricing
+  accessed: '2026-10'
+- title: ADVANCE.AI achieves iBeta Level 2 certification for liveness detection
+  publisher: ADVANCE.AI
+  url: https://blog.advance.ai/blog/advance-ai-achieves-ibeta-2
+  accessed: '2026-10'
+- title: Facial Multi-loan Score
+  publisher: ADVANCE.AI
+  url: https://www.advance.ai/en/index/pageview/catid/53.html
+  accessed: '2026-10'
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://www.advance.ai
+  - https://www.linkedin.com/company/advance-ai
+  - https://www.crunchbase.com/organization/advance-ai
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- 'Founding year (Aug 2016, Singapore) and group HQ are from the vendor about page only; no registry entry opened.'
+- 'Homepage headline statistics render as "0" placeholders, so no coverage or customer figures are used. The credit-scoring page says "trusted by over 500 enterprises" but is undated; not used as a fact.'
+- 'Credit scoring is not on the current homepage; the Facial Multi-loan Score page is undated. Kept as a product but re-check whether it is still sold.'
+- '"Device intelligence" feature not found on current vendor pages. Removed.'
+- 'Homepage shows ISO/IEC 27001, a privacy information management certificate, a BSI certificate and iBeta Level 1 and 2 badges as images; no certificate or iBeta letter opened (Advance.AI not listed on the iBeta page checked).'
+- 'G2 lists Advance.AI under AI Consulting Services with no visible rating or review count; no user ratings recorded and the unverified review themes were removed.'
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS
+directory_categories:
+- Identity Verification
+- eKYC

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Onfido (Entrust Identity Verification) Review 2026 | BeVerified</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+html, body { margin:0; background:#F7F6F3; color:#14141A; scroll-behavior:smooth; }
+body { font-family:'Geist', ui-sans-serif, system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
+a { color:#5B2BD9; text-decoration:none; }
+a:hover { color:#4A1FBF; text-decoration:underline; text-underline-offset:3px; }
+button { font-family:inherit; }
+:focus-visible { outline:2px solid #5B2BD9; outline-offset:3px; border-radius:6px; }
+</style>
+<script src="./bv-data.js"></script>
+</helmet>
+<div style="background:#F7F6F3; color:#14141A; min-height:100vh; font-family:'Geist', ui-sans-serif, system-ui, sans-serif;">
+
+<header data-component="header" style="position:sticky; top:0; z-index:100; background:rgba(247,246,243,0.92); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:1px solid #E6E4DF;">
+  <div style="max-width:1200px; margin:0 auto; padding:0 32px; height:60px; display:flex; align-items:center; gap:40px;">
+    <a href="Homepage V3 - BeVerified (Desktop).dc.html" aria-label="BeVerified home" style="display:flex; align-items:center; gap:9px; text-decoration:none; flex-shrink:0;">
+      <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="flex-shrink:0; display:block;"><rect x="3" y="12" width="4.5" height="9" rx="1" fill="#14141A"></rect><rect x="9.75" y="8" width="4.5" height="13" rx="1" fill="#14141A"></rect><rect x="16.5" y="3" width="4.5" height="18" rx="1" fill="#5B2BD9"></rect></svg>
+      <span style="font-weight:600; font-size:17px; letter-spacing:-0.03em; color:#14141A;">BeVerified</span>
+    </a>
+    <nav aria-label="Primary" style="display:flex; gap:28px; align-items:center; flex:1;">
+      <a href="Homepage V3 - BeVerified (Desktop).dc.html#use-cases" style="font-size:15px; color:#4A4A55; white-space:nowrap;" style-hover="color:#14141A; text-decoration:none;">Use cases</a>
+      <a href="Homepage V3 - BeVerified (Desktop).dc.html#regions" style="font-size:15px; color:#4A4A55; white-space:nowrap;" style-hover="color:#14141A; text-decoration:none;">Regions</a>
+      <a href="Reviews Directory - BeVerified (Desktop).dc.html" style="font-size:15px; color:#14141A; font-weight:500; white-space:nowrap;">Reviews</a>
+    </nav>
+    <a href="Homepage V3 - BeVerified (Desktop).dc.html#for-providers" style="font-size:15px; color:#14141A; white-space:nowrap;" style-hover="color:#5B2BD9;">For providers</a>
+  </div>
+</header>
+
+<sc-if value="{{ showFields }}" hint-placeholder-val="{{ true }}">
+  <div style="max-width:1200px; margin:16px auto 0; padding:0 32px;">
+    <p style="margin:0; font-size:13px; line-height:1.45; font-weight:500; color:#6B4A00; background:#FFF3D1; border:1px dashed #D9A93A; padding:8px 12px; border-radius:8px;">Template · values tagged <span style="font-family:'Geist Mono', ui-monospace, monospace;">{field}</span> are schema fields with neutral sample values. Known facts used: founded 2012, HQ London, owner Entrust (2024). Hands-on block: <a href="{{ toggleHandsHref }}" onClick="{{ toggleHands }}" style="color:#6B4A00; text-decoration:underline;">{{ handsToggleLabel }}</a></p>
+  </div>
+</sc-if>
+
+<div style="max-width:1200px; margin:0 auto; padding:0 32px;">
+
+  <nav data-component="breadcrumb" aria-label="Breadcrumb" style="padding:20px 0 0;">
+    <ol style="list-style:none; margin:0; padding:0; display:flex; gap:8px; font-size:14px; color:#4A4A55;">
+      <li><a href="Homepage V3 - BeVerified (Desktop).dc.html" style="color:#4A4A55;">Home</a></li>
+      <li aria-hidden="true" style="color:#9C988F;">›</li>
+      <li><a href="Reviews Directory - BeVerified (Desktop).dc.html" style="color:#4A4A55;">Reviews</a></li>
+      <li aria-hidden="true" style="color:#9C988F;">›</li>
+      <li aria-current="page" style="color:#14141A;">Onfido</li>
+    </ol>
+  </nav>
+
+  <section aria-labelledby="h1" style="padding:28px 0 0; display:grid; grid-template-columns:minmax(0,1fr) 340px; gap:48px; align-items:start;">
+    <div>
+      <div style="display:flex; align-items:center; gap:14px; margin-bottom:18px;">
+        <img src="logos/onfido.png" alt="Onfido logo" style="height:32px; width:auto; display:block;">
+        <span style="font-size:14px; color:#4A4A55;">now Entrust Identity Verification</span>
+      </div>
+      <h1 id="h1" style="margin:0 0 20px; font-size:48px; line-height:1.04; letter-spacing:-0.04em; font-weight:600; text-wrap:balance;">Onfido (Entrust Identity Verification) Review 2026</h1>
+      <div style="display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin-bottom:22px;">
+        <span data-component="badge" style="display:inline-flex; align-items:center; font-size:13px; color:#14141A; background:#FFFFFF; border:1px solid #D6D3CC; padding:3px 10px; border-radius:999px;">Best for&nbsp;·&nbsp;{{ bestFor }}<code style="font-family:'Geist Mono', ui-monospace, monospace; font-size:12px; color:#8A5A00; margin-left:6px;">{{ fl.bestFor }}</code></span>
+        <a href="{{ rankHref }}" style="font-size:14px; font-weight:500;">Ranked #{{ rank }} in {{ rankCategory }} →</a><code style="font-family:'Geist Mono', ui-monospace, monospace; font-size:12px; color:#8A5A00;">{{ fl.rank }}</code>
+        <sc-if value="{{ handsFilled }}" hint-placeholder-val="{{ false }}">
+          <span data-component="badge" style="display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:500; color:#FFFFFF; background:#14141A; padding:3px 10px; border-radius:999px;"><span aria-hidden="true">▲</span>Manually tested</span>
+        </sc-if>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; align-items:center; gap:18px; font-size:14px; color:#4A4A55;">
+        <div data-component="author-byline" style="display:flex; align-items:center; gap:10px;">
+          <img src="authors/andrii-klymenko.png" alt="" style="width:32px; height:32px; border-radius:999px; object-fit:cover; object-position:40% 25%; border:1px solid #E0DDD6; display:block; flex-shrink:0;">
+          <span>By <a href="{{ reviewerHref }}" style="font-weight:500;">{{ reviewerName }}</a></span>
+        </div>
+        <span aria-hidden="true" style="color:#9C988F;">·</span>
+        <span data-component="last-verified" style="display:inline-flex; align-items:center; gap:6px;"><span aria-hidden="true" style="color:#1B7A4B;">✓</span>Last verified <time datetime="2026-07-24" style="color:#14141A; font-variant-numeric:tabular-nums;">{{ lastVerified }}</time><code style="font-family:'Geist Mono', ui-monospace, monospace; font-size:12px; color:#8A5A00;">{{ fl.lastVerified }}</code></span>
+      </div>
+    </div>
+    <div data-component="rating" role="img" aria-label="{{ scoreAria }}" style="background:#FFFFFF; border:1.5px solid #14141A; border-radius:18px; padding:22px 24px;">
+      <div style="font-size:14px; color:#4A4A55; margin-bottom:10px;">BeVerified score</div>
+      <div aria-hidden="true" style="display:flex; align-items:baseline; gap:6px;">
+        <span style="font-size:56px; font-weight:600; letter-spacing:-0.05em; line-height:1; font-variant-numeric:tabular-nums;">{{ scoreText }}</span>
+        <span style="font-size:17px; color:#6A6A74;">/ 5</span>
+        <span style="margin-left:auto; font-size:16px; font-weight:600;">{{ grade }}</span>
+      </div>
+      <div aria-hidden="true" style="display:flex; gap:4px; margin-top:14px;">
+        <sc-for list="{{ segs }}" as="sg" hint-placeholder-count="5"><span style="flex:1; height:6px; border-radius:3px; background:#E6E4DF; overflow:hidden;"><span style="display:block; height:100%; width:{{ sg.w }}; background:#14141A;"></span></span></sc-for>
+      </div>
+      <div style="display:flex; justify-content:space-between; margin-top:12px; font-size:13px;"><code style="font-family:'Geist Mono', ui-monospace, monospace; color:#8A5A00;">{{ fl.score }}</code><a href="#score" style="font-weight:500;">See breakdown ↓</a></div>
+    </div>
+  </section>
+
+  <section aria-label="Short answer" style="padding:32px 0 0; max-width:760px;">
+    <p style="margin:0; font-size:19px; line-height:1.6; color:#14141A; text-wrap:pretty;">{{ shortAnswer }}</p>
+  </section>
+
+  <div style="padding:24px 0 36px; max-width:760px;">
+    <p data-component="disclosure-line" style="margin:0 0 12px; font-size:15px; line-height:1.5; color:#4A4A55;">{{ disclosure }} <a href="Methodology Page - BeVerified (Desktop).dc.html#disclosure">How we make money →</a></p>
+    <div data-component="cta-row" style="display:flex; gap:10px;">
+      <a href="#" rel="sponsored nofollow noopener" target="_blank" style="display:inline-flex; align-items:center; gap:8px; font-size:15px; font-weight:500; color:#FFFFFF; background:#14141A; padding:12px 22px; border-radius:999px; text-decoration:none;" style-hover="background:#2A2A33; color:#FFFFFF; text-decoration:none;">Visit site <span aria-hidden="true">↗</span></a>
+      <a href="#alternatives" style="font-size:15px; font-weight:500; color:#14141A; background:#FFFFFF; border:1px solid #D6D3CC; padding:11px 21px; border-radius:999px; text-decoration:none;" style-hover="border-color:#9C988F; color:#14141A; text-decoration:none;">See alternatives</a>
+    </div>
+  </div>
+</div>
+
+<nav data-component="in-page-nav" aria-label="On this page" style="position:sticky; top:60px; z-index:90; background:rgba(247,246,243,0.94); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-top:1px solid #E6E4DF; border-bottom:1px solid #E6E4DF;">
+  <div style="max-width:1200px; margin:0 auto; padding:10px 32px; display:flex; gap:6px; overflow-x:auto;">
+    <sc-for list="{{ navItems }}" as="n" hint-placeholder-count="12">
+      <a href="#{{ n.id }}" style="flex-shrink:0; font-size:14px; color:#14141A; background:#FFFFFF; border:1px solid #E0DDD6; padding:5px 12px; border-radius:999px; white-space:nowrap; text-decoration:none;" style-hover="border-color:#9C988F; text-decoration:none; color:#14141A;">{{ n.label }}</a>
+    </sc-for>
+  </div>
+</nav>
+
+<div style="max-width:1200px; margin:0 auto; padding:40px 32px 0; display:grid; grid-template-columns:minmax(0,1fr) minmax(260px,340px); gap:clamp(24px, 3vw, 48px); align-items:start;">
+<main style="min-width:0; display:flex; flex-direction:column; gap:72px;">
+
+  <section id="verdict" aria-labelledby="verdict-h" style="scroll-margin-top:130px;">
+    <h2 data-component="section-header" id="verdict-h" style="margin:0 0 20px; font-size:32px; line-height:1.1; letter-spacing:-0.03em; font-weight:600;">Our verdict</h2>
+    <p style="margin:0 0 14px; font-size:16px; line-height:1.65; color:#4A4A55; max-width:720px;">Onfido’s strength is the identity check itself: document plus selfie verification with liveness, delivered through mature SDKs <a data-component="source-ref" href="#src-4" aria-label="Source 4" style="font-size:12px; vertical-align:super;">[4]</a>. Its weakness for compliance buyers is scope — watchlist screening is a separate module and ongoing AML monitoring is not the core product <a href="#src-4" aria-label="Source 4" style="font-size:12px; vertical-align:super;">[4]</a>.</p>
+    <p style="margin:0; font-size:16px; line-height:1.65; color:#4A4A55; max-width:720px;">Since April 2024 Onfido is owned by Entrust and is moving to the Entrust Identity Verification brand <a href="#src-1" aria-label="Source 1" style="font-size:12px; vertical-align:super;">[1]</a><a href="#src-2" aria-label="Source 2" style="font-size:12px; vertical-align:super;">[2]</a>.</p>
+  </section>
+
+  <section id="score" aria-labelledby="score-h" style="scroll-margin-top:130px;">
+    <h2 id="score-h" style="margin:0 0 6px; font-size:32px; line-height:1.1; letter-spacing:-0.03em; font-weight:600;">Score breakdown</h2>
+    <p style="margin:0 0 20px; font-size:15px; color:#4A4A55;">Six weighted criteria from <a href="Methodology Page - BeVerified (Desktop).dc.html">our methodology {{ methodologyVersion }}</a>.</p>
+    <div data-component="score-breakdown" style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px;">
+      <div style="display:flex; flex-wrap:wrap; gap:6px 16px; padding:12px 22px; font-size:13px; color:#6A6A74; border-bottom:1px solid #EEECE7;"><span style="flex:1 1 180px;">Criterion · weight</span><span style="flex:1 1 160px;">Sub-score</span><span>Evidence</span></div>
+      <sc-for list="{{ breakdown }}" as="b" hint-placeholder-count="6">
+        <div style="display:flex; flex-wrap:wrap; gap:8px 16px; align-items:center; padding:14px 22px; border-top:1px solid #EEECE7;">
+          <span style="font-size:15px; flex:1 1 180px; display:flex; justify-content:space-between; gap:12px;"><span>{{ b.name }}</span><span style="color:#4A4A55; font-variant-numeric:tabular-nums;">{{ b.weight }}%</span></span>
+          <sc-if value="{{ b.has }}" hint-placeholder-val="{{ true }}">
+            <span style="display:flex; align-items:center; gap:12px; flex:1 1 160px;" role="img" aria-label="{{ b.aria }}">
+              <span aria-hidden="true" style="flex:1; height:6px; background:#EEECE7; border-radius:999px; overflow:hidden;"><span style="display:block; height:100%; width:{{ b.pct }}; background:#14141A;"></span></span>
+              <span aria-hidden="true" style="font-size:15px; font-weight:600; font-variant-numeric:tabular-nums; width:28px;">{{ b.val }}</span>
+            </span>
+          </sc-if>
+          <sc-if value="{{ b.none }}" hint-placeholder-val="{{ false }}">
+            <span style="flex:1 1 160px; font-size:14px; color:#4A4A55;"><span style="display:inline-block; border:1px dashed #BDB9B0; border-radius:8px; padding:3px 10px;">Not publicly disclosed — not scored</span></span>
+          </sc-if>
+          <span data-component="evidence-tag" style="justify-self:start; display:inline-flex; align-items:center; gap:6px; font-size:13px; color:#14141A; border:1px solid #D6D3CC; padding:2px 9px; border-radius:999px; white-space:nowrap;"><span aria-hidden="true">{{ b.ev.icon }}</span>{{ b.ev.label }}</span>
+        </div>
+      </sc-for>
+      <div style="padding:12px 22px; border-top:1px solid #EEECE7; font-size:13px; color:#8A5A00; font-family:'Geist Mono', ui-monospace, monospace;">{{ fl.breakdown }}</div>
+    </div>
+  </section>
+
+  <section id="use-cases" aria-labelledby="uc-h" style="scroll-margin-top:130px;">
+    <h2 id="uc-h" style="margin:0 0 20px; font-size:32px; line-height:1.1; letter-spacing:-0.03em; font-weight:600;">Onfido for…</h2>
+    <div data-component="verdict-table" style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px;">
+      <sc-for list="{{ useCaseRows }}" as="u" hint-placeholder-count="5">
+        <div style="display:flex; flex-wrap:wrap; gap:8px 16px; align-items:center; padding:16px 22px; border-top:1px solid #EEECE7;">
+          <span style="font-size:15px; font-weight:500; flex:0 0 150px;">{{ u.name }}</span>
+          <span style="justify-self:start; display:inline-flex; align-items:center; gap:6px; font-size:14px; font-weight:500; white-space:nowrap;"><span aria-hidden="true" style="font-size:12px; letter-spacing:1px;">{{ u.dots }}</span>{{ u.verdict }}</span>
+          <span style="font-size:14px; line-height:1.5; color:#4A4A55; flex:1 1 220px; min-width:0;">{{ u.reason }}</span>
+          <span style="display:flex; align-items:center; gap:6px; justify-self:start;"><span style="display:inline-flex; align-items:center; gap:6px; font-size:13px; border:1px solid #D6D3CC; padding:2px 9px; border-radius:999px; white-space:nowrap;"><span aria-hidden="true">{{ u.ev.icon }}</span>{{ u.ev.label }}</span><a href="#src-{{ u.src }}" aria-label="Source {{ u.src }}" style="font-size:12px;">[{{ u.src }}]</a></span>
+        </div>
+      </sc-for>
+      <div style="padding:12px 22px; border-top:1px solid #EEECE7; font-size:13px; color:#8A5A00; font-family:'Geist Mono', ui-monospace, monospace;">{{ fl.useCases }}</div>
+    </div>
+  </section>
+
+  <section id="pricing" aria-labelledby="pr-h" style="scroll-margin-top:130px;">
+    <div style="display:flex; justify-content:space-between; align-items:baseline; gap:16px; margin-bottom:20px;">
+      <h2 id="pr-h" style="margin:0; font-size:32px; line-height:1.1; letter-spacing:-0.03em; font-weight:600;">Pricing</h2>
+      <span style="font-size:14px; color:#4A4A55;">Pricing verified: <strong style="font-weight:600; color:#14141A;">{{ pricingVerified }}</strong> <code style="font-family:'Geist Mono', ui-monospace, monospace; font-size:12px; color:#8A5A00;">{{ fl.pricingVerified }}</code></span>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:14px;">
+      <div data-component="pricing-block" style="background:#FFFFFF; border:1.5px solid #14141A; border-radius:18px; padding:22px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;"><span style="font-size:15px; font-weight:600;">Official information</span><span style="display:inline-flex; align-items:center; gap:6px; font-size:13px; border:1px solid #D6D3CC; padding:2px 9px; border-radius:999px;"><span aria-hidden="true">◇</span>Vendor-stated</span></div>
+        <div style="font-size:24px; font-weight:600; letter-spacing:-0.02em; margin-bottom:6px;">Sales quote only</div>
+        <p style="margin:0 0 14px; font-size:14px; line-height:1.5; color:#4A4A55;">No public rate card. Pricing is custom and volume-based <a href="#src-4" aria-label="Source 4" style="font-size:12px;">[4]</a>.</p>
+        <sc-for list="{{ officialRows }}" as="r" hint-placeholder-count="3">
+          <div style="display:grid; grid-template-columns:auto minmax(0,1fr); gap:12px; padding:9px 0; border-top:1px solid #EEECE7; font-size:14px;"><span style="color:#4A4A55; white-space:nowrap;">{{ r.k }}</span><span style="text-align:right;">{{ r.v }} <a href="#src-{{ r.src }}" style="font-size:12px;">[{{ r.src }}]</a></span></div>
+        </sc-for>
+        <code style="display:block; margin-top:10px; font-family:'Geist Mono', ui-monospace, monospace; font-size:12px; color:#8A5A00;">{{ fl.official }}</code>
+      </div>
+      <div data-component="pricing-block" style="background:#F1EFEA; border:1px dashed #BDB9B0; border-radius:18px; padding:22px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;"><span style="font-size:15px; font-weight:600;">Third-party estimates</span><span style="font-size:13px; color:#4A4A55;">Not official</span></div>
+        <sc-for list="{{ estimates }}" as="e" hint-placeholder-count="2">
+          <div style="padding:10px 0; border-top:1px solid #E0DDD6;">
+            <div style="display:flex; justify-content:space-between; gap:12px; font-size:15px;"><span style="font-weight:600; font-variant-numeric:tabular-nums;">{{ e.value }}</span><a href="#src-{{ e.src }}" style="font-size:12px;">[{{ e.src }}]</a></div>
+            <div style="font-size:14px; color:#4A4A55; margin-top:2px;">{{ e.source }} · checked {{ e.date }}</div>
+          </div>
+        </sc-for>
+        <code style="display:block; margin-top:10px; font-family:'Geist Mono', ui-monospace, monospace; font-size:12px; color:#8A5A00;">{{ fl.estimates }}</code>
+      </div>
+    </div>
+    <div style="margin-top:14px; background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px; padding:20px 22px;">
+      <div style="font-size:15px; font-weight:600; margin-bottom:10px;">What drives the price</div>
+      <ul style="margin:0; padding:0; list-style:none; display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:8px 24px; font-size:15px; color:#4A4A55;">
+        <li>— Monthly verification volume</li>
+        <li>— Modules: document, biometric, watchlist</li>
+        <li>— Minimum contract length and commitment</li>
+        <li>— Regions and document types in scope</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="ownership" aria-labelledby="own-h" style="scroll-margin-top:130px;">
+    <h2 id="own-h" style="margin:0 0 20px; font-size:32px; line-height:1.1; letter-spacing:-0.03em; font-weight:600;">Ownership &amp; company facts</h2>
+    <h3 style="margin:0 0 8px; font-size:19px; font-weight:600;">Who owns Onfido?</h3>
+    <p style="margin:0 0 20px; font-size:16px; line-height:1.65; color:#4A4A55; max-width:720px;">Entrust, a Minneapolis-based identity and data-security company, completed its acquisition of Onfido on April 9, 2024; terms were not disclosed <a href="#src-1" style="font-size:12px; vertical-align:super;">[1]</a>. Entrust said Onfido would operate first as “Onfido, an Entrust company” before moving to the Entrust brand <a href="#src-2" style="font-size:12px; vertical-align:super;">[2]</a>. <a href="https://www.entrust.com/company/newsroom/entrust-completes-acquisition-of-onfido-creating-a-new-era-of-identity-centric-security" rel="noopener" target="_blank">Read Entrust’s announcement ↗</a></p>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px;">
+      <sc-for list="{{ companyFacts }}" as="c" hint-placeholder-count="4">
+        <div style="display:flex; flex-wrap:wrap; gap:6px 16px; align-items:center; padding:13px 22px; border-top:1px solid #EEECE7; font-size:15px;">
+          <span style="color:#4A4A55; flex:0 0 120px;">{{ c.k }}</span>
+          <span style="flex:1 1 160px;">{{ c.v }} <code style="font-family:'Geist Mono', ui-monospace, monospace; font-size:12px; color:#8A5A00;">{{ c.f }}</code></span>
+          <span style="display:flex; align-items:center; gap:6px;"><span style="display:inline-flex; align-items:center; gap:6px; font-size:13px; border:1px solid #D6D3CC; padding:2px 9px; border-radius:999px; white-space:nowrap;"><span aria-hidden="true">{{ c.ev.icon }}</span>{{ c.ev.label }}</span><a href="#src-{{ c.src }}" style="font-size:12px;">[{{ c.src }}]</a></span>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section id="certifications" aria-labelledby="cert-h" style="scroll-margin-top:130px;">
+    <h2 id="cert-h" style="margin:0 0 6px; font-size:32px; line-height:1.1; letter-spacing:-0.03em; font-weight:600;">Certifications &amp; independent tests</h2>
+    <p style="margin:0 0 20px; font-size:15px; color:#4A4A55;">“Confirmed” means we found the certificate or register entry ourselves.</p>
+    <div data-component="cert-row" style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px;">
+      <sc-for list="{{ certs }}" as="c" hint-placeholder-count="6">
+        <div style="display:flex; flex-wrap:wrap; gap:8px 24px; align-items:center; padding:14px 22px; border-top:1px solid #EEECE7;">
+          <div style="flex:1 1 220px;"><div style="font-size:15px; font-weight:500;">{{ c.name }}</div><div style="font-size:14px; color:#4A4A55;">{{ c.what }}</div></div>
+          <sc-if value="{{ c.isConfirmed }}" hint-placeholder-val="{{ false }}"><span style="justify-self:start; display:inline-flex; align-items:center; gap:6px; font-size:14px; font-weight:500; color:#1B7A4B;"><span aria-hidden="true">✓</span>Confirmed</span></sc-if>
+          <sc-if value="{{ c.isVendor }}" hint-placeholder-val="{{ false }}"><span style="justify-self:start; display:inline-flex; align-items:center; gap:6px; font-size:14px; font-weight:500;"><span aria-hidden="true">◇</span>Vendor-stated</span></sc-if>
+          <sc-if value="{{ c.isNone }}" hint-placeholder-val="{{ true }}"><span style="justify-self:start; display:inline-flex; align-items:center; gap:6px; font-size:14px; color:#4A4A55;"><span aria-hidden="true">–</span>Not found</span></sc-if>
+          <span style="font-size:14px;">
+            <sc-if value="{{ c.isConfirmed }}" hint-placeholder-val="{{ false }}"><a href="#src-{{ c.src }}">View record [{{ c.src }}]</a></sc-if>
+            <sc-if value="{{ c.isVendor }}" hint-placeholder-val="{{ false }}"><a href="#src-{{ c.src }}">Vendor claim [{{ c.src }}]</a></sc-if>
+          </span>
+        </div>
+      </sc-for>
+      <div style="padding:12px 22px; border-top:1px solid #EEECE7; font-size:13px; color:#8A5A00; font-family:'Geist Mono', ui-monospace, monospace;">{{ fl.certs }}</div>
+    </div>
+  </section>
+
+  <section id="hands-on" aria-labelledby="ho-h" style="scroll-margin-top:130px;">
+    <h2 id="ho-h" style="margin:0 0 20px; font-size:32px; line-height:1.1; letter-spacing:-0.03em; font-weight:600;">Hands-on test</h2>
+    <sc-if value="{{ handsEmpty }}" hint-placeholder-val="{{ true }}">
+      <div data-component="hands-on-empty" style="border:1.5px dashed #BDB9B0; border-radius:18px; padding:28px; background:#FBFAF8;">
+        <div style="display:inline-flex; font-size:13px; font-weight:500; color:#6B4A00; background:#FFF3D1; border:1px dashed #D9A93A; padding:2px 8px; border-radius:6px; margin-bottom:12px;">Hidden on live pages until filled</div>
+        <div style="font-size:17px; font-weight:600; margin-bottom:6px;">Not tested yet</div>
+        <p style="margin:0; font-size:15px; line-height:1.55; color:#4A4A55; max-width:560px;">When {{ fl.handsOnRoot }} has content, this block, the “Hands-on test” nav pill and the “Manually tested” header badge appear together.</p>
+      </div>
+    </sc-if>
+    <sc-if value="{{ handsFilled }}" hint-placeholder-val="{{ false }}">
+      <div data-component="hands-on" style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px;">
+        <div style="display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); border-bottom:1px solid #EEECE7;">
+          <div style="padding:18px 22px;"><div style="font-size:13px; color:#6A6A74;">Test date</div><div style="font-size:18px; font-weight:600; font-variant-numeric:tabular-nums;">Mon DD, YYYY</div><code style="font-family:'Geist Mono', ui-monospace, monospace; font-size:12px; color:#8A5A00;">{{ fl.hoDate }}</code></div>
+          <div style="padding:18px 22px; border-left:1px solid #EEECE7;"><div style="font-size:13px; color:#6A6A74;">Median time to verify</div><div style="font-size:18px; font-weight:600; font-variant-numeric:tabular-nums;">00 s</div><code style="font-family:'Geist Mono', ui-monospace, monospace; font-size:12px; color:#8A5A00;">{{ fl.hoTime }}</code></div>
+          <div style="padding:18px 22px; border-left:1px solid #EEECE7;"><div style="font-size:13px; color:#6A6A74;">Evidence</div><div style="display:inline-flex; align-items:center; gap:6px; font-size:14px; font-weight:500; margin-top:3px;"><span aria-hidden="true">▲</span>Hands-on</div></div>
+        </div>
+        <sc-for list="{{ handsSteps }}" as="h" hint-placeholder-count="5">
+          <div style="display:grid; grid-template-columns:minmax(0,1fr) 90px; gap:16px; align-items:center; padding:13px 22px; border-top:1px solid #EEECE7; font-size:15px;">
+            <span>{{ h.name }}</span>
+            <sc-if value="{{ h.pass }}" hint-placeholder-val="{{ true }}"><span style="display:inline-flex; gap:6px; font-weight:500; color:#1B7A4B;"><span aria-hidden="true">✓</span>Pass</span></sc-if>
+            <sc-if value="{{ h.fail }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex; gap:6px; font-weight:500; color:#A02C1F;"><span aria-hidden="true">✕</span>Fail</span></sc-if>
+          </div>
+        </sc-for>
+        <div style="padding:12px 22px; border-top:1px solid #EEECE7; font-size:13px; color:#8A5A00; font-family:'Geist Mono', ui-monospace, monospace;">{{ fl.hoSteps }} · screenshots row renders only when {hands_on.screenshots[]} has items</div>
+      </div>
+    </sc-if>
+  </section>
+
+  <section id="features" aria-labelledby="ft-h" style="scroll-margin-top:130px;">
+    <h2 id="ft-h" style="margin:0 0 20px; font-size:32px; line-height:1.1; letter-spacing:-0.03em; font-weight:600;">Key features</h2>
+    <ul data-component="key-feature" style="list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:12px;">
+      <sc-for list="{{ features }}" as="f" hint-placeholder-count="6">
+        <li style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:16px 18px; display:flex; justify-content:space-between; gap:12px; align-items:flex-start;">
+          <span style="font-size:15px; line-height:1.5;">{{ f.t }}</span>
+          <a href="#src-{{ f.src }}" style="font-size:12px; flex-shrink:0;">[{{ f.src }}]</a>
+        </li>
+      </sc-for>
+    </ul>
+  </section>
+
+  <section id="pros-cons" aria-labelledby="pc-h" style="scroll-margin-top:130px;">
+    <h2 id="pc-h" style="margin:0 0 20px; font-size:32px; line-height:1.1; letter-spacing:-0.03em; font-weight:600;">Pros &amp; cons</h2>
+    <div data-component="pros-cons" style="display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:14px;">
+      <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px; padding:20px 22px;">
+        <div style="display:flex; align-items:center; gap:8px; font-size:15px; font-weight:600; margin-bottom:6px;"><span aria-hidden="true" style="width:20px; height:20px; border-radius:999px; background:#14141A; color:#FFFFFF; display:flex; align-items:center; justify-content:center; font-size:13px;">+</span>Pros</div>
+        <sc-for list="{{ pros }}" as="p" hint-placeholder-count="3"><div style="display:flex; justify-content:space-between; gap:12px; padding:11px 0; border-top:1px solid #EEECE7; font-size:15px; line-height:1.5;"><span>{{ p.t }}</span><a href="#src-{{ p.src }}" style="font-size:12px; flex-shrink:0;">[{{ p.src }}]</a></div></sc-for>
+      </div>
+      <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px; padding:20px 22px;">
+        <div style="display:flex; align-items:center; gap:8px; font-size:15px; font-weight:600; margin-bottom:6px;"><span aria-hidden="true" style="width:20px; height:20px; border-radius:999px; border:1.5px solid #14141A; box-sizing:border-box; display:flex; align-items:center; justify-content:center; font-size:13px;">−</span>Cons</div>
+        <sc-for list="{{ cons }}" as="p" hint-placeholder-count="3"><div style="display:flex; justify-content:space-between; gap:12px; padding:11px 0; border-top:1px solid #EEECE7; font-size:15px; line-height:1.5;"><span>{{ p.t }}</span><a href="#src-{{ p.src }}" style="font-size:12px; flex-shrink:0;">[{{ p.src }}]</a></div></sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section id="user-ratings" aria-labelledby="ur-h" style="scroll-margin-top:130px;">
+    <h2 id="ur-h" style="margin:0 0 6px; font-size:32px; line-height:1.1; letter-spacing:-0.03em; font-weight:600;">User ratings</h2>
+    <p style="margin:0 0 20px; display:inline-flex; align-items:center; gap:8px; font-size:14px; font-weight:500; color:#14141A; border:1px solid #D6D3CC; background:#FFFFFF; padding:4px 12px; border-radius:999px;"><span aria-hidden="true">●</span>User ratings are not part of our score</p>
+    <div data-component="user-rating-row" style="background:#F1EFEA; border:1px solid #E0DDD6; border-radius:18px; padding:6px 0;">
+      <sc-for list="{{ userRatings }}" as="r" hint-placeholder-count="3">
+        <div style="display:flex; flex-wrap:wrap; gap:6px 16px; align-items:center; padding:13px 22px; font-size:15px;">
+          <span style="font-weight:500; flex:1 1 160px;">{{ r.platform }}</span>
+          <span style="font-variant-numeric:tabular-nums; white-space:nowrap;">{{ r.rating }} <span style="color:#6A6A74;">/ 5</span></span>
+          <span style="color:#4A4A55; font-variant-numeric:tabular-nums; white-space:nowrap;">{{ r.count }} reviews</span>
+          <span style="color:#4A4A55; font-size:14px; white-space:nowrap;">checked {{ r.date }}</span>
+          <a href="#src-{{ r.src }}" style="font-size:14px; white-space:nowrap;">Open [{{ r.src }}]</a>
+        </div>
+      </sc-for>
+      <div style="padding:8px 22px 10px; font-size:13px; color:#8A5A00; font-family:'Geist Mono', ui-monospace, monospace;">{{ fl.userRatings }}</div>
+    </div>
+    <div style="display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:14px; margin-top:14px;">
+      <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px; padding:18px 22px;"><div style="font-size:15px; font-weight:600; margin-bottom:6px;">What users praise</div><sc-for list="{{ praise }}" as="t" hint-placeholder-count="3"><div style="padding:9px 0; border-top:1px solid #EEECE7; font-size:15px; color:#4A4A55;">{{ t }}</div></sc-for></div>
+      <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px; padding:18px 22px;"><div style="font-size:15px; font-weight:600; margin-bottom:6px;">What users criticise</div><sc-for list="{{ criticise }}" as="t" hint-placeholder-count="3"><div style="padding:9px 0; border-top:1px solid #EEECE7; font-size:15px; color:#4A4A55;">{{ t }}</div></sc-for></div>
+    </div>
+  </section>
+
+  <section id="alternatives" aria-labelledby="alt-h" style="scroll-margin-top:130px;">
+    <h2 id="alt-h" style="margin:0 0 20px; font-size:32px; line-height:1.1; letter-spacing:-0.03em; font-weight:600;">Alternatives</h2>
+    <div data-component="alt-row" style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px;">
+      <sc-for list="{{ alts }}" as="a" hint-placeholder-count="4">
+        <a href="{{ a.href }}" style="display:flex; flex-wrap:wrap; gap:10px 16px; align-items:center; padding:16px 22px; border-top:1px solid #EEECE7; text-decoration:none; color:#14141A;" style-hover="background:#FBFAF8; text-decoration:none; color:#14141A;">
+          <img loading="lazy" src="{{ a.logo }}" alt="{{ a.name }}" style="height:22px; width:auto; max-width:120px; object-fit:contain; object-position:left center; display:block;">
+          <span style="font-size:15px; line-height:1.5; flex:1 1 220px; min-width:0;"><strong style="font-weight:600;">Choose {{ a.name }} instead</strong> if {{ a.reason }}</span>
+          <span role="img" aria-label="{{ a.aria }}" style="font-size:18px; font-weight:600; font-variant-numeric:tabular-nums; white-space:nowrap;">{{ a.scoreText }} <span style="font-size:14px; font-weight:400; color:#6A6A74;">/ 5</span></span>
+          <span style="font-size:14px; font-weight:500; color:#5B2BD9; white-space:nowrap;">Read review →</span>
+        </a>
+      </sc-for>
+    </div>
+    <div style="display:flex; gap:10px; margin-top:14px;">
+      <a href="#" style="font-size:14px; color:#14141A; background:#FFFFFF; border:1px solid #D6D3CC; padding:8px 15px; border-radius:999px;">Onfido vs Jumio →</a>
+      <a href="#" style="font-size:14px; color:#14141A; background:#FFFFFF; border:1px solid #D6D3CC; padding:8px 15px; border-radius:999px;">Onfido vs Veriff →</a>
+    </div>
+  </section>
+
+  <section id="ranked-in" aria-labelledby="ri-h" style="scroll-margin-top:130px;">
+    <h2 id="ri-h" style="margin:0 0 20px; font-size:32px; line-height:1.1; letter-spacing:-0.03em; font-weight:600;">Ranked in</h2>
+    <ul style="list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:12px;">
+      <sc-for list="{{ rankedIn }}" as="r" hint-placeholder-count="6">
+        <li><a href="{{ r.href }}" style="display:flex; align-items:center; gap:14px; background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:14px 16px; text-decoration:none; color:#14141A;" style-hover="border-color:#9C988F; text-decoration:none; color:#14141A;"><span style="font-size:26px; font-weight:600; letter-spacing:-0.03em; font-variant-numeric:tabular-nums; color:#8A8790;">#{{ r.pos }}</span><span style="font-size:15px; line-height:1.35;">{{ r.name }}</span></a></li>
+      </sc-for>
+    </ul>
+    <code style="display:block; margin-top:10px; font-family:'Geist Mono', ui-monospace, monospace; font-size:12px; color:#8A5A00;">{{ fl.rankedIn }}</code>
+  </section>
+
+  <section id="faq" aria-labelledby="faq-h" style="scroll-margin-top:130px;">
+    <h2 id="faq-h" style="margin:0 0 12px; font-size:32px; line-height:1.1; letter-spacing:-0.03em; font-weight:600;">FAQ</h2>
+    <div data-component="faq" style="border-top:1px solid #D6D3CC;">
+      <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="6">
+        <div style="border-bottom:1px solid #D6D3CC;">
+          <h3 style="margin:0;"><button type="button" onClick="{{ f.onToggle }}" aria-expanded="{{ f.open }}" style="width:100%; display:flex; justify-content:space-between; align-items:center; gap:24px; background:transparent; border:none; color:#14141A; text-align:left; padding:18px 0; cursor:pointer; font-size:17px; font-weight:500;"><span>{{ f.q }}</span><span aria-hidden="true" style="font-size:20px; color:#6A6A74; font-weight:400;">{{ f.icon }}</span></button></h3>
+          <sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}"><p style="margin:0; padding:0 40px 20px 0; font-size:16px; line-height:1.6; color:#4A4A55;">{{ f.a }}</p></sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section id="sources" aria-labelledby="src-h" style="scroll-margin-top:130px;">
+    <h2 id="src-h" style="margin:0 0 20px; font-size:32px; line-height:1.1; letter-spacing:-0.03em; font-weight:600;">Sources</h2>
+    <ol data-component="sources-list" style="list-style:none; margin:0; padding:0; border-top:1px solid #D6D3CC;">
+      <sc-for list="{{ sources }}" as="s" hint-placeholder-count="10">
+        <li id="src-{{ s.n }}" style="display:grid; grid-template-columns:40px minmax(0,1fr) 190px; gap:12px; padding:12px 0; border-bottom:1px solid #E6E4DF; font-size:15px; scroll-margin-top:130px;">
+          <span style="color:#6A6A74; font-variant-numeric:tabular-nums;">[{{ s.n }}]</span>
+          <span><a href="{{ s.href }}" rel="noopener">{{ s.title }}</a> <span style="color:#4A4A55;">— {{ s.publisher }}</span></span>
+          <span style="font-size:14px; color:#4A4A55; text-align:right; font-variant-numeric:tabular-nums;">Accessed {{ s.accessed }}</span>
+        </li>
+      </sc-for>
+    </ol>
+    <code style="display:block; margin-top:10px; font-family:'Geist Mono', ui-monospace, monospace; font-size:12px; color:#8A5A00;">{{ fl.sources }}</code>
+  </section>
+
+  <section aria-label="About the author" data-component="author-box" style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px; padding:24px; display:grid; grid-template-columns:64px minmax(0,1fr); gap:18px; margin-bottom:96px;">
+    <img src="authors/andrii-klymenko.png" alt="Andrii Klymenko" style="width:64px; height:64px; border-radius:999px; object-fit:cover; object-position:40% 25%; border:1px solid #E0DDD6; display:block;">
+    <div>
+      <div style="font-size:18px; font-weight:600;">{{ reviewerName }}</div>
+      <div style="font-size:14px; color:#4A4A55; margin-bottom:10px;">{{ reviewerRole }}</div>
+      <p style="margin:0 0 12px; font-size:15px; line-height:1.6; color:#4A4A55;">{{ authorBio }} <code style="font-family:'Geist Mono', ui-monospace, monospace; font-size:12px; color:#8A5A00;">{{ fl.bio }}</code></p>
+      <div style="display:flex; gap:20px; font-size:14px; color:#4A4A55; font-variant-numeric:tabular-nums;"><a href="{{ reviewerHref }}" style="font-weight:500;">Author profile →</a><a href="{{ reviewerLinkedin }}" rel="noopener" target="_blank" style="font-weight:500;">LinkedIn ↗</a><span>Published {{ published }}</span><span>Updated {{ updated }}</span><code style="font-family:'Geist Mono', ui-monospace, monospace; font-size:12px; color:#8A5A00;">{{ fl.dates }}</code></div>
+    </div>
+  </section>
+</main>
+
+<aside aria-label="Quick facts" style="position:sticky; top:132px;">
+  <div data-component="quick-facts" style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px; padding:6px 0;">
+    <div style="padding:12px 20px 8px; font-size:15px; font-weight:600;">Quick facts</div>
+    <sc-for list="{{ quickFacts }}" as="q" hint-placeholder-count="8">
+      <div style="padding:11px 20px; border-top:1px solid #EEECE7;">
+        <div style="display:flex; justify-content:space-between; gap:12px; font-size:14px;"><span style="color:#4A4A55;">{{ q.k }}</span><span style="text-align:right; font-weight:500;">{{ q.v }}</span></div>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:6px;">
+          <code style="font-family:'Geist Mono', ui-monospace, monospace; font-size:12px; color:#8A5A00;">{{ q.f }}</code>
+          <span style="display:inline-flex; align-items:center; gap:5px; font-size:12px; border:1px solid #D6D3CC; padding:1px 8px; border-radius:999px; white-space:nowrap;"><span aria-hidden="true">{{ q.ev.icon }}</span>{{ q.ev.label }}</span>
+        </div>
+      </div>
+    </sc-for>
+    <div style="padding:12px 20px 14px; border-top:1px solid #EEECE7;">
+      <a href="#" rel="sponsored nofollow noopener" target="_blank" style="display:flex; justify-content:center; font-size:15px; font-weight:500; color:#FFFFFF; background:#14141A; padding:11px; border-radius:999px; text-decoration:none;" style-hover="background:#2A2A33; color:#FFFFFF; text-decoration:none;">Visit site ↗</a>
+    </div>
+  </div>
+  <div style="margin-top:12px; display:flex; flex-direction:column; gap:6px; padding:0 4px; font-size:13px; color:#4A4A55;">
+    <div style="font-weight:500; color:#14141A;">Evidence key</div>
+    <sc-for list="{{ evKey }}" as="e" hint-placeholder-count="4"><div style="display:flex; gap:8px;"><span aria-hidden="true" style="width:14px;">{{ e.icon }}</span><span><strong style="font-weight:500; color:#14141A;">{{ e.label }}</strong> — {{ e.desc }}</span></div></sc-for>
+  </div>
+</aside>
+</div>
+
+<footer data-component="footer" style="background:#EFEDE8; border-top:1px solid #E0DDD6;">
+  <div style="max-width:1200px; margin:0 auto; padding:56px 32px 36px;">
+    <div style="display:grid; grid-template-columns:1.4fr repeat(5, minmax(0,1fr)); gap:32px; margin-bottom:48px;">
+      <div>
+        <a href="Homepage V3 - BeVerified (Desktop).dc.html" style="display:flex; align-items:center; gap:9px; text-decoration:none; margin-bottom:14px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="flex-shrink:0; display:block;"><rect x="3" y="12" width="4.5" height="9" rx="1" fill="#14141A"></rect><rect x="9.75" y="8" width="4.5" height="13" rx="1" fill="#14141A"></rect><rect x="16.5" y="3" width="4.5" height="18" rx="1" fill="#5B2BD9"></rect></svg>
+          <span style="font-weight:600; font-size:17px; letter-spacing:-0.03em; color:#14141A;">BeVerified</span>
+        </a>
+        <p style="margin:0; font-size:14px; line-height:1.5; color:#4A4A55;">Independent reviews of KYC, KYB and AML software.</p>
+      </div>
+      <nav aria-label="Use cases"><div style="font-size:14px; font-weight:600; margin-bottom:14px;">Use cases</div><sc-for list="{{ footerUseCases }}" as="u" hint-placeholder-count="8"><a href="{{ u.href }}" style="display:block; font-size:14px; color:#4A4A55; padding:4px 0;">{{ u.name }}</a></sc-for></nav>
+      <nav aria-label="Regions"><div style="font-size:14px; font-weight:600; margin-bottom:14px;">Regions</div><sc-for list="{{ footerRegions }}" as="r" hint-placeholder-count="5"><a href="{{ r.href }}" style="display:block; font-size:14px; color:#4A4A55; padding:4px 0;">{{ r.name }}</a></sc-for></nav>
+      <nav aria-label="Providers"><div style="font-size:14px; font-weight:600; margin-bottom:14px;">Providers A–Z</div><sc-for list="{{ footerProviders }}" as="p" hint-placeholder-count="8"><a href="{{ p.href }}" style="display:block; font-size:14px; color:#4A4A55; padding:4px 0;">{{ p.name }}</a></sc-for><a href="Reviews Directory - BeVerified (Desktop).dc.html" style="display:block; font-size:14px; font-weight:500; padding:4px 0;">All providers →</a></nav>
+      <nav aria-label="Company"><div style="font-size:14px; font-weight:600; margin-bottom:14px;">Company</div><a href="#about" style="display:block; font-size:14px; color:#4A4A55; padding:4px 0;">About</a><a href="Methodology Page - BeVerified (Desktop).dc.html" style="display:block; font-size:14px; color:#4A4A55; padding:4px 0;">Methodology</a><a href="Methodology Page - BeVerified (Desktop).dc.html#disclosure" style="display:block; font-size:14px; color:#4A4A55; padding:4px 0;">How we make money</a><a href="mailto:support@beverified.org" style="display:block; font-size:14px; color:#4A4A55; padding:4px 0;">Contact</a></nav>
+      <nav aria-label="Legal"><div style="font-size:14px; font-weight:600; margin-bottom:14px;">Legal</div><a href="#privacy" style="display:block; font-size:14px; color:#4A4A55; padding:4px 0;">Privacy</a><a href="#terms" style="display:block; font-size:14px; color:#4A4A55; padding:4px 0;">Terms</a></nav>
+    </div>
+    <div style="display:grid; grid-template-columns:minmax(0,2fr) minmax(0,1fr); gap:32px; padding-top:24px; border-top:1px solid #D6D3CC; font-size:14px; line-height:1.6; color:#4A4A55;">
+      <p style="margin:0;"><strong style="color:#14141A; font-weight:600;">Disclosure.</strong> {{ disclosure }} Scores are editorial opinions based on the published methodology, not legal advice.</p>
+      <div style="text-align:right;">© 2026 BeVerified.org · support@beverified.org</div>
+    </div>
+  </div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;handsOn&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;empty&quot;,&quot;filled&quot;],&quot;default&quot;:&quot;empty&quot;,&quot;tsType&quot;:&quot;'empty' | 'filled'&quot;,&quot;section&quot;:&quot;States&quot;},&quot;showFields&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;States&quot;}}">
+class Component extends DCLogic {
+  state = { faq: 0, hands: null };
+  componentDidMount() { if (!window.BV) { this._on = () => this.forceUpdate(); window.addEventListener('bv-data-ready', this._on); } }
+  componentWillUnmount() { if (this._on) window.removeEventListener('bv-data-ready', this._on); }
+  renderVals() {
+    const D = window.BV;
+    if (!D) return {};
+    const st = this.state, m = D.meta, P = D.byId.onfido;
+    const show = this.props.showFields !== false;
+    const F = (s) => (show ? s : '');
+    const handsFilled = st.hands != null ? st.hands : this.props.handsOn === 'filled';
+    const EV = {
+      ind: { icon: '◆', label: 'Independent', desc: 'lab, government register or benchmark' },
+      ven: { icon: '◇', label: 'Vendor-stated', desc: 'vendor website or docs' },
+      usr: { icon: '●', label: 'User-reported', desc: 'G2, Capterra, Gartner Peer Insights' },
+      hand: { icon: '▲', label: 'Hands-on', desc: 'our own test' },
+    };
+    const segs = (s) => [0, 1, 2, 3, 4].map((i) => ({ w: Math.max(0, Math.min(1, s - i)) * 100 + '%' }));
+    const evByCrit = [EV.ind, EV.hand, EV.ven, EV.hand, EV.hand, EV.ind];
+    const breakdown = D.rubric.map((r, i) => {
+      const none = i === 4;
+      const v = 4.0;
+      return { name: r.name, weight: r.weight, has: !none, none, val: v.toFixed(1), pct: (v / 5) * 100 + '%', aria: r.name + ' ' + v.toFixed(1) + ' out of 5', ev: evByCrit[i] };
+    });
+    const nav = [['verdict', 'Verdict'], ['score', 'Score'], ['use-cases', 'Use cases'], ['pricing', 'Pricing'], ['ownership', 'Ownership'], ['certifications', 'Certifications'], ['hands-on', 'Hands-on test'], ['pros-cons', 'Pros & cons'], ['user-ratings', 'User ratings'], ['alternatives', 'Alternatives'], ['faq', 'FAQ'], ['sources', 'Sources']]
+      .filter(([id]) => id !== 'hands-on' || handsFilled || show)
+      .map(([id, label]) => ({ id, label }));
+    const V = { Strong: '●●●', Adequate: '●●○', Limited: '●○○', 'Not offered': '○○○' };
+    const useCaseRows = [
+      ['KYC onboarding', 'Strong', 'Document and selfie checks with liveness are the core product.', EV.ven, 4],
+      ['KYB', 'Limited', 'Business registry and UBO checks are not a documented core module.', EV.ven, 4],
+      ['AML screening & monitoring', 'Adequate', 'Watchlist screening is sold as a separate module; no transaction monitoring.', EV.ven, 4],
+      ['Fraud & deepfakes', 'Strong', 'Liveness and document-fraud signals are part of the standard flow.', EV.ven, 4],
+      ['Crypto', 'Not offered', 'No wallet screening or Travel Rule messaging in the product.', EV.ven, 4],
+    ].map(([name, verdict, reason, ev, src]) => ({ name, verdict, dots: V[verdict], reason, ev, src }));
+    const sources = [
+      ['Entrust Completes Acquisition of Onfido, Creating A New Era of Identity-Centric Security', 'Entrust newsroom', 'https://www.entrust.com/company/newsroom/entrust-completes-acquisition-of-onfido-creating-a-new-era-of-identity-centric-security'],
+      ['Entrust Completes Acquisition of Onfido — customer FAQ', 'Entrust', 'https://www.entrust.com/resources/learn/entrust-completes-acquisition-of-onfido'],
+      ['Onfido Limited — company overview', 'Companies House (UK)', '#'],
+      ['Identity verification product and pricing pages', 'Onfido / Entrust', '#'],
+      ['{third-party pricing source}', '{publisher}', '#'],
+      ['Onfido reviews', 'G2', '#'],
+      ['Onfido reviews', 'Capterra', '#'],
+      ['Onfido reviews', 'Gartner Peer Insights', '#'],
+      ['PAD test results', 'iBeta Quality Assurance', '#'],
+      ['UK digital identity and attributes trust framework register', 'GOV.UK', '#'],
+    ].map(([title, publisher, href], i) => ({ n: i + 1, title, publisher, href, accessed: 'Mon DD, YYYY' }));
+    const certs = [
+      ['ISO/IEC 30107-3 (iBeta)', 'Presentation-attack detection test', 'confirmed', 9],
+      ['UK DIATF register', 'Certified digital identity service', 'confirmed', 10],
+      ['ISO/IEC 27001', 'Information security management', 'vendor', 4],
+      ['SOC 2 Type II', 'Security controls audit', 'vendor', 4],
+      ['NIST FRTE', 'Face recognition technology evaluation', 'none', null],
+      ['FIDO Face Verification', 'Biometric component certification', 'none', null],
+    ].map(([name, what, s, src]) => ({ name, what, src, isConfirmed: s === 'confirmed', isVendor: s === 'vendor', isNone: s === 'none' }));
+    const alts = [
+      ['sumsub', 'you want KYC, AML screening and transaction monitoring from one vendor.'],
+      ['kycaid', 'you need published pricing and a no-code workflow with human review.'],
+      ['jumio', 'you want an enterprise IDV vendor with AML screening in the same contract.'],
+      ['trulioo', 'you also need business (KYB) verification across many registries.'],
+    ].map(([id, reason]) => { const p = D.editorialTop.find((x) => x.id === id); return { name: p.name, logo: p.logo, href: p.href, reason, scoreText: p.score.toFixed(1), aria: p.score.toFixed(1) + ' out of 5' }; });
+    const C = (n) => 'Category Page - ' + n + ' (Desktop).dc.html';
+    const rankedIn = [
+      [3, 'Top Identity Verification Companies'], [3, 'Best eKYC Solution Providers'], [3, 'Liveness Detection Providers'],
+      [3, 'KYC Providers in Canada'], [3, 'KYC Providers in India'], [5, 'Best AML Software Providers'],
+    ].map(([pos, name]) => ({ pos, name, href: C(name) }));
+    const faqsRaw = [
+      ['How much does Onfido cost?', 'Onfido doesn’t publish a rate card. Pricing is custom and volume-based, quoted by Entrust’s sales team. Third-party estimates exist but aren’t official — see Pricing for each source and the date we checked it.'],
+      ['Who owns Onfido?', 'Entrust. It completed the acquisition on April 9, 2024; terms were not disclosed.'],
+      ['Is Onfido the same as Entrust Identity Verification?', 'Yes. Entrust said Onfido would first operate as “Onfido, an Entrust company” and then move, with its product names, to the Entrust brand. Entrust Identity Verification is the same product line.'],
+      ['What are the best Onfido alternatives?', alts.map((a) => a.name + ' (' + a.scoreText + ')').join(', ') + '. Choose by scope: an all-in-one KYC + AML platform, published pricing, enterprise IDV with AML, or KYB coverage.'],
+      ['Does Onfido do AML screening?', 'Watchlist screening is available as a separate module. Onfido doesn’t offer ongoing transaction monitoring, so most regulated teams pair it with a dedicated AML vendor.'],
+      ['Is Onfido good for crypto companies?', 'It can handle onboarding KYC for exchanges, but it doesn’t include wallet screening or Travel Rule messaging. Crypto teams usually add a specialist for those.'],
+    ];
+    const faqs = faqsRaw.map(([q, a], i) => ({ q, a, open: st.faq === i, icon: st.faq === i ? '−' : '+', onToggle: () => this.setState({ faq: st.faq === i ? -1 : i }) }));
+    return {
+      showFields: show,
+      handsFilled, handsEmpty: !handsFilled,
+      toggleHands: (e) => { e.preventDefault(); this.setState({ hands: !handsFilled }); },
+      toggleHandsHref: '#hands-on', handsToggleLabel: handsFilled ? 'show empty state' : 'show filled state',
+      bestFor: P.bestFor, rank: 3, rankCategory: 'Identity Verification', rankHref: C('Top Identity Verification Companies'),
+      reviewerName: D.reviewer.name, reviewerCred: D.reviewer.credential, reviewerRole: D.reviewer.role, reviewerHref: D.reviewer.href, reviewerLinkedin: D.reviewer.linkedin,
+      lastVerified: m.lastVerified, methodologyVersion: m.methodologyVersion, disclosure: m.disclosure,
+      scoreText: P.score.toFixed(1), scoreAria: 'BeVerified score ' + P.score.toFixed(1) + ' out of 5, Excellent', grade: 'Excellent', segs: segs(P.score),
+      shortAnswer: 'Onfido, now Entrust Identity Verification, suits regulated fintechs and marketplaces that need document and selfie checks with mature liveness detection. The trade-off: AML screening is a separate module and there’s no transaction monitoring, so most teams add a second vendor. No public rate card; third-party estimates are labelled as such below.',
+      navItems: nav, breakdown, useCaseRows,
+      pricingVerified: m.lastVerifiedShort,
+      officialRows: [{ k: 'Public rate card', v: 'Not published', src: 4 }, { k: 'Pricing model', v: 'Custom, volume-based', src: 4 }, { k: 'Free trial / sandbox', v: '{pricing.trial}', src: 4 }],
+      estimates: [{ value: '$0.00 – $0.00 / check', source: '{pricing.estimates[].source}', date: 'Mon YYYY', src: 5 }, { value: '$0,000 / yr minimum', source: '{pricing.estimates[].source}', date: 'Mon YYYY', src: 5 }],
+      companyFacts: [
+        { k: 'Founded', v: '2012', f: F('{facts.founded}'), ev: EV.ind, src: 2 },
+        { k: 'Headquarters', v: 'London, UK', f: F('{facts.hq}'), ev: EV.ind, src: 3 },
+        { k: 'Owner', v: 'Entrust (since Apr 2024)', f: F('{facts.owner}'), ev: EV.ind, src: 1 },
+        { k: 'Offices', v: 'City · City · City', f: F('{facts.offices[]}'), ev: EV.ven, src: 4 },
+      ],
+      certs,
+      handsSteps: ['Onboarding flow', 'Document check', 'Liveness', 'Dashboard & case review', 'API sandbox'].map((name, i) => ({ name, pass: i !== 3, fail: i === 3 })),
+      features: [
+        'Checks passports, ID cards and driving licences from one SDK',
+        'Selfie and video liveness to catch photos, masks and deepfakes',
+        'No-code workflow builder to change flows without an app release',
+        'Web, iOS, Android and React Native SDKs',
+        'Watchlist screening available as an add-on module',
+        'Case review dashboard for manual decisions',
+      ].map((t) => ({ t, src: 4 })),
+      pros: [{ t: 'Mature liveness detection with selfie and video options', src: 4 }, { t: 'Broad document-type support across countries', src: 4 }, { t: 'Well-documented SDKs for web and mobile', src: 4 }],
+      cons: [{ t: 'AML/watchlist screening is a separate module', src: 4 }, { t: 'Enterprise-oriented pricing with no public rate card', src: 4 }, { t: 'Onboarding and integration can take several weeks', src: 6 }],
+      userRatings: [['G2', 6], ['Capterra', 7], ['Gartner Peer Insights', 8]].map(([platform, src]) => ({ platform, src, rating: '0.0', count: '000', date: 'Mon YYYY' })),
+      praise: ['{theme} — e.g. speed of the end-user flow', '{theme} — e.g. SDK documentation', '{theme} — e.g. document coverage'],
+      criticise: ['{theme} — e.g. contract and pricing transparency', '{theme} — e.g. support response times', '{theme} — e.g. manual-review turnaround'],
+      alts, rankedIn, faqs, sources,
+      quickFacts: [
+        { k: 'From price', v: 'Not published', f: F('{facts.from_price}'), ev: EV.ven },
+        { k: 'Pricing model', v: 'Sales quote', f: F('{facts.pricing_model}'), ev: EV.ven },
+        { k: 'Founded', v: '2012', f: F('{facts.founded}'), ev: EV.ind },
+        { k: 'HQ', v: 'London, UK', f: F('{facts.hq}'), ev: EV.ind },
+        { k: 'Owner', v: 'Entrust', f: F('{facts.owner}'), ev: EV.ind },
+        { k: 'Coverage', v: '000 countries · 0,000 docs', f: F('{facts.coverage}'), ev: EV.ven },
+        { k: 'Certifications', v: '0 confirmed', f: F('{facts.certifications_count}'), ev: EV.ind },
+        { k: 'Last verified', v: m.lastVerified, f: F('{last_verified}'), ev: EV.hand },
+      ],
+      evKey: [EV.ind, EV.ven, EV.usr, EV.hand],
+      authorBio: 'Andrii reviews KYC, KYB and AML software for BeVerified, checking vendor claims against public registers, pricing pages and independent test results.',
+      published: 'Mon DD, YYYY', updated: m.lastVerified,
+      fl: {
+        bestFor: F('{best_for}'), rank: F('{rank} {category}'), lastVerified: F('{last_verified}'), score: F('{score} {score_grade}'),
+        breakdown: F('{score_breakdown[].criterion} {score_breakdown[].weight} {score_breakdown[].score | null} {score_breakdown[].evidence}'),
+        useCases: F('{use_cases[].name} {use_cases[].verdict} {use_cases[].reason} {use_cases[].evidence} {use_cases[].source}'),
+        pricingVerified: F('{pricing.verified}'), official: F('{pricing.items[].label} {pricing.items[].value} {pricing.items[].source}'),
+        estimates: F('{pricing.estimates[].value} {pricing.estimates[].source} {pricing.estimates[].date}'),
+        certs: F('{certifications[].name} {certifications[].status: confirmed | vendor | not_found} {certifications[].source}'),
+        handsOnRoot: '{hands_on}', hoDate: F('{hands_on.date}'), hoTime: F('{hands_on.time_to_verify}'), hoSteps: F('{hands_on.steps[].name} {hands_on.steps[].result}'),
+        userRatings: F('{user_ratings[].platform} {user_ratings[].rating} {user_ratings[].count} {user_ratings[].checked} {user_ratings[].url}'),
+        rankedIn: F('{rankings[].category} {rankings[].position}'), sources: F('{sources[].title} {sources[].publisher} {sources[].url} {sources[].accessed}'),
+        bio: F('{author.bio}'), dates: F('{published} {updated}'),
+      },
+      footerUseCases: D.useCases, footerRegions: D.regions.filter((r) => r.page), footerProviders: D.reviewed.slice(0, 8),
+    };
+  }
+}
+</script>
+</body>
+</html>

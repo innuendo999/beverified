@@ -1,0 +1,183 @@
+slug: unit21
+name: Unit21
+alternate_names: []
+status: published
+seo:
+  title: 'Unit21 Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Unit21 review: fraud and AML platform with AI agents for investigations and filings, used by 200+ customers. Features, pricing, pros & cons, alternatives.'
+  h1: 'Unit21 Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/unit21.jpg
+  background: '#6F3EE0'
+  wordmark: null
+tagline: Fraud and AML platform with AI agents that handle investigations, beyond alerts
+score: 4.6
+grade: Great
+primary_category: aml/banks
+legacy_rank_claim: 'ranked #1 in AML for Banks'
+categories:
+- aml/banks
+- aml
+link:
+  url: https://www.unit21.ai
+  type: null
+  legacy_rel: nofollow sponsored
+last_verified: '2026-10-18'
+updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+verdict: 'Unit21''s AI agents go further than most fraud/AML tools. Its Detection and Investigation agents triage alerts, gather evidence and pre-populate regulatory filings such as SARs, instead of only summarizing cases for a human analyst. That ambition is backed by real customers (Chime, Green Dot, Sallie Mae), though pricing is not published.'
+what_is:
+- Unit21 is a fraud-prevention and AML platform founded in 2018 and headquartered in San Francisco. It started as a no-code risk and compliance platform and now adds AI agents on top, used by more than 200 customers, including Chime, Green Dot and Crypto.com, to combine fraud detection, AML transaction monitoring and regulatory filing. Co-founder Trisha Kothari led the company as CEO until April 2026, when founding engineer Tyler Allen became CEO and she moved to chair of the board.
+features:
+- AI agents (Detection Agent and Investigation Agent) that handle alert review and investigation work, beyond alert triage.
+- Real-time fraud monitoring with stated sub-250ms latency.
+- AML transaction monitoring, sanctions and payment screening, and customer risk ratings.
+- AI pre-populated SAR, STR, CTR, 314(a) and goAML filings.
+- Coverage across RTP, FedNow, ACH, card and crypto payments.
+- Device intelligence and a US fraud consortium alongside rule-based detection.
+pricing:
+  summary: Pricing is not published; Unit21 quotes on request.
+  plans:
+  - tier: Enterprise Quote
+    price: Custom
+    note: Fraud and AML products quoted per institution
+    extra: Contact sales for a quote
+  legacy_verified_note: null
+  verified: '2026-10'
+  items: []
+facts:
+- label: From
+  value: Not publicly disclosed
+  source: null
+- label: Founded
+  value: '2018'
+  source: 2
+  evidence: independent
+- label: HQ
+  value: San Francisco, CA
+  source: 3
+  evidence: vendor
+- label: Customers
+  value: 200+, incl. Chime, Green Dot, Crypto.com
+  source: 2
+  evidence: independent
+- label: CEO
+  value: Tyler Allen (since April 2026)
+  source: 2
+  evidence: independent
+- label: Funding
+  value: $45M Series C (2022, led by Tiger Global); total not disclosed
+  source: 3
+  evidence: vendor
+pros:
+- AI agents that carry investigation work forward rather than only summarizing alerts; one customer case study (Nexo) cites a 93% cut in false positives
+- Used by 200+ customers including Chime, Green Dot, and Sallie Mae
+- Covers RTP, FedNow, ACH, card and crypto payments in one platform
+cons:
+- No published rate card
+- Best suited to regulated financial institutions rather than early-stage startups
+- CEO change in April 2026 (co-founder Trisha Kothari moved to chair) brings some organizational change
+alternatives:
+- slug: complyadvantage
+  name: ComplyAdvantage
+  best_for: Best for Sanctions/PEP Data
+- slug: feedzai
+  name: Feedzai
+  best_for: Best for Payment Fraud at Scale
+- slug: napier
+  name: Napier
+  best_for: Best for AI Transaction Monitoring
+choose_instead:
+- slug: complyadvantage
+  text: deep sanctions/PEP/adverse-media data matters more than agentic investigation automation.
+- slug: feedzai
+  text: you need Tier-1 bank-scale, real-time payment-fraud detection built for the largest institutions.
+- slug: napier
+  text: a dedicated AML transaction-monitoring and sanctions-screening specialist fits better than a fraud-first platform.
+user_reviews:
+  legacy_note: null
+  praise:
+  - 'Investigation automation: reviewers highlight faster case resolution.'
+  - 'Platform unification: users note that having fraud, AML and filing in one system reduces tool-switching.'
+  criticize:
+  - 'Pricing transparency: there is no published rate card.'
+  - 'Learning curve: configuration takes time before the AI features pay off.'
+  by_profile:
+  - Neobanks and fintechs use Unit21 to run fraud and AML operations in one system.
+  - Banks and credit unions, including sponsor banks, use it for transaction monitoring and filings.
+  - Crypto companies use its device intelligence and real-time rules.
+faq:
+- q: How much does Unit21 cost?
+  a: Unit21 does not publish pricing; it quotes on request.
+- q: What are Unit21's AI agents?
+  a: Unit21 offers a Detection Agent and an Investigation Agent that review alerts, gather supporting evidence and pre-populate filings such as SARs, CTRs and 314(a) responses, instead of only summarizing alerts for analysts.
+- q: Who uses Unit21?
+  a: Unit21 says it has more than 200 customers, including Chime, Green Dot, Crypto.com, Intuit, and Sallie Mae, across banking, fintech, and crypto.
+- q: Does Unit21 handle both fraud and AML?
+  a: Yes. Unit21 combines real-time fraud monitoring with AML transaction monitoring, case management, screening and regulatory filing in one platform.
+- q: What is the best alternative to Unit21?
+  a: ComplyAdvantage is the best alternative if sanctions/PEP data depth matters more than investigation automation. Feedzai is the closest fit for Tier-1 bank-scale payment fraud.
+- q: Who are Unit21's main competitors?
+  a: Unit21 competes with ComplyAdvantage, Feedzai, and Napier, differentiating through AI agents that carry out investigation work.
+segments: []
+capabilities: {}
+certifications:
+- name: SOC 2 Type I and Type II
+  what: Security, availability, confidentiality (Armanino)
+  status: vendor_stated
+  source: 4
+user_ratings:
+- platform: G2
+  rating: 4.6
+  count: 31
+  checked: '2026-10'
+  url: https://www.g2.com/products/unit21/reviews
+use_case_verdicts: []
+score_breakdown: []
+hands_on: null
+sources:
+- title: Unit21 homepage
+  publisher: Unit21
+  url: https://www.unit21.ai/
+  accessed: '2026-10'
+- title: Unit21's founding engineer Tyler Allen takes helm as CEO
+  publisher: FinTech Futures
+  url: https://www.fintechfutures.com/job-cuts-new-hires/unit21-founding-engineer-tyler-allen-takes-helm-as-ceo
+  accessed: '2026-10'
+- title: Unit21 announces $45M Series C
+  publisher: Business Wire (Unit21 release)
+  url: https://www.businesswire.com/news/home/20230628828981/en/Unit21-the-Risk-and-Compliance-Infrastructure-Company-Helping-Clients-Prevent-Financial-Crime-Announces-%2445M-Series-C
+  accessed: '2026-10'
+- title: Security
+  publisher: Unit21
+  url: https://unit21.ai/security
+  accessed: '2026-10'
+- title: Unit21 reviews
+  publisher: G2
+  url: https://www.g2.com/products/unit21/reviews
+  accessed: '2026-10'
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://www.unit21.ai
+  - https://www.linkedin.com/company/unit21
+  - https://www.crunchbase.com/organization/unit21
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- 'CEO: old con said "Recent CEO transition (2025)". FinTech Futures dates the change to 9 Apr 2026 (Tyler Allen CEO, Trisha Kothari to chair).'
+- 'Clarence Chio: named as CTO and co-incubator in the Series C release, not explicitly as co-founder; removed from what_is.'
+- '"90+ countries": not found; removed.'
+- '"$92M+ raised (Series A to C)": only the $45M Series C confirmed; total not found on a primary source.'
+- 'HQ San Francisco from the 2023 Series C release dateline; no newer HQ statement opened. 2026 article only says US-based.'
+- '"up to 93% false-positive reduction" is a single Nexo case-study figure on the homepage; reworded.'
+- '"Modular subscription by capability": pricing page did not load; no pricing structure confirmed, so wording reduced to quote on request.'
+- 'G2 review themes could not be read; kept as general statements without counts.'
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS
+directory_categories:
+- AML
+- AML for Banks

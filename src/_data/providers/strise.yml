@@ -1,0 +1,191 @@
+slug: strise
+name: Strise
+alternate_names: []
+status: published
+seo:
+  title: 'Strise Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Strise review: AI automation of routine AML and KYB compliance work, from Oslo. Features, pricing, pros & cons, alternatives.'
+  h1: 'Strise Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/strise.png
+  background: '#9166F2'
+  wordmark: null
+tagline: Autonomous, agentic AML operations built to cut routine compliance work
+score: 4.4
+grade: Very Good
+primary_category: aml
+legacy_rank_claim: 'ranked #15 in AML'
+categories:
+- aml
+- kyb
+link:
+  url: https://strise.ai
+  type: null
+  legacy_rel: nofollow sponsored
+last_verified: '2026-10-18'
+updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+verdict: Strise builds AI to automate routine AML compliance work, using a knowledge graph that maps companies, directors, owners, sanctions and adverse media. It is an Oslo-based company used by large Nordic banks such as Nordea, and it says one payments customer automated 80% of routine cases. It is smaller than most AML vendors it competes with, having raised a $10.8M Series A in 2023, and its customer base is mostly Nordic.
+what_is:
+- Strise is an AML compliance company founded in 2016 in Norway by Marit Rødevand, Patrick Skjennum and Sigve Søråsen, and launched commercially in 2019. Strise AS is registered in Oslo. It automates KYB and KYC onboarding, screening, ongoing monitoring, UBO discovery and risk scoring, and uses a knowledge graph of corporate data to cut manual compliance work. Customers named on its site include Nordea, Storebrand, SpareBank 1, Vipps MobilePay, BDO and British Land.
+features:
+- AI automation of routine AML cases, so analysts handle judgement-based reviews.
+- KYB and KYC onboarding, including UBO discovery.
+- Sanctions, PEP and adverse-media screening.
+- Ongoing monitoring (ongoing due diligence) and remediation.
+- Knowledge graph linking entities, directors, ownership, sanctions and adverse media.
+- ID verification, document analysis and risk scoring modules.
+pricing:
+  summary: Strise does not publish prices. It says pricing is usage-based rather than per seat, scales with portfolio volume, and is quoted as a custom proposal.
+  plans:
+  - tier: Custom proposal
+    price: Custom
+    note: Usage-based, scales with portfolio volume
+    extra: Not per seat; contact sales
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Pricing model
+    value: Usage-based, not per seat; custom proposals on request
+    kind: official
+    source: 1
+    verified: '2026-10'
+facts:
+- label: From
+  value: Not publicly disclosed
+  source: null
+- label: Founded
+  value: '2016'
+  source: 2
+  evidence: independent
+- label: HQ
+  value: Oslo, Norway
+  source: 3
+  evidence: independent
+- label: Regions
+  value: Nordics, with UK expansion since 2023
+  source: 2
+  evidence: independent
+- label: Funding
+  value: $10.8M Series A (2023, led by Atomico)
+  source: 2
+  evidence: independent
+- label: Reported impact
+  value: 80% of routine cases automated at one payments customer
+  source: 1
+  evidence: vendor
+pros:
+- Automation of routine AML cases, with vendor case figures such as 80% of routine cases automated
+- Knowledge graph that maps ownership, directors, sanctions and adverse media in one view
+- Used by large Nordic banks and insurers, including Nordea and Storebrand
+cons:
+- Smaller company than most AML competitors, with a $10.8M Series A in 2023
+- Customer base is mostly Nordic; reach outside the Nordics and UK is less proven
+- No published rate card; usage-based pricing is quoted on request
+alternatives:
+- slug: unit21
+  name: Unit21
+  best_for: Best for Agentic AI Investigations
+- slug: kychub
+  name: KYC Hub
+  best_for: No-Code AML Orchestration
+- slug: complyadvantage
+  name: ComplyAdvantage
+  best_for: Best for Sanctions/PEP Data
+choose_instead:
+- slug: unit21
+  text: you want a more established, larger-scale agentic AML/fraud platform.
+- slug: kychub
+  text: you want a broader no-code lifecycle orchestration platform with more public track record.
+- slug: complyadvantage
+  text: you need an established, larger proprietary financial-crime database.
+user_reviews:
+  legacy_note: null
+  praise:
+  - 'Automation: reviewers highlight less manual compliance work.'
+  - 'Corporate data: users see the ownership and relationship mapping as a strength.'
+  criticize:
+  - 'Limited public information: there is little public detail on company scale.'
+  - 'Regional focus: Nordic-centric and less proven elsewhere.'
+  by_profile:
+  - European compliance teams looking to automate routine AML work are Strise's core fit.
+  - Nordic banks, insurers and fintechs make up most of its named customers.
+  - Businesses needing a larger vendor with a longer track record outside the Nordics may prefer bigger competitors.
+faq:
+- q: How much does Strise cost?
+  a: Strise does not publish prices. It says pricing is usage-based rather than per seat and is quoted as a custom proposal.
+- q: What does Strise automate?
+  a: Strise automates routine AML work such as KYB and KYC onboarding, screening and ongoing monitoring. It says one payments customer automated 80% of routine cases.
+- q: Where is Strise based?
+  a: Strise AS is registered in Oslo, Norway. The company was founded in 2016 and launched commercially in 2019.
+- q: Does Strise support KYB?
+  a: Yes, Strise includes KYB onboarding and UBO discovery alongside its screening and monitoring tools.
+- q: What is the best alternative to Strise?
+  a: Unit21 is the best alternative for a more established, larger-scale agentic AML/fraud platform. KYC Hub is the closest fit for broader no-code lifecycle orchestration.
+- q: Who are Strise's main competitors?
+  a: Strise competes with Unit21, KYC Hub, and ComplyAdvantage, differentiating through its AML automation and Nordic corporate-data focus.
+segments: []
+capabilities: {}
+certifications:
+- name: ISO/IEC 27001:2022
+  what: Information security
+  status: vendor_stated
+  source: 1
+- name: SOC 2 Type 2
+  what: Security controls attestation
+  status: vendor_stated
+  source: 1
+user_ratings:
+- platform: G2
+  rating: 4.5
+  count: 8
+  checked: '2026-10'
+  url: https://www.g2.com/products/strise/reviews
+use_case_verdicts: []
+score_breakdown: []
+hands_on: null
+sources:
+- title: Strise homepage
+  publisher: Strise
+  url: https://strise.ai
+  accessed: '2026-10'
+- title: Strise raises 10M Series A
+  publisher: Silicon Canals
+  url: https://siliconcanals.com/strise-raises-10m/
+  accessed: '2026-10'
+- title: STRISE AS (918 330 100)
+  publisher: Brønnøysund Register Centre
+  url: https://virksomhet.brreg.no/nb/oppslag/enheter/918330100
+  accessed: '2026-10'
+- title: Norwegian fintech secures $10.8M in Series A funding to fight against money laundering
+  publisher: ArcticStartup
+  url: https://arcticstartup.com/?p=105502
+  accessed: '2026-10'
+- title: Strise reviews
+  publisher: G2
+  url: https://www.g2.com/products/strise/reviews
+  accessed: '2026-10'
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://strise.ai
+  - https://www.linkedin.com/company/strise
+  - https://www.crunchbase.com/organization/strise
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- 'Founded 2016 and founders from Silicon Canals (Sep 2023); not on a vendor page. Registry page did not show a registration date.'
+- 'HQ: Silicon Canals says Oslo, ArcticStartup says Trondheim (2023). Registry business address is Oslo; Oslo used.'
+- '"Up to 80% less routine work": vendor figure is 80% of routine cases automated at one customer described as a leading payments company; reworded.'
+- '"Nordic/EU data-residency focus": not found on current pages; removed.'
+- 'No funding after the 2023 Series A was found; later rounds may exist.'
+- 'ISO 27001:2022 and SOC 2 Type 2 (Prescient Assurance) are vendor-stated on the homepage; no certificate opened.'
+- 'G2 shows 8 reviews; themes could not be read on the page and are kept as general statements without counts.'
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS
+directory_categories:
+- AML
+- KYB

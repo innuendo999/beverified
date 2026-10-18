@@ -25,7 +25,10 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
-      - run: npm run check
+      - run: npm run check:strict
+      - run: pip install --quiet beautifulsoup4 && npm run check:html
+      - run: node scripts/checks/articles.mjs && node scripts/checks/provider.mjs
+      - run: npm run gaps
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

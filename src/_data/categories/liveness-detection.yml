@@ -1,0 +1,74 @@
+slug: liveness-detection
+url: /providers/liveness-detection/
+seo:
+  title: Best Liveness Detection Providers in 2026 | BeVerified
+  description: 'iProov, FaceTec, Onfido, and Veriff compared: the best liveness detection providers in 2026, ranked on capture speed, spoof resistance, and sensor compatibility.'
+  h1: Best Liveness Detection Providers in 2026
+breadcrumb_label: Best Liveness Detection Providers
+quick_answer: 'Veriff ranks first among the providers we have reviewed in full, with passive liveness tested by iBeta to ISO/IEC 30107-3 Level 2 and deepfake and injected-media detection. Onfido, now sold as Entrust Identity Verification, is best when you want liveness bundled with document checks. iProov leads on presentation-attack accuracy and FaceTec on 3D-depth liveness; neither has a full BeVerified review yet. We compared 4 providers on capture speed, spoof resistance and sensor compatibility.'
+last_verified: '2026-07-24'
+updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+legacy_stats:
+- value: '4'
+  label: providers compared
+- value: <2s
+  label: typical capture time
+- value: Jul 2026
+  label: last updated
+explainer_html:
+- '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
+
+  <h2 style="font-size:19px;margin-bottom:10px;">What liveness detection tests</h2>
+
+  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">Liveness detection is the narrow technology layer that proves a face in front of a camera is a live human, not a photo, mask, or injected video feed. It''s one component inside a broader identity-verification workflow, not the workflow itself.</p>
+
+  <h3 style="font-size:14.5px;margin-bottom:10px;">Core capabilities compliance teams typically require</h3>
+
+  <ul style="margin:0 0 18px;padding-left:20px;font-size:14.5px;line-height:1.75;">
+
+  <li style="list-style:disc;">Presentation-attack detection tuned to ISO/IEC 30107 test levels</li>
+
+  <li style="list-style:disc;">Compatibility across phone camera sensors without specialized hardware</li>
+
+  <li style="list-style:disc;">Sub-second capture with low false-rejection rates</li>
+
+  <li style="list-style:disc;">Resistance to injection attacks, including virtual cameras and deepfake feeds</li>
+
+  </ul>
+
+  <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from identity verification</h3>
+
+  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Liveness detection is the technology layer; <a href="/providers/identity-verification/">identity verification</a> is the full workflow that wraps liveness with document checks, watchlists, and step-up triggers across the account lifecycle.</p>
+
+  <h3 style="font-size:14.5px;margin-bottom:8px;">Regulatory context</h3>
+
+  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Key reference: ISO/IEC 30107, the presentation-attack-detection standard defining test levels for spoof resistance in biometric systems.</p>
+
+  <a class="entity-card__cta" href="/methodology/">See how we evaluate every provider on this list in our full methodology →</a>
+
+  </section>'
+faq:
+- q: What is liveness detection?
+  a: Liveness detection is the technology that proves a face in front of a camera belongs to a live human, not a photo, mask, deepfake, or injected video feed.
+- q: What's the difference between liveness detection and identity verification?
+  a: Liveness detection is one technology layer; identity verification is the full workflow that wraps liveness with document checks, watchlist screening, and step-up triggers across the account lifecycle.
+- q: What is presentation attack detection?
+  a: Presentation attack detection (PAD) is the formal testing standard, ISO/IEC 30107, that measures how well a liveness system resists photos, masks, and screen replays.
+- q: Does liveness detection require special hardware?
+  a: Leading providers work with a standard phone or laptop camera. Some offer higher-assurance 3D depth checks using structured light or additional sensors where the device supports it.
+- q: Can liveness detection be fooled by deepfakes?
+  a: Modern PAD engines are specifically tuned against injection attacks, including deepfake video feeds and virtual cameras, though detection quality varies meaningfully between vendors.
+- q: How fast is a typical liveness check?
+  a: Most consumer-facing liveness checks complete in one to three seconds, since long capture times increase both user drop-off and false rejections.
+adjacent:
+- identity-verification
+- e-kyc
+- cheap-kyc
+- aml/banks
+capability_columns: []
+faq_templates: []
+legacy_issues: []
+author: andrii-klymenko
+legacy_reviewer:
+  name: David Okafor
+  credential: null

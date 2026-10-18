@@ -1,0 +1,88 @@
+---
+layout: v3.njk
+---
+{#- Article (guide, news, research). Design: design/Blog Post V3 (Desktop).dc.html. Content: src/<section>/<slug>.md, spec docs/article-spec.md -#}
+{%- set toc = content | headingToc -%}
+{%- set related = collections.articles | relatedPosts(page.url, { providers: provider_slugs, categories: ranking_keys, topics: topics }) -%}
+<div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li class="sep" aria-hidden="true">›</li><li><a href="/blog/">Blog</a></li><li class="sep" aria-hidden="true">›</li><li><a href="/category/{{ section }}/">{{ section | sectionLabel }}</a></li></ol></nav>
+  <div class="art-layout">
+    {%- if toc.length > 1 %}
+    <nav class="toc art-toc" aria-label="In this article">
+      <div class="toc__title">In this article</div>
+      {%- for t in toc %}<a href="#{{ t.id }}">{{ t.title | safe }}</a>{% endfor %}
+    </nav>
+    {%- else %}<div></div>{% endif %}
+    <main id="main" class="art"><article>
+      <header class="art__head">
+        <span class="pill">{{ section | sectionLabel }}</span>
+        <h1 class="h-display art__h1">{{ title }}</h1>
+        {%- if lede %}<p class="art__lede">{{ lede }}</p>{% endif %}
+        <div class="byline">
+          {%- if au %}<div class="byline__author"><img class="avatar" src="{{ au.photo }}" alt=""><span>By <a href="{{ au.url }}">{{ au.name }}</a></span></div><span class="dot" aria-hidden="true">·</span>{% endif %}
+          {%- if published %}<span>Published <time datetime="{{ published | iso }}">{{ published | displayDate }}</time></span><span class="dot" aria-hidden="true">·</span>{% endif %}
+          {%- if updated %}<span>Updated <time datetime="{{ updated | iso }}">{{ updated | displayDate }}</time></span><span class="dot" aria-hidden="true">·</span>{% endif %}
+          <span>{{ content | readingTime }} min read</span>
+        </div>
+      </header>
+      {%- if takeaways.length %}
+      <section class="art__takeaways" aria-labelledby="kt-h"><h2 id="kt-h">Key takeaways</h2><ul>{% for t in takeaways %}<li>{{ t }}</li>{% endfor %}</ul></section>
+      {%- endif %}
+      {%- if topics.length or mentioned.length %}
+      <div class="art__chips"><span>In this article</span>{% for t in topics %}<span class="chip"># {{ t }}</span>{% endfor %}{% for p in mentioned %}<a class="chip chip--prov" href="/providers/{{ p.slug }}/">{{ p.name }}</a>{% endfor %}</div>
+      {%- endif %}
+      <div class="art__body legacy-prose">{{ content | safe }}</div>
+
+      {%- if faq.length %}
+      <section class="art__block" aria-labelledby="faq-h">
+        <h2 id="faq-h" class="h-sub">FAQ</h2>
+        <div class="faq">{% for f in faq %}<details{% if loop.first %} open{% endif %}><summary><h3>{{ f.q }}</h3></summary><p>{{ f.a }}</p></details>{% endfor %}</div>
+      </section>
+      {%- endif %}
+
+      {%- if mentioned.length %}
+      <section class="art__block" aria-labelledby="mp-h">
+        <h2 id="mp-h" class="h-sub">Mentioned providers</h2>
+        <ul class="card nf__list art__provs">
+          {%- for p in mentioned %}
+          <li><span class="art__prov">{% if p.logo.wordmark %}<img src="{{ p.logo.wordmark }}" alt="{{ p.name }}" loading="lazy">{% else %}<strong>{{ p.name }}</strong>{% endif %}<small>{{ p.tagline }}</small></span><span>{% if p.score != null %}<b>{{ p.score | score1 }}</b> <small class="c-muted">/ 5</small>{% endif %}</span><a href="/providers/{{ p.slug }}/">Read review →</a></li>
+          {%- endfor %}
+        </ul>
+      </section>
+      {%- endif %}
+
+      {%- if rankingsFor.length %}
+      <section class="art__block" aria-labelledby="rr-h">
+        <h2 id="rr-h" class="h-sub">Related rankings</h2>
+        <div class="grid-3">{% for r in rankingsFor %}<a class="card cat-card" href="{{ r.c.url }}"><b>{{ r.c.breadcrumb_label }}</b><span>See all {{ r.n }} providers →</span></a>{% endfor %}</div>
+      </section>
+      {%- endif %}
+
+      {%- if sources.length %}
+      <section class="art__block" aria-labelledby="src-h">
+        <h2 id="src-h" class="h-sub">Sources</h2>
+        <ol class="art__sources">{% for s in sources %}<li><span><a href="{{ s.url }}" rel="noopener" target="_blank">{{ s.title }}</a>{% if s.publisher %}, {{ s.publisher }}{% endif %}</span>{% if s.accessed %}<small>Accessed {{ s.accessed | displayDate }}</small>{% endif %}</li>{% endfor %}</ol>
+      </section>
+      {%- endif %}
+
+      {%- if au %}
+      <section class="card author-box art__block" aria-label="About the author">
+        <img class="avatar avatar--lg" src="{{ au.photo }}" alt="{{ au.name }}">
+        <div>
+          <div class="author-box__name">{{ au.name }}</div>
+          <div class="author-box__role">{{ au.role }}</div>
+          <p>{{ au.bio }}</p>
+          <div class="author-box__meta">{% if au.url %}<a href="{{ au.url }}">Author profile →</a>{% endif %}{% if au.linkedin %}<a href="{{ au.linkedin }}" rel="noopener" target="_blank">LinkedIn ↗</a>{% endif %}<a href="{{ site.v3.methodologyHref }}">Editorial standards →</a></div>
+        </div>
+      </section>
+      {%- endif %}
+    </article></main>
+  </div>
+
+  {%- if related.length %}
+  <section class="art-related" aria-labelledby="rel-h">
+    <h2 id="rel-h" class="h-section mb-20">Related posts</h2>
+    <div class="grid-3">{% for a in related %}{% include "v3/post-card.njk" %}{% endfor %}</div>
+  </section>
+  {%- endif %}
+</div>

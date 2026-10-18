@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ seoTitle }}</title>
+{%- if seoDescription %}
+<meta name="description" content="{{ seoDescription }}">
+{%- endif %}
+{%- if noindex %}
+<meta name="robots" content="noindex">
+{%- endif %}
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<meta property="og:type" content="{{ ogType or 'website' }}">
+<meta property="og:title" content="{{ seoTitle }}">
+{%- if seoDescription %}
+<meta property="og:description" content="{{ seoDescription }}">
+{%- endif %}
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:site_name" content="BeVerified">
+<meta property="og:image" content="{{ site.url }}{{ ogImage or '/assets/brand/og-default.png' }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="BeVerified: independent reviews of KYC, KYB and AML providers">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
+<link rel="manifest" href="/assets/brand/site.webmanifest">
+<meta name="theme-color" content="#F7F6F3">
+<link rel="preload" href="/assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/v3.css">
+{%- if jsonld %}
+<script type="application/ld+json">{{ jsonld | json | safe }}</script>
+{%- endif %}
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+{% include "v3/header.njk" %}
+{{ content | safe }}
+{% include "v3/footer.njk" %}
+<script>
+(function () {
+  var h = document.querySelector('.site-header'), b = document.querySelector('.nav-toggle');
+  if (h && b) b.addEventListener('click', function () {
+    var open = h.classList.toggle('is-open'); b.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+})();
+</script>
+</body>
+</html>

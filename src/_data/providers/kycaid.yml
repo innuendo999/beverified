@@ -1,0 +1,248 @@
+slug: kycaid
+name: KYCAID
+alternate_names: []
+status: published
+seo:
+  title: 'KYCAID Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'KYCAID review: modular KYC/AML suite with configurable verification workflows. Pricing from €0.75 per verification, features, pros & cons, and alternatives compared.'
+  h1: 'KYCAID Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/kycaid.png
+  background: '#8A5CF0'
+  wordmark: /assets/img/wordmarks/kycaid.png
+tagline: Modular KYC/AML suite with configurable verification workflows
+score: 4.6
+grade: Great
+primary_category: aml
+legacy_rank_claim: 'ranked #4 in Best AML Software Providers'
+categories:
+- aml
+- cheap-kyc
+- kyb
+link:
+  url: https://kycaid.com
+  type: null
+  legacy_rel: nofollow sponsored
+last_verified: '2026-10-18'
+updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+verdict: KYCAID is a strong choice for small and mid-market teams that want a configurable KYC/AML verification flow without enterprise pricing, with published per-verification rates from €0.75. It's less deep on watchlist data than category leaders like ComplyAdvantage, but its customisable flows and white-label option on the Enterprise plan make it a practical fit for startups and platforms that verify on behalf of their own clients.
+what_is:
+- KYCAID is a KYC/AML verification platform that lets businesses configure onboarding flows combining document checks, face verification with liveness, AML screening, address checks and company checks. Its team says it has worked in KYC since 2018; the UK company KYCAID Limited was incorporated in November 2018 with a registered office in London, and KYCAID's privacy policy names Compligate Ltd, a company registered in England, as the operating entity. KYCAID says it covers 200+ countries and territories and is used by 100+ companies, mainly fintechs, exchanges and platforms.
+features:
+- Document verification and face verification with liveness checks, covering 200+ countries and territories.
+- Built-in AML screening against PEP, sanctions, OFAC and other watchlists, plus ongoing monitoring.
+- Address, tax number, payment method, source of funds and mobile number checks as pay-as-you-go modules.
+- Company check (KYB) covering corporate documents, business address, UBOs and authorised persons.
+- Dashboard for customising the verification flow, with multiple workspaces in one account.
+- API and hosted form integration, embeddable by iframe and on a custom domain; white labeling on the Enterprise plan.
+pricing:
+  summary: KYCAID publishes per-verification bundles in euros. Basic KYC (document and face) is €0.75, Standard KYC (adds AML screening) is €0.85 and Advanced KYC (adds address verification) is €1.10 per verification, with €50 credit on registration. Enterprise pricing is tailored from 10,000 verifications a month. Other modules, including company checks and ongoing monitoring, are pay-as-you-go with prices not listed.
+  plans:
+  - tier: Basic KYC
+    price: €0.75 / verification
+    note: Document and face verification
+    extra: €50 credit on registration
+  - tier: Standard KYC
+    price: €0.85 / verification
+    note: Adds AML screening
+    extra: €50 credit on registration
+  - tier: Advanced KYC
+    price: €1.10 / verification
+    note: Adds AML screening and address verification
+    extra: €50 credit on registration
+  - tier: Enterprise
+    price: Custom
+    note: White labeling, dedicated account manager and compliance team
+    extra: From 10,000 verifications a month
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Basic KYC (document + face)
+    value: €0.75 / verification
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Standard KYC (adds AML screening)
+    value: €0.85 / verification
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Advanced KYC (adds address verification)
+    value: €1.10 / verification
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Credit on registration
+    value: €50
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Enterprise
+    value: Custom, from 10,000 verifications / mo
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Country number checks (e.g. CPF, CURP, DNI)
+    value: €0.05 to €0.80 / check
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Company check, ongoing monitoring, other modules
+    value: Not publicly disclosed
+    kind: official
+    source: 1
+    verified: '2026-10'
+facts:
+- label: From
+  value: €0.75 per verification
+  source: 1
+  evidence: vendor
+- label: Effective
+  value: €0.75 to €1.10 per verification
+  source: 1
+  evidence: vendor
+- label: Founded
+  value: '2018'
+  source: 4
+  evidence: independent
+- label: HQ
+  value: London, UK (registered office)
+  source: 4
+  evidence: independent
+- label: Regions
+  value: 200+ countries and territories
+  source: 2
+  evidence: vendor
+- label: Certifications
+  value: ISO 27001, SOC 2 Type 2, PCI DSS (vendor-stated)
+  source: 3
+  evidence: vendor
+pros:
+- Customisable verification flows from one dashboard
+- Low published per-verification prices, with white labeling on the Enterprise plan
+- 24/7 chat support with a stated 15-minute response SLA
+cons:
+- Smaller watchlist database than category leaders
+- Fewer native integrations
+- Public docs describe API, hosted form and iframe integration; native mobile SDKs are not documented there
+alternatives:
+- slug: null
+  name: KYCAID
+  best_for: 4.6/5
+- slug: sumsub
+  name: Sumsub
+  best_for: 4.8/5
+- slug: trulioo
+  name: Trulioo
+  best_for: 4.5/5
+- slug: jumio
+  name: Jumio
+  best_for: 4.5/5
+- slug: complyadvantage
+  name: ComplyAdvantage
+  best_for: 4.6/5
+choose_instead:
+- slug: sumsub
+  text: you need deeper watchlist coverage and don't mind per-check pricing.
+- slug: trulioo
+  text: per-check cost is the deciding factor and you run high volumes.
+- slug: jumio
+  text: you need a widely recognized, enterprise-proven brand with mature fraud-detection models.
+- slug: complyadvantage
+  text: deep sanctions/PEP risk data matters more than workflow flexibility. It leads the category on data depth, at enterprise pricing.
+user_reviews:
+  legacy_note: null
+  praise: []
+  criticize: []
+  by_profile:
+  - Startups and small teams may value the low published per-verification price and dashboard-based setup.
+  - Platforms verifying users for their own clients may want the white-label option on the Enterprise plan.
+  - Larger enterprises may find watchlist depth a gap versus category leaders.
+faq:
+- q: How much does KYCAID cost?
+  a: KYCAID publishes per-verification bundles. Basic KYC (document and face) costs €0.75, Standard KYC with AML screening €0.85 and Advanced KYC with address verification €1.10, with €50 credit on registration. Enterprise pricing is tailored from 10,000 verifications a month.
+- q: Does KYCAID support AML watchlist screening?
+  a: Yes. KYCAID's AML screening covers PEPs, sanctions, OFAC and other regulatory watchlists, and it is included in the Standard and Advanced KYC bundles. Ongoing monitoring is available as a separate monthly module.
+- q: Is KYCAID good for startups?
+  a: Yes, its pay-as-you-go pricing and dashboard for customising verification flows make it accessible for startups that don't have dedicated compliance engineering resources.
+- q: Can KYCAID be white-labeled?
+  a: Yes. White labeling is part of KYCAID's Enterprise plan, which starts at 10,000 verifications a month. Its docs also cover hosting the verification form on a custom domain.
+- q: How does KYCAID compare to Sumsub?
+  a: Sumsub offers deeper built-in watchlist coverage, while KYCAID is generally more affordable for smaller-volume, budget-conscious teams.
+- q: What is the best alternative to KYCAID?
+  a: Sumsub is the strongest overall alternative if watchlist depth matters more than price. Trulioo is another option to compare for high-volume global checks.
+- q: How does KYCAID compare to Jumio?
+  a: Jumio has broader brand recognition and more mature fraud-detection models, but KYCAID's customisable flows and published per-verification pricing make it more flexible for smaller teams.
+- q: Who are KYCAID's main competitors?
+  a: KYCAID's main competitors are Sumsub, Trulioo, Jumio, and ComplyAdvantage. It differentiates mainly through customisable verification flows and published per-verification pricing.
+segments: []
+capabilities: {}
+certifications:
+- name: ISO/IEC 27001
+  what: Information security
+  status: vendor_stated
+  source: 3
+- name: SOC 2 Type 2
+  what: Security controls audit
+  status: vendor_stated
+  source: 3
+- name: PCI DSS
+  what: Payment card data security
+  status: vendor_stated
+  source: 3
+user_ratings: []
+use_case_verdicts: []
+score_breakdown: []
+hands_on: null
+sources:
+- title: Pricing
+  publisher: KYCAID
+  url: https://kycaid.com/pricing/
+  accessed: '2026-10'
+- title: About us
+  publisher: KYCAID
+  url: https://kycaid.com/about-us
+  accessed: '2026-10'
+- title: Privacy Policy
+  publisher: KYCAID (Compligate Ltd)
+  url: https://kycaid.com/privacy-policy/
+  accessed: '2026-10'
+- title: KYCAID LIMITED, company number 11670407
+  publisher: Companies House
+  url: https://find-and-update.company-information.service.gov.uk/company/11670407
+  accessed: '2026-10'
+- title: COMPLIGATE LTD, company number 15376538
+  publisher: Companies House
+  url: https://find-and-update.company-information.service.gov.uk/company/15376538
+  accessed: '2026-10'
+- title: KYCAID developer documentation
+  publisher: KYCAID
+  url: https://docs.kycaid.com
+  accessed: '2026-10'
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://kycaid.com
+  - https://www.linkedin.com/company/kycaid
+  - https://www.crunchbase.com/organization/kycaid
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- 'Pricing: old Starter $99/mo (500), Growth $299/mo (2,000), overage rates and 14-day trial are not on the vendor pricing page. Replaced with published EUR per-verification bundles.'
+- 'Founded / HQ: old page said 2019, Vilnius. No source found. KYCAID Limited was incorporated 9 Nov 2018 (Companies House); the about page says "Since 2018". G2 lists HQ as Kyiv, Ukraine (seller-supplied); privacy policy names Compligate Ltd (England, incorporated 29 Dec 2023) as operator. Operational HQ not confirmed.'
+- 'Certifications: ISO 27001, SOC 2 Type 2 and PCI DSS are stated only in the privacy policy ("continuously verified"); no certificate or register entry found. GDPR is a regulation, not a certification, and was dropped from the list.'
+- '200+ document types: not found; the about page states 200+ countries and territories.'
+- 'Mobile SDK: not listed in the docs index; status of native SDKs not confirmed.'
+- 'Adverse media: the old FAQ said AML screening includes adverse media; the pricing page lists PEPs, sanctions, watchlists, OFAC and regulatory lists only. Removed.'
+- 'User ratings: G2 shows 0 reviews for Kycaid ID Verification. Themes and counts removed.'
+- 'Verification speed: about page gives both "20-sec" and "under 11 seconds"; not used.'
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS
+directory_categories:
+- AML
+- KYB
+- Cheap KYC

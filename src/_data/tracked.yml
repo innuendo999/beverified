@@ -1,0 +1,81 @@
+- name: Actico
+  categories:
+  - AML
+  - AML for Banks
+  description: Rules-based transaction monitoring and AML case management platform.
+  review: null
+- name: Chainalysis
+  categories:
+  - Crypto KYC
+  - AML
+  description: Blockchain analytics platform used for crypto transaction monitoring and investigations.
+  review: null
+- name: FaceTec
+  categories:
+  - Liveness Detection
+  description: 3D face authentication and liveness detection software vendor.
+  review: null
+- name: Fenergo
+  categories:
+  - AML for Banks
+  - KYB
+  description: Client lifecycle management software for institutional and corporate onboarding.
+  review: null
+- name: IDfy
+  categories:
+  - Identity Verification
+  - eKYC
+  description: Identity verification and background-screening platform based in India.
+  review: null
+- name: IdentityMind
+  categories:
+  - AML
+  - Identity Verification
+  description: Digital identity and fraud-risk platform, now part of Acuant.
+  review: null
+- name: idwall
+  categories:
+  - Identity Verification
+  - AML
+  description: Identity verification provider focused on the Brazilian market.
+  review: null
+- name: iProov
+  categories:
+  - Liveness Detection
+  description: Biometric liveness detection technology used in identity verification flows.
+  review: null
+- name: LexisNexis Risk Solutions
+  categories:
+  - AML
+  - AML for Banks
+  description: Risk data and identity intelligence spanning KYC, AML, and fraud detection.
+  review: null
+- name: Middesk
+  categories:
+  - KYB
+  description: Business verification platform focused on KYB and beneficial-ownership data.
+  review: null
+- name: Notabene
+  categories:
+  - Travel Rule
+  - Crypto KYC
+  description: Compliance infrastructure for the FATF Travel Rule at crypto exchanges and wallets.
+  review: null
+- name: Refinitiv World-Check
+  categories:
+  - AML
+  - AML for Banks
+  description: Sanctions, PEP, and adverse-media screening database used by major banks.
+  review: null
+- name: Truora
+  categories:
+  - Identity Verification
+  - KYB
+  description: Identity verification and background-check provider focused on Latin America.
+  review: null
+- name: VerifyVASP
+  categories:
+  - Travel Rule
+  - Crypto KYC
+  description: Travel Rule messaging protocol built for virtual asset service providers.
+  review: null

@@ -1,0 +1,74 @@
+slug: canada
+url: /providers/canada/
+seo:
+  title: Best KYC & AML Providers for Canada in 2026 | BeVerified
+  description: 'KYCAID, Veriff, Onfido, and Trulioo compared: the best KYC & AML providers for Canada in 2026, ranked on document coverage, bilingual support, and FINTRAC-readiness.'
+  h1: Best KYC & AML Providers for Canada in 2026
+breadcrumb_label: Best KYC & AML Providers for Canada
+quick_answer: 'KYCAID is the best overall pick, with verification flows you configure from one dashboard and published prices from €0.75 per verification. Veriff is second, with passive liveness tested by iBeta to ISO/IEC 30107-3 Level 2 and 12,500+ supported ID documents. Onfido, now sold as Entrust Identity Verification, covers more than 2,500 document types across 195 countries. We compared 4 providers on document coverage, bilingual support, and FINTRAC-readiness below.'
+last_verified: '2026-10-18'
+updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+legacy_stats:
+- value: '4'
+  label: providers compared
+- value: FINTRAC
+  label: primary regulator
+- value: Jul 2026
+  label: last updated
+explainer_html:
+- '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
+
+  <h2 style="font-size:19px;margin-bottom:10px;">What Canada-ready KYC means</h2>
+
+  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">FINTRAC sets customer due diligence and reporting obligations for money services businesses and financial entities operating in Canada, while OSFI supervises the ongoing risk management of federally regulated banks and insurers. A provider built for this market accepts Canadian passports, provincial driver''s licences, and PR cards, and supports bilingual EN/FR flows for Quebec and nationwide deployments.</p>
+
+  <h3 style="font-size:14.5px;margin-bottom:10px;">The stacks you''ll find here</h3>
+
+  <ul style="margin:0 0 18px;padding-left:20px;font-size:14.5px;line-height:1.75;">
+
+  <li style="list-style:disc;">Document parsing for Canadian passports, provincial driver''s licences, and PR cards</li>
+
+  <li style="list-style:disc;">Bilingual EN/FR onboarding flows</li>
+
+  <li style="list-style:disc;">PIPEDA-aligned data residency and handling for biometric and identity data</li>
+
+  <li style="list-style:disc;">Sanctions/PEP screening covering FINTRAC reporting obligations</li>
+
+  </ul>
+
+  <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from AML for banks</h3>
+
+  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Meeting FINTRAC''s onboarding rule is separate from the ongoing transaction monitoring OSFI expects federally regulated institutions to run. See <a href="/providers/aml/banks/">AML for Banks</a> for that ongoing-monitoring layer.</p>
+
+  <h3 style="font-size:14.5px;margin-bottom:8px;">How we evaluate vendors</h3>
+
+  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Key references: FINTRAC customer due diligence guidance, OSFI supervisory expectations for federally regulated institutions, and PIPEDA privacy obligations.</p>
+
+  <a class="entity-card__cta" href="/methodology/">See how we evaluate every provider on this list in our full methodology →</a>
+
+  </section>'
+faq:
+- q: Who regulates KYC/AML in Canada?
+  a: FINTRAC sets customer due diligence and reporting obligations for money services businesses and financial entities, while OSFI supervises the ongoing risk management of federally regulated banks and insurers.
+- q: Does Canadian KYC need to support French?
+  a: Yes for most consumer-facing deployments. Bilingual EN/FR support is expected for institutions serving Quebec and federally regulated entities nationwide.
+- q: What documents do Canadian KYC providers accept?
+  a: Common accepted documents include Canadian passports, provincial driver's licences, and Permanent Resident (PR) cards.
+- q: How does PIPEDA affect KYC vendor selection?
+  a: PIPEDA sets federal privacy obligations for how personal information, including identity documents and biometric data, is collected, used and stored. That affects where you want a vendor to host data.
+- q: What's the difference between FINTRAC and OSFI requirements?
+  a: FINTRAC governs onboarding-level customer due diligence and suspicious-transaction reporting; OSFI oversees the broader ongoing risk-management practices of federally regulated financial institutions.
+- q: Do Canadian KYC rules differ by province?
+  a: Federal AML rules apply nationwide, but accepted ID document formats, such as provincial driver's licences, vary by province, so document coverage needs to span all of them.
+adjacent:
+- aml/banks
+- identity-verification
+- brazil
+- india
+capability_columns: []
+faq_templates: []
+legacy_issues: []
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

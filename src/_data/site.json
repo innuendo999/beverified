@@ -1,57 +1,195 @@
 {
   "name": "BeVerified",
   "url": "https://beverified.org",
-  "header": {
-    "nav": [
-      { "label": "By Use Case", "href": "/#use-case", "homeHref": "#use-case" },
-      { "label": "By Region", "href": "/#region", "homeHref": "#region" },
-      { "label": "Reviews", "href": "/providers/", "key": "reviews", "currentHref": "./" },
-      { "label": "Methodology", "href": "/methodology/", "key": "methodology" }
-    ],
-    "cta": { "label": "List Your Product", "href": "mailto:support@beverified.org" }
-  },
-  "footer": {
-    "columns": [
+  "v3": {
+    "disclosure": "We may earn a commission from some links. Payment never changes scores or ranking order.",
+    "disclosureHref": "/methodology/#disclosure",
+    "methodologyVersion": "v3.0",
+    "methodologyHref": "/methodology/",
+    "rubric": [
       {
-        "title": "By use case",
-        "links": [
-          { "label": "AML", "href": "/providers/aml/" },
-          { "label": "KYB", "href": "/providers/kyb/" },
-          { "label": "eKYC", "href": "/providers/e-kyc/" },
-          { "label": "Identity Verification", "href": "/providers/identity-verification/" },
-          { "label": "Crypto KYC", "href": "/providers/crypto/" }
-        ]
+        "key": "compliance",
+        "name": "Compliance & certifications",
+        "weight": 25
       },
       {
-        "title": "&nbsp;",
-        "links": [
-          { "label": "Liveness Detection", "href": "/providers/liveness-detection/" },
-          { "label": "Cheap KYC", "href": "/providers/cheap-kyc/" },
-          { "label": "Travel Rule", "href": "/providers/travel-rule/" },
-          { "label": "AML for Banks", "href": "/providers/aml/banks/" }
-        ]
+        "key": "coverage",
+        "name": "Coverage",
+        "weight": 20
       },
       {
-        "title": "By region",
-        "links": [
-          { "label": "Brazil", "href": "/providers/brazil/" },
-          { "label": "Canada", "href": "/providers/canada/" },
-          { "label": "India", "href": "/providers/india/" },
-          { "label": "Mexico", "href": "/providers/mexico/" },
-          { "label": "Peru", "href": "/providers/peru/" }
-        ]
+        "key": "pricing",
+        "name": "Pricing transparency",
+        "weight": 20
       },
       {
-        "title": "Trust &amp; transparency",
-        "links": [
-          { "label": "Our methodology", "href": "/methodology/" }
-        ],
-        "homeExtraLinks": [
-          { "label": "Placement options", "href": "/placement-options/" },
-          { "label": "Reviews directory", "href": "/providers/" }
-        ]
+        "key": "integration",
+        "name": "Integration & API depth",
+        "weight": 15
+      },
+      {
+        "key": "support",
+        "name": "Support responsiveness",
+        "weight": 10
+      },
+      {
+        "key": "track_record",
+        "name": "Track record",
+        "weight": 10
       }
     ],
-    "disclosure": "Affiliate disclosure: BeVerified may earn a commission when you sign up through links on this page. Sponsored placements are clearly labeled and never affect our independent scoring criteria."
+    "evidence": {
+      "independent": {
+        "icon": "◆",
+        "label": "Independent",
+        "desc": "lab, government register or benchmark"
+      },
+      "vendor": {
+        "icon": "◇",
+        "label": "Vendor-stated",
+        "desc": "vendor website or docs"
+      },
+      "user": {
+        "icon": "●",
+        "label": "User-reported",
+        "desc": "G2, Capterra, Gartner Peer Insights"
+      },
+      "hands_on": {
+        "icon": "▲",
+        "label": "Hands-on",
+        "desc": "our own test"
+      }
+    },
+    "nav": [
+      {
+        "label": "Use cases",
+        "href": "/use-cases/",
+        "key": "use-cases"
+      },
+      {
+        "label": "Regions",
+        "href": "/regions/",
+        "key": "regions"
+      },
+      {
+        "label": "Reviews",
+        "href": "/providers/",
+        "key": "reviews"
+      },
+      {
+        "label": "Blog",
+        "href": "/blog/",
+        "key": "blog"
+      }
+    ],
+    "navAside": {
+      "label": "For providers",
+      "href": "/placement-options/"
+    },
+    "footer": {
+      "about": "Independent reviews of KYC, KYB and AML software.",
+      "useCases": [
+        [
+          "AML",
+          "/providers/aml/"
+        ],
+        [
+          "KYB",
+          "/providers/kyb/"
+        ],
+        [
+          "eKYC",
+          "/providers/e-kyc/"
+        ],
+        [
+          "Identity Verification",
+          "/providers/identity-verification/"
+        ],
+        [
+          "Liveness Detection",
+          "/providers/liveness-detection/"
+        ],
+        [
+          "Crypto KYC",
+          "/providers/crypto/"
+        ],
+        [
+          "Travel Rule",
+          "/providers/travel-rule/"
+        ],
+        [
+          "AML for Banks",
+          "/providers/aml/banks/"
+        ],
+        [
+          "Budget KYC",
+          "/providers/cheap-kyc/"
+        ],
+        [
+          "Age Verification",
+          "/providers/age-verification/"
+        ],
+        [
+          "All use cases",
+          "/use-cases/"
+        ]
+      ],
+      "regions": [
+        [
+          "India",
+          "/providers/india/"
+        ],
+        [
+          "Brazil",
+          "/providers/brazil/"
+        ],
+        [
+          "Mexico",
+          "/providers/mexico/"
+        ],
+        [
+          "Canada",
+          "/providers/canada/"
+        ],
+        [
+          "Peru",
+          "/providers/peru/"
+        ],
+        [
+          "All regions",
+          "/regions/"
+        ]
+      ],
+      "providersShown": 10,
+      "company": [
+        [
+          "About",
+          "/about/"
+        ],
+        [
+          "Methodology",
+          "/methodology/"
+        ],
+        [
+          "For providers",
+          "/placement-options/"
+        ],
+        [
+          "Contact",
+          "/contact-us/"
+        ]
+      ],
+      "legal": [
+        [
+          "Privacy policy",
+          "/privacy/"
+        ],
+        [
+          "Terms of use",
+          "/terms/"
+        ]
+      ],
+      "copyright": "© 2026 BeVerified.org · support@beverified.org"
+    }
   }
 }

@@ -1,0 +1,214 @@
+slug: sanction-scanner
+name: Sanction Scanner
+alternate_names: []
+status: published
+seo:
+  title: 'Sanction Scanner Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Sanction Scanner review: API-first AML screening for mid-market teams, with a published Starter plan from €990 a month. Features, pricing, pros & cons, alternatives.'
+  h1: 'Sanction Scanner Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/sanction-scanner.png
+  background: '#5E35D6'
+  wordmark: null
+tagline: API-first AML screening built for mid-market, without enterprise price tags
+score: 4.3
+grade: Good
+primary_category: aml
+legacy_rank_claim: 'ranked #14 in AML'
+categories:
+- aml
+- crypto
+link:
+  url: https://sanctionscanner.com
+  type: null
+  legacy_rel: nofollow sponsored
+last_verified: '2026-10-18'
+updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+verdict: 'Sanction Scanner''s pitch is accessibility: sanctions, PEP and adverse-media screening with a published Starter plan instead of a six-figure contract or a six-month implementation. It went through the Mastercard Lighthouse Türkiye acceleration programme in 2024 and made Deloitte''s Technology Fast 50 Türkiye list for the third year running in 2024. It is a reasonable mid-market fit, though its scale and screening depth trail the category giants.'
+what_is:
+- Sanction Scanner is an AML compliance company established in 2019, with offices in London, UK, and Istanbul, Türkiye. It is led by founder and CEO Fatih Coşkun. CB Insights lists TT Ventures and Mastercard Lighthouse Türkiye as investors. The company says it serves 800+ clients in 70+ countries, and its products cover name and transaction screening, adverse media, transaction monitoring, fraud detection, customer risk assessment and KYB.
+features:
+- 'Real-time AML name screening against 3,000+ sanctions, PEP and watchlists, plus adverse media.'
+- Transaction monitoring, transaction screening and fraud detection.
+- Customer risk assessment with adjustable risk parameters.
+- API-first architecture with REST API, webhooks and SDKs.
+- Daily automated re-screening of the customer portfolio (ongoing monitoring).
+- KYB company verification and ownership checks.
+pricing:
+  summary: Sanction Scanner publishes a Starter plan at €990 a month for 100 entities, billed monthly or annually (annual billing includes two months free). Usage above the monthly limit is billed at standard rates, and the Enterprise plan is quoted on request. No free trial is mentioned on the pricing page.
+  plans:
+  - tier: Starter
+    price: €990 / mo
+    note: 100 entities per month
+    extra: Annual billing includes two months free; overage billed at standard rates
+  - tier: Enterprise
+    price: Custom
+    note: Unlimited usage
+    extra: Contact sales for a quote
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Starter plan
+    value: €990 per month, 100 entities per month
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Annual billing
+    value: Two months free
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Enterprise plan
+    value: Custom quote, unlimited usage
+    kind: official
+    source: 1
+    verified: '2026-10'
+facts:
+- label: From
+  value: €990/mo (Starter, 100 entities)
+  source: 1
+  evidence: vendor
+- label: Effective
+  value: Not publicly disclosed
+  source: null
+- label: Founded
+  value: '2019'
+  source: 2
+  evidence: vendor
+- label: HQ
+  value: London, UK and Istanbul, Türkiye
+  source: 2
+  evidence: vendor
+- label: Regions
+  value: 70+ countries served
+  source: 2
+  evidence: vendor
+- label: Recognition
+  value: Deloitte Technology Fast 50 Türkiye (2024, third year)
+  source: 4
+  evidence: vendor
+pros:
+- Published entry pricing for mid-market teams
+- Fast setup with minimal configuration required
+- API-first architecture built for quick integration
+cons:
+- Smaller team and scale than category giants
+- Screening depth trails enterprise AML platforms like NICE Actimize or ComplyAdvantage
+- Data-residency questions for some EU clients given its Türkiye/UK dual presence; confirm the residency options offered
+alternatives:
+- slug: complyadvantage
+  name: ComplyAdvantage
+  best_for: Best for Sanctions/PEP Data
+- slug: membercheck
+  name: MemberCheck
+  best_for: Four-Tier PEP Screening
+- slug: namescan
+  name: NameScan
+  best_for: On-Demand SME Screening
+choose_instead:
+- slug: complyadvantage
+  text: you need enterprise-scale proprietary financial-crime data depth.
+- slug: membercheck
+  text: deeper PEP/RCA tiering matters more than API-first mid-market pricing.
+- slug: namescan
+  text: you want simple on-demand checks rather than a full mid-market AML platform.
+user_reviews:
+  legacy_note: null
+  praise:
+  - 'Setup: the product is built for low-configuration onboarding through its API.'
+  criticize:
+  - 'Scale: a smaller team than the enterprise AML vendors.'
+  - 'Screening depth: it trails the largest AML data platforms in coverage depth.'
+  by_profile:
+  - Neobanks and fintechs value Sanction Scanner's accessible, fast-to-deploy screening.
+  - Crypto exchanges use it for real-time sanctions/PEP checks at reasonable cost.
+  - Enterprises needing the deepest screening data typically evaluate larger platforms.
+faq:
+- q: How much does Sanction Scanner cost?
+  a: Sanction Scanner's Starter plan is €990 a month for 100 entities, with two months free on annual billing. The Enterprise plan is quoted on request.
+- q: Where is Sanction Scanner based?
+  a: Sanction Scanner lists offices in London, UK, and Istanbul, Türkiye, and says it was established in 2019.
+- q: Who backs Sanction Scanner?
+  a: CB Insights lists TT Ventures and Mastercard Lighthouse Türkiye as investors. Mastercard selected Sanction Scanner for its Lighthouse Türkiye acceleration programme in 2024.
+- q: How many clients does Sanction Scanner serve?
+  a: Sanction Scanner says it serves more than 800 clients across 70+ countries.
+- q: What is the best alternative to Sanction Scanner?
+  a: ComplyAdvantage is the best alternative for enterprise-scale sanctions/PEP data depth. MemberCheck is the closest fit for deeper four-tier PEP screening.
+- q: Who are Sanction Scanner's main competitors?
+  a: Sanction Scanner competes with ComplyAdvantage, MemberCheck, and NameScan, differentiating through accessible, API-first mid-market pricing.
+segments: []
+capabilities: {}
+certifications:
+- name: ISO/IEC 27001
+  what: Information security
+  status: vendor_stated
+  source: 2
+- name: ISO 9001
+  what: Quality management
+  status: vendor_stated
+  source: 2
+- name: SOC 2
+  what: Data centre security
+  status: vendor_stated
+  source: 1
+user_ratings:
+- platform: G2
+  rating: 4.8
+  count: 69
+  checked: '2026-10'
+  url: https://www.g2.com/products/sanction-scanner/reviews
+use_case_verdicts: []
+score_breakdown: []
+hands_on: null
+sources:
+- title: Sanction Scanner pricing
+  publisher: Sanction Scanner
+  url: https://sanctionscanner.com/pricing
+  accessed: '2026-10'
+- title: About Sanction Scanner
+  publisher: Sanction Scanner
+  url: https://sanctionscanner.com/about-us
+  accessed: '2026-10'
+- title: Sanction Scanner homepage (products and coverage)
+  publisher: Sanction Scanner
+  url: https://sanctionscanner.com
+  accessed: '2026-10'
+- title: Sanction Scanner Celebrates an Achievement in Deloitte Technology Fast 50
+  publisher: Sanction Scanner
+  url: https://sanctionscanner.com/news/sanctions-scanner-in-deloitte-technology-fast-50-992
+  accessed: '2026-10'
+- title: Six startups chosen for the Mastercard Lighthouse Türkiye Acceleration Program
+  publisher: Mastercard
+  url: https://www.mastercard.com/news/eemea/en/newsroom/press-releases/en/2024/october/six-startups-chosen-for-the-mastercard-lighthouse-turkiye-acceleration-program
+  accessed: '2026-10'
+- title: Sanction Scanner company profile
+  publisher: CB Insights
+  url: https://www.cbinsights.com/company/sanction-scanner
+  accessed: '2026-10'
+- title: Sanction Scanner reviews
+  publisher: G2
+  url: https://www.g2.com/products/sanction-scanner/reviews
+  accessed: '2026-10'
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://sanctionscanner.com
+  - https://www.linkedin.com/company/sanctionscanner
+  - https://www.crunchbase.com/organization/sanction-scanner
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- ISO 27001, ISO 9001 and SOC 2 are vendor-stated only; no certificate, certification body or register entry was found. The SOC 2 mention on the pricing page refers to the data centres, not necessarily to Sanction Scanner itself.
+- Investors (TT Ventures, Mastercard Lighthouse Türkiye) come from CB Insights only. Mastercard's own release describes Lighthouse as an acceleration programme and does not mention investment.
+- A 2025 Deloitte Fast 50 listing (old page) could not be confirmed; the latest confirmed listing is 2024 (third consecutive year).
+- Employee count (26 to 27) dropped; no current source opened.
+- G2 themes not visible on the fetched page; Capterra page did not load. User review themes are kept as general statements only.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS
+directory_categories:
+- AML
+- Crypto KYC

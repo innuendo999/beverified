@@ -1,0 +1,198 @@
+slug: sardine
+name: Sardine
+alternate_names: []
+status: published
+seo:
+  title: 'Sardine Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Sardine review: device and behavior intelligence that stops fraud before the transaction happens, backed by a16z and Visa. Features, pricing, pros & cons, alternatives.'
+  h1: 'Sardine Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/sardine.jpg
+  background: '#6F3EE0'
+  wordmark: null
+tagline: Device and behavior intelligence that stops fraud before the transaction happens
+score: 4.5
+grade: Very Good
+primary_category: aml
+legacy_rank_claim: 'ranked #7 in AML'
+categories:
+- aml
+- crypto
+link:
+  url: https://www.sardine.ai
+  type: null
+  legacy_rel: nofollow sponsored
+last_verified: '2026-10-18'
+updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+verdict: Sardine scores fraud risk from device intelligence and behavior biometrics before a transaction completes, then extends into onboarding, transaction monitoring, sanctions screening and case management. Having fraud and AML compliance in one platform is still unusual. Backed by a16z, Visa and Experian, with customers such as FIS, GoDaddy and Intuit, it's built for financial institutions and larger platforms rather than small self-serve teams.
+what_is:
+- Sardine is a fraud-prevention and AML compliance platform founded in 2020 and based in San Francisco, led by co-founder and CEO Soups Ranjan. It combines device intelligence and behavior-biometric fraud scoring with KYC/KYB onboarding, transaction monitoring, sanctions screening and case management. In February 2025 it said more than 300 enterprises rely on it; named customers include FIS, GoDaddy and Intuit. A May 2026 Series C extension led by National Bank of Canada took total funding to $170 million.
+features:
+- Device intelligence and behavior-biometric fraud scoring.
+- Real-time, pre-transaction machine-learning fraud detection.
+- Identity, document and bank verification alongside fraud scoring.
+- AML transaction monitoring, sanctions screening and case management, with an agent that drafts SAR narratives.
+- Payment, card-issuing, refund and policy-abuse fraud tools.
+- Account-takeover and bot detection.
+pricing:
+  summary: Pricing is not published; Sardine quotes on request.
+  plans:
+  - tier: Enterprise Quote
+    price: Custom
+    note: Fraud/AML platform licensing
+    extra: Contact sales for a quote
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Published pricing
+    value: None; quotes on request
+    kind: official
+    source: 2
+    verified: '2026-10'
+facts:
+- label: From
+  value: Custom quote
+  source: 2
+  evidence: vendor
+- label: Effective
+  value: Not publicly disclosed
+  source: null
+- label: Founded
+  value: '2020'
+  source: 7
+  evidence: independent
+- label: HQ
+  value: San Francisco, CA
+  source: 5
+  evidence: vendor
+- label: Funding
+  value: $170M raised (May 2026)
+  source: 6
+  evidence: independent
+- label: Clients
+  value: 300+ enterprises (Feb 2025)
+  source: 5
+  evidence: vendor
+pros:
+- Pre-transaction fraud detection using device and behavior signals
+- Backed by a16z, Visa, Experian, FIS, and Google Ventures
+- Fraud prevention, onboarding and AML compliance tooling in one platform
+cons:
+- Not a document-first IDV platform
+- No published pricing
+- Built for financial institutions rather than small teams
+alternatives:
+- slug: seon
+  name: SEON
+  best_for: Best for Pre-KYC Fraud Signals
+- slug: unit21
+  name: Unit21
+  best_for: Best for Agentic AI Investigations
+- slug: feedzai
+  name: Feedzai
+  best_for: Best for Payment Fraud at Scale
+choose_instead:
+- slug: seon
+  text: a lighter-weight, faster-to-deploy device/digital-footprint tool with a published entry plan fits better than a full fraud and AML platform.
+- slug: unit21
+  text: you want agentic AI that runs full investigations end-to-end.
+- slug: feedzai
+  text: you need Tier-1 bank-scale, real-time payment-fraud detection.
+user_reviews:
+  legacy_note: null
+  praise:
+  - 'Pre-transaction detection: the product is built to catch fraud before money moves.'
+  criticize:
+  - 'Scope: it is not a document-first IDV replacement.'
+  - 'Pricing opacity: no published rate card.'
+  by_profile:
+  - Banks and fintechs processing instant payments use Sardine to catch pre-transaction fraud.
+  - Crypto and payments companies value the combined fraud and AML stack.
+  - Smaller teams needing simple self-serve IDV often evaluate lighter tools first.
+faq:
+- q: How much does Sardine cost?
+  a: Sardine does not publish pricing; it quotes on request.
+- q: What makes Sardine different?
+  a: Sardine combines device intelligence and behavior biometrics for pre-transaction fraud scoring with onboarding checks, transaction monitoring, sanctions screening and case management in one platform.
+- q: Who uses Sardine?
+  a: Sardine said in February 2025 that more than 300 enterprises rely on it. Named customers include FIS, GoDaddy and Intuit, and National Bank of Canada deployed it in 2026.
+- q: Who backs Sardine?
+  a: Sardine's backers include Activant Capital, a16z, Google Ventures, Experian Ventures, Moody's, Visa, FIS and National Bank of Canada. Total funding reached $170 million in May 2026.
+- q: What is the best alternative to Sardine?
+  a: SEON is the best alternative for a lighter-weight device/digital-footprint fraud tool. Unit21 is the closest fit for agentic, end-to-end investigation automation.
+- q: Who are Sardine's main competitors?
+  a: Sardine competes with SEON, Unit21, and Feedzai, differentiating through pre-transaction device and behavior scoring combined with AML compliance tooling.
+segments: []
+capabilities: {}
+certifications:
+- name: SOC 2
+  what: Security controls report
+  status: vendor_stated
+  source: 4
+user_ratings:
+- platform: G2
+  rating: 4.8
+  count: 39
+  checked: '2026-10'
+  url: https://www.g2.com/products/sardine/reviews
+use_case_verdicts: []
+score_breakdown: []
+hands_on: null
+sources:
+- title: About Sardine
+  publisher: Sardine
+  url: https://www.sardine.ai/about
+  accessed: '2026-10'
+- title: Sardine homepage (products and customers)
+  publisher: Sardine
+  url: https://www.sardine.ai
+  accessed: '2026-10'
+- title: Sardine AML compliance
+  publisher: Sardine
+  url: https://www.sardine.ai/aml
+  accessed: '2026-10'
+- title: Sardine security
+  publisher: Sardine
+  url: https://www.sardine.ai/security
+  accessed: '2026-10'
+- title: Sardine AI Raises $70M to Make Fraud and Compliance Teams More Productive
+  publisher: Business Wire
+  url: https://www.businesswire.com/news/home/20250211169372/en/Sardine-AI-Raises-%252470M-to-Make-Fraud-and-Compliance-Teams-More-Productive
+  accessed: '2026-10'
+- title: National Bank of Canada leads $25m investment in Sardine
+  publisher: FinTech Futures
+  url: https://www.fintechfutures.com/financial-crime-fraud-prevention/national-bank-of-canada-leads-25m-investment-in-sardine
+  accessed: '2026-10'
+- title: Sardine company research
+  publisher: Contrary Research
+  url: https://research.contrary.com/company/sardine
+  accessed: '2026-10'
+- title: Sardine reviews
+  publisher: G2
+  url: https://www.g2.com/products/sardine/reviews
+  accessed: '2026-10'
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://www.sardine.ai
+  - https://www.linkedin.com/company/sardineai
+  - https://www.crunchbase.com/organization/sardine
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- Santander, Travelex and ClearBank were removed as Sardine customers. Contrary Research names them as customers of ThetaRay, a competitor; no Sardine source names them.
+- Instant settlement and chargeback protection were removed; neither appears on Sardine's current product pages (ACH only appears as a rail covered by Bank Transactions).
+- Founding year 2020 comes from Contrary Research (February 2020); Sardine's own pages do not state it.
+- Customer count is the 300+ figure from the February 2025 release. The About page shows an animated figure that appears to read 450+, which could not be read as one string.
+- SOC 2 is vendor-stated; the trust centre at security.sardine.ai gates the report behind a request.
+- The Sardine homepage claims 4.9 on G2; the G2 page itself showed 4.8 from 39 reviews, which is what we record.
+- User review themes not visible on G2; kept as general statements without frequency claims.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS
+directory_categories:
+- AML
+- Crypto KYC

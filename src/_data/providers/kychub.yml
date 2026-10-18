@@ -1,0 +1,206 @@
+slug: kychub
+name: KYC Hub
+alternate_names: []
+status: published
+seo:
+  title: 'KYC Hub Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'KYC Hub review: no-code financial-crime orchestration covering identity, screening, and transaction monitoring in one platform. Features, pricing, pros & cons, alternatives.'
+  h1: 'KYC Hub Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/kychub.jpg
+  background: '#835AEB'
+  wordmark: null
+tagline: No-code financial-crime orchestration covering the full lifecycle in one platform
+score: 4.5
+grade: Very Good
+primary_category: aml
+legacy_rank_claim: 'ranked #8 in AML'
+categories:
+- aml
+- kyb
+link:
+  url: https://www.kychub.com
+  type: null
+  legacy_rel: nofollow sponsored
+last_verified: '2026-10-18'
+updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+verdict: KYC Hub's OpsFlow builder lets compliance teams configure onboarding, monitoring, and escalation without code, unifying identity, screening, and transaction monitoring in one platform rather than stitching together point solutions. Pricing is modular, with three quote-based tiers set by volume and modules, but no rates are published and quotes follow a demo and pilot.
+what_is:
+- KYC Hub is a financial-crime compliance platform co-founded by Jay Rao and Farnoush Mirmoeini. It is operated by MerlinAI Labs Pvt Ltd, which KYC Hub says is headquartered in Bangalore, India, with a European HQ in London and an APAC hub in Singapore. It serves banks, fintechs, lenders, and crypto businesses through OpsFlow, a no-code orchestration builder covering onboarding, screening, monitoring, and case escalation in one platform.
+features:
+- 'OpsFlow: no-code builder for onboarding, monitoring and escalation workflows, with 100+ templates.'
+- KYC, KYB, and AML screening in one platform, with verification in 190+ countries and 3,000+ document types.
+- Real-time AML rules and anomaly detection for transaction monitoring.
+- 200+ data integrations through one API and GraphIntel, a knowledge graph of high-risk entities.
+- Case management with data-residency options.
+- ISO 27001 certified and GDPR compliant, per the vendor; identity verification in under five seconds, per the vendor.
+pricing:
+  summary: KYC Hub does not publish rates. Its pricing page lists three quote-based tiers (Starter Compliance, Growth and Enterprise) set by a monthly commitment based on expected volume and the modules used. Quotes follow a guided demo and a pilot; there is no self-serve trial.
+  plans:
+  - tier: Starter Compliance
+    price: Custom
+    note: For smaller regulated businesses
+    extra: Monthly commitment based on expected volume
+  - tier: Growth
+    price: Custom
+    note: For scaling teams
+    extra: Monthly commitment based on expected volume
+  - tier: Enterprise
+    price: Custom
+    note: For large organisations needing KYB and dedicated support
+    extra: Contact sales for a quote
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Starter Compliance, Growth, Enterprise
+    value: Custom quote
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: Billing basis
+    value: Monthly commitment by volume and modules
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: Free trial
+    value: None; guided demo and pilot
+    kind: official
+    source: 2
+    verified: '2026-10'
+facts:
+- label: From
+  value: Custom quote
+  source: 2
+  evidence: vendor
+- label: Effective
+  value: Not publicly disclosed
+  source: null
+- label: Founded
+  value: '2017'
+  source: 4
+  evidence: independent
+- label: HQ
+  value: Bangalore, India (European HQ London)
+  source: 3
+  evidence: vendor
+- label: Regions
+  value: 190+ countries
+  source: 1
+  evidence: vendor
+- label: Certifications
+  value: ISO 27001 (vendor-stated), GDPR compliant
+  source: 3
+  evidence: vendor
+pros:
+- Full financial-crime lifecycle (identity, screening, monitoring, case management) in one no-code platform
+- 'Fast configuration: 100+ templates to ship flows in hours, per the vendor'
+- Modular pricing that lets you change tiers or add and remove modules at any time
+cons:
+- No published prices; a quote needs a demo and a pilot
+- SOC 2 is described only as "aligned", not as an audited report
+- Younger, smaller brand than established category leaders
+alternatives:
+- slug: complycube
+  name: ComplyCube
+  best_for: API-First Budget Pick
+- slug: unit21
+  name: Unit21
+  best_for: Best for Agentic AI Investigations
+- slug: sumsub
+  name: Sumsub
+  best_for: Editor's Choice
+choose_instead:
+- slug: complycube
+  text: you want a simpler API-first identity/AML tool rather than full lifecycle orchestration.
+- slug: unit21
+  text: you want agentic AI that runs investigations end-to-end at larger scale.
+- slug: sumsub
+  text: you want a more established, larger-scale all-in-one platform.
+user_reviews:
+  legacy_note: null
+  praise: []
+  criticize: []
+  by_profile:
+  - Mid-size banks and fintechs may value having identity, screening, and monitoring unified in one platform.
+  - Crypto businesses may use its GraphIntel knowledge graph for high-risk entity detection.
+  - Very large banks with complex needs may also evaluate bigger-scale competitors.
+faq:
+- q: How much does KYC Hub cost?
+  a: KYC Hub does not publish rates. Its three tiers (Starter Compliance, Growth and Enterprise) are quoted on a monthly commitment based on expected volume and modules, after a demo and pilot.
+- q: What is OpsFlow?
+  a: OpsFlow is KYC Hub's no-code builder for configuring onboarding, monitoring, and escalation workflows without engineering support.
+- q: Does KYC Hub cover the full compliance lifecycle?
+  a: Yes. KYC Hub unifies identity verification, KYB, AML screening, transaction monitoring, and case management in one platform.
+- q: How fast is KYC Hub verification?
+  a: KYC Hub says identity verification at account opening takes under five seconds.
+- q: What is the best alternative to KYC Hub?
+  a: ComplyCube is the best alternative for simpler API-first identity/AML checks. Unit21 is the closest fit for agentic AI investigation automation at larger scale.
+- q: Who are KYC Hub's main competitors?
+  a: KYC Hub competes with ComplyCube, Unit21, and Sumsub, differentiating through its no-code, full-lifecycle orchestration approach.
+segments: []
+capabilities: {}
+certifications:
+- name: ISO/IEC 27001
+  what: Information security
+  status: vendor_stated
+  source: 3
+user_ratings:
+- platform: G2
+  rating: 4.0
+  count: 4
+  checked: '2026-10'
+  url: https://www.g2.com/products/kyc-hub/reviews
+use_case_verdicts: []
+score_breakdown: []
+hands_on: null
+sources:
+- title: KYC Hub homepage
+  publisher: KYC Hub
+  url: https://www.kychub.com
+  accessed: '2026-10'
+- title: Pricing
+  publisher: KYC Hub
+  url: https://www.kychub.com/pricing
+  accessed: '2026-10'
+- title: About us
+  publisher: KYC Hub
+  url: https://www.kychub.com/about-us
+  accessed: '2026-10'
+- title: KYC Hub, Startups 100 2023
+  publisher: Startups.co.uk
+  url: https://startups.co.uk/startups-100/2023/kyc-hub
+  accessed: '2026-10'
+- title: OpsFlow
+  publisher: KYC Hub
+  url: https://www.kychub.com/ops-flow
+  accessed: '2026-10'
+- title: KYC Hub reviews
+  publisher: G2
+  url: https://www.g2.com/products/kyc-hub/reviews
+  accessed: '2026-10'
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://www.kychub.com
+  - https://www.linkedin.com/company/kyc-hub
+  - https://www.crunchbase.com/organization/kyc-hub
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- 'HQ: old page said London with US, India and Singapore offices. KYC Hub about page says operator MerlinAI Labs Pvt Ltd is headquartered in Bangalore, with London as European HQ and Singapore as APAC hub; no US office named. Privacy policy also names Obsessory Online Services Pvt. Ltd. at a Bangalore address; relationship between the two entities not confirmed.'
+- 'Founded: old page said 2018; Startups.co.uk Startups 100 2023 profile says 2017. Vendor pages give no year. No registry record found.'
+- 'Employees: old page said roughly 102; no source found, removed.'
+- 'Pricing: old page said transparent pay-as-you-go tiers. Pricing page now shows three custom tiers on a monthly commitment; pay-as-you-go not mentioned.'
+- 'ISO 27001: vendor badge and FAQ only; no certifying body, scope or certificate found. SOC 2 described as "aligned" only.'
+- 'Old cons about dashboard performance at large-bank scale and BI exports were attributed to reviews; G2 shows 4 reviews (4.0) with themes not visible and Capterra UK 0 reviews. Replaced.'
+- 'Go-live "weeks rather than months": OpsFlow page says configuration time drops "from weeks to hours"; rewritten.'
+- 'Homepage stats block renders placeholders (0+ countries, <0s, 0%); counts taken from other homepage sections.'
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS
+directory_categories:
+- AML
+- KYB

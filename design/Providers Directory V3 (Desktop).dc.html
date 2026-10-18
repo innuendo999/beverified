@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>All KYC &amp; AML providers | BeVerified</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+html, body { margin:0; background:#F7F6F3; color:#14141A; scroll-behavior:smooth; }
+body { font-family:'Geist', ui-sans-serif, system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
+a { color:#5B2BD9; text-decoration:none; }
+a:hover { color:#4A1FBF; text-decoration:underline; text-underline-offset:3px; }
+:focus-visible { outline:2px solid #5B2BD9; outline-offset:3px; border-radius:6px; }
+</style>
+<script src="./bv-data.js"></script>
+</helmet>
+<div style="background:#F7F6F3; color:#14141A; min-height:100vh; font-family:'Geist', ui-sans-serif, system-ui, sans-serif;">
+<header data-component="header" style="position:sticky; top:0; z-index:100; background:rgba(247,246,243,0.92); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:1px solid #E6E4DF;">
+  <div style="max-width:1200px; margin:0 auto; padding:0 32px; height:60px; display:flex; align-items:center; gap:40px;">
+    <a href="Homepage V3 - BeVerified (Desktop).dc.html" aria-label="BeVerified home" style="display:flex; align-items:center; gap:9px; text-decoration:none;"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="display:block;"><rect x="3" y="12" width="4.5" height="9" rx="1" fill="#14141A"></rect><rect x="9.75" y="8" width="4.5" height="13" rx="1" fill="#14141A"></rect><rect x="16.5" y="3" width="4.5" height="18" rx="1" fill="#5B2BD9"></rect></svg><span style="font-weight:600; font-size:17px; letter-spacing:-0.03em; color:#14141A;">BeVerified</span></a>
+    <nav aria-label="Primary" style="display:flex; gap:28px; flex:1;"><a href="Use Cases Hub V3 (Desktop).dc.html" style="font-size:15px; color:#4A4A55;">Use cases</a><a href="Regions Hub V3 (Desktop).dc.html" style="font-size:15px; color:#4A4A55;">Regions</a><a href="Providers Directory V3 (Desktop).dc.html" style="font-size:15px; color:#14141A; font-weight:500;">Reviews</a><a href="Blog Index V3 (Desktop).dc.html" style="font-size:15px; color:#4A4A55;">Blog</a></nav>
+    <a href="Homepage V3 - BeVerified (Desktop).dc.html#for-providers" style="font-size:15px; color:#14141A;">For providers</a>
+  </div>
+</header>
+
+<div style="max-width:1200px; margin:16px auto 0; padding:0 32px;"><p style="margin:0; font-size:13px; font-weight:500; color:#6B4A00; background:#FFF3D1; border:1px dashed #D9A93A; padding:8px 12px; border-radius:8px;">Template · scores shown only for the 8 approved providers; others show neutral <span style="font-family:'Geist Mono', monospace;">{provider.score}</span>. Link types are sample values of <span style="font-family:'Geist Mono', monospace;">{provider.link.type}</span>.</p></div>
+
+<main style="max-width:1200px; margin:0 auto; padding:0 32px 96px;">
+  <nav data-component="breadcrumb" aria-label="Breadcrumb" style="padding:20px 0 0; font-size:14px; color:#4A4A55; display:flex; gap:8px;"><a href="Homepage V3 - BeVerified (Desktop).dc.html" style="color:#4A4A55;">Home</a><span aria-hidden="true" style="color:#9C988F;">›</span><span aria-current="page" style="color:#14141A;">Providers</span></nav>
+  <h1 style="margin:28px 0 12px; font-size:52px; line-height:1.03; letter-spacing:-0.045em; font-weight:600;">All KYC &amp; AML providers</h1>
+  <p style="margin:0 0 32px; font-size:18px; line-height:1.55; color:#4A4A55; max-width:700px;">Every provider we track, A to Z, with its BeVerified score and what it’s best for. Providers we haven’t reviewed yet are listed without a score.</p>
+
+  <nav aria-label="Use cases" style="display:flex; gap:28px; border-bottom:1px solid #D6D3CC; margin-bottom:18px;">
+    <sc-for list="{{ tabs }}" as="t" hint-placeholder-count="5"><a href="#" onClick="{{ t.onClick }}" aria-current="{{ t.current }}" style="font-size:15px; padding:0 0 12px; color:{{ t.color }}; font-weight:{{ t.weight }}; border-bottom:2px solid {{ t.line }}; margin-bottom:-1px; text-decoration:none;">{{ t.label }}</a></sc-for>
+  </nav>
+
+  <nav data-component="az-jump" aria-label="Jump to letter" style="position:sticky; top:60px; z-index:50; background:rgba(247,246,243,0.95); padding:10px 0; display:flex; flex-wrap:wrap; gap:4px; margin-bottom:12px;">
+    <sc-for list="{{ letters }}" as="l" hint-placeholder-count="26">
+      <span style="display:flex;">
+        <sc-if value="{{ l.on }}" hint-placeholder-val="{{ true }}"><a href="#letter-{{ l.ch }}" style="width:30px; height:30px; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:500; color:#14141A; background:#FFFFFF; border:1px solid #E0DDD6; border-radius:8px; text-decoration:none;">{{ l.ch }}</a></sc-if>
+        <sc-if value="{{ l.off }}" hint-placeholder-val="{{ false }}"><span aria-hidden="true" style="width:30px; height:30px; display:flex; align-items:center; justify-content:center; font-size:14px; color:#BDB9B0;">{{ l.ch }}</span></sc-if>
+      </span>
+    </sc-for>
+  </nav>
+
+  <sc-for list="{{ groups }}" as="g" hint-placeholder-count="6">
+    <section id="letter-{{ g.ch }}" style="scroll-margin-top:120px; margin-bottom:24px;">
+      <h2 style="margin:0 0 8px; font-size:22px; font-weight:600; color:#8A8790;">{{ g.ch }}</h2>
+      <div data-component="directory-row" style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:16px;">
+        <sc-for list="{{ g.rows }}" as="p" hint-placeholder-count="4">
+          <div style="display:flex; flex-wrap:wrap; align-items:center; gap:10px 20px; padding:14px 20px; border-top:1px solid #EEECE7;">
+            <span style="flex:0 0 140px; display:flex; align-items:center; min-width:0;">
+              <sc-if value="{{ p.hasLogo }}" hint-placeholder-val="{{ false }}"><img loading="lazy" src="{{ p.logo }}" alt="{{ p.name }}" style="height:20px; width:auto; max-width:130px; object-fit:contain; display:block;"></sc-if>
+              <sc-if value="{{ p.noLogo }}" hint-placeholder-val="{{ true }}"><span style="font-size:16px; font-weight:700; letter-spacing:-0.03em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{{ p.name }}</span></sc-if>
+            </span>
+            <span style="flex:0 0 74px;">
+              <sc-if value="{{ p.hasScore }}" hint-placeholder-val="{{ true }}"><span role="img" aria-label="{{ p.aria }}" style="font-size:17px; font-weight:600; font-variant-numeric:tabular-nums; color:{{ p.scoreColor }};">{{ p.scoreText }}<span style="font-size:13px; font-weight:400; color:#6A6A74;"> / 5</span></span></sc-if>
+              <sc-if value="{{ p.coming }}" hint-placeholder-val="{{ false }}"><span style="font-size:13px; color:#4A4A55; border:1px dashed #BDB9B0; padding:1px 8px; border-radius:999px; white-space:nowrap;">Review coming</span></sc-if>
+            </span>
+            <span style="flex:1 1 180px; font-size:14px; color:#4A4A55; min-width:0;">{{ p.bestFor }}</span>
+            <span style="flex:0 1 180px; display:flex; flex-wrap:wrap; gap:4px;"><sc-for list="{{ p.chips }}" as="c" hint-placeholder-count="2"><a href="{{ c.href }}" data-component="entity-chip" style="display:inline-flex; gap:4px; font-size:12px; color:#14141A; background:#F7F6F3; border:1px solid #E0DDD6; padding:1px 8px; border-radius:999px; text-decoration:none;"><span aria-hidden="true" style="color:#6A6A74;">▤</span>{{ c.label }}</a></sc-for></span>
+            <span data-component="cta-row" style="flex:0 0 auto; display:flex; align-items:center; gap:8px; margin-left:auto;">
+              <sc-if value="{{ p.isAff }}" hint-placeholder-val="{{ false }}"><span style="display:flex; flex-direction:column; align-items:flex-start; gap:4px;"><a href="#" rel="sponsored nofollow noopener" style="font-size:13px; font-weight:500; color:#FFFFFF; background:#14141A; padding:7px 13px; border-radius:999px; text-decoration:none;">Visit site ↗</a><span title="We earn a commission if you sign up through this link. It never affects scores or ranking." style="display:inline-flex; align-items:center; gap:4px; font-size:11px; font-weight:500; border:1px solid #9C988F; padding:0 6px; border-radius:5px; cursor:help;"><svg width="10" height="10" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6.5 9.5l3-3M7 4.5l1.2-1.2a2.6 2.6 0 013.7 3.7L10.7 8.2M9 11.5l-1.2 1.2a2.6 2.6 0 01-3.7-3.7l1.2-1.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg>Affiliate link</span></span></sc-if>
+              <sc-if value="{{ p.isPaid }}" hint-placeholder-val="{{ false }}"><span style="display:flex; flex-direction:column; align-items:flex-start; gap:4px;"><a href="#" rel="sponsored nofollow noopener" style="font-size:13px; font-weight:500; color:#FFFFFF; background:#14141A; padding:7px 13px; border-radius:999px; text-decoration:none;">Visit site ↗</a><span title="The provider paid for this link. It never affects scores or ranking." style="display:inline-flex; align-items:center; gap:4px; font-size:11px; font-weight:500; background:#EFEDE8; border:1px dashed #6A6A74; padding:0 6px; border-radius:5px; cursor:help;"><svg width="10" height="10" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.8"></rect><path d="M8 4.5v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>Sponsored link</span></span></sc-if>
+              <sc-if value="{{ p.isNone }}" hint-placeholder-val="{{ true }}"><a href="#" rel="noopener" style="font-size:13px; color:#4A4A55; text-decoration:underline; text-underline-offset:3px;">Official website ↗</a></sc-if>
+              <sc-if value="{{ p.hasReview }}" hint-placeholder-val="{{ true }}"><a href="{{ p.href }}" style="font-size:13px; font-weight:500; color:#14141A; background:#FFFFFF; border:1px solid #D6D3CC; padding:6px 12px; border-radius:999px; text-decoration:none; white-space:nowrap;">Read review</a></sc-if>
+            </span>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+  </sc-for>
+  <code style="display:block; font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00;">{providers[].name} {provider.score | null} {provider.best_for} {provider.categories[]} {provider.link.type} {provider.review.url | null → “Review coming”}</code>
+</main>
+<footer data-component="footer" style="background:#EFEDE8; border-top:1px solid #E0DDD6;"><div style="max-width:1200px; margin:0 auto; padding:40px 32px 28px; display:flex; justify-content:space-between; gap:32px; font-size:14px; color:#4A4A55;"><span>Independent reviews of KYC, KYB and AML software.</span><span>© 2026 BeVerified.org · <a href="Methodology Page - BeVerified (Desktop).dc.html">Methodology</a></span></div></footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { tab: 'all' };
+  componentDidMount() { if (!window.BV) { this._on = () => this.forceUpdate(); window.addEventListener('bv-data-ready', this._on); } }
+  componentWillUnmount() { if (this._on) window.removeEventListener('bv-data-ready', this._on); }
+  renderVals() {
+    const D = window.BV;
+    if (!D) return {};
+    const st = this.state;
+    const UC = { idv: ['Identity Verification', 'Category Page - Top Identity Verification Companies (Desktop).dc.html'], aml: ['AML', 'Category Page - Best AML Software Providers (Desktop).dc.html'], kyb: ['KYB', 'Category Page - Best KYB Solution Providers (Desktop).dc.html'], crypto: ['Crypto KYC', 'Category Page - Top Crypto KYC Providers (Desktop).dc.html'] };
+    const LINK = { sumsub: 'affiliate', kycaid: 'affiliate', onfido: 'none', complyadvantage: 'paid', feedzai: 'none', trulioo: 'affiliate', jumio: 'none', seon: 'paid' };
+    const norm = (n) => n.toLowerCase().replace(/[^a-z]/g, '');
+    const all = D.reviewed.map((r) => {
+      const rec = D.providers.find((p) => norm(p.page) === norm(r.name));
+      const top = D.editorialTop.find((p) => rec && p.id === rec.id);
+      const link = top ? LINK[top.id] : 'none';
+      return { name: top ? top.name : r.name, href: r.href, logo: top && top.logo, hasLogo: !!(top && top.logo), noLogo: !(top && top.logo), hasScore: true, coming: false, hasReview: true,
+        scoreText: top ? top.score.toFixed(1) : '0.0', scoreColor: top ? '#14141A' : '#9C988F', aria: top ? top.score.toFixed(1) + ' out of 5' : 'score pending',
+        bestFor: rec ? rec.bestFor : '{provider.best_for}', uc: rec ? rec.uc : [], chips: (rec ? rec.uc : []).slice(0, 2).map((u) => ({ label: UC[u][0], href: UC[u][1] })),
+        isAff: link === 'affiliate', isPaid: link === 'paid', isNone: link === 'none' };
+    });
+    const soon = [['FaceTec', 'Liveness Detection'], ['idwall', 'KYC in Brazil'], ['iProov', 'Liveness Detection'], ['Notabene', 'Travel Rule'], ['Ondato', 'Budget KYC'], ['Sygna Bridge', 'Travel Rule'], ['VerifyVASP', 'Travel Rule']].map(([name, cat]) => ({ name, hasLogo: false, noLogo: true, hasScore: false, coming: true, hasReview: false, bestFor: 'Ranked in ' + cat, uc: [], chips: [], isAff: false, isPaid: false, isNone: true, href: '#' }));
+    const list = all.concat(soon).filter((p) => st.tab === 'all' || p.uc.includes(st.tab)).sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
+    const groupsMap = {};
+    list.forEach((p) => { const ch = p.name[0].toUpperCase(); (groupsMap[ch] = groupsMap[ch] || []).push(p); });
+    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((ch) => ({ ch, on: !!groupsMap[ch], off: !groupsMap[ch] }));
+    const TABS = [['all', 'All'], ['idv', 'Identity verification'], ['aml', 'AML'], ['kyb', 'KYB'], ['crypto', 'Crypto']];
+    return {
+      tabs: TABS.map(([id, label]) => ({ label, current: st.tab === id ? 'page' : 'false', color: st.tab === id ? '#14141A' : '#4A4A55', weight: st.tab === id ? 600 : 400, line: st.tab === id ? '#14141A' : 'transparent', onClick: (e) => { e.preventDefault(); this.setState({ tab: id }); } })),
+      letters, groups: Object.keys(groupsMap).sort().map((ch) => ({ ch, rows: groupsMap[ch] })),
+    };
+  }
+}
+</script>
+</body>
+</html>

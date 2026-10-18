@@ -1,0 +1,225 @@
+slug: incode
+name: Incode
+alternate_names: []
+status: published
+seo:
+  title: 'Incode Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Incode review: biometric identity verification platform trained on 400M+ identity profiles, a Gartner MQ Leader three years running. Features, pricing, pros & cons, alternatives.'
+  h1: 'Incode Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/incode.png
+  background: '#5E35D6'
+  wordmark: null
+tagline: Biometric identity verification platform built on a large proprietary identity dataset
+score: 4.7
+grade: Great
+primary_category: identity-verification
+legacy_rank_claim: 'ranked #12 in Identity Verification'
+categories:
+- identity-verification
+- liveness-detection
+link:
+  url: https://incode.com
+  type: null
+  legacy_rel: nofollow sponsored
+last_verified: '2026-10-18'
+updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+verdict: Incode's platform handles onboarding and ongoing authentication in one system. Its models are trained on more than 7 billion trust checks and 400 million identity profiles, by the company's own count, and it has been named a Leader in the Gartner Magic Quadrant for Identity Verification in 2024, 2025 and 2026. Its 2025 acquisition of AuthenticID adds further consolidation, though pricing remains enterprise-only.
+what_is:
+- Incode is an identity-verification company founded in 2015 in San Francisco by CEO Ricardo Amper. It became a unicorn in December 2021 after a $220M Series B at a $1.25B valuation, led by General Atlantic and SoftBank. It has more than 600 employees from over 25 nationalities and reports more than 7.1 billion trust checks to date. Customers include eight of the top 10 U.S. banks, eight of the top nine U.S. telecoms, the top three global neobanks and four of the top five global marketplaces. It reads 4,900+ ID document types across 190+ countries.
+features:
+- 'Incode Platform: onboarding, ongoing authentication and fraud investigation in one system.'
+- Facial recognition with passive liveness detection, tested by iBeta to ISO/IEC 30107-3 Level 3.
+- 'Deepsight: deepfake and synthetic ID defense.'
+- Document authentication across 4,900+ ID document types in 190+ countries.
+- GovFaceMatch, digital ID (mDL, eID, wallets) and non-document verification paths.
+- On-device age estimation, KYB and workforce verification.
+pricing:
+  summary: Pricing is not published; Incode quotes on request. Its platform is licensed to enterprises based on volume and deployment scope.
+  plans:
+  - tier: Enterprise Quote
+    price: Custom
+    note: Identity verification licensing, volume-based
+    extra: Contact sales for a quote
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: List price
+    value: Not publicly disclosed; quoted on request
+    kind: official
+    source: 9
+    verified: '2026-10'
+facts:
+- label: From
+  value: Custom quote
+  source: 9
+  evidence: vendor
+- label: Effective
+  value: Not publicly disclosed
+- label: Founded
+  value: '2015'
+  source: 1
+  evidence: vendor
+- label: HQ
+  value: San Francisco, CA
+  source: 1
+  evidence: vendor
+- label: Regions
+  value: 190+ countries
+  source: 2
+  evidence: vendor
+- label: Recognition
+  value: Gartner MQ Leader 2024, 2025, 2026
+  source: 1
+  evidence: vendor
+pros:
+- Models trained on a vendor-reported 400M+ identity profiles and 7B+ trust checks
+- Gartner Magic Quadrant Leader for Identity Verification in 2024, 2025 and 2026
+- Passive liveness tested by iBeta to ISO/IEC 30107-3 Level 3 on iOS and Android
+cons:
+- Enterprise-oriented, pricier for smaller teams
+- No published pricing
+- Less specialized AML depth than dedicated screening vendors
+alternatives:
+- slug: jumio
+  name: Jumio
+  best_for: Most Popular
+- slug: au10tix
+  name: AU10TIX
+  best_for: Fastest Automated IDV
+- slug: onfido
+  name: Onfido
+  best_for: Developer-Friendly
+choose_instead:
+- slug: jumio
+  text: you want a long-established enterprise IDV vendor with AML screening in the same contract.
+- slug: au10tix
+  text: you need fully automated, consortium-based mass-fraud detection over dataset scale.
+- slug: onfido
+  text: stronger developer SDKs matter more than proprietary dataset size.
+user_reviews:
+  legacy_note: null
+  praise:
+  - 'Dataset scale: reviewers credit its large proprietary identity dataset for model accuracy.'
+  - 'Recognition: clients note confidence from consecutive Gartner Leader placements.'
+  criticize:
+  - 'Cost: some reviewers note enterprise pricing is out of reach for smaller teams.'
+  - 'Pricing opacity: no published rate card.'
+  by_profile:
+  - Large banks, telecoms and governments value Incode's dataset scale and recognition.
+  - Neobanks use Incode for combined onboarding and ongoing authentication.
+  - Smaller teams more often evaluate lighter, published-pricing competitors.
+faq:
+- q: How much does Incode cost?
+  a: Pricing is not published; Incode quotes on request. Its platform is licensed to enterprises based on volume and deployment scope.
+- q: What is the Incode Platform?
+  a: The Incode Platform combines identity onboarding, ongoing biometric authentication and fraud investigation in one system. Earlier versions were sold as Incode Omni.
+- q: Has Incode made any acquisitions?
+  a: Yes. Incode acquired MetaMap in 2024 and AuthenticID in August 2025.
+- q: Is Incode recognized by analysts?
+  a: Yes. Incode has been named a Leader in the Gartner Magic Quadrant for Identity Verification in 2024, 2025 and 2026.
+- q: What is the best alternative to Incode?
+  a: Jumio is the best alternative for a long-established enterprise IDV vendor. AU10TIX is the closest fit for fully automated, consortium-based fraud detection.
+- q: Who are Incode's main competitors?
+  a: Incode competes with Jumio, AU10TIX, and Onfido, differentiating through its large proprietary dataset and single-platform approach.
+segments: []
+capabilities: {}
+certifications:
+- name: ISO/IEC 30107-3 Level 3 (iBeta)
+  what: Liveness / presentation attack detection
+  status: confirmed
+  source: 4
+- name: SOC 2 Type 2
+  what: Security controls audit
+  status: vendor_stated
+  source: 3
+- name: ISO/IEC 27001:2022
+  what: Information security
+  status: vendor_stated
+  source: 3
+- name: ISO/IEC 42001:2023
+  what: AI management system
+  status: vendor_stated
+  source: 3
+- name: FedRAMP Moderate
+  what: US federal cloud security
+  status: vendor_stated
+  source: 3
+- name: Kantara IAL2 Trust Mark
+  what: Identity assurance (NIST 800-63)
+  status: vendor_stated
+  source: 3
+user_ratings:
+- platform: G2
+  rating: 5.0
+  count: 51
+  checked: '2026-10'
+  url: https://www.g2.com/products/incode-technologies-incode/reviews
+use_case_verdicts: []
+score_breakdown: []
+hands_on: null
+sources:
+- title: Incode Named a Leader in the 2026 Gartner Magic Quadrant for Identity Verification for the Third Consecutive Year
+  publisher: Business Wire
+  url: https://www.businesswire.com/news/home/20260731130229/en/
+  accessed: '2026-10'
+- title: Incode homepage (products, coverage, certifications)
+  publisher: Incode
+  url: https://www.incode.com/
+  accessed: '2026-10'
+- title: Incode Trust Center
+  publisher: Incode
+  url: https://trust.incode.com/
+  accessed: '2026-10'
+- title: Incode PAD Level 3 Confirmation Letter (16 February 2026)
+  publisher: iBeta Quality Assurance
+  url: https://www.ibeta.com/wp-content/uploads/2026/02/260216-Incode-PAD-Level-3-Confirmation-Letter.pdf
+  accessed: '2026-10'
+- title: ISO 30107-3 Presentation Attack Detection Confirmation Letters
+  publisher: iBeta Quality Assurance
+  url: https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/
+  accessed: '2026-10'
+- title: Incode acquires AuthenticID
+  publisher: Incode
+  url: https://www.incode.com/blog/incode-authenticid-acquisition/
+  accessed: '2026-10'
+- title: MetaMap Joins the Incode Family
+  publisher: Incode
+  url: https://www.incode.com/blog/metamap-joins-the-incode-family-a-new-era-of-identity-verification
+  accessed: '2026-10'
+- title: Incode $220M Series B and unicorn valuation (7 Dec 2021)
+  publisher: Crunchbase News
+  url: https://news.crunchbase.com/venture/identity-verification-incode-unicorn-220m-series-b/
+  accessed: '2026-10'
+- title: Incode AI info (company facts and pricing statement)
+  publisher: Incode
+  url: https://incode.com/ai-info/
+  accessed: '2026-10'
+- title: Incode reviews
+  publisher: G2
+  url: https://www.g2.com/products/incode-technologies-incode/reviews
+  accessed: '2026-10'
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://incode.com
+  - https://www.linkedin.com/company/incodetechnologies
+  - https://www.crunchbase.com/organization/incode
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- SOC 2, ISO 27001, ISO 42001, FedRAMP Moderate and Kantara IAL2 are vendor-stated (trust centre); no certificate, FedRAMP Marketplace or Kantara Trust Status List entry was opened.
+- NIST FRTE "top-ranked" claim could not be confirmed and was removed.
+- Unicorn valuation date and amount from Crunchbase News (Dec 2021), not a registry.
+- Gartner Leader placements are vendor-reported via press release; the Gartner report itself was not opened.
+- G2 rating read via a fetched copy of the page; spot-check before relying on it.
+- iBeta also lists an older Level 2 letter for Incode Omni (30 Jan 2023), source 5.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS
+directory_categories:
+- Identity Verification
+- Liveness Detection

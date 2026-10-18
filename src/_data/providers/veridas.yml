@@ -1,0 +1,219 @@
+slug: veridas
+name: Veridas
+alternate_names: []
+status: published
+seo:
+  title: 'Veridas Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Veridas review: proprietary face and voice biometrics, iBeta-tested liveness, backed by BBVA. Features, pricing, pros & cons, alternatives.'
+  h1: 'Veridas Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/veridas.png
+  background: '#7C4DEA'
+  wordmark: null
+tagline: Proprietary face and voice biometrics, backed by BBVA
+score: 4.6
+grade: Great
+primary_category: identity-verification
+legacy_rank_claim: 'ranked #7 in Identity Verification'
+categories:
+- identity-verification
+- liveness-detection
+link:
+  url: https://veridas.com
+  type: null
+  legacy_rel: nofollow sponsored
+last_verified: '2026-10-18'
+updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+verdict: Veridas built its name on its own biometrics, facial and voice recognition that it says ranked near the top of NIST testing, instead of reselling third-party models. Founded in 2017 as a joint venture with BBVA, it is strongest in Spain, Latin America and Europe, and its liveness detection has passed iBeta ISO 30107-3 testing. In July 2026 it agreed to merge with Amsterdam-based Fourthline; the deal was expected to close in the second half of 2026.
+what_is:
+- Veridas is an identity-verification and biometrics company founded in 2017 and headquartered in Pamplona, Navarra, Spain, created as a joint venture between BBVA and das-Nano. Led by CEO Eduardo Azanza, it develops its own facial and voice biometric technology alongside document verification, and says it serves more than 350 clients in 25 countries across banking, insurance, telecoms and public administration. In July 2026 Veridas agreed to merge with Fourthline, with BBVA and other Veridas shareholders staying on as shareholders of the combined company; closing was expected in the second half of 2026, subject to regulatory approvals.
+features:
+- AI-powered document verification and facial biometrics for identity checks.
+- Voice authentication for IVR, contact-center and chatbot identity checks.
+- Duplication Defense to detect synthetic and duplicate identities.
+- Passive liveness detection tested by iBeta to ISO/IEC 30107-3 Level 1 and Level 2.
+- Nexus Identity Wallet for issuing and managing verified digital identities.
+- Vendor-stated ISO/IEC 27001, ISO 9001, SOC 2 Type II and SOC 3.
+pricing:
+  summary: Pricing is not published; Veridas quotes on request.
+  plans:
+  - tier: Custom Quote
+    price: Custom
+    note: Modular biometric and document-verification products
+    extra: Contact sales for a quote
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Published pricing
+    value: None; demo or contact sales only
+    kind: official
+    source: 3
+    verified: '2026-10'
+facts:
+- label: From
+  value: Not publicly disclosed
+  source: null
+- label: Founded
+  value: '2017'
+  source: 4
+  evidence: independent
+- label: HQ
+  value: Pamplona, Navarra, Spain
+  source: 1
+  evidence: vendor
+- label: Regions
+  value: 25 countries
+  source: 5
+  evidence: vendor
+- label: Clients
+  value: 350+
+  source: 5
+  evidence: vendor
+- label: Ownership
+  value: BBVA joint venture; merger with Fourthline agreed Jul 2026, pending
+  source: 6
+  evidence: independent
+pros:
+- Own face and voice biometrics, with liveness confirmed by iBeta ISO 30107-3 testing
+- Backed by BBVA since founding, with deep banking-sector credibility
+- Named a Visionary in Gartner's Magic Quadrant for Identity Verification in 2025 and 2026
+cons:
+- Smaller global scale than category leaders
+- Strongest presence in Spain, Europe and Latin America, less elsewhere
+- Pending merger with Fourthline means product and brand changes are possible
+alternatives:
+- slug: onfido
+  name: Onfido
+  best_for: Developer-Friendly
+- slug: regula
+  name: Regula
+  best_for: Document Forensics
+- slug: sumsub
+  name: Sumsub
+  best_for: Editor's Choice
+choose_instead:
+- slug: onfido
+  text: you want stronger developer SDKs and Entrust-backed infrastructure over proprietary voice biometrics.
+- slug: regula
+  text: document-authentication depth matters more than face/voice biometric verification.
+- slug: sumsub
+  text: you want published pricing and a broader all-in-one KYC/AML suite.
+user_reviews:
+  legacy_note: null
+  praise:
+  - 'Biometric accuracy: clients point to strong face and voice recognition.'
+  - 'Banking pedigree: clients note confidence from BBVA''s backing and use of the platform.'
+  criticize:
+  - 'Regional concentration: support and case studies are stronger in Europe and LatAm than elsewhere.'
+  - 'Pricing opacity: no published rate card, so you need a sales conversation.'
+  by_profile:
+  - Banks and financial institutions in Spain and Latin America are Veridas' strongest customer base.
+  - Gambling operators use its checks for player onboarding and age verification.
+  - Global enterprises outside its core regions sometimes evaluate larger-scale competitors first.
+faq:
+- q: How much does Veridas cost?
+  a: Veridas does not publish pricing; it quotes on request.
+- q: What makes Veridas different from other IDV providers?
+  a: Veridas builds its own facial and voice biometric technology in-house rather than reselling third-party recognition models. It says its face engine ranked fourth in NIST's FRVT 1:N test in 2023, and its liveness detection has passed iBeta ISO 30107-3 Level 1 and Level 2 testing.
+- q: Who owns Veridas?
+  a: Veridas was founded in 2017 as a joint venture between BBVA and das-Nano. In July 2026 it agreed to merge with Fourthline; Veridas shareholders, including BBVA, are to remain shareholders of the combined company. Closing was expected in the second half of 2026.
+- q: Does Veridas support voice authentication?
+  a: Yes. Voice biometrics is one of Veridas' core technologies, used in IVR, contact centers and chatbots, and its Voice Shield product passed iBeta Level 1 presentation attack testing in December 2024.
+- q: What is the best alternative to Veridas?
+  a: Sumsub is the best alternative for published pricing and a broader all-in-one suite. Regula is the closest fit if document-authentication depth matters more than biometrics.
+- q: Who are Veridas' main competitors?
+  a: Veridas competes with Onfido, Regula, and Sumsub, differentiating through its own face and voice biometric technology.
+segments: []
+capabilities: {}
+certifications:
+- name: iBeta ISO/IEC 30107-3 PAD Level 2
+  what: Liveness, Veridas Passive Liveness Detection (Apr 2024)
+  status: confirmed
+  source: 8
+- name: iBeta ISO/IEC 30107-3 PAD Level 1
+  what: Liveness, Veridas Passive Liveness Detection (Mar 2024)
+  status: confirmed
+  source: 8
+- name: iBeta ISO/IEC 30107-3 PAD Level 1
+  what: Voice liveness, Voice Shield (Dec 2024)
+  status: confirmed
+  source: 8
+- name: ISO/IEC 27001
+  what: Information security
+  status: vendor_stated
+  source: 2
+- name: SOC 2 Type II
+  what: Security controls attestation
+  status: vendor_stated
+  source: 2
+- name: NIST FRVT 1:N (2023)
+  what: Face recognition benchmark, 4th place per Veridas
+  status: vendor_stated
+  source: 9
+user_ratings: []
+use_case_verdicts: []
+score_breakdown: []
+hands_on: null
+sources:
+- title: About us
+  publisher: Veridas
+  url: https://veridas.com/en/about-us/
+  accessed: '2026-10'
+- title: Veridas homepage
+  publisher: Veridas
+  url: https://veridas.com/en/
+  accessed: '2026-10'
+- title: Pricing
+  publisher: Veridas
+  url: https://veridas.com/en/pricing/
+  accessed: '2026-10'
+- title: Veridas cierra una ronda de inversión de 4 millones de euros
+  publisher: El Referente
+  url: https://elreferente.es/?p=29321
+  accessed: '2026-10'
+- title: Veridas consolidated as a Visionary in the 2026 Gartner Magic Quadrant for Identity Verification
+  publisher: FinanzNachrichten.de (GlobeNewswire)
+  url: https://www.finanznachrichten.de/nachrichten-2026-07/69183201-veridas-consolidated-as-a-visionary-in-the-2026-gartner-magic-quadrant-for-identity-verification-for-second-consecutive-year-399.htm
+  accessed: '2026-10'
+- title: Fourthline, Veridas merge to build global identity and compliance platform
+  publisher: Biometric Update
+  url: https://www.biometricupdate.com/202607/fourthline-veridas-merge-to-build-global-identity-and-compliance-platform
+  accessed: '2026-10'
+- title: Veridas and Fourthline join forces to fight identity fraud with a global identity platform
+  publisher: CUInsight (press release)
+  url: https://www.cuinsight.com/press-release/veridas-and-fourthline-join-forces-to-fight-identity-fraud-with-a-global-identity-platform/
+  accessed: '2026-10'
+- title: ISO 30107-3 presentation attack detection confirmation letters
+  publisher: iBeta Quality Assurance
+  url: https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/
+  accessed: '2026-10'
+- title: Veridas facial biometrics among the four best in the world according to NIST
+  publisher: Business Wire (Veridas release)
+  url: https://www.businesswire.com/news/home/20230418005373/en/Veridas-Facial-Biometrics-Among-The-Four-Best-in-the-World-According-to-NIST
+  accessed: '2026-10'
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://veridas.com
+  - https://www.linkedin.com/company/veridas
+  - https://www.crunchbase.com/organization/veridas
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- 'Fourthline merger agreed (announced 29 Jun / 16 Jul 2026), expected to close in H2 2026 subject to regulatory approvals. No completion notice found as of 18 Oct 2026. Re-check after closing; name or brand may change. Consistent with the fourthline record.'
+- 'das-Nano as co-founder/shareholder: only in 2020 sources (source 4); 2026 releases name only BBVA. Current das-Nano stake not confirmed.'
+- '"EUR 15 million rights issue in 2023": a EUR 15M capital increase is reported (capital-riesgo.es headline; Techleap lists Sep 2024, existing investors) but no primary source with date was opened; removed from FAQ.'
+- 'HQ: old record said Tajonar; vendor about page says Pamplona HQ. No street address opened.'
+- 'NIST: the Business Wire release (Apr 2023) says 4th in FRVT 1:N; a Veridas blog page says 2nd among ~250 algorithms. NIST results page not opened, so vendor_stated. Old feature line said liveness was NIST-tested; liveness is iBeta-tested.'
+- 'Gartner Visionary 2025 inferred from the 2026 release ("second consecutive year").'
+- 'Pricing URL veridas.com/en/pricing/ returned a contact page with no prices.'
+- 'No G2 or Capterra rating page found; themes kept as general statements without counts.'
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS
+directory_categories:
+- Identity Verification
+- Liveness Detection

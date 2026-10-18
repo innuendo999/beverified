@@ -1,0 +1,32 @@
+---
+layout: v3.njk
+---
+{#- Use cases hub. Design: design/Use Cases Hub V3 (Desktop).dc.html. Data: home.yml → use_cases, rankings.yml -#}
+<main id="main" class="container hub">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li class="sep" aria-hidden="true">›</li><li aria-current="page">Use cases</li></ol></nav>
+  <header class="text-hero">
+    <h1 class="h-display">KYC, KYB &amp; AML providers by use case</h1>
+    <p>Each ranking covers one job: checking people, checking companies, screening for financial crime or meeting crypto rules. Every list shows how many providers we compared for that job.</p>
+  </header>
+  {%- for g in groups %}
+  <section class="hub__group" aria-labelledby="g-{{ loop.index }}">
+    <h2 id="g-{{ loop.index }}" class="hub__label">{{ g.name }}</h2>
+    <div class="grid-3">
+      {%- for u in g.items %}
+      <a class="card hub-card" href="{{ u.url }}">
+        <b>{{ u.name }}</b>
+        <p>{{ u.def }}</p>
+        {%- if u.top.length %}
+        <span class="hub-card__logos">{% for t in u.top %}{% if t.p and t.p.logo.wordmark %}<img src="{{ t.p.logo.wordmark }}" alt="{{ t.name }}" loading="lazy">{% else %}<span>{{ t.name }}</span>{% endif %}{% endfor %}</span>
+        {%- endif %}
+        <span class="hub-card__foot"><span>{{ u.count }} providers</span><span class="hub-card__go">See ranking →</span></span>
+      </a>
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endfor %}
+  <section class="hub__group" aria-labelledby="more-h">
+    <h2 id="more-h" class="h-section">Looking for a specific provider?</h2>
+    <p class="hub__note">The <a href="/providers/">reviews directory</a> lists every provider we track, A to Z. Country rankings are on the <a href="/regions/">regions page</a>.</p>
+  </section>
+</main>

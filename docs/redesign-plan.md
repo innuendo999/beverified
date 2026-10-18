@@ -6,12 +6,18 @@ Last updated: 2026-10-17. Captures the decisions made in the redesign working se
 
 ## 1. Status
 
+**Update 2026-10-18:** all page designs finished in Claude Design. Code work started in repo `innuendo999/beverified`, branch `redesign`: step 1 done (11ty, shared header/footer from `src/_data/site.json`, output byte-identical to the live site, deploy workflow, content check script reporting 96 issues — editorial notes and screenshot placeholders on provider pages, CLAUDE.md, skills in `.claude/skills/`). Steps 2–4 done (same branch): reports in `reports/` (content-inventory, gsc-missing-urls, rating-conflicts, content-gaps), data in `src/_data` (46 providers, 14 categories, rankings.yml), schema draft in `docs/data-schema.md`. Findings: 34 URLs with ~19.6k impressions in GSC no longer exist on the site (old /guide/, /publications/, /news/, /category/ content and /providers/age-verification/; top: /guide/what-is-a-whitelist/ 8.7k impressions); 6 providers show different ratings across pages and 13 of 14 category pages show card ratings that differ from review scores; 8 categories rank 17 providers with no review page; KYCAID is #1 in 11 of 14 categories; 2 broken links in the directory (hawk-ai, kyc-hub); biggest page by impressions is /providers/aml/ (21k, avg pos 49). Bing: ~1,000 AI citations per day across ~30 pages vs ~1 click/day. Next: design export into `design/`, then step 5 (templates).
+
+**Update 2026-10-18 (later):** Step 5 done on branch `redesign` (not merged). Design export in `design/`. All 65 existing URLs now render in the V3 design from data: homepage (`home.yml`), 46 reviews (`reviews.njk`), 14 category/region pages (`categories.njk`), directory with 14 tracked unreviewed providers, methodology (text layout, copy unchanged), For providers (`/placement-options/` rebuilt from design; paid placement offers removed while advertising policy is undefined). Added sitemap.xml, robots.txt, strict CI checks (content notes, broken links). Pre-publish notes removed from 15 provider pages. Author on all pages = Andrii Klymenko (`authors.yml`); legacy reviewer names kept as `legacy_reviewer`. Not built (no content yet): blog, topic pages, hubs, comparisons, author page, About/Privacy/Terms, 404. Open: methodology still names Elena Marsh, David Okafor, Priya Nathan as evaluators and says analysts run sandbox tests — must match reality before merge; category rank order does not follow scores in several lists (e.g. IDV: KYCAID 4.6 #1, Onfido 4.5 #2, Persona 4.6 #4). Before merging to main: switch repo Settings → Pages → Source to "GitHub Actions".
+
 - **Homepage redesign — done** (Claude Design, light theme, desktop 1440px).
 - **Next in Claude Design (desktop only, to save credits):**
   1. Component sheet + Provider review page (prompt in section 9)
   2. Category ranking page (+ region variant as a small frame) + "X vs Y" comparison layout
   3. Providers directory A–Z + generic text page (Methodology, About, How we make money, Privacy, Terms, author variant)
 - **Then Claude Code:** migrate to Eleventy (11ty) on GitHub Pages (section 5).
+
+**Update 2026-10-18 (night):** rankings now ordered by provider score (ties keep order, unreviewed last; Editor's Choice follows #1; Sponsored Placement awards removed; quick answers and homepage quick picks rewritten to match). Methodology rewritten (v3.0): fictional evaluators, sandbox/ticket testing, sales-quote checks, "42 criteria", score bands and invented version history removed; describes public-evidence method. All rendered copy passed through invisible-characters (clean) and humanizer (374 sentences rewritten, no em/en dashes left; CI now fails on dashes in visible copy).
 
 ## 2. Decisions made by the owner (do not reverse without asking)
 
@@ -390,3 +396,21 @@ Rules: body text ≥16px, tap targets ≥44px, no horizontal page scroll, no con
 - Whether to allow AI training crawlers (GPTBot, Google-Extended).
 - Which score is correct for Onfido (4.5 vs 4.6) and the real per-category rankings.
 - When hands-on testing starts and for which providers first.
+
+## Status, Oct 18, 2026 (branch `redesign`)
+
+Built since step 1: review, category, home, directory, methodology v3.0, For providers, plus `/use-cases/`, `/regions/`, `/authors/andrii-klymenko/`, `/about/`, `/privacy/`, `/terms/` and `/404.html`. Header nav now points to the hubs. Geist is self-hosted; the site makes no third-party requests and sets no cookies (the privacy policy relies on this). Privacy and Terms are a baseline and should be reviewed by a lawyer; no governing-law clause yet because the operator's legal entity and country are not recorded.
+
+Open before release: merge `redesign` into `main`; decide on governing law / operator details; re-check provider `last_verified` dates (July 2026) against the 90-day promise; restore or redirect old GSC URLs (reports/gsc-missing-urls.csv).
+
+## Status, Oct 18, 2026 (later): old articles restored
+
+26 articles from the old WordPress site (7 guides, 7 research, 12 news) are back at their original URLs, refreshed against primary sources as of October 2026, with internal links to reviews, rankings and sibling articles. /blog/ and the old /category/guide|news|publications/ archives exist; /contact-us/ and /author/beverified/ are restored. Reviews show "Related reading", rankings show "Guides and news". Spec: docs/article-spec.md; validator: scripts/checks/articles.mjs.
+
+Still missing from the GSC list: /providers/age-verification/ (old category: needs an age-verification ranking), /category/providers/ (could point to /providers/ or /use-cases/), /tag/ofac/, and the three one-impression stray URLs.
+
+## Status, Oct 18, 2026 (later): facts re-checked
+
+All 46 provider records re-checked against primary sources (docs/verification-spec.md): numbered sources, evidence labels, certification status, pricing verified Oct 2026, last_verified 2026-10-18, migration notes removed. Ranking cards, category quick answers and articles aligned with the corrected records. Reports per provider in reports/verification/.
+
+Open editorial decisions (scores unchanged until the owner decides): AMLRanger (Ondato's free assistant), Vespia (sold only via Veriff), FullCircl (now nCino Identity Solutions), Onfido (now Entrust IDV), NICE Actimize (being sold), RelyComply (cyber incident 16 Sep 2026; core claims unconfirmed), HorusCheck (nothing verifiable), IDMERIT (no published price), Hawk AI (network claim unconfirmed), SEON (now has document IDV), Shufti Pro (possible upward), Jumio awards "Most Popular"/"Most Widely Deployed" unsupported.

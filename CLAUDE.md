@@ -6,24 +6,51 @@ Full plan, decisions and prompts: `docs/redesign-plan.md`. Read only the section
 
 ## Where things live
 
+All pages are generated from templates + data. There is no hand-written page HTML left.
+
 | To change | Edit |
 |---|---|
-| Header menu, footer links, footer disclosure text | `src/_data/site.json` |
-| Header / footer markup | `src/_includes/header.njk`, `src/_includes/footer.njk` |
-| A page's footer date or meta line | that page's front matter (`updated`, `footerMeta`) |
-| Styles / scripts | `src/assets/css/style.css`, `src/assets/js/site.js` |
-| Provider review pages | `src/providers/<slug>/index.html` |
-| Category and region ranking pages | `src/providers/<category>/index.html` (aml, aml/banks, kyb, e-kyc, identity-verification, crypto, liveness-detection, cheap-kyc, travel-rule, brazil, canada, india, mexico, peru) |
-| Reviews directory | `src/providers/index.html` |
-| Methodology, Placement options | `src/methodology/`, `src/placement-options/` (own header/footer, not shared) |
+| Header menu, footer columns, disclosure text, rubric weights, evidence labels | `src/_data/site.json` → `v3` |
+| Header / footer / page shell | `src/_includes/v3/header.njk`, `footer.njk`, `src/_layouts/v3.njk` |
+| Styles (tokens + components, incl. mobile) | `src/assets/css/v3.css` |
+| One provider (score, pricing, facts, pros/cons, FAQ, link, logo) | `src/_data/providers/<slug>.yml` → rendered by `src/reviews.njk` at `/providers/<slug>/` |
+| Ranked lists per category / region (order = rank, award, card copy) | `src/_data/rankings.yml` |
+| Category / region page copy (quick answer, explainer, FAQ, related) | `src/_data/categories/<slug>.yml` → `src/categories.njk` |
+| Homepage copy, quick picks, use-case cards, regions map | `src/_data/home.yml` → `src/index.njk` |
+| Reviews directory (`/providers/`), unreviewed tracked providers | `src/directory.njk`, `src/_data/tracked.yml` |
+| Authors (byline, author box) | `src/_data/authors.yml` |
+| Methodology page copy | `src/methodology/index.njk` (layout `text.njk`) |
+| About, Privacy, Terms | `src/about/`, `src/privacy/`, `src/terms/` (layout `text.njk`; legal text is a baseline, have a lawyer review it) |
+| Use cases hub `/use-cases/`, Regions hub `/regions/` | `src/hubs/*.njk`; cards from `home.yml` (`group`, `area`) + `rankings.yml` |
+| Author pages `/authors/<slug>/` | `src/authors/authors.njk`; one page per `authors.yml` entry with `url`; review list = providers with that `author` |
+| 404 | `src/404.njk` (popular reviews = top 4 by score) |
+| Articles (guides, news, research) at old URLs `/guide/`, `/news/`, `/publications/` | `src/<section>/<slug>.md`, spec `docs/article-spec.md`, validate `node scripts/checks/articles.mjs`; layout `src/_layouts/article.njk`. Related posts, "Related reading" on reviews and "Guides and news" on rankings come from front matter `provider_slugs`, `ranking_keys`, `topics` |
+| Blog index `/blog/` and archives `/category/<section>/` | `src/blog.njk` + `src/_data/blogArchives.js` |
+| Legacy URLs `/author/beverified/` (refresh to author page), `/contact-us/` | `src/legacy/` |
+| Font | self-hosted `src/assets/fonts/Geist-Variable.woff2`. Keep the site free of third-party requests, cookies and analytics: the privacy policy promises it |
+| Favicon, touch icons, manifest, default og:image (1200x630) | `src/assets/brand/`, `src/favicon.ico`; a page can set `ogImage` in front matter |
+| `/llms.txt` | `src/llms.njk`, generated from the same data (rankings, providers, articles) |
+| For providers page | `src/placement-options/index.njk` |
+| Field definitions | `docs/data-schema.md` |
+| Fact re-check of a provider (every 90 days) | `docs/verification-spec.md`, validate `node scripts/checks/provider.mjs <slug>`, report in `reports/verification/<slug>.md`. `last_verified` = fact re-check, `updated` = content edit |
+| Design reference (Claude Design export) | `design/` (open with a browser; not deployed) |
+| Search Console / Bing exports | `data/gsc/`, `data/bing/` |
+| Generated reports | `reports/` |
 
-Planned (not built yet): `src/_data/rankings.yml`, `comparisons.yml`, `entities.yml`, provider data as `src/providers/<slug>.md` front matter, layouts in `src/_layouts/`. See plan sections 5–9.
+In shared includes use `allProviders` / `allCategories`, not `providers` / `categories`: article front matter shadows those names.
+
+Templates hide any block whose data is empty, so filling a field in YAML is enough to make a section appear. Computed values (rank positions, alternatives, nav pills, JSON-LD) live in the `*.11tydata.js` file next to each template.
+
+Planned, not built yet: topic pages, comparison pages (`comparisons.yml`), `entities.yml`.
 
 ## Commands
 
 - `npm run build` — build into `_site/`
 - `npm run serve` — local preview
-- `npm run check` — content checks on `_site/` (report only for now; CI will switch to `--strict`)
+- `npm run check` — content + internal link checks on `_site/` (report only for now; CI will switch to `--strict`)
+- `npm run check:html` — HTML audit of `_site/`: authoring footprints, landmarks, headings, ids, ARIA references, alt text, link names
+- `npm run gaps` — regenerate `reports/content-gaps.csv`
+- `npm run inventory` / `npm run extract` — one-off migration scripts (Python: bs4, PyYAML). `extract` overwrites `src/_data`; do not re-run after the data has been edited by hand.
 
 ## Rules
 

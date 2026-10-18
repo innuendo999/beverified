@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Top 5 Identity Verification Providers in 2026 | BeVerified</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+html, body { margin:0; background:#F7F6F3; color:#14141A; scroll-behavior:smooth; }
+body { font-family:'Geist', ui-sans-serif, system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
+a { color:#5B2BD9; text-decoration:none; }
+a:hover { color:#4A1FBF; text-decoration:underline; text-underline-offset:3px; }
+button { font-family:inherit; }
+:focus-visible { outline:2px solid #5B2BD9; outline-offset:3px; border-radius:6px; }
+</style>
+<script src="./bv-data.js"></script>
+</helmet>
+<div style="background:#F7F6F3; color:#14141A; min-height:100vh; font-family:'Geist', ui-sans-serif, system-ui, sans-serif;">
+
+<header data-component="header" style="position:sticky; top:0; z-index:100; background:rgba(247,246,243,0.92); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:1px solid #E6E4DF;">
+  <div style="max-width:1200px; margin:0 auto; padding:0 32px; height:60px; display:flex; align-items:center; gap:40px;">
+    <a href="Homepage V3 - BeVerified (Desktop).dc.html" aria-label="BeVerified home" style="display:flex; align-items:center; gap:9px; text-decoration:none; flex-shrink:0;">
+      <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="display:block;"><rect x="3" y="12" width="4.5" height="9" rx="1" fill="#14141A"></rect><rect x="9.75" y="8" width="4.5" height="13" rx="1" fill="#14141A"></rect><rect x="16.5" y="3" width="4.5" height="18" rx="1" fill="#5B2BD9"></rect></svg>
+      <span style="font-weight:600; font-size:17px; letter-spacing:-0.03em; color:#14141A;">BeVerified</span>
+    </a>
+    <nav aria-label="Primary" style="display:flex; gap:28px; align-items:center; flex:1;">
+      <a href="Homepage V3 - BeVerified (Desktop).dc.html#use-cases" style="font-size:15px; color:#14141A; font-weight:500; white-space:nowrap;">Use cases</a>
+      <a href="Homepage V3 - BeVerified (Desktop).dc.html#regions" style="font-size:15px; color:#4A4A55; white-space:nowrap;" style-hover="color:#14141A; text-decoration:none;">Regions</a>
+      <a href="Reviews Directory - BeVerified (Desktop).dc.html" style="font-size:15px; color:#4A4A55; white-space:nowrap;" style-hover="color:#14141A; text-decoration:none;">Reviews</a>
+    </nav>
+    <a href="Homepage V3 - BeVerified (Desktop).dc.html#for-providers" style="font-size:15px; color:#14141A; white-space:nowrap;">For providers</a>
+  </div>
+</header>
+
+<sc-if value="{{ showFields }}" hint-placeholder-val="{{ true }}">
+  <div style="max-width:1200px; margin:16px auto 0; padding:0 32px;">
+    <p style="margin:0; font-size:13px; line-height:1.45; font-weight:500; color:#6B4A00; background:#FFF3D1; border:1px dashed #D9A93A; padding:8px 12px; border-radius:8px;">Template · <strong>sample data</strong>: provider order and scores are a sample list. Values tagged <span style="font-family:'Geist Mono', monospace;">{field}</span> are schema fields with neutral sample values.</p>
+  </div>
+</sc-if>
+
+<div style="max-width:1200px; margin:0 auto; padding:0 32px;">
+  <nav data-component="breadcrumb" aria-label="Breadcrumb" style="padding:20px 0 0;">
+    <ol style="list-style:none; margin:0; padding:0; display:flex; gap:8px; font-size:14px; color:#4A4A55;">
+      <li><a href="Homepage V3 - BeVerified (Desktop).dc.html" style="color:#4A4A55;">Home</a></li><li aria-hidden="true" style="color:#9C988F;">›</li>
+      <li><a href="Homepage V3 - BeVerified (Desktop).dc.html#use-cases" style="color:#4A4A55;">Use cases</a></li><li aria-hidden="true" style="color:#9C988F;">›</li>
+      <li aria-current="page" style="color:#14141A;">Identity Verification</li>
+    </ol>
+  </nav>
+
+  <section aria-labelledby="h1" style="padding:28px 0 0; max-width:820px;">
+    <h1 id="h1" style="margin:0 0 20px; font-size:52px; line-height:1.03; letter-spacing:-0.045em; font-weight:600; text-wrap:balance;">Top {{ count }} Identity Verification Providers in 2026</h1>
+    <code style="display:block; margin:-12px 0 16px; font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00;">{{ fl.count }}</code>
+    <p style="margin:0 0 22px; font-size:19px; line-height:1.6; color:#14141A; text-wrap:pretty;"><strong style="font-weight:600;">Sumsub</strong> is our top identity verification pick for most teams, because one platform covers document checks, liveness and AML screening. <strong style="font-weight:600;">Onfido (Entrust)</strong> wins on document-and-biometric depth for enterprise onboarding, and <strong style="font-weight:600;">KYCAID</strong> on configurable workflows at a lower entry price. We compared {{ count }} providers on compliance, coverage, pricing transparency, integration, support and track record.</p>
+    <div style="display:flex; flex-wrap:wrap; align-items:center; gap:16px; font-size:14px; color:#4A4A55;">
+      <div data-component="author-byline" style="display:flex; align-items:center; gap:10px;">
+        <img src="authors/andrii-klymenko.png" alt="" style="width:32px; height:32px; border-radius:999px; object-fit:cover; object-position:40% 25%; border:1px solid #E0DDD6; display:block;">
+        <span>By <a href="{{ reviewerHref }}" style="font-weight:500;">{{ reviewerName }}</a></span>
+      </div>
+      <span aria-hidden="true" style="color:#9C988F;">·</span>
+      <span data-component="last-verified" style="display:inline-flex; align-items:center; gap:6px;"><span aria-hidden="true" style="color:#1B7A4B;">✓</span>Last verified <time datetime="2026-07-24" style="color:#14141A; font-variant-numeric:tabular-nums;">{{ lastVerified }}</time><code style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00;">{{ fl.updated }}</code></span>
+      <sc-if value="{{ anyHands }}" hint-placeholder-val="{{ false }}">
+        <span data-component="badge" style="display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:500; color:#FFFFFF; background:#14141A; padding:3px 10px; border-radius:999px;"><span aria-hidden="true">▲</span>Manually tested</span>
+      </sc-if>
+    </div>
+  </section>
+
+  <nav data-component="jump-nav" aria-label="Ranked providers" style="margin:32px 0 0; display:flex; gap:8px; flex-wrap:wrap;">
+    <sc-for list="{{ ranked }}" as="p" hint-placeholder-count="5">
+      <a href="#p-{{ p.id }}" style="display:flex; align-items:center; gap:10px; background:#FFFFFF; border:1px solid #E0DDD6; border-radius:12px; padding:8px 14px 8px 10px; text-decoration:none; color:#14141A;" style-hover="border-color:#9C988F; text-decoration:none; color:#14141A;">
+        <span style="font-size:14px; color:#8A8790; font-variant-numeric:tabular-nums;">{{ p.rankText }}</span>
+        <img loading="lazy" src="{{ p.logo }}" alt="" style="height:18px; width:auto; max-width:96px; object-fit:contain; display:block;">
+        <span style="position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0);">{{ p.name }}</span>
+      </a>
+    </sc-for>
+  </nav>
+
+  <section aria-labelledby="table-cap" style="padding:28px 0 0;">
+    <div data-component="ranking-table" style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px; overflow:hidden;">
+      <table style="width:100%; border-collapse:collapse; font-size:15px;">
+        <caption id="table-cap" style="caption-side:top; text-align:left; padding:16px 22px 8px; font-size:14px; color:#4A4A55;">Identity verification providers ranked by BeVerified score, with starting price and the month it was verified.</caption>
+        <thead><tr style="text-align:left; font-size:13px; color:#6A6A74;"><th scope="col" style="font-weight:500; padding:10px 22px; width:56px;">Rank</th><th scope="col" style="font-weight:500; padding:10px 12px;">Provider</th><th scope="col" style="font-weight:500; padding:10px 12px;">Score</th><th scope="col" style="font-weight:500; padding:10px 12px;">Starting price</th><th scope="col" style="font-weight:500; padding:10px 12px;">Best for</th><th scope="col" style="padding:10px 22px;"><span style="position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0);">Review</span></th></tr></thead>
+        <tbody>
+          <sc-for list="{{ ranked }}" as="p" hint-placeholder-count="5">
+            <tr style="border-top:1px solid #EEECE7;">
+              <td style="padding:14px 22px; font-variant-numeric:tabular-nums; color:#6A6A74;">{{ p.rank }}</td>
+              <th scope="row" style="padding:14px 12px; text-align:left; font-weight:500;"><span style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;"><img loading="lazy" src="{{ p.logo }}" alt="" style="height:18px; width:auto; max-width:90px; object-fit:contain; display:block;">{{ p.name }}<sc-if value="{{ p.editors }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex; align-items:center; gap:5px; font-size:12px; font-weight:500; color:#FFFFFF; background:#14141A; padding:2px 8px; border-radius:999px;"><span aria-hidden="true" style="width:5px; height:5px; background:#FFFFFF; transform:rotate(45deg);"></span>Editor’s choice</span></sc-if></span></th>
+              <td style="padding:14px 12px;"><span role="img" aria-label="{{ p.aria }}" style="font-weight:600; font-variant-numeric:tabular-nums;">{{ p.scoreText }}</span> <span aria-hidden="true" style="color:#6A6A74; font-size:14px;">/ 5</span></td>
+              <td style="padding:14px 12px;"><div style="font-variant-numeric:tabular-nums;">{{ p.priceFrom }}</div><div style="font-size:13px; color:#6A6A74;">verified {{ p.verified }}</div></td>
+              <td style="padding:14px 12px; color:#4A4A55;">{{ p.bestFor }}</td>
+              <td style="padding:14px 22px; text-align:right;"><a href="{{ p.href }}" style="font-size:14px; font-weight:500; white-space:nowrap;">Read review →</a></td>
+            </tr>
+          </sc-for>
+        </tbody>
+      </table>
+      <div style="padding:10px 22px; border-top:1px solid #EEECE7; font-size:12px; color:#8A5A00; font-family:'Geist Mono', monospace;">{{ fl.table }}</div>
+    </div>
+  </section>
+
+  <p data-component="disclosure-line" style="margin:36px 0 16px; font-size:15px; line-height:1.5; color:#4A4A55; max-width:760px;">{{ disclosure }} <a href="Methodology Page - BeVerified (Desktop).dc.html#disclosure">How we make money →</a></p>
+
+  <ol style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:16px;">
+    <sc-for list="{{ ranked }}" as="p" hint-placeholder-count="5">
+      <li id="p-{{ p.id }}" data-component="ranked-card" style="position:relative; background:#FFFFFF; border:1px solid #E6E4DF; border-radius:20px; padding:28px; scroll-margin-top:80px;">
+        <sc-if value="{{ p.editors }}" hint-placeholder-val="{{ false }}"><span aria-hidden="true" style="position:absolute; inset:-1px; border:1.5px solid #5B2BD9; border-radius:20px; pointer-events:none;"></span></sc-if>
+        <div style="display:grid; grid-template-columns:72px minmax(0,1fr) auto; gap:24px; align-items:start;">
+          <span aria-hidden="true" style="font-size:56px; font-weight:600; letter-spacing:-0.05em; line-height:0.9; font-variant-numeric:tabular-nums; color:#8A8790;">{{ p.rankText }}</span>
+          <div style="min-width:0;">
+            <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px; flex-wrap:wrap;">
+              <sc-if value="{{ p.editors }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:500; color:#FFFFFF; background:#14141A; padding:3px 10px; border-radius:999px;"><span aria-hidden="true" style="width:6px; height:6px; background:#FFFFFF; transform:rotate(45deg);"></span>{{ p.award }}</span></sc-if>
+              <sc-if value="{{ p.notEditors }}" hint-placeholder-val="{{ true }}"><span style="display:inline-flex; font-size:13px; font-weight:500; border:1px solid #D6D3CC; padding:2px 10px; border-radius:999px;">{{ p.award }}</span></sc-if>
+              <code style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00;">{{ fl.award }}</code>
+            </div>
+            <div style="display:flex; align-items:center; gap:14px; margin-bottom:8px;"><img loading="lazy" src="{{ p.logo }}" alt="" style="height:28px; width:auto; max-width:150px; object-fit:contain; display:block;"><h2 style="margin:0; font-size:24px; font-weight:600; letter-spacing:-0.02em;">{{ p.name }}</h2></div>
+            <p style="margin:0 0 14px; font-size:16px; line-height:1.5; color:#4A4A55; max-width:640px; text-wrap:pretty;">{{ p.positioning }}</p>
+            <div style="display:flex; flex-wrap:wrap; gap:6px 18px; font-size:14px; color:#4A4A55; margin-bottom:18px;"><span><span style="color:#6A6A74;">Coverage</span> {{ p.coverage }}</span><span><span style="color:#6A6A74;">Fits</span> {{ p.fit }}</span><span><span style="color:#6A6A74;">Pricing</span> {{ p.model }}</span><code style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00;">{{ fl.meta }}</code></div>
+          </div>
+          <div data-component="rating" role="img" aria-label="{{ p.aria }}" style="min-width:150px;">
+            <div aria-hidden="true" style="display:flex; align-items:baseline; gap:4px; justify-content:flex-end;"><span style="font-size:44px; font-weight:600; letter-spacing:-0.045em; line-height:1; font-variant-numeric:tabular-nums;">{{ p.scoreText }}</span><span style="font-size:15px; color:#6A6A74;">/ 5</span></div>
+            <div aria-hidden="true" style="display:flex; gap:3px; margin-top:10px;"><sc-for list="{{ p.segs }}" as="sg" hint-placeholder-count="5"><span style="flex:1; height:5px; border-radius:2px; background:#E6E4DF; overflow:hidden;"><span style="display:block; height:100%; width:{{ sg.w }}; background:#14141A;"></span></span></sc-for></div>
+          </div>
+        </div>
+        <div style="margin-left:96px;">
+          <div data-component="pros-cons" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:12px; margin-bottom:18px;">
+            <div style="border:1px solid #EEECE7; border-radius:14px; padding:12px 16px;"><div style="font-size:14px; font-weight:600; margin-bottom:2px;">+ Pros</div><sc-for list="{{ p.pros }}" as="x" hint-placeholder-count="3"><div style="padding:7px 0; border-top:1px solid #EEECE7; font-size:14px; line-height:1.45;">{{ x }}</div></sc-for></div>
+            <div style="border:1px solid #EEECE7; border-radius:14px; padding:12px 16px;"><div style="font-size:14px; font-weight:600; margin-bottom:2px;">− Cons</div><sc-for list="{{ p.cons }}" as="x" hint-placeholder-count="3"><div style="padding:7px 0; border-top:1px solid #EEECE7; font-size:14px; line-height:1.45;">{{ x }}</div></sc-for></div>
+          </div>
+          <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:14px; padding-top:16px; border-top:1px solid #EEECE7;">
+            <div style="display:flex; flex-wrap:wrap; align-items:center; gap:10px; font-size:14px;">
+              <span><span style="color:#6A6A74;">From</span> <strong style="font-weight:600; font-variant-numeric:tabular-nums;">{{ p.priceFrom }}</strong></span>
+              <span style="color:#6A6A74;">verified {{ p.verified }}</span>
+              <span data-component="evidence-tag" style="display:inline-flex; align-items:center; gap:6px; font-size:12px; border:1px solid #D6D3CC; padding:1px 8px; border-radius:999px; white-space:nowrap;"><span aria-hidden="true">{{ p.priceEv.icon }}</span>{{ p.priceEv.label }}</span>
+              <code style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00;">{{ fl.price }}</code>
+            </div>
+            <div data-component="cta-row" style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+              <sc-if value="{{ p.hasVs }}" hint-placeholder-val="{{ false }}"><a href="{{ p.vsHref }}" style="font-size:14px; margin-right:6px;">Compare: {{ p.vsLabel }} →</a></sc-if>
+              <a href="{{ p.href }}" style="font-size:14px; font-weight:500; color:#14141A; background:#FFFFFF; border:1px solid #D6D3CC; padding:9px 16px; border-radius:999px; text-decoration:none;" style-hover="border-color:#9C988F; text-decoration:none; color:#14141A;">Read full review</a>
+              <a href="#" rel="sponsored nofollow noopener" target="_blank" style="font-size:14px; font-weight:500; color:#FFFFFF; background:#14141A; padding:10px 18px; border-radius:999px; text-decoration:none;" style-hover="background:#2A2A33; color:#FFFFFF; text-decoration:none;">Visit site ↗</a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </sc-for>
+  </ol>
+
+  <section id="how" aria-labelledby="how-h" style="padding:88px 0 0;">
+    <h2 data-component="section-header" id="how-h" style="margin:0 0 20px; font-size:32px; line-height:1.1; letter-spacing:-0.03em; font-weight:600;">How we ranked this category</h2>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px; padding:26px; display:grid; grid-template-columns:minmax(0,1.5fr) minmax(0,1fr); gap:40px;">
+      <div>
+        <sc-for list="{{ rubricRows }}" as="r" hint-placeholder-count="6">
+          <div style="display:grid; grid-template-columns:minmax(150px,210px) minmax(0,1fr) 40px; gap:14px; align-items:center; margin-bottom:12px; font-size:15px;"><span>{{ r.name }}</span><span style="height:6px; background:#EEECE7; border-radius:999px; overflow:hidden;"><span style="display:block; height:100%; width:{{ r.pct }}; background:#14141A;"></span></span><span style="text-align:right; color:#4A4A55; font-variant-numeric:tabular-nums;">{{ r.weight }}%</span></div>
+        </sc-for>
+        <a href="Methodology Page - BeVerified (Desktop).dc.html" style="font-size:14px; font-weight:500;">Full methodology {{ methodologyVersion }} →</a>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:10px; padding-left:32px; border-left:1px solid #EEECE7;">
+        <div style="font-size:14px; color:#6A6A74;">Evidence levels we rely on</div>
+        <sc-for list="{{ evKey }}" as="e" hint-placeholder-count="4"><div style="display:flex; gap:10px; align-items:center; font-size:14px;"><span style="display:inline-flex; align-items:center; gap:6px; font-size:12px; border:1px solid #D6D3CC; padding:1px 8px; border-radius:999px; white-space:nowrap;"><span aria-hidden="true">{{ e.icon }}</span>{{ e.label }}</span><span style="color:#4A4A55;">{{ e.desc }}</span></div></sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="chk-h" style="padding:88px 0 0;">
+    <h2 id="chk-h" style="margin:0 0 20px; font-size:32px; line-height:1.1; letter-spacing:-0.03em; font-weight:600;">What to look for in an identity verification provider</h2>
+    <ol data-component="checklist-item" style="list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(auto-fit, minmax(320px,1fr)); gap:12px;">
+      <sc-for list="{{ checklist }}" as="c" hint-placeholder-count="6">
+        <li style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:16px; padding:18px 20px; display:grid; grid-template-columns:28px minmax(0,1fr); gap:12px;"><span style="font-size:15px; color:#8A8790; font-variant-numeric:tabular-nums;">{{ c.n }}</span><span><span style="display:block; font-size:16px; font-weight:600; margin-bottom:4px;">{{ c.t }}</span><span style="font-size:14px; line-height:1.5; color:#4A4A55;">{{ c.d }}</span></span></li>
+      </sc-for>
+    </ol>
+  </section>
+
+  <section aria-labelledby="po-h" style="padding:88px 0 0;">
+    <h2 id="po-h" style="margin:0 0 20px; font-size:32px; line-height:1.1; letter-spacing:-0.03em; font-weight:600;">Pricing overview</h2>
+    <div data-component="pricing-overview-row" style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px;">
+      <sc-for list="{{ ranked }}" as="p" hint-placeholder-count="5">
+        <div style="display:flex; flex-wrap:wrap; gap:6px 20px; align-items:center; padding:13px 22px; border-top:1px solid #EEECE7; font-size:15px;">
+          <span style="flex:0 0 170px; font-weight:500;">{{ p.name }}</span>
+          <span style="flex:0 0 140px; color:#4A4A55;">{{ p.model }}</span>
+          <span style="flex:1 1 140px; font-variant-numeric:tabular-nums; font-weight:600;">{{ p.priceFrom }}</span>
+          <span style="display:inline-flex; align-items:center; gap:6px; font-size:12px; border:1px solid #D6D3CC; padding:1px 8px; border-radius:999px; white-space:nowrap;"><span aria-hidden="true">{{ p.priceEv.icon }}</span>{{ p.priceEv.label }}</span>
+          <span style="font-size:14px; color:#6A6A74; white-space:nowrap;">verified {{ p.verified }}</span>
+        </div>
+      </sc-for>
+      <div style="padding:10px 22px; border-top:1px solid #EEECE7; font-size:12px; color:#8A5A00; font-family:'Geist Mono', monospace;">{{ fl.pricing }}</div>
+    </div>
+  </section>
+
+  <section aria-labelledby="ex-h" style="padding:88px 0 0; max-width:820px;">
+    <h2 id="ex-h" style="margin:0 0 16px; font-size:32px; line-height:1.1; letter-spacing:-0.03em; font-weight:600;">What identity verification covers</h2>
+    <p style="margin:0 0 14px; font-size:16px; line-height:1.65; color:#4A4A55;">Identity verification (IDV) confirms that a person is real and is who they claim to be, usually by checking an identity document and matching it to a live selfie. It is the first step of KYC onboarding.</p>
+    <p style="margin:0; font-size:16px; line-height:1.65; color:#4A4A55;"><a href="Category Page - Best eKYC Solution Providers (Desktop).dc.html">eKYC</a> is the wider remote onboarding process that IDV sits inside — it adds data checks, watchlist screening and record-keeping. <a href="Category Page - Liveness Detection Providers (Desktop).dc.html">Liveness detection</a> is one component of IDV: proving the selfie comes from a present person, not a photo, mask or deepfake.</p>
+  </section>
+
+  <section aria-labelledby="reg-h" style="padding:88px 0 0;">
+    <h2 id="reg-h" style="margin:0 0 20px; font-size:32px; line-height:1.1; letter-spacing:-0.03em; font-weight:600;">Regulatory context</h2>
+    <div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:18px;">
+      <sc-for list="{{ regs }}" as="r" hint-placeholder-count="5">
+        <div style="display:flex; flex-wrap:wrap; gap:6px 20px; padding:14px 22px; border-top:1px solid #EEECE7;"><span style="flex:0 0 230px; font-size:15px; font-weight:600;">{{ r.name }}</span><span style="flex:1 1 300px; font-size:15px; line-height:1.5; color:#4A4A55;">{{ r.what }} <a data-component="source-ref" href="#src-{{ r.src }}" style="font-size:12px; vertical-align:super;">[{{ r.src }}]</a></span></div>
+      </sc-for>
+    </div>
+  </section>
+
+  <sc-if value="{{ hasComparisons }}" hint-placeholder-val="{{ true }}">
+    <section aria-labelledby="cmp-h" style="padding:88px 0 0;">
+      <h2 id="cmp-h" style="margin:0 0 16px; font-size:32px; line-height:1.1; letter-spacing:-0.03em; font-weight:600;">Popular comparisons</h2>
+      <div data-component="comparison-pills" style="display:flex; flex-wrap:wrap; gap:8px;">
+        <sc-for list="{{ comparisons }}" as="c" hint-placeholder-count="3"><a href="{{ c.href }}" style="font-size:15px; color:#14141A; background:#FFFFFF; border:1px solid #D6D3CC; padding:9px 16px; border-radius:999px; text-decoration:none;" style-hover="border-color:#9C988F; text-decoration:none; color:#14141A;">{{ c.label }} →</a></sc-for>
+      </div>
+      <code style="display:block; margin-top:10px; font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00;">{{ fl.comparisons }}</code>
+    </section>
+  </sc-if>
+
+  <section id="faq" aria-labelledby="faq-h" style="padding:88px 0 0; max-width:880px;">
+    <h2 id="faq-h" style="margin:0 0 12px; font-size:32px; line-height:1.1; letter-spacing:-0.03em; font-weight:600;">FAQ</h2>
+    <div data-component="faq" style="border-top:1px solid #D6D3CC;">
+      <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="6">
+        <div style="border-bottom:1px solid #D6D3CC;">
+          <h3 style="margin:0;"><button type="button" onClick="{{ f.onToggle }}" aria-expanded="{{ f.open }}" style="width:100%; display:flex; justify-content:space-between; align-items:center; gap:24px; background:transparent; border:none; color:#14141A; text-align:left; padding:18px 0; cursor:pointer; font-size:17px; font-weight:500;"><span>{{ f.q }}</span><span aria-hidden="true" style="font-size:20px; color:#6A6A74; font-weight:400;">{{ f.icon }}</span></button></h3>
+          <sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}"><p style="margin:0; padding:0 40px 20px 0; font-size:16px; line-height:1.6; color:#4A4A55;">{{ f.a }}</p></sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section aria-labelledby="rel-h" style="padding:88px 0 0;">
+    <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:20px;"><h2 id="rel-h" style="margin:0; font-size:32px; line-height:1.1; letter-spacing:-0.03em; font-weight:600;">Related categories</h2><a href="Reviews Directory - BeVerified (Desktop).dc.html" style="font-size:15px; font-weight:500;">Browse all providers →</a></div>
+    <div data-component="related-category-card" style="display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:12px;">
+      <sc-for list="{{ related }}" as="r" hint-placeholder-count="4">
+        <a href="{{ r.href }}" style="display:flex; flex-direction:column; background:#FFFFFF; border:1px solid #E6E4DF; border-radius:16px; padding:18px; text-decoration:none; color:#14141A;" style-hover="border-color:#9C988F; text-decoration:none; color:#14141A;"><span style="font-size:17px; font-weight:600; margin-bottom:6px;">{{ r.name }}</span><span style="font-size:14px; line-height:1.45; color:#4A4A55; margin-bottom:14px;">{{ r.def }}</span><span style="margin-top:auto; font-size:14px; font-weight:500; color:#5B2BD9;">See all {{ r.count }} providers →</span></a>
+      </sc-for>
+    </div>
+  </section>
+
+  <section id="sources" aria-labelledby="src-h" style="padding:88px 0 96px;">
+    <h2 id="src-h" style="margin:0 0 16px; font-size:32px; line-height:1.1; letter-spacing:-0.03em; font-weight:600;">Sources</h2>
+    <ol data-component="sources-list" style="list-style:none; margin:0; padding:0; border-top:1px solid #D6D3CC;">
+      <sc-for list="{{ sources }}" as="s" hint-placeholder-count="5">
+        <li id="src-{{ s.n }}" style="display:flex; flex-wrap:wrap; gap:4px 12px; padding:12px 0; border-bottom:1px solid #E6E4DF; font-size:15px; scroll-margin-top:80px;"><span style="flex:0 0 32px; color:#6A6A74;">[{{ s.n }}]</span><span style="flex:1 1 400px;">{{ s.title }} <span style="color:#4A4A55;">— {{ s.publisher }}</span></span><span style="font-size:14px; color:#4A4A55;">Accessed {{ s.accessed }}</span></li>
+      </sc-for>
+    </ol>
+  </section>
+</div>
+
+<footer data-component="footer" style="background:#EFEDE8; border-top:1px solid #E0DDD6;">
+  <div style="max-width:1200px; margin:0 auto; padding:48px 32px 32px; display:grid; grid-template-columns:minmax(0,2fr) minmax(0,1fr); gap:32px; font-size:14px; line-height:1.6; color:#4A4A55;">
+    <p style="margin:0;"><strong style="color:#14141A; font-weight:600;">Disclosure.</strong> {{ disclosure }} Scores are editorial opinions based on the published methodology, not legal advice.</p>
+    <div style="text-align:right;">© 2026 BeVerified.org · <a href="Methodology Page - BeVerified (Desktop).dc.html">Methodology</a> · <a href="#privacy">Privacy</a> · <a href="#terms">Terms</a></div>
+  </div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;handsOn&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;none&quot;,&quot;some&quot;],&quot;default&quot;:&quot;none&quot;,&quot;tsType&quot;:&quot;'none' | 'some'&quot;,&quot;section&quot;:&quot;States&quot;},&quot;showFields&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;States&quot;}}">
+class Component extends DCLogic {
+  state = { faq: 0 };
+  componentDidMount() { if (!window.BV) { this._on = () => this.forceUpdate(); window.addEventListener('bv-data-ready', this._on); } }
+  componentWillUnmount() { if (this._on) window.removeEventListener('bv-data-ready', this._on); }
+  renderVals() {
+    const D = window.BV;
+    if (!D) return {};
+    const st = this.state, m = D.meta, show = this.props.showFields !== false, F = (s) => (show ? s : '');
+    const EV = { ind: { icon: '◆', label: 'Independent', desc: 'Lab, register or benchmark' }, ven: { icon: '◇', label: 'Vendor-stated', desc: 'Vendor website or docs' }, usr: { icon: '●', label: 'User-reported', desc: 'G2, Capterra, Gartner Peer Insights' }, hand: { icon: '▲', label: 'Hands-on', desc: 'Our own test' } };
+    const segs = (s) => [0, 1, 2, 3, 4].map((i) => ({ w: Math.max(0, Math.min(1, s - i)) * 100 + '%' }));
+    const SAMPLE = [
+      ['sumsub', "Editor's choice", 'One platform for document checks, liveness and AML screening.', 'Mid-market to enterprise', '$0.00 / check', 'Per check', ['Document, selfie and AML in one flow', 'No-code workflow builder', 'Published entry pricing'], ['Per-check cost adds up at volume', 'Advanced fraud tools cost extra', 'Limited on-premise option']],
+      ['onfido', 'Best for enterprise', 'Document and biometric verification with mature liveness detection.', 'Enterprise', 'Sales quote only', 'Sales quote', ['Mature liveness detection', 'Broad document-type support', 'Well-documented SDKs'], ['AML screening is a separate module', 'No public rate card', 'Integration can take weeks']],
+      ['kycaid', 'Best for configurable workflows', 'Configurable KYC and AML workflows with a human review fallback for documents automation rejects.', 'Startups to mid-market', '$0.00 / mo', 'Monthly plan', ['Flexible workflow builder', 'Human review fallback', 'White-label client portal'], ['Smaller watchlist database', 'Fewer native integrations', 'Newer mobile SDK']],
+      ['trulioo', 'Best budget option', 'One network for person and business verification across many registries.', 'Mid-market', '$0.00 / check', 'Per check', ['Wide document coverage', 'Person and business checks in one network', 'Quick self-serve setup'], ['Dated interface', 'Watchlist screening is an add-on', 'Support times vary by plan']],
+      ['jumio', 'Best for AML add-on', 'Enterprise identity verification with AML screening in the same contract.', 'Enterprise', 'Sales quote only', 'Sales quote', ['High brand recognition', 'Mature fraud-detection models', 'Regional data-centre coverage'], ['Higher cost than budget options', 'Annual commitments common', 'Customisation needs dev time']],
+    ];
+    const ranked = SAMPLE.map(([id, award, positioning, fit, priceFrom, model, pros, cons], i) => {
+      const p = D.editorialTop.find((x) => x.id === id);
+      const sales = /quote/i.test(priceFrom);
+      return { id, rank: i + 1, rankText: String(i + 1).padStart(2, '0'), name: p.name, logo: p.logo, href: p.href, bestFor: p.bestFor, scoreText: p.score.toFixed(1), aria: p.score.toFixed(1) + ' out of 5', segs: segs(p.score), award, editors: i === 0, notEditors: i !== 0, positioning, fit, coverage: '000 countries', model, priceFrom, verified: 'Mon YYYY', priceEv: sales ? EV.ven : EV.ven, pros, cons, hasVs: id === 'onfido' || id === 'jumio', vsLabel: 'Jumio vs Onfido', vsHref: 'Comparison V3 - Jumio vs Onfido (Desktop).dc.html' };
+    });
+    const maxW = Math.max(...D.rubric.map((r) => r.weight));
+    const uc = (id) => D.useCases.find((u) => u.id === id);
+    return {
+      showFields: show, count: ranked.length, anyHands: this.props.handsOn === 'some',
+      reviewerName: D.reviewer.name, reviewerHref: D.reviewer.href, lastVerified: m.lastVerified, disclosure: m.disclosure, methodologyVersion: m.methodologyVersion,
+      ranked,
+      rubricRows: D.rubric.map((r) => ({ ...r, pct: (r.weight / maxW) * 100 + '%' })),
+      evKey: [EV.ind, EV.ven, EV.usr, EV.hand],
+      checklist: [
+        ['Document coverage', 'Which countries and document types are supported — check your own customer mix, not the headline number.'],
+        ['Liveness certification', 'A published ISO/IEC 30107-3 presentation-attack test letter, the level reached and the lab that ran it.'],
+        ['Assurance level', 'Whether the flow is designed to meet NIST SP 800-63 IAL2 if you onboard US or regulated customers.'],
+        ['Data residency & GDPR', 'Where biometric data is processed and stored, retention periods, and a signed DPA.'],
+        ['Pricing model', 'Per check, monthly plan or annual contract — and what counts as a billable check (retries, rejects).'],
+        ['Integration effort', 'SDK coverage for your platforms, sandbox access and a realistic time to first production check.'],
+      ].map(([t, d], i) => ({ n: String(i + 1).padStart(2, '0'), t, d })),
+      regs: [
+        { name: 'ISO/IEC 30107-3', what: 'Testing and reporting of biometric presentation-attack detection (liveness).', src: 1 },
+        { name: 'NIST SP 800-63A', what: 'US identity proofing requirements and assurance levels IAL1–IAL3.', src: 2 },
+        { name: 'eIDAS 2.0 — Regulation (EU) 2024/1183', what: 'EU framework for electronic identification and the European Digital Identity Wallet.', src: 3 },
+        { name: 'GDPR Article 9', what: 'Biometric data used to identify a person is special-category data that needs a lawful basis.', src: 4 },
+        { name: 'UK DIATF', what: 'UK digital identity and attributes trust framework and its certified-services register.', src: 5 },
+      ],
+      sources: [
+        ['ISO/IEC 30107-3 Biometric presentation attack detection — Part 3: Testing and reporting', 'ISO'],
+        ['NIST SP 800-63A Digital Identity Guidelines: Enrollment and Identity Proofing', 'NIST'],
+        ['Regulation (EU) 2024/1183 (European Digital Identity Framework)', 'EUR-Lex'],
+        ['Regulation (EU) 2016/679, Article 9', 'EUR-Lex'],
+        ['UK digital identity and attributes trust framework', 'GOV.UK'],
+      ].map(([title, publisher], i) => ({ n: i + 1, title, publisher, accessed: 'Mon DD, YYYY' })),
+      hasComparisons: true,
+      comparisons: [{ label: 'Jumio vs Onfido', href: 'Comparison V3 - Jumio vs Onfido (Desktop).dc.html' }, { label: 'Sumsub vs Onfido', href: '#' }, { label: 'KYCAID vs Sumsub', href: '#' }],
+      faqs: [
+        ['What is the best identity verification provider in 2026?', 'In this ranking, Sumsub is our overall pick for most teams. Onfido (Entrust) is stronger for enterprise document-and-biometric flows, and KYCAID for configurable workflows at a lower entry price.'],
+        ['How much does identity verification cost per check?', 'It depends on the model. Some providers publish per-check or monthly prices; enterprise vendors such as Onfido and Jumio quote by volume. The pricing overview above shows each model, source and check date.'],
+        ['What’s the difference between identity verification and eKYC?', 'Identity verification checks a document and matches it to the person. eKYC is the full remote onboarding process around it, including data checks, watchlist screening and record-keeping.'],
+        ['Do I need liveness detection?', 'For any remote selfie check, yes — it stops photos, masks and deepfakes passing as the customer. Ask for an ISO/IEC 30107-3 test letter and the lab that issued it.'],
+        ['Which providers support NIST IAL2?', 'We only mark a provider as supporting an assurance level when the vendor documents it. Check the Certifications block on each review for the evidence level.'],
+        ['Do providers pay to be ranked?', 'No. Rank order comes from our rubric alone. ' + m.disclosure],
+      ].map(([q, a], i) => ({ q, a, open: st.faq === i, icon: st.faq === i ? '−' : '+', onToggle: () => this.setState({ faq: st.faq === i ? -1 : i }) })),
+      related: ['idv', 'live', 'aml', 'kyb'].filter((x) => x !== 'idv').concat(['budget']).map(uc).map((u) => ({ name: u.name, def: u.def, count: u.count, href: u.href })),
+      fl: {
+        count: F('{count} = {rankings.length}'), updated: F('{category.updated}'),
+        table: F('{rankings[].rank} {provider.name} {provider.score} {provider.pricing.from} {provider.pricing.verified} {provider.best_for}'),
+        award: F('{rankings[].award}'), meta: F('{provider.coverage} {provider.fit} {provider.pricing.model}'),
+        price: F('{provider.pricing.from} {provider.pricing.verified} {provider.pricing.evidence}'),
+        pricing: F('{provider.pricing.model} {provider.pricing.from} {provider.pricing.source} {provider.pricing.verified}'),
+        comparisons: F('{comparisons[] where approved} · block hidden when empty'),
+      },
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+slug: trulioo
+name: Trulioo
+alternate_names: []
+status: published
+seo:
+  title: 'Trulioo Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Trulioo review: global identity and business data platform covering 195 countries and 700M business entities. Pricing, features, pros & cons, and alternatives.'
+  h1: 'Trulioo Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/trulioo.png
+  background: '#7247DE'
+  wordmark: /assets/img/wordmarks/trulioo.png
+tagline: Global identity and business verification across 195 countries and 700M business entities
+score: 4.5
+grade: Very Good
+primary_category: identity-verification
+legacy_rank_claim: 'ranked #6 in Identity Verification'
+categories:
+- identity-verification
+- kyb
+- aml
+link:
+  url: https://www.trulioo.com
+  type: null
+  legacy_rel: nofollow sponsored
+last_verified: '2026-10-18'
+updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+verdict: 'Trulioo''s differentiator is data breadth rather than document scanning alone: it checks people and businesses against data sources across 195 countries, says it can verify more than 14,000 ID document types and 700 million business entities, and screens against more than 6,000 watchlists. That makes it a strong choice for non-documentary proofing and KYB, though it leans more toward a data-API product than a polished no-code UX, and it does not publish prices.'
+what_is:
+- Trulioo is a global identity-verification and KYB platform founded in 2011 in Vancouver, Canada, by Stephen Ufford and Tanis Jorge. Its 2021 Series D of $394 million, led by TCV, brought total funding to $474 million at a $1.75 billion valuation. Vicky Bindra has been CEO since April 2025. Trulioo covers 195 countries and says it can verify more than 14,000 ID document types and 700 million business entities, and in November 2025 it added credit decisioning to its KYB product.
+features:
+- Person and business verification across 195 countries.
+- Document verification covering 14,000+ ID document types.
+- Database and data-source checks for non-documentary identity proofing.
+- KYB on 700 million business entities, with credit decisioning added in November 2025.
+- AML and watchlist screening against 6,000+ watchlists.
+- Fraud detection using predictive risk signals and consortium data.
+pricing:
+  summary: Pricing is not published; Trulioo quotes on request. G2 lists the pricing model as per transaction, with a free trial and pricing from the vendor.
+  plans:
+  - tier: Enterprise
+    price: Custom
+    note: Quoted per volume
+    extra: Contact sales for a quote
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Published pricing
+    value: None; demo and contact sales only
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: G2 listing, pricing model
+    value: Per transaction; free trial listed; contact vendor for rates
+    kind: third_party
+    source: 8
+    verified: '2026-10'
+facts:
+- label: From
+  value: Not publicly disclosed
+  source: null
+- label: Founded
+  value: '2011'
+  source: 4
+  evidence: independent
+- label: HQ
+  value: Vancouver, Canada
+  source: 5
+  evidence: independent
+- label: Regions
+  value: 195 countries
+  source: 2
+  evidence: vendor
+- label: Funding
+  value: $474M raised (to Series D, 2021)
+  source: 3
+  evidence: independent
+- label: CEO
+  value: Vicky Bindra (since April 2025)
+  source: 5
+  evidence: independent
+pros:
+- 'Very broad data layer: 195 countries, 14,000+ ID document types and 700M business entities, per Trulioo'
+- Strong fit for non-documentary proofing and high-risk industries that need more than a document scan
+- KYB and individual verification combined in one platform
+cons:
+- Requires meaningful technical resources to integrate its data-API model
+- No published pricing; rates are quoted on request
+- Leans more toward a data-API product than a no-code, UX-first platform
+alternatives:
+- slug: sumsub
+  name: Sumsub
+  best_for: Editor's Choice
+- slug: onfido
+  name: Onfido
+  best_for: Developer-Friendly
+- slug: jumio
+  name: Jumio
+  best_for: Most Popular
+choose_instead:
+- slug: sumsub
+  text: you want an all-in-one, published-pricing platform instead of a data-API-first product.
+- slug: onfido
+  text: document/biometric SDK depth matters more than database-driven, non-documentary proofing.
+- slug: jumio
+  text: you need the largest enterprise processed-verification track record.
+user_reviews:
+  legacy_note: null
+  praise:
+  - 'Data breadth: reviewers highlight the scale of identity and business data covered.'
+  - 'KYB fit: reviewers see it as a strong option for business verification as well as individuals.'
+  criticize:
+  - 'Technical integration effort: some reviews describe needing more engineering resources than document-first competitors.'
+  - 'Pricing opacity: no published rate card.'
+  by_profile:
+  - High-risk industries needing non-documentary proofing are Trulioo's strongest fit.
+  - KYB-heavy businesses use Trulioo specifically for its business-entity data coverage.
+  - Teams wanting a polished no-code UX sometimes prefer document-first competitors instead.
+faq:
+- q: How much does Trulioo cost?
+  a: Trulioo does not publish pricing; it quotes on request. G2 lists its pricing model as per transaction, with a free trial.
+- q: Does Trulioo support KYB?
+  a: Yes. Trulioo verifies business entities (it says 700 million of them) alongside individual identity checks, and added credit decisioning to its KYB product in November 2025.
+- q: What makes Trulioo different from document-scanning IDV tools?
+  a: Trulioo combines document checks with database and data-source checks, which suits non-documentary proofing and high-risk industries.
+- q: How many countries does Trulioo cover?
+  a: Trulioo says it covers 195 countries, with more than 14,000 ID document types, 700 million business entities and 6,000+ watchlists.
+- q: What is the best alternative to Trulioo?
+  a: Sumsub is the best alternative for an all-in-one platform with published pricing. Onfido is the closest fit if document/biometric SDK depth matters more than database-driven proofing.
+- q: Who are Trulioo's main competitors?
+  a: Trulioo competes with Sumsub, Onfido, and Jumio, differentiating through the breadth of its identity and business data layer rather than document scanning alone.
+segments: []
+capabilities: {}
+certifications:
+- name: ISO/IEC 27001:2022
+  what: Information security (since 2015)
+  status: vendor_stated
+  source: 6
+- name: SOC 2 Type 2
+  what: Security controls attestation (since Feb 2024)
+  status: vendor_stated
+  source: 6
+user_ratings:
+- platform: G2
+  rating: 4.4
+  count: 41
+  checked: '2026-10'
+  url: https://www.g2.com/products/trulioo/reviews
+use_case_verdicts: []
+score_breakdown: []
+hands_on: null
+sources:
+- title: Pricing
+  publisher: Trulioo
+  url: https://www.trulioo.com/pricing
+  accessed: '2026-10'
+- title: Trulioo announces several C-suite executive appointments (Mar 2026)
+  publisher: Trulioo
+  url: https://www.trulioo.com/company/newsroom/press-releases/trulioo-executive-appointments-enterprise-platform-innovation
+  accessed: '2026-10'
+- title: Trulioo raises $394m in TCV-led Series D funding round
+  publisher: FinTech Futures
+  url: https://www.fintechfutures.com/venture-capital-funding/trulioo-raises-394m-in-tcv-led-series-d-funding-round
+  accessed: '2026-10'
+- title: KYC leader Trulioo becomes a unicorn
+  publisher: Fintech.ca
+  url: https://www.fintech.ca/2021/06/07/kyc-leader-trulioo-becomes-a-unicorn/
+  accessed: '2026-10'
+- title: Trulioo appoints Vicky Bindra CEO, succeeding Steve Munford
+  publisher: Techcouver
+  url: https://techcouver.com/2025/04/01/trulioo-appoints-vicky-bindra-ceo-succeeding-steve-munford/
+  accessed: '2026-10'
+- title: Security and compliance
+  publisher: Trulioo
+  url: https://www.trulioo.com/company/security-compliance
+  accessed: '2026-10'
+- title: Trulioo expands KYB with credit decisioning (Nov 2025)
+  publisher: Trulioo
+  url: https://www.trulioo.com/company/newsroom/press-releases/trulioo-credit-decisioning-kyb-launch
+  accessed: '2026-10'
+- title: Trulioo pricing overview
+  publisher: G2
+  url: https://g2.com/products/trulioo/pricing
+  accessed: '2026-10'
+- title: Trulioo reviews
+  publisher: G2
+  url: https://www.g2.com/products/trulioo/reviews
+  accessed: '2026-10'
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://www.trulioo.com
+  - https://www.linkedin.com/company/trulioo
+  - https://www.crunchbase.com/organization/trulioo
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- '"~$99/mo entry price (third-party reported)": no source found; removed. Trulioo pricing page has no prices.'
+- '"5B+ people" and "450+ data sources": not in current Trulioo boilerplate (Nov 2025, Mar 2026); removed.'
+- 'Coverage figures (195 countries, 14,000+ ID types, 700M entities, 6,000+ watchlists) come from Trulioo press-release boilerplate (sources 2, 7).'
+- 'Funding total $474M is as of June 2021; no later round found.'
+- 'ISO 27001 (since 2015, footer badge 2022) and SOC 2 Type 2 (Feb 2024) vendor-stated; certifying body and auditor not named. trulioo.com/trust did not load.'
+- 'iBeta list was truncated before older entries; no Trulioo entry seen.'
+- 'G2 review themes could not be read; kept as general statements without counts.'
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS
+directory_categories:
+- AML
+- Identity Verification
+- KYB

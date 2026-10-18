@@ -1,0 +1,214 @@
+slug: regula
+name: Regula
+alternate_names: []
+status: published
+seo:
+  title: 'Regula Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Regula review: document-authentication SDKs, forensic template library of 16,500+ ID templates from 254 countries and territories, and a newer IDV Platform. Features, pricing, pros & cons, alternatives.'
+  h1: 'Regula Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/regula.png
+  background: '#8A5CF0'
+  wordmark: null
+tagline: Document-authentication SDKs and forensic template library, now with an IDV Platform on top
+score: 4.6
+grade: Great
+primary_category: identity-verification
+legacy_rank_claim: 'ranked #3 in Identity Verification'
+categories:
+- identity-verification
+- liveness-detection
+link:
+  url: https://www.regulaforensics.com
+  type: null
+  legacy_rel: nofollow sponsored
+last_verified: '2026-10-18'
+updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+verdict: Regula is the deepest document-forensics option in identity verification, built for teams that need to catch sophisticated document fraud. Its 16,500-template library and self-hosted deployment options suit banks and border agencies with strict data-residency rules. It is still best known for SDKs and hardware readers, though since October 2025 it also sells an IDV Platform that adds AML and PEP screening, with cloud or on-premise deployment. Pricing is quoted rather than published, with a 30-day free trial of the Document Reader SDK.
+what_is:
+- Regula is a document-authentication and biometric-verification technology company founded in 1992, with offices in Daugavpils (Latvia), Reston (Virginia, USA), Warsaw, Düsseldorf, Naarden and Rio de Janeiro. Arif Mamedov is chief executive of Regula Forensics, Inc. Regula licenses a Document Reader SDK and Face SDK, plus proprietary hardware document readers and forensic devices, to banks, border-control agencies, forensic labs and fintechs; it says over 2,000 enterprises use its products. In October 2025 it launched an IDV Platform that combines document and biometric checks with AML and PEP screening, deployable in the cloud or on-premise.
+features:
+- Document Reader SDK with OCR, MRZ parsing, barcode reading, and RFID/NFC chip reading for e-passports, e-IDs and e-DLs.
+- Forensic-level authenticity checks against a library of more than 16,500 document templates covering 254 countries and territories.
+- Face SDK with 1:1 and 1:N face matching and active and passive liveness, iBeta tested to ISO/IEC 30107-3 Levels 1 and 2.
+- Self-hosted packages (Linux, Windows, Docker) and offline mobile operation, so verification data can stay inside client infrastructure.
+- Proprietary hardware document readers and forensic devices alongside the software SDKs.
+- IDV Platform (launched October 2025) adding AML and PEP screening, with cloud or on-premise deployment.
+pricing:
+  summary: Pricing is not published; Regula quotes on request, with usage-based pricing for its SDKs. The Document Reader SDK has a 30-day free trial with full access.
+  plans:
+  - tier: Project-Based License
+    price: Custom
+    note: SDK license, IDV Platform or hardware document readers, quoted per project
+    extra: Contact sales for a quote
+  - tier: Free trial
+    price: 30 days
+    note: Document Reader SDK with full, unrestricted access
+    extra: null
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Published pricing
+    value: Not published; quote on request, based on usage
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: Free trial
+    value: 30 days, Document Reader SDK, full access
+    kind: official
+    source: 2
+    verified: '2026-10'
+facts:
+- label: From
+  value: Custom quote
+  source: null
+- label: Effective
+  value: Not publicly disclosed
+  source: null
+- label: Founded
+  value: '1992'
+  source: 3
+  evidence: vendor
+- label: HQ
+  value: Daugavpils, Latvia (offices also in Reston, VA)
+  source: 3
+  evidence: vendor
+- label: Regions
+  value: 254 countries/territories (document coverage)
+  source: 2
+  evidence: vendor
+- label: Recognition
+  value: Gartner Magic Quadrant for Identity Verification 2026
+  source: 1
+  evidence: vendor
+pros:
+- Largest document template library we track (16,500+ templates, 254 countries and territories)
+- Self-hosted and offline deployment options for strict data-residency requirements
+- Three decades of forensic document-authentication expertise, with iBeta Level 2 tested face liveness
+cons:
+- 'Pricing is opaque: quoted per project, with no published starting rate'
+- Core products are SDK and hardware toolkits that need engineering work to integrate
+- The IDV Platform with AML screening is new (October 2025) compared with its document tools
+alternatives:
+- slug: jumio
+  name: Jumio
+  best_for: Most Popular
+- slug: onfido
+  name: Onfido
+  best_for: Developer-Friendly
+- slug: sumsub
+  name: Sumsub
+  best_for: Editor's Choice
+choose_instead:
+- slug: jumio
+  text: you want a long-established cloud onboarding platform rather than an SDK-first vendor.
+- slug: onfido
+  text: you need strong developer SDKs plus AML watchlist screening bundled into one cloud platform.
+- slug: sumsub
+  text: you want an all-in-one KYC/AML platform with transparent published pricing instead of project quotes.
+user_reviews:
+  legacy_note: null
+  praise:
+  - 'Template coverage: buyers value detection of document fraud that generic OCR tools miss.'
+  - 'Deployment flexibility: clients with strict data-residency needs value the self-hosted options.'
+  criticize:
+  - 'Pricing opacity: the lack of published rates slows procurement.'
+  - 'Integration effort: as an SDK, it usually takes more engineering time to stand up than a hosted flow.'
+  by_profile:
+  - Banks and border-control agencies value self-hosted deployment for data residency.
+  - Fintechs often pair Regula's document SDK with a separate platform for onboarding and AML screening.
+  - Smaller teams without in-house engineering resources tend to prefer hosted platforms over an SDK license.
+faq:
+- q: How much does Regula cost?
+  a: Regula does not publish pricing. Its SDKs, IDV Platform and hardware document readers are quoted per project, with usage-based pricing for the SDKs. The Document Reader SDK has a 30-day free trial with full access.
+- q: Does Regula offer a hosted platform?
+  a: Since October 2025 Regula sells an IDV Platform that combines document and biometric checks with AML and PEP screening and can be deployed in the cloud or on-premise. Its core products remain SDKs and hardware that teams integrate into their own systems.
+- q: Can Regula run on-premise?
+  a: Yes. Regula offers self-hosted Linux, Windows and Docker packages and offline mobile operation, and its IDV Platform supports on-premise deployment, so verification data can stay inside a client's own infrastructure.
+- q: How many document templates does Regula support?
+  a: Regula says its library covers more than 16,500 document templates from 254 countries and territories.
+- q: What is the best alternative to Regula?
+  a: Sumsub is the strongest alternative if you want a hosted, all-in-one platform with published pricing. Jumio is the closest match for enterprise-scale cloud onboarding.
+- q: Who are Regula's main competitors?
+  a: Regula competes with Jumio, Onfido, and Sumsub. It differentiates through forensic document authentication, SDKs and hardware readers, though it now also sells its own IDV Platform.
+segments: []
+capabilities: {}
+certifications:
+- name: ISO/IEC 30107-3 Level 2 (iBeta)
+  what: Liveness / presentation attack detection, Regula Face Mobile SDK (Mar 2025, Dec 2025)
+  status: confirmed
+  source: 6
+- name: ISO/IEC 27001:2022
+  what: Information security (software products; certifier named as Insight Assurance)
+  status: vendor_stated
+  source: 4
+- name: ISO 9001:2015
+  what: Quality management (optoelectronic equipment)
+  status: vendor_stated
+  source: 4
+- name: ISO 14001:2015
+  what: Environmental management
+  status: vendor_stated
+  source: 4
+user_ratings: []
+use_case_verdicts: []
+score_breakdown: []
+hands_on: null
+sources:
+- title: Regula homepage
+  publisher: Regula
+  url: https://regulaforensics.com/
+  accessed: '2026-10'
+- title: Document Reader SDK
+  publisher: Regula
+  url: https://regulaforensics.com/products/document-reader-sdk/
+  accessed: '2026-10'
+- title: About Regula
+  publisher: Regula
+  url: https://regulaforensics.com/company/about/
+  accessed: '2026-10'
+- title: Regula certificates
+  publisher: Regula
+  url: https://regulaforensics.com/company/certificates/
+  accessed: '2026-10'
+- title: Face Recognition SDK
+  publisher: Regula
+  url: https://regulaforensics.com/products/face-recognition-sdk/
+  accessed: '2026-10'
+- title: ISO 30107-3 presentation attack detection confirmation letters
+  publisher: iBeta Quality Assurance
+  url: https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/
+  accessed: '2026-10'
+- title: Regula launches IDV Platform (14 October 2025)
+  publisher: Regula
+  url: https://regulaforensics.com/news/regula-launches-idv-platform/
+  accessed: '2026-10'
+- title: 'Author: Arif A. Mamedov'
+  publisher: Regula
+  url: https://regulaforensics.com/es/blog/author/arif-a-mamedov/
+  accessed: '2026-10'
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://www.regulaforensics.com
+  - https://www.linkedin.com/company/regula-forensics
+  - https://www.crunchbase.com/organization/regula
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- HQ Daugavpils is inferred from the vendor office list (first listed); the about page does not name a headquarters. A directory (firmas.lv) lists Regula Baltija SIA at Daugavpils, but no official register page was opened.
+- Co-founder Ivan Shumsky not confirmed on any page opened; removed.
+- Gartner MQ recognition is 2026 per vendor homepage; the old 2025 claim was not confirmed and the Gartner page was not opened.
+- The 30+ languages claim was removed; the SDK page says 138+ languages and scripts for document text, which is a different measure.
+- ISO 27001 and ISO 9001 certificate details (dates, scope, body) not readable on the vendor page; no certification-body register opened.
+- Vendor homepage shows G2 4.9/5 but the G2 page could not be opened; user_ratings left empty.
+- Web search budget ran out during this check; Gartner MQ and founder details could not be searched further.
+application_category: Identity Verification Software
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS
+directory_categories:
+- Identity Verification
+- Liveness Detection

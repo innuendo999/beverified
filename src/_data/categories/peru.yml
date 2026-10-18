@@ -1,0 +1,74 @@
+slug: peru
+url: /providers/peru/
+seo:
+  title: Best KYC & AML Providers for Peru in 2026 | BeVerified
+  description: 'KYCAID, Sumsub, Veriff, and Trulioo compared: the best KYC & AML providers for Peru in 2026, ranked on DNI coverage, SBS-category mapping, and decisioning speed.'
+  h1: Best KYC & AML Providers for Peru in 2026
+breadcrumb_label: Best KYC & AML Providers for Peru
+quick_answer: 'Sumsub ranks first, with published per-verification prices and coverage of 220+ countries and territories. KYCAID is second, with DNI number checks on its price list and per-verification bundles from €0.75, and Veriff has passive liveness tested by iBeta to ISO/IEC 30107-3 Level 2. We compared 4 providers on DNI coverage, SBS-category mapping and decisioning speed.'
+last_verified: '2026-10-18'
+updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+legacy_stats:
+- value: '4'
+  label: providers compared
+- value: SBS
+  label: primary regulator
+- value: Jul 2026
+  label: last updated
+explainer_html:
+- '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
+
+  <h2 style="font-size:19px;margin-bottom:10px;">What Peru-ready KYC/AML requires</h2>
+
+  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">Peru''s financial regulator, the SBS (Superintendencia de Banca, Seguros y AFP), sets customer due diligence rules for banks and fintechs, while suspicious-activity reports route through the UIF, the country''s financial intelligence unit. A provider built for this market reads Peruvian national ID documents (DNI) reliably, checks against local and international sanctions/PEP lists, and keeps latency low as onboarding volume spikes.</p>
+
+  <h3 style="font-size:14.5px;margin-bottom:10px;">Core capabilities compliance teams typically require</h3>
+
+  <ul style="margin:0 0 18px;padding-left:20px;font-size:14.5px;line-height:1.75;">
+
+  <li style="list-style:disc;">DNI document parsing tuned to Peruvian ID formats</li>
+
+  <li style="list-style:disc;">Sanctions/PEP screening covering both domestic and OFAC/UN lists</li>
+
+  <li style="list-style:disc;">Transaction monitoring calibrated for SBS reporting thresholds</li>
+
+  <li style="list-style:disc;">Support for crypto-exchange onboarding, where relevant, given Peru''s growing digital-asset activity</li>
+
+  </ul>
+
+  <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from Brazil or Mexico</h3>
+
+  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Unlike <a href="/providers/brazil/">Brazil''s</a> CPF/CNPJ-centric checks or <a href="/providers/mexico/">Mexico''s</a> CNBV framework, Peru-focused providers need to map directly to SBS supervisory categories and UIF reporting formats. A mismatch here is one of the most common reasons onboarding stacks fail local audits.</p>
+
+  <h3 style="font-size:14.5px;margin-bottom:8px;">Regulatory context</h3>
+
+  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Key references: SBS due-diligence resolutions, and UIF suspicious-activity reporting requirements.</p>
+
+  <a class="entity-card__cta" href="/methodology/">See how we evaluate every provider on this list in our full methodology →</a>
+
+  </section>'
+faq:
+- q: Who regulates KYC/AML in Peru?
+  a: The SBS (Superintendencia de Banca, Seguros y AFP) sets customer due diligence rules for banks and fintechs, while suspicious-activity reports route through the UIF, the country's financial intelligence unit.
+- q: What is a DNI in Peru?
+  a: The DNI (Documento Nacional de Identidad) is Peru's national identity document, and reliable parsing of its specific format is a baseline requirement for any KYC provider serving this market.
+- q: How is Peru different from Brazil or Mexico for KYC?
+  a: Unlike Brazil's CPF/CNPJ-centric checks or Mexico's CNBV framework, Peru-focused providers need to map directly to SBS supervisory categories and UIF reporting formats.
+- q: Does Peru have a growing crypto sector?
+  a: Peru has seen growing digital-asset activity, which has increased demand for KYC providers that can support crypto-exchange onboarding alongside traditional banking checks.
+- q: What sanctions lists do Peruvian KYC providers screen against?
+  a: Providers typically screen against both domestic watchlists and international lists such as OFAC and UN sanctions lists.
+- q: Why do onboarding stacks fail Peruvian audits?
+  a: A common failure point is using a generic LatAm KYC stack that doesn't map cleanly to SBS supervisory categories or UIF reporting formats, rather than one built specifically around them.
+adjacent:
+- brazil
+- mexico
+- aml
+- crypto
+capability_columns: []
+faq_templates: []
+legacy_issues: []
+author: andrii-klymenko
+legacy_reviewer:
+  name: David Okafor
+  credential: null

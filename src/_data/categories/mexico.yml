@@ -1,0 +1,74 @@
+slug: mexico
+url: /providers/mexico/
+seo:
+  title: Best KYC & AML Providers for Mexico in 2026 | BeVerified
+  description: 'KYCAID, Sumsub, Veriff, and Trulioo compared: the best KYC & AML providers for Mexico in 2026, ranked on Ley Fintech readiness, document coverage, and decisioning speed.'
+  h1: Best KYC & AML Providers for Mexico in 2026
+breadcrumb_label: Best KYC & AML Providers for Mexico
+quick_answer: 'Sumsub ranks first, with published per-verification prices and coverage of 220+ countries and territories. KYCAID is second, with CURP number checks on its price list and per-verification bundles from €0.75, and Veriff has passive liveness tested by iBeta to ISO/IEC 30107-3 Level 2. We compared 4 providers on Ley Fintech readiness, document coverage and decisioning speed.'
+last_verified: '2026-10-18'
+updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+legacy_stats:
+- value: '4'
+  label: providers compared
+- value: $159.1M
+  label: market size by 2030
+- value: '773'
+  label: fintechs in Mexico (2024)
+explainer_html:
+- '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
+
+  <h2 style="font-size:19px;margin-bottom:10px;">What Mexico-ready KYC means</h2>
+
+  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">The CNBV supervises banks and fintechs operating in Mexico, and Ley Fintech, the country''s Fintech Law, sets specific onboarding and identity-verification requirements for electronic payment institutions and crowdfunding platforms. The market these providers serve is sizeable: Mexico counted 773 fintech startups as of 2024, and its digital-identity-verification market is projected to reach $159.1 million by 2030.</p>
+
+  <h3 style="font-size:14.5px;margin-bottom:10px;">The stacks you''ll find here</h3>
+
+  <ul style="margin:0 0 18px;padding-left:20px;font-size:14.5px;line-height:1.75;">
+
+  <li style="list-style:disc;">Document parsing for INE voter ID cards, passports, and CURP-linked identification</li>
+
+  <li style="list-style:disc;">CNBV-aligned onboarding workflows for regulated fintechs</li>
+
+  <li style="list-style:disc;">Sanctions/PEP screening covering domestic and international lists</li>
+
+  <li style="list-style:disc;">Straight-through decisioning built to handle high applicant volume across many small fintechs</li>
+
+  </ul>
+
+  <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from AML</h3>
+
+  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">CNBV registration and Ley Fintech onboarding rules cover the identity-check layer; ongoing transaction screening still falls under general <a href="/providers/aml/">AML software</a> obligations, typically handled by a separate system.</p>
+
+  <h3 style="font-size:14.5px;margin-bottom:8px;">How we evaluate vendors</h3>
+
+  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Key reference: CNBV due-diligence rules issued under Ley Fintech.</p>
+
+  <a class="entity-card__cta" href="/methodology/">See how we evaluate every provider on this list in our full methodology →</a>
+
+  </section>'
+faq:
+- q: Who regulates KYC/AML in Mexico?
+  a: The CNBV (Comisión Nacional Bancaria y de Valores) supervises banks and fintechs, and Mexico's Ley Fintech sets specific onboarding and operating requirements for fintech institutions.
+- q: How big is Mexico's fintech market?
+  a: Mexico counted 773 fintech startups as of 2024, and the country's digital-identity-verification market is projected to reach $159.1 million by 2030.
+- q: What is Ley Fintech?
+  a: Ley Fintech is Mexico's Fintech Law. It sets licensing and operating requirements, including identity verification obligations, for electronic payment institutions and crowdfunding platforms.
+- q: Does CNBV registration cover ongoing AML monitoring?
+  a: CNBV registration and Ley Fintech onboarding rules cover the identity-check layer; ongoing transaction screening still falls under general AML obligations, often handled by a separate system.
+- q: What documents do Mexican KYC providers accept?
+  a: Common accepted documents include the INE voter ID card, passports, and CURP-linked identification.
+- q: Is Mexico's KYC market consolidated or fragmented?
+  a: It's fragmented across many small and mid-sized fintechs, which is part of why 773 separate fintech companies were operating in the market as of 2024.
+adjacent:
+- aml
+- aml/banks
+- brazil
+- peru
+capability_columns: []
+faq_templates: []
+legacy_issues: []
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

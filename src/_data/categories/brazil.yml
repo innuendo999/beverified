@@ -1,0 +1,74 @@
+slug: brazil
+url: /providers/brazil/
+seo:
+  title: Best KYC & AML Providers for Brazil in 2026 | BeVerified
+  description: 'KYCAID, Sumsub, idwall, and Trulioo compared: the best KYC & AML providers for Brazil in 2026, ranked on CPF/CNPJ coverage, decisioning speed, and local registry depth.'
+  h1: Best KYC & AML Providers for Brazil in 2026
+breadcrumb_label: Best KYC & AML Providers for Brazil
+quick_answer: 'Sumsub ranks first in Brazil, with published prices and a stated 20-second average verification time that suits Pix-speed onboarding. KYCAID is second, with CPF number checks on its price list and per-verification bundles from €0.75, and idwall has the deepest local Brazilian registry database, though we haven''t reviewed it in full yet. We compared 4 providers on CPF/CNPJ coverage, decisioning speed and local registry depth.'
+last_verified: '2026-07-24'
+updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+legacy_stats:
+- value: '4'
+  label: providers compared
+- value: BACEN
+  label: primary regulator
+- value: Jul 2026
+  label: last updated
+explainer_html:
+- '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
+
+  <h2 style="font-size:19px;margin-bottom:10px;">What Brazil-ready KYC means</h2>
+
+  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">Brazil''s Central Bank, BACEN, sets customer due diligence rules for regulated financial institutions, while COAF, the financial intelligence unit, receives suspicious-activity reports. A provider built for this market verifies individuals against their CPF and businesses against their CNPJ, and keeps decisioning fast enough to match Pix, Brazil''s instant-payment rail, which settles transfers in seconds.</p>
+
+  <h3 style="font-size:14.5px;margin-bottom:10px;">The stacks you''ll find here</h3>
+
+  <ul style="margin:0 0 18px;padding-left:20px;font-size:14.5px;line-height:1.75;">
+
+  <li style="list-style:disc;">CPF verification for individuals, CNPJ lookup for businesses</li>
+
+  <li style="list-style:disc;">Document parsing tuned to Brazilian RG and CNH formats</li>
+
+  <li style="list-style:disc;">Sub-minute decisioning to match Pix-speed account opening</li>
+
+  <li style="list-style:disc;">Sanctions/PEP screening against domestic and international lists</li>
+
+  </ul>
+
+  <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from KYB</h3>
+
+  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Verifying a CNPJ registration and its beneficial owners is closer to <a href="/providers/kyb/">KYB</a> than individual KYC, which is why several providers on this list also appear on our KYB page.</p>
+
+  <h3 style="font-size:14.5px;margin-bottom:8px;">How we evaluate vendors</h3>
+
+  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Key references: BACEN due-diligence circulars and COAF suspicious-activity reporting requirements.</p>
+
+  <a class="entity-card__cta" href="/methodology/">See how we evaluate every provider on this list in our full methodology →</a>
+
+  </section>'
+faq:
+- q: Who regulates KYC/AML in Brazil?
+  a: BACEN, the Central Bank of Brazil, sets customer due diligence rules for regulated financial institutions, while COAF, the financial intelligence unit, receives suspicious-activity reports.
+- q: What's the difference between CPF and CNPJ?
+  a: CPF is Brazil's individual taxpayer ID, used to verify people. CNPJ is the equivalent registration number for businesses, used to verify companies during onboarding.
+- q: Why does Pix matter for KYC in Brazil?
+  a: Pix, Brazil's instant-payment system, settles transfers in seconds, which pushes KYC decisioning toward near-real-time speed since slow onboarding creates friction against instant payment rails.
+- q: Do Brazilian KYC providers verify businesses as well as individuals?
+  a: Many do, through CNPJ registry lookups, though verifying a business's beneficial owners is closer to KYB than individual KYC and sometimes requires a separate workflow.
+- q: Is Brazil's KYC market growing?
+  a: Brazil has one of Latin America's most active fintech and digital-banking markets, and demand for automated KYC has grown alongside Pix-driven account opening volume.
+- q: Do global KYC vendors support Brazilian document formats?
+  a: Leading vendors read Brazilian national ID (RG), CPF, and CNH driver's licenses natively, though document-fraud detection accuracy varies by provider.
+adjacent:
+- kyb
+- aml
+- canada
+- mexico
+capability_columns: []
+faq_templates: []
+legacy_issues: []
+author: andrii-klymenko
+legacy_reviewer:
+  name: Elena Marsh
+  credential: CAMS

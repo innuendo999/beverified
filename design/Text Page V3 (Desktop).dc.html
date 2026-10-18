@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>BeVerified</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+html, body { margin:0; background:#F7F6F3; color:#14141A; scroll-behavior:smooth; }
+body { font-family:'Geist', ui-sans-serif, system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
+a { color:#5B2BD9; text-decoration:none; }
+a:hover { color:#4A1FBF; text-decoration:underline; text-underline-offset:3px; }
+:focus-visible { outline:2px solid #5B2BD9; outline-offset:3px; border-radius:6px; }
+</style>
+<script src="./bv-data.js"></script>
+</helmet>
+<div style="background:#F7F6F3; color:#14141A; min-height:100vh; font-family:'Geist', ui-sans-serif, system-ui, sans-serif;">
+<header data-component="header" style="position:sticky; top:0; z-index:100; background:rgba(247,246,243,0.92); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:1px solid #E6E4DF;">
+  <div style="max-width:1200px; margin:0 auto; padding:0 32px; height:60px; display:flex; align-items:center; gap:40px;">
+    <a href="Homepage V3 - BeVerified (Desktop).dc.html" aria-label="BeVerified home" style="display:flex; align-items:center; gap:9px; text-decoration:none;"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="display:block;"><rect x="3" y="12" width="4.5" height="9" rx="1" fill="#14141A"></rect><rect x="9.75" y="8" width="4.5" height="13" rx="1" fill="#14141A"></rect><rect x="16.5" y="3" width="4.5" height="18" rx="1" fill="#5B2BD9"></rect></svg><span style="font-weight:600; font-size:17px; letter-spacing:-0.03em; color:#14141A;">BeVerified</span></a>
+    <nav aria-label="Primary" style="display:flex; gap:28px; flex:1;"><a href="Use Cases Hub V3 (Desktop).dc.html" style="font-size:15px; color:#4A4A55;">Use cases</a><a href="Regions Hub V3 (Desktop).dc.html" style="font-size:15px; color:#4A4A55;">Regions</a><a href="Providers Directory V3 (Desktop).dc.html" style="font-size:15px; color:#4A4A55;">Reviews</a><a href="Blog Index V3 (Desktop).dc.html" style="font-size:15px; color:#4A4A55;">Blog</a></nav>
+    <a href="For Providers V3 (Desktop).dc.html" style="font-size:15px; color:#14141A;">For providers</a>
+  </div>
+</header>
+
+<div style="max-width:1200px; margin:0 auto; padding:0 32px;">
+  <nav data-component="breadcrumb" aria-label="Breadcrumb" style="padding:20px 0 0; font-size:14px; color:#4A4A55; display:flex; gap:8px;"><a href="Homepage V3 - BeVerified (Desktop).dc.html" style="color:#4A4A55;">Home</a><span aria-hidden="true" style="color:#9C988F;">›</span><span aria-current="page" style="color:#14141A;">{{ title }}</span></nav>
+  <div style="display:grid; grid-template-columns:220px minmax(0,1fr); gap:72px; align-items:start; padding:32px 0 96px;">
+    <nav data-component="toc" aria-label="On this page" style="position:sticky; top:84px; padding-top:8px;">
+      <div style="font-size:13px; font-weight:600; color:#6A6A74; margin-bottom:12px;">On this page</div>
+      <ol style="list-style:none; margin:0; padding:0; border-left:1px solid #D6D3CC;">
+        <sc-for list="{{ toc }}" as="t" hint-placeholder-count="6"><li><a href="#{{ t.id }}" style="display:block; padding:7px 0 7px 14px; margin-left:-1px; border-left:2px solid {{ t.line }}; font-size:14px; line-height:1.4; color:{{ t.color }}; font-weight:{{ t.weight }}; text-decoration:none;">{{ t.h }}</a></li></sc-for>
+      </ol>
+    </nav>
+
+    <article style="min-width:0; max-width:700px;">
+      <h1 style="margin:0 0 12px; font-size:52px; line-height:1.03; letter-spacing:-0.045em; font-weight:600;">{{ title }}</h1>
+      <p style="margin:0 0 10px; font-size:20px; line-height:1.5; color:#4A4A55;">{{ lede }}</p>
+      <div data-component="last-verified" style="display:flex; align-items:center; gap:6px; font-size:14px; color:#4A4A55; padding-bottom:24px; border-bottom:1px solid #E0DDD6;"><span aria-hidden="true" style="color:#1B7A4B;">✓</span>Last updated <time style="color:#14141A; font-variant-numeric:tabular-nums;">{{ updated }}</time><code style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00; margin-left:6px;">{page.updated}</code></div>
+
+      <sc-for list="{{ sections }}" as="s" hint-placeholder-count="5">
+        <section id="{{ s.id }}" style="scroll-margin-top:84px; padding-top:40px;">
+          <div style="display:flex; align-items:center; gap:10px; margin:0 0 14px;"><h2 style="margin:0; font-size:28px; line-height:1.2; letter-spacing:-0.025em; font-weight:600;">{{ s.h }}</h2><sc-if value="{{ s.tbd }}" hint-placeholder-val="{{ false }}"><span style="font-size:13px; font-weight:500; color:#6B4A00; background:#FFF3D1; border:1px dashed #D9A93A; padding:2px 8px; border-radius:6px;">To be defined</span></sc-if></div>
+          <sc-for list="{{ s.blocks }}" as="b" hint-placeholder-count="2">
+            <div style="margin:0 0 18px;">
+              <sc-if value="{{ b.isP }}" hint-placeholder-val="{{ true }}"><p style="margin:0; font-size:18px; line-height:1.7; color:#26262E;">{{ b.text }}</p></sc-if>
+              <sc-if value="{{ b.isList }}" hint-placeholder-val="{{ false }}"><ul style="margin:0; padding-left:22px; display:flex; flex-direction:column; gap:6px; font-size:18px; line-height:1.6; color:#26262E;"><sc-for list="{{ b.items }}" as="i" hint-placeholder-count="3"><li>{{ i }}</li></sc-for></ul></sc-if>
+              <sc-if value="{{ b.isCallout }}" hint-placeholder-val="{{ false }}"><div style="background:#F1EFEA; border-left:3px solid #14141A; border-radius:0 12px 12px 0; padding:16px 20px; font-size:16px; line-height:1.6;">{{ b.text }}</div></sc-if>
+              <sc-if value="{{ b.isQuote }}" hint-placeholder-val="{{ false }}"><blockquote style="margin:0; padding:4px 0 4px 22px; border-left:3px solid #5B2BD9; font-size:22px; line-height:1.45; letter-spacing:-0.01em;">{{ b.text }}<footer style="font-size:14px; color:#6A6A74; margin-top:8px;">{{ b.by }}</footer></blockquote></sc-if>
+              <sc-if value="{{ b.isTable }}" hint-placeholder-val="{{ false }}"><div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; overflow:hidden;"><table style="width:100%; border-collapse:collapse; font-size:15px;"><caption style="caption-side:top; text-align:left; padding:12px 18px 4px; font-size:14px; color:#4A4A55;">{{ b.caption }}</caption><tbody><sc-for list="{{ b.rows }}" as="r" hint-placeholder-count="3"><tr style="border-top:1px solid #EEECE7;"><th scope="row" style="text-align:left; font-weight:500; padding:11px 18px; width:38%; vertical-align:top;">{{ r.k }}</th><td style="padding:11px 18px; color:#4A4A55;">{{ r.v }}</td></tr></sc-for></tbody></table></div></sc-if>
+              <sc-if value="{{ b.isBars }}" hint-placeholder-val="{{ false }}"><div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:20px 22px;"><sc-for list="{{ b.rows }}" as="r" hint-placeholder-count="6"><div style="display:grid; grid-template-columns:minmax(150px,210px) minmax(0,1fr) 40px; gap:14px; align-items:center; margin-bottom:12px; font-size:15px;"><span>{{ r.name }}</span><span style="height:6px; background:#EEECE7; border-radius:999px; overflow:hidden;"><span style="display:block; height:100%; width:{{ r.pct }}; background:#14141A;"></span></span><span style="text-align:right; color:#4A4A55; font-variant-numeric:tabular-nums;">{{ r.weight }}%</span></div></sc-for></div></sc-if>
+              <sc-if value="{{ b.isEv }}" hint-placeholder-val="{{ false }}"><div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;"><sc-for list="{{ b.rows }}" as="e" hint-placeholder-count="4"><div style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:14px; padding:14px 16px;"><span data-component="evidence-tag" style="display:inline-flex; align-items:center; gap:6px; font-size:13px; border:1px solid #D6D3CC; padding:2px 9px; border-radius:999px; margin-bottom:8px;"><span aria-hidden="true">{{ e.icon }}</span>{{ e.label }}</span><div style="font-size:15px; line-height:1.5; color:#4A4A55;">{{ e.desc }}</div></div></sc-for></div></sc-if>
+              <sc-if value="{{ b.isTeam }}" hint-placeholder-val="{{ false }}"><div data-component="author-box" style="background:#FFFFFF; border:1px solid #E6E4DF; border-radius:16px; padding:18px; display:grid; grid-template-columns:64px minmax(0,1fr); gap:16px;"><img src="authors/andrii-klymenko.png" alt="Andrii Klymenko" style="width:64px; height:64px; border-radius:999px; object-fit:cover; object-position:40% 25%; display:block;"><div><div style="font-size:17px; font-weight:600;">Andrii Klymenko</div><div style="font-size:14px; color:#4A4A55; margin:2px 0 8px;">{{ role }}</div><div style="display:flex; gap:16px; font-size:14px; font-weight:500;"><a href="Author Page V3 - Andrii Klymenko (Desktop).dc.html">Author profile →</a><a href="https://www.linkedin.com/in/klymenkoandrii/" rel="noopener" target="_blank">LinkedIn ↗</a></div></div></div></sc-if>
+              <sc-if value="{{ b.isLog }}" hint-placeholder-val="{{ false }}"><div style="border-top:1px solid #D6D3CC;"><sc-for list="{{ b.rows }}" as="r" hint-placeholder-count="3"><div style="display:grid; grid-template-columns:130px minmax(0,1fr); gap:16px; padding:12px 0; border-bottom:1px solid #E6E4DF; font-size:15px;"><span><strong style="font-weight:600;">{{ r.v }}</strong><br><span style="color:#6A6A74; font-size:14px;">{{ r.d }}</span></span><span style="color:#4A4A55; line-height:1.55;">{{ r.t }}</span></div></sc-for></div></sc-if>
+              <sc-if value="{{ b.isDisc }}" hint-placeholder-val="{{ false }}"><div style="border:1px dashed #BDB9B0; border-radius:14px; padding:16px 18px; background:#FFFFFF;"><div style="font-family:'Geist Mono', monospace; font-size:12px; color:#8A5A00; margin-bottom:8px;">disclosure-line · as it appears above the first outbound link</div><p data-component="disclosure-line" style="margin:0; font-size:15px; line-height:1.5; color:#4A4A55;">{{ disclosure }} <a href="#">How we make money →</a></p></div></sc-if>
+              <sc-if value="{{ b.isContacts }}" hint-placeholder-val="{{ false }}"><div style="display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:12px;"><sc-for list="{{ b.rows }}" as="c" hint-placeholder-count="3"><a href="{{ c.href }}" style="display:flex; flex-direction:column; background:#FFFFFF; border:1px solid #E6E4DF; border-radius:16px; padding:18px; text-decoration:none; color:#14141A;" style-hover="border-color:#9C988F; text-decoration:none; color:#14141A;"><span style="font-size:17px; font-weight:600; margin-bottom:6px;">{{ c.k }}</span><span style="font-size:14px; line-height:1.5; color:#4A4A55; margin-bottom:14px;">{{ c.d }}</span><span style="margin-top:auto; font-size:14px; font-weight:500; color:#5B2BD9;">{{ c.v }}</span></a></sc-for></div></sc-if>
+            </div>
+          </sc-for>
+        </section>
+      </sc-for>
+    </article>
+  </div>
+</div>
+<footer data-component="footer" style="background:#EFEDE8; border-top:1px solid #E0DDD6;"><div style="max-width:1200px; margin:0 auto; padding:40px 32px 28px; display:flex; justify-content:space-between; gap:32px; font-size:14px; color:#4A4A55;"><span>Independent reviews of KYC, KYB and AML software.</span><span style="display:flex; gap:16px;"><a href="#">About</a><a href="#">Methodology</a><a href="#">How we make money</a><a href="#">Contact</a><a href="#">Privacy</a><a href="#">Terms</a></span></div></footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;page&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;methodology&quot;,&quot;about&quot;,&quot;money&quot;,&quot;contact&quot;],&quot;default&quot;:&quot;methodology&quot;,&quot;tsType&quot;:&quot;'methodology' | 'about' | 'money' | 'contact'&quot;,&quot;section&quot;:&quot;Variant&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() { if (!window.BV) { this._on = () => this.forceUpdate(); window.addEventListener('bv-data-ready', this._on); } }
+  componentWillUnmount() { if (this._on) window.removeEventListener('bv-data-ready', this._on); }
+  renderVals() {
+    const D = window.BV;
+    if (!D) return {};
+    const m = D.meta, v = this.props.page || 'methodology';
+    const P = (text) => ({ isP: true, text });
+    const L = (items) => ({ isList: true, items });
+    const maxW = Math.max(...D.rubric.map((r) => r.weight));
+    const EV = [
+      { icon: '◆', label: 'Independent', desc: 'A lab report, government register, certificate registry or public benchmark we checked ourselves.' },
+      { icon: '◇', label: 'Vendor-stated', desc: 'Published by the provider on its website, documentation or pricing page. We cite it but don’t treat it as proof.' },
+      { icon: '●', label: 'User-reported', desc: 'Ratings and themes from G2, Capterra or Gartner Peer Insights. Shown separately and never part of the score.' },
+      { icon: '▲', label: 'Hands-on', desc: 'Our own test in the provider’s sandbox or product, with the date we ran it.' },
+    ];
+    const PAGES = {
+      methodology: { title: 'Methodology', lede: 'How we score KYC, KYB and AML providers, what evidence we accept, and how scores change.', sections: [
+        ['rubric', 'Scoring rubric', [P('Every provider is scored on the same six weighted criteria. Weights add up to 100.'), { isBars: true, rows: D.rubric.map((r) => ({ ...r, pct: (r.weight / maxW) * 100 + '%' })) }]],
+        ['evidence', 'Evidence levels', [P('Every factual claim on a review carries one of four evidence tags. Each has its own icon so it reads in grayscale.'), { isEv: true, rows: EV }]],
+        ['cadence', 'Re-verification', [P('Each provider is re-checked on a fixed cycle: {methodology.recheck_cadence}. A “Last verified” date only changes after a real re-check — never after a copy edit or redesign.'), { isCallout: true, text: 'Prices older than two quarters are re-checked before the page is re-dated.' }]],
+        ['changes', 'How scores change', [L(['A re-check finds new evidence (a certificate, a price change, a regulatory action).', 'We change the rubric — every review is re-scored under the new version.', 'A correction is accepted (see below).']), P('Payment never changes scores or ranking order.')]],
+        ['corrections', 'Corrections policy', [P('If a fact on a page is wrong, email corrections@beverified.org with a source. We reply within {corrections.response_time} and log accepted corrections on the page.')]],
+        ['team', 'Editorial team', [{ isTeam: true }]],
+        ['changelog', 'Rubric version history', [{ isLog: true, rows: [{ v: 'v2.3', d: 'Jul 18, 2026', t: 'Added Track record as a standalone category (10%); reduced Support responsiveness from 15% to 10%.' }, { v: 'v2.2', d: 'Mar 2, 2026', t: 'Added SOC 2 Type II to certification checks; previously only ISO/IEC 27001.' }, { v: 'v2.1', d: 'Nov 14, 2025', t: 'Introduced the five-ticket support responsiveness test.' }] }]],
+      ] },
+      about: { title: 'About BeVerified', lede: 'BeVerified is an independent review site for KYC, KYB and AML software, written for the compliance teams who have to choose it.', sections: [
+        ['who', 'Who we are', [P('We review identity verification, business verification and anti-money-laundering providers using one published rubric, and we link every claim to its source.')]],
+        ['mission', 'Mission', [{ isQuote: true, text: 'Help compliance teams choose a vendor on evidence, not on who paid for the top slot.', by: '— BeVerified editorial policy' }]],
+        ['team', 'Editorial team', [{ isTeam: true }]],
+        ['company', 'Company details', [{ isTable: true, caption: 'Legal entity', rows: [{ k: 'Legal name', v: '{company.legal_name}' }, { k: 'Registered address', v: '{company.address}' }, { k: 'Company number', v: '{company.registration_number}' }, { k: 'Contact', v: 'support@beverified.org' }] }]],
+        ['profiles', 'Official profiles', [L(['LinkedIn — {company.linkedin_url}', 'Author: Andrii Klymenko on LinkedIn']), P('How we earn money is explained on the How we make money page.')]],
+      ] },
+      money: { title: 'How we make money', lede: 'BeVerified is free to read. We earn a commission from some outbound links. That money never changes what we write or how we rank.', sections: [
+        ['affiliate', 'Affiliate links', [P('When a page has a “Visit site” button with an “Affiliate link” tag, we may earn a commission if you sign up through it. Not every provider has an affiliate link; providers without one get a plain “Official website” link.')]],
+        ['never', 'What payment never affects', [L(['Scores and sub-scores', 'Ranking order on any page', 'Pros, cons and verdicts', 'Which providers we review']), { isCallout: true, text: m.disclosure }]],
+        ['disclosure', 'How the disclosure appears', [P('The same sentence appears directly above the first outbound link on every review, ranking and comparison page.'), { isDisc: true }]],
+        ['sponsored', 'Sponsored placements', [P('{policy.sponsored_placements}')], true],
+      ] },
+      contact: { title: 'Contact', lede: 'Email is the fastest way to reach us. We don’t use a contact form.', sections: [
+        ['options', 'Who to contact', [{ isContacts: true, rows: [
+          { k: 'Readers', d: 'Questions about a review or ranking.', v: 'support@beverified.org', href: 'mailto:support@beverified.org' },
+          { k: 'Corrections', d: 'A fact is wrong — please include a source.', v: 'corrections@beverified.org', href: 'mailto:corrections@beverified.org' },
+          { k: 'Providers', d: 'Claim your profile or add documentation.', v: 'support@beverified.org', href: 'mailto:support@beverified.org?subject=Claim%20profile' },
+        ] }]],
+        ['response', 'Response times', [P('We reply to corrections within {corrections.response_time} and to other emails within {support.response_time}.')]],
+      ] },
+    };
+    const pg = PAGES[v];
+    const sections = pg.sections.map(([id, h, blocks, tbd]) => ({ id, h, tbd: !!tbd, blocks: blocks.map((b) => ({ isP: false, isList: false, isCallout: false, isQuote: false, isTable: false, isBars: false, isEv: false, isTeam: false, isLog: false, isDisc: false, isContacts: false, ...b })) }));
+    return {
+      title: pg.title, lede: pg.lede, updated: m.lastVerified, sections, disclosure: m.disclosure, role: D.reviewer.role,
+      toc: sections.map((s, i) => ({ id: s.id, h: s.h, line: i === 0 ? '#14141A' : 'transparent', color: i === 0 ? '#14141A' : '#4A4A55', weight: i === 0 ? 600 : 400 })),
+    };
+  }
+}
+</script>
+</body>
+</html>

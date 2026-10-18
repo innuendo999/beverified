@@ -1,0 +1,48 @@
+slug: age-verification
+url: /providers/age-verification/
+seo:
+  title: Best Age Verification Providers in 2026 | BeVerified
+  description: 'Sumsub, Incode, Persona, VerifyMy and more compared: age verification and age estimation providers ranked, with the methods each one supports.'
+  h1: Best Age Verification Providers in 2026
+breadcrumb_label: Best Age Verification Providers
+quick_answer: Sumsub ranks first on our scores, with document checks, selfie age estimation and database checks in one platform. Incode is next, running face age estimation on the user's phone. Persona offers the most methods, and VerifyMy is the specialist, with email-based age estimation. We compared 8 providers on the age checks they offer, fallbacks and the approvals they state.
+last_verified: '2026-10-18'
+updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+explainer_html:
+- '<h2>Age verification or age estimation?</h2>
+  <p>Age verification confirms a date of birth from a trusted source, usually an ID document, a bank, a mobile operator or a credit file. Age estimation infers an age range from a signal such as a selfie or an email address, without collecting a document. Most platforms now combine the two: a low-friction estimate first, and a document or database check only when the estimate is close to the threshold.</p>
+  <p>If you only need to know someone is over 18, estimation is usually enough. If a regulator requires proof of identity as well as age, as in gambling or financial services, you need full <a href="/providers/identity-verification/">identity verification</a> with <a href="/providers/liveness-detection/">liveness detection</a>.</p>'
+- '<h2>What regulators accept</h2>
+  <p>In the UK, Ofcom lists the methods it says can be highly effective under the Online Safety Act: open banking, photo-ID matching, facial age estimation, mobile network operator checks, credit card checks, digital identity services and email-based age estimation. It says self-declaration, debit cards or payment methods that do not require the user to be 18, and contractual restrictions are not highly effective.</p>
+  <p>Services that publish their own pornographic content have had to use highly effective age assurance since 17 January 2025. User-to-user and search services likely to be accessed by children had to start acting on their children''s risk assessments from 25 July 2025. Source: <a href="https://ofcom.org.uk/online-safety/illegal-and-harmful-content/age-assurance" rel="noopener">Ofcom, age assurance duties under the Online Safety Act</a>.</p>
+  <p>In Germany, age verification systems for adult content are approved by the KJM, the commission for the protection of minors in the media. Several providers on this list state KJM approval; ask for the approval letter that covers the exact method you plan to use.</p>
+  <p>For how platforms are rolling out age checks in practice, see our news on <a href="/news/tiktoks-ai-age-checks/">TikTok''s AI age checks</a> and the <a href="/news/uk-digital-id-proposal-suggests-that-ids-would-be-issued-to-teenagers/">UK digital ID proposal</a>.</p>'
+- '<h2>What to ask a vendor</h2>
+  <ul>
+  <li>Which methods do you support in each country we operate in, and which of them does our regulator accept?</li>
+  <li>What happens when the estimate is close to the age threshold: which fallback runs, and can we set the buffer?</li>
+  <li>Has the method been tested independently, for example under ISO/IEC 27566-1 or by a national regulator, and can we see the report?</li>
+  <li>Is the selfie or document stored, for how long, and where is it processed?</li>
+  <li>How are retries, failed checks and returning users billed?</li>
+  </ul>
+  <p>Our scores are overall provider scores from the same <a href="/methodology/">methodology</a> as every other ranking. The method lists and approvals on this page come from each vendor''s own age verification page, checked in October 2026.</p>'
+faq:
+- q: What is age verification?
+  a: Age verification is a check that a user is over (or under) a set age before they get access to a product or service. It can use an ID document, a bank or credit record, a mobile operator record, a digital ID or an age estimate from a selfie or email address.
+- q: What is the difference between age verification and age estimation?
+  a: Age verification confirms a date of birth from a trusted record such as an ID document. Age estimation infers an age range from a signal such as a selfie or an email address, without collecting a document. Many platforms estimate first and verify only when the estimate is close to the threshold.
+- q: Which age check methods does Ofcom accept?
+  a: Ofcom says open banking, photo-ID matching, facial age estimation, mobile network operator checks, credit card checks, digital identity services and email-based age estimation can be highly effective. Self-declaration, debit cards and terms of service that ban children are not.
+- q: Can you check age without an ID?
+  a: Yes. Facial age estimation, email-based age estimation, mobile operator checks, credit card checks and open banking all check age without an identity document. Most providers fall back to an ID check when the result is close to the age limit.
+- q: What does VerifyMy do?
+  a: VerifyMy specialises in age assurance and content moderation. Its page lists email address age estimation, mobile number, name and address, facial age estimation, ID document with face match and credit card checks. The Age Check Certification Scheme register lists its platform as certified to ISO/IEC 27566-1, and it states German KJM approval. It does not offer KYC or AML screening.
+adjacent:
+- liveness-detection
+- identity-verification
+- e-kyc
+- cheap-kyc
+capability_columns: []
+faq_templates: []
+legacy_issues: []
+author: andrii-klymenko

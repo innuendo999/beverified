@@ -1,0 +1,13 @@
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="/" aria-label="BeVerified home">{% include "v3/logo.njk" %}</a>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+{%- for item in site.v3.nav %}
+      <a href="{{ item.href }}"{% if item.key and item.key == navCurrent %} aria-current="page"{% endif %}>{{ item.label }}</a>
+{%- endfor %}
+      <a href="{{ site.v3.navAside.href }}" class="site-nav__mobile-only">{{ site.v3.navAside.label }}</a>
+    </nav>
+    <a class="site-header__aside" href="{{ site.v3.navAside.href }}">{{ site.v3.navAside.label }}</a>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  </div>
+</header>
