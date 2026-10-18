@@ -1,0 +1,414 @@
+slug: zyphe
+name: Zyphe
+alternate_names:
+- Zyphe Inc.
+status: published
+seo:
+  title: 'Zyphe Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Zyphe review: AI agents and self-serve KYC, KYB and AML, with a published rate card from $0.30 per ID check. Features, pricing, pros & cons, alternatives.'
+  h1: 'Zyphe Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: null
+  background: null
+  wordmark: null
+tagline: AI agents and self-serve KYC, KYB and AML with a published per-check rate card
+score: 4.0
+grade: Good
+primary_category: kyb
+categories:
+- kyb
+- aml
+- identity-verification
+- cheap-kyc
+link:
+  url: https://www.zyphe.com
+  type: none
+last_verified: '2026-10-18'
+updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+verdict: Zyphe suits smaller fintech, crypto and iGaming teams that want cheap self-serve KYC, KYB and AML with prices they can read up front, plus AI agents that prepare alert and case reviews for a human to sign off. The rate card is public, with ID and liveness at $0.30 a check and agent reviews priced per task. It is also very young. Its SOC 2 and ISO/IEC 27001 audits are still in progress, its liveness has no published lab test, and almost every coverage and security claim is vendor-stated. KYB register checks cover 49 countries and territories plus the US, and KYB itself is not on the rate card. Treat it as a low-cost option to pilot, not yet as a certified vendor of record.
+what_is:
+- Zyphe Inc. sells identity verification and compliance software in two forms. Verify is a self-serve platform for KYC, KYB, AML screening, transaction monitoring, proof of address and reusable KYC (it calls this KYC Passport). Its AI agents, sold as Investigate or as a managed service, work review queues such as sanctions and PEP alerts, adverse media, UBO and enhanced due diligence, transaction alerts and periodic KYC refreshes, and return a case file with cited evidence and a written rationale. By default a person on the customer's team approves each case or sends it back; categories the customer has validated can be switched to auto-pilot.
+- The company is small and recent. Its terms name Zyphe Inc. and Delaware law, its about page lists New York, London and Milan, and its co-founders are Michelangelo Frigo, Charlene Wang and Manuel Tumiati. It announced an undisclosed funding round in July 2025 with Altitude Ventures, Azimut Group, Everywhere Ventures and ROI Ventures; PitchBook lists a $2 million early-stage round and 16 employees. Zyphe says Chartis Research named it a Market Disruptor in its Financial Crime and Compliance50 (FCC50) 2026 report, and Chartis lists Zyphe among the organisations on its FCC50 2026 ranking page. Named customers include Azimut, Protocol Labs, Supra, Vesseo and Twotixx.
+features:
+- AI agent desks for sanctions and PEP alerts, adverse media, UBO and EDD, transaction alerts and periodic KYC refresh, each returning evidence and a written rationale for human approval.
+- ID document and liveness checks, with NFC chip reading for ePassports and eID cards; Zyphe says it supports 4,000+ document versions from 190+ countries.
+- KYB with register cross-checks in 49 countries and territories plus all 50 US states and DC, UBO discovery at a configurable 25% threshold and linked KYC for each owner and director.
+- Sanctions, PEP and adverse media screening with ongoing monitoring, plus wallet screening and rule-based transaction monitoring.
+- Encrypted, sharded storage of personal data across distributed nodes instead of one central database, per Zyphe.
+- REST API with an OpenAPI reference, Node and browser SDKs, signed webhooks, a sandbox mode and an MCP server for AI agents.
+pricing:
+  summary: Zyphe publishes most of its prices. New self-serve accounts get a one-time $25 credit (about 80 ID checks) once business or payment details are verified. After that, ID plus liveness costs $0.30, AML screening $0.20 and proof of address $0.20 per check. AI agent reviews are priced per task, from $0.25 per resolved AML false positive to $3.00 per company and UBO review. KYB is not on the rate card, and Managed Operations and enterprise terms are quoted.
+  plans:
+  - tier: Verify
+    price: Pay per check
+    note: Self-serve KYC, KYB, AML and monitoring from the dashboard or API
+    extra: $25 one-time signup credit, no expiry
+  - tier: Investigate
+    price: Per task
+    note: AI agents resolve alerts and prepare reviews
+    extra: From $0.25 per resolved false-positive alert
+  - tier: Managed Operations
+    price: Custom
+    note: Agents plus human quality assurance on an agreed queue
+    extra: Priced by scope, volume and service level
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Signup credit
+    value: $25 one-time (about 80 ID and liveness checks), no expiry
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: ID and liveness
+    value: $0.30 per verification
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: AML screening
+    value: $0.20 per screening
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: Ongoing AML monitoring
+    value: $0.05 per subject per year
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: Proof of address
+    value: $0.20 per check
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: Wallet screening
+    value: $0.15 per screening
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: Transaction monitoring
+    value: $0.02 per transaction
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: White label
+    value: +$0.20 per check
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: AML or adverse media agent
+    value: $0.25 per false-positive alert resolved
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: Transaction alert agent
+    value: $0.40 per alert resolved
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: Company and UBO investigation agent
+    value: $3.00 per review
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: Periodic file refresh agent
+    value: $3.00 per subject file
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: EDD investigation and report
+    value: $1.00 per review round, with an agreed spending cap
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: KYB verification
+    value: Not published; priced per jurisdiction, ownership discovery billed in credits
+    kind: official
+    source: 8
+    verified: '2026-10'
+  - label: Managed Operations and enterprise
+    value: Custom; contact sales
+    kind: official
+    source: 2
+    verified: '2026-10'
+facts:
+- label: From
+  value: $0.30 per ID and liveness check
+  source: 2
+  evidence: vendor
+- label: Plans
+  value: Verify (pay per check), Investigate (per task), Managed Operations (custom)
+  source: 2
+  evidence: vendor
+- label: Founded
+  value: Not publicly disclosed
+- label: Legal entity
+  value: Zyphe Inc. (terms governed by Delaware law)
+  source: 15
+  evidence: vendor
+- label: Offices
+  value: New York, London and Milan
+  source: 14
+  evidence: vendor
+- label: Funding
+  value: Undisclosed round, July 2025 (Altitude Ventures, Azimut Group, Everywhere Ventures, ROI Ventures)
+  source: 17
+  evidence: vendor
+- label: KYB register coverage
+  value: 49 countries and territories plus all 50 US states and DC
+  source: 6
+  evidence: vendor
+- label: ID document coverage
+  value: 4,000+ document versions from 190+ countries
+  source: 7
+  evidence: vendor
+- label: Certifications
+  value: SOC 2 and ISO/IEC 27001 in progress; neither certified yet
+  source: 3
+  evidence: vendor
+pros:
+- Public rate card, with ID and liveness at $0.30 a check and AI agent reviews priced per task
+- AI agents prepare alert and case reviews with cited evidence and a written rationale, and a person signs off by default
+- KYC, KYB, screening and transaction monitoring in one self-serve platform with a sandbox, SDKs and an MCP server
+cons:
+- No SOC 2 or ISO/IEC 27001 certificate yet, and no published lab test of its liveness check
+- KYB is not on the rate card, and register checks cover 49 countries and territories plus the US
+- Young company with a short track record and only a handful of public user reviews
+alternatives:
+- slug: sumsub
+  name: Sumsub
+  best_for: All-in-One KYC and AML at Scale
+- slug: unit21
+  name: Unit21
+  best_for: AI Agents for AML Investigations
+- slug: strise
+  name: Strise
+  best_for: Agentic AML and KYB Operations
+choose_instead:
+- slug: sumsub
+  text: you need a KYC, KYB and AML vendor with iBeta-tested liveness, existing ISO/IEC 27001 and SOC 2 claims and a long record at scale.
+- slug: unit21
+  text: your main need is AI-assisted fraud and AML investigations on top of your own transaction data.
+- slug: strise
+  text: you want agentic AML and KYB operations from a vendor operating since 2016 with large Nordic banks among its customers.
+user_reviews:
+  legacy_note: null
+  praise: []
+  criticize: []
+  by_profile:
+  - Small fintech, crypto and iGaming teams that want low published per-check prices and self-serve setup are Zyphe's clearest fit.
+  - Compliance teams with large alert backlogs can pilot the AI agents on one queue, since every case still goes to a person for sign-off by default.
+  - Banks and firms whose vendor due diligence requires a SOC 2 report or ISO/IEC 27001 certificate today should wait for Zyphe's audits to finish.
+faq:
+- q: How much does Zyphe cost?
+  a: Zyphe publishes its rate card. ID plus liveness costs $0.30 a check, AML screening $0.20, proof of address $0.20 and transaction monitoring $0.02 per transaction. AI agents are priced per task, such as $0.25 per resolved AML false positive and $3.00 per company and UBO review. New self-serve accounts get a one-time $25 credit. KYB prices are not on the rate card.
+- q: Is Zyphe SOC 2 or ISO 27001 certified?
+  a: Not yet. Zyphe's security page says its SOC 2 Type I audit is targeted for October 2026, with the Type II observation period starting in Q1 2027, and that ISO/IEC 27001 Stage 1 and Stage 2 audits are planned for October to December 2026. No auditor or certification body is named.
+- q: Do Zyphe's AI agents make compliance decisions on their own?
+  a: Not by default. The agents gather evidence, cite sources and write a rationale, and a person on your team approves the case or sends it back. Zyphe says auto-pilot runs only on categories your organisation has validated and switched on, and decisions such as FIU reporting stay with your firm.
+- q: Which countries does Zyphe KYB cover?
+  a: Zyphe's documentation lists register cross-checks in 49 countries and territories, mostly in Europe plus offshore centres, China, Hong Kong and Singapore, and all 50 US states and DC. Elsewhere the KYB flow still runs, but company details and owners are declared by the applicant and not checked against a register.
+- q: How does Zyphe store personal data?
+  a: Zyphe says identity data is encrypted, split into shards and spread across storage nodes run by several providers in several jurisdictions, so it keeps no central database of customer PII. Its security page says rebuilding a record needs 29 of 100 shares. We could not check this independently.
+- q: Does Zyphe have a sandbox?
+  a: Yes. Sandbox mode is a flag on the same API, dashboard and npm SDK. Tests on members of your own team cost no credits, but sandbox runs on outside addresses are billed like production, and during the trial every sandbox event uses trial credits.
+- q: Does Zyphe have native mobile SDKs?
+  a: No. Zyphe offers Node and browser SDKs, and its documentation says there is no native iOS or Android SDK. Mobile apps create a session on their backend and load the verification flow in a WebView, with a guide for React Native.
+- q: What is the best alternative to Zyphe?
+  a: Sumsub is the closest alternative if you need iBeta-tested liveness, ISO/IEC 27001 and SOC 2 claims and a long track record. Unit21 (founded 2018) and Strise (founded 2016) also use AI for AML work and have been operating longer.
+segments: []
+capabilities: {}
+certifications:
+- name: SOC 2 (in progress)
+  what: Type I audit targeted for Oct 2026; no report issued yet
+  status: vendor_stated
+  source: 3
+- name: ISO/IEC 27001 (in progress)
+  what: Stage 1 and 2 audits targeted for Oct to Dec 2026; not certified yet
+  status: vendor_stated
+  source: 3
+user_ratings:
+- platform: G2
+  rating: 4.8
+  count: 6
+  checked: '2026-10'
+  url: https://www.g2.com/products/zyphe/reviews
+- platform: Capterra
+  rating: 5.0
+  count: 2
+  checked: '2026-10'
+  url: https://www.capterra.ca/software/1083251/Zyphe
+use_case_verdicts: []
+score_breakdown:
+- criterion: Compliance & certifications
+  weight: 25
+  score: 3.4
+  note: Zyphe's own pages say its SOC 2 and ISO/IEC 27001 audits are still in progress and neither is certified, no auditor is named, and its liveness check has no published ISO/IEC 30107-3 test.
+  evidence: vendor
+- criterion: Coverage
+  weight: 20
+  score: 4.2
+  note: Zyphe states ID coverage of 4,000+ document versions from 190+ countries, and its docs list KYB register checks in 49 countries and territories plus the US, though the KYB product page claims 240+ registries.
+  evidence: vendor
+- criterion: Pricing transparency
+  weight: 20
+  score: 4.5
+  note: The pricing page publishes per-check rates for ID, screening, monitoring and each AI agent task, but KYB is not on the rate card and Managed Operations is quoted.
+  evidence: vendor
+- criterion: Integration & API depth
+  weight: 15
+  score: 4.4
+  note: Public API reference, Node and browser SDKs, signed webhooks, a sandbox flag and an MCP server are documented, but there is no native iOS or Android SDK.
+  evidence: vendor
+- criterion: Support responsiveness
+  weight: 10
+  score: 3.9
+  note: Support runs through hello@zyphe.com and a contact form with no published hours or SLA, and eight reviews across G2 and Capterra are too few to judge responsiveness.
+  evidence: vendor
+- criterion: Track record
+  weight: 10
+  score: 3.6
+  note: Zyphe is a small company with one undisclosed early round in 2025 and no published founding year, and we found no public regulatory actions or breach disclosures.
+  evidence: independent
+hands_on: null
+sources:
+- title: Zyphe homepage
+  publisher: Zyphe
+  url: https://www.zyphe.com
+  accessed: '2026-10'
+- title: Pricing
+  publisher: Zyphe
+  url: https://www.zyphe.com/pricing
+  accessed: '2026-10'
+- title: Security
+  publisher: Zyphe
+  url: https://www.zyphe.com/security
+  accessed: '2026-10'
+- title: Zyphe developer documentation
+  publisher: Zyphe
+  url: https://docs.zyphe.com
+  accessed: '2026-10'
+- title: KYB guide
+  publisher: Zyphe
+  url: https://docs.zyphe.com/docs/guides/kyb/
+  accessed: '2026-10'
+- title: KYB country coverage
+  publisher: Zyphe
+  url: https://docs.zyphe.com/docs/guides/kyb/country-coverage
+  accessed: '2026-10'
+- title: KYC software
+  publisher: Zyphe
+  url: https://www.zyphe.com/product/kyc-software
+  accessed: '2026-10'
+- title: KYB software
+  publisher: Zyphe
+  url: https://www.zyphe.com/product/kyb-software
+  accessed: '2026-10'
+- title: AML software
+  publisher: Zyphe
+  url: https://www.zyphe.com/product/aml-software
+  accessed: '2026-10'
+- title: AI agents
+  publisher: Zyphe
+  url: https://www.zyphe.com/agents
+  accessed: '2026-10'
+- title: SDK overview
+  publisher: Zyphe
+  url: https://docs.zyphe.com/docs/guides/sdk/
+  accessed: '2026-10'
+- title: Sandbox mode
+  publisher: Zyphe
+  url: https://docs.zyphe.com/guides/sandbox-mode
+  accessed: '2026-10'
+- title: Customers
+  publisher: Zyphe
+  url: https://www.zyphe.com/customers
+  accessed: '2026-10'
+- title: About us
+  publisher: Zyphe
+  url: https://www.zyphe.com/about-us
+  accessed: '2026-10'
+- title: Terms and conditions
+  publisher: Zyphe
+  url: https://www.zyphe.com/terms-and-conditions
+  accessed: '2026-10'
+- title: Contact
+  publisher: Zyphe
+  url: https://www.zyphe.com/contact
+  accessed: '2026-10'
+- title: Zyphe announces new funding to accelerate growth
+  publisher: Zyphe
+  url: https://www.zyphe.com/resources/news/zyphe-announces-new-funding-to-accelerate-growth
+  accessed: '2026-10'
+- title: Zyphe company profile
+  publisher: PitchBook
+  url: https://pitchbook.com/profiles/company/496125-19
+  accessed: '2026-10'
+- title: Zyphe company profile
+  publisher: Dealroom
+  url: https://app.dealroom.co/companies/zyphe
+  accessed: '2026-10'
+- title: 'Financial Crime and Compliance50 (FCC50) 2026: Ranking and Award Winners'
+  publisher: Chartis Research
+  url: https://www.chartis-research.com/financial-crime/7947472/financial-crime-and-compliance50-fcc50-2026-ranking-and-award-winners
+  accessed: '2026-10'
+- title: Zyphe named a Market Disruptor in Chartis' Financial Crime and Compliance50 2026
+  publisher: Zyphe
+  url: https://www.zyphe.com/resources/news/zyphe-chartis-financial-crime-and-compliance2026
+  accessed: '2026-10'
+- title: Zyphe reviews
+  publisher: G2
+  url: https://www.g2.com/products/zyphe/reviews
+  accessed: '2026-10'
+- title: Zyphe
+  publisher: Capterra
+  url: https://www.capterra.ca/software/1083251/Zyphe
+  accessed: '2026-10'
+- title: Privacy-first KYB verification for Zyphe
+  publisher: CompanyData
+  url: https://companydata.com/cases/privacy-first-kyb-verification-zyphe/
+  accessed: '2026-10'
+- title: Michelangelo Frigo, author page
+  publisher: Zyphe
+  url: https://www.zyphe.com/authors/michelangelo-frigo
+  accessed: '2026-10'
+- title: News
+  publisher: Zyphe
+  url: https://www.zyphe.com/resources/news
+  accessed: '2026-10'
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://www.zyphe.com
+  - https://www.linkedin.com/company/zyphe/
+  - https://x.com/zyphe_official
+  - https://github.com/zyphelabs
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- 'New record, first review. Zyphe asked to be listed; link.type set to none (no commercial relationship recorded).'
+- 'Founded: not stated on any Zyphe page. Dealroom gives 2021 in its AI summary and a January 2025 launch date; PitchBook preview shows no year. Shown as Not publicly disclosed.'
+- 'HQ conflicts: about page says New York, London and Milan; the July 2025 funding release is datelined San Francisco; Dealroom says New York City (header) and San Francisco (summary); PitchBook and The Wealth Mosaic give a Camden, Delaware registered-agent address. Facts show offices from the about page and the legal entity from the terms.'
+- 'Funding amount: Zyphe and Dealroom say undisclosed; PitchBook preview says $2M early-stage round dated 1 Apr 2025 and 16 employees. Zyphe release dated 17 Jul 2025 (published 4 Aug 2025). PitchBook figure used only in what_is with attribution.'
+- 'Leadership: co-founders Michelangelo Frigo, Charlene Wang and Manuel Tumiati come from Zyphe''s own author page; CEO title not confirmed on any page.'
+- 'Chartis FCC50 2026: Chartis''s ranking and award winners page (9 Mar 2026) tags Zyphe among 98 organisations and links an organisation page for Zyphe, but the ranking itself is behind a subscription. The tag list is longer than 50, so the tag alone does not show a top-50 place. The "Market Disruptor" designation comes only from Zyphe''s news post (10 Mar 2026).'
+- 'SOC 2 and ISO/IEC 27001: in progress per the security page and KYC product page ("Neither is certified today"). Re-check at the next 90-day review; Type I and ISO Stage 1 were targeted for October 2026.'
+- 'Liveness: no iBeta, BixeLab or ISO/IEC 30107-3 claim found. Zyphe says liveness is built in-house.'
+- 'Data storage: security page says thousands of nodes and 29 of 100 shares to rebuild a record; the CompanyData case study says tens of thousands of nodes; the decentralization docs give no threshold and say data is hosted across multiple providers and jurisdictions. Storage network not named. Security page cites both AES-GCM-256 and AES-256. All vendor-stated.'
+- 'KYB coverage conflict: docs list 49 countries and territories plus 51 US entries (100 jurisdictions); the KYB product page claims 240+ official registries and a "190+ countries" heading. Docs figure used. Lithuania, Maryland, Antigua and Barbuda, British Virgin Islands and Isle of Man return no directors, shareholders or UBOs. Some registers (and China) take 1 to 3 business days or more. KYB register data comes live from CompanyData per its case study.'
+- 'ID coverage: 4,000+ document versions from 190+ countries is from the KYC product page; the supported-documents docs give no totals. Accuracy figures (99.8% document matching on live clients, over 99% OCR) not used.'
+- 'Sanctions lists: only OFAC, UN and EU are named, in a product graphic; "100K+ lists" is unexplained. List data provider not named.'
+- 'Free tier: the pricing page offers a one-time $25 credit after business or payment-method verification, not a standing free tier. Sandbox runs on internal team members are free; outside addresses and all trial-period sandbox events use credits.'
+- 'Capterra still shows old pricing (Verify & Scale from $295 a month, free version and trial); the Zyphe pricing page (rates updated 14 Oct 2026) is used.'
+- 'User ratings: G2 4.8 from 6 reviews (no review text visible); Capterra Canada 5.0 from 2 reviews. Too few to state themes.'
+- 'Customers: Azimut (also an investor), Protocol Labs, Supra, Vesseo and Twotixx have case studies or named quotes. Logo wall items (EBSI, ETHDenver, Pitchdrive VC, Altitude and others) are labelled clients and partners and not used as customers. Azimut figures (1,000 analyst hours, 50,000 false positives closed) not used.'
+- 'Support: hello@zyphe.com and a contact form only; no hours, phone or SLA published. Capterra reviewers praise onboarding support (2 reviews).'
+- 'Regulatory: no enforcement action, breach disclosure or litigation involving Zyphe found in searches to Oct 2026. Security page states no reported breach of identity data to date.'
+- 'Integrations: the homepage shows 31 integration logos and says they do not imply partnership; not used.'
+- 'Wikidata id not found; kg_mid unknown. LinkedIn page blocked to the fetcher.'
+application_category: Identity Verification Software
+author: andrii-klymenko
+directory_categories:
+- KYB
+- AML
+- Identity Verification
+- Cheap KYC
