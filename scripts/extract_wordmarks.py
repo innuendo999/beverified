@@ -1,6 +1,7 @@
 """Extract transparent wordmarks from the old banner images in src/assets/img/logos.
 Writes candidates to an output folder for review; does not touch the site.
 python3 scripts/extract_wordmarks.py <outdir> [slug ...]
+python3 scripts/extract_wordmarks.py --file <image> --slug <slug> [--top-only]   (logo supplied by hand → src/assets/img/wordmarks/<slug>.png)
 """
 import sys, pathlib, collections
 from PIL import Image
@@ -14,6 +15,13 @@ TOP_ONLY = {"advance-ai"}  # drop the tagline line under the wordmark
 
 def extract(path, out):
     im = Image.open(path).convert("RGBA"); a = np.asarray(im).astype(float)
+    if (a[..., 3] < 250).mean() > 0.05:
+        # already transparent: just crop to the logo
+        bbox = Image.fromarray((a[..., 3] > 20).astype("uint8") * 255).getbbox()
+        img = im.crop(bbox)
+        if img.height > 120: img = img.resize((round(img.width * 120 / img.height), 120), Image.LANCZOS)
+        img.save(out, optimize=True)
+        return f"ok {img.width}x{img.height} transparent source"
     rgb = a[..., :3]; h, w = rgb.shape[:2]
     border = np.concatenate([rgb[0], rgb[-1], rgb[:, 0], rgb[:, -1]])
     bg = np.median(border, axis=0)
@@ -60,6 +68,15 @@ def extract(path, out):
     img.save(out, optimize=True)
     return f"ok {img.width}x{img.height} {'recoloured' if dark_bg else 'original colours'}"
 
+if "--file" in sys.argv:
+    a = sys.argv; f = pathlib.Path(a[a.index("--file") + 1]); slug = a[a.index("--slug") + 1]
+    if "--top-only" in a: TOP_ONLY.add(f.stem)
+    out = ROOT / "src/assets/img/wordmarks" / f"{slug}.png"
+    print(slug, extract(f, out))
+    im = Image.open(out)
+    if im.height > 96: im = im.resize((round(im.width * 96 / im.height), 96), Image.LANCZOS)
+    im.quantize(colors=128, method=Image.FASTOCTREE).save(out, optimize=True)
+    sys.exit(0)
 outdir = pathlib.Path(sys.argv[1]); outdir.mkdir(parents=True, exist_ok=True)
 only = set(sys.argv[2:])
 for f in sorted(SRC.iterdir()):
