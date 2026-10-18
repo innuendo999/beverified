@@ -1017,6 +1017,23 @@ liveness-detection:
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.6
     segments: []
+  - slug: paravision
+    name: Paravision
+    award: Best for Self-Hosted Face Biometrics
+    tagline: Passive liveness and deepfake detection sold as SDKs and containers to platforms that build their own verification flow.
+    coverage: Global
+    size: Mid-market to Enterprise
+    pros:
+    - Liveness tested by iBeta to ISO/IEC 30107-3 Level 1 and Level 2 (2023 versions)
+    - DHS RIVR 2025 PAD results match the figures Paravision gives for its entry
+    - Runs on-premises, in your own cloud, on phones or on edge chips
+    cons:
+    - A component supplier, with no document checks or hosted flow of its own
+    - No published pricing, trial or public developer documentation
+    - No iBeta letter yet for the current Liveness 2.0
+    legacy_price_shown: Custom pricing
+    legacy_rating_shown: null
+    segments: []
   - slug: null
     name: iProov
     award: null
@@ -1415,8 +1432,25 @@ age-verification:
     - States German KJM approval
     cons:
     - Not a full KYC or AML platform, so regulated onboarding needs a second vendor
-    - Lowest overall score in this list
+    - Few independent user reviews to judge support by
     - No public pricing
+    legacy_price_shown: Custom pricing
+    legacy_rating_shown: null
+    segments: []
+  - slug: paravision
+    name: Paravision
+    award: Best Age Estimation Engine to Build On
+    tagline: Face age estimation licensed as an SDK or container, certified by ACCS at Level 3 and used inside Persona's age checks.
+    coverage: Global
+    size: null
+    pros:
+    - ACCS Level 3 (Highly Effective Compliance) age estimation, valid to March 2027
+    - Runs on-premises or in your own cloud, so face images stay in your systems
+    - Comes with iBeta-tested liveness and deepfake detection from the same vendor
+    cons:
+    - An engine to integrate, not a hosted age check with document or database fallback
+    - No public pricing
+    - Lowest overall score in this list
     legacy_price_shown: Custom pricing
     legacy_rating_shown: null
     segments: []
