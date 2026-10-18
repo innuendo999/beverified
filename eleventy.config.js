@@ -71,7 +71,7 @@ export default function (eleventyConfig) {
 
   // 5-segment rating meter: [100, 100, 100, 100, 60] for 4.6
   eleventyConfig.addFilter("meter", (score) =>
-    [0, 1, 2, 3, 4].map((i) => Math.round(Math.max(0, Math.min(1, Number(score) - i)) * 100)));
+    [0, 1, 2, 3, 4].map((i) => Math.round(Math.max(0, Math.min(1, Number(score) - i)) * 10) * 10));
 
   // "2026-07-25" -> "Jul 25, 2026"; "2026-07" -> "Jul 2026"
   eleventyConfig.addFilter("displayDate", (iso) => {

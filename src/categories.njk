@@ -75,7 +75,7 @@ layout: v3.njk
           <div class="rank-card__score">
             {%- if e.q and e.q.score != null %}
             <div role="img" aria-label="{{ e.q.score | score1 }} out of 5"><span class="num-big">{{ e.q.score | score1 }}</span> <span class="c-muted">/ 5</span></div>
-            <div class="meter" aria-hidden="true">{% for w in (e.q.score | meter) %}<span><i style="width:{{ w }}%"></i></span>{% endfor %}</div>
+            <div class="meter" aria-hidden="true">{% for w in (e.q.score | meter) %}<span><i class="w-{{ w }}"></i></span>{% endfor %}</div>
             {%- else %}<span class="pill">Review coming</span>{% endif %}
           </div>
           <div class="rank-card__foot">
@@ -95,7 +95,7 @@ layout: v3.njk
       <h2 id="how-h" class="h-section">How we ranked this category</h2>
       <div class="card weights">
         <div>
-          {%- for r in site.v3.rubric %}<div class="weights__row"><span>{{ r.name }}</span><span class="bar" aria-hidden="true"><i style="width:{{ r.weight * 4 }}%"></i></span><span>{{ r.weight }}%</span></div>{% endfor %}
+          {%- for r in site.v3.rubric %}<div class="weights__row"><span>{{ r.name }}</span><span class="bar" aria-hidden="true"><i class="w-{{ r.weight * 4 }}"></i></span><span>{{ r.weight }}%</span></div>{% endfor %}
           <p class="mt-12 fs-14"><a href="{{ site.v3.methodologyHref }}">Full methodology {{ site.v3.methodologyVersion }} →</a></p>
         </div>
         <div class="weights__key">

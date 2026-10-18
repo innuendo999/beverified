@@ -54,7 +54,7 @@ layout: v3.njk
         <span class="score-card__num">{{ p.score | score1 }}</span><span class="score-card__of">/ 5</span>
         {%- if p.grade %}<span class="score-card__grade">{{ p.grade }}</span>{% endif %}
       </div>
-      <div class="meter" aria-hidden="true">{% for w in (p.score | meter) %}<span><i style="width:{{ w }}%"></i></span>{% endfor %}</div>
+      <div class="meter" aria-hidden="true">{% for w in (p.score | meter) %}<span><i class="w-{{ w }}"></i></span>{% endfor %}</div>
       {%- if hasBreakdown %}<div class="score-card__foot"><a href="#score">See breakdown ↓</a></div>{% endif %}
     </div>
     {%- endif %}

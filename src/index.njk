@@ -28,7 +28,7 @@ layout: v3.njk
             </div>
             <div class="picks__score" role="img" aria-label="{{ q.p.score | score1 }} out of 5">
               <div aria-hidden="true"><b>{{ q.p.score | score1 }}</b><small>/ 5</small></div>
-              <div class="meter meter--sm" aria-hidden="true">{% for w in (q.p.score | meter) %}<span><i style="width:{{ w }}%"></i></span>{% endfor %}</div>
+              <div class="meter meter--sm" aria-hidden="true">{% for w in (q.p.score | meter) %}<span><i class="w-{{ w }}"></i></span>{% endfor %}</div>
             </div>
           </div>
         </li>
@@ -92,7 +92,7 @@ layout: v3.njk
         {%- if loop.first %}<span class="pill pill--dark self-start mt-12">◆ Editor's choice</span>{% endif %}
         <div class="top-card__name">{{ p.name }}</div>
         <div class="top-card__score" aria-hidden="true"><b>{{ p.score | score1 }}</b><small>/ 5</small></div>
-        <div class="meter meter--sm" aria-hidden="true">{% for w in (p.score | meter) %}<span><i style="width:{{ w }}%"></i></span>{% endfor %}</div>
+        <div class="meter meter--sm" aria-hidden="true">{% for w in (p.score | meter) %}<span><i class="w-{{ w }}"></i></span>{% endfor %}</div>
         {%- if p.best_for %}<span class="pill self-start mt-16">Best for · {{ p.best_for }}</span>{% endif %}
         <p class="top-card__reason">{{ p.tagline }}</p>
         <span class="top-card__go">Read review →</span>
@@ -107,7 +107,7 @@ layout: v3.njk
   <div class="card weights p-32">
     <div>
       <div class="fs-14 c-muted mb-16">Weights · {{ site.v3.methodologyVersion }}</div>
-      {%- for r in site.v3.rubric %}<div class="weights__row"><span>{{ r.name }}</span><span class="bar" aria-hidden="true"><i style="width:{{ r.weight * 4 }}%"></i></span><span>{{ r.weight }}%</span></div>{% endfor %}
+      {%- for r in site.v3.rubric %}<div class="weights__row"><span>{{ r.name }}</span><span class="bar" aria-hidden="true"><i class="w-{{ r.weight * 4 }}"></i></span><span>{{ r.weight }}%</span></div>{% endfor %}
     </div>
     <div class="weights__key gap-24">
       <div><div class="c-muted mb-4">Re-verification</div><div class="fs-15 c-ink">{{ home.recheck }}. "Last verified" changes only after a real re-check.</div></div>

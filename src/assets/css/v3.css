@@ -708,3 +708,22 @@ a.chip:hover { border-color: var(--line-hover); color: var(--ink); text-decorati
 .pb-24 { padding-bottom: 24px !important; }
 .self-start { align-self: flex-start !important; }
 .ta-left { text-align: left !important; }
+
+/* Rating meter segments (one-decimal scores fill in steps of 10%) and rubric weight bars (weight x 4, weights are multiples of 5) */
+.meter .w-0 { width: 0%; }
+.meter .w-10 { width: 10%; }
+.meter .w-20 { width: 20%; }
+.meter .w-30 { width: 30%; }
+.meter .w-40 { width: 40%; }
+.meter .w-50 { width: 50%; }
+.meter .w-60 { width: 60%; }
+.meter .w-70 { width: 70%; }
+.meter .w-80 { width: 80%; }
+.meter .w-90 { width: 90%; }
+.meter .w-100 { width: 100%; }
+.bar .w-0 { width: 0%; }
+.bar .w-20 { width: 20%; }
+.bar .w-40 { width: 40%; }
+.bar .w-60 { width: 60%; }
+.bar .w-80 { width: 80%; }
+.bar .w-100 { width: 100%; }
