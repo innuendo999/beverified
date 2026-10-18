@@ -28,6 +28,8 @@ All pages are generated from templates + data. There is no hand-written page HTM
 | Blog index `/blog/` and archives `/category/<section>/` | `src/blog.njk` + `src/_data/blogArchives.js` |
 | Legacy URLs `/author/beverified/` (refresh to author page), `/contact-us/` | `src/legacy/` |
 | Font | self-hosted `src/assets/fonts/Geist-Variable.woff2`. Keep the site free of third-party requests, cookies and analytics: the privacy policy promises it |
+| Favicon, touch icons, manifest, default og:image (1200x630) | `src/assets/brand/`, `src/favicon.ico`; a page can set `ogImage` in front matter |
+| `/llms.txt` | `src/llms.njk`, generated from the same data (rankings, providers, articles) |
 | For providers page | `src/placement-options/index.njk` |
 | Field definitions | `docs/data-schema.md` |
 | Fact re-check of a provider (every 90 days) | `docs/verification-spec.md`, validate `node scripts/checks/provider.mjs <slug>`, report in `reports/verification/<slug>.md`. `last_verified` = fact re-check, `updated` = content edit |
@@ -46,6 +48,7 @@ Planned, not built yet: topic pages, comparison pages (`comparisons.yml`), `enti
 - `npm run build` — build into `_site/`
 - `npm run serve` — local preview
 - `npm run check` — content + internal link checks on `_site/` (report only for now; CI will switch to `--strict`)
+- `npm run check:html` — HTML audit of `_site/`: authoring footprints, landmarks, headings, ids, ARIA references, alt text, link names
 - `npm run gaps` — regenerate `reports/content-gaps.csv`
 - `npm run inventory` / `npm run extract` — one-off migration scripts (Python: bs4, PyYAML). `extract` overwrites `src/_data`; do not re-run after the data has been edited by hand.
 

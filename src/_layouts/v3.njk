@@ -17,7 +17,17 @@
 <meta property="og:description" content="{{ seoDescription }}">
 {%- endif %}
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-<meta name="twitter:card" content="summary">
+<meta property="og:site_name" content="BeVerified">
+<meta property="og:image" content="{{ site.url }}{{ ogImage or '/assets/brand/og-default.png' }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="BeVerified: independent reviews of KYC, KYB and AML providers">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
+<link rel="manifest" href="/assets/brand/site.webmanifest">
+<meta name="theme-color" content="#F7F6F3">
 <link rel="preload" href="/assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/v3.css">
 {%- if jsonld %}

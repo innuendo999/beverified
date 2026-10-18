@@ -3,13 +3,14 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "eleventy",
+    "build": "rm -rf _site && eleventy",
     "serve": "eleventy --serve",
     "check": "node scripts/checks/content.mjs && node scripts/checks/links.mjs",
     "gaps": "node scripts/checks/gaps.mjs",
     "inventory": "python3 scripts/inventory.py",
     "extract": "python3 scripts/extract.py",
-    "check:strict": "node scripts/checks/content.mjs --strict && node scripts/checks/links.mjs --strict"
+    "check:strict": "node scripts/checks/content.mjs --strict && node scripts/checks/links.mjs --strict",
+    "check:html": "python3 scripts/checks/html_audit.py --strict"
   },
   "devDependencies": {
     "@11ty/eleventy": "3.1.2",

@@ -1,0 +1,54 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+{#- llms.txt (https://llmstxt.org). Generated from the same data as the site; do not edit by hand. -#}
+# BeVerified
+
+> BeVerified (beverified.org) is an independent review and ranking site for KYC, KYB, AML screening, liveness and identity verification software. Every provider is scored on one published rubric, every fact on a review is labelled with its source and evidence level, and reviews are re-checked about every 90 days. Payment never changes scores or ranking order.
+
+Key facts for citation:
+- Scores are editorial opinions from 1 to 5, weighted: {% for r in site.v3.rubric %}{{ r.name }} {{ r.weight }}%{% if not loop.last %}, {% endif %}{% endfor %}. Methodology {{ site.v3.methodologyVersion }}: {{ site.url }}/methodology/
+- Evidence labels: {% for k, e in site.v3.evidence %}"{{ e.label }}" ({{ e.desc }}){% if not loop.last %}; {% endif %}{% endfor %}.
+- Each review shows "Last verified" (date the facts were re-checked) and, if later, "Updated" (date the text changed).
+- BeVerified does not verify identities or run background checks, and is not BeenVerified.
+- Contact and corrections: support@beverified.org
+
+## Rankings by use case
+{% for u in home.use_cases %}{% set cat = allCategories[u.slug] %}{% if cat %}
+- [{{ cat.seo.h1 }}]({{ site.url }}{{ cat.url }}): {{ u.def }} {{ rankings[u.slug].providers.length }} providers ranked.{% endif %}{% endfor %}
+- [All use cases]({{ site.url }}/use-cases/)
+
+## Rankings by country
+{% for r in home.regions %}{% if r.slug and allCategories[r.slug] %}
+- [{{ allCategories[r.slug].seo.h1 }}]({{ site.url }}{{ allCategories[r.slug].url }}): regulator {{ r.reg }}, {{ rankings[r.slug].providers.length }} providers ranked.{% endif %}{% endfor %}
+- [All regions]({{ site.url }}/regions/)
+
+## Provider reviews
+{% for p in (allProviders | byName) %}
+- [{{ p.name }} review]({{ site.url }}/providers/{{ p.slug }}/): {{ p.tagline }}. Score {{ p.score | score1 }}/5{% if p.last_verified %}, last verified {{ p.last_verified }}{% endif %}.{% endfor %}
+- [All providers A to Z]({{ site.url }}/providers/)
+
+## Guides
+{% for a in collections.articles | inSection("guide") %}
+- [{{ a.data.title }}]({{ site.url }}{{ a.url }}): {{ a.data.seoDescription }}{% endfor %}
+
+## Research
+{% for a in collections.articles | inSection("publications") %}
+- [{{ a.data.title }}]({{ site.url }}{{ a.url }}): {{ a.data.seoDescription }}{% endfor %}
+
+## News
+{% for a in collections.articles | inSection("news") %}
+- [{{ a.data.title }}]({{ site.url }}{{ a.url }}): {{ a.data.seoDescription }}{% endfor %}
+
+## About
+- [Methodology]({{ site.url }}/methodology/): how scores are calculated, evidence levels, re-checks, corrections and how BeVerified makes money.
+- [About BeVerified]({{ site.url }}/about/): who runs the site and why it exists.
+- [Andrii Klymenko]({{ site.url }}/authors/andrii-klymenko/): author and editor of the reviews.
+- [For providers]({{ site.url }}/placement-options/): how vendors can claim a profile and submit corrections.
+
+## Optional
+- [Blog]({{ site.url }}/blog/)
+- [Terms of use]({{ site.url }}/terms/)
+- [Privacy policy]({{ site.url }}/privacy/)
+- [Sitemap]({{ site.url }}/sitemap.xml)

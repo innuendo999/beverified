@@ -13,7 +13,7 @@ layout: v3.njk
       {%- for t in toc %}<a href="#{{ t.id }}">{{ t.title | safe }}</a>{% endfor %}
     </nav>
     {%- else %}<div></div>{% endif %}
-    <article class="art">
+    <main id="main" class="art"><article>
       <header class="art__head">
         <span class="pill">{{ section | sectionLabel }}</span>
         <h1 class="h-display art__h1">{{ title }}</h1>
@@ -76,7 +76,7 @@ layout: v3.njk
         </div>
       </section>
       {%- endif %}
-    </article>
+    </article></main>
   </div>
 
   {%- if related.length %}

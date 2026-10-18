@@ -15,10 +15,17 @@ export default function (eleventyConfig) {
   // Static files copied as-is.
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/CNAME");
+  eleventyConfig.addPassthroughCopy("src/favicon.ico");
   eleventyConfig.addPassthroughCopy("src/googlecb6dc6a16be14e4c.html");
 
   // Passthrough files must not also be processed as templates.
   eleventyConfig.ignores.add("src/googlecb6dc6a16be14e4c.html");
+
+  // Plain-text outputs (llms.txt): undo Nunjucks HTML escaping.
+  eleventyConfig.addTransform("txt-unescape", function (content) {
+    if (!(this.page.outputPath || "").endsWith(".txt")) return content;
+    return content.replace(/&amp;/g, "&").replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, "<").replace(/&gt;/g, ">");
+  });
 
   // ---- Articles (src/guide, src/news, src/publications). Spec: docs/article-spec.md ----
   eleventyConfig.amendLibrary("md", (md) => {
@@ -27,6 +34,12 @@ export default function (eleventyConfig) {
       for (let i = 0; i < t.length; i++) {
         if (t[i].type === "heading_open" && (t[i].tag === "h2" || t[i].tag === "h3") && !t[i].attrGet("id"))
           t[i].attrSet("id", slugify(t[i + 1].content));
+      }
+      // Tables have no caption in Markdown: label them with the nearest preceding heading.
+      let lastHeading = "";
+      for (let i = 0; i < t.length; i++) {
+        if (t[i].type === "heading_open") lastHeading = t[i + 1].content;
+        if (t[i].type === "table_open" && !t[i].attrGet("aria-label") && lastHeading) t[i].attrSet("aria-label", lastHeading);
       }
     });
   });
