@@ -191,6 +191,23 @@ aml:
     legacy_price_shown: From $0.20/screening
     legacy_rating_shown: null
     segments: []
+  - slug: amlwatcher
+    name: AML Watcher
+    award: Best for On-Premises Screening
+    tagline: Sanctions, PEP and adverse media screening on its own watchlist data, delivered by API, in-country hosting or on-premises.
+    coverage: Global
+    size: SMB to Mid-market
+    pros:
+    - Sanctions data refreshed every 15 minutes, across 215+ regimes and 3,500+ watchlists, per AML Watcher
+    - Cloud, in-country or on-premises deployment, including in-Kingdom hosting for Saudi customers
+    - Public REST API docs with webhooks, bulk search and an MCP server
+    cons:
+    - No prices on the vendor's own pricing page; $95 and $450 a month appear only on G2 and Capterra
+    - PEP and adverse media totals differ between its own pages
+    - ISO/IEC 27001 is vendor-stated and there is no SOC 2 claim
+    legacy_price_shown: Not published
+    legacy_rating_shown: null
+    segments: []
   - slug: null
     name: Refinitiv World-Check
     award: Best for Sanctions Screening
