@@ -174,6 +174,23 @@ aml:
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.5
     segments: []
+  - slug: zyphe
+    name: Zyphe
+    award: Best for AI Alert Review
+    tagline: AML screening and monitoring with AI agents that clear false-positive alerts and write up each case for a human to approve.
+    coverage: Global
+    size: SMB to Mid-market
+    pros:
+    - Published per-task prices, from $0.25 per resolved false-positive alert
+    - Every agent case carries cited evidence and a written rationale, with human sign-off by default
+    - Screening at $0.20, ongoing monitoring at $0.05 per subject a year and transaction monitoring at $0.02
+    cons:
+    - Only OFAC, UN and EU lists are named; the list data provider is not disclosed
+    - No SOC 2 report or ISO/IEC 27001 certificate yet
+    - Young vendor with a short track record and few public reviews
+    legacy_price_shown: From $0.20/screening
+    legacy_rating_shown: null
+    segments: []
   - slug: null
     name: Refinitiv World-Check
     award: Best for Sanctions Screening
@@ -438,6 +455,23 @@ cheap-kyc:
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.4
     segments: []
+  - slug: zyphe
+    name: Zyphe
+    award: Lowest Published Per-Check Price
+    tagline: Self-serve KYC at $0.30 per ID and liveness check, with a $25 signup credit and no monthly fee.
+    coverage: Global, 190+ countries
+    size: SMB
+    pros:
+    - $0.30 per ID and liveness check, published
+    - $25 one-time signup credit with no expiry and no monthly fee
+    - Add-ons priced per check, such as AML screening at $0.20
+    cons:
+    - Credit is issued only after business or payment-method verification
+    - No SOC 2 or ISO/IEC 27001 certificate yet
+    - Short track record and few public reviews
+    legacy_price_shown: From $0.30/verification
+    legacy_rating_shown: null
+    segments: []
   - slug: null
     name: Ondato
     award: Self-Serve EU Option
@@ -685,6 +719,23 @@ identity-verification:
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.5
     segments: []
+  - slug: zyphe
+    name: Zyphe
+    award: Best for Privacy-First Storage
+    tagline: Document and liveness checks with personal data encrypted and split across distributed storage nodes, per Zyphe.
+    coverage: Global, 190+ countries
+    size: SMB to Mid-market
+    pros:
+    - ID plus liveness at a published $0.30 per check
+    - 4,000+ document versions from 190+ countries, with NFC chip reading, per Zyphe
+    - No central store of customer PII, per Zyphe
+    cons:
+    - No published ISO/IEC 30107-3 liveness test
+    - No native iOS or Android SDK; mobile apps use a WebView
+    - Storage and coverage claims are vendor-stated
+    legacy_price_shown: From $0.30/verification
+    legacy_rating_shown: null
+    segments: []
 india:
   title: Best KYC & AML Providers for India in 2026
   providers:
@@ -842,6 +893,23 @@ kyb:
     - No UBO register data; possible owners come mainly from state filings
     - SOC 2 Type 2 is vendor-stated, and there are almost no public user reviews
     legacy_price_shown: From $1.50/KYB match
+    legacy_rating_shown: null
+    segments: []
+  - slug: zyphe
+    name: Zyphe
+    award: Best for Agent-Prepared KYB Reviews
+    tagline: KYB with register cross-checks in 49 countries and territories plus the US, and AI agents that prepare UBO reviews for human sign-off, per Zyphe.
+    coverage: Strongest in Europe and US
+    size: SMB to Mid-market
+    pros:
+    - UBO discovery at a configurable 25% threshold, with linked KYC for every owner and director
+    - AI agent prepares company and UBO reviews for $3.00 each, with cited evidence
+    - Self-serve setup with a sandbox, Node and browser SDKs and an MCP server
+    cons:
+    - KYB prices are not on the published rate card
+    - Register checks cover 49 countries and territories plus the US; elsewhere data is applicant-declared
+    - SOC 2 and ISO/IEC 27001 are still in progress
+    legacy_price_shown: From $3.00/UBO review
     legacy_rating_shown: null
     segments: []
   - slug: null
