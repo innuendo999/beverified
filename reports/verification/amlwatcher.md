@@ -116,3 +116,14 @@ Note for the owner: `From $95/mo` is a vendor-supplied G2 and Capterra figure, n
 ## Score flag
 
 None. New record. At the next review, open the ISO/IEC 27001 certificate and the pricing page in a browser; both could raise the score.
+
+## Update 2026-10-18: ISO/IEC 27001 confirmed
+
+The editor supplied the certificate PDF linked from amlwatcher.com (our fetcher is blocked by robots.txt).
+- Certificate AMER800493, ISO/IEC 27001:2022, holder AML Watcher.com LLC, 8 The Green #16077, Dover, DE 19901 (same address as Risk Watcher LLC in the terms)
+- Scope: ISMS for the design, development, delivery and support of cloud-based and API-driven AML and KYC compliance services, including transaction monitoring, global risk screening and fraud detection; SOA v1.0 dated 26/01/2026
+- Issued 08/04/2026, surveillance 07/04/2027, recertification 07/04/2029
+- Issuer: Americo Quality Standards Registech Pvt. Ltd.; UAF accreditation mark CM-MS-7820 and IAF MLA mark. UAF is listed by IAF as an MLA signatory for ISO/IEC 27001 (ISMS) since 09 Aug 2022.
+- Not yet checked in the Americo online register (form-based).
+
+Result: certification status vendor_stated → confirmed; compliance sub-score 3.9 → 4.3; score 4.0 → 4.1 (Good). AML ranking: AML Watcher (4.1) now ranks above Zyphe (4.0). Card con updated.
