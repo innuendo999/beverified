@@ -1,0 +1,330 @@
+slug: enigma
+name: Enigma
+alternate_names:
+- Enigma Technologies
+status: published
+seo:
+  title: 'Enigma Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Enigma review: US business identity data and KYB API, with a published rate card from $1.50 per KYB match. Features, pricing, pros & cons, alternatives.'
+  h1: 'Enigma Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: null
+  background: null
+  wordmark: null
+tagline: US business identity data and KYB API with a published per-match rate card
+score: 4.4
+grade: Very Good
+primary_category: kyb
+categories:
+- kyb
+link:
+  url: https://www.enigma.com
+  type: none
+last_verified: '2026-10-18'
+updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+verdict: Enigma is a strong pick for teams onboarding US small businesses that want KYB by API and a price list they can read before talking to sales. It matches businesses against more than 100 million registrations across all 52 US jurisdictions, adds card revenue and web signals to show whether a business is actually operating, and charges $1.50 or $2.50 per match, with no charge when nothing matches. The catch is scope. KYB is US only, and Enigma says it has no plans to expand it, so it works best as the US layer in a multi-vendor setup. Its SOC 2 Type 2 claim is vendor-stated, and it has almost no public user reviews.
+what_is:
+- Enigma Technologies is a New York data company founded in 2011 by Hicham Oudghiri and Marc DaCosta. It started out publishing public government data and now sells data on the identity and financial health of US small and medium businesses. It raised a $95 million round in September 2018 led by NEA, with BB&T, Capital One Growth Ventures, MetLife and Third Point among the new investors. Its products cover KYB (Identify and Verify), sanctions and PEP screening for customers and transactions, enrichment and card revenue data for underwriting and sales, and a government records archive.
+- Enigma resolves businesses to one profile in what it calls an identity graph, linking registrations, brands, operating locations, officers and card transaction data. It says it covers every US business and sees 40% of US card volume across the top 60 issuing banks. Logos on its site include Capital One, Chase, Truist, Ramp, Alloy and Gusto, and its published case studies cover Ramp, Wisetack, Findigs and FMCG Direct.
+features:
+- KYB Identify confirms a business is real and operating; KYB Verify adds the full Secretary of State record and registration status.
+- Business registration data across 52 US jurisdictions (50 states, DC and Puerto Rico), from 200+ sources.
+- Optional TIN/EIN and SSN verification, plus OFAC sanctions and PEP watchlist screening.
+- Transaction screening for wires, ACH, Zelle and similar payments, with ongoing monitoring of customers.
+- Card revenue, operating status, location and firmographic data for underwriting and sales targeting.
+- GraphQL API, a web Console, an MCP server for AI agents and a KYB agent on Google Cloud Marketplace.
+pricing:
+  summary: Enigma publishes its prices. Data is billed in credits at 1 cent each. There is a Free plan, Pro at $20 a month with 2,100 credits and Max at $200 a month with 25,000 credits; Enterprise is quoted. KYB Identify costs $1.50 and KYB Verify $2.50 per match, with no charge for searches that do not match. Screening is billed per request, from $0.10 for negative news to $1.00 for TIN verification.
+  plans:
+  - tier: Free
+    price: $0
+    note: Search, viewing and live summaries in the Console
+    extra: Standard rate limits
+  - tier: Pro
+    price: $20 / month
+    note: 2,100 credits a month, API access, segments and file enrichment
+    extra: Usage above credits at retail rates
+  - tier: Max
+    price: $200 / month
+    note: 25,000 credits a month, adds MCP and AI integration access
+    extra: Usage above credits at retail rates
+  - tier: Enterprise
+    price: Custom
+    note: Negotiated rates, contract SLA, dedicated support
+    extra: Contact sales
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Credit price
+    value: $0.01 per credit, same in API, Console and agents
+    kind: official
+    source: 3
+    verified: '2026-10'
+  - label: Pro plan
+    value: $20 / month (2,100 credits)
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: Max plan
+    value: $200 / month (25,000 credits)
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: KYB Identify
+    value: $1.50 per match (150 credits)
+    kind: official
+    source: 3
+    verified: '2026-10'
+  - label: KYB Verify
+    value: $2.50 per match (250 credits)
+    kind: official
+    source: 3
+    verified: '2026-10'
+  - label: Watchlist or person screening
+    value: $0.50 per request
+    kind: official
+    source: 3
+    verified: '2026-10'
+  - label: TIN verification
+    value: $1.00 per request
+    kind: official
+    source: 3
+    verified: '2026-10'
+  - label: Negative news or bankruptcy check
+    value: $0.10 per request
+    kind: official
+    source: 3
+    verified: '2026-10'
+  - label: Prepaid credit bundles
+    value: $100 to $1,000, up to 25% bonus credits, valid one year
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: Enterprise
+    value: Custom; contact sales
+    kind: official
+    source: 2
+    verified: '2026-10'
+facts:
+- label: From
+  value: $1.50 per KYB match
+  source: 3
+  evidence: vendor
+- label: Plans
+  value: Free, Pro $20 / month, Max $200 / month, Enterprise custom
+  source: 2
+  evidence: vendor
+- label: Founded
+  value: '2011'
+  source: 11
+  evidence: independent
+- label: HQ
+  value: New York, US
+  source: 11
+  evidence: independent
+- label: Funding
+  value: $95M round (Sept 2018, led by NEA)
+  source: 11
+  evidence: independent
+- label: Regions
+  value: US only (52 jurisdictions); no plans to expand KYB outside the US
+  source: 5
+  evidence: vendor
+- label: Registration data
+  value: 100M+ business registrations from 200+ sources
+  source: 5
+  evidence: vendor
+- label: Certifications
+  value: SOC 2 Type 2 (vendor-stated)
+  source: 7
+  evidence: vendor
+pros:
+- Full rate card is public, including KYB at $1.50 or $2.50 per match and no charge for non-matches
+- Deep US data, with 100M+ registrations across 52 jurisdictions plus card revenue and operating signals
+- Modern access options, including a GraphQL API, Console, MCP server and partner platforms such as Alloy
+cons:
+- KYB covers the US only, and Enigma says it has no plans to expand it
+- No UBO register data; possible owners come mainly from officers in state filings
+- SOC 2 Type 2 is vendor-stated with no auditor or report date named, and there are almost no public user reviews
+alternatives:
+- slug: trulioo
+  name: Trulioo
+  best_for: Best for Global Registry Reach
+- slug: persona
+  name: Persona
+  best_for: KYC plus KYB in One Workflow
+- slug: kycaid
+  name: KYCAID
+  best_for: Budget KYB with Published Prices
+choose_instead:
+- slug: trulioo
+  text: you need business verification outside the US, across many countries, from one vendor.
+- slug: persona
+  text: you want KYB and individual identity verification with document and selfie checks in one no-code workflow.
+- slug: kycaid
+  text: you onboard businesses outside the US and want published per-verification prices with UBO checks inside a hosted flow.
+user_reviews:
+  legacy_note: null
+  praise: []
+  criticize: []
+  by_profile:
+  - US fintechs, lenders and card issuers onboarding small businesses at volume are Enigma's core fit.
+  - Teams already using an orchestration layer can add Enigma as the US source in a multi-vendor waterfall.
+  - Businesses that onboard companies outside the US will need a second KYB vendor.
+faq:
+- q: How much does Enigma cost?
+  a: Enigma publishes its prices. Credits cost 1 cent each. Plans are Free, Pro at $20 a month with 2,100 credits and Max at $200 a month with 25,000 credits, and Enterprise is quoted. KYB Identify is $1.50 and KYB Verify $2.50 per match, and searches that do not match are not charged.
+- q: Does Enigma cover businesses outside the US?
+  a: No. Enigma's KYB data covers 52 US jurisdictions (the 50 states, DC and Puerto Rico), and its documentation says it has no plans to expand KYB outside the US. It suggests using a partner for global KYB.
+- q: What is the difference between KYB Identify and KYB Verify?
+  a: KYB Identify confirms that a business is real and operating, and suits high-volume sign-up flows. KYB Verify adds the full Secretary of State record, including registration status, for teams that need checks a regulator will accept.
+- q: Does Enigma provide beneficial ownership (UBO) data?
+  a: Only partly. US jurisdictions generally do not publish UBO information, so Enigma returns possible owners based mainly on officers in Secretary of State filings, and can check whether a given name is linked to a business.
+- q: Is Enigma SOC 2 certified?
+  a: Enigma says it is SOC 2 Type 2 compliant for the security, availability and confidentiality criteria. The auditor and report date are not published, so we list it as vendor-stated.
+- q: Does Enigma offer sanctions screening?
+  a: Yes. Enigma screens people and businesses against OFAC sanctions and a PEP list it builds from government publications, at onboarding and on an ongoing basis, and can screen payments such as wires and ACH. Watchlist screening costs $0.50 per request.
+- q: What is the best alternative to Enigma?
+  a: Trulioo is the best alternative if you need KYB outside the US. Persona fits teams that want KYB and individual identity checks in one workflow.
+segments: []
+capabilities: {}
+certifications:
+- name: SOC 2 Type 2
+  what: Security, availability and confidentiality controls
+  status: vendor_stated
+  source: 7
+user_ratings: []
+use_case_verdicts: []
+score_breakdown:
+- criterion: Compliance & certifications
+  weight: 25
+  score: 4.2
+  note: Enigma's security page states SOC 2 Type 2 compliance and annual third-party penetration tests, but names no auditor or report date and lists no ISO/IEC 27001.
+  evidence: vendor
+- criterion: Coverage
+  weight: 20
+  score: 4.0
+  note: KYB covers 100M+ registrations across 52 US jurisdictions from 200+ sources, but it is US only and Enigma says it has no plans to expand it.
+  evidence: vendor
+- criterion: Pricing transparency
+  weight: 20
+  score: 4.9
+  note: The pricing page and rate card publish plan prices, the credit price and per-match and per-request rates for KYB, screening and enrichment.
+  evidence: vendor
+- criterion: Integration & API depth
+  weight: 15
+  score: 4.6
+  note: Public GraphQL API reference and KYB docs, a status page, a Console, an MCP server and partner platforms such as Alloy, Taktile and Oscilar, though a sandbox and SDKs are not documented on the pages we opened.
+  evidence: vendor
+- criterion: Support responsiveness
+  weight: 10
+  score: 4.0
+  note: Support is by email and contact form with no published hours or SLA outside Enterprise contracts, and there are too few user reviews to judge responsiveness.
+  evidence: vendor
+- criterion: Track record
+  weight: 10
+  score: 4.5
+  note: Operating since 2011 with a $95M NEA-led round in 2018 and bank investors, and we found no public regulatory actions or breach disclosures.
+  evidence: independent
+hands_on: null
+sources:
+- title: Enigma homepage
+  publisher: Enigma
+  url: https://www.enigma.com
+  accessed: '2026-10'
+- title: Pricing
+  publisher: Enigma
+  url: https://www.enigma.com/pricing
+  accessed: '2026-10'
+- title: Rate card
+  publisher: Enigma
+  url: https://www.enigma.com/pricing/rate-card
+  accessed: '2026-10'
+- title: Onboarding & KYB
+  publisher: Enigma
+  url: https://www.enigma.com/solutions/onboarding-and-kyb
+  accessed: '2026-10'
+- title: KYB documentation
+  publisher: Enigma
+  url: https://documentation.enigma.com/kyb
+  accessed: '2026-10'
+- title: Data
+  publisher: Enigma
+  url: https://www.enigma.com/data
+  accessed: '2026-10'
+- title: Security
+  publisher: Enigma
+  url: https://www.enigma.com/legal/security
+  accessed: '2026-10'
+- title: Customer & Transaction Screening
+  publisher: Enigma
+  url: https://www.enigma.com/solutions/customer-and-transaction-screening
+  accessed: '2026-10'
+- title: Partners
+  publisher: Enigma
+  url: https://www.enigma.com/partners
+  accessed: '2026-10'
+- title: Support
+  publisher: Enigma
+  url: https://www.enigma.com/company/support
+  accessed: '2026-10'
+- title: Enigma raises $95m in NEA-led round
+  publisher: FinTech Global
+  url: https://fintech.global/2018/09/20/enigma-raises-95m-in-nea-led-round/
+  accessed: '2026-10'
+- title: Enigma Technologies
+  publisher: Wikipedia
+  url: https://en.wikipedia.org/wiki/Enigma_Technologies
+  accessed: '2026-10'
+- title: Enigma launches KYB compliance agent on Google Cloud Marketplace
+  publisher: BIIA
+  url: https://www.biia.com/enigma-launches-kyb-compliance-agent-on-google-cloud-marketplace/
+  accessed: '2026-10'
+- title: Proof, Enigma link KYB to authorized people, AI agents with biometrics
+  publisher: Biometric Update
+  url: https://www.biometricupdate.com/202607/proof-enigma-link-kyb-to-authorized-people-ai-agents-with-biometrics
+  accessed: '2026-10'
+- title: 'Enigma and Parallel: What Comes Next for Business Identity'
+  publisher: Enigma
+  url: https://www.enigma.com/resources/blog/enigma-and-parallel-what-comes-next-for-business-identity
+  accessed: '2026-10'
+- title: About us
+  publisher: Enigma
+  url: https://www.enigma.com/company/about
+  accessed: '2026-10'
+- title: Enigma documentation
+  publisher: Enigma
+  url: https://documentation.enigma.com/
+  accessed: '2026-10'
+- title: Enigma Technologies seller page
+  publisher: G2
+  url: https://www.g2.com/sellers/enigma-technologies
+  accessed: '2026-10'
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://www.enigma.com
+  - https://en.wikipedia.org/wiki/Enigma_Technologies
+  - https://www.linkedin.com/company/enigma-technologies-inc-/
+  - https://twitter.com/enigma_data
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- 'New record, first review. Enigma asked to be reviewed; link.type set to none (no commercial relationship recorded).'
+- 'Founded: FinTech Global (2018) and the G2 seller page say 2011; the Wikipedia infobox says 2012. 2011 used. Enigma''s about page gives no founding year, HQ or funding.'
+- 'Funding: Wikipedia lists $1.1M seed (2013), $4.5M (2014), $28.2M Series B (2015) and $95M (2018). No round after 2018 was found; later funding may exist. Total raised not stated by a source and not shown.'
+- 'Founders and current leadership: Wikipedia names Hicham Oudghiri (CEO) and Marc DaCosta (chairman); current CEO not confirmed on an Enigma page.'
+- 'SOC 2 Type 2 is stated on the security page only; no auditor, report date or trust centre found. No ISO/IEC 27001 claim found.'
+- 'Coverage figures differ by page: KYB docs say 100M+ registrations from 200+ sources across 52 jurisdictions; the data page meta says 116M+ registration records and 34M+ brands; the May 2026 Google Cloud release says 100M+ legal entities, 30M brands and 30M locations. KYB docs figure used.'
+- 'Customer logos (Capital One, Chase, Truist, Ramp, Alloy, Gusto, Proof, Faire) are not all labelled as customers; the record says "logos on its site include". Case studies (Ramp, Wisetack, Findigs, FMCG Direct) are named customers.'
+- 'Vendor performance figures not used in copy: 92% match rate with a person name, ~1.5s median KYB response, Ramp 94% match rate, Wisetack 60%+ lower KYB cost, screening alert volumes cut by at least 80%.'
+- 'Sandbox, test keys and SDKs are not described on the docs pages opened; not claimed. MCP access is stated on the KYB solution and pricing pages (Max plan).'
+- 'Watchlists: only OFAC SDN is named, plus a PEP list added in July 2026 (blog title). Other lists (UN, EU, UK) not confirmed; the screening page says customers choose list sources.'
+- 'User ratings: the G2 seller page shows the "Enigma" business data product with 1 review (3.5 stars shown, with a conflicting 100% at 4 stars); the g2.com/products/enigma page mixes unrelated game-development reviews. No Capterra listing found. user_ratings left empty.'
+- 'Wikidata id not found (wikidata search API did not load); kg_mid unknown.'
+- 'Free trials ended 31 Aug 2026 per the pricing page; old accounts moved to the Free plan. Not shown.'
+application_category: Identity Verification Software
+author: andrii-klymenko
+directory_categories:
+- KYB

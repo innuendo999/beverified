@@ -95,7 +95,7 @@ layout: v3.njk
       <div class="row row--head"><span class="flex-1-1-180">Criterion · weight</span><span class="flex-1-1-160">Sub-score</span><span>Evidence</span></div>
       {%- for b in p.score_breakdown %}
       <div class="row">
-        <span class="crit"><span>{{ b.criterion }}</span><span>{{ b.weight }}%</span></span>
+        <span class="crit"><span>{{ b.criterion }}</span><span>{{ b.weight }}%</span>{% if b.note %}<small class="crit__note">{{ b.note }}</small>{% endif %}</span>
         {%- if b.score != null %}
         <span class="crit-score" role="img" aria-label="{{ b.criterion }} {{ b.score | score1 }} out of 5"><span class="bar" aria-hidden="true"><i style="width:{{ b.score * 20 }}%"></i></span><b aria-hidden="true">{{ b.score | score1 }}</b></span>
         {%- else %}
