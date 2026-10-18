@@ -827,6 +827,23 @@ kyb:
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.5
     segments: []
+  - slug: enigma
+    name: Enigma
+    award: Best for US Business Verification
+    tagline: US business verification by API, matching against 100M+ registrations across 52 US jurisdictions, per Enigma.
+    coverage: US only
+    size: SMB to Enterprise
+    pros:
+    - Published rate card, with KYB at $1.50 or $2.50 per match and no charge for non-matches
+    - Card revenue and operating signals show whether a business is actually trading
+    - GraphQL API, Console and MCP server, plus partner platforms such as Alloy
+    cons:
+    - US only; Enigma says it has no plans to expand KYB outside the US
+    - No UBO register data; possible owners come mainly from state filings
+    - SOC 2 Type 2 is vendor-stated, and there are almost no public user reviews
+    legacy_price_shown: From $1.50/KYB match
+    legacy_rating_shown: null
+    segments: []
   - slug: null
     name: Encompass
     award: Best for Live Registry Pulls
