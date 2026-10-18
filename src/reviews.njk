@@ -37,7 +37,7 @@ layout: v3.njk
         {%- if author %}
         <div class="byline__author">
           <img class="avatar" src="{{ author.photo }}" alt="">
-          <span>By {% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}<strong style="font-weight:500;color:var(--ink)">{{ author.name }}</strong>{% endif %}</span>
+          <span>By {% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}<strong class="fw-500 c-ink">{{ author.name }}</strong>{% endif %}</span>
         </div>
         {%- endif %}
         {%- if p.last_verified %}
@@ -92,7 +92,7 @@ layout: v3.njk
     <h2 id="score-h" class="h-section h-section--tight">Score breakdown</h2>
     <p class="section-lede">{{ site.v3.rubric.length }} weighted criteria from <a href="{{ site.v3.methodologyHref }}">our methodology {{ site.v3.methodologyVersion }}</a>.</p>
     <div class="card">
-      <div class="row row--head"><span style="flex:1 1 180px">Criterion · weight</span><span style="flex:1 1 160px">Sub-score</span><span>Evidence</span></div>
+      <div class="row row--head"><span class="flex-1-1-180">Criterion · weight</span><span class="flex-1-1-160">Sub-score</span><span>Evidence</span></div>
       {%- for b in p.score_breakdown %}
       <div class="row">
         <span class="crit"><span>{{ b.criterion }}</span><span>{{ b.weight }}%</span></span>
@@ -119,7 +119,7 @@ layout: v3.njk
         <span class="verdict-level"><i aria-hidden="true">{{ dots[u.verdict] }}</i>{{ u.verdict }}</span>
         <span class="verdict-reason">{{ u.reason }}</span>
         {%- if u.evidence and ev[u.evidence] %}<span class="evidence"><span aria-hidden="true">{{ ev[u.evidence].icon }}</span>{{ ev[u.evidence].label }}</span>{% endif %}
-        {%- if u.source %}<a class="src-ref--inline" style="font-size:12px" href="#src-{{ u.source }}" aria-label="Source {{ u.source }}">[{{ u.source }}]</a>{% endif %}
+        {%- if u.source %}<a class="src-ref--inline fs-12" href="#src-{{ u.source }}" aria-label="Source {{ u.source }}">[{{ u.source }}]</a>{% endif %}
       </div>
       {%- endfor %}
     </div>
@@ -131,23 +131,23 @@ layout: v3.njk
       <h2 id="pr-h" class="h-section">Pricing</h2>
       {%- if p.pricing.verified %}<span>Pricing verified: <strong>{{ p.pricing.verified | displayDate }}</strong></span>{% endif %}
     </div>
-    {%- if p.pricing.summary %}<div class="prose" style="margin-bottom:20px"><p>{{ p.pricing.summary }}</p></div>{% endif %}
+    {%- if p.pricing.summary %}<div class="prose mb-20"><p>{{ p.pricing.summary }}</p></div>{% endif %}
     {%- set official = pricingOfficial %}{% set estimates = pricingEstimates %}
     {%- if official.length or estimates.length %}
     <div class="price-grid">
       {%- if official.length %}
       <div class="card card--strong price-block">
         <div class="price-block__head"><span>Official information</span><span class="evidence"><span aria-hidden="true">{{ ev.vendor.icon }}</span>{{ ev.vendor.label }}</span></div>
-        {%- for i in official %}<div class="kv"><span>{{ i.label }}</span><span>{{ i.value }}{% if i.source %} <a href="#src-{{ i.source }}" style="font-size:12px">[{{ i.source }}]</a>{% endif %}</span></div>{% endfor %}
+        {%- for i in official %}<div class="kv"><span>{{ i.label }}</span><span>{{ i.value }}{% if i.source %} <a class="fs-12" href="#src-{{ i.source }}">[{{ i.source }}]</a>{% endif %}</span></div>{% endfor %}
       </div>
       {%- endif %}
       {%- if estimates.length %}
       <div class="card card--sunk price-block">
-        <div class="price-block__head"><span>Third-party estimates</span><span style="font-weight:400;font-size:13px;color:var(--body)">Not official</span></div>
+        <div class="price-block__head"><span>Third-party estimates</span><span class="fw-400 fs-13 c-body">Not official</span></div>
         {%- for e in estimates %}
-        <div style="padding:10px 0;border-top:1px solid var(--line-mid)">
-          <div style="display:flex;justify-content:space-between;gap:12px;font-size:15px"><span class="num" style="font-weight:600">{{ e.value }}</span>{% if e.source %}<a href="#src-{{ e.source }}" style="font-size:12px">[{{ e.source }}]</a>{% endif %}</div>
-          <div style="font-size:14px;color:var(--body);margin-top:2px">{{ e.label }}{% if e.verified %} · checked {{ e.verified | displayDate }}{% endif %}</div>
+        <div class="p-10-0 bt-1-solid-line-mid">
+          <div class="d-flex jc-between gap-12 fs-15"><span class="num fw-600">{{ e.value }}</span>{% if e.source %}<a class="fs-12" href="#src-{{ e.source }}">[{{ e.source }}]</a>{% endif %}</div>
+          <div class="fs-14 c-body mt-2">{{ e.label }}{% if e.verified %} · checked {{ e.verified | displayDate }}{% endif %}</div>
         </div>
         {%- endfor %}
       </div>
@@ -160,7 +160,7 @@ layout: v3.njk
         {%- if pl.tier %}<div class="plan__tier">{{ pl.tier }}</div>{% endif %}
         <div class="plan__price">{{ pl.price }}</div>
         {%- if pl.note %}<p>{{ pl.note }}</p>{% endif %}
-        {%- if pl.extra %}<p style="margin-top:6px">{{ pl.extra }}</p>{% endif %}
+        {%- if pl.extra %}<p class="mt-6">{{ pl.extra }}</p>{% endif %}
       </div>
       {%- endfor %}
     </div>
@@ -178,7 +178,7 @@ layout: v3.njk
         {%- if c.status == "confirmed" %}<span class="status status--ok"><span aria-hidden="true">✓</span>Confirmed</span>
         {%- elif c.status == "vendor_stated" %}<span class="status"><span aria-hidden="true">◇</span>Vendor-stated</span>
         {%- else %}<span class="status status--none">Not found</span>{% endif %}
-        {%- if c.source %}<a style="font-size:14px" href="#src-{{ c.source }}">{% if c.status == "confirmed" %}View record{% else %}Vendor claim{% endif %} [{{ c.source }}]</a>{% endif %}
+        {%- if c.source %}<a class="fs-14" href="#src-{{ c.source }}">{% if c.status == "confirmed" %}View record{% else %}Vendor claim{% endif %} [{{ c.source }}]</a>{% endif %}
       </div>
       {%- endfor %}
     </div>
@@ -191,7 +191,7 @@ layout: v3.njk
     <div class="card">
       <div class="row"><span>Tested {{ p.hands_on.date | displayDate }}</span>{% if p.hands_on.median_time %}<span>Median time to verify: <strong class="num">{{ p.hands_on.median_time }}</strong></span>{% endif %}</div>
       {%- for s in p.hands_on.steps %}
-      <div class="row"><span style="flex:1">{{ s.name }}</span>{% if s.pass %}<span class="status status--ok"><span aria-hidden="true">✓</span>Pass</span>{% else %}<span class="status" style="color:var(--bad)"><span aria-hidden="true">✕</span>Fail</span>{% endif %}</div>
+      <div class="row"><span class="flex-1">{{ s.name }}</span>{% if s.pass %}<span class="status status--ok"><span aria-hidden="true">✓</span>Pass</span>{% else %}<span class="status c-bad"><span aria-hidden="true">✕</span>Fail</span>{% endif %}</div>
       {%- endfor %}
     </div>
   </section>
@@ -224,14 +224,14 @@ layout: v3.njk
     <h2 id="ur-h" class="h-section h-section--tight">User ratings</h2>
     <p class="note-pill"><span aria-hidden="true">●</span>User ratings are not part of our score</p>
     {%- if p.user_ratings and p.user_ratings.length %}
-    <div class="ratings-box" style="margin-bottom:14px">
+    <div class="ratings-box mb-14">
       {%- for r in p.user_ratings %}
       <div class="row">
-        <span style="font-weight:500;flex:1 1 160px">{{ r.platform }}</span>
-        <span class="num">{{ r.rating }} <span style="color:var(--muted)">/ 5</span></span>
-        {%- if r.count %}<span class="num" style="color:var(--body)">{{ r.count }} reviews</span>{% endif %}
-        {%- if r.checked %}<span style="color:var(--body);font-size:14px">checked {{ r.checked | displayDate }}</span>{% endif %}
-        {%- if r.url %}<a href="{{ r.url }}" rel="noopener" target="_blank" style="font-size:14px">Open ↗</a>{% endif %}
+        <span class="fw-500 flex-1-1-160">{{ r.platform }}</span>
+        <span class="num">{{ r.rating }} <span class="c-muted">/ 5</span></span>
+        {%- if r.count %}<span class="num c-body">{{ r.count }} reviews</span>{% endif %}
+        {%- if r.checked %}<span class="c-body fs-14">checked {{ r.checked | displayDate }}</span>{% endif %}
+        {%- if r.url %}<a class="fs-14" href="{{ r.url }}" rel="noopener" target="_blank">Open ↗</a>{% endif %}
       </div>
       {%- endfor %}
     </div>
@@ -241,7 +241,7 @@ layout: v3.njk
       <div class="card card--pad"><h3 class="card__title">What users praise</h3>{% for t in ur.praise %}<div class="theme-row">{{ t }}</div>{% endfor %}</div>
       <div class="card card--pad"><h3 class="card__title">What users criticise</h3>{% for t in ur.criticize %}<div class="theme-row">{{ t }}</div>{% endfor %}</div>
     </div>
-    {%- if ur.legacy_note %}<p style="font-size:13px;color:var(--muted);margin-top:10px">{{ ur.legacy_note }}</p>{% endif %}
+    {%- if ur.legacy_note %}<p class="fs-13 c-muted mt-10">{{ ur.legacy_note }}</p>{% endif %}
     {%- endif %}
   </section>
   {%- endif %}
@@ -278,7 +278,7 @@ layout: v3.njk
   {%- endif %}
   {%- if p.faq and p.faq.length %}
   <section id="faq" aria-labelledby="faq-h">
-    <h2 id="faq-h" class="h-section" style="margin-bottom:12px">FAQ</h2>
+    <h2 id="faq-h" class="h-section mb-12">FAQ</h2>
     <div class="faq">
       {%- for f in p.faq %}
       <details{% if loop.first %} open{% endif %}><summary><h3>{{ f.q }}</h3></summary><p>{{ f.a }}</p></details>
@@ -292,7 +292,7 @@ layout: v3.njk
     <h2 id="src-h" class="h-section">Sources</h2>
     <ol class="sources">
       {%- for s in p.sources %}
-      <li id="src-{{ loop.index }}"><span>[{{ loop.index }}]</span><span><a href="{{ s.url }}" rel="noopener">{{ s.title }}</a>{% if s.publisher %} <span style="color:var(--body)">({{ s.publisher }})</span>{% endif %}</span><span>{% if s.accessed %}Accessed {{ s.accessed | displayDate }}{% endif %}</span></li>
+      <li id="src-{{ loop.index }}"><span>[{{ loop.index }}]</span><span><a href="{{ s.url }}" rel="noopener">{{ s.title }}</a>{% if s.publisher %} <span class="c-body">({{ s.publisher }})</span>{% endif %}</span><span>{% if s.accessed %}Accessed {{ s.accessed | displayDate }}{% endif %}</span></li>
       {%- endfor %}
     </ol>
   </section>
@@ -316,8 +316,8 @@ layout: v3.njk
 </main>
 
 <aside class="review-aside" aria-label="Quick facts">
-  <div class="card" style="padding:6px 0">
-    <div style="padding:12px 20px 8px;font-size:15px;font-weight:600">Quick facts</div>
+  <div class="card p-6-0">
+    <div class="p-12-20-8 fs-15 fw-600">Quick facts</div>
     {%- for f in p.facts %}
     <div class="fact">
       <div class="fact__line"><span>{{ f.label }}</span><span>{{ f.value }}</span></div>
@@ -327,7 +327,7 @@ layout: v3.njk
     {%- if p.last_verified %}<div class="fact"><div class="fact__line"><span>Last verified</span><span class="num">{{ p.last_verified | displayDate }}</span></div></div>{% endif %}
     {%- if p.updated and p.updated > p.last_verified %}<div class="fact"><div class="fact__line"><span>Updated</span><span class="num">{{ p.updated | displayDate }}</span></div></div>{% endif %}
     {%- if p.link.url %}
-    <div style="padding:12px 20px 14px;border-top:1px solid var(--line-soft)">
+    <div class="p-12-20-14 bt-1-solid-line-soft">
       <a class="btn btn--primary btn--block" href="{{ p.link.url }}" rel="sponsored nofollow noopener" target="_blank">Visit site ↗</a>
     </div>
     {%- endif %}

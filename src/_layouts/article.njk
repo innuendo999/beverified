@@ -45,7 +45,7 @@ layout: v3.njk
         <h2 id="mp-h" class="h-sub">Mentioned providers</h2>
         <ul class="card nf__list art__provs">
           {%- for p in mentioned %}
-          <li><span class="art__prov">{% if p.logo.wordmark %}<img src="{{ p.logo.wordmark }}" alt="{{ p.name }}" loading="lazy">{% else %}<strong>{{ p.name }}</strong>{% endif %}<small>{{ p.tagline }}</small></span><span>{% if p.score != null %}<b>{{ p.score | score1 }}</b> <small style="color:var(--muted)">/ 5</small>{% endif %}</span><a href="/providers/{{ p.slug }}/">Read review →</a></li>
+          <li><span class="art__prov">{% if p.logo.wordmark %}<img src="{{ p.logo.wordmark }}" alt="{{ p.name }}" loading="lazy">{% else %}<strong>{{ p.name }}</strong>{% endif %}<small>{{ p.tagline }}</small></span><span>{% if p.score != null %}<b>{{ p.score | score1 }}</b> <small class="c-muted">/ 5</small>{% endif %}</span><a href="/providers/{{ p.slug }}/">Read review →</a></li>
           {%- endfor %}
         </ul>
       </section>
@@ -81,7 +81,7 @@ layout: v3.njk
 
   {%- if related.length %}
   <section class="art-related" aria-labelledby="rel-h">
-    <h2 id="rel-h" class="h-section" style="margin-bottom:20px">Related posts</h2>
+    <h2 id="rel-h" class="h-section mb-20">Related posts</h2>
     <div class="grid-3">{% for a in related %}{% include "v3/post-card.njk" %}{% endfor %}</div>
   </section>
   {%- endif %}

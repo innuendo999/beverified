@@ -5,7 +5,7 @@ layout: v3.njk
 {%- set have = [] -%}
 <main id="main" class="container dir">
   <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li class="sep" aria-hidden="true">›</li><li aria-current="page">Providers</li></ol></nav>
-  <h1 class="h-display" style="margin:28px 0 16px">All KYC &amp; AML providers</h1>
+  <h1 class="h-display m-28-0-16">All KYC &amp; AML providers</h1>
   <p class="dir__lede">Every provider we track, A to Z, with its BeVerified score and what it's best for. Providers we haven't reviewed yet are listed without a score.</p>
   <div class="dir__tabs" role="group" aria-label="Filter by use case">
     {%- for f in filters %}<button type="button" data-filter="{{ f[0] }}"{% if loop.first %} aria-pressed="true"{% else %} aria-pressed="false"{% endif %}>{{ f[1] }}</button>{% endfor %}
@@ -23,7 +23,7 @@ layout: v3.njk
         <span class="dir__name">{% if r.p and r.p.logo.wordmark %}<img src="{{ r.p.logo.wordmark }}" alt="{{ r.name }}" loading="lazy">{% else %}{{ r.name }}{% endif %}</span>
         {%- if r.p and r.p.score != null %}
         <span class="dir__score" role="img" aria-label="{{ r.p.score | score1 }} out of 5"><b>{{ r.p.score | score1 }}</b> <small>/ 5</small></span>
-        {%- else %}<span class="dir__score"><span class="pill" style="color:var(--body)">Review coming</span></span>{% endif %}
+        {%- else %}<span class="dir__score"><span class="pill c-body">Review coming</span></span>{% endif %}
         <span class="dir__desc">{{ r.p.best_for if (r.p and r.p.best_for) else r.desc }}</span>
         <span class="dir__cats">{% for c in r.cats %}<span class="evidence evidence--sm">{{ c }}</span>{% endfor %}</span>
         <span class="dir__go">{% if r.p %}<a class="btn btn--secondary btn--sm" href="/providers/{{ r.p.slug }}/">Read review</a>{% endif %}</span>

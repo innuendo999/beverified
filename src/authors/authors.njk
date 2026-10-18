@@ -12,7 +12,7 @@ ogType: profile
       <p class="author-hero__role">{{ who.role }}</p>
       <p class="author-hero__bio">{{ who.bio }}</p>
       {%- if who.expertise.length %}
-      <div style="margin-top:20px"><div class="author-side__label">Areas of expertise</div><div class="pill-row" style="margin-top:6px">{% for e in who.expertise %}<span class="pill">{{ e }}</span>{% endfor %}</div></div>
+      <div class="mt-20"><div class="author-side__label">Areas of expertise</div><div class="pill-row mt-6">{% for e in who.expertise %}<span class="pill">{{ e }}</span>{% endfor %}</div></div>
       {%- endif %}
     </div>
     <div class="card author-side">
@@ -26,7 +26,7 @@ ogType: profile
   </section>
   {%- if written.length %}
   <section aria-labelledby="rw-h">
-    <h2 id="rw-h" class="h-section" style="margin-bottom:16px">Reviews written</h2>
+    <h2 id="rw-h" class="h-section mb-16">Reviews written</h2>
     <ul class="card author-rows">
       {%- for p in written %}
       <li>
@@ -41,8 +41,8 @@ ogType: profile
   </section>
   {%- endif %}
   {%- if posts.length %}
-  <section aria-labelledby="po-h" style="margin-top:56px">
-    <h2 id="po-h" class="h-section" style="margin-bottom:16px">Posts</h2>
+  <section class="mt-56" aria-labelledby="po-h">
+    <h2 id="po-h" class="h-section mb-16">Posts</h2>
     <div class="grid-3">{% for a in posts %}{% include "v3/post-card.njk" %}{% endfor %}</div>
   </section>
   {%- endif %}

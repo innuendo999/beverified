@@ -17,7 +17,7 @@ layout: v3.njk
     {%- if c.quick_answer %}<p class="quick-answer">{{ c.quick_answer }}</p>{% endif %}
     <div class="byline">
       {%- if author %}
-      <div class="byline__author"><img class="avatar" src="{{ author.photo }}" alt=""><span>By {% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}<strong style="font-weight:500;color:var(--ink)">{{ author.name }}</strong>{% endif %}</span></div>
+      <div class="byline__author"><img class="avatar" src="{{ author.photo }}" alt=""><span>By {% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}<strong class="fw-500 c-ink">{{ author.name }}</strong>{% endif %}</span></div>
       {%- endif %}
       {%- if c.last_verified %}{% if author %}<span class="dot" aria-hidden="true">·</span>{% endif %}<span><span class="tick" aria-hidden="true">✓</span> Last verified <time datetime="{{ c.last_verified }}">{{ c.last_verified | displayDate }}</time></span>{% endif %}
       {%- if c.updated and c.updated > c.last_verified %}<span class="dot" aria-hidden="true">·</span><span>Updated <time datetime="{{ c.updated }}">{{ c.updated | displayDate }}</time></span>{% endif %}
@@ -37,11 +37,11 @@ layout: v3.njk
       {%- for e in entries %}
         <tr>
           <td class="num">{{ e.rank }}</td>
-          <th scope="row" style="font-weight:500;text-align:left"><span class="rank-table__prov">{% if e.q and e.q.logo.wordmark %}<img class="wordmark wordmark--sm" src="{{ e.q.logo.wordmark }}" alt="" style="height:18px;max-width:80px">{% endif %}{{ e.r.name }}{% if e.rank == 1 %} <span class="pill pill--dark" style="font-size:12px;padding:1px 8px">◆ {{ e.r.award or "Top pick" }}</span>{% endif %}</span></th>
-          <td class="num">{% if e.q and e.q.score != null %}<strong>{{ e.q.score | score1 }}</strong> <span style="color:var(--muted)">/ 5</span>{% else %}<span style="color:var(--muted);font-size:14px">Not reviewed</span>{% endif %}</td>
+          <th class="fw-500 ta-left" scope="row"><span class="rank-table__prov">{% if e.q and e.q.logo.wordmark %}<img class="wordmark wordmark--sm h-18 maxw-80" src="{{ e.q.logo.wordmark }}" alt="">{% endif %}{{ e.r.name }}{% if e.rank == 1 %} <span class="pill pill--dark fs-12 p-1-8">◆ {{ e.r.award or "Top pick" }}</span>{% endif %}</span></th>
+          <td class="num">{% if e.q and e.q.score != null %}<strong>{{ e.q.score | score1 }}</strong> <span class="c-muted">/ 5</span>{% else %}<span class="c-muted fs-14">Not reviewed</span>{% endif %}</td>
           <td class="hide-sm">{{ e.r.legacy_price_shown or "Not listed" }}</td>
-          <td class="hide-sm" style="color:var(--body)">{% if e.rank > 1 %}{{ e.r.award }}{% endif %}</td>
-          <td>{% if e.q %}<a href="/providers/{{ e.q.slug }}/">Read review →</a>{% else %}<span style="color:var(--muted);font-size:14px">Review coming</span>{% endif %}</td>
+          <td class="hide-sm c-body">{% if e.rank > 1 %}{{ e.r.award }}{% endif %}</td>
+          <td>{% if e.q %}<a href="/providers/{{ e.q.slug }}/">Read review →</a>{% else %}<span class="c-muted fs-14">Review coming</span>{% endif %}</td>
         </tr>
       {%- endfor %}
       </tbody>
@@ -53,14 +53,14 @@ layout: v3.njk
     {%- if entries.length %}
     <section aria-label="Ranked providers">
       <p class="disclosure-line">{{ site.v3.disclosure }} <a href="{{ site.v3.disclosureHref }}">How we make money →</a></p>
-      <ol class="stack" style="list-style:none;padding:0">
+      <ol class="stack list-none p-0">
       {%- for e in entries %}
         <li>
         <article id="rank-{{ e.rank }}" class="card rank-card{% if e.rank == 1 %} rank-card--top{% endif %}">
           <div class="rank-card__num">{{ e.rank | pad2 }}</div>
           <div class="rank-card__body">
             {%- if e.r.award %}<span class="pill{% if e.rank == 1 %} pill--dark{% endif %}">{% if e.rank == 1 %}◆ {% endif %}{{ e.r.award }}</span>{% endif %}
-            <h2 class="rank-card__name">{% if e.q and e.q.logo.wordmark %}<img class="wordmark wordmark--sm" src="{{ e.q.logo.wordmark }}" alt="" style="height:24px">{% endif %}{{ e.r.name }}</h2>
+            <h2 class="rank-card__name">{% if e.q and e.q.logo.wordmark %}<img class="wordmark wordmark--sm h-24" src="{{ e.q.logo.wordmark }}" alt="">{% endif %}{{ e.r.name }}</h2>
             {%- if e.r.tagline %}<p class="rank-card__tagline">{{ e.r.tagline }}</p>{% endif %}
             {%- if e.r.coverage or e.r.size %}
             <div class="rank-card__meta">{% if e.r.coverage %}<span>Coverage <b>{{ e.r.coverage }}</b></span>{% endif %}{% if e.r.size %}<span>Fits <b>{{ e.r.size }}</b></span>{% endif %}</div>
@@ -74,7 +74,7 @@ layout: v3.njk
           </div>
           <div class="rank-card__score">
             {%- if e.q and e.q.score != null %}
-            <div role="img" aria-label="{{ e.q.score | score1 }} out of 5"><span class="num-big">{{ e.q.score | score1 }}</span> <span style="color:var(--muted)">/ 5</span></div>
+            <div role="img" aria-label="{{ e.q.score | score1 }} out of 5"><span class="num-big">{{ e.q.score | score1 }}</span> <span class="c-muted">/ 5</span></div>
             <div class="meter" aria-hidden="true">{% for w in (e.q.score | meter) %}<span><i style="width:{{ w }}%"></i></span>{% endfor %}</div>
             {%- else %}<span class="pill">Review coming</span>{% endif %}
           </div>
@@ -96,7 +96,7 @@ layout: v3.njk
       <div class="card weights">
         <div>
           {%- for r in site.v3.rubric %}<div class="weights__row"><span>{{ r.name }}</span><span class="bar" aria-hidden="true"><i style="width:{{ r.weight * 4 }}%"></i></span><span>{{ r.weight }}%</span></div>{% endfor %}
-          <p style="margin-top:12px;font-size:14px"><a href="{{ site.v3.methodologyHref }}">Full methodology {{ site.v3.methodologyVersion }} →</a></p>
+          <p class="mt-12 fs-14"><a href="{{ site.v3.methodologyHref }}">Full methodology {{ site.v3.methodologyVersion }} →</a></p>
         </div>
         <div class="weights__key">
           <span>Evidence levels we rely on</span>
@@ -117,15 +117,15 @@ layout: v3.njk
     </section>
     {%- endif %}
     {%- if c.faq and c.faq.length %}
-    <section aria-labelledby="faq-h" style="max-width:760px">
-      <h2 id="faq-h" class="h-section" style="margin-bottom:12px">FAQ</h2>
+    <section class="maxw-760" aria-labelledby="faq-h">
+      <h2 id="faq-h" class="h-section mb-12">FAQ</h2>
       <div class="faq">{% for f in c.faq %}<details{% if loop.first %} open{% endif %}><summary><h3>{{ f.q }}</h3></summary><p>{{ f.a }}</p></details>{% endfor %}</div>
     </section>
     {%- endif %}
 
     {%- if related.length %}
     <section aria-labelledby="rel-h">
-      <div class="section-head" style="margin-bottom:20px"><h2 id="rel-h" class="h-section" style="margin:0">Related categories</h2><a href="/providers/" style="font-size:15px;font-weight:500">Browse all providers →</a></div>
+      <div class="section-head mb-20"><h2 id="rel-h" class="h-section m-0">Related categories</h2><a class="fs-15 fw-500" href="/providers/">Browse all providers →</a></div>
       <div class="grid-4">{% for r in related %}<a class="card cat-card" href="{{ r.url }}"><b>{{ r.name }}</b><span>See all {{ r.count }} providers →</span></a>{% endfor %}</div>
     </section>
     {%- endif %}

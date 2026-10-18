@@ -21,10 +21,10 @@ layout: v3.njk
         <li class="picks__item">
           <span class="pill{% if loop.first %} pill--dark{% endif %}">{% if loop.first %}◆ {% endif %}{{ q.label }}</span>
           <div class="picks__row">
-            <div style="min-width:0">
+            <div class="minw-0">
               <div class="picks__logo">{% if q.p.logo.wordmark %}<img src="{{ q.p.logo.wordmark }}" alt="{{ q.p.name }}">{% else %}<b>{{ q.p.name }}</b>{% endif %}</div>
               <p class="picks__reason">{{ q.reason or q.p.tagline }}</p>
-              <a href="/providers/{{ q.p.slug }}/" style="font-size:14px;font-weight:500">Read review →</a>
+              <a class="fs-14 fw-500" href="/providers/{{ q.p.slug }}/">Read review →</a>
             </div>
             <div class="picks__score" role="img" aria-label="{{ q.p.score | score1 }} out of 5">
               <div aria-hidden="true"><b>{{ q.p.score | score1 }}</b><small>/ 5</small></div>
@@ -89,11 +89,11 @@ layout: v3.njk
     <li>
       <a class="card top-card{% if loop.first %} top-card--first{% endif %}" href="/providers/{{ p.slug }}/" aria-label="{{ p.name }}: {{ p.score | score1 }} out of 5. Read review">
         <div class="top-card__head">{% if p.logo.wordmark %}<img src="{{ p.logo.wordmark }}" alt="" loading="lazy">{% else %}<b class="top-card__wm">{{ p.name }}</b>{% endif %}<span>{{ loop.index | pad2 }}</span></div>
-        {%- if loop.first %}<span class="pill pill--dark" style="align-self:flex-start;margin-top:12px">◆ Editor's choice</span>{% endif %}
+        {%- if loop.first %}<span class="pill pill--dark self-start mt-12">◆ Editor's choice</span>{% endif %}
         <div class="top-card__name">{{ p.name }}</div>
         <div class="top-card__score" aria-hidden="true"><b>{{ p.score | score1 }}</b><small>/ 5</small></div>
         <div class="meter meter--sm" aria-hidden="true">{% for w in (p.score | meter) %}<span><i style="width:{{ w }}%"></i></span>{% endfor %}</div>
-        {%- if p.best_for %}<span class="pill" style="align-self:flex-start;margin-top:16px">Best for · {{ p.best_for }}</span>{% endif %}
+        {%- if p.best_for %}<span class="pill self-start mt-16">Best for · {{ p.best_for }}</span>{% endif %}
         <p class="top-card__reason">{{ p.tagline }}</p>
         <span class="top-card__go">Read review →</span>
       </a>
@@ -104,14 +104,14 @@ layout: v3.njk
 
 <section id="how-we-evaluate" class="container home-section" aria-labelledby="eval-h">
   <div class="section-head"><h2 id="eval-h" class="h-split h-split--xl">How we evaluate.<span>One rubric for every provider</span></h2><a class="btn btn--secondary btn--sm" href="{{ site.v3.methodologyHref }}">Full methodology</a></div>
-  <div class="card weights" style="padding:32px">
+  <div class="card weights p-32">
     <div>
-      <div style="font-size:14px;color:var(--muted);margin-bottom:16px">Weights · {{ site.v3.methodologyVersion }}</div>
+      <div class="fs-14 c-muted mb-16">Weights · {{ site.v3.methodologyVersion }}</div>
       {%- for r in site.v3.rubric %}<div class="weights__row"><span>{{ r.name }}</span><span class="bar" aria-hidden="true"><i style="width:{{ r.weight * 4 }}%"></i></span><span>{{ r.weight }}%</span></div>{% endfor %}
     </div>
-    <div class="weights__key" style="gap:24px">
-      <div><div style="color:var(--muted);margin-bottom:4px">Re-verification</div><div style="font-size:15px;color:var(--ink)">{{ home.recheck }}. "Last verified" changes only after a real re-check.</div></div>
-      <div><div style="color:var(--muted);margin-bottom:4px">Affiliate policy</div><div style="font-size:15px;color:var(--ink)">{{ site.v3.disclosure }}</div></div>
+    <div class="weights__key gap-24">
+      <div><div class="c-muted mb-4">Re-verification</div><div class="fs-15 c-ink">{{ home.recheck }}. "Last verified" changes only after a real re-check.</div></div>
+      <div><div class="c-muted mb-4">Affiliate policy</div><div class="fs-15 c-ink">{{ site.v3.disclosure }}</div></div>
     </div>
   </div>
 </section>
