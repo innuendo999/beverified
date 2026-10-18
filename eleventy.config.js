@@ -80,6 +80,10 @@ export default function (eleventyConfig) {
     return d ? `${MONTHS[m - 1]} ${d}, ${y}` : `${MONTHS[m - 1]} ${y}`;
   });
 
+  // Outbound provider link rel from link.type (affiliate | paid | none). Only paid or affiliate links are "sponsored".
+  eleventyConfig.addFilter("outRel", (link) =>
+    ["affiliate", "paid"].includes(link?.type) ? "sponsored nofollow noopener" : "nofollow noopener");
+
   eleventyConfig.addFilter("pad2", (n) => String(n).padStart(2, "0"));
 
   eleventyConfig.addFilter("score1", (n) => (n == null ? "" : Number(n).toFixed(1)));
