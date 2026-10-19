@@ -1230,6 +1230,23 @@ travel-rule:
     legacy_price_shown: On request
     legacy_rating_shown: null
     segments: []
+  - slug: trp
+    name: TRP
+    award: Best Published Travel Rule Pricing
+    tagline: Hosted Travel Rule API with published per-message pricing, its own VASP registry and an email fallback for self-hosted wallets.
+    coverage: Global (vendor-stated)
+    size: Small to mid-sized VASPs
+    pros:
+    - Published pricing, from a €2,000 deposit that becomes your message balance
+    - Public API docs covering IVMS101, Travel Addresses, a VASP registry and signed callbacks
+    - Self-hosted wallet checks by email self-attestation or Satoshi Test on BTC, ETH and TRON
+    cons:
+    - No legal entity named and no certifications stated; docs name only the KYCAID TRP Team
+    - Called interoperable, but no connection to TRISA, TRUST, GTR or Sygna is documented
+    - Launched in 2025, shares its name with the open OpenVASP protocol, minimum commitment not disclosed
+    legacy_price_shown: €2,000 deposit + per message
+    legacy_rating_shown: null
+    segments: []
   - slug: null
     name: Notabene
     award: Best for Hosted Travel Rule Exchange
@@ -1241,7 +1258,7 @@ travel-rule:
     - Strong counterparty due-diligence tooling
     - Hosted SaaS with a fast path to go live
     cons:
-    - Runs on its own protocol, TAP, alongside VODE. It does not connect to TRP, OpenVASP or Shyft, so check your counterparties' networks first
+    - Built around its own protocol, TAP; TRP 1.0 endpoints are provided too, but there is no direct TRUST connection
     - Not a full KYC/onboarding platform on its own
     - Best paired with a separate wallet-screening tool
     legacy_price_shown: Custom pricing
@@ -1280,23 +1297,6 @@ travel-rule:
     - Pricing requires a sales conversation
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.5
-    segments: []
-  - slug: null
-    name: TRP (Travel Rule Protocol)
-    award: Best Open Protocol
-    tagline: Open, vendor-neutral protocol for VASP-to-VASP Travel Rule messaging.
-    coverage: Global
-    size: null
-    pros:
-    - Open standard reduces vendor lock-in
-    - Growing adoption across multiple platforms
-    - Interoperable by design
-    cons:
-    - Requires more integration work than a hosted product
-    - Support model varies by implementing partner
-    - Feature depth depends on the implementing vendor
-    legacy_price_shown: Custom pricing
-    legacy_rating_shown: 4.4
     segments: []
 age-verification:
   title: Best Age Verification Providers in 2026
