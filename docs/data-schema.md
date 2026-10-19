@@ -15,7 +15,7 @@ Fields prefixed `legacy_` hold what the old pages showed. They are kept for refe
 | tagline | one-line positioning | filled |
 | score, grade | editorial score from the provider's own page (single source of truth) | filled |
 | primary_category, categories | category slugs | filled |
-| link.url, link.type | outbound link; type = affiliate / paid / none (owner decides). affiliate or paid → rel="sponsored nofollow noopener"; none or empty → rel="nofollow noopener" (filter `outRel`) | url filled, type empty |
+| link.url, link.type | outbound link; type = affiliate / paid / none (owner decides). affiliate or paid → rel="sponsored noopener" plus a visible "Sponsored link" label; none or empty → rel="nofollow noopener" (filter `outRel`) | url filled, type empty |
 | reviewer.name, reviewer.credential, last_verified | byline | filled |
 | verdict | short answer | filled from "Quick verdict" |
 | what_is[] | paragraphs | filled |
