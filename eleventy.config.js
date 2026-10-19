@@ -38,7 +38,7 @@ export default function (eleventyConfig) {
       const d = yaml.load(fs.readFileSync(new URL(f, dir), "utf8"));
       const u = d?.link?.url; if (!u) continue;
       const host = new URL(u).hostname.replace(/^www\./, "");
-      out.push({ host, paid: ["affiliate", "paid"].includes(d.link.type) });
+      out.push({ host, paid: ["affiliate", "paid"].includes(d.link.type), rel: d.link.rel || null });
     }
     const site = JSON.parse(fs.readFileSync(new URL("./src/_data/site.json", import.meta.url), "utf8"));
     for (const h of site.v3.vendorDomains || []) if (!out.some((r) => r.host === h)) out.push({ host: h, paid: false });
@@ -50,10 +50,11 @@ export default function (eleventyConfig) {
       let host; try { host = new URL(href).hostname.replace(/^www\./, ""); } catch { return tag; }
       const rule = vendorRules.find((r) => host === r.host || host.endsWith("." + r.host));
       if (!rule) return tag;
-      const want = rule.paid ? ["sponsored", "noopener"] : ["nofollow", "noopener"];
+      const want = rule.rel ? rule.rel.split(/\s+/) : rule.paid ? ["sponsored", "noopener"] : ["nofollow", "noopener"];
       const attrs = pre + post;
       const m = attrs.match(/\srel="([^"]*)"/);
-      const rel = [...new Set([...(m ? m[1].split(/\s+/).filter(Boolean) : []), ...want])].join(" ");
+      const keep = (m ? m[1].split(/\s+/).filter(Boolean) : []).filter((r) => !rule.rel || !["nofollow", "sponsored", "ugc"].includes(r));
+      const rel = [...new Set([...keep, ...want])].join(" ");
       const cleaned = (pre + post).replace(/\srel="[^"]*"/, "");
       return `<a${cleaned.replace(/\s+$/, "")} href="${href}" rel="${rel}">`.replace("<a ", "<a ").replace(/<a(\S)/, "<a $1");
     });
@@ -114,7 +115,7 @@ export default function (eleventyConfig) {
 
   // Outbound provider link rel from link.type (affiliate | paid | none). Paid or affiliate links are "sponsored" (Google: rel=sponsored for paid links); all others "nofollow".
   eleventyConfig.addFilter("outRel", (link) =>
-    ["affiliate", "paid"].includes(link?.type) ? "sponsored noopener" : "nofollow noopener");
+    link?.rel ? link.rel : ["affiliate", "paid"].includes(link?.type) ? "sponsored noopener" : "nofollow noopener");
 
   eleventyConfig.addFilter("pad2", (n) => String(n).padStart(2, "0"));
 
