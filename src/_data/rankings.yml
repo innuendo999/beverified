@@ -1231,20 +1231,20 @@ travel-rule:
     legacy_rating_shown: null
     segments: []
   - slug: trp
-    name: TRP (Travel Rule Protocol)
-    award: Best Open Protocol
-    tagline: Royalty-free, open protocol for VASP-to-VASP Travel Rule messaging, stewarded by the non-profit OpenVASP Association and bridged to TRISA.
-    coverage: Global, asset-agnostic
-    size: VASPs with engineering capacity, or via an implementing vendor
+    name: TRP
+    award: Best Published Travel Rule Pricing
+    tagline: Hosted Travel Rule API with published per-message pricing, its own VASP registry and an email fallback for self-hosted wallets.
+    coverage: Global (vendor-stated)
+    size: Small to mid-sized VASPs
     pros:
-    - Free to implement, with a public specification and no central operator
-    - Non-profit Swiss steward with published governance and membership fees
-    - Bridged to TRISA and supported by 21 Analytics, Sumsub and Notabene
+    - Published pricing, from a €2,000 deposit that becomes your message balance
+    - Public API docs covering IVMS101, Travel Addresses, a VASP registry and signed callbacks
+    - Self-hosted wallet checks by email self-attestation or Satoshi Test on BTC, ETH and TRON
     cons:
-    - No public adopter list; Notabene says most early members have left or stopped integrating it
-    - You build, host and secure the endpoint yourself, or pay a vendor
-    - Community support only, no SLA, and no directory for finding counterparties
-    legacy_price_shown: Free (open protocol)
+    - No legal entity named and no certifications stated; docs name only the KYCAID TRP Team
+    - Called interoperable, but no connection to TRISA, TRUST, GTR or Sygna is documented
+    - Launched in 2025, shares its name with the open OpenVASP protocol, minimum commitment not disclosed
+    legacy_price_shown: €2,000 deposit + per message
     legacy_rating_shown: null
     segments: []
   - slug: null
