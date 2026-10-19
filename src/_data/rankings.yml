@@ -1213,9 +1213,26 @@ peru:
 travel-rule:
   title: Best Crypto Travel Rule Providers in 2026
   providers:
+  - slug: 21analytics
+    name: 21 Analytics
+    award: Best for Self-Hosted Deployments
+    tagline: Self-hosted Travel Rule software with built-in TRUST and TRP connectivity and four ways to prove self-hosted wallet ownership.
+    coverage: Global, strong in Switzerland and the EU
+    size: Mid-market to Enterprise
+    pros:
+    - Built-in TRUST connectivity; TRUST lists 21 Analytics as its only interoperability partner
+    - Runs in your own infrastructure, and 21 Analytics says it cannot see customer data
+    - Four self-hosted wallet proofs, including AOPP
+    cons:
+    - No prices on the vendor's page; CHF 900 a month Starter figure only from G2 and Capterra
+    - ISO/IEC 27001 is vendor-stated with no certificate published, and there is no SOC 2 report
+    - You install, patch and back up the software yourself
+    legacy_price_shown: On request
+    legacy_rating_shown: null
+    segments: []
   - slug: null
     name: Notabene
-    award: Editor's Choice
+    award: Best for Hosted Travel Rule Exchange
     tagline: Hosted IVMS101 message exchange between VASPs, built around FATF R.16 workflows.
     coverage: Global, strong in EU
     size: null
@@ -1280,23 +1297,6 @@ travel-rule:
     - Feature depth depends on the implementing vendor
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.4
-    segments: []
-  - slug: null
-    name: 21 Analytics
-    award: Best for Self-Hosted Deployments
-    tagline: Self-hosted Travel Rule compliance that reaches major exchange and bank networks without giving up data control.
-    coverage: Global, strong in Europe
-    size: null
-    pros:
-    - 'Connects to the networks most regulated VASPs already use: TRUST and TRP'
-    - 'Enterprise-grade security through on-premises hosting: data stays in your environment'
-    - One-click self-hosted wallet ownership verification via AOPP
-    cons:
-    - Self-hosted, so it needs infrastructure you run; it is not a hosted SaaS
-    - Built for established operations rather than early-stage startups
-    - Pricing comes through a sales conversation, not a public page
-    legacy_price_shown: On request
-    legacy_rating_shown: 4.8
     segments: []
 age-verification:
   title: Best Age Verification Providers in 2026
