@@ -47,3 +47,4 @@ Every KYCAID card shows a price that is not on the vendor's pricing page. Sugges
 | Country number checks €0.05 to €0.80, "from 10 cents"; rename to non-document checks in government databases | Renamed everywhere. Range kept at €0.05 to €0.80 because the pricing page lists Turkey Kimlik at €0.05; CPF, CURP and DNI are €0.10. |
 | "Fewer native integrations" | Removed: unsourced legacy con. Replaced with a sourced limitation (fixed €100 monthly fee on the module price list). |
 | Mobile SDKs "on request" | Rephrased: public docs cover API, hosted form and iframe; mobile SDKs provided on request (vendor-stated, Oct 2026). |
+| Regions 240+ (follow-up, 19 Oct) | Changed to 240+ after KYCAID confirmed it to BeVerified by email; labelled vendor-stated ("per KYCAID, Oct 2026") because the public about page still says 200+. |
