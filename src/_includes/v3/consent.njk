@@ -1,0 +1,39 @@
+{%- set ga = site.v3.analytics.ga4 -%}
+{%- if ga -%}
+<div class="consent" id="consent" role="region" aria-label="Analytics consent" hidden>
+  <p>We use Google Analytics to see which pages are useful. It sets cookies only if you accept. <a href="/privacy/#analytics">Privacy policy</a></p>
+  <div class="consent__actions">
+    <button type="button" class="btn btn--secondary btn--sm" data-consent="denied">Decline</button>
+    <button type="button" class="btn btn--primary btn--sm" data-consent="granted">Accept</button>
+  </div>
+</div>
+<script>
+(function () {
+  var KEY = "bv-analytics-consent", ID = "{{ ga }}";
+  function load() {
+    if (window.__gaLoaded) return; window.__gaLoaded = true;
+    var s = document.createElement("script"); s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=" + ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { dataLayer.push(arguments); };
+    gtag("js", new Date());
+    gtag("config", ID, { anonymize_ip: true });
+  }
+  var choice = null;
+  try { choice = localStorage.getItem(KEY); } catch (e) {}
+  if (choice === "granted") { load(); return; }
+  if (choice === "denied") return;
+  var box = document.getElementById("consent");
+  if (!box) return;
+  box.hidden = false;
+  box.addEventListener("click", function (e) {
+    var v = e.target.getAttribute && e.target.getAttribute("data-consent");
+    if (!v) return;
+    try { localStorage.setItem(KEY, v); } catch (err) {}
+    box.hidden = true;
+    if (v === "granted") load();
+  });
+})();
+</script>
+{%- endif -%}

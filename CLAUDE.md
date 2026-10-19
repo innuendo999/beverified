@@ -27,7 +27,8 @@ All pages are generated from templates + data. There is no hand-written page HTM
 | Articles (guides, news, research) at old URLs `/guide/`, `/news/`, `/publications/` | `src/<section>/<slug>.md`, spec `docs/article-spec.md`, validate `node scripts/checks/articles.mjs`; layout `src/_layouts/article.njk`. Related posts, "Related reading" on reviews and "Guides and news" on rankings come from front matter `provider_slugs`, `ranking_keys`, `topics` |
 | Blog index `/blog/` and archives `/category/<section>/` | `src/blog.njk` + `src/_data/blogArchives.js` |
 | Legacy URLs `/author/beverified/` (refresh to author page), `/contact-us/` | `src/legacy/` |
-| Font | self-hosted `src/assets/fonts/Geist-Variable.woff2`. Keep the site free of third-party requests, cookies and analytics: the privacy policy promises it |
+| Font | self-hosted `src/assets/fonts/Geist-Variable.woff2` |
+| Analytics (GA4) | ID in `site.json` → `v3.analytics.ga4`; loaded only after consent by `src/_includes/v3/consent.njk`. No other third-party scripts or cookies: the privacy policy (`#analytics`) describes exactly this |
 | Favicon, touch icons, manifest, default og:image (1200x630) | `src/assets/brand/`, `src/favicon.ico`; a page can set `ogImage` in front matter |
 | `/llms.txt` | `src/llms.njk`, generated from the same data (rankings, providers, articles) |
 | For providers page | `src/placement-options/index.njk` |
