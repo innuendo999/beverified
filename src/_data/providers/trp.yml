@@ -1,0 +1,326 @@
+slug: trp
+name: TRP (Travel Rule Protocol)
+alternate_names:
+- Travel Rule Protocol
+- TRP
+status: published
+seo:
+  title: 'TRP (Travel Rule Protocol) Review 2026: Cost, Adoption & Alternatives | BeVerified'
+  description: 'TRP review: the royalty-free Travel Rule messaging protocol stewarded by the Swiss OpenVASP Association. Who maintains it, which vendors implement it, what it costs to run, pros, cons and alternatives.'
+  h1: 'TRP (Travel Rule Protocol) Review 2026: Cost, Adoption & Alternatives'
+logo:
+  src: null
+  background: null
+  wordmark: null
+tagline: Royalty-free, open messaging protocol for VASP-to-VASP Travel Rule data, stewarded by the non-profit OpenVASP Association
+score: 3.9
+grade: Good
+primary_category: travel-rule
+categories:
+- travel-rule
+link:
+  url: https://travel-rule.com
+  type: none
+last_verified: '2026-10-19'
+updated: '2026-10-19'   # last content edit; last_verified = last fact re-check
+verdict: TRP is not a product you buy. It is an open specification for sending FATF Recommendation 16 data from one VASP to another over HTTPS, and the OpenVASP Association, a Swiss non-profit, looks after it. The specification is royalty-free and public, the version history runs from 1.0.0 in August 2020 to 3.2.1 in July 2024, and it bridges to TRISA. Since October 2026 TRISA sits under the same association. The weak points come with being a protocol. Nobody operates TRP, so there is no audited service, no SLA and no directory of who is live on it. The association publishes no adopter list, and Notabene, a competing network, says most early members have left or stopped integrating it. Consider TRP if you have engineers who can build and run an endpoint, or reach it through a vendor that implements it, such as 21 Analytics, Sumsub or Notabene. Before you build, check which of your counterparties actually answer on it.
+what_is:
+- TRP (Travel Rule Protocol) is a specification for exchanging originator and beneficiary data between virtual asset service providers, as FATF Recommendation 16 requires. The receiving VASP gives its customer a Travel Address, an encoded URL that works a little like an IBAN. The sending VASP posts IVMS101 data to that address, and the receiver approves the transfer and returns a payment address, or rejects it. The sender then reports the transaction hash. Both sides authenticate each other with mutual TLS over TLS 1.3, and assets are identified with ISO 24165 Digital Token Identifiers. Extensions cover requirements beyond the core rule. Data goes peer to peer between the two VASPs, with no central hub in between.
+- TRP came out of the Travel Rule Protocol Working Group. Standard Chartered, ING and BitGo started it, and in October 2020 the group had 25 members, was chaired by BC Group and its exchange OSL, and counted Fidelity Digital Assets among its backers. Version 1.0.0 of the specification is dated 19 August 2020. In March 2022 the working group and the OpenVASP Association announced they were combining under OpenVASP, which was launched in November 2019 and is based in Zug. TRP became the association's single protocol. OpenVASP is run by a board chaired by President Andrew Davidson, who also chairs the TRP working group. Since 1 October 2026 the association has also stewarded TRISA, its Global Directory Service and the Envoy software, which Rotational Labs keeps operating.
+features:
+- Travel Address flow that lets the receiving VASP screen the transfer and accept or reject it before it reveals a payment address.
+- IVMS101 data model for originator and beneficiary information, with a free IVMS validator from OpenVASP.
+- Mutual TLS 1.3 authentication with X.509 certificates, plus an /identity endpoint that returns the VASP's name, LEI and certificate.
+- Asset-agnostic design through ISO 24165 Digital Token Identifiers, added in version 3.2.0.
+- Extensions that VASPs can signal per request, which the TRISA bridge uses to add TRISA encryption.
+- Interoperability with TRISA since 2023, with bridge code in TRISA's Go package and in the MIT-licensed Envoy node.
+pricing:
+  summary: TRP itself is free. The specification is public and royalty-free, and anyone can implement it without joining OpenVASP. Membership of the association, which gives a vote in its governance, is optional and has published annual fees from CHF 100 for individuals to CHF 10,000 for large non-VASPs, with a 50% reduction linked to using or offering TRP. Building, hosting and running a TRP endpoint, or licensing a vendor that does it for you, is a separate cost that you carry.
+  plans:
+  - tier: Specification
+    price: Free
+    note: Royalty-free and public; no licence or membership needed to implement
+    extra: null
+  - tier: OpenVASP membership (VASP)
+    price: CHF 1,000 or 5,000 / year
+    note: 1 to 149 employees, or 150+ employees
+    extra: 50% reduction linked to TRP use
+  - tier: OpenVASP membership (non-VASP)
+    price: CHF 2,000 or 10,000 / year
+    note: 1 to 149 employees, or 150+ employees
+    extra: 50% reduction linked to offering a working TRP solution
+  - tier: Individual membership
+    price: CHF 100 / year
+    note: No voting rights
+    extra: null
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Specification licence
+    value: Royalty-free; the specification says adoption is intended to be royalty and licence free
+    kind: official
+    source: 7
+    verified: '2026-10'
+  - label: OpenVASP annual membership
+    value: CHF 1,000 to 5,000 for VASPs, CHF 2,000 to 10,000 for non-VASPs, CHF 100 for individuals; 50% reduction tied to TRP
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: Membership rates after the TRISA move
+    value: No increase before 1 January 2027, when rates will be reviewed
+    kind: official
+    source: 4
+    verified: '2026-10'
+  - label: Implementation costs
+    value: Carried by the implementing VASP (build or vendor licence, legal documentation, data protection work), per Notabene
+    kind: third_party
+    source: 13
+    verified: '2026-10'
+facts:
+- label: Type
+  value: Open messaging protocol (specification), not a hosted service
+  source: 1
+  evidence: vendor
+- label: Cost to implement the specification
+  value: Free, royalty-free
+  source: 7
+  evidence: vendor
+- label: Steward
+  value: OpenVASP Association, non-profit members association, c/o MME Legal AG, Gubelstrasse 22, 6300 Zug, Switzerland
+  source: 2
+  evidence: vendor
+- label: Started by
+  value: Standard Chartered, ING and BitGo (TRP Working Group)
+  source: 12
+  evidence: vendor
+- label: First public version
+  value: 1.0.0, 19 August 2020
+  source: 7
+  evidence: vendor
+- label: Latest version we could see
+  value: 3.2.1, 29 July 2024
+  source: 7
+  evidence: vendor
+- label: Governance
+  value: OpenVASP board (President Andrew Davidson) and General Assembly; weekly TRP working group call; GitLab issues and merge requests
+  source: 2
+  evidence: vendor
+- label: Specification repository
+  value: Public GitLab project, created 6 May 2020, licensed CC BY-SA 4.0
+  source: 6
+  evidence: vendor
+- label: Listed vendors of TRP solutions
+  value: 21 Analytics, Blockchain Intelligence Group, ospree (OpenVASP TRP page); Sumsub and Notabene also state TRP support
+  source: 1
+  evidence: vendor
+- label: Interoperability
+  value: Bridged to TRISA since 2023; TRISA moved under OpenVASP on 1 October 2026
+  source: 4
+  evidence: vendor
+- label: Public adopter list
+  value: Not publicly disclosed
+- label: Certifications
+  value: Not applicable to a specification; there is no operator to audit
+pros:
+- Free to implement, with a public specification and no dependence on a central operator
+- Run by a non-profit Swiss association with published governance and membership fees
+- Bridged to TRISA, and supported by vendors including 21 Analytics, Sumsub and Notabene
+cons:
+- No public adopter list, and Notabene says most early members have left or stopped integrating it
+- You build, host and secure the endpoint yourself, or pay a vendor to do it
+- Community support only (weekly call, Telegram, GitLab), with no SLA and no directory for counterparty discovery
+alternatives:
+- slug: 21analytics
+  name: 21 Analytics
+  best_for: Self-hosted TRP and TRUST in one product
+- slug: null
+  name: TRISA
+  best_for: Open protocol with a certificate directory
+- slug: null
+  name: Notabene
+  best_for: Hosted Travel Rule Network
+choose_instead:
+- slug: 21analytics
+  text: you want TRP without building it. 21 Travel Rule runs TRP in your own infrastructure and adds TRUST connectivity and self-hosted wallet checks.
+- slug: sumsub
+  text: you want Travel Rule bundled with KYC in a hosted platform that reaches TRP, GTR, CODE and Sygna Bridge counterparties.
+- slug: null
+  name: TRISA
+  text: you want an open protocol that comes with a directory and certificate service for finding counterparties. TRISA is now stewarded by the same association, and its Envoy node speaks both TRISA and TRP.
+user_reviews:
+  legacy_note: null
+  praise: []
+  criticize: []
+  by_profile:
+  - VASPs with their own engineering team that want to exchange Travel Rule data directly with known counterparties, without paying a network or hub, are TRP's clearest fit.
+  - Firms that cannot build an endpoint should reach TRP through a vendor that implements it, such as 21 Analytics, Sumsub or Notabene, and treat TRP as one of several routes.
+  - VASPs whose main counterparties are US exchanges on TRUST will need more than TRP, since TRP has no TRUST connection of its own.
+faq:
+- q: Is TRP a company or a product?
+  a: Neither. TRP is an open specification for sending Travel Rule data between VASPs. The OpenVASP Association, a non-profit members association in Zug, Switzerland, stewards it, and vendors such as 21 Analytics, Sumsub and Notabene build it into their products. No company operates TRP or sells access to it.
+- q: How much does TRP cost?
+  a: The specification is free and royalty-free, and you do not need to join OpenVASP to implement it. Membership, which gives a vote in the association, costs CHF 1,000 to 5,000 a year for VASPs, CHF 2,000 to 10,000 for non-VASPs and CHF 100 for individuals, with a 50% reduction linked to TRP. Your real cost is building and running an endpoint, or a vendor licence.
+- q: Who uses TRP?
+  a: OpenVASP lists 21 Analytics, Blockchain Intelligence Group and ospree as vendors of TRP solutions, and Sumsub and Notabene document TRP support. The association does not publish a list of VASPs that are live on it. Notabene says most early members have left or are not actively integrating TRP, which is a competitor's view we could not test. Ask your counterparties directly.
+- q: How does TRP work?
+  a: The receiving VASP gives its customer a Travel Address. The sending VASP posts the customer's IVMS101 data to that address over mutual TLS. The receiver checks it and either returns a payment address or rejects the transfer, and the sender then reports the transaction hash. The data goes directly between the two VASPs.
+- q: Does TRP work with TRISA or TRUST?
+  a: TRISA, yes. A bridge has made the two interoperable since 2023, TRISA's Envoy node speaks both, and OpenVASP took over stewardship of TRISA on 1 October 2026. TRUST, not directly. TRP has no TRUST connection of its own, though 21 Analytics supports both in one product.
+- q: Is TRP still maintained?
+  a: Yes, but slowly. The latest version we could see is 3.2.1 from July 2024, the working group holds a weekly call, and OpenVASP added TRISA to its remit in October 2026. We could not open the GitLab repository's activity log, so we cannot say how often the specification changes now.
+- q: Is TRP certified or audited?
+  a: Certifications such as ISO/IEC 27001 or SOC 2 apply to organisations that run systems, and nobody runs TRP. Each implementer is responsible for its own security. The specification requires TLS 1.3 with mutual TLS, but we found no independent security review of the protocol itself. Ask your vendor, or your own team, for the security evidence of the endpoint you will actually use.
+segments: []
+capabilities: {}
+certifications: []
+user_ratings: []
+use_case_verdicts: []
+score_breakdown:
+- criterion: Compliance & certifications
+  weight: 25
+  score: 3.6
+  note: Certifications do not apply to a specification and we do not penalise that, but there is no audited operator because there is no operator, and we found no independent security review of the protocol. The specification maps the mandatory FATF R.16 data to IVMS101 and requires TLS 1.3 with mutual TLS.
+  evidence: vendor
+- criterion: Coverage
+  weight: 20
+  score: 3.7
+  note: Asset-agnostic through ISO 24165 and bridged to TRISA, with five vendors stating TRP support, but there is no public adopter list, no counterparty directory and no TRUST link, and Notabene says most early members have left or stopped integrating it.
+  evidence: vendor
+- criterion: Pricing transparency
+  weight: 20
+  score: 4.5
+  note: The specification is royalty-free and OpenVASP publishes its membership fees, so the cost of the protocol is fully clear. The open number is your own build, hosting or vendor cost, which no one can publish for you.
+  evidence: vendor
+- criterion: Integration & API depth
+  weight: 15
+  score: 3.9
+  note: A public specification with a dated version history from 1.0.0 (2020) to 3.2.1 (2024), free test tools and an MIT-licensed TRISA node that speaks TRP, but no official reference implementation or sandbox from the steward, and no new version visible since July 2024.
+  evidence: vendor
+- criterion: Support responsiveness
+  weight: 10
+  score: 3.3
+  note: Community channels only (weekly working group call, Telegram group, GitLab issues and a contact email). There is no SLA, as you would expect from a protocol; operational support comes from whichever vendor you use.
+  evidence: vendor
+- criterion: Track record
+  weight: 10
+  score: 4.1
+  note: In use since 2020, started by Standard Chartered, ING and BitGo, under a Swiss non-profit since 2022 that took on TRISA in October 2026, with no security incidents or disputes found. Reported attrition of early members keeps it from scoring higher.
+  evidence: independent
+hands_on: null
+sources:
+- title: Travel Rule Protocol (TRP)
+  publisher: OpenVASP Association
+  url: https://www.openvasp.org/trp
+  accessed: '2026-10'
+- title: About the OpenVASP Association
+  publisher: OpenVASP Association
+  url: https://www.openvasp.org/about
+  accessed: '2026-10'
+- title: OpenVASP Association homepage
+  publisher: OpenVASP Association
+  url: https://www.openvasp.org/
+  accessed: '2026-10'
+- title: TRISA and OpenVASP FAQ
+  publisher: OpenVASP Association
+  url: https://www.openvasp.org/trisa-openvasp-faq
+  accessed: '2026-10'
+- title: TRISA joins OpenVASP Association
+  publisher: MENAFN (EIN Presswire)
+  url: https://menafn.com/1111768535/TRISA-Joins-Openvasp-Association
+  accessed: '2026-10'
+- title: Travel Rule Protocol repository
+  publisher: OpenVASP on GitLab
+  url: https://gitlab.com/OpenVASP/travel-rule-protocol
+  accessed: '2026-10'
+- title: Travel Rule Protocol specification, as published in the 21 Travel Rule docs (version 6.0.0)
+  publisher: 21 Analytics
+  url: https://docs.21analytics.ch/6.0.0/trp.html
+  accessed: '2026-10'
+- title: OpenVASP and Travel Rule Protocol join forces to offer open standard
+  publisher: 21 Analytics
+  url: https://21analytics.co/blog/openvasp-and-travel-rule-protocol-join-forces-to-offer-open-standard
+  accessed: '2026-10'
+- title: Two major FATF Travel Rule solutions join forces
+  publisher: Crypto Valley Journal
+  url: https://cryptovalleyjournal.com/focus/legal-and-compliance/two-major-fatf-travel-rule-solutions-join-forces/
+  accessed: '2026-10'
+- title: Group backed by ING Bank, Fidelity and Standard Chartered releases crypto AML tools
+  publisher: SC Ventures
+  url: https://scventures.io/?p=2395
+  accessed: '2026-10'
+- title: In banking first, ING develops FATF-friendly protocol for tracking crypto transfers
+  publisher: CoinDesk
+  url: https://coindesk-coindesk-prod.cdn.arcpublishing.com/business/2020/06/23/in-banking-first-ing-develops-fatf-friendly-protocol-for-tracking-crypto-transfers/
+  accessed: '2026-10'
+- title: What is TRP?
+  publisher: 21 Analytics
+  url: https://www.21analytics.co/what-is-trp/
+  accessed: '2026-10'
+- title: What is TRP?
+  publisher: Notabene
+  url: https://notabene.id/travel-rule-messaging-protocols/trp
+  accessed: '2026-10'
+- title: Crypto Travel Rule messaging protocols
+  publisher: Notabene
+  url: https://notabene.id/travel-rule-messaging-protocols
+  accessed: '2026-10'
+- title: TRP protocol
+  publisher: Sumsub
+  url: https://docs.sumsub.com/docs/trp-protocol
+  accessed: '2026-10'
+- title: Travel Rule FAQ
+  publisher: Sumsub
+  url: https://docs.sumsub.com/docs/travel-rule-faq
+  accessed: '2026-10'
+- title: TRISA and OpenVASP interoperability
+  publisher: TRISA
+  url: https://trisa.dev/openvasp/index.html
+  accessed: '2026-10'
+- title: 'Open standards TRP and TRISA: now interoperable'
+  publisher: 21 Analytics
+  url: https://21analytics.ch/blog/protocols-trp-trisa-interoperable/
+  accessed: '2026-10'
+- title: Envoy, an open source TRISA node
+  publisher: TRISA on GitHub
+  url: https://github.com/trisacrypto/envoy
+  accessed: '2026-10'
+- title: OpenVASP Association (glossary)
+  publisher: 21 Analytics
+  url: https://www.21analytics.co/glossary/openvasp/
+  accessed: '2026-10'
+- title: Travel Rule Protocol (TRP) flow (version 8.2.0)
+  publisher: 21 Analytics
+  url: https://docs.21analytics.ch/8.2.0/core-concepts/trp_flow.html
+  accessed: '2026-10'
+- title: Supporting TRP
+  publisher: 21 Analytics
+  url: https://www.21analytics.co/supporting-trp/
+  accessed: '2026-10'
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://www.openvasp.org/trp
+  - https://gitlab.com/OpenVASP/travel-rule-protocol
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- 'New record, first review. TRP is a protocol, not a vendor; link.type none. link.url set to https://travel-rule.com as instructed by the editor, but travel-rule.com could not be opened (fetcher returned ROBOTS_DISALLOWED for both the apex and www hosts) and no page we opened links to it: the OpenVASP TRP page, 21 Analytics docs and the 21 Analytics TRP pages all link to openvasp.org/trp or gitlab.com/OpenVASP/travel-rule-protocol. Editor should confirm who controls travel-rule.com before publishing; https://www.openvasp.org/trp is the confirmed official page.'
+- 'GitLab: project page gave description, CC BY-SA 4.0 licence, 116 commits, 7 branches, 0 tags, created 6 May 2020. Raw files, the GitLab API and the specification blob were blocked (robots) or returned metadata only, so the current version on master and last activity date are unconfirmed. Version history 1.0.0 (19 Aug 2020) to 3.2.1 (29 Jul 2024) taken from the copy of the spec in 21 Analytics docs 6.0.0; 21 Analytics docs 8.2.0 and 8.3.0 trp.html did not load. Note the repo licence (CC BY-SA 4.0) and the spec text ("intended that adoption of the TRP is royalty and license free") are both stated; record uses royalty-free.'
+- 'Governance: OpenVASP about page: launched November 2019, non-profit members association, c/o MME Legal AG, Gubelstrasse 22, 6300 Zug; board Andrew Davidson, Lucas Betschart (COO, 21 Analytics), Paolo Guarnerio, Thurstan Felstead, Benjamin Bengfort, Carol Van Cleef; General Assembly at least annually; Articles of Association referenced but not opened. Davidson is "President" in the Oct 2026 release and "Chair, TRP Working Group" on the TRP page. Swiss commercial register entry for OpenVASP not opened (21 Analytics record notes UID CHE-330.545.004 via Moneyhouse; not re-checked here). 21 Analytics glossary says "incorporated as a non-profit in Switzerland" and "formed in 2019".'
+- 'Conflict of interest to note in copy if needed: Lucas Betschart of 21 Analytics sits on the OpenVASP board, and 21 Analytics publishes the TRP encoder and LEI tools and much of the TRP explainer material.'
+- 'Merger date: CVJ and 21 Analytics blog announce the OpenVASP and TRP working group combination on 22 Mar 2022; 21 Analytics What is TRP says "late 2021", glossary says 2021. Record uses the March 2022 announcement.'
+- 'Founders and members: 21 Analytics What is TRP (page metadata) and Sumsub TRP docs: started by Standard Chartered (Zodia), ING and BitGo. SC Ventures (8 Oct 2020): 25 members, chaired by BC Group and OSL, backers ING, Standard Chartered, Fidelity Digital Assets, IVMS-101 project founding member; Pyctor custody consortium (ABN AMRO, BNP Paribas Securities Services, Citi, Invesco, Societe Generale, State Street, UBS) integrating the TRP API. CoinDesk (23 Jun 2020, from URL) names BitGo, Crypto Broker AG, Metaco, 21 Analytics, OSL/BC Group, Notabene as participants. 21 Analytics blog (Mar 2022): 25+ VASPs in 10+ FATF member jurisdictions. No current OpenVASP member list published (about page lists categories only); openvasp.org/membership and /trp-working-group did not load.'
+- 'Adoption: OpenVASP TRP page lists vendors 21 Analytics, Blockchain Intelligence Group, ospree. Sumsub TRP docs and Travel Rule FAQ list TRP. Notabene TRP page: "Every Notabene customer has a live TRP 1.0 endpoint" and "Most early members have left the association or are not actively integrating it" (undated page, 2026 footer; competitor source, labelled as Notabene view). Didit blog (21 May 2026) says it negotiates TRP per transfer; not used. No list of live VASPs found. "Growing adoption" not supported.'
+- 'Conflict with existing site copy: rankings.yml Notabene card and categories/travel-rule.yml (protocol explainer, FAQ) say Notabene does not connect to TRP. Notabene''s own TRP page says every Notabene customer has a live TRP 1.0 endpoint. Reported in reports/verification/trp.md; other files not edited.'
+- 'TRISA: TRISA docs describe the bridge (pkg/openvasp in trisacrypto/trisa, parses LNURL and Travel Address, three crypto levels via TRP extensions), undated. OpenVASP FAQ and the 6 Oct 2026 release: interoperable since 2023; from 1 Oct 2026 TRISA working group, GDS and Envoy under OpenVASP stewardship, Rotational Labs operates infrastructure, Envoy MIT-licensed and speaks TRISA and TRP, membership rates frozen until 1 Jan 2027. Envoy GitHub releases page not opened (permission timeout); API call failed.'
+- 'TRUST: no TRP to TRUST link found. 21 Analytics supports both in one product (21 Analytics record and supporting-trp page banner). Coinbase TRUST page not re-opened in this session.'
+- 'Technical claims (Travel Address, mTLS on TLS 1.3, /identity with LEI, DTI in 3.2.0, extensions, HTTP flow) from the spec copy in 21 Analytics docs 6.0.0. ISO 24165 from OpenVASP TRP page. "VASP auto-discovery" (21 Analytics) vs "missing an identification function" (Notabene): record says there is no directory for counterparty discovery, which both support.'
+- 'Security: no independent security audit of the TRP specification found; not searched exhaustively. No incidents, disputes or regulatory actions involving TRP or OpenVASP found.'
+- 'Support: weekly WG call (OpenVASP TRP page; 21 Analytics What is TRP says monthly call, older page), Telegram group, GitLab issues, contact@openvasp.org.'
+- 'Not used: Davidson quote (truncated by the fetcher), OpenVASP membership benefits beyond fees, the meaning of the 50% reduction (page text unclear on how it applies).'
+- 'Wikidata id not found; kg_mid unknown.'
+application_category: Travel Rule Messaging Protocol
+author: andrii-klymenko
+directory_categories:
+- Travel Rule

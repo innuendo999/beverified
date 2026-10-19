@@ -1230,6 +1230,23 @@ travel-rule:
     legacy_price_shown: On request
     legacy_rating_shown: null
     segments: []
+  - slug: trp
+    name: TRP (Travel Rule Protocol)
+    award: Best Open Protocol
+    tagline: Royalty-free, open protocol for VASP-to-VASP Travel Rule messaging, stewarded by the non-profit OpenVASP Association and bridged to TRISA.
+    coverage: Global, asset-agnostic
+    size: VASPs with engineering capacity, or via an implementing vendor
+    pros:
+    - Free to implement, with a public specification and no central operator
+    - Non-profit Swiss steward with published governance and membership fees
+    - Bridged to TRISA and supported by 21 Analytics, Sumsub and Notabene
+    cons:
+    - No public adopter list; Notabene says most early members have left or stopped integrating it
+    - You build, host and secure the endpoint yourself, or pay a vendor
+    - Community support only, no SLA, and no directory for finding counterparties
+    legacy_price_shown: Free (open protocol)
+    legacy_rating_shown: null
+    segments: []
   - slug: null
     name: Notabene
     award: Best for Hosted Travel Rule Exchange
@@ -1241,7 +1258,7 @@ travel-rule:
     - Strong counterparty due-diligence tooling
     - Hosted SaaS with a fast path to go live
     cons:
-    - Runs on its own protocol, TAP, alongside VODE. It does not connect to TRP, OpenVASP or Shyft, so check your counterparties' networks first
+    - Built around its own protocol, TAP; TRP 1.0 endpoints are provided too, but there is no direct TRUST connection
     - Not a full KYC/onboarding platform on its own
     - Best paired with a separate wallet-screening tool
     legacy_price_shown: Custom pricing
@@ -1280,23 +1297,6 @@ travel-rule:
     - Pricing requires a sales conversation
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.5
-    segments: []
-  - slug: null
-    name: TRP (Travel Rule Protocol)
-    award: Best Open Protocol
-    tagline: Open, vendor-neutral protocol for VASP-to-VASP Travel Rule messaging.
-    coverage: Global
-    size: null
-    pros:
-    - Open standard reduces vendor lock-in
-    - Growing adoption across multiple platforms
-    - Interoperable by design
-    cons:
-    - Requires more integration work than a hosted product
-    - Support model varies by implementing partner
-    - Feature depth depends on the implementing vendor
-    legacy_price_shown: Custom pricing
-    legacy_rating_shown: 4.4
     segments: []
 age-verification:
   title: Best Age Verification Providers in 2026

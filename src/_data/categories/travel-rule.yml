@@ -5,7 +5,7 @@ seo:
   description: '21 Analytics, Notabene, Sygna Bridge, VerifyVASP, and TRP compared: the best crypto Travel Rule providers in 2026, ranked on protocol and network support (TRUST, TRP, TAP), counterparty coverage, and self-hosted wallet verification.'
   h1: Best Crypto Travel Rule Providers in 2026
 breadcrumb_label: Best Crypto Travel Rule Providers
-quick_answer: '21 Analytics is the only provider in this list we have reviewed in full, scoring 4.0: self-hosted Travel Rule software with built-in TRUST and TRP connectivity and four ways to prove ownership of a self-hosted wallet. Notabene leads on hosted, protocol-based exchange across VASPs, and VerifyVASP has the strongest APAC coverage; neither has a full BeVerified review yet. We compared 5 providers on protocol and network support, counterparty coverage and self-hosted wallet verification.'
+quick_answer: '21 Analytics ranks first among the providers we have reviewed in full, scoring 4.0: self-hosted Travel Rule software with built-in TRUST and TRP connectivity and four ways to prove ownership of a self-hosted wallet. TRP, the free open protocol stewarded by the OpenVASP Association, comes second at 3.9 and suits VASPs that can build their own endpoint. Notabene leads on hosted exchange across VASPs and VerifyVASP has the strongest APAC coverage; neither has a full BeVerified review yet. We compared 5 providers on protocol and network support, counterparty coverage and self-hosted wallet verification.'
 last_verified: '2026-09-15'
 updated: '2026-10-19'   # last content edit; last_verified = last fact re-check
 legacy_stats:
@@ -52,9 +52,9 @@ explainer_html:
 
   <li id="protocol-trust" style="list-style:disc;"><strong>TRUST</strong> is a Travel Rule network used by many regulated US exchanges to exchange originator and beneficiary data.</li>
 
-  <li id="protocol-trp" style="list-style:disc;"><strong>TRP (Travel Rule Protocol)</strong> is an open, vendor-neutral standard for VASP-to-VASP messaging, designed to reduce lock-in.</li>
+  <li id="protocol-trp" style="list-style:disc;"><strong>TRP (Travel Rule Protocol)</strong> is an open, royalty-free standard for VASP-to-VASP messaging, stewarded by the non-profit OpenVASP Association and bridged to TRISA.</li>
 
-  <li id="protocol-tap" style="list-style:disc;"><strong>TAP</strong> is Notabene''s own protocol. It works alongside VODE and does not bridge to TRP, OpenVASP or Shyft.</li>
+  <li id="protocol-tap" style="list-style:disc;"><strong>TAP</strong> is Notabene''s own protocol. Notabene also gives its customers TRP 1.0 endpoints, but it cannot connect directly to TRUST.</li>
 
   <li id="protocol-aopp" style="list-style:disc;"><strong>AOPP (Address Ownership Proof Protocol)</strong> is a one-step method to prove a customer controls a self-hosted wallet, used by 21 Analytics.</li>
 
@@ -81,7 +81,7 @@ faq:
 - q: Do all crypto transfers require Travel Rule data?
   a: No. Most jurisdictions apply a minimum transfer threshold below which Travel Rule data exchange isn't required, though thresholds vary by country.
 - q: Can different Travel Rule protocols talk to each other?
-  a: Interoperability varies by provider. Some connect to shared networks such as TRUST and TRP, while others run their own protocol. Notabene, for example, uses TAP and VODE and does not connect to TRP, OpenVASP or Shyft. Check a provider's networks against your counterparties before you commit.
+  a: Interoperability varies by provider. Some connect to shared networks such as TRUST and TRP, while others run their own protocol. Notabene, for example, is built around its own TAP protocol and provides TRP endpoints, but cannot connect directly to TRUST. Check a provider's networks against your counterparties before you commit.
 - q: Which Travel Rule provider works with self-hosted wallets?
   a: 21 Analytics verifies self-hosted (non-custodial) wallet ownership in one step using AOPP, the Address Ownership Proof Protocol. That helps when a VASP needs to prove who controls an external wallet before releasing funds.
 adjacent:
