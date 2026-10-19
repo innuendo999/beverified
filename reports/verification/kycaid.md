@@ -35,3 +35,16 @@ Every KYCAID card shows a price that is not on the vendor's pricing page. Sugges
 ## Score flag
 
 - Possible. The old page's published plan prices ($99/$299) do not exist; the real entry price is per verification and AML screening is not in the cheapest bundle. If the score or the cheap-kyc ranking leaned on the $99/mo bundle, it should be reviewed.
+
+## Update 2026-10-19: editor corrections, checked against KYCAID's public pages
+
+| Request | Result |
+|---|---|
+| Price "from €0.50, base is a document" | Confirmed on kycaid.com homepage price list: document check €0.50. The same list adds a fixed €100/month service fee on top of verification prices, so cards read "From €0.50/check + €100/mo". Bundles from €0.75 (pricing page) kept. Age-verification card keeps €0.75 (needs document + face). |
+| Regions 240+ | Not changed. kycaid.com/about-us still says "200+ countries and territories". Will switch when the public site says 240+. |
+| SOC 2 Type 2 not held yet (expected early 2027) | Removed from certifications; quick facts say "SOC 2 in progress". The privacy policy still lists SOC 2 Type 2 and should be corrected by KYCAID. |
+| Company check, monitoring "not publicly disclosed" | Corrected: homepage price list shows company check €10, ongoing KYC monitoring €25/month, AML €0.50, face and address €0.25. |
+| Country number checks €0.05 to €0.80, "from 10 cents"; rename to non-document checks in government databases | Renamed everywhere. Range kept at €0.05 to €0.80 because the pricing page lists Turkey Kimlik at €0.05; CPF, CURP and DNI are €0.10. |
+| "Fewer native integrations" | Removed: unsourced legacy con. Replaced with a sourced limitation (fixed €100 monthly fee on the module price list). |
+| Mobile SDKs "on request" | Rephrased: public docs cover API, hosted form and iframe; mobile SDKs provided on request (vendor-stated, Oct 2026). |
+| Regions 240+ (follow-up, 19 Oct) | Changed to 240+ after KYCAID confirmed it to BeVerified by email; labelled vendor-stated ("per KYCAID, Oct 2026") because the public about page still says 200+. |
