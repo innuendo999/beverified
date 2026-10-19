@@ -4,7 +4,7 @@ alternate_names: []
 status: published
 seo:
   title: 'KYCAID Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'KYCAID review: modular KYC/AML suite with configurable verification workflows. Pricing from €0.75 per verification, features, pros & cons, and alternatives compared.'
+  description: 'KYCAID review: modular KYC/AML suite with configurable verification workflows. Pricing from €0.50 per document check, features, pros & cons, and alternatives compared.'
   h1: 'KYCAID Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/kycaid.png
@@ -24,8 +24,8 @@ link:
   type: null
   legacy_rel: nofollow sponsored
 last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: KYCAID is a strong choice for small and mid-market teams that want a configurable KYC/AML verification flow without enterprise pricing, with published per-verification rates from €0.75. It's less deep on watchlist data than category leaders like ComplyAdvantage, but its customisable flows and white-label option on the Enterprise plan make it a practical fit for startups and platforms that verify on behalf of their own clients.
+updated: '2026-10-19'   # last content edit; last_verified = last fact re-check
+verdict: KYCAID is a strong choice for small and mid-market teams that want a configurable KYC/AML verification flow without enterprise pricing, with published prices from €0.50 per document check and €0.75 for a document plus face bundle. It's less deep on watchlist data than category leaders like ComplyAdvantage, but its customisable flows and white-label option on the Enterprise plan make it a practical fit for startups and platforms that verify on behalf of their own clients.
 what_is:
 - KYCAID is a KYC/AML verification platform that lets businesses configure onboarding flows combining document checks, face verification with liveness, AML screening, address checks and company checks. Its team says it has worked in KYC since 2018; the UK company KYCAID Limited was incorporated in November 2018 with a registered office in London, and KYCAID's privacy policy names Compligate Ltd, a company registered in England, as the operating entity. KYCAID says it covers 200+ countries and territories and is used by 100+ companies, mainly fintechs, exchanges and platforms.
 features:
@@ -36,7 +36,7 @@ features:
 - Dashboard for customising the verification flow, with multiple workspaces in one account.
 - API and hosted form integration, embeddable by iframe and on a custom domain; white labeling on the Enterprise plan.
 pricing:
-  summary: KYCAID publishes per-verification bundles in euros. Basic KYC (document and face) is €0.75, Standard KYC (adds AML screening) is €0.85 and Advanced KYC (adds address verification) is €1.10 per verification, with €50 credit on registration. Enterprise pricing is tailored from 10,000 verifications a month. Other modules, including company checks and ongoing monitoring, are pay-as-you-go with prices not listed.
+  summary: KYCAID publishes its prices in euros. Single modules start at €0.50 for a document check, €0.25 for face or address verification, €0.50 for AML screening and €10 for a company check, with ongoing KYC monitoring at €25 a month; this module price list adds a fixed €100 monthly service fee. Bundles are €0.75 for Basic KYC (document and face), €0.85 for Standard KYC (adds AML screening) and €1.10 for Advanced KYC (adds address verification), with €50 credit on registration. Non-document checks against government databases cost €0.05 to €0.80 depending on the country. Enterprise pricing is tailored from 10,000 verifications a month.
   plans:
   - tier: Basic KYC
     price: €0.75 / verification
@@ -82,20 +82,45 @@ pricing:
     kind: official
     source: 1
     verified: '2026-10'
-  - label: Country number checks (e.g. CPF, CURP, DNI)
-    value: €0.05 to €0.80 / check
+  - label: Non-document checks in government databases (e.g. CPF, CURP, DNI)
+    value: €0.05 to €0.80 / check (€0.10 for CPF, CURP and DNI)
     kind: official
     source: 1
     verified: '2026-10'
-  - label: Company check, ongoing monitoring, other modules
-    value: Not publicly disclosed
+  - label: Document check (single module)
+    value: €0.50
     kind: official
-    source: 1
+    source: 7
+    verified: '2026-10'
+  - label: Face verification / address verification
+    value: €0.25 each
+    kind: official
+    source: 7
+    verified: '2026-10'
+  - label: AML screening (single module)
+    value: €0.50
+    kind: official
+    source: 7
+    verified: '2026-10'
+  - label: Company check (KYB)
+    value: €10.00
+    kind: official
+    source: 7
+    verified: '2026-10'
+  - label: Ongoing KYC monitoring
+    value: €25.00 / month
+    kind: official
+    source: 7
+    verified: '2026-10'
+  - label: Fixed service fee (module price list)
+    value: €100 / month, on top of verification prices
+    kind: official
+    source: 7
     verified: '2026-10'
 facts:
 - label: From
-  value: €0.75 per verification
-  source: 1
+  value: €0.50 per document check (+ €100/mo service fee)
+  source: 7
   evidence: vendor
 - label: Effective
   value: €0.75 to €1.10 per verification
@@ -114,7 +139,7 @@ facts:
   source: 2
   evidence: vendor
 - label: Certifications
-  value: ISO 27001, SOC 2 Type 2, PCI DSS (vendor-stated)
+  value: ISO 27001, PCI DSS (vendor-stated); SOC 2 in progress
   source: 3
   evidence: vendor
 pros:
@@ -123,8 +148,8 @@ pros:
 - 24/7 chat support with a stated 15-minute response SLA
 cons:
 - Smaller watchlist database than category leaders
-- Fewer native integrations
-- Public docs describe API, hosted form and iframe integration; native mobile SDKs are not documented there
+- Single-module prices carry a fixed €100 monthly service fee
+- Public docs cover the API, hosted form and iframe; mobile SDKs are provided on request
 alternatives:
 - slug: null
   name: KYCAID
@@ -160,7 +185,7 @@ user_reviews:
   - Larger enterprises may find watchlist depth a gap versus category leaders.
 faq:
 - q: How much does KYCAID cost?
-  a: KYCAID publishes per-verification bundles. Basic KYC (document and face) costs €0.75, Standard KYC with AML screening €0.85 and Advanced KYC with address verification €1.10, with €50 credit on registration. Enterprise pricing is tailored from 10,000 verifications a month.
+  a: A single document check costs €0.50 and a company check €10, on a module price list that adds a fixed €100 monthly service fee. Bundles cost €0.75 for Basic KYC (document and face), €0.85 with AML screening and €1.10 with address verification, with €50 credit on registration. Enterprise pricing is tailored from 10,000 verifications a month.
 - q: Does KYCAID support AML watchlist screening?
   a: Yes. KYCAID's AML screening covers PEPs, sanctions, OFAC and other regulatory watchlists, and it is included in the Standard and Advanced KYC bundles. Ongoing monitoring is available as a separate monthly module.
 - q: Is KYCAID good for startups?
@@ -180,10 +205,6 @@ capabilities: {}
 certifications:
 - name: ISO/IEC 27001
   what: Information security
-  status: vendor_stated
-  source: 3
-- name: SOC 2 Type 2
-  what: Security controls audit
   status: vendor_stated
   source: 3
 - name: PCI DSS
@@ -219,6 +240,10 @@ sources:
   publisher: KYCAID
   url: https://docs.kycaid.com
   accessed: '2026-10'
+- title: KYCAID homepage price list (Choice of services)
+  publisher: KYCAID
+  url: https://kycaid.com/
+  accessed: 2026-10
 entity:
   wikidata: null
   kg_mid: null
@@ -233,7 +258,9 @@ verification_notes:
 - 'Founded / HQ: old page said 2019, Vilnius. No source found. KYCAID Limited was incorporated 9 Nov 2018 (Companies House); the about page says "Since 2018". G2 lists HQ as Kyiv, Ukraine (seller-supplied); privacy policy names Compligate Ltd (England, incorporated 29 Dec 2023) as operator. Operational HQ not confirmed.'
 - 'Certifications: ISO 27001, SOC 2 Type 2 and PCI DSS are stated only in the privacy policy ("continuously verified"); no certificate or register entry found. GDPR is a regulation, not a certification, and was dropped from the list.'
 - '200+ document types: not found; the about page states 200+ countries and territories.'
-- 'Mobile SDK: not listed in the docs index; status of native SDKs not confirmed.'
+- 'Mobile SDK: not listed in the public docs index; KYCAID told us (Oct 2026) that mobile SDKs are provided on request.'
+- 'SOC 2: KYCAID told us (19 Oct 2026) it does not hold SOC 2 yet and expects it in early 2027, although its privacy policy still lists SOC 2 Type 2; removed from certifications. Re-check in Q1 2027.'
+- 'Coverage: KYCAID says 240+ countries and territories; its public about page still says 200+, so the page keeps 200+ until the site is updated.'
 - 'Adverse media: the old FAQ said AML screening includes adverse media; the pricing page lists PEPs, sanctions, watchlists, OFAC and regulatory lists only. Removed.'
 - 'User ratings: G2 shows 0 reviews for Kycaid ID Verification. Themes and counts removed.'
 - 'Verification speed: about page gives both "20-sec" and "under 11 seconds"; not used.'

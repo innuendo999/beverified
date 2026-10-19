@@ -119,8 +119,8 @@ aml:
     cons:
     - Smaller watchlist database than category leaders
     - Adverse-media screening is not listed among its AML checks
-    - Native mobile SDKs are not documented in its public docs
-    legacy_price_shown: From €0.75/verification
+    - Mobile SDKs are provided on request, not in the public docs
+    legacy_price_shown: From €0.50/check + €100/mo
     legacy_rating_shown: 4.6
     segments: []
   - slug: trulioo
@@ -299,18 +299,18 @@ brazil:
   - slug: kycaid
     name: KYCAID
     award: null
-    tagline: Configurable KYC flows with CPF number checks among its country modules.
+    tagline: Configurable KYC flows with non-document CPF checks against government databases.
     coverage: Global
     size: null
     pros:
-    - CPF number checks available as a pay-as-you-go module
+    - Non-document CPF check against government databases for €0.10
     - Customisable verification flows from one dashboard
     - Company check (KYB) covering UBOs and authorised persons
     cons:
     - Smaller watchlist database than category leaders
-    - Fewer native integrations
+    - Single-module prices carry a fixed €100 monthly service fee
     - Company check and ongoing monitoring prices are not published
-    legacy_price_shown: From €0.75/verification
+    legacy_price_shown: From €0.50/check + €100/mo
     legacy_rating_shown: 4.6
     segments: []
   - slug: trulioo
@@ -359,12 +359,12 @@ canada:
     pros:
     - Customisable verification flows from one dashboard
     - Built-in PEP and sanctions screening with ongoing monitoring
-    - Published per-verification prices from €0.75
+    - Published prices from €0.50 per document check
     cons:
     - Prices are published in euros, not Canadian dollars
-    - Fewer native integrations
+    - Single-module prices carry a fixed €100 monthly service fee
     - Smaller watchlist database than category leaders
-    legacy_price_shown: From €0.75/verification
+    legacy_price_shown: From €0.50/check + €100/mo
     legacy_rating_shown: 4.6
     segments: []
   - slug: veriff
@@ -441,18 +441,18 @@ cheap-kyc:
   - slug: kycaid
     name: KYCAID
     award: null
-    tagline: Published per-verification bundles from €0.75, with €50 credit on registration.
+    tagline: Published prices from €0.50 per document check, or bundles from €0.75 with €50 credit on registration.
     coverage: Global
     size: null
     pros:
     - Published per-verification prices with €50 starting credit
     - AML screening included from the €0.85 Standard bundle
-    - Country number checks from €0.05 per check
+    - Non-document government database checks from €0.05 per check
     cons:
     - Company check and monitoring prices are not published
     - Smaller watchlist database than enterprise vendors
     - Custom volume pricing starts only at 10,000 verifications a month
-    legacy_price_shown: From €0.75/verification
+    legacy_price_shown: From €0.50/check + €100/mo
     legacy_rating_shown: 4.6
     segments: []
   - slug: trulioo
@@ -540,7 +540,7 @@ crypto:
     - No wallet screening or on-chain analytics listed
     - No Travel Rule support listed
     - Smaller watchlist database than category leaders
-    legacy_price_shown: From €0.75/verification
+    legacy_price_shown: From €0.50/check + €100/mo
     legacy_rating_shown: 4.6
     segments: []
   - slug: complyadvantage
@@ -609,9 +609,9 @@ e-kyc:
     - White labeling on the Enterprise plan
     cons:
     - Smaller watchlist database than category leaders
-    - Fewer native integrations
-    - Native mobile SDKs are not documented in its public docs
-    legacy_price_shown: From €0.75/verification
+    - Single-module prices carry a fixed €100 monthly service fee
+    - Mobile SDKs are provided on request, not in the public docs
+    legacy_price_shown: From €0.50/check + €100/mo
     legacy_rating_shown: 4.7
     segments: []
   - slug: veriff
@@ -679,10 +679,10 @@ identity-verification:
     - Document and face verification with liveness checks
     - Ongoing AML monitoring after onboarding
     cons:
-    - Native mobile SDKs are not documented in its public docs
-    - Fewer native integrations
+    - Mobile SDKs are provided on request, not in the public docs
+    - Single-module prices carry a fixed €100 monthly service fee
     - Security certifications are stated in its privacy policy, with no certificate published
-    legacy_price_shown: From €0.75/verification
+    legacy_price_shown: From €0.50/check + €100/mo
     legacy_rating_shown: 4.6
     segments: []
   - slug: persona
@@ -765,12 +765,12 @@ india:
     pros:
     - Aadhaar SMS OTP check listed on its pricing page
     - Customisable verification flows from one dashboard
-    - Published per-verification prices from €0.75
+    - Published prices from €0.50 per document check
     cons:
     - No CKYC registry lookup listed
     - Smaller watchlist database than category leaders
-    - Fewer native integrations
-    legacy_price_shown: From €0.75/verification
+    - Single-module prices carry a fixed €100 monthly service fee
+    legacy_price_shown: From €0.50/check + €100/mo
     legacy_rating_shown: 4.6
     segments: []
   - slug: onfido
@@ -840,8 +840,8 @@ kyb:
     cons:
     - Company check prices are not published
     - Smaller watchlist database than category leaders
-    - Fewer native integrations
-    legacy_price_shown: From €0.75/verification
+    - Single-module prices carry a fixed €100 monthly service fee
+    legacy_price_shown: From €0.50/check + €100/mo
     legacy_rating_shown: 4.7
     segments: []
   - slug: veriff
@@ -1091,18 +1091,18 @@ mexico:
   - slug: kycaid
     name: KYCAID
     award: null
-    tagline: Configurable KYC flows with CURP number checks among its country modules.
+    tagline: Configurable KYC flows with non-document CURP checks against government databases.
     coverage: Global
     size: null
     pros:
-    - CURP number checks available as a pay-as-you-go module
+    - Non-document CURP check against government databases for €0.10
     - Customisable verification flows from one dashboard
     - 24/7 chat support with a stated 15-minute response SLA
     cons:
     - Smaller watchlist database than category leaders
-    - Fewer native integrations
+    - Single-module prices carry a fixed €100 monthly service fee
     - Company check and ongoing monitoring prices are not published
-    legacy_price_shown: From €0.75/verification
+    legacy_price_shown: From €0.50/check + €100/mo
     legacy_rating_shown: 4.6
     segments: []
   - slug: veriff
@@ -1162,18 +1162,18 @@ peru:
   - slug: kycaid
     name: KYCAID
     award: null
-    tagline: Configurable KYC flows with DNI number checks among its country modules.
+    tagline: Configurable KYC flows with non-document DNI checks against government databases.
     coverage: Global
     size: null
     pros:
-    - DNI number checks available as a pay-as-you-go module
+    - Non-document DNI check against government databases for €0.10
     - Customisable verification flows from one dashboard
     - Built-in PEP and sanctions screening with ongoing monitoring
     cons:
     - Smaller watchlist database than category leaders
-    - Native mobile SDKs are not documented in its public docs
+    - Mobile SDKs are provided on request, not in the public docs
     - Company check and ongoing monitoring prices are not published
-    legacy_price_shown: From €0.75/verification
+    legacy_price_shown: From €0.50/check + €100/mo
     legacy_rating_shown: 4.6
     segments: []
   - slug: veriff
