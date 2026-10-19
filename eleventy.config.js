@@ -1,3 +1,4 @@
+import fs from "node:fs";
 import yaml from "js-yaml";
 
 // YAML front matter turns 2026-10-18 into a Date; normalise to "2026-10-18".
@@ -25,6 +26,37 @@ export default function (eleventyConfig) {
   eleventyConfig.addTransform("txt-unescape", function (content) {
     if (!(this.page.outputPath || "").endsWith(".txt")) return content;
     return content.replace(/&amp;/g, "&").replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, "<").replace(/&gt;/g, ">");
+  });
+
+  // Outbound links to provider sites never pass PageRank unless the provider has a paid or affiliate
+  // agreement (then rel="sponsored"). Applies to every page: Visit site buttons, sources, article text.
+  // Domains: each provider record's link.url + site.json v3.vendorDomains.
+  const vendorRules = (() => {
+    const out = [];
+    const dir = new URL("./src/_data/providers/", import.meta.url);
+    for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".yml"))) {
+      const d = yaml.load(fs.readFileSync(new URL(f, dir), "utf8"));
+      const u = d?.link?.url; if (!u) continue;
+      const host = new URL(u).hostname.replace(/^www\./, "");
+      out.push({ host, paid: ["affiliate", "paid"].includes(d.link.type) });
+    }
+    const site = JSON.parse(fs.readFileSync(new URL("./src/_data/site.json", import.meta.url), "utf8"));
+    for (const h of site.v3.vendorDomains || []) if (!out.some((r) => r.host === h)) out.push({ host: h, paid: false });
+    return out;
+  })();
+  eleventyConfig.addTransform("vendor-nofollow", function (content) {
+    if (!(this.page.outputPath || "").endsWith(".html")) return content;
+    return content.replace(/<a\b([^>]*?)\bhref="(https?:\/\/[^"]+)"([^>]*)>/g, (tag, pre, href, post) => {
+      let host; try { host = new URL(href).hostname.replace(/^www\./, ""); } catch { return tag; }
+      const rule = vendorRules.find((r) => host === r.host || host.endsWith("." + r.host));
+      if (!rule) return tag;
+      const want = rule.paid ? ["sponsored", "noopener"] : ["nofollow", "noopener"];
+      const attrs = pre + post;
+      const m = attrs.match(/\srel="([^"]*)"/);
+      const rel = [...new Set([...(m ? m[1].split(/\s+/).filter(Boolean) : []), ...want])].join(" ");
+      const cleaned = (pre + post).replace(/\srel="[^"]*"/, "");
+      return `<a${cleaned.replace(/\s+$/, "")} href="${href}" rel="${rel}">`.replace("<a ", "<a ").replace(/<a(\S)/, "<a $1");
+    });
   });
 
   // ---- Articles (src/guide, src/news, src/publications). Spec: docs/article-spec.md ----
@@ -80,9 +112,9 @@ export default function (eleventyConfig) {
     return d ? `${MONTHS[m - 1]} ${d}, ${y}` : `${MONTHS[m - 1]} ${y}`;
   });
 
-  // Outbound provider link rel from link.type (affiliate | paid | none). Only paid or affiliate links are "sponsored".
+  // Outbound provider link rel from link.type (affiliate | paid | none). Paid or affiliate links are "sponsored" (Google: rel=sponsored for paid links); all others "nofollow".
   eleventyConfig.addFilter("outRel", (link) =>
-    ["affiliate", "paid"].includes(link?.type) ? "sponsored nofollow noopener" : "nofollow noopener");
+    ["affiliate", "paid"].includes(link?.type) ? "sponsored noopener" : "nofollow noopener");
 
   eleventyConfig.addFilter("pad2", (n) => String(n).padStart(2, "0"));
 

@@ -190,6 +190,40 @@
         ]
       ],
       "copyright": "© 2026 BeVerified.org · support@beverified.org"
-    }
+    },
+    "vendorDomains": [
+      "iproov.com",
+      "facetec.com",
+      "notabene.id",
+      "sygna.io",
+      "verifyvasp.com",
+      "ondato.com",
+      "encompasscorporation.com",
+      "kyckr.com",
+      "idwall.co",
+      "chainalysis.com",
+      "lseg.com",
+      "risk.lexisnexis.com",
+      "lexisnexis.com",
+      "fenergo.com",
+      "actico.com",
+      "truora.com",
+      "middesk.com",
+      "identitymind.com",
+      "idfy.com",
+      "entrust.com",
+      "onfido.com",
+      "ncino.com",
+      "fullcircl.com",
+      "vespia.io",
+      "shuftipro.com",
+      "shufti.com",
+      "21analytics.co",
+      "yoti.com",
+      "experian.com",
+      "gbgplc.com",
+      "refinitiv.com"
+    ],
+    "vendorDomainsNote": "Outbound links to provider domains get rel=nofollow at build time (eleventy.config.js, transform 'vendor-nofollow'). Provider domains come from each record's link.url plus this list (unreviewed vendors, old brand domains). Providers with link.type affiliate or paid get 'sponsored nofollow'."
   }
 }
