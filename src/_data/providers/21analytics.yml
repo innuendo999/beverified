@@ -21,16 +21,16 @@ categories:
 link:
   url: https://www.21analytics.co
   type: none
-last_verified: '2026-10-19'
-updated: '2026-10-19'   # last content edit; last_verified = last fact re-check
-verdict: 21 Analytics suits regulated VASPs, crypto brokers and banks that want to run Travel Rule software in their own infrastructure and keep customer data off a vendor's servers. Its strongest card is TRUST, the Travel Rule network that Coinbase helps run. TRUST's own page lists 21 Analytics as its only interoperability partner, and the software has connected to TRUST out of the box since version 8.1.0 in March 2026. TRP is built in as well, TRISA counterparties are reachable through the TRP bridge, and self-hosted wallets can be checked four ways, AOPP included. The gaps are price and paperwork. The pricing page shows tiers but no prices, and the only figure we found, CHF 900 a month for a Starter plan, comes from G2 and Capterra. The ISO/IEC 27001:2022 certificate is claimed but not published, and there is no SOC 2 report. You also run, patch and back up the software yourself. Ask for a written quote and the certificate before you sign.
+last_verified: '2026-10-20'
+updated: '2026-10-20'   # last content edit; last_verified = last fact re-check
+verdict: 21 Analytics suits regulated VASPs, crypto brokers and banks that want to run Travel Rule software in their own infrastructure and keep customer data off a vendor's servers. Its strongest card is TRUST, the Travel Rule network that Coinbase helps run. TRUST's own page lists 21 Analytics as its only interoperability partner, and the software has connected to TRUST out of the box since version 8.1.0 in March 2026. TRP is built in as well, TRISA counterparties are reachable through the TRP bridge, and self-hosted wallets can be checked four ways, AOPP included. The gaps are price and paperwork. The pricing page shows tiers but no prices, and the only figure we found, CHF 900 a month for a Starter plan, comes from G2 and Capterra. 21 Analytics says its ISO/IEC 27001:2022 certificate can be downloaded from its Compliance Centre, which we have not yet been able to open, and there is no SOC 2 report. You also run, patch and back up the software yourself. Ask for a written quote and the certificate before you sign.
 what_is:
 - 21 Analytics sells 21 Travel Rule, software that VASPs install in their own data centre or cloud account to exchange originator and beneficiary data with other VASPs under FATF Recommendation 16 and the EU Transfer of Funds Regulation. It ships as containers with a PostgreSQL database and talks to counterparties over TRP and TRUST. VASPs without a Travel Rule solution get encrypted email. A Compliance Dashboard and a GraphQL API handle review and integration, and an AOPP portal collects proofs that a customer controls a self-hosted wallet. 21 Analytics says it cannot access customer data, logs or configuration in a deployment. Support works by screen sharing or log upload. Its other products are 21 Virtual Counter and 21 Sunrise, for requesting data from VASPs that have no Travel Rule tool.
-- The company is 21 Analytics AG of Zug, Switzerland. It says it was founded in 2020 to address the Travel Rule, while the commercial register shows the company itself registered on 8 June 2018 under an earlier name, 21 Lectures AG. Filip Gospodinov is CEO, Lucas Betschart is COO and chairs the board, and Dominik Spicher is CTO. Betschart also sits on the board of the OpenVASP Association, which maintains TRP. In August 2020 the software carried what a Swiss news report described as the first automated Travel Rule transfer between Swiss intermediaries, Crypto Finance and Mt Pelerin. It created AOPP the same year, and Trezor dropped AOPP from its wallet software in January 2022 after user objections. TRUST announced 21 Analytics as a technology partner in May 2026. Published case studies cover Tangany, Xerof and Relai. 21 Analytics discloses no funding.
+- The company is 21 Analytics AG of Zug, Switzerland. It says it was founded in 2020 to address the Travel Rule, while the commercial register shows the company itself registered on 8 June 2018 under an earlier name, 21 Lectures AG. Filip Gospodinov is CEO, Lucas Betschart is COO and chairs the board, and Dominik Spicher is CTO. Betschart also sits on the board of the OpenVASP Association, which maintains TRP. In August 2020 the software carried what a Swiss news report described as the first automated Travel Rule transfer between Swiss intermediaries, Crypto Finance and Mt Pelerin. It created AOPP the same year. Trezor dropped the open AOPP standard from its wallet software in January 2022 after user objections, and 21 Analytics says its software still supports Trezor through a direct integration. TRUST announced 21 Analytics as a technology partner in May 2026. Published case studies cover Tangany, Xerof and Relai. 21 Analytics discloses no funding.
 features:
 - Built-in TRUST connectivity, with transfers to TRUST members detected automatically once your firm has passed TRUST's own due diligence.
 - Native TRP messaging with IVMS101 data, TRISA counterparties reachable through the TRP and TRISA bridge, and encrypted email for VASPs that have no Travel Rule solution.
-- Four self-hosted wallet proofs (AOPP, signed messages, Satoshi tests and screenshot or video proofs), with AOPP support in 540+ wallets per 21 Analytics.
+- Four self-hosted wallet proofs (AOPP, signed messages, Satoshi tests and screenshot or video proofs). 21 Analytics says one-click proofs work with Trezor, Ledger, Jade, TRONLink and 540+ other wallets, some through direct integrations rather than the AOPP standard.
 - Self-hosted deployment on Podman or Kubernetes and OpenShift via Helm charts, with images from a licensed private registry and no telemetry, per 21 Analytics.
 - Compliance Dashboard with counterparty VASP management, business rules that can be written in plain language with AI, audit logs and exports.
 - Native wallet risk scores from Chainalysis, Crystal, Global Ledger, Beosin and Merkle Science, plus a GraphQL API and an integration client SDK.
@@ -131,8 +131,8 @@ facts:
   source: 20
   evidence: vendor
 - label: Certifications
-  value: ISO/IEC 27001:2022 (vendor-stated; certificate not published); no SOC 2 claim found
-  source: 27
+  value: ISO/IEC 27001:2022 (vendor-stated; certificate offered for download in the 21 Analytics Compliance Centre, not yet checked by us); no SOC 2 claim found
+  source: 40
   evidence: vendor
 pros:
 - Built-in TRUST connectivity, and TRUST's own page lists 21 Analytics as its only interoperability partner
@@ -140,8 +140,8 @@ pros:
 - Four ways to prove self-hosted wallet ownership, plus public versioned docs and a release every few months
 cons:
 - The pricing page shows no prices; the CHF 900 monthly Starter figure comes only from G2 and Capterra
-- ISO/IEC 27001 is vendor-stated with no certificate or certification body published, and there is no SOC 2 report
-- You install, patch and back up the software yourself, and G2 and Capterra show no user reviews yet
+- We have not yet checked the ISO/IEC 27001 certificate in 21 Analytics' Compliance Centre, other security reports there need an NDA, and there is no SOC 2 report
+- You install, patch and back up the software yourself, and there is only one public user review so far (SourceForge)
 alternatives:
 - slug: null
   name: Notabene
@@ -177,34 +177,39 @@ faq:
 - q: Do I need to be a TRUST member to use the TRUST connection?
   a: Yes. 21 Analytics says the connection works after your firm passes TRUST's due diligence, and TRUST says every member must meet its anti-money laundering, security and privacy requirements first. TRUST splits running costs between members and offers a free option for smaller VASPs. 21 Analytics says some firms may get free TRUST support through its product.
 - q: Which Travel Rule protocols does 21 Analytics support?
-  a: TRUST and TRP are built in, TRISA counterparties can be reached through the TRP and TRISA bridge, and VASPs with no Travel Rule solution get encrypted email. We found no direct connection to GTR, CODE, Sygna Bridge, VerifyVASP or Notabene's network, so check your counterparty list before you commit.
+  a: TRUST and TRP are built in, TRISA counterparties can be reached through the TRP and TRISA bridge, and VASPs with no Travel Rule solution get encrypted email. We found no direct connection to GTR, CODE, VerifyVASP (which bought Sygna in 2026) or Notabene's network, so check your counterparty list before you commit.
 - q: Is 21 Analytics self-hosted or SaaS?
   a: Self-hosted. You run it on your own hardware or cloud, on Podman or on Kubernetes and OpenShift through Helm charts, with a PostgreSQL database. Since October 2025 AML Incubator has offered a managed Travel Rule service that can deploy the software for you instead, and Capterra lists a Starter plan on the Azure Marketplace.
 - q: How does 21 Analytics verify self-hosted wallets?
-  a: It offers four proofs. These are AOPP, which 21 Analytics created and says works in 540+ wallets, a signed message, a Satoshi test (a small transfer from the wallet) and a screenshot or video proof. Trezor removed AOPP from its software in January 2022 after user objections, so not every wallet supports the one-click route.
+  a: It offers four proofs. These are AOPP, which 21 Analytics created and says works in 540+ wallets, a signed message, a Satoshi test (a small transfer from the wallet) and a screenshot or video proof. Trezor removed the open AOPP standard from its software in January 2022 after user objections. 21 Analytics says the one-click route still works with Trezor, Ledger, Jade, TRONLink and 540+ other wallets, some through its own direct integrations rather than AOPP.
 - q: Is 21 Analytics ISO 27001 or SOC 2 certified?
-  a: 21 Analytics says it holds ISO/IEC 27001:2022 and that the certification was renewed, but it does not publish the certificate, number, scope or certification body, and its trust centre would not load for us. We found no SOC 2 claim. Ask for the certificate during due diligence.
+  a: 21 Analytics says it holds ISO/IEC 27001:2022 and that the certificate can be downloaded from its Compliance Centre, linked from its homepage. The Compliance Centre would not load for our checks, so we have not yet seen the certificate number, scope or certification body. 21 Analytics says other reports there, including DORA and NIS2 readiness, an ICT risk statement and ISO 20243 and ISO 27034 verification reports, are released after an NDA. We found no SOC 2 claim.
 - q: What is the best alternative to 21 Analytics?
   a: Notabene is the closest alternative if you want a hosted Travel Rule network rather than software you run yourself. Sumsub suits firms that want Travel Rule bundled with KYC and published prices, and VerifyVASP, which bought Sygna in 2026, is strongest in Asia-Pacific.
 segments: []
 capabilities: {}
 certifications:
 - name: ISO/IEC 27001:2022
-  what: Information security; certificate number, body and scope not published
+  what: Information security; 21 Analytics says the certificate can be downloaded from its Compliance Centre (not yet checked by BeVerified)
   status: vendor_stated
-  source: 27
-user_ratings: []
+  source: 40
+user_ratings:
+- platform: SourceForge
+  rating: 5.0
+  count: 1
+  checked: '2026-10'
+  url: https://sourceforge.net/software/product/21-Travel-Rule/
 use_case_verdicts: []
 score_breakdown:
 - criterion: Compliance & certifications
   weight: 25
   score: 3.8
-  note: 21 Analytics claims ISO/IEC 27001:2022 but publishes no certificate, number, scope or certification body, there is no SOC 2 report, and the strongest data protection point, that the vendor cannot access a deployment, is vendor-stated.
+  note: 21 Analytics says its ISO/IEC 27001:2022 certificate is downloadable from its Compliance Centre, which we have not yet been able to check, further security reports need an NDA, there is no SOC 2 report, and the strongest data protection point, that the vendor cannot access a deployment, is vendor-stated.
   evidence: vendor
 - criterion: Coverage
   weight: 20
   score: 4.3
-  note: TRUST's own page confirms 21 Analytics as its interoperability partner, and TRP, a TRISA bridge, email fallback, four wallet proofs and 30 tracked jurisdictions are documented, but there is no direct GTR, CODE, Sygna or VerifyVASP connection.
+  note: TRUST's own page confirms 21 Analytics as its interoperability partner, and TRP, a TRISA bridge, email fallback, four wallet proofs and 30 tracked jurisdictions are documented, but there is no direct GTR, CODE or VerifyVASP connection (VerifyVASP now owns Sygna).
   evidence: independent
 - criterion: Pricing transparency
   weight: 20
@@ -213,18 +218,18 @@ score_breakdown:
   evidence: vendor
 - criterion: Integration & API depth
   weight: 15
-  score: 4.3
-  note: Public, versioned docs cover the reference deployment, GraphQL and REST services and an integration client SDK, with releases from 7.3.0 in February 2025 to 8.4.0 in October 2026, but no sandbox is documented and you operate the stack yourself.
+  score: 4.4
+  note: Public, versioned docs cover the reference deployment, GraphQL and REST services and an integration client SDK, with releases from 7.3.0 in February 2025 to 8.4.0 in October 2026. 21 Analytics says prospects get a sandbox on request, though it is not yet in the docs, and you operate the stack yourself.
   evidence: vendor
 - criterion: Support responsiveness
   weight: 10
   score: 3.8
-  note: Support terms are published (24/5 with replies within 3 business days on Essentials, 24 hours on Enterprise), but support needs screen sharing or log uploads, and there are no user reviews on G2 or Capterra.
+  note: Support terms are published (24/5 with replies within 3 business days on Essentials, 24 hours on Enterprise), but support needs screen sharing or log uploads, and the only public user review is a single one on SourceForge.
   evidence: vendor
 - criterion: Track record
   weight: 10
   score: 4.2
-  note: The Zug company has been registered since 2018, has run Travel Rule software since 2020 and became a TRUST technology partner in 2026, with no funding disclosed and no public regulatory actions or breach disclosures found; Trezor dropped its AOPP protocol in 2022.
+  note: The Zug company has been registered since 2018, has run Travel Rule software since 2020 and became a TRUST technology partner in 2026, with no funding disclosed and no public regulatory actions or breach disclosures found.
   evidence: independent
 hands_on: null
 sources:
@@ -384,12 +389,21 @@ sources:
   publisher: 21 Analytics
   url: https://www.21analytics.co/press/
   accessed: '2026-10'
+- title: Compliance Centre, reports and documents
+  publisher: 21 Analytics
+  url: https://compliance.21analytics.co/?tab=reports-and-documents
+  accessed: '2026-10'
+- title: 21 Travel Rule reviews
+  publisher: SourceForge
+  url: https://sourceforge.net/software/product/21-Travel-Rule/
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
   same_as:
   - https://www.21analytics.co
   - https://www.g2.com/products/21-travel-rule/reviews
+  - https://sourceforge.net/software/product/21-Travel-Rule/
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
@@ -422,3 +436,4 @@ application_category: Travel Rule Compliance Software
 author: andrii-klymenko
 directory_categories:
 - Travel Rule
+- 'Feedback from 21 Analytics by email, 20 Oct 2026: (1) ISO/IEC 27001 certificate downloadable from compliance.21analytics.co (reports and documents tab), linked as Compliance Centre on the homepage; DORA and NIS2 readiness, ICT risk statement, ISO 20243 and ISO 27034 verification reports there only under NDA. The page renders client-side and returned only its title to our fetcher; certificate number, body and scope not yet checked, status stays vendor_stated. (2) SourceForge is their chosen review platform: 1 review, 5.0, posted 13 Oct 2026. (3) Sygna was bought by VerifyVASP, wording merged. (4) Sandbox given to prospects on request, docs to be updated; integration 4.3 to 4.4. (5) Trezor: the open AOPP standard is gone from Trezor, but 21 Analytics says its software supports Trezor, Ledger, Jade, TRONLink and 540+ wallets through direct integrations; Trezor removed from the track record note. (6) Pricing: rubric unchanged, the pricing page still shows no prices; a price list was shared privately and is not used in the record.'

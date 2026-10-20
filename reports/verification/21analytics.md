@@ -103,3 +103,20 @@ None for this record. The score is new (4.0). The vendor's self-reported 4.8 on 
 - The Azure Marketplace Starter listing itself (seen only through G2 and Capterra).
 - Who hosts the software under the AML Incubator managed service.
 - Customer status of the homepage logo wall (Vontobel, Luzerner Kantonalbank and others).
+
+## Update 2026-10-20: feedback from 21 Analytics
+
+21 Analytics replied by email to the published review. What changed:
+
+| Point | Their feedback | Change in the record |
+|---|---|---|
+| ISO/IEC 27001 | Certificate downloadable from the Compliance Centre (compliance.21analytics.co, reports and documents), linked on the homepage. DORA and NIS2 readiness, ICT risk statement, ISO 20243 and ISO 27034 verification reports there under NDA | Wording now says where the certificate is. The page renders by script and was empty to our fetcher, so the status stays `vendor_stated` until we see certificate number, body and scope. Compliance score unchanged (3.8) for now |
+| User reviews | SourceForge is their review platform | `user_ratings`: SourceForge 5.0 from 1 review (posted 13 Oct 2026). Support score unchanged |
+| Sygna and VerifyVASP | Same entity since the acquisition | Wording merged in coverage note and FAQ |
+| Sandbox | Prospects get one on request; docs to be updated | Vendor-stated in the integration note; integration 4.3 to 4.4 |
+| Trezor and AOPP | Open AOPP dropped by Trezor, but their software supports Trezor, Ledger, Jade, TRONLink and 540+ wallets through direct integrations | Clarified in what_is, features and FAQ; removed from the track record note |
+| Pricing transparency | Enterprise B2B vendors don't publish prices; price list sent privately | Rubric unchanged: the criterion scores public prices, and other Travel Rule vendors (Sumsub, TRP) publish theirs. The private price list is not used in the record or this report |
+
+Not recorded because 21 Analytics said it is not public yet: planned network bridges.
+
+Weighted score: 3.8×0.25 + 4.3×0.20 + 3.6×0.20 + 4.4×0.15 + 3.8×0.10 + 4.2×0.10 = 3.99, rounds to **4.0** (unchanged).
