@@ -120,3 +120,22 @@ None for this record. The score is new (4.0). The vendor's self-reported 4.8 on 
 Not recorded because 21 Analytics said it is not public yet: planned network bridges.
 
 Weighted score: 3.8×0.25 + 4.3×0.20 + 3.6×0.20 + 4.4×0.15 + 3.8×0.10 + 4.2×0.10 = 3.99, rounds to **4.0** (unchanged).
+
+## Update 2026-10-20 (2): ISO/IEC 27001 confirmed
+
+The editor downloaded the certificate from the Compliance Centre (public "Download" button; most other documents there are "Request Access").
+
+| Field | Certificate |
+|---|---|
+| Body | InterCert (InterCert Inc., The Woodlands, Texas); SCC and IAF marks |
+| Holder | 21 Analytics AG, Poststrasse 22, 6300 Zug |
+| Standard | ISO/IEC 27001:2022, SoA version 1.0 |
+| Scope | ISMS covering business processes, infrastructure and data for development, operation and maintenance of its compliance software |
+| Dates | Initial certification and issue 24 Apr 2026; surveillance validity 23 Apr 2027; recertification 23 Apr 2029 |
+| Registration | IC-IS-2604284 (not checked in InterCert's lookup form, which renders by script) |
+
+Accreditation: the SCC directory lists InterCert Inc. as accredited (file 8070, valid to 25 Feb 2030), and the SCC scope of accreditation (v7, 12 Nov 2024) covers ISO/IEC 27001:2013 and 27001:2022.
+
+Certification status `vendor_stated` → `confirmed`. Compliance 3.8 → 4.3, the same as AML Watcher (confirmed ISO/IEC 27001 only, no SOC 2).
+
+Weighted: 4.3×0.25 + 4.3×0.20 + 3.6×0.20 + 4.4×0.15 + 3.8×0.10 + 4.2×0.10 = 4.115, rounds to **4.1** (Good). Travel Rule rank unchanged (1st).
