@@ -13,7 +13,7 @@ logo:
   background: null
   wordmark: null
 tagline: Self-hosted Travel Rule software with built-in TRUST and TRP connectivity and four ways to prove ownership of a self-hosted wallet
-score: 4.0
+score: 4.1
 grade: Good
 primary_category: travel-rule
 categories:
@@ -23,7 +23,7 @@ link:
   type: none
 last_verified: '2026-10-20'
 updated: '2026-10-20'   # last content edit; last_verified = last fact re-check
-verdict: 21 Analytics suits regulated VASPs, crypto brokers and banks that want to run Travel Rule software in their own infrastructure and keep customer data off a vendor's servers. Its strongest card is TRUST, the Travel Rule network that Coinbase helps run. TRUST's own page lists 21 Analytics as its only interoperability partner, and the software has connected to TRUST out of the box since version 8.1.0 in March 2026. TRP is built in as well, TRISA counterparties are reachable through the TRP bridge, and self-hosted wallets can be checked four ways, AOPP included. The gaps are price and paperwork. The pricing page shows tiers but no prices, and the only figure we found, CHF 900 a month for a Starter plan, comes from G2 and Capterra. 21 Analytics says its ISO/IEC 27001:2022 certificate can be downloaded from its Compliance Centre, which we have not yet been able to open, and there is no SOC 2 report. You also run, patch and back up the software yourself. Ask for a written quote and the certificate before you sign.
+verdict: 21 Analytics suits regulated VASPs, crypto brokers and banks that want to run Travel Rule software in their own infrastructure and keep customer data off a vendor's servers. Its strongest card is TRUST, the Travel Rule network that Coinbase helps run. TRUST's own page lists 21 Analytics as its only interoperability partner, and the software has connected to TRUST out of the box since version 8.1.0 in March 2026. TRP is built in as well, TRISA counterparties are reachable through the TRP bridge, and self-hosted wallets can be checked four ways, AOPP included. The main gap is price. The pricing page shows tiers but no prices, and the only figure we found, CHF 900 a month for a Starter plan, comes from G2 and Capterra. Security paperwork is stronger. The ISO/IEC 27001:2022 certificate, issued by InterCert in April 2026, can be downloaded from 21 Analytics' Compliance Centre, though there is no SOC 2 report. You also run, patch and back up the software yourself. Ask for a written quote before you sign.
 what_is:
 - 21 Analytics sells 21 Travel Rule, software that VASPs install in their own data centre or cloud account to exchange originator and beneficiary data with other VASPs under FATF Recommendation 16 and the EU Transfer of Funds Regulation. It ships as containers with a PostgreSQL database and talks to counterparties over TRP and TRUST. VASPs without a Travel Rule solution get encrypted email. A Compliance Dashboard and a GraphQL API handle review and integration, and an AOPP portal collects proofs that a customer controls a self-hosted wallet. 21 Analytics says it cannot access customer data, logs or configuration in a deployment. Support works by screen sharing or log upload. Its other products are 21 Virtual Counter and 21 Sunrise, for requesting data from VASPs that have no Travel Rule tool.
 - The company is 21 Analytics AG of Zug, Switzerland. It says it was founded in 2020 to address the Travel Rule, while the commercial register shows the company itself registered on 8 June 2018 under an earlier name, 21 Lectures AG. Filip Gospodinov is CEO, Lucas Betschart is COO and chairs the board, and Dominik Spicher is CTO. Betschart also sits on the board of the OpenVASP Association, which maintains TRP. In August 2020 the software carried what a Swiss news report described as the first automated Travel Rule transfer between Swiss intermediaries, Crypto Finance and Mt Pelerin. It created AOPP the same year. Trezor dropped the open AOPP standard from its wallet software in January 2022 after user objections, and 21 Analytics says its software still supports Trezor through a direct integration. TRUST announced 21 Analytics as a technology partner in May 2026. Published case studies cover Tangany, Xerof and Relai. 21 Analytics discloses no funding.
@@ -131,16 +131,16 @@ facts:
   source: 20
   evidence: vendor
 - label: Certifications
-  value: ISO/IEC 27001:2022 (vendor-stated; certificate offered for download in the 21 Analytics Compliance Centre, not yet checked by us); no SOC 2 claim found
+  value: ISO/IEC 27001:2022, InterCert certificate IC-IS-2604284, issued 24 Apr 2026, valid to 23 Apr 2027 pending surveillance audit; no SOC 2 claim found
   source: 40
-  evidence: vendor
+  evidence: independent
 pros:
 - Built-in TRUST connectivity, and TRUST's own page lists 21 Analytics as its only interoperability partner
 - Runs in your own infrastructure with no telemetry, and 21 Analytics says it cannot see customer data
 - Four ways to prove self-hosted wallet ownership, plus public versioned docs and a release every few months
 cons:
 - The pricing page shows no prices; the CHF 900 monthly Starter figure comes only from G2 and Capterra
-- We have not yet checked the ISO/IEC 27001 certificate in 21 Analytics' Compliance Centre, other security reports there need an NDA, and there is no SOC 2 report
+- No SOC 2 report, and security reports beyond the ISO/IEC 27001 certificate need an access request or NDA
 - You install, patch and back up the software yourself, and there is only one public user review so far (SourceForge)
 alternatives:
 - slug: null
@@ -183,15 +183,15 @@ faq:
 - q: How does 21 Analytics verify self-hosted wallets?
   a: It offers four proofs. These are AOPP, which 21 Analytics created and says works in 540+ wallets, a signed message, a Satoshi test (a small transfer from the wallet) and a screenshot or video proof. Trezor removed the open AOPP standard from its software in January 2022 after user objections. 21 Analytics says the one-click route still works with Trezor, Ledger, Jade, TRONLink and 540+ other wallets, some through its own direct integrations rather than AOPP.
 - q: Is 21 Analytics ISO 27001 or SOC 2 certified?
-  a: 21 Analytics says it holds ISO/IEC 27001:2022 and that the certificate can be downloaded from its Compliance Centre, linked from its homepage. The Compliance Centre would not load for our checks, so we have not yet seen the certificate number, scope or certification body. 21 Analytics says other reports there, including DORA and NIS2 readiness, an ICT risk statement and ISO 20243 and ISO 27034 verification reports, are released after an NDA. We found no SOC 2 claim.
+  a: It is ISO/IEC 27001:2022 certified. The certificate, which anyone can download from the 21 Analytics Compliance Centre, was issued by InterCert on 24 April 2026 (registration number IC-IS-2604284). It covers the business processes, infrastructure and data behind developing, running and maintaining its compliance software, and it is valid to 23 April 2027, subject to a yearly surveillance audit, with recertification due in April 2029. InterCert is accredited for ISO/IEC 27001 by the Standards Council of Canada. Other reports in the Compliance Centre, such as DORA and NIS2 readiness, an SBOM attestation, a container image vulnerability report and ISO 20243 and ISO 27034 verification reports, are released on request, some under an NDA. We found no SOC 2 claim.
 - q: What is the best alternative to 21 Analytics?
   a: Notabene is the closest alternative if you want a hosted Travel Rule network rather than software you run yourself. Sumsub suits firms that want Travel Rule bundled with KYC and published prices, and VerifyVASP, which bought Sygna in 2026, is strongest in Asia-Pacific.
 segments: []
 capabilities: {}
 certifications:
 - name: ISO/IEC 27001:2022
-  what: Information security; 21 Analytics says the certificate can be downloaded from its Compliance Centre (not yet checked by BeVerified)
-  status: vendor_stated
+  what: Information security management for developing, running and maintaining its compliance software; InterCert, IC-IS-2604284, issued 24 Apr 2026, valid to 23 Apr 2027 pending surveillance audit, recertification Apr 2029
+  status: confirmed
   source: 40
 user_ratings:
 - platform: SourceForge
@@ -203,9 +203,9 @@ use_case_verdicts: []
 score_breakdown:
 - criterion: Compliance & certifications
   weight: 25
-  score: 3.8
-  note: 21 Analytics says its ISO/IEC 27001:2022 certificate is downloadable from its Compliance Centre, which we have not yet been able to check, further security reports need an NDA, there is no SOC 2 report, and the strongest data protection point, that the vendor cannot access a deployment, is vendor-stated.
-  evidence: vendor
+  score: 4.3
+  note: The ISO/IEC 27001:2022 certificate (InterCert IC-IS-2604284, April 2026) is public in the Compliance Centre and comes from a body the Standards Council of Canada accredits for ISO/IEC 27001, but there is no SOC 2 report, further security reports need an access request or NDA, and the claim that the vendor cannot access a deployment is vendor-stated.
+  evidence: independent
 - criterion: Coverage
   weight: 20
   score: 4.3
@@ -397,6 +397,14 @@ sources:
   publisher: SourceForge
   url: https://sourceforge.net/software/product/21-Travel-Rule/
   accessed: '2026-10'
+- title: InterCert Inc., management systems accreditation
+  publisher: Standards Council of Canada
+  url: https://scc-ccn.ca/accreditation/management-systems/intercert-inc
+  accessed: '2026-10'
+- title: InterCert Inc. scope of accreditation (file 8070)
+  publisher: Standards Council of Canada
+  url: https://scc-ccn.ca/system/files/2024-11/asb_soa_08070_v7_2024-11-12_en.pdf
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -437,3 +445,4 @@ author: andrii-klymenko
 directory_categories:
 - Travel Rule
 - 'Feedback from 21 Analytics by email, 20 Oct 2026: (1) ISO/IEC 27001 certificate downloadable from compliance.21analytics.co (reports and documents tab), linked as Compliance Centre on the homepage; DORA and NIS2 readiness, ICT risk statement, ISO 20243 and ISO 27034 verification reports there only under NDA. The page renders client-side and returned only its title to our fetcher; certificate number, body and scope not yet checked, status stays vendor_stated. (2) SourceForge is their chosen review platform: 1 review, 5.0, posted 13 Oct 2026. (3) Sygna was bought by VerifyVASP, wording merged. (4) Sandbox given to prospects on request, docs to be updated; integration 4.3 to 4.4. (5) Trezor: the open AOPP standard is gone from Trezor, but 21 Analytics says its software supports Trezor, Ledger, Jade, TRONLink and 540+ wallets through direct integrations; Trezor removed from the track record note. (6) Pricing: rubric unchanged, the pricing page still shows no prices; a price list was shared privately and is not used in the record.'
+- 'ISO/IEC 27001 confirmed 20 Oct 2026: certificate PDF downloaded by the editor from the Compliance Centre (public Download button; ISO/IEC 27001:2022 and the release communication plan are public, the other documents are behind Request Access). Certificate: InterCert, 21 Analytics AG, Poststrasse 22, Zug; scope ISMS covering business processes, infrastructure and data for development, operation and maintenance of its compliance software; SoA version 1.0; initial certification and issue 24 Apr 2026; surveillance validity 23 Apr 2027; recertification 23 Apr 2029; registration IC-IS-2604284; SCC and IAF marks. SCC directory: InterCert Inc. accredited, file 8070, valid to 2030-02-25; SCC scope (v7, 2024-11-12) lists ISO/IEC 27001:2013 and 27001:2022 under ISMS. Registration number not checked in the InterCert lookup form (script rendered). The certificate gives 24 Apr 2026 as the initial certification date with InterCert, while the Scytale case study says the certification was renewed, so an earlier certificate was probably with another body; not stated in the record. Compliance 3.8 to 4.3 (same treatment as AML Watcher); overall 3.99 to 4.115, rounds to 4.1.'
