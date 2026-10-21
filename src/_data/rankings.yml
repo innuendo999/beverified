@@ -1491,6 +1491,23 @@ south-africa:
     legacy_price_shown: Free (10/mo); from $1.50/verification
     legacy_rating_shown: null
     segments: []
+  - slug: kycaid
+    name: KYCAID
+    award: null
+    tagline: Configurable KYC flows that check South African identity documents with a face match, at published per-check prices.
+    coverage: Global
+    size: SMB to Mid-market
+    pros:
+    - Document and face verification for South African customers, confirmed by KYCAID to BeVerified (Oct 2026)
+    - Published prices from €0.50 per document check
+    - Built-in PEP and sanctions screening with ongoing monitoring
+    cons:
+    - No check against the Home Affairs population register; its database checks cover 7 other countries
+    - No South African office listed
+    - Smaller watchlist database than category leaders
+    legacy_price_shown: From €0.50/check + €100/mo
+    legacy_rating_shown: null
+    segments: []
   - slug: castellum-ai
     name: Castellum.AI
     award: Best for FIC Sanctions Screening

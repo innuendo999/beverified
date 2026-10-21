@@ -42,7 +42,7 @@ Inclusion rule: reviewed providers only (record in `src/_data/providers/`), with
 | Trulioo (4.5) | Only evidence: legacy GlobalGateway v1 docs list "South Africa / ID" and "South Africa / Passport" as supported national ID types (https://developer.trulioo.com/reference/national-ids-supported-types-2, modified 2025-09-15), and a 2019 FICA blog post with no product detail. Field support is not proof of a register check. Borderline; add if Trulioo confirms an SA data source. |
 | Signzy (4.4) | Has a "South Africa National ID" API that matches name, DOB and 13-digit ID against "national identity databases" (https://docs.signzy.com/us-apis/south-africa-national-id, no date). Real, but the record positions Signzy as India-focused (regions India, US, Middle East), so an SA card would sit against the record. Candidate for a later update. |
 | GBG (4.5) | GBG GO "South Africa National ID" population registry check is marked "Coming soon!" (https://docs.go.gbgplc.com/docs/go-v1/digital-id-portal/supported-digital-ids/south-africa-national-id.md). Not live. |
-| KYCAID (4.6) | Pricing page lists government number checks for 7 countries (UA, BR, MX, PE, KZ, IN, TR); South Africa not listed (https://kycaid.com/pricing/, https://kycaid.com/non-doc/). |
+| KYCAID (4.6) | Excluded in the first draft: pricing page lists government number checks for 7 countries (UA, BR, MX, PE, KZ, IN, TR), South Africa not listed (https://kycaid.com/pricing/, https://kycaid.com/non-doc/). |
 | Veriff (4.6) | No SA-specific page, document list or database check found; Capterra ZA listing has no SA detail. |
 | Persona (4.6) | Database coverage only in the in-dashboard coverage map; no public SA evidence. |
 | ComplyAdvantage (4.6) | No public page found stating FIC TFS list coverage or SA presence. |
@@ -77,3 +77,8 @@ Inclusion rule: reviewed providers only (record in `src/_data/providers/`), with
 - Shufti, Incode and Sumsub SA claims are vendor-stated; none independently tested.
 - Trulioo and Castellum.AI tie at 4.5; Trulioo excluded, so no tie-break was needed.
 - The FIC website (fic.gov.za) did not load from this environment; FIC facts come from law-firm and trade sources.
+
+
+## Update 2026-10-21: KYCAID added
+
+KYCAID confirmed to the editor by email (21 Oct 2026) that it serves South African customers. Added in 4th place (score 4.6, tied with Shufti Pro, which stays ahead on documented South Africa evidence: SA document list, CIPC, FIC list, Cape Town hosting). The card claims document and face verification only, labelled as confirmed by KYCAID; it states that there is no Home Affairs register check, since the database checks on the pricing page cover 7 other countries.
