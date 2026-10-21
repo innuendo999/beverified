@@ -5,7 +5,7 @@ export default {
   pagination: { data: "categories", size: 1, alias: "c", resolve: "values", addAllPagesToCollections: true },
   permalink: (data) => data.c.url,
   eleventyComputed: {
-    navCurrent: (d) => (["brazil", "canada", "india", "mexico", "peru"].includes(d.c.slug) ? "regions" : "use-cases"),
+    navCurrent: (d) => (["brazil", "canada", "india", "mexico", "peru", "south-africa"].includes(d.c.slug) ? "regions" : "use-cases"),
     seoTitle: (d) => d.c.seo?.title,
     seoDescription: (d) => d.c.seo?.description,
     updated: (d) => [d.c.updated, d.c.last_verified].filter(Boolean).sort().pop(),

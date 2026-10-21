@@ -38,6 +38,7 @@ regions:                # area = section on /regions/; x/y = % position on the m
   - { name: Nigeria, short: Nigeria, area: Middle East & Africa, reg: CBN, x: 52, y: 45 }
   - { name: Canada, short: Canada, area: North America, reg: FINTRAC, x: 22, y: 22, slug: canada, side: left }
   - { name: Peru, short: Peru, area: Latin America, reg: SBS, x: 29, y: 56, slug: peru, side: left }
+  - { name: South Africa, short: South Africa, area: Middle East & Africa, reg: FIC, x: 56.6, y: 64.3, slug: south-africa }
 
 top_rated_count: 8
 recheck: We aim to re-check every review every 90 days

@@ -10,7 +10,7 @@ export default {
   permalink: "/regions/",
   navCurrent: "regions",
   seoTitle: "KYC & AML Providers by Country | BeVerified",
-  seoDescription: "Country rankings of KYC and AML providers, compared on local ID documents, registries and regulators. Brazil, Canada, India, Mexico and Peru.",
+  seoDescription: "Country rankings of KYC and AML providers, compared on local ID documents, registries and regulators. Brazil, Canada, India, Mexico, Peru and South Africa.",
   eleventyComputed: {
     guides: (d) => markets(d).filter((m) => m.url),
     areas: (d) => AREAS.map((a) => ({ name: a, items: markets(d).filter((m) => m.area === a) })).filter((a) => a.items.length),
