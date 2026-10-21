@@ -1230,6 +1230,23 @@ travel-rule:
     legacy_price_shown: On request
     legacy_rating_shown: null
     segments: []
+  - slug: verifyvasp
+    name: VerifyVASP
+    award: Best APAC Coverage
+    tagline: Members-only Travel Rule network from Singapore, strong among Asia-Pacific exchanges, that now also owns Sygna Bridge.
+    coverage: Global (vendor-stated), strongest in South Korea, Singapore and Japan
+    size: Mid-market to Enterprise
+    pros:
+    - Large Asia-Pacific exchange network, with a live CODE connection documented by CODE
+    - Owns Sygna Bridge since April 2026, adding its Japanese members and public API docs
+    - Self-hosted wallet checks by signature challenge, plus a name-match check for first-party transfers
+    cons:
+    - No prices published; the terms describe only a subscription plus usage fee
+    - SOC 2 Type II is vendor-stated with no auditor named; no current ISO/IEC 27001 certificate found
+    - Network size differs by page (110+ to 150+ VASPs) and there is no TRUST, TRP or GTR link
+    legacy_price_shown: On request
+    legacy_rating_shown: null
+    segments: []
   - slug: trp
     name: TRP
     award: Best Published Travel Rule Pricing
@@ -1263,40 +1280,6 @@ travel-rule:
     - Best paired with a separate wallet-screening tool
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.7
-    segments: []
-  - slug: null
-    name: Sygna Bridge
-    award: Best for High-Volume Exchanges
-    tagline: High-throughput Travel Rule messaging built for large exchange volume.
-    coverage: Global, strong in Asia
-    size: null
-    pros:
-    - Proven at high transfer volumes
-    - Strong exchange-to-exchange relationships already onboarded
-    - Solid IVMS101 implementation
-    cons:
-    - Smaller network outside major exchanges
-    - Documentation skews technical
-    - Pricing not published
-    legacy_price_shown: Custom pricing
-    legacy_rating_shown: 4.6
-    segments: []
-  - slug: null
-    name: VerifyVASP
-    award: Best APAC Coverage
-    tagline: VASP network focused on Asia-Pacific exchanges.
-    coverage: Strongest in APAC
-    size: null
-    pros:
-    - Deep APAC exchange network
-    - Fast counterparty lookup
-    - Responsive regional support
-    cons:
-    - Coverage thinner outside APAC
-    - Smaller global brand recognition
-    - Pricing requires a sales conversation
-    legacy_price_shown: Custom pricing
-    legacy_rating_shown: 4.5
     segments: []
 age-verification:
   title: Best Age Verification Providers in 2026
