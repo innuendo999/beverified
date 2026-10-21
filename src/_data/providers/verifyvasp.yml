@@ -1,0 +1,412 @@
+slug: verifyvasp
+name: VerifyVASP
+alternate_names:
+- VerifyVASP Pte. Ltd.
+- Sygna Bridge
+- Sygna
+status: published
+seo:
+  title: 'VerifyVASP Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'VerifyVASP review: a members-only Travel Rule network from Singapore, strong among Asia-Pacific exchanges, that bought Sygna and Sygna Bridge in 2026. Features, pricing, pros & cons, alternatives.'
+  h1: 'VerifyVASP Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: null
+  background: null
+  wordmark: null
+tagline: Members-only Travel Rule network from Singapore, strong among Asia-Pacific exchanges, that now also owns Sygna Bridge
+score: 3.8
+grade: Good
+primary_category: travel-rule
+categories:
+- travel-rule
+link:
+  url: https://www.verifyvasp.com
+  type: none
+last_verified: '2026-10-21'
+updated: '2026-10-21'   # last content edit; last_verified = last fact re-check
+verdict: VerifyVASP suits exchanges and other VASPs whose counterparties are mostly in Asia-Pacific, above all in South Korea, Singapore and, since it bought Sygna in April 2026, Japan. It runs a closed network that admits VASPs only after due diligence, and CODE, the Korean Travel Rule solution, documents a live connection to both VerifyVASP and Sygna. The weak points are paperwork and prices. VerifyVASP says its platform passed a SOC 2 Type II assessment for the year to January 2026, but it names no auditor and the report is sent only on request. We found no current ISO/IEC 27001 certificate. No prices are published, only a fee model in the terms of service, and the network size changes from page to page (110+, 130+ or 150+ VASPs). We found no connection to TRUST, TRP or GTR. Ask for the SOC 2 report, a price quote and the list of members you could actually reach before you sign.
+what_is:
+- 'VerifyVASP sells Travel Rule messaging to VASPs. Members exchange the originator and beneficiary data that FATF Recommendation 16 requires through its TravelRule API, and only VASPs that pass VerifyVASP''s due diligence can join. VerifyVASP describes the network as peer to peer, with personal data encrypted end to end by the sending VASP and no central storage of it. In its 2024 response to an EBA consultation it described central servers in the cloud and Travel Rule data held in enclave servers that member VASPs manage, and Notabene calls it a closed, centralized protocol. Two other products sit beside it. VerifyName checks whether the sender and recipient of a first-party transfer are the same person, for jurisdictions where the Travel Rule does not apply yet. VerifyWallet checks that a customer controls a self-hosted wallet through signature challenges and small test payments. VerifyVASP is also a GLEIF Validation Agent, so it can issue Legal Entity Identifiers to VASPs.'
+- 'The company is VerifyVASP Pte. Ltd. of Singapore, founded in 2019 according to The Block and its G2 profile. In April 2026 it described itself as a subsidiary of Upbit Global Pte. Ltd., a Singapore holding company that also owns Upbit''s exchanges in Singapore, Indonesia and Thailand. Upbit told Byline Network in March 2026 that Upbit Global uses the Upbit brand but has no equity link to Dunamu, the Korean operator of Upbit. Shih Yun Chia is CEO. VerifyVASP raised a USD 5 million Series A at a USD 100 million valuation in September 2022, led by FTX Ventures. It says it has processed more than USD 500 billion in Travel Rule transfers, a figure we could not check.'
+- 'On 29 April 2026 VerifyVASP announced it had bought Sygna Inc., the Travel Rule provider behind Sygna Bridge, which CoolBitX launched in 2019 and which is strong in Japan. No terms were disclosed. VerifyVASP says Sygna members keep working without disruption and will move to its own network over time. The Sygna site, API docs and member list were still online in October 2026, with 39 members listed, many of them Japanese exchanges.'
+features:
+- Members-only Travel Rule network with due diligence before a VASP can send or receive, and a directory of member contact details.
+- Personal data encrypted end to end by the sending VASP, with regional nodes for data localisation, per VerifyVASP; its privacy policy says data is stored in Singapore and/or Korea.
+- Per-member trigger rules, so each VASP sets its own threshold and required fields by jurisdiction.
+- VerifyWallet, which checks control of a self-hosted wallet through ECDSA or Ed25519 signature challenges and small test payments, and names MetaMask, Ledger, Trezor and Phantom.
+- VerifyName, a name-match check for first-party transfers in jurisdictions without Travel Rule rules, which VerifyVASP says matches 91.7% of requests automatically.
+- Sygna Bridge, now owned by VerifyVASP, with a public REST API, SDKs in Java, JavaScript and Python, a Robot VASP test counterparty and published service levels.
+pricing:
+  summary: VerifyVASP publishes no prices. Its terms of service describe a base subscription fee plus an API usage fee, billed quarterly, with the actual rates set in each licence agreement. VerifyVASP quotes on request. We found no third-party price figures. Sygna, which VerifyVASP now owns, also publishes no prices.
+  plans: []
+  legacy_verified_note: null
+  verified: '2026-10'
+  items:
+  - label: Published prices
+    value: None; the site offers a demo request and a contact form
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Fee model
+    value: Base subscription fee plus API usage fee, billed quarterly; rates set in the licence agreement
+    kind: official
+    source: 7
+    verified: '2026-10'
+  - label: Payment terms
+    value: Invoices due in 30 days; late payments may be charged 1.5% a month
+    kind: official
+    source: 7
+    verified: '2026-10'
+  - label: Sygna Bridge
+    value: No prices published; Sygna says only that it charges "economical rates"
+    kind: official
+    source: 27
+    verified: '2026-10'
+  - label: Pricing model, Coincub
+    value: Lists VerifyVASP as pay as you go and Sygna Bridge as a sign-up plus annual fee, with no figures
+    kind: third_party
+    source: 35
+    verified: '2026-10'
+  - label: G2 listing
+    value: No pricing details available
+    kind: third_party
+    source: 34
+    verified: '2026-10'
+facts:
+- label: From
+  value: Not publicly disclosed
+- label: Fee model
+  value: Base subscription fee plus API usage fee, billed quarterly
+  source: 7
+  evidence: vendor
+- label: Legal entity
+  value: VerifyVASP Pte. Ltd., Singapore (company number 201921674H, per VerifyVASP)
+  source: 16
+  evidence: vendor
+- label: Headquarters
+  value: 1 Harbourfront Avenue, #13-03, Singapore 098632
+  source: 8
+  evidence: vendor
+- label: Founded
+  value: '2019'
+  source: 18
+  evidence: independent
+- label: Owner
+  value: Upbit Global Pte. Ltd. (Singapore), which says it has no equity link to Dunamu
+  source: 20
+  evidence: independent
+- label: Leadership
+  value: Shih Yun Chia (CEO), James Lim (CTO), Nor Azman Hamid (General Counsel)
+  source: 2
+  evidence: vendor
+- label: Funding
+  value: USD 5 million Series A at a USD 100 million valuation, September 2022, led by FTX Ventures
+  source: 18
+  evidence: independent
+- label: Acquisitions
+  value: Sygna Inc. (Sygna Bridge), announced 29 April 2026; terms not disclosed
+  source: 12
+  evidence: vendor
+- label: Network size
+  value: 110+, 130+ or 150+ VASPs depending on the page, in 30+ jurisdictions (vendor-stated, Oct 2026); Sygna lists 39 members
+  source: 4
+  evidence: vendor
+- label: Networks and protocols
+  value: Own network; CODE documents a connection to VerifyVASP and Sygna; Sygna announced TRISA interoperability in 2022; no TRUST, TRP or GTR connection found
+  source: 22
+  evidence: independent
+- label: Self-hosted wallet checks
+  value: Signature challenge (ECDSA, Ed25519) and small test payments
+  source: 6
+  evidence: vendor
+- label: GLEIF Validation Agent
+  value: Since May 2023
+  source: 17
+  evidence: independent
+- label: Certifications
+  value: SOC 2 Type II for 1 Feb 2025 to 31 Jan 2026 (vendor-stated, auditor not named); Sygna stated ISO/IEC 27001 in 2021 and 2022; no certificate seen
+  source: 10
+  evidence: vendor
+pros:
+- Large Asia-Pacific exchange network, and CODE, the Korean Travel Rule solution, documents a live connection to it
+- The Sygna purchase adds Sygna Bridge and its Japanese members, with Sygna's public API docs and test tools still online
+- Self-hosted wallet checks by signature challenge, plus a name-match check for first-party transfers
+cons:
+- No prices published; the terms describe only a subscription plus usage fee
+- SOC 2 Type II is vendor-stated with no auditor named, and we found no current ISO/IEC 27001 certificate
+- Network size differs between pages (110+, 130+ or 150+ VASPs), VerifyVASP's own API docs are not public beyond an overview, and we found no TRUST, TRP or GTR link
+alternatives:
+- slug: 21analytics
+  name: 21 Analytics
+  best_for: Self-hosted TRP and TRUST in one product
+- slug: sumsub
+  name: Sumsub
+  best_for: Travel Rule Bundled with KYC
+- slug: null
+  name: Notabene
+  best_for: Hosted Travel Rule Network
+choose_instead:
+- slug: 21analytics
+  text: your counterparties sit on TRUST or the open TRP protocol, you want a published ISO/IEC 27001 certificate, and you can run the software yourself.
+- slug: sumsub
+  text: you want Travel Rule inside a hosted KYC and AML platform with published per-verification pricing. Sumsub connects to GTR, TRP, CODE and Sygna Bridge.
+- slug: null
+  name: Notabene
+  text: you want a hosted network with stronger reach outside Asia-Pacific. Notabene says it has looked at adding VerifyVASP but needed a security review first.
+user_reviews:
+  legacy_note: null
+  praise: []
+  criticize: []
+  by_profile:
+  - Exchanges and brokers whose main counterparties are in South Korea, Singapore or Japan are VerifyVASP's clearest fit.
+  - Former Sygna Bridge customers should ask when they will move to the VerifyVASP network and what changes in price and integration.
+  - Firms whose counterparties sit mainly on TRUST, TRP or GTR should check first, since we found no direct connection to those networks.
+faq:
+- q: How much does VerifyVASP cost?
+  a: VerifyVASP publishes no prices. Its terms of service describe a base subscription fee plus an API usage fee, billed quarterly, with the rates set in each licence agreement. Coincub lists the model as pay as you go, but we found no figures anywhere. Ask for a written quote that covers both fees and any minimum.
+- q: Who owns VerifyVASP?
+  a: VerifyVASP Pte. Ltd. is a Singapore company that described itself in April 2026 as a subsidiary of Upbit Global Pte. Ltd., a Singapore holding company that also owns Upbit's exchanges in Singapore, Indonesia and Thailand. Upbit told Byline Network in March 2026 that Upbit Global uses the Upbit brand but has no equity link to Dunamu, the Korean company that runs Upbit. VerifyVASP raised a USD 5 million Series A led by FTX Ventures in September 2022.
+- q: What happened to Sygna Bridge after VerifyVASP bought Sygna?
+  a: VerifyVASP announced the purchase of Sygna Inc. on 29 April 2026 without disclosing terms. It says Sygna members keep operating without disruption and will move to the VerifyVASP network over time, adjusted to local rules. In October 2026 the Sygna site, its developer docs and its member list of 39 VASPs were still online, and we found no date for the move. Sygna customers should ask for a migration plan in writing.
+- q: Which networks and protocols can VerifyVASP reach?
+  a: VerifyVASP members reach each other. CODE, the Korean Travel Rule solution, says it is integrated with VerifyVASP, GTR and Sygna, and a Korean report from May 2022 describes a partial VerifyVASP and CODE link from April 2022. Sygna announced interoperability with TRISA in February 2022, and Sumsub lists Sygna Bridge among the protocols it connects to. We found no direct VerifyVASP connection to TRUST, the open TRP protocol, GTR or Notabene's network. Notabene says VerifyVASP cannot send transfers to non-members.
+- q: Is VerifyVASP SOC 2 or ISO 27001 certified?
+  a: VerifyVASP says its platform passed a SOC 2 Type II assessment covering security, availability and processing integrity from 1 February 2025 to 31 January 2026, its fourth year in a row. It does not name the auditor, and the report is sent on request. Its homepage shows an ISO logo, but we found no ISO certificate, number or scope for VerifyVASP. Sygna said Sygna Bridge was ISO/IEC 27001 certified by SGS in 2021 and that all its products were certified in 2022. We did not see a current certificate. Ask for the SOC 2 report and any certificate with its scope and dates.
+- q: How does VerifyVASP verify self-hosted wallets?
+  a: VerifyWallet asks the customer to sign a challenge with the wallet's key (ECDSA or Ed25519 with a nonce) and can also use small test payments. VerifyVASP names MetaMask, Ledger, Trezor and Phantom among supported wallets but publishes no wallet or chain list. Sygna also offers a Wallet Address Filter with Elliptic that tells you whether an address is hosted or self-hosted, which is not a proof of ownership.
+- q: Does VerifyVASP store personal data?
+  a: VerifyVASP says personal data is encrypted end to end by the sending VASP, can be read only by the receiving VASP and is not stored centrally. Its privacy policy says data is stored in Singapore and/or Korea unless stated otherwise, and its 2024 EBA consultation response said Travel Rule data sits in enclave servers managed by member VASPs. Notabene and Coincub both describe the system as centralized. Members sign a data processing agreement.
+- q: What is the best alternative to VerifyVASP?
+  a: 21 Analytics suits firms that need TRUST or the open TRP protocol and want to run the software themselves. Sumsub suits firms that want Travel Rule bundled with KYC and published prices, and it already connects to Sygna Bridge and CODE. Notabene is the hosted option with more reach outside Asia-Pacific.
+segments: []
+capabilities: {}
+certifications:
+- name: SOC 2 Type II
+  what: Security, availability and processing integrity for the VerifyVASP platform, 1 Feb 2025 to 31 Jan 2026; auditor not named, report on request
+  status: vendor_stated
+  source: 10
+- name: ISO/IEC 27001 (Sygna)
+  what: Information security for Sygna Bridge (SGS, 2021) and all Sygna products (2022), per Sygna; no certificate or current validity seen
+  status: vendor_stated
+  source: 31
+user_ratings:
+- platform: G2
+  rating: 4.5
+  count: 1
+  checked: '2026-10'
+  url: https://www.g2.com/products/verifyvasp/reviews
+use_case_verdicts: []
+score_breakdown:
+- criterion: Compliance & certifications
+  weight: 25
+  score: 3.9
+  note: VerifyVASP names its Singapore entity and says it has held SOC 2 Type II for four years running, the latest for February 2025 to January 2026, and GLEIF lists it as a Validation Agent. But the SOC 2 auditor is not named, the report is only sent on request, there is no current ISO/IEC 27001 certificate for VerifyVASP, and Sygna's ISO claim dates from 2021 and 2022.
+  evidence: vendor
+- criterion: Coverage
+  weight: 20
+  score: 4.1
+  note: A large Asia-Pacific exchange network (110+ to 150+ VASPs in 30+ jurisdictions, vendor-stated and inconsistent) plus Sygna's 39 listed members, mostly in Japan. CODE documents a connection to VerifyVASP and Sygna, and Sygna has a 2022 TRISA link. There is no TRUST, TRP or GTR connection, and VerifyVASP cannot send to non-members.
+  evidence: vendor
+- criterion: Pricing transparency
+  weight: 20
+  score: 3.4
+  note: No prices, tiers or third-party figures; the terms of service only describe a base subscription plus an API usage fee, billed quarterly. This is less than 21 Analytics, which publishes tiers and has a third-party price.
+  evidence: vendor
+- criterion: Integration & API depth
+  weight: 15
+  score: 3.6
+  note: VerifyVASP's public docs show only an overview, and the FAQ mentions sandbox testing and integration in a few weeks. Sygna's developer centre is public, with a REST API, SDKs in Java, JavaScript and Python, a Robot VASP test tool and a status page, but we saw no dated changelog and it is unclear how long it will stay.
+  evidence: vendor
+- criterion: Support responsiveness
+  weight: 10
+  score: 3.4
+  note: VerifyVASP publishes no support hours or SLA, only a contact form, and G2 has a single review (4.5). Sygna publishes service level agreements for Bridge, Gate and Hub.
+  evidence: vendor
+- criterion: Track record
+  weight: 10
+  score: 4.1
+  note: Founded in 2019, live since 2021, funded in 2022, a GLEIF Validation Agent since 2023 and the buyer of Sygna in 2026, with no regulatory actions, breach disclosures or litigation found. The ownership change to Upbit Global and the Sygna migration are recent, and the processed-volume figures are vendor-stated.
+  evidence: independent
+hands_on: null
+sources:
+- title: VerifyVASP homepage
+  publisher: VerifyVASP
+  url: https://www.verifyvasp.com/
+  accessed: '2026-10'
+- title: Who we are
+  publisher: VerifyVASP
+  url: https://www.verifyvasp.com/en/company/about
+  accessed: '2026-10'
+- title: FAQ
+  publisher: VerifyVASP
+  url: https://www.verifyvasp.com/en/company/faq
+  accessed: '2026-10'
+- title: Alliance
+  publisher: VerifyVASP
+  url: https://www.verifyvasp.com/en/alliance/
+  accessed: '2026-10'
+- title: TravelRule API
+  publisher: VerifyVASP
+  url: https://www.verifyvasp.com/en/products/travel-rule
+  accessed: '2026-10'
+- title: VerifyWallet
+  publisher: VerifyVASP
+  url: https://www.verifyvasp.com/en/products/verify-wallet
+  accessed: '2026-10'
+- title: Terms of service
+  publisher: VerifyVASP
+  url: https://www.verifyvasp.com/en/terms-of-service
+  accessed: '2026-10'
+- title: Privacy policy
+  publisher: VerifyVASP
+  url: https://www.verifyvasp.com/en/privacy-policy
+  accessed: '2026-10'
+- title: Technical documentation for VerifyVASP
+  publisher: VerifyVASP
+  url: https://docs.verifyvasp.com/
+  accessed: '2026-10'
+- title: VerifyVASP renews SOC 2 Type II assessment
+  publisher: VerifyVASP
+  url: https://www.verifyvasp.com/en/news/verifyvasp-renews-soc-2-type-ii-assessment-3
+  accessed: '2026-10'
+- title: USD 500 billion processed
+  publisher: VerifyVASP
+  url: https://www.verifyvasp.com/en/news/usd-500-billion-processed
+  accessed: '2026-10'
+- title: VerifyVASP acquires Sygna, consolidating the global Travel Rule network
+  publisher: PR Newswire
+  url: https://www.prnewswire.com/news-releases/verifyvasp-acquires-sygna-consolidating-the-global-travel-rule-network-302756098.html
+  accessed: '2026-10'
+- title: VerifyVASP acquires Sygna, consolidating the global Travel Rule network
+  publisher: VerifyVASP
+  url: https://www.verifyvasp.com/en/news/verifyvasp-cquires-sygna-consolidating-the-global-travel-rule-network
+  accessed: '2026-10'
+- title: VerifyVASP and Bonanza Factory announce strategic partnership for financial institutions in Korea
+  publisher: VerifyVASP
+  url: https://www.verifyvasp.com/en/news/verifyvasp-and-bonanza-factory-announce-strategic-partnership-to-deliver-digital-asset-compliance-infrastructure-for-financial-institutions-in-korea
+  accessed: '2026-10'
+- title: 'Travel Rule a escala: VerifyVASP logra 10 millones de verificaciones por un valor de 200 mil millones de dólares'
+  publisher: PR Newswire
+  url: https://www.prnewswire.com/mx/comunicados-de-prensa/travel-rule-a-escala-verifyvasp-logra-10-millones-de-verificaciones-por-un-valor-de-200-mil-millones-de-dolares-302270547.html
+  accessed: '2026-10'
+- title: Response to consultation paper EBA/CP/2023/35 by VerifyVASP
+  publisher: European Banking Authority
+  url: https://eba.europa.eu/system/files/webform/webform_consultation_16435/73460/Consultation%20Paper%20Response%20_EBA_CP_2023_35_VerifyVASP.pdf
+  accessed: '2026-10'
+- title: VerifyVASP becomes GLEIF Validation Agent to increase transparency in crypto and digital asset trading markets
+  publisher: GLEIF
+  url: https://www.gleif.org/en/newsroom/press-releases/verifyvasp-becomes-gleif-validation-agent-to-increase-transparency-in-crypto-and-digital-asset-trading-markets
+  accessed: '2026-10'
+- title: Crypto regtech firm VerifyVASP raises funds at $100 million valuation
+  publisher: The Block
+  url: https://www.theblock.co/news/deals/2022-09-08-crypto-regtech-firm-verifyvasp-raises-funds-at-100-million-valuation-168559
+  accessed: '2026-10'
+- title: VerifyVASP raises Series A funding at $100M valuation led by FTX Ventures
+  publisher: Fintech News Singapore
+  url: https://fintechnews.sg/?p=63937
+  accessed: '2026-10'
+- title: Kim Kab-lae of the Capital Markets Research Institute joins Upbit Global subsidiary (Korean)
+  publisher: Byline Network
+  url: https://byline.network/2026/03/0320-4/
+  accessed: '2026-10'
+- title: VerifyVASP, Travel Rule messaging protocol analysis
+  publisher: Notabene
+  url: https://notabene.id/travel-rule-messaging-protocols/verifyvasp
+  accessed: '2026-10'
+- title: Interoperability with other protocols
+  publisher: CODE
+  url: https://docs-en.codevasp.com/docs/interoperability-with-other-protocols
+  accessed: '2026-10'
+- title: Travel Rule between domestic exchanges have been linked (updated May 2022)
+  publisher: Chakwon
+  url: https://chakwon.com/_ENG/dh_board/views/1807
+  accessed: '2026-10'
+- title: About Sygna
+  publisher: Sygna
+  url: https://www.sygna.io/about/
+  accessed: '2026-10'
+- title: Sygna Bridge
+  publisher: Sygna
+  url: https://www.sygna.io/bridge/
+  accessed: '2026-10'
+- title: Sygna Alliance
+  publisher: Sygna
+  url: https://www.sygna.io/client/
+  accessed: '2026-10'
+- title: FAQ
+  publisher: Sygna
+  url: https://www.sygna.io/faq/
+  accessed: '2026-10'
+- title: Sygna Developer Center
+  publisher: Sygna
+  url: https://developers.sygna.io/
+  accessed: '2026-10'
+- title: Terms and conditions
+  publisher: Sygna
+  url: https://www.sygna.io/terms-conditions/
+  accessed: '2026-10'
+- title: TRISA and Sygna announce interoperability to simplify global Travel Rule compliance
+  publisher: Sygna
+  url: https://sygna.io/?p=6685
+  accessed: '2026-10'
+- title: Sygna Bridge becomes the first FATF Travel Rule compliance solution to achieve ISO/IEC 27001 certification
+  publisher: Global Security Mag
+  url: https://www.globalsecuritymag.fr/Sygna-Bridge-Becomes-the-First,20210420,110601.html
+  accessed: '2026-10'
+- title: Travel Rule FAQ
+  publisher: Sumsub
+  url: https://docs.sumsub.com/docs/travel-rule-faq
+  accessed: '2026-10'
+- title: Travel Rule Universal Solution Technology (TRUST)
+  publisher: Coinbase
+  url: https://www.coinbase.com/travelrule
+  accessed: '2026-10'
+- title: VerifyVASP reviews
+  publisher: G2
+  url: https://www.g2.com/products/verifyvasp/reviews
+  accessed: '2026-10'
+- title: FATF Travel Rule compliance tools for crypto VASPs in 2026
+  publisher: Coincub
+  url: https://coincub.com/blog/fatf-travel-rule-compliance-tools/
+  accessed: '2026-10'
+- title: Bybit obtains VerifyVASP alliance membership (Korean)
+  publisher: Blockmedia
+  url: https://www.blockmedia.co.kr/archives/218406
+  accessed: '2026-10'
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://www.verifyvasp.com
+  - https://sg.linkedin.com/company/verifyvasp
+  - https://www.g2.com/products/verifyvasp/reviews
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- 'New record, first review, 2026-10-21. link.type none (no commercial relationship recorded). Covers VerifyVASP including Sygna (Sygna Bridge, Gate, Hub), acquired 29/30 Apr 2026. Logo fields null: no logo file in src/assets/img/logos and the fetch proxy blocks downloads from verifyvasp.com.'
+- 'Network size inconsistent on verifyvasp.com (Oct 2026): homepage headline 150+ VASPs, meta "over 150", structured data 110+; about page meta 130+; alliance page meta 150+ and collection metadata 130+; travel-rule product page body "over 110 institutions across over 20+ contries" (sic) and structured data 110+ VASPs / 30+ countries and 150+ VASPs / 30+ jurisdictions. Alliance member list renders by script; no names seen. Record shows the range, labelled vendor-stated.'
+- 'Volume claims: $500B cumulative and $500M+ daily (homepage), $300B+ since 2022 (structured data), news post 10 Apr 2026 "over USD 500 billion". Oct 2024 release: USD 200B, 10 million verifications since 2022, 92% success rate. The Block Sep 2022: 1.5 million transfers, $40B. All vendor-stated; only the USD 500B figure used, attributed.'
+- 'Homepage partner logos (Amber, BitMEX, Bitget, Bybit, Crypto.com, HTX, OKX, Upbit, BingX, Flipster, Gate, HashKey) are unlabelled; not stated as customers. Independent membership evidence: Bybit (Blockmedia, 18 Mar 2022, written with Bybit cooperation), Upbit transacting in production (Notabene, undated), Echobit joined 21 Mar 2025 (MEXC news copy, not cited). The Block 2022 named Bybit, Deribit, Crypto.com, FTX, FTX.US and Huobi as members per the VerifyVASP site then.'
+- 'Superlatives not used: "global standard for Travel Rule compliance", "unmatched scale, depth, and geographic reach" (acquisition release); "the Travel Rule solution with the largest active interoperability connection in the world", about 15% of traffic (EBA response); Upbit CCO testimonial on the homepage that VerifyVASP is "to our knowledge" the only Travel Rule provider with an independent audit.'
+- 'SOC 2: news post 26 Jun 2026 "VerifyVASP Renews SOC 2 Type II Assessment": platform assessed 1 Feb 2025 to 31 Jan 2026, Security, Availability and Processing Integrity, "fourth consecutive year", report on request by email. Auditor not named; report not seen. SOC 2 is an attestation, not a certification; status vendor_stated. Homepage also says "SOC2 Type II and DORA ready".'
+- 'ISO: homepage shows an ISO logo with no standard, number, body or scope; not listed as a VerifyVASP certification. Sygna: Global Security Mag Apr 2021 says Sygna Bridge was ISO/IEC 27001 certified by SGS (Taiwan); a Sygna page says "All Sygna products are now ISO 27001 certified" (June 2022). No certificate, number or validity seen; a 2021 certificate would have needed recertification in 2024. Status vendor_stated. Privacy policy says VerifyVASP will engage "a reputable independent auditor"; homepage also shows FATF, DTIF, IFTA and "Finalist" logos, not used.'
+- 'Legal entity: terms and privacy policy name VerifyVASP Pte. Ltd. (Singapore law, SIAC arbitration). Privacy policy address 1 Harbourfront Avenue, #13-03, Singapore 098632. Company number 201921674H and earlier address 60 Anson Road, #17-01 Mapletree Anson come from VerifyVASP''s own EBA consultation response (undated, data to Q1 2024). ACRA / BizFile not opened (fetcher blocked; seedtable.com robots-blocked). The 2019 prefix of the number fits a 2019 incorporation; not stated as a registry fact.'
+- 'Ownership: acquisition release (29/30 Apr 2026) "VerifyVASP Pte. Ltd. is a subsidiary of Upbit Global Pte. Ltd.". Byline Network (20 Mar 2026, corrected 30 Mar): Upbit Global, formerly Upbit APAC, Singapore holding company with subsidiaries Upbit Singapore, Upbit Indonesia, Upbit Thailand and VerifyVASP; Upbit says no equity relationship with Dunamu. When Upbit Global became the parent is not disclosed. Notabene (undated) says Upbit created VerifyVASP as a joint venture with Chainalysis; not confirmed elsewhere, not stated. Antara (29 May 2023) quotes Dunamu CEO Sirgoo Lee supporting the GLEIF role. Naver deal for Dunamu (Bloomberg, Nov 2025) seen only as a search title; not relevant to Upbit Global if no equity link, not stated.'
+- 'Founded: 2019 per The Block (8 Sep 2022) and G2 seller profile. Notabene says live since 2021. Volume counted "since 2022" by the vendor.'
+- 'Funding: Series A USD 5M at USD 100M valuation, The Block and Fintech News Singapore, 8 Sep 2022: FTX Ventures led, with Peak Capital and "Bcharu" (spelling as in both articles). No later round found. Not stated in the record: FTX''s later collapse (no source opened).'
+- 'Leadership (about page): Shihyun Chia CEO (PR Newswire spells Shih Yun Chia), James Lim CTO, Nor Azman Hamid General Counsel, Amanda Wick Head of Americas, Tanna Chong Head of Public Policy, Kab Lae Kim Head of Capital Markets (matches Byline). Oct 2024 release: subsidiaries in Tokyo and Paris, Elsa Madrolle General Manager EMEA; FAQ mentions an "EU entity" (not named).'
+- 'Architecture: vendor says decentralized P2P, E2E encryption, no central storage, regional nodes, DPAs. EBA response: central servers on cloud infrastructure, Travel Rule data in enclave servers managed by member VASPs. Notabene: closed, centralized, enclave server closed source. Coincub (21 Apr 2026, updated 6 Oct 2026) rates privacy "Low (Centralized)". Both views shown.'
+- 'Interoperability: CODE docs (undated, "Currently"): "CODE is integrated with solutions such as Verify VASP, GTR, and Sygna". Chakwon (May 2022): VerifyVASP and CODE linked from 25 Apr 2022, partial, among the four KRW exchanges. Sygna and TRISA "full interoperability" 22 Feb 2022 (Sygna post); CipherTrace POC earlier; Shyft partnership headline on Sygna Bridge page (not opened). Sumsub FAQ connects to Sygna Bridge, not VerifyVASP. Coinbase TRUST page lists only 21 Analytics as interoperability partner. No VerifyVASP link to TRP, GTR, TRISA (directly) or Notabene found. Notabene says it "is looking to add support for VerifyVASP" pending a security review, and that there is "no way of sending transactions to non-members". 21 Analytics told BeVerified there is no direct VerifyVASP connection; any unannounced bridges are not recorded. Whether Sygna''s TRISA and Sumsub links survive the migration is unknown.'
+- 'Docs: docs.verifyvasp.com root shows only a company overview ("Technical documentation for VerifyVASP"); subpages and llms.txt are robots-blocked for our fetcher, and none are indexed by search. API style, SDKs, sandbox host and changelog for VerifyVASP not seen. FAQ: sandbox testing during onboarding, due diligence days to weeks, integration weeks. Sygna Developer Center: Bridge API V2, Hub API, VASP key pair registration, Robot VASP, test example code, changelog section without visible entries, status page sygna-bridge.statuspage.io. Sygna FAQ: RESTful API, SDKs Java, JavaScript, Python, 4,000+ currencies, integration 4 to 6 weeks.'
+- 'Pricing: no pricing page. Structured data lists each product at "0" USD with a contact link (schema placeholder, not a free plan). Terms: base subscription fee plus API usage fee, quarterly, 30 days, 1.5% a month late charge. Notabene (undated) says membership is free; conflicts with the terms, not used. Coincub: VerifyVASP pay as you go; Sygna Bridge sign-up plus annual fee. No G2, Capterra or marketplace prices.'
+- 'Self-hosted wallets: VerifyWallet page: "cryptographic digital signature challenges and micro-transactions"; structured data ECDSA, Ed25519 + nonce; MetaMask, Ledger, Trezor, Phantom "and many other popular wallets". No chain list. Launch date not found. Sygna: Wallet Address Filter with Elliptic (Coincub, Sygna Bridge page headline).'
+- 'Sygna: about page says CoolBitX founded 2014, Sygna launched 2019, HQ Taipei with Tokyo office; release calls Sygna Inc. "Japan-based"; legal entity and seat of Sygna Inc. not confirmed. Sygna terms (modified 15 May 2026) name no entity, Singapore law. 45+ VASPs signed as of 2022 (about page); 39 names on the alliance page (modified 10 Jul 2026). Sygna site and docs still live in Oct 2026, no migration date or VerifyVASP mention on product pages.'
+- 'User ratings: G2 4.5 from 1 review (checked Oct 2026), no pricing on G2. No Capterra, SourceForge or Gartner listing found; rfp.wiki pages are AI-generated comparisons, not used.'
+- 'Regulatory and legal: no enforcement action, breach disclosure or litigation involving VerifyVASP or Sygna found in searches to Oct 2026. VerifyVASP itself is not a licensed VASP; no licence claimed.'
+- 'Support: no hours, SLA or support email published by VerifyVASP (contact form only). Sygna links SLAs for Bridge, Gate and Hub (pages not opened).'
+- 'Categories: travel-rule only. VerifyVASP mentions on-chain risk analysis in its 2024 boilerplate, but no wallet screening product on the current site, so crypto KYC does not fit. tracked.yml entry for VerifyVASP removed so the directory does not list it twice.'
+- 'Wikidata id not found; kg_mid unknown. LinkedIn not opened.'
+application_category: Travel Rule Compliance Software
+author: andrii-klymenko
+directory_categories:
+- Travel Rule

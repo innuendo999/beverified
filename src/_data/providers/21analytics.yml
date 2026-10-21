@@ -146,7 +146,7 @@ alternatives:
 - slug: null
   name: Notabene
   best_for: Hosted Travel Rule Network
-- slug: null
+- slug: verifyvasp
   name: VerifyVASP
   best_for: APAC Counterparty Coverage
 - slug: sumsub
@@ -158,7 +158,7 @@ choose_instead:
 - slug: null
   name: Notabene
   text: you would rather use a hosted Travel Rule network than run software yourself. Notabene says it cannot connect to TRUST directly and routes TRUST transfers only for customers who are TRUST members.
-- slug: null
+- slug: verifyvasp
   name: VerifyVASP
   text: most of your counterparties are in Asia-Pacific. VerifyVASP bought Sygna in April 2026.
 user_reviews:
