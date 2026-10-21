@@ -82,7 +82,7 @@ layout: v3.njk
             {%- if e.r.legacy_price_shown %}<span>From <strong>{{ e.r.legacy_price_shown }}</strong></span>{% endif %}
             <span class="spacer"></span>
             {%- if e.q %}<a class="btn btn--secondary btn--sm" href="/providers/{{ e.q.slug }}/">Read full review</a>{% endif %}
-            {%- if e.q and e.q.link.url %}<a class="btn btn--primary btn--sm" href="{{ e.q.link.url }}" rel="{{ e.q.link | outRel }}" target="_blank">Visit site ↗</a>{% if e.q.link.type == "paid" or e.q.link.type == "affiliate" %}<span class="paid-note">Sponsored link</span>{% endif %}{% endif %}
+            {%- if e.q and e.q.link.url %}<a class="btn btn--primary btn--sm" href="{{ e.q.link.url }}" rel="{{ e.q.link | outRel }}" target="_blank">Visit site ↗</a>{% if (e.q.link.type == "paid" or e.q.link.type == "affiliate") and e.q.link.label != false %}<span class="paid-note">Sponsored link</span>{% endif %}{% endif %}
           </div>
         </article>
         </li>

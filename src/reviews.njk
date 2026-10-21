@@ -69,7 +69,7 @@ layout: v3.njk
     <p class="disclosure-line">{{ site.v3.disclosure }} <a href="{{ site.v3.disclosureHref }}">How we make money →</a></p>
     {%- endif %}
     <div class="cta-row">
-      {%- if p.link.url %}<a class="btn btn--primary" href="{{ p.link.url }}" rel="{{ p.link | outRel }}" target="_blank">Visit site <span aria-hidden="true">↗</span></a>{% if p.link.type == "paid" or p.link.type == "affiliate" %}<span class="paid-note">Sponsored link</span>{% endif %}{% endif %}
+      {%- if p.link.url %}<a class="btn btn--primary" href="{{ p.link.url }}" rel="{{ p.link | outRel }}" target="_blank">Visit site <span aria-hidden="true">↗</span></a>{% if (p.link.type == "paid" or p.link.type == "affiliate") and p.link.label != false %}<span class="paid-note">Sponsored link</span>{% endif %}{% endif %}
       {%- if alts.length %}<a class="btn btn--secondary" href="#alternatives">See alternatives</a>{% endif %}
     </div>
   </div>
@@ -328,7 +328,7 @@ layout: v3.njk
     {%- if p.updated and p.updated > p.last_verified %}<div class="fact"><div class="fact__line"><span>Updated</span><span class="num">{{ p.updated | displayDate }}</span></div></div>{% endif %}
     {%- if p.link.url %}
     <div class="p-12-20-14 bt-1-solid-line-soft">
-      <a class="btn btn--primary btn--block" href="{{ p.link.url }}" rel="{{ p.link | outRel }}" target="_blank">Visit site ↗</a>{% if p.link.type == "paid" or p.link.type == "affiliate" %}<span class="paid-note">Sponsored link</span>{% endif %}
+      <a class="btn btn--primary btn--block" href="{{ p.link.url }}" rel="{{ p.link | outRel }}" target="_blank">Visit site ↗</a>{% if (p.link.type == "paid" or p.link.type == "affiliate") and p.link.label != false %}<span class="paid-note">Sponsored link</span>{% endif %}
     </div>
     {%- endif %}
   </div>
