@@ -23,6 +23,7 @@ link:
   url: https://kycaid.com
   type: paid
   rel: noopener   # editor agreement with KYCAID: followed link, no sponsored/nofollow
+  label: false    # editor decision 22 Oct 2026: no "Sponsored link" label
   legacy_rel: nofollow sponsored
 last_verified: '2026-10-18'
 updated: '2026-10-19'   # last content edit; last_verified = last fact re-check
@@ -261,6 +262,7 @@ verification_notes:
 - '200+ document types: not found; the about page states 200+ countries and territories.'
 - 'Mobile SDK: not listed in the public docs index; KYCAID told us (Oct 2026) that mobile SDKs are provided on request.'
 - 'SOC 2: KYCAID told us (19 Oct 2026) it does not hold SOC 2 yet and expects it in early 2027, although its privacy policy still lists SOC 2 Type 2; removed from certifications. Re-check in Q1 2027.'
+- 'South Africa: KYCAID confirmed to BeVerified by email on 21 Oct 2026 that it serves South African customers (document and face verification); added to the South Africa ranking. No Home Affairs database check is listed on its pricing page.'
 - 'Coverage: 240+ countries and territories confirmed by KYCAID to BeVerified by email on 19 Oct 2026 (vendor-stated); its public about page still says 200+.'
 - 'Adverse media: the old FAQ said AML screening includes adverse media; the pricing page lists PEPs, sanctions, watchlists, OFAC and regulatory lists only. Removed.'
 - 'User ratings: G2 shows 0 reviews for Kycaid ID Verification. Themes and counts removed.'

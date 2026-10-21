@@ -1437,3 +1437,108 @@ age-verification:
     legacy_price_shown: Custom pricing
     legacy_rating_shown: null
     segments: []
+south-africa:
+  title: Best KYC & AML Providers for South Africa in 2026
+  providers:
+  - slug: sumsub
+    name: Sumsub
+    award: Editor's Choice
+    tagline: Published pricing, plus a South African ID number and selfie check against government data on the custom plan.
+    coverage: Global
+    size: null
+    pros:
+    - Checks a South African ID number and selfie against government data, with 97% coverage, per Sumsub
+    - Its South Africa page covers FICA and POPIA and offers data storage in your chosen region, per Sumsub
+    - Published per-verification pricing with a 14-day free trial
+    cons:
+    - The ID database check is a non-document check, which sits only in the custom, quoted plan
+    - Monthly minimums of $149 and $299 on the published plans
+    - Some reviewers report occasional false-positive flags
+    legacy_price_shown: From $1.35/verification
+    legacy_rating_shown: null
+    segments: []
+  - slug: incode
+    name: Incode
+    award: Best for Home Affairs Database Checks
+    tagline: Biometric verification that checks ID data and an optional selfie against the Home Affairs population register.
+    coverage: Global
+    size: Mid-market to Enterprise
+    pros:
+    - Connects to the National Population Register kept by Home Affairs, per Incode's developer docs
+    - The government check accepts the South African ID card, driver's licence and passport
+    - Passive liveness tested by iBeta to ISO/IEC 30107-3 Level 3
+    cons:
+    - No published pricing
+    - Enterprise-oriented, so pricier for smaller teams
+    - Less specialised AML depth than dedicated screening vendors
+    legacy_price_shown: Custom pricing
+    legacy_rating_shown: null
+    segments: []
+  - slug: shufti-pro
+    name: Shufti Pro
+    award: Best for CIPC Business Checks
+    tagline: Covers 12 South African document types and CIPC company checks, with a free tier and published entry pricing.
+    coverage: Global
+    size: null
+    pros:
+    - Supports 12 South African document types, including the Smart ID card and green ID book, per Shufti
+    - KYB checks against CIPC company, director and shareholding records, per Shufti
+    - Screens against the FIC sanctions list and offers hosting in the AWS Cape Town region, per Shufti
+    cons:
+    - No South African office listed
+    - Enterprise pricing above the Essentials tier is quote-only
+    - The free tier is capped at 10 verifications a month
+    legacy_price_shown: Free (10/mo); from $1.50/verification
+    legacy_rating_shown: null
+    segments: []
+  - slug: kycaid
+    name: KYCAID
+    award: null
+    tagline: Configurable KYC flows that check South African identity documents with a face match, at published per-check prices.
+    coverage: Global
+    size: SMB to Mid-market
+    pros:
+    - Document and face verification for South African customers, confirmed by KYCAID to BeVerified (Oct 2026)
+    - Published prices from €0.50 per document check
+    - Built-in PEP and sanctions screening with ongoing monitoring
+    cons:
+    - No check against the Home Affairs population register; its database checks cover 7 other countries
+    - No South African office listed
+    - Smaller watchlist database than category leaders
+    legacy_price_shown: From €0.50/check + €100/mo
+    legacy_rating_shown: null
+    segments: []
+  - slug: castellum-ai
+    name: Castellum.AI
+    award: Best for FIC Sanctions Screening
+    tagline: Sanctions and PEP screening whose list coverage includes the FIC targeted financial sanctions list.
+    coverage: Global
+    size: null
+    pros:
+    - Lists the FIC targeted financial sanctions list in its list coverage, per Castellum.AI
+    - In-house risk data, with 1,000+ watchlists updated every 5 minutes, per Castellum.AI
+    - Founder brings direct US Treasury/OFAC sanctions experience
+    cons:
+    - Screening and data only, so South African ID checks need a second vendor
+    - No published pricing
+    - Smaller team and scale than category giants
+    legacy_price_shown: Custom pricing
+    legacy_rating_shown: null
+    segments: []
+  - slug: relycomply
+    name: RelyComply
+    award: Best South African-Built Platform
+    tagline: KYC, KYB and AML platform with offices in Johannesburg and Cape Town and goAML reporting built in.
+    coverage: South Africa and UK
+    size: null
+    pros:
+    - Offices in Johannesburg and Cape Town, plus London
+    - KYC, KYB, transaction monitoring, case management and goAML reporting in one platform
+    - Named clients include Standard Bank and SnapScan
+    cons:
+    - Disclosed a September 2026 cyber incident affecting systems that hold customer data; forensic review ongoing at disclosure
+    - No published pricing
+    - Smaller, younger company than established category players
+    legacy_price_shown: Custom pricing
+    legacy_rating_shown: null
+    segments: []
