@@ -48,3 +48,23 @@
 
 ### Score flag
 - No escalation from RelyComply itself, but third-party notices show customer data at several South African clients may have been accessed, one client (Peach Payments) moved the affected services to another provider, and a ransomware group claimed the attack. This adds weight to the earlier security/trust flag. Score unchanged; editorial review recommended.
+
+## Re-score 2026-10-22
+
+Owner-approved direction: lower. Score 4.4 Very Good → 3.4 Fair. The September 2026 security incident is scored under Track record, where the methodology places breach disclosures.
+
+| Criterion | Weight | Sub-score | Evidence |
+|---|---|---|---|
+| Compliance & certifications | 25 | 3.4 | vendor |
+| Coverage | 20 | 4.2 | vendor |
+| Pricing transparency | 20 | 3.0 | vendor |
+| Integration & API depth | 15 | 3.5 | vendor |
+| Support responsiveness | 10 | not scored | none |
+| Track record | 10 | 2.2 | independent |
+
+Arithmetic (support excluded, weights sum to 90): (25 × 3.4 + 20 × 4.2 + 20 × 3.0 + 15 × 3.5 + 10 × 2.2) / 90 = (85 + 84 + 60 + 52.5 + 22) / 90 = 303.5 / 90 = 3.372 → 3.4.
+
+- Support responsiveness: score null, "Not publicly disclosed". No support hours or SLA in the sources; G2 did not open and there is no Capterra listing. Gartner Peer Insights (4 ratings) is not used, as before.
+- Track record cites only what the record holds: the 16 Sep 2026 disclosure, client notices that customer data may have been accessed, Peach Payments moving services, the unverified Dire Wolf claim, and the investigation still ongoing at the 22 Sep 2026 update.
+- The `aml` and `south-africa` ranking cards are untouched; rank order in `rankings.yml` is an editor decision.
+- `node scripts/checks/provider.mjs` flags `score` and `grade` as changed against HEAD; this is the intended, owner-approved change.

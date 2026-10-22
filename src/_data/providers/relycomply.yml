@@ -11,8 +11,8 @@ logo:
   background: '#6F3EE0'
   wordmark: /assets/img/wordmarks/relycomply.png
 tagline: Unified KYC, KYB and AML platform with South African roots and a London office
-score: 4.4
-grade: Very Good
+score: 3.4
+grade: Fair
 primary_category: aml
 legacy_rank_claim: 'ranked #13 in AML'
 categories:
@@ -164,7 +164,37 @@ certifications:
   source: 1
 user_ratings: []
 use_case_verdicts: []
-score_breakdown: []
+score_breakdown:
+- criterion: Compliance & certifications
+  weight: 25
+  score: 3.4
+  note: "The homepage shows a SANCERT ISO logo without naming the standard, SANCERT has no public register to check it against, and it is the only certification listed."
+  evidence: vendor
+- criterion: Coverage
+  weight: 20
+  score: 4.2
+  note: "One platform covers identity verification, KYB, screening, transaction monitoring, case management and goAML reporting, with its strongest fit for South African institutions under FICA."
+  evidence: vendor
+- criterion: Pricing transparency
+  weight: 20
+  score: 3.0
+  note: "Pricing is not published and RelyComply quotes on request."
+  evidence: vendor
+- criterion: Integration & API depth
+  weight: 15
+  score: 3.5
+  note: "RelyComply describes a cloud-native platform on its integration page, but API documentation, SDKs and a sandbox are not described in the sources for this review."
+  evidence: vendor
+- criterion: Support responsiveness
+  weight: 10
+  score: null
+  note: "Not publicly disclosed in the sources for this review: no support hours or SLA are described, and no G2 or Capterra reviews could be read."
+  evidence: null
+- criterion: Track record
+  weight: 10
+  score: 2.2
+  note: "RelyComply has operated since 2020 and disclosed a cyber incident in September 2026. Client notices say customer data at several South African firms may have been accessed, Peach Payments moved the affected services to another provider, a group calling itself Dire Wolf claimed the attack, and the forensic investigation was still ongoing at the latest update found."
+  evidence: independent
 hands_on: null
 sources:
 - title: RelyComply homepage

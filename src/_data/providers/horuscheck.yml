@@ -11,8 +11,8 @@ logo:
   background: '#9166F2'
   wordmark: null
 tagline: Self-service KYC, KYB and AML platform; company details not publicly disclosed
-score: 4.1
-grade: Good
+score: 3.2
+grade: Fair
 primary_category: aml
 legacy_rank_claim: 'ranked #12 in AML'
 categories:
@@ -24,7 +24,7 @@ link:
   legacy_rel: null
 last_verified: '2026-10-22'
 updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
-verdict: HorusCheck, which brands itself Horus Checks, sells a self-service KYC, KYB and AML platform with document checks, liveness, watchlist screening and a no-code flow builder. Its website does not name the company behind it, its location, founding year or prices, so treat it as a lightly documented option and confirm those details with the vendor before shortlisting.
+verdict: 'HorusCheck, which brands itself Horus Checks, sells a self-service KYC, KYB and AML platform with document checks, liveness, watchlist screening and a no-code flow builder. Caution: we could not confirm who runs it. The website names no company, address, founding year or prices, and we found no matching entry at Companies House and no independent coverage. Confirm the legal entity and contract terms with the vendor before you send it customer data.'
 what_is:
 - HorusCheck (Horus Checks, horuscheck.io) is a self-service compliance platform for KYC, KYB and AML checks, aimed at both regulated and non-regulated businesses such as banks, crypto exchanges, fintech, gaming, hospitality, insurtech, real estate and travel. It offers ID document verification with OCR and MRZ validation across 14,000+ document templates, one-shot and 3D liveness with face matching, AML watchlist and sanctions screening, KYB with registry and UBO checks, and a no-code verification flow builder. Its website, terms and privacy policy do not name a legal entity, address or founding year.
 features:
@@ -121,7 +121,37 @@ capabilities: {}
 certifications: []
 user_ratings: []
 use_case_verdicts: []
-score_breakdown: []
+score_breakdown:
+- criterion: Compliance & certifications
+  weight: 25
+  score: 2.9
+  note: "The site shows a GDPR badge but claims no ISO/IEC 27001, SOC 2 or ISO/IEC 30107-3 result, and its terms and privacy policy name no legal entity or governing law."
+  evidence: vendor
+- criterion: Coverage
+  weight: 20
+  score: 3.8
+  note: "Horus Checks covers KYC, KYB and AML in one product and claims 14,000+ ID templates and screening across 200+ countries, but it does not name the document-verification technology behind these figures."
+  evidence: vendor
+- criterion: Pricing transparency
+  weight: 20
+  score: 3.2
+  note: "The pricing section describes a pay as you go model and lists what KYC and KYB include, but no prices appear on the website or the console sign-in page."
+  evidence: vendor
+- criterion: Integration & API depth
+  weight: 15
+  score: 3.3
+  note: "The homepage describes a self-service console and a no-code flow builder with routing by risk score, geography or document type. API documentation, SDKs and a sandbox are not described in the sources for this review."
+  evidence: vendor
+- criterion: Support responsiveness
+  weight: 10
+  score: 3.0
+  note: "The website offers only a contact form, and there are no G2, Capterra or Gartner Peer Insights reviews and no Trustpilot reviews to judge responsiveness."
+  evidence: vendor
+- criterion: Track record
+  weight: 10
+  score: 2.6
+  note: "No legal entity, address, founders or founding year can be confirmed. UK Companies House has no company by that name, and the only location signal is a self-reported country on a Trustpilot profile claimed in June 2025."
+  evidence: independent
 hands_on: null
 sources:
 - title: Horus Checks homepage (products, pricing model)

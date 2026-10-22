@@ -46,3 +46,22 @@
 ### Score flag
 
 - The 2026-10-18 flag still stands: no official rate card, so the "#1 in Cheap KYC" basis rests on a third-party $0.10 per user per month listing. No new finding.
+
+## Re-score 2026-10-22
+
+Owner-approved direction: lower. Score 4.3 Good → 3.8 Good. The old score leaned on "cheapest published rate"; pricing is now scored as quote-only with a third-party listing.
+
+| Criterion | Weight | Sub-score | Evidence |
+|---|---|---|---|
+| Compliance & certifications | 25 | 3.8 | vendor |
+| Coverage | 20 | 4.2 | vendor |
+| Pricing transparency | 20 | 3.5 | vendor |
+| Integration & API depth | 15 | 3.6 | vendor |
+| Support responsiveness | 10 | 3.8 | user |
+| Track record | 10 | 3.5 | independent |
+
+Arithmetic: (25 × 3.8 + 20 × 4.2 + 20 × 3.5 + 15 × 3.6 + 10 × 3.8 + 10 × 3.5) / 100 = (95 + 84 + 70 + 54 + 38 + 35) / 100 = 376 / 100 = 3.76 → 3.8.
+
+- All six criteria scored. Support uses the Capterra review theme (responsive support), not the star ratings, which stay outside the score.
+- Compliance stays vendor-stated: the only public evidence is the April 2020 ISO/IEC 27001:2013 press release (source 6).
+- `node scripts/checks/provider.mjs` flags `score` as changed against HEAD; this is the intended, owner-approved change. Grade unchanged.
