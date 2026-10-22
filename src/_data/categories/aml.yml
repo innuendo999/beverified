@@ -70,7 +70,14 @@ adjacent:
 - identity-verification
 - cheap-kyc
 - travel-rule
-capability_columns: []
+capability_columns:
+- sanctions_pep
+- adverse_media
+- transaction_monitoring
+- case_management
+- identity_verification
+- deployment
+- published_pricing
 faq_templates: []
 legacy_issues: []
 author: andrii-klymenko
