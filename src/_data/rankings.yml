@@ -326,7 +326,7 @@ brazil:
     cons:
     - Smaller watchlist database than category leaders
     - Single-module prices carry a fixed €100 monthly service fee
-    - Company check and ongoing monitoring prices are not published
+    - Non-document checks cover CPF only; no CNPJ check is listed
     legacy_price_shown: From €0.50/check + €100/mo
     legacy_rating_shown: 4.6
     segments: []
@@ -466,7 +466,7 @@ cheap-kyc:
     - AML screening included from the €0.85 Standard bundle
     - Non-document government database checks from €0.05 per check
     cons:
-    - Company check and monitoring prices are not published
+    - Single-module prices carry a fixed €100 monthly service fee
     - Smaller watchlist database than enterprise vendors
     - Custom volume pricing starts only at 10,000 verifications a month
     legacy_price_shown: From €0.50/check + €100/mo
@@ -479,7 +479,7 @@ cheap-kyc:
     coverage: Global
     size: null
     pros:
-    - Per-transaction pricing model with a free trial, per its G2 listing
+    - Per-transaction pricing model with a free trial, per its G2 listing (data last updated January 2021)
     - Database checks for non-documentary identity proofing
     - Combines individual and business checks in one platform
     cons:
@@ -554,7 +554,7 @@ crypto:
     - Built-in PEP and sanctions screening with ongoing monitoring
     - Customisable verification flows from one dashboard
     cons:
-    - No wallet screening or on-chain analytics listed
+    - Crypto address check is in the API docs, but its price and data provider are not published
     - No Travel Rule support listed
     - Smaller watchlist database than category leaders
     legacy_price_shown: From €0.50/check + €100/mo
@@ -688,7 +688,7 @@ identity-verification:
   - slug: kycaid
     name: KYCAID
     award: Editor's Choice
-    tagline: Customisable identity verification flows covering document, face and liveness checks in 240+ countries.
+    tagline: Customisable identity verification flows covering document, face and liveness checks in 200+ countries and territories.
     coverage: Global
     size: SMB to Mid-market
     pros:
@@ -855,7 +855,7 @@ kyb:
     - Customisable verification flows from one dashboard
     - Dedicated account manager and compliance team on the Enterprise plan
     cons:
-    - Company check prices are not published
+    - Company check costs €10 per check; no registry or country coverage list is published
     - Smaller watchlist database than category leaders
     - Single-module prices carry a fixed €100 monthly service fee
     legacy_price_shown: From €0.50/check + €100/mo
@@ -1114,11 +1114,11 @@ mexico:
     pros:
     - Non-document CURP check against government databases for €0.10
     - Customisable verification flows from one dashboard
-    - 24/7 chat support with a stated 15-minute response SLA
+    - 24/7 chat support with a stated 15-minute SLA for resolving issues
     cons:
     - Smaller watchlist database than category leaders
     - Single-module prices carry a fixed €100 monthly service fee
-    - Company check and ongoing monitoring prices are not published
+    - Prices are published in euros, not Mexican pesos
     legacy_price_shown: From €0.50/check + €100/mo
     legacy_rating_shown: 4.6
     segments: []
@@ -1189,7 +1189,7 @@ peru:
     cons:
     - Smaller watchlist database than category leaders
     - Mobile SDKs are provided on request, not in the public docs
-    - Company check and ongoing monitoring prices are not published
+    - Single-module prices carry a fixed €100 monthly service fee
     legacy_price_shown: From €0.50/check + €100/mo
     legacy_rating_shown: 4.6
     segments: []
@@ -1397,7 +1397,7 @@ age-verification:
     - Address, tax number and mobile number checks as add-on modules
     - Published entry price of €0.75 per verification
     cons:
-    - No facial age estimation listed among its features
+    - Age estimation is listed under face verification, with no accuracy data published
     - Document-first flows add friction for simple age gates
     - Names no age assurance certification or regulator approval
     legacy_price_shown: From €0.75/verification
@@ -1519,7 +1519,7 @@ south-africa:
     - Published prices from €0.50 per document check
     - Built-in PEP and sanctions screening with ongoing monitoring
     cons:
-    - No check against the Home Affairs population register; its database checks cover 7 other countries
+    - South African ID number checks are in the API docs, but the data source is not named and no price is published
     - No South African office listed
     - Smaller watchlist database than category leaders
     legacy_price_shown: From €0.50/check + €100/mo
