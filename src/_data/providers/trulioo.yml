@@ -23,8 +23,8 @@ link:
   url: https://www.trulioo.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: 'Trulioo''s differentiator is data breadth rather than document scanning alone: it checks people and businesses against data sources across 195 countries, says it can verify more than 14,000 ID document types and 700 million business entities, and screens against more than 6,000 watchlists. That makes it a strong choice for non-documentary proofing and KYB, though it leans more toward a data-API product than a polished no-code UX, and it does not publish prices.'
 what_is:
 - Trulioo is a global identity-verification and KYB platform founded in 2011 in Vancouver, Canada, by Stephen Ufford and Tanis Jorge. Its 2021 Series D of $394 million, led by TCV, brought total funding to $474 million at a $1.75 billion valuation. Vicky Bindra has been CEO since April 2025. Trulioo covers 195 countries and says it can verify more than 14,000 ID document types and 700 million business entities, and in November 2025 it added credit decisioning to its KYB product.
@@ -36,7 +36,7 @@ features:
 - AML and watchlist screening against 6,000+ watchlists.
 - Fraud detection using predictive risk signals and consortium data.
 pricing:
-  summary: Trulioo does not publish pricing and quotes on request. G2 lists the pricing model as per transaction, with a free trial. Vendr's buyer data puts the median at $4,500 a year, within a range of $3,870 to $16,050. These are third-party figures, not Trulioo's official rates.
+  summary: Trulioo does not publish pricing and quotes on request. G2's listing, whose pricing data was last updated in January 2021, gives the pricing model as per transaction, with a free trial. Vendr's buyer data puts the median at $4,500 a year, within a range of $3,870 to $16,050. These are third-party figures, not Trulioo's official rates.
   plans:
   - tier: Enterprise
     price: Custom
@@ -61,7 +61,7 @@ pricing:
     source: 10
     verified: '2026-10'
   - label: G2 listing, pricing model
-    value: Per transaction; free trial listed; contact vendor for rates
+    value: Per transaction; free trial listed; contact vendor for rates (G2 pricing data last updated January 2021)
     kind: third_party
     source: 8
     verified: '2026-10'
@@ -79,7 +79,7 @@ facts:
   evidence: independent
 - label: Regions
   value: 195 countries
-  source: 2
+  source: 11
   evidence: vendor
 - label: Funding
   value: $474M raised (to Series D, 2021)
@@ -128,7 +128,7 @@ user_reviews:
   - Teams wanting a polished no-code UX sometimes prefer document-first competitors instead.
 faq:
 - q: How much does Trulioo cost?
-  a: Trulioo does not publish pricing and quotes on request. G2 lists the pricing model as per transaction, with a free trial. Vendr's buyer data puts the median at $4,500 a year, within a range of $3,870 to $16,050.
+  a: Trulioo does not publish pricing and quotes on request. G2's listing, whose pricing data was last updated in January 2021, gives the pricing model as per transaction, with a free trial. Vendr's buyer data puts the median at $4,500 a year, within a range of $3,870 to $16,050.
 - q: Does Trulioo support KYB?
   a: Yes. Trulioo verifies business entities (it says 700 million of them) alongside individual identity checks, and added credit decisioning to its KYB product in November 2025.
 - q: What makes Trulioo different from document-scanning IDV tools?
@@ -156,6 +156,11 @@ user_ratings:
   count: 41
   checked: '2026-10'
   url: https://www.g2.com/products/trulioo/reviews
+- platform: Gartner Peer Insights
+  rating: 4.0
+  count: 1
+  checked: '2026-10'
+  url: https://www.gartner.com/reviews/product/trulioo-400589733
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
@@ -200,6 +205,14 @@ sources:
   publisher: Vendr
   url: https://vendr.com/buyer-guides/trulioo
   accessed: '2026-10'
+- title: Trulioo launches explainable risk scoring for enterprises vetting business customers (Oct 2026)
+  publisher: Trulioo
+  url: https://www.trulioo.com/company/newsroom/press-releases/explainable-business-risk-scoring
+  accessed: '2026-10'
+- title: Trulioo reviews
+  publisher: Gartner Peer Insights
+  url: https://www.gartner.com/reviews/product/trulioo-400589733
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -210,13 +223,10 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- '"~$99/mo entry price (third-party reported)": no source found; removed. Trulioo pricing page has no prices.'
-- '"5B+ people" and "450+ data sources": not in current Trulioo boilerplate (Nov 2025, Mar 2026); removed.'
-- 'Coverage figures (195 countries, 14,000+ ID types, 700M entities, 6,000+ watchlists) come from Trulioo press-release boilerplate (sources 2, 7).'
-- 'Funding total $474M is as of June 2021; no later round found.'
-- 'ISO 27001 (since 2015, footer badge 2022) and SOC 2 Type 2 (Feb 2024) vendor-stated; certifying body and auditor not named. trulioo.com/trust did not load.'
-- 'iBeta list was truncated before older entries; no Trulioo entry seen.'
-- 'G2 review themes could not be read; kept as general statements without counts.'
+- 'Funding: $474M is the total as of the June 2021 Series D. No later round found in Trulioo press releases (Oct 2025 to Oct 2026) or a news search on 2026-10-22.'
+- 'ISO 27001 (since 2015, 2022 version in footer) and SOC 2 Type 2 (Feb 2024) remain vendor-stated: the security page (re-checked 2026-10-22) names only "a qualified registrar" and "an accredited external firm" and offers documents on request. trust.trulioo.com blocks automated access.'
+- 'G2 pros/cons themes are behind a login; user_reviews themes kept as general statements without counts.'
+- 'G2 pricing tab (per transaction, free trial) carries vendor data last updated 27 Jan 2021; treat the free trial as unconfirmed by Trulioo, whose pricing page lists none.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
