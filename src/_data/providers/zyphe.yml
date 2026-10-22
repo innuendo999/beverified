@@ -215,7 +215,36 @@ faq:
 - q: What is the best alternative to Zyphe?
   a: Sumsub is the closest alternative if you need iBeta-tested liveness, ISO/IEC 27001 and SOC 2 claims and a long track record. Unit21 (founded 2018) and Strise (founded 2016) also use AI for AML work and have been operating longer.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  sanctions_pep:
+    status: 'yes'
+    note: With ongoing re-screening
+    source: 9
+  adverse_media:
+    status: 'yes'
+    note: Part of AML screening
+    source: 9
+  transaction_monitoring:
+    status: 'yes'
+    note: Rules engine, not ML
+    source: 9
+  case_management:
+    status: not_disclosed
+    note: Agents work in your own case tools
+    source: 10
+  identity_verification:
+    status: 'yes'
+    note: ID document and liveness
+    source: 2
+  deployment:
+    status: cloud
+    note: Hosted, EEA, UK and US regions
+    source: 3
+  published_pricing:
+    status: partial
+    note: KYB and Managed Operations quoted
+    source: 2
 certifications:
 - name: SOC 2 (in progress)
   what: Type I audit targeted for Oct 2026; no report issued yet

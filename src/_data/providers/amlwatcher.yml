@@ -186,7 +186,36 @@ faq:
 - q: What is the best alternative to AML Watcher?
   a: ComplyAdvantage is the closest alternative if you want a published starting price and SOC 2 as well as ISO/IEC 27001 claims. Sanction Scanner and NameScan both publish their screening prices on their own sites.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  sanctions_pep:
+    status: 'yes'
+    note: With ongoing monitoring
+    source: 9
+  adverse_media:
+    status: 'yes'
+    note: NLP sentiment scoring
+    source: 1
+  transaction_monitoring:
+    status: add_on
+    note: Separate Transaction Watcher module
+    source: 1
+  case_management:
+    status: 'yes'
+    note: Built-in case workflows
+    source: 37
+  identity_verification:
+    status: 'no'
+    note: Face match screening only, no ID checks
+    source: 1
+  deployment:
+    status: cloud_and_on_prem
+    note: Cloud, in-country or on-prem
+    source: 1
+  published_pricing:
+    status: 'no'
+    note: Plans listed without prices
+    source: 2
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security; certificate AMER800493, Americo Quality Standards Registech (UAF-accredited), valid to Apr 2029
@@ -381,6 +410,10 @@ sources:
   publisher: Americo
   url: https://www.americocert.com
   accessed: 2026-10
+- title: Case management
+  publisher: AML Watcher
+  url: https://amlwatcher.com/case-management/
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
