@@ -36,7 +36,7 @@ features:
 - AML and watchlist screening against 6,000+ watchlists.
 - Fraud detection using predictive risk signals and consortium data.
 pricing:
-  summary: Pricing is not published; Trulioo quotes on request. G2 lists the pricing model as per transaction, with a free trial and pricing from the vendor.
+  summary: Trulioo does not publish pricing and quotes on request. G2 lists the pricing model as per transaction, with a free trial. Vendr's buyer data puts the median at $4,500 a year, within a range of $3,870 to $16,050. These are third-party figures, not Trulioo's official rates.
   plans:
   - tier: Enterprise
     price: Custom
@@ -49,6 +49,16 @@ pricing:
     value: None; demo and contact sales only
     kind: official
     source: 1
+    verified: '2026-10'
+  - label: Median annual cost (Vendr buyer data)
+    value: $4,500 per year
+    kind: third_party
+    source: 10
+    verified: '2026-10'
+  - label: Annual cost range (Vendr buyer data)
+    value: $3,870 to $16,050 per year
+    kind: third_party
+    source: 10
     verified: '2026-10'
   - label: G2 listing, pricing model
     value: Per transaction; free trial listed; contact vendor for rates
@@ -118,7 +128,7 @@ user_reviews:
   - Teams wanting a polished no-code UX sometimes prefer document-first competitors instead.
 faq:
 - q: How much does Trulioo cost?
-  a: Trulioo does not publish pricing; it quotes on request. G2 lists its pricing model as per transaction, with a free trial.
+  a: Trulioo does not publish pricing and quotes on request. G2 lists the pricing model as per transaction, with a free trial. Vendr's buyer data puts the median at $4,500 a year, within a range of $3,870 to $16,050.
 - q: Does Trulioo support KYB?
   a: Yes. Trulioo verifies business entities (it says 700 million of them) alongside individual identity checks, and added credit decisioning to its KYB product in November 2025.
 - q: What makes Trulioo different from document-scanning IDV tools?
@@ -185,6 +195,10 @@ sources:
 - title: Trulioo reviews
   publisher: G2
   url: https://www.g2.com/products/trulioo/reviews
+  accessed: '2026-10'
+- title: Trulioo buyer guide and pricing data
+  publisher: Vendr
+  url: https://vendr.com/buyer-guides/trulioo
   accessed: '2026-10'
 entity:
   wikidata: null
