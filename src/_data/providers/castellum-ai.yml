@@ -121,7 +121,36 @@ faq:
 - q: Who are Castellum.AI's main competitors?
   a: Castellum.AI competes with ComplyAdvantage, Sanction Scanner, and NameScan, differentiating through in-house, frequently refreshed risk data and explainable agentic AI.
 segments: []
-capabilities: {}
+capabilities:
+  sanctions_pep:
+    status: 'yes'
+    note: in-house watchlist data
+    source: 1
+  adverse_media:
+    status: 'yes'
+    note: AI-powered screening
+    source: 1
+  transaction_monitoring:
+    status: 'yes'
+    note: transaction screening plus AI monitoring agent
+    source: 8
+  case_management:
+    status: add_on
+    note: offered via sales; also integrates with yours
+    source: 9
+  identity_verification:
+    status: not_disclosed
+    note: no ID document checks found
+    source: null
+  deployment:
+    status: cloud
+    note: online platform, API or bulk data
+    source: 3
+  published_pricing:
+    status: 'no'
+    note: quote on request
+    source: 3
+  checked: '2026-10'
 certifications:
 - name: SOC 2 Type 2
   what: Security controls report
@@ -160,6 +189,14 @@ sources:
   publisher: CB Insights
   url: https://www.cbinsights.com/compare/castellumai-vs-fincom
   accessed: '2026-10'
+- title: Transaction Monitoring Agent
+  publisher: Castellum.AI
+  url: https://www.castellum.ai/products/transaction-monitoring-agent
+  accessed: '2026-10'
+- title: Will we get a notice if the screened party generates an alert?
+  publisher: Castellum.AI
+  url: https://support.castellum.ai/hc/en-us/articles/32906410850580-Will-we-get-a-notice-if-the-screened-party-generates-an-alert
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -179,6 +216,8 @@ verification_notes:
 - 'G2 shows no reviews for Castellum.AI, so the old "frequently cited" review themes had no visible basis. Praise and criticism themes removed; by_profile reworded to customer types named in the Series A release.'
 - 'SOC 2 Type 2 is a homepage badge only; no report opened.'
 - 'Pricing page mentions a money-back guarantee; its terms were not read.'
+- '2026-10-22 capabilities pass: the sanctions and PEPs product page now says 1,700+ global watchlists, while the homepage and this record say 1,000+. Not changed.'
+- '2026-10-22 capabilities pass: the Transaction Monitoring Agent page does not say whether it runs its own detection or works on alerts from an existing monitoring system. Case management is offered through sales per a support article; no product page found.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

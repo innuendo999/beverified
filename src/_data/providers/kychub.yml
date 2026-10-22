@@ -138,7 +138,36 @@ faq:
 - q: Who are KYC Hub's main competitors?
   a: KYC Hub competes with ComplyCube, Unit21, and Sumsub, differentiating through its no-code, full-lifecycle orchestration approach.
 segments: []
-capabilities: {}
+capabilities:
+  sanctions_pep:
+    status: 'yes'
+    note: all plans
+    source: 2
+  adverse_media:
+    status: add_on
+    note: Growth plan and above
+    source: 2
+  transaction_monitoring:
+    status: add_on
+    note: Growth plan and above, no-code rules
+    source: 2
+  case_management:
+    status: 'yes'
+    note: alert triage to SAR filing
+    source: 7
+  identity_verification:
+    status: 'yes'
+    note: documents, liveness and face match
+    source: 1
+  deployment:
+    status: cloud
+    note: region-specific hosted environments
+    source: 1
+  published_pricing:
+    status: 'no'
+    note: three quoted tiers
+    source: 2
+  checked: '2026-10'
 certifications:
 - name: ISO/IEC 27001
   what: Information security
@@ -178,6 +207,10 @@ sources:
   publisher: G2
   url: https://www.g2.com/products/kyc-hub/reviews
   accessed: '2026-10'
+- title: Case management
+  publisher: KYC Hub
+  url: https://www.kychub.com/compliance-case-management
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -196,6 +229,7 @@ verification_notes:
 - 'Old cons about dashboard performance at large-bank scale and BI exports were attributed to reviews; G2 shows 4 reviews (4.0) with themes not visible and Capterra UK 0 reviews. Replaced.'
 - 'Go-live "weeks rather than months": OpsFlow page says configuration time drops "from weeks to hours"; rewritten.'
 - 'Homepage stats block renders placeholders (0+ countries, <0s, 0%); counts taken from other homepage sections.'
+- '2026-10-22 capabilities pass: the pricing page puts transaction monitoring and adverse media in Growth and above, KYB and data residency in Enterprise only. The FAQ answer on the full lifecycle and the data-residency feature line do not mention tiers. The pricing FAQ also says AML screening includes adverse media, which conflicts with its own tier list. Not changed.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

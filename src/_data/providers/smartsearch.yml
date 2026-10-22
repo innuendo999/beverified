@@ -130,7 +130,36 @@ faq:
 - q: Who are SmartSearch's main competitors?
   a: SmartSearch competes with ComplyAdvantage, KYC360, and NameScan, differentiating through its focus on UK regulated firms.
 segments: []
-capabilities: {}
+capabilities:
+  sanctions_pep:
+    status: 'yes'
+    note: included in every AML check
+    source: 1
+  adverse_media:
+    status: add_on
+    note: higher tiers, monitoring and EDD
+    source: 9
+  transaction_monitoring:
+    status: 'yes'
+    note: transaction screening in AML check
+    source: 1
+  case_management:
+    status: 'yes'
+    note: configurable workflow
+    source: 10
+  identity_verification:
+    status: 'yes'
+    note: SmartDoc document and biometric check
+    source: 9
+  deployment:
+    status: cloud
+    note: cloud-based platform
+    source: 1
+  published_pricing:
+    status: 'no'
+    note: tiers listed without prices
+    source: 9
+  checked: '2026-10'
 certifications:
 - name: UK DIATF (SmartDoc Advanced with Facial Recognition and Fraud Check)
   what: Digital identity, Identity role
@@ -177,6 +206,14 @@ sources:
   publisher: GOV.UK
   url: https://www.access-dvs-register.service.gov.uk/?SearchText=Credas
   accessed: '2026-10'
+- title: Pricing
+  publisher: SmartSearch
+  url: https://www.smartsearch.com/product/pricing-page
+  accessed: '2026-10'
+- title: AML case management
+  publisher: SmartSearch
+  url: https://www.smartsearch.com/solutions/aml-case-management
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -195,6 +232,8 @@ verification_notes:
 - 'Pricing page link on the homepage did not load; no prices appear anywhere on the site.'
 - 'No G2 or Capterra product page with ratings found; review themes kept as general statements without counts.'
 - 'Alternatives: NameScan best_for was a dash placeholder; set to null so the record passes the dash check.'
+- '2026-10-22 capabilities pass: the pricing page now loads. It lists Starter, Growth and Enterprise Compliance tiers with no prices, and places ongoing monitoring, perpetual KYC and adverse media monitoring in Enterprise. The record''s ongoing monitoring feature line does not mention a tier. Not changed.'
+- '2026-10-22 capabilities pass: transaction screening appears only as a homepage line in what an AML check includes; no product page describing it was found.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

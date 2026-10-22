@@ -163,7 +163,36 @@ faq:
 - q: Who are NameScan's main competitors?
   a: NameScan competes with SmartSearch, ComplyAdvantage, and KYC360, differentiating through accessible, self-serve on-demand pricing for SMEs.
 segments: []
-capabilities: {}
+capabilities:
+  sanctions_pep:
+    status: 'yes'
+    note: own database updated daily
+    source: 1
+  adverse_media:
+    status: 'yes'
+    note: included in screening packages
+    source: 2
+  transaction_monitoring:
+    status: not_disclosed
+    note: headline only, no feature described
+    source: null
+  case_management:
+    status: 'yes'
+    note: decisions and risk level in dashboard
+    source: 6
+  identity_verification:
+    status: add_on
+    note: separate pay as you go credits
+    source: 2
+  deployment:
+    status: cloud
+    note: online dashboard and API
+    source: 1
+  published_pricing:
+    status: partial
+    note: screening packages published; ID and KYB not listed
+    source: 1
+  checked: '2026-10'
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security
@@ -208,6 +237,10 @@ sources:
   publisher: Capterra Canada
   url: https://www.capterra.ca/reviews/1034209/namescan
   accessed: '2026-10'
+- title: PEP checks
+  publisher: NameScan
+  url: https://namescan.io/pep
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -224,6 +257,7 @@ verification_notes:
 - 'Ongoing monitoring: old feature list said ongoing monitoring; no monitoring feature is described on the current homepage or pricing page. Replaced with KYB.'
 - 'ISO 27001:2022 and ISO 27701:2019 vendor-stated on the about page; no certificate found. Logo alt text "ALAD-BAT CMS Accredited" not explained; not listed.'
 - 'User review themes rewritten from the five reviews visible on Capterra Canada; old "frequently cited" labels removed.'
+- '2026-10-22 capabilities pass: the PEP checks page points to an "Ongoing Monitoring feature" available through sister product MemberCheck, and the homepage and PEP page show a "Real-time Transaction Monitoring" heading with no detail. Earlier note said no monitoring feature is described. Features not changed.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
