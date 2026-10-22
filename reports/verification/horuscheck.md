@@ -17,3 +17,24 @@
 
 ## Score flag
 - Yes, for review. The 4.1 "Good" score sits on a vendor that publishes no legal entity, address, founding year, prices or certifications. Nothing here suggests it has shut down, but the score cannot be traced to verifiable facts. Score unchanged.
+
+## Follow-up 2026-10-22
+
+### Changed
+- Regions fact: "Not publicly disclosed" → "Screening across 200+ countries (vendor-stated)" (contact page, source 4).
+- Sources added: 4 Contact page (Horus Checks), 5 Trustpilot profile, 6 UK Companies House name search.
+- Pricing note resolved: the pricing section lists what KYC and KYB include under "A flexible pay as you go solution" and shows no figures; the console sign-in page shows none either (source 1). Pricing copy unchanged.
+- verification_notes rewritten and deduplicated; the internal notes about link.url and the third pro were dropped as no longer needed.
+- last_verified and updated → 2026-10-22.
+
+### Removed / unverifiable
+- Company identity: no independent source confirms the company. Website, terms, privacy policy, contact page and console name only the brand "Horus Checks", with no legal entity, registration number, address, founders or founding year, and no governing-law clause (sources 1 to 4). UK Companies House has no company named "Horus Checks" (source 6). No Crunchbase, LinkedIn or press coverage was found.
+- Trustpilot business profile (claimed June 2025, 0 reviews) lists Mauritius as the country (source 5). This is company-supplied, gives no address and was not matched to a register entry, so it is kept in notes only and HQ stays "Not publicly disclosed".
+- Certifications: none beyond a GDPR badge image. certifications stays empty.
+- User ratings: no G2, Capterra or Gartner Peer Insights listing; Trustpilot has 0 reviews. user_ratings stays empty.
+
+### Ranking cards
+- No `rankings.yml` entry carries `slug: horuscheck`. Nothing to correct.
+
+### Score flag
+- Yes, unchanged from 2026-10-18 and now firmer. The core company facts (legal entity, location, founding, who runs it) cannot be confirmed from any independent source; the only location signal is a self-reported country on Trustpilot. Nothing suggests the product has shut down (site and console are live), but the 4.1 "Good" score rests on vendor marketing alone. Score unchanged; editor review recommended.
