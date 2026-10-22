@@ -22,8 +22,8 @@ link:
   url: https://www.au10tix.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: AU10TIX describes its platform as 100% automated identity verification. It is built on document-forensics roots and cross-references data across a consortium of 60+ companies to spot serial and coordinated fraud that single vendors can miss. Entry plans carry a $500 monthly minimum and per-check prices are quoted, so it suits teams with steady volume more than very small ones. The consortium network effect is a genuine differentiator.
 what_is:
 - AU10TIX is an identity-verification company founded in 2002, according to the company. It is majority owned by ICTS International N.V., with TPG and Oak HC/FT among its preferred shareholders. AU10TIX lists offices in London, New York and Singapore and R&D centres in Israel and Eastern Europe. Its roots are in airport and border-security document forensics. It runs automated onboarding and cross-references data across a consortium of 60+ companies to detect serial, cross-platform fraud patterns.
@@ -88,8 +88,8 @@ facts:
   source: 4
   evidence: vendor
 - label: Owner
-  value: ICTS International N.V. (68.69% as of the 2021 share sale)
-  source: 5
+  value: ICTS International N.V. (66.30% as of 31 Dec 2025)
+  source: 7
   evidence: independent
 - label: Funding
   value: $80M in 2019 preferred shares ($60M TPG, $20M Oak HC/FT)
@@ -123,11 +123,11 @@ choose_instead:
 user_reviews:
   legacy_note: null
   praise:
-  - 'Speed: reviewers describe verification as fast and largely automated.'
-  - 'Fraud detection: users value detection of organized, cross-platform fraud.'
+  - 'Speed: Capterra reviewers describe verification as fast because it is automated.'
+  - 'Support: Capterra reviewers mention a responsive support team.'
   criticize:
-  - 'Self-serve access: it is built around sales-led onboarding rather than instant self-signup.'
-  - 'Pricing: per-check rates are only available on request.'
+  - 'Documentation: one Capterra reviewer found the API documentation light on developer detail.'
+  - 'Pricing: one Capterra reviewer said pricing may not be very competitive, and per-check rates are only available on request.'
   by_profile:
   - Large platforms facing organized mass-fraud rings value the consortium detection network.
   - Enterprises with border-security or forensic-document requirements favor its heritage.
@@ -149,9 +149,9 @@ segments: []
 capabilities: {}
 certifications:
 - name: UK DIATF certified identity service
-  what: Right to work, right to rent, DBS (Kantara Initiative UK)
-  status: vendor_stated
-  source: 4
+  what: Right to work, right to rent, DBS (Kantara; valid to Dec 2028)
+  status: confirmed
+  source: 8
 - name: ISO/IEC 27001
   what: Information security
   status: vendor_stated
@@ -179,9 +179,14 @@ certifications:
 user_ratings:
 - platform: G2
   rating: 4.5
-  count: 43
+  count: 46
   checked: '2026-10'
   url: https://www.g2.com/products/au10tix/reviews
+- platform: Capterra
+  rating: 5.0
+  count: 3
+  checked: '2026-10'
+  url: https://www.capterra.ca/reviews/213867/au10tix
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
@@ -210,6 +215,18 @@ sources:
   publisher: G2
   url: https://www.g2.com/products/au10tix/reviews
   accessed: '2026-10'
+- title: ICTS International N.V. Form 20-F, fiscal year 2025
+  publisher: US SEC (EDGAR)
+  url: https://www.sec.gov/Archives/edgar/data/0001010134/000117891326002313/zk2635115.htm
+  accessed: '2026-10'
+- title: 'Register of digital identity and attribute services: AU10TIX Ltd, Identity Document Verification Suite'
+  publisher: UK Government (DSIT)
+  url: https://www.access-dvs-register.service.gov.uk/register/service-details?serviceId=284
+  accessed: '2026-10'
+- title: AU10TIX reviews
+  publisher: Capterra
+  url: https://www.capterra.ca/reviews/213867/au10tix
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -220,14 +237,13 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- 'HQ "Hod Hasharon/Tel Aviv, Israel" not stated on any vendor page opened; vendor boilerplate says founded in 2002 in the Netherlands and lists R&D in Israel. HQ fact replaced with Offices.'
-- 'Founders "Ron Atzmon and Gil Atzmon" and "roughly 205 employees" not found in any source opened. Removed.'
-- '"4 to 8 seconds" verification time not found on current vendor pages; homepage case study (FXCM) says within 10 seconds. Removed from pros, features, FAQ and user themes.'
-- '"$24B+ fraud prevented" replaced with the current vendor figure "over $33 billion" (press release Jul 2026). The homepage also says "$5B saved on average annual fraud". Both are company-reported.'
-- 'Ownership percentages are from the June 2021 share sale described in the FY2023 20-F; later changes not checked.'
-- 'UK DIATF certification is vendor-stated (press releases name Kantara Initiative UK as certifier); the UK DVS register entry itself could not be opened. Other certifications are listed on the Trust Center without certificate links (evidence pack on request). iBeta letter not found on ibeta.com.'
+- 'Founding: vendor boilerplate says founded in 2002 in the Netherlands (source 4). A 2022 CTech report (Algemeiner) says founded in 2010, HQ Hod Hasharon, and names Ron and Gil Atzmon as holders of a 70% stake, not as founders. Founders, HQ and headcount stay off the page.'
+- 'Airport and border-security roots (tagline, what_is, pro) are not stated on any AU10TIX page opened. Wikipedia says early work focused on document authentication for border control and aviation security; parent ICTS describes its own focus as aviation security and border control (SEC exhibit, Nov 2019).'
+- 'Certifications other than UK DIATF are vendor-stated on the Trust Center with no certificate links ("Request Evidence Pack"). No AU10TIX letter in the readable part of iBeta''s confirmation-letter list; Kantara Trust Status List did not render; the TX-RAMP certified products list is an xlsx we could not open.'
+- 'Fraud figures are company-reported and differ by page: "over $33 billion" prevented (source 4) and "$5B saved on average annual fraud" (homepage).'
 - 'Pricing page FAQ uses different tier names (Basic, Advanced, Corporate) than the plan cards (Basic KYC, Enhanced KYC, Enterprise). We use the plan card names.'
-- 'G2 rating visible (4.5, 43 reviews); review text not read in full, so themes are general statements without counts.'
+- 'G2 review text is not visible without login; user themes come from the 3 Capterra reviews (2021 to 2024) only.'
+- 'Preferred shareholders gained exit rights from 3 Jul 2026 (FY2025 20-F); no sale announced as of the check date.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

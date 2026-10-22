@@ -4,7 +4,7 @@ alternate_names: []
 status: published
 seo:
   title: 'iDenfy Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'iDenfy review: identity verification from $1.35 per check, with an approved-only billing option and in-house manual review. Features, pricing, pros & cons, alternatives.'
+  description: 'iDenfy review: identity verification at $1.35 per check on the entry plan, with an approved-only billing option and in-house manual review. Features, pricing, pros & cons, alternatives.'
   h1: 'iDenfy Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/idenfy.png
@@ -22,75 +22,89 @@ link:
   url: https://www.idenfy.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: 'iDenfy''s pricing is its headline feature. It publishes a self-serve rate of $1.35 per verification with a $135 monthly minimum, and for $0.50 more per check you pay only for approved verifications, so rejected checks cost nothing. That is unusual in a category dominated by quote-only pricing. Add in-house manual review and it is a strong fit for cost-conscious fintech, crypto and gaming teams, even if its brand scale trails category leaders.'
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
+verdict: 'iDenfy''s pricing is its headline feature. It publishes self-serve rates of $1.35 per verification on Basic ($135 monthly minimum) and $1.30 on Premium ($325 minimum), and for $0.50 more per check you pay only for approved verifications, so rejected checks cost nothing. That is unusual in a category dominated by quote-only pricing. Add in-house manual review and it is a strong fit for cost-conscious fintech, crypto and gaming teams, even if its brand scale trails category leaders.'
 what_is:
-- iDenfy (UAB "iDenfy") is an identity-verification company founded in 2017 and based in Kaunas, Lithuania, with offices in the United Kingdom and the USA. CEO Domantas Ciulde leads a team of 50+. It serves fintech, crypto, gaming and marketplace businesses, combining AI-driven document and biometric checks with in-house experts who double-check verifications. It says it supports onboarding in 200+ countries and territories, extracts data from 16,000+ government-issued documents and is used by 1,000+ businesses.
+- iDenfy (UAB "iDenfy") is an identity-verification company founded in 2017 and based in Kaunas, Lithuania, with offices in the United Kingdom and the USA. CEO Domantas Ciulde leads a team of 50+. It serves fintech, crypto, gaming and marketplace businesses, combining AI-driven document and biometric checks with in-house experts who double-check verifications. It says it supports onboarding in 200+ countries and territories, extracts data from government-issued documents and is used by 1,000+ businesses.
 features:
-- AI document and biometric verification with liveness, double-checked by in-house reviewers (24/7 manual review is a paid add-on on self-serve plans).
+- AI document and biometric verification with liveness, double-checked by in-house reviewers (24/7 manual review is a paid add-on).
 - KYB with access to 180+ company registries in 120 countries, plus UBO verification.
-- Proxy detection, device and phone checks, and risk assessment.
+- Proxy detection, phone validation and verification, address checks and risk assessment.
 - AML screening and ongoing monitoring, plus transaction monitoring.
 - NFC-based document verification.
 - 'Approved-only billing add-on: rejected verifications are not charged.'
 pricing:
-  summary: iDenfy publishes its self-serve rate of $1.35 per verification with a $135 monthly minimum on the Basic and Premium plans. Paying only for approved verifications is an add-on at $0.50 per check. Enterprise pricing is tailored and volume-based; iDenfy says it can fall as low as $0.50 per verification. All plans include a 14-day free trial with 10 free checks.
+  summary: iDenfy publishes two self-serve plans. Basic costs $1.35 per verification with a $135 monthly minimum, and Premium costs $1.30 per verification with a $325 monthly minimum. Paying only for approved verifications is an add-on at $0.50 per check, according to iDenfy's ROI calculator. Enterprise pricing is custom and volume-based; iDenfy says the price drops to $0.55 per verification. A 14-day free trial includes 10 free checks.
   plans:
-  - tier: Basic / Premium
+  - tier: Basic
     price: $1.35 / verification
-    note: $135 minimum per month; Premium adds discounts on extras
+    note: $135 minimum per month
+    extra: Approved-only billing +$0.50 per check
+  - tier: Premium
+    price: $1.30 / verification
+    note: $325 minimum per month; adds an SLA and discounts on extras
     extra: Approved-only billing +$0.50 per check
   - tier: Enterprise
-    price: Tailored
-    note: Volume-based annual pricing
-    extra: As low as $0.50 per verification at volume, per iDenfy
+    price: Custom
+    note: Volume-based pricing
+    extra: Drops to $0.55 per verification at volume, per iDenfy
   legacy_verified_note: null
   verified: '2026-10'
   items:
-  - label: Basic / Premium, per verification
+  - label: Basic, per verification
     value: $1.35
     kind: official
-    source: 1
+    source: 8
     verified: '2026-10'
-  - label: Monthly minimum (Basic / Premium)
+  - label: Basic, monthly minimum
     value: $135
     kind: official
-    source: 1
+    source: 9
     verified: '2026-10'
-  - label: Approved-only billing add-on
+  - label: Premium, per verification
+    value: $1.30
+    kind: official
+    source: 8
+    verified: '2026-10'
+  - label: Premium, monthly minimum
+    value: $325
+    kind: official
+    source: 9
+    verified: '2026-10'
+  - label: Approved-only billing add-on (ROI calculator)
     value: +$0.50 per verification
     kind: official
-    source: 1
+    source: 10
     verified: '2026-10'
   - label: Enterprise, lowest stated rate at volume
-    value: $0.50 per verification
+    value: $0.55 per verification
     kind: official
-    source: 1
+    source: 8
     verified: '2026-10'
-  - label: AML (sanctions/PEPs) add-on
-    value: +$0.45 per verification
+  - label: AML screening add-on (ROI calculator)
+    value: +$0.40 per verification
     kind: official
-    source: 1
+    source: 10
     verified: '2026-10'
-  - label: 24/7 manual review add-on
-    value: +$0.45 per verification
+  - label: 24/7 manual review add-on (ROI calculator)
+    value: +$0.35 to +$0.55 per verification, by plan
     kind: official
-    source: 1
+    source: 10
     verified: '2026-10'
   - label: Free trial
     value: 14 days, 10 free checks
     kind: official
-    source: 1
+    source: 9
     verified: '2026-10'
 facts:
 - label: From
-  value: $1.35/verification
-  source: 1
+  value: $1.35/verification (Basic)
+  source: 8
   evidence: vendor
 - label: Minimum
-  value: $135/month
-  source: 1
+  value: $135/month (Basic); $325/month (Premium)
+  source: 9
   evidence: vendor
 - label: Founded
   value: '2017'
@@ -106,11 +120,11 @@ facts:
   evidence: vendor
 - label: Model
   value: Per check; approved-only billing as add-on
-  source: 1
+  source: 10
   evidence: vendor
 pros:
 - 'Approved-only billing option: rejected verifications cost nothing'
-- Published self-serve pricing ($1.35 per check) with a free trial
+- Published self-serve pricing ($1.35 per check on Basic) with a free trial
 - In-house manual review on top of automated checks, with 24/7 coverage as an add-on
 cons:
 - Smaller brand and scale than category leaders
@@ -147,9 +161,9 @@ user_reviews:
   - Larger enterprises sometimes prefer a bigger-brand vendor for procurement reasons.
 faq:
 - q: How does iDenfy's pricing work?
-  a: iDenfy publishes a self-serve rate of $1.35 per verification with a $135 monthly minimum. For $0.50 more per check you are billed only for approved verifications. Enterprise pricing is tailored and, according to iDenfy, can fall to $0.50 per verification at volume. A 14-day free trial includes 10 checks.
+  a: iDenfy's Basic plan costs $1.35 per verification with a $135 monthly minimum, and Premium costs $1.30 per verification with a $325 monthly minimum. Its ROI calculator lists approved-only billing at $0.50 more per check, so rejected verifications are not charged. Enterprise pricing is custom and, according to iDenfy, drops to $0.55 per verification at volume. A 14-day free trial includes 10 checks.
 - q: Does iDenfy use human review?
-  a: iDenfy says in-house experts double-check identity verifications. Round-the-clock (24/7) manual review is listed as an add-on at $0.45 per verification on self-serve plans.
+  a: iDenfy says in-house experts double-check identity verifications. Its ROI calculator lists round-the-clock (24/7) manual review as a per-check add-on at $0.35 to $0.55, depending on the plan.
 - q: Does iDenfy support KYB?
   a: Yes. iDenfy offers business verification (KYB) with access to 180+ company registries in 120 countries, plus UBO verification.
 - q: Where is iDenfy based?
@@ -165,14 +179,14 @@ certifications:
   what: Information security (cert. ISMS-1851/A, CERT International, valid to Jun 2029)
   status: confirmed
   source: 4
-- name: SOC (type not stated)
-  what: Security controls audit
+- name: SOC 2 Type II
+  what: Security, availability, confidentiality (12-month audit period)
   status: vendor_stated
-  source: 3
+  source: 11
 - name: ISO/IEC 30107-3 (iBeta)
   what: Liveness / presentation attack detection
   status: vendor_stated
-  source: 3
+  source: 11
 user_ratings:
 - platform: G2
   rating: 4.9
@@ -180,10 +194,15 @@ user_ratings:
   checked: '2026-10'
   url: https://www.g2.com/products/idenfy/reviews
 - platform: Trustpilot
-  rating: 4.2
-  count: 31
+  rating: 4.1
+  count: 29
   checked: '2026-10'
   url: https://www.trustpilot.com/review/idenfy.com
+- platform: Capterra
+  rating: 4.7
+  count: 10
+  checked: '2026-10'
+  url: https://www.capterra.com/p/230599/iDenfy/reviews/
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
@@ -216,6 +235,38 @@ sources:
   publisher: Trustpilot
   url: https://www.trustpilot.com/review/idenfy.com
   accessed: '2026-10'
+- title: iDenfy identity verification price
+  publisher: iDenfy
+  url: https://www.idenfy.com/identity-verification-price
+  accessed: '2026-10'
+- title: Pay-As-You-Go billing (iDenfy documentation)
+  publisher: iDenfy
+  url: https://documentation.idenfy.com/resources/billing/pay-as-you-go.md
+  accessed: '2026-10'
+- title: ROI Calculator, iDenfy identity verification savings
+  publisher: iDenfy
+  url: https://idenfy.com/savings/
+  accessed: '2026-10'
+- title: Compliance overview (iDenfy documentation)
+  publisher: iDenfy
+  url: https://documentation.idenfy.com/guides/compliance/overview.md
+  accessed: '2026-10'
+- title: Fraud prevention overview (iDenfy documentation)
+  publisher: iDenfy
+  url: https://documentation.idenfy.com/fraud-prevention/overview.md
+  accessed: '2026-10'
+- title: NFC verification
+  publisher: iDenfy
+  url: https://idenfy.com/nfc-verification/
+  accessed: '2026-10'
+- title: Transaction monitoring software
+  publisher: iDenfy
+  url: https://idenfy.com/?p=44843
+  accessed: '2026-10'
+- title: iDenfy reviews
+  publisher: Capterra
+  url: https://www.capterra.com/p/230599/iDenfy/reviews/
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -226,14 +277,15 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- HQ evidence is the ISO certificate address (59 Kazimiero Barsausko St, Kaunas); the Lithuanian company register was not opened.
-- ISO 27001 certificate opened as a PDF hosted on iDenfy's site; CERT International's own register was not checked.
-- iDenfy's iBeta ISO 30107-3 claim not found on iBeta's public confirmation-letter list; kept as vendor-stated.
-- SOC report type (1 or 2) not stated by iDenfy.
-- Former name "Identifikaciniai Projektai" and co-founder Gediminas Ciulde could not be confirmed; removed.
-- The homepage claim of "up to 70% lower costs" has no stated baseline; removed from pricing summary.
-- Pricing calculator on the pricing page shows an inconsistent total (100 x $1.35 shown as $1,215); per-check figure taken from the plan block.
-- Trustpilot reviews include end users being verified, not only business customers.
+- 'The /pricing/ URL (source 1) now shows only a quote form to our fetcher; plan figures come from the identity-verification-price page (source 8) and the billing docs (source 9). A second iDenfy pricing page variant (idenfy.com/?p=481) shows Enterprise at $0.90 per verification with a 6,000 checks per year minimum, falling to $0.55 from 12,000; not used because it conflicts with source 8.'
+- 'Add-on prices (approved-only, AML, 24/7 review) now appear only in the ROI calculator (source 10), which calls them estimates subject to change and lists 24/7 review at different prices in different sections. The billing docs say the pay-per-approved unit price is "slightly higher" without a figure. iDenfy''s AI info page describes pay-per-approved as the default model.'
+- 'Price calculator on source 8 shows totals that do not match the unit prices (100 x $1.35 shown as $270; Premium 100 x $1.30 shown as $260, below its $325 minimum). Per-check figures taken from the plan cards.'
+- 'Document count conflicts: the homepage now says 3,500+ active government-issued documents, iDenfy''s AI info page says 16,000+ document types. Number removed from what_is.'
+- 'HQ evidence is the ISO certificate address (59 Kazimiero Barsausko St, Kaunas). The Lithuanian Register of Legal Entities was not opened; the aggregator scoris.lt lists iDenfy, UAB (code 304617621, registered 25 Aug 2017) at a different Kaunas address (Griciupio g. 7-212).'
+- 'ISO 27001 certificate ISMS-1851/A (CERT International) opened as a PDF on iDenfy''s site; CERT International''s register not checked. iDenfy''s compliance docs (source 11) cite a different certificate, No. 1512120135 from TUV Thuringen; not reconciled.'
+- 'iBeta ISO 30107-3: iDenfy says it was tested under iBeta methodology (source 11) with no level or date; not found on the readable part of iBeta''s confirmation-letter list. Kept as vendor-stated.'
+- 'SOC 2 Type II auditor named by iDenfy as House of CPA; report not public (on request).'
+- 'Trustpilot reviews include end users being verified, not only business customers. Trustpilot count fell from 31 to 29 since 2026-10-18.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
