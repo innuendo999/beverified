@@ -33,3 +33,21 @@ Record: `src/_data/providers/verifymy.yml`
 ## Score flag
 
 None.
+
+## Follow-up 2026-10-22
+
+### Changed
+- user_ratings added: Gartner Peer Insights 4.3 from 9 ratings, Age Assurance Software (source 11). G2 still shows no reviews; Trustpilot still one 1-star review (Dec 2025) on an unclaimed profile, not added.
+- Con 3: "Few public user reviews (none on G2, one on Trustpilot as of October 2026)" → "Few public user reviews (9 ratings on Gartner Peer Insights and none on G2 as of October 2026)" (sources 8, 11).
+- KJM approval: source homepage (1) → VerifyMy blog of 27 Jun 2022 stating KJM approved its facial age estimation (source 10). Still vendor_stated. Certification `what` and the "Is VerifyMy certified?" FAQ now say what was approved and when.
+- ACCS register re-checked: ISO/IEC 27566-1:2025 and ACCS 1:2025 (Verifymy Age Assurance Platform v1.0.1026) valid to 20/05/2029; IEEE 2089.1-2024 (Age Estimation API) valid to 21/09/2027 (source 4). No change.
+
+### Removed / unverifiable
+- Notes closed: video age estimation (corrected on 18 Oct), UK DIATF (VerifyMy not on the gov.uk DVS register, all 66 entries checked on 22 Oct; never claimed), ACCS validity dates (confirmed).
+- Still unresolved: KJM database listing (only page 1 of 10 loads), 35M+ users (vendor figure, no date or method). Funding not on the page (CB Insights lists USD 6.34M; no primary source).
+
+### Ranking cards
+`age-verification` entry (`slug: verifymy`): tagline, pros and cons already carry the 18 Oct corrections and remain accurate. "Few independent user reviews to judge support by" still holds (9 Gartner ratings). No changes needed.
+
+### Score flag
+- None.

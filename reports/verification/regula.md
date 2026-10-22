@@ -22,3 +22,21 @@
 
 ## Score flag
 - None negative. The new IDV Platform with AML screening (Oct 2025) widens scope beyond what the old review assessed; editor may want to revisit the "SDK only" framing in the score rationale. Score unchanged.
+
+## Follow-up 2026-10-22
+
+### Changed
+- HQ fact: "Daugavpils, Latvia (offices also in Reston, VA)", vendor office list (source 3) → "Daugavpils, Latvia (registered office of SIA Regula Baltija)", Lursoft register data: reg. no. 41503036161, registered 17 Jun 2005, Višķu iela 34, Daugavpils (source 11, independent).
+- Recognition fact: "Gartner Magic Quadrant for Identity Verification 2026" (homepage, source 1) → "Niche Player, Gartner Magic Quadrant for Identity Verification 2025 and 2026" (Regula releases of 30 Jul 2026 and 27 Aug 2025, sources 9 and 10).
+- user_ratings added: G2 4.8 from 41 reviews (source 12); Gartner Peer Insights, Regula Document Reader SDK, 4.8 from 14 ratings (source 13).
+- Template count re-checked: SDK page still says 16,500+ templates from 254 countries and territories, 30-day free trial, usage-based pricing (source 2). No change.
+
+### Removed / unverifiable
+- Notes closed: co-founder Ivan Shumsky (claim already removed; still no source found), "30+ languages" (already removed), search-budget note.
+- Still unresolved: certification body, numbers and dates for ISO/IEC 27001:2022, ISO 9001:2015 and ISO 14001:2015 (vendor page only; kept vendor_stated). Regula does not name a group HQ; the official Register of Enterprises page was not opened directly.
+
+### Ranking cards
+- No `slug: regula` in `src/_data/rankings.yml`.
+
+### Score flag
+- None.
