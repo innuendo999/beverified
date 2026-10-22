@@ -25,3 +25,24 @@
 
 ## Score flag
 - Yes. The score and the "#1 in Cheap KYC" claim rested on "the cheapest published rate". IDMERIT publishes no rate; the $0.10 figure is a marketplace listing and the unit (per user per month) is unclear for per-check comparison. Flag for editorial review; score unchanged.
+
+## Follow-up 2026-10-22
+
+### Changed
+
+- No page facts changed. Re-checked: homepage coverage (180+ countries, 440+ sources, 580+ ID types, 13M+ red-flagged profiles, 330M businesses in 140+ jurisdictions), FAQ pricing and testing wording, Capterra Basic plan $0.10 per user per month, Capterra 4.7 (3), G2 4.9 (19). All unchanged (sources 1, 3, 4, 5).
+- Source 6 appended: PR.com press release (April 2020) on ISO/IEC 27001:2013 certification by an unnamed ANAB-accredited body. Certification status left vendor_stated: the 2013 version is superseded and no current certificate was found.
+- Notes merged: founding year and HQ conflicts into one note; resolved history notes (self-funded claim, Video KYC) removed.
+
+### Removed / unverifiable
+
+- Nothing removed from the page.
+- Still open: founding year (G2 2014, GetApp 2016, IDMERIT none); HQ San Diego (IDMERIT) vs Carlsbad (G2); idmerit.com/pricing returns an error; coverage figures differ between IDMERIT's own pages; no current SOC 2 or ISO 27001 evidence.
+
+### Ranking cards
+
+- No `slug: idmerit` entry in `src/_data/rankings.yml`. Nothing to correct.
+
+### Score flag
+
+- The 2026-10-18 flag still stands: no official rate card, so the "#1 in Cheap KYC" basis rests on a third-party $0.10 per user per month listing. No new finding.
