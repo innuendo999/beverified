@@ -127,3 +127,40 @@ The editor supplied the certificate PDF linked from amlwatcher.com (our fetcher 
 - Not yet checked in the Americo online register (form-based).
 
 Result: certification status vendor_stated → confirmed; compliance sub-score 3.9 → 4.3; score 4.0 → 4.1 (Good). AML ranking: AML Watcher (4.1) now ranks above Zyphe (4.0). Card con updated.
+
+## Follow-up 2026-10-22
+
+Re-opened every page behind the 27 open notes (pricing, terms, about, team, journey, FAQ, sanctions, coverage, client onboarding, TruRisk, case management, on-premise, Travel Rule, crypto wallet, vessel, ABC, case studies, press index and releases, API change log and supported countries, Programmers Force), plus G2, Capterra, Trustpilot, Gartner Peer Insights, PeerSpot, Chartis Research, Americo, IAF and Latka. The certificate PDF is still blocked to our fetcher (robots.txt).
+
+### Changed
+
+- `pricing.summary`: "Vendor-supplied listings on G2 and Capterra give $95 a month for Basic and $450 a month for Premium" → "Vendor-supplied listings give $95 a month for Basic (G2 and Capterra) and $450 a month for Premium (G2 only)". Capterra lists only the Basic price (sources 27, 29).
+- FAQ "How much does AML Watcher cost?": "Its listings on G2 and Capterra give $95 a month for Basic and $450 a month for Premium" → "Its listings on G2 and Capterra give $95 a month for Basic, and G2 gives $450 a month for Premium" (sources 27, 29).
+- `facts` Certifications: source 8 (FAQ) → 7 (the certificate itself), value unchanged.
+- `user_ratings`: added Gartner Peer Insights 5.0 from 1 rating (new source 39). G2 4.7 (12) and Trustpilot 4.3 (8) re-checked, unchanged. Capterra (0 reviews) and PeerSpot (no reviews) not added.
+- `score_breakdown` Track record note: "we could not confirm its Chartis RiskTech100 claim" → "Chartis tags AML Watcher on its FCC50 2025 ranking pages, but the placement is not visible and we could not confirm the RiskTech100 2024 claim on its own site" (new source 38).
+- `sources`: appended 38 (Chartis Research organisation page) and 39 (Gartner Peer Insights); quoted `accessed` on sources 35 and 36.
+- `last_verified` 2026-10-18 → 2026-10-22; `updated` 2026-10-22.
+- `verification_notes`: 27 → 26. Merged the Shufti note into the parent/group note; every remaining note re-dated and reworded with what is still open.
+
+Re-confirmed without change: plans, limits, 17% annual saving, 100-entity minimum, five-search trial, overage wording (2); Risk Watcher LLC terms (6); offices (3); parent wording (4); 215+ regimes, 3,500+ watchlists, 15-minute updates (9); TruRisk paid add-on and human final decision (12); Transaction Watcher 150+ typologies (13); Travel Rule, on-premise, Saudi release (14 to 16); change log to 29 Apr 2026, no SDK or sandbox (18); case studies (26); Trustpilot themes (28).
+
+### Removed / unverifiable
+
+- Nothing removed from the rendered record.
+- Still unverifiable: Americo register entry for AMER800493 (form only) and UAF's standing after IAF stopped operating on 1 Jan 2026 (transition rules on iaf.nu); Delaware registry entries for Risk Watcher LLC and AML Watcher.com LLC; prices behind the blank "Starting From" fields (not checked in a real browser); founding year (Latka's 2019 has no source); funding; Chartis placement and the RiskTech100 2024 "Market Disruptor" claim; Singapore award organiser; Travel Rule protocols; aircraft screening; PEP, media and country totals (new conflicting figure: 232+ countries in the founder quote on the team page).
+- Capterra says "Free trial: not available", against the vendor's five-search (pricing page) and ten-search (FAQ) offers. Noted, record unchanged.
+- Oonagh van den Berg is not on the about or team page; the record states only her July 2025 appointment.
+
+### Capabilities (not edited)
+
+- `transaction_monitoring: add_on`: the Transaction Watcher release says it is available "as part of AML Watcher's platform", while the menus list it as a separate product line and the pricing page does not say which plans include it. Plausible, not confirmed; note added for the editor.
+- Other keys agree with current pages.
+
+### Ranking cards
+
+None. `src/_data/rankings.yml` has no `slug: amlwatcher` entry and no "AML Watcher" text, so no card text to correct. The card suggested in the first review was never added.
+
+### Score flag
+
+None.

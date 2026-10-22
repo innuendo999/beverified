@@ -20,7 +20,7 @@ categories:
 link:
   url: https://amlwatcher.com
   type: none
-last_verified: '2026-10-18'
+last_verified: '2026-10-22'
 updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: 'AML Watcher fits small and mid-sized fintechs and payment firms that want sanctions, PEP and adverse media screening by API or dashboard, with on-premises or in-country hosting as an option. Its ISO/IEC 27001:2022 certificate checks out. The weak spots are evidence and price: coverage figures change from page to page, the pricing page shows no prices and there is no SOC 2 report. Ask for a written quote before you sign.'
 what_is:
@@ -34,7 +34,7 @@ features:
 - TruRisk, a paid AI add-on that ranks name matches and writes an explanation for the analyst who makes the final decision.
 - REST API with webhooks, bulk search and a public change log, an MCP server, and cloud, in-country or on-premises deployment.
 pricing:
-  summary: AML Watcher's pricing page lists Basic, Premium and Enterprise plans, with plan limits, a 17% discount for annual billing and a free trial with the first five searches free, but it shows no prices. Vendor-supplied listings on G2 and Capterra give $95 a month for Basic and $450 a month for Premium, each with 100 searches a month. Enterprise is quoted, and extra searches are billed at an agreed per-unit rate.
+  summary: AML Watcher's pricing page lists Basic, Premium and Enterprise plans, with plan limits, a 17% discount for annual billing and a free trial with the first five searches free, but it shows no prices. Vendor-supplied listings give $95 a month for Basic (G2 and Capterra) and $450 a month for Premium (G2 only), each with 100 searches a month. Enterprise is quoted, and extra searches are billed at an agreed per-unit rate.
   plans:
   - tier: Basic
     price: Not published
@@ -131,7 +131,7 @@ facts:
   evidence: vendor
 - label: Certifications
   value: ISO/IEC 27001:2022 (confirmed, valid to Apr 2029); no SOC 2 claim found
-  source: 8
+  source: 7
   evidence: vendor
 pros:
 - Screening runs on AML Watcher's own watchlist data, with sanctions updates every 15 minutes, per the vendor
@@ -170,7 +170,7 @@ user_reviews:
   - Banks and firms whose vendor due diligence requires a SOC 2 report should note that AML Watcher has none; its ISO/IEC 27001:2022 certificate is current.
 faq:
 - q: How much does AML Watcher cost?
-  a: AML Watcher's pricing page lists Basic, Premium and Enterprise plans but shows no prices. Its listings on G2 and Capterra give $95 a month for Basic and $450 a month for Premium, each with 100 searches a month. Annual billing saves 17%, the smallest plan covers 100 monitored entities, and Enterprise is quoted. Get the price in writing, because the vendor's own page does not show it.
+  a: AML Watcher's pricing page lists Basic, Premium and Enterprise plans but shows no prices. Its listings on G2 and Capterra give $95 a month for Basic, and G2 gives $450 a month for Premium, each with 100 searches a month. Annual billing saves 17%, the smallest plan covers 100 monitored entities, and Enterprise is quoted. Get the price in writing, because the vendor's own page does not show it.
 - q: Does AML Watcher have a free trial?
   a: Yes. The pricing page offers a free trial with the first five searches free and does not give a time limit. The FAQ page shows a separate "Try 10 searches for free" offer, so check which applies when you sign up.
 - q: Which sanctions lists does AML Watcher cover?
@@ -232,6 +232,11 @@ user_ratings:
   count: 8
   checked: '2026-10'
   url: https://www.trustpilot.com/review/amlwatcher.com
+- platform: Gartner Peer Insights
+  rating: 5.0
+  count: 1
+  checked: '2026-10'
+  url: https://www.gartner.com/reviews/product/aml-watcher
 use_case_verdicts: []
 score_breakdown:
 - criterion: Compliance & certifications
@@ -262,7 +267,7 @@ score_breakdown:
 - criterion: Track record
   weight: 10
   score: 4.0
-  note: AML Watcher has operated since at least 2021 under a parent group showing a 2016 start date, but it discloses no founding year or funding, we could not confirm its Chartis RiskTech100 claim, and we found no public regulatory actions or breach disclosures.
+  note: AML Watcher has operated since at least 2021 under a parent group showing a 2016 start date, but it discloses no founding year or funding. Chartis tags AML Watcher on its FCC50 2025 ranking pages, but the placement is not visible and we could not confirm the RiskTech100 2024 claim on its own site. We found no public regulatory actions or breach disclosures.
   evidence: independent
 hands_on: null
 sources:
@@ -405,14 +410,22 @@ sources:
 - title: United Accreditation Foundation, IAF member details (ISO/IEC 27001 MLA recognition, Aug 2022)
   publisher: International Accreditation Forum (archived)
   url: https://www.iaf.nu/articles/IAF_MEM_USA_UAF/476
-  accessed: 2026-10
+  accessed: '2026-10'
 - title: Americo Quality Standards Registech (certification body, accredited by UAF)
   publisher: Americo
   url: https://www.americocert.com
-  accessed: 2026-10
+  accessed: '2026-10'
 - title: Case management
   publisher: AML Watcher
   url: https://amlwatcher.com/case-management/
+  accessed: '2026-10'
+- title: AML Watcher (organisation page, tagged in Financial Crime and Compliance50 2025)
+  publisher: Chartis Research
+  url: https://www.chartis-research.com/organisations/aml-watcher
+  accessed: '2026-10'
+- title: AML Watcher reviews
+  publisher: Gartner Peer Insights
+  url: https://www.gartner.com/reviews/product/aml-watcher
   accessed: '2026-10'
 entity:
   wikidata: null
@@ -426,32 +439,31 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- 'New record, first review. AML Watcher asked to be listed; link.type set to none (no commercial relationship recorded).'
-- 'Legal entity: terms name Risk Watcher LLC (dba AML Watcher), 8 The Green #16077, Dover, DE 19901, Delaware law. The ISO certificate file name says "AML_Watcher.com_LLC". Trustpilot shows the same Dover address. No registry entry opened; Delaware registry not checked.'
-- 'ISO/IEC 27001: certificate AMER800493 (ISO/IEC 27001:2022) inspected on 2026-10-18 from the vendor-hosted PDF (supplied by the editor, as our fetcher is blocked by robots.txt). Issuer Americo Quality Standards Registech Pvt. Ltd., UAF accreditation CM-MS-7820, IAF MLA mark. Holder named AML Watcher.com LLC at the same Dover address as Risk Watcher LLC in the terms. Not yet looked up in the Americo online register (form only); do that at the next re-check.'
-- 'SOC 2: no claim found on any page opened or in search. GDPR compliance notice PDF and a Data Privacy Framework logo on the homepage not used.'
-- 'Parent and group: Programmers Force named as parent organisation (team page), "born from" (about page) and "backed by" (Sept 2026 press release). programmersforce.com lists AML Watcher, Transaction Watcher, Media Watcher, Facia, The KYB and Barie, with an "ESTD 2016" badge and offices in Singapore, UAE, UK, France, Lithuania, Hong Kong and Pakistan. No registry check of the ownership.'
-- 'Shufti Pro: no page we opened says AML Watcher and Shufti are sister companies. Shufti CEO Shahid Hanif says in a Pulse2 interview (https://pulse2.com/shufti-profile-shahid-hanif-interview/) that he co-founded Programmers Force before founding Shufti in 2017. That is a founder link, not a group link; not stated in the record. Shufti Pro has its own record (shufti-pro.yml).'
-- 'Founded: not stated. The journey page starts with work before 2019, 2019 "laying the foundation", 2020 testing, 2021 on the about page timeline and 2022 or 2023 scaling (inconsistent). The founder "led an IPO in Sweden in 2019" for a fintech and crypto company (unnamed). Shown as Not publicly disclosed.'
-- 'Leadership: Khurram Akhtar, Founder (full name in the Sept 2026 press release; team page shows "Khurram A."). Raja Haris, Head of Growth; Oonagh van den Berg, Executive Director, Growth and Advisory (July 2025). No CEO title found.'
-- 'Funding: none disclosed by AML Watcher; no round found in search. Latka profile not opened. Shown as Not publicly disclosed.'
-- 'Coverage figures conflict across vendor pages: PEP profiles 2.1M (client onboarding page), 2.6M+ (MCP release Sept 2025, Transaction Watcher release), 6M+ (homepage); adverse media 5,000+ (client onboarding), 50K+ (homepage, ABC page), 100,000+ (Sept 2026 release); regimes 200+ and 215+ (same sanctions page); watchlists 1,300+ and 3,500+; 236 sanction lists (client onboarding); countries 235+ (most pages), 325+ (journey page, 2023), 240 rows in the API supported-countries table (239 unique codes). Record uses 215+ regimes, 3,500+ watchlists and 15-minute updates from the sanctions page and avoids PEP and media totals except to show the conflict.'
-- 'Data provenance: "proprietary" and "built in-house" per the MCP release and the Sept 2026 release; no external data supplier named. Not independently verified.'
-- 'Pricing: pricing page text shows Basic, Premium, Enterprise with blank "Starting From" fields. The prices may be rendered by script and missed by the fetcher; re-check in a browser. G2 (vendor-provided): Basic from $95/month, Premium from $450/month, 100 searches each. Capterra: Basic from $95/month with 100 checks, up to 500. GetApp: from 95 per month, free trial and free version listed. Client onboarding landing page claims "as low as 1 cent per check" with no conditions; not used as a price.'
-- 'Free trial: pricing page "first five searches for free"; FAQ page banner "Try 10 searches for free"; client onboarding page offers a free proof of concept. Record states five and flags the ten in the FAQ.'
-- 'API: docs at doc.amlwatcher.com (Docusaurus). Base URL api.amlwatcher.com, bearer token, up to 5 API keys per user with 1 to 365 day expiry. Change log from v1.0 (13 Oct 2023) to 29 Apr 2026 (TruRisk webhook). No SDKs, sandbox or test keys documented. Pricing page rate limits: 1, 3 and up to 5 requests per second by plan.'
-- 'TruRisk: paid add-on (Dec 2025 release); release says "Final outcomes remain with compliance teams". Vendor figures conflict (up to 85% and up to 95% false-positive reduction, 90% less review time, 70 to 80% less manual work); none used.'
-- 'Transaction monitoring: Transaction Watcher release datelined 13 Oct 2025, published 5 Dec 2025; 150+ typologies and 10,000+ custom rules per vendor. Programmers Force lists Transaction Watcher as a separate product.'
-- 'Travel Rule: presented as AML Watcher''s own ("Our system handles the complex data exchange process"); no protocol (TRP, TRISA, IVMS101), network size or partner named. Not enough to add the travel-rule category.'
-- 'Aircraft screening (from the listing request): not found. The vessel screening page names OFAC, UN and EU lists and IMO checks only; no aircraft page in the site menus.'
-- 'On-premises: on-premise page describes datasets on the customer''s servers with automatic updates; no requirements or pricing. Saudi in-Kingdom hosting and private cloud per the Nov 2025 release; no cloud provider named.'
-- 'Crypto wallet screening: no chains, assets or data supplier named. Crypto category not added (the crypto list is for crypto KYC; AML Watcher has no identity verification product of its own).'
-- 'Chartis: the journey page says AML Watcher was recognised as a "Market Disruptor in the Chartis RiskTech100 rankings" in the 2024 section; the homepage shows a Chartis badge. The Risk.net RiskTech100 2024 page does not list vendors and Chartis pages found in search do not mention AML Watcher. Not confirmed; not stated in the record.'
-- 'Award: "Excellence in RegTech Solutions", Fintech Week Awards and Expo 2026, Singapore (16 to 17 Sept 2026), per AML Watcher''s release. Organiser page not opened; not stated in the record.'
-- 'Customers: homepage logos GMoney, Zerocap, Incode, JIF, BIDV, Saif Zone, Deloitte, Euro Exim Bank and Creem are not labelled by role; not used. Case studies: LaFinteca and BostonTrading. "10,000+ businesses" and "25% of global KYC volume" are vendor claims, not used. Partners: Optimiza (REDKEYS AML, MENA, Oct 2026), GAFA (CAML training, July 2026).'
-- 'User ratings: G2 4.7 from 12 reviews (no review text visible). Trustpilot TrustScore 4.3 from 8 reviews, all 5 stars, profile claimed Aug 2024, Trustpilot notes the company has not recently invited reviews. Capterra lists the product with 0 reviews; GetApp 0 reviews. Themes taken from visible Trustpilot reviews only.'
-- 'Support: FAQ says 24/7 by phone, text and email, response in 1 to 10 minutes; Capterra lists 24/7 live rep and chat. No SLA document found.'
-- 'Regulatory: no enforcement action, breach disclosure or litigation involving AML Watcher or Risk Watcher LLC found in searches to Oct 2026.'
+- 'Context: first review 2026-10-18 at AML Watcher''s request; link.type none (no commercial relationship recorded). Follow-up fact check 2026-10-22.'
+- 'Legal entity: terms (Version 4, effective 31 July 2026, re-read 2026-10-22) name Risk Watcher LLC, Delaware, dba AML Watcher, 8 The Green #16077, Dover, DE 19901; Trustpilot shows the same address. The ISO certificate names AML Watcher.com LLC at that address. Delaware registry still not checked (search form only; no OpenCorporates or news hit for Risk Watcher LLC). Open: confirm both entity names in the Delaware registry.'
+- 'ISO/IEC 27001 certificate AMER800493: the vendor-hosted PDF is still blocked to our fetcher by robots.txt (2026-10-22); contents as recorded on 2026-10-18. Americo''s register is a pop-up form (client name plus certificate number) we could not submit; no third-party listing found. IAF archive notice (https://iaf.nu/?p=6173): IAF stopped operating on 1 Jan 2026; accreditations issued under the IAF MLA before then stay valid for a transition period and signatories may join the Global Accreditation Cooperation MRA. UAF''s status under the new MRA not checked. Open: Americo register lookup and UAF status at the next re-check.'
+- 'SOC 2: still no claim on the homepage, FAQ or in search (2026-10-22). Homepage shows ISO/IEC 27001, a GDPR notice and a Data Privacy Framework mark; DPF list entry not looked up.'
+- 'Parent and group (re-checked 2026-10-22): team page heading "Shared Functional Teams • Parent Organisation" and "built and backed by Programmers Force"; about page "Born from" Programmers Force; Sept 2026 award release "backed by". programmersforce.com lists AML Watcher, Transaction Watcher, Media Watcher, Barie, Facia and The KYB, "ESTD 2016", 1000+ team. Ownership share and any registry link not confirmed. Shufti Pro: no page says it is a sister company; Shufti CEO Shahid Hanif says he co-founded Programmers Force before Shufti (https://pulse2.com/shufti-profile-shahid-hanif-interview/). Founder link only; not stated in the record.'
+- 'Founded: not stated by AML Watcher. About page timeline starts in 2021; journey page starts in 2019 (2022 heading vs "By 2023" text). Latka shows 2019 with no source (https://getlatka.com/companies/aml-watcher); not used. Shown as Not publicly disclosed.'
+- 'Leadership: Khurram Akhtar, Founder (full name in the 28 Sept 2026 award release; team and about pages show "Khurram A."). Oonagh van den Berg appointed Executive Director, Growth and Advisory, per the 17 Jul 2025 release, but she is not listed on the about or team page (2026-10-22); the record states only the appointment. About page now lists Raja Haris as Sales Growth Manager (earlier Head of Growth). No CEO named.'
+- 'Funding: none disclosed; no round found in search (2026-10-22); Latka lists funding as not published. Shown as Not publicly disclosed.'
+- 'Coverage figures still conflict across vendor pages (re-read 2026-10-22): PEP profiles 2.1M (client onboarding), 2.6M+ (MCP release Sept 2025, Transaction Watcher release), 6M+ (homepage, Travel Rule page); adverse media sources 5,000+ (client onboarding), 50K+ (homepage, FAQ, ABC page), 100,000+ (Sept 2026 award release), plus "100,000+ data sources" on several pages; regimes 200+ and 215+ (both on the sanctions page); watchlists 1,300+ (client onboarding, FAQ) and 3,500+; 236 sanction lists (client onboarding); countries 232+ (founder quote, team page), 235+ (most pages), 325+ (journey page), 240 rows in the API supported-countries table (VA used twice). Sanctions page says "updated every 15 minutes" in the hero and changes detected "in seconds" in the body. OFAC, UN, EU and UK HMT appear in the sanctions page meta description, not its visible body; the vessel page names OFAC, UN and EU. Record keeps 215+ regimes, 3,500+ watchlists and 15-minute updates.'
+- 'Data provenance: "proprietary" per the MCP release and "built in house" per the Sept 2026 award release; no external data supplier named. Not independently verified.'
+- 'Pricing page re-read 2026-10-22: Basic, Premium, Enterprise with "Starting From" and no figure; yearly toggle "Save 17%"; minimum 100 monitored entities; overage at the agreed per-unit rate; unused credits do not roll over. Prices may be rendered by script; still not checked in a real browser. G2 (vendor-provided, re-checked): Basic from $95 and Premium from $450, both "100 Search Per Month", Enterprise "Contact Us". Capterra (re-checked): from $95 flat rate per month, Basic 100 checks raisable to 500, no Premium price. GetApp not re-opened. Client onboarding page "as low as 1 cent per check" with no conditions; not used.'
+- 'Free trial conflict: pricing page "first five searches for free"; FAQ page and press release banners "Try 10 searches for free"; Capterra lists "Free trial: not available"; client onboarding page offers a free proof of concept. Record states five and flags the ten in the FAQ.'
+- 'API: change log re-checked 2026-10-22, v1.0 (13 Oct 2023) to 29 Apr 2026 (TruRisk webhook); no SDKs, sandbox or test keys documented (only a Test Webhook endpoint). The docs introduction page did not render for our fetcher; base URL and auth details as recorded on 2026-10-18.'
+- 'TruRisk: paid add-on per the 30 Dec 2025 release ("TruRisk is available as a paid add-on"; "Final outcomes remain with compliance teams"); the TruRisk page itself does not say it is paid. Release names date of birth and location; TruRisk page description names DOB, nationality and biometric context. Vendor performance figures conflict (up to 85% and up to 95% false-positive reduction, 90% less review time, 70 to 80% less manual work); none used.'
+- 'Transaction monitoring and capability check: Transaction Watcher release datelined 13 Oct 2025, published 5 Dec 2025; 150+ typologies and 10,000+ custom rules per vendor. The release says it is available "as part of AML Watcher''s platform", while the site menu and Programmers Force list Transaction Watcher as a separate product line, and the pricing page does not say which plans include it. Capability transaction_monitoring = add_on is plausible but separate pricing is not confirmed; editor to review. The case management page lists workflows, roles and audit trails but does not say which plans include it (capability yes, not changed).'
+- 'Travel Rule (re-checked 2026-10-22): presented as AML Watcher''s own ("Our system"); no protocol (TRP, TRISA, IVMS101), VASP network size or partner named. Not enough to add the travel-rule category.'
+- 'Aircraft screening (from the listing request): still not found. The vessel page names OFAC, UN and EU lists and goes "beyond standard IMO checks"; no aircraft page in the menus.'
+- 'On-premises (re-checked 2026-10-22): one-time installation with datasets on the customer''s servers and continuous updates; no requirements or pricing. Saudi in-Kingdom hosting, private cloud or on-premises per the 21 Nov 2025 release; no cloud provider named.'
+- 'Crypto wallet screening (re-checked 2026-10-22): no chains, assets or data supplier named. Crypto category not added (AML Watcher has no identity verification product of its own).'
+- 'Chartis: the journey page places a "Market Disruptor in the Chartis RiskTech100 rankings" in its 2024 section; the homepage and journey footer show "Chartis FCC Rankings 2025". Chartis''s AML Watcher organisation page (source 38) tags it on "Financial Crime and Compliance50 2025" (27 Feb 2025) and "FCC50 2025: Ranking and award winners" (19 Sep 2025); report bodies are paywalled, so placement or category is not confirmed. RiskTech100 2024 not confirmed. Record says only that Chartis tags it on FCC50 2025 pages.'
+- 'Award: "Excellence in RegTech Solutions", Fintech Week Awards and Expo 2026, Singapore (16 to 17 Sept 2026), per AML Watcher''s release published 28 Sept 2026; the release does not name the organiser. The event exists (Fintech Times preview), but no organiser winners list found. Not stated in the record.'
+- 'Customers: homepage and Travel Rule page logos GMoney, Zerocap, Incode, JIF, BIDV, Saif Zone, Deloitte, Euro Exim Bank and Creem are not labelled by role; not used. Case studies (re-checked): LaFinteca and BostonTrading only. "10,000+ businesses" and "25% of global KYC volume" are vendor claims, not used. Partners: Optimiza (REDKEYS and AMLConnect, MENA, release 11 Oct 2026), GAFA (CAML training, July 2026).'
+- 'User ratings (2026-10-22): G2 4.7 from 12 (no review text visible); Trustpilot TrustScore 4.3 from 8, all 5 stars, 4 in the last 12 months, claimed Aug 2024, "hasn''t invited customers recently"; Gartner Peer Insights 5.0 from 1 rating (added). Capterra 0 reviews and PeerSpot no reviews (not listed in user_ratings). Themes taken from visible Trustpilot reviews only.'
+- 'Support: FAQ says 24/7 by phone, text and email, response in 1 to 10 minutes; Capterra lists 24/7 live rep and chat; client onboarding page says "under 60 business minutes". No SLA document found.'
+- 'Regulatory: no enforcement action, breach disclosure, litigation, acquisition or rebrand involving AML Watcher or Risk Watcher LLC found in searches to 22 Oct 2026.'
 - 'Wikidata id not found; kg_mid unknown. LinkedIn pages blocked to the fetcher.'
 application_category: AML Software
 author: andrii-klymenko
