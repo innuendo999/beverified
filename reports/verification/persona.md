@@ -27,3 +27,26 @@
 
 ## Score flag
 - Pricing is now published for the entry plan (positive for transparency). Not a negative flag, but the score rubric's pricing criterion may merit a second look. Score unchanged.
+
+## Follow-up 2026-10-22
+
+### Changed
+- Regions fact: "Global" (no source) → "200+ countries and territories (Government ID)" (Persona Government ID page, source 12).
+- Startup Program: "one year of free services on select products" → one-year program with a monthly allotment of free services on select products, for eligible startups, SMBs and developers (source 1). Pricing summary, pricing item and FAQ updated. Essential from $250/month (12-month minimum), Growth and Enterprise quoted, billing per successful verification: re-confirmed unchanged (source 1).
+- Certification: Age Check Certification Scheme vendor_stated (source 2) → confirmed, ACCS 1:2020 Level 2 for Persona Selfie Age Estimation, validity to 12/11/2026 (ACCS registry, source 14).
+- Re-confirmed: FedRAMP Moderate, Persona for Government, certified 4/10/2026 (source 3); iBeta ISO/IEC 30107-3 Level 2, Persona Selfie Liveness 2.0, 16 Nov 2023 (source 6).
+- Co-founder Charles Yeh: now confirmed by Persona's own 2020 funding release on Business Wire (source 11), not only Wikipedia.
+- User ratings: added Gartner Peer Insights 4.5 from 73 ratings (source 13). G2 re-checked: 4.2 from 48 reviews (source 10), unchanged.
+- New sources 11 to 14 appended.
+
+### Removed / unverifiable
+- Nothing removed.
+- Still unresolved: Kantara (NIST SP 800-63) stays vendor_stated; Kantara Trust Status List does not render.
+- Pricing page meta description mentions a "free Starter plan" not shown among plans; not added.
+- Feb 2026 incidents (exposed code on a FedRAMP instance, Discord ending its trial) kept as an internal editorial-awareness note only.
+
+### Ranking cards
+- `identity-verification` and `age-verification` entries checked: tagline, pros, cons and `legacy_price_shown: From $250/mo` match the record. No corrections needed.
+
+### Score flag
+- None.

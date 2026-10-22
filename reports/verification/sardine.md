@@ -21,3 +21,22 @@
 
 ## Score flag
 - None. The wrong customer logos and the removed instant-settlement claim weaken the "unusual combination" argument slightly, but the product breadth is still confirmed.
+
+## Follow-up 2026-10-22
+
+### Changed
+- Founded fact: source 7 (Contrary Research, "Feb 2020") → source 9 (The Block, Sep 2022: Ranjan was at Revolut "before starting Sardine in early 2020"). Value stays 2020; evidence stays independent. Two independent sources now agree.
+- New source appended: 9 (The Block).
+- Re-checked, no change: G2 4.8 from 39 reviews (source 8); total funding $170M after the May 2026 extension (source 6; the About page also says $170 million); Feb 2025 release still says more than 300 enterprises and $145M raised before the extension (source 5); HQ San Francisco (sources 5, 7).
+- Resolved and removed from notes: Santander, Travelex and ClearBank removal; instant settlement and chargeback protection removal (both claims already gone); founding year; G2 4.9 vs 4.8 (merged into the review-themes note).
+- last_verified and updated → 2026-10-22.
+
+### Removed / unverifiable
+- Nothing removed from the page.
+- Still unresolved (kept in verification_notes): customer count (About page counter reads as 450+ but is split across elements, no dated source for a newer figure, so 300+ (Feb 2025) stays); SOC 2 (trust centre lists no framework, type or auditor and gates documents); review themes (not visible on G2; no Capterra or Gartner Peer Insights listing found).
+
+### Ranking cards
+- No entries with `slug: sardine` in `src/_data/rankings.yml`.
+
+### Score flag
+- None.

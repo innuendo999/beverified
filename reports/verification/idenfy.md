@@ -26,3 +26,30 @@
 
 ## Score flag
 - Possible: the headline pricing model (pay only for approved checks) is no longer the default and costs +$0.50 per check. Pricing became more transparent at the same time. Flag for editorial review; score unchanged.
+
+## Follow-up 2026-10-22
+
+### Changed
+- Pricing plans: "Basic / Premium $1.35 per verification, $135 minimum" → Basic $1.35 per verification, $135 monthly minimum; Premium $1.30 per verification, $325 monthly minimum (sources 8, 9). Summary, plans, items, facts, verdict, FAQ and seo.description updated.
+- Enterprise lowest stated rate: $0.50 → $0.55 per verification (source 8).
+- Approved-only billing +$0.50 per check: kept, re-cited to the ROI calculator (source 10); source 1 (/pricing/) now shows only a quote form.
+- AML add-on: +$0.45 → +$0.40 per verification (source 10, calculator estimate).
+- 24/7 manual review add-on: +$0.45 → +$0.35 to +$0.55 per verification, by plan (source 10). FAQ answer updated.
+- Free trial (14 days, 10 checks): re-cited to billing docs (source 9).
+- Certification "SOC (type not stated)" → SOC 2 Type II, 12-month audit period, vendor-stated (source 11). iBeta ISO 30107-3 re-cited from homepage to compliance docs (source 11); still vendor-stated.
+- Feature "Proxy detection, device and phone checks, and risk assessment" → "Proxy detection, phone validation and verification, address checks and risk assessment" (source 12). NFC (source 13) and transaction monitoring (source 14) now have sources.
+- User ratings: Trustpilot 4.2 / 31 → 4.1 / 29 (source 7); Capterra 4.7 / 10 added (source 15); G2 unchanged at 4.9 / 243 (source 6).
+- last_verified and updated → 2026-10-22.
+
+### Removed / unverifiable
+- "16,000+ government-issued documents" in what_is: homepage now says 3,500+ active documents, AI info page says 16,000+ document types. Number removed.
+- "device checks": not in iDenfy's fraud-prevention docs.
+- Resolved notes dropped: SOC type, former name and co-founder (already removed), "up to 70%" claim (already removed).
+- Still unresolved (in verification_notes): Lithuanian register not opened (aggregator scoris.lt shows a different Kaunas address); ISO 27001 certificate number conflict (CERT International ISMS-1851/A vs TUV Thuringen 1512120135 in iDenfy docs); no iBeta letter; add-on prices exist only as calculator estimates; a second pricing page variant shows Enterprise at $0.90 with a 6,000 per year minimum.
+
+### Ranking cards
+- `age-verification`, con "$135 monthly minimum on the self-serve plans" → "$135 monthly minimum on the Basic plan ($325 on Premium)" (source 9).
+- Other card text (approved-only +$0.50, 24/7 review add-on, legacy_price_shown $1.35/verification) still matches.
+
+### Score flag
+- None new. Pricing is still published; Premium and Enterprise figures changed slightly.

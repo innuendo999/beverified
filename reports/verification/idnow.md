@@ -23,3 +23,28 @@
 
 ## Score flag
 - None. Change of control (Corsair majority, 2025) and CEO change (2026), but the product line continues.
+
+## Follow-up 2026-10-22
+
+### Changed
+- Founded 2014: source Munich Startup (3) → IDnow press release on the Corsair investment, 6 Mar 2025 (8), evidence vendor.
+- Owner "Corsair Capital (majority, 2025)": source 3 → 8 (IDnow press release; Corsair minority investor since Oct 2019). No 2026 change of ownership found; CEO change to Philippe Morel (Jul 2026) already recorded.
+- HQ Munich: vendor homepage (1) → Bundestag Lobbyregister entry R005812, Auenstrasse 100, 80469 München, GmbH (12), evidence independent.
+- ARIADNEXT: announcement date corrected in notes from "July 2021" (YPOG release, 8 Jul 2021) to 30 June 2021, IDnow press release (9). Page text ("announced in 2021") unchanged.
+- Feature: "Automated document and biometric verification" → adds the product name AutoIdent, which IDnow's trust centre still uses (10).
+- PVID: name "PVID (ANSSI), substantial" → "PVID (ANSSI), substantial, IDCheck PVID", valid to Jul 2027; source 6 → 10. Still vendor_stated.
+- ISO/IEC 27001:2022 (scope: all four group entities), ISAE 3402 Type 2 (VideoIdent procedure, FY 2025), TISAX → TISAX AL3 (IDnow GmbH): source homepage badge file names (1) → trust centre entries (10). Still vendor_stated.
+- Added ETSI TS 119 461 (AutoIdent, VideoIdent, IdentityTM, IDCheck PVID), vendor_stated (10).
+- Added eIDAS QTSP, IDnow Trust Services AB, supervised by Sweden's PTS, vendor_stated (11).
+- User ratings: none → Gartner Peer Insights (IDnow Platform) 4.3 from 20 ratings (13); Capterra UK 5.0 from 1 review (14).
+- User reviews: added criticism theme from Gartner reviews (mobile SDK integration effort, transaction costs).
+- Pricing: re-checked, still not published; no reliable third-party price found.
+
+### Removed / unverifiable
+- Nothing removed. Still unconfirmed: ARIADNEXT closing date; certificate registers (ANSSI catalogue, LSTI, ENX TISAX, EU Trusted List) did not load or were not opened, so these certifications stay vendor_stated.
+
+### Ranking cards
+- No `rankings.yml` entry carries `slug: idnow`. Nothing to correct.
+
+### Score flag
+- None.

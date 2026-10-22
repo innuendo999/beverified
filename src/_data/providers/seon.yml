@@ -22,8 +22,8 @@ link:
   url: https://seon.io
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: 'SEON''s edge is signal, not documents: it scores fraud risk from email, phone, IP, device, and browser data before a user ever submits an ID. That makes it a strong pre-KYC layer and AML complement. SEON added its own document and liveness verification in January 2026, starting with Europe, but that product is new, and many teams will still pair SEON with an established IDV platform.'
 what_is:
 - SEON is a fraud-prevention and AML platform founded in 2017 in Budapest by Tamás Kádár and Bence Jendruszák, now headquartered in Austin, Texas, with offices in London, Budapest, Jakarta and Singapore. It says it protects more than 5,000 businesses and analyzes more than 1,100 first-party data signals to score fraud risk. The company reports having helped prevent more than $300 billion in fraud losses. In September 2025 it raised an $80 million Series C led by Sixth Street, and in January 2026 it launched identity verification with document, liveness and proof-of-address checks.
@@ -33,7 +33,7 @@ features:
 - AI-assisted rule builder that creates rules and filters from a plain-language description.
 - Explainable scoring that shows which signals drove the AI score.
 - AML screening and AML transaction monitoring alongside fraud prevention (Premium plan).
-- Identity verification with document checks, selfie liveness and proof of address (launched January 2026, Europe first).
+- Identity verification with document checks (including NFC chip reading), selfie liveness and proof of address (launched January 2026, Europe first).
 pricing:
   summary: SEON's Starter plan is $699 a month and includes 2,500 fraud checks, 10 user accounts and 50 custom rules; case management and AML compliance are not included. Premium, which adds AML, case management and unlimited API calls, is priced on request. Both plans offer a free trial; its length is not stated.
   plans:
@@ -150,12 +150,21 @@ certifications:
   what: Security controls report
   status: vendor_stated
   source: 7
+- name: ISO/IEC 27017
+  what: Cloud security controls
+  status: vendor_stated
+  source: 11
 user_ratings:
 - platform: G2
   rating: 4.6
   count: 394
   checked: '2026-10'
   url: https://www.g2.com/products/seon/reviews
+- platform: Capterra
+  rating: 4.9
+  count: 56
+  checked: '2026-10'
+  url: https://www.capterra.com/p/187389/SEON-Sense/
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
@@ -200,6 +209,14 @@ sources:
   publisher: G2
   url: https://www.g2.com/products/seon/reviews
   accessed: '2026-10'
+- title: SEON Trust Center
+  publisher: SEON
+  url: https://trust.seon.io/
+  accessed: '2026-10'
+- title: SEON reviews
+  publisher: Capterra
+  url: https://www.capterra.com/p/187389/SEON-Sense/
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -210,10 +227,10 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- ISO 27001 and SOC 2 Type 2 are vendor-stated. The 2020 announcement names Eurocert as the ISO 27001 auditor, but no certificate or register entry was opened; trust.seon.io loads dynamically and showed no content.
-- The IDV product page states no document-type or country counts and no iBeta or other PAD test; none were added.
+- ISO/IEC 27001, ISO/IEC 27017 and SOC 2 Type 2 are vendor-stated only. The Trust Center (trust.seon.io) lists them with no auditor, date or certificate number; the 2020 announcement names Eurocert as the ISO 27001 auditor, but no certificate or certification-body register entry was found.
+- The IDV product page and the January 2026 launch release state no document-type or country counts and no iBeta or other ISO/IEC 30107-3 test; none added. Regions beyond the Europe-first rollout are not stated.
 - alternatives[2] has slug 'aml' for Sardine (should be 'sardine'); not changed because alternatives is a do-not-change field.
-- User review themes not visible on G2; kept as general statements. The "document/biometric gap" theme was dropped because SEON now offers IDV.
+- G2 and Capterra review text not visible without login; user review themes kept as general statements, not counted themes.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
