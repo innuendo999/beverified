@@ -25,3 +25,24 @@
 
 ## Score flag
 - Possible, upward: pricing went from quote-only to published (free tier plus $1.50 per verification), and Level 3 iBeta PAD is now confirmed. Two of the three old cons no longer apply. Editor should review; score not changed.
+
+## Follow-up 2026-10-22
+
+### Changed
+- Pricing page re-checked (source 1): Free Forever $0, up to 10 verifications a month; Essentials from $1.50 per verification, up to 20,000; Enterprise on request. No trial, setup fee or minimum stated. Unchanged, except plan contents added: Free "Document verification and facial biometrics"; Essentials "Adds AML screening, KYB, address and age verification"; summary now notes transaction monitoring, VideoIdent and eIDV are listed under Enterprise.
+- Founded and HQ facts: source 8 (Companies House search) → source 10 (company page 11039567: active, incorporated 31 Oct 2017, registered office Coppergate House, London E1 7NF).
+- Certifications: added iBeta ISO/IEC 30107-3 PAD Level 2, letter dated 10 Apr 2025, confirmed (source 11). FAQ now mentions Levels 1 and 2.
+- FAQ: "does not publish the certificates or certification bodies" → "does not name the certification bodies... The one certificate it links, Cyber Essentials Plus, ran from February 2024 to February 2025" (source 13).
+- User ratings: added Capterra 4.2 from 45 reviews (source 12). G2 unchanged at 4.5 from 155 (source 9).
+- last_verified and updated → 2026-10-22.
+
+### Removed / unverifiable
+- Notes closed: 10,000+ document types (homepage now says "any government-issued document type", no count); old trial and third-party estimate (pricing page still states none); offices (About page lists the same eight); brand (About page uses "Shufti" throughout); Sumsub choose_instead and FAQ wording (checked against sumsub.com/pricing on 2026-10-22: Compliance plan includes AML screening and ongoing AML monitoring, 14-day trial with 50 checks).
+- Still unresolved: ISO 27001 body, SOC 2 CPA firm and PCI QSA not named (PCI page states v4.0); trust.shuftipro.com (Vanta) returns no content; current Cyber Essentials Plus certificate not found; HQ is the registered office only; homepage G2 4.6 and Trustpilot 4.8 claims (G2 page shows 4.5; Trustpilot not recorded).
+
+### Ranking cards
+- `age-verification` (Best step-up flows): matches shuftipro.com/age-verification (estimation, step-up to database or document, zero-knowledge credential, Ofcom draft codes, no email/mobile estimation, no per-country list). No change.
+- `south-africa` (Best for CIPC Business Checks): matches shuftipro.com/south-africa (12 document types incl. Smart ID card and green ID book, CIPC company/director/shareholding checks, FIC sanctions lists, AWS Cape Town region, no South African office). Price text matches the pricing page. No change.
+
+### Score flag
+- Minor, for the editor: the only certificate Shufti links (Cyber Essentials Plus) expired on 22 Feb 2025. Shufti still lists the scheme; check the IASME register before treating it as lapsed. Score not changed.

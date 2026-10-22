@@ -21,8 +21,8 @@ link:
   url: https://verifymy.io
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: 'VerifyMy is narrower than most providers in this batch by design: it focuses on age assurance and content moderation, with a method that estimates age from an email address alongside mobile, credit card, facial estimation and ID document checks. Its platform is certified to ISO/IEC 27566-1 by the Age Check Certification Scheme. That focus makes it a strong fit for platforms with age-gating obligations, though it is not a general-purpose KYC or AML platform.'
 what_is:
 - 'VerifyMy is a safety-technology company that launched with age assurance in 2019. Its UK entity, Verifymy Limited, was incorporated in England and Wales on 14 June 2019 as KYC AVC UK Ltd and took its current name in June 2024; the registered office is in London. Founder and CEO Ryan Shaw built the original product, VerifyMyAge, as an age-verification tool for businesses selling age-restricted products and services.'
@@ -83,7 +83,7 @@ pros:
 cons:
 - Narrow focus on age assurance and content moderation rather than full KYC or AML
 - No published pricing
-- Few public user reviews (none on G2, one on Trustpilot as of October 2026)
+- Few public user reviews (9 ratings on Gartner Peer Insights and none on G2 as of October 2026)
 alternatives:
 - slug: shufti-pro
   name: Shufti Pro
@@ -119,7 +119,7 @@ faq:
 - q: Does VerifyMy do full identity verification?
   a: Not as a KYC or AML platform. VerifyMy offers ID document and face match checks, but for age assurance and creator verification and consent rather than regulated KYC or AML screening.
 - q: Is VerifyMy certified?
-  a: Yes. The Age Check Certification Scheme register lists VerifyMy's age assurance platform as certified to ISO/IEC 27566-1:2025 and ACCS 1:2025 (valid to May 2029), and its face age estimation API to IEEE 2089.1-2024 (valid to September 2027). VerifyMy also states German KJM approval.
+  a: Yes. The Age Check Certification Scheme register lists VerifyMy's age assurance platform as certified to ISO/IEC 27566-1:2025 and ACCS 1:2025 (valid to May 2029), and its face age estimation API to IEEE 2089.1-2024 (valid to September 2027). VerifyMy also states that Germany's KJM approved its facial age estimation in 2022.
 - q: What is the best alternative to VerifyMy?
   a: Shufti Pro is the best alternative if you want age verification bundled into a broader IDV/AML platform. Onfido is the closest fit for general-purpose identity verification.
 - q: Who are VerifyMy's main competitors?
@@ -136,10 +136,15 @@ certifications:
   status: confirmed
   source: 4
 - name: KJM approval (Germany)
-  what: Youth media protection
+  what: Youth media protection, facial age estimation (2022, per VerifyMy)
   status: vendor_stated
-  source: 1
-user_ratings: []
+  source: 10
+user_ratings:
+- platform: Gartner Peer Insights
+  rating: 4.3
+  count: 9
+  checked: '2026-10'
+  url: https://www.gartner.com/reviews/product/verifymy
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
@@ -180,6 +185,14 @@ sources:
   publisher: Trustpilot
   url: https://www.trustpilot.com/review/verifymy.io
   accessed: '2026-10'
+- title: VerifyMy facial age estimation approved by German regulator (27 June 2022)
+  publisher: VerifyMy
+  url: https://verifymy.io/blog/verifymy-facial-age-estimation-approved-by-german-regulator
+  accessed: '2026-10'
+- title: Verifymy reviews (Age Assurance Software)
+  publisher: Gartner Peer Insights
+  url: https://www.gartner.com/reviews/product/verifymy
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -190,13 +203,10 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- KJM approval is vendor-stated; the KJM database pages could not be paged past page 1 in our fetch, so the listing was not found.
-- 35M+ users verified is a vendor figure with no date or method.
-- G2 shows no reviews; Trustpilot has one unprompted 1-star review on an unclaimed profile. No user_ratings added and user review themes removed.
-- Old feature "AI-driven age estimation from short video capture" corrected to facial age estimation; no video-specific method found.
-- Old con "smaller scale and funding than general-purpose IDV competitors" removed; funding not checked.
-- VerifyMy is not on the UK DIATF register (search returned 0 results); it never claimed to be.
-- ISO/IEC 27566-1 certificate valid to 20/05/2029 and IEEE 2089.1 certificate valid to 21/09/2027 per the ACCS register entry.
+- 'KJM approval is vendor-stated (VerifyMy blog, 27 Jun 2022, facial age estimation, source 10; homepage, source 1). The KJM AVS database only loads page 1 of 10 in our fetch and a site search found no VerifyMy entry, so the listing is not confirmed.'
+- '35M+ users verified is a vendor figure (homepage, Oct 2026) with no date or method.'
+- 'User ratings: Gartner Peer Insights 4.3 from 9 ratings; G2 shows no reviews; Trustpilot has one 1-star review (Dec 2025) on an unclaimed profile, not added. Review themes left empty because 9 ratings are too few to state themes.'
+- 'Funding not on the page: CB Insights lists USD 6.34M across 2 rounds (Sep 2023 angel, Jun 2022 grant); no primary source opened.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

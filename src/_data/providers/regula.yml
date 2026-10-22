@@ -22,8 +22,8 @@ link:
   url: https://www.regulaforensics.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: Regula is the deepest document-forensics option in identity verification, built for teams that need to catch sophisticated document fraud. Its 16,500-template library and self-hosted deployment options suit banks and border agencies with strict data-residency rules. It is still best known for SDKs and hardware readers, though since October 2025 it also sells an IDV Platform that adds AML and PEP screening, with cloud or on-premise deployment. Pricing is quoted rather than published, with a 30-day free trial of the Document Reader SDK.
 what_is:
 - Regula is a document-authentication and biometric-verification technology company founded in 1992, with offices in Daugavpils (Latvia), Reston (Virginia, USA), Warsaw, Düsseldorf, Naarden and Rio de Janeiro. Arif Mamedov is chief executive of Regula Forensics, Inc. Regula licenses a Document Reader SDK and Face SDK, plus proprietary hardware document readers and forensic devices, to banks, border-control agencies, forensic labs and fintechs; it says over 2,000 enterprises use its products. In October 2025 it launched an IDV Platform that combines document and biometric checks with AML and PEP screening, deployable in the cloud or on-premise.
@@ -70,16 +70,16 @@ facts:
   source: 3
   evidence: vendor
 - label: HQ
-  value: Daugavpils, Latvia (offices also in Reston, VA)
-  source: 3
-  evidence: vendor
+  value: Daugavpils, Latvia (registered office of SIA Regula Baltija)
+  source: 11
+  evidence: independent
 - label: Regions
   value: 254 countries/territories (document coverage)
   source: 2
   evidence: vendor
 - label: Recognition
-  value: Gartner Magic Quadrant for Identity Verification 2026
-  source: 1
+  value: Niche Player, Gartner Magic Quadrant for Identity Verification 2025 and 2026
+  source: 9
   evidence: vendor
 pros:
 - Largest document template library we track (16,500+ templates, 254 countries and territories)
@@ -150,7 +150,17 @@ certifications:
   what: Environmental management
   status: vendor_stated
   source: 4
-user_ratings: []
+user_ratings:
+- platform: G2
+  rating: 4.8
+  count: 41
+  checked: '2026-10'
+  url: https://www.g2.com/products/regula/reviews
+- platform: Gartner Peer Insights
+  rating: 4.8
+  count: 14
+  checked: '2026-10'
+  url: https://www.gartner.com/reviews/product/regula-document-reader-sdk
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
@@ -187,6 +197,26 @@ sources:
   publisher: Regula
   url: https://regulaforensics.com/es/blog/author/arif-a-mamedov/
   accessed: '2026-10'
+- title: Regula recognized in the 2026 Gartner Magic Quadrant for Identity Verification (30 July 2026)
+  publisher: Regula
+  url: https://regulaforensics.com/news/regula-recognized-in-the-2026-gartner-magic-quadrant-for-identity-verification/
+  accessed: '2026-10'
+- title: Regula recognized by Gartner in Magic Quadrant for Identity Verification (27 August 2025)
+  publisher: Regula
+  url: https://regulaforensics.com/news/regula-recognized-by-gartner-in-magic-quadrant-for-identity-verification/
+  accessed: '2026-10'
+- title: SIA Regula Baltija (41503036161)
+  publisher: Lursoft (Latvian Register of Enterprises data)
+  url: https://company.lursoft.lv/en/regula-baltija/41503036161
+  accessed: '2026-10'
+- title: Regula reviews
+  publisher: G2
+  url: https://www.g2.com/products/regula/reviews
+  accessed: '2026-10'
+- title: Regula Document Reader SDK reviews
+  publisher: Gartner Peer Insights
+  url: https://www.gartner.com/reviews/product/regula-document-reader-sdk
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -197,13 +227,11 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- HQ Daugavpils is inferred from the vendor office list (first listed); the about page does not name a headquarters. A directory (firmas.lv) lists Regula Baltija SIA at Daugavpils, but no official register page was opened.
-- Co-founder Ivan Shumsky not confirmed on any page opened; removed.
-- Gartner MQ recognition is 2026 per vendor homepage; the old 2025 claim was not confirmed and the Gartner page was not opened.
-- The 30+ languages claim was removed; the SDK page says 138+ languages and scripts for document text, which is a different measure.
-- ISO 27001 and ISO 9001 certificate details (dates, scope, body) not readable on the vendor page; no certification-body register opened.
-- Vendor homepage shows G2 4.9/5 but the G2 page could not be opened; user_ratings left empty.
-- Web search budget ran out during this check; Gartner MQ and founder details could not be searched further.
+- 'HQ: Lursoft register data (source 11) gives SIA Regula Baltija, reg. no. 41503036161, registered 17 Jun 2005, legal address Daugavpils. Regula does not name a group headquarters on its own pages, and the CEO is listed for the US entity Regula Forensics, Inc. The official Register of Enterprises page was not opened directly.'
+- 'ISO/IEC 27001:2022, ISO 9001:2015 and ISO 14001:2015: the vendor certificates page shows scopes but no certificate numbers, dates or body (Insight Assurance is named as assessor for the software ISMS). No certification-body register entry found; kept vendor_stated.'
+- 'Template count: SDK page says 16,500+ templates (Oct 2026); the vendor fact sheet of Oct 2025 says 15,500+. The current page figure is used.'
+- 'Customer count: about page says over 2,000 enterprises; the 2026 Gartner release says more than 2,000 organizations; the Oct 2025 fact sheet said more than 1,000 organizations and 80 border control authorities. Vendor figures only.'
+- 'Review themes are general statements; they were not matched against individual G2 or Gartner reviews.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

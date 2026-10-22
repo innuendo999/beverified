@@ -35,3 +35,25 @@ All Trulioo entries in `src/_data/rankings.yml` (8 cards):
 ## Score flag
 
 - None from the record. Note: several ranking cards rest on pay-as-you-go/budget pricing claims that are not supported; the "Best Budget Option" and "Best Pay-As-You-Go" awards may need review.
+
+## Follow-up 2026-10-22
+
+### Changed
+- Regions fact: source 2 (Mar 2026 release) → source 11 (Oct 15, 2026 release). Boilerplate still states 195 countries, 14,000+ ID documents, 700 million business entities, 6,000+ watchlists; no people or data-source count.
+- G2 pricing context: "G2 lists the pricing model as per transaction, with a free trial" → adds that G2's pricing data was last updated in January 2021 (pricing summary, FAQ, G2 pricing item; source 8).
+- User ratings: added Gartner Peer Insights 4.0 from 1 rating (source 12). G2 unchanged at 4.4 from 41 reviews (source 9).
+- CEO Vicky Bindra confirmed in the Oct 1, 2026 Fiserv release; no change.
+- Pricing page re-checked: still no prices, plans or trial (source 1). Vendr figures left as set on 2026-10-22.
+- last_verified and updated → 2026-10-22.
+
+### Removed / unverifiable
+- Notes on the removed "~$99/mo" and "5B+ people / 450+ data sources" claims: closed. Neither appears on the pricing page or in the Oct 2026 boilerplate.
+- iBeta note: closed. The iBeta PAD letter list (read back to Aug 2020) has no Trulioo entry, and Trulioo makes no iBeta claim, so nothing is listed.
+- Still unresolved (kept as notes): no funding after June 2021 found; ISO 27001 registrar and SOC 2 auditor not named, trust.trulioo.com blocks automated access; G2 review themes behind a login.
+
+### Ranking cards
+All 7 Trulioo cards re-read. Coverage (195 countries, 14,000+ ID types, 700M entities), Vancouver HQ and November 2025 credit decisioning still match Trulioo's pages. One suggested refinement:
+- `cheap-kyc` pro: "Per-transaction pricing model with a free trial, per its G2 listing" → "Per-transaction pricing model with a free trial, per its G2 listing (data last updated January 2021)".
+
+### Score flag
+- None.

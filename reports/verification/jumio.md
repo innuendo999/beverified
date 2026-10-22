@@ -31,3 +31,22 @@
 
 ## Score flag
 - None. Company operating, new permanent CEO (Apr 2026), product line unchanged.
+
+## Follow-up 2026-10-22
+
+### Changed
+- User ratings: G2 4.1 / 38 re-checked directly on g2.com (source 9, unchanged). Added Gartner Peer Insights 3.5 from 2 ratings for "Jumio Identity Verification" (source 10).
+- Re-checked, unchanged: 1B+ transactions and 5K+ ID types on the homepage (source 2); 5,000+ ID types across 200 countries and territories (source 3); ISO/IEC 27001:2022, SOC 2 Type 2 and PCI DSS on the Privacy Center page (source 4); iBeta Level 2 letter for Jumio Liveness SDK, 11 Sep 2025, still on iBeta's list (source 5).
+- `last_verified` and `updated` → 2026-10-22.
+
+### Removed / unverifiable
+- Founded 2010: still third-party only. Wikipedia (source 7) and CB Insights both say 2010; Jumio's homepage and About page do not state it. Kept with a note.
+- ISO 27001, SOC 2, PCI DSS: still vendor-stated. trust.jumio.com fails to load; no certificate or registry entry found (the Visa service provider registry could only be opened as a partial third-party copy, which was inconclusive). A Sep 2022 Jumio release names Moss Adams as SOC 2 auditor.
+- Capterra: 0 reviews, so no rating added.
+- Resolved notes dropped: old $0.90 to $2.30 price, old $233M funding figure, on-premise/24/7/KYX claims (all removed earlier, not reinstated), G2 count (re-read directly), ranking-card `legacy_price_shown` (rankings.yml now shows "Custom pricing" on all Jumio cards).
+
+### Ranking cards
+- No corrections needed. `e-kyc` and `identity-verification` cards match the record (1B+ transactions, 5,000+ ID types across 200 countries and territories, iBeta Level 2, Vendr median $55,850, custom pricing).
+
+### Score flag
+- None.

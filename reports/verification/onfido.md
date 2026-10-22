@@ -32,3 +32,27 @@
 
 ## Score flag
 - Brand retired: Onfido is now marketed as Entrust Identity Verification and onfido.com redirects. Product continues, so this is a naming change rather than a retirement. Newest iBeta letter (Jul 2026) is Level 1 only. Flag for editorial review; score unchanged.
+
+## Follow-up 2026-10-22
+
+### Changed
+- Founders: none shown → co-founders Eamon Jubbawy, Ruhul Amin and Husayn Kassai, started as an Oxford startup, added to `what_is` (Oxford University Innovation, source 16). Founded 2012 (Entrust, source 5) and Onfido Ltd incorporated 29 Dec 2010 (Companies House, source 7; re-opened, company 07479524, active, 9 Devonshire Square, London) both kept.
+- Certifications: none beyond iBeta → added UK DVSTF certification for "Entrust IDV" (Onfido Ltd), Identity role, M1A and H2B profiles, Kantara, issued 20 Mar 2026, expires 20 Mar 2029, `confirmed` (GOV.UK DVS register, source 15).
+- Certifications: "No ISO 27001 or SOC 2 statement found" → ISO/IEC 27001:2022 and SOC 2 Type II, `vendor_stated` (Entrust Remote IDV Practice Statement v1.5, Dec 2025, source 13).
+- Certifications: added ETSI TS 119 461 and ETSI EN 319 401, and NIST SP 800-63-3 IAL2, `vendor_stated` (Entrust IDV compliance page, source 14).
+- User ratings: G2 4.4 / 157 re-checked directly (source 9, unchanged). Added Capterra 4.5 / 31 (source 17) and Gartner Peer Insights 4.3 / 47, identity verification market (source 18).
+- Re-checked, unchanged: 2,500+ document types across 195 countries (sources 2, 3), watchlist screening with 24-hour re-screening (source 4), Smart Capture SDK, Workflow Studio, Microsoft Entra and Okta integrations (source 1), no published pricing (source 1). Pricing block left as updated earlier today.
+- `last_verified` and `updated` → 2026-10-22.
+
+### Removed / unverifiable
+- Office list (New York, Albuquerque, Lisbon, Singapore): still not confirmed; stays omitted.
+- AWS Marketplace listing: still blocked (robots); stays omitted.
+- Motion iBeta Level 2: Entrust's practice statement claims Level 1 and Level 2 for Facial Similarity Motion, but iBeta's public list shows only Level 1 for Motion v2.0 (27 Jul 2026). Not added.
+- Resolved notes dropped: founded 2012 vs incorporated 2010 (both shown), Atlas AI engine (removed earlier), G2 rating (re-read directly).
+
+### Ranking cards
+- No corrections needed. Cards (`canada`, `e-kyc`, `identity-verification`, `india`, `liveness-detection`) match the record: 2,500+ document types across 195 countries, iBeta Level 2 (2022) and Motion v2.0 Level 1, sales-only pricing, watchlist screening as a separate product, mixed support reviews (consistent with Capterra review themes).
+- Optional: the `canada` or `identity-verification` card could mention the UK DVSTF certification (source 15) if editors want it; not required.
+
+### Score flag
+- None. New finding is positive (UK DVSTF certification, confirmed on the GOV.UK register); no lapse or retirement found.

@@ -22,20 +22,20 @@ link:
   url: https://veridas.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: Veridas built its name on its own biometrics, facial and voice recognition that it says ranked near the top of NIST testing, instead of reselling third-party models. Founded in 2017 as a joint venture with BBVA, it is strongest in Spain, Latin America and Europe, and its liveness detection has passed iBeta ISO 30107-3 testing. In July 2026 it agreed to merge with Amsterdam-based Fourthline; the deal was expected to close in the second half of 2026.
 what_is:
-- Veridas is an identity-verification and biometrics company founded in 2017 and headquartered in Pamplona, Navarra, Spain, created as a joint venture between BBVA and das-Nano. Led by CEO Eduardo Azanza, it develops its own facial and voice biometric technology alongside document verification, and says it serves more than 350 clients in 25 countries across banking, insurance, telecoms and public administration. In July 2026 Veridas agreed to merge with Fourthline, with BBVA and other Veridas shareholders staying on as shareholders of the combined company; closing was expected in the second half of 2026, subject to regulatory approvals.
+- Veridas is an identity-verification and biometrics company founded in 2017 and headquartered in Tajonar, near Pamplona, in Navarra, Spain, created as a joint venture between BBVA and das-Nano. Led by CEO Eduardo Azanza, it develops its own facial and voice biometric technology alongside document verification, and says it serves more than 350 clients in 25 countries across banking, insurance, telecoms and public administration. In July 2026 Veridas agreed to merge with Fourthline, with BBVA and other Veridas shareholders staying on as shareholders of the combined company; closing was expected in the second half of 2026, subject to regulatory approvals.
 features:
 - AI-powered document verification and facial biometrics for identity checks.
 - Voice authentication for IVR, contact-center and chatbot identity checks.
 - Duplication Defense to detect synthetic and duplicate identities.
 - Passive liveness detection tested by iBeta to ISO/IEC 30107-3 Level 1 and Level 2.
 - Nexus Identity Wallet for issuing and managing verified digital identities.
-- Vendor-stated ISO/IEC 27001, ISO 9001, SOC 2 Type II and SOC 3.
+- eIDAS identity-proofing certificate (ETSI TS 119 461) issued by DEKRA in 2026, plus vendor-stated ISO/IEC 27001 and Spain's National Security Scheme (ENS) certification.
 pricing:
-  summary: Pricing is not published; Veridas quotes on request.
+  summary: Pricing is not published on the Veridas site; Veridas quotes on request. An AWS Marketplace listing for the Veridas ID Verification Platform shows USD 1.37 per identity verification on a 12-month contract.
   plans:
   - tier: Custom Quote
     price: Custom
@@ -49,18 +49,24 @@ pricing:
     kind: official
     source: 3
     verified: '2026-10'
+  - label: AWS Marketplace listing
+    value: USD 1.37 per identity verification, 12-month contract (Veridas ID Verification Platform)
+    kind: third_party
+    source: 17
+    verified: '2026-10'
 facts:
 - label: From
-  value: Not publicly disclosed
-  source: null
+  value: USD 1.37 per verification (AWS Marketplace, 12-month contract)
+  source: 17
+  evidence: vendor
 - label: Founded
   value: '2017'
   source: 4
   evidence: independent
 - label: HQ
-  value: Pamplona, Navarra, Spain
-  source: 1
-  evidence: vendor
+  value: Tajonar, near Pamplona, Navarra, Spain
+  source: 13
+  evidence: independent
 - label: Regions
   value: 25 countries
   source: 5
@@ -105,18 +111,18 @@ user_reviews:
   - 'Banking pedigree: clients note confidence from BBVA''s backing and use of the platform.'
   criticize:
   - 'Regional concentration: support and case studies are stronger in Europe and LatAm than elsewhere.'
-  - 'Pricing opacity: no published rate card, so you need a sales conversation.'
+  - 'Pricing opacity: no rate card on its own site, so most buyers need a sales conversation.'
   by_profile:
   - Banks and financial institutions in Spain and Latin America are Veridas' strongest customer base.
   - Gambling operators use its checks for player onboarding and age verification.
   - Global enterprises outside its core regions sometimes evaluate larger-scale competitors first.
 faq:
 - q: How much does Veridas cost?
-  a: Veridas does not publish pricing; it quotes on request.
+  a: Veridas does not publish pricing on its own site and quotes on request. Its AWS Marketplace listing for the Veridas ID Verification Platform shows USD 1.37 per identity verification on a 12-month contract.
 - q: What makes Veridas different from other IDV providers?
   a: Veridas builds its own facial and voice biometric technology in-house rather than reselling third-party recognition models. It says its face engine ranked fourth in NIST's FRVT 1:N test in 2023, and its liveness detection has passed iBeta ISO 30107-3 Level 1 and Level 2 testing.
 - q: Who owns Veridas?
-  a: Veridas was founded in 2017 as a joint venture between BBVA and das-Nano. In July 2026 it agreed to merge with Fourthline; Veridas shareholders, including BBVA, are to remain shareholders of the combined company. Closing was expected in the second half of 2026.
+  a: Veridas was founded in 2017 as a joint venture between BBVA and das-Nano. In April 2023 it announced a EUR 15 million capital increase from its existing partners. In July 2026 it agreed to merge with Fourthline; Veridas shareholders, including BBVA, are to remain shareholders of the combined company. Closing was expected in the second half of 2026.
 - q: Does Veridas support voice authentication?
   a: Yes. Voice biometrics is one of Veridas' core technologies, used in IVR, contact centers and chatbots, and its Voice Shield product passed iBeta Level 1 presentation attack testing in December 2024.
 - q: What is the best alternative to Veridas?
@@ -138,19 +144,36 @@ certifications:
   what: Voice liveness, Voice Shield (Dec 2024)
   status: confirmed
   source: 8
+- name: eIDAS conformity (EN 319 401, ETSI TS 119 461)
+  what: Identity proofing, hybrid manual and automated (DEKRA, 2026)
+  status: confirmed
+  source: 13
 - name: ISO/IEC 27001
   what: Information security
   status: vendor_stated
-  source: 2
+  source: 14
+- name: ENS (Esquema Nacional de Seguridad)
+  what: Spanish national security scheme, identity verification service
+  status: vendor_stated
+  source: 15
+- name: SOC 3
+  what: Security controls report, period 1 Jan to 31 Dec 2023
+  status: vendor_stated
+  source: 16
 - name: SOC 2 Type II
   what: Security controls attestation
-  status: vendor_stated
-  source: 2
+  status: not_found
+  source: null
 - name: NIST FRVT 1:N (2023)
   what: Face recognition benchmark, 4th place per Veridas
   status: vendor_stated
   source: 9
-user_ratings: []
+user_ratings:
+- platform: Gartner Peer Insights
+  rating: 5.0
+  count: 2
+  checked: '2026-10'
+  url: https://www.gartner.com/reviews/product/identity-verification-platform
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
@@ -191,6 +214,42 @@ sources:
   publisher: Business Wire (Veridas release)
   url: https://www.businesswire.com/news/home/20230418005373/en/Veridas-Facial-Biometrics-Among-The-Four-Best-in-the-World-According-to-NIST
   accessed: '2026-10'
+- title: News
+  publisher: Fourthline
+  url: https://www.fourthline.com/news
+  accessed: '2026-10'
+- title: Veridas anuncia una ampliación de capital de 15 millones de euros para impulsar su expansión mundial como empresa de identidad
+  publisher: BBVA
+  url: https://www.bbva.com/es/innovacion/veridas-anuncia-ampliacion-de-capital-de-15-millones-de-euros-para-impulsar-su-expansion-mundial-como-empresa-de-identidad/
+  accessed: '2026-10'
+- title: Veridas named a Visionary in the 2025 Gartner Magic Quadrant for Identity Verification
+  publisher: Business Wire (Veridas release)
+  url: https://www.businesswire.com/news/home/20250827708899/en/Veridas-Named-a-Visionary-in-the-2025-Gartner-Magic-Quadrant-for-Identity-Verification
+  accessed: '2026-10'
+- title: eIDAS conformity certificate, Veridas Digital Authentication Solutions SL (EN 319 401, ETSI TS 119 461)
+  publisher: DEKRA Testing and Certification
+  url: https://veridas.com/docs/Veridas_ETSI.pdf
+  accessed: '2026-10'
+- title: Legal compliance (VeriSaaS documentation)
+  publisher: Veridas
+  url: https://docs.veridas.com/verisaas/cloud/v1.0/legal-compliance/
+  accessed: '2026-10'
+- title: National Security Scheme certification
+  publisher: Veridas
+  url: https://veridas.com/en/national-security-scheme-certification/
+  accessed: '2026-10'
+- title: SOC 3 report, digital identity verification service (2023)
+  publisher: Veridas
+  url: https://veridas.com/wp-content/uploads/2024/04/VERIDAS-INFORME_SOC3.pdf
+  accessed: '2026-10'
+- title: Veridas ID Verification Platform
+  publisher: AWS Marketplace
+  url: https://aws.amazon.com/marketplace/pp/prodview-54k54irwq5h34
+  accessed: '2026-10'
+- title: Identity Verification Platform (Veridas) reviews
+  publisher: Gartner Peer Insights
+  url: https://www.gartner.com/reviews/product/identity-verification-platform
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -201,14 +260,15 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- 'Fourthline merger agreed (announced 29 Jun / 16 Jul 2026), expected to close in H2 2026 subject to regulatory approvals. No completion notice found as of 18 Oct 2026. Re-check after closing; name or brand may change. Consistent with the fourthline record.'
-- 'das-Nano as co-founder/shareholder: only in 2020 sources (source 4); 2026 releases name only BBVA. Current das-Nano stake not confirmed.'
-- '"EUR 15 million rights issue in 2023": a EUR 15M capital increase is reported (capital-riesgo.es headline; Techleap lists Sep 2024, existing investors) but no primary source with date was opened; removed from FAQ.'
-- 'HQ: old record said Tajonar; vendor about page says Pamplona HQ. No street address opened.'
-- 'NIST: the Business Wire release (Apr 2023) says 4th in FRVT 1:N; a Veridas blog page says 2nd among ~250 algorithms. NIST results page not opened, so vendor_stated. Old feature line said liveness was NIST-tested; liveness is iBeta-tested.'
-- 'Gartner Visionary 2025 inferred from the 2026 release ("second consecutive year").'
-- 'Pricing URL veridas.com/en/pricing/ returned a contact page with no prices.'
-- 'No G2 or Capterra rating page found; themes kept as general statements without counts.'
+- 'Fourthline merger agreed (announced 29 Jun / 16 Jul 2026), expected to close in H2 2026 subject to regulatory approvals. No completion notice on the Fourthline newsroom (source 10) as of 22 Oct 2026. Re-check after closing; name or brand may change. Keep consistent with the fourthline record.'
+- 'das-Nano as co-founder/shareholder: confirmed only in 2020 sources (source 4 and a BBVA release of 12 Nov 2020). 2026 releases name only BBVA. A Veridas-hosted ISO 27001 certificate (Bureau Veritas, expired 17 Mar 2024) is filed as "Grupo das-Nano", but the current das-Nano stake is not confirmed.'
+- 'NIST: the Business Wire release (Apr 2023) says 4th in FRVT 1:N; the NIST FRTE 1:N page (updated Oct 2026) was opened but the ranking tables did not load in our fetch, so vendor_stated.'
+- 'ISO/IEC 27001: the only certificate copy found (Bureau Veritas ES118275-003-3, ISO/IEC 27001:2013) expired 17 Mar 2024; vendor docs still state ISO 27001 certification. No current certificate or register entry found.'
+- 'SOC 2 Type II: no vendor statement found on 22 Oct 2026 (homepage, about page, docs, ENS page); marked not_found. A SOC 3 report for calendar 2023 is hosted by Veridas but does not name the auditor. ISO 9001 not found either; dropped from features.'
+- 'ACCS register lists a UK DIATF certificate (Level 2, "certification validity 20/12/2024") and an ACCS 1:2020 age estimation certificate (validity 12/09/2025) for Veridas. Veridas is not on the gov.uk DVS register as of 22 Oct 2026 (all 66 entries checked). Not added as certifications; current status unclear.'
+- 'eIDAS certificate date printed as 07/08/2026 (Spanish date format, so likely 7 Aug 2026); valid two years from issue.'
+- 'Pricing page veridas.com/en/pricing/ could not be fetched on 22 Oct 2026; the AWS Marketplace price is a public list price and may differ from direct quotes.'
+- 'No G2 page found; Capterra lists Veridas with 0 reviews. Review themes kept as general statements without counts.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
