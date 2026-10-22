@@ -23,3 +23,31 @@
 ## Score flag
 
 - None. Company active. Minor: credit scoring is not on the current homepage (product page is undated); worth confirming it is still sold, since the tagline leans on it.
+
+## Follow-up 2026-10-22
+
+### Changed
+
+- Certification "ISO/IEC 30107-3 PAD Level 2 (iBeta)": vendor_stated (Oct 2024, source 4) → confirmed, "iBeta letter, Sep 2024" (iBeta confirmation letter for Advance Intelligence Liveness Detection, Android v3.1.6.5 and iOS v3.1.5/v3.1.6, tested 7 Aug to 16 Sep 2024, letter dated 16 Sep 2024, source 6; iBeta list, source 7). iBeta also lists Level 1 letters (Advance AI, Apr 2022; Advance Intelligence, Jul 2024).
+- Owner fact "Advance Intelligence Group": source 1 → 8 (the group's own site lists ADVANCE.AI as a business unit with Atome Financial and Ginee; the group still uses the name Advance Intelligence Group, shortened to "Advance"; no "ADVANCE Group" rebrand found).
+- Investors in what_is cross-checked: Bloomberg (May 2023, source 9) reports the $80M round led by Warburg Pincus and Northstar and a 2021 Series D led by SoftBank Vision Fund II. EDBI remains vendor-only.
+- Pricing unchanged: no prices; usage-based, QPS prepayment and license-period billing; free sign-up (source 3).
+- Leadership seen on the about page (not added as a fact): Dong Shou, Chairman; Dennis Martin, CEO. The group site describes Dennis Martin as joining ADVANCE.AI as Credit Reporting CEO.
+- verification_notes: 6 → 6 (device-intelligence note removed as resolved; iBeta note replaced by the ISO 27001 note; new ownership note).
+- last_verified and updated → 2026-10-22.
+
+### Removed / unverifiable
+
+- Nothing removed from the page.
+- Founding date: still vendor-only; no official ACRA record opened.
+- ISO/IEC 27001:2013 (Feb 2020): still vendor_stated; the Security & Compliance page lists no certificates.
+- Credit scoring: still absent from the homepage menu; product page undated.
+- User ratings: G2 has no rating (AI Consulting Services listing); Capterra and Gartner Peer Insights did not load.
+
+### Ranking cards
+
+- Advance.AI has no entry in `src/_data/rankings.yml` (no `slug: advance-ai`). Nothing to correct.
+
+### Score flag
+
+- None. The iBeta Level 2 result is now independently confirmed, which supports rather than lowers the score.

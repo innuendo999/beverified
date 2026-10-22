@@ -26,3 +26,32 @@
 
 ## Score flag
 - None. The removed pricing was unsourced, and the product is unchanged.
+
+## Follow-up 2026-10-22
+
+### Changed
+
+- what_is: added "In July 2024 the Reserve Bank of India selected Signzy's unassisted video-KYC solution for the test phase of the fifth cohort of its regulatory sandbox" (RBI press release 2024-2025/780, 26 Jul 2024, source 10).
+- user_ratings: none → G2 4.4 from 11 reviews (seller page, single product "Signzy", source 11) and Capterra 5.0 from 2 reviews (Capterra NZ, vendor Signzy Technologies, source 12).
+- Pricing: unchanged. Still quote-only; the Signzy vs Veriff page (dated 21 Jan 2026, source 9) still describes pay-as-you-go, modular pricing, and the homepage has no pricing link. signzy.com/pricing returned an error.
+- Funding: unchanged at more than $37 million (Inc42, 21 Feb 2024, source 7, re-opened). No new round found in reputable press since the 2022 Series B.
+- Leadership and offices re-confirmed on the about page (source 1): Ankit Ratan (co-founder, CEO), Arpit Ratan (co-founder, CBO), Ankur Pandey (co-founder, CTO); six offices incl. Bengaluru HQ, New York, Warrenville IL, Dubai (DIFC).
+- Certifications: still vendor_stated. Added Signzy docs page (source 13), which cites ISO/IEC 27001:2013 (page updated Feb 2024); no certificate or register entry found.
+- verification_notes: 7 old notes → 7 current ones (resolved history notes on GSTIN/MCA, Azure, "IIT-trained", rupee prices and SAP removed; new notes on G2 badge mismatch, PowerEdge, RBI outcome).
+- last_verified and updated → 2026-10-22.
+
+### Removed / unverifiable
+
+- Nothing removed from the page.
+- Not used: reported acquisition of PowerEdge Analytics (Nov 2025), found only on a startup database; tracker funding totals (CB Insights $38.35M, Lapaas $38M).
+- Homepage "G2 4.7/5" badge does not match G2's current 4.4 (11 reviews).
+- Customer count still differs: about page 1,800+ vs homepage 500+.
+- RBI sandbox outcome for Signzy not found.
+
+### Ranking cards
+
+- `india` (award "Best India-Specific Registry Depth"): nothing is clearly wrong. Optional: con "Depth is concentrated in India; US and Middle East coverage is newer" uses "newer" without a source, and the homepage now also lists checks for Mexico, Canada, Brazil and Kenya. Suggested: "Depth is concentrated in India; it also lists US and Middle East stacks".
+
+### Score flag
+
+- None.

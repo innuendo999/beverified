@@ -22,8 +22,8 @@ link:
   url: https://www.advance.ai
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: Advance.AI focuses on emerging-market identity verification, KYC/KYB, AML and credit scoring, with its strongest footprint in Southeast Asia. It was founded in Singapore in 2016 and is part of Singapore-headquartered Advance Intelligence Group. It does not publish coverage figures, customer counts or prices, so buyers outside its core markets should confirm country support before committing.
 what_is:
 - Advance.AI was founded in Singapore in August 2016 and is part of Singapore-headquartered Advance Intelligence Group, whose backers include SoftBank Vision Fund 2, Warburg Pincus, Northstar and EDBI. It launched in Singapore, China, Indonesia, India, Vietnam and the Philippines and later expanded into Mexico and Nigeria. Its AdvanGuard suite covers identity and document verification, face authentication with liveness detection and know-your-business checks, alongside AML, compliance and credit-scoring products for lenders.
@@ -74,7 +74,7 @@ facts:
   evidence: vendor
 - label: Owner
   value: Advance Intelligence Group
-  source: 1
+  source: 8
   evidence: vendor
 - label: Markets
   value: Singapore, China, Indonesia, India, Vietnam, Philippines; later Mexico and Nigeria
@@ -134,9 +134,9 @@ certifications:
   status: vendor_stated
   source: 1
 - name: ISO/IEC 30107-3 PAD Level 2 (iBeta)
-  what: Liveness, presentation attack detection (Oct 2024)
-  status: vendor_stated
-  source: 4
+  what: Liveness, presentation attack detection (iBeta letter, Sep 2024)
+  status: confirmed
+  source: 6
 user_ratings: []
 use_case_verdicts: []
 score_breakdown: []
@@ -162,6 +162,22 @@ sources:
   publisher: ADVANCE.AI
   url: https://www.advance.ai/en/index/pageview/catid/53.html
   accessed: '2026-10'
+- title: Advance Intelligence ISO 30107-3 PAD Level 2 confirmation letter
+  publisher: iBeta Quality Assurance
+  url: https://www.ibeta.com/wp-content/uploads/2024/09/240916-Advance-Intelligence-PAD-Level-2-Confirmation-Letter.pdf
+  accessed: '2026-10'
+- title: ISO 30107-3 presentation attack detection confirmation letters
+  publisher: iBeta Quality Assurance
+  url: https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/
+  accessed: '2026-10'
+- title: Advance Intelligence Group homepage
+  publisher: Advance Intelligence Group
+  url: https://www.advancegroup.com/
+  accessed: '2026-10'
+- title: Warburg-Backed Advance Intelligence Raises $80 Million Funding
+  publisher: Bloomberg
+  url: https://www.bloomberg.com/news/articles/2023-05-03/warburg-backed-advance-intelligence-raises-80-million-funding
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -172,12 +188,12 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- 'Founding year (Aug 2016, Singapore) and group HQ are from the vendor about page only; no registry entry opened.'
-- 'Homepage headline statistics render as "0" placeholders, so no coverage or customer figures are used. The credit-scoring page says "trusted by over 500 enterprises" but is undated; not used as a fact.'
-- 'Credit scoring is not on the current homepage; the Facial Multi-loan Score page is undated. Kept as a product but re-check whether it is still sold.'
-- '"Device intelligence" feature not found on current vendor pages. Removed.'
-- 'Homepage shows ISO/IEC 27001, a privacy information management certificate, a BSI certificate and iBeta Level 1 and 2 badges as images; no certificate or iBeta letter opened (Advance.AI not listed on the iBeta page checked).'
-- 'G2 lists Advance.AI under AI Consulting Services with no visible rating or review count; no user ratings recorded and the unverified review themes were removed.'
+- 'Founding (Aug 2016, Singapore) is from the vendor about page only. No official ACRA record opened; a third-party registry mirror could not be tied to the ADVANCE.AI brand. Fintech News Singapore (May 2023) dates the parent group to 2016.'
+- 'Parent is still named Advance Intelligence Group on its own site (it shortens to "Advance"; no rebrand to "ADVANCE Group" found). Group site lists ADVANCE.AI, Atome Financial and Ginee. Investors in what_is match Bloomberg (May 2023: Warburg Pincus, Northstar; 2021 Series D led by SoftBank Vision Fund 2); EDBI is from the vendor page only.'
+- 'No coverage, customer or check figures used: homepage statistics still render as "0" placeholders, and the undated credit-scoring page says "trusted by over 500 enterprises".'
+- 'Credit scoring is not in the homepage product menu; the Facial Multi-loan Score page still loads but is undated and has no demo link. Confirm it is still sold, since a pro and the tagline rely on it.'
+- 'ISO/IEC 27001:2013 (Feb 2020, Indonesia) is vendor-stated (about page timeline, homepage badge images). The Security & Compliance page lists no certificates; no certificate or register entry found, so current status is unknown.'
+- 'No user ratings: G2 lists Advance.AI only under AI Consulting Services with no rating; Capterra and Gartner Peer Insights pages did not load.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
