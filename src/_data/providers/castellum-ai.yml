@@ -4,7 +4,7 @@ alternate_names: []
 status: published
 seo:
   title: 'Castellum.AI Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'Castellum.AI review: in-house risk data with 1,000+ watchlists refreshed every 5 minutes, built by an ex-OFAC sanctions expert. Features, pricing, pros & cons, alternatives.'
+  description: 'Castellum.AI review: in-house risk data with watchlists refreshed every 5 minutes, built by an ex-OFAC sanctions expert. Features, pricing, pros & cons, alternatives.'
   h1: 'Castellum.AI Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/castellum-ai.jpg
@@ -22,20 +22,21 @@ link:
   url: https://www.castellum.ai
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: Castellum.AI runs its own sanctions and risk database, with 1,000+ watchlists updated every 5 minutes, instead of reselling third-party data. Founder Peter Piatetsky previously worked at the US Treasury, including OFAC. The company says its AI agents instantly resolve 83% of L1 and L2 alerts and cut false positives by 94%, with an AI governance layer for audit and oversight.
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
+verdict: Castellum.AI runs its own sanctions and risk database, with watchlists updated every 5 minutes, instead of reselling third-party data. Founder Peter Piatetsky previously worked at the US Treasury, including OFAC. The company says its AI agents instantly resolve 83% of L1 and L2 alerts and cut false positives by 94%, with an AI governance layer for audit and oversight.
 what_is:
-- Castellum.AI is a financial-crimes compliance platform based in New York that combines in-house risk data, AML/KYC screening and AI agents. CEO and co-founder Peter Piatetsky worked at OFAC and other US Treasury offices and later ran US compliance for a major Asian bank. The company raised a $4M seed round led by Spider Capital in 2023 and an $8.5M Series A led by Curql in 2025. It says its data draws on 200,000+ sources, with 1,000+ sanctions and PEP watchlists updated every 5 minutes.
+- Castellum.AI is a financial-crimes compliance platform based in New York that combines in-house risk data, AML/KYC screening and AI agents. CEO and co-founder Peter Piatetsky worked at OFAC and other US Treasury offices and later ran US compliance for a major Asian bank. The company raised a $4M seed round led by Spider Capital in 2023 and an $8.5M Series A led by Curql in 2025. It says its data draws on 200,000+ sources and that its watchlists are updated every 5 minutes. Its sanctions and PEPs product page counts 1,700+ watchlists, while the homepage still says 1,000+.
 features:
-- Sanctions, PEP and AI-powered adverse-media screening.
+- Sanctions, PEP, export control, forced labor and law enforcement list screening, plus AI-powered adverse-media screening.
 - KYC/KYB onboarding, real-time monitoring, transaction screening and lookbacks.
 - Beneficial ownership and shelf company data.
 - 'Arbiter AI agents for alert resolution: the vendor says 83% of L1 and L2 alerts are resolved instantly.'
 - The vendor reports 94% fewer false positives (company-reported figure).
 - AI Governance Center for oversight and audit of agent decisions.
+- Investigations workspace that exports results, audit trail and findings to a PDF or white-labelled report.
 pricing:
-  summary: Pricing is not published; Castellum.AI quotes on request. The pricing page describes an online platform, a compliance API and bulk data delivery, and links to a money-back guarantee.
+  summary: Pricing is not published; Castellum.AI quotes on request. The pricing page describes an online platform, a compliance API and bulk data delivery, and links to a money-back guarantee. Castellum.AI says it will reduce a customer's false positives or refund them, measured with before and after test files and written into the contract.
   plans:
   - tier: Custom Quote
     price: Custom
@@ -54,6 +55,11 @@ pricing:
     kind: official
     source: 3
     verified: '2026-10'
+  - label: Money-back guarantee
+    value: Fewer false positives or money back; terms added to the contract, no time limit published
+    kind: official
+    source: 11
+    verified: '2026-10'
 facts:
 - label: From
   value: Not publicly disclosed
@@ -66,8 +72,12 @@ facts:
   value: New York, NY
   source: 4
   evidence: vendor
-- label: Data
-  value: 1,000+ watchlists updated every 5 minutes; 200,000+ sources
+- label: Watchlists
+  value: 1,700+ per the sanctions and PEPs page (homepage says 1,000+), updated every 5 minutes
+  source: 10
+  evidence: vendor
+- label: Data sources
+  value: 200,000+
   source: 1
   evidence: vendor
 - label: Funding
@@ -111,7 +121,7 @@ faq:
 - q: How much does Castellum.AI cost?
   a: Castellum.AI does not publish pricing. It quotes on request for its platform, API and bulk data options.
 - q: How often is Castellum.AI's data updated?
-  a: Castellum.AI says its 1,000+ sanctions and PEP watchlists are updated every 5 minutes.
+  a: Castellum.AI says it updates its global watchlists and sanctions database every 5 minutes. Its sanctions and PEPs page counts 1,700+ watchlists, while the homepage says 1,000+.
 - q: Who founded Castellum.AI?
   a: Castellum.AI was co-founded by CEO Peter Piatetsky, who previously worked at OFAC and other offices of the US Treasury. Third-party data gives 2019 as the founding year.
 - q: What does Castellum.AI's agentic AI do?
@@ -197,6 +207,18 @@ sources:
   publisher: Castellum.AI
   url: https://support.castellum.ai/hc/en-us/articles/32906410850580-Will-we-get-a-notice-if-the-screened-party-generates-an-alert
   accessed: '2026-10'
+- title: Sanctions & PEPs Screening
+  publisher: Castellum.AI
+  url: https://www.castellum.ai/products/sanctions-and-peps-screening
+  accessed: '2026-10'
+- title: Castellum.AI money-back guarantee
+  publisher: Castellum.AI
+  url: https://www.castellum.ai/castellumai-money-back-guarantee
+  accessed: '2026-10'
+- title: Investigations
+  publisher: Castellum.AI
+  url: https://www.castellum.ai/investigations
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -208,16 +230,13 @@ legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
 - 'Founded 2019 comes only from CB Insights (third-party aggregator, no evidence label). Vendor pages give no founding year; the seed post says the beta launched in March 2022.'
-- 'CTO "Julian Vasilkoski" not confirmed: the about page lists Lee Roggenkamp as CTO and Marissa Venuto as COO, and does not name a second co-founder. Removed.'
-- '"Roughly 26 employees" not found. Removed. Funding "~$12.6M" replaced with the two press-released rounds ($4M + $8.5M); CB Insights shows $12.65M total.'
-- 'Investor "NewFund" is named in the 2023 seed release; Series A led by Curql with BTech Consortium and Framework Venture Partners.'
-- 'List names "OFAC, UN, UK HMT, EU" not checked list by list; dropped from prose. Vendor wording is "1,000+ watchlists", not "1,000+ sanctions lists".'
-- 'Features "forced-labor and supply-chain risk screening", "PDF investigation reports" and "Perpetual KYC" not found on current vendor pages. Removed.'
-- 'G2 shows no reviews for Castellum.AI, so the old "frequently cited" review themes had no visible basis. Praise and criticism themes removed; by_profile reworded to customer types named in the Series A release.'
-- 'SOC 2 Type 2 is a homepage badge only; no report opened.'
-- 'Pricing page mentions a money-back guarantee; its terms were not read.'
-- '2026-10-22 capabilities pass: the sanctions and PEPs product page now says 1,700+ global watchlists, while the homepage and this record say 1,000+. Not changed.'
-- '2026-10-22 capabilities pass: the Transaction Monitoring Agent page does not say whether it runs its own detection or works on alerts from an existing monitoring system. Case management is offered through sales per a support article; no product page found.'
+- 'Watchlist count: on 2026-10-22 the sanctions and PEPs page (source 10) says 1,700+ watchlists and the homepage (source 1) says 1,000+. Record states both with their page; drop the homepage figure once the vendor aligns its pages.'
+- 'Supply-chain risk screening and perpetual KYC still not found on current vendor pages (checked 2026-10-22); not restored. Forced labor lists (source 10) and PDF report export (source 12) are confirmed and were added back to features.'
+- 'User ratings: G2 product page (g2.com/products/castellum-ai/reviews) says "hasn''t been reviewed yet" on 2026-10-22; no Capterra listing found. user_ratings left empty.'
+- 'SOC 2 Type 2: the homepage has a "SOC 2 compliant" heading and a badge whose image file is named "SOC2 T2"; no report, auditor or trust centre found. Kept as vendor_stated.'
+- 'Money-back guarantee page gives no time limit, refund amount or claims procedure; it says terms are added to the contract.'
+- 'Homepage also says "95% of alerts resolved using AI" alongside "instantly resolve 83% of L1 and L2 alerts"; record keeps the 83% figure, which matches the Arbiter wording.'
+- '2026-10-22 capabilities pass: the Transaction Monitoring Agent page does not say whether it runs its own detection or works on alerts from an existing monitoring system (rechecked in follow-up, still unclear). Case management is offered through sales per a support article; no product page found.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
