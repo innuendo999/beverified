@@ -22,3 +22,26 @@
 
 ## Score flag
 - None.
+
+## Follow-up 2026-10-22
+
+### Changed
+- UK DIATF (ReadID): "UK digital identity trust framework" (source 7, register entry without roles or dates) → "UK digital identity trust framework (Kantara, valid to Jun 2029)" (source 13). Kantara certificate DIATF-KIUK-26-111 for Signicat B.V, service ReadID, roles Component Service Provider and Orchestration Service Provider, Gamma (0.4), issued 29 Jun 2026, expires 29 Jun 2029. Status stays confirmed.
+- ENS High (Spain): vendor_stated (source 5) → confirmed, "Spanish National Security Framework (AENOR, valid to Mar 2028)" (source 14). AENOR certificate ENS-2022/0010, Signicat SLU, category Alta, issued 5 Mar 2026, valid to 5 Mar 2028.
+- SOC 2: what "Security controls report" → "Security controls report (Type 2 stated for 2019)" (source 5). Status stays vendor_stated.
+- User ratings: added Capterra 4.0 from 1 review (source 15). G2 re-checked: still 4.4 from 8 reviews (source 12).
+- New sources appended: 13 (Kantara DIATF certificate), 14 (AENOR ENS certificate), 15 (Capterra).
+- Resolved and removed from notes: ISO 27001 (confirmed from the DNV certificate PDF, no open question); Idfy and Kantega removals (claims already gone); customer count (About and homepage both say more than 21,000 companies); "240 identity methods" (the homepage pairs it with "240+ data sources", so the About page's 35+ eID methods and digital wallets stays).
+- last_verified and updated → 2026-10-22.
+
+### Removed / unverifiable
+- Nothing removed from the page.
+- Still unresolved (kept in verification_notes): EU QTSP status (trusted-list browser is dynamic; nkom.no and Spanish ministry TSL files blocked automated access; BSI directory entry ETS 055 unreadable); SOC 2 currency (only 2018/2019 reports cited); Cyber Essentials Plus (no certificate or IASME entry opened).
+- Gartner Peer Insights not recorded: the vendor page shows 4.7 in a ratings overview but 0 all-time reviews in the header.
+- Pricing: page re-read, unchanged (no prices; setup, subscription and transaction fees; free sandbox account). No new third-party source, so the 2026-10-22 search was not repeated.
+
+### Ranking cards
+- No entries with `slug: signicat` in `src/_data/rankings.yml`.
+
+### Score flag
+- None.

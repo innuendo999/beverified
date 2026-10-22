@@ -22,8 +22,8 @@ link:
   url: https://www.sardine.ai
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: Sardine scores fraud risk from device intelligence and behavior biometrics before a transaction completes, then extends into onboarding, transaction monitoring, sanctions screening and case management. Having fraud and AML compliance in one platform is still unusual. Backed by a16z, Visa and Experian, with customers such as FIS, GoDaddy and Intuit, it's built for financial institutions and larger platforms rather than small self-serve teams.
 what_is:
 - Sardine is a fraud-prevention and AML compliance platform founded in 2020 and based in San Francisco, led by co-founder and CEO Soups Ranjan. It combines device intelligence and behavior-biometric fraud scoring with KYC/KYB onboarding, transaction monitoring, sanctions screening and case management. In February 2025 it said more than 300 enterprises rely on it; named customers include FIS, GoDaddy and Intuit. A May 2026 Series C extension led by National Bank of Canada took total funding to $170 million.
@@ -59,7 +59,7 @@ facts:
   source: null
 - label: Founded
   value: '2020'
-  source: 7
+  source: 9
   evidence: independent
 - label: HQ
   value: San Francisco, CA
@@ -171,6 +171,10 @@ sources:
   publisher: G2
   url: https://www.g2.com/products/sardine/reviews
   accessed: '2026-10'
+- title: Visa and ConsenSys back fraud detection platform Sardine's $52 million raise
+  publisher: The Block
+  url: https://www.theblock.co/post/171156/terms-service
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -181,13 +185,9 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- Santander, Travelex and ClearBank were removed as Sardine customers. Contrary Research names them as customers of ThetaRay, a competitor; no Sardine source names them.
-- Instant settlement and chargeback protection were removed; neither appears on Sardine's current product pages (ACH only appears as a rail covered by Bank Transactions).
-- Founding year 2020 comes from Contrary Research (February 2020); Sardine's own pages do not state it.
-- Customer count is the 300+ figure from the February 2025 release. The About page shows an animated figure that appears to read 450+, which could not be read as one string.
-- SOC 2 is vendor-stated; the trust centre at security.sardine.ai gates the report behind a request.
-- The Sardine homepage claims 4.9 on G2; the G2 page itself showed 4.8 from 39 reviews, which is what we record.
-- User review themes not visible on G2; kept as general statements without frequency claims.
+- Customer count stays at the 300+ enterprises from the February 2025 release. The About page now shows an animated "Enterprise customers" counter that reads as 450+ but is split across page elements, and no dated Sardine release or news report with a newer count was found on 2026-10-22.
+- SOC 2 is vendor-stated; the security page links to a trust centre (security.sardine.ai) that lists no frameworks, report type or auditor and gates documents behind a request.
+- User review themes are not visible on G2 (4.8 from 39 reviews; the Sardine homepage shows 4.9), and no Capterra or Gartner Peer Insights listing was found. Themes stay as general statements without frequency claims.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
