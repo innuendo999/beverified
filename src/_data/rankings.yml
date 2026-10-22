@@ -42,7 +42,7 @@ aml/banks:
     coverage: Global
     size: null
     pros:
-    - Secures $9T in payments a year, by its own figures, for customers such as Mastercard, Fiserv and CaixaBank
+    - Processes $9T in payments a year, by its own figures, for customers such as Mastercard, Fiserv and CaixaBank
     - Real-time AI fraud detection built for very high transaction volumes
     - Fraud, identity and AML in one RiskOps platform
     cons:
@@ -77,7 +77,7 @@ aml/banks:
     size: null
     pros:
     - AI agents that carry investigation work forward rather than only summarizing alerts; one customer case study (Nexo) cites a 93% cut in false positives
-    - Used by 200+ customers including Chime, Green Dot, and Sallie Mae
+    - Used by 180+ customers, per Unit21, including Chime, Green Dot, and Sallie Mae
     - Covers RTP, FedNow, ACH, card and crypto payments in one platform
     cons:
     - No published rate card
@@ -182,7 +182,7 @@ aml:
     size: null
     pros:
     - AI agents that carry investigation work forward rather than only summarizing alerts; one customer case study (Nexo) cites a 93% cut in false positives
-    - Used by 200+ customers including Chime, Green Dot, and Sallie Mae
+    - Used by 180+ customers, per Unit21, including Chime, Green Dot, and Sallie Mae
     - Covers RTP, FedNow, ACH, card and crypto payments in one platform
     cons:
     - No published rate card
@@ -288,7 +288,7 @@ aml:
     - Local fit for South African FICA compliance, with named clients such as Standard Bank and SnapScan
     cons:
     - Smaller, younger company than established category players
-    - Disclosed a September 2026 cyber incident affecting systems that hold customer data; forensic review ongoing at disclosure
+    - Disclosed a September 2026 cyber incident affecting systems that hold customer data; forensic review still ongoing at the latest update found (22 Sep 2026)
     - No published pricing
     legacy_price_shown: Custom pricing
     legacy_rating_shown: null
@@ -1553,7 +1553,7 @@ south-africa:
     - KYC, KYB, transaction monitoring, case management and goAML reporting in one platform
     - Named clients include Standard Bank and SnapScan
     cons:
-    - Disclosed a September 2026 cyber incident affecting systems that hold customer data; forensic review ongoing at disclosure
+    - Disclosed a September 2026 cyber incident affecting systems that hold customer data; forensic review still ongoing at the latest update found (22 Sep 2026)
     - No published pricing
     - Smaller, younger company than established category players
     legacy_price_shown: Custom pricing
