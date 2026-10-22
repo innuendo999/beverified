@@ -32,10 +32,26 @@ Fields prefixed `legacy_` hold what the old pages showed. They are kept for refe
 | score_breakdown[] | `{criterion, weight, score, evidence}` | empty |
 | use_case_verdicts[] | `{use_case, verdict, reason, evidence, source}` | empty |
 | certifications[] | `{name, status: confirmed \| vendor_stated \| not_found, url}` | empty |
-| segments[], capabilities{} | for "best for" blocks and the capability matrix | empty |
+| segments[], capabilities{} | for "best for" blocks and the capability matrix (see below) | empty |
 | hands_on | hands-on test block (later) | empty |
 | sources[] | `{title, publisher, url, accessed}` | empty |
 | entity.wikidata, entity.kg_mid, entity.same_as[] | Knowledge Graph ids | empty |
+
+### `capabilities{}` (AML capability matrix, added 2026-10-22)
+
+Each key is `{status, note, source}`; `source` = number in this record's `sources[]`; `note` = a few plain words, no numbers without the source.
+
+| key | status values |
+|---|---|
+| sanctions_pep | yes \| add_on \| no \| not_disclosed |
+| adverse_media | yes \| add_on \| no \| not_disclosed |
+| transaction_monitoring | yes \| add_on \| no \| not_disclosed |
+| case_management | yes \| add_on \| no \| not_disclosed |
+| identity_verification | yes \| add_on \| no \| not_disclosed |
+| deployment | cloud \| on_prem \| cloud_and_on_prem \| not_disclosed |
+| published_pricing | yes \| partial \| no |
+
+Plus `checked: '2026-10'`. `yes` = in the core product per the vendor's current pages; `add_on` = separate module, plan tier or partner; `no` = the vendor says it does not, or the product clearly does not; `not_disclosed` = nothing found. `partial` pricing = some plans or per-check prices published, others quoted.
 
 ## `src/_data/rankings.yml`
 

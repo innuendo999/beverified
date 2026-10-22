@@ -127,7 +127,36 @@ faq:
 - q: Who are NICE Actimize's main competitors?
   a: NICE Actimize competes with Quantexa, Feedzai, and ComplyAdvantage, differentiating through the breadth of its end-to-end financial-crime suite.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  sanctions_pep:
+    status: 'yes'
+    note: WL-X screening
+    source: 9
+  adverse_media:
+    status: 'yes'
+    note: Adverse media lists in WL-X
+    source: 9
+  transaction_monitoring:
+    status: 'yes'
+    note: SAM, rules plus ML
+    source: 16
+  case_management:
+    status: 'yes'
+    note: ActOne
+    source: 17
+  identity_verification:
+    status: add_on
+    note: Via X-Sight Marketplace partners
+    source: 18
+  deployment:
+    status: cloud_and_on_prem
+    note: Cloud, with migration of on-prem installs
+    source: 19
+  published_pricing:
+    status: 'no'
+    note: Quote on request
+    source: 1
 certifications: []
 user_ratings: []
 use_case_verdicts: []
@@ -193,6 +222,22 @@ sources:
 - title: NICE earnings call puts reported Actimize sale update in context (15 May 2026)
   publisher: A-Team Insight
   url: https://a-teaminsight.com/blog/nice-earnings-call-puts-reported-actimize-sale-update-in-context/?brand=rti
+  accessed: '2026-10'
+- title: Transaction monitoring software (SAM)
+  publisher: NICE Actimize
+  url: https://www.niceactimize.com/anti-money-laundering/suspicious-activity-monitoring
+  accessed: '2026-10'
+- title: Investigation and case management (ActOne)
+  publisher: NICE Actimize
+  url: https://www.niceactimize.com/enterprise-risk-case-management
+  accessed: '2026-10'
+- title: X-Sight platform and Marketplace
+  publisher: NICE Actimize
+  url: https://www.niceactimize.com/xsight
+  accessed: '2026-10'
+- title: Cloud services
+  publisher: NICE Actimize
+  url: https://www.niceactimize.com/services/professional-services/cloud-services
   accessed: '2026-10'
 entity:
   wikidata: null

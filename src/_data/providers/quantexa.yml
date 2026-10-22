@@ -119,7 +119,34 @@ faq:
 - q: Who are Quantexa's main competitors?
   a: Quantexa competes with NICE Actimize, Feedzai, and Napier, differentiating through its entity-resolution and graph-analytics foundation.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  sanctions_pep:
+    status: not_disclosed
+    note: Lists used as input data, no screening product found
+    source: 10
+  adverse_media:
+    status: not_disclosed
+    note: Used as input data, no screening product found
+    source: 10
+  transaction_monitoring:
+    status: 'yes'
+    note: Contextual monitoring
+    source: 7
+  case_management:
+    status: 'yes'
+    note: Case manager in Cloud AML
+    source: 8
+  identity_verification:
+    status: not_disclosed
+  deployment:
+    status: cloud_and_on_prem
+    note: Hybrid, cloud or on-prem
+    source: 9
+  published_pricing:
+    status: 'no'
+    note: Quote on request
+    source: 2
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security
@@ -181,6 +208,22 @@ sources:
 - title: Quantexa reviews
   publisher: G2
   url: https://www.g2.com/products/quantexa/reviews
+  accessed: '2026-10'
+- title: Anti-money laundering solutions
+  publisher: Quantexa
+  url: https://www.quantexa.com/solutions/aml/
+  accessed: '2026-10'
+- title: Quantexa Cloud AML
+  publisher: Quantexa
+  url: https://www.quantexa.com/solutions/cloud-aml/
+  accessed: '2026-10'
+- title: Decision Intelligence Platform
+  publisher: Quantexa
+  url: https://www.quantexa.com/platform/
+  accessed: '2026-10'
+- title: Financial crime detection solutions
+  publisher: Quantexa
+  url: https://www.quantexa.com/solutions/financial-crime/
   accessed: '2026-10'
 entity:
   wikidata: null

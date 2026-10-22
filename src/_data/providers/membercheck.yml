@@ -120,7 +120,36 @@ faq:
 - q: Who are MemberCheck's main competitors?
   a: MemberCheck competes with SmartSearch and Sanction Scanner, and shares ownership with sister product NameScan.
 segments: []
-capabilities: {}
+capabilities:
+  sanctions_pep:
+    status: 'yes'
+    note: match scoring and audit trail
+    source: 1
+  adverse_media:
+    status: 'yes'
+    note: negative-news screening
+    source: 1
+  transaction_monitoring:
+    status: add_on
+    note: separate platform from screening app
+    source: 8
+  case_management:
+    status: add_on
+    note: in the transaction monitoring platform
+    source: 8
+  identity_verification:
+    status: 'yes'
+    note: document, selfie and liveness
+    source: 9
+  deployment:
+    status: cloud
+    note: AWS and Google cloud services
+    source: 4
+  published_pricing:
+    status: 'no'
+    note: quote by annual scan volume
+    source: 3
+  checked: '2026-10'
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security
@@ -168,6 +197,14 @@ sources:
   publisher: G2
   url: https://www.g2.com/products/membercheck/reviews
   accessed: '2026-10'
+- title: Transaction monitoring
+  publisher: MemberCheck
+  url: https://membercheck.com/transaction-monitoring/
+  accessed: '2026-10'
+- title: ID verification
+  publisher: MemberCheck
+  url: https://membercheck.com/id-verification/
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -187,6 +224,8 @@ verification_notes:
 - 'Face match and liveness: homepage says "biometric checks" only; wording changed.'
 - 'ISO 27001:2022 and ISO 27701:2019 are vendor-stated; no certificate or certification body register found.'
 - 'User ratings: G2 has a single review dated July 2019; themes removed. The Capterra MemberCheck URL tried resolved to an unrelated product.'
+- '2026-10-22 capabilities pass: the ID verification page now describes a live selfie matched to the document photo and liveness detection (source 9). The earlier note that only "biometric checks" were stated, and the con "Screening-focused rather than a full IDV/lifecycle platform", may understate the product; review.'
+- '2026-10-22 capabilities pass: transaction monitoring runs on its own platform with separate credentials from the screening app, with case statuses and alert assignment there (source 8). The feature line lists it alongside ongoing monitoring without that distinction.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

@@ -125,7 +125,36 @@ faq:
 - q: Who are Feedzai's main competitors?
   a: Feedzai competes with SEON and ComplyAdvantage on the fraud/AML side, differentiating through its scale and focus on real-time payment fraud for the largest financial institutions.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  sanctions_pep:
+    status: 'yes'
+    note: Watchlist Screening
+    source: 8
+  adverse_media:
+    status: 'yes'
+    note: In Watchlist Screening
+    source: 8
+  transaction_monitoring:
+    status: 'yes'
+    note: Rules plus ML alert scoring
+    source: 9
+  case_management:
+    status: 'yes'
+    note: Feedzai Case Manager
+    source: 9
+  identity_verification:
+    status: add_on
+    note: Via Feedzai Orchestration
+    source: 10
+  deployment:
+    status: cloud
+    note: Feedzai as a Service, no on-prem found
+    source: 11
+  published_pricing:
+    status: 'no'
+    note: Quote on request
+    source: 2
 certifications: []
 user_ratings: []
 use_case_verdicts: []
@@ -159,6 +188,22 @@ sources:
 - title: Portuguese unicorn Feedzai buys Australian company Demyst for 100 million dollars
   publisher: ECO News
   url: https://econews.pt/2025/04/23/portuguese-unicorn-feedzai-buys-australian-company-demyst-for-100-million-dollars/
+  accessed: '2026-10'
+- title: Watchlist screening
+  publisher: Feedzai
+  url: https://www.feedzai.com/solutions/watchlist-screening/
+  accessed: '2026-10'
+- title: AML transaction monitoring
+  publisher: Feedzai
+  url: https://www.feedzai.com/solutions/aml-transaction-monitoring/
+  accessed: '2026-10'
+- title: Feedzai Orchestration
+  publisher: Feedzai
+  url: https://www.feedzai.com/solutions/feedzai-orchestration/
+  accessed: '2026-10'
+- title: Feedzai as a Service (solution sheet)
+  publisher: Feedzai
+  url: https://www.feedzai.com/resource/feedzai-as-a-service/
   accessed: '2026-10'
 entity:
   wikidata: null

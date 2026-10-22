@@ -124,7 +124,36 @@ faq:
 - q: Who are Strise's main competitors?
   a: Strise competes with Unit21, KYC Hub, and ComplyAdvantage, differentiating through its AML automation and Nordic corporate-data focus.
 segments: []
-capabilities: {}
+capabilities:
+  sanctions_pep:
+    status: 'yes'
+    note: Dow Jones lists, AI alert triage
+    source: 6
+  adverse_media:
+    status: 'yes'
+    note: scored by date, severity, topic
+    source: 6
+  transaction_monitoring:
+    status: 'no'
+    note: not offered; syncs with your TMS
+    source: 6
+  case_management:
+    status: not_disclosed
+    note: results go to your case system
+    source: 6
+  identity_verification:
+    status: 'yes'
+    note: document and liveness checks
+    source: 7
+  deployment:
+    status: cloud
+    note: runs on Google Cloud, per Strise
+    source: 8
+  published_pricing:
+    status: 'no'
+    note: usage-based custom proposal
+    source: 1
+  checked: '2026-10'
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security
@@ -163,6 +192,18 @@ sources:
 - title: Strise reviews
   publisher: G2
   url: https://www.g2.com/products/strise/reviews
+  accessed: '2026-10'
+- title: Screening and alert triage
+  publisher: Strise
+  url: https://strise.ai/product/screening-and-alert-triage
+  accessed: '2026-10'
+- title: ID verification
+  publisher: Strise
+  url: https://strise.ai/product/id-verification
+  accessed: '2026-10'
+- title: How Strise uses gen AI and Vertex AI to accelerate AML compliance
+  publisher: Google Cloud
+  url: https://cloud.google.com/blog/products/ai-machine-learning/how-strise-uses-gen-ai-and-vertex-ai-to-accelerate-aml-compliance
   accessed: '2026-10'
 entity:
   wikidata: null

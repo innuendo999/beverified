@@ -127,7 +127,36 @@ faq:
 - q: Who are Napier AI's main competitors?
   a: Napier AI competes with ComplyAdvantage and Unit21, differentiating through its sandbox-testing approach and multilingual name-matching engine.
 segments: []
-capabilities: {}
+capabilities:
+  sanctions_pep:
+    status: 'yes'
+    note: real-time and batch screening
+    source: 6
+  adverse_media:
+    status: 'yes'
+    note: in client screening
+    source: 6
+  transaction_monitoring:
+    status: 'yes'
+    note: inbuilt AML typologies
+    source: 1
+  case_management:
+    status: 'yes'
+    note: built in or your own system
+    source: 6
+  identity_verification:
+    status: 'no'
+    note: not in product list
+    source: 1
+  deployment:
+    status: cloud_and_on_prem
+    note: SaaS, private cloud or on-premise
+    source: 6
+  published_pricing:
+    status: 'no'
+    note: subscription, quote on request
+    source: 1
+  checked: '2026-10'
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security
