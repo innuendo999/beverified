@@ -127,7 +127,36 @@ faq:
 - q: Who are Hawk's main competitors?
   a: Hawk competes with Feedzai, ComplyAdvantage, and NICE Actimize, differentiating through explainable AI across AML, screening and fraud.
 segments: []
-capabilities: {}
+capabilities:
+  sanctions_pep:
+    status: 'yes'
+    note: customer and payment screening
+    source: 2
+  adverse_media:
+    status: 'yes'
+    note: in customer screening
+    source: 2
+  transaction_monitoring:
+    status: 'yes'
+    note: optional explainable AI
+    source: 2
+  case_management:
+    status: 'yes'
+    note: unified case manager
+    source: 2
+  identity_verification:
+    status: 'no'
+    note: not in product list
+    source: 2
+  deployment:
+    status: cloud
+    note: SaaS or private cloud
+    source: 2
+  published_pricing:
+    status: 'no'
+    note: quote on request
+    source: 2
+  checked: '2026-10'
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security

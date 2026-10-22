@@ -119,7 +119,36 @@ faq:
 - q: Who are Unit21's main competitors?
   a: Unit21 competes with ComplyAdvantage, Feedzai, and Napier, differentiating through AI agents that carry out investigation work.
 segments: []
-capabilities: {}
+capabilities:
+  sanctions_pep:
+    status: 'yes'
+    note: OFAC, PEP and sanctions lists
+    source: 1
+  adverse_media:
+    status: 'yes'
+    note: in watchlist screening
+    source: 1
+  transaction_monitoring:
+    status: 'yes'
+    note: configurable rules
+    source: 1
+  case_management:
+    status: 'yes'
+    note: AI agents assist investigations
+    source: 1
+  identity_verification:
+    status: add_on
+    note: via your chosen KYC provider
+    source: 6
+  deployment:
+    status: not_disclosed
+    note: not stated on vendor pages
+    source: null
+  published_pricing:
+    status: 'no'
+    note: no prices on site
+    source: 1
+  checked: '2026-10'
 certifications:
 - name: SOC 2 Type I and Type II
   what: Security, availability, confidentiality (Armanino)
@@ -154,6 +183,10 @@ sources:
 - title: Unit21 reviews
   publisher: G2
   url: https://www.g2.com/products/unit21/reviews
+  accessed: '2026-10'
+- title: KYC and KYB onboarding workflows
+  publisher: Unit21
+  url: https://www.unit21.ai/solutions/kyc-kyb
   accessed: '2026-10'
 entity:
   wikidata: null

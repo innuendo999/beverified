@@ -156,7 +156,36 @@ faq:
 - q: Who are ComplyAdvantage's main competitors?
   a: ComplyAdvantage competes with SEON and Feedzai on AML/fraud data, and with Sumsub for teams that want combined IDV and AML screening in one platform.
 segments: []
-capabilities: {}
+capabilities:
+  sanctions_pep:
+    status: 'yes'
+    note: all plans incl. Starter
+    source: 1
+  adverse_media:
+    status: 'yes'
+    note: all plans incl. Starter
+    source: 1
+  transaction_monitoring:
+    status: add_on
+    note: Enterprise plan only
+    source: 1
+  case_management:
+    status: 'yes'
+    note: configurable review workflows
+    source: 6
+  identity_verification:
+    status: 'no'
+    note: no ID document checks
+    source: 5
+  deployment:
+    status: cloud
+    note: SaaS platform
+    source: 5
+  published_pricing:
+    status: partial
+    note: Enterprise on application
+    source: 1
+  checked: '2026-10'
 certifications:
 - name: ISO/IEC 27001
   what: Information security (BSI, per G-Cloud listing)
@@ -226,6 +255,7 @@ verification_notes:
 - 'ISO/IEC 27001 (BSI, 18 Sep 2021) and SOC 2 Type 2 are supplier-declared on the G-Cloud listing; the security page could not be loaded and no BSI certificate was opened.'
 - 'G2 rating visible (4.3, 101 reviews); review text not read in full, so user themes are kept as general statements without counts.'
 - 'Leadership facts on the about page (Delingpole as Executive Chairman) and the 2022 CEO change (Finance Magnates, source 7) agree.'
+- '2026-10-22 capabilities pass: pricing page lists transaction monitoring and payments screening only under Enterprise, not Starter; the FAQ and features describe them as part of Mesh without that limit. Not edited.'
 application_category: AML Software
 author: andrii-klymenko
 legacy_reviewer:

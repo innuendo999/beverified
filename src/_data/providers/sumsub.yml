@@ -149,7 +149,36 @@ faq:
 - q: Who are Sumsub's main competitors?
   a: Sumsub competes with Jumio, Onfido, and Trulioo, differentiating mainly through published pricing and a unified KYC/KYB/monitoring platform.
 segments: []
-capabilities: {}
+capabilities:
+  sanctions_pep:
+    status: add_on
+    note: Compliance plan and above
+    source: 1
+  adverse_media:
+    status: add_on
+    note: part of AML screening
+    source: 9
+  transaction_monitoring:
+    status: add_on
+    note: custom plan only
+    source: 1
+  case_management:
+    status: 'yes'
+    note: AML and fraud case workspace
+    source: 11
+  identity_verification:
+    status: 'yes'
+    note: all plans incl. Basic
+    source: 1
+  deployment:
+    status: cloud
+    note: AWS with regional data processing
+    source: 12
+  published_pricing:
+    status: partial
+    note: custom plan quoted
+    source: 1
+  checked: '2026-10'
 certifications:
 - name: iBeta ISO/IEC 30107-3 PAD Level 3
   what: Liveness, Sumsub Liveness (Sep 2026)
@@ -232,6 +261,14 @@ sources:
 - title: Sumsub reviews
   publisher: G2
   url: https://www.g2.com/products/sumsub/reviews
+  accessed: '2026-10'
+- title: AML and fraud case management
+  publisher: Sumsub
+  url: https://sumsub.com/case-management
+  accessed: '2026-10'
+- title: Local Data Processing
+  publisher: Sumsub
+  url: https://docs.sumsub.com/docs/local-data-processing
   accessed: '2026-10'
 entity:
   wikidata: null
