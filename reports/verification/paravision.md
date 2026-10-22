@@ -93,3 +93,34 @@ After VerifyMy (4.4), last in the list.
 ```
 
 Not added to identity-verification: Paravision has no document verification, so it does not meet that list's scope.
+
+## Follow-up 2026-10-22
+
+Worked through all 24 `verification_notes`; 16 remain (merged and reworded). `last_verified` and `updated` set to 2026-10-22.
+
+### Changed
+
+- FAQ "How does Paravision rank in NIST face recognition tests?": "...in July 2025, and fourth for 1:1 in January 2026." → "...in July 2025. Its benchmarks page now cites October 2026 results, with third place for 1:1 (Visa-Border, yaw of 45 degrees or more) and 11th for 1:N (Visa-Border, gallery of 1.6 million)." Still vendor-stated (source 4, Paravision benchmarks; Trust page, source 3, says the same).
+- Certification "NIST FRTE 1:1 and 1:N (2025 and 2026)": what "top 5 on Visa-Border per Paravision", source 20 → "3rd on 1:1 and 11th on 1:N Visa-Border (Oct 2026), per Paravision", source 4. Status unchanged (vendor_stated): NIST tables are script-rendered and report cards did not load.
+- Certification "iBeta ISO/IEC 30107-3 PAD Level 1": status confirmed (source 12) → vendor_stated (source 6, Paravision liveness page), what adds "listed on iBeta's letters page, letter not opened". The Level 1 letter has never been opened, and both letter PDFs now refuse automated access (robots; web archive blocked). Level 2 stays confirmed on the letter opened 2026-10-18 (source 13).
+- Fact "Certifications": "iBeta ISO/IEC 30107-3 Level 1 and 2 (2023) and ACCS Level 3 age estimation, both confirmed" → "iBeta ISO/IEC 30107-3 Level 2 (Dec 2023, lab letter) and Level 1 (Oct 2023, on iBeta's letters list), ACCS Level 3 age estimation (register)" (sources 12, 13, 23).
+- FAQ "Has Paravision's liveness been independently tested?": "iBeta's published letters show ... passed" → "iBeta's letters page lists ... at Level 1 ... and v1.2 at Level 2 ..., and the Level 2 letter reports no successful attacks" (sources 12, 13). Same wording fix in the Compliance & certifications score note.
+- Pricing item added: Capterra UK listing, "Usage-based; no figures, contact Paravision for pricing", third_party (new source 42).
+- Sources appended: 41 G2 Paravision reviews, 42 Capterra UK Paravision.
+
+Re-confirmed unchanged: ACCS register (Level 3, ACCS 1:2020, valid to 18/03/2027); MdTF RIVR figures for P9 and MTDS 12; iBeta list (no Liveness 2.0 letter); contact page (San Francisco, demo form only); face recognition SDK languages and edge chips; deepfake page; partners list; no ISO/IEC 27001 or SOC 2 claim on the Trust page; newsroom has no items after Sept 2026.
+
+### Removed / unverifiable
+
+- Resolved notes removed: ACCS detail, FTC detail (record matches primary sources), HQ address conflict (city only used), 2026 newsroom titles, Ever history detail.
+- Still unverifiable: NIST ranks (vendor_stated), iBeta Level 1 letter (not opened), Ingenium Level 3 report, BIPA case outcome, USAspending entry for the State Department award, founding year, Wikidata id. All vendor-only performance claims stay out of the copy (merged into one note).
+- User ratings: G2, Capterra UK and GetApp show 0 reviews; no Gartner Peer Insights page. `user_ratings` stays empty.
+- Leadership: company page now lists Joey Pritikin as President (was CPO). Not used in the record.
+
+### Ranking cards
+
+`liveness-detection` and `age-verification` entries checked. No text is now wrong: "Liveness tested by iBeta to ISO/IEC 30107-3 Level 1 and Level 2 (2023 versions)" still matches iBeta's letters page, and "No iBeta letter yet for the current Liveness 2.0" still holds. No change suggested.
+
+### Score flag
+
+None. The NIST 1:N rank Paravision cites fell from top 5 (July 2025) to 11th (October 2026), but NIST ranks were already vendor-stated and not counted as independent evidence.
