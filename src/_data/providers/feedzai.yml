@@ -149,7 +149,7 @@ capabilities:
     source: 10
   deployment:
     status: cloud
-    note: Feedzai as a Service, no on-prem found
+    note: Feedzai as a Service; older on-prem installs reported by users
     source: 11
   published_pricing:
     status: 'no'
@@ -238,7 +238,7 @@ legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
 - 'Scale figures disagree between Feedzai pages (checked 2026-10-22): the about-us page (source 1) says $9T in payments processed and 120B events a year; the homepage (source 2) now says $19T in payments secured and 140B events a year. No dated press release for either figure was found. The page keeps the about-us figures ($9T, 120B); confirm with Feedzai which is current before the next release.'
-- 'Deployment capability is set to cloud (Feedzai as a Service, source 11), but on-prem use is reported elsewhere: a Gartner Peer Insights reviewer says they currently operate an older on-premise version, with newer versions in the cloud (https://www.gartner.com/reviews/market/online-fraud-detection/vendor/feedzai/product/feedzai-10262518), and the Capterra UK listing (source 14) shows Windows and Linux on-premise. No current Feedzai page offers on-prem. Editor to review whether the capability should be cloud_and_on_prem or stay cloud.'
+- '2026-10-22 capabilities review: deployment kept as cloud. No current Feedzai page offers on-premises; a Gartner reviewer runs an older on-prem version and the Capterra UK listing shows on-premise, so the capability note says older installs exist.'
 - No certifications are published on Feedzai's site; trust.feedzai.com blocks automated access (robots disallowed, checked 2026-10-22). A Feedzai job ad mentions PCI DSS, ISO/IEC 27001/27701 and SOC 2 as standards the team works to, which is not a certification claim, so nothing is listed. Open the trust centre in a browser at the next check.
 - G2 profile still shows no reviews (checked 2026-10-22). User ratings come from Gartner Peer Insights (source 13) and Capterra UK (source 14); the Capterra listing is named "Feedzai DS", an older product name. Review themes remain general statements, not counted themes.
 - DemystData deal value is not used in the page. ECO News (source 7) reports about $100M from unnamed sources; Australian press reposted by Feedzai reports $157m (currency not stated in the headline). Not confirmed.

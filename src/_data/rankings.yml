@@ -276,21 +276,21 @@ aml:
     legacy_price_shown: Not published
     legacy_rating_shown: null
     segments: []
-  - slug: relycomply
-    name: RelyComply
-    award: Best for South Africa (FICA)
-    tagline: Unified KYC, KYB and AML platform with South African roots and a London office.
-    coverage: null
+  - slug: strise
+    name: Strise
+    award: Best for Nordic Banks and Insurers
+    tagline: Autonomous, agentic AML operations built to cut routine compliance work.
+    coverage: Nordics, with UK expansion since 2023
     size: null
     pros:
-    - Unified KYC, KYB and AML (transaction monitoring and screening) in one platform rather than stitched-together tools
-    - Built-in case management and goAML regulatory reporting
-    - Local fit for South African FICA compliance, with named clients such as Standard Bank and SnapScan
+    - Automation of routine AML cases, with vendor case figures such as 80% of routine cases automated
+    - Knowledge graph that maps ownership, directors, sanctions and adverse media in one view
+    - Used by large Nordic banks and insurers, including Nordea and Storebrand
     cons:
-    - Smaller, younger company than established category players
-    - Disclosed a September 2026 cyber incident affecting systems that hold customer data; forensic review still ongoing at the latest update found (22 Sep 2026)
-    - No published pricing
-    legacy_price_shown: Custom pricing
+    - Smaller company than most AML competitors, with a $10.8M Series A in 2023
+    - Customer base is mostly Nordic; reach outside the Nordics and UK is less proven
+    - No published rate card; usage-based pricing is quoted on request
+    legacy_price_shown: Not published
     legacy_rating_shown: null
     segments: []
 brazil:

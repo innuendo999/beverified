@@ -122,9 +122,9 @@ segments: []
 capabilities:
   checked: '2026-10'
   sanctions_pep:
-    status: not_disclosed
-    note: Lists used as input data, no screening product found
-    source: 10
+    status: add_on
+    note: network sanctions risk over your existing screening
+    source: 13
   adverse_media:
     status: not_disclosed
     note: Used as input data, no screening product found
@@ -255,7 +255,7 @@ verification_notes:
 - G2 still shows no reviews for Quantexa (source 6, checked 2026-10-22), so the old review themes attributed to G2 and Capterra could not have come from G2; praise and criticize stay removed. Gartner Peer Insights rating added (source 12). No Capterra listing was checked.
 - Certifications are vendor-stated only (Trust Center, source 3); no certification-body register was opened. The Trust Center names BSI as the ISO certification body and says certificates will be uploaded once issued; the business continuity item is an external attestation said to reflect alignment with ISO 22301, not a certificate. SOC 2 reports listed are Type 1 (2025 and 2026); no Type 2 report is listed.
 - 'IPO and investor sale are still early stage: Reuters (19 August 2026, source 4) says no listing date is set and that Warburg Pincus (9% to 10%) is exploring a possible stake sale, with an auction expected later in 2026. No later report was found as of 2026-10-22; re-check before the next release.'
-- 'Sanctions capability may need review: Quantexa has a "Holistic sanctions risk management" page (source 13) that adds network context to sanctions screening, finds direct and indirect links to sanctioned parties and claims fewer false positives. It does not describe list matching itself, and Cloud AML (source 8) lists sanctions only as third-party input data. Editor to decide whether sanctions_pep should stay not_disclosed or move to add_on. Adverse media: nothing found.'
+- '2026-10-22 capabilities review: sanctions_pep set to add_on. The sanctions page (source 13) offers Quantexa as an overlay that finds direct and indirect links to sanctioned parties on top of existing screening; it does not describe list matching itself. Adverse media: nothing found.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
