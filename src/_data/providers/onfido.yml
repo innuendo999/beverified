@@ -37,7 +37,7 @@ features:
 - Coverage of more than 2,500 document types across 195 countries.
 - Integrations with Microsoft Entra Verified ID and Okta Workforce Identity.
 pricing:
-  summary: Pricing is not published; Entrust quotes Onfido (Entrust Identity Verification) on request through sales.
+  summary: Entrust does not publish Onfido (Entrust Identity Verification) pricing and quotes it through sales. The only public price list is Onfido Ltd's UK G-Cloud 14 listing for public-sector buyers, dated May 2024. It prices each check by type and annual volume, from £1.39 for a document check at 10,000 checks down to £0.73 at 1 million. Vendr's buyer data puts the average contract at about $260,000 a year. These are third-party figures, not Entrust's current list prices.
   plans:
   - tier: Custom Quote
     price: Custom
@@ -50,6 +50,36 @@ pricing:
     value: Not published; contact sales
     kind: official
     source: 1
+    verified: '2026-10'
+  - label: UK G-Cloud 14 listing, price range
+    value: £0.43 to £2.12 per transaction; free trial available
+    kind: third_party
+    source: 10
+    verified: '2026-10'
+  - label: G-Cloud 14, document verification
+    value: £1.39 per check at 10,000 checks, £1.00 at 100,000, £0.73 at 1 million
+    kind: third_party
+    source: 11
+    verified: '2026-10'
+  - label: G-Cloud 14, biometric verification
+    value: £0.64 per check at 10,000 checks, £0.51 at 100,000, £0.38 at 1 million
+    kind: third_party
+    source: 11
+    verified: '2026-10'
+  - label: G-Cloud 14, watchlist screening
+    value: £0.44 per check at 10,000 checks, £0.33 at 100,000, £0.25 at 1 million
+    kind: third_party
+    source: 11
+    verified: '2026-10'
+  - label: G-Cloud 14, fees
+    value: No platform fee; optional onboarding £3,776.50 (Standard) or £8,632 (Enterprise)
+    kind: third_party
+    source: 11
+    verified: '2026-10'
+  - label: Average annual contract (Vendr buyer data, 20+ deals)
+    value: About $260,000 per year; highest about $1,070,000
+    kind: third_party
+    source: 12
     verified: '2026-10'
 facts:
 - label: From
@@ -117,7 +147,7 @@ user_reviews:
   - Mid-market teams sometimes find enterprise-focused pricing less competitive than smaller vendors.
 faq:
 - q: How much does Onfido cost?
-  a: Onfido, now Entrust Identity Verification, does not publish pricing. Entrust quotes it through sales.
+  a: Entrust does not publish Onfido pricing and quotes it through sales. Onfido Ltd's UK G-Cloud 14 listing (May 2024) prices checks from £0.43 to £2.12 per transaction, depending on check type and volume. Vendr's buyer data puts the average contract at about $260,000 a year.
 - q: Who owns Onfido?
   a: Entrust completed its acquisition of Onfido in April 2024. The product is now marketed as Entrust Identity Verification, and onfido.com redirects to Entrust's site.
 - q: Does Onfido include AML screening?
@@ -184,6 +214,18 @@ sources:
 - title: Entrust IDV (formerly Onfido) reviews
   publisher: G2
   url: https://www.g2.com/products/onfido/reviews
+  accessed: '2026-10'
+- title: Document and Biometric Identity Verification (G-Cloud 14 service listing, Onfido Ltd)
+  publisher: UK Digital Marketplace
+  url: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/168785180660845
+  accessed: '2026-10'
+- title: Onfido G-Cloud 14 pricing document (7 May 2024)
+  publisher: UK Digital Marketplace
+  url: https://assets.applytosupply.digitalmarketplace.service.gov.uk/g-cloud-14/documents/715460/168785180660845-pricing-document-2024-05-07-1230.pdf
+  accessed: '2026-10'
+- title: Onfido buyer guide and pricing data
+  publisher: Vendr
+  url: https://www.vendr.com/buyer-guides/onfido
   accessed: '2026-10'
 entity:
   wikidata: null
