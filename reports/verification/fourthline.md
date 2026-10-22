@@ -29,3 +29,28 @@
 ## Score flag
 
 - Watch item, not a flag yet: the Veridas merger is pending. If it closes and the product or brand changes, re-check the score.
+
+## Follow-up 2026-10-22
+
+### Changed
+
+- Veridas merger: "agreed to merge in July 2026; expected to close in H2 2026" → signed 16 Jul 2026, closing expected H2 2026 subject to regulatory approvals; no completion, combined name, post-merger leadership or ownership split announced as of 22 Oct 2026 (Fourthline newsroom latest item 13 Oct 2026). Added: Veridas shareholders incl. BBVA remain shareholders in the combined company; deal partly funded by Finch Capital and Rabo Investments; financial terms not disclosed (sources 5, 8, 9). Updated in `verdict` and FAQ "Is Fourthline merging with another company?".
+- Ownership fact: "Independent; merger with Veridas agreed Jul 2026, pending approval" (source 3, independent) → "Independent; merger with Veridas signed 16 Jul 2026, closing pending (expected H2 2026)" (source 8, vendor).
+- eIDAS QTSP certification: source 5 (newsroom) → source 10 (24 Aug 2026 release: Fourthline Trust Services AB, supervised by PTS, issues qualified certificates for electronic signatures, says it is on the EU Trusted List). Status stays `vendor_stated`.
+- Founding year 2017 now consistent across the about page (source 1) and the merger release (source 8); the 2018 figure from a 2023 article is not used.
+- ISO/IEC 27001:2022 (EY CertifyPoint, cert. 2021-039) wording re-confirmed on the about page and homepage (sources 1, 2); still `vendor_stated`.
+- New sources appended: 8 (Fourthline merger release), 9 (Biometric Update merger article), 10 (Fourthline QTSP release), 11 (G2 page).
+
+### Removed / unverifiable
+
+- Resolved notes removed: €70M funding (already removed from the page), "rebranded from Safened" (about page only says co-founder Krik Gunning was Safened's CCO from 2015; CB Insights files Fourthline under a "safened" slug with founding year 2013, not used), Western Union (already dropped), founding-year conflict.
+- Still unverifiable: iBeta ISO/IEC 30107-3 Level 1/2 and ISAE 3000 (vendor-stated only; iBeta's letter page blocked to our tools); EU Trusted List entry (list browser not readable); KYB not among current solutions although the record sits in `kyb`.
+- User ratings: G2 page (source 11) and Capterra listing exist but show no rating or reviews; Gartner Peer Insights could not be fetched. `user_ratings` stays empty.
+
+### Ranking cards
+
+- No entry with `slug: fourthline` in `src/_data/rankings.yml`; nothing to correct.
+
+### Score flag
+
+- None new. The Veridas merger is still pending; re-check score and brand after closing.
