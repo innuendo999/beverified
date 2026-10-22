@@ -22,8 +22,8 @@ link:
   url: https://www.complycube.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: ComplyCube is a smaller, API-first challenger in a category dominated by better-funded platforms, pitching itself on straightforward integration for document verification, biometrics, and AML screening. It's a reasonable fit for small and mid-market teams that want a developer-friendly onboarding API. Unlike most vendors in this category it publishes per-check prices and self-serve plans, though it doesn't have the scale or brand recognition of the category's larger players.
 what_is:
 - ComplyCube is a KYC and AML technology company based in London, UK, operated by Teemo Technology Ltd. It offers an API-first platform for identity verification, biometric authentication, KYB and AML screening, and says it supports 220+ countries and territories. It targets fintechs and regulated businesses that want document verification, liveness checks, and sanctions/PEP screening through a single integration, positioned as a more accessible alternative to enterprise-only IDV platforms. Its identity service is certified under the UK digital identity and attributes trust framework (DIATF).
@@ -35,7 +35,7 @@ features:
 - eID verification, NFC chip verification and video liveness for higher-assurance onboarding (some on higher plans).
 - Web and mobile SDKs, a REST API and a no-code workflow builder.
 pricing:
-  summary: ComplyCube publishes self-serve plans and per-check prices. Starter costs $99 a month and Core $299 a month, with the monthly fee used as credit for checks and only successful verifications billed. Growth and Enterprise plans are quoted on request.
+  summary: ComplyCube publishes self-serve plans and per-check prices. Starter costs $99 a month and Core $299 a month, with the monthly fee converted into usage credit for checks; for Starter the page says only successful verifications are charged. Continuous monitoring and fraud intelligence checks start on Core. Growth and Enterprise plans are quoted on request.
   plans:
   - tier: Starter
     price: $99/month
@@ -44,14 +44,14 @@ pricing:
   - tier: Core
     price: $299/month
     note: Lower per-check rates than Starter
-    extra: Adds proof of address, fraud intelligence, batch processing, custom branding
+    extra: Adds proof of address, fraud intelligence, continuous monitoring, batch processing, custom branding
   - tier: Growth
     price: Custom
     note: Adds eID, database checks, NFC chip verification, premium support
     extra: Contact sales for a quote
   - tier: Enterprise
     price: Custom
-    note: Case management, dedicated infrastructure with SLA, white-labelled workflows
+    note: Advanced case management, dedicated infrastructure with SLA, white-labelled workflows
     extra: Contact sales for a quote
   legacy_verified_note: null
   verified: '2026-10'
@@ -71,6 +71,11 @@ pricing:
     kind: official
     source: 1
     verified: '2026-10'
+  - label: Extensive AML screening (with adverse media)
+    value: $1.05 (Starter) / $0.85 (Core) per check
+    kind: official
+    source: 1
+    verified: '2026-10'
   - label: Document verification
     value: $1.05 (Starter) / $0.75 (Core) per check
     kind: official
@@ -82,12 +87,12 @@ pricing:
     source: 1
     verified: '2026-10'
   - label: Continuous AML monitoring
-    value: $0.03 per profile per month
+    value: $0.03 per month on Core; not included on Starter
     kind: official
     source: 1
     verified: '2026-10'
   - label: Minimum commitment
-    value: None beyond the monthly plan fee
+    value: Not stated on the pricing page beyond the monthly plan fee
     kind: official
     source: 1
     verified: '2026-10'
@@ -102,12 +107,12 @@ facts:
   source: 1
   evidence: vendor
 - label: Per check
-  value: From $0.20 (Core liveness) to $1.05 (Starter document check)
+  value: Document check $1.05 (Starter) / $0.75 (Core); photo liveness $0.35 / $0.20
   source: 1
   evidence: vendor
 - label: Legal entity
   value: Teemo Technology Ltd (UK, incorporated Jan 2020)
-  source: 5
+  source: 9
   evidence: independent
 - label: HQ
   value: London, UK
@@ -160,7 +165,7 @@ user_reviews:
   - Enterprises needing a long track record at scale more often evaluate larger, more established platforms.
 faq:
 - q: How much does ComplyCube cost?
-  a: ComplyCube publishes its prices. The Starter plan is $99 a month and Core is $299 a month, with the fee used as credit for checks. Per-check prices start at $0.20 for a photo liveness check on Core; a document check costs $1.05 on Starter. Growth and Enterprise plans are quoted on request.
+  a: ComplyCube publishes its prices. The Starter plan is $99 a month and Core is $299 a month, with the fee used as credit for checks. A document check costs $1.05 on Starter or $0.75 on Core, and a photo liveness check costs $0.35 or $0.20. Growth and Enterprise plans are quoted on request.
 - q: Does ComplyCube support KYB?
   a: Yes. ComplyCube offers business verification (KYB) alongside its individual identity-verification and AML screening tools.
 - q: Is ComplyCube good for developers?
@@ -206,6 +211,11 @@ user_ratings:
   count: 70
   checked: '2026-10'
   url: https://www.g2.com/products/complycube/reviews
+- platform: Capterra
+  rating: 5.0
+  count: 10
+  checked: '2026-10'
+  url: https://www.capterra.com/p/264688/ComplyCube/
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
@@ -238,6 +248,14 @@ sources:
   publisher: G2
   url: https://www.g2.com/products/complycube/reviews
   accessed: '2026-10'
+- title: ComplyCube reviews
+  publisher: Capterra
+  url: https://www.capterra.com/p/264688/ComplyCube/
+  accessed: '2026-10'
+- title: 'Companies House: TEEMO TECHNOLOGY LTD (12392069)'
+  publisher: Companies House
+  url: https://find-and-update.company-information.service.gov.uk/company/12392069
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -248,12 +266,11 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- Founding year not stated by the vendor. Old page said 2016; the operating company Teemo Technology Ltd was incorporated on 8 Jan 2020 (Companies House) and CB Insights also says 2020. Founded fact removed rather than guessed.
-- London address on the register and Companies House is Crown House, 27 Old Gloucester Street, a registered-office address; actual office footprint not confirmed.
-- ISO/IEC 27001, ISO 9001, ISO/IEC 30107-3 (lab not named), Cyber Essentials and ACCS certifications are vendor-stated only; no certificate or lab letter opened.
-- Per-check price column mapping (Starter vs Core) is inferred from the order on the pricing page; the page does not label columns explicitly.
-- Video KYC (agent-led video identification) not found on current vendor pages; feature rewritten to video liveness, eID and NFC, which appear on the pricing page.
-- G2 rating visible (5.0, 70 reviews) but review text is behind a login, so user review themes are general statements, not counted themes.
+- Founding year still not stated by the vendor (About page gives none). The operating company Teemo Technology Ltd was incorporated on 8 Jan 2020 (Companies House) and the old page said 2016; Founded fact stays removed.
+- London address on the DSIT register and Companies House is Crown House, 27 Old Gloucester Street, a registered-office address; actual office footprint not confirmed.
+- ISO/IEC 27001:2022, ISO 9001:2015, ISO/IEC 30107-3 Level 2 (lab not named), Cyber Essentials and ACCS 4:2020 are vendor-stated only. trust.complycube.com showed no certificate content, and no certification-body, lab, IASME or ACCS register entry was found.
+- The developer docs compliance page also lists SOC 2 Type II as "compliant" (no auditor or report date) and the Security & Compliance Center lists ACCS 2:2021; neither added as a certification.
+- G2 and Capterra review text is behind a login, so user review themes are general statements, not counted themes.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
