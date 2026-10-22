@@ -22,11 +22,11 @@ link:
   url: https://relycomply.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: RelyComply unifies KYC, KYB and AML in one platform, with identity verification, screening, transaction monitoring, case management and goAML regulatory reporting. It is strongest for South African institutions working under FICA, and set up a UK company in July 2025 with a London office. Buyers should note that the brand is still young outside Africa and that RelyComply disclosed a cyber incident in September 2026 affecting systems that hold customer data.
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
+verdict: RelyComply unifies KYC, KYB and AML in one platform, with identity verification, screening, transaction monitoring, case management and goAML regulatory reporting. It is strongest for South African institutions working under FICA. It set up a UK company in July 2025 and announced its UK launch in October 2025, with a London office. Buyers should note that the brand is still young outside Africa and that RelyComply disclosed a cyber incident in September 2026 affecting systems that hold customer data; the forensic investigation was still ongoing at the latest update found (22 September 2026).
 what_is:
-- RelyComply is an anti-financial-crime platform that says it has been operating since 2020. It is led by CEO Bradley Elliott and co-founder and CTO James Saunders, describes itself as remote first, and lists offices in Johannesburg, Cape Town and London; its UK company, RelyComply (UK) Limited, was incorporated in July 2025. The platform covers KYC (IDV, document and selfie checks, screening, risk assessment, adverse media), KYB, AML transaction monitoring and screening, case management and goAML reporting. Named clients include Standard Bank and SnapScan. In September 2026 it disclosed that an attacker exploited a zero-day flaw in a third-party application to reach some systems holding customer data; it rebuilt the affected environment and reported the incident to South Africa's Information Regulator.
+- RelyComply is an anti-financial-crime platform that says it has been operating since 2020. It is led by CEO Bradley Elliott and co-founder and CTO James Saunders, describes itself as remote first, and lists offices in Johannesburg, Cape Town and London; its UK company, RelyComply (UK) Limited, was incorporated in July 2025, and it announced its UK launch in October 2025. The platform covers KYC (IDV, document and selfie checks, screening, risk assessment, adverse media), KYB, AML transaction monitoring and screening, case management and goAML reporting. Named clients include Standard Bank and SnapScan. In September 2026 it disclosed that an attacker exploited a zero-day flaw in a third-party application to reach some systems holding customer data; it rebuilt the affected environment and reported the incident to South Africa's Information Regulator. SA Home Loans, EasyEquities, Satrix and Peregrine Capital told their customers that their data may have been accessed, and a group calling itself Dire Wolf claimed the attack, which has not been verified. A client notice updated on 22 September 2026 said the forensic investigation was still ongoing; RelyComply had published no further update by 22 October 2026.
 features:
 - Unified KYC, AML, and KYB platform.
 - Identity verification with selfie-to-ID face matching, liveness checks and daily re-screening against watchlists and adverse media.
@@ -72,13 +72,21 @@ facts:
   value: Cyber incident disclosed Sep 2026
   source: 5
   evidence: vendor
+- label: Incident status
+  value: Forensic investigation ongoing at latest update found (22 Sep 2026)
+  source: 12
+  evidence: independent
+- label: UK launch
+  value: Announced Oct 2025
+  source: 14
+  evidence: independent
 pros:
 - Unified KYC, KYB and AML (transaction monitoring and screening) in one platform rather than stitched-together tools
 - Built-in case management and goAML regulatory reporting
 - Local fit for South African FICA compliance, with named clients such as Standard Bank and SnapScan
 cons:
 - Smaller, younger company than established category players
-- Disclosed a September 2026 cyber incident affecting systems that hold customer data; forensic review ongoing at disclosure
+- Disclosed a September 2026 cyber incident affecting systems that hold customer data; forensic review still ongoing at the latest update found (22 Sep 2026)
 - No published pricing
 alternatives:
 - slug: complyadvantage
@@ -111,9 +119,9 @@ faq:
 - q: What does RelyComply's platform cover?
   a: KYC (identity verification, document and selfie checks, screening, risk assessment, adverse media), KYB, AML transaction monitoring and screening, case management and goAML regulatory reporting.
 - q: Does RelyComply operate in the UK?
-  a: Yes. RelyComply lists a London office, and RelyComply (UK) Limited was incorporated at Companies House in July 2025.
+  a: Yes. RelyComply lists a London office, and RelyComply (UK) Limited was incorporated at Companies House in July 2025. It announced its UK launch in October 2025.
 - q: Has RelyComply had a security incident?
-  a: Yes. On 16 September 2026 RelyComply disclosed that an unauthorised party exploited a zero-day vulnerability in a third-party application to access some systems holding customer data. It said the access was stopped, the environment was rebuilt, customers were notified and the incident was reported to South Africa's Information Regulator.
+  a: Yes. On 16 September 2026 RelyComply disclosed that an unauthorised party exploited a zero-day vulnerability in a third-party application to access some systems holding customer data. It said the access was stopped, the environment was rebuilt, customers were notified and the incident was reported to South Africa's Information Regulator. Several clients, including SA Home Loans, EasyEquities, Satrix and Peregrine Capital, told their customers that their data may have been accessed. Peach Payments stopped sending data to RelyComply and moved the affected services to another provider. As of a client update on 22 September 2026 the forensic investigation was still ongoing, and RelyComply had published no further update by 22 October 2026.
 - q: What is the best alternative to RelyComply?
   a: ComplyAdvantage is the best alternative for a larger, established financial-crime database. Napier is the closest fit for AI-native transaction monitoring with a sandbox.
 - q: Who are RelyComply's main competitors?
@@ -203,6 +211,22 @@ sources:
   publisher: RelyComply
   url: https://relycomply.com/aml-modern-integration/
   accessed: '2026-10'
+- title: Cybersecurity incident at RelyComply (FAQ, updated 22 September 2026)
+  publisher: Virgin Active South Africa
+  url: https://virginactivesa.freshdesk.com/support/solutions/articles/201000132941-cybersecurity-incident-at-relycomply
+  accessed: '2026-10'
+- title: South African home loans giant affected by data breach, customer records potentially exposed (17 September 2026)
+  publisher: MyBroadband
+  url: https://mybroadband.co.za/news/security/667893-south-african-home-loans-giant-affected-by-data-breach-customer-records-potentially-exposed.html
+  accessed: '2026-10'
+- title: RelyComply, a unified AML and KYC platform, expands to the UK (8 October 2025)
+  publisher: Financial IT
+  url: https://financialit.net/news/aml-and-kyc/relycomply-unified-aml-kyc-platform-expands-uk
+  accessed: '2026-10'
+- title: RelyComply news and resources
+  publisher: RelyComply
+  url: https://relycomply.com/news/
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -213,14 +237,10 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- Founded 2019 not confirmed; About page says operating since 2020. Shown as Operating since 2020.
-- HQ Cape Town not confirmed; vendor says remote first and lists Johannesburg, Cape Town and London offices.
-- October 2025 UK launch not confirmed on any page opened (news archive only shows 2026 items; web search budget ran out). Replaced with Companies House incorporation of RelyComply (UK) Limited on 3 Jul 2025.
-- Explainable AI, bias mitigation and emerging-market framing do not appear on the homepage or the AI module page; removed from tagline, verdict, pros and FAQ.
-- James Saunders is co-founder and CTO, not sole founder; other founders not named on the site.
-- Cyber incident (Sep 2026): categories and number of affected individuals not disclosed; forensic investigation ongoing at time of notice. Re-check before release.
-- Homepage shows a SANCERT ISO logo without naming the standard; no register entry opened.
-- G2 page could not be opened and no review counts were verifiable; praise and criticize removed.
+- 'James Saunders: the About page calls him both "Co-Founder and CTO" and "Founder and CTO"; other co-founders are not named on any page opened. Shown as co-founder and CTO.'
+- 'Cyber incident (Sep 2026): number of affected individuals not disclosed; data categories differ by client (SA Home Loans and Virgin Active notices list different fields). Latest status found is a client update of 22 Sep 2026 saying the forensic investigation is ongoing; RelyComply notice not updated and no regulator outcome found by 2026-10-22. The Dire Wolf claim is unverified. Bidvest Bank notified customers of a third-party incident but did not name RelyComply (source 13). Re-check before next release.'
+- Homepage footer shows a "Sancert Logo ISO" image without naming the standard; SANCERT's site has no public certificate register, so the certificate could not be opened.
+- G2 page could not be opened and no Capterra listing was found; user_ratings left empty. Gartner Peer Insights shows 4.8 from 4 ratings (gartner.com/reviews/product/relycomply, checked 2026-10); not added, editor to decide whether Gartner counts as a ratings source.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

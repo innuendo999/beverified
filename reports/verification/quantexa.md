@@ -22,3 +22,27 @@
 
 ## Score flag
 - None. Possible IPO and investor stake sale are early stage and do not affect the product.
+
+## Follow-up 2026-10-22
+
+### Changed
+
+- SOC 2 `what`: "Security controls audit (type not stated)" → "Security controls audit (Type 1 reports per Trust Center updates)". The Trust Center (source 3) lists SOC 2 reports for the Decision Intelligence Platform and Quantexa Unify, and its update notes describe them as Type 1 (2025 and 2026). No Type 2 report is listed.
+- user_ratings added: Gartner Peer Insights 4.4 from 25 ratings (source 12). G2 still shows "Quantexa hasn't been reviewed yet" (source 6).
+- Vishal Marria: the Quantexa team page lists him as "Founder and Chief Executive Officer" (source 11), and Reuters (source 4) calls him chief executive. Wikipedia (source 5) lists him among several co-founders, so "co-founder and CEO" in what_is stays.
+- Sources 11 to 13 added at the end of `sources`. `last_verified` and `updated` set to 2026-10-22.
+
+### Removed / unverifiable
+
+- Note closed: the CEO and founder role (see above).
+- Still unresolved: certifications remain `vendor_stated`. No register was opened. The Trust Center names BSI as the ISO body and says certificates will be uploaded once issued, and ISO 22301 is backed by a Gallagher attestation of alignment rather than a certificate. IPO and Warburg Pincus stake sale: no news later than Reuters, 19 August 2026, was found.
+- New note: sanctions capability. Quantexa's "Holistic sanctions risk management" page (source 13) layers network context on screening and finds links to sanctioned parties, but it does not describe list matching. Cloud AML (source 8) treats sanctions lists as input data. `sanctions_pep: not_disclosed` may deserve review (possibly `add_on`). Capabilities were not edited.
+- Features and FAQ checked against `capabilities`: none of them claims a sanctions, adverse media or identity verification product. Cloud AML case management and contextual monitoring match sources 7 and 8. No change needed.
+
+### Ranking cards
+
+- `aml/banks`, entry `slug: quantexa` (award "Best for Entity Resolution and Network Analytics"). The 2026-10-18 section says there was no entry; there is one now. Tagline, pros, cons, `coverage: 100 countries` (about page still says "100 countries we're active in") and `legacy_price_shown: Custom pricing` remain correct. HSBC, Standard Chartered and ING are still in the about page logos. No corrections needed.
+
+### Score flag
+
+- None.

@@ -4,7 +4,7 @@ alternate_names: []
 status: published
 seo:
   title: 'Feedzai Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'Feedzai review: enterprise fraud, AML and transaction-monitoring platform that says it secures $9T in payments a year. Features, pricing, pros & cons, alternatives.'
+  description: 'Feedzai review: enterprise fraud, AML and transaction-monitoring platform that says it processes $9T in payments a year. Features, pricing, pros & cons, alternatives.'
   h1: 'Feedzai Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/feedzai.svg
@@ -22,11 +22,11 @@ link:
   url: https://feedzai.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: 'Feedzai operates at a different scale than most of this batch: real-time AI fraud and AML detection that, by the company''s own figures, secures about $9 trillion in payments a year and protects around 1 billion consumers, with banks and processors such as Mastercard, Fiserv, CaixaBank and Raiffeisen Bank International among its named customers. That scale is built for large institutions. Pricing is enterprise-only, and integration timelines reflect it.'
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
+verdict: 'Feedzai operates at a different scale than most of this batch: real-time AI fraud and AML detection that, by the company''s own figures, processes about $9 trillion in payments a year and protects around 1 billion consumers, with banks and processors such as Mastercard, Fiserv, CaixaBank and Raiffeisen Bank International among its named customers. That scale is built for large institutions. Pricing is enterprise-only, and integration timelines reflect it.'
 what_is:
-- Feedzai is a fraud-prevention and AML company founded in 2011 in Coimbra, Portugal, by Nuno Sebastião, Pedro Bizarro and Paulo Marques. Nuno Sebastião is co-founder, chairman and CEO. It lists offices in Coimbra, Lisbon, Porto, London, New York and Atlanta. Feedzai became a unicorn in 2021, bought DemystData in 2025 and raised a roughly $75 million Series E in October 2025 at a valuation above $2 billion. By its own figures it processes 120 billion events and secures $9 trillion in payments a year. It was also selected as the primary fraud detection provider for the ECB's proposed digital euro.
+- Feedzai is a fraud-prevention and AML company founded in 2011 in Coimbra, Portugal, by Nuno Sebastião, Pedro Bizarro and Paulo Marques. Nuno Sebastião is co-founder, chairman and CEO. It lists offices in Coimbra, Lisbon, Porto, London, New York and Atlanta. Feedzai became a unicorn in 2021, bought DemystData in 2025 and raised a roughly $75 million Series E in October 2025 at a valuation above $2 billion. By its own figures it processes 120 billion events and $9 trillion in payments a year. It was also selected as the primary fraud detection provider for the ECB's proposed digital euro.
 features:
 - Real-time AI transaction fraud, new-account fraud and scam detection.
 - RiskOps platform combining fraud, identity and AML, with RiskOps Studio for strategy configuration, investigations and reporting.
@@ -71,7 +71,7 @@ facts:
   source: 6
   evidence: independent
 - label: Scale
-  value: $9T in payments secured a year (company figure)
+  value: $9T in payments processed a year (company figure)
   source: 1
   evidence: vendor
 pros:
@@ -117,7 +117,7 @@ faq:
 - q: What is RiskOps?
   a: RiskOps is Feedzai's platform that combines fraud prevention, identity and AML in one place, with RiskOps Studio for strategy configuration, investigations and reporting.
 - q: How big is Feedzai?
-  a: By the company's own figures, Feedzai processes 120 billion events and secures $9 trillion in payments a year, protecting about 1 billion consumers. Named customers include Mastercard, Fiserv, CaixaBank and Raiffeisen Bank International.
+  a: By the company's own figures, Feedzai processes 120 billion events and $9 trillion in payments a year, protecting about 1 billion consumers. Named customers include Mastercard, Fiserv, CaixaBank and Raiffeisen Bank International.
 - q: Who owns Feedzai?
   a: Feedzai is a privately held company founded in Portugal in 2011. Its October 2025 Series E of about $75 million valued it above $2 billion.
 - q: What is the best alternative to Feedzai?
@@ -156,7 +156,17 @@ capabilities:
     note: Quote on request
     source: 2
 certifications: []
-user_ratings: []
+user_ratings:
+- platform: Gartner Peer Insights
+  rating: 4.6
+  count: 30
+  checked: '2026-10'
+  url: https://www.gartner.com/reviews/product/feedzai-10262518
+- platform: Capterra
+  rating: 4.7
+  count: 11
+  checked: '2026-10'
+  url: https://www.capterra.co.uk/software/156229/feedzai-ds
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
@@ -205,6 +215,18 @@ sources:
   publisher: Feedzai
   url: https://www.feedzai.com/resource/feedzai-as-a-service/
   accessed: '2026-10'
+- title: 'Feedzai: how to build a unicorn'
+  publisher: EDP
+  url: https://edp.com/en/edp-stories/feedzai-how-build-a-unicorn
+  accessed: '2026-10'
+- title: Feedzai reviews
+  publisher: Gartner Peer Insights
+  url: https://www.gartner.com/reviews/product/feedzai-10262518
+  accessed: '2026-10'
+- title: Feedzai DS reviews
+  publisher: Capterra UK
+  url: https://www.capterra.co.uk/software/156229/feedzai-ds
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -215,13 +237,11 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- 'The old claims "about 80% of the Fortune 500" and "four of the five largest North American banks" were not found on any current Feedzai page or news source we opened; removed.'
-- '"$8T+ protected" replaced by the current vendor figure of $9T in payments a year (about-us and homepage).'
-- US HQ in San Mateo is no longer listed; the contact page lists six offices without naming a headquarters. Old HQ fact replaced by the office list.
-- Paulo Marques is named as a co-founder by ECO News (2025) but is not on the current leadership page.
-- No certifications are published on Feedzai's site; trust.feedzai.com blocks automated access. A Feedzai job ad mentions PCI DSS, ISO/IEC 27001/27701 and SOC 2 as standards the team works to, which is not a certification claim, so nothing is listed.
-- G2 profile exists but shows no reviews (checked 2026-10); no user ratings added. User review themes are general statements, not counted themes.
-- DemystData deal value (about $100M) is from unnamed sources in ECO News; not used in the page.
+- 'Scale figures disagree between Feedzai pages (checked 2026-10-22): the about-us page (source 1) says $9T in payments processed and 120B events a year; the homepage (source 2) now says $19T in payments secured and 140B events a year. No dated press release for either figure was found. The page keeps the about-us figures ($9T, 120B); confirm with Feedzai which is current before the next release.'
+- 'Deployment capability is set to cloud (Feedzai as a Service, source 11), but on-prem use is reported elsewhere: a Gartner Peer Insights reviewer says they currently operate an older on-premise version, with newer versions in the cloud (https://www.gartner.com/reviews/market/online-fraud-detection/vendor/feedzai/product/feedzai-10262518), and the Capterra UK listing (source 14) shows Windows and Linux on-premise. No current Feedzai page offers on-prem. Editor to review whether the capability should be cloud_and_on_prem or stay cloud.'
+- No certifications are published on Feedzai's site; trust.feedzai.com blocks automated access (robots disallowed, checked 2026-10-22). A Feedzai job ad mentions PCI DSS, ISO/IEC 27001/27701 and SOC 2 as standards the team works to, which is not a certification claim, so nothing is listed. Open the trust centre in a browser at the next check.
+- G2 profile still shows no reviews (checked 2026-10-22). User ratings come from Gartner Peer Insights (source 13) and Capterra UK (source 14); the Capterra listing is named "Feedzai DS", an older product name. Review themes remain general statements, not counted themes.
+- DemystData deal value is not used in the page. ECO News (source 7) reports about $100M from unnamed sources; Australian press reposted by Feedzai reports $157m (currency not stated in the headline). Not confirmed.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

@@ -23,18 +23,18 @@ link:
   url: https://sumsub.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: 'Sumsub stands out in this category for one simple reason: it publishes its prices. It also offers KYC, KYB, transaction monitoring and fraud prevention in one platform that is popular with crypto exchanges and fintechs, which makes it the easiest all-in-one platform in this batch to evaluate without a sales call. Minimum monthly commitments can be steep for very small teams, and KYB, non-document checks and transaction monitoring sit in the custom plan.'
 what_is:
 - Sumsub (legal name Sum and Substance Ltd) is a KYC/AML verification platform founded in 2015, with its registered office in London and offices in Singapore, Riga, Limassol, Berlin, Miami, Dubai and Tel Aviv. It says it is trusted by more than 4,000 companies, including Bybit and Wirex, and is particularly strong with crypto and fintech businesses that need document verification, biometric checks and AML screening in one platform.
 features:
 - Document and biometric verification with liveness and face match, covering 14,000+ document types in 220+ countries and territories, with a stated 20-second average verification time.
-- Non-document verification against government and other databases.
-- Sanctions and PEP screening, including OFAC, UN, HMT, EU and DFAT lists.
-- KYB and UBO (ultimate beneficial owner) verification for business onboarding.
-- Transaction monitoring for AML compliance.
-- Fraud-prevention tooling layered on top of the core verification flow.
+- Non-document verification against government and other databases, in the custom plan.
+- Sanctions, PEP and adverse media screening, including OFAC, UN, HMT, EU and DFAT lists, from the Compliance plan.
+- KYB and UBO (ultimate beneficial owner) verification for business onboarding, in the custom plan.
+- Transaction monitoring for AML compliance, in the custom plan.
+- Fraud-prevention tooling layered on top of the core verification flow, in the custom plan.
 pricing:
   summary: 'Sumsub publishes its pricing. Basic is $1.35 per verification with a $149 monthly minimum, aimed at non-regulated businesses, and covers ID verification, liveness and face match, reusable KYC, email and phone checks and Travel Rule. Compliance is $1.85 per verification with a $299 monthly minimum and adds AML screening, ongoing AML monitoring and address verification. A custom plan, quoted on request, adds non-document verification, business verification, transaction monitoring and fraud prevention. A 14-day free trial includes 50 free checks.'
   plans:
@@ -208,14 +208,18 @@ certifications:
   what: Trust services conformity
   status: vendor_stated
   source: 4
-- name: ISO/IEC 29003:2018
-  what: Identity proofing
-  status: vendor_stated
-  source: 4
+- name: ISO/IEC TS 29003:2018
+  what: Identity proofing, LoIP2 and LoIP3 (ACCS, valid to Sep 2028)
+  status: confirmed
+  source: 13
+- name: ISO/IEC 29115:2013
+  what: Authentication assurance, LoA2 and LoA3 (ACCS, valid to Sep 2028)
+  status: confirmed
+  source: 13
 user_ratings:
 - platform: G2
   rating: 4.6
-  count: 129
+  count: 130
   checked: '2026-10'
   url: https://www.g2.com/products/sumsub/reviews
 use_case_verdicts: []
@@ -270,6 +274,10 @@ sources:
   publisher: Sumsub
   url: https://docs.sumsub.com/docs/local-data-processing
   accessed: '2026-10'
+- title: 'Sum and Substance Ltd: ID assurance certification'
+  publisher: Age Check Certification Scheme (ACCS)
+  url: https://accscheme.com/registry/id-assurance-certification/sum-and-substance-ltd/
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -280,14 +288,10 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- 'Binance and TransferGo: not on the current customers page; only a 2023 Benzinga article (not opened) mentions Binance. Removed. Bybit confirmed by a vendor case study (source 7); Wirex on the customers page (source 8).'
-- '595 employees: not found on vendor pages; removed.'
-- 'Clients 2,000+ is outdated; vendor now says 4,000+ (sources 2 and homepage).'
-- '"99% completion rate in roughly one second": not found. ID verification page states 20 seconds average (source 3).'
-- 'Trust Center lists 17 items (also ISO 22301, 27017, 27018, 31000, 9001, 29115, SOC 1 Type 1, pen testing). Only the main ones are listed in certifications; none opened as a certificate except iBeta letters on the iBeta list. The iBeta entries are under vendor name Raritex Trade, product Sumsub Liveness.'
-- 'The free trial is described for the plans in general, not per tier.'
-- 'G2 rating page showed 129 reviews; a G2 pricing page the same day showed 130. Themes could not be read; kept as general statements without counts.'
-- 'API documentation con: no source; replaced with a sourced plan-scope con.'
+- 'Trust Center (source 4) lists 17 certifications and reports, but its View Certificate and Request Report buttons carry no links in the fetched page (likely JavaScript or a request form). ISO/IEC 27001, SOC 2 Type 2, PCI DSS and ETSI/eIDAS stay vendor-stated; no certification body register entry for ISO/IEC 27001 was found. ISO/IEC TS 29003 and ISO/IEC 29115 are now confirmed on the ACCS register (source 13). The iBeta entries are under vendor name Raritex Trade, product Sumsub Liveness.'
+- 'Free trial: the pricing FAQ (source 1) states a 14-day trial with 50 free checks but does not say which plans it applies to. Sign-up buttons sit under Basic and Compliance.'
+- 'G2 (source 10) showed 4.6 from 130 reviews on 2026-10-22. Review themes could not be read; kept as general statements without counts. The Capterra URL tried (capterra.com/p/180836) opened a different product; no Capterra rating added.'
+- 'Capabilities check: features now state the plan for AML screening (Compliance), and for KYB, non-document checks, transaction monitoring and fraud prevention (custom plan), matching source 1 and the capabilities block. The pricing page lists AML screening only under Compliance; the custom plan lists ongoing monitoring but does not name AML screening, so "Compliance plan and above" for sanctions_pep is an inference. Adverse media is on the AML screening page (source 9) without a plan label.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

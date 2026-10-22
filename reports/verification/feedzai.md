@@ -30,3 +30,29 @@
 ## Score flag
 
 - None. Company is operating, independent and growing (new funding, acquisition). Removal of the Fortune 500 claim weakens a pro but does not change the product.
+
+## Follow-up 2026-10-22
+
+### Changed
+
+- Scale wording: "secures $9T in payments a year" → "processes $9T in payments a year" in seo.description, verdict, what_is, facts (Scale) and FAQ "How big is Feedzai?". The about-us page (source 1) says "$9T in payments processed every year" and "120B events processed yearly". The homepage (source 2) now shows different figures, "$19T in payments secured every year" and "140 billion events processed per year"; the page keeps the about-us figures and the conflict is logged in `verification_notes`.
+- Co-founders: Paulo Marques is now confirmed as a co-founder by a second source, EDP ("created in 2011 by Nuno Sebastião, Paulo Marques and Pedro Bizarro", source 12). The leadership page (source 4) lists Pedro Bizarro as co-founder and Chief Science Officer; Paulo Marques is not on it. The what_is wording is unchanged.
+- user_ratings added: Gartner Peer Insights 4.6 from 30 ratings (source 13); Capterra UK 4.7 from 11 reviews, on a listing named "Feedzai DS" (source 14). G2 still shows "Feedzai hasn't been reviewed yet".
+- Sources 12 to 14 added at the end of `sources`. `last_verified` and `updated` set to 2026-10-22.
+
+### Removed / unverifiable
+
+- Notes closed: the Fortune 500 and "four of five largest North American banks" claims are still absent from the current homepage and about page. The homepage only says "from the world's largest banks to the regulators who oversee them". San Mateo is still absent from the contact page, which lists six offices and names no headquarters. Paulo Marques is resolved (see above). The "$8T to $9T" note is replaced by the new $9T vs $19T note.
+- Still unresolved: certifications (trust.feedzai.com is robots-blocked, nothing listed); DemystData deal value (about $100M per ECO News from unnamed sources, $157m in an Australian headline reposted by Feedzai; not used).
+- New note: the deployment capability (`cloud`) may be incomplete. A Gartner Peer Insights reviewer runs an older on-premise version, and the Capterra UK listing shows on-premise for Windows and Linux. No current Feedzai page offers on-prem. Capabilities were not edited.
+- Features and FAQ checked against `capabilities`: no statement about deployment, and watchlist screening, transaction monitoring and identity match the record. No change needed.
+
+### Ranking cards
+
+`aml/banks`, entry `slug: feedzai`:
+- Pro "Secures $9T in payments a year, by its own figures, for customers such as Mastercard, Fiserv and CaixaBank" mixes the homepage verb with the about-us figure. Suggested: "Processes $9T in payments a year, by its own figures, for customers such as Mastercard, Fiserv and CaixaBank". If the editor adopts the homepage figure instead, use "Secures $19T in payments a year, by its own figures, ...". Mastercard, Fiserv and CaixaBank are still in the homepage logo bar.
+- Tagline, other pros and cons, `coverage: Global` and `legacy_price_shown: Custom pricing` remain correct.
+
+### Score flag
+
+- None. Possible on-prem support would, if anything, widen deployment options; the scale-figure conflict is between two vendor pages and does not change the product.
