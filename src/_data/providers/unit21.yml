@@ -137,8 +137,8 @@ capabilities:
     note: AI agents assist investigations
     source: 1
   identity_verification:
-    status: add_on
-    note: via your chosen KYC provider
+    status: 'no'
+    note: you bring your own KYC provider
     source: 6
   deployment:
     status: not_disclosed
@@ -211,7 +211,6 @@ verification_notes:
 - 'HQ: San Francisco from the Oct 2026 release dateline (source 8); the site and contact page give no street address.'
 - 'Pricing: unit21.ai/pricing returned an error again on 2026-10-22; no pricing structure confirmed.'
 - 'SOC 2 Type I and Type II (Armanino) vendor-stated on the Security page; no report or auditor letter seen.'
-- 'Capability check: identity_verification is add_on, but the KYC/KYB page (source 6) says customers bring their own KYC/KYB data partner and names no partner module; under the schema no may fit better. Capability not edited.'
 - 'Capterra lists Unit21 with 0 reviews (capterra.co.uk, 2026-10-22); not added to user_ratings.'
 application_category: Identity Verification Software
 author: andrii-klymenko

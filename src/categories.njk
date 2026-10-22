@@ -94,7 +94,7 @@ layout: v3.njk
     {%- if matrix %}
     <section aria-labelledby="cap-h">
       <h2 id="cap-h" class="h-section">Capabilities compared</h2>
-      <p class="cap-legend">Checked against each provider's own pages{% if matrix.checked %}, {{ matrix.checked | displayDate }}{% endif %}. Numbers link to the source on each review.</p>
+      <p class="cap-legend">Checked against each provider's own pages{% if matrix.checked %}, {{ matrix.checked | displayDate }}{% endif %}. Sources for each cell are on the provider's review.</p>
       <p class="cap-legend cap-legend--key"><span><i class="cap-dot cap-dot--full" aria-hidden="true"></i>In the core product</span> <span><i class="cap-dot cap-dot--half" aria-hidden="true"></i>Add-on module or higher plan</span> <span><i class="cap-dot cap-dot--empty" aria-hidden="true"></i>Not offered</span> <span><i class="cap-dot cap-dot--unknown" aria-hidden="true"></i>Not disclosed</span></p>
       <div class="card cap-matrix">
         <div class="cap-matrix__scroll" role="region" aria-label="Capability matrix, scrolls sideways" tabindex="0">
@@ -106,7 +106,7 @@ layout: v3.njk
               <tr>
                 <th scope="row"><a href="/providers/{{ row.slug }}/">{{ row.name }}</a></th>
                 {%- for cell in row.cells %}
-                <td>{% if cell.sym %}<i class="cap-dot cap-dot--{{ cell.sym }}" aria-hidden="true"></i>{% endif %}{{ cell.label }}{% if cell.source %} <a class="src-ref--inline fs-12" href="/providers/{{ row.slug }}/#src-{{ cell.source }}" aria-label="{{ row.name }} source {{ cell.source }}">[{{ cell.source }}]</a>{% endif %}{% if cell.note %}<small>{{ cell.note }}</small>{% endif %}</td>
+                <td>{% if cell.sym %}<i class="cap-dot cap-dot--{{ cell.sym }}" aria-hidden="true"></i>{% endif %}{{ cell.label }}{% if cell.note %}<small>{{ cell.note }}</small>{% endif %}</td>
                 {%- endfor %}
               </tr>
             {%- endfor %}

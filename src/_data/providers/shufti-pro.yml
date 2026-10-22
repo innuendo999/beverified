@@ -240,6 +240,10 @@ sources:
   publisher: Shufti
   url: https://shuftipro.com/wp-content/uploads/Cyber-Essentials-Plus.pdf
   accessed: '2026-10'
+- title: Cyber Essentials
+  publisher: Shufti Pro
+  url: https://shuftipro.com/cyber-essentials
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -252,9 +256,10 @@ legacy_editorial_note: null
 verification_notes:
 - 'ISO 27001:2022, SOC 2 Type II, PCI DSS (stated as v4.0) and Cyber Essentials Plus stay vendor-stated: the certifications, SOC 2 and PCI pages (re-checked 2026-10-22) name no certification body, CPA firm or QSA and offer reports or the AoC on request under NDA. trust.shuftipro.com is a Vanta trust centre that returns no content to automated fetch.'
 - 'Cyber Essentials Plus: the certificate Shufti links (source 13) is for Shufti Pro Limited, whole organisation, issued 2024-02-22, expiry 2025-02-22. No current certificate was found; the IASME certificate search is interactive and was not run.'
-- 'HQ uses the UK registered office (Companies House, source 10). The About page lists eight offices and names no headquarters.'
-- 'Homepage claims G2 4.6 and Trustpilot 4.8. The G2 page shows 4.5 from 155 reviews (recorded). Trustpilot was not recorded; user_ratings use G2, Capterra and Gartner Peer Insights only. No Gartner Peer Insights page for Shufti was found.'
-- 'Capterra reviews (source 12) include end users who completed a check, not only business buyers; its themes (image capture rejections, glitches) were not added to user_reviews.'
+- HQ uses the UK registered office (Companies House, source 10). The About page lists eight offices and names no headquarters.
+- Homepage claims G2 4.6 and Trustpilot 4.8. The G2 page shows 4.5 from 155 reviews (recorded). Trustpilot was not recorded; user_ratings use G2, Capterra and Gartner Peer Insights only. No Gartner Peer Insights page for Shufti was found.
+- Capterra reviews (source 12) include end users who completed a check, not only business buyers; its themes (image capture rejections, glitches) were not added to user_reviews.
+- '2026-10-22 Cyber Essentials Plus: Shufti''s Cyber Essentials page (source 14) says certificates are renewed annually, available on request and verifiable on the IASME certificate checker, but gives no number or dates. The IASME search could not be opened from our tools; status stays as recorded until the register is checked by hand.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
