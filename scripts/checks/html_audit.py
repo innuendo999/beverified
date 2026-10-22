@@ -3,6 +3,8 @@ python3 scripts/checks/html_audit.py [--strict]
 """
 import re, sys, pathlib, collections
 from bs4 import BeautifulSoup, Comment
+# Capability matrix filter (src/categories.njk, assets/js/cap-filter.js): data-cap-* hooks and one status attribute per column.
+CAP_DATA = ("data-cap-", "data-sanctions-pep", "data-adverse-media", "data-transaction-monitoring", "data-case-management", "data-identity-verification", "data-deployment", "data-published-pricing")
 
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "_site"
 FOOTPRINT = re.compile(r"claude|anthropic|chatgpt|openai|generated (by|with)|ai[- ]generated|lorem ipsum|\.dc\.html|design export|\{\{|\{%|\{#|\{post\.|\{author\.|\bTODO\b|FIXME", re.I)
@@ -27,7 +29,7 @@ for f in pages:
     for el in soup.find_all(True):
         for k, v in el.attrs.items():
             v = " ".join(v) if isinstance(v, list) else str(v)
-            if k.startswith("data-") and k not in ("data-filter", "data-cats", "data-consent"): flag("unexpected data- attribute", rel, k)
+            if k.startswith("data-") and k not in ("data-filter", "data-cats", "data-consent") and not k.startswith(CAP_DATA): flag("unexpected data- attribute", rel, k)
             if FOOTPRINT.search(v) and k not in ("href", "src") : flag("footprint in attribute", rel, f"{k}={v[:60]}")
     if soup.find("meta", attrs={"name": "generator"}): flag("meta generator", rel)
     if legacy: continue
