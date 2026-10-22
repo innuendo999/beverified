@@ -119,7 +119,36 @@ faq:
 - q: Who are RelyComply's main competitors?
   a: RelyComply competes with ComplyAdvantage, Napier, and Sanction Scanner, differentiating through a unified KYC/KYB/AML platform with a South African compliance focus.
 segments: []
-capabilities: {}
+capabilities:
+  sanctions_pep:
+    status: 'yes'
+    note: daily watchlist screening
+    source: 8
+  adverse_media:
+    status: 'yes'
+    note: part of customer screening
+    source: 8
+  transaction_monitoring:
+    status: 'yes'
+    note: rules plus ML, real time
+    source: 10
+  case_management:
+    status: 'yes'
+    note: low-code alert and case handling
+    source: 9
+  identity_verification:
+    status: 'yes'
+    note: document, selfie and liveness
+    source: 6
+  deployment:
+    status: cloud
+    note: cloud native
+    source: 11
+  published_pricing:
+    status: 'no'
+    note: quote on request
+    source: 1
+  checked: '2026-10'
 certifications:
 - name: ISO certification (SANCERT)
   what: Standard not named on the site
@@ -157,6 +186,22 @@ sources:
 - title: AML artificial intelligence
   publisher: RelyComply
   url: https://relycomply.com/aml-artificial-intelligence/
+  accessed: '2026-10'
+- title: KYC customer screening
+  publisher: RelyComply
+  url: https://relycomply.com/kyc-customer-screening/
+  accessed: '2026-10'
+- title: AML case management
+  publisher: RelyComply
+  url: https://relycomply.com/aml-case-management/
+  accessed: '2026-10'
+- title: AML transaction monitoring
+  publisher: RelyComply
+  url: https://relycomply.com/aml-transaction-monitoring/
+  accessed: '2026-10'
+- title: Modern integration
+  publisher: RelyComply
+  url: https://relycomply.com/aml-modern-integration/
   accessed: '2026-10'
 entity:
   wikidata: null

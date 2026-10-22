@@ -137,7 +137,36 @@ faq:
 - q: Who are Sanction Scanner's main competitors?
   a: Sanction Scanner competes with ComplyAdvantage, MemberCheck, and NameScan, differentiating through accessible, API-first mid-market pricing.
 segments: []
-capabilities: {}
+capabilities:
+  sanctions_pep:
+    status: 'yes'
+    note: sanctions, PEP and RCA in all plans
+    source: 1
+  adverse_media:
+    status: 'yes'
+    note: included in Starter
+    source: 1
+  transaction_monitoring:
+    status: add_on
+    note: Enterprise plan
+    source: 1
+  case_management:
+    status: 'yes'
+    note: unified case management in Fusion
+    source: 8
+  identity_verification:
+    status: 'no'
+    note: pairs with a separate IDV provider
+    source: 9
+  deployment:
+    status: cloud
+    note: Azure hosted, EU data residency
+    source: 8
+  published_pricing:
+    status: partial
+    note: Starter published, Enterprise quoted
+    source: 1
+  checked: '2026-10'
 certifications:
 - name: ISO/IEC 27001
   what: Information security
@@ -189,6 +218,14 @@ sources:
   publisher: G2
   url: https://www.g2.com/products/sanction-scanner/reviews
   accessed: '2026-10'
+- title: Fusion unified platform
+  publisher: Sanction Scanner
+  url: https://www.sanctionscanner.com/fusion
+  accessed: '2026-10'
+- title: complead homepage (formerly Sanction Scanner)
+  publisher: complead
+  url: https://complead.ai/
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -204,6 +241,8 @@ verification_notes:
 - A 2025 Deloitte Fast 50 listing (old page) could not be confirmed; the latest confirmed listing is 2024 (third consecutive year).
 - Employee count (26 to 27) dropped; no current source opened.
 - G2 themes not visible on the fetched page; Capterra page did not load. User review themes are kept as general statements only.
+- '2026-10-22 capabilities pass: the vendor now trades as complead; complead.ai describes itself as "complead, formerly Sanction Scanner" (source 9) and sanctionscanner.com comparison pages redirect there. Name, link and copy still say Sanction Scanner; review before release.'
+- '2026-10-22 capabilities pass: complead FAQ says it does not do document or biometric identity verification and runs alongside an IDV provider (source 9). Transaction monitoring is listed only in the Enterprise plan (source 1).'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

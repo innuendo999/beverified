@@ -120,7 +120,36 @@ faq:
 - q: Who are AMLRanger's competitors?
   a: AMLRanger competes in the sanctions/PEP screening space alongside ComplyAdvantage, Napier AI, and SEON.
 segments: []
-capabilities: {}
+capabilities:
+  sanctions_pep:
+    status: 'yes'
+    note: sanctions and PEP checks
+    source: 3
+  adverse_media:
+    status: 'yes'
+    note: adverse media checks
+    source: 3
+  transaction_monitoring:
+    status: not_disclosed
+    note: not announced
+    source: null
+  case_management:
+    status: not_disclosed
+    note: not announced
+    source: null
+  identity_verification:
+    status: not_disclosed
+    note: not announced for this product
+    source: null
+  deployment:
+    status: not_disclosed
+    note: not stated
+    source: null
+  published_pricing:
+    status: 'yes'
+    note: free with monthly credits, per press
+    source: 2
+  checked: '2026-10'
 certifications: []
 user_ratings: []
 use_case_verdicts: []
