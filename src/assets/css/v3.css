@@ -737,3 +737,29 @@ a.chip:hover { border-color: var(--line-hover); color: var(--ink); text-decorati
 .consent p { margin: 0; }
 .consent__actions { display: flex; gap: 8px; flex-shrink: 0; }
 @media (max-width: 560px) { .consent { flex-direction: column; align-items: stretch; } .consent__actions { justify-content: flex-end; } }
+
+/* Capability matrix (category pages): only the table scrolls; first column pinned */
+.cap-legend { font-size: 14px; color: var(--body); margin-bottom: 14px; }
+.cap-legend > span { white-space: nowrap; margin-right: 10px; }
+.cap-matrix { position: relative; padding: 0; overflow: hidden; }
+.cap-matrix::after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; width: 36px; background: linear-gradient(90deg, rgba(255,255,255,0), var(--surface)); pointer-events: none; }
+.cap-matrix__scroll { overflow-x: auto; overflow-y: hidden; scrollbar-width: thin; }
+.cap-matrix__scroll:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.cap-table { border-collapse: separate; border-spacing: 0; min-width: 980px; width: 100%; font-size: 15px; }
+.cap-table th, .cap-table td { padding: 12px 14px; text-align: left; vertical-align: top; }
+.cap-table thead th { font-size: 13px; font-weight: 500; color: var(--muted); white-space: nowrap; }
+.cap-table tbody th, .cap-table tbody td { border-top: 1px solid var(--line-soft); }
+.cap-table tr > :first-child { position: sticky; left: 0; z-index: 1; background: var(--surface); border-right: 1px solid var(--line); box-shadow: 6px 0 10px -6px rgba(20,20,26,0.15); white-space: nowrap; font-weight: 500; }
+.cap-table thead tr > :first-child { z-index: 2; }
+.cap-table td small { display: block; font-size: 13px; color: var(--muted); margin-top: 2px; max-width: 170px; }
+.cap-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 7px; vertical-align: 1px; border: 1.5px solid var(--ink); box-sizing: border-box; }
+.cap-dot--full { background: var(--ink); }
+.cap-dot--half { background: linear-gradient(90deg, var(--ink) 50%, transparent 50%); }
+.cap-dot--empty { background: transparent; }
+.cap-dot--unknown { width: 5px; height: 5px; border: 0; background: var(--faint); margin: 0 9px 0 2px; }
+.cap-legend .cap-dot { margin-right: 5px; }
+@media (max-width: 640px) {
+  .cap-table { font-size: 14px; min-width: 860px; }
+  .cap-table th, .cap-table td { padding: 10px 12px; }
+  .cap-table tbody th { white-space: normal; width: 124px; min-width: 124px; max-width: 124px; overflow-wrap: anywhere; }
+}
