@@ -1329,7 +1329,7 @@ age-verification:
     - Passive liveness tested by iBeta to ISO/IEC 30107-3 Level 3
     - Non-document and digital ID (mDL, eID, wallet) verification paths
     cons:
-    - Its Age Check Certification Scheme listing is vendor-stated; we did not confirm a register entry
+    - The ACCS register lists Incode but shows no certified scope or dates
     - Enterprise-oriented, so pricier for smaller teams
     - No public pricing
     legacy_price_shown: Custom pricing
@@ -1414,7 +1414,7 @@ age-verification:
     - Option to pay only for approved verifications (add-on, +$0.50 per check)
     - In-house manual review, with 24/7 coverage as an add-on
     cons:
-    - $135 monthly minimum on the self-serve plans
+    - $135 monthly minimum on the Basic plan ($325 on Premium)
     - Names no regulator approval for age assurance
     - Age-specific pricing is not published separately
     legacy_price_shown: $1.35/verification
