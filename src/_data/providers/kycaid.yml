@@ -25,14 +25,14 @@ link:
   rel: noopener   # editor agreement with KYCAID: followed link, no sponsored/nofollow
   label: false    # editor decision 22 Oct 2026: no "Sponsored link" label
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-19'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: KYCAID is a strong choice for small and mid-market teams that want a configurable KYC/AML verification flow without enterprise pricing, with published prices from €0.50 per document check and €0.75 for a document plus face bundle. It's less deep on watchlist data than category leaders like ComplyAdvantage, but its customisable flows and white-label option on the Enterprise plan make it a practical fit for startups and platforms that verify on behalf of their own clients.
 what_is:
 - KYCAID is a KYC/AML verification platform that lets businesses configure onboarding flows combining document checks, face verification with liveness, AML screening, address checks and company checks. Its team says it has worked in KYC since 2018; the UK company KYCAID Limited was incorporated in November 2018 with a registered office in London, and KYCAID's privacy policy names Compligate Ltd, a company registered in England, as the operating entity. KYCAID says it covers 240+ countries and territories and is used by 100+ companies, mainly fintechs, exchanges and platforms.
 features:
 - Document verification and face verification with liveness checks, covering 240+ countries and territories.
-- Built-in AML screening against PEP, sanctions, OFAC and other watchlists, plus ongoing monitoring.
+- Built-in AML screening against PEP, sanctions, OFAC and other watchlists, plus ongoing monitoring. The API docs also list a separate adverse media check, rule-based transaction monitoring and a crypto address check; these have no price on the pricing page.
 - Address, tax number, payment method, source of funds and mobile number checks as pay-as-you-go modules.
 - Company check (KYB) covering corporate documents, business address, UBOs and authorised persons.
 - Dashboard for customising the verification flow, with multiple workspaces in one account.
@@ -114,6 +114,16 @@ pricing:
     kind: official
     source: 7
     verified: '2026-10'
+  - label: Video verification (single module)
+    value: €0.50
+    kind: official
+    source: 7
+    verified: '2026-10'
+  - label: Financial viability check (single module)
+    value: €0.25
+    kind: official
+    source: 7
+    verified: '2026-10'
   - label: Fixed service fee (module price list)
     value: €100 / month, on top of verification prices
     kind: official
@@ -136,6 +146,10 @@ facts:
   value: London, UK (registered office)
   source: 4
   evidence: independent
+- label: Operator
+  value: Compligate Ltd, a private limited company registered in England (no. 15376538)
+  source: 5
+  evidence: independent
 - label: Regions
   value: 240+ countries and territories (per KYCAID, Oct 2026)
   source: null
@@ -147,11 +161,11 @@ facts:
 pros:
 - Customisable verification flows from one dashboard
 - Low published per-verification prices, with white labeling on the Enterprise plan
-- 24/7 chat support with a stated 15-minute response SLA
+- 24/7 chat support, with a stated 15-minute SLA for resolving issues
 cons:
 - Smaller watchlist database than category leaders
 - Single-module prices carry a fixed €100 monthly service fee
-- Public docs cover the API, hosted form and iframe; mobile SDKs are provided on request
+- Public docs cover the API, hosted form, iframe and mobile WebView; native mobile SDKs are provided on request
 alternatives:
 - slug: null
   name: KYCAID
@@ -170,17 +184,19 @@ alternatives:
   best_for: 4.6/5
 choose_instead:
 - slug: sumsub
-  text: you need deeper watchlist coverage and don't mind per-check pricing.
+  text: you need deeper watchlist coverage and don't mind a monthly minimum on its published plans.
 - slug: trulioo
-  text: per-check cost is the deciding factor and you run high volumes.
+  text: you run high volumes across many countries and are fine with pricing quoted on request.
 - slug: jumio
   text: you need a widely recognized, enterprise-proven brand with mature fraud-detection models.
 - slug: complyadvantage
   text: deep sanctions/PEP risk data matters more than workflow flexibility. It leads the category on data depth, at enterprise pricing.
 user_reviews:
   legacy_note: null
-  praise: []
-  criticize: []
+  praise:
+  - Business reviewers on Trustpilot mention smooth integration, OCR that works well and responsive staff.
+  criticize:
+  - Most negative Trustpilot reviews come from people being verified for KYCAID's clients, who report rejected documents and slow or automated support replies.
   by_profile:
   - Startups and small teams may value the low published per-verification price and dashboard-based setup.
   - Platforms verifying users for their own clients may want the white-label option on the Enterprise plan.
@@ -189,7 +205,7 @@ faq:
 - q: How much does KYCAID cost?
   a: A single document check costs €0.50 and a company check €10, on a module price list that adds a fixed €100 monthly service fee. Bundles cost €0.75 for Basic KYC (document and face), €0.85 with AML screening and €1.10 with address verification, with €50 credit on registration. Enterprise pricing is tailored from 10,000 verifications a month.
 - q: Does KYCAID support AML watchlist screening?
-  a: Yes. KYCAID's AML screening covers PEPs, sanctions, OFAC and other regulatory watchlists, and it is included in the Standard and Advanced KYC bundles. Ongoing monitoring is available as a separate monthly module.
+  a: Yes. KYCAID's AML screening covers PEPs, sanctions, OFAC and other regulatory watchlists, and it is included in the Standard and Advanced KYC bundles. Ongoing monitoring is available as a separate monthly module. The API docs also list a separate adverse media check, which is not priced on the pricing page.
 - q: Is KYCAID good for startups?
   a: Yes, its pay-as-you-go pricing and dashboard for customising verification flows make it accessible for startups that don't have dedicated compliance engineering resources.
 - q: Can KYCAID be white-labeled?
@@ -213,7 +229,12 @@ certifications:
   what: Payment card data security
   status: vendor_stated
   source: 3
-user_ratings: []
+user_ratings:
+- platform: Trustpilot
+  rating: 2.2
+  count: 38
+  checked: '2026-10'
+  url: https://www.trustpilot.com/review/kycaid.com
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
@@ -245,7 +266,35 @@ sources:
 - title: KYCAID homepage price list (Choice of services)
   publisher: KYCAID
   url: https://kycaid.com/
-  accessed: 2026-10
+  accessed: '2026-10'
+- title: Kycaid reviews
+  publisher: Trustpilot
+  url: https://www.trustpilot.com/review/kycaid.com
+  accessed: '2026-10'
+- title: Adverse media check (API docs)
+  publisher: KYCAID
+  url: https://docs.kycaid.com/risks-check/adverse-media-check
+  accessed: '2026-10'
+- title: Transaction monitoring (API docs)
+  publisher: KYCAID
+  url: https://docs.kycaid.com/risks-check/transaction-monitoring
+  accessed: '2026-10'
+- title: Crypto address check (API docs)
+  publisher: KYCAID
+  url: https://docs.kycaid.com/risks-check/crypto
+  accessed: '2026-10'
+- title: Non-doc verification, South Africa (API docs)
+  publisher: KYCAID
+  url: https://docs.kycaid.com/non-doc/south-africa
+  accessed: '2026-10'
+- title: Form integration (API docs)
+  publisher: KYCAID
+  url: https://docs.kycaid.com/guides/form-integration
+  accessed: '2026-10'
+- title: COMPLIGATE LTD, persons with significant control
+  publisher: Companies House
+  url: https://find-and-update.company-information.service.gov.uk/company/15376538/persons-with-significant-control
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -256,16 +305,15 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- 'Pricing: old Starter $99/mo (500), Growth $299/mo (2,000), overage rates and 14-day trial are not on the vendor pricing page. Replaced with published EUR per-verification bundles.'
-- 'Founded / HQ: old page said 2019, Vilnius. No source found. KYCAID Limited was incorporated 9 Nov 2018 (Companies House); the about page says "Since 2018". G2 lists HQ as Kyiv, Ukraine (seller-supplied); privacy policy names Compligate Ltd (England, incorporated 29 Dec 2023) as operator. Operational HQ not confirmed.'
-- 'Certifications: ISO 27001, SOC 2 Type 2 and PCI DSS are stated only in the privacy policy ("continuously verified"); no certificate or register entry found. GDPR is a regulation, not a certification, and was dropped from the list.'
-- '200+ document types: not found; the about page states 200+ countries and territories.'
-- 'Mobile SDK: not listed in the public docs index; KYCAID told us (Oct 2026) that mobile SDKs are provided on request.'
-- 'SOC 2: KYCAID told us (19 Oct 2026) it does not hold SOC 2 yet and expects it in early 2027, although its privacy policy still lists SOC 2 Type 2; removed from certifications. Re-check in Q1 2027.'
-- 'South Africa: KYCAID confirmed to BeVerified by email on 21 Oct 2026 that it serves South African customers (document and face verification); added to the South Africa ranking. No Home Affairs database check is listed on its pricing page.'
-- 'Coverage: 240+ countries and territories confirmed by KYCAID to BeVerified by email on 19 Oct 2026 (vendor-stated); its public about page still says 200+.'
-- 'Adverse media: the old FAQ said AML screening includes adverse media; the pricing page lists PEPs, sanctions, watchlists, OFAC and regulatory lists only. Removed.'
-- 'User ratings: G2 shows 0 reviews for Kycaid ID Verification. Themes and counts removed.'
+- 'HQ: operational HQ not confirmed. Only registered offices are on record: KYCAID Limited (no. 11670407, London, incorporated 9 Nov 2018, active) and Compligate Ltd (no. 15376538, London, incorporated 29 Dec 2023, active), which the privacy policy names as the operator (sources 4, 5, 3). Companies House lists only Ukrainian-resident individuals as persons with significant control of both; Compligate''s controlling person changed on 12 Nov 2025 to a single holder of 75% or more (source 14). Ownership by another company not found. Neither G2 nor the about page now gives an HQ.'
+- 'Certifications: ISO 27001 and PCI DSS are stated only in the privacy policy (last updated 17 Oct 2025: "Compliance with ... ISO/IEC 27001, SOC 2 Type 2, and PCI DSS standards is continuously verified"). No certificate, certification body or register entry found on 22 Oct 2026. Kept as vendor_stated.'
+- 'SOC 2: KYCAID told us (19 Oct 2026) it does not hold SOC 2 yet and expects it in early 2027, although its privacy policy (17 Oct 2025) still lists SOC 2 Type 2; kept out of certifications. Re-check in Q1 2027.'
+- 'Mobile SDK: still not in the public docs. The form integration guide covers a direct form URL, iframe embedding and a native WebView on iOS and Android (source 13). "SDKs on request" is vendor-stated (KYCAID, Oct 2026).'
+- 'Coverage: 240+ countries and territories is vendor-stated by email (19 Oct 2026); kycaid.com/about-us still says "200 +" on 22 Oct 2026. The docs countries endpoint gives no count. Regions fact has no public source.'
+- 'South Africa: KYCAID confirmed by email (21 Oct 2026) that it serves South African customers. The API docs now list South African ID number (SAID) checks that query "official records", with a photo and a name-match variant (source 12). The data source (e.g. Home Affairs) is not named and no price is on the pricing page.'
+- 'Adverse media, transaction monitoring, crypto address check: listed in the API docs (sources 9, 10, 11) but not on the pricing page or homepage price list. Price, plan and availability not published. The pricing page AML module still lists PEPs, sanctions, watchlists, OFAC and regulatory lists only.'
+- 'Watchlist source: the blacklist databases doc names no data provider; its sample response shows "Open Sanctions Default". "Smaller watchlist database than category leaders" is an editorial comparison, not a measured figure.'
+- 'User ratings: G2 (Kycaid ID Verification) and Capterra (Kycaid) show 0 reviews; no Gartner Peer Insights page found. Trustpilot 2.2 from 38 reviews is mostly end users being verified, not buyers.'
 - 'Verification speed: about page gives both "20-sec" and "under 11 seconds"; not used.'
 application_category: Identity Verification Software
 author: andrii-klymenko
