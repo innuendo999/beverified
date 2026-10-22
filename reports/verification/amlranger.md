@@ -48,3 +48,22 @@
 ### Score flag
 
 - No new flag. The free tier and the narrow scope found on 2026-10-18 still stand; the 2026-10-18 flag (score assumed a standalone screening vendor with case management) remains open for the editor.
+
+## Re-score 2026-10-22
+
+Owner-approved direction: lower. Score 4.2 Good → 3.3 Fair. Scored as what the record shows: a free AI screening assistant inside Ondato, not a standalone vendor.
+
+| Criterion | Weight | Sub-score | Evidence |
+|---|---|---|---|
+| Compliance & certifications | 25 | 3.2 | vendor |
+| Coverage | 20 | 3.4 | vendor |
+| Pricing transparency | 20 | 3.6 | vendor |
+| Integration & API depth | 15 | 2.8 | vendor |
+| Support responsiveness | 10 | not scored | none |
+| Track record | 10 | 3.7 | independent |
+
+Arithmetic (support excluded, weights sum to 90): (25 × 3.2 + 20 × 3.4 + 20 × 3.6 + 15 × 2.8 + 10 × 3.7) / 90 = (80 + 68 + 72 + 42 + 37) / 90 = 299 / 90 = 3.322 → 3.3.
+
+- Support responsiveness: score null, "Not publicly disclosed". amlranger.ai renders only metadata to our tools, no support channel, hours or SLA is described in the sources, and there are no user reviews.
+- Compliance scores the product, not Ondato: Ondato's company badges are not attached to AML Ranger.
+- `node scripts/checks/provider.mjs` flags `score` and `grade` as changed against HEAD; this is the intended, owner-approved change.

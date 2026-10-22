@@ -11,8 +11,8 @@ logo:
   background: '#5A2FD1'
   wordmark: null
 tagline: Ondato's free AI assistant for sanctions, PEP and adverse-media checks
-score: 4.2
-grade: Good
+score: 3.3
+grade: Fair
 primary_category: aml
 legacy_rank_claim: 'ranked #6 in AML'
 categories:
@@ -160,7 +160,37 @@ capabilities:
 certifications: []
 user_ratings: []
 use_case_verdicts: []
-score_breakdown: []
+score_breakdown:
+- criterion: Compliance & certifications
+  weight: 25
+  score: 3.2
+  note: "No certifications are claimed for AML Ranger itself. Ondato's about page shows GDPR, an unnamed ISO badge and other badges for the company in general, not for this product."
+  evidence: vendor
+- criterion: Coverage
+  weight: 20
+  score: 3.4
+  note: "Three assistants cover sanctions, PEP and adverse-media checks with sources in 100+ languages, according to Ondato, but the data sources are not named and case management, transaction monitoring and ongoing monitoring are not announced."
+  evidence: vendor
+- criterion: Pricing transparency
+  weight: 20
+  score: 3.6
+  note: "Ondato confirms the web portal is free with credits that renew each month, but the credit allowance and any paid tiers are not published."
+  evidence: vendor
+- criterion: Integration & API depth
+  weight: 15
+  score: 2.8
+  note: "AML Ranger runs in a web portal. Ondato's blog says it can integrate with banks' systems via API while amlranger.ai says it needs no setup or APIs, and no API documentation is published."
+  evidence: vendor
+- criterion: Support responsiveness
+  weight: 10
+  score: null
+  note: "Not publicly disclosed in the sources we could read: no support channel, hours or SLA is described for AML Ranger, and there are no G2, Capterra or Gartner Peer Insights reviews."
+  evidence: null
+- criterion: Track record
+  weight: 10
+  score: 3.7
+  note: "AML Ranger only launched in October 2025, so it has little history of its own. Its maker Ondato was founded in 2018 and is headquartered in London."
+  evidence: independent
 hands_on: null
 sources:
 - title: Ondato's AML Ranger automates real-time AML checks

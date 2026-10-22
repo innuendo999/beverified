@@ -38,3 +38,22 @@
 
 ### Score flag
 - Yes, unchanged from 2026-10-18 and now firmer. The core company facts (legal entity, location, founding, who runs it) cannot be confirmed from any independent source; the only location signal is a self-reported country on Trustpilot. Nothing suggests the product has shut down (site and console are live), but the 4.1 "Good" score rests on vendor marketing alone. Score unchanged; editor review recommended.
+
+## Re-score 2026-10-22
+
+Owner-approved direction: lower to 3.5 or below. Score 4.1 Good → 3.2 Fair. Sub-scores use only facts already in the record (sources 1 to 6, verification_notes).
+
+| Criterion | Weight | Sub-score | Evidence |
+|---|---|---|---|
+| Compliance & certifications | 25 | 2.9 | vendor |
+| Coverage | 20 | 3.8 | vendor |
+| Pricing transparency | 20 | 3.2 | vendor |
+| Integration & API depth | 15 | 3.3 | vendor |
+| Support responsiveness | 10 | 3.0 | vendor |
+| Track record | 10 | 2.6 | independent |
+
+Arithmetic: (25 × 2.9 + 20 × 3.8 + 20 × 3.2 + 15 × 3.3 + 10 × 3.0 + 10 × 2.6) / 100 = (72.5 + 76 + 64 + 49.5 + 30 + 26) / 100 = 318 / 100 = 3.18 → 3.2.
+
+- All six criteria scored. Integration is scored on the self-service console and no-code builder; no API documentation, SDK or sandbox is cited in the sources.
+- Grade "Fair" is the new label for 3.0 to 3.6.
+- `node scripts/checks/provider.mjs` flags `score` and `grade` as changed against HEAD; this is the intended, owner-approved change.

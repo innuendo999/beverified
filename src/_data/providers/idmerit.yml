@@ -11,7 +11,7 @@ logo:
   background: '#8A5CF0'
   wordmark: null
 tagline: Budget-positioned identity-verification API with broad country and data-source coverage
-score: 4.3
+score: 3.8
 grade: Good
 primary_category: cheap-kyc
 legacy_rank_claim: 'ranked #1 in Cheap KYC'
@@ -147,7 +147,37 @@ user_ratings:
   checked: '2026-10'
   url: https://www.capterra.com/p/172041/FS-ISAC
 use_case_verdicts: []
-score_breakdown: []
+score_breakdown:
+- criterion: Compliance & certifications
+  weight: 25
+  score: 3.8
+  note: "The homepage shows SOC 2 Type 2 and ISO 27001 badges and states GDPR, HIPAA and CCPA compliance, but the only public evidence is an April 2020 press release on ISO/IEC 27001:2013, and no current certificate or SOC 2 report was found."
+  evidence: vendor
+- criterion: Coverage
+  weight: 20
+  score: 4.2
+  note: "The homepage claims 180+ countries and territories, 440+ data sources and 580+ ID types, plus AML screening and business verification, but other IDMERIT pages give lower country figures."
+  evidence: vendor
+- criterion: Pricing transparency
+  weight: 20
+  score: 3.5
+  note: "IDMERIT publishes no rate card and says prices vary by country, module and volume. The only figure is a Basic plan from $0.10 per user per month on Capterra, and that unit is unclear for an identity check."
+  evidence: vendor
+- criterion: Integration & API depth
+  weight: 15
+  score: 3.6
+  note: "IDMERIT sells its checks as an API and its FAQ describes free testing in a sandbox with sample data, but API documentation and SDKs are not described in the sources for this review."
+  evidence: vendor
+- criterion: Support responsiveness
+  weight: 10
+  score: 3.8
+  note: "Capterra reviewers describe responsive support, but there is little public information on support channels or SLAs, and the number of reviews is small."
+  evidence: user
+- criterion: Track record
+  weight: 10
+  score: 3.5
+  note: "IDMERIT says it has sourced identity data for over a decade but gives no founding year. Third-party listings disagree on that year and on the HQ city, and no company register entry was found."
+  evidence: independent
 hands_on: null
 sources:
 - title: IDMERIT homepage (services, coverage, compliance)

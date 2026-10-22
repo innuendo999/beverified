@@ -40,3 +40,22 @@
 
 ### Score flag
 - None new. The earlier flag (own IDV since January 2026; AML not in Starter) still stands for editor review.
+
+## Re-score 2026-10-22
+
+Owner-approved direction: raise from 4.5. **Not applied.** `score`, `grade` and `score_breakdown` in seon.yml are unchanged (4.5 Very Good, empty breakdown), because scoring the record's facts on the same scale as the other breakdowns gives a lower score, not a higher one. Owner decision needed.
+
+Proposed breakdown (facts from the record only):
+
+| Criterion | Weight | Sub-score | Evidence | Basis |
+|---|---|---|---|---|
+| Compliance & certifications | 25 | 4.3 | vendor | ISO/IEC 27001, ISO/IEC 27017 and SOC 2 Type 2 are vendor-stated only (no auditor, date or certificate number; 2020 note names Eurocert); no ISO/IEC 30107-3 test for the new liveness check |
+| Coverage | 20 | 4.4 | vendor | 1,100+ signals, AML screening and transaction monitoring, own document, NFC, liveness and proof-of-address IDV since Jan 2026; IDV Europe first, no document or country counts |
+| Pricing transparency | 20 | 4.3 | vendor | Starter $699/mo published with limits and exclusions; Premium, which holds AML and case management, is quote-only; trial length not stated |
+| Integration & API depth | 15 | 4.1 | vendor | Sold as an API with call limits per plan; API docs, SDKs and sandbox not described in the sources |
+| Support responsiveness | 10 | 4.0 | user | Large G2 and Capterra review base, but review text (including support comments) not visible; no published hours or SLA in the sources |
+| Track record | 10 | 4.6 | independent | Founded 2017, 5,000+ businesses, $80M Series C (Sept 2025); no adverse findings in the record |
+
+Arithmetic: (25 × 4.3 + 20 × 4.4 + 20 × 4.3 + 15 × 4.1 + 10 × 4.0 + 10 × 4.6) / 100 = (107.5 + 88 + 86 + 61.5 + 40 + 46) / 100 = 429 / 100 = 4.29 → 4.3 (Good).
+
+Why it cannot reach 4.6: on the current scale, vendor-stated certification scores about 4.2 (enigma) and public certificates 4.3 to 4.5 (21analytics, paravision); pricing with one tier published sits below zyphe (4.5) and enigma (4.9, full rate card). Scoring every criterion 0.2 higher still gives 449 / 100 = 4.49 → 4.5. G2 and Capterra ratings are excluded by the methodology. Options: keep 4.5 with no breakdown; publish the breakdown at 4.3; or add verifiable evidence first (certificate register entries, an ISO/IEC 30107-3 result, public API docs) and re-score.
