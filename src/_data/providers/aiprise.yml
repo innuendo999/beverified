@@ -22,8 +22,8 @@ link:
   url: https://www.aiprise.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: AiPrise combines individual KYC and business KYB verification through one API, aimed at businesses onboarding customers across 200+ countries, including many emerging markets. Its AI agents and Compliance Co-pilot target case review and analyst workload. It is a young company (Y Combinator, Summer 2022) that raised a $12.5M Series A in October 2025, so its track record is shorter than the category leaders'.
 what_is:
 - AiPrise is a KYC/KYB verification company based in San Francisco, founded in 2022 by Chaitanya Sarda (CEO) and Rushabh Shah (Co-CEO) and part of Y Combinator's Summer 2022 batch. It raised a $12.5M Series A led by Headline in October 2025. It provides identity and business verification across 200+ countries, with government eKYC checks in 70+ countries, and adds AI agents and a Compliance Co-pilot for compliance casework.
@@ -35,7 +35,7 @@ features:
 - Compliance Co-pilot for case review.
 - AI agents (AML, document and website agents); the vendor claims the AML agent cuts false positives by 95%.
 pricing:
-  summary: Pricing is not published; AiPrise quotes on request based on volume and requirements. Capterra lists no free trial.
+  summary: AiPrise does not publish a price list on its own website and quotes on request based on volume and requirements. G2's listing, with pricing supplied by the vendor and last updated in December 2025, shows KYC from $1.25 and KYB from $3.00 per verification. G2 lists a free trial; Capterra lists none.
   plans:
   - tier: Custom Quote
     price: Custom
@@ -45,14 +45,29 @@ pricing:
   verified: '2026-10'
   items:
   - label: Published prices
-    value: Not publicly disclosed; quote on request
+    value: Not published on aiprise.com; quote on request
     kind: official
     source: 1
     verified: '2026-10'
-  - label: Free trial
-    value: Not available (per Capterra listing)
+  - label: KYC (G2 listing, vendor-supplied, Dec 2025)
+    value: From $1.25 per verification
+    kind: third_party
+    source: 7
+    verified: '2026-10'
+  - label: KYB (G2 listing, vendor-supplied, Dec 2025)
+    value: From $3.00 per verification
+    kind: third_party
+    source: 7
+    verified: '2026-10'
+  - label: Free trial (Capterra listing)
+    value: Not available
     kind: third_party
     source: 6
+    verified: '2026-10'
+  - label: Free trial (G2 listing)
+    value: Listed, with no length or terms given
+    kind: third_party
+    source: 7
     verified: '2026-10'
 facts:
 - label: From
@@ -73,6 +88,10 @@ facts:
   value: $12.5M Series A led by Headline (Oct 2025)
   source: 3
   evidence: vendor
+- label: Customers
+  value: 200+ businesses
+  source: 1
+  evidence: vendor
 pros:
 - Wide global and emerging-market coverage through a single API
 - AI agents and a Compliance Co-pilot aimed at cutting manual review work
@@ -80,7 +99,7 @@ pros:
 cons:
 - Younger brand with smaller scale than category leaders
 - Few public user reviews so far
-- No published pricing
+- No price list on its own website; G2 shows only starting prices
 alternatives:
 - slug: idmerit
   name: IDMERIT
@@ -101,9 +120,11 @@ choose_instead:
 user_reviews:
   legacy_note: null
   praise:
+  - 'Support and setup: G2 reviewers most often mention responsive customer support, and some describe a quick setup.'
   - 'Automation: reviewers describe faster compliance decisions with less manual work.'
   - 'Coverage breadth: users note a fit for onboarding customers and businesses across many countries.'
   criticize:
+  - 'Document checks: some G2 reviewers report genuine documents rejected without a clear reason and alerts that are not always accurate.'
   - 'Track record: a young vendor with few public reviews so far.'
   - 'Brand scale: smaller than established category leaders.'
   by_profile:
@@ -112,7 +133,7 @@ user_reviews:
   - Enterprises wanting a more established vendor track record often evaluate larger competitors.
 faq:
 - q: How much does AiPrise cost?
-  a: AiPrise does not publish pricing; its KYC/KYB platform is quoted based on client volume and requirements.
+  a: AiPrise does not publish a price list on its own website; its KYC/KYB platform is quoted based on client volume and requirements. Its G2 listing, with pricing supplied by the vendor, shows KYC from $1.25 and KYB from $3.00 per verification.
 - q: What is AiPrise's AI Compliance Copilot?
   a: It is an AI assistant for compliance case review. AiPrise also offers AI agents for AML screening, document checks and website reviews.
 - q: Does AiPrise support KYB?
@@ -129,7 +150,7 @@ certifications:
 - name: SOC 2 Type II
   what: Security controls report
   status: vendor_stated
-  source: 1
+  source: 8
 user_ratings:
 - platform: G2
   rating: 4.7
@@ -169,6 +190,14 @@ sources:
   publisher: Capterra
   url: https://www.capterra.com/p/10030052/AiPrise/
   accessed: '2026-10'
+- title: AiPrise pricing
+  publisher: G2
+  url: https://www.g2.com/products/aiprise/pricing
+  accessed: '2026-10'
+- title: Security, compliance and data protection at AiPrise
+  publisher: AiPrise
+  url: https://support.aiprise.com/articles/2978615735-security-compliance-data-protection-at-aiprise
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -179,15 +208,13 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- 'The vendor pricing page (aiprise.com/pricing) could not be loaded on 2026-10-18; no prices were found on the homepage, G2 or Capterra. Re-check the pricing page before treating "not published" as final.'
-- 'Founded 2022 and San Francisco HQ come from the Y Combinator profile (no evidence label: accelerator listing, not a registry). About and security pages could not be loaded.'
-- 'Co-founder surname differs between sources: Y Combinator and Pulse 2.0 say Rushabh Shah; Tech Company News says Rushabh Doshi. We use Shah.'
-- 'Total funding not confirmed from a primary source (one article says $2.0M seed plus $12.5M Series A, about $14.5M). Only the Series A is shown.'
-- 'Customer count: homepage says 200+ compliance teams; an Oct 2025 article said 150+ clients. Not shown as a fact.'
-- 'Old feature claims "ownership verification and social signals", "biometric selfie match", "customizable rule engines" and "automated EDD report generation" not found on the homepage. Reworded to current homepage features.'
-- 'SOC 2 Type II is a homepage footer badge; no report opened. ISO 27001 not claimed.'
-- 'Vespia choose-instead reason dropped "300+ jurisdictions" (Vespia figure not re-checked in this pass).'
-- 'G2 rating visible (4.7, 28 reviews); review text not read in full, so themes are general statements without counts.'
+- 'aiprise.com/pricing returned a client error on 2026-10-18 and again on 2026-10-22; the homepage shows no prices. The KYC $1.25 and KYB $3.00 starting prices come from G2''s listing (vendor-supplied, pricing last updated 29 Dec 2025), not from AiPrise''s own site. Confirm with the vendor.'
+- 'Free trial conflicts between listings: G2 lists one with no terms, Capterra lists none. Both are shown as third-party.'
+- 'Founded 2022 and San Francisco HQ come from the Y Combinator profile (re-checked 2026-10-22; accelerator listing, not a registry). aiprise.com has no About page; trust.aiprise.com and OpenCorporates did not render.'
+- 'Total funding not confirmed from a primary source (one article says $2.0M seed plus $12.5M Series A, about $14.5M). Series A coverage (Pulse 2.0, FinTech Global, Axios) gives no total. Only the Series A is shown.'
+- 'SOC 2 Type II is vendor-stated (homepage badge; support article says it is audited annually by an unnamed independent firm); no report opened. ISO 27001 not claimed. The homepage shows a GDPR badge but the support article says AiPrise is still working toward full GDPR compliance; GDPR is not listed.'
+- 'Alternative Vespia: vespia.io shows a "Veriff is acquiring Vespia" banner and its sign-up buttons go to veriff.com (Oct 2026). The alternatives list is a locked field; editor to review.'
+- 'No Gartner Peer Insights page for AiPrise was found.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

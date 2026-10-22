@@ -22,11 +22,11 @@ link:
   url: https://www.veriff.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: 'Veriff pairs automated decisions with human review (on its Plus and Premium plans) and says it supports 12,500+ government-issued ID documents from 230+ countries and territories. Its passive liveness check passed iBeta''s ISO/IEC 30107-3 Level 2 test in 2024, and its UK service is on the government''s DIATF register. Self-serve plans are published, with a $49, $99 or $209 monthly minimum plus $0.80 to $1.89 per verification. That is unusually transparent for this category, though the per-check fees on the higher tiers cost more than budget-first competitors.'
 what_is:
-- 'Veriff is an identity-verification company based in Tallinn, Estonia. Veriff OÜ was entered in the Estonian business register on 20 October 2015. Kaarel Kotkas founded the company and is its CEO; Janer Gorohhov is also listed as a co-founder. Veriff acquired device-intelligence company BrowserID in January 2019, opened its first foreign office in New York later that year, and raised a $100 million Series C at a reported $1.5 billion valuation in early 2022.'
+- 'Veriff is an identity-verification company based in Tallinn, Estonia. Veriff OÜ was entered in the Estonian business register on 20 October 2015. Kaarel Kotkas founded the company and is its CEO; Veriff also names Janer Gorohhov as a co-founder. Veriff acquired device-intelligence company BrowserID in January 2019, opened a New York office in November 2019, and raised a $100 million Series C at a reported $1.5 billion valuation in early 2022.'
 - 'Veriff says it supports 12,500+ government-issued ID documents from 230+ countries and territories and serves 3,000+ businesses. In February 2026 it announced the acquisition of Estonian KYB provider Vespia, and it now offers business verification through a limited access program.'
 features:
 - Document verification and biometric face match; Veriff lists 12,500+ supported ID documents.
@@ -93,6 +93,11 @@ pricing:
     kind: official
     source: 1
     verified: '2026-10'
+  - label: Additional extracted data fields (Plus and Premium)
+    value: +$0.30 per verification
+    kind: official
+    source: 1
+    verified: '2026-10'
   - label: Free trial
     value: 15 days, up to 50 sessions, no credit card
     kind: official
@@ -122,6 +127,10 @@ facts:
 - label: Documents
   value: 12,500+ ID documents
   source: 3
+  evidence: vendor
+- label: Languages
+  value: 50 languages and dialects
+  source: 4
   evidence: vendor
 - label: Certification
   value: iBeta ISO/IEC 30107-3 Level 2 liveness
@@ -176,7 +185,7 @@ faq:
 - q: How many countries does Veriff cover?
   a: Veriff says it supports 12,500+ government-issued ID documents from 230+ countries and territories.
 - q: Who founded Veriff?
-  a: Kaarel Kotkas founded Veriff in 2015 and is its CEO; Janer Gorohhov is also listed as a co-founder. Veriff OÜ was registered in Estonia in October 2015, with its legal address in Tallinn.
+  a: Kaarel Kotkas founded Veriff in 2015 and is its CEO; Veriff also names Janer Gorohhov as a co-founder. Veriff OÜ was registered in Estonia in October 2015, with its legal address in Tallinn.
 - q: Does Veriff offer KYB?
   a: Yes. Veriff announced the acquisition of KYB provider Vespia in February 2026. Its business verification product draws on register data from 300+ jurisdictions and is offered through a limited access program.
 - q: What is the best alternative to Veriff?
@@ -210,6 +219,14 @@ certifications:
   what: UK cyber security baseline
   status: vendor_stated
   source: 8
+- name: FIDO Face Verification, Level 2
+  what: Face matching, Full Auto IDV product
+  status: confirmed
+  source: 22
+- name: FIDO Document Authenticity (DocAuth)
+  what: Document checks, Full Auto IDV product
+  status: confirmed
+  source: 22
 user_ratings:
 - platform: G2
   rating: 4.5
@@ -221,6 +238,16 @@ user_ratings:
   count: 239
   checked: '2026-10'
   url: https://www.trustpilot.com/review/veriff.com
+- platform: Capterra
+  rating: 4.7
+  count: 3
+  checked: '2026-10'
+  url: https://www.capterra.com/p/197760/Veriff/reviews/
+- platform: Gartner Peer Insights
+  rating: 4.3
+  count: 8
+  checked: '2026-10'
+  url: https://www.gartner.com/reviews/product/veriff
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
@@ -301,6 +328,30 @@ sources:
   publisher: Trustpilot
   url: https://www.trustpilot.com/review/veriff.com
   accessed: '2026-10'
+- title: 4 insights from Veriff's co-founder (27 July 2023)
+  publisher: Veriff
+  url: https://www.veriff.com/podcasts/insights-veriffs-cofounder
+  accessed: '2026-10'
+- title: Veriff hires a top executive from Stack Overflow and opens an office in New York (13 November 2019)
+  publisher: Cision News (Veriff Inc)
+  url: https://news.cision.com/veriff-inc/r/veriff-hires-a-top-executive-from-stack-overflow-and-opens-an-office-in-new-york,c2959693
+  accessed: '2026-10'
+- title: Face Verification FIDO certified products (also lists DocAuth entries)
+  publisher: FIDO Alliance
+  url: https://fidoalliance.org/certification/identity-verification/face-verification/fido-certified-products/
+  accessed: '2026-10'
+- title: Veriff FIDO Alliance certification (press release, 22 April 2026)
+  publisher: Veriff
+  url: https://www.veriff.com/pr-news/veriff-fido-alliance-certification
+  accessed: '2026-10'
+- title: Veriff reviews
+  publisher: Capterra
+  url: https://www.capterra.com/p/197760/Veriff/reviews/
+  accessed: '2026-10'
+- title: Veriff reviews
+  publisher: Gartner Peer Insights
+  url: https://www.gartner.com/reviews/product/veriff
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -311,15 +362,12 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- Language count differs between Veriff pages (48 on the about page, 50 on the homepage); removed from prose.
-- Pricing page calculator and the bundled add-on total ($0.09) do not reconcile with the listed per-unit prices; we show only the per-unit figures.
-- Veriff pricing pages showed a "not available in your location" banner from our fetch location; prices are as displayed.
-- Co-founder Janer Gorohhov and the New York office (2019) come from Wikipedia only. London (2020) and Barcelona (2021) offices were not confirmed and were removed.
-- ISO/IEC 27001, SOC 2 Type II and Cyber Essentials are vendor-stated; trust.veriff.com was not opened.
-- Human review applies to Plus and Premium (hybrid); Essential is fully automated.
-- KYB is offered through a limited access program as of Oct 2026; general availability not confirmed.
-- Old claims "archive-access limits" and "low-bandwidth mobile slows decisions" were not found in visible G2 reviews and were removed.
-- Capterra listing at /p/180802/Veriff/ shows reviews of an unrelated expense product; not used.
+- 'Pricing page re-checked 2026-10-22: the add-on block still shows "Total: $0.09 per verification" and the calculator shows $660.00 for 600 Essential verifications; neither reconciles with the listed per-unit prices. We show only the per-unit figures.'
+- 'Veriff pricing, KYB and sign-up pages show a "not available in your location" banner from our fetch location; prices are as displayed.'
+- 'ISO/IEC 27001, SOC 2 Type II and Cyber Essentials remain vendor-stated: the security page names no certification body or dates, and trust.veriff.com did not render its content.'
+- 'KYB is still a limited access program (sign-up page says the full KYB service is "launching mid-2026"); general availability not confirmed as of 2026-10-22.'
+- 'FIDO register entries list an expiry (DocAuth 1 Oct 2029, Face Verification 13 Nov 2029) but no issue date. DocAuth covers the Full Auto IDV product only, not hybrid review. The direct DocAuth products page did not load; both entries were read on the Face Verification products page.'
+- 'Homepage also lists CCPA/CPRA and GDPR compliance; these are compliance statements, not certificates, and are not listed.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

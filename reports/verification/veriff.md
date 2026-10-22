@@ -41,3 +41,31 @@ Entries in `src/_data/rankings.yml` (canada, e-kyc, kyb, liveness-detection, mex
 ## Score flag
 
 None. No finding suggests a lower score; published pricing and new UK DIATF certification were confirmed.
+
+## Follow-up 2026-10-22
+
+### Changed
+
+- Pricing re-checked against the pricing and self-serve plans pages (sources 1, 2): Essential $49 minimum + $0.80, Plus $99 + $1.39, Premium $209 + $1.89, Enterprise quoted for 5,000+ a month, PEP and sanctions +$0.64, monitoring +$0.09, 2-year retention +$0.30, 15-day trial up to 50 sessions with no credit card. All unchanged.
+- Pricing items: added "Additional extracted data fields (Plus and Premium) +$0.30 per verification" (source 1).
+- Co-founder: "Janer Gorohhov is also listed as a co-founder" (Wikipedia only) → "Veriff also names Janer Gorohhov as a co-founder" (Veriff podcast page, 27 July 2023, source 20). Same change in the "Who founded Veriff?" FAQ.
+- New York office: "opened its first foreign office in New York later that year" → "opened a New York office in November 2019" (Cision release, 13 November 2019, source 21). "First foreign office" not confirmed and dropped.
+- Fact added: Languages "50 languages and dialects" (about page, source 4; homepage also says 50, source 3). The 48 vs 50 conflict is gone.
+- Certifications added, confirmed on the FIDO Alliance certified products register (source 22): FIDO Face Verification Level 2 (Full Auto IDV, Ingenium Biometric Laboratories, expires 13 Nov 2029) and FIDO DocAuth (Full Auto IDV, expires 1 Oct 2029). Veriff press release of 22 April 2026 (source 23).
+- User ratings added: Capterra 4.7 from 3 reviews (correct listing /p/197760/Veriff/, source 24); Gartner Peer Insights 4.3 from 8 ratings (source 25). G2 4.5 from 60 and Trustpilot 1.3 from 239 unchanged.
+
+### Removed / unverifiable
+
+- Pricing add-on "Total: $0.09" and the $660.00 calculator figure still do not reconcile with listed prices; only per-unit figures shown.
+- ISO/IEC 27001, SOC 2 Type II and Cyber Essentials remain vendor_stated (no certification body or dates named; trust.veriff.com did not render).
+- KYB still a limited access program ("launching mid-2026" on the sign-up page); general availability not confirmed.
+- CCPA/CPRA and GDPR homepage badges are compliance statements; not listed as certifications.
+- Notes on human review, old user-review claims and the wrong Capterra listing were resolved and removed.
+
+### Ranking cards
+
+Entries checked: canada, e-kyc, kyb, liveness-detection, mexico, peru, age-verification. No text is wrong after this pass: prices ($0.80, $49 minimum, $0.64 AML add-on, 15-day trial up to 50 sessions), 12,500+ documents, 230+ countries, iBeta Level 1 and 2, 300+ KYB jurisdictions and "KYB offered only through a limited access program as of Oct 2026" all still match. Optional addition for the e-kyc or liveness-detection card: "FIDO-certified face verification (Level 2) and document authenticity" (source 22).
+
+### Score flag
+
+- None.
