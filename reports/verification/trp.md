@@ -66,3 +66,33 @@ Position: 2nd, after 21 Analytics (4.0) and before the unreviewed Notabene, Sygn
 ## Score flag
 
 None beyond the rewrite itself: score moves from 3.9 (protocol draft) to 3.7 (vendor).
+
+## Follow-up 2026-10-22
+
+Fact pass on all 18 `verification_notes`. Notes merged to 10. `last_verified` and `updated` set to 2026-10-22. Validator: 0 issues.
+
+### Changed
+
+- `cons[2]`: "Launched in 2025, easily confused with the open OpenVASP protocol of the same name, ..." → "Domain registered in 2025, easily confused with the open OpenVASP protocol of the same name, ..." The only dated evidence is the domain record (created 7 Feb 2025) (15). No launch date was found.
+- New sources appended for claims in `choose_instead` that had no source in the list: 19 Notabene TRP page ("Every Notabene customer has a live TRP 1.0 endpoint") and 20 Sumsub Travel Rule FAQ (Sumsub protocol, GTR, TRP, CODE, Sygna Bridge). Both confirm the existing wording.
+
+### Confirmed, no change
+
+These docs.travel-rule.com items are unchanged: the OpenAPI info block (TRP API 3.2.1, KYCAID TRP Team, Proprietary, production host only), no sandbox, changelog, SDK, jurisdiction or interoperability pages, HMAC-SHA512 signed callbacks with no encryption described, and Satoshi Test on bitcoin, ethereum and trc20. The RDAP record and the OpenVASP vendor list (21 Analytics, Blockchain Intelligence Group, ospree) are unchanged too. kycaid.com still does not mention TRP. No user ratings were found on G2, Capterra or Trustpilot.
+
+### Removed / unverifiable
+
+- travel-rule.com (homepage, pricing, terms, privacy) is still robots-disallowed for our fetcher. All prices, vendor counts, the first-year offer, the Germany jurisdiction, the "Verified entity" badge and the SDK claim rest on the editor's 19 Oct screenshots and could not be re-checked. They are kept as vendor-stated.
+- Still open (in notes): the legal entity, the protocol message price, the minimum monthly commitment, whether the €2,000 offer and the €2,000 deposit are the same payment, interoperability with standard TRP endpoints, the badge issuer, certifications, and whether the KYCAID paid link arrangement covers TRP.
+
+### Ranking cards
+
+`travel-rule` (`slug: trp`), `cons[2]`:
+- Old: `Launched in 2025, shares its name with the open OpenVASP protocol, minimum commitment not disclosed`
+- New: `Domain registered in 2025, shares its name with the open OpenVASP protocol, minimum commitment not disclosed`
+
+Nothing else on the card is wrong.
+
+### Score flag
+
+None. 3.7 unchanged. The Track record note already rests on the domain date, not a launch date.
