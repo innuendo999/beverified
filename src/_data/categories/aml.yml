@@ -7,7 +7,7 @@ seo:
 breadcrumb_label: Best AML Software Providers
 quick_answer: 'Sumsub is our top-rated pick if you want identity verification and AML screening from one vendor. Screening starts on its Compliance plan, and transaction monitoring is only in the custom plan. ComplyAdvantage suits teams that need sanctions, PEP and adverse-media screening on its own risk data; its transaction monitoring is on the Enterprise plan. Hawk AI, Unit21 and Napier are built around transaction monitoring and case work for banks and fintechs. The ranking below compares screening, monitoring, case management and pricing for each provider.'
 last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 legacy_stats:
 - value: '10'
   label: providers compared
@@ -16,52 +16,44 @@ legacy_stats:
 - value: Jul 2026
   label: last updated
 explainer_html:
-- '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
+- '<h2>What AML software does</h2>
 
-  <h2 style="font-size:19px;margin-bottom:10px;">What AML software checks</h2>
+  <p>AML software helps a regulated business spot money laundering and sanctions breaches across the customer lifecycle. Most products cover some mix of four jobs: screening customers against sanctions, politically exposed person (PEP) and adverse-media data; monitoring transactions for unusual patterns; managing alerts and cases; and preparing regulatory reports such as suspicious activity reports.</p>
 
-  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">Anti-money laundering software screens customers and transactions against sanctions lists, politically exposed persons (PEP) databases, and adverse media, then routes anything unusual to a human reviewer. In the US, that screening typically maps to OFAC''s Specially Designated Nationals List and FinCEN''s suspicious activity reporting rules. Providers serving banks in the EU operate under the sixth Anti-Money Laundering Directive (AMLD6).</p>
+  <p>Few vendors include all four in every plan. In the capabilities table, a half-filled dot marks a feature that needs a separate module or a higher plan, and the note under it says which. Several providers in this ranking keep part of their AML features on higher tiers, so check what each plan includes before you compare entry prices.</p>
 
-  <h3 style="font-size:14.5px;margin-bottom:10px;">Core capabilities compliance teams typically require</h3>
+  <h2>AML software, KYC and KYB</h2>
 
-  <ul style="margin:0 0 18px;padding-left:20px;font-size:14.5px;line-height:1.75;">
+  <p>KYC confirms who a customer is at onboarding; AML software keeps watching after that. Several tools in this ranking do not verify identity documents themselves, so check the identity verification column and pair them with an <a href="/providers/identity-verification/">identity verification provider</a> if needed. For business customers see <a href="/providers/kyb/">KYB providers</a>; for virtual asset firms see <a href="/providers/crypto/">crypto KYC</a> and the <a href="/providers/travel-rule/">Travel Rule</a>.</p>
 
-  <li style="list-style:disc;">Sanctions and PEP screening against updated watchlists</li>
+  <h2>Regulatory context</h2>
 
-  <li style="list-style:disc;">Transaction monitoring with configurable rule sets</li>
+  <ul>
 
-  <li style="list-style:disc;">Adverse media screening</li>
+  <li><a href="https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html" rel="noopener">FATF Recommendations</a> set the global baseline, including customer due diligence (Recommendation 10), suspicious transaction reporting (Recommendation 20) and targeted financial sanctions (Recommendation 6).</li>
 
-  <li style="list-style:disc;">Case management workflow for investigators</li>
+  <li>EU: the Anti-Money Laundering Regulation, <a href="https://eur-lex.europa.eu/eli/reg/2024/1624/oj" rel="noopener">Regulation (EU) 2024/1624</a>, applies from 10 July 2027. The <a href="https://www.amla.europa.eu/" rel="noopener">EU Anti-Money Laundering Authority (AMLA)</a> in Frankfurt started work in 2025 and is due to supervise up to 40 high-risk financial institutions directly from 2028 (<a href="https://www.aoshearman.com/en/insights/amlctf-playbook-eu-edition-2-the-eu-antimoney-laundering-authority" rel="noopener">A&amp;O Shearman summary</a>).</li>
 
-  <li style="list-style:disc;">Audit trail suitable for regulator review</li>
+  <li>US: the Bank Secrecy Act requires covered firms to file suspicious activity reports with FinCEN, and sanctions screening checks names against OFAC''s <a href="https://sanctionslist.ofac.treas.gov/Home/SdnList" rel="noopener">Specially Designated Nationals list</a>.</li>
+
+  <li>UK: the <a href="https://www.legislation.gov.uk/uksi/2017/692/contents" rel="noopener">Money Laundering Regulations 2017</a> set due-diligence, monitoring and record-keeping duties for regulated firms.</li>
 
   </ul>
 
-  <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from KYB and crypto KYC</h3>
-
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">AML software screens ongoing customer activity; <a href="/providers/kyb/">KYB</a> verifies a business''s legal existence and beneficial owners at onboarding. <a href="/providers/crypto/">Crypto KYC</a> applies the same screening discipline to wallets and on-chain flows. Most banks run several of these, often from different vendors.</p>
-
-  <h3 style="font-size:14.5px;margin-bottom:8px;">Regulatory context</h3>
-
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Key frameworks referenced across this category: FATF Recommendation 10 on customer due diligence, the EU''s AMLD6, and the US Bank Secrecy Act''s SAR filing requirement.</p>
-
-  <a class="entity-card__cta" href="/methodology/">See how we evaluate every provider on this list in our full methodology →</a>
-
-  </section>'
+  <p><a href="/methodology/">How we evaluate every provider on this list →</a></p>'
 faq:
 - q: What is AML software?
-  a: AML (Anti-Money Laundering) software helps businesses detect, prevent, and report suspicious financial activity, combining identity verification, watchlist screening, and transaction monitoring in one platform.
-- q: How much does AML compliance software cost?
-  a: Pricing ranges from under $1 per identity check for pay-as-you-go tools to custom enterprise contracts, often $1,000+ per month, depending on volume, screening depth, and support level.
+  a: AML software screens customers against sanctions, PEP and adverse-media data, monitors transactions for unusual activity, and gives compliance teams a place to review alerts and file reports. Products differ in which of these they include and on which plan.
+- q: Which AML software also verifies identity?
+  a: Sumsub, KYC Hub, SmartSearch and RelyComply include identity verification; Unit21 and KYC360 offer it through partners. ComplyAdvantage, Hawk AI and Napier do not, so they are usually paired with a separate identity verification provider. The capabilities table shows the source for each.
+- q: How much does AML software cost?
+  a: ComplyAdvantage, KYC360 and Sumsub publish entry prices; most enterprise platforms in this ranking quote on request. Entry plans often leave out transaction monitoring or ongoing monitoring, so check what each plan includes on the provider's review.
+- q: Can AML software run on premises?
+  a: Napier and KYC360 offer cloud and on-premises deployment, per their own pages. The other providers in this ranking are cloud-based or do not say.
 - q: Is AML software legally required?
-  a: Regulated industries such as banking, payments, and crypto are generally required by law to run AML checks. Dedicated software is not always mandated by name, but it is the practical way most firms meet the requirement.
+  a: Banks, payment firms, crypto businesses and other regulated sectors must run AML checks under laws such as the US Bank Secrecy Act, the EU anti-money laundering rules and the UK Money Laundering Regulations 2017. The law rarely names software, but it is how most firms meet the duty at scale.
 - q: What is the difference between KYC and AML?
-  a: KYC (Know Your Customer) verifies who a customer is at onboarding. AML is the broader program, including KYC, that also monitors transactions and screens against sanctions and PEP lists on an ongoing basis.
-- q: Can small businesses use enterprise-grade AML tools?
-  a: Yes. Many providers on this list offer pay-as-you-go or tiered pricing, so a startup can start with per-check pricing and upgrade as transaction volume grows.
-- q: How often are sanctions and PEP lists updated?
-  a: Reputable AML providers refresh sanctions, PEP, and adverse-media data daily or in near real time, since regulators can add or remove names at any time.
+  a: 'KYC verifies who a customer is at onboarding. AML is the wider program: it includes KYC and adds sanctions and PEP screening, transaction monitoring and suspicious activity reporting for as long as the customer relationship lasts.'
 adjacent:
 - aml/banks
 - crypto
