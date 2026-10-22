@@ -26,3 +26,28 @@
 
 ## Score flag
 - None. Company operating, product line expanded, new iBeta Level 3 result.
+
+## Follow-up 2026-10-22
+
+### Changed
+- Certification: "FedRAMP Moderate" (vendor_stated, trust centre) → "FedRAMP Ready (High baseline)", readiness stage, not an authorization (Incode release 14 Nov 2025, source 12). The trust centre still lists "FedRAMP Moderate"; no FedRAMP Marketplace entry could be opened.
+- Certification added: Age Check Certification Scheme (ACCS), confirmed by an ACCS registry entry for "Incode Technologies Inc" (source 15); the entry lists no scope, standard or dates.
+- FAQ acquisitions: "MetaMap in 2024 and AuthenticID in August 2025" → adds Identiq in June 2026 (Incode release 25 Jun 2026, source 13).
+- Unicorn round: $220M Series B at $1.25B, Dec 2021, led by General Atlantic and SoftBank, now also confirmed by General Atlantic (source 11).
+- User ratings: added Gartner Peer Insights 4.6 from 55 ratings (source 14). G2 re-opened: 5.0 from 51 reviews (source 10), unchanged.
+- Re-confirmed: 7.1B+ trust checks, 400M+ profiles, 600+ staff, 25+ nationalities, customer list, Gartner Leader 2024 to 2026 (source 1); 4.9K+ ID document types across 190+ countries (source 2); pricing not published (source 9); iBeta Level 3 for Deepsight on iOS and Android, 16 Feb 2026 (sources 4, 5).
+- New sources 11 to 15 appended.
+
+### Removed / unverifiable
+- Notes on the NIST FRTE claim (already removed from the page), the G2 spot-check and the older iBeta Level 2 Omni letter are closed.
+- Still unresolved: SOC 2, ISO 27001, ISO 42001 and Kantara IAL2 are trust-centre only; FedRAMP Moderate vs Ready conflict; ACCS scope; Gartner report gated.
+- Nov 2025 Bloomberg report of talks to raise at up to $3B: no closed round found; not added.
+
+### Ranking cards
+- `age-verification` (Best on-device age estimation), con 1 is now wrong:
+  - Old: "Its Age Check Certification Scheme listing is vendor-stated; we did not confirm a register entry"
+  - New: "The ACCS register lists Incode but shows no certified scope or dates"
+- `south-africa` (Best for Home Affairs Database Checks): pricing and liveness statements still match; Home Affairs pros not re-checked in this pass.
+
+### Score flag
+- Possible: the record previously listed FedRAMP Moderate; Incode's own release shows only FedRAMP Ready (High). If the score credited a FedRAMP authorization, it may merit a second look. Score unchanged.

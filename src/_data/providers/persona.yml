@@ -23,8 +23,8 @@ link:
   url: https://withpersona.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: 'Persona''s pitch is flexibility: reusable, customizable verification templates that product teams assemble into their own onboarding flows rather than a single fixed workflow. That configurability is a real strength for teams with unusual requirements, though it means a steeper setup curve and less out-of-the-box AML depth than specialized screening vendors. Entry pricing is published (Essential from $250 a month on a 12-month term); larger plans are quoted.'
 what_is:
 - Persona is an identity-verification infrastructure company founded in 2018 and headquartered in San Francisco, California, by CEO Rick Song and Charles Yeh. It raised a $200 million Series D at a $2 billion valuation in April 2025. It provides a no-code workflow builder and reusable verification templates combining document, biometric, and database checks, with KYC, KYB, AML, age assurance, case management and link analysis (Graph), aimed at product teams building custom onboarding flows. In April 2026 its Persona for Government product received FedRAMP Moderate authorization.
@@ -36,7 +36,7 @@ features:
 - Case management (Cases) for manual review workflows.
 - Developer-first APIs and SDKs.
 pricing:
-  summary: Persona publishes an entry price. The Essential plan starts at $250 a month with a 12-month minimum term; Growth and Enterprise are quoted on request. Billing is per successful verification, and an eligible-startup program offers a year of free services on select products.
+  summary: Persona publishes an entry price. The Essential plan starts at $250 a month with a 12-month minimum term; Growth and Enterprise are quoted on request. Billing is per successful verification, and a one-year Startup Program gives eligible startups a monthly allotment of free services on select products.
   plans:
   - tier: Essential
     price: From $250/month
@@ -69,7 +69,7 @@ pricing:
     source: 1
     verified: '2026-10'
   - label: Startup Program
-    value: One year of free services on select products for eligible startups
+    value: One-year program with a monthly allotment of free services on select products, for eligible startups, SMBs and developers
     kind: official
     source: 1
     verified: '2026-10'
@@ -90,8 +90,9 @@ facts:
   source: 5
   evidence: vendor
 - label: Regions
-  value: Global
-  source: null
+  value: 200+ countries and territories (Government ID)
+  source: 12
+  evidence: vendor
 - label: Valuation
   value: $2B (Series D, April 2025)
   source: 4
@@ -138,7 +139,7 @@ user_reviews:
   - Teams wanting a fixed, ready-made flow sometimes prefer simpler competitors.
 faq:
 - q: How much does Persona cost?
-  a: Persona's Essential plan starts at $250 a month with a 12-month minimum term. Growth and Enterprise plans are quoted on request. Billing is per successful verification, and eligible startups can apply for a year of free services on select products.
+  a: Persona's Essential plan starts at $250 a month with a 12-month minimum term. Growth and Enterprise plans are quoted on request. Billing is per successful verification, and eligible startups can apply to a one-year Startup Program with a monthly allotment of free services on select products.
 - q: Is Persona no-code?
   a: Yes. Persona offers a no-code workflow builder with reusable, customizable verification templates.
 - q: Does Persona support KYB?
@@ -176,10 +177,10 @@ certifications:
   what: US health data
   status: vendor_stated
   source: 2
-- name: Age Check Certification Scheme
-  what: Age assurance (UK)
-  status: vendor_stated
-  source: 2
+- name: Age Check Certification Scheme (ACCS 1:2020, Level 2)
+  what: Selfie age estimation (UK), valid to 12 Nov 2026
+  status: confirmed
+  source: 14
 - name: KJM
   what: Age verification (Germany)
   status: vendor_stated
@@ -190,6 +191,11 @@ user_ratings:
   count: 48
   checked: '2026-10'
   url: https://www.g2.com/products/persona-persona/reviews
+- platform: Gartner Peer Insights
+  rating: 4.5
+  count: 73
+  checked: '2026-10'
+  url: https://www.gartner.com/reviews/product/persona
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
@@ -234,6 +240,22 @@ sources:
   publisher: G2
   url: https://www.g2.com/products/persona-persona/reviews
   accessed: '2026-10'
+- title: 'Persona, the internet''s identity verification layer, raises $17.5M led by Coatue, First Round Capital (28 Jan 2020)'
+  publisher: Business Wire (Persona press release)
+  url: https://www.businesswire.com/news/home/20200128005126/en/Persona-The-Internets-Identity-Verification-Layer-Raises-%2417.5M-Led-By-Coatue-First-Round-Capital
+  accessed: '2026-10'
+- title: Government ID verification
+  publisher: Persona
+  url: https://withpersona.com/product/verifications/government-id
+  accessed: '2026-10'
+- title: Persona reviews (Identity Verification)
+  publisher: Gartner Peer Insights
+  url: https://www.gartner.com/reviews/product/persona
+  accessed: '2026-10'
+- title: 'ACCS registry: Persona Identities Inc (Selfie Age Estimation)'
+  publisher: Age Check Certification Scheme
+  url: https://accscheme.com/registry/age-estimation/persona-identities-inc/
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -244,11 +266,11 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- Founders Rick Song and Charles Yeh confirmed only on Wikipedia (source 9); no Persona page opened names Charles Yeh.
-- G2 product page showed 4.2 from 48 reviews; Persona's own homepage cites Gartner Peer Insights 4.5 from 70 reviews (as of 7 Jul 2026). Gartner page not opened.
-- Kantara Trust Status List did not render; Kantara listed as vendor_stated.
-- Feb 2026 Wikipedia items (exposed code on a FedRAMP instance; Discord ending an age-verification trial) are noted for editorial awareness but not added to the page.
-- Regions value Global kept without a source; Persona publishes no country count on pages opened.
+- Kantara Trust Status List (kantarainitiative.org/trust-status-list/) still does not render; Kantara (NIST SP 800-63) stays vendor_stated (source 2). No Persona or Kantara announcement found.
+- ACCS certificate (source 14) shows validity to 12/11/2026; re-check the registry after that date for renewal.
+- Pricing page meta description mentions a "free Starter plan" that is not among the listed plans (source 1); not added to the page.
+- Gartner Peer Insights counts differ by view (product page 73 ratings and 74 reviews; vendor page 71 reviews; Persona homepage cites 70 as of 7 Jul 2026). Product page figure used.
+- Editorial awareness only, not on the page: per Wikipedia (source 9), Feb 2026 coverage (Malwarebytes, PC Gamer, Techdirt, Fortune) of exposed code on a Persona FedRAMP instance, and Discord ending its age-verification trial with Persona. Primary articles not opened.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

@@ -22,8 +22,8 @@ link:
   url: https://incode.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: Incode's platform handles onboarding and ongoing authentication in one system. Its models are trained on more than 7 billion trust checks and 400 million identity profiles, by the company's own count, and it has been named a Leader in the Gartner Magic Quadrant for Identity Verification in 2024, 2025 and 2026. Its 2025 acquisition of AuthenticID adds further consolidation, though pricing remains enterprise-only.
 what_is:
 - Incode is an identity-verification company founded in 2015 in San Francisco by CEO Ricardo Amper. It became a unicorn in December 2021 after a $220M Series B at a $1.25B valuation, led by General Atlantic and SoftBank. It has more than 600 employees from over 25 nationalities and reports more than 7.1 billion trust checks to date. Customers include eight of the top 10 U.S. banks, eight of the top nine U.S. telecoms, the top three global neobanks and four of the top five global marketplaces. It reads 4,900+ ID document types across 190+ countries.
@@ -115,7 +115,7 @@ faq:
 - q: What is the Incode Platform?
   a: The Incode Platform combines identity onboarding, ongoing biometric authentication and fraud investigation in one system. Earlier versions were sold as Incode Omni.
 - q: Has Incode made any acquisitions?
-  a: Yes. Incode acquired MetaMap in 2024 and AuthenticID in August 2025.
+  a: Yes. Incode acquired MetaMap in 2024, AuthenticID in August 2025 and Identiq in June 2026.
 - q: Is Incode recognized by analysts?
   a: Yes. Incode has been named a Leader in the Gartner Magic Quadrant for Identity Verification in 2024, 2025 and 2026.
 - q: What is the best alternative to Incode?
@@ -141,20 +141,29 @@ certifications:
   what: AI management system
   status: vendor_stated
   source: 3
-- name: FedRAMP Moderate
-  what: US federal cloud security
+- name: FedRAMP Ready (High baseline)
+  what: US federal cloud security, readiness stage, not an authorization
   status: vendor_stated
-  source: 3
+  source: 12
 - name: Kantara IAL2 Trust Mark
   what: Identity assurance (NIST 800-63)
   status: vendor_stated
   source: 3
+- name: Age Check Certification Scheme (ACCS)
+  what: Age assurance (UK), register entry without listed scope or dates
+  status: confirmed
+  source: 15
 user_ratings:
 - platform: G2
   rating: 5.0
   count: 51
   checked: '2026-10'
   url: https://www.g2.com/products/incode-technologies-incode/reviews
+- platform: Gartner Peer Insights
+  rating: 4.6
+  count: 55
+  checked: '2026-10'
+  url: https://www.gartner.com/reviews/product/incode
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
@@ -199,6 +208,26 @@ sources:
   publisher: G2
   url: https://www.g2.com/products/incode-technologies-incode/reviews
   accessed: '2026-10'
+- title: Incode secures $220M for its Series B, earning unicorn status (7 Dec 2021)
+  publisher: General Atlantic
+  url: https://www.generalatlantic.com/media-article/incode-secures-220m-for-its-series-b-earning-unicorn-status-less-than-seven-months-following-its-series-a-round/
+  accessed: '2026-10'
+- title: Incode Technologies achieves FedRAMP Ready status (14 Nov 2025)
+  publisher: Incode
+  url: https://www.incode.com/press/incode-technologies-achieves-fedramp-ready-status-advancing-trusted-identity-verification-for-u-s-federal-agencies
+  accessed: '2026-10'
+- title: Incode acquires Identiq, commits $100M to privacy-first identity tech (25 Jun 2026)
+  publisher: Incode
+  url: https://www.incode.com/press/incode-acquires-identiq-commits-100m-to-privacy-first-identity-tech
+  accessed: '2026-10'
+- title: Incode reviews (Identity Verification)
+  publisher: Gartner Peer Insights
+  url: https://www.gartner.com/reviews/product/incode
+  accessed: '2026-10'
+- title: 'ACCS registry: Incode Technologies Inc'
+  publisher: Age Check Certification Scheme
+  url: https://accscheme.com/registry/uncategorized/incode-technologies-inc/
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -209,12 +238,12 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- SOC 2, ISO 27001, ISO 42001, FedRAMP Moderate and Kantara IAL2 are vendor-stated (trust centre); no certificate, FedRAMP Marketplace or Kantara Trust Status List entry was opened.
-- NIST FRTE "top-ranked" claim could not be confirmed and was removed.
-- Unicorn valuation date and amount from Crunchbase News (Dec 2021), not a registry.
-- Gartner Leader placements are vendor-reported via press release; the Gartner report itself was not opened.
-- G2 rating read via a fetched copy of the page; spot-check before relying on it.
-- iBeta also lists an older Level 2 letter for Incode Omni (30 Jan 2023), source 5.
+- SOC 2 Type 2, ISO/IEC 27001:2022, ISO/IEC 42001:2023 and Kantara IAL2 are listed on the trust centre only (source 3); no certificate opened, and the Kantara Trust Status List does not render.
+- FedRAMP conflict: trust centre lists "FedRAMP Moderate" (source 3), but Incode's Nov 2025 release says FedRAMP Ready at the High baseline with authorization still to come (source 12). No FedRAMP Marketplace entry for Incode could be opened. Page shows the Ready status.
+- ACCS registry lists "Incode Technologies Inc" (source 15) but the entry shows no certified scope, standard or dates. Incode's July 2024 release says it covers facial age estimation and document-based age verification; not added as scope.
+- Gartner Magic Quadrant Leader placements (2024, 2025, 2026) rest on Incode's release and landing page (source 1; Gartner document dated 28 Jul 2026); the Gartner report itself is gated and was not opened.
+- Gartner Peer Insights counts differ by view (product page 55 ratings; vendor page 53 Identity Verification reviews, 57 all markets). Product page figure used.
+- Nov 2025 Bloomberg report (reprinted by Incode) of talks to raise $150M to $300M at up to $3B valuation; no closed round found, so the page keeps only the 2021 $1.25B figure (sources 8, 11).
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
