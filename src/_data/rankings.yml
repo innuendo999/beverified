@@ -4,13 +4,13 @@ aml/banks:
   - slug: complyadvantage
     name: ComplyAdvantage
     award: Editor's Choice
-    tagline: Sanctions, PEP and adverse-media screening plus real-time transaction monitoring for regulated institutions.
+    tagline: Sanctions, PEP and adverse-media screening, plus real-time transaction monitoring on the Enterprise plan, for regulated institutions.
     coverage: Global
     size: null
     pros:
     - Real-time transaction monitoring and payment screening on the Enterprise plan, with vendor-stated sub-second latency
     - Agentic workflows that the vendor says resolve up to 85% of routine alerts
-    - Built-in reporting support for SAR, CTR and FINTRAC reports
+    - Built-in reporting support for SAR and CTR reports
     cons:
     - Does not perform identity verification, so it needs a separate IDV vendor
     - Initial setup can be involved, per user reviews
@@ -143,7 +143,7 @@ aml:
   - slug: complyadvantage
     name: ComplyAdvantage
     award: Best for Screening with Published Pricing
-    tagline: AML risk data, agentic alert workflows and real-time transaction monitoring for regulated businesses.
+    tagline: AML risk data and agentic alert workflows, with real-time transaction monitoring on the Enterprise plan.
     coverage: Global
     size: SMB to Enterprise
     pros:
@@ -249,7 +249,7 @@ aml:
     coverage: 190+ countries
     size: null
     pros:
-    - Full financial-crime lifecycle (identity, screening, monitoring, case management) in one no-code platform
+    - Full financial-crime lifecycle (identity, screening, monitoring, case management) in one no-code platform, with monitoring from the Growth tier
     - 'Fast configuration: 100+ templates to ship flows in hours, per the vendor'
     - Modular pricing that lets you change tiers or add and remove modules at any time
     cons:
@@ -563,12 +563,12 @@ crypto:
   - slug: complyadvantage
     name: ComplyAdvantage
     award: Best for Enterprise Risk Data
-    tagline: Off-chain sanctions, PEP and adverse-media data with real-time transaction monitoring.
+    tagline: Off-chain sanctions, PEP and adverse-media data, with real-time transaction monitoring on the Enterprise plan.
     coverage: Global
     size: SMB to Enterprise
     pros:
     - Sanctions, PEP and adverse-media screening with ongoing monitoring
-    - Real-time transaction monitoring and payment screening
+    - Real-time transaction monitoring and payment screening on the Enterprise plan
     - Starter plan from $99/month is published
     cons:
     - Not a native blockchain-analytics engine
@@ -1533,7 +1533,7 @@ south-africa:
     size: null
     pros:
     - Lists the FIC targeted financial sanctions list in its list coverage, per Castellum.AI
-    - In-house risk data, with 1,000+ watchlists updated every 5 minutes, per Castellum.AI
+    - In-house risk data, with watchlists updated every 5 minutes, per Castellum.AI
     - Founder brings direct US Treasury/OFAC sanctions experience
     cons:
     - Screening and data only, so South African ID checks need a second vendor

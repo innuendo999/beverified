@@ -174,8 +174,8 @@ capabilities:
     source: 9
   deployment:
     status: cloud
-    note: Azure hosted, EU data residency
-    source: 8
+    note: Hosting regions EU, UK and Türkiye
+    source: 12
   published_pricing:
     status: partial
     note: Starter published, Enterprise quoted
