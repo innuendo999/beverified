@@ -96,21 +96,6 @@ layout: v3.njk
       <h2 id="cap-h" class="h-section">Capabilities compared</h2>
       <p class="cap-legend">Checked against each provider's own pages{% if matrix.checked %}, {{ matrix.checked | displayDate }}{% endif %}. Numbers link to the source on each review.</p>
       <p class="cap-legend cap-legend--key"><span><i class="cap-dot cap-dot--full" aria-hidden="true"></i>In the core product</span> <span><i class="cap-dot cap-dot--half" aria-hidden="true"></i>Add-on module or higher plan</span> <span><i class="cap-dot cap-dot--empty" aria-hidden="true"></i>Not offered</span> <span><i class="cap-dot cap-dot--unknown" aria-hidden="true"></i>Not disclosed</span></p>
-      <div class="cap-filter" data-cap-filter hidden>
-        <fieldset>
-          <legend>Show providers that have</legend>
-          <div class="cap-filter__chips">
-            {%- for col in matrix.cols %}
-            <label class="cap-chip"><input type="checkbox" value="{{ col.key }}"><span>{{ col.filterLabel }}</span></label>
-            {%- endfor %}
-          </div>
-          <div class="cap-filter__foot">
-            <label class="cap-filter__addons"><input type="checkbox" data-cap-addons checked> Count add-on modules and higher plans</label>
-            <button type="button" class="cap-filter__clear" data-cap-clear>Clear filters</button>
-          </div>
-        </fieldset>
-        <p class="cap-filter__count" data-cap-count aria-live="polite"></p>
-      </div>
       <div class="card cap-matrix">
         <div class="cap-matrix__scroll" role="region" aria-label="Capability matrix, scrolls sideways" tabindex="0">
           <table class="cap-table">
@@ -118,7 +103,7 @@ layout: v3.njk
             <thead><tr><th scope="col">Provider</th>{% for col in matrix.cols %}<th scope="col">{{ col.label }}</th>{% endfor %}</tr></thead>
             <tbody>
             {%- for row in matrix.rows %}
-              <tr{% for cell in row.cells %} data-{{ cell.key | replace("_", "-") }}="{{ cell.status }}"{% endfor %}>
+              <tr>
                 <th scope="row"><a href="/providers/{{ row.slug }}/">{{ row.name }}</a></th>
                 {%- for cell in row.cells %}
                 <td>{% if cell.sym %}<i class="cap-dot cap-dot--{{ cell.sym }}" aria-hidden="true"></i>{% endif %}{{ cell.label }}{% if cell.source %} <a class="src-ref--inline fs-12" href="/providers/{{ row.slug }}/#src-{{ cell.source }}" aria-label="{{ row.name }} source {{ cell.source }}">[{{ cell.source }}]</a>{% endif %}{% if cell.note %}<small>{{ cell.note }}</small>{% endif %}</td>
@@ -129,8 +114,6 @@ layout: v3.njk
           </table>
         </div>
       </div>
-      <p class="cap-empty" data-cap-empty hidden>No provider in this ranking has every capability you selected. Clear a filter or count add-on modules to see more.</p>
-      <script src="/assets/js/cap-filter.js" defer></script>
     </section>
     {%- endif %}
 
