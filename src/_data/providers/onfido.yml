@@ -24,11 +24,11 @@ link:
   url: https://www.entrust.com/products/identity-verification
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: Onfido pairs strong developer tooling with broad document coverage. Entrust completed its acquisition in April 2024, and the product is now sold as Entrust Identity Verification, with onfido.com redirecting to Entrust. It is a solid enterprise IDV choice for teams that want SDK depth and optional watchlist screening, though pricing remains sales-only and support responsiveness gets mixed reviews.
 what_is:
-- Onfido is an AI-powered document and biometric identity-verification company founded in 2012, according to Entrust; its UK company, Onfido Ltd, was incorporated in December 2010 and is registered in London. Entrust completed its acquisition of Onfido in April 2024, when Onfido reported more than $140 million in annual revenue and over 1,200 customers. The product now sits in Entrust's identity-security portfolio as Entrust Identity Verification, described by Entrust as built on Onfido technology.
+- Onfido is an AI-powered document and biometric identity-verification company founded in 2012, according to Entrust. Oxford University Innovation names its co-founders as Eamon Jubbawy, Ruhul Amin and Husayn Kassai, who started it as an Oxford startup. Its UK company, Onfido Ltd, was incorporated in December 2010 and is registered in London. Entrust completed its acquisition of Onfido in April 2024, when Onfido reported more than $140 million in annual revenue and over 1,200 customers. The product now sits in Entrust's identity-security portfolio as Entrust Identity Verification, described by Entrust as built on Onfido technology.
 features:
 - Document verification with AI models built on tens of millions of verifications, plus NFC chip reading where the document supports it.
 - Biometric face match with liveness detection (Motion), tested by iBeta to ISO/IEC 30107-3.
@@ -169,12 +169,42 @@ certifications:
   what: Liveness / presentation attack detection, Entrust Facial Similarity Report Motion v2.0 (Jul 2026)
   status: confirmed
   source: 8
+- name: UK Digital Verification Services Trust Framework (DVSTF)
+  what: UK digital identity (Identity role, M1A and H2B profiles), certified by Kantara, 20 Mar 2026 to 20 Mar 2029
+  status: confirmed
+  source: 15
+- name: ISO/IEC 27001:2022
+  what: Information security
+  status: vendor_stated
+  source: 13
+- name: SOC 2 Type II
+  what: Security, availability and confidentiality controls audit
+  status: vendor_stated
+  source: 13
+- name: ETSI TS 119 461 and ETSI EN 319 401
+  what: Remote identity proofing for EU trust services
+  status: vendor_stated
+  source: 14
+- name: NIST SP 800-63-3 IAL2
+  what: US identity assurance level 2
+  status: vendor_stated
+  source: 14
 user_ratings:
 - platform: G2
   rating: 4.4
   count: 157
   checked: '2026-10'
   url: https://www.g2.com/products/onfido/reviews
+- platform: Capterra
+  rating: 4.5
+  count: 31
+  checked: '2026-10'
+  url: https://www.capterra.com/p/200047/Onfido/reviews/
+- platform: Gartner Peer Insights
+  rating: 4.3
+  count: 47
+  checked: '2026-10'
+  url: https://www.gartner.com/reviews/market/identity-verification/vendor/entrust/product/onfido
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
@@ -227,6 +257,30 @@ sources:
   publisher: Vendr
   url: https://www.vendr.com/buyer-guides/onfido
   accessed: '2026-10'
+- title: Remote IDV Practice Statement and Security Policy (version 1.5, December 2025)
+  publisher: Entrust
+  url: https://sdk.onfido.com/assets/policy/Entrust%20Remote%20IDV%20Practice%20Statement%20&%20Security%20Policy.pdf
+  accessed: '2026-10'
+- title: Entrust Identity Verification to support compliance
+  publisher: Entrust
+  url: https://www.entrust.com/products/identity-verification/compliance
+  accessed: '2026-10'
+- title: 'Digital verification services register: Entrust IDV (Onfido Ltd)'
+  publisher: GOV.UK
+  url: https://www.access-dvs-register.service.gov.uk/register/service-details?serviceId=267
+  accessed: '2026-10'
+- title: 'Onfido: game-changing digital identity verification'
+  publisher: Oxford University Innovation
+  url: https://innovation.ox.ac.uk/success-stories/onfido-intelligent-background-checks/
+  accessed: '2026-10'
+- title: Entrust IDV reviews
+  publisher: Capterra
+  url: https://www.capterra.com/p/200047/Onfido/reviews/
+  accessed: '2026-10'
+- title: Entrust Identity Verification reviews, identity verification market
+  publisher: Gartner Peer Insights
+  url: https://www.gartner.com/reviews/market/identity-verification/vendor/entrust/product/onfido
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -237,13 +291,12 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- onfido.com now 302-redirects to entrust.com/products/identity-verification; link.url updated. Owner should confirm whether the outbound link type or wordmark should change to Entrust.
-- Founded 2012 is Entrust's statement; Companies House shows Onfido Ltd incorporated 29 Dec 2010. Both shown.
-- Founders and office list (New York, Albuquerque, Lisbon, Singapore) not confirmed on any page opened; removed.
-- Atlas AI engine name no longer appears on the Entrust document verification page; removed.
-- AWS Marketplace listing could not be opened (robots block); removed.
-- No ISO 27001 or SOC 2 statement found on current Entrust IDV pages; none listed. A 2020 Onfido SOC 2 Type 2 release exists but was not opened.
-- G2 rating read from the product page header; review themes not visible, kept as general statements without counts.
+- onfido.com redirects to Entrust and link.url points to entrust.com. Owner to decide whether the outbound link type, logo or wordmark should change to Entrust.
+- Office locations beyond the London registered office (old page listed New York, Albuquerque, Lisbon, Singapore) not confirmed on any page opened; still omitted.
+- AWS Marketplace listing could not be opened (robots block); availability there still unconfirmed and not claimed.
+- Entrust's Remote IDV Practice Statement (Dec 2025) says Facial Similarity Motion holds iBeta PAD Level 1 and Level 2; iBeta's public list shows only Level 1 for Motion v2.0 (Jul 2026). Level 2 for Motion not shown as confirmed.
+- ISO/IEC 27001:2022, SOC 2 Type II, ETSI TS 119 461 / EN 319 401 and NIST 800-63-3 IAL2 are vendor-stated; no certificate, audit report or register entry opened.
+- Gartner Peer Insights shows 4.3 from 47 ratings in the identity verification market and 4.4 from 60 on the all-markets product page; the market page is used.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

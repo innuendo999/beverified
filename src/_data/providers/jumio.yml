@@ -23,8 +23,8 @@ link:
   url: https://www.jumio.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: 'Jumio is built for enterprise-scale identity verification: more than a billion transactions processed, bank and marketplace clients, and a platform that extends beyond onboarding into ongoing risk monitoring. That scale comes at the cost of pricing transparency. Rates are quoted through sales, and Vendr''s buyer data puts the median annual contract at about $55,850.'
 what_is:
 - Jumio is an identity-verification company founded in 2010 and based in Sunnyvale, California, with offices and representation in North America, Latin America, Europe, Asia Pacific and the Middle East. It says it has processed more than 1 billion transactions across more than 200 countries and territories. It is backed by Centana Growth Partners, Great Hill Partners and Millennium Technology Value Partners, and Mark Lorion became CEO in April 2026. Jumio sells to large enterprises (banks, marketplaces and fintechs) that need document and biometric verification alongside AML screening at global scale.
@@ -163,6 +163,11 @@ user_ratings:
   count: 38
   checked: '2026-10'
   url: https://www.g2.com/products/jumio/reviews
+- platform: Gartner Peer Insights
+  rating: 3.5
+  count: 2
+  checked: '2026-10'
+  url: https://www.gartner.com/reviews/product/jumio-identity-verification
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
@@ -203,6 +208,10 @@ sources:
   publisher: G2
   url: https://www.g2.com/products/jumio/reviews
   accessed: '2026-10'
+- title: Jumio Identity Verification reviews
+  publisher: Gartner Peer Insights
+  url: https://www.gartner.com/reviews/product/jumio-identity-verification
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -213,13 +222,9 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- Founding year 2010 comes from Wikipedia only; Jumio's own pages checked do not state it.
-- ISO 27001, SOC 2 Type 2 and PCI DSS are vendor-stated; trust.jumio.com did not load, and no certificate or register entry was opened.
-- Old figure of $0.90 to $2.30 per verification had no traceable source and was removed; replaced with Vendr buyer data.
-- Old funding figure ($233M+, Series D) could not be sourced and was removed; investors listed instead.
-- On-premise deployment, 24/7 support and the KYX brand were not found on Jumio's current pages and were removed.
-- G2 rating read via a fetched copy of the page; spot-check the count before relying on it. Capterra showed 0 reviews for Jumio.
-- Ranking cards (identity-verification, aml, e-kyc) still show legacy_price_shown $1.15/verification, which has no source.
+- Founding year 2010 rests on third-party sources only (Wikipedia; CB Insights also shows 2010). Jumio's homepage and About page do not state it, and no company registry entry was opened.
+- ISO/IEC 27001:2022, SOC 2 Type 2 and PCI DSS are vendor-stated on the Privacy Center page; trust.jumio.com still does not load, and no certificate, audit report or register entry was opened. A 2022 Jumio release names Moss Adams as the SOC 2 auditor.
+- Gartner Peer Insights rating is based on only 2 ratings. Capterra still shows 0 reviews for Jumio, so it is not listed.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
