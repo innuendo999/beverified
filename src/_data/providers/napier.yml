@@ -22,11 +22,11 @@ link:
   url: https://www.napier.ai
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: Napier AI is a dedicated transaction-monitoring and sanctions-screening platform built for financial institutions and insurers, and says it is trusted by more than 150 institutions, with Banco do Brasil and Australia Post among the clients named on its site. Its built-in sandbox for testing monitoring rules before go-live is a genuine differentiator, though like most AML specialists here, it doesn't do identity verification on its own.
 what_is:
-- Napier AI is an anti-money-laundering compliance company founded in 2015 and headquartered in London, led by CEO Greg Watson. Marlin Equity Partners made a majority growth investment in the company, announced in February 2025. Napier provides transaction monitoring, transaction and client screening (sanctions, PEPs and adverse media) and perpetual client risk assessment on its Napier AI Continuum platform, and says more than 150 financial institutions, insurers and wealth and asset managers use it, naming clients such as Banco do Brasil, Australia Post, State Street and Starling Bank.
+- Napier AI is an anti-money-laundering compliance company founded in 2015 and headquartered in London, led by CEO Greg Watson. Marlin Equity Partners made a majority growth investment in the company, announced in February 2025; Companies House lists Lapis Bidco Limited as holding 75% or more of the shares of Napier Technologies Limited since 31 January 2025. Napier provides transaction monitoring, transaction and client screening (sanctions, PEPs and adverse media) and perpetual client risk assessment on its Napier AI Continuum platform, and says more than 150 financial institutions, insurers and wealth and asset managers use it, naming clients such as Banco do Brasil, Australia Post, State Street and Starling Bank.
 features:
 - Real-time transaction monitoring with 100+ built-in AML typologies, combining rules and AI.
 - Real-time and batch client screening for sanctions, PEPs and adverse media, with AI fuzzy name matching in more than 20 languages.
@@ -64,7 +64,7 @@ facts:
   source: null
 - label: Founded
   value: '2015'
-  source: 5
+  source: 10
   evidence: independent
 - label: HQ
   value: London, UK
@@ -121,7 +121,7 @@ faq:
 - q: Who uses Napier AI?
   a: Napier says more than 150 financial institutions, insurers, and wealth and asset managers use it, and names clients including Banco do Brasil, Australia Post, State Street and Starling Bank.
 - q: Who owns Napier AI?
-  a: Marlin Equity Partners made a majority growth investment in Napier AI, announced on 3 February 2025. Greg Watson remains CEO.
+  a: Marlin Equity Partners made a majority growth investment in Napier AI, announced on 3 February 2025. Companies House lists Lapis Bidco Limited as holding 75% or more of the shares and voting rights of Napier Technologies Limited, the operating company, since 31 January 2025. Greg Watson remains CEO.
 - q: What is the best alternative to Napier AI?
   a: ComplyAdvantage is the best alternative for broader proprietary financial-crime data. Unit21 is the closest fit if agentic, end-to-end investigation automation matters more than screening depth.
 - q: Who are Napier AI's main competitors?
@@ -166,7 +166,12 @@ certifications:
   what: Security controls audit
   status: vendor_stated
   source: 7
-user_ratings: []
+user_ratings:
+- platform: G2
+  rating: 3.8
+  count: 2
+  checked: '2026-10'
+  url: https://www.g2.com/products/napier-intelligent-compliance/reviews
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
@@ -203,6 +208,18 @@ sources:
   publisher: Napier AI
   url: https://www.napier.ai/regulatory-reporting-manager
   accessed: '2026-10'
+- title: NAPIER TECHNOLOGIES LIMITED (09901129), persons with significant control
+  publisher: Companies House
+  url: https://find-and-update.company-information.service.gov.uk/company/09901129/persons-with-significant-control
+  accessed: '2026-10'
+- title: NAPIER TECHNOLOGIES LIMITED (09901129), company overview
+  publisher: Companies House
+  url: https://find-and-update.company-information.service.gov.uk/company/09901129
+  accessed: '2026-10'
+- title: Napier Intelligent Compliance reviews
+  publisher: G2
+  url: https://www.g2.com/products/napier-intelligent-compliance/reviews
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -213,14 +230,10 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- 'Ownership: Marlin Equity Partners majority growth investment announced 3 Feb 2025 (Marlin portfolio page). Seedtable reports Lapis Bidco Ltd acquired 100% of ordinary shares on 24 Jan 2025 per audited accounts; not checked against Companies House filings.'
-- 'Languages: old page said 25+; Client Screening page says "more than 20 languages". Corrected.'
-- 'Continuum: old page called it a sandbox. Napier AI Continuum is the platform name; the sandbox is a feature of transaction monitoring. Corrected.'
-- 'NLP: old feature said natural-language processing reduces false positives; Napier pages say AI fuzzy matching. Reworded.'
-- 'Client count: Napier says 150+; Marlin portfolio page says "over 100". Kept the vendor figure labelled as Napier''s claim.'
-- 'ISO 27001:2022 and SOC 2 Type 2 vendor-stated (homepage; 2021 blog post on SOC 2 Type 2, auditor not named). No certificate or current report seen.'
-- 'Australia Post: appears as a client logo only; the old "trade-compliance screening" use is not confirmed and was removed.'
-- 'User ratings: G2 page could not be opened; review themes removed.'
+- 'Ownership: Companies House (source 9) lists Lapis Bidco Limited (16141214) as PSC of Napier Technologies Limited with 75% or more of shares and votes, notified 31 Jan 2025. The chain runs Lapis Midco to Lapis Topco, whose PSC is David Michael McGovern; the registry does not name Marlin. The reported 100% holding and the 24 Jan 2025 date (Seedtable) are not confirmed; the registry band is 75% or more. Audited accounts not opened.'
+- 'ISO/IEC 27001:2022 and SOC 2 Type 2 still vendor-stated (homepage; SOC 2 post dated 7 Sep 2021, auditor and period not named). No certificate, register entry or current report found.'
+- 'G2 rating comes from the older Napier Intelligent Compliance listing (2 reviews); the Napier listing has 0 reviews. Too few reviews for themes.'
+- 'Client count: Napier homepage and About page say 150+; Marlin portfolio page (Feb 2025 deal) says over 100. Kept the vendor figure labelled as Napier''s claim.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

@@ -4,7 +4,7 @@ alternate_names: []
 status: published
 seo:
   title: 'Unit21 Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'Unit21 review: fraud and AML platform with AI agents for investigations and filings, used by 200+ customers. Features, pricing, pros & cons, alternatives.'
+  description: 'Unit21 review: fraud and AML platform with AI agents for investigations and filings, used by 180+ customers. Features, pricing, pros & cons, alternatives.'
   h1: 'Unit21 Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/unit21.jpg
@@ -22,11 +22,11 @@ link:
   url: https://www.unit21.ai
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: 'Unit21''s AI agents go further than most fraud/AML tools. Its Detection and Investigation agents triage alerts, gather evidence and pre-populate regulatory filings such as SARs, instead of only summarizing cases for a human analyst. That ambition is backed by real customers (Chime, Green Dot, Sallie Mae), though pricing is not published.'
 what_is:
-- Unit21 is a fraud-prevention and AML platform founded in 2018 and headquartered in San Francisco. It started as a no-code risk and compliance platform and now adds AI agents on top, used by more than 200 customers, including Chime, Green Dot and Crypto.com, to combine fraud detection, AML transaction monitoring and regulatory filing. Co-founder Trisha Kothari led the company as CEO until April 2026, when founding engineer Tyler Allen became CEO and she moved to chair of the board.
+- Unit21 is a fraud-prevention and AML platform founded in 2018 by Trisha Kothari and Clarence Chio and headquartered in San Francisco. It started as a no-code risk and compliance platform and now adds AI agents on top, used by more than 180 customers in more than 90 countries, according to Unit21, including Chime, Green Dot and Crypto.com, to combine fraud detection, AML transaction monitoring and regulatory filing. Co-founder Trisha Kothari led the company as CEO until April 2026, when founding engineer Tyler Allen became CEO and she moved to chair of the board.
 features:
 - AI agents (Detection Agent and Investigation Agent) that handle alert review and investigation work, beyond alert triage.
 - Real-time fraud monitoring with stated sub-250ms latency.
@@ -54,12 +54,12 @@ facts:
   evidence: independent
 - label: HQ
   value: San Francisco, CA
-  source: 3
+  source: 8
   evidence: vendor
 - label: Customers
-  value: 200+, incl. Chime, Green Dot, Crypto.com
-  source: 2
-  evidence: independent
+  value: 180+ in 90+ countries, incl. Chime, Green Dot, Sallie Mae, Intuit
+  source: 8
+  evidence: vendor
 - label: CEO
   value: Tyler Allen (since April 2026)
   source: 2
@@ -70,7 +70,7 @@ facts:
   evidence: vendor
 pros:
 - AI agents that carry investigation work forward rather than only summarizing alerts; one customer case study (Nexo) cites a 93% cut in false positives
-- Used by 200+ customers including Chime, Green Dot, and Sallie Mae
+- Used by 180+ customers, per Unit21, including Chime, Green Dot, and Sallie Mae
 - Covers RTP, FedNow, ACH, card and crypto payments in one platform
 cons:
 - No published rate card
@@ -96,11 +96,11 @@ choose_instead:
 user_reviews:
   legacy_note: null
   praise:
-  - 'Investigation automation: reviewers highlight faster case resolution.'
-  - 'Platform unification: users note that having fraud, AML and filing in one system reduces tool-switching.'
+  - 'Customization: reviewers say they can adjust workflows and fraud rules without writing code.'
+  - 'Support: reviewers describe the support team as responsive and helpful.'
   criticize:
-  - 'Pricing transparency: there is no published rate card.'
-  - 'Learning curve: configuration takes time before the AI features pay off.'
+  - 'Learning curve: some reviewers say initial rule setup and the interface take time to learn.'
+  - 'Data and exports: a few reviewers report problems with case data and inconsistent exports or narratives.'
   by_profile:
   - Neobanks and fintechs use Unit21 to run fraud and AML operations in one system.
   - Banks and credit unions, including sponsor banks, use it for transaction monitoring and filings.
@@ -111,7 +111,7 @@ faq:
 - q: What are Unit21's AI agents?
   a: Unit21 offers a Detection Agent and an Investigation Agent that review alerts, gather supporting evidence and pre-populate filings such as SARs, CTRs and 314(a) responses, instead of only summarizing alerts for analysts.
 - q: Who uses Unit21?
-  a: Unit21 says it has more than 200 customers, including Chime, Green Dot, Crypto.com, Intuit, and Sallie Mae, across banking, fintech, and crypto.
+  a: Unit21 says it has more than 180 customers in more than 90 countries, including Chime, Green Dot, Crypto.com, Intuit, and Sallie Mae, across banking, fintech, and crypto.
 - q: Does Unit21 handle both fraud and AML?
   a: Yes. Unit21 combines real-time fraud monitoring with AML transaction monitoring, case management, screening and regulatory filing in one platform.
 - q: What is the best alternative to Unit21?
@@ -188,6 +188,14 @@ sources:
   publisher: Unit21
   url: https://www.unit21.ai/solutions/kyc-kyb
   accessed: '2026-10'
+- title: Unit21 closes $34 million Series B led by Tiger Global
+  publisher: Unit21
+  url: https://www.unit21.ai/blog/unit21-closes-34-million-series-b-led-by-tiger-global-to-accelerate-no-code-enterprise-revolution
+  accessed: '2026-10'
+- title: Unit21 and Corelation bring AI-native fraud prevention and AML monitoring to credit unions on KeyStone
+  publisher: Business Wire (Unit21 release)
+  url: https://www.businesswire.com/news/home/20261012063040/en/Unit21-and-Corelation-Bring-AI-Native-Fraud-Prevention-and-AML-Monitoring-to-Credit-Unions-on-Keystone
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -198,14 +206,13 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- 'CEO: old con said "Recent CEO transition (2025)". FinTech Futures dates the change to 9 Apr 2026 (Tyler Allen CEO, Trisha Kothari to chair).'
-- 'Clarence Chio: named as CTO and co-incubator in the Series C release, not explicitly as co-founder; removed from what_is.'
-- '"90+ countries": not found; removed.'
-- '"$92M+ raised (Series A to C)": only the $45M Series C confirmed; total not found on a primary source.'
-- 'HQ San Francisco from the 2023 Series C release dateline; no newer HQ statement opened. 2026 article only says US-based.'
-- '"up to 93% false-positive reduction" is a single Nexo case-study figure on the homepage; reworded.'
-- '"Modular subscription by capability": pricing page did not load; no pricing structure confirmed, so wording reduced to quote on request.'
-- 'G2 review themes could not be read; kept as general statements without counts.'
+- 'Customer count: the Oct 2026 Business Wire release (source 8) says 180+ customers in 90+ countries; the Jul and Sep 2026 releases and FinTech Futures (Apr 2026) say 200+. Record uses the latest, lower figure. Homepage gives no count.'
+- 'Funding: Unit21 Series B release (source 7) confirms a $13M Series A (Oct 2020) and $34M Series B (Jul 2021); with the $45M Series C (source 3) disclosed rounds sum to $92M. Any earlier funding is not disclosed, so the fact keeps total not disclosed.'
+- 'HQ: San Francisco from the Oct 2026 release dateline (source 8); the site and contact page give no street address.'
+- 'Pricing: unit21.ai/pricing returned an error again on 2026-10-22; no pricing structure confirmed.'
+- 'SOC 2 Type I and Type II (Armanino) vendor-stated on the Security page; no report or auditor letter seen.'
+- 'Capability check: identity_verification is add_on, but the KYC/KYB page (source 6) says customers bring their own KYC/KYB data partner and names no partner module; under the schema no may fit better. Capability not edited.'
+- 'Capterra lists Unit21 with 0 reviews (capterra.co.uk, 2026-10-22); not added to user_ratings.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
