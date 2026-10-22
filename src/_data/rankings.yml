@@ -97,7 +97,7 @@ aml:
     size: SMB to Enterprise
     pros:
     - Proprietary sanctions, PEP and adverse-media data
-    - Real-time transaction monitoring and payment screening
+    - Real-time transaction monitoring and payment screening on the Enterprise plan
     - Starter plan from $99/month, plus free ComplyLaunch access for qualifying startups
     cons:
     - Initial setup can be involved, per user reviews
@@ -106,175 +106,141 @@ aml:
     legacy_price_shown: From $99/mo
     legacy_rating_shown: 4.7
     segments: []
-  - slug: kycaid
-    name: KYCAID
+  - slug: hawkai
+    name: Hawk AI
     award: null
-    tagline: Modular KYC/AML suite with configurable verification workflows.
-    coverage: Global
-    size: SMB to Mid-market
+    tagline: Explainable-AI AML transaction monitoring, screening and fraud detection for banks and fintechs.
+    coverage: null
+    size: null
     pros:
-    - Customisable verification flows from one dashboard
-    - White labeling on the Enterprise plan
-    - 24/7 chat support with a stated 15-minute response SLA
+    - Explainable AI built for regulator-facing audit transparency
+    - AML monitoring, screening and fraud detection on one platform with a unified case manager
+    - Vendor-reported 70% fewer false alerts and 62% less AML investigation time
     cons:
-    - Smaller watchlist database than category leaders
-    - Adverse-media screening is not listed among its AML checks
-    - Mobile SDKs are provided on request, not in the public docs
-    legacy_price_shown: From €0.50/check + €100/mo
-    legacy_rating_shown: 4.6
-    segments: []
-  - slug: trulioo
-    name: Trulioo
-    award: Best for Global Identity Data
-    tagline: Global identity network covering 195 countries, with screening against 6,000+ watchlists.
-    coverage: Global
-    size: Enterprise
-    pros:
-    - Person and business verification across 195 countries
-    - Screens against 6,000+ watchlists, per Trulioo
-    - Database checks for non-documentary identity proofing
-    cons:
-    - No published pricing; rates are quoted on request
-    - Needs meaningful technical resources to integrate its data-API model
-    - Leans toward a data API rather than a no-code, UX-first platform
+    - Enterprise/mid-market focus, not built for very small teams
+    - No published pricing
+    - Transaction-monitoring/AML focus, not document-first identity verification
     legacy_price_shown: Custom pricing
-    legacy_rating_shown: 4.5
+    legacy_rating_shown: null
     segments: []
-  - slug: onfido
-    name: Onfido
-    award: Best for Identity Verification
-    tagline: Document and biometric identity verification, now sold as Entrust Identity Verification.
-    coverage: Global, 195 countries
-    size: Mid-market to Enterprise
+  - slug: unit21
+    name: Unit21
+    award: null
+    tagline: Fraud and AML platform with AI agents that handle investigations, beyond alerts.
+    coverage: null
+    size: null
     pros:
-    - Liveness tested by iBeta to ISO/IEC 30107-3 (Level 2, 2022)
-    - More than 2,500 document types across 195 countries
-    - Strong developer SDKs and API tooling
+    - AI agents that carry investigation work forward rather than only summarizing alerts; one customer case study (Nexo) cites a 93% cut in false positives
+    - Used by 200+ customers including Chime, Green Dot, and Sallie Mae
+    - Covers RTP, FedNow, ACH, card and crypto payments in one platform
     cons:
-    - AML/watchlist screening is a separate module
-    - No published pricing; quoted via Entrust sales
-    - Mixed reviews on support responsiveness
-    legacy_price_shown: Custom pricing
-    legacy_rating_shown: 4.6
-    segments: []
-  - slug: jumio
-    name: Jumio
-    award: Most Popular
-    tagline: Widely adopted identity verification and AML screening for global platforms.
-    coverage: Global, 200+ countries and territories
-    size: Mid-market to Enterprise
-    pros:
-    - More than 1 billion transactions processed
-    - AML screening with ongoing monitoring after onboarding
-    - 5,000+ ID types across 200 countries and territories
-    cons:
-    - Pricing only via sales quote, with no published rate card
-    - Third-party data (Vendr) puts the median annual contract at $55,850
-    - Heavier integration lift for teams without dedicated developers
-    legacy_price_shown: Custom pricing
-    legacy_rating_shown: 4.5
-    segments: []
-  - slug: amlwatcher
-    name: AML Watcher
-    award: Best for On-Premises Screening
-    tagline: Sanctions, PEP and adverse media screening on its own watchlist data, delivered by API, in-country hosting or on-premises.
-    coverage: Global
-    size: SMB to Mid-market
-    pros:
-    - Sanctions data refreshed every 15 minutes, across 215+ regimes and 3,500+ watchlists, per AML Watcher
-    - Cloud, in-country or on-premises deployment, including in-Kingdom hosting for Saudi customers
-    - Public REST API docs with webhooks, bulk search and an MCP server
-    cons:
-    - No prices on the vendor's own pricing page; $95 and $450 a month appear only on G2 and Capterra
-    - PEP and adverse media totals differ between its own pages
-    - No SOC 2 report; only ISO/IEC 27001:2022 is certified
+    - No published rate card
+    - Best suited to regulated financial institutions rather than early-stage startups
+    - CEO change in April 2026 (co-founder Trisha Kothari moved to chair) brings some organizational change
     legacy_price_shown: Not published
     legacy_rating_shown: null
     segments: []
-  - slug: zyphe
-    name: Zyphe
-    award: Best for AI Alert Review
-    tagline: AML screening and monitoring with AI agents that clear false-positive alerts and write up each case for a human to approve.
-    coverage: Global
-    size: SMB to Mid-market
+  - slug: napier
+    name: Napier
+    award: null
+    tagline: AI-native transaction monitoring and sanctions screening for financial institutions.
+    coverage: Global (offices in Europe, Middle East, APAC and US)
+    size: null
     pros:
-    - Published per-task prices, from $0.25 per resolved false-positive alert
-    - Every agent case carries cited evidence and a written rationale, with human sign-off by default
-    - Screening at $0.20, ongoing monitoring at $0.05 per subject a year and transaction monitoring at $0.02
+    - Built-in sandbox lets teams test monitoring rules before deploying them live
+    - Trusted by 150+ institutions, per Napier, including Banco do Brasil and Australia Post
+    - AI fuzzy name matching in more than 20 languages, including simplified Chinese and Arabic, helps cut false positives
     cons:
-    - Only OFAC, UN and EU lists are named; the list data provider is not disclosed
-    - No SOC 2 report or ISO/IEC 27001 certificate yet
-    - Young vendor with a short track record and few public reviews
-    legacy_price_shown: From $0.20/screening
+    - Does not perform identity verification, so it needs a separate IDV vendor alongside it
+    - No published pricing
+    - Enterprise-only focus, less suited to early-stage fintechs
+    legacy_price_shown: Custom pricing
     legacy_rating_shown: null
     segments: []
-  - slug: null
-    name: Refinitiv World-Check
-    award: Best for Sanctions Screening
-    tagline: Long-standing sanctions, PEP, and adverse-media screening database.
-    coverage: Global, strong in US/UK
-    size: Enterprise
-    pros:
-    - Deep, well-established watchlist data
-    - Trusted by major banks worldwide
-    - Extensive adverse-media coverage
-    cons:
-    - Not a full onboarding/KYC platform alone
-    - Requires integration work
-    - Enterprise-only pricing model
-    legacy_price_shown: Custom pricing
-    legacy_rating_shown: 4.4
-    segments: []
-  - slug: null
-    name: LexisNexis Risk Solutions
+  - slug: castellum-ai
+    name: Castellum.AI
     award: null
-    tagline: Risk data and identity intelligence spanning KYC, AML, and fraud.
-    coverage: Global
-    size: Enterprise
+    tagline: In-house risk data refreshed every 5 minutes, built by an ex-OFAC sanctions expert.
+    coverage: null
+    size: null
     pros:
-    - Large proprietary risk-data network
-    - Covers KYC, AML, and fraud in one vendor
-    - Deep regulatory reporting tools
+    - In-house risk data refreshed every 5 minutes, unusually current for the category
+    - Founder brings direct US Treasury/OFAC sanctions experience
+    - AI agents with a governance layer designed for audit-ready alert resolution
     cons:
-    - Complex product suite to navigate
-    - Long sales & implementation cycle
-    - Overkill for smaller businesses
-    legacy_price_shown: Custom pricing
-    legacy_rating_shown: 4.5
+    - Smaller team and scale than category giants
+    - Screening/data-focused rather than a full identity-verification platform
+    - No published pricing
+    legacy_price_shown: Not published
+    legacy_rating_shown: null
     segments: []
-  - slug: null
-    name: Fenergo
-    award: Best for Enterprise Onboarding
-    tagline: Client lifecycle management for complex corporate & institutional onboarding.
+  - slug: kyc360
+    name: KYC360
+    award: null
+    tagline: Full-lifecycle AML platform built on deep founder expertise, now part of Experian.
     coverage: Global
-    size: Enterprise
+    size: null
     pros:
-    - Purpose-built for institutional onboarding
-    - Strong regulatory-change management
-    - Handles complex entity structures
+    - Deep AML expertise from founder Stephen Platt, also a founder of the International Compliance Association
+    - Published per-search credit pricing with unlimited users suits lower, variable screening volumes
+    - Now backed by Experian's data network following its October 2025 acquisition
     cons:
-    - Significant implementation timeline
-    - Best suited to large financial institutions
-    - Not cost-effective for small teams
-    legacy_price_shown: Custom pricing
-    legacy_rating_shown: 4.3
+    - Smaller team scale than category giants
+    - More focused on AML screening and lifecycle than document-first identity verification
+    - Experian announced integration into its Ascend platform from 2026, so the combined offer is still new
+    legacy_price_shown: From £105/mo (21 search credits)
+    legacy_rating_shown: null
     segments: []
-  - slug: null
-    name: Actico
-    award: Best for Transaction Monitoring
-    tagline: Rules-based transaction monitoring and AML case management platform.
-    coverage: Strongest in EU
-    size: Mid-market to Enterprise
+  - slug: kychub
+    name: KYC Hub
+    award: null
+    tagline: No-code financial-crime orchestration covering the full lifecycle in one platform.
+    coverage: 190+ countries
+    size: null
     pros:
-    - Configurable rule engine
-    - Solid case-management workflow
-    - Established in European banking market
+    - Full financial-crime lifecycle (identity, screening, monitoring, case management) in one no-code platform
+    - 'Fast configuration: 100+ templates to ship flows in hours, per the vendor'
+    - Modular pricing that lets you change tiers or add and remove modules at any time
     cons:
-    - Smaller footprint outside Europe
-    - Interface less modern than newer rivals
-    - Requires compliance-analyst tuning
+    - No published prices; a quote needs a demo and a pilot
+    - SOC 2 is described only as "aligned", not as an audited report
+    - Younger, smaller brand than established category leaders
     legacy_price_shown: Custom pricing
-    legacy_rating_shown: 4.2
+    legacy_rating_shown: null
+    segments: []
+  - slug: smartsearch
+    name: SmartSearch
+    award: null
+    tagline: UK-first AML/KYC verification built for JMLSG-regulated professions.
+    coverage: UK-focused; international checks offered
+    size: null
+    pros:
+    - Strong fit for UK legal, property, accountancy and financial-services firms
+    - Individual and business verification in one platform
+    - DIATF-certified SmartDoc identity check, with Credas Connect added through the 2026 acquisition
+    cons:
+    - UK-centric; international checks exist but the product and client base centre on the UK
+    - No published pricing
+    - Built around data-based AML checks; document and facial checks come through SmartDoc rather than a document-first IDV flow
+    legacy_price_shown: Not published
+    legacy_rating_shown: null
+    segments: []
+  - slug: relycomply
+    name: RelyComply
+    award: null
+    tagline: Unified KYC, KYB and AML platform with South African roots and a London office.
+    coverage: null
+    size: null
+    pros:
+    - Unified KYC, KYB and AML (transaction monitoring and screening) in one platform rather than stitched-together tools
+    - Built-in case management and goAML regulatory reporting
+    - Local fit for South African FICA compliance, with named clients such as Standard Bank and SnapScan
+    cons:
+    - Smaller, younger company than established category players
+    - Disclosed a September 2026 cyber incident affecting systems that hold customer data; forensic review ongoing at disclosure
+    - No published pricing
+    legacy_price_shown: Custom pricing
+    legacy_rating_shown: null
     segments: []
 brazil:
   title: Best KYC & AML Providers for Brazil in 2026
