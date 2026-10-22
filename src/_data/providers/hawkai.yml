@@ -22,14 +22,14 @@ link:
   url: https://www.hawk.ai
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: Hawk (formerly HAWK:AI) built one of the earlier explainable-AI approaches to AML transaction monitoring, pairing rules with behavioral AI and adding screening, fraud detection and AI agents for investigations on one platform. It serves Tier-1 banks down to mid-market fintechs, and by its own figures cuts false alerts by 70% and AML investigation time by 62%.
 what_is:
 - Hawk is an AML, screening and fraud-prevention company founded in 2018 in Munich, Germany, by Tobias Schweiger (CEO) and Wolfgang Berner; it was originally known as HAWK:AI and its legal entity is Hawk AI GmbH. In April 2025 it raised a $56 million Series C led by One Peak, with Macquarie Capital, Rabobank, BlackFin Capital Partners and others, and at that point served more than 80 clients from Tier-1 banks to mid-market fintechs. Customers shown on its site include Ecobank, Vakif Bank, Synctera, VR Payment, Ebury and Alviere.
 features:
 - AML transaction monitoring combining rules and behavioral AI, plus an AML AI overlay for existing systems.
-- Customer and payment screening against sanctions and watchlists.
+- Customer and payment screening against sanctions, PEP and adverse media watchlists.
 - Transaction fraud, check fraud, and scam and mule detection, with a combined FRAML option.
 - Customer risk rating and entity risk detection.
 - Explainable AI for audit-ready decisioning.
@@ -48,6 +48,11 @@ pricing:
     value: None; quote on request
     kind: official
     source: 2
+    verified: '2026-10'
+  - label: AWS Marketplace
+    value: Payment Screening listed; purchase by private offer only
+    kind: third_party
+    source: 9
     verified: '2026-10'
 facts:
 - label: From
@@ -71,7 +76,7 @@ facts:
   source: 4
   evidence: independent
 - label: Certifications
-  value: ISO/IEC 27001:2022, SOC 2 Type II (vendor-stated)
+  value: ISO/IEC 27001:2022 (TÜV SÜD), SOC 2 Type II (vendor-stated)
   source: 5
   evidence: vendor
 pros:
@@ -121,7 +126,7 @@ faq:
 - q: Who uses Hawk?
   a: Hawk had more than 80 clients in April 2025, from Tier-1 banks to mid-market fintechs. Customers shown on its site include Ecobank, Vakif Bank, Synctera, VR Payment, Ebury and Alviere.
 - q: Is Hawk SOC 2 audited?
-  a: Hawk says it holds ISO/IEC 27001:2022 certification and has completed a SOC 2 Type II examination; its published SOC 2 executive summary names A-Lign as the auditor.
+  a: Hawk AI GmbH holds ISO/IEC 27001:2022 certification from TÜV SÜD, valid until November 2028. Hawk also says it has completed a SOC 2 Type II examination; its published SOC 2 executive summary names A-Lign as the auditor and covers April to July 2023.
 - q: What is the best alternative to Hawk?
   a: Feedzai is the best alternative for Tier-1 bank-scale real-time payment fraud. ComplyAdvantage is the closest fit for sanctions/PEP data depth.
 - q: Who are Hawk's main competitors?
@@ -159,9 +164,9 @@ capabilities:
   checked: '2026-10'
 certifications:
 - name: ISO/IEC 27001:2022
-  what: Information security
-  status: vendor_stated
-  source: 5
+  what: Information security (TÜV SÜD, valid to Nov 2028)
+  status: confirmed
+  source: 7
 - name: SOC 2 Type II
   what: Security controls report (A-Lign)
   status: vendor_stated
@@ -195,6 +200,18 @@ sources:
   publisher: Hawk
   url: https://insights.hawk.ai/hubfs/Marketing/Trust%20Center/Compliance/Hawk-SOC2-Executive-Summary.pdf
   accessed: '2026-10'
+- title: ISO/IEC 27001:2022 certificate, Hawk AI GmbH (Reg. No. 12 310 64806 TMS)
+  publisher: TÜV SÜD Management Service GmbH
+  url: https://hawk.ai/sites/default/files/2026-03/iso-certificate-281103.pdf
+  accessed: '2026-10'
+- title: Customer screening
+  publisher: Hawk
+  url: https://hawk.ai/our-products/customer-screening
+  accessed: '2026-10'
+- title: Payment Screening (AWS Marketplace listing)
+  publisher: Amazon Web Services
+  url: https://aws.amazon.com/marketplace/pp/prodview-uvjz7p7lzkela
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -205,14 +222,14 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- '"Roughly 90% alert accuracy" and "50 to 70% fewer false positives" not found; replaced with current homepage figures (70% fewer false alerts, 62% less investigation time), which are vendor claims with no methodology.'
-- 'Cross-institution "pattern-sharing network" not found on the current homepage or about page; removed from tagline, pros, features, FAQ and user themes. Could not search further (search budget exhausted); re-check if Hawk still markets a consortium or network feature.'
-- '"Patent-pending" explainable AI not found on pages opened; wording removed.'
-- '"€51.8M Series C" not confirmed; sources give $56M (Finovate, 8 Apr 2025; Finextra). Euro figure dropped.'
-- Worldline not shown among current customer logos; replaced with the logos and case studies on the homepage. VakifBank International is shown as "Vakif Bank".
-- Client count 80+ is from April 2025 coverage; no current count on Hawk's site.
-- ISO/IEC 27001 certificate PDF is linked from Hawk's page but was not opened; certification body not named. SOC 2 executive summary (A-Lign, Apr to Jul 2023 observation period) does not state the report type explicitly; Hawk's page calls it Type II. Both kept as vendor-stated.
-- G2 page could not be fetched; no user ratings added. User review themes are general statements, not counted themes.
+- 'Cross-institution pattern-sharing network: not on Hawk''s homepage or about page (sources 1, 2) on 2026-10-22. The only mention found is the undated vendor description on GetApp (getapp.co.uk/software/2052402/hawk-ai: "pattern data pooling and sharing among Hawk''s network"). Kept out of the review until Hawk''s own current pages describe it.'
+- '"Patent-pending" explainable AI: not on Hawk''s own pages; appears only in the same undated GetApp description. Wording stays removed.'
+- 'Client count 80+ is from April 2025 (source 4; Hawk''s Series C press release says the same). No current count on Hawk''s homepage or about page.'
+- 'SOC 2: the information security page (source 5) says Hawk completed a SOC 2 Type II examination. The executive summary (source 6, A-Lign, observation period 1 Apr to 31 Jul 2023) does not state the report type and is the only public document; no newer report found. Kept as vendor-stated.'
+- 'User ratings: G2 lists Hawk with 0 reviews (g2.com/sellers/hawk); GetApp UK and AWS Marketplace also show 0 reviews. No user_ratings added.'
+- 'AWS Marketplace (source 9) shows a $0.01 unit price for Payment Screening that is a placeholder for private-offer contracts, not a usable price; not quoted.'
+- 'Capabilities check: adverse_media cites the homepage (source 2), which does not name adverse media; the customer screening page (source 8) does ("sanctions, PEP/RCA, and adverse media watchlists"). Deployment (SaaS or private cloud) and the absence of identity verification match the homepage.'
+- 'Worldline: named as a customer in April 2025 coverage (Munich Startup) but not among the logos or case studies on Hawk''s current homepage; not listed.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

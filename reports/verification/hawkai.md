@@ -28,3 +28,30 @@
 ## Score flag
 
 - None. Company operating and independent; funding in 2025. The pro about a pattern-sharing network effect was removed because it could not be confirmed; if that was a scoring factor, the editor may want to review it.
+
+## Follow-up 2026-10-22
+
+### Changed
+
+- ISO/IEC 27001:2022: vendor_stated (source 5) → confirmed. Opened the certificate: TÜV SÜD Management Service GmbH, Reg. No. 12 310 64806 TMS, Hawk AI GmbH, scope covers the sanctions screening, AML and fraud prevention platform, valid 20 Oct 2025 to 03 Nov 2028 (new source 7). The Certifications fact and SOC 2 FAQ now name TÜV SÜD and the validity date.
+- SOC 2 FAQ: added the executive summary's observation period, April to July 2023 (source 6).
+- Feature "Customer and payment screening against sanctions and watchlists" → "... against sanctions, PEP and adverse media watchlists" (new source 8, customer screening page).
+- Pricing: added a third-party item. Payment Screening is listed on AWS Marketplace for private-offer purchase only (new source 9). The $0.01 unit figure there is a placeholder and is not quoted.
+- Re-confirmed with no change: 70% fewer false alerts and 62% less AML investigation time (homepage, source 2, vendor claims); founded 2018 in Munich by Schweiger and Berner (source 1); SaaS or private cloud deployment, no identity verification product (source 2); no published pricing (source 2).
+- Funding: the "€51.8M" figure is closed. April 2025 euro coverage gives €52M for the same Series C; Hawk's own press release gives $56M led by One Peak. The record keeps $56M (source 4).
+
+### Removed / unverifiable
+
+- Pattern-sharing network and "patent-pending" explainable AI stay removed. Both appear only in an undated vendor description on GetApp, not on Hawk's current pages.
+- Worldline stays off the customer list. It is named in April 2025 coverage (Munich Startup) but not on Hawk's current homepage.
+- Current client count: not on Hawk's site; 80+ (April 2025) kept with date.
+- SOC 2 report type: only Hawk's page says Type II; the 2023 executive summary does not state it. Still vendor-stated.
+- User ratings: G2 lists Hawk with 0 reviews, and GetApp UK and AWS Marketplace also show 0. None added.
+
+### Ranking cards
+
+- The earlier note that Hawk has no ranking entry is out of date. Hawk now appears in `aml/banks` (#4) and `aml` (#3). Tagline, pros, cons and `legacy_price_shown: Custom pricing` agree with the record in both. No corrections needed.
+
+### Score flag
+
+- None.

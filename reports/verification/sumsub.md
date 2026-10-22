@@ -33,3 +33,29 @@ All Sumsub entries in `src/_data/rankings.yml`:
 ## Score flag
 
 - None. Pricing still published; no change in ownership.
+
+## Follow-up 2026-10-22
+
+### Changed
+
+- G2 review count: 129 → 130, rating 4.6 unchanged (source 10).
+- ISO/IEC 29003:2018 (vendor-stated, source 4) → ISO/IEC TS 29003:2018, identity proofing LoIP2 and LoIP3, confirmed on the ACCS register, valid to 08 Sep 2028 (new source 13).
+- Added ISO/IEC 29115:2013, authentication assurance LoA2 and LoA3, confirmed on the same ACCS certificate (source 13).
+- Features: added the plan for each module, matching the pricing page (source 1) and the capabilities block. Sanctions and PEP screening → "Sanctions, PEP and adverse media screening ... from the Compliance plan" (adverse media per source 9). Non-document verification, KYB/UBO, transaction monitoring and fraud prevention now each say "in the custom plan".
+- Re-confirmed with no change: Basic $1.35 / $149 minimum, Compliance $1.85 / $299 minimum, custom plan quoted, 14-day trial with 50 checks (source 1); 4,000+ companies, founded 2015, eight office cities (source 2); 14,000+ document types, 220+ countries and territories, 20-second average (source 3); OFAC, UN, HMT, EU and DFAT lists (source 9); Bybit customer since July 2021 (source 7); Wirex on the customers page (source 8).
+- Earlier notes closed: Binance and TransferGo are still not on the customers page; the employee count is still not on vendor pages; the ID verification page has no "99% completion" or "one second" claim (the only "1-second" wording is the title of the Wirex case study, which describes one customer); the API documentation con was already replaced.
+
+### Removed / unverifiable
+
+- Nothing new removed.
+- Still vendor-stated only: ISO/IEC 27001, SOC 2 Type 2, PCI DSS, ETSI/eIDAS. The Trust Center buttons carry no certificate links in the fetched page, and no certification body register entry was found.
+- Which plans the free trial applies to is not stated on the pricing page.
+- Capterra: the URL tried opened a different product; no Capterra rating.
+
+### Ranking cards
+
+- All eight entries checked (aml, brazil, cheap-kyc, crypto, mexico, peru, age-verification, south-africa). Taglines, pros, cons and `legacy_price_shown` ("From $1.35/verification") agree with the record. No corrections needed.
+
+### Score flag
+
+- None.
