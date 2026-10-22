@@ -8,14 +8,14 @@ aml/banks:
     coverage: Global
     size: null
     pros:
-    - Real-time transaction monitoring and payment screening, with vendor-stated sub-second latency
+    - Real-time transaction monitoring and payment screening on the Enterprise plan, with vendor-stated sub-second latency
     - Agentic workflows that the vendor says resolve up to 85% of routine alerts
     - Built-in reporting support for SAR, CTR and FINTRAC reports
     cons:
     - Does not perform identity verification, so it needs a separate IDV vendor
     - Initial setup can be involved, per user reviews
     - Enterprise tier with unlimited usage is quoted only
-    legacy_price_shown: From $99/mo
+    legacy_price_shown: From $99/mo (Starter; monitoring on Enterprise)
     legacy_rating_shown: 4.7
     segments: []
   - slug: nice-actimize
@@ -52,22 +52,73 @@ aml/banks:
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.6
     segments: []
-  - slug: null
-    name: SAS Anti-Money Laundering
-    award: Most Established
-    tagline: Long-standing enterprise AML suite used across large financial institutions.
-    coverage: Global
+  - slug: hawkai
+    name: Hawk AI
+    award: Best for Explainable AI Monitoring
+    tagline: Explainable-AI AML transaction monitoring, screening and fraud detection for banks and fintechs.
+    coverage: null
     size: null
     pros:
-    - Decades of enterprise deployment experience
-    - Comprehensive rules and analytics engine
-    - Strong regulatory reporting tools
+    - Explainable AI built for regulator-facing audit transparency
+    - AML monitoring, screening and fraud detection on one platform with a unified case manager
+    - Vendor-reported 70% fewer false alerts and 62% less AML investigation time
     cons:
-    - Interface feels dated versus newer entrants
-    - Long implementation cycles
-    - Best suited to the largest institutions
+    - Enterprise/mid-market focus, not built for very small teams
+    - No published pricing
+    - Transaction-monitoring/AML focus, not document-first identity verification
     legacy_price_shown: Custom pricing
-    legacy_rating_shown: 4.5
+    legacy_rating_shown: null
+    segments: []
+  - slug: unit21
+    name: Unit21
+    award: Best for Real-Time Payment Rails
+    tagline: Fraud and AML platform with AI agents that handle investigations, beyond alerts.
+    coverage: null
+    size: null
+    pros:
+    - AI agents that carry investigation work forward rather than only summarizing alerts; one customer case study (Nexo) cites a 93% cut in false positives
+    - Used by 200+ customers including Chime, Green Dot, and Sallie Mae
+    - Covers RTP, FedNow, ACH, card and crypto payments in one platform
+    cons:
+    - No published rate card
+    - Best suited to regulated financial institutions rather than early-stage startups
+    - CEO change in April 2026 (co-founder Trisha Kothari moved to chair) brings some organizational change
+    legacy_price_shown: Not published
+    legacy_rating_shown: null
+    segments: []
+  - slug: quantexa
+    name: Quantexa
+    award: Best for Entity Resolution and Network Analytics
+    tagline: Decision intelligence built on entity resolution and graph analytics.
+    coverage: 100 countries
+    size: null
+    pros:
+    - Genuinely differentiated entity-resolution and graph-analytics depth
+    - Enterprise scale, with HSBC, Standard Chartered and ING among named users
+    - Broad applicability across AML, fraud, and KYC from one data foundation
+    cons:
+    - Core platform is enterprise-oriented and complex for smaller organizations
+    - No published pricing
+    - Requires significant data and implementation resources
+    legacy_price_shown: Custom pricing
+    legacy_rating_shown: null
+    segments: []
+  - slug: napier
+    name: Napier
+    award: Best for On-Premises Deployment
+    tagline: AI-native transaction monitoring and sanctions screening for financial institutions.
+    coverage: Global (offices in Europe, Middle East, APAC and US)
+    size: null
+    pros:
+    - Built-in sandbox lets teams test monitoring rules before deploying them live
+    - Trusted by 150+ institutions, per Napier, including Banco do Brasil and Australia Post
+    - AI fuzzy name matching in more than 20 languages, including simplified Chinese and Arabic, helps cut false positives
+    cons:
+    - Does not perform identity verification, so it needs a separate IDV vendor alongside it
+    - No published pricing
+    - Enterprise-only focus, less suited to early-stage fintechs
+    legacy_price_shown: Custom pricing
+    legacy_rating_shown: null
     segments: []
 aml:
   title: Best AML Software Providers in 2026
