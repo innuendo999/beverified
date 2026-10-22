@@ -6,7 +6,6 @@ const CAP_LABELS = {
   case_management: "Case management", identity_verification: "Identity verification", deployment: "Deployment",
   published_pricing: "Published pricing",
 };
-const CAP_FILTER_LABELS = { deployment: "On-premises option" };
 const CAP_STATUS = {
   yes: ["full", "Yes"], add_on: ["half", "Add-on"], no: ["empty", "No"], not_disclosed: ["unknown", "Not disclosed"],
   partial: ["half", "Partial"], cloud: ["", "Cloud"], on_prem: ["", "On-premises"], cloud_and_on_prem: ["", "Cloud and on-premises"],
@@ -42,7 +41,7 @@ export default {
         }));
       if (!rows.length) return null;
       const checked = rows.map((r) => d.providers[r.slug].capabilities.checked).filter(Boolean).sort().pop();
-      return { cols: cols.map((k) => ({ key: k, label: CAP_LABELS[k], filterLabel: CAP_FILTER_LABELS[k] || CAP_LABELS[k] })), rows, checked };
+      return { cols: cols.map((k) => ({ key: k, label: CAP_LABELS[k] })), rows, checked };
     },
     related: (d) => (d.c.adjacent || []).map((slug) => {
       const cat = Object.values(d.categories).find((x) => x.slug === slug);
