@@ -139,3 +139,36 @@ Accreditation: the SCC directory lists InterCert Inc. as accredited (file 8070, 
 Certification status `vendor_stated` → `confirmed`. Compliance 3.8 → 4.3, the same as AML Watcher (confirmed ISO/IEC 27001 only, no SOC 2).
 
 Weighted: 4.3×0.25 + 4.3×0.20 + 3.6×0.20 + 4.4×0.15 + 3.8×0.10 + 4.2×0.10 = 4.115, rounds to **4.1** (Good). Travel Rule rank unchanged (1st).
+
+## Follow-up 2026-10-22
+
+Fact pass on all 25 `verification_notes` plus two feedback notes that had been filed under `directory_categories` by mistake. Notes merged to 11. `last_verified` and `updated` set to 2026-10-22. Validator: 0 issues.
+
+### Changed
+
+- `user_ratings` SourceForge: count 1 → 2 (rating still 5.0; reviews dated 13 and 21 Oct 2026) (41).
+- `cons[2]`: "there is only one public user review so far (SourceForge)" → "there are only two public user reviews so far, both on SourceForge" (41).
+- `score_breakdown` Support note: "the only public user review is a single one on SourceForge" → "the only public user reviews are two on SourceForge, both posted in October 2026" (41). Score unchanged.
+- `score_breakdown` Integration note: "21 Analytics says prospects get a sandbox on request, though it is not yet in the docs" → "The 8.4.0 docs offer prospects free, time-limited access to a shared hosted sandbox after an introductory call" (46, new). Score unchanged (the 4.4 already reflected the sandbox).
+- `facts` Legal entity: "21 Analytics AG, Zug (UID CHE-204.325.525)", source 29 (graph.swiss mirror) → "21 Analytics AG, Zug (UID CHE-204.325.525, LEI 506700T7Z685VUOZL877)", source 44 (official UID register, new). GLEIF (45, new) confirms the LEI and the entity creation date 8 Jun 2018.
+- `features[2]` and FAQ "How does 21 Analytics verify self-hosted wallets?": "Trezor, Ledger, Jade, TRONLink and 540+ other wallets" → "540+ wallets, including Trezor, Ledger, Jade and TRONLink"; the vendor page counts 540+ wallets in total (20). FAQ also drops "and says works in 540+ wallets" after AOPP, because the 540+ figure covers the one-click route, including direct integrations, not the AOPP standard alone (20).
+- `directory_categories`: removed the two note strings filed there (they would have rendered as category labels in the `/providers/` directory); their content is kept in `verification_notes`.
+- New sources appended: 44 UID register, 45 GLEIF LEI record, 46 docs 8.4.0 introduction.
+
+### Confirmed, no change
+
+TRUST page still lists 21 Analytics as its only named interoperability partner (the other two items in that section are unnamed icon-font glyphs). The page also still says members can use 21 Analytics to reach other protocols, and TRUSThub is still open to any VASP. Notabene still cannot connect to TRUST directly. Sumsub still lists no TRUST link. Pricing page, G2 and Capterra Starter figures, release dates (8.1.0 first with TRUST, 8.4.0 on 7 Oct 2026), company page (2020, leadership, memberships), case studies, the AML Incubator managed service and the 30-jurisdiction regulations page are all unchanged. The verdict needed no change.
+
+### Removed / unverifiable
+
+- Nothing removed from rendered fields.
+- Still unconfirmed (in notes): ISO certificate number IC-IS-2604284 has not been checked in a register (InterCert lookup and Compliance Centre render by script; IAF CertSearch needs a login). Former name 21 Lectures AG and board roles come only from register mirrors (Zefix not opened). Funding not disclosed. Azure Marketplace Starter listing not found. Jade named only in vendor email. Kaiko figures inconsistent and not used.
+- SourceForge sample is thin: two reviews from 1 to 25 person companies (one reviewer listed as "Partner"), both posted after 21 Analytics named SourceForge as its review platform.
+
+### Ranking cards
+
+`travel-rule` (`slug: 21analytics`): no text is wrong. The tagline, pros, cons, coverage and `legacy_price_shown: On request` still match the record.
+
+### Score flag
+
+None. 4.1 unchanged.

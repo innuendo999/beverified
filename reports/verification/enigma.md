@@ -73,3 +73,28 @@ By score it would sit 5th among reviewed entries: after KYCAID, Veriff, ComplyAd
 ## Score flag
 
 None. New record.
+
+## Follow-up 2026-10-22
+
+Worked through all 13 `verification_notes`; 12 remain (funding and leadership merged, free trial note resolved, one new note on SSN pricing). Existing editorial wording kept; no source showed it wrong. `last_verified` and `updated` set to 2026-10-22.
+
+### Changed
+
+- Pricing re-checked on the pricing page and rate card (sources 2, 3): Free $0; Pro $20/month with 2,100 credits; Max $200/month with 25,000 credits; Enterprise custom; 1 credit = $0.01; KYB Identify 150 credits ($1.50) and KYB Verify 250 credits ($2.50) per match; Bankruptcy and Negative News $0.10, Person Screening and Watch list $0.50, TIN Verification $1.00 per request (charged on every query, including no hit); prepaid bundles $100 to $1,000 with up to 25% bonus, valid one year. All unchanged.
+- Pricing item added: "KYB searches with no match: $0 (billed per match, not per search)", official, source 4 (KYB solution page: "$0 ... searches that don't match", "Pay per match, not per search").
+- Pricing item added: "Free trial: None; trials ended 31 Aug 2026 and those accounts moved to the Free plan", official, source 2 (was a note only).
+- `user_ratings`: [] → G2 3.5 from 1 review, checked 2026-10 (new source 19, G2 product page describing the Enigma business data platform).
+
+### Removed / unverifiable
+
+- Note on free trials removed (now a pricing item). G2 note updated (the conflicting star display is gone).
+- Still unverifiable: founding year (2011 vs 2012), funding after 2018, current CEO on an Enigma page, SOC 2 auditor or report date (a May 2020 Enigma post announced SOC 2 Type I, also without an auditor), sandbox and SDKs, named watchlists beyond OFAC SDN and Enigma's PEP list, Wikidata id. Capterra "Enigma Compliance" listing appears to be a different product and failed to load; no Gartner Peer Insights page found.
+- Docs confirm SSN verification and TIN (EIN) verification as add-ons outside both KYB packages; SSN has no published price. The feature line ("Optional TIN/EIN and SSN verification") stays as written.
+
+### Ranking cards
+
+`kyb` entry checked. No text is now wrong: "$1.50 or $2.50 per match and no charge for non-matches", "From $1.50/KYB match", "US only; Enigma says it has no plans to expand KYB outside the US", "almost no public user reviews" (G2 shows 1) all still hold. No change suggested.
+
+### Score flag
+
+None.

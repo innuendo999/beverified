@@ -20,7 +20,7 @@ categories:
 link:
   url: https://www.enigma.com
   type: none
-last_verified: '2026-10-18'
+last_verified: '2026-10-22'
 updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: 'Enigma suits teams onboarding US small businesses that want KYB by API and a public price list: $1.50 or $2.50 per match, with no charge when nothing matches. It checks more than 100 million registrations across all 52 US jurisdictions and adds signals that show whether a business is operating. KYB is US only, so it works best as the US layer in a multi-vendor setup. Its SOC 2 Type 2 claim is vendor-stated.'
 what_is:
@@ -102,6 +102,16 @@ pricing:
     verified: '2026-10'
   - label: Enterprise
     value: Custom; contact sales
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: KYB searches with no match
+    value: $0 (billed per match, not per search)
+    kind: official
+    source: 4
+    verified: '2026-10'
+  - label: Free trial
+    value: None; trials ended 31 Aug 2026 and those accounts moved to the Free plan
     kind: official
     source: 2
     verified: '2026-10'
@@ -193,7 +203,12 @@ certifications:
   what: Security, availability and confidentiality controls
   status: vendor_stated
   source: 7
-user_ratings: []
+user_ratings:
+- platform: G2
+  rating: 3.5
+  count: 1
+  checked: '2026-10'
+  url: https://www.g2.com/products/enigma-technologies-enigma/reviews
 use_case_verdicts: []
 score_breakdown:
 - criterion: Compliance & certifications
@@ -300,6 +315,10 @@ sources:
   publisher: G2
   url: https://www.g2.com/sellers/enigma-technologies
   accessed: '2026-10'
+- title: Enigma reviews
+  publisher: G2
+  url: https://www.g2.com/products/enigma-technologies-enigma/reviews
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -311,19 +330,18 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- 'New record, first review. Enigma asked to be reviewed; link.type set to none (no commercial relationship recorded).'
-- 'Founded: FinTech Global (2018) and the G2 seller page say 2011; the Wikipedia infobox says 2012. 2011 used. Enigma''s about page gives no founding year, HQ or funding.'
-- 'Funding: Wikipedia lists $1.1M seed (2013), $4.5M (2014), $28.2M Series B (2015) and $95M (2018). No round after 2018 was found; later funding may exist. Total raised not stated by a source and not shown.'
-- 'Founders and current leadership: Wikipedia names Hicham Oudghiri (CEO) and Marc DaCosta (chairman); current CEO not confirmed on an Enigma page.'
-- 'SOC 2 Type 2 is stated on the security page only; no auditor, report date or trust centre found. No ISO/IEC 27001 claim found.'
-- 'Coverage figures differ by page: KYB docs say 100M+ registrations from 200+ sources across 52 jurisdictions; the data page meta says 116M+ registration records and 34M+ brands; the May 2026 Google Cloud release says 100M+ legal entities, 30M brands and 30M locations. KYB docs figure used.'
-- 'Customer logos (Capital One, Chase, Truist, Ramp, Alloy, Gusto, Proof, Faire) are not all labelled as customers; the record says "logos on its site include". Case studies (Ramp, Wisetack, Findigs, FMCG Direct) are named customers.'
-- 'Vendor performance figures not used in copy: 92% match rate with a person name, ~1.5s median KYB response, Ramp 94% match rate, Wisetack 60%+ lower KYB cost, screening alert volumes cut by at least 80%.'
-- 'Sandbox, test keys and SDKs are not described on the docs pages opened; not claimed. MCP access is stated on the KYB solution and pricing pages (Max plan).'
-- 'Watchlists: only OFAC SDN is named, plus a PEP list added in July 2026 (blog title). Other lists (UN, EU, UK) not confirmed; the screening page says customers choose list sources.'
-- 'User ratings: the G2 seller page shows the "Enigma" business data product with 1 review (3.5 stars shown, with a conflicting 100% at 4 stars); the g2.com/products/enigma page mixes unrelated game-development reviews. No Capterra listing found. user_ratings left empty.'
-- 'Wikidata id not found (wikidata search API did not load); kg_mid unknown.'
-- 'Free trials ended 31 Aug 2026 per the pricing page; old accounts moved to the Free plan. Not shown.'
+- 'link.type set to none: Enigma asked to be reviewed and no commercial relationship is recorded.'
+- 'Founded (re-checked 2026-10-22): FinTech Global (source 11) and the G2 seller page say 2011; the Wikipedia infobox says 2012, and a Clay profile (Apr 2026) dates the CEO''s tenure from January 2012. Enigma''s about page gives no founding year, HQ or funding. 2011 kept; still unresolved.'
+- 'Funding and leadership: no round after Sept 2018 found in searches on 2026-10-22; earlier rounds come from Wikipedia only and total raised is not shown. Hicham Oudghiri as CEO appears only on Wikipedia and a Clay profile; no Enigma page names its leaders. Not used in copy.'
+- 'SOC 2: the security page (re-opened 2026-10-22) states SOC 2 Type 2 for security, availability and confidentiality and annual third-party penetration tests, with no auditor, report date or trust centre. A May 2020 Enigma blog post announced SOC 2 Type I, also without naming the auditor. No ISO/IEC 27001 claim. Status stays vendor_stated.'
+- 'Coverage figures differ by page (re-checked 2026-10-22): KYB docs say 100M+ registrations from 200+ sources across 52 jurisdictions; the data page says 116M+ registration records, 34M+ brands and "hundreds of sources"; the May 2026 Google Cloud release says 100M+ legal entities, 30M brands and 30M locations. KYB docs figure used.'
+- 'Logos are not labelled as customers: homepage shows Capital One, Chase, Parallel, Ramp, Truist, Alloy, Gusto and Proof; the KYB page adds Faire and Wisetack; the screening page shows Alloy, Sardine and Truist under "Trusted by". The record says "logos on its site include". Case studies (Ramp, Wisetack, Findigs, FMCG Direct) are named customers.'
+- 'Vendor performance figures not used in copy: 92% match rate with a person name, about 1.5s median KYB response, Ramp 94% match rate, homepage "60% savings" and "380% lift", screening alert volumes cut by at least 80%, more than a billion screening requests a month.'
+- 'Sandbox, test keys and SDKs are still not described on the docs index, KYB, KYB packages or MCP guide pages (checked 2026-10-22); not claimed. The MCP server authenticates with a Console API key; MCP access is listed on the Max plan.'
+- 'Watchlists: KYB packages docs and the screening page say sanctions, debarment and PEP lists. Only OFAC SDN is named in samples; the PEP list is built from government publications across the US, Canada, Europe, Asia and the Middle East and refreshed weekly. UN, EU and UK lists are not named; the screening page says Enigma can integrate any list provider. No adverse-media database beyond the negative news check.'
+- 'SSN verification is a KYB add-on outside both packages, enabled on request with no published price; the rate card lists TIN verification ($1.00) but no SSN line.'
+- 'User ratings: the G2 product page (source 19) describes the Enigma business data platform and shows 3.5 from 1 review; review text not readable. A Capterra listing named "Enigma Compliance" appears to be a different product and failed to load. No Gartner Peer Insights page found.'
+- 'Wikidata id not found (Wikidata API and search blocked on 2026-10-22); kg_mid unknown.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 directory_categories:

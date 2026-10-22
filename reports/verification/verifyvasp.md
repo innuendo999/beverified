@@ -135,3 +135,32 @@ None. This is a new score (3.8). The old card's 4.5 for VerifyVASP and 4.6 for S
 ## Checks run 2026-10-21
 
 `npm run build` ok; `node scripts/checks/provider.mjs verifyvasp` 0 issues; `npm run check:strict` 0 content issues, 0 broken links; `npm run check:html` 111 pages, 0 issues.
+
+## Follow-up 2026-10-22
+
+Fact pass on all 23 `verification_notes`. Notes merged to 13. `last_verified` and `updated` set to 2026-10-22. Validator: 0 issues.
+
+### Changed
+
+- `facts` Legal entity: "VerifyVASP Pte. Ltd., Singapore (company number 201921674H, per VerifyVASP)", source 16 (EBA response), evidence vendor → "VerifyVASP Pte. Ltd., Singapore (UEN 201921674H, registered 5 July 2019, live)", source 37 (ACRA open data via acrawatch.sg, new), evidence independent. The registered address matches the privacy policy, and the 2019 registration matches the founding year.
+- `facts` Certifications: "Sygna stated ISO/IEC 27001 in 2021 and 2022" → "Sygna's homepage says all Sygna products are ISO/IEC 27001 certified (claims first made in 2021 and 2022)" (38, new: Sygna homepage, modified 7 Aug 2026). Still no certificate seen.
+- `certifications[1]` (Sygna ISO/IEC 27001): `what` now adds that the Sygna homepage still makes the claim; source 31 → 38. Status stays `vendor_stated`.
+- FAQ "Is VerifyVASP SOC 2 or ISO 27001 certified?": adds "and its homepage still says so" after the Sygna 2021/2022 claims (38).
+- New sources appended: 37 ACRA company record (acrawatch.sg), 38 Sygna homepage.
+
+### Confirmed, no change
+
+These all still match the record: the SOC 2 post (26 Jun 2026; auditor still not named) and the fee clauses in the terms (base monthly subscription plus API usage fee, charged quarterly, 30 days, 1.5% a month). So do the privacy policy (Singapore and/or Korea, Harbourfront address) and the FAQ (no PII in central infrastructure, enclave encryption, region-specific nodes, sandbox testing). The VerifyWallet methods and named wallets, VerifyName's 91.7% rate, the about page leadership, G2 (4.5 from 1 review) and CODE's integration list are unchanged. Notabene's view (closed, centralized; no sending to non-members; support pending a security review) and the acquisition release (Upbit Global parent, no terms) are unchanged too. The Sygna site, developer centre and 39-member alliance list are still online, with no mention of VerifyVASP or the migration. The network-size range (110+, 130+, 150+) is still inconsistent across pages.
+
+### Removed / unverifiable
+
+- Nothing removed from rendered fields.
+- Still unconfirmed (in notes): SOC 2 auditor and report; what the homepage ISO logo refers to; any current Sygna certificate; when Upbit Global became the parent and who holds its shares; the Sygna migration date and whether Sygna's TRISA and Sumsub links carry over; one consistent member count; VerifyVASP API docs, sandbox and SLA; prices. BizFile+ was not opened directly (only ACRA open-data mirrors).
+
+### Ranking cards
+
+`travel-rule` (`slug: verifyvasp`): no text is wrong. The tagline, coverage, pros, cons and `legacy_price_shown: On request` still match the record.
+
+### Score flag
+
+None. 3.8 unchanged.

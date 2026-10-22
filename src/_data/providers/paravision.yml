@@ -23,7 +23,7 @@ categories:
 link:
   url: https://www.paravision.ai
   type: none
-last_verified: '2026-10-18'
+last_verified: '2026-10-22'
 updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: 'Paravision is a biometrics supplier, not a KYC platform. It licenses face recognition, passive liveness, deepfake detection and age estimation to companies that build identity products. The independent evidence is strong: iBeta, ACCS and DHS results all back its claims. You still need another vendor for documents, screening and case handling. Prices are not published, we found no ISO/IEC 27001 or SOC 2 claim, and a 2021 FTC order binds the company until 2041.'
 what_is:
@@ -61,6 +61,11 @@ pricing:
     kind: third_party
     source: 39
     verified: '2026-10'
+  - label: Capterra UK listing
+    value: Usage-based; no figures, contact Paravision for pricing
+    kind: third_party
+    source: 42
+    verified: '2026-10'
 facts:
 - label: From
   value: Not publicly disclosed
@@ -91,7 +96,7 @@ facts:
   source: 5
   evidence: vendor
 - label: Certifications
-  value: iBeta ISO/IEC 30107-3 Level 1 and 2 (2023) and ACCS Level 3 age estimation, both confirmed; no ISO/IEC 27001 or SOC 2 claim found
+  value: iBeta ISO/IEC 30107-3 Level 2 (Dec 2023, lab letter) and Level 1 (Oct 2023, on iBeta's letters list), ACCS Level 3 age estimation (register); no ISO/IEC 27001 or SOC 2 claim found
   source: 12
   evidence: independent
 pros:
@@ -135,9 +140,9 @@ faq:
 - q: How much does Paravision cost?
   a: Paravision does not publish pricing. Its contact page offers a demo, and licences are quoted. We found no free trial and no third-party price.
 - q: Has Paravision's liveness been independently tested?
-  a: Yes. iBeta's published letters show Paravision Liveness v1.0 passed ISO/IEC 30107-3 Level 1 in October 2023 and v1.2 passed Level 2 in December 2023, with no successful attacks in the Level 2 test on an iPhone 13. In the DHS RIVR 2025 PAD track, the published results list the system Paravision says is its own (P9) at under 1.7% APCER and under 0.5% BPCER. Paravision also reports a Level 3 evaluation of Liveness 2.0 by Ingenium Biometrics in 2025, but we did not see Ingenium's report.
+  a: Yes. iBeta's letters page lists Paravision Liveness v1.0 at ISO/IEC 30107-3 Level 1 in October 2023 and v1.2 at Level 2 in December 2023, and the Level 2 letter reports no successful attacks in testing on an iPhone 13. In the DHS RIVR 2025 PAD track, the published results list the system Paravision says is its own (P9) at under 1.7% APCER and under 0.5% BPCER. Paravision also reports a Level 3 evaluation of Liveness 2.0 by Ingenium Biometrics in 2025, but we did not see Ingenium's report.
 - q: How does Paravision rank in NIST face recognition tests?
-  a: Paravision says its paravision-018 and paravision-019 algorithms ranked in the top 5 globally on NIST's Visa-Border benchmark for 1:1 and 1:N in July 2025, and fourth for 1:1 in January 2026. NIST's FRTE pages list results by algorithm, but we could not read the result tables, so these ranks are vendor-stated here.
+  a: Paravision says its paravision-018 and paravision-019 algorithms ranked in the top 5 globally on NIST's Visa-Border benchmark for 1:1 and 1:N in July 2025. Its benchmarks page now cites October 2026 results, with third place for 1:1 (Visa-Border, yaw of 45 degrees or more) and 11th for 1:N (Visa-Border, gallery of 1.6 million). NIST's FRTE pages list results by algorithm, but we could not read the result tables, so these ranks are vendor-stated here.
 - q: Is Paravision's age estimation certified?
   a: Yes. The Age Check Certification Scheme register lists Paravision Inc's Age Estimator at Level 3, Highly Effective Compliance, against ACCS 1:2020, with an expiry date of 18 March 2027.
 - q: What was the FTC case against Paravision?
@@ -152,9 +157,9 @@ certifications:
   status: confirmed
   source: 13
 - name: iBeta ISO/IEC 30107-3 PAD Level 1
-  what: Liveness, Paravision Liveness v1.0 (Oct 2023)
-  status: confirmed
-  source: 12
+  what: Liveness, Paravision Liveness v1.0 (Oct 2023); listed on iBeta's letters page, letter not opened
+  status: vendor_stated
+  source: 6
 - name: ACCS Level 3 age estimation
   what: Age Estimator, Highly Effective Compliance under ACCS 1:2020, expires 18 Mar 2027
   status: confirmed
@@ -168,9 +173,9 @@ certifications:
   status: vendor_stated
   source: 17
 - name: NIST FRTE 1:1 and 1:N (2025 and 2026)
-  what: Face recognition benchmark, top 5 on Visa-Border per Paravision
+  what: Face recognition benchmark; 3rd on 1:1 and 11th on 1:N Visa-Border (Oct 2026), per Paravision
   status: vendor_stated
-  source: 20
+  source: 4
 - name: Ingenium Level 3 PAD evaluation
   what: Liveness 2.0 (Aug 2025), per Paravision; report available on request
   status: vendor_stated
@@ -181,7 +186,7 @@ score_breakdown:
 - criterion: Compliance & certifications
   weight: 25
   score: 4.5
-  note: iBeta's published letters confirm ISO/IEC 30107-3 Level 1 and Level 2 results for Paravision Liveness (2023 versions, not the current 2.0), the ACCS register lists its age estimator at Level 3 to March 2027, and DHS RIVR 2025 results match the figures Paravision gives for its entries, but we found no ISO/IEC 27001 or SOC 2 claim and its NIST ranks are vendor-stated.
+  note: iBeta's letters page lists ISO/IEC 30107-3 Level 1 and Level 2 results for Paravision Liveness (2023 versions, not the current 2.0), the ACCS register lists its age estimator at Level 3 to March 2027, and DHS RIVR 2025 results match the figures Paravision gives for its entries, but we found no ISO/IEC 27001 or SOC 2 claim and its NIST ranks are vendor-stated.
   evidence: independent
 - criterion: Coverage
   weight: 20
@@ -370,6 +375,14 @@ sources:
   publisher: Paravision
   url: https://www.paravision.ai/news/making-sense-of-dhs-rivr-pad-in-a-world-of-ibeta/
   accessed: '2026-10'
+- title: Paravision reviews
+  publisher: G2
+  url: https://www.g2.com/products/paravision/reviews
+  accessed: '2026-10'
+- title: Paravision
+  publisher: Capterra UK
+  url: https://www.capterra.co.uk/software/1065161/paravision
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -379,30 +392,22 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- 'New record, first review. Paravision asked to be listed and sent no product details; everything comes from public pages opened on 2026-10-18. link.type set to none (no commercial relationship recorded). No logo or wordmark file yet.'
-- 'Score 3.9 is below the lowest existing record (Zyphe 4.0). No grade word is defined below 4.0 in the existing records; "Good" (used for 4.0 to 4.3) is applied. Editor to confirm or set a separate band.'
-- 'Buyer type: Paravision sells components (SDKs, Docker containers, edge SDKs) to platforms and integrators. Partners page names HID, ID.me, Persona, Entrust, PopID, secunet, SITA, Toppan Next Tech, Globant, Imprivata, Plastic Omnium, Vicon, Brivo and OP''nSoft; homepage logos add CheckIn, Ingenico and eConnect. Roles inferred from partner descriptions; not labelled as customers by Paravision. Only Persona (Dec 2025 joint release), ID.me, Entrust and HID used in the record.'
-- 'iBeta: letters page lists Paravision Liveness v1.0 Level 1 (16 Oct 2023) and v1.2 Level 2 (28 Dec 2023). Level 2 letter opened: iPhone 13, iOS 16.6, tests 5 to 28 Dec 2023, 5 PAI species, 750 attacks, APCER 0%, BPCER not stated in the letter. No iBeta letter found for Liveness 2.0 (launched Mar 2025) in the visible list; page text was long and the fetcher read it in two parts, the second part ending mid-table at 2020 entries.'
-- 'DHS RIVR 2025: MdTF results page (vendors anonymised) shows PAD system 9 at BPCER <0.5%, APCER <1.7%, run time <2.3 s, and SMTD system 12 at FMR <0.01%, FNMR <0.08%, selfie FTXR 0%, document FTXR <0.35%. These match Paravision''s releases, which identify P9 and MTDS 12 as its systems. Biometric Update (Jan 2026) reports the MTDS 12 attribution as Paravision''s own claim. Status vendor_stated for the attribution. Goal colour coding not readable in text. DHS RIVR program page (dhs.gov) failed to load.'
-- 'DHS RIVTD 2024 Track 3 ("lowest combined error rate and fastest processing time" for the earlier Liveness) and DHS Biometric Technology Rally 2021 to 2023 results are vendor claims only; not used.'
-- 'NIST FRTE: Paravision release (28 Jul 2025) names paravision-018 (1:1) and paravision-019 (1:N), top 5 on Visa-Border for both; Trust page claims 4th on 1:1 Visa-Border (Jan 2026, FNMR 0.0015 at FMR 1e-6) and 5th on 1:N (Jul 2025). NIST FRTE 1:1 and 1:N pages opened (last updated 2026-10-06 and 2026-10-05) but result tables are script-rendered and not readable; NIST report PDF and report cards failed to fetch. Identity Week (Aug 2019) reports it ranked first in FRVT 1:1 Ongoing in July 2019. All NIST ranks left vendor_stated; confirm in a browser at the next re-check.'
-- 'Ingenium Biometrics Level 3 PAD evaluation of Liveness 2.0 (Aug 2025, 1,900+ attempts, 190 PAIs): vendor release and Biometric Update headline only; Ingenium''s report not opened (available on request).'
-- 'ACCS: registry entry opened: Paravision Inc, Age Estimator, Level 3 Highly Effective Compliance, ACCS 1:2020 and BS ISO/IEC/IEEE 29119-3:2013, expiry 18/03/2027; issue date 19/03/2025 inferred from the certificate file name only. Separate ACCS bias evaluation (Apr 2025, 100% precision across groups, MAE 1.1 to 1.6 years) is vendor-reported; not used.'
-- 'Australia AATT: Persona and Paravision joint release (Dec 2025) says Persona''s platform, built on Paravision age estimation, had MAE 1.56 years, lowest in the trial. AATT report not opened; figures not used. Biometric Update also reports Persona and Paravision powering Substack age estimation (Dec 2025); article not opened.'
-- 'ISO/IEC 27001 and SOC 2: no claim found on the homepage, Trust page, privacy policy or in search. Not listed as certifications. Privacy policy (last modified 22 May 2024) covers marketing and website data only; no biometric retention terms or processor role stated.'
-- 'FTC: matter 192 3172, Everalbum, Inc. Proposed complaint and consent agreement 11 Jan 2021; final complaint and decision and order 7 May 2021 (Commission vote 4-0). Order defines respondent as "Everalbum, Inc., also doing business as Ever and Paravision, and its successors and assigns", requires deletion of Affected Work Product (models or algorithms developed in whole or part using Ever users'' biometric information) within 90 days, and terminates 20 years from issuance (so 2041). Respondent neither admits nor denies the allegations. Compliance report of Paravision, Inc. (5 May 2022, signed by Doug Aley) states the name change to Paravision, Inc. on 7 Sept 2021, Ever shut down Sept 2020, deletions confirmed to the FTC, and that sold technology was not trained on Ever data. The Jan 2021 FTC press release failed to load; the May 2021 release was used. Wikipedia''s description of the FTC case (mentions ID photos) does not match the FTC documents and was not used.'
-- 'BIPA: Biometric Update (Oct 2020) reports a proposed class action by Lynette Walton against Paravision in a California federal court over use of Ever images to train face recognition. No outcome found in searches; stated only as filed, without outcome.'
-- 'History: TechCrunch (Feb 2016) names Everalbum co-founders Andrew Dudum, Don Holly, Jack Abraham, Charlie Melbye and Jon Mumm and $8M raised (Khosla Ventures led). Founding year not stated in any source opened; shown as Not publicly disclosed. Identity Week (12 Aug 2019) reports the Ever AI to Paravision rebrand. Paravision''s Aug 2020 post says Ever users were notified on 31 Jul 2020.'
-- 'HQ and addresses: contact page says San Francisco HQ (no street address). FTC compliance report (2022): 1160 Gorgas Ave, San Francisco, and Paravision Canada Ltd., Vancouver. Privacy policy: 548 Market St, PMB 812416, San Francisco. Biometric Update profile: 8 California Street, San Francisco. Only the city is used.'
-- 'Funding: $23M round, May 2021 (Business Wire HID release, SDM, ID Tech Wire naming J2 Ventures as lead). Wikipedia says $21M and lists J2 Ventures, HID Global, Marlinspike Capital, Atomic VC, Icon Ventures, Perot Jain and Red Cell Partners; not used. No later round found.'
-- 'Leadership (company page): Doug Aley (CEO), Tiffany Lee (CFO, appointed Jan 2026), Kamil Chaudhary (General Counsel and SVP Data Acquisition), Charlie Rice (CTO), Joey Pritikin (CPO), Stuart Lieblich (SVP Business Development).'
-- 'State Department: Biometric Update (17 Oct 2026) reports a firm-fixed-price award on 23 Sept 2026 worth up to $6.5M ($1.3M obligated), through 22 Sept 2031, contract 19AQMM26C0850 on USAspending, small-business set-aside with one offer; products not identified. USAspending not opened.'
-- 'Other 2026 news (titles from the newsroom only, not opened): ISO/ICAO Image Quality Suite (Sept 2026), UK ETA support (Jan 2026), emaratech Red Carpet Smart Corridor at Dubai International Airport (Jan 2026). Prism report (Aug 2026, Acuity Market Intelligence) release opened; not used as evidence.'
-- 'Deepfake Detection: version 2.0 launched 3 Jun 2025; product page says trained on 1.6M+ deepfake and synthetic images and cites a Five Eyes government partner (unnamed). No independent test found. "Up to 97%" error improvement over 1.0 not used.'
-- 'Liveness 2.0 claims (90%+ BPCER reduction, 40%+ fewer failures to acquire, 2x speed) are vendor-only; not used.'
-- 'Developer docs: no public documentation, sandbox, change log or trial found. SDK languages and platforms from the face recognition page.'
-- 'User ratings: GetApp shows 0 reviews and no pricing; no G2 page found in search; Capterra Singapore and Software Advice listings found in search but not opened. user_ratings left empty.'
-- 'Wikidata id not found; kg_mid unknown. LinkedIn not opened.'
+- 'First review; Paravision asked to be listed and sent no product details. link.type set to none (no commercial relationship recorded). No logo or wordmark file yet.'
+- 'Score 3.9 is below the lowest other record (Zyphe 4.0). No grade word is defined below 4.0; "Good" (used for 4.0 to 4.3) is applied. Editor to confirm or set a separate band.'
+- 'Partners, not labelled customers (partners page re-opened 2026-10-22): HID, ID.me, Persona, secunet, SITA, Toppan Next Tech, Globant, Plastic Omnium, PopID, Imprivata, Vicon, Brivo, Entrust, plus OP''nSoft in testimonials. Only Persona (Dec 2025 joint release), ID.me, Entrust and HID used in the record.'
+- 'iBeta (re-checked 2026-10-22): the letters page still lists only Paravision Liveness v1.0 Level 1 (16 Oct 2023) and v1.2 Level 2 (28 Dec 2023); no letter for Liveness 2.0. Both letter PDFs now refuse automated access (robots) and the web archive is blocked. Level 2 stays confirmed on the letter opened 2026-10-18 (iPhone 13, iOS 16.6, 750 attacks, APCER 0%, BPCER not stated). The Level 1 letter has never been opened, so Level 1 is vendor_stated (Paravision liveness page) until it is. No BixeLab result found.'
+- 'DHS RIVR 2025 (MdTF results re-opened 2026-10-22, vendors anonymised): PAD passive system 9 at APCER <1.7%, BPCER <0.5%, run time <2.3 s; MTDS 12 at FMR <0.01%, FNMR <0.08%. Webinar slide file names suggest Jan and Feb 2026 releases. Paravision identifies P9 and MTDS 12 as its systems; attribution stays vendor_stated.'
+- 'NIST FRTE: Paravision''s benchmarks and Trust pages now cite October 2026 results (1:1 3rd, Visa-Border yaw 45 degrees or more, FNMR 0.0015 at FMR 1e-6; 1:N 11th, Visa-Border N=1.6M, FNIR 0.002 at FPIR 0.003); on 2026-10-18 the Trust page said 4th on 1:1 (Jan 2026). NIST 1:1 page (updated 2026-10-06) still renders tables by script with no readable rows, and report card PDFs failed to load. Ranks stay vendor_stated; confirm in a browser at the next re-check.'
+- 'Ingenium Biometrics Level 3 PAD evaluation of Liveness 2.0 (Aug 2025): vendor release only; no public Ingenium report found (searched 2026-10-22).'
+- 'Vendor-only claims not used: DHS RIVTD 2024 Track 3 and DHS Biometric Technology Rally 2021 to 2023 results; Liveness 2.0 gains (90%+ BPCER reduction, 40%+ fewer failures to acquire, 2x speed); Deepfake Detection training set (1.6M+ images), unnamed Five Eyes partner and "up to 97%" improvement; ACCS bias evaluation (100% precision); Australia AATT MAE of 1.56 years (AATT report not opened); Substack age estimation report (not opened).'
+- 'Security and privacy: no ISO/IEC 27001 or SOC 2 claim on the homepage, Trust page (re-opened 2026-10-22) or privacy policy. Privacy policy (last modified 22 May 2024) covers marketing and website data only; no biometric retention terms or processor role stated.'
+- 'BIPA: Biometric Update (Oct 2020) reports a proposed class action by Lynette Walton against Paravision in a California federal court over Ever images. No outcome found in searches on 2026-10-22; stated only as filed.'
+- 'Founding year not stated in any source opened (company page re-checked 2026-10-22); Everalbum co-founders and $8M raised from TechCrunch (2016). No funding round after May 2021 found; Wikipedia''s $21M figure conflicts with the $23M in the HID release and ID Tech Wire and is not used.'
+- 'State Department award (Biometric Update, 17 Oct 2026): up to $6.5M, $1.3M obligated, contract 19AQMM26C0850, through 22 Sept 2031; products not identified. USAspending entry not opened.'
+- 'Leadership changed since 2026-10-18 on the company page: Joey Pritikin is now listed as President (was CPO). Only the CEO (Doug Aley) is used in the record.'
+- 'Developer docs: no public documentation, sandbox, change log or trial found (searched 2026-10-22).'
+- 'User ratings: G2 (source 41), Capterra UK (source 42) and GetApp (source 39) list Paravision with 0 reviews; no Gartner Peer Insights page found. user_ratings left empty.'
+- 'Wikidata id not found (Wikidata blocked on 2026-10-22); kg_mid unknown. LinkedIn not opened.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 directory_categories:

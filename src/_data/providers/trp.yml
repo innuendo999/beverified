@@ -21,7 +21,7 @@ categories:
 link:
   url: https://travel-rule.com
   type: none
-last_verified: '2026-10-19'
+last_verified: '2026-10-22'
 updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: 'TRP suits smaller VASPs that want a hosted Travel Rule API with prices on the website: a one-time €2,000 deposit, then €0.02 per self-hosted wallet message and €0.05 per database screening. The API docs are public too. The doubts are about who runs it and who it can reach. The site names no legal entity or certifications, and the docs show no connection to other Travel Rule networks. Get the contracting entity and minimum commitment in writing.'
 what_is:
@@ -138,7 +138,7 @@ pros:
 cons:
 - The site names no legal entity and states no certifications; the docs name only the KYCAID TRP Team
 - Called interoperable, but the docs show no connection to TRISA, TRUST, GTR, Sygna or any other network
-- Launched in 2025, easily confused with the open OpenVASP protocol of the same name, and the minimum monthly commitment is not disclosed
+- Domain registered in 2025, easily confused with the open OpenVASP protocol of the same name, and the minimum monthly commitment is not disclosed
 alternatives:
 - slug: 21analytics
   name: 21 Analytics
@@ -290,6 +290,14 @@ sources:
   publisher: 21 Analytics
   url: https://docs.21analytics.ch/6.0.0/trp.html
   accessed: '2026-10'
+- title: What is TRP?
+  publisher: Notabene
+  url: https://notabene.id/travel-rule-messaging-protocols/trp
+  accessed: '2026-10'
+- title: Travel Rule FAQ
+  publisher: Sumsub
+  url: https://docs.sumsub.com/docs/travel-rule-faq
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -299,24 +307,16 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- 'Record rewritten 2026-10-19. The earlier draft on this slug reviewed the open OpenVASP Travel Rule Protocol by mistake; link.url https://travel-rule.com belongs to this commercial vendor. Name and score changed from the protocol draft on purpose (validator flags both against HEAD).'
-- 'travel-rule.com (homepage, pricing) is robots-blocked for our fetcher. Facts from those pages come from browser screenshots supplied by the editor on 2026-10-19 and are vendor-stated. Docs facts from docs.travel-rule.com via reports/verification/trp-vendor-research.md.'
-- 'Open: legal entity. No company name, address, company number or imprint visible in the screenshots. Footer "© 2026 TRP", "Jurisdiction: Germany", links to Terms & Services and Privacy Policy (not opened). Docs OpenAPI info block: publisher "KYCAID TRP Team", support@travel-rule.com, licence "Proprietary"; "KYCAID TRP" in the /identity example and the callbacks guide. kycaid.com does not mention TRP. KYCAID Limited (UK 11670407) and Compligate Ltd (UK 15376538) are candidates only; neither is linked to TRP by any page. Germany jurisdiction does not match either UK company; unexplained.'
-- 'Open: protocol message price. The pricing page shows a per-message price for protocol messages, but the amount was not legible in the screenshot. Not stated.'
-- 'Open: minimum monthly commitment. Page says "The minimum monthly commitment applies to usage volume"; amount not shown.'
-- 'Open: how the homepage "2000 EUR first-year unlimited plan" for the first 100 clients relates to the €2,000 initial deposit on the pricing page (same payment or separate offer). Both shown as stated.'
-- 'Open: interoperability. Homepage says "Global, Interoperable". Docs document only TRP''s own registry and the EMAIL flow; no TRISA, TRUST, GTR, Sygna, VerifyVASP, CODE or Notabene. Unknown whether trp.travel-rule.com can exchange messages with standard OpenVASP TRP endpoints (21 Analytics, Notabene). The API uses the TRP name and version 3.2.1 (latest OpenVASP spec version, 29 Jul 2024, per 21 Analytics docs 6.0.0), but authenticates by API key and JWT through a central hub; docs say nothing about mTLS. OpenVASP TRP page lists 21 Analytics, Blockchain Intelligence Group and ospree as vendors, not KYCAID or travel-rule.com.'
-- 'Open: "Verified entity, Last verified: 25.05.2026" badge in the footer. Issuer not shown in the screenshot; not treated as a certification.'
-- 'Open: certifications. None stated by TRP. KYCAID''s privacy policy claims ISO 27001, SOC 2 Type 2 and PCI DSS for KYCAID (SOC 2 Type 2 corrected by the editor as not yet held); not carried over to TRP.'
-- 'Vendor-stated counts not verified: 348+ VASPs in network, 29+ member VASPs, 29 jurisdictions covered, "over 40 other regulators" besides MiCA, FinCEN, FCA, BaFin. 29 jurisdictions and 40+ regulators are hard to reconcile; docs list no jurisdictions. Used only as vendor claims.'
-- 'SDKs: homepage claims SDKs for "every popular programming language (Java, Python, JavaScript, and more)". Not found in the docs pages checked for the research report; stated as a TRP claim.'
-- 'Docs inconsistency: about page promises "Encrypted, signed callbacks"; callbacks guide describes HMAC-SHA512 signing only. Record says signed. "Encryption and verification" step from the homepage how-it-works not detailed in docs.'
-- 'Support: 24/7 technical support, onboarding assistance and dedicated compliance guidance listed as included on the pricing page; support@travel-rule.com in docs. No SLA found.'
-- 'Sandbox: docs list only https://trp.travel-rule.com/ and a localhost server. No sandbox or trial documented.'
-- 'Track record: domain created 2025-02-07 (Verisign RDAP), registrar GoDaddy, registrant not shown. Example health response build 26.4.0, timestamp 2026-05-11. No customers, funding, G2/Capterra/Trustpilot listings, press or regulatory actions found. Example LEI in the docs (529900T8BM49AURSDO55) belongs to Ubisecure Oy, a placeholder.'
-- 'Solutions menu on the homepage: Self-Hosted Wallet Verification; Travel Rule Automation. Not separately priced.'
-- 'Disclosure: docs name the KYCAID TRP Team; KYCAID has a paid link arrangement with BeVerified (kycaid.yml link.type paid). TRP link.type stays none (no arrangement recorded for travel-rule.com). Editor to confirm whether the KYCAID arrangement covers TRP.'
-- 'Wikidata id not found; kg_mid unknown. LinkedIn not opened.'
+- 'Record decisions: rewritten 2026-10-19. The earlier draft on this slug reviewed the open OpenVASP Travel Rule Protocol by mistake; link.url https://travel-rule.com belongs to this commercial vendor. link.type none (no arrangement recorded for travel-rule.com). Docs name the KYCAID TRP Team and KYCAID has a paid link arrangement with BeVerified (kycaid.yml link.type paid); editor to confirm whether that arrangement covers TRP. Wikidata id not found; kg_mid unknown; LinkedIn not opened.'
+- 'Access: travel-rule.com (homepage, pricing, terms, privacy policy) is still robots-disallowed for our fetcher on 22 Oct 2026; no bypass tried. Every homepage and pricing fact (prices, 348+ VASPs, 29+ members, 29 jurisdictions, "over 40 other regulators", first-year offer, footer "Jurisdiction: Germany", "Verified entity" badge, SDK claim, 24/7 support) rests on the editor''s screenshots of 19 Oct 2026 and could not be re-checked.'
+- 'Follow-up 22 Oct 2026, confirmed and kept from docs.travel-rule.com: OpenAPI info still "Travel Rule Protocol (TRP) API" 3.2.1, contact KYCAID TRP Team, support@travel-rule.com, licence Proprietary, servers trp.travel-rule.com and localhost only; no sandbox, staging, changelog, SDK, jurisdiction or interoperability page; no OpenVASP, TRISA, TRUST, GTR, Sygna or mTLS mention; docs "Last updated 4 months ago". Callbacks: HMAC-SHA512 x-data-integrity header, retries at 1m to 24h, 9 attempts then FAILED, "KYCAID TRP backend"; no encryption described although the about page promises "Encrypted, signed callbacks". Satoshi Test: bitcoin, ethereum, trc20 (USDT default), 3 sessions per VASP, 20-minute TTL. RDAP: created 2025-02-07, changed 2025-10-24, expires 2028-02-07, GoDaddy, Cloudflare. OpenVASP TRP page still lists 21 Analytics, Blockchain Intelligence Group and ospree only. kycaid.com still does not mention TRP or the Travel Rule. Notabene TRP page: every Notabene customer has a live TRP 1.0 endpoint. Sumsub FAQ: Sumsub protocol, GTR, TRP, CODE, Sygna Bridge.'
+- 'Correction: con "Launched in 2025" changed to "Domain registered in 2025". The only dated evidence is the domain record (Feb 2025) and a docs example build 26.4.0 with timestamp 2026-05-11; no launch date found.'
+- 'Still open, legal entity: no company name, address, company number or imprint seen; terms and privacy policy not opened (robots). KYCAID Limited (UK 11670407) and Compligate Ltd (UK 15376538) are candidates only; neither is linked to TRP by any page, and the footer "Germany" does not match either UK company.'
+- 'Still open, pricing: protocol message price (not legible in the screenshot), minimum monthly commitment amount, and whether the homepage "2000 EUR first-year unlimited plan" for the first 100 clients is the same payment as the €2,000 deposit.'
+- 'Still open, interoperability: homepage says "Global, Interoperable", docs document only TRP''s own registry and the EMAIL flow. Unknown whether trp.travel-rule.com can exchange messages with standard OpenVASP TRP endpoints (21 Analytics, Notabene); the API reuses the TRP name and version 3.2.1 but authenticates by API key and JWT through a central hub.'
+- 'Still open, trust signals: issuer of the "Verified entity, Last verified: 25.05.2026" footer badge not shown; not treated as a certification. No certifications stated by TRP; KYCAID''s ISO 27001, SOC 2 Type 2 and PCI DSS claims (SOC 2 Type 2 corrected by the editor as not yet held) are not carried over.'
+- 'Still open, vendor counts: 348+ VASPs, 29+ member VASPs, 29 jurisdictions and "over 40 other regulators" unverified and hard to reconcile; docs list no jurisdictions. SDKs claimed on the homepage, not in the docs. Support: no SLA found.'
+- 'Track record: no customers, funding, press, regulatory actions or listings on G2, Capterra or Trustpilot found in searches to 22 Oct 2026. Example LEI in the docs (529900T8BM49AURSDO55) belongs to Ubisecure Oy, a placeholder. Homepage Solutions menu: Self-Hosted Wallet Verification, Travel Rule Automation; not separately priced.'
 application_category: Travel Rule compliance software
 author: andrii-klymenko
 directory_categories:
