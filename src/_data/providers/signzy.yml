@@ -23,11 +23,11 @@ link:
   url: https://signzy.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: Signzy's no-code onboarding platform is specialized for India (Aadhaar-based checks, CKYC and RBI-compliant V-CIP video verification), while a 2020 Mastercard partnership set out to roll its video KYC out globally. It's the strongest option here for India-specific BFSI compliance, though its depth outside that market requires more configuration.
 what_is:
-- 'Signzy is a no-code KYC/KYB/AML platform founded in 2015 in Bengaluru, India, by Ankit Ratan (CEO), Arpit Ratan and Ankur Pandey. It has raised more than $37 million from investors including Gaja Capital, Vertex Ventures, Arkam Ventures, Kalaari and Mastercard. It says more than 1,800 financial institutions and technology companies use it, and it lists offices in India, the US and the UAE. In 2020 Mastercard partnered with Signzy for a global rollout of its video-KYC solution.'
+- 'Signzy is a no-code KYC/KYB/AML platform founded in 2015 in Bengaluru, India, by Ankit Ratan (CEO), Arpit Ratan and Ankur Pandey. It has raised more than $37 million from investors including Gaja Capital, Vertex Ventures, Arkam Ventures, Kalaari and Mastercard. It says more than 1,800 financial institutions and technology companies use it, and it lists offices in India, the US and the UAE. In 2020 Mastercard partnered with Signzy for a global rollout of its video-KYC solution. In July 2024 the Reserve Bank of India selected Signzy''s unassisted video-KYC solution for the test phase of the fifth cohort of its regulatory sandbox.'
 features:
 - No-code platform for designing onboarding and KYC/KYB journeys.
 - 'Individual KYC: RBI-compliant V-CIP video verification, face match against PAN and Aadhaar, CKYC search and upload.'
@@ -139,7 +139,17 @@ certifications:
   what: Payment card data security
   status: vendor_stated
   source: 1
-user_ratings: []
+user_ratings:
+- platform: G2
+  rating: 4.4
+  count: 11
+  checked: '2026-10'
+  url: https://www.g2.com/sellers/signzy
+- platform: Capterra
+  rating: 5.0
+  count: 2
+  checked: '2026-10'
+  url: https://www.capterra.co.nz/software/1049567/signzy
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
@@ -180,6 +190,22 @@ sources:
   publisher: Signzy
   url: https://www.signzy.com/blogs/signzy-vs-veriff
   accessed: '2026-10'
+- title: Regulatory Sandbox, Fifth Cohort (Theme Neutral), Test Phase
+  publisher: Reserve Bank of India
+  url: https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=58377
+  accessed: '2026-10'
+- title: Signzy seller page
+  publisher: G2
+  url: https://www.g2.com/sellers/signzy
+  accessed: '2026-10'
+- title: Signzy reviews
+  publisher: Capterra
+  url: https://www.capterra.co.nz/software/1049567/signzy
+  accessed: '2026-10'
+- title: General compliance (operational framework)
+  publisher: Signzy
+  url: https://docs.signzy.com/no-code-platform/general-compliance
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -190,13 +216,13 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- The third-party India price figures (Rs 5 to Rs 35 per check, Rs 2 to 15 lakh annual platform fee) had no source and were removed. signzy.com/pricing did not load.
-- Funding changed from $38.7M+ to "more than $37 million" (Inc42, Feb 2024). SAP as an investor was not confirmed and was removed. Mastercard took part in the 2020 $5.4M round per People Matters.
-- The customer claim "10 Fortune 30 companies" was removed (no source). Mastercard's 2020 release cited the 4 largest Indian banks and a top-3 US acquiring bank; these are 2020 vendor claims and are not repeated as current facts. About page says 1,800+ financial institutions and technology companies; the homepage says 500+ global companies.
-- GSTIN lookups and MCA director checks were removed as product claims; Signzy's GSTIN page discusses GSTIN verification generally and mentions MCA records only in an FAQ. Microsoft Azure Marketplace distribution was not confirmed and was removed.
-- The "IIT-trained" founders claim was removed (no source opened).
-- ISO 27001, SOC 2 Type II and PCI DSS are vendor-stated only.
-- G2 page did not load; no user rating recorded. User review themes kept as general statements.
+- 'Customer count differs by page: the about page says more than 1,800 financial institutions and technology companies (used in what_is); the homepage says 500+ global companies and 1B+ users verified. Neither is dated.'
+- 'ISO 27001, SOC 2 Type II and PCI DSS remain vendor-stated. No certificate, auditor or register entry found. Signzy docs (updated Feb 2024) cite ISO/IEC 27001:2013; the homepage says ISO 27001 and SOC 2 but not PCI DSS.'
+- 'Funding kept at more than $37 million (Inc42, Feb 2024). No round after the 2022 Series B was found in reputable press; tracker totals (about $38M) were not used.'
+- 'An acquisition of PowerEdge Analytics (Nov 2025) appears only on a startup database; not confirmed by Signzy or press, so not used.'
+- 'RBI sandbox: the July 2024 release covers only the test phase; no outcome found for Signzy''s unassisted video KYC.'
+- 'G2 product review page and capterra.com did not load; ratings taken from the G2 seller page and Capterra NZ. The homepage badge says "G2 4.7/5", which does not match the 4.4 shown on G2.'
+- 'signzy.com/pricing returned an error; pricing confirmed as quote-only from the January 2026 Signzy vs Veriff page and a homepage with no pricing link.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

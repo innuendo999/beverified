@@ -23,9 +23,9 @@ link:
   url: https://www.fourthline.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: Fourthline built its reputation inside Europe's regulated financial sector, with Revolut, N26, Trade Republic, Qonto and Bitpanda among its clients. It combines identity verification, AML screening and monitoring, and re-KYC in one modular platform, and since August 2026 its Swedish subsidiary is a qualified trust service provider for electronic signatures. It's deliberately focused on financial institutions rather than chasing every vertical. In July 2026 it agreed to merge with Spanish identity provider Veridas; the deal was expected to close in the second half of 2026, subject to regulatory approval.
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
+verdict: Fourthline built its reputation inside Europe's regulated financial sector, with Revolut, N26, Trade Republic, Qonto and Bitpanda among its clients. It combines identity verification, AML screening and monitoring, and re-KYC in one modular platform, and since August 2026 its Swedish subsidiary is a qualified trust service provider for electronic signatures. It's deliberately focused on financial institutions rather than chasing every vertical. On 16 July 2026 it signed an agreement to merge with Spanish identity provider Veridas. The deal is expected to close in the second half of 2026, subject to regulatory approvals; no completion had been announced by 22 October 2026, and no name for the combined company has been published.
 what_is:
 - Fourthline is a KYC and AML compliance company founded in 2017 and headquartered in Amsterdam, with an office in Barcelona. It was co-founded by Krik Gunning and Chris van Straeten; Paul Stoddart became CEO in 2026. It provides a modular platform combining identity verification, AML screening and monitoring, re-KYC and fraud detection for banks, fintechs and insurers, and says it is locally compliant in 30+ jurisdictions and supports 3,500+ document types. Clients named in 2026 include Revolut, N26, Trade Republic, Qonto, Scalable Capital, Raisin, Rabobank and Bitpanda.
 features:
@@ -68,9 +68,9 @@ facts:
   source: 2
   evidence: vendor
 - label: Ownership
-  value: Independent; merger with Veridas agreed Jul 2026, pending approval
-  source: 3
-  evidence: independent
+  value: Independent; merger with Veridas signed 16 Jul 2026, closing pending (expected H2 2026)
+  source: 8
+  evidence: vendor
 - label: Certifications
   value: ISO/IEC 27001:2022 (EY CertifyPoint), eIDAS QTSP (vendor-stated)
   source: 2
@@ -120,7 +120,7 @@ faq:
 - q: What is re-KYC?
   a: Re-KYC is Fourthline's automated process for re-verifying and remediating existing customer files so they stay compliant without manual review.
 - q: Is Fourthline merging with another company?
-  a: Yes. In July 2026 Fourthline and Spanish digital identity provider Veridas agreed to merge, aiming at a combined platform for Europe, Latin America and the US. Completion was expected in the second half of 2026, subject to regulatory approvals.
+  a: Yes. On 16 July 2026 Fourthline and Spanish digital identity provider Veridas signed an agreement to merge, aiming at a combined platform for Europe, Latin America and the US. Veridas shareholders, including BBVA, will remain shareholders in the combined company, and the deal is partly funded by Finch Capital and Rabo Investments. Financial terms were not disclosed. Closing is expected in the second half of 2026, subject to regulatory approvals; as of 22 October 2026 no completion or combined brand name had been announced.
 - q: Can Fourthline issue qualified electronic signatures?
   a: Yes. In August 2026 its subsidiary Fourthline Trust Services AB received qualified trust service provider status under eIDAS, supervised by the Swedish Post and Telecom Authority.
 - q: What is the best alternative to Fourthline?
@@ -137,7 +137,7 @@ certifications:
 - name: eIDAS qualified trust service provider
   what: Qualified e-signature certificates (Fourthline Trust Services AB, Aug 2026)
   status: vendor_stated
-  source: 5
+  source: 10
 - name: ISO/IEC 30107-3 (iBeta Level 1 and 2)
   what: Liveness / presentation attack detection
   status: vendor_stated
@@ -179,6 +179,22 @@ sources:
   publisher: FinTech Futures
   url: https://www.fintechfutures.com/regulations-compliance/compliance-regtech-fourthline-secures-50m-in-fresh-funding
   accessed: '2026-10'
+- title: Fourthline and Veridas join forces to fight identity fraud with a global identity platform (16 July 2026)
+  publisher: Fourthline
+  url: https://www.fourthline.com/news/fourthline-and-veridas-join-forces-to-fight-identity-fraud-with-a-global-identity-platform
+  accessed: '2026-10'
+- title: Fourthline, Veridas merge to build global identity and compliance platform
+  publisher: Biometric Update
+  url: https://www.biometricupdate.com/202607/fourthline-veridas-merge-to-build-global-identity-and-compliance-platform
+  accessed: '2026-10'
+- title: Fourthline Trust Services granted status as qualified trust service provider in the EU (24 August 2026)
+  publisher: Fourthline
+  url: https://www.fourthline.com/news/fourthline-trust-services-granted-status-as-qualified-trust-service-provider-in-the-eu
+  accessed: '2026-10'
+- title: Fourthline reviews
+  publisher: G2
+  url: https://www.g2.com/products/fourthline/reviews
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -189,15 +205,11 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- Veridas merger announced 16 Jul 2026, expected to close in H2 2026 subject to regulatory approval. No completion notice found on the Fourthline newsroom (latest item 13 Oct 2026). Re-check after closing; name or brand may change.
-- Total funding "€70M raised" not confirmed. Only the €50M round of April 2023 led by Finch Capital (FinTech Futures) was confirmed; funding fact removed.
-- '"Rebranded from Safened in 2019" not found on any page opened; removed.'
-- Western Union was named as a client in 2023 (FinTech Futures) but not in the July 2026 client list; dropped from the client list.
-- KYB is not listed among Fourthline's current solutions on its homepage, although the record sits in the KYB category. Bank-account verification and transaction monitoring are also not on current pages; removed from features.
-- ISO/IEC 27001 (EY CertifyPoint 2021-039), iBeta Level 1/2 and ISAE 3000 are vendor-stated; certificate and lab letter not opened. Fourthline was not found on iBeta's public confirmation-letter page, so the iBeta work may sit with a technology partner or under another name.
-- eIDAS QTSP status is reported by Fourthline and Biometric Update; the EU trusted list entry was not opened.
-- No G2 rating or review count visible; user review themes are general statements, not counted themes.
-- Founding year: vendor says 2017; one FinTech Futures article (2023) says 2018. Vendor year kept.
+- Veridas merger signed 16 Jul 2026, expected to close in H2 2026 subject to regulatory approvals. As of 22 Oct 2026 neither the Fourthline newsroom (latest item 13 Oct 2026) nor press coverage reports completion, a combined brand name, post-merger leadership or ownership split. Re-check after closing; name, brand and ownership fact may change.
+- KYB is not listed among Fourthline's current solutions (homepage navigation, Oct 2026), although the record sits in the KYB category. Editor to decide on the kyb category.
+- ISO/IEC 27001:2022 (EY CertifyPoint 2021-039), iBeta ISO 30107-3 Level 1/2 and ISAE 3000 remain vendor-stated. The certificate was not opened, and iBeta's confirmation-letter page could not be fetched (robots block), so no lab letter was seen.
+- eIDAS QTSP status: Fourthline's 24 Aug 2026 release says Fourthline Trust Services AB is on the EU Trusted List under PTS supervision. The EU trusted list browser and the PTS list could not be read with our tools; status stays vendor_stated.
+- No user ratings: the G2 page (source 11) and the Capterra listing (capterra.com/p/206795/Fourthline) show no rating or reviews; Gartner Peer Insights could not be fetched. Review themes are general statements, not counted themes.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

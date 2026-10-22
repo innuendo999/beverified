@@ -22,12 +22,12 @@ link:
   url: https://www.vespia.io
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: 'Vespia built an AI-assisted KYB platform that pulls commercial register data from 300+ jurisdictions; its CEO, Julia Ront, was Veriff''s second employee. Veriff announced the acquisition of Vespia on 5 February 2026 and said the KYB technology would be commercially available across its platform by mid-2026. As of October 2026, vespia.io still loads, but its pricing and sign-up links redirect to Veriff, where KYB is offered through a limited access program. Evaluate it as part of Veriff rather than as a standalone vendor.'
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
+verdict: 'Vespia built an AI-assisted KYB platform that pulls commercial register data from 300+ jurisdictions; its CEO, Julia Ront, was Veriff''s second employee. Veriff announced the acquisition of Vespia on 5 February 2026 and said the KYB technology would be commercially available across its platform by mid-2026. As of 22 October 2026, vespia.io still loads, but its sign-up, demo and trial links lead to Veriff and vespia.io/pricing redirects to Veriff''s self-serve plans; Veriff''s KYB sign-up page still describes a limited access program. Evaluate it as part of Veriff rather than as a standalone vendor.'
 what_is:
 - 'Vespia is an Estonia-based KYB and AML company founded in 2021 by Julia Ront, formerly Veriff''s second employee, and Anton Vedešin. Its site names Vespia OÜ in Tallinn.'
-- 'Veriff announced the acquisition of Vespia on 5 February 2026. The Vespia team joined Veriff, and the technology is being integrated into Veriff''s platform. The vespia.io site is still online with an acquisition banner and a customer login, but its pricing and sign-up links now lead to Veriff.'
+- 'Veriff announced the acquisition of Vespia on 5 February 2026 and did not disclose the financial terms. Veriff said the Vespia team would join it and that it would integrate the technology into its platform. The vespia.io site is still online with a banner reading "Veriff is acquiring Vespia" and a customer login, but its pricing and sign-up links now lead to Veriff.'
 features:
 - KYB company verification using commercial register data from 300+ jurisdictions, in under 30 seconds, per Vespia.
 - 1,500+ data points drawn from 5,000+ official sources.
@@ -36,7 +36,7 @@ features:
 - Julia AI, an AI compliance officer for AML risk assessment.
 - User onboarding with document checks (7,000+ document types from 190+ countries) and transaction monitoring.
 pricing:
-  summary: 'Vespia''s homepage still shows a Starter Package at €99 and KYB reports priced by region from €35 per report, with a 7-day free trial. Its pricing link now redirects to Veriff''s self-serve identity verification plans, which list no KYB prices, and its sign-up link goes to Veriff''s KYB limited access program. Confirm current KYB rates with Veriff.'
+  summary: 'Vespia''s homepage still shows (as of 22 October 2026) a Starter Package at €99 and KYB reports priced by region from €35 per report, with a 7-day free trial whose button leads to Veriff''s KYB sign-up. vespia.io/pricing redirects to Veriff''s self-serve identity verification plans, which list no KYB prices, and its sign-up link goes to Veriff''s KYB limited access program. Confirm current KYB rates with Veriff.'
   plans:
   - tier: Starter Package
     price: €99
@@ -60,7 +60,7 @@ pricing:
     source: 2
     verified: '2026-10'
   - label: Free trial
-    value: 7 days
+    value: 7 days (trial button leads to Veriff KYB sign-up)
     kind: official
     source: 2
     verified: '2026-10'
@@ -91,7 +91,7 @@ facts:
   source: 1
   evidence: vendor
 - label: Ownership
-  value: Acquired by Veriff (announced 5 Feb 2026)
+  value: Acquired by Veriff (announced 5 Feb 2026, terms not disclosed)
   source: 1
   evidence: vendor
 - label: Status
@@ -105,7 +105,7 @@ pros:
 cons:
 - Standalone sign-up now redirects to Veriff, so the product is effectively sold as part of Veriff
 - Young company (founded 2021), now absorbed into Veriff
-- Few public user reviews (2 on G2 as of October 2026)
+- Few public user reviews (2 each on G2 and Capterra as of October 2026)
 alternatives:
 - slug: veriff
   name: Veriff
@@ -135,7 +135,7 @@ faq:
 - q: How much does Vespia cost?
   a: Vespia's homepage shows a €99 Starter Package and KYB reports from €35 per report, priced by region. Its pricing page now redirects to Veriff, which does not publish KYB prices, so confirm current rates with Veriff.
 - q: Has Vespia been acquired?
-  a: Yes. Veriff announced the acquisition of Vespia on 5 February 2026 and said Vespia's KYB technology would be commercially available across Veriff's platform by mid-2026. As of October 2026, Veriff offers KYB through a limited access program.
+  a: Yes. Veriff announced the acquisition of Vespia on 5 February 2026, without disclosing financial terms, and said Vespia's KYB technology would be commercially available across Veriff's platform by mid-2026. No separate closing notice has been published, and the vespia.io banner still reads "Veriff is acquiring Vespia". As of 22 October 2026, Veriff's KYB sign-up page still describes a limited access program.
 - q: Can I still buy Vespia on its own?
   a: Not through its website. vespia.io still loads, but its sign-up link goes to Veriff's KYB program and its pricing link goes to Veriff's self-serve plans. Existing customers still have a login link.
 - q: Who founded Vespia?
@@ -155,6 +155,11 @@ user_ratings:
   count: 2
   checked: '2026-10'
   url: https://www.g2.com/products/vespia/reviews
+- platform: Capterra
+  rating: 5.0
+  count: 2
+  checked: '2026-10'
+  url: https://www.capterra.com/p/10004660/Vespia/
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
@@ -183,6 +188,10 @@ sources:
   publisher: G2
   url: https://www.g2.com/products/vespia/reviews
   accessed: '2026-10'
+- title: Vespia reviews
+  publisher: Capterra
+  url: https://www.capterra.com/p/10004660/Vespia/
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -193,14 +202,11 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- vespia.com is not Vespia's domain; it redirects to an unrelated tyre retailer. The real site is vespia.io (link.url is correct).
-- vespia.io banner still reads "Veriff is acquiring Vespia"; Veriff's press release says it announced the acquisition. No closing date published.
-- The €99 Starter Package and €35 KYB report prices appear on the vespia.io homepage, but /pricing redirects to Veriff self-serve IDV plans with no KYB prices. The homepage figures may be stale.
-- Veriff's KYB sign-up page still describes a limited access program and a mid-2026 launch; general availability not confirmed.
-- No certifications found for Vespia; none were claimed before.
-- Old "about $90 for 50 scans" price not found anywhere; removed.
-- Estonian business register entry for Vespia OÜ not found in our search; HQ comes from the site footer.
-- G2 shows 2 reviews (5.0) with no visible pros and cons; old themes removed.
+- 'Deal status: Veriff''s 5 Feb 2026 release "announced the acquisition" (terms not disclosed) and said the team "will join" Veriff, but no separate closing notice was found, and on 22 Oct 2026 the vespia.io banner still reads "Veriff is acquiring Vespia". Re-check for a completion statement or a registry ownership change.'
+- 'Pricing may be stale: the €99 Starter Package, €35 per KYB report and 7-day trial were still on the vespia.io homepage on 22 Oct 2026, but every sign-up and trial button goes to Veriff''s KYB sign-up, /pricing still redirects to Veriff self-serve IDV plans (no KYB prices), and Capterra lists "Free trial not available". Whether a buyer can still purchase at these prices is unconfirmed.'
+- 'Veriff''s KYB sign-up page still says "launching mid-2026" with a limited access program as of 22 Oct 2026; general availability of KYB in Veriff not confirmed.'
+- Estonian business register entry for Vespia OÜ not found (registry search blocked to our tools); HQ comes from the vespia.io footer ("Vespia OÜ, Tallinn, Estonia").
+- G2 and Capterra each show 2 reviews (5.0) with no visible pros and cons, so no review themes are listed.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

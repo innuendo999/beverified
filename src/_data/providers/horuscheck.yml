@@ -22,8 +22,8 @@ link:
   url: https://horuscheck.io
   type: null
   legacy_rel: null
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: HorusCheck, which brands itself Horus Checks, sells a self-service KYC, KYB and AML platform with document checks, liveness, watchlist screening and a no-code flow builder. Its website does not name the company behind it, its location, founding year or prices, so treat it as a lightly documented option and confirm those details with the vendor before shortlisting.
 what_is:
 - HorusCheck (Horus Checks, horuscheck.io) is a self-service compliance platform for KYC, KYB and AML checks, aimed at both regulated and non-regulated businesses such as banks, crypto exchanges, fintech, gaming, hospitality, insurtech, real estate and travel. It offers ID document verification with OCR and MRZ validation across 14,000+ document templates, one-shot and 3D liveness with face matching, AML watchlist and sanctions screening, KYB with registry and UBO checks, and a no-code verification flow builder. Its website, terms and privacy policy do not name a legal entity, address or founding year.
@@ -61,7 +61,9 @@ facts:
 - label: HQ
   value: Not publicly disclosed
 - label: Regions
-  value: Not publicly disclosed
+  value: Screening across 200+ countries (vendor-stated)
+  source: 4
+  evidence: vendor
 - label: Documents
   value: 14,000+ ID templates
   source: 1
@@ -134,6 +136,18 @@ sources:
   publisher: Horus Checks
   url: https://horuscheck.io/privacy
   accessed: '2026-10'
+- title: Contact
+  publisher: Horus Checks
+  url: https://horuscheck.io/contact
+  accessed: '2026-10'
+- title: Horus Checks reviews (horuscheck.io)
+  publisher: Trustpilot
+  url: https://www.trustpilot.com/review/horuscheck.io
+  accessed: '2026-10'
+- title: Company name search, "horus checks"
+  publisher: Companies House (UK)
+  url: https://find-and-update.company-information.service.gov.uk/search/companies?q=%22horus+checks%22
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -142,11 +156,12 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- Legal entity, registration number, address, founding year and country are not on the website, terms or privacy policy; no registry entry could be matched.
-- Pricing section on horuscheck.io shows only the heading "A flexible pay as you go solution"; figures may load by script and were not visible.
-- No review-platform listings (G2, Capterra, Trustpilot) found for HorusCheck.
-- link.url set to https://horuscheck.io (previously empty); link.type left for the owner.
-- The old page had only 2 pros; a third was added from the homepage.
+- 'Company identity not confirmed by any independent source (2026-10-22). Website, terms, privacy policy, contact page and console sign-in name only the brand "Horus Checks"; no legal entity, registration number, address, founders or founding year. Terms have no governing-law clause. UK Companies House has no company named "Horus Checks" (source 6). No Crunchbase, LinkedIn or press coverage found.'
+- 'Trustpilot business profile (claimed June 2025, 0 reviews) lists the country as Mauritius (source 5). This is company-supplied, gives no address and was not matched to a Mauritius company register entry, so HQ stays "Not publicly disclosed".'
+- 'Pricing section on horuscheck.io lists what KYC and KYB include under the heading "A flexible pay as you go solution" and shows no figures; the console sign-in page shows no prices either.'
+- '14,000+ document templates and 200+ countries are vendor figures (sources 1, 4); the document-verification technology behind them is not named.'
+- 'No certifications found beyond a GDPR badge image; no ISO/IEC 27001, SOC 2 or ISO/IEC 30107-3 claims.'
+- 'No G2, Capterra or Gartner Peer Insights listing found; Trustpilot profile has 0 reviews, so user_ratings stays empty.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

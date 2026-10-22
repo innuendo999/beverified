@@ -19,28 +19,28 @@ categories:
 - e-kyc
 - aml
 link:
-  url: https://www.verified.eu
+  url: https://www.verified.io
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
-verdict: 'Verified bundles AML/KYC screening with e-signing and digital identification in one system, built for B2B compliance in the Nordics, with a managed AML service for the Nordic market that pairs advisers with the technology. Backed by Verdane since 2023 and grown through acquisitions (Assently, Pliance, GRC WATCH), it is strongly regional: a good fit inside the Nordics, less so outside it.'
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
+verdict: 'Verified bundles AML/KYC screening with e-signing and digital identification in one system, built for B2B compliance in the Nordics. Backed by Verdane since 2023 and grown through acquisitions (Assently, Pliance, GRC WATCH), it is strongly regional: a good fit inside the Nordics, less so outside it.'
 what_is:
 - 'Verified is a Nordic compliance-technology company founded in Sweden in 2012. It started with electronic signing and identification and later added anti-money laundering checks and third-party assessment. Verdane invested in spring 2023, after which Verified acquired Assently (e-signing and e-ID) and Pliance (AML automation) in 2023 and GRC WATCH (due diligence) in April 2024.'
-- 'Verified says it has 5,500+ customers in the Nordics and EU and about 90 staff in Sweden, Norway, Finland and Romania. Verdane lists its headquarters as Stockholm; the Swedish office is in Solna.'
+- 'Verified says it serves 6,500+ Nordic businesses, with Sweden, Finland and Norway as its core markets. Verdane lists its headquarters as Stockholm; its registered address is in Solna. In October 2026 Verified launched a new brand and moved its website to verified.io.'
 features:
-- 'AML screening: PEP and sanctions lists within the EU, with continuous monitoring.'
-- KYC workflows with beneficial owner identification and a customer risk assessment.
-- E-signing for digital contract execution, covering the eIDAS levels of assurance.
-- Integrated Nordic electronic IDs, plus passport reader and SMS verification.
-- Contract management, due diligence and supplier assessment.
-- 'AML Managed Services (Nordic market): advisers paired with the platform, with Verified handling KYC administration.'
+- 'AML screening: every customer screened daily against PEP, sanctions and adverse media, with risk reassessed when owners, board members or hits change.'
+- KYC workflows with beneficial owners identified automatically from official registers and a customer risk score based on your own risk policy.
+- E-signing for digital contract execution, covering simple, advanced and qualified eIDAS signatures.
+- Integrated Nordic and Baltic electronic IDs (BankID, MitID, Finnish Trust Network, Freja, Smart-ID), plus passport and SMS options in signing flows.
+- 'GRC Due Diligence: one shared profile for supplier and partner checks instead of questionnaires.'
+- 'LiveID: callers identify with their eID during a phone call, from the web portal or via API.'
 pricing:
-  summary: 'Pricing is not published; Verified quotes on request. Its AML and KYC pricing has three parts: a one-time setup fee, a monthly licence fee based on the number of customers and add-ons, and usage fees for signing and digital identification.'
+  summary: Pricing is not published; Verified quotes on request after a demo.
   plans:
   - tier: Modular / Custom
     price: Custom
-    note: Setup fee, monthly licence fee and usage fees
+    note: Quoted on request
     extra: Not publicly disclosed; Verified quotes after a demo
   legacy_verified_note: null
   verified: '2026-10'
@@ -48,45 +48,30 @@ pricing:
   - label: Published prices
     value: Not publicly disclosed
     kind: official
-    source: 8
-    verified: '2026-10'
-  - label: Setup fee
-    value: One-time, based on configuration and add-ons
-    kind: official
-    source: 8
-    verified: '2026-10'
-  - label: Licence fee
-    value: Monthly, based on number of customers and add-ons
-    kind: official
-    source: 8
-    verified: '2026-10'
-  - label: Usage fees
-    value: Per signing and digital identification
-    kind: official
-    source: 8
+    source: 14
     verified: '2026-10'
 facts:
 - label: From
   value: Custom quote
-  source: 8
+  source: 14
   evidence: vendor
 - label: Effective
   value: Not publicly disclosed
 - label: Founded
   value: '2012'
-  source: 2
+  source: 13
   evidence: vendor
 - label: HQ
   value: Stockholm, Sweden
   source: 3
   evidence: vendor
 - label: Regions
-  value: Nordics and EU
-  source: 1
+  value: Nordics (core markets Sweden, Finland, Norway)
+  source: 13
   evidence: vendor
 - label: Clients
-  value: 5,500+ customers
-  source: 1
+  value: 6,500+ Nordic businesses
+  source: 12
   evidence: vendor
 - label: Owner
   value: Verdane (since 2023)
@@ -95,11 +80,11 @@ facts:
 pros:
 - All-in-one AML+KYC+e-signing+e-ID in one system, reducing vendor fragmentation
 - Strong Nordic/EU regulatory compliance fit
-- Managed AML service pairs advisers with the technology
+- Daily PEP, sanctions and adverse-media screening of every customer, with automatic risk reassessment
 cons:
 - Nordic/EU-centric, limited global reach
-- Managed AML service is offered only in the Nordic market
-- No published prices; costs combine a setup fee, a monthly licence and usage fees
+- Few public user reviews; G2 shows none for Verified AML
+- No published prices; Verified quotes after a demo
 alternatives:
 - slug: signicat
   name: Signicat
@@ -127,11 +112,11 @@ user_reviews:
   - Companies operating primarily outside the Nordics/EU typically evaluate other regional specialists.
 faq:
 - q: How much does Verified cost?
-  a: Verified does not publish prices. AML and KYC pricing combines a one-time setup fee, a monthly licence fee based on the number of customers and add-ons, and usage fees for signing and digital identification.
+  a: Verified does not publish prices. Its site offers a demo, and prices are quoted on request.
 - q: What does Verified's platform include?
-  a: Verified combines AML/KYC screening, e-signing, e-ID/digital identification, contract management, due diligence and supplier assessment.
-- q: Does Verified offer managed services?
-  a: Yes. AML Managed Services gives access to AML advisers and has Verified take operational responsibility for KYC administration. It is available for the Nordic market.
+  a: Verified combines AML/KYC screening, e-signing, digital identification with Nordic and Baltic eIDs, and GRC Due Diligence for supplier and partner checks.
+- q: Which eIDs does Verified support?
+  a: Verified lists Swedish BankID, Norwegian BankID, Danish MitID, Finnish Trust Network, Freja and Baltic eIDs including Smart-ID.
 - q: What companies has Verified acquired?
   a: Verified acquired Assently (e-signing and e-ID) and Pliance (AML automation) in 2023, and GRC WATCH (due diligence) in April 2024.
 - q: When was Verified founded?
@@ -143,10 +128,10 @@ faq:
 segments: []
 capabilities: {}
 certifications:
-- name: ISO/IEC 27001:2022
+- name: ISO/IEC 27001
   what: Information security
   status: vendor_stated
-  source: 10
+  source: 18
 user_ratings: []
 use_case_verdicts: []
 score_breakdown: []
@@ -196,22 +181,64 @@ sources:
   publisher: Verified
   url: https://www.verified.eu/contact
   accessed: '2026-10'
+- title: Verified homepage (verified.io)
+  publisher: Verified
+  url: https://www.verified.io/
+  accessed: '2026-10'
+- title: Company
+  publisher: Verified
+  url: https://www.verified.io/company
+  accessed: '2026-10'
+- title: AML & KYC
+  publisher: Verified
+  url: https://www.verified.io/product/aml-kyc
+  accessed: '2026-10'
+- title: eSign
+  publisher: Verified
+  url: https://www.verified.io/product/esign
+  accessed: '2026-10'
+- title: Identification
+  publisher: Verified
+  url: https://www.verified.io/product/identification
+  accessed: '2026-10'
+- title: GRC Due Diligence
+  publisher: Verified
+  url: https://www.verified.io/product/grc-due-diligence
+  accessed: '2026-10'
+- title: 'Trust center: compliance'
+  publisher: Verified
+  url: https://www.verified.io/trust-center-compliance
+  accessed: '2026-10'
+- title: A bold new brand for a famously unbold industry
+  publisher: Verified
+  url: https://www.verified.io/insights/new-brand
+  accessed: '2026-10'
+- title: Verified seller profile
+  publisher: G2
+  url: https://www.g2.com/sellers/verified
+  accessed: '2026-10'
+- title: Verified Global AB company profile (Bolagsverket data)
+  publisher: tic.io
+  url: https://tic.io/en/foretag/verified-global-ab-1915042
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
   same_as:
-  - https://www.verified.eu
+  - https://www.verified.io
   - https://www.linkedin.com/company/verified-eu
   - https://www.crunchbase.com/organization/verified-eu
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- HQ "Oslo, Norway" was wrong; Verdane lists Stockholm, Sweden, and the contact page lists offices in Solna, Oslo, Espoo and Bucharest without naming an HQ. No company register entry was opened.
-- ISO/IEC 27001:2022 is vendor-stated (news post says valid until November 2027); no certification body or certificate number published. Trust centre security page lists only subcontractor certifications.
-- No G2, Capterra or Trustpilot profile for Verified (verified.eu) could be opened; user review themes removed.
-- The words AI-powered (contract management) and audit documentation consolidation (managed services) were not found on Verified's pages; removed.
-- AML pricing page hero contains placeholder text; pricing structure may change.
-- Verdane press release (May 2023) and GRC WATCH news (April 2024) cite 4,000+ customers; current site says 5,500+.
+- 'Rebrand: Verified launched a new brand on 19 to 20 Oct 2026 (source 19) and verified.eu now redirects (302) to verified.io. Sources 1, 2 and 5 to 11 are verified.eu pages that now redirect; facts were re-pointed to sources 12 to 18 where the new site confirms them.'
+- 'HQ: Verdane lists Stockholm (source 3). tic.io, a third-party view of Bolagsverket data (source 21), shows Verified Global AB, org. no. 556883-1233, seat Stockholm municipality, address Gårdsvägen 10 B, Solna, registered 3 Feb 2012. Official Bolagsverket record not opened. The office list (Solna, Oslo, Espoo, Bucharest) and staff count (about 90) are no longer on the site and were removed.'
+- 'Pricing: the AML pricing page (source 8) that described a setup fee, a monthly licence and usage fees now redirects to the AML product page, which shows no pricing; the verified.io sitemap has no pricing page. Structure removed from summary, items, FAQ and cons.'
+- 'AML Managed Services: the launch post (source 9) now redirects, and no current product or industry page mentions the service. Removed from verdict, features, pros, cons and FAQ. Re-add only if Verified confirms it is still offered.'
+- 'Contract management: not described on the new eSign page (source 15), which mentions a document archive and status view; removed from features and FAQ.'
+- 'ISO/IEC 27001 is vendor-stated: the new site says certified since 2018 (sources 12, 18) with no version, certification body or certificate number. The earlier news post (source 10) that said ISO/IEC 27001:2022, valid until November 2027, now redirects.'
+- 'User ratings: the G2 seller profile "Verified" matches this company (www.verified.eu, Stockholm, founded 2012, source 20). It shows 5.0 from 2 reviews, both on Assently E-Sign; Verified AML has 0 reviews. Not added as a rating for the whole suite. No Capterra, Gartner Peer Insights or Trustpilot profile found.'
+- 'GRC WATCH acquisition month (April 2024) came from source 5, which now redirects; the company page (source 13) confirms the year 2024 only.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
