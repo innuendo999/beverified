@@ -164,3 +164,50 @@ Positions follow the methodology (ordered by score, unreviewed entries after rev
 ## Score flag
 
 None. New record. Re-check SOC 2 Type I and ISO/IEC 27001 Stage 1, both targeted for October 2026, at the next review.
+
+## Follow-up 2026-10-22
+
+Fact re-check of all 20 open `verification_notes`, the full rate card, `user_ratings[]` and the `capabilities` block. `last_verified` and `updated` set to 2026-10-22. Notes: 20 → 17 (3 resolved and removed, 2 merged into others, 2 new). New sources appended: 27 Reviewing KYB cases (docs), 28 TM alert queue (docs), 29 Billing (docs), 30 Preqin profile, 31 Fintech Meetup speaker profile.
+
+### Pricing re-check (source 2, "Rates updated 14 October 2026")
+
+All 15 existing pricing items match the pricing page: $25 one-time credit (about 80 checks, no expiry, after business or payment-method verification), ID and liveness $0.30, AML screening $0.20, ongoing monitoring $0.05 per subject per year, proof of address $0.20, wallet screening $0.15, transaction monitoring $0.02, white label +$0.20, AML and adverse media agents $0.25 per false-positive alert resolved, transaction alert agent $0.40, company and UBO investigation $3.00, periodic file refresh $3.00, EDD $1.00 per review round with a spending cap agreed before work begins, Managed Operations custom. KYB still not on the rate card; the KYB product page (source 8) still says priced per jurisdiction with ownership discovery metered by a credit budget. Billing docs (source 29) say there is no subscription or monthly minimum and the signup credit never expires.
+
+### Changed
+
+- `last_verified`: '2026-10-18' → '2026-10-22'.
+- `pricing.items`: added "Forms: $0.05 per form" (published on the pricing page but missing from the record; source 2).
+- `features[0]`: appended "The transaction alert agent is priced and documented, but Zyphe's AML page says it is not yet shipped." The AML product page (source 9) says agent triage of TM alerts is "planned and not yet shipped" and "currently fixed to Disabled", while the pricing page (source 2) lists it at $0.40 and the agents page (source 10) lists the desk.
+- Notes resolved and removed: ID coverage (KYC page now reads "over 4,000 identity document versions from 190+ countries", consistent with the record's 4,000+, source 7); free tier (pricing page, sandbox docs and billing docs all match the record; sources 2, 12, 29); leadership (Fintech Meetup 2026 lists Michelangelo Frigo as Founder and CEO, source 31; the record makes no CEO claim, so no field change).
+- Notes merged: integrations logos and accuracy figures into the "vendor figures not used" customers note; support into the user ratings note.
+- New notes: transaction alert agent conflict; `case_management` capability (see below).
+
+### Confirmed unchanged
+
+- SOC 2 and ISO/IEC 27001: still in progress on 22 Oct 2026 (security page, source 3; KYC page "Neither is certified today", source 7). No report, certificate, auditor or news post found.
+- Liveness: no lab test claim. KYB coverage: 49 countries and territories plus 50 US states and DC (source 6). Sanctions lists: only OFAC, UN, EU named.
+- Company: about page (New York, London, Milan), co-founders (source 25), funding undisclosed July 2025 (source 17; Preqin source 30 agrees), PitchBook $2M and 16 employees unchanged, Dealroom unchanged.
+- Chartis FCC50 2026: still only a tag on Chartis's page among 98 organisations; "Market Disruptor" only from Zyphe.
+- User ratings: G2 4.8 from 6 reviews (source 22); Capterra Canada 5.0 from 2 reviews (source 23). Gartner Peer Insights: no Zyphe listing found, nothing added. Capterra still shows outdated $295 per month pricing.
+- Customers page: Azimut, Protocol Labs, Supra (case studies), Vesseo, Twotixx (quotes) unchanged. Support: hello@zyphe.com, form, demo booking; no SLA.
+- Features and FAQ: sandbox, mobile (no native iOS or Android SDK, WebView, React Native guide), signed webhooks (HMAC-SHA256), MCP server, storage claims, agent human sign-off and auto-pilot, FIU reporting all match current pages.
+
+### Capabilities check (not edited)
+
+- `case_management: not_disclosed` ("Agents work in your own case tools") looks wrong. The docs describe built-in case management: KYB case assignment, approval matrix with reason codes and second signature, an Inbox with SLA targets, a TM alert queue with New / In review / Escalated / Closed / SAR filed statuses, and an audit trail (sources 27, 28). The AML page (source 9) says agents share case management across KYC, KYB and AML. Suggest `yes`. Note added.
+- Other capabilities agree with current pages: sanctions_pep, adverse_media, transaction_monitoring (deterministic rules engine, not ML), identity_verification, deployment (cloud; EEA, UK and US regions per security page), published_pricing partial.
+
+### Removed / unverifiable
+
+- Nothing removed from rendered copy. Still unverifiable (kept as notes): founding year, single HQ, funding amount, Chartis placement, certification completion, liveness lab test, storage claims, KYB 240+ registries claim, sanctions list detail and provider, transaction alert agent availability, Wikidata id.
+
+### Ranking cards
+
+Searched `src/_data/rankings.yml` for `slug: zyphe`: entries in `cheap-kyc`, `identity-verification` and `kyb` (no `aml` entry). No text is now wrong:
+- `cheap-kyc`: $0.30, $25 credit with no expiry, no monthly fee (billing docs: no subscription or monthly minimum), AML $0.20, credit conditions: all confirmed.
+- `identity-verification`: $0.30, 4,000+ document versions from 190+ countries with NFC, no ISO/IEC 30107-3 test, no native iOS or Android SDK: all confirmed.
+- `kyb`: 49 countries and territories plus the US, 25% UBO threshold, $3.00 company and UBO review, KYB prices not published, SOC 2 and ISO/IEC 27001 in progress: all confirmed.
+
+### Score flag
+
+None. Nothing found that plausibly changes the editorial score. The SOC 2 Type I and ISO/IEC 27001 Stage 1 dates (October 2026) have arrived with no report or certificate yet; re-check in January 2027. The transaction alert agent not being shipped is a small gap in a priced feature, not a score change.
