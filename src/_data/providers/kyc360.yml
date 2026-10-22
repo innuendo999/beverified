@@ -22,8 +22,8 @@ link:
   url: https://kyc360.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: Experian announced its acquisition of KYC360 in October 2025, adding data-network backing to a platform built on deep AML expertise. Founder Stephen Platt is also a founder of the International Compliance Association. Its ad-hoc screening is priced by search credits rather than seats, which suits firms with variable screening volume. Experian said it would bring KYC360 into its Ascend platform from 2026, so check which combined features are live in your market.
 what_is:
 - KYC360 is a KYC and AML platform for regulated businesses, covering onboarding, screening, remediation and customer lifecycle management. It launched in 2015 as an AML knowledge platform, evolved from the RiskScreen product, and is run by founder Stephen Platt, a founder of the International Compliance Association. The operating company, KYC Global Technologies Limited, is registered in St Helier, Jersey, and KYC360 also lists an office in London. Experian announced the acquisition in October 2025 and KYC360 now describes itself as a wholly owned subsidiary of Experian plc. Its ad-hoc screening uses Dow Jones data for sanctions, PEP and watchlist checks, plus live web search for adverse media, and the company says it works with hundreds of organisations worldwide.
@@ -77,6 +77,16 @@ pricing:
     kind: official
     source: 3
     verified: '2026-10'
+  - label: Annual, 500 credits
+    value: £1,350.00 / yr
+    kind: official
+    source: 3
+    verified: '2026-10'
+  - label: Annual, 1,000 credits
+    value: £2,250.00 / yr
+    kind: official
+    source: 3
+    verified: '2026-10'
   - label: Annual, 2,500 credits
     value: £3,950.00 / yr
     kind: official
@@ -121,6 +131,10 @@ facts:
 - label: Ownership
   value: Experian plc (acquisition announced Oct 2025)
   source: 4
+  evidence: vendor
+- label: Data residency
+  value: EU (vendor-stated)
+  source: 11
   evidence: vendor
 pros:
 - Deep AML expertise from founder Stephen Platt, also a founder of the International Compliance Association
@@ -199,8 +213,17 @@ capabilities:
     note: ad-hoc screening published; platform quoted
     source: 3
   checked: '2026-10'
-certifications: []
-user_ratings: []
+certifications:
+- name: ISO/IEC 27001
+  what: Information security
+  status: vendor_stated
+  source: 11
+user_ratings:
+- platform: G2
+  rating: 4.0
+  count: 2
+  checked: '2026-10'
+  url: https://www.g2.com/products/riskscreen/reviews
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
@@ -245,6 +268,18 @@ sources:
   publisher: KYC360
   url: https://kyc360.com/platform/dataproviders
   accessed: '2026-10'
+- title: Financial crime compliance
+  publisher: KYC360
+  url: https://kyc360.com/financial-crime-compliance
+  accessed: '2026-10'
+- title: RiskScreen reviews
+  publisher: G2
+  url: https://www.g2.com/products/riskscreen/reviews
+  accessed: '2026-10'
+- title: What Experian's acquisition of KYC360 means for you
+  publisher: KYC360
+  url: https://kyc360.com/knowledge-hub/resources/news-what-experians-acquisition-of-kyc360-means-for-you
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -255,13 +290,9 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- 'Founded: old page said 2006. KYC360 company page says it launched in 2015 as an AML knowledge platform; the Jersey entity was created 2016-02-23 (LEI record). No source for 2006 found.'
-- 'Customer count: old page said more than 1,400 organisations. Vendor and Experian say only "hundreds"; removed.'
-- 'Certifications: KYC360 site names none. A TrustRadius listing mentions an "ISO 27001-accredited hosting environment" (hosting, not KYC360 itself); not listed.'
-- 'User ratings: Capterra RiskScreen listing shows 0 reviews (Sept 2026); G2 page could not be opened. Praise and criticism themes removed. Capterra also shows "from $900 per user per year", which conflicts with the vendor page and was not used.'
-- 'Experian Ascend integration: announced for 2026 in the October 2025 press release; current status not confirmed.'
-- 'Company timeline lists "Acquired by Experian" under 2026 while the press release is dated 27 October 2025; we use the press release date.'
-- '2026-10-22 capabilities pass: the platform page (kyc360.com/financial-crime-compliance) cites "full EU data residency and ISO 27001 accreditation", which conflicts with the earlier note that the site names no certifications. Certifications not changed.'
+- 'ISO 27001: only the financial crime compliance page (source 11) says "full EU data residency and ISO 27001 accreditation". No certificate, certification body, scope or certified entity found; the company, API and privacy pages do not mention it, and the IAF CertSearch register shows no result without JavaScript. Kept as vendor_stated. A TrustRadius listing describes an "ISO 27001-accredited hosting environment", so the scope (KYC360 or its host) is unclear.'
+- 'User ratings: G2 RiskScreen page (source 12, vendor KYC Global Technologies) shows 4.0 from 2 reviews on 2026-10-22. Capterra RiskScreen shows 0 reviews and "from $900 per user per year", which conflicts with the vendor page and was not used. Praise and criticism themes stay empty.'
+- 'Experian Ascend integration: KYC360 FAQ (source 13, Nov 2025, updated Apr 2026) says integration into Ascend is "planned over the next year"; no page found saying it is live as of 2026-10-22.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

@@ -22,32 +22,45 @@ link:
   url: https://www.smartsearch.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: SmartSearch was one of the first electronic AML verification services in the UK and remains squarely focused on compliance checks for legal, property, accountancy and financial-services firms. Its individual and business checks in one platform, plus a SmartDoc identity check certified under the UK digital identity trust framework (DIATF), are real strengths for UK-regulated firms, though its product and client base stay centred on the UK.
 what_is:
-- SmartSearch is a UK AML and KYC verification company founded in 2011 by Martin Cheek and John Dobson and based in Ilkley, West Yorkshire. Its registered company is SmartCredit Limited. Triple Private Equity took a majority stake in March 2024, and Phil Cotter is CEO. SmartSearch says it is trusted by over 7,000 regulated businesses, including one in three of the UK's top 200 law firms and one in two of the top 100 accountancy firms. In January 2026 it completed the acquisition of Credas Technologies, another UK KYC and AML provider.
+- SmartSearch is a UK AML and KYC verification company founded in 2011 by Martin Cheek and John Dobson and based in Ilkley, West Yorkshire. Its registered company is SmartCredit Limited, which the ICO data protection register lists with the trading name SmartSearch. Triple Private Equity took a majority stake in March 2024, and Phil Cotter is CEO. SmartSearch says it is trusted by over 7,000 regulated businesses, including one in three of the UK's top 200 law firms and one in two of the top 100 accountancy firms. In January 2026 it completed the acquisition of Credas Technologies, another UK KYC and AML provider.
 features:
 - UK and international AML checks for individuals and businesses.
 - Sanctions and PEP screening, with the Dow Jones WatchList updated daily.
-- Ongoing monitoring, with KYC checks re-run every night.
+- Ongoing monitoring, with KYC checks re-run every night. The pricing page lists ongoing sanctions, PEP and adverse media monitoring among the solutions for its Enterprise Compliance tier.
 - SmartDoc document check with facial recognition, certified under the UK DIATF.
 - KYB checks on businesses, which SmartSearch says run in minutes.
 - Browser-based platform and API access.
 pricing:
-  summary: Pricing is not published; SmartSearch quotes on request.
+  summary: Prices are not published. SmartSearch lists three tiers (Starter, Growth and Enterprise Compliance) without prices, says its pricing is modular rather than a fixed rate card, and quotes on request.
   plans:
-  - tier: Quote
-    price: Custom
-    note: AML and KYC verification licensing
-    extra: Contact sales for a quote
+  - tier: Starter Compliance
+    price: Not publicly disclosed
+    note: For small businesses and growing teams
+    extra: 'Commonly used: individual AML (KYC), KYB, sanctions and PEP screening, SmartDoc'
+  - tier: Growth Compliance
+    price: Not publicly disclosed
+    note: For medium-sized and scaling businesses
+    extra: 'Commonly used: international checks, fraud checks, EDD, source of funds via open banking'
+  - tier: Enterprise Compliance
+    price: Not publicly disclosed
+    note: For large, complex and highly regulated organisations
+    extra: 'Commonly used: ongoing sanctions, PEP and adverse media monitoring, perpetual KYC, re-screening alerts'
   legacy_verified_note: null
   verified: '2026-10'
   items:
   - label: Published pricing
-    value: Not publicly disclosed; quoted on request
+    value: Not publicly disclosed; three tiers listed without prices, quoted on request
     kind: official
-    source: 1
+    source: 9
+    verified: '2026-10'
+  - label: Ongoing monitoring
+    value: Listed among commonly used solutions for the Enterprise Compliance tier
+    kind: official
+    source: 9
     verified: '2026-10'
 facts:
 - label: From
@@ -107,8 +120,8 @@ choose_instead:
 user_reviews:
   legacy_note: null
   praise:
-  - 'Regulatory fit: reviewers highlight how well the checks suit UK regulated firms.'
-  - 'Combined checks: users value running individual and business checks in one platform.'
+  - 'Regulatory fit: the checks are built for UK regulated firms.'
+  - 'Combined checks: individual and business checks run in one platform.'
   criticize:
   - 'Geographic reach: the product is built mainly for UK firms.'
   - 'Pricing opacity: no published rate card.'
@@ -118,7 +131,7 @@ user_reviews:
   - Businesses needing global reach beyond the UK often evaluate broader competitors.
 faq:
 - q: How much does SmartSearch cost?
-  a: SmartSearch does not publish pricing; it quotes on request.
+  a: SmartSearch does not publish prices. Its pricing page lists Starter, Growth and Enterprise Compliance tiers without prices and says pricing is modular; it quotes on request. Ongoing sanctions, PEP and adverse media monitoring is listed under the Enterprise Compliance tier.
 - q: What is JMLSG compliance?
   a: JMLSG (Joint Money Laundering Steering Group) publishes UK AML guidance for the financial sector. SmartSearch builds its checks for UK regulated firms that follow this guidance.
 - q: Does SmartSearch verify both individuals and businesses?
@@ -169,7 +182,12 @@ certifications:
   what: Digital identity, Identity role
   status: confirmed
   source: 8
-user_ratings: []
+user_ratings:
+- platform: G2
+  rating: 5.0
+  count: 1
+  checked: '2026-10'
+  url: https://www.g2.com/products/smartsearch-2021-01-07/reviews
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
@@ -214,6 +232,18 @@ sources:
   publisher: SmartSearch
   url: https://www.smartsearch.com/solutions/aml-case-management
   accessed: '2026-10'
+- title: 'Data protection register entry Z1108931: Smart Credit Limited'
+  publisher: Information Commissioner's Office
+  url: https://ico.org.uk/ESDWebPages/Entry/Z1108931
+  accessed: '2026-10'
+- title: SmartSearch reviews
+  publisher: G2
+  url: https://www.g2.com/products/smartsearch-2021-01-07/reviews
+  accessed: '2026-10'
+- title: Who do SmartSearch work with?
+  publisher: SmartSearch
+  url: https://smartsearch.com/resources/help-centre/faqs/who-do-smartsearch-work-with
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -225,14 +255,11 @@ legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
 - 'Founded 2011: from The Negotiator (Mar 2024). The legal entity SmartCredit Limited was incorporated on 11 Aug 2005, so the brand and company dates differ.'
-- 'SmartCredit Limited is treated as the SmartSearch entity because it shares the Ilkley head-office address and is the DIATF register provider for SmartDoc. No page explicitly stating "trading name of" was opened.'
-- 'Clients: homepage says 7,000+, Nov 2025 press release says 7,500+. Homepage figure used.'
-- '60,000 users and 24-hour integration: not found on current pages; removed.'
-- '"Triple PE Fund I": fund name not confirmed; replaced with Triple Private Equity majority stake.'
-- 'Pricing page link on the homepage did not load; no prices appear anywhere on the site.'
-- 'No G2 or Capterra product page with ratings found; review themes kept as general statements without counts.'
+- 'Clients: homepage (checked 2026-10-22) says over 7,000 regulated businesses; a Nov 2025 press release says 7,500+; the help-centre FAQ (source 13, footer 2025) still says more than 6,500 clients and 60,000 users. Homepage figure used; the users figure is not shown because it sits beside the older client count.'
+- '"Triple PE Fund I": fund name still not confirmed (Investec deal page did not load on 2026-10-22); record uses Triple Private Equity majority stake.'
 - 'Alternatives: NameScan best_for was a dash placeholder; set to null so the record passes the dash check.'
-- '2026-10-22 capabilities pass: the pricing page now loads. It lists Starter, Growth and Enterprise Compliance tiers with no prices, and places ongoing monitoring, perpetual KYC and adverse media monitoring in Enterprise. The record''s ongoing monitoring feature line does not mention a tier. Not changed.'
+- 'Pricing page tiers are labelled "Commonly Used Solutions" and the page calls pricing modular; it does not say a solution is only available in one tier. Record words monitoring as "listed under" Enterprise, not "Enterprise only".'
+- 'User ratings: G2 product page (source 12) shows 5.0 from 1 review (March 2024) and does not show a seller website; matched on name and AML description. Capterra UK lists SmartSearch with 0 reviews and a "from US$500 per user" starting price that the vendor does not publish; not used.'
 - '2026-10-22 capabilities pass: transaction screening appears only as a homepage line in what an AML check includes; no product page describing it was found.'
 application_category: Identity Verification Software
 author: andrii-klymenko

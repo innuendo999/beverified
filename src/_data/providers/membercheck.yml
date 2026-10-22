@@ -22,20 +22,21 @@ link:
   url: https://membercheck.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: 'MemberCheck screens customers against 1,000+ PEP and sanctions watchlists alongside adverse-media checks, positioned for managed AML workflows with enhanced due diligence and ongoing monitoring. It sits in the same group as NameScan (MemberCheck says it operates under Neurocom Group, and both now appear as Nexiant brands) but targets a different use case: sales-led compliance programs rather than on-demand self-serve checks.'
 what_is:
 - MemberCheck is an AML/CTF screening company established in 2008. It says it operates under Neurocom Group, founded in 1992, which also runs NameScan and GPayments, and its site now presents it as a Nexiant brand. Nexiant AI Pty Ltd is registered in Chatswood, New South Wales, Australia. MemberCheck screens against 1,000+ PEP and sanctions watchlists in 195 countries plus adverse media from thousands of monitored sources, and says it serves 13,000+ customers in accounting, casinos and betting, financial services, legal, real estate and crypto exchanges.
 features:
 - PEP and sanctions screening against 1,000+ watchlists, with match scoring and an audit trail.
 - Adverse-media screening from thousands of monitored sources.
-- ID verification with document and biometric checks.
+- ID verification inside the platform: passports, driving licences and national ID cards checked against official sources (60+ countries), with a live selfie matched to the document photo where requested, and liveness detection.
 - Know Your Business (KYB) ownership and UBO assessment, enhanced due diligence and risk assessment.
-- Ongoing monitoring and transaction monitoring with configurable rules; database updated daily.
+- Ongoing monitoring after onboarding, with the screening database updated daily.
+- Transaction monitoring with configurable rules, risk-ranked alerts and case management, on a separate platform with its own login.
 - API integration and a web dashboard.
 pricing:
-  summary: Pricing is not published; MemberCheck quotes on request through a demo form that asks for anticipated annual scan volume.
+  summary: Pricing is not published; MemberCheck quotes on request through a demo form that asks for anticipated annual scan volume. The separate transaction monitoring platform offers a 30-day trial with 500 test credits and no credit card.
   plans:
   - tier: Quote on request
     price: Custom
@@ -48,6 +49,11 @@ pricing:
     value: Not published, quote on request
     kind: official
     source: 3
+    verified: '2026-10'
+  - label: Transaction monitoring trial
+    value: 30 days, 500 test credits, no credit card
+    kind: official
+    source: 8
     verified: '2026-10'
 facts:
 - label: From
@@ -76,11 +82,11 @@ facts:
 pros:
 - Broad screening coverage, with 1,000+ PEP and sanctions watchlists and adverse media
 - API integration for building a custom front-end
-- Ongoing monitoring, with the screening database updated daily
+- Ongoing monitoring with daily database updates, plus ID verification with selfie matching and liveness
 cons:
 - Australian-based group with no published hosting region, a data-residency question for some EU clients
 - Smaller brand than enterprise AML platforms, and no published pricing
-- Screening-focused rather than a full IDV/lifecycle platform
+- Transaction monitoring runs on a separate platform with its own login, apart from the screening app
 alternatives:
 - slug: namescan
   name: NameScan
@@ -100,8 +106,11 @@ choose_instead:
   text: you want API-first screening built for mid-market fintechs.
 user_reviews:
   legacy_note: null
-  praise: []
-  criticize: []
+  praise:
+  - 'Ease of use: most Capterra reviewers describe the interface as easy to use.'
+  - 'Support: several reviewers mention responsive customer support.'
+  criticize:
+  - 'Search results: a couple of reviewers mention limited hits or incomplete data capture.'
   by_profile:
   - Accounting, legal, and real-estate firms are among the sectors MemberCheck targets for AML/CTF workflows, including Australia's Tranche 2 sectors.
   - Crypto exchanges and casinos are also listed among its industries.
@@ -114,7 +123,9 @@ faq:
 - q: What does MemberCheck screen against?
   a: MemberCheck screens against 1,000+ PEP and sanctions watchlists covering 195 countries, plus adverse media from thousands of monitored sources.
 - q: Does MemberCheck offer ongoing monitoring?
-  a: Yes, MemberCheck lists ongoing monitoring and transaction monitoring with configurable rules, and says its database is updated daily.
+  a: Yes. MemberCheck lists ongoing monitoring of screened customers and says its database is updated daily. Transaction monitoring with configurable rules is also offered, but it runs on a separate platform with its own credentials.
+- q: Does MemberCheck verify identity documents?
+  a: Yes. Its ID verification checks passports, driving licences and national ID cards against government and official sources, with document and data coverage in 60+ countries. Where requested, a live selfie is matched to the document photo, with liveness detection.
 - q: What is the best alternative to MemberCheck?
   a: NameScan is the closest alternative for self-serve, on-demand screening. SmartSearch is a strong fit for UK JMLSG compliance specifically.
 - q: Who are MemberCheck's main competitors?
@@ -165,6 +176,11 @@ user_ratings:
   count: 1
   checked: '2026-10'
   url: https://www.g2.com/products/membercheck/reviews
+- platform: Capterra
+  rating: 4.8
+  count: 15
+  checked: '2026-10'
+  url: https://www.capterra.com/p/154148/MemberCheck/reviews/
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
@@ -205,6 +221,10 @@ sources:
   publisher: MemberCheck
   url: https://membercheck.com/id-verification/
   accessed: '2026-10'
+- title: MemberCheck reviews
+  publisher: Capterra
+  url: https://www.capterra.com/p/154148/MemberCheck/reviews/
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -215,17 +235,12 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- 'Founded: old page said 2007; MemberCheck about page says "established in 2008".'
-- 'Ownership: about page says MemberCheck operates under Neurocom Group (est. 1992); homepage logo says "a Nexiant brand", and Nexiant (G2 seller page, founded 2024) groups MemberCheck, NameScan, GPayments and FraudShield. Legal relationship between Neurocom and Nexiant AI Pty Ltd (ABN active from 15 Dec 2023) not confirmed.'
-- 'HQ: MemberCheck pages give no address. Chatswood is taken from the Nexiant AI Pty Ltd ABR record (NSW 2067) and the shared Railway St address on NameScan and Nexiant G2 pages.'
-- 'Four-tier PEP and RCA screening: not found on current MemberCheck pages; removed from tagline, features, pros and FAQ.'
-- 'Pricing: old page showed about $90 for 50 scans (third-party, no source recorded). No source found; MemberCheck pricing page is a demo form. Removed.'
-- 'EU data storage: old con said data is also held in the EU. Sub-processors page lists AWS and Google (United States) and no hosting region. Removed.'
-- 'Face match and liveness: homepage says "biometric checks" only; wording changed.'
-- 'ISO 27001:2022 and ISO 27701:2019 are vendor-stated; no certificate or certification body register found.'
-- 'User ratings: G2 has a single review dated July 2019; themes removed. The Capterra MemberCheck URL tried resolved to an unrelated product.'
-- '2026-10-22 capabilities pass: the ID verification page now describes a live selfie matched to the document photo and liveness detection (source 9). The earlier note that only "biometric checks" were stated, and the con "Screening-focused rather than a full IDV/lifecycle platform", may understate the product; review.'
-- '2026-10-22 capabilities pass: transaction monitoring runs on its own platform with separate credentials from the screening app, with case statuses and alert assignment there (source 8). The feature line lists it alongside ongoing monitoring without that distinction.'
+- 'Ownership: about page says MemberCheck operates under Neurocom Group (est. 1992), which also includes NameScan, GPayments and Creative Digital Technology; the header logo says "a Nexiant brand". nexiant.ai (footer: Nexiant AI PTY LTD) lists MemberCheck, NameScan, GPayments and FraudShield as solutions but does not mention Neurocom. Legal relationship between Neurocom and Nexiant AI Pty Ltd (ABN active from 15 Dec 2023) still not confirmed.'
+- 'HQ: MemberCheck pages give no address. Chatswood is taken from the Nexiant AI Pty Ltd ABR record (NSW 2067, rechecked 2026-10) and the shared Railway St address on NameScan and Nexiant G2 pages.'
+- 'ISO/IEC 27001:2022 and ISO/IEC 27701:2019 are vendor-stated on the MemberCheck about page and nexiant.ai; no certificate, certification body or register entry found.'
+- 'API: the API integration feature and pro were not reconfirmed on a current page (membercheck.com/api/ did not load); kept from the earlier pass.'
+- 'ID verification: the page says document and data coverage is 60+ countries, "expanding to 120+"; selfie matching applies "where requested". The 195-country figure is for screening, not IDV.'
+- 'User reviews: Capterra reviews (source 10) date from 2016 to 2024; G2 still has a single July 2019 review. Themes come from Capterra only.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
