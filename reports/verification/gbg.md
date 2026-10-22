@@ -29,3 +29,25 @@
 ## Score flag
 
 - None under the spec criteria. Context for the editor: FTSE 250 exit in Sep 2026, a £73.1m impairment in FY26 and a weak trading update; the "stability" pro is weaker but the company and products continue.
+
+## Follow-up 2026-10-22
+
+### Changed
+- FTSE 250 exit: source BusinessCloud (4) → LSEG/FTSE Russell September 2026 review, GB Group listed as a FTSE 250 deletion effective 21 Sep 2026 (11). Fact "Status" now cites 11.
+- UK DIATF: "three services (IDscan Enterprise, Identify, oZone FYQ2) ... until September 2029" → five services (GBG Go, ID3global, Identify, IDscan Enterprise, oZone FYQ2), certified 14 Sep 2026, expiring 27 Sep 2029 (13). Updated in certifications and FAQ.
+- FedRAMP Moderate: vendor_stated (Trust Centre, 6) → confirmed on FedRAMP Marketplace for Acuant, Inc. "Connect, Ozone, & Facial Recognition System (COFRS)", JAB, since 24 Nov 2021 (14). Name now "FedRAMP Moderate (Acuant COFRS)".
+- Cloudcheck: previously removed as unconfirmed → confirmed, GBG acquired Verifi Identity Services (Cloudcheck), New Zealand, Feb 2022 (12). Added to the acquisitions FAQ.
+- Pricing: "not published" → identity and fraud products still quoted (5); Loqate address products publish pay-as-you-go packs from £50, Address Verify 8.8p (£50 pack) to 5.0p (£1,000 pack) per lookup, excl. VAT (15). Updated summary, plans, items, FAQ, con 2 ("No published pricing" → "No published pricing for identity and fraud products") and the pricing review theme.
+- Re-confirmed unchanged: GBG Go 110+ modules, 195+ countries, 1,000+ brands (5); 1,100+ staff in 15 countries (1); identity data in 50 countries (10); FY26 revenue £285.0m, CEO Dev Dhiman (2); G2 GBG Go 4.0 from 1 review (9).
+- 2026 corporate changes: none found beyond the FTSE 250 exit (no bid, disposal or CEO change). Last acquisition found: DataTools (Australia), Oct 2025, not added.
+
+### Removed / unverifiable
+- Notes on the replaced 2026-10-18 figures, the founding year (Companies House and Wikipedia both give 1989) and FY26 revenue: resolved, removed.
+- Still vendor_stated: ISO/IEC 27001:2022, SOC 2 Type 2, PCI DSS v4.0.1, Cyber Essentials Plus.
+- Gartner Peer Insights shows no GBG reviews; Capterra's "GBG Digital Risk Management Intelligence Platform" listing (1 review) does not clearly match GBG Go and was not used.
+
+### Ranking cards
+- GBG has no entry in `src/_data/rankings.yml` (no `slug: gbg`). Nothing to correct.
+
+### Score flag
+- None.

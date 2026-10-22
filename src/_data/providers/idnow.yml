@@ -22,14 +22,14 @@ link:
   url: https://www.idnow.io
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: IDnow made its name on VideoIdent, an agent-led video identity check built to meet BaFin Circular 3/2017 and the German Money Laundering Act. Few global competitors are built around that compliance bar. Its acquisition of France's ARIADNEXT, announced in 2021, extended that strength across Europe, though its brand and case studies still skew most heavily toward the DACH region.
 what_is:
 - IDnow is an identity-verification company founded in 2014 and headquartered in Munich, Germany. Corsair Capital took a majority stake in March 2025, and Philippe Morel was confirmed as CEO in July 2026, succeeding Andreas Bodczek. IDnow built its reputation on VideoIdent, an agent-led video identification method used for regulated onboarding in Germany and Austria. It has since expanded into automated document and biometric verification, eID and EUDI Wallet support, AML screening and qualified e-signing, and extended its European footprint by acquiring French identity-verification company ARIADNEXT. IDnow reports 145M+ completed transactions a year and 600+ customers.
 features:
 - 'VideoIdent: agent-led video identity verification built for BaFin Circular 3/2017 and Austrian FMA rules.'
-- Automated document and biometric verification across 3,800+ supported documents.
+- Automated document and biometric verification (AutoIdent) across 3,800+ supported documents.
 - Simple, advanced and qualified electronic signatures (SES, AES, QES) and qualified electronic seals.
 - eID schemes and EUDI Wallet support for identification and authentication.
 - AML screening, IBAN, address and driving licence verification alongside core identity checks.
@@ -58,14 +58,16 @@ facts:
   value: Not publicly disclosed
 - label: Founded
   value: '2014'
-  source: 3
+  source: 8
+  evidence: vendor
 - label: HQ
   value: Munich, Germany
-  source: 1
-  evidence: vendor
+  source: 12
+  evidence: independent
 - label: Owner
   value: Corsair Capital (majority, 2025)
-  source: 3
+  source: 8
+  evidence: vendor
 - label: Recognition
   value: VideoIdent per BaFin Circular 3/2017
   source: 2
@@ -103,6 +105,7 @@ user_reviews:
   criticize:
   - 'Regional concentration: weaker brand presence outside DACH markets.'
   - 'Speed: agent-led VideoIdent can take longer than fully automated alternatives.'
+  - 'Integration and cost: some Gartner Peer Insights reviewers mention mobile SDK integration effort and transaction costs that add up.'
   by_profile:
   - German banks, insurers, and telecoms are IDnow's core, longest-standing customer base.
   - Pan-European businesses can use it for wider document coverage since the ARIADNEXT acquisition.
@@ -129,23 +132,41 @@ certifications:
   what: Presentation attack detection
   status: confirmed
   source: 5
-- name: PVID (ANSSI), substantial
-  what: French remote identity verification
+- name: PVID (ANSSI), substantial, IDCheck PVID
+  what: French remote identity verification, valid to Jul 2027
   status: vendor_stated
-  source: 6
+  source: 10
+- name: ETSI TS 119 461
+  what: Remote identity proofing (AutoIdent, VideoIdent, IdentityTM, IDCheck PVID)
+  status: vendor_stated
+  source: 10
+- name: eIDAS qualified trust service provider (IDnow Trust Services AB)
+  what: Qualified e-signatures, seals and time stamps, supervised by Sweden's PTS
+  status: vendor_stated
+  source: 11
 - name: ISO/IEC 27001:2022
-  what: Information security
+  what: Information security (all four IDnow group entities)
   status: vendor_stated
-  source: 1
+  source: 10
 - name: ISAE 3402 Type 2
-  what: Service organisation controls
+  what: Controls over the VideoIdent procedure (FY 2025 report)
   status: vendor_stated
-  source: 1
-- name: TISAX
-  what: Automotive information security
+  source: 10
+- name: TISAX AL3
+  what: Automotive information security (IDnow GmbH)
   status: vendor_stated
-  source: 1
-user_ratings: []
+  source: 10
+user_ratings:
+- platform: Gartner Peer Insights (IDnow Platform)
+  rating: 4.3
+  count: 20
+  checked: '2026-10'
+  url: https://www.gartner.com/reviews/product/idnow-platform
+- platform: Capterra UK
+  rating: 5.0
+  count: 1
+  checked: '2026-10'
+  url: https://www.capterra.co.uk/software/196937/idnow
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
@@ -178,6 +199,34 @@ sources:
   publisher: YPOG
   url: https://www.ypog.law/en/press/idnow-acquires-ariadnext
   accessed: '2026-10'
+- title: IDnow announces strategic majority investment from Corsair Capital (6 March 2025)
+  publisher: IDnow
+  url: https://idnow.io/insights/pr/idnow-announces-strategic-majority-investment-from-corsair-capital/
+  accessed: '2026-10'
+- title: IDnow and French identity technology provider ARIADNEXT combine (30 June 2021)
+  publisher: IDnow
+  url: https://idnow.io/insights/pr/idnow-and-french-identity-technology-provider-ariadnext-combine-to-create-leading-pan-european-identity-verification-platform/
+  accessed: '2026-10'
+- title: IDnow Security and Compliance Center
+  publisher: IDnow
+  url: https://trust.idnow.io/
+  accessed: '2026-10'
+- title: IDnow Trust Services AB certified Qualified Trust Service Provider in EU
+  publisher: IDnow
+  url: https://idnow.io/insights/pr/idnow-trust-services-ab-certified-qtsp-eu/
+  accessed: '2026-10'
+- title: 'Lobbyregister entry R005812: IDnow'
+  publisher: Deutscher Bundestag
+  url: https://www.lobbyregister.bundestag.de/suche/R005812
+  accessed: '2026-10'
+- title: IDnow Platform reviews
+  publisher: Gartner Peer Insights
+  url: https://www.gartner.com/reviews/product/idnow-platform
+  accessed: '2026-10'
+- title: IDnow reviews
+  publisher: Capterra UK
+  url: https://www.capterra.co.uk/software/196937/idnow
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -188,12 +237,11 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- ARIADNEXT deal was announced July 2021 (source 7), subject to regulatory approval; the old page said 2022. Closing date not confirmed on a page opened.
-- PVID status sourced to trade press; the ANSSI register page did not load.
-- ISO 27001, ISAE 3402 Type 2, TISAX, NIS2 and DORA badges are read from homepage image file names only.
-- Founded 2014 and Corsair ownership sourced to Munich Startup (news), not a registry.
-- No G2 reviews for IDnow; no other review platform opened.
-- AutoIdent product name not found on current pages; replaced with generic "automated document and biometric verification".
+- ARIADNEXT deal announced 30 June 2021 and subject to regulatory approval (sources 7, 9). No page opened gives the closing date.
+- PVID, ETSI TS 119 461, ISO/IEC 27001, ISAE 3402 and TISAX come from IDnow's own trust centre (source 10), which lists certificate numbers. The ANSSI catalogue PDF, the LSTI register and the ENX TISAX database were not opened, so all stay vendor_stated.
+- QTSP status of IDnow Trust Services AB is from IDnow's press release only; the EU Trusted List browser did not load.
+- Founded 2014 and the Corsair majority stake come from IDnow's press release (source 8) and Munich Startup (source 3). The deal closing date and the commercial register entry were not opened.
+- G2 has no IDnow listing. Capterra UK has a single review, too few for themes.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

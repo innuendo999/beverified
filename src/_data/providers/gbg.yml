@@ -22,8 +22,8 @@ link:
   url: https://www.gbg.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: GBG is the rare publicly traded company in this category (LSE:GBG, on the London main market since October 2025). Its GBG Go platform offers 110+ identity, fraud and risk modules across 195+ countries, with a location-intelligence layer from Loqate. It's less about slick no-code UX and more about deep data infrastructure, grown through a string of acquisitions (PCA Predict, IDology, Acuant). Revenue grew 3.2% at constant currency in FY26, and the shares left the FTSE 250 in September 2026.
 what_is:
 - GBG (GB Group plc) is a publicly traded identity, fraud and location-intelligence company incorporated in 1989 and registered in Chester, UK, led by CEO Dev Dhiman. It has more than 1,100 staff across 15 countries and reported revenue of £285.0m for the year to 31 March 2026. It combines identity data verification, document and biometric verification, fraud signals and location intelligence (via Loqate) in its GBG Go platform, built up through acquisitions including PCA Predict (2017), IDology (2019) and Acuant (2021).
@@ -35,19 +35,28 @@ features:
 - 'GBG Trust Network: a cross-industry consortium powered by more than 1,000 brands.'
 - 110+ identity, fraud and risk modules within GBG Go, including GBG Identity Score.
 pricing:
-  summary: Pricing is not published; GBG quotes on request. Its identity and location-intelligence products are licensed to businesses based on volume and module selection.
+  summary: Pricing for GBG's identity and fraud products is not published; GBG quotes on request, based on volume and module selection. Its Loqate address products have published pay-as-you-go credit packs from £50, excluding VAT.
   plans:
   - tier: Enterprise Quote
     price: Custom
     note: Identity/location data licensing, volume-based
     extra: Contact sales for a quote
+  - tier: Loqate pay-as-you-go
+    price: From £50 credit
+    note: Address capture and verification lookups; the per-lookup price falls with larger credit packs
+    extra: Credit valid 12 months; prices exclude VAT
   legacy_verified_note: null
   verified: '2026-10'
   items:
-  - label: Published pricing
-    value: None; quote on request
+  - label: Identity and fraud products (GBG Go)
+    value: Not published; quote on request
     kind: official
     source: 5
+    verified: '2026-10'
+  - label: Loqate Address Verify, pay-as-you-go
+    value: 8.8p per lookup (£50 pack) to 5.0p (£1,000 pack), excluding VAT
+    kind: official
+    source: 15
     verified: '2026-10'
 facts:
 - label: From
@@ -68,7 +77,7 @@ facts:
   evidence: vendor
 - label: Status
   value: Public (LSE:GBG); left the FTSE 250 in Sep 2026
-  source: 4
+  source: 11
   evidence: independent
 - label: Revenue
   value: £285.0m (FY to 31 Mar 2026)
@@ -80,7 +89,7 @@ pros:
 - Location-intelligence layer via Loqate on top of identity data
 cons:
 - Data-centric approach, less focused on no-code UX
-- No published pricing
+- No published pricing for identity and fraud products
 - Broad product lineup spanning multiple acquisitions can be complex to navigate
 alternatives:
 - slug: trulioo
@@ -106,22 +115,22 @@ user_reviews:
   - 'Stability: public-company status and audited accounts reassure procurement teams.'
   criticize:
   - 'Complexity: the broad, acquisition-built product lineup takes time to navigate.'
-  - 'Pricing opacity: no published rate card.'
+  - 'Pricing opacity: no published rate card for identity products.'
   by_profile:
   - Businesses needing both identity and address/location intelligence get both from one vendor.
   - Public-company procurement teams appreciate GBG's listed-company transparency.
   - Teams wanting a simpler, single-product platform sometimes prefer more focused competitors.
 faq:
 - q: How much does GBG cost?
-  a: GBG does not publish pricing; its identity and location-intelligence products are licensed based on volume and module selection.
+  a: GBG does not publish pricing for its identity and fraud products; they are licensed based on volume and module selection. Loqate address lookups are sold in published pay-as-you-go credit packs from £50, excluding VAT.
 - q: Is GBG a public company?
   a: Yes. GB Group plc is listed on the London Stock Exchange (LSE:GBG). It moved from AIM to the main market in October 2025 and left the FTSE 250 index on 21 September 2026.
 - q: What is Loqate?
   a: Loqate is GBG's location-intelligence product for address verification. It came from GBG's 2017 acquisition of PCA Predict.
 - q: What companies has GBG acquired?
-  a: GBG bought PCA Predict in 2017, IDology in the US in 2019 and Acuant in the US in 2021, among others, to build out its identity-data network.
+  a: GBG bought PCA Predict in 2017, IDology in the US in 2019, Acuant in the US in 2021 and Cloudcheck in New Zealand in 2022, among others, to build out its identity-data network.
 - q: Is GBG certified under the UK trust framework?
-  a: Yes. The UK government register lists three GB Group PLC services (IDscan Enterprise, Identify and oZone FYQ2), certified on 14 September 2026 until September 2029.
+  a: Yes. The UK government register lists five GB Group PLC services (GBG Go, ID3global, Identify, IDscan Enterprise and oZone FYQ2), certified on 14 September 2026 and expiring on 27 September 2029.
 - q: What is the best alternative to GBG?
   a: Trulioo is the best alternative for comparable data-layer proofing. Sumsub is the closest fit for published pricing and a simpler unified platform.
 - q: Who are GBG's main competitors?
@@ -130,9 +139,9 @@ segments: []
 capabilities: {}
 certifications:
 - name: UK DIATF certified services
-  what: IDscan Enterprise, Identify (identity) and oZone FYQ2 (component), Sep 2026 to Sep 2029
+  what: GBG Go (identity, orchestration), ID3global, Identify, IDscan Enterprise (identity) and oZone FYQ2 (component), Sep 2026 to Sep 2029
   status: confirmed
-  source: 7
+  source: 13
 - name: ISO/IEC 27001:2022
   what: Information security (global scope)
   status: vendor_stated
@@ -149,10 +158,10 @@ certifications:
   what: UK cyber security
   status: vendor_stated
   source: 6
-- name: FedRAMP Moderate
-  what: US federal cloud authorisation
-  status: vendor_stated
-  source: 6
+- name: FedRAMP Moderate (Acuant COFRS)
+  what: US federal cloud authorisation, held by Acuant, Inc. since Nov 2021
+  status: confirmed
+  source: 14
 user_ratings:
 - platform: G2 (GBG Go)
   rating: 4.0
@@ -203,6 +212,26 @@ sources:
   publisher: GBG
   url: https://gbg.com/en-us/verify-identity/data-verification
   accessed: '2026-10'
+- title: FTSE UK Index Series quarterly review, September 2026
+  publisher: LSEG (FTSE Russell)
+  url: https://www.lseg.com/en/media-centre/press-releases/2026/ftse-uk-index-series-review-september-2026
+  accessed: '2026-10'
+- title: GBG acquires Cloudcheck (2 February 2022)
+  publisher: GBG
+  url: https://www.gbg.com/en/news/gbg-acquires-cloudcheck/
+  accessed: '2026-10'
+- title: 'Register of digital verification services: GB Group search'
+  publisher: UK Government (DSIT)
+  url: https://www.access-dvs-register.service.gov.uk/register?SearchText=GB+Group
+  accessed: '2026-10'
+- title: 'FedRAMP Marketplace: Acuant, Inc. COFRS (FR2104942200)'
+  publisher: FedRAMP (GSA)
+  url: https://www.fedramp.gov/marketplace/products/FR2104942200/
+  accessed: '2026-10'
+- title: Loqate pricing
+  publisher: Loqate (GBG)
+  url: https://www.loqate.com/en-gb/pricing/
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -213,15 +242,11 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- '"280+ data sources", "190 countries" and "4.4B+ people" not found on current GBG pages. Replaced with GBG Go figures (110+ modules, 195+ countries) and the data-verification page figure (identity data in 50 countries).'
-- 'Trust Network "400+ businesses across 80+ countries" replaced by the current "1,000+ brands" (GBG Go page); no country count published.'
-- GBG Go page is inconsistent (headline 110+ modules, meta description 80+); the body figure is used.
-- FTSE 250 membership ended at the 21 Sep 2026 index change (BusinessCloud, 3 Sep 2026). Not confirmed against the FTSE Russell notice itself.
-- Founding year 1989 is the Companies House incorporation date (as Telme Group plc); Wikipedia says the business started as Phonelink Data in Sep 1989.
-- Cloudcheck acquisition not confirmed on any page opened; removed from the acquisitions list.
-- Revenue £285.0m FY26 (to 31 Mar 2026) replaces the old "£282.7M in 2025", which was the FY25 figure. FY26 also included a £73.1m non-cash impairment (statutory operating loss).
-- ISO/IEC 27001, SOC 2 Type 2, PCI DSS, Cyber Essentials Plus and FedRAMP Moderate are from GBG's Trust Centre only; certificates and FedRAMP marketplace entry not opened.
-- G2 lists GBG Go with a single review (4.0); too few for user themes, which are kept as general statements.
+- GBG Go page is still inconsistent (body 110+ modules, meta description 80+); the body figure is used (source 5).
+- ISO/IEC 27001:2022, SOC 2 Type 2, PCI DSS v4.0.1 and Cyber Essentials Plus come from GBG's Trust Centre only (source 6); certificates and the IASME register were not opened. The Trust Centre also lists ISO/IEC 20243:2024, not added.
+- FedRAMP Moderate is held by Acuant, Inc. for COFRS (source 14); it does not cover GBG Go as a whole.
+- User ratings are thin. G2 lists GBG Go with one review (4.0). Gartner Peer Insights shows no GBG reviews. Capterra lists "GBG Digital Risk Management Intelligence Platform" (1 review, 3.0), which does not clearly match GBG Go, so it is not used.
+- Loqate publishes EUR and other pay-as-you-go prices besides those recorded; only the GBP Address Verify range is recorded.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
