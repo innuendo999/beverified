@@ -22,17 +22,17 @@ link:
   url: https://complyadvantage.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: ComplyAdvantage is a sanctions, PEP and adverse-media screening platform, not a document-verification company. That distinction matters when comparing it with IDV vendors in this category. Its financial-crime risk data, a published Starter plan from $99 a month and the free ComplyLaunch programme for early-stage startups make it a strong AML data layer, typically deployed alongside a separate identity-verification provider rather than instead of one.
 what_is:
-- ComplyAdvantage is an AML data and financial-crime intelligence platform founded by Charles Delingpole, now its Executive Chairman, and run by CEO Vatsa Narasimha. Its UK operating company, IVXS UK Limited, was incorporated in London in March 2014. Its Mesh platform covers customer and company screening against sanctions, PEP and adverse-media data, ongoing monitoring, transaction monitoring, payment screening and fraud detection. It does not perform document or biometric identity verification.
+- ComplyAdvantage is an AML data and financial-crime intelligence platform founded by Charles Delingpole, now its Executive Chairman, and run by CEO Vatsa Narasimha. Its UK operating company, IVXS UK Limited, was incorporated in London in March 2014. Its Mesh platform covers customer and company screening against sanctions, PEP and adverse-media data and ongoing monitoring on both the Starter and Enterprise plans. Transaction monitoring and payment screening are listed only on the Enterprise plan. The vendor also markets fraud detection, which the pricing page does not list under either plan. It does not perform document or biometric identity verification.
 features:
-- Customer and company screening against sanctions, watchlists, PEPs, RCAs and adverse media.
-- Real-time transaction monitoring and payment screening.
-- Agentic workflows that the vendor says resolve up to 85% of routine alerts autonomously.
-- Ongoing monitoring of screened customers.
-- Built-in reporting support for SAR, CTR and FINTRAC STR and EFT reports.
+- Customer and company screening against sanctions, watchlists, PEPs, RCAs and adverse media, on all plans.
+- Real-time transaction monitoring and payment screening, listed on the Enterprise plan only.
+- Agentic workflows that the vendor says resolve up to 85% of routine alerts autonomously, on the Starter Agentic and Enterprise plans.
+- Ongoing monitoring of screened customers, on all plans.
+- Built-in reporting support for SAR and CTR reports, per the vendor.
 - The vendor states up to 70% fewer false positives in transaction monitoring (company-reported figure).
 pricing:
   summary: ComplyAdvantage publishes a Starter plan from $99 a month, in Essentials and Agentic versions, for monitoring between 100 and 2,000 entities. Enterprise pricing is on application. Setup takes one business day, plans can be cancelled at any time by email, and ComplyLaunch gives qualifying early-stage startups free access.
@@ -43,7 +43,7 @@ pricing:
     extra: Cancel anytime; set up within 1 business day
   - tier: Enterprise
     price: POA
-    note: Full compliance platform, unlimited usage
+    note: Full compliance platform, unlimited usage; adds transaction monitoring and payment screening
     extra: Contact sales for a quote
   - tier: ComplyLaunch
     price: Free
@@ -74,6 +74,11 @@ pricing:
     verified: '2026-10'
   - label: ComplyLaunch
     value: Free for qualifying early-stage startups
+    kind: official
+    source: 1
+    verified: '2026-10'
+  - label: Transaction monitoring and payment screening
+    value: Enterprise plan only; not listed on Starter
     kind: official
     source: 1
     verified: '2026-10'
@@ -144,13 +149,13 @@ user_reviews:
   - Teams needing full onboarding typically pair it with a document-verification provider like Sumsub or Jumio.
 faq:
 - q: How much does ComplyAdvantage cost?
-  a: The Starter plan starts at $99 a month and covers tiers from 100 to 2,000 monitored entities. Enterprise pricing is on application. Setup takes one business day and you can cancel at any time.
+  a: The Starter plan starts at $99 a month and covers tiers from 100 to 2,000 monitored entities. Enterprise pricing is on application, and transaction monitoring and payment screening are listed only on Enterprise. Setup takes one business day and you can cancel at any time.
 - q: Does ComplyAdvantage verify identity documents?
   a: No. ComplyAdvantage is an AML screening and financial-crime data platform. It does not perform document or biometric identity verification and is typically used alongside a separate IDV provider.
 - q: Is there a free option for startups?
   a: Yes. ComplyLaunch gives qualifying early-stage startups free access to ComplyAdvantage's AML tools.
 - q: Does ComplyAdvantage do transaction monitoring?
-  a: Yes. Real-time transaction monitoring and payment screening are part of the Mesh platform, alongside sanctions, PEP and adverse-media screening.
+  a: Yes, on the Enterprise plan. The pricing page lists real-time transaction monitoring and payment screening only under Enterprise. The Starter plan covers sanctions, PEP and adverse-media screening, company screening and ongoing monitoring, but not transaction monitoring.
 - q: What is the best alternative to ComplyAdvantage?
   a: Sumsub is the best alternative if you want identity verification and AML screening bundled into one platform. SEON is the closest fit if pre-KYC device and fraud signals matter more than sanctions/PEP data depth.
 - q: Who are ComplyAdvantage's main competitors?
@@ -198,7 +203,7 @@ certifications:
 user_ratings:
 - platform: G2
   rating: 4.3
-  count: 101
+  count: 107
   checked: '2026-10'
   url: https://www.g2.com/products/complyadvantage/reviews
 use_case_verdicts: []
@@ -247,15 +252,9 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- '"1,000+ enterprise clients" not found on any current vendor page; older vendor boilerplate said 500+ clients in 75 countries (Business Wire, Mar 2020). Clients set to Not publicly disclosed.'
-- '"Previously known as Mimiro" not confirmed: Index Ventures (Jan 2019) uses Mimiro as a product name, not a former company name. Removed.'
-- 'EU AI Act and DORA alignment claim not found on the homepage or transaction monitoring page. Removed.'
-- 'The ~$119/month "Growth" tier is not on the pricing page; the page shows only Starter (from $99) and Enterprise (POA). Removed. Old $99.99 corrected to $99.'
-- 'Transaction monitoring page gives two false-positive figures (up to 70% in meta description, up to 82% in body). We cite the lower 70% figure as a vendor claim.'
-- 'ISO/IEC 27001 (BSI, 18 Sep 2021) and SOC 2 Type 2 are supplier-declared on the G-Cloud listing; the security page could not be loaded and no BSI certificate was opened.'
-- 'G2 rating visible (4.3, 101 reviews); review text not read in full, so user themes are kept as general statements without counts.'
-- 'Leadership facts on the about page (Delingpole as Executive Chairman) and the 2022 CEO change (Finance Magnates, source 7) agree.'
-- '2026-10-22 capabilities pass: pricing page lists transaction monitoring and payments screening only under Enterprise, not Starter; the FAQ and features describe them as part of Mesh without that limit. Not edited.'
+- 'Transaction monitoring page gives several false-positive figures (up to 70% in the meta description, up to 82% in the body, 65 to 85% of false positives auto-remediated). We cite the lower 70% figure as a vendor claim.'
+- 'ISO/IEC 27001 (BSI, 18 Sep 2021) and SOC 2 Type 2 are supplier-declared on the G-Cloud listing only. On 2026-10-22 the security page returned an error, trust.complyadvantage.com blocks automated access, and no BSI certificate or directory entry was found. Status stays vendor_stated.'
+- 'G2 rating visible (4.3, 107 reviews on 2026-10-22); review text and pros/cons themes not visible, so user themes are kept as general statements without counts.'
 application_category: AML Software
 author: andrii-klymenko
 legacy_reviewer:

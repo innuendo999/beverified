@@ -22,17 +22,17 @@ link:
   url: https://www.kychub.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: KYC Hub's OpsFlow builder lets compliance teams configure onboarding, monitoring, and escalation without code, unifying identity, screening, and transaction monitoring in one platform rather than stitching together point solutions. Pricing is modular, with three quote-based tiers set by volume and modules, but no rates are published and quotes follow a demo and pilot.
 what_is:
 - KYC Hub is a financial-crime compliance platform co-founded by Jay Rao and Farnoush Mirmoeini. It is operated by MerlinAI Labs Pvt Ltd, which KYC Hub says is headquartered in Bangalore, India, with a European HQ in London and an APAC hub in Singapore. It serves banks, fintechs, lenders, and crypto businesses through OpsFlow, a no-code orchestration builder covering onboarding, screening, monitoring, and case escalation in one platform.
 features:
 - 'OpsFlow: no-code builder for onboarding, monitoring and escalation workflows, with 100+ templates.'
-- KYC, KYB, and AML screening in one platform, with verification in 190+ countries and 3,000+ document types.
-- Real-time AML rules and anomaly detection for transaction monitoring.
+- KYC and sanctions, PEP and watchlist screening on every tier, with verification in 190+ countries and 3,000+ document types; KYB with UBO discovery is Enterprise only.
+- Real-time AML rules and anomaly detection for transaction monitoring, from the Growth tier.
 - 200+ data integrations through one API and GraphIntel, a knowledge graph of high-risk entities.
-- Case management with data-residency options.
+- Case management; region-specific data residency is an Enterprise-tier option.
 - ISO 27001 certified and GDPR compliant, per the vendor; identity verification in under five seconds, per the vendor.
 pricing:
   summary: KYC Hub does not publish rates. Its pricing page lists three quote-based tiers (Starter Compliance, Growth and Enterprise) set by a monthly commitment based on expected volume and the modules used. Quotes follow a guided demo and a pilot; there is no self-serve trial.
@@ -59,6 +59,16 @@ pricing:
     verified: '2026-10'
   - label: Billing basis
     value: Monthly commitment by volume and modules
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: Transaction monitoring and adverse media
+    value: Growth tier and above
+    kind: official
+    source: 2
+    verified: '2026-10'
+  - label: KYB and region-specific data residency
+    value: Enterprise tier only
     kind: official
     source: 2
     verified: '2026-10'
@@ -92,7 +102,7 @@ facts:
   source: 3
   evidence: vendor
 pros:
-- Full financial-crime lifecycle (identity, screening, monitoring, case management) in one no-code platform
+- Full financial-crime lifecycle (identity, screening, monitoring, case management) in one no-code platform, with monitoring from the Growth tier
 - 'Fast configuration: 100+ templates to ship flows in hours, per the vendor'
 - Modular pricing that lets you change tiers or add and remove modules at any time
 cons:
@@ -130,7 +140,7 @@ faq:
 - q: What is OpsFlow?
   a: OpsFlow is KYC Hub's no-code builder for configuring onboarding, monitoring, and escalation workflows without engineering support.
 - q: Does KYC Hub cover the full compliance lifecycle?
-  a: Yes. KYC Hub unifies identity verification, KYB, AML screening, transaction monitoring, and case management in one platform.
+  a: Yes, but not on every tier. Its pricing page includes identity verification and sanctions, PEP and watchlist screening from Starter Compliance, adds transaction monitoring and adverse media from Growth, and keeps KYB and region-specific data residency for Enterprise. The pricing FAQ describes adverse media as part of AML screening without naming a tier, so confirm module scope in the quote.
 - q: How fast is KYC Hub verification?
   a: KYC Hub says identity verification at account opening takes under five seconds.
 - q: What is the best alternative to KYC Hub?
@@ -221,15 +231,12 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- 'HQ: old page said London with US, India and Singapore offices. KYC Hub about page says operator MerlinAI Labs Pvt Ltd is headquartered in Bangalore, with London as European HQ and Singapore as APAC hub; no US office named. Privacy policy also names Obsessory Online Services Pvt. Ltd. at a Bangalore address; relationship between the two entities not confirmed.'
-- 'Founded: old page said 2018; Startups.co.uk Startups 100 2023 profile says 2017. Vendor pages give no year. No registry record found.'
-- 'Employees: old page said roughly 102; no source found, removed.'
-- 'Pricing: old page said transparent pay-as-you-go tiers. Pricing page now shows three custom tiers on a monthly commitment; pay-as-you-go not mentioned.'
-- 'ISO 27001: vendor badge and FAQ only; no certifying body, scope or certificate found. SOC 2 described as "aligned" only.'
-- 'Old cons about dashboard performance at large-bank scale and BI exports were attributed to reviews; G2 shows 4 reviews (4.0) with themes not visible and Capterra UK 0 reviews. Replaced.'
-- 'Go-live "weeks rather than months": OpsFlow page says configuration time drops "from weeks to hours"; rewritten.'
-- 'Homepage stats block renders placeholders (0+ countries, <0s, 0%); counts taken from other homepage sections.'
-- '2026-10-22 capabilities pass: the pricing page puts transaction monitoring and adverse media in Growth and above, KYB and data residency in Enterprise only. The FAQ answer on the full lifecycle and the data-residency feature line do not mention tiers. The pricing FAQ also says AML screening includes adverse media, which conflicts with its own tier list. Not changed.'
+- 'HQ: about page (2026-10-22) says operator MerlinAI Labs Pvt Ltd is headquartered in Bangalore, with London as European HQ and Singapore as APAC hub; no US office named. The privacy policy names only Obsessory Online Services Pvt. Ltd. (KYC Hub) at an HSR Layout, Bangalore address. No registry record found for either entity; relationship not confirmed.'
+- 'Founded: Startups.co.uk Startups 100 2023 profile says 2017 (old page said 2018). Vendor pages give no year; no Indian or UK registry record found. Kept as 2017 from the third-party profile.'
+- 'ISO 27001: vendor badge, about page and FAQ only; no certifying body, scope or certificate found. SOC 2 described as "aligned" only.'
+- 'Pricing FAQ says AML screening includes adverse media in 100+ languages, while the tier list puts adverse media in Growth and above. Record follows the tier list.'
+- 'G2 shows 4 reviews (4.0) on 2026-10-22 with themes not visible; Capterra UK shows 0 reviews. No user themes added.'
+- 'Go-live: pricing FAQ says typically weeks; OpsFlow page says configuration drops "from weeks to hours" and flows ship in hours from templates. The pro refers to flow configuration only.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
