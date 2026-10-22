@@ -29,3 +29,24 @@
 
 ## Score flag
 - Possible change of ownership: NICE is selling Actimize and Brookfield is in exclusive talks (Sep 2026). Products are not retired and no deal is signed. The "public-company backing" rationale in the old pros no longer holds as stated. Flag for editorial review; score unchanged.
+
+## Follow-up 2026-10-22
+
+### Changed
+- Ownership: no deal announced. NiCE press releases for August to October 2026 contain no Actimize sale or Brookfield announcement (source 20), the Q2 2026 results release does not mention Actimize, and the latest news found is still the 23 Sep 2026 report of exclusive talks (source 6). Verdict, what_is and FAQ now say no deal had been announced as of 22 October 2026; new fact "Sale announcement: None in NiCE press releases as of 22 Oct 2026" (source 20). Tagline and SEO description still accurate; unchanged.
+- DNB: earlier pass removed it as unconfirmed → confirmed; DNB Norway selected X-Sight Enterprise (with SAM and Integrated Fraud Management), 2 Jun 2026 (source 21). Added to named clients in what_is. Same release confirms "over 1,000 organizations across more than 70 countries" and the Hoboken dateline.
+- Certifications: [] → ISO/IEC 27001 and SOC 2 Type II, vendor_stated, scoped to the Actimize Insights Network product only (source 22).
+- User ratings added: G2 4.1 from 25 reviews (listing titled NICE Actimize Xceed, source 23); Capterra 3.8 from 5 reviews (Actimize Platform, source 24).
+- Capabilities block agrees with features and FAQ; no capability looks wrong.
+- last_verified and updated → 2026-10-22.
+
+### Removed / unverifiable
+- Resolved notes removed: DNB client, "no certifications published", "no G2 page could be opened".
+- Still open: ownership (pending sale); HQ Hoboken from datelines only (contact page did not open, no registry checked); certification scope limited to one product, no certificate opened.
+- Praise/criticize themes kept as general statements; visible Capterra reviews (2016 to 2020) mention a steep learning curve but not deployment effort.
+
+### Ranking cards
+- `aml/banks` (Best End-to-End Financial-Crime Suite): no line is wrong. Con "Ownership in flux while NICE explores a sale of the unit" is still accurate. Optional sharper wording: "Ownership in flux: Brookfield reported in exclusive talks to buy the unit (Sep 2026), no deal announced".
+
+### Score flag
+- None new. Sale not announced or completed; products unchanged.
