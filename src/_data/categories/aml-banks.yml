@@ -2,12 +2,12 @@ slug: aml/banks
 url: /providers/aml/banks/
 seo:
   title: Best AML Software for Banks in 2026 | BeVerified
-  description: 'ComplyAdvantage, NICE Actimize, Feedzai, and SAS Anti-Money Laundering compared: the best AML software for banks in 2026, ranked on monitoring throughput, explainability, and rail coverage.'
+  description: ComplyAdvantage, NICE Actimize and Feedzai lead our 2026 ranking of AML software for banks. Compare sanctions screening, transaction monitoring, case management and deployment, with a source for each claim.
   h1: Best AML Software for Banks in 2026
 breadcrumb_label: Best AML Software for Banks
-quick_answer: 'ComplyAdvantage ranks first, pairing its own financial-crime database with real-time transaction monitoring and payment screening. NICE Actimize is second, with one of the broadest financial-crime suites and, by its own count, more than 1,000 organizations in over 70 countries using it; NICE is exploring a sale of the unit. Feedzai is built for very large volumes, securing about $9 trillion in payments a year by its own figures. We compared 4 providers on monitoring throughput, explainability, and rail coverage below.'
+quick_answer: ComplyAdvantage ranks first for banks that want sanctions screening and transaction monitoring on its own risk data; monitoring and payment screening are on its Enterprise plan. NICE Actimize is the broadest end-to-end financial-crime suite in the list and can run in the cloud or on premises. Feedzai is built for very high payment volumes. The ranking below also covers Hawk AI, Unit21, Quantexa and Napier and compares screening, monitoring, case management and deployment for each.
 last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+updated: '2026-10-22'
 legacy_stats:
 - value: '4'
   label: providers compared
@@ -16,56 +16,53 @@ legacy_stats:
 - value: Jul 2026
   label: last updated
 explainer_html:
-- '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
+- '<h2>What banks need from AML software</h2>
 
-  <h2 style="font-size:19px;margin-bottom:10px;">What AML for banks requires at Tier-1 scale</h2>
+  <p>Banks run AML at a volume and under a level of supervision that most fintech tools are not built for. The usual shortlist questions are: can it monitor transactions in real time across all payment channels, can it screen payments and customers against sanctions lists without flooding analysts with alerts, can investigators work cases and file suspicious activity reports in one place, and can the bank explain to an examiner why a model raised or cleared an alert.</p>
 
-  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">AML software built for banks has to screen and monitor transactions in real time across millions of daily events, explain every alert to an examiner on demand, and plug into decades-old core banking rails. A mid-market AML tool rarely has to meet those requirements.</p>
+  <p>Deployment matters more here than in most categories. In the capabilities table, check the deployment column if your data must stay on your own infrastructure, and check the half-filled dots: some features sit in a separate module or a higher plan.</p>
 
-  <h3 style="font-size:14.5px;margin-bottom:10px;">Core capabilities compliance teams typically require</h3>
+  <h2>Model governance and explainability</h2>
 
-  <ul style="margin:0 0 18px;padding-left:20px;font-size:14.5px;line-height:1.75;">
+  <p>Machine-learning monitoring models are models in the supervisory sense. In the US, the Federal Reserve and OCC guidance <a href="https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm" rel="noopener">SR 11-7 on model risk management</a> sets the expectation that banks validate and document the models they rely on, and examiners use the <a href="https://bsaaml.ffiec.gov/manual" rel="noopener">FFIEC BSA/AML Examination Manual</a> when they review a bank''s monitoring program. Ask each vendor what documentation and alert-level explanations it provides for validation.</p>
 
-  <li style="list-style:disc;">Real-time transaction monitoring at high throughput without added latency</li>
+  <h2>Regulatory context</h2>
 
-  <li style="list-style:disc;">Model governance and AI explainability for every generated alert</li>
+  <ul>
 
-  <li style="list-style:disc;">Native integration with SWIFT, SEPA, FedNow, and RTP payment rails</li>
+  <li>EU: the Anti-Money Laundering Regulation, <a href="https://eur-lex.europa.eu/eli/reg/2024/1624/oj" rel="noopener">Regulation (EU) 2024/1624</a>, applies from 10 July 2027, and the <a href="https://www.amla.europa.eu/" rel="noopener">EU Anti-Money Laundering Authority (AMLA)</a> is due to supervise up to 40 high-risk financial institutions directly from 2028 (<a href="https://www.aoshearman.com/en/insights/amlctf-playbook-eu-edition-2-the-eu-antimoney-laundering-authority" rel="noopener">A&amp;O Shearman summary</a>).</li>
 
-  <li style="list-style:disc;">Audit-ready case management built for examiner review</li>
+  <li>US: the Bank Secrecy Act requires banks to file suspicious activity reports with FinCEN; examiners assess programs against the FFIEC manual.</li>
+
+  <li>UK: the <a href="https://www.legislation.gov.uk/uksi/2017/692/contents" rel="noopener">Money Laundering Regulations 2017</a> apply, and the <a href="https://www.jmlsg.org.uk/guidance/current-guidance/" rel="noopener">JMLSG guidance</a> sets out how banks are expected to meet them.</li>
 
   </ul>
 
-  <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from AML software generally</h3>
-
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Tier-1 banks need scale and governance that most vendors serving mid-market fintechs don''t build for. <a href="/providers/aml/">General AML software</a> covers a broader range of company sizes; this list narrows to platforms proven at bank-grade transaction volume.</p>
-
-  <h3 style="font-size:14.5px;margin-bottom:8px;">Regulatory context</h3>
-
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Key references: the EU''s AMLA (Anti-Money Laundering Authority), U.S. FinCEN Notices of Proposed Rulemaking (NPRMs), and the payment rails (SWIFT, SEPA, FedNow, RTP) that monitoring systems must ingest directly.</p>
-
-  <a class="entity-card__cta" href="/methodology/">See how we evaluate every provider on this list in our full methodology →</a>
-
-  </section>'
+  <p>For AML tools across all company sizes, see the <a href="/providers/aml/">main AML software ranking</a>. <a href="/methodology/">How we evaluate every provider on this list →</a></p>'
 faq:
-- q: How is AML for banks different from AML software in general?
-  a: Bank-grade AML software has to run real-time transaction monitoring across millions of daily events, explain every alert to an examiner, and integrate with decades-old core banking systems. Most mid-market AML tools aren't built for that.
-- q: What is AI explainability in AML monitoring?
-  a: Explainability means the system can show a regulator or auditor exactly why a transaction triggered an alert. It's a growing requirement as banks adopt machine-learning-based monitoring models.
-- q: What payment rails does bank AML software need to monitor?
-  a: Most Tier-1 deployments need coverage across SWIFT for cross-border wire transfers, SEPA for euro-area payments, and real-time domestic rails like FedNow and RTP in the US.
-- q: What is the EU's AMLA?
-  a: The Anti-Money Laundering Authority (AMLA) is the EU's new central supervisor for AML, tasked with direct oversight of the highest-risk financial institutions and coordination across national regulators.
-- q: Why does FinCEN issue NPRMs?
-  a: FinCEN issues Notices of Proposed Rulemaking (NPRMs) to propose changes to US AML regulations before they take effect, and banks' monitoring programs typically need to adapt as these rules are finalized.
-- q: How long does it take to deploy AML software at a bank?
-  a: Enterprise AML deployments integrated with core banking systems commonly take several months to a year, driven mostly by data-mapping and model-tuning work rather than the software itself.
+- q: How is AML software for banks different from AML software in general?
+  a: Bank deployments need real-time monitoring across all payment channels, sanctions screening on payments as well as customers, case management for investigators, and model documentation an examiner can review. Several tools built for fintechs cover part of this; the providers in this ranking are built for regulated financial institutions.
+- q: Which of these AML platforms can run on premises?
+  a: NICE Actimize, Quantexa and Napier offer cloud and on-premises deployment, per their own pages. Feedzai, Hawk AI and ComplyAdvantage are cloud services, and Unit21 does not say.
+- q: Do these platforms include sanctions screening?
+  a: ComplyAdvantage, NICE Actimize, Feedzai, Hawk AI, Unit21 and Napier include sanctions and PEP screening. Quantexa uses sanctions and adverse-media data inside its entity-resolution platform, but we found no separate screening product on its pages.
+- q: What is model explainability in AML monitoring?
+  a: Explainability means the bank can show why a model raised or cleared an alert. In the US, SR 11-7 expects banks to validate and document the models they use, so examiners may ask for this evidence during a BSA/AML review.
+- q: When does the EU AMLA start supervising banks?
+  a: The EU Anti-Money Laundering Authority is due to begin direct supervision of up to 40 high-risk financial institutions in 2028, after a selection process in the second half of 2027. The new EU Anti-Money Laundering Regulation applies from 10 July 2027.
 adjacent:
 - aml
 - kyb
 - cheap-kyc
 - travel-rule
-capability_columns: []
+capability_columns:
+- sanctions_pep
+- adverse_media
+- transaction_monitoring
+- case_management
+- identity_verification
+- deployment
+- published_pricing
 faq_templates: []
 legacy_issues: []
 author: andrii-klymenko
