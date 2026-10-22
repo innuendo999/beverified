@@ -22,8 +22,8 @@ link:
   url: https://www.quantexa.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-10-22'
+updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
 verdict: 'Quantexa''s foundation is entity resolution: stitching fragmented, siloed data into a single graph network to surface hidden relationships. Its AML, fraud and KYC applications build on that rather than on transaction-monitoring rules alone. Valued at about $2.6B after its March 2025 Series F and naming HSBC, Standard Chartered and ING among its users, it is built mainly for enterprise scale, though a separate Cloud AML product now targets US mid-size and community banks.'
 what_is:
 - Quantexa is a decision-intelligence software company founded in 2016 and headquartered in London, UK, led by co-founder and CEO Vishal Marria. It reports more than 900 employees, 17 offices and activity in 100 countries, and was valued at about $2.6 billion when it raised a $175 million Series F in March 2025. Its Decision Intelligence Platform resolves fragmented data into unified entities and network graphs to power AML, fraud detection, and KYC applications for banks, insurers, telecoms and government agencies. In August 2026 Marria told Reuters the company could list in the UK, the US or both, with no timing set.
@@ -165,7 +165,7 @@ certifications:
   status: vendor_stated
   source: 3
 - name: SOC 2
-  what: Security controls audit (type not stated)
+  what: Security controls audit (Type 1 reports per Trust Center updates)
   status: vendor_stated
   source: 3
 - name: Cyber Essentials Plus
@@ -180,7 +180,12 @@ certifications:
   what: UK health data security
   status: vendor_stated
   source: 3
-user_ratings: []
+user_ratings:
+- platform: Gartner Peer Insights
+  rating: 4.4
+  count: 25
+  checked: '2026-10'
+  url: https://www.gartner.com/reviews/product/quantexa-decision-intelligence-platform
 use_case_verdicts: []
 score_breakdown: []
 hands_on: null
@@ -225,6 +230,18 @@ sources:
   publisher: Quantexa
   url: https://www.quantexa.com/solutions/financial-crime/
   accessed: '2026-10'
+- title: Vishal Marria, Founder and Chief Executive Officer
+  publisher: Quantexa
+  url: https://www.quantexa.com/team/vishal-marria/
+  accessed: '2026-10'
+- title: Quantexa Decision Intelligence Platform reviews
+  publisher: Gartner Peer Insights
+  url: https://www.gartner.com/reviews/product/quantexa-decision-intelligence-platform
+  accessed: '2026-10'
+- title: Holistic sanctions risk management
+  publisher: Quantexa
+  url: https://www.quantexa.com/discover/sanctions
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -235,10 +252,10 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- G2 shows no reviews for Quantexa (source 6), so the old review themes attributed to G2 and Capterra could not have come from G2; praise and criticize removed. Gartner Peer Insights not opened.
-- Certifications are vendor-stated only (Trust Center); no certification-body register opened. SOC 2 type not stated; Trust Center updates mention Type 1 reports.
-- CEO and co-founder role for Vishal Marria from Wikipedia and Reuters (sources 4, 5); about page names him as the person who founded the company in 2016.
-- IPO plans and possible Warburg Pincus stake sale (Aug 2026) are early stage; re-check before next release.
+- G2 still shows no reviews for Quantexa (source 6, checked 2026-10-22), so the old review themes attributed to G2 and Capterra could not have come from G2; praise and criticize stay removed. Gartner Peer Insights rating added (source 12). No Capterra listing was checked.
+- Certifications are vendor-stated only (Trust Center, source 3); no certification-body register was opened. The Trust Center names BSI as the ISO certification body and says certificates will be uploaded once issued; the business continuity item is an external attestation said to reflect alignment with ISO 22301, not a certificate. SOC 2 reports listed are Type 1 (2025 and 2026); no Type 2 report is listed.
+- 'IPO and investor sale are still early stage: Reuters (19 August 2026, source 4) says no listing date is set and that Warburg Pincus (9% to 10%) is exploring a possible stake sale, with an auction expected later in 2026. No later report was found as of 2026-10-22; re-check before the next release.'
+- 'Sanctions capability may need review: Quantexa has a "Holistic sanctions risk management" page (source 13) that adds network context to sanctions screening, finds direct and indirect links to sanctioned parties and claims fewer false positives. It does not describe list matching itself, and Cloud AML (source 8) lists sanctions only as third-party input data. Editor to decide whether sanctions_pep should stay not_disclosed or move to add_on. Adverse media: nothing found.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
