@@ -16,50 +16,81 @@ legacy_stats:
 - value: Jul 2026
   label: last updated
 explainer_html:
-- '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
+- '<h2>What eKYC is</h2>
 
-  <h2 style="font-size:19px;margin-bottom:10px;">What eKYC verifies</h2>
+  <p>eKYC (electronic know your customer) is remote customer onboarding that meets anti-money laundering rules. A bank, payment firm or other regulated business identifies a new customer and verifies their identity online instead of in a branch. The usual methods are an ID document scan with a selfie and liveness check, a read of the document''s NFC chip, a national or bank eID, or a video call with a trained agent. Which of these a firm may rely on depends on its country and its regulator.</p>
 
-  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">Electronic KYC confirms that the person opening an account is who they claim to be, using a government-issued document and a live selfie, before any money moves. In the EU, the legal basis usually traces back to eIDAS, the electronic-identification regulation; most eKYC vendors read a document''s MRZ line or NFC chip and match it against a biometric selfie in under a minute.</p>
+  <h2>EU rules on remote customer due diligence</h2>
 
-  <h3 style="font-size:14.5px;margin-bottom:10px;">Core capabilities compliance teams typically require</h3>
+  <ul>
 
-  <ul style="margin:0 0 18px;padding-left:20px;font-size:14.5px;line-height:1.75;">
+  <li>Today, Article 13(1)(a) of the EU AML Directive, as amended by <a href="https://eur-lex.europa.eu/eli/dir/2018/843/oj" rel="noopener">Directive (EU) 2018/843</a>, lets firms verify identity with electronic identification means, eIDAS trust services or any other secure remote process that national authorities regulate, recognise, approve or accept. The <a href="https://www.eba.europa.eu/node/166" rel="noopener">EBA Guidelines on remote customer onboarding</a> (EBA/GL/2022/15) have applied since 2 October 2023 (<a href="https://finanssivalvonta.fi/en/publications-and-press-releases/supervision-releases/2023/european-banking-authority-eba-guidelines-on-the-use-of-remote-customer-onboarding-solutions--application-begins-on-2-october-2023" rel="noopener">FIN-FSA notice</a>).</li>
 
-  <li style="list-style:disc;">Optical and NFC-chip document reading across 190+ country formats</li>
-
-  <li style="list-style:disc;">Liveness-checked selfie match against the document photo</li>
-
-  <li style="list-style:disc;">Sub-60-second decisioning for straight-through onboarding</li>
-
-  <li style="list-style:disc;">Audit trail meeting AMLD6 customer due diligence requirements</li>
+  <li>From 10 July 2027, customer due diligence rules move into the Anti-Money Laundering Regulation, <a href="https://eur-lex.europa.eu/eli/reg/2024/1624/oj" rel="noopener">Regulation (EU) 2024/1624</a>, which applies directly in every member state. Its Article 22(6) covers identification through eIDAS electronic identification means and qualified trust services. On 1 October 2026 the <a href="https://www.amla.europa.eu/press-release-amla-finalises-key-standards-private-sector_en" rel="noopener">EU Anti-Money Laundering Authority</a> sent the Commission its final draft standards on customer due diligence, which cover non-face-to-face verification and electronic identification.</li>
 
   </ul>
 
-  <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from identity verification</h3>
+  <h2>eIDs and the EU Digital Identity Wallet</h2>
 
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">eKYC is the one-time gate at account opening. Broader <a href="/providers/identity-verification/">identity verification</a> tools keep checking a user''s identity at login, high-risk transactions and password resets, often with the same biometric engine.</p>
+  <p>eIDAS, <a href="https://eur-lex.europa.eu/eli/reg/2014/910/oj" rel="noopener">Regulation (EU) No 910/2014</a>, sets the EU rules for electronic identification and trust services. Its amendment, <a href="https://eur-lex.europa.eu/eli/reg/2024/1183/oj" rel="noopener">Regulation (EU) 2024/1183</a> (eIDAS 2, in force since 20 May 2024), requires each member state to provide at least one EU Digital Identity Wallet within 24 months of the implementing acts. The <a href="https://commission.europa.eu/topics/digital-economy-and-society/european-digital-identity_en" rel="noopener">European Commission</a> says wallets will be available to every citizen, resident and business by the end of 2026. Private services that must use strong user authentication, such as banks, have to accept the wallet no later than 36 months after the implementing acts (Article 5f(2)). Many markets already onboard with bank and national eIDs, such as BankID, MitID and Smart-ID in the Nordics and Baltics.</p>
 
-  <h3 style="font-size:14.5px;margin-bottom:8px;">Regulatory context</h3>
+  <h2>Video identification and NFC chip reading</h2>
 
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Key references for this category: eIDAS (EU electronic identification), AMLD6 customer due diligence obligations, and the document-authenticity standards border-control agencies use to validate MRZ and chip data.</p>
+  <ul>
 
-  <a class="entity-card__cta" href="/methodology/">See how we evaluate every provider on this list in our full methodology →</a>
+  <li>Germany: <a href="https://www.bafin.de/ref/19621456" rel="noopener">BaFin Circular 3/2017 (GW)</a> sets the conditions for agent-led video identification under the German Money Laundering Act.</li>
 
-  </section>'
+  <li>India: the Reserve Bank of India''s <a href="https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=13141" rel="noopener">Know Your Customer Directions, 2025</a> for commercial banks allow V-CIP, a live, consent-based audio-visual interaction run by specially trained bank officials, with face liveness or spoof detection and GPS geo-tagging of the customer.</li>
+
+  <li>NFC: ePassports carry a chip specified in <a href="https://www.icao.int/publications/pages/publication.aspx?docnum=9303" rel="noopener">ICAO Doc 9303</a>. Reading it lets the app check the issuing state''s signature on the stored data (passive authentication), which a photo of the document cannot prove.</li>
+
+  </ul>
+
+  <h2>eKYC and identity verification</h2>
+
+  <p>eKYC is the onboarding check a regulated firm runs to meet customer due diligence rules. <a href="/providers/identity-verification/">Identity verification</a> is the wider use of the same document and face checks at login, account recovery and other moments after onboarding, including in businesses with no AML duty. For eKYC, compare what your regulators accept: eIDs, video ident and NFC. For checks after onboarding, compare liveness testing and reuse.</p>
+
+  <p><a href="/methodology/">How we evaluate every provider on this list →</a></p>'
 faq:
-- q: What is eKYC?
-  a: Electronic KYC (eKYC) is the digital process of verifying a new customer's identity using a government-issued document and a live selfie, typically completed in under a minute during account opening.
-- q: What documents does eKYC accept?
-  a: Most eKYC platforms read passports, national ID cards, and driver's licenses, using either optical character recognition on the printed data or the document's NFC chip where one is present.
-- q: How long does eKYC onboarding take?
-  a: Straight-through eKYC decisions typically complete in under 60 seconds. Cases flagged for manual review can take longer depending on the provider's escalation process.
-- q: Is eKYC the same as KYC?
-  a: eKYC is the electronic, remote version of traditional KYC. Where paper-based KYC required an in-person document check, eKYC verifies the same information through a phone or webcam.
-- q: Does eKYC replace AML screening?
-  a: No. eKYC confirms who someone is; AML software separately screens that person against sanctions, PEP, and adverse-media lists. Most compliance programs run both.
-- q: What happens if a document fails an eKYC check?
-  a: Failed or low-confidence checks are usually routed to a human reviewer rather than rejected outright, since glare, damaged IDs, or poor lighting can cause false rejections.
+- q: 'What is eKYC?'
+  a: 'eKYC (electronic know your customer) is remote onboarding that meets anti-money laundering rules: a regulated firm verifies a new customer''s identity online with an ID document and selfie, an eID, an NFC chip read or a video call. Which methods count depends on the country and the regulator.'
+- q: 'What is the difference between eKYC and KYC?'
+  a: 'eKYC is KYC done remotely with digital checks instead of a document seen in person. The legal duty is the same: identify the customer, verify their identity from a reliable source and keep records. Only the method of collecting and checking the evidence changes.'
+- q: 'Is video identification required for eKYC?'
+  a: 'No EU-wide rule requires video identification. EU AML law accepts electronic identification means, eIDAS trust services and other secure remote processes that national authorities accept, and video ident is one such process in some countries. Germany sets its conditions in BaFin Circular 3/2017 (GW), and India''s RBI treats V-CIP as an alternative method. On this page, IDnow, Signicat and Signzy include live-agent video; Sumsub, KYCAID and Jumio sell it as an add-on.'
+- q: 'Which eKYC providers support NFC chip reading?'
+  a: 'Sumsub, Veriff, Onfido, Jumio and Fourthline read ePassport or eID chips in their core product; Sumsub and Veriff enable it on request. Signicat (ReadID), IDnow and Verified offer it as a separate module or product. We found no NFC chip reading for KYCAID or Signzy.'
+- q: 'What documents does eKYC accept?'
+  a: 'Passports, national ID cards and driving licences are the usual documents, read from the printed page and machine-readable zone or from the chip where there is one. National rules decide which documents count for AML purposes, and some regulators also accept national or bank eIDs instead of a document.'
+- q: 'Does eKYC replace AML screening?'
+  a: 'No. eKYC confirms who someone is; AML screening separately checks that person against sanctions, PEP and adverse-media lists. Most compliance programs run both, and several providers on this page sell them in one flow.'
+- q: 'What changes for eKYC under the EU AMLR in 2027?'
+  a: 'From 10 July 2027, EU customer due diligence rules come from the Anti-Money Laundering Regulation, Regulation (EU) 2024/1624, which applies directly in every member state. On 1 October 2026 AMLA sent the Commission its final draft standards on customer due diligence, covering non-face-to-face verification and electronic identification; they still need Commission adoption.'
+- q: 'Can banks use the EU Digital Identity Wallet for eKYC?'
+  a: 'Not everywhere yet. eIDAS 2 requires each member state to offer at least one wallet within 24 months of the implementing acts, and the Commission says wallets will be available by the end of 2026. Banks and other services that must use strong user authentication have to accept it within 36 months of those acts.'
+segments_heading: 'Best pick by use case'
+segments:
+- segment: 'German and DACH banks (video ident)'
+  slug: idnow
+  reason: 'IDnow''s agent-led VideoIdent is built for BaFin Circular 3/2017 and Austrian FMA rules, with qualified e-signatures from its own trust service.'
+- segment: 'Pan-European onboarding with eIDs'
+  slug: signicat
+  reason: 'Signicat offers 35+ mostly European eID methods and wallets, live-agent VideoID and e-signing as an EU qualified trust service provider.'
+- segment: 'Nordic businesses (BankID, MitID)'
+  slug: verified
+  reason: 'Verified integrates Nordic and Baltic eIDs such as BankID, MitID and Smart-ID, and screens every customer daily against PEP, sanctions and adverse-media lists.'
+- segment: 'UK regulated firms (DIATF)'
+  slug: onfido
+  reason: 'Onfido is certified by Kantara under the UK digital verification services trust framework until March 2029, with automated document, NFC and selfie checks.'
+- segment: 'Indian BFSI (V-CIP)'
+  slug: signzy
+  reason: 'Signzy offers RBI-compliant V-CIP video verification with face match against PAN and Aadhaar, plus CKYC search and upload, in a no-code journey builder.'
+- segment: 'EU neobanks'
+  slug: fourthline
+  reason: 'Fourthline''s clients include Revolut, N26, Trade Republic and Qonto, and one platform covers NFC onboarding, AML screening and re-KYC.'
+- segment: 'SMEs that want published per-check prices'
+  slug: kycaid
+  reason: 'KYCAID publishes per-check prices in euros, from €0.75 for a document and face bundle, with government database checks priced by country.'
 adjacent:
 - identity-verification
 - kyb
