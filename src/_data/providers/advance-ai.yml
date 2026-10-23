@@ -127,7 +127,19 @@ faq:
 - q: Who are Advance.AI's main competitors?
   a: Advance.AI competes with IDMERIT, Trulioo, and Shufti Pro, differentiating through its Southeast Asia/APAC emerging-market focus.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  nfc:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  video_ident:
+    status: 'yes'
+    note: video calls with human operator review
+    source: 10
+  published_pricing:
+    status: 'no'
+    note: billing models only, quote on request
+    source: 3
 certifications:
 - name: ISO/IEC 27001:2013
   what: Information security (obtained Feb 2020, Indonesia)
@@ -177,6 +189,10 @@ sources:
 - title: Warburg-Backed Advance Intelligence Raises $80 Million Funding
   publisher: Bloomberg
   url: https://www.bloomberg.com/news/articles/2023-05-03/warburg-backed-advance-intelligence-raises-80-million-funding
+  accessed: '2026-10'
+- title: AI Video Identification
+  publisher: ADVANCE.AI
+  url: https://www.advance.ai/en/index/pageview/catid/58.html
   accessed: '2026-10'
 entity:
   wikidata: null

@@ -126,7 +126,20 @@ faq:
 - q: Who are IDnow's main competitors?
   a: IDnow competes with Signicat, Onfido, and Sumsub, differentiating through VideoIdent and deep German-market relationships.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  nfc:
+    status: add_on
+    note: Optional AutoIdent module reads passport chips
+    source: 15
+  video_ident:
+    status: 'yes'
+    note: VideoIdent with trained live agent
+    source: 2
+  published_pricing:
+    status: 'no'
+    note: quote on request
+    source: 1
 certifications:
 - name: ISO/IEC 30107 PAD, substantial (LSTI, VideoIdent)
   what: Presentation attack detection
@@ -226,6 +239,10 @@ sources:
 - title: IDnow reviews
   publisher: Capterra UK
   url: https://www.capterra.co.uk/software/196937/idnow
+  accessed: '2026-10'
+- title: AutoIdent developer documentation
+  publisher: IDnow
+  url: https://idnow.io/developers/autoident/
   accessed: '2026-10'
 entity:
   wikidata: null

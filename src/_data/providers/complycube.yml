@@ -179,7 +179,19 @@ faq:
 - q: Who are ComplyCube's main competitors?
   a: ComplyCube competes with Sumsub, Shufti Pro, and Onfido, differentiating through its API-first focus and published pricing.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  nfc:
+    status: add_on
+    note: Growth plan, quoted
+    source: 1
+  video_ident:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  published_pricing:
+    status: partial
+    note: Growth and Enterprise quoted
+    source: 1
 certifications:
 - name: UK DIATF certified identity service
   what: UK digital identity trust framework (Kantara, Mar 2026 to Mar 2029)
