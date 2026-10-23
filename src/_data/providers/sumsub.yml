@@ -251,6 +251,10 @@ certifications:
   what: Authentication assurance, LoA2 and LoA3 (ACCS, valid to Sep 2028)
   status: confirmed
   source: 13
+- name: 'KJM approval (Germany)'
+  what: Age verification system (AVS), announced 2022
+  status: vendor_stated
+  source: 18
 user_ratings:
 - platform: G2
   rating: 4.6
@@ -328,6 +332,10 @@ sources:
 - title: 'Age Estimation'
   publisher: Sumsub
   url: https://docs.sumsub.com/docs/age-estimation
+  accessed: '2026-10'
+- title: 'Sumsub meets legal requirements for age verification, KJM confirms (20 July 2022)'
+  publisher: Sumsub
+  url: https://sumsub.com/newsroom/sumsub-meets-legal-requirements-for-age-verification-kjm-confirms/
   accessed: '2026-10'
 entity:
   wikidata: null

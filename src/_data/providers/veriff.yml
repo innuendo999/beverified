@@ -265,6 +265,10 @@ certifications:
   what: Document checks, Full Auto IDV product
   status: confirmed
   source: 22
+- name: 'KJM approval (Germany)'
+  what: ID and selfie age verification for telemedia, announced 2021
+  status: vendor_stated
+  source: 28
 user_ratings:
 - platform: G2
   rating: 4.5
@@ -397,6 +401,10 @@ sources:
 - title: 'Age Validation'
   publisher: Veriff
   url: https://www.veriff.com/product/age-validation
+  accessed: '2026-10'
+- title: 'KJM approves Veriff age verification in Germany (7 July 2021)'
+  publisher: Veriff
+  url: https://veriff.com/blog/kjm-approves-veriff-age-verification-germany
   accessed: '2026-10'
 entity:
   wikidata: null

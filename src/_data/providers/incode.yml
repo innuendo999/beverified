@@ -196,6 +196,10 @@ certifications:
   what: Age assurance (UK), register entry without listed scope or dates
   status: confirmed
   source: 15
+- name: 'KJM approval (Germany)'
+  what: ID and selfie age check for gambling, announced 2022
+  status: vendor_stated
+  source: 19
 user_ratings:
 - platform: G2
   rating: 5.0
@@ -282,6 +286,10 @@ sources:
 - title: 'Age Assurance'
   publisher: Incode
   url: https://www.incode.com/use-cases/age-assurance
+  accessed: '2026-10'
+- title: 'German Commission for the Protection of Minors in the Media approves Incode Technologies as an age verification system (7 June 2022)'
+  publisher: Business Wire
+  url: https://www.businesswire.com/news/home/20220607006257/en/German-Commission-for-the-Protection-of-Minors-in-the-Media-Approves-Incode-Technologies-as-an-Age-Verification-System-AVS
   accessed: '2026-10'
 entity:
   wikidata: null
