@@ -80,15 +80,17 @@ export default {
             let label = st[1], note = ["add_on", "partial"].includes(status) ? v.note : null;
             if (k === "liveness_pad" && v.level) { label = `Level ${v.level}`; if (status === "vendor_stated") note = "Vendor-stated"; }
             if (k === "trust_framework" && v.names) note = v.names;
+            if (note) note = note.charAt(0).toUpperCase() + note.slice(1);
             return { key: k, status, sym: st[0], label, note, source: v.source || null };
           }),
         }));
       if (!rows.length) return null;
       const checked = rows.map((r) => d.providers[r.slug].capabilities?.checked || d.providers[r.slug].last_verified?.slice(0, 7)).filter(Boolean).sort().pop();
       const legend = certMode
-        ? [["full", "Confirmed: we opened the certificate, register entry or lab letter, or the feature is in the core product"], ["half", "Vendor-stated, or an add-on"], ["empty", "Not offered"], ["unknown", "Not disclosed"]]
+        ? [["full", "Confirmed, or in the core product"], ["half", "Vendor-stated, or add-on"], ["empty", "Not offered"], ["unknown", "Not disclosed"]]
         : [["full", "In the core product"], ["half", "Add-on module or higher plan"], ["empty", "Not offered"], ["unknown", "Not disclosed"]];
-      return { cols: cols.map((k) => ({ key: k, label: CAP_LABELS[k] })), rows, checked, legend };
+      const certNote = certMode ? "Confirmed means we opened the certificate, the register entry or the lab's letter." : null;
+      return { cols: cols.map((k) => ({ key: k, label: CAP_LABELS[k] })), rows, checked, legend, certNote };
     },
     related: (d) => (d.c.adjacent || []).map((slug) => {
       const cat = Object.values(d.categories).find((x) => x.slug === slug);

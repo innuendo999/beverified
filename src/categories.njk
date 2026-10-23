@@ -94,7 +94,7 @@ layout: v3.njk
     {%- if matrix %}
     <section aria-labelledby="cap-h">
       <h2 id="cap-h" class="h-section">Capabilities compared</h2>
-      <p class="cap-legend">Checked against each provider's own pages{% if matrix.checked %}, {{ matrix.checked | displayDate }}{% endif %}. Sources for each cell are on the provider's review.</p>
+      <p class="cap-legend">Checked against each provider's own pages{% if matrix.checked %}, {{ matrix.checked | displayDate }}{% endif %}. Sources for each cell are on the provider's review.{% if matrix.certNote %} {{ matrix.certNote }}{% endif %}</p>
       <p class="cap-legend cap-legend--key">{% for l in matrix.legend %}<span><i class="cap-dot cap-dot--{{ l[0] }}" aria-hidden="true"></i>{{ l[1] }}</span>{% if not loop.last %} {% endif %}{% endfor %}</p>
       <div class="card cap-matrix">
         <div class="cap-matrix__scroll" role="region" aria-label="Capability matrix, scrolls sideways" tabindex="0">
