@@ -173,7 +173,19 @@ faq:
 - q: Who are iDenfy's main competitors?
   a: iDenfy competes with Sumsub, ComplyCube, and Shufti Pro, differentiating through its approved-only billing option and published per-check pricing.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  nfc:
+    status: add_on
+    note: NFC add-on, enabled per client
+    source: 13
+  video_ident:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  published_pricing:
+    status: partial
+    note: Basic and Premium published, Enterprise quoted
+    source: 8
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security (cert. ISMS-1851/A, CERT International, valid to Jun 2029)

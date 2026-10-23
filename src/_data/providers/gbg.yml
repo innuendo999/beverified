@@ -136,7 +136,19 @@ faq:
 - q: Who are GBG's main competitors?
   a: GBG competes with Trulioo, Sumsub, and KYC360, differentiating through its data network scale and its location-intelligence layer.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  nfc:
+    status: 'yes'
+    note: GBG Go module verifies document NFC chips
+    source: 16
+  video_ident:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  published_pricing:
+    status: 'no'
+    note: IDV quoted; only Loqate prices published
+    source: 5
 certifications:
 - name: UK DIATF certified services
   what: GBG Go (identity, orchestration), ID3global, Identify, IDscan Enterprise (identity) and oZone FYQ2 (component), Sep 2026 to Sep 2029
@@ -231,6 +243,10 @@ sources:
 - title: Loqate pricing
   publisher: Loqate (GBG)
   url: https://www.loqate.com/en-gb/pricing/
+  accessed: '2026-10'
+- title: NFC Chip Authentication module (GBG Go documentation)
+  publisher: GBG
+  url: https://docs.go.gbgplc.com/docs/go-v2/platform/modules/documents/nfc-chip-authentication.md
   accessed: '2026-10'
 entity:
   wikidata: null

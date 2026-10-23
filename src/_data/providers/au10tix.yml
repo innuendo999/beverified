@@ -146,7 +146,20 @@ faq:
 - q: Who are AU10TIX's main competitors?
   a: AU10TIX competes with Incode, Jumio, and Onfido, differentiating through automated verification and consortium-based mass-fraud detection.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  nfc:
+    status: 'yes'
+    note: Native SDKs read ePassport and ID chips
+    source: 10
+  video_ident:
+    status: add_on
+    note: Separate product; works with your own agents
+    source: 11
+  published_pricing:
+    status: partial
+    note: Monthly minimums shown; per-check rates quoted
+    source: 1
 certifications:
 - name: UK DIATF certified identity service
   what: Right to work, right to rent, DBS (Kantara; valid to Dec 2028)
@@ -226,6 +239,14 @@ sources:
 - title: AU10TIX reviews
   publisher: Capterra
   url: https://www.capterra.ca/reviews/213867/au10tix
+  accessed: '2026-10'
+- title: NFC Verification
+  publisher: AU10TIX
+  url: https://www.au10tix.com/solutions/nfc-verification/
+  accessed: '2026-10'
+- title: Video Verification
+  publisher: AU10TIX
+  url: https://www.au10tix.com/solutions/video/
   accessed: '2026-10'
 entity:
   wikidata: null

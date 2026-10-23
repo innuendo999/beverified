@@ -140,7 +140,18 @@ faq:
 - q: Who are Trulioo's main competitors?
   a: Trulioo competes with Sumsub, Onfido, and Jumio, differentiating through the breadth of its identity and business data layer rather than document scanning alone.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  nfc:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  video_ident:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  published_pricing:
+    status: 'no'
+    note: contact sales only, no prices
+    source: 1
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security (since 2015)
