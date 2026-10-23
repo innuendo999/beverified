@@ -96,6 +96,10 @@ export default {
       const certNote = certMode ? "Confirmed means we opened the certificate, the register entry or the lab's letter." : null;
       return { cols: cols.map((k) => ({ key: k, label: CAP_LABELS[k] })), rows, checked, legend, certNote };
     },
+    // "Best for" by industry or use case: category file c.segments = [{segment, slug, reason}].
+    segmentPicks: (d) => (d.c.segments || [])
+      .map((x) => ({ segment: x.segment, reason: x.reason, q: x.slug ? d.providers[x.slug] : null }))
+      .filter((x) => x.segment && x.q),
     related: (d) => (d.c.adjacent || []).map((slug) => {
       const cat = Object.values(d.categories).find((x) => x.slug === slug);
       return cat ? { slug, url: cat.url, name: cat.breadcrumb_label, count: (d.rankings[slug]?.providers || []).length } : null;

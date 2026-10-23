@@ -58,6 +58,10 @@ Plus `checked: '2026-10'`. `yes` = in the core product per the vendor's current 
 
 Certificate columns for category matrices (`liveness_pad`, `soc2`, `iso_27001`, `trust_framework`, `age_certification` = ACCS / ISO/IEC 27566-1, KJM, IEEE 2089.1) are not stored here: `src/categories.11tydata.js` reads them from the record's `certifications[]` (name match, best status wins; `confirmed` beats `vendor_stated`; a name containing "in progress" shows as In progress). Keep certification names standard (e.g. "ISO/IEC 30107-3 Level 2 (iBeta)", "SOC 2 Type II", "UK DIATF ...") so the match works.
 
+## Category `segments` (added 2026-10-23)
+
+`segments: [{segment, slug, reason}]` in `src/_data/categories/<slug>.yml` renders the "Best pick by use case" table (heading override: `segments_heading`). `reason` = one plain sentence built only from facts in that provider's record; the review link carries the sources.
+
 ## `src/_data/rankings.yml`
 
 `<category-slug>: {title, providers: [{slug, name, award, tagline, coverage, size, pros, cons, segments, legacy_price_shown, legacy_rating_shown}]}` — list order is the rank. Entries without `slug` are providers with no review page yet.
