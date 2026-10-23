@@ -24,17 +24,17 @@ explainer_html:
 
   <h2>Model governance and explainability</h2>
 
-  <p>Machine-learning monitoring models are models in the supervisory sense. In the US, the Federal Reserve and OCC guidance <a href="https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm" rel="noopener">SR 11-7 on model risk management</a> sets the expectation that banks validate and document the models they rely on, and examiners use the <a href="https://bsaaml.ffiec.gov/manual" rel="noopener">FFIEC BSA/AML Examination Manual</a> when they review a bank''s monitoring program. Ask each vendor what documentation and alert-level explanations it provides for validation.</p>
+  <p>Machine-learning monitoring models are models in the supervisory sense. In the US, the Federal Reserve and OCC guidance <a href="https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm">SR 11-7 on model risk management</a> sets the expectation that banks validate and document the models they rely on, and examiners use the FFIEC BSA/AML Examination Manual when they review a bank''s monitoring program. Ask each vendor what documentation and alert-level explanations it provides for validation.</p>
 
   <h2>Regulatory context</h2>
 
   <ul>
 
-  <li>EU: the Anti-Money Laundering Regulation, <a href="https://eur-lex.europa.eu/eli/reg/2024/1624/oj" rel="noopener">Regulation (EU) 2024/1624</a>, applies from 10 July 2027, and the <a href="https://www.amla.europa.eu/" rel="noopener">EU Anti-Money Laundering Authority (AMLA)</a> is due to supervise up to 40 high-risk financial institutions directly from 2028 (<a href="https://www.aoshearman.com/en/insights/amlctf-playbook-eu-edition-2-the-eu-antimoney-laundering-authority" rel="noopener">A&amp;O Shearman summary</a>).</li>
+  <li>EU: the <a href="https://eur-lex.europa.eu/eli/reg/2024/1624/oj">Anti-Money Laundering Regulation</a>, Regulation (EU) 2024/1624, applies from 10 July 2027, and the EU Anti-Money Laundering Authority (AMLA) is due to supervise up to 40 high-risk financial institutions directly from 2028.</li>
 
   <li>US: the Bank Secrecy Act requires banks to file suspicious activity reports with FinCEN; examiners assess programs against the FFIEC manual.</li>
 
-  <li>UK: the <a href="https://www.legislation.gov.uk/uksi/2017/692/contents" rel="noopener">Money Laundering Regulations 2017</a> apply, and the <a href="https://www.jmlsg.org.uk/guidance/current-guidance/" rel="noopener">JMLSG guidance</a> sets out how banks are expected to meet them.</li>
+  <li>UK: the Money Laundering Regulations 2017 apply, and the JMLSG guidance sets out how banks are expected to meet them.</li>
 
   </ul>
 
