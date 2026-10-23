@@ -16,56 +16,77 @@ legacy_stats:
 - value: Jul 2026
   label: last updated
 explainer_html:
-- '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
+- '<h2>What identity verification covers</h2>
 
-  <h2 style="font-size:19px;margin-bottom:10px;">What identity verification covers beyond onboarding</h2>
+  <p>Identity verification checks that a person is real and is who they claim to be. The usual check reads a government ID document, matches a selfie to the photo on it and tests that the selfie comes from a live person. Many businesses run the same check again after sign-up: at a login from a new device, an account recovery, a change of payout details or a high-risk transaction.</p>
 
-  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">Identity verification is the umbrella discipline that includes eKYC''s one-time onboarding check, but doesn''t stop there. The same document-and-biometric engine gets reused at login, before a high-risk transaction, or after a password reset: anywhere a business needs proof that the person acting is still the person who signed up. That ongoing use is why presentation-attack detection and deepfake resistance matter more here than at onboarding alone.</p>
+  <h2>Liveness, deepfakes and injection attacks</h2>
 
-  <h3 style="font-size:14.5px;margin-bottom:10px;">Core capabilities compliance teams typically require</h3>
+  <p>Presentation attack detection (PAD) tells a live face from a printed photo, a screen replay or a mask held up to the camera. <a href="https://www.iso.org/standard/79520.html" rel="noopener">ISO/IEC 30107-3:2023</a> sets how PAD is tested and reported. The usual evidence in this market is a confirmation letter from <a href="https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/" rel="noopener">iBeta</a>, a lab accredited by NIST NVLAP, whose Level 1, 2 and 3 tests give the attacker more time, more skill and costlier props at each level. The liveness column in the table shows the highest level we could confirm.</p>
 
-  <ul style="margin:0 0 18px;padding-left:20px;font-size:14.5px;line-height:1.75;">
+  <p>ISO/IEC 30107-3 only covers attacks made at the capture device. It does not cover injection attacks, where a deepfake or a recorded video is fed into the app as if it came from the camera. <a href="https://www.evs.ee/en/cen-ts-18099-2024" rel="noopener">CEN/TS 18099:2024</a> is the European specification for testing injection attack detection. Ask vendors which of the two they have had tested.</p>
 
-  <li style="list-style:disc;">Document and biometric verification reused across the account lifecycle, from sign-up onward</li>
+  <h2>Assurance levels and trust frameworks</h2>
 
-  <li style="list-style:disc;">Liveness and presentation-attack detection (PAD) tuned against injection attacks and deepfakes</li>
+  <p>In the US, <a href="https://csrc.nist.gov/pubs/sp/800/63/4/final" rel="noopener">NIST SP 800-63-4</a>, published on 31 July 2025, replaced SP 800-63-3 as the federal digital identity guidelines. Its <a href="https://pages.nist.gov/800-63-4/sp800-63a/ial/" rel="noopener">identity assurance levels</a> set how strong the evidence and checks must be: IAL2 can be done remotely without an agent, while IAL3 needs an attended, on-site session. Check which revision a vendor''s IAL2 claim refers to. Onfido''s, for example, is stated against SP 800-63-3.</p>
 
-  <li style="list-style:disc;">Device and behavioral signals layered onto document/biometric checks for step-up authentication</li>
+  <p>In the UK, services certified against the UK digital identity and attributes trust framework (DIATF) can join the government''s <a href="https://www.gov.uk/guidance/find-registered-digital-identity-and-attribute-services" rel="noopener">statutory register of digital verification services</a>. The register went live on 1 December 2025, when most of Part 2 of the <a href="https://www.legislation.gov.uk/ukpga/2025/18/part/2/enacted" rel="noopener">Data (Use and Access) Act 2025</a> came into force (<a href="https://enablingdigitalidentity.blog.gov.uk/2025/12/01/dvs-measures-in-the-data-act-have-come-into-force/" rel="noopener">GOV.UK announcement</a>).</p>
 
-  <li style="list-style:disc;">Privacy-by-design data handling for biometric templates</li>
+  <h2>Security reports and biometric privacy</h2>
+
+  <ul>
+
+  <li><a href="https://www.aicpa-cima.com/cpe-learning/publication/soc-2-reporting-on-an-examination-of-controls-at-a-service-organization-relevant-to-security-availability-processing-integrity-confidentiality-or-privacy" rel="noopener">SOC 2</a> is an auditor''s examination report on a vendor''s controls, not a certificate. <a href="https://www.iso.org/standard/27001" rel="noopener">ISO/IEC 27001</a> certifies an information security management system. The table marks either one as vendor-stated unless we opened the report or the certificate.</li>
+
+  <li>The Illinois <a href="https://ilga.gov/legislation/ilcs/ilcs3.asp?ActID=3004" rel="noopener">Biometric Information Privacy Act</a> (740 ILCS 14) requires a written release before a private entity collects biometric identifiers, plus a public retention and destruction policy. It lets a person recover $1,000 per negligent violation and $5,000 per intentional or reckless one. If you verify Illinois residents, check how your vendor collects that consent and how long it keeps face data.</li>
 
   </ul>
 
-  <div class="callout" style="margin-bottom:18px;">
+  <h2>Identity verification and eKYC</h2>
 
-  <p><strong>Tip:</strong> teams that layer document fraud checks, biometrics, and device intelligence in a single API report up to 70% less manual review than teams running each check separately.</p>
+  <p><a href="/providers/e-kyc/">eKYC</a> is regulated remote onboarding: the check a bank, payment firm or other obliged entity runs to meet anti-money laundering rules, where the law decides which methods count. Identity verification is the wider job, the same document and face checks used at sign-up and later, in regulated and unregulated businesses alike. For eKYC, compare legal acceptance, eIDs, NFC and video ident; here, compare liveness testing, injection defences and reuse.</p>
 
-  </div>
-
-  <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from eKYC</h3>
-
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;"><a href="/providers/e-kyc/">eKYC</a> is the one-time gate at account opening. Identity verification is the broader, ongoing layer. The same vendor''s engine often powers both, but a business buying only eKYC may still need a separate contract for post-onboarding fraud checks.</p>
-
-  <h3 style="font-size:14.5px;margin-bottom:8px;">Regulatory context</h3>
-
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Key references: ISO/IEC 30107, the presentation-attack-detection standard for biometric systems; NIST SP 800-63, the US digital identity guidelines; and GDPR/CCPA privacy-by-design obligations that govern how biometric templates are stored.</p>
-
-  <a class="entity-card__cta" href="/methodology/">See how we evaluate every provider on this list in our full methodology →</a>
-
-  </section>'
+  <p><a href="/methodology/">How we evaluate every provider on this list →</a></p>'
 faq:
-- q: Is identity verification the same as KYC?
-  a: KYC is typically the onboarding-moment check. Identity verification is the broader discipline that includes onboarding but also covers login, high-risk transactions, and account-recovery moments throughout the relationship.
-- q: How do vendors detect deepfakes?
-  a: Presentation attack detection (PAD) analyzes texture, depth, and motion cues that synthetic or replayed video typically fails to reproduce, per the ISO/IEC 30107 testing standard.
-- q: When does identity verification run besides onboarding?
-  a: Common triggers include login from a new device, a high-value or high-risk transaction, and password or account-recovery requests.
-- q: What is presentation attack detection?
-  a: Presentation attack detection is the set of techniques biometric systems use to tell a live human from a photo, mask, deepfake, or injected video feed, standardized under ISO/IEC 30107.
-- q: Do identity verification vendors store biometric data?
-  a: Practices vary by vendor and jurisdiction. Under privacy-by-design principles required by GDPR and CCPA, most vendors store a mathematical template rather than the raw image, with defined retention limits.
-- q: How is NIST SP 800-63 relevant to identity verification?
-  a: NIST SP 800-63 defines US federal assurance levels for identity proofing and authentication, and many commercial identity verification vendors benchmark their own controls against it.
+- q: 'Which identity verification providers are SOC 2 certified?'
+  a: 'Sumsub, Incode, Persona, Veriff, Shufti Pro, Onfido and Jumio say they have a SOC 2 Type 2 report; we have not seen the reports, so the table marks them vendor-stated. SOC 2 is an auditor''s examination report rather than a certificate. We found no SOC 2 claim for KYCAID, Regula or Veridas; Veridas hosts a SOC 3 report for 2023. Ask for the latest SOC 2 report under NDA before you sign.'
+- q: 'Which providers have iBeta Level 2 or Level 3 liveness?'
+  a: 'Sumsub, Incode and Shufti Pro have iBeta confirmation letters for ISO/IEC 30107-3 Level 3. Persona, Veriff, Regula, Veridas, Onfido and Jumio are confirmed at Level 2. We found no iBeta letter for KYCAID. Each provider''s review links the letter and names the tested product, because a letter covers one product version, not the vendor''s whole platform.'
+- q: 'Which identity verification providers support NFC chip reading?'
+  a: 'Sumsub, Incode, Persona, Veriff, Shufti Pro, Regula, Veridas, Onfido and Jumio can read the chip in ePassports or eID cards. Sumsub and Veriff enable it on request. We found no NFC chip reading for KYCAID. A chip read lets the app check the issuer''s digital signature on the stored data, which a photo of the document cannot prove.'
+- q: 'What is NIST IAL2?'
+  a: 'IAL2 is the middle identity assurance level in NIST SP 800-63, the US federal digital identity guidelines: it needs stronger evidence than IAL1 and, unlike IAL3, can be done remotely without an agent. Revision 4 (SP 800-63-4), published on 31 July 2025, replaced SP 800-63-3. Incode lists a Kantara IAL2 Trust Mark, Persona a Kantara assessment against SP 800-63 and Onfido IAL2 under SP 800-63-3. All three claims are vendor-stated.'
+- q: 'Is identity verification the same as KYC?'
+  a: 'No. KYC is the customer due diligence that anti-money laundering law requires of regulated firms, and identity verification is one part of it. Identity verification is also used outside KYC: at login, account recovery and high-risk actions, and by businesses with no AML duty at all.'
+- q: 'How do vendors detect deepfakes and injection attacks?'
+  a: 'They pair liveness checks on the selfie with checks that the video really comes from the device camera. ISO/IEC 30107-3 tests cover attacks shown to the camera; injected deepfakes fall under a separate specification, CEN/TS 18099. Veriff, Incode and Jumio describe deepfake defences on their own pages. Ask any vendor whether a lab has tested its injection detection, not only its liveness.'
+- q: 'When does identity verification run besides onboarding?'
+  a: 'Common triggers are a login from a new device, a password or account recovery request, a change of payout details and a high-value or high-risk transaction. Some vendors package this as a reusable credential, such as Jumio''s selfie.DONE for returning users.'
+- q: 'Do identity verification vendors store biometric data?'
+  a: 'Practices vary by vendor, so check retention settings and the data processing terms before launch. In Illinois, the Biometric Information Privacy Act requires a written release before biometric identifiers are collected and a public retention and destruction policy, with damages of $1,000 or $5,000 per violation.'
+segments_heading: 'Best pick by use case'
+segments:
+- segment: 'Fintech and neobanks'
+  slug: incode
+  reason: 'Incode names the top three global neobanks among its customers and covers onboarding and ongoing authentication in one platform, with iBeta Level 3 tested liveness.'
+- segment: 'Crypto exchanges'
+  slug: sumsub
+  reason: 'Sumsub is used by exchanges such as Bybit, includes Travel Rule support in its plans and publishes per-verification prices from $1.35.'
+- segment: 'Marketplaces and gig platforms'
+  slug: jumio
+  reason: 'Jumio sells to banks and marketplaces, adds Jumio Watch for risk analysis after onboarding and offers reusable selfie.DONE credentials for returning users.'
+- segment: 'US public sector and regulated healthcare'
+  slug: persona
+  reason: 'Persona for Government holds FedRAMP Moderate authorization, and Persona states HIPAA compliance for US health data.'
+- segment: 'Document fraud with strict data residency'
+  slug: regula
+  reason: 'Regula checks documents against 16,500+ templates and runs self-hosted or offline, so verification data can stay inside your own infrastructure.'
+- segment: 'Developers who want self-serve pricing'
+  slug: veriff
+  reason: 'Veriff publishes self-serve plans from a $49 monthly minimum and $0.80 per verification, with SDKs, a hosted page and a 15-day free trial.'
+- segment: 'Global coverage in many languages'
+  slug: shufti-pro
+  reason: 'Shufti Pro covers 240+ countries and territories in 150+ languages and can run as SaaS, private cloud or on-premise.'
 adjacent:
 - e-kyc
 - aml
