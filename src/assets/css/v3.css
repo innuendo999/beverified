@@ -236,6 +236,14 @@ h1, h2, h3, p, ul, ol, figure { margin: 0; }
 
 /* ---------- Sources & author ---------- */
 .sources { list-style: none; padding: 0; border-top: 1px solid var(--line-strong); }
+.more-list > summary { list-style: none; display: inline-flex; align-items: center; gap: 8px; padding: 14px 0; cursor: pointer; font-size: 15px; font-weight: 500; color: var(--accent); }
+.more-list > summary::-webkit-details-marker { display: none; }
+.more-list > summary::after { content: "+"; font-size: 18px; font-weight: 400; }
+.more-list[open] > summary::after { content: "\2212"; }
+.card .more-list > summary { padding: 14px 22px; border-top: 1px solid var(--line-soft); width: 100%; }
+.more-list--sources > summary { border-top: 1px solid var(--line-strong); width: 100%; }
+.more-list--sources[open] > summary { border-bottom: 0; }
+.more-list--sources .sources { border-top: 0; }
 .sources li { display: grid; grid-template-columns: 40px minmax(0,1fr) 190px; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 15px; scroll-margin-top: 130px; }
 .sources li > span:first-child { color: var(--muted); font-variant-numeric: tabular-nums; }
 .sources li > span:last-child { font-size: 14px; color: var(--body); text-align: right; font-variant-numeric: tabular-nums; }
