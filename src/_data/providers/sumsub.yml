@@ -187,6 +187,33 @@ capabilities:
     note: custom plan quoted
     source: 1
   checked: '2026-10'
+  age_document:
+    status: 'yes'
+    note: DOB from ID, face match optional
+    source: 16
+  age_facial_estimation:
+    status: 'yes'
+    note: selfie or short video estimation
+    source: 17
+  age_email_estimation:
+    status: not_disclosed
+    note: not listed for age checks
+  age_mobile_operator:
+    status: not_disclosed
+    note: not listed for age checks
+  age_credit_card:
+    status: not_disclosed
+    note: not listed for age checks
+  age_open_banking:
+    status: 'yes'
+    note: open banking, supported regions only
+    source: 16
+  age_digital_id:
+    status: not_disclosed
+    note: not listed for age checks
+  age_reusable:
+    status: not_disclosed
+    note: reusable KYC not presented for age
 certifications:
 - name: iBeta ISO/IEC 30107-3 PAD Level 3
   what: Liveness, Sumsub Liveness (Sep 2026)
@@ -293,6 +320,14 @@ sources:
 - title: Video identification
   publisher: Sumsub
   url: https://docs.sumsub.com/docs/video-identification
+  accessed: '2026-10'
+- title: 'Age Verification'
+  publisher: Sumsub
+  url: https://sumsub.com/age-verification/
+  accessed: '2026-10'
+- title: 'Age Estimation'
+  publisher: Sumsub
+  url: https://docs.sumsub.com/docs/age-estimation
   accessed: '2026-10'
 entity:
   wikidata: null

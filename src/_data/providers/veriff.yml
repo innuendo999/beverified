@@ -206,6 +206,32 @@ capabilities:
     status: partial
     note: Enterprise plan quoted
     source: 1
+  age_document:
+    status: 'yes'
+    note: DOB from ID, pass or fail
+    source: 27
+  age_facial_estimation:
+    status: 'yes'
+    note: selfie estimation, no document
+    source: 17
+  age_email_estimation:
+    status: not_disclosed
+    note: not listed for age checks
+  age_mobile_operator:
+    status: not_disclosed
+    note: not listed for age checks
+  age_credit_card:
+    status: not_disclosed
+    note: not listed for age checks
+  age_open_banking:
+    status: not_disclosed
+    note: not listed for age checks
+  age_digital_id:
+    status: not_disclosed
+    note: wallets named only as trend
+  age_reusable:
+    status: not_disclosed
+    note: no age token found
 certifications:
 - name: ISO/IEC 30107-3 Level 2 (iBeta)
   what: Liveness, presentation attack detection
@@ -367,6 +393,10 @@ sources:
 - title: 'iOS SDK: NFC data listener'
   publisher: Veriff
   url: https://devdocs.veriff.com/docs/ios-sdk-nfc-data-listener
+  accessed: '2026-10'
+- title: 'Age Validation'
+  publisher: Veriff
+  url: https://www.veriff.com/product/age-validation
   accessed: '2026-10'
 entity:
   wikidata: null
