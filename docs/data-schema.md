@@ -50,8 +50,12 @@ Each key is `{status, note, source}`; `source` = number in this record's `source
 | identity_verification | yes \| add_on \| no \| not_disclosed |
 | deployment | cloud \| on_prem \| cloud_and_on_prem \| not_disclosed |
 | published_pricing | yes \| partial \| no |
+| nfc | yes \| add_on \| no \| not_disclosed (IDV, added 2026-10-23: SDK reads ePassport/eID chips) |
+| video_ident | yes \| add_on \| no \| not_disclosed (IDV, added 2026-10-23: live agent video call, not an automated selfie video) |
 
 Plus `checked: '2026-10'`. `yes` = in the core product per the vendor's current pages; `add_on` = separate module, plan tier or partner; `no` = the vendor says it does not, or the product clearly does not; `not_disclosed` = nothing found. `partial` pricing = some plans or per-check prices published, others quoted.
+
+Certificate columns for category matrices (`liveness_pad`, `soc2`, `iso_27001`, `trust_framework`) are not stored here: `src/categories.11tydata.js` reads them from the record's `certifications[]` (name match, best status wins; `confirmed` beats `vendor_stated`; a name containing "in progress" shows as In progress). Keep certification names standard (e.g. "ISO/IEC 30107-3 Level 2 (iBeta)", "SOC 2 Type II", "UK DIATF ...") so the match works.
 
 ## `src/_data/rankings.yml`
 
