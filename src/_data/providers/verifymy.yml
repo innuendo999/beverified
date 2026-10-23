@@ -137,6 +137,35 @@ capabilities:
     status: 'no'
     note: quote via demo or sales
     source: 6
+  age_document:
+    status: 'yes'
+    note: ID document and face match
+    source: 12
+  age_facial_estimation:
+    status: 'yes'
+    note: facial age estimation
+    source: 12
+  age_email_estimation:
+    status: 'yes'
+    note: email-based age checks
+    source: 12
+  age_mobile_operator:
+    status: 'yes'
+    note: OTP then mobile provider 18+ status
+    source: 13
+  age_credit_card:
+    status: 'yes'
+    note: credit card authorisation
+    source: 14
+  age_open_banking:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  age_digital_id:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  age_reusable:
+    status: not_disclosed
+    note: nothing found on vendor pages
 certifications:
 - name: ISO/IEC 27566-1:2025 and ACCS 1:2025
   what: Age assurance systems
@@ -203,6 +232,18 @@ sources:
 - title: Verifymy reviews (Age Assurance Software)
   publisher: Gartner Peer Insights
   url: https://www.gartner.com/reviews/product/verifymy
+  accessed: '2026-10'
+- title: Age assurance
+  publisher: VerifyMy
+  url: https://verifymy.io/age-verification-and-estimation/
+  accessed: '2026-10'
+- title: Mobile phone number
+  publisher: VerifyMy
+  url: https://verifymy.io/age-verification-and-estimation/mobile-phone-number
+  accessed: '2026-10'
+- title: Credit card
+  publisher: VerifyMy
+  url: https://verifymy.io/age-verification-and-estimation/credit-card
   accessed: '2026-10'
 entity:
   wikidata: null

@@ -7,7 +7,7 @@ seo:
 breadcrumb_label: Best Age Verification Providers
 quick_answer: Sumsub ranks first on our scores, with document checks, selfie age estimation and database checks in one platform. Incode is next, running face age estimation on the user's phone. Persona offers the most methods, and VerifyMy is the specialist, with email-based age estimation. We compared 9 providers on the age checks they offer, fallbacks and the approvals they state.
 last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+updated: '2026-10-23'   # last content edit; last_verified = last fact re-check
 explainer_html:
 - '<h2>Age verification or age estimation?</h2>
   <p>Age verification confirms a date of birth from a trusted source, usually an ID document, a bank, a mobile operator or a credit file. Age estimation infers an age range from a signal such as a selfie or an email address, without collecting a document. Most platforms now combine the two: a low-friction estimate first, and a document or database check only when the estimate is close to the threshold.</p>
@@ -42,7 +42,16 @@ adjacent:
 - identity-verification
 - e-kyc
 - cheap-kyc
-capability_columns: []
+capability_columns:
+- age_document
+- age_facial_estimation
+- age_email_estimation
+- age_mobile_operator
+- age_credit_card
+- age_open_banking
+- age_digital_id
+- age_reusable
+- age_certification
 faq_templates: []
 legacy_issues: []
 author: andrii-klymenko

@@ -164,6 +164,37 @@ capabilities:
     status: partial
     note: Essential price listed, others quoted
     source: 1
+  age_document:
+    status: 'yes'
+    note: DOB from ID, selfie match optional
+    source: 8
+  age_facial_estimation:
+    status: 'yes'
+    note: selfie age estimation
+    source: 8
+  age_email_estimation:
+    status: 'yes'
+    note: email-based age inference
+    source: 8
+  age_mobile_operator:
+    status: 'yes'
+    note: phone check against MNO records
+    source: 8
+  age_credit_card:
+    status: 'yes'
+    note: card validity, cardholders are 18+
+    source: 8
+  age_open_banking:
+    status: not_disclosed
+    note: not listed for age checks
+  age_digital_id:
+    status: 'yes'
+    note: age claim from ID provider or wallet
+    source: 8
+  age_reusable:
+    status: 'yes'
+    note: Reusable Persona stores verified age
+    source: 8
 certifications:
 - name: FedRAMP Moderate (Persona for Government)
   what: US federal cloud security, certified since 10 Apr 2026

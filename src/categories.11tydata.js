@@ -7,6 +7,9 @@ const CAP_LABELS = {
   published_pricing: "Published pricing",
   liveness_pad: "Liveness test (ISO 30107-3)", nfc: "NFC chip reading", video_ident: "Video ident (live agent)",
   soc2: "SOC 2", iso_27001: "ISO 27001", trust_framework: "Government trust framework",
+  age_document: "ID document", age_facial_estimation: "Facial age estimation", age_email_estimation: "Email age estimation",
+  age_mobile_operator: "Mobile operator", age_credit_card: "Credit card", age_open_banking: "Open banking",
+  age_digital_id: "Digital ID or wallet", age_reusable: "Reusable age result", age_certification: "Age assurance certification",
 };
 const CAP_STATUS = {
   yes: ["full", "Yes"], add_on: ["half", "Add-on"], no: ["empty", "No"], not_disclosed: ["unknown", "Not disclosed"],
@@ -16,12 +19,13 @@ const CAP_STATUS = {
 
 // Certificate columns are read from the review's certifications[] (one record, no second copy).
 // confirmed = we opened the certificate, register entry or lab letter; vendor_stated = only the vendor says so.
-const CERT_KEYS = ["liveness_pad", "soc2", "iso_27001", "trust_framework"];
+const CERT_KEYS = ["liveness_pad", "soc2", "iso_27001", "trust_framework", "age_certification"];
 const CERT_RANK = { confirmed: 2, vendor_stated: 1 };
 const FRAMEWORKS = [
   [/DIATF|Digital Verification Serv|DVS|trust framework/i, "UK DIATF"], [/FedRAMP/i, "FedRAMP"],
   [/eIDAS|qualified trust|ETSI/i, "eIDAS"], [/Kantara|IAL2|800-63/i, "Kantara / NIST IAL2"], [/PVID/i, "PVID (France)"],
 ];
+const AGE_CERTS = [[/27566|ACCS|Age Check Certification/i, "ACCS / ISO 27566-1"], [/KJM/i, "KJM (Germany)"], [/IEEE 2089/i, "IEEE 2089.1"]];
 const certCell = (key, certs = []) => {
   const ok = certs.filter((c) => CERT_RANK[c.status]);
   const best = (list) => [...list].sort((a, b) => CERT_RANK[b.status] - CERT_RANK[a.status])[0];
@@ -39,10 +43,10 @@ const certCell = (key, certs = []) => {
     const top = [...pool].sort((a, b) => lvl(b) - lvl(a))[0];
     return { status: top.status, level: lvl(top) || null, source: top.source };
   }
-  if (key === "trust_framework") {
+  if (key === "trust_framework" || key === "age_certification") {
     const hits = [];
     for (const c of [...ok].sort((a, b) => CERT_RANK[b.status] - CERT_RANK[a.status]))
-      for (const [re, label] of FRAMEWORKS) if (re.test(c.name) && !hits.some((h) => h.label === label)) hits.push({ label, status: c.status });
+      for (const [re, label] of (key === "trust_framework" ? FRAMEWORKS : AGE_CERTS)) if (re.test(c.name) && !hits.some((h) => h.label === label)) hits.push({ label, status: c.status });
     if (!hits.length) return { status: "not_disclosed" };
     const conf = hits.filter((h) => h.status === "confirmed");
     return { status: conf.length ? "confirmed" : "vendor_stated", names: (conf.length ? conf : hits).map((h) => h.label).join(", ") };
@@ -79,7 +83,7 @@ export default {
             const st = CAP_STATUS[status] || CAP_STATUS.not_disclosed;
             let label = st[1], note = ["add_on", "partial"].includes(status) ? v.note : null;
             if (k === "liveness_pad" && v.level) { label = `Level ${v.level}`; if (status === "vendor_stated") note = "Vendor-stated"; }
-            if (k === "trust_framework" && v.names) note = v.names;
+            if ((k === "trust_framework" || k === "age_certification") && v.names) note = v.names;
             if (note) note = note.charAt(0).toUpperCase() + note.slice(1);
             return { key: k, status, sym: st[0], label, note, source: v.source || null };
           }),

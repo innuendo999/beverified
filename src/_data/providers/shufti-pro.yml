@@ -157,6 +157,36 @@ capabilities:
     status: partial
     note: Enterprise plan quoted
     source: 1
+  age_document:
+    status: 'yes'
+    note: DOB extracted from government ID
+    source: 16
+  age_facial_estimation:
+    status: 'yes'
+    note: liveness checked selfie, no document
+    source: 16
+  age_email_estimation:
+    status: not_disclosed
+    note: not listed for age checks
+  age_mobile_operator:
+    status: 'yes'
+    note: database lookup includes telecoms data
+    source: 16
+  age_credit_card:
+    status: not_disclosed
+    note: not listed for age checks
+  age_open_banking:
+    status: 'yes'
+    note: bank login via eIDV
+    source: 17
+  age_digital_id:
+    status: 'yes'
+    note: national eID schemes via eIDV
+    source: 17
+  age_reusable:
+    status: 'yes'
+    note: zero-knowledge proof token for returns
+    source: 16
 certifications:
 - name: iBeta ISO/IEC 30107-3 PAD Level 3
   what: Liveness, presentation attack detection
@@ -186,6 +216,10 @@ certifications:
   what: UK cyber security scheme
   status: vendor_stated
   source: 4
+- name: 'KJM approval (Germany)'
+  what: Age verification to protect minors, announced 2020
+  status: vendor_stated
+  source: 18
 user_ratings:
 - platform: G2
   rating: 4.5
@@ -260,6 +294,18 @@ sources:
 - title: NFC verification
   publisher: Shufti
   url: https://shuftipro.com/nfc-verification/
+  accessed: '2026-10'
+- title: 'Age Verification'
+  publisher: Shufti
+  url: https://shuftipro.com/age-verification/
+  accessed: '2026-10'
+- title: 'Age Assurance'
+  publisher: Shufti
+  url: https://shuftipro.com/age-assurance/
+  accessed: '2026-10'
+- title: 'Shufti Pro''s age verification solution approved by KJM'
+  publisher: Shufti
+  url: https://shuftipro.com/news/shufti-pros-age-verification-solution-approved-by-kjm
   accessed: '2026-10'
 entity:
   wikidata: null

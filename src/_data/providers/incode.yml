@@ -137,6 +137,36 @@ capabilities:
     status: 'no'
     note: pricing quoted on request
     source: 9
+  age_document:
+    status: 'yes'
+    note: reads and authenticates government ID
+    source: 18
+  age_facial_estimation:
+    status: 'yes'
+    note: selfie estimation, can run on-device
+    source: 18
+  age_email_estimation:
+    status: 'yes'
+    note: email signals, no camera needed
+    source: 18
+  age_mobile_operator:
+    status: 'yes'
+    note: carrier signals, no camera needed
+    source: 18
+  age_credit_card:
+    status: not_disclosed
+    note: credit signals, card not named
+  age_open_banking:
+    status: 'yes'
+    note: banking signals, method not detailed
+    source: 18
+  age_digital_id:
+    status: 'yes'
+    note: digital IDs and wallets accepted
+    source: 18
+  age_reusable:
+    status: not_disclosed
+    note: no age token found
 certifications:
 - name: ISO/IEC 30107-3 Level 3 (iBeta)
   what: Liveness / presentation attack detection
@@ -166,6 +196,10 @@ certifications:
   what: Age assurance (UK), register entry without listed scope or dates
   status: confirmed
   source: 15
+- name: 'KJM approval (Germany)'
+  what: ID and selfie age check for gambling, announced 2022
+  status: vendor_stated
+  source: 19
 user_ratings:
 - platform: G2
   rating: 5.0
@@ -248,6 +282,14 @@ sources:
 - title: Video Conference
   publisher: Incode Developer Hub
   url: https://developer.incode.com/features-and-modules/video-conference/
+  accessed: '2026-10'
+- title: 'Age Assurance'
+  publisher: Incode
+  url: https://www.incode.com/use-cases/age-assurance
+  accessed: '2026-10'
+- title: 'German Commission for the Protection of Minors in the Media approves Incode Technologies as an age verification system (7 June 2022)'
+  publisher: Business Wire
+  url: https://www.businesswire.com/news/home/20220607006257/en/German-Commission-for-the-Protection-of-Minors-in-the-Media-Approves-Incode-Technologies-as-an-Age-Verification-System-AVS
   accessed: '2026-10'
 entity:
   wikidata: null
