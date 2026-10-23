@@ -171,15 +171,23 @@ layout: v3.njk
   <section id="certifications" aria-labelledby="cert-h">
     <h2 id="cert-h" class="h-section h-section--tight">Certifications &amp; independent tests</h2>
     <p class="section-lede">"Confirmed" means we found the certificate or register entry ourselves.</p>
+    {%- set certShown = 4 %}
     <div class="card">
       {%- for c in p.certifications %}
+      {%- if loop.index == certShown + 1 %}
+      <details class="more-list">
+        <summary>Show {{ p.certifications.length - certShown }} more</summary>
+      {%- endif %}
       <div class="row">
         <div class="cert-name"><div>{{ c.name }}</div>{% if c.what %}<div>{{ c.what }}</div>{% endif %}</div>
         {%- if c.status == "confirmed" %}<span class="status status--ok"><span aria-hidden="true">✓</span>Confirmed</span>
         {%- elif c.status == "vendor_stated" %}<span class="status"><span aria-hidden="true">◇</span>Vendor-stated</span>
         {%- else %}<span class="status status--none">Not found</span>{% endif %}
-        {%- if c.source %}<a class="fs-14" href="#src-{{ c.source }}">{% if c.status == "confirmed" %}View record{% else %}Vendor claim{% endif %} [{{ c.source }}]</a>{% endif %}
+        {%- if c.source and c.status != "confirmed" %}<a class="fs-14" href="#src-{{ c.source }}">Vendor claim [{{ c.source }}]</a>{% endif %}
       </div>
+      {%- if loop.last and loop.length > certShown %}
+      </details>
+      {%- endif %}
       {%- endfor %}
     </div>
   </section>
@@ -290,11 +298,14 @@ layout: v3.njk
   {%- if p.sources and p.sources.length %}
   <section id="sources" aria-labelledby="src-h">
     <h2 id="src-h" class="h-section">Sources</h2>
-    <ol class="sources">
-      {%- for s in p.sources %}
-      <li id="src-{{ loop.index }}"><span>[{{ loop.index }}]</span><span><a href="{{ s.url }}" rel="noopener">{{ s.title }}</a>{% if s.publisher %} <span class="c-body">({{ s.publisher }})</span>{% endif %}</span><span>{% if s.accessed %}Accessed {{ s.accessed | displayDate }}{% endif %}</span></li>
-      {%- endfor %}
-    </ol>
+    <details class="more-list more-list--sources">
+      <summary>Show all {{ p.sources.length }} sources</summary>
+      <ol class="sources">
+        {%- for s in p.sources %}
+        <li id="src-{{ loop.index }}"><span>[{{ loop.index }}]</span><span><a href="{{ s.url }}" rel="noopener">{{ s.title }}</a>{% if s.publisher %} <span class="c-body">({{ s.publisher }})</span>{% endif %}</span><span>{% if s.accessed %}Accessed {{ s.accessed | displayDate }}{% endif %}</span></li>
+        {%- endfor %}
+      </ol>
+    </details>
   </section>
   {%- endif %}
 

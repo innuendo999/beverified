@@ -46,6 +46,17 @@
   if (h && b) b.addEventListener('click', function () {
     var open = h.classList.toggle('is-open'); b.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
+  // Open a collapsed list (sources, certifications) when a footnote link points into it.
+  function reveal(id) {
+    var el = id && document.getElementById(id), d = el && el.closest('details');
+    if (d && !d.open) { d.open = true; el.scrollIntoView(); }
+  }
+  reveal(location.hash.slice(1));
+  window.addEventListener('hashchange', function () { reveal(location.hash.slice(1)); });
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="#src-"]');
+    if (a) reveal(a.getAttribute('href').slice(1));
+  });
 })();
 </script>
 </body>
