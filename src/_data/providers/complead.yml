@@ -87,8 +87,8 @@ facts:
   source: 22
   evidence: vendor
 - label: Founded
-  value: '2019'
-  source: 2
+  value: '2020'
+  source: 3
   evidence: vendor
 - label: HQ
   value: London, UK; offices in New York and Istanbul
@@ -432,7 +432,7 @@ verification_notes:
 - New record, first review 2026-10-23. Covers Complead as the whole platform; Sanction Scanner keeps its own review at /providers/sanction-scanner/. Owner confirmed it is a rebrand, not an acquisition, which the founder's post (source 2), Paradergi (source 31) and Dünya (source 32) also say. Score and grade are a proposal for the owner to confirm.
 - 'Name styling: the company writes its name in lowercase on its own site; G2, Foreks, Paradergi and Dünya write Complead. Owner chose Complead (23 Oct 2026); quotes and article titles keep the original lowercase.'
 - 'Rebrand date: announcement post dated 21 Sep 2026 (source 2); Complead''s Deloitte post (source 35) says "On 28 September 2026 we changed our name to complead". Copy says September 2026.'
-- 'Founded: 2019 in the founder''s bio on the rebrand post (source 2), the Hepsiburada post (source 38) and CB Insights (source 34); 2020 on complead.ai/company and careers (sources 3, 21), on G2 and in Dünya (source 32), which matches the UK incorporation date of 11 Aug 2020 (source 25). Kept 2019 to match the Sanction Scanner record.'
+- 'Founded: 2019 in the founder''s bio on the rebrand post (source 2), the Hepsiburada post (source 38) and CB Insights (source 34); 2020 on complead.ai/company and careers (sources 3, 21), on G2 and in Dünya (source 32), which matches the UK incorporation date of 11 Aug 2020 (source 25). Owner chose 2020 (23 Oct 2026), cited to complead.ai/company (source 3); the Sanction Scanner record uses the same year.'
 - 'Legal entity: website terms updated 22 Sep 2026 name Complead Inc., a Delaware corporation, registered agent in Wilmington (source 19); not checked in the Delaware register (no free public lookup opened). The careers page calls the UK entity "Complead Ltd", but Companies House has no company named Complead (search 23 Oct 2026) and SANCTION SCANNER LTD (12804192) shows no previous or new name (source 25). The New York entity is described on sources 2 and 3 but its legal name is not given.'
 - Companies House overview (source 25) still shows next confirmation statement date 10 Aug 2026, due 24 Aug 2026, last statement 10 Aug 2025, without an overdue label. Filing history did not load in the fetcher. Re-check whether the 2026 confirmation statement was filed.
 - 'Funding: Dünya (source 32, 19 Oct 2026) quotes the founder that the company took no outside investment and that shares belong to founders and employees; Companies House PSC (source 26) shows Coşkun with 75% or more. CB Insights (source 34) still lists TT Ventures and Mastercard Lighthouse Türkiye as investors with the latest round "Incubator/Accelerator"; Mastercard''s release (source 33) describes an acceleration programme only.'
