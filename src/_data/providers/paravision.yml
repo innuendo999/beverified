@@ -150,7 +150,20 @@ faq:
 - q: What is the best alternative to Paravision?
   a: If you want a full verification product, Incode and Veridas combine their own biometrics with document checks. If you are assembling your own stack, Regula's document authentication SDKs pair with a face engine such as Paravision's.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  nfc:
+    status: 'no'
+    note: face biometrics only, no document reading
+    source: 1
+  video_ident:
+    status: 'no'
+    note: sells biometric SDKs, no agent service
+    source: 5
+  published_pricing:
+    status: 'no'
+    note: demo request form only
+    source: 10
 certifications:
 - name: iBeta ISO/IEC 30107-3 PAD Level 2
   what: Liveness, Paravision Liveness v1.2 on iPhone 13, iOS 16.6 (Dec 2023), 0% APCER

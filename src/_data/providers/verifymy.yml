@@ -125,7 +125,18 @@ faq:
 - q: Who are VerifyMy's main competitors?
   a: VerifyMy competes with Shufti Pro, Onfido, and IDnow on age-related checks, differentiating through its low-friction email-based estimation method.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  nfc:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  video_ident:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  published_pricing:
+    status: 'no'
+    note: quote via demo or sales
+    source: 6
 certifications:
 - name: ISO/IEC 27566-1:2025 and ACCS 1:2025
   what: Age assurance systems

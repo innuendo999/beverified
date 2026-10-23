@@ -145,7 +145,18 @@ faq:
 - q: Who are AiPrise's main competitors?
   a: AiPrise competes with IDMERIT, ComplyCube, and Vespia, differentiating through its unified KYC+KYB API and AI Compliance Copilot.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  nfc:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  video_ident:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  published_pricing:
+    status: 'no'
+    note: no prices on own site
+    source: 1
 certifications:
 - name: SOC 2 Type II
   what: Security controls report

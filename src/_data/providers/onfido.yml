@@ -159,7 +159,19 @@ faq:
 - q: Who are Onfido's main competitors?
   a: Onfido competes with Jumio, Sumsub, and Trulioo, differentiating through developer-focused SDKs and, since 2024, its place in Entrust's identity-security portfolio.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  nfc:
+    status: 'yes'
+    note: SDKs read passport and ID chips
+    source: 19
+  video_ident:
+    status: not_disclosed
+    note: Entrust markets onboarding without video calls
+  published_pricing:
+    status: 'no'
+    note: contact sales only
+    source: 1
 certifications:
 - name: ISO/IEC 30107-3 Level 2 (iBeta)
   what: Liveness / presentation attack detection, Onfido Liveness 2.0 on iOS (Jan 2022) and Android (Jun 2022)
@@ -280,6 +292,10 @@ sources:
 - title: Entrust Identity Verification reviews, identity verification market
   publisher: Gartner Peer Insights
   url: https://www.gartner.com/reviews/market/identity-verification/vendor/entrust/product/onfido
+  accessed: '2026-10'
+- title: Document report with NFC
+  publisher: Entrust
+  url: https://documentation.identity.entrust.com/guide/document-report-nfc
   accessed: '2026-10'
 entity:
   wikidata: null

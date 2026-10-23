@@ -123,7 +123,20 @@ faq:
 - q: Who are Incode's main competitors?
   a: Incode competes with Jumio, AU10TIX, and Onfido, differentiating through its large proprietary dataset and single-platform approach.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  nfc:
+    status: 'yes'
+    note: Mobile SDK reads ePassport chips
+    source: 16
+  video_ident:
+    status: 'yes'
+    note: Live agent video conference module
+    source: 17
+  published_pricing:
+    status: 'no'
+    note: pricing quoted on request
+    source: 9
 certifications:
 - name: ISO/IEC 30107-3 Level 3 (iBeta)
   what: Liveness / presentation attack detection
@@ -227,6 +240,14 @@ sources:
 - title: 'ACCS registry: Incode Technologies Inc'
   publisher: Age Check Certification Scheme
   url: https://accscheme.com/registry/uncategorized/incode-technologies-inc/
+  accessed: '2026-10'
+- title: NFC Scan
+  publisher: Incode Developer Hub
+  url: https://developer.incode.com/features-and-modules/nfc/
+  accessed: '2026-10'
+- title: Video Conference
+  publisher: Incode Developer Hub
+  url: https://developer.incode.com/features-and-modules/video-conference/
   accessed: '2026-10'
 entity:
   wikidata: null

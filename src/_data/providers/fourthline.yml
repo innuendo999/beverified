@@ -128,7 +128,19 @@ faq:
 - q: Who are Fourthline's main competitors?
   a: Fourthline competes with Sumsub, Onfido, and IDnow, differentiating through its deep focus on regulated European financial institutions.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  nfc:
+    status: 'yes'
+    note: Mobile SDKs read passport and eID chips
+    source: 12
+  video_ident:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  published_pricing:
+    status: 'no'
+    note: no prices; contact sales only
+    source: 2
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security (EY CertifyPoint, cert. 2021-039)
@@ -194,6 +206,10 @@ sources:
 - title: Fourthline reviews
   publisher: G2
   url: https://www.g2.com/products/fourthline/reviews
+  accessed: '2026-10'
+- title: Document NFC (Fourthline documentation)
+  publisher: Fourthline
+  url: https://docs.fourthline.com/docs/document-nfc/
   accessed: '2026-10'
 entity:
   wikidata: null

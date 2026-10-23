@@ -134,7 +134,20 @@ faq:
 - q: Who are Signicat's main competitors?
   a: Signicat competes with IDnow, Onfido, and Sumsub, differentiating through the breadth of national eID methods it supports across Europe.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  nfc:
+    status: add_on
+    note: Separate ReadID product reads document chips
+    source: 16
+  video_ident:
+    status: 'yes'
+    note: VideoID offers live agent interview
+    source: 17
+  published_pricing:
+    status: 'no'
+    note: quote on request
+    source: 2
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security (DNV, valid to Oct 2029)
@@ -234,6 +247,14 @@ sources:
 - title: Signicat reviews
   publisher: Capterra
   url: https://www.capterra.com/p/214440/Signicat/reviews/
+  accessed: '2026-10'
+- title: ReadID
+  publisher: Signicat
+  url: https://www.signicat.com/products/identity-proofing/readid
+  accessed: '2026-10'
+- title: Signicat VideoID developer documentation
+  publisher: Signicat
+  url: https://developer.signicat.com/docs/id-document-and-biometric-verification/provider-specific-integrations/videoid/
   accessed: '2026-10'
 entity:
   wikidata: null

@@ -193,7 +193,19 @@ faq:
 - q: Who are Veriff's main competitors?
   a: Veriff competes with Sumsub, iDenfy, and Onfido, differentiating through document depth and published self-serve pricing.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  nfc:
+    status: 'yes'
+    note: SDK reads document chips, enabled on request
+    source: 26
+  video_ident:
+    status: not_disclosed
+    note: no agent video call found
+  published_pricing:
+    status: partial
+    note: Enterprise plan quoted
+    source: 1
 certifications:
 - name: ISO/IEC 30107-3 Level 2 (iBeta)
   what: Liveness, presentation attack detection
@@ -351,6 +363,10 @@ sources:
 - title: Veriff reviews
   publisher: Gartner Peer Insights
   url: https://www.gartner.com/reviews/product/veriff
+  accessed: '2026-10'
+- title: 'iOS SDK: NFC data listener'
+  publisher: Veriff
+  url: https://devdocs.veriff.com/docs/ios-sdk-nfc-data-listener
   accessed: '2026-10'
 entity:
   wikidata: null

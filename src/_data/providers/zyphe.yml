@@ -222,6 +222,13 @@ faq:
 segments: []
 capabilities:
   checked: '2026-10'
+  nfc:
+    status: 'yes'
+    note: reads ePassport and eID chips
+    source: 7
+  video_ident:
+    status: not_disclosed
+    note: nothing found on vendor pages
   sanctions_pep:
     status: 'yes'
     note: With ongoing re-screening
