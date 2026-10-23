@@ -24,7 +24,7 @@ link:
   type: null
   legacy_rel: nofollow sponsored
 last_verified: '2026-10-22'
-updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
+updated: '2026-10-23'   # last content edit; last_verified = last fact re-check
 verdict: 'Sanction Scanner''s pitch is accessibility: sanctions, PEP and adverse-media screening with a published Starter plan instead of a six-figure contract or a six-month implementation. The company behind it rebranded as complead in September 2026, and Sanction Scanner continues as complead''s sanctions and PEP screening product. It went through the Mastercard Lighthouse Türkiye acceleration programme in 2024 and has made Deloitte''s Technology Fast 50 Türkiye list four times (2022, 2023, 2024 and 2026). It is a reasonable mid-market fit, though its scale and screening depth trail the category giants.'
 what_is:
 - Sanction Scanner is the sanctions and PEP screening product of complead, the AML compliance company that traded as Sanction Scanner until it rebranded in September 2026. The company says it was established in 2019 and incorporated in the UK in 2020, with London as its headquarters and offices in Istanbul, Türkiye, and New York. It is led by founder and CEO Fatih Coşkun. CB Insights lists TT Ventures and Mastercard Lighthouse Türkiye as investors. The company says it serves 800+ clients in 80+ countries, and its products cover name and transaction screening, adverse media, transaction monitoring, fraud detection, customer risk assessment and KYB. It does not offer document or biometric identity verification.
@@ -115,6 +115,8 @@ alternatives:
   name: NameScan
   best_for: On-Demand SME Screening
 choose_instead:
+- slug: complead
+  text: you also need transaction monitoring, fraud, KYB and customer risk scoring from the same vendor. complead is the full platform that Sanction Scanner now belongs to.
 - slug: complyadvantage
   text: you need enterprise-scale proprietary financial-crime data depth.
 - slug: membercheck
@@ -197,9 +199,9 @@ certifications:
 user_ratings:
 - platform: G2
   rating: 4.8
-  count: 69
+  count: 70
   checked: '2026-10'
-  url: https://www.g2.com/products/sanction-scanner/reviews
+  url: https://www.g2.com/products/complead-formerly-sanction-scanner/reviews
 - platform: Capterra
   rating: 5.0
   count: 27
@@ -292,7 +294,7 @@ verification_notes:
 - '2026 Deloitte Fast 50 Türkiye listing comes from the Foreks report (source 15) and complead''s company page ("four times"); Deloitte''s own Fast 50 page did not yet list the 2026 winners. No 2025 listing.'
 - 'Rebrand date: taken from complead''s announcement dated 21 September 2026 (source 10). The founder quote "In September 2026 we rebranded" was not found verbatim; the 1 Oct 2026 Paradergi interview confirms the rebrand without a date.'
 - 'Link: sanctionscanner.com home, pricing and about pages still load under the Sanction Scanner name (footer: "Sanction Scanner is a complead product"); only comparison pages redirect to complead.ai (302). link.url kept.'
-- 'G2 product is now titled "Complead (formerly Sanction Scanner)" (same 4.8 from 69 reviews); G2 themes still not visible. Review themes come from Capterra (source 16).'
+- 'G2 product is now titled "Complead (formerly Sanction Scanner)" (4.8 from 70 reviews on 23 Oct 2026; the complead review cites the same listing); G2 themes still not visible. Review themes come from Capterra (source 16).'
 application_category: AML Software
 author: andrii-klymenko
 legacy_reviewer:
