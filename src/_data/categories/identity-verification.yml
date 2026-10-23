@@ -2,12 +2,12 @@ slug: identity-verification
 url: /providers/identity-verification/
 seo:
   title: Top Identity Verification Companies in 2026 | BeVerified
-  description: 'KYCAID, Onfido, Jumio, and Persona compared: the top identity verification companies in 2026, ranked on liveness accuracy, coverage, and account-lifecycle reach.'
+  description: 'Sumsub, Incode and KYCAID lead our 2026 ranking of identity verification companies. Compare iBeta liveness levels, NFC, SOC 2 and trust-framework listings.'
   h1: Top Identity Verification Companies in 2026
 breadcrumb_label: Top Identity Verification Companies
-quick_answer: 'KYCAID is the best overall identity verification platform for most businesses, combining document and face checks, AML screening and address checks in flows you configure from one dashboard. Persona is the pick for flexible orchestration, with a no-code workflow builder and reusable templates. Onfido, now sold as Entrust Identity Verification, has liveness tested by iBeta to ISO/IEC 30107-3, and Jumio is the safest choice for global scale, with 5,000+ ID types across 200 countries and territories. We compared 5 providers on liveness accuracy, coverage and lifecycle reach.'
+quick_answer: 'Sumsub is our top-rated identity verification platform. Its liveness check passed iBeta''s ISO/IEC 30107-3 Level 3 test, and its Basic plan is published at $1.35 per verification with a $149 monthly minimum. Incode, also tested to Level 3, suits enterprises that want biometrics and a live-agent video module from one vendor, but it only quotes prices. KYCAID is the pick if you want per-module prices in euros. The matrix below compares liveness tests, NFC chip reading, SOC 2, ISO 27001, government trust frameworks and pricing for every ranked provider.'
 last_verified: '2026-10-18'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+updated: '2026-10-23'   # last content edit; last_verified = last fact re-check
 legacy_stats:
 - value: '4'
   label: providers compared
@@ -72,7 +72,13 @@ adjacent:
 - kyb
 - crypto
 - liveness-detection
-capability_columns: []
+capability_columns:
+- liveness_pad
+- nfc
+- soc2
+- iso_27001
+- trust_framework
+- published_pricing
 faq_templates: []
 legacy_issues: []
 author: andrii-klymenko
