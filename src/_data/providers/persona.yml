@@ -151,7 +151,19 @@ faq:
 - q: Who are Persona's main competitors?
   a: Persona competes with Sumsub, ComplyCube, and Onfido, differentiating through customizable, reusable workflow orchestration.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  nfc:
+    status: 'yes'
+    note: Mobile SDKs read passport and ID chips
+    source: 15
+  video_ident:
+    status: not_disclosed
+    note: no agent video call found
+  published_pricing:
+    status: partial
+    note: Essential price listed, others quoted
+    source: 1
 certifications:
 - name: FedRAMP Moderate (Persona for Government)
   what: US federal cloud security, certified since 10 Apr 2026
@@ -255,6 +267,10 @@ sources:
 - title: 'ACCS registry: Persona Identities Inc (Selfie Age Estimation)'
   publisher: Age Check Certification Scheme
   url: https://accscheme.com/registry/age-estimation/persona-identities-inc/
+  accessed: '2026-10'
+- title: Collecting passports and other IDs using NFC
+  publisher: Persona Help Center
+  url: https://help.withpersona.com/articles/1iu1Fak8y9RiOE2FddXrHJ
   accessed: '2026-10'
 entity:
   wikidata: null

@@ -219,7 +219,19 @@ faq:
 - q: Who are KYCAID's main competitors?
   a: KYCAID's main competitors are Sumsub, Trulioo, Jumio, and ComplyAdvantage. It differentiates mainly through customisable verification flows and published per-verification pricing.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  nfc:
+    status: not_disclosed
+    note: no NFC reading found
+  video_ident:
+    status: add_on
+    note: Agent-led video calls, standalone solution
+    source: 15
+  published_pricing:
+    status: partial
+    note: Enterprise tier quoted
+    source: 1
 certifications:
 - name: ISO/IEC 27001
   what: Information security
@@ -294,6 +306,10 @@ sources:
 - title: COMPLIGATE LTD, persons with significant control
   publisher: Companies House
   url: https://find-and-update.company-information.service.gov.uk/company/15376538/persons-with-significant-control
+  accessed: '2026-10'
+- title: Live Video KYC
+  publisher: KYCAID
+  url: https://kycaid.com/live-video-verification
   accessed: '2026-10'
 entity:
   wikidata: null
