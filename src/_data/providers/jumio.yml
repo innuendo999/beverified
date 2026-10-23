@@ -139,7 +139,20 @@ faq:
 - q: Who are Jumio's main competitors?
   a: Jumio competes with Onfido, Sumsub, and Regula, differentiating mainly on its processed-transaction scale and enterprise focus.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  nfc:
+    status: 'yes'
+    note: SDK reads passport and ID chips
+    source: 11
+  video_ident:
+    status: add_on
+    note: separate Video Verification product, agent modes
+    source: 12
+  published_pricing:
+    status: 'no'
+    note: quoted by sales
+    source: 2
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security
@@ -211,6 +224,14 @@ sources:
 - title: Jumio Identity Verification reviews
   publisher: Gartner Peer Insights
   url: https://www.gartner.com/reviews/product/jumio-identity-verification
+  accessed: '2026-10'
+- title: Mobile SDK for iOS, integration guide
+  publisher: Jumio
+  url: https://github.com/Jumio/mobile-sdk-ios/blob/master/docs/integration_guide.md
+  accessed: '2026-10'
+- title: Video Verification
+  publisher: Jumio
+  url: https://www.jumio.com/products/video-verification/
   accessed: '2026-10'
 entity:
   wikidata: null

@@ -132,7 +132,19 @@ faq:
 - q: Who are Regula's main competitors?
   a: Regula competes with Jumio, Onfido, and Sumsub. It differentiates through forensic document authentication, SDKs and hardware readers, though it now also sells its own IDV Platform.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  nfc:
+    status: 'yes'
+    note: SDK reads ePassport, eID and eDL chips
+    source: 2
+  video_ident:
+    status: not_disclosed
+    note: no agent video product found
+  published_pricing:
+    status: 'no'
+    note: quote on request, free trial
+    source: 2
 certifications:
 - name: ISO/IEC 30107-3 Level 2 (iBeta)
   what: Liveness / presentation attack detection, Regula Face Mobile SDK (Mar 2025, Dec 2025)

@@ -130,7 +130,19 @@ faq:
 - q: Who are Veridas' main competitors?
   a: Veridas competes with Onfido, Regula, and Sumsub, differentiating through its own face and voice biometric technology.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  nfc:
+    status: 'yes'
+    note: NFC SDK reads passport and eID chips
+    source: 19
+  video_ident:
+    status: not_disclosed
+    note: current docs describe unassisted video
+  published_pricing:
+    status: 'no'
+    note: no prices on site
+    source: 2
 certifications:
 - name: iBeta ISO/IEC 30107-3 PAD Level 2
   what: Liveness, Veridas Passive Liveness Detection (Apr 2024)
@@ -249,6 +261,10 @@ sources:
 - title: Identity Verification Platform (Veridas) reviews
   publisher: Gartner Peer Insights
   url: https://www.gartner.com/reviews/product/identity-verification-platform
+  accessed: '2026-10'
+- title: NFC SDK for Android (v2.10)
+  publisher: Veridas
+  url: https://docs.veridas.com/nfc-sdk/android/v2.10/
   accessed: '2026-10'
 entity:
   wikidata: null

@@ -143,7 +143,20 @@ faq:
 - q: Who are Shufti Pro's main competitors?
   a: Shufti Pro competes with Sumsub, Jumio, and Onfido, differentiating mainly through geographic/language breadth and flexible deployment options.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  nfc:
+    status: 'yes'
+    note: reads chips in e-ID documents
+    source: 15
+  video_ident:
+    status: add_on
+    note: VideoIdent on Enterprise plan only
+    source: 1
+  published_pricing:
+    status: partial
+    note: Enterprise plan quoted
+    source: 1
 certifications:
 - name: iBeta ISO/IEC 30107-3 PAD Level 3
   what: Liveness, presentation attack detection
@@ -243,6 +256,10 @@ sources:
 - title: Cyber Essentials
   publisher: Shufti Pro
   url: https://shuftipro.com/cyber-essentials
+  accessed: '2026-10'
+- title: NFC verification
+  publisher: Shufti
+  url: https://shuftipro.com/nfc-verification/
   accessed: '2026-10'
 entity:
   wikidata: null
