@@ -24,25 +24,25 @@ explainer_html:
 
   <ul>
 
-  <li>Today, Article 13(1)(a) of the EU AML Directive, as amended by <a href="https://eur-lex.europa.eu/eli/dir/2018/843/oj" rel="noopener">Directive (EU) 2018/843</a>, lets firms verify identity with electronic identification means, eIDAS trust services or any other secure remote process that national authorities regulate, recognise, approve or accept. The <a href="https://www.eba.europa.eu/node/166" rel="noopener">EBA Guidelines on remote customer onboarding</a> (EBA/GL/2022/15) have applied since 2 October 2023 (<a href="https://finanssivalvonta.fi/en/publications-and-press-releases/supervision-releases/2023/european-banking-authority-eba-guidelines-on-the-use-of-remote-customer-onboarding-solutions--application-begins-on-2-october-2023" rel="noopener">FIN-FSA notice</a>).</li>
+  <li>Today, Article 13(1)(a) of the EU AML Directive, as amended by Directive (EU) 2018/843, lets firms verify identity with electronic identification means, eIDAS trust services or any other secure remote process that national authorities regulate, recognise, approve or accept. The EBA Guidelines on remote customer onboarding (EBA/GL/2022/15) have applied since 2 October 2023.</li>
 
-  <li>From 10 July 2027, customer due diligence rules move into the Anti-Money Laundering Regulation, <a href="https://eur-lex.europa.eu/eli/reg/2024/1624/oj" rel="noopener">Regulation (EU) 2024/1624</a>, which applies directly in every member state. Its Article 22(6) covers identification through eIDAS electronic identification means and qualified trust services. On 1 October 2026 the <a href="https://www.amla.europa.eu/press-release-amla-finalises-key-standards-private-sector_en" rel="noopener">EU Anti-Money Laundering Authority</a> sent the Commission its final draft standards on customer due diligence, which cover non-face-to-face verification and electronic identification.</li>
+  <li>From 10 July 2027, customer due diligence rules move into the <a href="https://eur-lex.europa.eu/eli/reg/2024/1624/oj">Anti-Money Laundering Regulation</a>, Regulation (EU) 2024/1624, which applies directly in every member state. Its Article 22(6) covers identification through eIDAS electronic identification means and qualified trust services. On 1 October 2026 the EU Anti-Money Laundering Authority sent the Commission its final draft standards on customer due diligence, which cover non-face-to-face verification and electronic identification.</li>
 
   </ul>
 
   <h2>eIDs and the EU Digital Identity Wallet</h2>
 
-  <p>eIDAS, <a href="https://eur-lex.europa.eu/eli/reg/2014/910/oj" rel="noopener">Regulation (EU) No 910/2014</a>, sets the EU rules for electronic identification and trust services. Its amendment, <a href="https://eur-lex.europa.eu/eli/reg/2024/1183/oj" rel="noopener">Regulation (EU) 2024/1183</a> (eIDAS 2, in force since 20 May 2024), requires each member state to provide at least one EU Digital Identity Wallet within 24 months of the implementing acts. The <a href="https://commission.europa.eu/topics/digital-economy-and-society/european-digital-identity_en" rel="noopener">European Commission</a> says wallets will be available to every citizen, resident and business by the end of 2026. Private services that must use strong user authentication, such as banks, have to accept the wallet no later than 36 months after the implementing acts (Article 5f(2)). Many markets already onboard with bank and national eIDs, such as BankID, MitID and Smart-ID in the Nordics and Baltics.</p>
+  <p>eIDAS, Regulation (EU) No 910/2014, sets the EU rules for electronic identification and trust services. Its amendment, <a href="https://eur-lex.europa.eu/eli/reg/2024/1183/oj">Regulation (EU) 2024/1183</a>, known as eIDAS 2, has been in force since 20 May 2024. It requires each member state to provide at least one EU Digital Identity Wallet within 24 months of the implementing acts, and the European Commission says wallets will be available to every citizen, resident and business by the end of 2026. Under Article 5f(2), private services that must use strong user authentication, such as banks, have to accept the wallet no later than 36 months after the implementing acts. Many markets already onboard with bank and national eIDs, such as BankID, MitID and Smart-ID in the Nordics and Baltics.</p>
 
   <h2>Video identification and NFC chip reading</h2>
 
   <ul>
 
-  <li>Germany: <a href="https://www.bafin.de/ref/19621456" rel="noopener">BaFin Circular 3/2017 (GW)</a> sets the conditions for agent-led video identification under the German Money Laundering Act.</li>
+  <li>Germany: <a href="https://www.bafin.de/ref/19621456">BaFin Circular 3/2017 (GW)</a> sets the conditions for agent-led video identification under the German Money Laundering Act.</li>
 
-  <li>India: the Reserve Bank of India''s <a href="https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=13141" rel="noopener">Know Your Customer Directions, 2025</a> for commercial banks allow V-CIP, a live, consent-based audio-visual interaction run by specially trained bank officials, with face liveness or spoof detection and GPS geo-tagging of the customer.</li>
+  <li>India: the Reserve Bank of India''s Know Your Customer Directions, 2025 for commercial banks allow V-CIP, a live, consent-based audio-visual interaction run by specially trained bank officials, with face liveness or spoof detection and GPS geo-tagging of the customer.</li>
 
-  <li>NFC: ePassports carry a chip specified in <a href="https://www.icao.int/publications/pages/publication.aspx?docnum=9303" rel="noopener">ICAO Doc 9303</a>. Reading it lets the app check the issuing state''s signature on the stored data (passive authentication), which a photo of the document cannot prove.</li>
+  <li>NFC: ePassports carry a chip specified in ICAO Doc 9303. Reading it lets the app check the issuing state''s signature on the stored data (passive authentication), which a photo of the document cannot prove.</li>
 
   </ul>
 

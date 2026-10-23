@@ -142,7 +142,13 @@ export default function (eleventyConfig) {
     .replace(/\s+style="[^"]*"/g, "")
     .replace(/\s+class="(?!callout")[^"]*"/g, "")
     .replace(/\s+id="[^"]*"/g, "")
-    .replace(/^<section[^>]*>|<\/section>$/g, ""));
+    .replace(/^<section[^>]*>|<\/section>$/g, "")
+    // External links in category explainers are citations, not endorsements: always rel="nofollow noopener".
+    .replace(/<a\s([^>]*?)>/g, (tag, attrs) => {
+      const href = (attrs.match(/href="([^"]*)"/) || [])[1] || "";
+      if (!/^https?:\/\//i.test(href) || /^https?:\/\/(www\.)?beverified\.org/i.test(href)) return tag;
+      return `<a ${attrs.replace(/\s*rel="[^"]*"/g, "").trim()} rel="nofollow noopener">`;
+    }));
 
   // Table of contents from <section id="..."> ... <h2>Title</h2> pairs in rendered content.
   eleventyConfig.addFilter("toc", (html) => {
