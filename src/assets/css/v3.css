@@ -750,6 +750,18 @@ a.chip:hover { border-color: var(--line-hover); color: var(--ink); text-decorati
 .cap-legend { font-size: 14px; color: var(--body); margin-bottom: 14px; }
 .cap-legend--key { display: flex; flex-wrap: wrap; gap: 6px 16px; }
 .cap-legend > span { white-space: nowrap; }
+.seg-table { width: 100%; border-collapse: collapse; font-size: 15px; }
+.seg-table th, .seg-table td { text-align: left; vertical-align: top; padding: 14px 20px; border-top: 1px solid var(--line-soft); }
+.seg-table thead th { border-top: 0; font-size: 13px; font-weight: 500; color: var(--muted); padding-top: 12px; padding-bottom: 12px; }
+.seg-table tbody th { font-weight: 500; width: 26%; }
+.seg-table td:nth-child(2) { width: 18%; white-space: nowrap; }
+.seg-table td:last-child { color: var(--body); line-height: 1.5; }
+@media (max-width: 640px) {
+  .seg-table thead { display: none; }
+  .seg-table tr { display: block; padding: 12px 16px; border-top: 1px solid var(--line-soft); }
+  .seg-table tbody tr:first-child { border-top: 0; }
+  .seg-table th, .seg-table td { display: block; padding: 2px 0; border: 0; width: auto !important; white-space: normal; }
+}
 .cap-matrix { position: relative; padding: 0; overflow: hidden; }
 .cap-matrix::after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; width: 36px; background: linear-gradient(90deg, rgba(255,255,255,0), var(--surface)); pointer-events: none; }
 .cap-matrix__scroll { overflow-x: auto; overflow-y: hidden; scrollbar-width: thin; }

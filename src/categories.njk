@@ -91,6 +91,23 @@ layout: v3.njk
     </section>
     {%- endif %}
 
+    {%- if segmentPicks.length %}
+    <section aria-labelledby="seg-h">
+      <h2 id="seg-h" class="h-section">{{ c.segments_heading or "Best pick by use case" }}</h2>
+      <div class="card table-scroll">
+        <table class="seg-table">
+          <caption class="visually-hidden">{{ c.breadcrumb_label }}: our pick for each use case and why.</caption>
+          <thead><tr><th scope="col">Use case</th><th scope="col">Our pick</th><th scope="col">Why</th></tr></thead>
+          <tbody>
+          {%- for x in segmentPicks %}
+            <tr><th scope="row">{{ x.segment }}</th><td><a href="/providers/{{ x.q.slug }}/">{{ x.q.name }}</a></td><td>{{ x.reason }}</td></tr>
+          {%- endfor %}
+          </tbody>
+        </table>
+      </div>
+    </section>
+    {%- endif %}
+
     {%- if matrix %}
     <section aria-labelledby="cap-h">
       <h2 id="cap-h" class="h-section">Capabilities compared</h2>
