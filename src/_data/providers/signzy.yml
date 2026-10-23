@@ -125,7 +125,19 @@ faq:
 - q: Who are Signzy's main competitors?
   a: Signzy competes with IDMERIT, ComplyCube, and KYC Hub, differentiating through deep India-specific regulatory coverage.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  nfc:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  video_ident:
+    status: 'yes'
+    note: live agent V-CIP in no-code platform
+    source: 14
+  published_pricing:
+    status: 'no'
+    note: pay-as-you-go, quote on request
+    source: 9
 certifications:
 - name: ISO/IEC 27001
   what: Information security
@@ -205,6 +217,10 @@ sources:
 - title: General compliance (operational framework)
   publisher: Signzy
   url: https://docs.signzy.com/no-code-platform/general-compliance
+  accessed: '2026-10'
+- title: 'VCIP (no-code platform)'
+  publisher: Signzy
+  url: https://docs.signzy.com/no-code-platform/vcip
   accessed: '2026-10'
 entity:
   wikidata: null

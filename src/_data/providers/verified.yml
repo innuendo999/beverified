@@ -126,7 +126,19 @@ faq:
 - q: Who are Verified's main competitors?
   a: Verified competes with Signicat, SmartSearch, and KYC360, differentiating through its Nordic focus and bundled AML+e-signing+e-ID approach.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  nfc:
+    status: add_on
+    note: passport chip reader via Verified Secure
+    source: 22
+  video_ident:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  published_pricing:
+    status: 'no'
+    note: demo request, no prices
+    source: 14
 certifications:
 - name: ISO/IEC 27001
   what: Information security
@@ -220,6 +232,10 @@ sources:
 - title: Verified Global AB company profile (Bolagsverket data)
   publisher: tic.io
   url: https://tic.io/en/foretag/verified-global-ab-1915042
+  accessed: '2026-10'
+- title: 'Identity Authentication Using ID Verifier (Passport Reader)'
+  publisher: Verified
+  url: https://support.verified.eu/guide/new-feature-authentication-is-now-available-using-the-passport-reader
   accessed: '2026-10'
 entity:
   wikidata: null
