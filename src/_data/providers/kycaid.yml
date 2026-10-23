@@ -232,6 +232,31 @@ capabilities:
     status: partial
     note: Enterprise tier quoted
     source: 1
+  age_document:
+    status: 'yes'
+    note: ID document check, wide coverage
+    source: 16
+  age_facial_estimation:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  age_email_estimation:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  age_mobile_operator:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  age_credit_card:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  age_open_banking:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  age_digital_id:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  age_reusable:
+    status: not_disclosed
+    note: nothing found on vendor pages
 certifications:
 - name: ISO/IEC 27001
   what: Information security
@@ -310,6 +335,10 @@ sources:
 - title: Live Video KYC
   publisher: KYCAID
   url: https://kycaid.com/live-video-verification
+  accessed: '2026-10'
+- title: Age verification solution
+  publisher: KYCAID
+  url: https://kycaid.com/age-verification
   accessed: '2026-10'
 entity:
   wikidata: null

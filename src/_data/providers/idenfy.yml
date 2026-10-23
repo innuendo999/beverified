@@ -186,6 +186,34 @@ capabilities:
     status: partial
     note: Basic and Premium published, Enterprise quoted
     source: 8
+  age_document:
+    status: 'yes'
+    note: ID document with selfie and liveness
+    source: 17
+  age_facial_estimation:
+    status: 'yes'
+    note: selfie estimation, document fallback
+    source: 16
+  age_email_estimation:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  age_mobile_operator:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  age_credit_card:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  age_open_banking:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  age_digital_id:
+    status: 'yes'
+    note: non-document digital IDs listed
+    source: 17
+  age_reusable:
+    status: 'yes'
+    note: returning users reuse original verified record
+    source: 16
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security (cert. ISMS-1851/A, CERT International, valid to Jun 2029)
@@ -278,6 +306,14 @@ sources:
 - title: iDenfy reviews
   publisher: Capterra
   url: https://www.capterra.com/p/230599/iDenfy/reviews/
+  accessed: '2026-10'
+- title: Age estimation service
+  publisher: iDenfy
+  url: https://idenfy.com/age-estimation-service/
+  accessed: '2026-10'
+- title: Age verification service
+  publisher: iDenfy
+  url: https://idenfy.com/?p=39028
   accessed: '2026-10'
 entity:
   wikidata: null

@@ -164,6 +164,38 @@ capabilities:
     status: 'no'
     note: demo request form only
     source: 10
+  age_document:
+    status: 'no'
+    note: face image only, no document reading
+    source: 8
+  age_facial_estimation:
+    status: 'yes'
+    note: Age Estimator SDK, face image only
+    source: 8
+  age_email_estimation:
+    status: 'no'
+    note: face estimation software only
+    source: 8
+  age_mobile_operator:
+    status: 'no'
+    note: face estimation software only
+    source: 8
+  age_credit_card:
+    status: 'no'
+    note: face estimation software only
+    source: 8
+  age_open_banking:
+    status: 'no'
+    note: face estimation software only
+    source: 8
+  age_digital_id:
+    status: 'no'
+    note: face estimation software only
+    source: 8
+  age_reusable:
+    status: 'no'
+    note: no age token, estimation SDK only
+    source: 8
 certifications:
 - name: iBeta ISO/IEC 30107-3 PAD Level 2
   what: Liveness, Paravision Liveness v1.2 on iPhone 13, iOS 16.6 (Dec 2023), 0% APCER
