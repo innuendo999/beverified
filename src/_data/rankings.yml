@@ -1034,155 +1034,172 @@ kyb:
   - slug: kycaid
     name: KYCAID
     award: Editor's Choice
-    tagline: Company checks covering corporate documents, business address, UBOs and authorised persons, inside a customisable flow.
-    coverage: Global
+    tagline: Company checks covering corporate documents, business address, UBOs and authorised persons, priced at €10 each on a published list.
+    coverage: Not publicly disclosed
     size: SMB to Mid-market
     pros:
-    - Company check covers UBOs and authorised persons
-    - Customisable verification flows from one dashboard
-    - Dedicated account manager and compliance team on the Enterprise plan
+    - Company check covers corporate documents, business address, UBOs and authorised persons
+    - KYB price is published at €10 per company check
+    - Company checks sit in the same customisable verification flow as its KYC and AML modules, managed from one dashboard
     cons:
-    - Company check costs €10 per check; no registry or country coverage list is published
-    - Smaller watchlist database than category leaders
-    - Single-module prices carry a fixed €100 monthly service fee
-    legacy_price_shown: From €0.50/check + €100/mo
-    legacy_rating_shown: 4.7
+    - No registry or country coverage list is published for company checks
+    - No AML screening of companies found, and ongoing monitoring is described for individuals only
+    - Single-module prices, including the company check, carry a fixed €100 monthly service fee
+    legacy_price_shown: €10/company check
+    legacy_rating_shown: 4.6
+    segments: []
+  - slug: sumsub
+    name: Sumsub
+    award: Best for All-in-One KYC and KYB
+    tagline: KYC, KYB, AML screening and transaction monitoring in one platform, with company registry coverage in 200+ countries and territories, per Sumsub.
+    coverage: 200+ countries and territories
+    size: SMB to Enterprise
+    pros:
+    - Ownership structure and UBO verification, with AML screening built into KYB checks
+    - Ongoing business monitoring with risk-based rechecks
+    - AI checks on company documents, backed by manual review
+    cons:
+    - KYB is only in the custom, quote-based plan, so there is no published KYB price
+    - Some reviewers report occasional false-positive flags
+    - SOC 2 Type 2 and ISO/IEC 27001 are vendor-stated, with no report or certificate linked from its Trust Center
+    legacy_price_shown: Custom pricing
+    legacy_rating_shown: 4.8
     segments: []
   - slug: veriff
     name: Veriff
     award: Best for KYB Plus Biometric IDV
-    tagline: Biometric identity verification with KYB from 300+ jurisdictions, offered through a limited access program.
-    coverage: Global
+    tagline: Biometric identity verification with KYB from over 300 jurisdictions, added through the Vespia acquisition and offered in a limited access program.
+    coverage: Over 300 jurisdictions
     size: SMB to Enterprise
     pros:
-    - KYB draws on register data from 300+ jurisdictions, per Veriff
-    - Passive liveness tested by iBeta to Level 2 for checking the people behind a business
-    - Published self-serve pricing for individual checks
+    - Register data from over 300 jurisdictions, per Veriff
+    - KYB product comes from Vespia, the Estonian KYB provider whose acquisition Veriff announced in February 2026
+    - Individual checks from the same vendor, with passive liveness tested by iBeta to ISO/IEC 30107-3 Level 2
     cons:
-    - KYB offered only through a limited access program as of Oct 2026
-    - KYB pricing is not published
-    - AML/watchlist screening is a paid add-on
-    legacy_price_shown: From $0.80/verification ($49/mo min)
+    - KYB is offered only through a limited access program; general availability was not confirmed as of Oct 2026
+    - No UBO, company document or ongoing business monitoring features are named on its KYB pages
+    - KYB pricing is not published, and AML screening is a separate product
+    legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.6
     segments: []
-  - slug: complyadvantage
-    name: ComplyAdvantage
-    award: Best for Enterprise Risk Data
-    tagline: Screens companies against sanctions, PEP and adverse-media data, with ongoing monitoring.
-    coverage: Global
+  - slug: persona
+    name: Persona
+    award: Best for Configurable KYB Workflows
+    tagline: No-code workflow builder that combines business verification in 150+ countries with UBO checks and recurring business watchlist monitoring.
+    coverage: 150+ countries
+    size: Mid-market to Enterprise
+    pros:
+    - UBO verification inside the KYB flow, with businesses and UBOs screened against watchlists
+    - Recurring business watchlist and adverse media monitoring
+    - Business document verification via API, plus Cases for manual review
+    cons:
+    - KYB is quoted only, on the Growth plan and above
+    - Flexibility means a steeper configuration curve
+    - Less specialized AML data depth than dedicated screening vendors
+    legacy_price_shown: Custom pricing
+    legacy_rating_shown: 4.6
+    segments: []
+  - slug: shufti-pro
+    name: Shufti Pro
+    award: Best for Live Registry Checks
+    tagline: KYB across 240+ live registries, tracing direct and indirect ownership layers and sending webhooks when registry or director details change.
+    coverage: 240+ live registries
     size: SMB to Enterprise
     pros:
-    - Company screening against sanctions, watchlists and adverse media
-    - Ongoing monitoring of screened entities
-    - Starter plan from $99/month is published
+    - 240+ live registries, per Shufti Pro, with direct and indirect ownership layers traced
+    - The entity, its directors and its UBOs are screened, with webhooks on registry and director changes
+    - OCR on incorporation certificates and registers
     cons:
-    - No company registry or UBO lookups listed in its features
-    - Initial setup can be involved, per user reviews
-    - Enterprise tier with unlimited usage is quoted only
-    legacy_price_shown: From $99/mo
+    - KYB is not priced separately; rates are quoted
+    - Setup fees, minimums and trial terms are not stated on the pricing page
+    - ISO 27001, SOC 2 Type II and PCI DSS are vendor-stated, with no certification body or auditor named
+    legacy_price_shown: Custom pricing
+    legacy_rating_shown: 4.6
+    segments: []
+  - slug: signicat
+    name: Signicat
+    award: Best for Pan-European KYB
+    tagline: KYC and KYB on one platform, drawing on more than 30 national and commercial registries alongside 35+ mostly European eID methods.
+    coverage: More than 30 national and commercial registries
+    size: Mid-market to Enterprise
+    pros:
+    - Data from more than 30 national and commercial registries, per Signicat
+    - Maps ownership structures and screens against PEP, sanctions and adverse media
+    - ISO/IEC 27001:2022 certificate issued by DNV, with e-signing in the same platform
+    cons:
+    - Ongoing business monitoring is an add-on through partner Markaaz
+    - Company document checks are not described on its vendor pages
+    - No published pricing; costs combine setup, subscription and transaction fees
+    legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.6
     segments: []
   - slug: trulioo
     name: Trulioo
     award: Best for Global Registry Reach
-    tagline: KYB on 700 million business entities across 195 countries, per Trulioo.
-    coverage: Global
+    tagline: KYB on 700M+ business entities from hundreds of government registries, with UBO Discovery where registries fall short, per Trulioo.
+    coverage: Hundreds of government registries
     size: Enterprise
     pros:
-    - KYB on 700M business entities, per Trulioo
-    - Combines individual and business verification in one platform
+    - UBO Discovery fills ownership gaps where registries fall short
+    - Business sanctions and adverse media screening, plus reverification and perpetual monitoring
     - Credit decisioning added to its KYB product in November 2025
     cons:
     - No published pricing; rates are quoted on request
-    - Needs meaningful technical resources to integrate
-    - Leans toward a data API rather than a no-code platform
+    - Registry document retrieval varies by country
+    - Needs meaningful technical resources to integrate its data-API model
+    legacy_price_shown: Custom pricing
+    legacy_rating_shown: 4.5
+    segments: []
+  - slug: gbg
+    name: GBG
+    award: Best for KYB from a Listed Vendor
+    tagline: GBG Detected, built with partner Detected, draws on 600m+ company records and ownership registries and keeps monitoring risk after onboarding.
+    coverage: 600m+ company records and ownership registries
+    size: Mid-market to Enterprise
+    pros:
+    - 600m+ company records and ownership registries, per GBG
+    - Directors and UBOs screened against PEP and sanctions lists
+    - Background risk monitoring after onboarding
+    cons:
+    - KYB is delivered as GBG Detected, a product built with partner Detected
+    - No published pricing; KYB is quoted on request
+    - Company document checks are not described, and GBG Go has only one G2 review
+    legacy_price_shown: Custom pricing
+    legacy_rating_shown: 4.5
+    segments: []
+  - slug: idenfy
+    name: iDenfy
+    award: Best for KYB with Shareholder KYC
+    tagline: KYB with access to 180+ company registries across 120 countries, full ownership mapping and KYC on shareholders, per iDenfy.
+    coverage: 180+ company registries across 120 countries
+    size: SMB to Mid-market
+    pros:
+    - Maps the full ownership structure and runs KYC on shareholders
+    - Requests company documents and cross-checks them with registries
+    - Perpetual KYB with ongoing alerts, plus PEP and sanctions screening of companies and individuals
+    cons:
+    - KYB is quoted only, unlike its published per-check KYC plans
+    - Smaller brand and scale than category leaders
+    - Primary focus and case studies skew toward the EU market
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.5
     segments: []
   - slug: enigma
     name: Enigma
     award: Best for US Business Verification
-    tagline: US business verification by API, matching against 100M+ registrations across 52 US jurisdictions, per Enigma.
+    tagline: US-only KYB by API across all 52 US jurisdictions, with a public rate card and no charge for searches that do not match.
     coverage: US only
     size: SMB to Enterprise
     pros:
-    - Published rate card, with KYB at $1.50 or $2.50 per match and no charge for non-matches
-    - Card revenue and operating signals show whether a business is actually trading
-    - GraphQL API, Console and MCP server, plus partner platforms such as Alloy
+    - Published rate card, with KYB Identify at $1.50 and KYB Verify at $2.50 per match and no charge for non-matches
+    - KYB Verify returns the full Secretary of State record, including registration status
+    - Card revenue and operating status signals show whether a business is actually operating
     cons:
     - US only; Enigma says it has no plans to expand KYB outside the US
-    - No UBO register data; possible owners come mainly from state filings
+    - No UBO register data or document retrieval; possible owners come from officers in state filings
     - SOC 2 Type 2 is vendor-stated, and there are almost no public user reviews
-    legacy_price_shown: From $1.50/KYB match
-    legacy_rating_shown: null
-    segments: []
-  - slug: zyphe
-    name: Zyphe
-    award: Best for Agent-Prepared KYB Reviews
-    tagline: KYB with register cross-checks in 49 countries and territories plus the US, and AI agents that prepare UBO reviews for human sign-off, per Zyphe.
-    coverage: Strongest in Europe and US
-    size: SMB to Mid-market
-    pros:
-    - UBO discovery at a configurable 25% threshold, with linked KYC for every owner and director
-    - AI agent prepares company and UBO reviews for $3.00 each, with cited evidence
-    - Self-serve setup with a sandbox, Node and browser SDKs and an MCP server
-    cons:
-    - KYB prices are not on the published rate card
-    - Register checks cover 49 countries and territories plus the US; elsewhere data is applicant-declared
-    - SOC 2 and ISO/IEC 27001 are still in progress
-    legacy_price_shown: From $3.00/UBO review
-    legacy_rating_shown: null
-    segments: []
-  - slug: null
-    name: Encompass
-    award: Best for Live Registry Pulls
-    tagline: Pulls directly from official company registries instead of cached snapshots.
-    coverage: Strongest in UK/EU
-    size: Mid-market to Enterprise
-    pros:
-    - Live registry queries, not cached databases
-    - Level 2 straight-through processing for clean structures
-    - Visual ownership-chain mapping
-    cons:
-    - Enterprise-oriented implementation
-    - Fewer regions outside UK/EU/Australia
-    - Pricing requires a sales conversation
-    legacy_price_shown: Custom pricing
-    legacy_rating_shown: 4.5
-    segments: []
-  - slug: null
-    name: Kyckr
-    award: Best for Registry Breadth
-    tagline: Direct feeds from global company registries for ownership verification.
-    coverage: Global
-    size: Mid-market to Enterprise
-    pros:
-    - Direct-registry network rather than cached data
-    - Strong for cross-border corporate structures
-    - API-first data delivery
-    cons:
-    - Less full-featured onboarding UI than rivals
-    - Best suited to teams with in-house dev resources
-    - Support hours skew to UK/EU business hours
-    legacy_price_shown: Custom pricing
+    legacy_price_shown: $1.50/KYB match
     legacy_rating_shown: 4.4
-    segments: []
-  - slug: null
-    name: Ondato
-    award: Best for SMB KYB
-    tagline: UBO mapping and registry checks for SMB compliance teams.
-    coverage: Strongest in EU
-    size: SMB
-    pros:
-    - Aimed at SMB compliance teams
-    - Fast self-serve setup
-    - Covers document plus registry checks in one flow
-    cons:
-    - Registry depth lighter in emerging markets
-    - Smaller support team than enterprise vendors
-    - Not yet reviewed by BeVerified; confirm current pricing with the vendor
-    legacy_price_shown: See vendor site
-    legacy_rating_shown: 4.3
     segments: []
 liveness-detection:
   title: Best Liveness Detection Providers in 2026
