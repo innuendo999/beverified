@@ -98,3 +98,20 @@ Worked through all 13 `verification_notes`; 12 remain (funding and leadership me
 ### Score flag
 
 None.
+
+## Follow-up 2026-10-25 (KYB)
+
+### Changed
+
+- Feature "Transaction screening for wires, ACH, Zelle and similar payments, with ongoing monitoring of customers." → "Transaction screening for wires, ACH, Zelle and similar payments." Reason: `capabilities.kyb_monitoring` is `not_disclosed`; KYB docs, KYB FAQ and KYB packages pages (sources 5, 20, 21) describe no monitoring, re-checks or alerts on businesses after onboarding (re-checked 2026-10-25).
+- FAQ "Does Enigma offer sanctions screening?": "at onboarding and on an ongoing basis" removed from Enigma's own claim; answer now says the screening page (source 8) describes ongoing customer screening, and that the KYB docs do not describe monitoring of business records.
+- Checked with no change needed: tagline, seo.description, verdict, what_is, pros, cons, user_reviews.by_profile (no monitoring claim). Pros and cons stay 3 and 3.
+- `verification_notes`: added the 2026-10-25 monitoring note. `updated` → 2026-10-25; `last_verified` unchanged.
+
+### Open point
+
+- The screening page (source 8) does state "Customer screening at the time of onboarding and on an ongoing basis for both persons and business entities" under "Ongoing customer monitoring for any changes in sanctions status" (no frequency). Editor may want `kyb_monitoring` reviewed (e.g. `partial`, sanctions re-screening only); capabilities were not edited here.
+
+### Ranking cards
+
+- `kyb` card (`slug: enigma`): no monitoring claim; nothing contradicts the record.

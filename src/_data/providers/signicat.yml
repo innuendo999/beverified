@@ -148,6 +148,29 @@ capabilities:
     status: 'no'
     note: quote on request
     source: 2
+  kyb_registry:
+    status: 'yes'
+    note: more than 30 national and commercial registries
+    source: 19
+  kyb_ubo:
+    status: 'yes'
+    note: maps ownership structures
+    source: 18
+  kyb_entity_screening:
+    status: 'yes'
+    note: PEP, sanctions, adverse media
+    source: 18
+  kyb_monitoring:
+    status: add_on
+    note: via Markaaz partner business data
+    source: 20
+  kyb_documents:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  kyb_pricing:
+    status: 'no'
+    note: quote only
+    source: 18
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security (DNV, valid to Oct 2029)
@@ -255,6 +278,18 @@ sources:
 - title: Signicat VideoID developer documentation
   publisher: Signicat
   url: https://developer.signicat.com/docs/id-document-and-biometric-verification/provider-specific-integrations/videoid/
+  accessed: '2026-10'
+- title: 'One platform for the full KYC/KYB lifecycle'
+  publisher: Signicat
+  url: https://www.signicat.com/kyc-kyb-platform
+  accessed: '2026-10'
+- title: 'Data Verification'
+  publisher: Signicat
+  url: https://www.signicat.com/products/identity-proofing/data-verification
+  accessed: '2026-10'
+- title: 'Signicat and Markaaz partner to strengthen global SMB verification and onboarding (Dec 2025)'
+  publisher: Signicat
+  url: https://www.signicat.com/press-releases/signicat-and-markaaz-partnership
   accessed: '2026-10'
 entity:
   wikidata: null

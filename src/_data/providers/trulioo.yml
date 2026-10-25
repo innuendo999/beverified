@@ -152,6 +152,30 @@ capabilities:
     status: 'no'
     note: contact sales only, no prices
     source: 1
+  kyb_registry:
+    status: 'yes'
+    note: hundreds of government registries, 700M+ entities
+    source: 13
+  kyb_ubo:
+    status: 'yes'
+    note: UBO Discovery where registries fall short
+    source: 13
+  kyb_entity_screening:
+    status: 'yes'
+    note: business sanctions and adverse media checks
+    source: 15
+  kyb_monitoring:
+    status: 'yes'
+    note: reverification and perpetual monitoring
+    source: 13
+  kyb_documents:
+    status: 'yes'
+    note: registry documents retrieved, varies by country
+    source: 14
+  kyb_pricing:
+    status: 'no'
+    note: quote only
+    source: 1
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security (since 2015)
@@ -223,6 +247,18 @@ sources:
 - title: Trulioo reviews
   publisher: Gartner Peer Insights
   url: https://www.gartner.com/reviews/product/trulioo-400589733
+  accessed: '2026-10'
+- title: 'Business Verification Services, KYB Compliance'
+  publisher: Trulioo
+  url: https://www.trulioo.com/solutions/business-verification
+  accessed: '2026-10'
+- title: 'KYB best practices (developer documentation)'
+  publisher: Trulioo
+  url: https://developer.trulioo.com/reference/kyb-best-practices
+  accessed: '2026-10'
+- title: 'Business Screening (developer documentation)'
+  publisher: Trulioo
+  url: https://developer.trulioo.com/reference/kyb-business-screening
   accessed: '2026-10'
 entity:
   wikidata: null

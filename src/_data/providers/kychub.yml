@@ -178,6 +178,30 @@ capabilities:
     note: three quoted tiers
     source: 2
   checked: '2026-10'
+  kyb_registry:
+    status: add_on
+    note: '200+ official corporate registries, Enterprise tier'
+    source: 8
+  kyb_ubo:
+    status: add_on
+    note: UBO discovery, Enterprise tier only
+    source: 2
+  kyb_entity_screening:
+    status: add_on
+    note: entity and UBOs, Enterprise tier
+    source: 8
+  kyb_monitoring:
+    status: add_on
+    note: registry and ownership change alerts
+    source: 8
+  kyb_documents:
+    status: add_on
+    note: incorporation and filings from registries
+    source: 8
+  kyb_pricing:
+    status: 'no'
+    note: quote only
+    source: 2
 certifications:
 - name: ISO/IEC 27001
   what: Information security
@@ -220,6 +244,10 @@ sources:
 - title: Case management
   publisher: KYC Hub
   url: https://www.kychub.com/compliance-case-management
+  accessed: '2026-10'
+- title: Global KYB solution
+  publisher: KYC Hub
+  url: https://www.kychub.com/global-kyb-solution
   accessed: '2026-10'
 entity:
   wikidata: null

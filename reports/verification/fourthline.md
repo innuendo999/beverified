@@ -54,3 +54,16 @@
 ### Score flag
 
 - None new. The Veridas merger is still pending; re-check score and brand after closing.
+
+## Follow-up 2026-10-25 (KYB)
+
+### Changed
+
+- `categories`: removed `kyb`. `directory_categories`: removed "KYB". Reason: `capabilities.kyb_*` are all `not_disclosed` (no KYB on current solution pages); homepage navigation re-checked 2026-10-25 lists Identity Verification, Digital Proof of Address, Qualified Electronic Signature, Investigations & CDD Reporting, AML Screening & Monitoring, Re-KYC & Remediation, Anti-Financial Crime and Case Review Portal, with no KYB or business verification product (source 2).
+- Prose checked (seo.description, tagline, verdict, what_is, features, pros, cons, user_reviews, faq): no KYB claim found, so no prose change. "AML screening and monitoring" refers to customer AML, not KYB. Pros and cons stay 3 and 3.
+- `verification_notes`: the "Editor to decide on the kyb category" note replaced with the 2026-10-25 KYB finding, including the only historical mention found: a 13 Jan 2021 Fourthline news item on 2020 growth says Bol.com verified 20,000+ resellers through "Fourthline's KYC for Business solution". Not used in copy.
+- `updated` → 2026-10-25; `last_verified` unchanged.
+
+### Ranking cards
+
+- `slug: fourthline` appears only under `e-kyc` (not `kyb`). Card text makes no KYB claim; nothing to correct.

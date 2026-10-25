@@ -257,6 +257,30 @@ capabilities:
     status: partial
     note: KYB and Managed Operations quoted
     source: 2
+  kyb_registry:
+    status: 'yes'
+    note: '240+ registries; docs list 49 countries'
+    source: 8
+  kyb_ubo:
+    status: 'yes'
+    note: automatic discovery, 25% default threshold
+    source: 5
+  kyb_entity_screening:
+    status: 'yes'
+    note: company, owners and directors screened
+    source: 8
+  kyb_monitoring:
+    status: 'yes'
+    note: company AML monitoring and file refresh
+    source: 2
+  kyb_documents:
+    status: 'yes'
+    note: incorporation certificate, articles, structure chart
+    source: 5
+  kyb_pricing:
+    status: partial
+    note: '$3.00 per company and UBO review'
+    source: 2
 certifications:
 - name: SOC 2 (in progress)
   what: Type I audit targeted for Oct 2026; no report issued yet

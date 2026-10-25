@@ -207,6 +207,30 @@ capabilities:
     status: partial
     note: Only the screening Starter plan is published
     source: 22
+  kyb_registry:
+    status: 'yes'
+    note: '160+ Countries Checked'
+    source: 8
+  kyb_ubo:
+    status: 'yes'
+    note: chain resolved to natural persons
+    source: 8
+  kyb_entity_screening:
+    status: 'yes'
+    note: every party in chain screened
+    source: 8
+  kyb_monitoring:
+    status: 'yes'
+    note: ownership, directors, status, filings monitored
+    source: 8
+  kyb_documents:
+    status: 'yes'
+    note: registry filings retrieved, no upload stated
+    source: 8
+  kyb_pricing:
+    status: 'no'
+    note: quote only
+    source: 8
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security

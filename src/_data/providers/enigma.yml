@@ -21,7 +21,7 @@ link:
   url: https://www.enigma.com
   type: none
 last_verified: '2026-10-22'
-updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
+updated: '2026-10-25'   # last content edit; last_verified = last fact re-check
 verdict: 'Enigma suits teams onboarding US small businesses that want KYB by API and a public price list: $1.50 or $2.50 per match, with no charge when nothing matches. It checks more than 100 million registrations across all 52 US jurisdictions and adds signals that show whether a business is operating. KYB is US only, so it works best as the US layer in a multi-vendor setup. Its SOC 2 Type 2 claim is vendor-stated.'
 what_is:
 - Enigma Technologies is a New York data company founded in 2011 by Hicham Oudghiri and Marc DaCosta. It started out publishing public government data and now sells data on the identity and financial health of US small and medium businesses. It raised a $95 million round in September 2018 led by NEA, with BB&T, Capital One Growth Ventures, MetLife and Third Point among the new investors. Its products cover KYB (Identify and Verify), sanctions and PEP screening for customers and transactions, enrichment and card revenue data for underwriting and sales, and a government records archive.
@@ -30,7 +30,7 @@ features:
 - KYB Identify confirms a business is real and operating; KYB Verify adds the full Secretary of State record and registration status.
 - Business registration data across 52 US jurisdictions (50 states, DC and Puerto Rico), from 200+ sources.
 - Optional TIN/EIN and SSN verification, plus OFAC sanctions and PEP watchlist screening.
-- Transaction screening for wires, ACH, Zelle and similar payments, with ongoing monitoring of customers.
+- Transaction screening for wires, ACH, Zelle and similar payments.
 - Card revenue, operating status, location and firmographic data for underwriting and sales targeting.
 - GraphQL API, a web Console, an MCP server for AI agents and a KYB agent on Google Cloud Marketplace.
 pricing:
@@ -193,11 +193,36 @@ faq:
 - q: Is Enigma SOC 2 certified?
   a: Enigma says it is SOC 2 Type 2 compliant for the security, availability and confidentiality criteria. The auditor and report date are not published, so we list it as vendor-stated.
 - q: Does Enigma offer sanctions screening?
-  a: Yes. Enigma screens people and businesses against OFAC sanctions and a PEP list it builds from government publications, at onboarding and on an ongoing basis, and can screen payments such as wires and ACH. Watchlist screening costs $0.50 per request.
+  a: Yes. Enigma screens people and businesses against OFAC sanctions and a PEP list it builds from government publications, and can screen payments such as wires and ACH. Its screening page says customers can also be screened on an ongoing basis, but its KYB docs do not describe monitoring of business records after onboarding. Watchlist screening costs $0.50 per request.
 - q: What is the best alternative to Enigma?
   a: Trulioo is the best alternative if you need KYB outside the US. Persona fits teams that want KYB and individual identity checks in one workflow.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  kyb_registry:
+    status: 'yes'
+    note: all 52 US jurisdictions, US only
+    source: 20
+  kyb_ubo:
+    status: 'yes'
+    note: possible owners from state officer filings
+    source: 20
+  kyb_entity_screening:
+    status: add_on
+    note: watchlist add-on, businesses and persons
+    source: 21
+  kyb_monitoring:
+    status: add_on
+    note: Ongoing sanctions re-screening in screening product
+    source: 8
+  kyb_documents:
+    status: 'no'
+    note: no document retrieval, per Enigma
+    source: 20
+  kyb_pricing:
+    status: 'yes'
+    note: 'from $1.50 per KYB match'
+    source: 3
 certifications:
 - name: SOC 2 Type 2
   what: Security, availability and confidentiality controls
@@ -319,6 +344,14 @@ sources:
   publisher: G2
   url: https://www.g2.com/products/enigma-technologies-enigma/reviews
   accessed: '2026-10'
+- title: KYB FAQ
+  publisher: Enigma
+  url: https://documentation.enigma.com/guides/risk/kyb-faq
+  accessed: '2026-10'
+- title: KYB packages
+  publisher: Enigma
+  url: https://documentation.enigma.com/kyb/kyb-packages
+  accessed: '2026-10'
 entity:
   wikidata: null
   kg_mid: null
@@ -342,6 +375,7 @@ verification_notes:
 - 'SSN verification is a KYB add-on outside both packages, enabled on request with no published price; the rate card lists TIN verification ($1.00) but no SSN line.'
 - 'User ratings: the G2 product page (source 19) describes the Enigma business data platform and shows 3.5 from 1 review; review text not readable. A Capterra listing named "Enigma Compliance" appears to be a different product and failed to load. No Gartner Peer Insights page found.'
 - 'Wikidata id not found (Wikidata API and search blocked on 2026-10-22); kg_mid unknown.'
+- 'Monitoring (re-checked 2026-10-25): the KYB docs, KYB FAQ and KYB packages pages describe no monitoring, re-checks or alerts on businesses after onboarding (the FAQ only says Enigma data is "updated continuously"), so kyb_monitoring is not_disclosed. The screening page (source 8) does say "Customer screening at the time of onboarding and on an ongoing basis for both persons and business entities", for sanctions status, with no frequency stated. The feature line "with ongoing monitoring of customers" was removed; the FAQ on sanctions screening now attributes ongoing screening to the screening page and states the KYB gap.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 directory_categories:

@@ -191,6 +191,27 @@ capabilities:
     note: Enterprise on application
     source: 1
   checked: '2026-10'
+  kyb_registry:
+    status: not_disclosed
+    note: screening only, no registry check found
+  kyb_ubo:
+    status: not_disclosed
+    note: screens owners the customer supplies
+  kyb_entity_screening:
+    status: 'yes'
+    note: company screening on all plans
+    source: 9
+  kyb_monitoring:
+    status: 'yes'
+    note: ongoing monitoring of business customers
+    source: 9
+  kyb_documents:
+    status: not_disclosed
+    note: no company document checks found
+  kyb_pricing:
+    status: partial
+    note: Starter from $99 per month
+    source: 1
 certifications:
 - name: ISO/IEC 27001
   what: Information security (BSI, per G-Cloud listing)
@@ -241,6 +262,10 @@ sources:
 - title: ComplyAdvantage reviews
   publisher: G2
   url: https://www.g2.com/products/complyadvantage/reviews
+  accessed: '2026-10'
+- title: Company Screening
+  publisher: ComplyAdvantage
+  url: https://complyadvantage.com/mesh/aml-company-screening/
   accessed: '2026-10'
 entity:
   wikidata: null

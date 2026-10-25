@@ -158,6 +158,30 @@ capabilities:
     note: usage-based custom proposal
     source: 1
   checked: '2026-10'
+  kyb_registry:
+    status: 'yes'
+    note: over 250 jurisdictions globally
+    source: 12
+  kyb_ubo:
+    status: 'yes'
+    note: multi-layer ownership traced to natural persons
+    source: 13
+  kyb_entity_screening:
+    status: 'yes'
+    note: PEP and sanctions checks on owners
+    source: 13
+  kyb_monitoring:
+    status: 'yes'
+    note: registry, ownership changes; daily list checks
+    source: 14
+  kyb_documents:
+    status: 'yes'
+    note: client forms, AI reads filings, articles
+    source: 12
+  kyb_pricing:
+    status: 'no'
+    note: quote only
+    source: 12
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security
@@ -220,6 +244,18 @@ sources:
 - title: STRISE AS kunngjøringer
   publisher: Oljelandet (Brønnøysund announcements)
   url: https://oljelandet.no/bedrift/strise-as/kunngjoring
+  accessed: '2026-10'
+- title: KYB onboarding
+  publisher: Strise
+  url: https://strise.ai/product/kyb-onboarding
+  accessed: '2026-10'
+- title: UBO discovery
+  publisher: Strise
+  url: https://strise.ai/product/ubo-discovery
+  accessed: '2026-10'
+- title: Ongoing due diligence
+  publisher: Strise
+  url: https://strise.ai/product/ongoing-due-diligence
   accessed: '2026-10'
 entity:
   wikidata: null

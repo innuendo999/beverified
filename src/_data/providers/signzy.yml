@@ -138,6 +138,30 @@ capabilities:
     status: 'no'
     note: pay-as-you-go, quote on request
     source: 9
+  kyb_registry:
+    status: 'yes'
+    note: '150+ countries and 50 U.S. states'
+    source: 15
+  kyb_ubo:
+    status: 'yes'
+    note: ownership, control and shareholder structures
+    source: 16
+  kyb_entity_screening:
+    status: 'yes'
+    note: business and key persons, AML, PEP
+    source: 17
+  kyb_monitoring:
+    status: 'yes'
+    note: ongoing KYB and AML monitoring via API
+    source: 17
+  kyb_documents:
+    status: 'yes'
+    note: AOI and trade licenses, OCR checks
+    source: 17
+  kyb_pricing:
+    status: 'no'
+    note: quote only
+    source: 17
 certifications:
 - name: ISO/IEC 27001
   what: Information security
@@ -221,6 +245,18 @@ sources:
 - title: 'VCIP (no-code platform)'
   publisher: Signzy
   url: https://docs.signzy.com/no-code-platform/vcip
+  accessed: '2026-10'
+- title: Business verification database
+  publisher: Signzy
+  url: https://signzy.com/business-verification/database
+  accessed: '2026-10'
+- title: UBO check
+  publisher: Signzy
+  url: https://www.signzy.com/business-verification/ubo-check
+  accessed: '2026-10'
+- title: One Touch KYB
+  publisher: Signzy
+  url: https://www.signzy.com/our-innovations/one-touch-kyb
   accessed: '2026-10'
 entity:
   wikidata: null

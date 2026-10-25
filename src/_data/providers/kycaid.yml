@@ -257,6 +257,28 @@ capabilities:
   age_reusable:
     status: not_disclosed
     note: nothing found on vendor pages
+  kyb_registry:
+    status: 'yes'
+    note: registry data, coverage not stated
+    source: 7
+  kyb_ubo:
+    status: 'yes'
+    note: UBO checks in company check
+    source: 1
+  kyb_entity_screening:
+    status: not_disclosed
+    note: no company AML screening found
+  kyb_monitoring:
+    status: not_disclosed
+    note: monitoring described for individuals only
+  kyb_documents:
+    status: 'yes'
+    note: corporate documents review
+    source: 7
+  kyb_pricing:
+    status: 'yes'
+    note: €10 per company check
+    source: 7
 certifications:
 - name: ISO/IEC 27001
   what: Information security

@@ -10,7 +10,11 @@ const CAP_LABELS = {
   age_document: "ID document", age_facial_estimation: "Facial age estimation", age_email_estimation: "Email age estimation",
   age_mobile_operator: "Mobile operator", age_credit_card: "Credit card", age_open_banking: "Open banking",
   age_digital_id: "Digital ID or wallet", age_reusable: "Reusable age result", age_certification: "Age assurance certification",
+  kyb_registry: "Company registry checks", kyb_ubo: "UBO discovery", kyb_entity_screening: "Business and officer screening",
+  kyb_monitoring: "Ongoing business monitoring", kyb_documents: "Company document checks", kyb_pricing: "Published KYB pricing",
 };
+// Keys whose note is always shown (coverage counts, price points), not only for add-on or partial cells.
+const NOTE_KEYS = ["kyb_registry", "kyb_pricing"];
 const CAP_STATUS = {
   yes: ["full", "Yes"], add_on: ["half", "Add-on"], no: ["empty", "No"], not_disclosed: ["unknown", "Not disclosed"],
   partial: ["half", "Partial"], cloud: ["", "Cloud"], on_prem: ["", "On-premises"], cloud_and_on_prem: ["", "Cloud and on-premises"],
@@ -81,7 +85,7 @@ export default {
             const v = CERT_KEYS.includes(k) ? certCell(k, q.certifications) : (q.capabilities?.[k] || { status: "not_disclosed" });
             const status = String(v.status || "not_disclosed");
             const st = CAP_STATUS[status] || CAP_STATUS.not_disclosed;
-            let label = st[1], note = ["add_on", "partial"].includes(status) ? v.note : null;
+            let label = st[1], note = (["add_on", "partial"].includes(status) || (NOTE_KEYS.includes(k) && status !== "not_disclosed")) ? v.note : null;
             if (k === "liveness_pad" && v.level) { label = `Level ${v.level}`; if (status === "vendor_stated") note = "Vendor-stated"; }
             if ((k === "trust_framework" || k === "age_certification") && v.names) note = v.names;
             if (note) note = note.charAt(0).toUpperCase() + note.slice(1);
