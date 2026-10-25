@@ -16,54 +16,85 @@ legacy_stats:
 - value: Jul 2026
   label: last updated
 explainer_html:
-- '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
+- '<h2>What KYB is</h2>
 
-  <h2 style="font-size:19px;margin-bottom:10px;">What KYB verifies</h2>
+  <p>Know your business (KYB) is customer due diligence on a company. KYC checks a person against an ID document or a data source. KYB checks that a business is registered and active, who runs it and which people ultimately own or control it. Those people then go through KYC themselves, so most KYB flows include an <a href="/providers/identity-verification/">identity verification</a> step, and screening the company and its owners overlaps with <a href="/providers/aml/">AML software</a>.</p>
 
-  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">Know Your Business confirms the legal entity behind an account: its registration, its ownership structure, and the people who ultimately control it. Where eKYC checks an individual against a document, KYB checks a company against a registry, then keeps peeling back ownership layers until it reaches a real person: the Ultimate Beneficial Owner (UBO). FATF Recommendations 24 and 25 set the global baseline for that beneficial-ownership disclosure.</p>
+  <h2>What a KYB check covers</h2>
 
-  <h3 style="font-size:14.5px;margin-bottom:10px;">Core capabilities compliance teams typically require</h3>
+  <ul>
 
-  <ul style="margin:0 0 18px;padding-left:20px;font-size:14.5px;line-height:1.75;">
+  <li>Registry data: legal name, registration number, status, address and officers, from company registries or data providers that aggregate them.</li>
 
-  <li style="list-style:disc;">Live pulls from official company registries (Companies House, Sirene, and equivalents), not cached snapshots</li>
+  <li>UBO discovery: tracing ownership through holding companies until it reaches natural persons. The usual test is a 25% stake, but the rules also count control by other means.</li>
 
-  <li style="list-style:disc;">UBO mapping through layered ownership structures (the "onion peeling" problem)</li>
+  <li>Screening: the company, its directors and its owners against sanctions, PEP and adverse-media lists.</li>
 
-  <li style="list-style:disc;">Level 1 automation (document checks) vs. Level 2 straight-through processing (STP) that resolves UBOs without a human touch</li>
+  <li>Documents: certificates of incorporation, articles and shareholder registers, used where a registry does not hold the data.</li>
 
-  <li style="list-style:disc;">Ongoing registry monitoring for changes in directors or ownership</li>
+  <li>Ongoing monitoring, often called perpetual KYB: alerts when a company''s status, directors or owners change, instead of a full re-check at fixed intervals.</li>
 
   </ul>
 
-  <h3 style="font-size:14.5px;margin-bottom:8px;">Where the top providers differ</h3>
+  <p>Vendors count coverage in different units (countries, jurisdictions, registries or entities), so check the countries you onboard from.</p>
 
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;"><strong>KYCAID</strong> runs company checks on corporate documents, business address, UBOs and authorised persons, with a compliance team on its Enterprise plan. <strong>Veriff</strong> offers KYB from 300+ jurisdictions after its Vespia acquisition, through a limited access program as of October 2026. <strong>Trulioo</strong> runs KYB on 700 million business entities across 195 countries in one API.</p>
+  <h2>Beneficial ownership rules: FATF and the EU</h2>
 
-  <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from AML and eKYC</h3>
+  <p>FATF Recommendation 10 requires firms to identify the beneficial owner of a customer and, for legal persons, to understand its ownership and control structure. Recommendation 24, revised in March 2022, asks countries to keep adequate, accurate and up-to-date beneficial ownership information, held by a registry or an alternative mechanism.</p>
 
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">KYB verifies the business at onboarding; <a href="/providers/aml/">AML software</a> screens that business''s ongoing transactions. <a href="/providers/e-kyc/">eKYC</a> verifies the individual signing up; KYB verifies the entity they''re signing up on behalf of. Most banks run all three, often from different vendors.</p>
+  <p>In the EU, the <a href="https://eur-lex.europa.eu/eli/reg/2024/1624/oj">Anti-Money Laundering Regulation</a>, Regulation (EU) 2024/1624, applies from 10 July 2027. It treats a direct or indirect holding of 25% or more of shares, voting rights or other ownership interest as beneficial ownership, and lets the Commission set a lower threshold for higher-risk types of company. Public access to UBO registers is narrower: on 22 November 2022 the Court of Justice of the EU struck down the rule that opened them to any member of the public (joined cases C-37/20 and C-601/20, WM and Sovim). Directive (EU) 2024/1640 gives banks and other obliged entities access for customer due diligence, and gives access to others who can show a legitimate interest.</p>
 
-  <h3 style="font-size:14.5px;margin-bottom:8px;">Regulatory context</h3>
+  <h2>US and UK rules</h2>
 
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Key frameworks: FATF Recommendations 24/25 on beneficial ownership, and the corporate registries (Companies House in the UK, Sirene in France, and similar national systems) that KYB providers query directly or through cached feeds.</p>
+  <ul>
 
-  <a class="entity-card__cta" href="/methodology/">See how we evaluate every provider on this list in our full methodology →</a>
+  <li>US: FinCEN''s customer due diligence rule (31 CFR 1010.230) requires banks and other covered financial institutions to identify and verify each person who owns 25% or more of a legal entity customer, plus one person with significant control. Since a FinCEN order of 13 February 2026, they no longer have to repeat this for every new account an existing customer opens. Under the Corporate Transparency Act, a March 2025 interim final rule exempted US companies from reporting beneficial owners to FinCEN, and <a href="https://www.fincen.gov/BOI">a final rule effective 14 August 2026</a> made that permanent. Only foreign companies registered to do business in the US still report.</li>
 
-  </section>'
+  <li>UK: companies must tell Companies House who their people with significant control are, such as anyone holding more than 25% of shares or voting rights. Under the Economic Crime and Corporate Transparency Act 2023, identity verification for directors and people with significant control has been a legal requirement since 18 November 2025, with a 12-month transition from that date for people already on the register.</li>
+
+  </ul>
+
+  <p><a href="/methodology/">How we evaluate every provider on this list →</a></p>'
 faq:
-- q: What's the difference between KYB and KYC?
-  a: KYC verifies an individual person; KYB verifies the legal business behind an account, including its registration status, ownership structure, and Ultimate Beneficial Owners (UBOs).
-- q: How long does UBO verification take?
-  a: A clean, single-layer ownership structure can resolve in seconds with live registry data. Layered or offshore structures often require manual analyst review that can take hours to days.
-- q: What is UBO mapping and why does it matter?
-  a: UBO mapping traces ownership through holding companies and trusts to identify the real person who ultimately controls a business, a requirement under FATF Recommendations 24 and 25.
-- q: What's the difference between Level 1 and Level 2 KYB automation?
-  a: Level 1 automation runs document and registry checks but still routes UBO resolution to a human. Level 2, or straight-through processing (STP), resolves clean ownership structures without a human touch.
-- q: Do KYB providers verify company directors in real time?
-  a: Some do. A handful of vendors biometrically match the person onboarding a business against that business's listed directors at the moment of signup, rather than relying on a static registry snapshot.
-- q: How often should a business's KYB record be refreshed?
-  a: Most compliance programs re-check registry and ownership data at least annually, with higher-risk business customers monitored continuously for ownership or director changes.
+- q: 'What is the difference between KYB and KYC?'
+  a: 'KYC verifies an individual; KYB verifies a business, including its registration, its directors and the people who ultimately own or control it. KYB usually includes KYC on those owners and directors, so many providers sell both in one flow.'
+- q: 'What is a UBO, and what ownership threshold applies?'
+  a: 'A UBO (ultimate beneficial owner) is a natural person who ultimately owns or controls a company, and the usual ownership test is 25%. The EU AMLR counts holdings of 25% or more from 10 July 2027, the US FinCEN rule counts 25% or more of equity, and the UK counts more than 25% of shares or voting rights. All three also look at control by other means, and the EU can set a lower threshold for higher-risk types of company.'
+- q: 'How long does a KYB check take?'
+  a: 'There is no standard figure, and our reviews do not list a verified KYB completion time for any provider in this ranking. Time depends mostly on the company: a single-layer business with an online registry record is the simple case, while foreign holding companies, trusts, registries without online access, missing documents and screening hits all add manual review. Ask vendors for times measured on your own customer mix.'
+- q: 'What is perpetual KYB?'
+  a: 'Perpetual KYB is ongoing monitoring of business customers: the provider watches registry status, directors, ownership and screening results and raises an alert when something changes, instead of waiting for a scheduled review. In this ranking, iDenfy sells a product called Perpetual KYB, Trulioo offers perpetual monitoring, Shufti Pro sends webhooks on registry and director changes, and Sumsub runs risk-based rechecks.'
+- q: 'Which KYB providers publish their prices?'
+  a: 'Few do. KYCAID lists a company check at €10 on its module price list, which carries a €100 monthly service fee, and Enigma charges $1.50 or $2.50 per US business match, with no charge when nothing matches. Zyphe prices an AI agent''s company and UBO review at $3.00 but does not list KYB itself. Vespia''s homepage still showed reports from €35 on 22 October 2026, but Veriff, which bought Vespia, quotes KYB on request. Shufti Pro includes KYB in its Essentials plan without a separate price, and the other providers in this ranking quote on request.'
+- q: 'Which KYB providers cover only the US?'
+  a: 'Enigma is the only provider in this ranking whose KYB registry checks are US only: it covers all 52 US jurisdictions, meaning the 50 states, DC and Puerto Rico. The others say they cover many countries, from Signicat''s more than 30 national and commercial registries to Sumsub''s 200+ countries and territories; Signzy lists 150+ countries plus the 50 US states. KYCAID does not state its registry coverage.'
+- q: 'Can the public still search EU beneficial ownership registers?'
+  a: 'Not freely. On 22 November 2022 the Court of Justice of the EU invalidated the rule that gave any member of the public access to beneficial ownership registers (joined cases C-37/20 and C-601/20, WM and Sovim). Directive (EU) 2024/1640 gave member states until 10 July 2026 to give obliged entities such as banks access for customer due diligence, and to open access to people who can show a legitimate interest, such as journalists and civil society organisations.'
+- q: 'Do US companies still report their beneficial owners to FinCEN?'
+  a: 'No. FinCEN''s March 2025 interim final rule exempted US companies and their beneficial owners from reporting under the Corporate Transparency Act, and a final rule effective 14 August 2026 made the exemption permanent. Foreign companies registered to do business in a US state or tribal jurisdiction must still report unless another exemption applies. Banks still collect ownership details from business customers under FinCEN''s customer due diligence rule.'
+segments_heading: 'Best pick by use case'
+segments:
+- segment: 'SMEs that want a published KYB price'
+  slug: kycaid
+  reason: 'KYCAID lists a company check at €10 on its public price list, covering corporate documents, business address, UBOs and authorised persons.'
+- segment: 'All-in-one KYC, KYB and AML'
+  slug: sumsub
+  reason: 'Sumsub runs KYB with UBO verification, AML screening and ongoing monitoring on the same platform as its KYC checks, with KYB in its quote-only custom plan.'
+- segment: 'US small-business onboarding'
+  slug: enigma
+  reason: 'Enigma checks business registrations across all 52 US jurisdictions and publishes KYB prices of $1.50 or $2.50 per match, with no charge when nothing matches.'
+- segment: 'Global platforms onboarding businesses in many countries'
+  slug: trulioo
+  reason: 'Trulioo checks hundreds of government registries covering 700M+ business entities, adds UBO Discovery where registries fall short, and offers reverification and perpetual monitoring.'
+- segment: 'Nordic banks and insurers'
+  slug: strise
+  reason: 'Strise traces multi-layer ownership to natural persons and monitors registry and ownership changes, and its named customers include Nordea and Storebrand.'
+- segment: 'UK B2B lenders'
+  slug: fullcircl
+  reason: 'FullCircl, now nCino Identity Solutions, puts KYB data on 365 million entities alongside KYC, AML and identity checks behind one API, and grew from UK roots.'
+- segment: 'Indian BFSI'
+  slug: signzy
+  reason: 'Signzy verifies businesses against registered documents and government databases, with UBO checks, in a no-code journey builder built for India''s BFSI market.'
 adjacent:
 - e-kyc
 - aml
