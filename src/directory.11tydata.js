@@ -18,6 +18,6 @@ export default {
       return Object.entries(groups).map(([letter, items]) => ({ letter, items }));
     },
     letters: () => "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split(""),
-    filters: () => [["", "All"], ["Identity Verification", "Identity verification"], ["AML", "AML"], ["KYB", "KYB"], ["Crypto KYC", "Crypto"], ["Liveness Detection", "Liveness"]],
+    filters: () => [["", "All"], ["Identity Verification", "Identity verification"], ["AML", "AML"], ["KYB", "KYB"], ["Crypto KYC", "Crypto"], ["Liveness Detection", "Liveness"], ["Age Verification", "Age verification"]],
   },
 };

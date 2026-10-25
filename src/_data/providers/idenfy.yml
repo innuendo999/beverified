@@ -9,7 +9,7 @@ seo:
 logo:
   src: /assets/img/logos/idenfy.png
   background: '#6A3FE8'
-  wordmark: null
+  wordmark: /assets/img/wordmarks/idenfy.png
 tagline: 'Published per-check pricing, with an option to pay only for verifications that pass'
 score: 4.5
 grade: Very Good
@@ -342,3 +342,4 @@ legacy_reviewer:
 directory_categories:
 - Identity Verification
 - KYB
+- Age Verification

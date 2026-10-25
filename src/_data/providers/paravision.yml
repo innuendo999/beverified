@@ -12,7 +12,7 @@ seo:
 logo:
   src: null
   background: null
-  wordmark: null
+  wordmark: /assets/img/wordmarks/paravision.png
 tagline: Face recognition, passive liveness, deepfake detection and age estimation, sold as SDKs and containers to identity platforms and integrators
 score: 3.9
 grade: Good
@@ -437,7 +437,7 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- 'First review; Paravision asked to be listed and sent no product details. link.type set to none (no commercial relationship recorded). No logo or wordmark file yet.'
+- 'First review; Paravision asked to be listed and sent no product details. link.type set to none (no commercial relationship recorded). Wordmark supplied by the owner (Oct 2026).'
 - 'Score 3.9 is below the lowest other record (Zyphe 4.0). No grade word is defined below 4.0; "Good" (used for 4.0 to 4.3) is applied. Editor to confirm or set a separate band.'
 - 'Partners, not labelled customers (partners page re-opened 2026-10-22): HID, ID.me, Persona, secunet, SITA, Toppan Next Tech, Globant, Plastic Omnium, PopID, Imprivata, Vicon, Brivo, Entrust, plus OP''nSoft in testimonials. Only Persona (Dec 2025 joint release), ID.me, Entrust and HID used in the record.'
 - 'iBeta (re-checked 2026-10-22): the letters page still lists only Paravision Liveness v1.0 Level 1 (16 Oct 2023) and v1.2 Level 2 (28 Dec 2023); no letter for Liveness 2.0. Both letter PDFs now refuse automated access (robots) and the web archive is blocked. Level 2 stays confirmed on the letter opened 2026-10-18 (iPhone 13, iOS 16.6, 750 attacks, APCER 0%, BPCER not stated). The Level 1 letter has never been opened, so Level 1 is vendor_stated (Paravision liveness page) until it is. No BixeLab result found.'
