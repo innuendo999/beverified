@@ -53,6 +53,8 @@ Each key is `{status, note, source}`; `source` = number in this record's `source
 | nfc | yes \| add_on \| no \| not_disclosed (IDV, added 2026-10-23: SDK reads ePassport/eID chips) |
 | video_ident | yes \| add_on \| no \| not_disclosed (IDV, added 2026-10-23: live agent video call, not an automated selfie video) |
 | age_document, age_facial_estimation, age_email_estimation, age_mobile_operator, age_credit_card, age_open_banking, age_digital_id, age_reusable | yes \| add_on \| no \| not_disclosed (age verification methods, added 2026-10-23; judged on the vendor's age verification pages) |
+| kyb_registry, kyb_ubo, kyb_entity_screening, kyb_monitoring, kyb_documents | yes \| add_on \| no \| not_disclosed (KYB, added 2026-10-25; kyb_registry note carries the vendor's registry/jurisdiction count with its source and is always shown) |
+| kyb_pricing | yes \| partial \| no (KYB price published on the vendor's own site; note = the price point, always shown) |
 
 Plus `checked: '2026-10'`. `yes` = in the core product per the vendor's current pages; `add_on` = separate module, plan tier or partner; `no` = the vendor says it does not, or the product clearly does not; `not_disclosed` = nothing found. `partial` pricing = some plans or per-check prices published, others quoted.
 
