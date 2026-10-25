@@ -23,18 +23,18 @@ link:
   type: null
   legacy_rel: nofollow sponsored
 last_verified: '2026-10-22'
-updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
+updated: '2026-10-25'   # last content edit; last_verified = last fact re-check
 verdict: 'Vespia built an AI-assisted KYB platform that pulls commercial register data from 300+ jurisdictions; its CEO, Julia Ront, was Veriff''s second employee. Veriff announced the acquisition of Vespia on 5 February 2026 and said the KYB technology would be commercially available across its platform by mid-2026. As of 22 October 2026, vespia.io still loads, but its sign-up, demo and trial links lead to Veriff and vespia.io/pricing redirects to Veriff''s self-serve plans; Veriff''s KYB sign-up page still describes a limited access program. Evaluate it as part of Veriff rather than as a standalone vendor.'
 what_is:
 - 'Vespia is an Estonia-based KYB and AML company founded in 2021 by Julia Ront, formerly Veriff''s second employee, and Anton Vedešin. Its site names Vespia OÜ in Tallinn.'
 - 'Veriff announced the acquisition of Vespia on 5 February 2026 and did not disclose the financial terms. Veriff said the Vespia team would join it and that it would integrate the technology into its platform. The vespia.io site is still online with a banner reading "Veriff is acquiring Vespia" and a customer login, but its pricing and sign-up links now lead to Veriff.'
 features:
-- KYB company verification using commercial register data from 300+ jurisdictions, in under 30 seconds, per Vespia.
-- 1,500+ data points drawn from 5,000+ official sources.
-- UBO (ultimate beneficial owner) verification.
-- PEP, sanctions and adverse-media screening against 4,000+ lists, with ongoing monitoring.
-- Julia AI, an AI compliance officer for AML risk assessment.
-- User onboarding with document checks (7,000+ document types from 190+ countries) and transaction monitoring.
+- KYB company verification against commercial registers in 300+ jurisdictions, per Vespia and Veriff; vespia.io says register data arrives in under 30 seconds.
+- 1,500 data points from 5,000 sources, per Veriff's KYB page.
+- Ownership checks, per Veriff; vespia.io says it identifies UBOs, shareholders and directors.
+- Sanctions and watchlist screening of businesses and individuals, per Veriff.
+- vespia.io also lists PEP and adverse-media screening against 4,000+ lists with daily monitoring, Julia AI, document checks (7,000+ document types) and transaction monitoring. Veriff's KYB pages do not mention these.
+- Veriff says its KYB can be combined with Veriff KYC and AML.
 pricing:
   summary: 'Vespia''s homepage still shows (as of 22 October 2026) a Starter Package at €99 and KYB reports priced by region from €35 per report, with a 7-day free trial whose button leads to Veriff''s KYB sign-up. vespia.io/pricing redirects to Veriff''s self-serve identity verification plans, which list no KYB prices, and its sign-up link goes to Veriff''s KYB limited access program. Confirm current KYB rates with Veriff.'
   plans:
@@ -101,7 +101,7 @@ facts:
 pros:
 - KYB register data from 300+ jurisdictions, per Vespia and Veriff
 - Entry prices shown publicly (€99 starter package, KYB reports from €35)
-- Julia AI compliance officer adds automated AML risk assessment
+- Ownership checks and sanctions screening of businesses, per Veriff
 cons:
 - Standalone sign-up now redirects to Veriff, so the product is effectively sold as part of Veriff
 - Young company (founded 2021), now absorbed into Veriff
@@ -230,6 +230,7 @@ verification_notes:
 - 'Veriff''s KYB sign-up page still says "launching mid-2026" with a limited access program as of 22 Oct 2026; general availability of KYB in Veriff not confirmed.'
 - Estonian business register entry for Vespia OÜ not found (registry search blocked to our tools); HQ comes from the vespia.io footer ("Vespia OÜ, Tallinn, Estonia").
 - G2 and Capterra each show 2 reviews (5.0) with no visible pros and cons, so no review themes are listed.
+- 'KYB features (re-checked 2026-10-25): Veriff''s KYB page (source 5) names register data from over 300 jurisdictions, 1,500 data points from 5,000 sources and sanctions and watchlist screening of individuals and businesses, and says KYB can be combined with Veriff KYC and AML; its KYB sign-up page (source 3) mentions verifying "ownership". Neither page mentions PEP, adverse media, ongoing monitoring, document checks or transaction monitoring. vespia.io (source 2) still lists UBOs, PEP and adverse-media screening against 4,000+ lists, daily monitoring, Julia AI, 7,000+ document types and transaction monitoring. Features now attribute these to vespia.io; the Julia AI pro was replaced. The earlier "AI compliance officer for AML risk assessment" wording was not found on vespia.io, which says Julia AI gives suggestions to make AML compliance smoother.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

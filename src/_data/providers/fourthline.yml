@@ -18,13 +18,12 @@ legacy_rank_claim: 'ranked #9 in Identity Verification'
 categories:
 - identity-verification
 - aml/banks
-- kyb
 link:
   url: https://www.fourthline.com
   type: null
   legacy_rel: nofollow sponsored
 last_verified: '2026-10-22'
-updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
+updated: '2026-10-25'   # last content edit; last_verified = last fact re-check
 verdict: Fourthline built its reputation inside Europe's regulated financial sector, with Revolut, N26, Trade Republic, Qonto and Bitpanda among its clients. It combines identity verification, AML screening and monitoring, and re-KYC in one modular platform, and since August 2026 its Swedish subsidiary is a qualified trust service provider for electronic signatures. It's deliberately focused on financial institutions rather than chasing every vertical. On 16 July 2026 it signed an agreement to merge with Spanish identity provider Veridas. The deal is expected to close in the second half of 2026, subject to regulatory approvals; no completion had been announced by 22 October 2026, and no name for the combined company has been published.
 what_is:
 - Fourthline is a KYC and AML compliance company founded in 2017 and headquartered in Amsterdam, with an office in Barcelona. It was co-founded by Krik Gunning and Chris van Straeten; Paul Stoddart became CEO in 2026. It provides a modular platform combining identity verification, AML screening and monitoring, re-KYC and fraud detection for banks, fintechs and insurers, and says it is locally compliant in 30+ jurisdictions and supports 3,500+ document types. Clients named in 2026 include Revolut, N26, Trade Republic, Qonto, Scalable Capital, Raisin, Rabobank and Bitpanda.
@@ -241,7 +240,7 @@ legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
 - Veridas merger signed 16 Jul 2026, expected to close in H2 2026 subject to regulatory approvals. As of 22 Oct 2026 neither the Fourthline newsroom (latest item 13 Oct 2026) nor press coverage reports completion, a combined brand name, post-merger leadership or ownership split. Re-check after closing; name, brand and ownership fact may change.
-- KYB is not listed among Fourthline's current solutions (homepage navigation, Oct 2026), although the record sits in the KYB category. Editor to decide on the kyb category.
+- 'KYB (re-checked 2026-10-25): the homepage navigation lists Identity Verification, Digital Proof of Address, Qualified Electronic Signature, Investigations & CDD Reporting, AML Screening & Monitoring, Re-KYC & Remediation, Anti-Financial Crime and Case Review Portal, with no KYB or business verification product; the docs describe clients as natural persons. kyb removed from categories and KYB from directory_categories on 2026-10-25. Only historical mention found: a 13 Jan 2021 Fourthline news item on 2020 growth (fourthline.com/news/fourthline-celebrates-record-growth-2020) says Bol.com verified 20,000+ resellers through "Fourthline''s KYC for Business solution". Not used in copy; no current product page found.'
 - ISO/IEC 27001:2022 (EY CertifyPoint 2021-039), iBeta ISO 30107-3 Level 1/2 and ISAE 3000 remain vendor-stated. The certificate was not opened, and iBeta's confirmation-letter page could not be fetched (robots block), so no lab letter was seen.
 - eIDAS QTSP status: Fourthline's 24 Aug 2026 release says Fourthline Trust Services AB is on the EU Trusted List under PTS supervision. The EU trusted list browser and the PTS list could not be read with our tools; status stays vendor_stated.
 - No user ratings: the G2 page (source 11) and the Capterra listing (capterra.com/p/206795/Fourthline) show no rating or reviews; Gartner Peer Insights could not be fetched. Review themes are general statements, not counted themes.
@@ -253,4 +252,3 @@ legacy_reviewer:
 directory_categories:
 - Identity Verification
 - AML for Banks
-- KYB

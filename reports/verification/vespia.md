@@ -51,3 +51,21 @@ Yes. Vespia was acquired and its standalone sales path is gone: pricing and sign
 ### Score flag
 
 - No new finding. The 2026-10-18 flag stands: standalone sales path gone, prices on vespia.io possibly stale, product sold through Veriff's limited access KYB program.
+
+## Follow-up 2026-10-25 (KYB)
+
+### Changed
+
+- Features aligned with `capabilities.kyb_*` (re-checked 2026-10-25). Veriff's KYB page (source 5) names register data from 300+ jurisdictions, 1,500 data points from 5,000 sources, sanctions and watchlist screening of individuals and businesses, and combining KYB with Veriff KYC and AML; the KYB sign-up page (source 3) mentions "ownership". Neither mentions PEP, adverse media, ongoing monitoring, document checks or transaction monitoring.
+  - "UBO (ultimate beneficial owner) verification." → "Ownership checks, per Veriff; vespia.io says it identifies UBOs, shareholders and directors."
+  - "PEP, sanctions and adverse-media screening against 4,000+ lists, with ongoing monitoring." → sanctions and watchlist screening per Veriff; PEP, adverse media, 4,000+ lists and daily monitoring now attributed to vespia.io (source 2, still online) with "Veriff's KYB pages do not mention these".
+  - Julia AI and "User onboarding with document checks (7,000+ document types from 190+ countries) and transaction monitoring" folded into that vespia.io-attributed line.
+  - Added "Veriff says its KYB can be combined with Veriff KYC and AML" (source 5).
+  - Register and data-point lines now cite Veriff as well as Vespia.
+- Pro "Julia AI compliance officer adds automated AML risk assessment" → "Ownership checks and sanctions screening of businesses, per Veriff". The "AI compliance officer for AML risk assessment" wording was not found on vespia.io, which says Julia AI gives suggestions to make AML compliance smoother. Pros and cons stay 3 and 3.
+- Checked with no change needed: tagline, seo.description, verdict, what_is, faq, user_reviews.
+- `verification_notes`: added the 2026-10-25 KYB features note. `updated` → 2026-10-25; `last_verified` unchanged.
+
+### Ranking cards
+
+- No entry with `slug: vespia` in `src/_data/rankings.yml`; nothing to correct.
