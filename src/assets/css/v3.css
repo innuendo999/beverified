@@ -485,6 +485,7 @@ h1, h2, h3, p, ul, ol, figure { margin: 0; }
 .dir__group { margin-bottom: 28px; scroll-margin-top: 80px; }
 .dir__group h2 { font-size: 22px; font-weight: 600; color: var(--muted); margin-bottom: 10px; }
 .dir__list { list-style: none; padding: 0; }
+.dir__row[hidden], .dir__group[hidden], .dir__empty[hidden] { display: none; }
 .dir__row { display: grid; grid-template-columns: 170px 110px minmax(0,1fr) auto auto; gap: 16px; align-items: center; padding: 12px 22px; border-top: 1px solid var(--line-soft); }
 .dir__row:first-child { border-top: none; }
 .dir__name { font-size: 15px; font-weight: 600; }
