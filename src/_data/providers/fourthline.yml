@@ -141,6 +141,25 @@ capabilities:
     status: 'no'
     note: no prices; contact sales only
     source: 2
+  kyb_registry:
+    status: not_disclosed
+    note: no KYB on current solution pages
+  kyb_ubo:
+    status: not_disclosed
+    note: no KYB on current solution pages
+  kyb_entity_screening:
+    status: not_disclosed
+    note: no KYB on current solution pages
+  kyb_monitoring:
+    status: not_disclosed
+    note: no KYB on current solution pages
+  kyb_documents:
+    status: not_disclosed
+    note: no KYB on current solution pages
+  kyb_pricing:
+    status: 'no'
+    note: quote only
+    source: 2
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security (EY CertifyPoint, cert. 2021-039)

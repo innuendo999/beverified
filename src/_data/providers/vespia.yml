@@ -147,7 +147,30 @@ faq:
 - q: Who are Vespia's main competitors?
   a: Vespia competes with AiPrise and ComplyCube on KYB, and is now part of Veriff following its February 2026 acquisition.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  kyb_registry:
+    status: 'yes'
+    note: over 300 jurisdictions, Veriff limited access
+    source: 5
+  kyb_ubo:
+    status: 'yes'
+    note: ownership checks, Veriff limited access
+    source: 3
+  kyb_entity_screening:
+    status: 'yes'
+    note: businesses against sanctions and watchlists
+    source: 5
+  kyb_monitoring:
+    status: not_disclosed
+    note: not on current Veriff KYB pages
+  kyb_documents:
+    status: not_disclosed
+    note: not on current Veriff KYB pages
+  kyb_pricing:
+    status: partial
+    note: 'vespia.io from €35 per report; Veriff quotes'
+    source: 2
 certifications: []
 user_ratings:
 - platform: G2

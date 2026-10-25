@@ -132,7 +132,31 @@ faq:
 - q: Who are FullCircl's main competitors?
   a: FullCircl competes with KYC Hub, ComplyCube, and GBG, differentiating through its business-intelligence layer alongside compliance orchestration.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  kyb_registry:
+    status: 'yes'
+    note: '160+ countries, 365m entities'
+    source: 13
+  kyb_ubo:
+    status: 'yes'
+    note: UBO through layered company structures
+    source: 13
+  kyb_entity_screening:
+    status: not_disclosed
+    note: AML checks named, lists not specified
+  kyb_monitoring:
+    status: 'yes'
+    note: re-screening and client change alerts
+    source: 13
+  kyb_documents:
+    status: 'yes'
+    note: official company filings
+    source: 13
+  kyb_pricing:
+    status: 'no'
+    note: quote only
+    source: 13
 certifications: []
 user_ratings:
 - platform: G2
@@ -191,6 +215,10 @@ sources:
 - title: nCino Identity Solutions reviews
   publisher: G2
   url: https://www.g2.com/products/fullcircl/reviews
+  accessed: '2026-10'
+- title: Know Your Business (KYB software)
+  publisher: nCino
+  url: https://www.identitysolutions.ncino.com/products/kyb-software
   accessed: '2026-10'
 entity:
   wikidata: null

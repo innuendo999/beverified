@@ -197,7 +197,31 @@ faq:
 - q: What is the best alternative to Enigma?
   a: Trulioo is the best alternative if you need KYB outside the US. Persona fits teams that want KYB and individual identity checks in one workflow.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  kyb_registry:
+    status: 'yes'
+    note: all 52 US jurisdictions, US only
+    source: 20
+  kyb_ubo:
+    status: 'yes'
+    note: possible owners from state officer filings
+    source: 20
+  kyb_entity_screening:
+    status: add_on
+    note: watchlist add-on, businesses and persons
+    source: 21
+  kyb_monitoring:
+    status: not_disclosed
+    note: not described in KYB docs
+  kyb_documents:
+    status: 'no'
+    note: no document retrieval, per Enigma
+    source: 20
+  kyb_pricing:
+    status: 'yes'
+    note: 'from $1.50 per KYB match'
+    source: 3
 certifications:
 - name: SOC 2 Type 2
   what: Security, availability and confidentiality controls
@@ -318,6 +342,14 @@ sources:
 - title: Enigma reviews
   publisher: G2
   url: https://www.g2.com/products/enigma-technologies-enigma/reviews
+  accessed: '2026-10'
+- title: KYB FAQ
+  publisher: Enigma
+  url: https://documentation.enigma.com/guides/risk/kyb-faq
+  accessed: '2026-10'
+- title: KYB packages
+  publisher: Enigma
+  url: https://documentation.enigma.com/kyb/kyb-packages
   accessed: '2026-10'
 entity:
   wikidata: null
