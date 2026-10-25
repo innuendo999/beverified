@@ -232,6 +232,27 @@ capabilities:
   age_reusable:
     status: not_disclosed
     note: no age token found
+  kyb_registry:
+    status: 'yes'
+    note: over 300 jurisdictions, limited access
+    source: 11
+  kyb_ubo:
+    status: not_disclosed
+    note: no UBO feature named
+  kyb_entity_screening:
+    status: add_on
+    note: separate AML Screening product
+    source: 11
+  kyb_monitoring:
+    status: not_disclosed
+    note: nothing found on KYB pages
+  kyb_documents:
+    status: not_disclosed
+    note: nothing found on KYB pages
+  kyb_pricing:
+    status: 'no'
+    note: quote only, limited access program
+    source: 13
 certifications:
 - name: ISO/IEC 30107-3 Level 2 (iBeta)
   what: Liveness, presentation attack detection

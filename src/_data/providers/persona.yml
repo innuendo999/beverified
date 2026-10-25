@@ -195,6 +195,30 @@ capabilities:
     status: 'yes'
     note: Reusable Persona stores verified age
     source: 8
+  kyb_registry:
+    status: 'yes'
+    note: verifies businesses in 150+ countries
+    source: 16
+  kyb_ubo:
+    status: 'yes'
+    note: UBO verification in KYB flow
+    source: 17
+  kyb_entity_screening:
+    status: 'yes'
+    note: businesses and UBOs against watchlists
+    source: 16
+  kyb_monitoring:
+    status: 'yes'
+    note: recurring business watchlist, adverse media
+    source: 19
+  kyb_documents:
+    status: 'yes'
+    note: business document verification via API
+    source: 18
+  kyb_pricing:
+    status: 'no'
+    note: quote only, Growth plan and above
+    source: 1
 certifications:
 - name: FedRAMP Moderate (Persona for Government)
   what: US federal cloud security, certified since 10 Apr 2026
@@ -302,6 +326,22 @@ sources:
 - title: Collecting passports and other IDs using NFC
   publisher: Persona Help Center
   url: https://help.withpersona.com/articles/1iu1Fak8y9RiOE2FddXrHJ
+  accessed: '2026-10'
+- title: Know Your Business (KYB)
+  publisher: Persona
+  url: https://withpersona.com/solutions/know-your-business/
+  accessed: '2026-10'
+- title: 'Verifying Businesses: How Persona can help verify businesses'
+  publisher: Persona
+  url: https://help.withpersona.com/articles/3OGe9IwySJmDvXL2DOfV7N/
+  accessed: '2026-10'
+- title: 'Integration Guide: KYB via API'
+  publisher: Persona
+  url: https://docs.withpersona.com/integration-guide-kyb-via-api
+  accessed: '2026-10'
+- title: Continuous monitoring for Reports
+  publisher: Persona
+  url: https://help.withpersona.com/articles/7LRMBbxLshF7sCcLhfhwF4/
   accessed: '2026-10'
 entity:
   wikidata: null
