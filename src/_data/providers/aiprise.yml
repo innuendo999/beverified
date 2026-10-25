@@ -157,6 +157,30 @@ capabilities:
     status: 'no'
     note: no prices on own site
     source: 1
+  kyb_registry:
+    status: 'yes'
+    note: '200+ countries'
+    source: 10
+  kyb_ubo:
+    status: 'yes'
+    note: UBO and stakeholder mapping
+    source: 9
+  kyb_entity_screening:
+    status: 'yes'
+    note: automated sanctions screening
+    source: 9
+  kyb_monitoring:
+    status: 'yes'
+    note: continuous business monitoring with alerts
+    source: 9
+  kyb_documents:
+    status: 'yes'
+    note: incorporation certificates, registry extracts, shareholder lists
+    source: 10
+  kyb_pricing:
+    status: 'no'
+    note: quote only
+    source: 9
 certifications:
 - name: SOC 2 Type II
   what: Security controls report
@@ -208,6 +232,14 @@ sources:
 - title: Security, compliance and data protection at AiPrise
   publisher: AiPrise
   url: https://support.aiprise.com/articles/2978615735-security-compliance-data-protection-at-aiprise
+  accessed: '2026-10'
+- title: AiPrise KYB
+  publisher: AiPrise
+  url: https://www.aiprise.com/products/kyb
+  accessed: '2026-10'
+- title: Coverage and checks, business verification
+  publisher: AiPrise
+  url: https://docs.aiprise.com/docs/about-business-verification-1-1
   accessed: '2026-10'
 entity:
   wikidata: null
