@@ -149,6 +149,29 @@ capabilities:
     status: 'no'
     note: IDV quoted; only Loqate prices published
     source: 5
+  kyb_registry:
+    status: 'yes'
+    note: 600m+ company records and ownership registries
+    source: 17
+  kyb_ubo:
+    status: 'yes'
+    note: GBG Detected, built with partner Detected
+    source: 18
+  kyb_entity_screening:
+    status: 'yes'
+    note: directors and UBOs, PEP, sanctions
+    source: 17
+  kyb_monitoring:
+    status: 'yes'
+    note: background risk monitoring after onboarding
+    source: 17
+  kyb_documents:
+    status: not_disclosed
+    note: company documents not described
+  kyb_pricing:
+    status: 'no'
+    note: quote only
+    source: 17
 certifications:
 - name: UK DIATF certified services
   what: GBG Go (identity, orchestration), ID3global, Identify, IDscan Enterprise (identity) and oZone FYQ2 (component), Sep 2026 to Sep 2029
@@ -247,6 +270,14 @@ sources:
 - title: NFC Chip Authentication module (GBG Go documentation)
   publisher: GBG
   url: https://docs.go.gbgplc.com/docs/go-v2/platform/modules/documents/nfc-chip-authentication.md
+  accessed: '2026-10'
+- title: 'Know Your Business (KYB), GBG Detected'
+  publisher: GBG
+  url: https://www.gbg.com/en/assess-risk/know-your-business-kyb/
+  accessed: '2026-10'
+- title: 'GBG Detected, an end-to-end Know Your Business solution (Jul 2024)'
+  publisher: GBG
+  url: https://www.gbg.com/en/news/gbg-detected-an-end-to-end-know-your-business-solution/
   accessed: '2026-10'
 entity:
   wikidata: null

@@ -187,6 +187,30 @@ capabilities:
     status: 'yes'
     note: zero-knowledge proof token for returns
     source: 16
+  kyb_registry:
+    status: 'yes'
+    note: 240+ live registries
+    source: 19
+  kyb_ubo:
+    status: 'yes'
+    note: direct and indirect ownership layers traced
+    source: 20
+  kyb_entity_screening:
+    status: 'yes'
+    note: entity, directors and UBOs screened
+    source: 19
+  kyb_monitoring:
+    status: 'yes'
+    note: webhooks on registry and director changes
+    source: 19
+  kyb_documents:
+    status: 'yes'
+    note: OCR on incorporation certificates, registers
+    source: 19
+  kyb_pricing:
+    status: 'no'
+    note: quote only, KYB not priced separately
+    source: 1
 certifications:
 - name: iBeta ISO/IEC 30107-3 PAD Level 3
   what: Liveness, presentation attack detection
@@ -306,6 +330,14 @@ sources:
 - title: 'Shufti Pro''s age verification solution approved by KJM'
   publisher: Shufti
   url: https://shuftipro.com/news/shufti-pros-age-verification-solution-approved-by-kjm
+  accessed: '2026-10'
+- title: 'Know Your Business KYB for Enterprise Onboarding'
+  publisher: Shufti
+  url: https://shuftipro.com/know-your-business/
+  accessed: '2026-10'
+- title: 'UBO verification'
+  publisher: Shufti
+  url: https://shuftipro.com/ubo-verification/
   accessed: '2026-10'
 entity:
   wikidata: null

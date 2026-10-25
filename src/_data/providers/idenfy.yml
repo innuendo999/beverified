@@ -214,6 +214,30 @@ capabilities:
     status: 'yes'
     note: returning users reuse original verified record
     source: 16
+  kyb_registry:
+    status: 'yes'
+    note: 180+ company registries across 120 countries
+    source: 18
+  kyb_ubo:
+    status: 'yes'
+    note: full ownership structure, KYC on shareholders
+    source: 20
+  kyb_entity_screening:
+    status: 'yes'
+    note: PEP and sanctions, companies and individuals
+    source: 20
+  kyb_monitoring:
+    status: 'yes'
+    note: Perpetual KYB with ongoing alerts
+    source: 19
+  kyb_documents:
+    status: 'yes'
+    note: requests documents, cross-checks with registries
+    source: 20
+  kyb_pricing:
+    status: 'no'
+    note: quote only
+    source: 8
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security (cert. ISMS-1851/A, CERT International, valid to Jun 2029)
@@ -314,6 +338,18 @@ sources:
 - title: Age verification service
   publisher: iDenfy
   url: https://idenfy.com/?p=39028
+  accessed: '2026-10'
+- title: 'Official information about iDenfy'
+  publisher: iDenfy
+  url: https://idenfy.com/ai-info-page/
+  accessed: '2026-10'
+- title: 'Perpetual KYB service'
+  publisher: iDenfy
+  url: https://idenfy.com/pkyb-service/
+  accessed: '2026-10'
+- title: 'Product KYB Guide (PDF)'
+  publisher: iDenfy
+  url: https://www.idenfy.com/wp-content/uploads/2025/07/Product-KYB-Guide.pdf
   accessed: '2026-10'
 entity:
   wikidata: null
