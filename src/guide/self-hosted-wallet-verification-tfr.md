@@ -93,7 +93,7 @@ The TFR requires CASPs to collect and handle specified information about the ori
 
 Under Article 14(5), when a crypto-asset transfer is made to a self-hosted address, the originating CASP must obtain and retain the information referred to in Article 14(1) and (2) and ensure that the transfer can be individually identified.
 
-For transfers exceeding EUR 1,000 involving a self-hosted address, Article 16(2) requires CASPs to take adequate measures to assess whether the address is owned or controlled by their customer. The Regulation also addresses transfers that have been split into several transactions that appear to be linked and cases involving suspected money laundering or terrorist financing.
+For transfers exceeding EUR 1,000 involving a self-hosted address, Articles 14(5) and 16(2) require CASPs to take adequate measures to assess whether the address is owned or controlled by their customer. The Regulation also addresses cases involving suspected money laundering or terrorist financing.
 
 The EUR 1,000 threshold relates to the specific ownership or control assessment requirement. It should not be interpreted as a general exemption from the EU TFR's information requirements for lower-value crypto-asset transfers.
 
