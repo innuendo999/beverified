@@ -1,135 +1,208 @@
 ---
-title: "Verifying Self-Hosted Wallets Under the TFR: AOPP, Signed Messages, the Satoshi Test and Visual Proofs"
-seoTitle: "Self-Hosted Wallet Verification Under the EU TFR | BeVerified"
-seoDescription: "How CASPs prove a customer controls a self-hosted wallet under the EU Transfer of Funds Regulation: AOPP, signed messages, the Satoshi Test and screenshots compared."
-lede: "When a crypto-asset service provider sends crypto to, or receives it from, a self-hosted wallet, there is no second institution to vouch for the address. This guide explains how CASPs can get evidence that their customer controls it, and where each method falls short."
+title: 'Verifying Self-Hosted Wallets Under the TFR: AOPP, Signed Messages, the Satoshi Test and Visual Proofs'
+seoTitle: Self-Hosted Wallet Verification Under the EU TFR | BeVerified
+seoDescription: 'How CASPs verify self-hosted wallets under the EU Transfer of Funds Regulation: AOPP, manual message signing, the Satoshi Test and visual proofs compared.'
+lede: When a crypto-asset service provider (CASP) transfers digital assets to or from a self-hosted wallet, it may need to establish who controls the wallet address. This can be challenging because, unlike a transfer between two regulated service providers, a self-hosted wallet transfer does not necessarily involve another institution that can exchange customer information.
 section: guide
 published: 2026-10-27
 updated: 2026-10-27
-author: 21analytics
-partner:
-  name: 21 Analytics
-  note: "This article was written by 21 Analytics, which developed AOPP and sells Travel Rule software that we review. We checked the regulatory references and the Malta case against the primary sources and edited for style. Partner articles do not change our scores or rankings."
+author: andrii-klymenko
 takeaways:
-  - "For transfers of more than EUR 1,000 to or from a self-hosted address, the EU TFR requires CASPs to take adequate measures to assess whether their customer owns or controls that address (Articles 14(5) and 16(2))."
-  - "The EBA's Travel Rule guidelines list signed messages and test transactions such as the Satoshi Test among the methods that can provide that evidence; a customer's declaration alone is not enough."
-  - "In April 2026 Malta's financial services arbiter ordered a platform that relied on a tick-box declaration to repay 40% of a scam victim's EUR 30,000 loss."
-  - "AOPP and manual message signing give cryptographic evidence without an on-chain transfer; the Satoshi Test relies on a small transaction; screenshots and videos are easy to collect but can be manipulated."
-  - "Wallet verification shows control of an address. It does not verify the customer's identity or remove transaction risk on its own."
-topics: [Travel Rule, Self-Hosted Wallets, EU TFR, AOPP, Crypto Compliance]
-provider_slugs: [21analytics]
-ranking_keys: [travel-rule, crypto]
+- The EU TFR establishes requirements for information accompanying crypto-asset transfers and includes specific measures for transfers involving self-hosted addresses.
+- Wallet verification helps establish that a customer controls a particular address, but does not independently verify the customer's identity or eliminate transaction risk.
+- The Malta Office of the Arbiter for Financial Services' ruling in ASF 062/2025 KJ v Foris DAX MT Limited highlights the risks of relying on a customer's checkbox declaration to establish wallet ownership.
+- The EBA's Travel Rule guidelines describe technical methods that can provide evidence of wallet control, including cryptographic signatures and test transactions.
+- AOPP automates cryptographic wallet ownership verification through a wallet-supported signing process.
+- Manual message signing provides cryptographic evidence without requiring an on-chain transaction, but can be difficult for some customers and requires compatible wallet functionality.
+- The Satoshi Test uses a small cryptocurrency transaction to provide evidence of control, but may incur network fees and introduce delays.
+- Visual proofs are familiar and widely accessible, but screenshots and videos can be manipulated and usually require manual review.
+- The right verification method depends on the applicable regulation, wallet compatibility, security requirements, operational costs and customer experience.
+topics:
+- Travel Rule
+- Self-Hosted Wallets
+- EU TFR
+- AOPP
+- Crypto Compliance
+provider_slugs:
+- 21analytics
+ranking_keys:
+- travel-rule
+- crypto
+internal_links_min: 1
 faq:
-  - q: "Does the EU TFR require proof of ownership for every self-hosted wallet transfer?"
-    a: "No. The ownership or control assessment applies to transfers of more than EUR 1,000 to or from a self-hosted address, under Articles 14(5) and 16(2). The TFR's information requirements for self-hosted transfers apply regardless of amount, so check the Regulation and your supervisor's guidance for each transfer type."
-  - q: "Does wallet verification reveal the customer's private key?"
-    a: "No. A properly built message-signing process produces a signature without exposing the private key. Customers should never be asked for their seed phrase or private key during wallet verification."
-  - q: "Is AOPP the same as manual message signing?"
-    a: "Both rely on a cryptographic signature. AOPP automates the signing request and sends the proof back to the CASP, while manual signing asks the customer to sign a message themselves and submit the result."
-  - q: "Is the Satoshi Test free?"
-    a: "Not necessarily. The customer usually pays the network fee for the test transaction, and the cost depends on the blockchain and how busy it is."
-  - q: "Are screenshots enough to prove wallet ownership?"
-    a: "A screenshot shows that a wallet app displays an address, but it does not prove control of the private key. Images and videos can be edited, so visual proofs need manual review and give weaker evidence than cryptographic methods."
+- q: Does the EU TFR require proof of ownership for every self-hosted wallet transfer?
+  a: The EU TFR establishes specific information requirements for transfers involving self-hosted addresses. It also requires adequate measures to assess whether a self-hosted address is owned or controlled by the customer in certain circumstances, including qualifying transfers exceeding EUR 1,000. CASPs should consult the Regulation and applicable supervisory guidance to determine the requirements for each transaction.
+- q: Does wallet verification reveal the customer's private key?
+  a: No. A properly implemented message-signing process produces a cryptographic signature without disclosing the private key itself. Customers should never be asked to disclose their seed phrase or private key as part of a wallet verification process.
+- q: Is AOPP the same as manual message signing?
+  a: AOPP automates the cryptographic signing and submission process. Manual signing requires the customer to perform the signing steps and submit the resulting proof through the relevant workflow.
+- q: Is the Satoshi Test free?
+  a: Not necessarily. The customer may incur network fees when sending the verification transaction. Costs depend on the blockchain and prevailing network conditions.
+- q: Are screenshots sufficient to prove wallet ownership?
+  a: A screenshot can show that a wallet application displays a particular address, but it does not independently prove control of the private key. Images and videos can be manipulated, which is why visual proofs typically require manual review and may provide weaker evidence than cryptographic methods.
+- q: Can a CASP use more than one wallet verification method?
+  a: Yes. Supporting multiple methods can help accommodate different wallets and customer needs. The methods selected should be appropriate to the applicable regulatory requirements and the CASP's risk assessment.
 sources:
-  - title: "Regulation (EU) 2023/1113 on information accompanying transfers of funds and certain crypto-assets (Transfer of Funds Regulation)"
-    publisher: "EUR-Lex"
-    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R1113"
-    accessed: 2026-10
-  - title: "Guidelines on information requirements in relation to transfers of funds and certain crypto-assets transfers (Travel Rule guidelines)"
-    publisher: "European Banking Authority"
-    url: "https://www.eba.europa.eu/sites/default/files/2024-07/6de6e9b9-0ed9-49cd-985d-c0834b5b4356/Travel%20Rule%20Guidelines.pdf"
-    accessed: 2026-10
-  - title: "Guidelines on the use of remote customer onboarding solutions (EBA/GL/2022/15)"
-    publisher: "European Banking Authority"
-    url: "https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2022/EBA-GL-2022-15%20GL%20on%20remote%20customer%20onboarding/1043884/Guidelines%20on%20the%20use%20of%20Remote%20Customer%20Onboarding%20Solutions.pdf"
-    accessed: 2026-10
-  - title: "ASF 062/2025, KJ v Foris DAX MT Limited, decision of 17 April 2026"
-    publisher: "Office of the Arbiter for Financial Services, Malta"
-    url: "https://financialarbiter.org.mt/sites/default/files/oafs/decisions/2706/ASF%20062-2025%20-%20KJ%20vs%20Foris%20DAX%20MT%20Limited.pdf"
-    accessed: 2026-10
-  - title: "Self-hosted wallet verification"
-    publisher: "21 Analytics"
-    url: "https://www.21analytics.co/travel-rule/?tag=self-hosted+wallet#self-hosted-wallet-verification"
-    accessed: 2026-10
-  - title: "Why AOPP leads in self-hosted wallet verification"
-    publisher: "21 Analytics"
-    url: "https://www.21analytics.co/blog/aopp-leads-self-hosted-wallet-verification/"
-    accessed: 2026-10
+- title: Regulation (EU) 2023/1113 on information accompanying transfers of funds and certain crypto-assets
+  publisher: EUR-Lex
+  url: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R1113&qid=1730134560437
+  accessed: 2026-10
+- title: Guidelines on information requirements in relation to transfers of funds and certain crypto-assets transfers (Travel Rule guidelines)
+  publisher: European Banking Authority
+  url: https://www.eba.europa.eu/sites/default/files/2024-07/6de6e9b9-0ed9-49cd-985d-c0834b5b4356/Travel%20Rule%20Guidelines.pdf
+  accessed: 2026-10
+- title: Guidelines on the use of remote customer onboarding solutions (EBA/GL/2022/15)
+  publisher: European Banking Authority
+  url: https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2022/EBA-GL-2022-15%20GL%20on%20remote%20customer%20onboarding/1043884/Guidelines%20on%20the%20use%20of%20Remote%20Customer%20Onboarding%20Solutions.pdf
+  accessed: 2026-10
+- title: ASF 062/2025, KJ v Foris DAX MT Limited, decision of 17 April 2026
+  publisher: Office of the Arbiter for Financial Services, Malta
+  url: https://financialarbiter.org.mt/sites/default/files/oafs/decisions/2706/ASF%20062-2025%20-%20KJ%20vs%20Foris%20DAX%20MT%20Limited.pdf
+  accessed: 2026-10
+- title: Self-hosted wallet verification (AOPP)
+  publisher: 21 Analytics
+  url: https://www.21analytics.co/travel-rule/?tag=self-hosted+wallet#self-hosted-wallet-verification
+  accessed: 2026-10
+- title: 21 Analytics
+  publisher: 21 Analytics
+  url: https://www.21analytics.co/
+  accessed: 2026-10
+- title: BitBox
+  publisher: BitBox
+  url: https://bitbox.swiss/
+  accessed: 2026-10
+- title: Delphine Forma
+  publisher: LinkedIn
+  url: https://www.linkedin.com/in/delphineforma/
+  accessed: 2026-10
 ---
 
-A transfer between two regulated crypto-asset service providers (CASPs) has an institution at each end that can exchange customer information. A transfer to or from a self-hosted wallet does not. When a customer asks a CASP to send funds to their own wallet, or deposits from one, the CASP may need to establish who actually controls that address.
+The EU Transfer of Funds Regulation (TFR), Regulation (EU) 2023/1113, establishes information requirements for transfers of funds and certain crypto-assets. It also includes specific requirements for transfers involving self-hosted addresses, including measures to assess whether a customer owns or controls the address in certain circumstances.
 
-The practical question is how to get reliable evidence of control without adding needless cost, delay or security risk. Four methods are in common use: the Address Ownership Proof Protocol (AOPP), manual message signing, the Satoshi Test, and visual proofs such as screenshots or videos. They differ in technical requirements, in how strong the evidence is, and in what they ask of the customer.
+For CASPs, the practical question is how to obtain reliable evidence of wallet control without introducing unnecessary costs, delays or security risks.
 
-## What does the EU Transfer of Funds Regulation require?
+Four commonly used methods are the Address Ownership Proof Protocol (AOPP), manual message signing, the Satoshi Test and visual proofs such as screenshots or videos. Each method has different technical requirements, security characteristics and implications for the customer experience.
 
-The [Transfer of Funds Regulation (TFR), Regulation (EU) 2023/1113](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R1113), sets out the information that must accompany transfers of funds and certain crypto-assets. It has applied since 30 December 2024. CASPs must collect and handle specified information about the originator and the beneficiary of covered transfers, including transfers involving addresses that no other regulated provider holds.
+This guide explains how these methods work, compares their advantages and limitations, and explores what CASPs should consider when choosing a self-hosted wallet verification process.
 
-For a transfer to a self-hosted address, Article 14(5) requires the originator's CASP to obtain and hold the originator and beneficiary information and to make sure the transfer can be individually identified. Article 16(2) does the same for the beneficiary's CASP when a transfer comes from a self-hosted address.
+## What Does the EU Transfer of Funds Regulation Require?
 
-Both articles add a second duty for larger amounts. Where the transfer exceeds EUR 1,000, the CASP must take adequate measures to assess whether the self-hosted address is owned or controlled by its own customer. The EUR 1,000 figure applies to that ownership assessment only. It is not a general exemption from the TFR's information requirements for smaller transfers.
+The EU [Transfer of Funds Regulation (TFR), Regulation (EU) 2023/1113](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R1113&qid=1730134560437), establishes information requirements for transfers of funds and certain crypto-assets. It has applied to crypto-asset transfers since 30 December 2024.
 
-### What counts as reliable verification?
+The TFR requires CASPs to collect and handle specified information about the originator and beneficiary of covered transfers. It also addresses transfers involving addresses that are not held by another regulated service provider.
 
-The European Banking Authority (EBA) explains in its [Travel Rule guidelines](https://www.eba.europa.eu/sites/default/files/2024-07/6de6e9b9-0ed9-49cd-985d-c0834b5b4356/Travel%20Rule%20Guidelines.pdf) what a reliable method looks like. Where ownership or control must be assessed, the CASP needs evidence that establishes control of the address rather than relying only on what the customer says. The methods the guidelines describe include:
+Under Article 14(5), when a crypto-asset transfer is made to a self-hosted address, the originating CASP must obtain and retain the information referred to in Article 14(1) and (2) and ensure that the transfer can be individually identified.
 
-- verification procedures with or without direct human supervision, of the kind set out in the EBA's [guidelines on remote customer onboarding](https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2022/EBA-GL-2022-15%20GL%20on%20remote%20customer%20onboarding/1043884/Guidelines%20on%20the%20use%20of%20Remote%20Customer%20Onboarding%20Solutions.pdf);
-- asking the customer to send a predefined amount from the self-hosted address to an account the CASP controls, for example a Satoshi Test;
-- asking the customer to digitally sign a specific message with the private key linked to the address, for example through AOPP;
-- other approaches that give a reliable and secure assessment, provided the CASP is satisfied it has established who owns or controls the address.
+For transfers exceeding EUR 1,000 involving a self-hosted address, Article 16(2) requires CASPs to take adequate measures to assess whether the address is owned or controlled by their customer. The Regulation also addresses transfers that have been split into several transactions that appear to be linked and cases involving suspected money laundering or terrorist financing.
 
-## A real case: the risk of a tick box
+The EUR 1,000 threshold relates to the specific ownership or control assessment requirement. It should not be interpreted as a general exemption from the EU TFR's information requirements for lower-value crypto-asset transfers.
 
-Malta's Office of the Arbiter for Financial Services showed what is at stake in [ASF 062/2025, KJ v Foris DAX MT Limited](https://financialarbiter.org.mt/sites/default/files/oafs/decisions/2706/ASF%20062-2025%20-%20KJ%20vs%20Foris%20DAX%20MT%20Limited.pdf), decided on 17 April 2026.
+### What Constitutes Reliable Self-Hosted Wallet Verification?
 
-The complainant lost EUR 30,000 to a scam after sending funds in January 2025 to a self-hosted wallet the scammer controlled. He argued that the platform had not met its obligations under the TFR. According to the decision, the platform's ownership check consisted of a tick box confirming that the customer owned the destination address, with no technical verification behind it. The complainant said he knew little about external wallets and ticked the box because the scammer told him to.
+The European Banking Authority (EBA) has provided further guidance on what constitutes a reliable verification method in its [Travel Rule guidelines](https://www.eba.europa.eu/sites/default/files/2024-07/6de6e9b9-0ed9-49cd-985d-c0834b5b4356/Travel%20Rule%20Guidelines.pdf). Where ownership or control must be assessed, CASPs need to obtain evidence that establishes control of the wallet address, rather than relying solely on a customer's declaration.
 
-The Arbiter found that for transfers above EUR 1,000 to a self-hosted wallet, a self-declaration on its own was not enough, and ordered the platform to pay EUR 12,000, which is 40% of the loss, plus interest. The rest of the loss stayed with the complainant because of his own contributory negligence.
+Methods that can be used to verify ownership or control include:
 
-## What is self-hosted wallet verification?
+* Verification procedures conducted with or without direct human supervision, as described in the EBA's [guidelines on remote customer onboarding](https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2022/EBA-GL-2022-15%20GL%20on%20remote%20customer%20onboarding/1043884/Guidelines%20on%20the%20use%20of%20Remote%20Customer%20Onboarding%20Solutions.pdf).
+* Asking the customer to send a predefined amount from the self-hosted address to an account controlled by the CASP, for example through a Satoshi Test.
+* Asking the customer to digitally sign a specific message using the private key associated with the wallet address, for example AOPP.
+* Alternative approaches that enable a reliable and secure assessment, provided the CASP is satisfied that it has established who owns or controls the address.
 
-In a self-hosted wallet the user holds the private keys, rather than a custodian holding them. Self-hosted wallet verification is the process of getting evidence that the customer controls a particular address on that wallet. What the evidence looks like depends on the method.
+## A Real-World Example: The Risks of Checkbox-Based Verification
+
+The importance of reliable self-hosted wallet verification was highlighted in a decision by Malta's Office of the Arbiter for Financial Services in [*ASF 062/2025 KJ v Foris DAX MT Limited*](https://financialarbiter.org.mt/sites/default/files/oafs/decisions/2706/ASF%20062-2025%20-%20KJ%20vs%20Foris%20DAX%20MT%20Limited.pdf).
+
+The case involved a complainant who lost approximately EUR 30,000 after falling victim to a scam. The complainant transferred funds to a self-hosted wallet believed to be controlled by the scammer and argued that the platform had failed to meet its obligations under the EU TFR.
+
+According to the decision, the platform's wallet ownership process required the customer to tick a box confirming control of the destination address. No additional technical verification was performed.
+
+The complainant explained that he had limited knowledge of external wallets and did not fully understand the process. Following the scammer's instructions, he nevertheless confirmed that he controlled the destination address.
+
+The decision resulted in Foris DAX MT Limited being ordered to compensate the complainant for 40% of the losses suffered.
+
+## What Is Self-hosted Wallet Verification?
+
+A self-hosted wallet is a wallet in which the user controls the private keys rather than relying on a third-party custodian to control them.
+
+When a customer requests a transfer between a CASP and a self-hosted wallet, the CASP may need to establish that the customer controls the relevant blockchain address.
+
+Self-hosted wallet verification is the process of obtaining evidence of that control. The evidence can take different forms depending on the verification method used.
+
+The four methods covered in this article are:
+
+1. Address Ownership Proof Protocol (AOPP).
+2. Manual signing of a message.
+3. The Satoshi Test.
+4. Visual proof through screenshots or video clips.
 
 ### Method 1: Address Ownership Proof Protocol (AOPP)
 
-The [Address Ownership Proof Protocol](https://www.21analytics.co/travel-rule/?tag=self-hosted+wallet#self-hosted-wallet-verification) automates the collection of cryptographic proof that a customer controls a self-hosted address. 21 Analytics developed it together with the Swiss hardware wallet maker BitBox, with the aim of making verification easier for customers and reducing manual work for compliance teams.
+The Address Ownership Proof Protocol ([AOPP](https://www.21analytics.co/travel-rule/?tag=self-hosted+wallet#self-hosted-wallet-verification)) automates the process of obtaining cryptographic proof that a customer controls a self-hosted wallet address.
 
-Instead of asking the customer to compose and sign a message by hand, AOPP walks them through a signing step inside their wallet and sends the proof back automatically. "AOPP could solve the cumbersome proof of ownership issue," Delphine Forma, Policy Lead at Solidus Labs, told Cointelegraph, as [quoted by 21 Analytics](https://www.21analytics.co/blog/aopp-leads-self-hosted-wallet-verification/).
+Developed by [21 Analytics](https://www.21analytics.co/) together with the Swiss hardware wallet manufacturer [Bitbox](https://bitbox.swiss/), AOPP is designed to make wallet verification more accessible to customers while reducing manual work for compliance teams.
 
-#### How AOPP works
+Rather than asking customers to construct and sign a message manually, AOPP guides them through a wallet-supported signing process and automates the submission of the resulting proof.
 
-The customer starts a withdrawal in the exchange's app, which generates a unique proof request. The customer opens their wallet through that request and approves the signing. The wallet produces a signature showing control of the address, and the AOPP workflow returns it to the CASP. Nobody on the compliance team has to review a screenshot or match a test transaction to the request.
+*“AOPP could solve the cumbersome proof of ownership issue.”* [Delphine Forma](https://www.linkedin.com/in/delphineforma/), Policy Lead at Solidus Labs, and Crypto Compliance and Legal TG Founder.
 
-The signature does not reveal the private key. It shows that the wallet can produce a valid signature for that address.
+#### How Does AOPP Work?
 
-### Method 2: Manual message signing
+A VASP customer will initiate a withdrawal within their exchange’s software, thereafter a unique proof-request will be generated.
 
-Here the customer signs a message with the private key linked to the address. The signature shows that the customer can use the key, without any on-chain transfer.
+Via this proof-request, the customer opens their wallet and approves the signing operation. The wallet generates a cryptographic signature demonstrating control of the relevant address.
 
-#### How manual signing works
+The proof is then returned to the CASP through the AOPP workflow. Because the process is automated, the CASP does not need to rely on a member of the compliance team manually reviewing a screenshot or matching a small test transaction to the customer's request.
 
-The CASP gives the customer a message to sign. The customer opens a compatible wallet, picks the address and signs. They then send the signature to the CASP, which checks it against the address and the message. A valid signature is cryptographic evidence that the signer controls the private key for that address. The catch is that not every wallet supports message signing, and some customers find the steps hard to follow.
+The signature does not reveal the customer's private key. Instead, it provides cryptographic evidence that the wallet can produce a valid signature for the relevant address.
+
+### Method 2: Manual Message Signing
+
+Manual message signing is a cryptographic method in which the customer signs a message using the private key associated with the wallet address.
+
+The signature provides evidence that the customer can use the relevant private key without requiring an on-chain transfer.
+
+#### How Does Manual Signing Work?
+
+The CASP provides the customer with a message to sign. The customer opens a compatible wallet, selects the relevant address and signs the message.
+
+The customer then submits the signature to the CASP, which verifies it against the relevant address and message.
+
+If the signature is valid, it provides cryptographic evidence that the signer controls the private key associated with that address.
 
 ### Method 3: The Satoshi Test
 
-The Satoshi Test uses a small transaction. The customer sends an agreed amount from the address being verified within a set period, and the CASP checks the blockchain for it. The evidence is an observable transaction rather than a screenshot or a submitted signature.
+The Satoshi Test is a wallet verification method based on a small cryptocurrency transaction.
 
-#### How the Satoshi Test works
+The customer sends an agreed amount of cryptocurrency from the address being verified within a specified period. The CASP then checks the blockchain to confirm that the expected transaction was made.
 
-The CASP sets up the test: a fresh deposit address, a random low amount agreed with the customer, and a time window for the transfer. The customer sends that amount from the wallet address in question and tells the CASP. The CASP watches the blockchain and checks whether the transaction matches the request. If it does, and the other checks pass, the CASP can treat it as evidence that the customer controls the address. The customer usually pays the network fee, and waiting for confirmation adds delay.
+The method relies on an observable transaction rather than a screenshot or manually submitted signature.
+
+#### How Does the Satoshi Test Work?
+
+The CASP will create a Satoshi Test consisting of a fresh coin deposit address, a random low-value amount of coins previously agreed with the user, and a timeframe (usually between 15min and 48h) for the verification.
+
+The customer sends the agreed amount from the relevant wallet address and the transaction confirmation to their CASP. The CASP monitors the blockchain and checks whether the transaction matches the verification request.
+
+If the expected transaction is detected and the required checks are satisfied, the CASP can use it as evidence that the customer controls the address.
 
 ### Method 4: Visual proofs
 
-With a visual proof, the customer sends a screenshot or video of their wallet app showing the address. A member of the compliance team compares the address on screen with the one in the transfer.
+Visual proof is a wallet verification method in which the customer submits a screenshot or video of their wallet application displaying the relevant address.
 
-#### How visual proofs work
+The CASP's compliance team reviews the submission and compares the displayed address with the address involved in the transfer.
 
-The customer records the wallet screen showing the address they want to use and submits it. The compliance team checks that the displayed address matches. If the evidence looks consistent and meets the CASP's procedures, the address may be approved, subject to any other checks. The method is familiar to customers, but images and videos can be edited, and every submission needs a person to review it.
+#### How Do Visual Proofs Work?
 
-## Which method to choose
+The customer captures a screenshot or video of the wallet application showing the address they intend to use.
 
-Collecting customer information is not the same as establishing control of a wallet address, and the difference matters most when a transfer involves a self-hosted wallet. The Foris DAX case shows what can happen when a CASP relies on a declaration: a customer can confirm ownership of an address without understanding what they are confirming, or without controlling the wallet at all.
+The customer submits the evidence to the CASP. A member of the compliance team then checks whether the displayed address matches the address supplied for the transaction.
 
-Cryptographic methods, AOPP and manual signing, give stronger technical evidence than a declaration. The Satoshi Test gives transaction-based evidence at the cost of a fee and some waiting. Visual proofs are the easiest to collect and the easiest to fake. Many CASPs support more than one method so that customers with different wallets can all complete a check, as long as each method fits the regulation and the CASP's risk assessment.
+If the evidence appears consistent and satisfies the CASP's procedures, the address may be approved, subject to any other applicable checks.
 
-If you are comparing tools that handle these checks, our [Travel Rule software ranking](/providers/travel-rule/) compares providers on protocol support and self-hosted wallet proofs, and our [review of 21 Analytics](/providers/21analytics/) covers which proofs its product supports. For the wider EU rules that apply to CASPs, see our [MiCA regulation guide](/guide/mica-regulation-guide/) and the [crypto KYC ranking](/providers/crypto/).
+## Conclusion
+
+Self-hosted wallet verification is an important consideration for CASPs implementing the EU TFR and other [Travel Rule frameworks](/providers/travel-rule/). Collecting customer information is not the same as establishing control of a particular wallet address, and the distinction becomes especially important when a transfer involves a self-hosted wallet.
+
+The Foris DAX MT Limited case demonstrates the potential consequences of relying on a checkbox declaration without additional verification. A customer can confirm ownership of an address without understanding the implications or actually controlling the wallet.
+
+CASPs should therefore select verification methods that provide reliable evidence of control in line with the applicable regulatory requirements. Cryptographic methods, including AOPP and manual message signing, can provide stronger technical evidence than a declaration alone. The Satoshi Test offers transaction-based evidence, while visual proofs may be more accessible but require careful assessment of their limitations.

@@ -57,7 +57,9 @@ for (const f of only) {
     else if (/^https?:/.test(u) && !sourceUrls.has(u)) err(f, `external link not in sources: ${u}`);
   }
   const internal = [...body.matchAll(/\]\((\/[^)\s]*)\)/g)].length;
-  if (internal < 3) err(f, `only ${internal} internal links`);
+  // internal_links_min: lower floor for third-party text published verbatim (template still adds review and ranking links)
+  const minInternal = Number.isInteger(d.internal_links_min) ? d.internal_links_min : 3;
+  if (internal < minInternal) err(f, `only ${internal} internal links`);
 }
 console.log(`articles: ${only.length} file(s), ${errors} issue(s)`);
 process.exit(errors ? 1 : 0);
