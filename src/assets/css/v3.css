@@ -619,6 +619,8 @@ h1, h2, h3, p, ul, ol, figure { margin: 0; }
 .art__head { padding-bottom: 28px; border-bottom: 1px solid var(--line-strong); margin-bottom: 28px; }
 .art__h1 { margin: 14px 0 18px; }
 .art__lede { font-size: 19px; line-height: 1.55; color: var(--body); margin-bottom: 20px; }
+.art__partner { margin-top: 16px; padding: 12px 16px; border-left: 3px solid var(--ink); background: var(--surface); border-radius: 6px; font-size: 14px; line-height: 1.55; color: var(--body); }
+.art__partner a { white-space: nowrap; }
 .art__takeaways { border: 1.5px solid var(--ink); border-radius: var(--radius-card); padding: 18px 22px; margin-bottom: 20px; background: var(--surface); }
 .art__takeaways h2 { font-size: 15px; font-weight: 600; margin-bottom: 8px; }
 .art__takeaways ul { padding-left: 18px; font-size: 15px; line-height: 1.6; }

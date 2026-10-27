@@ -20,7 +20,9 @@ export const articleData = (section) => ({
           headline: d.title, description: d.seoDescription,
           ...(d.published ? { datePublished: iso(d.published) } : {}),
           ...(d.updated ? { dateModified: iso(d.updated) } : {}),
-          ...(au ? { author: { "@type": "Person", "@id": `${d.site.url}${au.url}#person`, name: au.name, url: `${d.site.url}${au.url}` } } : {}),
+          ...(au ? { author: au.type === "Organization"
+            ? { "@type": "Organization", name: au.name, ...(au.review ? { url: `${d.site.url}${au.review}` } : {}) }
+            : { "@type": "Person", "@id": `${d.site.url}${au.url}#person`, name: au.name, url: `${d.site.url}${au.url}` } } : {}),
           publisher: { "@id": `${d.site.url}/#organization` },
           ...(d.topics?.length ? { keywords: d.topics.join(", ") } : {}),
           ...(d.provider_slugs?.length ? { mentions: d.provider_slugs.map((s) => ({ "@id": `${d.site.url}/providers/${s}/#software` })) } : {}),

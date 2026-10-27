@@ -19,11 +19,14 @@ layout: v3.njk
         <h1 class="h-display art__h1">{{ title }}</h1>
         {%- if lede %}<p class="art__lede">{{ lede }}</p>{% endif %}
         <div class="byline">
-          {%- if au %}<div class="byline__author"><img class="avatar" src="{{ au.photo }}" alt=""><span>By <a href="{{ au.url }}">{{ au.name }}</a></span></div><span class="dot" aria-hidden="true">·</span>{% endif %}
+          {%- if au %}<div class="byline__author">{% if au.photo %}<img class="avatar" src="{{ au.photo }}" alt="">{% endif %}<span>By {% if au.url or au.review %}<a href="{{ au.url or au.review }}">{{ au.name }}</a>{% else %}{{ au.name }}{% endif %}</span></div><span class="dot" aria-hidden="true">·</span>{% endif %}
           {%- if published %}<span>Published <time datetime="{{ published | iso }}">{{ published | displayDate }}</time></span><span class="dot" aria-hidden="true">·</span>{% endif %}
           {%- if updated %}<span>Updated <time datetime="{{ updated | iso }}">{{ updated | displayDate }}</time></span><span class="dot" aria-hidden="true">·</span>{% endif %}
           <span>{{ content | readingTime }} min read</span>
         </div>
+        {%- if partner %}
+        <p class="art__partner"><strong>Partner article.</strong> {{ partner.note }} <a href="/methodology/#disclosure">How we work with partners →</a></p>
+        {%- endif %}
       </header>
       {%- if takeaways.length %}
       <section class="art__takeaways" aria-labelledby="kt-h"><h2 id="kt-h">Key takeaways</h2><ul>{% for t in takeaways %}<li>{{ t }}</li>{% endfor %}</ul></section>
@@ -67,12 +70,12 @@ layout: v3.njk
 
       {%- if au %}
       <section class="card author-box art__block" aria-label="About the author">
-        <img class="avatar avatar--lg" src="{{ au.photo }}" alt="{{ au.name }}">
+        {%- if au.photo %}<img class="avatar avatar--lg" src="{{ au.photo }}" alt="{{ au.name }}">{% endif %}
         <div>
           <div class="author-box__name">{{ au.name }}</div>
           <div class="author-box__role">{{ au.role }}</div>
           <p>{{ au.bio }}</p>
-          <div class="author-box__meta">{% if au.url %}<a href="{{ au.url }}">Author profile →</a>{% endif %}{% if au.linkedin %}<a href="{{ au.linkedin }}" rel="noopener" target="_blank">LinkedIn ↗</a>{% endif %}<a href="{{ site.v3.methodologyHref }}">Editorial standards →</a></div>
+          <div class="author-box__meta">{% if au.url %}<a href="{{ au.url }}">Author profile →</a>{% elif au.review %}<a href="{{ au.review }}">Our review of {{ au.name }} →</a>{% endif %}{% if au.linkedin %}<a href="{{ au.linkedin }}" rel="noopener" target="_blank">LinkedIn ↗</a>{% endif %}<a href="{{ site.v3.methodologyHref }}">Editorial standards →</a></div>
         </div>
       </section>
       {%- endif %}

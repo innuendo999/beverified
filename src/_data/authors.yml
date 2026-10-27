@@ -6,3 +6,10 @@ andrii-klymenko:
   linkedin: https://www.linkedin.com/in/klymenkoandrii/
   url: /authors/andrii-klymenko/   # author page, src/authors/authors.njk
   expertise: [KYC, KYB, AML, Liveness detection, Travel Rule]
+
+21analytics:
+  name: 21 Analytics
+  type: Organization   # partner author: no author page, byline links to our review
+  role: Partner author
+  bio: 21 Analytics AG, based in Zug, Switzerland, builds Travel Rule compliance software and created the Address Ownership Proof Protocol (AOPP). BeVerified reviews its product independently.
+  review: /providers/21analytics/
