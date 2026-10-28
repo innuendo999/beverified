@@ -42,4 +42,7 @@ updated: "2026-10-18"
 <section id="contact">
 <h2>Contact and corrections</h2>
 <p>Spotted an error, or work at a provider we cover? Write to <a href="mailto:support@beverified.org">support@beverified.org</a>. Providers can also <a href="/placement-options/">claim their profile</a> to send documentation and corrections.</p>
+{%- if site.profiles and site.profiles.length %}
+<p>You can also follow BeVerified on {% for pr in site.profiles %}<a href="{{ pr.url }}" rel="me noopener" target="_blank">{{ pr.name }} <span aria-hidden="true">↗</span></a>{% if not loop.last %}, {% endif %}{% endfor %}.</p>
+{%- endif %}
 </section>
