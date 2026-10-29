@@ -1,0 +1,54 @@
+term: eIDAS 2 and the EU Digital Identity Wallet
+also_known_as: [eIDAS 2.0, European Digital Identity Framework, EU Digital Identity Wallet, EUDI Wallet, Regulation (EU) 2024/1183]
+cluster: standards
+definition: eIDAS 2 is Regulation (EU) 2024/1183, which amends the eIDAS Regulation (EU) No 910/2014 to create the European Digital Identity Framework. Every Member State must offer a European Digital Identity Wallet, and private services that must use strong user authentication, including banks, have to accept it when the user asks.
+seo_title: "eIDAS 2 and the EU Digital Identity Wallet | BeVerified"
+seo_description: "eIDAS 2 (Regulation 2024/1183) brings the EU Digital Identity Wallet. Deadlines, which firms must accept it, how it fits KYC and what to ask vendors."
+rankings: [identity-verification]
+related: [reusable-digital-identity, identity-proofing, eu-aml-regulation, know-your-customer, nist-sp-800-63, uk-diatf]
+body: |
+  ## What eIDAS 2 changes
+
+  [Regulation (EU) 2024/1183](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1183) of 11 April 2024, published in the Official Journal on 30 April 2024, amends the original eIDAS Regulation, (EU) No 910/2014, "as regards establishing the European Digital Identity Framework". Its main addition is the European Digital Identity Wallet, which lets a person identify themselves online and share attestations of attributes with the services they choose.
+
+  Article 5a(1) gives each Member State 24 months from the entry into force of the implementing acts to provide at least one wallet. The [European Commission](https://digital-strategy.ec.europa.eu/en/policies/eudi-regulation) summarizes this as wallets for citizens "by the end of 2026".
+
+  ## Who has to accept the wallet
+
+  Article 5f(2) covers private relying parties that are required by Union or national law to use strong user authentication for online identification. The listed sectors include banking, financial services, social security and health. These parties must accept the wallet no later than 36 months from the entry into force of the implementing acts, and only when the user chooses to use it. Micro and small enterprises are exempt. Recital 56 adds the case where strong user authentication is required by contract.
+
+  Article 5f(3) applies the same idea to very large online platforms under the Digital Services Act: where they require user authentication, they must accept the wallet at the user's voluntary request, for the minimum data necessary.
+
+  ## Why it matters for KYC
+
+  Recital 62 says wallets and attestations of attributes should help the financial sector identify customers and exchange the attributes needed for customer due diligence under the new EU anti-money laundering framework, and support strong customer authentication for account login and payment initiation. The [EU Anti-Money Laundering Regulation](/glossary/eu-aml-regulation/) points the same way: its recital 66 says electronic identification under eIDAS should be taken into account and accepted by obliged entities when they identify customers.
+
+  For identity verification buyers this is a change in input, not in duty. A bank still has to [know its customer](/glossary/know-your-customer/), but in some flows the evidence may arrive as a signed wallet presentation instead of a photo of an ID card and a selfie. That is one form of [reusable digital identity](/glossary/reusable-digital-identity/). Our [identity verification ranking](/providers/identity-verification/) compares the reviewed providers; ask each one where wallet acceptance sits on its roadmap.
+buyer_questions:
+  - Can your onboarding flow accept a European Digital Identity Wallet presentation today, and for which Member States?
+  - How do you validate a wallet presentation, and what do you store as evidence for our customer due diligence file?
+  - If a user has no wallet, how does your flow fall back to document and selfie checks without starting again?
+  - Will you support attestations of attributes, such as proof of address or age, alongside the core identity data?
+faq:
+  - q: When will EU Digital Identity Wallets be available?
+    a: Article 5a(1) gives Member States 24 months from the entry into force of the implementing acts. The European Commission summarizes this as wallets for citizens by the end of 2026.
+  - q: Do banks have to accept the EU Digital Identity Wallet?
+    a: Banks and other private services that are required by law to use strong user authentication for online identification must accept it at the user's request, no later than 36 months from the entry into force of the implementing acts. Micro and small enterprises are exempt.
+  - q: Does the wallet replace KYC checks?
+    a: No. It changes how identity evidence reaches the firm. Anti-money laundering rules still require customer due diligence, and the EU AML Regulation says electronic identification under eIDAS should be accepted as part of it.
+sources:
+  - title: Regulation (EU) 2024/1183 amending Regulation (EU) No 910/2014 as regards establishing the European Digital Identity Framework
+    publisher: EUR-Lex
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1183
+    accessed: 2026-10
+  - title: European Digital Identity (eID) Regulation
+    publisher: European Commission
+    url: https://digital-strategy.ec.europa.eu/en/policies/eudi-regulation
+    accessed: 2026-10
+  - title: Regulation (EU) 2024/1624 on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing
+    publisher: EUR-Lex
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1624
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

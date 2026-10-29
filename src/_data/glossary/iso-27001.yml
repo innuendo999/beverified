@@ -1,0 +1,59 @@
+term: ISO/IEC 27001
+also_known_as: [ISO 27001, ISO/IEC 27001:2022, ISO 27001 certification]
+cluster: standards
+definition: ISO/IEC 27001 is the international standard that sets requirements for an information security management system (ISMS). The current edition is ISO/IEC 27001:2022. Organizations can be certified against it by certification bodies, and accredited certificates can be checked in the IAF CertSearch database.
+seo_description: "ISO/IEC 27001:2022 sets requirements for an information security management system. How certification works, the 2013 transition and how to check a certificate."
+capability: iso_27001
+rankings: [identity-verification, aml]
+related: [soc-2, nist-sp-800-63, iso-iec-30107-3, iso-iec-27566-1, uk-diatf]
+body: |
+  ## What the standard covers
+
+  [ISO](https://www.iso.org/isoiec-27001-information-security.html) describes ISO/IEC 27001 as its best-known standard for information security management systems and their requirements. The current edition is ISO/IEC 27001:2022, "Information security management systems: Requirements". Guidance on the security controls themselves sits in a separate standard, ISO/IEC 27002:2022.
+
+  The standard sets requirements for how an organization manages information security as a system. A certificate covers the organization's ISMS, not a product, so what it says depends on the scope written on it.
+
+  ## How certification works
+
+  ISO says certification to ISO/IEC 27001 "is possible but not obligatory" and that "ISO does not perform certification". Certification is done by certification bodies, and the ones that matter most to buyers are accredited, so their certificates appear in the International Accreditation Forum (IAF) database described below. New Zealand's government information security manual describes the [audit in two stages](https://nzism.gcsb.govt.nz/ism-document/pdf/Section/12847): a Stage 1 documentation review, then a main audit of the ISMS.
+
+  The 2022 edition replaced ISO/IEC 27001:2013. Under the IAF's [transition rules (IAF MD 26:2023)](https://www.sac-accreditation.gov.sg/files/Documents/iaf_md26_issue_2_15012023.pdf), initial certification and recertification audits had to be to the 2022 edition only from no later than 30 April 2024. The transition period ended on 31 October 2025, and "all certifications based on ISO/IEC 27001:2013 shall expire or be withdrawn at the end of the transition period." So a vendor that still shows a 2013 certificate today does not hold a valid accredited one.
+
+  ## How to check a certificate
+
+  [IAF CertSearch](https://www.iafcertsearch.org/) calls itself "the official global database for accredited certificates" and says it receives data from more than 2,500 certification and accreditation bodies. It cross-checks its sources to confirm that the certification body was accredited to issue a certificate. Look up the vendor's legal entity there and compare what you find with the certificate the vendor sent you.
+
+  When you compare identity verification or AML vendors, read the scope line on the certificate. A certificate for one office or one product says nothing about the platform you plan to use. Check the edition (2022), the expiry date, the certification body and its accreditation. A [SOC 2](/glossary/soc-2/) report answers a different question, whether specific controls worked over a period, so many buyers ask for both. The "Providers that offer it" table on this page lists reviewed providers with ISO/IEC 27001 on record, and our [identity verification](/providers/identity-verification/) and [AML](/providers/aml/) rankings show how they score overall.
+buyer_questions:
+  - Is your ISO/IEC 27001 certificate to the 2022 edition, which certification body issued it, and which accreditation body accredits that certification body?
+  - Does the certificate scope cover the product, hosting and support locations we will use?
+  - Can we find your certificate in IAF CertSearch under the same legal entity that will sign our contract?
+  - When is your next surveillance or recertification audit, and were there any major nonconformities in the last one?
+  - Do you also have a SOC 2 Type 2 report, and how do its scope and the ISO/IEC 27001 scope compare?
+faq:
+  - q: Is ISO 27001:2013 still valid?
+    a: No. Under IAF MD 26:2023 the transition period ended on 31 October 2025, and all certifications based on ISO/IEC 27001:2013 expired or were withdrawn at that point.
+  - q: How can I check if an ISO 27001 certificate is real?
+    a: Search for the company in IAF CertSearch, the database for accredited management system certificates, and compare the scope, edition, dates and certification body with the certificate you were given. IAF CertSearch is built for accredited certificates, so one you cannot find there is worth questioning.
+  - q: Does ISO issue ISO 27001 certificates?
+    a: No. ISO states that it does not perform certification. Certificates are issued by certification bodies. Accredited certificates can be checked in IAF CertSearch.
+sources:
+  - title: ISO/IEC 27001 Information security management systems
+    publisher: ISO
+    url: https://www.iso.org/isoiec-27001-information-security.html
+    accessed: 2026-10
+  - title: "IAF MD 26:2023 Transition Requirements for ISO/IEC 27001:2022 (Issue 2)"
+    publisher: International Accreditation Forum (hosted by the Singapore Accreditation Council)
+    url: https://www.sac-accreditation.gov.sg/files/Documents/iaf_md26_issue_2_15012023.pdf
+    accessed: 2026-10
+  - title: IAF CertSearch
+    publisher: IAF CertSearch (backed by the International Accreditation Forum)
+    url: https://www.iafcertsearch.org/
+    accessed: 2026-10
+  - title: "New Zealand Information Security Manual, section 5.8: Independent Assurance Reports (v3.9)"
+    publisher: Government Communications Security Bureau (GCSB), New Zealand
+    url: https://nzism.gcsb.govt.nz/ism-document/pdf/Section/12847
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

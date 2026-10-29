@@ -1,0 +1,68 @@
+term: FATF Recommendations
+also_known_as: [FATF 40 Recommendations, FATF Standards]
+cluster: standards
+definition: The FATF Recommendations are the international standard against money laundering, terrorist financing and proliferation financing, set by the Financial Action Task Force. Countries turn them into national law, and the FATF checks how well they do it through peer reviews called mutual evaluations.
+seo_title: "What Are the FATF Recommendations? | BeVerified"
+seo_description: "The FATF Recommendations are the global AML/CFT standard. What they cover, recent changes, mutual evaluations, the grey list and what to ask vendors."
+rankings: [aml]
+related: [risk-based-approach, customer-due-diligence, politically-exposed-person, travel-rule, eu-aml-regulation, uk-money-laundering-regulations]
+body: |
+  ## What the FATF Recommendations cover
+
+  The FATF describes its [Recommendations](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html) as "a comprehensive and consistent framework of measures" against money laundering, terrorist financing and the financing of proliferation of weapons of mass destruction. The FATF Standards are the Recommendations plus their Interpretive Notes and the definitions in the Glossary.
+
+  The current text was adopted on 16 February 2012 and has been updated regularly since. The FATF page now shows it "as amended June 2026". The 2012 revision folded the separate Special Recommendations on Terrorist Financing into the body of the 40 Recommendations. It also made the first Recommendation about countries identifying, assessing and understanding their risks, which is where the [risk-based approach](/glossary/risk-based-approach/) comes from. Recommendation 10 covers the identification and verification of customers and beneficial owners, the basis of [customer due diligence](/glossary/customer-due-diligence/).
+
+  The Recommendations are not a law that firms follow directly. The FATF says they "set an international standard, which countries should implement through measures adapted to their particular circumstances." A bank in Germany or the UK applies its national law, which is built on this standard.
+
+  Recent changes that matter to compliance teams:
+
+  - February 2023: Recommendations 24 and 25 were revised to strengthen beneficial ownership rules for legal persons and legal arrangements.
+  - February 2025: Recommendation 1 and the notes to Recommendations 1, 10 and 15 were revised to put more weight on proportionality and to encourage simplified measures in lower-risk areas.
+  - June 2025: the FATF revised [Recommendation 16 on payment transparency](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/update-Recommendation-16-payment-transparency-june-2025.html). The changes are to take effect by the end of 2030.
+
+  ## Mutual evaluations and the grey list
+
+  The FATF assesses countries through peer reviews in which members from other countries assess one country. A [mutual evaluation](https://www.fatf-gafi.org/en/topics/mutual-evaluations.html) has two parts. Technical compliance looks at the country's laws and regulations. Effectiveness, which the FATF calls the most important part, looks at whether those measures work in practice and is the focus of an on-site visit.
+
+  Countries with weak measures can end up on one of two public lists, which the FATF updates [three times a year](https://www.fatf-gafi.org/en/countries/black-and-grey-lists.html). "High-Risk Jurisdictions subject to a Call for Action" is the black list. "Jurisdictions under Increased Monitoring" is the grey list. National rules often point at these lists. The [UK Money Laundering Regulations](/glossary/uk-money-laundering-regulations/), for example, require enhanced due diligence for customers established in a country on the FATF call for action list.
+
+  ## What this means when you compare providers
+
+  No software vendor can "comply with FATF" on your behalf. What a vendor can do is keep country risk data current and support the controls that national rules derive from the Recommendations, such as [PEP screening](/glossary/politically-exposed-person/) and the [Travel Rule](/glossary/travel-rule/). Our [AML software ranking](/providers/aml/) compares screening and monitoring tools on those features.
+buyer_questions:
+  - How soon after a FATF plenary do you update the black list and grey list in your country risk data?
+  - Can we set our own country risk ratings, or are FATF lists fixed inside your risk model?
+  - Which controls built on the FATF Recommendations does your product cover today, for example PEP screening, beneficial ownership or Travel Rule data?
+  - What is your plan for the revised Recommendation 16 on payment transparency, which is due to take effect by the end of 2030?
+faq:
+  - q: How many FATF Recommendations are there?
+    a: There are 40. The 2012 revision merged the former Special Recommendations on Terrorist Financing into the body of the 40 Recommendations. The FATF Standards also include the Interpretive Notes and the Glossary.
+  - q: What is the FATF grey list?
+    a: The grey list is the FATF's public list of "Jurisdictions under Increased Monitoring", countries with weaknesses in their anti-money laundering measures. The black list is "High-Risk Jurisdictions subject to a Call for Action". The FATF updates both three times a year.
+  - q: Are the FATF Recommendations legally binding on companies?
+    a: No. They are an international standard that countries put into national law. Firms are bound by that national law, and the FATF checks each country's implementation through mutual evaluations.
+sources:
+  - title: The FATF Recommendations
+    publisher: Financial Action Task Force
+    url: https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html
+    accessed: 2026-10
+  - title: "Update to Recommendation 16 on payment transparency (June 2025)"
+    publisher: Financial Action Task Force
+    url: https://www.fatf-gafi.org/en/publications/Fatfrecommendations/update-Recommendation-16-payment-transparency-june-2025.html
+    accessed: 2026-10
+  - title: Mutual evaluations
+    publisher: Financial Action Task Force
+    url: https://www.fatf-gafi.org/en/topics/mutual-evaluations.html
+    accessed: 2026-10
+  - title: Black and grey lists
+    publisher: Financial Action Task Force
+    url: https://www.fatf-gafi.org/en/countries/black-and-grey-lists.html
+    accessed: 2026-10
+  - title: Prepared remarks of James H. Freis, Jr., Director, on the revised FATF Recommendations (23 February 2012)
+    publisher: Financial Crimes Enforcement Network (FinCEN)
+    url: https://www.fincen.gov/sites/default/files/2016-08/20120223.pdf
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

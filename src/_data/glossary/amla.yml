@@ -1,0 +1,67 @@
+term: Anti-Money Laundering Authority
+abbr: AMLA
+also_known_as: [Authority for Anti-Money Laundering and Countering the Financing of Terrorism, EU AML Authority]
+cluster: standards
+definition: The Anti-Money Laundering Authority (AMLA) is the EU agency set up by Regulation (EU) 2024/1620 and based in Frankfurt. It drafts technical standards for the EU anti-money laundering rulebook, coordinates national supervisors and financial intelligence units, and from 2028 directly supervises a selected group of high-risk cross-border financial firms.
+seo_description: "AMLA is the EU anti-money laundering authority in Frankfurt. Who it supervises directly from 2028, the standards it writes and what that means for buyers."
+rankings: [aml]
+related: [eu-aml-regulation, customer-due-diligence, fatf-recommendations, anti-money-laundering, suspicious-activity-report]
+body: |
+  ## What AMLA is and when it starts
+
+  [Regulation (EU) 2024/1620](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1620) of 31 May 2024 established the "Authority for Anti-Money Laundering and Countering the Financing of Terrorism", known as AMLA. It is part of the same package as the [EU Anti-Money Laundering Regulation](/glossary/eu-aml-regulation/) and the sixth AML directive, all published in the Official Journal on 19 June 2024.
+
+  According to [AMLA's own timeline](https://www.amla.europa.eu/about-amla_en), the authority has had legal existence since 26 June 2024, started operations in summer 2025 and has its seat in Frankfurt am Main. During 2027 it selects the obliged entities it will supervise directly, and direct supervision starts in 2028. The Dutch central bank gives the start as January 2028.
+
+  ## Who AMLA supervises directly
+
+  Most firms will stay with their national supervisor. The recitals of the AMLA Regulation explain the selection:
+
+  - Recital 26: AMLA should directly supervise high-risk financial sector entities "operating in at least six Member States", and up to 40 groups and entities, at least during the first selection.
+  - Recital 20: credit and financial institutions are assessed every three years, based on their cross-border presence and their money laundering and terrorist financing risk profile.
+  - Recital 19: in exceptional cases AMLA can also take over an entity whose material breaches the national supervisor has not dealt with.
+  - Recital 31: AMLA can impose pecuniary sanctions on the entities it supervises directly, and should always do so for serious, repeated or systematic breaches.
+
+  Malta's Financial Intelligence Analysis Unit describes a [first selection cycle scheduled for 2027](https://fiaumalta.org/news/amla-direct-supervision-key-preparatory-steps-ahead-of-2027-selection-exercise/), with eligible entities possibly falling under AMLA's direct supervision from 2028.
+
+  ## Why AMLA matters even if it never supervises you
+
+  AMLA writes the detailed standards that every obliged entity will follow under the single rulebook. Its first consultations include draft technical standards on [customer due diligence](/glossary/customer-due-diligence/) under Article 28(1) of the AML Regulation, covering the information and documents firms should collect. AMLA also supports and coordinates the EU's financial intelligence units, which receive [suspicious activity reports](/glossary/suspicious-activity-report/), and hosts the FIU.net system they use to exchange information.
+
+  For a buyer, this means the rules that onboarding, screening and monitoring software has to support will increasingly come from AMLA rather than from separate national rulebooks. Ask vendors how they track AMLA consultations and final standards, and how quickly they turn them into product changes. Our [AML software ranking](/providers/aml/) compares the main screening and monitoring tools.
+buyer_questions:
+  - How do you track AMLA consultations and final technical standards, and who in your team turns them into product changes?
+  - When the AMLA standards on customer due diligence are final, how soon will your data fields and workflows reflect them?
+  - Do you already serve clients that are likely to be selected for direct AMLA supervision, and what reporting do they need from you?
+  - Can your audit trail and case records be exported in a form an EU supervisor could review?
+faq:
+  - q: Where is AMLA based?
+    a: In Frankfurt am Main, Germany. The AMLA Regulation sets the seat there, and AMLA's website confirms it.
+  - q: When does AMLA start supervising banks?
+    a: Direct supervision starts in 2028, after AMLA selects the entities during 2027. Only a selected group of high-risk cross-border financial firms, up to 40 in the first selection, comes under its direct supervision.
+  - q: Does AMLA replace national AML supervisors?
+    a: No. National supervisors keep supervising most firms. AMLA directly supervises a small selected group, coordinates and reviews national supervisors, and supports financial intelligence units.
+sources:
+  - title: Regulation (EU) 2024/1620 establishing the Authority for Anti-Money Laundering and Countering the Financing of Terrorism
+    publisher: EUR-Lex
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1620
+    accessed: 2026-10
+  - title: About AMLA
+    publisher: Authority for Anti-Money Laundering and Countering the Financing of Terrorism (AMLA)
+    url: https://www.amla.europa.eu/about-amla_en
+    accessed: 2026-10
+  - title: "AMLA direct supervision: key preparatory steps ahead of 2027 selection exercise"
+    publisher: Financial Intelligence Analysis Unit (FIAU), Malta
+    url: https://fiaumalta.org/news/amla-direct-supervision-key-preparatory-steps-ahead-of-2027-selection-exercise/
+    accessed: 2026-10
+  - title: "Consultation on draft RTS on customer due diligence (Article 28(1) AMLR)"
+    publisher: Authority for Anti-Money Laundering and Countering the Financing of Terrorism (AMLA)
+    url: https://www.amla.europa.eu/policy/public-consultations/consultation-draft-rts-customer-due-diligence_en
+    accessed: 2026-10
+  - title: European AML/CFT framework
+    publisher: De Nederlandsche Bank
+    url: https://www.dnb.nl/en/sector-information/open-book-supervision/laws-and-eu-regulations/european-amlcft-framework/
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29
