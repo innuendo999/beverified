@@ -1,0 +1,58 @@
+term: Database verification
+also_known_as: [Data verification, Electronic identity verification, Non-documentary verification, Data source check]
+cluster: identity
+definition: Database verification confirms a customer's identity by matching the details they give, such as name, date of birth, address or national ID number, against independent records like credit bureau files, government registers or other trusted data sources, without asking for an identity document.
+seo_description: "Database verification matches a customer's name, date of birth and address against trusted records. What US, UK and NIST rules say and what to ask vendors."
+rankings: [e-kyc]
+related: [know-your-customer, identity-proofing, document-verification, synthetic-identity-fraud, ekyc]
+body: |
+  ## How database verification works
+
+  The customer types in their details, and the provider queries one or more data sources. Each source returns whether the details match its records, sometimes field by field. The provider combines those results into a pass, a fail or a referral. A common rule is to require a match from more than one independent source, so one bad record cannot carry the decision on its own.
+
+  It is fast and needs no camera, which is why it is often the first step in a remote flow, with a [document check](/glossary/document-verification/) as a fallback. Its weakness is that it proves the identity exists, not that the person typing is that identity. Anyone who knows a victim's details can enter them. Stolen data is also how [synthetic identities](/glossary/synthetic-identity-fraud/) are built, mixing real and invented details that can build up their own records over time. Database checks are therefore often paired with device, phone or email signals, or with a step-up to a document and selfie.
+
+  ## What the rules say
+
+  In the US, the Customer Identification Program rule for banks, [31 CFR 1020.220](https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1020/subpart-B/section-1020.220), allows verification by documents, by non-documentary methods, or both. The non-documentary methods it lists include independently comparing the customer's information with information from a consumer reporting agency, a public database or another source. The Social Security Administration also runs [eCBSV](https://www.ssa.gov/dataexchange/eCBSV/), a fee-based service, created under section 215 of the Economic Growth, Regulatory Relief, and Consumer Protection Act, that tells permitted financial institutions whether a name, date of birth and Social Security number match SSA records. It needs the number holder's written consent.
+
+  In the UK, regulation 28(18) of the [Money Laundering Regulations 2017](https://www.legislation.gov.uk/uksi/2017/692/regulation/28) says "verify" means on the basis of documents or information obtained from a reliable source independent of the person, which covers electronic data as well as documents.
+
+  [NIST SP 800-63A-4](https://pages.nist.gov/800-63-4/sp800-63a.html) separates two kinds of source. An authoritative source is the issuer of the evidence or attribute, such as a state motor vehicle agency or the Social Security Administration. A credible source holds data traceable to an authoritative source, or correlates data from several sources, and is subject to regulatory oversight. At every identity assurance level, core attributes are validated against such sources.
+
+  ## What to check when you compare providers
+
+  Data coverage varies a lot by country and by population. Young people, recent migrants and people with thin credit files often have few records. Ask which sources the provider uses in each country, whether they are authoritative or aggregated, how often they are refreshed, and what match rate you can expect for your customer base. Ask how a match is defined (exact or fuzzy, which fields), whether the provider can show which source confirmed which field for audit, and how results are combined into a decision. Our [eKYC ranking](/providers/e-kyc/) compares providers on these points.
+buyer_questions:
+  - Which data sources do you query in each of our countries, and which are authoritative issuers rather than aggregators?
+  - What match rate should we expect for our customer base, and how does it differ for young or recently arrived customers?
+  - How do you define a match on each field, and can we set the rule (for example, two independent sources)?
+  - Can the audit record show which source confirmed which field and when?
+  - What signals do you add to show that the person entering the data is its owner?
+faq:
+  - q: Is database verification enough for KYC?
+    a: It depends on the country and the risk. US and UK rules allow verification from reliable electronic sources as well as documents, but a database match proves that the identity exists, not that the applicant is that person, so firms often add other checks.
+  - q: What is non-documentary verification?
+    a: It is the US Customer Identification Program term for verifying identity without a document, for example by comparing the customer's details with a consumer reporting agency, a public database or another source.
+  - q: What is eCBSV?
+    a: eCBSV is the Social Security Administration's fee-based service that tells permitted financial institutions whether a name, date of birth and Social Security number match SSA records, with the number holder's written consent.
+sources:
+  - title: "31 CFR 1020.220: Customer identification program requirements for banks"
+    publisher: eCFR (US Government)
+    url: https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1020/subpart-B/section-1020.220
+    accessed: 2026-10
+  - title: The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017, regulation 28
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/uksi/2017/692/regulation/28
+    accessed: 2026-10
+  - title: Electronic Consent Based Social Security Number Verification (eCBSV)
+    publisher: US Social Security Administration
+    url: https://www.ssa.gov/dataexchange/eCBSV/
+    accessed: 2026-10
+  - title: "NIST SP 800-63A-4, Digital Identity Guidelines: Identity Proofing and Enrollment (July 2025)"
+    publisher: National Institute of Standards and Technology
+    url: https://pages.nist.gov/800-63-4/sp800-63a.html
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29
