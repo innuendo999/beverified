@@ -12,7 +12,7 @@ body: |
 
   The traditional model reviews each customer on a calendar, for example every year for high-risk customers and less often for the rest. Between reviews, the file can go stale. Perpetual KYC watches for events and re-assesses the customer when one fires. Typical triggers include a new screening match, a change in company ownership or directors, an expired identity document, or activity that no longer fits the customer's profile.
 
-  The term comes from industry, not from law. No regulation requires "perpetual KYC" by name. In practice it sits on top of the review calendar rather than replacing it. Our [guide to perpetual KYC](/guide/perpetual-kyc/) covers the triggers, the data sources and how to build a program step by step.
+  The term is an industry label. No regulation requires "perpetual KYC" by name. In practice it sits on top of the review calendar rather than replacing it. Our [guide to perpetual KYC](/guide/perpetual-kyc/) covers the triggers, the data sources and how to build a program step by step.
 
   ## What the rules say
 
