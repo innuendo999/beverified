@@ -239,6 +239,7 @@
     "analytics": {
       "ga4": "G-YMZBVMLH2S",
       "note": "Loaded only after the visitor accepts the consent banner (src/_includes/v3/consent.njk). Privacy policy describes it."
-    }
+    },
+    "preferredSourceHref": "https://www.google.com/preferences/source?q=beverified.org"
   }
 }

@@ -4,6 +4,8 @@ seoTitle: "Why Corporate Banks Need KYC Automation | BeVerified"
 seoDescription: "Our April 2025 view on why corporate banks should automate public-data KYC for business clients, updated with what changed by October 2026 in the EU, US and UK."
 lede: "Corporate onboarding is still the slowest part of KYC at many banks, because analysts assemble registry extracts, ownership charts and filings by hand. In April 2025 we argued that automating that public-data work was overdue; the rule changes since then have made the case stronger."
 section: news
+cover_label: "Corporate KYC"
+cover_motif: bank
 published: 2025-04-12
 updated: 2026-10-18
 author: andrii-klymenko

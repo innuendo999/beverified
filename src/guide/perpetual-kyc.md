@@ -4,6 +4,8 @@ seoTitle: "What Is Perpetual KYC (pKYC)? How It Works | BeVerified"
 seoDescription: "Perpetual KYC updates customer risk when something changes instead of on a fixed review date. What pKYC means, what EU, US and UK rules require, and how to run it."
 lede: "Perpetual KYC (pKYC) keeps customer due diligence current by reacting to events, such as a sanctions designation, an ownership change or unusual activity, instead of waiting for the next scheduled review. Regulators still expect periodic updates, so in practice pKYC sits on top of the review calendar rather than replacing it."
 section: guide
+cover_label: "Always-on KYC"
+cover_motif: cycle
 published: 2025-05-12
 updated: 2026-10-18
 author: andrii-klymenko

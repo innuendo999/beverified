@@ -4,6 +4,8 @@ seoTitle: "SDN vs SSI vs FSE Lists Explained | BeVerified"
 seoDescription: "The SDN list blocks; the SSI and FSE lists are narrower non-SDN lists that sit alongside it. What each OFAC list means for screening in 2026, with examples."
 lede: "The SDN list is OFAC's main blocking list: a listed party's property is frozen and US persons generally cannot deal with it. The SSI and FSE lists are separate, narrower lists with specific restrictions, and they do not replace the SDN list."
 section: publications
+cover_label: "SDN, SSI, FSE"
+cover_motif: stacks
 published: 2025-04-22
 updated: 2026-10-18
 author: andrii-klymenko

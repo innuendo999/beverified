@@ -4,6 +4,8 @@ seoTitle: "KYC Market Guide for Banks 2026 | BeVerified"
 seoDescription: "A 2026 guide to the KYC market for banks: the parts of a modern KYC program, unified vs specialist systems, digital identity wallets, AI rules and what to plan for."
 lede: "A bank's KYC program now spans identification, due diligence and continuous monitoring, and most banks run it on a mix of specialist vendors rather than one system. The main planning dates for 2026 to 2028 are the EU AML Regulation (July 2027), the EU AI Act's postponed high-risk rules (December 2027) and AMLA's direct supervision (2028)."
 section: guide
+cover_label: "KYC for banks"
+cover_motif: bank
 published: 2025-04-02
 updated: 2026-10-18
 author: andrii-klymenko

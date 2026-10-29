@@ -4,6 +4,8 @@ seoTitle: "Kenya, Côte d'Ivoire on EU AML High-Risk List | BeVerified"
 seoDescription: "Delegated Regulation (EU) 2025/1184 added Kenya and Côte d'Ivoire to the EU high-risk third country list from 5 August 2025. What it means and the 2026 list."
 lede: "Kenya and Côte d'Ivoire have been on the EU's list of high-risk third countries for money laundering since 5 August 2025. Both were still on the EU list and the FATF grey list in October 2026."
 section: news
+cover_label: "EU high-risk list"
+cover_motif: globe
 published: 2025-09-30
 updated: 2026-10-18
 author: andrii-klymenko

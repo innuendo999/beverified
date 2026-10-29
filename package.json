@@ -11,7 +11,8 @@
     "extract": "python3 scripts/extract.py",
     "check:strict": "node scripts/checks/content.mjs --strict && node scripts/checks/links.mjs --strict",
     "check:html": "python3 scripts/checks/html_audit.py --strict",
-    "check:glossary": "node scripts/checks/glossary.mjs"
+    "check:glossary": "node scripts/checks/glossary.mjs",
+    "covers": "node scripts/covers.cjs"
   },
   "devDependencies": {
     "@11ty/eleventy": "3.1.2",

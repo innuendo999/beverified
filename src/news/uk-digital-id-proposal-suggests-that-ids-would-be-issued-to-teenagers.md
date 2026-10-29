@@ -4,6 +4,8 @@ seoTitle: "UK Digital ID for Teenagers: What Happened | BeVerified"
 seoDescription: "In October 2025 the UK said digital ID would go to everyone 16+, with 13+ under review. By July 2026 the incoming Prime Minister had dropped the scheme."
 lede: "In October 2025 the UK government said its new digital ID would be free to citizens and legal residents aged 16 and over, and that it would consult on lowering the age to 13. By July 2026 the mandatory element was gone and the incoming Prime Minister, Andy Burnham, said he would not go ahead with the scheme."
 section: news
+cover_label: "UK digital ID"
+cover_motif: idcard
 published: 2025-10-14
 updated: 2026-10-18
 author: andrii-klymenko

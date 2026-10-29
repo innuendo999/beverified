@@ -33,6 +33,19 @@ sources:                                   # every external fact in the body mus
 ---
 ```
 
+## Cover image
+
+Covers never repeat the article title (the card and the page already show it). Front matter:
+
+```yaml
+cover_label: "Allowlists explained"   # 2-4 words, the topic in plain words, not the headline
+cover_motif: list                      # illustration from scripts/cover-motifs.cjs
+cover_palette: violet                  # optional: light | warm | violet | dark | accent (default cycles per section)
+```
+
+Motifs: list, stacks, magnifier, coin, wallet, bank, cycle, cyclebiz, flow, bars, threshold, org, gavel, globe, document, idcard, face, gear, newspaper, network, fingerprint, passport, unlock. Pick one that differs from the neighbouring posts where possible; add a new motif to `scripts/cover-motifs.cjs` if none fits.
+Then run `npm run covers` (renders `src/assets/img/covers/<slug>.png`, 1600x900; `--force` re-renders all). The cover is used on the article, on post cards (title + date only), as og:image and as schema `image`. A custom image can be set with `cover: /assets/img/...`.
+
 ## Body
 
 - Markdown. Start with a short intro paragraph (no heading). Then `##` sections (4-8), `###` allowed. Tables allowed.

@@ -4,6 +4,8 @@ seoTitle: "OFAC Sanctions Lists in 2026: Guide for Banks | BeVerified"
 seoDescription: "What OFAC's SDN and non-SDN lists are, which programmes are active in 2026, how the 50 Percent Rule works, what changed for Syria, and recent OFAC penalties."
 lede: "OFAC publishes the SDN list plus six smaller non-SDN lists, and US banks have to screen customers and payments against them. In October 2026 OFAC runs 36 active sanctions programmes; Syria's comprehensive programme is gone, replaced by targeted Assad-related sanctions."
 section: publications
+cover_label: "OFAC lists"
+cover_motif: magnifier
 published: 2025-04-18
 updated: 2026-10-18
 author: andrii-klymenko

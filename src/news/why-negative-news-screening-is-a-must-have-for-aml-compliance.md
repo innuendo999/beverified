@@ -4,6 +4,8 @@ seoTitle: "Why Negative News Screening Matters for AML | BeVerified"
 seoDescription: "Negative news (adverse media) screening finds financial crime risk that sanctions and PEP lists miss. How it works, what Wolfsberg says, and EU changes by 2027."
 lede: "Negative news screening, also called adverse media screening, searches public sources for reports that link a customer to financial crime before that customer appears on any official list. It sits next to sanctions and PEP screening as part of customer due diligence."
 section: news
+cover_label: "Adverse media"
+cover_motif: newspaper
 published: 2025-02-18
 updated: 2026-10-18
 author: andrii-klymenko

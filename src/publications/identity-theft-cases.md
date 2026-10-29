@@ -4,6 +4,8 @@ seoTitle: "Biggest Identity Theft Cases of the Last Decade | BeVerified"
 seoDescription: "Equifax, Facebook, Optus, Medibank, National Public Data, Coinbase and the North Korean laptop farms: the facts from regulators and courts, and lessons for KYC."
 lede: "The largest identity theft cases since 2017 started with stolen or scraped personal data and ended with fines, lawsuits and prison sentences. Here is what happened in each one, based on regulator, court and company records, and what each case means for identity checks."
 section: publications
+cover_label: "Identity theft"
+cover_motif: fingerprint
 published: 2025-07-30
 updated: 2026-10-18
 author: andrii-klymenko
