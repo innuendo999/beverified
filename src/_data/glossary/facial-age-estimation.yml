@@ -17,7 +17,7 @@ body: |
 
   ## How accuracy is measured
 
-  The reference benchmark is NIST's [Face Analysis Technology Evaluation (FATE) Age Estimation and Verification](https://pages.nist.gov/frvt/html/frvt_age_estimation.html), which tests algorithms that developers submit. It uses a few measures:
+  NIST measures accuracy in its [Face Analysis Technology Evaluation (FATE) Age Estimation and Verification](https://pages.nist.gov/frvt/html/frvt_age_estimation.html), which tests algorithms that developers submit. It reports several measures:
 
   - Mean absolute error (MAE): the average gap, in years, between estimated and true age. NIST's headline figure averages 26 MAE values, for two sexes and 13 ages from 18 to 30. A separate child safety figure averages MAE for ages 13 to 16.
   - Age verification error rates. NIST sets each algorithm's threshold so that the false positive rate for males aged 14 to 17 is about 0.1, then reports how often females of that age are wrongly passed as over 18, and how often people aged 18 to 30 are wrongly classed as under 18.
@@ -27,7 +27,7 @@ body: |
 
   ## What to check when you compare providers
 
-  Ask whether the exact model you will use has been evaluated in NIST FATE, and look at the result for your use case. A gambling site cares about 17 year olds passing as adults. A platform with a 13+ minimum age cares about the 13 to 16 results. An average MAE across all ages hides both.
+  Ask whether the exact model you will use has been evaluated in NIST FATE, and look at the result for your use case. A gambling site needs to know how often 17 year olds pass as adults, while a platform with a 13+ minimum age needs the 13 to 16 results. An average MAE across all ages hides both.
 
   NIST tests still photos from official sources. A selfie taken on a phone in poor light is different, so ask for the provider's own results under live conditions and how it handles users who cannot get a clear capture. Our [age verification ranking](/providers/age-verification/) shows which reviewed providers offer facial age estimation.
 buyer_questions:

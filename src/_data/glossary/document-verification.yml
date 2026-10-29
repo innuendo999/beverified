@@ -8,16 +8,16 @@ related: [nfc-chip-verification, face-matching, liveness-detection, identity-pro
 body: |
   ## How document verification works
 
-  The customer photographs or films their document, and software checks the image in several layers:
+  The customer photographs or films their document, and software runs a series of checks on the image:
 
-  - **Template and format.** Does the document match a known template for that country, type and version, and is all the expected information there?
-  - **Security features.** Are the security features of the original present, such as holograms?
-  - **Data consistency.** Does the machine readable zone (MRZ) decode correctly, do its check digits work, and does it match the printed data? Is the document expired?
-  - **Tampering and capture.** Are there signs of edited text, a replaced photo, a printed copy or a document shown on a screen?
+  - Does the document match a known template for that country, type and version, and is all the expected information there?
+  - Are the security features of the original, such as holograms, present?
+  - Does the machine readable zone (MRZ) decode correctly, do its check digits work, and does it match the printed data? Has the document expired?
+  - Are there signs of edited text, a replaced photo, a printed copy or a document shown on a screen?
 
   Document templates come from reference databases. In Europe, the Council of the EU publishes [PRADO](https://www.consilium.europa.eu/prado/en/prado-start-page.html), a public register of authentic identity and travel documents supplied by document experts in EU member states, Iceland, Norway and Switzerland. The register itself says it is not yet complete.
 
-  An image check has a ceiling: it can only judge what the camera shows. If the document has a chip, an [NFC chip read](/glossary/nfc-chip-verification/) can verify the issuer's digital signature instead, which is a stronger test. Either way, document verification proves the document, not the person holding it, so it is paired with [face matching](/glossary/face-matching/) and [liveness detection](/glossary/liveness-detection/).
+  An image check can only judge what the camera shows. If the document has a chip, an [NFC chip read](/glossary/nfc-chip-verification/) can verify the issuer's digital signature instead, which is a stronger test. Either way, document verification proves the document, not the person holding it, so it is paired with [face matching](/glossary/face-matching/) and [liveness detection](/glossary/liveness-detection/).
 
   ## What the rules and standards say
 
@@ -27,7 +27,7 @@ body: |
 
   ## What to check when you compare providers
 
-  A headline count of supported documents says little on its own. Ask how many templates are fully supported for the countries you serve, how fast new document versions are added, and what the provider does with a document it does not recognize. Ask for measured error rates for fraudulent documents accepted and genuine documents rejected, and who measured them. Check whether the provider detects screen replays and printed copies, and what share of checks go to manual review. Our [identity verification ranking](/providers/identity-verification/) compares document coverage and testing evidence.
+  The total number of supported documents tells you little by itself. Ask how many templates are fully supported for the countries you serve, how fast new document versions are added, and what the provider does with a document it does not recognize. Ask for measured error rates for fraudulent documents accepted and genuine documents rejected, and who measured them. Check whether the provider detects screen replays and printed copies, and what share of checks go to manual review. Our [identity verification ranking](/providers/identity-verification/) compares document coverage and testing evidence.
 buyer_questions:
   - How many document templates do you fully support for our countries, and how quickly do you add new versions?
   - What are your measured false acceptance and false rejection rates for documents, and who tested them?

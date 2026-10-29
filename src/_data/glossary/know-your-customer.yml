@@ -9,7 +9,7 @@ related: [customer-due-diligence, identity-proofing, ekyc, anti-money-laundering
 body: |
   ## What KYC covers
 
-  KYC is an industry term more than a legal one. The laws behind it usually speak of [customer due diligence](/glossary/customer-due-diligence/) (CDD), and KYC is the piece of CDD that deals with the customer's identity. In practice the word covers three jobs:
+  KYC is an industry term more than a legal one. The laws behind it usually speak of [customer due diligence](/glossary/customer-due-diligence/) (CDD), and KYC is the piece of CDD that deals with the customer's identity. The word usually covers three jobs:
 
   1. Identify the customer: collect name, date of birth, address and an identity number.
   2. Verify that identity against a document, an electronic source or both.
@@ -31,7 +31,7 @@ body: |
 
   ## What to compare in KYC providers
 
-  A KYC provider sells the verification step. It does not take over the regulated firm's duty, so the useful question is what evidence the provider produces and whether that evidence fits your rules. Check which verification methods it supports in each country you serve, whether it keeps an audit record of each check (images, data sources, scores, reviewer decisions), and how it handles people who fail the automated path. Our [identity verification ranking](/providers/identity-verification/) and [eKYC ranking](/providers/e-kyc/) compare providers on these points, and our [KYC market guide for banks](/guide/the-kyc-market-guide-for-banks/) covers buying KYC at bank scale.
+  A KYC provider sells the verification step. It does not take over the regulated firm's duty, so the question to ask is what evidence the provider produces and whether that evidence fits your rules. Check which verification methods it supports in each country you serve, whether it keeps an audit record of each check (images, data sources, scores, reviewer decisions), and how it handles people who fail the automated path. Our [identity verification ranking](/providers/identity-verification/) and [eKYC ranking](/providers/e-kyc/) compare providers on these points, and our [KYC market guide for banks](/guide/the-kyc-market-guide-for-banks/) covers buying KYC at bank scale.
 buyer_questions:
   - Which verification methods do you support in each of our countries, and which of them do the local regulators accept for remote onboarding?
   - What audit record do you keep for each check, and can we export it for a regulator or auditor?

@@ -11,7 +11,7 @@ body: |
 
   A face match only tells you that two images show the same person. Liveness detection answers a different question: is that person actually there? Without it, a fraudster can hold up a stolen photo or play a video of the victim and pass the face match.
 
-  There are two broad approaches. **Active** liveness asks the user to do something, such as turn their head, blink or follow a dot, and checks that the response is natural. **Passive** liveness analyses a single selfie or a short clip for signs of a fake, such as screen moiré, paper texture, missing depth or unnatural skin, without asking the user to do anything. Many products combine the two and switch to an active challenge only when the passive score is doubtful.
+  There are two broad approaches. Active liveness asks the user to do something, such as turn their head, blink or follow a dot, and checks that the response is natural. Passive liveness analyses a single selfie or a short clip for signs of a fake, such as screen moiré, paper texture, missing depth or unnatural skin, without asking the user to do anything. Some products combine the two and switch to an active challenge only when the passive score is doubtful.
 
   Liveness detection only covers attacks presented to the camera. Attacks that bypass the camera, such as a virtual camera feeding a deepfake straight into the app, need separate [injection attack detection](/glossary/injection-attack-detection/).
 
@@ -19,11 +19,11 @@ body: |
 
   The EU's [guidelines on remote customer onboarding](https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2022/EBA-GL-2022-15%20GL%20on%20remote%20customer%20onboarding/1043884/Guidelines%20on%20the%20use%20of%20Remote%20Customer%20Onboarding%20Solutions.pdf) from the European Banking Authority, in force since 2 October 2023, say that where a firm verifies a customer remotely without a member of staff, it should perform liveness detection verifications (paragraph 41(c)).
 
-  The test method most vendors cite is ISO/IEC 30107-3, the international standard for testing and reporting [presentation attack detection](/glossary/iso-iec-30107-3/). The standard defines how to run a test and report error rates. It does not define pass levels. The "Level 1", "Level 2" and "Level 3" results that vendors quote come from test labs such as [iBeta](https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/), which set their own levels by attacker time, skill and artefact cost. iBeta itself says a passing result is not a certification of the product.
+  The test method vendors usually cite is ISO/IEC 30107-3, the international standard for testing and reporting [presentation attack detection](/glossary/iso-iec-30107-3/). The standard defines how to run a test and report error rates. It does not define pass levels. The "Level 1", "Level 2" and "Level 3" results that vendors quote come from test labs such as [iBeta](https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/), which set their own levels by attacker time, skill and artefact cost. iBeta itself says a passing result is not a certification of the product.
 
   ## What to check when you compare providers
 
-  Ask for the lab's confirmation letter rather than a badge on a website, and check which product version and which level it covers. A Level 2 result means the lab tried more expensive artefacts, such as 3D masks, than a Level 1 test. Also check what the test did not cover: most PAD letters say nothing about injection attacks. Our [liveness detection ranking](/providers/liveness-detection/) shows which reviewed providers have a confirmed or only a vendor-stated ISO/IEC 30107-3 result.
+  Ask for the lab's confirmation letter rather than a badge on a website, and check which product version and which level it covers. A Level 2 result means the lab tried more expensive artefacts, such as 3D masks, than a Level 1 test. Also check what the test did not cover. ISO/IEC 30107-3 is limited to attacks presented to the capture device, so a PAD letter does not tell you how the product handles injection attacks. Our [liveness detection ranking](/providers/liveness-detection/) shows which reviewed providers have a confirmed or only a vendor-stated ISO/IEC 30107-3 result.
 buyer_questions:
   - Which lab tested your liveness check under ISO/IEC 30107-3, at what level, and can we see the confirmation letter?
   - Is the tested version the one we will integrate, on web and on mobile?

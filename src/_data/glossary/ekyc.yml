@@ -9,11 +9,11 @@ related: [know-your-customer, video-kyc, document-verification, database-verific
 body: |
   ## Two meanings of eKYC
 
-  In most markets eKYC is a general label. It means [KYC](/glossary/know-your-customer/) done online instead of in a branch: the customer proves who they are with digital evidence, and the firm records the result. The usual methods are a [document check](/glossary/document-verification/) with a selfie and liveness test, an [NFC chip read](/glossary/nfc-chip-verification/) of an ePassport or ID card, a national or bank eID, a [database check](/glossary/database-verification/), or a video call with a trained agent. The legal duty does not change. Only the way the evidence is collected and checked does.
+  In most markets eKYC is a general label. It means [KYC](/glossary/know-your-customer/) done online instead of in a branch: the customer proves who they are with digital evidence, and the firm records the result. The usual methods are a [document check](/glossary/document-verification/) with a selfie and liveness test, an [NFC chip read](/glossary/nfc-chip-verification/) of an ePassport or ID card, a national or bank eID, a [database check](/glossary/database-verification/), or a video call with a trained agent. The legal duty stays the same; what changes is how the evidence is collected and checked.
 
   The FATF's 2020 Guidance on Digital Identity says non-face-to-face identification that relies on reliable, independent digital ID systems with appropriate risk mitigation "may present a standard level of risk, and may even be lower-risk." The UK Money Laundering Regulations 2017 likewise let a firm treat information from a secure electronic identification process as coming from a reliable, independent source (regulation 28(19)).
 
-  In India, eKYC has a narrower and more technical meaning. It refers to UIDAI's Aadhaar e-KYC service. According to UIDAI's [Aadhaar e-KYC API specification](https://uidai.gov.in/images/resource/aadhaar_ekyc_api_2_5.pdf) (version 2.5), the resident authorizes the request with Aadhaar biometric or OTP authentication, and UIDAI returns demographic data and a photograph that are digitally signed by UIDAI. Only a KYC User Agency (KUA), an entity with access to the e-KYC service, can call it, and the specification says the API should not be called without the Aadhaar number holder's explicit consent.
+  In India the term is narrower. It refers to UIDAI's Aadhaar e-KYC service. According to UIDAI's [Aadhaar e-KYC API specification](https://uidai.gov.in/images/resource/aadhaar_ekyc_api_2_5.pdf) (version 2.5), the resident authorizes the request with Aadhaar biometric or OTP authentication, and UIDAI returns demographic data and a photograph that are digitally signed by UIDAI. Only a KYC User Agency (KUA), an entity with access to the e-KYC service, can call it, and the specification says the API should not be called without the Aadhaar number holder's explicit consent.
 
   ## What the RBI directions say
 
@@ -23,7 +23,7 @@ body: |
 
   ## What to check in an eKYC provider
 
-  Start with what your regulator accepts. A provider can offer many methods, but only some will count in a given country. In India, ask whether the provider holds its own KUA license or works through a licensed partner, and how it supports CKYC and V-CIP. Elsewhere, check eID coverage, NFC support and fallbacks for users who cannot complete the main route. Our [eKYC ranking](/providers/e-kyc/) and [India ranking](/providers/india/) compare providers on these points.
+  Start with the methods your regulator accepts, because a provider may offer many and only some will count in a given country. In India, ask whether the provider holds its own KUA license or works through a licensed partner, and how it supports CKYC and V-CIP. Elsewhere, check eID coverage, NFC support and fallbacks for users who cannot complete the main route. Our [eKYC ranking](/providers/e-kyc/) and [India ranking](/providers/india/) compare providers on these points.
 buyer_questions:
   - Which eKYC methods do you support in each of our countries, and which ones does each local regulator accept?
   - In India, do you call Aadhaar e-KYC under your own KUA license or through a partner, and how is customer consent recorded?

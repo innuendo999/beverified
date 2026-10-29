@@ -15,7 +15,7 @@ body: |
 
   The Recommendations are not a law that firms follow directly. The FATF says they "set an international standard, which countries should implement through measures adapted to their particular circumstances." A bank in Germany or the UK applies its national law, which is built on this standard.
 
-  Recent changes that matter to compliance teams:
+  Recent amendments include:
 
   - February 2023: Recommendations 24 and 25 were revised to strengthen beneficial ownership rules for legal persons and legal arrangements.
   - February 2025: Recommendation 1 and the notes to Recommendations 1, 10 and 15 were revised to put more weight on proportionality and to encourage simplified measures in lower-risk areas.
@@ -29,7 +29,7 @@ body: |
 
   ## What this means when you compare providers
 
-  No software vendor can "comply with FATF" on your behalf. What a vendor can do is keep country risk data current and support the controls that national rules derive from the Recommendations, such as [PEP screening](/glossary/politically-exposed-person/) and the [Travel Rule](/glossary/travel-rule/). Our [AML software ranking](/providers/aml/) compares screening and monitoring tools on those features.
+  No software vendor can "comply with FATF" on your behalf. A vendor can keep country risk data current and support the controls that national rules derive from the Recommendations, such as [PEP screening](/glossary/politically-exposed-person/) and the [Travel Rule](/glossary/travel-rule/). Our [AML software ranking](/providers/aml/) compares screening and monitoring tools on those features.
 buyer_questions:
   - How soon after a FATF plenary do you update the black list and grey list in your country risk data?
   - Can we set our own country risk ratings, or are FATF lists fixed inside your risk model?

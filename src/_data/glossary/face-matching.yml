@@ -20,7 +20,7 @@ body: |
 
   [NIST SP 800-63A-4](https://pages.nist.gov/800-63-4/sp800-63a.html), NIST's identity proofing guidelines, is more specific. For one-to-one comparison it sets a false match rate of 1:10,000 or better and a false non-match rate of 1:100 or better. Providers must assess performance and demographic impacts, configure a fixed threshold, test in line with ISO/IEC 19795-1:2021 and ISO/IEC 19795-10:2024, have their algorithms tested periodically by independent entities, and make the results publicly available.
 
-  The best-known independent benchmark is NIST's [Face Recognition Technology Evaluation (FRTE) 1:1 Verification](https://pages.nist.gov/frvt/html/frvt11.html). It is open indefinitely, so developers submit algorithms when they are ready, and it reports accuracy measures such as FNMR at a fixed FMR, along with speed and demographic differentials. NIST notes that "Demographic variations occur even with good image quality."
+  NIST also runs an independent benchmark, the [Face Recognition Technology Evaluation (FRTE) 1:1 Verification](https://pages.nist.gov/frvt/html/frvt11.html). It is open indefinitely, so developers submit algorithms when they are ready, and it reports accuracy measures such as FNMR at a fixed FMR, along with speed and demographic differentials. NIST notes that "Demographic variations occur even with good image quality."
 
   ## What to check when you compare providers
 

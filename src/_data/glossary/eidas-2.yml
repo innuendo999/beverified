@@ -19,11 +19,11 @@ body: |
 
   Article 5f(3) applies the same idea to very large online platforms under the Digital Services Act: where they require user authentication, they must accept the wallet at the user's voluntary request, for the minimum data necessary.
 
-  ## Why it matters for KYC
+  ## How it connects to KYC
 
   Recital 62 says wallets and attestations of attributes should help the financial sector identify customers and exchange the attributes needed for customer due diligence under the new EU anti-money laundering framework, and support strong customer authentication for account login and payment initiation. The [EU Anti-Money Laundering Regulation](/glossary/eu-aml-regulation/) points the same way: its recital 66 says electronic identification under eIDAS should be taken into account and accepted by obliged entities when they identify customers.
 
-  For identity verification buyers this is a change in input, not in duty. A bank still has to [know its customer](/glossary/know-your-customer/), but in some flows the evidence may arrive as a signed wallet presentation instead of a photo of an ID card and a selfie. That is one form of [reusable digital identity](/glossary/reusable-digital-identity/). Our [identity verification ranking](/providers/identity-verification/) compares the reviewed providers; ask each one where wallet acceptance sits on its roadmap.
+  The wallet leaves a bank's duty to [know its customer](/glossary/know-your-customer/) in place. What changes is the evidence: in some flows it may arrive as a signed wallet presentation instead of a photo of an ID card and a selfie, which is one form of [reusable digital identity](/glossary/reusable-digital-identity/). Our [identity verification ranking](/providers/identity-verification/) compares the reviewed providers; ask each one where wallet acceptance sits on its roadmap.
 buyer_questions:
   - Can your onboarding flow accept a European Digital Identity Wallet presentation today, and for which Member States?
   - How do you validate a wallet presentation, and what do you store as evidence for our customer due diligence file?
