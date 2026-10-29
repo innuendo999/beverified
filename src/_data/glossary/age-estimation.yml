@@ -2,7 +2,7 @@ term: Age estimation
 also_known_as: [Age estimation technology, AE]
 cluster: age
 definition: Age estimation predicts a person's age or age range, usually with a trained model that analyzes a face or other signals, without confirming it against a document or record. The result is an approximation with an error margin, so Ofcom's guidance expects a challenge age set above the legal age.
-seo_description: "Age estimation predicts age from a face or other signals. How challenge ages work, what Ofcom and the EU DSA guidelines say, and how it differs from verification."
+seo_description: "Age estimation predicts age from a face or other signals. How challenge ages work, what Ofcom and EU DSA guidelines say, and how it differs from verification."
 rankings: [age-verification]
 related: [facial-age-estimation, age-assurance, age-verification, iso-iec-27566-1, liveness-detection]
 body: |

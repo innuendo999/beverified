@@ -1,0 +1,71 @@
+term: Know Your Customer
+abbr: KYC
+also_known_as: [Know your client, Customer identification]
+cluster: identity
+definition: Know Your Customer (KYC) is the set of checks a regulated business runs to find out who its customer is, verify that identity from reliable independent sources, understand the relationship, and keep the information current. It is the everyday name for the identification part of anti-money laundering customer due diligence.
+seo_description: "KYC means identifying a customer and verifying who they are from reliable sources. What the FATF, US and UK rules say, and what to compare in KYC providers."
+rankings: [identity-verification, e-kyc]
+related: [customer-due-diligence, identity-proofing, ekyc, anti-money-laundering, perpetual-kyc, know-your-business]
+body: |
+  ## What KYC covers
+
+  KYC is an industry term more than a legal one. The laws behind it usually speak of [customer due diligence](/glossary/customer-due-diligence/) (CDD), and KYC is the piece of CDD that deals with the customer's identity. In practice the word covers three jobs:
+
+  1. Identify the customer: collect name, date of birth, address and an identity number.
+  2. Verify that identity against a document, an electronic source or both.
+  3. Keep it up to date: refresh the record when risk changes or when the customer's details change.
+
+  The rest of CDD, such as understanding the purpose of the relationship, finding beneficial owners and monitoring transactions, sits around that core. For companies the same idea is called [Know Your Business](/glossary/know-your-business/), and a model where the record is refreshed by events instead of on a fixed timetable is called [perpetual KYC](/glossary/perpetual-kyc/).
+
+  The term is older than most current AML law. In 2001 the Basel Committee on Banking Supervision published [Customer due diligence for banks](https://www.bis.org/publ/bcbs85.htm), which described KYC as a banking risk issue and said banks should have a customer acceptance policy and a "tiered customer identification programme". That paper has since been superseded.
+
+  ## What the rules say
+
+  The global baseline is FATF Recommendation 10. The FATF's 2020 Guidance on Digital Identity summarizes its first CDD measure as "identifying the customer and verifying that customer's identity" using "reliable, independent source documents, data or information." National laws turn that into concrete duties.
+
+  In the United States, banks must run a written Customer Identification Program under [31 CFR 1020.220](https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1020/subpart-B/section-1020.220). Before opening an account they collect at least name, date of birth (for an individual), address and an identification number, then verify identity by documents, by non-documentary methods, or both.
+
+  In the UK, regulation 28 of the [Money Laundering Regulations 2017](https://www.legislation.gov.uk/uksi/2017/692/regulation/28) requires a firm to identify the customer and verify their identity. "Verify" means on the basis of documents or information obtained from a reliable source independent of the person, and that source can be a secure electronic identification process.
+
+  None of these rules names a specific technology. Document scans, chip reads, eIDs, database checks and video calls are all ways to meet the same verification duty, and which ones a regulator accepts differs by country. Remote checks are covered under [eKYC](/glossary/ekyc/).
+
+  ## What to compare in KYC providers
+
+  A KYC provider sells the verification step. It does not take over the regulated firm's duty, so the useful question is what evidence the provider produces and whether that evidence fits your rules. Check which verification methods it supports in each country you serve, whether it keeps an audit record of each check (images, data sources, scores, reviewer decisions), and how it handles people who fail the automated path. Our [identity verification ranking](/providers/identity-verification/) and [eKYC ranking](/providers/e-kyc/) compare providers on these points, and our [KYC market guide for banks](/guide/the-kyc-market-guide-for-banks/) covers buying KYC at bank scale.
+buyer_questions:
+  - Which verification methods do you support in each of our countries, and which of them do the local regulators accept for remote onboarding?
+  - What audit record do you keep for each check, and can we export it for a regulator or auditor?
+  - What happens to a customer who fails the automated check, and who makes the final decision?
+  - How do you refresh customer data after onboarding, and can re-verification be triggered by events?
+  - Can the same flow handle business customers and their beneficial owners, or is that a separate product?
+faq:
+  - q: What is the difference between KYC and CDD?
+    a: CDD is the legal term for all the due diligence measures AML law requires. KYC is the common name for the identity part of it, meaning identifying the customer and verifying who they are. CDD also covers beneficial ownership, the purpose of the relationship and ongoing monitoring.
+  - q: Is KYC a legal requirement?
+    a: The duty to identify and verify customers is set in AML law, for example FATF Recommendation 10, the US Customer Identification Program rule and regulation 28 of the UK Money Laundering Regulations 2017. The term KYC itself is mostly industry shorthand for those duties.
+  - q: What information is collected in KYC?
+    a: Under the US Customer Identification Program rule a bank collects at least name, date of birth for an individual, address and an identification number before opening an account. Other countries set similar minimum lists in their own law.
+sources:
+  - title: Guidance on Digital Identity (March 2020)
+    publisher: FATF
+    url: https://www.fatf-gafi.org/media/fatf/documents/recommendations/pdfs/Guidance-on-Digital-Identity-report.pdf
+    accessed: 2026-10
+  - title: The FATF Recommendations (as amended June 2026)
+    publisher: FATF
+    url: https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html
+    accessed: 2026-10
+  - title: "31 CFR 1020.220: Customer identification program requirements for banks"
+    publisher: eCFR (US Government)
+    url: https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1020/subpart-B/section-1020.220
+    accessed: 2026-10
+  - title: The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017, regulation 28
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/uksi/2017/692/regulation/28
+    accessed: 2026-10
+  - title: Customer due diligence for banks (October 2001)
+    publisher: Basel Committee on Banking Supervision (BIS)
+    url: https://www.bis.org/publ/bcbs85.htm
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

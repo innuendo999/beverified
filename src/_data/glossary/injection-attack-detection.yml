@@ -1,0 +1,64 @@
+term: Injection attack detection
+also_known_as: [Injection attack prevention, Digital injection attack detection, Biometric data injection attack detection, IAD]
+cluster: identity
+definition: Injection attack detection spots fake images or video that are fed straight into an identity check instead of coming from a real camera, for example through a virtual camera, a device emulator or a tampered app. It covers the gap that liveness detection leaves, because liveness only judges what is shown to the camera.
+seo_description: "Injection attack detection catches fake video fed into an ID check through virtual cameras or emulators. How it works, CEN/TS 18099, NIST rules, vendor questions."
+rankings: [liveness-detection]
+related: [liveness-detection, deepfake-identity-fraud, iso-iec-30107-3, face-matching, nist-sp-800-63, video-identification]
+body: |
+  ## How an injection attack works
+
+  In a presentation attack, the fraudster holds something up to the camera: a printed photo, a phone screen playing a video, a mask. In an injection attack, nothing is held up at all. The attacker replaces what the camera would have captured with their own image or video before the identity check receives it. The European technical specification on the topic describes this as replacing "the original data sample provided by the user at the biometric data capture device, with another biometric sample, before the execution of the feature extraction process."
+
+  The usual tools are virtual camera software that the browser or app accepts as a webcam, device emulators, rooted or jailbroken phones, and tampering with the app or its network traffic. What gets injected can be a replay of a real person or a [deepfake](/glossary/deepfake-identity-fraud/). Because the fake never passes through a lens, the screen glare, paper texture and edge artefacts that [liveness detection](/glossary/liveness-detection/) looks for are simply not there.
+
+  This is also why a presentation attack detection test result says little about injection. [ISO/IEC 30107-3](/glossary/iso-iec-30107-3/) only considers attacks that "take place at the biometric capture device during presentation". Anything else is out of its scope.
+
+  ## What the rules and standards say
+
+  **CEN/TS 18099:2024, Biometric data injection attack detection**, is the first European document dedicated to this. It was prepared by CEN/TC 224, approved by CEN on 13 October 2024 and published in December 2024, as listed by the [Finnish Standards Association](https://store.sfs.fi/en/cents-18099-2024). It is a technical specification, not a full European standard. It defines injection attacks and injection attack instruments, gives guidance on detection systems and on mitigating the risk, and explains how to build a test plan to evaluate an injection attack detection system. Presentation attack testing stays with the ISO/IEC 30107 series, so the two kinds of test are meant to be run side by side.
+
+  In the US, [NIST SP 800-63A-4](https://pages.nist.gov/800-63-4/sp800-63a.html), final since July 2025, has a section on "Digital Injection Prevention and Forged Media Detection" (section 3.14). It says credential service providers "SHALL implement technical controls" to increase confidence that media comes from a genuine sensor, giving the example to "detect the presence of a virtual camera, device emulator, or a jailbroken device". It also says they SHOULD authenticate capture sensors or use device attestation. See [NIST SP 800-63](/glossary/nist-sp-800-63/) for the wider framework.
+
+  FinCEN's [deepfake alert of November 2024](https://www.fincen.gov/sites/default/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf) lists as a red flag a customer who "uses a third-party webcam plugin during a live verification check", since such plugins can display previously generated video instead of live video.
+
+  ## What to check when you compare providers
+
+  Ask whether injection attack detection was tested on its own, by whom, and against what test plan. A lab letter for presentation attack detection does not answer this. Check that the protection covers every channel you will use: a web flow in a desktop browser, a mobile web flow and a native SDK are exposed to different tools. Ask what the system does when it suspects injection, and how often it wrongly blocks real users on unusual but honest setups. Our [liveness detection ranking](/providers/liveness-detection/) compares the providers we review on these checks.
+buyer_questions:
+  - Has your injection attack detection been tested separately from presentation attack detection, by which lab, and against which test plan?
+  - Which channels does it cover: desktop web, mobile web, iOS and Android SDKs?
+  - How do you detect virtual cameras, emulators, rooted or jailbroken devices and tampered app builds?
+  - "What happens when injection is suspected: hard block, step-up, or manual review?"
+  - How often does the injection check reject genuine users, and can we see that figure for our traffic?
+faq:
+  - q: What is the difference between a presentation attack and an injection attack?
+    a: A presentation attack shows a fake, such as a photo, screen or mask, to the real camera. An injection attack skips the camera and feeds a fake image or video straight into the app or data stream, often through a virtual camera or emulator.
+  - q: Does an ISO/IEC 30107-3 liveness result cover injection attacks?
+    a: No. ISO/IEC 30107-3 only covers attacks at the capture device during presentation and treats other attacks as out of scope. Injection attack detection needs its own testing, for which CEN/TS 18099 gives guidance.
+  - q: Is there a standard for injection attack detection?
+    a: Yes. CEN/TS 18099:2024, Biometric data injection attack detection, was published in December 2024. It is a European technical specification that covers definitions, detection, risk mitigation and how to plan an evaluation.
+sources:
+  - title: CEN/TS 18099:2024 Biometric data injection attack detection
+    publisher: Finnish Standards Association SFS
+    url: https://store.sfs.fi/en/cents-18099-2024
+    accessed: 2026-10
+  - title: "PD CEN/TS 18099:2024 Biometric data injection attack detection (preview: foreword and scope)"
+    publisher: BSI via ANSI Webstore
+    url: https://webstore.ansi.org/preview-pages/BSI/preview_30491469.pdf
+    accessed: 2026-10
+  - title: "NIST SP 800-63A-4, Digital Identity Guidelines: Identity Proofing and Enrollment"
+    publisher: National Institute of Standards and Technology
+    url: https://pages.nist.gov/800-63-4/sp800-63a.html
+    accessed: 2026-10
+  - title: FinCEN Alert on Fraud Schemes Involving Deepfake Media Targeting Financial Institutions (FIN-2024-Alert004)
+    publisher: Financial Crimes Enforcement Network
+    url: https://www.fincen.gov/sites/default/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf
+    accessed: 2026-10
+  - title: "ISO/IEC 30107-3:2023 Information technology: Biometric presentation attack detection, Part 3: Testing and reporting"
+    publisher: ISO
+    url: https://www.iso.org/standard/79520.html
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

@@ -1,0 +1,70 @@
+term: Know Your Business
+abbr: KYB
+also_known_as: [Business verification, Corporate due diligence, Know Your Business Customer]
+cluster: kyb
+definition: Know Your Business (KYB) is customer due diligence on a company or other legal entity. A firm confirms the business exists, records its identifying details, finds the people who run and ultimately own or control it, verifies those people and screens the entity and its owners before and during the relationship.
+seo_description: "KYB is due diligence on business customers: registry checks, directors, beneficial owners and screening. What EU, UK and US rules say and what to ask vendors."
+rankings: [kyb]
+related: [ultimate-beneficial-owner, company-registry-check, ongoing-business-monitoring, shell-company, customer-due-diligence, know-your-customer]
+body: |
+  ## How KYB works
+
+  KYB is what [customer due diligence](/glossary/customer-due-diligence/) looks like when the customer is a company rather than a person. A company cannot hold up a passport or take a selfie, so the checks go through records and through the people behind it.
+
+  A typical KYB check has five parts. First, confirm the entity exists and is active, usually with a [company registry check](/glossary/company-registry-check/). Second, record its identifying details: legal name, legal form, registration number and addresses. Third, identify the directors or legal representatives. Fourth, map the ownership chain until it reaches the natural persons who own or control the company, its [ultimate beneficial owners](/glossary/ultimate-beneficial-owner/), and verify who they are. Fifth, screen the company and those people against sanctions, PEP and adverse media sources, and record why the customer wants the account.
+
+  The individuals found along the way go through ordinary [KYC](/glossary/know-your-customer/). That is the main difference between the two terms: KYC verifies a person, KYB verifies an entity and then runs KYC on the people who matter inside it.
+
+  ## What the rules say
+
+  In the EU, Article 13(1)(b) of the Fourth AML Directive, [Directive (EU) 2015/849](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015L0849-20210630), requires firms to identify the beneficial owner, take reasonable measures to verify that person's identity and, for legal persons, take reasonable measures to understand the ownership and control structure. Article 30(8) says firms must not rely exclusively on the central beneficial ownership register to meet those duties. From 10 July 2027 the [AML Regulation](https://www.springlex.eu/en/packages/aml/amlr-regulation/article-22/) takes over. Its Article 22(1)(b) lists what to collect for a legal entity, including legal form and name, registered office, principal place of business, country of creation, names of legal representatives, and where available the registration number, tax identification number and Legal Entity Identifier.
+
+  In the UK, [regulation 28(3)](https://www.legislation.gov.uk/uksi/2017/692/regulation/28) of the Money Laundering Regulations 2017 requires firms to obtain and verify a body corporate's name, company number and registered office address, and to take reasonable measures to determine and verify the law it is subject to, its constitution, the full names of its board and its senior persons. Regulation 28(9) adds that relying solely on information filed with the registrar is not enough.
+
+  In the US, the [FinCEN CDD Rule](/glossary/fincen-cdd-rule/) at [31 CFR 1010.230](https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-B/section-1010.230) requires covered financial institutions to identify and verify the beneficial owners of legal entity customers.
+
+  ## What to check when you compare providers
+
+  Coverage is the first question. KYB tools differ most in which company registers they reach, whether they connect to them directly or buy aggregated data, and whether they can retrieve official documents or only summary fields. Next, check how far the ownership chain goes, especially through foreign holding companies, and whether every person found is screened automatically. Last, ask what happens after onboarding. A company changes directors and owners over time, which is covered by [ongoing business monitoring](/glossary/ongoing-business-monitoring/) and our guide to [perpetual KYB](/guide/perpetual-kyb/). Our [KYB ranking](/providers/kyb/) compares the providers we review.
+buyer_questions:
+  - Which company registers do you connect to directly for our countries, and where do you use third-party data instead?
+  - Can you retrieve an official register extract or filed documents, or only summary fields?
+  - How many ownership layers do you resolve, and how do you handle holding companies in other jurisdictions?
+  - Are directors and beneficial owners screened and verified automatically once you identify them?
+  - "What happens when the register and the customer's own declaration disagree: do you flag it for review?"
+  - Do you watch onboarded companies for changes in officers, owners or status, or do we have to re-run checks?
+faq:
+  - q: What is the difference between KYC and KYB?
+    a: KYC verifies an individual customer. KYB verifies a business customer, which means checking the entity in official records, finding its directors and beneficial owners, and then running KYC and screening on those people.
+  - q: What documents are used for KYB?
+    a: AMLA's final draft CDD standards (30 September 2026) give examples such as the certificate of incorporation, audited financial statements, articles of association and a recent official extract from a public register. Firms also collect identity details for directors and beneficial owners.
+  - q: Is a beneficial ownership register enough for KYB?
+    a: Not under EU or UK rules. Article 30(8) of Directive (EU) 2015/849 says firms must not rely exclusively on the central register, and the UK Money Laundering Regulations say relying solely on information filed with the registrar does not meet the beneficial owner duties.
+sources:
+  - title: Directive (EU) 2015/849 on the prevention of the use of the financial system for money laundering or terrorist financing (consolidated text)
+    publisher: EUR-Lex
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015L0849-20210630
+    accessed: 2026-10
+  - title: The Money Laundering, Terrorist Financing and Transfer of Funds Regulations 2017, regulation 28
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/uksi/2017/692/regulation/28
+    accessed: 2026-10
+  - title: 31 CFR 1010.230, Beneficial ownership requirements for legal entity customers
+    publisher: eCFR
+    url: https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-B/section-1010.230
+    accessed: 2026-10
+  - title: Regulation (EU) 2024/1624 (AMLR), Official Journal text
+    publisher: EUR-Lex
+    url: https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng
+    accessed: 2026-10
+  - title: "AMLR Article 22: Identification and verification of the identity of customers and beneficial owners (text of OJ L, 2024/1624)"
+    publisher: Springlex
+    url: https://www.springlex.eu/en/packages/aml/amlr-regulation/article-22/
+    accessed: 2026-10
+  - title: "Final Report: Draft RTS under Article 28(1) of Regulation (EU) 2024/1624"
+    publisher: Anti-Money Laundering Authority (AMLA)
+    url: https://www.amla.europa.eu/document/download/e15ab2e5-4074-4de8-bb9d-613dd8b7fdd1_en?filename=Final%20Report%20-%20draft%20RTS%2028%281%29%20AMLR.pdf
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

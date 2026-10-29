@@ -1,0 +1,87 @@
+term: UK digital identity and attributes trust framework
+abbr: DIATF
+also_known_as: [UK digital verification services trust framework, DVS trust framework, UK trust framework]
+cluster: standards
+definition: The UK digital identity and attributes trust framework (DIATF) is the government rulebook that digital identity and attribute services are certified against in the UK. Since version 1.0 it is called the UK digital verification services trust framework, and it now sits on a statutory footing under the Data (Use and Access) Act 2025.
+seo_title: "What Is the UK DIATF (DVS Trust Framework)? | BeVerified"
+seo_description: "The UK DIATF, now the DVS trust framework, sets the rules for certified digital identity services. Version 1.0, the DVS register and right to work checks."
+capability: trust_framework
+rankings: [identity-verification]
+related: [identity-proofing, reusable-digital-identity, know-your-customer, nist-sp-800-63, eidas-2, age-verification]
+body: |
+  ## How the trust framework works
+
+  The [UK digital verification services trust framework (1.0)](https://www.gov.uk/government/publications/uk-digital-verification-services-trust-framework-1-0) "sets rules for an organisation to follow if they want their service certified as a trustworthy DVS". Earlier versions were titled the UK digital identity and attributes trust framework, which is why many providers still say "DIATF certified". The framework says the two titles refer to versions of the same document.
+
+  A service is certified for one or more roles: identity service provider, attribute service provider, holder service provider, orchestration service provider or component service provider (section 4.1). Identity services can prove identities to four levels of confidence: Low, Medium, High and Very High. The framework does not say how to reach each level. That is in the government's identity guidance, GPG 45, which maps identity profiles onto those levels (section 3.2).
+
+  Certification is done by conformity assessment bodies accredited to ISO/IEC 17065 by UKAS and approved by the Office for Digital Identities and Attributes (OfDIA). A certificate is generally valid for three years, with regular audits in between (section 4.1). Supplementary codes add rules for specific uses, including right to work, right to rent and DBS identity checks.
+
+  ## Legal footing and versions
+
+  Part 2 of the [Data (Use and Access) Act 2025](https://www.legislation.gov.uk/ukpga/2025/18/contents) requires the government to publish a DVS trust framework (section 28) and provides for a DVS register (section 32) and a trust mark (section 50). Most of Part 2 came into force on 1 December 2025. On that day the statutory register went live and replaced the earlier non-statutory one, and the 0.4 (gamma) framework was republished as the statutory version. Certificates issued against the older beta (0.3) version expired on 31 March 2026.
+
+  Version 1.0 was published on 9 June 2026 and came into force on 2 September 2026, with version 1.1 of the right to work and right to rent codes and version 1.0 of the DBS code. Services certified against 0.4 have at least 15 months to move to 1.0. Only services certified against 1.0 and listed on the register can use the UK CertifID trust mark. OfDIA's July 2026 annual report counted 46 providers offering 64 certified services on the register.
+
+  ## Right to work checks and the register
+
+  The Home Office [employer's guide to right to work checks](https://assets.publishing.service.gov.uk/media/6ad9dfe29ea4857e15ab3294/Employer_s_guide_to_right_to_work_checks.pdf), updated for 1 October 2026, lets employers use a right to work digital verification service provider for holders of valid British or Irish passports, including passport cards. The provider must be on the OfDIA register, and the employer, not the provider, remains responsible for the check being carried out as prescribed. The check output must include a link to the provider's register entry.
+
+  The trust framework is not the national digital ID scheme the government proposed in 2025, which we covered in our [UK digital ID news report](/news/uk-digital-id-proposal-suggests-that-ids-would-be-issued-to-teenagers/). It sets the rules for certifying identity and attribute services that organizations offer.
+
+  When a provider says it is certified, look it up on the GOV.UK register of digital verification services. Check the role, the supplementary codes and the framework version, since a 0.4 certificate must move to 1.0 at a later audit. Our [identity verification ranking](/providers/identity-verification/) shows which reviewed providers have a confirmed government trust framework certification.
+buyer_questions:
+  - Is your service on the GOV.UK digital verification services register, under which role, and can you send us the register link?
+  - Which supplementary codes are you certified for, such as right to work, right to rent or DBS?
+  - Which trust framework version is your certificate issued against, and when do you plan to move to 1.0?
+  - Which levels of confidence under GPG 45 can your identity checks reach, and with which documents?
+  - Which conformity assessment body certified you, and when is your next audit?
+faq:
+  - q: Is DIATF the same as the DVS trust framework?
+    a: Yes. Earlier versions were titled the UK digital identity and attributes trust framework. Version 1.0 uses the statutory title, DVS trust framework, and states that both titles refer to versions of the same document.
+  - q: Do employers have to use a certified provider for digital right to work checks?
+    a: "The Home Office employer's guide says that where an employer uses a digital verification service provider for right to work checks, the provider must be on the OfDIA register. The employer stays responsible for the check."
+  - q: How do I check if a provider is DIATF certified?
+    a: Search the GOV.UK register of digital verification services. It shows whether a provider holds a valid certificate for its services. It does not cover pricing or commercial details.
+  - q: Is the DVS trust framework the UK digital ID card?
+    a: No. It sets rules for certifying digital identity and attribute services offered by organizations. The national digital ID scheme proposed in 2025 was a separate plan.
+sources:
+  - title: UK digital verification services trust framework (1.0)
+    publisher: GOV.UK (Department for Science, Innovation and Technology)
+    url: https://www.gov.uk/government/publications/uk-digital-verification-services-trust-framework-1-0
+    accessed: 2026-10
+  - title: UK digital verification services trust framework (1.0), full text
+    publisher: GOV.UK (Department for Science, Innovation and Technology)
+    url: https://www.gov.uk/government/publications/uk-digital-verification-services-trust-framework-1-0/uk-digital-verification-services-trust-framework-1-0-pre-release
+    accessed: 2026-10
+  - title: Data (Use and Access) Act 2025, Part 2
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/ukpga/2025/18/contents
+    accessed: 2026-10
+  - title: Employer's guide to right to work checks (1 October 2026)
+    publisher: Home Office
+    url: https://assets.publishing.service.gov.uk/media/6ad9dfe29ea4857e15ab3294/Employer_s_guide_to_right_to_work_checks.pdf
+    accessed: 2026-10
+  - title: Find registered digital verification services
+    publisher: GOV.UK (Office for Digital Identities and Attributes)
+    url: https://www.gov.uk/guidance/find-registered-digital-verification-services
+    accessed: 2026-10
+  - title: DVS measures in the Data Act have come into force
+    publisher: Office for Digital Identities and Attributes (GOV.UK blog)
+    url: https://enablingdigitalidentity.blog.gov.uk/2025/12/01/dvs-measures-in-the-data-act-have-come-into-force/
+    accessed: 2026-10
+  - title: Final release of the 1.0 trust framework, what does it mean for you
+    publisher: Office for Digital Identities and Attributes (GOV.UK blog)
+    url: https://enablingdigitalidentity.blog.gov.uk/2026/06/10/final-release-of-the-1-0-trust-framework-what-does-it-mean-for-you/
+    accessed: 2026-10
+  - title: Commencing transition from 0.4 to 1.0
+    publisher: Office for Digital Identities and Attributes (GOV.UK blog)
+    url: https://enablingdigitalidentity.blog.gov.uk/2026/09/03/commencing-transition-from-0-4-to-1-0/
+    accessed: 2026-10
+  - title: OfDIA 2026 annual report on the operation of Part 2 of the Data (Use and Access) Act 2025
+    publisher: Office for Digital Identities and Attributes
+    url: https://www.gov.uk/government/publications/office-for-digital-identities-and-attributes-2026-annual-report/ofdia-2026-annual-report-on-the-operation-of-part-2-of-data-use-and-access-act-2025
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

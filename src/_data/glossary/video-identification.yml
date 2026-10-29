@@ -1,0 +1,57 @@
+term: Video identification
+also_known_as: [Video ident, VideoIdent, Video-based identification, Attended remote onboarding]
+cluster: identity
+definition: Video identification is a remote identity check in which a trained agent verifies a customer over a live video call. The agent inspects the ID document's security features, compares the customer's face with the document photo and asks questions. Regulators treat it as an attended form of remote onboarding.
+seo_description: "Video identification is a live video call in which a trained agent checks a customer's ID and face. How it works, BaFin and EBA rules, and what to ask vendors."
+capability: video_ident
+rankings: [identity-verification]
+related: [video-kyc, liveness-detection, document-verification, face-matching, deepfake-identity-fraud, know-your-customer]
+body: |
+  ## How video identification works
+
+  The customer starts a session in an app or browser and is connected to an agent. The agent asks them to hold the ID document to the camera and tilt it, so that holograms and other features that only show under movement become visible. The agent compares the face on the call with the photo on the document, asks a few questions and, in some flows, sends a one-time code that the customer reads back or types in during the call. The whole session is recorded.
+
+  This is different from the automated selfie flow, where software checks the document, runs [liveness detection](/glossary/liveness-detection/) and does the [face matching](/glossary/face-matching/) with no person involved. The European Banking Authority calls the two models attended and unattended remote onboarding. Video identification is the attended one. Because a person runs each call, throughput depends on how many agents are available and when.
+
+  ## What the rules say
+
+  **Germany.** BaFin's [circular 3/2017 (GW) on video identification](https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2017/rs_1703_gw_videoident.html), issued on 10 April 2017 and applicable from 15 June 2017, sets detailed conditions. Only trained staff may carry out the check, in separate rooms with access control. The customer must explicitly consent to the recording. The call must run in real time without interruption, and only end-to-end encrypted video chats are allowed. The document must have adequate anti-forgery features and a machine-readable zone, and the agent must check at least three randomly chosen security features from different categories. During the call the customer enters a centrally generated code sent by email or SMS, and the whole process is recorded and kept.
+
+  **EU.** The EBA's [guidelines on remote customer onboarding](https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2022/EBA-GL-2022-15%20GL%20on%20remote%20customer%20onboarding/1043884/Guidelines%20on%20the%20use%20of%20Remote%20Customer%20Onboarding%20Solutions.pdf), which apply from 2 October 2023, cover attended solutions in paragraph 42. Image and audio quality must be sufficient for proper verification. The employee needs sufficient knowledge of AML/CFT rules and training to anticipate, prevent and detect deception. Firms should have an interview guide that sets out the steps and helps the employee spot psychological factors or other signs of suspicious behaviour. Paragraph 43 adds randomness, in the order of customer actions and in which employee handles a session, to reduce risks such as synthetic identities, coercion and collusion.
+
+  **US.** [NIST SP 800-63A-4](https://pages.nist.gov/800-63-4/sp800-63a.html) (section 3.14) says that for remote attended sessions, agents SHALL be trained to look for manipulated media, such as "high latency, synchronization issues, inconsistent skin tone and resolution", and random "human-in-the-loop" cues SHALL be added to the capture process.
+
+  India has its own version of the process, covered under [video KYC (V-CIP)](/glossary/video-kyc/).
+
+  ## What to check when you compare providers
+
+  Ask which regulator's rules the flow was built for, since a process designed for the German circular will not automatically meet another country's rules. Check where the agents sit, which languages they cover, the opening hours and the typical wait. Ask how agents are trained to spot [deepfakes](/glossary/deepfake-identity-fraud/) and how the platform blocks injected video. Confirm how long recordings are kept, where they are stored and who can access them. Our [identity verification ranking](/providers/identity-verification/) shows which reviewed providers offer a live-agent video check.
+buyer_questions:
+  - Which regulator's video identification rules is your process built for, and which countries is it accepted in?
+  - Where are your agents based, which languages and hours do you cover, and what is the median wait time?
+  - How are agents trained to detect deepfakes, coercion and social engineering, and how often is that training refreshed?
+  - How do you stop virtual cameras or injected video from reaching the agent?
+  - Where are session recordings stored, for how long, and can we export them for an audit?
+faq:
+  - q: Is video identification the same as a selfie check with liveness detection?
+    a: No. In video identification a trained person runs the check over a live call. A selfie check with liveness detection is automated. The EBA calls these attended and unattended remote onboarding.
+  - q: Is video identification still allowed in Germany?
+    a: BaFin's circular 3/2017 (GW) on video identification applies from 15 June 2017 and sets the conditions, including trained staff, end-to-end encrypted real-time video and checks of at least three security features.
+  - q: What is the difference between video ident and video KYC?
+    a: Both are live video checks run by trained staff. Video KYC usually refers to India's Video based Customer Identification Process (V-CIP), which follows Reserve Bank of India rules such as geo-tagging and storage of recordings in India.
+sources:
+  - title: Rundschreiben 3/2017 (GW) Videoidentifizierungsverfahren
+    publisher: Bundesanstalt für Finanzdienstleistungsaufsicht (BaFin)
+    url: https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2017/rs_1703_gw_videoident.html
+    accessed: 2026-10
+  - title: Guidelines on the use of remote customer onboarding solutions under Article 13(1) of Directive (EU) 2015/849 (EBA/GL/2022/15)
+    publisher: European Banking Authority
+    url: https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2022/EBA-GL-2022-15%20GL%20on%20remote%20customer%20onboarding/1043884/Guidelines%20on%20the%20use%20of%20Remote%20Customer%20Onboarding%20Solutions.pdf
+    accessed: 2026-10
+  - title: "NIST SP 800-63A-4, Digital Identity Guidelines: Identity Proofing and Enrollment"
+    publisher: National Institute of Standards and Technology
+    url: https://pages.nist.gov/800-63-4/sp800-63a.html
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29
