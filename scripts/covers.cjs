@@ -57,6 +57,9 @@ function html(a, fontUrl) {
   const hs = bars(a.slug, a.section);
   const barW = hs.length === 4 ? 66 : 76, gap = 22, maxH = 470;
   const barsHtml = hs.map((v, i) => `<div class="bar" style="height:${Math.round(v * maxH)}px;width:${barW}px;background:${i === hs.length - 1 ? T.accent : i % 2 ? T.barB : T.barA}"></div>`).join(`<div style="width:${gap}px"></div>`);
+  // Title column ends 56px before the first bar.
+  const barsLeft = 1200 - 80 - (hs.length * barW + (hs.length - 1) * gap);
+  const titleW = barsLeft - 80 - 56;
   const chips = a.topics.slice(0, 3).map((t) => `<span class="chip"># ${esc(t)}</span>`).join("");
   return `<!doctype html><html><head><meta charset="utf-8"><style>
 @font-face { font-family: Geist; src: url('${fontUrl}') format('woff2'); font-weight: 100 900; }
@@ -66,7 +69,7 @@ html, body { width: 1200px; height: 675px; overflow: hidden; background: ${T.bg}
 .top { display: flex; align-items: center; gap: 14px; }
 .brand { display: flex; align-items: center; gap: 12px; font-size: 30px; font-weight: 600; letter-spacing: -0.03em; }
 .pill { margin-left: 18px; font-size: 18px; font-weight: 500; color: ${T.accent}; background: ${T.surface}; border: 1.5px solid ${T.accent}; padding: 5px 14px; border-radius: 999px; }
-.title { margin-top: auto; width: 740px; font-weight: 600; letter-spacing: -0.035em; line-height: 1.06; }
+.title { margin-top: auto; font-weight: 600; letter-spacing: -0.035em; line-height: 1.06; }
 .chips { display: flex; gap: 10px; margin-top: 28px; }
 .chip { font-size: 17px; color: ${T.body}; background: ${T.surface}; border: 1px solid ${T.line}; padding: 6px 13px; border-radius: 999px; white-space: nowrap; }
 .foot { margin-top: 26px; font-size: 22px; color: ${T.muted}; letter-spacing: -0.01em; }
@@ -74,7 +77,7 @@ html, body { width: 1200px; height: 675px; overflow: hidden; background: ${T.bg}
 .bar { border-radius: 14px 14px 0 0; }
 </style></head><body><div class="wrap">
   <div class="top"><div class="brand"><svg width="34" height="34" viewBox="0 0 24 24"><rect x="3" y="12" width="4.5" height="9" rx="1" fill="${T.ink}"/><rect x="9.75" y="8" width="4.5" height="13" rx="1" fill="${T.ink}"/><rect x="16.5" y="3" width="4.5" height="18" rx="1" fill="${T.accent}"/></svg>BeVerified</div><span class="pill">${SECTIONS[a.section]}</span></div>
-  <h1 class="title" id="t">${esc(a.title)}</h1>
+  <h1 class="title" id="t" style="width:${titleW}px">${esc(a.title)}</h1>
   ${chips ? `<div class="chips">${chips}</div>` : ""}
   <div class="foot">beverified.org</div>
   <div class="bars">${barsHtml}</div>
