@@ -1,0 +1,56 @@
+term: Face matching
+also_known_as: [Face match, Facial comparison, 1:1 face verification, Selfie match, Biometric face comparison]
+cluster: identity
+definition: Face matching compares a live selfie with the photo on an identity document, or in its chip, and scores how likely it is that both show the same person. In remote onboarding it is the step that links the person in front of the camera to the identity on the document.
+seo_description: "Face matching compares a selfie with the ID photo to check it is the same person. How 1:1 matching works, NIST error-rate rules and what to ask vendors."
+rankings: [identity-verification]
+related: [liveness-detection, document-verification, nfc-chip-verification, identity-proofing, deepfake-identity-fraud]
+body: |
+  ## How face matching works
+
+  The software finds the face in the selfie and in the document photo, turns each into a numeric template and compares the two. The result is a similarity score. If the score is above a threshold set by the provider or the client, the check passes. This is one-to-one (1:1) verification: one face against one claimed identity. It is different from one-to-many (1:N) identification, which searches a face against a whole gallery, for example to find the same person applying under several names.
+
+  Every threshold trades two errors against each other. The false match rate (FMR) is how often two different people are wrongly accepted as the same. The false non-match rate (FNMR) is how often the genuine holder is wrongly rejected. Raise the threshold and fraud gets harder but more real customers fail.
+
+  A match only says the two faces look alike. It does not say the selfie came from a live person, so it is paired with [liveness detection](/glossary/liveness-detection/). The document photo should be checked too: a [document check](/glossary/document-verification/) looks for a swapped photo, and an [NFC chip read](/glossary/nfc-chip-verification/) gives a signed copy of the photo to match against.
+
+  ## What the rules and standards say
+
+  The European Banking Authority's [guidelines on remote customer onboarding](https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2022/EBA-GL-2022-15%20GL%20on%20remote%20customer%20onboarding/1043884/Guidelines%20on%20the%20use%20of%20Remote%20Customer%20Onboarding%20Solutions.pdf), which apply from 2 October 2023, say that firms using unattended remote onboarding should use strong and reliable algorithms to verify whether the photo or video taken matches the picture on the official document (paragraph 41(d)).
+
+  [NIST SP 800-63A-4](https://pages.nist.gov/800-63-4/sp800-63a.html), NIST's identity proofing guidelines, is more specific. For one-to-one comparison it sets a false match rate of 1:10,000 or better and a false non-match rate of 1:100 or better. Providers must assess performance and demographic impacts, configure a fixed threshold, test in line with ISO/IEC 19795-1:2021 and ISO/IEC 19795-10:2024, have their algorithms tested periodically by independent entities, and make the results publicly available.
+
+  The best-known independent benchmark is NIST's [Face Recognition Technology Evaluation (FRTE) 1:1 Verification](https://pages.nist.gov/frvt/html/frvt11.html). It is open indefinitely, so developers submit algorithms when they are ready, and it reports accuracy measures such as FNMR at a fixed FMR, along with speed and demographic differentials. NIST notes that "Demographic variations occur even with good image quality."
+
+  ## What to check when you compare providers
+
+  Ask for error rates at the threshold you will actually run, not at a best-case setting. Ask which algorithm the provider uses, whether it built it or licenses it, and whether that algorithm appears in NIST FRTE results under a version you can identify. Check demographic results, since a single average can hide much higher failure rates for some groups. Our [identity verification ranking](/providers/identity-verification/) records which providers publish independent test results.
+buyer_questions:
+  - What are your false match and false non-match rates at the threshold we will use, and who measured them?
+  - Is your face matching algorithm in NIST FRTE 1:1, and which submission matches the version we will integrate?
+  - How does performance vary across age, sex and skin tone, and can we see the demographic results?
+  - Can we set our own threshold, and what happens to a borderline score?
+  - Do you match the selfie against the printed photo, the chip photo, or both?
+faq:
+  - q: Is face matching the same as facial recognition?
+    a: Face matching in KYC is one-to-one verification, comparing a selfie with one document photo. Facial recognition often means one-to-many identification, searching a face against a large gallery. Both use similar technology for different jobs.
+  - q: How accurate is face matching?
+    a: It depends on the algorithm, image quality and threshold. NIST SP 800-63A-4 sets a false match rate of 1:10,000 or better and a false non-match rate of 1:100 or better for one-to-one comparison in identity proofing.
+  - q: Does face matching stop deepfakes?
+    a: No. Face matching only checks that two faces look alike. A deepfake selfie that resembles the document photo can pass it, which is why liveness detection and injection attack detection run alongside it.
+sources:
+  - title: "NIST SP 800-63A-4, Digital Identity Guidelines: Identity Proofing and Enrollment (July 2025)"
+    publisher: National Institute of Standards and Technology
+    url: https://pages.nist.gov/800-63-4/sp800-63a.html
+    accessed: 2026-10
+  - title: Face Recognition Technology Evaluation (FRTE) 1:1 Verification
+    publisher: National Institute of Standards and Technology
+    url: https://pages.nist.gov/frvt/html/frvt11.html
+    accessed: 2026-10
+  - title: Guidelines on the use of remote customer onboarding solutions under Article 13(1) of Directive (EU) 2015/849 (EBA/GL/2022/15)
+    publisher: European Banking Authority
+    url: https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2022/EBA-GL-2022-15%20GL%20on%20remote%20customer%20onboarding/1043884/Guidelines%20on%20the%20use%20of%20Remote%20Customer%20Onboarding%20Solutions.pdf
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

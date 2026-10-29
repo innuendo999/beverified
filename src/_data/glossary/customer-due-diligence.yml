@@ -1,0 +1,81 @@
+term: Customer due diligence
+abbr: CDD
+also_known_as: [Customer due diligence measures]
+cluster: aml
+definition: >-
+  Customer due diligence (CDD) is the set of checks a regulated firm must run on its customers: identify and verify the customer, identify the beneficial owner, understand the purpose of the relationship and monitor it over time. The firm sets how deep each check goes according to risk.
+seo_description: "CDD is the set of checks a regulated firm runs on each customer. The four core measures, when CDD applies under FATF, EU and UK rules, and what to ask vendors."
+rankings: [aml, identity-verification]
+related: [know-your-customer, enhanced-due-diligence, simplified-due-diligence, ultimate-beneficial-owner, risk-based-approach, perpetual-kyc]
+body: |
+  ## The four core measures
+
+  CDD is the legal name for most of what the industry calls KYC. [FATF Recommendation 10](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html) lists four measures, and EU and UK law follow the same structure:
+
+  1. **Identify and verify the customer** using "reliable, independent source documents, data or information".
+  2. **Identify the beneficial owner** and take reasonable measures to verify that person's identity. For companies and trusts this includes understanding the ownership and control structure (see [ultimate beneficial owner](/glossary/ultimate-beneficial-owner/)).
+  3. **Understand the purpose and intended nature** of the business relationship and, where appropriate, obtain information about it.
+  4. **Conduct ongoing due diligence**: scrutinise transactions to check they fit what the firm knows about the customer, their business and risk profile, "including, where necessary, the source of funds".
+
+  In the EU these measures are in [Article 13(1) of Directive (EU) 2015/849](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015L0849-20210630). In the UK they are in [regulation 28 of the Money Laundering Regulations 2017](https://www.legislation.gov.uk/uksi/2017/692/regulation/28), where paragraph (11) adds that ongoing monitoring includes reviewing existing records and keeping them up to date.
+
+  ## When CDD applies
+
+  FATF Recommendation 10 says CDD is required when a firm establishes a business relationship, carries out an occasional transaction above USD/EUR 15,000 (or certain wire transfers), suspects money laundering or terrorist financing, or doubts identification data it already holds. Article 11 of the EU directive sets the occasional transaction threshold at EUR 15 000 or more, including linked transactions. UK regulation 27(1) lists the same triggers of a new relationship, suspicion and doubts about earlier information.
+
+  CDD is not only for new customers. Article 14(5) of the directive requires it for existing customers "at appropriate times" on a risk-sensitive basis, and when their relevant circumstances change. UK regulation 27(8) says the same. This is where [perpetual KYC](/glossary/perpetual-kyc/) fits.
+
+  ## Standard, simplified and enhanced
+
+  Every customer gets each CDD measure, but the depth varies. Article 13(2) of the directive lets firms "determine the extent of such measures on a risk-sensitive basis", and UK regulation 28(12) ties the extent to the firm's own risk assessment. Low-risk cases may qualify for [simplified due diligence](/glossary/simplified-due-diligence/). Higher-risk cases need [enhanced due diligence](/glossary/enhanced-due-diligence/) on top of standard CDD.
+
+  Under the EU AML Regulation, Regulation (EU) 2024/1624, which applies from 10 July 2027, CDD measures are set out in Article 20. The EU Anti-Money Laundering Authority (AMLA) has consulted on technical standards under Article 28(1) that say what information firms should collect.
+
+  ## What to check when you compare providers
+
+  Vendors rarely cover all four measures. Identity verification tools handle the first, KYB and registry tools the second, and screening and monitoring tools the fourth. Ask which measures a product supports, what evidence it stores for each, and how it lets you set different checks by risk level. Our [AML software ranking](/providers/aml/) compares reviewed providers.
+buyer_questions:
+  - Which of the four CDD measures does your product cover, and what do we still need to do ourselves or source elsewhere?
+  - What evidence do you store for each completed check, and can we export it for an audit or a regulator?
+  - Can we run different CDD flows for low, standard and high-risk customers, and who sets the rules?
+  - How do you trigger CDD again for an existing customer when their circumstances change?
+  - How do you identify and verify beneficial owners for company customers, and in which countries?
+faq:
+  - q: What is the difference between CDD and KYC?
+    a: CDD is the legal term used in FATF, EU and UK rules. It covers identifying and verifying the customer, identifying the beneficial owner, understanding the relationship and ongoing monitoring. KYC is the industry name, most often used for the identity part.
+  - q: What are the main CDD requirements?
+    a: FATF Recommendation 10 lists four measures. They are identifying and verifying the customer, identifying and verifying the beneficial owner, understanding the purpose of the relationship, and ongoing due diligence on the relationship and its transactions.
+  - q: What is the difference between CDD and EDD?
+    a: CDD is the standard set of checks. Enhanced due diligence (EDD) is an extra layer applied on top of CDD for higher-risk customers, such as politically exposed persons or customers linked to high-risk countries.
+sources:
+  - title: The FATF Recommendations (Recommendation 10)
+    publisher: Financial Action Task Force
+    url: https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html
+    accessed: 2026-10
+  - title: Directive (EU) 2015/849 (consolidated text), Articles 11, 13 and 14
+    publisher: EUR-Lex
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015L0849-20210630
+    accessed: 2026-10
+  - title: "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017, regulation 28"
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/uksi/2017/692/regulation/28
+    accessed: 2026-10
+  - title: "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017, regulation 27"
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/uksi/2017/692/regulation/27
+    accessed: 2026-10
+  - title: Regulation (EU) 2024/1624 (AML Regulation)
+    publisher: EUR-Lex
+    url: https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng
+    accessed: 2026-10
+  - title: Consultation on draft RTS on customer due diligence under Article 28(1) of Regulation (EU) 2024/1624
+    publisher: Anti-Money Laundering Authority (AMLA)
+    url: https://www.amla.europa.eu/policy/public-consultations/consultation-draft-rts-customer-due-diligence_en
+    accessed: 2026-10
+  - title: European AML/CFT framework
+    publisher: De Nederlandsche Bank
+    url: https://www.dnb.nl/en/sector-information/open-book-supervision/laws-and-eu-regulations/european-amlcft-framework/
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

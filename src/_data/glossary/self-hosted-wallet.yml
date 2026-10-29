@@ -1,0 +1,63 @@
+term: Self-hosted wallet
+abbr: null
+also_known_as: [Self-hosted address, Unhosted wallet, Private wallet, Non-custodial wallet]
+cluster: crypto
+definition: A self-hosted wallet is a crypto wallet that the user controls directly, without an exchange or other service provider holding it for them. EU law calls its address a self-hosted address, meaning a distributed ledger address not linked to a crypto-asset service provider or a similar non-EU entity.
+seo_description: "A self-hosted wallet is a crypto wallet no provider holds for the user. The EU TFR definition, the EUR 1,000 ownership check and what to ask vendors."
+capability: null
+rankings: [travel-rule]
+related: [transfer-of-funds-regulation, aopp, satoshi-test, travel-rule, crypto-asset-service-provider, virtual-asset-service-provider]
+provider_mentions: []
+body: |
+  ## How a self-hosted wallet differs from a hosted one
+
+  When a customer keeps crypto at an exchange, the exchange holds the wallet and is the regulated party at that end of a transfer. With a self-hosted wallet, the user holds it themselves, so no provider sits behind the address.
+
+  That matters for the [Travel Rule](/glossary/travel-rule/). Between two providers, the sending one passes originator and beneficiary data to the receiving one. When crypto goes to a self-hosted wallet, there is nobody on the other side to receive that data. The rules therefore treat these transfers separately and ask a different question: does the address really belong to the customer?
+
+  ## What the rules say
+
+  In the EU, Article 3(20) of the [Transfer of Funds Regulation](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1113), Regulation (EU) 2023/1113, defines a "self-hosted address" as a distributed ledger address not linked to a crypto-asset service provider, or to an entity outside the EU that provides similar services. The Regulation has applied since 30 December 2024. Recital 22 says it does not apply to person-to-person transfers made without any crypto-asset service provider.
+
+  When a [CASP](/glossary/crypto-asset-service-provider/) sends crypto to a self-hosted address, Article 14(5) requires it to obtain and hold the originator and beneficiary information listed in Article 14(1) and (2) and to make sure the transfer can be individually identified. Article 16(2) sets the same duty for the CASP receiving crypto from a self-hosted address. For transfers of more than EUR 1,000, both articles add that the CASP should take adequate measures to assess whether the address is owned or controlled by its own customer. Recital 39 says the CASP should in principle not be required to verify the information on the user of the self-hosted address.
+
+  The European Banking Authority's [Travel Rule guidelines](https://www.eba.europa.eu/sites/default/files/2024-07/6de6e9b9-0ed9-49cd-985d-c0834b5b4356/Travel%20Rule%20Guidelines.pdf) (EBA/GL/2024/11) explain how. Paragraph 77 says CASPs should find out whether a self-hosted address is at the other end using available technical means, including blockchain analytics, third-party data providers and identifiers used by messaging systems. Paragraph 83 lists methods for the over EUR 1,000 ownership check, among them a small test transfer (the [Satoshi test](/glossary/satoshi-test/)) and a digitally signed message, which [AOPP](/glossary/aopp/) automates. Paragraph 85 says to combine methods where one alone is not reliable enough.
+
+  The FATF uses the term "unhosted wallets". Its [12-month review of the virtual asset standards](https://www.fatf-gafi.org/media/fatf/documents/recommendations/12-Month-Review-Revised-FATF-Standards-Virtual-Assets-VASPS.pdf) (June 2020) discusses peer-to-peer transfers "via private / unhosted wallets" in paragraph 52.
+
+  ## Common confusions
+
+  Self-hosted does not mean anonymous. Under the TFR the CASP still collects the originator and beneficiary data for a self-hosted transfer of any amount. The EUR 1,000 threshold only triggers the extra ownership or control check. A self-hosted address may also belong to someone other than the customer, which is why the check asks who controls it rather than just whether it is self-hosted.
+
+  ## What to check when you compare providers
+
+  Ask how the tool tells a self-hosted address from one held at another provider, and which proof methods it supports for the ownership check. Our guide to [self-hosted wallet verification under the TFR](/guide/self-hosted-wallet-verification-tfr/) compares the methods in detail, and the [Travel Rule ranking](/providers/travel-rule/) compares the reviewed providers.
+buyer_questions:
+  - How do you decide whether a destination or source address is self-hosted or held at another provider, and what data sources does that rely on?
+  - Which ownership proofs do you support for transfers over EUR 1,000, such as signed messages, AOPP, test transfers or screenshots?
+  - Can we combine methods or require a stronger one for higher-risk customers or assets?
+  - How do you store the proof, and can an auditor see which method was used for each transfer?
+  - Once an address has been verified, how long do you treat it as verified, and can we force a new check?
+faq:
+  - q: What is the difference between a self-hosted wallet and an unhosted wallet?
+    a: None in practice. The EU Transfer of Funds Regulation uses "self-hosted address", while FATF documents use "unhosted wallet" for the same idea, a wallet that no regulated provider holds.
+  - q: Do I need to verify a self-hosted wallet for every transfer in the EU?
+    a: The TFR asks a CASP to collect originator and beneficiary information for transfers to and from self-hosted addresses of any amount. The extra assessment of whether the customer owns or controls the address applies to transfers of more than EUR 1,000.
+  - q: Does the TFR apply to transfers between two self-hosted wallets?
+    a: No. Recital 22 of Regulation (EU) 2023/1113 says it does not apply to person-to-person transfers made without the involvement of a crypto-asset service provider.
+sources:
+  - title: Regulation (EU) 2023/1113 on information accompanying transfers of funds and certain crypto-assets
+    publisher: EUR-Lex
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1113
+    accessed: 2026-10
+  - title: Guidelines on information requirements in relation to transfers of funds and certain crypto-assets transfers under Regulation (EU) 2023/1113 (EBA/GL/2024/11)
+    publisher: European Banking Authority
+    url: https://www.eba.europa.eu/sites/default/files/2024-07/6de6e9b9-0ed9-49cd-985d-c0834b5b4356/Travel%20Rule%20Guidelines.pdf
+    accessed: 2026-10
+  - title: 12 Month Review of Revised FATF Standards on Virtual Assets and Virtual Asset Service Providers (June 2020)
+    publisher: FATF
+    url: https://www.fatf-gafi.org/media/fatf/documents/recommendations/12-Month-Review-Revised-FATF-Standards-Virtual-Assets-VASPS.pdf
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29
