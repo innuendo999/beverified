@@ -13,7 +13,7 @@ body: |
 
   When a customer keeps crypto at an exchange, the exchange holds the wallet and is the regulated party at that end of a transfer. With a self-hosted wallet, the user holds it themselves, so no provider sits behind the address.
 
-  That matters for the [Travel Rule](/glossary/travel-rule/). Between two providers, the sending one passes originator and beneficiary data to the receiving one. When crypto goes to a self-hosted wallet, there is nobody on the other side to receive that data. The rules therefore treat these transfers separately and ask a different question: does the address really belong to the customer?
+  That matters for the [Travel Rule](/glossary/travel-rule/). Between two providers, the sending one passes originator and beneficiary data to the receiving one. When crypto goes to a self-hosted wallet, there is nobody on the other side to receive that data. The rules handle these transfers separately, and the main question becomes whether the address belongs to the customer.
 
   ## What the rules say
 
@@ -27,7 +27,7 @@ body: |
 
   ## Common confusions
 
-  Self-hosted does not mean anonymous. Under the TFR the CASP still collects the originator and beneficiary data for a self-hosted transfer of any amount. The EUR 1,000 threshold only triggers the extra ownership or control check. A self-hosted address may also belong to someone other than the customer, which is why the check asks who controls it rather than just whether it is self-hosted.
+  Self-hosted does not mean anonymous. Under the TFR the CASP still collects the originator and beneficiary data for a self-hosted transfer of any amount. The EUR 1,000 threshold only triggers the extra ownership or control check. A self-hosted address can also belong to someone other than the customer, so the check is about who controls it, not only whether it is self-hosted.
 
   ## What to check when you compare providers
 
