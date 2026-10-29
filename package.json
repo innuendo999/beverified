@@ -10,7 +10,8 @@
     "inventory": "python3 scripts/inventory.py",
     "extract": "python3 scripts/extract.py",
     "check:strict": "node scripts/checks/content.mjs --strict && node scripts/checks/links.mjs --strict",
-    "check:html": "python3 scripts/checks/html_audit.py --strict"
+    "check:html": "python3 scripts/checks/html_audit.py --strict",
+    "check:glossary": "node scripts/checks/glossary.mjs"
   },
   "devDependencies": {
     "@11ty/eleventy": "3.1.2",

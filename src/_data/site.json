@@ -83,6 +83,11 @@
         "label": "Blog",
         "href": "/blog/",
         "key": "blog"
+      },
+      {
+        "label": "Glossary",
+        "href": "/glossary/",
+        "key": "glossary"
       }
     ],
     "navAside": {
@@ -176,6 +181,10 @@
         [
           "Methodology",
           "/methodology/"
+        ],
+        [
+          "Glossary",
+          "/glossary/"
         ],
         [
           "For providers",

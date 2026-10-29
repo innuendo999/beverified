@@ -25,6 +25,7 @@ All pages are generated from templates + data. There is no hand-written page HTM
 | Author pages `/authors/<slug>/` | `src/authors/authors.njk`; one page per `authors.yml` entry with `url`; review list = providers with that `author` |
 | 404 | `src/404.njk` (popular reviews = top 4 by score) |
 | Articles (guides, news, research) at old URLs `/guide/`, `/news/`, `/publications/` | `src/<section>/<slug>.md`, spec `docs/article-spec.md`, validate `node scripts/checks/articles.mjs`; layout `src/_layouts/article.njk`. Related posts, "Related reading" on reviews and "Guides and news" on rankings come from front matter `provider_slugs`, `ranking_keys`, `topics` |
+| Glossary `/glossary/` and `/glossary/<slug>/` | `src/_data/glossary/<slug>.yml`, spec `docs/glossary-spec.md`, term list `docs/glossary-terms.md`, validate `node scripts/checks/glossary.mjs`; templates `src/glossary/term.njk`, `src/glossary/index.njk`. "Providers that offer it" is generated from provider `capabilities{}` / `certifications[]` (`src/_lib/glossary.js`, `src/_lib/capabilities.js`); matrix column headers link to the term with the same `capability` |
 | Blog index `/blog/` and archives `/category/<section>/` | `src/blog.njk` + `src/_data/blogArchives.js` |
 | Legacy URLs `/author/beverified/` (refresh to author page), `/contact-us/` | `src/legacy/` |
 | Font | self-hosted `src/assets/fonts/Geist-Variable.woff2` |

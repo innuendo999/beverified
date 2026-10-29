@@ -1,0 +1,91 @@
+{#- Glossary term. Data: src/_data/glossary/<slug>.yml (docs/glossary-spec.md); computed values in term.11tydata.js -#}
+{%- set toc = bodyHtml | headingToc -%}
+<div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li class="sep" aria-hidden="true">›</li><li><a href="/glossary/">Glossary</a></li>{% if cluster %}<li class="sep" aria-hidden="true">›</li><li><a href="/glossary/#{{ cluster.key }}">{{ cluster.label }}</a></li>{% endif %}</ol></nav>
+  <div class="art-layout">
+    <nav class="toc art-toc" aria-label="On this page">
+      <div class="toc__title">On this page</div>
+      <a href="#definition">Definition</a>
+      {%- for x in toc %}<a href="#{{ x.id }}">{{ x.title | safe }}</a>{% endfor %}
+      {%- if t.buyer_questions.length %}<a href="#ask-h">Questions to ask a provider</a>{% endif %}
+      {%- if offer %}<a href="#offer-h">Providers that offer it</a>{% endif %}
+      {%- if t.faq.length %}<a href="#faq-h">FAQ</a>{% endif %}
+      {%- if t.sources.length %}<a href="#src-h">Sources</a>{% endif %}
+    </nav>
+    <main id="main" class="art"><article>
+      <header class="art__head gl__head">
+        <span class="pill">Glossary{% if cluster %} · {{ cluster.label }}{% endif %}</span>
+        <h1 class="h-display art__h1">{{ t.term }}{% if t.abbr %} ({{ t.abbr }}){% endif %}</h1>
+        {%- if t.also_known_as.length %}<p class="gl__aka">Also called {% for a in t.also_known_as %}{{ a }}{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
+        <div class="byline">
+          {%- if au %}<div class="byline__author"><img class="avatar" src="{{ au.photo }}" alt=""><span>By <a href="{{ au.url }}">{{ au.name }}</a></span></div><span class="dot" aria-hidden="true">·</span>{% endif %}
+          {%- if t.updated %}<span>Updated <time datetime="{{ t.updated | iso }}">{{ t.updated | displayDate }}</time></span>{% endif %}
+        </div>
+      </header>
+      <section class="art__takeaways gl__def" id="definition" aria-labelledby="def-h">
+        <h2 id="def-h">{{ question }}</h2>
+        <p>{{ t.definition }}</p>
+      </section>
+      <div class="art__body legacy-prose">{{ bodyHtml | safe }}</div>
+
+      {%- if t.buyer_questions.length %}
+      <section class="art__block" aria-labelledby="ask-h">
+        <h2 id="ask-h" class="h-sub">Questions to ask a provider</h2>
+        <ul class="gl__ask">{% for q in t.buyer_questions %}<li>{{ q }}</li>{% endfor %}</ul>
+      </section>
+      {%- endif %}
+
+      {%- if offer %}
+      <section class="art__block" aria-labelledby="offer-h">
+        <h2 id="offer-h" class="h-sub">Providers that offer it</h2>
+        <p class="gl__note">{% if offer.cert %}{{ offer.rows.length }} reviewed providers have a {{ offer.label }} result on record. Confirmed means we opened the certificate, register entry or lab letter; vendor-stated means only the provider says so.{% else %}{{ offer.rows.length }} of the {{ offer.recorded }} reviewed providers with a recorded answer offer {{ offer.label | lower }}, in the core product or as an add-on.{% endif %} Checked against each provider's own pages{% if offer.checked %}, {{ offer.checked | displayDate }}{% endif %}; sources are on each review.</p>
+        <ul class="card nf__list gl__offer">
+          {%- for r in offer.rows %}
+          <li><span class="art__prov"><strong>{{ r.name }}</strong>{% if r.note %}<small>{{ r.note }}</small>{% endif %}</span><span class="gl__status"><i class="cap-dot cap-dot--{{ r.sym }}" aria-hidden="true"></i>{{ r.label }}</span><a href="/providers/{{ r.slug }}/">Review →</a></li>
+          {%- endfor %}
+        </ul>
+      </section>
+      {%- endif %}
+
+      {%- if rankingsFor.length %}
+      <section class="art__block" aria-labelledby="rr-h">
+        <h2 id="rr-h" class="h-sub">Compare providers</h2>
+        <div class="grid-3">{% for r in rankingsFor %}<a class="card cat-card" href="{{ r.c.url }}"><b>{{ r.c.breadcrumb_label }}</b><span>See all {{ r.n }} providers →</span></a>{% endfor %}</div>
+      </section>
+      {%- endif %}
+
+      {%- if t.faq.length %}
+      <section class="art__block" aria-labelledby="faq-h">
+        <h2 id="faq-h" class="h-sub">FAQ</h2>
+        <div class="faq">{% for f in t.faq %}<details{% if loop.first %} open{% endif %}><summary><h3>{{ f.q }}</h3></summary><p>{{ f.a }}</p></details>{% endfor %}</div>
+      </section>
+      {%- endif %}
+
+      {%- if relatedTerms.length or sameCluster.length %}
+      <section class="art__block" aria-labelledby="rel-h">
+        <h2 id="rel-h" class="h-sub">Related terms</h2>
+        <div class="gl__related">{% for r in relatedTerms %}<a class="pill-link" href="{{ r.url }}">{{ r.term }}</a>{% endfor %}{% for r in sameCluster %}{% if loop.index <= 8 %}<a class="pill-link pill-link--soft" href="{{ r.url }}">{{ r.term }}</a>{% endif %}{% endfor %}</div>
+      </section>
+      {%- endif %}
+
+      {%- if t.sources.length %}
+      <section class="art__block" aria-labelledby="src-h">
+        <h2 id="src-h" class="h-sub">Sources</h2>
+        <ol class="art__sources">{% for s in t.sources %}<li><span><a href="{{ s.url }}" rel="noopener" target="_blank">{{ s.title }}</a>{% if s.publisher %}, {{ s.publisher }}{% endif %}</span>{% if s.accessed %}<small>Accessed {{ s.accessed | displayDate }}</small>{% endif %}</li>{% endfor %}</ol>
+      </section>
+      {%- endif %}
+
+      {%- if au %}
+      <section class="card author-box art__block" aria-label="About the author">
+        <img class="avatar avatar--lg" src="{{ au.photo }}" alt="{{ au.name }}">
+        <div>
+          <div class="author-box__name">{{ au.name }}</div>
+          <div class="author-box__role">{{ au.role }}</div>
+          <p>{{ au.bio }}</p>
+          <div class="author-box__meta">{% if au.url %}<a href="{{ au.url }}">Author profile →</a>{% endif %}<a href="{{ site.v3.methodologyHref }}">Editorial standards →</a></div>
+        </div>
+      </section>
+      {%- endif %}
+    </article></main>
+  </div>
+</div>

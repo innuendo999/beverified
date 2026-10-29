@@ -117,7 +117,7 @@ layout: v3.njk
         <div class="cap-matrix__scroll" role="region" aria-label="Capability matrix, scrolls sideways" tabindex="0">
           <table class="cap-table">
             <caption class="visually-hidden">{{ c.breadcrumb_label }}: capabilities of each ranked provider, with sources.</caption>
-            <thead><tr><th scope="col">Provider</th>{% for col in matrix.cols %}<th scope="col">{{ col.label }}</th>{% endfor %}</tr></thead>
+            <thead><tr><th scope="col">Provider</th>{% for col in matrix.cols %}<th scope="col">{% if col.term %}<a href="{{ col.term }}" title="What is {{ col.label }}?">{{ col.label }}</a>{% else %}{{ col.label }}{% endif %}</th>{% endfor %}</tr></thead>
             <tbody>
             {%- for row in matrix.rows %}
               <tr>

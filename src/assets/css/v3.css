@@ -788,3 +788,28 @@ a.chip:hover { border-color: var(--line-hover); color: var(--ink); text-decorati
 
 /* Long award labels on ranked cards wrap instead of widening the page */
 .rank-card .pill { white-space: normal; max-width: 100%; overflow-wrap: anywhere; }
+
+/* ---- Glossary (src/glossary) ---- */
+.gl__aka { font-size: 15px; color: var(--muted); margin: -8px 0 14px; }
+.gl__def h2 { font-size: 15px; }
+.gl__def p { font-size: 18px; line-height: 1.6; color: var(--ink); margin: 0; }
+.gl__ask { padding-left: 20px; font-size: 16px; line-height: 1.65; }
+.gl__ask li + li { margin-top: 6px; }
+.gl__note { font-size: 14px; color: var(--muted); margin-bottom: 12px; }
+.gl__offer li { grid-template-columns: minmax(0,1fr) auto auto; }
+.gl__status { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; white-space: nowrap; }
+.gl__related { display: flex; flex-wrap: wrap; gap: 8px; }
+.pill-link--soft { color: var(--body); border-style: dashed; }
+.gl-hub__hero p { max-width: 760px; }
+.gl-hub__jump { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 8px; }
+.gl-hub__jump small { color: var(--muted); margin-left: 4px; }
+.gl-hub { padding-bottom: 64px; }
+.gl-hub__group { padding-top: 40px; scroll-margin-top: 72px; }
+.gl-hub__list { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; }
+.gl-hub__list li { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-card); padding: 16px 18px; }
+.gl-hub__list a { color: var(--ink); }
+.gl-hub__list b { font-size: 16px; font-weight: 600; }
+.gl-hub__list p { font-size: 14px; line-height: 1.5; color: var(--body); margin: 6px 0 0; }
+.gl-hub__az { list-style: none; padding: 0; columns: 3; column-gap: 24px; font-size: 15px; line-height: 1.9; }
+@media (max-width: 900px) { .gl-hub__list { grid-template-columns: repeat(2, minmax(0,1fr)); } .gl-hub__az { columns: 2; } }
+@media (max-width: 600px) { .gl-hub__list { grid-template-columns: minmax(0,1fr); } .gl-hub__az { columns: 1; } .gl__offer li { grid-template-columns: minmax(0,1fr) auto; } .gl__offer li > a { grid-column: 1 / -1; } }
