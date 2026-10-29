@@ -26,7 +26,7 @@ layout: v3.njk
         </div>
       </header>
       {%- if cover %}
-      <figure class="art__cover"><img src="{{ cover }}" alt="" width="1600" height="900" fetchpriority="high" decoding="async"></figure>
+      <figure class="art__cover"><img src="{{ cover }}" alt="" width="1600" height="900" fetchpriority="high" decoding="async" style="width:100%;height:auto"></figure>
       {%- endif %}
       {%- if takeaways.length %}
       <section class="art__takeaways" aria-labelledby="kt-h"><h2 id="kt-h">Key takeaways</h2><ul>{% for t in takeaways %}<li>{{ t }}</li>{% endfor %}</ul></section>
@@ -81,12 +81,12 @@ layout: v3.njk
       {%- endif %}
 
       {#- Google preferred source: deeplink variant (no third-party script, see privacy policy). https://developers.google.com/search/docs/appearance/preferred-sources -#}
-      <aside class="card pref-source art__block" aria-labelledby="ps-h">
-        <div>
-          <h2 id="ps-h" class="pref-source__title">Follow BeVerified on Google</h2>
-          <p>Choose beverified.org as a preferred source and Google will show you more of our KYC, KYB and AML coverage in Top Stories.</p>
+      <aside class="card card--pad pref-source art__block" aria-label="Follow BeVerified on Google">
+        <div class="pref-source__text">
+          <p class="pref-source__title"><b>Follow BeVerified on Google</b></p>
+          <p class="pref-source__desc">Choose beverified.org as a preferred source to see more of our KYC, KYB and AML coverage in Google's Top Stories.</p>
         </div>
-        <a class="pref-source__btn" href="{{ site.v3.preferredSourceHref }}" target="_blank" rel="noopener"><img src="/assets/brand/google-preferred-source.png" width="226" height="71" alt="Add BeVerified as a preferred source on Google"></a>
+        <a class="btn btn--secondary btn--sm pref-source__btn" href="{{ site.v3.preferredSourceHref }}" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>Add as preferred source</a>
       </aside>
     </article></main>
   </div>

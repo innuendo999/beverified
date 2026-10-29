@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import fs from "node:fs";
 import yaml from "js-yaml";
 
@@ -80,6 +81,12 @@ export default function (eleventyConfig) {
   eleventyConfig.addCollection("articles", (api) =>
     api.getFilteredByGlob(["src/guide/*.md", "src/news/*.md", "src/publications/*.md"])
       .sort((a, b) => articleTime(b).localeCompare(articleTime(a))));
+  // Cache-busting: ?v=<content hash> so browsers never pair new HTML with an old cached stylesheet.
+  eleventyConfig.addFilter("assetVersion", (url) => {
+    const file = new URL(`./src${url}`, import.meta.url);
+    const hash = fs.existsSync(file) ? createHash("sha1").update(fs.readFileSync(file)).digest("hex").slice(0, 10) : "";
+    return hash ? `${url}?v=${hash}` : url;
+  });
   eleventyConfig.addFilter("iso", isoDate);
   eleventyConfig.addFilter("sectionLabel", (s) => SECTION_LABEL[s] || s);
   eleventyConfig.addFilter("readingTime", (html) =>
