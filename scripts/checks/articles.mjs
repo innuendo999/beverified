@@ -45,6 +45,8 @@ for (const f of only) {
   if (!SECTIONS.includes(d.section)) err(f, `section must be one of ${SECTIONS}`);
   if (d.section && path.basename(path.dirname(f)) !== d.section) err(f, "section does not match folder");
   for (const p of d.provider_slugs || []) if (!providers.has(p)) err(f, `unknown provider slug ${p}`);
+  for (const t of d.about_terms || []) if (!glossaryUrls.includes(`/glossary/${t}/`)) err(f, `unknown glossary term in about_terms: ${t}`);
+  for (const o of d.mention_orgs || []) if (!o.name || !/^https?:\/\//.test(o.url || "")) err(f, `mention_orgs item needs name and url: ${JSON.stringify(o)}`);
   for (const c of d.ranking_keys || []) if (!rankings[c]) err(f, `unknown category key ${c}`);
   for (const s of d.sources || []) if (!s.url || !/^https?:\/\//.test(s.url) || !s.title || !s.accessed) err(f, `incomplete source ${JSON.stringify(s)}`);
   for (const q of d.faq || []) if (!q.q || !q.a) err(f, "faq item needs q and a");

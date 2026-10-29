@@ -22,6 +22,10 @@ takeaways:                  # 3-5 bullets, each one sentence, each a real fact o
 topics: [Whitelist, Sanctions screening]   # 2-5 short topic tags, Title Case
 provider_slugs: [complyadvantage, sumsub]  # provider slugs from src/_data/providers that the article genuinely discusses (0-6)
 ranking_keys: [aml, kyb]                   # ranking keys from src/_data/rankings.yml relevant to the reader (1-3)
+about_terms: [sanctions-screening]          # optional: 1-5 glossary slugs the article is about -> Article "about" (DefinedTerm), Entity SEO
+mention_orgs:                              # optional: regulators or standard bodies the article relies on -> Article "mentions"
+  - name: "Financial Crimes Enforcement Network"
+    url: "https://www.fincen.gov/"
 faq:                                       # 3-5, use real search queries where given
   - q: "What does whitelisted mean?"
     a: "Plain answer, 1-3 sentences."

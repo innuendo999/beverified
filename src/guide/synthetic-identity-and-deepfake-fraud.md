@@ -11,11 +11,24 @@ published: 2026-10-29
 updated: 2026-10-29
 author: andrii-klymenko
 takeaways:
+  - "Identity abuse is already large: FinCEN found that about 1.6 million suspicious activity reports filed in 2021, 42% of the total, involved identity, covering about $212 billion."
   - "A synthetic identity mixes real and invented data, such as a real Social Security number with a made-up name, so there is often no victim to report it. A deepfake fakes the face, voice or document used in a check."
   - "Liveness detection tested under ISO/IEC 30107-3 covers fakes shown to the camera. Deepfake video injected through a virtual camera or emulator bypasses the camera and needs separate injection attack detection, for which CEN/TS 18099:2024 gives guidance."
   - "FinCEN's alert FIN-2024-Alert004 lists deepfake red flags and asks for the key term FIN-2024-DEEPFAKEFRAUD in related suspicious activity reports. NIST SP 800-63A-4 requires identity providers to check submitted media for manipulation and to block virtual cameras and emulators."
   - "When you test a vendor, ask for separate evidence for presentation attacks, injected video, altered documents and synthetic data, because one lab letter rarely covers all four."
 topics: [Synthetic Identity Fraud, Deepfakes, Liveness Detection, Identity Verification]
+about_terms: [synthetic-identity-fraud, deepfake-identity-fraud, liveness-detection, injection-attack-detection]
+mention_orgs:
+  - name: "Financial Crimes Enforcement Network (FinCEN)"
+    url: "https://www.fincen.gov/"
+  - name: "National Institute of Standards and Technology (NIST)"
+    url: "https://www.nist.gov/"
+  - name: "European Banking Authority (EBA)"
+    url: "https://www.eba.europa.eu/"
+  - name: "Federal Reserve System"
+    url: "https://www.federalreserve.gov/"
+  - name: "Europol"
+    url: "https://www.europol.europa.eu/"
 ranking_keys: [liveness-detection, identity-verification]
 faq:
   - q: "What is the difference between synthetic identity fraud and deepfake fraud?"
@@ -27,6 +40,14 @@ faq:
   - q: "How do you detect a synthetic identity at onboarding?"
     a: "Check the identity data against independent sources rather than only the documents the applicant supplies, look for phone numbers, devices, emails or addresses shared across many applications, and in the US consider SSA's eCBSV service, which confirms whether a name, date of birth and Social Security number match SSA records."
 sources:
+  - title: "FinCEN Issues Analysis on Identity-Related Suspicious Activity (9 January 2024)"
+    publisher: "Financial Crimes Enforcement Network"
+    url: "https://www.fincen.gov/news/news-releases/fincen-issues-analysis-identity-related-suspicious-activity"
+    accessed: 2026-10
+  - title: "8 arrested over running Hong Kong scam ring, opening bank accounts with deepfakes"
+    publisher: "South China Morning Post"
+    url: "https://scmp.com/news/hong-kong/law-and-crime/article/3307159/hong-kong-police-arrest-8-over-deepfake-scams-bypassing-bank-security-checks"
+    accessed: 2026-10
   - title: "Synthetic Identity Fraud in the U.S. Payment System (July 2019)"
     publisher: "Federal Reserve Banks"
     url: "https://fedpaymentsimprovement.org/wp-content/uploads/frs-synthetic-identity-payments-fraud-white-paper-july-2019.pdf"
@@ -77,17 +98,25 @@ sources:
     accessed: 2026-10
 ---
 
-Onboarding fraud used to mean a stolen passport and a photo held up to a webcam. Two newer techniques now sit alongside it. A [synthetic identity](/glossary/synthetic-identity-fraud/) is a person who does not exist, assembled from real and invented data. A [deepfake](/glossary/deepfake-identity-fraud/) is AI-made or AI-altered media: a face, a video, a voice or an ID document. They are often used together, and they defeat different checks.
+{%- set pad = allProviders | capabilityStats("liveness_pad") -%}
+{%- set nfc = allProviders | capabilityStats("nfc") %}
+Onboarding fraud used to mean a stolen passport and a photo held up to a webcam. Two newer techniques now sit beside it. A [synthetic identity](/glossary/synthetic-identity-fraud/) is a person who does not exist, assembled from real and invented data. A [deepfake](/glossary/deepfake-identity-fraud/) is AI-made or AI-altered media: a face, a video, a voice or an ID document. Fraudsters often combine them, and they defeat different checks.
+
+The scale is large even before AI. FinCEN's [analysis of identity-related suspicious activity](https://www.fincen.gov/news/news-releases/fincen-issues-analysis-identity-related-suspicious-activity), published in January 2024, found that about 1.6 million reports filed in 2021, 42% of all reports that year, involved identity, covering about $212 billion in suspicious activity. "Circumvention of verification standards" was one of the five most reported typologies.
 
 This guide is for compliance and product teams choosing or reviewing an identity verification provider. It explains how each attack reaches a KYC check, which control is built to stop it, and what to ask a vendor. It describes what regulators and standards say; it is not legal advice.
 
-## Two different problems
+## What synthetic identity fraud and deepfake fraud are
 
-A synthetic identity attacks the data. The Federal Reserve describes three ways to build one in its [mitigation toolkit](https://fedpaymentsimprovement.org/wp-content/uploads/how-is-a-synthetic-identity-created.pdf): fabrication (entirely invented data), manipulation (small changes to a real person's data) and compilation (real and fake data combined, such as a real Social Security number with a new name). The face behind it can be real. A document check may pass if the fraudster has a genuine-looking document in that name, and a liveness check may pass because a live person is in front of the camera.
+Synthetic identity fraud attacks the data. The Federal Reserve's [mitigation toolkit](https://fedpaymentsimprovement.org/wp-content/uploads/how-is-a-synthetic-identity-created.pdf) describes three ways to build an identity: fabrication (entirely invented data), manipulation (small changes to a real person's data) and compilation (real and fake data combined, such as a real Social Security number with a new name). The face behind it can be real, so a liveness check may pass because a live person is in front of the camera.
 
-A deepfake attacks the evidence. FinCEN's [alert FIN-2024-Alert004](https://www.fincen.gov/sites/default/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf) of 13 November 2024 says that from 2023 it saw more suspicious activity reports describing suspected deepfake media, including altered or generated identity documents used to get around verification. It also reports criminals combining AI-generated images with stolen or fake personal data to create synthetic identities. That combination is why the two belong in one guide.
+Deepfake fraud attacks the evidence. FinCEN's [alert FIN-2024-Alert004](https://www.fincen.gov/sites/default/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf) of 13 November 2024 reports more suspicious activity reports from 2023 onward that describe suspected deepfake media, including altered or generated identity documents used to get around verification. It also reports AI-generated images being paired with stolen or fake personal data to create synthetic identities, which is why the two topics belong together.
 
-## Which control stops which attack
+A case from Hong Kong shows the pattern. In April 2025, police said a ring had replaced the photos on lost Hong Kong identity cards with deepfakes that blended the fraudsters' faces with the cardholders', then uploaded their own selfies to open bank accounts online. According to the [South China Morning Post](https://scmp.com/news/hong-kong/law-and-crime/article/3307159/hong-kong-police-arrest-8-over-deepfake-scams-bypassing-bank-security-checks), eight people were arrested, and 30 of 44 applications made with at least 21 lost cards succeeded. The face match had nothing to catch: the selfie and the card photo showed the same person. The weak points were the document and the data behind it.
+
+## Which KYC control stops which attack
+
+{% include "figures/sdf-attack-map.njk" %}
 
 | Attack (what is faked) | Control built for it | Standard or rule |
 |---|---|---|
@@ -97,42 +126,47 @@ A deepfake attacks the evidence. FinCEN's [alert FIN-2024-Alert004](https://www.
 | Deepfake in a live video call with an agent (the person on the call) | Agent training and media analysis in [video identification](/glossary/video-identification/) | NIST SP 800-63A-4 section 3.14 |
 | Synthetic identity built from real and invented data (the identity data) | [Database verification](/glossary/database-verification/) against independent sources, cross-application signals, SSA eCBSV in the US | Non-documentary verification under 31 CFR 1020.220 |
 
-Three points follow from the table. First, a liveness result says little about injected video: [ISO/IEC 30107-3](https://www.iso.org/standard/79520.html) only considers attacks at the capture device during presentation, so injection is out of its scope. Second, a chip read proves more than a photo of a document, but [ICAO Doc 9303 Part 11](https://www.icao.int/Security/FAL/TRIP/PublishingImages/Pages/Publications/Doc%209303%207th%20Part11.pdf) says passive authentication alone "does not prevent exact copying" of the chip content or chip substitution; active or chip authentication closes that gap where the document supports it. Third, none of the biometric controls tells you whether the person's data belongs to a real, consistent identity. That needs data checks.
+Three things follow. A liveness result says little about injected video, because [ISO/IEC 30107-3](https://www.iso.org/standard/79520.html) only covers attacks at the capture device during presentation. A chip read proves more than a photo of a document, but [ICAO Doc 9303 Part 11](https://www.icao.int/Security/FAL/TRIP/PublishingImages/Pages/Publications/Doc%209303%207th%20Part11.pdf) says passive authentication alone "does not prevent exact copying" of the chip content or chip substitution; active or chip authentication closes that gap where the document supports it. And none of the biometric controls tells you whether the data belongs to a real, consistent identity.
 
-## Why synthetic identities slip through
+How common are these controls among the providers we review? Of the {{ pad.total }} with an ISO/IEC 30107-3 liveness result on record, we opened the lab's letter or certificate for {{ pad.confirmed }}; the other {{ pad.vendor_stated }} are vendor-stated only. {{ nfc.yes }} providers include NFC chip reading in the core product and {{ nfc.add_on }} sell it as an add-on (data checked {{ pad.checked | displayDate }}). Our records do not yet track injection attack detection, so ask for it directly.
+
+## Why synthetic identity fraud is hard to detect
 
 The Fed's 2019 paper [Synthetic Identity Fraud in the U.S. Payment System](https://fedpaymentsimprovement.org/wp-content/uploads/frs-synthetic-identity-payments-fraud-white-paper-july-2019.pdf) gives the main reasons. With ordinary identity theft, the real person usually notices and complains. A synthetic identity has no such person, and some lenders book the eventual loss as a credit loss rather than fraud. The paper also notes that the Social Security Administration began assigning numbers at random on 25 June 2011, so checks based on where a number was issued no longer work for newer numbers.
 
-The typical pattern is slow. The identity builds a credit history, sometimes by being added as an authorized user on someone else's good account, pays on time while its limits grow, then uses all available credit and stops paying. This is the "bust-out". Because the damage comes months later, onboarding checks are only one layer; ongoing monitoring of the account matters too.
+{% include "figures/sdf-lifecycle.njk" %}
 
-In the US, approved financial institutions can use the SSA's [eCBSV service](https://www.ssa.gov/dataexchange/eCBSV/), with the customer's written consent, to check whether a name, date of birth and Social Security number match SSA records. It returns a match result, not an identity verdict, so it works best combined with other sources.
+The damage arrives late. The identity builds a credit history, sometimes as an authorized user on someone else's good account, pays on time while its limits grow, then draws everything and stops paying. Onboarding checks only see the first stage, so ongoing monitoring of the account matters as much.
 
-## What regulators and standards expect
+In the US, approved financial institutions can use the SSA's [eCBSV service](https://www.ssa.gov/dataexchange/eCBSV/), with the customer's written consent, to check whether a name, date of birth and Social Security number match SSA records. It returns a match result, not an identity verdict, and works best alongside other sources.
 
-### FinCEN
+## What FinCEN, NIST and the EBA expect
 
-The deepfake alert lists red flags, among them a photo that shows signs of alteration or does not fit the customer's stated age, identity documents that do not agree with each other, a third-party webcam plugin during a live check, attempts to change communication method during a live check because of "glitches", and device or location data that does not fit the documents. FinCEN asks institutions to use the key term "FIN-2024-DEEPFAKEFRAUD" in related suspicious activity reports.
+| Body | Document | What it says |
+|---|---|---|
+| FinCEN (US) | Alert FIN-2024-Alert004, November 2024 | Red flags for deepfake media; use the key term "FIN-2024-DEEPFAKEFRAUD" in related suspicious activity reports |
+| NIST (US) | [SP 800-63A-4](https://pages.nist.gov/800-63-4/sp800-63a.html), section 3.14, July 2025 | Identity providers SHALL use technical controls against injected media (for example, detecting a virtual camera, emulator or jailbroken device), analyze submitted media for manipulation, and document tested attack types and false negative rates |
+| EBA (EU) | [Remote onboarding guidelines](https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2022/EBA-GL-2022-15%20GL%20on%20remote%20customer%20onboarding/1043884/Guidelines%20on%20the%20use%20of%20Remote%20Customer%20Onboarding%20Solutions.pdf), applied since 2 October 2023 | Unattended remote verification should include liveness detection (para 41(c)); randomness in the process helps against synthetic identities (para 43) |
+| Europol | [Facing reality?](https://www.europol.europa.eu/cms/sites/default/files/documents/Europol_Innovation_Lab_Facing_Reality_Law_Enforcement_And_The_Challenge_Of_Deepfakes.pdf) (Innovation Lab) | Deepfakes can help criminals fool "know your customer" mechanisms; describes face morphing of two faces into one passport photo |
 
-### NIST
+FinCEN's red flags are worth turning into review rules:
 
-[SP 800-63A-4](https://pages.nist.gov/800-63-4/sp800-63a.html), final since July 2025, has a section on digital injection prevention and forged media detection (section 3.14). Credential service providers SHALL implement technical controls such as detecting a virtual camera, device emulator or jailbroken device, SHALL analyze submitted media for signs of manipulation, and SHALL test their detection and document the attack types tested and the false negative rates for relying parties. Agents in attended remote sessions SHALL be trained to spot manipulated media. The guidelines are written for US federal agencies; NIST says other organisations may consider them.
+- a customer photo that looks altered or does not fit the customer's stated age;
+- identity documents that do not agree with each other;
+- a third-party webcam plugin during a live check;
+- requests to switch communication method mid-check because of "glitches";
+- device or location data that does not fit the documents.
 
-### EBA
+NIST SP 800-63 is written for US federal agencies, and NIST says other organisations may consider it. Its section 3.14 is still the most specific public text on what injection and deepfake controls should do.
 
-The European Banking Authority's [guidelines on remote customer onboarding](https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2022/EBA-GL-2022-15%20GL%20on%20remote%20customer%20onboarding/1043884/Guidelines%20on%20the%20use%20of%20Remote%20Customer%20Onboarding%20Solutions.pdf), applied since 2 October 2023, say unattended remote verification should include liveness detection (paragraph 41(c)) and that randomness in the process helps against risks such as synthetic identities (paragraph 43).
+## How to check a KYC provider's defences against deepfakes
 
-### Europol
+One headline result rarely covers every attack, so ask for evidence attack by attack.
 
-Europol's Innovation Lab report [Facing reality?](https://www.europol.europa.eu/cms/sites/default/files/documents/Europol_Innovation_Lab_Facing_Reality_Law_Enforcement_And_The_Challenge_Of_Deepfakes.pdf) lists fooling "know your customer" mechanisms among the crimes deepfakes can enable, and describes face morphing, where two faces are blended into one passport photo.
+1. Who tested your liveness check under ISO/IEC 30107-3, at what level, on which product version, and can we see the letter? Levels 1 to 3 are [iBeta's own test levels](https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/), and iBeta says a pass is not a product certification.
+2. Was injection attack detection tested on its own, by whom and against which test plan? CEN/TS 18099:2024, published in December 2024 according to the [Finnish Standards Association](https://store.sfs.fi/en/cents-18099-2024), explains how to plan that evaluation. Does it cover desktop web, mobile web and the native SDKs?
+3. Which checks run on the document image, do you read the chip where there is one, and do you check active or chip authentication when the document supports it?
+4. Which independent data sources do you check in our countries, do you flag phone numbers, devices, emails or addresses shared across applications, and in the US do you offer eCBSV?
+5. Will you run a pilot on our historical applications, including known fraud cases, and report false rejections as well as catches?
 
-## How to test a vendor
-
-Ask for evidence for each attack separately. One headline result rarely covers all of them.
-
-- For presentation attacks, ask for the lab's confirmation letter for ISO/IEC 30107-3 testing, the level and the product version. Levels 1 to 3 are [iBeta's own test levels](https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/), and iBeta says a pass is not a certification of the product.
-- For injected video, ask whether injection attack detection was tested on its own, by whom and against which test plan. CEN/TS 18099:2024, published in December 2024 according to the [Finnish Standards Association](https://store.sfs.fi/en/cents-18099-2024), explains how to plan such an evaluation. Check that it covers every channel you will use: desktop web, mobile web and native SDKs.
-- For documents, ask which checks run on the image, whether the chip is read where available, and whether active or chip authentication is checked when the document supports it.
-- For synthetic data, ask which independent sources are checked in your countries, whether the product flags phone numbers, devices, emails or addresses shared across applications, and in the US whether eCBSV is offered.
-- Finally, a pilot on your historical applications, with known fraud cases, tells you more than any marketing figure. Ask for false rejection rates as well as catch rates, since a check that blocks real customers has its own cost.
-
-Our [liveness detection ranking](/providers/liveness-detection/) and [identity verification ranking](/providers/identity-verification/) compare the providers we review. The glossary pages for [liveness detection](/glossary/liveness-detection/) and [NFC chip verification](/glossary/nfc-chip-verification/) list which reviewed providers offer each check, generated from our review data. For real cases of identity fraud, see our article on [identity theft cases](/publications/identity-theft-cases/).
+The last question usually tells you the most. Our [liveness detection ranking](/providers/liveness-detection/) and [identity verification ranking](/providers/identity-verification/) compare the providers we review, and the glossary pages for [liveness detection](/glossary/liveness-detection/) and [NFC chip verification](/glossary/nfc-chip-verification/) list which of them offer each check. For more real cases, see our article on [identity theft cases](/publications/identity-theft-cases/).

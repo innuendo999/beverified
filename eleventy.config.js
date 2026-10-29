@@ -1,6 +1,7 @@
 import { createHash } from "node:crypto";
 import fs from "node:fs";
 import yaml from "js-yaml";
+import { providersFor } from "./src/_lib/glossary.js";
 
 // YAML front matter turns 2026-10-18 into a Date; normalise to "2026-10-18".
 const isoDate = (v) => (v instanceof Date ? v.toISOString().slice(0, 10) : String(v || ""));
@@ -163,6 +164,17 @@ export default function (eleventyConfig) {
     for (const m of String(html || "").matchAll(/<section[^>]*\sid="([^"]+)"[^>]*>\s*(?:<[^h][^>]*>\s*)*<h2[^>]*>([\s\S]*?)<\/h2>/g)) {
       out.push({ id: m[1], title: m[2].replace(/<[^>]+>/g, "").trim() });
     }
+    return out;
+  });
+
+  // Counts for one capability from provider records, for article prose ("12 of 16 confirmed"):
+  // {% set pad = allProviders | capabilityStats("liveness_pad") %} -> { total, recorded, confirmed, vendor_stated, yes, add_on, partial, checked }
+  eleventyConfig.addFilter("capabilityStats", (allProviders, key) => {
+    const r = providersFor(key, allProviders);
+    if (!r) return null;
+    const out = { total: r.rows.length, recorded: r.recorded, checked: r.checked };
+    for (const row of r.rows) out[row.status] = (out[row.status] || 0) + 1;
+    out.levels = r.rows.filter((x) => x.status === "confirmed" && /^Level \d$/.test(x.label)).reduce((a, x) => ({ ...a, [x.label]: (a[x.label] || 0) + 1 }), {});
     return out;
   });
 

@@ -37,7 +37,14 @@ export const articleData = (section) => ({
           ...(au ? { author: { "@type": "Person", "@id": `${d.site.url}${au.url}#person`, name: au.name, url: `${d.site.url}${au.url}` } } : {}),
           publisher: { "@id": `${d.site.url}/#organization` },
           ...(d.topics?.length ? { keywords: d.topics.join(", ") } : {}),
-          ...(d.provider_slugs?.length ? { mentions: d.provider_slugs.map((s) => ({ "@id": `${d.site.url}/providers/${s}/#software` })) } : {}),
+          // Entity links: about = glossary terms the article is about (DefinedTerm @ids on /glossary/<slug>/);
+          // mentions = reviewed providers (#software) plus organisations named in front matter mention_orgs [{name, url}].
+          ...((d.about_terms || []).length ? { about: d.about_terms.map((s) => d.glossaryTerms?.find((t) => t.slug === s)).filter(Boolean)
+            .map((t) => ({ "@type": "DefinedTerm", "@id": `${d.site.url}${t.url}#term`, name: t.term, url: `${d.site.url}${t.url}` })) } : {}),
+          ...((d.provider_slugs || []).length || (d.mention_orgs || []).length ? { mentions: [
+            ...(d.provider_slugs || []).map((s) => ({ "@id": `${d.site.url}/providers/${s}/#software` })),
+            ...(d.mention_orgs || []).map((o) => ({ "@type": "Organization", name: o.name, url: o.url })),
+          ] } : {}),
           ...((d.sources || []).length ? { citation: d.sources.map((s) => s.url) } : {}),
         },
         { "@type": "BreadcrumbList", itemListElement: [
