@@ -25,6 +25,9 @@ layout: v3.njk
           <span>{{ content | readingTime }} min read</span>
         </div>
       </header>
+      {%- if cover %}
+      <figure class="art__cover"><img src="{{ cover }}" alt="" width="1600" height="900" fetchpriority="high" decoding="async"></figure>
+      {%- endif %}
       {%- if takeaways.length %}
       <section class="art__takeaways" aria-labelledby="kt-h"><h2 id="kt-h">Key takeaways</h2><ul>{% for t in takeaways %}<li>{{ t }}</li>{% endfor %}</ul></section>
       {%- endif %}
@@ -76,6 +79,15 @@ layout: v3.njk
         </div>
       </section>
       {%- endif %}
+
+      {#- Google preferred source: deeplink variant (no third-party script, see privacy policy). https://developers.google.com/search/docs/appearance/preferred-sources -#}
+      <aside class="card pref-source art__block" aria-labelledby="ps-h">
+        <div>
+          <h2 id="ps-h" class="pref-source__title">Follow BeVerified on Google</h2>
+          <p>Choose beverified.org as a preferred source and Google will show you more of our KYC, KYB and AML coverage in Top Stories.</p>
+        </div>
+        <a class="pref-source__btn" href="{{ site.v3.preferredSourceHref }}" target="_blank" rel="noopener"><img src="/assets/brand/google-preferred-source.png" width="226" height="71" alt="Add BeVerified as a preferred source on Google"></a>
+      </aside>
     </article></main>
   </div>
 

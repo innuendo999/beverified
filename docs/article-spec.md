@@ -33,6 +33,10 @@ sources:                                   # every external fact in the body mus
 ---
 ```
 
+## Cover image
+
+After adding an article run `npm run covers`: it renders `src/assets/img/covers/<slug>.png` (1600x900) from the title, section and first three topics. The cover is used on the article, on post cards, as og:image and as schema `image`. To use a custom image instead, set `cover: /assets/img/...` in front matter.
+
 ## Body
 
 - Markdown. Start with a short intro paragraph (no heading). Then `##` sections (4-8), `###` allowed. Tables allowed.
