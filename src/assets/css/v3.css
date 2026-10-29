@@ -644,6 +644,16 @@ a.chip:hover { border-color: var(--line-hover); color: var(--ink); text-decorati
 .art__sources li span { margin-right: 10px; }
 .art__sources small { color: var(--muted); white-space: nowrap; }
 .art__sources a { overflow-wrap: anywhere; }
+.art__cover { margin: 0 0 28px; }
+.art__cover img { display: block; width: 100%; height: auto; border-radius: var(--radius-card); border: 1px solid var(--line); }
+.pref-source { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 22px 24px; }
+.pref-source__title { font-size: 18px; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 4px; }
+.pref-source p { font-size: 15px; line-height: 1.5; color: var(--body); }
+.pref-source__btn { flex-shrink: 0; line-height: 0; border-radius: 12px; }
+.pref-source__btn img { display: block; width: 226px; height: auto; }
+.post-card.post-card--cover { padding-top: 0; overflow: hidden; }
+.post-card__cover { display: block; width: calc(100% + 44px); max-width: none; height: auto; aspect-ratio: 16 / 9; object-fit: cover; margin: 0 -22px 6px; border-bottom: 1px solid var(--line-soft); }
+@media (max-width: 640px) { .pref-source { flex-direction: column; align-items: flex-start; } }
 .art-related { padding: 32px 0 96px; border-top: 1px solid var(--line-strong); }
 .post-card { display: flex; flex-direction: column; gap: 10px; padding: 20px 22px; color: var(--ink); height: 100%; transition: border-color .2s ease, box-shadow .2s ease; }
 .post-card:hover { border-color: var(--line-hover); box-shadow: 0 10px 30px rgba(40,32,20,0.06); color: var(--ink); text-decoration: none; }
