@@ -26,7 +26,7 @@ body: |
 
   In software, the RBA shows up as customer risk scoring and as rules that change checks and monitoring by risk tier. The firm owns the risk assessment, and a vendor's default model only gives it a starting point.
 
-  Ask how the risk score is calculated, which factors it uses and how they are weighted, whether you can change them, and whether every score change is explained and logged. A regulator will expect the firm to justify why a customer got a given rating. Our [AML software ranking](/providers/aml/) compares reviewed providers.
+  Ask how the risk score is calculated, which factors it uses and how they are weighted, whether you can change them, and whether every score change is explained and logged. In the UK, regulation 28(16) requires a firm to be able to show its supervisor that the extent of its measures fits the risks, so the reasoning behind each rating has to be on record. Our [AML software ranking](/providers/aml/) compares reviewed providers.
 buyer_questions:
   - Which factors does your customer risk score use, how are they weighted, and can we change the weights?
   - Can we see why a specific customer got their risk rating, factor by factor?

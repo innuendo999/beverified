@@ -9,7 +9,7 @@ related: [transaction-monitoring, screening-false-positive, suspicious-activity-
 body: |
   ## How case management works
 
-  Screening and monitoring tools produce alerts. Case management is what happens next. Alerts land in a queue, get assigned to an analyst, and are often grouped into one case per customer so the analyst sees the whole picture rather than ten separate hits. The analyst compares data, adds notes and documents, may ask the customer or the relationship manager for information, and then closes the case with a reason or escalates it. A second reviewer may check the decision. Escalated cases go to the money laundering reporting officer (the nominated officer in UK law), who decides whether to file a [suspicious activity report](/glossary/suspicious-activity-report/).
+  Screening and monitoring tools produce alerts. Case management is what happens next. Alerts land in a queue, get assigned to an analyst, and are often grouped into one case per customer so the analyst sees the whole picture rather than a string of separate hits. The analyst compares data, adds notes and documents, may ask the customer or the relationship manager for information, and then closes the case with a reason or escalates it. A second reviewer may check the decision. Escalated cases go to the money laundering reporting officer (the nominated officer in UK law), who decides whether to file a [suspicious activity report](/glossary/suspicious-activity-report/).
 
   A case management tool can be part of a screening or [transaction monitoring](/glossary/transaction-monitoring/) product, or a separate system that collects alerts from several sources.
 
