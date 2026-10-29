@@ -38,7 +38,7 @@
       {%- if offer %}
       <section class="art__block" aria-labelledby="offer-h">
         <h2 id="offer-h" class="h-sub">Providers that offer it</h2>
-        <p class="gl__note">{% if offer.cert %}{{ offer.rows.length }} reviewed providers have a {{ offer.label }} result on record. Confirmed means we opened the certificate, register entry or lab letter; vendor-stated means only the provider says so.{% else %}{{ offer.rows.length }} of the {{ offer.recorded }} reviewed providers with a recorded answer offer {{ offer.label | lower }}, in the core product or as an add-on.{% endif %} Checked against each provider's own pages{% if offer.checked %}, {{ offer.checked | displayDate }}{% endif %}; sources are on each review.</p>
+        <p class="gl__note">{% if offer.cert %}{{ offer.rows.length }} reviewed providers have a {{ offer.label }} result on record. Confirmed means we opened the certificate, register entry or lab letter; vendor-stated means only the provider says so.{% else %}{% if offer.rows.length == offer.recorded %}All {{ offer.recorded }}{% else %}{{ offer.rows.length }} of the {{ offer.recorded }}{% endif %} reviewed providers with a recorded answer for "{{ offer.label }}" offer it, in the core product or as an add-on.{% endif %} Checked against each provider's own pages{% if offer.checked %}, {{ offer.checked | displayDate }}{% endif %}; sources are on each review.</p>
         <ul class="card nf__list gl__offer">
           {%- for r in offer.rows %}
           <li><span class="art__prov"><strong>{{ r.name }}</strong>{% if r.note %}<small>{{ r.note }}</small>{% endif %}</span><span class="gl__status"><i class="cap-dot cap-dot--{{ r.sym }}" aria-hidden="true"></i>{{ r.label }}</span><a href="/providers/{{ r.slug }}/">Review →</a></li>
