@@ -1,0 +1,74 @@
+term: Enhanced due diligence
+abbr: EDD
+also_known_as: [Enhanced customer due diligence, Enhanced CDD]
+cluster: aml
+definition: >-
+  Enhanced due diligence (EDD) is the extra layer of checks a regulated firm applies on top of standard customer due diligence when a customer or transaction carries higher money laundering risk. Typical measures are more information on the customer, checks on source of funds and wealth, senior management approval and closer monitoring.
+seo_description: "EDD is the extra layer of checks on top of CDD for higher-risk customers. When FATF, EU and UK rules require it, typical measures, and what to ask vendors."
+rankings: [aml]
+related: [customer-due-diligence, politically-exposed-person, source-of-funds, risk-based-approach, simplified-due-diligence, adverse-media-screening]
+body: |
+  ## When enhanced due diligence applies
+
+  EDD is triggered in two ways. Some cases are named in law, and the rest follow from the firm's own [risk assessment](/glossary/risk-based-approach/).
+
+  The FATF sets the global baseline. Its [Recommendations](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html) call for extra measures for [politically exposed persons](/glossary/politically-exposed-person/) (Recommendation 12) and enhanced due diligence for business with countries "for which this is called for by the FATF" (Recommendation 19).
+
+  In the EU, Article 18(1) of [Directive (EU) 2015/849](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015L0849-20210630) requires enhanced measures in the cases set out in Articles 18a to 24, such as high-risk third countries, correspondent relationships and PEPs, and in other higher-risk cases that member states or firms identify. Article 18(2) adds transactions that are complex, unusually large, follow an unusual pattern or have no apparent economic or lawful purpose. Annex III lists factors that point to higher risk.
+
+  The UK list is in [regulation 33(1) of the Money Laundering Regulations 2017](https://www.legislation.gov.uk/uksi/2017/692/regulation/33). It covers cases the firm or its supervisor identifies as high risk, links to FATF call for action countries, correspondent relationships, PEPs and their family members and known close associates, customers who gave false or stolen identification, and unusually complex or large transactions. Any other case that "by its nature" presents a higher risk is included too.
+
+  From 10 July 2027, enhanced due diligence in the EU sits in Article 34 of the AML Regulation, Regulation (EU) 2024/1624.
+
+  ## What EDD measures look like
+
+  EDD is added on top of standard [customer due diligence](/glossary/customer-due-diligence/), never instead of it. The European Banking Authority's risk factor guidelines say so directly in guideline 4.45.
+
+  For customers linked to high-risk third countries, UK regulation 33(3A) and EU Article 18a(1) list the measures. The firm obtains additional information on the customer and beneficial owner, on the intended nature of the relationship, on the [source of funds](/glossary/source-of-funds/) and source of wealth, and on the reasons for transactions. It also needs senior management approval and enhanced monitoring of the relationship. For PEPs, FATF Recommendation 12 asks for senior management approval, "reasonable measures to establish the source of wealth and source of funds" and enhanced ongoing monitoring.
+
+  In other high-risk cases the measures are more open. UK regulation 33(5) gives examples: seeking additional independent, reliable sources to verify information, taking additional measures to understand the customer's background, ownership and financial situation, and increasing the monitoring of the relationship.
+
+  ## What to check when you compare providers
+
+  Software supports EDD in three places: finding the trigger (PEP, sanctions and adverse media screening, country risk lists, unusual transactions), collecting and reviewing extra evidence, and recording the approval. Ask whether the vendor's risk model flags the cases your rules name, whether the analyst workflow can request and store source of funds documents, and whether senior management sign-off is captured in the audit trail. Our [AML software ranking](/providers/aml/) compares reviewed providers.
+buyer_questions:
+  - Which EDD triggers does your product detect automatically (PEPs, high-risk countries, unusual transactions), and can we add our own?
+  - How does an analyst request, receive and review source of funds and source of wealth evidence in your workflow?
+  - Can we record senior management approval inside the case, with name, date and reason?
+  - How do you increase monitoring for a customer once they are classed as high risk?
+  - Which high-risk country lists does your country risk model use, and how quickly is it updated after a FATF plenary?
+faq:
+  - q: When is enhanced due diligence required?
+    a: When a firm's risk assessment shows higher risk, and in cases the law names, such as politically exposed persons, customers linked to high-risk third countries, correspondent relationships and unusually complex or large transactions.
+  - q: What is the difference between CDD and EDD?
+    a: CDD is the standard set of checks applied to every customer. EDD adds further measures for higher-risk customers, such as more information, source of funds and wealth checks, senior management approval and closer monitoring. It does not replace CDD.
+  - q: Do all PEPs need enhanced due diligence?
+    a: Under FATF Recommendation 12, EU law and UK regulation 33, PEPs are a named EDD case. How far the extra measures go still depends on the risk the individual PEP presents.
+sources:
+  - title: The FATF Recommendations (Recommendations 12 and 19)
+    publisher: Financial Action Task Force
+    url: https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html
+    accessed: 2026-10
+  - title: Directive (EU) 2015/849 (consolidated text), Articles 18 and 18a
+    publisher: EUR-Lex
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015L0849-20210630
+    accessed: 2026-10
+  - title: "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017, regulation 33"
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/uksi/2017/692/regulation/33
+    accessed: 2026-10
+  - title: Guidelines on ML/TF risk factors (EBA/GL/2021/02)
+    publisher: European Banking Authority
+    url: https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2021/963637/Final%20Report%20on%20Guidelines%20on%20revised%20ML%20TF%20Risk%20Factors.pdf
+    accessed: 2026-10
+  - title: Consultation paper on draft RTS under Article 28(1) of Regulation (EU) 2024/1624
+    publisher: Anti-Money Laundering Authority (AMLA)
+    url: https://www.amla.europa.eu/document/download/3d430294-5171-455c-b565-a86fc5f3cb1c_en?filename=Consultation%20Paper%20Draft%20RTS%20under%20Article%2028%281%29.pdf
+    accessed: 2026-10
+  - title: European AML/CFT framework
+    publisher: De Nederlandsche Bank
+    url: https://www.dnb.nl/en/sector-information/open-book-supervision/laws-and-eu-regulations/european-amlcft-framework/
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

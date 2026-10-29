@@ -1,0 +1,69 @@
+term: IVMS 101
+abbr: null
+also_known_as: [interVASP Messaging Standard 101, IVMS101, IVMS 101.2023]
+cluster: crypto
+definition: IVMS 101, the interVASP Messaging Standard 101, is a common data model for the originator and beneficiary information that virtual asset service providers exchange under the Travel Rule. It defines the fields and how to fill them, not how the message is sent between providers.
+seo_description: "IVMS 101 is the common data model for Travel Rule originator and beneficiary data. What it covers, who maintains it, versions and what to ask vendors."
+capability: null
+rankings: [travel-rule]
+related: [travel-rule, travel-rule-interoperability, virtual-asset-service-provider, sunrise-issue]
+provider_mentions: []
+body: |
+  ## What IVMS 101 defines
+
+  Under the [Travel Rule](/glossary/travel-rule/), the provider sending crypto passes the originator's and beneficiary's details to the receiving provider. IVMS 101 gives both sides the same vocabulary for that data. The current [IVMS 101.2023 standard](https://cdn.prod.website-files.com/648841abc97f28489cc3f2ce/6656e9c60c3029989dcd7431_IVMS101.2023%20interVASP%20data%20model%20standard.pdf) has six top-level entities: Originator, Beneficiary, OriginatingVASP, BeneficiaryVASP, TransferPath and PayloadMetadata. Each person is either a natural person or a legal person, with structured elements for names, geographic address, date and place of birth and national identification.
+
+  Names are a known pain point, so the standard sets rules for them. Data is sent in UTF-8 and, unless otherwise specified, in Latin script. A name in another script is transliterated or translated, and a local-script version may be sent alongside it. The PayloadMetadata entity records which transliteration method was used.
+
+  Section 3 of the standard lists what it does not cover: network protocols or the mode of transmission, information security, identification of VASPs, data privacy, storage of payload data, and verification or KYC status. Those are left to the messaging protocol and to each provider.
+
+  ## Who maintains it
+
+  According to [interVASP](https://intervasp.org/), IVMS 101 was developed by the Joint Working Group on interVASP Messaging Standards, formed in December 2019 with the support of the Chamber of Digital Commerce, Global Digital Finance and the International Digital Asset Exchange Association, and released in May 2020. In April 2023, GBBC Digital Finance (GDF), OpenVASP and VASPnet joined forces to maintain and develop it, and the interVASP Standards Working Group (ISWG) now carries that work. The standard's version table gives IVMS 101.2023 as published in August 2023, and interVASP says the ISWG released an update on 4 June 2024.
+
+  The FATF's [12-month review of the virtual asset standards](https://www.fatf-gafi.org/media/fatf/documents/recommendations/12-Month-Review-Revised-FATF-Standards-Virtual-Assets-VASPS.pdf) (June 2020) noted in paragraph 41 that an industry initiative had developed "a first messaging standard which sets a common universal language for the communication of the required originator and beneficiary information between VASPs". In paragraph 65 it called the development of global messaging standards "a first step in ensuring that systems can be interoperable". The EBA's Travel Rule guidelines for the EU do not name a data standard.
+
+  ## Common confusions
+
+  IVMS 101 is not a protocol. Two providers can both "support IVMS 101" and still be unable to exchange data, because they sit on different networks or use different transport and security. That gap is what [Travel Rule interoperability](/glossary/travel-rule-interoperability/) is about. Version also matters: a FAQ published by the [OpenVASP Association](https://www.openvasp.org/trisa-openvasp-faq) in October 2026 notes that many implementations still use IVMS101.2020 variants, even though IVMS101.2023 was released in 2023.
+
+  ## What to check when you compare providers
+
+  Ask which IVMS 101 version the tool sends and accepts, how it maps your customer records into the structured fields, and what it does with names and addresses that do not fit. Our [Travel Rule ranking](/providers/travel-rule/) compares the reviewed providers.
+buyer_questions:
+  - Which IVMS 101 version do you send and accept, and do you convert between IVMS101.2020 and IVMS 101.2023 payloads?
+  - How do you map our customer records, including legal entities, into IVMS 101 name and address fields?
+  - How do you handle names in non-Latin scripts, and do you send the local-script name as well as the transliteration?
+  - Do you validate incoming IVMS 101 payloads and flag missing or malformed fields before the transfer is released?
+  - Which transport protocols carry your IVMS 101 messages, given that the standard itself does not cover transmission?
+faq:
+  - q: What does IVMS stand for?
+    a: interVASP Messaging Standard. IVMS 101 is the data model for the originator and beneficiary information that virtual asset service providers exchange under the Travel Rule.
+  - q: Is IVMS 101 a Travel Rule protocol?
+    a: No. It defines the data fields and their format. Its scope section says network protocols, information security and identification of VASPs are outside it, so a separate messaging protocol carries the data.
+  - q: What is the latest version of IVMS 101?
+    a: interVASP presents IVMS 101.2023 as the current data model standard and says the interVASP Standards Working Group released an update on 4 June 2024.
+sources:
+  - title: interVASP Messaging Standard (IVMS 101)
+    publisher: interVASP
+    url: https://intervasp.org/
+    accessed: 2026-10
+  - title: IVMS 101.2023 interVASP data model standard
+    publisher: interVASP
+    url: https://cdn.prod.website-files.com/648841abc97f28489cc3f2ce/6656e9c60c3029989dcd7431_IVMS101.2023%20interVASP%20data%20model%20standard.pdf
+    accessed: 2026-10
+  - title: 12 Month Review of Revised FATF Standards on Virtual Assets and Virtual Asset Service Providers (June 2020)
+    publisher: FATF
+    url: https://www.fatf-gafi.org/media/fatf/documents/recommendations/12-Month-Review-Revised-FATF-Standards-Virtual-Assets-VASPS.pdf
+    accessed: 2026-10
+  - title: "TRISA + OpenVASP: Frequently Asked Questions for TRISA Network Members (October 2026)"
+    publisher: OpenVASP Association
+    url: https://www.openvasp.org/trisa-openvasp-faq
+    accessed: 2026-10
+  - title: Guidelines on information requirements in relation to transfers of funds and certain crypto-assets transfers under Regulation (EU) 2023/1113 (EBA/GL/2024/11)
+    publisher: European Banking Authority
+    url: https://www.eba.europa.eu/sites/default/files/2024-07/6de6e9b9-0ed9-49cd-985d-c0834b5b4356/Travel%20Rule%20Guidelines.pdf
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29
