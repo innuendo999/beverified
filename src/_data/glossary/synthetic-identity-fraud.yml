@@ -24,7 +24,7 @@ body: |
 
   ## What to check when you compare providers
 
-  A synthetic identity is not a stolen one, so there may be no stolen document for a document check to catch. Ask how the provider combines [database verification](/glossary/database-verification/) against independent sources, document and selfie checks, and signals such as how many applications share a phone number, device or address. In the US, ask whether it can run eCBSV checks. Our article on [identity theft cases](/publications/identity-theft-cases/) gives real examples, and the [identity verification ranking](/providers/identity-verification/) compares the providers we review.
+  A synthetic identity is not a stolen one, so there may be no stolen document for a document check to catch. Ask how the provider combines [database verification](/glossary/database-verification/) against independent sources, document and selfie checks, and signals such as how many applications share a phone number, device or address. In the US, ask whether it can run eCBSV checks. Our guide to [synthetic identity and deepfake fraud](/guide/synthetic-identity-and-deepfake-fraud/) maps each attack to the control that stops it. Our article on [identity theft cases](/publications/identity-theft-cases/) gives real examples, and the [identity verification ranking](/providers/identity-verification/) compares the providers we review.
 buyer_questions:
   - Which independent data sources do you check identity data against in each country we operate in?
   - How do you detect identities that share a phone number, device, email or address across many applications?
