@@ -27,7 +27,7 @@ body: |
 
   ## What to check when you compare providers
 
-  A chip read proves the document. It says nothing about who holds the phone, so it still needs [face matching](/glossary/face-matching/) against the chip photo and [liveness detection](/glossary/liveness-detection/). NFC also needs a phone with NFC hardware and a native app or SDK, so plan a fallback for users without one. When you compare vendors, ask whether they validate the full certificate chain to the country CSCA or only check that the signature is internally consistent, which countries they can fully chain, and whether they support PACE. Our [identity verification ranking](/providers/identity-verification/) shows which reviewed providers document NFC chip reading.
+  A chip read proves the document. It says nothing about who holds the phone, so it still needs [face matching](/glossary/face-matching/) against the chip photo and [liveness detection](/glossary/liveness-detection/). NFC also needs a phone with NFC hardware, so plan a fallback for users without one. When you compare vendors, ask whether they validate the full certificate chain to the country CSCA or only check that the signature is internally consistent, which countries they can fully chain, and whether they support PACE. Our [identity verification ranking](/providers/identity-verification/) shows which reviewed providers document NFC chip reading.
 buyer_questions:
   - Do you validate the chip signature against the issuing country's CSCA certificate and check revocation lists, and for which countries can you complete that chain?
   - Do you run active authentication or chip authentication when the document supports it, and how do you report a document that supports neither?

@@ -18,13 +18,13 @@ body: |
   3. understanding the nature and purpose of customer relationships to develop a customer risk profile;
   4. ongoing monitoring for reporting suspicious transactions and, on a risk basis, maintaining and updating customer information.
 
-  The first element was already covered by the customer identification program rules. The rule added the second as a new requirement and wrote the third and fourth into the AML program rules, for example at 31 CFR 1020.210(a)(2)(v) for banks.
+  FinCEN noted that the first element was already an AML program requirement and that the third and fourth were already implicitly required. The rule made the second a new requirement and amended the AML program rules to make the third and fourth explicit, for example at 31 CFR 1020.210(a)(2)(v) for banks.
 
   ## Who counts as a beneficial owner
 
   [31 CFR 1010.230](https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-B/section-1010.230) has two prongs. Under the ownership prong, a beneficial owner is each individual who, directly or indirectly, owns 25 percent or more of the equity interests of a legal entity customer. Under the control prong, it is a single individual with significant responsibility to control, manage or direct the customer, such as an executive officer or senior manager. So a firm always identifies one control person and up to four owners. Where a trust holds 25 percent or more, the trustee counts as the owner.
 
-  A legal entity customer is a corporation, limited liability company or other entity created by filing a public document, a general partnership, or a similar foreign entity, that opens an account. The rule excludes many regulated and listed entities, and pooled investment vehicles and certain nonprofits are subject only to the control prong.
+  A legal entity customer is a corporation, limited liability company or other entity created by filing a public document, a general partnership, or a similar foreign entity, that opens an account. The rule excludes many regulated entities, such as regulated financial institutions and certain SEC-registered entities, and pooled investment vehicles and certain nonprofits are subject only to the control prong.
 
   ## Recent changes and common confusions
 
@@ -33,7 +33,7 @@ body: |
   The CDD Rule is often confused with Corporate Transparency Act reporting. The CDD Rule puts the duty on financial institutions to collect beneficial ownership from their customers. The Corporate Transparency Act made companies report to FinCEN, and FinCEN's [final rule](https://www.fincen.gov/BOI), effective 14 August 2026, makes US companies and US persons permanently exempt from that reporting. US banks therefore rely on their own collection under the CDD Rule. Compare this with the EU and UK tests on our [ultimate beneficial owner](/glossary/ultimate-beneficial-owner/) page, and see our [KYB ranking](/providers/kyb/) for tools that support the checks.
 buyer_questions:
   - Does your KYB flow capture both prongs of 31 CFR 1010.230, every 25 percent equity owner and one control person?
-  - Can we record the customer's beneficial ownership certification and the verification evidence for each person in one audit trail?
+  - Can we keep what the customer declared about its owners and the verification evidence for each person in one audit trail?
   - How do you calculate indirect ownership through intermediate entities to find 25 percent owners?
   - Can we switch beneficial ownership re-verification to event-based triggers under FinCEN's February 2026 exceptive relief?
   - Do you apply the rule's exclusions, such as control prong only for pooled investment vehicles, automatically?
