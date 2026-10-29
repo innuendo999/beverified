@@ -26,7 +26,7 @@ body: |
 
   The global baseline is the [FATF Recommendations](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html), 40 numbered standards that national laws build on. Recommendation 3 asks countries to criminalise money laundering. The preventive measures for firms sit in section D. Recommendation 10 covers customer due diligence. Recommendation 11 says financial institutions should keep transaction records for at least five years. Under Recommendation 20, a financial institution that suspects funds are the proceeds of crime should be required by law to report that promptly to the FIU.
 
-  In the EU, Directive 2015/849 sets the current rules through national laws. They will be replaced by a single rulebook in the [AML Regulation](https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng), Regulation (EU) 2024/1624 of 31 May 2024, which applies directly in every member state. The Dutch central bank states that the new framework "will become applicable on 10 July 2027". A new EU authority, [AMLA](/glossary/amla/), will supervise parts of it.
+  In the EU, Directive 2015/849 sets the current rules through national laws. They will be replaced by a single rulebook in the [AML Regulation](https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng), Regulation (EU) 2024/1624 of 31 May 2024, which applies directly in every member state. The Dutch central bank states that the new framework "will become applicable on 10 July 2027". The same package created a new EU authority, [AMLA](/glossary/amla/).
 
   In the UK the main preventive rules are the [Money Laundering Regulations 2017](https://www.legislation.gov.uk/uksi/2017/692/regulation/28) (S.I. 2017/692). Regulation 18 requires a firm-wide risk assessment, regulations 27 and 28 set out customer due diligence, and regulation 33 covers enhanced due diligence.
 
@@ -47,7 +47,7 @@ faq:
   - q: What is the difference between AML and KYC?
     a: KYC (Know Your Customer) is one part of AML. It covers identifying and verifying customers. AML is the wider program, which also includes risk assessment, screening, transaction monitoring, record keeping and reporting suspicious activity.
   - q: Who has to comply with AML rules?
-    a: Banks and other financial institutions, plus the businesses that national law lists as obliged entities. Depending on the country, that can include payment and e-money firms, crypto-asset service providers, accountants, lawyers, estate agents and casinos.
+    a: The businesses that the law lists as obliged entities. In the EU, Article 2(1) of Directive 2015/849 names credit and financial institutions, auditors, accountants and tax advisors, notaries and other independent legal professionals, trust or company service providers, estate agents, gambling providers and certain crypto businesses, among others.
 sources:
   - title: The FATF Recommendations
     publisher: Financial Action Task Force
@@ -64,6 +64,10 @@ sources:
   - title: European AML/CFT framework
     publisher: De Nederlandsche Bank
     url: https://www.dnb.nl/en/sector-information/open-book-supervision/laws-and-eu-regulations/european-amlcft-framework/
+    accessed: 2026-10
+  - title: Anti-money laundering and countering the financing of terrorism at EU level
+    publisher: European Commission
+    url: https://finance.ec.europa.eu/financial-crime/anti-money-laundering-and-countering-financing-terrorism-eu-level_en
     accessed: 2026-10
   - title: "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017, regulation 28"
     publisher: legislation.gov.uk
