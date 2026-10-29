@@ -17,7 +17,7 @@ body: |
 
   ## What the rules say
 
-  In the EU, Article 13(1)(b) of the Fourth AML Directive, [Directive (EU) 2015/849](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015L0849-20210630), requires firms to identify the beneficial owner, take reasonable measures to verify that person's identity and, for legal persons, take reasonable measures to understand the ownership and control structure. Article 30(8) says firms must not rely exclusively on the central beneficial ownership register to meet those duties. From 10 July 2027 the [AML Regulation](https://www.springlex.eu/en/packages/aml/amlr-regulation/article-22/) takes over. Its Article 22(1)(b) lists what to collect for a legal entity, including legal form and name, registered office, principal place of business, country of creation, names of legal representatives, and where available the registration number, tax identification number and Legal Entity Identifier.
+  In the EU, Article 13(1)(b) of the Fourth AML Directive, [Directive (EU) 2015/849](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015L0849-20210630), requires firms to identify the beneficial owner, take reasonable measures to verify that person's identity and, for legal persons, take reasonable measures to understand the ownership and control structure. Article 30(8) says firms must not rely exclusively on the central beneficial ownership register to meet those duties. From 10 July 2027 the [AML Regulation](https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng) takes over. Its Article 22(1)(b) lists what to collect for a legal entity, including legal form and name, registered office, principal place of business, country of creation, names of legal representatives, and where available the registration number, tax identification number and Legal Entity Identifier.
 
   In the UK, [regulation 28(3)](https://www.legislation.gov.uk/uksi/2017/692/regulation/28) of the Money Laundering Regulations 2017 requires firms to obtain and verify a body corporate's name, company number and registered office address, and to take reasonable measures to determine and verify the law it is subject to, its constitution, the full names of its board and its senior persons. Regulation 28(9) adds that relying solely on information filed with the registrar is not enough.
 
@@ -53,13 +53,9 @@ sources:
     publisher: eCFR
     url: https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-B/section-1010.230
     accessed: 2026-10
-  - title: Regulation (EU) 2024/1624 (AMLR), Official Journal text
+  - title: "Regulation (EU) 2024/1624 (AMLR), Article 22"
     publisher: EUR-Lex
     url: https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng
-    accessed: 2026-10
-  - title: "AMLR Article 22: Identification and verification of the identity of customers and beneficial owners (text of OJ L, 2024/1624)"
-    publisher: Springlex
-    url: https://www.springlex.eu/en/packages/aml/amlr-regulation/article-22/
     accessed: 2026-10
   - title: "Final Report: Draft RTS under Article 28(1) of Regulation (EU) 2024/1624"
     publisher: Anti-Money Laundering Authority (AMLA)

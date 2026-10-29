@@ -15,7 +15,7 @@ body: |
 
   ## What the rules say
 
-  **EU.** Article 13(1)(d) of [Directive (EU) 2015/849](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015L0849-20210630) requires ongoing monitoring of the business relationship, including scrutiny of transactions, and Article 14(5) applies due diligence to existing customers at appropriate times on a risk-sensitive basis. From 10 July 2027, [Article 26](https://www.springlex.eu/en/packages/aml/amlr-regulation/article-26/) of the AML Regulation (EU) 2024/1624 sets maximum update intervals: customer information must be kept up to date, and the interval "shall not in any case exceed" 1 year for higher-risk customers under enhanced due diligence and 5 years for the rest. Article 26(3) adds a review when a customer's relevant circumstances change. On the company side, Article 63(2) requires legal entities to report changes in beneficial ownership to the central register within 28 calendar days and to verify their information at least annually.
+  **EU.** Article 13(1)(d) of [Directive (EU) 2015/849](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015L0849-20210630) requires ongoing monitoring of the business relationship, including scrutiny of transactions, and Article 14(5) applies due diligence to existing customers at appropriate times on a risk-sensitive basis. From 10 July 2027, [Article 26](https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng) of the AML Regulation (EU) 2024/1624 sets maximum update intervals: customer information must be kept up to date, and the interval "shall not in any case exceed" 1 year for higher-risk customers under enhanced due diligence and 5 years for the rest. Article 26(3) adds a review when a customer's relevant circumstances change. On the company side, Article 63(2) requires legal entities to report changes in beneficial ownership to the central register within 28 calendar days and to verify their information at least annually.
 
   **UK.** [Regulation 28(11)](https://www.legislation.gov.uk/uksi/2017/692/regulation/28) of the Money Laundering Regulations 2017 requires ongoing monitoring of a business relationship, including scrutiny of transactions and reviews of existing records to keep documents and information up to date.
 
@@ -55,17 +55,9 @@ sources:
     publisher: FinCEN
     url: https://www.fincen.gov/system/files/2026-02/FinCEN-Order-CCDExceptiveRelief.pdf
     accessed: 2026-10
-  - title: Regulation (EU) 2024/1624 (AMLR), Official Journal text
+  - title: "Regulation (EU) 2024/1624 (AMLR), Articles 26, 63"
     publisher: EUR-Lex
     url: https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng
-    accessed: 2026-10
-  - title: "AMLR Article 26: Ongoing monitoring of the business relationship and monitoring of transactions performed by customers (text of OJ L, 2024/1624)"
-    publisher: Springlex
-    url: https://www.springlex.eu/en/packages/aml/amlr-regulation/article-26/
-    accessed: 2026-10
-  - title: "AMLR Article 63 (text of OJ L, 2024/1624)"
-    publisher: Springlex
-    url: https://www.springlex.eu/en/packages/aml/amlr-regulation/article-63/
     accessed: 2026-10
 author: andrii-klymenko
 published: 2026-10-29
