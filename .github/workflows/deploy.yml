@@ -4,6 +4,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      indexnow_all:
+        description: "Submit every sitemap URL to IndexNow (not only new or changed ones)"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -24,11 +29,22 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      # Live sitemap before this deploy, to find new or changed URLs for IndexNow
+      - run: curl -sf https://beverified.org/sitemap.xml -o previous-sitemap.xml || true
       - run: npm run build
       - run: npm run check:strict
       - run: pip install --quiet beautifulsoup4 && npm run check:html
       - run: node scripts/checks/articles.mjs && node scripts/checks/provider.mjs && node scripts/checks/glossary.mjs
       - run: npm run gaps
+      - name: List URLs for IndexNow
+        run: |
+          if [ "${{ inputs.indexnow_all }}" = "true" ]; then node scripts/indexnow.mjs --all _site/sitemap.xml > indexnow-urls.txt
+          else node scripts/indexnow.mjs --diff previous-sitemap.xml _site/sitemap.xml > indexnow-urls.txt; fi
+          echo "$(wc -l < indexnow-urls.txt) URL(s) for IndexNow"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: indexnow-urls
+          path: indexnow-urls.txt
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -43,3 +59,17 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # After the new pages and the key file are live, tell IndexNow engines what changed.
+  indexnow:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/download-artifact@v4
+        with:
+          name: indexnow-urls
+      - run: node scripts/indexnow.mjs --submit indexnow-urls.txt
