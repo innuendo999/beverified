@@ -15,6 +15,8 @@ const articleFiles = SECTIONS.flatMap((s) => {
   const dir = path.join(root, "src", s);
   return fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => f.endsWith(".md")).map((f) => path.join(dir, f)) : [];
 });
+const glossaryUrls = fs.existsSync(path.join(root, "src/_data/glossary"))
+  ? fs.readdirSync(path.join(root, "src/_data/glossary")).filter((f) => f.endsWith(".yml")).map((f) => `/glossary/${f.replace(/\.yml$/, "")}/`) : [];
 const plannedArticles = fs.existsSync(path.join(root, "src/_data/articlePlan.yml"))
   ? yaml.load(fs.readFileSync(path.join(root, "src/_data/articlePlan.yml"), "utf8")) : [];
 const urls = new Set([
@@ -23,6 +25,7 @@ const urls = new Set([
   "/authors/andrii-klymenko/",
   ...[...providers].map((p) => `/providers/${p}/`),
   ...catUrls,
+  "/glossary/", ...glossaryUrls,
   ...articleFiles.map((f) => `/${path.basename(path.dirname(f))}/${path.basename(f, ".md")}/`),
   ...plannedArticles,
 ]);

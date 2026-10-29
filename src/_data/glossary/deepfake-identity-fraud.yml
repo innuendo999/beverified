@@ -22,7 +22,7 @@ body: |
 
   ## What to check when you compare providers
 
-  Ask the provider to separate three things: detection of deepfakes shown to the camera, detection of injected video, and detection of altered or generated ID documents. Each needs its own test evidence. Ask which deepfake tools and attack types they test against and how often that set is updated, since the tools change quickly. Ask for false negative and false rejection rates, and how flagged cases reach a human reviewer. Our [liveness detection ranking](/providers/liveness-detection/) compares the reviewed providers on these checks.
+  Ask the provider to separate three things: detection of deepfakes shown to the camera, detection of injected video, and detection of altered or generated ID documents. Each needs its own test evidence. Ask which deepfake tools and attack types they test against and how often that set is updated, since the tools change quickly. Ask for false negative and false rejection rates, and how flagged cases reach a human reviewer. Our guide to [synthetic identity and deepfake fraud](/guide/synthetic-identity-and-deepfake-fraud/) maps each attack to the control that stops it. Our [liveness detection ranking](/providers/liveness-detection/) compares the reviewed providers on these checks.
 buyer_questions:
   - Do you test deepfakes shown to the camera, injected deepfake video and AI-generated ID documents separately, and can we see the results for each?
   - Which deepfake tools and attack types are in your test set, and how often do you update it?
