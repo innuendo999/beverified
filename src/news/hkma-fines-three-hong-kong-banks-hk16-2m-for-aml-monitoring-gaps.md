@@ -4,6 +4,8 @@ seoTitle: "HKMA Fines Three Banks HK$16.2M Over AML Gaps | BeVerified"
 seoDescription: "In July 2025 the HKMA fined Indian Overseas Bank HK and two Bank of Communications entities HK$16.2M for transaction monitoring failures under the AMLO."
 lede: "On 22 July 2025 the Hong Kong Monetary Authority fined three banks a combined HK$16.2 million for failing to monitor customer transactions properly. Two of them had whole transaction types that never reached their monitoring system."
 section: news
+cover_label: "HKMA enforcement"
+cover_motif: gavel
 published: 2025-08-18
 updated: 2026-10-18
 author: andrii-klymenko

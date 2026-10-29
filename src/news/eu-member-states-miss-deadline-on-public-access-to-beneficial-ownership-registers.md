@@ -4,6 +4,8 @@ seoTitle: "EU States Miss Beneficial Ownership Access Deadline | BeVerified"
 seoDescription: "The Commission opened infringement cases against 11 EU states in 2025 and 18 in 2026 over AMLD6 beneficial ownership register access. What the rules require."
 lede: "In September 2025 the European Commission sent formal notices to 11 member states that had missed the 10 July 2025 deadline for new beneficial ownership access rules. A year later it did the same to 18 states over the next AMLD6 deadline, 10 July 2026."
 section: news
+cover_label: "Ownership registers"
+cover_motif: org
 published: 2025-09-29
 updated: 2026-10-18
 author: andrii-klymenko

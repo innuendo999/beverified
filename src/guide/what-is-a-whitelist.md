@@ -4,6 +4,8 @@ seoTitle: "What Is a Whitelist? Meaning and Examples | BeVerified"
 seoDescription: "A whitelist (now often called an allowlist) is a list of approved items that get through while everything else is blocked. Meaning, examples and banking use."
 lede: "A whitelist is a list of things you have approved in advance: email senders, IP addresses, apps, payees or wallet addresses. Anything on it gets through, and anything not on it is blocked or checked first. Many organisations now call it an allowlist."
 section: guide
+cover_label: "Allowlists explained"
+cover_motif: list
 published: 2025-06-19
 updated: 2026-10-18
 author: andrii-klymenko

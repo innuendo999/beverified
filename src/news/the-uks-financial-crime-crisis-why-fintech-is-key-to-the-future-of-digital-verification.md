@@ -4,6 +4,8 @@ seoTitle: "UK Fraud and the Digital Company ID Plan | BeVerified"
 seoDescription: "In March 2025 CFIT proposed a Digital Company ID to cut UK fraud. Latest UK Finance, ONS and Home Office figures, and where the plan stands in 2026."
 lede: "In March 2025 the Centre for Finance, Innovation and Technology (CFIT) published a plan for a reusable Digital Company ID that would let UK businesses prove who they are online. Fraud has kept rising since: UK Finance counted £1.28 billion of payment fraud losses in 2025."
 section: news
+cover_label: "Digital company ID"
+cover_motif: idcard
 published: 2025-03-05
 updated: 2026-10-18
 author: andrii-klymenko

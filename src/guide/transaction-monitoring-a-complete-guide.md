@@ -4,6 +4,8 @@ seoTitle: "Transaction Monitoring: A Complete Guide for 2026 | BeVerified"
 seoDescription: "What transaction monitoring is, how AML monitoring systems work, rule-based vs machine-learning detection, synthetic testing and the US, EU and UK rules in 2026."
 lede: "Transaction monitoring is the ongoing review of customer transactions to spot activity that does not fit what a firm knows about the customer and may need reporting as suspicious. It is a core AML duty in every major framework, and in 2026 regulators are focusing on whether monitoring is effective, not just whether alerts are generated."
 section: guide
+cover_label: "Transaction monitoring"
+cover_motif: flow
 published: 2025-04-04
 updated: 2026-10-18
 author: andrii-klymenko

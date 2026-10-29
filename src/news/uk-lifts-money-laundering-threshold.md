@@ -4,6 +4,8 @@ seoTitle: "UK Raises DAML Threshold to £3,000 | BeVerified"
 seoDescription: "From 31 July 2025, UK firms can operate accounts and pay away funds under £3,000 without a DAML request. What changed, what did not, and the status in 2026."
 lede: "Since 31 July 2025, UK banks, e-money and payment firms can process suspect transactions below £3,000 without asking the NCA for a defence against money laundering. The old limit was £1,000, and the duty to report suspicion has not changed."
 section: news
+cover_label: "New DAML threshold"
+cover_motif: threshold
 published: 2025-07-22
 updated: 2026-10-18
 author: andrii-klymenko

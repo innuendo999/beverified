@@ -4,6 +4,8 @@ seoTitle: "AML and KYC Data Spend Hits $2.9B in 2025 | BeVerified"
 seoDescription: "Burton-Taylor put 2025 spending on AML and KYC data and services at $2.9 billion, up 12.3%. Its 2026 report projects $3.4 billion. What drives it."
 lede: "Burton-Taylor projected that spending on AML and KYC data and services would reach a record $2.9 billion in 2025, up 12.3% on 2024. Its July 2026 report raises that to $3.4 billion for 2026, an 18.2% jump."
 section: news
+cover_label: "AML data market"
+cover_motif: bars
 published: 2025-10-08
 updated: 2026-10-18
 author: andrii-klymenko

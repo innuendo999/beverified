@@ -4,6 +4,8 @@ seoTitle: "How to Conduct OFAC Screening: Step by Step | BeVerified"
 seoDescription: "OFAC screening process, requirements and best practices for 2026: what to screen, when, how to clear alerts, and the 10-business-day reporting and 10-year records rules."
 lede: "OFAC screening means checking customers, counterparties and payments against the US Treasury's sanctions lists before you deal with them, then blocking or rejecting anything that truly matches. This guide walks through the process step by step, with the reporting deadlines and record rules in force in October 2026."
 section: publications
+cover_label: "OFAC screening"
+cover_motif: list
 published: 2025-04-23
 updated: 2026-10-18
 author: andrii-klymenko

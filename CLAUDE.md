@@ -25,7 +25,7 @@ All pages are generated from templates + data. There is no hand-written page HTM
 | Author pages `/authors/<slug>/` | `src/authors/authors.njk`; one page per `authors.yml` entry with `url`; review list = providers with that `author` |
 | 404 | `src/404.njk` (popular reviews = top 4 by score) |
 | Articles (guides, news, research) at old URLs `/guide/`, `/news/`, `/publications/` | `src/<section>/<slug>.md`, spec `docs/article-spec.md`, validate `node scripts/checks/articles.mjs`; layout `src/_layouts/article.njk`. Related posts, "Related reading" on reviews and "Guides and news" on rankings come from front matter `provider_slugs`, `ranking_keys`, `topics` |
-| Article cover images (1600x900, og:image, schema `image`, post cards) | `npm run covers` renders missing covers into `src/assets/img/covers/<slug>.png` (`--force` re-renders all); picked up automatically by `src/_lib/article-data.js` |
+| Article cover images (1600x900, og:image, schema `image`, post cards) | front matter `cover_label` / `cover_motif` / `cover_palette` (see `docs/article-spec.md`), motifs in `scripts/cover-motifs.cjs`; `npm run covers` renders missing covers into `src/assets/img/covers/<slug>.png` (`--force` re-renders all); picked up automatically by `src/_lib/article-data.js` |
 | "Follow BeVerified on Google" (preferred source) block at the end of articles | `src/_layouts/article.njk` (card + `btn--secondary` with Google G icon, styles `.pref-source` in v3.css), link in `site.json` → `v3.preferredSourceHref` (deeplink, no Google script) |
 | Blog index `/blog/` and archives `/category/<section>/` | `src/blog.njk` + `src/_data/blogArchives.js` |
 | Legacy URLs `/author/beverified/` (refresh to author page), `/contact-us/` | `src/legacy/` |
