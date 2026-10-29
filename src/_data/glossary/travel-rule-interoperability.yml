@@ -1,0 +1,81 @@
+term: Travel Rule interoperability
+abbr: null
+also_known_as: [Protocol interoperability, Cross-network Travel Rule messaging]
+cluster: crypto
+definition: Travel Rule interoperability is the ability of providers on different Travel Rule protocols or networks to exchange originator and beneficiary data with each other. Without it, a provider can only send the required information to counterparties that use the same system.
+seo_description: "Travel Rule interoperability lets providers on different protocols exchange Travel Rule data. The main protocols, what FATF and the EBA say, what to ask."
+capability: null
+rankings: [travel-rule]
+related: [travel-rule, ivms101, sunrise-issue, virtual-asset-service-provider, transfer-of-funds-regulation]
+provider_mentions: []
+body: |
+  ## Why interoperability is a problem
+
+  A blockchain transaction has no field for a customer's name, so [Travel Rule](/glossary/travel-rule/) data travels over a separate messaging system. Several such systems exist, run by different groups with different rules for joining, finding counterparties and securing messages. If the sending and receiving providers are on different systems that cannot talk to each other, the data does not arrive.
+
+  The FATF flagged this early. Paragraph 65 of its [12-month review of the virtual asset standards](https://www.fatf-gafi.org/media/fatf/documents/recommendations/12-Month-Review-Revised-FATF-Standards-Virtual-Assets-VASPS.pdf) (June 2020) says that "for implementation of the travel rule to progress smoothly globally, different solutions need to be inter-operable, with adequate controls in place to address data sharing, storage and security", and calls global messaging standards "a first step".
+
+  The EBA's [Travel Rule guidelines](https://www.eba.europa.eu/sites/default/files/2024-07/6de6e9b9-0ed9-49cd-985d-c0834b5b4356/Travel%20Rule%20Guidelines.pdf) (EBA/GL/2024/11) describe the same situation for the EU. Their background section says open-network, closed-network and protocol-agnostic systems exist, that not all are interoperable, and that CASPs "might have to use multiple systems to be able to transact with their counterparties", which can create data integration issues. Paragraph 26 asks CASPs to assess a system's ability to communicate with the counterparty's systems, the reachability of the protocol, how it detects transfers with missing or incomplete information, and its data integration, security and reliability.
+
+  ## The main protocols, in their own words
+
+  - **Travel Rule Protocol.** The [OpenVASP Association](https://www.openvasp.org/trp), a non-profit in Zug, Switzerland, describes it as "a mature, complete open standard" and a "completely royalty-free specification", with bilateral exchange of encrypted data between VASPs and compatibility with IVMS101.
+  - **TRISA** (Travel Rule Information Sharing Alliance). Its site describes an open-source, peer-to-peer protocol that uses a certificate authority and a Global VASP Directory to verify VASPs. An OpenVASP FAQ says stewardship of TRISA moved to OpenVASP effective 1 October 2026, and that TRISA and the Travel Rule Protocol set up interoperability in 2023.
+  - **TRUST.** Its page on coinbase.com says information is sent directly from one TRUST member to another through end-to-end encrypted channels, is never stored centrally, and that members must meet anti-money laundering, security and privacy requirements before joining.
+  - **Global Travel Rule (GTR).** Its site names Infozone Technologies Pte. Ltd. in Singapore as the operator and lists the exchanges in its alliance.
+
+  These are examples, not a full list, and coverage changes quickly.
+
+  ## How interoperability is achieved
+
+  A shared data format is the starting point. According to OpenVASP, [IVMS 101](/glossary/ivms101/) is the common data standard across TRISA and Travel Rule Protocol messaging. But IVMS 101 deliberately leaves out transport, security and VASP identification, so a common format alone does not connect two networks. Interoperability needs agreement on those layers too, either through a direct link between two protocols or through software that speaks several protocols and translates between them. Where no route exists, the provider is back to the same position as with a counterparty in a country without the rule (the [sunrise issue](/glossary/sunrise-issue/)): it has to decide by policy what to do with the transfer.
+
+  ## What to check when you compare providers
+
+  Ask which protocols the tool can send to and receive from natively, which it reaches through a bridge, and how it finds out which protocol a counterparty uses. Ask what share of your actual counterparties it can reach today. Our [Travel Rule ranking](/providers/travel-rule/) compares the reviewed providers.
+buyer_questions:
+  - Which Travel Rule protocols can you send to and receive from natively, and which only through a bridge or partner?
+  - How do you discover which protocol a counterparty uses for a given wallet address?
+  - Can you show how many of our current counterparties you can reach today, based on our own transfer history?
+  - When a counterparty is on a protocol you cannot reach, what happens to the transfer and what evidence do you keep?
+  - Which IVMS 101 version does each connected protocol use, and do you translate between versions?
+  - Do any of your connections send data through a central hub, or is it always exchanged directly between the two providers?
+faq:
+  - q: What are the main Travel Rule protocols?
+    a: Widely discussed ones include the Travel Rule Protocol from the OpenVASP Association, TRISA, TRUST and Global Travel Rule (GTR). Each has its own membership rules, discovery and security model, which is why interoperability between them matters.
+  - q: Does using IVMS 101 make two Travel Rule solutions interoperable?
+    a: Not on its own. IVMS 101 defines the data fields. Its scope excludes network protocols, information security and identification of VASPs, so the two systems still need a way to find each other and exchange messages securely.
+  - q: Does EU law require a specific Travel Rule protocol?
+    a: No. The EBA guidelines ask CASPs to assess any messaging system, including its ability to communicate with counterparties' systems and the reachability of the protocol, but they do not name a protocol.
+sources:
+  - title: 12 Month Review of Revised FATF Standards on Virtual Assets and Virtual Asset Service Providers (June 2020)
+    publisher: FATF
+    url: https://www.fatf-gafi.org/media/fatf/documents/recommendations/12-Month-Review-Revised-FATF-Standards-Virtual-Assets-VASPS.pdf
+    accessed: 2026-10
+  - title: Guidelines on information requirements in relation to transfers of funds and certain crypto-assets transfers under Regulation (EU) 2023/1113 (EBA/GL/2024/11)
+    publisher: European Banking Authority
+    url: https://www.eba.europa.eu/sites/default/files/2024-07/6de6e9b9-0ed9-49cd-985d-c0834b5b4356/Travel%20Rule%20Guidelines.pdf
+    accessed: 2026-10
+  - title: Travel Rule Protocol
+    publisher: OpenVASP Association
+    url: https://www.openvasp.org/trp
+    accessed: 2026-10
+  - title: "TRISA + OpenVASP: Frequently Asked Questions for TRISA Network Members (October 2026)"
+    publisher: OpenVASP Association
+    url: https://www.openvasp.org/trisa-openvasp-faq
+    accessed: 2026-10
+  - title: Travel Rule Information Sharing Alliance (TRISA)
+    publisher: TRISA
+    url: https://trisa.io/
+    accessed: 2026-10
+  - title: TRUST and the Travel Rule
+    publisher: Coinbase
+    url: https://www.coinbase.com/travelrule
+    accessed: 2026-10
+  - title: Global Travel Rule
+    publisher: Global Travel Rule (Infozone Technologies Pte. Ltd.)
+    url: https://www.globaltravelrule.com/
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

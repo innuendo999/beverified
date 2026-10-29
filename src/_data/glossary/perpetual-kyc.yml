@@ -1,0 +1,67 @@
+term: Perpetual KYC
+abbr: pKYC
+also_known_as: [Event-driven KYC, Event-driven review, Continuous KYC]
+cluster: aml
+definition: >-
+  Perpetual KYC (pKYC) is a way of running ongoing customer due diligence in which a customer's profile and risk rating are updated when relevant new information arrives, such as a sanctions hit or an ownership change, instead of only at fixed review dates.
+seo_description: "Perpetual KYC updates a customer's risk profile when something changes, not only on a review date. What the rules say and what to ask vendors."
+rankings: [aml, aml/banks]
+related: [customer-due-diligence, ongoing-business-monitoring, transaction-monitoring, risk-based-approach, know-your-customer, eu-aml-regulation]
+body: |
+  ## How perpetual KYC differs from periodic review
+
+  The traditional model reviews each customer on a calendar, for example every year for high-risk customers and less often for the rest. Between reviews, the file can go stale. Perpetual KYC watches for events and re-assesses the customer when one fires. Typical triggers include a new screening match, a change in company ownership or directors, an expired identity document, or activity that no longer fits the customer's profile.
+
+  The term comes from industry, not from law. No regulation requires "perpetual KYC" by name. In practice it sits on top of the review calendar rather than replacing it. Our [guide to perpetual KYC](/guide/perpetual-kyc/) covers the triggers, the data sources and how to build a program step by step.
+
+  ## What the rules say
+
+  The legal duty behind pKYC is ongoing due diligence. [FATF Recommendation 10](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html) asks firms to scrutinise transactions throughout a relationship to make sure they match what the firm knows about the customer.
+
+  In the EU, Article 14(5) of [Directive (EU) 2015/849](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015L0849-20210630) requires customer due diligence for existing customers "at appropriate times" on a risk-sensitive basis, and when their relevant circumstances change. From 10 July 2027, Article 26(2) of the AML Regulation sets maximum periods for updating customer information. The Anti-Money Laundering Authority's draft standards refer to "maximum periods of 1 and 5 years". So even an event-driven program keeps a calendar backstop.
+
+  In the UK, [regulation 27(8) of the Money Laundering Regulations 2017](https://www.legislation.gov.uk/uksi/2017/692/regulation/27) requires CDD on existing customers at appropriate times on a risk-based approach and when the firm learns that their circumstances relevant to its risk assessment have changed. Regulation 28(11) adds reviews of existing records to keep them up to date.
+
+  ## What to check when you compare providers
+
+  pKYC depends on data feeds and on a risk model that reacts to them. Ask which events the product can detect, how fast an event reaches the customer record, and what happens next. Can it re-score automatically, open a review case, or only send an alert? Check that each re-assessment is logged. Our [AML software ranking for banks](/providers/aml/banks/) compares reviewed providers.
+buyer_questions:
+  - Which events can your product detect for an existing customer (screening hits, registry changes, document expiry, unusual activity), and from which data sources?
+  - How quickly does a new event reach the customer's risk score, and is the re-scoring automatic?
+  - Can we keep a fixed review calendar alongside event-driven reviews, with different intervals by risk tier?
+  - What does the audit trail show for each event-driven review?
+faq:
+  - q: What is perpetual KYC?
+    a: Perpetual KYC (pKYC) keeps a customer's due diligence current by updating their profile and risk rating whenever relevant new information arrives, rather than only during scheduled periodic reviews.
+  - q: Does perpetual KYC replace periodic reviews?
+    a: Not in the EU. From 10 July 2027 the AML Regulation sets maximum periods for updating customer information, so an event-driven program still needs a calendar backstop. pKYC can make scheduled reviews lighter.
+  - q: Is perpetual KYC a legal requirement?
+    a: No law uses the term. FATF, EU and UK rules require ongoing monitoring and keeping customer information up to date, and pKYC is one way of doing that.
+sources:
+  - title: The FATF Recommendations (Recommendation 10)
+    publisher: Financial Action Task Force
+    url: https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html
+    accessed: 2026-10
+  - title: Directive (EU) 2015/849 (consolidated text), Article 14(5)
+    publisher: EUR-Lex
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015L0849-20210630
+    accessed: 2026-10
+  - title: Consultation paper on draft RTS under Article 28(1) of Regulation (EU) 2024/1624
+    publisher: Anti-Money Laundering Authority (AMLA)
+    url: https://www.amla.europa.eu/document/download/3d430294-5171-455c-b565-a86fc5f3cb1c_en?filename=Consultation%20Paper%20Draft%20RTS%20under%20Article%2028%281%29.pdf
+    accessed: 2026-10
+  - title: "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017, regulation 27"
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/uksi/2017/692/regulation/27
+    accessed: 2026-10
+  - title: "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017, regulation 28"
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/uksi/2017/692/regulation/28
+    accessed: 2026-10
+  - title: European AML/CFT framework
+    publisher: De Nederlandsche Bank
+    url: https://www.dnb.nl/en/sector-information/open-book-supervision/laws-and-eu-regulations/european-amlcft-framework/
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29
