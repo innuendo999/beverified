@@ -1,0 +1,73 @@
+term: Suspicious activity report
+abbr: SAR
+also_known_as: [Suspicious transaction report (STR), Suspicious activity reporting]
+cluster: aml
+definition: A suspicious activity report (SAR) is a report that a bank or other regulated firm files with its national financial intelligence unit when it knows or suspects that funds or activity are linked to money laundering or terrorist financing. It is also called a suspicious transaction report (STR).
+seo_description: "A SAR is filed with the financial intelligence unit when a firm suspects money laundering. US, UK and EU rules, deadlines and what to ask vendors."
+rankings: [aml]
+related: [transaction-monitoring, aml-case-management, anti-money-laundering, fatf-recommendations, uk-money-laundering-regulations]
+body: |
+  ## How suspicious activity reporting works
+
+  The international standard is FATF Recommendation 20: if a financial institution suspects or has reasonable grounds to suspect that funds are the proceeds of crime or related to terrorist financing, it should be required by law to report its suspicions promptly to the financial intelligence unit (FIU). Each country sets its own rules on top of that.
+
+  Inside a firm the path is similar everywhere. An alert from [transaction monitoring](/glossary/transaction-monitoring/) or a concern from staff becomes a case, an analyst investigates it in the [case management](/glossary/aml-case-management/) tool, and a designated officer decides whether the facts meet the reporting test. Software can prepare the report and keep the evidence, but the decision to report stays with that officer.
+
+  ## United States
+
+  Banks report under [31 CFR 1020.320](https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1020/subpart-C/section-1020.320). A SAR is required for a transaction that involves or aggregates at least $5,000 in funds or other assets where the bank knows, suspects or has reason to suspect that it involves funds from illegal activity or is meant to hide them, is designed to evade Bank Secrecy Act requirements, or has no business or apparent lawful purpose or is not the sort the customer would normally be expected to engage in, and the bank knows of no reasonable explanation after examining the facts. The SAR is due no later than 30 calendar days after the bank first detects the facts. If no suspect has been identified, the bank may take another 30 calendar days, but reporting may not be delayed more than 60 calendar days after initial detection. Banks keep the SAR and supporting documentation for five years, and a SAR and any information that would reveal it are confidential. Money services businesses have their own rule with a threshold of $2,000 (31 CFR 1022.320).
+
+  ## United Kingdom and the EU
+
+  In the UK, section 330 of the Proceeds of Crime Act 2002 makes it an offence for a person in the regulated sector who knows or suspects, or has reasonable grounds for knowing or suspecting, money laundering not to report it as soon as practicable to the firm's nominated officer or to the National Crime Agency. According to the [NCA](https://www.nationalcrimeagency.gov.uk/what-we-do/crime-threats/money-laundering-and-illicit-finance/suspicious-activity-reports), the UK Financial Intelligence Unit inside the NCA has sole national responsibility for receiving, analysing and disseminating SARs, receives more than 850,000 a year, and takes them through the SAR Portal. A firm that wants to go ahead with a transaction it suspects can ask for a defence against money laundering (DAML). Under [section 335](https://www.legislation.gov.uk/ukpga/2002/29/section/335), the notice period is seven working days from the first working day after the disclosure. If consent is refused, a moratorium period of 31 days follows, which a court can extend. Tipping off is a separate offence under section 333A.
+
+  In the EU, Article 33 of the [Anti-Money Laundering Directive](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02015L0849-20240709) requires firms to inform the national FIU promptly, on their own initiative, when they know, suspect or have reasonable grounds to suspect that funds are the proceeds of criminal activity or are related to terrorist financing. Article 35 says they refrain from carrying out such transactions until they have reported, and Article 39 forbids telling the customer or third persons that a report has been or will be made.
+buyer_questions:
+  - Can your tool prepare a report in the format our FIU accepts, such as a FinCEN SAR or a UK SAR through the NCA portal, or do we re-key it?
+  - Does the report pull the facts, transactions and documents from the case automatically, with a record of who changed what?
+  - Can we track filing deadlines, such as the US 30 and 60 calendar day limits, with reminders?
+  - How do you limit who can see that a SAR was filed, so that staff cannot tip off the customer?
+  - How long do you keep filed reports and supporting documents, and can we match that to our legal retention period?
+faq:
+  - q: What is the difference between a SAR and an STR?
+    a: They are two names for the same kind of report. The US and the UK use suspicious activity report, and FATF Recommendation 20 speaks of reporting suspicious transactions. Either way, the report goes to the national financial intelligence unit.
+  - q: How long does a US bank have to file a SAR?
+    a: No later than 30 calendar days after it first detects the facts. If no suspect has been identified it may take another 30 calendar days, but never more than 60 calendar days after initial detection.
+  - q: Can the customer find out that a SAR was filed?
+    a: No. US rules treat a SAR and any information that would reveal it as confidential, UK law makes tipping off an offence, and the EU Directive forbids disclosure to the customer.
+sources:
+  - title: "31 CFR 1020.320: Reports by banks of suspicious transactions"
+    publisher: Electronic Code of Federal Regulations
+    url: https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1020/subpart-C/section-1020.320
+    accessed: 2026-10
+  - title: "31 CFR 1022.320: Reports by money services businesses of suspicious transactions"
+    publisher: Electronic Code of Federal Regulations
+    url: https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1022/subpart-C/section-1022.320
+    accessed: 2026-10
+  - title: Suspicious Activity Reports
+    publisher: National Crime Agency
+    url: https://www.nationalcrimeagency.gov.uk/what-we-do/crime-threats/money-laundering-and-illicit-finance/suspicious-activity-reports
+    accessed: 2026-10
+  - title: "Proceeds of Crime Act 2002, section 330: Failure to disclose, regulated sector"
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/ukpga/2002/29/section/330
+    accessed: 2026-10
+  - title: "Proceeds of Crime Act 2002, section 335: Appropriate consent"
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/ukpga/2002/29/section/335
+    accessed: 2026-10
+  - title: "Proceeds of Crime Act 2002, section 333A: Tipping off, regulated sector"
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/ukpga/2002/29/section/333A
+    accessed: 2026-10
+  - title: Directive (EU) 2015/849 (consolidated text of 9 July 2024), Articles 33, 35 and 39
+    publisher: EUR-Lex, Publications Office of the European Union
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02015L0849-20240709
+    accessed: 2026-10
+  - title: "FATF Recommendation 20: Reporting of suspicious transactions (text reproduced by CFATF)"
+    publisher: Caribbean Financial Action Task Force
+    url: https://cfatf-gafic.org/documents/fatf-40r/386-fatf-recommendation-20-reporting-of-suspicious-transactions
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

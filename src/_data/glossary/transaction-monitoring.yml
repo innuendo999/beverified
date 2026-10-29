@@ -1,0 +1,51 @@
+term: Transaction monitoring
+also_known_as: [AML transaction monitoring, TM]
+cluster: aml
+definition: Transaction monitoring is the ongoing review of a customer's payments and transfers to spot activity that does not fit what the firm knows about that customer, such as unusual amounts, patterns or counterparties. Alerts are investigated and can lead to a suspicious activity report.
+seo_description: "Transaction monitoring reviews customer payments for activity that does not fit their profile. What EU and UK rules say and what to ask vendors."
+capability: transaction_monitoring
+rankings: [aml, aml/banks]
+related: [aml-case-management, suspicious-activity-report, screening-false-positive, perpetual-kyc, risk-based-approach, anti-money-laundering]
+body: |
+  ## How transaction monitoring works
+
+  A monitoring system reads a firm's transactions and compares them with rules or models. A rule might flag cash deposits above a set amount, many small transfers just under a threshold, or payments to a high-risk country. Behavioral models compare a customer with their own history or with similar customers. Some systems check payments in real time before they settle, others review them after the event in batches.
+
+  Each hit becomes an alert. An analyst reviews it in the [case management](/glossary/aml-case-management/) tool, asks for more information if needed, and either closes it with a reason or escalates it. Escalated cases can end in a [suspicious activity report](/glossary/suspicious-activity-report/). Our [complete guide to transaction monitoring](/guide/transaction-monitoring-a-complete-guide/) covers the types of monitoring and the rules in the US, EU and UK in more depth.
+
+  ## What the rules say
+
+  In the EU, Article 13(1)(d) of the [Anti-Money Laundering Directive](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02015L0849-20240709) makes ongoing monitoring of the business relationship, including scrutiny of transactions, part of customer due diligence. Article 18(2) adds that firms examine, as far as reasonably possible, the background and purpose of transactions that are complex, unusually large, conducted in an unusual pattern or without an apparent economic or lawful purpose. In the UK, [regulation 28(11)](https://www.legislation.gov.uk/uksi/2017/692/regulation/28) of the Money Laundering Regulations 2017 requires scrutiny of transactions throughout the relationship to make sure they are consistent with what the firm knows about the customer, their business and risk profile.
+
+  The FCA's [Financial Crime Guide](https://www.handbook.fca.org.uk/handbook/FCG/3/2.html) shows what goes wrong in practice. It lists as poor practice a threshold-based, rule-driven system that is poorly calibrated (FCG 3.2.5A), and its case study points to thresholds that made it almost impossible for scenarios to catch suspicious activity and to the need to check the accuracy and completeness of the data fed into the system (FCG 3.2.5B).
+
+  ## What to check when you compare providers
+
+  Ask whether you can write and change rules yourself, how a new rule is tested before it goes live, and how the system shows why an alert fired. The [AML software ranking](/providers/aml/) and the [ranking for banks](/providers/aml/banks/) compare reviewed providers.
+buyer_questions:
+  - Can our team write, test and change monitoring rules without your engineers, and is every change logged?
+  - Do you monitor in real time before a payment settles, after the event, or both?
+  - How do you explain why an alert fired, so an analyst can review it and a regulator can follow it?
+  - How do you check the completeness and quality of the data we send before it reaches the rules?
+  - Can we back-test a new rule or threshold on our historical transactions to see the alert volume it creates?
+faq:
+  - q: What is the difference between transaction monitoring and sanctions screening?
+    a: Sanctions screening checks names against lists of designated parties. Transaction monitoring looks at the pattern and size of a customer's activity over time to find behavior that does not fit their profile.
+  - q: Is transaction monitoring required?
+    a: EU and UK rules require ongoing monitoring of business relationships, including scrutiny of transactions. They do not prescribe a specific system, so firms choose how to do it based on their risk.
+sources:
+  - title: Directive (EU) 2015/849 (consolidated text of 9 July 2024), Articles 13 and 18
+    publisher: EUR-Lex, Publications Office of the European Union
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02015L0849-20240709
+    accessed: 2026-10
+  - title: "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017, regulation 28"
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/uksi/2017/692/regulation/28
+    accessed: 2026-10
+  - title: "Financial Crime Guide, FCG 3.2: Money laundering and terrorist financing"
+    publisher: Financial Conduct Authority
+    url: https://www.handbook.fca.org.uk/handbook/FCG/3/2.html
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29
