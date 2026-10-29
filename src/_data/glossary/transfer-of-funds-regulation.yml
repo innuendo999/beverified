@@ -1,0 +1,58 @@
+term: Transfer of Funds Regulation
+abbr: TFR
+also_known_as: [Regulation (EU) 2023/1113, EU Travel Rule]
+cluster: standards
+definition: The Transfer of Funds Regulation, Regulation (EU) 2023/1113, sets the information that must accompany transfers of funds and crypto-assets in the EU. It has applied since 30 December 2024 and requires crypto-asset service providers to send originator and beneficiary data with every crypto transfer, whatever the amount.
+seo_description: "The EU Transfer of Funds Regulation (EU) 2023/1113 is the Travel Rule for crypto. Required data, no threshold, self-hosted wallets and the EUR 1,000 check."
+seo_title: "What Is the Transfer of Funds Regulation (TFR)? | BeVerified"
+capability: null
+rankings: [travel-rule]
+related: [travel-rule, crypto-asset-service-provider, self-hosted-wallet, aopp, satoshi-test, mica]
+provider_mentions: []
+body: |
+  ## What the TFR covers
+
+  [Regulation (EU) 2023/1113](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1113) of 31 May 2023 replaced the earlier wire transfer regulation, (EU) 2015/847, and extended it to crypto-assets. It applies from 30 December 2024. For crypto, it covers transfers where the [crypto-asset service provider](/glossary/crypto-asset-service-provider/) of the originator or of the beneficiary has its registered office in the EU. A person-to-person transfer made without any CASP is outside its scope.
+
+  Under Article 14(1), the originator's CASP must make sure each transfer carries the originator's name, distributed ledger address (and crypto-asset account number where one is used), the originator's address including country, official personal document number and customer identification number, or instead date and place of birth, and, where available, an LEI or equivalent identifier. Article 14(2) adds the beneficiary's name and distributed ledger address or account number. The information has to be sent in advance of, or at the same time as, the transfer.
+
+  There is no minimum amount. The recitals say transfers of crypto-assets should be subject to the same requirements regardless of their amount, and that no exemption should be granted to domestic low-value transfers. The TFR is how the EU applies the FATF [Travel Rule](/glossary/travel-rule/).
+
+  ## Self-hosted addresses and the EUR 1,000 check
+
+  A self-hosted address, under Article 3, is a distributed ledger address not linked to a CASP or to a similar provider outside the EU. For a transfer to a [self-hosted wallet](/glossary/self-hosted-wallet/), Article 14(5) says the originator's CASP must obtain and hold the originator and beneficiary information. For a transfer of an amount exceeding EUR 1 000, it must also take adequate measures to assess whether the address is owned or controlled by its own customer. Article 16(2) mirrors this for incoming transfers from a self-hosted address.
+
+  The EBA's [Travel Rule Guidelines (EBA/GL/2024/11)](https://www.eba.europa.eu/sites/default/files/2024-07/6de6e9b9-0ed9-49cd-985d-c0834b5b4356/Travel%20Rule%20Guidelines.pdf), which also apply from 30 December 2024, list ways to make that assessment in paragraph 83: unattended or attended verification under the EBA remote onboarding guidelines, sending a predefined small amount (a [Satoshi test](/glossary/satoshi-test/)), asking the customer to sign a specific message in the wallet software, or other suitable technical means. Where one method alone is not reliable enough, paragraph 85 says to combine methods. Our [guide to self-hosted wallet verification under the TFR](/guide/self-hosted-wallet-verification-tfr/) compares these methods, including [AOPP](/glossary/aopp/).
+
+  ## What to check when you compare providers
+
+  Ask whether the tool sends and checks the full Article 14 data set on every transfer, not only above a threshold, and how it handles counterparties outside the EU that send less data. Check which self-hosted wallet ownership methods it supports and whether it records the evidence. Our [Travel Rule ranking](/providers/travel-rule/) compares providers on these points.
+buyer_questions:
+  - Do you send and check the full Article 14 data set on every crypto transfer, with no amount threshold, for our EU entity?
+  - Which self-hosted wallet ownership checks do you support (message signing, test transaction, attended or unattended verification), and how is the evidence stored?
+  - How do you treat incoming transfers with missing or incomplete originator information, and can we set reject, return or suspend rules?
+  - How do you handle counterparties outside the EU whose local rules require less data or apply a threshold?
+  - Can your tool tell a self-hosted address apart from an address held at a non-EU provider?
+faq:
+  - q: Does the EU Travel Rule have a EUR 1,000 threshold?
+    a: Not for transfers between crypto-asset service providers. Regulation (EU) 2023/1113 applies the same requirements regardless of amount. EUR 1,000 matters only for transfers to or from a self-hosted address, where above that amount the CASP must assess whether its customer owns or controls the address.
+  - q: When did the Transfer of Funds Regulation start to apply?
+    a: Regulation (EU) 2023/1113 has applied since 30 December 2024. The EBA Travel Rule Guidelines that explain it apply from the same date.
+  - q: Does the TFR apply to transfers between two self-hosted wallets?
+    a: No. A person-to-person transfer of crypto-assets made without the involvement of a crypto-asset service provider is outside the Regulation.
+sources:
+  - title: Regulation (EU) 2023/1113 on information accompanying transfers of funds and certain crypto-assets
+    publisher: EUR-Lex
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1113
+    accessed: 2026-10
+  - title: Guidelines on information requirements in relation to transfers of funds and certain crypto-assets transfers under Regulation (EU) 2023/1113 (Travel Rule Guidelines, EBA/GL/2024/11)
+    publisher: European Banking Authority
+    url: https://www.eba.europa.eu/sites/default/files/2024-07/6de6e9b9-0ed9-49cd-985d-c0834b5b4356/Travel%20Rule%20Guidelines.pdf
+    accessed: 2026-10
+  - title: EBA issues Travel Rule guidance to tackle money laundering and terrorist financing in transfers of funds and crypto-assets
+    publisher: European Banking Authority
+    url: https://www.eba.europa.eu/publications-and-media/press-releases/eba-issues-travel-rule-guidance-tackle-money-laundering-and-terrorist-financing-transfers-funds-and
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

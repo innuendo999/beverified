@@ -1,0 +1,74 @@
+term: Virtual asset service provider
+abbr: VASP
+also_known_as: [Virtual asset service providers, VASPs]
+cluster: crypto
+definition: A virtual asset service provider (VASP) is the FATF term for any person or business that, for or on behalf of others, exchanges virtual assets for fiat or for other virtual assets, transfers them, keeps them safe, or provides financial services linked to a token issue.
+seo_description: "A VASP is the FATF term for a business that exchanges, transfers or holds virtual assets for others. The five activities, licensing and the EU CASP link."
+seo_title: "What Is a VASP (Virtual Asset Service Provider)? | BeVerified"
+capability: null
+rankings: [travel-rule, crypto]
+related: [travel-rule, crypto-asset-service-provider, mica, transfer-of-funds-regulation, fatf-recommendations, self-hosted-wallet]
+provider_mentions: []
+body: |
+  ## What counts as a VASP
+
+  The FATF Glossary defines a virtual asset service provider as any natural or legal person not covered elsewhere in the FATF Recommendations who, as a business, conducts one or more of these activities for or on behalf of another person:
+
+  1. exchange between virtual assets and fiat currencies;
+  2. exchange between one or more forms of virtual assets;
+  3. transfer of virtual assets;
+  4. safekeeping and/or administration of virtual assets or instruments enabling control over virtual assets;
+  5. participation in and provision of financial services related to an issuer's offer and/or sale of a virtual asset.
+
+  A virtual asset, in the same Glossary, is a digital representation of value that can be digitally traded or transferred and can be used for payment or investment purposes. Digital representations of fiat currencies, securities and other financial assets already covered elsewhere in the FATF Recommendations are excluded.
+
+  The test is the activity, not the label a company gives itself. The FATF's [updated guidance of 28 October 2021](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Guidance-rba-virtual-assets-2021.html) advises countries to take an expansive approach to the definitions. The same guidance says that a business whose only role is to develop or sell software or hardware for unhosted wallets is generally not a VASP, because it does not carry out the covered activities for others.
+
+  ## What the FATF standards require
+
+  Recommendation 15 and its Interpretive Note, reproduced in the FATF's [12-month review of the virtual asset standards](https://www.fatf-gafi.org/media/fatf/documents/recommendations/12-Month-Review-Revised-FATF-Standards-Virtual-Assets-VASPS.pdf), set out what countries should do:
+
+  - VASPs should at a minimum be licensed or registered in the jurisdiction where they are created; a VASP that is a natural person, where its place of business is located.
+  - VASPs should be supervised or monitored by a competent authority, not a self-regulatory body, on a risk-based basis.
+  - The occasional transaction threshold above which VASPs must carry out customer due diligence is USD/EUR 1 000.
+  - VASPs must apply the [Travel Rule](/glossary/travel-rule/) and send originator and beneficiary information with virtual asset transfers.
+
+  The 2021 guidance adds that VASPs have the same full set of obligations as financial institutions under the FATF standards.
+
+  ## Common confusions
+
+  "VASP" is a FATF term. Each country writes its own law, and the legal label differs. In the EU the matching term is [crypto-asset service provider (CASP)](/glossary/crypto-asset-service-provider/), defined in [MiCA](/glossary/mica/). Regulation (EU) 2023/1113 added CASPs to the definition of financial institution in the EU anti-money laundering directive, Directive (EU) 2015/849, so the scope of EU rules follows MiCA's list of crypto-asset services rather than the FATF list word for word.
+
+  When a vendor says its software works "for VASPs", ask which national definitions it was built for. A [Travel Rule](/providers/travel-rule/) tool or a [crypto KYC](/providers/crypto/) product may cover FATF-style obligations well but still miss a local requirement.
+buyer_questions:
+  - Which countries' VASP or CASP rules is your product configured for, and how quickly do you update it when a definition changes?
+  - How does your tool tell whether a counterparty is a licensed or registered VASP, and where does that data come from?
+  - Do your customer due diligence flows apply different thresholds for occasional transactions by jurisdiction?
+  - Can we show a supervisor which records your system keeps for each transfer and for how long?
+faq:
+  - q: What is a VASP in crypto?
+    a: A VASP is a business that, for or on behalf of others, exchanges virtual assets for fiat or other virtual assets, transfers them, keeps them in custody, or provides financial services linked to a token issue. The term comes from the FATF Glossary.
+  - q: Is a VASP the same as a CASP?
+    a: They describe similar businesses, but VASP is the FATF's global term and CASP is the EU legal term defined in MiCA. The EU lists ten crypto-asset services, so the scope is not identical to the FATF's five activities.
+  - q: Is a self-hosted wallet provider a VASP?
+    a: Usually not. The FATF's 2021 guidance says a business that only develops or sells software or hardware for unhosted wallets is generally not a VASP, because it does not carry out the covered activities for others.
+sources:
+  - title: 12 Month Review of Revised FATF Standards on Virtual Assets and Virtual Asset Service Providers (includes Recommendation 15, its Interpretive Note and FATF definitions)
+    publisher: FATF
+    url: https://www.fatf-gafi.org/media/fatf/documents/recommendations/12-Month-Review-Revised-FATF-Standards-Virtual-Assets-VASPS.pdf
+    accessed: 2026-10
+  - title: Updated Guidance for a Risk-Based Approach to Virtual Assets and Virtual Asset Service Providers (October 2021)
+    publisher: FATF
+    url: https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Guidance-rba-virtual-assets-2021.html
+    accessed: 2026-10
+  - title: Quick guide to the updated guidance for a risk-based approach to virtual assets and VASPs
+    publisher: FATF
+    url: https://www.fatf-gafi.org/media/fatf/documents/recommendations/Quick-guide-RBA-VA-VASPS.pdf
+    accessed: 2026-10
+  - title: Regulation (EU) 2023/1113 on information accompanying transfers of funds and certain crypto-assets
+    publisher: EUR-Lex
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1113
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

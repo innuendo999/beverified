@@ -1,0 +1,71 @@
+term: ISO/IEC 27566-1
+also_known_as: [ISO 27566-1, ISO/IEC 27566-1:2025, "Age assurance systems, Part 1: Framework"]
+cluster: age
+definition: ISO/IEC 27566-1 is the international standard that sets out a framework for age assurance systems and describes their core characteristics, including privacy and security. Published in December 2025 as Part 1 of the ISO/IEC 27566 series, age assurance services can be certified against it.
+seo_description: "ISO/IEC 27566-1:2025 is the framework standard for age assurance systems. What it covers, the parts still in draft, and how to read a 27566-1 certificate."
+capability: age_certification
+rankings: [age-verification]
+related: [age-assurance, age-verification, age-estimation, facial-age-estimation, iso-iec-30107-3, iso-27001]
+body: |
+  ## What the standard covers
+
+  The full title is "Information security, cybersecurity and privacy protection: Age assurance systems, Part 1: Framework". It was published by [ISO and IEC](https://www.iso.org/standard/88143.html) in December 2025 as a first edition. It comes from the joint ISO and IEC committee JTC 1/SC 27.
+
+  Its scope is one sentence: it "establishes a framework for age assurance systems and describes their core characteristics, including privacy and security, for enabling age-related eligibility decisions". It defines [age assurance](/glossary/age-assurance/) as the "set of processes and methods used to verify, estimate or infer the age or age range of an individual", and an age assurance result as information that a person is a certain age, over or under a certain age, or within an age range. The introduction notes that gaining age assurance does not always require establishing a person's full identity.
+
+  The body is organized by characteristic:
+
+  - Overview: age verification, age estimation and age inference methods, and successive validation.
+  - Functional: sources of data, binding the result to the right person, and delivering the result.
+  - Performance: indicators of effectiveness, classification accuracy and outcome error parity across groups.
+  - Privacy: data minimization, non-disclosure of age-related data and not adding to the user's digital footprint.
+  - Security: replay, forwarding or reuse of a result, biometric presentation attacks, spoofing and counterfeiting, and fail safe behavior.
+  - Acceptability: inclusivity, user assistance and complaint handling.
+  - Practice statements by age assurance providers, relying parties and intermediaries.
+
+  ## The other parts of the series
+
+  Part 1 is a framework. It describes characteristics but does not tell you which method to choose. Two more parts were still in development when we checked. [ISO/IEC 27566-2](https://www.iso.org/standard/90011.html), "Technical approaches and guidance for implementation", was a working draft whose comment period closed on 16 July 2026. [ISO/IEC 27566-3](https://www.iso.org/standard/88147.html), "Approaches to analysis or comparison", was a committee draft covering metrics and indicators of effectiveness for comparing systems.
+
+  ## Certification and what to check
+
+  Certification bodies audit age assurance services against Part 1. The [Age Check Certification Scheme](https://accscheme.com/services/iso-27566-1-certification/), for example, describes its ISO/IEC 27566-1 certification as covering the whole service, including privacy, security, accessibility, performance and functionality, and lists certified providers on a public register. It also says certification is "not a legal shield" and is not the same as full legal compliance.
+
+  When a provider claims ISO/IEC 27566-1, ask for the certificate and check which service and which methods it covers, which body issued it, whether that body is accredited for the scheme, and when it expires. A certificate scoped to one service or method says nothing about the others. Our [age verification ranking](/providers/age-verification/) shows whether each reviewed provider's age assurance certification is confirmed or only vendor-stated.
+buyer_questions:
+  - Which of your age assurance services and methods are certified against ISO/IEC 27566-1, and can we see the certificate and its scope?
+  - Which body issued the certificate, is it accredited for that scheme, and when does the certificate expire?
+  - Is your entry listed on the certification body's public register?
+  - What did the audit find under outcome error parity, and how does your accuracy vary across age, sex and skin tone?
+  - How do you prevent replay, forwarding or reuse of an age result, as the standard's security clause describes?
+faq:
+  - q: When was ISO/IEC 27566-1 published?
+    a: ISO lists ISO/IEC 27566-1:2025 as published in December 2025, first edition. It is Part 1 of the ISO/IEC 27566 series on age assurance systems.
+  - q: Does an ISO/IEC 27566-1 certificate mean a service complies with the Online Safety Act?
+    a: No. The standard describes characteristics of age assurance systems, and at least one certification body states that its certificate is not a legal shield. Compliance depends on the law and the regulator's guidance.
+  - q: What is the difference between ISO/IEC 27566-1 and ISO/IEC 30107-3?
+    a: ISO/IEC 27566-1 is a framework for whole age assurance systems, covering performance, privacy, security and acceptability. ISO/IEC 30107-3 covers testing and reporting of biometric presentation attack detection only.
+sources:
+  - title: "ISO/IEC 27566-1:2025 Information security, cybersecurity and privacy protection: Age assurance systems, Part 1: Framework"
+    publisher: ISO
+    url: https://www.iso.org/standard/88143.html
+    accessed: 2026-10
+  - title: ISO/IEC 27566-1:2025 preview (foreword, scope, terms and table of contents)
+    publisher: VDE Verlag (IEC standards distributor)
+    url: https://assets.vde-verlag.de/iec-normen/preview-pdf/info_isoiec27566-1%7Bed1.0%7Den.pdf
+    accessed: 2026-10
+  - title: "ISO/IEC WD 27566-2: Age assurance systems, Part 2: Technical approaches and guidance for implementation"
+    publisher: ISO
+    url: https://www.iso.org/standard/90011.html
+    accessed: 2026-10
+  - title: "ISO/IEC CD 27566-3: Age assurance systems, Part 3: Approaches to analysis or comparison"
+    publisher: ISO
+    url: https://www.iso.org/standard/88147.html
+    accessed: 2026-10
+  - title: ISO 27566-1 certification
+    publisher: Age Check Certification Scheme (ACCS)
+    url: https://accscheme.com/services/iso-27566-1-certification/
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

@@ -1,0 +1,67 @@
+term: Age estimation
+also_known_as: [Age estimation technology, AE]
+cluster: age
+definition: Age estimation predicts a person's age or age range, usually with a trained model that analyzes a face or other signals, without confirming it against a document or record. The result is an approximation with an error margin, so Ofcom's guidance expects a challenge age set above the legal age.
+seo_description: "Age estimation predicts age from a face or other signals. How challenge ages work, what Ofcom and the EU DSA guidelines say, and how it differs from verification."
+rankings: [age-verification]
+related: [facial-age-estimation, age-assurance, age-verification, iso-iec-27566-1, liveness-detection]
+body: |
+  ## How age estimation works
+
+  The UK Online Safety Act 2023 defines age estimation as "any measure designed to estimate the age or age-range of users of a regulated service" (section 230(3)). The European Commission's DSA guidelines say it lets a provider establish that a user is "likely to be of a certain age", and that it gives an approximation, while [age verification](/glossary/age-verification/) gives certainty (paragraphs 29 and 30).
+
+  Ofcom's guidance names two estimation methods among those capable of being highly effective age assurance:
+
+  - [Facial age estimation](/glossary/facial-age-estimation/), which analyzes the features of a user's face to estimate their age.
+  - Email-based age estimation, which looks at the other online services where the user's email address has been used.
+
+  ISO/IEC 27566-1 treats age inference, which draws conclusions about age from other information, as a third family separate from estimation and verification.
+
+  Because estimation produces a number with an error range, it is judged with statistics rather than a pass or fail. For methods that give a continuous result, Ofcom suggests metrics such as standard deviation, mean absolute percentage error and cumulative score (paragraph 4.36 of its Part 5 guidance).
+
+  ## Challenge age and buffers
+
+  Ofcom's [Part 5 guidance](https://www.ofcom.org.uk/siteassets/resources/documents/consultations/category-1-10-weeks/statement-age-assurance-and-childrens-access/guidance-on-highly-effective-age-assurance-and-other-part-5-duties.pdf) says a provider that uses age estimation should use a challenge age approach (paragraph 4.38). It compares this with "Challenge 25" in shops, where anyone who looks under 25 is asked for ID before buying alcohol.
+
+  Online, the service sets a challenge age above the legal age. The guidance gives the example of a challenge age of 25 where the legal age is 18. Users estimated above 25 need no further check. Users estimated below it must pass a second check with a method that is more accurate for their age group (paragraph 4.41). Ofcom says the challenge age should match the limits of the method's technical accuracy, and that the approach cuts the borderline cases where a child is wrongly classed as an adult (paragraph 4.42).
+
+  ## What the EU guidelines say
+
+  The Commission's [guidelines under Article 28 of the Digital Services Act](https://eur-lex.europa.eu/eli/C/2025/5519/oj/eng/pdf) see age estimation as appropriate where a platform's terms set a minimum age below 18 based on its risk assessment, or where it has identified medium risks that less restrictive measures cannot reduce. The estimation should come from an independent third party or from a system that has been independently audited (paragraph 47). Estimation can also complement age verification, or stand in for it while verification options are not yet readily available (paragraph 38).
+
+  ## What to check when you compare providers
+
+  Ask for accuracy figures at the ages that matter to you, not an average across all ages. For an 18+ service that means 13 to 17 year olds being classed as adults. Check what challenge age the provider recommends, what the second check is, and how many adults in the 18 to 25 band it pushes into that second step. Our [age verification ranking](/providers/age-verification/) shows which reviewed providers offer estimation methods.
+buyer_questions:
+  - What is your mean absolute error for 13 to 17 year olds, and how often is a 17 year old estimated as over 18?
+  - What challenge age do you recommend for an 18+ service, and what share of adults falls below it?
+  - What second check do users below the challenge age get, and is it built into the same flow?
+  - Has the estimation model been independently tested or audited, by whom, and on what data?
+  - Does accuracy differ by sex, skin tone or age group, and can you show the breakdown?
+faq:
+  - q: Is age estimation accurate enough to replace ID checks?
+    a: Not on its own for users near the legal age. Ofcom's guidance expects a challenge age, such as 25 for an 18+ service, and a second check for anyone estimated below it.
+  - q: What is the difference between age estimation and age verification?
+    a: Age estimation predicts an age or age range and has a margin of error. Age verification confirms age against a document or trusted record, such as a passport or bank account.
+  - q: What is a challenge age?
+    a: A challenge age is a buffer above the legal age. Users estimated above it pass, and users estimated below it must prove their age with another method. Ofcom gives 25 for an 18+ service as an example.
+sources:
+  - title: Guidance on highly effective age assurance and other Part 5 duties
+    publisher: Ofcom
+    url: https://www.ofcom.org.uk/siteassets/resources/documents/consultations/category-1-10-weeks/statement-age-assurance-and-childrens-access/guidance-on-highly-effective-age-assurance-and-other-part-5-duties.pdf
+    accessed: 2026-10
+  - title: Online Safety Act 2023, section 230
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/ukpga/2023/50/section/230
+    accessed: 2026-10
+  - title: Guidelines on measures to ensure a high level of privacy, safety and security for minors online, pursuant to Article 28(4) of Regulation (EU) 2022/2065 (C/2025/5519)
+    publisher: European Commission (Official Journal of the EU)
+    url: https://eur-lex.europa.eu/eli/C/2025/5519/oj/eng/pdf
+    accessed: 2026-10
+  - title: ISO/IEC 27566-1:2025 preview (foreword, scope, terms and table of contents)
+    publisher: VDE Verlag (IEC standards distributor)
+    url: https://assets.vde-verlag.de/iec-normen/preview-pdf/info_isoiec27566-1%7Bed1.0%7Den.pdf
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

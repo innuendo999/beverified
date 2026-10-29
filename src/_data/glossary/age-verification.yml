@@ -1,0 +1,72 @@
+term: Age verification
+also_known_as: [Age check, Age verification check, AV]
+cluster: age
+definition: Age verification confirms a person's age, or that they are over an age threshold such as 18, against a document or a trusted record like a passport, bank account or digital identity. It is the more certain form of age assurance, unlike age estimation, which only predicts age.
+seo_description: "Age verification confirms age from an ID, bank, card or digital identity record. UK Online Safety Act and EU DSA rules, the EU app, and how it differs from estimation."
+rankings: [age-verification]
+related: [age-assurance, age-estimation, facial-age-estimation, document-verification, reusable-digital-identity, eidas-2]
+body: |
+  ## How age verification works
+
+  Age verification ties the user's age to evidence that someone else has already checked. The UK Online Safety Act 2023 defines it as "any measure designed to verify the exact age of users of a regulated service" (section 230(2)). The European Commission describes it as a system "that relies on physical identifiers or verified sources of identification".
+
+  Ofcom's guidance describes the common methods this way:
+
+  - Photo-ID matching reads an uploaded photo-ID document and compares it with an image of the user taken at upload (see [document verification](/glossary/document-verification/)).
+  - Open banking uses the age the user's bank holds on record, with the user's consent, and shares only whether the user is over 18.
+  - Credit card checks ask for card details, and a payment processor asks the issuing bank whether the card is valid.
+  - Mobile network operator checks look at whether the content restriction filter that UK operators apply by default has been removed from the user's phone.
+  - Digital identity services let a person prove who they are online. The EU guidelines note that an identity wallet can share a single fact, such as being over a given age, instead of the full identity (see [reusable digital identity](/glossary/reusable-digital-identity/)).
+
+  The website does not always need the date of birth. Open banking returns only an over 18 answer, and an EU identity wallet can share only the age fact.
+
+  ## What the rules say
+
+  In the UK, Ofcom lists all five methods above among those capable of being [highly effective age assurance](https://ofcom.org.uk/online-safety/illegal-and-harmful-content/age-assurance). It says payment methods that do not require the user to be over 18, such as debit cards, are not. A measure that only asks users to self-declare their age is not age verification under the Act (section 230(4)).
+
+  In the EU, the Commission's [guidelines under Article 28 of the Digital Services Act](https://eur-lex.europa.eu/eli/C/2025/5519/oj/eng/pdf) say age verification gives certainty about a user's age, while age estimation gives an approximation (paragraph 30). They call access restrictions backed by age verification appropriate and proportionate where a platform offers high-risk content such as pornography or gambling, where its terms require users to be 18 or older, and where EU or national law sets a minimum age (paragraph 37).
+
+  The guidelines describe the EU age verification solution as a reference standard for device-based age verification (paragraph 43). The Commission made the [blueprint for the app](https://digital-strategy.ec.europa.eu/en/policies/eu-age-verification) available on 14 July 2025. It lets users prove they are over 18 without sharing other personal information and works with the EU Digital Identity Wallets, which are set to roll out by the end of 2026. On 29 April 2026 the Commission recommended that member states make the app available by the end of the year, as a standalone app or inside a national wallet.
+
+  ## Age verification vs age estimation
+
+  [Age estimation](/glossary/age-estimation/) predicts an age range, for example from a face, and has a margin of error. The two are often combined. Under Ofcom's challenge age approach, users estimated well above the legal age pass straight away and the rest go on to age verification. Our report on [TikTok's age checks](/news/tiktoks-ai-age-checks/) shows a platform mixing several methods in one flow.
+
+  When you compare providers, look at which verification methods they offer in your markets, how many users can complete each one, and what data reaches you. Our [age verification ranking](/providers/age-verification/) shows the methods each reviewed provider supports.
+buyer_questions:
+  - Which verification methods do you offer in each of our countries, and which are on Ofcom's list of methods capable of being highly effective?
+  - Do we receive only an over 18 result, or also a date of birth, name or document image?
+  - What share of users completes each method, and what happens to users without a passport, driving licence or credit card?
+  - Can users verify once and reuse the result on later visits, and how is the result bound to the right person?
+  - Do you support, or plan to support, the EU age verification app and EU Digital Identity Wallets?
+faq:
+  - q: Is age verification the same as age estimation?
+    a: No. Age verification confirms age from a document or trusted record. Age estimation predicts an age or age range, for example from a face, and has a margin of error. Both are forms of age assurance.
+  - q: Is a debit card enough to verify age in the UK?
+    a: Ofcom says payment methods that do not require the user to be over 18, such as debit cards, are not highly effective age assurance. It lists credit card checks among the methods that can be.
+  - q: What is the EU age verification app?
+    a: "It is an app built from a European Commission blueprint that lets users prove they are over 18 without sharing other personal data. In April 2026 the Commission asked member states to make it available by the end of 2026."
+sources:
+  - title: Online Safety Act 2023, section 230
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/ukpga/2023/50/section/230
+    accessed: 2026-10
+  - title: Age assurance duties under the Online Safety Act
+    publisher: Ofcom
+    url: https://ofcom.org.uk/online-safety/illegal-and-harmful-content/age-assurance
+    accessed: 2026-10
+  - title: Guidelines on measures to ensure a high level of privacy, safety and security for minors online, pursuant to Article 28(4) of Regulation (EU) 2022/2065 (C/2025/5519)
+    publisher: European Commission (Official Journal of the EU)
+    url: https://eur-lex.europa.eu/eli/C/2025/5519/oj/eng/pdf
+    accessed: 2026-10
+  - title: EU age verification
+    publisher: European Commission
+    url: https://digital-strategy.ec.europa.eu/en/policies/eu-age-verification
+    accessed: 2026-10
+  - title: Commission urges Member States to roll out EU age verification app
+    publisher: European Commission
+    url: https://digital-strategy.ec.europa.eu/en/news/commission-urges-member-states-rollout-eu-age-verification-app
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

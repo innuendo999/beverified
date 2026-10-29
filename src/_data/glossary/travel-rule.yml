@@ -1,0 +1,68 @@
+term: Travel Rule
+abbr: null
+also_known_as: [Crypto Travel Rule, FATF Travel Rule, FATF Recommendation 16]
+cluster: crypto
+definition: The Travel Rule is the FATF requirement, set out in Recommendation 16, that the provider sending a transfer collects originator and beneficiary information and passes it to the receiving provider. Since 2019 it also covers virtual asset transfers between VASPs, which must send the data immediately and securely.
+seo_description: "The Travel Rule makes crypto and payment providers send originator and beneficiary data with each transfer. FATF R.16, the EU TFR and what to ask vendors."
+capability: null
+rankings: [travel-rule, crypto]
+related: [virtual-asset-service-provider, transfer-of-funds-regulation, ivms101, sunrise-issue, travel-rule-interoperability, self-hosted-wallet]
+provider_mentions: []
+body: |
+  ## How the Travel Rule works
+
+  Banks have long sent payer and payee details inside wire transfer messages. The Travel Rule applies the same idea to crypto. When a customer sends crypto from one regulated provider to another, the sending provider attaches information about who sent it and who should receive it. The receiving provider checks that the information is there, screens it and keeps it.
+
+  A blockchain transaction has no field for a name, so the data travels separately, over a messaging protocol that both providers support. That is why Travel Rule software exists: it finds out whether the counterparty is a regulated provider, agrees a data format such as [IVMS 101](/glossary/ivms101/), sends and receives the messages, and holds the records. If the two providers use different networks, they need [interoperability](/glossary/travel-rule-interoperability/) between them.
+
+  ## What the FATF standard says
+
+  The FATF calls Recommendation 16, its standard on payment transparency, the "Travel Rule" in the context of virtual assets. The Interpretive Note to Recommendation 15, reproduced in the FATF's [12-month review of the virtual asset standards](https://www.fatf-gafi.org/media/fatf/documents/recommendations/12-Month-Review-Revised-FATF-Standards-Virtual-Assets-VASPS.pdf), says originating [VASPs](/glossary/virtual-asset-service-provider/) should obtain and hold required and accurate originator information and required beneficiary information, and submit it to the beneficiary VASP or financial institution "immediately and securely". Beneficiary VASPs should obtain and hold the required originator information and required and accurate beneficiary information. The information can be sent directly or indirectly.
+
+  FATF members agreed changes to Recommendation 16 at the [June 2025 Plenary](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/update-Recommendation-16-payment-transparency-june-2025.html). They standardise the information that accompanies peer-to-peer cross-border payments above USD/EUR 1,000 (name, address, date of birth) and come into effect by the end of 2030. The FATF says it will publish guidance before then.
+
+  Adoption is uneven. The FATF's [targeted update of 16 July 2026](https://www.fatf-gafi.org/en/news/targeted-updated-va-vasps-2026.html) found that 83% of surveyed jurisdictions had passed Travel Rule legislation, up from 73% in 2025, and that a further 11 jurisdictions reported implementation under way. A provider in a country with the rule can still face a counterparty in a country without it. This gap is known as the [sunrise issue](/glossary/sunrise-issue/).
+
+  ## How the EU applies it
+
+  In the EU the Travel Rule for crypto sits in the [Transfer of Funds Regulation](/glossary/transfer-of-funds-regulation/), Regulation (EU) 2023/1113, which has applied since 30 December 2024. Its recitals say transfers of crypto-assets should be subject to the same requirements regardless of their amount, so there is no low-value exemption between crypto-asset service providers. Transfers to and from [self-hosted wallets](/glossary/self-hosted-wallet/) have their own rules.
+
+  ## What to check when you compare providers
+
+  Coverage matters more than feature lists. Ask which protocols and networks the tool can send to and receive from, how it finds out whether a wallet address belongs to a regulated provider, and what it does when the counterparty cannot receive data. Ask how rules differ by jurisdiction in the product, since thresholds and data fields are not the same everywhere. Our [Travel Rule ranking](/providers/travel-rule/) compares the reviewed providers.
+buyer_questions:
+  - Which Travel Rule protocols and networks can you send to and receive from today, and how do you connect to counterparties on a different one?
+  - How do you identify whether a destination address belongs to a regulated provider or a self-hosted wallet?
+  - "What happens when the counterparty cannot receive Travel Rule data: hold, return, reject, or send and log?"
+  - Can we set different data fields and thresholds per jurisdiction, and who keeps those rules up to date?
+  - Do you send and accept data in IVMS 101, and how do you handle names and addresses that do not fit its fields?
+  - How are you preparing for the revised FATF Recommendation 16, which comes into effect by the end of 2030?
+faq:
+  - q: What is the Travel Rule in crypto?
+    a: It is the FATF requirement that a crypto service provider sending a transfer passes originator and beneficiary information to the receiving provider, immediately and securely. It applies FATF Recommendation 16, the wire transfer standard, to virtual assets.
+  - q: Is there a minimum amount for the Travel Rule in the EU?
+    a: No. The recitals of Regulation (EU) 2023/1113 say transfers of crypto-assets should be subject to the same requirements regardless of their amount. A EUR 1,000 threshold applies only to the extra ownership check for transfers to or from self-hosted addresses.
+  - q: Why is it called the Travel Rule?
+    a: Because the required information has to travel with the transfer, from the sending provider to the receiving one. The FATF uses the name for Recommendation 16 in the context of virtual assets.
+  - q: When does the revised FATF Recommendation 16 take effect?
+    a: The FATF says the changes agreed at its June 2025 Plenary will come into effect by the end of 2030, and that it will produce guidance before then.
+sources:
+  - title: 12 Month Review of Revised FATF Standards on Virtual Assets and Virtual Asset Service Providers (includes Recommendation 15, its Interpretive Note and FATF definitions)
+    publisher: FATF
+    url: https://www.fatf-gafi.org/media/fatf/documents/recommendations/12-Month-Review-Revised-FATF-Standards-Virtual-Assets-VASPS.pdf
+    accessed: 2026-10
+  - title: Update to Recommendation 16 on payment transparency (June 2025)
+    publisher: FATF
+    url: https://www.fatf-gafi.org/en/publications/Fatfrecommendations/update-Recommendation-16-payment-transparency-june-2025.html
+    accessed: 2026-10
+  - title: FATF calls for closing of regulatory gaps as virtual asset illicit finance risks become more complex (Seventh targeted update, 16 July 2026)
+    publisher: FATF
+    url: https://www.fatf-gafi.org/en/news/targeted-updated-va-vasps-2026.html
+    accessed: 2026-10
+  - title: Regulation (EU) 2023/1113 on information accompanying transfers of funds and certain crypto-assets
+    publisher: EUR-Lex
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1113
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

@@ -1,0 +1,76 @@
+term: Age assurance
+also_known_as: [Age checks, Age assurance system]
+cluster: age
+definition: Age assurance is the umbrella term for the methods a service uses to establish a user's age or age range before it grants access to content or features. It covers age verification, which confirms age from a document or trusted record, and age estimation, which predicts it.
+seo_description: "Age assurance covers age verification, age estimation and age inference. What Ofcom, the EU DSA guidelines and ISO/IEC 27566-1 say, and what to ask vendors."
+rankings: [age-verification]
+related: [age-verification, age-estimation, facial-age-estimation, iso-iec-27566-1, reusable-digital-identity, liveness-detection]
+body: |
+  ## What age assurance covers
+
+  The international standard [ISO/IEC 27566-1](https://www.iso.org/standard/88143.html) defines age assurance as the "set of processes and methods used to verify, estimate or infer the age or age range of an individual". That gives three families of method, and the standard describes each one separately:
+
+  - [Age verification](/glossary/age-verification/) confirms age against a document, a record or a verified identity.
+  - [Age estimation](/glossary/age-estimation/) predicts an age or age range, for example from a face. [Facial age estimation](/glossary/facial-age-estimation/) is the best known form.
+  - Age inference draws a conclusion about age from other information about the person.
+
+  The service usually does not need a date of birth. Under ISO/IEC 27566-1, an age assurance result can simply say that a person is a certain age, over or under a certain age, or within an age range. An "over 18" answer is enough for most age gates.
+
+  Asking users to type in their birth date is not age assurance in the legal sense. The UK Online Safety Act 2023 says a measure that only asks users to self-declare their age is not age verification or age estimation (section 230(4)).
+
+  ## What the rules say
+
+  In the UK, Ofcom's guidance under the Online Safety Act uses "age assurance" to mean age verification and age estimation together. Services that publish pornographic content (Part 5 of the Act) had to take steps to put "highly effective" age assurance in place from 17 January 2025. Ofcom's [age assurance page](https://ofcom.org.uk/online-safety/illegal-and-harmful-content/age-assurance) says user-to-user and search services had to act on risks to children from 25 July 2025.
+
+  Ofcom lists seven kinds of method it considers capable of being highly effective: open banking, photo-ID matching, facial age estimation, mobile network operator age checks, credit card checks, digital identity services and email-based age estimation. It names self-declaration, payment methods that do not require the user to be over 18 (such as debit cards) and contractual bans on children as methods that are not highly effective. A method should be technically accurate, robust, reliable and fair.
+
+  In the EU, the Commission's [guidelines on the protection of minors](https://eur-lex.europa.eu/eli/C/2025/5519/oj/eng/pdf) under Article 28 of the Digital Services Act, published in the Official Journal on 10 October 2025, split age assurance into self-declaration, age estimation and age verification (paragraph 29). The Commission does not consider self-declaration an appropriate method (paragraph 52). It assesses methods on accuracy, reliability, robustness, non-intrusiveness and non-discrimination (paragraph 49).
+
+  ## What to check when you compare providers
+
+  Most products offer several methods, so check which ones they support and how they fall back from one to another. A user whose face scan comes back under the challenge age needs a second route, such as an ID document or a bank check, and that route affects how many adults finish the check.
+
+  Ask how the result reaches you. A yes or no on an age threshold, with no date of birth or document image passed on, keeps less personal data on your side. Also ask whether a result can be reused on a later visit, and how the provider stops a result from being replayed or forwarded to another user, which ISO/IEC 27566-1 treats as a security risk.
+
+  Our [age verification ranking](/providers/age-verification/) compares the methods each reviewed provider supports and whether its age assurance certification is confirmed.
+buyer_questions:
+  - Which of the methods on Ofcom's list do you support, and which can we switch on in which countries?
+  - When one method fails or is inconclusive, what fallback does the user see, and what share of users completes it?
+  - Do we receive only an over or under result, or also a date of birth, a document image or a face image?
+  - Has your age assurance service been certified against ISO/IEC 27566-1, by which body, and can we see the certificate?
+  - How do you stop an age result from being replayed, shared or reused by someone else?
+faq:
+  - q: What is the difference between age assurance and age verification?
+    a: Age assurance is the umbrella term. Age verification is one type of age assurance that confirms age from a document or trusted record. Age estimation, which predicts age, is another type.
+  - q: Is asking for a date of birth enough for age assurance?
+    a: No, not under the main rules. The UK Online Safety Act says self-declaration alone is not age verification or age estimation, and the European Commission's DSA guidelines say self-declaration is not an appropriate age assurance method.
+  - q: Which age assurance methods does Ofcom accept?
+    a: "Ofcom lists open banking, photo-ID matching, facial age estimation, mobile network operator checks, credit card checks, digital identity services and email-based age estimation as capable of being highly effective. Using one of them does not on its own guarantee compliance."
+sources:
+  - title: Age assurance duties under the Online Safety Act
+    publisher: Ofcom
+    url: https://ofcom.org.uk/online-safety/illegal-and-harmful-content/age-assurance
+    accessed: 2026-10
+  - title: Guidance on highly effective age assurance and other Part 5 duties
+    publisher: Ofcom
+    url: https://www.ofcom.org.uk/siteassets/resources/documents/consultations/category-1-10-weeks/statement-age-assurance-and-childrens-access/guidance-on-highly-effective-age-assurance-and-other-part-5-duties.pdf
+    accessed: 2026-10
+  - title: Online Safety Act 2023, section 230
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/ukpga/2023/50/section/230
+    accessed: 2026-10
+  - title: Guidelines on measures to ensure a high level of privacy, safety and security for minors online, pursuant to Article 28(4) of Regulation (EU) 2022/2065 (C/2025/5519)
+    publisher: European Commission (Official Journal of the EU)
+    url: https://eur-lex.europa.eu/eli/C/2025/5519/oj/eng/pdf
+    accessed: 2026-10
+  - title: "ISO/IEC 27566-1:2025 Information security, cybersecurity and privacy protection: Age assurance systems, Part 1: Framework"
+    publisher: ISO
+    url: https://www.iso.org/standard/88143.html
+    accessed: 2026-10
+  - title: ISO/IEC 27566-1:2025 preview (foreword, scope, terms and table of contents)
+    publisher: VDE Verlag (IEC standards distributor)
+    url: https://assets.vde-verlag.de/iec-normen/preview-pdf/info_isoiec27566-1%7Bed1.0%7Den.pdf
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29
