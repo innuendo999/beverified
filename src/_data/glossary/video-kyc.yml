@@ -1,0 +1,67 @@
+term: Video KYC
+abbr: V-CIP
+also_known_as: [Video based Customer Identification Process, Video CIP, V-KYC]
+cluster: identity
+definition: Video KYC, called V-CIP (Video based Customer Identification Process) in Reserve Bank of India rules, is a live, consent-based audio-visual call in which a trained official of a bank or other regulated entity identifies a customer remotely. The RBI treats a compliant V-CIP as equal to face-to-face identification.
+seo_description: "Video KYC (V-CIP) is India's live video identification process under RBI rules. How it works, what the KYC Directions require, and what to ask vendors."
+rankings: [india]
+related: [video-identification, ekyc, know-your-customer, liveness-detection, face-matching, customer-due-diligence]
+body: |
+  ## How V-CIP works
+
+  The Reserve Bank of India [permitted V-CIP](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11783) through an amendment to its KYC Master Direction on 9 January 2020. In a V-CIP session, an official of the bank joins a live video call with the customer, who consents to the process. The official obtains the customer's identity data from one of four sources: OTP-based Aadhaar e-KYC authentication, offline verification of Aadhaar, KYC records downloaded from the Central KYC Records Registry (CKYCR), or an equivalent electronic copy of an officially valid document, including documents issued through DigiLocker.
+
+  During the call the official asks questions, captures the customer's photo and checks that the customer matches the identity documents. The software runs face liveness or spoof detection and face matching. The call is recorded with the customer's live GPS location and a timestamp.
+
+  It is the Indian counterpart of what Europe calls [video identification](/glossary/video-identification/), with its own technical rules on location, hosting and audit.
+
+  ## What the RBI directions say
+
+  On 28 November 2025 the RBI issued 244 consolidated Master Directions and listed 9,445 older circulars as repealed or withdrawn. For commercial banks, V-CIP now sits in the [Reserve Bank of India (Commercial Banks - Know Your Customer) Directions, 2025](https://www.rbi.org.in/SCRIPTS/BS_ViewMasDirections.aspx?id=13141), issued on 28 November 2025. The definition is in paragraph 5(2)(xvi). Paragraph 26 lets banks use V-CIP for three purposes: [customer due diligence](/glossary/customer-due-diligence/) when onboarding new individual customers, proprietors, authorised signatories and beneficial owners of legal entity customers; converting accounts opened through Aadhaar OTP-based e-KYC; and updating or periodic updating of KYC.
+
+  Paragraph 27 sets the minimum standards. Among them:
+
+  - The process may be operated only by bank officials specially trained for it.
+  - The system must prevent connections from IP addresses outside India.
+  - Recordings must contain the customer's live GPS coordinates.
+  - The application must have face liveness or spoof detection and face matching.
+  - The bank must vary the sequence or type of questions, to show the call is live and not pre-recorded, and must reject the account opening if it sees any prompting at the customer's end.
+  - For offline Aadhaar verification, the XML file or Secure QR Code must not be older than three working days.
+  - All V-CIP data and recordings must be stored in systems located in India.
+  - Accounts opened this way become operational only after a concurrent audit.
+
+  This page cites the directions for commercial banks. Other kinds of regulated entity should check the KYC directions that apply to them.
+
+  ## What to check when you compare providers
+
+  Because the call must be run by the bank's own trained officials, a vendor usually supplies the platform, not the agents. Check that the platform can be hosted in India, records geo-tags and timestamps, blocks foreign and spoofed IP addresses, and integrates with Aadhaar e-KYC, CKYCR and DigiLocker. Ask for evidence of independent security testing and for the liveness detection results. Our [India ranking](/providers/india/) compares the providers we review for the Indian market.
+buyer_questions:
+  - Can the V-CIP platform and all recordings be hosted on servers in India that we control?
+  - Which identity sources do you integrate with out of the box (Aadhaar OTP e-KYC, offline Aadhaar, CKYCR, DigiLocker)?
+  - How do you block connections from outside India and from spoofed IP addresses, and how do you capture live geo-location?
+  - How does your liveness and spoof detection work on a live call, and has it been independently tested?
+  - Does the platform support randomised question sets, prompting detection and a workflow for concurrent audit?
+  - Who has carried out your most recent vulnerability assessment and penetration test, and can we see the summary?
+faq:
+  - q: Is video KYC legal in India?
+    a: Yes. The Reserve Bank of India permitted V-CIP in January 2020. Its KYC Directions treat a V-CIP that meets the prescribed standards as equal to face-to-face identification.
+  - q: Can a third-party agent run the V-CIP call?
+    a: The commercial bank KYC Directions say the process may be operated only by officials of the bank who are specially trained for it. A vendor normally provides the technology.
+  - q: Where must V-CIP recordings be stored?
+    a: The KYC Directions require the bank to store all V-CIP data and recordings in systems located in India.
+sources:
+  - title: Reserve Bank of India (Commercial Banks - Know Your Customer) Directions, 2025
+    publisher: Reserve Bank of India
+    url: https://www.rbi.org.in/SCRIPTS/BS_ViewMasDirections.aspx?id=13141
+    accessed: 2026-10
+  - title: Amendment to Master Direction (MD) on KYC (RBI/2019-20/138), 9 January 2020
+    publisher: Reserve Bank of India
+    url: https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11783
+    accessed: 2026-10
+  - title: Reserve Bank of India issues Consolidated Master Directions (press release, 28 November 2025)
+    publisher: Reserve Bank of India
+    url: https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=61705
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

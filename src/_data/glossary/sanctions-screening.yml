@@ -1,0 +1,82 @@
+term: Sanctions screening
+also_known_as: [Sanctions list screening, OFAC screening, Watchlist screening]
+cluster: aml
+definition: Sanctions screening checks customers, counterparties and payments against government sanctions lists, such as the US OFAC SDN List, the UN Security Council Consolidated List, the EU consolidated list and the UK Sanctions List, so that a firm does not deal with or move money for a designated person.
+seo_description: "Sanctions screening checks customers and payments against OFAC, UN, EU and UK sanctions lists. How it works, the main lists and what to ask vendors."
+capability: sanctions_pep
+rankings: [aml]
+related: [politically-exposed-person, fuzzy-name-matching, screening-false-positive, ultimate-beneficial-owner, aml-case-management, anti-money-laundering]
+body: |
+  ## How sanctions screening works
+
+  A screening system compares names and other details from customer records and payment messages with the entries on one or more sanctions lists. It usually runs at three points: when a customer is onboarded, across the whole customer base again whenever a list changes, and on each payment before it is released. Exact matching misses transliterations and spelling variants, so automated tools usually add [fuzzy name matching](/glossary/fuzzy-name-matching/). The result is a queue of alerts that analysts review, and many of them turn out to be [false positives](/glossary/screening-false-positive/).
+
+  A list only names the parties that were designated. In the US, OFAC's 50 Percent Rule treats an entity as blocked if one or more blocked persons own 50 percent or more of it, directly or indirectly, in the aggregate, even when the entity is not on a list itself. Catching those cases takes ownership data, which is where screening meets [ultimate beneficial owner](/glossary/ultimate-beneficial-owner/) checks.
+
+  ## The main sanctions lists
+
+  The best known is OFAC's Specially Designated Nationals list. OFAC describes [SDNs](https://ofac.treasury.gov/faqs/18) as individuals and companies owned or controlled by, or acting for or on behalf of, targeted countries, plus individuals, groups and entities such as terrorists and narcotics traffickers designated under programs that are not country-specific. In OFAC's words, "their assets are blocked and U.S. persons are generally prohibited from dealing with them." OFAC also runs other lists, which our guide to [SDN, SSI and FSE lists](/publications/sdn-vs-ssi-vs-fse-lists/) compares.
+
+  The [UN Security Council Consolidated List](https://main.un.org/securitycouncil/en/content/un-sc-consolidated-list) includes all individuals and entities subject to measures imposed by the Security Council, and the UN states that member states are obliged to implement the measures for each listed name. In the EU, the European Commission (DG FISMA) maintains the consolidated list of individuals, groups and organisations subject to EU financial sanctions, which reflects the legal acts published in the Official Journal.
+
+  The UK changed its source in January 2026. The OFSI Consolidated List of Asset Freeze Targets closed on 28 January 2026, and the [UK Sanctions List](https://www.gov.uk/government/publications/the-uk-sanctions-list) is now the only source for all UK sanctions designations. A tool that still pulls the old OFSI file is screening against a list that is no longer updated.
+
+  ## What to check when you compare providers
+
+  OFAC says its regulations do not explicitly require any specific screening regime. They do set reporting and recordkeeping duties: a firm that blocks or rejects a transaction must report it to OFAC within 10 business days, and records of transactions subject to OFAC rules must be available for examination for at least 10 years. The UK regulator's [Financial Crime Guide](https://www.handbook.fca.org.uk/handbook/FCG/7/2.html) gives two examples of poor practice: a firm that has little understanding of how a third-party tool is calibrated and when lists are updated, and screening customer databases as a one-off exercise.
+
+  So ask which lists the tool covers, how fast a new designation reaches your screening, whether the whole customer base is rescreened on each list change, and whether ownership data supports the 50 Percent Rule. For the step-by-step process, see our [OFAC screening guide](/publications/how-to-conduct-ofac-screening-step-by-step-guide/). The [AML software ranking](/providers/aml/) shows which reviewed providers include sanctions and PEP screening.
+buyer_questions:
+  - Which sanctions lists do you cover out of the box, and do you take the UK Sanctions List rather than the closed OFSI Consolidated List?
+  - How long after a list is published does a new designation reach our screening, and can you show the update log?
+  - Do you rescreen our whole customer base automatically when a list changes, or only new customers and payments?
+  - Can you flag entities owned 50 percent or more by blocked persons, and where does that ownership data come from?
+  - How is the matching threshold set, who can change it, and is every change logged?
+  - How long do you keep alert decisions and audit trails, and can we export them for a regulator?
+faq:
+  - q: Is sanctions screening required by law?
+    a: Sanctions laws prohibit dealing with designated persons, but OFAC says its regulations do not explicitly require any specific screening regime. Screening is the usual way firms avoid prohibited dealings, and regulators such as the FCA review how well it is calibrated and run.
+  - q: Which sanctions lists should a firm screen against?
+    a: It depends on where the firm operates and which currencies and counterparties it handles. Common lists are the OFAC SDN List, the UN Security Council Consolidated List, the EU consolidated list and the UK Sanctions List.
+  - q: What is the difference between sanctions screening and PEP screening?
+    a: Sanctions screening looks for people and entities you are generally prohibited from dealing with. PEP screening identifies people with prominent public functions, who are not prohibited but need enhanced due diligence.
+sources:
+  - title: "OFAC FAQ 18: What is an SDN?"
+    publisher: US Department of the Treasury, Office of Foreign Assets Control
+    url: https://ofac.treasury.gov/faqs/18
+    accessed: 2026-10
+  - title: "OFAC FAQs: Assessing OFAC name matches (FAQ 5)"
+    publisher: US Department of the Treasury, Office of Foreign Assets Control
+    url: https://ofac.treasury.gov/faqs/5
+    accessed: 2026-10
+  - title: "OFAC FAQs: 50 Percent Rule (FAQ 402)"
+    publisher: US Department of the Treasury, Office of Foreign Assets Control
+    url: https://ofac.treasury.gov/faqs/topic/1521
+    accessed: 2026-10
+  - title: "OFAC FAQs: Weak aliases (FAQ 122 to 124)"
+    publisher: US Department of the Treasury, Office of Foreign Assets Control
+    url: https://ofac.treasury.gov/faqs/topic/1646
+    accessed: 2026-10
+  - title: "31 CFR 501.601: Records and recordkeeping requirements"
+    publisher: Electronic Code of Federal Regulations
+    url: https://www.ecfr.gov/current/title-31/subtitle-B/chapter-V/part-501/subpart-C/section-501.601
+    accessed: 2026-10
+  - title: United Nations Security Council Consolidated List
+    publisher: United Nations Security Council
+    url: https://main.un.org/securitycouncil/en/content/un-sc-consolidated-list
+    accessed: 2026-10
+  - title: Overview of sanctions and related resources
+    publisher: European Commission, DG FISMA
+    url: https://finance.ec.europa.eu/eu-and-world/sanctions-restrictive-measures/overview-sanctions-and-related-resources_en
+    accessed: 2026-10
+  - title: The UK Sanctions List
+    publisher: GOV.UK, Foreign, Commonwealth and Development Office
+    url: https://www.gov.uk/government/publications/the-uk-sanctions-list
+    accessed: 2026-10
+  - title: "Financial Crime Guide, FCG 7.2: Sanctions and asset freezes"
+    publisher: Financial Conduct Authority
+    url: https://www.handbook.fca.org.uk/handbook/FCG/7/2.html
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

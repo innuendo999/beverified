@@ -1,0 +1,69 @@
+term: UK Money Laundering Regulations 2017
+abbr: MLR
+also_known_as: [MLRs, MLR 2017, "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017", SI 2017/692]
+cluster: standards
+definition: The UK Money Laundering Regulations 2017 (SI 2017/692) are the main UK rules on customer due diligence and other anti-money laundering controls for banks, payment and crypto firms, accountants, lawyers, estate agents and other relevant persons. They came into force on 26 June 2017 and have been amended since.
+seo_title: "What Are the UK Money Laundering Regulations 2017? | BeVerified"
+seo_description: "The UK Money Laundering Regulations 2017 set CDD, EDD and PEP rules for regulated firms. Key regulations 27, 28, 33 and 35, 2026 changes and vendor questions."
+rankings: [aml]
+related: [customer-due-diligence, enhanced-due-diligence, politically-exposed-person, fatf-recommendations, ultimate-beneficial-owner, uk-diatf]
+body: |
+  ## Who the MLRs apply to
+
+  The full title is the Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017. They were made on 22 June 2017, came into force on 26 June 2017 and, when made, implemented in part the EU's Fourth Money Laundering Directive.
+
+  Regulation 8(2) lists the "relevant persons" they cover: credit and financial institutions; auditors, insolvency practitioners, external accountants and tax advisers; independent legal professionals; trust or company service providers; estate and letting agents; high value dealers; casinos; art market participants; cryptoasset exchange providers; and custodian wallet providers. Regulation 7 names the supervisors: the Financial Conduct Authority, HM Revenue and Customs, the Gambling Commission for casinos, and the professional bodies listed in Schedule 1.
+
+  ## The regulations that drive KYC
+
+  - Regulation 27 says when [customer due diligence](/glossary/customer-due-diligence/) applies: when a firm establishes a business relationship, carries out certain occasional transactions, suspects money laundering or terrorist financing, or doubts documents it obtained earlier. It also applies to existing customers "at other appropriate times" on a risk-based approach.
+  - Regulation 28 sets the measures: identify the customer, verify their identity, and assess the purpose and intended nature of the relationship. Where the customer has a [beneficial owner](/glossary/ultimate-beneficial-owner/), the firm must identify that person and take reasonable measures to verify their identity. Under [regulation 28(18) and (19)](https://www.legislation.gov.uk/uksi/2017/692/regulation/28), "verify" means using documents or information from a reliable source independent of the customer, and an electronic identification process can count as such a source if it is secure from fraud and misuse.
+  - Regulation 33 lists when [enhanced due diligence](/glossary/enhanced-due-diligence/) applies, including customers established in a country on the [FATF](/glossary/fatf-recommendations/) call for action list, PEPs, customers who provided false or stolen identity documents, and unusually complex or unusually large transactions.
+  - Regulation 35 covers [politically exposed persons](/glossary/politically-exposed-person/). Firms need senior management approval, must establish source of wealth and source of funds, and must run enhanced ongoing monitoring. Since 10 January 2024, the starting point for assessing a domestic PEP is that the customer presents a lower level of risk, and the extent of enhanced due diligence depends on whether enhanced risk factors are present.
+
+  ## Recent changes and a common confusion
+
+  The [Money Laundering and Terrorist Financing (Amendment) Regulations 2026](https://www.legislation.gov.uk/uksi/2026/621/regulation/1/made) (SI 2026/621) are the latest amendment. They were made on 9 June 2026, and most of the changes came into force on 30 June 2026, 21 days later. A new regulation 34A on enhanced due diligence for cryptoasset exchange providers, custodian wallet providers and correspondent relationships comes into force on 1 February 2027. The same instrument also covers trust registration, unhosted wallet transfers and changes in control of registered cryptoasset businesses; those change-in-control rules in Schedule 6B apply in full from 25 October 2027.
+
+  The £3,000 threshold for a defence against money laundering (DAML) is not in the MLRs. It sits in the Proceeds of Crime Act 2002; see our news piece on how the [UK lifted the DAML threshold](/news/uk-lifts-money-laundering-threshold/).
+
+  When you compare vendors, check that their flows can evidence each regulation 28 step, handle the domestic PEP rule in regulation 35, and update country risk when the FATF lists change. Our [AML software ranking](/providers/aml/) compares screening and monitoring tools.
+buyer_questions:
+  - How does your electronic identity check meet the regulation 28(19) test of being secure from fraud and misuse, and what evidence do you keep?
+  - Can your PEP screening tell domestic PEPs from foreign PEPs, so we can apply the regulation 35 lower-risk starting point?
+  - How do you flag customers linked to a country on the FATF call for action list for enhanced due diligence under regulation 33?
+  - Which changes from the Money Laundering and Terrorist Financing (Amendment) Regulations 2026 have you built into the product, and which are still planned?
+  - How do you trigger due diligence on existing customers when their circumstances change, as regulation 27 requires?
+faq:
+  - q: Who supervises firms under the UK Money Laundering Regulations?
+    a: Regulation 7 names the Financial Conduct Authority, HM Revenue and Customs, the Gambling Commission for casinos and the professional bodies listed in Schedule 1. Which one applies depends on the type of business.
+  - q: Which regulation covers customer due diligence in the MLRs?
+    a: Regulation 27 says when customer due diligence applies and regulation 28 sets out the measures. Regulation 33 covers enhanced due diligence and regulation 35 politically exposed persons.
+  - q: Do the MLRs allow electronic identity verification?
+    a: Yes. Regulation 28(19) says information can be treated as coming from a reliable, independent source when it is obtained through an electronic identification process that is secure from fraud and misuse.
+  - q: Were the Money Laundering Regulations changed in 2026?
+    a: Yes. SI 2026/621 amended them. Most changes came into force on 30 June 2026, and the new regulation 34A on enhanced due diligence for crypto firms and correspondent relationships starts on 1 February 2027.
+sources:
+  - title: "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 (SI 2017/692)"
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/uksi/2017/692/contents
+    accessed: 2026-10
+  - title: "SI 2017/692, regulation 28: Customer due diligence measures"
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/uksi/2017/692/regulation/28
+    accessed: 2026-10
+  - title: "SI 2017/692, regulation 33: Obligation to apply enhanced customer due diligence"
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/uksi/2017/692/regulation/33
+    accessed: 2026-10
+  - title: "SI 2017/692, regulation 35: Enhanced customer due diligence: politically exposed persons"
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/uksi/2017/692/regulation/35
+    accessed: 2026-10
+  - title: "The Money Laundering and Terrorist Financing (Amendment) Regulations 2026 (SI 2026/621), regulation 1"
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/uksi/2026/621/regulation/1/made
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

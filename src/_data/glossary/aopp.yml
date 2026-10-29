@@ -1,0 +1,63 @@
+term: Address Ownership Proof Protocol
+abbr: AOPP
+also_known_as: [Address ownership proof, AOPP proof]
+cluster: crypto
+definition: The Address Ownership Proof Protocol (AOPP) is an open protocol that lets a crypto service provider ask a customer's self-hosted wallet to sign a message with the key of an address and send the signature back automatically, as proof that the customer controls that address.
+seo_description: "AOPP lets a self-hosted wallet sign a provider's message and return it automatically to prove address control. How the protocol works and what to ask."
+capability: null
+rankings: [travel-rule]
+related: [self-hosted-wallet, satoshi-test, transfer-of-funds-regulation, travel-rule, crypto-asset-service-provider]
+provider_mentions: [21analytics]
+body: |
+  ## How AOPP works
+
+  The provider shows the customer an `aopp:` link, for example on a withdrawal screen. In version 0 of the [protocol specification](https://docs.21analytics.ch/6.0.0/aopp.html), the link carries five required parameters: `v` (the version, 0), `msg` (a message chosen by the provider, up to 1024 ASCII characters, with a nonce recommended), `asset` (a SLIP-0044 asset identifier), `format` (the address type the provider expects) and `callback` (the provider's URL for the answer).
+
+  The link opens a wallet that supports AOPP. The customer confirms the message, and the wallet signs it with the key of the chosen address. The wallet then sends an HTTP POST with a small JSON body (`version`, `address` and `signature`) to the callback URL. The server answers 204 when the signature is valid, 400 for a bad request and 404 when the token in the callback URL does not exist. Bitcoin signatures follow the Bitcoin Core message-signing algorithm, and only compressed keys are supported.
+
+  The protocol site, [aopp.group](https://aopp.group/), says the wallet talks directly to the provider with no intermediary, that the customer does not copy and paste an address, and that address reuse is not needed. A signature shows that the wallet holds the key for the address. It does not reveal the key, and it says nothing about the identity of the person holding it.
+
+  ## Who created it
+
+  According to aopp.group, "AOPP was initiated by 21 Analytics with the support of Shift Crypto". The site presents it as an answer to proof-of-ownership expectations in Swiss and Dutch rules, citing FINMA Guidance 02/2019 and DNB Interpretation 09/2020, and lists wallets that it says have or will soon have built-in support. Wallet support changes, so check the current list with each wallet you care about.
+
+  ## Where AOPP fits in the EU rules
+
+  Under Articles 14(5) and 16(2) of the [Transfer of Funds Regulation](/glossary/transfer-of-funds-regulation/), a crypto-asset service provider should assess whether a [self-hosted address](/glossary/self-hosted-wallet/) is owned or controlled by its customer for transfers of more than EUR 1,000. Paragraph 83(d) of the EBA's [Travel Rule guidelines](https://www.eba.europa.eu/sites/default/files/2024-07/6de6e9b9-0ed9-49cd-985d-c0834b5b4356/Travel%20Rule%20Guidelines.pdf) lists "requesting the customer to digitally sign a specific message into the account and wallet software with the key corresponding to that address" as one verification method. The guidelines describe the method and do not name AOPP or any other protocol. AOPP is one way to automate that signed-message method.
+
+  ## What to check when you compare providers
+
+  AOPP only works when the customer's wallet supports it, so ask what happens when it does not: a manual signed message, a [Satoshi test](/glossary/satoshi-test/), or something weaker. Check which assets and address formats are covered. Our guide to [self-hosted wallet verification under the TFR](/guide/self-hosted-wallet-verification-tfr/) compares AOPP with the other methods, and the [Travel Rule ranking](/providers/travel-rule/) compares the reviewed providers.
+buyer_questions:
+  - Do you support AOPP, and for which assets and address formats?
+  - What does the customer see when their wallet does not support AOPP, and which fallback methods can we switch on?
+  - How do you generate and store the signed message, nonce, address and signature as evidence for each transfer?
+  - Can you verify signatures from hardware wallets and multisignature setups, or only single-key addresses?
+  - How do you stop a customer proving control of an address with a signature produced for another provider?
+faq:
+  - q: Does AOPP reveal my private key?
+    a: No. The wallet signs a message with the key and returns only the address and the signature. The provider checks the signature against the address and message.
+  - q: Is AOPP required by the EU Transfer of Funds Regulation?
+    a: No. The TFR asks for adequate measures to assess ownership or control of a self-hosted address above EUR 1,000. The EBA guidelines list a signed message as one method but do not name AOPP or any specific protocol.
+  - q: What is the difference between AOPP and a Satoshi test?
+    a: AOPP proves control with a cryptographic signature and needs no on-chain transfer. A Satoshi test proves control by sending a small predefined amount from the address, which costs a network fee and waits for the blockchain.
+sources:
+  - title: Address Ownership Proof Protocol (AOPP)
+    publisher: AOPP
+    url: https://aopp.group/
+    accessed: 2026-10
+  - title: AOPP specification (version 0)
+    publisher: 21 Analytics documentation
+    url: https://docs.21analytics.ch/6.0.0/aopp.html
+    accessed: 2026-10
+  - title: Guidelines on information requirements in relation to transfers of funds and certain crypto-assets transfers under Regulation (EU) 2023/1113 (EBA/GL/2024/11)
+    publisher: European Banking Authority
+    url: https://www.eba.europa.eu/sites/default/files/2024-07/6de6e9b9-0ed9-49cd-985d-c0834b5b4356/Travel%20Rule%20Guidelines.pdf
+    accessed: 2026-10
+  - title: Regulation (EU) 2023/1113 on information accompanying transfers of funds and certain crypto-assets
+    publisher: EUR-Lex
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1113
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

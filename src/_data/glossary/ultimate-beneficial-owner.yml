@@ -1,0 +1,90 @@
+term: Ultimate beneficial owner
+abbr: UBO
+also_known_as: [Beneficial owner, Beneficial ownership]
+cluster: kyb
+definition: An ultimate beneficial owner (UBO) is the natural person who ultimately owns or controls a company or other legal entity, directly or through a chain of other entities, nominees or agreements. AML rules usually treat a stake of around 25% as an indicator, and also count people who control the entity by other means.
+seo_description: "A UBO is the person who ultimately owns or controls a company. The 25% tests in EU, UK and US rules, beneficial ownership registers and what to ask vendors."
+capability: kyb_ubo
+rankings: [kyb]
+related: [know-your-business, company-registry-check, shell-company, fincen-cdd-rule, customer-due-diligence, eu-aml-regulation]
+body: |
+  ## How UBO identification works
+
+  A company is often owned by other companies. To find the UBO, a firm follows the chain of shareholders upward until it reaches natural persons, adds up their direct and indirect stakes, and then asks whether anyone controls the company in another way, for example through voting agreements, the right to appoint directors or a nominee who acts for someone else. If nobody can be found, EU rules fall back to naming a senior managing official, with a record of the steps taken.
+
+  This is usually the hardest part of [Know Your Business](/glossary/know-your-business/) checks. Registers help, but they show what the company declared, and layered structures that use [shell companies](/glossary/shell-company/) or foreign holding entities can make the chain hard to follow.
+
+  ## What the rules say
+
+  In the EU today, Article 3(6)(a)(i) of [Directive (EU) 2015/849](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015L0849-20210630) defines the beneficial owner as the natural person(s) who ultimately own or control a legal entity. It says "a shareholding of 25 % plus one share or an ownership interest of more than 25 %" held by a natural person is an indication of direct ownership. Point (a)(ii) is the senior managing official fallback.
+
+  From 10 July 2027, Article 51 of the EU AML Regulation (EU) 2024/1624 covers people who hold an ownership interest or who control the entity "via other means". Under Article 52(1), an ownership interest means "direct or indirect ownership of 25 % or more" of the shares, voting rights or other ownership interest. Indirect stakes are calculated by multiplying the percentages along each chain and adding the chains together. The test therefore moves from "more than 25 %" to "25 % or more".
+
+  Access to EU registers changed on 22 November 2022. In Joined Cases C-37/20 and C-601/20, the [Court of Justice](https://curia.europa.eu/jcms/upload/docs/application/pdf/2022-11/cp220188en.pdf) declared invalid the rule that beneficial ownership information on companies must be accessible in all cases to any member of the general public, citing Articles 7 and 8 of the EU Charter. The Sixth AML Directive, (EU) 2024/1640, amended Article 30(5) so that authorities and FIUs keep unrestricted access, obliged entities get access for due diligence, and anyone else must demonstrate a legitimate interest. See our story on [member states missing the access deadline](/news/eu-member-states-miss-deadline-on-public-access-to-beneficial-ownership-registers/).
+
+  In the UK, Companies House calls UBOs [people with significant control](https://www.gov.uk/guidance/people-with-significant-control-pscs) (PSCs). A PSC usually holds more than 25% of shares or voting rights, can appoint or remove a majority of directors, or can otherwise influence or control the company. Changes must be reported within 14 days of confirming them, and since 18 November 2025 PSCs must verify their identity with Companies House.
+
+  In the US, the [FinCEN CDD Rule](/glossary/fincen-cdd-rule/) has two prongs: each individual who owns 25 percent or more of the equity interests, and a single individual with significant responsibility to control the entity. Separately, the Corporate Transparency Act reporting regime has shrunk. FinCEN's [final rule](https://www.fincen.gov/BOI), effective 14 August 2026, makes US companies and US persons permanently exempt from beneficial ownership reporting; only foreign reporting companies still report, and only for foreign individuals.
+
+  ## What to check when you compare providers
+
+  Ask how a tool builds the ownership graph: which registers feed it, how many layers it resolves, and whether it calculates indirect stakes or just lists shareholders. Check whether it flags structures where no UBO reaches the threshold, nominee arrangements and circular ownership for a person to review. Ask whether it can compare the register with what the customer declared, since UK firms must report material discrepancies to Companies House. Our [KYB ranking](/providers/kyb/) shows which reviewed providers offer UBO discovery.
+buyer_questions:
+  - Which registers and data sources feed your ownership graph in our countries, and how current are they?
+  - How many ownership layers do you resolve, and do you calculate indirect percentages through each chain?
+  - Can we set the threshold per jurisdiction, for example more than 25% under current EU rules and 25% or more under the AMLR?
+  - "What happens when no one reaches the threshold: do you surface control by other means or senior managing officials?"
+  - Do you flag differences between the register and what the customer declared, so we can report discrepancies where required?
+faq:
+  - q: What percentage makes someone a beneficial owner?
+    a: It depends on the rule. Directive (EU) 2015/849 treats 25% plus one share or more than 25% as an indication, the EU AML Regulation from 10 July 2027 uses 25% or more, the UK PSC regime uses more than 25%, and the FinCEN CDD Rule uses 25 percent or more. Each rule also looks at control, not only shares.
+  - q: Are EU beneficial ownership registers public?
+    a: Not in general. In November 2022 the Court of Justice struck down general public access. Under Article 30(5) of Directive (EU) 2015/849 as amended by the Sixth AML Directive, access goes to authorities and FIUs, obliged entities, and people who can demonstrate a legitimate interest.
+  - q: Do US companies still report beneficial owners to FinCEN?
+    a: No. FinCEN's final rule, effective 14 August 2026, permanently exempts US companies and US persons. Foreign entities registered to do business in the US still report their foreign beneficial owners.
+  - q: Is a UBO the same as a PSC?
+    a: They overlap. PSC is the UK Companies House term for a person with significant control, which covers the same idea of ownership above 25%, plus control by other means.
+sources:
+  - title: Directive (EU) 2015/849, Article 3(6) (consolidated text)
+    publisher: EUR-Lex
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015L0849-20210630
+    accessed: 2026-10
+  - title: "Press release: Judgment in Joined Cases C-37/20 Luxembourg Business Registers and C-601/20 Sovim"
+    publisher: Court of Justice of the European Union
+    url: https://curia.europa.eu/jcms/upload/docs/application/pdf/2022-11/cp220188en.pdf
+    accessed: 2026-10
+  - title: People with significant control (PSCs)
+    publisher: GOV.UK, Companies House
+    url: https://www.gov.uk/guidance/people-with-significant-control-pscs
+    accessed: 2026-10
+  - title: Beneficial ownership information reporting
+    publisher: FinCEN
+    url: https://www.fincen.gov/BOI
+    accessed: 2026-10
+  - title: Treasury press release on the beneficial ownership information final rule (11 August 2026)
+    publisher: U.S. Department of the Treasury
+    url: https://home.treasury.gov/news/press-releases/sb0603
+    accessed: 2026-10
+  - title: 31 CFR 1010.230, Beneficial ownership requirements for legal entity customers
+    publisher: eCFR
+    url: https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-B/section-1010.230
+    accessed: 2026-10
+  - title: "AMLD6 Article 74: Amendments to Directive (EU) 2015/849"
+    publisher: EUR-Lex, Official Journal of the European Union
+    url: https://eur-lex.europa.eu/eli/dir/2024/1640/oj/eng
+    accessed: 2026-10
+  - title: Companies House confirms identity verification rollout from 18 November 2025
+    publisher: GOV.UK, Companies House
+    url: https://www.gov.uk/government/news/companies-house-confirms-identity-verification-rollout-from-18-november-2025
+    accessed: 2026-10
+  - title: "Regulation (EU) 2024/1624 (AMLR), Articles 51, 52"
+    publisher: EUR-Lex, Official Journal of the European Union
+    url: https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng
+    accessed: 2026-10
+  - title: The Money Laundering, Terrorist Financing and Transfer of Funds Regulations 2017, regulation 30A
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/uksi/2017/692/regulation/30A
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

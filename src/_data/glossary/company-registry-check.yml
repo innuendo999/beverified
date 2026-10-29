@@ -1,0 +1,70 @@
+term: Company registry check
+also_known_as: [Business registry check, Company register search, Corporate registry lookup]
+cluster: kyb
+definition: A company registry check looks up a business in the official register where it is incorporated to confirm it exists and to read its registered details, such as legal name, number, status, address, officers and filings. It is usually the first step of KYB and a source for verifying what the customer declared.
+seo_title: "What Is a Company Registry Check? | BeVerified"
+seo_description: "A company registry check confirms a business in the official register. Companies House, EU BRIS, what AML rules say about register data and what to ask vendors."
+capability: kyb_registry
+rankings: [kyb]
+related: [know-your-business, ultimate-beneficial-owner, ongoing-business-monitoring, shell-company, uk-money-laundering-regulations]
+body: |
+  ## How a registry check works
+
+  Every country keeps an official register of the companies formed under its law. A registry check searches that register by name or number and returns what it holds: whether the company is active, dissolved or in insolvency, its registered office, its officers, and often its filing history and documents. In a [KYB](/glossary/know-your-business/) process the result is compared with what the customer said on the application, and any mismatch goes to review.
+
+  What a register holds varies by country. The UK's [Companies House search service](https://www.gov.uk/guidance/search-the-companies-house-register) makes all of its public company data available free of charge, including current and resigned officers, filing history and images of documents, and offers the same data through an API. In the EU, the [Business Registers Interconnection System](https://e-justice.europa.eu/topics/registers-business-insolvency-land/business-registers-search-company-eu/general-information-find-company_en) (BRIS) has connected the business registers of all EU countries since June 2017, searchable through the e-Justice Portal and covering Iceland, Liechtenstein and Norway too. It returns basic company information, and only what each national register provides free of charge.
+
+  Data aggregators that copy register data are useful for coverage, but they are secondary sources. The primary record is the national register.
+
+  ## What the rules say about register data
+
+  A register entry can still be wrong or incomplete. Companies House says its search data "is not intended to be comprehensive" and that it "cannot take any responsibility for the consequences of errors or omissions". It only makes basic checks on accounts. Since 18 November 2025, under the Economic Crime and Corporate Transparency Act 2023, new directors and people with significant control have had to verify their identity with Companies House, with a 12-month transition for existing ones.
+
+  UK firms have specific duties. Under [regulation 30A](https://www.legislation.gov.uk/uksi/2017/692/regulation/30A) of the [Money Laundering Regulations 2017](/glossary/uk-money-laundering-regulations/), before establishing a business relationship with a company subject to the UK rules on people with significant control, a firm must collect an excerpt of the register with the beneficial ownership details it holds, and report any material discrepancy it finds to the registrar. Regulation 28(9) says relying solely on information delivered to the registrar does not satisfy the beneficial owner checks.
+
+  In the EU, AMLA's [final draft CDD standards](https://www.amla.europa.eu/document/download/e15ab2e5-4074-4de8-bb9d-613dd8b7fdd1_en?filename=Final%20Report%20-%20draft%20RTS%2028%281%29%20AMLR.pdf), published on 30 September 2026, list extracts from public registers that can be used for legal purposes among the documents for verifying a legal entity. They name a recent official copy or extract from the applicable public register as a reliable source, ask firms to consider whether the passage of time has reduced a document's reliability, and say central beneficial ownership registers are "not sufficient on their own" for verification.
+
+  ## What to check when you compare providers
+
+  Ask, country by country, whether a provider queries the official register live, uses its bulk data, or relies on a third-party aggregator, and how old the data can be. Check whether it can return an official extract or filed documents, not just parsed fields, since the AMLA draft standards refer to official extracts. Find out how it handles registers that charge per document or sit behind a login. Our [KYB ranking](/providers/kyb/) records which reviewed providers offer registry checks.
+buyer_questions:
+  - For each of our countries, do you query the official register live, use its bulk data, or rely on a third-party aggregator?
+  - How old can the company data you return be, and do you show the retrieval date?
+  - Can you return an official register extract or the filed documents, not only parsed fields?
+  - Do you pass through registry fees for paid extracts, and how are they priced?
+  - "What happens when the register and the application disagree: is the mismatch flagged for review?"
+faq:
+  - q: Is a Companies House check enough for KYB?
+    a: No. It confirms the company and its declared details, but Companies House says its data is not intended to be comprehensive, and the UK Money Laundering Regulations say relying solely on information delivered to the registrar does not meet the beneficial owner checks.
+  - q: How can I search companies across the EU?
+    a: The e-Justice Portal search uses the Business Registers Interconnection System (BRIS), which has linked the business registers of all EU countries since June 2017 and also covers Iceland, Liechtenstein and Norway. It shows basic information that national registers provide free of charge.
+  - q: Do company registers verify the information filed with them?
+    a: Only partly. Companies House makes checks on filings but only basic checks on accounts. Since 18 November 2025 it requires identity verification for new directors and people with significant control.
+sources:
+  - title: Search the Companies House register
+    publisher: GOV.UK, Companies House
+    url: https://www.gov.uk/guidance/search-the-companies-house-register
+    accessed: 2026-10
+  - title: Find a company in the EU (Business Registers Interconnection System)
+    publisher: European e-Justice Portal
+    url: https://e-justice.europa.eu/topics/registers-business-insolvency-land/business-registers-search-company-eu/general-information-find-company_en
+    accessed: 2026-10
+  - title: The Money Laundering, Terrorist Financing and Transfer of Funds Regulations 2017, regulation 30A
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/uksi/2017/692/regulation/30A
+    accessed: 2026-10
+  - title: "Final Report: Draft RTS under Article 28(1) of Regulation (EU) 2024/1624"
+    publisher: Anti-Money Laundering Authority (AMLA)
+    url: https://www.amla.europa.eu/document/download/e15ab2e5-4074-4de8-bb9d-613dd8b7fdd1_en?filename=Final%20Report%20-%20draft%20RTS%2028%281%29%20AMLR.pdf
+    accessed: 2026-10
+  - title: Companies House confirms identity verification rollout from 18 November 2025
+    publisher: GOV.UK, Companies House
+    url: https://www.gov.uk/government/news/companies-house-confirms-identity-verification-rollout-from-18-november-2025
+    accessed: 2026-10
+  - title: The Money Laundering, Terrorist Financing and Transfer of Funds Regulations 2017, regulation 28
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/uksi/2017/692/regulation/28
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

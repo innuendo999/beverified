@@ -1,0 +1,63 @@
+term: Satoshi test
+abbr: null
+also_known_as: [Test transfer, Test transaction, Micro-transaction test]
+cluster: crypto
+definition: A Satoshi test checks that a customer controls a self-hosted wallet by asking them to send a small, predefined amount of crypto from that address to the service provider. The provider then confirms on the blockchain that the expected amount arrived from that address.
+seo_description: "A Satoshi test proves control of a self-hosted wallet with a small predefined transfer. How it works, what EBA/GL/2024/11 says and what to ask vendors."
+capability: null
+rankings: [travel-rule]
+related: [self-hosted-wallet, aopp, transfer-of-funds-regulation, travel-rule, crypto-asset-service-provider]
+provider_mentions: []
+body: |
+  ## How a Satoshi test works
+
+  The name comes from the satoshi, the smallest unit of bitcoin recorded on the blockchain. One bitcoin is 100,000,000 satoshis, according to the [Bitcoin.org vocabulary](https://bitcoin.org/en/vocabulary). The same method is used for other assets, with the asset's own small unit.
+
+  The provider sets a small amount and a deposit address, and may set a time limit. The customer sends exactly that amount from the address they want to verify. The provider watches the blockchain and checks that a transfer with the expected amount came from that address. If it did, the customer has shown that they can move funds from the address, which in practice means they hold its key.
+
+  The test works with any wallet that can send a transaction. It does not need the wallet to support message signing. The customer pays a network fee, and the result arrives only when the transaction is seen on the chain.
+
+  ## What the rules say
+
+  In the EU, Articles 14(5) and 16(2) of the [Transfer of Funds Regulation](/glossary/transfer-of-funds-regulation/) ask a crypto-asset service provider to take adequate measures to assess whether a [self-hosted address](/glossary/self-hosted-wallet/) is owned or controlled by its customer when a transfer is more than EUR 1,000.
+
+  The European Banking Authority's [Travel Rule guidelines](https://www.eba.europa.eu/sites/default/files/2024-07/6de6e9b9-0ed9-49cd-985d-c0834b5b4356/Travel%20Rule%20Guidelines.pdf) (EBA/GL/2024/11) list the verification methods in paragraph 83. Point (c) is the "sending of a predefined amount (preferably the smallest denomination of a given crypto-asset), set by the CASP, from and to the self-hosted address to the CASP's account". The guidelines do not use the name "Satoshi test", but this is the method the term describes. Paragraph 84 says the choice of method depends on the technical capabilities of the self-hosted address, "the robustness of the assessment each method can deliver" and the ML/TF risk. Paragraph 85 says CASPs should combine methods where one alone is not reliable enough.
+
+  Outside the EU, the Securities Commission of The Bahamas lists "a transfer of a predefined amount between the wallet and the customer's account" among its methods in paragraph 5.3 of its [Travel Rule guidance note](https://scb.gov.bs/wp-content/uploads/2026/08/GuidanceNoteTravelRuleComplianceforDigitalAssetBusinesses.pdf) (12 August 2026), and says that relying only on the customer's self-declaration is not enough.
+
+  ## What to check when you compare providers
+
+  A Satoshi test proves control of an address at one moment. It does not identify the person, and it costs the customer a fee and some waiting time. A signed message, which [AOPP](/glossary/aopp/) automates, gives cryptographic proof without an on-chain transfer, but only works with wallets that can sign. A provider can offer both and let the customer choose. Our guide to [self-hosted wallet verification under the TFR](/guide/self-hosted-wallet-verification-tfr/) compares the methods, and the [Travel Rule ranking](/providers/travel-rule/) compares the reviewed providers.
+buyer_questions:
+  - Can your tool run a Satoshi test automatically, including setting the amount, the deposit address and the time limit?
+  - Which blockchains and assets does the test support, and how do you handle tokens where fees are paid in another asset?
+  - How do you match the incoming transfer to the right customer and request, and what happens if the amount or address is wrong?
+  - Is the test amount returned or credited to the customer, and who pays the network fee?
+  - What evidence do you keep for each test so an auditor can see that the check was done?
+faq:
+  - q: Why is it called a Satoshi test?
+    a: A satoshi is the smallest unit of bitcoin, and the test asks for a very small transfer. The EBA guidelines describe the same method as sending a predefined amount, preferably the smallest denomination of a given crypto-asset.
+  - q: Is a Satoshi test free?
+    a: Not for the customer. Sending the test transfer costs a network fee, which depends on the blockchain and how busy it is.
+  - q: Is a Satoshi test enough to prove ownership of a wallet under the TFR?
+    a: The EBA guidelines list it as one acceptable method and say firms should combine methods where one alone is not reliable enough. The choice depends on the wallet's capabilities and the risk of the transfer.
+sources:
+  - title: Guidelines on information requirements in relation to transfers of funds and certain crypto-assets transfers under Regulation (EU) 2023/1113 (EBA/GL/2024/11)
+    publisher: European Banking Authority
+    url: https://www.eba.europa.eu/sites/default/files/2024-07/6de6e9b9-0ed9-49cd-985d-c0834b5b4356/Travel%20Rule%20Guidelines.pdf
+    accessed: 2026-10
+  - title: Regulation (EU) 2023/1113 on information accompanying transfers of funds and certain crypto-assets
+    publisher: EUR-Lex
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1113
+    accessed: 2026-10
+  - title: "Guidance Note: Travel Rule Compliance for Digital Asset Businesses (12 August 2026)"
+    publisher: Securities Commission of The Bahamas
+    url: https://scb.gov.bs/wp-content/uploads/2026/08/GuidanceNoteTravelRuleComplianceforDigitalAssetBusinesses.pdf
+    accessed: 2026-10
+  - title: Bitcoin vocabulary
+    publisher: Bitcoin.org
+    url: https://bitcoin.org/en/vocabulary
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

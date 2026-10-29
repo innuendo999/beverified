@@ -1,0 +1,66 @@
+term: Risk-based approach
+abbr: RBA
+also_known_as: [Risk-sensitive approach]
+cluster: aml
+definition: >-
+  The risk-based approach (RBA) means a firm first identifies and assesses its money laundering and terrorist financing risks, then sets its controls in proportion: stronger measures where risk is higher and simplified measures where it is lower. It is the organizing principle of FATF, EU and UK AML rules.
+seo_description: "The risk-based approach means AML controls match assessed risk. What FATF Recommendation 1, EU and UK rules say, and how to test a vendor's risk model."
+rankings: [aml]
+related: [anti-money-laundering, customer-due-diligence, enhanced-due-diligence, simplified-due-diligence, fatf-recommendations, transaction-monitoring]
+body: |
+  ## What the risk-based approach means
+
+  A one-size-fits-all program gives every customer the same checks. The risk-based approach asks the firm to understand where its risk sits and to spend effort there. The European Banking Authority's [risk factor guidelines](https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2021/963637/Final%20Report%20on%20Guidelines%20on%20revised%20ML%20TF%20Risk%20Factors.pdf) define it in paragraph 12(l) as an approach in which authorities and firms "identify, assess and understand the ML/TF risks" they are exposed to and take AML/CFT measures proportionate to those risks.
+
+  It works at two levels. At the business-wide level, the firm assesses the risks of its customers, countries, products, transactions and delivery channels, and writes the result down. At the customer level, each customer gets a risk rating, and that rating decides how deep due diligence goes and how closely the relationship is monitored. A customer risk model only makes sense if it reflects the business-wide assessment.
+
+  ## What the rules say
+
+  The [FATF Recommendations](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html) open with it. Recommendation 1 asks countries to identify, assess and understand their risks. Where they find higher risks, their regime should address them, and where they find lower risks, they "should allow and encourage simplified measures as appropriate". Financial institutions should be required to "identify, assess and take effective and risk-based action to mitigate" their risks. Recommendation 10 then says firms should set the extent of customer due diligence "using a risk-based approach (RBA)".
+
+  In the EU, Article 8(1) of [Directive (EU) 2015/849](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015L0849-20210630) requires obliged entities to "take appropriate steps to identify and assess the risks of money laundering and terrorist financing", taking into account risk factors such as customers, countries or geographic areas, products, services, transactions or delivery channels. Those steps must be proportionate to the nature and size of the firm. Article 13(2) lets them set the extent of CDD measures on a risk-sensitive basis.
+
+  The UK version is [regulation 18 of the Money Laundering Regulations 2017](https://www.legislation.gov.uk/uksi/2017/692/regulation/18). A firm must identify and assess its risks, consider risk factors relating to its customers, the countries where it operates, its products or services, transactions and delivery channels, and keep an up-to-date written record of the steps it took. Regulation 28(12) then ties the extent of customer due diligence to that assessment.
+
+  ## What to check when you compare providers
+
+  In software, the RBA shows up as customer risk scoring and as rules that change checks and monitoring by risk tier. The firm owns the risk assessment, and a vendor's default model only gives it a starting point.
+
+  Ask how the risk score is calculated, which factors it uses and how they are weighted, whether you can change them, and whether every score change is explained and logged. In the UK, regulation 28(16) requires a firm to be able to show its supervisor that the extent of its measures fits the risks, so the reasoning behind each rating has to be on record. Our [AML software ranking](/providers/aml/) compares reviewed providers.
+buyer_questions:
+  - Which factors does your customer risk score use, how are they weighted, and can we change the weights?
+  - Can we see why a specific customer got their risk rating, factor by factor?
+  - Is every change to a customer's risk rating logged with the reason and the user or rule that made it?
+  - Can we link different due diligence and monitoring rules to each risk tier?
+  - How do you help us keep the customer risk model in line with our business-wide risk assessment?
+faq:
+  - q: What is the risk-based approach in AML?
+    a: It means a firm assesses its money laundering and terrorist financing risks and sets its controls in proportion. Higher-risk customers get enhanced checks and closer monitoring, while lower-risk customers may get simplified checks.
+  - q: Which FATF Recommendation covers the risk-based approach?
+    a: Recommendation 1, which deals with assessing risks and applying a risk-based approach. Recommendation 10 also says firms should set the extent of customer due diligence using a risk-based approach.
+  - q: Does the risk-based approach mean low-risk customers need no checks?
+    a: No. Every customer still goes through customer due diligence. The risk-based approach changes how deep the checks go and how often they are repeated, but it does not remove them.
+sources:
+  - title: The FATF Recommendations (Recommendations 1 and 10)
+    publisher: Financial Action Task Force
+    url: https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html
+    accessed: 2026-10
+  - title: Directive (EU) 2015/849 (consolidated text), Articles 8 and 13
+    publisher: EUR-Lex
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015L0849-20210630
+    accessed: 2026-10
+  - title: "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017, regulation 18"
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/uksi/2017/692/regulation/18
+    accessed: 2026-10
+  - title: "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017, regulation 28"
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/uksi/2017/692/regulation/28
+    accessed: 2026-10
+  - title: Guidelines on ML/TF risk factors (EBA/GL/2021/02)
+    publisher: European Banking Authority
+    url: https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2021/963637/Final%20Report%20on%20Guidelines%20on%20revised%20ML%20TF%20Risk%20Factors.pdf
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

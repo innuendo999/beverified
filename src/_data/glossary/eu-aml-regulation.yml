@@ -1,0 +1,63 @@
+term: EU Anti-Money Laundering Regulation
+abbr: AMLR
+also_known_as: [Regulation (EU) 2024/1624, EU AML single rulebook, AML Regulation]
+cluster: standards
+definition: The EU Anti-Money Laundering Regulation (AMLR), Regulation (EU) 2024/1624, sets one directly applicable set of anti-money laundering rules, including customer due diligence, for obliged entities across the EU. It applies from 10 July 2027 and, together with the sixth directive (AMLD6), forms the EU single rulebook.
+seo_description: "The EU AML Regulation (2024/1624) replaces national AML rules with one rulebook from 10 July 2027. What changes for KYC, AMLD6, AMLA and what to ask vendors."
+rankings: [aml]
+related: [amla, customer-due-diligence, eidas-2, ultimate-beneficial-owner, fatf-recommendations, crypto-asset-service-provider]
+body: |
+  ## What the AMLR changes
+
+  Until now, EU anti-money laundering rules sat mostly in directives, chiefly Directive (EU) 2015/849, the fourth AML directive. Each Member State wrote its own law to transpose them, so the detail differed from country to country. Recital 2 of the [AMLR](https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng) names the lack of direct applicability as a problem and says the rules for obliged entities are now set out "in a Regulation in order to achieve the desired uniformity of application."
+
+  The Regulation is dated 31 May 2024 and was published in the Official Journal on 19 June 2024, together with the regulation creating the [Anti-Money Laundering Authority](/glossary/amla/) and the sixth AML directive. The Dutch central bank, a national AML supervisor, sums up the timing: "The new AML/CFT framework will become applicable on 10 July 2027." Until then, national laws based on the old directives still apply.
+
+  The single rulebook has two parts. The AMLR applies directly to obliged entities. [Directive (EU) 2024/1640](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024L1640) (AMLD6) still has to be transposed and covers what Member States must set up: supervisors, financial intelligence units, central beneficial ownership registers and bank account registers. Its title states that it amends and repeals Directive (EU) 2015/849.
+
+  ## What it means for KYC and screening
+
+  [Customer due diligence](/glossary/customer-due-diligence/) rules now sit in the Regulation itself. The AMLA has consulted on [draft technical standards under Article 28(1)](https://www.amla.europa.eu/policy/public-consultations/consultation-draft-rts-customer-due-diligence_en) that specify how those requirements should be applied, including the information and documents to collect. The consultation ran from 9 February to 8 May 2026.
+
+  Other points from the recitals:
+
+  - Recital 66 says electronic identification under the eIDAS Regulation should be taken into account and accepted by obliged entities when they identify customers. That links remote onboarding to [eIDAS 2 and the EU Digital Identity Wallet](/glossary/eidas-2/).
+  - Recital 14 brings [crypto-asset service providers](/glossary/crypto-asset-service-provider/) within the Regulation.
+  - Recital 24 says professional football clubs and football agents should put anti-money laundering measures in place.
+  - Recital 18 says a Union-wide limit on large cash payments above EUR 10 000 should be laid down.
+
+  ## What to check when you compare providers
+
+  Until July 2027 firms work with two sets of rules: the national law in force today and the AMLR they are preparing for. Ask vendors how their due diligence data fields, risk scoring and [beneficial ownership](/glossary/ultimate-beneficial-owner/) checks will map to the AMLR and to the final AMLA standards, and whether rules can be set per country during the transition. Our [AML software ranking](/providers/aml/) compares the screening and monitoring side.
+buyer_questions:
+  - How will your customer due diligence data fields change once the AMLA technical standards under Article 28(1) of the AMLR are final?
+  - Can we run national rules and AMLR rules side by side in your product until 10 July 2027?
+  - Will your onboarding flow accept electronic identification under eIDAS, including the EU Digital Identity Wallet?
+  - How do you collect and verify beneficial ownership data, and how will that change under the AMLR?
+faq:
+  - q: When does the EU AML Regulation apply?
+    a: From 10 July 2027. Until then, obliged entities follow the national laws that transposed the earlier AML directives.
+  - q: What is the difference between the AMLR and AMLD6?
+    a: The AMLR (Regulation (EU) 2024/1624) applies directly to banks and other obliged entities. AMLD6 (Directive (EU) 2024/1640) has to be transposed into national law and covers supervisors, financial intelligence units and central registers. Together they form the single rulebook.
+  - q: Does the AMLR replace the fourth AML directive?
+    a: The AML package replaces the old directive-based system. AMLD6 amends and repeals Directive (EU) 2015/849, and the obligations for firms move into the directly applicable AMLR.
+sources:
+  - title: Regulation (EU) 2024/1624 on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing
+    publisher: EUR-Lex
+    url: https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng
+    accessed: 2026-10
+  - title: Directive (EU) 2024/1640 on the mechanisms to be put in place by Member States for the prevention of the use of the financial system for the purposes of money laundering or terrorist financing
+    publisher: EUR-Lex
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024L1640
+    accessed: 2026-10
+  - title: "Consultation on draft RTS on customer due diligence (Article 28(1) AMLR)"
+    publisher: Authority for Anti-Money Laundering and Countering the Financing of Terrorism (AMLA)
+    url: https://www.amla.europa.eu/policy/public-consultations/consultation-draft-rts-customer-due-diligence_en
+    accessed: 2026-10
+  - title: European AML/CFT framework
+    publisher: De Nederlandsche Bank
+    url: https://www.dnb.nl/en/sector-information/open-book-supervision/laws-and-eu-regulations/european-amlcft-framework/
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

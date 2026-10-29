@@ -1,0 +1,80 @@
+term: ISO/IEC 30107-3
+also_known_as: [ISO 30107-3, ISO/IEC 30107-3:2023, PAD testing standard]
+cluster: standards
+definition: ISO/IEC 30107-3 is the international standard for testing and reporting biometric presentation attack detection (PAD). It sets out how to evaluate a system against attacks such as photos, masks or screen replays and how to report the error rates, but it defines no pass mark and no levels.
+seo_description: "ISO/IEC 30107-3 is the standard for testing biometric presentation attack detection. What it covers, APCER and BPCER, why it has no levels, and what to ask."
+capability: liveness_pad
+rankings: [liveness-detection]
+related: [liveness-detection, injection-attack-detection, nist-sp-800-63, deepfake-identity-fraud, face-matching]
+body: |
+  ## What the standard covers
+
+  The full title is *Information technology: Biometric presentation attack detection, Part 3: Testing and reporting*. The [current edition](https://www.iso.org/standard/79520.html), the second, was published in January 2023; the first came out in 2017. According to ISO, it establishes three things: principles and methods for assessing the performance of presentation attack detection mechanisms, how to report the results of those evaluations, and a classification of known attack types (Annex A).
+
+  It does not standardize any particular PAD mechanism, does not describe countermeasures, algorithms or sensors, and does not assess the overall security of a system. Its scope is limited to attacks "at the biometric capture device during presentation". Attacks that bypass the capture device, such as injecting a video through a virtual camera, are outside it. Those are covered by separate guidance on [injection attack detection](/glossary/injection-attack-detection/).
+
+  For how liveness checks work in practice, see [liveness detection](/glossary/liveness-detection/). This page is about the test standard itself.
+
+  ## The metrics it reports
+
+  Two error rates appear in most test results. As accredited lab [iBeta summarizes them](https://ibeta.com/wp-content/uploads/2022/06/iBeta-Biometrics-ISO-PAD-and-FIDO-Comparison.pdf):
+
+  - **APCER** (attack presentation classification error rate) is "the proportion of attack presentations using the same PAI species that are incorrectly classified as bona fide presentations." In plain terms, it measures how often a given kind of fake gets through.
+  - **BPCER** (bona fide presentation classification error rate) is "the proportion of bona fide presentations incorrectly classified as presentation attacks." It measures how often a real person is rejected.
+
+  A PAI (presentation attack instrument) is the fake itself, and a PAI species is a class of fakes made the same way, for example printed photos or silicone masks. APCER is reported per species, so one headline number can hide a weak spot.
+
+  ## Where the pass levels come from
+
+  The standard tells a lab how to test and report. It does not say what score counts as a pass. The same iBeta document states that ISO standards "do not include an established set of metrics or limit that indicate 'certification.'" Levels come from labs and schemes.
+
+  [iBeta's own levels](https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/) are set by attacker time, expertise and artefact cost: up to $30 of materials at Level 1, up to $300 at Level 2, and hyper-realistic masks at Level 3. To pass, the share of successful attacks must stay at 0% for Level 1, 1% for Level 2 and 5% for Level 3, and iBeta limits BPCER to 15% (10% or less at Level 3). iBeta is accredited by NIST's NVLAP program for this testing, and says a pass "does not translate to a certification of the vendor product."
+
+  Some rules refer to the standard directly. NIST SP 800-63A-4, final since July 2025, says "All biometric presentation attack detection tests SHALL be conformant to ISO/IEC 30107-3:2023." Its companion, SP 800-63B-4, says testing SHOULD show an impostor attack presentation accept rate below 0.07. See [NIST SP 800-63](/glossary/nist-sp-800-63/).
+
+  ## What to check when you compare providers
+
+  Ask for the lab letter, and check the edition of the standard, the level, the date, the product version and the capture setup it names. Look at which attack species were used and what BPCER the test showed, not only whether attacks got through. Check whether the test covered the PAD subsystem alone or the full system with face matching. Our [liveness detection ranking](/providers/liveness-detection/) marks which reviewed providers have a confirmed result.
+buyer_questions:
+  - Which lab tested you under ISO/IEC 30107-3, which edition (2017 or 2023), at what level, and when?
+  - Can we see the full confirmation letter, including product version, capture devices and attack species tested?
+  - What BPCER did the test record, and what rejection rate do real users see in production?
+  - Did the test cover only the PAD subsystem or the full system including face matching?
+  - Has the product been tested separately for injection attacks, which this standard does not cover?
+faq:
+  - q: Is ISO/IEC 30107-3 a certification?
+    a: No. It is a standard for how to test and report presentation attack detection. It sets no pass mark, and labs such as iBeta state that a passing result is not a certification of the product.
+  - q: What are APCER and BPCER?
+    a: APCER is the share of attacks of one type that the system wrongly accepts as genuine. BPCER is the share of genuine users that the system wrongly rejects as attacks. A good result needs both to be low.
+  - q: Does ISO/IEC 30107-3 define Level 1 and Level 2?
+    a: No. Levels 1, 2 and 3 are test levels set by labs such as iBeta, based on attacker time, skill and artefact cost. The standard only defines how to test and report.
+  - q: What is the latest version of ISO/IEC 30107-3?
+    a: The second edition, ISO/IEC 30107-3:2023, published in January 2023. It replaced the 2017 first edition.
+sources:
+  - title: "ISO/IEC 30107-3:2023 Information technology: Biometric presentation attack detection, Part 3: Testing and reporting"
+    publisher: ISO
+    url: https://www.iso.org/standard/79520.html
+    accessed: 2026-10
+  - title: ISO/IEC 30107-3:2023 (standard history)
+    publisher: Estonian Centre for Standardisation and Accreditation (EVS)
+    url: https://www.evs.ee/en/iso-iec-30107-3-2023
+    accessed: 2026-10
+  - title: Biometrics ISO PAD and FIDO comparison
+    publisher: iBeta Quality Assurance
+    url: https://ibeta.com/wp-content/uploads/2022/06/iBeta-Biometrics-ISO-PAD-and-FIDO-Comparison.pdf
+    accessed: 2026-10
+  - title: ISO 30107-3 presentation attack detection confirmation letters
+    publisher: iBeta Quality Assurance
+    url: https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/
+    accessed: 2026-10
+  - title: "NIST SP 800-63A-4, Digital Identity Guidelines: Identity Proofing and Enrollment"
+    publisher: National Institute of Standards and Technology
+    url: https://pages.nist.gov/800-63-4/sp800-63a.html
+    accessed: 2026-10
+  - title: "NIST SP 800-63B-4, Digital Identity Guidelines: Authentication and Authenticator Management"
+    publisher: National Institute of Standards and Technology
+    url: https://pages.nist.gov/800-63-4/sp800-63b.html
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

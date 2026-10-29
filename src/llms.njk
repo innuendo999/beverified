@@ -33,6 +33,11 @@ Key facts for citation:
 {% for a in collections.articles | inSection("guide") %}
 - [{{ a.data.title }}]({{ site.url }}{{ a.url }}): {{ a.data.seoDescription }}{% endfor %}
 
+## Glossary
+- [KYC, AML and identity verification glossary]({{ site.url }}/glossary/)
+{%- for t in glossaryTerms %}
+- [{{ t.term }}{% if t.abbr %} ({{ t.abbr }}){% endif %}]({{ site.url }}{{ t.url }}): {{ t.definition }}{% endfor %}
+
 ## Research
 {% for a in collections.articles | inSection("publications") %}
 - [{{ a.data.title }}]({{ site.url }}{{ a.url }}): {{ a.data.seoDescription }}{% endfor %}

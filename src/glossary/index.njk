@@ -1,0 +1,27 @@
+{#- Glossary hub. Terms: src/_data/glossary/*.yml. Every term is a crawlable link (no script needed). -#}
+<div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li class="sep" aria-hidden="true">›</li><li aria-current="page">Glossary</li></ol></nav>
+  <header class="text-hero gl-hub__hero">
+    <h1 class="h-display">KYC, AML and identity verification glossary</h1>
+    <p>{{ glossaryTerms.length }} terms compliance and product teams meet when they choose a KYC, KYB, AML, age assurance or Travel Rule provider. Each entry gives a plain definition, the rule behind it, questions to ask a vendor and, where we track it, the reviewed providers that offer it.</p>
+  </header>
+  <nav class="gl-hub__jump" aria-label="Glossary sections">
+    {%- for g in groups %}<a class="pill-link" href="#{{ g.key }}">{{ g.label }} <small>{{ g.terms.length }}</small></a>{% endfor %}
+  </nav>
+  <main id="main" class="gl-hub">
+    {%- for g in groups %}
+    <section class="gl-hub__group" id="{{ g.key }}" aria-labelledby="{{ g.key }}-h">
+      <h2 id="{{ g.key }}-h" class="h-section">{{ g.label }}</h2>
+      <ul class="gl-hub__list">
+        {%- for x in g.terms %}
+        <li><a href="{{ x.url }}"><b>{{ x.term }}{% if x.abbr %} ({{ x.abbr }}){% endif %}</b></a><p>{{ x.definition | truncate(150) }}</p></li>
+        {%- endfor %}
+      </ul>
+    </section>
+    {%- endfor %}
+    <section class="gl-hub__group" aria-labelledby="az-h">
+      <h2 id="az-h" class="h-section">A to Z</h2>
+      <ul class="gl-hub__az">{% for x in glossaryTerms %}<li><a href="{{ x.url }}">{{ x.term }}{% if x.abbr %} ({{ x.abbr }}){% endif %}</a></li>{% endfor %}</ul>
+    </section>
+  </main>
+</div>

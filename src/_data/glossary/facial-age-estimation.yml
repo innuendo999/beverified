@@ -1,0 +1,66 @@
+term: Facial age estimation
+also_known_as: [FAE, Face-based age estimation, Selfie age estimation]
+cluster: age
+definition: Facial age estimation is an age estimation method that analyzes the features of a face in a selfie or video to predict a person's age, without reading an identity document. Ofcom lists it among the methods capable of highly effective age assurance, used with a challenge age buffer.
+seo_description: "Facial age estimation predicts age from a selfie. How it works, how NIST FATE measures accuracy (MAE, challenge 25), what Ofcom expects and what to ask vendors."
+capability: age_facial_estimation
+rankings: [age-verification]
+related: [age-estimation, age-assurance, age-verification, liveness-detection, iso-iec-27566-1, face-matching]
+body: |
+  ## How facial age estimation works
+
+  Ofcom's guidance describes facial age estimation as working "by analysing the features of a user's face to estimate their age". The user takes a selfie or a short video, and the algorithm returns an estimated age, or a confidence that the person is over a threshold such as 18.
+
+  It is a form of [age estimation](/glossary/age-estimation/), not [face matching](/glossary/face-matching/). Nothing is compared with a document, so the result has a margin of error. That is why Ofcom's guidance expects a challenge age: with a legal age of 18 and a challenge age of 25, users estimated at 25 or above pass, and the rest go on to a second check.
+
+  A face scan can be attacked with a photo, a mask or a video of an adult. ISO/IEC 27566-1 has a clause on biometric presentation attacks against age assurance systems, so the same [liveness detection](/glossary/liveness-detection/) questions apply here as in identity verification.
+
+  ## How accuracy is measured
+
+  NIST measures accuracy in its [Face Analysis Technology Evaluation (FATE) Age Estimation and Verification](https://pages.nist.gov/frvt/html/frvt_age_estimation.html), which tests algorithms that developers submit. It reports several measures:
+
+  - Mean absolute error (MAE): the average gap, in years, between estimated and true age. NIST's headline figure averages 26 MAE values, for two sexes and 13 ages from 18 to 30. A separate child safety figure averages MAE for ages 13 to 16.
+  - Age verification error rates. NIST sets each algorithm's threshold so that the false positive rate for males aged 14 to 17 is about 0.1, then reports how often females of that age are wrongly passed as over 18, and how often people aged 18 to 30 are wrongly classed as under 18.
+  - Challenge 25: how often 17 year olds are estimated at 25 or above.
+
+  The photos come from visa and immigration applications, border crossings and mugshots, so image quality varies by dataset. NIST's [2024 report](https://nvlpubs.nist.gov/nistpubs/ir/2024/NIST.IR.8525.pdf) (NIST IR 8525) found that accuracy is "strongly influenced by algorithm, sex, image quality, region-of-birth, age itself", that MAE values are generally higher in women, and that no algorithm is best on every factor. NIST does not set pass marks: the report does not recommend age verification thresholds because they "differ across applications and jurisdictions". The results page is updated as new algorithms arrive; it showed an update of 29 September 2026 when we checked.
+
+  ## What to check when you compare providers
+
+  Ask whether the exact model you will use has been evaluated in NIST FATE, and look at the result for your use case. A gambling site needs to know how often 17 year olds pass as adults, while a platform with a 13+ minimum age needs the 13 to 16 results. An average MAE across all ages hides both.
+
+  NIST tests still photos from official sources. A selfie taken on a phone in poor light is different, so ask for the provider's own results under live conditions and how it handles users who cannot get a clear capture. Our [age verification ranking](/providers/age-verification/) shows which reviewed providers offer facial age estimation.
+buyer_questions:
+  - Has the exact model we would use been evaluated in NIST FATE Age Estimation and Verification, and under which submission name?
+  - What is your error rate for 13 to 17 year olds being estimated as over 18, and at what challenge age?
+  - How does accuracy differ by sex, skin tone and age group in your own testing?
+  - Is the face image deleted after the estimate, and does any image or template leave the user's device?
+  - How do you detect photos, masks, screen replays and injected video, and has that been tested by a lab?
+  - What happens when the capture is too poor to estimate an age?
+faq:
+  - q: How accurate is facial age estimation?
+    a: It depends on the algorithm, the person's age and sex, image quality and region of birth, according to NIST. NIST publishes mean absolute error and false positive rates per algorithm but does not set a pass mark.
+  - q: Does facial age estimation identify the person?
+    a: No. It estimates age from facial features and does not compare the face with a document or a database of known people. That comparison is face matching, a different process.
+  - q: Is facial age estimation allowed under the UK Online Safety Act?
+    a: Ofcom lists facial age estimation among the methods capable of being highly effective age assurance. Its guidance expects a challenge age, such as 25 for an 18+ service, with a second check for users estimated below it.
+sources:
+  - title: Face Analysis Technology Evaluation (FATE) Age Estimation and Verification
+    publisher: NIST
+    url: https://pages.nist.gov/frvt/html/frvt_age_estimation.html
+    accessed: 2026-10
+  - title: "NIST IR 8525: Face Analysis Technology Evaluation: Age Estimation and Verification"
+    publisher: NIST
+    url: https://nvlpubs.nist.gov/nistpubs/ir/2024/NIST.IR.8525.pdf
+    accessed: 2026-10
+  - title: Guidance on highly effective age assurance and other Part 5 duties
+    publisher: Ofcom
+    url: https://www.ofcom.org.uk/siteassets/resources/documents/consultations/category-1-10-weeks/statement-age-assurance-and-childrens-access/guidance-on-highly-effective-age-assurance-and-other-part-5-duties.pdf
+    accessed: 2026-10
+  - title: ISO/IEC 27566-1:2025 preview (foreword, scope, terms and table of contents)
+    publisher: VDE Verlag (IEC standards distributor)
+    url: https://assets.vde-verlag.de/iec-normen/preview-pdf/info_isoiec27566-1%7Bed1.0%7Den.pdf
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

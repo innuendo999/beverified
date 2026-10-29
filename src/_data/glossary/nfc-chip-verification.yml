@@ -1,0 +1,67 @@
+term: NFC chip verification
+also_known_as: [NFC passport check, eMRTD chip reading, RFID chip verification, NFC document verification]
+cluster: identity
+definition: NFC chip verification reads the contactless chip in an ePassport or electronic ID card with a phone and checks the issuing state's digital signature over the data, so a verifier can confirm the chip data is genuine and unaltered. Extra chip checks can also show that the chip is not a clone.
+seo_description: "NFC chip verification reads an ePassport chip and checks the issuer's signature. Passive, active and chip authentication under ICAO Doc 9303 explained."
+capability: nfc
+rankings: [identity-verification]
+related: [document-verification, face-matching, liveness-detection, identity-proofing, ekyc]
+body: |
+  ## How NFC chip verification works
+
+  An electronic passport or ID card (an eMRTD in ICAO terms) has a contactless chip that holds the holder's details and facial image, signed by the issuing state. The rules for it are in ICAO Doc 9303, Machine Readable Travel Documents, whose eighth edition (2021) has 13 parts. Part 11 covers the security mechanisms.
+
+  A read happens in three stages.
+
+  The first stage opens the chip, which does not release data to any phone that taps it. Under Basic Access Control (BAC), the access key is derived from the document number, date of birth and date of expiry in the machine readable zone, so the app scans the data page first. PACE (Password Authenticated Connection Establishment) is the stronger replacement, and Doc 9303 says that if both the document and the reader support PACE, "PACE SHALL be used." Neither protocol proves the document is genuine. They protect the connection.
+
+  The second stage is passive authentication. The reader checks the issuer's digital signature on the Document Security Object and confirms that the data on the chip matches it. Doc 9303 calls this the basic security feature of the chip. To trust the signature, the reader validates the Document Signer Certificate against the issuing country's Country Signing CA certificate and checks revocation lists. The [ICAO Public Key Directory](https://www.icao.int/icao-pkd/frequently-asked-questions) distributes these certificates, revocation lists and master lists, and its contents can be downloaded for free.
+
+  The third stage checks that the chip itself is authentic. Passive authentication "does not prevent exact copying of the contactless IC's content or chip substitution," according to [Doc 9303 Part 11](https://www.icao.int/Security/FAL/TRIP/PublishingImages/Pages/Publications/Doc%209303%207th%20Part11.pdf). Two optional checks close that gap. In active authentication the chip signs a challenge with a private key that cannot be read out of the chip. Chip authentication uses a Diffie-Hellman key agreement that authenticates the chip and sets up strong session keys. Because they are optional, not every document supports them.
+
+  Our publication on [NFC passports](/publications/nfc-enabled-passports-what-compliance-teams-need-to-know/) covers each step in more detail.
+
+  ## What the rules say
+
+  The European Banking Authority's guidelines on remote customer onboarding say that where the data is contained in the chip of a national identity card and it is technically feasible to access it, firms should consider using that data to check consistency with other information (paragraph 35). In the US, [NIST SP 800-63A-4](https://pages.nist.gov/800-63-4/sp800-63a.html) treats cryptographic verification of the source and integrity of digital evidence as an accepted validation method, and requires it for its highest evidence strength, SUPERIOR.
+
+  ## What to check when you compare providers
+
+  A chip read proves the document. It says nothing about who holds the phone, so it still needs [face matching](/glossary/face-matching/) against the chip photo and [liveness detection](/glossary/liveness-detection/). NFC also needs a phone with NFC hardware, so plan a fallback for users without one. When you compare vendors, ask whether they validate the full certificate chain to the country CSCA or only check that the signature is internally consistent, which countries they can fully chain, and whether they support PACE. Our [identity verification ranking](/providers/identity-verification/) shows which reviewed providers document NFC chip reading.
+buyer_questions:
+  - Do you validate the chip signature against the issuing country's CSCA certificate and check revocation lists, and for which countries can you complete that chain?
+  - Do you run active authentication or chip authentication when the document supports it, and how do you report a document that supports neither?
+  - Do you support PACE as well as BAC?
+  - Is NFC available in a web flow or only in your native mobile SDK, and what is the fallback for users without NFC?
+  - Do you match the selfie against the chip photo or the printed photo?
+faq:
+  - q: What is the difference between passive and active authentication?
+    a: Passive authentication checks the issuer's signature over the chip data, so it proves the data is genuine and unchanged. Active authentication has the chip sign a fresh challenge with a private key it cannot export, which proves the chip itself is not a copy.
+  - q: Do all passports have an NFC chip?
+    a: No. Only electronic passports (eMRTDs) carry a contactless chip, and older or non-electronic documents have none. Those still need an image-based document check.
+  - q: Does NFC chip verification replace a selfie check?
+    a: No. The chip proves the document is genuine but not that the person holding the phone is its owner. A face match against the chip photo and a liveness check are still needed.
+sources:
+  - title: "Doc 9303 Machine Readable Travel Documents, Eighth Edition 2021, Part 1: Introduction"
+    publisher: ICAO
+    url: https://www.icao.int:443/publications/Documents/9303_p1_cons_en.pdf
+    accessed: 2026-10
+  - title: "Doc 9303 Machine Readable Travel Documents, Seventh Edition 2015, Part 11: Security Mechanisms for MRTDs"
+    publisher: ICAO
+    url: https://www.icao.int/Security/FAL/TRIP/PublishingImages/Pages/Publications/Doc%209303%207th%20Part11.pdf
+    accessed: 2026-10
+  - title: "ICAO PKD: Frequently asked questions"
+    publisher: ICAO
+    url: https://www.icao.int/icao-pkd/frequently-asked-questions
+    accessed: 2026-10
+  - title: Guidelines on the use of remote customer onboarding solutions under Article 13(1) of Directive (EU) 2015/849 (EBA/GL/2022/15)
+    publisher: European Banking Authority
+    url: https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2022/EBA-GL-2022-15%20GL%20on%20remote%20customer%20onboarding/1043884/Guidelines%20on%20the%20use%20of%20Remote%20Customer%20Onboarding%20Solutions.pdf
+    accessed: 2026-10
+  - title: "NIST SP 800-63A-4, Digital Identity Guidelines: Identity Proofing and Enrollment (July 2025)"
+    publisher: National Institute of Standards and Technology
+    url: https://pages.nist.gov/800-63-4/sp800-63a.html
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

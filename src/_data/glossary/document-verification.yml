@@ -1,0 +1,63 @@
+term: Document verification
+also_known_as: [ID document verification, Document authentication, ID verification]
+cluster: identity
+definition: Document verification checks that an identity document, such as a passport, ID card or driver's license, is genuine, unaltered and valid, and reads the holder's details from it. In remote onboarding it works from a photo or video of the document and is usually paired with a selfie and face match.
+seo_description: "Document verification checks that a passport or ID card is genuine and unaltered. How it works, what EBA and NIST rules say, and what to ask vendors."
+rankings: [identity-verification]
+related: [nfc-chip-verification, face-matching, liveness-detection, identity-proofing, synthetic-identity-fraud]
+body: |
+  ## How document verification works
+
+  The customer photographs or films their document, and software runs a series of checks on the image:
+
+  - Does the document match a known template for that country, type and version, and is all the expected information there?
+  - Are the security features of the original, such as holograms, present?
+  - Does the machine readable zone (MRZ) decode correctly, do its check digits work, and does it match the printed data? Has the document expired?
+  - Are there signs of edited text, a replaced photo, a printed copy or a document shown on a screen?
+
+  Document templates come from reference databases. In Europe, the Council of the EU publishes [PRADO](https://www.consilium.europa.eu/prado/en/prado-start-page.html), a public register of authentic identity and travel documents supplied by document experts in EU member states, Iceland, Norway and Switzerland. The register itself says it is not yet complete.
+
+  An image check can only judge what the camera shows. If the document has a chip, an [NFC chip read](/glossary/nfc-chip-verification/) can verify the issuer's digital signature instead, which is a stronger test. Either way, document verification proves the document, not the person holding it, so it is paired with [face matching](/glossary/face-matching/) and [liveness detection](/glossary/liveness-detection/).
+
+  ## What the rules and standards say
+
+  The European Banking Authority's [guidelines on remote customer onboarding](https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2022/EBA-GL-2022-15%20GL%20on%20remote%20customer%20onboarding/1043884/Guidelines%20on%20the%20use%20of%20Remote%20Customer%20Onboarding%20Solutions.pdf), which apply from 2 October 2023, cover this step in paragraphs 33 to 36. Where a firm accepts a reproduction of a document instead of the original, it should check that the reproduction is reliable: that it includes the security features of the original, that personal data has not been altered and that it was not displayed on a screen (paragraph 33). Where data can be read from a chip and access is technically feasible, firms should consider using it to check consistency (paragraph 35). Where available, they should verify the security features embedded in the document (paragraph 36).
+
+  In the US, [NIST SP 800-63A-4](https://pages.nist.gov/800-63-4/sp800-63a.html) requires the provider to confirm that evidence shows no signs of being counterfeit or tampered with, contains security features, and is in the correct format with complete information. Its requirements for automated validation of physical evidence include comparing MRZ data with the printed data, live capture of the document, and passive or active document presence checks. Providers must assess the performance of their document checks, should have them tested periodically by independent entities, and must make the results public.
+
+  ## What to check when you compare providers
+
+  The total number of supported documents tells you little by itself. Ask how many templates are fully supported for the countries you serve, how fast new document versions are added, and what the provider does with a document it does not recognize. Ask for measured error rates for fraudulent documents accepted and genuine documents rejected, and who measured them. Check whether the provider detects screen replays and printed copies, and what share of checks go to manual review. Our [identity verification ranking](/providers/identity-verification/) compares document coverage and testing evidence.
+buyer_questions:
+  - How many document templates do you fully support for our countries, and how quickly do you add new versions?
+  - What are your measured false acceptance and false rejection rates for documents, and who tested them?
+  - How do you detect screen replays, printed copies and edited images?
+  - What happens to a document you do not recognize, and what share of checks go to manual review?
+  - Can you read the chip where the document has one, and what result do we get when the chip check and the image check disagree?
+faq:
+  - q: What is the difference between document verification and identity verification?
+    a: Document verification checks that the ID document is genuine and reads its data. Identity verification also checks that the person presenting it is the document holder, usually with a face match and a liveness check.
+  - q: Can document verification detect fake IDs?
+    a: It can catch many forgeries by checking templates, security features, MRZ data and signs of tampering, but an image check only judges what the camera shows. Reading the chip, where the document has one, gives a cryptographic check of the issuer's signature.
+  - q: What is the MRZ on a passport?
+    a: The machine readable zone is the coded area of the data page defined by ICAO Doc 9303. It holds details such as the document number, date of birth and expiry date with check digits, and document verification compares it with the printed data.
+sources:
+  - title: Guidelines on the use of remote customer onboarding solutions under Article 13(1) of Directive (EU) 2015/849 (EBA/GL/2022/15)
+    publisher: European Banking Authority
+    url: https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2022/EBA-GL-2022-15%20GL%20on%20remote%20customer%20onboarding/1043884/Guidelines%20on%20the%20use%20of%20Remote%20Customer%20Onboarding%20Solutions.pdf
+    accessed: 2026-10
+  - title: "NIST SP 800-63A-4, Digital Identity Guidelines: Identity Proofing and Enrollment (July 2025)"
+    publisher: National Institute of Standards and Technology
+    url: https://pages.nist.gov/800-63-4/sp800-63a.html
+    accessed: 2026-10
+  - title: PRADO, Public Register of Authentic identity and travel Documents Online
+    publisher: Council of the European Union
+    url: https://www.consilium.europa.eu/prado/en/prado-start-page.html
+    accessed: 2026-10
+  - title: "Doc 9303 Machine Readable Travel Documents, Eighth Edition 2021, Part 1: Introduction"
+    publisher: ICAO
+    url: https://www.icao.int:443/publications/Documents/9303_p1_cons_en.pdf
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

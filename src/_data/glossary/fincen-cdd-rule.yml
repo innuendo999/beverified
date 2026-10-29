@@ -1,0 +1,70 @@
+term: FinCEN CDD Rule
+also_known_as: [Customer Due Diligence Requirements for Financial Institutions, CDD Final Rule, Beneficial Ownership Rule]
+cluster: standards
+definition: The FinCEN CDD Rule is the US regulation that requires banks, broker-dealers, mutual funds, futures commission merchants and introducing brokers in commodities to identify and verify the beneficial owners of legal entity customers. Published in May 2016 and codified at 31 CFR 1010.230, it applied from 11 May 2018.
+seo_title: "What Is the FinCEN CDD Rule? | BeVerified"
+seo_description: "The FinCEN CDD Rule (31 CFR 1010.230) requires US financial institutions to verify beneficial owners of business customers. The four core elements explained."
+rankings: [kyb, aml]
+related: [ultimate-beneficial-owner, customer-due-diligence, know-your-business, ongoing-business-monitoring, suspicious-activity-report]
+body: |
+  ## What the rule requires
+
+  FinCEN published the final rule, "Customer Due Diligence Requirements for Financial Institutions", in the [Federal Register](https://www.federalregister.gov/documents/2016/05/11/2016-10567/customer-due-diligence-requirements-for-financial-institutions) on 11 May 2016 (81 FR 29398). It took effect on 11 July 2016, and covered institutions had to comply by 11 May 2018. It covers banks, brokers or dealers in securities, mutual funds, futures commission merchants and introducing brokers in commodities.
+
+  In the preamble FinCEN sets out four core elements of [customer due diligence](/glossary/customer-due-diligence/):
+
+  1. customer identification and verification;
+  2. beneficial ownership identification and verification;
+  3. understanding the nature and purpose of customer relationships to develop a customer risk profile;
+  4. ongoing monitoring for reporting suspicious transactions and, on a risk basis, maintaining and updating customer information.
+
+  FinCEN noted that the first element was already an AML program requirement and that the third and fourth were already implicitly required. The rule made the second a new requirement and amended the AML program rules to make the third and fourth explicit, for example at 31 CFR 1020.210(a)(2)(v) for banks.
+
+  ## Who counts as a beneficial owner
+
+  [31 CFR 1010.230](https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-B/section-1010.230) has two prongs. Under the ownership prong, a beneficial owner is each individual who, directly or indirectly, owns 25 percent or more of the equity interests of a legal entity customer. Under the control prong, it is a single individual with significant responsibility to control, manage or direct the customer, such as an executive officer or senior manager. So a firm always identifies one control person and up to four owners. Where a trust holds 25 percent or more, the trustee counts as the owner.
+
+  A legal entity customer is a corporation, limited liability company or other entity created by filing a public document, a general partnership, or a similar foreign entity, that opens an account. The rule excludes many regulated entities, such as regulated financial institutions and certain SEC-registered entities, and pooled investment vehicles and certain nonprofits are subject only to the control prong.
+
+  ## Recent changes and common confusions
+
+  A [FinCEN order](https://www.fincen.gov/system/files/2026-02/FinCEN-Order-CCDExceptiveRelief.pdf) dated 13 February 2026 (FIN-2026-R001) gives exceptive relief from paragraph (b), which required beneficial owners to be identified and verified at each new account opening. Institutions may instead do it when a legal entity customer first opens an account, when they know of facts that call the earlier information into question, and as their risk-based procedures require. All other AML obligations stay in place.
+
+  The CDD Rule is often confused with Corporate Transparency Act reporting. The CDD Rule puts the duty on financial institutions to collect beneficial ownership from their customers. The Corporate Transparency Act made companies report to FinCEN, and FinCEN's [final rule](https://www.fincen.gov/BOI), effective 14 August 2026, makes US companies and US persons permanently exempt from that reporting. US banks therefore rely on their own collection under the CDD Rule. Compare this with the EU and UK tests on our [ultimate beneficial owner](/glossary/ultimate-beneficial-owner/) page, and see our [KYB ranking](/providers/kyb/) for tools that support the checks.
+buyer_questions:
+  - Does your KYB flow capture both prongs of 31 CFR 1010.230, every 25 percent equity owner and one control person?
+  - Can we keep what the customer declared about its owners and the verification evidence for each person in one audit trail?
+  - How do you calculate indirect ownership through intermediate entities to find 25 percent owners?
+  - Can we switch beneficial ownership re-verification to event-based triggers under FinCEN's February 2026 exceptive relief?
+  - Do you apply the rule's exclusions, such as control prong only for pooled investment vehicles, automatically?
+faq:
+  - q: What are the four core elements of CDD under FinCEN's rule?
+    a: Customer identification and verification, beneficial ownership identification and verification, understanding the nature and purpose of customer relationships to build a risk profile, and ongoing monitoring to report suspicious transactions and keep customer information up to date on a risk basis.
+  - q: When did the FinCEN CDD Rule take effect?
+    a: It was published on 11 May 2016, became effective on 11 July 2016, and covered financial institutions had to comply by 11 May 2018.
+  - q: Does the end of BOI reporting for US companies change the CDD Rule?
+    a: No. FinCEN's August 2026 final rule exempts US companies from reporting to FinCEN under the Corporate Transparency Act. Banks still collect and verify beneficial ownership from legal entity customers under 31 CFR 1010.230.
+sources:
+  - title: Customer Due Diligence Requirements for Financial Institutions, final rule (81 FR 29398, 11 May 2016)
+    publisher: Federal Register, FinCEN
+    url: https://www.federalregister.gov/documents/2016/05/11/2016-10567/customer-due-diligence-requirements-for-financial-institutions
+    accessed: 2026-10
+  - title: 31 CFR 1010.230, Beneficial ownership requirements for legal entity customers
+    publisher: eCFR
+    url: https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-B/section-1010.230
+    accessed: 2026-10
+  - title: Order Granting Exceptive Relief from Certain Customer Due Diligence Rule Requirements (FIN-2026-R001)
+    publisher: FinCEN
+    url: https://www.fincen.gov/system/files/2026-02/FinCEN-Order-CCDExceptiveRelief.pdf
+    accessed: 2026-10
+  - title: Beneficial ownership information reporting
+    publisher: FinCEN
+    url: https://www.fincen.gov/BOI
+    accessed: 2026-10
+  - title: 31 CFR 1020.210 (banks), ongoing customer due diligence procedures
+    publisher: eCFR
+    url: https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1020/subpart-B/section-1020.210
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

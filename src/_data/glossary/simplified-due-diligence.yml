@@ -1,0 +1,79 @@
+term: Simplified due diligence
+abbr: SDD
+also_known_as: [Simplified customer due diligence, Simplified CDD]
+cluster: aml
+definition: >-
+  Simplified due diligence (SDD) lets a regulated firm reduce the amount, timing or type of customer due diligence when it has assessed a customer or transaction as low risk. It is not an exemption: the firm still applies every CDD measure, monitors the relationship and reports suspicions.
+seo_description: "SDD lets a firm scale down customer due diligence for low-risk cases. What FATF, EU and UK rules allow, when SDD must stop, and what to ask vendors."
+rankings: [aml]
+related: [customer-due-diligence, enhanced-due-diligence, risk-based-approach, know-your-customer, eu-aml-regulation]
+body: |
+  ## What simplified due diligence allows
+
+  SDD is the low-risk end of the [risk-based approach](/glossary/risk-based-approach/). [FATF Recommendation 1](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html) says that where countries identify lower risks, "they should allow and encourage simplified measures as appropriate".
+
+  The checks get lighter, but no check is dropped. Guideline 4.40 of the European Banking Authority's [risk factor guidelines](https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2021/963637/Final%20Report%20on%20Guidelines%20on%20revised%20ML%20TF%20Risk%20Factors.pdf) says: "SDD is not an exemption from any of the CDD measures." Firms may adjust the amount, timing or type of each measure. Guideline 4.41 gives examples:
+
+  - verifying identity later, for example once a transaction threshold is passed;
+  - collecting less information for identification, verification or monitoring;
+  - accepting information from the customer instead of an independent source to verify the beneficial owner (but not to verify the customer);
+  - updating CDD and reviewing the relationship less often;
+  - monitoring transactions less often or less intensively.
+
+  The same guideline warns that SDD must not become a de facto exemption from keeping CDD information up to date. Guideline 4.43 adds that SDD does not remove the duty to report suspicious transactions.
+
+  ## What the rules say
+
+  In the EU, Article 15 of [Directive (EU) 2015/849](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015L0849-20210630) lets member states allow simplified measures in lower-risk areas. Before applying them, a firm must "ascertain that the business relationship or the transaction presents a lower degree of risk" (Article 15(2)), and it must still carry out enough monitoring to detect unusual or suspicious transactions (Article 15(3)).
+
+  From 10 July 2027 the EU rules move to Article 33 of the AML Regulation, Regulation (EU) 2024/1624. In its consultation on customer due diligence standards, the Anti-Money Laundering Authority said Article 33 "already provides a range of measures" for simplification. Its draft standards add detail, for example on updating customer data less often in low-risk cases.
+
+  In the UK, [regulation 37 of the Money Laundering Regulations 2017](https://www.legislation.gov.uk/uksi/2017/692/regulation/37) allows SDD where the firm decides the relationship or transaction "presents a low degree of risk", taking its own risk assessment into account. The firm may adjust the extent, timing or type of measures, but it must keep enough monitoring to detect unusual or suspicious transactions.
+
+  ## When SDD has to stop
+
+  UK regulation 37(8) says a firm must not continue SDD if it doubts information it collected earlier, if its risk assessment changes and the case is no longer low risk, if it suspects money laundering or terrorist financing, or if any of the enhanced due diligence cases in regulation 33(1) applies. At that point standard [customer due diligence](/glossary/customer-due-diligence/), or [enhanced due diligence](/glossary/enhanced-due-diligence/), takes over.
+
+  ## What to check when you compare providers
+
+  To support SDD, the software has to run a lighter flow for some customers and move them to full checks when something changes. Ask whether the product supports risk-tiered onboarding, what triggers a step-up to full checks, and whether the reason a customer was placed in the low-risk tier is logged for audit. Our [AML software ranking](/providers/aml/) compares reviewed providers.
+buyer_questions:
+  - Can we configure a lighter onboarding flow for customers we assess as low risk, and who controls the criteria?
+  - What events move a customer out of the simplified flow, and does the step-up to full CDD happen automatically?
+  - Is the reason for each low-risk classification stored with the customer record for audit?
+  - Can we set different review and monitoring frequencies for low-risk customers without switching monitoring off?
+faq:
+  - q: Is simplified due diligence an exemption from KYC?
+    a: No. The firm still applies each customer due diligence measure, keeps monitoring and reports suspicions. It only reduces the amount, timing or type of checks, for example verifying identity later or reviewing the file less often.
+  - q: When can a firm use simplified due diligence?
+    a: When it has assessed the customer or transaction as low risk, taking its own risk assessment into account. It must stop if it doubts the information, suspects money laundering or the risk picture changes.
+  - q: What is the difference between SDD, CDD and EDD?
+    a: CDD is the standard set of checks. SDD scales those checks down for low-risk cases, and EDD adds extra checks on top of CDD for higher-risk cases.
+sources:
+  - title: The FATF Recommendations (Recommendation 1)
+    publisher: Financial Action Task Force
+    url: https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html
+    accessed: 2026-10
+  - title: Directive (EU) 2015/849 (consolidated text), Article 15
+    publisher: EUR-Lex
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015L0849-20210630
+    accessed: 2026-10
+  - title: "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017, regulation 37"
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/uksi/2017/692/regulation/37
+    accessed: 2026-10
+  - title: Guidelines on ML/TF risk factors (EBA/GL/2021/02)
+    publisher: European Banking Authority
+    url: https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2021/963637/Final%20Report%20on%20Guidelines%20on%20revised%20ML%20TF%20Risk%20Factors.pdf
+    accessed: 2026-10
+  - title: Consultation paper on draft RTS under Article 28(1) of Regulation (EU) 2024/1624
+    publisher: Anti-Money Laundering Authority (AMLA)
+    url: https://www.amla.europa.eu/document/download/3d430294-5171-455c-b565-a86fc5f3cb1c_en?filename=Consultation%20Paper%20Draft%20RTS%20under%20Article%2028%281%29.pdf
+    accessed: 2026-10
+  - title: European AML/CFT framework
+    publisher: De Nederlandsche Bank
+    url: https://www.dnb.nl/en/sector-information/open-book-supervision/laws-and-eu-regulations/european-amlcft-framework/
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

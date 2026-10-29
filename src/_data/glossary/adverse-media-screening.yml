@@ -1,0 +1,49 @@
+term: Adverse media screening
+also_known_as: [Negative news screening, Adverse media check, Negative media screening]
+cluster: aml
+definition: Adverse media screening searches news and other public sources for reports that link a customer, a beneficial owner or a business to crimes such as fraud, corruption, money laundering or terrorism. The findings feed the customer's risk assessment and can trigger enhanced due diligence.
+seo_description: "Adverse media screening searches news for reports linking a customer to crime. What EU and UK guidance says, how it works and what to ask vendors."
+capability: adverse_media
+rankings: [aml]
+related: [sanctions-screening, politically-exposed-person, enhanced-due-diligence, risk-based-approach, fuzzy-name-matching, screening-false-positive]
+body: |
+  ## How adverse media screening works
+
+  Sanctions and PEP screening compare a name with a structured list. Adverse media has no list. The tool searches news archives, websites and other public records for the customer's name, then tries to keep only the articles that are about this person and that describe a relevant risk, such as fraud, bribery, tax crime or terrorism.
+
+  That makes two filtering problems. The first is identity: a common name can return thousands of articles about other people, so the tool uses [fuzzy name matching](/glossary/fuzzy-name-matching/) plus context such as location, age or employer to narrow the results. The second is relevance: an article that mentions a name next to the word "fraud" may describe a victim, a witness or a journalist. What is left goes to an analyst, who decides whether the report is credible and what it means for the customer's risk rating. Screening can run once at onboarding or keep running as ongoing monitoring, so that new coverage creates a new alert.
+
+  ## What the rules and guidance say
+
+  In the EU, adverse media comes in through customer risk factors. The European Banking Authority's [ML/TF Risk Factors Guidelines](https://eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2021/963637/Final%20Report%20on%20Guidelines%20on%20revised%20ML%20TF%20Risk%20Factors.pdf) (EBA/GL/2021/02) list, among the factors on a customer's or beneficial owner's reputation, whether there are adverse media reports or other relevant sources of information about the customer, such as allegations of criminality or terrorism. They add that credibility depends on "the quality and independence of the source of the data and the persistence of reporting", and that "the absence of criminal convictions alone may not be sufficient to dismiss allegations of wrongdoing." The same guidelines name reports in reputable newspapers as one type of open source (guideline 1.31) and say firms should not normally rely on only one source to identify risks (guideline 1.32).
+
+  In the UK, the FCA's [Financial Crime Guide](https://www.handbook.fca.org.uk/handbook/FCG/3/2.html) treats press reports as a source for risk assessment (FCG 3.2.3). Under enhanced due diligence (FCG 3.2.8) it lists as poor practice a firm that disregards allegations of the customer's or beneficial owner's criminal activity from reputable sources, and one that relies entirely on a single source of information.
+
+  ## What to check when you compare providers
+
+  Coverage decides most of the result. Ask which countries and languages the tool searches, whether it reads local and regional press or only major outlets, and how far back the archive goes. Then look at noise: how the tool groups duplicate stories, how it separates a subject from a victim, and whether each alert shows the source and the reason it was flagged. Without that, analysts spend their time on [false positives](/glossary/screening-false-positive/). For the case for automating these checks, see our article on [negative news screening](/news/why-negative-news-screening-is-a-must-have-for-aml-compliance/). The [AML software ranking](/providers/aml/) shows which reviewed providers offer adverse media screening.
+buyer_questions:
+  - Which countries and languages do you cover, and do you search local press as well as national and international outlets?
+  - How do you decide whether an article is about our customer and not someone with the same name?
+  - Do you classify articles by risk category, and can we choose which categories create an alert?
+  - Does each alert show the original source, the date and the reason it matched, so an analyst can judge credibility?
+  - Can screening run as ongoing monitoring, and how quickly does a new article create an alert?
+faq:
+  - q: What is the difference between adverse media and negative news?
+    a: They are the same thing. Both describe reports in news and other public sources that link a person or company to crime or serious misconduct.
+  - q: Is adverse media screening mandatory?
+    a: The EBA and FCA guidance treats it as part of customer risk assessment and enhanced due diligence rather than as a stand-alone check. Both list adverse reports or allegations from reputable sources as something firms should take into account.
+  - q: Does an adverse media hit mean the customer must be rejected?
+    a: No. It is information for the risk assessment. The EBA guidelines ask firms to weigh how credible the source is and how persistent the reporting is.
+sources:
+  - title: "Guidelines on customer due diligence and ML/TF risk factors (EBA/GL/2021/02), Final Report"
+    publisher: European Banking Authority
+    url: https://eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2021/963637/Final%20Report%20on%20Guidelines%20on%20revised%20ML%20TF%20Risk%20Factors.pdf
+    accessed: 2026-10
+  - title: "Financial Crime Guide, FCG 3.2: Money laundering and terrorist financing"
+    publisher: Financial Conduct Authority
+    url: https://www.handbook.fca.org.uk/handbook/FCG/3/2.html
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

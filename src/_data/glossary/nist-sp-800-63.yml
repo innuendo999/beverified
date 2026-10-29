@@ -1,0 +1,56 @@
+term: NIST SP 800-63
+also_known_as: [NIST Digital Identity Guidelines, SP 800-63-4, NIST 800-63A]
+cluster: standards
+definition: NIST SP 800-63 is the Digital Identity Guidelines from the US National Institute of Standards and Technology. The current revision, SP 800-63-4 from July 2025, sets requirements for identity proofing, authentication and federation, graded into identity, authentication and federation assurance levels (IAL, AAL and FAL).
+seo_description: "NIST SP 800-63-4 sets US digital identity rules: IAL, AAL and FAL, remote identity proofing and PAD. What the 2025 revision says and what to ask vendors."
+rankings: [identity-verification]
+related: [identity-proofing, liveness-detection, injection-attack-detection, document-verification, eidas-2]
+body: |
+  ## What the guidelines cover
+
+  [SP 800-63-4](https://csrc.nist.gov/pubs/sp/800/63/4/final) was published in July 2025 and supersedes SP 800-63-3. It comes with three companion volumes: SP 800-63A-4 on identity proofing and enrollment, SP 800-63B-4 on authentication and authenticator management, and SP 800-63C-4 on federation and assertions.
+
+  The guidelines grade each area separately. The [base volume](https://pages.nist.gov/800-63-4/sp800-63.html) defines the identity assurance level (IAL) as the robustness of the identity proofing process, the authentication assurance level (AAL) as the robustness of the authentication process, and the federation assurance level (FAL) as the robustness of the federation process that passes authentication and attribute information to a relying party. A risk process called digital identity risk management maps low, moderate and high impact to levels 1, 2 and 3, which an organization can then tailor.
+
+  US federal agencies must apply this process to their online services. Private companies and state, local and tribal governments are invited to "consider the use of these standards where appropriate". For most KYC buyers outside the US federal space, SP 800-63 is a reference model rather than a legal requirement.
+
+  ## Identity proofing in SP 800-63A-4
+
+  [SP 800-63A-4](https://pages.nist.gov/800-63-4/sp800-63a.html) splits [identity proofing](/glossary/identity-proofing/) into three steps. Resolution collects evidence and attributes to establish a unique, real person. Validation checks that the evidence and attributes are authentic, accurate and valid. Verification confirms that the applicant is the genuine owner of the evidence.
+
+  The volume names four ways to run it: remote unattended (fully automated), remote attended (a secure video session with a proofing agent), on-site unattended (a controlled kiosk) and on-site attended. IAL1 supports the real-world existence of the claimed identity. IAL2 adds more evidence and stricter validation and verification, and can be remote. IAL3 adds a trained proofing agent in an on-site attended session and the collection of at least one biometric characteristic.
+
+  Two passages bear directly on vendors. When biometrics are collected and compared remotely, the provider "SHALL implement presentation attack detection", with an impostor attack presentation accept rate (IAPAR) below 0.07. And the volume treats injection attacks as a separate threat, noting that live capture and presentation attack detection do not address every case. Identity evidence can be physical or digital, such as a mobile driver's license.
+
+  ## What to check when you compare providers
+
+  Ask which IAL a vendor's flow is designed to support and which proofing type it uses. For [liveness detection](/glossary/liveness-detection/), ask for test results you can compare with the IAPAR figure, and ask separately about [injection attack detection](/glossary/injection-attack-detection/). Check that the vendor has mapped its product to revision 4, not only to SP 800-63-3. Our [identity verification ranking](/providers/identity-verification/) compares the reviewed providers.
+buyer_questions:
+  - Which identity assurance level (IAL1, IAL2 or IAL3) is your remote flow designed to meet under SP 800-63-4, and where is that mapping documented?
+  - What impostor attack presentation accept rate (IAPAR) did your presentation attack detection reach in independent testing, and under what test conditions?
+  - How do you detect injection attacks, given that SP 800-63A-4 treats them separately from presentation attacks?
+  - Have you updated your documentation from SP 800-63-3 to SP 800-63-4, and what changed in your product as a result?
+  - Can your flow accept digital evidence such as a mobile driver's license as well as physical documents?
+faq:
+  - q: What is the latest version of NIST SP 800-63?
+    a: SP 800-63-4, Digital Identity Guidelines, published in July 2025. It supersedes SP 800-63-3 and has three companion volumes, 800-63A-4, 800-63B-4 and 800-63C-4.
+  - q: What is IAL2?
+    a: IAL2 is the middle identity assurance level in SP 800-63A-4. Compared with IAL1, it requires additional evidence and more rigorous validation and verification. It can be done remotely or on site.
+  - q: Is NIST SP 800-63 mandatory for private companies?
+    a: No. Federal agencies must apply it to their online services. NIST says private-sector organizations may consider using the standards where appropriate.
+sources:
+  - title: "NIST SP 800-63-4, Digital Identity Guidelines"
+    publisher: National Institute of Standards and Technology (NIST)
+    url: https://csrc.nist.gov/pubs/sp/800/63/4/final
+    accessed: 2026-10
+  - title: "SP 800-63-4 Digital Identity Guidelines (base volume)"
+    publisher: National Institute of Standards and Technology (NIST)
+    url: https://pages.nist.gov/800-63-4/sp800-63.html
+    accessed: 2026-10
+  - title: "SP 800-63A-4 Identity Proofing & Enrollment"
+    publisher: National Institute of Standards and Technology (NIST)
+    url: https://pages.nist.gov/800-63-4/sp800-63a.html
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

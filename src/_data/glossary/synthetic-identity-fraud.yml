@@ -1,0 +1,76 @@
+term: Synthetic identity fraud
+also_known_as: [Synthetic ID fraud, SIF, Synthetic identities]
+cluster: identity
+definition: Synthetic identity fraud is the creation of a person who does not exist from a mix of real and invented personal data, such as a genuine Social Security number with a made-up name, which is then used to open accounts, build credit and take money with no intent to repay.
+seo_description: "Synthetic identity fraud builds a fake person from real and invented data. How it works, why it is hard to spot, what regulators say, and what to ask vendors."
+rankings: [identity-verification]
+related: [deepfake-identity-fraud, identity-proofing, database-verification, document-verification, know-your-customer, liveness-detection]
+body: |
+  ## How synthetic identities are built and used
+
+  The Federal Reserve's industry-recommended definition, released in April 2021, calls synthetic identity fraud "the use of a combination of personally identifiable information (PII) to fabricate a person or entity in order to commit a dishonest act for personal or financial gain."
+
+  The Fed's [mitigation toolkit](https://fedpaymentsimprovement.org/wp-content/uploads/how-is-a-synthetic-identity-created.pdf) describes three ways to build one. Fabrication creates completely fictitious data, manipulation makes limited changes to a real person's data, and compilation combines real and fake data, for example a real Social Security number with an invented name.
+
+  Once created, the identity needs a credit history. In the US, even a rejected credit application creates a credit file for the synthetic identity. Fraudsters speed things up by "piggybacking", being added as an authorized user on an account with good credit. This can take months or years, which is easier when the real owner of the number, such as a child or an elderly person, is not using credit. The usual end point is a bust-out: the identity pays on time until its credit lines grow, then maxes them out and stops paying. The lender is left with no real person to collect from.
+
+  ## Why it is hard to spot
+
+  The Fed's 2019 paper [Synthetic Identity Fraud in the U.S. Payment System](https://fedpaymentsimprovement.org/wp-content/uploads/frs-synthetic-identity-payments-fraud-white-paper-july-2019.pdf) explains the difference from ordinary identity theft. When a fraudster pretends to be a real person, that person is hit financially and usually notices and reports it quickly. A synthetic identity has no one to complain, and some lenders record the loss as a credit loss rather than a fraud loss. The paper also notes that the Social Security Administration began assigning numbers at random on 25 June 2011, so geographic checks no longer work for newly issued numbers.
+
+  Since 2020, the SSA's [eCBSV service](https://www.ssa.gov/news/en/press/releases/2020-10-29.html) lets approved financial institutions check, with the person's written consent, whether a name, date of birth and Social Security number match SSA records. It returns a yes or no; it does not verify identity.
+
+  Other regulators describe the same risk. FinCEN's 2024 deepfake alert notes criminals combining AI-generated images with stolen or fake personal data to create synthetic identities, which links this term to [deepfake identity fraud](/glossary/deepfake-identity-fraud/). In the EU, the EBA's remote onboarding guidelines name synthetic identities among the risks that randomness in the verification process should reduce (paragraph 43).
+
+  ## What to check when you compare providers
+
+  A synthetic identity is not a stolen one, so there may be no stolen document for a document check to catch. Ask how the provider combines [database verification](/glossary/database-verification/) against independent sources, document and selfie checks, and signals such as how many applications share a phone number, device or address. In the US, ask whether it can run eCBSV checks. Our article on [identity theft cases](/publications/identity-theft-cases/) gives real examples, and the [identity verification ranking](/providers/identity-verification/) compares the providers we review.
+buyer_questions:
+  - Which independent data sources do you check identity data against in each country we operate in?
+  - How do you detect identities that share a phone number, device, email or address across many applications?
+  - In the US, do you offer SSA eCBSV checks, and how is customer consent captured?
+  - Do you flag thin or recently created credit files, and how?
+  - Can you show how many synthetic identities your checks caught in a pilot on our historical applications?
+faq:
+  - q: What is the difference between identity theft and synthetic identity fraud?
+    a: In identity theft the fraudster pretends to be a real person, who usually notices the damage. In synthetic identity fraud the fraudster creates a new person from real and fake data, so there is often no victim to raise the alarm.
+  - q: What is a bust-out in synthetic identity fraud?
+    a: The synthetic identity pays its bills on time until its credit limits grow, then uses all available credit and stops paying. The lender has no real person to recover the money from.
+  - q: Can liveness detection stop synthetic identity fraud?
+    a: Only partly. Liveness detection checks that a real person is in front of the camera, but a synthetic identity can still use a real face with invented data. Data checks against independent sources and cross-application signals are also needed.
+sources:
+  - title: "Toolkit Module 1: Synthetic Identity Fraud: The Basics"
+    publisher: Federal Reserve, FedPayments Improvement
+    url: https://fedpaymentsimprovement.org/resources/synthetic-identity-fraud-mitigation-toolkit/synthetic-identity-fraud-basics/
+    accessed: 2026-10
+  - title: Synthetic Identity Fraud (payments security initiative)
+    publisher: Federal Reserve, FedPayments Improvement
+    url: https://fedpaymentsimprovement.org/strategic-initiatives/payments-security/synthetic-identity-payments-fraud/
+    accessed: 2026-10
+  - title: How Is a Synthetic Identity Created?
+    publisher: Federal Reserve, FedPayments Improvement
+    url: https://fedpaymentsimprovement.org/wp-content/uploads/how-is-a-synthetic-identity-created.pdf
+    accessed: 2026-10
+  - title: How Synthetic Identities Are Used to Commit Fraud
+    publisher: Federal Reserve, FedPayments Improvement
+    url: https://fedpaymentsimprovement.org/wp-content/uploads/how-synthetic-identities-are-used-to-commit-fraud.pdf
+    accessed: 2026-10
+  - title: Synthetic Identity Fraud in the U.S. Payment System (July 2019)
+    publisher: Federal Reserve Banks
+    url: https://fedpaymentsimprovement.org/wp-content/uploads/frs-synthetic-identity-payments-fraud-white-paper-july-2019.pdf
+    accessed: 2026-10
+  - title: "Press release, 29 October 2020: electronic Consent Based SSN Verification (eCBSV) rollout"
+    publisher: Social Security Administration
+    url: https://www.ssa.gov/news/en/press/releases/2020-10-29.html
+    accessed: 2026-10
+  - title: FinCEN Alert on Fraud Schemes Involving Deepfake Media Targeting Financial Institutions (FIN-2024-Alert004)
+    publisher: Financial Crimes Enforcement Network
+    url: https://www.fincen.gov/sites/default/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf
+    accessed: 2026-10
+  - title: Guidelines on the use of remote customer onboarding solutions (EBA/GL/2022/15)
+    publisher: European Banking Authority
+    url: https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2022/EBA-GL-2022-15%20GL%20on%20remote%20customer%20onboarding/1043884/Guidelines%20on%20the%20use%20of%20Remote%20Customer%20Onboarding%20Solutions.pdf
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

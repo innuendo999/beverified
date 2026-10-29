@@ -1,0 +1,71 @@
+term: SOC 2
+also_known_as: [SOC 2 report, SOC 2 Type 2, SOC 2 Type 1, System and Organization Controls 2]
+cluster: standards
+definition: SOC 2 is an attestation report in which an independent CPA firm examines a service organization's controls against the AICPA Trust Services Criteria for security, availability, processing integrity, confidentiality and privacy. It is a report, not a certification. A Type 2 report also tests whether the controls operated effectively over a period.
+seo_description: "SOC 2 is a CPA attestation report on a vendor's controls, not a certification. Type 1 vs Type 2, the Trust Services Criteria and what to check in a report."
+capability: soc2
+rankings: [identity-verification, aml]
+related: [iso-27001, nist-sp-800-63, iso-iec-30107-3, uk-diatf]
+body: |
+  ## How a SOC 2 examination works
+
+  SOC stands for System and Organization Controls, a [suite of services](https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services) that the AICPA (American Institute of CPAs) says CPAs can use "to provide assurance reports". In a SOC 2 examination, the service organization describes its system and asserts that its controls meet the chosen criteria. A CPA firm then examines that description and those controls and issues its report.
+
+  The criteria are the [Trust Services Criteria](https://www.aicpa-cima.com/resources/download/2017-trust-services-criteria-with-revised-points-of-focus-2022), set by the AICPA's Assurance Services Executive Committee. They cover five categories: security, availability, processing integrity, confidentiality and privacy. A report does not have to cover all five, so the scope matters. In October 2026 the committee published exposure drafts of proposed 2027 Trust Services Criteria and Description Criteria.
+
+  There are two report types. New Zealand's government information security manual summarizes the difference: a [Type 1 report](https://nzism.gcsb.govt.nz/ism-document/pdf/Section/12847) looks at controls at a point in time and "cannot cover the operating effectiveness of controls", while a Type 2 report covers operating effectiveness over a specified period. The AICPA's illustrative Type 2 report includes the service auditor's tests of controls and their results. SOC 3 is a separate general-use report on the same five categories.
+
+  ## Why SOC 2 is not a certification
+
+  Vendors often write "SOC 2 certified", but the outcome is an attestation: a CPA firm's report on that vendor's controls. An accredited [ISO/IEC 27001](/glossary/iso-27001/) certificate can be looked up in a public database. A SOC 2 result exists only as the report, and you learn what was tested only by reading it.
+
+  For banks, a SOC report is one source among several. The US banking agencies' [third-party risk management guide](https://fdic.gov/resources/bankers/third-party-relationships/third-party-risk-management-guide.pdf) for community banks (May 2024) lists SOC reports among the sources a bank can use to assess a third party's controls during due diligence and ongoing monitoring.
+
+  ## What to check when you compare providers
+
+  An identity verification or AML vendor holds your customers' personal data and runs inside your onboarding flow, so weak controls on its side affect you too. Ask for the full report rather than a logo on the website, and check the report type, the period covered, which of the five categories are in scope, and which product and locations the system description includes. Then read the test results for exceptions. The "Providers that offer it" table on this page lists reviewed providers with a SOC 2 report on record; our [identity verification](/providers/identity-verification/) and [AML](/providers/aml/) rankings show the rest of their scores.
+buyer_questions:
+  - Is your SOC 2 report Type 1 or Type 2, and what period does the latest Type 2 report cover?
+  - Which Trust Services Criteria categories are in scope, and does the system description cover the product and hosting regions we will use?
+  - Did the service auditor report any exceptions in the tests of controls, and how did you fix them?
+  - Can we receive the full report under NDA rather than a summary or a SOC 3?
+  - Do you also hold an accredited ISO/IEC 27001 certificate, and does its scope match the SOC 2 system description?
+faq:
+  - q: Is SOC 2 a certification?
+    a: No. SOC 2 is an attestation report issued by a CPA firm after it examines a service organization's description of its system and its controls. There is no SOC 2 certificate, so buyers have to read the report itself.
+  - q: What is the difference between SOC 2 Type 1 and Type 2?
+    a: A Type 1 report looks at controls at a point in time and does not cover whether they operated effectively. A Type 2 report covers operating effectiveness over a specified period and includes the auditor's tests of controls and their results.
+  - q: What are the five Trust Services Criteria?
+    a: Security, availability, processing integrity, confidentiality and privacy. They are set by the AICPA's Assurance Services Executive Committee, and a SOC 2 report can cover some or all of them.
+sources:
+  - title: "System and Organization Controls: SOC suite of services"
+    publisher: AICPA & CIMA
+    url: https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services
+    accessed: 2026-10
+  - title: "2017 Trust Services Criteria for Security, Availability, Processing Integrity, Confidentiality, and Privacy (with revised points of focus, 2022)"
+    publisher: AICPA & CIMA
+    url: https://www.aicpa-cima.com/resources/download/2017-trust-services-criteria-with-revised-points-of-focus-2022
+    accessed: 2026-10
+  - title: "SOC 2 Reporting on an Examination of Controls at a Service Organization Relevant to Security, Availability, Processing Integrity, Confidentiality, or Privacy"
+    publisher: AICPA & CIMA
+    url: https://www.aicpa-cima.com/cpe-learning/publication/soc-2-reporting-on-an-examination-of-controls-at-a-service-organization-relevant-to-security-availability-processing-integrity-confidentiality-or-privacy
+    accessed: 2026-10
+  - title: "Illustrative SOC 2 report with description and assertion"
+    publisher: AICPA & CIMA
+    url: https://www.aicpa-cima.com/resources/download/illustrative-soc-2-r-report-with-description-and-assertion
+    accessed: 2026-10
+  - title: "AICPA exposure drafts: proposed 2027 SOC 2 Trust Services Criteria and Description Criteria"
+    publisher: AICPA & CIMA
+    url: https://www.aicpa-cima.com/resources/download/aicpa-exposure-drafts-proposed-2027-soc-2-trust-services-criteria-and-description-criteria
+    accessed: 2026-10
+  - title: "New Zealand Information Security Manual, section 5.8: Independent Assurance Reports (v3.9)"
+    publisher: Government Communications Security Bureau (GCSB), New Zealand
+    url: https://nzism.gcsb.govt.nz/ism-document/pdf/Section/12847
+    accessed: 2026-10
+  - title: "Third-Party Risk Management: A Guide for Community Banks (May 2024)"
+    publisher: Federal Reserve, FDIC and OCC
+    url: https://fdic.gov/resources/bankers/third-party-relationships/third-party-risk-management-guide.pdf
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

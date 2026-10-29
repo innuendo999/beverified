@@ -1,0 +1,64 @@
+term: Ongoing business monitoring
+also_known_as: [Ongoing KYB monitoring, Corporate customer monitoring, Business monitoring]
+cluster: kyb
+definition: Ongoing business monitoring keeps due diligence on a business customer current after onboarding. It watches for changes in the company's registry record, officers, ownership and screening results, compares activity with the customer's profile, and triggers a review when something relevant changes.
+seo_description: "Ongoing business monitoring keeps KYB files current after onboarding. What EU, UK and US rules say about monitoring and updates, and what to ask KYB vendors."
+capability: kyb_monitoring
+rankings: [kyb]
+related: [know-your-business, perpetual-kyc, ultimate-beneficial-owner, company-registry-check, sanctions-screening, transaction-monitoring]
+body: |
+  ## How ongoing business monitoring works
+
+  A [KYB](/glossary/know-your-business/) check at onboarding records the company as it stood on that day. Afterwards, directors resign, shares change hands, a company is struck off or one of its owners is sanctioned, and ongoing business monitoring is the process that tells the firm.
+
+  It usually combines four feeds. Registry monitoring watches the company record for new or removed officers, changed addresses, new filings and status changes. Ownership monitoring rebuilds the chain to the [ultimate beneficial owners](/glossary/ultimate-beneficial-owner/) when an entity in it changes. Screening re-runs [sanctions](/glossary/sanctions-screening/), PEP and adverse media checks on the company and its people when lists or ownership change. [Transaction monitoring](/glossary/transaction-monitoring/) compares account activity with the declared business. A relevant change either updates the file or opens a review. The event-driven version of this is often called perpetual KYB; our guide to [perpetual KYB](/guide/perpetual-kyb/) covers the setup in depth.
+
+  ## What the rules say
+
+  In the EU, Article 13(1)(d) of [Directive (EU) 2015/849](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015L0849-20210630) requires ongoing monitoring of the business relationship, including scrutiny of transactions, and Article 14(5) applies due diligence to existing customers at appropriate times on a risk-sensitive basis. From 10 July 2027, [Article 26](https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng) of the AML Regulation (EU) 2024/1624 sets maximum update intervals: customer information must be kept up to date, and the interval "shall not in any case exceed" 1 year for higher-risk customers under enhanced due diligence and 5 years for the rest. Article 26(3) adds a review when a customer's relevant circumstances change. On the company side, Article 63(2) requires legal entities to report changes in beneficial ownership to the central register within 28 calendar days and to verify their information at least annually.
+
+  In the UK, [Regulation 28(11)](https://www.legislation.gov.uk/uksi/2017/692/regulation/28) of the Money Laundering Regulations 2017 requires ongoing monitoring of a business relationship, including scrutiny of transactions and reviews of existing records to keep documents and information up to date.
+
+  In the US, [31 CFR 1020.210(a)(2)(v)](https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1020/subpart-B/section-1020.210) requires banks to have risk-based procedures for ongoing monitoring to identify and report suspicious transactions and, on a risk basis, to maintain and update customer information, including beneficial ownership information for legal entity customers. A FinCEN order of 13 February 2026 (FIN-2026-R001) lets covered institutions identify and verify beneficial owners when a legal entity customer first opens an account, when they learn facts that call the information into question, and as their risk-based procedures require, rather than at every new account.
+
+  ## What to check when you compare providers
+
+  Providers differ most on one point: some detect changes themselves, while others only re-run a check when you ask. For each country, ask whether the provider receives change notifications from the register or polls it, and how often. Check whether a change three levels up the ownership chain reaches the right customer, whether alerts can be tuned per risk tier, and how they reach your case management. Our [KYB ranking](/providers/kyb/) shows which reviewed providers offer ongoing business monitoring.
+buyer_questions:
+  - Do you detect registry and ownership changes yourself and notify us, or do we have to re-run checks?
+  - For each of our countries, do you receive change notifications from the register or poll it, and how often?
+  - When an entity higher in the ownership chain changes, does the alert reach every customer it affects?
+  - Are the company and all its officers and beneficial owners re-screened when sanctions or PEP lists change?
+  - Can we set different alert rules and refresh intervals per risk tier?
+  - How do alerts reach our case management, and is each automated update logged?
+faq:
+  - q: How often do business customers need to be reviewed?
+    a: Under the EU AML Regulation, which applies from 10 July 2027, customer information must be updated at intervals that do not exceed 1 year for higher-risk customers and 5 years for others, plus when relevant circumstances change. Current EU rules apply due diligence to existing customers at appropriate times on a risk-sensitive basis, and the UK Money Laundering Regulations require ongoing monitoring and reviews of existing records.
+  - q: What is the difference between ongoing business monitoring and perpetual KYB?
+    a: Ongoing monitoring is the legal duty. Perpetual KYB is one way to meet it, by reacting to changes as they happen instead of relying only on scheduled reviews.
+  - q: Can a beneficial ownership register replace ongoing monitoring?
+    a: No. Under the AMLR, legal entities must report ownership changes to the central register within 28 calendar days, but Article 30(8) of Directive (EU) 2015/849 already says firms must not rely exclusively on the central register for due diligence.
+sources:
+  - title: Directive (EU) 2015/849 on the prevention of the use of the financial system for money laundering or terrorist financing (consolidated text)
+    publisher: EUR-Lex
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015L0849-20210630
+    accessed: 2026-10
+  - title: The Money Laundering, Terrorist Financing and Transfer of Funds Regulations 2017, regulation 28
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/uksi/2017/692/regulation/28
+    accessed: 2026-10
+  - title: 31 CFR 1020.210 (banks), ongoing customer due diligence procedures
+    publisher: eCFR
+    url: https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1020/subpart-B/section-1020.210
+    accessed: 2026-10
+  - title: Order Granting Exceptive Relief from Certain Customer Due Diligence Rule Requirements (FIN-2026-R001)
+    publisher: FinCEN
+    url: https://www.fincen.gov/system/files/2026-02/FinCEN-Order-CCDExceptiveRelief.pdf
+    accessed: 2026-10
+  - title: "Regulation (EU) 2024/1624 (AMLR), Articles 26, 63"
+    publisher: EUR-Lex
+    url: https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

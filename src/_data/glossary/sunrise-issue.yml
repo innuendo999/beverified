@@ -1,0 +1,77 @@
+term: Sunrise issue
+abbr: null
+also_known_as: [Travel Rule sunrise issue, Sunrise problem]
+cluster: crypto
+definition: The sunrise issue is the gap that appears because countries bring in the Travel Rule at different times. A provider that must send or receive originator and beneficiary data can face a counterparty in a country where the rule is not yet in force, which may not be able to exchange that data.
+seo_title: What Is the Travel Rule Sunrise Issue? | BeVerified
+seo_description: "The sunrise issue is the Travel Rule gap between countries that apply it and those that do not yet. What FATF, the EU and the FCA say, and what to ask vendors."
+capability: null
+rankings: [travel-rule]
+related: [travel-rule, travel-rule-interoperability, virtual-asset-service-provider, transfer-of-funds-regulation, ivms101]
+provider_mentions: []
+body: |
+  ## Where the term comes from
+
+  The FATF named the problem in its [12-month review of the virtual asset standards](https://www.fatf-gafi.org/media/fatf/documents/recommendations/12-Month-Review-Revised-FATF-Standards-Virtual-Assets-VASPS.pdf) in June 2020. Paragraph 66 says that "less than half of FATF members have introduced travel rule requirements for VASPs" and that VASPs found it unclear what approach to take "in dealing with VASPs located in jurisdictions without the travel rule (the 'sunrise issue')". It added that the issue "will remain until all jurisdictions have introduced the requirement."
+
+  Hong Kong's Securities and Futures Commission put it more briefly in a February 2023 consultation paper (footnote 31): "The sunrise issue relates to the delays in the implementation of the Travel Rule." Because transition and enforcement periods differ across jurisdictions, some VASPs deal with foreign counterparties that are not subject to the rule.
+
+  The gap is smaller now, but it is still there. The FATF's [targeted update of 16 July 2026](https://www.fatf-gafi.org/en/news/targeted-updated-va-vasps-2026.html) found that 83% of surveyed jurisdictions had passed legislation implementing the [Travel Rule](/glossary/travel-rule/), up from 73% in 2025, and that a further 11 jurisdictions reported implementation under way.
+
+  ## How regulators handle it
+
+  Each regulator words this differently. In the examples below, the duty at home still applies when the other country has no rule.
+
+  In the UK, the Travel Rule has applied since 1 September 2023. The FCA's [statement of expectations](https://www.fca.org.uk/news/statements/fca-sets-out-expectations-uk-cryptoasset-businesses-complying-travel-rule) says that when sending to a jurisdiction without the rule, a firm should take all reasonable steps to establish whether the recipient can receive the information. If it cannot, the UK firm must still collect and verify the information and keep it. When receiving a transfer with missing or incomplete information, the firm should consider where the sender operates and the rule's status there, and decide on a risk basis whether to make the assets available.
+
+  In the EU, the EBA's [Travel Rule guidelines](https://www.eba.europa.eu/sites/default/files/2024-07/6de6e9b9-0ed9-49cd-985d-c0834b5b4356/Travel%20Rule%20Guidelines.pdf) (EBA/GL/2024/11) treat it as a risk factor, in paragraph 47(d), when a party to the transfer is in a country that "has not yet implemented the obligation to obtain, hold and transmit information". The Securities Commission of The Bahamas gives the topic its own part in its August 2026 guidance note, titled "Counterparty Due Diligence and the Sunrise Issue".
+
+  ## Common confusions
+
+  The sunrise issue is a legal gap: the counterparty's country has no Travel Rule yet. When the counterparty is subject to the rule but uses a different messaging network, the problem is [interoperability](/glossary/travel-rule-interoperability/). To a compliance team the two often look the same. The data cannot be delivered, and a policy decides what happens to the transfer.
+
+  ## What to check when you compare providers
+
+  Ask how the tool knows the Travel Rule status of each counterparty's country, and what it does when the counterparty cannot receive data. Look for configurable rules per jurisdiction, a record that the data was collected and kept even when it could not be sent, and a way to hold or reject incoming transfers with missing data. Our [Travel Rule ranking](/providers/travel-rule/) compares the reviewed providers.
+buyer_questions:
+  - How do you track which jurisdictions have Travel Rule requirements in force, and who keeps that list up to date?
+  - "When the counterparty cannot receive Travel Rule data, what can we configure: send and log, hold, or reject?"
+  - Do you keep a record that the required data was collected and verified even when it could not be transmitted?
+  - How do you flag incoming transfers from jurisdictions without the rule, and can we route them to manual review?
+  - Can we set different policies for counterparties in different countries, and see them in an audit trail?
+faq:
+  - q: Where does the term sunrise issue come from?
+    a: The FATF used it in paragraph 66 of its June 2020 12-month review of the virtual asset standards, for the uncertainty VASPs face when dealing with VASPs in jurisdictions without the Travel Rule.
+  - q: Is the sunrise issue solved?
+    a: Not fully. In its July 2026 targeted update the FATF reported that 83% of surveyed jurisdictions had passed Travel Rule legislation, up from 73% in 2025, with a further 11 reporting implementation under way.
+  - q: What does the FCA expect when the receiving firm is in a country without the Travel Rule?
+    a: "The FCA's August 2023 statement says the UK firm should take reasonable steps to establish whether the recipient can receive the information. If it cannot, the UK firm must still collect and verify the information and keep it."
+
+sources:
+  - title: 12 Month Review of Revised FATF Standards on Virtual Assets and Virtual Asset Service Providers (June 2020)
+    publisher: FATF
+    url: https://www.fatf-gafi.org/media/fatf/documents/recommendations/12-Month-Review-Revised-FATF-Standards-Virtual-Assets-VASPS.pdf
+    accessed: 2026-10
+  - title: FATF calls for closing of regulatory gaps as virtual asset illicit finance risks become more complex (Seventh targeted update, 16 July 2026)
+    publisher: FATF
+    url: https://www.fatf-gafi.org/en/news/targeted-updated-va-vasps-2026.html
+    accessed: 2026-10
+  - title: FCA sets out expectations for UK cryptoasset businesses complying with the Travel Rule
+    publisher: Financial Conduct Authority
+    url: https://www.fca.org.uk/news/statements/fca-sets-out-expectations-uk-cryptoasset-businesses-complying-travel-rule
+    accessed: 2026-10
+  - title: Guidelines on information requirements in relation to transfers of funds and certain crypto-assets transfers under Regulation (EU) 2023/1113 (EBA/GL/2024/11)
+    publisher: European Banking Authority
+    url: https://www.eba.europa.eu/sites/default/files/2024-07/6de6e9b9-0ed9-49cd-985d-c0834b5b4356/Travel%20Rule%20Guidelines.pdf
+    accessed: 2026-10
+  - title: Consultation Paper on the Proposed Regulatory Requirements for Virtual Asset Trading Platform Operators Licensed by the Securities and Futures Commission (20 February 2023)
+    publisher: Securities and Futures Commission, Hong Kong
+    url: https://apps.sfc.hk/edistributionWeb/api/consultation/openFile?lang=EN&refNo=23CP1
+    accessed: 2026-10
+  - title: "Guidance Note: Travel Rule Compliance for Digital Asset Businesses (12 August 2026)"
+    publisher: Securities Commission of The Bahamas
+    url: https://scb.gov.bs/wp-content/uploads/2026/08/GuidanceNoteTravelRuleComplianceforDigitalAssetBusinesses.pdf
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

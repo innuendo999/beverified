@@ -27,7 +27,7 @@ jobs:
       - run: npm run build
       - run: npm run check:strict
       - run: pip install --quiet beautifulsoup4 && npm run check:html
-      - run: node scripts/checks/articles.mjs && node scripts/checks/provider.mjs
+      - run: node scripts/checks/articles.mjs && node scripts/checks/provider.mjs && node scripts/checks/glossary.mjs
       - run: npm run gaps
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

@@ -1,0 +1,64 @@
+term: Politically exposed person
+abbr: PEP
+also_known_as: [PEP screening, PEP check]
+cluster: aml
+definition: A politically exposed person (PEP) is someone who holds or has held a prominent public function, such as head of state, minister, member of parliament or senior judge. EU law requires enhanced due diligence on all PEPs and their family members and close associates; FATF standards require it for foreign PEPs and, where the risk is higher, for domestic ones.
+seo_description: "A PEP holds or held a prominent public function. Who counts under FATF and EU rules, what extra due diligence applies, and what to ask PEP screening vendors."
+capability: sanctions_pep
+rankings: [aml]
+related: [sanctions-screening, enhanced-due-diligence, source-of-funds, adverse-media-screening, fatf-recommendations, customer-due-diligence]
+body: |
+  ## Who counts as a PEP
+
+  The FATF defines a PEP as an individual who is or has been entrusted with a prominent function. Its [2013 guidance on PEPs](https://www.fatf-gafi.org/media/fatf/documents/recommendations/Guidance-PEP-Rec12-22.pdf) covers three groups: foreign PEPs, domestic PEPs and people with prominent functions at international organisations, together with their family members and close associates. The FATF also stresses that the requirements are preventive. Being a PEP does not mean a person is involved in crime.
+
+  EU law gives a closed list. Article 3(9) of the [Fourth Anti-Money Laundering Directive](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02015L0849-20240709) names heads of state, heads of government, ministers and deputy or assistant ministers; members of parliament or similar legislative bodies; members of the governing bodies of political parties; members of supreme, constitutional and other high-level courts whose decisions are not subject to further appeal except in exceptional circumstances; members of courts of auditors or central bank boards; ambassadors, chargés d'affaires and high-ranking armed forces officers; members of the administrative, management or supervisory bodies of state-owned enterprises; and directors, deputy directors and board members of international organisations. The same article says none of these functions covers middle-ranking or more junior officials.
+
+  ## What the rules require
+
+  Under FATF Recommendation 12, firms need risk management systems to find out whether a customer or beneficial owner is a foreign PEP. For domestic and international organisation PEPs, they take reasonable measures to find out, then assess the risk, and apply the foreign PEP measures where the relationship is higher risk.
+
+  The EU Directive applies the same idea to all PEPs. Article 20 requires appropriate risk management systems to identify PEPs and, for a business relationship with one, senior management approval, adequate measures to establish [source of wealth and source of funds](/glossary/source-of-funds/), and enhanced, ongoing monitoring. Article 23 extends these measures to family members and persons known to be close associates. Article 22 says that after a PEP leaves office, firms consider the continuing risk for at least 12 months. The FATF guidance takes a slightly different line: treatment of a former PEP should be based on an assessment of risk, not on prescribed time limits. The EU's newer [AML Regulation](/glossary/eu-aml-regulation/), Regulation (EU) 2024/1624, has its own PEP provisions.
+
+  ## PEP screening and databases
+
+  PEP screening checks customer names against a PEP database, often in the same tool as [sanctions screening](/glossary/sanctions-screening/). The FATF guidance warns that using such a database "is not sufficient for compliance with Recommendation 12" and should never replace normal customer due diligence. The UK regulator's [Financial Crime Guide](https://www.handbook.fca.org.uk/handbook/FCG/3/2.html) gives two examples of good practice: a firm that uses PEP databases and understands their capabilities and limitations, and a firm that sets lower alert thresholds on automated monitoring for PEPs and other higher risk customers.
+
+  When you compare databases, start with coverage: domestic PEPs, international organisation PEPs, and family members and close associates. Then check how the vendor handles people who have left office. The [AML software ranking](/providers/aml/) shows which reviewed providers include PEP screening.
+buyer_questions:
+  - Do you cover domestic PEPs and international organisation PEPs, or mainly foreign PEPs, and in which countries?
+  - How do you identify family members and close associates, and where does that data come from?
+  - How do you treat people who have left office, and can we set our own rule for how long they stay flagged?
+  - How often is the PEP data refreshed, and can you show when a given profile was last updated and from which source?
+  - Can we tier PEPs by function or country so that alerts match our own risk assessment?
+faq:
+  - q: Is being a PEP illegal or a red flag for crime?
+    a: No. The FATF states that PEP requirements are preventive and do not mean every PEP is involved in crime. PEP status calls for extra due diligence.
+  - q: How long does someone stay a PEP after leaving office?
+    a: The EU Directive says firms consider the continuing risk for at least 12 months after the person leaves the public function. The FATF guidance says this should be based on an assessment of risk, not on fixed time limits.
+  - q: Are family members of PEPs also PEPs?
+    a: They are treated alongside them. Under Article 23 of the EU Directive, the PEP measures also apply to family members and persons known to be close associates, and the FATF guidance covers them as well.
+sources:
+  - title: "FATF Guidance: Politically Exposed Persons (Recommendations 12 and 22), June 2013"
+    publisher: Financial Action Task Force
+    url: https://www.fatf-gafi.org/media/fatf/documents/recommendations/Guidance-PEP-Rec12-22.pdf
+    accessed: 2026-10
+  - title: "FATF Guidance: Politically Exposed Persons (Recommendations 12 and 22), publication page"
+    publisher: Financial Action Task Force
+    url: https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Peps-r12-r22.html
+    accessed: 2026-10
+  - title: Directive (EU) 2015/849 (consolidated text of 9 July 2024), Articles 3(9) and 20 to 23
+    publisher: EUR-Lex, Publications Office of the European Union
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02015L0849-20240709
+    accessed: 2026-10
+  - title: Regulation (EU) 2024/1624 on the prevention of the use of the financial system for money laundering or terrorist financing
+    publisher: EUR-Lex, Publications Office of the European Union
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1624
+    accessed: 2026-10
+  - title: "Financial Crime Guide, FCG 3.2: Money laundering and terrorist financing"
+    publisher: Financial Conduct Authority
+    url: https://www.handbook.fca.org.uk/handbook/FCG/3/2.html
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29
