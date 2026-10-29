@@ -4,6 +4,8 @@ seoTitle: "South Africa Draft AML/CTF Amendment Bill | BeVerified"
 seoDescription: "National Treasury's draft General Laws (AML/CTF) Amendment Bill would change the FIC Act, Companies Act and two more laws. What it proposes and its 2026 status."
 lede: "In December 2024 South Africa's National Treasury published a draft bill amending four laws to close gaps left over from the 2021 FATF mutual evaluation. South Africa left the FATF grey list in October 2025, and an updated 2025 version of the bill went out for comment in January 2026."
 section: news
+cover_label: "South Africa AML bill"
+cover_motif: document
 published: 2025-01-25
 updated: 2026-10-18
 author: andrii-klymenko

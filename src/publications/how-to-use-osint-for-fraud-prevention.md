@@ -4,6 +4,8 @@ seoTitle: "How to Use OSINT for Fraud Prevention | BeVerified"
 seoDescription: "A step-by-step OSINT workflow for fraud, KYC and KYB teams: what to check, how to keep evidence, where the law draws lines, and the 2026 rule changes."
 lede: "OSINT (open-source intelligence) means checking what public records, websites and digital traces say about a person or company before you trust them. For fraud and KYC teams it answers three questions: is this entity real, is it what it claims to be, and is it tied to risk it has not disclosed."
 section: publications
+cover_label: "OSINT playbook"
+cover_motif: network
 published: 2025-05-29
 updated: 2026-10-18
 author: andrii-klymenko

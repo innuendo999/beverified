@@ -4,6 +4,8 @@ seoTitle: "MiCA Compliance Guide 2026: CASPs, Travel Rule | BeVerified"
 seoDescription: "MiCA compliance in 2026: the transitional period ended on 1 July 2026, so EU crypto services need CASP authorisation. Capital, travel rule and the ESMA register."
 lede: "MiCA has applied in full since 30 December 2024, and the last national transitional periods ended on 1 July 2026. Any firm providing crypto-asset services to EU clients now needs a MiCA authorisation or must stop."
 section: guide
+cover_label: "MiCA for CASPs"
+cover_motif: coin
 published: 2025-06-17
 updated: 2026-10-18
 author: andrii-klymenko

@@ -4,6 +4,8 @@ seoTitle: "Perpetual KYB: How Continuous Business Checks Work | BeVerified"
 seoDescription: "Perpetual KYB keeps business customer files current by reacting to registry, ownership and sanctions changes. What the rules require in 2026 and what to look for."
 lede: "Perpetual KYB is ongoing due diligence on business customers that reacts to changes, such as a new director, a shift in ownership or a sanctions designation, instead of waiting for the next periodic review. It rests on the same legal duty as perpetual KYC: keep customer information current and monitor the relationship."
 section: guide
+cover_label: "Always-on KYB"
+cover_motif: cyclebiz
 published: 2025-06-16
 updated: 2026-10-18
 author: andrii-klymenko

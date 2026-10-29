@@ -4,6 +4,8 @@ seoTitle: "OFAC Removes Syrian Sanctions Regulations | BeVerified"
 seoDescription: "On 26 August 2025 OFAC removed the Syrian Sanctions Regulations (31 CFR Part 542). What changed for screening teams, and what has happened since, to October 2026."
 lede: "On 26 August 2025 OFAC deleted the Syrian Sanctions Regulations, 31 CFR Part 542, from the Code of Federal Regulations. The rule followed the end of the Syria national emergency on 1 July 2025; targeted sanctions on the Assad network and other actors stayed in place."
 section: news
+cover_label: "Syria sanctions lifted"
+cover_motif: unlock
 published: 2025-08-26
 updated: 2026-10-18
 author: andrii-klymenko

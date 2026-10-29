@@ -4,6 +4,8 @@ seoTitle: "FBI Watch List Search: Can You Check It? | BeVerified"
 seoDescription: "The FBI terrorist watchlist cannot be searched by the public or by banks. What you can search instead: FBI Most Wanted, OFAC sanctions lists and FinCEN 314(a)."
 lede: "There is no public FBI watch list search. The government's terrorist watchlist, run by the FBI's Threat Screening Center, is not published, the center does not confirm who is on it, and it is not used for financial decisions. Businesses screen OFAC sanctions lists instead, and travellers with problems use DHS TRIP."
 section: guide
+cover_label: "Watchlist checks"
+cover_motif: magnifier
 published: 2025-05-01
 updated: 2026-10-18
 author: andrii-klymenko

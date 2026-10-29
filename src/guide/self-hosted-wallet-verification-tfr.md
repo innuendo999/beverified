@@ -4,6 +4,8 @@ seoTitle: Self-Hosted Wallet Verification Under the EU TFR | BeVerified
 seoDescription: 'How CASPs verify self-hosted wallets under the EU Transfer of Funds Regulation: AOPP, manual message signing, the Satoshi Test and visual proofs compared.'
 lede: When a crypto-asset service provider (CASP) transfers digital assets to or from a self-hosted wallet, it may need to establish who controls the wallet address. This can be challenging because, unlike a transfer between two regulated service providers, a self-hosted wallet transfer does not necessarily involve another institution that can exchange customer information.
 section: guide
+cover_label: "Proof of wallet ownership"
+cover_motif: wallet
 published: 2026-10-27
 updated: 2026-10-27
 author: andrii-klymenko

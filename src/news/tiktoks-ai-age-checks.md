@@ -4,6 +4,8 @@ seoTitle: "TikTok AI Age Checks: What Happened Next | BeVerified"
 seoDescription: "In November 2025 US TikTok users reported AI age flags. Since then: an EU rollout, Australia's under-16 ban, a $400M US settlement and an Ofcom probe."
 lede: "In November 2025 US users reported that TikTok was flagging suspected under-13 accounts and restricting features until they proved their age. Since then TikTok has rolled out age detection in Europe, settled a US children's privacy case for $400 million and come under a formal Ofcom investigation over its age assurance."
 section: news
+cover_label: "AI age checks"
+cover_motif: face
 published: 2025-11-04
 updated: 2026-10-18
 author: andrii-klymenko

@@ -4,6 +4,8 @@ seoTitle: "NFC Passports Explained for KYC Teams | BeVerified"
 seoDescription: "What an NFC ePassport chip holds, how ICAO 9303 passive, active and chip authentication work, what PACE does, and which IDV providers read the chip."
 lede: "An NFC passport (ePassport) carries a contactless chip holding a digitally signed copy of the data page and the holder's photo. Reading that chip and checking the signature against the issuing state's certificates is the strongest remote check a document can give you."
 section: publications
+cover_label: "NFC passports"
+cover_motif: passport
 published: 2025-06-09
 updated: 2026-10-18
 author: andrii-klymenko
