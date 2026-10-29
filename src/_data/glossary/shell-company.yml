@@ -10,17 +10,13 @@ body: |
 
   The definition above comes from the [FATF and Egmont Group report](https://egmontgroup.org/wp-content/uploads/2021/10/FATF-Egmont-Concealment-beneficial-ownership-Executive-summary.pdf) "Concealment of Beneficial Ownership", published in July 2018. FinCEN's [2006 advisory](https://www.fincen.gov/sites/default/files/shared/AdvisoryOnShells_FINAL.pdf) on shell companies describes them as non-publicly traded corporations, LLCs and trusts that typically have no physical presence other than a mailing address and generate little to no independent economic value.
 
-  Being a shell is not illegal. FinCEN says most shell companies are formed for legitimate reasons, such as holding stock or intangible assets of another business, or facilitating domestic and cross-border currency and asset transfers and corporate mergers. The risk comes from what makes them useful: FinCEN notes they are easy and inexpensive to form and operate, and that a lack of transparency lets them disguise their ownership and purpose.
+  Being a shell is not illegal. FinCEN says most shell companies are formed for legitimate reasons, such as holding stock or intangible assets of another business, or facilitating domestic and cross-border currency and asset transfers and corporate mergers. The same features create the risk. FinCEN notes they are easy and inexpensive to form and operate, and that a lack of transparency lets them disguise their ownership and purpose.
 
   ## Common confusions
 
-  The FATF and Egmont report separates three types that are often mixed up:
+  The FATF and Egmont report separates shell companies from two types they are often confused with. A front company is a fully functioning company with the characteristics of a legitimate business, used to hide illicit financial activity. A shelf company is an incorporated company with inactive shareholders, directors and secretary, left dormant for a longer period, even after a customer relationship is established.
 
-  - **Shell company:** no independent operations, significant assets, ongoing business activities or employees.
-  - **Front company:** a fully functioning company with the characteristics of a legitimate business, used to hide illicit financial activity.
-  - **Shelf company:** an incorporated company with inactive shareholders, directors and secretary, left dormant for a longer period, even after a customer relationship is established.
-
-  The distinction matters for screening. Indicators of an empty company, such as no staff or no filed trading, catch shells but not front companies, which do trade.
+  This affects screening. Indicators of an empty company, such as no staff or no filed trading, catch shells but miss front companies, because front companies do trade.
 
   ## How shells hide beneficial ownership
 

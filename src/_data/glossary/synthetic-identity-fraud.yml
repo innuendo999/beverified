@@ -10,9 +10,9 @@ body: |
 
   The Federal Reserve's industry-recommended definition, released in April 2021, calls synthetic identity fraud "the use of a combination of personally identifiable information (PII) to fabricate a person or entity in order to commit a dishonest act for personal or financial gain."
 
-  The Fed's [mitigation toolkit](https://fedpaymentsimprovement.org/wp-content/uploads/how-is-a-synthetic-identity-created.pdf) describes three ways to build one. **Fabrication** creates completely fictitious data. **Manipulation** makes limited changes to a real person's data. **Compilation** combines real and fake data, for example a real Social Security number with an invented name.
+  The Fed's [mitigation toolkit](https://fedpaymentsimprovement.org/wp-content/uploads/how-is-a-synthetic-identity-created.pdf) describes three ways to build one. Fabrication creates completely fictitious data, manipulation makes limited changes to a real person's data, and compilation combines real and fake data, for example a real Social Security number with an invented name.
 
-  The identity is then grown. In the US, even a rejected credit application creates a credit file for the synthetic identity. Fraudsters speed things up by "piggybacking", being added as an authorized user on an account with good credit. This can take months or years, which is easier when the real owner of the number, such as a child or an elderly person, is not using credit. The usual end point is a bust-out: the identity pays on time until its credit lines grow, then maxes them out and stops paying. The lender is left with no real person to collect from.
+  Once created, the identity needs a credit history. In the US, even a rejected credit application creates a credit file for the synthetic identity. Fraudsters speed things up by "piggybacking", being added as an authorized user on an account with good credit. This can take months or years, which is easier when the real owner of the number, such as a child or an elderly person, is not using credit. The usual end point is a bust-out: the identity pays on time until its credit lines grow, then maxes them out and stops paying. The lender is left with no real person to collect from.
 
   ## Why it is hard to spot
 

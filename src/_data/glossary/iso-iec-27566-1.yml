@@ -1,7 +1,7 @@
 term: ISO/IEC 27566-1
 also_known_as: [ISO 27566-1, ISO/IEC 27566-1:2025, "Age assurance systems, Part 1: Framework"]
 cluster: age
-definition: ISO/IEC 27566-1 is the international standard that sets out a framework for age assurance systems and describes their core characteristics, including privacy and security. Published in December 2025 as Part 1 of the ISO/IEC 27566 series, age assurance services can be certified against it.
+definition: ISO/IEC 27566-1 is the international standard that sets out a framework for age assurance systems and describes their core characteristics, including privacy and security. It was published in December 2025 as Part 1 of the ISO/IEC 27566 series, and age assurance services can be certified against it.
 seo_description: "ISO/IEC 27566-1:2025 is the framework standard for age assurance systems. What it covers, the parts still in draft, and how to read a 27566-1 certificate."
 capability: age_certification
 rankings: [age-verification]
@@ -9,7 +9,7 @@ related: [age-assurance, age-verification, age-estimation, facial-age-estimation
 body: |
   ## What the standard covers
 
-  The full title is "Information security, cybersecurity and privacy protection: Age assurance systems, Part 1: Framework". It was published by [ISO and IEC](https://www.iso.org/standard/88143.html) in December 2025 as a first edition. It comes from the joint ISO and IEC committee JTC 1/SC 27.
+  The full title is "Information security, cybersecurity and privacy protection: Age assurance systems, Part 1: Framework". It was published by [ISO and IEC](https://www.iso.org/standard/88143.html) in December 2025 as a first edition, and was prepared by the joint ISO and IEC committee JTC 1/SC 27.
 
   Its scope is one sentence: it "establishes a framework for age assurance systems and describes their core characteristics, including privacy and security, for enabling age-related eligibility decisions". It defines [age assurance](/glossary/age-assurance/) as the "set of processes and methods used to verify, estimate or infer the age or age range of an individual", and an age assurance result as information that a person is a certain age, over or under a certain age, or within an age range. The introduction notes that gaining age assurance does not always require establishing a person's full identity.
 

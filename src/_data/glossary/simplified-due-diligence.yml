@@ -12,7 +12,7 @@ body: |
 
   SDD is the low-risk end of the [risk-based approach](/glossary/risk-based-approach/). [FATF Recommendation 1](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html) says that where countries identify lower risks, "they should allow and encourage simplified measures as appropriate".
 
-  The checks are lighter, but none of them is dropped. The European Banking Authority's [risk factor guidelines](https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2021/963637/Final%20Report%20on%20Guidelines%20on%20revised%20ML%20TF%20Risk%20Factors.pdf) put it plainly in guideline 4.40: "SDD is not an exemption from any of the CDD measures." Firms may adjust the amount, timing or type of each measure. Guideline 4.41 gives examples:
+  The checks get lighter, but no check is dropped. Guideline 4.40 of the European Banking Authority's [risk factor guidelines](https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2021/963637/Final%20Report%20on%20Guidelines%20on%20revised%20ML%20TF%20Risk%20Factors.pdf) says: "SDD is not an exemption from any of the CDD measures." Firms may adjust the amount, timing or type of each measure. Guideline 4.41 gives examples:
 
   - verifying identity later, for example once a transaction threshold is passed;
   - collecting less information for identification, verification or monitoring;
@@ -36,7 +36,7 @@ body: |
 
   ## What to check when you compare providers
 
-  SDD needs software that can run lighter flows for some customers and step them up when something changes. Ask whether the product supports risk-tiered onboarding, what triggers a step-up to full checks, and whether the reason a customer was placed in the low-risk tier is logged for audit. Our [AML software ranking](/providers/aml/) compares reviewed providers.
+  To support SDD, the software has to run a lighter flow for some customers and move them to full checks when something changes. Ask whether the product supports risk-tiered onboarding, what triggers a step-up to full checks, and whether the reason a customer was placed in the low-risk tier is logged for audit. Our [AML software ranking](/providers/aml/) compares reviewed providers.
 buyer_questions:
   - Can we configure a lighter onboarding flow for customers we assess as low risk, and who controls the criteria?
   - What events move a customer out of the simplified flow, and does the step-up to full CDD happen automatically?

@@ -20,7 +20,7 @@ body: |
 
   ## What to check when you compare providers
 
-  A reusable identity is only as good as the original check. Ask which assurance level the credential was issued at, under which framework, and how old the underlying verification is. Ask what happens when the person's document expires or the credential is revoked, and whether you will be told. Check which attributes you can request, so you collect only what you need. Ask whether your regulator accepts the credential for your customer due diligence, and what records you keep to show what you relied on. Our [identity verification ranking](/providers/identity-verification/) covers the providers we review.
+  A relying party inherits the strengths and weaknesses of the original check, so ask which assurance level the credential was issued at, under which framework, and how old the underlying verification is. Ask what happens when the person's document expires or the credential is revoked, and whether you will be told. Check which attributes you can request, so you collect only what you need. Ask whether your regulator accepts the credential for your customer due diligence, and what records you keep to show what you relied on. Our [identity verification ranking](/providers/identity-verification/) covers the providers we review.
 buyer_questions:
   - Which assurance level and which trust framework was the reusable credential issued under, and can you show the certification?
   - How old is the underlying identity check, and when is it refreshed?

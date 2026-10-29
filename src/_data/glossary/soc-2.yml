@@ -19,11 +19,11 @@ body: |
 
   Vendors often write "SOC 2 certified", but the outcome is an attestation: a CPA firm's report on that vendor's controls. An accredited [ISO/IEC 27001](/glossary/iso-27001/) certificate can be looked up in a public database. A SOC 2 result exists only as the report, and you learn what was tested only by reading it.
 
-  Bank supervisors treat these reports as one input, not as proof. The US banking agencies' [third-party risk management guide](https://fdic.gov/resources/bankers/third-party-relationships/third-party-risk-management-guide.pdf) for community banks (May 2024) lists SOC reports among the sources a bank can use to assess a third party's controls during due diligence and ongoing monitoring.
+  For banks, a SOC report is one source among several. The US banking agencies' [third-party risk management guide](https://fdic.gov/resources/bankers/third-party-relationships/third-party-risk-management-guide.pdf) for community banks (May 2024) lists SOC reports among the sources a bank can use to assess a third party's controls during due diligence and ongoing monitoring.
 
   ## What to check when you compare providers
 
-  An identity verification or AML vendor holds personal data and sits inside your onboarding flow, so its controls become part of yours. Ask for the full report, not a badge. Check the report type, the period covered, which of the five categories are in scope, and which product and locations the system description includes. Then read the test results for exceptions. The "Providers that offer it" table on this page lists reviewed providers with a SOC 2 report on record; our [identity verification](/providers/identity-verification/) and [AML](/providers/aml/) rankings show the rest of their scores.
+  An identity verification or AML vendor holds your customers' personal data and runs inside your onboarding flow, so weak controls on its side affect you too. Ask for the full report rather than a logo on the website, and check the report type, the period covered, which of the five categories are in scope, and which product and locations the system description includes. Then read the test results for exceptions. The "Providers that offer it" table on this page lists reviewed providers with a SOC 2 report on record; our [identity verification](/providers/identity-verification/) and [AML](/providers/aml/) rankings show the rest of their scores.
 buyer_questions:
   - Is your SOC 2 report Type 1 or Type 2, and what period does the latest Type 2 report cover?
   - Which Trust Services Criteria categories are in scope, and does the system description cover the product and hosting regions we will use?

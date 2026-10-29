@@ -12,11 +12,11 @@ body: |
 
   The traditional model reviews each customer on a calendar, for example every year for high-risk customers and less often for the rest. Between reviews, the file can go stale. Perpetual KYC watches for events and re-assesses the customer when one fires. Typical triggers include a new screening match, a change in company ownership or directors, an expired identity document, or activity that no longer fits the customer's profile.
 
-  The term is an industry label. No regulation requires "perpetual KYC" by name. In practice it sits on top of the review calendar rather than replacing it. Our [guide to perpetual KYC](/guide/perpetual-kyc/) covers the triggers, the data sources and how to build a program step by step.
+  The term is an industry label, and no regulation requires "perpetual KYC" by name. It runs on top of the review calendar rather than replacing it. Our [guide to perpetual KYC](/guide/perpetual-kyc/) covers the triggers, the data sources and how to build a program step by step.
 
   ## What the rules say
 
-  The legal duty behind pKYC is ongoing due diligence. [FATF Recommendation 10](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html) asks firms to scrutinise transactions throughout a relationship to make sure they match what the firm knows about the customer.
+  The legal duty behind pKYC is ongoing due diligence. [FATF Recommendation 10](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html) asks firms to scrutinize transactions throughout a relationship to make sure they match what the firm knows about the customer.
 
   In the EU, Article 14(5) of [Directive (EU) 2015/849](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015L0849-20210630) requires customer due diligence for existing customers "at appropriate times" on a risk-sensitive basis, and when their relevant circumstances change. From 10 July 2027, Article 26(2) of the AML Regulation sets maximum periods for updating customer information. The Anti-Money Laundering Authority's draft standards refer to "maximum periods of 1 and 5 years". So even an event-driven program keeps a calendar backstop.
 
@@ -24,7 +24,7 @@ body: |
 
   ## What to check when you compare providers
 
-  pKYC depends on data feeds and on a risk model that reacts to them. Ask which events the product can detect, how fast an event reaches the customer record, and what happens next. Can it re-score automatically, open a review case, or only send an alert? Check that each re-assessment is logged. Our [AML software ranking for banks](/providers/aml/banks/) compares reviewed providers.
+  pKYC depends on data feeds and on a risk model that reacts to them. Ask which events the product can detect, how fast an event reaches the customer record, and what the product does next: re-score automatically, open a review case, or only send an alert. Check that each re-assessment is logged. Our [AML software ranking for banks](/providers/aml/banks/) compares reviewed providers.
 buyer_questions:
   - Which events can your product detect for an existing customer (screening hits, registry changes, document expiry, unusual activity), and from which data sources?
   - How quickly does a new event reach the customer's risk score, and is the re-scoring automatic?

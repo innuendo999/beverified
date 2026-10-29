@@ -11,7 +11,7 @@ body: |
 
   [ISO](https://www.iso.org/isoiec-27001-information-security.html) describes ISO/IEC 27001 as its best-known standard for information security management systems and their requirements. The current edition is ISO/IEC 27001:2022, "Information security management systems: Requirements". Guidance on the security controls themselves sits in a separate standard, ISO/IEC 27002:2022.
 
-  The standard sets requirements for how an organization manages information security as a system. A certificate covers the organization's ISMS, not a product, so what it says depends on the scope written on it.
+  The requirements are about how an organization manages information security as a system. A certificate covers the organization's ISMS, not a product, so what it proves depends on the scope written on it.
 
   ## How certification works
 
@@ -23,7 +23,7 @@ body: |
 
   [IAF CertSearch](https://www.iafcertsearch.org/) calls itself "the official global database for accredited certificates" and says it receives data from more than 2,500 certification and accreditation bodies. It cross-checks its sources to confirm that the certification body was accredited to issue a certificate. Look up the vendor's legal entity there and compare what you find with the certificate the vendor sent you.
 
-  When you compare identity verification or AML vendors, read the scope line on the certificate. A certificate for one office or one product says nothing about the platform you plan to use. Check the edition (2022), the expiry date, the certification body and its accreditation. A [SOC 2](/glossary/soc-2/) report answers a different question, whether specific controls worked over a period, so many buyers ask for both. The "Providers that offer it" table on this page lists reviewed providers with ISO/IEC 27001 on record, and our [identity verification](/providers/identity-verification/) and [AML](/providers/aml/) rankings show how they score overall.
+  When you compare identity verification or AML vendors, read the scope line on the certificate. A certificate for one office or one product says nothing about the platform you plan to use. Check the edition (2022), the expiry date, the certification body and its accreditation. A [SOC 2](/glossary/soc-2/) report answers a different question, whether specific controls worked over a period, so one does not replace the other. The "Providers that offer it" table on this page lists reviewed providers with ISO/IEC 27001 on record, and our [identity verification](/providers/identity-verification/) and [AML](/providers/aml/) rankings show how they score overall.
 buyer_questions:
   - Is your ISO/IEC 27001 certificate to the 2022 edition, which certification body issued it, and which accreditation body accredits that certification body?
   - Does the certificate scope cover the product, hosting and support locations we will use?

@@ -13,7 +13,7 @@ body: |
 
   Under the [Travel Rule](/glossary/travel-rule/), the provider sending crypto passes the originator's and beneficiary's details to the receiving provider. IVMS 101 gives both sides the same vocabulary for that data. The current [IVMS 101.2023 standard](https://cdn.prod.website-files.com/648841abc97f28489cc3f2ce/6656e9c60c3029989dcd7431_IVMS101.2023%20interVASP%20data%20model%20standard.pdf) has six top-level entities: Originator, Beneficiary, OriginatingVASP, BeneficiaryVASP, TransferPath and PayloadMetadata. Each person is either a natural person or a legal person, with structured elements for names, geographic address, date and place of birth and national identification.
 
-  Names are a known pain point, so the standard sets rules for them. Data is sent in UTF-8 and, unless otherwise specified, in Latin script. A name in another script is transliterated or translated, and a local-script version may be sent alongside it. The PayloadMetadata entity records which transliteration method was used.
+  The standard sets specific rules for names. Data is sent in UTF-8 and, unless otherwise specified, in Latin script. A name in another script is transliterated or translated, and a local-script version may be sent alongside it. The PayloadMetadata entity records which transliteration method was used.
 
   Section 3 of the standard lists what it does not cover: network protocols or the mode of transmission, information security, identification of VASPs, data privacy, storage of payload data, and verification or KYC status. Those are left to the messaging protocol and to each provider.
 

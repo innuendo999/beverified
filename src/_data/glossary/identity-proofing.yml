@@ -16,7 +16,7 @@ body: |
   2. **Validation.** Confirm that the evidence and attributes are authentic, accurate and valid, for example by [checking the document](/glossary/document-verification/) or [checking the data against an authoritative or credible source](/glossary/database-verification/).
   3. **Verification.** Confirm that the applicant is the genuine owner of that evidence, for example by [comparing their face](/glossary/face-matching/) with the photo on the document.
 
-  NIST also names four ways to run it: remote unattended (fully automated), remote attended (a live agent over video), on-site unattended (a kiosk) and on-site attended (in person with an agent).
+  NIST also names four ways to run the process: remote unattended (fully automated), remote attended (a live agent over video), on-site unattended (a kiosk) and on-site attended (in person with an agent).
 
   ## NIST identity assurance levels
 
@@ -28,7 +28,7 @@ body: |
 
   SUPERIOR evidence has to be validated by cryptographic verification of its contents and of the issuing source, including the digital signature and trust chain. An [NFC chip read](/glossary/nfc-chip-verification/) that checks the issuing state's signature over the chip data is one example of that kind of check.
 
-  The IAL scale is not an AML rule. AML law sets its own duty to verify a customer (see [KYC](/glossary/know-your-customer/)), and a firm can use NIST levels as a way to describe how strong its proofing is.
+  The IAL scale is not an AML rule. AML law sets its own duty to verify a customer (see [KYC](/glossary/know-your-customer/)), and a firm can use NIST levels to describe how strong its proofing is.
 
   ## What to check when you compare providers
 

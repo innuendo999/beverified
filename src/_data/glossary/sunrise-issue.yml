@@ -16,11 +16,11 @@ body: |
 
   Hong Kong's Securities and Futures Commission put it more briefly in a February 2023 consultation paper (footnote 31): "The sunrise issue relates to the delays in the implementation of the Travel Rule." Because transition and enforcement periods differ across jurisdictions, some VASPs deal with foreign counterparties that are not subject to the rule.
 
-  The gap has narrowed but not closed. The FATF's [targeted update of 16 July 2026](https://www.fatf-gafi.org/en/news/targeted-updated-va-vasps-2026.html) found that 83% of surveyed jurisdictions had passed legislation implementing the [Travel Rule](/glossary/travel-rule/), up from 73% in 2025, and that a further 11 jurisdictions reported implementation under way.
+  The gap is smaller now, but it is still there. The FATF's [targeted update of 16 July 2026](https://www.fatf-gafi.org/en/news/targeted-updated-va-vasps-2026.html) found that 83% of surveyed jurisdictions had passed legislation implementing the [Travel Rule](/glossary/travel-rule/), up from 73% in 2025, and that a further 11 jurisdictions reported implementation under way.
 
   ## How regulators handle it
 
-  Rules differ. In the examples below, a missing rule abroad does not switch off the duty at home.
+  Each regulator words this differently. In the examples below, the duty at home still applies when the other country has no rule.
 
   In the UK, the Travel Rule has applied since 1 September 2023. The FCA's [statement of expectations](https://www.fca.org.uk/news/statements/fca-sets-out-expectations-uk-cryptoasset-businesses-complying-travel-rule) says that when sending to a jurisdiction without the rule, a firm should take all reasonable steps to establish whether the recipient can receive the information. If it cannot, the UK firm must still collect and verify the information and keep it. When receiving a transfer with missing or incomplete information, the firm should consider where the sender operates and the rule's status there, and decide on a risk basis whether to make the assets available.
 
@@ -28,7 +28,7 @@ body: |
 
   ## Common confusions
 
-  The sunrise issue is about law, not technology. A counterparty that is subject to the Travel Rule but uses a different messaging network creates an [interoperability](/glossary/travel-rule-interoperability/) problem instead. In practice the two often look the same to a compliance team: the data cannot be delivered, and the transfer has to be handled by policy.
+  The sunrise issue is a legal gap: the counterparty's country has no Travel Rule yet. When the counterparty is subject to the rule but uses a different messaging network, the problem is [interoperability](/glossary/travel-rule-interoperability/). To a compliance team the two often look the same. The data cannot be delivered, and a policy decides what happens to the transfer.
 
   ## What to check when you compare providers
 

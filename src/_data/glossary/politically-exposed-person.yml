@@ -22,7 +22,7 @@ body: |
 
   ## PEP screening and databases
 
-  PEP screening checks customer names against a PEP database, often in the same tool as [sanctions screening](/glossary/sanctions-screening/). The FATF guidance is clear about the limits: using such a database "is not sufficient for compliance with Recommendation 12" and should never replace normal customer due diligence. The UK regulator's [Financial Crime Guide](https://www.handbook.fca.org.uk/handbook/FCG/3/2.html) lists as good practice a firm that uses PEP databases and understands their capabilities and limitations, and one that sets lower alert thresholds on automated monitoring for PEPs and other higher risk customers.
+  PEP screening checks customer names against a PEP database, often in the same tool as [sanctions screening](/glossary/sanctions-screening/). The FATF guidance warns that using such a database "is not sufficient for compliance with Recommendation 12" and should never replace normal customer due diligence. The UK regulator's [Financial Crime Guide](https://www.handbook.fca.org.uk/handbook/FCG/3/2.html) gives two examples of good practice: a firm that uses PEP databases and understands their capabilities and limitations, and a firm that sets lower alert thresholds on automated monitoring for PEPs and other higher risk customers.
 
   When you compare databases, start with coverage: domestic PEPs, international organisation PEPs, and family members and close associates. Then check how the vendor handles people who have left office. The [AML software ranking](/providers/aml/) shows which reviewed providers include PEP screening.
 buyer_questions:

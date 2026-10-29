@@ -19,16 +19,16 @@ body: |
 
   ## The main protocols, in their own words
 
-  - **Travel Rule Protocol.** The [OpenVASP Association](https://www.openvasp.org/trp), a non-profit in Zug, Switzerland, describes it as "a mature, complete open standard" and a "completely royalty-free specification", with bilateral exchange of encrypted data between VASPs and compatibility with IVMS101.
-  - **TRISA** (Travel Rule Information Sharing Alliance). Its site describes an open-source, peer-to-peer protocol that uses a certificate authority and a Global VASP Directory to verify VASPs. An OpenVASP FAQ says stewardship of TRISA moved to OpenVASP effective 1 October 2026, and that TRISA and the Travel Rule Protocol set up interoperability in 2023.
-  - **TRUST.** Its page on coinbase.com says information is sent directly from one TRUST member to another through end-to-end encrypted channels, is never stored centrally, and that members must meet anti-money laundering, security and privacy requirements before joining.
-  - **Global Travel Rule (GTR).** Its site names Infozone Technologies Pte. Ltd. in Singapore as the operator and lists the exchanges in its alliance.
+  - Travel Rule Protocol. The [OpenVASP Association](https://www.openvasp.org/trp), a non-profit in Zug, Switzerland, describes it as "a mature, complete open standard" and a "completely royalty-free specification", with bilateral exchange of encrypted data between VASPs and compatibility with IVMS101.
+  - TRISA (Travel Rule Information Sharing Alliance). Its site describes an open-source, peer-to-peer protocol that uses a certificate authority and a Global VASP Directory to verify VASPs. An OpenVASP FAQ says stewardship of TRISA moved to OpenVASP effective 1 October 2026, and that TRISA and the Travel Rule Protocol set up interoperability in 2023.
+  - TRUST. Its page on coinbase.com says information goes directly from one TRUST member to another through end-to-end encrypted channels and is never stored centrally, and that members must meet anti-money laundering, security and privacy requirements before joining.
+  - Global Travel Rule (GTR). Its site names Infozone Technologies Pte. Ltd. in Singapore as the operator and lists the exchanges in its alliance.
 
-  These are examples, not a full list, and coverage changes quickly.
+  The list is not complete, and coverage changes quickly.
 
   ## How interoperability is achieved
 
-  A shared data format is the starting point. According to OpenVASP, [IVMS 101](/glossary/ivms101/) is the common data standard across TRISA and Travel Rule Protocol messaging. But IVMS 101 deliberately leaves out transport, security and VASP identification, so a common format alone does not connect two networks. Interoperability needs agreement on those layers too, either through a direct link between two protocols or through software that speaks several protocols and translates between them. Where no route exists, the provider is back to the same position as with a counterparty in a country without the rule (the [sunrise issue](/glossary/sunrise-issue/)): it has to decide by policy what to do with the transfer.
+  Interoperability starts with a shared data format. According to OpenVASP, [IVMS 101](/glossary/ivms101/) is the common data standard across TRISA and Travel Rule Protocol messaging. The scope of IVMS 101 leaves out network protocols, information security and the identification of VASPs, so a common format alone does not connect two networks. The two sides also have to agree on those layers, either through a direct link between two protocols or through software that speaks several protocols and translates between them. Where no route exists, the provider is in the same position as with a counterparty in a country that has no Travel Rule (the [sunrise issue](/glossary/sunrise-issue/)), and its own policy decides what happens to the transfer.
 
   ## What to check when you compare providers
 
@@ -42,7 +42,7 @@ buyer_questions:
   - Do any of your connections send data through a central hub, or is it always exchanged directly between the two providers?
 faq:
   - q: What are the main Travel Rule protocols?
-    a: Widely discussed ones include the Travel Rule Protocol from the OpenVASP Association, TRISA, TRUST and Global Travel Rule (GTR). Each has its own membership rules, discovery and security model, which is why interoperability between them matters.
+    a: Examples include the Travel Rule Protocol from the OpenVASP Association, TRISA, TRUST and Global Travel Rule (GTR). Each has its own membership rules, discovery and security model, which is why interoperability between them matters.
   - q: Does using IVMS 101 make two Travel Rule solutions interoperable?
     a: Not on its own. IVMS 101 defines the data fields. Its scope excludes network protocols, information security and identification of VASPs, so the two systems still need a way to find each other and exchange messages securely.
   - q: Does EU law require a specific Travel Rule protocol?

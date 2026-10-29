@@ -19,8 +19,8 @@ body: |
 
   Two error rates appear in most test results. As accredited lab [iBeta summarizes them](https://ibeta.com/wp-content/uploads/2022/06/iBeta-Biometrics-ISO-PAD-and-FIDO-Comparison.pdf):
 
-  - **APCER** (attack presentation classification error rate) is "the proportion of attack presentations using the same PAI species that are incorrectly classified as bona fide presentations." In plain terms, how often a given kind of fake gets through.
-  - **BPCER** (bona fide presentation classification error rate) is "the proportion of bona fide presentations incorrectly classified as presentation attacks." In plain terms, how often a real person is rejected.
+  - **APCER** (attack presentation classification error rate) is "the proportion of attack presentations using the same PAI species that are incorrectly classified as bona fide presentations." In plain terms, it measures how often a given kind of fake gets through.
+  - **BPCER** (bona fide presentation classification error rate) is "the proportion of bona fide presentations incorrectly classified as presentation attacks." It measures how often a real person is rejected.
 
   A PAI (presentation attack instrument) is the fake itself, and a PAI species is a class of fakes made the same way, for example printed photos or silicone masks. APCER is reported per species, so one headline number can hide a weak spot.
 
@@ -30,7 +30,7 @@ body: |
 
   [iBeta's own levels](https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/) are set by attacker time, expertise and artefact cost: up to $30 of materials at Level 1, up to $300 at Level 2, and hyper-realistic masks at Level 3. To pass, the share of successful attacks must stay at 0% for Level 1, 1% for Level 2 and 5% for Level 3, and iBeta limits BPCER to 15% (10% or less at Level 3). iBeta is accredited by NIST's NVLAP program for this testing, and says a pass "does not translate to a certification of the vendor product."
 
-  Rules can also point to the standard. NIST SP 800-63A-4, final since July 2025, says "All biometric presentation attack detection tests SHALL be conformant to ISO/IEC 30107-3:2023." Its companion, SP 800-63B-4, says testing SHOULD show an impostor attack presentation accept rate below 0.07. See [NIST SP 800-63](/glossary/nist-sp-800-63/).
+  Some rules refer to the standard directly. NIST SP 800-63A-4, final since July 2025, says "All biometric presentation attack detection tests SHALL be conformant to ISO/IEC 30107-3:2023." Its companion, SP 800-63B-4, says testing SHOULD show an impostor attack presentation accept rate below 0.07. See [NIST SP 800-63](/glossary/nist-sp-800-63/).
 
   ## What to check when you compare providers
 

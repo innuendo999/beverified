@@ -29,7 +29,7 @@ body: |
 
   ## What to check when you compare providers
 
-  Coverage matters more than feature lists. Ask which protocols and networks the tool can send to and receive from, how it finds out whether a wallet address belongs to a regulated provider, and what it does when the counterparty cannot receive data. Ask how rules differ by jurisdiction in the product, since thresholds and data fields are not the same everywhere. Our [Travel Rule ranking](/providers/travel-rule/) compares the reviewed providers.
+  Start with coverage. Ask which protocols and networks the tool can send to and receive from, how it finds out whether a wallet address belongs to a regulated provider, and what it does when the counterparty cannot receive data. Then ask whether the product can apply different rules per jurisdiction, since thresholds and data fields are not the same everywhere. Our [Travel Rule ranking](/providers/travel-rule/) compares the reviewed providers.
 buyer_questions:
   - Which Travel Rule protocols and networks can you send to and receive from today, and how do you connect to counterparties on a different one?
   - How do you identify whether a destination address belongs to a regulated provider or a self-hosted wallet?
@@ -43,7 +43,7 @@ faq:
   - q: Is there a minimum amount for the Travel Rule in the EU?
     a: No. The recitals of Regulation (EU) 2023/1113 say transfers of crypto-assets should be subject to the same requirements regardless of their amount. A EUR 1,000 threshold applies only to the extra ownership check for transfers to or from self-hosted addresses.
   - q: Why is it called the Travel Rule?
-    a: Because the required information has to travel with the transfer, from the sending provider to the receiving one. The FATF uses the name for Recommendation 16 in the context of virtual assets.
+    a: The required information has to travel with the transfer, from the sending provider to the receiving one. The FATF uses the name for Recommendation 16 in the context of virtual assets.
   - q: When does the revised FATF Recommendation 16 take effect?
     a: The FATF says the changes agreed at its June 2025 Plenary will come into effect by the end of 2030, and that it will produce guidance before then.
 sources:

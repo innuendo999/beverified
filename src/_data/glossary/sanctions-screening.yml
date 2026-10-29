@@ -23,7 +23,7 @@ body: |
 
   ## What to check when you compare providers
 
-  OFAC says its regulations do not explicitly require any specific screening regime, but the consequences of a miss are concrete. A firm that blocks or rejects a transaction must report it to OFAC within 10 business days, and records of transactions subject to OFAC rules must be available for examination for at least 10 years. The UK regulator's [Financial Crime Guide](https://www.handbook.fca.org.uk/handbook/FCG/7/2.html) lists as poor practice a firm that has little understanding of how a third-party tool is calibrated and when lists are updated, and screening of customer databases as a one-off exercise.
+  OFAC says its regulations do not explicitly require any specific screening regime. They do set reporting and recordkeeping duties: a firm that blocks or rejects a transaction must report it to OFAC within 10 business days, and records of transactions subject to OFAC rules must be available for examination for at least 10 years. The UK regulator's [Financial Crime Guide](https://www.handbook.fca.org.uk/handbook/FCG/7/2.html) gives two examples of poor practice: a firm that has little understanding of how a third-party tool is calibrated and when lists are updated, and screening customer databases as a one-off exercise.
 
   So ask which lists the tool covers, how fast a new designation reaches your screening, whether the whole customer base is rescreened on each list change, and whether ownership data supports the 50 Percent Rule. For the step-by-step process, see our [OFAC screening guide](/publications/how-to-conduct-ofac-screening-step-by-step-guide/). The [AML software ranking](/providers/aml/) shows which reviewed providers include sanctions and PEP screening.
 buyer_questions:
@@ -35,7 +35,7 @@ buyer_questions:
   - How long do you keep alert decisions and audit trails, and can we export them for a regulator?
 faq:
   - q: Is sanctions screening required by law?
-    a: Sanctions laws prohibit dealing with designated persons, but OFAC says its regulations do not explicitly require any specific screening regime. In practice, screening is how firms avoid prohibited dealings, and regulators such as the FCA review how well it is calibrated and run.
+    a: Sanctions laws prohibit dealing with designated persons, but OFAC says its regulations do not explicitly require any specific screening regime. Screening is the usual way firms avoid prohibited dealings, and regulators such as the FCA review how well it is calibrated and run.
   - q: Which sanctions lists should a firm screen against?
     a: It depends on where the firm operates and which currencies and counterparties it handles. Common lists are the OFAC SDN List, the UN Security Council Consolidated List, the EU consolidated list and the UK Sanctions List.
   - q: What is the difference between sanctions screening and PEP screening?
