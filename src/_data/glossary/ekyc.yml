@@ -1,0 +1,59 @@
+term: Electronic KYC
+abbr: eKYC
+also_known_as: [e-KYC, Digital KYC, Remote KYC, Aadhaar e-KYC]
+cluster: identity
+definition: Electronic KYC (eKYC) is customer identification and verification done remotely with digital evidence, such as a document scan with a selfie, an NFC chip read, an eID or a check against an official database. In India the term also means Aadhaar e-KYC, where UIDAI returns digitally signed identity data with the customer's consent.
+seo_description: "eKYC is KYC done remotely with digital evidence. What it means in general, how Aadhaar e-KYC works in India, and what to check in an eKYC provider."
+rankings: [e-kyc, india]
+related: [know-your-customer, video-kyc, document-verification, database-verification, nfc-chip-verification, reusable-digital-identity]
+body: |
+  ## Two meanings of eKYC
+
+  In most markets eKYC is a general label. It means [KYC](/glossary/know-your-customer/) done online instead of in a branch: the customer proves who they are with digital evidence, and the firm records the result. The usual methods are a [document check](/glossary/document-verification/) with a selfie and liveness test, an [NFC chip read](/glossary/nfc-chip-verification/) of an ePassport or ID card, a national or bank eID, a [database check](/glossary/database-verification/), or a video call with a trained agent. The legal duty does not change. Only the way the evidence is collected and checked does.
+
+  The FATF's 2020 Guidance on Digital Identity says non-face-to-face identification that relies on reliable, independent digital ID systems with appropriate risk mitigation "may present a standard level of risk, and may even be lower-risk." The UK Money Laundering Regulations 2017 likewise let a firm treat information from a secure electronic identification process as coming from a reliable, independent source (regulation 28(19)).
+
+  In India, eKYC has a narrower and more technical meaning. It refers to UIDAI's Aadhaar e-KYC service. According to UIDAI's [Aadhaar e-KYC API specification](https://uidai.gov.in/images/resource/aadhaar_ekyc_api_2_5.pdf) (version 2.5), the resident authorizes the request with Aadhaar biometric or OTP authentication, and UIDAI returns demographic data and a photograph that are digitally signed by UIDAI. Only a KYC User Agency (KUA), an entity with access to the e-KYC service, can call it, and the specification says the API should not be called without the Aadhaar number holder's explicit consent.
+
+  ## What the RBI directions say
+
+  For Indian commercial banks the rules sit in the [Reserve Bank of India (Commercial Banks: Know Your Customer) Directions, 2025](https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=13141), issued on 28 November 2025 and updated as on 1 October 2026. They refer to UIDAI's e-KYC authentication facility and allow a bank official, business correspondent or business facilitator to perform biometric-based e-KYC authentication.
+
+  Accounts opened with OTP-based e-KYC in non-face-to-face mode carry limits under paragraph 25. The customer must give specific consent to OTP authentication. The aggregate balance of all deposit accounts may not exceed one lakh rupees, and aggregate credits in a financial year are capped at two lakh rupees. Only term loans may be sanctioned, up to ₹60,000 in a year. These accounts may not operate for more than one year unless full identification or video-based customer identification ([V-CIP](/glossary/video-kyc/)) is completed. The directions also define Digital KYC, where an authorized bank officer captures a live photo of the customer and their document together with the location.
+
+  ## What to check in an eKYC provider
+
+  Start with what your regulator accepts. A provider can offer many methods, but only some will count in a given country. In India, ask whether the provider holds its own KUA license or works through a licensed partner, and how it supports CKYC and V-CIP. Elsewhere, check eID coverage, NFC support and fallbacks for users who cannot complete the main route. Our [eKYC ranking](/providers/e-kyc/) and [India ranking](/providers/india/) compare providers on these points.
+buyer_questions:
+  - Which eKYC methods do you support in each of our countries, and which ones does each local regulator accept?
+  - In India, do you call Aadhaar e-KYC under your own KUA license or through a partner, and how is customer consent recorded?
+  - Do you support RBI-compliant V-CIP and CKYC search and upload?
+  - What fallback do you offer when a customer has no NFC phone, no eID or fails the automated check?
+  - What evidence do you store for each completed check, and for how long?
+faq:
+  - q: What is the difference between eKYC and KYC?
+    a: KYC is the duty to identify and verify customers. eKYC is the same duty done remotely with digital evidence such as document scans, chip reads, eIDs or database checks, instead of a document seen in person.
+  - q: What is Aadhaar e-KYC?
+    a: It is UIDAI's service that returns an Aadhaar holder's name, date of birth, gender, address and photo, digitally signed by UIDAI, after the holder authorizes it with biometric or OTP authentication. Only licensed KYC User Agencies can use it.
+  - q: Are there limits on bank accounts opened with Aadhaar OTP e-KYC?
+    a: Yes. Under the RBI's 2025 KYC directions for commercial banks, the aggregate deposit balance may not exceed one lakh rupees, credits in a financial year are capped at two lakh rupees, and the account may not operate for more than one year unless full identification or V-CIP is completed.
+sources:
+  - title: "Reserve Bank of India (Commercial Banks: Know Your Customer) Directions, 2025 (Updated as on October 1, 2026)"
+    publisher: Reserve Bank of India
+    url: https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=13141
+    accessed: 2026-10
+  - title: Aadhaar e-KYC API Specification, Version 2.5 (August 2019)
+    publisher: Unique Identification Authority of India (UIDAI)
+    url: https://uidai.gov.in/images/resource/aadhaar_ekyc_api_2_5.pdf
+    accessed: 2026-10
+  - title: Guidance on Digital Identity (March 2020)
+    publisher: FATF
+    url: https://www.fatf-gafi.org/media/fatf/documents/recommendations/pdfs/Guidance-on-Digital-Identity-report.pdf
+    accessed: 2026-10
+  - title: The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017, regulation 28
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/uksi/2017/692/regulation/28
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

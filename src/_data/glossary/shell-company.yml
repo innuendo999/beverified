@@ -1,0 +1,62 @@
+term: Shell company
+also_known_as: [Shell corporation, Shell entity]
+cluster: kyb
+definition: A shell company is an incorporated company with no independent operations, significant assets, ongoing business activities or employees. Many are formed for legitimate reasons such as holding assets or completing mergers, but shells are also a common way to hide who owns money and to move it.
+seo_description: "A shell company has no real operations, assets or staff. How shells hide beneficial ownership, FATF, Egmont and FinCEN red flags, and what to ask KYB vendors."
+rankings: [kyb]
+related: [ultimate-beneficial-owner, know-your-business, company-registry-check, suspicious-activity-report, enhanced-due-diligence]
+body: |
+  ## What a shell company is
+
+  The definition above comes from the [FATF and Egmont Group report](https://egmontgroup.org/wp-content/uploads/2021/10/FATF-Egmont-Concealment-beneficial-ownership-Executive-summary.pdf) "Concealment of Beneficial Ownership", published in July 2018. FinCEN's [2006 advisory](https://www.fincen.gov/sites/default/files/shared/AdvisoryOnShells_FINAL.pdf) on shell companies describes them as non-publicly traded corporations, LLCs and trusts that typically have no physical presence other than a mailing address and generate little to no independent economic value.
+
+  Being a shell is not illegal. FinCEN says most shell companies are formed for legitimate reasons, such as holding stock or intangible assets of another business, or facilitating domestic and cross-border currency and asset transfers and corporate mergers. The risk comes from what makes them useful: FinCEN notes they are easy and inexpensive to form and operate, and that a lack of transparency lets them disguise their ownership and purpose.
+
+  ## Common confusions
+
+  The FATF and Egmont report separates three types that are often mixed up:
+
+  - **Shell company:** no independent operations, significant assets, ongoing business activities or employees.
+  - **Front company:** a fully functioning company with the characteristics of a legitimate business, used to hide illicit financial activity.
+  - **Shelf company:** an incorporated company with inactive shareholders, directors and secretary, left dormant for a longer period, even after a customer relationship is established.
+
+  The distinction matters for screening. Indicators of an empty company, such as no staff or no filed trading, catch shells but not front companies, which do trade.
+
+  ## How shells hide beneficial ownership
+
+  The FATF and Egmont report analysed 106 case studies and found that legal persons, "principally shell companies", are a key feature of schemes that disguise beneficial ownership. Owners typically combine layered ownership chains with intermediaries and third parties who exercise control on their behalf. Nominee directors and shareholders, especially informal "straw men", were a key vulnerability in a large majority of the cases. Trust and company service providers were the professionals most often involved in setting up legal persons, arrangements and bank accounts.
+
+  FinCEN's advisory (FIN-2006-G014, 9 November 2006) lists red flags, including payments with no stated purpose that do not reference goods or services, businesses that share the same address or give only a registered agent's address, an unusually large number and variety of beneficiaries receiving wires from one company, and multiple high-value payments between shell companies with no apparent legitimate business purpose. It does not ask institutions to refuse shell company accounts. It asks them to assess the risk of each relationship, monitor it, and file a [suspicious activity report](/glossary/suspicious-activity-report/) where there is reason to suspect illicit use.
+
+  ## What to check when you compare providers
+
+  Shell risk shows up in [KYB](/glossary/know-your-business/) data rather than in a single check. Ask whether a tool flags companies with no filed accounts, no employees or no trading history, addresses shared by many companies, registered agent addresses, nominee officers, and long ownership chains that pass through other jurisdictions before reaching an [ultimate beneficial owner](/glossary/ultimate-beneficial-owner/). Our [KYB ranking](/providers/kyb/) compares the providers we review.
+buyer_questions:
+  - Do you flag companies registered at an address shared by many other companies or at a registered agent's address?
+  - Can you detect nominee directors or shareholders, and people who hold an unusually large number of appointments?
+  - Do you show filing history, dormancy and whether accounts report employees or trading?
+  - How far do you follow ownership chains through foreign holding companies before you stop?
+  - Can these indicators feed our risk score and trigger enhanced due diligence automatically?
+faq:
+  - q: Are shell companies illegal?
+    a: No. FinCEN says most shell companies are formed for legitimate reasons, such as holding assets or facilitating transfers and corporate mergers. They become a money laundering risk because they are cheap to form and can hide who owns them.
+  - q: What is the difference between a shell company and a front company?
+    a: A shell company has no independent operations, significant assets, activities or employees. A front company is a fully functioning company with the characteristics of a legitimate business, used to hide illicit financial activity.
+  - q: What is a shelf company?
+    a: In the FATF and Egmont report's terms, a shelf company is an incorporated company with inactive shareholders, directors and secretary that is left dormant for a longer period, even after a customer relationship is established.
+sources:
+  - title: "Concealment of Beneficial Ownership: Executive summary (FATF and Egmont Group, July 2018)"
+    publisher: Egmont Group of Financial Intelligence Units and FATF
+    url: https://egmontgroup.org/wp-content/uploads/2021/10/FATF-Egmont-Concealment-beneficial-ownership-Executive-summary.pdf
+    accessed: 2026-10
+  - title: "FIN-2006-G014: Potential Money Laundering Risks Related to Shell Companies"
+    publisher: FinCEN
+    url: https://www.fincen.gov/sites/default/files/shared/AdvisoryOnShells_FINAL.pdf
+    accessed: 2026-10
+  - title: Concealment of Beneficial Ownership (report page)
+    publisher: Egmont Group of Financial Intelligence Units
+    url: https://egmontgroup.org/?p=2761
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

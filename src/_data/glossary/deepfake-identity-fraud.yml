@@ -1,0 +1,54 @@
+term: Deepfake identity fraud
+also_known_as: [Deepfake fraud, Deepfake KYC fraud, GenAI identity fraud]
+cluster: identity
+definition: Deepfake identity fraud is the use of AI-generated or AI-altered images, video or audio to get through identity checks, for example a fake selfie video or a forged ID photo used to open an account in someone else's name or under an invented identity.
+seo_description: "Deepfake identity fraud uses AI-made faces, video or documents to pass ID checks. How it works, FinCEN red flags, NIST rules and what to ask vendors."
+rankings: [liveness-detection]
+related: [injection-attack-detection, liveness-detection, synthetic-identity-fraud, video-identification, document-verification, face-matching]
+body: |
+  ## How deepfakes are used against identity checks
+
+  FinCEN's [alert FIN-2024-Alert004](https://www.fincen.gov/sites/default/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf), issued on 13 November 2024, says that beginning in 2023 and continuing in 2024 it saw an increase in suspicious activity reports describing suspected use of deepfake media. It describes criminals altering or creating fraudulent identity documents to get around identity verification, and combining AI-generated images with stolen or entirely fake personal data to create [synthetic identities](/glossary/synthetic-identity-fraud/). Accounts opened this way were then used to launder the proceeds of other frauds, including as funnel accounts.
+
+  Europol's Innovation Lab report [Facing reality? Law enforcement and the challenge of deepfakes](https://www.europol.europa.eu/cms/sites/default/files/documents/Europol_Innovation_Lab_Facing_Reality_Law_Enforcement_And_The_Challenge_Of_Deepfakes.pdf) lists "falsifying online identities and fooling 'know your customer' mechanisms" among the crimes deepfakes can help. It also describes face morphing, where the faces of two people are blended into one passport photo that can match both.
+
+  A deepfake reaches an identity check in one of two ways. It can be shown to the camera on a screen, which is a presentation attack that [liveness detection](/glossary/liveness-detection/) is built to catch. Or it can be fed into the video stream through a virtual camera or tampered app, which bypasses the camera and needs [injection attack detection](/glossary/injection-attack-detection/). FinCEN notes that third-party webcam plugins "can let a customer display previously generated video rather than live video."
+
+  ## Red flags and rules
+
+  FinCEN's red flags include a customer photo that shows signs of alteration or does not fit the customer's age, identity documents that are inconsistent with each other, use of a third-party webcam plugin during a live verification check, attempts to switch channels during a live check because of "glitches", a reverse image search that matches a gallery of AI-generated faces, and device or location data that does not fit the documents. FinCEN asks institutions to use the key term "FIN-2024-DEEPFAKEFRAUD" when they file a related suspicious activity report.
+
+  In the US, [NIST SP 800-63A-4](https://pages.nist.gov/800-63-4/sp800-63a.html), final since July 2025, says in section 3.14 that credential service providers SHALL analyze all digital media submitted during identity proofing for signs of modification, manipulation, tampering or forgery, and SHOULD look for signatures of generative AI and deepfake tools. Detection algorithms SHALL be tested against forged and genuine media, and the attack types tested and the false negative rates SHALL be documented and made available to relying parties on request. For live sessions with an agent, such as [video identification](/glossary/video-identification/), agents SHALL be trained to spot manipulated media, for example "high latency, synchronization issues, inconsistent skin tone and resolution".
+
+  ## What to check when you compare providers
+
+  Ask the provider to separate three things: detection of deepfakes shown to the camera, detection of injected video, and detection of altered or generated ID documents. Each needs its own test evidence. Ask which deepfake tools and attack types they test against and how often that set is updated, since the tools change quickly. Ask for false negative and false rejection rates, and how flagged cases reach a human reviewer. Our [liveness detection ranking](/providers/liveness-detection/) compares the reviewed providers on these checks.
+buyer_questions:
+  - Do you test deepfakes shown to the camera, injected deepfake video and AI-generated ID documents separately, and can we see the results for each?
+  - Which deepfake tools and attack types are in your test set, and how often do you update it?
+  - What false negative and false rejection rates did those tests show?
+  - Do you detect virtual cameras and third-party webcam plugins during the session?
+  - How are suspected deepfakes routed to manual review, and what evidence do we get for a suspicious activity report?
+faq:
+  - q: Can liveness detection stop deepfakes?
+    a: It can catch a deepfake played on a screen in front of the camera. A deepfake injected straight into the video stream bypasses the camera, so it needs injection attack detection as well.
+  - q: What did FinCEN say about deepfakes?
+    a: In alert FIN-2024-Alert004 of 13 November 2024, FinCEN described criminals using AI-generated images and documents to open accounts, listed red flags, and asked institutions to use the key term FIN-2024-DEEPFAKEFRAUD in related suspicious activity reports.
+  - q: Are deepfakes used to create synthetic identities?
+    a: Yes. FinCEN reports criminals combining AI-generated images with stolen or entirely fake personal data to create synthetic identities.
+sources:
+  - title: FinCEN Alert on Fraud Schemes Involving Deepfake Media Targeting Financial Institutions (FIN-2024-Alert004)
+    publisher: Financial Crimes Enforcement Network
+    url: https://www.fincen.gov/sites/default/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf
+    accessed: 2026-10
+  - title: Facing reality? Law enforcement and the challenge of deepfakes
+    publisher: Europol Innovation Lab
+    url: https://www.europol.europa.eu/cms/sites/default/files/documents/Europol_Innovation_Lab_Facing_Reality_Law_Enforcement_And_The_Challenge_Of_Deepfakes.pdf
+    accessed: 2026-10
+  - title: "NIST SP 800-63A-4, Digital Identity Guidelines: Identity Proofing and Enrollment"
+    publisher: National Institute of Standards and Technology
+    url: https://pages.nist.gov/800-63-4/sp800-63a.html
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

@@ -1,0 +1,64 @@
+term: Identity proofing
+also_known_as: [Identity assurance, Identity proofing and enrollment, IAL]
+cluster: identity
+definition: Identity proofing is the process of establishing that a person who applies for an account is a real, specific individual, by collecting identity evidence, checking that the evidence is genuine and confirming that the applicant is its rightful owner. NIST grades how strong the process is with identity assurance levels (IAL1 to IAL3).
+seo_description: "Identity proofing links an applicant to a real person: resolve, validate, verify. How NIST SP 800-63A IAL1, IAL2 and IAL3 differ, and what to ask vendors."
+rankings: [identity-verification]
+related: [nist-sp-800-63, know-your-customer, document-verification, face-matching, database-verification, uk-diatf]
+body: |
+  ## How identity proofing works
+
+  Identity proofing answers the question "who are you?" at enrollment. It is the step before authentication, which later answers "are you the same person who enrolled?" The FATF's Guidance on Digital Identity uses the same split and describes proofing as collecting, validating and verifying identity evidence and information about a person.
+
+  NIST [SP 800-63A-4](https://pages.nist.gov/800-63-4/sp800-63a.html), published as final in July 2025, breaks the process into three steps:
+
+  1. **Resolution.** Collect evidence and attributes so the applicant can be distinguished as one unique, real person.
+  2. **Validation.** Confirm that the evidence and attributes are authentic, accurate and valid, for example by [checking the document](/glossary/document-verification/) or [checking the data against an authoritative or credible source](/glossary/database-verification/).
+  3. **Verification.** Confirm that the applicant is the genuine owner of that evidence, for example by [comparing their face](/glossary/face-matching/) with the photo on the document.
+
+  NIST also names four ways to run it: remote unattended (fully automated), remote attended (a live agent over video), on-site unattended (a kiosk) and on-site attended (in person with an agent).
+
+  ## NIST identity assurance levels
+
+  [NIST SP 800-63](/glossary/nist-sp-800-63/) sets three identity assurance levels:
+
+  - **IAL1** supports the real-world existence of the claimed identity. Core attributes are validated against authoritative or credible sources. The minimum evidence is one piece of FAIR evidence that can be digitally validated or carries a facial portrait or other biometric, or one piece of STRONG or SUPERIOR evidence.
+  - **IAL2** adds more evidence and more rigorous validation, plus checks that the applicant really owns the evidence. The minimum is one FAIR and one STRONG piece, two STRONG pieces, or one SUPERIOR piece. Ownership can be verified through a non-biometric, a biometric or a digital evidence pathway, and a provider that offers the non-biometric pathway has to tell the relying parties.
+  - **IAL3** needs the same evidence as IAL2 but "SHALL only be delivered as on-site attended" proofing with a trained representative, and the provider collects and keeps a biometric sample.
+
+  SUPERIOR evidence has to be validated by cryptographic verification of its contents and of the issuing source, including the digital signature and trust chain. An [NFC chip read](/glossary/nfc-chip-verification/) that checks the issuing state's signature over the chip data is one example of that kind of check.
+
+  The IAL scale is not an AML rule. AML law sets its own duty to verify a customer (see [KYC](/glossary/know-your-customer/)), and a firm can use NIST levels as a way to describe how strong its proofing is.
+
+  ## What to check when you compare providers
+
+  If a provider says it meets IAL2, ask which pathway produced that claim and whether an independent party assessed it. Under SP 800-63A-4, a provider that uses biometrics has to have its recognition and attack detection algorithms tested periodically by independent entities, such as accredited labs, and has to make the results publicly available, at least in summary form. Our [identity verification ranking](/providers/identity-verification/) records which claims a provider has documented.
+buyer_questions:
+  - Which NIST identity assurance level do you claim, and was that claim assessed by an independent party?
+  - Which verification pathway do you use for IAL2 (biometric, non-biometric or digital evidence), and is that recorded per user?
+  - What evidence strengths do you accept, and which documents count as STRONG or SUPERIOR in your flow?
+  - Where are your biometric and document validation test results published?
+  - Do you offer an attended route, such as a video agent, for applicants who fail the automated check?
+faq:
+  - q: What is the difference between identity proofing and authentication?
+    a: Identity proofing happens once, at enrollment, and establishes who the applicant is. Authentication happens at each later login and confirms the user is the same person who was proofed, using something they have, know or are.
+  - q: What is IAL2?
+    a: IAL2 is the middle identity assurance level in NIST SP 800-63A. It needs stronger evidence than IAL1 (for example two STRONG pieces or one SUPERIOR piece) and checks that the applicant owns that evidence, and it can be done remotely.
+  - q: Can IAL3 identity proofing be done remotely?
+    a: No. Under SP 800-63A-4, IAL3 proofing must be on-site attended. The agent can be in the same room or attend through a kiosk or device the provider controls.
+sources:
+  - title: "NIST SP 800-63A-4, Digital Identity Guidelines: Identity Proofing and Enrollment (July 2025)"
+    publisher: National Institute of Standards and Technology
+    url: https://pages.nist.gov/800-63-4/sp800-63a.html
+    accessed: 2026-10
+  - title: SP 800-63A-4 publication record
+    publisher: NIST Computer Security Resource Center
+    url: https://csrc.nist.gov/pubs/sp/800/63/a/4/final
+    accessed: 2026-10
+  - title: Guidance on Digital Identity (March 2020)
+    publisher: FATF
+    url: https://www.fatf-gafi.org/media/fatf/documents/recommendations/pdfs/Guidance-on-Digital-Identity-report.pdf
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

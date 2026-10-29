@@ -1,0 +1,74 @@
+term: Anti-money laundering
+abbr: AML
+also_known_as: [AML/CFT, Anti-money laundering and countering the financing of terrorism]
+cluster: aml
+definition: >-
+  Anti-money laundering (AML) is the set of laws, regulations and internal controls meant to stop criminal proceeds from being passed through the financial system as legitimate money. For a regulated firm it means assessing risk, checking customers, keeping records, monitoring activity and reporting suspicions.
+seo_description: "AML is the set of rules and controls that stop criminal money entering the financial system. What FATF, EU and UK rules require, and what AML software covers."
+rankings: [aml, aml/banks]
+related: [customer-due-diligence, risk-based-approach, transaction-monitoring, suspicious-activity-report, fatf-recommendations, sanctions-screening]
+body: |
+  ## What AML covers
+
+  Money laundering is the act of making criminal proceeds look clean. The EU's anti-money laundering directive, Directive (EU) 2015/849, defines it in Article 1(3). The core of that definition is converting or transferring property while knowing it comes from criminal activity, in order to hide where it came from. Concealing the true nature or ownership of such property, acquiring or using it, and helping with any of these acts are covered too.
+
+  AML is the response to that. Governments make laundering a crime, and they require banks, payment firms, crypto businesses and other "obliged entities" to run preventive controls. The term is often written AML/CFT, because the same rules also target terrorist financing.
+
+  For a regulated firm, the preventive side comes down to a handful of duties:
+
+  - Assess its own exposure to money laundering risk and set controls to match (the [risk-based approach](/glossary/risk-based-approach/)).
+  - Run [customer due diligence](/glossary/customer-due-diligence/): identify and verify the customer and any beneficial owner, understand the relationship and monitor it.
+  - Apply extra checks to higher-risk customers, such as politically exposed persons.
+  - Keep records.
+  - Report suspicious activity to the national financial intelligence unit (FIU).
+
+  ## Where the rules come from
+
+  The global baseline is the [FATF Recommendations](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html), 40 numbered standards that national laws build on. Recommendation 3 asks countries to criminalise money laundering. The preventive measures for firms sit in section D. Recommendation 10 covers customer due diligence. Recommendation 11 says financial institutions should keep transaction records for at least five years. Under Recommendation 20, a financial institution that suspects funds are the proceeds of crime should be required by law to report that promptly to the FIU.
+
+  In the EU, Directive 2015/849 sets the current rules through national laws. They will be replaced by a single rulebook in the [AML Regulation](https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng), Regulation (EU) 2024/1624 of 31 May 2024, which applies directly in every member state. The Dutch central bank states that the new framework "will become applicable on 10 July 2027". A new EU authority, [AMLA](/glossary/amla/), will supervise parts of it.
+
+  In the UK the main preventive rules are the [Money Laundering Regulations 2017](https://www.legislation.gov.uk/uksi/2017/692/regulation/28) (S.I. 2017/692). Regulation 18 requires a firm-wide risk assessment, regulations 27 and 28 set out customer due diligence, and regulation 33 covers enhanced due diligence.
+
+  ## What AML software does
+
+  No single product covers all of AML. Vendors usually sell one or more of these pieces: identity verification for onboarding, [sanctions screening](/glossary/sanctions-screening/) and PEP checks, adverse media screening, [transaction monitoring](/glossary/transaction-monitoring/), customer risk scoring and case management for analysts. The software produces alerts and evidence. The firm still makes the decisions and stays responsible for them.
+
+  When you compare vendors, map each module to the duty it supports, and check what the audit trail records for each decision. Ask how rules and risk scores are configured, and who can change them. Our [AML software ranking](/providers/aml/) and the [ranking for banks](/providers/aml/banks/) compare reviewed providers on these points.
+buyer_questions:
+  - Which parts of our AML program does your product cover (screening, monitoring, risk scoring, case management), and which do we need from someone else?
+  - Which jurisdictions' rules is your product configured for today, and how quickly do you update it when a rule changes?
+  - Can we see the audit trail for one alert, from the trigger to the analyst's decision?
+  - How are risk scores and monitoring rules configured, and who on our side can change them?
+  - How do you handle the EU AML Regulation that applies from 10 July 2027?
+faq:
+  - q: What does AML stand for?
+    a: AML stands for anti-money laundering. It covers the laws and the controls that firms use to stop criminal money from being moved through the financial system. You will often see it written AML/CFT, where CFT means countering the financing of terrorism.
+  - q: What is the difference between AML and KYC?
+    a: KYC (Know Your Customer) is one part of AML. It covers identifying and verifying customers. AML is the wider program, which also includes risk assessment, screening, transaction monitoring, record keeping and reporting suspicious activity.
+  - q: Who has to comply with AML rules?
+    a: Banks and other financial institutions, plus the businesses that national law lists as obliged entities. Depending on the country, that can include payment and e-money firms, crypto-asset service providers, accountants, lawyers, estate agents and casinos.
+sources:
+  - title: The FATF Recommendations
+    publisher: Financial Action Task Force
+    url: https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html
+    accessed: 2026-10
+  - title: Directive (EU) 2015/849 on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing (consolidated text)
+    publisher: EUR-Lex
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015L0849-20210630
+    accessed: 2026-10
+  - title: Regulation (EU) 2024/1624 on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing
+    publisher: EUR-Lex
+    url: https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng
+    accessed: 2026-10
+  - title: European AML/CFT framework
+    publisher: De Nederlandsche Bank
+    url: https://www.dnb.nl/en/sector-information/open-book-supervision/laws-and-eu-regulations/european-amlcft-framework/
+    accessed: 2026-10
+  - title: "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017, regulation 28"
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/uksi/2017/692/regulation/28
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29

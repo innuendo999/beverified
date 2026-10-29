@@ -1,0 +1,49 @@
+term: Reusable digital identity
+also_known_as: [Reusable identity, Reusable KYC, Portable digital identity, Reusable ID]
+cluster: identity
+definition: A reusable digital identity is one a person proves once, for example by verifying an ID document and a selfie, and can then present to other services without repeating the full check. It is usually held in a digital wallet or account and shared with the person's consent.
+seo_description: "A reusable digital identity is verified once and shared again with consent. How it works, what FATF and eIDAS 2 say, and what to ask before relying on one."
+rankings: [identity-verification]
+related: [eidas-2, identity-proofing, uk-diatf, know-your-customer, nist-sp-800-63, customer-due-diligence]
+body: |
+  ## How a reusable identity works
+
+  Three parties are involved. An issuer, such as a government, a bank or an identity provider, carries out the [identity proofing](/glossary/identity-proofing/) once: it checks the document, the face and any data sources it relies on. It then issues the result as a credential or keeps it in an account linked to the person. When the person signs up somewhere else, they choose to share that credential, or only some attributes from it, such as name, date of birth or "over 18". The receiving service, called the relying party, checks that the credential comes from a trusted issuer and has not been changed or revoked, instead of running its own document and selfie check.
+
+  The models differ. Some are government wallets, some are bank identity schemes, and some are private identity accounts that a provider lets users carry between its client businesses. What they share is that the person proves who they are once and reuses the result.
+
+  ## What the rules say
+
+  The FATF's [Guidance on Digital ID](https://www.fatf-gafi.org/en/publications/Financialinclusionandnpoissues/Digital-identity-guidance.html), published on 6 March 2020, is meant to help regulated entities decide whether a digital ID is appropriate for [customer due diligence](/glossary/customer-due-diligence/). It asks them to understand the assurance levels of the system's technology, architecture and governance, and then judge whether it is appropriately reliable and independent given the risk of illicit finance.
+
+  In the EU, the revised eIDAS Regulation, [Regulation (EU) 2024/1183](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401183), in force since 20 May 2024, creates the European Digital Identity Wallet. Each Member State must provide at least one wallet within 24 months of the entry into force of the relevant implementing acts (Article 5a(1)). The wallet lets users "securely request, obtain, select, combine, store, delete, share and present, under the sole control of the user" their identification data and attestations, including by selective disclosure (Article 5a(4)(a)). Use of the wallet "shall be voluntary" (Article 5a(15)). Private relying parties that must use strong user authentication under law or contract, including in finance, must accept the wallet no later than 36 months after the relevant implementing acts take effect, when the user chooses to use it; micro and small enterprises are excluded (Article 5f(2)). The [eIDAS 2](/glossary/eidas-2/) entry covers the regulation in more depth. In the UK, the [digital identity and attributes trust framework](/glossary/uk-diatf/) sets rules for certified identity services.
+
+  ## What to check when you compare providers
+
+  A reusable identity is only as good as the original check. Ask which assurance level the credential was issued at, under which framework, and how old the underlying verification is. Ask what happens when the person's document expires or the credential is revoked, and whether you will be told. Check which attributes you can request, so you collect only what you need. Ask whether your regulator accepts the credential for your customer due diligence, and what records you keep to show what you relied on. Our [identity verification ranking](/providers/identity-verification/) covers the providers we review.
+buyer_questions:
+  - Which assurance level and which trust framework was the reusable credential issued under, and can you show the certification?
+  - How old is the underlying identity check, and when is it refreshed?
+  - How are revocation, document expiry and changes of name or address passed on to us?
+  - Which attributes can we request on their own, and can the user share only those?
+  - What evidence do we receive and keep to show our regulator what we relied on?
+  - Will your platform accept European Digital Identity Wallets, and on what timeline?
+faq:
+  - q: What is reusable KYC?
+    a: It is a reusable digital identity used for KYC. A customer who has already been verified shares the result with a new firm, with consent, instead of repeating the document and selfie check.
+  - q: Do EU banks have to accept the European Digital Identity Wallet?
+    a: Under Article 5f(2) of the revised eIDAS Regulation, private relying parties that must use strong user authentication, including in finance, have to accept the wallet when the user chooses it, no later than 36 months after the relevant implementing acts take effect. Micro and small enterprises are excluded.
+  - q: Is using a digital identity wallet mandatory for citizens?
+    a: No. The revised eIDAS Regulation says use of the European Digital Identity Wallet shall be voluntary, and people who do not use one must not be disadvantaged in accessing services.
+sources:
+  - title: Guidance on Digital ID
+    publisher: Financial Action Task Force (FATF)
+    url: https://www.fatf-gafi.org/en/publications/Financialinclusionandnpoissues/Digital-identity-guidance.html
+    accessed: 2026-10
+  - title: Regulation (EU) 2024/1183 amending Regulation (EU) No 910/2014 as regards establishing the European Digital Identity Framework
+    publisher: EUR-Lex, Official Journal of the European Union
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401183
+    accessed: 2026-10
+author: andrii-klymenko
+published: 2026-10-29
+updated: 2026-10-29
