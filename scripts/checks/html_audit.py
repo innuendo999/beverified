@@ -5,7 +5,7 @@ import re, sys, pathlib, collections
 from bs4 import BeautifulSoup, Comment
 
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "_site"
-FOOTPRINT = re.compile(r"claude|anthropic|chatgpt|openai|generated (by|with)|ai[- ]generated|lorem ipsum|\.dc\.html|design export|\{\{|\{%|\{#|\{post\.|\{author\.|\bTODO\b|FIXME", re.I)
+FOOTPRINT = re.compile(r"claude|anthropic|chatgpt|openai|generated (by|with) (an? )?(ai|llm|language model)\b|lorem ipsum|\.dc\.html|design export|\{\{|\{%|\{#|\{post\.|\{author\.|\bTODO\b|FIXME", re.I)
 issues = collections.Counter(); examples = collections.defaultdict(list)
 
 def flag(kind, page, detail=""):
