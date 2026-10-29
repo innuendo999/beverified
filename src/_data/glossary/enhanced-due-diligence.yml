@@ -14,7 +14,7 @@ body: |
 
   The FATF sets the global baseline. Its [Recommendations](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html) call for extra measures for [politically exposed persons](/glossary/politically-exposed-person/) (Recommendation 12) and enhanced due diligence for business with countries "for which this is called for by the FATF" (Recommendation 19).
 
-  In the EU, Article 18(1) of [Directive (EU) 2015/849](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015L0849-20210630) requires enhanced measures in the cases set out in Articles 18a to 24, such as high-risk third countries, correspondent relationships and PEPs, and in other higher-risk cases that member states or firms identify. Article 18(2) adds transactions that are complex, unusually large, follow an unusual pattern or have no apparent economic or lawful purpose. Annex III lists factors that point to higher risk.
+  In the EU, Article 18(1) of [Directive (EU) 2015/849](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015L0849-20210630) requires enhanced measures in the cases set out in Articles 18a to 24, such as high-risk third countries and PEPs, and in other higher-risk cases that member states or firms identify. Article 18(2) adds transactions that are complex, unusually large, follow an unusual pattern or have no apparent economic or lawful purpose. Annex III lists factors that point to higher risk.
 
   The UK list is in [regulation 33(1) of the Money Laundering Regulations 2017](https://www.legislation.gov.uk/uksi/2017/692/regulation/33). It covers cases the firm or its supervisor identifies as high risk, links to FATF call for action countries, correspondent relationships, PEPs and their family members and known close associates, customers who gave false or stolen identification, and unusually complex or large transactions. Any other case that "by its nature" presents a higher risk is included too.
 
@@ -43,7 +43,7 @@ faq:
   - q: What is the difference between CDD and EDD?
     a: CDD is the standard set of checks applied to every customer. EDD adds further measures for higher-risk customers, such as more information, source of funds and wealth checks, senior management approval and closer monitoring. It does not replace CDD.
   - q: Do all PEPs need enhanced due diligence?
-    a: Under FATF Recommendation 12, EU law and UK regulation 33, PEPs are a named EDD case. How far the extra measures go still depends on the risk the individual PEP presents.
+    a: Under FATF Recommendation 12, EU law and UK regulation 33, PEPs are a named EDD case. The depth can still vary. The UK FCA's guidance on PEPs (FG17/6) expects less intrusive steps for lower-risk PEPs and more intrusive ones for higher-risk PEPs.
 sources:
   - title: The FATF Recommendations (Recommendations 12 and 19)
     publisher: Financial Action Task Force
@@ -60,6 +60,10 @@ sources:
   - title: Guidelines on ML/TF risk factors (EBA/GL/2021/02)
     publisher: European Banking Authority
     url: https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2021/963637/Final%20Report%20on%20Guidelines%20on%20revised%20ML%20TF%20Risk%20Factors.pdf
+    accessed: 2026-10
+  - title: "FG17/6: The treatment of politically exposed persons for anti-money laundering purposes"
+    publisher: Financial Conduct Authority
+    url: https://www.fca.org.uk/publication/finalised-guidance/fg17-06.pdf
     accessed: 2026-10
   - title: Consultation paper on draft RTS under Article 28(1) of Regulation (EU) 2024/1624
     publisher: Anti-Money Laundering Authority (AMLA)
