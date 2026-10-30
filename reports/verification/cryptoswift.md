@@ -107,4 +107,8 @@ Not done (suggestions for the owner):
 - What one pricing credit buys.
 - Networks listed on the ecosystem page (unreadable).
 - The official e-Business Register entry and the GLEIF LEI record (the mirror and the vendor's terms agree).
-- Logo: no press kit found; owner to supply.
+
+## Update 2026-10-30: owner decisions
+
+- Award "Best for EU CASPs" approved.
+- Logo: the editor supplied the CryptoSwift logo (purple icon, white wordmark text). Saved as `src/assets/img/wordmarks/cryptoswift.png`, 64 px tall, with the white text recoloured to the site ink colour so it reads on the light background.

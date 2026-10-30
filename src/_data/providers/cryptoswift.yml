@@ -10,7 +10,7 @@ seo:
 logo:
   src: null
   background: null
-  wordmark: null
+  wordmark: /assets/img/wordmarks/cryptoswift.png
 tagline: Hosted Travel Rule API from Estonia with published plans, its own STRIP network, a rule engine and four ways to verify self-hosted wallets
 score: 3.9
 grade: Good
@@ -349,7 +349,7 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- 'Record decisions: link.type none (suggested by 21 Analytics, a partner ranked in Travel Rule; no commercial relationship with CryptoSwift recorded, and the suggestion has no influence on the score). Categories travel-rule only: CryptoSwift integrates third-party KYT and its selfie step is a liveness check without ID matching, so it is not a crypto KYC provider. Logo left null: no press kit found; ask the owner. Wikidata id not found; kg_mid unknown.'
+- 'Record decisions: link.type none (suggested by 21 Analytics, a partner ranked in Travel Rule; no commercial relationship with CryptoSwift recorded, and the suggestion has no influence on the score). Categories travel-rule only: CryptoSwift integrates third-party KYT and its selfie step is a liveness check without ID matching, so it is not a crypto KYC provider. Logo: wordmark supplied by the editor on 30 Oct 2026 (CryptoSwift logo with white text); text recoloured to the site ink colour (#14141A) for the light background, icon colour unchanged. Wikidata id not found; kg_mid unknown.'
 - 'Networks: CODE homepage (codevasp.com/en, Oct 2026) lists CryptoSwift under "Interoperability" with CodeVASP, VerifyVASP, GTR, Sumsub, Sygna and Notabene, shows its logo, and carries a news item dated 23 Dec 2025 that CryptoSwift integrates with CodeVASP. Notabene: CryptoSwift product update of 10 Sep 2025 says incoming transactions from the Notabene network can be received after registering a webhook in a free Notabene account; no outgoing route to Notabene stated. Ospree docs (undated) describe CryptoSwift as an interoperability route for Ospree customers, no direct CryptoSwift integration needed. CryptoSwift FAQ text, as quoted on its product and partners pages, describes TRP, TRUST, TRISA, Sygna Bridge and VerifyVASP as protocols on the market but does not say CryptoSwift supports them. The ecosystem page (cryptoswift.eu/ecosystem/ redirects to cryptoswift.network) could not be opened: the fetch tool refused it and the browser pane blocks the domain. Re-check it when possible; it may list more networks.'
 - 'Network size, vendor figures differ by date: homepage 250+ connected and 2,500+ reachable VASPs, 85+ jurisdictions (Oct 2026); GetApp listing 2,000+ identified VASPs/CASPs; guide of Jan 2025 over 1,000 identified VASPs. Record uses the homepage figures, labelled vendor-stated.'
 - 'ISO/IEC 27001: CryptoSwift blog (3 Sep 2026, modified 14 Sep) says "passed ISO 27001:2022 certification"; Copla case study (10 Jul 2026) says certification was achieved in two months, with no body, number, scope or version. Site footer shows an unnamed ISO emblem. Status vendor_stated. "GDPR Compliant", "DORA Ready" and "99.9% uptime" are site badges, not certifications or a contractual SLA (terms of 1 Jun 2026 contain no SLA). No SOC 2 claim found.'
