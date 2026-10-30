@@ -47,7 +47,7 @@ Canonical domain: `https://beverified.org/`.
 | Top Crypto KYC Providers | `/providers/crypto/` | 5 | Compliance for exchanges & wallets |
 | Liveness Detection Providers | `/providers/liveness-detection/` | 4 | Anti-spoofing facial verification |
 | Cheap KYC Providers | `/providers/cheap-kyc/` | 4 | Budget-friendly verification for startups |
-| Crypto Travel Rule Providers | `/providers/travel-rule/` | 4 | FATF-compliant crypto transfer data sharing |
+| Crypto Travel Rule Providers | `/providers/travel-rule/` | 5 | FATF-compliant crypto transfer data sharing |
 | AML for Banks | `/providers/aml/banks/` | 4 | Enterprise screening for financial institutions (nested one level under `/providers/aml/`) |
 | KYC Providers in Brazil | `/providers/brazil/` | 4 | Region: Brazilian fintechs |
 | KYC Providers in Canada | `/providers/canada/` | 4 | Region: Canadian regulated industries |

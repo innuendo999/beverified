@@ -1451,6 +1451,23 @@ travel-rule:
     legacy_price_shown: On request
     legacy_rating_shown: null
     segments: []
+  - slug: cryptoswift
+    name: CryptoSwift
+    award: Best for EU CASPs
+    tagline: Hosted Travel Rule API from Estonia with published plans, its own STRIP network, a rule engine and four ways to verify self-hosted wallets.
+    coverage: EU focus; 85+ jurisdictions (vendor-stated)
+    size: Startups to mid-market
+    pros:
+    - Published plans from €600 a month on annual billing, no setup fee and a free sandbox
+    - Listed by CODE as a connected network, and receives transfers from Notabene
+    - Self-hosted wallet checks by signature, micro-transfer, photo or self-declaration
+    cons:
+    - No TRUST, TRP or TRISA link found
+    - ISO/IEC 27001:2022 is vendor-stated with no certificate published, and there is no SOC 2
+    - Registered in 2023 with a €510,000 pre-seed; no user reviews yet
+    legacy_price_shown: From €600 / month
+    legacy_rating_shown: null
+    segments: []
   - slug: verifyvasp
     name: VerifyVASP
     award: Best APAC Coverage
