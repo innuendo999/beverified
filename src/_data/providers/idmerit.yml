@@ -126,6 +126,22 @@ faq:
   a: IDMERIT competes with Trulioo and Sumsub, mainly on price and data-source coverage.
 segments: []
 capabilities:
+  identity_verification:
+    status: 'yes'
+    note: 'IDMscan document and selfie liveness'
+    source: 8
+  sanctions_pep:
+    status: 'yes'
+    note: 'IDMaml screening'
+    source: 9
+  adverse_media:
+    status: 'yes'
+    note: 'IDMaml screening'
+    source: 9
+  transaction_monitoring:
+    status: 'yes'
+    note: 'IDMaml transaction monitoring'
+    source: 9
   checked: '2026-10'
   nfc:
     status: not_disclosed
@@ -219,6 +235,14 @@ sources:
 - title: 'IDMlive video-based verification service'
   publisher: IDMERIT
   url: https://www.idmerit.com/idmlive
+  accessed: '2026-10'
+- title: 'Global ID Verification Software (IDMscan)'
+  publisher: 'IDMERIT'
+  url: https://idmerit.com/idmscan/
+  accessed: '2026-10'
+- title: 'AML Compliance Services, AML Solutions & Fraud Prevention Software (IDMaml)'
+  publisher: 'IDMERIT'
+  url: https://www.idmerit.com/aml-solutions-services/
   accessed: '2026-10'
 entity:
   wikidata: null

@@ -146,6 +146,21 @@ faq:
   a: AiPrise competes with IDMERIT, ComplyCube, and Vespia, differentiating through its unified KYC+KYB API and AI Compliance Copilot.
 segments: []
 capabilities:
+  identity_verification:
+    status: 'yes'
+    note: 'document, face match and liveness'
+    source: 11
+  sanctions_pep:
+    status: add_on
+    note: 'AML screening powered by ComplyAdvantage'
+    source: 12
+  adverse_media:
+    status: add_on
+    note: 'adverse media via ComplyAdvantage'
+    source: 12
+  transaction_monitoring:
+    status: not_disclosed
+    note: 'named only as an integration use case'
   checked: '2026-10'
   nfc:
     status: not_disclosed
@@ -240,6 +255,14 @@ sources:
 - title: Coverage and checks, business verification
   publisher: AiPrise
   url: https://docs.aiprise.com/docs/about-business-verification-1-1
+  accessed: '2026-10'
+- title: 'KYC (AiPrise documentation)'
+  publisher: 'AiPrise'
+  url: https://docs.aiprise.com/docs/kyc
+  accessed: '2026-10'
+- title: 'Understanding Background Checks and AML screening'
+  publisher: 'AiPrise'
+  url: https://support.aiprise.com/articles/1649660382-types-of-background-checks-and-aml-screening
   accessed: '2026-10'
 entity:
   wikidata: null

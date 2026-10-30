@@ -181,6 +181,21 @@ faq:
 segments: []
 capabilities:
   checked: '2026-10'
+  identity_verification:
+    status: 'yes'
+    note: document check and photo liveness from Starter
+    source: 1
+  sanctions_pep:
+    status: 'yes'
+    note: Standard AML screening from Starter
+    source: 1
+  adverse_media:
+    status: 'yes'
+    note: Extensive AML screening tier
+    source: 1
+  transaction_monitoring:
+    status: not_disclosed
+    note: only payment screening found
   nfc:
     status: add_on
     note: Growth plan, quoted

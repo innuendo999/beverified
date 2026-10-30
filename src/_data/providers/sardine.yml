@@ -123,7 +123,24 @@ faq:
 - q: Who are Sardine's main competitors?
   a: Sardine competes with SEON, Unit21, and Feedzai, differentiating through pre-transaction device and behavior scoring combined with AML compliance tooling.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  identity_verification:
+    status: add_on
+    note: 'step-up document and selfie liveness checks'
+    source: 10
+  sanctions_pep:
+    status: 'yes'
+    note: 'sanctions screening with ongoing monitoring'
+    source: 12
+  adverse_media:
+    status: 'yes'
+    note: 'part of sanctions screening'
+    source: 12
+  transaction_monitoring:
+    status: 'yes'
+    note: 'AML transaction monitoring rules'
+    source: 13
 certifications:
 - name: SOC 2
   what: Security controls report
@@ -174,6 +191,22 @@ sources:
 - title: Visa and ConsenSys back fraud detection platform Sardine's $52 million raise
   publisher: The Block
   url: https://www.theblock.co/post/171156/terms-service
+  accessed: '2026-10'
+- title: 'Stop Identity Fraud Without Slowing Business Growth'
+  publisher: 'Sardine'
+  url: https://sardine.ai/identity-fraud
+  accessed: '2026-10'
+- title: 'Identity Fraud, KYC & AML (Sardine documentation)'
+  publisher: 'Sardine'
+  url: https://docs.sardine.ai/guides/public/risk/account-risk/account-risk
+  accessed: '2026-10'
+- title: 'Stop False Positives w/ AI-Powered Sanctions Screening'
+  publisher: 'Sardine'
+  url: https://www.sardine.ai/sanctions-screening
+  accessed: '2026-10'
+- title: 'Transaction Monitoring (Sardine documentation)'
+  publisher: 'Sardine'
+  url: https://docs.sardine.ai/guides/public/risk/transaction-monitoring/transaction-monitoring
   accessed: '2026-10'
 entity:
   wikidata: null

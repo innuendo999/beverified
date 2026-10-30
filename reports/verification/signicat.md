@@ -45,3 +45,11 @@
 
 ### Score flag
 - None.
+
+## Follow-up 2026-10-30 (AML screening capabilities)
+
+- identity_verification: yes. https://www.signicat.com/kyc-kyb-platform (source 18)
+- sanctions_pep: yes. https://www.signicat.com/kyc-kyb-platform (source 18). List data comes at least partly from partners: https://www.signicat.com/registry-methods/trapets (Trapets sanctions, OFAC, PEP); ComplyAdvantage logo on the Ongoing Monitoring page. Could be argued as add_on
+- adverse_media: yes. https://www.signicat.com/kyc-kyb-platform (source 18)
+- transaction_monitoring: not_disclosed. not mentioned on the KYC/KYB platform or Ongoing Monitoring pages
+- No existing values changed (the four keys were empty). capabilities.checked stays 2026-10.

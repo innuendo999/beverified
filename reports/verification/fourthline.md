@@ -67,3 +67,11 @@
 ### Ranking cards
 
 - `slug: fourthline` appears only under `e-kyc` (not `kyb`). Card text makes no KYB claim; nothing to correct.
+
+## Follow-up 2026-10-30 (AML screening capabilities)
+
+- identity_verification: yes. https://www.fourthline.com/document-and-biometric-verification (source 14)
+- sanctions_pep: yes. https://docs.fourthline.com/docs/aml-overview (source 13; AML Screening and Investigation included in the Identity Verification solutions, also sold standalone)
+- adverse_media: yes. https://docs.fourthline.com/docs/aml-overview (source 13)
+- transaction_monitoring: not_disclosed. AML docs and the anti-financial crime page describe daily client screening, not transaction monitoring
+- No existing values changed (the four keys were empty). capabilities.checked stays 2026-10.

@@ -48,3 +48,11 @@
 
 ### Score flag
 - None.
+
+## Follow-up 2026-10-30 (AML screening capabilities)
+
+- identity_verification: yes. https://idnow.io/solutions/identity-verification/biometric-verification/ (source 17)
+- sanctions_pep: yes. https://idnow.io/solutions/kyc-checks/aml-screening/ (source 16)
+- adverse_media: yes. https://idnow.io/solutions/kyc-checks/aml-screening/ (source 16)
+- transaction_monitoring: not_disclosed. AML Screening page only says screening can be integrated into the customer's transaction monitoring flows; no TM product found
+- No existing values changed (the four keys were empty). capabilities.checked stays 2026-10.

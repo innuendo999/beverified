@@ -140,7 +140,24 @@ faq:
 - q: Who are SEON's main competitors?
   a: SEON competes with ComplyAdvantage and Feedzai on the fraud/AML side, differentiating through its digital-footprint and device-intelligence signals.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-10'
+  identity_verification:
+    status: add_on
+    note: 'separate IDV product, not in plan list'
+    source: 14
+  sanctions_pep:
+    status: add_on
+    note: 'AML Compliance, Premium plan'
+    source: 1
+  adverse_media:
+    status: add_on
+    note: 'AML platform; AML Compliance is Premium only'
+    source: 13
+  transaction_monitoring:
+    status: add_on
+    note: 'separate AML Transaction Monitoring product'
+    source: 15
 certifications:
 - name: ISO/IEC 27001
   what: Information security
@@ -216,6 +233,18 @@ sources:
 - title: SEON reviews
   publisher: Capterra
   url: https://www.capterra.com/p/187389/SEON-Sense/
+  accessed: '2026-10'
+- title: 'Make Compliance Easy With Our AML & Anti-Fraud Platform'
+  publisher: 'SEON'
+  url: https://seon.io/products/aml-screening-platform
+  accessed: '2026-10'
+- title: 'Identity verification solution (SEON Docs)'
+  publisher: 'SEON'
+  url: https://docs.seon.io/knowledge-base/idv/identity-verification-solution
+  accessed: '2026-10'
+- title: 'AML Transaction Monitoring Solution'
+  publisher: 'SEON'
+  url: https://seon.io/products/aml-transaction-monitoring/
   accessed: '2026-10'
 entity:
   wikidata: null

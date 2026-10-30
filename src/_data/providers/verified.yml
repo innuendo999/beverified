@@ -127,6 +127,20 @@ faq:
   a: Verified competes with Signicat, SmartSearch, and KYC360, differentiating through its Nordic focus and bundled AML+e-signing+e-ID approach.
 segments: []
 capabilities:
+  identity_verification:
+    status: not_disclosed
+    note: 'eID and passport chip read; no selfie check stated'
+  sanctions_pep:
+    status: 'yes'
+    note: 'AML portal, PEP and sanction lists'
+    source: 23
+  adverse_media:
+    status: 'yes'
+    note: 'integrated in AML Portal screening'
+    source: 24
+  transaction_monitoring:
+    status: not_disclosed
+    note: 'nothing found on vendor pages'
   checked: '2026-10'
   nfc:
     status: add_on
@@ -236,6 +250,18 @@ sources:
 - title: 'Identity Authentication Using ID Verifier (Passport Reader)'
   publisher: Verified
   url: https://support.verified.eu/guide/new-feature-authentication-is-now-available-using-the-passport-reader
+  accessed: '2026-10'
+- title: 'Accelerate AML Compliance Effortlessly (AML)'
+  publisher: 'Verified'
+  url: https://verified.eu/en/aml
+  accessed: '2026-10'
+- title: 'Adverse media screening'
+  publisher: 'Verified'
+  url: https://support.verified.eu/guide/adverse-media-screening
+  accessed: '2026-10'
+- title: 'New feature: AML 1.5 portal now supports continuous screening of PEP and sanction'
+  publisher: 'Verified'
+  url: https://support.verified.eu/guide/new-feature-aml-15-portal-now-supports-continuous-screening-of-pep-and-sanctions
   accessed: '2026-10'
 entity:
   wikidata: null

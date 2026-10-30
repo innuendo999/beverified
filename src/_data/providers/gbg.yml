@@ -138,6 +138,22 @@ faq:
 segments: []
 capabilities:
   checked: '2026-10'
+  identity_verification:
+    status: 'yes'
+    note: document, selfie face match and liveness
+    source: 20
+  sanctions_pep:
+    status: 'yes'
+    note: PEPs and sanctions screening product
+    source: 19
+  adverse_media:
+    status: 'yes'
+    note: adverse media sources in screening
+    source: 19
+  transaction_monitoring:
+    status: add_on
+    note: GBG Predator, separate AML transaction monitoring product
+    source: 21
   nfc:
     status: 'yes'
     note: GBG Go module verifies document NFC chips
@@ -278,6 +294,18 @@ sources:
 - title: 'GBG Detected, an end-to-end Know Your Business solution (Jul 2024)'
   publisher: GBG
   url: https://www.gbg.com/en/news/gbg-detected-an-end-to-end-know-your-business-solution/
+  accessed: '2026-10'
+- title: 'PEPs and Sanction Screening'
+  publisher: GBG
+  url: https://www.gbg.com/en/assess-risk/peps-and-sanctions/
+  accessed: '2026-10'
+- title: 'Document Verification Solutions'
+  publisher: GBG
+  url: https://www.gbg.com/en/verify-identity/document-verification/
+  accessed: '2026-10'
+- title: 'Transaction Fraud Detection'
+  publisher: GBG
+  url: https://www.gbg.com/en/products/transaction-fraud-and-aml/
   accessed: '2026-10'
 entity:
   wikidata: null
