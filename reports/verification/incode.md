@@ -51,3 +51,14 @@
 
 ### Score flag
 - Possible: the record previously listed FedRAMP Moderate; Incode's own release shows only FedRAMP Ready (High). If the score credited a FedRAMP authorization, it may merit a second look. Score unchanged.
+
+## Follow-up 2026-10-30 (AML screening capabilities)
+
+Filled `capabilities` keys from vendor pages opened 2026-10-30. No existing values changed (all four keys were empty). Score, prose, `last_verified` and `updated` untouched.
+
+- `identity_verification`: yes (ID document check plus face match and liveness); source 20, https://www.incode.com/use-cases/kyc-aml/
+- `sanctions_pep`: add_on (Watchlist module); source 21, https://developer.incode.com/features-and-modules/watchlist/
+- `adverse_media`: add_on (Watchlist module); source 21, https://developer.incode.com/features-and-modules/watchlist/
+- `transaction_monitoring`: not_disclosed (not found on Incode pages); no vendor page found
+
+- Note: Incode's KYC/AML page says periodic rescreening and ongoing monitoring are separate needs; the Watchlist module supports optional webhook subscriptions to watchlist changes. Marked add_on because screening is its own processing module; no published plan structure.

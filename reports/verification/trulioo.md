@@ -57,3 +57,11 @@ All 7 Trulioo cards re-read. Coverage (195 countries, 14,000+ ID types, 700M ent
 
 ### Score flag
 - None.
+
+## Follow-up 2026-10-30 (AML screening capabilities)
+
+- identity_verification: yes. https://www.trulioo.com/products/document-verification (source 17)
+- sanctions_pep: yes. https://www.trulioo.com/products/aml-screening (source 16)
+- adverse_media: yes. https://www.trulioo.com/products/aml-screening (source 16)
+- transaction_monitoring: not_disclosed. no transaction monitoring product in the trulioo.com product menu; AML Screening page does not mention it
+- No existing values changed (the four keys were empty). capabilities.checked stays 2026-10.

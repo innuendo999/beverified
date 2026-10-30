@@ -15,6 +15,7 @@ quick_picks:            # label + provider slug; reason = provider tagline unles
 logo_strip: [sumsub, complyadvantage, onfido, kycaid, feedzai, trulioo, jumio, seon]
 
 use_cases:              # group = section on /use-cases/; category slug in rankings.yml; top 3 and count are computed
+  - { name: KYC, slug: kyc, group: Identity, def: "Full-stack customer onboarding: document and selfie checks plus sanctions and PEP screening in one platform." }
   - { name: AML, slug: aml, group: Financial crime, def: "Screening against sanctions, PEP and adverse-media lists, plus ongoing transaction monitoring." }
   - { name: KYB, slug: kyb, group: Business, def: "Verifying a business, its registry record and its ultimate beneficial owners." }
   - { name: eKYC, slug: e-kyc, group: Identity, def: "Remote onboarding checks: document, selfie and data checks at account opening." }

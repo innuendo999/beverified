@@ -40,3 +40,11 @@
 
 ### Score flag
 - None.
+
+## Follow-up 2026-10-30 (AML screening capabilities)
+
+- identity_verification: yes. https://regulaforensics.com/products/identity-verification-platform/ (source 14)
+- sanctions_pep: add_on. https://docs.regulaforensics.com/develop/idv/release-notes/3-1/ (source 15; third-party services "such as Polixis PEP&REP"); the platform page (source 14) claims AML/PEP watchlist screening without naming a provider
+- adverse_media: not_disclosed. nothing found on vendor pages
+- transaction_monitoring: not_disclosed. nothing found on vendor pages
+- No existing values changed (the four keys were empty). capabilities.checked stays 2026-10.

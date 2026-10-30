@@ -110,3 +110,14 @@ Entries that need no change: e-kyc #1, peru #2 (except con below), india #1, can
 ### Score flag
 
 - Possible, low. No change in company status, pricing or certificates. Two points the owner may weigh: the Trustpilot rating (2.2 from 38, mostly end users) and that ISO 27001 / PCI DSS remain unproven while the privacy policy still lists a SOC 2 Type 2 KYCAID says it does not hold. Neither changes facts the score was based on.
+
+## Follow-up 2026-10-30 (AML screening capabilities)
+
+Filled `capabilities` keys from vendor pages opened 2026-10-30. No existing values changed (all four keys were empty). Score, prose, `last_verified` and `updated` untouched.
+
+- `identity_verification`: yes (Document Verification and Liveness checks); source 1, https://kycaid.com/pricing/
+- `sanctions_pep`: yes (Database screening check, all plans); source 1, https://kycaid.com/pricing/
+- `adverse_media`: yes (Adverse Media Check, all plans); source 1, https://kycaid.com/pricing/
+- `transaction_monitoring`: yes (per-transaction check, all plans); source 1, https://kycaid.com/pricing/
+
+- Note: All plans list full access to every check; each check is billed separately (document, liveness, database screening, adverse media, transaction monitoring per transaction). Marked yes as included in standard plans.

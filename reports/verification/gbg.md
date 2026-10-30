@@ -51,3 +51,11 @@
 
 ### Score flag
 - None.
+
+## Follow-up 2026-10-30 (AML screening capabilities)
+
+- identity_verification: yes. https://www.gbg.com/en/verify-identity/document-verification/ (source 20)
+- sanctions_pep: yes. https://www.gbg.com/en/assess-risk/peps-and-sanctions/ (source 19)
+- adverse_media: yes. https://www.gbg.com/en/assess-risk/peps-and-sanctions/ (source 19)
+- transaction_monitoring: yes. https://www.gbg.com/en/products/transaction-fraud-and-aml/ (source 21; GBG Predator, a separate fraud and AML transaction monitoring product)
+- No existing values changed (the four keys were empty). capabilities.checked stays 2026-10.

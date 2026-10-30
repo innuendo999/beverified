@@ -46,3 +46,14 @@
 
 ### Score flag
 - Minor, for the editor: the only certificate Shufti links (Cyber Essentials Plus) expired on 22 Feb 2025. Shufti still lists the scheme; check the IASME register before treating it as lapsed. Score not changed.
+
+## Follow-up 2026-10-30 (AML screening capabilities)
+
+Filled `capabilities` keys from vendor pages opened 2026-10-30. No existing values changed (all four keys were empty). Score, prose, `last_verified` and `updated` untouched.
+
+- `identity_verification`: yes (document and facial biometrics, all plans); source 1, https://shuftipro.com/pricing/
+- `sanctions_pep`: add_on (Essentials plan and up); source 1, https://shuftipro.com/pricing/
+- `adverse_media`: add_on (part of AML Screening suite); source 21, https://shuftipro.com/aml-screening/
+- `transaction_monitoring`: add_on (Enterprise plan); source 1, https://shuftipro.com/pricing/
+
+- Note: Pricing: Free Forever lists document verification and facial biometrics; Essentials adds AML Screening ("Everything in Free Forever, plus Add-ons"); Enterprise adds Transaction Monitoring. The pricing page does not break out PEP or adverse media; the AML Screening page lists sanctions, PEP/RCA and adverse media.

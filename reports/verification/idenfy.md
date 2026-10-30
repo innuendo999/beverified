@@ -53,3 +53,14 @@
 
 ### Score flag
 - None new. Pricing is still published; Premium and Enterprise figures changed slightly.
+
+## Follow-up 2026-10-30 (AML screening capabilities)
+
+Filled `capabilities` keys from vendor pages opened 2026-10-30. No existing values changed (all four keys were empty). Score, prose, `last_verified` and `updated` untouched.
+
+- `identity_verification`: yes (ID check plus face match, all tiers); source 21, https://idenfy.com/pricing-plans/
+- `sanctions_pep`: add_on (separate AML screening plans); source 21, https://idenfy.com/pricing-plans/
+- `adverse_media`: add_on (separate AML screening plans); source 21, https://idenfy.com/pricing-plans/
+- `transaction_monitoring`: add_on (separate Transaction Monitoring product); source 22, https://idenfy.com/transaction-monitoring-software/
+
+- Note: AML screening (PEP and sanctions, company sanctions, adverse media, ongoing monitoring) is sold under its own Silver/Gold/Platinum plans with separate credits. Liveness is listed as a per-verification add-on; face matching is in all IDV tiers.

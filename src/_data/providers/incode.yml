@@ -125,6 +125,21 @@ faq:
 segments: []
 capabilities:
   checked: '2026-10'
+  identity_verification:
+    status: 'yes'
+    note: ID document check plus face match and liveness
+    source: 20
+  sanctions_pep:
+    status: add_on
+    note: Watchlist module
+    source: 21
+  adverse_media:
+    status: add_on
+    note: Watchlist module
+    source: 21
+  transaction_monitoring:
+    status: not_disclosed
+    note: not found on Incode pages
   nfc:
     status: 'yes'
     note: Mobile SDK reads ePassport chips
@@ -290,6 +305,14 @@ sources:
 - title: 'German Commission for the Protection of Minors in the Media approves Incode Technologies as an age verification system (7 June 2022)'
   publisher: Business Wire
   url: https://www.businesswire.com/news/home/20220607006257/en/German-Commission-for-the-Protection-of-Minors-in-the-Media-Approves-Incode-Technologies-as-an-Age-Verification-System-AVS
+  accessed: '2026-10'
+- title: 'KYC Verification and AML Compliance'
+  publisher: Incode
+  url: https://www.incode.com/use-cases/kyc-aml/
+  accessed: '2026-10'
+- title: 'Watchlist (Incode Developer Hub)'
+  publisher: Incode
+  url: https://developer.incode.com/features-and-modules/watchlist/
   accessed: '2026-10'
 entity:
   wikidata: null

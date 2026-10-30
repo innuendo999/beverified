@@ -134,6 +134,20 @@ faq:
 segments: []
 capabilities:
   checked: '2026-10'
+  identity_verification:
+    status: 'yes'
+    note: document and biometric checks in one flow
+    source: 14
+  sanctions_pep:
+    status: add_on
+    note: via third-party connectors such as Polixis
+    source: 15
+  adverse_media:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  transaction_monitoring:
+    status: not_disclosed
+    note: nothing found on vendor pages
   nfc:
     status: 'yes'
     note: SDK reads ePassport, eID and eDL chips
@@ -228,6 +242,14 @@ sources:
 - title: Regula Document Reader SDK reviews
   publisher: Gartner Peer Insights
   url: https://www.gartner.com/reviews/product/regula-document-reader-sdk
+  accessed: '2026-10'
+- title: 'All-in-One Identity Verification Platform'
+  publisher: Regula
+  url: https://regulaforensics.com/products/identity-verification-platform/
+  accessed: '2026-10'
+- title: 'IDV Platform 3.1 Release Notes'
+  publisher: Regula
+  url: https://docs.regulaforensics.com/develop/idv/release-notes/3-1/
   accessed: '2026-10'
 entity:
   wikidata: null

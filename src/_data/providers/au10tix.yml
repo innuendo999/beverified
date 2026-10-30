@@ -148,6 +148,22 @@ faq:
 segments: []
 capabilities:
   checked: '2026-10'
+  identity_verification:
+    status: 'yes'
+    note: ID to selfie match with liveness
+    source: 13
+  sanctions_pep:
+    status: 'yes'
+    note: AML Screening product
+    source: 12
+  adverse_media:
+    status: 'yes'
+    note: in AML Screening product
+    source: 12
+  transaction_monitoring:
+    status: add_on
+    note: listed in Compliance Suite, vendor-stated
+    source: 14
   nfc:
     status: 'yes'
     note: Native SDKs read ePassport and ID chips
@@ -247,6 +263,18 @@ sources:
 - title: Video Verification
   publisher: AU10TIX
   url: https://www.au10tix.com/solutions/video/
+  accessed: '2026-10'
+- title: 'AML Screening'
+  publisher: AU10TIX
+  url: https://www.au10tix.com/solutions/aml-screening/
+  accessed: '2026-10'
+- title: 'Identity Verification Suite'
+  publisher: AU10TIX
+  url: https://www.au10tix.com/products/identity-verification-suite/
+  accessed: '2026-10'
+- title: 'Compliance Suite'
+  publisher: AU10TIX
+  url: https://www.au10tix.com/solutions/compliance-suite/
   accessed: '2026-10'
 entity:
   wikidata: null

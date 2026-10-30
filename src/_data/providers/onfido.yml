@@ -161,6 +161,21 @@ faq:
 segments: []
 capabilities:
   checked: '2026-10'
+  identity_verification:
+    status: 'yes'
+    note: document plus biometric checks
+    source: 1
+  sanctions_pep:
+    status: add_on
+    note: Watchlist reports, separate check
+    source: 4
+  adverse_media:
+    status: add_on
+    note: Watchlist AML report only
+    source: 20
+  transaction_monitoring:
+    status: not_disclosed
+    note: not found on Entrust IDV pages
   nfc:
     status: 'yes'
     note: SDKs read passport and ID chips
@@ -296,6 +311,10 @@ sources:
 - title: Document report with NFC
   publisher: Entrust
   url: https://documentation.identity.entrust.com/guide/document-report-nfc
+  accessed: '2026-10'
+- title: 'Watchlist reports (developer documentation)'
+  publisher: Entrust
+  url: https://documentation.identity.entrust.com/guide/watchlist-reports
   accessed: '2026-10'
 entity:
   wikidata: null

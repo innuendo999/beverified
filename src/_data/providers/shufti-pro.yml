@@ -145,6 +145,22 @@ faq:
 segments: []
 capabilities:
   checked: '2026-10'
+  identity_verification:
+    status: 'yes'
+    note: document and facial biometrics, all plans
+    source: 1
+  sanctions_pep:
+    status: add_on
+    note: Essentials plan and up
+    source: 1
+  adverse_media:
+    status: add_on
+    note: part of AML Screening suite
+    source: 21
+  transaction_monitoring:
+    status: add_on
+    note: Enterprise plan
+    source: 1
   nfc:
     status: 'yes'
     note: reads chips in e-ID documents
@@ -338,6 +354,10 @@ sources:
 - title: 'UBO verification'
   publisher: Shufti
   url: https://shuftipro.com/ubo-verification/
+  accessed: '2026-10'
+- title: 'AML Screening'
+  publisher: Shufti
+  url: https://shuftipro.com/aml-screening/
   accessed: '2026-10'
 entity:
   wikidata: null

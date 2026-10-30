@@ -131,6 +131,21 @@ faq:
   a: Veridas competes with Onfido, Regula, and Sumsub, differentiating through its own face and voice biometric technology.
 segments: []
 capabilities:
+  identity_verification:
+    status: 'yes'
+    note: 'ID document, facial biometrics and liveness'
+    source: 22
+  sanctions_pep:
+    status: add_on
+    note: 'via partner ComplyAdvantage'
+    source: 20
+  adverse_media:
+    status: add_on
+    note: 'third-party PEP and AML check, ComplyAdvantage data'
+    source: 21
+  transaction_monitoring:
+    status: not_disclosed
+    note: 'nothing found on vendor pages'
   checked: '2026-10'
   nfc:
     status: 'yes'
@@ -265,6 +280,18 @@ sources:
 - title: NFC SDK for Android (v2.10)
   publisher: Veridas
   url: https://docs.veridas.com/nfc-sdk/android/v2.10/
+  accessed: '2026-10'
+- title: 'Watchlist Screening in AML & KYC'
+  publisher: 'Veridas'
+  url: https://veridas.com/en/watch-list/
+  accessed: '2026-10'
+- title: 'Sanctions, Watchlists, PEPs & Adverse Media (VALi-DAS documentation)'
+  publisher: 'Veridas'
+  url: https://docs.veridas.com/vali-das/cloud/v2.45/annexes/pep-aml/
+  accessed: '2026-10'
+- title: 'Digital Onboarding general information'
+  publisher: 'Veridas'
+  url: https://docs.veridas.com/digital-onboarding-general-information/cloud/2026.6
   accessed: '2026-10'
 entity:
   wikidata: null

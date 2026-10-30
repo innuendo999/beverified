@@ -50,3 +50,11 @@
 
 ### Score flag
 - None. UK DIATF is now register-confirmed (favourable). Preferred shareholders gained exit rights from 3 Jul 2026 per the 20-F; no sale announced. Worth watching.
+
+## Follow-up 2026-10-30 (AML screening capabilities)
+
+- identity_verification: yes. https://www.au10tix.com/products/identity-verification-suite/ (source 13)
+- sanctions_pep: yes. https://www.au10tix.com/solutions/aml-screening/ (source 12)
+- adverse_media: yes. https://www.au10tix.com/solutions/aml-screening/ (source 12)
+- transaction_monitoring: yes. https://www.au10tix.com/solutions/compliance-suite/ (source 14; one line, "Continuous monitoring of transactions for unusual activities", no product detail)
+- No existing values changed (the four keys were empty). capabilities.checked stays 2026-10.

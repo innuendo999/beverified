@@ -58,3 +58,12 @@
 ### Score flag
 
 - None.
+
+## Follow-up 2026-10-30 (AML screening capabilities)
+
+- identity_verification: yes (document, face match and liveness), source 11: https://docs.aiprise.com/docs/kyc
+- sanctions_pep: add_on (AML screening powered by ComplyAdvantage), source 12: https://support.aiprise.com/articles/1649660382-types-of-background-checks-and-aml-screening
+- adverse_media: add_on (adverse media via ComplyAdvantage), source 12: https://support.aiprise.com/articles/1649660382-types-of-background-checks-and-aml-screening
+- transaction_monitoring: not_disclosed (named only as an integration use case), no source
+
+AiPrise says its global AML screening "is powered by ComplyAdvantage"; set to add_on under the named-partner rule (it is sold by AiPrise as its own AML check). Docs also list Continuous AML Monitoring. Transaction monitoring is named only as an integration use case.

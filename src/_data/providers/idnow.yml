@@ -128,6 +128,21 @@ faq:
 segments: []
 capabilities:
   checked: '2026-10'
+  identity_verification:
+    status: 'yes'
+    note: selfie liveness matched to ID photo
+    source: 17
+  sanctions_pep:
+    status: 'yes'
+    note: AML Screening product
+    source: 16
+  adverse_media:
+    status: 'yes'
+    note: in AML Screening product
+    source: 16
+  transaction_monitoring:
+    status: not_disclosed
+    note: screening plugs into your own monitoring
   nfc:
     status: add_on
     note: Optional AutoIdent module reads passport chips
@@ -243,6 +258,14 @@ sources:
 - title: AutoIdent developer documentation
   publisher: IDnow
   url: https://idnow.io/developers/autoident/
+  accessed: '2026-10'
+- title: 'AML Screening'
+  publisher: IDnow
+  url: https://idnow.io/solutions/kyc-checks/aml-screening/
+  accessed: '2026-10'
+- title: 'Biometric Verification'
+  publisher: IDnow
+  url: https://idnow.io/solutions/identity-verification/biometric-verification/
   accessed: '2026-10'
 entity:
   wikidata: null

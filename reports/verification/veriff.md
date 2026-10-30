@@ -69,3 +69,14 @@ Entries checked: canada, e-kyc, kyb, liveness-detection, mexico, peru, age-verif
 ### Score flag
 
 - None.
+
+## Follow-up 2026-10-30 (AML screening capabilities)
+
+Filled `capabilities` keys from vendor pages opened 2026-10-30. No existing values changed (all four keys were empty). Score, prose, `last_verified` and `updated` untouched.
+
+- `identity_verification`: yes (document check plus selfie and liveness); source 29, https://www.veriff.com/product/identity-verification
+- `sanctions_pep`: add_on (paid add-on on Self-Serve plans); source 1, https://www.veriff.com/pricing
+- `adverse_media`: add_on (part of AML Screening product); source 30, https://www.veriff.com/product/aml-screening
+- `transaction_monitoring`: not_disclosed (not found on Veriff pages); no vendor page found
+
+- Note: Self-Serve pricing lists PEP and sanctions screening as a per-verification add-on and ongoing monitoring as a separate add-on; Enterprise lists AML Screening with adverse media.

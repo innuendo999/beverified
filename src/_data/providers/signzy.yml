@@ -126,6 +126,22 @@ faq:
   a: Signzy competes with IDMERIT, ComplyCube, and KYC Hub, differentiating through deep India-specific regulatory coverage.
 segments: []
 capabilities:
+  identity_verification:
+    status: 'yes'
+    note: 'ID checks with face match and liveness'
+    source: 18
+  sanctions_pep:
+    status: 'yes'
+    note: 'AML Screening product'
+    source: 19
+  adverse_media:
+    status: 'yes'
+    note: 'AML Screening product'
+    source: 19
+  transaction_monitoring:
+    status: 'yes'
+    note: 'AML Transaction Monitoring product'
+    source: 20
   checked: '2026-10'
   nfc:
     status: not_disclosed
@@ -257,6 +273,18 @@ sources:
 - title: One Touch KYB
   publisher: Signzy
   url: https://www.signzy.com/our-innovations/one-touch-kyb
+  accessed: '2026-10'
+- title: 'ID Verification'
+  publisher: 'Signzy'
+  url: https://www.signzy.com/use-cases/identity-verification
+  accessed: '2026-10'
+- title: 'AML Screening and Compliance'
+  publisher: 'Signzy'
+  url: https://www.signzy.com/fraud-prevention/aml-screening
+  accessed: '2026-10'
+- title: 'AML Transaction Monitoring'
+  publisher: 'Signzy'
+  url: https://www.signzy.com/our-innovations/transaction-monitoring
   accessed: '2026-10'
 entity:
   wikidata: null

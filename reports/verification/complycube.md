@@ -51,3 +51,11 @@
 
 ### Score flag
 - None.
+
+## Follow-up 2026-10-30 (AML screening capabilities)
+
+- identity_verification: yes. https://www.complycube.com/en/pricing/ (source 1; document check and photo liveness/facial similarity priced from Starter)
+- sanctions_pep: yes. https://www.complycube.com/en/pricing/ (source 1; Standard AML screening, sanctions and Level 1 PEPs, from Starter)
+- adverse_media: yes. https://www.complycube.com/en/pricing/ (source 1; Extensive AML screening tier, from Starter)
+- transaction_monitoring: not_disclosed. only pre-payment transaction screening found (https://www.complycube.com/en/solutions/due-diligence-compliance/anti-money-laundering/transaction-screening-software/); pricing page lists no transaction monitoring
+- No existing values changed (the four keys were empty). capabilities.checked stays 2026-10.

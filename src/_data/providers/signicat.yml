@@ -136,6 +136,21 @@ faq:
 segments: []
 capabilities:
   checked: '2026-10'
+  identity_verification:
+    status: 'yes'
+    note: documents, biometrics and liveness
+    source: 18
+  sanctions_pep:
+    status: 'yes'
+    note: in KYC/KYB platform; list data from partners such as Trapets
+    source: 18
+  adverse_media:
+    status: 'yes'
+    note: in KYC/KYB platform screening
+    source: 18
+  transaction_monitoring:
+    status: not_disclosed
+    note: nothing found on vendor pages
   nfc:
     status: add_on
     note: Separate ReadID product reads document chips

@@ -51,3 +51,12 @@
 ### Score flag
 
 - None. The iBeta Level 2 result is now independently confirmed, which supports rather than lowers the score.
+
+## Follow-up 2026-10-30 (AML screening capabilities)
+
+- identity_verification: yes (ID capture, selfie face match, liveness), source 11: https://advance.ai/en/digital-identity-verification
+- sanctions_pep: yes (AdvanGuard AML Screening & Monitoring), source 12: https://advanguard-docs.advance.ai/docs/about-aml-screening
+- adverse_media: yes (AdvanGuard AML Screening & Monitoring), source 12: https://advanguard-docs.advance.ai/docs/about-aml-screening
+- transaction_monitoring: yes (KYT on payments page, few details), source 13: https://www.advance.ai/payment
+
+AML screening documented in AdvanGuard docs (no data provider named; periodic rescreening marked "In Development"). Transaction monitoring (KYT) is a one-line claim on the payments page with no detail.

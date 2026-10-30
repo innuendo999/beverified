@@ -142,6 +142,21 @@ faq:
 segments: []
 capabilities:
   checked: '2026-10'
+  identity_verification:
+    status: 'yes'
+    note: document checks with liveness and face match
+    source: 17
+  sanctions_pep:
+    status: 'yes'
+    note: AML Screening product
+    source: 16
+  adverse_media:
+    status: 'yes'
+    note: in AML Screening product
+    source: 16
+  transaction_monitoring:
+    status: not_disclosed
+    note: no transaction monitoring product found
   nfc:
     status: not_disclosed
     note: nothing found on vendor pages
@@ -259,6 +274,14 @@ sources:
 - title: 'Business Screening (developer documentation)'
   publisher: Trulioo
   url: https://developer.trulioo.com/reference/kyb-business-screening
+  accessed: '2026-10'
+- title: 'AML Screening'
+  publisher: Trulioo
+  url: https://www.trulioo.com/products/aml-screening
+  accessed: '2026-10'
+- title: 'Document Verification'
+  publisher: Trulioo
+  url: https://www.trulioo.com/products/document-verification
   accessed: '2026-10'
 entity:
   wikidata: null

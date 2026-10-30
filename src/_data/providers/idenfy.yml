@@ -175,6 +175,22 @@ faq:
 segments: []
 capabilities:
   checked: '2026-10'
+  identity_verification:
+    status: 'yes'
+    note: ID check plus face match, all tiers
+    source: 21
+  sanctions_pep:
+    status: add_on
+    note: separate AML screening plans
+    source: 21
+  adverse_media:
+    status: add_on
+    note: separate AML screening plans
+    source: 21
+  transaction_monitoring:
+    status: add_on
+    note: separate Transaction Monitoring product
+    source: 22
   nfc:
     status: add_on
     note: NFC add-on, enabled per client
@@ -350,6 +366,14 @@ sources:
 - title: 'Product KYB Guide (PDF)'
   publisher: iDenfy
   url: https://www.idenfy.com/wp-content/uploads/2025/07/Product-KYB-Guide.pdf
+  accessed: '2026-10'
+- title: 'Pricing plans'
+  publisher: iDenfy
+  url: https://idenfy.com/pricing-plans/
+  accessed: '2026-10'
+- title: 'Transaction Monitoring Software'
+  publisher: iDenfy
+  url: https://idenfy.com/transaction-monitoring-software/
   accessed: '2026-10'
 entity:
   wikidata: null

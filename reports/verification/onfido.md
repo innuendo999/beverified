@@ -56,3 +56,15 @@
 
 ### Score flag
 - None. New finding is positive (UK DVSTF certification, confirmed on the GOV.UK register); no lapse or retirement found.
+
+## Follow-up 2026-10-30 (AML screening capabilities)
+
+Filled `capabilities` keys from vendor pages opened 2026-10-30. No existing values changed (all four keys were empty). Score, prose, `last_verified` and `updated` untouched.
+
+- `identity_verification`: yes (document plus biometric checks); source 1, https://www.entrust.com/products/identity-verification
+- `sanctions_pep`: add_on (Watchlist reports, separate check); source 4, https://www.entrust.com/products/identity-verification/data-verification/watchlist
+- `adverse_media`: add_on (Watchlist AML report only); source 20, https://documentation.identity.entrust.com/guide/watchlist-reports
+- `transaction_monitoring`: not_disclosed (not found on Entrust IDV pages); no vendor page found
+
+- Note: Watchlist Standard covers sanctions, PEPs and legal/regulatory warnings; Watchlist AML adds adverse media. Ongoing monitoring must be enabled by Entrust. A Watchlist Mesh variant runs through a ComplyAdvantage task in Studio (one-off screening only).
+- Note: The Entrust IDV product page mentions "high-risk transaction protection" as an add-on without describing it; not counted as AML transaction monitoring.

@@ -1,0 +1,107 @@
+slug: kyc
+url: /providers/kyc/
+seo:
+  title: Best KYC Providers in 2026 | BeVerified
+  description: 'Sumsub, Incode and Shufti Pro lead our 2026 ranking of KYC providers that pair ID checks with sanctions and PEP screening. Compare liveness, KYB and prices.'
+  h1: Best KYC Providers in 2026
+breadcrumb_label: Best KYC Providers
+quick_answer: 'Sumsub is our top-rated KYC provider. One platform covers document and selfie checks with liveness tested by iBeta to Level 3, KYB and sanctions and PEP screening, and prices are published per verification. Incode suits enterprises that want biometrics first and add screening through its Watchlist module. KYCAID is the pick for pay-per-check pricing, with AML screening, adverse media and transaction monitoring on every plan. Every provider below offers both identity verification and sanctions screening; the matrix shows what each one includes, sells as an add-on, or does not disclose.'
+last_verified: '2026-10-30'
+updated: '2026-10-30'   # last content edit; last_verified = last fact re-check
+explainer_html:
+- '<h2>What a KYC provider does</h2>
+
+  <p>Know Your Customer is the set of checks a regulated business runs before and during a customer relationship: confirm who the customer is, screen them against sanctions and politically exposed person lists, understand who owns a business customer, and keep the file current. The <a href="/glossary/know-your-customer/">KYC glossary entry</a> covers the rules behind it.</p>
+
+  <p>A KYC provider sells that work as software. This ranking only includes providers that offer both halves of onboarding in one platform, in the core product or as an add-on: document and selfie identity verification, and sanctions and PEP screening. Vendors that do only one half are ranked on the narrower pages below.</p>
+
+  <h2>KYC, identity verification, eKYC and AML</h2>
+
+  <ul>
+
+  <li><a href="/providers/identity-verification/">Identity verification</a> ranks the document, face and liveness checks on their own.</li>
+
+  <li><a href="/providers/e-kyc/">eKYC</a> ranks regulated remote onboarding, where eIDs, NFC, video ident and database checks decide what the law accepts.</li>
+
+  <li><a href="/providers/aml/">AML software</a> ranks screening, transaction monitoring and case management for compliance teams.</li>
+
+  <li><a href="/providers/kyb/">KYB</a> ranks business verification and beneficial ownership checks.</li>
+
+  <li><a href="/providers/cheap-kyc/">Budget KYC</a> ranks providers with published per-check prices and low minimums.</li>
+
+  </ul>
+
+  <h2>How to choose a KYC provider</h2>
+
+  <ul>
+
+  <li>Start with coverage: the countries and document types your customers actually use, and whether the provider checks data against local registries where documents alone are weak.</li>
+
+  <li>Ask for evidence on liveness. A lab letter for <a href="/glossary/iso-iec-30107-3/">ISO/IEC 30107-3</a> testing is stronger than a badge, and it says nothing about injected video, which needs its own testing.</li>
+
+  <li>Find out where screening data comes from. Some providers run their own sanctions and PEP data, others resell a partner''s, which affects match quality, update speed and price.</li>
+
+  <li>If you onboard companies, check KYB: registry coverage, beneficial owner discovery and whether owners go through the same identity check.</li>
+
+  <li>Compare pricing models, not headline prices: per-check fees, monthly minimums, and which checks sit in higher plans.</li>
+
+  </ul>
+
+  <p><a href="/methodology/">How we evaluate every provider on this list →</a></p>'
+faq:
+- q: 'What is a KYC provider?'
+  a: 'A KYC provider is a software vendor that runs the Know Your Customer checks a regulated business needs at onboarding and afterwards: verifying an ID document and a selfie, screening the customer against sanctions and PEP lists, and often checking companies and their owners. Every provider in this ranking offers both identity verification and sanctions and PEP screening.'
+- q: 'What is the best KYC provider in 2026?'
+  a: 'Sumsub ranks first in our 2026 review: its liveness check passed iBeta''s ISO/IEC 30107-3 Level 3 test, it covers KYC, KYB and AML screening in one platform, and its prices are published. Incode is second for enterprises that lead with biometrics, and Shufti Pro third for country and language coverage. The right choice depends on your markets, volume and whether you also onboard businesses.'
+- q: 'Do KYC providers include sanctions and PEP screening in the price?'
+  a: 'It varies. Persona and KYCAID offer watchlist screening on their standard plans, Sumsub from its Compliance plan, Shufti Pro from Essentials, while Veriff charges $0.64 extra per verification and Incode sells it as a Watchlist module. The matrix marks each as included or add-on.'
+- q: 'What is the difference between KYC and AML software?'
+  a: 'KYC software verifies who a customer is at onboarding and screens them against sanctions and PEP lists. AML software goes further on monitoring: ongoing screening, transaction monitoring, case management and suspicious activity reporting for a compliance team. Many KYC providers sell some AML features, but dedicated AML platforms are ranked on our AML page.'
+- q: 'Is KYC the same as identity verification?'
+  a: 'No. Identity verification checks that a person is real and matches their ID document. KYC is the wider due diligence a regulated business owes under anti-money laundering rules, which also includes screening, understanding the customer''s risk and keeping the information up to date.'
+- q: 'How much does a KYC check cost?'
+  a: 'Published self-serve prices among the providers we rank start at €0.75 for a document and face check at KYCAID (plus a monthly service fee), $0.80 at Veriff and $1.35 at Sumsub and iDenfy, each with monthly minimums. Enterprise vendors such as Incode, Signicat and GBG quote prices. See our budget KYC ranking for low-minimum options.'
+- q: 'Do I also need KYB?'
+  a: 'Only if you onboard companies. KYB verifies the business in official registers and identifies its ultimate beneficial owners, who then need their own KYC. Sumsub, Shufti Pro, Persona, Signicat, GBG and iDenfy offer KYB alongside KYC; our KYB ranking compares registry coverage and ownership checks.'
+segments_heading: 'Best pick by use case'
+segments:
+- segment: 'Crypto exchanges'
+  slug: sumsub
+  reason: 'Sumsub is used by exchanges such as Bybit, includes Travel Rule support in its plans and publishes per-verification prices from $1.35.'
+- segment: 'Fintech and neobanks'
+  slug: incode
+  reason: 'Incode names the top three global neobanks among its customers and covers onboarding and ongoing authentication in one platform, with iBeta Level 3 tested liveness.'
+- segment: 'Startups paying per check'
+  slug: kycaid
+  reason: 'KYCAID prices each module separately, from €0.50 for a document check, with AML screening and adverse media available on every plan.'
+- segment: 'European banks using eIDs'
+  slug: signicat
+  reason: 'Signicat combines 35+ mostly European eID methods with KYC, KYB and screening, and holds an ISO/IEC 27001:2022 certificate issued by DNV.'
+- segment: 'US public sector and regulated healthcare'
+  slug: persona
+  reason: 'Persona for Government holds FedRAMP Moderate authorization, and Persona states HIPAA compliance for US health data.'
+- segment: 'Onboarding businesses and their owners'
+  slug: idenfy
+  reason: 'iDenfy maps the full ownership structure from 180+ company registries and runs KYC on shareholders in the same flow.'
+- segment: 'Global coverage in many languages'
+  slug: shufti-pro
+  reason: 'Shufti Pro covers 240+ countries and territories in 150+ languages and can run as SaaS, private cloud or on-premise.'
+adjacent:
+- identity-verification
+- e-kyc
+- aml
+- kyb
+- cheap-kyc
+- crypto
+capability_columns:
+- identity_verification
+- liveness_pad
+- nfc
+- sanctions_pep
+- adverse_media
+- kyb_registry
+- transaction_monitoring
+- published_pricing
+faq_templates: []
+legacy_issues: []
+author: andrii-klymenko

@@ -128,6 +128,22 @@ faq:
   a: Advance.AI competes with IDMERIT, Trulioo, and Shufti Pro, differentiating through its Southeast Asia/APAC emerging-market focus.
 segments: []
 capabilities:
+  identity_verification:
+    status: 'yes'
+    note: 'ID capture, selfie face match, liveness'
+    source: 11
+  sanctions_pep:
+    status: 'yes'
+    note: 'AdvanGuard AML Screening & Monitoring'
+    source: 12
+  adverse_media:
+    status: 'yes'
+    note: 'AdvanGuard AML Screening & Monitoring'
+    source: 12
+  transaction_monitoring:
+    status: 'yes'
+    note: 'KYT on payments page, few details'
+    source: 13
   checked: '2026-10'
   nfc:
     status: not_disclosed
@@ -193,6 +209,18 @@ sources:
 - title: AI Video Identification
   publisher: ADVANCE.AI
   url: https://www.advance.ai/en/index/pageview/catid/58.html
+  accessed: '2026-10'
+- title: 'AdvanGuard Identity Verification'
+  publisher: 'ADVANCE.AI'
+  url: https://advance.ai/en/digital-identity-verification
+  accessed: '2026-10'
+- title: 'About AML Screening & Monitoring (AdvanGuard documentation)'
+  publisher: 'ADVANCE.AI'
+  url: https://advanguard-docs.advance.ai/docs/about-aml-screening
+  accessed: '2026-10'
+- title: 'Payment Verification & Fraud Prevention'
+  publisher: 'ADVANCE.AI'
+  url: https://www.advance.ai/payment
   accessed: '2026-10'
 entity:
   wikidata: null

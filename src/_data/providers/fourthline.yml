@@ -129,6 +129,21 @@ faq:
 segments: []
 capabilities:
   checked: '2026-10'
+  identity_verification:
+    status: 'yes'
+    note: ID document plus selfie and liveness video
+    source: 14
+  sanctions_pep:
+    status: 'yes'
+    note: included in identity verification
+    source: 13
+  adverse_media:
+    status: 'yes'
+    note: part of AML screening
+    source: 13
+  transaction_monitoring:
+    status: not_disclosed
+    note: monitoring covers client data only
   nfc:
     status: 'yes'
     note: Mobile SDKs read passport and eID chips
@@ -228,6 +243,14 @@ sources:
 - title: Document NFC (Fourthline documentation)
   publisher: Fourthline
   url: https://docs.fourthline.com/docs/document-nfc/
+  accessed: '2026-10'
+- title: 'AML Screening & Monitoring'
+  publisher: Fourthline
+  url: https://docs.fourthline.com/docs/aml-overview
+  accessed: '2026-10'
+- title: 'Identity Verification Built for Conversion'
+  publisher: Fourthline
+  url: https://www.fourthline.com/document-and-biometric-verification
   accessed: '2026-10'
 entity:
   wikidata: null

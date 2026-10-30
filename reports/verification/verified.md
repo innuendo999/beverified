@@ -61,3 +61,12 @@ None.
 ### Score flag
 
 - Minor, for editor review: one pro (managed AML service) and the published pricing structure no longer hold after the October 2026 rebrand. Prices were never published, so the effect is likely small. Score unchanged.
+
+## Follow-up 2026-10-30 (AML screening capabilities)
+
+- identity_verification: not_disclosed (eID and passport chip read; no selfie check stated), no source
+- sanctions_pep: yes (AML portal, PEP and sanction lists), source 23: https://verified.eu/en/aml
+- adverse_media: yes (integrated in AML Portal screening), source 24: https://support.verified.eu/guide/adverse-media-screening
+- transaction_monitoring: not_disclosed (nothing found on vendor pages), no source
+
+No document plus selfie check found on Verified pages opened today: identification is Nordic/Baltic eID plus a passport NFC chip read via Verified Secure (no selfie or face match stated). verified.io product pages (record sources 14, 16) could not be opened by the fetch tool today, so verified.eu/en/aml and Help Center pages were used. Transaction monitoring appears only as a resources article title, not as a product.
