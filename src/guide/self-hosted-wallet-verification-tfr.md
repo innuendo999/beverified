@@ -7,7 +7,7 @@ section: guide
 cover_label: "Proof of wallet ownership"
 cover_motif: wallet
 published: 2026-10-27
-updated: 2026-10-27
+updated: 2026-10-30
 author: andrii-klymenko
 takeaways:
 - The EU TFR establishes requirements for information accompanying crypto-asset transfers and includes specific measures for transfers involving self-hosted addresses.
@@ -145,7 +145,7 @@ Developed by [21 Analytics](https://www.21analytics.co/) together with the Swiss
 
 Rather than asking customers to construct and sign a message manually, AOPP guides them through a wallet-supported signing process and automates the submission of the resulting proof.
 
-*“AOPP could solve the cumbersome proof of ownership issue.”* [Delphine Forma](https://www.linkedin.com/in/delphineforma/), Policy Lead at Solidus Labs, and Crypto Compliance and Legal TG Founder.
+*“AOPP could solve the cumbersome proof of ownership issue.”* [Delphine Forma](https://www.linkedin.com/in/delphineforma/), Head of Policy APAC & Europe at Solidus Labs, and Crypto Compliance and Legal TG Founder.
 
 #### How Does AOPP Work?
 
