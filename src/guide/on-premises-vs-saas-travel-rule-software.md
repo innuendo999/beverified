@@ -72,7 +72,7 @@ An on-premises (on-prem), or self-hosted, solution takes a different approach. T
 
 Neither deployment model removes the need for effective security and governance. The important distinction is how responsibilities, dependencies and data access are distributed between the regulated entity and its technology provider.
 
-This article compares on-prem and SaaS Travel Rule software across three areas: data protection, audits and regulatory oversight, and vendor risk. It also explains what CASPs should assess when selecting a solution under frameworks such as the General Data Protection Regulation ([GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng)), the Markets in Crypto-Assets Regulation ([MiCA](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R1114&pk_keyword=Crypto%20assets&pk_content=Regulation&pk_cid=EURLEX_todaysOJ)) and the Digital Operational Resilience Act ([DORA](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554)).
+This article compares on-prem and SaaS Travel Rule software across three areas: data protection, audits and regulatory oversight, and vendor risk. It also explains what [CASPs](/glossary/crypto-asset-service-provider/) should assess when selecting a solution under frameworks such as the General Data Protection Regulation ([GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng)), the Markets in Crypto-Assets Regulation ([MiCA](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R1114&pk_keyword=Crypto%20assets&pk_content=Regulation&pk_cid=EURLEX_todaysOJ)) and the Digital Operational Resilience Act ([DORA](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554)).
 
 ## Why Travel Rule Software Architecture Is Crucial
 
