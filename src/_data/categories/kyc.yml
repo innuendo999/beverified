@@ -1,0 +1,72 @@
+slug: kyc
+url: /providers/kyc/
+seo:
+  title: Best KYC Providers in 2026 | BeVerified
+  description: 'PLACEHOLDER'
+  h1: Best KYC Providers in 2026
+breadcrumb_label: Best KYC Providers
+quick_answer: 'PLACEHOLDER'
+last_verified: '2026-10-30'
+updated: '2026-10-30'   # last content edit; last_verified = last fact re-check
+explainer_html:
+- '<h2>What a KYC provider does</h2>
+
+  <p>Know Your Customer is the set of checks a regulated business runs before and during a customer relationship: confirm who the customer is, screen them against sanctions and politically exposed person lists, understand who owns a business customer, and keep the file current. The <a href="/glossary/know-your-customer/">KYC glossary entry</a> covers the rules behind it.</p>
+
+  <p>A KYC provider sells that work as software. This ranking only includes providers that offer both halves of onboarding in one platform, in the core product or as an add-on: document and selfie identity verification, and sanctions and PEP screening. Vendors that do only one half are ranked on the narrower pages below.</p>
+
+  <h2>KYC, identity verification, eKYC and AML</h2>
+
+  <ul>
+
+  <li><a href="/providers/identity-verification/">Identity verification</a> ranks the document, face and liveness checks on their own.</li>
+
+  <li><a href="/providers/e-kyc/">eKYC</a> ranks regulated remote onboarding, where eIDs, NFC, video ident and database checks decide what the law accepts.</li>
+
+  <li><a href="/providers/aml/">AML software</a> ranks screening, transaction monitoring and case management for compliance teams.</li>
+
+  <li><a href="/providers/kyb/">KYB</a> ranks business verification and beneficial ownership checks.</li>
+
+  <li><a href="/providers/cheap-kyc/">Budget KYC</a> ranks providers with published per-check prices and low minimums.</li>
+
+  </ul>
+
+  <h2>How to choose a KYC provider</h2>
+
+  <ul>
+
+  <li>Start with coverage: the countries and document types your customers actually use, and whether the provider checks data against local registries where documents alone are weak.</li>
+
+  <li>Ask for evidence on liveness. A lab letter for <a href="/glossary/iso-iec-30107-3/">ISO/IEC 30107-3</a> testing is stronger than a badge, and it says nothing about injected video, which needs its own testing.</li>
+
+  <li>Find out where screening data comes from. Some providers run their own sanctions and PEP data, others resell a partner''s, which affects match quality, update speed and price.</li>
+
+  <li>If you onboard companies, check KYB: registry coverage, beneficial owner discovery and whether owners go through the same identity check.</li>
+
+  <li>Compare pricing models, not headline prices: per-check fees, monthly minimums, and which checks sit in higher plans.</li>
+
+  </ul>
+
+  <p><a href="/methodology/">How we evaluate every provider on this list →</a></p>'
+faq: []
+segments_heading: 'Best pick by use case'
+segments: []
+adjacent:
+- identity-verification
+- e-kyc
+- aml
+- kyb
+- cheap-kyc
+- crypto
+capability_columns:
+- identity_verification
+- liveness_pad
+- nfc
+- sanctions_pep
+- adverse_media
+- kyb_registry
+- transaction_monitoring
+- published_pricing
+faq_templates: []
+legacy_issues: []
+author: andrii-klymenko

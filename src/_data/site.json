@@ -93,6 +93,10 @@
       "about": "Independent reviews of KYC, KYB and AML software.",
       "useCases": [
         [
+          "KYC",
+          "/providers/kyc/"
+        ],
+        [
           "AML",
           "/providers/aml/"
         ],
