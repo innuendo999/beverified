@@ -44,9 +44,9 @@ faq:
 - q: What should a CASP prioritise when choosing a Travel Rule solution?
   a: A CASP should assess the solution's compliance functionality, data flows, security controls, audit capabilities, operational resilience and vendor dependencies. The deployment model should be evaluated as part of this broader assessment rather than as an isolated technical preference.
 sources:
-- title: General Data Protection Regulation (GDPR), text
-  publisher: gdpr-info.eu
-  url: https://gdpr-info.eu/
+- title: Regulation (EU) 2016/679, General Data Protection Regulation (GDPR)
+  publisher: EUR-Lex
+  url: https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng
   accessed: 2026-10
 - title: Regulation (EU) 2023/1114 on markets in crypto-assets (MiCA)
   publisher: EUR-Lex
@@ -72,7 +72,7 @@ An on-premises (on-prem), or self-hosted, solution takes a different approach. T
 
 Neither deployment model removes the need for effective security and governance. The important distinction is how responsibilities, dependencies and data access are distributed between the regulated entity and its technology provider.
 
-This article compares on-prem and SaaS Travel Rule software across three areas: data protection, audits and regulatory oversight, and vendor risk. It also explains what CASPs should assess when selecting a solution under frameworks such as the General Data Protection Regulation ([GDPR](https://gdpr-info.eu/)), the Markets in Crypto-Assets Regulation ([MiCA](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R1114&pk_keyword=Crypto%20assets&pk_content=Regulation&pk_cid=EURLEX_todaysOJ)) and the Digital Operational Resilience Act ([DORA](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554)).
+This article compares on-prem and SaaS Travel Rule software across three areas: data protection, audits and regulatory oversight, and vendor risk. It also explains what CASPs should assess when selecting a solution under frameworks such as the General Data Protection Regulation ([GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng)), the Markets in Crypto-Assets Regulation ([MiCA](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R1114&pk_keyword=Crypto%20assets&pk_content=Regulation&pk_cid=EURLEX_todaysOJ)) and the Digital Operational Resilience Act ([DORA](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554)).
 
 ## Why Travel Rule Software Architecture Is Crucial
 
@@ -115,7 +115,7 @@ The CASP retains responsibility for operating and securing that environment, inc
 
 A Software-as-a-Service solution is hosted and operated by a provider, with the customer accessing the software as a service.
 
-Customer information is processed and stored in the provider's cloud environment. The provider may also rely on external infrastructure providers or other subcontractors, most commonly on American Hyperscalers such as AWS or Google Cloud.
+Customer information is processed and stored in the provider's cloud environment. The provider may also rely on external infrastructure providers or other subcontractors, for example cloud providers such as AWS or Google Cloud.
 
 SaaS can reduce the customer's initial infrastructure and deployment requirements. It may also allow the provider to manage updates and parts of the operational environment.
 
@@ -129,7 +129,7 @@ Not every SaaS architecture is identical, just as not every on-prem implementati
 | ----- | ----- | ----- |
 | Data storage | Remains within the CASP's infrastructure | Stored in the provider's infrastructure |
 | Data access | Controlled through the CASP's environment and permissions | Accessible by the CASP and provider |
-| Security management | The CASP manages the deployment environment and its security controls. Provider provides security updates to the solution which must be installed by the CASP. | Responsibilities are with the provider |
+| Security management | The CASP manages the deployment environment and its security controls. Provider provides security updates to the solution which must be installed by the CASP. | Mostly with the provider; the CASP remains accountable |
 | Data retention | The CASP can manage retention within its own environment, subject to applicable requirements | Retention and deletion depends on provider capabilities and contractual terms |
 | Audit evidence | Records are directly accessible within the CASP's systems | Retrieval depends on provider tools, procedures and availability |
 | Third-party dependencies | Can reduce reliance on external hosting for Travel Rule data and service availability | Introduces dependencies on the provider and its infrastructure or subcontractors |
