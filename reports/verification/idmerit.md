@@ -65,3 +65,12 @@ Arithmetic: (25 × 3.8 + 20 × 4.2 + 20 × 3.5 + 15 × 3.6 + 10 × 3.8 + 10 × 3
 - All six criteria scored. Support uses the Capterra review theme (responsive support), not the star ratings, which stay outside the score.
 - Compliance stays vendor-stated: the only public evidence is the April 2020 ISO/IEC 27001:2013 press release (source 6).
 - `node scripts/checks/provider.mjs` flags `score` as changed against HEAD; this is the intended, owner-approved change. Grade unchanged.
+
+## Follow-up 2026-10-30 (AML screening capabilities)
+
+- identity_verification: yes (IDMscan document and selfie liveness), source 8: https://idmerit.com/idmscan/
+- sanctions_pep: yes (IDMaml screening), source 9: https://www.idmerit.com/aml-solutions-services/
+- adverse_media: yes (IDMaml screening), source 9: https://www.idmerit.com/aml-solutions-services/
+- transaction_monitoring: yes (IDMaml transaction monitoring), source 9: https://www.idmerit.com/aml-solutions-services/
+
+IDMscan (document plus selfie liveness) and IDMaml (screening, adverse media, transaction monitoring) are separate IDMERIT products quoted by module; set to yes as own products with no tier gating published.

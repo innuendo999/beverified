@@ -151,12 +151,12 @@ capabilities:
     note: 'document, face match and liveness'
     source: 11
   sanctions_pep:
-    status: add_on
-    note: 'AML screening powered by ComplyAdvantage'
+    status: 'yes'
+    note: 'AML screening in the platform, data from ComplyAdvantage'
     source: 12
   adverse_media:
-    status: add_on
-    note: 'adverse media via ComplyAdvantage'
+    status: 'yes'
+    note: 'adverse media in the platform, data from ComplyAdvantage'
     source: 12
   transaction_monitoring:
     status: not_disclosed

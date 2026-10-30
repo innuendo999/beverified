@@ -50,3 +50,12 @@
 
 ### Score flag
 - None new. Watch item unchanged: Fourthline merger pending. Minor: SOC 2 Type II no longer supported by any source found, offset by a new confirmed eIDAS/ETSI TS 119 461 certificate.
+
+## Follow-up 2026-10-30 (AML screening capabilities)
+
+- identity_verification: yes (ID document, facial biometrics and liveness), source 22: https://docs.veridas.com/digital-onboarding-general-information/cloud/2026.6
+- sanctions_pep: add_on (via partner ComplyAdvantage), source 20: https://veridas.com/en/watch-list/
+- adverse_media: add_on (third-party PEP and AML check, ComplyAdvantage data), source 21: https://docs.veridas.com/vali-das/cloud/v2.45/annexes/pep-aml/
+- transaction_monitoring: not_disclosed (nothing found on vendor pages), no source
+
+Veridas states it gives access to AML watchlist databases "including ComplyAdvantage"; the VALi-DAS docs list PEP and AML under third-party checks, and sample output carries a ComplyAdvantage adverse media label. Treated as partner-delivered (add_on). No transaction monitoring found.

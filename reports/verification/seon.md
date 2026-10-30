@@ -59,3 +59,12 @@ Proposed breakdown (facts from the record only):
 Arithmetic: (25 × 4.3 + 20 × 4.4 + 20 × 4.3 + 15 × 4.1 + 10 × 4.0 + 10 × 4.6) / 100 = (107.5 + 88 + 86 + 61.5 + 40 + 46) / 100 = 429 / 100 = 4.29 → 4.3 (Good).
 
 Why it cannot reach 4.6: on the current scale, vendor-stated certification scores about 4.2 (enigma) and public certificates 4.3 to 4.5 (21analytics, paravision); pricing with one tier published sits below zyphe (4.5) and enigma (4.9, full rate card). Scoring every criterion 0.2 higher still gives 449 / 100 = 4.49 → 4.5. G2 and Capterra ratings are excluded by the methodology. Options: keep 4.5 with no breakdown; publish the breakdown at 4.3; or add verifiable evidence first (certificate register entries, an ISO/IEC 30107-3 result, public API docs) and re-score.
+
+## Follow-up 2026-10-30 (AML screening capabilities)
+
+- identity_verification: add_on (separate IDV product, not in plan list), source 14: https://docs.seon.io/knowledge-base/idv/identity-verification-solution
+- sanctions_pep: add_on (AML Compliance, Premium plan), source 1: https://seon.io/pricing/
+- adverse_media: add_on (AML platform; AML Compliance is Premium only), source 13: https://seon.io/products/aml-screening-platform
+- transaction_monitoring: add_on (separate AML Transaction Monitoring product), source 15: https://seon.io/products/aml-transaction-monitoring/
+
+Pricing (source 1) lists AML Compliance only on the Premium plan; Starter excludes it. IDV and AML Transaction Monitoring are separate products not listed in either plan, so add_on. Record source 6 (IDV product page) could not be re-opened today; docs page used instead.

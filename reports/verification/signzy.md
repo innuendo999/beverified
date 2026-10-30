@@ -55,3 +55,12 @@
 ### Score flag
 
 - None.
+
+## Follow-up 2026-10-30 (AML screening capabilities)
+
+- identity_verification: yes (ID checks with face match and liveness), source 18: https://www.signzy.com/use-cases/identity-verification
+- sanctions_pep: yes (AML Screening product), source 19: https://www.signzy.com/fraud-prevention/aml-screening
+- adverse_media: yes (AML Screening product), source 19: https://www.signzy.com/fraud-prevention/aml-screening
+- transaction_monitoring: yes (AML Transaction Monitoring product), source 20: https://www.signzy.com/our-innovations/transaction-monitoring
+
+All four are named Signzy products on signzy.com; no data partner named. Transaction monitoring page describes rule-based real-time monitoring (vendor claim).

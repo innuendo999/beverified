@@ -40,3 +40,12 @@
 
 ### Score flag
 - None.
+
+## Follow-up 2026-10-30 (AML screening capabilities)
+
+- identity_verification: add_on (step-up document and selfie liveness checks), source 10: https://sardine.ai/identity-fraud
+- sanctions_pep: yes (sanctions screening with ongoing monitoring), source 12: https://www.sardine.ai/sanctions-screening
+- adverse_media: yes (part of sanctions screening), source 12: https://www.sardine.ai/sanctions-screening
+- transaction_monitoring: yes (AML transaction monitoring rules), source 13: https://docs.sardine.ai/guides/public/risk/transaction-monitoring/transaction-monitoring
+
+Identity fraud page says Sardine triggers document verification or selfie liveness checks as step-up; the docs (source 11) say document verification works "through integrating with 3rd party services" (partner not named), so add_on. Sanctions, PEP and adverse media with ongoing monitoring confirmed on the sanctions page and docs.
