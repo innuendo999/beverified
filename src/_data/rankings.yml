@@ -1763,3 +1763,155 @@ south-africa:
     legacy_price_shown: Custom pricing
     legacy_rating_shown: null
     segments: []
+kyc:
+  title: Best KYC Providers in 2026
+  providers:
+  - slug: sumsub
+    name: Sumsub
+    award: Editor's Choice
+    tagline: Identity verification, KYB, AML screening and transaction monitoring in one platform, with prices published per verification.
+    coverage: Global, 220+ countries and territories
+    size: SMB to Enterprise
+    pros:
+    - Liveness tested by iBeta to ISO/IEC 30107-3 Level 3 (Sep 2026)
+    - Sanctions, PEP and adverse-media screening from the Compliance plan, plus KYB registry checks in 200+ countries and territories
+    - Basic plan published at $1.35 per verification, plus a 14-day trial with 50 free checks
+    cons:
+    - Monthly minimums of $149 (Basic) and $299 (Compliance) apply on top of per-check fees
+    - Transaction monitoring is only in the custom, quote-based plan
+    - SOC 2 Type 2 and ISO/IEC 27001 are vendor-stated, with no report or certificate linked from its Trust Center
+    legacy_price_shown: From $1.35/verification
+  - slug: incode
+    name: Incode
+    award: Best for Enterprise Biometrics
+    tagline: Biometric onboarding and authentication platform, with sanctions and PEP screening sold as a Watchlist module.
+    coverage: Global, 190+ countries
+    size: Mid-market to Enterprise
+    pros:
+    - Passive liveness tested by iBeta to ISO/IEC 30107-3 Level 3 on iOS and Android
+    - 4,900+ ID document types across 190+ countries, with NFC chip reading in the mobile SDK
+    - Deepsight module for deepfake and synthetic ID defense
+    cons:
+    - No published pricing; licensing is quoted by volume and deployment scope
+    - Screening is a separate Watchlist module, and we found no transaction monitoring on its pages
+    - SOC 2 Type 2, ISO/IEC 27001 and Kantara IAL2 are listed only on its trust centre
+    legacy_price_shown: Custom pricing
+  - slug: shufti-pro
+    name: Shufti Pro
+    award: Best for Country and Language Coverage
+    tagline: KYC, AML screening and KYB across 240+ countries and territories in 150+ languages, as SaaS, private cloud or on-premise.
+    coverage: Global, 240+ countries and territories
+    size: SMB to Enterprise
+    pros:
+    - Liveness tested by iBeta to ISO/IEC 30107-3 Level 3 (April 2026)
+    - AML screening from the Essentials plan, and KYB across 240+ live registries
+    - Free Forever plan for 10 verifications a month, then from $1.50 per verification
+    cons:
+    - ISO 27001, SOC 2 Type II and PCI DSS are vendor-stated, with reports only on request under NDA
+    - Transaction monitoring is only on the quote-only Enterprise plan
+    - Setup fees, minimums and trial terms are not stated on the pricing page
+    legacy_price_shown: Free (10/mo); from $1.50/verification
+  - slug: persona
+    name: Persona
+    award: Best for Flexible Orchestration
+    tagline: No-code workflows that combine document, selfie, database, watchlist and business checks in reusable templates.
+    coverage: Global, 200+ countries and territories
+    size: Mid-market to Enterprise
+    pros:
+    - Watchlist, PEP and adverse-media reports on the Essential plan and up
+    - Selfie Liveness 2.0 tested by iBeta to ISO/IEC 30107-3 Level 2
+    - FedRAMP Moderate authorization for Persona for Government since April 2026
+    cons:
+    - Flexibility means a steeper configuration curve
+    - Only the Essential plan is priced (from $250 a month), with a 12-month minimum term
+    - We found no Persona transaction monitoring engine; it opens cases from your own monitoring alerts
+    legacy_price_shown: From $250/mo
+  - slug: veriff
+    name: Veriff
+    award: Best for Self-Serve Pricing
+    tagline: Automated identity verification with human review on higher plans, PEP and sanctions screening as a per-check add-on.
+    coverage: Global, 230+ countries and territories
+    size: SMB to Enterprise
+    pros:
+    - Passive liveness tested by iBeta to ISO/IEC 30107-3 Level 2, plus FIDO Face Verification and DocAuth certification
+    - On the UK DIATF register, valid to Jan 2029
+    - Self-serve plans published from $0.80 per verification with a $49 monthly minimum
+    cons:
+    - PEP and sanctions screening costs $0.64 extra per verification
+    - Human review is only on Plus ($1.39) and Premium ($1.89); Essential is fully automated
+    - KYB, added through the Vespia acquisition, is in a limited access program
+    legacy_price_shown: From $0.80/verification ($49/mo min)
+  - slug: kycaid
+    name: KYCAID
+    award: Best for Per-Check Pricing
+    tagline: Pay per check for documents, faces, AML screening, adverse media and transaction monitoring, all available on every plan.
+    coverage: Global
+    size: SMB to Mid-market
+    pros:
+    - Document check €0.50 and face verification €0.25 as single modules, or €0.75 for both as Basic KYC
+    - AML database screening, adverse media and transaction monitoring checks on all plans, billed per check
+    - Customisable verification flows from one dashboard, with multiple workspaces in one account
+    cons:
+    - No SOC 2 report yet (KYCAID expects one in early 2027) and no published ISO/IEC 30107-3 liveness test
+    - Single-module prices carry a fixed €100 monthly service fee
+    - Native mobile SDKs are provided on request, not in the public docs
+    legacy_price_shown: From €0.50/check + €100/mo
+  - slug: signicat
+    name: Signicat
+    award: Best for European eIDs
+    tagline: KYC and KYB on one platform with PEP, sanctions and adverse-media screening, plus 35+ mostly European eID methods.
+    coverage: Europe
+    size: Mid-market to Enterprise
+    pros:
+    - PEP, sanctions and adverse-media screening inside the onboarding platform
+    - ReadID NFC chip reading, listed on the UK DIATF register (Kantara, valid to Jun 2029)
+    - ISO/IEC 27001:2022 certified by DNV (valid to Oct 2029), plus ENS High in Spain
+    cons:
+    - No published pricing; setup, subscription and transaction fees are quoted
+    - Screening list data comes from partners such as Trapets, and we found no transaction monitoring
+    - Coverage strength is concentrated in Europe rather than global
+    legacy_price_shown: Custom pricing
+  - slug: veridas
+    name: Veridas
+    award: Best for Face and Voice Biometrics
+    tagline: In-house face and voice biometrics, with PEP and sanctions checks run on ComplyAdvantage data.
+    coverage: 25 countries, strongest in Spain and Latin America
+    size: Mid-market to Enterprise
+    pros:
+    - Passive liveness tested by iBeta to ISO/IEC 30107-3 Level 2, and voice liveness to Level 1
+    - eIDAS identity-proofing certificate (ETSI TS 119 461) issued by DEKRA
+    - Named a Visionary in Gartner's Magic Quadrant for Identity Verification in 2025 and 2026
+    cons:
+    - PEP and AML screening is a third-party check on ComplyAdvantage data
+    - No prices on its own site; the AWS Marketplace price needs a 12-month contract
+    - Pending merger with Fourthline, agreed in July 2026, may change the product and brand
+    legacy_price_shown: From $1.37/verification (AWS, 12-mo contract)
+  - slug: gbg
+    name: GBG
+    award: Best for Data-Driven Verification
+    tagline: Publicly traded identity data network with document checks, PEP and sanctions screening, KYB and a separate monitoring product.
+    coverage: 195+ countries
+    size: Mid-market to Enterprise
+    pros:
+    - Publicly traded (LSE:GBG) with audited results, which gives unusual transparency for the category
+    - 'Large data network: 110+ GBG Go modules across 195+ countries'
+    - Certified digital verification services on the UK DIATF register
+    cons:
+    - No published pricing for identity and fraud products
+    - Transaction monitoring is a separate product, GBG Predator
+    - Broad product lineup spanning multiple acquisitions can be complex to navigate
+    legacy_price_shown: Custom pricing
+  - slug: idenfy
+    name: iDenfy
+    award: Best for Approved-Only Billing
+    tagline: Published per-check KYC pricing, with an option to pay only for verifications that pass, plus KYB and AML screening plans.
+    size: SMB to Mid-market
+    pros:
+    - 'Approved-only billing option: rejected verifications cost nothing'
+    - Published self-serve pricing ($1.35 per check on Basic) with a free trial
+    - KYB across 180+ company registries, with full ownership mapping and KYC on shareholders
+    cons:
+    - AML screening and transaction monitoring are sold as separate plans and products
+    - Its ISO/IEC 30107-3 liveness result is vendor-stated only
+    - Primary focus and case studies skew toward the EU market
+    legacy_price_shown: From $1.35/verification
