@@ -125,6 +125,8 @@ Not every SaaS architecture is identical, just as not every on-prem implementati
 
 ### Comparing the Two Models
 
+{% include "figures/onprem-vs-saas.njk" %}
+
 | Consideration | Self-hosted solution | SaaS solution |
 | ----- | ----- | ----- |
 | Data storage | Remains within the CASP's infrastructure | Stored in the provider's infrastructure |
