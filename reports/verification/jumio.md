@@ -50,3 +50,14 @@
 
 ### Score flag
 - None.
+
+## Follow-up 2026-10-30 (AML screening capabilities)
+
+Filled `capabilities` keys from vendor pages opened 2026-10-30. No existing values changed (all four keys were empty). Score, prose, `last_verified` and `updated` untouched.
+
+- `identity_verification`: yes (ID document check plus selfie and liveness); source 13, https://www.jumio.com/products/identity-verification/
+- `sanctions_pep`: add_on (separate AML Screening product); source 14, https://www.jumio.com/products/screening/
+- `adverse_media`: add_on (part of AML Screening product); source 14, https://www.jumio.com/products/screening/
+- `transaction_monitoring`: add_on (separate Transaction Monitoring product); source 15, https://go.jumio.com/transaction-monitoring-media
+
+- Note: Jumio's screening page FAQ says AML screening and transaction monitoring are distinct processes; transaction monitoring is sold as its own product (vendor landing page, undated).

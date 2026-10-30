@@ -153,6 +153,21 @@ faq:
 segments: []
 capabilities:
   checked: '2026-10'
+  identity_verification:
+    status: 'yes'
+    note: government ID plus selfie liveness, all plans
+    source: 20
+  sanctions_pep:
+    status: 'yes'
+    note: Watchlist and PEP reports, Essential plan and up
+    source: 21
+  adverse_media:
+    status: 'yes'
+    note: Adverse Media report, Essential plan and up
+    source: 22
+  transaction_monitoring:
+    status: not_disclosed
+    note: no own monitoring engine found
   nfc:
     status: 'yes'
     note: Mobile SDKs read passport and ID chips
@@ -342,6 +357,18 @@ sources:
 - title: Continuous monitoring for Reports
   publisher: Persona
   url: https://help.withpersona.com/articles/7LRMBbxLshF7sCcLhfhwF4/
+  accessed: '2026-10'
+- title: 'KYC Solution (Help Center)'
+  publisher: Persona
+  url: https://help.withpersona.com/articles/2OOWdhAoEeVrMRKRFENneW/
+  accessed: '2026-10'
+- title: 'Watchlist Report (Help Center)'
+  publisher: Persona
+  url: https://help.withpersona.com/articles/UQGaDEhkQ7TLAMJsjuXiX/
+  accessed: '2026-10'
+- title: 'Adverse Media Report (Help Center)'
+  publisher: Persona
+  url: https://help.withpersona.com/articles/7K0LSbrfPvUsuBHGCjUhsr/
   accessed: '2026-10'
 entity:
   wikidata: null

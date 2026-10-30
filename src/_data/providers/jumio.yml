@@ -141,6 +141,22 @@ faq:
 segments: []
 capabilities:
   checked: '2026-10'
+  identity_verification:
+    status: 'yes'
+    note: ID document check plus selfie and liveness
+    source: 13
+  sanctions_pep:
+    status: add_on
+    note: separate AML Screening product
+    source: 14
+  adverse_media:
+    status: add_on
+    note: part of AML Screening product
+    source: 14
+  transaction_monitoring:
+    status: add_on
+    note: separate Transaction Monitoring product
+    source: 15
   nfc:
     status: 'yes'
     note: SDK reads passport and ID chips
@@ -232,6 +248,18 @@ sources:
 - title: Video Verification
   publisher: Jumio
   url: https://www.jumio.com/products/video-verification/
+  accessed: '2026-10'
+- title: 'Identity Verification'
+  publisher: Jumio
+  url: https://www.jumio.com/products/identity-verification/
+  accessed: '2026-10'
+- title: 'AML Screening and Monitoring (Jumio Screening)'
+  publisher: Jumio
+  url: https://www.jumio.com/products/screening/
+  accessed: '2026-10'
+- title: 'Jumio Transaction Monitoring'
+  publisher: Jumio
+  url: https://go.jumio.com/transaction-monitoring-media
   accessed: '2026-10'
 entity:
   wikidata: null

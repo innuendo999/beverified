@@ -195,6 +195,21 @@ faq:
 segments: []
 capabilities:
   checked: '2026-10'
+  identity_verification:
+    status: 'yes'
+    note: document check plus selfie and liveness
+    source: 29
+  sanctions_pep:
+    status: add_on
+    note: paid add-on on Self-Serve plans
+    source: 1
+  adverse_media:
+    status: add_on
+    note: part of AML Screening product
+    source: 30
+  transaction_monitoring:
+    status: not_disclosed
+    note: not found on Veriff pages
   nfc:
     status: 'yes'
     note: SDK reads document chips, enabled on request
@@ -426,6 +441,14 @@ sources:
 - title: 'KJM approves Veriff age verification in Germany (7 July 2021)'
   publisher: Veriff
   url: https://veriff.com/blog/kjm-approves-veriff-age-verification-germany
+  accessed: '2026-10'
+- title: 'Identity Verification'
+  publisher: Veriff
+  url: https://www.veriff.com/product/identity-verification
+  accessed: '2026-10'
+- title: 'AML Screening'
+  publisher: Veriff
+  url: https://www.veriff.com/product/aml-screening
   accessed: '2026-10'
 entity:
   wikidata: null

@@ -50,3 +50,15 @@
 
 ### Score flag
 - None.
+
+## Follow-up 2026-10-30 (AML screening capabilities)
+
+Filled `capabilities` keys from vendor pages opened 2026-10-30. No existing values changed (all four keys were empty). Score, prose, `last_verified` and `updated` untouched.
+
+- `identity_verification`: yes (government ID plus selfie liveness, all plans); source 20, https://help.withpersona.com/articles/2OOWdhAoEeVrMRKRFENneW/
+- `sanctions_pep`: yes (Watchlist and PEP reports, Essential plan and up); source 21, https://help.withpersona.com/articles/UQGaDEhkQ7TLAMJsjuXiX/
+- `adverse_media`: yes (Adverse Media report, Essential plan and up); source 22, https://help.withpersona.com/articles/7K0LSbrfPvUsuBHGCjUhsr/
+- `transaction_monitoring`: not_disclosed (no own monitoring engine found); no vendor page found
+
+- Note: PEP Report (https://help.withpersona.com/articles/116MoqsoZ0B5FYkdR8Hufp/index.html) is a separate report, also on Essential, Growth and Enterprise; Startup Program gets a limited version.
+- Note: Transaction monitoring: Persona can open Alert/SAR cases from alerts raised in the customer's own or a third-party system, and has a Chainalysis KYT integration that uses the customer's own Chainalysis credentials (Growth/Enterprise). No Persona-sold monitoring engine found, so left not_disclosed.

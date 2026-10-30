@@ -221,6 +221,22 @@ faq:
 segments: []
 capabilities:
   checked: '2026-10'
+  identity_verification:
+    status: 'yes'
+    note: Document Verification and Liveness checks
+    source: 1
+  sanctions_pep:
+    status: 'yes'
+    note: Database screening check, all plans
+    source: 1
+  adverse_media:
+    status: 'yes'
+    note: Adverse Media Check, all plans
+    source: 1
+  transaction_monitoring:
+    status: 'yes'
+    note: per-transaction check, all plans
+    source: 1
   nfc:
     status: not_disclosed
     note: no NFC reading found
