@@ -834,3 +834,12 @@ a.chip:hover { border-color: var(--line-hover); color: var(--ink); text-decorati
 .art-fig__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: start; }
 .art-fig__grid svg { max-width: none; }
 @media (max-width: 640px) { .art-fig__grid { grid-template-columns: minmax(0, 1fr); } }
+
+/* Articles: reading progress bar and back-to-top button (src/_layouts/article.njk) */
+.read-progress { display: none; position: fixed; left: 0; right: 0; top: var(--header-h); height: 3px; z-index: 99; pointer-events: none; }
+.has-read-progress .read-progress { display: block; }
+.read-progress__bar { display: block; height: 100%; background: var(--accent); transform: scaleX(0); transform-origin: 0 50%; }
+.to-top { position: fixed; right: 24px; bottom: 24px; z-index: 40; width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; border-radius: var(--radius-pill); border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink); box-shadow: 0 6px 18px rgba(20,20,26,0.12); cursor: pointer; }
+.to-top[hidden] { display: none; }
+.to-top:hover { color: var(--accent); border-color: var(--accent); }
+@media (max-width: 640px) { .to-top { right: 16px; bottom: 16px; } }
