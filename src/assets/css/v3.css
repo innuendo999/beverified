@@ -857,6 +857,7 @@ a.chip:hover { border-color: var(--line-hover); color: var(--ink); text-decorati
 .price-index__item small { display: block; font-size: 12px; color: var(--muted); }
 .price-index__item .num { color: var(--ink); font-weight: 500; }
 .price-index td:last-child { color: var(--body); }
+.price-index__lbl { display: none; }
 .legacy-prose .price-index__note { font-size: 13px; color: var(--muted); margin: 0 0 24px; }
 @media (max-width: 640px) {
   .legacy-prose table.price-index, .price-index tbody, .price-index tr, .price-index th, .price-index td { display: block; width: 100%; }
@@ -866,5 +867,5 @@ a.chip:hover { border-color: var(--line-hover); color: var(--ink); text-decorati
   .price-index tbody tr { background: var(--surface); border: 1px solid var(--line-soft); border-radius: var(--radius-tile); padding: 12px 14px; margin: 0 0 10px; }
   .price-index tbody th, .price-index tbody td { border: 0; padding: 4px 0; }
   .price-index tbody th { width: 100%; font-size: 16px; }
-  .price-index tbody td[data-label]::before { content: attr(data-label); display: block; font-size: 12px; font-weight: 600; color: var(--muted); margin: 6px 0 2px; text-transform: uppercase; letter-spacing: 0.04em; }
+  .price-index__lbl { display: block; font-size: 12px; font-weight: 600; color: var(--muted); margin: 6px 0 2px; text-transform: uppercase; letter-spacing: 0.04em; }
 }

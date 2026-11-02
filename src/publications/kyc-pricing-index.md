@@ -183,7 +183,7 @@ Official prices from each provider's own website. Currencies are as published; w
 <thead><tr><th scope="col">Provider</th><th scope="col">Published price</th><th scope="col">Minimum</th><th scope="col">What is included</th></tr></thead>
 <tbody>
 {%- for r in pricingIndex.official %}
-<tr><th scope="row" data-label="Provider"><a href="/providers/{{ r.slug }}/">{{ r.name }}</a><small class="price-index__product">{{ r.product }}</small></th><td data-label="Published price">{% for p in r.price %}<div class="price-index__item"><small>{{ p.label }}</small><span class="num">{{ p.value }}</span></div>{% endfor %}</td><td data-label="Minimum">{% for p in r.minimum %}<div class="price-index__item"><small>{{ p.label }}</small><span class="num">{{ p.value }}</span></div>{% endfor %}{% if r.minimumNote %}<div class="price-index__item"><span>{{ r.minimumNote }}</span></div>{% endif %}</td><td data-label="What is included">{{ r.included }}</td></tr>
+<tr><th scope="row"><a href="/providers/{{ r.slug }}/">{{ r.name }}</a><small class="price-index__product">{{ r.product }}</small></th><td><span class="price-index__lbl">Published price</span>{% for p in r.price %}<div class="price-index__item"><small>{{ p.label }}</small><span class="num">{{ p.value }}</span></div>{% endfor %}</td><td><span class="price-index__lbl">Minimum</span>{% for p in r.minimum %}<div class="price-index__item"><small>{{ p.label }}</small><span class="num">{{ p.value }}</span></div>{% endfor %}{% if r.minimumNote %}<div class="price-index__item"><span>{{ r.minimumNote }}</span></div>{% endif %}</td><td><span class="price-index__lbl">What is included</span>{{ r.included }}</td></tr>
 {%- endfor %}
 </tbody>
 </table>
@@ -200,7 +200,7 @@ These figures do not come from the vendor's own rate card. They come from softwa
 <thead><tr><th scope="col">Provider</th><th scope="col">What the figure is</th><th scope="col">Figure</th></tr></thead>
 <tbody>
 {%- for t in pricingIndex.thirdParty %}
-<tr><th scope="row" data-label="Provider"><a href="/providers/{{ t.slug }}/">{{ t.name }}</a></th><td data-label="What the figure is">{{ t.label }}</td><td data-label="Figure"><span class="num">{{ t.value }}</span></td></tr>
+<tr><th scope="row"><a href="/providers/{{ t.slug }}/">{{ t.name }}</a></th><td><span class="price-index__lbl">What the figure is</span>{{ t.label }}</td><td><span class="price-index__lbl">Figure</span><span class="num">{{ t.value }}</span></td></tr>
 {%- endfor %}
 </tbody>
 </table>
