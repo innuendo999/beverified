@@ -64,3 +64,11 @@ Filled `capabilities` keys from vendor pages opened 2026-10-30. No existing valu
 - `transaction_monitoring`: add_on (separate Transaction Monitoring product); source 22, https://idenfy.com/transaction-monitoring-software/
 
 - Note: AML screening (PEP and sanctions, company sanctions, adverse media, ongoing monitoring) is sold under its own Silver/Gold/Platinum plans with separate credits. Liveness is listed as a per-verification add-on; face matching is in all IDV tiers.
+
+## Pricing re-check 2026-11-02 (KYC Pricing Index)
+
+Checked: idenfy.com/identity-verification-price, documentation.idenfy.com pay-as-you-go billing page, idenfy.com/savings/ on 2 Nov 2026. `updated` → 2026-11-02; `last_verified` unchanged.
+
+- Removed: "AML screening add-on (ROI calculator) +$0.40 per verification". The ROI calculator no longer shows an AML add-on price (source 10).
+- Unchanged and re-dated to 2026-11: Basic $1.35 / $135 minimum, Premium $1.30 / $325 minimum, Enterprise lowest $0.55, approved-only +$0.50, 24/7 manual review $0.35 to $0.55, 14-day trial with 10 checks.
+- Ranking cards: no iDenfy card mentions the AML add-on price; nothing to change.

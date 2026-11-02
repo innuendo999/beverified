@@ -50,38 +50,44 @@ pricing:
     note: For qualifying early-stage startups
     extra: Apply on the ComplyAdvantage site
   legacy_verified_note: null
-  verified: '2026-10'
+  verified: '2026-11'
+  index:
+    product: 'AML screening, Starter plan'
+    price:
+    - 'Starter plan'
+    minimum_note: 'Plan fee'
+    included: 'Customer and company screening against sanctions, PEP and adverse media, with ongoing monitoring of a set entity allowance; transaction monitoring is Enterprise only'
   items:
   - label: Starter plan
     value: From $99 per month
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Starter entity tiers
     value: 100, 250, 500, 750, 1,000, 1,500 or 2,000 monitored entities
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Overage
     value: Extra entities billed in the next billing cycle
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Enterprise
     value: Price on application
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: ComplyLaunch
     value: Free for qualifying early-stage startups
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Transaction monitoring and payment screening
     value: Enterprise plan only; not listed on Starter
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Transaction monitoring, UK G-Cloud 14 listing
     value: £0.05 per transaction
     kind: third_party
@@ -254,7 +260,7 @@ sources:
 - title: ComplyAdvantage pricing
   publisher: ComplyAdvantage
   url: https://complyadvantage.com/pricing/
-  accessed: '2026-10'
+  accessed: '2026-11'
 - title: About us
   publisher: ComplyAdvantage
   url: https://complyadvantage.com/about-us/

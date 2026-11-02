@@ -23,7 +23,7 @@ link:
   type: null
   legacy_rel: nofollow sponsored
 last_verified: '2026-10-22'
-updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
+updated: '2026-11-02'   # last content edit; last_verified = last fact re-check
 verdict: 'iDenfy''s pricing is its headline feature. It publishes self-serve rates of $1.35 per verification on Basic ($135 monthly minimum) and $1.30 on Premium ($325 minimum), and for $0.50 more per check you pay only for approved verifications, so rejected checks cost nothing. That is unusual in a category dominated by quote-only pricing. Add in-house manual review and it is a strong fit for cost-conscious fintech, crypto and gaming teams, even if its brand scale trails category leaders.'
 what_is:
 - iDenfy (UAB "iDenfy") is an identity-verification company founded in 2017 and based in Kaunas, Lithuania, with offices in the United Kingdom and the USA. CEO Domantas Ciulde leads a team of 50+. It serves fintech, crypto, gaming and marketplace businesses, combining AI-driven document and biometric checks with in-house experts who double-check verifications. It says it supports onboarding in 200+ countries and territories, extracts data from government-issued documents and is used by 1,000+ businesses.
@@ -50,53 +50,57 @@ pricing:
     note: Volume-based pricing
     extra: Drops to $0.55 per verification at volume, per iDenfy
   legacy_verified_note: null
-  verified: '2026-10'
+  verified: '2026-11'
+  index:
+    product: 'ID verification, Basic and Premium'
+    price:
+    - 'Basic, per verification'
+    - 'Premium, per verification'
+    minimum:
+    - 'Basic, monthly minimum'
+    - 'Premium, monthly minimum'
+    included: 'Document check, liveness and face match; Premium adds an SLA and discounts on extras'
   items:
   - label: Basic, per verification
     value: $1.35
     kind: official
     source: 8
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Basic, monthly minimum
     value: $135
     kind: official
     source: 9
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Premium, per verification
     value: $1.30
     kind: official
     source: 8
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Premium, monthly minimum
     value: $325
     kind: official
     source: 9
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Approved-only billing add-on (ROI calculator)
     value: +$0.50 per verification
     kind: official
     source: 10
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Enterprise, lowest stated rate at volume
     value: $0.55 per verification
     kind: official
     source: 8
-    verified: '2026-10'
-  - label: AML screening add-on (ROI calculator)
-    value: +$0.40 per verification
-    kind: official
-    source: 10
-    verified: '2026-10'
+    verified: '2026-11'
   - label: 24/7 manual review add-on (ROI calculator)
     value: +$0.35 to +$0.55 per verification, by plan
     kind: official
     source: 10
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Free trial
     value: 14 days, 10 free checks
     kind: official
     source: 9
-    verified: '2026-10'
+    verified: '2026-11'
 facts:
 - label: From
   value: $1.35/verification (Basic)
@@ -318,15 +322,15 @@ sources:
 - title: iDenfy identity verification price
   publisher: iDenfy
   url: https://www.idenfy.com/identity-verification-price
-  accessed: '2026-10'
+  accessed: '2026-11'
 - title: Pay-As-You-Go billing (iDenfy documentation)
   publisher: iDenfy
   url: https://documentation.idenfy.com/resources/billing/pay-as-you-go.md
-  accessed: '2026-10'
+  accessed: '2026-11'
 - title: ROI Calculator, iDenfy identity verification savings
   publisher: iDenfy
   url: https://idenfy.com/savings/
-  accessed: '2026-10'
+  accessed: '2026-11'
 - title: Compliance overview (iDenfy documentation)
   publisher: iDenfy
   url: https://documentation.idenfy.com/guides/compliance/overview.md
@@ -386,6 +390,7 @@ legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
 - 'The /pricing/ URL (source 1) now shows only a quote form to our fetcher; plan figures come from the identity-verification-price page (source 8) and the billing docs (source 9). A second iDenfy pricing page variant (idenfy.com/?p=481) shows Enterprise at $0.90 per verification with a 6,000 checks per year minimum, falling to $0.55 from 12,000; not used because it conflicts with source 8.'
+- 'Pricing re-check 2 Nov 2026: the ROI calculator (source 10) no longer shows an AML screening add-on price (+$0.40 in Oct 2026); item removed. Approved-only (+$0.50) and 24/7 review ($0.35 to $0.55) still shown. Plan prices, minimums and trial unchanged.'
 - 'Add-on prices (approved-only, AML, 24/7 review) now appear only in the ROI calculator (source 10), which calls them estimates subject to change and lists 24/7 review at different prices in different sections. The billing docs say the pay-per-approved unit price is "slightly higher" without a figure. iDenfy''s AI info page describes pay-per-approved as the default model.'
 - 'Price calculator on source 8 shows totals that do not match the unit prices (100 x $1.35 shown as $270; Premium 100 x $1.30 shown as $260, below its $325 minimum). Per-check figures taken from the plan cards.'
 - 'Document count conflicts: the homepage now says 3,500+ active government-issued documents, iDenfy''s AI info page says 16,000+ document types. Number removed from what_is.'

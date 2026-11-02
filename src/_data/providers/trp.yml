@@ -49,6 +49,16 @@ pricing:
     extra: Terms not shown
   legacy_verified_note: null
   verified: '2026-10'
+  index:
+    product: 'Travel Rule messaging'
+    price:
+    - 'Self-hosted wallet messages'
+    - 'Database screening'
+    - 'Protocol messages'
+    minimum:
+    - 'Initial setup'
+    - 'Minimum monthly commitment'
+    included: 'API access, onboarding help and 24/7 support, with no separate setup fees or network contracts'
   items:
   - label: Initial setup
     value: €2,000 one-time deposit, used as the operating balance for messaging and network usage

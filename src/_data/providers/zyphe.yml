@@ -52,78 +52,85 @@ pricing:
     note: Agents plus human quality assurance on an agreed queue
     extra: Priced by scope, volume and service level
   legacy_verified_note: null
-  verified: '2026-10'
+  verified: '2026-11'
+  index:
+    product: 'KYC and AML checks'
+    price:
+    - 'ID and liveness'
+    - 'AML screening'
+    minimum_note: 'None listed on the pricing page'
+    included: 'Pay per check from a one-time signup credit; proof of address, monitoring and AI agents priced separately'
   items:
   - label: Signup credit
     value: $25 one-time (about 80 ID and liveness checks), no expiry
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: ID and liveness
     value: $0.30 per verification
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: AML screening
     value: $0.20 per screening
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Ongoing AML monitoring
     value: $0.05 per subject per year
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Forms
     value: $0.05 per form
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Proof of address
     value: $0.20 per check
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Wallet screening
     value: $0.15 per screening
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Transaction monitoring
     value: $0.02 per transaction
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: White label
     value: +$0.20 per check
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: AML or adverse media agent
     value: $0.25 per false-positive alert resolved
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Transaction alert agent
     value: $0.40 per alert resolved
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Company and UBO investigation agent
     value: $3.00 per review
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Periodic file refresh agent
     value: $3.00 per subject file
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: EDD investigation and report
     value: $1.00 per review round, with an agreed spending cap
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: KYB verification
     value: Not published; priced per jurisdiction, ownership discovery billed in credits
     kind: official
@@ -133,7 +140,7 @@ pricing:
     value: Custom; contact sales
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
 facts:
 - label: From
   value: $0.30 per ID and liveness check
@@ -342,7 +349,7 @@ sources:
 - title: Pricing
   publisher: Zyphe
   url: https://www.zyphe.com/pricing
-  accessed: '2026-10'
+  accessed: '2026-11'
 - title: Security
   publisher: Zyphe
   url: https://www.zyphe.com/security

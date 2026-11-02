@@ -121,3 +121,35 @@ Filled `capabilities` keys from vendor pages opened 2026-10-30. No existing valu
 - `transaction_monitoring`: yes (per-transaction check, all plans); source 1, https://kycaid.com/pricing/
 
 - Note: All plans list full access to every check; each check is billed separately (document, liveness, database screening, adverse media, transaction monitoring per transaction). Marked yes as included in standard plans.
+
+## Pricing re-check 2026-11-02 (KYC Pricing Index)
+
+Checked: kycaid.com/pricing/ and the kycaid.com homepage on 2 Nov 2026. Only pricing was re-checked; `last_verified` stays 2026-10-22, `updated` → 2026-11-02.
+
+### Changed
+
+- The Basic KYC (€0.75), Standard KYC (€0.85) and Advanced KYC (€1.10) bundles are gone from the pricing page. The page now shows three plans (Free start with €50 credit, Usage-based, Enterprise from 10,000 verifications a month) and one per-check price list, all excluding VAT (source 1).
+- The homepage no longer shows any prices, so the homepage module list (AML €0.50, face/address €0.25, video €0.50, financial viability €0.25, ongoing KYC monitoring €25/month, fixed €100/month service fee) was removed from `pricing.items` (source 7 no longer supports it).
+- New items from the pricing page (source 1): document verification €0.50, liveness and face match €0.25, database screening (PEP, sanctions, watchlists) €0.10, adverse media €0.10, address verification €0.25, live video verification €1.00, company check €10.00, transaction monitoring €0.05 per transaction, crypto address verification €0.50, ongoing monitoring €100/month (add-on), non-document government database checks €0.05 to €0.80 by country (Brazil CPF €0.10), monthly minimum: none on the usage-based plan ("no monthly subscription or minimum spend"), €50 registration credit, VAT excluded.
+- `pricing.summary`, `pricing.plans`, verdict, AML feature bullet, facts "From" (€0.50 per document check, source 1) and "Effective" (€0.75 for document plus liveness and face match), both pricing FAQs, `kyb_pricing` source (7 → 1) rewritten to match.
+- Con "Single-module prices carry a fixed €100 monthly service fee" → "Ongoing monitoring is a €100 monthly add-on on top of per-check prices" (still a real cost limitation).
+- `verification_notes`: the adverse media / transaction monitoring / crypto note replaced with the 2 Nov finding.
+
+### Removed / unverifiable
+
+- Fixed €100 monthly service fee: not on kycaid.com any more; the pricing page FAQ says there is no subscription or minimum spend.
+- The pricing page does not say whether ongoing monitoring at €100 a month is per account or per monitored subject.
+
+### Ranking cards (not edited, per verification spec; owner decision)
+
+All KYCAID cards in `src/_data/rankings.yml` still show the old pricing:
+
+- `legacy_price_shown: From €0.50/check + €100/mo` (aml, kyb, cheap-kyc, crypto, e-kyc, identity-verification, india, canada, and the other region cards): suggest `From €0.50/check, no monthly minimum`.
+- Con "Single-module prices carry a fixed €100 monthly service fee" (and the kyb variant "including the company check"): suggest "Ongoing monitoring is a €100 monthly add-on".
+- cheap-kyc tagline "Published prices from €0.50 per document check, or bundles from €0.75 with €50 credit on registration": suggest "Published per-check prices from €0.50 per document check, no monthly minimum, €50 credit on registration".
+- cheap-kyc pro "AML screening included from the €0.85 Standard bundle": suggest "PEP and sanctions screening at €0.10 per check".
+- e-kyc pro "Basic KYC bundle (document and face) at €0.75 per verification, with €50 credit on registration" and identity-verification pro "Document check €0.50 and face verification €0.25 as single modules, or €0.75 for both as Basic KYC": suggest "Document check €0.50 plus liveness and face match €0.25, with €50 credit on registration".
+
+### Score flag
+
+- None from the price change itself: prices are still published and the entry price is unchanged at €0.50. The removal of the fixed monthly fee makes KYCAID cheaper at low volume, which could matter for the cheap-kyc ranking, but the score is the owner's call.

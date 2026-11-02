@@ -54,53 +54,63 @@ pricing:
     note: Advanced case management, dedicated infrastructure with SLA, white-labelled workflows
     extra: Contact sales for a quote
   legacy_verified_note: null
-  verified: '2026-10'
+  verified: '2026-11'
+  index:
+    product: 'KYC and AML checks, Starter and Core'
+    price:
+    - 'Document verification'
+    - 'Liveness and face match (photo)'
+    - 'Standard AML screening'
+    minimum:
+    - 'Starter plan'
+    - 'Core plan'
+    included: 'The monthly fee converts into credits for any check; continuous AML monitoring on Core only'
   items:
   - label: Starter plan
     value: $99 per month (credited against checks)
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Core plan
     value: $299 per month (credited against checks)
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Standard AML screening
     value: $0.50 (Starter) / $0.35 (Core) per check
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Extensive AML screening (with adverse media)
     value: $1.05 (Starter) / $0.85 (Core) per check
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Document verification
     value: $1.05 (Starter) / $0.75 (Core) per check
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Liveness and face match (photo)
     value: $0.35 (Starter) / $0.20 (Core) per check
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Continuous AML monitoring
     value: $0.03 per month on Core; not included on Starter
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Minimum commitment
     value: Not stated on the pricing page beyond the monthly plan fee
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Growth and Enterprise
     value: Quote on request
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
 facts:
 - label: From
   value: $99/month (Starter)
@@ -250,7 +260,7 @@ sources:
 - title: ComplyCube pricing
   publisher: ComplyCube
   url: https://www.complycube.com/en/pricing/
-  accessed: '2026-10'
+  accessed: '2026-11'
 - title: Security & Compliance Center
   publisher: ComplyCube
   url: https://www.complycube.com/en/company/security-compliance-center/

@@ -50,48 +50,57 @@ pricing:
     note: Separate pay-as-you-go credits
     extra: Not publicly disclosed
   legacy_verified_note: null
-  verified: '2026-10'
+  verified: '2026-11'
+  index:
+    product: 'AML name screening, Emerald and Sapphire'
+    price:
+    - '100-scan package'
+    - '1,000-scan package'
+    - 'Sapphire packages'
+    minimum:
+    - 'Contract, minimum, setup fee'
+    included: 'PEP, sanctions and adverse media in one scan; packages are valid for a year; ID verification and KYB billed separately'
   items:
   - label: 100-scan package
     value: $2.00 USD / scan
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: 1,000-scan package
     value: $1.40 USD / scan
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Emerald packages
     value: As low as $1.40 USD / scan
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Sapphire packages
     value: As low as $1.70 USD / scan
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Package validity
     value: 12 months from purchase
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Contract, minimum, setup fee
     value: None
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: ID verification, KYB
     value: Billed per check, price not listed
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Free trial
     value: A limited number of free checks
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
 facts:
 - label: From
   value: $2.00 USD per scan
@@ -229,11 +238,11 @@ sources:
 - title: NameScan homepage
   publisher: NameScan
   url: https://namescan.io
-  accessed: '2026-10'
+  accessed: '2026-11'
 - title: Pricing
   publisher: NameScan
   url: https://namescan.io/pricing
-  accessed: '2026-10'
+  accessed: '2026-11'
 - title: About
   publisher: NameScan
   url: https://namescan.io/about

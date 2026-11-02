@@ -23,6 +23,8 @@ Fields prefixed `legacy_` hold what the old pages showed. They are kept for refe
 | pricing.summary, pricing.plans[] | current pricing copy | filled |
 | pricing.items[] | `{label, value, kind: official \| third_party, source, verified}` | empty |
 | pricing.verified | YYYY-MM of last price check | empty |
+| pricing.index | optional; puts the provider in the KYC Pricing Index official table (`src/_data/pricingIndex.js`, added 2026-11-02): `product` (short text), `price[]` and `minimum[]` (labels of official `items`, shown verbatim; an unknown label fails the build), `minimum_note` (text when no item states the minimum), `included` (plain words, no figures) | 18 records |
+| pricing.index_exclude | optional reason a record with an official price figure stays out of the index table; a record with an official money figure and neither field fails the build | gbg, complead |
 | facts[] | `{label, value, source}` | values filled, sources empty |
 | pros[], cons[] | 3 + 3 | filled |
 | alternatives[], choose_instead[] | slugs + reason; ratings come from each provider's own record | filled |

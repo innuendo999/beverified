@@ -50,53 +50,61 @@ pricing:
     note: Onboarding, screening, CLM and remediation
     extra: Contact sales for a quote
   legacy_verified_note: null
-  verified: '2026-10'
+  verified: '2026-11'
+  index:
+    product: 'Ad hoc AML screening'
+    price:
+    - 'Monthly, 21 credits'
+    - 'Annual, 2,500 credits'
+    - 'Credits per search'
+    minimum_note: 'Smallest package; no other minimum stated'
+    included: 'Name searches against sanctions, PEP and watchlist data plus adverse media; credits expire at the end of each billing period'
   items:
   - label: Monthly, 21 credits
     value: £105.00 / mo
     kind: official
     source: 3
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Monthly, 42 credits
     value: £135.00 / mo
     kind: official
     source: 3
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Monthly, 84 credits
     value: £225.00 / mo
     kind: official
     source: 3
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Monthly, 209 credits
     value: £395.00 / mo
     kind: official
     source: 3
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Annual, 250 credits
     value: £1,050.00 / yr
     kind: official
     source: 3
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Annual, 500 credits
     value: £1,350.00 / yr
     kind: official
     source: 3
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Annual, 1,000 credits
     value: £2,250.00 / yr
     kind: official
     source: 3
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Annual, 2,500 credits
     value: £3,950.00 / yr
     kind: official
     source: 3
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Credits per search
     value: 1 standard, 10 EDD
     kind: official
     source: 3
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Full lifecycle platform
     value: Quote on request
     kind: official
@@ -106,7 +114,7 @@ pricing:
     value: From £3,500 / yr (up to 25 users)
     kind: official
     source: 8
-    verified: '2026-10'
+    verified: '2026-11'
 facts:
 - label: From
   value: £105/mo (21 search credits)
@@ -239,7 +247,7 @@ sources:
 - title: Ad-Hoc Screening (pricing)
   publisher: KYC360
   url: https://kyc360.com/ad-hoc-screening
-  accessed: '2026-10'
+  accessed: '2026-11'
 - title: Experian acquires KYC360 to boost fraud and financial crime solutions in the UK
   publisher: Experian plc
   url: https://www.experianplc.com/newsroom/press-releases/2025/experian-acquires-kyc360-to-boost-fraud-and-financial-crime-solu
@@ -259,7 +267,7 @@ sources:
 - title: KYC360 Academy pricing
   publisher: KYC360
   url: https://kyc360.com/academy/pricing
-  accessed: '2026-10'
+  accessed: '2026-11'
 - title: AML and KYC screening
   publisher: KYC360
   url: https://kyc360.com/solutions/aml-kyc-screening

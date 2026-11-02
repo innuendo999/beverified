@@ -51,28 +51,47 @@ pricing:
     note: Adds non-doc checks, business verification, transaction monitoring, fraud prevention
     extra: Contact sales for a quote
   legacy_verified_note: null
-  verified: '2026-10'
+  verified: '2026-11'
+  index:
+    product: 'KYC, Basic and Compliance'
+    price:
+    - 'Basic, per verification'
+    - 'Compliance, per verification'
+    minimum:
+    - 'Basic, monthly minimum'
+    - 'Compliance, monthly minimum'
+    included: 'Basic covers ID verification, liveness and face match; Compliance adds AML screening, ongoing monitoring and address checks'
   items:
-  - label: Basic
-    value: $1.35 / verification, $149 monthly minimum
+  - label: Basic, per verification
+    value: $1.35 / verification
     kind: official
     source: 1
-    verified: '2026-10'
-  - label: Compliance
-    value: $1.85 / verification, $299 monthly minimum
+    verified: '2026-11'
+  - label: Basic, monthly minimum
+    value: $149
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
+  - label: Compliance, per verification
+    value: $1.85 / verification
+    kind: official
+    source: 1
+    verified: '2026-11'
+  - label: Compliance, monthly minimum
+    value: $299
+    kind: official
+    source: 1
+    verified: '2026-11'
   - label: Custom plan
     value: Quoted on request
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Free trial
     value: 14 days, 50 free checks
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
 facts:
 - label: From
   value: $1.35/verification
@@ -311,7 +330,7 @@ sources:
 - title: Pricing
   publisher: Sumsub
   url: https://sumsub.com/pricing/
-  accessed: '2026-10'
+  accessed: '2026-11'
 - title: About Sumsub
   publisher: Sumsub
   url: https://sumsub.com/about/
