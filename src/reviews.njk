@@ -256,7 +256,7 @@ layout: v3.njk
 
   {%- if alts.length %}
   <section id="alternatives" aria-labelledby="alt-h">
-    <h2 id="alt-h" class="h-section">Alternatives</h2>
+    <h2 id="alt-h" class="h-section">Alternatives to {{ p.name }}</h2>
     <div class="card">
       {%- for x in alts %}
       <a class="alt-row" href="/providers/{{ x.q.slug }}/">

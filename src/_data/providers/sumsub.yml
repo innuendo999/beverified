@@ -129,9 +129,9 @@ choose_instead:
 - slug: trulioo
   need: "Data-led KYB"
   text: "you need non-documentary checks against data sources and KYB with UBO discovery where registries fall short, and can integrate a data API with quoted pricing."
-- slug: persona
-  need: "Custom workflows"
-  text: "your product team wants to build its own verification flows from reusable templates, with watchlist and adverse media reports included from the entry plan."
+- slug: kycaid
+  need: "Modular pricing with monitoring"
+  text: "you want published per-module prices, with AML screening, adverse media and transaction monitoring available on every plan rather than a custom tier."
 - slug: jumio
   need: "Enterprise scale"
   text: "you run enterprise volumes and want AML screening, transaction monitoring and agent-led video verification as separate products from one vendor, on a quoted contract."
@@ -164,7 +164,7 @@ faq:
 - q: Has Sumsub's liveness check been independently tested?
   a: Yes. iBeta lists Sumsub Liveness as passing ISO/IEC 30107-3 presentation attack detection testing at Level 1 (Feb 2025), Level 2 (Mar 2025) and Level 3 (Sep 2026).
 - q: "What are the best alternatives to Sumsub?"
-  a: "The best Sumsub alternatives depend on what you need instead. Veriff has a lower monthly minimum on its published plans, iDenfy lets you pay only for approved checks, and Shufti Pro offers a free plan and on-premise deployment. For data-led KYB, look at Trulioo; for flows your product team builds itself, Persona; for enterprise volumes with separate AML, monitoring and video products, Jumio."
+  a: "The best Sumsub alternatives depend on what you need instead. Veriff has a lower monthly minimum on its published plans, iDenfy lets you pay only for approved checks, and Shufti Pro offers a free plan and on-premise deployment. For data-led KYB, look at Trulioo; for published module prices with AML screening and transaction monitoring on every plan, KYCAID; for enterprise volumes with separate AML, monitoring and video products, Jumio."
 - q: Who are Sumsub's main competitors?
   a: Sumsub competes with Jumio, Onfido, and Trulioo, differentiating mainly through published pricing and a unified KYC/KYB/monitoring platform.
 segments: []

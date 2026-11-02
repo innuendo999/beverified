@@ -123,9 +123,9 @@ choose_instead:
 - slug: enigma
   need: "US KYB with a price list"
   text: "you onboard US businesses and want KYB by API with a published per-match price and no charge when nothing matches; its KYB covers the US only."
-- slug: jumio
-  need: "Enterprise scale"
-  text: "you want enterprise document and biometric verification with transaction monitoring and agent-led video verification available as separate products."
+- slug: kycaid
+  need: "Published KYB price"
+  text: "you want a published per-company price for KYB with UBO checks and corporate document review, next to KYC modules priced the same way."
 alternatives_columns:
 - price_from
 - liveness_pad
@@ -155,7 +155,7 @@ faq:
 - q: How many countries does Trulioo cover?
   a: Trulioo says it covers 195 countries, with more than 14,000 ID document types, 700 million business entities and 6,000+ watchlists.
 - q: "What are the best alternatives to Trulioo?"
-  a: "The best Trulioo alternatives depend on whether you need documents, prices or business data. Sumsub and Veriff publish their prices and add NFC chip reading and iBeta-tested liveness, and Veriff is also UK DIATF certified. Onfido is a document-first enterprise option, Persona suits teams that configure their own KYB flows, Enigma covers US-only KYB with a published per-match price, and Jumio fits enterprise volumes."
+  a: "The best Trulioo alternatives depend on whether you need documents, prices or business data. Sumsub and Veriff publish their prices and add NFC chip reading and iBeta-tested liveness, and Veriff is also UK DIATF certified. Onfido is a document-first enterprise option and Persona suits teams that configure their own KYB flows. For KYB with a published price, Enigma covers US businesses only, and KYCAID prices each company check with UBO checks included."
 - q: Who are Trulioo's main competitors?
   a: Trulioo competes with Sumsub, Onfido, and Jumio, differentiating through the breadth of its identity and business data layer rather than document scanning alone.
 segments: []

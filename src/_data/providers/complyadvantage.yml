@@ -141,9 +141,9 @@ choose_instead:
 - slug: hawkai
   need: "Transaction monitoring"
   text: "you need transaction monitoring in the core product, next to screening and a unified case manager, with explainable AI for audit."
-- slug: napier
-  need: "Bank-grade monitoring"
-  text: "you are a financial institution that needs screening and transaction monitoring, with a sandbox to test rules before go-live."
+- slug: kycaid
+  need: "Budget KYC, AML and monitoring"
+  text: "you also need document and liveness checks, and want AML screening and transaction monitoring on every plan at published per-check prices."
 - slug: seon
   need: "Fraud signals before KYC"
   text: "device, email and phone signals for fraud scoring before KYC matter more than screening data depth."
@@ -177,7 +177,7 @@ faq:
 - q: Does ComplyAdvantage do transaction monitoring?
   a: Yes, on the Enterprise plan. The pricing page lists real-time transaction monitoring and payment screening only under Enterprise. The Starter plan covers sanctions, PEP and adverse-media screening, company screening and ongoing monitoring, but not transaction monitoring.
 - q: "What are the best alternatives to ComplyAdvantage?"
-  a: "The best ComplyAdvantage alternatives depend on what you need beyond screening. Sumsub adds identity verification on the same platform, NameScan sells pay-as-you-go screening with no contract, and KYC360 prices screening by search credits and can run on-premise. For transaction monitoring in the core product, look at Hawk AI or Napier; for device and email fraud signals before KYC, SEON."
+  a: "The best ComplyAdvantage alternatives depend on what you need beyond screening. Sumsub adds identity verification on the same platform, and KYCAID adds it too, with AML screening and transaction monitoring on every plan at published prices. NameScan sells pay-as-you-go screening with no contract, and KYC360 prices screening by search credits and can run on-premise. For transaction monitoring in the core product, look at Hawk AI; for device and email fraud signals before KYC, SEON."
 - q: Who are ComplyAdvantage's main competitors?
   a: ComplyAdvantage competes with SEON and Feedzai on AML/fraud data, and with Sumsub for teams that want combined IDV and AML screening in one platform.
 segments: []
