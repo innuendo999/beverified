@@ -47,28 +47,35 @@ pricing:
     note: Priced by region
     extra: New sign-ups now go through Veriff
   legacy_verified_note: null
-  verified: '2026-10'
+  verified: '2026-11'
+  index:
+    product: 'AML and KYB'
+    price:
+    - 'Starter Package'
+    - 'KYB report'
+    minimum_note: 'Not stated'
+    included: 'AML support for small teams; KYB reports priced by region'
   items:
   - label: Starter Package
     value: €99 (billing period not stated)
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: KYB report
     value: From €35 per report, priced by region
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Free trial
     value: 7 days (trial button leads to Veriff KYB sign-up)
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: KYB pricing through Veriff
     value: Not publicly disclosed
     kind: official
     source: 4
-    verified: '2026-10'
+    verified: '2026-11'
 facts:
 - label: From
   value: €99 Starter Package (vespia.io)
@@ -194,7 +201,7 @@ sources:
 - title: Vespia homepage
   publisher: Vespia
   url: https://www.vespia.io
-  accessed: '2026-10'
+  accessed: '2026-11'
 - title: KYB limited access program sign-up (target of vespia.io/get-started)
   publisher: Veriff
   url: https://www.veriff.com/kyb-signup
@@ -202,7 +209,7 @@ sources:
 - title: Self-serve plans (target of vespia.io/pricing)
   publisher: Veriff
   url: https://www.veriff.com/plans/self-serve
-  accessed: '2026-10'
+  accessed: '2026-11'
 - title: Know your business
   publisher: Veriff
   url: https://www.veriff.com/product/know-your-business

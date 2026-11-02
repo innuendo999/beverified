@@ -50,33 +50,40 @@ pricing:
     note: 20,000+ monthly credits; adds Outpost on-premises data storage, 24/7 SLA-backed support and custom integrations
     extra: Contact sales
   legacy_verified_note: null
-  verified: '2026-10'
+  verified: '2026-11'
+  index:
+    product: 'Travel Rule, Essentials and Professional'
+    price:
+    - 'Essentials'
+    - 'Professional'
+    minimum_note: 'Plan fee, annual or quarterly'
+    included: 'Monthly credit allowance, no setup fee and a free sandbox; the page does not say what one credit buys'
   items:
   - label: Essentials
     value: €600 / month on annual billing paid upfront (minimum €7,200 a year); €750 / month on quarterly billing; 2,000 monthly credits
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Professional
     value: €1,200 / month on annual billing paid upfront (minimum €14,400 a year); €1,500 / month on quarterly billing; 6,000 monthly credits
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Enterprise
     value: Custom; 20,000+ monthly credits
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Setup fee and sandbox
     value: No setup fee; free integration and testing sandbox
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: What a credit buys
     value: Not stated on the pricing page
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
 facts:
 - label: From
   value: €600 / month, billed annually (minimum €7,200 a year)
@@ -234,7 +241,7 @@ sources:
 - title: Pricing
   publisher: CryptoSwift
   url: https://cryptoswift.eu/pricing/
-  accessed: '2026-10'
+  accessed: '2026-11'
 - title: About
   publisher: CryptoSwift
   url: https://cryptoswift.eu/about/

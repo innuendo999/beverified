@@ -844,3 +844,10 @@ a.chip:hover { border-color: var(--line-hover); color: var(--ink); text-decorati
 .to-top[hidden] { display: none; }
 .to-top:hover { color: var(--accent); border-color: var(--accent); }
 @media (max-width: 640px) { .to-top { right: 16px; bottom: 16px; } }
+/* KYC Pricing Index tables (src/publications/kyc-pricing-index.md): wide data table, scrolls inside .table-scroll */
+.legacy-prose .table-scroll { margin: 0 0 16px; }
+.legacy-prose table.price-index { display: table; min-width: 1040px; font-size: 14px; line-height: 1.5; margin: 0; }
+.price-index caption { caption-side: top; text-align: left; font-weight: 600; color: var(--ink); padding: 0 0 10px; }
+.price-index th, .price-index td { vertical-align: top; }
+.price-index thead th { font-size: 13px; white-space: nowrap; }
+.price-index td > div + div { margin-top: 6px; }

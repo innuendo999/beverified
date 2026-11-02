@@ -47,23 +47,29 @@ pricing:
     note: Unlimited usage
     extra: Contact sales for a quote
   legacy_verified_note: null
-  verified: '2026-10'
+  verified: '2026-11'
+  index:
+    product: 'AML screening, Starter plan'
+    price:
+    - 'Starter plan'
+    minimum_note: 'Plan fee'
+    included: 'Sanctions, PEP and adverse media screening with daily ongoing monitoring; transaction monitoring is Enterprise only'
   items:
   - label: Starter plan
     value: €990 per month, 100 entities per month
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Annual billing
     value: Two months free
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Enterprise plan
     value: Custom quote, unlimited usage
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
 facts:
 - label: From
   value: €990/mo (Starter, 100 entities)
@@ -214,7 +220,7 @@ sources:
 - title: Sanction Scanner pricing
   publisher: Sanction Scanner
   url: https://sanctionscanner.com/pricing
-  accessed: '2026-10'
+  accessed: '2026-11'
 - title: About Sanction Scanner
   publisher: Sanction Scanner
   url: https://sanctionscanner.com/about-us

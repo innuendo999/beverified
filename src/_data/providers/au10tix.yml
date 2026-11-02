@@ -50,28 +50,36 @@ pricing:
     note: Adds KYB, database verification, age estimation, Reusable Digital ID, account manager
     extra: Contact sales for a quote
   legacy_verified_note: null
-  verified: '2026-10'
+  verified: '2026-11'
+  index:
+    product: 'Basic KYC and Enhanced KYC'
+    price:
+    - 'Per-check price'
+    minimum:
+    - 'Basic KYC'
+    - 'Enhanced KYC'
+    included: 'ID document check, liveness and face match; Enhanced adds AML screening, proof of address and manual review'
   items:
   - label: Basic KYC
     value: $500 monthly minimum
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Enhanced KYC
     value: $500 monthly minimum
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Enterprise
     value: Quote on request
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Per-check price
     value: Not publicly disclosed
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
 facts:
 - label: From
   value: $500 monthly minimum
@@ -223,7 +231,7 @@ sources:
 - title: AU10TIX pricing
   publisher: AU10TIX
   url: https://www.au10tix.com/pricing/
-  accessed: '2026-10'
+  accessed: '2026-11'
 - title: Trust Center
   publisher: AU10TIX
   url: https://www.au10tix.com/trust-center/

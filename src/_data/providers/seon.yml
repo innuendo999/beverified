@@ -46,28 +46,34 @@ pricing:
     note: Adds AML compliance, case management, unlimited API calls and users
     extra: Contact sales for a quote
   legacy_verified_note: null
-  verified: '2026-10'
+  verified: '2026-11'
+  index:
+    product: 'Fraud prevention, Starter plan'
+    price:
+    - 'Starter plan'
+    minimum_note: 'Plan fee'
+    included: 'Fraud checks only; AML screening and case management need the Premium plan'
   items:
   - label: Starter plan
     value: $699 per month, 2,500 fraud checks per month
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Starter limits
     value: 10 user accounts, 50 custom rules; AML and case management not included
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Premium plan
     value: Custom quote
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Free trial
     value: Available on request; length not stated
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
 facts:
 - label: From
   value: $699/mo (2,500 fraud checks)
@@ -189,7 +195,7 @@ sources:
 - title: SEON pricing
   publisher: SEON
   url: https://seon.io/pricing/
-  accessed: '2026-10'
+  accessed: '2026-11'
 - title: About SEON
   publisher: SEON
   url: https://seon.io/about-us/

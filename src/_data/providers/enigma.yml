@@ -53,68 +53,76 @@ pricing:
     note: Negotiated rates, contract SLA, dedicated support
     extra: Contact sales
   legacy_verified_note: null
-  verified: '2026-10'
+  verified: '2026-11'
+  index:
+    product: 'KYB and screening API'
+    price:
+    - 'KYB Identify'
+    - 'KYB Verify'
+    - 'Watchlist or person screening'
+    minimum_note: 'None; a free plan, prepaid credits or monthly plans'
+    included: 'KYB is billed per match, not per search; TIN, negative news and bankruptcy checks are priced separately'
   items:
   - label: Credit price
     value: $0.01 per credit, same in API, Console and agents
     kind: official
     source: 3
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Pro plan
     value: $20 / month (2,100 credits)
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Max plan
     value: $200 / month (25,000 credits)
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: KYB Identify
     value: $1.50 per match (150 credits)
     kind: official
     source: 3
-    verified: '2026-10'
+    verified: '2026-11'
   - label: KYB Verify
     value: $2.50 per match (250 credits)
     kind: official
     source: 3
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Watchlist or person screening
     value: $0.50 per request
     kind: official
     source: 3
-    verified: '2026-10'
+    verified: '2026-11'
   - label: TIN verification
     value: $1.00 per request
     kind: official
     source: 3
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Negative news or bankruptcy check
     value: $0.10 per request
     kind: official
     source: 3
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Prepaid credit bundles
     value: $100 to $1,000, up to 25% bonus credits, valid one year
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Enterprise
     value: Custom; contact sales
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: KYB searches with no match
     value: $0 (billed per match, not per search)
     kind: official
     source: 4
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Free trial
     value: None; trials ended 31 Aug 2026 and those accounts moved to the Free plan
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
 facts:
 - label: From
   value: $1.50 per KYB match
@@ -275,15 +283,15 @@ sources:
 - title: Pricing
   publisher: Enigma
   url: https://www.enigma.com/pricing
-  accessed: '2026-10'
+  accessed: '2026-11'
 - title: Rate card
   publisher: Enigma
   url: https://www.enigma.com/pricing/rate-card
-  accessed: '2026-10'
+  accessed: '2026-11'
 - title: Onboarding & KYB
   publisher: Enigma
   url: https://www.enigma.com/solutions/onboarding-and-kyb
-  accessed: '2026-10'
+  accessed: '2026-11'
 - title: KYB documentation
   publisher: Enigma
   url: https://documentation.enigma.com/kyb

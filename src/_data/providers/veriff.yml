@@ -56,53 +56,79 @@ pricing:
     note: For 5,000+ verifications a month
     extra: Volume pricing discounts
   legacy_verified_note: null
-  verified: '2026-10'
+  verified: '2026-11'
+  index:
+    product: 'IDV, self-serve plans'
+    price:
+    - 'Essential, per verification'
+    - 'Plus, per verification'
+    - 'Premium, per verification'
+    minimum:
+    - 'Essential, monthly minimum'
+    - 'Plus, monthly minimum'
+    - 'Premium, monthly minimum'
+    included: 'Document and liveness checks; human review from Plus; PEP and sanctions screening and ongoing monitoring are add-ons'
   items:
-  - label: Essential
-    value: $49/month minimum plus $0.80 per verification
+  - label: Essential, per verification
+    value: $0.80 / verification
     kind: official
     source: 1
-    verified: '2026-10'
-  - label: Plus
-    value: $99/month minimum plus $1.39 per verification
+    verified: '2026-11'
+  - label: Essential, monthly minimum
+    value: $49
     kind: official
     source: 1
-    verified: '2026-10'
-  - label: Premium
-    value: $209/month minimum plus $1.89 per verification
+    verified: '2026-11'
+  - label: Plus, per verification
+    value: $1.39 / verification
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
+  - label: Plus, monthly minimum
+    value: $99
+    kind: official
+    source: 1
+    verified: '2026-11'
+  - label: Premium, per verification
+    value: $1.89 / verification
+    kind: official
+    source: 1
+    verified: '2026-11'
+  - label: Premium, monthly minimum
+    value: $209
+    kind: official
+    source: 1
+    verified: '2026-11'
   - label: Enterprise
     value: Quoted on request (5,000+ verifications a month)
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: PEP and sanctions add-on
     value: +$0.64 per verification
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Ongoing monitoring add-on
     value: +$0.09 per verification
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Extended data retention (2 years)
     value: +$0.30 per verification
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Additional extracted data fields (Plus and Premium)
     value: +$0.30 per verification
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Free trial
     value: 15 days, up to 50 sessions, no credit card
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
 facts:
 - label: From
   value: $49/mo minimum + $0.80 per verification
@@ -352,11 +378,11 @@ sources:
 - title: Veriff pricing
   publisher: Veriff
   url: https://www.veriff.com/pricing
-  accessed: '2026-10'
+  accessed: '2026-11'
 - title: Self-serve plans
   publisher: Veriff
   url: https://www.veriff.com/plans/self-serve
-  accessed: '2026-10'
+  accessed: '2026-11'
 - title: Veriff homepage
   publisher: Veriff
   url: https://www.veriff.com/

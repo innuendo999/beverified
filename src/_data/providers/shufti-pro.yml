@@ -52,23 +52,30 @@ pricing:
     note: Volume pricing quoted via sales
     extra: Request pricing
   legacy_verified_note: null
-  verified: '2026-10'
+  verified: '2026-11'
+  index:
+    product: 'KYC, Free Forever and Essentials'
+    price:
+    - 'Free Forever'
+    - 'Essentials'
+    minimum_note: 'Not stated'
+    included: 'Document and face verification; Essentials adds AML screening, KYB, address and age checks'
   items:
   - label: Free Forever
     value: $0, up to 10 verifications per month
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Essentials
     value: From $1.50 per verification, up to 20,000 verifications
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Enterprise
     value: Custom quote
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
 facts:
 - label: From
   value: Free (10/mo); $1.50/verification
@@ -278,7 +285,7 @@ sources:
 - title: Shufti pricing
   publisher: Shufti
   url: https://shuftipro.com/pricing/
-  accessed: '2026-10'
+  accessed: '2026-11'
 - title: About Shufti
   publisher: Shufti
   url: https://shuftipro.com/about-us/

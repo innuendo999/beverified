@@ -51,28 +51,34 @@ pricing:
     note: Custom multi-product pricing
     extra: Contact sales for a quote
   legacy_verified_note: null
-  verified: '2026-10'
+  verified: '2026-11'
+  index:
+    product: 'Identity platform, Essential plan'
+    price:
+    - 'Essential plan'
+    minimum_note: 'Plan fee and term, see price'
+    included: 'Templated identity services, billed per successful verification; KYB starts on the Growth plan'
   items:
   - label: Essential plan
     value: From $250 per month (12-month minimum term)
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Growth and Enterprise plans
     value: Quote on request
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Billing basis
     value: Per successful verification; drop-offs from user error not charged
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Startup Program
     value: One-year program with a monthly allotment of free services on select products, for eligible startups, SMBs and developers
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
 facts:
 - label: From
   value: $250/month (Essential, 12-month term)
@@ -285,7 +291,7 @@ sources:
 - title: Persona pricing
   publisher: Persona
   url: https://withpersona.com/pricing
-  accessed: '2026-10'
+  accessed: '2026-11'
 - title: Persona security
   publisher: Persona
   url: https://withpersona.com/security
