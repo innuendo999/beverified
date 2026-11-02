@@ -172,3 +172,7 @@ TRUST page still lists 21 Analytics as its only named interoperability partner (
 ### Score flag
 
 None. 4.1 unchanged.
+
+## Logo 2026-11-02
+
+- Logo file supplied by the editor (square "21" mark). Corners made transparent and saved as `src/assets/img/wordmarks/21analytics.png` (128x128); `logo.wordmark` set. No facts changed.
