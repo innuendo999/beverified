@@ -24,7 +24,7 @@ link:
   type: null
   legacy_rel: nofollow sponsored
 last_verified: '2026-10-22'
-updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
+updated: '2026-11-02'   # last content edit; last_verified = last fact re-check
 verdict: 'Trulioo''s differentiator is data breadth rather than document scanning alone: it checks people and businesses against data sources across 195 countries, says it can verify more than 14,000 ID document types and 700 million business entities, and screens against more than 6,000 watchlists. That makes it a strong choice for non-documentary proofing and KYB, though it leans more toward a data-API product than a polished no-code UX, and it does not publish prices.'
 what_is:
 - Trulioo is a global identity-verification and KYB platform founded in 2011 in Vancouver, Canada, by Stephen Ufford and Tanis Jorge. Its 2021 Series D of $394 million, led by TCV, brought total funding to $474 million at a $1.75 billion valuation. Vicky Bindra has been CEO since April 2025. Trulioo covers 195 countries and says it can verify more than 14,000 ID document types and 700 million business entities, and in November 2025 it added credit decisioning to its KYB product.
@@ -109,11 +109,30 @@ alternatives:
   best_for: Most Popular
 choose_instead:
 - slug: sumsub
-  text: you want an all-in-one, published-pricing platform instead of a data-API-first product.
+  need: "Published pricing"
+  text: "you want published per-verification prices with a free trial, plus NFC chip reading and liveness tested by iBeta at Level 3 on one platform."
+- slug: veriff
+  need: "UK DIATF certification"
+  text: "you need a UK DIATF certified service and published self-serve prices with a free trial."
 - slug: onfido
-  text: document/biometric SDK depth matters more than database-driven, non-documentary proofing.
+  need: "Document-first enterprise IDV"
+  text: "you need document-first verification with NFC chip reading, iBeta-tested liveness and Entrust's enterprise backing."
+- slug: persona
+  need: "Custom KYB workflows"
+  text: "you want KYB with UBO checks and watchlist screening inside flows your product team configures, with a published entry price."
+- slug: enigma
+  need: "US KYB with a price list"
+  text: "you onboard US businesses and want KYB by API with a published per-match price and no charge when nothing matches; its KYB covers the US only."
 - slug: jumio
-  text: you need the largest enterprise processed-verification track record.
+  need: "Enterprise scale"
+  text: "you want enterprise document and biometric verification with transaction monitoring and agent-led video verification available as separate products."
+alternatives_columns:
+- price_from
+- liveness_pad
+- nfc
+- sanctions_pep
+- kyb_registry
+- kyb_ubo
 user_reviews:
   legacy_note: null
   praise:
@@ -135,8 +154,8 @@ faq:
   a: Trulioo combines document checks with database and data-source checks, which suits non-documentary proofing and high-risk industries.
 - q: How many countries does Trulioo cover?
   a: Trulioo says it covers 195 countries, with more than 14,000 ID document types, 700 million business entities and 6,000+ watchlists.
-- q: What is the best alternative to Trulioo?
-  a: Sumsub is the best alternative for an all-in-one platform with published pricing. Onfido is the closest fit if document/biometric SDK depth matters more than database-driven proofing.
+- q: "What are the best alternatives to Trulioo?"
+  a: "The best Trulioo alternatives depend on whether you need documents, prices or business data. Sumsub and Veriff publish their prices and add NFC chip reading and iBeta-tested liveness, and Veriff is also UK DIATF certified. Onfido is a document-first enterprise option, Persona suits teams that configure their own KYB flows, Enigma covers US-only KYB with a published per-match price, and Jumio fits enterprise volumes."
 - q: Who are Trulioo's main competitors?
   a: Trulioo competes with Sumsub, Onfido, and Jumio, differentiating through the breadth of its identity and business data layer rather than document scanning alone.
 segments: []

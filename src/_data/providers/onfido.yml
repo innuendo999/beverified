@@ -25,7 +25,7 @@ link:
   type: null
   legacy_rel: nofollow sponsored
 last_verified: '2026-10-22'
-updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
+updated: '2026-11-02'   # last content edit; last_verified = last fact re-check
 verdict: Onfido pairs strong developer tooling with broad document coverage. Entrust completed its acquisition in April 2024, and the product is now sold as Entrust Identity Verification, with onfido.com redirecting to Entrust. It is a solid enterprise IDV choice for teams that want SDK depth and optional watchlist screening, though pricing remains sales-only and support responsiveness gets mixed reviews.
 what_is:
 - Onfido is an AI-powered document and biometric identity-verification company founded in 2012, according to Entrust. Oxford University Innovation names its co-founders as Eamon Jubbawy, Ruhul Amin and Husayn Kassai, who started it as an Oxford startup. Its UK company, Onfido Ltd, was incorporated in December 2010 and is registered in London. Entrust completed its acquisition of Onfido in April 2024, when Onfido reported more than $140 million in annual revenue and over 1,200 customers. The product now sits in Entrust's identity-security portfolio as Entrust Identity Verification, described by Entrust as built on Onfido technology.
@@ -127,12 +127,31 @@ alternatives:
   name: Trulioo
   best_for: Best for Data-Layer Proofing
 choose_instead:
-- slug: jumio
-  text: you want the largest processed-verification scale in enterprise IDV.
 - slug: sumsub
-  text: published pricing and a unified KYC/KYB/monitoring suite matter more than SDK depth.
+  need: "Published pricing"
+  text: "you want published per-verification prices and a free trial, with KYB and transaction monitoring available on the same platform's custom plan."
+- slug: veriff
+  need: "Published pricing and UK DIATF"
+  text: "you want the same kind of UK DIATF certification and iBeta Level 2 liveness result, with published self-serve prices and a free trial."
+- slug: idenfy
+  need: "Pay only for passed checks"
+  text: "you want published per-check prices and the option to pay only for approved verifications, instead of a sales quote."
+- slug: incode
+  need: "Biometric depth"
+  text: "you want passive liveness tested by iBeta at Level 3, live agent video calls and a vendor named a Leader in Gartner's Magic Quadrant for Identity Verification."
+- slug: jumio
+  need: "Enterprise scale"
+  text: "you want one enterprise vendor that also sells transaction monitoring and agent-led video verification as separate products."
 - slug: trulioo
-  text: non-documentary, database-driven identity proofing is the priority.
+  need: "Data-led KYB"
+  text: "you need non-documentary checks against data sources and KYB with UBO discovery and ongoing monitoring, more than document-first verification."
+alternatives_columns:
+- price_from
+- liveness_pad
+- trust_framework
+- nfc
+- sanctions_pep
+- kyb_registry
 user_reviews:
   legacy_note: null
   praise:
@@ -154,8 +173,8 @@ faq:
   a: Yes. Entrust's watchlist screening checks customers against sanctions, PEP, adverse media and global watchlists, with optional re-screening every 24 hours, alongside document and biometric verification.
 - q: How many countries does Onfido cover?
   a: Entrust says it supports more than 2,500 document types across 195 countries.
-- q: What is the best alternative to Onfido?
-  a: Sumsub is the best alternative for published pricing and a unified KYC/KYB/monitoring suite. Jumio is the closest match on enterprise processed-verification scale.
+- q: "What are the best alternatives to Onfido?"
+  a: "The best Onfido alternatives depend on why you are looking. Sumsub, Veriff and iDenfy all publish their prices, which Onfido does not, and Veriff also holds UK DIATF certification and an iBeta Level 2 liveness result. Incode adds iBeta Level 3 liveness and live agent video calls, Jumio sells transaction monitoring and video verification as separate products, and Trulioo is stronger on data-led KYB."
 - q: Who are Onfido's main competitors?
   a: Onfido competes with Jumio, Sumsub, and Trulioo, differentiating through developer-focused SDKs and, since 2024, its place in Entrust's identity-security portfolio.
 segments: []

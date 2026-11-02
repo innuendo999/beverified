@@ -23,7 +23,7 @@ link:
   type: null
   legacy_rel: nofollow sponsored
 last_verified: '2026-10-22'
-updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
+updated: '2026-11-02'   # last content edit; last_verified = last fact re-check
 verdict: ComplyAdvantage is a sanctions, PEP and adverse-media screening platform, not a document-verification company. That distinction matters when comparing it with IDV vendors in this category. Its financial-crime risk data, a published Starter plan from $99 a month and the free ComplyLaunch programme for early-stage startups make it a strong AML data layer, typically deployed alongside a separate identity-verification provider rather than instead of one.
 what_is:
 - ComplyAdvantage is an AML data and financial-crime intelligence platform founded by Charles Delingpole, now its Executive Chairman, and run by CEO Vatsa Narasimha. Its UK operating company, IVXS UK Limited, was incorporated in London in March 2014. Its Mesh platform covers customer and company screening against sanctions, PEP and adverse-media data and ongoing monitoring on both the Starter and Enterprise plans. Transaction monitoring and payment screening are listed only on the Enterprise plan. The vendor also markets fraud detection, which the pricing page does not list under either plan. It does not perform document or biometric identity verification.
@@ -130,11 +130,31 @@ alternatives:
   best_for: Best for Payment Fraud at Scale
 choose_instead:
 - slug: sumsub
-  text: you want identity verification and AML screening in a single platform instead of two vendors.
+  need: "Identity verification and AML together"
+  text: "you want identity verification and AML screening from one vendor, on published per-verification plans with a free trial."
+- slug: namescan
+  need: "Pay-as-you-go screening"
+  text: "you screen in small or irregular batches and want published pay-as-you-go prices with no contract, monthly minimum or setup fee."
+- slug: kyc360
+  need: "Credit pricing or on-premise"
+  text: "you want screening priced by search credits with unlimited users, or need an on-premise deployment."
+- slug: hawkai
+  need: "Transaction monitoring"
+  text: "you need transaction monitoring in the core product, next to screening and a unified case manager, with explainable AI for audit."
+- slug: napier
+  need: "Bank-grade monitoring"
+  text: "you are a financial institution that needs screening and transaction monitoring, with a sandbox to test rules before go-live."
 - slug: seon
-  text: device and digital-footprint fraud signals matter more than sanctions/PEP data depth.
-- slug: feedzai
-  text: you need enterprise-scale, real-time transaction-fraud detection for a Tier-1 bank or card network.
+  need: "Fraud signals before KYC"
+  text: "device, email and phone signals for fraud scoring before KYC matter more than screening data depth."
+alternatives_columns:
+- price_from
+- sanctions_pep
+- adverse_media
+- transaction_monitoring
+- case_management
+- identity_verification
+- deployment
 user_reviews:
   legacy_note: null
   praise:
@@ -156,8 +176,8 @@ faq:
   a: Yes. ComplyLaunch gives qualifying early-stage startups free access to ComplyAdvantage's AML tools.
 - q: Does ComplyAdvantage do transaction monitoring?
   a: Yes, on the Enterprise plan. The pricing page lists real-time transaction monitoring and payment screening only under Enterprise. The Starter plan covers sanctions, PEP and adverse-media screening, company screening and ongoing monitoring, but not transaction monitoring.
-- q: What is the best alternative to ComplyAdvantage?
-  a: Sumsub is the best alternative if you want identity verification and AML screening bundled into one platform. SEON is the closest fit if pre-KYC device and fraud signals matter more than sanctions/PEP data depth.
+- q: "What are the best alternatives to ComplyAdvantage?"
+  a: "The best ComplyAdvantage alternatives depend on what you need beyond screening. Sumsub adds identity verification on the same platform, NameScan sells pay-as-you-go screening with no contract, and KYC360 prices screening by search credits and can run on-premise. For transaction monitoring in the core product, look at Hawk AI or Napier; for device and email fraud signals before KYC, SEON."
 - q: Who are ComplyAdvantage's main competitors?
   a: ComplyAdvantage competes with SEON and Feedzai on AML/fraud data, and with Sumsub for teams that want combined IDV and AML screening in one platform.
 segments: []

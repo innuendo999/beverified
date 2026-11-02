@@ -1,5 +1,8 @@
 // Computed data for provider review pages (src/reviews.njk).
 // Everything comes from src/_data/providers/<slug>.yml; nothing is typed here.
+import { buildMatrix } from "./_lib/capabilities.js";
+import { termForCapability } from "./_lib/glossary.js";
+
 export default {
   pagination: { data: "providers", size: 1, alias: "p", resolve: "values", addAllPagesToCollections: true },
   permalink: (data) => `/providers/${data.p.slug}/`,
@@ -12,7 +15,16 @@ export default {
     author: (d) => d.authors?.[d.p.author] || null,
     alts: (d) => (d.p.choose_instead || [])
       .filter((a) => a.slug && d.providers[a.slug])
-      .map((a) => ({ text: a.text, q: d.providers[a.slug] })),
+      .map((a) => ({ text: a.text, need: a.need || null, q: d.providers[a.slug] })),
+    // "Alternatives compared": this provider plus its choose_instead alternatives, same matrix as category pages.
+    // Columns: p.alternatives_columns (capability, certificate or extra keys, see src/_lib/capabilities.js).
+    altMatrix: (d) => {
+      const cols = d.p.alternatives_columns;
+      if (!cols?.length) return null;
+      const alts = (d.p.choose_instead || []).filter((a) => a.slug && d.providers[a.slug]).map((a) => d.providers[a.slug]);
+      if (!alts.length) return null;
+      return buildMatrix(cols, [d.p, ...alts], termForCapability(d.glossaryTerms));
+    },
     pricingOfficial: (d) => (d.p.pricing?.items || []).filter((i) => i.kind !== "third_party"),
     pricingEstimates: (d) => (d.p.pricing?.items || []).filter((i) => i.kind === "third_party"),
     navItems: (d) => {
