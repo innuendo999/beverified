@@ -73,8 +73,19 @@ export default function () {
     return it.value;
   };
 
+  // Most common check month for a table, plus the rows checked in another month (shown under the table).
+  const checkedSummary = (rows) => {
+    const n = {}; for (const r of rows) if (r.checked) n[r.checked] = (n[r.checked] || 0) + 1;
+    const month = Object.keys(n).sort((a, b) => n[b] - n[a] || b.localeCompare(a))[0] || null;
+    const except = [];
+    for (const r of rows) if (r.checked !== month && !except.some((e) => e.name === r.name && e.checked === r.checked)) except.push({ name: r.name, checked: r.checked });
+    return { month, except };
+  };
+
   return {
     official, thirdParty, excluded, price,
+    officialChecked: checkedSummary(official),
+    thirdPartyChecked: checkedSummary(thirdParty),
     counts: {
       reviewed: records.length,
       official: official.length,
@@ -82,6 +93,7 @@ export default function () {
       thirdPartyRows: thirdParty.length,
       noFigure: noFigure.length,
     },
+    thirdPartyOnlyList: records.filter((d) => thirdPartyOnly.includes(d.slug)).map((d) => ({ slug: d.slug, name: d.name })).sort(byName),
     thirdPartyOnlyNames: records.filter((d) => thirdPartyOnly.includes(d.slug)).map((d) => d.name).sort(),
   };
 }

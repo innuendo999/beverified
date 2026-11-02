@@ -844,10 +844,28 @@ a.chip:hover { border-color: var(--line-hover); color: var(--ink); text-decorati
 .to-top[hidden] { display: none; }
 .to-top:hover { color: var(--accent); border-color: var(--accent); }
 @media (max-width: 640px) { .to-top { right: 16px; bottom: 16px; } }
-/* KYC Pricing Index tables (src/publications/kyc-pricing-index.md): wide data table, scrolls inside .table-scroll */
-.legacy-prose .table-scroll { margin: 0 0 16px; }
-.legacy-prose table.price-index { display: table; min-width: 1040px; font-size: 14px; line-height: 1.5; margin: 0; }
+/* KYC Pricing Index tables (src/publications/kyc-pricing-index.md): fit the article column; stack into cards under 640px */
+.legacy-prose .table-scroll { margin: 0 0 8px; }
+.legacy-prose table.price-index { display: table; width: 100%; font-size: 14px; line-height: 1.5; margin: 0; }
 .price-index caption { caption-side: top; text-align: left; font-weight: 600; color: var(--ink); padding: 0 0 10px; }
 .price-index th, .price-index td { vertical-align: top; }
-.price-index thead th { font-size: 13px; white-space: nowrap; }
-.price-index td > div + div { margin-top: 6px; }
+.price-index thead th { font-size: 13px; white-space: nowrap; color: var(--muted); font-weight: 500; }
+.price-index tbody th { width: 22%; font-weight: 600; }
+.price-index tbody th a { color: var(--ink); }
+.price-index__product { display: block; margin-top: 2px; font-size: 13px; font-weight: 400; color: var(--muted); }
+.price-index__item + .price-index__item { margin-top: 8px; }
+.price-index__item small { display: block; font-size: 12px; color: var(--muted); }
+.price-index__item .num { color: var(--ink); font-weight: 500; }
+.price-index td:last-child { color: var(--body); }
+.price-index__lbl { display: none; }
+.legacy-prose .price-index__note { font-size: 13px; color: var(--muted); margin: 0 0 24px; }
+@media (max-width: 640px) {
+  .legacy-prose table.price-index, .price-index tbody, .price-index tr, .price-index th, .price-index td { display: block; width: 100%; }
+  .price-index caption { display: block; width: 100%; }
+  .price-index thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .legacy-prose table.price-index { background: transparent; }
+  .price-index tbody tr { background: var(--surface); border: 1px solid var(--line-soft); border-radius: var(--radius-tile); padding: 12px 14px; margin: 0 0 10px; }
+  .price-index tbody th, .price-index tbody td { border: 0; padding: 4px 0; }
+  .price-index tbody th { width: 100%; font-size: 16px; }
+  .price-index__lbl { display: block; font-size: 12px; font-weight: 600; color: var(--muted); margin: 6px 0 2px; text-transform: uppercase; letter-spacing: 0.04em; }
+}
