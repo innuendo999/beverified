@@ -93,6 +93,7 @@ export default function () {
       thirdPartyRows: thirdParty.length,
       noFigure: noFigure.length,
     },
+    thirdPartyOnlyList: records.filter((d) => thirdPartyOnly.includes(d.slug)).map((d) => ({ slug: d.slug, name: d.name })).sort(byName),
     thirdPartyOnlyNames: records.filter((d) => thirdPartyOnly.includes(d.slug)).map((d) => d.name).sort(),
   };
 }

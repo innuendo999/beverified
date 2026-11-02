@@ -1,8 +1,8 @@
 ---
 title: "KYC Pricing Index 2026: How Much KYC Costs, Provider by Provider"
 seoTitle: "KYC Pricing Index 2026: How Much KYC Costs | BeVerified"
-seoDescription: "Every published KYC, AML and KYB price we track, checked on vendor pricing pages in November 2026, with minimums, free tiers and third-party estimates kept apart."
-lede: "A KYC check costs anywhere from a few cents for a database lookup to a couple of dollars for a document and selfie check, but the monthly minimum often matters more than the unit price. This index lists every price that the providers we review publish on their own sites, with the date we last checked it, and keeps marketplace and buyer-data estimates in a separate table."
+seoDescription: "Every published KYC, AML and KYB price we track, checked on vendor pricing pages in November 2026, with monthly minimums and free tiers."
+lede: "A KYC check costs anywhere from a few cents for a database lookup to a couple of dollars for a document and selfie check, but the monthly minimum often matters more than the unit price. This index lists every price that the providers we review publish on their own sites, with the date we last checked it. Marketplace and buyer-data estimates stay in the provider reviews."
 section: publications
 cover_label: "Published KYC prices"
 cover_motif: coin
@@ -14,7 +14,7 @@ takeaways:
   - "Most KYC providers we review do not publish prices; the official table covers only those that do, and the rest are quoted by sales."
   - "On published price lists, the per-check rate is usually not the biggest cost for a small team: monthly minimums and plan fees often are."
   - "AML screening, manual review and extra data fields are commonly priced as add-ons on top of the base identity check."
-  - "Marketplace listings and buyer-data estimates are useful for budgeting but are not vendor rate cards, so they sit in a separate table."
+  - "Marketplace listings and buyer-data estimates are useful for budgeting but are not vendor rate cards, so the index leaves them out and links to the reviews that show them."
   - "Every figure in the tables is pulled from the same provider records that feed our reviews and carries the month it was last checked."
 topics: [KYC Pricing, Identity Verification, AML Screening, Budgeting]
 provider_slugs: [sumsub, veriff, idenfy, kycaid, complycube, onfido]
@@ -28,7 +28,7 @@ faq:
   - q: "Do KYC providers charge a monthly minimum?"
     a: "Many do. Several published plans combine a per-verification price with a monthly minimum, and others charge a flat monthly plan fee with a set allowance. A few charge purely per check with no minimum."
   - q: "Why don't Jumio, Onfido or Trulioo publish prices?"
-    a: "They sell mostly to larger companies on negotiated contracts, so their sites ask buyers to contact sales. The only figures available come from public procurement listings and buyer-data services, which this index shows separately as third-party estimates."
+    a: "They sell mostly to larger companies on negotiated contracts, so their sites ask buyers to contact sales. The only figures available come from public procurement listings and buyer-data services, which their BeVerified reviews show as third-party estimates."
   - q: "Is there a free KYC tool?"
     a: "Some providers offer a small free monthly allowance, a sign-up credit or a free trial. These cover testing and very low volumes, not a production onboarding flow."
 sources:
@@ -190,24 +190,11 @@ Official prices from each provider's own website. Currencies are as published; w
 </div>
 <p class="price-index__note">Checked on vendor pricing pages in {{ pricingIndex.officialChecked.month | displayDate }}{% if pricingIndex.officialChecked.except.length %}, except {% for e in pricingIndex.officialChecked.except %}{{ e.name }} ({{ e.checked | displayDate }}){% if not loop.last %}, {% endif %}{% endfor %}{% endif %}.</p>
 
-## Third-party estimates
+## Providers without published prices
 
-These figures do not come from the vendor's own rate card. They come from software marketplaces (G2, Capterra, AWS Marketplace), the UK government's G-Cloud procurement listings and Vendr's buyer data. Use them as a rough guide to what a provider charges, not as a quote.
+For {{ pricingIndex.counts.thirdPartyOnly }} of the providers we review, the vendor publishes no price but a third party does: a software marketplace (G2, Capterra, AWS Marketplace), the UK government's G-Cloud procurement listings or Vendr's buyer data. These are {% for t in pricingIndex.thirdPartyOnlyList %}{% if loop.last %}and {% endif %}[{{ t.name }}](/providers/{{ t.slug }}/){% if not loop.last %}, {% endif %}{% endfor %}. Each review shows those figures in its pricing section, labelled as third-party estimates and linked to where they came from. They are a rough guide to what a provider charges, not a quote, so we keep them out of the table above.
 
-<div class="table-scroll">
-<table class="price-index price-index--tp">
-<caption>Third-party price estimates: {{ pricingIndex.counts.thirdPartyRows }} figures, not official</caption>
-<thead><tr><th scope="col">Provider</th><th scope="col">What the figure is</th><th scope="col">Figure</th></tr></thead>
-<tbody>
-{%- for t in pricingIndex.thirdParty %}
-<tr><th scope="row"><a href="/providers/{{ t.slug }}/">{{ t.name }}</a></th><td><span class="price-index__lbl">What the figure is</span>{{ t.label }}</td><td><span class="price-index__lbl">Figure</span><span class="num">{{ t.value }}</span></td></tr>
-{%- endfor %}
-</tbody>
-</table>
-</div>
-<p class="price-index__note">Checked in {{ pricingIndex.thirdPartyChecked.month | displayDate }}{% if pricingIndex.thirdPartyChecked.except.length %}, except {% for e in pricingIndex.thirdPartyChecked.except %}{{ e.name }} ({{ e.checked | displayDate }}){% if not loop.last %}, {% endif %}{% endfor %}{% endif %}. The source for each figure is linked in the pricing section of the provider's review.</p>
-
-Jumio's median annual contract in Vendr's data is {{ pricingIndex.price("jumio", "Median annual contract (Vendr buyer data, Feb 2026)") }}. That is a different kind of number from a per-check list price: it reflects what companies that negotiate contracts actually sign, usually at volumes the self-serve plans above do not cover.
+Buyer data shows how wide the range is once contracts are negotiated. In Vendr's data, Trulioo's median annual cost is {{ pricingIndex.price("trulioo", "Median annual cost (Vendr buyer data)") }} and Jumio's median annual contract is {{ pricingIndex.price("jumio", "Median annual contract (Vendr buyer data, Feb 2026)") }}. Those are what companies actually sign, usually at volumes the self-serve plans above do not cover, so they do not compare directly with a per-check list price.
 
 ## How we built the index
 
@@ -215,7 +202,7 @@ A price counts as official if the provider shows it on its own website without a
 
 Each figure lives once, in that provider's record in our database, with its source and the month we checked it. The tables on this page, the pricing block on each review and our rankings read from the same record. The methodology behind the reviews is on our [methodology page](/methodology/).
 
-We re-opened every official pricing page on 2 November 2026 and corrected the records where something had changed. One page, TRP's, blocked our fetcher that day, so its row still shows the October 2026 check. Third-party estimates carry their own check month.
+We re-opened every official pricing page on 2 November 2026 and corrected the records where something had changed. One page, TRP's, blocked our fetcher that day, so its row still shows the October 2026 check.
 
 We leave {{ pricingIndex.excluded.length }} records with official figures out of the main table. {% for e in pricingIndex.excluded %}{{ e.name }}: {{ e.reason }}. {% endfor %}Tax is excluded unless the vendor says otherwise; KYCAID and TRP both state that their prices exclude VAT.
 
