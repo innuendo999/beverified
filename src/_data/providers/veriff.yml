@@ -23,7 +23,7 @@ link:
   type: null
   legacy_rel: nofollow sponsored
 last_verified: '2026-10-22'
-updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
+updated: '2026-11-02'   # last content edit; last_verified = last fact re-check
 verdict: 'Veriff pairs automated decisions with human review (on its Plus and Premium plans) and says it supports 12,500+ government-issued ID documents from 230+ countries and territories. Its passive liveness check passed iBeta''s ISO/IEC 30107-3 Level 2 test in 2024, and its UK service is on the government''s DIATF register. Self-serve plans are published, with a $49, $99 or $209 monthly minimum plus $0.80 to $1.89 per verification. That is unusually transparent for this category, though the per-check fees on the higher tiers cost more than budget-first competitors.'
 what_is:
 - 'Veriff is an identity-verification company based in Tallinn, Estonia. Veriff OÜ was entered in the Estonian business register on 20 October 2015. Kaarel Kotkas founded the company and is its CEO; Veriff also names Janer Gorohhov as a co-founder. Veriff acquired device-intelligence company BrowserID in January 2019, opened a New York office in November 2019, and raised a $100 million Series C at a reported $1.5 billion valuation in early 2022.'
@@ -160,11 +160,30 @@ alternatives:
   best_for: Developer-Friendly
 choose_instead:
 - slug: sumsub
-  text: you want a unified KYC/KYB/monitoring suite alongside published pricing.
+  need: "KYB and AML in one platform"
+  text: "you want KYB with UBO verification, ongoing business monitoring and AML case management in the same platform as identity checks."
 - slug: idenfy
-  text: you want to pay only for approved verifications instead of tiered subscriptions.
+  need: "Pay only for passed checks"
+  text: "you want to pay only for approved verifications, an add-on to iDenfy's published self-serve rates, with in-house manual review on top."
+- slug: complycube
+  need: "AML screening on the entry plan"
+  text: "you want sanctions and PEP screening on the cheapest published plan, with each check priced separately, from a smaller API-first vendor."
+- slug: persona
+  need: "Custom workflows"
+  text: "your product team wants to build its own flows from reusable templates, with KYB, UBO checks and watchlist reports in one platform, and can accept a minimum term on the entry plan."
+- slug: incode
+  need: "Live agent video"
+  text: "you need live agent video calls next to automated checks, plus passive liveness tested by iBeta at Level 3, and can work with quoted pricing."
 - slug: onfido
-  text: stronger developer SDKs matter more than published starter pricing.
+  need: "Enterprise SDKs"
+  text: "you prefer strong developer SDKs from an enterprise vendor owned by Entrust, and sales-only pricing is acceptable."
+alternatives_columns:
+- price_from
+- liveness_pad
+- trust_framework
+- nfc
+- sanctions_pep
+- kyb_registry
 user_reviews:
   legacy_note: null
   praise:
@@ -188,8 +207,8 @@ faq:
   a: Kaarel Kotkas founded Veriff in 2015 and is its CEO; Veriff also names Janer Gorohhov as a co-founder. Veriff OÜ was registered in Estonia in October 2015, with its legal address in Tallinn.
 - q: Does Veriff offer KYB?
   a: Yes. Veriff announced the acquisition of KYB provider Vespia in February 2026. Its business verification product draws on register data from 300+ jurisdictions and is offered through a limited access program.
-- q: What is the best alternative to Veriff?
-  a: Sumsub is the best alternative for a unified KYC/KYB/monitoring suite. iDenfy is the closest fit for pay-per-approved pricing.
+- q: "What are the best alternatives to Veriff?"
+  a: "The best Veriff alternatives depend on the gap you need to fill. Sumsub adds KYB with UBO checks and case management on one platform, iDenfy lets you pay only for approved checks, and ComplyCube includes sanctions and PEP screening on its cheapest plan. Persona suits teams that build their own flows, Incode adds live agent video calls, and Onfido suits enterprises that want Entrust's developer SDKs."
 - q: Who are Veriff's main competitors?
   a: Veriff competes with Sumsub, iDenfy, and Onfido, differentiating through document depth and published self-serve pricing.
 segments: []

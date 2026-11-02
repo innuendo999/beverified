@@ -216,6 +216,7 @@ h1, h2, h3, p, ul, ol, figure { margin: 0; }
 .alt-row:hover { background: var(--surface-soft); color: var(--ink); text-decoration: none; }
 .alt-row__text { font-size: 15px; line-height: 1.5; flex: 1 1 220px; min-width: 0; }
 .alt-row__text strong { font-weight: 600; }
+.alt-row__need { display: block; font-size: 13px; font-weight: 500; color: var(--muted); margin-bottom: 2px; }
 .alt-row__go { font-size: 14px; font-weight: 500; color: var(--accent); white-space: nowrap; }
 .pill-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
 .ranked-in { list-style: none; padding: 0; }

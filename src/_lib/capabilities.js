@@ -57,3 +57,44 @@ export const certCell = (key, certs = []) => {
   return { status: "not_disclosed" };
 };
 
+
+// Columns that are not capabilities: read from another field of the same record.
+// price_from = the record's facts[] "From" value (the starting price shown in Quick facts).
+export const EXTRA_COLS = { price_from: "Starting price" };
+
+// One matrix, used by category pages (ranked providers) and by review pages (the review plus its alternatives).
+// cols = capability, certificate or extra keys; provs = provider records in row order.
+export const buildMatrix = (cols, provs, terms = {}) => {
+  cols = (cols || []).filter((k) => CAP_LABELS[k] || EXTRA_COLS[k]);
+  if (!cols.length) return null;
+  const capCols = cols.filter((k) => CAP_LABELS[k]);
+  const certMode = cols.some((k) => CERT_KEYS.includes(k));
+  const rows = (provs || [])
+    .filter((q) => q && ((q.capabilities && capCols.some((k) => q.capabilities[k])) || (certMode && q.certifications?.length)))
+    .map((q) => ({
+      slug: q.slug, name: q.name,
+      cells: cols.map((k) => {
+        if (k === "price_from") {
+          const f = (q.facts || []).find((x) => x.label === "From");
+          return { key: k, status: "", sym: "", label: f?.value || "Not publicly disclosed", note: null, source: f?.source || null };
+        }
+        const v = CERT_KEYS.includes(k) ? certCell(k, q.certifications) : (q.capabilities?.[k] || { status: "not_disclosed" });
+        const status = String(v.status || "not_disclosed");
+        const st = CAP_STATUS[status] || CAP_STATUS.not_disclosed;
+        let label = st[1], note = (["add_on", "partial"].includes(status) || (NOTE_KEYS.includes(k) && status !== "not_disclosed")) ? v.note : null;
+        if (k === "liveness_pad" && v.level) { label = `Level ${v.level}`; if (status === "vendor_stated") note = "Vendor-stated"; }
+        if (note) note = note.charAt(0).toUpperCase() + note.slice(1);
+        // Framework names keep their own casing (eIDAS, not EIDAS).
+        if ((k === "trust_framework" || k === "age_certification") && v.names) note = v.names;
+        return { key: k, status, sym: st[0], label, note, source: v.source || null };
+      }),
+    }));
+  if (!rows.length) return null;
+  const byslug = Object.fromEntries((provs || []).filter(Boolean).map((q) => [q.slug, q]));
+  const checked = rows.map((r) => byslug[r.slug].capabilities?.checked || byslug[r.slug].last_verified?.slice(0, 7)).filter(Boolean).sort().pop();
+  const legend = certMode
+    ? [["full", "Confirmed, or in the core product"], ["half", "Vendor-stated, or add-on"], ["empty", "Not offered"], ["unknown", "Not disclosed"]]
+    : [["full", "In the core product"], ["half", "Add-on module or higher plan"], ["empty", "Not offered"], ["unknown", "Not disclosed"]];
+  const certNote = certMode ? "Confirmed means we opened the certificate, the register entry or the lab's letter." : null;
+  return { cols: cols.map((k) => ({ key: k, label: CAP_LABELS[k] || EXTRA_COLS[k], term: terms[k] || null })), rows, checked, legend, certNote };
+};

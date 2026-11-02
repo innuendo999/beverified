@@ -256,17 +256,23 @@ layout: v3.njk
 
   {%- if alts.length %}
   <section id="alternatives" aria-labelledby="alt-h">
-    <h2 id="alt-h" class="h-section">Alternatives</h2>
+    <h2 id="alt-h" class="h-section">Alternatives to {{ p.name }}</h2>
     <div class="card">
       {%- for x in alts %}
       <a class="alt-row" href="/providers/{{ x.q.slug }}/">
         {%- if x.q.logo.wordmark %}<img class="wordmark wordmark--sm" loading="lazy" src="{{ x.q.logo.wordmark }}" alt="{{ x.q.name }}">{% else %}<span class="wordmark-text wordmark-text--sm">{{ x.q.name }}</span>{% endif %}
-        <span class="alt-row__text"><strong>Choose {{ x.q.name }} instead</strong> if {{ x.text }}</span>
+        <span class="alt-row__text">{% if x.need %}<span class="alt-row__need">{{ x.need }}</span>{% endif %}<strong>Choose {{ x.q.name }} instead</strong> if {{ x.text }}</span>
         {%- if x.q.score != null %}<span class="score-inline" role="img" aria-label="{{ x.q.score | score1 }} out of 5">{{ x.q.score | score1 }} <small>/ 5</small></span>{% endif %}
         <span class="alt-row__go">Read review →</span>
       </a>
       {%- endfor %}
     </div>
+    {%- if altMatrix %}
+    <h3 class="h-sub mt-20">{{ p.name }} and alternatives compared</h3>
+    {%- set matrix = altMatrix %}
+    {%- set matrixCaption = p.name + " and its alternatives: starting price, capabilities and certificates from each provider's record." %}
+    {%- include "v3/cap-matrix.njk" %}
+    {%- endif %}
   </section>
   {%- endif %}
 

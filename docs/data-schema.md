@@ -26,6 +26,8 @@ Fields prefixed `legacy_` hold what the old pages showed. They are kept for refe
 | facts[] | `{label, value, source}` | values filled, sources empty |
 | pros[], cons[] | 3 + 3 | filled |
 | alternatives[], choose_instead[] | slugs + reason; ratings come from each provider's own record | filled |
+| choose_instead[].need | optional short buyer-need label shown above "Choose X instead" (added 2026-11-02); `text` uses only facts from the alternative's own record | 5 reviews |
+| alternatives_columns[] | optional; columns of the "X and alternatives compared" table on the review (this provider + its `choose_instead`), built by `buildMatrix` in `src/_lib/capabilities.js` like the category matrices. Keys: any `capabilities{}` key, certificate column, or `price_from` (the record's facts "From" value) | 5 reviews |
 | user_reviews.praise/criticize/by_profile | themes | filled |
 | user_ratings[] | `{platform, rating, count, checked, url}` | empty |
 | faq[] | `{q, a}` | filled |
