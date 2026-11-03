@@ -18,7 +18,7 @@ takeaways:
   - "Every figure in the tables is pulled from the same provider records that feed our reviews and carries the month it was last checked."
 topics: [KYC Pricing, Identity Verification, AML Screening, Budgeting]
 provider_slugs: [sumsub, veriff, idenfy, kycaid, complycube, onfido]
-ranking_keys: [cheap-kyc, identity-verification, aml]
+ranking_keys: [cheap-kyc, identity-verification, aml, liveness-detection]
 about_terms: [know-your-customer, document-verification, sanctions-screening]
 faq:
   - q: "How much does KYC cost per check?"

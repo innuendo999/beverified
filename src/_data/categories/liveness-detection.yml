@@ -2,10 +2,10 @@ slug: liveness-detection
 url: /providers/liveness-detection/
 seo:
   title: Best Liveness Detection Providers in 2026 | BeVerified
-  description: 'Sumsub, Incode, Shufti Pro, Veriff and KYCAID compared: 12 liveness detection providers ranked, with each one''s iBeta ISO/IEC 30107-3 test level and published pricing.'
+  description: 'Sumsub, Incode, Shufti Pro, Veriff and KYCAID compared: the 10 best liveness detection providers, ranked with each one''s iBeta ISO/IEC 30107-3 test level and published pricing.'
   h1: Best Liveness Detection Providers in 2026
 breadcrumb_label: Best Liveness Detection Providers
-quick_answer: 'Sumsub ranks first, with liveness tested by iBeta to ISO/IEC 30107-3 Level 3 in September 2026 and published per-verification prices. Incode is the runner-up for enterprise biometrics and is also tested to Level 3. KYCAID is the pick for pay-per-check buying, since it lists liveness with face match as its own price. We compared 12 reviewed providers on independent liveness tests, certifications, coverage and pricing.'
+quick_answer: 'Sumsub ranks first, with liveness tested by iBeta to ISO/IEC 30107-3 Level 3 in September 2026 and published per-verification prices. Incode is the runner-up for enterprise biometrics and is also tested to Level 3. KYCAID is the pick for pay-per-check buying, since it lists liveness with face match as its own price. We compared 10 reviewed providers on independent liveness tests, certifications, coverage and pricing.'
 last_verified: '2026-07-24'
 updated: '2026-11-03'   # last content edit; last_verified = last fact re-check
 legacy_stats:
@@ -16,55 +16,93 @@ legacy_stats:
 - value: Jul 2026
   label: last updated
 explainer_html:
-- '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
+- '<h2>What liveness detection checks</h2>
 
-  <h2 style="font-size:19px;margin-bottom:10px;">What liveness detection tests</h2>
+  <p>Liveness detection checks that a selfie or face video comes from a real person in front of the camera at that moment, not a printed photo, a screen replay, a mask or a deepfake. A face match tells you two images show the same person; liveness tells you that person is actually there. The <a href="/glossary/liveness-detection/">liveness detection glossary entry</a> covers how passive and active checks differ.</p>
 
-  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">Liveness detection is the narrow technology layer that proves a face in front of a camera is a live human, not a photo, mask, or injected video feed. It''s one component inside a broader identity-verification workflow, not the workflow itself.</p>
+  <p>Liveness is one layer of a verification flow. This ranking compares that layer. For the full flow with document checks and screening, see <a href="/providers/identity-verification/">identity verification</a> and <a href="/providers/e-kyc/">eKYC</a>.</p>
 
-  <h3 style="font-size:14.5px;margin-bottom:10px;">Core capabilities compliance teams typically require</h3>
+  <h2>What iBeta Level 1, 2 and 3 mean</h2>
 
-  <ul style="margin:0 0 18px;padding-left:20px;font-size:14.5px;line-height:1.75;">
+  <p>Vendors usually cite <a href="/glossary/iso-iec-30107-3/">ISO/IEC 30107-3</a>, the international standard for testing and reporting presentation attack detection. The standard says how to run a test and report error rates. It has no levels and no pass mark.</p>
 
-  <li style="list-style:disc;">Presentation-attack detection tuned to ISO/IEC 30107 test levels</li>
+  <p>The levels come from the test lab. <a href="https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/" rel="nofollow noopener" target="_blank">iBeta</a> sets them by attacker time, skill and material cost: up to $30 of materials at Level 1, up to $300 at Level 2, and hyper-realistic masks at Level 3. iBeta says a pass is not a certification of the product. The matrix on this page shows the highest level we confirmed in a lab letter for each provider. A letter names one product version, so check that it is the one you will integrate.</p>
 
-  <li style="list-style:disc;">Compatibility across phone camera sensors without specialized hardware</li>
+  <h2>Presentation attacks and injection attacks</h2>
 
-  <li style="list-style:disc;">Sub-second capture with low false-rejection rates</li>
+  <p>A presentation attack holds a fake up to the real camera. An injection attack skips the camera and feeds a fake image or video into the app, often through a virtual camera, an emulator or a tampered app. ISO/IEC 30107-3 only covers attacks at the capture device, so a Level 3 letter says nothing about injection. <a href="/glossary/injection-attack-detection/">Injection attack detection</a> needs its own test, and CEN/TS 18099:2024 gives guidance on how to plan one. Deepfakes can arrive either way, which is why the <a href="/glossary/deepfake-identity-fraud/">deepfake fraud entry</a> asks vendors for separate evidence on each.</p>
 
-  <li style="list-style:disc;">Resistance to injection attacks, including virtual cameras and deepfake feeds</li>
+  <h2>Rules that require or refer to liveness</h2>
+
+  <ul>
+
+  <li>EU: the European Banking Authority''s <a href="https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2022/EBA-GL-2022-15%20GL%20on%20remote%20customer%20onboarding/1043884/Guidelines%20on%20the%20use%20of%20Remote%20Customer%20Onboarding%20Solutions.pdf" rel="nofollow noopener" target="_blank">remote onboarding guidelines</a> (EBA/GL/2022/15), in force since 2 October 2023, say firms that verify customers remotely without staff should run liveness detection.</li>
+
+  <li>US: <a href="/glossary/nist-sp-800-63/">NIST SP 800-63A-4</a>, final since July 2025, requires presentation attack detection tests to conform to ISO/IEC 30107-3:2023, and asks for controls against virtual cameras, emulators and jailbroken devices.</li>
+
+  <li>US: FinCEN alert FIN-2024-Alert004 (November 2024) lists a third-party webcam plugin during a live check as a red flag for deepfake fraud.</li>
 
   </ul>
 
-  <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from identity verification</h3>
+  <h2>How to choose a liveness provider</h2>
 
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Liveness detection is the technology layer; <a href="/providers/identity-verification/">identity verification</a> is the full workflow that wraps liveness with document checks, watchlists, and step-up triggers across the account lifecycle.</p>
+  <ul>
 
-  <h3 style="font-size:14.5px;margin-bottom:8px;">Regulatory context</h3>
+  <li>Ask for the lab letter, not a badge, and check the level, the date and the product version it names.</li>
 
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Key reference: ISO/IEC 30107, the presentation-attack-detection standard defining test levels for spoof resistance in biometric systems.</p>
+  <li>Ask for separate test evidence on injection attacks, on web and on each mobile SDK you will use.</li>
 
-  <a class="entity-card__cta" href="/methodology/">See how we evaluate every provider on this list in our full methodology →</a>
+  <li>Ask how often real users are rejected, and what happens when a check is inconclusive: retry, step-up or manual review.</li>
 
-  </section>'
+  <li>Decide whether you want liveness alone, as an SDK you run yourself, or inside a full verification flow with document checks.</li>
+
+  <li>Compare pricing models. Most providers price liveness inside a per-verification fee; few list it as a separate check.</li>
+
+  </ul>
+
+  <p><a href="/methodology/">How we evaluate every provider on this list →</a></p>'
 faq:
 - q: What is liveness detection?
-  a: Liveness detection is the technology that proves a face in front of a camera belongs to a live human, not a photo, mask, deepfake, or injected video feed.
-- q: What's the difference between liveness detection and identity verification?
-  a: Liveness detection is one technology layer; identity verification is the full workflow that wraps liveness with document checks, watchlist screening, and step-up triggers across the account lifecycle.
-- q: What is presentation attack detection?
-  a: Presentation attack detection (PAD) is the formal testing standard, ISO/IEC 30107, that measures how well a liveness system resists photos, masks, and screen replays.
-- q: Does liveness detection require special hardware?
-  a: Leading providers work with a standard phone or laptop camera. Some offer higher-assurance 3D depth checks using structured light or additional sensors where the device supports it.
-- q: Can liveness detection be fooled by deepfakes?
-  a: Modern PAD engines are specifically tuned against injection attacks, including deepfake video feeds and virtual cameras, though detection quality varies meaningfully between vendors.
+  a: Liveness detection checks that a selfie or face video comes from a live person in front of the camera, not a photo, screen replay, mask or deepfake. It runs during remote onboarding, before the face is matched to the photo on an ID document.
 - q: Which liveness detection providers are tested by iBeta to Level 2 or Level 3?
-  a: 'Sumsub, Incode and Shufti Pro hold iBeta ISO/IEC 30107-3 Level 3 letters. Veriff, Veridas, Persona, Regula, Jumio, Advance.AI and Paravision hold Level 2 letters, and Onfido holds Level 2 for Liveness 2.0 (2022) but only Level 1 for its newest Motion v2.0. KYCAID has no published lab letter. The table above shows the level for each provider, as of November 2026.'
+  a: 'Among the 10 providers ranked here, Sumsub, Incode and Shufti Pro hold iBeta ISO/IEC 30107-3 Level 3 letters. Veriff, Veridas, Persona, Regula and Jumio hold Level 2 letters, and Onfido holds Level 2 for Liveness 2.0 (2022) but only Level 1 for its newest Motion v2.0. We found no lab letter for KYCAID. The matrix on this page shows the level for each provider, as of November 2026.'
+- q: Is an iBeta Level 2 result an ISO certification?
+  a: No. ISO/IEC 30107-3 sets out how to test and report presentation attack detection, but it has no levels. Levels 1 to 3 are iBeta's own test levels, and iBeta states that a pass is not a certification of the product.
+- q: Does liveness detection stop deepfakes?
+  a: Liveness detection can catch a deepfake played on a screen in front of the camera. A deepfake injected into the video stream through a virtual camera bypasses the camera, so it also needs injection attack detection, which ISO/IEC 30107-3 tests do not cover.
+- q: What is the difference between passive and active liveness?
+  a: Passive liveness analyses a selfie or short clip without asking the user to do anything. Active liveness asks the user to turn their head, blink or follow a dot. Some products start passive and switch to an active challenge only when the result is doubtful.
+- q: Which liveness provider publishes a separate price for the check?
+  a: KYCAID is the only provider in this ranking that lists liveness with face match as its own per-check price. Sumsub, Shufti Pro, Veriff and Persona publish plan or per-verification prices, Veridas lists a price on AWS Marketplace, and the others quote on request.
+segments_heading: 'Best pick by use case'
+segments:
+- segment: 'Crypto exchanges'
+  slug: sumsub
+  reason: 'Crypto exchanges and fintechs are Sumsub''s strongest customer profile, and its liveness check passed iBeta''s Level 3 test in September 2026.'
+- segment: 'Fintech and neobanks'
+  slug: incode
+  reason: 'Neobanks use Incode for onboarding and ongoing authentication in one platform, with passive liveness tested by iBeta to Level 3 on iOS and Android.'
+- segment: 'Banks'
+  slug: veridas
+  reason: 'Veridas has been backed by BBVA since its founding, serves banking and insurance clients, and builds its own face and voice liveness, both tested by iBeta.'
+- segment: 'On-premise or offline deployment'
+  slug: regula
+  reason: 'Regula ships self-hosted Linux, Windows and Docker packages and supports offline mobile operation, so verification data can stay inside your own infrastructure. Its Face SDK liveness is tested by iBeta to Level 2.'
+- segment: 'Developers who want self-serve plans'
+  slug: veriff
+  reason: 'Veriff publishes self-serve plans with a monthly minimum and a per-verification fee, and offers a hosted verification page, SDKs and webhooks.'
+- segment: 'Very low volumes'
+  slug: shufti-pro
+  reason: 'Shufti Pro has a Free Forever plan for 10 verifications a month, and its liveness is tested by iBeta to Level 3.'
+- segment: 'Pay per check, no monthly minimum'
+  slug: kycaid
+  reason: 'KYCAID lists liveness with face match as its own per-check price on a usage-based plan with no subscription or monthly minimum.'
 adjacent:
 - identity-verification
 - e-kyc
 - cheap-kyc
 - aml/banks
+price_source: record
 capability_columns:
 - liveness_pad
 - trust_framework

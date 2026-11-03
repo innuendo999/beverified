@@ -1218,7 +1218,6 @@ liveness-detection:
     - Monthly minimums of $149 (Basic) and $299 (Compliance) can be steep for very small teams
     - KYB, non-document checks and transaction monitoring are only in the custom, quoted plan
     - Some reviewers report occasional false-positive flags
-    legacy_price_shown: From $1.35/verification
     legacy_rating_shown: null
     segments: []
   - slug: incode
@@ -1235,7 +1234,6 @@ liveness-detection:
     - No published pricing; licensing is quoted by volume and deployment scope
     - Enterprise-oriented, so pricier for smaller teams
     - SOC 2 Type 2, ISO/IEC 27001 and Kantara IAL2 are listed only on its trust centre
-    legacy_price_shown: Custom pricing
     legacy_rating_shown: null
     segments: []
   - slug: shufti-pro
@@ -1252,7 +1250,6 @@ liveness-detection:
     - ISO 27001, SOC 2 Type II and PCI DSS are vendor-stated, with reports only on request under NDA
     - Enterprise pricing above the Essentials tier is quote-only
     - Setup fees, minimums and trial terms are not stated on the pricing page
-    legacy_price_shown: Free (10/mo); from $1.50/verification
     legacy_rating_shown: null
     segments: []
   - slug: veriff
@@ -1269,7 +1266,6 @@ liveness-detection:
     - Per-verification fees sit on top of a monthly minimum
     - End users on Trustpilot report selfie capture failures
     - Some G2 reviewers report verification glitches and call the service expensive
-    legacy_price_shown: From $0.80/verification ($49/mo min)
     legacy_rating_shown: 4.6
     segments: []
   - slug: veridas
@@ -1286,7 +1282,6 @@ liveness-detection:
     - No prices on its own site; the AWS Marketplace price needs a 12-month contract
     - No SOC 2 Type II statement found, and its only public ISO 27001 certificate copy expired in March 2024
     - Pending merger with Fourthline, agreed in July 2026, may change the product and brand
-    legacy_price_shown: From $1.37/verification (AWS, 12-mo contract)
     legacy_rating_shown: null
     segments: []
   - slug: persona
@@ -1303,7 +1298,6 @@ liveness-detection:
     - Flexibility means a steeper configuration curve
     - Only the Essential plan is priced (from $250 a month), with a 12-month minimum term
     - SOC 2 Type II, ISO/IEC 27001 and Kantara listings are vendor-stated only
-    legacy_price_shown: From $250/mo
     legacy_rating_shown: null
     segments: []
   - slug: regula
@@ -1320,12 +1314,12 @@ liveness-detection:
     - Pricing is quoted per project; only a 30-day Document Reader SDK trial is public
     - Core products are SDKs and hardware that need engineering work to integrate
     - No SOC 2 report among the certificates it lists, and ISO/IEC 27001 is vendor-stated
-    legacy_price_shown: Custom pricing
     legacy_rating_shown: null
     segments: []
   - slug: kycaid
     name: KYCAID
     award: Best for Pay-per-Check Liveness
+    price_item: Liveness and face match
     tagline: Passive or active liveness sold per check, with liveness and face match listed at its own published price.
     coverage: Global
     size: SMB to Mid-market
@@ -1337,7 +1331,6 @@ liveness-detection:
     - No ISO/IEC 30107-3 lab letter found; KYCAID says only that its liveness is built to standards such as iBeta Level 2
     - Deepfake detection is vendor-stated, with no independent test result published
     - White labeling and a dedicated account manager start on the Enterprise plan, from 10,000 verifications a month
-    legacy_price_shown: From €0.50/check
     legacy_rating_shown: null
     segments: []
   - slug: jumio
@@ -1354,7 +1347,6 @@ liveness-detection:
     - Pricing only via sales quote; Vendr buyer data puts the median annual contract at $55,850
     - Video Verification is a separate product, not part of the core flow
     - Heavier integration lift for teams without dedicated developer resources
-    legacy_price_shown: Custom pricing
     legacy_rating_shown: null
     segments: []
   - slug: onfido
@@ -1371,42 +1363,7 @@ liveness-detection:
     - Newest liveness version (Motion v2.0) holds an iBeta Level 1 letter, not Level 2
     - No published pricing; quoted via Entrust sales
     - Mixed reviews on support responsiveness
-    legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.6
-    segments: []
-  - slug: advance-ai
-    name: Advance.AI
-    award: Best for Southeast Asia
-    tagline: Liveness tested by iBeta to Level 2, from an identity and credit-risk vendor focused on Southeast Asian and APAC markets.
-    coverage: APAC and Southeast Asia
-    size: null
-    pros:
-    - Liveness tested by iBeta to ISO/IEC 30107-3 Level 2 (letter dated September 2024)
-    - Combines identity verification with credit scoring in one vendor
-    - Strong regional focus on APAC and Southeast Asian emerging markets
-    cons:
-    - No published pricing
-    - Coverage and customer-count figures are not published
-    - Smaller presence outside APAC and Southeast Asia
-    legacy_price_shown: Not publicly disclosed
-    legacy_rating_shown: null
-    segments: []
-  - slug: paravision
-    name: Paravision
-    award: Best for Self-Hosted Face Biometrics
-    tagline: Passive liveness and deepfake detection sold as SDKs and containers to platforms that build their own verification flow.
-    coverage: Global
-    size: Mid-market to Enterprise
-    pros:
-    - Liveness tested by iBeta to ISO/IEC 30107-3 Level 1 and Level 2 (2023 versions)
-    - DHS RIVR 2025 PAD results match the figures Paravision gives for its entry
-    - Runs on-premises, in your own cloud, on phones or on edge chips
-    cons:
-    - A component supplier, with no document checks or hosted flow of its own
-    - No published pricing, trial or public developer documentation
-    - No iBeta letter yet for the current Liveness 2.0
-    legacy_price_shown: Custom pricing
-    legacy_rating_shown: null
     segments: []
 mexico:
   title: Best KYC & AML Providers for Mexico in 2026

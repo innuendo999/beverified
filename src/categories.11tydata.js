@@ -13,9 +13,25 @@ export default {
     seoDescription: (d) => d.c.seo?.description,
     updated: (d) => [d.c.updated, d.c.last_verified].filter(Boolean).sort().pop(),
     author: (d) => d.authors?.[d.c.author] || null,
-    entries: (d) => (d.rankings[d.c.slug]?.providers || []).map((r, i) => ({
-      rank: i + 1, r, q: r.slug ? d.providers[r.slug] || null : null,
-    })),
+    // Starting price. With price_source: record in the category file, the price comes from the provider
+    // record (pricing.items[] entry named by the ranking's price_item, else facts[] "From"), dated by
+    // pricing.verified, so the table, the card and the review show the same figure. Other categories
+    // still show legacy_price_shown until they are switched over one by one.
+    entries: (d) => (d.rankings[d.c.slug]?.providers || []).map((r, i) => {
+      const q = r.slug ? d.providers[r.slug] || null : null;
+      let price = r.legacy_price_shown || null, priceVerified = null;
+      if (d.c.price_source === "record" && q) {
+        const item = r.price_item ? (q.pricing?.items || []).find((x) => x.label === r.price_item) : null;
+        if (r.price_item && !item) throw new Error(`${d.c.slug}: price_item "${r.price_item}" not found in ${q.slug}`);
+        const from = item ? item.value : (q.facts || []).find((x) => x.label === "From")?.value;
+        const ym = String(item?.verified || q.pricing?.verified || "").slice(0, 7);
+        if (from) {
+          price = from;
+          priceVerified = ym ? new Date(`${ym}-01T00:00:00Z`).toLocaleDateString("en-US", { month: "short", year: "numeric", timeZone: "UTC" }) : null;
+        }
+      }
+      return { rank: i + 1, r, q, price, priceVerified };
+    }),
     // Capability matrix: columns from the category file, cells from each ranked provider's capabilities{}
     // and, for certificate columns, from its certifications[].
     matrix: (d) => buildMatrix(
