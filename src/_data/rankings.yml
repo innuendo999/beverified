@@ -1204,22 +1204,150 @@ kyb:
 liveness-detection:
   title: Best Liveness Detection Providers in 2026
   providers:
+  - slug: sumsub
+    name: Sumsub
+    award: Editor's Choice
+    tagline: Liveness tested by iBeta to ISO/IEC 30107-3 Level 3, inside a KYC platform with published per-verification prices.
+    coverage: Global
+    size: SMB to Enterprise
+    pros:
+    - Liveness tested by iBeta to ISO/IEC 30107-3 Level 1, Level 2 and Level 3 (Level 3 in September 2026)
+    - Published per-verification prices on its Basic and Compliance plans
+    - KYC, KYB, transaction monitoring and fraud prevention in one platform
+    cons:
+    - Monthly minimums of $149 (Basic) and $299 (Compliance) can be steep for very small teams
+    - KYB, non-document checks and transaction monitoring are only in the custom, quoted plan
+    - Some reviewers report occasional false-positive flags
+    legacy_rating_shown: null
+    segments: []
+  - slug: incode
+    name: Incode
+    award: Best for Enterprise Biometrics
+    tagline: Passive liveness tested by iBeta to Level 3, with a Deepsight module for deepfake and synthetic ID defense.
+    coverage: Global, 190+ countries
+    size: Mid-market to Enterprise
+    pros:
+    - Passive liveness tested by iBeta to ISO/IEC 30107-3 Level 3 on iOS and Android
+    - Deepsight module for deepfake and synthetic ID defense
+    - Named a Gartner Magic Quadrant Leader for Identity Verification in 2024, 2025 and 2026
+    cons:
+    - No published pricing; licensing is quoted by volume and deployment scope
+    - Enterprise-oriented, so pricier for smaller teams
+    - SOC 2 Type 2, ISO/IEC 27001 and Kantara IAL2 are listed only on its trust centre
+    legacy_rating_shown: null
+    segments: []
+  - slug: shufti-pro
+    name: Shufti Pro
+    award: Best for Country and Language Coverage
+    tagline: Liveness tested by iBeta to ISO/IEC 30107-3 Level 3, with a free plan and published per-verification prices.
+    coverage: Global, 240+ countries and territories
+    size: SMB to Enterprise
+    pros:
+    - Liveness tested by iBeta to ISO/IEC 30107-3 Level 1, Level 2 and Level 3 (Level 3 in April 2026)
+    - Free Forever plan for 10 verifications a month, then from $1.50 per verification
+    - Runs as SaaS, private cloud or on-premise
+    cons:
+    - ISO 27001, SOC 2 Type II and PCI DSS are vendor-stated, with reports only on request under NDA
+    - Enterprise pricing above the Essentials tier is quote-only
+    - Setup fees, minimums and trial terms are not stated on the pricing page
+    legacy_rating_shown: null
+    segments: []
   - slug: veriff
     name: Veriff
-    award: Editor's Choice
+    award: Best for FIDO-Certified Face Matching
     tagline: Passive liveness with deepfake and injected-media detection, tested by iBeta to Level 2.
     coverage: Global, 230+ countries and territories
     size: null
     pros:
     - Passive liveness tested by iBeta to ISO/IEC 30107-3 Level 1 and Level 2
-    - Deepfake and injected-media detection, per Veriff
+    - FIDO Face Verification certification at Level 2 for its Full Auto IDV product
     - Hosted verification page, SDKs and webhooks
     cons:
     - Per-verification fees sit on top of a monthly minimum
     - End users on Trustpilot report selfie capture failures
     - Some G2 reviewers report verification glitches and call the service expensive
-    legacy_price_shown: From $0.80/verification ($49/mo min)
     legacy_rating_shown: 4.6
+    segments: []
+  - slug: veridas
+    name: Veridas
+    award: Best for Face and Voice Biometrics
+    tagline: In-house face and voice biometrics, with passive liveness tested by iBeta to Level 2 and voice liveness to Level 1.
+    coverage: 25 countries, strongest in Spain and Latin America
+    size: Mid-market to Enterprise
+    pros:
+    - Passive liveness tested by iBeta to ISO/IEC 30107-3 Level 2, and voice liveness to Level 1
+    - eIDAS identity-proofing certificate (ETSI TS 119 461) issued by DEKRA
+    - Named a Visionary in Gartner's Magic Quadrant for Identity Verification in 2025 and 2026
+    cons:
+    - No prices on its own site; the AWS Marketplace price needs a 12-month contract
+    - No SOC 2 Type II statement found, and its only public ISO 27001 certificate copy expired in March 2024
+    - Pending merger with Fourthline, agreed in July 2026, may change the product and brand
+    legacy_rating_shown: null
+    segments: []
+  - slug: persona
+    name: Persona
+    award: Best for Flexible Orchestration
+    tagline: Selfie Liveness 2.0 tested by iBeta to Level 2, inside a no-code workflow builder for document, selfie and database checks.
+    coverage: Global, 200+ countries and territories
+    size: Mid-market to Enterprise
+    pros:
+    - Selfie Liveness 2.0 tested by iBeta to ISO/IEC 30107-3 Level 2
+    - No-code workflow builder with reusable templates
+    - FedRAMP Moderate authorization for Persona for Government since April 2026
+    cons:
+    - Flexibility means a steeper configuration curve
+    - Only the Essential plan is priced (from $250 a month), with a 12-month minimum term
+    - SOC 2 Type II, ISO/IEC 27001 and Kantara listings are vendor-stated only
+    legacy_rating_shown: null
+    segments: []
+  - slug: regula
+    name: Regula
+    award: Best for Document Forensics
+    tagline: Face SDK liveness tested by iBeta to Level 2, sold with forensic document checks as self-hosted SDKs.
+    coverage: Global, 254 countries and territories
+    size: Mid-market to Enterprise
+    pros:
+    - Face SDK liveness tested by iBeta to ISO/IEC 30107-3 Level 2
+    - Self-hosted Linux, Windows and Docker packages, plus offline mobile operation
+    - Forensic document checks against 16,500+ templates from 254 countries and territories
+    cons:
+    - Pricing is quoted per project; only a 30-day Document Reader SDK trial is public
+    - Core products are SDKs and hardware that need engineering work to integrate
+    - No SOC 2 report among the certificates it lists, and ISO/IEC 27001 is vendor-stated
+    legacy_rating_shown: null
+    segments: []
+  - slug: kycaid
+    name: KYCAID
+    award: Best for Pay-per-Check Liveness
+    price_item: Liveness and face match
+    tagline: Passive or active liveness sold per check, with liveness and face match listed at its own published price.
+    coverage: Global
+    size: SMB to Mid-market
+    pros:
+    - Liveness with face match has its own published per-check price, with no monthly minimum
+    - Choice of passive or active liveness checks, per KYCAID
+    - Customisable verification flows from one dashboard
+    cons:
+    - No ISO/IEC 30107-3 lab letter found; KYCAID says only that its liveness is built to standards such as iBeta Level 2
+    - Deepfake detection is vendor-stated, with no independent test result published
+    - White labeling and a dedicated account manager start on the Enterprise plan, from 10,000 verifications a month
+    legacy_rating_shown: null
+    segments: []
+  - slug: jumio
+    name: Jumio
+    award: Best for Global Enterprise Onboarding
+    tagline: Liveness tested by iBeta to Level 2, built for enterprise volumes across 5,000+ ID types.
+    coverage: Global, 200+ countries and territories
+    size: Mid-market to Enterprise
+    pros:
+    - Liveness tested by iBeta to ISO/IEC 30107-3 Level 2
+    - More than 1 billion transactions processed
+    - SDK reads passport and ID chips by NFC
+    cons:
+    - Pricing only via sales quote; Vendr buyer data puts the median annual contract at $55,850
+    - Video Verification is a separate product, not part of the core flow
+    - Heavier integration lift for teams without dedicated developer resources
+    legacy_rating_shown: null
     segments: []
   - slug: onfido
     name: Onfido
@@ -1235,59 +1363,7 @@ liveness-detection:
     - Newest liveness version (Motion v2.0) holds an iBeta Level 1 letter, not Level 2
     - No published pricing; quoted via Entrust sales
     - Mixed reviews on support responsiveness
-    legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.6
-    segments: []
-  - slug: paravision
-    name: Paravision
-    award: Best for Self-Hosted Face Biometrics
-    tagline: Passive liveness and deepfake detection sold as SDKs and containers to platforms that build their own verification flow.
-    coverage: Global
-    size: Mid-market to Enterprise
-    pros:
-    - Liveness tested by iBeta to ISO/IEC 30107-3 Level 1 and Level 2 (2023 versions)
-    - DHS RIVR 2025 PAD results match the figures Paravision gives for its entry
-    - Runs on-premises, in your own cloud, on phones or on edge chips
-    cons:
-    - A component supplier, with no document checks or hosted flow of its own
-    - No published pricing, trial or public developer documentation
-    - No iBeta letter yet for the current Liveness 2.0
-    legacy_price_shown: Custom pricing
-    legacy_rating_shown: null
-    segments: []
-  - slug: null
-    name: iProov
-    award: null
-    tagline: Cloud-verified liveness focused on presentation-attack resistance.
-    coverage: Global
-    size: null
-    pros:
-    - Strong resistance to injection and deepfake attacks
-    - Independently tested against ISO/IEC 30107
-    - Works on standard phone cameras
-    cons:
-    - Enterprise-oriented pricing
-    - Best paired with a separate document-check vendor
-    - Onboarding integration takes dev time
-    legacy_price_shown: Custom pricing
-    legacy_rating_shown: 4.8
-    segments: []
-  - slug: null
-    name: FaceTec
-    award: Best for 3D Depth Liveness
-    tagline: 3D face-mapping liveness that resists high-fidelity mask attacks.
-    coverage: Global
-    size: null
-    pros:
-    - 3D depth mapping catches mask-based spoofing
-    - On-device SDK reduces server round-trips
-    - Widely certified against PAD standards
-    cons:
-    - Licensing model can be complex
-    - Requires SDK integration, not a hosted flow
-    - Pricing not published
-    legacy_price_shown: Custom pricing
-    legacy_rating_shown: 4.7
     segments: []
 mexico:
   title: Best KYC & AML Providers for Mexico in 2026

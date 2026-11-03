@@ -17,7 +17,7 @@ takeaways:
   - "Ofcom opened a formal investigation into TikTok's age assurance under the Online Safety Act on 16 July 2026."
 topics: [Age Assurance, TikTok, Online Safety, Facial Age Estimation]
 provider_slugs: [verifymy]
-ranking_keys: [age-verification, liveness-detection, identity-verification]
+ranking_keys: [age-verification, identity-verification]
 faq:
   - q: "How does TikTok check your age?"
     a: "Users enter a date of birth at sign-up. TikTok also uses a model that predicts from profile information, videos and on-platform behaviour whether an account may belong to someone under 13, and sends flagged accounts to human moderators."

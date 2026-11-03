@@ -39,7 +39,7 @@ layout: v3.njk
           <td class="num">{{ e.rank }}</td>
           <th class="fw-500 ta-left" scope="row"><span class="rank-table__prov">{% if e.q and e.q.logo.wordmark %}<img class="wordmark wordmark--sm h-18 maxw-80" src="{{ e.q.logo.wordmark }}" alt="">{% endif %}{{ e.r.name }}{% if e.rank == 1 %} <span class="pill pill--dark fs-12 p-1-8">◆ {{ e.r.award or "Top pick" }}</span>{% endif %}</span></th>
           <td class="num">{% if e.q and e.q.score != null %}<strong>{{ e.q.score | score1 }}</strong> <span class="c-muted">/ 5</span>{% else %}<span class="c-muted fs-14">Not reviewed</span>{% endif %}</td>
-          <td class="hide-sm">{{ e.r.legacy_price_shown or "Not listed" }}</td>
+          <td class="hide-sm">{{ e.price or "Not listed" }}{% if e.priceVerified %}<br><span class="c-muted fs-12">Verified {{ e.priceVerified }}</span>{% endif %}</td>
           <td class="hide-sm c-body">{% if e.rank > 1 %}{{ e.r.award }}{% endif %}</td>
           <td>{% if e.q %}<a href="/providers/{{ e.q.slug }}/">Read review →</a>{% else %}<span class="c-muted fs-14">Review coming</span>{% endif %}</td>
         </tr>
@@ -79,7 +79,7 @@ layout: v3.njk
             {%- else %}<span class="pill">Review coming</span>{% endif %}
           </div>
           <div class="rank-card__foot">
-            {%- if e.r.legacy_price_shown %}<span>From <strong>{{ e.r.legacy_price_shown | replace(r/^From\s+/i, "") }}</strong></span>{% endif %}
+            {%- if e.price %}<span>From <strong>{{ e.price | replace(r/^From\s+/i, "") }}</strong>{% if e.priceVerified %} <span class="c-muted fs-12">· Pricing verified: {{ e.priceVerified }}</span>{% endif %}</span>{% endif %}
             <span class="spacer"></span>
             {%- if e.q %}<a class="btn btn--secondary btn--sm" href="/providers/{{ e.q.slug }}/">Read full review</a>{% endif %}
             {%- if e.q and e.q.link.url %}<a class="btn btn--primary btn--sm" href="{{ e.q.link.url }}" rel="{{ e.q.link | outRel }}" target="_blank">Visit site ↗</a>{% if (e.q.link.type == "paid" or e.q.link.type == "affiliate") and e.q.link.label != false %}<span class="paid-note">Sponsored link</span>{% endif %}{% endif %}

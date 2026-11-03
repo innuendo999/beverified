@@ -72,6 +72,8 @@ Certificate columns for category matrices (`liveness_pad`, `soc2`, `iso_27001`, 
 
 `<category-slug>: {title, providers: [{slug, name, award, tagline, coverage, size, pros, cons, segments, legacy_price_shown, legacy_rating_shown}]}` — list order is the rank. Entries without `slug` are providers with no review page yet.
 
+Starting price: a category file with `price_source: record` shows the price from the provider record, dated by `pricing.verified`: the `pricing.items[]` entry whose `label` equals the ranking entry's optional `price_item`, otherwise the `facts[]` "From" value. The build fails if `price_item` names a label the record does not have. Categories without the flag still show `legacy_price_shown` (retyped text, to be switched over one category at a time). Live on: liveness-detection (2026-11-03).
+
 ## `src/_data/categories/<slug>.yml`
 
 `slug, url, seo, breadcrumb_label, quick_answer, reviewer, last_verified, explainer_html[] (legacy markup), faq[], adjacent[], capability_columns[], faq_templates[]`.
