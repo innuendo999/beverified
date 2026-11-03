@@ -2,12 +2,12 @@ slug: liveness-detection
 url: /providers/liveness-detection/
 seo:
   title: Best Liveness Detection Providers in 2026 | BeVerified
-  description: 'iProov, FaceTec, Onfido, and Veriff compared: the best liveness detection providers in 2026, ranked on capture speed, spoof resistance, and sensor compatibility.'
+  description: 'Sumsub, Incode, Shufti Pro, Veriff and KYCAID compared: 12 liveness detection providers ranked, with each one''s iBeta ISO/IEC 30107-3 test level and published pricing.'
   h1: Best Liveness Detection Providers in 2026
 breadcrumb_label: Best Liveness Detection Providers
-quick_answer: 'Veriff ranks first among the providers we have reviewed in full, with passive liveness tested by iBeta to ISO/IEC 30107-3 Level 2 and deepfake and injected-media detection. Onfido, now sold as Entrust Identity Verification, is best when you want liveness bundled with document checks. iProov leads on presentation-attack accuracy and FaceTec on 3D-depth liveness; neither has a full BeVerified review yet. We compared 5 providers on capture speed, spoof resistance and sensor compatibility.'
+quick_answer: 'Sumsub ranks first, with liveness tested by iBeta to ISO/IEC 30107-3 Level 3 in September 2026 and published per-verification prices. Incode is the runner-up for enterprise biometrics and is also tested to Level 3. KYCAID is the pick for pay-per-check buying, since it lists liveness with face match as its own price. We compared 12 reviewed providers on independent liveness tests, certifications, coverage and pricing.'
 last_verified: '2026-07-24'
-updated: '2026-10-18'   # last content edit; last_verified = last fact re-check
+updated: '2026-11-03'   # last content edit; last_verified = last fact re-check
 legacy_stats:
 - value: '4'
   label: providers compared
@@ -58,14 +58,18 @@ faq:
   a: Leading providers work with a standard phone or laptop camera. Some offer higher-assurance 3D depth checks using structured light or additional sensors where the device supports it.
 - q: Can liveness detection be fooled by deepfakes?
   a: Modern PAD engines are specifically tuned against injection attacks, including deepfake video feeds and virtual cameras, though detection quality varies meaningfully between vendors.
-- q: How fast is a typical liveness check?
-  a: Most consumer-facing liveness checks complete in one to three seconds, since long capture times increase both user drop-off and false rejections.
+- q: Which liveness detection providers are tested by iBeta to Level 2 or Level 3?
+  a: 'Sumsub, Incode and Shufti Pro hold iBeta ISO/IEC 30107-3 Level 3 letters. Veriff, Veridas, Persona, Regula, Jumio, Advance.AI and Paravision hold Level 2 letters, and Onfido holds Level 2 for Liveness 2.0 (2022) but only Level 1 for its newest Motion v2.0. KYCAID has no published lab letter. The table above shows the level for each provider, as of November 2026.'
 adjacent:
 - identity-verification
 - e-kyc
 - cheap-kyc
 - aml/banks
-capability_columns: []
+capability_columns:
+- liveness_pad
+- trust_framework
+- published_pricing
+- price_from
 faq_templates: []
 legacy_issues: []
 author: andrii-klymenko
