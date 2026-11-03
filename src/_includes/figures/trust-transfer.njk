@@ -1,0 +1,35 @@
+<figure class="art-fig art-fig--seq">
+<svg viewBox="0 0 440 500" role="img" aria-label="How a TRUST transfer moves Travel Rule data" aria-describedby="tt-d" font-family="inherit"><desc id="tt-d">Three participants: the originating VASP, the TRUST lookup and the beneficiary VASP. Step 1: the originating VASP asks TRUST which member controls the destination address. Step 2: the beneficiary VASP proves it controls that address. Step 3: the encrypted Travel Rule data goes straight from the originating VASP to the beneficiary VASP and is not stored by TRUST. Step 4: the crypto itself moves on the blockchain. There is no central database of customer data.</desc>
+<defs>
+<marker id="tt-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="var(--muted)"/></marker>
+<marker id="tt-ac" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="var(--accent)"/></marker>
+</defs>
+<g stroke="var(--line-strong)" stroke-width="1.5" stroke-dasharray="4 5"><path d="M70 66 V410"/><path d="M220 66 V410"/><path d="M370 66 V410"/></g>
+<rect x="8" y="8" width="124" height="58" rx="12" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="70" y="33" text-anchor="middle" font-size="16" font-weight="600" fill="var(--ink)">Originating</text><text x="70" y="53" text-anchor="middle" font-size="16" font-weight="600" fill="var(--ink)">VASP</text>
+<rect x="158" y="8" width="124" height="58" rx="12" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.5"/>
+<text x="220" y="33" text-anchor="middle" font-size="16" font-weight="700" fill="var(--accent)">TRUST</text><text x="220" y="53" text-anchor="middle" font-size="16" font-weight="600" fill="var(--accent)">lookup</text>
+<rect x="308" y="8" width="124" height="58" rx="12" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="370" y="33" text-anchor="middle" font-size="16" font-weight="600" fill="var(--ink)">Beneficiary</text><text x="370" y="53" text-anchor="middle" font-size="16" font-weight="600" fill="var(--ink)">VASP</text>
+<g font-size="16" fill="var(--ink)" paint-order="stroke" stroke="var(--bg)" stroke-width="6" stroke-linejoin="round">
+<text x="44" y="105">Asks who controls the address</text>
+<text x="44" y="177">Beneficiary proves it controls it</text>
+<text x="44" y="249">Encrypted Travel Rule data goes</text><text x="44" y="269">straight to the beneficiary</text>
+<text x="44" y="363">The crypto moves on the blockchain</text>
+</g>
+<g font-size="13" font-weight="700" fill="var(--surface)" text-anchor="middle">
+<circle cx="24" cy="100" r="12" fill="var(--ink)"/><text x="24" y="105">1</text>
+<circle cx="24" cy="172" r="12" fill="var(--ink)"/><text x="24" y="177">2</text>
+<circle cx="24" cy="244" r="12" fill="var(--accent)"/><text x="24" y="249">3</text>
+<circle cx="24" cy="358" r="12" fill="var(--ink)"/><text x="24" y="363">4</text>
+</g>
+<path d="M70 128 H212" stroke="var(--muted)" stroke-width="2" marker-end="url(#tt-a)"/>
+<path d="M370 200 H228" stroke="var(--muted)" stroke-width="2" marker-end="url(#tt-a)"/>
+<path d="M70 292 H360" stroke="var(--accent)" stroke-width="3.5" marker-end="url(#tt-ac)"/>
+<text x="220" y="316" text-anchor="middle" font-size="14" fill="var(--muted)" paint-order="stroke" stroke="var(--bg)" stroke-width="6" stroke-linejoin="round">not stored by TRUST</text>
+<path d="M70 386 H362" stroke="var(--muted)" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#tt-a)"/>
+<rect x="8" y="428" width="424" height="56" rx="12" fill="var(--surface-sunk)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="220" y="462" text-anchor="middle" font-size="16" font-weight="600" fill="var(--ink)">No central database of customer data</text>
+</svg>
+<figcaption>A TRUST transfer in four steps. The lookup finds the counterparty and the address check happens before any customer data is sent. The data then travels directly between the two VASPs, separately from the on-chain transfer.</figcaption>
+</figure>

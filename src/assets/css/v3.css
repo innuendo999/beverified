@@ -835,6 +835,17 @@ a.chip:hover { border-color: var(--line-hover); color: var(--ink); text-decorati
 .art-fig__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: start; }
 .art-fig__grid svg { max-width: none; }
 @media (max-width: 640px) { .art-fig__grid { grid-template-columns: minmax(0, 1fr); } }
+.art-fig--seq svg { max-width: 520px; }
+/* TRUST routes figure (src/_includes/figures/trust-routes.njk): three equal cards, stacked under 760px */
+.trust-routes__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.trust-route { background: var(--surface); border: 1px solid var(--line-strong); border-radius: var(--radius-tile); padding: 16px 16px 14px; }
+.legacy-prose .trust-route__tag { font-size: 12px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--accent); margin: 0 0 6px; }
+.legacy-prose .trust-route__title { font-size: 16px; line-height: 1.35; font-weight: 600; color: var(--ink); margin: 0 0 12px; }
+.trust-route dl { margin: 0; font-size: 14px; line-height: 1.45; }
+.trust-route dt { color: var(--muted); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; margin-top: 10px; }
+.trust-route dt:first-child { margin-top: 0; padding-top: 10px; border-top: 1px solid var(--line-soft); }
+.trust-route dd { margin: 2px 0 0; color: var(--body); }
+@media (max-width: 760px) { .trust-routes__grid { grid-template-columns: minmax(0, 1fr); } }
 
 /* Articles: reading progress bar and back-to-top button (src/_layouts/article.njk) */
 .read-progress { display: none; position: fixed; left: 0; right: 0; top: var(--header-h); height: 3px; z-index: 99; pointer-events: none; }
