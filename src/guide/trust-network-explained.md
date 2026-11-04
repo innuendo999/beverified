@@ -107,13 +107,12 @@ TRUST has grown from a US coalition into an international network. Its members i
 - Gemini
 - BNY
 - Fidelity Digital Assets
-- Binance.US
 - Crypto.com
 - PayPal
 - Revolut
 - Robinhood
 
-These are examples, not a full membership list. The network keeps growing, so check the latest member list (21 Analytics offers one for download on its [TRUST guide](https://21analytics.co/coinbase-trust)) before you assume a particular counterparty participates. The three exchanges at the top of [Kaiko's Q3 2026 Exchange Ranking](https://www.kaiko.com/news/q3-2026-kaiko-exchange-ranking-released), Crypto.com, Coinbase and Kraken, are all TRUST members, and 21 Analytics says 8 of the top 10 in that ranking are.
+These are examples, not a full membership list. The network keeps growing, so check the current members on [Coinbase's TRUST page](https://www.coinbase.com/travelrule) (21 Analytics also offers a downloadable list on its [TRUST guide](https://21analytics.co/coinbase-trust)) before you assume a particular counterparty participates. The three exchanges at the top of [Kaiko's Q3 2026 Exchange Ranking](https://www.kaiko.com/news/q3-2026-kaiko-exchange-ranking-released), Crypto.com, Coinbase and Kraken, are all TRUST members, and 21 Analytics says 8 of the top 10 in that ranking are.
 
 TRUST went live in [Canada and Singapore](https://www.circle.com/blog/trust-expands-its-global-footprint-and-is-now-live-internationally) a few months after its US launch. Its membership now also includes businesses based in the United Kingdom and the European Union, and Coinbase lists markets such as Switzerland, the UAE, Japan, Hong Kong, India, Brazil and Australia among those it covers.
 
