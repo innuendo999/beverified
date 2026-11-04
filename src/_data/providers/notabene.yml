@@ -16,7 +16,6 @@ grade: Good
 primary_category: travel-rule
 categories:
 - travel-rule
-- crypto
 link:
   url: https://notabene.id
   type: none
@@ -32,7 +31,7 @@ features:
 - 'Free SafeTransact-Rise plan: receive and respond to unlimited incoming transfers and send up to $10,000 a month, with no protocol integration, through Notabene''s dashboard.'
 - TRP 1.0 endpoint for every customer, a webhook bridge for firms that are TRUST members themselves, and built-in integrations documented by Fireblocks and Ripple Custody.
 - Self-hosted wallet checks by signature proof, micro-transaction (Satoshi test), screenshot or self-declaration, chosen by the VASP.
-- Public API reference with an OpenAPI specification and a Postman collection, webhooks delivered through Svix with signed payloads and retries, a test environment, and EU and US hosting regions.
+- Public API references for each platform version and a public Postman collection, webhooks delivered through Svix with signed payloads, retries and a polling fallback, and EU and US hosting regions.
 - 'Published service level agreement: 99.5% monthly uptime, P1 issues covered 24/7 with a 30-minute response, standard support 24 hours a day on weekdays.'
 pricing:
   summary: 'Notabene publishes one price: SafeTransact-Rise is free, with outgoing transfers capped at $10,000 a month and unlimited incoming transfers. The full platform has no published price and is sold through a demo and an order form. The services agreement says invoices are due in 30 days, order forms renew automatically for one-year terms, and Notabene may change fees at the end of each term.'
@@ -215,7 +214,7 @@ score_breakdown:
   weight: 15
   score: 4.3
   evidence: vendor
-  note: Public API reference with an OpenAPI specification and Postman collections, webhooks through Svix with signed payloads and retries, a test environment, EU and US regions, and integrations documented by Fireblocks and Ripple Custody. Two API generations (SafeTransact V1 and Transact V2) run side by side.
+  note: Public API references and a public Postman collection, webhooks through Svix with signed payloads, retries and a polling fallback, EU and US regions, and integrations documented by Fireblocks and Ripple Custody. Three API references (SafeTransact v1, Transact v2 and Notabene Transact v2.1) run side by side.
 - criterion: Support responsiveness
   weight: 10
   score: 4.1
@@ -302,7 +301,7 @@ sources:
   accessed: '2026-11'
 - title: Webhooks guide
   publisher: Notabene developer docs
-  url: https://devx.notabene.id/docs/webhook-flow
+  url: https://devx.notabene.id/v2.0/docs/webhook-flow
   accessed: '2026-11'
 - title: Notabene integration
   publisher: Fireblocks developer docs
@@ -350,8 +349,8 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- 'Record decisions: link.type none (no commercial relationship with Notabene recorded). Notabene competes with TRUST and with 21 Analytics, which contributes Travel Rule guides to BeVerified; that relationship had no influence on this review or the score. Score 4.1 equals 21 Analytics; ranking keeps 21 Analytics first on the tie (existing order), editor to confirm. Categories travel-rule and crypto (Notabene was already listed unreviewed in both rankings); it has no customer KYC, so the crypto placement is an editor decision. Logo: wordmark supplied by the editor on 4 Nov 2026, traced to SVG.'
-- 'Not opened (fetch needed a permission nobody could grant in this run): trust.notabene.id (Trust Center, subprocessors), the certificate of incorporation and IRS good standing PDFs on the Webflow CDN, devx.notabene.id pages beyond search snippets, G2. API, webhook, Postman and Svix facts come from devx search snippets; re-open them at the next fact pass.'
+- 'Record decisions: link.type none (no commercial relationship with Notabene recorded). Notabene competes with TRUST and with 21 Analytics, which contributes Travel Rule guides to BeVerified; that relationship had no influence on this review or the score. Score 4.1 equals 21 Analytics; ranking keeps 21 Analytics first on the tie (existing order), editor to confirm. Categories travel-rule only: the owner removed Notabene from the Crypto KYC ranking on 4 Nov 2026 because it has no customer KYC. Logo: wordmark supplied by the editor on 4 Nov 2026, traced to SVG.'
+- 'Not opened (fetch needed a permission nobody could grant in this run): trust.notabene.id (Trust Center, subprocessors), the certificate of incorporation and IRS good standing PDFs on the Webflow CDN, devx.notabene.id pages beyond search snippets, G2. Re-check 4 Nov 2026: devx API reference opened (three platform references, Postman link; no OpenAPI or sandbox mention on that page) and v2 webhooks page opened (Svix, signed payloads, exponential-backoff retries, EU and US regions, polling). Trust Center re-tried: renders by script, no content readable. G2 re-tried: site refused the request. devx llms.txt not opened.'
 - 'Networks: protocols overview names TRP, TRISA, TRUST, Sygna Bridge, VerifyVASP, OpenVASP, Shyft Veriscope and Netki TransactID with a general aim to integrate live protocols, but does not say which are live. TRP page: every customer has a live TRP 1.0 endpoint. TRUST page: Coinbase does not allow external vendors to interact with TRUST directly; customers apply themselves and connect by webhook; TRUST BBS for incoming. VerifyVASP page: support pending a security review. TRISA page: marked historical, says CipherTrace discontinued it (TRISA itself announced interoperability with Ospree in June 2024, so Notabene''s page looks out of date). Sygna page: invites firms to connect through Notabene''s API, no live status. GTR page did not load. CryptoSwift''s record says it receives transfers from Notabene.'
 - 'Figures not used as facts beyond vendor-stated labels: 2,300+ institutions (homepage, about) vs 1,500+ (wallet page) vs 2,000+ (third parties); 280+ customers; 110+ vs 115+ vs 100+ jurisdictions; transaction volume $3.0T+ banner, over $2T annualized (Ripple release), $1.3T over 12 months (footer); 40 teammates (about) vs 51-200 or 101-200 on job sites. A comparison site lists G2 at 4.5 from 30 reviews; G2 not opened, not used. A tokenization-policy site gives annual price bands; no source, not used.'
 - 'Company: MSA (17 Jun 2026) names Notabene, Inc., a Delaware corporation, or Notabene ID GmbH, Swiss LLC, per order form; New York law and Kings County courts, Swiss law and Zug for EEA, UK and Swiss customers. Privacy policy (8 Apr 2025): data on servers in the US and EU; EU and UK GDPR representatives and DPO at GDPRLocal. No street address published. Older press release (PR Newswire, 2022) mentioned offices in Zug and Santiago de Chile; not used.'
@@ -361,4 +360,3 @@ application_category: Travel Rule Compliance Software
 author: andrii-klymenko
 directory_categories:
 - Travel Rule
-- Crypto KYC

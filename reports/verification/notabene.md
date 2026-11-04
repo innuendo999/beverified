@@ -1,6 +1,6 @@
 # Notabene: new review 2026-11-04
 
-New record `src/_data/providers/notabene.yml`. Proposed score 4.1, grade Good, weighted from the six rubric criteria in `score_breakdown`. `link.type: none`. Categories: `travel-rule` (primary) and `crypto`; Notabene was already listed, unreviewed, in both rankings. Notabene competes with TRUST and with 21 Analytics, which contributes Travel Rule guides to BeVerified; that relationship had no influence on the review or the score.
+New record `src/_data/providers/notabene.yml`. Proposed score 4.1, grade Good, weighted from the six rubric criteria in `score_breakdown`. `link.type: none`. Categories: `travel-rule` only. Notabene was listed, unreviewed, in Travel Rule and Crypto KYC; the owner removed it from Crypto KYC on 4 Nov 2026 because it has no customer KYC. Notabene competes with TRUST and with 21 Analytics, which contributes Travel Rule guides to BeVerified; that relationship had no influence on the review or the score.
 
 | Criterion | Weight | Score |
 |---|---|---|
@@ -21,8 +21,9 @@ Calibration against the other reviewed Travel Rule records:
 ## Checked (pages opened, 4 Nov 2026)
 
 - **Vendor site:** homepage (1), pricing (2), about us (3), security and trust (4), Main Services Agreement (5), SLA (6), privacy policy (7), website terms (8), agreements index (9), protocols overview (10), TRP (11), TRUST/USTRWG (12), VerifyVASP (13), Sygna Bridge (28), Crypto Wallet ID (15), Travel Rule compliance (16), TAP (17), SOC 2 post (22), Ripple investment post (23).
-- **From search results only (pages not opened):** TRISA protocol page (14), developer docs API reference (18) and webhooks guide (19), Fireblocks developer docs (20), Ripple Custody docs (21), Crypto Briefing (24), CoinDesk (25), The Block (26), Notabene help centre TFR article (27).
-- **Not opened:** trust.notabene.id (Trust Center, subprocessors: the fetch tool needed a permission nobody answered); certificate of incorporation and IRS good standing PDFs; devx.notabene.id beyond snippets; G2. The GTR protocol page failed to load.
+- **Developer docs (opened on re-try):** API reference (18): three platform references and a public Postman collection, no OpenAPI or sandbox mention, so those claims were removed; v2 webhooks page (19): Svix, signed payloads, retries, EU and US regions, polling.
+- **From search results only (pages not opened):** TRISA protocol page (14), Fireblocks developer docs (20), Ripple Custody docs (21), Crypto Briefing (24), CoinDesk (25), The Block (26), Notabene help centre TFR article (27).
+- **Not readable on re-try (4 Nov 2026):** trust.notabene.id and its subprocessors page load only page metadata (the content renders by script from Vanta); G2 refused the request. devx llms.txt, the certificate of incorporation and IRS good standing PDFs not opened. The GTR protocol page failed to load.
 - **Searched** for acquisitions, breaches, regulatory actions, litigation and layoffs: none found.
 
 ## Networks and protocols
@@ -42,10 +43,10 @@ Calibration against the other reviewed Travel Rule records:
 ## Ranking cards
 
 - **`travel-rule`:** Notabene entry linked (`slug: notabene`) and moved from 6th to **2nd**. It ties 21 Analytics at 4.1; the existing order is kept on the tie, so 21 Analytics stays first. **Editor to confirm the tie order.** Tagline, coverage, size, pros and cons rewritten from the record; old cards claimed "Newer vendor with a smaller track record" and "Not a full KYC platform" style points that no longer fit. Award kept: "Best for Hosted Travel Rule Exchange".
-- **`crypto`:** entry linked and moved from 5th to **4th**, ahead of the unreviewed Chainalysis (reviewed providers before unreviewed). Award kept: "Best for Travel Rule Messaging". Notabene has no customer KYC, so keeping it in the Crypto KYC list is an editor decision.
-- `legacy_price_shown` set to "Free plan; paid plans on request" in both (these categories do not use `price_source: record`).
+- **`crypto`:** entry removed (owner decision, 4 Nov 2026: no customer KYC). The list now has 4 providers.
+- `legacy_price_shown` set to "Free plan; paid plans on request" (the category does not use `price_source: record`).
 
-Category copy: `travel-rule.yml` SEO description order and quick answer (Notabene second at 4.1, others renumbered, the "no full review yet" sentence removed). `crypto.yml` quick answer sentence on Notabene replaced (the old "leads on Travel Rule protocol interoperability" no longer holds), description order, `updated` 2026-11-04. Counts unchanged (6 and 5).
+Category copy: `travel-rule.yml` SEO description order and quick answer (Notabene second at 4.1, others renumbered, the "no full review yet" sentence removed). `crypto.yml`: Notabene removed from the quick answer and SEO description, count 5 to 4 in the quick answer and `legacy_stats`, `updated` 2026-11-04. Travel Rule count unchanged (6).
 
 Other records: `21analytics.yml`, `trp.yml` and `verifyvasp.yml` list Notabene as an alternative; `slug: null` changed to `slug: notabene` so those entries link to the review. Their text was already consistent with this record. `tracked.yml`: Notabene removed (now reviewed).
 
