@@ -143,7 +143,7 @@ cons:
 - No SOC 2 report, and security reports beyond the ISO/IEC 27001 certificate need an access request or NDA
 - You install, patch and back up the software yourself, and there are only two public user reviews so far, both on SourceForge
 alternatives:
-- slug: null
+- slug: notabene
   name: Notabene
   best_for: Hosted Travel Rule Network
 - slug: verifyvasp
@@ -155,7 +155,7 @@ alternatives:
 choose_instead:
 - slug: sumsub
   text: you want Travel Rule inside a hosted KYC and AML platform with published per-verification pricing and connections to GTR, TRP, CODE and Sygna Bridge.
-- slug: null
+- slug: notabene
   name: Notabene
   text: you would rather use a hosted Travel Rule network than run software yourself. Notabene says it cannot connect to TRUST directly and routes TRUST transfers only for customers who are TRUST members.
 - slug: verifyvasp
