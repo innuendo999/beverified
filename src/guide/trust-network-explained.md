@@ -2,7 +2,7 @@
 title: 'The TRUST Network Explained: Who Runs It, Who Can Join and How VASPs Connect Through an Interoperability Partner'
 seoTitle: 'The TRUST Travel Rule Network Explained | BeVerified'
 seoDescription: 'What the TRUST Travel Rule network is, who runs it, who can join, what it costs and how VASPs connect directly, through an interoperability partner or TRUSThub.'
-lede: 'TRUST is a members-only Travel Rule network that a coalition of crypto exchanges set up in 2022, with Coinbase as its operator. Members pass an independent due diligence review, then send encrypted originator and beneficiary data straight to each other.'
+lede: 'TRUST is a members-only Travel Rule network that a coalition of crypto exchanges set up in 2022, with Coinbase playing a leading role in operating it. Members pass an independent due diligence review, then send encrypted originator and beneficiary data straight to each other.'
 section: guide
 cover_label: 'Inside the TRUST network'
 cover_motif: network
@@ -11,11 +11,11 @@ published: 2026-11-03
 updated: 2026-11-04
 author: andrii-klymenko
 takeaways:
-  - 'TRUST is a not-for-profit Travel Rule network built by VASPs; Coinbase operates it, and 21 Analytics says member VASPs review and vote on key decisions.'
+  - 'TRUST is a not-for-profit Travel Rule network built by VASPs; Coinbase plays a leading role in operating it, and member VASPs review and vote on key decisions.'
   - 'Membership is international: TRUST launched in the United States in 2022 and now has members in Canada, Singapore, the UK, the EU and other markets.'
   - 'Applicants go through an independent review of their AML controls, data protection and cybersecurity before they can join, and membership does not replace a VASP''s own counterparty due diligence.'
   - 'A member can build its own TRUST integration or use 21 Travel Rule, the software from 21 Analytics, which TRUST names as its interoperability partner; Coinbase says VASPs outside the network can reach members through TRUSThub.'
-  - 'Members share the running costs, and smaller VASPs can join through a free membership option.'
+  - 'Members split the operating costs evenly, smaller VASPs can join through a free membership option, and affiliates of a member pay no additional membership fees.'
 topics: [Travel Rule, TRUST, Travel Rule Interoperability, Counterparty Due Diligence]
 about_terms: [travel-rule, travel-rule-interoperability, virtual-asset-service-provider]
 provider_slugs: [21analytics]
@@ -26,13 +26,13 @@ mention_orgs:
     url: "https://www.fatf-gafi.org/"
 faq:
   - q: 'Who runs the TRUST Travel Rule network?'
-    a: 'TRUST was set up by a coalition of crypto exchanges led by Coinbase and runs as a not-for-profit industry network. Coinbase operates it, members sign one shared legal agreement, and 21 Analytics says key decisions are reviewed and voted on by member VASPs.'
+    a: 'TRUST was set up by a coalition of crypto exchanges led by Coinbase and runs as a not-for-profit industry network. Coinbase says it plays a leading role in operating the network, while key decisions are reviewed and voted on by member VASPs. Members sign one shared legal agreement.'
   - q: 'Can non-US VASPs join TRUST?'
     a: 'Yes. TRUST started in the United States in February 2022, went live in Canada and Singapore the same year, and now has members in the UK, the EU and other markets. Every applicant, wherever it is based, has to pass TRUST''s due diligence review first.'
   - q: 'Can a VASP that is not a TRUST member exchange data with TRUST members?'
     a: 'Yes, through TRUSThub. Coinbase says TRUSThub lets TRUST members send Travel Rule data to, and receive it from, VASPs that are not members, whatever system those VASPs use. Direct exchange inside the network itself is reserved for members.'
   - q: 'How much does TRUST membership cost?'
-    a: 'TRUST does not publish a price list. 21 Analytics says operating costs are shared equally among members and that smaller VASPs can join through a free membership option. Notabene, which runs a competing Travel Rule network, says applicants also pay an upfront due diligence fee that depends on the company; TRUST has not confirmed this publicly.'
+    a: 'TRUST does not publish a price list. Coinbase says TRUST splits its operating costs evenly among members, expects membership fees to fall as more VASPs join, offers a free membership option for smaller VASPs and lets affiliates of a member join without additional membership fees. Notabene, which runs a competing Travel Rule network, says applicants also pay an upfront due diligence fee that depends on the company; Coinbase''s page does not address due diligence fees, so ask TRUST before you apply.'
   - q: 'Does TRUST work with self-hosted wallets?'
     a: 'No. TRUST exchanges data between VASPs, so it does not carry messages to or from self-hosted wallets. Transfers to a customer''s own wallet need a separate ownership check, such as a signed message or a Satoshi test.'
 sources:
@@ -94,7 +94,7 @@ TRUST handles both. A lookup identifies which member controls the destination ad
 
 TRUST came out of the crypto industry itself. A coalition of VASPs set it up to support Travel Rule compliance without exposing customer information more than necessary.
 
-Coinbase led the coalition and operates the network. [Notabene](https://notabene.id/travel-rule-messaging-protocols/ustrwg), which runs a competing Travel Rule network, notes that TRUST runs on Coinbase infrastructure. TRUST is not, however, a product that Coinbase controls alone. At launch, members described having an equal stake and voice in decisions, and 21 Analytics says key decisions are reviewed and voted on by member VASPs. Members sign one central legal agreement that governs their participation, so they do not need a separate bilateral contract with every counterparty.
+Coinbase led the coalition, and its [TRUST page](https://www.coinbase.com/travelrule) says it plays a leading role in operating the network. [Notabene](https://notabene.id/travel-rule-messaging-protocols/ustrwg), which runs a competing Travel Rule network, notes that TRUST runs on Coinbase infrastructure. TRUST is not, however, a product that Coinbase controls alone: according to the same page, key decisions are reviewed and voted on by member VASPs. At launch, members also described having an equal stake and voice in decisions. Members sign one central legal agreement that governs their participation, so they do not need a separate bilateral contract with every counterparty.
 
 TRUST is a permissioned, not-for-profit network with its own membership, governance and operational requirements.
 
@@ -152,9 +152,9 @@ If you are comparing vendors for the rest of your counterparty list, our ranking
 
 ## What does TRUST cost?
 
-TRUST is a not-for-profit initiative run by a coalition of VASPs. It does not publish a price list.
+Coinbase describes TRUST as a not-for-profit tool created and maintained by a coalition of VASPs. It does not publish a price list.
 
-According to [21 Analytics](https://21analytics.co/coinbase-trust), operating costs are shared equally among members, smaller VASPs can join through a free membership option, and affiliates of a VASP that is already a member can join without paying additional fees. Notabene says applicants also pay an upfront due diligence fee that varies with the complexity of the company. TRUST has not confirmed this publicly, so ask TRUST directly about every fee before you apply.
+According to [Coinbase](https://www.coinbase.com/travelrule), TRUST splits its operating costs evenly among members, so membership fees are expected to fall as more VASPs join. Smaller VASPs can join through a free membership option, and once a VASP is a member, its affiliates can join without paying additional membership fees. Notabene says applicants also pay an upfront due diligence fee that varies with the complexity of the company. Coinbase's page talks only about membership fees and does not address due diligence fees, so ask TRUST directly about every fee before you apply.
 
 ## Does TRUST store customer data centrally?
 
@@ -164,7 +164,7 @@ The network also checks that the receiving VASP controls the destination address
 
 ## Which blockchains and digital assets does TRUST support?
 
-21 Analytics says TRUST works with all blockchains and digital assets.
+Coinbase says TRUST supports all blockchains, either on its own or together with TRUSThub, whatever assets customers want to send or receive.
 
 That matches how the Travel Rule works: the obligation depends on the regulatory framework and the transfer, not on whether an asset appears on a short list of supported tokens.
 
