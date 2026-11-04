@@ -34,7 +34,7 @@ jobs:
       - run: npm run build
       - run: npm run check:strict
       - run: pip install --quiet beautifulsoup4 && npm run check:html
-      - run: node scripts/checks/articles.mjs && node scripts/checks/provider.mjs && node scripts/checks/glossary.mjs
+      - run: node scripts/checks/articles.mjs && node scripts/checks/provider.mjs && node scripts/checks/glossary.mjs && node scripts/checks/quick-answers.mjs
       - run: npm run gaps
       - name: List URLs for IndexNow
         run: |

@@ -13,10 +13,14 @@ order:
    `nav` with an accessible name, and add `BreadcrumbList` schema.
 2. **H1.** `Top <N> <Category> Companies in <Year>`. The N must equal the number
    of providers actually on the page.
-3. **Quick answer.** Two or three sentences: the overall pick with the reason,
-   one or two runner-up picks with the dimension each wins on, and a closing
-   line naming what was compared and on which criteria. Bold the provider names
-   only, not whole clauses.
+3. **Quick answer.** At most 60 words and 4 sentences, so AI Overviews and
+   answer engines can lift it whole: the overall pick with the one reason it
+   wins (sentence 1 must stand alone), one or two runner-up picks with the
+   dimension each wins on, and a closing "We compared N providers on A, B and
+   C." No scores and no walk-through of the whole list; the table carries
+   those. A price or count only when it is the reason for the pick. Bold the
+   provider names only, not whole clauses. Checked by
+   `scripts/checks/quick-answers.mjs`.
 4. **Byline and freshness.** Reviewer name with credential, then
    `Last verified <date>`. A real person; a category page with no named reviewer
    has no author to hold responsible.

@@ -74,6 +74,13 @@ Any prose written or edited in `src/providers`, `src/categories`, `src/blog`, `s
 1. run the `humanizer` skill (natural voice, embedded mode) on the changed prose only;
 2. then run the `beverified-landing` pre-publish check.
 
+Category quick answer (`quick_answer` in `src/_data/categories/<slug>.yml`), written to be lifted whole by AI Overviews (owner, 2026-11-04), checked by `node scripts/checks/quick-answers.mjs` in `npm run check` and CI:
+- 60 words at most, 4 sentences at most.
+- Sentence 1 names the #1 provider and the one reason it wins, and reads on its own.
+- Then one or two runner-ups, each with the dimension it wins on. Do not walk through the whole list: the table does that.
+- Last sentence: "We compared N providers on A, B and C." N equals the ranking length.
+- No scores (the table shows them). A price or count only when it is the reason for the pick, and it must match the provider record.
+
 Humanizer never adds facts. If style and provenance conflict, provenance wins. Do not touch front matter, data, links, quotes or provider names while humanizing.
 
 ## Git
