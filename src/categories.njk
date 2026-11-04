@@ -37,10 +37,10 @@ layout: v3.njk
       {%- for e in entries %}
         <tr>
           <td class="num">{{ e.rank }}</td>
-          <th class="fw-500 ta-left" scope="row"><span class="rank-table__prov">{% if e.q and e.q.logo.wordmark %}<img class="wordmark wordmark--sm h-18 maxw-80" src="{{ e.q.logo.wordmark }}" alt="">{% endif %}{{ e.r.name }}{% if e.rank == 1 %} <span class="pill pill--dark fs-12 p-1-8">◆ {{ e.r.award or "Top pick" }}</span>{% endif %}</span></th>
+          <th class="fw-500 ta-left" scope="row"><span class="rank-table__prov">{% if e.q and e.q.logo.wordmark %}<img class="wordmark wordmark--sm h-18 maxw-80" src="{{ e.q.logo.wordmark }}" alt="">{% endif %}{{ e.r.name }}</span></th>
           <td class="num">{% if e.q and e.q.score != null %}<strong>{{ e.q.score | score1 }}</strong> <span class="c-muted">/ 5</span>{% else %}<span class="c-muted fs-14">Not reviewed</span>{% endif %}</td>
           <td class="hide-sm">{{ e.price or "Not listed" }}{% if e.priceVerified %}<br><span class="c-muted fs-12">Verified {{ e.priceVerified }}</span>{% endif %}</td>
-          <td class="hide-sm c-body">{% if e.rank > 1 %}{{ e.r.award }}{% endif %}</td>
+          <td class="hide-sm c-body">{% if e.rank == 1 %}<span class="pill pill--dark fs-12 p-1-8">◆ {{ e.r.award or "Top pick" }}</span>{% else %}{{ e.r.award }}{% endif %}</td>
           <td>{% if e.q %}<a href="/providers/{{ e.q.slug }}/">Read review →</a>{% else %}<span class="c-muted fs-14">Review coming</span>{% endif %}</td>
         </tr>
       {%- endfor %}
