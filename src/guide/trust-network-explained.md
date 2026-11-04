@@ -14,7 +14,7 @@ takeaways:
   - 'TRUST is a not-for-profit Travel Rule network built by VASPs; Coinbase operates it, and 21 Analytics says member VASPs review and vote on key decisions.'
   - 'Membership is international: TRUST launched in the United States in 2022 and now has members in Canada, Singapore, the UK, the EU and other markets.'
   - 'Applicants go through an independent review of their AML controls, data protection and cybersecurity before they can join, and membership does not replace a VASP''s own counterparty due diligence.'
-  - 'A member can build its own TRUST integration or use 21 Travel Rule, the software from 21 Analytics, which TRUST announced as a partner in May 2026; Coinbase says VASPs outside the network can reach members through TRUSThub.'
+  - 'A member can build its own TRUST integration or use 21 Travel Rule, the software from 21 Analytics, which TRUST names as its interoperability partner; Coinbase says VASPs outside the network can reach members through TRUSThub.'
   - 'Members share the running costs, and smaller VASPs can join through a free membership option.'
 topics: [Travel Rule, TRUST, Travel Rule Interoperability, Counterparty Due Diligence]
 about_terms: [travel-rule, travel-rule-interoperability, virtual-asset-service-provider]
@@ -32,7 +32,7 @@ faq:
   - q: 'Can a VASP that is not a TRUST member exchange data with TRUST members?'
     a: 'Coinbase says yes, through TRUSThub, which it describes as open to any VASP, member or not, whatever system it uses. Its May 2026 announcement presents TRUSThub as a tool for members, so ask TRUST how a non-member gets access. Direct exchange inside the network is reserved for members.'
   - q: 'How much does TRUST membership cost?'
-    a: 'TRUST does not publish a price list, and Coinbase''s TRUST page does not mention fees. 21 Analytics says operating costs are shared equally among members and that smaller VASPs can join through a free membership option. Notabene, which runs a competing Travel Rule network, says applicants also pay an upfront due diligence fee that depends on the company; TRUST has not confirmed this publicly.'
+    a: 'TRUST does not publish a price list. 21 Analytics says operating costs are shared equally among members and that smaller VASPs can join through a free membership option. Notabene, which runs a competing Travel Rule network, says applicants also pay an upfront due diligence fee that depends on the company; TRUST has not confirmed this publicly.'
   - q: 'Does TRUST work with self-hosted wallets?'
     a: 'No. TRUST exchanges data between VASPs, so it does not carry messages to or from self-hosted wallets. Transfers to a customer''s own wallet need a separate ownership check, such as a signed message or a Satoshi test.'
 sources:
@@ -127,7 +127,7 @@ Access is not automatic. Applicants go through an onboarding process that checks
 - data protection practices;
 - cybersecurity measures.
 
-Successful applicants then integrate TRUST into their payment infrastructure so they can exchange encrypted Travel Rule information with other members. VASPs that would rather not build and maintain their own TRUST integration can reach the network through [21 Travel Rule](https://www.21analytics.co/trust/), the Travel Rule software from [21 Analytics](/providers/21analytics/). TRUST announced the partnership with 21 Analytics in May 2026, saying it makes it faster and easier for VASPs using 21 Analytics to join TRUST. A firm using it still has to pass TRUST's due diligence first.
+Successful applicants then integrate TRUST into their payment infrastructure so they can exchange encrypted Travel Rule information with other members. VASPs that would rather not build and maintain their own TRUST integration can reach the network through [21 Travel Rule](https://www.21analytics.co/trust/), the Travel Rule software from [21 Analytics](/providers/21analytics/). Coinbase's TRUST page names 21 Analytics as the network's interoperability partner, and TRUST's May 2026 announcement says the partnership makes it faster and easier for VASPs using 21 Analytics to join TRUST. A firm using it still has to pass TRUST's due diligence first.
 
 ### Does TRUST membership replace counterparty due diligence?
 
@@ -153,7 +153,7 @@ If you are comparing vendors for the rest of your counterparty list, our ranking
 
 ## What does TRUST cost?
 
-TRUST is a not-for-profit initiative run by a coalition of VASPs. It does not publish a price list, and Coinbase's TRUST page does not mention fees.
+TRUST is a not-for-profit initiative run by a coalition of VASPs. It does not publish a price list.
 
 According to [21 Analytics](https://21analytics.co/coinbase-trust), operating costs are shared equally among members, smaller VASPs can join through a free membership option, and affiliates of a VASP that is already a member can join without paying additional fees. Notabene says applicants also pay an upfront due diligence fee that varies with the complexity of the company. TRUST has not confirmed this publicly, so ask TRUST directly about every fee before you apply.
 
