@@ -30,7 +30,7 @@ faq:
   - q: 'Can non-US VASPs join TRUST?'
     a: 'Yes. TRUST started in the United States in February 2022, went live in Canada and Singapore the same year, and now has members in the UK, the EU and other markets. Every applicant, wherever it is based, has to pass TRUST''s due diligence review first.'
   - q: 'Can a VASP that is not a TRUST member exchange data with TRUST members?'
-    a: 'Coinbase says yes, through TRUSThub, which it describes as open to any VASP, member or not, whatever system it uses. Its May 2026 announcement presents TRUSThub as a tool for members, so ask TRUST how a non-member gets access. Direct exchange inside the network is reserved for members.'
+    a: 'Yes, through TRUSThub. Coinbase says TRUSThub lets TRUST members send Travel Rule data to, and receive it from, VASPs that are not members, whatever system those VASPs use. Direct exchange inside the network itself is reserved for members.'
   - q: 'How much does TRUST membership cost?'
     a: 'TRUST does not publish a price list. 21 Analytics says operating costs are shared equally among members and that smaller VASPs can join through a free membership option. Notabene, which runs a competing Travel Rule network, says applicants also pay an upfront due diligence fee that depends on the company; TRUST has not confirmed this publicly.'
   - q: 'Does TRUST work with self-hosted wallets?'
@@ -144,7 +144,7 @@ The Travel Rule ecosystem is not built on one universal technology. Providers an
 
 A VASP using 21 Travel Rule, for example, reaches TRUST through the software's built-in integration, so it does not need to build a separate TRUST connection. The aim is to make counterparty communication part of the existing Travel Rule process rather than another system that staff have to manage on its own.
 
-That is not the only way to reach TRUST members. Coinbase also runs [TRUSThub](https://www.coinbase.com/travelrule), which its TRUST page says lets any VASP, whether or not it is a member, share Travel Rule information with other VASPs regardless of the system they use. The May 2026 announcement describes it mainly as a tool for members to reach counterparties outside the network.
+That is not the only way to reach TRUST members. Coinbase also runs [TRUSThub](https://www.coinbase.com/travelrule), which its TRUST page says lets any VASP, whether or not it is a member, share Travel Rule information with other VASPs regardless of the system they use. In its myths-and-facts section, Coinbase adds that TRUSThub lets members send Travel Rule data to, and receive it from, VASPs outside TRUST, and that members can use TRUST through the 21 Analytics partnership to connect to other protocols.
 
 {% include "figures/trust-routes.njk" %}
 
