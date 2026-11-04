@@ -1513,15 +1513,15 @@ travel-rule:
   - slug: notabene
     name: Notabene
     award: Best for Hosted Travel Rule Exchange
-    tagline: Hosted Travel Rule network from New York with a free receive-and-respond plan, TRP endpoints for every customer and a published SLA.
+    tagline: Hosted Travel Rule network from New York with a free receive-and-respond plan and a published SLA.
     coverage: Global (vendor-stated 2,300+ institutions); data in US or EU region
     size: Startups to enterprise
     pros:
     - Free plan answers unlimited incoming transfers and sends up to $10,000 a month with no integration
-    - Large hosted network, a TRP 1.0 endpoint for every customer, and integrations documented by Fireblocks and Ripple Custody
+    - Large hosted network and integrations documented by Fireblocks and Ripple Custody
     - Published SLA with 99.5% monthly uptime and a 30-minute P1 response
     cons:
-    - No direct TRUST connection, VerifyVASP support pending, and no live TRISA route documented
+    - No direct TRUST connection, TRP only in version 1.0 (not the current 3.x), VerifyVASP support pending, and no live TRISA route documented
     - Paid platform has no published price, and fees may change at each automatic renewal
     - ISO/IEC 27001 and SOC 2 evidence only through the Trust Center; no customer KYC of its own
     legacy_price_shown: Free plan; paid plans on request
