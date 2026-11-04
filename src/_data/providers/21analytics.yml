@@ -22,7 +22,7 @@ link:
   url: https://www.21analytics.co
   type: none
 last_verified: '2026-10-22'
-updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
+updated: '2026-11-04'   # last content edit; last_verified = last fact re-check
 verdict: '21 Analytics suits regulated VASPs, brokers and banks that want to run Travel Rule software in their own infrastructure. Its main strength is TRUST: the network Coinbase helps run lists 21 Analytics as its only interoperability partner. TRP and four ways to verify self-hosted wallets are built in too. The ISO/IEC 27001:2022 certificate is public, but there is no SOC 2 report and no published prices, and you run and patch the software yourself.'
 what_is:
 - 21 Analytics sells 21 Travel Rule, software that VASPs install in their own data centre or cloud account to exchange originator and beneficiary data with other VASPs under FATF Recommendation 16 and the EU Transfer of Funds Regulation. It ships as containers with a PostgreSQL database and talks to counterparties over TRP and TRUST. VASPs without a Travel Rule solution get encrypted email. A Compliance Dashboard and a GraphQL API handle review and integration, and an AOPP portal collects proofs that a customer controls a self-hosted wallet. 21 Analytics says it cannot access customer data, logs or configuration in a deployment. Support works by screen sharing or log upload. Its other products are 21 Virtual Counter and 21 Sunrise, for requesting data from VASPs that have no Travel Rule tool.
@@ -224,7 +224,7 @@ score_breakdown:
 - criterion: Support responsiveness
   weight: 10
   score: 3.8
-  note: Support terms are published (24/5 with replies within 3 business days on Essentials, 24 hours on Enterprise), but support needs screen sharing or log uploads, and the only public user reviews are two on SourceForge, both posted in October 2026.
+  note: Support terms are published, but response times are slow at the entry tier. Essentials has 24/5 support with a standard response within 3 business days, and additional charges may apply. Enterprise adds priority support within 24 hours at no extra charge. Neither tier publishes 24/7 cover or a faster response for critical incidents. Support works by screen sharing or log upload because 21 Analytics has no access to a customer's deployment; we treat that as part of the self-hosted design, not as a support weakness.
   evidence: vendor
 - criterion: Track record
   weight: 10
@@ -436,6 +436,7 @@ verification_notes:
 - 'Still open, Starter plan: the Azure Marketplace listing itself was not found; the Starter figure rests on G2 and Capterra listings only.'
 - 'Still open, user reviews: SourceForge now shows 2 reviews, 5.0 (13 Oct and 21 Oct 2026), both from companies of 1 to 25 people, one reviewer listed as "Partner", one as Co-Founder and CPO. Both were posted after 21 Analytics named SourceForge as its review platform; treat as a thin sample. G2 and Capterra UK still show no reviews; no Gartner Peer Insights page found.'
 - 'Vendor claims checked and not used: "strongest network" (not on the TRUST page now, not measurable); homepage "6 of the top 6 firms in Kaiko''s Q3 2026 Exchange Ranking" vs TRUST page FAQ "8 of the top 10" (inconsistent, Kaiko not opened); "the only Travel Rule solution that guarantees GDPR-compliance"; "prices can''t be matched"; "#1 Choice for Banks"; products page "support every Travel Rule protocol in the market" (docs show TRUST, TRP, TRISA via the bridge and email only). Crypto Briefing (28 May 2026) gives over 195 TRUST VASPs; not stated in the record. Homepage logo wall (Vontobel, Luzerner Kantonalbank, NiceHash and others) unlabelled; not used as customers.'
+- 'Support note rewritten 4 Nov 2026 after 21 Analytics asked why it scores 3.8 for support and Notabene 4.1: score unchanged. The difference rests on published response terms (Notabene: 24/7 P1 cover with a 30-minute response and 24-hour standard support on weekdays; 21 Analytics: 3 business days on Essentials, 24 hours on Enterprise, no 24/7 critical-incident cover). Removed from the note: the SourceForge review count (user ratings are shown separately and are not part of the score, per the methodology evidence section) and screen sharing or log upload as a negative (a consequence of the self-hosted design, which 21 Analytics cannot change without remote access).'
 - 'Feedback from 21 Analytics by email, 20 Oct 2026 (moved here from directory_categories, where it had been filed by mistake and would have shown as a directory label): ISO certificate in the Compliance Centre; SourceForge is their review platform; Sygna now part of VerifyVASP; sandbox on request (now in the 8.4.0 docs); Trezor and other wallets supported through direct integrations; a price list was shared privately and is not used in the record. Planned network bridges not recorded because 21 Analytics said they are not public yet.'
 - 'No enforcement action, breach disclosure, litigation or acquisition involving 21 Analytics found in searches to 22 Oct 2026.'
 application_category: Travel Rule Compliance Software
