@@ -1,0 +1,390 @@
+slug: ospree
+name: Ospree
+alternate_names: []
+status: published
+seo:
+  title: 'Ospree Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Ospree review: hosted Travel Rule and wallet screening platform from Singapore with TRP, TRISA and CryptoSwift routes, signed wallet attestations and quoted plans. Pros, cons, alternatives.'
+  h1: 'Ospree Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: null
+  background: null
+  wordmark: null
+tagline: Hosted Travel Rule platform from Singapore with TRP, TRISA and CryptoSwift routes, built-in wallet screening and a rule engine
+score: 3.5
+grade: Good
+primary_category: travel-rule
+categories:
+- travel-rule
+link:
+  url: https://www.ospree.io
+  type: none
+last_verified: '2026-11-04'
+updated: '2026-11-04'   # last content edit; last_verified = last fact re-check
+verdict: 'Ospree suits crypto exchanges, payment firms and OTC desks that want Travel Rule messaging and wallet screening from one hosted API. It reaches counterparties over its own network, the open TRP and TRISA protocols, the CryptoSwift network and email, and it pulls risk data from TRM Labs, Crystal and Global Ledger. Self-hosted wallets are verified by a signed attestation only. Ospree publishes no prices, names no SOC 2 or ISO/IEC 27001 certificate, and we found no direct link to TRUST, GTR, Sygna or CODE.'
+what_is:
+- Ospree is a hosted compliance platform for digital asset firms. Its Travel Rule module, which the website calls Travel Rule Atlas, collects originator and beneficiary data, sends it to the counterparty VASP and records the result. The same API screens wallet addresses and transactions with data from blockchain analytics partners, and a rule engine can flag, block or escalate a transfer based on that risk and on jurisdiction thresholds. An Accounts Directory stores customer and counterparty records, and a Reporting Hub exports Travel Rule and analytics reports as CSV or JSON. Firms can integrate through the full REST API or through embeddable ready-made screens. Ospree says its VASP directory lists 1,600+ VASPs and that 120+ projects are connected; we could not check either figure.
+- 'The developer docs list five live routes: Ospree''s own network, email, TRP, TRISA and CryptoSwift. Sumsub, Fireblocks, TRUSThub and GTR are listed as future options with no dates. The docs also warn that support for a protocol does not mean a counterparty is enabled, since each route can need its own registration, certificates or agreements. TRISA''s own site announced full interoperability with Ospree in June 2024, and OpenVASP''s TRP page names Ospree. A counterparty that is on none of these networks can be invited by email and joins after Ospree reviews its sign-up.'
+- The company is Ospree Pte. Ltd., a Singapore company, with an address at Peninsula Plaza in Singapore in its privacy policy. Javier Tamashiro is co-founder and CEO and Jukka Pellinen is co-founder and CTO. Ospree went through the Techstars Web3 accelerator in 2023 and lists the IBM Hyper Protect Accelerator and the XRP Ledger Program on its about page. It does not disclose its founding year or funding; its G2 listing gives 2022, and CB Insights shows a single seed round of $120,000. Named users include CoinMENA, which is licensed in Bahrain and the UAE, while Bit2Me STX and RAID Square appear in homepage testimonials. Monetari, part of the TeraBank Group, is its exclusive channel partner in Türkiye.
+features:
+- One REST API for Travel Rule transfers, with endpoints to create, list, update and act on a transfer, and webhooks for status changes, with documented delivery, retries and security.
+- Live routes to Ospree's own network, email, TRP, TRISA and the CryptoSwift network, all through the same API. Ospree says it handles each protocol, so you do not integrate with them one by one.
+- Wallet and transaction screening with risk data from TRM Labs, Crystal and Global Ledger, plus a bring-your-own-key option for analytics providers you already pay for.
+- Rule engine that turns your policy into automated decisions, such as flagging, blocking or escalating a transfer, with alert notifications.
+- Self-hosted wallet ownership checks by a signed attestation that the customer completes through a link Ospree generates. Ospree says the signature uses CAIP-122 message signing off-chain, so no funds move and no gas is paid.
+- VASP directory with a request flow that invites a missing counterparty by email, plus a sandbox environment and a jurisdictions page with Travel Rule rules for 12 markets.
+pricing:
+  summary: Ospree publishes no prices. Its plans page lists Foundation, Scale and Enterprise tiers, each with a "Contact sales" button and the same feature list (Travel Rule, blockchain analytics, rule engine, reports and marketplace connectors), so it does not show how the tiers differ. Volume limits, minimums, setup fees and trial terms are not published, and G2 shows no pricing either.
+  plans:
+  - tier: Foundation
+    price: Not published
+    note: For teams launching Travel Rule operations, per Ospree
+    extra: Contact sales
+  - tier: Scale
+    price: Not published
+    note: For growing firms that need more capacity and automation, per Ospree
+    extra: Contact sales
+  - tier: Enterprise
+    price: Not published
+    note: For regulated institutions operating at global scale, per Ospree
+    extra: Contact sales
+  legacy_verified_note: null
+  verified: '2026-11'
+  items:
+  - label: Published prices
+    value: None; the plans page lists three tiers with "Contact sales" only
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: Plan differences
+    value: All three tiers show the same feature list; limits are not stated
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: Minimums, setup fee and trial
+    value: Not stated on the plans page
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: G2 listing
+    value: No pricing details available
+    kind: third_party
+    source: 28
+    verified: '2026-11'
+facts:
+- label: From
+  value: Not publicly disclosed
+- label: Plans
+  value: Foundation, Scale, Enterprise (all quoted)
+  source: 2
+  evidence: vendor
+- label: Legal entity
+  value: Ospree Pte. Ltd., Singapore (registration number not published)
+  source: 4
+  evidence: vendor
+- label: Headquarters
+  value: 111 North Bridge Road, #08-18 Peninsula Plaza, Singapore 179098
+  source: 5
+  evidence: vendor
+- label: Founded
+  value: Not stated by Ospree; its G2 seller listing gives 2022
+  source: 29
+  evidence: vendor
+- label: Leadership
+  value: Javier Tamashiro (co-founder and CEO), Jukka Pellinen (co-founder and CTO)
+  source: 3
+  evidence: vendor
+- label: Funding
+  value: Not disclosed by Ospree; CB Insights lists one $120,000 seed round, from Techstars
+  source: 27
+  evidence: independent
+- label: Deployment
+  value: Hosted SaaS (web-based service under its terms); hosting provider and data location not named
+  source: 4
+  evidence: vendor
+- label: Networks and protocols
+  value: Own network, email, TRP, TRISA and CryptoSwift live; Sumsub, Fireblocks, TRUSThub and GTR listed as future; no TRUST, Sygna or CODE link found
+  source: 10
+  evidence: vendor
+- label: TRISA and TRP
+  value: TRISA announced full interoperability with Ospree (June 2024); OpenVASP's TRP page names Ospree
+  source: 18
+  evidence: independent
+- label: Self-hosted wallet checks
+  value: Signed ownership attestation through a shareable link (CAIP-122 message signing); no Satoshi test, AOPP or visual proof found
+  source: 13
+  evidence: vendor
+- label: VASP directory
+  value: 1,600+ VASPs (vendor-stated)
+  source: 1
+  evidence: vendor
+- label: Certifications
+  value: UK Cyber Essentials (vendor-stated, May 2026; certificate record not opened); no ISO/IEC 27001 or SOC 2 claim found
+  source: 20
+  evidence: vendor
+pros:
+- One hosted API covers Travel Rule messaging, wallet and transaction screening and a rule engine, with TRM Labs, Crystal and Global Ledger data built in
+- Live routes to TRP, TRISA, the CryptoSwift network and email, and TRISA itself announced full interoperability with Ospree
+- Public developer docs with OpenAPI references, documented webhook retries and security, and a sandbox environment
+cons:
+- No prices at all, and the three plans show the same feature list, so you cannot compare tiers without a sales call
+- No ISO/IEC 27001 or SOC 2 claim, only a vendor-stated UK Cyber Essentials certificate; the company registration number and hosting location are not published
+- Self-hosted wallets are verified by signature only, there is no TRUST, GTR, Sygna or CODE route yet, and there are no user reviews on G2
+alternatives:
+- slug: cryptoswift
+  name: CryptoSwift
+  best_for: Published Travel Rule Plans
+- slug: 21analytics
+  name: 21 Analytics
+  best_for: Self-Hosted Deployments
+- slug: verifyvasp
+  name: VerifyVASP
+  best_for: APAC Counterparty Coverage
+choose_instead:
+- slug: cryptoswift
+  need: Prices on the website
+  text: you want to see plan prices before a sales call and need more than one way to verify self-hosted wallets. CryptoSwift publishes two of its three plans and offers signature, micro-transfer, photo and self-declaration checks.
+- slug: 21analytics
+  need: TRUST access or self-hosting
+  text: most of your counterparties are TRUST members, or the software must run in your own infrastructure. TRUST lists 21 Analytics as its only interoperability partner, and 21 Analytics holds a public ISO/IEC 27001 certificate.
+- slug: verifyvasp
+  need: Asia-Pacific counterparties
+  text: most of your counterparties are exchanges in Asia-Pacific. VerifyVASP owns Sygna Bridge, and CODE documents a connection to it.
+user_reviews:
+  legacy_note: null
+  praise: []
+  criticize: []
+  by_profile:
+  - Exchanges, payment firms and OTC desks that want Travel Rule messaging and wallet screening from one hosted vendor are Ospree's clearest fit.
+  - Firms whose counterparties use TRP, TRISA or the CryptoSwift network can reach them through Ospree's single API; firms that rely on TRUST, GTR or Sygna members should ask for dates for those routes in writing.
+  - Buyers that need an ISO/IEC 27001 or SOC 2 report for vendor due diligence should ask Ospree for its security evidence before a trial, since neither is published.
+faq:
+- q: How much does Ospree cost?
+  a: Ospree does not publish prices. Its plans page lists Foundation, Scale and Enterprise, each with a "Contact sales" button and the same list of features, and it states no volume limits, minimums, setup fees or trial terms. G2 shows no pricing either. Ask for a written quote that sets out what each tier includes and how transfers and wallet screenings are counted.
+- q: Which Travel Rule protocols and networks does Ospree support?
+  a: Ospree's developer docs list five live routes, its own network, email, TRP, TRISA and the CryptoSwift network, all reached through one API. TRISA's own site announced full interoperability with Ospree in June 2024, and OpenVASP's TRP page names Ospree. Sumsub, Fireblocks, TRUSThub and GTR are listed as future options with no dates. We found no route to Sygna, VerifyVASP or CODE, so check your main counterparties before you commit.
+- q: Can Ospree send Travel Rule data to TRUST members?
+  a: Not directly today. Ospree's docs list TRUSThub, the TRUST tool for VASPs outside the network, only as a future option, and we found no other TRUST route. If many of your transfers go to TRUST members such as Coinbase, ask Ospree for a date and a test transfer before you sign.
+- q: How does Ospree verify self-hosted wallets?
+  a: Ospree generates a link that the VASP sends to its customer, and the customer signs an ownership attestation with the wallet. Ospree says this uses CAIP-122 message signing off-chain, so no funds move and no gas is paid. Once signed, the address is labelled self-hosted and a webhook tells your system. We found no Satoshi test, AOPP or screenshot proof, so customers whose wallet cannot sign a message have no fallback in the docs.
+- q: Is Ospree SaaS or self-hosted?
+  a: Ospree is hosted. Its terms describe a web-based software-as-a-service product, and the docs offer a sandbox and a production environment. A March 2026 release with Monetari says the setup can run fully on local Turkish infrastructure, but Ospree publishes no on-premises product, hosting provider or data location.
+- q: Is Ospree ISO 27001 or SOC 2 certified?
+  a: We found no ISO/IEC 27001 or SOC 2 claim. Ospree announced UK Cyber Essentials certification in May 2026 and links to a certificate record, which we could not open, so it stays vendor-stated. Cyber Essentials is a basic UK scheme that covers controls such as secure configuration, access control, patching and malware protection; it is not an audit of a whole security programme. A 2022 Ospree post says data is encrypted at rest and in transit and backed up every 24 hours.
+- q: Does Ospree also do KYC or wallet screening?
+  a: It does wallet and transaction screening, with risk data from TRM Labs, Crystal and Global Ledger and a bring-your-own-key option for other providers. We found no customer identity verification of its own; Ospree's help centre asks which KYC solutions it supports but gives no answer, so pair it with a separate KYC provider.
+- q: What is the best alternative to Ospree?
+  a: CryptoSwift if you want published plan prices and more ways to verify self-hosted wallets. 21 Analytics if your counterparties are on TRUST or you need software you run yourself. VerifyVASP if most of your counterparties are exchanges in Asia-Pacific.
+segments: []
+capabilities:
+  deployment:
+    status: cloud
+    note: hosted web service under its terms; hosting provider and data location not named
+    source: 4
+  published_pricing:
+    status: 'no'
+    note: three plans, all Contact sales
+    source: 2
+  transaction_monitoring:
+    status: 'yes'
+    note: wallet and transaction screening with TRM Labs, Crystal and Global Ledger data
+    source: 8
+  identity_verification:
+    status: not_disclosed
+    note: no customer KYC product found
+  checked: '2026-11'
+certifications:
+- name: UK Cyber Essentials
+  what: Baseline UK cyber security scheme; announced by Ospree on 12 May 2026, level, body, number and expiry not stated in the post; the linked certificate record was not opened
+  status: vendor_stated
+  source: 20
+user_ratings: []
+use_case_verdicts: []
+score_breakdown:
+- criterion: Compliance & certifications
+  weight: 25
+  score: 3.4
+  note: Ospree names its legal entity, Ospree Pte. Ltd. of Singapore, in its terms and privacy policy, but publishes no registration number, and we found no register entry. Its only security certification is UK Cyber Essentials, announced in May 2026 and not opened, with no ISO/IEC 27001 or SOC 2 claim. Hosting provider and data location are not named.
+  evidence: vendor
+- criterion: Coverage
+  weight: 20
+  score: 3.9
+  note: Five live routes are documented (own network, email, TRP, TRISA, CryptoSwift), and TRISA's own site confirms the TRISA link. Wallet screening is built in with three analytics partners. But self-hosted wallets can only be verified by signature, TRUST, GTR and Sumsub are listed as future, and the 1,600+ VASP directory figure is vendor-stated.
+  evidence: independent
+- criterion: Pricing transparency
+  weight: 20
+  score: 3.2
+  note: No prices, minimums or limits are published, and all three plans show the same feature list. G2 shows no pricing and we found no third-party figure.
+  evidence: vendor
+- criterion: Integration & API depth
+  weight: 15
+  score: 4.0
+  note: Public docs cover OpenAPI references for transfers, accounts, analytics and the rule engine, webhook delivery, retry and security pages, a documented error model and a breaking-changes page, plus a machine-readable docs index. Sandbox keys come in an activation email rather than by self sign-up, and one overview example contradicts its own rule on self-hosted beneficiaries.
+  evidence: vendor
+- criterion: Support responsiveness
+  weight: 10
+  score: 3.3
+  note: No support hours or response times are published, the help centre lists questions with no answers, and G2 shows no user reviews.
+  evidence: vendor
+- criterion: Track record
+  weight: 10
+  score: 3.4
+  note: Ospree has been in the market since at least 2022, went through Techstars Web3 in 2023, and names CoinMENA as a user and Monetari as its channel partner in Türkiye. Funding appears small ($120,000 seed per CB Insights), the founding year is not stated by Ospree, and its own user figures differ between pages. We found no regulatory actions or breach disclosures.
+  evidence: independent
+hands_on: null
+sources:
+- title: Ospree homepage
+  publisher: Ospree
+  url: https://www.ospree.io/
+  accessed: '2026-11'
+- title: Plans
+  publisher: Ospree
+  url: https://www.ospree.io/plans
+  accessed: '2026-11'
+- title: About us
+  publisher: Ospree
+  url: https://www.ospree.io/about-us
+  accessed: '2026-11'
+- title: Terms and conditions
+  publisher: Ospree
+  url: https://www.ospree.io/legal/terms-and-conditions
+  accessed: '2026-11'
+- title: Privacy policy
+  publisher: Ospree
+  url: https://www.ospree.io/legal/privacy
+  accessed: '2026-11'
+- title: Partnerships
+  publisher: Ospree
+  url: https://www.ospree.io/partnerships
+  accessed: '2026-11'
+- title: Travel Rule requirements around the world
+  publisher: Ospree
+  url: https://www.ospree.io/jurisdictions
+  accessed: '2026-11'
+- title: Blockchain Analytics
+  publisher: Ospree
+  url: https://www.ospree.io/product/blockchain-analytics
+  accessed: '2026-11'
+- title: Integrations (Full API and Plug-and-Play)
+  publisher: Ospree
+  url: https://www.ospree.io/product/integrations
+  accessed: '2026-11'
+- title: Travel Rule protocols and interoperability
+  publisher: Ospree docs
+  url: https://docs.ospree.io/developers/travel-rule/protocols
+  accessed: '2026-11'
+- title: Travel Rule API overview
+  publisher: Ospree docs
+  url: https://docs.ospree.io/developers/travel-rule/overview
+  accessed: '2026-11'
+- title: CryptoSwift interoperability
+  publisher: Ospree docs
+  url: https://docs.ospree.io/developers/travel-rule/interoperability/cryptoswift
+  accessed: '2026-11'
+- title: API integration flows
+  publisher: Ospree docs
+  url: https://docs.ospree.io/developers/api-integration-flows
+  accessed: '2026-11'
+- title: Quickstart
+  publisher: Ospree docs
+  url: https://docs.ospree.io/quick-start/quickstart
+  accessed: '2026-11'
+- title: Request a VASP
+  publisher: Ospree docs
+  url: https://docs.ospree.io/dashboard/accounts-directory/vasps/request-a-vasp
+  accessed: '2026-11'
+- title: Documentation index (llms.txt)
+  publisher: Ospree docs
+  url: https://docs.ospree.io/llms.txt
+  accessed: '2026-11'
+- title: Ospree and TRISA announce full interoperability for Travel Rule solutions
+  publisher: Ospree
+  url: https://www.ospree.io/blog/ospree-and-trisa-announce-full-interoperability-for-travel-rule-solutions
+  accessed: '2026-11'
+- title: TRISA and Ospree announce full interoperability for Travel Rule solutions
+  publisher: TRISA (travelrule.io)
+  url: https://travelrule.io/trisa-and-ospree/
+  accessed: '2026-11'
+- title: Travel Rule Protocol (TRP)
+  publisher: OpenVASP Association
+  url: https://www.openvasp.org/trp
+  accessed: '2026-11'
+- title: Ospree achieves UK Cyber Essentials certification
+  publisher: Ospree
+  url: https://www.ospree.io/blog/ospree-achieves-uk-cyber-essentials-certification
+  accessed: '2026-11'
+- title: Ospree integrates TRM Labs to strengthen Travel Rule compliance
+  publisher: Ospree
+  url: https://www.ospree.io/blog/ospree-integrates-trm-labs-to-strengthen-travel-rule-compliance-with-embedded-blockchain-intelligence
+  accessed: '2026-11'
+- title: Ospree and Monetari launch interoperable Travel Rule infrastructure for Turkish CASPs
+  publisher: Ospree
+  url: https://www.ospree.io/blog/ospree-and-monetari-launch-interoperable-travel-rule-infrastructure-for-turkish-casps
+  accessed: '2026-11'
+- title: CoinMENA adopts Ospree to enhance Travel Rule compliance and regional expansion
+  publisher: Ospree
+  url: https://www.ospree.io/blog/coinmena-adopts-ospree-to-enhance-travel-rule-compliance-and-regional-expansion
+  accessed: '2026-11'
+- title: Enterprise-grade data protection
+  publisher: Ospree
+  url: https://www.ospree.io/blog/ospree-security-features
+  accessed: '2026-11'
+- title: Ospree and Coinfirm's cross-continent crypto compliance partnership
+  publisher: Coinfirm
+  url: https://www.coinfirm.com/blog/ospree-and-coinfirms-cross-continent-crypto-compliance-partnership-creates-a-safer-blockchain-economy/
+  accessed: '2026-11'
+- title: Techstars Web3 accelerator has kicked off in Dublin
+  publisher: Silicon Republic
+  url: https://siliconrepublic.com/start-ups/techstars-web3-startup-accelerator-dublin-london-new-york
+  accessed: '2026-11'
+- title: Ospree company profile
+  publisher: CB Insights
+  url: https://www.cbinsights.com/company/ospree
+  accessed: '2026-11'
+- title: Ospree reviews
+  publisher: G2
+  url: https://www.g2.com/products/ospree/reviews
+  accessed: '2026-11'
+- title: Ospree seller profile
+  publisher: G2
+  url: https://www.g2.com/sellers/ospree
+  accessed: '2026-11'
+- title: 'EU Travel Rule: TRUST, Notabene, Sumsub compared'
+  publisher: Protofire
+  url: https://protofire.io/guides/eu-travel-rule/
+  accessed: '2026-11'
+- title: Help center
+  publisher: Ospree
+  url: https://www.ospree.io/help-center
+  accessed: '2026-11'
+- title: Transfer type
+  publisher: Ospree docs
+  url: https://docs.ospree.io/developers/travel-rule/transfer-type
+  accessed: '2026-11'
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://www.ospree.io
+  - https://www.linkedin.com/company/ospree/
+  - https://x.com/Ospree_io
+  - https://www.g2.com/products/ospree/reviews
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- 'Record decisions: link.type none (suggested by 21 Analytics, a partner ranked in Travel Rule; no commercial relationship with Ospree recorded, and the suggestion has no influence on the score). Categories travel-rule only: Ospree screens wallets and transactions with partner data but has no customer KYC of its own, so crypto KYC is left as a suggestion for the editor. Grade "Good" for 3.5 is an editor decision (no existing record sits at 3.5 or 3.6; 3.4 is Fair, 3.7 Good). Logo: none used; no press kit found and the fetch tool returns no image files, so wordmark is null until the editor supplies one. Not confused with Ospree Duty Free (Singapore travel retail, unrelated).'
+- 'Networks: docs Protocols page (4 Nov 2026) lists Ospree, EMAIL, TRP, TRISA and Cryptoswift as supported, and Sumsub, Fireblocks, "TRUSTHubs" and GTR under future interoperability options with no dates. It says technical support does not mean a counterparty is enabled (registration, certificates, keys, legal agreements may be needed). The per-protocol pages (ospree.md, email.md, trp.md, trisa.md) and the docs llms.txt DRAFT page could not be opened: the fetch tool required a permission that was not granted in this unattended run. The CryptoSwift page was opened. TRISA side: travelrule.io page (modified 28 Jun 2024) announces full interoperability and says Ospree is backed by Ripple and Techstars; trisa.io homepage does not list Ospree. OpenVASP TRP page shows "ospree" with a link to ospree.io after the vendor list (21 Analytics, Blockchain Intelligence Group); its position on the page makes it unclear whether it is listed as a vendor; Protofire (updated Oct 2026) reads it as one of three TRP vendors. Ospree TRISA blog post dated 20 Jun 2024. Sample API requests show protocol "flow"; not explained.'
+- 'Self-hosted wallets: API integration flows describe a Verify Address Ownership link and a signed attestation, then a webhook. The Blockchain Analytics product page says CAIP-122 cryptographic message signing, off-chain, no gas. Learn page on self-hosted wallets and the Verify Address Control endpoint page could not be opened (permission). No Satoshi test, AOPP, screenshot or declaration method found. The API overview says both addresses in a transfer cannot be self-hosted, and that beneficiary_vasp_id must match the initiating VASP while its example shows SLFHST: an inconsistency in the docs.'
+- 'Company: terms name "Ospree Pte Ltd., a Singapore company", governed by Singapore law, no registration number, no date. Privacy policy (last updated 12/11/2024) gives 111 North Bridge Road, #08-18 Peninsula Plaza, Singapore 179098 and support@ospree.io; no DPO, hosting provider or data location. CB Insights gives 75 High Street, Singapore. ACRA / Bizfile not opened; search found no register mirror for "Ospree Pte. Ltd." (results were for unrelated Osprey companies), so the UEN and incorporation date are open. Founded: Ospree does not state it; G2 seller listing 2022, village.ai 2022, GetLatka 2018 (estimate site, not used); the security blog post is dated 11 Sep 2022 and the Coinfirm partnership 29 Nov 2022. Silicon Republic (13 Apr 2023): founders spread across Singapore and the US, Techstars Web3 class of 2023.'
+- 'Funding: none disclosed by Ospree. CB Insights: one seed round, $120K, "4 yrs ago", investors Techstars programmes; village.ai also $120K seed, Ripple and Techstars as backers. "Backed by Ripple" comes from TRISA''s page and the XRP Ledger Program on Ospree''s about page; no Ripple investment amount found, so the record says only Techstars for the round. Tracxn blocked by robots.'
+- 'Figures not used as facts beyond vendor-stated labels: homepage 120+ projects, 65M+ end users, 99.9% uptime, 1,600+ VASPs, users in 25+ countries; about page 70M+ end users (differs from homepage 65M+); CoinMENA post 65 million users. "First company to offer multi-chain, native Travel Rule capabilities" (CoinMENA post) and "a leading digital asset compliance platform" not used. 99.9% uptime is not a contractual SLA (terms not checked for an SLA clause).'
+- 'Certifications: Cyber Essentials post (12 May 2026) links to registry.blockmarktech.com/certificates/1d0181ca-a153-453d-825a-88611777dcdc/; the record could not be opened (permission), and the IASME certificate search was not reachable either. Level (basic or Plus), body and expiry unknown; status vendor_stated. No ISO/IEC 27001 or SOC 2 claim on homepage, about page, security post or help centre (help centre lists "What certifications do Ospree''s data centers have?" with no answer text).'
+- 'Customers and partners: CoinMENA (blog 4 Aug 2025, Dubai dateline July 2025; licensed in Bahrain and the UAE per Ospree''s post, licences not checked with the regulators). Homepage testimonials: Crystal Intelligence, Provenance Compliance, Techstars Web3, Bit2Me Security Token Exchange (Enrique Palacios Rojo), Summons Abogados, RAID Square (Sebastien Martin); only Bit2Me STX and RAID Square read as users. CB Insights lists Globiance as a customer (not used). Partnerships page: CFC MENA, Summons, NOEWE, GDF, Crystal Intelligence, Lukka, TRM Labs, Global Ledger, Nominis, TRISA, Utila, Monetari, Ripple, Cardano. Monetari is "exclusive channel partner in Türkiye" (blog 10 Mar 2026), which cites MASAK rules from February 2025 and says the setup supports "100% deployment on local Turkish infrastructure".'
+- 'Pricing: plans page checked 4 Nov 2026: Foundation, Scale, Enterprise, Contact sales, identical feature lists, no figures. Help centre questions on trial, pricing, start-up package and minimum contract length have no answer text. G2 shows no pricing. No marketplace listing found.'
+- 'User ratings: G2 product page shows 0 reviews ("hasn''t been reviewed yet"). No Capterra, GetApp, Software Advice or SourceForge listing found. user_ratings left empty.'
+- 'Docs not opened in this run (permission required for URLs not surfaced by search): per-protocol pages, Breaking Changes, Webhook Security, Self-Hosted Wallet learn page, FAQ, Network Directory. The breaking-changes page and signed webhooks are taken from the docs index titles (llms.txt: "Breaking Changes", "Webhook Security", "Webhook Delivery and Retries"); re-open them at the next fact pass.'
+- 'No enforcement action, breach disclosure, litigation or acquisition involving Ospree found in searches to 4 Nov 2026.'
+application_category: Travel Rule Compliance Software
+author: andrii-klymenko
+directory_categories:
+- Travel Rule
