@@ -1,0 +1,381 @@
+slug: notabene
+name: Notabene
+alternate_names: []
+status: published
+seo:
+  title: 'Notabene Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Notabene review: hosted Travel Rule network from New York with a free receive-and-respond plan, TRP endpoints, four self-hosted wallet checks and a published SLA. Pros, cons, alternatives.'
+  h1: 'Notabene Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: null
+  background: null
+  wordmark: /assets/img/wordmarks/notabene.svg
+tagline: Hosted Travel Rule network from New York with a free receive-and-respond plan, TRP endpoints for every customer and a published SLA
+score: 4.1
+grade: Good
+primary_category: travel-rule
+categories:
+- travel-rule
+link:
+  url: https://notabene.id
+  type: none
+last_verified: '2026-11-04'
+updated: '2026-11-04'   # last content edit; last_verified = last fact re-check
+verdict: Notabene suits exchanges, custodians and payment firms that want a hosted Travel Rule service with a large counterparty network and no software of their own to run. A free plan lets a firm answer incoming transfers with no integration, and every customer gets a TRP endpoint. The paid platform is quoted only. Notabene cannot connect to TRUST directly, its VerifyVASP link is still pending, and its ISO/IEC 27001 and SOC 2 evidence sits behind a Trust Center request.
+what_is:
+- Notabene sells Travel Rule compliance to crypto firms as a hosted service. Before a transfer goes on chain, it works out which institution controls the counterparty wallet, exchanges the originator and beneficiary data that FATF Recommendation 16 requires, and records whether the counterparty accepted. Rules decide which transfers need data, which thresholds apply in each jurisdiction and when a transfer is approved, held or rejected. Notabene says 2,300+ regulated institutions are in its network and that it has 280+ customers; it gives other figures on other pages, and we could not check any of them.
+- Reach comes mainly from Notabene's own network. Notabene says every customer has a live TRP 1.0 endpoint, but it also says Coinbase does not let outside vendors connect to TRUST, so customers who want TRUST must join it themselves and pass those transfers to Notabene by webhook. Its VerifyVASP page says support is waiting on a security review, and its TRISA page is marked as historical. Notabene's help centre says it moved its focus from protocol interoperability to reachability, and it now backs its own open protocol, TAP, for authorizing payments before settlement. Fireblocks and Ripple Custody both document a built-in Notabene integration.
+- Notabene, Inc. is a Delaware corporation; its services agreement says customers in the EEA, the UK and Switzerland may contract with Notabene ID GmbH under Swiss law instead. Its terms choose New York law, with courts in Kings County. Pelle Braendgaard is co-founder and CEO and Alice Nawfal is COO. Notabene was founded in 2020, went through Y Combinator, raised a $10.2 million Series A in 2021 and a $14.5 million Series B led by DRW VC in November 2024, and announced a strategic investment from Ripple, amount not disclosed, in July 2026. It also runs Notabene Flow, a stablecoin payments product, which this review does not cover.
+features:
+- Hosted Travel Rule platform that identifies the counterparty institution, exchanges originator and beneficiary data and records the outcome before a transfer settles, with jurisdiction thresholds and approval rules you configure.
+- 'Free SafeTransact-Rise plan: receive and respond to unlimited incoming transfers and send up to $10,000 a month, with no protocol integration, through Notabene''s dashboard.'
+- TRP 1.0 endpoint for every customer, a webhook bridge for firms that are TRUST members themselves, and built-in integrations documented by Fireblocks and Ripple Custody.
+- Self-hosted wallet checks by signature proof (eight signature types covering Bitcoin, EVM chains, Solana, Tron, XRP, Cardano, Stellar and others), micro-transaction (Satoshi test), screenshot or self-declaration, chosen by the VASP and collected through embedded Withdrawal Assist and Deposit Assist components.
+- Public API references for each platform version and a public Postman collection, a self-service sandbox with test counterparties (RoboVASPs) that return each possible response, webhooks delivered through Svix with signed payloads, retries and a polling fallback, and EU and US hosting regions.
+- 'Published service level agreement: 99.5% monthly uptime, P1 issues covered 24/7 with a 30-minute response, standard support 24 hours a day on weekdays.'
+pricing:
+  summary: 'Notabene publishes one price: SafeTransact-Rise is free, with outgoing transfers capped at $10,000 a month and unlimited incoming transfers. The full platform has no published price and is sold through a demo and an order form. The services agreement says invoices are due in 30 days, order forms renew automatically for one-year terms, and Notabene may change fees at the end of each term.'
+  plans:
+  - tier: SafeTransact-Rise
+    price: Free
+    note: Send up to $10,000 a month, receive and respond to unlimited incoming transfers, no protocol integration
+    extra: Self sign-up
+  - tier: Complete Compliance Solution
+    price: Not published
+    note: Full platform with onboarding, live training and SLAs, per Notabene
+    extra: Book a demo
+  legacy_verified_note: null
+  verified: '2026-11'
+  index_exclude: Its only published figures are the free plan and its $10,000 monthly send cap; the paid platform is quoted, so there is no price per check or per transfer to compare
+  items:
+  - label: SafeTransact-Rise
+    value: Free; send up to $10,000 a month, receive unlimited incoming transfers
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: Complete Compliance Solution
+    value: Not published; quoted after a demo
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: Contract terms
+    value: Invoices due in 30 days, USD by default, 1.5% a month late charge; one-year automatic renewals with 60 days' notice; fees may change at each renewal
+    kind: official
+    source: 5
+    verified: '2026-11'
+facts:
+- label: From
+  value: Free (SafeTransact-Rise, send capped at $10,000 a month); full platform quoted
+  source: 2
+  evidence: vendor
+- label: Legal entity
+  value: Notabene, Inc., a Delaware corporation; Notabene ID GmbH (Switzerland) for some order forms
+  source: 5
+  evidence: vendor
+- label: Headquarters
+  value: Not stated on its site; terms choose New York law and courts in Kings County, New York
+  source: 8
+  evidence: vendor
+- label: Founded
+  value: '2020'
+  source: 3
+  evidence: vendor
+- label: Leadership
+  value: Pelle Braendgaard (co-founder and CEO), Alice Nawfal (COO)
+  source: 3
+  evidence: vendor
+- label: Funding
+  value: $10.2M Series A (2021), $14.5M Series B led by DRW VC (Nov 2024), Ripple strategic investment (Jul 2026, amount not disclosed)
+  source: 25
+  evidence: independent
+- label: Deployment
+  value: Hosted SaaS; data stored in the US and the EU, region chosen per customer
+  source: 7
+  evidence: vendor
+- label: Network
+  value: 2,300+ regulated institutions and 280+ customers (vendor-stated; other pages give other figures)
+  source: 3
+  evidence: vendor
+- label: Networks and protocols
+  value: Own network and TRP 1.0 for every customer; TRUST only through the customer's own membership; VerifyVASP pending a security review
+  source: 12
+  evidence: vendor
+- label: Self-hosted wallet checks
+  value: Signature proof (eight signature types), micro-transaction, screenshot, self-declaration
+  source: 30
+  evidence: vendor
+- label: Platform integrations
+  value: Documented by Fireblocks and Ripple Custody
+  source: 20
+  evidence: independent
+- label: Certifications
+  value: ISO/IEC 27001:2022 and SOC 2 Type II (vendor-stated; certificate and report available through the Trust Center)
+  source: 4
+  evidence: vendor
+- label: Uptime commitment
+  value: 99.5% monthly; customer may terminate after two months below 98%
+  source: 6
+  evidence: vendor
+pros:
+- Free plan lets a VASP answer unlimited incoming Travel Rule transfers and send up to $10,000 a month with no protocol integration
+- Large hosted network (2,300+ institutions, vendor-stated), a TRP 1.0 endpoint for every customer, and built-in integrations documented by Fireblocks and Ripple Custody
+- Published SLA with 99.5% monthly uptime and a 30-minute P1 response, plus vendor-stated ISO/IEC 27001:2022 and SOC 2 Type II
+cons:
+- 'No direct TRUST connection: customers must join TRUST themselves and bridge it by webhook, VerifyVASP support is pending, and Notabene''s own TRISA page calls that protocol discontinued'
+- The paid platform has no published price, order forms renew automatically for one-year terms, and Notabene may change fees at each renewal
+- The ISO/IEC 27001 certificate and SOC 2 report are shared only through the Trust Center, with no certification body or auditor named publicly, and there is no customer KYC product
+alternatives:
+- slug: 21analytics
+  name: 21 Analytics
+  best_for: Self-Hosted Deployments
+- slug: cryptoswift
+  name: CryptoSwift
+  best_for: Published Travel Rule Plans
+- slug: verifyvasp
+  name: VerifyVASP
+  best_for: APAC Counterparty Coverage
+choose_instead:
+- slug: 21analytics
+  need: TRUST access or self-hosting
+  text: most of your counterparties are TRUST members, or the software must run in your own infrastructure. TRUST lists 21 Analytics as its only interoperability partner, and 21 Analytics holds a public ISO/IEC 27001 certificate.
+- slug: cryptoswift
+  need: Prices on the website
+  text: you want to see paid plan prices before a sales call. CryptoSwift publishes two of its three plans, and CODE lists it as a connected network.
+- slug: verifyvasp
+  need: Asia-Pacific counterparties
+  text: most of your counterparties are exchanges in Asia-Pacific. VerifyVASP owns Sygna Bridge, and CODE documents a connection to it.
+user_reviews:
+  legacy_note: null
+  praise: []
+  criticize: []
+  by_profile:
+  - Exchanges, custodians and payment firms that want a hosted Travel Rule service with a large counterparty network, and do not want to run software themselves, are Notabene's clearest fit.
+  - Small VASPs that mostly receive transfers can start on the free plan and answer counterparties from the dashboard before they integrate anything.
+  - Firms whose main counterparties are TRUST members or Asia-Pacific exchanges on VerifyVASP should check how Notabene reaches them before they sign, since neither route is direct today.
+faq:
+- q: How much does Notabene cost?
+  a: 'Notabene publishes one price: its SafeTransact-Rise plan is free, lets you send up to $10,000 a month and receive unlimited incoming transfers, and needs no protocol integration. The full platform has no published price and is quoted after a demo. Its services agreement says invoices are due in 30 days, order forms renew automatically for one-year terms unless you give 60 days'' notice, and Notabene may change fees at each renewal.'
+- q: Is there a free version of Notabene?
+  a: Yes. SafeTransact-Rise is free and gives access to Notabene's network and transaction dashboard. You can receive and respond to unlimited incoming transfers and send up to $10,000 a month. It suits a VASP that mostly receives Travel Rule data; once outgoing volume grows past the cap you move to a paid, quoted plan.
+- q: Can Notabene send Travel Rule data to TRUST members?
+  a: Not directly. Notabene's own TRUST page says Coinbase does not let outside vendors connect to TRUST. A Notabene customer that wants TRUST must apply for membership itself, run the TRUST connection in its own systems and pass those transfers to Notabene by webhook. If many of your transfers go to TRUST members, check that path before you sign.
+- q: Which Travel Rule protocols does Notabene support?
+  a: Notabene says every customer has a live TRP 1.0 endpoint, and its main reach is its own network. TRUST works only through the customer's own membership, VerifyVASP support is pending a security review, and Notabene's TRISA page is marked as historical. Its Sygna Bridge page invites firms to connect through Notabene's API but does not say the link is live. Notabene also backs TAP, an open protocol for authorizing payments before settlement.
+- q: How does Notabene verify self-hosted wallets?
+  a: 'Notabene lists four methods: a signature proof, a micro-transaction (Satoshi test), a screenshot and a self-declaration checkbox. Its developer docs list eight signature types covering Bitcoin, Litecoin, EVM chains, Solana, Tron, XRP, Cardano and Stellar, with named wallets such as Ledger, Trezor, MetaMask and Phantom. Screenshots are reviewed by a compliance officer in the dashboard, and Notabene calls them weaker than signatures or micro-transactions. The VASP chooses which methods to accept.'
+- q: Is Notabene ISO 27001 or SOC 2 certified?
+  a: Notabene says it is ISO/IEC 27001:2022 certified and has an annual SOC 2 Type II audit covering Security and Privacy, and it first announced a clean SOC 2 Type II report in January 2022. It names neither the certification body nor the auditor publicly; the certificate and report are shared through its Trust Center. It also names Cobalt and LRQA for penetration testing.
+- q: Does Notabene have a sandbox?
+  a: Yes. Notabene's developer docs say you can set up a sandbox account yourself, and API access is then arranged through its support team. The sandbox includes RoboVASPs, test counterparties that always give one response (authorize, reject, confirm address and so on), so you can test each outcome before going live. SafeTransact v1 is due to retire in 2027, so new integrations should start on the current version.
+- q: Does Notabene also do KYC?
+  a: No. Notabene identifies and screens counterparty institutions and handles Travel Rule data, but we found no customer identity verification product. Pair it with a separate KYC provider for onboarding your own customers.
+- q: What is the best alternative to Notabene?
+  a: 21 Analytics if your counterparties are on TRUST or you need software you run yourself. CryptoSwift if you want published plan prices. VerifyVASP if most of your counterparties are exchanges in Asia-Pacific.
+segments: []
+capabilities:
+  deployment:
+    status: cloud
+    note: hosted; data in US and EU regions
+    source: 7
+  published_pricing:
+    status: partial
+    note: free Rise plan published, full platform quoted
+    source: 2
+  identity_verification:
+    status: not_disclosed
+    note: no customer KYC product found
+  checked: '2026-11'
+certifications:
+- name: ISO/IEC 27001:2022
+  what: Information security; certification body and certificate number not stated publicly, certificate shared through the Trust Center
+  status: vendor_stated
+  source: 4
+- name: SOC 2 Type II
+  what: Annual audit covering Security and Privacy; auditor not named publicly, first clean report announced January 2022
+  status: vendor_stated
+  source: 4
+user_ratings: []
+use_case_verdicts: []
+score_breakdown:
+- criterion: Compliance & certifications
+  weight: 25
+  score: 4.0
+  evidence: vendor
+  note: Notabene names its Delaware entity and a Swiss GmbH in its services agreement and publishes an amended certificate of incorporation, a DPA, an SLA and regulatory exhibits for DORA and MAS. It says it holds ISO/IEC 27001:2022 and an annual SOC 2 Type II report and names its penetration testers, but the certificate and report sit behind a Trust Center request and no certification body or auditor is named.
+- criterion: Coverage
+  weight: 20
+  score: 4.2
+  evidence: vendor
+  note: The network claim is the largest in this category (2,300+ institutions, vendor-stated and inconsistent across pages), every customer gets a TRP 1.0 endpoint, Fireblocks and Ripple Custody document built-in integrations, and four self-hosted wallet methods are offered. TRUST is reachable only through the customer's own membership, VerifyVASP is pending, and no live TRISA route is documented.
+- criterion: Pricing transparency
+  weight: 20
+  score: 3.6
+  evidence: vendor
+  note: The free Rise plan and its limits are published and the services agreement sets out payment, renewal and fee-change terms, but the paid platform has no price, tier or volume figure, and we found no reliable third-party figure.
+- criterion: Integration & API depth
+  weight: 15
+  score: 4.3
+  evidence: vendor
+  note: Public API references and a Postman collection, a self-service sandbox with RoboVASP test counterparties, embedded Withdrawal Assist and Deposit Assist components, webhooks through Svix with signed payloads, retries and a polling fallback, EU and US regions, and integrations documented by Fireblocks and Ripple Custody. Three platform versions run side by side, and SafeTransact v1 is due to retire in 2027, so v1 users face a migration; API access itself is granted through support.
+- criterion: Support responsiveness
+  weight: 10
+  score: 4.1
+  evidence: vendor
+  note: 'The SLA is published: 99.5% monthly uptime, P1 cover 24/7 with a 30-minute response, standard support 24 hours on weekdays, and a termination right after two months below 98%. There are no service credits, and we could not open a review site to check support against user experience.'
+- criterion: Track record
+  weight: 10
+  score: 4.5
+  evidence: independent
+  note: Founded in 2020, Notabene raised a Series A in 2021 and a $14.5 million Series B in November 2024, both reported by trade press, and Ripple invested in July 2026. Fireblocks and Ripple Custody integrate it. We found no regulatory actions, breach disclosures or litigation.
+hands_on: null
+sources:
+- title: Notabene homepage
+  publisher: Notabene
+  url: https://notabene.id/
+  accessed: '2026-11'
+- title: Pricing
+  publisher: Notabene
+  url: https://notabene.id/pricing
+  accessed: '2026-11'
+- title: About us
+  publisher: Notabene
+  url: https://notabene.id/about-us
+  accessed: '2026-11'
+- title: Security and Trust
+  publisher: Notabene
+  url: https://notabene.id/security
+  accessed: '2026-11'
+- title: Main Services Agreement (last updated 17 June 2026)
+  publisher: Notabene
+  url: https://notabene.id/agreements/main-services-agreement
+  accessed: '2026-11'
+- title: Service Level Agreement (effective 19 August 2026)
+  publisher: Notabene
+  url: https://notabene.id/agreements/service-level-agreement
+  accessed: '2026-11'
+- title: Privacy policy (last updated 8 April 2025)
+  publisher: Notabene
+  url: https://notabene.id/privacy-policy
+  accessed: '2026-11'
+- title: Website terms of use (last updated 18 May 2026)
+  publisher: Notabene
+  url: https://notabene.id/terms-of-use
+  accessed: '2026-11'
+- title: Agreements and company documents
+  publisher: Notabene
+  url: https://notabene.id/agreements
+  accessed: '2026-11'
+- title: Travel Rule messaging protocols
+  publisher: Notabene
+  url: https://notabene.id/travel-rule-messaging-protocols
+  accessed: '2026-11'
+- title: 'TRP: Travel Rule Protocol'
+  publisher: Notabene
+  url: https://notabene.id/travel-rule-messaging-protocols/trp
+  accessed: '2026-11'
+- title: TRUST (USTRWG)
+  publisher: Notabene
+  url: https://notabene.id/travel-rule-messaging-protocols/ustrwg
+  accessed: '2026-11'
+- title: VerifyVASP
+  publisher: Notabene
+  url: https://notabene.id/travel-rule-messaging-protocols/verifyvasp
+  accessed: '2026-11'
+- title: TRISA
+  publisher: Notabene
+  url: https://notabene.id/travel-rule-messaging-protocols/trisa
+  accessed: '2026-11'
+- title: Crypto Wallet ID (self-hosted wallet identification)
+  publisher: Notabene
+  url: https://notabene.id/wallet-identification
+  accessed: '2026-11'
+- title: Travel Rule compliance
+  publisher: Notabene
+  url: https://notabene.id/travel-rule-compliance
+  accessed: '2026-11'
+- title: Transaction Authorization Protocol (TAP)
+  publisher: Notabene
+  url: https://notabene.id/tap
+  accessed: '2026-11'
+- title: API reference
+  publisher: Notabene developer docs
+  url: https://devx.notabene.id/reference
+  accessed: '2026-11'
+- title: Webhooks guide
+  publisher: Notabene developer docs
+  url: https://devx.notabene.id/v2.0/docs/webhook-flow
+  accessed: '2026-11'
+- title: Notabene integration
+  publisher: Fireblocks developer docs
+  url: https://developers.fireblocks.com/docs/notabene
+  accessed: '2026-11'
+- title: Travel Rule setup (Ripple Custody)
+  publisher: Ripple docs
+  url: https://docs.ripple.com/products/custody/compliance/travel-rule/setup
+  accessed: '2026-11'
+- title: Notabene earns SOC 2 security certification (10 January 2022)
+  publisher: Notabene
+  url: https://notabene.id/post/notabene-earns-soc-2-security-certification
+  accessed: '2026-11'
+- title: Notabene announces strategic investment from Ripple (23 July 2026)
+  publisher: Notabene
+  url: https://notabene.id/post/notabene-announces-strategic-investment-from-ripple
+  accessed: '2026-11'
+- title: Ripple invests in Notabene to integrate RLUSD into enterprise network (July 2026)
+  publisher: Crypto Briefing
+  url: https://cryptobriefing.com/ripple-invests-in-notabene-to-integrate-rlusd-into-enterprise-network/
+  accessed: '2026-11'
+- title: Crypto anti-money laundering specialist Notabene raises $14.5M (12 November 2024)
+  publisher: CoinDesk
+  url: https://www.coindesk.com/business/2024/11/12/crypto-anti-money-laundering-specialist-notabene-raises-145m
+  accessed: '2026-11'
+- title: Crypto compliance startup Notabene raises $10.2 million Series A (8 November 2021)
+  publisher: The Block
+  url: https://www.theblock.co/post/123614/crypto-compliance-startup-notabene-raises-10-2-million-series-a
+  accessed: '2026-11'
+- title: How the EU Transfer of Funds Regulation is changing the Travel Rule landscape
+  publisher: Notabene help centre
+  url: https://intercom.help/helpnotabene/en/articles/9619608-how-does-the-eu-s-transfer-of-funds-regulation-tfr-changing-the-travel-rule-landscape
+  accessed: '2026-11'
+- title: Sygna Bridge
+  publisher: Notabene
+  url: https://notabene.id/travel-rule-messaging-protocols/sygna-bridge
+  accessed: '2026-11'
+- title: Creating your account (v2)
+  publisher: Notabene developer docs
+  url: https://devx.notabene.id/v2.0/docs/creating-your-account
+  accessed: '2026-11'
+- title: Self Hosted Wallet Proofs (v2)
+  publisher: Notabene developer docs
+  url: https://devx.notabene.id/v2.0/docs/self-hosted-wallet-verification-1
+  accessed: '2026-11'
+- title: 'Automated testing: RoboVASPs (v2)'
+  publisher: Notabene developer docs
+  url: https://devx.notabene.id/v2.0/docs/automated-testing
+  accessed: '2026-11'
+- title: SafeTransact v1 sunset
+  publisher: Notabene developer docs
+  url: https://devx.notabene.id/v1.0/docs/sunset
+  accessed: '2026-11'
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://notabene.id
+  - https://www.linkedin.com/company/notabene-id
+  - https://x.com/notabene_id
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- 'Record decisions: link.type none (no commercial relationship with Notabene recorded). Notabene competes with TRUST and with 21 Analytics, which contributes Travel Rule guides to BeVerified; that relationship had no influence on this review or the score. Score 4.1 equals 21 Analytics; ranking keeps 21 Analytics first on the tie (existing order), editor to confirm. Categories travel-rule only: the owner removed Notabene from the Crypto KYC ranking on 4 Nov 2026 because it has no customer KYC. Logo: wordmark supplied by the editor on 4 Nov 2026, traced to SVG.'
+- 'Not opened (fetch needed a permission nobody could grant in this run): trust.notabene.id (Trust Center, subprocessors), the certificate of incorporation and IRS good standing PDFs on the Webflow CDN, devx.notabene.id pages beyond search snippets, G2. Re-check 4 Nov 2026: devx API reference opened (three platform references, Postman link; no OpenAPI or sandbox mention on that page) and v2 webhooks page opened (Svix, signed payloads, exponential-backoff retries, EU and US regions, polling). Trust Center re-tried: renders by script, no content readable. G2 re-tried: site refused the request. devx llms.txt not opened.'
+- 'Networks: protocols overview names TRP, TRISA, TRUST, Sygna Bridge, VerifyVASP, OpenVASP, Shyft Veriscope and Netki TransactID with a general aim to integrate live protocols, but does not say which are live. TRP page: every customer has a live TRP 1.0 endpoint. TRUST page: Coinbase does not allow external vendors to interact with TRUST directly; customers apply themselves and connect by webhook; TRUST BBS for incoming. VerifyVASP page: support pending a security review. TRISA page: marked historical, says CipherTrace discontinued it (TRISA itself announced interoperability with Ospree in June 2024, so Notabene''s page looks out of date). Sygna page: invites firms to connect through Notabene''s API, no live status. GTR page did not load. CryptoSwift''s record says it receives transfers from Notabene.'
+- 'Figures not used as facts beyond vendor-stated labels: 2,300+ institutions (homepage, about) vs 1,500+ (wallet page) vs 2,000+ (third parties); 280+ customers; 110+ vs 115+ vs 100+ jurisdictions; transaction volume $3.0T+ banner, over $2T annualized (Ripple release), $1.3T over 12 months (footer); 40 teammates (about) vs 51-200 or 101-200 on job sites. A comparison site lists G2 at 4.5 from 30 reviews; G2 not opened, not used. A tokenization-policy site gives annual price bands; no source, not used.'
+- 'Company: MSA (17 Jun 2026) names Notabene, Inc., a Delaware corporation, or Notabene ID GmbH, Swiss LLC, per order form; New York law and Kings County courts, Swiss law and Zug for EEA, UK and Swiss customers. Privacy policy (8 Apr 2025): data on servers in the US and EU; EU and UK GDPR representatives and DPO at GDPRLocal. No street address published. Older press release (PR Newswire, 2022) mentioned offices in Zug and Santiago de Chile; not used.'
+- 'Funding: Series A $10.2M (The Block, Nov 2021); Series B $14.5M led by DRW VC with Apollo, Nextblock, ParaFi, Wintermute and existing investors (CoinDesk, 12 Nov 2024); Ripple strategic investment 23 Jul 2026, amount not disclosed (Crypto Briefing). Earlier seed rounds per CB Insights and Börsen-Zeitung (second seed about $1.7M) not used.'
+- No enforcement action, breach disclosure, litigation or acquisition involving Notabene found in searches to 4 Nov 2026.
+- 'Docs re-check 4 Nov 2026 (second pass): devx llms.txt and v2 llms.txt opened. Sandbox self sign-up at app.eu1.notabene.id, API access through support@notabene.id (29); RoboVASPs exist only in the sandbox (31); self-hosted wallet proofs page lists bip-137, bip-322, eip-191, ed25519, tip-191, xrp-ed25519, cip-8, xlm-ed25519 with named wallets, Satoshi test in txCreate and the JavaScript SDK, screenshots and self-declaration for any chain (30); SafeTransact v1 retirement scheduled for 2027, no date (32). Get Entity schema has fields for OpenVASP, Sygna, TRISA, TRLight, email, TRP, Shyft, USTRWG, TRUST and Notabene, but a schema field is not evidence of a live route, so not used. No OpenAPI specification page found.'
+application_category: Travel Rule Compliance Software
+author: andrii-klymenko
+directory_categories:
+- Travel Rule

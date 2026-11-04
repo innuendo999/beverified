@@ -142,7 +142,7 @@ alternatives:
 - slug: sumsub
   name: Sumsub
   best_for: Travel Rule Bundled with KYC
-- slug: null
+- slug: notabene
   name: Notabene
   best_for: Hosted Travel Rule Network
 choose_instead:
@@ -150,7 +150,7 @@ choose_instead:
   text: your counterparties sit on TRUST or the open TRP protocol, you want a published ISO/IEC 27001 certificate, and you can run the software yourself.
 - slug: sumsub
   text: you want Travel Rule inside a hosted KYC and AML platform with published per-verification pricing. Sumsub connects to GTR, TRP, CODE and Sygna Bridge.
-- slug: null
+- slug: notabene
   name: Notabene
   text: you want a hosted network with stronger reach outside Asia-Pacific. Notabene says it has looked at adding VerifyVASP but needed a security review first.
 user_reviews:
