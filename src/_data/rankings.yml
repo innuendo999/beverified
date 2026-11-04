@@ -1578,6 +1578,23 @@ travel-rule:
     legacy_price_shown: €2,000 deposit + per message
     legacy_rating_shown: null
     segments: []
+  - slug: ospree
+    name: Ospree
+    award: Best for Built-In Wallet Screening
+    tagline: Hosted Travel Rule platform from Singapore with TRP, TRISA and CryptoSwift routes, built-in wallet screening and a rule engine.
+    coverage: Global (vendor-stated); named users in the Gulf, channel partner in Türkiye
+    size: Startups to mid-market
+    pros:
+    - One API for Travel Rule messaging, wallet screening with TRM Labs, Crystal and Global Ledger data, and a rule engine
+    - Live routes to TRP, TRISA, the CryptoSwift network and email; TRISA itself announced full interoperability
+    - Public developer docs with OpenAPI references and a sandbox environment
+    cons:
+    - No prices published, and all three plans show the same feature list
+    - No ISO/IEC 27001 or SOC 2 claim; only a vendor-stated UK Cyber Essentials certificate
+    - Self-hosted wallets verified by signature only; no TRUST, GTR, Sygna or CODE route yet
+    legacy_price_shown: On request
+    legacy_rating_shown: null
+    segments: []
   - slug: null
     name: Notabene
     award: Best for Hosted Travel Rule Exchange
