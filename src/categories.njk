@@ -82,7 +82,7 @@ layout: v3.njk
             {%- if e.price %}<span>From <strong>{{ e.price | replace(r/^From\s+/i, "") }}</strong>{% if e.priceVerified %} <span class="c-muted fs-12">· Pricing verified: {{ e.priceVerified }}</span>{% endif %}</span>{% endif %}
             <span class="spacer"></span>
             {%- if e.q %}<a class="btn btn--secondary btn--sm" href="/providers/{{ e.q.slug }}/">Read full review</a>{% endif %}
-            {%- if e.q and e.q.link.url %}<a class="btn btn--primary btn--sm" href="{{ e.q.link.url }}" rel="{{ e.q.link | outRel }}" target="_blank">Visit site ↗</a>{% if (e.q.link.type == "paid" or e.q.link.type == "affiliate") and e.q.link.label != false %}<span class="paid-note">Sponsored link</span>{% endif %}{% endif %}
+            {#- No outbound links in listings: links to provider sites appear only on review pages (owner, 2026-11-05). -#}
           </div>
         </article>
         </li>
