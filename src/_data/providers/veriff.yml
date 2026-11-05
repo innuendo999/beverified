@@ -387,10 +387,6 @@ track_record:
     status: stable
     note: independent, founder-led Estonian company
     source: 5
-  incidents:
-  - date: '2025-12-10'
-    what: 'Total Wireless says an unauthorised party obtained personal data from Veriff systems; Veriff gave the list of affected people on this date; class actions filed'
-    source: 35
 certifications:
 - name: ISO/IEC 30107-3 Level 2 (iBeta)
   what: Liveness, presentation attack detection

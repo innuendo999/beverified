@@ -12,6 +12,8 @@ const args = process.argv.slice(2);
 const WRITE = args.includes("--write");
 const only = args.filter((a) => !a.startsWith("--"));
 const TODAY = new Date("2026-11-05");
+// Incidents come from the tracker file (one record feeds /incidents/, reviews and the score).
+const INCIDENTS = (yaml.load(fs.readFileSync(path.join(root, "src/_data/incidents.yml"), "utf8")).items || []);
 
 export const RUBRICS = {
   identity: [
@@ -150,7 +152,7 @@ function trust(d) {
   const founded = +(String((d.facts || []).find((f) => /^(Founded|Incorporated|Established)$/i.test(f.label))?.value || "").match(/\b(19|20)\d{2}\b/)?.[0] || NaN);
   const own = d.track_record?.ownership?.status;
   if (founded && TODAY.getFullYear() - founded >= 5 && ["stable", "changed_disclosed"].includes(own)) { pts += 1; why.push(`operating since ${founded}`); }
-  const recent = (d.track_record?.incidents || []).filter((x) => x.counted !== false && (TODAY - new Date(x.date)) / 864e5 <= 730);
+  const recent = INCIDENTS.filter((x) => x.slug === d.slug && x.counted !== false && (TODAY - new Date(x.date)) / 864e5 <= 730);
   pts -= recent.length; recent.forEach((x) => why.push(`incident ${x.date}`));
   return [clamp(half(pts + 1)), why.join(", ") || "no public evidence", sec.some((c) => c.status === "confirmed") ? "independent" : "vendor"];
 }

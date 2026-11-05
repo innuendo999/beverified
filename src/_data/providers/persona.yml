@@ -319,12 +319,6 @@ track_record:
     status: stable
     note: independent, venture funded, Series D 2025
     source: 4
-  incidents:
-  - date: '2026-02-23'
-    what: 'researchers found frontend code exposed on a government authorized server; vendor says it was fixed'
-    source: 30
-    counted: false
-    note: 'Persona says it was a test environment and no personal data was exposed; noted, not deducted (owner, 2026-11-05)'
 certifications:
 - name: FedRAMP Moderate (Persona for Government)
   what: US federal cloud security, certified since 10 Apr 2026

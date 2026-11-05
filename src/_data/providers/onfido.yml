@@ -279,7 +279,6 @@ track_record:
     status: changed_disclosed
     note: acquired by Entrust, Apr 2024
     source: 5
-  incidents: []
 certifications:
 - name: ISO/IEC 30107-3 Level 2 (iBeta)
   what: Liveness / presentation attack detection, Onfido Liveness 2.0 on iOS (Jan 2022) and Android (Jun 2022)

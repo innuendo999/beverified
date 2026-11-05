@@ -234,10 +234,6 @@ track_record:
   ownership:
     status: unknown
     note: owners and investors not disclosed
-  incidents:
-  - date: '2026-02-20'
-    what: Cybernews reported an unsecured database linked to IDMERIT; IDMERIT disputes any compromise of its systems
-    source: 13
 certifications:
 - name: SOC 2 Type 2
   what: Security controls audit

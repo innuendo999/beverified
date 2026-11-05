@@ -112,7 +112,7 @@ coverage:                    # identity family only
   non_doc: {status, note, source}        # database, bank or registry checks for individuals
 track_record:
   ownership: {status: stable | changed_disclosed | pending_sale | unknown, note, source}
-  incidents: [{date: '2026-09-16', what: 'cyber incident disclosed', source}]   # regulatory actions, breaches; last 24 months count
+  # incidents are not stored here: the score reads src/_data/incidents.yml (counted: false is not deducted)
 capabilities:                # new keys, same shape as the other capabilities
   liveness: {...}            # identity family: has a liveness product
   injection_detection: {...} # add independent: true with a lab letter
