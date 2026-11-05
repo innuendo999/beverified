@@ -80,3 +80,10 @@
 
 - Ownership changed (Corsair, Mar 2025), already in facts.
 - For the script owner: the confirmed LSTI "ISO/IEC 30107 PAD, substantial" certificate is not matched by rescore.mjs (it looks for "30107-3" and "Level N"), so fraud defense falls to 2.5. PVID, ETSI TS 119 461 and the eIDAS QTSP are vendor_stated, so no trust-framework point. Both drive most of the drop; worth a manual look before approval.
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: yes, source 16 (customer base monitored for new list matches)
+- kyb_registry: yes, source 21 (new: company verification docs; French companies only, official register via societe.com)
+- case_management: not_disclosed (AML hits link to nCino dashboard; no IDnow queue found)
+- transaction_monitoring: not_disclosed (unchanged)

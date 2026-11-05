@@ -99,3 +99,10 @@ Checked: idenfy.com/identity-verification-price, documentation.idenfy.com pay-as
 ### Score flag
 
 - None.
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: add_on, source 21 (daily PEP and sanctions monitoring in separate AML plans)
+- case_management: yes, source 21 (verifications case management portal; KYB case management)
+- video_ident: not_disclosed (unchanged)
+- reusable_id: not_disclosed (unchanged)

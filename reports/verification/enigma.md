@@ -124,3 +124,11 @@ None.
 - track_record: ownership stable (independent, venture backed, 11); incidents none found (search hits were other companies named Enigma).
 - capabilities: sanctions_pep add_on (watchlist add-on, 21); adverse_media add_on (negative news add-on, 21). liveness, injection_detection, reusable_id, data_residency not_disclosed (no IDV product).
 - Score flag: none.
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: add_on, source 8 (ongoing re-screening of persons and businesses in the separate screening product)
+- transaction_monitoring: not_disclosed (transaction screening of payments only)
+- case_management: not_disclosed
+- video_ident: not_disclosed
+- reusable_id: not_disclosed (unchanged)

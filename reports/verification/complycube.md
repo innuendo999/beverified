@@ -70,3 +70,14 @@
 - Still not_disclosed: reusable_id, video_ident, transaction_monitoring. Founded fact is missing in the record, so no years-in-operation point.
 - New sources 10 to 15.
 - Score flag: none.
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: add_on, source 1 (continuous monitoring a monthly fee on Core, included on Growth)
+- kyb_ubo: yes, source 17 (new: Company Search & Insights docs)
+- kyb_entity_screening: yes, source 16 (new: AML Screening Check docs, businesses and related persons)
+- kyb_monitoring: yes, source 16
+- kyb_documents: not_disclosed
+- transaction_monitoring: not_disclosed (unchanged, no docs entry)
+- video_ident: not_disclosed (unchanged; only video selfie liveness)
+- reusable_id: not_disclosed (unchanged; Face Authentication Check for returning users exists, kept n/d for consistency with how iDenfy face auth is treated, owner to decide)

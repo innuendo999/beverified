@@ -82,3 +82,9 @@
 ### Score flag
 
 - None (no incident, no ownership change). Note for the script: the record has `Incorporated` (1989), not a `Founded` fact, so the trust criterion does not count the 5+ years point.
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: yes, source 19 (scheduled in-life re-screening)
+- video_ident: not_disclosed (unchanged, nothing found)
+- kyb_documents: not_disclosed (unchanged; KYB page describes company records, not documents)

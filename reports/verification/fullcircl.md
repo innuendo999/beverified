@@ -62,3 +62,11 @@
 - No certifications and no Founded fact in the record, so Trust = 1.
 - New sources 14 to 17.
 - Score flag: brand retired (FullCircl is now nCino Identity Solutions) and the UK entities are in members' voluntary liquidation, as already recorded. Products are still sold under nCino. No new flag.
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: yes, source 15 (re-screening at a frequency set by risk appetite)
+- case_management: yes, source 15 (Case Management section, single customer view; alerts with assigned team members)
+- transaction_monitoring: not_disclosed (only FAQ advice)
+- video_ident: not_disclosed
+- reusable_id, kyb_entity_screening: not_disclosed (unchanged)

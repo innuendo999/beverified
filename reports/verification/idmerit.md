@@ -98,3 +98,10 @@ IDMscan (document plus selfie liveness) and IDMaml (screening, adverse media, tr
 
 - Incident: reported data exposure, Feb 2026 (disputed by IDMERIT). Counts as -1 in trust. The review page does not mention it yet; owner to decide on wording.
 - Pricing sub-score 2 rests on the Capterra "$0.10 per user per month" listing, whose unit is unclear (see verification_notes); the owner may prefer to treat pricing as not disclosed.
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: yes, source 9 (IDMaml continuous monitoring)
+- case_management: yes, source 9 (Dynamic Case Management named, no detail)
+- kyb_registry: not_disclosed (IDMkyb verifies corporate data, registry sources not named)
+- reusable_id: not_disclosed (unchanged)

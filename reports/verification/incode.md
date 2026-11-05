@@ -85,3 +85,12 @@ Filled `capabilities` keys from vendor pages opened 2026-10-30. No existing valu
 ### Score flag
 
 - Not counted as an incident: Aspel v. Incode Technologies (Illinois BIPA class action), $4m settlement, preliminary approval 5 Aug 2024 (classaction.org). It is a private settlement before the Nov 2024 window, not a regulatory action. Owner may want a mention in the review.
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: yes, source 21 (Watchlist search can subscribe to updates)
+- case_management: yes, source 26 (new: Case Management page, shared queue with assignment)
+- kyb_registry: yes, source 27 (new: KYB page; official registries; page states both 190+ countries and 20 countries live, not reconciled)
+- kyb_ubo, kyb_entity_screening, kyb_monitoring: yes, source 27
+- kyb_documents: not_disclosed
+- transaction_monitoring: not_disclosed (unchanged)

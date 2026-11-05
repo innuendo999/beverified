@@ -69,3 +69,14 @@
 - Still not_disclosed: docs_public, sandbox, support_hours. KYB is listed on the Enterprise plan but no registry detail, so kyb_registry not added.
 - New sources 15 to 18. Source 18 is AU10TIX's 28 Jul 2025 statement on the June 2024 credential exposure.
 - Score flag (for review): the admin-credential exposure was discovered June 2024 and reported by 404 Media that month, so it falls before the Nov 2024 incident window and is not listed in incidents. Owner may want to decide whether the July 2025 clarification counts. Preferred shareholders' exit rights from Jul 2026 remain; no sale announced.
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: yes, source 12 (periodic AML screenings by risk profile)
+- kyb_registry: yes, source 19 (new: Business Verification page, 200+ jurisdictions, government databases)
+- kyb_ubo: yes, source 19
+- kyb_entity_screening: add_on, source 19 (Enterprise tier)
+- kyb_monitoring: add_on, source 19 (Enterprise tier)
+- kyb_documents: yes, source 19 (Proof of Business)
+- kyb_pricing: not added (outside this brief)
+- transaction_monitoring, video_ident, reusable_id, case_management: unchanged

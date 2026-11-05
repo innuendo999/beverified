@@ -78,3 +78,11 @@ AiPrise says its global AML screening "is powered by ComplyAdvantage"; set to ad
 - No lab letter for liveness found, so Fraud defense = 2.
 - New sources 13 to 16.
 - Score flag: none.
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: yes, source 17 (new: Continuous Monitoring page; daily re-screening of users and businesses)
+- transaction_monitoring: not_disclosed (unchanged; Continuous Monitoring page says it does not cover transaction monitoring, which is not a statement that the product is not offered)
+- video_ident: not_disclosed (unchanged, nothing on homepage or product pages)
+- reusable_id: not_disclosed (unchanged; Reverification feature re-runs checks, no reuse without new scan stated)
+- case_management, kyb_*: unchanged
