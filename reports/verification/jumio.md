@@ -77,3 +77,4 @@ Filled `capabilities` keys from vendor pages opened 2026-10-30. No existing valu
 
 ### Score flag
 - v3.1 draft score 3.7 (was 4.5): Pricing and total cost 2 (quote only) is the main driver.
+- G2 re-read by the owner in a browser on 2026-11-05 (screenshot): 4.1 / 5 from 46 reviews. Record updated (was 4.1 / 38). The search snippet showing 4.0 / 22 was stale. G2 now lists Onfido as "Entrust IDV, formerly Onfido".

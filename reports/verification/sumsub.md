@@ -77,3 +77,4 @@ All Sumsub entries in `src/_data/rankings.yml`:
 
 ### Score flag
 - v3.1 draft score 4.8 (unchanged); Trust and track record 4 after the incident deduction.
+- G2 re-read by the owner in a browser on 2026-11-05 (screenshot): 4.6 / 5 from 130 reviews, unchanged; `checked` → 2026-11.
