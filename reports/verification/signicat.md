@@ -70,3 +70,9 @@ Not disclosed: `injection_detection` (deepfake detection named, injection attack
 Rescore (v3.1 draft): 4.6 -> 3.7, scored weight 80% (pricing n/d).
 
 Notes: the countries figure comes from ReadID (NFC) only; owner may prefer null. The KYC/KYB platform page describes ongoing alerts on sanctions, PEP and adverse media changes (source 18); `ongoing_monitoring` was not added because it is not in the identity key list of this brief. A 2022 report (Unquote, 29 Apr 2022) said Nordic Capital was preparing an exit; no sale found since.
+
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: yes, source 18 (KYC/KYB platform: "Continuous monitoring: stay compliant after onboarding")
+- unchanged not_disclosed: transaction_monitoring, kyb_documents (only "document requirements" configurable), case_management

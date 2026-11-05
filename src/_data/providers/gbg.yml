@@ -214,6 +214,10 @@ capabilities:
     status: 'yes'
     note: GBG Go case management module
     source: 26
+  ongoing_monitoring:
+    status: 'yes'
+    note: scheduled in-life re-screening
+    source: 19
 integration:
   checked: '2026-11'
   docs_public:

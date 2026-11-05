@@ -197,6 +197,10 @@ capabilities:
     status: add_on
     note: Watchlist AML report only
     source: 20
+  ongoing_monitoring:
+    status: add_on
+    note: Ongoing Monitoring on Watchlist reports, enabled per account
+    source: 20
   transaction_monitoring:
     status: not_disclosed
     note: not found on Entrust IDV pages

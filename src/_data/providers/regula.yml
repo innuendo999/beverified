@@ -153,6 +153,10 @@ capabilities:
   transaction_monitoring:
     status: not_disclosed
     note: nothing found on vendor pages
+  case_management:
+    status: 'yes'
+    note: session review with manual status change by operator
+    source: 15
   nfc:
     status: 'yes'
     note: SDK reads ePassport, eID and eDL chips

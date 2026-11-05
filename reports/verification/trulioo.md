@@ -82,3 +82,9 @@ Not disclosed: `reusable_id`; `integration.sandbox` (developer portal offers "Bo
 Rescore (v3.1 draft): 4.5 -> 2.8, all criteria scored.
 
 Score flag: the Document Verification page (source 17) claims "iBeta Level 2 certification" and a top-five NIST FATE ranking. Neither is in `certifications[]`. Trulioo does not appear in the iBeta PAD letters list back to Nov 2021 (opened 2026-11-05). The certificate may be held by a technology partner. Confirming either one would raise fraud defense from 2 to 4 or more, so it needs a manual check before the rescore is accepted.
+
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: yes, source 16 (AML Screening: "Ongoing monitoring checks for updates across watchlists, sanctions, PEP data, and adverse-media sources")
+- unchanged not_disclosed: transaction_monitoring, case_management, video_ident, reusable_id (pricing and AML pages checked)

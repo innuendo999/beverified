@@ -74,3 +74,9 @@ Added (key: status, source):
 Not disclosed: none of the new fields.
 
 Rescore (v3.1 draft): 4.6 -> 4.9, all criteria scored.
+
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: yes, source 24 (new: shuftipro.com/ongoing-monitoring/, "continuously re-screening verified individuals, businesses, UBOs")
+- case_management: yes, source 1 (pricing page: "Backoffice - Case Management Portal" with "Manual Review Section" on all plans; checkmarks are images, plan split not confirmed)

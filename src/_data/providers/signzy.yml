@@ -143,6 +143,10 @@ capabilities:
     status: 'yes'
     note: 'AML Screening product'
     source: 19
+  ongoing_monitoring:
+    status: 'yes'
+    note: periodic re-screening of onboarded users
+    source: 19
   transaction_monitoring:
     status: 'yes'
     note: 'AML Transaction Monitoring product'

@@ -237,6 +237,21 @@ capabilities:
     status: 'yes'
     note: upload in KYB Applications
     source: 19
+  kyb_entity_screening:
+    status: 'yes'
+    note: company and individuals, PEP, sanctions, adverse media in KYB Applications
+    source: 19
+  kyb_monitoring:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  ongoing_monitoring:
+    status: 'yes'
+    note: active profiles monitored against updated watchlists
+    source: 12
+  case_management:
+    status: 'yes'
+    note: AML case review workflow, KYB auditor review
+    source: 12
 certifications:
 - name: ISO/IEC 27001:2013
   what: Information security (obtained Feb 2020, Indonesia)

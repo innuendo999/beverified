@@ -2,6 +2,16 @@
 
 Status: DRAFT. Nothing on the site changes until the owner approves this file and the before/after report.
 
+## Owner decisions (2026-11-05)
+
+1. Quote-only pricing scores 2 (no published price is itself a known fact), whether or not third-party data exists.
+2. Coverage: 180+ countries and territories counts as global.
+3. Platform breadth for specialists is scored on the modules of their own category: KYB (registry, UBO, entity screening, monitoring, documents), liveness (identity verification, liveness, video ident, reusable ID, facial age estimation), age verification (the eight age methods), document specialists such as Regula (identity verification, NFC, liveness, video ident, reusable ID).
+4. Quantexa, Verified, VerifyMy and Paravision keep their v3.0 score until per-category methodologies exist.
+5. Grade bands reset: Excellent 4.5+, Great 4.0 to 4.4, Very Good 3.5 to 3.9, Good 3.0 to 3.4, Fair below 3.0.
+6. An incident the vendor credibly limits to a test environment with no personal data is recorded with `counted: false` and a note, not deducted (Persona, Feb 2026).
+7. Next: a separate methodology per category (owner).
+
 ## Why v3.1
 
 v3.0 gives 25% to certificates and has no criterion for product quality. Buyer guides agree that buyers choose first on false rejections and conversion, fraud caught, market coverage and total cost; ISO 27001 and SOC 2 are treated as a baseline, not a differentiator. v3.1 moves weight to what buyers compare, scores it from fields we already store where possible, and says plainly what public evidence cannot measure.

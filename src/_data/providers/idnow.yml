@@ -175,6 +175,17 @@ capabilities:
     status: partial
     note: EU hosting only, no region choice stated
     source: 10
+  ongoing_monitoring:
+    status: 'yes'
+    note: customer base monitored for new list matches
+    source: 16
+  kyb_registry:
+    status: 'yes'
+    note: French companies only, official register via API
+    source: 21
+  case_management:
+    status: not_disclosed
+    note: hits link to partner dashboard, no own queue found
 integration:
   checked: '2026-11'
   docs_public:
@@ -345,6 +356,10 @@ sources:
 - title: AutoIdent FAQ
   publisher: IDnow
   url: https://idnow.io/faq/autoident/
+  accessed: '2026-11'
+- title: Verifying company, API only (documentation)
+  publisher: IDnow
+  url: https://docs.idnow.io/docs/platform-guides/company-verification-v1
   accessed: '2026-11'
 entity:
   wikidata: null

@@ -80,3 +80,9 @@ Veridas states it gives access to AML watchlist databases "including ComplyAdvan
 
 - Fourthline and Veridas completed their merger on 3 Nov 2026 (Fourthline release, new last source). Updated verdict, ownership fact, the merger con and the ownership FAQ in this record. CEO Paul Stoddart, president Eduardo Azanza, supervisory board chair Radboud Vlaar (Finch Capital); up to EUR 65m from Finch Capital, Seaya Andromeda and Ashgrove Capital; no new brand name. `last_verified` not changed (ownership only, not a full re-check).
 - Score flag: ownership changed; score unchanged pending the v3.1 re-score.
+
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: add_on, source 20 (watch-list page: screening "at onboarding and periodically throughout the customer lifecycle"; list data via partner ComplyAdvantage, as sanctions_pep)
+- unchanged not_disclosed: transaction_monitoring, kyb_registry and sub-keys, case_management, video_ident (homepage lists a Video-ID product but does not say it uses a live agent)

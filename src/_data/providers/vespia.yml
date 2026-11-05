@@ -174,11 +174,13 @@ capabilities:
     note: businesses against sanctions and watchlists
     source: 5
   kyb_monitoring:
-    status: not_disclosed
-    note: not on current Veriff KYB pages
+    status: 'yes'
+    note: alerts on UBO structure changes, per vespia.io
+    source: 2
   kyb_documents:
-    status: not_disclosed
-    note: not on current Veriff KYB pages
+    status: 'yes'
+    note: original register documents, per vespia.io
+    source: 2
   kyb_pricing:
     status: partial
     note: 'vespia.io from €35 per report; Veriff quotes'
@@ -194,6 +196,10 @@ capabilities:
   adverse_media:
     status: 'yes'
     note: daily adverse media monitoring, per vespia.io
+    source: 2
+  ongoing_monitoring:
+    status: 'yes'
+    note: daily PEP, sanctions and adverse media checks, per vespia.io
     source: 2
   transaction_monitoring:
     status: 'yes'

@@ -76,15 +76,35 @@ function coverage(d) {
   const n = c?.countries?.value, docs = c?.document_types?.value;
   if (!n) return [null, "country count not disclosed"];
   let s;
-  if (n >= 200 && docs >= 10000) s = has(c.non_doc) ? 5 : 4.5;
-  else if (n >= 200 && docs >= 5000) s = 4;
-  else if (n >= 200) s = 3.5;
+  // 180+ countries counts as global coverage (owner, 2026-11-05).
+  const global = n >= 180;
+  if (global && docs >= 10000) s = has(c.non_doc) ? 5 : 4.5;
+  else if (global && docs >= 5000) s = 4;
+  else if (global) s = 3.5;
   else if (n >= 100) s = 3;
   else s = 2;
   return [s, `${n} countries${docs ? `, ${docs} document types` : ""}${has(c.non_doc) ? ", non-document checks" : ""}`, "vendor"];
 }
 
+// Specialists are scored on the modules of their own category (owner, 2026-11-05).
+const SCOPE_BY_CATEGORY = { kyb: "kyb", "liveness-detection": "liveness", "age-verification": "age" };
+const SCOPE_BY_SLUG = { regula: "document" };
+function scopedBreadth(d, scope) {
+  const c = (k) => has(cap(d, k));
+  const sets = {
+    kyb: ["kyb_registry", "kyb_ubo", "kyb_entity_screening", "kyb_monitoring", "kyb_documents"],
+    liveness: ["identity_verification", "liveness", "video_ident", "reusable_id", "age_facial_estimation"],
+    document: ["identity_verification", "nfc", "liveness", "video_ident", "reusable_id"],
+    age: ["age_document", "age_facial_estimation", "age_email_estimation", "age_mobile_operator", "age_credit_card", "age_open_banking", "age_digital_id", "age_reusable"],
+  };
+  const keys = sets[scope];
+  const n = keys.filter(c).length;
+  const table = scope === "age" ? { 8: 5, 7: 5, 6: 5, 5: 4, 4: 4, 3: 3, 2: 2, 1: 1.5, 0: 1 } : { 5: 5, 4: 4, 3: 3, 2: 2, 1: 1.5, 0: 1 };
+  return [table[n], `${scope} scope, ${n} of ${keys.length}: ${keys.filter(c).join(", ")}`, "vendor"];
+}
 function breadth(d, fam) {
+  const scope = SCOPE_BY_SLUG[d.slug] || (fam === "identity" && SCOPE_BY_CATEGORY[d.primary_category]);
+  if (scope) return scopedBreadth(d, scope);
   const kyb = ["kyb_registry", "kyb_entity_screening"].some((k) => has(cap(d, k)));
   const age = Object.keys(d.capabilities || {}).some((k) => k.startsWith("age_") && k !== "age_certification" && has(cap(d, k)));
   const mon = has(cap(d, "transaction_monitoring")) || has(cap(d, "ongoing_monitoring"));
@@ -118,7 +138,7 @@ function trust(d) {
   const founded = +(String((d.facts || []).find((f) => /^(Founded|Incorporated|Established)$/i.test(f.label))?.value || "").match(/\b(19|20)\d{2}\b/)?.[0] || NaN);
   const own = d.track_record?.ownership?.status;
   if (founded && TODAY.getFullYear() - founded >= 5 && ["stable", "changed_disclosed"].includes(own)) { pts += 1; why.push(`operating since ${founded}`); }
-  const recent = (d.track_record?.incidents || []).filter((x) => (TODAY - new Date(x.date)) / 864e5 <= 730);
+  const recent = (d.track_record?.incidents || []).filter((x) => x.counted !== false && (TODAY - new Date(x.date)) / 864e5 <= 730);
   pts -= recent.length; recent.forEach((x) => why.push(`incident ${x.date}`));
   return [clamp(half(pts + 1)), why.join(", ") || "no public evidence", sec.some((c) => c.status === "confirmed") ? "independent" : "vendor"];
 }
@@ -139,9 +159,13 @@ function workflow(d) {
 
 const FN = { fraud_defense: fraudDefense, pricing, coverage, breadth, integration, trust, screening, workflow };
 
+// Kept on their v3.0 score until per-category methodologies exist (owner, 2026-11-05).
+export const HOLD = { quantexa: "entity resolution layer", verified: "Nordic eID and AML", verifymy: "age assurance", paravision: "face biometrics engine" };
+// Grade bands for v3.1 (owner asked to reset them, 2026-11-05).
+export const grade = (s) => (s >= 4.5 ? "Excellent" : s >= 4.0 ? "Great" : s >= 3.5 ? "Very Good" : s >= 3.0 ? "Good" : "Fair");
 export function score(d) {
   const fam = familyOf(d);
-  if (!fam) return null;
+  if (!fam || HOLD[d.slug]) return null;
   const rows = RUBRICS[fam].map(([key, name, weight]) => {
     const [s, note, evidence] = FN[key](d, fam);
     return { key, criterion: name, weight, score: s == null ? null : half(s), note, evidence: s == null ? null : evidence };
@@ -156,17 +180,19 @@ export function score(d) {
 }
 
 const files = fs.readdirSync(dir).filter((f) => f.endsWith(".yml")).map((f) => f.replace(/\.yml$/, "")).filter((s) => !only.length || only.includes(s));
-const out = [["slug", "family", "old_score", "new_score", "change", "alt_quote_not_scored", "weight_scored", ...RUBRICS.identity.map((r) => r[0]), "screening", "workflow", "missing"]];
+const held = [];
+const out = [["slug", "family", "old_score", "new_score", "new_grade", "change", "alt_quote_not_scored", "weight_scored", ...RUBRICS.identity.map((r) => r[0]), "screening", "workflow", "missing"]];
 for (const slug of files) {
   const file = path.join(dir, `${slug}.yml`);
   const text = fs.readFileSync(file, "utf8");
   const d = yaml.load(text);
   if (d.status && d.status !== "published") continue;
+  if (HOLD[slug]) { held.push(`${slug} (${HOLD[slug]}): kept at ${d.score}`); continue; }
   const r = score(d);
   if (!r) continue;
   const by = Object.fromEntries(r.rows.map((x) => [x.key, x.score ?? ""]));
   const missing = r.rows.filter((x) => x.score == null).map((x) => `${x.key}: ${x.note}`).join("; ");
-  out.push([slug, r.family, d.score, r.total ?? "", r.total != null ? (r.total - d.score).toFixed(1) : "", r.totalAlt ?? "", r.coverage,
+  out.push([slug, r.family, d.score, r.total ?? "", r.total != null ? grade(r.total) : "", r.total != null ? (r.total - d.score).toFixed(1) : "", r.totalAlt ?? "", r.coverage,
     ...RUBRICS.identity.map((x) => by[x[0]] ?? ""), by.screening ?? "", by.workflow ?? "", missing]);
   if (only.length) {
     console.log(`\n${d.name} (${r.family}): ${d.score} -> ${r.total} (scored weight ${r.coverage}%)`);
@@ -174,13 +200,16 @@ for (const slug of files) {
   }
   if (WRITE && r.total != null) {
     const block = "score_breakdown:\n" + r.rows.map((x) => `- criterion: ${JSON.stringify(x.criterion)}\n  weight: ${x.weight}\n  score: ${x.score ?? "null"}\n  note: ${JSON.stringify(x.note)}\n  evidence: ${x.evidence ?? "null"}`).join("\n") + "\n";
-    const next = text.replace(/^score_breakdown:(?:\s*\[\])?\n(?:(?:-|  ).*\n)*/m, block);
+    const next = text.replace(/^score_breakdown:(?:\s*\[\])?\n(?:(?:-|  ).*\n)*/m, block)
+      .replace(/^score: .*$/m, `score: ${r.total.toFixed(1)}`)
+      .replace(/^grade: .*$/m, `grade: ${grade(r.total)}`);
     fs.writeFileSync(file, next);
   }
 }
 if (!only.length) {
   const csv = out.map((r) => r.map((c) => (/[",;]/.test(String(c)) ? `"${String(c).replace(/"/g, '""')}"` : c)).join(",")).join("\n") + "\n";
   fs.writeFileSync(path.join(root, "reports/rescore-v3.1.csv"), csv);
-  const full = out.slice(1).filter((r) => r[6] === 100).length;
+  const full = out.slice(1).filter((r) => r[7] === 100).length;
+  if (held.length) console.log("held on v3.0: " + held.join("; "));
   console.log(`scored ${out.length - 1} providers; ${full} with all criteria; report: reports/rescore-v3.1.csv`);
 }

@@ -302,6 +302,19 @@ capabilities:
     status: add_on
     note: negative news add-on
     source: 21
+  ongoing_monitoring:
+    status: add_on
+    note: ongoing sanctions re-screening, separate screening product
+    source: 8
+  transaction_monitoring:
+    status: not_disclosed
+    note: transaction screening only, no behaviour monitoring
+  case_management:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  video_ident:
+    status: not_disclosed
+    note: nothing found on vendor pages
 certifications:
 - name: SOC 2 Type 2
   what: Security, availability and confidentiality controls

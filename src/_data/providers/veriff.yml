@@ -259,6 +259,10 @@ capabilities:
     status: add_on
     note: part of AML Screening product
     source: 30
+  ongoing_monitoring:
+    status: add_on
+    note: re-screening after onboarding, AML Screening product
+    source: 30
   transaction_monitoring:
     status: not_disclosed
     note: not found on Veriff pages

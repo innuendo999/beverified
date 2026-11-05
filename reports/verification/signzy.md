@@ -81,3 +81,9 @@ Not disclosed: `reusable_id`, `data_residency`, `integration.sdk_web`, `sdk_ios`
 Rescore (v3.1 draft): 4.4 -> 2.8, scored weight 80% (pricing n/d).
 
 Score flag: security incident reported Dec 2024 (inside the 24-month window, -1 trust).
+
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: yes, source 19 (AML Screening: "periodic re-screening of customers")
+- unchanged not_disclosed: case_management (platform page has a "360 back-office view" only), reusable_id

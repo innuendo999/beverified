@@ -148,6 +148,10 @@ capabilities:
     status: add_on
     note: 'third-party PEP and AML check, ComplyAdvantage data'
     source: 21
+  ongoing_monitoring:
+    status: add_on
+    note: 'periodic watchlist screening, partner data'
+    source: 20
   transaction_monitoring:
     status: not_disclosed
     note: 'nothing found on vendor pages'

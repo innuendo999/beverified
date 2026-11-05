@@ -245,6 +245,10 @@ capabilities:
     status: 'yes'
     note: Case Review Portal
     source: 2
+  ongoing_monitoring:
+    status: 'yes'
+    note: daily AML re-screening of clients
+    source: 13
   deployment:
     status: cloud
     note: AWS in Ireland

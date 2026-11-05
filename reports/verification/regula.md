@@ -66,3 +66,9 @@ Not disclosed: `reusable_id`; `integration.no_code` (configurable workflows, "no
 Rescore (v3.1 draft): 4.6 -> 3.8, scored weight 80% (pricing n/d: no price published, no third-party data).
 
 Fact drift: the Document Reader SDK page now says 17,000+ templates and documents; `verification_notes` and existing copy cite 16,500+. Not changed here.
+
+
+## v3.1 breadth keys 2026-11-05
+
+- case_management: yes, source 15 (IDV Platform 3.1 release notes: Session data review with manual status change and audit trail)
+- unchanged not_disclosed: ongoing_monitoring (only onboarding AML/PEP screening via connectors), transaction_monitoring, kyb_registry and sub-keys, video_ident, reusable_id (Profiles exist but are not described as reuse for returning users)

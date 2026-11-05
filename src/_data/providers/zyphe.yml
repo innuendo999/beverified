@@ -249,6 +249,10 @@ capabilities:
     status: 'yes'
     note: Part of AML screening
     source: 9
+  ongoing_monitoring:
+    status: 'yes'
+    note: daily and event-driven re-screening
+    source: 9
   transaction_monitoring:
     status: 'yes'
     note: Rules engine, not ML

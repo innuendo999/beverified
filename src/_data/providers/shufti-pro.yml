@@ -169,9 +169,17 @@ capabilities:
     status: add_on
     note: part of AML Screening suite
     source: 21
+  ongoing_monitoring:
+    status: 'yes'
+    note: re-screens existing customers after list updates
+    source: 24
   transaction_monitoring:
     status: add_on
     note: Enterprise plan
+    source: 1
+  case_management:
+    status: 'yes'
+    note: Backoffice Case Management Portal with manual review
     source: 1
   nfc:
     status: 'yes'
@@ -448,6 +456,10 @@ sources:
 - title: shuftipro-web-sdk (npm package)
   publisher: npm (maintainer Shufti)
   url: https://www.npmjs.com/package/shuftipro-web-sdk
+  accessed: '2026-11'
+- title: Ongoing Monitoring, Continuous AML Screening
+  publisher: Shufti
+  url: https://shuftipro.com/ongoing-monitoring/
   accessed: '2026-11'
 entity:
   wikidata: null

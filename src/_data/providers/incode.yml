@@ -203,6 +203,33 @@ capabilities:
     status: 'yes'
     note: configurable regional residency, North America, Latin America, Europe
     source: 23
+  ongoing_monitoring:
+    status: 'yes'
+    note: watchlist search can subscribe to updates
+    source: 21
+  case_management:
+    status: 'yes'
+    note: shared review queue with assignment
+    source: 26
+  kyb_registry:
+    status: 'yes'
+    note: official registries, page gives conflicting coverage figures
+    source: 27
+  kyb_ubo:
+    status: 'yes'
+    note: identifies UBOs
+    source: 27
+  kyb_entity_screening:
+    status: 'yes'
+    note: OFAC and other watchlists, PEP, adverse media
+    source: 27
+  kyb_monitoring:
+    status: 'yes'
+    note: ownership, registration and sanctions changes
+    source: 27
+  kyb_documents:
+    status: not_disclosed
+    note: company documents not described
 integration:
   checked: '2026-11'
   docs_public:
@@ -399,6 +426,14 @@ sources:
 - title: Mobile integration overview (Incode Developer Hub)
   publisher: Incode
   url: https://developer.incode.com/integrate-by-platform/mobile-integration-overview.md
+  accessed: '2026-11'
+- title: Case Management
+  publisher: Incode
+  url: https://www.incode.com/platform/case-management/
+  accessed: '2026-11'
+- title: Know Your Business (KYB)
+  publisher: Incode
+  url: https://www.incode.com/use-cases/know-your-business/
   accessed: '2026-11'
 entity:
   wikidata: null

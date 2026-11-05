@@ -91,3 +91,9 @@ Filled `capabilities` keys from vendor pages opened 2026-10-30. No existing valu
 ### Score flag
 
 - Ownership change (Entrust, 2024) already in facts. No incident.
+
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: add_on, source 20 (Ongoing Monitoring on Watchlist Standard and AML reports, enabled per account; not for Watchlist Mesh)
+- unchanged not_disclosed: transaction_monitoring, kyb_registry and sub-keys, case_management, video_ident, reusable_id (Entrust IDV page and watchlist docs checked)

@@ -266,6 +266,10 @@ capabilities:
     status: 'yes'
     note: one workspace with evidence and audit trail
     source: 9
+  ongoing_monitoring:
+    status: 'yes'
+    note: daily re-screening of users and businesses
+    source: 17
 certifications:
 - name: SOC 2 Type II
   what: Security controls report
@@ -349,6 +353,10 @@ sources:
 - title: Govt checks and eKYC coverage
   publisher: AiPrise
   url: https://docs.aiprise.com/docs/government-checks
+  accessed: '2026-11'
+- title: Continuous Monitoring
+  publisher: AiPrise
+  url: https://www.aiprise.com/features/continuous-monitoring
   accessed: '2026-11'
 entity:
   wikidata: null

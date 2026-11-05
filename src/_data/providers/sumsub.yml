@@ -239,6 +239,10 @@ capabilities:
   injection_detection:
     status: not_disclosed
     note: no independent injection test letter found
+  ongoing_monitoring:
+    status: add_on
+    note: Ongoing AML Monitoring on the Compliance plan
+    source: 1
   reusable_id:
     status: 'yes'
     note: Reusable KYC and Sumsub ID on Basic

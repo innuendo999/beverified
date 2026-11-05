@@ -295,6 +295,25 @@ capabilities:
     status: add_on
     note: company lookup on Growth plan, count not stated
     source: 1
+  kyb_ubo:
+    status: 'yes'
+    note: shareholder and UBO data where available
+    source: 17
+  kyb_entity_screening:
+    status: 'yes'
+    note: businesses, directors, shareholders, UBOs
+    source: 16
+  kyb_monitoring:
+    status: 'yes'
+    note: continuous screening of businesses
+    source: 16
+  kyb_documents:
+    status: not_disclosed
+    note: company documents not described
+  ongoing_monitoring:
+    status: add_on
+    note: monthly fee on Core, included on Growth
+    source: 1
 certifications:
 - name: UK DIATF certified identity service
   what: UK digital identity trust framework (Kantara, Mar 2026 to Mar 2029)
@@ -394,6 +413,14 @@ sources:
 - title: ComplyCube rolls out enhanced spoof detection (16 Nov 2021)
   publisher: PR Newswire
   url: https://prnewswire.com/news-releases/complycube-rolls-out-enhanced-spoof-detection-amid-bullish-crypto-market-301424256.html
+  accessed: '2026-11'
+- title: AML Screening Check (developer documentation)
+  publisher: ComplyCube
+  url: https://docs.complycube.com/documentation/product-guides/watchlist-pep-and-adverse-media/aml-screening-check.md
+  accessed: '2026-11'
+- title: Company Search & Insights (developer documentation)
+  publisher: ComplyCube
+  url: https://docs.complycube.com/documentation/product-guides/kyc-automation-services/company-search.md
   accessed: '2026-11'
 entity:
   wikidata: null

@@ -256,6 +256,30 @@ capabilities:
     status: 'yes'
     note: included from Basic KYC plan
     source: 1
+  ongoing_monitoring:
+    status: 'yes'
+    note: periodic AML re-screening by risk profile
+    source: 12
+  kyb_registry:
+    status: 'yes'
+    note: '200+ jurisdictions, government databases'
+    source: 19
+  kyb_ubo:
+    status: 'yes'
+    note: UBO verification
+    source: 19
+  kyb_entity_screening:
+    status: add_on
+    note: PEP and sanctions screening, Enterprise tier
+    source: 19
+  kyb_monitoring:
+    status: add_on
+    note: ongoing surveillance of entities, Enterprise tier
+    source: 19
+  kyb_documents:
+    status: 'yes'
+    note: Proof of Business document validation
+    source: 19
 certifications:
 - name: UK DIATF certified identity service
   what: Right to work, right to rent, DBS (Kantara; valid to Dec 2028)
@@ -371,6 +395,10 @@ sources:
 - title: 'AU10TIX clarifies past security event (28 Jul 2025)'
   publisher: AU10TIX
   url: https://www.au10tix.com/blog/au10tix-clarifies-past-security-event-no-evidence-of-data-exposure-or-customer-impact/
+  accessed: '2026-11'
+- title: Business Verification
+  publisher: AU10TIX
+  url: https://www.au10tix.com/solutions/business-verification/
   accessed: '2026-11'
 entity:
   wikidata: null

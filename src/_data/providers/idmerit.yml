@@ -176,6 +176,17 @@ capabilities:
     status: 'yes'
     note: IDMkyb returns beneficial owners
     source: 12
+  kyb_registry:
+    status: not_disclosed
+    note: corporate data checked, sources not named
+  ongoing_monitoring:
+    status: 'yes'
+    note: continuous monitoring in IDMaml
+    source: 9
+  case_management:
+    status: 'yes'
+    note: Dynamic Case Management named, no detail
+    source: 9
 integration:
   checked: '2026-11'
   docs_public:

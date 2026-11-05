@@ -234,6 +234,20 @@ capabilities:
   data_residency:
     status: not_disclosed
     note: nothing found on vendor pages
+  ongoing_monitoring:
+    status: 'yes'
+    note: re-screening at a chosen frequency
+    source: 15
+  transaction_monitoring:
+    status: not_disclosed
+    note: named in FAQ advice only
+  case_management:
+    status: 'yes'
+    note: single customer view, alerts by team member
+    source: 15
+  video_ident:
+    status: not_disclosed
+    note: nothing found on vendor pages
 certifications: []
 user_ratings:
 - platform: G2

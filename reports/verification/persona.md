@@ -82,3 +82,10 @@ Not disclosed: `integration.support_hours` (help center, community, no hours); `
 Rescore (v3.1 draft): 4.6 -> 3.7, all criteria scored.
 
 Score flag: the Feb 2026 exposure is counted as an incident (-1 trust). Owner to confirm it qualifies, since Persona says no personal data was exposed.
+
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: add_on, source 19 (recurring Watchlist and PEP Reports; Enterprise, limited on Growth, not on Startup or Essential)
+- transaction_monitoring: not_disclosed -> add_on, source 32 (new: Chainalysis KYT integration help article; crypto transfers mapped as Persona Transactions, alerts become Cases; scoring done by Chainalysis)
+- unchanged not_disclosed: video_ident

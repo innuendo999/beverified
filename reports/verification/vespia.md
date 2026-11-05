@@ -86,3 +86,12 @@ Yes. Vespia was acquired and its standalone sales path is gone: pricing and sign
 ### Score flag
 - Product absorbed into Veriff (acquisition Feb 2026; sign-up and pricing route to Veriff). vespia.io feature and pricing claims may be stale; v3.1 breadth and pricing rest on them.
 - v3.1 draft: 4.4 -> 3.5 (100% scored).
+
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: yes, source 2 (vespia.io: "Daily PEP, sanction, and adverse media monitoring")
+- kyb_monitoring: not_disclosed -> yes, source 2 (vespia.io: "Continuous UBO monitoring" with real-time alerts)
+- kyb_documents: not_disclosed -> yes, source 2 (vespia.io: "Access original documents" from commercial registers)
+- unchanged not_disclosed: video_ident (liveness task on camera only), reusable_id
+- Flag: vespia.io still says "Veriff is acquiring Vespia" (in progress), while the record FAQ says Vespia is now part of Veriff after a February 2026 acquisition. Not changed; owner to confirm.

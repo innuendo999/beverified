@@ -278,6 +278,14 @@ capabilities:
     status: partial
     note: EU by default, specific jurisdictions on Enterprise
     source: 26
+  ongoing_monitoring:
+    status: add_on
+    note: daily PEP and sanctions monitoring in AML plans
+    source: 21
+  case_management:
+    status: 'yes'
+    note: verifications case management portal
+    source: 21
 integration:
   checked: '2026-11'
   docs_public:

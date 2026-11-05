@@ -178,6 +178,10 @@ capabilities:
     status: 'yes'
     note: in AML Screening product
     source: 16
+  ongoing_monitoring:
+    status: 'yes'
+    note: watchlist, PEP and adverse media updates after onboarding
+    source: 16
   transaction_monitoring:
     status: not_disclosed
     note: no transaction monitoring product found

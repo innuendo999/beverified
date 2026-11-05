@@ -176,9 +176,14 @@ capabilities:
     status: 'yes'
     note: Adverse Media report, Essential plan and up
     source: 22
+  ongoing_monitoring:
+    status: add_on
+    note: recurring Watchlist and PEP Reports, Enterprise plan, limited on Growth
+    source: 19
   transaction_monitoring:
-    status: not_disclosed
-    note: no own monitoring engine found
+    status: add_on
+    note: crypto transfers via Chainalysis KYT integration, no own engine
+    source: 32
   nfc:
     status: 'yes'
     note: Mobile SDKs read passport and ID chips
@@ -317,6 +322,8 @@ track_record:
   - date: '2026-02-23'
     what: 'researchers found frontend code exposed on a government authorized server; vendor says it was fixed'
     source: 30
+    counted: false
+    note: 'Persona says it was a test environment and no personal data was exposed; noted, not deducted (owner, 2026-11-05)'
 certifications:
 - name: FedRAMP Moderate (Persona for Government)
   what: US federal cloud security, certified since 10 Apr 2026
@@ -488,6 +495,10 @@ sources:
 - title: Cases (case management)
   publisher: Persona
   url: https://withpersona.com/product/cases
+  accessed: '2026-11'
+- title: Setting up a Chainalysis Know Your Transaction (KYT) integration
+  publisher: Persona Help Center
+  url: https://help.withpersona.com/articles/1WulTGsGvhnQkYenuHvR5X/
   accessed: '2026-11'
 entity:
   wikidata: null

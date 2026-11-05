@@ -228,3 +228,9 @@ None. Nothing found that plausibly changes the editorial score. The SOC 2 Type I
 ### Score flag
 - None. SOC 2 / ISO 27001 still in progress (re-check Jan 2027). Existing v3.0 `score_breakdown` left untouched.
 - v3.1 draft: 4.0 -> 3.9 (100% scored).
+
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: yes, source 9 (AML page: lists "re-checked daily and on event-driven triggers")
+- unchanged not_disclosed: video_ident ("agents" are AI agents, no live video call)
