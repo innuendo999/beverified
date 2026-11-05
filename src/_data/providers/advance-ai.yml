@@ -11,8 +11,9 @@ logo:
   background: '#7C4DEA'
   wordmark: /assets/img/wordmarks/advance-ai.png
 tagline: Digital identity and credit risk built for Southeast Asian and APAC emerging markets
-score: 4.3
-grade: Good
+score: 3.5
+grade: Very Good
+methodology: v3.1
 primary_category: identity-verification
 legacy_rank_claim: 'ranked #17 in Identity Verification'
 categories:
@@ -59,6 +60,60 @@ pricing:
     kind: official
     source: 3
     verified: '2026-10'
+  model:
+    published: none
+    minimum: false
+    trial: true
+    source: 3
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: AdvanGuard docs and API reference open
+    source: 14
+  sdk_web:
+    status: 'yes'
+    note: Web SDK, iframe or redirect
+    source: 16
+  sdk_ios:
+    status: 'yes'
+    note: liveness SDK for iOS
+    source: 15
+  sdk_android:
+    status: 'yes'
+    note: liveness SDK for Android
+    source: 15
+  sandbox:
+    status: partial
+    note: free sign-up, test account via sales
+    source: 14
+  no_code:
+    status: partial
+    note: hosted URL created by API call
+    source: 16
+  support_hours:
+    status: partial
+    note: premium SLA offered, hours not stated
+    source: 3
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 200
+    note: 200+ countries and regions
+    source: 17
+  document_types:
+    value: 15000
+    note: 15,000+ ID templates
+    source: 17
+  non_doc:
+    status: 'yes'
+    note: Indonesian NIK database check
+    source: 18
+track_record:
+  ownership:
+    status: stable
+    note: part of Advance Intelligence Group
+    source: 8
 facts:
 - label: From
   value: Not publicly disclosed
@@ -156,6 +211,47 @@ capabilities:
     status: 'no'
     note: billing models only, quote on request
     source: 3
+  liveness:
+    status: 'yes'
+    note: passive and active liveness
+    source: 11
+  injection_detection:
+    status: 'yes'
+    note: vendor says it flags injection attacks
+    source: 11
+  reusable_id:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  data_residency:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  kyb_registry:
+    status: 'yes'
+    note: business registry verification, count not stated
+    source: 19
+  kyb_ubo:
+    status: 'yes'
+    note: beneficial owner verification
+    source: 19
+  kyb_documents:
+    status: 'yes'
+    note: upload in KYB Applications
+    source: 19
+  kyb_entity_screening:
+    status: 'yes'
+    note: company and individuals, PEP, sanctions, adverse media in KYB Applications
+    source: 19
+  kyb_monitoring:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  ongoing_monitoring:
+    status: 'yes'
+    note: active profiles monitored against updated watchlists
+    source: 12
+  case_management:
+    status: 'yes'
+    note: AML case review workflow, KYB auditor review
+    source: 12
 certifications:
 - name: ISO/IEC 27001:2013
   what: Information security (obtained Feb 2020, Indonesia)
@@ -167,7 +263,37 @@ certifications:
   source: 6
 user_ratings: []
 use_case_verdicts: []
-score_breakdown: []
+score_breakdown:
+- criterion: "Fraud defense"
+  weight: 25
+  score: 4
+  note: "PAD Level 2 lab result"
+  evidence: independent
+- criterion: "Pricing and total cost"
+  weight: 20
+  score: 2
+  note: "no published price, quoted by sales"
+  evidence: vendor
+- criterion: "Coverage"
+  weight: 15
+  score: 5
+  note: "200 countries and territories, 15,000 document types, checks without a document"
+  evidence: vendor
+- criterion: "Platform breadth"
+  weight: 15
+  score: 4
+  note: "6 of 8 modules: identity verification, KYB, sanctions screening, monitoring, case management, video ident"
+  evidence: vendor
+- criterion: "Integration and time to launch"
+  weight: 15
+  score: 3
+  note: "public API docs, web, iOS and Android SDKs"
+  evidence: vendor
+- criterion: "Trust and track record"
+  weight: 10
+  score: 3
+  note: "ISO 27001 or SOC 2 vendor-stated, operating since 2016"
+  evidence: vendor
 hands_on: null
 sources:
 - title: About us
@@ -222,6 +348,30 @@ sources:
   publisher: 'ADVANCE.AI'
   url: https://www.advance.ai/payment
   accessed: '2026-10'
+- title: Test in sandbox (AdvanGuard documentation)
+  publisher: ADVANCE.AI
+  url: https://advanguard-docs.advance.ai/docs/test-in-sandbox
+  accessed: '2026-11'
+- title: Liveness Detection (developer documentation)
+  publisher: ADVANCE.AI
+  url: https://doc-center-acmp.advance.ai/docs/liveness-detection
+  accessed: '2026-11'
+- title: Web SDK (developer documentation)
+  publisher: ADVANCE.AI
+  url: https://doc-center-acmp.advance.ai/docs/websdk
+  accessed: '2026-11'
+- title: AdvanGuard Document Verification
+  publisher: ADVANCE.AI
+  url: https://advance.ai/advanguard-document-verification/
+  accessed: '2026-11'
+- title: Database Validation (IDN) (developer documentation)
+  publisher: ADVANCE.AI
+  url: https://doc-center-acmp.advance.ai/docs/database-id-verification-idn
+  accessed: '2026-11'
+- title: About KYB and product comparison (AdvanGuard documentation)
+  publisher: ADVANCE.AI
+  url: https://advanguard-docs.advance.ai/docs/about-business-verification-kyb
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

@@ -115,3 +115,20 @@ None.
 ### Ranking cards
 
 - `kyb` card (`slug: enigma`): no monitoring claim; nothing contradicts the record.
+
+## v3.1 fields 2026-11-05
+
+- pricing.model: published core (per-match rate card), minimum false (free plan, prepaid credits), trial true (Free plan; time-limited trials ended 31 Aug 2026), source 2.
+- integration: docs_public yes (17); sandbox partial (Free plan in Console, API from Pro, 2); no_code partial (Console search and segments, KYB by API, 2); support_hours partial (support email, SLA on Enterprise only, 2); sdk_web, sdk_ios, sdk_android not_disclosed (API only).
+- coverage: countries 1 (US only, 52 jurisdictions, 5); document_types null (no document checks); non_doc add_on (SSN check against IRS records, on request, 21).
+- track_record: ownership stable (independent, venture backed, 11); incidents none found (search hits were other companies named Enigma).
+- capabilities: sanctions_pep add_on (watchlist add-on, 21); adverse_media add_on (negative news add-on, 21). liveness, injection_detection, reusable_id, data_residency not_disclosed (no IDV product).
+- Score flag: none.
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: add_on, source 8 (ongoing re-screening of persons and businesses in the separate screening product)
+- transaction_monitoring: not_disclosed (transaction screening of payments only)
+- case_management: not_disclosed
+- video_ident: not_disclosed
+- reusable_id: not_disclosed (unchanged)

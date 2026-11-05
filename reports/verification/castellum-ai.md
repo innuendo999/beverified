@@ -54,3 +54,19 @@
 ### Score flag
 
 - None.
+
+## v3.1 fields 2026-11-05
+
+New sources: 13 Using Batch Screen (support article), 14 Compliance API page.
+
+Added (key: status, source):
+- pricing.model: published none, minimum true (contract), trial false (3)
+- integration: docs_public yes, SwaggerHub API reference linked from the site (14); sandbox partial, free sandbox with no stated self-serve route (14); no_code yes, web platform with batch upload (13)
+- capabilities: kyb_entity_screening yes, KYC/KYB onboarding (1); ongoing_monitoring yes (1); list_updates yes (10); fuzzy_matching yes, Jgram matching with adjustable thresholds (10); alert_explanation yes, narrative with source references (1); audit_trail yes (1); batch_screening yes (13)
+- track_record.ownership: stable, independent and venture funded (5); incidents: none found (search hits were the unrelated Castellum, Inc.)
+
+Stayed not_disclosed: sdk_web, sdk_ios, sdk_android, support_hours, pep_tiers, risk_scoring, data_residency.
+
+Notes: the SwaggerHub reference (app.swaggerhub.com/apis-docs/castellum.ai/Search/1.0.0) is script-rendered and could not be opened by WebFetch or curl; docs_public = yes rests on the public link and the API page. Recheck in a browser.
+
+Rescore v3.1: 4.5 -> 4.2 (80%; pricing n/d). Score flag: none.

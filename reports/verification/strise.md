@@ -49,3 +49,23 @@
 
 ### Score flag
 - None.
+
+## v3.1 fields 2026-11-05
+
+Added (key: status, source):
+- pricing.model: published none, minimum null (unknown), trial false; source 1
+- capabilities.ongoing_monitoring: yes, 6
+- capabilities.list_updates: yes (Dow Jones incl. OFAC, EU, UN, HMT; real time), 6
+- capabilities.pep_tiers: yes (family and close associates), 6
+- capabilities.fuzzy_matching: yes (AI match confidence, configurable review thresholds), 6
+- capabilities.alert_explanation: yes, 6
+- capabilities.audit_trail: yes, 6
+- capabilities.risk_scoring: yes, 6
+- integration.docs_public: yes (GraphQL schema reference readable), 17 (new)
+- integration.no_code: yes (hosted customer forms sent from the UI), 16 (new)
+- track_record.ownership: stable, 10; incidents: none found
+- New sources: 15 Strise Connect API, 16 Customer facing forms, 17 Connect API reference
+
+Not disclosed: batch_screening, data_residency, sdk_web, sdk_ios, sdk_android, sandbox (API access through tech@strise.ai; self-service keys only for enabled teams), support_hours (support email, no hours). Existing case_management stays not_disclosed (not changed).
+
+Rescore: 4.4 -> 4.0 (scored weight 80%; pricing n/d). Score flag: none.

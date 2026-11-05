@@ -5,9 +5,9 @@ seo:
   description: 'Sumsub, KYCAID and Veriff lead our 2026 eKYC ranking, with Signicat and IDnow for regulated European onboarding. Compare NFC, video ident, eIDs and pricing.'
   h1: Top eKYC Solution Providers in 2026
 breadcrumb_label: Top eKYC Solution Providers
-quick_answer: 'Sumsub is our top-rated eKYC platform: one flow covers document checks, iBeta Level 3 liveness and screening, at published prices. KYCAID suits teams that want per-module prices in euros. For regulated European onboarding, Signicat offers 35+ eID methods and video identification, and IDnow is built around agent-led VideoIdent. We compared 10 providers on NFC, video ident, liveness tests and pricing.'
+quick_answer: 'Sumsub is our top-rated eKYC platform: one flow covers document checks, iBeta Level 3 liveness and screening, at published prices. Veriff is next, with UK DIATF certification and self-serve plans, and KYCAID suits teams that want per-module prices in euros. We compared 9 providers on NFC, video ident, liveness tests and pricing.'
 last_verified: '2026-10-18'
-updated: '2026-11-04'   # last content edit; last_verified = last fact re-check
+updated: '2026-11-05'
 legacy_stats:
 - value: '4'
   label: providers compared
@@ -76,9 +76,6 @@ segments:
 - segment: 'Pan-European onboarding with eIDs'
   slug: signicat
   reason: 'Signicat offers 35+ mostly European eID methods and wallets, live-agent VideoID and e-signing as an EU qualified trust service provider.'
-- segment: 'Nordic businesses (BankID, MitID)'
-  slug: verified
-  reason: 'Verified integrates Nordic and Baltic eIDs such as BankID, MitID and Smart-ID, and screens every customer daily against PEP, sanctions and adverse-media lists.'
 - segment: 'UK regulated firms (DIATF)'
   slug: onfido
   reason: 'Onfido is certified by Kantara under the UK digital verification services trust framework until March 2029, with automated document, NFC and selfie checks.'

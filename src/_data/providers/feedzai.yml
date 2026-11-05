@@ -11,8 +11,9 @@ logo:
   background: '#835AEB'
   wordmark: /assets/img/wordmarks/feedzai.png
 tagline: Enterprise payment-fraud and transaction-monitoring platform for Tier-1 banks
-score: 4.6
-grade: Great
+score: 2.9
+grade: Fair
+methodology: v3.1
 primary_category: aml/banks
 legacy_rank_claim: 'ranked #2 in AML'
 categories:
@@ -43,6 +44,11 @@ pricing:
     extra: Contact sales for a quote
   legacy_verified_note: null
   verified: '2026-10'
+  model:
+    published: none
+    minimum: true
+    trial: false
+    source: 2
   items:
   - label: Published pricing
     value: None; quote on request
@@ -155,6 +161,66 @@ capabilities:
     status: 'no'
     note: Quote on request
     source: 2
+  ongoing_monitoring:
+    status: partial
+    note: re-screening frequency set by risk policy
+    source: 8
+  list_updates:
+    status: not_disclosed
+    note: lists not named, vendor SLAs vary
+  pep_tiers:
+    status: not_disclosed
+    note: no PEP tiers or relatives described
+  fuzzy_matching:
+    status: not_disclosed
+    note: no configurable matching described
+  alert_explanation:
+    status: 'yes'
+    note: Whitebox Explanation of model decisions
+    source: 9
+  audit_trail:
+    status: 'yes'
+    note: audit trail of screenings and lists used
+    source: 8
+  risk_scoring:
+    status: 'yes'
+    note: adjustable AML scenarios and thresholds
+    source: 9
+  batch_screening:
+    status: not_disclosed
+    note: not described
+  data_residency:
+    status: not_disclosed
+    note: not stated
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: not_disclosed
+    note: no public API reference found
+  sdk_web:
+    status: not_disclosed
+    note: no SDK documentation found
+  sdk_ios:
+    status: not_disclosed
+    note: no SDK documentation found
+  sdk_android:
+    status: not_disclosed
+    note: no SDK documentation found
+  sandbox:
+    status: not_disclosed
+    note: no self-serve sandbox or trial found
+  no_code:
+    status: partial
+    note: self-service custom rule creation
+    source: 9
+  support_hours:
+    status: not_disclosed
+    note: no support hours or SLA found
+track_record:
+  ownership:
+    status: stable
+    note: privately held, founder led
+    source: 6
 certifications: []
 user_ratings:
 - platform: Gartner Peer Insights
@@ -168,7 +234,37 @@ user_ratings:
   checked: '2026-10'
   url: https://www.capterra.co.uk/software/156229/feedzai-ds
 use_case_verdicts: []
-score_breakdown: []
+score_breakdown:
+- criterion: "Screening data and match quality"
+  weight: 25
+  score: 3
+  note: "adverse media, ongoing re-screening"
+  evidence: vendor
+- criterion: "Pricing and total cost"
+  weight: 20
+  score: 2
+  note: "no published price, quoted by sales"
+  evidence: vendor
+- criterion: "Investigation and audit workflow"
+  weight: 15
+  score: 5
+  note: "case management, match reasons shown, audit trail, risk scoring"
+  evidence: vendor
+- criterion: "Platform breadth"
+  weight: 15
+  score: 4
+  note: "5 of 6 modules: sanctions screening, adverse media, monitoring, case management, identity verification"
+  evidence: vendor
+- criterion: "Integration and time to launch"
+  weight: 15
+  score: 1
+  note: "none found"
+  evidence: vendor
+- criterion: "Trust and track record"
+  weight: 10
+  score: 2
+  note: "operating since 2011"
+  evidence: vendor
 hands_on: null
 sources:
 - title: About Feedzai

@@ -11,8 +11,9 @@ logo:
   background: '#8A5CF0'
   wordmark: null
 tagline: Budget-positioned identity-verification API with broad country and data-source coverage
-score: 3.8
-grade: Good
+score: 2.5
+grade: Fair
+methodology: v3.1
 primary_category: cheap-kyc
 legacy_rank_claim: 'ranked #1 in Cheap KYC'
 categories:
@@ -43,6 +44,11 @@ pricing:
     extra: Other modules quoted by country, module and volume
   legacy_verified_note: null
   verified: '2026-10'
+  model:
+    published: none
+    minimum: null
+    trial: null
+    source: 3
   items:
   - label: List price on IDMERIT's site
     value: Not published; quoted by country, module and volume
@@ -154,6 +160,80 @@ capabilities:
     status: 'no'
     note: quoted by country, module, volume
     source: 3
+  liveness:
+    status: 'yes'
+    note: selfie liveness and face match in IDMscan
+    source: 8
+  injection_detection:
+    status: not_disclosed
+    note: deepfake recognition claimed, injection detection not described
+  reusable_id:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  data_residency:
+    status: not_disclosed
+    note: hosted on AWS, region choice not stated
+  kyb_ubo:
+    status: 'yes'
+    note: IDMkyb returns beneficial owners
+    source: 12
+  kyb_registry:
+    status: not_disclosed
+    note: corporate data checked, sources not named
+  ongoing_monitoring:
+    status: 'yes'
+    note: continuous monitoring in IDMaml
+    source: 9
+  case_management:
+    status: 'yes'
+    note: Dynamic Case Management named, no detail
+    source: 9
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: partial
+    note: portal guide public, API list after self registration
+    source: 10
+  sdk_web:
+    status: not_disclosed
+    note: web app mentioned, no web SDK described
+  sdk_ios:
+    status: 'yes'
+    note: IDMscan mobile SDK for iOS
+    source: 1
+  sdk_android:
+    status: 'yes'
+    note: IDMscan mobile SDK for Android
+    source: 1
+  sandbox:
+    status: 'yes'
+    note: free sandbox tier on self registered developer portal
+    source: 11
+  no_code:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  support_hours:
+    status: partial
+    note: phone and email listed, no hours
+    source: 1
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 180
+    note: countries and territories, homepage figure
+    source: 1
+  document_types:
+    value: 580
+    note: ID types
+    source: 1
+  non_doc:
+    status: 'yes'
+    note: IDMkyc data source checks
+    source: 1
+track_record:
+  ownership:
+    status: unknown
+    note: owners and investors not disclosed
 certifications:
 - name: SOC 2 Type 2
   what: Security controls audit
@@ -176,36 +256,36 @@ user_ratings:
   url: https://www.capterra.com/p/172041/FS-ISAC
 use_case_verdicts: []
 score_breakdown:
-- criterion: Compliance & certifications
+- criterion: "Fraud defense"
   weight: 25
-  score: 3.8
-  note: "The homepage shows SOC 2 Type 2 and ISO 27001 badges and states GDPR, HIPAA and CCPA compliance, but the only public evidence is an April 2020 press release on ISO/IEC 27001:2013, and no current certificate or SOC 2 report was found."
+  score: 2
+  note: "liveness, no lab letter"
   evidence: vendor
-- criterion: Coverage
+- criterion: "Pricing and total cost"
   weight: 20
-  score: 4.2
-  note: "The homepage claims 180+ countries and territories, 440+ data sources and 580+ ID types, plus AML screening and business verification, but other IDMERIT pages give lower country figures."
+  score: 2
+  note: "no published price, quoted by sales"
   evidence: vendor
-- criterion: Pricing transparency
-  weight: 20
-  score: 3.5
-  note: "IDMERIT publishes no rate card and says prices vary by country, module and volume. The only figure is a Basic plan from $0.10 per user per month on Capterra, and that unit is unclear for an identity check."
-  evidence: vendor
-- criterion: Integration & API depth
+- criterion: "Coverage"
   weight: 15
-  score: 3.6
-  note: "IDMERIT sells its checks as an API and its FAQ describes free testing in a sandbox with sample data, but API documentation and SDKs are not described in the sources for this review."
-  evidence: vendor
-- criterion: Support responsiveness
-  weight: 10
-  score: 3.8
-  note: "Capterra reviewers describe responsive support, but there is little public information on support channels or SLAs, and the number of reviews is small."
-  evidence: user
-- criterion: Track record
-  weight: 10
   score: 3.5
-  note: "IDMERIT says it has sourced identity data for over a decade but gives no founding year. Third-party listings disagree on that year and on the HQ city, and no company register entry was found."
-  evidence: independent
+  note: "180 countries and territories, 580 document types, checks without a document"
+  evidence: vendor
+- criterion: "Platform breadth"
+  weight: 15
+  score: 4
+  note: "5 of 8 modules: identity verification, sanctions screening, monitoring, case management, video ident"
+  evidence: vendor
+- criterion: "Integration and time to launch"
+  weight: 15
+  score: 2.5
+  note: "self-serve sandbox or trial, 2 of 3 SDKs"
+  evidence: vendor
+- criterion: "Trust and track record"
+  weight: 10
+  score: 1
+  note: "ISO 27001 or SOC 2 vendor-stated, incident 2026-02-20"
+  evidence: vendor
 hands_on: null
 sources:
 - title: IDMERIT homepage (services, coverage, compliance)
@@ -244,6 +324,22 @@ sources:
   publisher: 'IDMERIT'
   url: https://www.idmerit.com/aml-solutions-services/
   accessed: '2026-10'
+- title: Introduction to Developer Portal
+  publisher: IDMERIT
+  url: https://idmkyc-doc2.idmerit.com/idmkyc
+  accessed: '2026-11'
+- title: Subscribing to Sandbox Tier
+  publisher: IDMERIT
+  url: https://idmkyc-doc2.idmerit.com/idmkyc/introduction-to-developer-portal/subscribing-to-sandbox-tier
+  accessed: '2026-11'
+- title: Know Your Business (KYB) Verification Solution (IDMkyb)
+  publisher: IDMERIT
+  url: https://idmerit.com/idmkyb
+  accessed: '2026-11'
+- title: IDMerit disputes report of 1B records exposed in unsecured ID verification database (20 Feb 2026)
+  publisher: Biometric Update
+  url: https://www.biometricupdate.com/202602/idmerit-disputes-report-of-1b-records-exposed-in-unsecured-id-verification-database
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

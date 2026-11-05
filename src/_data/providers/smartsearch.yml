@@ -11,8 +11,9 @@ logo:
   background: '#7247DE'
   wordmark: null
 tagline: UK-first AML/KYC verification built for JMLSG-regulated professions
-score: 4.4
+score: 3.8
 grade: Very Good
+methodology: v3.1
 primary_category: aml
 legacy_rank_claim: 'ranked #10 in AML'
 categories:
@@ -62,6 +63,11 @@ pricing:
     kind: official
     source: 9
     verified: '2026-10'
+  model:
+    published: none
+    minimum: null
+    trial: false
+    source: 9
 facts:
 - label: From
   value: Not publicly disclosed
@@ -173,6 +179,89 @@ capabilities:
     note: tiers listed without prices
     source: 9
   checked: '2026-10'
+  kyb_registry:
+    status: 'yes'
+    note: Companies House registration check
+    source: 17
+  kyb_ubo:
+    status: 'yes'
+    note: PSC and UBO data from Experian
+    source: 17
+  kyb_entity_screening:
+    status: 'yes'
+    note: business and directors screened
+    source: 17
+  kyb_documents:
+    status: 'yes'
+    note: filings and confirmation statements
+    source: 17
+  kyb_monitoring:
+    status: 'yes'
+    note: ongoing UBO monitoring
+    source: 1
+  ongoing_monitoring:
+    status: 'yes'
+    note: nightly re-screening of monitored customers
+    source: 14
+  list_updates:
+    status: 'yes'
+    note: Dow Jones Watchlist updated daily
+    source: 14
+  pep_tiers:
+    status: 'yes'
+    note: relatives and close associates of PEPs
+    source: 14
+  fuzzy_matching:
+    status: partial
+    note: fuzzy matching, thresholds not stated
+    source: 14
+  alert_explanation:
+    status: not_disclosed
+    note: match reasons not described
+  audit_trail:
+    status: 'yes'
+    note: audit trail of alerts, reviews, actions
+    source: 14
+  risk_scoring:
+    status: 'yes'
+    note: customisable risk assessment and rule based workflows
+    source: 15
+  batch_screening:
+    status: not_disclosed
+    note: bulk onboarding shown, no feature described
+  data_residency:
+    status: not_disclosed
+    note: hosting location not stated
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: not_disclosed
+    note: no public API reference linked
+  sdk_web:
+    status: not_disclosed
+    note: browser platform, no SDK listed
+  sdk_ios:
+    status: not_disclosed
+    note: no SDK listed
+  sdk_android:
+    status: not_disclosed
+    note: no SDK listed
+  sandbox:
+    status: not_disclosed
+    note: demo offered, no trial or sandbox stated
+  no_code:
+    status: 'yes'
+    note: SMS link for client document checks
+    source: 16
+  support_hours:
+    status: 'yes'
+    note: phone support, weekday office hours
+    source: 1
+track_record:
+  ownership:
+    status: changed_disclosed
+    note: Triple Private Equity majority stake
+    source: 3
 certifications:
 - name: UK DIATF (SmartDoc Advanced with Facial Recognition and Fraud Check)
   what: Digital identity, Identity role
@@ -189,7 +278,37 @@ user_ratings:
   checked: '2026-10'
   url: https://www.g2.com/products/smartsearch-2021-01-07/reviews
 use_case_verdicts: []
-score_breakdown: []
+score_breakdown:
+- criterion: "Screening data and match quality"
+  weight: 25
+  score: 5
+  note: "stated list update frequency, PEP tiers, adverse media, configurable fuzzy matching, ongoing re-screening"
+  evidence: vendor
+- criterion: "Pricing and total cost"
+  weight: 20
+  score: 2
+  note: "no published price, quoted by sales"
+  evidence: vendor
+- criterion: "Investigation and audit workflow"
+  weight: 15
+  score: 4
+  note: "case management, audit trail, risk scoring"
+  evidence: vendor
+- criterion: "Platform breadth"
+  weight: 15
+  score: 5
+  note: "6 of 6 modules: sanctions screening, adverse media, monitoring, case management, KYB, identity verification"
+  evidence: vendor
+- criterion: "Integration and time to launch"
+  weight: 15
+  score: 3
+  note: "no-code or hosted flow, published support hours"
+  evidence: vendor
+- criterion: "Trust and track record"
+  weight: 10
+  score: 3.5
+  note: "trust framework confirmed, operating since 2011"
+  evidence: vendor
 hands_on: null
 sources:
 - title: SmartSearch homepage
@@ -244,6 +363,22 @@ sources:
   publisher: SmartSearch
   url: https://smartsearch.com/resources/help-centre/faqs/who-do-smartsearch-work-with
   accessed: '2026-10'
+- title: Sanctions and PEP, SIP and RCA screening
+  publisher: SmartSearch
+  url: https://www.smartsearch.com/solutions/sanctions-and-pep-sip-rca-screening
+  accessed: '2026-11'
+- title: Configurability and automation
+  publisher: SmartSearch
+  url: https://www.smartsearch.com/solutions/configurability-and-automation
+  accessed: '2026-11'
+- title: SmartDoc
+  publisher: SmartSearch
+  url: https://www.smartsearch.com/solutions/smartdoc
+  accessed: '2026-11'
+- title: Know your business checks
+  publisher: SmartSearch
+  url: https://www.smartsearch.com/solutions/know-your-business-checks
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

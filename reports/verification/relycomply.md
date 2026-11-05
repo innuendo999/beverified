@@ -68,3 +68,22 @@ Arithmetic (support excluded, weights sum to 90): (25 × 3.4 + 20 × 4.2 + 20 ×
 - Track record cites only what the record holds: the 16 Sep 2026 disclosure, client notices that customer data may have been accessed, Peach Payments moving services, the unverified Dire Wolf claim, and the investigation still ongoing at the 22 Sep 2026 update.
 - The `aml` and `south-africa` ranking cards are untouched; rank order in `rankings.yml` is an editor decision.
 - `node scripts/checks/provider.mjs` flags `score` and `grade` as changed against HEAD; this is the intended, owner-approved change.
+
+## v3.1 fields 2026-11-05
+
+Rescore (not applied): 3.4 -> 3.8, scored weight 80% (pricing not disclosed).
+
+Added:
+- pricing.model: published none, minimum true, trial false (source 1)
+- capabilities.kyb_entity_screening: yes, listed under KYB (1)
+- capabilities.ongoing_monitoring: yes (8); list_updates: partial, daily, lists not named (8); fuzzy_matching: yes (8); audit_trail: yes (9); risk_scoring: yes, user-set rules (9)
+- integration.no_code: yes, low-code or no-code alert handling (9)
+- track_record.ownership: unknown; incidents: 2026-09-16 cyber incident (5)
+
+Not disclosed: pep_tiers, alert_explanation, batch_screening, data_residency, docs_public (auto-generated docs, access not stated), all SDKs, sandbox (developer sandboxes named, self-serve not stated), support_hours.
+
+Score flags:
+- Incident: counted, -1 in Trust (sub-score 1).
+- Stale content: the RelyComply notice (source 5) now reads "Last updated 2 November 2026". The forensic investigation concluded on 1 October 2026; it confirmed data was removed but could not establish which records; Metabase was decommissioned; no verified evidence of public release; reported to the Information Regulator on 10 September 2026 (ref SC20263150). The record's verdict, what_is, facts "Incident status", cons and FAQ still say the investigation was ongoing. Needs a content update (not made here).
+- Trust gets no tenure point because the record uses the fact label "Operating since", not "Founded".
+- The old v3.0 score_breakdown[] is still in the record; left as is.

@@ -49,3 +49,22 @@
 ### Score flag
 
 - None.
+
+## v3.1 fields 2026-11-05
+
+Added (key: status, source):
+- pricing.model: published none, minimum true (monthly commitment by volume), trial false (no self-serve trial; demo and pilot), source 2
+- capabilities.ongoing_monitoring: yes, 9 (new source: AML screening page)
+- capabilities.list_updates: partial, 9 (daily updates stated; lists not named, "1000s of sanction lists")
+- capabilities.fuzzy_matching: partial, 9 (fuzzy and contextual matching, aliases; thresholds not described)
+- capabilities.audit_trail: yes, 7; risk_scoring: yes, 7 (case management page)
+- capabilities.data_residency: add_on, 2 (Enterprise tier)
+- integration.sandbox: no, 2 (sandbox is described on the API portal, source 10, but the pricing page says there is no self-serve trial)
+- integration.no_code: yes, 5 (OpsFlow)
+- track_record.ownership: stable, 3 (founder-led, no change found); incidents: none found
+
+Not disclosed: pep_tiers, alert_explanation, batch_screening, integration.docs_public (dashboard.kychub.com/v3/api-docs is script-rendered; WebFetch saw only the page head, so this is not a finding that docs are private), sdk_web, sdk_ios, sdk_android (portal mentions SDKs without naming platforms), support_hours.
+
+Rescore: 4.5 -> 4.0 (80% of weight scored; pricing n/d, no figures and no third-party data).
+
+Score flag: none new. Operator entity still unconfirmed in a registry (MerlinAI Labs Pvt Ltd on the about page, Obsessory Online Services Pvt. Ltd. in the privacy policy), as in the October notes.

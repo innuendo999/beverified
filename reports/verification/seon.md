@@ -68,3 +68,27 @@ Why it cannot reach 4.6: on the current scale, vendor-stated certification score
 - transaction_monitoring: add_on (separate AML Transaction Monitoring product), source 15: https://seon.io/products/aml-transaction-monitoring/
 
 Pricing (source 1) lists AML Compliance only on the Premium plan; Starter excludes it. IDV and AML Transaction Monitoring are separate products not listed in either plan, so add_on. Record source 6 (IDV product page) could not be re-opened today; docs page used instead.
+
+## v3.1 fields 2026-11-05
+
+Added (key: status, source):
+- pricing.model: published core, minimum true (Starter $699 plan fee), trial false; source 1. Trial page (16) offers 2 seats and 500 manual checks, but requests are reviewed and a fraud expert follows up, so it is not counted as a trial without a sales call. Owner may want to review this call.
+- capabilities.case_management: add_on (Premium only), 1
+- capabilities.kyb_entity_screening: yes (AML Entity API), 18 (new)
+- capabilities.ongoing_monitoring: yes, 13
+- capabilities.list_updates: partial (lists named with version dates, no update frequency), 17 (new)
+- capabilities.fuzzy_matching: yes, 13
+- capabilities.alert_explanation: partial (match type and relevancy score per hit), 17
+- capabilities.audit_trail: yes, 20 (new)
+- capabilities.risk_scoring: yes, 13
+- capabilities.data_residency: partial (US and APAC API endpoints besides default), 18
+- integration.docs_public: yes, 21 (new); sdk_web, sdk_ios, sdk_android: yes, 19 (new; also React Native and Flutter)
+- integration.sandbox: partial (trial on request, reviewed), 16 (new)
+- integration.no_code: yes (drag and drop workflow builder), 4
+- integration.support_hours: yes (tickets and email on Starter, 24/7 on Premium), 1
+- track_record.ownership: stable, 9; incidents: none found
+- New sources: 16 to 21
+
+Not disclosed: pep_tiers (API shows a PEP match flag only), batch_screening. Trust centre (trust.seon.io) not re-read. nfc not added: IDV page not re-opened this pass.
+
+Rescore: 4.5 -> 4.6 (scored weight 100%). Score flag: none.

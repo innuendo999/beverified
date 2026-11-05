@@ -67,3 +67,22 @@
 - transaction_monitoring: not_disclosed (named only as an integration use case), no source
 
 AiPrise says its global AML screening "is powered by ComplyAdvantage"; set to add_on under the named-partner rule (it is sold by AiPrise as its own AML check). Docs also list Continuous AML Monitoring. Transaction monitoring is named only as an integration use case.
+
+## v3.1 fields 2026-11-05
+
+- pricing.model: published none (G2 third-party prices only), minimum false, trial false (own site offers demo only), source 1. aiprise.com/pricing still returns a client error.
+- integration: docs_public yes (11); sdk_web yes (11); sdk_ios partial and sdk_android partial (WebView flow, React Native or Flutter SDK, 13); no_code yes (hosted verification URL, flow edited in dashboard, 11); support_hours partial (Slack, chat, email, no hours, 14); sandbox not_disclosed (sandbox keys exist, self-serve access not stated).
+- coverage: countries 200 (200+ countries and territories, 15); document_types null (not stated); non_doc yes (government database eKYC checks, 16). Note: KYC docs page says templates support documents from 40+ countries, which conflicts with 200+.
+- track_record: ownership stable (founder led, Series A, 3); incidents none found.
+- capabilities: liveness yes (11); case_management yes (KYB page, 9). injection_detection not_disclosed (homepage claims deepfake detection, injection not named); reusable_id, data_residency not_disclosed.
+- No lab letter for liveness found, so Fraud defense = 2.
+- New sources 13 to 16.
+- Score flag: none.
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: yes, source 17 (new: Continuous Monitoring page; daily re-screening of users and businesses)
+- transaction_monitoring: not_disclosed (unchanged; Continuous Monitoring page says it does not cover transaction monitoring, which is not a statement that the product is not offered)
+- video_ident: not_disclosed (unchanged, nothing on homepage or product pages)
+- reusable_id: not_disclosed (unchanged; Reverification feature re-runs checks, no reuse without new scan stated)
+- case_management, kyb_*: unchanged

@@ -59,3 +59,25 @@
 - adverse_media: yes. https://www.complycube.com/en/pricing/ (source 1; Extensive AML screening tier, from Starter)
 - transaction_monitoring: not_disclosed. only pre-payment transaction screening found (https://www.complycube.com/en/solutions/due-diligence-compliance/anti-money-laundering/transaction-screening-software/); pricing page lists no transaction monitoring
 - No existing values changed (the four keys were empty). capabilities.checked stays 2026-10.
+
+## v3.1 fields 2026-11-05
+
+- pricing.model: published core (per-check prices for Starter and Core), minimum true (paid monthly plan), trial true (14-day trial with 50 free checks), source 1.
+- integration: docs_public yes (10); sdk_web yes (10); sdk_ios yes, sdk_android yes (11); sandbox yes (1); no_code yes (hosted Flow page and Web Portal, 10, see also 14); support_hours partial (channels and SLA by plan, no hours, 1).
+- coverage: countries 250, document_types 13000 (document check coverage page, 12); non_doc add_on (database checks on Growth, 1). Note: the about page and the record's Regions fact say 220+ countries; the docs coverage page says 250+. Score is the same either way.
+- track_record: ownership stable (Teemo Technology Ltd active, 9); incidents none found.
+- capabilities: liveness yes (1); injection_detection partial (only a 16 Nov 2021 release naming injected video, 15); data_residency yes (regional hosting by account location, custom on Enterprise, 13); case_management yes (1); kyb_registry add_on (company lookup on Growth, 1).
+- Still not_disclosed: reusable_id, video_ident, transaction_monitoring. Founded fact is missing in the record, so no years-in-operation point.
+- New sources 10 to 15.
+- Score flag: none.
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: add_on, source 1 (continuous monitoring a monthly fee on Core, included on Growth)
+- kyb_ubo: yes, source 17 (new: Company Search & Insights docs)
+- kyb_entity_screening: yes, source 16 (new: AML Screening Check docs, businesses and related persons)
+- kyb_monitoring: yes, source 16
+- kyb_documents: not_disclosed
+- transaction_monitoring: not_disclosed (unchanged, no docs entry)
+- video_ident: not_disclosed (unchanged; only video selfie liveness)
+- reusable_id: not_disclosed (unchanged; Face Authentication Check for returning users exists, kept n/d for consistency with how iDenfy face auth is treated, owner to decide)

@@ -46,3 +46,19 @@
 ### Score flag
 
 - None.
+
+## v3.1 fields 2026-11-05
+
+Rescore (not applied): 4.6 -> 2.6, scored weight 80% (pricing not disclosed).
+
+Added:
+- pricing.model: published none, minimum true, trial false (source 2)
+- capabilities.fuzzy_matching: partial, entity resolution, thresholds not stated (7); alert_explanation: partial (7); risk_scoring: yes (8)
+- track_record.ownership: stable, private and venture backed (4); incidents: none found
+
+Not disclosed: ongoing_monitoring, list_updates, pep_tiers, audit_trail, batch_screening, data_residency, and every integration key (docs.quantexa.com blocks automated reading, robots; no SDK, sandbox, no-code or support hours found on quantexa.com).
+
+Score flags:
+- Large drop, driven by the AML screening rubric: Quantexa is a graph and entity resolution platform that overlays existing screening, so most screening keys are not on its pages. Owner may want a manual review note.
+- Existing adverse_media stays not_disclosed (unchanged); Quantexa acquired Aylien (news intelligence) earlier, but no current adverse media product page was checked.
+- IPO and Warburg Pincus stake sale still exploratory; no new report found.

@@ -74,3 +74,34 @@ Arithmetic: (25 × 3.8 + 20 × 4.2 + 20 × 3.5 + 15 × 3.6 + 10 × 3.8 + 10 × 3
 - transaction_monitoring: yes (IDMaml transaction monitoring), source 9: https://www.idmerit.com/aml-solutions-services/
 
 IDMscan (document plus selfie liveness) and IDMaml (screening, adverse media, transaction monitoring) are separate IDMERIT products quoted by module; set to yes as own products with no tier gating published.
+
+## v3.1 fields 2026-11-05
+
+### Added
+
+- `pricing.model`: published none, minimum null, trial null (source 3). No price on idmerit.com; the only figure is the Capterra listing (source 4).
+- `integration` (checked 2026-11): docs_public partial, developer portal guide is public but the API list needs a (self-registered) portal account (10); sdk_ios, sdk_android yes, "SDK (iOS/Android) & Webapp" (1); sandbox yes, "Sandbox Tier is Free for Testing & Integration Purposes" with self-registration (11); support_hours partial, phone and email, no hours (1); sdk_web and no_code not_disclosed.
+- `coverage`: countries 180, document_types 580 ("580+ ID types"), non_doc yes, 440+ data sources (all source 1). The FAQ still says over 90 countries (source 3); homepage figure used, as before.
+- `track_record`: ownership unknown (no owner or investor information on vendor pages); incidents: 2026-02-20, Cybernews reported an unsecured database with about one billion identity records linked to IDMERIT; IDMERIT says its systems were never compromised and calls it ransom-related (new source 13, Biometric Update, updated 26 Feb 2026).
+- `capabilities`: liveness yes (8); kyb_ubo yes, IDMkyb lists UBOs (12); injection_detection, reusable_id, data_residency not_disclosed (AWS hosting, no region choice stated).
+- New sources 10 to 13.
+
+### Still not_disclosed
+
+- sdk_web, no_code, injection_detection, reusable_id, data_residency, nfc, kyb_registry (IDMkyb names no registries), ownership.
+
+### Rescore
+
+- 3.8 -> 2.3 (scored weight 100%).
+
+### Score flag
+
+- Incident: reported data exposure, Feb 2026 (disputed by IDMERIT). Counts as -1 in trust. The review page does not mention it yet; owner to decide on wording.
+- Pricing sub-score 2 rests on the Capterra "$0.10 per user per month" listing, whose unit is unclear (see verification_notes); the owner may prefer to treat pricing as not disclosed.
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: yes, source 9 (IDMaml continuous monitoring)
+- case_management: yes, source 9 (Dynamic Case Management named, no detail)
+- kyb_registry: not_disclosed (IDMkyb verifies corporate data, registry sources not named)
+- reusable_id: not_disclosed (unchanged)

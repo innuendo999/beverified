@@ -68,3 +68,32 @@ Filled `capabilities` keys from vendor pages opened 2026-10-30. No existing valu
 
 - Note: Watchlist Standard covers sanctions, PEPs and legal/regulatory warnings; Watchlist AML adds adverse media. Ongoing monitoring must be enabled by Entrust. A Watchlist Mesh variant runs through a ComplyAdvantage task in Studio (one-off screening only).
 - Note: The Entrust IDV product page mentions "high-risk transaction protection" as an add-on without describing it; not counted as AML transaction monitoring.
+
+## v3.1 fields 2026-11-05
+
+### Added
+
+- `pricing.model`: published none, minimum null, trial null (source 1). Price data is third-party only (G-Cloud 14, Vendr), so the rubric gives 2.
+- `integration` (checked 2026-11): docs_public yes, API reference open without login (21); sdk_web, sdk_ios, sdk_android yes (6); no_code yes, Workflow Studio and "completely no-code" Smart Capture Link (22); support_hours partial, identity-client-support@entrust.com, no hours (21); sandbox not_disclosed (sandbox requests are free but need a registered Entrust account; self-serve sign-up not stated).
+- `coverage`: countries 195, document_types 2,500 ("more than 2,500 separate documents and passports", source 2); non_doc yes, Identity Enhanced report against credit and other databases (23).
+- `track_record`: ownership changed_disclosed, Entrust acquisition completed 9 Apr 2024 (5); incidents none found since Nov 2024 (Entrust ransomware attack was June 2022; Entrust sold its public certificate business to Sectigo in Jan 2025, not the IDV business).
+- `capabilities`: liveness yes (1); injection_detection yes, "deepfakes and injection attacks" on the product page, no IAD lab letter found (1); data_residency yes, "region-specific environments: EU, US, and Canada" for data at rest (21); reusable_id not_disclosed (onboarding identity anchors passkeys; Known Faces is duplicate detection).
+- New sources 21 to 23.
+
+### Still not_disclosed
+
+- sandbox, reusable_id, transaction_monitoring, video_ident.
+
+### Rescore
+
+- 4.5 -> 3.4 (scored weight 100%). Breadth 2 (only IDV and watchlist screening count).
+
+### Score flag
+
+- Ownership change (Entrust, 2024) already in facts. No incident.
+
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: add_on, source 20 (Ongoing Monitoring on Watchlist Standard and AML reports, enabled per account; not for Watchlist Mesh)
+- unchanged not_disclosed: transaction_monitoring, kyb_registry and sub-keys, case_management, video_ident, reusable_id (Entrust IDV page and watchlist docs checked)

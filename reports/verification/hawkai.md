@@ -55,3 +55,24 @@
 ### Score flag
 
 - None.
+
+## v3.1 fields 2026-11-05
+
+Added (key: status, source):
+- pricing.model: published none, minimum null (not stated), trial null (not stated; demo on request), source 2
+- capabilities.ongoing_monitoring: yes, 8
+- capabilities.list_updates: partial, 8 (OFAC, HMT, EU, UN named; no refresh schedule stated)
+- capabilities.pep_tiers: yes, 8 (PEP levels and RCA)
+- capabilities.fuzzy_matching: yes, 8
+- capabilities.alert_explanation: yes, 2
+- capabilities.audit_trail: yes, 10 (new source: customer risk rating page)
+- capabilities.risk_scoring: yes, 10
+- capabilities.batch_screening: yes, 8
+- integration.no_code: yes, 8 (no-code rule builder)
+- track_record.ownership: stable, 4; incidents: none found (search for acquisition, breach, fine since Nov 2024)
+
+Not disclosed: capabilities.data_residency (SaaS or private cloud, no region choice), integration.docs_public (no public API reference found), sdk_web, sdk_ios, sdk_android (none listed), sandbox (demo only), support_hours (only 24/7 security monitoring, not support).
+
+Rescore: 4.6 -> 3.6 (all criteria scored). Pricing sub-score 2 comes from the AWS Marketplace private-offer item (kind third_party), which is a listing, not contract data; without it pricing would be n/d. Owner may want to review that rule.
+
+Score flag: none (no ownership change, no incident, no product retired).

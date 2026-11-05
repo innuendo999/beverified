@@ -51,3 +51,28 @@
 
 ### Score flag
 - None. IDV with selfie and liveness, plus a transaction monitoring product, broadens the offering; this supports rather than lowers the current score.
+
+## v3.1 fields 2026-11-05
+
+Added (key: status, source):
+- pricing.model: published none, minimum null (not stated), trial true (30-day transaction monitoring trial, self-serve sign-up, no card), source 8
+- capabilities.ongoing_monitoring: yes, 11 (new source: PEP and sanctions screening page; daily rescreening of the monitoring list)
+- capabilities.list_updates: yes, 11 (OFAC, UN, EU, HMT named; 24-hour refresh cycle)
+- capabilities.pep_tiers: yes, 11 (FATF PEP categories; RCA screened in the same check; API categories include RCA)
+- capabilities.fuzzy_matching: yes, 11 (phonetic and fuzzy matching, close-match threshold per organisation)
+- capabilities.alert_explanation: yes, 11 (AI Analysis explains which identifiers align, does not decide)
+- capabilities.audit_trail: yes, 1; risk_scoring: yes, 1; data_residency: yes, 1 (regional instances for Oceania, Europe, Southeast Asia, GCC)
+- capabilities.batch_screening: yes, 11 (CSV or XML batch upload; batch scan endpoints in the API reference)
+- capabilities.kyb_registry, kyb_ubo, kyb_documents, kyb_entity_screening: yes, 13 (new source: Know Your Business page)
+- integration.docs_public: yes, 12 (new source: api.membercheck.com/docs, readable without login; the api-integration page says the reference is sent by the product team, but the reference itself is public)
+- integration.sandbox: partial, 8 (self-serve trial for transaction monitoring only; screening sandbox on request; demo API base URL in the reference)
+- track_record.ownership: stable, 2; incidents: none found
+
+Not disclosed: kyb_monitoring (company-level monitoring not described), integration.sdk_web, sdk_ios, sdk_android, no_code, support_hours.
+
+Rescore: 4.3 -> 4.3 (80% of weight scored; pricing n/d, no figures and no third-party data).
+
+Score flag: none (no incident, sale or shutdown). Two content notes for the next fact pass, not changed here:
+- Con "Australian-based group with no published hosting region" is now contradicted by the homepage, which lists regional instances for Oceania, Europe, Southeast Asia and the GCC (source 1).
+- The "Start free trial" button on the screening page goes to the contact page, so screening has no self-serve trial; only transaction monitoring does.
+- Neurocom Group to Nexiant AI Pty Ltd legal link still unconfirmed (as in October notes).

@@ -11,8 +11,9 @@ logo:
   background: '#5E35D6'
   wordmark: /assets/img/wordmarks/incode.png
 tagline: Biometric identity verification platform built on a large proprietary identity dataset
-score: 4.7
-grade: Great
+score: 3.9
+grade: Very Good
+methodology: v3.1
 primary_category: identity-verification
 legacy_rank_claim: 'ranked #12 in Identity Verification'
 categories:
@@ -43,6 +44,11 @@ pricing:
     extra: Contact sales for a quote
   legacy_verified_note: null
   verified: '2026-10'
+  model:
+    published: none
+    minimum: null
+    trial: null
+    source: 9
   items:
   - label: List price
     value: Not publicly disclosed; quoted on request
@@ -182,6 +188,97 @@ capabilities:
   age_reusable:
     status: not_disclosed
     note: no age token found
+  liveness:
+    status: 'yes'
+    note: Deepsight liveness, iBeta Level 3 letter on record
+    source: 2
+  injection_detection:
+    status: 'yes'
+    note: Deepsight camera trust blocks virtual cameras, no lab letter found
+    source: 22
+  reusable_id:
+    status: 'yes'
+    note: verify once, reuse everywhere
+    source: 2
+  data_residency:
+    status: 'yes'
+    note: configurable regional residency, North America, Latin America, Europe
+    source: 23
+  ongoing_monitoring:
+    status: 'yes'
+    note: watchlist search can subscribe to updates
+    source: 21
+  case_management:
+    status: 'yes'
+    note: shared review queue with assignment
+    source: 26
+  kyb_registry:
+    status: 'yes'
+    note: official registries, page gives conflicting coverage figures
+    source: 27
+  kyb_ubo:
+    status: 'yes'
+    note: identifies UBOs
+    source: 27
+  kyb_entity_screening:
+    status: 'yes'
+    note: OFAC and other watchlists, PEP, adverse media
+    source: 27
+  kyb_monitoring:
+    status: 'yes'
+    note: ownership, registration and sanctions changes
+    source: 27
+  kyb_documents:
+    status: not_disclosed
+    note: company documents not described
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: developer.incode.com readable without login
+    source: 24
+  sdk_web:
+    status: 'yes'
+    note: Incode Web SDK
+    source: 24
+  sdk_ios:
+    status: 'yes'
+    note: native iOS SDK
+    source: 25
+  sdk_android:
+    status: 'yes'
+    note: native Android SDK
+    source: 25
+  sandbox:
+    status: not_disclosed
+    note: demo environment through an Incode representative
+  no_code:
+    status: 'yes'
+    note: visual Workflow Builder, no code
+    source: 2
+  support_hours:
+    status: partial
+    note: enterprise SLAs and support tiers, no hours published
+    source: 23
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 190
+    note: countries and territories
+    source: 2
+  document_types:
+    value: 4900
+    note: document types
+    source: 2
+  non_doc:
+    status: 'yes'
+    note: non document verification and government record checks
+    source: 2
+track_record:
+  ownership:
+    status: stable
+    note: venture backed, acquirer of AuthenticID, MetaMap and Identiq
+    source: 13
 certifications:
 - name: ISO/IEC 30107-3 Level 3 (iBeta)
   what: Liveness / presentation attack detection
@@ -227,7 +324,37 @@ user_ratings:
   checked: '2026-10'
   url: https://www.gartner.com/reviews/product/incode
 use_case_verdicts: []
-score_breakdown: []
+score_breakdown:
+- criterion: "Fraud defense"
+  weight: 25
+  score: 5
+  note: "PAD Level 3 lab result, NFC"
+  evidence: independent
+- criterion: "Pricing and total cost"
+  weight: 20
+  score: 2
+  note: "no published price, quoted by sales"
+  evidence: vendor
+- criterion: "Coverage"
+  weight: 15
+  score: 3.5
+  note: "190 countries and territories, 4,900 document types, checks without a document"
+  evidence: vendor
+- criterion: "Platform breadth"
+  weight: 15
+  score: 5
+  note: "8 of 8 modules: identity verification, KYB, sanctions screening, monitoring, case management, video ident, reusable ID, age checks"
+  evidence: vendor
+- criterion: "Integration and time to launch"
+  weight: 15
+  score: 4
+  note: "public API docs, no-code or hosted flow, web, iOS and Android SDKs"
+  evidence: vendor
+- criterion: "Trust and track record"
+  weight: 10
+  score: 3.5
+  note: "ISO 27001 or SOC 2 vendor-stated, data residency or on-premises, operating since 2015"
+  evidence: vendor
 hands_on: null
 sources:
 - title: Incode Named a Leader in the 2026 Gartner Magic Quadrant for Identity Verification for the Third Consecutive Year
@@ -314,6 +441,30 @@ sources:
   publisher: Incode
   url: https://developer.incode.com/features-and-modules/watchlist/
   accessed: '2026-10'
+- title: Deepsight (Incode Developer Hub)
+  publisher: Incode
+  url: https://developer.incode.com/features-and-modules/deepsight.md
+  accessed: '2026-11'
+- title: Frequently Asked Questions
+  publisher: Incode
+  url: https://www.incode.com/faq
+  accessed: '2026-11'
+- title: Web SDK integration (Incode Developer Hub)
+  publisher: Incode
+  url: https://developer.incode.com/integrate-by-platform/web-integrations-websdk.md
+  accessed: '2026-11'
+- title: Mobile integration overview (Incode Developer Hub)
+  publisher: Incode
+  url: https://developer.incode.com/integrate-by-platform/mobile-integration-overview.md
+  accessed: '2026-11'
+- title: Case Management
+  publisher: Incode
+  url: https://www.incode.com/platform/case-management/
+  accessed: '2026-11'
+- title: Know Your Business (KYB)
+  publisher: Incode
+  url: https://www.incode.com/use-cases/know-your-business/
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

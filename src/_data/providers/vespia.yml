@@ -11,8 +11,9 @@ logo:
   background: '#7C4DEA'
   wordmark: null
 tagline: Global KYB, now part of Veriff after a February 2026 acquisition
-score: 4.4
-grade: Very Good
+score: 4.0
+grade: Great
+methodology: v3.1
 primary_category: kyb
 legacy_rank_claim: 'ranked #5 in KYB'
 categories:
@@ -48,6 +49,11 @@ pricing:
     extra: New sign-ups now go through Veriff
   legacy_verified_note: null
   verified: '2026-11'
+  model:
+    published: core
+    minimum: null
+    trial: null
+    source: 2
   index:
     product: 'AML and KYB'
     price:
@@ -169,15 +175,99 @@ capabilities:
     note: businesses against sanctions and watchlists
     source: 5
   kyb_monitoring:
-    status: not_disclosed
-    note: not on current Veriff KYB pages
+    status: 'yes'
+    note: alerts on UBO structure changes, per vespia.io
+    source: 2
   kyb_documents:
-    status: not_disclosed
-    note: not on current Veriff KYB pages
+    status: 'yes'
+    note: original register documents, per vespia.io
+    source: 2
   kyb_pricing:
     status: partial
     note: 'vespia.io from €35 per report; Veriff quotes'
     source: 2
+  identity_verification:
+    status: 'yes'
+    note: KYC with document checks, per vespia.io
+    source: 2
+  sanctions_pep:
+    status: 'yes'
+    note: daily PEP and sanctions monitoring, per vespia.io
+    source: 2
+  adverse_media:
+    status: 'yes'
+    note: daily adverse media monitoring, per vespia.io
+    source: 2
+  ongoing_monitoring:
+    status: 'yes'
+    note: daily PEP, sanctions and adverse media checks, per vespia.io
+    source: 2
+  transaction_monitoring:
+    status: 'yes'
+    note: AI transaction monitoring, per vespia.io
+    source: 2
+  case_management:
+    status: 'yes'
+    note: listed as core feature, per vespia.io
+    source: 2
+  liveness:
+    status: 'yes'
+    note: task-based liveness on camera, per vespia.io
+    source: 2
+  injection_detection:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  reusable_id:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  data_residency:
+    status: not_disclosed
+    note: hosting region not stated
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: GraphQL API docs readable without login
+    source: 8
+  sdk_web:
+    status: 'yes'
+    note: Web SDK with onboarding templates
+    source: 2
+  sdk_ios:
+    status: not_disclosed
+    note: no iOS SDK named
+  sdk_android:
+    status: not_disclosed
+    note: no Android SDK named
+  sandbox:
+    status: 'yes'
+    note: development environment with its own sign-up
+    source: 8
+  no_code:
+    status: 'yes'
+    note: onboarding link generated in the dashboard
+    source: 8
+  support_hours:
+    status: not_disclosed
+    note: support email only, no hours
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 190
+    note: countries and territories for documents, per vespia.io
+    source: 2
+  document_types:
+    value: 7000
+    note: document types, per vespia.io
+    source: 2
+  non_doc:
+    status: not_disclosed
+    note: no database checks for individuals found
+track_record:
+  ownership:
+    status: changed_disclosed
+    note: acquisition by Veriff announced Feb 2026, terms not disclosed
+    source: 1
 certifications: []
 user_ratings:
 - platform: G2
@@ -191,7 +281,37 @@ user_ratings:
   checked: '2026-10'
   url: https://www.capterra.com/p/10004660/Vespia/
 use_case_verdicts: []
-score_breakdown: []
+score_breakdown:
+- criterion: "Fraud defense"
+  weight: 25
+  score: 4
+  note: "KYB guide"
+  evidence: vendor
+- criterion: "Pricing and total cost"
+  weight: 20
+  score: 4
+  note: "published"
+  evidence: vendor
+- criterion: "Coverage"
+  weight: 15
+  score: 4
+  note: "190 countries and territories, 7,000 document types"
+  evidence: vendor
+- criterion: "Platform breadth"
+  weight: 15
+  score: 5
+  note: "5 of 5 kyb modules: registry checks, UBO discovery, entity screening, ongoing monitoring, company documents"
+  evidence: vendor
+- criterion: "Integration and time to launch"
+  weight: 15
+  score: 4.5
+  note: "public API docs, self-serve sandbox or trial, no-code or hosted flow, 1 of 3 SDKs"
+  evidence: vendor
+- criterion: "Trust and track record"
+  weight: 10
+  score: 2
+  note: "operating since 2021"
+  evidence: vendor
 hands_on: null
 sources:
 - title: Veriff acquires Vespia (press release, 5 February 2026)
@@ -222,6 +342,10 @@ sources:
   publisher: Capterra
   url: https://www.capterra.com/p/10004660/Vespia/
   accessed: '2026-10'
+- title: 'Developers (API documentation)'
+  publisher: Vespia
+  url: https://vespia.io/developers
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

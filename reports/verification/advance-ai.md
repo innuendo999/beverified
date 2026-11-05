@@ -60,3 +60,23 @@
 - transaction_monitoring: yes (KYT on payments page, few details), source 13: https://www.advance.ai/payment
 
 AML screening documented in AdvanGuard docs (no data provider named; periodic rescreening marked "In Development"). Transaction monitoring (KYT) is a one-line claim on the payments page with no detail.
+
+## v3.1 fields 2026-11-05
+
+- pricing.model: published none, minimum false, trial true (free sign-up), source 3.
+- integration: docs_public yes (14); sdk_web yes (16); sdk_ios yes (15); sdk_android yes (15); sandbox partial (free sign-up on pricing page, but docs say test accounts via sales, 14); no_code partial (hosted URL created by API call, 16); support_hours partial (premium SLA, no hours, 3).
+- coverage: countries 200 (200+ countries and regions, 17); document_types 15000 (15,000+ ID templates, 17); non_doc yes (Indonesian NIK database check, 18).
+- track_record: ownership stable (Advance Intelligence Group, 8); incidents none found.
+- capabilities: liveness yes (11); injection_detection yes, vendor-stated only, no lab letter (11); kyb_registry yes, kyb_ubo yes, kyb_documents yes (19, KYB docs).
+- Still not_disclosed: reusable_id, data_residency, case_management, deployment, nfc. No published price, so Pricing criterion is n/d.
+- New sources 14 to 19.
+- Score flag: none (no incident, no ownership change).
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: yes, source 12 (AdvanGuard AML docs: active profiles monitored against updated watchlists for 365 days; periodic rescreening listed as in development)
+- case_management: yes, source 12 (AML case review workflow; KYB Applications auditor review, source 19)
+- kyb_entity_screening: yes, source 19 (KYB Applications screen company and individuals; not in KYB Checks)
+- kyb_monitoring: not_disclosed
+- reusable_id: not_disclosed (unchanged)
+- transaction_monitoring, video_ident, kyb_registry: unchanged

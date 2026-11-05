@@ -55,3 +55,21 @@
 ### Score flag
 
 - None.
+
+## v3.1 fields 2026-11-05
+
+Added (key: status, source):
+- pricing.model: published none, minimum null (unknown), trial false; source 1
+- capabilities.ongoing_monitoring: yes (re-screening on watchlist change), 9 (new)
+- capabilities.list_updates: partial (OFAC and global lists, frequency not stated), 1
+- capabilities.fuzzy_matching: yes, 9
+- capabilities.alert_explanation: yes, 9
+- capabilities.audit_trail: yes, 9
+- capabilities.risk_scoring: yes (weighted customer risk models), 10 (new)
+- integration.docs_public: no (docs.unit21.ai redirects to a login page), 11 (new)
+- integration.no_code: yes (drag and drop onboarding workflows), 6
+- track_record.ownership: stable, 2 (CEO change to Tyler Allen in 2026 is a leadership change, not an ownership change); incidents: none found
+
+Not disclosed: pep_tiers, batch_screening, data_residency, sdk_web, sdk_ios, sdk_android, sandbox, support_hours (a "Support & Service Level Agreement" page exists on docs.unit21.ai but sits behind the login).
+
+Rescore: 4.6 -> 3.9 (scored weight 80%; pricing n/d). Score flag: none.

@@ -61,3 +61,26 @@ Filled `capabilities` keys from vendor pages opened 2026-10-30. No existing valu
 - `transaction_monitoring`: add_on (separate Transaction Monitoring product); source 15, https://go.jumio.com/transaction-monitoring-media
 
 - Note: Jumio's screening page FAQ says AML screening and transaction monitoring are distinct processes; transaction monitoring is sold as its own product (vendor landing page, undated).
+
+## Re-check and v3.1 fields 2026-11-05
+
+### Changed
+- Re-confirmed, no change: no published pricing; Vendr median $55,850 per year, range $5,832 to $213,684, updated Feb 2026 (source 8); iBeta Level 2 letter 11 Sep 2025 (source 5); 1B+ transactions across 200+ countries and territories (Q3 2026 release, source 20); ISO/IEC 27001:2022, SOC 2 Type 2, PCI DSS on the Privacy Center (source 4); Mark Lorion CEO, same investors (source 1).
+- `choose_instead` rewritten with `need` labels and Onfido removed (owner: no Onfido pairs, 2026-11-05): Sumsub, Veriff, Persona, Incode, Regula, texts built from their own records. `alternatives_columns` added.
+- FAQ "How does Jumio compare to Onfido?" → "How does Jumio compare to Sumsub?"; alternatives and competitors answers updated.
+- v3.1 fields: pricing.model (none, third-party data only); integration (docs.jumio.com public, Web SDK, iOS, Android, hosted Web Client; sources 16, 17, 11; sandbox and support hours not_disclosed, only the Showcase demo app and sales contact found, source 19); coverage (200 countries, 5,000 ID types, Government Database Checks; sources 3, 18); liveness (source 18), reusable_id selfie.DONE (source 20), data_residency US/EU/SG (source 17), age_document and age_facial_estimation (source 21); kyb_registry and injection_detection not_disclosed.
+- `last_verified` and `updated` → 2026-11-05.
+
+### Removed / unverifiable
+- G2: record says 4.1 / 38 (Oct 2026); a search snippet shows 4.0 / 22. G2 blocks WebFetch, so the owner should check in a browser.
+- Illinois BIPA class actions naming Jumio (2020 settlement; suits filed 2021 to 2024) are private litigation, not regulatory action or a breach, so not in `incidents`.
+
+### Score flag
+- v3.1 draft score 3.7 (was 4.5): Pricing and total cost 2 (quote only) is the main driver.
+- G2 re-read by the owner in a browser on 2026-11-05 (screenshot): 4.1 / 5 from 46 reviews. Record updated (was 4.1 / 38). The search snippet showing 4.0 / 22 was stale. G2 now lists Onfido as "Entrust IDV, formerly Onfido".
+
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: add_on, source 6 (AML Screening page: "ongoing monitoring after the initial onboarding process")
+- unchanged not_disclosed: kyb_registry and kyb sub-keys (no business verification product on /products/ or /platform/), case_management (Jumio Watch has "centralized alert management" in the Portal, not a case queue)

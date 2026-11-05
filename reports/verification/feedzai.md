@@ -56,3 +56,17 @@
 ### Score flag
 
 - None. Possible on-prem support would, if anything, widen deployment options; the scale-figure conflict is between two vendor pages and does not change the product.
+
+## v3.1 fields 2026-11-05
+
+Added (key: status, source):
+- pricing.model: published none, minimum true (enterprise contract), trial false (2)
+- integration: no_code partial, self-service custom rule creation (9)
+- capabilities: ongoing_monitoring partial, re-screening frequency by risk policy (8); alert_explanation yes, Whitebox Explanation (9); audit_trail yes (8); risk_scoring yes, adjustable scenarios and thresholds (9)
+- track_record.ownership: stable, privately held and founder led (6); incidents: none found (DemystData purchase in 2025 was Feedzai buying)
+
+Stayed not_disclosed: docs_public, sdk_web, sdk_ios, sdk_android, sandbox, support_hours, list_updates (lists not named, vendor SLAs vary), pep_tiers, fuzzy_matching, batch_screening, data_residency.
+
+Notes: Feedzai's watchlist screening runs on Neterium's API per its page. No public API reference or SDK docs found. trust.feedzai.com is still blocked to automated access, so no certification is recorded. Script note: Founded value is "2011, Coimbra, Portugal", which rescore.mjs cannot parse, so the "operating 5+ years" point is not given (Trust would be 2).
+
+Rescore v3.1: 4.6 -> 2.9 (80%; pricing n/d). Large drop driven by missing public docs, SDK, sandbox and certifications; owner review suggested. Score flag: none (no incident or ownership change).

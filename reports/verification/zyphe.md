@@ -211,3 +211,26 @@ Searched `src/_data/rankings.yml` for `slug: zyphe`: entries in `cheap-kyc`, `id
 ### Score flag
 
 None. Nothing found that plausibly changes the editorial score. The SOC 2 Type I and ISO/IEC 27001 Stage 1 dates (October 2026) have arrived with no report or certificate yet; re-check in January 2027. The transaction alert agent not being shipped is a small gap in a priced feature, not a score change.
+
+## v3.1 fields 2026-11-05
+
+### Added
+- `pricing.model`: published core, minimum false, trial true ($25 one-time signup credit) (2).
+- `integration`: docs_public yes (4); sdk_web yes, browser SDK (11); sdk_ios, sdk_android no, WebView instead (11); sandbox yes, self-serve start with signup credit (2); no_code yes, hosted UI (11); support_hours not_disclosed (contact page lists email and form, no hours).
+- `coverage`: countries 190, document_types 4,000 (7); non_doc not_disclosed.
+- `track_record.ownership`: stable (17). `incidents`: none found; security page states no reported breach of identity data.
+- `capabilities`: liveness yes, active liveness, no lab test (7); injection_detection yes, vendor-stated (7); reusable_id yes, KYC Passport (7); data_residency no, region follows the end user (3).
+- No new sources (existing 2, 3, 4, 7, 11, 17).
+
+### Still not_disclosed
+- Support hours, non-document checks, video_ident.
+
+### Score flag
+- None. SOC 2 / ISO 27001 still in progress (re-check Jan 2027). Existing v3.0 `score_breakdown` left untouched.
+- v3.1 draft: 4.0 -> 3.9 (100% scored).
+
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: yes, source 9 (AML page: lists "re-checked daily and on event-driven triggers")
+- unchanged not_disclosed: video_ident ("agents" are AI agents, no live video call)

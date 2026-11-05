@@ -5,9 +5,9 @@ seo:
   description: ComplyAdvantage, NICE Actimize and Feedzai lead our 2026 ranking of AML software for banks. Compare sanctions screening, transaction monitoring, case management and deployment, with a source for each claim.
   h1: Best AML Software for Banks in 2026
 breadcrumb_label: Best AML Software for Banks
-quick_answer: 'ComplyAdvantage is our top AML pick for banks, with sanctions screening and transaction monitoring on its own risk data. NICE Actimize is the broadest end-to-end financial-crime suite and runs in the cloud or on premises. Feedzai is built for very high payment volumes. We compared 7 providers on screening, monitoring, case management and deployment.'
+quick_answer: ComplyAdvantage is our top AML pick for banks, with sanctions screening and transaction monitoring on its own risk data. Hawk AI is next for explainable AI monitoring and screening, and Unit21 for AI agents that work investigations. We compared 6 providers on screening, monitoring, case management and deployment.
 last_verified: '2026-10-18'
-updated: '2026-11-04'
+updated: '2026-11-05'
 legacy_stats:
 - value: '4'
   label: providers compared
@@ -43,9 +43,9 @@ faq:
 - q: How is AML software for banks different from AML software in general?
   a: Bank deployments need real-time monitoring across all payment channels, sanctions screening on payments as well as customers, case management for investigators, and model documentation an examiner can review. Several tools built for fintechs cover part of this; the providers in this ranking are built for regulated financial institutions.
 - q: Which of these AML platforms can run on premises?
-  a: NICE Actimize, Quantexa and Napier offer cloud and on-premises deployment, per their own pages. Feedzai, Hawk AI and ComplyAdvantage are cloud services, and Unit21 does not say.
+  a: NICE Actimize and Napier offer cloud and on-premises deployment, per their own pages. Hawk AI and ComplyAdvantage are cloud services, and Unit21 does not say.
 - q: Do these platforms include sanctions screening?
-  a: ComplyAdvantage, NICE Actimize, Feedzai, Hawk AI, Unit21 and Napier include sanctions and PEP screening. Quantexa uses sanctions and adverse-media data inside its entity-resolution platform, but we found no separate screening product on its pages.
+  a: ComplyAdvantage, NICE Actimize, Hawk AI, Unit21 and Napier include sanctions and PEP screening.
 - q: What is model explainability in AML monitoring?
   a: Explainability means the bank can show why a model raised or cleared an alert. In the US, SR 11-7 expects banks to validate and document the models they use, so examiners may ask for this evidence during a BSA/AML review.
 - q: When does the EU AMLA start supervising banks?

@@ -50,3 +50,18 @@
 ### Score flag
 
 - None. Ownership is consistent with the Marlin investment; product and CEO unchanged.
+
+## v3.1 fields 2026-11-05
+
+Rescore (not applied): 4.5 -> 3.8, scored weight 80% (pricing not disclosed).
+
+Added:
+- pricing.model: published none, minimum true (subscription), trial false (source 1)
+- capabilities.ongoing_monitoring: partial, daily screening cited, list change trigger not stated (6)
+- capabilities.fuzzy_matching: yes (6); alert_explanation: yes (6); audit_trail: yes (6); risk_scoring: yes (1); batch_screening: yes (1)
+- integration.no_code: yes, no code rule builder (1); support_hours: yes, 24-hour support portal (1)
+- track_record.ownership: changed_disclosed, Lapis Bidco PSC since Jan 2025 (9); incidents: none found
+
+Not disclosed: list_updates (lists and data providers not named), pep_tiers, data_residency (deployment choice only), docs_public, all SDKs, sandbox (the rules sandbox is in-product, no free trial). The pCRA page is blocked to automated reading (robots).
+
+Score flags: none (ownership change already in the record).

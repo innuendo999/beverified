@@ -59,3 +59,32 @@
 - adverse_media: yes. https://www.gbg.com/en/assess-risk/peps-and-sanctions/ (source 19)
 - transaction_monitoring: yes. https://www.gbg.com/en/products/transaction-fraud-and-aml/ (source 21; GBG Predator, a separate fraud and AML transaction monitoring product)
 - No existing values changed (the four keys were empty). capabilities.checked stays 2026-10.
+
+## v3.1 fields 2026-11-05
+
+### Added
+
+- `pricing.model`: published none, minimum null, trial null (source 5). Identity products quoted; only Loqate address lookups priced.
+- `integration` (checked 2026-11): docs_public yes (22); sdk_web, sdk_ios, sdk_android yes, Bridge SDKs (23); no_code yes, journey builder and hosted journey links (25); support_hours partial, regional tickets and phone, no hours (24); sandbox not_disclosed (Preview environment exists for customers, no self-serve trial found).
+- `coverage`: countries 195, document_types 8,500 ("8,500+ government-issued IDs spanning 195 countries", source 20); non_doc yes, identity data verification (10).
+- `track_record`: ownership stable, listed GB Group plc (2); incidents none found. A DragonForce leak-site claim of Aug 2026 names "GB Group S.A.", a Polish financial firm, not GBG plc; not recorded.
+- `capabilities`: liveness yes (5); injection_detection yes, vendor docs only, no lab letter (22); reusable_id partial, accepts partner digital IDs via the Digital ID Portal, no own wallet described (27); data_residency yes, UK/US/Australia chosen by customer for GBG Go document, device, case management and audit modules (26); case_management yes, GBG Go module (26).
+- New sources 22 to 27.
+
+### Still not_disclosed
+
+- sandbox, video_ident, kyb_documents. No ISO/IEC 30107-3 or injection lab letter found for GBG Go (Acuant had iBeta Level 1 and 2 in 2020, not confirmed for current product, not added).
+
+### Rescore
+
+- 4.5 -> 3.3 (scored weight 80%; pricing n/d).
+
+### Score flag
+
+- None (no incident, no ownership change). Note for the script: the record has `Incorporated` (1989), not a `Founded` fact, so the trust criterion does not count the 5+ years point.
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: yes, source 19 (scheduled in-life re-screening)
+- video_ident: not_disclosed (unchanged, nothing found)
+- kyb_documents: not_disclosed (unchanged; KYB page describes company records, not documents)

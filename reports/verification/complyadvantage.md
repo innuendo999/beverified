@@ -61,3 +61,19 @@
 ### Score flag
 
 - None.
+
+## v3.1 fields 2026-11-05
+
+New sources: 10 Setting up your screening configuration (KB), 11 Customer screening page, 12 Batch screening KB article, 13 API documentation, 14 How to contact support (KB).
+
+Added (key: status, source):
+- pricing.model: published core (Starter from $99 a month), minimum true (monthly plan fee), trial false (no free trial; ComplyLaunch needs an application) (1)
+- integration: docs_public yes (13); sandbox partial, sandbox accounts mentioned with no access route (13); no_code yes, web platform file upload (12); support_hours partial, ticket and email with hours only for video calls (14)
+- capabilities: ongoing_monitoring yes (1); list_updates yes, OFAC, HMT, EU, UN and DFAT named, changes within minutes (11); pep_tiers yes, PEPs and RCAs (1); fuzzy_matching yes, match score threshold 0 to 100 (10); alert_explanation partial, risk score breakdown (11); audit_trail yes (11); risk_scoring yes (11); batch_screening yes (12); data_residency partial, EU, US and APAC API regions (13)
+- track_record.ownership: stable, founder is Executive Chairman (2); incidents: none found since Nov 2024 (Golden acquisition in 2024 was ComplyAdvantage buying, not being bought)
+
+Stayed not_disclosed: sdk_web, sdk_ios, sdk_android.
+
+Notes: the sanctions screening page (complyadvantage.com/mesh/aml-sanctions-screening/) returned an error; the customer screening page was used. Script note: Founded value is "2014 (IVXS UK Limited ...)", which rescore.mjs cannot parse as a year, so the "operating 5+ years" point is not given; with it Trust would be 3.
+
+Rescore v3.1: 4.6 -> 4.1 (100%). Score flag: none.

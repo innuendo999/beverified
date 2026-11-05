@@ -5,10 +5,10 @@ eleventyExcludeFromCollections: true
 {#- llms.txt (https://llmstxt.org). Generated from the same data as the site; do not edit by hand. -#}
 # BeVerified
 
-> BeVerified (beverified.org) is an independent review and ranking site for KYC, KYB, AML screening, liveness and identity verification software. Every provider is scored on one published rubric, every fact on a review is labelled with its source and evidence level, and reviews are re-checked about every 90 days. Payment never changes scores or ranking order.
+> BeVerified (beverified.org) is an independent review and ranking site for KYC, KYB, AML screening, liveness and identity verification software. Every provider is scored on a published rubric for its kind of product, every fact on a review is labelled with its source and evidence level, and reviews are re-checked about every 90 days. Payment never changes scores or ranking order.
 
 Key facts for citation:
-- Scores are editorial opinions from 1 to 5, weighted: {% for r in site.v3.rubric %}{{ r.name }} {{ r.weight }}%{% if not loop.last %}, {% endif %}{% endfor %}. Methodology {{ site.v3.methodologyVersion }}: {{ site.url }}/methodology/
+- Scores are editorial opinions from 1 to 5. Identity verification and KYC providers are weighted: {% for r in site.v3.rubric %}{{ r.name }} {{ r.weight }}%{% if not loop.last %}, {% endif %}{% endfor %}. AML providers: {% for r in site.v3.rubricAml %}{{ r.name }} {{ r.weight }}%{% if not loop.last %}, {% endif %}{% endfor %}. Methodology {{ site.v3.methodologyVersion }}: {{ site.url }}/methodology/ (Travel Rule providers are still scored on v3.0).
 - Evidence labels: {% for k, e in site.v3.evidence %}"{{ e.label }}" ({{ e.desc }}){% if not loop.last %}; {% endif %}{% endfor %}.
 - Each review shows "Last verified" (date the facts were re-checked) and, if later, "Updated" (date the text changed).
 - BeVerified does not verify identities or run background checks, and is not BeenVerified.

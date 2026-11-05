@@ -59,3 +59,22 @@ All Sumsub entries in `src/_data/rankings.yml`:
 ### Score flag
 
 - None.
+
+## Re-check and v3.1 fields 2026-11-05
+
+### Changed
+- Re-confirmed, no change: Basic $1.35 / $149 minimum, Compliance $1.85 / $299 minimum, custom plan quoted, 14-day trial with 50 checks (source 1); iBeta Level 1, 2, 3 letters for Raritex Trade / Sumsub Liveness, Level 3 dated 17 Sep 2026 (source 6); 4,000+ companies, founded 2015, eight office cities (source 2); Trust Center still lists SOC 2 Type 2, ISO/IEC 27001, PCI DSS, ETSI, ISO/IEC 29003 and 29115 (source 4).
+- New: security incident disclosed 4 Feb 2026 (source 24): access through a third-party support ticketing platform from Jul 2024, found Jan 2026; names, some emails or phone numbers of a limited number of customer accounts may have been exposed; Sumsub says biometric data, ID images and payment details were not accessed. Added as con 3 (replaces "occasional false-positive flags"), FAQ entry and one verdict sentence; `track_record.incidents`.
+- New: ownership filings questioned by Rekt News (Apr 2026, reported by The Crypto Times, source 25); Sumsub disputes the report. Kept `track_record.ownership: stable` with that note.
+- New: Travel Rule network of 2,300+ VASPs across GTR, CODE and Sygna (Sumsub, 21 Oct 2026, source 26), added to the crypto FAQ.
+- FAQ competitors: Onfido → Onfido (now Entrust).
+- v3.1 fields: pricing.model (core, minimum, trial; source 1); integration (docs, WebSDK, iOS, Android, sandbox, Workflow Builder; sources 21 to 23; support hours not_disclosed); coverage (220 countries, 14,000 document types, non-doc on custom plan; sources 3, 1); liveness, reusable_id (source 1), data_residency (source 12); injection_detection not_disclosed.
+- `last_verified` and `updated` → 2026-11-05.
+
+### Removed / unverifiable
+- G2 rating not re-read (G2 blocks WebFetch); kept 4.6 / 130 from Oct 2026.
+- No independent injection attack detection letter found.
+
+### Score flag
+- v3.1 draft score 4.8 (unchanged); Trust and track record 4 after the incident deduction.
+- G2 re-read by the owner in a browser on 2026-11-05 (screenshot): 4.6 / 5 from 130 reviews, unchanged; `checked` → 2026-11.

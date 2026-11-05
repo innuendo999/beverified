@@ -11,8 +11,9 @@ logo:
   background: '#6A3FE8'
   wordmark: /assets/img/wordmarks/seon.png
 tagline: Digital-footprint and device intelligence for fraud prevention and pre-KYC screening
-score: 4.5
-grade: Very Good
+score: 4.6
+grade: Excellent
+methodology: v3.1
 primary_category: aml
 legacy_rank_claim: 'ranked #3 in AML'
 categories:
@@ -74,6 +75,11 @@ pricing:
     kind: official
     source: 1
     verified: '2026-11'
+  model:
+    published: core
+    minimum: true
+    trial: false
+    source: 1
 facts:
 - label: From
   value: $699/mo (2,500 fraud checks)
@@ -164,6 +170,83 @@ capabilities:
     status: add_on
     note: 'separate AML Transaction Monitoring product'
     source: 15
+  case_management:
+    status: add_on
+    note: 'Premium plan only'
+    source: 1
+  kyb_entity_screening:
+    status: 'yes'
+    note: 'AML Entity API screens organisations'
+    source: 18
+  ongoing_monitoring:
+    status: 'yes'
+    note: 'set re-screening intervals or event triggers'
+    source: 13
+  list_updates:
+    status: partial
+    note: 'lists named with version dates, no update frequency'
+    source: 17
+  pep_tiers:
+    status: not_disclosed
+    note: 'PEP match flag only, no tiers or RCA stated'
+  fuzzy_matching:
+    status: 'yes'
+    note: 'edit distance and phonetic thresholds'
+    source: 13
+  alert_explanation:
+    status: partial
+    note: 'match type and relevancy score per hit'
+    source: 17
+  audit_trail:
+    status: 'yes'
+    note: 'audit log of case actions and filings'
+    source: 20
+  risk_scoring:
+    status: 'yes'
+    note: 'custom rules and risk thresholds'
+    source: 13
+  batch_screening:
+    status: not_disclosed
+    note: 'real time API, no bulk screening stated'
+  data_residency:
+    status: partial
+    note: 'US and APAC API endpoints besides default'
+    source: 18
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: 'API reference open without login'
+    source: 21
+  sdk_web:
+    status: 'yes'
+    note: 'JavaScript device SDK'
+    source: 19
+  sdk_ios:
+    status: 'yes'
+    note: 'iOS SDK, plus React Native and Flutter'
+    source: 19
+  sdk_android:
+    status: 'yes'
+    note: 'Android SDK via Gradle'
+    source: 19
+  sandbox:
+    status: partial
+    note: 'trial on request, reviewed by SEON'
+    source: 16
+  no_code:
+    status: 'yes'
+    note: 'drag and drop workflow builder'
+    source: 4
+  support_hours:
+    status: 'yes'
+    note: 'tickets and email; 24/7 on Premium'
+    source: 1
+track_record:
+  ownership:
+    status: stable
+    note: 'independent, venture funded'
+    source: 9
 certifications:
 - name: ISO/IEC 27001
   what: Information security
@@ -189,7 +272,37 @@ user_ratings:
   checked: '2026-10'
   url: https://www.capterra.com/p/187389/SEON-Sense/
 use_case_verdicts: []
-score_breakdown: []
+score_breakdown:
+- criterion: "Screening data and match quality"
+  weight: 25
+  score: 5
+  note: "stated list update frequency, adverse media, configurable fuzzy matching, ongoing re-screening"
+  evidence: vendor
+- criterion: "Pricing and total cost"
+  weight: 20
+  score: 4
+  note: "published, monthly minimum"
+  evidence: vendor
+- criterion: "Investigation and audit workflow"
+  weight: 15
+  score: 5
+  note: "case management, match reasons shown, audit trail, risk scoring"
+  evidence: vendor
+- criterion: "Platform breadth"
+  weight: 15
+  score: 5
+  note: "6 of 6 modules: sanctions screening, adverse media, monitoring, case management, KYB, identity verification"
+  evidence: vendor
+- criterion: "Integration and time to launch"
+  weight: 15
+  score: 5
+  note: "public API docs, no-code or hosted flow, published support hours, web, iOS and Android SDKs"
+  evidence: vendor
+- criterion: "Trust and track record"
+  weight: 10
+  score: 3
+  note: "ISO 27001 or SOC 2 vendor-stated, operating since 2017"
+  evidence: vendor
 hands_on: null
 sources:
 - title: SEON pricing
@@ -252,6 +365,30 @@ sources:
   publisher: 'SEON'
   url: https://seon.io/products/aml-transaction-monitoring/
   accessed: '2026-10'
+- title: 'Request SEON Trial Access'
+  publisher: 'SEON'
+  url: https://seon.io/trial/
+  accessed: '2026-11'
+- title: 'AML API (SEON Docs)'
+  publisher: 'SEON'
+  url: https://docs.seon.io/api-reference/aml-api
+  accessed: '2026-11'
+- title: 'AML Entity API (SEON Docs)'
+  publisher: 'SEON'
+  url: https://docs.seon.io/api-reference/aml-entity-api
+  accessed: '2026-11'
+- title: 'Device Intelligence integration (SEON Docs)'
+  publisher: 'SEON'
+  url: https://docs.seon.io/integration/device-intelligence
+  accessed: '2026-11'
+- title: 'Case Management'
+  publisher: 'SEON'
+  url: https://seon.io/products/case-management/
+  accessed: '2026-11'
+- title: 'API reference (SEON Docs)'
+  publisher: 'SEON'
+  url: https://docs.seon.io/api-reference
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

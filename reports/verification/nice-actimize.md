@@ -50,3 +50,21 @@
 
 ### Score flag
 - None new. Sale not announced or completed; products unchanged.
+
+## v3.1 fields 2026-11-05
+
+Rescore (not applied): 4.6 -> 3.6, scored weight 80% (pricing not disclosed).
+
+Added:
+- pricing.model: published none, minimum true, trial false (source 1)
+- capabilities.ongoing_monitoring: partial, ongoing party screening, list change trigger not stated (9)
+- capabilities.fuzzy_matching: yes (9); alert_explanation: yes, ActOne AI explanations (17); risk_scoring: yes (10); batch_screening: yes (9)
+- integration.support_hours: yes, 24x7 hotline and email (25)
+- track_record.ownership: pending_sale (6); incidents: none found since Nov 2024
+- New source 25 (Support and maintenance)
+
+Not disclosed: list_updates, pep_tiers, audit_trail, data_residency, docs_public, all SDKs, sandbox, no_code (X-Sight Studio is a DIY analytics environment, not stated as no code).
+
+Score flags:
+- Sale still pending: NiCE press releases to 4 Nov 2026 (incl. Q3 2026 results) show no Actimize sale announcement. Brookfield talks remain the latest report.
+- Older: the Guardian Analytics (NICE Actimize unit) data breach of late 2022 and the Webster settlement of Oct 2024 fall before the Nov 2024 window; not recorded as incidents.

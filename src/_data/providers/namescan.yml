@@ -11,8 +11,9 @@ logo:
   background: '#9166F2'
   wordmark: /assets/img/wordmarks/namescan.png
 tagline: Accessible on-demand PEP, sanctions, and adverse-media screening for SMEs
-score: 4.3
-grade: Good
+score: 4.4
+grade: Great
+methodology: v3.1
 primary_category: aml
 legacy_rank_claim: 'ranked #11 in AML'
 categories:
@@ -51,6 +52,11 @@ pricing:
     extra: Not publicly disclosed
   legacy_verified_note: null
   verified: '2026-11'
+  model:
+    published: core
+    minimum: false
+    trial: true
+    source: 2
   index:
     product: 'AML name screening, Emerald and Sapphire'
     price:
@@ -210,7 +216,78 @@ capabilities:
     status: partial
     note: screening packages published; ID and KYB not listed
     source: 1
+  kyb_registry:
+    status: 'yes'
+    note: checks from official company registries
+    source: 1
+  kyb_ubo:
+    status: 'yes'
+    note: directors and beneficial owners
+    source: 1
+  ongoing_monitoring:
+    status: 'no'
+    note: only through sister product MemberCheck
+    source: 6
+  list_updates:
+    status: 'yes'
+    note: OFAC, UN, EU, UK, Australia, updated daily
+    source: 1
+  pep_tiers:
+    status: 'yes'
+    note: relatives and close associates as RCA
+    source: 6
+  fuzzy_matching:
+    status: 'yes'
+    note: fuzzy matching with adjustable match rate
+    source: 10
+  alert_explanation:
+    status: 'yes'
+    note: match detail and risk rating per result
+    source: 1
+  audit_trail:
+    status: 'yes'
+    note: every check timestamped and stored
+    source: 1
+  risk_scoring:
+    status: 'yes'
+    note: risk rating per result, user assigns risk level
+    source: 1
+  batch_screening:
+    status: 'yes'
+    note: CSV batch upload
+    source: 6
+  data_residency:
+    status: not_disclosed
   checked: '2026-10'
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: API reference open without login
+    source: 10
+  sdk_web:
+    status: not_disclosed
+    note: code samples only, no SDK named
+  sdk_ios:
+    status: not_disclosed
+  sdk_android:
+    status: not_disclosed
+  sandbox:
+    status: 'yes'
+    note: free test API key, no credits used
+    source: 11
+  no_code:
+    status: 'yes'
+    note: dashboard checks without integration
+    source: 1
+  support_hours:
+    status: not_disclosed
+    note: support form and email, no hours stated
+track_record:
+  ownership:
+    status: unknown
+    note: Neurocom holds the name; Nexiant group link unconfirmed
+    source: 7
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security
@@ -232,7 +309,37 @@ user_ratings:
   checked: '2026-10'
   url: https://www.g2.com/sellers/name-scan
 use_case_verdicts: []
-score_breakdown: []
+score_breakdown:
+- criterion: "Screening data and match quality"
+  weight: 25
+  score: 5
+  note: "stated list update frequency, PEP tiers, adverse media, configurable fuzzy matching"
+  evidence: vendor
+- criterion: "Pricing and total cost"
+  weight: 20
+  score: 5
+  note: "published, trial or free tier"
+  evidence: vendor
+- criterion: "Investigation and audit workflow"
+  weight: 15
+  score: 5
+  note: "case management, match reasons shown, audit trail, risk scoring, batch screening"
+  evidence: vendor
+- criterion: "Platform breadth"
+  weight: 15
+  score: 4
+  note: "5 of 6 modules: sanctions screening, adverse media, case management, KYB, identity verification"
+  evidence: vendor
+- criterion: "Integration and time to launch"
+  weight: 15
+  score: 4
+  note: "public API docs, self-serve sandbox or trial, no-code or hosted flow"
+  evidence: vendor
+- criterion: "Trust and track record"
+  weight: 10
+  score: 2
+  note: "ISO 27001 or SOC 2 vendor-stated"
+  evidence: vendor
 hands_on: null
 sources:
 - title: NameScan homepage
@@ -271,6 +378,14 @@ sources:
   publisher: Nexiant
   url: https://nexiant.ai
   accessed: '2026-10'
+- title: NameScan API Reference v3.1
+  publisher: NameScan
+  url: https://api.namescan.io/doc/index.html
+  accessed: '2026-11'
+- title: PEP and Sanctions API
+  publisher: NameScan
+  url: https://namescan.io/pepandsanctionapi
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

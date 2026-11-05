@@ -11,8 +11,9 @@ logo:
   background: '#9166F2'
   wordmark: /assets/img/wordmarks/complycube.png
 tagline: API-first KYC/AML platform aimed at straightforward developer integration
-score: 4.3
-grade: Good
+score: 4.0
+grade: Great
+methodology: v3.1
 primary_category: e-kyc
 legacy_rank_claim: 'ranked #3 in eKYC'
 categories:
@@ -111,6 +112,60 @@ pricing:
     kind: official
     source: 1
     verified: '2026-11'
+  model:
+    published: core
+    minimum: true
+    trial: true
+    source: 1
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: developer docs open without login
+    source: 10
+  sdk_web:
+    status: 'yes'
+    note: Web SDK
+    source: 10
+  sdk_ios:
+    status: 'yes'
+    note: native iOS SDK
+    source: 11
+  sdk_android:
+    status: 'yes'
+    note: native Android SDK
+    source: 11
+  sandbox:
+    status: 'yes'
+    note: sandbox on sign-up, free trial checks
+    source: 1
+  no_code:
+    status: 'yes'
+    note: hosted Flow page and Web Portal
+    source: 10
+  support_hours:
+    status: partial
+    note: channels and SLA by plan, no hours
+    source: 1
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 250
+    note: 250+ countries and territories, document check
+    source: 12
+  document_types:
+    value: 13000
+    note: 13,000+ identity document types
+    source: 12
+  non_doc:
+    status: add_on
+    note: database checks, Growth plan
+    source: 1
+track_record:
+  ownership:
+    status: stable
+    note: Teemo Technology Ltd active, no sale found
+    source: 9
 facts:
 - label: From
   value: $99/month (Starter)
@@ -217,6 +272,48 @@ capabilities:
     status: partial
     note: Growth and Enterprise quoted
     source: 1
+  liveness:
+    status: 'yes'
+    note: photo liveness from Starter
+    source: 1
+  injection_detection:
+    status: partial
+    note: 2021 release names injected video
+    source: 15
+  reusable_id:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  data_residency:
+    status: 'yes'
+    note: regional hosting, custom on Enterprise
+    source: 13
+  case_management:
+    status: 'yes'
+    note: all listed plans, advanced on Enterprise
+    source: 1
+  kyb_registry:
+    status: add_on
+    note: company lookup on Growth plan, count not stated
+    source: 1
+  kyb_ubo:
+    status: 'yes'
+    note: shareholder and UBO data where available
+    source: 17
+  kyb_entity_screening:
+    status: 'yes'
+    note: businesses, directors, shareholders, UBOs
+    source: 16
+  kyb_monitoring:
+    status: 'yes'
+    note: continuous screening of businesses
+    source: 16
+  kyb_documents:
+    status: not_disclosed
+    note: company documents not described
+  ongoing_monitoring:
+    status: add_on
+    note: monthly fee on Core, included on Growth
+    source: 1
 certifications:
 - name: UK DIATF certified identity service
   what: UK digital identity trust framework (Kantara, Mar 2026 to Mar 2029)
@@ -254,7 +351,37 @@ user_ratings:
   checked: '2026-10'
   url: https://www.capterra.com/p/264688/ComplyCube/
 use_case_verdicts: []
-score_breakdown: []
+score_breakdown:
+- criterion: "Fraud defense"
+  weight: 25
+  score: 2.5
+  note: "liveness, no lab letter, NFC"
+  evidence: vendor
+- criterion: "Pricing and total cost"
+  weight: 20
+  score: 4.5
+  note: "published, monthly minimum, trial or free tier"
+  evidence: vendor
+- criterion: "Coverage"
+  weight: 15
+  score: 5
+  note: "250 countries and territories, 13,000 document types, checks without a document"
+  evidence: vendor
+- criterion: "Platform breadth"
+  weight: 15
+  score: 4
+  note: "5 of 8 modules: identity verification, KYB, sanctions screening, monitoring, case management"
+  evidence: vendor
+- criterion: "Integration and time to launch"
+  weight: 15
+  score: 5
+  note: "public API docs, self-serve sandbox or trial, no-code or hosted flow, web, iOS and Android SDKs"
+  evidence: vendor
+- criterion: "Trust and track record"
+  weight: 10
+  score: 4
+  note: "ISO 27001 or SOC 2 vendor-stated, trust framework confirmed, data residency or on-premises"
+  evidence: vendor
 hands_on: null
 sources:
 - title: ComplyCube pricing
@@ -293,6 +420,38 @@ sources:
   publisher: Companies House
   url: https://find-and-update.company-information.service.gov.uk/company/12392069
   accessed: '2026-10'
+- title: Getting started (developer documentation)
+  publisher: ComplyCube
+  url: https://docs.complycube.com/documentation
+  accessed: '2026-11'
+- title: Mobile SDK guide
+  publisher: ComplyCube
+  url: https://docs.complycube.com/documentation/quick-guides/mobile-sdk-guide
+  accessed: '2026-11'
+- title: Country and ID coverage
+  publisher: ComplyCube
+  url: https://docs.complycube.com/documentation/product-guides/identity-verification/document-check/document-types-per-country
+  accessed: '2026-11'
+- title: Data residency
+  publisher: ComplyCube
+  url: https://docs.complycube.com/documentation/trust-and-compliance/data-residency
+  accessed: '2026-11'
+- title: Hosted solution guide
+  publisher: ComplyCube
+  url: https://docs.complycube.com/documentation/guides/hosted-solution-quick-guide
+  accessed: '2026-11'
+- title: ComplyCube rolls out enhanced spoof detection (16 Nov 2021)
+  publisher: PR Newswire
+  url: https://prnewswire.com/news-releases/complycube-rolls-out-enhanced-spoof-detection-amid-bullish-crypto-market-301424256.html
+  accessed: '2026-11'
+- title: AML Screening Check (developer documentation)
+  publisher: ComplyCube
+  url: https://docs.complycube.com/documentation/product-guides/watchlist-pep-and-adverse-media/aml-screening-check.md
+  accessed: '2026-11'
+- title: Company Search & Insights (developer documentation)
+  publisher: ComplyCube
+  url: https://docs.complycube.com/documentation/product-guides/kyc-automation-services/company-search.md
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

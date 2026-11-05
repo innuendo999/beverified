@@ -62,3 +62,30 @@ Filled `capabilities` keys from vendor pages opened 2026-10-30. No existing valu
 
 - Note: PEP Report (https://help.withpersona.com/articles/116MoqsoZ0B5FYkdR8Hufp/index.html) is a separate report, also on Essential, Growth and Enterprise; Startup Program gets a limited version.
 - Note: Transaction monitoring: Persona can open Alert/SAR cases from alerts raised in the customer's own or a third-party system, and has a Chainalysis KYT integration that uses the customer's own Chainalysis credentials (Growth/Enterprise). No Persona-sold monitoring engine found, so left not_disclosed.
+
+## v3.1 fields 2026-11-05
+
+Added (key: status, source):
+- `pricing.model`: published partial, minimum true (Essential from $250/month, 12-month term), trial false (Startup Program needs an application); source 1
+- `capabilities.case_management`: yes (Cases for KYC, fraud and AML reviews); source 31 (was missing)
+- `capabilities.liveness`: yes; source 27
+- `capabilities.injection_detection`: yes, vendor-stated ("presentation and injection attacks"); source 27. No IAD lab letter found, so no `independent`.
+- `capabilities.reusable_id`: yes (Reusable Personas / Persona Wallet, being replaced by "Verify with Persona"); source 28
+- `capabilities.data_residency`: yes (US or EU data centers); source 2
+- `integration.docs_public`: yes; source 23. `sdk_web`: yes (persona npm package); source 25. `sdk_ios`, `sdk_android`: yes; source 24. `sandbox`: partial (sandbox mode exists, no self-serve signup found); source 26. `no_code`: yes (Hosted Flow); source 23.
+- `coverage.countries`: 200 (200+ countries and territories); source 12. `coverage.non_doc`: yes (database checks, issuing sources); source 29.
+- `track_record.ownership`: stable; source 4
+- `track_record.incidents`: 2026-02-23, frontend code found exposed on a government-authorized server; source 30 (Biometric Update). Malwarebytes (NL edition, 20 Feb 2026, updated 13 Mar 2026) cites Persona: exposed test environment, separated from production, no personal data made public; Persona published a post-incident review (not opened).
+
+Not disclosed: `integration.support_hours` (help center, community, no hours); `coverage.document_types` (page says "hundreds", no count).
+
+Rescore (v3.1 draft): 4.6 -> 3.7, all criteria scored.
+
+Score flag: the Feb 2026 exposure is counted as an incident (-1 trust). Owner to confirm it qualifies, since Persona says no personal data was exposed.
+
+
+## v3.1 breadth keys 2026-11-05
+
+- ongoing_monitoring: add_on, source 19 (recurring Watchlist and PEP Reports; Enterprise, limited on Growth, not on Startup or Essential)
+- transaction_monitoring: not_disclosed -> add_on, source 32 (new: Chainalysis KYT integration help article; crypto transfers mapped as Persona Transactions, alerts become Cases; scoring done by Chainalysis)
+- unchanged not_disclosed: video_ident

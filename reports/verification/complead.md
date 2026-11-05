@@ -100,3 +100,17 @@ Note for the owner: the Sanction Scanner record is 4.3 (legacy score, no breakdo
 
 - `sanction-scanner.yml` user_ratings shows G2 69 reviews; the same G2 listing (now "Complead (formerly Sanction Scanner)") shows 70 on 23 Oct 2026.
 - `sanction-scanner.yml` capabilities.deployment note says "Hosting regions EU, UK and Türkiye"; the data protection page (16) also names Microsoft Azure.
+
+## v3.1 fields 2026-11-05
+
+Added (key: status, source):
+- pricing.model: published partial (only the Sanction Scanner Starter plan), minimum true (EUR 990 monthly plan), trial false (22)
+- integration: docs_public yes, Sanction Scanner screening API only (24); sandbox yes, keys handed out right away (5); no_code yes, trigger, condition, action builder (12)
+- capabilities: ongoing_monitoring yes (5); list_updates yes (5); pep_tiers yes, four tiers with RCA (5); fuzzy_matching yes, threshold per segment (5); alert_explanation yes (5); audit_trail yes (12); risk_scoring yes (9); batch_screening yes (5); data_residency yes, EU, UK or Türkiye (15)
+- track_record.ownership: stable, founder owned, renamed from Sanction Scanner in Sept 2026 (26); incidents: none found
+
+Stayed not_disclosed: sdk_web, sdk_ios, sdk_android, support_hours (office phones only, no hours or SLA).
+
+Notes: the rebrand is a name change, not an ownership change, so ownership = stable. Data residency rests on the Trust Center, which the fetcher only partly reads (see earlier notes).
+
+Rescore v3.1: 4.0 -> 4.3 (100%). Score flag: none.

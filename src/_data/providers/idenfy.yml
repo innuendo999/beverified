@@ -11,8 +11,9 @@ logo:
   background: '#6A3FE8'
   wordmark: /assets/img/wordmarks/idenfy.png
 tagline: 'Published per-check pricing, with an option to pay only for verifications that pass'
-score: 4.5
+score: 3.7
 grade: Very Good
+methodology: v3.1
 primary_category: identity-verification
 legacy_rank_claim: 'ranked #14 in Identity Verification'
 categories:
@@ -51,6 +52,11 @@ pricing:
     extra: Drops to $0.55 per verification at volume, per iDenfy
   legacy_verified_note: null
   verified: '2026-11'
+  model:
+    published: core
+    minimum: true
+    trial: true
+    source: 9
   index:
     product: 'ID verification, Basic and Premium'
     price:
@@ -258,6 +264,77 @@ capabilities:
     status: 'no'
     note: quote only
     source: 8
+  liveness:
+    status: 'yes'
+    note: passive and active 3D face liveness
+    source: 23
+  injection_detection:
+    status: 'yes'
+    note: optional injection and virtual camera check, no lab letter found
+    source: 23
+  reusable_id:
+    status: not_disclosed
+    note: face authentication for returning users only, no reusable ID product found
+  data_residency:
+    status: partial
+    note: EU by default, specific jurisdictions on Enterprise
+    source: 26
+  ongoing_monitoring:
+    status: add_on
+    note: daily PEP and sanctions monitoring in AML plans
+    source: 21
+  case_management:
+    status: 'yes'
+    note: verifications case management portal
+    source: 21
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: documentation.idenfy.com readable without login
+    source: 24
+  sdk_web:
+    status: not_disclosed
+    note: iFrame and redirect flow, no web SDK listed
+  sdk_ios:
+    status: 'yes'
+    note: native iOS SDK
+    source: 24
+  sdk_android:
+    status: 'yes'
+    note: native Android SDK
+    source: 24
+  sandbox:
+    status: 'yes'
+    note: free trial with free checks, sandbox API keys
+    source: 9
+  no_code:
+    status: 'yes'
+    note: Magic Link hosted verification and plugins
+    source: 25
+  support_hours:
+    status: partial
+    note: SLA on Premium plan, no support hours published
+    source: 8
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 200
+    note: countries and territories
+    source: 3
+  document_types:
+    value: 3500
+    note: active government issued documents, homepage figure
+    source: 3
+  non_doc:
+    status: 'yes'
+    note: Soft KYC database checks in a few countries
+    source: 27
+track_record:
+  ownership:
+    status: stable
+    note: private company UAB iDenfy, no change of control found
+    source: 2
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security (cert. ISMS-1851/A, CERT International, valid to Jun 2029)
@@ -288,7 +365,37 @@ user_ratings:
   checked: '2026-10'
   url: https://www.capterra.com/p/230599/iDenfy/reviews/
 use_case_verdicts: []
-score_breakdown: []
+score_breakdown:
+- criterion: "Fraud defense"
+  weight: 25
+  score: 2.5
+  note: "liveness, no lab letter, NFC"
+  evidence: vendor
+- criterion: "Pricing and total cost"
+  weight: 20
+  score: 4.5
+  note: "published, monthly minimum, trial or free tier"
+  evidence: vendor
+- criterion: "Coverage"
+  weight: 15
+  score: 3.5
+  note: "200 countries and territories, 3,500 document types, checks without a document"
+  evidence: vendor
+- criterion: "Platform breadth"
+  weight: 15
+  score: 4
+  note: "6 of 8 modules: identity verification, KYB, sanctions screening, monitoring, case management, age checks"
+  evidence: vendor
+- criterion: "Integration and time to launch"
+  weight: 15
+  score: 4.5
+  note: "public API docs, self-serve sandbox or trial, no-code or hosted flow, 2 of 3 SDKs"
+  evidence: vendor
+- criterion: "Trust and track record"
+  weight: 10
+  score: 4
+  note: "ISO 27001 or SOC 2 confirmed, operating since 2017"
+  evidence: independent
 hands_on: null
 sources:
 - title: iDenfy pricing
@@ -379,6 +486,30 @@ sources:
   publisher: iDenfy
   url: https://idenfy.com/transaction-monitoring-software/
   accessed: '2026-10'
+- title: Liveness checks (iDenfy documentation)
+  publisher: iDenfy
+  url: https://documentation.idenfy.com/guides/dashboard/kyc/liveness-checks.md
+  accessed: '2026-11'
+- title: SDKs overview (iDenfy documentation)
+  publisher: iDenfy
+  url: https://documentation.idenfy.com/sdks/overview.md
+  accessed: '2026-11'
+- title: Magic Link (iDenfy documentation)
+  publisher: iDenfy
+  url: https://documentation.idenfy.com/integrations/magic-link.md
+  accessed: '2026-11'
+- title: Data residency (iDenfy documentation)
+  publisher: iDenfy
+  url: https://documentation.idenfy.com/guides/compliance/data-residency.md
+  accessed: '2026-11'
+- title: Soft KYC (iDenfy documentation)
+  publisher: iDenfy
+  url: https://documentation.idenfy.com/kyc/soft-kyc.md
+  accessed: '2026-11'
+- title: Supported documents (iDenfy documentation)
+  publisher: iDenfy
+  url: https://documentation.idenfy.com/resources/supported-documents.md
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

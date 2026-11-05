@@ -5,9 +5,9 @@ seo:
   description: 'Sumsub, Incode, Persona, VerifyMy and more compared: age verification and age estimation providers ranked, with the methods each one supports.'
   h1: Best Age Verification Providers in 2026
 breadcrumb_label: Best Age Verification Providers
-quick_answer: Sumsub ranks first on our scores, with document checks, selfie age estimation and database checks in one platform. Incode is next, running face age estimation on the user's phone. Persona offers the most methods, and VerifyMy is the specialist, with email-based age estimation. We compared 9 providers on the age checks they offer, fallbacks and the approvals they state.
+quick_answer: Shufti Pro ranks first on our scores, with iBeta Level 3 liveness and document, facial, mobile, open banking and digital ID age checks. Sumsub is next, with document checks, selfie age estimation and database checks in one platform. We compared 7 providers on the age checks they offer, fallbacks and the approvals they state.
 last_verified: '2026-10-18'
-updated: '2026-10-23'   # last content edit; last_verified = last fact re-check
+updated: '2026-11-05'
 explainer_html:
 - '<h2>Age verification or age estimation?</h2>
   <p>Age verification confirms a date of birth from a trusted source, usually an ID document, a bank, a mobile operator or a credit file. Age estimation infers an age range from a signal such as a selfie or an email address, without collecting a document. Most platforms now combine the two: a low-friction estimate first, and a document or database check only when the estimate is close to the threshold.</p>
@@ -59,12 +59,9 @@ faq:
 - q: Is age verification required by law in the US, EU and Australia?
   a: 'Yes for some services, but in none of the three does one law cover every website. In the US the rules are set by states: the Supreme Court upheld Texas''s age check law for adult sites on 27 June 2025, and Texas can enforce its app store law while a court challenge continues. In the EU, the Commission''s Digital Services Act guidelines of 14 July 2025 recommend age verification for pornography and gambling and age estimation in other cases. In Australia, age-restricted social media platforms must take reasonable steps to keep out users under 16 from 10 December 2025, with penalties of up to A$49.5 million.'
 - q: How much does age verification cost?
-  a: Six of the nine ranked providers publish prices, starting at €0.75 per Basic KYC check (document and face) at KYCAID and $0.80 per verification plus a $49 monthly minimum at Veriff. Shufti Pro's Essentials plan, which lists age verification, starts at $1.50 per verification. Sumsub's Basic plan is $1.35 per verification with a $149 monthly minimum, iDenfy's Basic plan is $1.35 with a $135 minimum, and Persona's Essential plan starts at $250 a month. Apart from Shufti Pro, these plans do not name age checks, so confirm the price for the method you need. Incode, VerifyMy and Paravision quote on request.
+  a: Six of the seven ranked providers publish prices, starting at €0.75 per Basic KYC check (document and face) at KYCAID and $0.80 per verification plus a $49 monthly minimum at Veriff. Shufti Pro's Essentials plan, which lists age verification, starts at $1.50 per verification. Sumsub's Basic plan is $1.35 per verification with a $149 monthly minimum, iDenfy's Basic plan is $1.35 with a $135 minimum, and Persona's Essential plan starts at $250 a month. Apart from Shufti Pro, these plans do not name age checks, so confirm the price for the method you need. Incode quotes on request.
 segments_heading: 'Best pick by industry'
 segments:
-- segment: Adult content sites
-  slug: verifymy
-  reason: Offers email-based and facial age estimation plus credit card, mobile and ID checks, holds ISO/IEC 27566-1 certification and states KJM approval in Germany.
 - segment: Social media and user-to-user platforms
   slug: persona
   reason: Supports selfie and email age estimation, phone, credit card, ID and digital ID checks, and keeps a reusable verified age so returning users skip the check.
@@ -80,9 +77,6 @@ segments:
 - segment: Dating
   slug: veriff
   reason: Offers selfie age estimation without a document and ID checks with FIDO-certified face matching, and publishes self-serve plans from a $49 monthly minimum.
-- segment: Platforms building their own age check
-  slug: paravision
-  reason: Sells its Age Estimator as an SDK to build into your own flow, certified by the Age Check Certification Scheme at Level 3 (Highly Effective Compliance).
 adjacent:
 - liveness-detection
 - identity-verification

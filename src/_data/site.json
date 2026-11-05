@@ -10,9 +10,73 @@
   "v3": {
     "disclosure": "We may earn a commission from some links. Payment never changes scores or ranking order.",
     "disclosureHref": "/methodology/#disclosure",
-    "methodologyVersion": "v3.0",
+    "methodologyVersion": "v3.1",
     "methodologyHref": "/methodology/",
     "rubric": [
+      {
+        "key": "fraud_defense",
+        "name": "Fraud defense",
+        "weight": 25
+      },
+      {
+        "key": "pricing",
+        "name": "Pricing and total cost",
+        "weight": 20
+      },
+      {
+        "key": "coverage",
+        "name": "Coverage",
+        "weight": 15
+      },
+      {
+        "key": "breadth",
+        "name": "Platform breadth",
+        "weight": 15
+      },
+      {
+        "key": "integration",
+        "name": "Integration and time to launch",
+        "weight": 15
+      },
+      {
+        "key": "trust",
+        "name": "Trust and track record",
+        "weight": 10
+      }
+    ],
+    "rubricAml": [
+      {
+        "key": "screening",
+        "name": "Screening data and match quality",
+        "weight": 25
+      },
+      {
+        "key": "pricing",
+        "name": "Pricing and total cost",
+        "weight": 20
+      },
+      {
+        "key": "workflow",
+        "name": "Investigation and audit workflow",
+        "weight": 15
+      },
+      {
+        "key": "breadth",
+        "name": "Platform breadth",
+        "weight": 15
+      },
+      {
+        "key": "integration",
+        "name": "Integration and time to launch",
+        "weight": 15
+      },
+      {
+        "key": "trust",
+        "name": "Trust and track record",
+        "weight": 10
+      }
+    ],
+    "rubricTravel": [
       {
         "key": "compliance",
         "name": "Compliance & certifications",
