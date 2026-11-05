@@ -84,3 +84,48 @@ Starting price: a category file with `price_source: record` shows the price from
 - `reports/gsc-missing-urls.csv` — URLs Google still shows that the site no longer has.
 - `reports/rating-conflicts.csv` — every place a provider's rating appears, where values differ.
 - `reports/content-gaps.csv` — what each page still needs, sorted by impressions.
+
+## Rubric v3.1 fields (added 2026-11-05, draft)
+
+Read by `scripts/rescore.mjs`, rules in `docs/scoring-v3.1.md`. Every leaf `{status, note, source}` uses `status: yes | add_on | partial | no | not_disclosed`, `note` = a few plain words, `source` = number in this record's `sources[]`. Add `independent: true` only when the source is a lab letter, register or third-party test.
+
+```yaml
+pricing:
+  model:                     # how the published pricing looks, from pricing.items
+    published: core | partial | none   # core = per-check price for the main product is public
+    minimum: true | false    # monthly minimum, annual commitment or paid plan required
+    trial: true | false      # free trial, free checks or free tier without a sales call
+    source: 1
+integration:
+  checked: '2026-11'
+  docs_public: {status, note, source}    # API reference readable without login
+  sdk_web: {status, note, source}
+  sdk_ios: {status, note, source}
+  sdk_android: {status, note, source}
+  sandbox: {status, note, source}        # self-serve sandbox or free trial, no sales call
+  no_code: {status, note, source}        # no-code workflow builder or hosted verification link
+  support_hours: {status, note, source}  # published support channels AND hours or SLA
+coverage:                    # identity family only
+  checked: '2026-11'
+  countries: {value: 220, note: 'countries and territories', source}   # integer or null
+  document_types: {value: 14000, note: 'document types', source}       # integer or null
+  non_doc: {status, note, source}        # database, bank or registry checks for individuals
+track_record:
+  ownership: {status: stable | changed_disclosed | pending_sale | unknown, note, source}
+  incidents: [{date: '2026-09-16', what: 'cyber incident disclosed', source}]   # regulatory actions, breaches; last 24 months count
+capabilities:                # new keys, same shape as the other capabilities
+  liveness: {...}            # identity family: has a liveness product
+  injection_detection: {...} # add independent: true with a lab letter
+  reusable_id: {...}
+  data_residency: {...}      # customer can choose the processing or storage region
+  ongoing_monitoring: {...}  # AML: re-screening of customers on list change
+  list_updates: {...}        # AML: named sanctions lists with stated update frequency
+  pep_tiers: {...}           # AML: PEP tiers or relatives and close associates
+  fuzzy_matching: {...}      # AML: configurable fuzzy matching or thresholds
+  alert_explanation: {...}   # AML: match reason shown to the analyst
+  audit_trail: {...}         # AML: decision log or audit trail
+  risk_scoring: {...}        # AML: risk scoring or rules engine
+  batch_screening: {...}     # AML: bulk or batch screening
+```
+
+`score_breakdown[]` is written by `node scripts/rescore.mjs --write`; never type it by hand.
