@@ -47,3 +47,32 @@ Competitor to watch: `verificationatlas.pages.dev` (static site with "Cite this 
 4. Cheap KYC and KYC pricing: surface Pricing Index figures and pricing-model explainer on the ranking; consider a cost calculator.
 5. Travel rule: add protocol support (TRP, TRISA, IVMS101) as a capability column if provider records can source it.
 6. Off-site: listings and mentions on review aggregators (G2, Capterra, Gartner) dominate "alternatives" queries; pursue citations, not imitation.
+
+### Update 2026-11-05: owner exports (Bing AI to 3 Nov, GSC last 28 days to 3 Nov, GSC Generative AI features)
+
+**Correction.** The web-search check above does not reflect Google. GSC shows Google positions for the same queries: "veriff alternatives" 2.0, "cheapest kyc provider" 14.0, "kyc pricing" 21.5, "best aml software" 39.3, "sumsub alternatives" 26.2, "kyb providers" 21.0. Read section 2 as "not in the web-search tool's index", not "absent".
+
+**Bing AI citations (5 Aug to 3 Nov 2026).** Avg per day: 966 (5 Aug to 3 Sep), 1,122 (4 Sep to 3 Oct), 940 (4 Oct to 3 Nov; 3 Nov is a partial day, 337). Last 8 full days avg 1,117 a day. Cited pages per day reached 33 to 36, the highest in the series. Bing classic search: about 100 impressions and 1 click a day.
+
+**Google Search, last 28 days (7 Oct to 3 Nov) vs 28 days to 15 Oct.** Clicks 392 vs 106, impressions 86,210 vs 43,008, avg position 15.4 vs 16.2. Impressions rose from about 1,700 to 6,000 to 10,000 a day from 28 Oct. 3 Nov alone: 202 clicks (CTR 1.94%), not attributable from this export (queries are anonymised); check GSC with a date filter of 3 Nov.
+
+**Google Generative AI features (AI Overviews / AI Mode), last 28 days.** 23,801 impressions on 158 pages, from about 400 a day to 2,600 to 3,600 a day from 28 Oct. Top pages: /providers/identity-verification/ 2,007, /providers/incode/ 1,316, /providers/kyb/ 1,251, /providers/veriff/ 1,228, /providers/liveness-detection/ 906.
+
+**Glossary (live 29 Oct).** 62 term pages already in Search, 92 clicks, CTR 1 to 4%, the highest on the site.
+
+**Low-hanging fruit (top 10 position, high impressions, near-zero clicks).**
+
+| Query | Impr. | Pos. | Clicks |
+|---|---|---|---|
+| zyphe alternatives | 1,225 | 4.4 | 1 |
+| whitelist meaning (+ whitelisted, whitelisting) | 1,337 | 5.5 to 7.3 | 0 |
+| sumsub pricing | 274 | 5.2 | 0 |
+| veriff alternatives | 268 | 2.0 | 0 |
+| beverified.org alternatives | 256 | 5.1 | 0 |
+| aiprise alternatives | 183 | 2.5 | 0 |
+| veriff pricing | 140 | 6.4 | 0 |
+| onfido pricing | 121 | 3.5 | 0 |
+
+Pages with top 10 positions and CTR under 0.1%: /providers/veriff/ (pos 6.8, 3,247 impr), /providers/incode/ (5.4, 3,138), /providers/aiprise/ (6.5, 1,920).
+
+**Gaps (impressions, position 20+).** /providers/aml/ 7,783 impr at 44.6 ("aml software" 51, "best aml software" 39, "aml compliance software" 66); "kyc providers" 21, "kyc vendors" 24, "kyc aml providers" 24, "identity verification providers" 27, "kyb software" 46, "ekyc solution" 21; "sumsub alternatives" 26; United Kingdom 8,271 impr at avg 27.6; /providers/age-verification/ at 24.5. Comparison queries with no page: "persona vs onfido vs sumsub", "simplified.id vs complyadvantage".
