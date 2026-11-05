@@ -2,7 +2,10 @@
   "name": "BeVerified",
   "url": "https://beverified.org",
   "profiles": [
-    { "name": "LinkedIn", "url": "https://www.linkedin.com/company/be-verified/" }
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/company/be-verified/"
+    }
   ],
   "v3": {
     "disclosure": "We may earn a commission from some links. Payment never changes scores or ranking order.",
@@ -78,6 +81,11 @@
         "label": "Reviews",
         "href": "/providers/",
         "key": "reviews"
+      },
+      {
+        "label": "Incidents",
+        "href": "/incidents/",
+        "key": "incidents"
       },
       {
         "label": "Blog",
@@ -180,6 +188,10 @@
         [
           "Methodology",
           "/methodology/"
+        ],
+        [
+          "Incident tracker",
+          "/incidents/"
         ],
         [
           "Glossary",

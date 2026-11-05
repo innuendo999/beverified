@@ -27,6 +27,7 @@ export default {
     },
     pricingOfficial: (d) => (d.p.pricing?.items || []).filter((i) => i.kind !== "third_party"),
     pricingEstimates: (d) => (d.p.pricing?.items || []).filter((i) => i.kind === "third_party"),
+    incidentList: (d) => (d.incidents?.items || []).filter((x) => x.slug === d.p.slug).sort((a, b) => b.date.localeCompare(a.date)),
     navItems: (d) => {
       const p = d.p, has = (x) => Array.isArray(x) ? x.length > 0 : !!x;
       const alts = (p.choose_instead || []).filter((a) => a.slug && d.providers[a.slug]);
@@ -36,6 +37,7 @@ export default {
         ["use-cases", "Use cases", has(p.use_case_verdicts)],
         ["pricing", "Pricing", true],
         ["certifications", "Certifications", has(p.certifications)],
+        ["incidents", "Incidents", (d.incidents?.items || []).some((x) => x.slug === p.slug)],
         ["hands-on", "Hands-on test", has(p.hands_on)],
         ["features", "Features", has(p.features)],
         ["pros-cons", "Pros & cons", true],
