@@ -11,8 +11,9 @@ logo:
   background: '#8A5CF0'
   wordmark: /assets/img/wordmarks/veriff.png
 tagline: AI plus human-review IDV with deep document coverage and public self-serve pricing
-score: 4.6
-grade: Great
+score: 4.5
+grade: Excellent
+methodology: v3.1
 primary_category: identity-verification
 legacy_rank_claim: 'ranked #2 in Identity Verification'
 categories:
@@ -449,7 +450,37 @@ user_ratings:
   checked: '2026-10'
   url: https://www.gartner.com/reviews/product/veriff
 use_case_verdicts: []
-score_breakdown: []
+score_breakdown:
+- criterion: "Fraud defense"
+  weight: 25
+  score: 4.5
+  note: "PAD Level 2 lab result, NFC"
+  evidence: independent
+- criterion: "Pricing and total cost"
+  weight: 20
+  score: 4.5
+  note: "published, monthly minimum, trial or free tier"
+  evidence: vendor
+- criterion: "Coverage"
+  weight: 15
+  score: 5
+  note: "230 countries and territories, 12,500 document types, checks without a document"
+  evidence: vendor
+- criterion: "Platform breadth"
+  weight: 15
+  score: 4
+  note: "5 of 8 modules: identity verification, KYB, sanctions screening, monitoring, age checks"
+  evidence: vendor
+- criterion: "Integration and time to launch"
+  weight: 15
+  score: 5
+  note: "public API docs, self-serve sandbox or trial, no-code or hosted flow, web, iOS and Android SDKs"
+  evidence: vendor
+- criterion: "Trust and track record"
+  weight: 10
+  score: 3.5
+  note: "ISO 27001 or SOC 2 vendor-stated, trust framework confirmed, operating since 2015, incident 2025-12-10"
+  evidence: vendor
 hands_on: null
 sources:
 - title: Veriff pricing

@@ -12,8 +12,9 @@ logo:
   background: null
   wordmark: /assets/img/wordmarks/enigma.png
 tagline: US business identity data and KYB API with a published per-match rate card
-score: 4.4
-grade: Very Good
+score: 3.4
+grade: Good
+methodology: v3.1
 primary_category: kyb
 categories:
 - kyb
@@ -328,36 +329,36 @@ user_ratings:
   url: https://www.g2.com/products/enigma-technologies-enigma/reviews
 use_case_verdicts: []
 score_breakdown:
-- criterion: Compliance & certifications
+- criterion: "Fraud defense"
   weight: 25
-  score: 4.2
-  note: Enigma's security page states SOC 2 Type 2 compliance and annual third-party penetration tests, but names no auditor or report date and lists no ISO/IEC 27001.
+  score: 3.5
+  note: "KYB guide"
   evidence: vendor
-- criterion: Coverage
+- criterion: "Pricing and total cost"
   weight: 20
-  score: 4.0
-  note: KYB covers 100M+ registrations across 52 US jurisdictions from 200+ sources, but it is US only and Enigma says it has no plans to expand it.
+  score: 5
+  note: "published, trial or free tier"
   evidence: vendor
-- criterion: Pricing transparency
-  weight: 20
-  score: 4.9
-  note: The pricing page and rate card publish plan prices, the credit price and per-match and per-request rates for KYB, screening and enrichment.
-  evidence: vendor
-- criterion: Integration & API depth
+- criterion: "Coverage"
   weight: 15
-  score: 4.6
-  note: Public GraphQL API reference and KYB docs, a status page, a Console, an MCP server and partner platforms such as Alloy, Taktile and Oscilar, though a sandbox and SDKs are not documented on the pages we opened.
+  score: 2
+  note: "1 countries and territories, checks without a document"
   evidence: vendor
-- criterion: Support responsiveness
-  weight: 10
-  score: 4.0
-  note: Support is by email and contact form with no published hours or SLA outside Enterprise contracts, and there are too few user reviews to judge responsiveness.
+- criterion: "Platform breadth"
+  weight: 15
+  score: 4
+  note: "4 of 5 kyb modules: registry checks, UBO discovery, entity screening, ongoing monitoring"
   evidence: vendor
-- criterion: Track record
+- criterion: "Integration and time to launch"
+  weight: 15
+  score: 2
+  note: "public API docs"
+  evidence: vendor
+- criterion: "Trust and track record"
   weight: 10
-  score: 4.5
-  note: Operating since 2011 with a $95M NEA-led round in 2018 and bank investors, and we found no public regulatory actions or breach disclosures.
-  evidence: independent
+  score: 3
+  note: "ISO 27001 or SOC 2 vendor-stated, operating since 2011"
+  evidence: vendor
 hands_on: null
 sources:
 - title: Enigma homepage

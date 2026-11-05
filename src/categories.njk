@@ -120,8 +120,9 @@ layout: v3.njk
       <h2 id="how-h" class="h-section">How we ranked this category</h2>
       <div class="card weights">
         <div>
-          {%- for r in site.v3.rubric %}<div class="weights__row"><span>{{ r.name }}</span><span class="bar" aria-hidden="true"><i class="w-{{ r.weight * 4 }}"></i></span><span>{{ r.weight }}%</span></div>{% endfor %}
-          <p class="mt-12 fs-14"><a href="{{ site.v3.methodologyHref }}">Full methodology {{ site.v3.methodologyVersion }} →</a></p>
+          {%- set rub = site.v3.rubricTravel if c.slug == "travel-rule" else (site.v3.rubricAml if c.slug.startsWith("aml") else site.v3.rubric) %}
+          {%- for r in rub %}<div class="weights__row"><span>{{ r.name }}</span><span class="bar" aria-hidden="true"><i class="w-{{ r.weight * 4 }}"></i></span><span>{{ r.weight }}%</span></div>{% endfor %}
+          <p class="mt-12 fs-14"><a href="{{ site.v3.methodologyHref }}">Full methodology {{ "v3.0 (Travel Rule)" if c.slug == "travel-rule" else site.v3.methodologyVersion }} →</a></p>
         </div>
         <div class="weights__key">
           <span>Evidence levels we rely on</span>

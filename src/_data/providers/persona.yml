@@ -11,8 +11,9 @@ logo:
   background: '#7C4DEA'
   wordmark: /assets/img/wordmarks/persona.png
 tagline: Modular identity infrastructure built for product teams to assemble their own flows
-score: 4.6
+score: 4.0
 grade: Great
+methodology: v3.1
 primary_category: identity-verification
 legacy_rank_claim: 'ranked #11 in Identity Verification'
 categories:
@@ -369,7 +370,37 @@ user_ratings:
   checked: '2026-10'
   url: https://www.gartner.com/reviews/product/persona
 use_case_verdicts: []
-score_breakdown: []
+score_breakdown:
+- criterion: "Fraud defense"
+  weight: 25
+  score: 4.5
+  note: "PAD Level 2 lab result, NFC"
+  evidence: independent
+- criterion: "Pricing and total cost"
+  weight: 20
+  score: 3
+  note: "some modules priced"
+  evidence: vendor
+- criterion: "Coverage"
+  weight: 15
+  score: 3.5
+  note: "200 countries and territories, checks without a document"
+  evidence: vendor
+- criterion: "Platform breadth"
+  weight: 15
+  score: 5
+  note: "7 of 8 modules: identity verification, KYB, sanctions screening, monitoring, case management, reusable ID, age checks"
+  evidence: vendor
+- criterion: "Integration and time to launch"
+  weight: 15
+  score: 4
+  note: "public API docs, no-code or hosted flow, web, iOS and Android SDKs"
+  evidence: vendor
+- criterion: "Trust and track record"
+  weight: 10
+  score: 3.5
+  note: "ISO 27001 or SOC 2 vendor-stated, data residency or on-premises, operating since 2018"
+  evidence: vendor
 hands_on: null
 sources:
 - title: Persona pricing

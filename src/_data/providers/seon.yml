@@ -11,8 +11,9 @@ logo:
   background: '#6A3FE8'
   wordmark: /assets/img/wordmarks/seon.png
 tagline: Digital-footprint and device intelligence for fraud prevention and pre-KYC screening
-score: 4.5
-grade: Very Good
+score: 4.6
+grade: Excellent
+methodology: v3.1
 primary_category: aml
 legacy_rank_claim: 'ranked #3 in AML'
 categories:
@@ -272,7 +273,37 @@ user_ratings:
   checked: '2026-10'
   url: https://www.capterra.com/p/187389/SEON-Sense/
 use_case_verdicts: []
-score_breakdown: []
+score_breakdown:
+- criterion: "Screening data and match quality"
+  weight: 25
+  score: 5
+  note: "stated list update frequency, adverse media, configurable fuzzy matching, ongoing re-screening"
+  evidence: vendor
+- criterion: "Pricing and total cost"
+  weight: 20
+  score: 4
+  note: "published, monthly minimum"
+  evidence: vendor
+- criterion: "Investigation and audit workflow"
+  weight: 15
+  score: 5
+  note: "case management, match reasons shown, audit trail, risk scoring"
+  evidence: vendor
+- criterion: "Platform breadth"
+  weight: 15
+  score: 5
+  note: "6 of 6 modules: sanctions screening, adverse media, monitoring, case management, KYB, identity verification"
+  evidence: vendor
+- criterion: "Integration and time to launch"
+  weight: 15
+  score: 5
+  note: "public API docs, no-code or hosted flow, published support hours, web, iOS and Android SDKs"
+  evidence: vendor
+- criterion: "Trust and track record"
+  weight: 10
+  score: 3
+  note: "ISO 27001 or SOC 2 vendor-stated, operating since 2017"
+  evidence: vendor
 hands_on: null
 sources:
 - title: SEON pricing

@@ -11,8 +11,9 @@ logo:
   background: '#7C4DEA'
   wordmark: null
 tagline: Global KYB, now part of Veriff after a February 2026 acquisition
-score: 4.4
-grade: Very Good
+score: 4.0
+grade: Great
+methodology: v3.1
 primary_category: kyb
 legacy_rank_claim: 'ranked #5 in KYB'
 categories:
@@ -281,7 +282,37 @@ user_ratings:
   checked: '2026-10'
   url: https://www.capterra.com/p/10004660/Vespia/
 use_case_verdicts: []
-score_breakdown: []
+score_breakdown:
+- criterion: "Fraud defense"
+  weight: 25
+  score: 4
+  note: "KYB guide"
+  evidence: vendor
+- criterion: "Pricing and total cost"
+  weight: 20
+  score: 4
+  note: "published"
+  evidence: vendor
+- criterion: "Coverage"
+  weight: 15
+  score: 4
+  note: "190 countries and territories, 7,000 document types"
+  evidence: vendor
+- criterion: "Platform breadth"
+  weight: 15
+  score: 5
+  note: "5 of 5 kyb modules: registry checks, UBO discovery, entity screening, ongoing monitoring, company documents"
+  evidence: vendor
+- criterion: "Integration and time to launch"
+  weight: 15
+  score: 4.5
+  note: "public API docs, self-serve sandbox or trial, no-code or hosted flow, 1 of 3 SDKs"
+  evidence: vendor
+- criterion: "Trust and track record"
+  weight: 10
+  score: 2
+  note: "operating since 2021"
+  evidence: vendor
 hands_on: null
 sources:
 - title: Veriff acquires Vespia (press release, 5 February 2026)

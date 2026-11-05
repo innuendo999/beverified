@@ -25,6 +25,18 @@ export const RUBRICS = {
 };
 const familyOf = (d) => (/^aml/.test(d.primary_category) ? "aml" : d.primary_category === "travel-rule" ? null : "identity");
 
+// Reader-facing labels for breakdown notes (shown on review pages).
+const LABEL = { idv: "identity verification", kyb: "KYB", screening: "sanctions screening", monitoring: "monitoring", case_management: "case management",
+  video_ident: "video ident", reusable_id: "reusable ID", age: "age checks", adverse_media: "adverse media", kyc: "identity verification",
+  docs_public: "public API docs", sandbox: "self-serve sandbox or trial", no_code: "no-code or hosted flow", support_hours: "published support hours",
+  identity_verification: "identity verification", liveness: "liveness", nfc: "NFC", age_facial_estimation: "facial age estimation",
+  kyb_registry: "registry checks", kyb_ubo: "UBO discovery", kyb_entity_screening: "entity screening", kyb_monitoring: "ongoing monitoring", kyb_documents: "company documents",
+  age_document: "ID document", age_email_estimation: "email estimation", age_mobile_operator: "mobile operator", age_credit_card: "credit card",
+  age_open_banking: "open banking", age_digital_id: "digital ID", age_reusable: "reusable age result",
+  list_updates: "stated list update frequency", pep_tiers: "PEP tiers", fuzzy_matching: "configurable fuzzy matching", ongoing_monitoring: "ongoing re-screening",
+  alert_explanation: "match reasons shown", audit_trail: "audit trail", risk_scoring: "risk scoring", batch_screening: "batch screening" };
+const lab = (ks) => ks.map((k) => LABEL[k] || k).join(", ");
+const fmt = (n) => Number(n).toLocaleString("en-US");
 const has = (c) => c && ["yes", "add_on", "partial"].includes(c.status);
 const yes = (c) => c && c.status === "yes";
 const cap = (d, k) => (d.capabilities || {})[k];
@@ -68,7 +80,7 @@ function pricing(d) {
   if (m.published === "partial") return [3, "some modules priced", "vendor"];
   // Quote only: the absence of a published price is itself a known fact, so it scores 2 whether or not
   // third-party data exists (otherwise a vendor with Vendr data would score below one with none).
-  return [2, "price not published, quoted by sales", "vendor"];
+  return [2, "no published price, quoted by sales", "vendor"];
 }
 
 function coverage(d) {
@@ -83,7 +95,7 @@ function coverage(d) {
   else if (global) s = 3.5;
   else if (n >= 100) s = 3;
   else s = 2;
-  return [s, `${n} countries${docs ? `, ${docs} document types` : ""}${has(c.non_doc) ? ", non-document checks" : ""}`, "vendor"];
+  return [s, `${fmt(n)} countries and territories${docs ? `, ${fmt(docs)} document types` : ""}${has(c.non_doc) ? ", checks without a document" : ""}`, "vendor"];
 }
 
 // Specialists are scored on the modules of their own category (owner, 2026-11-05).
@@ -100,7 +112,7 @@ function scopedBreadth(d, scope) {
   const keys = sets[scope];
   const n = keys.filter(c).length;
   const table = scope === "age" ? { 8: 5, 7: 5, 6: 5, 5: 4, 4: 4, 3: 3, 2: 2, 1: 1.5, 0: 1 } : { 5: 5, 4: 4, 3: 3, 2: 2, 1: 1.5, 0: 1 };
-  return [table[n], `${scope} scope, ${n} of ${keys.length}: ${keys.filter(c).join(", ")}`, "vendor"];
+  return [table[n], `${n} of ${keys.length} ${scope} modules: ${lab(keys.filter(c))}`, "vendor"];
 }
 function breadth(d, fam) {
   const scope = SCOPE_BY_SLUG[d.slug] || (fam === "identity" && SCOPE_BY_CATEGORY[d.primary_category]);
@@ -114,7 +126,7 @@ function breadth(d, fam) {
   const n = Object.values(mods).filter(Boolean).length;
   if (!d.capabilities || Object.keys(d.capabilities).length < 2) return [null, "capabilities missing"];
   const table = fam === "aml" ? { 6: 5, 5: 4, 4: 3.5, 3: 3, 2: 2, 1: 1.5, 0: 1 } : { 8: 5, 7: 5, 6: 4, 5: 4, 4: 3, 3: 3, 2: 2, 1: 1.5, 0: 1 };
-  return [table[n], `${n} of ${Object.keys(mods).length} modules: ${Object.entries(mods).filter(([, v]) => v).map(([k]) => k).join(", ")}`, "vendor"];
+  return [table[n], `${n} of ${Object.keys(mods).length} modules: ${lab(Object.entries(mods).filter(([, v]) => v).map(([k]) => k))}`, "vendor"];
 }
 
 function integration(d) {
@@ -122,8 +134,8 @@ function integration(d) {
   if (!i) return [null, "integration missing"];
   const sdks = ["sdk_web", "sdk_ios", "sdk_android"].filter((k) => yes(i[k])).length;
   const pts = (yes(i.docs_public) ? 1 : 0) + (sdks === 3 ? 1 : sdks ? 0.5 : 0) + (yes(i.sandbox) ? 1 : 0) + (yes(i.no_code) ? 1 : 0) + (yes(i.support_hours) ? 1 : 0);
-  const got = ["docs_public", "sandbox", "no_code", "support_hours"].filter((k) => yes(i[k]));
-  if (sdks) got.push(`${sdks} of 3 SDKs`);
+  const got = ["docs_public", "sandbox", "no_code", "support_hours"].filter((k) => yes(i[k])).map((k) => LABEL[k]);
+  if (sdks) got.push(sdks === 3 ? "web, iOS and Android SDKs" : `${sdks} of 3 SDKs`);
   return [clamp(pts + 1), got.join(", ") || "none found", "vendor"];
 }
 
@@ -148,13 +160,13 @@ function screening(d) {
   if (!keys.some((k) => known(cap(d, k)))) return [null, "no screening data"];
   let pts = keys.filter((k) => has(cap(d, k))).length;
   if (keys.some((k) => cap(d, k)?.independent)) pts += 0.5;
-  return [clamp(pts + 1), keys.filter((k) => has(cap(d, k))).join(", "), "vendor"];
+  return [clamp(pts + 1), lab(keys.filter((k) => has(cap(d, k)))), "vendor"];
 }
 
 function workflow(d) {
   const keys = ["case_management", "alert_explanation", "audit_trail", "risk_scoring", "batch_screening"];
   if (!keys.some((k) => known(cap(d, k)))) return [null, "no workflow data"];
-  return [clamp(keys.filter((k) => has(cap(d, k))).length + 1), keys.filter((k) => has(cap(d, k))).join(", "), "vendor"];
+  return [clamp(keys.filter((k) => has(cap(d, k))).length + 1), lab(keys.filter((k) => has(cap(d, k)))), "vendor"];
 }
 
 const FN = { fraud_defense: fraudDefense, pricing, coverage, breadth, integration, trust, screening, workflow };
@@ -202,7 +214,9 @@ for (const slug of files) {
     const block = "score_breakdown:\n" + r.rows.map((x) => `- criterion: ${JSON.stringify(x.criterion)}\n  weight: ${x.weight}\n  score: ${x.score ?? "null"}\n  note: ${JSON.stringify(x.note)}\n  evidence: ${x.evidence ?? "null"}`).join("\n") + "\n";
     const next = text.replace(/^score_breakdown:(?:\s*\[\])?\n(?:(?:-|  ).*\n)*/m, block)
       .replace(/^score: .*$/m, `score: ${r.total.toFixed(1)}`)
-      .replace(/^grade: .*$/m, `grade: ${grade(r.total)}`);
+      .replace(/^grade: .*$/m, `grade: ${grade(r.total)}`)
+      .replace(/^methodology: .*\n/m, "")
+      .replace(/^(grade: .*)$/m, "$1\nmethodology: v3.1");
     fs.writeFileSync(file, next);
   }
 }

@@ -8,9 +8,9 @@ h1_muted: Independently reviewed
 lede: Independent reviews and rankings of KYC, KYB and AML software, compared on coverage, accuracy, pricing and support.
 
 quick_picks:            # label + provider slug; reason = provider tagline unless set
-  - { label: Best overall, slug: sumsub }
-  - { label: Best for KYB, slug: kycaid }          # #1 in rankings.yml → kyb
-  - { label: Best for liveness, slug: veriff }     # #1 in rankings.yml → liveness-detection
+  - { label: Best overall, slug: shufti-pro }      # #1 in rankings.yml → identity-verification and kyc (v3.1)
+  - { label: Best for AML, slug: sumsub }          # #1 in rankings.yml → aml
+  - { label: Best for banks, slug: complyadvantage }  # #1 in rankings.yml → aml/banks
 
 logo_strip: [sumsub, complyadvantage, onfido, kycaid, feedzai, trulioo, jumio, seon]
 

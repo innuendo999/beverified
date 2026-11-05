@@ -11,8 +11,9 @@ logo:
   background: '#835AEB'
   wordmark: /assets/img/wordmarks/feedzai.png
 tagline: Enterprise payment-fraud and transaction-monitoring platform for Tier-1 banks
-score: 4.6
-grade: Great
+score: 2.9
+grade: Fair
+methodology: v3.1
 primary_category: aml/banks
 legacy_rank_claim: 'ranked #2 in AML'
 categories:
@@ -234,7 +235,37 @@ user_ratings:
   checked: '2026-10'
   url: https://www.capterra.co.uk/software/156229/feedzai-ds
 use_case_verdicts: []
-score_breakdown: []
+score_breakdown:
+- criterion: "Screening data and match quality"
+  weight: 25
+  score: 3
+  note: "adverse media, ongoing re-screening"
+  evidence: vendor
+- criterion: "Pricing and total cost"
+  weight: 20
+  score: 2
+  note: "no published price, quoted by sales"
+  evidence: vendor
+- criterion: "Investigation and audit workflow"
+  weight: 15
+  score: 5
+  note: "case management, match reasons shown, audit trail, risk scoring"
+  evidence: vendor
+- criterion: "Platform breadth"
+  weight: 15
+  score: 4
+  note: "5 of 6 modules: sanctions screening, adverse media, monitoring, case management, identity verification"
+  evidence: vendor
+- criterion: "Integration and time to launch"
+  weight: 15
+  score: 1
+  note: "none found"
+  evidence: vendor
+- criterion: "Trust and track record"
+  weight: 10
+  score: 2
+  note: "operating since 2011"
+  evidence: vendor
 hands_on: null
 sources:
 - title: About Feedzai

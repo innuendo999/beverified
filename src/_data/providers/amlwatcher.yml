@@ -13,7 +13,8 @@ logo:
   wordmark: /assets/img/wordmarks/amlwatcher.png
 tagline: AML screening on an in-house watchlist database, with transaction monitoring, an AI review agent and on-premises delivery
 score: 4.1
-grade: Good
+grade: Great
+methodology: v3.1
 primary_category: aml
 categories:
 - aml
@@ -317,35 +318,35 @@ user_ratings:
   url: https://www.gartner.com/reviews/product/aml-watcher
 use_case_verdicts: []
 score_breakdown:
-- criterion: Compliance & certifications
+- criterion: "Screening data and match quality"
   weight: 25
-  score: 4.3
-  note: The ISO/IEC 27001:2022 certificate (AMER800493, issued April 2026, valid to April 2029) comes from a UAF-accredited body under the IAF arrangement and covers the AML and KYC platform, but there is no SOC 2 report or regulatory licence, and the certificate names AML Watcher.com LLC while the terms name Risk Watcher LLC at the same address.
-  evidence: independent
-- criterion: Coverage
-  weight: 20
-  score: 4.2
-  note: AML Watcher names OFAC, UN, EU and UK HMT and claims 215+ regimes, 3,500+ watchlists and 240 supported countries on its own data, but its PEP and media counts conflict between pages (2.1M, 2.6M and 6M+ PEP profiles; 5,000+, 50K+ and 100,000+ media sources).
+  score: 5
+  note: "stated list update frequency, PEP tiers, adverse media, configurable fuzzy matching, ongoing re-screening"
   evidence: vendor
-- criterion: Pricing transparency
+- criterion: "Pricing and total cost"
   weight: 20
-  score: 3.6
-  note: The pricing page shows plan names, limits, a five-search trial and a 17% annual saving but no prices; the $95 and $450 monthly figures appear only on G2 and Capterra, and the overage rate is not published.
+  score: 2
+  note: "no published price, quoted by sales"
   evidence: vendor
-- criterion: Integration & API depth
+- criterion: "Investigation and audit workflow"
   weight: 15
-  score: 4.3
-  note: Public REST API docs cover access tokens, API keys, search, bulk search, webhooks and rate limits, with a change log updated to April 2026 and an MCP server, but no SDKs or sandbox are documented.
+  score: 5
+  note: "case management, match reasons shown, audit trail, risk scoring, batch screening"
   evidence: vendor
-- criterion: Support responsiveness
+- criterion: "Platform breadth"
+  weight: 15
+  score: 4
+  note: "5 of 6 modules: sanctions screening, adverse media, monitoring, case management, KYB"
+  evidence: vendor
+- criterion: "Integration and time to launch"
+  weight: 15
+  score: 5
+  note: "public API docs, self-serve sandbox or trial, no-code or hosted flow, published support hours"
+  evidence: vendor
+- criterion: "Trust and track record"
   weight: 10
-  score: 4.2
-  note: The FAQ promises 24/7 support by phone, text and email with replies in 1 to 10 minutes but no formal SLA, and users rate it 4.7 from 12 G2 reviews and 4.3 from 8 Trustpilot reviews.
-  evidence: user
-- criterion: Track record
-  weight: 10
-  score: 4.0
-  note: AML Watcher has operated since at least 2021 under a parent group showing a 2016 start date, but it discloses no founding year or funding. Chartis tags AML Watcher on its FCC50 2025 ranking pages, but the placement is not visible and we could not confirm the RiskTech100 2024 claim on its own site. We found no public regulatory actions or breach disclosures.
+  score: 3.5
+  note: "ISO 27001 or SOC 2 confirmed, data residency or on-premises"
   evidence: independent
 hands_on: null
 sources:

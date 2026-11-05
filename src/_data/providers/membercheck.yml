@@ -11,8 +11,9 @@ logo:
   background: '#7C4DEA'
   wordmark: /assets/img/wordmarks/membercheck.png
 tagline: PEP, sanctions and adverse-media screening for regulated businesses, sister product to NameScan
-score: 4.3
-grade: Good
+score: 3.8
+grade: Very Good
+methodology: v3.1
 primary_category: aml
 legacy_rank_claim: 'ranked #12 in AML'
 categories:
@@ -273,7 +274,37 @@ user_ratings:
   checked: '2026-10'
   url: https://www.capterra.com/p/154148/MemberCheck/reviews/
 use_case_verdicts: []
-score_breakdown: []
+score_breakdown:
+- criterion: "Screening data and match quality"
+  weight: 25
+  score: 5
+  note: "stated list update frequency, PEP tiers, adverse media, configurable fuzzy matching, ongoing re-screening"
+  evidence: vendor
+- criterion: "Pricing and total cost"
+  weight: 20
+  score: 2
+  note: "no published price, quoted by sales"
+  evidence: vendor
+- criterion: "Investigation and audit workflow"
+  weight: 15
+  score: 5
+  note: "case management, match reasons shown, audit trail, risk scoring, batch screening"
+  evidence: vendor
+- criterion: "Platform breadth"
+  weight: 15
+  score: 5
+  note: "6 of 6 modules: sanctions screening, adverse media, monitoring, case management, KYB, identity verification"
+  evidence: vendor
+- criterion: "Integration and time to launch"
+  weight: 15
+  score: 2
+  note: "public API docs"
+  evidence: vendor
+- criterion: "Trust and track record"
+  weight: 10
+  score: 3.5
+  note: "ISO 27001 or SOC 2 vendor-stated, data residency or on-premises, operating since 2008"
+  evidence: vendor
 hands_on: null
 sources:
 - title: MemberCheck homepage

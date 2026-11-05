@@ -11,8 +11,9 @@ logo:
   background: '#7247DE'
   wordmark: /assets/img/wordmarks/trulioo.png
 tagline: Global identity and business verification across 195 countries and 700M business entities
-score: 4.5
-grade: Very Good
+score: 3.1
+grade: Good
+methodology: v3.1
 primary_category: identity-verification
 legacy_rank_claim: 'ranked #6 in Identity Verification'
 categories:
@@ -303,7 +304,37 @@ user_ratings:
   checked: '2026-10'
   url: https://www.gartner.com/reviews/product/trulioo-400589733
 use_case_verdicts: []
-score_breakdown: []
+score_breakdown:
+- criterion: "Fraud defense"
+  weight: 25
+  score: 2
+  note: "liveness, no lab letter"
+  evidence: vendor
+- criterion: "Pricing and total cost"
+  weight: 20
+  score: 2
+  note: "no published price, quoted by sales"
+  evidence: vendor
+- criterion: "Coverage"
+  weight: 15
+  score: 5
+  note: "195 countries and territories, 14,000 document types, checks without a document"
+  evidence: vendor
+- criterion: "Platform breadth"
+  weight: 15
+  score: 3
+  note: "4 of 8 modules: identity verification, KYB, sanctions screening, monitoring"
+  evidence: vendor
+- criterion: "Integration and time to launch"
+  weight: 15
+  score: 4
+  note: "public API docs, no-code or hosted flow, web, iOS and Android SDKs"
+  evidence: vendor
+- criterion: "Trust and track record"
+  weight: 10
+  score: 3.5
+  note: "ISO 27001 or SOC 2 vendor-stated, data residency or on-premises, operating since 2011"
+  evidence: vendor
 hands_on: null
 sources:
 - title: Pricing

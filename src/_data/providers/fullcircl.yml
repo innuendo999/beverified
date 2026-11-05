@@ -12,8 +12,9 @@ logo:
   background: '#6F3EE0'
   wordmark: /assets/img/wordmarks/fullcircl.png
 tagline: Orchestration platform unifying KYB, KYC, AML, and IDV in one B2B onboarding interface
-score: 4.4
-grade: Very Good
+score: 3.0
+grade: Good
+methodology: v3.1
 primary_category: kyb
 legacy_rank_claim: 'ranked #6 in KYB'
 categories:
@@ -256,7 +257,37 @@ user_ratings:
   checked: '2026-10'
   url: https://www.g2.com/products/fullcircl/reviews
 use_case_verdicts: []
-score_breakdown: []
+score_breakdown:
+- criterion: "Fraud defense"
+  weight: 25
+  score: 4
+  note: "KYB guide"
+  evidence: vendor
+- criterion: "Pricing and total cost"
+  weight: 20
+  score: 2
+  note: "no published price, quoted by sales"
+  evidence: vendor
+- criterion: "Coverage"
+  weight: 15
+  score: 4
+  note: "246 countries and territories, 6,000 document types, checks without a document"
+  evidence: vendor
+- criterion: "Platform breadth"
+  weight: 15
+  score: 4
+  note: "4 of 5 kyb modules: registry checks, UBO discovery, ongoing monitoring, company documents"
+  evidence: vendor
+- criterion: "Integration and time to launch"
+  weight: 15
+  score: 2
+  note: "public API docs"
+  evidence: vendor
+- criterion: "Trust and track record"
+  weight: 10
+  score: 1
+  note: "no public evidence"
+  evidence: vendor
 hands_on: null
 sources:
 - title: nCino Identity Solutions homepage (fullcircl.com redirects here)
