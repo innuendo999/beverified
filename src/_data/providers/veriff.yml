@@ -24,7 +24,7 @@ link:
   legacy_rel: nofollow sponsored
 last_verified: '2026-10-22'
 updated: '2026-11-02'   # last content edit; last_verified = last fact re-check
-verdict: 'Veriff pairs automated decisions with human review (on its Plus and Premium plans) and says it supports 12,500+ government-issued ID documents from 230+ countries and territories. Its passive liveness check passed iBeta''s ISO/IEC 30107-3 Level 2 test in 2024, and its UK service is on the government''s DIATF register. Self-serve plans are published, with a $49, $99 or $209 monthly minimum plus $0.80 to $1.89 per verification. That is unusually transparent for this category, though the per-check fees on the higher tiers cost more than budget-first competitors.'
+verdict: 'Veriff pairs automated decisions with human review (on its Plus and Premium plans) and says it supports 12,500+ government-issued ID documents from 230+ countries and territories. Its passive liveness check passed iBeta''s ISO/IEC 30107-3 Level 2 test in 2024, and its UK service is on the government''s DIATF register. Self-serve plans are published, with a $49, $99 or $209 monthly minimum plus $0.80 to $1.89 per verification. That is unusually transparent for this category, though the per-check fees on the higher tiers cost more than budget-first competitors. In November 2025 an intruder took ID images of 8,583 Total Wireless customers from Veriff''s systems, so ask how access to the Veriff portal is secured in your contract.'
 what_is:
 - 'Veriff is an identity-verification company based in Tallinn, Estonia. Veriff OÜ was entered in the Estonian business register on 20 October 2015. Kaarel Kotkas founded the company and is its CEO; Veriff also names Janer Gorohhov as a co-founder. Veriff acquired device-intelligence company BrowserID in January 2019, opened a New York office in November 2019, and raised a $100 million Series C at a reported $1.5 billion valuation in early 2022.'
 - 'Veriff says it supports 12,500+ government-issued ID documents from 230+ countries and territories and serves 3,000+ businesses. In February 2026 it announced the acquisition of Estonian KYB provider Vespia, and it now offers business verification through a limited access program.'
@@ -172,7 +172,7 @@ pros:
 - Passive liveness tested by iBeta to ISO/IEC 30107-3 Level 2, plus UK DIATF certification
 cons:
 - Per-verification fees sit on top of the monthly minimum, and AML screening is a paid add-on
-- Some G2 reviewers report verification glitches and call the service expensive
+- An intruder took ID images, addresses and dates of birth of 8,583 Total Wireless customers from Veriff's systems in November 2025, and three class actions name Veriff
 - End users on Trustpilot report selfie capture failures and failed checks with no reason given
 alternatives:
 - slug: sumsub
@@ -225,6 +225,8 @@ user_reviews:
 faq:
 - q: How much does Veriff cost?
   a: 'Veriff publishes self-serve plans with a monthly minimum plus a per-verification fee: Essential ($49 minimum, $0.80 per verification), Plus ($99, $1.39) and Premium ($209, $1.89). Enterprise pricing for 5,000+ verifications a month is quoted on request, and PEP and sanctions screening is a $0.64 add-on.'
+- q: Has Veriff had a data breach?
+  a: Yes. Total Wireless, a Verizon prepaid brand, told customers in January 2026 that an unauthorised party obtained images of government-issued IDs, and for some people postal addresses and dates of birth, from Veriff's systems. Veriff gave Total Wireless the list of affected people on 10 December 2025, and 8,583 customers were notified. Veriff told CyberInsider the incident came from phishing that compromised a customer employee's credentials. Three class actions naming Veriff were filed in New York federal court in January 2026.
 - q: Does Veriff detect deepfakes?
   a: Veriff says its passive liveness check detects deepfakes and injected media. The liveness product passed iBeta's ISO/IEC 30107-3 Level 1 and Level 2 presentation attack tests in 2024.
 - q: How many countries does Veriff cover?
@@ -495,6 +497,18 @@ sources:
   publisher: Veriff
   url: https://www.veriff.com/product/aml-screening
   accessed: '2026-10'
+- title: 'Total Wireless notice of data breach (9 January 2026)'
+  publisher: Commonwealth of Massachusetts, Office of Consumer Affairs and Business Regulation
+  url: https://www.mass.gov/doc/2026-36-total-wireless/download
+  accessed: '2026-11'
+- title: Verizon-owned brand Total Wireless suffers breach exposing customer data (updated with Veriff statement)
+  publisher: CyberInsider
+  url: https://cyberinsider.com/verizon-owned-brand-total-wireless-suffers-breach-exposing-customer-data/
+  accessed: '2026-11'
+- title: Multiple class actions claim Total Wireless, Veriff failed to protect customer PII in data breach (5 March 2026)
+  publisher: Top Class Actions
+  url: https://topclassactions.com/lawsuit-settlements/lawsuit-news/multiple-class-actions-claim-total-wireless-veriff-failed-to-protect-customer-pii-in-data-breach
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

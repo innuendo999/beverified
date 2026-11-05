@@ -80,3 +80,9 @@ Filled `capabilities` keys from vendor pages opened 2026-10-30. No existing valu
 - `transaction_monitoring`: not_disclosed (not found on Veriff pages); no vendor page found
 
 - Note: Self-Serve pricing lists PEP and sanctions screening as a per-verification add-on and ongoing monitoring as a separate add-on; Enterprise lists AML Screening with adverse media.
+
+## Security incident 2026-11-05
+
+- Added the Total Wireless incident (sources 31 to 33): unauthorised access around 18 Nov 2025; Veriff gave Total Wireless the list of affected people on 10 Dec 2025; notices from 9 Jan 2026 to 8,583 customers; data: ID images, and for some postal address and date of birth. Veriff's spokesperson (CyberInsider) attributes it to phishing of a customer employee's credentials. Three class actions in S.D.N.Y. (Stockton 1:26-cv-00520, Reed 1:26-cv-00465, McLaughlin 1:26-cv-00566), no settlement reported as of Jul 2026.
+- Con 2 replaced ("Some G2 reviewers report verification glitches and call the service expensive" → the incident), new FAQ entry, one verdict sentence. `last_verified` unchanged (incident only).
+- No public statement found on veriff.com.
