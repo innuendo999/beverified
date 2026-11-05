@@ -67,3 +67,18 @@ Arithmetic (support excluded, weights sum to 90): (25 × 3.2 + 20 × 3.4 + 20 ×
 - Support responsiveness: score null, "Not publicly disclosed". amlranger.ai renders only metadata to our tools, no support channel, hours or SLA is described in the sources, and there are no user reviews.
 - Compliance scores the product, not Ondato: Ondato's company badges are not attached to AML Ranger.
 - `node scripts/checks/provider.mjs` flags `score` and `grade` as changed against HEAD; this is the intended, owner-approved change.
+
+## v3.1 fields 2026-11-05
+
+Added (key: status, source):
+- pricing.model: published partial, minimum false, trial true (source 6). Free with monthly credits, but credit allowance and per-check terms are not published, so not `core`.
+- integration.sandbox: yes, free web portal with monthly credits (6)
+- integration.no_code: yes, web portal with no setup or API (7)
+- capabilities.alert_explanation: partial, short sourced report per check (1)
+- track_record.ownership: stable, product of Ondato (4); incidents: none found (search for Ondato breach, fine, acquisition)
+
+Stayed not_disclosed: docs_public, sdk_web, sdk_ios, sdk_android, support_hours, ongoing_monitoring, list_updates, pep_tiers, fuzzy_matching, audit_trail, risk_scoring, batch_screening, data_residency.
+
+Notes: amlranger.ai and its sub-pages still render only metadata to WebFetch (script-rendered), so not_disclosed here partly reflects an unreadable site, not a confirmed absence. Trust gets no "operating 5+ years" point because the record has "Ondato founded", not "Founded".
+
+Rescore v3.1: 3.3 -> 2.3 (100% of weight scored). Score flag: none (no incident, no ownership change).

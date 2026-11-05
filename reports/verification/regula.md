@@ -48,3 +48,21 @@
 - adverse_media: not_disclosed. nothing found on vendor pages
 - transaction_monitoring: not_disclosed. nothing found on vendor pages
 - No existing values changed (the four keys were empty). capabilities.checked stays 2026-10.
+
+## v3.1 fields 2026-11-05
+
+Added (key: status, source):
+- `pricing.model`: published none, minimum null (not stated), trial true (30-day Document Reader SDK trial); source 2
+- `capabilities.deployment`: cloud_and_on_prem (IDV Platform on premises or hosted cloud); source 14 (was missing)
+- `capabilities.liveness`: yes; source 5
+- `capabilities.injection_detection`: yes, vendor-stated (injected video into camera stream); source 5. iBeta list shows PAD letters only, no IAD letter, so no `independent`.
+- `capabilities.data_residency`: partial (on premises option, no cloud region choice stated); source 14
+- `integration.docs_public`, `sdk_web`, `sdk_ios`, `sdk_android`: yes; source 16. `sandbox`: yes (demo license via self-created account on the licensing page); source 16.
+- `coverage.countries`: 254; source 2. `coverage.document_types`: 17000 (templates); source 2.
+- `track_record.ownership`: stable (operating since 1992, no sale found); source 3. `incidents`: none found.
+
+Not disclosed: `reusable_id`; `integration.no_code` (configurable workflows, "no-code" not stated); `integration.support_hours` (regulaforensics.com/support/ did not load); `coverage.non_doc`.
+
+Rescore (v3.1 draft): 4.6 -> 3.8, scored weight 80% (pricing n/d: no price published, no third-party data).
+
+Fact drift: the Document Reader SDK page now says 17,000+ templates and documents; `verification_notes` and existing copy cite 16,500+. Not changed here.

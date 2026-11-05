@@ -111,6 +111,61 @@ pricing:
     kind: official
     source: 1
     verified: '2026-11'
+  model:
+    published: core
+    minimum: true
+    trial: true
+    source: 1
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: developer docs open without login
+    source: 10
+  sdk_web:
+    status: 'yes'
+    note: Web SDK
+    source: 10
+  sdk_ios:
+    status: 'yes'
+    note: native iOS SDK
+    source: 11
+  sdk_android:
+    status: 'yes'
+    note: native Android SDK
+    source: 11
+  sandbox:
+    status: 'yes'
+    note: sandbox on sign-up, free trial checks
+    source: 1
+  no_code:
+    status: 'yes'
+    note: hosted Flow page and Web Portal
+    source: 10
+  support_hours:
+    status: partial
+    note: channels and SLA by plan, no hours
+    source: 1
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 250
+    note: 250+ countries and territories, document check
+    source: 12
+  document_types:
+    value: 13000
+    note: 13,000+ identity document types
+    source: 12
+  non_doc:
+    status: add_on
+    note: database checks, Growth plan
+    source: 1
+track_record:
+  ownership:
+    status: stable
+    note: Teemo Technology Ltd active, no sale found
+    source: 9
+  incidents: []
 facts:
 - label: From
   value: $99/month (Starter)
@@ -217,6 +272,29 @@ capabilities:
     status: partial
     note: Growth and Enterprise quoted
     source: 1
+  liveness:
+    status: 'yes'
+    note: photo liveness from Starter
+    source: 1
+  injection_detection:
+    status: partial
+    note: 2021 release names injected video
+    source: 15
+  reusable_id:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  data_residency:
+    status: 'yes'
+    note: regional hosting, custom on Enterprise
+    source: 13
+  case_management:
+    status: 'yes'
+    note: all listed plans, advanced on Enterprise
+    source: 1
+  kyb_registry:
+    status: add_on
+    note: company lookup on Growth plan, count not stated
+    source: 1
 certifications:
 - name: UK DIATF certified identity service
   what: UK digital identity trust framework (Kantara, Mar 2026 to Mar 2029)
@@ -293,6 +371,30 @@ sources:
   publisher: Companies House
   url: https://find-and-update.company-information.service.gov.uk/company/12392069
   accessed: '2026-10'
+- title: Getting started (developer documentation)
+  publisher: ComplyCube
+  url: https://docs.complycube.com/documentation
+  accessed: '2026-11'
+- title: Mobile SDK guide
+  publisher: ComplyCube
+  url: https://docs.complycube.com/documentation/quick-guides/mobile-sdk-guide
+  accessed: '2026-11'
+- title: Country and ID coverage
+  publisher: ComplyCube
+  url: https://docs.complycube.com/documentation/product-guides/identity-verification/document-check/document-types-per-country
+  accessed: '2026-11'
+- title: Data residency
+  publisher: ComplyCube
+  url: https://docs.complycube.com/documentation/trust-and-compliance/data-residency
+  accessed: '2026-11'
+- title: Hosted solution guide
+  publisher: ComplyCube
+  url: https://docs.complycube.com/documentation/guides/hosted-solution-quick-guide
+  accessed: '2026-11'
+- title: ComplyCube rolls out enhanced spoof detection (16 Nov 2021)
+  publisher: PR Newswire
+  url: https://prnewswire.com/news-releases/complycube-rolls-out-enhanced-spoof-detection-amid-bullish-crypto-market-301424256.html
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

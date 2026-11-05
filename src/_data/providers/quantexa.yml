@@ -43,6 +43,11 @@ pricing:
     extra: Contact sales for a quote
   legacy_verified_note: null
   verified: '2026-10'
+  model:
+    published: none
+    minimum: true
+    trial: false
+    source: 2
   items:
   - label: Published pricing
     value: Not published; quote on request
@@ -147,6 +152,55 @@ capabilities:
     status: 'no'
     note: Quote on request
     source: 2
+  ongoing_monitoring:
+    status: not_disclosed
+    note: network monitoring described, no list change re-screening
+  list_updates:
+    status: not_disclosed
+  pep_tiers:
+    status: not_disclosed
+  fuzzy_matching:
+    status: partial
+    note: AI entity resolution; configurable thresholds not stated
+    source: 7
+  alert_explanation:
+    status: partial
+    note: explains how data is joined for decisions
+    source: 7
+  audit_trail:
+    status: not_disclosed
+  risk_scoring:
+    status: 'yes'
+    note: customer risk rating across the lifecycle
+    source: 8
+  batch_screening:
+    status: not_disclosed
+  data_residency:
+    status: not_disclosed
+    note: hybrid, cloud or on-prem; no region choice stated
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: not_disclosed
+    note: docs site blocks automated reading
+  sdk_web:
+    status: not_disclosed
+  sdk_ios:
+    status: not_disclosed
+  sdk_android:
+    status: not_disclosed
+  sandbox:
+    status: not_disclosed
+  no_code:
+    status: not_disclosed
+  support_hours:
+    status: not_disclosed
+track_record:
+  ownership:
+    status: stable
+    note: private, venture backed; IPO and investor stake sale explored
+    source: 4
+  incidents: []
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security

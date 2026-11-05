@@ -51,6 +51,11 @@ pricing:
     extra: Not publicly disclosed
   legacy_verified_note: null
   verified: '2026-11'
+  model:
+    published: core
+    minimum: false
+    trial: true
+    source: 2
   index:
     product: 'AML name screening, Emerald and Sapphire'
     price:
@@ -210,7 +215,79 @@ capabilities:
     status: partial
     note: screening packages published; ID and KYB not listed
     source: 1
+  kyb_registry:
+    status: 'yes'
+    note: checks from official company registries
+    source: 1
+  kyb_ubo:
+    status: 'yes'
+    note: directors and beneficial owners
+    source: 1
+  ongoing_monitoring:
+    status: 'no'
+    note: only through sister product MemberCheck
+    source: 6
+  list_updates:
+    status: 'yes'
+    note: OFAC, UN, EU, UK, Australia, updated daily
+    source: 1
+  pep_tiers:
+    status: 'yes'
+    note: relatives and close associates as RCA
+    source: 6
+  fuzzy_matching:
+    status: 'yes'
+    note: fuzzy matching with adjustable match rate
+    source: 10
+  alert_explanation:
+    status: 'yes'
+    note: match detail and risk rating per result
+    source: 1
+  audit_trail:
+    status: 'yes'
+    note: every check timestamped and stored
+    source: 1
+  risk_scoring:
+    status: 'yes'
+    note: risk rating per result, user assigns risk level
+    source: 1
+  batch_screening:
+    status: 'yes'
+    note: CSV batch upload
+    source: 6
+  data_residency:
+    status: not_disclosed
   checked: '2026-10'
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: API reference open without login
+    source: 10
+  sdk_web:
+    status: not_disclosed
+    note: code samples only, no SDK named
+  sdk_ios:
+    status: not_disclosed
+  sdk_android:
+    status: not_disclosed
+  sandbox:
+    status: 'yes'
+    note: free test API key, no credits used
+    source: 11
+  no_code:
+    status: 'yes'
+    note: dashboard checks without integration
+    source: 1
+  support_hours:
+    status: not_disclosed
+    note: support form and email, no hours stated
+track_record:
+  ownership:
+    status: unknown
+    note: Neurocom holds the name; Nexiant group link unconfirmed
+    source: 7
+  incidents: []
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security
@@ -271,6 +348,14 @@ sources:
   publisher: Nexiant
   url: https://nexiant.ai
   accessed: '2026-10'
+- title: NameScan API Reference v3.1
+  publisher: NameScan
+  url: https://api.namescan.io/doc/index.html
+  accessed: '2026-11'
+- title: PEP and Sanctions API
+  publisher: NameScan
+  url: https://namescan.io/pepandsanctionapi
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

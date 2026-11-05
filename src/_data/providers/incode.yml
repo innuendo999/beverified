@@ -43,6 +43,11 @@ pricing:
     extra: Contact sales for a quote
   legacy_verified_note: null
   verified: '2026-10'
+  model:
+    published: none
+    minimum: null
+    trial: null
+    source: 9
   items:
   - label: List price
     value: Not publicly disclosed; quoted on request
@@ -182,6 +187,71 @@ capabilities:
   age_reusable:
     status: not_disclosed
     note: no age token found
+  liveness:
+    status: 'yes'
+    note: Deepsight liveness, iBeta Level 3 letter on record
+    source: 2
+  injection_detection:
+    status: 'yes'
+    note: Deepsight camera trust blocks virtual cameras, no lab letter found
+    source: 22
+  reusable_id:
+    status: 'yes'
+    note: verify once, reuse everywhere
+    source: 2
+  data_residency:
+    status: 'yes'
+    note: configurable regional residency, North America, Latin America, Europe
+    source: 23
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: developer.incode.com readable without login
+    source: 24
+  sdk_web:
+    status: 'yes'
+    note: Incode Web SDK
+    source: 24
+  sdk_ios:
+    status: 'yes'
+    note: native iOS SDK
+    source: 25
+  sdk_android:
+    status: 'yes'
+    note: native Android SDK
+    source: 25
+  sandbox:
+    status: not_disclosed
+    note: demo environment through an Incode representative
+  no_code:
+    status: 'yes'
+    note: visual Workflow Builder, no code
+    source: 2
+  support_hours:
+    status: partial
+    note: enterprise SLAs and support tiers, no hours published
+    source: 23
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 190
+    note: countries and territories
+    source: 2
+  document_types:
+    value: 4900
+    note: document types
+    source: 2
+  non_doc:
+    status: 'yes'
+    note: non document verification and government record checks
+    source: 2
+track_record:
+  ownership:
+    status: stable
+    note: venture backed, acquirer of AuthenticID, MetaMap and Identiq
+    source: 13
+  incidents: []
 certifications:
 - name: ISO/IEC 30107-3 Level 3 (iBeta)
   what: Liveness / presentation attack detection
@@ -314,6 +384,22 @@ sources:
   publisher: Incode
   url: https://developer.incode.com/features-and-modules/watchlist/
   accessed: '2026-10'
+- title: Deepsight (Incode Developer Hub)
+  publisher: Incode
+  url: https://developer.incode.com/features-and-modules/deepsight.md
+  accessed: '2026-11'
+- title: Frequently Asked Questions
+  publisher: Incode
+  url: https://www.incode.com/faq
+  accessed: '2026-11'
+- title: Web SDK integration (Incode Developer Hub)
+  publisher: Incode
+  url: https://developer.incode.com/integrate-by-platform/web-integrations-websdk.md
+  accessed: '2026-11'
+- title: Mobile integration overview (Incode Developer Hub)
+  publisher: Incode
+  url: https://developer.incode.com/integrate-by-platform/mobile-integration-overview.md
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

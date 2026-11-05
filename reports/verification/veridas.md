@@ -59,3 +59,20 @@
 - transaction_monitoring: not_disclosed (nothing found on vendor pages), no source
 
 Veridas states it gives access to AML watchlist databases "including ComplyAdvantage"; the VALi-DAS docs list PEP and AML under third-party checks, and sample output carries a ComplyAdvantage adverse media label. Treated as partner-delivered (add_on). No transaction monitoring found.
+
+## v3.1 fields 2026-11-05
+
+### Added
+- `pricing.model`: published none, minimum null, trial null (source 3; pricing page did not load again today, AWS listing stays third-party).
+- `integration`: docs_public yes (23); sdk_web, sdk_ios, sdk_android yes (23); sandbox no, credentials only after an agreement (24); no_code yes, XpressID hosted flow embedded by iframe (27); support_hours yes, production 24x7, SLA per contract (24).
+- `coverage`: countries null, document_types null (no count on vendor pages; "25 countries" is where clients are); non_doc not_disclosed.
+- `track_record.ownership`: changed_disclosed, merger with Fourthline closed 3 Nov 2026 (28). `incidents`: none found.
+- `capabilities`: liveness yes (8); injection_detection yes, vendor-stated, CEN/TS 18099 audit "in final phase", not independent (25); reusable_id yes, Nexus Wallet (26); data_residency partial, Europe and USA environments, customer choice not stated (24).
+- Sources 23 to 28 added.
+
+### Still not_disclosed
+- Country and document-type counts, non-document checks, video_ident, transaction_monitoring.
+
+### Score flag
+- Fourthline merger completed 3 Nov 2026 (source 28): Fourthline CEO Paul Stoddart leads the combined company, Veridas CEO becomes President; both platforms continue. Record text (verdict, what_is, cons, FAQ, Ownership fact) still says "pending"; update in a content pass. The fourthline record needs the same change.
+- v3.1 draft: 4.6 -> 3.7 (85% of weight scored; coverage n/d; pricing 2 from AWS listing).

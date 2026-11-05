@@ -43,6 +43,11 @@ pricing:
     extra: No paid tiers published
   legacy_verified_note: null
   verified: '2026-10'
+  model:
+    published: partial
+    minimum: false
+    trial: true
+    source: 6
   items:
   - label: Price
     value: Web portal with free monthly credits
@@ -157,6 +162,65 @@ capabilities:
     note: Free with monthly credits; credit amount not stated
     source: 6
   checked: '2026-10'
+  ongoing_monitoring:
+    status: not_disclosed
+    note: no monitoring feature described
+  list_updates:
+    status: not_disclosed
+    note: lists and update frequency not named
+  pep_tiers:
+    status: not_disclosed
+    note: no PEP tiers or relatives described
+  fuzzy_matching:
+    status: not_disclosed
+    note: no configurable matching described
+  alert_explanation:
+    status: partial
+    note: short report with sources per check
+    source: 1
+  audit_trail:
+    status: not_disclosed
+    note: not described
+  risk_scoring:
+    status: not_disclosed
+    note: not described
+  batch_screening:
+    status: not_disclosed
+    note: not described
+  data_residency:
+    status: not_disclosed
+    note: not stated
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: not_disclosed
+    note: no API documentation found
+  sdk_web:
+    status: not_disclosed
+    note: no SDK described
+  sdk_ios:
+    status: not_disclosed
+    note: no SDK described
+  sdk_android:
+    status: not_disclosed
+    note: no SDK described
+  sandbox:
+    status: 'yes'
+    note: free web portal with monthly credits
+    source: 6
+  no_code:
+    status: 'yes'
+    note: web portal, no setup or API needed
+    source: 7
+  support_hours:
+    status: not_disclosed
+    note: no support channel or hours found
+track_record:
+  ownership:
+    status: stable
+    note: product of Ondato
+    source: 4
+  incidents: []
 certifications: []
 user_ratings: []
 use_case_verdicts: []

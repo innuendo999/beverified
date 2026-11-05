@@ -153,3 +153,20 @@ All KYCAID cards in `src/_data/rankings.yml` still show the old pricing:
 ### Score flag
 
 - None from the price change itself: prices are still published and the entry price is unchanged at €0.50. The removal of the fixed monthly fee makes KYCAID cheaper at low volume, which could matter for the cheap-kyc ranking, but the score is the owner's call.
+
+## v3.1 fields 2026-11-05
+
+Added (key: status, source):
+- pricing.model: published core, minimum false (no subscription or minimum spend), trial true (€50 welcome credit, no card), source 1
+- capabilities.ongoing_monitoring: add_on, 1 (monthly add-on: AML databases monitoring, ID expiry, notifications)
+- capabilities.list_updates: partial, 1 (OFAC and regulatory AML watchlists named, no update frequency)
+- capabilities.fuzzy_matching: yes, 17 (new source: blacklist databases API doc; name_match_threshold and field weights)
+- capabilities.alert_explanation: partial, 17 (name and total match scores returned, no reason text)
+- integration.docs_public: yes, 6; sandbox: yes, 1 (pricing FAQ says the credit works in production and there is no separate sandbox); no_code: yes, 13 (hosted form by direct URL); support_hours: partial, 1 (24/7 priority support on Enterprise only; usage-based plan lists Telegram, WhatsApp or Slack without hours)
+- track_record.ownership: changed_disclosed, 14 (Compligate controlling person changed 12 Nov 2025); incidents: none found
+
+Not disclosed: pep_tiers, audit_trail, risk_scoring, batch_screening (docs show single-person requests only), case_management (standard key, not described), data_residency, integration.sdk_web (hosted form and iframe only), sdk_ios, sdk_android (WebView guide only; "SDKs on request" is from vendor email, not a public page).
+
+Rescore: 4.6 -> 4.1 (all criteria scored). Workflow sub-score 2 is the weak point: no case management, audit trail, risk scoring or batch screening on public pages.
+
+Score flag: Companies House shows a change of controlling person at the operator (Compligate Ltd) on 12 Nov 2025 (source 14, already in verification_notes). No incident found. Note for the owner: the existing pro "24/7 chat support, with a stated 15-minute SLA" is not matched by the current pricing page, which lists 24/7 priority support for Enterprise only and no chat; review that pro in the next fact pass.

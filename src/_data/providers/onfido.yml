@@ -45,6 +45,11 @@ pricing:
     extra: Contact sales for a quote
   legacy_verified_note: null
   verified: '2026-10'
+  model:
+    published: none
+    minimum: null
+    trial: null
+    source: 1
   items:
   - label: Published pricing
     value: Not published; contact sales
@@ -206,6 +211,70 @@ capabilities:
     status: 'no'
     note: contact sales only
     source: 1
+  liveness:
+    status: 'yes'
+    note: liveness detection, iBeta letters on record
+    source: 1
+  injection_detection:
+    status: 'yes'
+    note: defenses against deepfakes and injection attacks, no lab letter found
+    source: 1
+  reusable_id:
+    status: not_disclosed
+    note: onboarding identity reused for passkeys only, no reusable ID product found
+  data_residency:
+    status: 'yes'
+    note: EU, US or Canada region for data at rest
+    source: 21
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: API reference readable without login
+    source: 21
+  sdk_web:
+    status: 'yes'
+    note: Web SDK
+    source: 6
+  sdk_ios:
+    status: 'yes'
+    note: iOS SDK
+    source: 6
+  sdk_android:
+    status: 'yes'
+    note: Android SDK
+    source: 6
+  sandbox:
+    status: not_disclosed
+    note: free sandbox requests, needs a registered Entrust account
+  no_code:
+    status: 'yes'
+    note: Workflow Studio and no code Smart Capture Link
+    source: 22
+  support_hours:
+    status: partial
+    note: support email listed, no hours
+    source: 21
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 195
+    note: countries
+    source: 2
+  document_types:
+    value: 2500
+    note: separate documents and passports
+    source: 2
+  non_doc:
+    status: 'yes'
+    note: Identity Enhanced database checks
+    source: 23
+track_record:
+  ownership:
+    status: changed_disclosed
+    note: acquired by Entrust, Apr 2024
+    source: 5
+  incidents: []
 certifications:
 - name: ISO/IEC 30107-3 Level 2 (iBeta)
   what: Liveness / presentation attack detection, Onfido Liveness 2.0 on iOS (Jan 2022) and Android (Jun 2022)
@@ -335,6 +404,18 @@ sources:
   publisher: Entrust
   url: https://documentation.identity.entrust.com/guide/watchlist-reports
   accessed: '2026-10'
+- title: API reference (regions, sandbox, support)
+  publisher: Entrust
+  url: https://documentation.identity.entrust.com/api/latest
+  accessed: '2026-11'
+- title: Smart Capture Link (developer documentation)
+  publisher: Entrust
+  url: https://documentation.identity.entrust.com/getting-started/smart-capture-link
+  accessed: '2026-11'
+- title: Identity Enhanced report (developer documentation)
+  publisher: Entrust
+  url: https://documentation.identity.entrust.com/guide/identity-enhanced-report
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

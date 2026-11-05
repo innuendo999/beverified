@@ -43,6 +43,11 @@ pricing:
     note: Quoted per volume
     extra: Contact sales for a quote
   legacy_verified_note: null
+  model:
+    published: none
+    minimum: null
+    trial: null
+    source: 1
   verified: '2026-10'
   items:
   - label: Published pricing
@@ -210,6 +215,69 @@ capabilities:
     status: 'no'
     note: quote only
     source: 1
+  liveness:
+    status: 'yes'
+    note: passive liveness for biometrics and documents
+    source: 17
+  injection_detection:
+    status: 'yes'
+    note: vendor says it detects injection attacks, no lab letter
+    source: 17
+  reusable_id:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  data_residency:
+    status: 'yes'
+    note: US, EU, APAC or Canada hosting region
+    source: 19
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: developer portal open without login
+    source: 18
+  sdk_web:
+    status: 'yes'
+    note: web SDK for document verification
+    source: 17
+  sdk_ios:
+    status: 'yes'
+    note: iOS SDK for document verification
+    source: 17
+  sdk_android:
+    status: 'yes'
+    note: Android SDK for document verification
+    source: 17
+  sandbox:
+    status: not_disclosed
+    note: book a demo only, no self-serve sandbox found
+  no_code:
+    status: 'yes'
+    note: Workflow Studio, shareable workflow link
+    source: 20
+  support_hours:
+    status: not_disclosed
+    note: contact page only, no hours found
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 195
+    note: countries
+    source: 11
+  document_types:
+    value: 14000
+    note: '14,000+ document templates'
+    source: 17
+  non_doc:
+    status: 'yes'
+    note: KYC Data, 450+ data sources
+    source: 21
+track_record:
+  ownership:
+    status: stable
+    note: independent, new CEO April 2025, no sale found
+    source: 5
+  incidents: []
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security (since 2015)
@@ -302,6 +370,22 @@ sources:
   publisher: Trulioo
   url: https://www.trulioo.com/products/document-verification
   accessed: '2026-10'
+- title: Trulioo developer portal
+  publisher: Trulioo
+  url: https://developer.trulioo.com/
+  accessed: '2026-11'
+- title: Multi-Region Hosting (developer documentation)
+  publisher: Trulioo
+  url: https://developer.trulioo.com/docs/multi-region-hosting
+  accessed: '2026-11'
+- title: Workflow Studio (developer documentation)
+  publisher: Trulioo
+  url: https://docs.verification.trulioo.com/sdk/wfs/index.html
+  accessed: '2026-11'
+- title: KYC Data (Person Match)
+  publisher: Trulioo
+  url: https://www.trulioo.com/solutions/identity-verification/person-match
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

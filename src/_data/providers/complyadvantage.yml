@@ -51,6 +51,11 @@ pricing:
     extra: Apply on the ComplyAdvantage site
   legacy_verified_note: null
   verified: '2026-11'
+  model:
+    published: core
+    minimum: true
+    trial: false
+    source: 1
   index:
     product: 'AML screening, Starter plan'
     price:
@@ -238,6 +243,75 @@ capabilities:
     status: partial
     note: Starter from $99 per month
     source: 1
+  ongoing_monitoring:
+    status: 'yes'
+    note: ongoing monitoring on all plans
+    source: 1
+  list_updates:
+    status: 'yes'
+    note: sanctions list changes available within minutes
+    source: 11
+  pep_tiers:
+    status: 'yes'
+    note: PEPs and RCAs on all plans
+    source: 1
+  fuzzy_matching:
+    status: 'yes'
+    note: configurable match score threshold
+    source: 10
+  alert_explanation:
+    status: partial
+    note: risk score component breakdown
+    source: 11
+  audit_trail:
+    status: 'yes'
+    note: audit trail from sourcing to alert
+    source: 11
+  risk_scoring:
+    status: 'yes'
+    note: customer risk scores update automatically
+    source: 11
+  batch_screening:
+    status: 'yes'
+    note: CSV or XLSX batch upload, SFTP
+    source: 12
+  data_residency:
+    status: partial
+    note: EU, US and APAC API regions
+    source: 13
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: API reference readable without login
+    source: 13
+  sdk_web:
+    status: not_disclosed
+    note: no official SDK listed
+  sdk_ios:
+    status: not_disclosed
+    note: no official SDK listed
+  sdk_android:
+    status: not_disclosed
+    note: no official SDK listed
+  sandbox:
+    status: partial
+    note: sandbox accounts exist, access route not stated
+    source: 13
+  no_code:
+    status: 'yes'
+    note: web platform with file upload screening
+    source: 12
+  support_hours:
+    status: partial
+    note: ticket and email; hours only for video calls
+    source: 14
+track_record:
+  ownership:
+    status: stable
+    note: founder chaired, independent
+    source: 2
+  incidents: []
 certifications:
 - name: ISO/IEC 27001
   what: Information security (BSI, per G-Cloud listing)
@@ -293,6 +367,26 @@ sources:
   publisher: ComplyAdvantage
   url: https://complyadvantage.com/mesh/aml-company-screening/
   accessed: '2026-10'
+- title: Setting up your screening configuration
+  publisher: ComplyAdvantage
+  url: https://complyadvantage-knowledge-base.help.usepylon.com/articles/7665756652-setting-up-your-screening-configuration
+  accessed: '2026-11'
+- title: Customer screening
+  publisher: ComplyAdvantage
+  url: https://complyadvantage.com/solutions/customer-screening/
+  accessed: '2026-11'
+- title: Creating and screening people or companies in batches
+  publisher: ComplyAdvantage
+  url: https://complyadvantage-knowledge-base.help.usepylon.com/articles/8968695301-creating-and-screening-people-or-companies-in-batches
+  accessed: '2026-11'
+- title: API documentation
+  publisher: ComplyAdvantage
+  url: https://docs.complyadvantage.com/
+  accessed: '2026-11'
+- title: How to contact support
+  publisher: ComplyAdvantage
+  url: https://complyadvantage-knowledge-base.help.usepylon.com/articles/5261580702-how-to-contact-support
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

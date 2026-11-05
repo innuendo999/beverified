@@ -46,6 +46,11 @@ pricing:
     note: Document Reader SDK with full, unrestricted access
     extra: null
   legacy_verified_note: null
+  model:
+    published: none
+    minimum: null
+    trial: true
+    source: 2
   verified: '2026-10'
   items:
   - label: Published pricing
@@ -159,6 +164,72 @@ capabilities:
     status: 'no'
     note: quote on request, free trial
     source: 2
+  deployment:
+    status: cloud_and_on_prem
+    note: IDV Platform on premises or hosted cloud
+    source: 14
+  liveness:
+    status: 'yes'
+    note: active and passive liveness, Face SDK
+    source: 5
+  injection_detection:
+    status: 'yes'
+    note: vendor lists injected video streams, no lab letter
+    source: 5
+  reusable_id:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  data_residency:
+    status: partial
+    note: on premises option, no cloud region choice stated
+    source: 14
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: developer docs open without login
+    source: 16
+  sdk_web:
+    status: 'yes'
+    note: web components and web service
+    source: 16
+  sdk_ios:
+    status: 'yes'
+    note: native iOS SDKs
+    source: 16
+  sdk_android:
+    status: 'yes'
+    note: native Android SDKs
+    source: 16
+  sandbox:
+    status: 'yes'
+    note: demo license via self-created account, 30 day trial
+    source: 16
+  no_code:
+    status: not_disclosed
+    note: configurable workflows, no-code not stated
+  support_hours:
+    status: not_disclosed
+    note: support page not readable, no hours found
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 254
+    note: countries and territories
+    source: 2
+  document_types:
+    value: 17000
+    note: '17,000+ document templates'
+    source: 2
+  non_doc:
+    status: not_disclosed
+    note: document focused, no identity database checks named
+track_record:
+  ownership:
+    status: stable
+    note: operating since 1992, no sale found
+    source: 3
+  incidents: []
 certifications:
 - name: ISO/IEC 30107-3 Level 2 (iBeta)
   what: Liveness / presentation attack detection, Regula Face Mobile SDK (Mar 2025, Dec 2025)
@@ -251,6 +322,10 @@ sources:
   publisher: Regula
   url: https://docs.regulaforensics.com/develop/idv/release-notes/3-1/
   accessed: '2026-10'
+- title: Regula developer documentation
+  publisher: Regula
+  url: https://docs.regulaforensics.com/
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

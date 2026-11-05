@@ -56,3 +56,27 @@
 - adverse_media: yes. https://idnow.io/solutions/kyc-checks/aml-screening/ (source 16)
 - transaction_monitoring: not_disclosed. AML Screening page only says screening can be integrated into the customer's transaction monitoring flows; no TM product found
 - No existing values changed (the four keys were empty). capabilities.checked stays 2026-10.
+
+## v3.1 fields 2026-11-05
+
+### Added
+
+- `pricing.model`: published none, minimum null, trial null (source 1).
+- `integration` (checked 2026-11): docs_public yes, doc.idnow.de and docs.idnow.io open without login (18); sdk_ios, sdk_android yes (18); no_code yes, Trust Platform "visual flow editor" (19); sdk_web not_disclosed (redirect, iframe, webview only); sandbox not_disclosed (test gateway exists, access after account setup); support_hours not_disclosed (help centre, no hours).
+- `coverage`: countries 195 ("over 195 countries", AutoIdent FAQ, 20); document_types 3,800 ("3800+ Documents Supported Globally", 1); non_doc yes, eID schemes, IBAN verification, data verification (1).
+- `track_record`: ownership changed_disclosed, Corsair Capital majority investment, 6 Mar 2025 (8); incidents none found (search hits were status-page outages only).
+- `capabilities`: liveness yes, optional video liveness (15); reusable_id partial, accepts EUDI Wallet and wallet-based credentials, no own reusable ID described (1); data_residency partial, "Infrastructure is 100 % EU-hosted", no region choice, sub-processor ident centres in Sarajevo and Pune (10); injection_detection not_disclosed.
+- New sources 18 to 20.
+
+### Still not_disclosed
+
+- sdk_web, sandbox, support_hours, injection_detection, transaction_monitoring.
+
+### Rescore
+
+- 4.5 -> 2.9 (scored weight 80%; pricing n/d).
+
+### Score flag
+
+- Ownership changed (Corsair, Mar 2025), already in facts.
+- For the script owner: the confirmed LSTI "ISO/IEC 30107 PAD, substantial" certificate is not matched by rescore.mjs (it looks for "30107-3" and "Level N"), so fraud defense falls to 2.5. PVID, ETSI TS 119 461 and the eIDAS QTSP are vendor_stated, so no trust-framework point. Both drive most of the drop; worth a manual look before approval.

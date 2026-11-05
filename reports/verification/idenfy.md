@@ -72,3 +72,30 @@ Checked: idenfy.com/identity-verification-price, documentation.idenfy.com pay-as
 - Removed: "AML screening add-on (ROI calculator) +$0.40 per verification". The ROI calculator no longer shows an AML add-on price (source 10).
 - Unchanged and re-dated to 2026-11: Basic $1.35 / $135 minimum, Premium $1.30 / $325 minimum, Enterprise lowest $0.55, approved-only +$0.50, 24/7 manual review $0.35 to $0.55, 14-day trial with 10 checks.
 - Ranking cards: no iDenfy card mentions the AML add-on price; nothing to change.
+
+## v3.1 fields 2026-11-05
+
+### Added
+
+- `pricing.model`: published core, minimum true ($135 and $325 monthly minimums), trial true (14 days, 10 free checks), source 9.
+- `integration` (checked 2026-11): docs_public yes (24); sdk_ios, sdk_android yes, plus React Native and Flutter wrappers (24); sandbox yes, free trial and sandbox API keys (9); no_code yes, Magic Link "No coding required" and plugins (25); support_hours partial, Premium lists an SLA, no support hours published (8); sdk_web not_disclosed (iFrame and redirect only, no web SDK listed).
+- `coverage`: countries 200, document_types 3,500 (homepage "3500+ active government-issued documents", source 3); non_doc yes, Soft KYC database checks for LT, HU, UK, US (27).
+- `track_record`: ownership stable (2); incidents none found (a Lithuanian DPA fine of 2026 found in search concerns UAB DELSKA Lithuania, not iDenfy).
+- `capabilities`: liveness yes, passive and active 3D (23); injection_detection yes, optional injection and virtual camera check, vendor docs only (23); data_residency partial, EU by default, specific jurisdictions on Enterprise, regions not named (26); reusable_id not_disclosed (face re-authentication for returning users only).
+- New sources 23 to 28.
+
+### Still not_disclosed
+
+- sdk_web, reusable_id, video_ident, age_email_estimation, age_mobile_operator, age_credit_card, age_open_banking.
+
+### Conflict for owner
+
+- Document count: homepage says 3,500+ active documents; the docs page (source 28) says 16,000+ document types across 200+ countries. The lower homepage figure is recorded. With 16,000 the coverage sub-score would be 5 instead of 3.5.
+
+### Rescore
+
+- 4.5 -> 3.7 (scored weight 100%).
+
+### Score flag
+
+- None.

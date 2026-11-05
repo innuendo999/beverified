@@ -44,6 +44,11 @@ pricing:
     extra: Book a demo for a quote
   legacy_verified_note: null
   verified: '2026-10'
+  model:
+    published: none
+    minimum: null
+    trial: null
+    source: 6
   items:
   - label: Published prices
     value: Not publicly disclosed
@@ -167,6 +172,72 @@ capabilities:
   age_reusable:
     status: not_disclosed
     note: nothing found on vendor pages
+  identity_verification:
+    status: 'yes'
+    note: ID document and face scan, for age and creators
+    source: 12
+  case_management:
+    status: 'yes'
+    note: complaints and case management, content moderation
+    source: 1
+  liveness:
+    status: not_disclosed
+    note: no liveness or anti-spoofing claim found
+  injection_detection:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  reusable_id:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  data_residency:
+    status: not_disclosed
+    note: hosting region not stated
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: developer documentation readable without login
+    source: 15
+  sdk_web:
+    status: not_disclosed
+    note: redirect and API, no web SDK named
+  sdk_ios:
+    status: partial
+    note: WebView embedding guide, no native SDK named
+    source: 15
+  sdk_android:
+    status: partial
+    note: WebView embedding guide, no native SDK named
+    source: 15
+  sandbox:
+    status: partial
+    note: sandbox environment, access route not stated
+    source: 16
+  no_code:
+    status: 'yes'
+    note: Shopify, WooCommerce and eBay apps
+    source: 17
+  support_hours:
+    status: not_disclosed
+    note: contact form and help guide, no hours
+coverage:
+  checked: '2026-11'
+  countries:
+    value: null
+    note: global claimed, no country count
+  document_types:
+    value: null
+    note: not stated
+  non_doc:
+    status: 'yes'
+    note: email, mobile, credit bureau, credit card and CPF checks
+    source: 12
+track_record:
+  ownership:
+    status: changed_disclosed
+    note: person with significant control changed Sep 2025; founder still named CEO on site
+    source: 18
+  incidents: []
 certifications:
 - name: ISO/IEC 27566-1:2025 and ACCS 1:2025
   what: Age assurance systems
@@ -246,6 +317,22 @@ sources:
   publisher: VerifyMy
   url: https://verifymy.io/age-verification-and-estimation/credit-card
   accessed: '2026-10'
+- title: 'Developer documentation'
+  publisher: VerifyMy
+  url: https://verifymy.io/developer-documentation/
+  accessed: '2026-11'
+- title: 'APIs (age verification and estimation)'
+  publisher: VerifyMy
+  url: https://verifymy.io/developer-documentation/age-verification-estimation/apis
+  accessed: '2026-11'
+- title: 'Sign up (platform apps and Marketplace API)'
+  publisher: VerifyMy
+  url: https://verifymy.io/age-verification-and-estimation/sign-up
+  accessed: '2026-11'
+- title: 'VERIFYMY LIMITED persons with significant control'
+  publisher: Companies House
+  url: https://find-and-update.company-information.service.gov.uk/company/12050874/persons-with-significant-control
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

@@ -51,3 +51,22 @@
 ### Score flag
 
 - None.
+
+## v3.1 fields 2026-11-05
+
+Rescore (not applied): 4.3 -> 4.4, all criteria scored.
+
+Added:
+- pricing.model: published core, minimum false, trial true (source 2)
+- capabilities.kyb_registry: yes (1); kyb_ubo: yes (1)
+- capabilities.ongoing_monitoring: no, only through sister product MemberCheck (6)
+- capabilities.list_updates: yes (1); pep_tiers: yes, RCA (6); fuzzy_matching: yes, match rate parameter (10); alert_explanation: yes (1); audit_trail: yes (1); risk_scoring: yes (1); batch_screening: yes (6)
+- integration.docs_public: yes (10); sandbox: yes, free test API key (11); no_code: yes, dashboard (1)
+- track_record.ownership: unknown (7); incidents: none found
+- New sources 10 (API Reference v3.1), 11 (PEP and Sanctions API page)
+
+Not disclosed: data_residency, sdk_web, sdk_ios, sdk_android (code samples only), support_hours (form and email, no hours).
+
+Score flags:
+- Ownership left unknown: Neurocom holds the business name, Nexiant presents NameScan as its product; legal link still unconfirmed.
+- Homepage shows "Free Check service is currently unavailable"; pricing page still offers free checks, so trial kept true.

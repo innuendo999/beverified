@@ -65,3 +65,20 @@ All 7 Trulioo cards re-read. Coverage (195 countries, 14,000+ ID types, 700M ent
 - adverse_media: yes. https://www.trulioo.com/products/aml-screening (source 16)
 - transaction_monitoring: not_disclosed. no transaction monitoring product in the trulioo.com product menu; AML Screening page does not mention it
 - No existing values changed (the four keys were empty). capabilities.checked stays 2026-10.
+
+## v3.1 fields 2026-11-05
+
+Added (key: status, source):
+- `pricing.model`: published none, minimum null, trial null (pricing page shows no price, trial or sandbox); source 1. Vendr items (third_party) remain the basis of the sub-score.
+- `capabilities.liveness`: yes (passive liveness); source 17
+- `capabilities.injection_detection`: yes, vendor-stated ("detects forgeries, deepfakes and injection attacks"); source 17. No IAD lab letter found.
+- `capabilities.data_residency`: yes (US, EU Ireland, APAC Australia, Canada endpoints); source 19
+- `integration.docs_public`: yes; source 18. `sdk_web`, `sdk_ios`, `sdk_android`: yes; source 17. `no_code`: yes (Workflow Studio, workflow link); source 20.
+- `coverage.countries`: 195; source 11. `document_types`: 14000 (templates); source 17. `non_doc`: yes (KYC Data, 450+ data sources); source 21.
+- `track_record.ownership`: stable (CEO change Apr 2025, no sale found); source 5. `incidents`: none found.
+
+Not disclosed: `reusable_id`; `integration.sandbox` (developer portal offers "Book a demo" only); `integration.support_hours`.
+
+Rescore (v3.1 draft): 4.5 -> 2.8, all criteria scored.
+
+Score flag: the Document Verification page (source 17) claims "iBeta Level 2 certification" and a top-five NIST FATE ranking. Neither is in `certifications[]`. Trulioo does not appear in the iBeta PAD letters list back to Nov 2021 (opened 2026-11-05). The certificate may be held by a technology partner. Confirming either one would raise fraud defense from 2 to 4 or more, so it needs a manual check before the rescore is accepted.

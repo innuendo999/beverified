@@ -69,6 +69,59 @@ pricing:
     kind: third_party
     source: 7
     verified: '2026-10'
+  model:
+    published: none
+    minimum: false
+    trial: false
+    source: 1
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: developer docs open without login
+    source: 11
+  sdk_web:
+    status: 'yes'
+    note: Web SDK button or frame
+    source: 11
+  sdk_ios:
+    status: partial
+    note: WebView flow, React Native or Flutter
+    source: 13
+  sdk_android:
+    status: partial
+    note: WebView flow, React Native or Flutter
+    source: 13
+  sandbox:
+    status: not_disclosed
+    note: sandbox keys exist, self-serve access not stated
+  no_code:
+    status: 'yes'
+    note: hosted verification URL, flow edited in dashboard
+    source: 11
+  support_hours:
+    status: partial
+    note: Slack, chat and email, no hours stated
+    source: 14
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 200
+    note: 200+ countries and territories
+    source: 15
+  document_types:
+    value: null
+    note: not stated
+  non_doc:
+    status: 'yes'
+    note: government database eKYC checks
+    source: 16
+track_record:
+  ownership:
+    status: stable
+    note: founder led, venture backed
+    source: 3
+  incidents: []
 facts:
 - label: From
   value: Not publicly disclosed
@@ -196,6 +249,23 @@ capabilities:
     status: 'no'
     note: quote only
     source: 9
+  liveness:
+    status: 'yes'
+    note: liveness on selfie capture
+    source: 11
+  injection_detection:
+    status: not_disclosed
+    note: deepfake detection claimed, injection not named
+  reusable_id:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  data_residency:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  case_management:
+    status: 'yes'
+    note: one workspace with evidence and audit trail
+    source: 9
 certifications:
 - name: SOC 2 Type II
   what: Security controls report
@@ -264,6 +334,22 @@ sources:
   publisher: 'AiPrise'
   url: https://support.aiprise.com/articles/1649660382-types-of-background-checks-and-aml-screening
   accessed: '2026-10'
+- title: React Native SDK (AiPrise documentation)
+  publisher: AiPrise
+  url: https://docs.aiprise.com/docs/react-native-sdk
+  accessed: '2026-11'
+- title: Need assistance (AiPrise documentation)
+  publisher: AiPrise
+  url: https://docs.aiprise.com/docs/need-assistance
+  accessed: '2026-11'
+- title: Coverage and checks, user verification
+  publisher: AiPrise
+  url: https://docs.aiprise.com/docs/coverage-supported-documents
+  accessed: '2026-11'
+- title: Govt checks and eKYC coverage
+  publisher: AiPrise
+  url: https://docs.aiprise.com/docs/government-checks
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

@@ -62,3 +62,26 @@ Filled `capabilities` keys from vendor pages opened 2026-10-30. No existing valu
 - `transaction_monitoring`: not_disclosed (not found on Incode pages); no vendor page found
 
 - Note: Incode's KYC/AML page says periodic rescreening and ongoing monitoring are separate needs; the Watchlist module supports optional webhook subscriptions to watchlist changes. Marked add_on because screening is its own processing module; no published plan structure.
+
+## v3.1 fields 2026-11-05
+
+### Added
+
+- `pricing.model`: published none, minimum null, trial null (source 9).
+- `integration` (checked 2026-11): docs_public yes (24); sdk_web yes, Incode Web SDK (24); sdk_ios, sdk_android yes, native SDKs plus React Native and Flutter wrappers (25); no_code yes, Workflow Builder "Build verification flows visually, no code" (2); support_hours partial, enterprise SLAs and support tiers, no hours (23); sandbox not_disclosed (Demo environment is requested through an Incode representative).
+- `coverage`: countries 190, document_types 4,900 ("190+ countries and territories", "4,900+ document types", source 2); non_doc yes, non-document verification and GovMatch registry checks (2).
+- `track_record`: ownership stable, venture backed, acquirer of AuthenticID, MetaMap, Identiq (13); incidents none recorded.
+- `capabilities`: liveness yes (2); injection_detection yes, Deepsight Camera Trust "Blocks virtual cameras and prevents video injection", vendor-stated, no IAD lab letter found (22); reusable_id yes, "Verify once, reuse everywhere" (2, tagline only, no product detail); data_residency yes, "configurable", documented regions North America, Latin America, Europe (23).
+- New sources 22 to 25.
+
+### Still not_disclosed
+
+- sandbox, transaction_monitoring, age_credit_card, age_reusable. Deployment not added: the FAQ says "cloud-hosted or on-premise (verify current availability with Incode)", too hedged.
+
+### Rescore
+
+- 4.7 -> 4.1 (scored weight 80%; pricing n/d).
+
+### Score flag
+
+- Not counted as an incident: Aspel v. Incode Technologies (Illinois BIPA class action), $4m settlement, preliminary approval 5 Aug 2024 (classaction.org). It is a private settlement before the Nov 2024 window, not a regulatory action. Owner may want a mention in the review.

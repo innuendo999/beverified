@@ -139,6 +139,11 @@ pricing:
     kind: official
     source: 1
     verified: '2026-11'
+  model:
+    published: core
+    minimum: false
+    trial: true
+    source: 1
 facts:
 - label: From
   value: €0.50 per document check
@@ -305,6 +310,73 @@ capabilities:
     status: 'yes'
     note: €10 per company check
     source: 1
+  ongoing_monitoring:
+    status: add_on
+    note: AML databases monitoring with notifications, monthly add-on
+    source: 1
+  list_updates:
+    status: partial
+    note: OFAC and regulatory watchlists named, no update frequency
+    source: 1
+  pep_tiers:
+    status: not_disclosed
+    note: PEP databases, no tiers or RCA described
+  fuzzy_matching:
+    status: 'yes'
+    note: configurable name match threshold and field weights
+    source: 17
+  alert_explanation:
+    status: partial
+    note: name and total match scores returned, no reason text
+    source: 17
+  audit_trail:
+    status: not_disclosed
+    note: not described
+  risk_scoring:
+    status: not_disclosed
+    note: not described
+  batch_screening:
+    status: not_disclosed
+    note: single person requests only in docs
+  case_management:
+    status: not_disclosed
+    note: not described
+  data_residency:
+    status: not_disclosed
+    note: hosting region not stated
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: docs.kycaid.com readable without login
+    source: 6
+  sdk_web:
+    status: not_disclosed
+    note: hosted form and iframe, no web SDK in docs
+  sdk_ios:
+    status: not_disclosed
+    note: WebView guide only; SDKs on request per vendor email
+  sdk_android:
+    status: not_disclosed
+    note: WebView guide only; SDKs on request per vendor email
+  sandbox:
+    status: 'yes'
+    note: welcome credit, no card; no separate sandbox
+    source: 1
+  no_code:
+    status: 'yes'
+    note: hosted form by direct URL, flow set in dashboard
+    source: 13
+  support_hours:
+    status: partial
+    note: 24/7 priority support on Enterprise only
+    source: 1
+track_record:
+  ownership:
+    status: changed_disclosed
+    note: operator's controlling person changed Nov 2025 per Companies House
+    source: 14
+  incidents: []
 certifications:
 - name: ISO/IEC 27001
   what: Information security
@@ -388,6 +460,10 @@ sources:
   publisher: KYCAID
   url: https://kycaid.com/age-verification
   accessed: '2026-10'
+- title: Blacklist databases (API docs)
+  publisher: KYCAID
+  url: https://docs.kycaid.com/risks-check/blacklist-databases
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

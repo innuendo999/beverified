@@ -58,3 +58,14 @@
 - adverse_media: yes. https://www.au10tix.com/solutions/aml-screening/ (source 12)
 - transaction_monitoring: yes. https://www.au10tix.com/solutions/compliance-suite/ (source 14; one line, "Continuous monitoring of transactions for unusual activities", no product detail)
 - No existing values changed (the four keys were empty). capabilities.checked stays 2026-10.
+
+## v3.1 fields 2026-11-05
+
+- pricing.model: published partial ($500 monthly minimum on Basic and Enhanced, per-check price quoted), minimum true, trial false, source 1.
+- integration: sdk_web, sdk_ios, sdk_android yes (15); no_code partial (low-code WebApp and setup wizard, 16); docs_public not_disclosed (no public developer docs found); sandbox not_disclosed; support_hours not_disclosed.
+- coverage: countries 190, document_types 5000 (AU10TIX vs Veriff page, 17); non_doc add_on (database verification on Enterprise, 1).
+- track_record: ownership stable (ICTS majority owner, no sale announced, 7); incidents none in window.
+- capabilities: liveness yes (13); injection_detection add_on (Enhanced KYC plan, vendor-stated, no lab letter, 1); reusable_id add_on (Enterprise plan, 1); data_residency partial ("flexible residency" claim with no detail, 17); case_management yes (from Basic KYC, 1).
+- Still not_disclosed: docs_public, sandbox, support_hours. KYB is listed on the Enterprise plan but no registry detail, so kyb_registry not added.
+- New sources 15 to 18. Source 18 is AU10TIX's 28 Jul 2025 statement on the June 2024 credential exposure.
+- Score flag (for review): the admin-credential exposure was discovered June 2024 and reported by 404 Media that month, so it falls before the Nov 2024 incident window and is not listed in incidents. Owner may want to decide whether the July 2025 clarification counts. Preferred shareholders' exit rights from Jul 2026 remain; no sale announced.

@@ -57,6 +57,11 @@ pricing:
     extra: Volume pricing discounts
   legacy_verified_note: null
   verified: '2026-11'
+  model:
+    published: core
+    minimum: true
+    trial: true
+    source: 1
   index:
     product: 'IDV, self-serve plans'
     price:
@@ -313,6 +318,72 @@ capabilities:
     status: 'no'
     note: quote only, limited access program
     source: 13
+  liveness:
+    status: 'yes'
+    note: passive liveness, iBeta Level 1 and 2
+    source: 6
+  injection_detection:
+    status: 'yes'
+    note: injected video streams named; no injection lab test found
+    source: 10
+  reusable_id:
+    status: not_disclosed
+    note: no reusable ID product found
+  data_residency:
+    status: not_disclosed
+    note: security page names AWS backups, no region choice
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: API reference readable without login
+    source: 32
+  sdk_web:
+    status: 'yes'
+    note: JavaScript and InContext SDKs
+    source: 31
+  sdk_ios:
+    status: 'yes'
+    note: native iOS SDK
+    source: 31
+  sdk_android:
+    status: 'yes'
+    note: native Android SDK
+    source: 31
+  sandbox:
+    status: 'yes'
+    note: self-serve free trial, no credit card
+    source: 2
+  no_code:
+    status: 'yes'
+    note: Veriff Zapier no-code integration
+    source: 33
+  support_hours:
+    status: not_disclosed
+    note: help centre did not render, no hours found
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 230
+    note: countries and territories
+    source: 3
+  document_types:
+    value: 12500
+    note: ID documents
+    source: 3
+  non_doc:
+    status: 'yes'
+    note: ID data checked against government and commercial registries
+    source: 34
+track_record:
+  ownership:
+    status: stable
+    note: independent, founder-led Estonian company
+    source: 5
+  incidents:
+  - date: '2025-12-10'
+    what: 'Total Wireless says an unauthorised party obtained personal data from Veriff systems; Veriff gave the list of affected people on this date; class actions filed'
+    source: 35
 certifications:
 - name: ISO/IEC 30107-3 Level 2 (iBeta)
   what: Liveness, presentation attack detection
@@ -495,6 +566,26 @@ sources:
   publisher: Veriff
   url: https://www.veriff.com/product/aml-screening
   accessed: '2026-10'
+- title: 'SDK guide'
+  publisher: Veriff
+  url: https://devdocs.veriff.com/docs/sdk-guide
+  accessed: '2026-11'
+- title: 'API documentation and reference'
+  publisher: Veriff
+  url: https://devdocs.veriff.com/apidocs
+  accessed: '2026-11'
+- title: 'Veriff developer documentation (Veriff Zapier, no-code)'
+  publisher: Veriff
+  url: https://devdocs.veriff.com/
+  accessed: '2026-11'
+- title: 'Database verification checks'
+  publisher: Veriff
+  url: https://www.veriff.com/product/db-verification-checks
+  accessed: '2026-11'
+- title: 'Total Wireless data security incident notice (9 January 2026)'
+  publisher: Commonwealth of Massachusetts, Office of Consumer Affairs (data breach notification)
+  url: https://www.mass.gov/doc/2026-36-total-wireless/download
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

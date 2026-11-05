@@ -124,3 +124,27 @@ Re-confirmed unchanged: ACCS register (Level 3, ACCS 1:2020, valid to 18/03/2027
 ### Score flag
 
 None. The NIST 1:N rank Paravision cites fell from top 5 (July 2025) to 11th (October 2026), but NIST ranks were already vendor-stated and not counted as independent evidence.
+
+## v3.1 fields 2026-11-05
+
+### Added
+
+- `pricing.model`: published none, minimum null, trial null (source 10, demo request only).
+- `integration` (checked 2026-11): sdk_ios, sdk_android yes, "advanced image quality SDKs for iOS and Android" and smartphone liveness (6); docs_public, sdk_web, sandbox, no_code, support_hours not_disclosed (no public developer docs found; "Supports mobile and webcam capture" but no browser SDK named; demo and contact form only; server SDKs for Windows and Linux and Docker containers, no hosted flow).
+- `coverage`: countries null, document_types null (face biometrics only, no document reading); non_doc not_disclosed.
+- `track_record`: ownership stable, private, formerly Everalbum, HID Global investor in the May 2021 round (37); incidents none since Nov 2024 (the FTC Everalbum order is from 2021, outside the 24-month window).
+- `capabilities`: liveness yes (6); deployment cloud_and_on_prem, SDKs and Docker containers (5, matches the existing Deployment fact); injection_detection, reusable_id, data_residency not_disclosed.
+
+### Still not_disclosed
+
+- docs_public, sdk_web, sandbox, no_code, support_hours, coverage counts, non_doc, injection_detection, reusable_id, data_residency.
+
+### Rescore
+
+- 3.9 -> 2.4 (scored weight 85%; coverage n/d).
+
+### Score flag
+
+- No incident or ownership change.
+- For the script owner: pricing scores 2 ("third-party contract data") only because the record has `kind: third_party` items for GetApp and Capterra that say there is no price. That is not contract data; pricing should probably be n/d.
+- Paravision is a biometric component vendor (primary_category liveness-detection); the identity rubric's coverage and breadth criteria do not fit it well. Owner review suggested.

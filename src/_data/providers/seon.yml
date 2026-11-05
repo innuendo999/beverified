@@ -74,6 +74,11 @@ pricing:
     kind: official
     source: 1
     verified: '2026-11'
+  model:
+    published: core
+    minimum: true
+    trial: false
+    source: 1
 facts:
 - label: From
   value: $699/mo (2,500 fraud checks)
@@ -164,6 +169,84 @@ capabilities:
     status: add_on
     note: 'separate AML Transaction Monitoring product'
     source: 15
+  case_management:
+    status: add_on
+    note: 'Premium plan only'
+    source: 1
+  kyb_entity_screening:
+    status: 'yes'
+    note: 'AML Entity API screens organisations'
+    source: 18
+  ongoing_monitoring:
+    status: 'yes'
+    note: 'set re-screening intervals or event triggers'
+    source: 13
+  list_updates:
+    status: partial
+    note: 'lists named with version dates, no update frequency'
+    source: 17
+  pep_tiers:
+    status: not_disclosed
+    note: 'PEP match flag only, no tiers or RCA stated'
+  fuzzy_matching:
+    status: 'yes'
+    note: 'edit distance and phonetic thresholds'
+    source: 13
+  alert_explanation:
+    status: partial
+    note: 'match type and relevancy score per hit'
+    source: 17
+  audit_trail:
+    status: 'yes'
+    note: 'audit log of case actions and filings'
+    source: 20
+  risk_scoring:
+    status: 'yes'
+    note: 'custom rules and risk thresholds'
+    source: 13
+  batch_screening:
+    status: not_disclosed
+    note: 'real time API, no bulk screening stated'
+  data_residency:
+    status: partial
+    note: 'US and APAC API endpoints besides default'
+    source: 18
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: 'API reference open without login'
+    source: 21
+  sdk_web:
+    status: 'yes'
+    note: 'JavaScript device SDK'
+    source: 19
+  sdk_ios:
+    status: 'yes'
+    note: 'iOS SDK, plus React Native and Flutter'
+    source: 19
+  sdk_android:
+    status: 'yes'
+    note: 'Android SDK via Gradle'
+    source: 19
+  sandbox:
+    status: partial
+    note: 'trial on request, reviewed by SEON'
+    source: 16
+  no_code:
+    status: 'yes'
+    note: 'drag and drop workflow builder'
+    source: 4
+  support_hours:
+    status: 'yes'
+    note: 'tickets and email; 24/7 on Premium'
+    source: 1
+track_record:
+  ownership:
+    status: stable
+    note: 'independent, venture funded'
+    source: 9
+  incidents: []
 certifications:
 - name: ISO/IEC 27001
   what: Information security
@@ -252,6 +335,30 @@ sources:
   publisher: 'SEON'
   url: https://seon.io/products/aml-transaction-monitoring/
   accessed: '2026-10'
+- title: 'Request SEON Trial Access'
+  publisher: 'SEON'
+  url: https://seon.io/trial/
+  accessed: '2026-11'
+- title: 'AML API (SEON Docs)'
+  publisher: 'SEON'
+  url: https://docs.seon.io/api-reference/aml-api
+  accessed: '2026-11'
+- title: 'AML Entity API (SEON Docs)'
+  publisher: 'SEON'
+  url: https://docs.seon.io/api-reference/aml-entity-api
+  accessed: '2026-11'
+- title: 'Device Intelligence integration (SEON Docs)'
+  publisher: 'SEON'
+  url: https://docs.seon.io/integration/device-intelligence
+  accessed: '2026-11'
+- title: 'Case Management'
+  publisher: 'SEON'
+  url: https://seon.io/products/case-management/
+  accessed: '2026-11'
+- title: 'API reference (SEON Docs)'
+  publisher: 'SEON'
+  url: https://docs.seon.io/api-reference
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

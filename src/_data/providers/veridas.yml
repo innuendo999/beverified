@@ -43,6 +43,11 @@ pricing:
     extra: Contact sales for a quote
   legacy_verified_note: null
   verified: '2026-10'
+  model:
+    published: none
+    minimum: null
+    trial: null
+    source: 3
   items:
   - label: Published pricing
     value: None; demo or contact sales only
@@ -158,6 +163,69 @@ capabilities:
     status: 'no'
     note: no prices on site
     source: 2
+  liveness:
+    status: 'yes'
+    note: passive liveness, iBeta tested
+    source: 8
+  injection_detection:
+    status: 'yes'
+    note: vendor stated; CEN/TS 18099 audit not finished
+    source: 25
+  reusable_id:
+    status: 'yes'
+    note: Nexus Wallet stores verified credentials
+    source: 26
+  data_residency:
+    status: partial
+    note: Europe and USA environments; customer choice not stated
+    source: 24
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: docs.veridas.com readable without login
+    source: 23
+  sdk_web:
+    status: 'yes'
+    note: web component and React capture SDKs
+    source: 23
+  sdk_ios:
+    status: 'yes'
+    note: native iOS capture SDKs
+    source: 23
+  sdk_android:
+    status: 'yes'
+    note: native Android capture SDKs
+    source: 23
+  sandbox:
+    status: 'no'
+    note: sandbox credentials only after an agreement
+    source: 24
+  no_code:
+    status: 'yes'
+    note: XpressID hosted flow, embedded by iframe
+    source: 27
+  support_hours:
+    status: 'yes'
+    note: production 24x7, availability and response per contract
+    source: 24
+coverage:
+  checked: '2026-11'
+  countries:
+    value: null
+    note: not stated; 25 countries is where clients are
+  document_types:
+    value: null
+    note: not stated
+  non_doc:
+    status: not_disclosed
+    note: no database checks for individuals found
+track_record:
+  ownership:
+    status: changed_disclosed
+    note: merger with Fourthline closed 3 Nov 2026; Fourthline CEO leads combined company
+    source: 28
+  incidents: []
 certifications:
 - name: iBeta ISO/IEC 30107-3 PAD Level 2
   what: Liveness, Veridas Passive Liveness Detection (Apr 2024)
@@ -293,6 +361,30 @@ sources:
   publisher: 'Veridas'
   url: https://docs.veridas.com/digital-onboarding-general-information/cloud/2026.6
   accessed: '2026-10'
+- title: 'CORE ID Verification Solutions (documentation home)'
+  publisher: Veridas
+  url: https://docs.veridas.com/
+  accessed: '2026-11'
+- title: 'Environments and releases'
+  publisher: Veridas
+  url: https://docs.veridas.com/environments/cloud/v1.0
+  accessed: '2026-11'
+- title: 'Injection attack detection'
+  publisher: Veridas
+  url: https://veridas.com/en/injection-attack-detection/
+  accessed: '2026-11'
+- title: 'ID Wallet (Nexus)'
+  publisher: Veridas
+  url: https://veridas.com/en/id-wallet/
+  accessed: '2026-11'
+- title: 'Plug and Play Onboarding (XpressID integration)'
+  publisher: Veridas
+  url: https://docs.veridas.com/digital-onboarding-general-information/cloud/2024.8/integration/xpressid/
+  accessed: '2026-11'
+- title: 'Fourthline and Veridas complete merger (3 November 2026)'
+  publisher: Fourthline
+  url: https://www.fourthline.com/news/fourthline-and-veridas-complete-merger
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

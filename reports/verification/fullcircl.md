@@ -51,3 +51,14 @@
 ### Score flag
 
 - No new flag beyond the 2026-10-18 one. The Companies House liquidations are solvent members' voluntary liquidations of the old UK companies, and the product is still sold under nCino. The 2025 rebrand strengthens the earlier point that the review now covers nCino Identity Solutions rather than FullCircl as a whole (lifecycle tools went to the nCino platform).
+
+## v3.1 fields 2026-11-05
+
+- pricing.model: published none, minimum false, trial false, source 1.
+- integration: docs_public yes (W2 Global Data developer portal, 17); sdk_ios partial and sdk_android partial (mobile SDKs, platforms not named, 14); support_hours partial (support email and help centre, no hours, 17); sdk_web, sandbox (vendor sets it up at onboarding), no_code not_disclosed.
+- coverage: countries 246, document_types 6000 (14); non_doc yes (credit data matching, 16). The IDV page FAQ says document verification is used in over 160 countries, which conflicts with 246.
+- track_record: ownership changed_disclosed (nCino acquisition completed 5 Nov 2024, 3); incidents none found.
+- capabilities: identity_verification yes (14); sanctions_pep yes (15); adverse_media yes (15); liveness yes, vendor-stated (14). injection_detection, reusable_id, data_residency, case_management not_disclosed.
+- No certifications and no Founded fact in the record, so Trust = 1.
+- New sources 14 to 17.
+- Score flag: brand retired (FullCircl is now nCino Identity Solutions) and the UK entities are in members' voluntary liquidation, as already recorded. Products are still sold under nCino. No new flag.

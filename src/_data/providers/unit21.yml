@@ -44,6 +44,11 @@ pricing:
   legacy_verified_note: null
   verified: '2026-10'
   items: []
+  model:
+    published: none
+    minimum: null
+    trial: false
+    source: 1
 facts:
 - label: From
   value: Not publicly disclosed
@@ -149,6 +154,70 @@ capabilities:
     note: no prices on site
     source: 1
   checked: '2026-10'
+  ongoing_monitoring:
+    status: 'yes'
+    note: re-screening when watchlists change
+    source: 9
+  list_updates:
+    status: partial
+    note: OFAC and global lists, update frequency not stated
+    source: 1
+  pep_tiers:
+    status: not_disclosed
+    note: PEP lists named, no tiers or RCA stated
+  fuzzy_matching:
+    status: 'yes'
+    note: fuzzy matching and risk based thresholds
+    source: 9
+  alert_explanation:
+    status: 'yes'
+    note: decisions logged with rationale and notes
+    source: 9
+  audit_trail:
+    status: 'yes'
+    note: alerts and decisions logged with timestamps
+    source: 9
+  risk_scoring:
+    status: 'yes'
+    note: configurable weighted customer risk models
+    source: 10
+  batch_screening:
+    status: not_disclosed
+    note: bulk screening not described
+  data_residency:
+    status: not_disclosed
+    note: storage region not stated
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'no'
+    note: docs site redirects to a login page
+    source: 11
+  sdk_web:
+    status: not_disclosed
+    note: no SDK listed on public pages
+  sdk_ios:
+    status: not_disclosed
+    note: no SDK listed on public pages
+  sdk_android:
+    status: not_disclosed
+    note: no SDK listed on public pages
+  sandbox:
+    status: not_disclosed
+    note: demo only on public pages
+  no_code:
+    status: 'yes'
+    note: drag and drop onboarding workflows
+    source: 6
+  support_hours:
+    status: not_disclosed
+    note: support SLA page needs a login
+track_record:
+  ownership:
+    status: stable
+    note: independent, venture funded; new CEO 2026
+    source: 2
+  incidents: []
 certifications:
 - name: SOC 2 Type I and Type II
   what: Security, availability, confidentiality (Armanino)
@@ -196,6 +265,18 @@ sources:
   publisher: Business Wire (Unit21 release)
   url: https://www.businesswire.com/news/home/20261012063040/en/Unit21-and-Corelation-Bring-AI-Native-Fraud-Prevention-and-AML-Monitoring-to-Credit-Unions-on-Keystone
   accessed: '2026-10'
+- title: Sanction screening and monitoring
+  publisher: Unit21
+  url: https://www.unit21.ai/products/sanction-screening-and-monitoring
+  accessed: '2026-11'
+- title: Customer risk rating
+  publisher: Unit21
+  url: https://www.unit21.ai/products/customer-risk-rating
+  accessed: '2026-11'
+- title: Unit21 documentation (login)
+  publisher: Unit21
+  url: https://docs.unit21.ai/
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

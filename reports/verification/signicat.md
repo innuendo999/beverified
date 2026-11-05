@@ -53,3 +53,20 @@
 - adverse_media: yes. https://www.signicat.com/kyc-kyb-platform (source 18)
 - transaction_monitoring: not_disclosed. not mentioned on the KYC/KYB platform or Ongoing Monitoring pages
 - No existing values changed (the four keys were empty). capabilities.checked stays 2026-10.
+
+## v3.1 fields 2026-11-05
+
+Added (key: status, source):
+- `pricing.model`: published none, minimum null (not stated), trial false (free sandbox only, no free live checks); source 2
+- `capabilities.liveness`: yes; source 22
+- `capabilities.reusable_id`: yes (ReuseID); source 3
+- `capabilities.data_residency`: partial (sovereign cloud as custom-priced security add-on, regions not named); source 2
+- `integration.docs_public`: yes; source 21. `sdk_web`, `sdk_ios`, `sdk_android`: yes (ReadID SDKs and APIs for iOS, Android and web); source 16. `sandbox`: yes (free sandbox account in Signicat Dashboard); source 2. `no_code`: yes (Signicat Mint); source 21.
+- `coverage.countries`: 181 (ReadID chip documents; no overall IDV country count on vendor pages); source 16. `non_doc`: yes (30+ registries, credit bureaus); source 19.
+- `track_record.ownership`: stable (Nordic Capital majority owner since Apr 2019); source 23. `incidents`: none found (status-page outages only).
+
+Not disclosed: `injection_detection` (deepfake detection named, injection attacks not); `integration.support_hours` (only a 14-working-day complaint response found); `coverage.document_types`.
+
+Rescore (v3.1 draft): 4.6 -> 3.7, scored weight 80% (pricing n/d).
+
+Notes: the countries figure comes from ReadID (NFC) only; owner may prefer null. The KYC/KYB platform page describes ongoing alerts on sanctions, PEP and adverse media changes (source 18); `ongoing_monitoring` was not added because it is not in the identity key list of this brief. A 2022 report (Unquote, 29 Apr 2022) said Nordic Capital was preparing an exit; no sale found since.

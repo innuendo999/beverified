@@ -43,6 +43,11 @@ pricing:
     extra: Contact sales for a quote
   legacy_verified_note: null
   verified: '2026-10'
+  model:
+    published: none
+    minimum: null
+    trial: null
+    source: 1
   items:
   - label: List price
     value: Not published; quoted on request
@@ -155,6 +160,68 @@ capabilities:
     status: 'no'
     note: quote on request
     source: 1
+  liveness:
+    status: 'yes'
+    note: optional video liveness in AutoIdent
+    source: 15
+  injection_detection:
+    status: not_disclosed
+    note: deepfake detection claimed, injection detection not described
+  reusable_id:
+    status: partial
+    note: accepts EUDI Wallet and wallet based credentials
+    source: 1
+  data_residency:
+    status: partial
+    note: EU hosting only, no region choice stated
+    source: 10
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: doc.idnow.de and docs.idnow.io readable without login
+    source: 18
+  sdk_web:
+    status: not_disclosed
+    note: redirect, iframe or webview, no web SDK listed
+  sdk_ios:
+    status: 'yes'
+    note: iOS SDK documented
+    source: 18
+  sdk_android:
+    status: 'yes'
+    note: Android SDK documented
+    source: 18
+  sandbox:
+    status: not_disclosed
+    note: test gateway after account setup, no self-serve trial found
+  no_code:
+    status: 'yes'
+    note: Trust Platform visual flow editor
+    source: 19
+  support_hours:
+    status: not_disclosed
+    note: help centre linked, no hours published
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 195
+    note: document issuing countries
+    source: 20
+  document_types:
+    value: 3800
+    note: documents supported
+    source: 1
+  non_doc:
+    status: 'yes'
+    note: eID schemes, IBAN and data verification
+    source: 1
+track_record:
+  ownership:
+    status: changed_disclosed
+    note: Corsair Capital majority investment, Mar 2025
+    source: 8
+  incidents: []
 certifications:
 - name: ISO/IEC 30107 PAD, substantial (LSTI, VideoIdent)
   what: Presentation attack detection
@@ -267,6 +334,18 @@ sources:
   publisher: IDnow
   url: https://idnow.io/solutions/identity-verification/biometric-verification/
   accessed: '2026-10'
+- title: Integration (document based IDV documentation)
+  publisher: IDnow
+  url: https://doc.idnow.de/integration/
+  accessed: '2026-11'
+- title: Trust Platform capabilities (documentation)
+  publisher: IDnow
+  url: https://docs.idnow.io/docs/platform-guides/capabilities
+  accessed: '2026-11'
+- title: AutoIdent FAQ
+  publisher: IDnow
+  url: https://idnow.io/faq/autoident/
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

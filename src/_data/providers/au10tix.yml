@@ -80,6 +80,58 @@ pricing:
     kind: official
     source: 1
     verified: '2026-11'
+  model:
+    published: partial
+    minimum: true
+    trial: false
+    source: 1
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: not_disclosed
+    note: no public developer docs found
+  sdk_web:
+    status: 'yes'
+    note: SDK for web
+    source: 15
+  sdk_ios:
+    status: 'yes'
+    note: SDK for iOS
+    source: 15
+  sdk_android:
+    status: 'yes'
+    note: SDK for Android
+    source: 15
+  sandbox:
+    status: not_disclosed
+    note: no trial or sandbox on pricing page
+  no_code:
+    status: partial
+    note: low-code WebApp and setup wizard
+    source: 16
+  support_hours:
+    status: not_disclosed
+    note: account manager on Enterprise, no hours
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 190
+    note: 190+ countries
+    source: 17
+  document_types:
+    value: 5000
+    note: 5,000+ document types
+    source: 17
+  non_doc:
+    status: add_on
+    note: database verification, Enterprise plan
+    source: 1
+track_record:
+  ownership:
+    status: stable
+    note: ICTS majority owner, no sale announced
+    source: 7
+  incidents: []
 facts:
 - label: From
   value: $500 monthly minimum
@@ -184,6 +236,26 @@ capabilities:
     status: partial
     note: Monthly minimums shown; per-check rates quoted
     source: 1
+  liveness:
+    status: 'yes'
+    note: liveness with ID to selfie match
+    source: 13
+  injection_detection:
+    status: add_on
+    note: Enhanced KYC plan, vendor-stated
+    source: 1
+  reusable_id:
+    status: add_on
+    note: Reusable Digital ID, Enterprise plan
+    source: 1
+  data_residency:
+    status: partial
+    note: flexible residency claimed, no detail
+    source: 17
+  case_management:
+    status: 'yes'
+    note: included from Basic KYC plan
+    source: 1
 certifications:
 - name: UK DIATF certified identity service
   what: Right to work, right to rent, DBS (Kantara; valid to Dec 2028)
@@ -284,6 +356,22 @@ sources:
   publisher: AU10TIX
   url: https://www.au10tix.com/solutions/compliance-suite/
   accessed: '2026-10'
+- title: SDK
+  publisher: AU10TIX
+  url: https://www.au10tix.com/solutions/sdk/
+  accessed: '2026-11'
+- title: Integrations
+  publisher: AU10TIX
+  url: https://www.au10tix.com/company/integrations/
+  accessed: '2026-11'
+- title: AU10TIX vs Veriff
+  publisher: AU10TIX
+  url: https://www.au10tix.com/au10tix-vs-veriff/
+  accessed: '2026-11'
+- title: 'AU10TIX clarifies past security event (28 Jul 2025)'
+  publisher: AU10TIX
+  url: https://www.au10tix.com/blog/au10tix-clarifies-past-security-event-no-evidence-of-data-exposure-or-customer-impact/
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

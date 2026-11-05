@@ -55,6 +55,11 @@ pricing:
     kind: official
     source: 8
     verified: '2026-10'
+  model:
+    published: none
+    minimum: null
+    trial: true
+    source: 8
 facts:
 - label: From
   value: Custom quote
@@ -161,6 +166,92 @@ capabilities:
     note: quote by annual scan volume
     source: 3
   checked: '2026-10'
+  kyb_registry:
+    status: 'yes'
+    note: registry search by name or number, by jurisdiction
+    source: 13
+  kyb_ubo:
+    status: 'yes'
+    note: ownership traced to ultimate owners, varies by jurisdiction
+    source: 13
+  kyb_documents:
+    status: 'yes'
+    note: request and store registry filings
+    source: 13
+  kyb_entity_screening:
+    status: 'yes'
+    note: company and named persons screened
+    source: 13
+  kyb_monitoring:
+    status: not_disclosed
+    note: company level monitoring not described
+  ongoing_monitoring:
+    status: 'yes'
+    note: monitoring list rescreened daily
+    source: 11
+  list_updates:
+    status: 'yes'
+    note: OFAC, UN, EU and HMT named, 24-hour refresh cycle
+    source: 11
+  pep_tiers:
+    status: 'yes'
+    note: FATF PEP categories, relatives and close associates
+    source: 11
+  fuzzy_matching:
+    status: 'yes'
+    note: phonetic and fuzzy matching, close-match threshold per organisation
+    source: 11
+  alert_explanation:
+    status: 'yes'
+    note: AI Analysis explains which identifiers align
+    source: 11
+  audit_trail:
+    status: 'yes'
+    note: audit trail behind every decision
+    source: 1
+  risk_scoring:
+    status: 'yes'
+    note: AML risk assessment; AI risk score in transaction monitoring
+    source: 1
+  batch_screening:
+    status: 'yes'
+    note: CSV or XML batch file upload
+    source: 11
+  data_residency:
+    status: 'yes'
+    note: regional instances for Oceania, Europe, Southeast Asia, GCC
+    source: 1
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: API reference at api.membercheck.com readable without login
+    source: 12
+  sdk_web:
+    status: not_disclosed
+    note: no SDKs listed
+  sdk_ios:
+    status: not_disclosed
+    note: no SDKs listed
+  sdk_android:
+    status: not_disclosed
+    note: no SDKs listed
+  sandbox:
+    status: partial
+    note: self-serve trial for transaction monitoring; screening sandbox on request
+    source: 8
+  no_code:
+    status: not_disclosed
+    note: web dashboard, no workflow builder or hosted link described
+  support_hours:
+    status: not_disclosed
+    note: no support hours published
+track_record:
+  ownership:
+    status: stable
+    note: Neurocom Group, presented as a Nexiant brand
+    source: 2
+  incidents: []
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security
@@ -225,6 +316,18 @@ sources:
   publisher: Capterra
   url: https://www.capterra.com/p/154148/MemberCheck/reviews/
   accessed: '2026-10'
+- title: PEP and sanctions screening
+  publisher: MemberCheck
+  url: https://membercheck.com/pep-sanction-screening/
+  accessed: '2026-11'
+- title: MemberCheck API v3 reference
+  publisher: MemberCheck
+  url: https://api.membercheck.com/docs/index.html
+  accessed: '2026-11'
+- title: Know Your Business
+  publisher: MemberCheck
+  url: https://membercheck.com/knowyourbusiness/
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

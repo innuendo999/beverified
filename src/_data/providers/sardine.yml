@@ -49,6 +49,11 @@ pricing:
     kind: official
     source: 2
     verified: '2026-10'
+  model:
+    published: none
+    minimum: null
+    trial: false
+    source: 2
 facts:
 - label: From
   value: Custom quote
@@ -141,6 +146,83 @@ capabilities:
     status: 'yes'
     note: 'AML transaction monitoring rules'
     source: 13
+  case_management:
+    status: 'yes'
+    note: 'alerts, entities and decisions in one view'
+    source: 3
+  kyb_registry:
+    status: partial
+    note: 'US state registries via Middesk'
+    source: 15
+  kyb_entity_screening:
+    status: partial
+    note: 'US entity sanctions lists via Middesk'
+    source: 15
+  ongoing_monitoring:
+    status: 'yes'
+    note: 'automatic re-screening as lists change'
+    source: 12
+  list_updates:
+    status: 'yes'
+    note: 'OFAC, EU, UN lists updated several times a day'
+    source: 12
+  pep_tiers:
+    status: not_disclosed
+    note: 'PEP data named, no tiers or RCA stated'
+  fuzzy_matching:
+    status: 'yes'
+    note: 'tunable weighted matching and thresholds'
+    source: 12
+  alert_explanation:
+    status: 'yes'
+    note: 'scores and reasons shown per alert'
+    source: 12
+  audit_trail:
+    status: 'yes'
+    note: 'history of matches, decisions and evidence'
+    source: 12
+  risk_scoring:
+    status: 'yes'
+    note: 'rules and tunable risk thresholds'
+    source: 12
+  batch_screening:
+    status: not_disclosed
+    note: 'real time screening, no bulk upload stated'
+  data_residency:
+    status: not_disclosed
+    note: 'not stated on security page'
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'no'
+    note: 'API docs given after contact or demo'
+    source: 14
+  sdk_web:
+    status: not_disclosed
+    note: 'one SDK, platforms not listed'
+  sdk_ios:
+    status: not_disclosed
+    note: 'one SDK, platforms not listed'
+  sdk_android:
+    status: not_disclosed
+    note: 'one SDK, platforms not listed'
+  sandbox:
+    status: 'no'
+    note: 'sandbox through a Sardine representative'
+    source: 14
+  no_code:
+    status: 'yes'
+    note: 'rules built without engineering support'
+    source: 3
+  support_hours:
+    status: not_disclosed
+    note: 'no support channels or hours published'
+track_record:
+  ownership:
+    status: stable
+    note: 'independent, venture funded'
+    source: 6
+  incidents: []
 certifications:
 - name: SOC 2
   what: Security controls report
@@ -208,6 +290,14 @@ sources:
   publisher: 'Sardine'
   url: https://docs.sardine.ai/guides/public/risk/transaction-monitoring/transaction-monitoring
   accessed: '2026-10'
+- title: 'Getting Started With Risk (Sardine documentation)'
+  publisher: 'Sardine'
+  url: https://docs.sardine.ai/guides/public/getting-started/getting-started
+  accessed: '2026-11'
+- title: 'Business Verification (KYB) (Sardine documentation)'
+  publisher: 'Sardine'
+  url: https://docs.sardine.ai/guides/public/risk/account-risk/kyb
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

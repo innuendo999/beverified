@@ -43,6 +43,11 @@ pricing:
     extra: Contact sales for a quote
   legacy_verified_note: null
   verified: '2026-10'
+  model:
+    published: none
+    minimum: true
+    trial: false
+    source: 1
   items:
   - label: All plans
     value: Not published, quote on request
@@ -156,7 +161,67 @@ capabilities:
     status: 'no'
     note: subscription, quote on request
     source: 1
+  ongoing_monitoring:
+    status: partial
+    note: daily screening cited; list change trigger not stated
+    source: 6
+  list_updates:
+    status: not_disclosed
+    note: lists and data providers not named
+  pep_tiers:
+    status: not_disclosed
+  fuzzy_matching:
+    status: 'yes'
+    note: AI fuzzy matching, thresholds tunable per risk profile
+    source: 6
+  alert_explanation:
+    status: 'yes'
+    note: plain language narrative per recommendation
+    source: 6
+  audit_trail:
+    status: 'yes'
+    note: audit trail on every user and system action
+    source: 6
+  risk_scoring:
+    status: 'yes'
+    note: alert scoring and no code rule builder
+    source: 1
+  batch_screening:
+    status: 'yes'
+    note: real-time and batch screening
+    source: 1
+  data_residency:
+    status: not_disclosed
+    note: SaaS, private cloud or on-premise; no region choice stated
   checked: '2026-10'
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: not_disclosed
+    note: no public API reference found
+  sdk_web:
+    status: not_disclosed
+  sdk_ios:
+    status: not_disclosed
+  sdk_android:
+    status: not_disclosed
+  sandbox:
+    status: not_disclosed
+    note: rules sandbox is inside the product, no free trial
+  no_code:
+    status: 'yes'
+    note: no code rule builder
+    source: 1
+  support_hours:
+    status: 'yes'
+    note: 24-hour support portal and success manager
+    source: 1
+track_record:
+  ownership:
+    status: changed_disclosed
+    note: Marlin majority investment, Lapis Bidco PSC since Jan 2025
+    source: 9
+  incidents: []
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security

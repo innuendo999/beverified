@@ -70,3 +70,19 @@ None.
 - transaction_monitoring: not_disclosed (nothing found on vendor pages), no source
 
 No document plus selfie check found on Verified pages opened today: identification is Nordic/Baltic eID plus a passport NFC chip read via Verified Secure (no selfie or face match stated). verified.io product pages (record sources 14, 16) could not be opened by the fetch tool today, so verified.eu/en/aml and Help Center pages were used. Transaction monitoring appears only as a resources article title, not as a product.
+
+## v3.1 fields 2026-11-05
+
+### Added
+- `pricing.model`: published none, minimum null, trial null (14).
+- `integration`: docs_public yes, docs.pliance.io public (27; overview 26); no_code partial, eSign flow builder (12); sdk_web, sdk_ios, sdk_android, sandbox, support_hours not_disclosed. docs.verified.eu is script-rendered and unreadable by WebFetch; developer.assently.com blocks robots.
+- `coverage`: countries null, document_types null; non_doc yes, Nordic and Baltic bank eIDs (12).
+- `track_record.ownership`: stable, Verdane-backed since 2023 (3). `incidents`: none found.
+- `capabilities`: liveness, injection_detection, reusable_id not_disclosed; data_residency not_disclosed (homepage says all data is in EU data centres, no customer choice named).
+- Sources 26 and 27 added.
+
+### Still not_disclosed
+- Liveness, identity_verification, SDKs, sandbox, support hours, pricing, coverage counts.
+
+### Score flag
+- None (no ownership change or incident). v3.1 draft: 4.5 -> 2.1 on only 40% of weight; the low figure comes from missing data, and Verified is AML/eID rather than selfie IDV. Owner should decide whether the identity rubric fits this e-kyc record.

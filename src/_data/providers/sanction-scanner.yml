@@ -48,6 +48,11 @@ pricing:
     extra: Contact sales for a quote
   legacy_verified_note: null
   verified: '2026-11'
+  model:
+    published: core
+    minimum: true
+    trial: false
+    source: 1
   index:
     product: 'AML screening, Starter plan'
     price:
@@ -188,7 +193,71 @@ capabilities:
     status: partial
     note: Starter published, Enterprise quoted
     source: 1
+  ongoing_monitoring:
+    status: 'yes'
+    note: daily automated re-screening of the portfolio
+    source: 17
+  list_updates:
+    status: 'yes'
+    note: UN, OFAC, EU, HMT lists, updated every 15 minutes
+    source: 17
+  pep_tiers:
+    status: 'yes'
+    note: PEP and RCA screening in Starter
+    source: 1
+  fuzzy_matching:
+    status: 'yes'
+    note: fuzzy matching, match rate set per segment
+    source: 17
+  alert_explanation:
+    status: partial
+    note: match details in PDF report
+    source: 3
+  audit_trail:
+    status: 'yes'
+    note: every match, decision and action logged
+    source: 17
+  risk_scoring:
+    status: 'yes'
+    note: risk-based scoring at customer acceptance
+    source: 17
+  batch_screening:
+    status: 'yes'
+    note: single or batch screening
+    source: 17
+  data_residency:
+    status: 'yes'
+    note: customer picks EU, UK or Türkiye region
+    source: 12
   checked: '2026-10'
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: not_disclosed
+    note: developer site did not open for automated reading
+  sdk_web:
+    status: not_disclosed
+    note: SDKs and libraries listed, platforms not named
+  sdk_ios:
+    status: not_disclosed
+  sdk_android:
+    status: not_disclosed
+  sandbox:
+    status: not_disclosed
+    note: no free trial on the pricing page
+  no_code:
+    status: 'yes'
+    note: screening from dashboards without integration
+    source: 3
+  support_hours:
+    status: not_disclosed
+    note: uptime targets stated, support hours not
+track_record:
+  ownership:
+    status: stable
+    note: rebranded as Complead in Sep 2026, same company
+    source: 10
+  incidents: []
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security
@@ -281,6 +350,10 @@ sources:
   publisher: Capterra
   url: https://www.capterra.com/p/195301/Sanction-Scanner/reviews/
   accessed: '2026-10'
+- title: AML screening and monitoring
+  publisher: Sanction Scanner
+  url: https://sanctionscanner.com/aml-screening-monitoring
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

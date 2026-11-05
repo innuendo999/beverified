@@ -50,6 +50,11 @@ pricing:
     extra: Book a meeting for a quote
   legacy_verified_note: null
   verified: '2026-10'
+  model:
+    published: none
+    minimum: true
+    trial: true
+    source: 2
   items:
   - label: Published prices
     value: None shown on the pricing page; plans and limits only
@@ -216,6 +221,79 @@ capabilities:
     status: 'no'
     note: Plans listed without prices
     source: 2
+  kyb_entity_screening:
+    status: 'yes'
+    note: screens individuals and entities
+    source: 41
+  ongoing_monitoring:
+    status: 'yes'
+    note: Ongoing AML alerts on profile changes
+    source: 41
+  list_updates:
+    status: 'yes'
+    note: OFAC, UN, EU, UK HMT; stated update cycle
+    source: 9
+  pep_tiers:
+    status: 'yes'
+    note: four PEP levels, relatives and close associates
+    source: 42
+  fuzzy_matching:
+    status: 'yes'
+    note: phonetic matching, match score filter
+    source: 41
+  alert_explanation:
+    status: add_on
+    note: TruRisk explains each match, paid add-on
+    source: 12
+  audit_trail:
+    status: 'yes'
+    note: complete audit trails with comments
+    source: 37
+  risk_scoring:
+    status: 'yes'
+    note: Risk Score Engine and risk based rules
+    source: 41
+  batch_screening:
+    status: 'yes'
+    note: CSV batch upload and bulk search API
+    source: 43
+  data_residency:
+    status: 'yes'
+    note: in-country hosting or on-premises
+    source: 16
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: public REST API docs
+    source: 17
+  sdk_web:
+    status: not_disclosed
+    note: no SDK documented
+  sdk_ios:
+    status: not_disclosed
+    note: no SDK documented
+  sdk_android:
+    status: not_disclosed
+    note: no SDK documented
+  sandbox:
+    status: 'yes'
+    note: free trial searches, self-serve
+    source: 2
+  no_code:
+    status: 'yes'
+    note: dashboard and CSV upload screening
+    source: 43
+  support_hours:
+    status: 'yes'
+    note: 24/7 phone, text and email
+    source: 8
+track_record:
+  ownership:
+    status: stable
+    note: Risk Watcher LLC, Programmers Force group
+    source: 4
+  incidents: []
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security; certificate AMER800493, Americo Quality Standards Registech (UAF-accredited), valid to Apr 2029
@@ -427,6 +505,18 @@ sources:
   publisher: Gartner Peer Insights
   url: https://www.gartner.com/reviews/product/aml-watcher
   accessed: '2026-10'
+- title: Search API (Risk Score Engine, Ongoing AML, Bulk Search, Make Case)
+  publisher: AML Watcher
+  url: https://doc.amlwatcher.com/docs/category/search
+  accessed: '2026-11'
+- title: PEP screening
+  publisher: AML Watcher
+  url: https://amlwatcher.com/pep-screening/
+  accessed: '2026-11'
+- title: Batch search
+  publisher: AML Watcher
+  url: https://amlwatcher.com/batch-search/
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

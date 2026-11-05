@@ -57,3 +57,21 @@ Arithmetic: (25 × 2.9 + 20 × 3.8 + 20 × 3.2 + 15 × 3.3 + 10 × 3.0 + 10 × 2
 - All six criteria scored. Integration is scored on the self-service console and no-code builder; no API documentation, SDK or sandbox is cited in the sources.
 - Grade "Fair" is the new label for 3.0 to 3.6.
 - `node scripts/checks/provider.mjs` flags `score` and `grade` as changed against HEAD; this is the intended, owner-approved change.
+
+## v3.1 fields 2026-11-05
+
+Added (key: status, source). Capabilities was empty; standard keys filled from vendor pages.
+- pricing.model: published none, minimum false (pay as you go), trial null (not stated), source 1
+- capabilities.identity_verification: yes, 1; liveness: yes, 1; kyb_registry: yes, 1; kyb_ubo: yes, 1; published_pricing: no, 1
+- capabilities.sanctions_pep: yes, 8; adverse_media: yes, 8; transaction_monitoring: yes, 8 (one line, no detail); deployment: cloud, 8
+- capabilities.ongoing_monitoring: yes, 7; risk_scoring: yes, 7; alert_explanation: partial, 7 (explainable risk scoring, match reasons not described)
+- capabilities.audit_trail: yes, 8
+- integration.no_code: yes, 1
+- track_record.ownership: unknown, 2 (no legal entity named); incidents: none found
+- New sources 7 (risk scoring and watchlist screening page) and 8 (cloud AML compliance page)
+
+Not disclosed: case_management, list_updates (no lists named), pep_tiers, fuzzy_matching, batch_screening, data_residency, integration.docs_public, sdk_web, sdk_ios, sdk_android, sandbox (console sign-up exists, no trial or free checks stated), support_hours (contact form only).
+
+Rescore: 3.2 -> 2.9 (80% of weight scored; pricing n/d because no figures and no third-party data).
+
+Score flag: unchanged from the October check: operator identity still not confirmed (ownership unknown). No incident, sale or shutdown found.

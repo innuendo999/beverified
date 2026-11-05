@@ -57,3 +57,20 @@ Filled `capabilities` keys from vendor pages opened 2026-10-30. No existing valu
 - `transaction_monitoring`: add_on (Enterprise plan); source 1, https://shuftipro.com/pricing/
 
 - Note: Pricing: Free Forever lists document verification and facial biometrics; Essentials adds AML Screening ("Everything in Free Forever, plus Add-ons"); Enterprise adds Transaction Monitoring. The pricing page does not break out PEP or adverse media; the AML Screening page lists sanctions, PEP/RCA and adverse media.
+
+## v3.1 fields 2026-11-05
+
+Added (key: status, source):
+- `pricing.model`: published core ($1.50 per verification), minimum false (Free Forever plan, no minimum stated), trial true (10 free verifications per month, self-serve signup); source 1
+- `capabilities.deployment`: cloud_and_on_prem (SaaS, on premises or private cloud); source 3 (was missing)
+- `capabilities.liveness`: yes; source 3
+- `capabilities.injection_detection`: yes, vendor-stated (deepfakes and injected video); source 3. No IAD lab letter found.
+- `capabilities.reusable_id`: yes (Fast ID); source 3
+- `capabilities.data_residency`: yes (EU, MENA, US, APAC hosting); source 3
+- `integration.docs_public`: yes; source 22. `sdk_web`: yes (shuftipro-web-sdk on npm, maintainer tech@shuftipro.com); source 23. `sdk_ios`, `sdk_android`: yes; source 22. `sandbox`: yes (self-serve Free Forever); source 1. `no_code`: yes (No-Code Journey Builder); source 22. `support_hours`: yes (24/7/365 support, response times per plan); source 1.
+- `coverage.countries`: 240; `document_types`: 10000; source 3. `non_doc`: yes (e-IDV Pro); source 22.
+- `track_record.ownership`: stable; source 10. `incidents`: none found.
+
+Not disclosed: none of the new fields.
+
+Rescore (v3.1 draft): 4.6 -> 4.9, all criteria scored.

@@ -43,6 +43,11 @@ pricing:
     extra: Contact sales for a quote
   legacy_verified_note: null
   verified: '2026-10'
+  model:
+    published: none
+    minimum: true
+    trial: false
+    source: 1
   items:
   - label: Published pricing
     value: Not published; quote on request
@@ -156,7 +161,68 @@ capabilities:
     status: 'no'
     note: quote on request
     source: 1
+  kyb_entity_screening:
+    status: 'yes'
+    note: entity screening listed under KYB solutions
+    source: 1
+  ongoing_monitoring:
+    status: 'yes'
+    note: around the clock screening flags list updates
+    source: 8
+  list_updates:
+    status: partial
+    note: watchlists screened daily; lists not named
+    source: 8
+  pep_tiers:
+    status: not_disclosed
+    note: family and associate risk mentioned, coverage not stated
+  fuzzy_matching:
+    status: 'yes'
+    note: adjustable risk thresholds in matching
+    source: 8
+  alert_explanation:
+    status: not_disclosed
+  audit_trail:
+    status: 'yes'
+    note: detailed activity and audit trails
+    source: 9
+  risk_scoring:
+    status: 'yes'
+    note: detection by user-set rules
+    source: 9
+  batch_screening:
+    status: not_disclosed
+  data_residency:
+    status: not_disclosed
   checked: '2026-10'
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: not_disclosed
+    note: auto-generated API docs; public access not stated
+  sdk_web:
+    status: not_disclosed
+  sdk_ios:
+    status: not_disclosed
+  sdk_android:
+    status: not_disclosed
+  sandbox:
+    status: not_disclosed
+    note: developer sandboxes named; self-serve access not stated
+  no_code:
+    status: 'yes'
+    note: low-code or no-code alert handling
+    source: 9
+  support_hours:
+    status: not_disclosed
+track_record:
+  ownership:
+    status: unknown
+    note: private; shareholders not stated
+  incidents:
+  - date: '2026-09-16'
+    what: cyber incident disclosed; data removed, reported to the Information Regulator
+    source: 5
 certifications:
 - name: ISO certification (SANCERT)
   what: Standard not named on the site

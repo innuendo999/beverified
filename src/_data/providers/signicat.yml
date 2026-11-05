@@ -42,6 +42,11 @@ pricing:
     note: Setup, subscription and transaction fees
     extra: Free developer account; contact sales for a quote
   legacy_verified_note: null
+  model:
+    published: none
+    minimum: null
+    trial: false
+    source: 2
   verified: '2026-10'
   items:
   - label: Pricing model
@@ -186,6 +191,69 @@ capabilities:
     status: 'no'
     note: quote only
     source: 18
+  liveness:
+    status: 'yes'
+    note: liveness check in document and biometric flow
+    source: 22
+  injection_detection:
+    status: not_disclosed
+    note: deepfake detection named, injection attacks not
+  reusable_id:
+    status: 'yes'
+    note: ReuseID, reuse verified identities
+    source: 3
+  data_residency:
+    status: partial
+    note: sovereign cloud as paid security add-on
+    source: 2
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: developer docs open without login
+    source: 21
+  sdk_web:
+    status: 'yes'
+    note: ReadID SDKs and APIs for web
+    source: 16
+  sdk_ios:
+    status: 'yes'
+    note: ReadID mobile SDK for iOS
+    source: 16
+  sdk_android:
+    status: 'yes'
+    note: ReadID mobile SDK for Android
+    source: 16
+  sandbox:
+    status: 'yes'
+    note: free sandbox account in Signicat Dashboard
+    source: 2
+  no_code:
+    status: 'yes'
+    note: Signicat Mint no-code journey builder
+    source: 21
+  support_hours:
+    status: not_disclosed
+    note: support desk linked, no hours found
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 181
+    note: countries covered by ReadID chip documents
+    source: 16
+  document_types:
+    value: null
+    note: no document type count found
+  non_doc:
+    status: 'yes'
+    note: population registers and credit bureaus
+    source: 19
+track_record:
+  ownership:
+    status: stable
+    note: Nordic Capital majority owner since 2019
+    source: 23
+  incidents: []
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security (DNV, valid to Oct 2029)
@@ -306,6 +374,18 @@ sources:
   publisher: Signicat
   url: https://www.signicat.com/press-releases/signicat-and-markaaz-partnership
   accessed: '2026-10'
+- title: Signicat developer documentation
+  publisher: Signicat
+  url: https://developer.signicat.com/
+  accessed: '2026-11'
+- title: ID document and biometric verification
+  publisher: Signicat
+  url: https://www.signicat.com/products/identity-proofing/id-document-and-biometric-verification
+  accessed: '2026-11'
+- title: Nordic Capital acquires digital identity firm Signicat (11 Apr 2019)
+  publisher: Biometric Update
+  url: https://www.biometricupdate.com/201904/nordic-capital-acquires-digital-identity-firm-signicat
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

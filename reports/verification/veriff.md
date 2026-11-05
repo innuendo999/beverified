@@ -80,3 +80,20 @@ Filled `capabilities` keys from vendor pages opened 2026-10-30. No existing valu
 - `transaction_monitoring`: not_disclosed (not found on Veriff pages); no vendor page found
 
 - Note: Self-Serve pricing lists PEP and sanctions screening as a per-verification add-on and ongoing monitoring as a separate add-on; Enterprise lists AML Screening with adverse media.
+
+## v3.1 fields 2026-11-05
+
+### Added
+- `pricing.model`: published core, minimum true, trial true (sources 1, 2).
+- `integration`: docs_public yes (32); sdk_web, sdk_ios, sdk_android yes (31); sandbox yes, 15-day self-serve trial (2); no_code yes, Veriff Zapier (33); support_hours not_disclosed (help centre did not render in WebFetch).
+- `coverage`: countries 230, document_types 12,500 (3); non_doc yes, registry checks (34).
+- `track_record.ownership`: stable (5). `incidents`: 2025-12-10, Total Wireless breach notice says an unauthorised party obtained personal data from Veriff systems (35); class actions filed (McLaughlin, Reed) per Top Class Actions, 5 Mar 2026.
+- `capabilities`: liveness yes (6); injection_detection yes, vendor-stated, no injection lab letter (10); reusable_id not_disclosed; data_residency not_disclosed (security page names only AWS backups).
+- Sources 31 to 35 added.
+
+### Still not_disclosed
+- support_hours, reusable_id, data_residency, transaction_monitoring, video_ident.
+
+### Score flag
+- Incident: third-party breach notice (Total Wireless, 9 Jan 2026) attributes a data exposure to Veriff systems; not in the review text yet (verdict, cons, FAQ). Veriff's own statement not found.
+- v3.1 draft: 4.6 -> 4.3 (100% scored; trust 3.5 after the incident deduction).

@@ -56,3 +56,22 @@
 ### Score flag
 
 - None.
+
+## v3.1 fields 2026-11-05
+
+Added (key: status, source):
+- pricing.model: published none, minimum null (unknown), trial false (demo only); source 9
+- capabilities.kyb_registry: yes (Companies House), 17 (new); kyb_ubo: yes, 17; kyb_entity_screening: yes, 17; kyb_documents: yes, 17; kyb_monitoring: yes (ongoing UBO monitoring), 1
+- capabilities.ongoing_monitoring: yes (nightly re-screening), 14 (new)
+- capabilities.list_updates: yes (Dow Jones Watchlist updated daily), 14
+- capabilities.pep_tiers: yes (relatives and close associates), 14
+- capabilities.fuzzy_matching: partial (fuzzy matching stated, thresholds not), 14
+- capabilities.audit_trail: yes, 14
+- capabilities.risk_scoring: yes (customisable risk assessment, rule based workflows), 15 (new)
+- integration.no_code: yes (SMS link for client document checks), 16 (new)
+- integration.support_hours: yes (phone, weekday office hours), 1
+- track_record.ownership: changed_disclosed (Triple Private Equity majority stake, 2024), 3; incidents: none found. The Credas acquisition (completed per BIIA, source 5) is a purchase by SmartSearch, not a change of its owner.
+
+Not disclosed: alert_explanation, batch_screening (a "120 clients onboarded in bulk" caption only), data_residency, docs_public (integrations page links no public API reference), sdk_web, sdk_ios, sdk_android, sandbox.
+
+Rescore: 4.4 -> 4.3 (scored weight 80%; pricing n/d). Score flag: none.

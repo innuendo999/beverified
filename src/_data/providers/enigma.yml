@@ -123,6 +123,57 @@ pricing:
     kind: official
     source: 2
     verified: '2026-11'
+  model:
+    published: core
+    minimum: false
+    trial: true
+    source: 2
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: documentation open without login
+    source: 17
+  sdk_web:
+    status: not_disclosed
+    note: API only in docs, no SDK found
+  sdk_ios:
+    status: not_disclosed
+    note: no mobile SDK found
+  sdk_android:
+    status: not_disclosed
+    note: no mobile SDK found
+  sandbox:
+    status: partial
+    note: Free plan in Console, API from Pro
+    source: 2
+  no_code:
+    status: partial
+    note: Console search and segments, KYB by API
+    source: 2
+  support_hours:
+    status: partial
+    note: support email, SLA on Enterprise only
+    source: 2
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 1
+    note: US only, 52 jurisdictions
+    source: 5
+  document_types:
+    value: null
+    note: no document checks
+  non_doc:
+    status: add_on
+    note: SSN check against IRS records, on request
+    source: 21
+track_record:
+  ownership:
+    status: stable
+    note: independent, venture backed, no sale found
+    source: 11
+  incidents: []
 facts:
 - label: From
   value: $1.50 per KYB match
@@ -231,6 +282,26 @@ capabilities:
     status: 'yes'
     note: 'from $1.50 per KYB match'
     source: 3
+  liveness:
+    status: not_disclosed
+    note: no liveness product found
+  injection_detection:
+    status: not_disclosed
+    note: no liveness product found
+  reusable_id:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  data_residency:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  sanctions_pep:
+    status: add_on
+    note: watchlist add-on, sanctions and PEP lists
+    source: 21
+  adverse_media:
+    status: add_on
+    note: negative news add-on
+    source: 21
 certifications:
 - name: SOC 2 Type 2
   what: Security, availability and confidentiality controls

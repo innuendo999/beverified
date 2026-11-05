@@ -51,3 +51,20 @@ None.
 
 ### Score flag
 - None.
+
+## v3.1 fields 2026-11-05
+
+### Added
+- `pricing.model`: published none, minimum null, trial null (6).
+- `integration`: docs_public yes (15); sdk_ios, sdk_android partial, WebView guide only (15); sandbox partial, sandbox environment, access route not stated (16); no_code yes, Shopify, WooCommerce and eBay apps (17); sdk_web, support_hours not_disclosed.
+- `coverage`: countries null, document_types null; non_doc yes, email, mobile, credit bureau, card and CPF checks (12).
+- `track_record.ownership`: changed_disclosed (18). `incidents`: none found.
+- `capabilities` (missing standard keys): identity_verification yes (12); case_management yes (1). New: liveness, injection_detection, reusable_id, data_residency not_disclosed.
+- Sources 15 to 18 added.
+
+### Still not_disclosed
+- Liveness, injection detection, country count, support hours, data residency.
+
+### Score flag
+- Ownership: Companies House shows Ryan Shaw ceased as person with significant control on 9 Sep 2025 and Gethin James Taylor notified as PSC the same day (18). The about page still names Ryan Shaw as Founder and CEO; no announcement found. Check before the next content pass.
+- v3.1 draft: 4.4 -> 2.8 on 40% of weight (fraud defense, pricing, coverage n/d).

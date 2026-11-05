@@ -52,6 +52,11 @@ pricing:
     note: Volume pricing quoted via sales
     extra: Request pricing
   legacy_verified_note: null
+  model:
+    published: core
+    minimum: false
+    trial: true
+    source: 1
   verified: '2026-11'
   index:
     product: 'KYC, Free Forever and Essentials'
@@ -234,6 +239,76 @@ capabilities:
     status: 'no'
     note: quote only, KYB not priced separately
     source: 1
+  deployment:
+    status: cloud_and_on_prem
+    note: SaaS, on premises or private cloud
+    source: 3
+  liveness:
+    status: 'yes'
+    note: face verification with liveness
+    source: 3
+  injection_detection:
+    status: 'yes'
+    note: vendor lists deepfakes and injected video, no lab letter
+    source: 3
+  reusable_id:
+    status: 'yes'
+    note: Fast ID reusable identity
+    source: 3
+  data_residency:
+    status: 'yes'
+    note: regional hosting in EU, MENA, US, APAC
+    source: 3
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: developer docs open without login
+    source: 22
+  sdk_web:
+    status: 'yes'
+    note: shuftipro-web-sdk npm package
+    source: 23
+  sdk_ios:
+    status: 'yes'
+    note: native iOS SDK
+    source: 22
+  sdk_android:
+    status: 'yes'
+    note: native Android SDK
+    source: 22
+  sandbox:
+    status: 'yes'
+    note: self-serve signup, Free Forever plan
+    source: 1
+  no_code:
+    status: 'yes'
+    note: No-Code Journey Builder, verification links
+    source: 22
+  support_hours:
+    status: 'yes'
+    note: 24/7 support, response times per plan
+    source: 1
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 240
+    note: '240+ countries and territories'
+    source: 3
+  document_types:
+    value: 10000
+    note: '10,000+ document types'
+    source: 3
+  non_doc:
+    status: 'yes'
+    note: e-IDV Pro checks government data sources
+    source: 22
+track_record:
+  ownership:
+    status: stable
+    note: UK company since 2017, no sale found
+    source: 10
+  incidents: []
 certifications:
 - name: iBeta ISO/IEC 30107-3 PAD Level 3
   what: Liveness, presentation attack detection
@@ -366,6 +441,14 @@ sources:
   publisher: Shufti
   url: https://shuftipro.com/aml-screening/
   accessed: '2026-10'
+- title: Shufti developer documentation
+  publisher: Shufti
+  url: https://developers.shuftipro.com/
+  accessed: '2026-11'
+- title: shuftipro-web-sdk (npm package)
+  publisher: npm (maintainer Shufti)
+  url: https://www.npmjs.com/package/shuftipro-web-sdk
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

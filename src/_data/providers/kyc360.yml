@@ -115,6 +115,11 @@ pricing:
     kind: official
     source: 8
     verified: '2026-11'
+  model:
+    published: partial
+    minimum: true
+    trial: null
+    source: 3
 facts:
 - label: From
   value: £105/mo (21 search credits)
@@ -221,6 +226,69 @@ capabilities:
     note: ad-hoc screening published; platform quoted
     source: 3
   checked: '2026-10'
+  ongoing_monitoring:
+    status: 'yes'
+    note: continuous batch screening of customer names
+    source: 9
+  list_updates:
+    status: not_disclosed
+    note: data vendors named, no list update frequency
+  pep_tiers:
+    status: not_disclosed
+    note: PEP data, no tiers or RCA described
+  fuzzy_matching:
+    status: partial
+    note: name variants across languages, risk-based search settings
+    source: 9
+  alert_explanation:
+    status: not_disclosed
+    note: red flag results, no match reason described
+  audit_trail:
+    status: 'yes'
+    note: all activity captured for audit
+    source: 9
+  risk_scoring:
+    status: partial
+    note: risk-based approach, analyst records risk level
+    source: 9
+  batch_screening:
+    status: 'yes'
+    note: overnight batch screening at volume
+    source: 9
+  data_residency:
+    status: partial
+    note: EU data residency, on-prem option
+    source: 11
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: partial
+    note: APIX portal public, key needs a subscription
+    source: 14
+  sdk_web:
+    status: not_disclosed
+    note: no SDKs listed
+  sdk_ios:
+    status: not_disclosed
+    note: no SDKs listed
+  sdk_android:
+    status: not_disclosed
+    note: no SDKs listed
+  sandbox:
+    status: not_disclosed
+    note: credits bought online, no free trial stated
+  no_code:
+    status: not_disclosed
+    note: web screening app, no workflow builder described
+  support_hours:
+    status: not_disclosed
+    note: no support hours published
+track_record:
+  ownership:
+    status: changed_disclosed
+    note: acquired by Experian, announced Oct 2025
+    source: 4
+  incidents: []
 certifications:
 - name: ISO/IEC 27001
   what: Information security
@@ -288,6 +356,10 @@ sources:
   publisher: KYC360
   url: https://kyc360.com/knowledge-hub/resources/news-what-experians-acquisition-of-kyc360-means-for-you
   accessed: '2026-10'
+- title: KYC360 APIX
+  publisher: KYC360
+  url: https://apix.kyc360.com
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

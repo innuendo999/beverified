@@ -113,7 +113,7 @@ function trust(d) {
   if (certs(d).some((c) => c.status === "confirmed" && /DIATF|Digital Verification Serv|29003|eIDAS|ETSI|Kantara|PVID/i.test(c.name + " " + (c.what || "")))) { pts += 1.5; why.push("trust framework confirmed"); }
   const dep = cap(d, "deployment")?.status;
   if (yes(cap(d, "data_residency")) || ["on_prem", "cloud_and_on_prem"].includes(dep)) { pts += 0.5; why.push("data residency or on-premises"); }
-  const founded = +((d.facts || []).find((f) => f.label === "Founded")?.value || NaN);
+  const founded = +(String((d.facts || []).find((f) => f.label === "Founded")?.value || "").match(/\b(19|20)\d{2}\b/)?.[0] || NaN);
   const own = d.track_record?.ownership?.status;
   if (founded && TODAY.getFullYear() - founded >= 5 && ["stable", "changed_disclosed"].includes(own)) { pts += 1; why.push(`operating since ${founded}`); }
   const recent = (d.track_record?.incidents || []).filter((x) => (TODAY - new Date(x.date)) / 864e5 <= 730);

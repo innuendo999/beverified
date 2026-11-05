@@ -51,6 +51,11 @@ pricing:
     extra: Drops to $0.55 per verification at volume, per iDenfy
   legacy_verified_note: null
   verified: '2026-11'
+  model:
+    published: core
+    minimum: true
+    trial: true
+    source: 9
   index:
     product: 'ID verification, Basic and Premium'
     price:
@@ -258,6 +263,70 @@ capabilities:
     status: 'no'
     note: quote only
     source: 8
+  liveness:
+    status: 'yes'
+    note: passive and active 3D face liveness
+    source: 23
+  injection_detection:
+    status: 'yes'
+    note: optional injection and virtual camera check, no lab letter found
+    source: 23
+  reusable_id:
+    status: not_disclosed
+    note: face authentication for returning users only, no reusable ID product found
+  data_residency:
+    status: partial
+    note: EU by default, specific jurisdictions on Enterprise
+    source: 26
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: documentation.idenfy.com readable without login
+    source: 24
+  sdk_web:
+    status: not_disclosed
+    note: iFrame and redirect flow, no web SDK listed
+  sdk_ios:
+    status: 'yes'
+    note: native iOS SDK
+    source: 24
+  sdk_android:
+    status: 'yes'
+    note: native Android SDK
+    source: 24
+  sandbox:
+    status: 'yes'
+    note: free trial with free checks, sandbox API keys
+    source: 9
+  no_code:
+    status: 'yes'
+    note: Magic Link hosted verification and plugins
+    source: 25
+  support_hours:
+    status: partial
+    note: SLA on Premium plan, no support hours published
+    source: 8
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 200
+    note: countries and territories
+    source: 3
+  document_types:
+    value: 3500
+    note: active government issued documents, homepage figure
+    source: 3
+  non_doc:
+    status: 'yes'
+    note: Soft KYC database checks in a few countries
+    source: 27
+track_record:
+  ownership:
+    status: stable
+    note: private company UAB iDenfy, no change of control found
+    source: 2
+  incidents: []
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security (cert. ISMS-1851/A, CERT International, valid to Jun 2029)
@@ -379,6 +448,30 @@ sources:
   publisher: iDenfy
   url: https://idenfy.com/transaction-monitoring-software/
   accessed: '2026-10'
+- title: Liveness checks (iDenfy documentation)
+  publisher: iDenfy
+  url: https://documentation.idenfy.com/guides/dashboard/kyc/liveness-checks.md
+  accessed: '2026-11'
+- title: SDKs overview (iDenfy documentation)
+  publisher: iDenfy
+  url: https://documentation.idenfy.com/sdks/overview.md
+  accessed: '2026-11'
+- title: Magic Link (iDenfy documentation)
+  publisher: iDenfy
+  url: https://documentation.idenfy.com/integrations/magic-link.md
+  accessed: '2026-11'
+- title: Data residency (iDenfy documentation)
+  publisher: iDenfy
+  url: https://documentation.idenfy.com/guides/compliance/data-residency.md
+  accessed: '2026-11'
+- title: Soft KYC (iDenfy documentation)
+  publisher: iDenfy
+  url: https://documentation.idenfy.com/kyc/soft-kyc.md
+  accessed: '2026-11'
+- title: Supported documents (iDenfy documentation)
+  publisher: iDenfy
+  url: https://documentation.idenfy.com/resources/supported-documents.md
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

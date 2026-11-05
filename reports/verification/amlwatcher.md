@@ -164,3 +164,17 @@ None. `src/_data/rankings.yml` has no `slug: amlwatcher` entry and no "AML Watch
 ### Score flag
 
 None.
+
+## v3.1 fields 2026-11-05
+
+New sources: 41 Search API category page (doc.amlwatcher.com), 42 PEP screening page, 43 Batch search page.
+
+Added (key: status, source):
+- pricing.model: published none, minimum true (100 monitored entities, paid plan), trial true (first five searches free) (2)
+- integration: docs_public yes (17); sandbox yes, free trial searches (2); no_code yes, dashboard and CSV upload (43); support_hours yes, 24/7 phone, text and email (8)
+- capabilities: kyb_entity_screening yes (41); ongoing_monitoring yes (41); list_updates yes (9); pep_tiers yes, four levels with RCA (42); fuzzy_matching yes, phonetic matching and Match Score filter (41); alert_explanation add_on, TruRisk (12); audit_trail yes (37); risk_scoring yes, Risk Score Engine (41); batch_screening yes (43); data_residency yes, in-country hosting (16)
+- track_record.ownership: stable, Risk Watcher LLC in the Programmers Force group (4); incidents: none found
+
+Stayed not_disclosed: sdk_web, sdk_ios, sdk_android (no SDK documented).
+
+Rescore v3.1: 4.1 -> 4.1 (100%). Pricing scores 2 because prices appear only on G2 and Capterra. Trust gets no "5+ years" point because Founded is Not publicly disclosed. Score flag: none.

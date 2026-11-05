@@ -43,6 +43,11 @@ pricing:
     extra: Contact sales for a quote
   legacy_verified_note: null
   verified: '2026-10'
+  model:
+    published: none
+    minimum: true
+    trial: false
+    source: 1
   items:
   - label: Published pricing
     value: Not published; quote on request
@@ -161,6 +166,61 @@ capabilities:
     status: 'no'
     note: Quote on request
     source: 1
+  ongoing_monitoring:
+    status: partial
+    note: ongoing party screening; list change trigger not stated
+    source: 9
+  list_updates:
+    status: not_disclosed
+    note: lists and update frequency not named
+  pep_tiers:
+    status: not_disclosed
+  fuzzy_matching:
+    status: 'yes'
+    note: fuzzy matching, configurable scoring thresholds
+    source: 9
+  alert_explanation:
+    status: 'yes'
+    note: explanations of AI insights in ActOne
+    source: 17
+  audit_trail:
+    status: not_disclosed
+  risk_scoring:
+    status: 'yes'
+    note: entity risk score and predictive alert scoring
+    source: 10
+  batch_screening:
+    status: 'yes'
+    note: real-time, batch or on-demand screening
+    source: 9
+  data_residency:
+    status: not_disclosed
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: not_disclosed
+    note: no public API reference found
+  sdk_web:
+    status: not_disclosed
+  sdk_ios:
+    status: not_disclosed
+  sdk_android:
+    status: not_disclosed
+  sandbox:
+    status: not_disclosed
+  no_code:
+    status: not_disclosed
+    note: X-Sight Studio is a DIY analytics environment, not stated as no code
+  support_hours:
+    status: 'yes'
+    note: 24x7 hotline, email and support portal
+    source: 25
+track_record:
+  ownership:
+    status: pending_sale
+    note: NICE sale process; Brookfield talks reported, no deal announced
+    source: 6
+  incidents: []
 certifications:
 - name: ISO/IEC 27001 (Actimize Insights Network)
   what: Information security, one product
@@ -281,6 +341,10 @@ sources:
   publisher: Capterra
   url: https://www.capterra.ie/software/959/actimize
   accessed: '2026-10'
+- title: Support and maintenance
+  publisher: NICE Actimize
+  url: https://niceactimize.com/services/support-maintenance
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

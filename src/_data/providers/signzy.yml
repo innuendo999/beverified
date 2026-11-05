@@ -43,6 +43,11 @@ pricing:
     note: Pay-as-you-go, modular by API
     extra: Contact sales for a quote
   legacy_verified_note: null
+  model:
+    published: none
+    minimum: null
+    trial: null
+    source: 9
   verified: '2026-10'
   items:
   - label: Pricing model
@@ -178,6 +183,68 @@ capabilities:
     status: 'no'
     note: quote only
     source: 17
+  liveness:
+    status: 'yes'
+    note: liveness checks with face match
+    source: 18
+  injection_detection:
+    status: partial
+    note: blog says stream integrity checks run first, no lab letter
+    source: 22
+  reusable_id:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  data_residency:
+    status: not_disclosed
+    note: nothing found on vendor pages
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: API docs open without login
+    source: 21
+  sdk_web:
+    status: not_disclosed
+    note: no identity SDK found in docs
+  sdk_ios:
+    status: not_disclosed
+    note: no identity SDK found in docs
+  sdk_android:
+    status: not_disclosed
+    note: no identity SDK found in docs
+  sandbox:
+    status: not_disclosed
+    note: no self-serve sandbox found
+  no_code:
+    status: 'yes'
+    note: no-code GO platform
+    source: 21
+  support_hours:
+    status: not_disclosed
+    note: contact page only, no hours found
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 150
+    note: '150+ countries for ID checks'
+    source: 18
+  document_types:
+    value: 200
+    note: '200+ ID types'
+    source: 18
+  non_doc:
+    status: 'yes'
+    note: database verification listed
+    source: 18
+track_record:
+  ownership:
+    status: stable
+    note: independent, venture funded, no sale found
+    source: 6
+  incidents:
+  - date: '2024-12-03'
+    what: 'security incident reported, Signzy said it was investigating'
+    source: 23
 certifications:
 - name: ISO/IEC 27001
   what: Information security
@@ -286,6 +353,18 @@ sources:
   publisher: 'Signzy'
   url: https://www.signzy.com/our-innovations/transaction-monitoring
   accessed: '2026-10'
+- title: Signzy API documentation
+  publisher: Signzy
+  url: https://docs.signzy.com/
+  accessed: '2026-11'
+- title: 'Injection Attack Detection: The Certificate You Have Covers the Wrong Attack (11 Aug 2026)'
+  publisher: Signzy
+  url: https://www.signzy.com/blogs/injection-attack-detection
+  accessed: '2026-11'
+- title: 'Fintech SaaS startup Signzy to launch probe after alleged security incident (3 Dec 2024)'
+  publisher: Inc42
+  url: https://inc42.com/buzz/fintech-saas-startup-signzy-suffers-cyberattack-report
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

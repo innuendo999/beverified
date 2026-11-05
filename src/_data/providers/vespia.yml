@@ -48,6 +48,11 @@ pricing:
     extra: New sign-ups now go through Veriff
   legacy_verified_note: null
   verified: '2026-11'
+  model:
+    published: core
+    minimum: null
+    trial: null
+    source: 2
   index:
     product: 'AML and KYB'
     price:
@@ -178,6 +183,85 @@ capabilities:
     status: partial
     note: 'vespia.io from €35 per report; Veriff quotes'
     source: 2
+  identity_verification:
+    status: 'yes'
+    note: KYC with document checks, per vespia.io
+    source: 2
+  sanctions_pep:
+    status: 'yes'
+    note: daily PEP and sanctions monitoring, per vespia.io
+    source: 2
+  adverse_media:
+    status: 'yes'
+    note: daily adverse media monitoring, per vespia.io
+    source: 2
+  transaction_monitoring:
+    status: 'yes'
+    note: AI transaction monitoring, per vespia.io
+    source: 2
+  case_management:
+    status: 'yes'
+    note: listed as core feature, per vespia.io
+    source: 2
+  liveness:
+    status: 'yes'
+    note: task-based liveness on camera, per vespia.io
+    source: 2
+  injection_detection:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  reusable_id:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  data_residency:
+    status: not_disclosed
+    note: hosting region not stated
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: GraphQL API docs readable without login
+    source: 8
+  sdk_web:
+    status: 'yes'
+    note: Web SDK with onboarding templates
+    source: 2
+  sdk_ios:
+    status: not_disclosed
+    note: no iOS SDK named
+  sdk_android:
+    status: not_disclosed
+    note: no Android SDK named
+  sandbox:
+    status: 'yes'
+    note: development environment with its own sign-up
+    source: 8
+  no_code:
+    status: 'yes'
+    note: onboarding link generated in the dashboard
+    source: 8
+  support_hours:
+    status: not_disclosed
+    note: support email only, no hours
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 190
+    note: countries and territories for documents, per vespia.io
+    source: 2
+  document_types:
+    value: 7000
+    note: document types, per vespia.io
+    source: 2
+  non_doc:
+    status: not_disclosed
+    note: no database checks for individuals found
+track_record:
+  ownership:
+    status: changed_disclosed
+    note: acquisition by Veriff announced Feb 2026, terms not disclosed
+    source: 1
+  incidents: []
 certifications: []
 user_ratings:
 - platform: G2
@@ -222,6 +306,10 @@ sources:
   publisher: Capterra
   url: https://www.capterra.com/p/10004660/Vespia/
   accessed: '2026-10'
+- title: 'Developers (API documentation)'
+  publisher: Vespia
+  url: https://vespia.io/developers
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

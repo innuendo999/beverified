@@ -50,6 +50,11 @@ pricing:
     extra: Quoted after a demo
   legacy_verified_note: null
   verified: '2026-10'
+  model:
+    published: partial
+    minimum: true
+    trial: false
+    source: 22
   index_exclude: 'Its only published figure is the Sanction Scanner Starter plan, listed once under Sanction Scanner'
   items:
   - label: Sanction Scanner Starter
@@ -232,6 +237,74 @@ capabilities:
     status: 'no'
     note: quote only
     source: 8
+  ongoing_monitoring:
+    status: 'yes'
+    note: risk based rescreening, alert on profile change
+    source: 5
+  list_updates:
+    status: 'yes'
+    note: OFAC, EU, UN, HMT and more; stated update cycle
+    source: 5
+  pep_tiers:
+    status: 'yes'
+    note: four PEP tiers, family and associate links
+    source: 5
+  fuzzy_matching:
+    status: 'yes'
+    note: fuzzy and phonetic, threshold per segment
+    source: 5
+  alert_explanation:
+    status: 'yes'
+    note: matched field, list, source text and threshold shown
+    source: 5
+  audit_trail:
+    status: 'yes'
+    note: versioned records and agent run log
+    source: 12
+  risk_scoring:
+    status: 'yes'
+    note: configurable customer risk model
+    source: 9
+  batch_screening:
+    status: 'yes'
+    note: asynchronous bulk screening with batch report
+    source: 5
+  data_residency:
+    status: 'yes'
+    note: EU, UK or Türkiye region
+    source: 15
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: Sanction Scanner screening API docs only
+    source: 24
+  sdk_web:
+    status: not_disclosed
+    note: no SDK documented
+  sdk_ios:
+    status: not_disclosed
+    note: no SDK documented
+  sdk_android:
+    status: not_disclosed
+    note: no SDK documented
+  sandbox:
+    status: 'yes'
+    note: sandbox keys handed out right away
+    source: 5
+  no_code:
+    status: 'yes'
+    note: trigger, condition, action workflow builder
+    source: 12
+  support_hours:
+    status: not_disclosed
+    note: office phones listed, no hours or SLA
+track_record:
+  ownership:
+    status: stable
+    note: founder owned; renamed from Sanction Scanner
+    source: 26
+  incidents: []
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security

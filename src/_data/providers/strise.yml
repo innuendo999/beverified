@@ -49,6 +49,11 @@ pricing:
     kind: official
     source: 1
     verified: '2026-10'
+  model:
+    published: none
+    minimum: null
+    trial: false
+    source: 1
 facts:
 - label: From
   value: Not publicly disclosed
@@ -182,6 +187,71 @@ capabilities:
     status: 'no'
     note: quote only
     source: 12
+  ongoing_monitoring:
+    status: 'yes'
+    note: re-screening when lists or media change
+    source: 6
+  list_updates:
+    status: 'yes'
+    note: Dow Jones incl. OFAC, EU, UN, HMT; real time updates
+    source: 6
+  pep_tiers:
+    status: 'yes'
+    note: family and close associates, configurable PEP scope
+    source: 6
+  fuzzy_matching:
+    status: 'yes'
+    note: AI match confidence, configurable review thresholds
+    source: 6
+  alert_explanation:
+    status: 'yes'
+    note: matched record and trigger reason per alert
+    source: 6
+  audit_trail:
+    status: 'yes'
+    note: decisions logged with source, time, rationale
+    source: 6
+  risk_scoring:
+    status: 'yes'
+    note: risk weights and escalation rules
+    source: 6
+  batch_screening:
+    status: not_disclosed
+    note: portfolio re-screening, no bulk upload stated
+  data_residency:
+    status: not_disclosed
+    note: hosting region choice not stated
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: GraphQL schema reference open without login
+    source: 17
+  sdk_web:
+    status: not_disclosed
+    note: no SDK listed
+  sdk_ios:
+    status: not_disclosed
+    note: no SDK listed
+  sdk_android:
+    status: not_disclosed
+    note: no SDK listed
+  sandbox:
+    status: not_disclosed
+    note: API access through Strise team
+  no_code:
+    status: 'yes'
+    note: hosted customer forms sent from the UI
+    source: 16
+  support_hours:
+    status: not_disclosed
+    note: support email, no hours stated
+track_record:
+  ownership:
+    status: stable
+    note: independent, venture funded
+    source: 10
+  incidents: []
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security
@@ -257,6 +327,18 @@ sources:
   publisher: Strise
   url: https://strise.ai/product/ongoing-due-diligence
   accessed: '2026-10'
+- title: Strise Connect API
+  publisher: Strise
+  url: https://docs.strise.ai/api/strise-connect-api/
+  accessed: '2026-11'
+- title: Customer facing forms
+  publisher: Strise
+  url: https://docs.strise.ai/features/customer-facing-forms
+  accessed: '2026-11'
+- title: Strise Connect API reference (clientAccessTokenGenerate)
+  publisher: Strise
+  url: https://graphql.strise.ai/connect/docs/llms.mdx/mutations/client-access-token-generate
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

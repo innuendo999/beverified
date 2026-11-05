@@ -49,6 +49,59 @@ pricing:
     kind: official
     source: 2
     verified: '2026-10'
+  model:
+    published: none
+    minimum: false
+    trial: false
+    source: 2
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: developer docs open without login
+    source: 13
+  sdk_web:
+    status: 'yes'
+    note: Web SDK, hosted on private subdomain
+    source: 15
+  sdk_ios:
+    status: 'yes'
+    note: Mobile SDK for iOS
+    source: 16
+  sdk_android:
+    status: 'yes'
+    note: Mobile SDK for Android
+    source: 16
+  sandbox:
+    status: not_disclosed
+    note: sandbox exists, credentials via delivery manager
+  no_code:
+    status: partial
+    note: Web SDK flow by QR or SMS link
+    source: 15
+  support_hours:
+    status: not_disclosed
+    note: status page only, no hours
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 185
+    note: 185 countries
+    source: 14
+  document_types:
+    value: 3500
+    note: 3500+ document types
+    source: 14
+  non_doc:
+    status: 'yes'
+    note: data checks against government and financial records
+    source: 18
+track_record:
+  ownership:
+    status: changed_disclosed
+    note: merger with Veridas closed, Finch Capital backed
+    source: 19
+  incidents: []
 facts:
 - label: From
   value: Custom quote
@@ -174,6 +227,28 @@ capabilities:
     status: 'no'
     note: quote only
     source: 2
+  liveness:
+    status: 'yes'
+    note: selfie and random head movement liveness
+    source: 20
+  injection_detection:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  reusable_id:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  data_residency:
+    status: 'no'
+    note: all production data on AWS in Ireland
+    source: 17
+  case_management:
+    status: 'yes'
+    note: Case Review Portal
+    source: 2
+  deployment:
+    status: cloud
+    note: AWS in Ireland
+    source: 17
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security (EY CertifyPoint, cert. 2021-039)
@@ -252,6 +327,30 @@ sources:
   publisher: Fourthline
   url: https://www.fourthline.com/document-and-biometric-verification
   accessed: '2026-10'
+- title: Web SDK (Fourthline documentation)
+  publisher: Fourthline
+  url: https://docs.fourthline.com/docs/web-sdk
+  accessed: '2026-11'
+- title: Mobile SDK (Fourthline documentation)
+  publisher: Fourthline
+  url: https://docs.fourthline.com/docs/mobile-sdk
+  accessed: '2026-11'
+- title: Security and compliance (Fourthline documentation)
+  publisher: Fourthline
+  url: https://docs.fourthline.com/docs/security-compliance
+  accessed: '2026-11'
+- title: Data Verification (Fourthline documentation)
+  publisher: Fourthline
+  url: https://docs.fourthline.com/docs/data-verification
+  accessed: '2026-11'
+- title: Fourthline and Veridas complete merger (3 Nov 2026)
+  publisher: Fourthline
+  url: https://www.fourthline.com/news/fourthline-and-veridas-complete-merger
+  accessed: '2026-11'
+- title: Biometrics (Fourthline documentation)
+  publisher: Fourthline
+  url: https://docs.fourthline.com/docs/biometrics
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

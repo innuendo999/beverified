@@ -77,6 +77,11 @@ pricing:
     kind: official
     source: 2
     verified: '2026-10'
+  model:
+    published: none
+    minimum: true
+    trial: false
+    source: 2
 facts:
 - label: From
   value: Custom quote
@@ -202,6 +207,70 @@ capabilities:
     status: 'no'
     note: quote only
     source: 2
+  ongoing_monitoring:
+    status: 'yes'
+    note: continuous monitoring with risk status alerts
+    source: 9
+  list_updates:
+    status: partial
+    note: daily updates stated, lists not named
+    source: 9
+  pep_tiers:
+    status: not_disclosed
+    note: PEP screening, no tiers or RCA described
+  fuzzy_matching:
+    status: partial
+    note: fuzzy matching and aliases, thresholds not described
+    source: 9
+  alert_explanation:
+    status: not_disclosed
+    note: not described
+  audit_trail:
+    status: 'yes'
+    note: tamper-evident log of changes and decisions
+    source: 7
+  risk_scoring:
+    status: 'yes'
+    note: jurisdiction-based risk scores in case management
+    source: 7
+  batch_screening:
+    status: not_disclosed
+    note: not described
+  data_residency:
+    status: add_on
+    note: region-specific data residency, Enterprise tier
+    source: 2
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: not_disclosed
+    note: API docs page is script-rendered, could not be read
+  sdk_web:
+    status: not_disclosed
+    note: SDKs mentioned, platforms not named
+  sdk_ios:
+    status: not_disclosed
+    note: SDKs mentioned, platforms not named
+  sdk_android:
+    status: not_disclosed
+    note: SDKs mentioned, platforms not named
+  sandbox:
+    status: 'no'
+    note: no self-serve trial; demo and pilot
+    source: 2
+  no_code:
+    status: 'yes'
+    note: OpsFlow no-code workflow builder
+    source: 5
+  support_hours:
+    status: not_disclosed
+    note: no support hours published
+track_record:
+  ownership:
+    status: stable
+    note: founder-led private company, no change found
+    source: 3
+  incidents: []
 certifications:
 - name: ISO/IEC 27001
   what: Information security
@@ -249,6 +318,14 @@ sources:
   publisher: KYC Hub
   url: https://www.kychub.com/global-kyb-solution
   accessed: '2026-10'
+- title: AML screening and ongoing monitoring
+  publisher: KYC Hub
+  url: https://www.kychub.com/aml-screening
+  accessed: '2026-11'
+- title: Verification API portal
+  publisher: KYC Hub
+  url: https://kychub.com/verification-api-portal
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

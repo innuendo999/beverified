@@ -75,3 +75,13 @@
 - adverse_media: yes. https://docs.fourthline.com/docs/aml-overview (source 13)
 - transaction_monitoring: not_disclosed. AML docs and the anti-financial crime page describe daily client screening, not transaction monitoring
 - No existing values changed (the four keys were empty). capabilities.checked stays 2026-10.
+
+## v3.1 fields 2026-11-05
+
+- pricing.model: published none, minimum false, trial false, source 2.
+- integration: docs_public yes (13); sdk_web yes (15); sdk_ios yes, sdk_android yes (16); no_code partial (Web SDK flow by QR or SMS link, 15); sandbox not_disclosed (sandbox exists, credentials via delivery manager); support_hours not_disclosed.
+- coverage: countries 185, document_types 3500 (14); non_doc yes (data verification against government and financial records, 18).
+- track_record: ownership changed_disclosed (merger with Veridas closed 3 Nov 2026, 19); incidents none found.
+- capabilities: liveness yes (20); data_residency no (all production data on AWS in Ireland, 17); deployment cloud (17); case_management yes (Case Review Portal in homepage navigation, 2). injection_detection, reusable_id not_disclosed.
+- New sources 15 to 20.
+- Score flag: OWNERSHIP CHANGE. The Fourthline and Veridas merger closed on 3 Nov 2026 (source 19). Paul Stoddart is CEO of the combined company, Eduardo Azanza President; no new brand named; both platforms continue. The Ownership fact ("closing pending") and verification note are now out of date and need an editor update (not changed here).

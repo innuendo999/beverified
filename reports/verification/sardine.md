@@ -49,3 +49,26 @@
 - transaction_monitoring: yes (AML transaction monitoring rules), source 13: https://docs.sardine.ai/guides/public/risk/transaction-monitoring/transaction-monitoring
 
 Identity fraud page says Sardine triggers document verification or selfie liveness checks as step-up; the docs (source 11) say document verification works "through integrating with 3rd party services" (partner not named), so add_on. Sanctions, PEP and adverse media with ongoing monitoring confirmed on the sanctions page and docs.
+
+## v3.1 fields 2026-11-05
+
+Added (key: status, source):
+- pricing.model: published none, minimum null (unknown), trial false; source 2
+- capabilities.case_management: yes, 3
+- capabilities.kyb_registry: partial (US state registries via Middesk), 15 (new)
+- capabilities.kyb_entity_screening: partial (US entity sanctions lists via Middesk), 15
+- capabilities.ongoing_monitoring: yes, 12
+- capabilities.list_updates: yes (OFAC, EU, UN updated several times a day), 12
+- capabilities.fuzzy_matching: yes, 12
+- capabilities.alert_explanation: yes, 12
+- capabilities.audit_trail: yes, 12
+- capabilities.risk_scoring: yes, 12
+- integration.docs_public: no (getting started page says API docs come after contact or demo), 14 (new)
+- integration.sandbox: no (sandbox through a Sardine representative), 14
+- integration.no_code: yes (rules built without engineering support), 3
+- track_record.ownership: stable, 6; incidents: none found (search 2026-11-05)
+- New sources: 14 Getting Started With Risk (docs), 15 Business Verification KYB (docs)
+
+Not disclosed: pep_tiers, batch_screening (sanctions page says "no batch jobs", meaning real time, not a bulk upload statement), data_residency, sdk_web, sdk_ios, sdk_android (device page says "a single, lightweight SDK" without platforms; GitHub org shows no public SDK repo), support_hours (contact page lists no channels or hours). security.sardine.ai trust centre is script-rendered and was not read.
+
+Rescore: 4.5 -> 4.2 (scored weight 80%; pricing n/d). Score flag: none.

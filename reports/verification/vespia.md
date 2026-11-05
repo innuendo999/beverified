@@ -69,3 +69,20 @@ Yes. Vespia was acquired and its standalone sales path is gone: pricing and sign
 ### Ranking cards
 
 - No entry with `slug: vespia` in `src/_data/rankings.yml`; nothing to correct.
+
+## v3.1 fields 2026-11-05
+
+### Added
+- `pricing.model`: published core (KYB report from €35), minimum null (Starter billing period not stated), trial null (7-day trial on vespia.io, but the button goes to Veriff's limited access program and Capterra says no trial) (2).
+- `integration`: docs_public yes (8); sdk_web yes, Web SDK (2); sandbox yes, development environment with its own sign-up (8); no_code yes, dashboard onboarding link (8); sdk_ios, sdk_android, support_hours not_disclosed.
+- `coverage`: countries 190, document_types 7,000, per vespia.io (2); non_doc not_disclosed.
+- `track_record.ownership`: changed_disclosed, Veriff acquisition (1). `incidents`: none found for Vespia.
+- `capabilities` (missing standard keys, all per vespia.io, source 2): identity_verification, sanctions_pep, adverse_media, transaction_monitoring, case_management yes. New: liveness yes (2); injection_detection, reusable_id, data_residency not_disclosed.
+- Source 8 added.
+
+### Still not_disclosed
+- iOS and Android SDKs, support hours, non-document checks, kyb_monitoring, kyb_documents.
+
+### Score flag
+- Product absorbed into Veriff (acquisition Feb 2026; sign-up and pricing route to Veriff). vespia.io feature and pricing claims may be stale; v3.1 breadth and pricing rest on them.
+- v3.1 draft: 4.4 -> 3.5 (100% scored).

@@ -50,3 +50,18 @@
 
 ### Score flag
 - None. The company rebranded but the product continues under its name with unchanged pricing, and ISO certificates are now confirmed. Editor note: `capabilities.deployment` ("Azure hosted, EU data residency") is now out of date against the Trust Center (EU, UK, Türkiye; host not named). Capabilities were not edited in this pass.
+
+## v3.1 fields 2026-11-05
+
+Rescore (not applied): 4.3 -> 4.1, all criteria scored.
+
+Added:
+- pricing.model: published core, minimum true (Starter plan fee), trial false (source 1)
+- capabilities.ongoing_monitoring: yes (17); list_updates: yes, named lists every 15 minutes (17); pep_tiers: yes, PEP and RCA (1); fuzzy_matching: yes (17); alert_explanation: partial, match details in PDF report (3); audit_trail: yes (17); risk_scoring: yes (17); batch_screening: yes (17); data_residency: yes, EU, UK or Türkiye (12)
+- integration.no_code: yes, dashboards (3)
+- track_record.ownership: stable, rebrand to Complead only (10); incidents: none found
+- New source 17 (AML screening and monitoring)
+
+Not disclosed: docs_public (developer.sanctionscanner.com and api.sanctionscanner.com/docs did not open for automated reading; check in a browser), SDKs (listed as "SDKs and libraries", platforms not named), sandbox (no free trial), support_hours (uptime targets only).
+
+Score flags: none. KYB not added (no vendor page opened today).

@@ -64,3 +64,20 @@
 - transaction_monitoring: yes (AML Transaction Monitoring product), source 20: https://www.signzy.com/our-innovations/transaction-monitoring
 
 All four are named Signzy products on signzy.com; no data partner named. Transaction monitoring page describes rule-based real-time monitoring (vendor claim).
+
+## v3.1 fields 2026-11-05
+
+Added (key: status, source):
+- `pricing.model`: published none, minimum null, trial null (not stated); source 9
+- `capabilities.liveness`: yes; source 18
+- `capabilities.injection_detection`: partial (blog of 11 Aug 2026 says device and stream integrity checks run before biometric analysis; no product page or lab letter); source 22
+- `integration.docs_public`: yes; source 21. `no_code`: yes (no-code GO platform); source 21.
+- `coverage.countries`: 150 (150+ countries for ID checks; the same page also shows a "180+" stat without context); `document_types`: 200; `non_doc`: yes (database verification); source 18.
+- `track_record.ownership`: stable; source 6
+- `track_record.incidents`: 2024-12-03, security incident reported (TechCrunch, Inc42); Signzy said it was investigating, CERT-In aware, PayU told no data compromised; source 23. No final outcome found.
+
+Not disclosed: `reusable_id`, `data_residency`, `integration.sdk_web`, `sdk_ios`, `sdk_android` (only an eSign SDK found in docs), `sandbox`, `support_hours`.
+
+Rescore (v3.1 draft): 4.4 -> 2.8, scored weight 80% (pricing n/d).
+
+Score flag: security incident reported Dec 2024 (inside the 24-month window, -1 trust).

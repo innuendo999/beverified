@@ -43,6 +43,11 @@ pricing:
     extra: Other modules quoted by country, module and volume
   legacy_verified_note: null
   verified: '2026-10'
+  model:
+    published: none
+    minimum: null
+    trial: null
+    source: 3
   items:
   - label: List price on IDMERIT's site
     value: Not published; quoted by country, module and volume
@@ -154,6 +159,73 @@ capabilities:
     status: 'no'
     note: quoted by country, module, volume
     source: 3
+  liveness:
+    status: 'yes'
+    note: selfie liveness and face match in IDMscan
+    source: 8
+  injection_detection:
+    status: not_disclosed
+    note: deepfake recognition claimed, injection detection not described
+  reusable_id:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  data_residency:
+    status: not_disclosed
+    note: hosted on AWS, region choice not stated
+  kyb_ubo:
+    status: 'yes'
+    note: IDMkyb returns beneficial owners
+    source: 12
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: partial
+    note: portal guide public, API list after self registration
+    source: 10
+  sdk_web:
+    status: not_disclosed
+    note: web app mentioned, no web SDK described
+  sdk_ios:
+    status: 'yes'
+    note: IDMscan mobile SDK for iOS
+    source: 1
+  sdk_android:
+    status: 'yes'
+    note: IDMscan mobile SDK for Android
+    source: 1
+  sandbox:
+    status: 'yes'
+    note: free sandbox tier on self registered developer portal
+    source: 11
+  no_code:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  support_hours:
+    status: partial
+    note: phone and email listed, no hours
+    source: 1
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 180
+    note: countries and territories, homepage figure
+    source: 1
+  document_types:
+    value: 580
+    note: ID types
+    source: 1
+  non_doc:
+    status: 'yes'
+    note: IDMkyc data source checks
+    source: 1
+track_record:
+  ownership:
+    status: unknown
+    note: owners and investors not disclosed
+  incidents:
+  - date: '2026-02-20'
+    what: Cybernews reported an unsecured database linked to IDMERIT; IDMERIT disputes any compromise of its systems
+    source: 13
 certifications:
 - name: SOC 2 Type 2
   what: Security controls audit
@@ -244,6 +316,22 @@ sources:
   publisher: 'IDMERIT'
   url: https://www.idmerit.com/aml-solutions-services/
   accessed: '2026-10'
+- title: Introduction to Developer Portal
+  publisher: IDMERIT
+  url: https://idmkyc-doc2.idmerit.com/idmkyc
+  accessed: '2026-11'
+- title: Subscribing to Sandbox Tier
+  publisher: IDMERIT
+  url: https://idmkyc-doc2.idmerit.com/idmkyc/introduction-to-developer-portal/subscribing-to-sandbox-tier
+  accessed: '2026-11'
+- title: Know Your Business (KYB) Verification Solution (IDMkyb)
+  publisher: IDMERIT
+  url: https://idmerit.com/idmkyb
+  accessed: '2026-11'
+- title: IDMerit disputes report of 1B records exposed in unsecured ID verification database (20 Feb 2026)
+  publisher: Biometric Update
+  url: https://www.biometricupdate.com/202602/idmerit-disputes-report-of-1b-records-exposed-in-unsecured-id-verification-database
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

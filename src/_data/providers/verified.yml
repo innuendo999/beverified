@@ -44,6 +44,11 @@ pricing:
     extra: Not publicly disclosed; Verified quotes after a demo
   legacy_verified_note: null
   verified: '2026-10'
+  model:
+    published: none
+    minimum: null
+    trial: null
+    source: 14
   items:
   - label: Published prices
     value: Not publicly disclosed
@@ -153,6 +158,61 @@ capabilities:
     status: 'no'
     note: demo request, no prices
     source: 14
+  liveness:
+    status: not_disclosed
+    note: no selfie or liveness check stated
+  injection_detection:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  reusable_id:
+    status: not_disclosed
+    note: shared GRC profile is for companies, not a reusable ID
+  data_residency:
+    status: not_disclosed
+    note: all data in EU data centres, no region choice stated
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: API docs linked publicly, AML API on docs.pliance.io
+    source: 27
+  sdk_web:
+    status: not_disclosed
+    note: no SDK named on API overview
+  sdk_ios:
+    status: not_disclosed
+    note: no SDK named on API overview
+  sdk_android:
+    status: not_disclosed
+    note: no SDK named on API overview
+  sandbox:
+    status: not_disclosed
+    note: no sandbox or trial found
+  no_code:
+    status: partial
+    note: eSign flow builder with forms and templates
+    source: 12
+  support_hours:
+    status: not_disclosed
+    note: help centre link only, no hours
+coverage:
+  checked: '2026-11'
+  countries:
+    value: null
+    note: Nordic and Baltic eIDs, no country count
+  document_types:
+    value: null
+    note: not stated
+  non_doc:
+    status: 'yes'
+    note: Nordic and Baltic bank eID identification
+    source: 12
+track_record:
+  ownership:
+    status: stable
+    note: Verdane-backed since 2023
+    source: 3
+  incidents: []
 certifications:
 - name: ISO/IEC 27001
   what: Information security
@@ -263,6 +323,14 @@ sources:
   publisher: 'Verified'
   url: https://support.verified.eu/guide/new-feature-aml-15-portal-now-supports-continuous-screening-of-pep-and-sanctions
   accessed: '2026-10'
+- title: 'API documentation'
+  publisher: Verified
+  url: https://www.verified.io/resources/api-documentation
+  accessed: '2026-11'
+- title: 'Pliance API documentation'
+  publisher: Verified (Pliance)
+  url: https://docs.pliance.io/
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

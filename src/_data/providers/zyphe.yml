@@ -53,6 +53,11 @@ pricing:
     extra: Priced by scope, volume and service level
   legacy_verified_note: null
   verified: '2026-11'
+  model:
+    published: core
+    minimum: false
+    trial: true
+    source: 2
   index:
     product: 'KYC and AML checks'
     price:
@@ -288,6 +293,70 @@ capabilities:
     status: partial
     note: '$3.00 per company and UBO review'
     source: 2
+  liveness:
+    status: 'yes'
+    note: active liveness with anti-spoof checks, no lab test
+    source: 7
+  injection_detection:
+    status: 'yes'
+    note: vendor stated, no independent test found
+    source: 7
+  reusable_id:
+    status: 'yes'
+    note: KYC Passport reuse across partners with consent
+    source: 7
+  data_residency:
+    status: 'no'
+    note: region follows the end user, not a customer setting
+    source: 3
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: docs and OpenAPI reference linked without login
+    source: 4
+  sdk_web:
+    status: 'yes'
+    note: browser SDK, plus Node server SDK
+    source: 11
+  sdk_ios:
+    status: 'no'
+    note: no native iOS SDK, WebView instead
+    source: 11
+  sdk_android:
+    status: 'no'
+    note: no native Android SDK, WebView instead
+    source: 11
+  sandbox:
+    status: 'yes'
+    note: self-serve start with one-time signup credit
+    source: 2
+  no_code:
+    status: 'yes'
+    note: hosted verification UI
+    source: 11
+  support_hours:
+    status: not_disclosed
+    note: email and contact form, no hours or SLA
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 190
+    note: countries for ID documents
+    source: 7
+  document_types:
+    value: 4000
+    note: identity document versions
+    source: 7
+  non_doc:
+    status: not_disclosed
+    note: no database checks for individuals found
+track_record:
+  ownership:
+    status: stable
+    note: private, VC-backed since Jul 2025 round
+    source: 17
+  incidents: []
 certifications:
 - name: SOC 2 (in progress)
   what: Type I audit targeted for Oct 2026; no report issued yet

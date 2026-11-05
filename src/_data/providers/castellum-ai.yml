@@ -44,6 +44,11 @@ pricing:
     extra: Not publicly disclosed; contact sales
   legacy_verified_note: null
   verified: '2026-10'
+  model:
+    published: none
+    minimum: true
+    trial: false
+    source: 3
   items:
   - label: Published prices
     value: Not publicly disclosed; quote on request
@@ -161,6 +166,75 @@ capabilities:
     note: quote on request
     source: 3
   checked: '2026-10'
+  kyb_entity_screening:
+    status: 'yes'
+    note: KYC/KYB onboarding screening
+    source: 1
+  ongoing_monitoring:
+    status: 'yes'
+    note: real-time monitoring, notice of risk changes
+    source: 1
+  list_updates:
+    status: 'yes'
+    note: sanctions, export control, forced labor lists; stated refresh cycle
+    source: 10
+  pep_tiers:
+    status: not_disclosed
+    note: no PEP tiers or relatives described
+  fuzzy_matching:
+    status: 'yes'
+    note: Jgram matching, adjustable thresholds
+    source: 10
+  alert_explanation:
+    status: 'yes'
+    note: narrative with source references per decision
+    source: 1
+  audit_trail:
+    status: 'yes'
+    note: each alert decision logged, audit trail export
+    source: 1
+  risk_scoring:
+    status: not_disclosed
+    note: no risk scoring model described
+  batch_screening:
+    status: 'yes'
+    note: CSV batch screen in the platform
+    source: 13
+  data_residency:
+    status: not_disclosed
+    note: not stated
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: REST API reference linked on SwaggerHub
+    source: 14
+  sdk_web:
+    status: not_disclosed
+    note: no SDK described
+  sdk_ios:
+    status: not_disclosed
+    note: no SDK described
+  sdk_android:
+    status: not_disclosed
+    note: no SDK described
+  sandbox:
+    status: partial
+    note: free sandbox, access route not stated
+    source: 14
+  no_code:
+    status: 'yes'
+    note: web platform with batch upload
+    source: 13
+  support_hours:
+    status: not_disclosed
+    note: knowledge base only, no hours found
+track_record:
+  ownership:
+    status: stable
+    note: independent, venture funded
+    source: 5
+  incidents: []
 certifications:
 - name: SOC 2 Type 2
   what: Security controls report
@@ -219,6 +293,14 @@ sources:
   publisher: Castellum.AI
   url: https://www.castellum.ai/investigations
   accessed: '2026-10'
+- title: Using Batch Screen
+  publisher: Castellum.AI
+  url: https://support.castellum.ai/hc/en-us/articles/4414202083476-Using-Batch-Screen
+  accessed: '2026-11'
+- title: Compliance API
+  publisher: Castellum.AI
+  url: https://www.castellum.ai/products/api
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

@@ -49,6 +49,11 @@ pricing:
     kind: official
     source: 1
     verified: '2026-10'
+  model:
+    published: none
+    minimum: false
+    trial: null
+    source: 1
 facts:
 - label: From
   value: Not publicly disclosed
@@ -117,7 +122,108 @@ faq:
 - q: Who are HorusCheck's competitors?
   a: HorusCheck is positioned alongside ComplyCube, iDenfy, and KYCAID in the KYC/AML verification space.
 segments: []
-capabilities: {}
+capabilities:
+  checked: '2026-11'
+  identity_verification:
+    status: 'yes'
+    note: ID documents with OCR and MRZ checks
+    source: 1
+  liveness:
+    status: 'yes'
+    note: one-shot and 3D liveness with face match
+    source: 1
+  sanctions_pep:
+    status: 'yes'
+    note: PEP and sanctions screening
+    source: 8
+  adverse_media:
+    status: 'yes'
+    note: listed with PEP and sanctions screening
+    source: 8
+  transaction_monitoring:
+    status: 'yes'
+    note: transaction and behaviour monitoring listed, no detail
+    source: 8
+  case_management:
+    status: not_disclosed
+    note: escalation paths only, no case workspace described
+  kyb_registry:
+    status: 'yes'
+    note: registries verification
+    source: 1
+  kyb_ubo:
+    status: 'yes'
+    note: UBO verification
+    source: 1
+  deployment:
+    status: cloud
+    note: single hosted service
+    source: 8
+  published_pricing:
+    status: 'no'
+    note: pay as you go, no figures shown
+    source: 1
+  ongoing_monitoring:
+    status: 'yes'
+    note: continuous rescreening with alerts
+    source: 7
+  list_updates:
+    status: not_disclosed
+    note: no lists named; updates called continuous
+  pep_tiers:
+    status: not_disclosed
+    note: no PEP tiers or RCA described
+  fuzzy_matching:
+    status: not_disclosed
+    note: smarter matching claimed, no settings described
+  alert_explanation:
+    status: partial
+    note: explainable risk scoring, match reasons not described
+    source: 7
+  audit_trail:
+    status: 'yes'
+    note: every check logged, timestamped, exportable
+    source: 8
+  risk_scoring:
+    status: 'yes'
+    note: configurable risk score weightings
+    source: 7
+  batch_screening:
+    status: not_disclosed
+    note: not described
+  data_residency:
+    status: not_disclosed
+    note: hosting region not named
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: not_disclosed
+    note: no API docs linked from the site
+  sdk_web:
+    status: not_disclosed
+    note: no SDKs listed
+  sdk_ios:
+    status: not_disclosed
+    note: no SDKs listed
+  sdk_android:
+    status: not_disclosed
+    note: no SDKs listed
+  sandbox:
+    status: not_disclosed
+    note: console sign-up, no trial or free checks stated
+  no_code:
+    status: 'yes'
+    note: no-code flow builder
+    source: 1
+  support_hours:
+    status: not_disclosed
+    note: contact form only
+track_record:
+  ownership:
+    status: unknown
+    note: legal entity not named on site or in terms
+    source: 2
+  incidents: []
 certifications: []
 user_ratings: []
 use_case_verdicts: []
@@ -178,6 +284,14 @@ sources:
   publisher: Companies House (UK)
   url: https://find-and-update.company-information.service.gov.uk/search/companies?q=%22horus+checks%22
   accessed: '2026-10'
+- title: AI risk scoring and watchlist screening
+  publisher: Horus Checks
+  url: https://horuscheck.io/solutions/risk-scoring-watchlist-screening
+  accessed: '2026-11'
+- title: Cloud-based AML compliance
+  publisher: Horus Checks
+  url: https://horuscheck.io/solutions/cloud-aml-compliance
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

@@ -51,6 +51,11 @@ pricing:
     note: Custom multi-product pricing
     extra: Contact sales for a quote
   legacy_verified_note: null
+  model:
+    published: partial
+    minimum: true
+    trial: false
+    source: 1
   verified: '2026-11'
   index:
     product: 'Identity platform, Essential plan'
@@ -240,6 +245,78 @@ capabilities:
     status: 'no'
     note: quote only, Growth plan and above
     source: 1
+  case_management:
+    status: 'yes'
+    note: Cases for KYC, fraud and AML reviews
+    source: 31
+  liveness:
+    status: 'yes'
+    note: selfie liveness, iBeta tested
+    source: 27
+  injection_detection:
+    status: 'yes'
+    note: vendor says it resists injection attacks
+    source: 27
+  reusable_id:
+    status: 'yes'
+    note: Reusable Personas, moving to Verify with Persona
+    source: 28
+  data_residency:
+    status: 'yes'
+    note: choose US or EU data centers
+    source: 2
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: developer docs open without login
+    source: 23
+  sdk_web:
+    status: 'yes'
+    note: persona npm package, embedded flow
+    source: 25
+  sdk_ios:
+    status: 'yes'
+    note: native iOS SDK
+    source: 24
+  sdk_android:
+    status: 'yes'
+    note: native Android SDK
+    source: 24
+  sandbox:
+    status: partial
+    note: sandbox mode exists, no self-serve signup found
+    source: 26
+  no_code:
+    status: 'yes'
+    note: Hosted Flow without code
+    source: 23
+  support_hours:
+    status: not_disclosed
+    note: help center and community, no hours found
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 200
+    note: '200+ countries and territories, government ID'
+    source: 12
+  document_types:
+    value: null
+    note: 'no count, "hundreds" of ID types'
+    source: 12
+  non_doc:
+    status: 'yes'
+    note: database checks against issuing sources
+    source: 29
+track_record:
+  ownership:
+    status: stable
+    note: independent, venture funded, Series D 2025
+    source: 4
+  incidents:
+  - date: '2026-02-23'
+    what: 'researchers found frontend code exposed on a government authorized server; vendor says it was fixed'
+    source: 30
 certifications:
 - name: FedRAMP Moderate (Persona for Government)
   what: US federal cloud security, certified since 10 Apr 2026
@@ -376,6 +453,42 @@ sources:
   publisher: Persona
   url: https://help.withpersona.com/articles/7K0LSbrfPvUsuBHGCjUhsr/
   accessed: '2026-10'
+- title: Persona developer documentation (introduction)
+  publisher: Persona
+  url: https://docs.withpersona.com/
+  accessed: '2026-11'
+- title: Mobile SDKs
+  publisher: Persona
+  url: https://docs.withpersona.com/mobile-sdks
+  accessed: '2026-11'
+- title: Embedded Flow
+  publisher: Persona
+  url: https://docs.withpersona.com/embedded-flow
+  accessed: '2026-11'
+- title: Environments (sandbox and production)
+  publisher: Persona
+  url: https://docs.withpersona.com/environments
+  accessed: '2026-11'
+- title: Selfie liveness detection
+  publisher: Persona
+  url: https://withpersona.com/product/verifications/selfie
+  accessed: '2026-11'
+- title: Persona Wallet Overview (Help Center)
+  publisher: Persona
+  url: https://help.withpersona.com/articles/4Yl6a7VEH2ScPfAHDif0Ts
+  accessed: '2026-11'
+- title: Database checks (authoritative databases and issuing sources)
+  publisher: Persona
+  url: https://withpersona.com/product/verifications/authoritative-databases-issuing-sources
+  accessed: '2026-11'
+- title: Persona pushes back against fears its age assurance tech isn't secure (23 Feb 2026)
+  publisher: Biometric Update
+  url: https://www.biometricupdate.com/202602/persona-pushes-back-against-fears-its-age-assurance-tech-isnt-secure
+  accessed: '2026-11'
+- title: Cases (case management)
+  publisher: Persona
+  url: https://withpersona.com/product/cases
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

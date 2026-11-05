@@ -54,6 +54,11 @@ pricing:
     kind: third_party
     source: 9
     verified: '2026-10'
+  model:
+    published: none
+    minimum: null
+    trial: null
+    source: 2
 facts:
 - label: From
   value: Custom quote
@@ -162,6 +167,71 @@ capabilities:
     note: quote on request
     source: 2
   checked: '2026-10'
+  ongoing_monitoring:
+    status: 'yes'
+    note: rescreening when customer or list data changes
+    source: 8
+  list_updates:
+    status: partial
+    note: OFAC, HMT, EU and UN named; no list refresh schedule
+    source: 8
+  pep_tiers:
+    status: 'yes'
+    note: PEP levels and RCA
+    source: 8
+  fuzzy_matching:
+    status: 'yes'
+    note: self-serve fuzzy matching with field weighting
+    source: 8
+  alert_explanation:
+    status: 'yes'
+    note: AI explanations for alerts
+    source: 2
+  audit_trail:
+    status: 'yes'
+    note: historical actions with full audit trail
+    source: 10
+  risk_scoring:
+    status: 'yes'
+    note: customer risk rating, tailored scoring model
+    source: 10
+  batch_screening:
+    status: 'yes'
+    note: batch API and scheduled batch screening
+    source: 8
+  data_residency:
+    status: not_disclosed
+    note: SaaS or private cloud, no region choice stated
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: not_disclosed
+    note: no public API reference found
+  sdk_web:
+    status: not_disclosed
+    note: no SDKs listed
+  sdk_ios:
+    status: not_disclosed
+    note: no SDKs listed
+  sdk_android:
+    status: not_disclosed
+    note: no SDKs listed
+  sandbox:
+    status: not_disclosed
+    note: demo on request only
+  no_code:
+    status: 'yes'
+    note: no-code rule builder
+    source: 8
+  support_hours:
+    status: not_disclosed
+    note: no support hours published
+track_record:
+  ownership:
+    status: stable
+    note: independent, venture backed, Series C in Apr 2025
+    source: 4
+  incidents: []
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security (TÜV SÜD, valid to Nov 2028)
@@ -212,6 +282,10 @@ sources:
   publisher: Amazon Web Services
   url: https://aws.amazon.com/marketplace/pp/prodview-uvjz7p7lzkela
   accessed: '2026-10'
+- title: Customer risk rating
+  publisher: Hawk
+  url: https://hawk.ai/our-products/customer-risk-rating
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null
