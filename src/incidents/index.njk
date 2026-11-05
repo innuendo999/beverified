@@ -1,0 +1,84 @@
+---
+layout: v3.njk
+---
+{#- Security incident tracker. Data: src/_data/incidents.yml; computed fields: incidents.11tydata.js.
+    Concept: a public register. Each row opens to the record and the vendor's reply side by side. -#}
+<main id="main" class="container reg">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li class="sep" aria-hidden="true">›</li><li aria-current="page">Incident tracker</li></ol></nav>
+
+  <header class="reg-head">
+    <h1 class="reg-head__title">Security incidents at the identity and AML vendors we review</h1>
+    <p class="reg-head__lede">A register of breaches, data exposures and security incidents, each with what the record shows and what the vendor says. {{ stats.total }} entries, {{ stats.recent }} from the last 24 months. Checked on <time datetime="{{ incidents.checked | iso }}">{{ incidents.checked | displayDate }}</time>.</p>
+    <p class="reg-head__aside">Are you one of these vendors? You can <a href="#appeals">correct or appeal an entry</a>.</p>
+  </header>
+
+  <section class="reg" aria-labelledby="reg-h">
+    <h2 id="reg-h" class="visually-hidden">Register</h2>
+    <div class="reg-cols" aria-hidden="true"><span>Date</span><span>Vendor and what happened</span><span>Data exposed</span><span>Status</span></div>
+    <ol class="reg-list">
+      {%- for x in list %}
+      <li id="{{ x.id }}" class="reg-row">
+        <details>
+          <summary>
+            <span class="reg-date num"><time datetime="{{ x.date | iso }}">{{ x.date | displayDate }}</time></span>
+            <span class="reg-what"><b>{{ x.vendor }}</b><span>{{ x.title }}</span></span>
+            <span class="reg-data reg-data--{{ x.sensitivity }}">{{ x.dataText }}</span>
+            <span class="reg-status">{{ x.statusLabel }}{% if x.counted == false %}<em>Not counted in score</em>{% endif %}{% if x.appealLabel %}<em>{{ x.appealLabel }}</em>{% endif %}</span>
+          </summary>
+          <div class="reg-entry">
+            <div class="reg-split">
+              <div class="reg-side">
+                <h3>What the record shows</h3>
+                <p>{{ x.summary }}</p>
+                <dl class="reg-facts">
+                  <div><dt>Type</dt><dd>{{ x.typeLabel }}</dd></div>
+                  <div><dt>When</dt><dd>{{ x.occurred }}</dd></div>
+                  <div><dt>Scale</dt><dd>{{ x.scale }}</dd></div>
+                </dl>
+              </div>
+              <div class="reg-side reg-side--reply">
+                <h3>What {{ x.vendor }} says</h3>
+                <p>{{ x.response }}</p>
+                {%- if x.appeal %}
+                <p class="reg-appeal"><b>{{ x.appealLabel }}</b>{% if x.appeal.decided %}, <time datetime="{{ x.appeal.decided | iso }}">{{ x.appeal.decided | displayDate }}</time>{% endif %}. {{ x.appeal.note }}</p>
+                {%- endif %}
+              </div>
+            </div>
+            <p class="reg-since"><b>Since then.</b> {{ x.since }}</p>
+            {%- if x.corrections and x.corrections.length %}
+            <div class="reg-corr"><h4>Corrections</h4><ul>{% for c in x.corrections %}<li><time datetime="{{ c.date | iso }}">{{ c.date | displayDate }}</time>: {{ c.change }}</li>{% endfor %}</ul></div>
+            {%- endif %}
+            <div class="reg-foot">
+              <ol class="reg-sources">{% for s in x.sources %}<li><a href="{{ s.url }}" rel="nofollow noopener">{{ s.title }}</a>, {{ s.publisher }}</li>{% endfor %}</ol>
+              <p class="reg-links">
+                {%- if x.news %}<a href="{{ x.news }}">Our report</a>{% endif %}
+                {%- if x.p %}<a href="/providers/{{ x.slug }}/">{{ x.vendor }} review</a>{% endif %}
+                <a href="{{ x.mailto }}">Correct or appeal this entry</a>
+              </p>
+            </div>
+          </div>
+        </details>
+      </li>
+      {%- endfor %}
+    </ol>
+  </section>
+
+  <div class="reg-notes">
+    <section aria-labelledby="scope-h">
+      <h2 id="scope-h">What is in the register</h2>
+      <p>Data breaches, exposures of personal data, confirmed security incidents and regulatory actions at vendors we review, reported since 2024. Private lawsuits with no breach behind them, such as biometric consent suits, are left out, and so are incidents at a vendor's customer that never touched the vendor's systems.</p>
+      <p>We rely on the vendor's own statement, official breach notices, regulators and courts first, and name any news report we use. What a lawsuit claims is reported as a claim. Every vendor is treated the same way, including those we earn money from.</p>
+      <p>In the data column, <b>bold</b> marks ID documents, biometrics or national ID numbers. An incident from the last 24 months feeds the track record part of the provider's score, as set out in <a href="/methodology/">our methodology</a>, unless the entry says "Not counted in score".</p>
+    </section>
+    <section id="appeals" aria-labelledby="ap-h">
+      <h2 id="ap-h">Corrections and appeals</h2>
+      <p>A vendor named here can ask us to correct a fact or appeal an entry. Use the link at the bottom of the entry, or write to <a href="mailto:support@beverified.org?subject=Incident%20tracker%3A%20correction%20or%20appeal">support@beverified.org</a>, and include:</p>
+      <ol>
+        <li>the entry you mean and the sentence you dispute;</li>
+        <li>a source we can check, such as your own published statement, a regulator's finding or a court document;</li>
+        <li>if you want it shown, the response you want next to the entry.</li>
+      </ol>
+      <p>We check every request against its source. A correction that holds up is made to the entry and listed under Corrections with its date. An appeal is shown on the entry while we review it, then as upheld, partly upheld or not upheld, with a short reason. An appeal can remove an entry only if the source shows the incident did not happen at your company. Payment or a commercial relationship never changes an entry.</p>
+    </section>
+  </div>
+</main>

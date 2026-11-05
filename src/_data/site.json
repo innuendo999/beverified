@@ -147,6 +147,11 @@
         "key": "reviews"
       },
       {
+        "label": "Incidents",
+        "href": "/incidents/",
+        "key": "incidents"
+      },
+      {
         "label": "Blog",
         "href": "/blog/",
         "key": "blog"
@@ -247,6 +252,10 @@
         [
           "Methodology",
           "/methodology/"
+        ],
+        [
+          "Incident tracker",
+          "/incidents/"
         ],
         [
           "Glossary",

@@ -129,3 +129,6 @@ capabilities:                # new keys, same shape as the other capabilities
 ```
 
 `score_breakdown[]` is written by `node scripts/rescore.mjs --write`; never type it by hand.
+## `src/_data/incidents.yml` (security incident tracker, added 2026-11-05)
+
+One record per incident (`id, slug, vendor, date, occurred, type, sensitivity, status, counted, title, summary, data[], scale, response, since, news?, corrections[]?, appeal?, sources[]`), rules in the file header. Renders `/incidents/` (`src/incidents/`) and the "Security incidents" block on the review of `slug` (`src/reviews.njk`, nav pill "Incidents"). Update `checked` after every re-check. Vendors correct or appeal by email (each entry has a prefilled link); accepted corrections go in `corrections[]`, appeals in `appeal{received, outcome, decided, note}`. Same rules for every vendor, including affiliate and paid-link partners.
