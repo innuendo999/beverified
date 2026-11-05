@@ -84,3 +84,7 @@ Starting price: a category file with `price_source: record` shows the price from
 - `reports/gsc-missing-urls.csv` — URLs Google still shows that the site no longer has.
 - `reports/rating-conflicts.csv` — every place a provider's rating appears, where values differ.
 - `reports/content-gaps.csv` — what each page still needs, sorted by impressions.
+
+## `src/_data/incidents.yml` (security incident tracker, added 2026-11-05)
+
+One record per incident (`id, slug, vendor, date, occurred, type, sensitivity, status, counted, title, summary, data[], scale, response, since, news?, sources[]`), rules in the file header. Renders `/incidents/` (`src/incidents/`) and the "Security incidents" block on the review of `slug` (`src/reviews.njk`, nav pill "Incidents"). Update `checked` after every re-check. Same rules for every vendor, including affiliate and paid-link partners.

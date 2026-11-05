@@ -1,0 +1,167 @@
+# Security incident tracker: one record per incident, newest first.
+# Renders /incidents/ and the "Security incidents" block on each review (src/reviews.njk).
+# Rules (owner, 2026-11-05): primary sources first (vendor statement, breach notice, regulator, court);
+# claims from lawsuits are labelled as allegations; the vendor's own response sits next to each entry;
+# same rules for every vendor, including affiliate and paid-link partners.
+# Included: data breaches, data exposures, confirmed security incidents, regulatory actions.
+# Not included: private lawsuits with no breach behind them (e.g. BIPA consent suits).
+# counted: false = shown and noted, not deducted in the score (the reason is in `since`: test systems
+# with no personal data, or older than the 24-month window scores use).
+# type: breach | security_incident | exposure | credential_exposure | regulatory
+# sensitivity: high (ID documents, biometrics, national ID numbers) | medium (contact or account data) | low (no personal data reported)
+# status: contained | investigating | disputed | litigation | resolved
+checked: '2026-11-05'
+items:
+- id: relycomply-2026-09
+  slug: relycomply
+  vendor: RelyComply
+  date: '2026-09-16'
+  occurred: 'Unauthorised access found 8 Sep 2026; disclosed 16 Sep 2026'
+  type: security_incident
+  sensitivity: high
+  status: contained
+  counted: true
+  title: Zero-day in a third-party reporting tool led to data removal
+  summary: An attacker used a zero-day vulnerability in a third-party application used for internal reporting, then used credentials obtained there to reach systems holding customer data. A forensic investigation that ended on 1 October 2026 confirmed data was removed but could not say which records.
+  data: [Identity and contact details, Screening and risk data, Transaction data, Some ID verification records]
+  scale: Not publicly disclosed
+  response: RelyComply says it took affected systems offline and rebuilt them, reset credentials, retired the application involved, added MFA and monitoring, and reported the incident to South Africa's Information Regulator on 10 September 2026. It says there is no verified evidence of publication or misuse of the data.
+  since: Notice last updated 2 November 2026; incident reported as contained, monitoring ongoing.
+  sources:
+  - title: 'RelyComply cyber incident: what happened and what you can do'
+    publisher: RelyComply
+    url: https://relycomply.com/relycomply-cyber-incident-what-happened-and-what-you-can-do/
+    accessed: '2026-11'
+- id: idmerit-2026-02
+  slug: idmerit
+  vendor: IDMERIT
+  date: '2026-02-20'
+  occurred: 'Reported 20 Feb 2026'
+  type: exposure
+  sensitivity: high
+  status: disputed
+  counted: true
+  title: Researchers report an unsecured database linked to IDMERIT; the company disputes it
+  summary: Cybernews researchers said they found an unsecured server they believed was tied to IDMERIT, with about 1 billion records containing personal data such as names, dates of birth, addresses and national ID numbers across at least 26 countries. The database was reportedly secured after disclosure.
+  data: [Names and dates of birth, Addresses and contact details, National ID numbers]
+  scale: About 1 billion records, as reported by Cybernews; not confirmed
+  response: IDMERIT says it does not own or store customer data, that its review found no exposure or unauthorised access in its environment, and that the researcher asked for payment. Cybernews says its findings were legitimate.
+  since: Disputed; the scope of the exposure has not been confirmed.
+  sources:
+  - title: IDMerit disputes report of 1B records exposed in unsecured ID verification database
+    publisher: Biometric Update
+    url: https://www.biometricupdate.com/202602/idmerit-disputes-report-of-1b-records-exposed-in-unsecured-id-verification-database
+    accessed: '2026-11'
+- id: persona-2026-02
+  slug: persona
+  vendor: Persona
+  date: '2026-02-23'
+  occurred: 'Reported Feb 2026'
+  type: exposure
+  sensitivity: low
+  status: resolved
+  counted: false
+  title: Frontend code found on a publicly reachable server
+  summary: Researchers found Persona's uncompressed frontend code reachable from the open internet on a US government authorised server, showing how its checks are built. The report did not say that personal data was exposed.
+  data: [Source code, No personal data reported]
+  scale: Not applicable
+  response: Persona's CEO said the flagged issues were fixed quickly. Persona says the environment was a test system with no personal data.
+  since: Fixed, according to Persona. Shown here and not counted in the score.
+  sources:
+  - title: Persona pushes back against fears its age assurance tech isn't secure
+    publisher: Biometric Update
+    url: https://www.biometricupdate.com/202602/persona-pushes-back-against-fears-its-age-assurance-tech-isnt-secure
+    accessed: '2026-11'
+- id: sumsub-2026-02
+  slug: sumsub
+  vendor: Sumsub
+  date: '2026-02-04'
+  occurred: 'Access from Jul 2024; found Jan 2026; disclosed 4 Feb 2026'
+  type: security_incident
+  sensitivity: medium
+  status: contained
+  counted: true
+  title: Attacker in a support system went unnoticed for 18 months
+  summary: An attacker entered a support-related internal environment through a malicious attachment sent via a third-party ticketing platform in July 2024. Sumsub found the activity in a security review in January 2026.
+  data: [Names, Some email addresses or phone numbers]
+  scale: A limited number of customer accounts, per Sumsub
+  response: Sumsub says biometric data, ID document images and payment details were not accessed, that it engaged forensic experts, notified affected customers, and tightened support access controls and monitoring.
+  since: Sumsub said the investigation was ongoing at disclosure; no later update found.
+  sources:
+  - title: Security Incident Update (4 February 2026)
+    publisher: Sumsub
+    url: https://sumsub.com/newsroom/security-incident-update/
+    accessed: '2026-11'
+- id: veriff-2025-11
+  slug: veriff
+  vendor: Veriff
+  date: '2025-12-10'
+  occurred: 'Access around 18 Nov 2025; affected people listed 10 Dec 2025; notices from 9 Jan 2026'
+  type: breach
+  sensitivity: high
+  status: litigation
+  counted: true
+  title: ID images of Total Wireless customers taken from Veriff's systems
+  summary: Total Wireless, a Verizon prepaid brand, told customers that an unauthorised party obtained images of the government-issued IDs they gave Veriff for a promotion, and for some people their postal address and date of birth. Total Wireless says its own systems were not affected.
+  data: [ID document images, Postal addresses, Dates of birth]
+  scale: 8,583 people notified
+  response: A Veriff spokesperson attributed the incident to phishing that captured a customer employee's credentials, said customers following its security recommendations were not affected, and urged SSO, IP allowlisting and least-privilege access. Total Wireless says Veriff secured its systems and hired a cybersecurity firm.
+  since: Three class actions naming Veriff OÜ and Total Wireless were filed in the Southern District of New York in January 2026; the complaints allege the data was unencrypted. No settlement reported as of July 2026.
+  news: /news/veriff-total-wireless-data-breach/
+  sources:
+  - title: Total Wireless notice of data breach (9 January 2026)
+    publisher: Commonwealth of Massachusetts
+    url: https://www.mass.gov/doc/2026-36-total-wireless/download
+    accessed: '2026-11'
+  - title: Verizon-owned brand Total Wireless suffers breach exposing customer data
+    publisher: CyberInsider
+    url: https://cyberinsider.com/verizon-owned-brand-total-wireless-suffers-breach-exposing-customer-data/
+    accessed: '2026-11'
+  - title: Multiple class actions claim Total Wireless, Veriff failed to protect customer PII in data breach
+    publisher: Top Class Actions
+    url: https://topclassactions.com/lawsuit-settlements/lawsuit-news/multiple-class-actions-claim-total-wireless-veriff-failed-to-protect-customer-pii-in-data-breach
+    accessed: '2026-11'
+- id: signzy-2024-11
+  slug: signzy
+  vendor: Signzy
+  date: '2024-12-03'
+  occurred: 'Reported attack in late Nov 2024; reported 3 Dec 2024'
+  type: security_incident
+  sensitivity: medium
+  status: investigating
+  counted: true
+  title: Cyberattack reported at Signzy
+  summary: TechCrunch, citing multiple sources, reported that Signzy was hit by a cyberattack in late November 2024. India's CERT-In said it was aware of the incident. The data involved was not disclosed.
+  data: [Not publicly disclosed]
+  scale: Not publicly disclosed
+  response: Signzy said it had been informed of a security incident, was investigating and had hired a professional agency. Its customer PayU said Signzy confirmed in writing that none of PayU's data was compromised.
+  since: No findings or root cause published as of 5 Nov 2026.
+  sources:
+  - title: Fintech SaaS startup Signzy suffers cyberattack
+    publisher: Inc42
+    url: https://inc42.com/buzz/fintech-saas-startup-signzy-suffers-cyberattack-report
+    accessed: '2026-11'
+- id: au10tix-2024-06
+  slug: au10tix
+  vendor: AU10TIX
+  date: '2024-06-26'
+  occurred: 'Credentials stolen by malware in late 2022, posted on Telegram Mar 2023, reported Jun 2024'
+  type: credential_exposure
+  sensitivity: high
+  status: resolved
+  counted: false
+  title: Admin credentials to a logging platform were exposed for over a year
+  summary: 404 Media reported that credentials of an AU10TIX employee, taken by malware and later posted on Telegram, gave access to a logging platform with links to identity documents and verification results, and still worked in June 2024.
+  data: [ID document images, Names and dates of birth, ID numbers]
+  scale: Not publicly disclosed
+  response: AU10TIX said the credentials were obtained about 18 months earlier and rescinded, that it found no malicious activity or data leakage, and that it was decommissioning the system involved.
+  since: Outside the 24-month window our scores use, so not deducted.
+  sources:
+  - title: Identity verification firm used by X, TikTok and Uber exposed users' driver's licenses
+    publisher: Gizmodo
+    url: https://gizmodo.com/identity-verification-firm-used-by-x-tiktok-and-uber-1851562934
+    accessed: '2026-11'
+  - title: Despite exposure, AU10TIX says there's no malicious activity from stolen credentials
+    publisher: Digital Transactions
+    url: https://www.digitaltransactions.net/despite-exposure-au10tix-says-theres-no-malicious-activity-from-stolen-credentials/
+    accessed: '2026-11'
