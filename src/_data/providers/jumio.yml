@@ -23,8 +23,8 @@ link:
   url: https://www.jumio.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-22'
-updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
+last_verified: '2026-11-05'
+updated: '2026-11-05'   # last content edit; last_verified = last fact re-check
 verdict: 'Jumio is built for enterprise-scale identity verification: more than a billion transactions processed, bank and marketplace clients, and a platform that extends beyond onboarding into ongoing risk monitoring. That scale comes at the cost of pricing transparency. Rates are quoted through sales, and Vendr''s buyer data puts the median annual contract at about $55,850.'
 what_is:
 - Jumio is an identity-verification company founded in 2010 and based in Sunnyvale, California, with offices and representation in North America, Latin America, Europe, Asia Pacific and the Middle East. It says it has processed more than 1 billion transactions across more than 200 countries and territories. It is backed by Centana Growth Partners, Great Hill Partners and Millennium Technology Value Partners, and Mark Lorion became CEO in April 2026. Jumio sells to large enterprises (banks, marketplaces and fintechs) that need document and biometric verification alongside AML screening at global scale.
@@ -44,6 +44,11 @@ pricing:
     extra: Contact sales
   legacy_verified_note: null
   verified: '2026-10'
+  model:
+    published: none
+    minimum: true
+    trial: false
+    source: 2
   items:
   - label: List price
     value: Not published; quoted by sales
@@ -107,12 +112,28 @@ alternatives:
   name: Regula
   best_for: Document Forensics
 choose_instead:
-- slug: onfido
-  text: you want comparably broad document coverage with stronger developer SDKs and Entrust-backed security infrastructure.
 - slug: sumsub
-  text: you want published pricing and a unified KYC+KYB+monitoring platform instead of enterprise-only sales quotes.
+  need: "Published prices and KYB"
+  text: "you want per-verification prices you can read before a sales call, KYB with UBO checks and a self-service trial in the same platform as identity checks."
+- slug: veriff
+  need: "Low self-serve entry"
+  text: "you want to start on published self-serve plans with a small monthly minimum and a free trial, without an enterprise contract."
+- slug: persona
+  need: "Custom workflows"
+  text: "your product team wants to build its own flows from reusable templates, with KYB, UBO checks and watchlist reports in one platform, and can accept a minimum term on the entry plan."
+- slug: incode
+  need: "Live agent video plus Level 3 liveness"
+  text: "you need live agent video calls next to automated checks, plus passive liveness tested by iBeta at Level 3, and can work with quoted pricing."
 - slug: regula
-  text: document-authentication depth matters more than a full cloud onboarding platform, and on-premise deployment is a requirement.
+  need: "Document forensics, on-premise"
+  text: "document-authentication depth matters more than a full cloud onboarding platform, and on-premise deployment is a requirement."
+alternatives_columns:
+- price_from
+- liveness_pad
+- trust_framework
+- nfc
+- sanctions_pep
+- kyb_registry
 user_reviews:
   legacy_note: null
   praise:
@@ -132,12 +153,12 @@ faq:
   a: Jumio offers AML screening covering sanctions, PEPs and adverse media, with ongoing monitoring after onboarding. Ask sales how it is packaged in your contract.
 - q: Is Jumio good for startups?
   a: Jumio is built primarily for enterprise-scale deployments; its sales-quoted, volume-based pricing tends to suit large organizations more than early-stage startups.
-- q: How does Jumio compare to Onfido?
-  a: Both offer broad document coverage and enterprise-grade verification. Onfido has stronger developer SDKs and is now backed by Entrust's security infrastructure, while Jumio emphasizes its processed-transaction scale and identity intelligence platform.
+- q: How does Jumio compare to Sumsub?
+  a: Jumio sells to enterprises on quoted contracts, with AML screening, transaction monitoring, video verification and selfie.DONE reusable identity as separate products. Sumsub publishes per-verification prices, offers a self-service trial and adds KYB with UBO checks, which Jumio does not list as a product.
 - q: What is the best alternative to Jumio?
-  a: Sumsub is the strongest alternative for teams that want published pricing and a unified KYC/KYB/monitoring platform. Onfido is the closest match for enterprise-grade document coverage with stronger developer tooling.
+  a: Sumsub suits teams that want published prices and KYB in one platform. Veriff has a smaller self-serve entry point, Persona suits teams that build their own flows, Incode adds live agent video with Level 3 liveness, and Regula fits document forensics with on-premise deployment.
 - q: Who are Jumio's main competitors?
-  a: Jumio competes with Onfido, Sumsub, and Regula, differentiating mainly on its processed-transaction scale and enterprise focus.
+  a: Jumio competes with Sumsub, Incode, Onfido (now Entrust) and Regula, differentiating mainly on its processed-transaction scale and enterprise focus.
 segments: []
 capabilities:
   checked: '2026-10'
@@ -169,6 +190,80 @@ capabilities:
     status: 'no'
     note: quoted by sales
     source: 2
+  liveness:
+    status: 'yes'
+    note: Premium Liveness Detection product
+    source: 18
+  injection_detection:
+    status: not_disclosed
+    note: no independent injection test letter found
+  reusable_id:
+    status: 'yes'
+    note: selfie.DONE reusable identity, worldwide since Sep 2026
+    source: 20
+  data_residency:
+    status: 'yes'
+    note: US, EU or Singapore data center
+    source: 17
+  kyb_registry:
+    status: not_disclosed
+    note: no business verification product listed
+  age_document:
+    status: 'yes'
+    note: date of birth from ID
+    source: 21
+  age_facial_estimation:
+    status: 'yes'
+    note: age estimate from selfie
+    source: 21
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: docs.jumio.com readable without login
+    source: 16
+  sdk_web:
+    status: 'yes'
+    note: Web SDK element
+    source: 17
+  sdk_ios:
+    status: 'yes'
+    note: iOS Mobile SDK on GitHub
+    source: 11
+  sdk_android:
+    status: 'yes'
+    note: Android Mobile SDK
+    source: 16
+  sandbox:
+    status: not_disclosed
+    note: only a demo app and sales contact found
+  no_code:
+    status: 'yes'
+    note: hosted Jumio Web Client
+    source: 17
+  support_hours:
+    status: not_disclosed
+    note: no support hours published
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 200
+    note: countries and territories
+    source: 3
+  document_types:
+    value: 5000
+    note: ID types
+    source: 3
+  non_doc:
+    status: 'yes'
+    note: Government Database Checks product
+    source: 18
+track_record:
+  ownership:
+    status: stable
+    note: backed by the same three investors; Mark Lorion CEO since Apr 2026
+    source: 1
+  incidents: []
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security
@@ -261,6 +356,30 @@ sources:
   publisher: Jumio
   url: https://go.jumio.com/transaction-monitoring-media
   accessed: '2026-10'
+- title: Jumio SDKs
+  publisher: Jumio
+  url: https://docs.jumio.com/production/Content/Integration/Integration%20Channels/Jumio%20SDKs.htm
+  accessed: '2026-11'
+- title: Web SDK
+  publisher: Jumio
+  url: https://docs.jumio.com/production/Content/Integration/Integration%20Channels/Web%20SDK.htm
+  accessed: '2026-11'
+- title: Products
+  publisher: Jumio
+  url: https://www.jumio.com/products/
+  accessed: '2026-11'
+- title: Jumio Showcase
+  publisher: Jumio
+  url: https://www.jumio.com/jumio-showcase/
+  accessed: '2026-11'
+- title: Jumio Drives Global Leadership in Digital Trust and Identity Intelligence in Q3 2026 (21 October 2026)
+  publisher: Jumio
+  url: https://www.jumio.com/about/press-releases/global-leadership-digital-trust-identity-intelligence-q3-2026/
+  accessed: '2026-11'
+- title: Age verification
+  publisher: Jumio
+  url: https://www.jumio.com/use-case/age-verification/
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

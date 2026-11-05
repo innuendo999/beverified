@@ -23,9 +23,9 @@ link:
   url: https://sumsub.com
   type: null
   legacy_rel: nofollow sponsored
-last_verified: '2026-10-22'
-updated: '2026-11-02'   # last content edit; last_verified = last fact re-check
-verdict: 'Sumsub stands out in this category for one simple reason: it publishes its prices. It also offers KYC, KYB, transaction monitoring and fraud prevention in one platform that is popular with crypto exchanges and fintechs, which makes it the easiest all-in-one platform in this batch to evaluate without a sales call. Minimum monthly commitments can be steep for very small teams, and KYB, non-document checks and transaction monitoring sit in the custom plan.'
+last_verified: '2026-11-05'
+updated: '2026-11-05'   # last content edit; last_verified = last fact re-check
+verdict: 'Sumsub stands out in this category for one simple reason: it publishes its prices. It also offers KYC, KYB, transaction monitoring and fraud prevention in one platform that is popular with crypto exchanges and fintechs, which makes it the easiest all-in-one platform in this batch to evaluate without a sales call. Minimum monthly commitments can be steep for very small teams, and KYB, non-document checks and transaction monitoring sit in the custom plan. In February 2026 it also disclosed a security incident in a support system that went unnoticed for 18 months, which is worth raising in due diligence.'
 what_is:
 - Sumsub (legal name Sum and Substance Ltd) is a KYC/AML verification platform founded in 2015, with its registered office in London and offices in Singapore, Riga, Limassol, Berlin, Miami, Dubai and Tel Aviv. It says it is trusted by more than 4,000 companies, including Bybit and Wirex, and is particularly strong with crypto and fintech businesses that need document verification, biometric checks and AML screening in one platform.
 features:
@@ -52,6 +52,11 @@ pricing:
     extra: Contact sales for a quote
   legacy_verified_note: null
   verified: '2026-11'
+  model:
+    published: core
+    minimum: true
+    trial: true
+    source: 1
   index:
     product: 'KYC, Basic and Compliance'
     price:
@@ -124,7 +129,7 @@ pros:
 cons:
 - Minimum monthly commitments ($149 and $299) can be steep for very small teams
 - KYB, non-document checks and transaction monitoring are only in the custom, quote-based plan
-- Some reviewers report occasional false-positive flags
+- In February 2026 Sumsub disclosed that an attacker had access to a support system from July 2024 until January 2026, which may have exposed names, emails or phone numbers from some customer accounts
 alternatives:
 - slug: jumio
   name: Jumio
@@ -179,13 +184,15 @@ faq:
 - q: Does Sumsub support KYB?
   a: Yes. Sumsub offers business verification, including UBO checks, in its custom plan alongside its individual identity-verification tools.
 - q: Is Sumsub good for crypto businesses?
-  a: Sumsub is widely used in crypto. Bybit has used it since 2021 and Wirex is listed as a customer, and its plans include Travel Rule support.
+  a: Sumsub is widely used in crypto. Bybit has used it since 2021 and Wirex is listed as a customer. Travel Rule support is on every published plan, and Sumsub says its Travel Rule network connects more than 2,300 virtual asset service providers across GTR, CODE and Sygna.
 - q: Has Sumsub's liveness check been independently tested?
   a: Yes. iBeta lists Sumsub Liveness as passing ISO/IEC 30107-3 presentation attack detection testing at Level 1 (Feb 2025), Level 2 (Mar 2025) and Level 3 (Sep 2026).
+- q: Has Sumsub had a security incident?
+  a: Yes. On 4 February 2026 Sumsub disclosed that an attacker entered a support ticketing system through a malicious attachment in July 2024 and was found during a security review in January 2026. Sumsub says names, and for some records emails or phone numbers, from a limited number of customer accounts may have been exposed, and that biometric data, ID document images and payment details were not accessed.
 - q: "What are the best alternatives to Sumsub?"
   a: "The best Sumsub alternatives depend on what you need instead. Veriff has a lower monthly minimum on its published plans, iDenfy lets you pay only for approved checks, and Shufti Pro offers a free plan and on-premise deployment. For data-led KYB, look at Trulioo; for published module prices with AML screening and transaction monitoring on every plan, KYCAID; for enterprise volumes with separate AML, monitoring and video products, Jumio."
 - q: Who are Sumsub's main competitors?
-  a: Sumsub competes with Jumio, Onfido, and Trulioo, differentiating mainly through published pricing and a unified KYC/KYB/monitoring platform.
+  a: Sumsub competes with Jumio, Onfido (now Entrust) and Trulioo, differentiating mainly through published pricing and a unified KYC/KYB/monitoring platform.
 segments: []
 capabilities:
   sanctions_pep:
@@ -225,6 +232,21 @@ capabilities:
     note: custom plan quoted
     source: 1
   checked: '2026-10'
+  liveness:
+    status: 'yes'
+    note: Liveness and face match on all plans
+    source: 1
+  injection_detection:
+    status: not_disclosed
+    note: no independent injection test letter found
+  reusable_id:
+    status: 'yes'
+    note: Reusable KYC and Sumsub ID on Basic
+    source: 1
+  data_residency:
+    status: 'yes'
+    note: regional processing via local domains
+    source: 12
   age_document:
     status: 'yes'
     note: DOB from ID, face match optional
@@ -276,6 +298,58 @@ capabilities:
     status: 'no'
     note: quote only, custom plan
     source: 1
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: docs.sumsub.com readable without login
+    source: 21
+  sdk_web:
+    status: 'yes'
+    note: WebSDK via npm or CDN, React package
+    source: 23
+  sdk_ios:
+    status: 'yes'
+    note: native iOS MobileSDK
+    source: 22
+  sdk_android:
+    status: 'yes'
+    note: native Android MobileSDK
+    source: 22
+  sandbox:
+    status: 'yes'
+    note: Sandbox mode and self-service trial
+    source: 21
+  no_code:
+    status: 'yes'
+    note: Workflow Builder in the dashboard
+    source: 21
+  support_hours:
+    status: not_disclosed
+    note: support via dashboard, no hours published
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 220
+    note: countries and territories
+    source: 3
+  document_types:
+    value: 14000
+    note: document types
+    source: 3
+  non_doc:
+    status: add_on
+    note: non-doc and database checks, custom plan
+    source: 1
+track_record:
+  ownership:
+    status: stable
+    note: private, founder-led; ownership filings questioned in an Apr 2026 report, which Sumsub disputes
+    source: 25
+  incidents:
+  - date: '2026-02-04'
+    what: 'disclosed unauthorised access to a support system from Jul 2024, found Jan 2026; names, emails or phone numbers of a limited number of customer accounts may have been exposed'
+    source: 24
 certifications:
 - name: iBeta ISO/IEC 30107-3 PAD Level 3
   what: Liveness, Sumsub Liveness (Sep 2026)
@@ -407,6 +481,30 @@ sources:
   publisher: Sumsub
   url: https://sumsub.com/business-registry-coverage/
   accessed: '2026-10'
+- title: Test in Sandbox
+  publisher: Sumsub
+  url: https://docs.sumsub.com/docs/sandbox-mode
+  accessed: '2026-11'
+- title: About MobileSDK
+  publisher: Sumsub
+  url: https://docs.sumsub.com/docs/mobile-sdk
+  accessed: '2026-11'
+- title: Get started with WebSDK integration
+  publisher: Sumsub
+  url: https://docs.sumsub.com/docs/get-started-with-web-sdk
+  accessed: '2026-11'
+- title: Security Incident Update (4 February 2026)
+  publisher: Sumsub
+  url: https://sumsub.com/newsroom/security-incident-update/
+  accessed: '2026-11'
+- title: Crypto KYC gatekeeper Sumsub hits back after Rekt raises red flags (15 April 2026)
+  publisher: The Crypto Times
+  url: https://www.cryptotimes.io/2026/04/15/crypto-kyc-gatekeeper-sumsub-hits-back-after-rekt-raises-red-flags/
+  accessed: '2026-11'
+- title: Sumsub joins industry initiative OTL (21 October 2026)
+  publisher: Sumsub
+  url: https://sumsub.com/newsroom/sumsub-joins-industry-initiative-otl-to-establish-open-standards-for-on-chain-identity-and-compliance/
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null
