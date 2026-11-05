@@ -85,3 +85,7 @@
 - capabilities: liveness yes (20); data_residency no (all production data on AWS in Ireland, 17); deployment cloud (17); case_management yes (Case Review Portal in homepage navigation, 2). injection_detection, reusable_id not_disclosed.
 - New sources 15 to 20.
 - Score flag: OWNERSHIP CHANGE. The Fourthline and Veridas merger closed on 3 Nov 2026 (source 19). Paul Stoddart is CEO of the combined company, Eduardo Azanza President; no new brand named; both platforms continue. The Ownership fact ("closing pending") and verification note are now out of date and need an editor update (not changed here).
+## Merger completion 2026-11-05
+
+- Fourthline and Veridas completed their merger on 3 Nov 2026 (Fourthline release, new last source). Updated verdict, ownership fact, the merger con and the ownership FAQ in this record. CEO Paul Stoddart, president Eduardo Azanza, supervisory board chair Radboud Vlaar (Finch Capital); up to EUR 65m from Finch Capital, Seaya Andromeda and Ashgrove Capital; no new brand name. `last_verified` not changed (ownership only, not a full re-check).
+- Score flag: ownership changed; score unchanged pending the v3.1 re-score.
