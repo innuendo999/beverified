@@ -1,0 +1,141 @@
+{#- Data blocks for comparison articles. Usage in Markdown: {% set block = "chart" %}{% include "v3/compare-block.njk" %}
+    Data: cmp (src/compare/compare.11tydata.js), built from both provider records. -#}
+{%- if cmp %}
+{%- set A = cmp.a %}{%- set B = cmp.b %}
+
+{%- if block == "head" %}
+<div class="cmp-head">
+  {%- for p in [A, B] %}
+  <div class="cmp-head__col">
+    {%- if p.logo and p.logo.wordmark %}<img class="cmp-head__logo" src="{{ p.logo.wordmark }}" alt="{{ p.name }}" loading="lazy">{% else %}<b class="cmp-head__name">{{ p.name }}</b>{% endif %}
+    <p class="cmp-head__score"><span class="num">{{ p.score | score1 }}</span> out of 5, {{ p.grade }}</p>
+    <p class="cmp-head__tag">{{ p.tagline }}</p>
+    <a href="/providers/{{ p.slug }}/">Read the full {{ p.name }} review</a>
+  </div>
+  {%- endfor %}
+</div>
+{%- endif %}
+
+{%- if block == "chart" %}
+{%- set rowH = 58 %}{%- set top = 50 %}{%- set labelW = 250 %}{%- set barW = 400 %}
+{%- set h = top + cmp.crit.length * rowH + 8 %}
+<figure class="cmp-chart">
+  <svg viewBox="0 0 720 {{ h }}" role="img" aria-label="{{ A.name }} and {{ B.name }} sub-scores by criterion, out of 5" aria-describedby="cmp-chart-d" class="cmp-chart__svg cmp-chart__svg--d">
+    <title id="cmp-chart-t">{{ A.name }} and {{ B.name }} sub-scores by criterion, out of 5</title>
+    <desc id="cmp-chart-d">{% for c in cmp.crit %}{{ c.name }}: {{ A.name }} {{ c.a if c.a != null else "not scored" }}, {{ B.name }} {{ c.b if c.b != null else "not scored" }}. {% endfor %}</desc>
+    <g class="cmp-chart__legend" transform="translate(0,2)">
+      <rect width="12" height="12" class="cmp-bar--a"/><text x="18" y="10">{{ A.name }}</text>
+      <rect x="{{ 30 + A.name.length * 8 }}" width="12" height="12" class="cmp-bar--b"/><text x="{{ 48 + A.name.length * 8 }}" y="10">{{ B.name }}</text>
+    </g>
+    {%- for t in [1, 2, 3, 4, 5] %}
+    <line x1="{{ labelW + barW * t / 5 }}" x2="{{ labelW + barW * t / 5 }}" y1="{{ top - 8 }}" y2="{{ h - 8 }}" class="cmp-chart__grid"/>
+    <text x="{{ labelW + barW * t / 5 }}" y="{{ top - 12 }}" class="cmp-chart__tick">{{ t }}</text>
+    {%- endfor %}
+    {%- for c in cmp.crit %}
+    {%- set y = top + loop.index0 * rowH %}
+    <text x="0" y="{{ y + 18 }}" class="cmp-chart__label">{{ c.name }}</text>
+    <text x="0" y="{{ y + 36 }}" class="cmp-chart__weight">{{ c.weight }}% of the score</text>
+    <rect x="{{ labelW }}" y="{{ y + 6 }}" height="16" width="{{ (c.a or 0) * barW / 5 }}" class="cmp-bar--a"/>
+    <text x="{{ labelW + (c.a or 0) * barW / 5 + 8 }}" y="{{ y + 19 }}" class="cmp-chart__val">{{ c.a | score1 if c.a != null else "n/d" }}</text>
+    <rect x="{{ labelW }}" y="{{ y + 26 }}" height="16" width="{{ (c.b or 0) * barW / 5 }}" class="cmp-bar--b"/>
+    <text x="{{ labelW + (c.b or 0) * barW / 5 + 8 }}" y="{{ y + 39 }}" class="cmp-chart__val">{{ c.b | score1 if c.b != null else "n/d" }}</text>
+    {%- endfor %}
+  </svg>
+  {%- set mRow = 74 %}{%- set mTop = 48 %}{%- set mBar = 290 %}
+  {%- set mh = mTop + cmp.crit.length * mRow + 4 %}
+  <svg viewBox="0 0 360 {{ mh }}" role="img" aria-label="{{ A.name }} and {{ B.name }} sub-scores by criterion, out of 5" aria-describedby="cmp-chart-dm" class="cmp-chart__svg cmp-chart__svg--m">
+    <title>{{ A.name }} and {{ B.name }} sub-scores by criterion, out of 5</title>
+    <desc id="cmp-chart-dm">{% for c in cmp.crit %}{{ c.name }}: {{ A.name }} {{ c.a if c.a != null else "not scored" }}, {{ B.name }} {{ c.b if c.b != null else "not scored" }}. {% endfor %}</desc>
+    <g class="cmp-chart__legend" transform="translate(0,2)">
+      <rect width="12" height="12" class="cmp-bar--a"/><text x="18" y="10">{{ A.name }}</text>
+      <rect x="{{ 30 + A.name.length * 8 }}" width="12" height="12" class="cmp-bar--b"/><text x="{{ 48 + A.name.length * 8 }}" y="10">{{ B.name }}</text>
+    </g>
+    {%- for c in cmp.crit %}
+    {%- set y = mTop + loop.index0 * mRow %}
+    <text x="0" y="{{ y }}" class="cmp-chart__label">{{ c.name }} <tspan class="cmp-chart__weight">{{ c.weight }}%</tspan></text>
+    <rect x="0" y="{{ y + 10 }}" height="16" width="{{ mBar }}" class="cmp-chart__track"/>
+    <rect x="0" y="{{ y + 10 }}" height="16" width="{{ (c.a or 0) * mBar / 5 }}" class="cmp-bar--a"/>
+    <text x="{{ mBar + 10 }}" y="{{ y + 23 }}" class="cmp-chart__val">{{ c.a | score1 if c.a != null else "n/d" }}</text>
+    <rect x="0" y="{{ y + 30 }}" height="16" width="{{ mBar }}" class="cmp-chart__track"/>
+    <rect x="0" y="{{ y + 30 }}" height="16" width="{{ (c.b or 0) * mBar / 5 }}" class="cmp-bar--b"/>
+    <text x="{{ mBar + 10 }}" y="{{ y + 43 }}" class="cmp-chart__val">{{ c.b | score1 if c.b != null else "n/d" }}</text>
+    {%- endfor %}
+  </svg>
+  <figcaption>Sub-scores from <a href="/methodology/">methodology {{ site.v3.methodologyVersion }}</a>. Each bar comes from a fixed rule; the reason sits in each review's score breakdown.</figcaption>
+</figure>
+{%- endif %}
+
+{%- if block == "glance" %}
+<div class="table-scroll"><table class="cmp-table">
+  <caption>{{ A.name }} and {{ B.name }} at a glance</caption>
+  <thead><tr><th scope="col"></th><th scope="col">{{ A.name }}</th><th scope="col">{{ B.name }}</th></tr></thead>
+  <tbody>{% for r in cmp.glance %}<tr><th scope="row">{{ r[0] }}</th><td>{{ r[1] }}</td><td>{{ r[2] }}</td></tr>{% endfor %}</tbody>
+</table></div>
+{%- endif %}
+
+{%- if block == "reasons" %}
+<div class="table-scroll"><table class="cmp-table cmp-table--reasons">
+  <caption>Why each criterion scored as it did</caption>
+  <thead><tr><th scope="col">Criterion</th><th scope="col">{{ A.name }}</th><th scope="col">{{ B.name }}</th></tr></thead>
+  <tbody>{% for c in cmp.crit %}<tr><th scope="row">{{ c.name }}<small>{{ c.weight }}%</small></th><td><b class="num">{{ c.a | score1 if c.a != null else "n/d" }}</b> {{ c.aNote }}</td><td><b class="num">{{ c.b | score1 if c.b != null else "n/d" }}</b> {{ c.bNote }}</td></tr>{% endfor %}</tbody>
+</table></div>
+{%- endif %}
+
+{%- if block == "pricing" %}
+<div class="cmp-two">
+  {%- for p in [[A, cmp.pricing.a, cmp.pricing.aSummary], [B, cmp.pricing.b, cmp.pricing.bSummary]] %}
+  <div>
+    <h3>{{ p[0].name }}</h3>
+    <p>{{ p[2] }}</p>
+    <ul class="cmp-prices">{% for i in p[1] %}<li><span>{{ i.label }}</span><b>{{ i.value }}</b><small>{{ i.kind }}, checked {{ i.verified }}</small></li>{% endfor %}</ul>
+  </div>
+  {%- endfor %}
+</div>
+{%- endif %}
+
+{%- if block == "caps" %}
+<div class="table-scroll"><table class="cmp-table cmp-table--caps">
+  <caption>What each platform covers, from the vendors' own pages</caption>
+  <thead><tr><th scope="col">Capability</th><th scope="col">{{ A.name }}</th><th scope="col">{{ B.name }}</th></tr></thead>
+  <tbody>{% for r in cmp.caps %}<tr><th scope="row">{{ r.label }}</th>{% for c in [r.a, r.b] %}<td class="cmp-cap cmp-cap--{{ c.kind }}"><b>{{ c.text }}</b>{% if c.note %}<small>{{ c.note }}</small>{% endif %}</td>{% endfor %}</tr>{% endfor %}</tbody>
+</table></div>
+{%- endif %}
+
+{%- if block == "certs" %}
+<div class="table-scroll"><table class="cmp-table">
+  <caption>Certifications and lab tests. "Confirmed" means we opened the letter, certificate or register entry.</caption>
+  <thead><tr><th scope="col"></th><th scope="col">{{ A.name }}</th><th scope="col">{{ B.name }}</th></tr></thead>
+  <tbody>{% for r in cmp.certs %}<tr><th scope="row">{{ r[0] }}</th><td>{{ r[1] }}</td><td>{{ r[2] }}</td></tr>{% endfor %}</tbody>
+</table></div>
+{%- endif %}
+
+{%- if block == "integration" %}
+<div class="table-scroll"><table class="cmp-table cmp-table--caps">
+  <caption>Integration and getting started</caption>
+  <thead><tr><th scope="col"></th><th scope="col">{{ A.name }}</th><th scope="col">{{ B.name }}</th></tr></thead>
+  <tbody>{% for r in cmp.integration %}<tr><th scope="row">{{ r.label }}</th>{% for c in [r.a, r.b] %}<td class="cmp-cap cmp-cap--{{ c.kind }}"><b>{{ c.text }}</b>{% if c.note %}<small>{{ c.note }}</small>{% endif %}</td>{% endfor %}</tr>{% endfor %}</tbody>
+</table></div>
+{%- endif %}
+
+{%- if block == "incidents" %}
+<div class="cmp-two">
+  {%- for p in [[A, cmp.incidents.a], [B, cmp.incidents.b]] %}
+  <div>
+    <h3>{{ p[0].name }}</h3>
+    {%- if p[1].length %}
+    {%- for x in p[1] %}<p><b>{{ x.title }}</b> (<time datetime="{{ x.date | iso }}">{{ x.date | displayDate }}</time>). {{ x.summary }} <a href="/incidents/#{{ x.id }}">Vendor response and sources</a></p>{% endfor %}
+    {%- else %}<p>No breach, data exposure or security incident found in our <a href="/incidents/">incident tracker</a> as of {{ incidents.checked | displayDate }}.</p>{% endif %}
+  </div>
+  {%- endfor %}
+</div>
+{%- endif %}
+
+{%- if block == "ratings" %}
+<div class="table-scroll"><table class="cmp-table">
+  <caption>User ratings, shown separately: they are not part of our score</caption>
+  <thead><tr><th scope="col">Platform</th><th scope="col">{{ A.name }}</th><th scope="col">{{ B.name }}</th></tr></thead>
+  <tbody>{% for r in cmp.ratings %}<tr><th scope="row">{{ r.platform }}</th>{% for x in [r.a, r.b] %}<td>{% if x %}{{ x.rating }} out of 5 from {{ x.count }} reviews <small>checked {{ x.checked }}</small>{% else %}No rating found{% endif %}</td>{% endfor %}</tr>{% endfor %}</tbody>
+</table></div>
+{%- endif %}
+
+{%- endif %}

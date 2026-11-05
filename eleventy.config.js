@@ -8,7 +8,7 @@ const isoDate = (v) => (v instanceof Date ? v.toISOString().slice(0, 10) : Strin
 const slugify = (t) => String(t).toLowerCase().replace(/<[^>]+>/g, "").replace(/&[a-z]+;/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 // Article front matter lists (providers, categories) shadow global objects of the same name.
 const arr = (v) => (Array.isArray(v) ? v : []);
-const SECTION_LABEL = { guide: "Guide", news: "News", publications: "Research" };
+const SECTION_LABEL = { guide: "Guide", news: "News", publications: "Research", compare: "Comparison" };
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 export default function (eleventyConfig) {
@@ -80,7 +80,7 @@ export default function (eleventyConfig) {
   });
   const articleTime = (a) => isoDate(a.data.published || a.data.updated);
   eleventyConfig.addCollection("articles", (api) =>
-    api.getFilteredByGlob(["src/guide/*.md", "src/news/*.md", "src/publications/*.md"])
+    api.getFilteredByGlob(["src/guide/*.md", "src/news/*.md", "src/publications/*.md", "src/compare/*.md"])
       .sort((a, b) => articleTime(b).localeCompare(articleTime(a))));
   // Cache-busting: ?v=<content hash> so browsers never pair new HTML with an old cached stylesheet.
   eleventyConfig.addFilter("assetVersion", (url) => {
