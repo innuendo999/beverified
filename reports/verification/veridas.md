@@ -59,3 +59,8 @@
 - transaction_monitoring: not_disclosed (nothing found on vendor pages), no source
 
 Veridas states it gives access to AML watchlist databases "including ComplyAdvantage"; the VALi-DAS docs list PEP and AML under third-party checks, and sample output carries a ComplyAdvantage adverse media label. Treated as partner-delivered (add_on). No transaction monitoring found.
+
+## Merger completion 2026-11-05
+
+- Fourthline and Veridas completed their merger on 3 Nov 2026 (Fourthline release, new last source). Updated verdict, ownership fact, the merger con and the ownership FAQ in this record. CEO Paul Stoddart, president Eduardo Azanza, supervisory board chair Radboud Vlaar (Finch Capital); up to EUR 65m from Finch Capital, Seaya Andromeda and Ashgrove Capital; no new brand name. `last_verified` not changed (ownership only, not a full re-check).
+- Score flag: ownership changed; score unchanged pending the v3.1 re-score.

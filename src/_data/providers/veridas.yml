@@ -24,9 +24,9 @@ link:
   legacy_rel: nofollow sponsored
 last_verified: '2026-10-22'
 updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
-verdict: Veridas built its name on its own biometrics, facial and voice recognition that it says ranked near the top of NIST testing, instead of reselling third-party models. Founded in 2017 as a joint venture with BBVA, it is strongest in Spain, Latin America and Europe, and its liveness detection has passed iBeta ISO 30107-3 testing. In July 2026 it agreed to merge with Amsterdam-based Fourthline; the deal was expected to close in the second half of 2026.
+verdict: Veridas built its name on its own biometrics, facial and voice recognition that it says ranked near the top of NIST testing, instead of reselling third-party models. Founded in 2017 as a joint venture with BBVA, it is strongest in Spain, Latin America and Europe, and its liveness detection has passed iBeta ISO 30107-3 testing. On 3 November 2026 it completed its merger with Amsterdam-based Fourthline; Fourthline's CEO runs the combined company and Veridas's CEO Eduardo Azanza becomes president.
 what_is:
-- Veridas is an identity-verification and biometrics company founded in 2017 and headquartered in Tajonar, near Pamplona, in Navarra, Spain, created as a joint venture between BBVA and das-Nano. Led by CEO Eduardo Azanza, it develops its own facial and voice biometric technology alongside document verification, and says it serves more than 350 clients in 25 countries across banking, insurance, telecoms and public administration. In July 2026 Veridas agreed to merge with Fourthline, with BBVA and other Veridas shareholders staying on as shareholders of the combined company; closing was expected in the second half of 2026, subject to regulatory approvals.
+- Veridas is an identity-verification and biometrics company founded in 2017 and headquartered in Tajonar, near Pamplona, in Navarra, Spain, created as a joint venture between BBVA and das-Nano. Led by CEO Eduardo Azanza, it develops its own facial and voice biometric technology alongside document verification, and says it serves more than 350 clients in 25 countries across banking, insurance, telecoms and public administration. Veridas merged with Fourthline on 3 November 2026. The combined company is led by Fourthline CEO Paul Stoddart, with Eduardo Azanza as president, and the companies say existing contracts, integrations and local support continue.
 features:
 - AI-powered document verification and facial biometrics for identity checks.
 - Voice authentication for IVR, contact-center and chatbot identity checks.
@@ -76,8 +76,8 @@ facts:
   source: 5
   evidence: vendor
 - label: Ownership
-  value: BBVA joint venture; merger with Fourthline agreed Jul 2026, pending
-  source: 6
+  value: Part of Fourthline Group Holding B.V. since the merger closed on 3 Nov 2026
+  source: 23
   evidence: independent
 pros:
 - Own face and voice biometrics, with liveness confirmed by iBeta ISO 30107-3 testing
@@ -86,7 +86,7 @@ pros:
 cons:
 - Smaller global scale than category leaders
 - Strongest presence in Spain, Europe and Latin America, less elsewhere
-- Pending merger with Fourthline means product and brand changes are possible
+- Merged into Fourthline in November 2026, with the platforms to be integrated in phases, so product and brand changes are likely
 alternatives:
 - slug: onfido
   name: Onfido
@@ -122,7 +122,7 @@ faq:
 - q: What makes Veridas different from other IDV providers?
   a: Veridas builds its own facial and voice biometric technology in-house rather than reselling third-party recognition models. It says its face engine ranked fourth in NIST's FRVT 1:N test in 2023, and its liveness detection has passed iBeta ISO 30107-3 Level 1 and Level 2 testing.
 - q: Who owns Veridas?
-  a: Veridas was founded in 2017 as a joint venture between BBVA and das-Nano. In April 2023 it announced a EUR 15 million capital increase from its existing partners. In July 2026 it agreed to merge with Fourthline; Veridas shareholders, including BBVA, are to remain shareholders of the combined company. Closing was expected in the second half of 2026.
+  a: Veridas was founded in 2017 as a joint venture between BBVA and das-Nano. In April 2023 it announced a EUR 15 million capital increase from its existing partners. In July 2026 it agreed to merge with Fourthline; The merger closed on 3 November 2026 and included partial liquidity for Veridas shareholders; the closing release does not say what stake BBVA now holds.
 - q: Does Veridas support voice authentication?
   a: Yes. Voice biometrics is one of Veridas' core technologies, used in IVR, contact centers and chatbots, and its Voice Shield product passed iBeta Level 1 presentation attack testing in December 2024.
 - q: What is the best alternative to Veridas?
@@ -293,6 +293,10 @@ sources:
   publisher: 'Veridas'
   url: https://docs.veridas.com/digital-onboarding-general-information/cloud/2026.6
   accessed: '2026-10'
+- title: Fourthline and Veridas complete merger (3 November 2026)
+  publisher: Fourthline
+  url: https://www.fourthline.com/news/fourthline-and-veridas-complete-merger
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null
