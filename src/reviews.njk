@@ -197,11 +197,11 @@ layout: v3.njk
   <section id="incidents" aria-labelledby="inc-h">
     <h2 id="inc-h" class="h-section h-section--tight">Security incidents</h2>
     <p class="section-lede">From our <a href="/incidents/">vendor incident tracker</a>, with sources and the vendor's response.</p>
-    <div class="rv-inc">
+    <ol class="rv-inc">
       {%- for x in incidentList %}
-      <div class="card rv-inc__item"><span class="inc-sev inc-sev--{{ x.sensitivity }}" aria-hidden="true"></span><div><b>{{ x.title }}</b> <span class="fs-14 c-muted">· <time datetime="{{ x.date | iso }}">{{ x.date | displayDate }}</time>{% if x.counted == false %} · not counted in score{% endif %}</span></div><p>{{ x.summary }} <a href="/incidents/#{{ x.id }}">Details and sources</a></p></div>
+      <li><span class="rv-inc__date num"><time datetime="{{ x.date | iso }}">{{ x.date | displayDate }}</time></span><div><b>{{ x.title }}</b>{% if x.counted == false %} <span class="c-muted">(not counted in score)</span>{% endif %}<p>{{ x.summary }} <a href="/incidents/#{{ x.id }}">Vendor response and sources</a></p></div></li>
       {%- endfor %}
-    </div>
+    </ol>
   </section>
   {%- endif %}
 

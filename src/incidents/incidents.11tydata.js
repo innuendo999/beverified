@@ -1,13 +1,16 @@
 // /incidents/ security incident tracker. Data: src/_data/incidents.yml (one record per incident).
 const TYPE = { breach: "Data breach", security_incident: "Security incident", exposure: "Data exposure", credential_exposure: "Credential exposure", regulatory: "Regulatory action" };
 const STATUS = { contained: "Contained", investigating: "Under investigation", disputed: "Disputed by vendor", litigation: "Litigation pending", resolved: "Resolved" };
-const SENS = { high: "High: ID documents or national ID numbers", medium: "Medium: contact or account data", low: "Low: no personal data reported" };
+const OUTCOME = { pending: "Appeal under review", upheld: "Appeal upheld", partly_upheld: "Appeal partly upheld", rejected: "Appeal not upheld" };
 const items = (d) => (d.incidents?.items || []).slice().sort((a, b) => b.date.localeCompare(a.date)).map((x) => ({
   ...x,
   typeLabel: TYPE[x.type] || x.type,
   statusLabel: STATUS[x.status] || x.status,
-  sensLabel: SENS[x.sensitivity] || "",
+  appealLabel: x.appeal ? OUTCOME[x.appeal.outcome] || "" : "",
+  mailto: `mailto:support@beverified.org?subject=${encodeURIComponent(`Incident tracker: correction or appeal (${x.id})`)}`,
   year: x.date.slice(0, 4),
+  // "ID document images, postal addresses, dates of birth": one sentence, acronyms kept.
+  dataText: (x.data || []).map((s, i) => (i && /^[A-Z][a-z]/.test(s) ? s[0].toLowerCase() + s.slice(1) : s)).join(", "),
   p: d.providers?.[x.slug] || null,
 }));
 export default {

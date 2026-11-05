@@ -10,6 +10,8 @@
 # type: breach | security_incident | exposure | credential_exposure | regulatory
 # sensitivity: high (ID documents, biometrics, national ID numbers) | medium (contact or account data) | low (no personal data reported)
 # status: contained | investigating | disputed | litigation | resolved
+# corrections: [{date, change}]  every accepted correction, newest first (shown on the entry)
+# appeal: {received, outcome: pending | upheld | partly_upheld | rejected, decided, note}  a vendor appeal and its result
 checked: '2026-11-05'
 items:
 - id: relycomply-2026-09

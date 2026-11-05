@@ -1,108 +1,84 @@
 ---
 layout: v3.njk
 ---
-{#- Security incident tracker. Data: src/_data/incidents.yml; computed fields: incidents.11tydata.js -#}
-<main id="main" class="container inc">
+{#- Security incident tracker. Data: src/_data/incidents.yml; computed fields: incidents.11tydata.js.
+    Concept: a public register. Each row opens to the record and the vendor's reply side by side. -#}
+<main id="main" class="container reg">
   <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li class="sep" aria-hidden="true">›</li><li aria-current="page">Incident tracker</li></ol></nav>
 
-  <header class="inc-hero">
-    <p class="inc-hero__kicker"><span class="inc-dot" aria-hidden="true"></span>Vendor risk · checked <time datetime="{{ incidents.checked | iso }}">{{ incidents.checked | displayDate }}</time></p>
-    <h1 class="h-display">Security incidents at KYC and identity verification vendors</h1>
-    <p class="inc-hero__lede">Identity vendors hold passport scans, selfies and screening files for thousands of companies. This tracker lists every breach, data exposure and security incident we could confirm at the vendors we review, with what was exposed, what the vendor said and where the facts come from.</p>
-    <dl class="inc-stats">
-      <div><dt>Incidents tracked</dt><dd class="num">{{ stats.total }}</dd></div>
-      <div><dt>Vendors involved</dt><dd class="num">{{ stats.vendors }}</dd></div>
-      <div><dt>Involved ID documents or ID numbers</dt><dd class="num">{{ stats.idDocs }}</dd></div>
-      <div><dt>In the last 24 months</dt><dd class="num">{{ stats.recent }}</dd></div>
-    </dl>
+  <header class="reg-head">
+    <h1 class="reg-head__title">Security incidents at the identity and AML vendors we review</h1>
+    <p class="reg-head__lede">A register of breaches, data exposures and security incidents, each with what the record shows and what the vendor says. {{ stats.total }} entries, {{ stats.recent }} from the last 24 months. Checked on <time datetime="{{ incidents.checked | iso }}">{{ incidents.checked | displayDate }}</time>.</p>
+    <p class="reg-head__aside">Are you one of these vendors? You can <a href="#appeals">correct or appeal an entry</a>.</p>
   </header>
 
-  <div class="inc-layout">
-    <aside class="inc-side" aria-label="About this tracker">
-      <div class="inc-side__box">
-        <h2>How to read it</h2>
-        <ul class="inc-legend">
-          <li><span class="inc-sev inc-sev--high" aria-hidden="true"></span><span><b>High</b> ID documents, biometrics or national ID numbers</span></li>
-          <li><span class="inc-sev inc-sev--medium" aria-hidden="true"></span><span><b>Medium</b> contact or account data</span></li>
-          <li><span class="inc-sev inc-sev--low" aria-hidden="true"></span><span><b>Low</b> no personal data reported</span></li>
-        </ul>
-        <p>Claims made in lawsuits are allegations, not findings. The vendor's response sits next to every entry.</p>
-      </div>
-      <nav class="inc-side__box" aria-label="Jump to a vendor">
-        <h2>Vendors</h2>
-        {%- for x in list %}<a class="inc-jump" href="#{{ x.id }}"><span>{{ x.vendor }}</span><span class="num">{{ x.date | displayDate }}</span></a>{% endfor %}
-      </nav>
-    </aside>
-
-    <div class="inc-feed">
-      {%- for y in years %}
-      <section class="inc-year" aria-labelledby="y-{{ y }}">
-        <h2 id="y-{{ y }}" class="inc-year__label num">{{ y }}</h2>
-        <ol class="inc-list">
-          {%- for x in list %}{% if x.year == y %}
-          <li class="inc-item inc-item--{{ x.sensitivity }}" id="{{ x.id }}">
-            <article class="inc-card" aria-labelledby="{{ x.id }}-h">
-              <div class="inc-card__top">
-                <div class="inc-card__vendor">
-                  {%- if x.p and x.p.logo and x.p.logo.src %}<span class="inc-logo"><img src="{{ x.p.logo.wordmark or x.p.logo.src }}" alt="" loading="lazy"></span>{% endif %}
-                  <div>
-                    {%- if x.p %}<a class="inc-card__name" href="/providers/{{ x.slug }}/">{{ x.vendor }}</a>{% else %}<span class="inc-card__name">{{ x.vendor }}</span>{% endif %}
-                    <span class="inc-card__date"><time datetime="{{ x.date | iso }}">{{ x.date | displayDate }}</time> · {{ x.occurred }}</span>
-                  </div>
-                </div>
-                <div class="inc-tags">
-                  <span class="pill">{{ x.typeLabel }}</span>
-                  <span class="pill inc-status inc-status--{{ x.status }}">{{ x.statusLabel }}</span>
-                  {%- if x.counted == false %}<span class="pill pill--soon">Not counted in score</span>{% endif %}
-                </div>
+  <section class="reg" aria-labelledby="reg-h">
+    <h2 id="reg-h" class="visually-hidden">Register</h2>
+    <div class="reg-cols" aria-hidden="true"><span>Date</span><span>Vendor and what happened</span><span>Data exposed</span><span>Status</span></div>
+    <ol class="reg-list">
+      {%- for x in list %}
+      <li id="{{ x.id }}" class="reg-row">
+        <details>
+          <summary>
+            <span class="reg-date num"><time datetime="{{ x.date | iso }}">{{ x.date | displayDate }}</time></span>
+            <span class="reg-what"><b>{{ x.vendor }}</b><span>{{ x.title }}</span></span>
+            <span class="reg-data reg-data--{{ x.sensitivity }}">{{ x.dataText }}</span>
+            <span class="reg-status">{{ x.statusLabel }}{% if x.counted == false %}<em>Not counted in score</em>{% endif %}{% if x.appealLabel %}<em>{{ x.appealLabel }}</em>{% endif %}</span>
+          </summary>
+          <div class="reg-entry">
+            <div class="reg-split">
+              <div class="reg-side">
+                <h3>What the record shows</h3>
+                <p>{{ x.summary }}</p>
+                <dl class="reg-facts">
+                  <div><dt>Type</dt><dd>{{ x.typeLabel }}</dd></div>
+                  <div><dt>When</dt><dd>{{ x.occurred }}</dd></div>
+                  <div><dt>Scale</dt><dd>{{ x.scale }}</dd></div>
+                </dl>
               </div>
-              <h3 id="{{ x.id }}-h" class="inc-card__title">{{ x.title }}</h3>
-              <p class="inc-card__summary">{{ x.summary }}</p>
-              <dl class="inc-facts">
-                <div><dt>Sensitivity</dt><dd><span class="inc-sev inc-sev--{{ x.sensitivity }}" aria-hidden="true"></span>{{ x.sensLabel }}</dd></div>
-                <div><dt>Scale</dt><dd>{{ x.scale }}</dd></div>
-                <div class="inc-facts--wide"><dt>Data involved</dt><dd class="inc-chips">{% for t in x.data %}<span class="chip">{{ t }}</span>{% endfor %}</dd></div>
-              </dl>
-              <div class="inc-response">
-                <h4>What {{ x.vendor }} says</h4>
+              <div class="reg-side reg-side--reply">
+                <h3>What {{ x.vendor }} says</h3>
                 <p>{{ x.response }}</p>
+                {%- if x.appeal %}
+                <p class="reg-appeal"><b>{{ x.appealLabel }}</b>{% if x.appeal.decided %}, <time datetime="{{ x.appeal.decided | iso }}">{{ x.appeal.decided | displayDate }}</time>{% endif %}. {{ x.appeal.note }}</p>
+                {%- endif %}
               </div>
-              <p class="inc-since"><b>Since:</b> {{ x.since }}</p>
-              <div class="inc-card__foot">
-                <ol class="inc-sources">{% for s in x.sources %}<li><a href="{{ s.url }}" rel="nofollow noopener">{{ s.title }}</a> <span>{{ s.publisher }}</span></li>{% endfor %}</ol>
-                <div class="inc-links">{% if x.news %}<a class="pill-link" href="{{ x.news }}">Read our report</a>{% endif %}{% if x.p %}<a class="pill-link" href="/providers/{{ x.slug }}/">{{ x.vendor }} review</a>{% endif %}</div>
-              </div>
-            </article>
-          </li>
-          {%- endif %}{% endfor %}
-        </ol>
-      </section>
+            </div>
+            <p class="reg-since"><b>Since then.</b> {{ x.since }}</p>
+            {%- if x.corrections and x.corrections.length %}
+            <div class="reg-corr"><h4>Corrections</h4><ul>{% for c in x.corrections %}<li><time datetime="{{ c.date | iso }}">{{ c.date | displayDate }}</time>: {{ c.change }}</li>{% endfor %}</ul></div>
+            {%- endif %}
+            <div class="reg-foot">
+              <ol class="reg-sources">{% for s in x.sources %}<li><a href="{{ s.url }}" rel="nofollow noopener">{{ s.title }}</a>, {{ s.publisher }}</li>{% endfor %}</ol>
+              <p class="reg-links">
+                {%- if x.news %}<a href="{{ x.news }}">Our report</a>{% endif %}
+                {%- if x.p %}<a href="/providers/{{ x.slug }}/">{{ x.vendor }} review</a>{% endif %}
+                <a href="{{ x.mailto }}">Correct or appeal this entry</a>
+              </p>
+            </div>
+          </div>
+        </details>
+      </li>
       {%- endfor %}
+    </ol>
+  </section>
 
-      <section class="inc-table" aria-labelledby="tbl-h">
-        <h2 id="tbl-h" class="h-section">All incidents at a glance</h2>
-        <div class="table-scroll">
-          <table>
-            <caption>Security incidents at reviewed KYC, IDV and AML vendors, newest first, as of {{ incidents.checked | displayDate }}</caption>
-            <thead><tr><th scope="col">Date</th><th scope="col">Vendor</th><th scope="col">Type</th><th scope="col">Sensitivity</th><th scope="col">Status</th><th scope="col">In score</th></tr></thead>
-            <tbody>
-              {%- for x in list %}
-              <tr><td class="num"><a href="#{{ x.id }}">{{ x.date | displayDate }}</a></td><th scope="row">{{ x.vendor }}</th><td>{{ x.typeLabel }}</td><td>{{ x.sensitivity | capitalize }}</td><td>{{ x.statusLabel }}</td><td>{% if x.counted == false %}No{% else %}Yes{% endif %}</td></tr>
-              {%- endfor %}
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="inc-rules" aria-labelledby="rules-h">
-        <h2 id="rules-h" class="h-section">What goes in, and what does not</h2>
-        <div class="grid-3">
-          <div class="card card--pad"><h3 class="card__title">Included</h3><p>Data breaches, exposures of personal data, confirmed security incidents and regulatory actions at vendors we review, reported since 2024.</p></div>
-          <div class="card card--pad"><h3 class="card__title">Not included</h3><p>Private lawsuits with no breach behind them, such as biometric consent suits, and incidents at a vendor's customer that did not touch the vendor's systems.</p></div>
-          <div class="card card--pad"><h3 class="card__title">Sources</h3><p>The vendor's own statement, official breach notices, regulators and courts first. News reports are used to add detail, and are named.</p></div>
-        </div>
-        <p class="inc-note">Every vendor is treated the same way, including those we earn money from. Vendors can send a response or a correction to <a href="mailto:support@beverified.org?subject=Incident%20tracker">support@beverified.org</a>, and we add it to the entry when a source supports it. Incidents feed the track record part of a provider's score, as described in <a href="/methodology/">our methodology</a>; entries marked "Not counted in score" do not.</p>
-      </section>
-    </div>
+  <div class="reg-notes">
+    <section aria-labelledby="scope-h">
+      <h2 id="scope-h">What is in the register</h2>
+      <p>Data breaches, exposures of personal data, confirmed security incidents and regulatory actions at vendors we review, reported since 2024. Private lawsuits with no breach behind them, such as biometric consent suits, are left out, and so are incidents at a vendor's customer that never touched the vendor's systems.</p>
+      <p>We rely on the vendor's own statement, official breach notices, regulators and courts first, and name any news report we use. What a lawsuit claims is reported as a claim. Every vendor is treated the same way, including those we earn money from.</p>
+      <p>In the data column, <b>bold</b> marks ID documents, biometrics or national ID numbers. An incident from the last 24 months feeds the track record part of the provider's score, as set out in <a href="/methodology/">our methodology</a>, unless the entry says "Not counted in score".</p>
+    </section>
+    <section id="appeals" aria-labelledby="ap-h">
+      <h2 id="ap-h">Corrections and appeals</h2>
+      <p>A vendor named here can ask us to correct a fact or appeal an entry. Use the link at the bottom of the entry, or write to <a href="mailto:support@beverified.org?subject=Incident%20tracker%3A%20correction%20or%20appeal">support@beverified.org</a>, and include:</p>
+      <ol>
+        <li>the entry you mean and the sentence you dispute;</li>
+        <li>a source we can check, such as your own published statement, a regulator's finding or a court document;</li>
+        <li>if you want it shown, the response you want next to the entry.</li>
+      </ol>
+      <p>We check every request against its source. A correction that holds up is made to the entry and listed under Corrections with its date. An appeal is shown on the entry while we review it, then as upheld, partly upheld or not upheld, with a short reason. An appeal can remove an entry only if the source shows the incident did not happen at your company. Payment or a commercial relationship never changes an entry.</p>
+    </section>
   </div>
 </main>
