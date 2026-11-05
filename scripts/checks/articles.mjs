@@ -6,7 +6,7 @@ import matter from "gray-matter";
 import yaml from "js-yaml";
 
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "../..");
-const SECTIONS = ["guide", "news", "publications"];
+const SECTIONS = ["guide", "news", "publications", "compare"];
 const providers = new Set(fs.readdirSync(path.join(root, "src/_data/providers")).map((f) => f.replace(/\.yml$/, "")));
 const rankings = yaml.load(fs.readFileSync(path.join(root, "src/_data/rankings.yml"), "utf8"));
 const catUrls = fs.readdirSync(path.join(root, "src/_data/categories")).map((f) =>
@@ -20,7 +20,7 @@ const glossaryUrls = fs.existsSync(path.join(root, "src/_data/glossary"))
 const plannedArticles = fs.existsSync(path.join(root, "src/_data/articlePlan.yml"))
   ? yaml.load(fs.readFileSync(path.join(root, "src/_data/articlePlan.yml"), "utf8")) : [];
 const urls = new Set([
-  "/", "/providers/", "/use-cases/", "/regions/", "/methodology/", "/methodology/#disclosure", "/about/",
+  "/", "/providers/", "/use-cases/", "/regions/", "/methodology/", "/incidents/", "/methodology/#disclosure", "/about/",
   "/placement-options/", "/blog/", "/category/guide/", "/category/news/", "/category/publications/",
   "/authors/andrii-klymenko/",
   ...[...providers].map((p) => `/providers/${p}/`),

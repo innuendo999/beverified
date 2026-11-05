@@ -16,7 +16,7 @@ const { chromium } = require("playwright");
 const ROOT = path.resolve(__dirname, "..");
 const OUT = path.join(ROOT, "src/assets/img/covers");
 const FONT = path.join(ROOT, "src/assets/fonts/Geist-Variable.woff2");
-const SECTIONS = { guide: "Guide", news: "News", publications: "Research" };
+const SECTIONS = { guide: "Guide", news: "News", publications: "Research", compare: "Comparison" };
 const T = { ink: "#14141A", body: "#4A4A55", muted: "#6A6A74", bg: "#F7F6F3", line: "#E6E4DF", barA: "#DAD7D1", barB: "#CFCCC6", accent: "#5B2BD9", surface: "#FFFFFF" };
 
 const args = process.argv.slice(2);
@@ -53,7 +53,7 @@ const PAL = {
   dark:   { bg: "#14141A", s: "#2A2A33", d: "#050507", i: "#F7F6F3", a: "#7B57F0", a2: "#3A2F66", m: "#4A4A55", text: "#F7F6F3", sub: "#A99BF5" },
   accent: { bg: "#5B2BD9", s: "#FFFFFF", d: "#4A1FBF", i: "#14141A", a: "#14141A", a2: "#E9E3FB", m: "#DAD2F7", text: "#FFFFFF", sub: "#E9E3FB" },
 };
-const ORDER = { news: ["dark", "violet", "warm", "accent"], guide: ["violet", "light", "dark", "warm"], publications: ["accent", "warm", "violet", "dark"] };
+const ORDER = { news: ["dark", "violet", "warm", "accent"], guide: ["violet", "light", "dark", "warm"], publications: ["accent", "warm", "violet", "dark"], compare: ["light", "violet", "warm", "dark"] };
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 

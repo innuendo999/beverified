@@ -964,4 +964,58 @@ main.reg { padding-bottom: 96px; }
   .reg-foot { grid-template-columns: minmax(0, 1fr); }
   .reg-links { white-space: normal; }
 }
+
+/* ---------- Comparison articles (/compare/<a>-vs-<b>/) ---------- */
+.cmp-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); border-top: 2px solid var(--ink); border-bottom: 1px solid var(--line-strong); margin: 28px 0; }
+.cmp-head__col { padding: 20px 24px 22px 0; }
+.cmp-head__col + .cmp-head__col { padding: 20px 0 22px 24px; border-left: 1px solid var(--line-strong); }
+.cmp-head__logo { height: 28px; width: auto; display: block; }
+.cmp-head__name { font-size: 22px; }
+.cmp-head__score { margin-top: 14px; font-size: 15px; color: var(--body); }
+.cmp-head__score .num { font-size: 34px; font-weight: 600; letter-spacing: -0.03em; color: var(--ink); margin-right: 4px; }
+.cmp-head__tag { margin-top: 6px; color: var(--body); line-height: 1.5; }
+.cmp-head__col a { display: inline-block; margin-top: 10px; font-size: 15px; }
+.cmp-chart { margin: 24px 0 8px; }
+.cmp-chart__svg { width: 100%; height: auto; display: block; font-family: var(--font); }
+.cmp-chart__svg .cmp-bar--a { fill: var(--accent); }
+.cmp-chart__svg .cmp-bar--b { fill: var(--ink); }
+.cmp-chart__grid { stroke: var(--line); stroke-width: 1; }
+.cmp-chart__tick { font-size: 12px; fill: var(--muted); text-anchor: middle; }
+.cmp-chart__label { font-size: 15px; font-weight: 600; fill: var(--ink); }
+.cmp-chart__weight { font-size: 13px; fill: var(--muted); }
+.cmp-chart__val { font-size: 13px; fill: var(--ink); font-variant-numeric: tabular-nums; }
+.cmp-chart__legend text { font-size: 13px; fill: var(--body); }
+.cmp-chart figcaption { font-size: 14px; color: var(--muted); margin-top: 8px; }
+.cmp-table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 8px 0 4px; }
+.cmp-table caption { caption-side: top; text-align: left; font-size: 14px; color: var(--body); padding: 0 0 8px; }
+.cmp-table thead th { text-align: left; font-weight: 600; color: var(--ink); padding: 10px 14px 10px 0; border-bottom: 2px solid var(--ink); }
+.cmp-table tbody th { text-align: left; font-weight: 500; color: var(--ink); padding: 12px 14px 12px 0; vertical-align: top; width: 30%; }
+.cmp-table td { padding: 12px 14px 12px 0; color: var(--body); vertical-align: top; width: 35%; }
+.cmp-table tbody tr { border-bottom: 1px solid var(--line-strong); }
+.cmp-table small { display: block; font-size: 13px; color: var(--muted); margin-top: 2px; font-weight: 400; }
+.cmp-table--reasons td b { display: inline-block; min-width: 34px; color: var(--ink); }
+.cmp-cap b { font-weight: 600; color: var(--ink); }
+.cmp-cap--no b, .cmp-cap--not_disclosed b { font-weight: 400; color: var(--muted); }
+.cmp-two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0; border-top: 2px solid var(--ink); margin: 12px 0; }
+.cmp-two > div { padding: 16px 24px 4px 0; }
+.cmp-two > div + div { padding: 16px 0 4px 24px; border-left: 1px solid var(--line-strong); }
+.cmp-two h3 { font-size: 17px; font-weight: 600; margin: 0 0 8px; }
+.cmp-two p { font-size: 15px; line-height: 1.6; color: var(--body); margin: 0 0 10px; }
+.cmp-prices { list-style: none; padding: 0; margin: 8px 0 0; }
+.cmp-prices li { padding: 10px 0; border-top: 1px solid var(--line-soft); font-size: 15px; }
+.cmp-prices span { display: block; color: var(--body); }
+.cmp-prices b { display: block; color: var(--ink); font-variant-numeric: tabular-nums; margin-top: 2px; }
+.cmp-prices small { display: block; font-size: 13px; color: var(--muted); margin-top: 2px; }
+@media (max-width: 860px) {
+  .cmp-head, .cmp-two { grid-template-columns: minmax(0, 1fr); }
+  .cmp-head__col + .cmp-head__col, .cmp-two > div + div { border-left: 0; border-top: 1px solid var(--line-strong); padding-left: 0; }
+  .cmp-table tbody th { width: auto; }
+}
+.legacy-prose table.cmp-table { display: table; width: 100%; background: transparent; border-radius: 0; overflow: visible; margin: 8px 0 4px; }
+.legacy-prose .cmp-table th, .legacy-prose .cmp-table td { background: transparent; }
+.cmp-chart__svg--m { display: none; }
+.cmp-chart__track { fill: var(--line-soft); }
+@media (max-width: 600px) {
+  .cmp-chart__svg--d { display: none; }
+  .cmp-chart__svg--m { display: block; }
 }

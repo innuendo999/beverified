@@ -16,4 +16,8 @@ export default [
     lede: "Regulatory and market news for compliance teams, with an update on what has happened since.",
     seoTitle: "KYC & AML News | BeVerified",
     seoDescription: "Regulatory and market news on AML, KYC and digital identity, with follow-ups on what changed since each story." },
+  { key: "compare", url: "/category/compare/", tab: "Comparisons", crumb: "Comparisons", h1: "KYC and AML provider comparisons",
+    lede: "Two providers side by side, built from the same records as our reviews: scores, prices, certifications, coverage and incidents.",
+    seoTitle: "KYC & AML Provider Comparisons | BeVerified",
+    seoDescription: "Side-by-side comparisons of KYC, identity verification and AML providers: scores, pricing, certifications, coverage and security incidents." },
 ];
