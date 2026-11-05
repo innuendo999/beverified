@@ -41,12 +41,13 @@ function fraudDefense(d) {
     if (keys.some((k) => cap(d, k)?.independent)) s += 0.5;
     return [s, "KYB guide", "vendor"];
   }
-  const pad = certs(d).filter((c) => /30107-3/.test(c.name));
-  const lvl = Math.max(0, ...pad.filter((c) => c.status === "confirmed").map((c) => +((c.name.match(/Level\s*(\d)/i) || [])[1] || 0)));
+  const pad = certs(d).filter((c) => /30107/.test(c.name));
+  // Level from name or "what"; a confirmed PAD certificate without a stated level counts as Level 1.
+  const lvl = Math.max(0, ...pad.filter((c) => c.status === "confirmed").map((c) => +(((c.name + " " + (c.what || "")).match(/Level\s*(\d)/i) || [])[1] || 1)));
   let s, why, ev = "independent";
-  if (lvl >= 3) [s, why] = [4.5, "iBeta Level 3"];
-  else if (lvl === 2) [s, why] = [4, "iBeta Level 2"];
-  else if (lvl === 1) [s, why] = [3, "iBeta Level 1"];
+  if (lvl >= 3) [s, why] = [4.5, "PAD Level 3 lab result"];
+  else if (lvl === 2) [s, why] = [4, "PAD Level 2 lab result"];
+  else if (lvl === 1) [s, why] = [3, "PAD Level 1 lab result"];
   else if (pad.length || yes(cap(d, "liveness"))) [s, why, ev] = [2, "liveness, no lab letter", "vendor"];
   else if (cap(d, "liveness")?.status === "no" || cap(d, "identity_verification")?.status === "no") [s, why, ev] = [1.5, "no liveness product", "vendor"];
   else return [null, "no liveness data"];
@@ -65,8 +66,9 @@ function pricing(d) {
     return [s, `published${m.minimum ? ", monthly minimum" : ""}${m.trial ? ", trial or free tier" : ""}`, "vendor"];
   }
   if (m.published === "partial") return [3, "some modules priced", "vendor"];
-  if ((d.pricing.items || []).some((x) => x.kind === "third_party")) return [2, "quoted; third-party contract data", "vendor"];
-  return [null, "no price information"];
+  // Quote only: the absence of a published price is itself a known fact, so it scores 2 whether or not
+  // third-party data exists (otherwise a vendor with Vendr data would score below one with none).
+  return [2, "price not published, quoted by sales", "vendor"];
 }
 
 function coverage(d) {
@@ -113,7 +115,7 @@ function trust(d) {
   if (certs(d).some((c) => c.status === "confirmed" && /DIATF|Digital Verification Serv|29003|eIDAS|ETSI|Kantara|PVID/i.test(c.name + " " + (c.what || "")))) { pts += 1.5; why.push("trust framework confirmed"); }
   const dep = cap(d, "deployment")?.status;
   if (yes(cap(d, "data_residency")) || ["on_prem", "cloud_and_on_prem"].includes(dep)) { pts += 0.5; why.push("data residency or on-premises"); }
-  const founded = +(String((d.facts || []).find((f) => f.label === "Founded")?.value || "").match(/\b(19|20)\d{2}\b/)?.[0] || NaN);
+  const founded = +(String((d.facts || []).find((f) => /^(Founded|Incorporated|Established)$/i.test(f.label))?.value || "").match(/\b(19|20)\d{2}\b/)?.[0] || NaN);
   const own = d.track_record?.ownership?.status;
   if (founded && TODAY.getFullYear() - founded >= 5 && ["stable", "changed_disclosed"].includes(own)) { pts += 1; why.push(`operating since ${founded}`); }
   const recent = (d.track_record?.incidents || []).filter((x) => (TODAY - new Date(x.date)) / 864e5 <= 730);
@@ -147,11 +149,14 @@ export function score(d) {
   const scored = rows.filter((r) => r.score != null);
   const w = scored.reduce((a, r) => a + r.weight, 0);
   const total = w ? Math.round((scored.reduce((a, r) => a + r.weight * r.score, 0) / w) * 10) / 10 : null;
-  return { family: fam, rows, total, coverage: w };
+  const alt = rows.filter((r) => r.score != null && !(r.key === "pricing" && d.pricing?.model?.published === "none"));
+  const wa = alt.reduce((a, r) => a + r.weight, 0);
+  const totalAlt = wa ? Math.round((alt.reduce((a, r) => a + r.weight * r.score, 0) / wa) * 10) / 10 : null;
+  return { family: fam, rows, total, coverage: w, totalAlt };
 }
 
 const files = fs.readdirSync(dir).filter((f) => f.endsWith(".yml")).map((f) => f.replace(/\.yml$/, "")).filter((s) => !only.length || only.includes(s));
-const out = [["slug", "family", "old_score", "new_score", "change", "weight_scored", ...RUBRICS.identity.map((r) => r[0]), "screening", "workflow", "missing"]];
+const out = [["slug", "family", "old_score", "new_score", "change", "alt_quote_not_scored", "weight_scored", ...RUBRICS.identity.map((r) => r[0]), "screening", "workflow", "missing"]];
 for (const slug of files) {
   const file = path.join(dir, `${slug}.yml`);
   const text = fs.readFileSync(file, "utf8");
@@ -161,7 +166,7 @@ for (const slug of files) {
   if (!r) continue;
   const by = Object.fromEntries(r.rows.map((x) => [x.key, x.score ?? ""]));
   const missing = r.rows.filter((x) => x.score == null).map((x) => `${x.key}: ${x.note}`).join("; ");
-  out.push([slug, r.family, d.score, r.total ?? "", r.total != null ? (r.total - d.score).toFixed(1) : "", r.coverage,
+  out.push([slug, r.family, d.score, r.total ?? "", r.total != null ? (r.total - d.score).toFixed(1) : "", r.totalAlt ?? "", r.coverage,
     ...RUBRICS.identity.map((x) => by[x[0]] ?? ""), by.screening ?? "", by.workflow ?? "", missing]);
   if (only.length) {
     console.log(`\n${d.name} (${r.family}): ${d.score} -> ${r.total} (scored weight ${r.coverage}%)`);
@@ -176,6 +181,6 @@ for (const slug of files) {
 if (!only.length) {
   const csv = out.map((r) => r.map((c) => (/[",;]/.test(String(c)) ? `"${String(c).replace(/"/g, '""')}"` : c)).join(",")).join("\n") + "\n";
   fs.writeFileSync(path.join(root, "reports/rescore-v3.1.csv"), csv);
-  const full = out.slice(1).filter((r) => r[5] === 100).length;
+  const full = out.slice(1).filter((r) => r[6] === 100).length;
   console.log(`scored ${out.length - 1} providers; ${full} with all criteria; report: reports/rescore-v3.1.csv`);
 }
