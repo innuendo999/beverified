@@ -341,7 +341,12 @@ certifications:
   what: Presentation attack detection, no lab letter found
   status: vendor_stated
   source: 8
-user_ratings: []
+user_ratings:
+- platform: G2
+  rating: 4.5
+  count: 103
+  checked: '2026-11'
+  url: https://www.g2.com/products/socure/reviews
 use_case_verdicts: []
 score_breakdown:
 - criterion: "Fraud defense"
@@ -459,7 +464,7 @@ verification_notes:
 - 'Socure Launch: pricing page states no minimum or contract term; pricing.model.minimum left null (not credited as "no minimum").'
 - 'Coverage counts (6,000 document types, 190 countries, 160+ eKYC countries) are from a July 2025 Socure press release; the DocV product page gives no counts.'
 - 'Transaction monitoring rests on one press-release sentence (source 13); the RiskOS docs describe Payment Screening, not a rules-based monitoring engine. Confirm with Socure before relying on it.'
-- 'User ratings not added: G2 refuses fetch; Gartner Peer Insights "Socure KYC" showed 1 rating (search snippet only). Owner can check G2 in a browser.'
+- 'G2 rating 4.5 from 103 reviews taken from owner screenshots of the G2 profile on 2026-11-09 (G2 refuses fetch). The newest review shown (20 Aug 2026) is labelled "G2 invite on behalf of seller" and "Incentivized Review"; no praise or criticism themes added from a single review. Gartner Peer Insights "Socure KYC" showed 1 rating (search snippet only), not added.'
 - 'Not on the page: no incidents or regulatory actions found for Socure in the last 24 months (web search 2026-11-09).'
 - 'Not in rankings.yml and not in pricing.index (KYC Pricing Index); both are owner decisions.'
 application_category: Identity Verification Software

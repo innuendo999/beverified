@@ -23,7 +23,7 @@ New record `src/_data/providers/socure.yml`, built from public sources under doc
 
 - Kantara IAL2: 2022 news report only; Trust Status List does not render.
 - Transaction monitoring: one press-release sentence; docs describe Payment Screening.
-- User ratings (G2, Gartner): not opened.
+- User ratings: G2 4.5 (103 reviews) from owner screenshots, 2026-11-09; Gartner not added (1 rating).
 - KYB monitoring and company documents: not described in docs.
 
 ## Ranking cards
