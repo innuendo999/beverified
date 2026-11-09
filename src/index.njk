@@ -102,22 +102,6 @@ layout: v3.njk
   </ol>
 </section>
 
-<section id="how-we-evaluate" class="container home-section" aria-labelledby="eval-h">
-  <div class="section-head"><h2 id="eval-h" class="h-split h-split--xl">How we evaluate.<span>A published rubric for each kind of check</span></h2><a class="btn btn--secondary btn--sm" href="{{ site.v3.methodologyHref }}">Full methodology</a></div>
-  <div class="card weights p-32">
-    <div>
-      <div class="fs-14 c-muted mb-16">Identity verification and KYC, methodology {{ site.v3.methodologyVersion }}</div>
-      {%- for r in site.v3.rubric %}<div class="weights__row"><span>{{ r.name }}</span><span class="bar" aria-hidden="true"><i class="w-{{ r.weight * 4 }}"></i></span><span>{{ r.weight }}%</span></div>{% endfor %}
-      <div class="fs-14 c-muted mb-16 mt-20">AML screening and monitoring</div>
-      {%- for r in site.v3.rubricAml %}<div class="weights__row"><span>{{ r.name }}</span><span class="bar" aria-hidden="true"><i class="w-{{ r.weight * 4 }}"></i></span><span>{{ r.weight }}%</span></div>{% endfor %}
-    </div>
-    <div class="weights__key gap-24">
-      <div><div class="c-muted mb-4">Re-verification</div><div class="fs-15 c-ink">{{ home.recheck }}. "Last verified" changes only after a real re-check.</div></div>
-      <div><div class="c-muted mb-4">Affiliate policy</div><div class="fs-15 c-ink">{{ site.v3.disclosure }}</div></div>
-    </div>
-  </div>
-</section>
-
 <section id="faq" class="container home-section home-uc" aria-labelledby="faq-h">
   <div class="home-uc__intro"><h2 id="faq-h" class="h-split h-split--xl">Questions<span>buyers ask.</span></h2></div>
   <div class="faq">{% for f in faqs %}<details{% if loop.first %} open{% endif %}><summary><h3>{{ f.q }}</h3></summary><p>{{ f.a }}</p></details>{% endfor %}</div>
