@@ -42,7 +42,6 @@ regions:                # area = section on /regions/; x/y = % position on the m
   - { name: South Africa, short: South Africa, area: Middle East & Africa, reg: FIC, x: 56.6, y: 64.3, slug: south-africa }
 
 top_rated_count: 8
-recheck: We aim to re-check every review every 90 days
 
 faq:   # questions from Google Search Console (homepage, last 3 months, Oct 2026)
   - q: Is BeVerified the same as BeenVerified?
