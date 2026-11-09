@@ -1,0 +1,475 @@
+slug: socure
+name: Socure
+alternate_names: []
+status: published
+seo:
+  title: 'Socure Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Socure review: US-built identity verification and fraud platform (RiskOS). Self-serve checks from $0.80 per evaluation with $1,000 of monthly credits; enterprise quoted.'
+  h1: 'Socure Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/socure.png
+  background: '#FFFFFF'
+  wordmark: /assets/img/wordmarks/socure.png
+tagline: 'Identity verification and fraud platform built on US identity data, with self-serve prices for startups'
+score: 3.8
+grade: Very Good
+methodology: v3.1
+primary_category: identity-verification
+categories:
+- identity-verification
+- kyc
+link:
+  url: https://www.socure.com
+  type: null
+  legacy_rel: nofollow sponsored
+last_verified: '2026-11-09'
+updated: '2026-11-09'   # last content edit; last_verified = last fact re-check
+verdict: 'Socure is strongest where it started: US consumer onboarding, where it checks a person''s details, phone and email against identity data before asking anyone for a document. RiskOS puts that next to document checks, watchlist screening, case management and KYB through partners. Startups can sign up without a sales call and pay $0.80 to $1.30 per evaluation, with $1,000 of free credits a month. The weak spot for a liveness-led buyer is evidence: Socure calls its liveness NIST PAD Level 2, but we found no published iBeta letter, so treat that as the vendor''s claim.'
+what_is:
+- 'Socure is a US identity verification and fraud prevention company founded in 2012 and based in Incline Village, Nevada. Co-founder Johnny Ayers is chief executive. Its platform, RiskOS, grew out of the 2024 purchase of Effectiv and combines Socure''s own models (KYC, fraud and synthetic identity scores, document verification) with partner data in one workflow engine. Socure also bought Berbix in 2023 and the agentic investigations startup Fravity in August 2026, when a round led by Summit Partners valued it at $5.2 billion. In October 2026 Socure said it had more than 6,000 customers and serves customers in 190+ countries.'
+features:
+- 'KYC on data alone (Socure Verify): checks a person''s details against identity data without a document; Socure says this eKYC covers 160+ countries.'
+- 'Predictive DocV: ID document and selfie checks with liveness, 1:1 face match, repeat-fraud face search on the Premier tier, and injection and deepfake detection.'
+- 'Mobile driver''s licences from Google Wallet and Samsung Wallet can be verified in DocV (US, launched September 2026).'
+- 'Watchlist screening for sanctions, PEP (with relatives and close associates) and adverse media, with continuous monitoring and case management in RiskOS.'
+- 'Business onboarding (KYB) with UBO checks, run through partner data such as Middesk and Baselayer inside the same RiskOS workflow.'
+- 'Socure Pass reusable identity (passkey sign-in so returning users skip the document scan) and an Age Assurance flow that returns 18+, 21+ or 25+ flags.'
+pricing:
+  summary: 'Socure publishes prices for its self-serve Socure Launch tier: $0.80 per evaluation for document verification (DocV), $0.90 for DocV with watchlist screening, $1.00 for KYC, fraud and watchlist checks with a DocV step-up, and $1.30 when prefill is added. Each account gets $1,000 of credits a month, and evaluations beyond that are billed at the listed rate. The page states no minimum commitment or contract term. Socure Enterprise, which adds business onboarding, age assurance, bank account verification and custom workflows, is usage-based and quoted.'
+  plans:
+  - tier: 'Launch: Document Verification (DocV)'
+    price: $0.80 per evaluation
+    note: $1,000 of credits a month
+    extra: ID document and selfie
+  - tier: 'Launch: DocV + Watchlist'
+    price: $0.90 per evaluation
+    note: $1,000 of credits a month
+    extra: Adds sanctions and PEP screening
+  - tier: 'Launch: KYC + Fraud + Watchlist, DocV step-up'
+    price: $1.00 per evaluation
+    note: $1,000 of credits a month
+    extra: Document only when the risk check asks for it
+  - tier: 'Launch: Prefill, KYC + Fraud + Watchlist, DocV step-up'
+    price: $1.30 per evaluation
+    note: $1,000 of credits a month
+    extra: Prefills identity data from phone number and date of birth
+  - tier: Enterprise
+    price: Custom
+    note: Usage-based with volume discounts
+    extra: Contact sales
+  legacy_verified_note: null
+  model:
+    published: core
+    minimum: null
+    trial: true
+    source: 1
+  verified: '2026-11'
+  index:
+    product: 'Socure Launch, Document Verification (DocV)'
+    price:
+    - 'Document Verification (DocV)'
+    minimum_note: 'None stated; monthly free credits included'
+    included: 'ID document and selfie with liveness; bundles with watchlist, KYC and prefill cost more'
+  items:
+  - label: Document Verification (DocV)
+    value: $0.80 per evaluation
+    kind: official
+    source: 1
+    verified: '2026-11'
+  - label: DocV + Watchlist
+    value: $0.90 per evaluation
+    kind: official
+    source: 1
+    verified: '2026-11'
+  - label: KYC + Fraud + Watchlist, DocV step-up
+    value: $1.00 per evaluation
+    kind: official
+    source: 1
+    verified: '2026-11'
+  - label: Prefill, KYC + Fraud + Watchlist, DocV step-up
+    value: $1.30 per evaluation
+    kind: official
+    source: 1
+    verified: '2026-11'
+  - label: Free credits
+    value: $1,000 per month on Socure Launch
+    kind: official
+    source: 1
+    verified: '2026-11'
+  - label: Enterprise
+    value: Usage-based, quoted on request
+    kind: official
+    source: 1
+    verified: '2026-11'
+facts:
+- label: From
+  value: $0.80 per evaluation (Socure Launch)
+  source: 1
+  evidence: vendor
+- label: Founded
+  value: '2012'
+  source: 17
+  evidence: vendor
+- label: HQ
+  value: Incline Village, Nevada, US
+  source: 5
+  evidence: independent
+- label: CEO
+  value: Johnny Ayers (co-founder)
+  source: 5
+  evidence: independent
+- label: Valuation
+  value: $5.2B (August 2026 round led by Summit Partners)
+  source: 4
+  evidence: vendor
+- label: Customers
+  value: 6,000+ (Socure, October 2026)
+  source: 6
+  evidence: vendor
+- label: Regions
+  value: Customers in 190+ countries; eKYC in 160+ countries
+  source: 7
+  evidence: vendor
+pros:
+- 'Published self-serve prices from $0.80 per evaluation, with $1,000 of free credits a month and no sales call needed to start'
+- 'Can verify US consumers on data alone and ask for a document only when the risk check calls for it'
+- 'FedRAMP Moderate authorised government product, listed on the FedRAMP Marketplace'
+cons:
+- 'No published lab letter for its liveness: we found no Socure entry on iBeta''s list of ISO/IEC 30107-3 results'
+- 'KYB depends on partner data (such as Middesk and Baselayer) rather than Socure''s own registry coverage'
+- 'Each Socure Launch account runs one solution at a time, and the integration path is fixed once you choose it'
+alternatives:
+- slug: persona
+  name: Persona
+  best_for: KYC plus KYB in One Workflow
+- slug: incode
+  name: Incode
+  best_for: Best Proprietary Dataset
+- slug: veriff
+  name: Veriff
+  best_for: Published Self-Serve Plans
+- slug: sumsub
+  name: Sumsub
+  best_for: Editor's Choice
+choose_instead:
+- slug: incode
+  need: "Lab-tested liveness"
+  text: "liveness evidence matters most: iBeta tested Incode's passive liveness to ISO/IEC 30107-3 Level 3."
+- slug: sumsub
+  need: "One vendor, global onboarding"
+  text: "you want one vendor for KYC, AML and KYB outside the US, with published rates and liveness tested by iBeta up to Level 3."
+- slug: veriff
+  need: "UK certified service"
+  text: "you onboard UK users and want a service on the government's DIATF register, with published self-serve plans."
+- slug: persona
+  need: "Build your own flows"
+  text: "you want a no-code workflow builder with your own KYB checks and an iBeta Level 2 liveness result."
+user_reviews:
+  legacy_note: null
+  praise: []
+  criticize: []
+  by_profile: []
+faq:
+- q: How much does Socure cost?
+  a: 'Socure publishes self-serve prices for Socure Launch: $0.80 per evaluation for document verification, $0.90 with watchlist screening, $1.00 for KYC, fraud and watchlist checks with a document step-up, and $1.30 with prefill. Each account gets $1,000 of credits a month. Enterprise pricing is usage-based and quoted.'
+- q: Does Socure have a free trial?
+  a: 'Socure Launch includes $1,000 of credits every month, and you can create a sandbox account without a sales call. Evaluations beyond the credits are billed at the listed rate.'
+- q: Who owns Socure?
+  a: 'Socure is a private, venture-backed company. Co-founder Johnny Ayers is CEO. Its August 2026 round, led by Summit Partners with Goldman Sachs Alternatives, Wells Fargo and Docusign, valued it at $5.2 billion.'
+- q: Is Socure's liveness detection certified?
+  a: 'Socure describes its liveness as NIST PAD Level 2. We found no Socure or DocV entry on iBeta''s public list of ISO/IEC 30107-3 confirmation letters (checked November 2026), so we treat the level as vendor-stated.'
+- q: Does Socure do KYB?
+  a: 'Yes, through RiskOS Business Onboarding. It verifies the business and its owners in one workflow, using partner data such as Middesk and Baselayer, and screens business entities with Watchlist Plus.'
+- q: Is Socure FedRAMP authorised?
+  a: 'Yes. Socure for Government (SocureGov) is listed on the FedRAMP Marketplace at the Moderate impact level as a SaaS offering.'
+segments: []
+capabilities:
+  checked: '2026-11'
+  identity_verification:
+    status: 'yes'
+    note: KYC on data plus DocV document and selfie
+    source: 10
+  liveness:
+    status: 'yes'
+    note: selfie liveness, vendor says NIST PAD Level 2, no lab letter found
+    source: 8
+  injection_detection:
+    status: 'yes'
+    note: vendor says DocV detects injection and deepfakes, no independent test found
+    source: 9
+  nfc:
+    status: not_disclosed
+    note: no chip reading found on DocV pages
+  video_ident:
+    status: not_disclosed
+    note: no agent video call found
+  reusable_id:
+    status: 'yes'
+    note: Socure Pass, passkey sign-in for returning users
+    source: 10
+  sanctions_pep:
+    status: 'yes'
+    note: Watchlist screening, PEP hits include relatives and close associates
+    source: 11
+  adverse_media:
+    status: 'yes'
+    note: part of Global Watchlist Screening
+    source: 7
+  ongoing_monitoring:
+    status: 'yes'
+    note: enrol evaluations in continuous Watchlist Monitoring
+    source: 11
+  transaction_monitoring:
+    status: 'yes'
+    note: vendor says RiskOS includes transaction monitoring since the Effectiv deal
+    source: 13
+  case_management:
+    status: 'yes'
+    note: RiskOS case management and AI-assisted alert review
+    source: 11
+  published_pricing:
+    status: 'yes'
+    note: Socure Launch prices published, Enterprise quoted
+    source: 1
+  kyb_registry:
+    status: partial
+    note: registry checks through KYB partner integrations
+    source: 12
+  kyb_ubo:
+    status: 'yes'
+    note: UBO verification in the Business Onboarding workflow
+    source: 12
+  kyb_entity_screening:
+    status: 'yes'
+    note: Watchlist Plus screens business entities
+    source: 12
+  kyb_monitoring:
+    status: not_disclosed
+    note: ongoing monitoring of businesses not described
+  kyb_documents:
+    status: not_disclosed
+    note: no company document check found
+  age_document:
+    status: 'yes'
+    note: Age Assurance escalates to document capture
+    source: 11
+  age_facial_estimation:
+    status: 'yes'
+    note: optional age estimation in Selfie Intelligence
+    source: 9
+  age_email_estimation:
+    status: 'yes'
+    note: passive email check in Age Assurance
+    source: 11
+  age_mobile_operator:
+    status: 'yes'
+    note: passive phone check in Age Assurance
+    source: 11
+  age_digital_id:
+    status: 'yes'
+    note: mDL from Google Wallet and Samsung Wallet (US)
+    source: 14
+  data_residency:
+    status: not_disclosed
+    note: no hosting region choice found
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: RiskOS docs and API reference open without login
+    source: 10
+  sdk_web:
+    status: 'yes'
+    note: DocV Web SDK
+    source: 10
+  sdk_ios:
+    status: 'yes'
+    note: DocV iOS SDK
+    source: 10
+  sdk_android:
+    status: 'yes'
+    note: DocV Android SDK, plus React Native
+    source: 10
+  sandbox:
+    status: 'yes'
+    note: self-serve sandbox account, no sales call
+    source: 10
+  no_code:
+    status: 'yes'
+    note: Hosted Flow, Socure hosts the onboarding UI
+    source: 10
+  support_hours:
+    status: not_disclosed
+    note: chat and email support on Launch, no hours found
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 190
+    note: 'DocV in 190 countries; customers in 190+ countries'
+    source: 7
+  document_types:
+    value: 6000
+    note: '6,000 document types, 49+ languages (July 2025)'
+    source: 7
+  non_doc:
+    status: 'yes'
+    note: eKYC data checks in 160+ countries
+    source: 7
+track_record:
+  ownership:
+    status: stable
+    note: independent, venture funded, growth round August 2026
+    source: 4
+certifications:
+- name: FedRAMP Moderate (Socure for Government)
+  what: US federal cloud security, SaaS
+  status: confirmed
+  source: 3
+- name: ISO/IEC 27001:2022
+  what: Information security
+  status: vendor_stated
+  source: 2
+- name: SOC 2 Type 2
+  what: Security controls audit
+  status: vendor_stated
+  source: 2
+- name: Kantara (NIST SP 800-63-3 IAL2)
+  what: US identity assurance, awarded February 2022
+  status: vendor_stated
+  source: 16
+- name: ISO/IEC 30107-3 (liveness, "NIST PAD Level 2")
+  what: Presentation attack detection, no lab letter found
+  status: vendor_stated
+  source: 8
+user_ratings:
+- platform: G2
+  rating: 4.5
+  count: 103
+  checked: '2026-11'
+  url: https://www.g2.com/products/socure/reviews
+use_case_verdicts: []
+score_breakdown:
+- criterion: "Fraud defense"
+  weight: 25
+  score: 2
+  note: "liveness, no lab letter"
+  evidence: vendor
+- criterion: "Pricing and total cost"
+  weight: 20
+  score: 4.5
+  note: "published, trial or free tier"
+  evidence: vendor
+- criterion: "Coverage"
+  weight: 15
+  score: 4
+  note: "190 countries and territories, 6,000 document types, checks without a document"
+  evidence: vendor
+- criterion: "Platform breadth"
+  weight: 15
+  score: 5
+  note: "7 of 8 modules: identity verification, KYB, sanctions screening, monitoring, case management, reusable ID, age checks"
+  evidence: vendor
+- criterion: "Integration and time to launch"
+  weight: 15
+  score: 5
+  note: "public API docs, self-serve sandbox or trial, no-code or hosted flow, web, iOS and Android SDKs"
+  evidence: vendor
+- criterion: "Trust and track record"
+  weight: 10
+  score: 3
+  note: "ISO 27001 or SOC 2 vendor-stated, operating since 2012"
+  evidence: vendor
+hands_on: null
+sources:
+- title: Socure pricing
+  publisher: Socure
+  url: https://www.socure.com/pricing
+  accessed: '2026-11'
+- title: Security and trust
+  publisher: Socure
+  url: https://www.socure.com/security-trust
+  accessed: '2026-11'
+- title: 'FedRAMP Marketplace: Socure for Government (SocureGov)'
+  publisher: FedRAMP (US GSA)
+  url: https://www.fedramp.gov/marketplace/products/FR2334936522/
+  accessed: '2026-11'
+- title: Socure announces strategic growth investment at $5.2B valuation and acquires Fravity (27 August 2026)
+  publisher: Socure
+  url: https://www.socure.com/news-and-press/strategic-growth-investment-fravity-acquisition
+  accessed: '2026-11'
+- title: Socure raises $156M at $5.2B valuation and acquires AI startup Fravity (27 August 2026)
+  publisher: SiliconANGLE
+  url: https://siliconangle.com/2026/08/27/socure-raises-156m-at-5-2b-valuation-and-acquires-ai-startup-fravity/
+  accessed: '2026-11'
+- title: 'Socure Q3 2026 results: $42.7 million in new bookings and doubled customer count (15 October 2026)'
+  publisher: Business Wire (Socure press release)
+  url: https://www.businesswire.com/news/home/20261015531296/en/Socure-Q3-2026-Results-The-Platform-Built-to-Fight-AI-Fraud-Achieved-$42.7-Million-in-New-Bookings-and-Doubled-Customer-Count
+  accessed: '2026-11'
+- title: Socure launches global expansion of RiskOS (31 July 2025)
+  publisher: PR Newswire (Socure press release)
+  url: https://www.prnewswire.com/news-releases/socure-launches-global-expansion-of-riskos-delivering-instant-identity-and-risk-decisioning-across-every-country-and-market-302518543.html
+  accessed: '2026-11'
+- title: Document verification (Predictive DocV)
+  publisher: Socure
+  url: https://www.socure.com/products/document-verification
+  accessed: '2026-11'
+- title: Document Verification (DocV), RiskOS docs
+  publisher: Socure
+  url: https://help.socure.com/riskos/docs/predictive-document-verification
+  accessed: '2026-11'
+- title: Solutions for Startups overview, RiskOS docs
+  publisher: Socure
+  url: https://help.socure.com/riskos/docs/solutions-for-startups-overview
+  accessed: '2026-11'
+- title: Latest updates, RiskOS docs
+  publisher: Socure
+  url: https://help.socure.com/riskos/page/latest-updates
+  accessed: '2026-11'
+- title: Business Onboarding troubleshooting and FAQs, RiskOS docs
+  publisher: Socure
+  url: https://help.socure.com/riskos/docs/business-onboarding-troubleshooting
+  accessed: '2026-11'
+- title: Socure named a top provider in Liminal's Business and Entity Verification report (26 June 2025)
+  publisher: PR Newswire (Socure press release)
+  url: https://www.prnewswire.com/news-releases/socure-named-a-top-provider-in-liminals-business-and-entity-verification-report-unveils-global-expansion-of-its-know-your-business-solution-302492403.html
+  accessed: '2026-11'
+- title: Socure launches mDL verification with Samsung and Google (30 September 2026)
+  publisher: Socure
+  url: https://www.socure.com/news-and-press/mdl-verification-remote-onboarding
+  accessed: '2026-11'
+- title: ISO 30107-3 presentation attack detection confirmation letters
+  publisher: iBeta Quality Assurance
+  url: https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/
+  accessed: '2026-11'
+- title: Socure gets NIST certification from Kantara Initiative (7 February 2022)
+  publisher: ID Tech
+  url: https://idtechwire.com/socure-gets-nist-certification-from-kantara-initiative-020701/
+  accessed: '2026-11'
+- title: Company profile for Socure
+  publisher: Business Wire
+  url: https://www.businesswire.com/news/home/20200824005565/en/Company-Profile-for-Socure
+  accessed: '2026-11'
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://www.socure.com
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- 'New review, written 2026-11-09 from public sources. Score computed by scripts/rescore.mjs (v3.1); owner to confirm before merge.'
+- 'Liveness: Socure pages say "NIST PAD Level 2"; no Socure, Berbix or DocV row found on iBeta''s confirmation-letter page (source 15, both halves read). Kept vendor_stated; Fraud defense scores 2 under v3.1 until a lab letter is found.'
+- 'ISO 27001 and SOC 2 come from Socure''s security page; trust.socure.com (SafeBase) not opened. Kantara IAL2 is a 2022 news report; the Kantara Trust Status List does not render, so current status unconfirmed.'
+- 'FedRAMP Marketplace shows "FedRAMP Certified", Moderate, status as of 19 March 2025, no "certified since" date (source 3).'
+- 'Socure Launch: pricing page states no minimum or contract term; pricing.model.minimum left null (not credited as "no minimum").'
+- 'Coverage counts (6,000 document types, 190 countries, 160+ eKYC countries) are from a July 2025 Socure press release; the DocV product page gives no counts.'
+- 'Transaction monitoring rests on one press-release sentence (source 13); the RiskOS docs describe Payment Screening, not a rules-based monitoring engine. Confirm with Socure before relying on it.'
+- 'G2 rating 4.5 from 103 reviews taken from owner screenshots of the G2 profile on 2026-11-09 (G2 refuses fetch). The newest review shown (20 Aug 2026) is labelled "G2 invite on behalf of seller" and "Incentivized Review"; no praise or criticism themes added from a single review. Gartner Peer Insights "Socure KYC" showed 1 rating (search snippet only), not added.'
+- 'Not on the page: no incidents or regulatory actions found for Socure in the last 24 months (web search 2026-11-09).'
+- 'Not in rankings.yml and not in pricing.index (KYC Pricing Index); both are owner decisions.'
+application_category: Identity Verification Software
+author: andrii-klymenko
+directory_categories:
+- Identity Verification
+- KYC
+- Age Verification
