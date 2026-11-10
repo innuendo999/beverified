@@ -132,29 +132,9 @@
     },
     "nav": [
       {
-        "label": "Use cases",
-        "href": "/use-cases/",
-        "key": "use-cases"
-      },
-      {
-        "label": "Regions",
-        "href": "/regions/",
-        "key": "regions"
-      },
-      {
-        "label": "Reviews",
-        "href": "/providers/",
-        "key": "reviews"
-      },
-      {
         "label": "Incidents",
         "href": "/incidents/",
         "key": "incidents"
-      },
-      {
-        "label": "Blog",
-        "href": "/blog/",
-        "key": "blog"
       }
     ],
     "navAside": {
@@ -163,87 +143,6 @@
     },
     "footer": {
       "about": "Independent reviews of KYC, KYB and AML software.",
-      "useCases": [
-        [
-          "KYC",
-          "/providers/kyc/"
-        ],
-        [
-          "AML",
-          "/providers/aml/"
-        ],
-        [
-          "KYB",
-          "/providers/kyb/"
-        ],
-        [
-          "eKYC",
-          "/providers/e-kyc/"
-        ],
-        [
-          "Identity Verification",
-          "/providers/identity-verification/"
-        ],
-        [
-          "Liveness Detection",
-          "/providers/liveness-detection/"
-        ],
-        [
-          "Crypto KYC",
-          "/providers/crypto/"
-        ],
-        [
-          "Travel Rule",
-          "/providers/travel-rule/"
-        ],
-        [
-          "AML for Banks",
-          "/providers/aml/banks/"
-        ],
-        [
-          "Budget KYC",
-          "/providers/cheap-kyc/"
-        ],
-        [
-          "Age Verification",
-          "/providers/age-verification/"
-        ],
-        [
-          "All use cases",
-          "/use-cases/"
-        ]
-      ],
-      "regions": [
-        [
-          "India",
-          "/providers/india/"
-        ],
-        [
-          "Brazil",
-          "/providers/brazil/"
-        ],
-        [
-          "Mexico",
-          "/providers/mexico/"
-        ],
-        [
-          "Canada",
-          "/providers/canada/"
-        ],
-        [
-          "Peru",
-          "/providers/peru/"
-        ],
-        [
-          "South Africa",
-          "/providers/south-africa/"
-        ],
-        [
-          "All regions",
-          "/regions/"
-        ]
-      ],
-      "providersShown": 10,
       "company": [
         [
           "About",
@@ -252,14 +151,6 @@
         [
           "Methodology",
           "/methodology/"
-        ],
-        [
-          "Incident tracker",
-          "/incidents/"
-        ],
-        [
-          "Glossary",
-          "/glossary/"
         ],
         [
           "For providers",
@@ -324,6 +215,196 @@
       "ga4": "G-YMZBVMLH2S",
       "note": "Loaded only after the visitor accepts the consent banner (src/_includes/v3/consent.njk). Privacy policy describes it."
     },
-    "preferredSourceHref": "https://www.google.com/preferences/source?q=beverified.org"
+    "preferredSourceHref": "https://www.google.com/preferences/source?q=beverified.org",
+    "menu": {
+      "note": "Header mega menu and footer columns. Category and region links, top-3 logos and labels come from rankings.yml and the category records by key; review cards take name, logo and tagline from the provider record; posts come from collections.articles. Only the slugs and keys below are hand-picked.",
+      "rankings": {
+        "label": "Rankings",
+        "href": "/use-cases/",
+        "key": "use-cases",
+        "groups": [
+          {
+            "title": "Identity",
+            "items": [
+              [
+                "kyc",
+                "KYC"
+              ],
+              [
+                "identity-verification",
+                "Identity Verification"
+              ],
+              [
+                "e-kyc",
+                "eKYC"
+              ],
+              [
+                "liveness-detection",
+                "Liveness Detection"
+              ],
+              [
+                "age-verification",
+                "Age Verification"
+              ]
+            ]
+          },
+          {
+            "title": "Business and AML",
+            "items": [
+              [
+                "kyb",
+                "KYB"
+              ],
+              [
+                "aml",
+                "AML"
+              ],
+              [
+                "aml/banks",
+                "AML for Banks"
+              ]
+            ]
+          },
+          {
+            "title": "Crypto",
+            "items": [
+              [
+                "crypto",
+                "Crypto KYC"
+              ],
+              [
+                "travel-rule",
+                "Travel Rule"
+              ]
+            ]
+          },
+          {
+            "title": "Cost",
+            "items": [
+              [
+                "cheap-kyc",
+                "Budget KYC"
+              ]
+            ]
+          }
+        ],
+        "preview": "identity-verification",
+        "regions": [
+          [
+            "brazil",
+            "Brazil"
+          ],
+          [
+            "canada",
+            "Canada"
+          ],
+          [
+            "india",
+            "India"
+          ],
+          [
+            "mexico",
+            "Mexico"
+          ],
+          [
+            "peru",
+            "Peru"
+          ],
+          [
+            "south-africa",
+            "South Africa"
+          ]
+        ],
+        "links": [
+          [
+            "All use cases",
+            "/use-cases/"
+          ],
+          [
+            "All regions",
+            "/regions/"
+          ]
+        ]
+      },
+      "reviews": {
+        "label": "Reviews",
+        "href": "/providers/",
+        "key": "reviews",
+        "mostRead": [
+          "sumsub",
+          "veriff",
+          "incode",
+          "aiprise",
+          "jumio",
+          "zyphe"
+        ],
+        "mostReadNote": "Chosen by Google Search impressions (GSC, 28 days to 3 Nov 2026). Onfido is left out on purpose (owner, 2026-11-10): brand search is expected to fall after the Entrust rebrand.",
+        "alternatives": [
+          "veriff",
+          "sumsub",
+          "zyphe",
+          "aiprise"
+        ],
+        "compare": "/compare/jumio-vs-sumsub/",
+        "links": [
+          [
+            "All providers A to Z",
+            "/providers/"
+          ],
+          [
+            "All comparisons",
+            "/category/compare/"
+          ],
+          [
+            "Security incidents",
+            "/incidents/"
+          ]
+        ]
+      },
+      "blog": {
+        "label": "Blog",
+        "href": "/blog/",
+        "key": "blog",
+        "feature": {
+          "url": "/publications/kyc-pricing-index/",
+          "label": "KYC Pricing Index 2026"
+        },
+        "latest": 3,
+        "sections": [
+          [
+            "News",
+            "/category/news/"
+          ],
+          [
+            "Guides",
+            "/category/guide/"
+          ],
+          [
+            "Research",
+            "/category/publications/"
+          ],
+          [
+            "Comparisons",
+            "/category/compare/"
+          ]
+        ],
+        "reference": [
+          [
+            "Glossary",
+            "/glossary/"
+          ],
+          [
+            "Incident tracker",
+            "/incidents/"
+          ]
+        ],
+        "links": [
+          [
+            "All posts",
+            "/blog/"
+          ]
+        ]
+      }
+    }
   }
 }

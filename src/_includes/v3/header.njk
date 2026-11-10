@@ -1,11 +1,113 @@
-<header class="site-header">
+{#- Header with mega menu. Structure: site.json → v3.menu; resolved data: src/_data/megaMenu.js.
+    Without JS a panel opens on hover or keyboard focus (CSS); with JS (.mm-js) buttons toggle it. -#}
+{%- set mm = megaMenu %}
+{%- macro logoChip(p) -%}
+<span class="mm-logo{% if not p.logo %} mm-logo--wm{% elif p.fit == 'contain' %} mm-logo--contain{% endif %}"{% if p.logo and p.bg and p.bg != '#FFFFFF' %} style="background: {{ p.bg }}"{% endif %}>
+{%- if p.logo %}<img src="{{ p.logo }}" alt="" loading="lazy" decoding="async">
+{%- elif p.wordmark %}<img src="{{ p.wordmark }}" alt="" loading="lazy" decoding="async">
+{%- else %}<b>{{ p.name }}</b>{% endif -%}
+</span>
+{%- endmacro %}
+{%- set chev %}<svg class="mm-chev" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5l3-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>{% endset %}
+<header class="site-header" data-mm>
   <div class="site-header__inner">
     <a class="brand" href="/" aria-label="BeVerified home">{% include "v3/logo.njk" %}</a>
     <nav class="site-nav" id="site-nav" aria-label="Primary">
+
+      <div class="mm-item" data-mm-item>
+        <button type="button" class="mm-top{% if navCurrent == 'use-cases' or navCurrent == 'regions' %} is-current{% endif %}" aria-expanded="false" aria-controls="mm-rankings">{{ mm.rankings.label }}{{ chev | safe }}</button>
+        <div class="mm-panel" id="mm-rankings">
+          <div class="mm-wrap mm-rank">
+            <div class="mm-groups">
+              {%- for g in mm.rankings.groups %}
+              <div class="mm-group">
+                <p class="mm-h">{{ g.title }}</p>
+                {%- for it in g.items %}
+                <a class="mm-row{% if it.on %} is-on{% endif %}" href="{{ it.href }}" data-mm-cat="{{ it.id }}">{{ it.label }}</a>
+                {%- endfor %}
+              </div>
+              {%- endfor %}
+            </div>
+            <div class="mm-preview">
+              {%- for g in mm.rankings.groups %}{% for it in g.items %}
+              <a class="mm-pv{% if it.on %} is-on{% endif %}" href="{{ it.href }}" tabindex="-1" data-mm-pv="{{ it.id }}">
+                <span class="mm-stage">{% for p in it.top %}<span class="mm-fan mm-fan--{{ loop.index }}">{{ logoChip(p) }}<span class="mm-rk">#{{ loop.index }}</span></span>{% endfor %}</span>
+                <span class="mm-pv__head"><b>{{ it.label }}</b><span class="mm-more">See the ranking</span></span>
+                {%- if it.top.length == 3 %}
+                <span class="mm-pv__text">{{ it.top[0].name }}, {{ it.top[1].name }} and {{ it.top[2].name }} lead this ranking.</span>
+                {%- endif %}
+              </a>
+              {%- endfor %}{% endfor %}
+            </div>
+          </div>
+          <div class="mm-foot">
+            <span class="mm-h">By country</span>
+            {%- for r in mm.rankings.regions %}<a class="mm-chip" href="{{ r.href }}">{{ r.label }}</a>{% endfor %}
+            <span class="mm-foot__gap"></span>
+            {%- for l in mm.rankings.links %}<a class="mm-more" href="{{ l[1] }}">{{ l[0] }}</a>{% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <div class="mm-item" data-mm-item>
+        <button type="button" class="mm-top{% if navCurrent == 'reviews' %} is-current{% endif %}" aria-expanded="false" aria-controls="mm-reviews">{{ mm.reviews.label }}{{ chev | safe }}</button>
+        <div class="mm-panel" id="mm-reviews">
+          <div class="mm-wrap mm-rev">
+            <div>
+              <p class="mm-h">Most read reviews</p>
+              <div class="mm-cards">
+                {%- for p in mm.reviews.mostRead %}
+                <a class="mm-card" href="{{ p.href }}">{{ logoChip(p) }}<b>{{ p.name }}</b><span>{{ p.tagline }}</span></a>
+                {%- endfor %}
+              </div>
+            </div>
+            <div class="mm-side">
+              {%- if mm.reviews.alternatives.length %}
+              <div class="mm-list">
+                <p class="mm-h">Alternatives</p>
+                {%- for p in mm.reviews.alternatives %}<a href="{{ p.href }}#alternatives">{{ p.name }} alternatives</a>{% endfor %}
+              </div>
+              {%- endif %}
+              {%- for a in collections.articles | articleAt(mm.reviews.compare) %}
+              <div>
+                <p class="mm-h">Head to head</p>
+                <a class="mm-post" href="{{ a.url }}">{% if a.data.cover %}<img src="{{ a.data.cover }}" alt="" loading="lazy" decoding="async" width="1600" height="900">{% endif %}<b>{{ a.data.cover_label or a.data.title }}</b></a>
+              </div>
+              {%- endfor %}
+            </div>
+          </div>
+          <div class="mm-foot">{% for l in mm.reviews.links %}<a class="mm-more" href="{{ l[1] }}">{{ l[0] }}</a>{% endfor %}</div>
+        </div>
+      </div>
+
+      <div class="mm-item" data-mm-item>
+        <button type="button" class="mm-top{% if navCurrent == 'blog' %} is-current{% endif %}" aria-expanded="false" aria-controls="mm-blog">{{ mm.blog.label }}{{ chev | safe }}</button>
+        <div class="mm-panel" id="mm-blog">
+          <div class="mm-wrap mm-blog">
+            {%- for a in collections.articles | articleAt(mm.blog.feature.url) %}
+            <a class="mm-post mm-post--feature" href="{{ a.url }}">{% if a.data.cover %}<img src="{{ a.data.cover }}" alt="" loading="lazy" decoding="async" width="1600" height="900">{% endif %}<span class="mm-meta">{{ a.data.section | sectionLabel }}</span><b>{{ mm.blog.feature.label }}</b><span>{{ a.data.seoDescription }}</span></a>
+            {%- endfor %}
+            <div>
+              <p class="mm-h">Latest</p>
+              <div class="mm-latest">
+                {%- for a in collections.articles | menuLatest(mm.blog.feature.url, mm.blog.latest) %}
+                <a class="mm-post mm-post--row" href="{{ a.url }}">{% if a.data.cover %}<img src="{{ a.data.cover }}" alt="" loading="lazy" decoding="async" width="1600" height="900">{% endif %}<span><span class="mm-meta">{{ a.data.section | sectionLabel }} · {{ a.data.published | displayDate }}</span><b>{{ a.data.title }}</b></span></a>
+                {%- endfor %}
+              </div>
+            </div>
+            <div class="mm-list">
+              {%- for l in mm.blog.sections %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% endfor %}
+              <p class="mm-h mm-h--gap">Reference</p>
+              {%- for l in mm.blog.reference %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% endfor %}
+            </div>
+          </div>
+          <div class="mm-foot">{% for l in mm.blog.links %}<a class="mm-more" href="{{ l[1] }}">{{ l[0] }}</a>{% endfor %}</div>
+        </div>
+      </div>
 {%- for item in site.v3.nav %}
-      <a href="{{ item.href }}"{% if item.key and item.key == navCurrent %} aria-current="page"{% endif %}>{{ item.label }}</a>
+      <a class="mm-link" href="{{ item.href }}"{% if item.key and item.key == navCurrent %} aria-current="page"{% endif %}>{{ item.label }}</a>
 {%- endfor %}
-      <a href="{{ site.v3.navAside.href }}" class="site-nav__mobile-only">{{ site.v3.navAside.label }}</a>
+      <a href="{{ site.v3.navAside.href }}" class="mm-link site-nav__mobile-only">{{ site.v3.navAside.label }}</a>
     </nav>
     <a class="site-header__aside" href="{{ site.v3.navAside.href }}">{{ site.v3.navAside.label }}</a>
     <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>

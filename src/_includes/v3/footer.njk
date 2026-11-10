@@ -1,18 +1,63 @@
+{#- Footer columns mirror the header menu (src/_data/megaMenu.js); company and legal links from site.json → v3.footer. -#}
 {%- set f = site.v3.footer %}
+{%- set mm = megaMenu %}
 <footer class="site-footer">
   <div class="site-footer__inner">
-    <div class="site-footer__cols">
+    <div class="site-footer__top">
       <div class="site-footer__about">
         <a class="brand" href="/" aria-label="BeVerified home">{% include "v3/logo.njk" %}</a>
         <p>{{ f.about }}</p>
       </div>
-      <nav class="site-footer__col" aria-label="Use cases"><h2>Use cases</h2>{% for l in f.useCases %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% endfor %}</nav>
-      <nav class="site-footer__col" aria-label="Regions"><h2>Regions</h2>{% for l in f.regions %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% endfor %}</nav>
-      <nav class="site-footer__col" aria-label="Providers"><h2>Providers A–Z</h2>{% for p in (allProviders | byName) %}{% if loop.index <= f.providersShown %}<a href="/providers/{{ p.slug }}/">{{ p.name }}</a>{% endif %}{% endfor %}<a class="more" href="/providers/">All providers →</a></nav>
-      <nav class="site-footer__col" aria-label="Company"><h2>Company</h2>{% for l in f.company %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% endfor %}</nav>
-      {%- if f.legal.length %}
-      <nav class="site-footer__col" aria-label="Legal"><h2>Legal</h2>{% for l in f.legal %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% endfor %}</nav>
+      {%- if site.profiles.length %}
+      <div class="site-footer__profiles">
+        {%- for pr in site.profiles %}{% if pr.name == "LinkedIn" %}
+        <a href="{{ pr.url }}" aria-label="BeVerified on LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7V21h-4z" fill="currentColor"/></svg></a>
+        {%- endif %}{% endfor %}
+      </div>
       {%- endif %}
+    </div>
+    <div class="site-footer__cols">
+      {%- for g in mm.rankings.groups %}
+      {%- if loop.first %}
+      <nav class="site-footer__col" aria-label="Rankings"><h2>{{ mm.rankings.label }}</h2>
+      {%- elif loop.index == 2 %}
+      </nav>
+      <nav class="site-footer__col site-footer__col--cont" aria-label="More rankings">
+      {%- endif %}
+        <p class="site-footer__sub">{{ g.title }}</p>
+        {%- for it in g.items %}<a href="{{ it.href }}">{{ it.label }}</a>{% endfor %}
+        {%- if loop.first %}{% for l in mm.rankings.links %}{% if loop.first %}<a class="more" href="{{ l[1] }}">{{ l[0] }}</a>{% endif %}{% endfor %}{% endif %}
+      {%- if loop.last %}
+      </nav>
+      {%- endif %}
+      {%- endfor %}
+      <nav class="site-footer__col" aria-label="Regions"><h2>Regions</h2>
+        <p class="site-footer__sub">By country</p>
+        {%- for r in mm.rankings.regions %}<a href="{{ r.href }}">{{ r.label }}</a>{% endfor %}
+        <a class="more" href="/regions/">All regions</a>
+      </nav>
+      <nav class="site-footer__col" aria-label="Reviews"><h2>{{ mm.reviews.label }}</h2>
+        <p class="site-footer__sub">Most read</p>
+        {%- for p in mm.reviews.mostRead %}<a href="{{ p.href }}">{{ p.name }}</a>{% endfor %}
+        {%- for a in collections.articles | articleAt(mm.reviews.compare) %}
+        <p class="site-footer__sub">Comparisons</p>
+        <a href="{{ a.url }}">{{ a.data.cover_label or a.data.title }}</a>
+        {%- endfor %}
+        <a class="more" href="/providers/">All providers A to Z</a>
+      </nav>
+      <nav class="site-footer__col" aria-label="Blog"><h2>{{ mm.blog.label }}</h2>
+        {%- for l in mm.blog.sections %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% endfor %}
+        <p class="site-footer__sub">Reference</p>
+        {%- for a in collections.articles | articleAt(mm.blog.feature.url) %}<a href="{{ a.url }}">{{ mm.blog.feature.label }}</a>{% endfor %}
+        {%- for l in mm.blog.reference %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% endfor %}
+      </nav>
+      <nav class="site-footer__col" aria-label="Company"><h2>Company</h2>
+        {%- for l in f.company %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% endfor %}
+        {%- if f.legal.length %}
+        <p class="site-footer__sub">Legal</p>
+        {%- for l in f.legal %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% endfor %}
+        {%- endif %}
+      </nav>
     </div>
     <div class="site-footer__bottom">
       <p><strong>Disclosure.</strong> {{ site.v3.disclosure }} Scores are editorial opinions based on the published methodology, not legal advice.</p>
