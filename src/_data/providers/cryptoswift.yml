@@ -372,3 +372,29 @@ application_category: Travel Rule Compliance Software
 author: andrii-klymenko
 directory_categories:
 - Travel Rule
+# Review page V4 (owner, 2026-11-10): "Who it's for" lines and networks, only facts already sourced above.
+fit:
+  'yes':
+  - are an EU crypto-asset service provider under the Transfer of Funds Regulation that wants a hosted API
+  - want to see prices before a sales call. Essentials costs €600 a month on annual billing
+  'no':
+  - text: need customer data kept on your own premises on a smaller plan. Outpost comes only with Enterprise
+networks:
+- name: STRIP
+  status: own
+  note: CryptoSwift's own network
+  evidence: vendor
+  source: 7
+- name: CODE
+  status: live
+  note: CODE lists CryptoSwift as a connected network
+  evidence: independent
+  source: 7
+- name: Notabene
+  status: inbound
+  note: Incoming Notabene transfers can be received
+  evidence: vendor
+  source: 7
+- name: TRUST, TRP, TRISA
+  status: not_found
+  note: No connection found (Oct 2026)

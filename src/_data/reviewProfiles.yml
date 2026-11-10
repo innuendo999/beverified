@@ -1,0 +1,18 @@
+# Review page V4 profiles (owner, 2026-11-10). Design: canvas "BeVerified: review page V4" (V4b).
+# A profile is chosen by the provider's primary_category (map below). It decides the headings, which
+# facts[] rows go in which card, which certificates we expect to see and which questions are generated.
+# v4: true switches every review of that profile to the V4 layout (src/_includes/v3/review-v4.njk);
+# other profiles keep the current layout until they are switched on, one profile at a time.
+# Facts are matched by facts[].label; a label missing from a record is skipped.
+
+map:
+  travel-rule: travel-rule
+
+travel-rule:
+  v4: true
+  networks_heading: Networks and protocols
+  network_facts: [Network size, Network, VASP directory, Jurisdictions, Self-hosted wallet proofs, Self-hosted wallet checks]
+  integration_facts: [Deployment, API and docs, API, Sandbox, Platform integrations, Uptime commitment]
+  company_facts: [Legal entity, Operator, Jurisdiction, Owner, Funding, Acquisitions]   # Founded is in the hero; leadership is in the company paragraph (what_is[1])
+  certs_expected: [ISO/IEC 27001, SOC 2]
+  screenshot_hints: [transfer review, counterparty directory, wallet proof, dashboard]

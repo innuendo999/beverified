@@ -7,6 +7,9 @@ layout: v3.njk
 {%- set ranked = p.slug | rankedIn(rankings, categories) -%}
 {%- set best = ranked[0] -%}
 {%- set hasBreakdown = p.score_breakdown and p.score_breakdown.length -%}
+{%- if v4 %}
+{%- include "v3/review-v4.njk" %}
+{%- else %}
 
 <div class="container">
   <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -373,6 +376,7 @@ layout: v3.njk
   </div>
 </aside>
 </div>
+{%- endif %}
 {%- if p.sources and p.sources.length %}
 <script>
 (function () {

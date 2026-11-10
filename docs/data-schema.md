@@ -10,6 +10,11 @@ Fields prefixed `legacy_` hold what the old pages showed. They are kept for refe
 |---|---|---|
 | slug, name, alternate_names | identity; alternate_names e.g. "Entrust Identity Verification" | name filled, alternate_names empty |
 | rebranded_to | the new brand after a real rebrand or acquisition (e.g. "Entrust Identity Verification" for Onfido); shown as "now ..." under the logo. Legal names and product names stay in alternate_names (JSON-LD only) | empty |
+| fit.yes[], fit.no[{text, alt}] | review V4 "Who {name} is for": lines start with a verb ("are", "send", "need"), describe the buyer's situation, use only facts already in the record; a "Look elsewhere" line only when 100% certain, `alt` = slug of an alternative with a review (owner, 2026-11-10) | empty (block hidden) |
+| networks[{name, status, note, evidence, source}] | review V4 networks card (Travel Rule). status: built_in, own, live, bridge, via_membership, pending, planned, inbound, fallback, not_found | empty |
+| screenshots[{file, width, height, caption, alt, long}], screenshots_meta{origin, provided, product_version, sample_data, permission} | product screenshots under `/assets/img/screens/<slug>/` (webp). origin vendor = "Screenshots provided by {name}", beverified = "Captured by BeVerified"; vendor screenshots never turn on "Manually tested". `permission` is internal | empty (block hidden) |
+| link.button | `primary` (dark Visit site) or `quiet` ("Official website ↗"), decided per provider by the owner; default primary for paid/affiliate, quiet for none | empty |
+| sources[].type | optional override for the Sources grouping: register, counterparty, certificate, competitor, law, press, listing, vendor; otherwise inferred in `src/_lib/review-v4.js` | empty |
 | status | published / draft | published |
 | seo.title, seo.description, seo.h1 | current meta | filled |
 | logo.src, logo.background | logo file and tile colour | filled |

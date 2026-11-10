@@ -388,3 +388,47 @@ application_category: Travel Rule Compliance Software
 author: andrii-klymenko
 directory_categories:
 - Travel Rule
+# Review page V4 (owner, 2026-11-10): "Who it's for" lines and networks, only facts already sourced above.
+fit:
+  'yes':
+  - want Travel Rule messaging and wallet screening from one hosted API
+  - send transfers to counterparties on TRP, TRISA or the CryptoSwift network
+  'no':
+  - text: need more than one way to verify self-hosted wallets. Ospree uses a signed attestation only
+    alt: cryptoswift
+  - text: need published prices. All three plans are Contact sales
+    alt: cryptoswift
+networks:
+- name: Own network
+  status: own
+  note: Ospree network with a 1,600+ VASP directory (vendor-stated)
+  evidence: vendor
+  source: 10
+- name: TRISA
+  status: live
+  note: TRISA announced full interoperability with Ospree (June 2024)
+  evidence: independent
+  source: 18
+- name: TRP
+  status: live
+  note: OpenVASP's TRP page names Ospree
+  evidence: independent
+  source: 19
+- name: CryptoSwift
+  status: live
+  note: Live connection to the CryptoSwift network
+  evidence: vendor
+  source: 12
+- name: Email
+  status: fallback
+  note: Email for counterparties outside the networks
+  evidence: vendor
+  source: 10
+- name: Sumsub, Fireblocks, TRUSThub, GTR
+  status: planned
+  note: Listed by Ospree as future connections
+  evidence: vendor
+  source: 10
+- name: TRUST, Sygna, CODE
+  status: not_found
+  note: No direct connection found

@@ -3,6 +3,8 @@
 import { buildMatrix } from "./_lib/capabilities.js";
 import { termForCapability } from "./_lib/glossary.js";
 import { buildSidebar, companyFacts } from "./_lib/sidebar.js";
+import { reviewSponsor, liveSponsors, shortLabel } from "./_lib/placements.js";
+import { profileFor, heroFacts, networkRows, factRows, certRows, incidentRow, fitRows, questions, sourceGroups, reviewYear } from "./_lib/review-v4.js";
 
 export default {
   pagination: { data: "providers", size: 1, alias: "p", resolve: "values", addAllPagesToCollections: true },
@@ -33,6 +35,42 @@ export default {
     pricingOfficial: (d) => (d.p.pricing?.items || []).filter((i) => i.kind !== "third_party"),
     pricingEstimates: (d) => (d.p.pricing?.items || []).filter((i) => i.kind === "third_party"),
     incidentList: (d) => (d.incidents?.items || []).filter((x) => x.slug === d.p.slug).sort((a, b) => b.date.localeCompare(a.date)),
+    // Review page V4 (owner, 2026-11-10): on for profiles with v4: true in reviewProfiles.yml.
+    v4: (d) => {
+      const p = d.p;
+      const prof = profileFor(p, d.reviewProfiles);
+      if (!prof?.v4) return null;
+      const nets = networkRows(p);
+      const ctx = { rankings: d.rankings, providers: d.providers, categories: d.categories, menu: d.site.v3.menu };
+      const sponsor = reviewSponsor(d.placements, ctx, p.slug);
+      const isSponsor = liveSponsors(d.placements, ctx).includes(p.slug);
+      const button = p.link?.button || (["affiliate", "paid"].includes(p.link?.type) ? "primary" : "quiet");
+      return {
+        profile: prof,
+        year: reviewYear(p),
+        hero: heroFacts(p),
+        fit: fitRows(p, d.providers),
+        networks: nets,
+        networkFacts: factRows(p, prof.network_facts),
+        integration: factRows(p, prof.integration_facts),
+        company: factRows(p, prof.company_facts),
+        certs: certRows(p, prof.certs_expected),
+        incident: incidentRow(p, d.incidents?.items),
+        questions: questions(p, nets),
+        sources: sourceGroups(p, d.providers),
+        sponsor,
+        sponsorNote: isSponsor ? d.site.v3.sponsorNote.replace("{name}", p.name) : null,
+        button,
+        // "#1 in Travel Rule": best position, with the short ranking name from the header menu
+        rank: Object.entries(d.rankings || {}).map(([k, r]) => ({ k, pos: (r.providers || []).findIndex((x) => x.slug === p.slug) + 1 }))
+          .filter((x) => x.pos > 0).sort((a, b) => a.pos - b.pos).slice(0, 1).map((x) => {
+            const c = Object.values(d.categories || {}).find((c) => c.slug === x.k) || {};
+            return { pos: x.pos, label: shortLabel(d.site.v3.menu, x.k) || c.breadcrumb_label || d.rankings[x.k].title, url: c.url || `/providers/${x.k}/` };
+          })[0] || null,
+        pricingOfficial: (p.pricing?.items || []).filter((i) => i.kind !== "third_party"),
+        pricingEstimates: (p.pricing?.items || []).filter((i) => i.kind === "third_party"),
+      };
+    },
     navItems: (d) => {
       const p = d.p, has = (x) => Array.isArray(x) ? x.length > 0 : !!x;
       const alts = (p.choose_instead || []).filter((a) => a.slug && d.providers[a.slug]);
@@ -76,6 +114,7 @@ export default {
           applicationCategory: p.application_category || "BusinessApplication",
           operatingSystem: "Web",
           ...(p.entity?.same_as?.length ? { sameAs: p.entity.same_as } : {}),
+          ...(p.screenshots?.length ? { screenshot: p.screenshots.map((x) => ({ "@type": "ImageObject", url: `${d.site.url}${x.file}`, caption: x.long || x.caption, width: x.width, height: x.height })) } : {}),
           ...(p.score != null ? {
             review: {
               "@type": "Review",
