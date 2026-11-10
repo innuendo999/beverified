@@ -25,7 +25,7 @@ layout: v3.njk
         {%- else %}
         <span class="wordmark-text">{{ p.name }}</span>
         {%- endif %}
-        {%- if p.alternate_names and p.alternate_names.length %}<span>now {{ p.alternate_names[0] }}</span>{% endif %}
+        {%- if p.rebranded_to %}<span>now {{ p.rebranded_to }}</span>{% endif %}
       </div>
       <h1 id="h1" class="h-display">{{ p.seo.h1 or (p.name + " Review") }}</h1>
       <div class="review-hero__tags">
@@ -102,7 +102,7 @@ layout: v3.njk
   {%- if hasBreakdown %}
   <section id="score" aria-labelledby="score-h">
     <h2 id="score-h" class="h-section h-section--tight">Score breakdown</h2>
-    <p class="section-lede">{{ site.v3.rubric.length }} weighted criteria from <a href="{{ site.v3.methodologyHref }}">our methodology {{ site.v3.methodologyVersion }}</a>.</p>
+    <p class="section-lede">{{ p.score_breakdown.length }} weighted criteria from <a href="{{ site.v3.methodologyHref }}">our methodology {{ p.methodology or "v3.0" }}</a>.</p>
     <div class="card">
       <div class="row row--head"><span class="flex-1-1-180">Criterion · weight</span><span class="flex-1-1-160">Sub-score</span><span>Evidence</span></div>
       {%- for b in p.score_breakdown %}
@@ -373,3 +373,20 @@ layout: v3.njk
   </div>
 </aside>
 </div>
+{%- if p.sources and p.sources.length %}
+<script>
+(function () {
+  function openTo(hash) {
+    if (!/^#src-\d+$/.test(hash || "")) return;
+    var el = document.getElementById(hash.slice(1));
+    var box = el && el.closest("details");
+    if (box && !box.open) { box.open = true; el.scrollIntoView(); }
+  }
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="#src-"]');
+    if (a) openTo(a.getAttribute("href"));
+  });
+  openTo(location.hash);
+})();
+</script>
+{%- endif %}

@@ -23,8 +23,8 @@ link:
   type: none
   rel: noopener   # owner, 2026-11-10: followed link (review page and travel-rule listing)
 last_verified: '2026-10-22'
-updated: '2026-11-04'   # last content edit; last_verified = last fact re-check
-verdict: '21 Analytics suits regulated VASPs, brokers and banks that want to run Travel Rule software in their own infrastructure. Its main strength is TRUST: the network Coinbase helps run lists 21 Analytics as its only interoperability partner. TRP and four ways to verify self-hosted wallets are built in too. The ISO/IEC 27001:2022 certificate is public, but there is no SOC 2 report and no published prices, and you run and patch the software yourself.'
+updated: '2026-11-10'   # last content edit; last_verified = last fact re-check
+verdict: '21 Analytics suits regulated VASPs, brokers and banks that want to run Travel Rule software in their own infrastructure. Its main strength is TRUST: the network Coinbase helps run lists 21 Analytics as its only interoperability partner. TRP and four ways to verify self-hosted wallets are built in too. The ISO/IEC 27001:2022 certificate is public, but we found no SOC 2 report and no published prices, and you run and patch the software yourself.'
 what_is:
 - 21 Analytics sells 21 Travel Rule, software that VASPs install in their own data centre or cloud account to exchange originator and beneficiary data with other VASPs under FATF Recommendation 16 and the EU Transfer of Funds Regulation. It ships as containers with a PostgreSQL database and talks to counterparties over TRP and TRUST. VASPs without a Travel Rule solution get encrypted email. A Compliance Dashboard and a GraphQL API handle review and integration, and an AOPP portal collects proofs that a customer controls a self-hosted wallet. 21 Analytics says it cannot access customer data, logs or configuration in a deployment. Support works by screen sharing or log upload. Its other products are 21 Virtual Counter and 21 Sunrise, for requesting data from VASPs that have no Travel Rule tool.
 - The company is 21 Analytics AG of Zug, Switzerland. It says it was founded in 2020 to address the Travel Rule, while the commercial register shows the company itself registered on 8 June 2018 under an earlier name, 21 Lectures AG. Filip Gospodinov is CEO, Lucas Betschart is COO and chairs the board, and Dominik Spicher is CTO. Betschart also sits on the board of the OpenVASP Association, which maintains TRP. In August 2020 the software carried what a Swiss news report described as the first automated Travel Rule transfer between Swiss intermediaries, Crypto Finance and Mt Pelerin. It created AOPP the same year. Trezor dropped the open AOPP standard from its wallet software in January 2022 after user objections, and 21 Analytics says its software still supports Trezor through a direct integration. TRUST announced 21 Analytics as a technology partner in May 2026. Published case studies cover Tangany, Xerof and Relai. 21 Analytics discloses no funding.
@@ -51,33 +51,38 @@ pricing:
     note: Adds priority support within 24 hours, custom terms, custom vendor due diligence and source code escrow
     extra: Contact sales
   legacy_verified_note: null
-  verified: '2026-10'
+  verified: '2026-11'
   items:
   - label: Published prices
     value: None shown on the pricing page; tiers and inclusions only
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Pricing model
     value: Flat fee regardless of volume, with unlimited VASP-to-VASP transactions and unlimited users
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Onboarding fee
     value: None on Essentials
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Essentials support
     value: 24/5, standard response within 3 business days; additional charges may apply
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
+  - label: Platform support, both tiers
+    value: 24/5 via the platform with a 72-hour standard SLA
+    kind: official
+    source: 2
+    verified: '2026-11'
   - label: Enterprise
     value: Custom; priority support within 24 hours at no extra charge, source code escrow
     kind: official
     source: 2
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Starter plan, G2 listing
     value: CHF 900 / month
     kind: third_party
@@ -137,11 +142,11 @@ facts:
   evidence: independent
 pros:
 - Built-in TRUST connectivity, and TRUST's own page lists 21 Analytics as its only interoperability partner
-- Runs in your own infrastructure with no telemetry, and 21 Analytics says it cannot see customer data
+- Runs in your own infrastructure; 21 Analytics says it sends no telemetry and cannot see customer data
 - Four ways to prove self-hosted wallet ownership, plus public versioned docs and a release every few months
 cons:
 - The pricing page shows no prices; the CHF 900 monthly Starter figure comes only from G2 and Capterra
-- No SOC 2 report, and security reports beyond the ISO/IEC 27001 certificate need an access request or NDA
+- We found no SOC 2 report, and security reports beyond the ISO/IEC 27001 certificate need an access request or NDA
 - You install, patch and back up the software yourself, and there are only two public user reviews so far, both on SourceForge
 alternatives:
 - slug: notabene
@@ -205,7 +210,7 @@ score_breakdown:
 - criterion: Compliance & certifications
   weight: 25
   score: 4.3
-  note: The ISO/IEC 27001:2022 certificate (InterCert IC-IS-2604284, April 2026) is public in the Compliance Centre and comes from a body the Standards Council of Canada accredits for ISO/IEC 27001, but there is no SOC 2 report, further security reports need an access request or NDA, and the claim that the vendor cannot access a deployment is vendor-stated.
+  note: The ISO/IEC 27001:2022 certificate (InterCert IC-IS-2604284, April 2026) is public in the Compliance Centre and comes from a body the Standards Council of Canada accredits for ISO/IEC 27001, but we found no SOC 2 report, further security reports need an access request or NDA, and the claim that the vendor cannot access a deployment is vendor-stated.
   evidence: independent
 - criterion: Coverage
   weight: 20
@@ -241,7 +246,7 @@ sources:
 - title: Pricing
   publisher: 21 Analytics
   url: https://www.21analytics.co/pricing/
-  accessed: '2026-10'
+  accessed: '2026-11'
 - title: Built-in access to the TRUST network
   publisher: 21 Analytics
   url: https://www.21analytics.co/trust/
@@ -305,7 +310,7 @@ sources:
 - title: Release notes
   publisher: 21 Analytics
   url: https://www.21analytics.co/release-notes/
-  accessed: '2026-10'
+  accessed: '2026-11'
 - title: 21 Travel Rule version 8.1.0
   publisher: 21 Analytics
   url: https://www.21analytics.co/blog/21-travel-rule-version-8-1-0/
