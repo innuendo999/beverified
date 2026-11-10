@@ -30,7 +30,14 @@ export default {
           priceVerified = ym ? new Date(`${ym}-01T00:00:00Z`).toLocaleDateString("en-US", { month: "short", year: "numeric", timeZone: "UTC" }) : null;
         }
       }
-      return { rank: i + 1, r, q, price, priceVerified };
+      // Score shown and ranked on: the overall score, or with score_source: category the provider's
+      // score for this category (category_scores.<slug>, written by the category's scorer).
+      let score = q ? q.score ?? null : null;
+      if (d.c.score_source === "category" && q) {
+        score = q.category_scores?.[d.c.slug]?.score ?? null;
+        if (score == null) throw new Error(`${d.c.slug}: ${q.slug} has no category_scores.${d.c.slug}`);
+      }
+      return { rank: i + 1, r, q, price, priceVerified, score };
     }),
     // Capability matrix: columns from the category file, cells from each ranked provider's capabilities{}
     // and, for certificate columns, from its certifications[].

@@ -11,14 +11,21 @@ export const CAP_LABELS = {
   age_digital_id: "Digital ID or wallet", age_reusable: "Reusable age result", age_certification: "Age assurance certification",
   kyb_registry: "Company registry checks", kyb_ubo: "UBO discovery", kyb_entity_screening: "Business and officer screening",
   kyb_monitoring: "Ongoing business monitoring", kyb_documents: "Company document checks", kyb_pricing: "Published KYB pricing",
+  // Know Your Agent columns read the record's kya{} block (key without the kya_ prefix).
+  kya_detect_undeclared: "Detects undeclared agents", kya_verify_signed: "Verifies signed or registered agents",
+  kya_bind_person: "Agent bound to a verified person", kya_bind_business: "Agent bound to a verified business",
+  kya_step_up: "Re-verifies the person at risky actions", kya_limits_expiry: "Spend or scope limits and expiry",
+  kya_revocation: "Revocation", kya_audit_log: "Agent action log", kya_protocols: "Agent protocols named",
 };
 // Keys whose note is always shown (coverage counts, price points), not only for add-on or partial cells.
-export const NOTE_KEYS = ["kyb_registry", "kyb_pricing"];
+export const NOTE_KEYS = ["kyb_registry", "kyb_pricing", "kya_protocols"];
 export const CAP_STATUS = {
   yes: ["full", "Yes"], add_on: ["half", "Add-on"], no: ["empty", "No"], not_disclosed: ["unknown", "Not disclosed"],
   partial: ["half", "Partial"], cloud: ["", "Cloud"], on_prem: ["", "On-premises"], cloud_and_on_prem: ["", "Cloud and on-premises"],
   confirmed: ["full", "Confirmed"], vendor_stated: ["half", "Vendor-stated"], in_progress: ["unknown", "In progress"],
+  beta: ["half", "Beta"], planned: ["unknown", "Planned"],
 };
+const isKya = (k) => k.startsWith("kya_");
 
 // Certificate columns are read from the review's certifications[] (one record, no second copy).
 // confirmed = we opened the certificate, register entry or lab letter; vendor_stated = only the vendor says so.
@@ -70,7 +77,7 @@ export const buildMatrix = (cols, provs, terms = {}) => {
   const capCols = cols.filter((k) => CAP_LABELS[k]);
   const certMode = cols.some((k) => CERT_KEYS.includes(k));
   const rows = (provs || [])
-    .filter((q) => q && ((q.capabilities && capCols.some((k) => q.capabilities[k])) || (certMode && q.certifications?.length)))
+    .filter((q) => q && ((q.capabilities && capCols.some((k) => q.capabilities[k])) || (certMode && q.certifications?.length) || (q.kya && capCols.some(isKya))))
     .map((q) => ({
       slug: q.slug, name: q.name,
       cells: cols.map((k) => {
@@ -78,10 +85,12 @@ export const buildMatrix = (cols, provs, terms = {}) => {
           const f = (q.facts || []).find((x) => x.label === "From");
           return { key: k, status: "", sym: "", label: f?.value || "Not publicly disclosed", note: null, source: f?.source || null };
         }
-        const v = CERT_KEYS.includes(k) ? certCell(k, q.certifications) : (q.capabilities?.[k] || { status: "not_disclosed" });
+        const v = CERT_KEYS.includes(k) ? certCell(k, q.certifications)
+          : isKya(k) ? (q.kya?.[k.slice(4)] || { status: "not_disclosed" })
+          : (q.capabilities?.[k] || { status: "not_disclosed" });
         const status = String(v.status || "not_disclosed");
         const st = CAP_STATUS[status] || CAP_STATUS.not_disclosed;
-        let label = st[1], note = (["add_on", "partial"].includes(status) || (NOTE_KEYS.includes(k) && status !== "not_disclosed")) ? v.note : null;
+        let label = st[1], note = (["add_on", "partial", "beta", "planned"].includes(status) || (NOTE_KEYS.includes(k) && status !== "not_disclosed")) ? v.note : null;
         if (k === "liveness_pad" && v.level) { label = `Level ${v.level}`; if (status === "vendor_stated") note = "Vendor-stated"; }
         if (note) note = note.charAt(0).toUpperCase() + note.slice(1);
         // Framework names keep their own casing (eIDAS, not EIDAS).
@@ -91,9 +100,11 @@ export const buildMatrix = (cols, provs, terms = {}) => {
     }));
   if (!rows.length) return null;
   const byslug = Object.fromEntries((provs || []).filter(Boolean).map((q) => [q.slug, q]));
-  const checked = rows.map((r) => byslug[r.slug].capabilities?.checked || byslug[r.slug].last_verified?.slice(0, 7)).filter(Boolean).sort().pop();
+  const kyaMode = cols.some(isKya);
+  const checked = rows.map((r) => (kyaMode ? byslug[r.slug].kya?.checked : null) || byslug[r.slug].capabilities?.checked || byslug[r.slug].last_verified?.slice(0, 7)).filter(Boolean).sort().pop();
   const legend = certMode
     ? [["full", "Confirmed, or in the core product"], ["half", "Vendor-stated, or add-on"], ["empty", "Not offered"], ["unknown", "Not disclosed"]]
+    : kyaMode ? [["full", "Stated for the KYA product"], ["half", "Beta or partly stated"], ["unknown", "Planned or not disclosed"]]
     : [["full", "In the core product"], ["half", "Add-on module or higher plan"], ["empty", "Not offered"], ["unknown", "Not disclosed"]];
   const certNote = certMode ? "Confirmed means we opened the certificate, the register entry or the lab's letter." : null;
   return { cols: cols.map((k) => ({ key: k, label: CAP_LABELS[k] || EXTRA_COLS[k], term: terms[k] || null })), rows, checked, legend, certNote };

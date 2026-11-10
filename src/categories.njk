@@ -32,13 +32,13 @@ layout: v3.njk
   <div class="card table-scroll">
     <table class="rank-table">
       <caption>{{ c.breadcrumb_label }}: providers ranked by BeVerified, with starting price and what each is best for.</caption>
-      <thead><tr><th scope="col">Rank</th><th scope="col">Provider</th><th scope="col">Score</th><th scope="col" class="hide-sm">Starting price</th><th scope="col" class="hide-sm">Best for</th><th scope="col"><span class="visually-hidden">Review</span></th></tr></thead>
+      <thead><tr><th scope="col">Rank</th><th scope="col">Provider</th><th scope="col">{{ c.score_label or "Score" }}</th><th scope="col" class="hide-sm">Starting price</th><th scope="col" class="hide-sm">Best for</th><th scope="col"><span class="visually-hidden">Review</span></th></tr></thead>
       <tbody>
       {%- for e in entries %}
         <tr>
           <td class="num">{{ e.rank }}</td>
           <th class="fw-500 ta-left" scope="row"><span class="rank-table__prov">{% if e.q and e.q.logo.wordmark %}<img class="wordmark wordmark--sm h-18 maxw-80" src="{{ e.q.logo.wordmark }}" alt="">{% endif %}{{ e.r.name }}</span></th>
-          <td class="num">{% if e.q and e.q.score != null %}<strong>{{ e.q.score | score1 }}</strong> <span class="c-muted">/ 5</span>{% else %}<span class="c-muted fs-14">Not reviewed</span>{% endif %}</td>
+          <td class="num">{% if e.q and e.score != null %}<strong>{{ e.score | score1 }}</strong> <span class="c-muted">/ 5</span>{% else %}<span class="c-muted fs-14">Not reviewed</span>{% endif %}</td>
           <td class="hide-sm">{{ e.price or "Not listed" }}{% if e.priceVerified %}<br><span class="c-muted fs-12">Verified {{ e.priceVerified }}</span>{% endif %}</td>
           <td class="hide-sm c-body">{% if e.rank == 1 %}<span class="pill pill--dark fs-12 p-1-8">◆ {{ e.r.award or "Top pick" }}</span>{% else %}{{ e.r.award }}{% endif %}</td>
           <td>{% if e.q %}<a href="/providers/{{ e.q.slug }}/">Read review →</a>{% else %}<span class="c-muted fs-14">Review coming</span>{% endif %}</td>
@@ -73,9 +73,10 @@ layout: v3.njk
             {%- endif %}
           </div>
           <div class="rank-card__score">
-            {%- if e.q and e.q.score != null %}
-            <div role="img" aria-label="{{ e.q.score | score1 }} out of 5"><span class="num-big">{{ e.q.score | score1 }}</span> <span class="c-muted">/ 5</span></div>
-            <div class="meter" aria-hidden="true">{% for w in (e.q.score | meter) %}<span><i class="w-{{ w }}"></i></span>{% endfor %}</div>
+            {%- if e.q and e.score != null %}
+            {%- if c.score_label %}<span class="c-muted fs-12">{{ c.score_label }}</span>{% endif %}
+            <div role="img" aria-label="{{ c.score_label or "Score" }} {{ e.score | score1 }} out of 5"><span class="num-big">{{ e.score | score1 }}</span> <span class="c-muted">/ 5</span></div>
+            <div class="meter" aria-hidden="true">{% for w in (e.score | meter) %}<span><i class="w-{{ w }}"></i></span>{% endfor %}</div>
             {%- else %}<span class="pill">Review coming</span>{% endif %}
           </div>
           <div class="rank-card__foot">
@@ -121,9 +122,9 @@ layout: v3.njk
       <h2 id="how-h" class="h-section">How we ranked this category</h2>
       <div class="card weights">
         <div>
-          {%- set rub = site.v3.rubricTravel if c.slug == "travel-rule" else (site.v3.rubricAml if c.slug.startsWith("aml") else site.v3.rubric) %}
+          {%- set rub = site.v3[c.rubric] if c.rubric else (site.v3.rubricTravel if c.slug == "travel-rule" else (site.v3.rubricAml if c.slug.startsWith("aml") else site.v3.rubric)) %}
           {%- for r in rub %}<div class="weights__row"><span>{{ r.name }}</span><span class="bar" aria-hidden="true"><i class="w-{{ r.weight * 4 }}"></i></span><span>{{ r.weight }}%</span></div>{% endfor %}
-          <p class="mt-12 fs-14"><a href="{{ site.v3.methodologyHref }}">Full methodology {{ "v3.0 (Travel Rule)" if c.slug == "travel-rule" else site.v3.methodologyVersion }} →</a></p>
+          <p class="mt-12 fs-14"><a href="{{ site.v3.methodologyHref }}{{ c.methodology_anchor or "" }}">Full methodology {{ c.methodology_label or ("v3.0 (Travel Rule)" if c.slug == "travel-rule" else site.v3.methodologyVersion) }} →</a></p>
         </div>
         <div class="weights__key">
           <span>Evidence levels we rely on</span>
