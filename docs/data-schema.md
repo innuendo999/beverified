@@ -9,6 +9,7 @@ Fields prefixed `legacy_` hold what the old pages showed. They are kept for refe
 | Field | Meaning | Status after extraction |
 |---|---|---|
 | slug, name, alternate_names | identity; alternate_names e.g. "Entrust Identity Verification" | name filled, alternate_names empty |
+| rebranded_to | the new brand after a real rebrand or acquisition (e.g. "Entrust Identity Verification" for Onfido); shown as "now ..." under the logo. Legal names and product names stay in alternate_names (JSON-LD only) | empty |
 | status | published / draft | published |
 | seo.title, seo.description, seo.h1 | current meta | filled |
 | logo.src, logo.background | logo file and tile colour | filled |
