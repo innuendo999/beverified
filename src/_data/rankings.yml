@@ -1945,3 +1945,129 @@ kyc:
     - Transaction monitoring is a separate product, GBG Predator
     - Broad product lineup spanning multiple acquisitions can be complex to navigate
     legacy_price_shown: Custom pricing
+uk:
+  title: Best KYC & AML Providers for the UK in 2026
+  # Only providers with a service on the UK DVS register (owner, 2026-11-10). Register checked 10 Nov 2026:
+  # reports/verification/uk-register-2026-11.md. Order: v3.1 score; Persona above ComplyCube (owner, tie at 4.0);
+  # GBG above AU10TIX (tie at 3.3, provisional: more registered services).
+  providers:
+  - slug: veriff
+    name: Veriff
+    award: Editor's Choice
+    tagline: UK identity service on the DVS register for Right to Work and Right to Rent, with published self-serve prices.
+    coverage: Global, 230+ countries and territories
+    size: null
+    pros:
+    - Veriff UK Identity Verification Service is on the DVS register (Kantara, Jan 2026 to Jan 2029)
+    - Passive liveness tested by iBeta to ISO/IEC 30107-3 Level 2
+    - Published self-serve plans with a monthly minimum and a per-verification fee
+    cons:
+    - Per-verification fees sit on top of the monthly minimum, and AML screening is a paid add-on
+    - An intruder took ID images of 8,583 Total Wireless customers from Veriff's systems in November 2025
+    - End users on Trustpilot report selfie capture failures and failed checks with no reason given
+    segments: []
+  - slug: persona
+    name: Persona
+    award: Best for Custom Workflows
+    tagline: Reusable workflow templates for document, selfie and database checks, with a DVS-registered service for Right to Work and Right to Rent.
+    coverage: Global, 200+ countries and territories
+    size: Mid-market to Enterprise
+    pros:
+    - Persona is on the DVS register for Right to Work and Right to Rent (Kantara, Dec 2025 to Dec 2028)
+    - Selfie Liveness 2.0 tested by iBeta to ISO/IEC 30107-3 Level 2
+    - Mobile SDKs read passport and ID chips by NFC
+    cons:
+    - Flexibility means a steeper configuration curve
+    - Only the entry plan has a published price, and it carries a 12-month minimum term
+    - Less specialized AML data depth than dedicated screening vendors
+    segments: []
+  - slug: complycube
+    name: ComplyCube
+    award: Best for Self-Serve Plans
+    tagline: London-based, API-first KYC and AML platform on the DVS register for identity, Right to Work, Right to Rent and DBS checks.
+    coverage: null
+    size: null
+    pros:
+    - ComplyCube Platform is on the DVS register with Right to Work, Right to Rent and DBS (Kantara, Mar 2026 to Mar 2029)
+    - Published per-check prices and self-serve plans from $99 a month
+    - API-first design with web and mobile SDKs
+    cons:
+    - Smaller scale and brand recognition than category leaders
+    - Growth and Enterprise tiers, and checks such as NFC and video liveness, are quote-only
+    - Less independent track record and case-study depth than larger competitors
+    segments: []
+  - slug: smartsearch
+    name: SmartSearch
+    award: Best for UK Regulated Professions
+    tagline: UK-first AML and KYC verification built for JMLSG-regulated professions, with two services on the DVS register.
+    coverage: UK-focused; international checks offered
+    size: null
+    pros:
+    - SmartDoc is on the DVS register (Kantara, Mar 2026 to Mar 2029), and Credas Connect adds Right to Work, Right to Rent and DBS
+    - Strong fit for UK legal, property, accountancy and financial-services firms
+    - Individual and business verification in one platform
+    cons:
+    - No published pricing
+    - UK-centric; international checks exist but the product and client base centre on the UK
+    - Built around data-based AML checks; document and facial checks come through SmartDoc rather than a document-first IDV flow
+    segments: []
+  - slug: onfido
+    name: Onfido
+    award: Best for Developer SDKs
+    tagline: Entrust IDV is on the DVS register for identity, Right to Work, Right to Rent and DBS checks, with broad document coverage.
+    coverage: Global, 195 countries
+    size: null
+    pros:
+    - Entrust IDV is on the DVS register with Right to Work, Right to Rent and DBS (Kantara, Mar 2026 to Mar 2029)
+    - Strong developer SDKs and API tooling
+    - More than 2,500 document types across 195 countries
+    cons:
+    - No published pricing; quoted via Entrust sales
+    - AML/watchlist screening is a separate module
+    - Mixed reviews on support responsiveness
+    segments: []
+  - slug: signicat
+    name: Signicat
+    award: Best for NFC Chip Reading
+    tagline: ReadID NFC chip reading on the DVS register, inside a pan-European identity platform.
+    coverage: Europe
+    size: Mid-market to Enterprise
+    pros:
+    - ReadID is on the DVS register (Kantara, Jun 2026 to Jun 2029)
+    - PEP, sanctions and adverse-media data sources inside the onboarding platform
+    - EU Qualified Trust Service Provider (QTSP) status under eIDAS
+    cons:
+    - No published pricing; setup, subscription and transaction fees are quoted
+    - ReadID lists no Right to Work, Right to Rent or DBS scheme on the register
+    - Coverage strength is concentrated in Europe rather than global
+    segments: []
+  - slug: gbg
+    name: GBG
+    award: Best for UK Identity Data
+    tagline: Chester-based and LSE-listed, with five services on the DVS register, including GBG Go and Identify.
+    coverage: 195+ countries
+    size: Mid-market to Enterprise
+    pros:
+    - Five services on the DVS register; GBG Go and Identify cover Right to Work, Right to Rent and DBS (Kantara, Sep 2026 to Sep 2029)
+    - Publicly traded (LSE:GBG) with audited results
+    - Location intelligence through Loqate on top of identity data
+    cons:
+    - No published pricing for identity and fraud products
+    - Data-centric approach, less focused on no-code UX
+    - Broad product lineup spanning multiple acquisitions can be complex to navigate
+    segments: []
+  - slug: au10tix
+    name: AU10TIX
+    award: Best for Automated Checks
+    tagline: Automated document verification on the DVS register for Right to Work, Right to Rent and DBS checks.
+    coverage: null
+    size: null
+    pros:
+    - Identity Document Verification Suite is on the DVS register with Right to Work, Right to Rent and DBS (Kantara, Dec 2025 to Dec 2028)
+    - Consortium-based detection of serial fraud and deepfake attacks
+    - Deep forensic and security roots from border-control technology
+    cons:
+    - $500 monthly minimum on entry plans rules out very low volumes
+    - Per-check prices are not published
+    - Narrower AML-workflow depth than dedicated AML platforms
+    segments: []
