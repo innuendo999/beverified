@@ -30,7 +30,7 @@ use_cases:              # group = section on /use-cases/ and in the homepage pan
   - { name: Budget KYC, slug: cheap-kyc, group: Budget, def: "Providers with published per-check or monthly pricing and low minimums." }
 
 regions:                # area = section on /regions/; slug = region ranking page if one exists; lon/lat = pin on the homepage pixel map, iso = ISO 3166 numeric code used by scripts/region-map.mjs to light the country (x/y: old grid map, unused)
-  - { name: United Kingdom, short: UK, area: Europe, reg: FCA, x: 49.6, y: 21, side: left }
+  - { name: United Kingdom, short: UK, area: Europe, reg: FCA, x: 49.6, y: 21, side: left, slug: uk, lon: -2, lat: 54, iso: "826" }
   - { name: European Union, short: EU, area: Europe, reg: AMLA, x: 53, y: 24 }
   - { name: United States, short: US, area: North America, reg: FinCEN, x: 23, y: 31, side: left }
   - { name: UAE, short: UAE, area: Middle East & Africa, reg: CBUAE, x: 65.5, y: 36.5, side: left }

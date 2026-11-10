@@ -1,0 +1,75 @@
+slug: uk
+url: /providers/uk/
+seo:
+  title: Best KYC & AML Providers for the UK in 2026 | BeVerified
+  description: 'Veriff, Persona, ComplyCube, SmartSearch and Onfido compared: the best KYC & AML providers for the UK in 2026, all with a service on the government DVS register.'
+  h1: Best KYC & AML Providers for the UK in 2026
+breadcrumb_label: Best KYC & AML Providers for the UK
+quick_answer: Veriff is our top UK pick, with a UK identity service on the government DVS register and published self-serve prices. Persona is next for teams that build their own verification flows. ComplyCube suits buyers who want self-serve plans from $99 a month. We compared 8 providers on DVS certification, pricing, coverage and integration.
+last_verified: '2026-11-10'
+updated: '2026-11-10'
+explainer_html:
+- '<h2>Why the DVS register matters for UK KYC</h2>
+
+  <p>Since 26 February 2026, firms covered by the UK Money Laundering Regulations can meet the identity verification step of regulation 28 by using a digital identity service that is certified and listed on the government''s <a href="https://www.access-dvs-register.service.gov.uk/" rel="nofollow noopener" target="_blank">digital verification services (DVS) register</a>. HM Treasury''s <a href="https://www.gov.uk/government/publications/using-digital-identities-with-the-money-laundering-regulations/using-digital-identities-with-the-money-laundering-regulations" rel="nofollow noopener" target="_blank">guidance</a> adds that services not on the register cannot reliably be deemed suitable. Every provider in this ranking has at least one service on that register, checked on 10 November 2026.</p>
+
+  <p>A register entry covers identity verification only. The firm still owns the risk assessment, enhanced due diligence where it applies, the purpose of the business relationship, record keeping and liability for customer due diligence. The same guidance says certified services can also be used to verify company directors.</p>
+
+  <h2>The trust framework behind the register</h2>
+
+  <p>The register is run by the Office for Digital Identities and Attributes under Part 2 of the Data (Use and Access) Act 2025. Providers are certified against the UK digital verification services trust framework, which was called the <a href="/glossary/uk-diatf/">UK digital identity and attributes trust framework (DIATF)</a> before version 1.0 was published in June 2026. From 1 September 2026, new certifications are issued only against version 1.0. Supplementary codes add rules for Right to Work, Right to Rent and DBS checks, and the register shows which of these each service covers.</p>
+
+  <h2>Rules UK firms work to</h2>
+
+  <ul>
+
+  <li><a href="/glossary/uk-money-laundering-regulations/">Money Laundering Regulations 2017</a>, amended by <a href="https://www.legislation.gov.uk/uksi/2026/621/made" rel="nofollow noopener" target="_blank">SI 2026/621</a> (made 9 June 2026), which moves customer due diligence thresholds from euros to sterling.</li>
+
+  <li>The <a href="https://www.gov.uk/guidance/moving-to-a-single-list-for-uk-sanctions-designations-28-january-2026" rel="nofollow noopener" target="_blank">UK Sanctions List</a>, the single official source of UK sanctions designations since 28 January 2026. The OFSI Consolidated List is no longer updated, so screening tools should use the UK Sanctions List.</li>
+
+  <li>The FCA supervises anti-money laundering compliance for the firms it authorises and for registered cryptoasset businesses.</li>
+
+  </ul>
+
+  <h2>How to choose a UK provider</h2>
+
+  <ul>
+
+  <li>Check the provider''s entry on the DVS register yourself: the service name, the schemes it covers and the certificate expiry date.</li>
+
+  <li>Match the schemes to your use: identity checks for onboarding, Right to Work and Right to Rent for employers and landlords, DBS for criminal record checks.</li>
+
+  <li>Ask whether sanctions screening runs against the UK Sanctions List and how quickly list changes reach you.</li>
+
+  <li>Compare pricing models. Four of the eight providers publish a starting price; the others quote on request.</li>
+
+  </ul>
+
+  <p><a href="/methodology/">How we evaluate every provider on this list →</a></p>'
+faq:
+- q: Can a UK firm use a digital identity provider to meet the Money Laundering Regulations?
+  a: Yes. HM Treasury guidance of 26 February 2026 says firms can meet the identity verification step of regulation 28 with a certified service listed on the DVS register. The firm keeps responsibility for the rest of customer due diligence, including the risk assessment and enhanced due diligence.
+- q: Which KYC providers are on the UK DVS register?
+  a: All 8 providers in this ranking have at least one service on the register, checked on 10 November 2026. Veriff, Persona, ComplyCube, SmartSearch, Onfido (Entrust), Signicat, GBG and AU10TIX each list a certified service. Sumsub, Shufti Pro, Veridas, Trulioo and Socure were not on the register that day.
+- q: What is the difference between DIATF and the DVS trust framework?
+  a: They are the same framework under two names. Versions before 1.0 were called the UK digital identity and attributes trust framework (DIATF); version 1.0, published in June 2026, is called the UK digital verification services trust framework.
+- q: Which sanctions list should UK firms screen against?
+  a: The UK Sanctions List published by the FCDO. Since 28 January 2026 it is the only official source of UK sanctions designations, and the OFSI Consolidated List is no longer updated.
+- q: Do these providers support Right to Work and Right to Rent checks?
+  a: Veriff, Persona, ComplyCube, Onfido (Entrust), GBG and AU10TIX list Right to Work and Right to Rent on their register entries, and ComplyCube, Onfido, GBG and AU10TIX also list DBS. SmartSearch covers these schemes through Credas Connect. Signicat's ReadID lists no supplementary scheme.
+- q: Does a DVS certificate expire?
+  a: Yes. Each service on the register shows a certificate issue date and an expiry date; the certificates in this ranking run to between September 2028 and September 2029. Check the register before you rely on a provider, because services without a valid certificate are removed.
+adjacent:
+- identity-verification
+- kyc
+- aml
+- age-verification
+price_source: record
+capability_columns:
+- trust_framework
+- liveness_pad
+- published_pricing
+- price_from
+faq_templates: []
+legacy_issues: []
+author: andrii-klymenko
