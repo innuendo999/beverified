@@ -1,5 +1,16 @@
-# Sponsored slots in the homepage "Pick by use case" panel. Empty until the advertising policy is
-# published on /methodology/, /placement-options/ and /terms/ in the same words (owner, 2026-11-10).
+# Sponsored slots. The advertising policy (site.json v3.adPolicy) is published on /methodology/,
+# /placement-options/ and /terms/ in the same words.
+#
+# Review pages (owner, 2026-11-10): one sponsor card on the first screen and again after Alternatives.
+#   - surface: review
+#     slug: 21analytics          # sponsor: published review, ranked in `category`
+#     category: travel-rule      # shows on every review of a provider ranked in this list...
+#     pages: [notabene]          # ...or only on these reviews (optional, competitor targeting)
+#     start: 2026-11-10
+#     end: 2026-12-31
+#   Never on the sponsor's own review. Rules: reviewPlacementIssues in src/_lib/placements.js.
+#
+# Homepage "Pick by use case" panel:
 #
 # One entry per slot:
 #   - use_case: kyc            # rankings.yml key from home.yml → use_cases
@@ -9,4 +20,8 @@
 #
 # The slot always carries the "Sponsored" label and shows the provider's real rank and score.
 # Rules: src/_lib/placements.js; check: node scripts/checks/placements.mjs (CI).
-[]
+- surface: review
+  slug: 21analytics
+  category: travel-rule
+  start: 2026-11-10
+  end: 2026-12-31   # owner: confirm the paid period before merge

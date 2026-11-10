@@ -4,10 +4,10 @@ seoTitle: "Terms of Use | BeVerified"
 seoDescription: "Terms for using BeVerified: editorial opinions, not legal or compliance advice, no warranties, third-party links and affiliate disclosure, and trademark notice."
 h1: "Terms of use"
 lede: "These terms apply to everyone who uses beverified.org. Please read them before you rely on anything you find here."
-updated: "2026-10-18"
+updated: "2026-11-10"
 ---
 <section>
-<p>Effective date: October 18, 2026</p>
+<p>Effective date: November 10, 2026</p>
 </section>
 
 <section id="acceptance">
@@ -34,7 +34,7 @@ updated: "2026-10-18"
 <section id="trademarks">
 <h2>Trademarks and logos</h2>
 <p>All company names, product names, logos, brands and trademarks shown on BeVerified belong to their respective owners. We use them only to identify the companies and products we write about, as part of editorial review and comparison.</p>
-<p>Showing a name or logo doesn't mean that its owner endorses, sponsors or is affiliated with BeVerified, or that we are affiliated with them. The BeVerified name and logo are ours.</p>
+<p>Unless a placement is labelled "Sponsored", showing a name or logo doesn't mean that its owner endorses, sponsors or is affiliated with BeVerified, or that we are affiliated with them. The BeVerified name and logo are ours.</p>
 <p>If you own a trademark or logo shown on this site and want it changed or removed, email <a href="mailto:support@beverified.org">support@beverified.org</a> and we will deal with the request promptly.</p>
 </section>
 
@@ -42,6 +42,9 @@ updated: "2026-10-18"
 <h2>Third-party websites and affiliate links</h2>
 <p>The site links to websites run by other companies. We don't control those websites and aren't responsible for their content, products, services, availability or privacy practices. Any agreement you make with a provider is between you and that provider only.</p>
 <p>Some links may be affiliate links: we may earn a commission if you sign up through them, at no extra cost to you. Payment never changes scores or ranking order. Our <a href="/methodology/#disclosure">disclosure</a> explains how this works.</p>
+{%- for para in site.v3.adPolicy %}
+<p>{{ para }}</p>
+{%- endfor %}
 </section>
 
 <section id="content">

@@ -388,3 +388,34 @@ application_category: Travel Rule Compliance Software
 author: andrii-klymenko
 directory_categories:
 - Travel Rule
+# Review page V4 (owner, 2026-11-10): "Who it's for" lines and networks, only facts already sourced above.
+fit:
+  'yes':
+  - run an exchange, custody or payment business and want a hosted Travel Rule service with no software of your own to run
+  - mostly receive transfers and want to start on the free plan, answering counterparties from the dashboard before you integrate
+  'no':
+  - text: send most transfers to TRUST members. Notabene cannot connect to TRUST directly and reaches it only through your own TRUST membership
+    alt: 21analytics
+  - text: need the software to run in your own infrastructure. Notabene is hosted SaaS
+    alt: 21analytics
+networks:
+- name: Own network
+  status: own
+  note: Hosted Notabene network
+  evidence: vendor
+  source: 12
+- name: TRP
+  status: built_in
+  note: TRP 1.0 endpoint for every customer; current TRP 3.2.1 only on request
+  evidence: vendor
+  source: 12
+- name: TRUST
+  status: via_membership
+  note: Only through the customer's own TRUST membership
+  evidence: vendor
+  source: 12
+- name: VerifyVASP
+  status: pending
+  note: Pending a security review
+  evidence: vendor
+  source: 12

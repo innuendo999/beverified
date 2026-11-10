@@ -331,3 +331,25 @@ application_category: Travel Rule compliance software
 author: andrii-klymenko
 directory_categories:
 - Travel Rule
+# Review page V4 (owner, 2026-11-10): "Who it's for" lines and networks, only facts already sourced above.
+fit:
+  'yes':
+  - 'are a small or mid-sized VASP that wants a hosted API with a known starting price: a €2,000 one-time deposit, then per message'
+  - want to read the API docs before you sign. They are public
+  'no':
+  - text: need a named contracting entity and certifications for vendor due diligence. TRP's site names neither
+  - text: need a sandbox to test against. The docs show none
+networks:
+- name: Own network
+  status: own
+  note: TRP's hosted network and VASP registry
+  evidence: vendor
+  source: 4
+- name: Email
+  status: fallback
+  note: Email fallback for counterparties outside the network
+  evidence: vendor
+  source: 4
+- name: Other networks
+  status: not_found
+  note: No connection to other Travel Rule networks documented

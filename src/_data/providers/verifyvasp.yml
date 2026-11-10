@@ -408,3 +408,29 @@ application_category: Travel Rule Compliance Software
 author: andrii-klymenko
 directory_categories:
 - Travel Rule
+# Review page V4 (owner, 2026-11-10): "Who it's for" lines and networks, only facts already sourced above.
+fit:
+  'yes':
+  - trade mostly with exchanges and brokers in South Korea, Singapore or Japan
+  - need a connection to the CODE network. CODE documents a connection to VerifyVASP and Sygna
+  'no':
+  - text: need published prices. VerifyVASP publishes none and quotes on request
+networks:
+- name: Own network
+  status: own
+  note: Closed VerifyVASP network, including Sygna Bridge since April 2026
+  evidence: vendor
+  source: 22
+- name: CODE
+  status: live
+  note: CODE documents a connection to VerifyVASP and Sygna
+  evidence: independent
+  source: 22
+- name: TRISA
+  status: bridge
+  note: Sygna announced TRISA interoperability in 2022
+  evidence: vendor
+  source: 30
+- name: TRUST, TRP, GTR
+  status: not_found
+  note: No direct connection found (Oct 2026)

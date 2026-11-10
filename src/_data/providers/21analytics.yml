@@ -124,6 +124,14 @@ facts:
   value: Self-hosted on your own hardware or cloud (Podman, Kubernetes or OpenShift); managed option through AML Incubator
   source: 15
   evidence: vendor
+- label: API and docs
+  value: GraphQL and REST services and an integration client SDK; public, versioned docs, releases 7.3.0 (Feb 2025) to 8.4.0 (Oct 2026)
+  source: 15
+  evidence: vendor
+- label: Sandbox
+  value: Free, time-limited access to a shared hosted sandbox after an introductory call (docs 8.4.0)
+  source: 46
+  evidence: vendor
 - label: TRUST access
   value: Listed as TRUST's only interoperability partner on the TRUST page (Oct 2026)
   source: 5
@@ -257,6 +265,7 @@ sources:
   accessed: '2026-10'
 - title: Travel Rule Universal Solution Technology (TRUST)
   publisher: Coinbase
+  type: counterparty
   url: https://www.coinbase.com/travelrule
   accessed: '2026-10'
 - title: TRUST accelerates Travel Rule network adoption with tech partner 21 Analytics
@@ -449,3 +458,74 @@ application_category: Travel Rule Compliance Software
 author: andrii-klymenko
 directory_categories:
 - Travel Rule
+# Review page V4 (owner, 2026-11-10): "Who it's for" lines and networks, only facts already sourced above.
+fit:
+  'yes':
+  - are a regulated VASP, broker or bank that wants Travel Rule data to stay in your own infrastructure
+  - send many transfers to TRUST members such as Coinbase and can pass TRUST's own due diligence
+  - 'need more than one way to prove self-hosted wallet ownership: AOPP, signed message, Satoshi test or screenshot'
+  'no':
+  - text: want a hosted service rather than software you install and patch yourself. A managed option is available through AML Incubator
+    alt: notabene
+  - text: need published prices before the first sales call. The pricing page lists tiers but no prices
+networks:
+- name: TRUST
+  status: built_in
+  note: Coinbase's TRUST page lists 21 Analytics as its only interoperability partner
+  evidence: independent
+  source: 5
+- name: TRP
+  status: built_in
+  note: Native messaging with IVMS101 data
+  evidence: vendor
+  source: 15
+- name: TRISA
+  status: bridge
+  note: Through the TRP and TRISA bridge
+  evidence: vendor
+  source: 14
+- name: Email
+  status: fallback
+  note: Encrypted email for VASPs with no Travel Rule solution
+  evidence: vendor
+  source: 15
+- name: GTR, CODE, VerifyVASP
+  status: not_found
+  note: No direct connection found (Oct 2026)
+screenshots:
+- file: /assets/img/screens/21analytics/transactions-inbox.webp
+  width: 1660
+  height: 1174
+  caption: Transactions inbox
+  alt: 21 Travel Rule transactions inbox with pending and approved VASP-to-VASP transfers, counterparty, originator, beneficiary, asset and amount columns
+  long: 'The transactions inbox: approve or decline each incoming transfer.'
+- file: /assets/img/screens/21analytics/transaction-details.webp
+  width: 1532
+  height: 474
+  caption: Transaction details
+  alt: Transaction details with originator and beneficiary data, VASP LEIs and Approve or Decline buttons
+  long: 'Transaction details: originator and beneficiary data with VASP LEIs.'
+- file: /assets/img/screens/21analytics/counterparty-trust.webp
+  width: 1532
+  height: 800
+  caption: TRUST counterparties
+  alt: Counterparty VASPs on TRUST with LEI, domain and due diligence status
+  long: Counterparty VASPs on TRUST with their due diligence status.
+- file: /assets/img/screens/21analytics/counterparty-trp.webp
+  width: 1512
+  height: 465
+  caption: TRP counterparties
+  alt: Counterparty VASPs on TRP with API URL, signing key and auto approve switch
+  long: Counterparty VASPs on TRP with API URL and signing key.
+- file: /assets/img/screens/21analytics/travel-address-book.webp
+  width: 1532
+  height: 850
+  caption: Travel Address Book
+  alt: Travel Address Book listing customers, digital assets, wallet addresses and travel addresses
+  long: 'Travel Address Book: customers, assets and wallet addresses.'
+screenshots_meta:
+  origin: vendor          # vendor = sent by the provider; beverified = captured by us
+  provided: '2026-11'
+  product_version: 8.2.0
+  sample_data: true
+  permission: sent by 21 Analytics for publication, owner confirmed 2026-11-10

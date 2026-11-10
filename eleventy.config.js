@@ -52,10 +52,12 @@ export default function (eleventyConfig) {
       let host; try { host = new URL(href).hostname.replace(/^www\./, ""); } catch { return tag; }
       const rule = vendorRules.find((r) => host === r.host || host.endsWith("." + r.host));
       if (!rule) return tag;
-      const want = rule.rel ? rule.rel.split(/\s+/) : rule.paid ? ["sponsored", "noopener"] : ["nofollow", "noopener"];
       const attrs = pre + post;
+      // Links inside a sponsored placement (data-ad) are always rel="sponsored", whatever the provider's own link rule.
+      const ad = /\sdata-ad(\s|=|$)/.test(attrs);
+      const want = ad ? ["sponsored", "noopener"] : rule.rel ? rule.rel.split(/\s+/) : rule.paid ? ["sponsored", "noopener"] : ["nofollow", "noopener"];
       const m = attrs.match(/\srel="([^"]*)"/);
-      const keep = (m ? m[1].split(/\s+/).filter(Boolean) : []).filter((r) => !rule.rel || !["nofollow", "sponsored", "ugc"].includes(r));
+      const keep = (m ? m[1].split(/\s+/).filter(Boolean) : []).filter((r) => !(ad || rule.rel) || !["nofollow", "sponsored", "ugc"].includes(r));
       const rel = [...new Set([...keep, ...want])].join(" ");
       const cleaned = (pre + post).replace(/\srel="[^"]*"/, "");
       return `<a${cleaned.replace(/\s+$/, "")} href="${href}" rel="${rel}">`.replace("<a ", "<a ").replace(/<a(\S)/, "<a $1");
