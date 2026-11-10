@@ -74,6 +74,8 @@ Certificate columns for category matrices (`liveness_pad`, `soc2`, `iso_27001`, 
 
 Starting price: a category file with `price_source: record` shows the price from the provider record, dated by `pricing.verified`: the `pricing.items[]` entry whose `label` equals the ranking entry's optional `price_item`, otherwise the `facts[]` "From" value. The build fails if `price_item` names a label the record does not have. Categories without the flag still show `legacy_price_shown` (retyped text, to be switched over one category at a time). Live on: liveness-detection (2026-11-03).
 
+Outbound link on a listing: by default ranking cards link only to the review. An entry with `site_link: true` also shows "Official website ↗" to the provider record's `link.url`, with the rel from the record (`link.rel`, else sponsored for paid/affiliate, else nofollow) and the "Sponsored link" label for paid/affiliate unless `link.label: false`. Added 2026-11-10 (21 Analytics on travel-rule).
+
 ## `src/_data/categories/<slug>.yml`
 
 `slug, url, seo, breadcrumb_label, quick_answer, reviewer, last_verified, explainer_html[] (legacy markup), faq[], adjacent[], capability_columns[], faq_templates[]`.
