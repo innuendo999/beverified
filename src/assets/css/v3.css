@@ -346,8 +346,6 @@ h1, h2, h3, p, ul, ol, figure { margin: 0; }
 .rank-card__foot { grid-column: 2 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; padding-top: 14px; border-top: 1px solid var(--line-soft); font-size: 14px; color: var(--body); }
 .rank-card__foot strong { color: var(--ink); font-weight: 600; }
 .rank-card__foot .spacer { flex: 1; }
-.rank-card__site { color: var(--body); text-decoration: underline; text-underline-offset: 3px; }
-.rank-card__site:hover { color: var(--ink); }
 .stack { display: flex; flex-direction: column; gap: 12px; }
 .weights { display: grid; grid-template-columns: minmax(0,1.5fr) minmax(0,1fr); gap: 32px; padding: 24px 28px; }
 .weights__row { display: grid; grid-template-columns: 200px minmax(0,1fr) 40px; gap: 16px; align-items: center; font-size: 15px; padding: 5px 0; }
