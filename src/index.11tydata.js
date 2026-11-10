@@ -13,10 +13,22 @@ export default {
       const cat = Object.values(d.categories).find((c) => c.slug === u.slug);
       return { ...u, url: cat?.url || `/providers/${u.slug}/`, count: list.length, top: list.slice(0, 3).map((r) => r.name) };
     }),
-    regions: (d) => d.home.regions.map((r) => {
-      const list = r.slug ? d.rankings[r.slug]?.providers || [] : [];
-      return { ...r, url: r.slug ? `/providers/${r.slug}/` : "/providers/", count: list.length, guide: !!r.slug };
-    }),
+    // Homepage pixel map: regions with a ranking, pin position from lon/lat on the grid built by
+    // scripts/region-map.mjs, top 3 from rankings.yml (minus site.v3.promoHide), logos from the records.
+    regionMap: (d) => {
+      const g = d.regionGrid, hide = d.site.v3.promoHide || [];
+      if (!g) return [];
+      return g.regions.map((slug, i) => {
+        const r = d.home.regions.find((x) => x.slug === slug), cat = d.allCategories?.[slug];
+        if (!r || !cat) return null;
+        const top = (d.rankings[slug]?.providers || []).filter((x) => x.slug && !hide.includes(x.slug) && d.providers[x.slug])
+          .slice(0, 3).map((x) => { const p = d.providers[x.slug], t = d.logoTiles?.[x.slug] || {};
+            return { name: p.name, logo: p.logo?.src || null, wordmark: p.logo?.wordmark || null, bg: t.bg || "#FFFFFF", fit: t.fit || "contain" }; });
+        const x = ((r.lon + 180) / 360) * 100, y = ((g.top - r.lat) / (g.top - g.bottom)) * 100;
+        return { code: String(i + 1), slug, name: r.name, reg: r.reg, url: cat.url, top,
+          x: Math.round(x * 10) / 10, y: Math.round(y * 10) / 10, flip: x > 60 };
+      }).filter(Boolean);
+    },
     faqs: (d) => {
       const top = Object.values(d.providers).filter((p) => p.score != null && p.methodology === d.site.v3.methodologyVersion).sort((a, b) => b.score - a.score || a.name.localeCompare(b.name));
       const kyb = d.rankings?.kyb?.providers || [];

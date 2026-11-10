@@ -19,6 +19,7 @@ const loadDir = (rel, keyOf) => {
 export default function () {
   const site = JSON.parse(fs.readFileSync(read("./site.json"), "utf8"));
   const menu = site.v3.menu;
+  const hide = site.v3.promoHide || [];
   const rankings = yaml.load(fs.readFileSync(read("./rankings.yml"), "utf8"));
   const cats = loadDir("./categories/", (f, c) => c.slug);
   const provs = loadDir("./providers/", (f) => f.replace(/\.yml$/, ""));
@@ -40,7 +41,7 @@ export default function () {
     items: g.items.map(([key, label]) => {
       const c = cats[key];
       if (!c) return null;
-      const top = (rankings[key]?.providers || []).slice(0, 3).map((r) => (r.slug ? card(r.slug) : null) || { name: r.name });
+      const top = (rankings[key]?.providers || []).filter((r) => !hide.includes(r.slug)).slice(0, 3).map((r) => (r.slug ? card(r.slug) : null) || { name: r.name });
       return { key, id: anchor(key), label, href: c.url, top, on: key === menu.rankings.preview };
     }).filter(Boolean),
   }));

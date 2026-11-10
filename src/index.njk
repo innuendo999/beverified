@@ -62,24 +62,78 @@ layout: v3.njk
 
 <section id="region" class="container home-section" aria-labelledby="rg-h">
   <div class="section-head"><h2 id="rg-h" class="h-split h-split--xl">Pick by region.<span>Local regulators, local documents</span></h2><a class="btn btn--secondary btn--sm" href="/providers/">All providers</a></div>
-  <div class="regions">
-    <div class="card regions__map">
-      <div class="map">
-        <div class="map__eq" aria-hidden="true"></div>
-        {%- for r in regions %}
-        <a class="map__pin{% if r.side == "left" %} map__pin--left{% endif %}" href="{{ r.url }}" style="left:{{ r.x }}%;top:{{ r.y }}%" aria-label="{{ r.name }}{% if r.guide %}: {{ r.count }} providers compared{% else %}: browse reviews{% endif %}">
-          <i class="{% if r.guide %}is-guide{% endif %}"></i><span>{{ r.short }}{% if r.guide %} · {{ r.count }}{% endif %}</span>
+  {#- Pixel map: land grid from src/_data/regionGrid.json (scripts/region-map.mjs), pins and cards from index.11tydata.js → regionMap.
+      Without JS the pins and cards are plain links; the script draws the map and moves the open card. -#}
+  <div class="card rmap" data-rmap>
+    <div class="rmap__stage">
+      <canvas class="rmap__canvas" aria-hidden="true"></canvas>
+      {%- for r in regionMap %}
+      <a class="rmap__pin{% if loop.first %} is-on{% endif %}" href="{{ r.url }}" style="left:{{ r.x }}%;top:{{ r.y }}%" data-rmap-pin="{{ r.code }}"><span>{{ r.name }}</span></a>
+      {%- endfor %}
+      <div class="rmap__cards">
+        {%- for r in regionMap %}
+        <a class="rmap__card{% if loop.first %} is-on{% endif %}{% if r.flip %} rmap__card--flip{% endif %}" href="{{ r.url }}" style="--x:{{ r.x }}%;--y:{{ r.y }}%" data-rmap-card="{{ r.code }}">
+          <b>{{ r.name }} <span>· {{ r.reg }}</span></b>
+          {%- if r.top.length %}
+          <span class="rmap__logos">{% for p in r.top %}<span class="rmap__logo{% if not p.logo %} rmap__logo--wm{% elif p.fit == 'contain' %} rmap__logo--contain{% endif %}"{% if p.logo and p.bg != '#FFFFFF' %} style="background:{{ p.bg }}"{% endif %}>{% if p.logo %}<img src="{{ p.logo }}" alt="{{ p.name }}" loading="lazy" decoding="async">{% elif p.wordmark %}<img src="{{ p.wordmark }}" alt="{{ p.name }}" loading="lazy" decoding="async">{% else %}<span>{{ p.name }}</span>{% endif %}</span>{% endfor %}</span>
+          {%- endif %}
+          <span class="rmap__more">See the ranking →</span>
         </a>
         {%- endfor %}
       </div>
-      <div class="map__legend"><span><i class="is-guide"></i>Country guide with ranking</span><span><i></i>Browse the reviews directory</span></div>
     </div>
-    <ul class="card regions__list">
-      {%- for r in regions %}
-      <li><a href="{{ r.url }}"><span><b>{{ r.name }}</b> <small>· {{ r.reg }}</small></span><span class="num">{% if r.guide %}{{ r.count }} providers compared{% else %}Browse directory{% endif %} →</span></a></li>
-      {%- endfor %}
-    </ul>
   </div>
+  <script type="application/json" id="rmap-grid">{{ regionGrid | json | safe }}</script>
+  <script>
+  (function () {
+    var box = document.querySelector('[data-rmap]'), data = document.getElementById('rmap-grid');
+    if (!box || !data) return;
+    var g = JSON.parse(data.textContent), cv = box.querySelector('canvas'), ctx = cv.getContext('2d');
+    var pins = [].slice.call(box.querySelectorAll('[data-rmap-pin]')), cards = [].slice.call(box.querySelectorAll('[data-rmap-card]'));
+    var codes = pins.map(function (p) { return p.getAttribute('data-rmap-pin'); });
+    var still = window.matchMedia('(prefers-reduced-motion: reduce)').matches, active = 0, paused = false, raf = 0, seen = false;
+    box.classList.add('is-live');
+    function show(i) {
+      active = i;
+      pins.forEach(function (p, j) { p.classList.toggle('is-on', j === i); });
+      cards.forEach(function (c, j) { c.classList.toggle('is-on', j === i); });
+    }
+    function draw(now) {
+      var dpr = Math.min(2, window.devicePixelRatio || 1), W = cv.clientWidth, H = cv.clientHeight;
+      if (!W) return;
+      if (cv.width !== Math.round(W * dpr)) { cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr); }
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.clearRect(0, 0, W, H);
+      var cw = W / g.cols, ch = H / g.rows, s = Math.min(cw, ch) * 0.72, rr = s * 0.28, t = still ? 0 : now / 1000, on = codes[active];
+      for (var r = 0; r < g.rows; r++) {
+        var row = g.grid[r];
+        for (var c = 0; c < g.cols; c++) {
+          var v = row.charAt(c);
+          if (v === '.') continue;
+          if (v === '0') ctx.fillStyle = 'rgba(20,20,26,' + (0.1 + 0.07 * (0.5 + 0.5 * Math.sin(c * 0.09 - r * 0.05 + t * 0.6))) + ')';
+          else if (v === on) ctx.fillStyle = 'rgba(91,43,217,' + (0.6 + 0.4 * (0.5 + 0.5 * Math.sin(c * 0.5 + r * 0.3 - t * 3.2))) + ')';
+          else ctx.fillStyle = 'rgba(91,43,217,0.32)';
+          ctx.beginPath();
+          if (ctx.roundRect) ctx.roundRect(c * cw + (cw - s) / 2, r * ch + (ch - s) / 2, s, s, rr); else ctx.rect(c * cw + (cw - s) / 2, r * ch + (ch - s) / 2, s, s);
+          ctx.fill();
+        }
+      }
+    }
+    function loop(now) { draw(now); if (!still && seen) raf = requestAnimationFrame(loop); }
+    pins.forEach(function (p, i) {
+      p.addEventListener('mouseenter', function () { paused = true; show(i); if (still) draw(0); });
+      p.addEventListener('focus', function () { paused = true; show(i); if (still) draw(0); });
+      p.addEventListener('mouseleave', function () { paused = false; });
+    });
+    cards.forEach(function (c) { c.addEventListener('mouseenter', function () { paused = true; }); c.addEventListener('mouseleave', function () { paused = false; }); });
+    setInterval(function () { if (!paused && seen && !still) show((active + 1) % pins.length); }, 4200);
+    // Draw only while the map is on screen
+    new IntersectionObserver(function (es) {
+      seen = es[0].isIntersecting; cancelAnimationFrame(raf);
+      if (seen) { if (still) draw(0); else raf = requestAnimationFrame(loop); }
+    }).observe(box);
+    window.addEventListener('resize', function () { draw(performance.now()); });
+  })();
+  </script>
 </section>
 
 <section id="top-rated" class="container home-section" aria-labelledby="tr-h">

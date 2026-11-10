@@ -27,19 +27,19 @@ use_cases:              # group = section on /use-cases/; category slug in ranki
   - { name: Age Verification, slug: age-verification, group: Identity, def: "Checking a user is over a set age, by selfie or email estimation, ID document or database." }
   - { name: Budget KYC, slug: cheap-kyc, group: Budget, def: "Providers with published per-check or monthly pricing and low minimums." }
 
-regions:                # area = section on /regions/; x/y = % position on the map grid; slug = region ranking page if one exists
+regions:                # area = section on /regions/; slug = region ranking page if one exists; lon/lat = pin on the homepage pixel map, iso = ISO 3166 numeric code used by scripts/region-map.mjs to light the country (x/y: old grid map, unused)
   - { name: United Kingdom, short: UK, area: Europe, reg: FCA, x: 49.6, y: 21, side: left }
   - { name: European Union, short: EU, area: Europe, reg: AMLA, x: 53, y: 24 }
   - { name: United States, short: US, area: North America, reg: FinCEN, x: 23, y: 31, side: left }
   - { name: UAE, short: UAE, area: Middle East & Africa, reg: CBUAE, x: 65.5, y: 36.5, side: left }
   - { name: Singapore, short: Singapore, area: Asia-Pacific, reg: MAS, x: 78.8, y: 49.2, side: left }
-  - { name: India, short: India, area: Asia-Pacific, reg: RBI, x: 71, y: 38, slug: india }
-  - { name: Brazil, short: Brazil, area: Latin America, reg: BACEN, x: 36, y: 63, slug: brazil }
-  - { name: Mexico, short: Mexico, area: North America, reg: CNBV, x: 22, y: 39, slug: mexico, side: left }
+  - { name: India, short: India, area: Asia-Pacific, reg: RBI, x: 71, y: 38, slug: india, lon: 79, lat: 22, iso: "356" }
+  - { name: Brazil, short: Brazil, area: Latin America, reg: BACEN, x: 36, y: 63, slug: brazil, lon: -52, lat: -10, iso: "076" }
+  - { name: Mexico, short: Mexico, area: North America, reg: CNBV, x: 22, y: 39, slug: mexico, side: left, lon: -102, lat: 23, iso: "484" }
   - { name: Nigeria, short: Nigeria, area: Middle East & Africa, reg: CBN, x: 52, y: 45 }
-  - { name: Canada, short: Canada, area: North America, reg: FINTRAC, x: 22, y: 22, slug: canada, side: left }
-  - { name: Peru, short: Peru, area: Latin America, reg: SBS, x: 29, y: 56, slug: peru, side: left }
-  - { name: South Africa, short: South Africa, area: Middle East & Africa, reg: FIC, x: 56.6, y: 64.3, slug: south-africa }
+  - { name: Canada, short: Canada, area: North America, reg: FINTRAC, x: 22, y: 22, slug: canada, side: left, lon: -100, lat: 57, iso: "124" }
+  - { name: Peru, short: Peru, area: Latin America, reg: SBS, x: 29, y: 56, slug: peru, side: left, lon: -75, lat: -9, iso: "604" }
+  - { name: South Africa, short: South Africa, area: Middle East & Africa, reg: FIC, x: 56.6, y: 64.3, slug: south-africa, lon: 24, lat: -29, iso: "710" }
 
 top_rated_count: 8
 
