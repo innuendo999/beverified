@@ -536,6 +536,18 @@ sources:
   publisher: Sumsub
   url: https://sumsub.com/newsroom/sumsub-joins-industry-initiative-otl-to-establish-open-standards-for-on-chain-identity-and-compliance/
   accessed: '2026-11'
+- title: Sumsub's AI Agent Verification Introduces Agent-to-Human Binding to Establish Human Accountability in AI (29 January 2026)
+  publisher: Sumsub
+  url: https://sumsub.com/newsroom/sumsubs-ai-agent-verification-introduces-agent-to-human-binding-to-establish-human-accountability-in-ai/
+  accessed: '2026-11'
+- title: Sumsub Expands Know Your Agent, Putting Businesses in Control of What AI Agents Can Access (19 October 2026)
+  publisher: Sumsub
+  url: https://sumsub.com/newsroom/sumsub-expands-know-your-agent-putting-businesses-in-control-of-what-ai-agents-can-access
+  accessed: '2026-11'
+- title: Sumsub and Sumvin Partner to Enable AI Agents to Transact Using Verified Human Identity (4 August 2026)
+  publisher: Sumsub
+  url: https://sumsub.com/newsroom/sumsub-and-sumvin-partner-to-enable-ai-agents-to-transact-using-verified-human-identity
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null
@@ -560,3 +572,50 @@ directory_categories:
 - KYB
 - Crypto KYC
 - Age Verification
+kya:
+  checked: '2026-11-10'
+  methodology: kya-1.0
+  product_name:
+    status: yes
+    note: AI Agent Verification (January 2026) and KYA Module for MCP (October 2026)
+    source: 27
+  availability:
+    status: ga
+    note: launched 29 January 2026; KYA Module for MCP launched 19 October 2026, starting with Amazon Bedrock AgentCore Gateway
+    source: 27
+  detect_undeclared:
+    status: yes
+    note: device intelligence and bot detection flag automated activity
+    source: 27
+  trust_score:
+    status: yes
+    note: automated activity gets a real-time risk assessment
+    source: 27
+  bind_person:
+    status: yes
+    note: agent activity is bound to a verified human identity
+    source: 27
+  step_up:
+    status: yes
+    note: liveness check at onboarding, account changes, high-value payouts and flagged agent requests
+    source: 28
+  scoped_permissions:
+    status: yes
+    note: rule engine on agent requests by data sensitivity, action type and requesting department
+    source: 28
+  limits_expiry:
+    status: partial
+    note: actions above a set threshold trigger a liveness check; no delegation expiry stated
+    source: 28
+  pre_action_check:
+    status: yes
+    note: the KYA Module screens each agent request before the agent receives data
+    source: 28
+  protocols:
+    status: yes
+    note: MCP
+    source: 28
+  audit_log:
+    status: yes
+    note: agent activity log of what each agent requested and did
+    source: 28

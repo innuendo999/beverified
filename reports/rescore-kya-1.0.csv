@@ -1,0 +1,7 @@
+slug,name,eligible,availability,kya_score,if_not_disclosed_scored_1,overall_score,weight_scored,detection,binding,delegation,credentials,audit,availability,trust,not_disclosed
+incode,Incode,yes,ga,4,4,3.9,100,4,4,5,3,4,3,3.5,
+shufti-pro,Shufti Pro,yes,ga,3.6,3.6,4.9,100,3,5,5,1,2,3,3.5,
+sumsub,Sumsub,yes,ga,3,3,4.8,100,3,4,3,1,2,3,4,
+persona,Persona,yes,ga,2.3,2.1,4,80,1,4,1,,,3,3.5,credentials audit
+socure,Socure,yes,ga,2.1,2,3.8,90,4,1,1,1,,3,3,audit
+trulioo,Trulioo,no,alpha,2.5,2.5,3.1,90,2,2,3,2,3,,3.5,availability

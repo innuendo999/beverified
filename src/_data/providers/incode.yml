@@ -465,6 +465,14 @@ sources:
   publisher: Incode
   url: https://www.incode.com/use-cases/know-your-business/
   accessed: '2026-11'
+- title: Agentic Identity product page
+  publisher: Incode
+  url: https://incode.com/products/agentic-identity/
+  accessed: '2026-11'
+- title: Incode Launches Agentic Identity to Verify and Secure AI Agents
+  publisher: Incode
+  url: https://incode.com/press/incode-launches-agentic-identity-to-verify-and-secure-ai-agents-2/
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null
@@ -490,3 +498,70 @@ directory_categories:
 - Identity Verification
 - Liveness Detection
 - Age Verification
+kya:
+  checked: '2026-11-10'
+  methodology: kya-1.0
+  product_name:
+    status: yes
+    note: Agentic Identity
+    source: 28
+  availability:
+    status: ga
+    note: Incode says Agentic Identity is available as part of the Incode Identity Platform; pilots began in Q4 2025 and the product page names design partners
+    source: 29
+  detect_undeclared:
+    status: yes
+    note: browser behaviour, automation signals and timing on every session, with a live-presence check
+    source: 28
+  verify_signed:
+    status: yes
+    note: declared agent headers; lists Web Bot Auth, Visa TAP and Mastercard among supported protocols
+    source: 28
+  shared_reputation:
+    status: yes
+    note: an agent blocked at one organization arrives at others already flagged
+    source: 28
+  bind_person:
+    status: yes
+    note: customer verifies once, live, and the agent carries that identity and a mandate
+    source: 28
+  step_up:
+    status: yes
+    note: actions over the mandate limit need live approval from the person
+    source: 28
+  scoped_permissions:
+    status: yes
+    note: organization sets scope per action, customer narrows it
+    source: 28
+  limits_expiry:
+    status: yes
+    note: mandate sets scope, amount and duration
+    source: 28
+  revocation:
+    status: yes
+    note: customer can revoke any agent instantly; pending actions stop
+    source: 28
+  pre_action_check:
+    status: yes
+    note: registered agent, valid mandate, verified person and action inside the mandate checked before each action
+    source: 28
+  credential_format:
+    status: partial
+    note: agent carries an identity token and tokenized mandate; format not published, protocol credentials issued by the protocols
+    source: 28
+  protocols:
+    status: yes
+    note: PAP, PACT, A2A, MCP, WebMCP, AP2, ACP, Visa TAP, Mastercard, Web Bot Auth, OAuth, W3C credentials
+    source: 28
+  audit_log:
+    status: yes
+    note: 'Agent Audit: action, person, mandate and proof'
+    source: 28
+  tamper_evident:
+    status: yes
+    note: Agent Audit record is tamper-evident
+    source: 28
+  behaviour_monitoring:
+    status: yes
+    note: Agent Monitoring reads patterns across sessions and organizations
+    source: 28

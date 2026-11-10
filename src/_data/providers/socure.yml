@@ -449,6 +449,14 @@ sources:
   publisher: Business Wire
   url: https://www.businesswire.com/news/home/20200824005565/en/Company-Profile-for-Socure
   accessed: '2026-11'
+- title: Socure links AI agents to verified people and businesses (27 October 2026)
+  publisher: Help Net Security
+  url: https://www.helpnetsecurity.com/2026/10/27/socure-agent-intelligence/
+  accessed: '2026-11'
+- title: Socure Launches Agent Intelligence to Detect, Score and Credential AI Agents
+  publisher: ID Tech
+  url: https://idtechwire.com/socure-launches-agent-intelligence-to-detect-score-and-credential-ai-agents/
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null
@@ -473,3 +481,42 @@ directory_categories:
 - Identity Verification
 - KYC
 - Age Verification
+kya:
+  checked: '2026-11-10'
+  methodology: kya-1.0
+  product_name:
+    status: yes
+    note: 'Agent Intelligence: Agent Detection, Agent TrustScore, Agent Credential'
+    source: 18
+  availability:
+    status: ga
+    note: Agent Detection generally available inside Digital Intelligence since 27 October 2026; Agent TrustScore in beta; Agent Credential planned for Q1 2027
+    source: 18
+  detect_undeclared:
+    status: yes
+    note: classifies agents driving browser sessions whether or not they declare themselves, and names them
+    source: 18
+  verify_signed:
+    status: beta
+    note: Agent TrustScore evaluates credentials from any issuer
+    source: 18
+  trust_score:
+    status: yes
+    note: confidence score and reason codes; TrustScore returns identity, authorization and risk separately
+    source: 18
+  bind_person:
+    status: planned
+    note: Agent Credential binds agents to a verified person in Socure's identity graph (Q1 2027)
+    source: 18
+  bind_business:
+    status: planned
+    note: Agent Credential binds agents to a verified business (Q1 2027)
+    source: 18
+  chaining:
+    status: planned
+    note: credential format supports cryptographic chaining and proof of possession (Q1 2027)
+    source: 19
+  credential_format:
+    status: planned
+    note: W3C Verifiable Credential via SocurePass, verifiable without calling Socure (Q1 2027)
+    source: 18

@@ -533,6 +533,14 @@ sources:
   publisher: GOV.UK, Office for Digital Identities and Attributes
   url: https://www.access-dvs-register.service.gov.uk/register/provider-details?providerId=42
   accessed: '2026-11'
+- title: Know Your Agent solution page
+  publisher: Persona
+  url: https://withpersona.com/solutions/know-your-agent/
+  accessed: '2026-11'
+- title: Introducing Know Your Agent on Chatbase (22 October 2026)
+  publisher: Chatbase
+  url: https://www.chatbase.co/blog/introducing-know-your-agent-on-chatbase
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null
@@ -558,3 +566,34 @@ directory_categories:
 - eKYC
 - KYB
 - Age Verification
+kya:
+  checked: '2026-11-10'
+  methodology: kya-1.0
+  product_name:
+    status: yes
+    note: Know Your Agent (KYA) solution
+    source: 34
+  availability:
+    status: ga
+    note: solution page sold through sales, built on Persona products already on sale (government ID, selfie liveness, reverification, passive signals); no separate KYA release status
+    source: 34
+  detect_undeclared:
+    status: partial
+    note: device, network and behavioural signals give insight into agent-driven journeys; agent detection not stated as a capability
+    source: 34
+  verify_signed:
+    status: planned
+    note: agent authentication in early access with Chatbase, "building KYA with Persona now"
+    source: 35
+  bind_person:
+    status: yes
+    note: government ID and selfie checks bind agents to real humans
+    source: 34
+  step_up:
+    status: yes
+    note: reverification of the bound human unblocks high-risk actions
+    source: 34
+  scoped_permissions:
+    status: partial
+    note: verified identity used to set an agent's scope and permissions at onboarding; enforcement not stated
+    source: 34
