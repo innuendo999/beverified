@@ -4,15 +4,15 @@ seoTitle: "Our Methodology: How BeVerified Scores KYC & AML Providers"
 seoDescription: "How BeVerified scores KYC, IDV and AML providers: a published rubric for each kind of product, scored from public evidence, with what a score cannot measure."
 h1: "Our Methodology"
 lede: "We score identity verification and KYC providers on one rubric and AML providers on another, using evidence anyone can check. Every claim on a review is labelled with where it came from."
-updated: "2026-11-05"
+updated: "2026-11-10"
 ---
 <section>
-<p>Methodology {{ site.v3.methodologyVersion }}, last updated Nov 5, 2026. <a href="#changelog">What changed</a></p>
+<p>Methodology {{ site.v3.methodologyVersion }}, last updated Nov 10, 2026. <a href="#changelog">What changed</a></p>
 </section>
 
 <section id="rubric">
 <h2>Scoring rubric</h2>
-<p>Each provider gets an editorial score from 1 to 5: the weighted result of six criteria. The criteria are the questions a buyer asks when choosing a vendor, so they differ by kind of product. Identity verification, eKYC, KYC, liveness, age verification and KYB providers use the first rubric; AML screening and monitoring providers use the second. Travel Rule providers are still scored on our previous rubric until their own methodology is published.</p>
+<p>Each provider gets an editorial score from 1 to 5: the weighted result of six criteria. The criteria are the questions a buyer asks when choosing a vendor, so they differ by kind of product. Identity verification, eKYC, KYC, liveness, age verification and KYB providers use the first rubric; AML screening and monitoring providers use the second. Travel Rule providers are still scored on our previous rubric until their own methodology is published. Know Your Agent products have a rubric of their own, <a href="#know-your-agent">set out below</a>.</p>
 <table>
 <caption>Identity verification and KYC: criteria, weights and what we look at</caption>
 <thead><tr><th scope="col">Criterion</th><th scope="col">Weight</th><th scope="col">What we look at</th></tr></thead>
@@ -39,6 +39,26 @@ updated: "2026-11-05"
 </table>
 <p>Each sub-score comes from a fixed table of rules, so the same evidence always gives the same sub-score, and every review shows its breakdown. If we can't find public information for a criterion, the review says "Not publicly disclosed" and that criterion's weight is shared across the others. User ratings and any commercial relationship are never part of a score.</p>
 <p>Grades: Excellent from 4.5, Great 4.0 to 4.4, Very Good 3.5 to 3.9, Good 3.0 to 3.4, Fair below 3.0.</p>
+</section>
+
+<section id="know-your-agent">
+<h2>Know Your Agent rubric</h2>
+<p>Know Your Agent (KYA) products check the AI agents that act for a customer: whether a session comes from an agent, which agent it is, which verified person or business stands behind it, and what it is allowed to do. Providers with a KYA product get a separate KYA score from the rubric below. It orders the Know Your Agent ranking only. Each provider's review keeps its overall score.</p>
+<table>
+<caption>Know Your Agent: criteria, weights and what we look at</caption>
+<thead><tr><th scope="col">Criterion</th><th scope="col">Weight</th><th scope="col">What we look at</th></tr></thead>
+<tbody>
+<tr><th scope="row">Agent detection and recognition</th><td>20%</td><td>Detection of agents that do not declare themselves, verification of signed agents (Web Bot Auth, Visa Trusted Agent Protocol, Mastercard Agent Pay) or a registry check, a trust score with reasons, and agent reputation shared across customers.</td></tr>
+<tr><th scope="row">Human and business binding</th><td>20%</td><td>Whether each agent is tied to a verified person, or through KYB to a verified business, whether the person is checked again before high-risk actions, and independent evidence for that human check, such as an iBeta ISO/IEC 30107-3 letter.</td></tr>
+<tr><th scope="row">Delegation and permission control</th><td>20%</td><td>Permissions by type of action, spending limits and an expiry, revocation at any time, and a check against the permission before each action runs.</td></tr>
+<tr><th scope="row">Credentials and interoperability</th><td>10%</td><td>A credential in a published format such as a W3C Verifiable Credential, the agent protocols supported (MCP, A2A, AP2, ACP, Visa TAP, Mastercard Agent Pay, Web Bot Auth, OAuth), and open specifications adopted by a standards body.</td></tr>
+<tr><th scope="row">Audit and monitoring</th><td>10%</td><td>A log of every agent action with the person and permission behind it, protection against tampering, monitoring after onboarding, and export for disputes and regulators.</td></tr>
+<tr><th scope="row">Availability, pricing and integration</th><td>10%</td><td>Whether the product is generally available or in an open beta, a published price or free tier, public developer documentation, and a sandbox, trial or SDK.</td></tr>
+<tr><th scope="row">Trust and track record</th><td>10%</td><td>The provider's trust and track record sub-score from the identity rubric, unchanged.</td></tr>
+</tbody>
+</table>
+<p>A provider enters the Know Your Agent ranking only when its KYA product is launched and sold, an open beta or pilot included. A framework, a white paper or a launch planned for a later date does not count: we list those providers with their status until the product ships.</p>
+<p>Most KYA evidence is vendor-stated for now. No lab test or certification scheme for agent verification exists yet, and the Know Your Agent ranking says so next to the scores.</p>
 </section>
 
 <section id="evidence">
@@ -92,6 +112,7 @@ updated: "2026-11-05"
 <section id="changelog">
 <h2>What changed</h2>
 <ul>
+<li><strong>Nov 10, 2026 (KYA 1.0):</strong> added a Know Your Agent rubric for products that verify AI agents acting for customers. KYA scores are separate from overall scores and order only the Know Your Agent ranking. Criteria and weights were published before any provider was scored.</li>
 <li><strong>Nov 5, 2026 (v3.1):</strong> separate rubrics for identity verification and KYC and for AML, built around what buyers compare: fraud defense or screening quality, total cost, coverage, platform breadth, integration and track record. Certificates now count under trust instead of a 25% criterion of their own. Sub-scores follow fixed rules and every review shows its breakdown. All 47 identity and AML providers were re-scored on the same day; the average score fell from 4.4 to 3.6, and rankings were re-ordered. Quantexa, Verified, VerifyMy and Paravision keep their previous score and are left out of rankings until category-specific rubrics cover them. Travel Rule providers stay on v3.0.</li>
 <li><strong>Oct 19, 2026:</strong> disclosure updated: paid provider links are labelled "Sponsored link"; links to providers that don't pay use rel="nofollow".</li>
 <li><strong>Oct 18, 2026:</strong> rewritten to describe how reviews are actually built today: public evidence labelled by source, hands-on testing marked separately, rankings ordered by score.</li>
