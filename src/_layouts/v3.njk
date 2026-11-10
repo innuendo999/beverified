@@ -48,6 +48,46 @@
   if (h && b) b.addEventListener('click', function () {
     var open = h.classList.toggle('is-open'); b.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
+  // Mega menu: click or hover opens a panel, Escape or a click outside closes it.
+  // Without this script the panels still open on hover and keyboard focus (CSS).
+  var items = h ? [].slice.call(h.querySelectorAll('[data-mm-item]')) : [];
+  if (items.length) {
+    document.documentElement.classList.add('mm-js');
+    var desk = window.matchMedia('(min-width: 861px) and (hover: hover)'), timer;
+    var set = function (item, open) {
+      item.classList.toggle('is-open', open);
+      item.querySelector('.mm-top').setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
+    var only = function (item) { items.forEach(function (i) { set(i, i === item); }); };
+    var closeAll = function () { only(null); };
+    items.forEach(function (item) {
+      var btn = item.querySelector('.mm-top');
+      btn.addEventListener('click', function () { item.classList.contains('is-open') ? set(item, false) : only(item); });
+      item.addEventListener('mouseenter', function () {
+        if (!desk.matches) return;
+        clearTimeout(timer); timer = setTimeout(function () { only(item); }, 70);
+      });
+      // Ranking preview follows the hovered or focused category
+      item.querySelectorAll('[data-mm-cat]').forEach(function (row) {
+        var show = function () {
+          var id = row.getAttribute('data-mm-cat');
+          item.querySelectorAll('[data-mm-cat]').forEach(function (r) { r.classList.toggle('is-on', r === row); });
+          item.querySelectorAll('[data-mm-pv]').forEach(function (pv) { pv.classList.toggle('is-on', pv.getAttribute('data-mm-pv') === id); });
+        };
+        row.addEventListener('mouseenter', show); row.addEventListener('focus', show);
+      });
+    });
+    h.addEventListener('mouseleave', function () {
+      if (!desk.matches) return;
+      clearTimeout(timer); timer = setTimeout(closeAll, 180);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key !== 'Escape') return;
+      var open = items.filter(function (i) { return i.classList.contains('is-open'); })[0];
+      if (open) { closeAll(); open.querySelector('.mm-top').focus(); }
+    });
+    document.addEventListener('click', function (e) { if (!h.contains(e.target)) closeAll(); });
+  }
   // Open a collapsed list (sources, certifications) when a footnote link points into it.
   function reveal(id) {
     var el = id && document.getElementById(id), d = el && el.closest('details');

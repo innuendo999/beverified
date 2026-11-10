@@ -115,6 +115,11 @@ export default function (eleventyConfig) {
     [0, 1, 2, 3, 4].map((i) => Math.round(Math.max(0, Math.min(1, Number(score) - i)) * 10) * 10));
 
   // "2026-07-25" -> "Jul 25, 2026"; "2026-07" -> "Jul 2026"
+  // Mega menu: the newest n articles, skipping the featured URL
+  eleventyConfig.addFilter("menuLatest", (list, skipUrl, n = 3) =>
+    (list || []).filter((a) => a.url !== skipUrl).slice(0, n));
+  // Mega menu: one article by URL (empty list when it does not exist)
+  eleventyConfig.addFilter("articleAt", (list, url) => (list || []).filter((a) => a.url === url).slice(0, 1));
   eleventyConfig.addFilter("displayDate", (iso) => {
     if (!iso) return "";
     const [y, m, d] = isoDate(iso).split("-").map(Number);
