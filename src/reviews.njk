@@ -87,6 +87,18 @@ layout: v3.njk
     <div class="prose">{% for para in p.what_is %}<p>{{ para }}</p>{% endfor %}</div>
   </section>
 
+  {%- if company.length %}
+  <section id="company" aria-labelledby="company-h">
+    <h2 id="company-h" class="h-section">Company facts</h2>
+    <p class="section-lede">Vendor-stated unless marked ◆. Sources are listed at the end of the review.</p>
+    <div class="card co-facts">
+      {%- for f in company %}
+      <div class="co-facts__row"><span>{{ f.label }}</span><span>{% if f.evidence == "independent" and f.source %}<span class="co-facts__ev" title="{{ ev.independent.label }}: {{ ev.independent.desc }}">◆</span> {% endif %}{{ f.value }}</span></div>
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endif %}
+
   {%- if hasBreakdown %}
   <section id="score" aria-labelledby="score-h">
     <h2 id="score-h" class="h-section h-section--tight">Score breakdown</h2>
@@ -344,22 +356,20 @@ layout: v3.njk
   {%- endif %}
 </main>
 
-<aside class="review-aside" aria-label="Quick facts">
-  <div class="card p-6-0">
-    <div class="p-12-20-8 fs-15 fw-600">Quick facts</div>
-    {%- for f in p.facts %}
-    <div class="fact">
-      <div class="fact__line"><span>{{ f.label }}</span><span>{{ f.value }}</span></div>
-      {%- if f.source and f.evidence and ev[f.evidence] %}<div class="fact__ev"><span class="evidence evidence--sm"><span aria-hidden="true">{{ ev[f.evidence].icon }}</span>{{ ev[f.evidence].label }}</span></div>{% endif %}
-    </div>
+<aside class="review-aside" aria-label="Summary">
+  <div class="card side">
+    {%- for r in side %}
+    <a class="side__row" href="{{ r.href }}">
+      <span><span class="side__label">{{ r.label }}</span><span class="side__value">{{ r.value }}</span>{% if r.sub %}<span class="side__sub">{{ r.sub }}</span>{% endif %}</span>
+      <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M5 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
     {%- endfor %}
-    {%- if p.last_verified %}<div class="fact"><div class="fact__line"><span>Last verified</span><span class="num">{{ p.last_verified | displayDate }}</span></div></div>{% endif %}
-    {%- if p.updated and p.updated > p.last_verified %}<div class="fact"><div class="fact__line"><span>Updated</span><span class="num">{{ p.updated | displayDate }}</span></div></div>{% endif %}
-    {%- if p.link.url %}
-    <div class="p-12-20-14 bt-1-solid-line-soft">
+    <div class="side__foot">
+      {%- if p.last_verified %}<p>Last verified {{ p.last_verified | displayDate }}{% if p.updated and p.updated > p.last_verified %} · Updated {{ p.updated | displayDate }}{% endif %}</p>{% endif %}
+      {%- if p.link.url %}
       <a class="btn btn--primary btn--block" href="{{ p.link.url }}" rel="{{ p.link | outRel }}" target="_blank">Visit site ↗</a>{% if (p.link.type == "paid" or p.link.type == "affiliate") and p.link.label != false %}<span class="paid-note">Sponsored link</span>{% endif %}
+      {%- endif %}
     </div>
-    {%- endif %}
   </div>
 </aside>
 </div>

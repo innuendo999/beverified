@@ -2,6 +2,7 @@
 // Everything comes from src/_data/providers/<slug>.yml; nothing is typed here.
 import { buildMatrix } from "./_lib/capabilities.js";
 import { termForCapability } from "./_lib/glossary.js";
+import { buildSidebar, companyFacts } from "./_lib/sidebar.js";
 
 export default {
   pagination: { data: "providers", size: 1, alias: "p", resolve: "values", addAllPagesToCollections: true },
@@ -25,6 +26,10 @@ export default {
       if (!alts.length) return null;
       return buildMatrix(cols, [d.p, ...alts], termForCapability(d.glossaryTerms));
     },
+    // Sidebar rows and the "Company facts" section (src/_lib/sidebar.js)
+    side: (d) => buildSidebar(d.p, d.incidents?.items, (d.p.choose_instead || [])
+      .filter((a) => a.slug && d.providers[a.slug]).map((a) => ({ q: d.providers[a.slug] }))),
+    company: (d) => companyFacts(d.p),
     pricingOfficial: (d) => (d.p.pricing?.items || []).filter((i) => i.kind !== "third_party"),
     pricingEstimates: (d) => (d.p.pricing?.items || []).filter((i) => i.kind === "third_party"),
     incidentList: (d) => (d.incidents?.items || []).filter((x) => x.slug === d.p.slug).sort((a, b) => b.date.localeCompare(a.date)),
