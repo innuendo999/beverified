@@ -15,6 +15,7 @@ All pages are generated from templates + data. There is no hand-written page HTM
 | Header mega menu (Rankings, Reviews, Blog panels) and footer columns | picks in `site.json` → `v3.menu` (category keys, "Most read" slugs, featured article URL); resolved by `src/_data/megaMenu.js` from rankings.yml, category and provider records; logo tile colour/fit in `src/_data/logoTiles.json`, regenerate with `python3 scripts/menu-logo-tiles.py` after changing a logo. Open/close script in `src/_layouts/v3.njk`, styles `.mm-*` at the end of v3.css |
 | Styles (tokens + components, incl. mobile) | `src/assets/css/v3.css` |
 | One provider (score, pricing, facts, pros/cons, FAQ, link, logo) | `src/_data/providers/<slug>.yml` → rendered by `src/reviews.njk` at `/providers/<slug>/` |
+| Review sidebar (Price, Independent tests, Watch, Alternatives when the card would have one row) and "Company facts" section | `src/_lib/sidebar.js` builds both from the provider record and `incidents.yml`. No heading, no "Not publicly disclosed" rows, no numbered source refs; only independent evidence gets ◆ (owner, 2026-11-10) |
 | Ranked lists per category / region (order = rank, award, card copy) | `src/_data/rankings.yml` |
 | Category / region page copy (quick answer, explainer, FAQ, related) | `src/_data/categories/<slug>.yml` → `src/categories.njk` |
 | Homepage copy, quick picks, use-case cards, regions map | `src/_data/home.yml` → `src/index.njk` |
