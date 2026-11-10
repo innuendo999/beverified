@@ -132,3 +132,7 @@ capabilities:                # new keys, same shape as the other capabilities
 ## `src/_data/incidents.yml` (security incident tracker, added 2026-11-05)
 
 One record per incident (`id, slug, vendor, date, occurred, type, sensitivity, status, counted, title, summary, data[], scale, response, since, news?, corrections[]?, appeal?, sources[]`), rules in the file header. Renders `/incidents/` (`src/incidents/`) and the "Security incidents" block on the review of `slug` (`src/reviews.njk`, nav pill "Incidents"). Update `checked` after every re-check. Vendors correct or appeal by email (each entry has a prefilled link); accepted corrections go in `corrections[]`, appeals in `appeal{received, outcome, decided, note}`. Same rules for every vendor, including affiliate and paid-link partners.
+
+## `src/_data/placements.yml` (sponsored slots, added 2026-11-10)
+
+List of `{use_case, slug, start, end}`. One slot per use case in the homepage "Pick by use case" panel, shown from `start` to `end` (ISO dates, build date). `use_case` is a `rankings.yml` key listed in `home.yml` → `use_cases`; `slug` has a published review with a score, is in that ranking and not in its top 3; slots for one use case never overlap. The slot always shows the "Sponsored" label, the provider's real rank in that ranking, its record score and the ranking entry's `tagline` (else the record's), and links to the review. Rules in `src/_lib/placements.js`, checked by `scripts/checks/placements.mjs`; an entry that breaks a rule is never rendered. Empty until the advertising policy is published.
