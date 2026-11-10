@@ -108,6 +108,43 @@
         "weight": 10
       }
     ],
+    "rubricKya": [
+      {
+        "key": "detection",
+        "name": "Agent detection and recognition",
+        "weight": 20
+      },
+      {
+        "key": "binding",
+        "name": "Human and business binding",
+        "weight": 20
+      },
+      {
+        "key": "delegation",
+        "name": "Delegation and permission control",
+        "weight": 20
+      },
+      {
+        "key": "credentials",
+        "name": "Credentials and interoperability",
+        "weight": 10
+      },
+      {
+        "key": "audit",
+        "name": "Audit and monitoring",
+        "weight": 10
+      },
+      {
+        "key": "availability",
+        "name": "Availability, pricing and integration",
+        "weight": 10
+      },
+      {
+        "key": "trust",
+        "name": "Trust and track record",
+        "weight": 10
+      }
+    ],
     "evidence": {
       "independent": {
         "icon": "◆",
@@ -245,6 +282,10 @@
               [
                 "age-verification",
                 "Age Verification"
+              ],
+              [
+                "know-your-agent",
+                "Know Your Agent"
               ]
             ]
           },

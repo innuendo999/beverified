@@ -2072,3 +2072,125 @@ uk:
     - Per-check prices are not published
     - Narrower AML-workflow depth than dedicated AML platforms
     segments: []
+know-your-agent:
+  title: Best Know Your Agent (KYA) Providers in 2026
+  providers:
+  - slug: incode
+    name: Incode
+    award: Editor's Choice
+    tagline: Agentic Identity gives each AI agent a mandate tied to a live-verified person and checks it before every action.
+    coverage: null
+    size: null
+    pros:
+    - Mandate per agent with scope, amount and duration, checked before every action and revocable at once
+    - Agents are bound to a person verified with liveness tested by iBeta to ISO/IEC 30107-3 Level 3
+    - Names 12 agent protocols, including MCP, A2A, AP2, Visa TAP and Web Bot Auth
+    cons:
+    - Pilots began in Q4 2025 and the product page still names design partners
+    - No published price; Agentic Identity is quoted on request
+    - The format of the agent's identity token and mandate is not published
+    legacy_price_shown: null
+    legacy_rating_shown: null
+    segments: []
+  - slug: shufti-pro
+    name: Shufti Pro
+    award: Best for Business-Owned Agents
+    tagline: Know Your Agent verifies the person or business behind an agent and enforces its limits before it acts.
+    coverage: null
+    size: null
+    pros:
+    - Verifies the person or the business behind an agent, with iBeta Level 3 liveness on the person
+    - Spending and time limits, an expiry and revocation on each agent's permissions
+    - Every request, decision and revocation is logged against the agent and its owner
+    cons:
+    - Names no agent protocol such as MCP, A2A or AP2
+    - Each agent gets a time-bound, revocable credential, but its format is not published
+    - Launched on 28 October 2026, so there is little track record yet
+    legacy_price_shown: null
+    legacy_rating_shown: null
+    segments: []
+  - slug: sumsub
+    name: Sumsub
+    award: Best for MCP Data Access
+    tagline: AI Agent Verification ties agent activity to a verified person; the KYA Module for MCP filters what agents can reach.
+    coverage: null
+    size: null
+    pros:
+    - Asks for a liveness check at onboarding, account changes, high-value payouts and flagged agent requests
+    - The KYA Module for MCP removes personal data from what agents receive and screens every request
+    - Keeps a log of what each agent requested and did
+    cons:
+    - No revocation or expiry of agent permissions is stated
+    - MCP is the only protocol named, and the MCP module starts with Amazon Bedrock AgentCore Gateway only
+    - No agent credential or token format is published
+    legacy_price_shown: null
+    legacy_rating_shown: null
+    segments: []
+  - slug: persona
+    name: Persona
+    award: Best for Reverifying the Human
+    tagline: Know Your Agent uses Persona's ID, selfie and reverification checks to tie agents to real people.
+    coverage: null
+    size: null
+    pros:
+    - Government ID and selfie checks bind agents to real people, with liveness tested by iBeta to Level 2
+    - Reverifies the person behind an agent to unblock high-risk actions in real time
+    - Collects device, network and behavioural signals on agent-driven journeys
+    cons:
+    - No agent detection, credential, revocation or action log is stated on the KYA page
+    - Agent authentication with Chatbase was still in early access on 22 October 2026
+    - No separate KYA release status or price; sold through sales
+    legacy_price_shown: null
+    legacy_rating_shown: null
+    segments: []
+  - slug: socure
+    name: Socure
+    award: Best for Detecting Undeclared Agents
+    tagline: Agent Intelligence detects and names AI agents in browser sessions, with a trust score in beta.
+    coverage: null
+    size: null
+    pros:
+    - Names agents in browser sessions even when they do not declare themselves, generally available since 27 October 2026
+    - Returns a confidence score and reason codes rather than a plain allow or block
+    - Agent TrustScore, in beta, rates identity, authorization and risk separately and accepts credentials from any issuer
+    cons:
+    - Binding an agent to a verified person or business arrives only with Agent Credential, planned for Q1 2027
+    - No permission limits, revocation or action log are stated
+    - Agent Detection sits inside Socure's Digital Intelligence product
+    legacy_price_shown: null
+    legacy_rating_shown: null
+    segments: []
+  - slug: null
+    name: Vouched
+    award: null
+    tagline: Know Your Agent suite from Vouched, which wrote the KYA-OS specification, with free agent detection.
+    coverage: null
+    size: null
+    pros:
+    - Free tier with unlimited agent detection
+    - Delegations are Ed25519-signed W3C VC-JWTs that can be revoked at any time
+    - The KYA-OS specification was adopted by the Decentralized Identity Foundation
+    cons:
+    - Not yet reviewed by BeVerified, so it has no score
+    - Paid prices are not listed on its KYA page
+    - Detection on its own blocks nothing; enforcement is set up separately
+    legacy_price_shown: null
+    legacy_rating_shown: null
+    segments: []
+  - slug: null
+    name: Prove
+    award: null
+    tagline: Prove Verified Agent links people and businesses in the Prove Identity Graph to the agents acting for them.
+    coverage: null
+    size: null
+    pros:
+    - Identity-bound tokens link the verified person, the agent and the credential
+    - Session-level authorization limits, with each interaction co-signed by user and merchant keys
+    - A trust registry of agent publishers, merchants and payment networks
+    cons:
+    - Not yet reviewed by BeVerified, so it has no score
+    - The launch release gives no availability dates, regions or pricing
+    - Supports only AP2 at launch
+    legacy_price_shown: null
+    legacy_rating_shown: null
+    segments: []

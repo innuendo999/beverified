@@ -21,11 +21,13 @@ export default {
       const items = d.home.use_cases.map((u) => {
         const list = d.rankings[u.slug]?.providers || [];
         const cat = Object.values(d.categories).find((c) => c.slug === u.slug);
+        // Categories with their own rubric (score_source: category) show that category's score.
+        const sc = (p) => (cat?.score_source === "category" ? p?.category_scores?.[u.slug]?.score : p?.score) ?? null;
         const top = list.slice(0, 3).map((r, i) => { const p = r.slug ? d.providers[r.slug] : null;
           return { rank: i + 1, name: p?.name || r.name, url: p ? `/providers/${r.slug}/` : null, award: r.award || "",
-            score: p?.score ?? null, ...tile(r.slug) }; });
+            score: sc(p), ...tile(r.slug) }; });
         const s = live[u.slug];
-        const sponsor = s ? { name: s.provider.name, url: `/providers/${s.slug}/`, rank: s.rank, score: s.provider.score,
+        const sponsor = s ? { name: s.provider.name, url: `/providers/${s.slug}/`, rank: s.rank, score: sc(s.provider),
           line: s.entry.tagline || s.provider.tagline || "", ...tile(s.slug) } : null;
         return { ...u, id: u.slug.replace(/\//g, "-"), url: cat?.url || `/providers/${u.slug}/`, top, sponsor };
       });

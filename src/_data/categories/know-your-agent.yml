@@ -1,0 +1,69 @@
+slug: know-your-agent
+url: /providers/know-your-agent/
+seo:
+  title: Best Know Your Agent (KYA) Providers in 2026 | BeVerified
+  description: 'Incode, Shufti Pro, Sumsub, Persona and Socure compared on Know Your Agent: agent detection, binding to a verified person, permissions, revocation and audit.'
+  h1: Best Know Your Agent (KYA) Providers in 2026
+breadcrumb_label: Best Know Your Agent Providers
+quick_answer: Incode ranks first for Know Your Agent, giving each agent a mandate with scope, amount and duration that is checked before every action. Shufti Pro is next, verifying the person or business behind an agent. Sumsub adds data filtering for agents connected over MCP. We compared 7 providers, 5 of them scored, on detection, binding, permissions and audit.
+last_verified: '2026-11-10'
+updated: '2026-11-10'
+score_source: category
+score_label: KYA score
+rubric: rubricKya
+methodology_label: KYA 1.0
+methodology_anchor: '#know-your-agent'
+explainer_html:
+- '<h2>What Know Your Agent covers</h2>
+  <p>Know Your Agent (KYA) is the set of checks a business runs on an AI agent that acts for one of its customers. It answers four questions: is this session an agent, which agent is it, which verified person or business stands behind it, and what is it allowed to do. KYA sits on top of <a href="/providers/kyc/">KYC</a> and <a href="/providers/kyb/">KYB</a>. The person or company behind the agent still has to be verified, and the agent then carries that verification and a set of permissions.</p>
+  <p>Bot management stops automated traffic. KYA lets the right agents in: an agent that a verified customer approved can check an order or pay a bill, while an unknown agent, or one acting outside its permissions, is blocked or sent back to the person for approval.</p>'
+- '<h2>Standards and protocols</h2>
+  <p>No certification scheme or lab test for agent verification exists yet, so every score on this page rests mostly on what vendors state. The work that frames the field is still at the draft stage:</p>
+  <ul>
+  <li>The NIST National Cybersecurity Center of Excellence published a <a href="https://csrc.nist.gov/pubs/other/2026/02/05/accelerating-the-adoption-of-software-and-ai-agent/ipd">concept paper on software and AI agent identity and authorization</a> on 5 February 2026, with comments open until 2 April 2026. It proposes applying existing identity standards such as OAuth and OpenID Connect to agents.</li>
+  <li>The OpenID Foundation published the white paper <a href="https://openid.net/new-whitepaper-tackles-ai-agent-identity-challenges/">Identity Management for Agentic AI</a> on 7 October 2025.</li>
+  <li>The IETF Web Bot Auth working group is drafting <a href="https://datatracker.ietf.org/doc/html/draft-ietf-webbotauth-httpsig-protocol-00">HTTP Message Signatures for bots</a>, which lets an agent sign its requests. <a href="https://blog.cloudflare.com/secure-agentic-commerce/">Visa Trusted Agent Protocol and Mastercard Agent Pay</a> build on it.</li>
+  </ul>
+  <p>Agents also reach businesses through MCP, A2A, AP2 and ACP. We count the protocols a vendor names for its KYA product, but none of these is a certificate, and this page does not treat support for one as proof that a product is secure.</p>'
+- '<h2>Who is not ranked, and why</h2>
+  <p>We rank a provider only when its KYA product is launched and sold, an open beta or pilot included. <a href="/providers/trulioo/">Trulioo</a> has a KYA product built around a signed Digital Agent Profile, but its page says KYA is in alpha and open only to organizations whose domains have been enabled, so it is not ranked yet. Vouched and Prove sell KYA products but have no BeVerified review yet, so they are listed without a score. Payment network programmes and protocols, and workforce identity tools for a company''s own agents, are out of scope.</p>'
+- '<h2>What to test in a proof of concept</h2>
+  <ul>
+  <li>Run the vendor''s detection on your own traffic for two weeks and compare what it calls an agent with your logs.</li>
+  <li>Count how many legitimate customer agents get blocked or sent to a step-up check.</li>
+  <li>Measure the delay the check adds at login and at checkout.</li>
+  <li>Revoke an agent mid-session and confirm that its next request fails.</li>
+  <li>Export the log for one disputed action and check that it shows the agent, the person and the permission it used.</li>
+  </ul>
+  <p>KYA scores come from our <a href="/methodology/#know-your-agent">Know Your Agent rubric</a>, separate from each provider''s overall review score. The capability lists on this page come from each vendor''s own KYA page and launch release, checked on 10 November 2026.</p>'
+faq:
+- q: What is Know Your Agent (KYA)?
+  a: Know Your Agent (KYA) is a set of checks on an AI agent that acts for a customer. It confirms whether a session comes from an agent, which agent it is, which verified person or business stands behind it, and what it is allowed to do.
+- q: How is KYA different from KYC?
+  a: KYC verifies a person, usually once at onboarding. KYA builds on that check and ties an AI agent to the verified person or business, then controls what the agent may do and keeps a record of its actions. Most KYA products reuse the vendor's own KYC, liveness and KYB checks for the human side.
+- q: Which Know Your Agent provider is best?
+  a: Incode ranks first on our KYA rubric. Its agents carry a mandate with scope, amount and duration, checked before every action and revocable at once, and it names 12 agent protocols. Shufti Pro is second, with binding to a verified person or business and spending and time limits.
+- q: Is there a certification for AI agent verification?
+  a: No. As of 10 November 2026 there is no lab test or certification scheme for agent verification. The NIST NCCoE concept paper of 5 February 2026 and the OpenID Foundation white paper of 7 October 2025 frame the questions, and the IETF Web Bot Auth protocol is still a draft.
+- q: Can a business revoke an AI agent's access?
+  a: With Incode and Shufti Pro, yes. Incode lets the customer revoke an agent instantly and stops pending actions, and Shufti Pro lets customers revoke access at any time. Sumsub, Persona and Socure do not state a revocation feature on their KYA pages.
+- q: How much does Know Your Agent cost?
+  a: None of the five scored providers publishes a price for its KYA product; all quote through sales. Vouched, which is listed but not yet reviewed, offers a free tier with unlimited agent detection.
+adjacent:
+- identity-verification
+- liveness-detection
+- kyb
+- age-verification
+capability_columns:
+- kya_detect_undeclared
+- kya_verify_signed
+- kya_bind_person
+- kya_bind_business
+- kya_step_up
+- kya_limits_expiry
+- kya_revocation
+- kya_audit_log
+- kya_protocols
+faq_templates: []
+legacy_issues: []
+author: andrii-klymenko
