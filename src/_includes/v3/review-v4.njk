@@ -17,11 +17,13 @@
     </nav>
     <div class="rv4-hero__grid">
       <div class="rv4-hero__main">
-        <div class="rv4-logo">
-          {%- if p.logo.wordmark %}<img src="{{ p.logo.wordmark }}" alt="{{ p.name }} logo">{% else %}<span>{{ p.name }}</span>{% endif %}
+        <div class="rv4-title">
+          <div class="rv4-logo">
+            {%- if p.logo.wordmark %}<img src="{{ p.logo.wordmark }}" alt="{{ p.name }} logo">{% else %}<span>{{ p.name }}</span>{% endif %}
+          </div>
+          <h1 id="h1" class="rv4-h1">{{ p.name }} Review {{ v4.year }}</h1>
         </div>
         {%- if p.rebranded_to %}<p class="rv4-now">now {{ p.rebranded_to }}</p>{% endif %}
-        <h1 id="h1" class="rv4-h1">{{ p.name }} Review {{ v4.year }}</h1>
         <div class="rv4-byline">
           {%- if author %}<img class="avatar" src="{{ author.photo }}" alt=""><span>By {% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}</span>{% endif %}
           {%- if p.last_verified %}<span class="dot" aria-hidden="true">·</span><span>Last verified <time datetime="{{ p.last_verified }}">{{ p.last_verified | displayDate }}</time></span>{% endif %}
@@ -57,7 +59,6 @@
           {%- if v4.rank %}<p class="rv4-score__rank"><a href="{{ v4.rank.url }}">#{{ v4.rank.pos }} in {{ v4.rank.label }}</a></p>{% endif %}
           {%- if p.link.url %}
           <p class="rv4-score__disc">{{ site.v3.disclosure }} <a href="{{ site.v3.disclosureHref }}">How we make money</a></p>
-          {%- if v4.sponsorNote %}<p class="rv4-score__disc">{{ v4.sponsorNote }}</p>{% endif %}
           {%- if v4.button == "primary" %}
           <a class="btn btn--primary btn--block" href="{{ p.link.url }}" rel="{{ p.link | outRel }}" target="_blank">Visit site <span aria-hidden="true">↗</span></a>
           {%- else %}
@@ -183,7 +184,8 @@
 <section id="diligence" class="rv4-band" aria-labelledby="dd-h">
   <div class="container">
     <h2 id="dd-h" class="rv4-h2">Before you sign</h2>
-    <p class="rv4-p rv4-lede">What your compliance, security and engineering teams will ask about {{ p.name }}. ◆ marks facts we confirmed with a source other than {{ p.name }}.</p>
+    <p class="rv4-p rv4-lede">What your compliance, security and engineering teams will ask about {{ p.name }}.</p>
+    <p class="rv4-legend"><span class="rv4-ind" aria-hidden="true">◆</span> marks facts we confirmed with a source other than {{ p.name }}.</p>
     <div class="rv4-2col rv4-2col--cards">
       {%- if v4.networks.length or v4.networkFacts.length %}
       <div class="rv4-card">
@@ -209,10 +211,9 @@
       </div>
       {%- endif %}
     </div>
-    <div class="rv4-card rv4-card--wide">
-      <div>
+    <div class="rv4-card rv4-card--co">
         <h3 class="rv4-h3">Security and company</h3>
-        <dl class="rv4-dl">
+        <dl class="rv4-dl rv4-dl--wide">
           {%- for c in v4.certs %}
           <div><dt>{{ c.name }}</dt><dd{% if c.ok %} class="rv4-ok"{% endif %}>{{ c.status }}</dd>{% if c.what %}<dd class="rv4-sub">{{ c.what }}</dd>{% endif %}</div>
           {%- endfor %}
@@ -221,8 +222,9 @@
           <div><dt>{% if f.independent %}<span class="rv4-ind" title="{{ ev.independent.label }}">◆</span> {% endif %}{{ f.label }}</dt><dd>{{ f.value }}</dd></div>
           {%- endfor %}
         </dl>
-      </div>
-      {%- if p.what_is and p.what_is.length > 1 %}<div class="rv4-card__aside"><p class="rv4-p">{{ p.what_is[1] }}</p></div>{% endif %}
+      {%- if p.what_is and p.what_is.length > 1 %}
+      <details class="rv4-sources rv4-bg"><summary>Company background</summary><p class="rv4-p rv4-measure">{{ p.what_is[1] }}</p></details>
+      {%- endif %}
     </div>
     {%- if incidentList.length %}
     <ol class="rv4-card rv4-inc" id="incidents">

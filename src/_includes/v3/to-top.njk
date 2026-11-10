@@ -1,0 +1,20 @@
+{#- Back-to-top button for long pages without the article progress bar (reviews). Styles .to-top in v3.css. Hidden without JS. -#}
+<button type="button" class="to-top" aria-label="Back to top" hidden><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+<script>
+(function () {
+  var btn = document.querySelector('.to-top');
+  if (!btn) return;
+  var ticking = false;
+  function update() { ticking = false; btn.hidden = window.scrollY < window.innerHeight * 1.5; }
+  function onScroll() { if (!ticking) { ticking = true; window.requestAnimationFrame(update); } }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  update();
+  btn.addEventListener('click', function () {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+    var h = document.querySelector('main h1');
+    if (h) { h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: true }); }
+  });
+})();
+</script>

@@ -3,7 +3,7 @@
 import { buildMatrix } from "./_lib/capabilities.js";
 import { termForCapability } from "./_lib/glossary.js";
 import { buildSidebar, companyFacts } from "./_lib/sidebar.js";
-import { reviewSponsor, liveSponsors, shortLabel } from "./_lib/placements.js";
+import { reviewSponsor, shortLabel } from "./_lib/placements.js";
 import { profileFor, heroFacts, networkRows, factRows, certRows, incidentRow, fitRows, questions, sourceGroups, reviewYear } from "./_lib/review-v4.js";
 
 export default {
@@ -43,7 +43,6 @@ export default {
       const nets = networkRows(p);
       const ctx = { rankings: d.rankings, providers: d.providers, categories: d.categories, menu: d.site.v3.menu };
       const sponsor = reviewSponsor(d.placements, ctx, p.slug);
-      const isSponsor = liveSponsors(d.placements, ctx).includes(p.slug);
       const button = p.link?.button || (["affiliate", "paid"].includes(p.link?.type) ? "primary" : "quiet");
       return {
         profile: prof,
@@ -59,7 +58,6 @@ export default {
         questions: questions(p, nets),
         sources: sourceGroups(p, d.providers),
         sponsor,
-        sponsorNote: isSponsor ? d.site.v3.sponsorNote.replace("{name}", p.name) : null,
         button,
         // "#1 in Travel Rule": best position, with the short ranking name from the header menu
         rank: Object.entries(d.rankings || {}).map(([k, r]) => ({ k, pos: (r.providers || []).findIndex((x) => x.slug === p.slug) + 1 }))
