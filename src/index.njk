@@ -43,21 +43,86 @@ layout: v3.njk
   <ul class="strip">{% for p in strip %}<li><a href="/providers/{{ p.slug }}/" aria-label="{{ p.name }} review"><img loading="lazy" src="{{ p.logo.wordmark }}" alt="{{ p.name }}"></a></li>{% endfor %}</ul>
 </section>
 
-<section id="use-case" class="container home-section home-uc" aria-labelledby="uc-h">
-  <div class="home-uc__intro">
-    <h2 id="uc-h" class="h-split h-split--xl">Pick by use case.<span>Real counts</span></h2>
-    <p>Each ranking lists exactly the providers we compared for that job.</p>
-  </div>
-  <div class="grid-2">
-    {%- for u in useCases %}
-    <a class="card uc-card" href="{{ u.url }}">
-      <b>{{ u.name }}</b>
-      <p>{{ u.def }}</p>
-      <ol>{% for t in u.top %}<li><span>{{ loop.index }}</span>{{ t }}</li>{% endfor %}</ol>
-      <span class="uc-card__go">See all {{ u.count }} providers →</span>
-    </a>
+<section id="use-case" class="container home-section" aria-labelledby="uc-h">
+  <div class="section-head"><h2 id="uc-h" class="h-split h-split--xl">Pick by use case.<span>One ranking for each job</span></h2><a class="btn btn--secondary btn--sm" href="/use-cases/">All use cases</a></div>
+  {#- Layout A (owner, 2026-11-10). Data: index.11tydata.js → useCaseGroups (top 3 from rankings.yml, sponsor from placements.yml).
+      Without JS every panel is shown in a plain list. With JS (.is-live): desktop = buttons on the left, one panel on the right;
+      under 860px = accordion (button, then its panel). Each button controls the panel with the same id. -#}
+  {%- set ucRows = useCaseGroups.length %}{% for g in useCaseGroups %}{% set ucRows = ucRows + g.items.length %}{% endfor %}
+  <div class="ucx" data-ucx style="--ucx-rows:{{ ucRows }}">
+    {%- for g in useCaseGroups %}
+    <p class="ucx__group">{{ g.name }}</p>
+    {%- for u in g.items %}
+    <button type="button" class="ucx__tab" id="uc-t-{{ u.id }}" aria-controls="uc-p-{{ u.id }}" aria-expanded="false" data-ucx-tab="{{ u.id }}"><span>{{ u.name }}</span><svg class="ucx__chev" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg><span class="ucx__arrow" aria-hidden="true">→</span></button>
+    <section class="card ucx__panel" id="uc-p-{{ u.id }}" aria-labelledby="uc-h-{{ u.id }}" data-ucx-panel="{{ u.id }}">
+      <div class="ucx__head">
+        <div>
+          <h3 id="uc-h-{{ u.id }}" class="ucx__title">{{ u.name }}</h3>
+          <p>{{ u.def }}</p>
+        </div>
+        <a class="ucx__more" href="{{ u.url }}">See the full ranking<span class="visually-hidden"> for {{ u.name }}</span> →</a>
+      </div>
+      <ol class="ucx__list">
+        {%- for t in u.top %}
+        <li>
+          {%- if t.url %}<a class="ucx__row" href="{{ t.url }}">{% else %}<div class="ucx__row">{% endif %}
+            <span class="ucx__rank" aria-hidden="true">{{ t.rank }}</span>
+            <span class="ucx__tile{% if not t.logo %} ucx__tile--wm{% elif t.fit == 'contain' %} ucx__tile--contain{% endif %}"{% if t.logo and t.bg != '#FFFFFF' %} style="background:{{ t.bg }}"{% endif %}>{% if t.logo %}<img src="{{ t.logo }}" alt="" loading="lazy" decoding="async">{% elif t.wordmark %}<img src="{{ t.wordmark }}" alt="" loading="lazy" decoding="async">{% else %}<span>{{ t.name }}</span>{% endif %}</span>
+            <span class="ucx__who">
+              <span class="ucx__name"><span class="visually-hidden">#{{ t.rank }} </span>{{ t.name }}</span>
+              {%- if t.award == "Editor's Choice" %}
+              <span class="ucx__award ucx__award--ec"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><path d="M5.2 8.2l1.9 1.9 3.7-4"/></svg>{{ t.award }}</span>
+              {%- elif t.award %}
+              <span class="ucx__award">{{ t.award }}</span>
+              {%- endif %}
+            </span>
+            {%- if t.score != null %}
+            <span class="ucx__score"><b>{{ t.score | score1 }}</b><small> / 5</small>
+              <span class="meter meter--sm" aria-hidden="true">{% for w in (t.score | meter) %}<span><i class="w-{{ w }}"></i></span>{% endfor %}</span>
+            </span>
+            {%- endif %}
+          {% if t.url %}</a>{% else %}</div>{% endif %}
+        </li>
+        {%- endfor %}
+      </ol>
+      {%- if u.sponsor %}
+      {%- set sp = u.sponsor %}
+      <div class="ucx__sp">
+        <p class="ucx__sp-note"><span class="sp-tag"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 6.5v3h2.5L9 12.5v-9L4.5 6.5z"/><path d="M11.5 6a3 3 0 0 1 0 4"/></svg>Sponsored</span>Paid placement. It does not change the ranking above.</p>
+        <a class="ucx__sp-row" href="{{ sp.url }}">
+          <span class="ucx__tile ucx__tile--sm{% if not sp.logo %} ucx__tile--wm{% elif sp.fit == 'contain' %} ucx__tile--contain{% endif %}"{% if sp.logo and sp.bg != '#FFFFFF' %} style="background:{{ sp.bg }}"{% endif %}>{% if sp.logo %}<img src="{{ sp.logo }}" alt="" loading="lazy" decoding="async">{% elif sp.wordmark %}<img src="{{ sp.wordmark }}" alt="" loading="lazy" decoding="async">{% else %}<span>{{ sp.name }}</span>{% endif %}</span>
+          <span class="ucx__who"><span class="ucx__name">{{ sp.name }}</span>{% if sp.line %}<span class="ucx__line">{{ sp.line }}</span>{% endif %}</span>
+          <span class="ucx__sp-meta">#{{ sp.rank }} in our {{ u.name }} ranking · {{ sp.score | score1 }} / 5<span class="ucx__sp-go">Read review →</span></span>
+        </a>
+      </div>
+      {%- endif %}
+    </section>
+    {%- endfor %}
     {%- endfor %}
   </div>
+  <p class="ucx__foot">Rank and score come from our <a href="/methodology/">methodology</a>. Payment never changes scores or ranking order. <a href="/placement-options/">For providers</a></p>
+  <script>
+  (function () {
+    var box = document.querySelector('[data-ucx]');
+    if (!box) return;
+    var tabs = [].slice.call(box.querySelectorAll('[data-ucx-tab]')), panels = [].slice.call(box.querySelectorAll('[data-ucx-panel]'));
+    var narrow = window.matchMedia('(max-width: 860px)'), open = tabs.length ? tabs[0].getAttribute('data-ucx-tab') : null;
+    function show(id) {
+      open = id;
+      tabs.forEach(function (t) { t.setAttribute('aria-expanded', String(t.getAttribute('data-ucx-tab') === id)); });
+      panels.forEach(function (p) { p.hidden = p.getAttribute('data-ucx-panel') !== id; });
+    }
+    tabs.forEach(function (t) {
+      t.addEventListener('click', function () {
+        var id = t.getAttribute('data-ucx-tab');
+        show(narrow.matches && id === open ? null : id);
+      });
+    });
+    narrow.addEventListener('change', function () { if (!narrow.matches && !open) show(tabs[0].getAttribute('data-ucx-tab')); });
+    box.classList.add('is-live');
+    show(open);
+  })();
+  </script>
 </section>
 
 <section id="region" class="container home-section" aria-labelledby="rg-h">

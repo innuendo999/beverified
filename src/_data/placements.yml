@@ -1,0 +1,12 @@
+# Sponsored slots in the homepage "Pick by use case" panel. Empty until the advertising policy is
+# published on /methodology/, /placement-options/ and /terms/ in the same words (owner, 2026-11-10).
+#
+# One entry per slot:
+#   - use_case: kyc            # rankings.yml key from home.yml → use_cases
+#     slug: persona            # provider with a published review, ranked in that list, not in its top 3
+#     start: 2026-12-01        # first day shown (build date)
+#     end: 2026-12-31          # last day shown
+#
+# The slot always carries the "Sponsored" label and shows the provider's real rank and score.
+# Rules: src/_lib/placements.js; check: node scripts/checks/placements.mjs (CI).
+[]

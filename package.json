@@ -5,7 +5,7 @@
   "scripts": {
     "build": "rm -rf _site && eleventy",
     "serve": "eleventy --serve",
-    "check": "node scripts/checks/content.mjs && node scripts/checks/links.mjs && node scripts/checks/quick-answers.mjs",
+    "check": "node scripts/checks/content.mjs && node scripts/checks/links.mjs && node scripts/checks/quick-answers.mjs && node scripts/checks/placements.mjs",
     "check:quick-answers": "node scripts/checks/quick-answers.mjs",
     "gaps": "node scripts/checks/gaps.mjs",
     "inventory": "python3 scripts/inventory.py",
