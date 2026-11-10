@@ -491,6 +491,14 @@ sources:
   publisher: Shufti
   url: https://shuftipro.com/ongoing-monitoring/
   accessed: '2026-11'
+- title: AI Agent Identity Verification and Authentication (Know Your Agent)
+  publisher: Shufti
+  url: https://shuftipro.com/ai-agent-verification/
+  accessed: '2026-11'
+- title: Shufti Launches Know Your Agent to Verify AI Agent Identity, Human Authorization & Permissions in a Single Flow (28 October 2026)
+  publisher: Shufti
+  url: https://shuftipro.com/press-release/shufti-launches-know-your-agent-to-verify-ai-agents/
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null
@@ -517,3 +525,62 @@ directory_categories:
 - AML
 - eKYC
 - Age Verification
+kya:
+  checked: '2026-11-10'
+  methodology: kya-1.0
+  product_name:
+    status: yes
+    note: Know Your Agent (KYA)
+    source: 26
+  availability:
+    status: ga
+    note: launched 28 October 2026, "now available"
+    source: 26
+  detect_undeclared:
+    status: yes
+    note: unknown agents caught through behavioural biometrics
+    source: 25
+  verify_signed:
+    status: partial
+    note: known agents identified by name; no signature or registry check stated
+    source: 25
+  trust_score:
+    status: yes
+    note: every agent gets a trust score
+    source: 25
+  bind_person:
+    status: yes
+    note: face verification and liveness on the person behind the agent
+    source: 25
+  bind_business:
+    status: yes
+    note: the person or business behind an agent is verified
+    source: 25
+  step_up:
+    status: yes
+    note: high-risk requests trigger a human verification step
+    source: 25
+  scoped_permissions:
+    status: yes
+    note: customer defines what each agent can do; industry rule sets
+    source: 25
+  limits_expiry:
+    status: yes
+    note: spending and time limits; approvals carry an expiry
+    source: 25
+  revocation:
+    status: yes
+    note: customers can revoke access at any time
+    source: 25
+  pre_action_check:
+    status: yes
+    note: checks which agent is acting, who sent it and what it may do before it acts
+    source: 25
+  credential_format:
+    status: partial
+    note: time-bound, revocable credential per agent; format not named
+    source: 26
+  audit_log:
+    status: yes
+    note: audit trail of requests, decisions and revocations linked to each agent and principal
+    source: 26

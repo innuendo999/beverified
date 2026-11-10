@@ -420,6 +420,10 @@ sources:
   publisher: Trulioo
   url: https://www.trulioo.com/solutions/identity-verification/person-match
   accessed: '2026-11'
+- title: Know Your Agent (KYA) | AI Agent Verification
+  publisher: Trulioo
+  url: https://www.trulioo.com/products/kya-verification
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null
@@ -443,3 +447,54 @@ directory_categories:
 - AML
 - Identity Verification
 - KYB
+kya:
+  checked: '2026-11-10'
+  methodology: kya-1.0
+  product_name:
+    status: yes
+    note: Know Your Agent (KYA) with Digital Agent Profile
+    source: 22
+  availability:
+    status: alpha
+    note: '"KYA is in Alpha"; agent registration only for organizations whose company domains have been enabled'
+    source: 22
+  verify_signed:
+    status: yes
+    note: counterparties check a signed JWT profile held in the Trulioo Agent Registry
+    source: 22
+  shared_reputation:
+    status: partial
+    note: Agent Registry consulted by counterparties; not described as public or as reputation sharing
+    source: 22
+  bind_business:
+    status: yes
+    note: KYB and AML checks on the organization responsible for the agent, plus domain control
+    source: 22
+  scoped_permissions:
+    status: yes
+    note: agent fingerprint records purpose, scope, authorization and permissions
+    source: 22
+  limits_expiry:
+    status: partial
+    note: scope credential is time-bound; value limits not stated
+    source: 22
+  revocation:
+    status: yes
+    note: scope credential can be revoked
+    source: 22
+  credential_format:
+    status: yes
+    note: signed JWT
+    source: 22
+  protocols:
+    status: yes
+    note: MCP
+    source: 22
+  audit_log:
+    status: yes
+    note: time-stamped audit trail on the agent profile
+    source: 22
+  behaviour_monitoring:
+    status: yes
+    note: developer and agent information monitored together, profile updated on material change
+    source: 22

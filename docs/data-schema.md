@@ -138,3 +138,13 @@ One record per incident (`id, slug, vendor, date, occurred, type, sensitivity, s
 ## `src/_data/placements.yml` (sponsored slots, added 2026-11-10)
 
 List of `{use_case, slug, start, end}`. One slot per use case in the homepage "Pick by use case" panel, shown from `start` to `end` (ISO dates, build date). `use_case` is a `rankings.yml` key listed in `home.yml` → `use_cases`; `slug` has a published review with a score, is in that ranking and not in its top 3; slots for one use case never overlap. The slot always shows the "Sponsored" label, the provider's real rank in that ranking, its record score and the ranking entry's `tagline` (else the record's), and links to the review. Rules in `src/_lib/placements.js`, checked by `scripts/checks/placements.mjs`; an entry that breaks a rule is never rendered. Empty until the advertising policy is published.
+
+## `kya{}` (Know Your Agent data, KYA 1.0, added 2026-11-10)
+
+Scored by `scripts/rescore-kya.mjs` under `docs/scoring-kya.md`; report `reports/rescore-kya-1.0.csv`. Not rendered yet.
+
+- `checked` (date of the data pass), `methodology: kya-1.0`.
+- Each item `{status, note, source}`; `source` is a 1-based index into the record's `sources[]`.
+- `status`: `yes`, `beta` (both count), `partial`, `planned`, `no` (do not count). A key that is absent means not found. `availability.status` is `ga`, `beta`, `alpha` or `announced`; only `ga` and `beta` are eligible for the ranking.
+- Keys: `product_name`, `availability`, `detect_undeclared`, `verify_signed`, `trust_score`, `shared_reputation`, `bind_person`, `bind_business`, `step_up`, `scoped_permissions`, `limits_expiry`, `revocation`, `pre_action_check`, `chaining`, `credential_format`, `protocols` (note = comma-separated protocol names), `open_spec`, `audit_log`, `tamper_evident`, `behaviour_monitoring`, `log_export`, `price`, `docs_public`, `self_serve`.
+- Independent evidence for the human check is read from confirmed `certifications[]` (iBeta ISO/IEC 30107-3, IAL2, DIATF, eIDAS); the trust criterion reuses the v3.1 `score_breakdown` row.

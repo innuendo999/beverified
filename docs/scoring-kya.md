@@ -134,7 +134,7 @@ The NIST NCCoE concept paper on software and AI agent identity and authorization
 
 1. Owner approved the criteria and weights (2026-11-10). Display of several scores per provider still needs owner approval before the ranking page is built.
 2. Methodology page: a "Know Your Agent" section with criteria, weights and the date, plus a changelog entry. Published before any score.
-3. Collect `kya{}` for the six reviewed candidates (Sumsub, Incode, Persona, Shufti Pro, Socure, Trulioo), sources dated, verification-spec.
+3. Collect `kya{}` for the six reviewed candidates (Sumsub, Incode, Persona, Shufti Pro, Socure, Trulioo), sources dated, verification-spec. Done 2026-11-10: data in the six records, scorer `scripts/rescore-kya.mjs`, report `reports/rescore-kya-1.0.csv`.
 4. Script computes KYA scores and writes `reports/rescore-kya-1.0.csv`. Owner reviews; manual overrides only with a written reason.
 5. One PR: category data `src/_data/categories/know-your-agent.yml` (URL `/providers/know-your-agent/`), `rankings.yml` entry, Vouched and Prove in `tracked.yml`, menu entry under Rankings → Identity, a glossary term if useful.
 
