@@ -1,7 +1,8 @@
 // Fit check on Travel Rule reviews (review page V5, owner 2026-11-11).
 // Reads only provider records and src/_data/travelRuleFit.yml: networks[], the Deployment and
 // self-hosted wallet facts, certifications[], capabilities.published_pricing and pricing items.
-// Status codes for the page script: y (yes), p (partly), plan (planned or pending), n (not found).
+// Status codes for the page script: y (yes), p (partly), plan (planned or pending), no (offered only in a form
+// that does not meet the need, e.g. an outdated protocol version), n (not found).
 // A need with no entry shows "Not checked" on the page.
 
 const ND = /^not publicly disclosed\b|^none stated$|^not stated\b/i;
@@ -10,7 +11,7 @@ const day = (v) => { const [y, m, d] = String(v || "").split("-").map(Number); r
 const month = (v) => { const [y, m] = String(v || "").split("-").map(Number); return m ? `${MONTHS[m - 1]} ${y}` : ""; };
 const fact = (p, label) => (p.facts || []).find((f) => f.label === label);
 
-const NET_STATUS = { built_in: "y", own: "y", live: "y", fallback: "y", bridge: "p", via_membership: "p", inbound: "p", pending: "plan", planned: "plan", not_found: "n" };
+const NET_STATUS = { built_in: "y", own: "y", live: "y", fallback: "y", bridge: "p", via_membership: "p", inbound: "p", pending: "plan", planned: "plan", outdated: "no", not_found: "n" };
 const PROOFS = { sig: /sign/i, sat: /satoshi|micro-?trans|test payment/i, aopp: /\baopp\b/i, vis: /screenshot|photo|video|visual/i };
 
 function networks(p, map) {

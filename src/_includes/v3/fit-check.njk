@@ -83,6 +83,7 @@
     y: ["Yes", "ok", ""],
     p: ["Partly", "part", "Available with limits; see the note next to it"],
     plan: ["Planned", "plan", "Announced by the provider, not live yet"],
+    no: ["No", "no", "Offered only in a form that does not meet this need; see the note next to it"],
     n: ["Not found", "no", "We looked and found nothing on the date of the review check"],
     u: ["Not checked", "unk", "Our review data does not cover this yet"]
   };
@@ -104,7 +105,7 @@
     return out;
   }
   function evaluate(P, list) {
-    var c = { y: 0, p: 0, plan: 0, n: 0, u: 0 };
+    var c = { y: 0, p: 0, plan: 0, no: 0, n: 0, u: 0 };
     var rows = list.map(function (nd) {
       var hit = P.s[nd.key] || ["u", "Not in our review data yet", 0];
       c[hit[0]] += 1;
@@ -131,9 +132,10 @@
     q('[data-act="link"]').textContent = copied === "link" ? "Link copied" : "Copy link to this setup";
     if (!total) return;
     var ev = evaluate(me, list);
-    q('[data-out="head"]').textContent = me.name + (ev.c.y === total ? " meets all " + total + " of your needs" : " meets " + ev.c.y + " of your " + total + " needs");
+    q('[data-out="head"]').textContent = me.name + (total === 1 ? (ev.c.y ? " meets your need" : " does not meet your need") : ev.c.y === total ? " meets all " + total + " of your needs" : " meets " + ev.c.y + " of your " + total + " needs");
     var parts = [];
     if (ev.c.p) parts.push(ev.c.p + " partly");
+    if (ev.c.no) parts.push(ev.c.no + " no");
     if (ev.c.n) parts.push(ev.c.n + " not found");
     if (ev.c.plan) parts.push(ev.c.plan + " planned");
     if (ev.c.u) parts.push(ev.c.u + " not checked");
@@ -158,13 +160,15 @@
 
     var others = D.providers.filter(function (x) { return x.slug !== slug; }).map(function (P) {
       var e = evaluate(P, list);
+      var no = e.rows.filter(function (r) { return r.status === "no"; }).map(function (r) { return r.nd.short; });
       var g = e.rows.filter(function (r) { return r.status === "n" || r.status === "plan"; }).map(function (r) { return r.nd.short; });
       var pt = e.rows.filter(function (r) { return r.status === "p"; }).map(function (r) { return r.nd.short; });
       var bits = [];
+      if (no.length) bits.push("No: " + no.join(", "));
       if (g.length) bits.push("Not found: " + g.join(", "));
       if (pt.length) bits.push("Partly: " + pt.join(", "));
       if (e.c.u) bits.push(e.c.u + " not checked");
-      return { P: P, yes: e.c.y, gapsN: e.c.n + e.c.plan, text: bits.length ? bits.join(" · ") : "No gaps in our review data" };
+      return { P: P, yes: e.c.y, gapsN: e.c.no + e.c.n + e.c.plan, text: bits.length ? bits.join(" · ") : "No gaps in our review data" };
     }).sort(function (a, b) { return a.gapsN - b.gapsN || b.yes - a.yes || a.P.rank - b.P.rank; });
     var ob = q('[data-out="others"]'); ob.textContent = "";
     others.forEach(function (o) {
