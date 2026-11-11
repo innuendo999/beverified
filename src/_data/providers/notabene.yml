@@ -411,8 +411,8 @@ networks:
   evidence: vendor
   source: 12
 - name: TRP
-  status: built_in
-  note: TRP 1.0 endpoint for every customer; current TRP 3.2.1 only on request
+  status: outdated
+  note: TRP 1.0 endpoint for every customer, which current 3.x implementations do not accept; Notabene says it adds the current version on request
   evidence: vendor
   source: 12
 - name: TRUST

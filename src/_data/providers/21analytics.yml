@@ -157,7 +157,7 @@ pros:
 cons:
 - The pricing page shows no prices; the CHF 900 monthly Starter figure comes only from G2 and Capterra
 - We found no SOC 2 report, and security reports beyond the ISO/IEC 27001 certificate need an access request or NDA
-- You install, patch and back up the software yourself, and there are only two public user reviews so far, both on SourceForge
+- You install, patch and back up the software yourself
 alternatives:
 - slug: notabene
   name: Notabene
@@ -211,9 +211,9 @@ certifications:
   source: 40
 user_ratings:
 - platform: SourceForge
-  rating: 5.0
-  count: 2
-  checked: '2026-10'
+  rating: 4.8
+  count: 4
+  checked: '2026-11'
   url: https://sourceforge.net/software/product/21-Travel-Rule/
 use_case_verdicts: []
 score_breakdown:
@@ -451,7 +451,7 @@ verification_notes:
 - 'Still open, funding: none disclosed on any 21 Analytics page; CB Insights compare page shows no funding; Caplight page failed to load. Fact stays Not publicly disclosed.'
 - 'Still open, wallets: the public self-hosted wallet page says 540+ wallets and names Bitbox, Ledger, Trezor and Metamask; a TRONLink AOPP Portal guide is public; Jade is named only in 21 Analytics'' email of 20 Oct 2026. Wording now says 540+ wallets including the named ones (was "540+ other wallets"). "100% accuracy" claim not used. Trezor removed AOPP (Trezor blog, 28 Jan 2022); Sparrow and BlueWallet removals seen in search snippets only, not stated.'
 - 'Still open, Starter plan: the Azure Marketplace listing itself was not found; the Starter figure rests on G2 and Capterra listings only.'
-- 'Still open, user reviews: SourceForge now shows 2 reviews, 5.0 (13 Oct and 21 Oct 2026), both from companies of 1 to 25 people, one reviewer listed as "Partner", one as Co-Founder and CPO. Both were posted after 21 Analytics named SourceForge as its review platform; treat as a thin sample. G2 and Capterra UK still show no reviews; no Gartner Peer Insights page found.'
+- 'User reviews re-checked 11 Nov 2026 after 21 Analytics pointed to new ones: SourceForge shows 4 reviews, 4.8 overall (13 Oct, 21 Oct, 3 Nov and 4 Nov 2026; 5, 5, 5 and 4 stars). Con line no longer mentions the review count. Earlier note: SourceForge showed 2 reviews, 5.0 (13 Oct and 21 Oct 2026), both from companies of 1 to 25 people, one reviewer listed as "Partner", one as Co-Founder and CPO. Both were posted after 21 Analytics named SourceForge as its review platform; treat as a thin sample. G2 and Capterra UK still show no reviews; no Gartner Peer Insights page found.'
 - 'Vendor claims checked and not used: "strongest network" (not on the TRUST page now, not measurable); homepage "6 of the top 6 firms in Kaiko''s Q3 2026 Exchange Ranking" vs TRUST page FAQ "8 of the top 10" (inconsistent, Kaiko not opened); "the only Travel Rule solution that guarantees GDPR-compliance"; "prices can''t be matched"; "#1 Choice for Banks"; products page "support every Travel Rule protocol in the market" (docs show TRUST, TRP, TRISA via the bridge and email only). Crypto Briefing (28 May 2026) gives over 195 TRUST VASPs; not stated in the record. Homepage logo wall (Vontobel, Luzerner Kantonalbank, NiceHash and others) unlabelled; not used as customers.'
 - 'Support note rewritten 4 Nov 2026 after 21 Analytics asked why it scores 3.8 for support and Notabene 4.1: score unchanged. The difference rests on published response terms (Notabene: 24/7 P1 cover with a 30-minute response and 24-hour standard support on weekdays; 21 Analytics: 3 business days on Essentials, 24 hours on Enterprise, no 24/7 critical-incident cover). Removed from the note: the SourceForge review count (user ratings are shown separately and are not part of the score, per the methodology evidence section) and screen sharing or log upload as a negative (a consequence of the self-hosted design, which 21 Analytics cannot change without remote access).'
 - 'Feedback from 21 Analytics by email, 20 Oct 2026 (moved here from directory_categories, where it had been filed by mistake and would have shown as a directory label): ISO certificate in the Compliance Centre; SourceForge is their review platform; Sygna now part of VerifyVASP; sandbox on request (now in the 8.4.0 docs); Trezor and other wallets supported through direct integrations; a price list was shared privately and is not used in the record. Planned network bridges not recorded because 21 Analytics said they are not public yet.'
@@ -468,7 +468,7 @@ fit:   # V5 (owner, 2026-11-11): the buyer's situation, not features
   - have a team that can run and patch containers on Podman, Kubernetes or OpenShift
   'no':
   - text: want a hosted service and no software to run. A managed option is available through AML Incubator
-    alt: notabene
+    alt: cryptoswift
   - text: must see a price before the first sales call. The pricing page lists tiers but no prices
 networks:
 - name: TRUST

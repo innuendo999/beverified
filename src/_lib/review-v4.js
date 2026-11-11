@@ -52,12 +52,12 @@ export function heroFacts(p) {
 const STATUS = {
   built_in: "Built in", own: "Own network", live: "Connected", bridge: "Through a bridge",
   via_membership: "Through your own membership", pending: "Pending", planned: "Listed as future",
-  inbound: "Incoming only", fallback: "Fallback", not_found: "No connection found",
+  inbound: "Incoming only", fallback: "Fallback", outdated: "Outdated version only", not_found: "No connection found",
 };
 export function networkRows(p) {
   // Connected states read "Built in. <note>"; for the others the note already says it ("Through the TRP and TRISA bridge").
   const LEAD = ["built_in", "own", "live"];
-  return (p.networks || []).map((n) => ({ ...n, line: n.note ? (LEAD.includes(n.status) ? `${STATUS[n.status]}. ${n.note}` : n.note) : (STATUS[n.status] || n.status), off: n.status === "not_found" }));
+  return (p.networks || []).map((n) => ({ ...n, line: n.note ? (LEAD.includes(n.status) ? `${STATUS[n.status]}. ${n.note}` : n.note) : (STATUS[n.status] || n.status), off: n.status === "not_found" || n.status === "outdated" }));
 }
 
 export function factRows(p, labels) {
