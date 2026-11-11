@@ -165,7 +165,7 @@ Inputs for `scripts/rescore-budget.mjs` (rules: `docs/scoring-budget-kyc.md`). N
 
 - `checked`: date the vendor's pricing page was last opened for these figures (eligibility: 90 days).
 - `currency`: `USD`, `EUR` or `GBP`; non-USD needs `fx{ rate, date, source }` (ECB reference rate on the check date, USD per unit).
-- `options[]`: plans that include a full KYC check (document + liveness + face match): `plan`, `check[]` (item labels, summed), optional `aml[]` (screening add-on labels), `aml_included: true` when the plan's price already covers sanctions and PEP screening, optional `minimum{ item, covers_checks }` (`covers_checks: true` only when the vendor says so; otherwise the provider is not ranked), optional `fee_on_top` (item label).
+- `options[]`: plans that include a full KYC check (document + liveness + face match): `plan`, `check[]` (item labels, summed), optional `aml[]` (screening add-on labels), `aml_included: true` when the plan's price already covers sanctions and PEP screening, optional `minimum{ item, covers_checks }` (`covers_checks: true` only when the vendor says so; otherwise the provider is not ranked), optional `fee_on_top` (item label), optional `per_user_monthly[]` (per-user monthly fees such as storage, counted once per check).
 - `aml_status`: `not_priced` (sold, no public price) or `not_sold`.
 - `terms{ contract: none|monthly|annual|fixed_term|not_stated, self_serve: yes|no|not_stated, free_start: yes|no|programme|not_stated }`.
 - `transparency{ parts_priced, aml_priced, tiers_published, addons_listed }` (booleans).

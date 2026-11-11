@@ -134,7 +134,11 @@ if (isMain) {
           `    score: ${r.total.toFixed(1)}`, `    grade: ${grade(r.total)}`, `    methodology: kya-1.0`, `    breakdown:`,
           ...r.rows.flatMap((x) => [`    - criterion: ${JSON.stringify(x.criterion)}`, `      weight: ${x.weight}`, `      score: ${x.score ?? "null"}`,
             `      note: ${JSON.stringify(x.note)}`, `      evidence: ${x.evidence ?? "null"}`]), `# end KYA score`].join("\n");
-        next = next.replace(/\n*$/, "\n") + block + "\n";
+        // Share one category_scores map with the Budget KYC block (scripts/rescore-budget.mjs).
+        const budgetAt = next.search(/^# Budget score: generated/m);
+        if (/^category_scores:/m.test(next)) next = next.replace(/\n*$/, "\n") + block.replace("\ncategory_scores:", "") + "\n";
+        else if (budgetAt >= 0) next = next.slice(0, budgetAt) + block + "\n" + next.slice(budgetAt);
+        else next = next.replace(/\n*$/, "\n") + block + "\n";
       }
       if (next !== text) fs.writeFileSync(file, next);
       yaml.load(next);

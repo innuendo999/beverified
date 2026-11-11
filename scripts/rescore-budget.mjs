@@ -48,7 +48,8 @@ const toUsd = (b, v) => (b.currency === "USD" ? v : b.fx?.rate ? v * b.fx.rate :
 // Monthly cost of one option at n checks, in USD. Credited minimum = a floor; fee_on_top is added.
 function optionCost(d, b, opt, n, withAml) {
   if (withAml && !opt.aml_included && !opt.aml) return null;
-  const parts = [...opt.check, ...(withAml && !opt.aml_included ? opt.aml : [])].map((r) => item(d, r).value);
+  // per_user_monthly: fees billed per active user each month (e.g. storage) count once, for the month of the check (owner, 2026-11-11).
+  const parts = [...opt.check, ...(opt.per_user_monthly || []), ...(withAml && !opt.aml_included ? opt.aml : [])].map((r) => item(d, r).value);
   const per = parts.reduce((a, x) => a + x, 0);
   const min = opt.minimum ? item(d, opt.minimum.item).value : 0;
   const fee = opt.fee_on_top ? item(d, opt.fee_on_top).value : 0;
