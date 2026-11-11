@@ -4,15 +4,15 @@ seoTitle: "Our Methodology: How BeVerified Scores KYC & AML Providers"
 seoDescription: "How BeVerified scores KYC, IDV and AML providers: a published rubric for each kind of product, scored from public evidence, with what a score cannot measure."
 h1: "Our Methodology"
 lede: "We score identity verification and KYC providers on one rubric and AML providers on another, using evidence anyone can check. Every claim on a review is labelled with where it came from."
-updated: "2026-11-10"
+updated: "2026-11-11"
 ---
 <section>
-<p>Methodology {{ site.v3.methodologyVersion }}, last updated Nov 10, 2026. <a href="#changelog">What changed</a></p>
+<p>Methodology {{ site.v3.methodologyVersion }}, last updated Nov 11, 2026. <a href="#changelog">What changed</a></p>
 </section>
 
 <section id="rubric">
 <h2>Scoring rubric</h2>
-<p>Each provider gets an editorial score from 1 to 5: the weighted result of six criteria. The criteria are the questions a buyer asks when choosing a vendor, so they differ by kind of product. Identity verification, eKYC, KYC, liveness, age verification and KYB providers use the first rubric; AML screening and monitoring providers use the second. Travel Rule providers are still scored on our previous rubric until their own methodology is published. Know Your Agent products have a rubric of their own, <a href="#know-your-agent">set out below</a>.</p>
+<p>Each provider gets an editorial score from 1 to 5: the weighted result of six criteria. The criteria are the questions a buyer asks when choosing a vendor, so they differ by kind of product. Identity verification, eKYC, KYC, liveness, age verification and KYB providers use the first rubric; AML screening and monitoring providers use the second. Travel Rule providers are still scored on our previous rubric until their own methodology is published. Know Your Agent products and the Budget KYC ranking have rubrics of their own, set out below: <a href="#know-your-agent">Know Your Agent</a> and <a href="#budget-kyc">Budget KYC</a>.</p>
 <table>
 <caption>Identity verification and KYC: criteria, weights and what we look at</caption>
 <thead><tr><th scope="col">Criterion</th><th scope="col">Weight</th><th scope="col">What we look at</th></tr></thead>
@@ -59,6 +59,26 @@ updated: "2026-11-10"
 </table>
 <p>A provider enters the Know Your Agent ranking only when its KYA product is launched and sold, an open beta or pilot included. A framework, a white paper or a launch planned for a later date does not count: we list those providers with their status until the product ships.</p>
 <p>Most KYA evidence is vendor-stated for now. No lab test or certification scheme for agent verification exists yet, and the Know Your Agent ranking says so next to the scores.</p>
+</section>
+
+<section id="budget-kyc">
+<h2>Budget KYC rubric</h2>
+<p>The <a href="/providers/cheap-kyc/">Budget KYC ranking</a> answers one question: what a working KYC check costs, and what quality you get for that money. Providers in it get a separate Budget score from the rubric below. It orders the Budget KYC ranking only. Each provider's review keeps its overall score.</p>
+<p>A KYC check here means document verification, liveness and face match together. When a vendor sells them as separate modules, we add the module prices.</p>
+<table>
+<caption>Budget KYC: criteria, weights and what we look at</caption>
+<thead><tr><th scope="col">Criterion</th><th scope="col">Weight</th><th scope="col">What we look at</th></tr></thead>
+<tbody>
+<tr><th scope="row">Cost at 100 and 1,000 checks a month</th><td>30%</td><td>What you pay per check at each volume on the cheapest published plan that includes the full check, after published volume tiers and with any monthly minimum or fee counted. $0.50 or less scores 5, $0.51 to $0.90 scores 4, $0.91 to $1.40 scores 3, $1.41 to $2.00 scores 2, and more than $2.00 scores 1. The two volumes count equally.</td></tr>
+<tr><th scope="row">AML screening cost</th><td>10%</td><td>What one sanctions and PEP screening per user adds at 1,000 checks a month, including the cost of moving to a higher plan if screening is only sold there. Screening included in the KYC price scores 5.</td></tr>
+<tr><th scope="row">Quality for the money</th><td>35%</td><td>The fraud defense, coverage, platform breadth and integration sub-scores from the identity rubric above, at half their usual weight, scored for the KYC check whatever the provider's main category. A confirmed iBeta ISO/IEC 30107-3 letter counts here.</td></tr>
+<tr><th scope="row">Commitment and entry terms</th><td>15%</td><td>The size of any monthly minimum, whether the cheapest plan needs an annual or fixed-term contract, whether you can sign up and go live without a sales call, and a trial, free tier or signup credit open to any new customer.</td></tr>
+<tr><th scope="row">Price transparency</th><td>10%</td><td>Whether every part of the check is priced in public, whether AML screening is priced, whether volume tiers or the volume where custom pricing starts are published, and whether add-on fees are listed.</td></tr>
+</tbody>
+</table>
+<p>To enter the Budget KYC ranking, a provider needs a published BeVerified review and a public price for the full check, visible without a login, demo or sales form and checked in the last 90 days. If it charges a monthly minimum, its own pricing page or documentation has to say the minimum covers checks; if it doesn't say, we leave the provider out. It must also sell liveness. A provider without an independent liveness test can still enter, and its ranking card says no independent test was found.</p>
+<p>Prices in euros or pounds are converted to US dollars for scoring only, at the European Central Bank reference rate on the day we checked the price. Pages show prices in the currency the vendor publishes. One-off signup credits and trials don't lower the cost; they count under entry terms. Price estimates from marketplaces and buyer data sites never make a provider eligible and never enter the Budget score.</p>
+<p>The Budget score works from list prices. It can't see discounts you negotiate, checks you pay for twice when a user retries, VAT on your invoice, or how many good users a cheap check turns away. Ask about these before you sign.</p>
 </section>
 
 <section id="evidence">
@@ -116,6 +136,7 @@ updated: "2026-11-10"
 <section id="changelog">
 <h2>What changed</h2>
 <ul>
+<li><strong>Nov 11, 2026 (Budget KYC 1.0):</strong> added a Budget KYC rubric built on price for quality: cost per check at 100 and 1,000 checks a month, AML screening cost, quality for the money, entry terms and price transparency. Budget scores are separate from overall scores and order only the Budget KYC ranking. Criteria, weights and entry rules were published before any provider was scored.</li>
 <li><strong>Nov 10, 2026:</strong> sponsored placements on review pages described under <a href="#advertising">Sponsored placements</a>. They don't change scores, rankings or reviews.</li>
 <li><strong>Nov 10, 2026 (KYA 1.0):</strong> added a Know Your Agent rubric for products that verify AI agents acting for customers. KYA scores are separate from overall scores and order only the Know Your Agent ranking. Criteria and weights were published before any provider was scored.</li>
 <li><strong>Nov 5, 2026 (v3.1):</strong> separate rubrics for identity verification and KYC and for AML, built around what buyers compare: fraud defense or screening quality, total cost, coverage, platform breadth, integration and track record. Certificates now count under trust instead of a 25% criterion of their own. Sub-scores follow fixed rules and every review shows its breakdown. All 47 identity and AML providers were re-scored on the same day; the average score fell from 4.4 to 3.6, and rankings were re-ordered. Quantexa, Verified, VerifyMy and Paravision keep their previous score and are left out of rankings until category-specific rubrics cover them. Travel Rule providers stay on v3.0.</li>
