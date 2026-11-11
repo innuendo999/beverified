@@ -12,7 +12,8 @@ Applies to the ranking `/providers/cheap-kyc/` (menu label "Budget KYC"). The H1
 4. Prices in EUR or GBP are converted to USD for scoring only, at the ECB reference rate on the date the price was checked. Pages keep showing the price as the vendor publishes it.
 5. A provider with a monthly minimum is ranked only if its own pricing page or docs say the minimum covers checks (a minimum spend or included checks). If it does not say, the provider is not ranked here.
 6. Quality floor: the provider sells liveness (identity-rubric Fraud defense of at least 2.0). A confirmed iBeta letter is not required to enter; it raises the quality sub-score. Owner chose this after the iBeta check of 11 Nov 2026 showed that a 3.0 floor leaves two providers.
-7. The KYCAID ranking card still shows the pricing KYCAID dropped (bundles, fixed EUR 100 monthly fee). Fix it.
+7. Per-user monthly fees count once per check; Zyphe and Socure stay eligible although their pricing pages do not name face match (owner, 2026-11-11, after the re-check).
+8. The KYCAID ranking card still shows the pricing KYCAID dropped (bundles, fixed EUR 100 monthly fee). Fix it.
 
 ## Ranking eligibility
 
@@ -55,7 +56,7 @@ For each scenario (S = 100, M = 1,000 checks a month):
 - monthly cost = the larger of (checks x per-check price, after published volume tiers) and the credited minimum, plus any fee charged on top;
 - effective price = monthly cost / checks, in USD (decision 4).
 
-One-off signup credits and trials do not lower the cost (they count under Terms). A recurring monthly free allowance lowers the cost only if every new customer gets it without applying; allowances tied to a startup or partner programme count under Terms only.
+Fees billed per active user each month (for example storage) count once per check, for the month of the check (owner, 2026-11-11). One-off signup credits and trials do not lower the cost (they count under Terms). A recurring monthly free allowance lowers the cost only if every new customer gets it without applying; allowances tied to a startup or partner programme count under Terms only.
 
 | Effective price per check | Sub-score |
 |---|---|
