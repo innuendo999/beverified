@@ -1566,6 +1566,23 @@ travel-rule:
     legacy_price_shown: On request
     legacy_rating_shown: null
     segments: []
+  - slug: block-infrastructure
+    name: Block Infrastructure
+    award: null   # owner to choose; proposed "Best for Pre-Settlement Screening"
+    tagline: Travel Rule and pre-settlement screening API from London with TRP and TRISA today, still in design partner stage.
+    coverage: UK, Crown Dependencies and Nordics focus (vendor-stated)
+    size: Design partners (not on general release)
+    pros:
+    - TRP and TRISA as both sender and receiver, per Block Infrastructure
+    - Sanctions, on-chain and policy checks hold a payment until they pass
+    - REST and event APIs, webhooks and a sandbox with synthetic payments
+    cons:
+    - In design partner stage; public availability planned for later in 2026
+    - No prices, public docs or security certification claimed
+    - No self-hosted wallet check and no TRUST or GTR route documented
+    legacy_price_shown: Not published
+    legacy_rating_shown: null
+    segments: []
 age-verification:
   title: Best Age Verification Providers in 2026
   providers:
