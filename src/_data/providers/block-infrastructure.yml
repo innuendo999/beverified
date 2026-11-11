@@ -1,0 +1,343 @@
+slug: block-infrastructure
+name: Block Infrastructure
+alternate_names:
+- Block Infrastructure Ltd
+- BlockTravel
+status: published
+seo:
+  title: 'Block Infrastructure Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Block Infrastructure review: BlockTravel, a Travel Rule and pre-settlement screening API from London with TRP and TRISA, still in design partner stage. Features, pricing, pros & cons, alternatives.'
+  h1: 'Block Infrastructure Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: null
+  background: null
+tagline: Travel Rule and pre-settlement screening API from London with TRP and TRISA today, still in design partner stage
+score: 3.0
+grade: Good
+primary_category: travel-rule
+categories:
+- travel-rule
+link:
+  url: https://www.block-infrastructure.com/products/blocktravel/
+  type: none
+last_verified: '2026-11-11'
+updated: '2026-11-11'   # last content edit; last_verified = last fact re-check
+verdict: 'BlockTravel is an early product for VASPs, exchanges and custodians that want Travel Rule messaging and sanctions checks to run before a payment settles, not after. Block Infrastructure says TRP and TRISA work today in both directions and that other networks can be added through the same API. It is still in design partner stage, with public availability planned for later in 2026. There are no published prices, public docs, named customers or security certifications yet, and we found no TRUST route or self-hosted wallet check.'
+what_is:
+- BlockTravel is Block Infrastructure's compliance product for digital asset payments. Before a payment moves, it screens every party on every leg of the transfer, exchanges Travel Rule data with the counterparty VASP in the IVMS 101 format, and holds settlement until the checks pass. The screening runs in what the company calls Agentic Compliance, an automated workflow that runs sanctions screening, checks on-chain data and applies the institution's own rules, with a manual review queue for exceptions. Block Infrastructure says OpenVASP TRP and TRISA work today as both sender and receiver, and that the same adapter model extends to Sygna Bridge, Notabene, VerifyVASP, CODE and Veriscope, without saying any of those connections is live. Integration is through a REST API and an event layer, with webhooks on each state change, on compliance exceptions and on counterparty timeouts, and a sandbox with synthetic payments and reference counterparty VASPs. In May 2026 the company showed the product at the Bermuda Digital Finance Forum, in a simulated transfer on Canton DevNet where checks ran before Canton Coin settled and the result was written on-chain.
+- The company is Block Infrastructure Ltd, a private limited company registered at Companies House on 21 October 2024 (number 16030386), with its registered office in London. Richard Beverley is co-founder and CEO, Kurtis Wright co-founder and COO, and Joshan Mahmud co-founder and CTO; the team page says they previously worked at ClearBank, and Wright also at HSBC. The register lists four directors, all appointed at incorporation. In January 2026 the register recorded a first Gazette notice for compulsory strike-off, and the action was discontinued a week later, the day after a late confirmation statement was filed. The company calls itself seed stage and names no investors or customers. Its other product, BlockID, is a reusable KYC and KYB network for banks, also in design partner stage. It is unrelated to 1Kosmos's BlockID.
+features:
+- Travel Rule messaging over OpenVASP TRP and TRISA, as both sender and receiver, with IVMS 101 data, per Block Infrastructure. Sygna Bridge, Notabene, VerifyVASP, CODE and Veriscope are named as networks the same adapter model can reach, with no live connection stated.
+- Screening of every party on every leg of a payment before it moves, covering sanctions, on-chain data and your own policy rules, with a manual review queue for exceptions.
+- Settlement gated on compliance, so a payment that has not cleared cannot move. Shown in May 2026 in a simulated transfer on Canton DevNet.
+- REST API and event subscription layer, with webhooks on each state change, on compliance exceptions and on counterparty response timeouts. Listed standards are OpenAPI 3.0, OAuth2 and mTLS.
+- Sandbox with synthetic payments across the supported Travel Rule protocols and reference counterparty VASPs, offered to design partners.
+- A Network Compliance Oracle use case that lets participating institutions query BlockTravel's current screening state for a counterparty, transaction or chain address through one API.
+pricing:
+  summary: Block Infrastructure publishes no prices for BlockTravel. The product is in design partner stage, and the site says only that design partners get preferential commercial terms once it leaves that stage. Plans, minimums, setup fees and trial terms are not published, and we found no third-party price.
+  plans:
+  - tier: Design partner
+    price: Not published
+    note: Early access, a direct line to the build team and a say in V1 scope; requires integration intent, named compliance and technical contacts and a mutual NDA
+    extra: Preferential terms after the design partner stage
+  legacy_verified_note: null
+  verified: '2026-11'
+  items:
+  - label: Published prices
+    value: None; the site describes a design partner programme only
+    kind: official
+    source: 1
+    verified: '2026-11'
+  - label: Design partner terms
+    value: Preferential commercial terms once BlockTravel moves out of design partner stage; no figures
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: Minimums, setup fee and trial
+    value: Not stated
+    kind: official
+    source: 1
+    verified: '2026-11'
+facts:
+- label: From
+  value: Not publicly disclosed
+- label: Plans
+  value: Design partner programme only; no public plans yet
+  source: 2
+  evidence: vendor
+- label: Availability
+  value: Design partner stage; public availability planned for later in 2026
+  source: 2
+  evidence: vendor
+- label: Legal entity
+  value: Block Infrastructure Ltd, private limited company, Companies House number 16030386, active
+  source: 10
+  evidence: independent
+- label: Headquarters
+  value: 'Registered office: C/O Ajn Accountants, 1 Empire Mews, London SW16 2BF (since 3 Nov 2026)'
+  source: 10
+  evidence: independent
+- label: Jurisdiction
+  value: UK company; markets named on the site are the UK, Crown Dependencies and Overseas Territories, and the Nordics
+  source: 2
+  evidence: vendor
+- label: Founded
+  value: 21 October 2024 (incorporation at Companies House)
+  source: 10
+  evidence: independent
+- label: Leadership
+  value: Richard Beverley (co-founder and CEO), Kurtis Wright (co-founder and COO), Joshan Mahmud (co-founder and CTO)
+  source: 5
+  evidence: vendor
+- label: Owner
+  value: Privately held; the filing history names Richard Beverley as a person with significant control
+  source: 12
+  evidence: independent
+- label: Funding
+  value: Not publicly disclosed (the company calls itself seed stage)
+- label: Deployment
+  value: API-first service with a sandbox; hosting model and data location not stated
+  source: 1
+  evidence: vendor
+- label: API and docs
+  value: REST API, event subscriptions and webhooks (OpenAPI 3.0, OAuth2, mTLS); no public documentation found
+  source: 1
+  evidence: vendor
+- label: Sandbox
+  value: Synthetic payments and reference counterparty VASPs, for design partners
+  source: 1
+  evidence: vendor
+- label: Network
+  value: TRP and TRISA live in both directions (vendor-stated); Sygna Bridge, Notabene, VerifyVASP, CODE and Veriscope named as reachable through the same adapter model; no TRUST or GTR route found
+  source: 1
+  evidence: vendor
+- label: Self-hosted wallet checks
+  value: Not publicly disclosed; no method described on the BlockTravel page
+- label: Certifications
+  value: None claimed; no ISO/IEC 27001 or SOC 2 claim found
+pros:
+- TRP and TRISA work today as both sender and receiver, per Block Infrastructure, with IVMS 101 data and one API meant to add other networks
+- Sanctions, on-chain and policy checks run before a payment settles, and settlement is held until they pass, with a manual review queue for exceptions
+- REST and event APIs with webhooks on each state change and timeout, plus a sandbox with synthetic payments and reference counterparty VASPs
+cons:
+- Not generally available yet; BlockTravel is in design partner stage, with public availability planned for later in 2026 and no named customers
+- No prices, no public API docs and no security certification claimed, so due diligence has to start from scratch under NDA
+- No self-hosted wallet check and no TRUST or GTR route documented, and the TRP and TRISA links are confirmed only by the vendor
+alternatives:
+- slug: cryptoswift
+  name: CryptoSwift
+  best_for: Published Travel Rule Plans
+- slug: ospree
+  name: Ospree
+  best_for: Built-In Wallet Screening
+- slug: 21analytics
+  name: 21 Analytics
+  best_for: TRUST Access and Self-Hosting
+choose_instead:
+- slug: cryptoswift
+  need: Prices and a product on sale today
+  text: you need a hosted Travel Rule API you can buy now at a published price. CryptoSwift publishes plans from €600 a month on annual billing, offers a free sandbox and checks self-hosted wallets by signature, micro-transfer, photo or self-declaration.
+- slug: ospree
+  need: TRP and TRISA with outside confirmation
+  text: you want TRP and TRISA routes plus built-in wallet screening from a hosted platform. TRISA itself announced full interoperability with Ospree, and its public developer docs include a sandbox.
+- slug: 21analytics
+  need: TRUST counterparties
+  text: many of your transfers go to TRUST members such as Coinbase. TRUST lists 21 Analytics as its only interoperability partner, and 21 Analytics holds a public ISO/IEC 27001 certificate.
+user_reviews:
+  legacy_note: null
+  praise: []
+  criticize: []
+  by_profile:
+  - VASPs, exchanges and custodians in the UK, the Crown Dependencies and the Nordics that want to help shape an early product, and can sign a mutual NDA, are BlockTravel's clearest fit for now.
+  - Firms that want Travel Rule, sanctions and policy checks to block settlement until they pass, rather than run after a transfer, should look at its gated settlement model.
+  - Firms that need a product on general release, a vendor security report or a self-hosted wallet check today should use a provider that already publishes them.
+faq:
+- q: How much does BlockTravel cost?
+  a: Block Infrastructure does not publish prices. BlockTravel is in design partner stage, and the site says only that design partners will get preferential commercial terms once the product leaves that stage. We found no third-party price either. Ask for written terms that say how payments, screenings and counterparties are counted, and what changes at general release.
+- q: Is BlockTravel available now?
+  a: Only to design partners. The homepage says Block Infrastructure is validating its products with a small group ahead of public availability later in 2026. Design partners must show real integration intent, give named compliance and technical contacts for structured feedback, and sign a mutual NDA. In return they get early access, a direct line to the build team and a say in what ships in V1.
+- q: Which Travel Rule protocols does BlockTravel support?
+  a: Block Infrastructure says OpenVASP TRP and TRISA work today as both sender and receiver, with IVMS 101 data. It names Sygna Bridge, Notabene, VerifyVASP, CODE and Veriscope as networks the same adapter model can reach, but does not say any of them is connected. We found no TRUST or GTR route, and no listing by OpenVASP or TRISA that confirms the TRP and TRISA links, so ask for a test transfer with your main counterparties.
+- q: How does BlockTravel verify self-hosted wallets?
+  a: The BlockTravel page does not describe a self-hosted wallet method. We found no signed message, Satoshi test, AOPP or screenshot proof. If you need to verify unhosted wallets under the EU Transfer of Funds Regulation, ask Block Infrastructure how this works before you sign.
+- q: What is the BlockTravel compliance oracle on Canton?
+  a: In May 2026 Block Infrastructure showed BlockTravel at the Bermuda Digital Finance Forum in a simulated transfer on Canton DevNet, the Canton Network's test environment. Smart contracts called the oracle to run Travel Rule, sanctions and AML policy checks before settlement, the outcome was written on-chain as an audit record, and Canton Coin then moved in one atomic step. The protocols used in the demo were not named.
+- q: Is Block Infrastructure ISO 27001 or SOC 2 certified?
+  a: We found no claim of either. The site lists frameworks its customers work under, such as FATF, MiCA, FCA and MAS rules, and technical standards such as OAuth2 and mTLS, but none of these is a certification. Block Infrastructure claims no licence or registration of its own.
+- q: Who is behind Block Infrastructure?
+  a: Block Infrastructure Ltd was registered in London on 21 October 2024. Its co-founders are Richard Beverley (CEO), Kurtis Wright (COO) and Joshan Mahmud (CTO), who previously worked at ClearBank according to the team page. The company calls itself seed stage and names no investors. In January 2026 Companies House recorded a first Gazette notice for compulsory strike-off, which was discontinued a week later, the day after a late confirmation statement was filed.
+- q: What is the best alternative to BlockTravel?
+  a: CryptoSwift if you need a hosted Travel Rule API with published prices today. Ospree if you want TRP and TRISA routes with built-in wallet screening. 21 Analytics if many of your counterparties are on TRUST or you want software you run yourself.
+segments: []
+capabilities:
+  deployment:
+    status: not_disclosed
+    note: API-first with a sandbox; hosting model not stated
+    source: 1
+  published_pricing:
+    status: 'no'
+    note: design partner terms only
+    source: 2
+  sanctions_pep:
+    status: 'yes'
+    note: sanctions screening of every party before settlement (vendor-stated)
+    source: 1
+  transaction_monitoring:
+    status: 'yes'
+    note: on-chain data checks before settlement; data provider not named
+    source: 1
+  identity_verification:
+    status: add_on
+    note: separate BlockID reusable KYC and KYB network, also in design partner stage
+    source: 9
+  checked: '2026-11'
+certifications: []
+user_ratings: []
+use_case_verdicts: []
+score_breakdown:
+- criterion: Compliance & certifications
+  weight: 25
+  score: 3.3
+  note: The legal entity, company number, registered office and directors are confirmed at Companies House, but Block Infrastructure claims no security certification, licence or registration, and the frameworks it lists (FATF, MiCA, FCA, MAS, GDPR) are rules its customers follow, not audits of the vendor. Hosting and data location are not stated, and the privacy policy did not load when we checked.
+  evidence: independent
+- criterion: Coverage
+  weight: 20
+  score: 3.2
+  note: TRP and TRISA are stated as live in both directions, but only by the vendor; we found no OpenVASP or TRISA listing. Five more networks are named as reachable through the adapter model with no live connection stated, there is no TRUST or GTR route, no self-hosted wallet method is described, and no jurisdiction or counterparty count is given.
+  evidence: vendor
+- criterion: Pricing transparency
+  weight: 20
+  score: 2.8
+  note: No prices, plans, minimums or third-party figures exist. The only commercial statement is that design partners get preferential terms after the design partner stage.
+  evidence: vendor
+- criterion: Integration & API depth
+  weight: 15
+  score: 3.0
+  note: The product page describes a REST API, event subscriptions, webhooks on state changes, exceptions and timeouts, OpenAPI 3.0, OAuth2 and mTLS, and a sandbox with synthetic payments. We found no public API reference, and sandbox access is for design partners.
+  evidence: vendor
+- criterion: Support responsiveness
+  weight: 10
+  score: 2.8
+  note: No support channels, hours or response times are published beyond a contact form and an info@ address. Design partners get a direct line to the build team, which is not a support commitment. No user reviews exist.
+  evidence: vendor
+- criterion: Track record
+  weight: 10
+  score: 2.6
+  note: The company was registered in October 2024 and the product is not on general release, with no named customers. Its founders have payments and compliance backgrounds at ClearBank and HSBC per the team page. Companies House published a first strike-off notice in January 2026 that was discontinued a week later, and the confirmation statement due on 3 November 2026 was shown as overdue on 11 November 2026. We found no regulatory actions or breach disclosures.
+  evidence: independent
+hands_on: null
+sources:
+- title: BlockTravel
+  publisher: Block Infrastructure
+  url: https://www.block-infrastructure.com/products/blocktravel/
+  accessed: '2026-11'
+- title: Block Infrastructure homepage
+  publisher: Block Infrastructure
+  url: https://block-infrastructure.com/
+  accessed: '2026-11'
+- title: Products
+  publisher: Block Infrastructure
+  url: https://block-infrastructure.com/products/
+  accessed: '2026-11'
+- title: About
+  publisher: Block Infrastructure
+  url: https://www.block-infrastructure.com/about/
+  accessed: '2026-11'
+- title: Team
+  publisher: Block Infrastructure
+  url: https://www.block-infrastructure.com/team/
+  accessed: '2026-11'
+- title: Contact
+  publisher: Block Infrastructure
+  url: https://block-infrastructure.com/contact/
+  accessed: '2026-11'
+- title: News
+  publisher: Block Infrastructure
+  url: https://block-infrastructure.com/resources/news/
+  accessed: '2026-11'
+- title: Network Compliance Oracle
+  publisher: Block Infrastructure
+  url: https://block-infrastructure.com/use-cases/network-compliance/
+  accessed: '2026-11'
+- title: 'BlockID: verify the participant'
+  publisher: Block Infrastructure
+  url: https://www.block-infrastructure.com/products/blockid/
+  accessed: '2026-11'
+- title: BLOCK INFRASTRUCTURE LTD, company overview (16030386)
+  publisher: Companies House
+  type: register
+  url: https://find-and-update.company-information.service.gov.uk/company/16030386
+  accessed: '2026-11'
+- title: BLOCK INFRASTRUCTURE LTD, officers
+  publisher: Companies House
+  type: register
+  url: https://find-and-update.company-information.service.gov.uk/company/16030386/officers
+  accessed: '2026-11'
+- title: BLOCK INFRASTRUCTURE LTD, filing history
+  publisher: Companies House
+  type: register
+  url: https://find-and-update.company-information.service.gov.uk/company/16030386/filing-history
+  accessed: '2026-11'
+- title: Block Infrastructure demonstrates BlockTravel compliance oracle on the Canton Network
+  publisher: Financial IT
+  type: press
+  url: https://financialit.net/news/blockchain/block-infrastructure-demonstrates-blocktravel-compliance-oracle-canton-network
+  accessed: '2026-11'
+- title: Block Infrastructure demonstrates BlockTravel compliance oracle on the Canton Network (partner content)
+  publisher: TechBullion
+  type: press
+  url: https://techbullion.com/?p=756950
+  accessed: '2026-11'
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://www.block-infrastructure.com
+  - https://www.linkedin.com/company/block-infrastructure
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- 'Record decisions: link.type none (suggested by 21 Analytics, a partner ranked in Travel Rule; no commercial relationship with Block Infrastructure recorded, and the suggestion has no influence on the score). link.url points to the BlockTravel page given in the brief. Categories travel-rule only: sanctions and on-chain checks are part of BlockTravel, but BlockID (KYC and KYB) is a separate pre-release product, so crypto KYC is left as a suggestion for the owner. Logo null: the site serves /brand-assets/01-logo/lockup-horizontal.svg, but the fetch tool needed a permission nobody could grant in this unattended run; owner to supply the logo. Not confused with 1Kosmos BlockID (passwordless authentication, Capterra listing 266248, 0 reviews) or with Block, Inc.'
+- 'Availability: homepage says "validating with a small group ahead of public availability later in 2026"; product, BlockTravel and use-case pages all describe design partner stage and V1 scope. Financial IT (19 May 2026) and TechBullion (21 May 2026, labelled partner content) say the same. The homepage also says the infrastructure is validated "in production" with that group; no deployment is named. Eligibility of a pre-GA product for the Travel Rule ranking is an owner decision (the KYA rubric ranks only GA or open beta; Travel Rule has no written rule).'
+- 'Networks: BlockTravel page (11 Nov 2026): "OpenVASP TRP and TRISA are the protocols we operate today, on both the sending and receiving side"; "the same adapter model extends to Sygna..."; "The Travel Rule market runs several others, including Sygna Bridge, Notabene, VerifyVASP, CODE and Veriscope"; "BlockTravel is built to speak to each of them through the same API". Recorded as planned, not live. No TRUST, GTR or own network. OpenVASP TRP page (openvasp.org/trp) could not be opened (permission); web searches found no TRISA or travelrule.io listing for Block Infrastructure. Open: re-check both at the next pass.'
+- 'Self-hosted wallets: the BlockTravel page has no mention of self-hosted or unhosted wallets, signatures, Satoshi tests or AOPP (checked by a targeted read on 11 Nov 2026). Fact set to Not publicly disclosed.'
+- 'Company: Companies House overview, officers and filing history opened 11 Nov 2026. Incorporated 21 Oct 2024, GBP 100 capital at incorporation; SIC 63110 and 82990; directors Richard Frederick Beverley (also secretary), Suhumar Karur, Joshan Mahmud, Kurtis Wright, all appointed 21 Oct 2024. The team page lists a co-founder and Chief Data Officer called "Suhu"; not matched to Suhumar Karur in the record. Filings: GAZ1 first gazette for compulsory strike-off 6 Jan 2026, CS01 for 20 Oct 2025 filed 13 Jan 2026, DISS40 strike-off discontinued 14 Jan 2026; total exemption full accounts to 31 Oct 2025 filed 20 Oct 2026 (not opened); AD01 registered office moved from 71-75 Shelton Street, Covent Garden, London WC2H 9JQ to C/O Ajn Accountants, 1 Empire Mews, London SW16 2BF on 3 Nov 2026; PSC04 and CH03 for Richard Beverley dated 20 Oct 2026, filed 4 Nov 2026. Next confirmation statement date 20 Oct 2026, due 3 Nov 2026, shown overdue on 11 Nov 2026. PSC register page not opened (permission), so other persons with significant control, if any, are unknown.'
+- 'Funding: about page says seed stage; no round, amount or investor found in searches. Fact Not publicly disclosed.'
+- 'Regulatory status: no licence or registration claimed on any page. FCA cryptoasset register not searched directly; a web search found no FCA entry for Block Infrastructure. Frameworks listed on the site (FCA, MAS, GDPR, DABA, MiCA, FATF) are customer frameworks, not vendor certifications.'
+- 'Certifications: none claimed. The homepage says it publishes "what we hold today and what we are pursuing next" but does not separate the two; no ISO/IEC 27001, SOC 2 or Cyber Essentials claim found. Privacy policy at /legal/privacy/ returned a client error on 11 Nov 2026; no terms page linked.'
+- 'User ratings: no G2, Capterra or SourceForge listing found for Block Infrastructure or BlockTravel. user_ratings empty.'
+- 'Press: news page lists the Canton demo (Financial IT, Finopotamus, Digital Assets Edge 19 May 2026; TechBullion, 0xzx 21 May 2026), Stablecon Europe (The Fintech Times, 22 May 2026), a podcast (28 May 2026), Let Fintech Grow profile (8 Jul 2026, not opened: permission) and two opinion pieces (Aug 2026). No customer, partner or pilot is named in the pieces opened. Team page also lists Jakob (Partner, Europe), Nikolaj Klein (Partner, Nordics) and Anthony Ralphs (Compliance and Advisory Lead, formerly Ripple); not in the record.'
+- 'No enforcement action, breach disclosure, litigation or acquisition involving Block Infrastructure found in searches to 11 Nov 2026.'
+application_category: Travel Rule Compliance Software
+author: andrii-klymenko
+directory_categories:
+- Travel Rule
+# Review page V4 (owner, 2026-11-10): "Who it's for" lines and networks, only facts already sourced above.
+fit:
+  'yes':
+  - want Travel Rule, sanctions and policy checks to hold a payment until they pass, not run after it settles
+  - send transfers to counterparties on TRP or TRISA and can join a design partner programme under a mutual NDA
+  'no':
+  - text: need a product on general release today. BlockTravel is in design partner stage until later in 2026
+    alt: cryptoswift
+  - text: need published prices. Block Infrastructure offers design partner terms only
+    alt: cryptoswift
+networks:
+- name: TRP
+  status: live
+  note: Sender and receiver today, per Block Infrastructure
+  evidence: vendor
+  source: 1
+- name: TRISA
+  status: live
+  note: Sender and receiver today, per Block Infrastructure
+  evidence: vendor
+  source: 1
+- name: Sygna Bridge, Notabene, VerifyVASP, CODE, Veriscope
+  status: planned
+  note: Named as reachable through the same adapter model; no live connection stated
+  evidence: vendor
+  source: 1
+- name: TRUST, GTR
+  status: not_found
+  note: No connection found (Nov 2026)
