@@ -241,6 +241,10 @@ capabilities:
     status: 'yes'
     note: Document Verification and Liveness checks
     source: 1
+  liveness:
+    status: 'yes'
+    note: Liveness and face match sold as a module (EUR 0.25 a check on the pricing page)
+    source: 1
   sanctions_pep:
     status: 'yes'
     note: Database screening check, all plans
@@ -524,3 +528,24 @@ directory_categories:
 - KYB
 - Cheap KYC
 - Age Verification
+# Budget KYC 1.0 inputs (docs/scoring-budget-kyc.md). Prices are pricing.items labels, never typed here.
+budget:
+  checked: '2026-11-02'
+  currency: EUR
+  options:
+  - plan: Usage-based
+    check:
+    - Document verification
+    - Liveness and face match
+    aml:
+    - Database screening (PEP, sanctions, watchlists)
+  terms:
+    contract: none
+    self_serve: 'yes'
+    free_start: 'yes'
+  transparency:
+    parts_priced: true
+    aml_priced: true
+    tiers_published: true
+    addons_listed: true
+  notes: Prices exclude VAT. ECB rate still to be added.

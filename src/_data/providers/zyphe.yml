@@ -574,3 +574,23 @@ directory_categories:
 - AML
 - Identity Verification
 - Cheap KYC
+# Budget KYC 1.0 inputs (docs/scoring-budget-kyc.md). Prices are pricing.items labels, never typed here.
+budget:
+  checked: '2026-11-02'
+  currency: USD
+  options:
+  - plan: Verify (pay per check)
+    check:
+    - ID and liveness
+    aml:
+    - AML screening
+  terms:
+    contract: not_stated
+    self_serve: 'yes'
+    free_start: 'yes'
+  transparency:
+    parts_priced: true
+    aml_priced: true
+    tiers_published: false
+    addons_listed: true
+  notes: Signup credit is issued after business or payment-method verification.

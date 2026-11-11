@@ -475,3 +475,42 @@ legacy_reviewer:
 directory_categories:
 - eKYC
 - AML
+# Budget KYC 1.0 inputs (docs/scoring-budget-kyc.md). Prices are pricing.items labels, never typed here.
+budget:
+  checked: '2026-11-02'
+  currency: USD
+  options:
+  - plan: Starter
+    check:
+    - label: Document verification
+      pick: 0
+    - label: Liveness and face match (photo)
+      pick: 0
+    aml:
+    - label: Standard AML screening
+      pick: 0
+    minimum:
+      item: Starter plan
+      covers_checks: true
+  - plan: Core
+    check:
+    - label: Document verification
+      pick: 1
+    - label: Liveness and face match (photo)
+      pick: 1
+    aml:
+    - label: Standard AML screening
+      pick: 1
+    minimum:
+      item: Core plan
+      covers_checks: true
+  terms:
+    contract: not_stated
+    self_serve: not_stated
+    free_start: not_stated
+  transparency:
+    parts_priced: true
+    aml_priced: true
+    tiers_published: false
+    addons_listed: true
+  notes: Minimums are credited against checks (pricing page).

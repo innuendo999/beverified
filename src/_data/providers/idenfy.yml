@@ -539,3 +539,31 @@ directory_categories:
 - Identity Verification
 - KYB
 - Age Verification
+# Budget KYC 1.0 inputs (docs/scoring-budget-kyc.md). Prices are pricing.items labels, never typed here.
+budget:
+  checked: '2026-11-11'
+  currency: USD
+  options:
+  - plan: Basic
+    check:
+    - Basic, per verification
+    minimum:
+      item: Basic, monthly minimum
+      covers_checks: true
+  - plan: Premium
+    check:
+    - Premium, per verification
+    minimum:
+      item: Premium, monthly minimum
+      covers_checks: true
+  aml_status: not_priced
+  terms:
+    contract: not_stated
+    self_serve: not_stated
+    free_start: 'yes'
+  transparency:
+    parts_priced: true
+    aml_priced: false
+    tiers_published: false
+    addons_listed: true
+  notes: 'Billing docs (11 Nov 2026): the minimum is billed like a subscription and unused verifications do not roll over.'
