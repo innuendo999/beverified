@@ -20,7 +20,7 @@ link:
   url: https://notabene.id
   type: none
 last_verified: '2026-11-04'
-updated: '2026-11-04'   # last content edit; last_verified = last fact re-check
+updated: '2026-11-11'   # last content edit; last_verified = last fact re-check
 verdict: Notabene suits exchanges, custodians and payment firms that want a hosted Travel Rule service with a large counterparty network and no software of their own to run. A free plan lets a firm answer incoming transfers with no integration. Every customer gets a TRP 1.0 endpoint, but not the current TRP version, which Notabene offers to add on request. The paid platform is quoted only. Notabene cannot connect to TRUST directly, its VerifyVASP link is still pending, and its ISO/IEC 27001 and SOC 2 evidence sits behind a Trust Center request.
 what_is:
 - Notabene sells Travel Rule compliance to crypto firms as a hosted service. Before a transfer goes on chain, it works out which institution controls the counterparty wallet, exchanges the originator and beneficiary data that FATF Recommendation 16 requires, and records whether the counterparty accepted. Rules decide which transfers need data, which thresholds apply in each jurisdiction and when a transfer is approved, held or rejected. Notabene says 2,300+ regulated institutions are in its network and that it has 280+ customers; it gives other figures on other pages, and we could not check any of them.
@@ -92,6 +92,11 @@ facts:
   value: Hosted SaaS; data stored in the US and the EU, region chosen per customer
   source: 7
   evidence: vendor
+- label: Self-hosted option
+  value: None found; a hosted service with a choice of storage regions, and full physical data segregation and customer-managed keys for enterprise customers
+  source: 4
+  evidence: vendor
+  verified: '2026-11'
 - label: Network
   value: 2,300+ regulated institutions and 280+ customers (vendor-stated; other pages give other figures)
   source: 3
@@ -384,6 +389,7 @@ verification_notes:
 - 'TRP version re-check 4 Nov 2026 (after 21 Analytics, a competitor, pointed out that TRP 1.0 is obsolete): Notabene TRP page opened again: "Every Notabene customer has a live TRP 1.0 endpoint. However, a VASP needs to do some work to implement the Travel Address. If any VASPs are interested in supporting this, we can quickly add support for the latest version of TRP." Current spec 3.2.1 dated 29 Jul 2024, mTLS mandatory since 3.0.0 (tomcn.uk, 9 Oct 2026; GitLab spec not reachable from this session). Didit docs: TRP 3.2.1, requests without api-version and request-identifier headers return 400. Whether a 1.0 endpoint can exchange messages with any 3.x implementation is not documented anywhere we found; 21 Analytics says it cannot, which we did not verify. TRP 1.0 removed from pros and added to the network con. Editor decision 4 Nov 2026: Coverage 4.2 to 4.1, overall 4.1 to 4.0 (weighted 4.045).'
 - No enforcement action, breach disclosure, litigation or acquisition involving Notabene found in searches to 4 Nov 2026.
 - 'Docs re-check 4 Nov 2026 (second pass): devx llms.txt and v2 llms.txt opened. Sandbox self sign-up at app.eu1.notabene.id, API access through support@notabene.id (29); RoboVASPs exist only in the sandbox (31); self-hosted wallet proofs page lists bip-137, bip-322, eip-191, ed25519, tip-191, xrp-ed25519, cip-8, xlm-ed25519 with named wallets, Satoshi test in txCreate and the JavaScript SDK, screenshots and self-declaration for any chain (30); SafeTransact v1 retirement scheduled for 2027, no date (32). Get Entity schema has fields for OpenVASP, Sygna, TRISA, TRLight, email, TRP, Shyft, USTRWG, TRUST and Notabene, but a schema field is not evidence of a live route, so not used. No OpenAPI specification page found.'
+- 'Self-hosted check 11 Nov 2026 (owner asked, for the fit check): the security page describes a hosted service with a choice of storage regions, and full physical data segregation and customer-managed keys for enterprise customers; no on-premise or self-hosted option is mentioned there or in the docs we read. Recorded as the fact "Self-hosted option".'
 application_category: Travel Rule Compliance Software
 author: andrii-klymenko
 directory_categories:

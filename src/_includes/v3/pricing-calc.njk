@@ -1,0 +1,92 @@
+{#- Pricing calculator (review page V5, owner 2026-11-11). Data: v4.calc from pricingCalc() in src/_lib/review-v4.js;
+    every figure comes from pricing.items. Without JavaScript only the tier cards show. -#}
+{%- set c = v4.calc %}
+<div class="pc">
+  <div class="pc__inputs" hidden>
+    <div class="pc__field">
+      <label for="pc-vol"><span>{{ c.volumeLabel }}</span><b data-out="vol"></b></label>
+      <input id="pc-vol" type="range" min="100" max="20000" step="100" value="2000">
+      <span class="pc__scale"><span>100</span><span>20,000</span></span>
+    </div>
+    <div class="pc__field">
+      <label for="pc-bud"><span>Monthly budget</span><b data-out="bud"></b></label>
+      <input id="pc-bud" type="range" min="0" max="5000" step="100" value="1000">
+      <span class="pc__scale"><span>Not set</span><span>{{ c.currency }} 5,000</span></span>
+    </div>
+    <p class="rv4-small">Prices in {{ c.currency }}, as listed. We don't convert currencies.</p>
+  </div>
+  <div class="pc__out" aria-live="polite">
+    <p class="pc__verdict" data-out="verdict" hidden></p>
+    <p class="pc__sub" data-out="sub" hidden></p>
+    <div class="pc__plans">
+      {%- for pl in c.plans %}
+      <div class="pc__plan" data-i="{{ loop.index0 }}">
+        <p class="pc__tier">{{ pl.tier }}</p>
+        <p class="pc__status" data-out="status"></p>
+        <p class="pc__price num">{{ pl.priceLabel }}</p>
+        <p class="pc__calc" data-out="calc">{% if not pl.monthly %}Flat fee whatever the volume{% endif %}</p>
+        <ul>{% for t in pl.includes %}<li>{{ t }}</li>{% endfor %}</ul>
+        {%- if pl.source %}<p class="pc__src">{{ pl.source }}</p>{% endif %}
+      </div>
+      {%- endfor %}
+    </div>
+    {%- if v4.selfHosted %}
+    <div class="pc__note">
+      <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 11v6M12 7.5v.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <p><b>Not in any tier: your own running cost.</b> {{ p.name }} is self-hosted, so you also pay for the servers or cloud it runs on and the DevOps time to install, patch and back it up. Ask for its infrastructure requirements before you compare quotes.</p>
+    </div>
+    {%- endif %}
+  </div>
+</div>
+<script type="application/json" id="pc-data">{{ c | dump | safe }}</script>
+<script>
+(function () {
+  var raw = document.getElementById("pc-data"), box = document.querySelector(".pc");
+  if (!raw || !box) return;
+  var C = JSON.parse(raw.textContent), cur = C.currency;
+  var vol = document.getElementById("pc-vol"), bud = document.getElementById("pc-bud");
+  var priced = C.plans.filter(function (x) { return x.monthly; }), quoted = C.plans.filter(function (x) { return !x.monthly; });
+  var maxPrice = Math.max.apply(null, priced.map(function (x) { return x.monthly; }));
+  var maxCap = Math.max.apply(null, priced.map(function (x) { return x.cap || 0; }));
+  bud.max = String(Math.max(5000, Math.ceil(maxPrice * 5 / 100) * 100));
+  bud.parentNode.querySelector(".pc__scale span:last-child").textContent = cur + " " + Number(bud.max).toLocaleString("en-US");
+  if (maxCap) vol.max = String(Math.max(20000, maxCap * 2));
+  box.querySelector(".pc__inputs").hidden = false;
+  box.querySelectorAll("[data-out=verdict],[data-out=sub]").forEach(function (e) { e.hidden = false; });
+  var fmt = function (n) { return Number(n).toLocaleString("en-US"); };
+  var names = function (xs) { var t = xs.map(function (x) { return x.tier; }); return t.length < 3 ? t.join(" or ") : t.slice(0, -1).join(", ") + " or " + t[t.length - 1]; };
+  function update() {
+    var v = Number(vol.value), b = Number(bud.value), set = b > 0;
+    box.querySelector("[data-out=vol]").textContent = fmt(v);
+    box.querySelector("[data-out=bud]").textContent = set ? cur + " " + fmt(b) : "Not set";
+    var fitsVol = priced.filter(function (x) { return !x.cap || v <= x.cap; });
+    var fits = fitsVol.filter(function (x) { return !set || b >= x.monthly; }).sort(function (a, c) { return a.monthly - c.monthly; });
+    var verdict, sub;
+    if (fits.length) {
+      var f = fits[0];
+      verdict = f.tier + " covers your " + fmt(v) + " transfers for " + cur + " " + fmt(f.monthly) + " a month.";
+      sub = "That is about " + cur + " " + (f.monthly / v).toFixed(2) + " per transfer, or " + cur + " " + fmt(f.monthly * 12) + " a year." + (quoted.length ? " " + names(quoted) + " " + (quoted.length > 1 ? "are" : "is") + " quoted." : "");
+    } else if (fitsVol.length) {
+      var lo = fitsVol.sort(function (a, c) { return a.monthly - c.monthly; })[0];
+      verdict = "No listed plan costs under " + cur + " " + fmt(lo.monthly) + " a month.";
+      sub = lo.tier + " would cover your " + fmt(v) + " transfers at " + cur + " " + fmt(lo.monthly) + "." + (quoted.length ? " " + names(quoted) + " " + (quoted.length > 1 ? "are" : "is") + " quoted." : "");
+    } else {
+      verdict = "Above " + fmt(maxCap) + " transfers a month you need " + names(quoted) + ".";
+      sub = "Ask for a written price at " + fmt(v) + " transfers a month.";
+    }
+    box.querySelector("[data-out=verdict]").textContent = verdict;
+    box.querySelector("[data-out=sub]").textContent = sub;
+    C.plans.forEach(function (pl, i) {
+      var card = box.querySelector('.pc__plan[data-i="' + i + '"]'), s = card.querySelector("[data-out=status]"), c = card.querySelector("[data-out=calc]");
+      var cls = "", text = "";
+      if (!pl.monthly) { text = "Price on request"; cls = "ask"; }
+      else if (pl.cap && v > pl.cap) { text = "Over its " + fmt(pl.cap) + " cap"; cls = "no"; c.textContent = "Not available above " + fmt(pl.cap) + " transfers"; }
+      else if (set && b < pl.monthly) { text = "Over your budget"; cls = "no"; c.textContent = "About " + cur + " " + (pl.monthly / v).toFixed(2) + " per transfer at your volume"; }
+      else { text = "Fits your volume and budget"; cls = "ok"; c.textContent = "About " + cur + " " + (pl.monthly / v).toFixed(2) + " per transfer at your volume"; }
+      s.textContent = text; card.setAttribute("data-state", cls);
+    });
+  }
+  vol.addEventListener("input", update); bud.addEventListener("input", update);
+  update();
+})();
+</script>

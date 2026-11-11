@@ -24,7 +24,7 @@ link:
   rel: noopener   # owner, 2026-11-10: followed link (review page and travel-rule listing)
   button: primary   # owner, 2026-11-10: full "Visit site" button on the review
 last_verified: '2026-10-22'
-updated: '2026-11-10'   # last content edit; last_verified = last fact re-check
+updated: '2026-11-11'   # last content edit; last_verified = last fact re-check
 verdict: '21 Analytics suits regulated VASPs, brokers and banks that want to run Travel Rule software in their own infrastructure. Its main strength is TRUST: the network Coinbase helps run lists 21 Analytics as its only interoperability partner. TRP and four ways to verify self-hosted wallets are built in too. The ISO/IEC 27001:2022 certificate is public, but we found no SOC 2 report and no published prices, and you run and patch the software yourself.'
 what_is:
 - 21 Analytics sells 21 Travel Rule, software that VASPs install in their own data centre or cloud account to exchange originator and beneficiary data with other VASPs under FATF Recommendation 16 and the EU Transfer of Funds Regulation. It ships as containers with a PostgreSQL database and talks to counterparties over TRP and TRUST. VASPs without a Travel Rule solution get encrypted email. A Compliance Dashboard and a GraphQL API handle review and integration, and an AOPP portal collects proofs that a customer controls a self-hosted wallet. 21 Analytics says it cannot access customer data, logs or configuration in a deployment. Support works by screen sharing or log upload. Its other products are 21 Virtual Counter and 21 Sunrise, for requesting data from VASPs that have no Travel Rule tool.
@@ -460,15 +460,15 @@ author: andrii-klymenko
 directory_categories:
 - Travel Rule
 # Review page V4 (owner, 2026-11-10): "Who it's for" lines and networks, only facts already sourced above.
-fit:
+fit:   # V5 (owner, 2026-11-11): the buyer's situation, not features
   'yes':
-  - are a regulated VASP, broker or bank that wants Travel Rule data to stay in your own infrastructure
-  - send many transfers to TRUST members such as Coinbase and can pass TRUST's own due diligence
-  - 'need more than one way to prove self-hosted wallet ownership: AOPP, signed message, Satoshi test or screenshot'
+  - need Travel Rule data to stay in your own infrastructure, for your regulator, a bank partner or your own policy
+  - send many transfers to Coinbase or other TRUST members and can pass TRUST's own due diligence
+  - have a team that can run and patch containers on Podman, Kubernetes or OpenShift
   'no':
-  - text: want a hosted service rather than software you install and patch yourself. A managed option is available through AML Incubator
+  - text: want a hosted service and no software to run. A managed option is available through AML Incubator
     alt: notabene
-  - text: need published prices before the first sales call. The pricing page lists tiers but no prices
+  - text: must see a price before the first sales call. The pricing page lists tiers but no prices
 networks:
 - name: TRUST
   status: built_in
@@ -530,3 +530,36 @@ screenshots_meta:
   product_version: 8.2.0
   sample_data: true
   permission: sent by 21 Analytics for publication, owner confirmed 2026-11-10
+product_jobs:   # V5 "What 21 Analytics does", by the job the buyer needs done. Facts from features[] and screenshots[]; shot = screenshots[] index
+- title: Check a counterparty VASP before you send data
+  text: The Compliance Dashboard keeps a record of each counterparty VASP. TRUST counterparties show their due diligence status, and TRP counterparties their API URL and signing key. Transfers to TRUST members are detected automatically once your firm has passed TRUST's own due diligence.
+  shots: [2, 3]
+- title: Reach counterparties with no Travel Rule tool
+  text: VASPs with no Travel Rule solution get encrypted email. Two separate products, 21 Sunrise and 21 Virtual Counter, request the data from them.
+- title: Verify self-hosted wallets
+  text: AOPP, signed messages, Satoshi tests and screenshot or video proofs. 21 Analytics says one-click proofs work with 540+ wallets.
+- title: Decide on each transfer and keep an audit trail
+  text: An inbox to approve or decline each incoming transfer, business rules that can be written in plain language with AI, wallet risk scores from Chainalysis, Crystal, Global Ledger, Beosin and Merkle Science, and audit logs with exports.
+  shots: [0, 1]
+- title: For your engineers
+  text: A GraphQL API and an integration client SDK.
+  minor: true
+pricing_calc:   # V5 pricing calculator. Every figure is read from pricing.items by label; nothing is typed here
+  volume_label: VASP-to-VASP transfers a month
+  plans:
+  - tier: Starter
+    price_item: Starter plan, G2 listing
+    cap_item: Starter plan, Capterra listing
+    includes: ['Starter plan, Capterra listing']
+    source: G2 and Capterra listings, not the vendor's page
+  - tier: Essentials
+    includes: [Pricing model, { item: Onboarding fee, label: Onboarding fee }, { item: Essentials support, label: Support }, { item: 'Platform support, both tiers', label: Platform support }]
+    source: 21 Analytics' pricing page
+  - tier: Enterprise
+    includes: [Pricing model, Enterprise, { item: 'Platform support, both tiers', label: Platform support }]
+    source: 21 Analytics' pricing page
+changes:   # "What changed" on the review, newest first
+- date: '2026-11-10'
+  text: 'Pricing re-checked: 72-hour platform support SLA added.'
+- date: '2026-10-22'
+  text: Full fact re-check.

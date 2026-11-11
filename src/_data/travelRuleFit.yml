@@ -1,0 +1,52 @@
+# Fit check on Travel Rule reviews (review page V5, owner 2026-11-11).
+# Built by src/_lib/fit-check.js from each provider record: networks[], the Deployment and
+# self-hosted wallet facts, certifications[] and pricing. This file only names the networks,
+# maps record names to them and records the deployment reading of each Deployment fact.
+# A need with no data in a record shows "Not checked"; nothing here adds a fact.
+
+ranking: travel-rule
+
+networks:
+  - { key: trust, label: TRUST, aliases: [TRUST] }
+  - { key: trp, label: TRP protocol, aliases: [TRP] }           # the OpenVASP protocol, not the provider "TRP" (travel-rule.com)
+  - { key: trisa, label: TRISA, aliases: [TRISA] }
+  - { key: code, label: CODE, aliases: [CODE] }
+  - { key: gtr, label: GTR, aliases: [GTR] }
+  - { key: verifyvasp, label: VerifyVASP, aliases: [VerifyVASP] }
+  - { key: sygna, label: Sygna Bridge, aliases: [Sygna, Sygna Bridge] }
+  - { key: notabene, label: Notabene network, aliases: [Notabene] }
+  - { key: cryptoswift, label: CryptoSwift STRIP, aliases: [CryptoSwift, STRIP] }
+  - { key: ospree, label: Ospree network, aliases: [Ospree] }
+  - { key: trpnet, label: travel-rule.com network, aliases: [] }
+  - { key: email, label: Email for VASPs with no tool, aliases: [Email] }
+
+# networks[] entries named "Own network" belong to the provider's own network
+own_network:
+  notabene: notabene
+  cryptoswift: cryptoswift
+  verifyvasp: verifyvasp
+  trp: trpnet
+  ospree: ospree
+
+# Extra rows read from a record's own network note
+also:
+  verifyvasp:
+    sygna: { status: yes, from: own }   # "Closed VerifyVASP network, including Sygna Bridge since April 2026"
+
+# "Other networks: not_found" covers every network except these
+other_networks_skip:
+  trp: [trp, trpnet, email]   # whether travel-rule.com speaks the OpenVASP TRP protocol is not in the record
+
+# Reading of each Deployment fact (owner re-check of Notabene and Ospree, 2026-11-11).
+# yes, partly, not_found; a provider left out shows "Not checked".
+deploy:
+  21analytics: { self: yes, hosted: partly, short: Self-hosted, sub: 'Podman, Kubernetes or OpenShift; managed option through AML Incubator' }   # sub: hero line, from the Deployment fact
+  notabene: { self: not_found, hosted: yes, short: Hosted, fact: Self-hosted option }
+  cryptoswift: { self: partly, hosted: yes, short: Hosted }
+  ospree: { self: not_found, hosted: yes, short: Hosted, fact: Self-hosted option }
+
+# Published prices, where capabilities.published_pricing is missing
+price:
+  21analytics: { status: not_found, item: Published prices }
+  verifyvasp: { status: not_found, item: Published prices }
+  trp: { status: partly, note: "Deposit, self-hosted wallet message and screening prices are published; the protocol message price is not confirmed", item: Self-hosted wallet messages }

@@ -10,6 +10,11 @@ map:
 
 travel-rule:
   v4: true
+  # V5 (owner, 2026-11-11): fit check, no score section, Before you sign hidden until the data is there, alternatives from this ranking only
+  fit_check: true
+  score_section: false
+  diligence: false
+  alts_same_ranking: travel-rule
   networks_heading: Networks and protocols
   network_facts: [Network size, Network, VASP directory, Jurisdictions, Self-hosted wallet proofs, Self-hosted wallet checks]
   integration_facts: [Deployment, API and docs, API, Sandbox, Platform integrations, Uptime commitment]

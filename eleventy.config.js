@@ -135,6 +135,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("pad2", (n) => String(n).padStart(2, "0"));
 
   eleventyConfig.addFilter("score1", (n) => (n == null ? "" : Number(n).toFixed(1)));
+  // First sentence of a paragraph (review V5 product lede): up to the first ". " before a capital letter.
+  eleventyConfig.addFilter("firstSentence", (t) => { const s = String(t || ""); const m = s.match(/^(.+?[.!?])\s+(?=[A-Z0-9])/); return m ? m[1] : s; });
 
   // Providers object -> array sorted by name
   eleventyConfig.addFilter("byName", (obj) =>

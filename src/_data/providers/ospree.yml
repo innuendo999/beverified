@@ -20,7 +20,7 @@ link:
   url: https://www.ospree.io
   type: none
 last_verified: '2026-11-04'
-updated: '2026-11-04'   # last content edit; last_verified = last fact re-check
+updated: '2026-11-11'   # last content edit; last_verified = last fact re-check
 verdict: 'Ospree suits crypto exchanges, payment firms and OTC desks that want Travel Rule messaging and wallet screening from one hosted API. It reaches counterparties over its own network, the open TRP and TRISA protocols, the CryptoSwift network and email, and it pulls risk data from TRM Labs, Crystal and Global Ledger. Self-hosted wallets are verified by a signed attestation only. Ospree publishes no prices, names no SOC 2 or ISO/IEC 27001 certificate, and we found no direct link to TRUST, GTR, Sygna or CODE.'
 what_is:
 - Ospree is a hosted compliance platform for digital asset firms. Its Travel Rule module, which the website calls Travel Rule Atlas, collects originator and beneficiary data, sends it to the counterparty VASP and records the result. The same API screens wallet addresses and transactions with data from blockchain analytics partners, and a rule engine can flag, block or escalate a transfer based on that risk and on jurisdiction thresholds. An Accounts Directory stores customer and counterparty records, and a Reporting Hub exports Travel Rule and analytics reports as CSV or JSON. Firms can integrate through the full REST API or through embeddable ready-made screens. Ospree says its VASP directory lists 1,600+ VASPs and that 120+ projects are connected; we could not check either figure.
@@ -102,6 +102,11 @@ facts:
   value: Hosted SaaS (web-based service under its terms); hosting provider and data location not named
   source: 4
   evidence: vendor
+- label: Self-hosted option
+  value: None found; its docs and security page describe a hosted service, with data in its hosting provider's data centres
+  source: 24
+  evidence: vendor
+  verified: '2026-11'
 - label: Networks and protocols
   value: Own network, email, TRP, TRISA and CryptoSwift live; Sumsub, Fireblocks, TRUSThub and GTR listed as future; no TRUST, Sygna or CODE link found
   source: 10
@@ -384,6 +389,7 @@ verification_notes:
 - 'User ratings: G2 product page shows 0 reviews ("hasn''t been reviewed yet"). No Capterra, GetApp, Software Advice or SourceForge listing found. user_ratings left empty.'
 - 'Docs not opened in this run (permission required for URLs not surfaced by search): per-protocol pages, Breaking Changes, Webhook Security, Self-Hosted Wallet learn page, FAQ, Network Directory. The breaking-changes page and signed webhooks are taken from the docs index titles (llms.txt: "Breaking Changes", "Webhook Security", "Webhook Delivery and Retries"); re-open them at the next fact pass.'
 - 'No enforcement action, breach disclosure, litigation or acquisition involving Ospree found in searches to 4 Nov 2026.'
+- 'Self-hosted check 11 Nov 2026 (owner asked, for the fit check): the docs index (llms.txt) lists no deployment or on-premise page (its self-hosted pages are about wallets), and the security page (Sep 2022) describes data stored in its hosting provider''s data centres. Recorded as the fact "Self-hosted option".'
 application_category: Travel Rule Compliance Software
 author: andrii-klymenko
 directory_categories:

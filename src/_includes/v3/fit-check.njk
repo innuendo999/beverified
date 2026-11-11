@@ -1,0 +1,217 @@
+{#- Fit check on Travel Rule reviews (review page V5, owner 2026-11-11).
+    Data: v4.fitCheck from src/_lib/fit-check.js (provider records + src/_data/travelRuleFit.yml).
+    The reader picks needs; the script checks them against this provider and the rest of the ranking.
+    Hidden without JavaScript; the static fit lines above stay for search engines and no-JS readers. -#}
+{%- set fc = v4.fitCheck %}
+<div class="fc" id="fit-check" hidden data-slug="{{ p.slug }}">
+  <div class="fc__pick">
+    <h3 class="fc__h">Check {{ p.name }} against your setup</h3>
+    <p class="fc__lede">Pick what your firm needs. Each answer comes from our Travel Rule reviews.</p>
+    <fieldset class="fc__group" data-group="run" data-single>
+      <legend>Where must it run?</legend>
+      <div class="fc__chips">
+        <button type="button" class="fc__chip" data-id="self" aria-pressed="false">Our own servers or cloud</button>
+        <button type="button" class="fc__chip" data-id="hosted" aria-pressed="false">Hosted by the vendor</button>
+        <button type="button" class="fc__chip" data-id="" aria-pressed="true">No preference</button>
+      </div>
+    </fieldset>
+    <fieldset class="fc__group" data-group="net">
+      <legend>Which networks are your counterparties on?</legend>
+      <div class="fc__chips">
+        {%- for n in fc.networks %}
+        <button type="button" class="fc__chip" data-id="{{ n.key }}" aria-pressed="false">{{ n.label }}</button>
+        {%- endfor %}
+      </div>
+    </fieldset>
+    <fieldset class="fc__group" data-group="proof">
+      <legend>Self-hosted wallet proofs you need</legend>
+      <div class="fc__chips">
+        <button type="button" class="fc__chip" data-id="sig" aria-pressed="false">Signed message</button>
+        <button type="button" class="fc__chip" data-id="sat" aria-pressed="false">Satoshi test</button>
+        <button type="button" class="fc__chip" data-id="aopp" aria-pressed="false">AOPP</button>
+        <button type="button" class="fc__chip" data-id="vis" aria-pressed="false">Screenshot or video</button>
+      </div>
+    </fieldset>
+    <fieldset class="fc__group" data-group="buy">
+      <legend>Before the first sales call you need</legend>
+      <div class="fc__chips">
+        <button type="button" class="fc__chip" data-id="price" aria-pressed="false">Published prices</button>
+        <button type="button" class="fc__chip" data-id="iso" aria-pressed="false">ISO 27001 confirmed by a third party</button>
+        <button type="button" class="fc__chip" data-id="soc2" aria-pressed="false">SOC 2 report</button>
+      </div>
+    </fieldset>
+    <div class="fc__actions">
+      <button type="button" class="fc__btn" data-act="link">Copy link to this setup</button>
+      <button type="button" class="fc__clear" data-act="clear">Clear all</button>
+    </div>
+  </div>
+  <div class="fc__result" aria-live="polite">
+    <div data-part="empty">
+      <p class="fc__head">Pick what you need on the left.</p>
+      <p class="fc__lede">We check each item against our review data for {{ p.name }} and the other {{ fc.providers.length - 1 }} Travel Rule providers we rank, and list what to ask before you sign.</p>
+    </div>
+    <div data-part="full" hidden>
+      <p class="fc__head" data-out="head"></p>
+      <p class="fc__counts" data-out="counts"></p>
+      <div class="fc__rows" data-out="rows"></div>
+      <div class="fc__ask" data-out="askbox" hidden>
+        <p class="fc__ask-h">Ask {{ p.name }} before you sign</p>
+        <ol data-out="ask"></ol>
+        <button type="button" class="fc__btn fc__btn--light" data-act="copyq">Copy questions</button>
+      </div>
+    </div>
+  </div>
+  <div class="fc__others" data-part="others" hidden>
+    <h3 class="fc__h">Other Travel Rule providers on your setup</h3>
+    <p class="fc__counts">Sorted by fewest gaps, then by our ranking.</p>
+    <div data-out="others"></div>
+  </div>
+</div>
+<script type="application/json" id="fc-data">{{ fc | dump | safe }}</script>
+<script>
+(function () {
+  var root = document.getElementById("fit-check"), raw = document.getElementById("fc-data");
+  if (!root || !raw) return;
+  var D = JSON.parse(raw.textContent), slug = root.getAttribute("data-slug");
+  var me = D.providers.filter(function (x) { return x.slug === slug; })[0];
+  if (!me) return;
+  root.hidden = false;
+  var NET = {}; D.networks.forEach(function (n) { NET[n.key] = n.label; });
+  var PROOF = { sig: "Signed message", sat: "Satoshi test", aopp: "AOPP", vis: "Screenshot or video" };
+  var BUY = { price: "Published prices", iso: "ISO 27001 confirmed by a third party", soc2: "SOC 2 report" };
+  var LOOK = {
+    y: ["Yes", "ok", ""],
+    p: ["Partly", "part", "Available with limits; see the note next to it"],
+    plan: ["Planned", "plan", "Announced by the provider, not live yet"],
+    n: ["Not found", "no", "We looked and found nothing on the date of the review check"],
+    u: ["Not checked", "unk", "Our review data does not cover this yet"]
+  };
+  var st = { run: "", net: [], proof: [], buy: [] }, copied = "";
+
+  function needs() {
+    var out = [];
+    if (st.run === "self") out.push({ key: "self", label: "Runs in your own infrastructure", short: "self-hosting", q: function (n) { return "Can we run " + n + " in our own infrastructure, and which parts stay with you?"; } });
+    if (st.run === "hosted") out.push({ key: "hosted", label: "Hosted by the vendor", short: "hosted service", q: function () { return "Do you offer a hosted or managed service, and who operates it?"; } });
+    D.networks.forEach(function (n) {
+      if (st.net.indexOf(n.key) < 0) return;
+      if (n.key === "email") out.push({ key: "net_email", label: "Email for VASPs with no Travel Rule tool", short: "email fallback", q: function () { return "How do we exchange data with VASPs that have no Travel Rule tool?"; } });
+      else out.push({ key: "net_" + n.key, label: "Reaches " + n.label, short: n.label, q: function () { return "How do we reach counterparties on " + n.label + ", and at what cost?"; } });
+    });
+    Object.keys(PROOF).forEach(function (k) { if (st.proof.indexOf(k) >= 0) out.push({ key: "p_" + k, label: PROOF[k] + " for self-hosted wallets", short: PROOF[k], q: function () { return "Do you support " + PROOF[k].toLowerCase() + " proofs for self-hosted wallets?"; } }); });
+    if (st.buy.indexOf("price") >= 0) out.push({ key: "price", label: BUY.price, short: "prices", q: function () { return "What is the written price for our expected transfer volume?"; } });
+    if (st.buy.indexOf("iso") >= 0) out.push({ key: "iso", label: BUY.iso, short: "ISO 27001", q: function (n, s) { return s === "p" ? "Can we see the ISO/IEC 27001 certificate and its scope?" : "Which security certifications do you hold, and can we see them?"; } });
+    if (st.buy.indexOf("soc2") >= 0) out.push({ key: "soc2", label: BUY.soc2, short: "SOC 2", q: function (n, s) { return s === "p" ? "Can we see the SOC 2 Type II report before we sign?" : "Do you have a SOC 2 Type II report, and can we see it before we sign?"; } });
+    return out;
+  }
+  function evaluate(P, list) {
+    var c = { y: 0, p: 0, plan: 0, n: 0, u: 0 };
+    var rows = list.map(function (nd) {
+      var hit = P.s[nd.key] || ["u", "Not in our review data yet", 0];
+      c[hit[0]] += 1;
+      return { nd: nd, status: hit[0], text: hit[1], ind: hit[2] && (hit[0] === "y" || hit[0] === "p") };
+    });
+    return { rows: rows, c: c };
+  }
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function q(sel) { return root.querySelector(sel); }
+
+  function render() {
+    root.querySelectorAll(".fc__group").forEach(function (g) {
+      var key = g.getAttribute("data-group");
+      g.querySelectorAll(".fc__chip").forEach(function (b) {
+        var id = b.getAttribute("data-id");
+        var on = key === "run" ? st.run === id : st[key].indexOf(id) >= 0;
+        b.setAttribute("aria-pressed", on ? "true" : "false");
+      });
+    });
+    var list = needs(), total = list.length;
+    q('[data-part="empty"]').hidden = total > 0;
+    q('[data-part="full"]').hidden = total === 0;
+    q('[data-part="others"]').hidden = total === 0;
+    q('[data-act="link"]').textContent = copied === "link" ? "Link copied" : "Copy link to this setup";
+    if (!total) return;
+    var ev = evaluate(me, list);
+    q('[data-out="head"]').textContent = me.name + (ev.c.y === total ? " meets all " + total + " of your needs" : " meets " + ev.c.y + " of your " + total + " needs");
+    var parts = [];
+    if (ev.c.p) parts.push(ev.c.p + " partly");
+    if (ev.c.n) parts.push(ev.c.n + " not found");
+    if (ev.c.plan) parts.push(ev.c.plan + " planned");
+    if (ev.c.u) parts.push(ev.c.u + " not checked");
+    q('[data-out="counts"]').textContent = parts.length ? parts.join(" · ") : "No gaps in our review data";
+    var box = q('[data-out="rows"]'); box.textContent = "";
+    ev.rows.forEach(function (r) {
+      var L = LOOK[r.status], row = el("div", "fc__row");
+      var s = el("span", "fc__st fc__st--" + L[1]); var w = el("span", L[2] ? "fc__hint" : "", L[0]);
+      if (L[2]) { s.title = L[2]; w.title = L[2]; }
+      s.appendChild(w); row.appendChild(s);
+      var body = el("span", "fc__body"), name = el("span", "fc__name");
+      if (r.ind) { var m = el("span", "fc__ind", "◆ "); m.title = "Confirmed with a source other than the provider"; name.appendChild(m); }
+      name.appendChild(document.createTextNode(r.nd.label));
+      body.appendChild(name); body.appendChild(el("span", "fc__note", r.text)); row.appendChild(body);
+      box.appendChild(row);
+    });
+    var gaps = ev.rows.filter(function (r) { return r.status !== "y"; });
+    var ask = q('[data-out="ask"]'); ask.textContent = "";
+    gaps.forEach(function (r) { ask.appendChild(el("li", null, r.nd.q(me.name, r.status))); });
+    q('[data-out="askbox"]').hidden = !gaps.length;
+    q('[data-act="copyq"]').textContent = copied === "q" ? "Copied" : "Copy " + gaps.length + " question" + (gaps.length === 1 ? "" : "s");
+
+    var others = D.providers.filter(function (x) { return x.slug !== slug; }).map(function (P) {
+      var e = evaluate(P, list);
+      var g = e.rows.filter(function (r) { return r.status === "n" || r.status === "plan"; }).map(function (r) { return r.nd.short; });
+      var pt = e.rows.filter(function (r) { return r.status === "p"; }).map(function (r) { return r.nd.short; });
+      var bits = [];
+      if (g.length) bits.push("Not found: " + g.join(", "));
+      if (pt.length) bits.push("Partly: " + pt.join(", "));
+      if (e.c.u) bits.push(e.c.u + " not checked");
+      return { P: P, yes: e.c.y, gapsN: e.c.n + e.c.plan, text: bits.length ? bits.join(" · ") : "No gaps in our review data" };
+    }).sort(function (a, b) { return a.gapsN - b.gapsN || b.yes - a.yes || a.P.rank - b.P.rank; });
+    var ob = q('[data-out="others"]'); ob.textContent = "";
+    others.forEach(function (o) {
+      var row = el("div", "fc__other");
+      var who = el("span", "fc__who"); who.appendChild(el("b", null, o.P.name)); who.appendChild(el("span", "fc__counts", " #" + o.P.rank + " · " + o.P.score + " / 5"));
+      who.appendChild(el("span", "fc__checked", "Checked " + o.P.checked)); row.appendChild(who);
+      row.appendChild(el("span", "fc__fits", o.yes + " of " + total + " needs"));
+      row.appendChild(el("span", "fc__gaps", o.text));
+      var a = el("a", null, "Read review →"); a.href = "/providers/" + o.P.slug + "/"; row.appendChild(a);
+      ob.appendChild(row);
+    });
+  }
+  function code() {
+    var c = [];
+    if (st.run) c.push("run:" + st.run);
+    ["net", "proof", "buy"].forEach(function (k) { if (st[k].length) c.push(k + ":" + st[k].join(",")); });
+    return c.join(";");
+  }
+  function copy(text, tag) { try { if (navigator.clipboard) navigator.clipboard.writeText(text); } catch (e) {} copied = tag; render(); }
+  root.addEventListener("click", function (e) {
+    var b = e.target.closest("button"); if (!b || !root.contains(b)) return;
+    if (b.classList.contains("fc__chip")) {
+      var g = b.closest(".fc__group").getAttribute("data-group"), id = b.getAttribute("data-id");
+      if (g === "run") st.run = id;
+      else st[g] = st[g].indexOf(id) >= 0 ? st[g].filter(function (x) { return x !== id; }) : st[g].concat(id);
+      copied = ""; render(); return;
+    }
+    var act = b.getAttribute("data-act");
+    if (act === "clear") { st = { run: "", net: [], proof: [], buy: [] }; copied = ""; render(); }
+    if (act === "link") copy(location.origin + location.pathname + "#fit=" + code(), "link");
+    if (act === "copyq") {
+      var items = Array.prototype.map.call(q('[data-out="ask"]').children, function (li, i) { return (i + 1) + ". " + li.textContent; });
+      copy("Questions for " + me.name + "\n" + items.join("\n"), "q");
+    }
+  });
+  // A shared link: #fit=run:self;net:trust,trp;proof:sig;buy:price
+  var m = location.hash.match(/^#fit=(.*)$/);
+  if (m) {
+    decodeURIComponent(m[1]).split(";").forEach(function (part) {
+      var kv = part.split(":"), k = kv[0], v = (kv[1] || "").split(",").filter(Boolean);
+      if (k === "run" && (v[0] === "self" || v[0] === "hosted")) st.run = v[0];
+      if (k === "net") st.net = v.filter(function (x) { return NET[x]; });
+      if (k === "proof") st.proof = v.filter(function (x) { return PROOF[x]; });
+      if (k === "buy") st.buy = v.filter(function (x) { return BUY[x]; });
+    });
+    root.scrollIntoView();
+  }
+  render();
+})();
+</script>

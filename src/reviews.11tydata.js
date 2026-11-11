@@ -4,7 +4,8 @@ import { buildMatrix } from "./_lib/capabilities.js";
 import { termForCapability } from "./_lib/glossary.js";
 import { buildSidebar, companyFacts } from "./_lib/sidebar.js";
 import { reviewSponsor, shortLabel } from "./_lib/placements.js";
-import { profileFor, heroFacts, networkRows, factRows, certRows, incidentRow, fitRows, questions, sourceGroups, reviewYear } from "./_lib/review-v4.js";
+import { profileFor, heroFacts, networkRows, factRows, certRows, incidentRow, fitRows, questions, sourceGroups, reviewYear, pricingCalc, productJobs } from "./_lib/review-v4.js";
+import { fitCheckData, deployHero } from "./_lib/fit-check.js";
 
 export default {
   pagination: { data: "providers", size: 1, alias: "p", resolve: "values", addAllPagesToCollections: true },
@@ -44,10 +45,28 @@ export default {
       const ctx = { rankings: d.rankings, providers: d.providers, categories: d.categories, menu: d.site.v3.menu };
       const sponsor = reviewSponsor(d.placements, ctx, p.slug);
       const button = p.link?.button || (["affiliate", "paid"].includes(p.link?.type) ? "primary" : "quiet");
+      // V5 (owner, 2026-11-11): Deployment replaces Founded in the hero where the profile has a fit check
+      const dep = prof.fit_check ? deployHero(p, d.travelRuleFit) : null;
+      let hero = heroFacts(p);
+      if (prof.fit_check) {
+        hero = hero.filter((f) => f.label !== "Founded");
+        if (dep) hero.splice(hero.findIndex((f) => f.label === "Price") + 1, 0, dep);
+      }
+      // Alternatives only from the profile's ranking (V5): a provider outside it would show another category's score
+      const sameRanking = prof.alts_same_ranking ? new Set((d.rankings?.[prof.alts_same_ranking]?.providers || []).map((x) => x.slug)) : null;
+      const alts = (p.choose_instead || []).filter((a) => a.slug && d.providers[a.slug] && (!sameRanking || sameRanking.has(a.slug)))
+        .map((a) => ({ text: a.text, need: a.need || null, q: d.providers[a.slug] }));
+      const lv = String(p.last_verified || "").slice(0, 7), pv = String(p.pricing?.verified || "").slice(0, 7);
       return {
         profile: prof,
         year: reviewYear(p),
-        hero: heroFacts(p),
+        hero,
+        alts,
+        fitCheck: prof.fit_check ? fitCheckData(d.providers, d.rankings, d.travelRuleFit) : null,
+        selfHosted: !!dep?.selfHosted,
+        calc: pricingCalc(p),
+        jobs: productJobs(p),
+        pricingRechecked: pv && lv && pv > lv ? p.pricing.verified : null,
         fit: fitRows(p, d.providers),
         networks: nets,
         networkFacts: factRows(p, prof.network_facts),

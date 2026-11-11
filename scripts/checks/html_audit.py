@@ -27,7 +27,10 @@ for f in pages:
     for el in soup.find_all(True):
         for k, v in el.attrs.items():
             v = " ".join(v) if isinstance(v, list) else str(v)
-            if k.startswith("data-") and k not in ("data-filter", "data-cats", "data-consent", "data-ad", "data-shot", "data-step", "data-close") and not k.startswith(("data-mm", "data-rmap", "data-ucx")): flag("unexpected data- attribute", rel, k)
+            if k.startswith("data-") and k not in ("data-filter", "data-cats", "data-consent", "data-ad", "data-shot", "data-step", "data-close",
+                                                    # review V5: fit check, pricing calculator, screenshot switcher
+                                                    "data-slug", "data-group", "data-single", "data-id", "data-act", "data-part", "data-out", "data-i", "data-state",
+                                                    "data-main", "data-main-cap", "data-shot-open", "data-shot-show") and not k.startswith(("data-mm", "data-rmap", "data-ucx")): flag("unexpected data- attribute", rel, k)
             if FOOTPRINT.search(v) and k not in ("href", "src") : flag("footprint in attribute", rel, f"{k}={v[:60]}")
     if soup.find("meta", attrs={"name": "generator"}): flag("meta generator", rel)
     if legacy: continue
