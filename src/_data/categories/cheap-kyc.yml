@@ -2,64 +2,69 @@ slug: cheap-kyc
 url: /providers/cheap-kyc/
 seo:
   title: Best Cheap KYC Providers in 2026 | BeVerified
-  description: 'Sumsub, KYCAID, Trulioo, Zyphe and Ondato compared: the best cheap KYC providers in 2026, ranked on published pricing, volume discounts, and hidden fees.'
+  description: Zyphe, KYCAID, Shufti Pro, Socure, Sumsub, ComplyCube and iDenfy ranked on what a full KYC check costs at 100 and 1,000 checks a month, AML cost and quality.
   h1: Best Cheap KYC Providers in 2026
 breadcrumb_label: Best Cheap KYC Providers
-quick_answer: Sumsub ranks first because it publishes prices on two self-serve plans, from $1.35 per verification. Zyphe is next, with ID plus liveness at $0.30 per check on its rate card, and KYCAID publishes per-check prices with no monthly minimum. We compared 5 providers on published pricing, volume discounts and hidden fees.
-last_verified: '2026-07-24'
-updated: '2026-11-05'
-legacy_stats:
-- value: '4'
-  label: providers compared
-- value: $0.35
-  label: lowest per-check price
-- value: Jul 2026
-  label: last updated
+quick_answer: 'Zyphe is our top budget KYC pick: an ID and liveness check costs $0.40 with storage, and there is no monthly minimum. KYCAID is second, with no subscription or contract. Shufti Pro is third, with AML screening in the price and an iBeta Level 3 liveness result. We compared 7 providers on cost, AML cost, quality and entry terms.'
+last_verified: '2026-11-11'
+updated: '2026-11-11'
+score_source: category
+score_label: Budget score
+rubric: rubricBudget
+methodology_label: Budget KYC 1.0
+methodology_anchor: '#budget-kyc'
+budget_calc: true
 explainer_html:
-- '<section class="container-narrow section-border-top" id="methodology-deep-dive" style="padding:28px 0;">
+- '<h2>What a cheap KYC check really costs</h2>
 
-  <h2 style="font-size:19px;margin-bottom:10px;">What affordable means in KYC pricing</h2>
+  <p>A KYC check here means document verification, liveness and face match together. The per-check price on a pricing page is only the start. A monthly minimum raises the real price at low volume: Sumsub''s $149 minimum works out at $1.49 a check if you verify 100 users a month. AML rules also expect you to keep screening customers after onboarding, and ongoing monitoring is priced very differently from one vendor to the next. Some vendors bill a retry as a new check; others charge only for successful verifications.</p>
 
-  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">Budget-tier KYC pricing usually comes down to price per check, volume-discount tiers, and what vendors leave off the pricing page: minimum monthly commitments and overage fees. A genuinely affordable provider publishes all three, or comes close to it in a single sales-call email exchange.</p>
+  <p>The calculator above builds each bill from the vendor''s published list prices. Euro prices are converted at the European Central Bank reference rate on the day we checked them. Discounts you negotiate, VAT and failed attempts are not in the figures.</p>'
+- '<h2>Not in this ranking, and why</h2>
 
-  <h3 style="font-size:14.5px;margin-bottom:10px;">Core capabilities compliance teams typically require</h3>
+  <p>We rank a provider here only when it has a public price for a full check and, if it charges a monthly minimum, says the minimum covers checks.</p>
 
-  <ul style="margin:0 0 18px;padding-left:20px;font-size:14.5px;line-height:1.75;">
+  <ul>
 
-  <li style="list-style:disc;">Transparent price-per-check with visible volume-discount tiers</li>
+  <li><a href="/providers/veriff/">Veriff</a>: $0.80 a check on Essential, but the pricing page does not say the $49 minimum covers checks.</li>
 
-  <li style="list-style:disc;">A usable free tier for testing before committing budget</li>
+  <li><a href="/providers/persona/">Persona</a>: no per-check price; Essential starts at $250 a month on a 12-month term.</li>
 
-  <li style="list-style:disc;">No mandatory annual contracts for early-stage teams</li>
+  <li><a href="/providers/au10tix/">AU10TIX</a>: a $500 monthly minimum, with the per-check price not published.</li>
 
-  <li style="list-style:disc;">Core sanctions/PEP screening included, not sold as a paid add-on</li>
+  <li><a href="/providers/trulioo/">Trulioo</a>: prices are quoted by sales only.</li>
 
-  </ul>
+  <li>Ondato and Didit: not reviewed yet. We rank a provider only after a full review.</li>
 
-  <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from AML for banks</h3>
+  </ul>'
+- '<h2>What to ask before you sign</h2>
 
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;"><a href="/providers/aml/banks/">AML for Banks</a> providers are priced for Tier-1 institutions running real-time monitoring at massive transaction volume. This category serves the other end of the market: early-stage fintechs and small platforms that need core compliance without enterprise pricing.</p>
+  <ul>
 
-  <h3 style="font-size:14.5px;margin-bottom:8px;">Regulatory context</h3>
+  <li>Do you charge for a retry, a failed check or a user who drops off?</li>
 
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Even budget-tier tools must meet the same baseline sanctions/PEP screening obligations as enterprise ones. A lower price doesn''t mean lighter compliance coverage.</p>
+  <li>Is face match part of the check, and which liveness test has an independent lab letter?</li>
 
-  <a class="entity-card__cta" href="/methodology/">See how we evaluate every provider on this list in our full methodology →</a>
+  <li>What does ongoing monitoring cost once we have 10,000 customers on file?</li>
 
-  </section>'
+  <li>Does the monthly minimum roll over, and is it credited against every kind of check?</li>
+
+  <li>Which price applies above the published volume, and when does a contract start?</li>
+
+  </ul>'
 faq:
-- q: What counts as "cheap" KYC pricing?
-  a: Genuinely affordable KYC pricing publishes price-per-check and volume-discount tiers up front, without mandatory minimum monthly commitments or hidden overage fees.
-- q: Do cheap KYC providers cut corners on compliance?
-  a: They shouldn't. Budget-tier tools still have to meet the same baseline sanctions and PEP screening obligations as enterprise tools. A lower price doesn't mean lighter compliance coverage.
-- q: Is a free KYC tier actually free?
-  a: Most free tiers cap the number of monthly checks and are meant for testing an integration before committing budget, not for running production volume indefinitely.
-- q: What's the difference between cheap KYC and AML for Banks?
-  a: 'AML for Banks providers are priced for Tier-1 institutions running enterprise-scale monitoring. Cheap KYC serves the other end of the market: early-stage teams that need core compliance without enterprise pricing.'
-- q: Do volume discounts kick in automatically?
-  a: Most vendors apply volume discounts automatically once monthly check counts cross a published threshold, though some require a manual plan upgrade or a sales conversation.
-- q: Should I avoid long-term contracts on a budget KYC plan?
-  a: Generally yes for early-stage teams. Pay-as-you-go or month-to-month terms keep costs predictable and make it easier to switch vendors as volume or requirements change.
+- q: What is the cheapest KYC provider?
+  a: 'Zyphe publishes the lowest price for a full check among the providers we rank: $0.30 for an ID and liveness check, plus $0.10 a month in storage per user, with no monthly minimum. Socure ($0.80) and KYCAID (€0.75, about $0.84) come next. Prices checked Nov 11, 2026.'
+- q: Is there a free KYC option?
+  a: Shufti Pro has a free plan with up to 10 verifications a month. Zyphe gives a one-time $25 credit and KYCAID a €50 credit on signup, and Sumsub and ComplyCube offer a 14-day trial with 50 checks. Socure lists $1,000 in monthly credits but does not publish who gets them.
+- q: Which budget KYC providers include AML screening?
+  a: Shufti Pro includes sanctions and PEP screening in its Essentials price. Socure adds it for $0.10 a check, KYCAID for €0.10 and Zyphe for $0.20. Sumsub offers it only on the Compliance plan ($1.85 a check, $299 minimum), and iDenfy does not publish a screening price.
+- q: Do cheap KYC providers have an independent liveness test?
+  a: 'Two of the seven do: Sumsub and Shufti Pro hold iBeta ISO/IEC 30107-3 Level 3 letters. On Nov 11, 2026 we found no iBeta letter under the names of Zyphe, KYCAID, Socure, ComplyCube or iDenfy. A vendor may use a tested supplier''s SDK, which we count as vendor-stated.'
+- q: How does a monthly minimum change the price?
+  a: With a minimum that covers checks, you pay the larger of the minimum and your checks. Sumsub's $149 minimum works out at $1.49 a check at 100 checks a month, against $1.35 at 1,000. We leave out providers that do not say the minimum covers checks, such as Veriff.
+- q: How do you rank budget KYC providers?
+  a: 'By Budget score: cost per check at 100 and 1,000 checks a month (30%), AML screening cost (10%), quality for the money (35%), entry terms (15%) and price transparency (10%). Only providers with a public price for a full check enter. Payment never changes scores or ranking order.'
 adjacent:
 - aml/banks
 - e-kyc

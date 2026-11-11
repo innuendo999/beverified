@@ -1577,3 +1577,45 @@ html:not(.mm-js) .mm-item:hover .mm-panel, html:not(.mm-js) .mm-item:focus-withi
   .rv4-bar__btn { min-width: 0; padding-left: 18px; padding-right: 18px; }
   .has-rv4-bar .to-top { bottom: 80px; }
 }
+
+/* Budget KYC cost calculator (src/_includes/v3/budget-calc.njk; owner design 2026-11-11) */
+.bcalc { padding: 28px; display: flex; flex-direction: column; gap: 22px; margin-top: 24px; }
+.bcalc__head { display: flex; flex-direction: column; gap: 6px; }
+.bcalc__form { display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; }
+.bcalc__field { display: flex; flex-direction: column; gap: 8px; flex: 1 1 240px; border: 0; margin: 0; padding: 0; min-width: 0; }
+.bcalc__field > label, .bcalc__field > legend { font-size: 14px; font-weight: 500; color: var(--ink); padding: 0; }
+.bcalc__field > legend { margin-bottom: 8px; }
+.bcalc__field input[type="number"] { font: inherit; font-size: 20px; padding: 11px 14px; border: 1px solid var(--line-strong); border-radius: 12px; background: var(--surface-soft); color: var(--ink); width: 100%; box-sizing: border-box; font-variant-numeric: tabular-nums; }
+.bcalc__presets { display: flex; gap: 8px; flex-wrap: wrap; }
+.bcalc__presets button { font: inherit; font-size: 14px; min-height: 44px; padding: 6px 16px; border-radius: var(--radius-pill); border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink); cursor: pointer; font-variant-numeric: tabular-nums; }
+.bcalc__presets button[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: #fff; }
+.bcalc__check { display: flex; align-items: center; gap: 10px; font-size: 15px; padding: 10px 14px; border: 1px solid var(--line-strong); border-radius: 12px; background: var(--surface-soft); min-height: 48px; box-sizing: border-box; cursor: pointer; }
+.bcalc__check input { width: 20px; height: 20px; accent-color: var(--accent); margin: 0; }
+.bcalc__caption { font-size: 14px; font-weight: 500; color: var(--body); margin: 0; }
+.bcalc__list { list-style: none; margin: 0 -28px; padding: 0; }
+.bcalc__row { display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: flex-start; padding: 18px 28px; border-top: 1px solid var(--line-soft); }
+.bcalc__row:last-child { border-bottom: 1px solid var(--line-soft); }
+.bcalc__row.is-dim { opacity: .6; }
+.bcalc__main { display: flex; flex-direction: column; gap: 8px; flex: 1 1 320px; min-width: 0; }
+.bcalc__top { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.bcalc__name { font-size: 17px; font-weight: 600; color: var(--ink); text-decoration: none; }
+.bcalc__name:hover { text-decoration: underline; }
+.bcalc__score { font-size: 13px; color: var(--body); }
+.bcalc__trade { font-size: 14px; line-height: 1.45; color: var(--body); }
+.bcalc__badges { display: flex; gap: 6px; flex-wrap: wrap; }
+.bcalc__badge { padding: 1px 8px; }
+.bcalc__badge--warn { color: var(--bad); }
+.bcalc__notes { font-size: 13px; line-height: 1.45; color: var(--muted); }
+.bcalc__cost { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; flex: 0 0 200px; text-align: right; }
+.bcalc__monthly { font-size: 24px; font-weight: 600; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.bcalc__sub { font-size: 13px; color: var(--body); font-variant-numeric: tabular-nums; }
+.bcalc__fit { font-size: 13px; color: var(--body); }
+.bcalc__fit.is-fit { font-weight: 600; color: var(--ok); }
+.bcalc__fit.is-over { color: var(--muted); }
+.bcalc__note { font-size: 13px; line-height: 1.55; color: var(--muted); margin: 0; }
+@media (max-width: 640px) {
+  .bcalc { padding: 20px; }
+  .bcalc__list { margin: 0 -20px; }
+  .bcalc__row { padding: 16px 20px; }
+  .bcalc__cost { flex-basis: 100%; align-items: flex-start; text-align: left; }
+}
