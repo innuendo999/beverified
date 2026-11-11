@@ -402,8 +402,9 @@
 {%- endif %}
 </main>
 </div>
-{%- if p.link.url %}
-{#- Sticky "Visit site" bar (owner, 2026-11-11): shown after the hero score card scrolls away, hidden at the footer. Same link and rel as the score card. -#}
+{%- if p.link.url and p.link.sticky %}
+{#- Sticky "Visit site" bar (owner, 2026-11-11): only for providers the owner names (link.sticky: true in the record).
+    Shown after the hero score card scrolls away, hidden at the footer. Same link and rel as the score card. -#}
 <div class="rv4-bar" id="rv4-bar" hidden>
   <div class="container rv4-bar__in">
     <span class="rv4-bar__logo">{% if p.logo.wordmark %}<img src="{{ p.logo.wordmark }}" alt="" width="64" height="24">{% endif %}</span>
