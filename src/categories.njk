@@ -83,8 +83,8 @@ layout: v3.njk
             {%- if e.price %}<span>From <strong>{{ e.price | replace(r/^From\s+/i, "") }}</strong>{% if e.priceVerified %} <span class="c-muted fs-12">· Pricing verified: {{ e.priceVerified }}</span>{% endif %}</span>{% endif %}
             <span class="spacer"></span>
             {#- Outbound links in listings are opt-in per ranking entry (site_link: true); otherwise they appear only on review pages (owner, 2026-11-05 and 2026-11-10). -#}
-            {%- if e.r.site_link and e.q and e.q.link.url %}<a class="rank-card__site" href="{{ e.q.link.url }}" rel="{{ e.q.link | outRel }}" target="_blank">Visit website <span aria-hidden="true">↗</span></a>{% if (e.q.link.type == "paid" or e.q.link.type == "affiliate") and e.q.link.label != false %}<span class="paid-note">Sponsored link</span>{% endif %}{% endif %}
             {%- if e.q %}<a class="btn btn--secondary btn--sm" href="/providers/{{ e.q.slug }}/">Read full review</a>{% endif %}
+            {%- if e.r.site_link and e.q and e.q.link.url %}<a class="btn btn--primary btn--sm rank-card__site" href="{{ e.q.link.url }}" rel="{{ e.q.link | outRel }}" target="_blank">Visit website <span aria-hidden="true">↗</span></a>{% if (e.q.link.type == "paid" or e.q.link.type == "affiliate") and e.q.link.label != false %}<span class="paid-note">Sponsored link</span>{% endif %}{% endif %}
           </div>
         </article>
         </li>
