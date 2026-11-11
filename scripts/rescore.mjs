@@ -5,6 +5,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import yaml from "js-yaml";
+import { pathToFileURL } from "node:url";
 
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const dir = path.join(root, "src/_data/providers");
@@ -171,6 +172,7 @@ function workflow(d) {
   return [clamp(keys.filter((k) => has(cap(d, k))).length + 1), lab(keys.filter((k) => has(cap(d, k)))), "vendor"];
 }
 
+export { fraudDefense, coverage, breadth, integration };
 const FN = { fraud_defense: fraudDefense, pricing, coverage, breadth, integration, trust, screening, workflow };
 
 // Kept on their v3.0 score until per-category methodologies exist (owner, 2026-11-05).
@@ -193,6 +195,8 @@ export function score(d) {
   return { family: fam, rows, total, coverage: w, totalAlt };
 }
 
+// Run only as a script, so other scorers can import the rules (scripts/rescore-budget.mjs).
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
 const files = fs.readdirSync(dir).filter((f) => f.endsWith(".yml")).map((f) => f.replace(/\.yml$/, "")).filter((s) => !only.length || only.includes(s));
 const held = [];
 const out = [["slug", "family", "old_score", "new_score", "new_grade", "change", "alt_quote_not_scored", "weight_scored", ...RUBRICS.identity.map((r) => r[0]), "screening", "workflow", "missing"]];
@@ -228,4 +232,5 @@ if (!only.length) {
   const full = out.slice(1).filter((r) => r[7] === 100).length;
   if (held.length) console.log("held on v3.0: " + held.join("; "));
   console.log(`scored ${out.length - 1} providers; ${full} with all criteria; report: reports/rescore-v3.1.csv`);
+}
 }

@@ -158,3 +158,16 @@ Scored by `scripts/rescore-kya.mjs` under `docs/scoring-kya.md`; report `reports
 - `status`: `yes`, `beta` (both count), `partial`, `planned`, `no` (do not count). A key that is absent means not found. `availability.status` is `ga`, `beta`, `alpha` or `announced`; only `ga` and `beta` are eligible for the ranking.
 - Keys: `product_name`, `availability`, `detect_undeclared`, `verify_signed`, `trust_score`, `shared_reputation`, `bind_person`, `bind_business`, `step_up`, `scoped_permissions`, `limits_expiry`, `revocation`, `pre_action_check`, `chaining`, `credential_format`, `protocols` (note = comma-separated protocol names), `open_spec`, `audit_log`, `tamper_evident`, `behaviour_monitoring`, `log_export`, `price`, `docs_public`, `self_serve`.
 - Independent evidence for the human check is read from confirmed `certifications[]` (iBeta ISO/IEC 30107-3, IAL2, DIATF, eIDAS); the trust criterion reuses the v3.1 `score_breakdown` row.
+
+## `budget{}` (Budget KYC data, Budget KYC 1.0, added 2026-11-11)
+
+Inputs for `scripts/rescore-budget.mjs` (rules: `docs/scoring-budget-kyc.md`). No price is typed here: every amount is a `pricing.items` label, read from that item's value (`pick` = which amount when the value lists several).
+
+- `checked`: date the vendor's pricing page was last opened for these figures (eligibility: 90 days).
+- `currency`: `USD`, `EUR` or `GBP`; non-USD needs `fx{ rate, date, source }` (ECB reference rate on the check date, USD per unit).
+- `options[]`: plans that include a full KYC check (document + liveness + face match): `plan`, `check[]` (item labels, summed), optional `aml[]` (screening add-on labels), `aml_included: true` when the plan's price already covers sanctions and PEP screening, optional `minimum{ item, covers_checks }` (`covers_checks: true` only when the vendor says so; otherwise the provider is not ranked), optional `fee_on_top` (item label), optional `per_user_monthly[]` (per-user monthly fees such as storage, counted once per check).
+- `aml_status`: `not_priced` (sold, no public price) or `not_sold`.
+- `terms{ contract: none|monthly|annual|fixed_term|not_stated, self_serve: yes|no|not_stated, free_start: yes|no|programme|not_stated }`.
+- `transparency{ parts_priced, aml_priced, tiers_published, addons_listed }` (booleans).
+- `notes`: one line on how a fact was read.
+- Output: `category_scores.cheap-kyc{ score, grade, methodology: budget-kyc-1.0, cost_s, cost_m, breakdown[] }`, written by `rescore-budget.mjs --write` for eligible providers only.
