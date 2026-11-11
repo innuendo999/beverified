@@ -530,7 +530,7 @@ directory_categories:
 - Age Verification
 # Budget KYC 1.0 inputs (docs/scoring-budget-kyc.md). Prices are pricing.items labels, never typed here.
 budget:
-  checked: '2026-11-02'
+  checked: '2026-11-11'
   currency: EUR
   options:
   - plan: Usage-based
@@ -548,4 +548,9 @@ budget:
     aml_priced: true
     tiers_published: true
     addons_listed: true
-  notes: Prices exclude VAT. ECB rate still to be added.
+  notes: Prices exclude VAT. No contract on the usage-based plan; liveness includes 1:1 face match; retries are billed as separate checks.
+  fx:
+    rate: 1.1193
+    date: '2026-11-09'
+    source: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+    note: Latest ECB reference rate published when the price was checked on 11 Nov 2026

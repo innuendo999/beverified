@@ -477,7 +477,7 @@ directory_categories:
 - AML
 # Budget KYC 1.0 inputs (docs/scoring-budget-kyc.md). Prices are pricing.items labels, never typed here.
 budget:
-  checked: '2026-11-02'
+  checked: '2026-11-11'
   currency: USD
   options:
   - plan: Starter
@@ -506,11 +506,11 @@ budget:
       covers_checks: true
   terms:
     contract: not_stated
-    self_serve: not_stated
-    free_start: not_stated
+    self_serve: 'yes'
+    free_start: 'yes'
   transparency:
     parts_priced: true
     aml_priced: true
     tiers_published: false
     addons_listed: true
-  notes: Minimums are credited against checks (pricing page).
+  notes: Plan fees convert into usage credits. 14-day trial with 50 checks. Annual billing only through sales.

@@ -87,6 +87,11 @@ pricing:
     kind: official
     source: 2
     verified: '2026-11'
+  - label: Encrypted data storage
+    value: $0.10 per active user per month
+    kind: official
+    source: 2
+    verified: '2026-11'
   - label: Forms
     value: $0.05 per form
     kind: official
@@ -576,7 +581,7 @@ directory_categories:
 - Cheap KYC
 # Budget KYC 1.0 inputs (docs/scoring-budget-kyc.md). Prices are pricing.items labels, never typed here.
 budget:
-  checked: '2026-11-02'
+  checked: '2026-11-11'
   currency: USD
   options:
   - plan: Verify (pay per check)
@@ -593,4 +598,5 @@ budget:
     aml_priced: true
     tiers_published: false
     addons_listed: true
-  notes: Signup credit is issued after business or payment-method verification.
+  notes: Signup credit is issued after business or payment-method verification. Storage is billed at $0.10 per active user per month on top of checks (not in the cost scenarios; owner to decide). Face match
+    is not named on the pricing page.
