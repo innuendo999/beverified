@@ -109,6 +109,33 @@
         "weight": 10
       }
     ],
+    "rubricBudget": [
+      {
+        "key": "cost",
+        "name": "Cost at 100 and 1,000 checks a month",
+        "weight": 30
+      },
+      {
+        "key": "aml_cost",
+        "name": "AML screening cost",
+        "weight": 10
+      },
+      {
+        "key": "quality",
+        "name": "Quality for the money",
+        "weight": 35
+      },
+      {
+        "key": "terms",
+        "name": "Commitment and entry terms",
+        "weight": 15
+      },
+      {
+        "key": "transparency",
+        "name": "Price transparency",
+        "weight": 10
+      }
+    ],
     "rubricKya": [
       {
         "key": "detection",
