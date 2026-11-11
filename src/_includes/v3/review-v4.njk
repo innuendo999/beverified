@@ -4,6 +4,10 @@
 {%- set ev = site.v3.evidence -%}
 {%- set reading = collections.articles | articlesAbout("providers", p.slug, 3) %}
 {%- set sp = v4.sponsor %}
+{%- set alts = v4.alts %}
+{%- macro mark(kind) -%}
+<svg class="rv4-mark rv4-mark--{{ kind }}" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">{% if kind == "yes" %}<path d="M5 12.5l4.5 4.5L19 7.5"/>{% elif kind == "no" %}<path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/>{% elif kind == "plus" %}<path d="M12 5v14M5 12h14"/>{% else %}<path d="M5 12h14"/>{% endif %}</svg>
+{%- endmacro %}
 
 <div class="rv4">
 <section class="rv4-hero" aria-labelledby="h1">
@@ -27,6 +31,7 @@
         <div class="rv4-byline">
           {%- if author %}<img class="avatar" src="{{ author.photo }}" alt=""><span>By {% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}</span>{% endif %}
           {%- if p.last_verified %}<span class="dot" aria-hidden="true">·</span><span>Last verified <time datetime="{{ p.last_verified }}">{{ p.last_verified | displayDate }}</time></span>{% endif %}
+          {%- if v4.pricingRechecked %}<span class="dot" aria-hidden="true">·</span><span>Pricing re-checked {{ v4.pricingRechecked | displayDate }}</span>{% endif %}
         </div>
         {%- if p.verdict %}<p class="rv4-verdict">{{ p.verdict }}</p>{% endif %}
         {%- if v4.hero.length %}
@@ -75,11 +80,11 @@
 
 <nav class="rv4-tabs" aria-label="On this page">
   <div class="container">
-    {%- if v4.fit.yes.length or p.pros.length %}<a href="#fit">Overview</a>{% endif %}
+    {%- if v4.fit.yes.length or p.pros.length %}<a href="#fit">Who it's for</a>{% endif %}
     <a href="#pricing">Pricing</a>
     <a href="#product">Product</a>
-    <a href="#diligence">Due diligence</a>
-    {%- if p.score_breakdown and p.score_breakdown.length %}<a href="#score">Score</a>{% endif %}
+    {%- if v4.profile.diligence != false %}<a href="#diligence">Before you sign</a>{% endif %}
+    {%- if v4.profile.score_section != false and p.score_breakdown and p.score_breakdown.length %}<a href="#score">Score</a>{% endif %}
     {%- if alts.length %}<a href="#alternatives">Alternatives</a>{% endif %}
     {%- if p.faq and p.faq.length %}<a href="#faq">FAQ</a>{% endif %}
   </div>
@@ -93,19 +98,20 @@
     <h2 class="rv4-h2">Who {{ p.name }} is for</h2>
     <div class="rv4-2col">
       {%- if v4.fit.yes.length %}
-      <div class="rv4-list"><h3>A good fit if you</h3>{% for t in v4.fit.yes %}<p>{{ t }}</p>{% endfor %}</div>
+      <div class="rv4-list"><h3>A good fit if you</h3><ul>{% for t in v4.fit.yes %}<li>{{ mark("yes") }}<span>{{ t }}</span></li>{% endfor %}</ul></div>
       {%- endif %}
       {%- if v4.fit.no.length %}
-      <div class="rv4-list"><h3>Look elsewhere if you</h3>{% for x in v4.fit.no %}<p>{{ x.text }}.{% if x.alt %} Compare <a href="{{ x.alt.url }}">{{ x.alt.name }}</a>.{% endif %}</p>{% endfor %}</div>
+      <div class="rv4-list"><h3>Look elsewhere if you</h3><ul>{% for x in v4.fit.no %}<li>{{ mark("no") }}<span>{{ x.text }}.{% if x.alt %} Compare <a href="{{ x.alt.url }}">{{ x.alt.name }}</a>.{% endif %}</span></li>{% endfor %}</ul></div>
       {%- endif %}
     </div>
     {%- endif %}
+    {%- if v4.fitCheck %}{% include "v3/fit-check.njk" %}{% endif %}
     {%- if p.pros.length or p.cons.length %}
     {%- if v4.fit.yes.length or v4.fit.no.length %}<hr class="rv4-rule">{% endif %}
     <h2 class="rv4-h2">Pros and cons</h2>
     <div class="rv4-2col">
-      <div class="rv4-list"><h3>Pros</h3>{% for t in p.pros %}<p>{{ t }}</p>{% endfor %}</div>
-      <div class="rv4-list"><h3>Cons</h3>{% for t in p.cons %}<p>{{ t }}</p>{% endfor %}</div>
+      <div class="rv4-list"><h3>Pros</h3><ul>{% for t in p.pros %}<li>{{ mark("plus") }}<span>{{ t }}</span></li>{% endfor %}</ul></div>
+      <div class="rv4-list"><h3>Cons</h3><ul>{% for t in p.cons %}<li>{{ mark("minus") }}<span>{{ t }}</span></li>{% endfor %}</ul></div>
     </div>
     {%- endif %}
   </div>
@@ -113,55 +119,72 @@
 {%- endif %}
 
 <section id="pricing" class="rv4-band" aria-labelledby="pricing-h">
-  <div class="container rv4-split">
-    <div class="rv4-split__head">
-      <h2 id="pricing-h" class="rv4-h2">{{ p.name }} pricing</h2>
-      {%- if p.pricing.summary %}<p class="rv4-p">{{ p.pricing.summary }}</p>{% endif %}
-      {%- if p.pricing.verified %}<p class="rv4-small">Pricing verified {{ p.pricing.verified | displayDate }}</p>{% endif %}
+  <div class="container">
+    <h2 id="pricing-h" class="rv4-h2">{{ p.name }} pricing</h2>
+    {%- if v4.calc %}
+    <p class="rv4-p rv4-measure">Set your monthly volume and budget to see which tier fits. Each tier says where its price comes from.</p>
+    {% include "v3/pricing-calc.njk" %}
+    {%- elif p.pricing.plans and p.pricing.plans.length %}
+    {%- if p.pricing.summary %}<p class="rv4-p rv4-measure">{{ p.pricing.summary }}</p>{% endif %}
+    <div class="rv4-tiers">
+      {%- for pl in p.pricing.plans %}
+      <div class="rv4-card rv4-tier">
+        <p class="rv4-tier__name">{{ pl.tier }}</p>
+        <p class="rv4-tier__price num">{{ pl.price }}</p>
+        {%- if pl.note %}<p class="rv4-tier__note">{{ pl.note }}</p>{% endif %}
+        {%- if pl.extra %}<p class="rv4-sub">{{ pl.extra }}</p>{% endif %}
+      </div>
+      {%- endfor %}
     </div>
-    <div class="rv4-split__body">
-      {%- if v4.pricingOfficial.length %}
-      <div class="rv4-card">
-        <div class="rv4-card__label">From {{ p.name }}</div>
-        <dl class="rv4-dl">{% for i in v4.pricingOfficial %}<div><dt>{{ i.label }}</dt><dd>{{ i.value }}</dd></div>{% endfor %}</dl>
-      </div>
-      {%- elif p.pricing.plans and p.pricing.plans.length %}
-      <div class="rv4-card">
-        <div class="rv4-card__label">From {{ p.name }}</div>
-        <dl class="rv4-dl">{% for pl in p.pricing.plans %}<div><dt>{{ pl.tier }}</dt><dd>{{ pl.price }}</dd>{% if pl.note %}<dd class="rv4-sub">{{ pl.note }}</dd>{% endif %}</div>{% endfor %}</dl>
-      </div>
-      {%- endif %}
-      {%- if v4.pricingEstimates.length %}
-      <div class="rv4-card rv4-card--dashed">
-        <div class="rv4-card__label">Third-party listings, not official</div>
-        {%- for e in v4.pricingEstimates %}
-        <div class="rv4-est"><b class="num">{{ e.value }}</b><span>{{ e.label }}{% if e.verified %}, checked {{ e.verified | displayDate }}{% endif %}</span></div>
-        {%- endfor %}
-      </div>
-      {%- endif %}
+    {%- if v4.pricingEstimates.length %}
+    <div class="rv4-card rv4-card--dashed rv4-tiers__est">
+      <div class="rv4-card__label">Third-party listings, not official</div>
+      {%- for e in v4.pricingEstimates %}
+      <div class="rv4-est"><b class="num">{{ e.value }}</b><span>{{ e.label }}{% if e.verified %}, checked {{ e.verified | displayDate }}{% endif %}</span></div>
+      {%- endfor %}
     </div>
+    {%- endif %}
+    {%- else %}
+    {%- if p.pricing.summary %}<p class="rv4-p rv4-measure">{{ p.pricing.summary }}</p>{% endif %}
+    {%- if v4.pricingOfficial.length %}
+    <div class="rv4-card rv4-tiers__est">
+      <div class="rv4-card__label">From {{ p.name }}</div>
+      <dl class="rv4-dl">{% for i in v4.pricingOfficial %}<div><dt>{{ i.label }}</dt><dd>{{ i.value }}</dd></div>{% endfor %}</dl>
+    </div>
+    {%- endif %}
+    {%- if v4.pricingEstimates.length %}
+    <div class="rv4-card rv4-card--dashed rv4-tiers__est">
+      <div class="rv4-card__label">Third-party listings, not official</div>
+      {%- for e in v4.pricingEstimates %}
+      <div class="rv4-est"><b class="num">{{ e.value }}</b><span>{{ e.label }}{% if e.verified %}, checked {{ e.verified | displayDate }}{% endif %}</span></div>
+      {%- endfor %}
+    </div>
+    {%- endif %}
+    {%- endif %}
+    {%- if p.pricing.verified %}<p class="rv4-small rv4-tiers__date">Pricing verified {{ p.pricing.verified | displayDate }}</p>{% endif %}
   </div>
 </section>
 
 <section id="product" class="rv4-band rv4-band--white" aria-labelledby="product-h">
   <div class="container">
     <h2 id="product-h" class="rv4-h2">What {{ p.name }} does</h2>
-    {%- if p.what_is and p.what_is.length %}<p class="rv4-p rv4-measure">{{ p.what_is[0] }}</p>{% endif %}
+    {%- if p.what_is and p.what_is.length %}<p class="rv4-p rv4-measure">{% if v4.jobs.length %}{{ p.what_is[0] | firstSentence }}{% else %}{{ p.what_is[0] }}{% endif %}</p>{% endif %}
+    <div class="rv4-prod{% if not (p.screenshots and p.screenshots.length) %} rv4-prod--text{% endif %}">
     {%- if p.screenshots and p.screenshots.length %}
     {%- set s0 = p.screenshots[0] %}
     <figure class="rv4-shot rv4-shot--main">
-      <button type="button" class="rv4-shot__btn" data-shot="0" aria-label="Open screenshot: {{ s0.caption }}"><img src="{{ s0.file }}" alt="{{ s0.alt }}" width="{{ s0.width }}" height="{{ s0.height }}" decoding="async"></button>
-      <figcaption>{{ s0.long or s0.caption }}</figcaption>
+      <button type="button" class="rv4-shot__btn" data-shot-open aria-label="Open full size: {{ s0.caption }}"><img src="{{ s0.file }}" alt="{{ s0.alt }}" width="{{ s0.width }}" height="{{ s0.height }}" decoding="async" data-main></button>
+      <figcaption><span data-main-cap>{{ s0.long or s0.caption }}</span> <span class="rv4-sub">Click to open full size.</span></figcaption>
+      {%- if p.screenshots.length > 1 %}
+      <div class="rv4-thumbs">
+        {%- for s in p.screenshots %}
+        <button type="button" class="rv4-thumb" data-shot="{{ loop.index0 }}" aria-pressed="{% if loop.first %}true{% else %}false{% endif %}" aria-label="Show {{ s.caption }}"><img src="{{ s.file }}" alt="" width="{{ s.width }}" height="{{ s.height }}" loading="lazy" decoding="async"><span>{{ s.caption }}</span></button>
+        {%- endfor %}
+      </div>
+      {%- endif %}
+      {%- set sm = p.screenshots_meta %}
+      {%- if sm %}<p class="rv4-small">{% if sm.origin == "vendor" %}Screenshots provided by {{ p.name }}{% else %}Captured by BeVerified{% endif %}, {{ sm.provided | displayDate }}.{% if sm.product_version %} Version {{ sm.product_version }}{% if sm.sample_data %} with sample data{% endif %}.{% endif %}</p>{% endif %}
     </figure>
-    {%- if p.screenshots.length > 1 %}
-    <div class="rv4-thumbs">
-      {%- for s in p.screenshots %}{% if not loop.first %}
-      <figure class="rv4-shot"><button type="button" class="rv4-shot__btn rv4-shot__btn--thumb" data-shot="{{ loop.index0 }}" aria-label="Open screenshot: {{ s.caption }}"><img src="{{ s.file }}" alt="{{ s.alt }}" width="{{ s.width }}" height="{{ s.height }}" loading="lazy" decoding="async"></button><figcaption>{{ s.caption }}</figcaption></figure>
-      {%- endif %}{% endfor %}
-    </div>
-    {%- endif %}
-    {%- set sm = p.screenshots_meta %}
-    {%- if sm %}<p class="rv4-small">{% if sm.origin == "vendor" %}Screenshots provided by {{ p.name }}{% else %}Captured by BeVerified{% endif %}, {{ sm.provided | displayDate }}.{% if sm.product_version %} Version {{ sm.product_version }}{% if sm.sample_data %} with sample data{% endif %}.{% endif %}</p>{% endif %}
     <dialog class="rv4-lightbox" id="rv4-lightbox" aria-label="Screenshot viewer">
       <figure>
         <img alt="">
@@ -175,12 +198,24 @@
     </dialog>
     <script type="application/json" id="rv4-shots">[{% for s in p.screenshots %}{"src":{{ s.file | dump | safe }},"alt":{{ s.alt | dump | safe }},"caption":{{ (s.long or s.caption) | dump | safe }}}{% if not loop.last %},{% endif %}{% endfor %}]</script>
     {%- endif %}
-    {%- if p.features and p.features.length %}
+    {%- if v4.jobs.length %}
+    <div class="rv4-jobs">
+      {%- for j in v4.jobs %}
+      <div class="rv4-job{% if j.minor %} rv4-job--minor{% endif %}">
+        <h3>{{ j.title }}</h3>
+        <p>{{ j.text }}{% if j.minor and v4.fitCheck %} Deployment and networks are in the fit check above.{% endif %}</p>
+        {%- if j.shots.length %}<p class="rv4-job__see">{% for x in j.shots %}<button type="button" data-shot-show="{{ x.i }}">{{ x.label }}</button>{% endfor %}</p>{% endif %}
+      </div>
+      {%- endfor %}
+    </div>
+    {%- elif p.features and p.features.length %}
     <ul class="rv4-features">{% for f in p.features %}<li>{{ f }}</li>{% endfor %}</ul>
     {%- endif %}
+    </div>
   </div>
 </section>
 
+{%- if v4.profile.diligence != false %}
 <section id="diligence" class="rv4-band" aria-labelledby="dd-h">
   <div class="container">
     <h2 id="dd-h" class="rv4-h2">Before you sign</h2>
@@ -242,7 +277,9 @@
   </div>
 </section>
 
-{%- if p.score_breakdown and p.score_breakdown.length %}
+{%- endif %}
+
+{%- if v4.profile.score_section != false and p.score_breakdown and p.score_breakdown.length %}
 <section id="score" class="rv4-band rv4-band--white" aria-labelledby="score-h">
   <div class="container rv4-split">
     <div class="rv4-split__head">
@@ -339,7 +376,7 @@
 {%- if p.sources and p.sources.length %}
 <section id="sources" class="rv4-band rv4-band--white rv4-band--tight" aria-labelledby="src-h">
   <div class="container rv4-split">
-    <div class="rv4-split__head"><h2 id="src-h" class="rv4-h2 rv4-h2--sm">Sources</h2></div>
+    <div class="rv4-split__head"><h2 id="src-h" class="rv4-h2 rv4-h2--sm">Sources{% if p.changes and p.changes.length %} and history{% endif %}</h2></div>
     <div class="rv4-split__body">
       <p class="rv4-p">{% if p.last_verified %}Checked {{ p.last_verified | displayDate }} against{% else %}Built from{% endif %} {{ v4.sources.total }} sources{% if v4.sources.summary %}: {{ v4.sources.summary }}{% endif %}.{% if v4.sources.opened %} All opened in {{ v4.sources.opened }}.{% endif %}</p>
       <details class="rv4-sources">
@@ -349,6 +386,10 @@
         <ul>{% for s in g.items %}<li id="src-{{ s.n }}">{% if s.publisher %}{{ s.publisher }} · {% endif %}<a href="{{ s.url }}" rel="noopener">{{ s.title }}</a>{% if s.accessed and not v4.sources.opened %} <span class="rv4-sub">{{ s.accessed | displayDate }}</span>{% endif %}</li>{% endfor %}</ul>
         {%- endfor %}
       </details>
+      {%- if p.changes and p.changes.length %}
+      <h3 class="rv4-h4">What changed</h3>
+      <ul class="rv4-changes">{% for c in p.changes %}<li><time datetime="{{ c.date }}">{{ c.date | displayDate }}</time> · {{ c.text }}</li>{% endfor %}</ul>
+      {%- endif %}
       {%- if author %}
       <div class="rv4-author">
         <img class="avatar" src="{{ author.photo }}" alt="{{ author.name }}">
@@ -365,21 +406,34 @@
 {%- if p.screenshots and p.screenshots.length %}
 <script>
 (function () {
-  var box = document.getElementById("rv4-lightbox"), data = document.getElementById("rv4-shots");
-  if (!box || !data || typeof box.showModal !== "function") return;
-  var shots = JSON.parse(data.textContent), i = 0, img = box.querySelector("img"), cap = box.querySelector("figcaption");
-  function show(n) { i = (n + shots.length) % shots.length; img.src = shots[i].src; img.alt = shots[i].alt; cap.textContent = shots[i].caption + " · " + (i + 1) + " of " + shots.length; }
-  document.querySelectorAll("[data-shot]").forEach(function (b) {
-    b.addEventListener("click", function () { show(Number(b.getAttribute("data-shot"))); box.showModal(); });
+  var data = document.getElementById("rv4-shots"), box = document.getElementById("rv4-lightbox");
+  if (!data) return;
+  var shots = JSON.parse(data.textContent), cur = 0, n = shots.length;
+  var main = document.querySelector("[data-main]"), cap = document.querySelector("[data-main-cap]"), open = document.querySelector("[data-shot-open]");
+  var thumbs = document.querySelectorAll(".rv4-thumb");
+  function pick(i) {
+    cur = (i + n) % n;
+    if (main) { main.src = shots[cur].src; main.alt = shots[cur].alt; }
+    if (cap) cap.textContent = shots[cur].caption;
+    if (open) open.setAttribute("aria-label", "Open full size: " + shots[cur].caption);
+    thumbs.forEach(function (t) { t.setAttribute("aria-pressed", Number(t.getAttribute("data-shot")) === cur ? "true" : "false"); });
+  }
+  thumbs.forEach(function (t) { t.addEventListener("click", function () { pick(Number(t.getAttribute("data-shot"))); }); });
+  document.querySelectorAll("[data-shot-show]").forEach(function (b) {
+    b.addEventListener("click", function () { pick(Number(b.getAttribute("data-shot-show"))); if (main) main.closest("figure").scrollIntoView({ block: "nearest", behavior: "smooth" }); });
   });
+  if (!box || typeof box.showModal !== "function") return;
+  var img = box.querySelector("img"), bcap = box.querySelector("figcaption");
+  function show(i) { pick(i); img.src = shots[cur].src; img.alt = shots[cur].alt; bcap.textContent = shots[cur].caption + " · " + (cur + 1) + " of " + n; }
+  if (open) open.addEventListener("click", function () { show(cur); box.showModal(); });
   box.addEventListener("click", function (e) {
     var t = e.target;
     if (t === box || t.hasAttribute("data-close")) box.close();
-    else if (t.hasAttribute("data-step")) show(i + Number(t.getAttribute("data-step")));
+    else if (t.hasAttribute("data-step")) show(cur + Number(t.getAttribute("data-step")));
   });
   box.addEventListener("keydown", function (e) {
-    if (e.key === "ArrowRight") show(i + 1);
-    if (e.key === "ArrowLeft") show(i - 1);
+    if (e.key === "ArrowRight") show(cur + 1);
+    if (e.key === "ArrowLeft") show(cur - 1);
   });
 })();
 </script>

@@ -158,3 +158,41 @@ export function sourceGroups(p, providers) {
 export function reviewYear(p) {
   return String(p.last_verified || p.updated || "").slice(0, 4);
 }
+
+// V5 pricing calculator (owner, 2026-11-11). Every figure is read from pricing.items by label:
+// price_item gives the currency and the monthly price, cap_item the monthly transfer cap.
+// Tiers with no price_item are shown as quoted. Returns null when the record has no pricing_calc.
+export function pricingCalc(p) {
+  const c = p.pricing_calc;
+  if (!c?.plans?.length) return null;
+  const items = p.pricing?.items || [];
+  const val = (label) => items.find((i) => i.label === label)?.value || "";
+  const num = (s) => Number(String(s).replace(/,/g, ""));
+  let currency = "";
+  const plans = c.plans.map((pl) => {
+    const pv = pl.price_item ? val(pl.price_item) : "";
+    const m = pv.match(/\b([A-Z]{3})\s?([\d,]+)\s*\/\s*month/);
+    if (m && !currency) currency = m[1];
+    const cap = pl.cap_item ? (val(pl.cap_item).match(/up to ([\d,]+)/i) || [])[1] : null;
+    return {
+      tier: pl.tier,
+      monthly: m ? num(m[2]) : null,
+      priceLabel: m ? `${m[1]} ${m[2]} / month` : "Quoted",
+      cap: cap ? num(cap) : null,
+      // an include is an item label, or { item, label } to print "label: value" when the value needs it
+      includes: (pl.includes || []).map((x) => typeof x === "string" ? val(x) : (val(x.item) ? `${x.label}: ${val(x.item)}` : "")).filter(Boolean),
+      source: pl.source || "",
+    };
+  });
+  if (!plans.some((x) => x.monthly)) return null;
+  return { currency, volumeLabel: c.volume_label || "Transfers a month", plans };
+}
+
+// V5 "What X does", grouped by the buyer's job. shots point at screenshots[] by index.
+export function productJobs(p) {
+  const shots = p.screenshots || [];
+  return (p.product_jobs || []).map((j) => ({
+    title: j.title, text: j.text, minor: !!j.minor,
+    shots: (j.shots || []).filter((i) => shots[i]).map((i) => ({ i, label: `See ${/^[A-Z][a-z]/.test(shots[i].caption) ? shots[i].caption.charAt(0).toLowerCase() + shots[i].caption.slice(1) : shots[i].caption}` })),
+  }));
+}
