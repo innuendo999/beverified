@@ -1558,3 +1558,21 @@ html:not(.mm-js) .mm-item:hover .mm-panel, html:not(.mm-js) .mm-item:focus-withi
   .rv4-prod .rv4-shot__btn { height: 260px; }
   .rv4-prod .rv4-thumbs { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
+
+/* Sticky "Visit site" bar on V4/V5 reviews (owner, 2026-11-11). The back-to-top button moves above it. */
+.rv4-bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 45; background: rgba(255,255,255,0.96); border-top: 1px solid var(--line); box-shadow: 0 -8px 24px -16px rgba(20,20,26,0.25); backdrop-filter: blur(8px); }
+.rv4-bar[hidden] { display: none; }
+.rv4-bar__in { display: flex; align-items: center; gap: 16px; min-height: 68px; }
+.rv4-bar__logo img { display: block; height: 24px; width: auto; max-width: 96px; object-fit: contain; }
+.rv4-bar__logo:empty { display: none; }
+.rv4-bar__text { flex: 1 1 auto; min-width: 0; font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rv4-bar__text .num { color: var(--muted); }
+.rv4-bar__btn { flex: none; min-width: 160px; }
+.has-rv4-bar .to-top { bottom: 92px; }
+@media (max-width: 640px) {
+  .rv4-bar__in { gap: 12px; min-height: 64px; }
+  .rv4-bar__logo { display: none; }
+  .rv4-bar__text .num { display: none; }
+  .rv4-bar__btn { min-width: 0; padding-left: 18px; padding-right: 18px; }
+  .has-rv4-bar .to-top { bottom: 80px; }
+}

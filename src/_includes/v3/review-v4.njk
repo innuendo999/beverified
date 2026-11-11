@@ -402,6 +402,27 @@
 {%- endif %}
 </main>
 </div>
+{%- if p.link.url %}
+{#- Sticky "Visit site" bar (owner, 2026-11-11): shown after the hero score card scrolls away, hidden at the footer. Same link and rel as the score card. -#}
+<div class="rv4-bar" id="rv4-bar" hidden>
+  <div class="container rv4-bar__in">
+    <span class="rv4-bar__logo">{% if p.logo.wordmark %}<img src="{{ p.logo.wordmark }}" alt="" width="64" height="24">{% endif %}</span>
+    <span class="rv4-bar__text"><b>{{ p.name }}</b>{% if p.score != null %}<span class="num"> {{ p.score | score1 }} / 5{% if v4.rank %} · #{{ v4.rank.pos }} in {{ v4.rank.label }}{% endif %}</span>{% endif %}</span>
+    {%- if (p.link.type == "paid" or p.link.type == "affiliate") and p.link.label != false %}<span class="paid-note">Sponsored link</span>{% endif %}
+    <a class="btn btn--primary rv4-bar__btn" href="{{ p.link.url }}" rel="{{ p.link | outRel }}" target="_blank">Visit site <span aria-hidden="true">↗</span></a>
+  </div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var bar = document.getElementById("rv4-bar"), card = document.querySelector(".rv4-score"), foot = document.querySelector(".site-footer");
+  if (!bar || !card || !("IntersectionObserver" in window)) return;
+  var past = false, atFoot = false;
+  function set() { var on = past && !atFoot; bar.hidden = !on; document.documentElement.classList.toggle("has-rv4-bar", on); }
+  new IntersectionObserver(function (e) { past = !e[0].isIntersecting && e[0].boundingClientRect.top < 0; set(); }).observe(card);
+  if (foot) new IntersectionObserver(function (e) { atFoot = e[0].isIntersecting; set(); }).observe(foot);
+});
+</script>
+{%- endif %}
 
 {%- if p.screenshots and p.screenshots.length %}
 <script>
