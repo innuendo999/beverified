@@ -581,6 +581,12 @@ directory_categories:
 - Cheap KYC
 # Budget KYC 1.0 inputs (docs/scoring-budget-kyc.md). Prices are pricing.items labels, never typed here.
 budget:
+  monitoring:
+    item: "Ongoing AML monitoring"
+    basis: "subject_year"
+  face_match: "not_named"
+  billing_note: "Retry billing not stated"
+  free_note: "$25 one-time credit"
   checked: '2026-11-11'
   currency: USD
   options:

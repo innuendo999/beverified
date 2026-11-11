@@ -522,6 +522,9 @@ kya:
     source: 18
 # Budget KYC 1.0 inputs (docs/scoring-budget-kyc.md). Prices are pricing.items labels, never typed here.
 budget:
+  face_match: "not_named"
+  billing_note: "Retry billing not stated"
+  free_note: "$1,000 monthly credits, terms not published"
   checked: '2026-11-11'
   currency: USD
   options:

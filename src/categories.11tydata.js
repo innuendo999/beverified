@@ -3,6 +3,7 @@
 // scores, logos and links always come from the provider records.
 import { buildMatrix } from "./_lib/capabilities.js";
 import { termForCapability } from "./_lib/glossary.js";
+import { calcProvider } from "./_lib/budget.js";
 
 export default {
   pagination: { data: "categories", size: 1, alias: "c", resolve: "values", addAllPagesToCollections: true },
@@ -37,8 +38,15 @@ export default {
         score = q.category_scores?.[d.c.slug]?.score ?? null;
         if (score == null) throw new Error(`${d.c.slug}: ${q.slug} has no category_scores.${d.c.slug}`);
       }
-      return { rank: i + 1, r, q, price, priceVerified, score };
+      // Budget KYC: cost per check at 100 and 1,000 a month, from the generated category score block.
+      const cs = d.c.budget_calc && q ? q.category_scores?.[d.c.slug] : null;
+      const costS = cs?.cost_s ?? null, costM = cs?.cost_m ?? null;
+      return { rank: i + 1, r, q, price, priceVerified, score, costS, costM };
     }),
+    // Cost calculator input (category file budget_calc: true), built from each record's budget{} and pricing.items.
+    budgetCalc: (d) => (d.c.budget_calc ? (d.rankings[d.c.slug]?.providers || [])
+      .map((r, i) => (r.slug && d.providers[r.slug] ? calcProvider({ slug: r.slug, ...d.providers[r.slug] }, i + 1, r) : null))
+      .filter(Boolean) : null),
     // Capability matrix: columns from the category file, cells from each ranked provider's capabilities{}
     // and, for certificate columns, from its certifications[].
     matrix: (d) => buildMatrix(

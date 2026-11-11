@@ -133,6 +133,7 @@ export default function (eleventyConfig) {
     link?.rel ? link.rel : ["affiliate", "paid"].includes(link?.type) ? "sponsored noopener" : "nofollow noopener");
 
   eleventyConfig.addFilter("pad2", (n) => String(n).padStart(2, "0"));
+  eleventyConfig.addFilter("usd2", (n) => (n == null ? "" : "$" + Number(n).toFixed(2)));
 
   eleventyConfig.addFilter("score1", (n) => (n == null ? "" : Number(n).toFixed(1)));
   // First sentence of a paragraph (review V5 product lede): up to the first ". " before a capital letter.

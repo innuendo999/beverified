@@ -423,90 +423,117 @@ canada:
 cheap-kyc:
   title: Best Cheap KYC Providers in 2026
   providers:
-  - slug: sumsub
-    name: Sumsub
-    award: Editor's Choice
-    tagline: Published per-verification pricing from $1.35, with a 14-day free trial.
-    coverage: Global
-    size: null
-    pros:
-    - Published per-verification prices on two self-serve plans
-    - 14-day free trial with 50 free checks
-    - Basic plan includes liveness, face match, reusable KYC, and email and phone checks
-    cons:
-    - $149 monthly minimum on the cheapest plan
-    - AML screening needs the $1.85 Compliance plan, with a $299 monthly minimum
-    - Fraud prevention, KYB and transaction monitoring are only in the custom plan
-    legacy_price_shown: From $1.35/verification
-    legacy_rating_shown: 4.6
-    segments: []
   - slug: zyphe
     name: Zyphe
-    award: Lowest Published Per-Check Price
-    tagline: Self-serve KYC at $0.30 per ID and liveness check, with a $25 signup credit and no monthly fee.
+    award: Editor's Choice
+    tradeoff: Cheapest full check; no independent liveness test found
+    tagline: ID and liveness at $0.30 a check, plus $0.10 a month in storage per user, with no monthly fee.
     coverage: Global, 190+ countries
     size: SMB
     pros:
-    - $0.30 per ID and liveness check, published
-    - $25 one-time signup credit with no expiry and no monthly fee
-    - Add-ons priced per check, such as AML screening at $0.20
+    - $0.30 per ID and liveness check on a public rate card
+    - No monthly minimum, and a $25 one-time signup credit
+    - AML screening at $0.20 and other add-ons priced per check
     cons:
-    - Credit is issued only after business or payment-method verification
-    - No SOC 2 or ISO/IEC 27001 certificate yet
-    - Short track record and few public reviews
-    legacy_price_shown: From $0.30/verification
-    legacy_rating_shown: null
+    - No iBeta liveness letter found
+    - Signup credit only after business or payment-method verification
+    - No volume tiers published
     segments: []
   - slug: kycaid
     name: KYCAID
     award: null
-    tagline: Published prices from €0.50 per document check, or bundles from €0.75 with €50 credit on registration.
+    tradeoff: No subscription or contract; ongoing monitoring is a flat €100 a month
+    tagline: 'Per-check prices in euros with no subscription: €0.50 for a document check, €0.25 for liveness and face match.'
     coverage: Global
     size: null
     pros:
-    - Published per-verification prices with €50 starting credit
-    - AML screening included from the €0.85 Standard bundle
-    - Non-document government database checks from €0.05 per check
+    - No subscription, monthly minimum or contract on the usage plan
+    - Liveness includes 1:1 face match; PEP and sanctions screening costs €0.10
+    - €50 credit on registration, no card needed
     cons:
-    - Single-module prices carry a fixed €100 monthly service fee
-    - Smaller watchlist database than enterprise vendors
-    - Custom volume pricing starts only at 10,000 verifications a month
-    legacy_price_shown: From €0.50/check + €100/mo
-    legacy_rating_shown: 4.6
+    - Ongoing monitoring is a flat €100 a month add-on
+    - Retries are billed as separate checks
+    - No iBeta liveness letter found
     segments: []
-  - slug: trulioo
-    name: Trulioo
-    award: Best for Non-Documentary Checks
-    tagline: Per-transaction pricing model listed on G2, with rates quoted on request.
+  - slug: shufti-pro
+    name: Shufti Pro
+    award: null
+    tradeoff: AML in the price and iBeta Level 3; $1.50 is a starting price
+    tagline: Essentials from $1.50 a verification, with AML screening in the plan and a free plan of 10 checks a month.
     coverage: Global
     size: null
     pros:
-    - Per-transaction pricing model with a free trial, per its G2 listing (data last updated January 2021)
-    - Database checks for non-documentary identity proofing
-    - Combines individual and business checks in one platform
+    - iBeta ISO/IEC 30107-3 Level 3 liveness letter
+    - AML screening included in Essentials
+    - Free plan with up to 10 verifications a month
     cons:
-    - No published rates, so costs cannot be compared up front
-    - Needs meaningful technical resources to integrate
-    - Leans toward a data API rather than a no-code platform
-    legacy_price_shown: Custom pricing
-    legacy_rating_shown: 4.4
+    - $1.50 is a starting price, and the page does not say what changes it
+    - The price does not itemise liveness or face match
+    - Essentials covers up to 20,000 verifications; above that is quoted
     segments: []
-  - slug: null
-    name: Ondato
-    award: Self-Serve EU Option
-    tagline: Self-serve KYC from Ondato, the London-headquartered KYC and AML vendor.
-    coverage: Strongest in EU
+  - slug: socure
+    name: Socure
+    award: null
+    tradeoff: Screening for $0.10 more; no independent liveness test found
+    tagline: Self-serve DocV at $0.80 per evaluation, or $0.90 with watchlist screening.
+    coverage: Global
     size: null
     pros:
-    - Fast self-serve setup
-    - Built by an established KYC and AML vendor
-    - Ondato also makes the free AMLRanger screening assistant
+    - $0.80 for an ID scan and selfie with liveness
+    - Watchlist screening for $0.10 more
+    - Self-serve signup with no monthly minimum listed
     cons:
-    - Registry depth lighter outside EU
-    - Smaller support team than larger vendors
-    - Not yet reviewed by BeVerified; confirm current pricing with the vendor
-    legacy_price_shown: See vendor site
-    legacy_rating_shown: 4.4
+    - No iBeta liveness letter found
+    - $1,000 monthly credits listed without terms
+    - Face match not named on the pricing page
+    segments: []
+  - slug: sumsub
+    name: Sumsub
+    award: null
+    tradeoff: iBeta Level 3; the $149 minimum sets the price at low volume
+    tagline: Basic at $1.35 a verification with a $149 monthly minimum; AML screening on Compliance at $1.85.
+    coverage: Global
+    size: null
+    pros:
+    - iBeta ISO/IEC 30107-3 Level 3 liveness letter
+    - Billed for successful verifications only
+    - 14-day trial with 50 checks
+    cons:
+    - The $149 minimum works out at $1.49 a check at 100 a month
+    - 'AML screening needs Compliance: $1.85 a check, $299 minimum'
+    - No volume tiers published
+    segments: []
+  - slug: complycube
+    name: ComplyCube
+    award: null
+    tradeoff: Cheaper per check on Core, which has a $299 minimum
+    tagline: Starter at $99 a month, credited against checks; Core at $299 with lower per-check prices.
+    coverage: Global
+    size: null
+    pros:
+    - Plan fees convert into usage credits
+    - Failed or incomplete checks are not charged
+    - 14-day trial with 50 checks
+    cons:
+    - No iBeta liveness letter found
+    - The lower Core prices need the $299 monthly plan
+    - Continuous AML monitoring only on Core
+    segments: []
+  - slug: idenfy
+    name: iDenfy
+    award: null
+    tradeoff: AML screening price not published
+    tagline: Basic at $1.35 a verification with a $135 monthly minimum; Premium at $1.30 with $325.
+    coverage: Global
+    size: null
+    pros:
+    - Document, liveness and face match in one price
+    - The monthly minimum covers verifications
+    - 14-day trial with 10 checks
+    cons:
+    - AML screening price not published
+    - No iBeta liveness letter found
+    - Approved-only billing costs $0.50 more a check
     segments: []
 crypto:
   title: Top Crypto KYC Providers in 2026
