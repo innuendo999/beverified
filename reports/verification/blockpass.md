@@ -89,3 +89,12 @@ Added at position **6**, after TRP. Blockpass ties TRP at 3.7, and ties keep the
 ## Score flag
 
 Re-check when Blockpass publishes an Envoy price, an Envoy API reference or a TRISA directory listing, or confirms the CryptoSwift route; each would move Coverage, Pricing or Integration.
+
+## Re-check 2026-11-12 (after merge of PR #117)
+
+Re-opened: pricing (3), Envoy guide (2), Travel Rule Hub page, Companies House overview (14), Trustpilot (25), trisa.dev homepage. No change in prices, plans, Envoy protocols, directories, account access, filing dates or the Trustpilot rating (4.3, 119). The pricing page itself does not say the monthly minimum counts as credit toward checks; only the Jan 2026 blog post (24) says so, and the record attributes it to Blockpass. The Travel Rule Hub page claims access to "3000+ firms' data" in its VASP2VASP network; not used (unclear what is counted). trisa.dev links Envoy demos to Rotational (rtnl.link); who hosts blockpass.tr-envoy.com is still not confirmed. No TRISA directory listing for Blockpass found.
+
+Fixed:
+- `pricing.index_exclude` held an internal note ("owner to decide") that the KYC Pricing Index article renders in its list of excluded records. Replaced with a `pricing.index` block, so Blockpass's official KYC and AML prices and the Basic and Corporate minimums appear in the index table, built from the same `pricing.items`.
+- FAQ and capability note said "no iBeta letter found", but the iBeta list was not searched; now "Blockpass does not claim an iBeta or other lab test".
+- Ospree alternative text and FAQ said TRISA confirms Ospree's TRISA and TRP routes; Ospree's record has TRISA's announcement for TRISA only. Reworded.
