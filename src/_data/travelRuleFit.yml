@@ -36,6 +36,7 @@ also:
 # "Other networks: not_found" covers every network except these
 other_networks_skip:
   trp: [trp, trpnet, email]   # whether travel-rule.com speaks the OpenVASP TRP protocol is not in the record
+  blockpass: [trisa, trp, email, cryptoswift]   # CryptoSwift partnership announced Jun 2025, current status not stated
 
 # Reading of each Deployment fact (owner re-check of Notabene and Ospree, 2026-11-11).
 # yes, partly, not_found; a provider left out shows "Not checked".
@@ -44,6 +45,7 @@ deploy:
   notabene: { self: not_found, hosted: yes, short: Hosted, fact: Self-hosted option }
   cryptoswift: { self: partly, hosted: yes, short: Hosted }
   ospree: { self: not_found, hosted: yes, short: Hosted, fact: Self-hosted option }
+  blockpass: { self: not_found, hosted: yes, short: Hosted, fact: Self-hosted option }
 
 # Published prices, where capabilities.published_pricing is missing
 price:
