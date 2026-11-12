@@ -621,6 +621,11 @@ kya:
     source: 28
 # Budget KYC 1.0 inputs (docs/scoring-budget-kyc.md). Prices are pricing.items labels, never typed here.
 budget:
+  monitoring:
+    plan: "Compliance"
+    included: true
+  billing_note: "Billed for successful checks only"
+  free_note: "14-day trial, 50 checks"
   checked: '2026-11-11'
   currency: USD
   options:

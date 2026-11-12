@@ -541,6 +541,8 @@ directory_categories:
 - Age Verification
 # Budget KYC 1.0 inputs (docs/scoring-budget-kyc.md). Prices are pricing.items labels, never typed here.
 budget:
+  billing_note: "Approved-only billing costs $0.50 more a check"
+  free_note: "14-day trial, 10 checks"
   checked: '2026-11-11'
   currency: USD
   options:

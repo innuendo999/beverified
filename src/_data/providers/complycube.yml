@@ -477,6 +477,12 @@ directory_categories:
 - AML
 # Budget KYC 1.0 inputs (docs/scoring-budget-kyc.md). Prices are pricing.items labels, never typed here.
 budget:
+  monitoring:
+    item: "Continuous AML monitoring"
+    basis: "subject_month"
+    plan: "Core"
+  billing_note: "Failed checks not charged"
+  free_note: "14-day trial, 50 checks"
   checked: '2026-11-11'
   currency: USD
   options:

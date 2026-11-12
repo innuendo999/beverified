@@ -587,6 +587,11 @@ kya:
     source: 26
 # Budget KYC 1.0 inputs (docs/scoring-budget-kyc.md). Prices are pricing.items labels, never typed here.
 budget:
+  starting_from: true
+  face_match: "not_named"
+  billing_note: "Billed for successful checks only"
+  free_note: "Free plan: 10 checks a month"
+  quote_above: 20000
   checked: '2026-11-11'
   currency: USD
   options:

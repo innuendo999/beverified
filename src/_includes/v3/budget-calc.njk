@@ -1,0 +1,118 @@
+{#- Budget KYC cost calculator (category file budget_calc: true). Input: budgetCalc from categories.11tydata.js,
+    built from each provider's budget{} and pricing.items. Design: canvas "BeVerified: Budget KYC page with cost calculator". -#}
+<section class="card bcalc" id="calculator" aria-labelledby="calc-h">
+  <div class="bcalc__head">
+    <h2 id="calc-h" class="h-section m-0">What would you pay?</h2>
+    <p class="section-lede m-0">Enter your volume and budget. We build each provider's monthly bill from its published list prices, with minimums counted, and sort cheapest first.</p>
+  </div>
+  <form class="bcalc__form" onsubmit="return false">
+    <div class="bcalc__field">
+      <label for="bcalc-vol">New users to verify a month</label>
+      <input id="bcalc-vol" type="number" min="1" step="50" value="500" inputmode="numeric">
+      <div class="bcalc__presets" role="group" aria-label="Common volumes">
+        {%- for v in [[100, "100"], [500, "500"], [1000, "1,000"], [5000, "5,000"], [10000, "10,000"]] %}<button type="button" value="{{ v[0] }}" aria-pressed="{{ 'true' if v[0] == 500 else 'false' }}">{{ v[1] }}</button>{% endfor %}
+      </div>
+    </div>
+    <div class="bcalc__field">
+      <label for="bcalc-bud">Monthly budget in US dollars (optional)</label>
+      <input id="bcalc-bud" type="number" min="0" step="10" placeholder="For example 500" inputmode="numeric">
+    </div>
+    <fieldset class="bcalc__field">
+      <legend>AML</legend>
+      <label class="bcalc__check"><input id="bcalc-aml" type="checkbox"> Sanctions and PEP screening at onboarding</label>
+      <label class="bcalc__check"><input id="bcalc-mon" type="checkbox"> Ongoing monitoring of those users</label>
+    </fieldset>
+  </form>
+  <p class="bcalc__caption" id="bcalc-caption" aria-live="polite"></p>
+  <ol class="bcalc__list" id="bcalc-list"></ol>
+  <noscript><p class="fs-14 c-body">The calculator needs JavaScript. The table above shows what a full check costs at 100 and 1,000 checks a month.</p></noscript>
+  <p class="bcalc__note">List prices from each vendor's pricing page, checked {{ c.last_verified | displayDate }}. Euro prices are converted at the European Central Bank reference rate on the day we checked them; VAT is excluded where the vendor says so. Monitoring is costed for this month's new users only. Signup credits, free plans and negotiated discounts are not subtracted. This list sorts by cost; the ranking above sorts by Budget score.</p>
+  <script type="application/json" id="bcalc-data">{{ budgetCalc | dump | safe }}</script>
+</section>
+<script>
+(function () {
+  var data = JSON.parse(document.getElementById("bcalc-data").textContent);
+  var vol = document.getElementById("bcalc-vol"), bud = document.getElementById("bcalc-bud");
+  var aml = document.getElementById("bcalc-aml"), mon = document.getElementById("bcalc-mon");
+  var list = document.getElementById("bcalc-list"), cap = document.getElementById("bcalc-caption");
+  var presets = document.querySelectorAll(".bcalc__presets button");
+  function money(x) { return x > 0 && x < 10 ? "$" + x.toFixed(2) : "$" + Math.round(x).toLocaleString("en-US"); }
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function monthly(m, n) {
+    if (!m || m.kind === "included") return 0;
+    if (m.kind === "subject_year") return n * m.value / 12;
+    if (m.kind === "subject_month") return n * m.value;
+    return m.value; // flat_month
+  }
+  function render() {
+    var n = Math.max(1, Math.round(Number(vol.value) || 0));
+    var budget = Number(bud.value) > 0 ? Number(bud.value) : null;
+    var wantAml = aml.checked, wantMon = mon.checked;
+    presets.forEach(function (b) { b.setAttribute("aria-pressed", String(Number(b.value) === n)); });
+    var priced = [], unpriced = [];
+    data.forEach(function (p) {
+      var best = null;
+      p.opts.forEach(function (o) {
+        if (wantAml && !o.amlIncl && o.amlAdd == null) return;
+        if (wantMon && !o.monitoring) return;
+        var per = o.per + (wantAml && !o.amlIncl ? o.amlAdd : 0);
+        var monCost = wantMon ? monthly(o.monitoring, n) : 0;
+        var cost = Math.max(n * per, o.min) + monCost;
+        if (!best || cost < best.cost) best = { o: o, cost: cost, monCost: monCost };
+      });
+      if (best) priced.push({ p: p, best: best }); else unpriced.push(p);
+    });
+    priced.sort(function (a, b) { return a.best.cost - b.best.cost; });
+    list.textContent = "";
+    var fits = 0;
+    priced.forEach(function (x, i) {
+      var over = budget != null && x.best.cost > budget;
+      if (budget != null && !over) fits++;
+      var notes = [];
+      if (x.best.o.min && n * x.best.o.per < x.best.o.min) notes.push(x.best.o.plan + " minimum of " + money(x.best.o.min) + " applies");
+      if (wantMon && x.best.o.monitoring && x.best.o.monitoring.kind === "included") notes.push("Monitoring included in " + x.best.o.plan);
+      else if (wantMon && x.best.monCost) notes.push("Monitoring " + money(x.best.monCost) + " a month");
+      if (x.p.quoteAbove && n > x.p.quoteAbove) notes.push("Usually quoted above " + x.p.quoteAbove.toLocaleString("en-US") + " a month");
+      list.appendChild(row(x.p, notes.concat(x.p.notes), {
+        monthly: money(x.best.cost) + " a month",
+        sub: x.best.o.plan + " · $" + (x.best.cost / n).toFixed(2) + " per user",
+        fit: budget == null ? (i === 0 ? "Cheapest for these settings" : "") : over ? "Over budget by " + money(x.best.cost - budget) : "Fits your budget",
+        fitCls: budget == null ? "" : over ? "is-over" : "is-fit", dim: over
+      }));
+    });
+    unpriced.forEach(function (p) {
+      var why = [];
+      if (wantAml && p.opts.every(function (o) { return !o.amlIncl && o.amlAdd == null; })) why.push("Screening price not published");
+      if (wantMon && p.opts.every(function (o) { return !o.monitoring; })) why.push("Monitoring price not published");
+      list.appendChild(row(p, why, { monthly: "Not published", sub: "Ask the vendor for a quote", fit: "", fitCls: "", dim: true }));
+    });
+    var extras = [wantAml ? "onboarding screening" : "", wantMon ? "ongoing monitoring" : ""].filter(Boolean).join(" and ");
+    cap.textContent = n.toLocaleString("en-US") + " new users a month" + (extras ? ", with " + extras : "") + ". " +
+      priced.length + " of " + data.length + " publish a price for this" + (budget == null ? "." : "; " + fits + " fit " + money(budget) + ".");
+  }
+  function row(p, notes, v) {
+    var li = el("li", "bcalc__row" + (v.dim ? " is-dim" : ""));
+    var main = el("div", "bcalc__main");
+    var top = el("div", "bcalc__top");
+    if (p.wordmark) { var img = el("img", "wordmark wordmark--sm"); img.src = p.wordmark; img.alt = ""; top.appendChild(img); }
+    var a = el("a", "bcalc__name", p.name); a.href = p.url; top.appendChild(a);
+    top.appendChild(el("span", "bcalc__score", "Budget score " + Number(p.score).toFixed(1) + " · #" + p.rank + " in the ranking"));
+    main.appendChild(top);
+    if (p.tradeoff) main.appendChild(el("span", "bcalc__trade", p.tradeoff));
+    var badges = el("div", "bcalc__badges");
+    p.badges.forEach(function (b) { badges.appendChild(el("span", "pill fs-12 bcalc__badge bcalc__badge--" + b.tone, (b.tone === "proof" ? "◆ " : "") + b.label)); });
+    main.appendChild(badges);
+    if (notes.length) main.appendChild(el("span", "bcalc__notes", notes.join(" · ")));
+    var cost = el("div", "bcalc__cost");
+    cost.appendChild(el("span", "bcalc__monthly", v.monthly));
+    cost.appendChild(el("span", "bcalc__sub", v.sub));
+    if (v.fit) cost.appendChild(el("span", "bcalc__fit " + v.fitCls, v.fit));
+    li.appendChild(main); li.appendChild(cost);
+    return li;
+  }
+  presets.forEach(function (b) { b.addEventListener("click", function () { vol.value = b.value; render(); }); });
+  [vol, bud].forEach(function (i) { i.addEventListener("input", render); });
+  [aml, mon].forEach(function (i) { i.addEventListener("change", render); });
+  render();
+})();
+</script>

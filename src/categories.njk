@@ -31,22 +31,33 @@ layout: v3.njk
 
   <div class="card table-scroll">
     <table class="rank-table">
-      <caption>{{ c.breadcrumb_label }}: providers ranked by BeVerified, with starting price and what each is best for.</caption>
+      <caption>{% if c.budget_calc %}{{ c.breadcrumb_label }}: providers ranked by Budget score, with what a full check costs in US dollars and the trade-off. List prices checked {{ c.last_verified | displayDate }}.{% else %}{{ c.breadcrumb_label }}: providers ranked by BeVerified, with starting price and what each is best for.{% endif %}</caption>
+      {%- if c.budget_calc %}
+      <thead><tr><th scope="col">Rank</th><th scope="col">Provider</th><th scope="col">{{ c.score_label }}</th><th scope="col">At 100 a month</th><th scope="col" class="hide-sm">At 1,000</th><th scope="col" class="hide-sm">The trade-off</th><th scope="col"><span class="visually-hidden">Review</span></th></tr></thead>
+      {%- else %}
       <thead><tr><th scope="col">Rank</th><th scope="col">Provider</th><th scope="col">{{ c.score_label or "Score" }}</th><th scope="col" class="hide-sm">Starting price</th><th scope="col" class="hide-sm">Best for</th><th scope="col"><span class="visually-hidden">Review</span></th></tr></thead>
+      {%- endif %}
       <tbody>
       {%- for e in entries %}
         <tr>
           <td class="num">{{ e.rank }}</td>
           <th class="fw-500 ta-left" scope="row"><span class="rank-table__prov">{% if e.q and e.q.logo.wordmark %}<img class="wordmark wordmark--sm h-18 maxw-80" src="{{ e.q.logo.wordmark }}" alt="">{% endif %}{{ e.r.name }}</span></th>
           <td class="num">{% if e.q and e.score != null %}<strong>{{ e.score | score1 }}</strong> <span class="c-muted">/ 5</span>{% else %}<span class="c-muted fs-14">Not reviewed</span>{% endif %}</td>
+          {%- if c.budget_calc %}
+          <td class="num">{{ e.costS | usd2 }}</td>
+          <td class="num hide-sm">{{ e.costM | usd2 }}</td>
+          <td class="hide-sm c-body fs-14">{% if e.rank == 1 and e.r.award %}<span class="pill pill--dark fs-12 p-1-8">◆ {{ e.r.award }}</span> {% endif %}{{ e.r.tradeoff }}</td>
+          {%- else %}
           <td class="hide-sm">{{ e.price or "Not listed" }}{% if e.priceVerified %}<br><span class="c-muted fs-12">Verified {{ e.priceVerified }}</span>{% endif %}</td>
           <td class="hide-sm c-body">{% if e.rank == 1 %}<span class="pill pill--dark fs-12 p-1-8">◆ {{ e.r.award or "Top pick" }}</span>{% else %}{{ e.r.award }}{% endif %}</td>
+          {%- endif %}
           <td>{% if e.q %}<a href="/providers/{{ e.q.slug }}/">Read review →</a>{% else %}<span class="c-muted fs-14">Review coming</span>{% endif %}</td>
         </tr>
       {%- endfor %}
       </tbody>
     </table>
   </div>
+  {%- if budgetCalc and budgetCalc.length %}{% include "v3/budget-calc.njk" %}{% endif %}
   {%- endif %}
 
   <main id="main" class="cat-main">
@@ -80,7 +91,8 @@ layout: v3.njk
             {%- else %}<span class="pill">Review coming</span>{% endif %}
           </div>
           <div class="rank-card__foot">
-            {%- if e.price %}<span>From <strong>{{ e.price | replace(r/^From\s+/i, "") }}</strong>{% if e.priceVerified %} <span class="c-muted fs-12">· Pricing verified: {{ e.priceVerified }}</span>{% endif %}</span>{% endif %}
+            {%- if c.budget_calc and e.costS != null %}<span><strong>{{ e.costS | usd2 }}</strong> a check at 100 a month · <strong>{{ e.costM | usd2 }}</strong> at 1,000 <span class="c-muted fs-12">· List prices checked {{ c.last_verified | displayDate }}</span></span>
+            {%- elif e.price %}<span>From <strong>{{ e.price | replace(r/^From\s+/i, "") }}</strong>{% if e.priceVerified %} <span class="c-muted fs-12">· Pricing verified: {{ e.priceVerified }}</span>{% endif %}</span>{% endif %}
             <span class="spacer"></span>
             {#- Outbound links in listings are opt-in per ranking entry (site_link: true); otherwise they appear only on review pages (owner, 2026-11-05 and 2026-11-10). -#}
             {%- if e.q %}<a class="btn btn--secondary btn--sm" href="/providers/{{ e.q.slug }}/">Read full review</a>{% endif %}
