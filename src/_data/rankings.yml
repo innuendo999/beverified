@@ -1576,6 +1576,23 @@ travel-rule:
     legacy_price_shown: €2,000 deposit + per message
     legacy_rating_shown: null
     segments: []
+  - slug: blockpass
+    name: Blockpass
+    award: null   # owner to choose; proposed "Best for KYC and Travel Rule in One"
+    tagline: KYC, KYB and AML platform with published per-check prices, plus Envoy, a hosted Travel Rule service on TRISA and TRP with an email fallback.
+    coverage: Global (vendor-stated); company in London
+    size: Startups to mid-market
+    pros:
+    - ISO/IEC 27001:2022 certificate confirmed on the certification body's site, valid to March 2029
+    - KYC, KYB, wallet screening and Travel Rule from one vendor, with per-check prices published
+    - Envoy sends over TRISA and TRP, with an email fallback for VASPs on neither
+    cons:
+    - Envoy is a Corporate plan add-on ($999 a month, 12-month term) with no published add-on price
+    - No TRUST, GTR, CODE or Sygna route found; TRISA and TRP links are vendor-stated
+    - Self-hosted wallets checked by signature only, on five EVM networks
+    legacy_price_shown: Corporate plan $999 / month + Envoy add-on
+    legacy_rating_shown: null
+    segments: []
   - slug: ospree
     name: Ospree
     award: Best for Built-In Wallet Screening

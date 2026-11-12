@@ -1,0 +1,504 @@
+slug: blockpass
+name: Blockpass
+alternate_names:
+- Blockpass UK Ltd
+- Blockpass Envoy
+status: published
+seo:
+  title: 'Blockpass Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Blockpass review: KYC, KYB and AML platform from London with published per-check prices and Envoy, a hosted Travel Rule service on TRISA and TRP with an email fallback. Pricing, pros, cons, alternatives.'
+  h1: 'Blockpass Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/blockpass.png
+  background: '#FFFFFF'
+  wordmark: /assets/img/wordmarks/blockpass.png
+tagline: KYC, KYB and AML platform with published per-check prices, plus Envoy, a hosted Travel Rule service on TRISA and TRP with an email fallback
+score: 3.7
+grade: Good
+primary_category: travel-rule
+categories:
+- travel-rule
+link:
+  url: https://www.blockpass.org/crypto-travel-hub/travel-rule-solution/
+  type: none
+last_verified: '2026-11-12'
+updated: '2026-11-12'   # last content edit; last_verified = last fact re-check
+verdict: "Blockpass suits small crypto firms that want customer KYC, wallet checks and Travel Rule messaging from one vendor with prices on the website. Its Travel Rule service, Envoy, uses TRISA as its main protocol, also sends over TRP, and falls back to email when a counterparty has neither. The catch: Envoy is an add-on for the Corporate plan ($999 a month on a 12-month term) with no published add-on price, we found no TRUST, GTR, CODE or Sygna route, and the TRISA and TRP links are stated only by Blockpass."
+what_is:
+- Blockpass is a compliance platform for crypto and other regulated businesses. Its core product is customer verification (KYC) with ID document checks, face match with 3D liveness, proof of address, and sanctions, PEP and adverse media screening, plus business verification (KYB), wallet screening (Crypto AML), a signed-message check for self-hosted wallets (Unhosted Wallet KYC) and On-Chain KYC attestations. Users who pass KYC get a reusable Blockpass identity profile they can share with other businesses on the network. Blockpass says it has verified 1.3 million identities and serves 1,000+ businesses; we could not check either figure.
+- 'The Travel Rule service is called Blockpass Envoy. According to Blockpass''s own guide, TRISA is Envoy''s native protocol, TRP is used when the counterparty publishes a travel address, and a "Sunrise" option sends a secure compliance email to VASPs that support neither. Counterparties are picked from the TRISA Global Directory Service, the Daybreak directory, or added by hand. Envoy is the name of TRISA''s open-source Travel Rule node, which TRISA says supports the TRISA and TRP protocols; Blockpass runs it as a hosted account that its team sets up for each customer. In June 2025 Blockpass also announced a partnership to offer CryptoSwift''s Travel Rule tools to its clients; its current pages do not mention CryptoSwift.'
+- The contracting company is Blockpass UK Ltd, registered at Companies House on 13 March 2018 (number 11251249) with an office address in London. Blockpass says it has been building since 2017; its press releases are issued by Blockpass IDN Ltd, a Hong Kong company that was the UK company's majority owner in 2018 and 2019. Adam Vaziri is CEO, and the register lists one active person with significant control, Hiroyuki Enomoto. Named clients in Blockpass's own releases include Chainproof, a Bermuda-licensed insurer that uses it for KYB, and launchpads such as ChainGPT and Ordify.
+features:
+- Envoy Travel Rule messaging over TRISA (native) and TRP, with an email fallback for counterparties on neither, per Blockpass. Counterparties come from the TRISA directory, the Daybreak directory or manual entry.
+- Envoy dashboard with customer accounts for originators and beneficiaries, optional IVMS101 records linked to wallet addresses, a transfer inbox for sending and receiving, and Accepted, Rejected or Pending status on each transfer.
+- Unhosted Wallet KYC, where the user connects a self-hosted wallet and signs a message to prove ownership, on Ethereum, Polygon, BSC, Avalanche and Arbitrum.
+- Crypto AML wallet screening for links to illicit activity on Ethereum, Bitcoin, Polygon, BSC and Cardano, through the API or the dashboard.
+- Customer KYC with 200+ ID document types, forensic and MRZ checks, face match with 3D liveness, proof of address, sanctions, PEP and adverse media screening, ongoing AML monitoring and periodic re-verification.
+- KYB with company document and ownership submission, corporate AML checks and reusable business profiles, plus managed services such as manual review, a dedicated operator and enhanced due diligence on the Corporate plan.
+pricing:
+  summary: Blockpass publishes four plans with per-check prices. Basic costs $99 a month, Starter $249 and Growth $499, each on a one-month minimum term, and Corporate costs $999 a month on a 12-month term. Every plan has a 7-day free trial with no credit card, and Blockpass says the monthly fee counts as credit toward checks. Envoy Travel Rule is listed as an add-on for Corporate, and its price is not published.
+  plans:
+  - tier: Basic
+    price: $99 / month
+    note: 1 service, 3 seats, email support; full KYC check $1.35, unhosted wallet KYC $1.25, crypto AML $2.50
+    extra: 1-month minimum term; 7-day free trial
+  - tier: Starter
+    price: $249 / month
+    note: 2 services, 5 seats, priority support, KYB from $125
+    extra: 1-month minimum term; 7-day free trial
+  - tier: Growth
+    price: $499 / month
+    note: 3 services, 7 seats, priority support, KYB from $100
+    extra: 1-month minimum term; 7-day free trial
+  - tier: Corporate
+    price: $999 / month
+    note: 5 services, 10 seats; the plan for managed service and crypto add-ons, including Envoy Travel Rule
+    extra: 12-month minimum term; Envoy add-on price not published
+  legacy_verified_note: null
+  verified: '2026-11'
+  items:
+  - label: Basic
+    value: $99 monthly minimum, 1-month term
+    kind: official
+    source: 3
+    verified: '2026-11'
+  - label: Starter
+    value: $249 monthly minimum, 1-month term
+    kind: official
+    source: 3
+    verified: '2026-11'
+  - label: Growth
+    value: $499 monthly minimum, 1-month term
+    kind: official
+    source: 3
+    verified: '2026-11'
+  - label: Corporate
+    value: $999 monthly minimum, 12-month term
+    kind: official
+    source: 3
+    verified: '2026-11'
+  - label: KYC check (ID document + face match)
+    value: $1.35 Basic, $1.23 Starter, $1.12 Growth, $1.00 Corporate
+    kind: official
+    source: 3
+    verified: '2026-11'
+  - label: AML screening
+    value: $0.99 Basic, $0.85 Starter, $0.75 Growth, $0.50 Corporate
+    kind: official
+    source: 3
+    verified: '2026-11'
+  - label: Unhosted wallet KYC
+    value: $1.25 Basic, $1.00 Starter, $0.75 Growth, $0.50 Corporate
+    kind: official
+    source: 3
+    verified: '2026-11'
+  - label: Crypto AML
+    value: $2.50 Basic, $2.00 Starter, $1.50 Growth, $1.00 Corporate
+    kind: official
+    source: 3
+    verified: '2026-11'
+  - label: KYB check
+    value: $125 Starter, $100 Growth, $75 Corporate; not listed on Basic
+    kind: official
+    source: 3
+    verified: '2026-11'
+  - label: Envoy Travel Rule
+    value: Add-on for the Corporate plan; price not published
+    kind: official
+    source: 4
+    verified: '2026-11'
+  - label: Free trial
+    value: 7 days on every plan, no credit card
+    kind: official
+    source: 3
+    verified: '2026-11'
+  index_exclude: Travel Rule review; the KYC per-check prices are not yet in the Pricing Index table (owner to decide)
+facts:
+- label: From
+  value: $99 / month (KYC); Travel Rule needs Corporate, $999 / month for 12 months
+  source: 3
+  evidence: vendor
+- label: Plans
+  value: Basic, Starter, Growth, Corporate
+  source: 3
+  evidence: vendor
+- label: Legal entity
+  value: Blockpass UK Ltd, private limited company, Companies House number 11251249, active
+  source: 14
+  evidence: independent
+- label: Headquarters
+  value: '27 Old Gloucester Street, London WC1N 3AX (registered office)'
+  source: 14
+  evidence: independent
+- label: Founded
+  value: 2017, per Blockpass (UK company incorporated 13 March 2018)
+  source: 5
+  evidence: vendor
+- label: Leadership
+  value: Adam Vaziri, CEO per Blockpass; registered directors Adam Vaziri Zanjani and Thomas Leiritz
+  source: 15
+  evidence: independent
+- label: Owner
+  value: Privately held; Hiroyuki Enomoto is the active person with significant control (significant influence or control)
+  source: 16
+  evidence: independent
+- label: Funding
+  value: Not publicly disclosed
+- label: Deployment
+  value: Hosted service; Envoy accounts are set up by the Blockpass team; data hosted in the Netherlands
+  source: 2
+  evidence: vendor
+- label: Self-hosted option
+  value: None found; the Envoy guide describes hosted accounts set up by Blockpass
+  source: 2
+  evidence: vendor
+- label: Network
+  value: TRISA (native) and TRP, with an email fallback, per Blockpass; no TRUST, GTR, CODE, Sygna or VerifyVASP route found
+  source: 2
+  evidence: vendor
+- label: VASP directory
+  value: TRISA Global Directory Service and Daybreak, plus manual entry
+  source: 2
+  evidence: vendor
+- label: Self-hosted wallet checks
+  value: Signed message from the wallet on Ethereum, Polygon, BSC, Avalanche and Arbitrum; no Satoshi test, AOPP or screenshot proof found
+  source: 8
+  evidence: vendor
+- label: API and docs
+  value: Public KYC API reference and widget docs; no public Envoy API reference from Blockpass
+  source: 19
+  evidence: vendor
+- label: Certifications
+  value: ISO/IEC 27001:2022, confirmed on the certification body's register (valid to 8 March 2029); Cyber Essentials and Cyber Essentials Plus vendor-stated; no SOC 2 claim found
+  source: 13
+  evidence: independent
+pros:
+- ISO/IEC 27001:2022 certificate confirmed on the certification body's site, valid to March 2029, with KYC and AML tools in scope
+- KYC, KYB, wallet screening and Travel Rule from one vendor, with per-check prices published for every plan
+- Envoy sends over TRISA and TRP and falls back to email when a counterparty has neither
+cons:
+- Envoy is an add-on for the Corporate plan, which costs $999 a month on a 12-month term, and the add-on price is not published
+- No TRUST, GTR, CODE or Sygna route found, and the TRISA and TRP links are stated only by Blockpass
+- Self-hosted wallets are checked by signature only, on five EVM networks, with no Satoshi test or Bitcoin signing found
+alternatives:
+- slug: cryptoswift
+  name: CryptoSwift
+  best_for: Published Travel Rule Plans
+- slug: ospree
+  name: Ospree
+  best_for: Built-In Wallet Screening
+- slug: 21analytics
+  name: 21 Analytics
+  best_for: TRUST Access and Self-Hosting
+choose_instead:
+- slug: cryptoswift
+  need: A published Travel Rule price
+  text: you want to know the Travel Rule price before a sales call. CryptoSwift publishes plans from €600 a month on annual billing and checks self-hosted wallets by signature, micro-transfer, photo or self-declaration.
+- slug: ospree
+  need: TRISA with outside confirmation
+  text: you want TRISA and TRP routes that the network confirms. TRISA itself announced full interoperability with Ospree, and Ospree's public developer docs include a sandbox.
+- slug: 21analytics
+  need: TRUST counterparties
+  text: many of your transfers go to TRUST members such as Coinbase. TRUST lists 21 Analytics as its only interoperability partner, and 21 Analytics can run in your own infrastructure.
+user_reviews:
+  legacy_note: null
+  praise: []
+  criticize: []
+  by_profile:
+  - Small crypto firms, launchpads and token projects that need customer KYC, wallet checks and some Travel Rule messaging from one vendor are Blockpass's clearest fit.
+  - VASPs whose main counterparties are on TRISA, or publish a TRP travel address, can reach them through Envoy; firms that send most transfers to TRUST, GTR or CODE members should ask how those are handled before signing.
+  - Firms that only need Travel Rule messaging, not KYC, should compare the Corporate plan's yearly minimum with a Travel Rule specialist's price.
+faq:
+- q: How much does Blockpass cost?
+  a: Blockpass publishes four plans. Basic costs $99 a month, Starter $249 and Growth $499, each on a one-month term, and Corporate $999 a month on a 12-month term. A full KYC check costs $1.35 on Basic and $1.00 on Corporate, and unhosted wallet KYC $1.25 to $0.50. Each plan has a 7-day free trial with no credit card. The Envoy Travel Rule add-on comes with Corporate, and its price is not published.
+- q: What is Blockpass Envoy?
+  a: Envoy is Blockpass's Travel Rule service. Blockpass's guide says it uses TRISA as its native protocol, sends over TRP when the counterparty has a travel address, and sends a compliance email when the counterparty has neither. Envoy is also the name of TRISA's open-source Travel Rule node. Blockpass hosts it for you, and its team creates your account and shares the login details.
+- q: Which Travel Rule networks can Blockpass reach?
+  a: TRISA and TRP, per Blockpass, plus email for VASPs on neither. Counterparties can be found in the TRISA Global Directory Service and the Daybreak directory or added by hand. We found no TRUST, GTR, CODE, Sygna, VerifyVASP or Notabene route, and no TRISA listing that confirms Blockpass, so test transfers with your main counterparties first.
+- q: How does Blockpass verify self-hosted wallets?
+  a: With its Unhosted Wallet KYC check. The user connects the wallet and signs a message, and Blockpass checks the signature together with the user's KYC data. Blockpass lists Ethereum, Polygon, BSC, Avalanche and Arbitrum. We found no Satoshi test, AOPP or screenshot method, and the pages do not say how this check links to Envoy transfers.
+- q: Is Blockpass ISO 27001 certified?
+  a: Yes. British Assessment Bureau, part of Amtivo, lists certificate 241611 for Blockpass under ISO/IEC 27001:2022, first issued on 9 March 2023, reissued on 11 March 2026 and valid to 8 March 2029. The scope covers software for KYC and AML tools. Blockpass also shows Cyber Essentials and Cyber Essentials Plus marks, which we did not check on a register. We found no SOC 2 claim.
+- q: Does Blockpass also do KYC?
+  a: Yes, KYC is its main product. It checks 200+ ID document types, matches the face with 3D liveness, checks proof of address and screens for sanctions, PEPs and adverse media, with ongoing monitoring. It also offers KYB, wallet screening and a reusable identity profile for verified users. We found no iBeta liveness letter for Blockpass.
+- q: What is the best alternative to Blockpass for the Travel Rule?
+  a: CryptoSwift if you want a published Travel Rule price. Ospree if you want TRISA and TRP routes that TRISA itself confirms, with wallet screening built in. 21 Analytics if many of your counterparties are on TRUST or you want software you run yourself.
+segments: []
+capabilities:
+  deployment:
+    status: cloud
+    note: hosted; data hosted in the Netherlands per the privacy policy
+    source: 12
+  published_pricing:
+    status: partial
+    note: KYC, AML and wallet checks priced per plan; the Envoy Travel Rule add-on is not priced
+    source: 3
+  identity_verification:
+    status: 'yes'
+    note: 200+ ID document types, forensic and MRZ checks
+    source: 9
+  liveness:
+    status: 'yes'
+    note: face match with 3D liveness (vendor-stated; no lab letter found)
+    source: 9
+  nfc:
+    status: not_disclosed
+    note: no chip reading mentioned
+    source: 9
+  sanctions_pep:
+    status: 'yes'
+    note: sanctions and PEP screening, per check
+    source: 9
+  adverse_media:
+    status: 'yes'
+    note: adverse media screening
+    source: 9
+  ongoing_monitoring:
+    status: 'yes'
+    note: ongoing AML monitoring with dashboard alerts and periodic review
+    source: 9
+  transaction_monitoring:
+    status: add_on
+    note: AML Officer managed service on Corporate; no automated fiat or crypto KYT engine found
+    source: 3
+  reusable_id:
+    status: 'yes'
+    note: reusable Blockpass identity profile shared with consent
+    source: 9
+  kyb_documents:
+    status: 'yes'
+    note: company documents and ownership structure upload
+    source: 10
+  kyb_entity_screening:
+    status: 'yes'
+    note: corporate AML check
+    source: 10
+  kyb_registry:
+    status: not_disclosed
+    note: no company registry sources named; "KYB Registry" is a pool of reusable profiles
+    source: 10
+  kyb_pricing:
+    status: 'yes'
+    note: $125 Starter, $100 Growth, $75 Corporate per KYB check
+    source: 3
+  checked: '2026-11'
+certifications:
+- name: ISO/IEC 27001:2022
+  what: Information security management; certificate 241611 from British Assessment Bureau (Amtivo), scope KYC and AML software tools, issued 11 March 2026, valid to 8 March 2029
+  status: confirmed
+  source: 13
+- name: Cyber Essentials Plus
+  what: UK government baseline cyber security scheme; mark shown on the Blockpass site, register entry not checked
+  status: vendor_stated
+  source: 5
+user_ratings:
+- platform: Trustpilot
+  rating: 4.3
+  count: 119
+  checked: '2026-11'
+  url: https://uk.trustpilot.com/review/blockpass.org
+use_case_verdicts: []
+score_breakdown:
+- criterion: Compliance & certifications
+  weight: 25
+  score: 4.1
+  note: The ISO/IEC 27001:2022 certificate is on the certification body's own site, valid to March 2029, with KYC and AML software in scope. The contracting company, its directors and its person with significant control are on the UK register, and the privacy policy names the controller and says data is hosted in the Netherlands. Cyber Essentials Plus is shown only as a mark on the site, there is no SOC 2 claim, and Blockpass claims no licence of its own.
+  evidence: independent
+- criterion: Coverage
+  weight: 20
+  score: 3.6
+  note: Blockpass says Envoy speaks TRISA natively and TRP, with an email fallback, and uses the TRISA and Daybreak directories. TRISA's own Envoy software supports both protocols, but we found no TRISA listing for Blockpass. There is no TRUST, GTR, CODE or Sygna route, and self-hosted wallets are checked by signature only, on five EVM networks.
+  evidence: vendor
+- criterion: Pricing transparency
+  weight: 20
+  score: 3.5
+  note: All four plans, their minimum terms and every per-check price for KYC, AML, KYB and wallet checks are published. For the Travel Rule, only the entry point is known (the Corporate plan, $999 a month for 12 months); the Envoy add-on price is not published.
+  evidence: vendor
+- criterion: Integration & API depth
+  weight: 15
+  score: 3.3
+  note: Blockpass publishes a dashboard guide for Envoy and mentions API credentials, but has no Envoy API reference of its own, and accounts are created by hand by its team. The KYC side has a public API reference, a widget and a self-serve trial.
+  evidence: vendor
+- criterion: Support responsiveness
+  weight: 10
+  score: 3.6
+  note: The help centre gives support hours (10:00 to 19:00 GMT+7, Monday to Friday) and first-response targets by service level, from up to 24 hours to up to 3 hours on managed service. Trustpilot shows replies to negative reviews. No contractual SLA is published.
+  evidence: vendor
+- criterion: Track record
+  weight: 10
+  score: 3.6
+  note: The UK company dates from 2018 and Blockpass has sold KYC to crypto firms since then, with named clients such as Chainproof. The Travel Rule service is newer and has no named users. On 12 November 2026 the filing history showed no accounts for 2025 (due 30 September 2026) and no 2026 confirmation statement (due 7 October 2026), and a co-founder left the board in September 2026. We found no regulatory actions or breach disclosures.
+  evidence: independent
+hands_on: null
+sources:
+- title: Travel Rule Solution
+  publisher: Blockpass
+  url: https://www.blockpass.org/crypto-travel-hub/travel-rule-solution/
+  accessed: '2026-11'
+- title: 'Blockpass Envoy: Travel Rule Solution Guide'
+  publisher: Blockpass Help Center
+  url: https://help.blockpass.org/hc/en-us/articles/45897192220049-Blockpass-Envoy-Travel-Rule-Solution-Guide
+  accessed: '2026-11'
+- title: Pricing
+  publisher: Blockpass
+  url: https://www.blockpass.org/pricing/
+  accessed: '2026-11'
+- title: Blockpass homepage
+  publisher: Blockpass
+  url: https://www.blockpass.org/
+  accessed: '2026-11'
+- title: About
+  publisher: Blockpass
+  url: https://www.blockpass.org/about/
+  accessed: '2026-11'
+- title: Crypto compliance tools
+  publisher: Blockpass
+  url: https://www.blockpass.org/crypto-kyc/
+  accessed: '2026-11'
+- title: Unhosted Wallet KYC
+  publisher: Blockpass
+  url: https://www.blockpass.org/unhostedwalletkyc
+  accessed: '2026-11'
+- title: Verification checks Blockpass offers
+  publisher: Blockpass Help Center
+  url: https://help.blockpass.org/hc/en-us/articles/34613921259289-Verification-Checks-Blockpass-Offers
+  accessed: '2026-11'
+- title: User Verification (KYC)
+  publisher: Blockpass
+  url: https://www.blockpass.org/kyc/
+  accessed: '2026-11'
+- title: Business Verification (KYB)
+  publisher: Blockpass
+  url: https://www.blockpass.org/kyb/
+  accessed: '2026-11'
+- title: Terms of Service
+  publisher: Blockpass
+  url: https://www.blockpass.org/terms/
+  accessed: '2026-11'
+- title: Privacy Policy
+  publisher: Blockpass
+  url: https://www.blockpass.org/privacy/
+  accessed: '2026-11'
+- title: ISO/IEC 27001:2022 certificate 241611, Blockpass
+  publisher: British Assessment Bureau (Amtivo)
+  type: certificate
+  url: https://uk.connect.amtivo.com/cert/babcert.asp?c=241611&v=k34q1g2c2q
+  accessed: '2026-11'
+- title: BLOCKPASS UK LTD, company overview (11251249)
+  publisher: Companies House
+  type: register
+  url: https://find-and-update.company-information.service.gov.uk/company/11251249
+  accessed: '2026-11'
+- title: BLOCKPASS UK LTD, officers
+  publisher: Companies House
+  type: register
+  url: https://find-and-update.company-information.service.gov.uk/company/11251249/officers
+  accessed: '2026-11'
+- title: BLOCKPASS UK LTD, persons with significant control
+  publisher: Companies House
+  type: register
+  url: https://find-and-update.company-information.service.gov.uk/company/11251249/persons-with-significant-control
+  accessed: '2026-11'
+- title: BLOCKPASS UK LTD, filing history
+  publisher: Companies House
+  type: register
+  url: https://find-and-update.company-information.service.gov.uk/company/11251249/filing-history
+  accessed: '2026-11'
+- title: Blockpass service plans support
+  publisher: Blockpass Help Center
+  url: https://help.blockpass.org/hc/en-us/articles/15659006538521-Blockpass-Service-Plans-Support
+  accessed: '2026-11'
+- title: KYC Connect API reference
+  publisher: Blockpass
+  url: https://docs.blockpass.org/docs/connect/KYCC-Dashboard-API
+  accessed: '2026-11'
+- title: 'Envoy: an open source TRISA node for Travel Rule information transfers'
+  publisher: TRISA (GitHub)
+  url: https://github.com/trisacrypto/envoy
+  accessed: '2026-11'
+- title: trisa/envoy image
+  publisher: TRISA (Docker Hub)
+  url: https://hub.docker.com/r/trisa/envoy
+  accessed: '2026-11'
+- title: Blockpass partners with CryptoSwift to deliver global Travel Rule compliance
+  publisher: FF News
+  type: press
+  url: https://ffnews.com/newsarticle/cryptocurrency/blockpass-partners-with-cryptoswift-to-deliver-global-travel-rule-compliance
+  accessed: '2026-11'
+- title: Bermuda-regulated Chainproof chooses Blockpass to power KYB
+  publisher: ACN Newswire (via Mammoth Times)
+  type: press
+  url: https://business.mammothtimes.com/mammothtimes/article/acnnewswire-2025-11-12-bermuda-regulated-chainproof-chooses-blockpass-to-power-kyb-for-smart-contract-slashing-and-yield-insurance
+  accessed: '2026-11'
+- title: Blockpass CEO debuts new $99 SaaS plan designed for crypto startups
+  publisher: Blockpass
+  url: https://www.blockpass.org/2026/01/28/blockpass-ceo-debuts-new-99-saa-s-plan-designed-for-crypto-startups/
+  accessed: '2026-11'
+- title: Blockpass reviews
+  publisher: Trustpilot
+  type: listing
+  url: https://uk.trustpilot.com/review/blockpass.org
+  accessed: '2026-11'
+- title: Blockpass reviews
+  publisher: G2
+  type: listing
+  url: https://www.g2.com/products/blockpass/reviews
+  accessed: '2026-11'
+- title: Blockpass Idn Ltd press releases
+  publisher: ACN Newswire
+  type: press
+  url: https://www.acnnewswire.com/company_news/3442/blockpass-idn-ltd
+  accessed: '2026-11'
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://www.blockpass.org
+  - https://www.linkedin.com/company/blockpass
+  - https://github.com/blockpass-org
+  - https://twitter.com/BlockpassOrg
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- 'Record decisions: link.type none (suggested by 21 Analytics, a partner ranked in Travel Rule; no commercial relationship with Blockpass recorded, and the suggestion has no influence on the score). link.url = the Travel Rule Solution page. Categories travel-rule only; crypto KYC, identity verification, KYB and cheap KYC are suggestions for the owner (Blockpass sells customer KYC with published per-check prices). Grade "Good" as on the other Travel Rule records (v3.0); under the v3.1 bands 3.7 would be "Very Good". Logo: horizontal Blockpass logo (blue toggle icon and BLOCKPASS wordmark) supplied by the editor on 12 Nov 2026; white made transparent for the wordmark, and the square logo tile is the toggle icon from the same image, centred on white. A square version sent at the same time was not used: it has an off-white background and a small sparkle mark in the corner. Not in src/_data/providers under another slug, not in tracked.yml. Wikidata id not searched; kg_mid unknown.'
+- 'Envoy: help-centre guide (undated, opened 12 Nov 2026) says "TRISA is the native protocol for Envoy", TRP needs the counterparty travel address, "Sunrise" is an email fallback; directories tabs TRISA GDS and Daybreak; access "managed directly by the Blockpass team", accounts created manually with temporary credentials, login at blockpass.tr-envoy.com. Envoy is TRISA''s open-source node (GitHub trisacrypto/envoy, MIT; Docker Hub: "supports the TRISA and TRP protocols"); the GitHub page offers a managed service ("The Envoy team will install, configure, host, maintain, and support an Envoy node for you"). Who operates tr-envoy.com was not confirmed. TRISA directory (vaspdirectory / trisa.dev) not opened (permission not granted in this unattended run); a web search found no TRISA listing for Blockpass. Envoy TRP version not stated.'
+- 'CryptoSwift: partnership announced 11 Jun 2025 (FF News, ACN Newswire): CryptoSwift Travel Rule tools added to the Blockpass suite. Current Blockpass pages and the Envoy guide do not mention CryptoSwift; CryptoSwift''s own record lists Blockpass as a partner. Whether the CryptoSwift route is still offered is not known; left out of networks[] and of the fit check (other_networks_skip).'
+- 'Homepage (12 Nov 2026): Corporate plan "For growing regulated SMEs that need Managed Service or crypto add-ons", naming "Envoy Travel Rule, On-Chain KYC"; "Crypto-specific: Travel Rule (Envoy), On-Chain KYC & Crypto AML". Travel Rule Solution page and blog posts show "$99/month. 7-day free trial", which is the general onboarding offer, not a Travel Rule price. Jan 2026 blog post says each dollar of the plan fee counts as credit toward verifications; the pricing page calls the plan prices monthly minimums.'
+- 'Pricing page (12 Nov 2026), per-check: ID doc $0.85/0.80/0.78/0.75, face match $0.50/0.43/0.34/0.25, KYC total $1.35/1.23/1.12/1.00, AML $0.99/0.85/0.75/0.50, proof of address $1.25/1/0.75/0.50, KYB -/125/100/75, Advanced KYC Bot $0.30/0.25/0.20/0.10, Crypto AML $2.5/2/1.50/1, Unhosted Wallet KYC $1.25/1/0.75/0.5 (Basic/Starter/Growth/Corporate). KYC Connect add-ons on Corporate (managed service, On-Chain KYC, dedicated operator, ongoing monitoring, EDD, AML Officer) "Inquire About Pricing". Not added to budget{} or the Pricing Index; owner to decide.'
+- 'Company: Companies House overview, officers, PSC and filing history opened 12 Nov 2026. Incorporated 13 Mar 2018; SIC 62020, 62030, 63990; directors Adam Vaziri Zanjani (since 13 Mar 2018) and Thomas Leiritz (since 12 Aug 2020); secretary Fides Services Limited (Hong Kong, since 27 Oct 2021); Johannes Richard (Hans) Lombardo, director from 12 Aug 2020, resigned 10 Sep 2026 (the Jan 2026 blog calls him President and co-founder). PSC: Hiroyuki Enomoto active since 28 Feb 2023 (significant influence or control); earlier Blockpass Idn Limited (Hong Kong, 2566786, 75% or more, Dec 2018 to Feb 2019), Adam Vaziri Zanjani, Lombardo, Leiritz, Shumpei Takayama (25 to 50%, Apr 2022 to Feb 2023). Statement of capital GBP 176,964 after an allotment on 1 Oct 2024. Overview shows next accounts (to 31 Dec 2025) due 30 Sep 2026 and next confirmation statement due 7 Oct 2026; the filing history has neither on 12 Nov 2026. The fetched overview did not show the word "overdue", so an extension may exist; re-check before quoting it as overdue.'
+- 'Certifications: ISO certificate page (Amtivo, redirected from cvs.babcert.com linked in the Blockpass footer) opened 12 Nov 2026: Blockpass, 27 Old Gloucester Street, London; ISO/IEC 27001:2022; certificate 241611; scope "Software services providing KYC (know your customer) and AML (anti-money laundering) tools for cryptocurrencies, DeFi, and other regulated industries globally"; SoA 10 Feb 2026; initial 9 Mar 2023, latest issue 11 Mar 2026, expiry 8 Mar 2029. Accreditation number not shown. Cyber Essentials Plus: press release Feb 2023 found by search (not opened); Cyber Essentials certificates last 12 months, IASME register not checked, so vendor_stated. No SOC 2 claim. No iBeta letter for Blockpass liveness searched in the iBeta list; none claimed.'
+- 'Self-hosted wallets: Unhosted Wallet KYC page says users "verify ownership via a digital signature from their crypto address"; help article (updated 23 Oct 2025) lists Ethereum, Polygon, BSC, Avalanche and Arbitrum. No Satoshi test, AOPP or visual proof found. The pages do not say whether Envoy transfers to self-hosted wallets use this check.'
+- 'Support: help article on service plans gives hours 10 AM to 7 PM GMT+7, Monday to Friday, monthly support hours "up to" 10, 20 or 60 and helpdesk first response up to 24 hours, up to 6 hours, immediate or up to 3 hours; the mapping to service levels is read from a table that rendered poorly, so it is summarised as a range.'
+- 'User ratings: Trustpilot UK 4.3 TrustScore, 119 reviews, 5 in the last 12 months, latest 3 Jun 2026; reviewers are mostly end users going through KYC, not business buyers; Blockpass replied to all negative reviews. G2: product page exists, no reviews. Capterra not found. The homepage shows "4.5 from 119 reviews" (the star graphic), the record uses the TrustScore.'
+- 'Vendor claims not used as facts: 1.3M+ verified identities, 1,000+ businesses (3,000+ on the crypto page), "Bank-grade". Named clients from Blockpass press releases (Chainproof Nov 2025, BAS/BNB Chain Oct 2025, RWA Inc Oct 2025, ChainGPT Jul 2024, Ordify May 2024, Animoca Brands Mar 2024) are KYC or KYB users; no Travel Rule user is named.'
+- 'No enforcement action, breach disclosure, litigation or acquisition involving Blockpass found in searches to 12 Nov 2026.'
+application_category: Travel Rule Compliance Software
+author: andrii-klymenko
+directory_categories:
+- Travel Rule
+- Crypto KYC
+# Review page V4 (owner, 2026-11-10): "Who it's for" lines and networks, only facts already sourced above.
+fit:
+  'yes':
+  - need customer KYC, wallet checks and Travel Rule messaging from one vendor with per-check prices on the website
+  - send most transfers to VASPs on TRISA, or to VASPs with a TRP travel address
+  'no': []
+networks:
+- name: TRISA
+  status: live
+  note: Native protocol of Envoy, per Blockpass
+  evidence: vendor
+  source: 2
+- name: TRP
+  status: live
+  note: Sends to counterparties with a TRP travel address, per Blockpass
+  evidence: vendor
+  source: 2
+- name: Email
+  status: fallback
+  note: Secure compliance email to VASPs on neither protocol
+  evidence: vendor
+  source: 2
+- name: Other networks
+  status: not_found
+  note: No TRUST, GTR, CODE, Sygna, VerifyVASP or Notabene route found (Nov 2026)
