@@ -112,7 +112,15 @@ pricing:
     kind: official
     source: 3
     verified: '2026-11'
-  index_exclude: Travel Rule review; the KYC per-check prices are not yet in the Pricing Index table (owner to decide)
+  index:
+    product: 'KYC, Basic to Corporate plans'
+    price:
+    - 'KYC check (ID document + face match)'
+    - 'AML screening'
+    minimum:
+    - 'Basic'
+    - 'Corporate'
+    included: 'Plans differ by monthly minimum, seats and number of services; KYB is not on Basic; proof of address and crypto checks are priced separately; 7-day free trial'
 facts:
 - label: From
   value: $99 / month (KYC); Travel Rule needs Corporate, $999 / month for 12 months
@@ -196,7 +204,7 @@ choose_instead:
   text: you want to know the Travel Rule price before a sales call. CryptoSwift publishes plans from €600 a month on annual billing and checks self-hosted wallets by signature, micro-transfer, photo or self-declaration.
 - slug: ospree
   need: TRISA with outside confirmation
-  text: you want TRISA and TRP routes that the network confirms. TRISA itself announced full interoperability with Ospree, and Ospree's public developer docs include a sandbox.
+  text: you want a TRISA route that the network itself confirms. TRISA announced full interoperability with Ospree, which also has TRP routes, and Ospree's public developer docs include a sandbox.
 - slug: 21analytics
   need: TRUST counterparties
   text: many of your transfers go to TRUST members such as Coinbase. TRUST lists 21 Analytics as its only interoperability partner, and 21 Analytics can run in your own infrastructure.
@@ -220,9 +228,9 @@ faq:
 - q: Is Blockpass ISO 27001 certified?
   a: Yes. British Assessment Bureau, part of Amtivo, lists certificate 241611 for Blockpass under ISO/IEC 27001:2022, first issued on 9 March 2023, reissued on 11 March 2026 and valid to 8 March 2029. The scope covers software for KYC and AML tools. Blockpass also shows Cyber Essentials and Cyber Essentials Plus marks, which we did not check on a register. We found no SOC 2 claim.
 - q: Does Blockpass also do KYC?
-  a: Yes, KYC is its main product. It checks 200+ ID document types, matches the face with 3D liveness, checks proof of address and screens for sanctions, PEPs and adverse media, with ongoing monitoring. It also offers KYB, wallet screening and a reusable identity profile for verified users. We found no iBeta liveness letter for Blockpass.
+  a: Yes, KYC is its main product. It checks 200+ ID document types, matches the face with 3D liveness, checks proof of address and screens for sanctions, PEPs and adverse media, with ongoing monitoring. It also offers KYB, wallet screening and a reusable identity profile for verified users. Blockpass does not claim an iBeta or other lab test of its liveness check.
 - q: What is the best alternative to Blockpass for the Travel Rule?
-  a: CryptoSwift if you want a published Travel Rule price. Ospree if you want TRISA and TRP routes that TRISA itself confirms, with wallet screening built in. 21 Analytics if many of your counterparties are on TRUST or you want software you run yourself.
+  a: CryptoSwift if you want a published Travel Rule price. Ospree if you want a TRISA route that TRISA itself has announced, plus TRP and built-in wallet screening. 21 Analytics if many of your counterparties are on TRUST or you want software you run yourself.
 segments: []
 capabilities:
   deployment:
@@ -239,7 +247,7 @@ capabilities:
     source: 9
   liveness:
     status: 'yes'
-    note: face match with 3D liveness (vendor-stated; no lab letter found)
+    note: face match with 3D liveness (vendor-stated; no lab test claimed)
     source: 9
   nfc:
     status: not_disclosed
@@ -466,7 +474,7 @@ verification_notes:
 - 'Homepage (12 Nov 2026): Corporate plan "For growing regulated SMEs that need Managed Service or crypto add-ons", naming "Envoy Travel Rule, On-Chain KYC"; "Crypto-specific: Travel Rule (Envoy), On-Chain KYC & Crypto AML". Travel Rule Solution page and blog posts show "$99/month. 7-day free trial", which is the general onboarding offer, not a Travel Rule price. Jan 2026 blog post says each dollar of the plan fee counts as credit toward verifications; the pricing page calls the plan prices monthly minimums.'
 - 'Pricing page (12 Nov 2026), per-check: ID doc $0.85/0.80/0.78/0.75, face match $0.50/0.43/0.34/0.25, KYC total $1.35/1.23/1.12/1.00, AML $0.99/0.85/0.75/0.50, proof of address $1.25/1/0.75/0.50, KYB -/125/100/75, Advanced KYC Bot $0.30/0.25/0.20/0.10, Crypto AML $2.5/2/1.50/1, Unhosted Wallet KYC $1.25/1/0.75/0.5 (Basic/Starter/Growth/Corporate). KYC Connect add-ons on Corporate (managed service, On-Chain KYC, dedicated operator, ongoing monitoring, EDD, AML Officer) "Inquire About Pricing". Not added to budget{} or the Pricing Index; owner to decide.'
 - 'Company: Companies House overview, officers, PSC and filing history opened 12 Nov 2026. Incorporated 13 Mar 2018; SIC 62020, 62030, 63990; directors Adam Vaziri Zanjani (since 13 Mar 2018) and Thomas Leiritz (since 12 Aug 2020); secretary Fides Services Limited (Hong Kong, since 27 Oct 2021); Johannes Richard (Hans) Lombardo, director from 12 Aug 2020, resigned 10 Sep 2026 (the Jan 2026 blog calls him President and co-founder). PSC: Hiroyuki Enomoto active since 28 Feb 2023 (significant influence or control); earlier Blockpass Idn Limited (Hong Kong, 2566786, 75% or more, Dec 2018 to Feb 2019), Adam Vaziri Zanjani, Lombardo, Leiritz, Shumpei Takayama (25 to 50%, Apr 2022 to Feb 2023). Statement of capital GBP 176,964 after an allotment on 1 Oct 2024. Overview shows next accounts (to 31 Dec 2025) due 30 Sep 2026 and next confirmation statement due 7 Oct 2026; the filing history has neither on 12 Nov 2026. The fetched overview did not show the word "overdue", so an extension may exist; re-check before quoting it as overdue.'
-- 'Certifications: ISO certificate page (Amtivo, redirected from cvs.babcert.com linked in the Blockpass footer) opened 12 Nov 2026: Blockpass, 27 Old Gloucester Street, London; ISO/IEC 27001:2022; certificate 241611; scope "Software services providing KYC (know your customer) and AML (anti-money laundering) tools for cryptocurrencies, DeFi, and other regulated industries globally"; SoA 10 Feb 2026; initial 9 Mar 2023, latest issue 11 Mar 2026, expiry 8 Mar 2029. Accreditation number not shown. Cyber Essentials Plus: press release Feb 2023 found by search (not opened); Cyber Essentials certificates last 12 months, IASME register not checked, so vendor_stated. No SOC 2 claim. No iBeta letter for Blockpass liveness searched in the iBeta list; none claimed.'
+- 'Certifications: ISO certificate page (Amtivo, redirected from cvs.babcert.com linked in the Blockpass footer) opened 12 Nov 2026: Blockpass, 27 Old Gloucester Street, London; ISO/IEC 27001:2022; certificate 241611; scope "Software services providing KYC (know your customer) and AML (anti-money laundering) tools for cryptocurrencies, DeFi, and other regulated industries globally"; SoA 10 Feb 2026; initial 9 Mar 2023, latest issue 11 Mar 2026, expiry 8 Mar 2029. Accreditation number not shown. Cyber Essentials Plus: press release Feb 2023 found by search (not opened); Cyber Essentials certificates last 12 months, IASME register not checked, so vendor_stated. No SOC 2 claim. No iBeta or other lab test of the liveness check is claimed; the iBeta list was not searched.'
 - 'Self-hosted wallets: Unhosted Wallet KYC page says users "verify ownership via a digital signature from their crypto address"; help article (updated 23 Oct 2025) lists Ethereum, Polygon, BSC, Avalanche and Arbitrum. No Satoshi test, AOPP or visual proof found. The pages do not say whether Envoy transfers to self-hosted wallets use this check.'
 - 'Support: help article on service plans gives hours 10 AM to 7 PM GMT+7, Monday to Friday, monthly support hours "up to" 10, 20 or 60 and helpdesk first response up to 24 hours, up to 6 hours, immediate or up to 3 hours; the mapping to service levels is read from a table that rendered poorly, so it is summarised as a range.'
 - 'User ratings: Trustpilot UK 4.3 TrustScore, 119 reviews, 5 in the last 12 months, latest 3 Jun 2026; reviewers are mostly end users going through KYC, not business buyers; Blockpass replied to all negative reviews. G2: product page exists, no reviews. Capterra not found. The homepage shows "4.5 from 119 reviews" (the star graphic), the record uses the TrustScore.'
