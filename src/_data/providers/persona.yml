@@ -25,7 +25,7 @@ link:
   type: null
   legacy_rel: nofollow sponsored
 last_verified: '2026-10-22'
-updated: '2026-11-10'   # last content edit; last_verified = last fact re-check
+updated: '2026-11-13'   # last content edit; last_verified = last fact re-check
 verdict: 'Persona''s pitch is flexibility: reusable, customizable verification templates that product teams assemble into their own onboarding flows rather than a single fixed workflow. That configurability is a real strength for teams with unusual requirements, though it means a steeper setup curve and less out-of-the-box AML depth than specialized screening vendors. Entry pricing is published (Essential from $250 a month on a 12-month term); larger plans are quoted.'
 what_is:
 - Persona is an identity-verification infrastructure company founded in 2018 and headquartered in San Francisco, California, by CEO Rick Song and Charles Yeh. It raised a $200 million Series D at a $2 billion valuation in April 2025. It provides a no-code workflow builder and reusable verification templates combining document, biometric, and database checks, with KYC, KYB, AML, age assurance, case management and link analysis (Graph), aimed at product teams building custom onboarding flows. In April 2026 its Persona for Government product received FedRAMP Moderate authorization.
@@ -348,10 +348,6 @@ certifications:
   what: US health data
   status: vendor_stated
   source: 2
-- name: Age Check Certification Scheme (ACCS 1:2020, Level 2)
-  what: Selfie age estimation (UK), valid to 12 Nov 2026
-  status: confirmed
-  source: 14
 - name: KJM
   what: Age verification (Germany)
   status: vendor_stated
@@ -552,7 +548,7 @@ legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
 - Kantara Trust Status List (kantarainitiative.org/trust-status-list/) still does not render; Kantara (NIST SP 800-63) stays vendor_stated (source 2). No Persona or Kantara announcement found.
-- ACCS certificate (source 14) shows validity to 12/11/2026; re-check the registry after that date for renewal.
+- 'ACCS certificate removed from certifications on 13 Nov 2026: the ACCS registry entry (source 14, opened 13 Nov 2026, page last modified 30 Jun 2026) still lists ACCS 1:2020 Level 2 for Persona Selfie Age Estimation dashboard v2.2.1 with validity to 12/11/2026 and shows no renewal, extension or ISO/IEC 27566-1 certificate. Certificate PDF filename gives issue date 13.11.24. Not counted as confirmed after its end date; re-add if the registry shows a renewal. The age certification column in the age-verification matrix now falls back to KJM (vendor-stated).'
 - Pricing page meta description mentions a "free Starter plan" that is not among the listed plans (source 1); not added to the page.
 - Gartner Peer Insights counts differ by view (product page 73 ratings and 74 reviews; vendor page 71 reviews; Persona homepage cites 70 as of 7 Jul 2026). Product page figure used.
 - Editorial awareness only, not on the page: per Wikipedia (source 9), Feb 2026 coverage (Malwarebytes, PC Gamer, Techdirt, Fortune) of exposed code on a Persona FedRAMP instance, and Discord ending its age-verification trial with Persona. Primary articles not opened.
