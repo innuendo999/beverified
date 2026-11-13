@@ -89,3 +89,19 @@ Score flag: the Feb 2026 exposure is counted as an incident (-1 trust). Owner to
 - ongoing_monitoring: add_on, source 19 (recurring Watchlist and PEP Reports; Enterprise, limited on Growth, not on Startup or Essential)
 - transaction_monitoring: not_disclosed -> add_on, source 32 (new: Chainalysis KYT integration help article; crypto transfers mapped as Persona Transactions, alerts become Cases; scoring done by Chainalysis)
 - unchanged not_disclosed: video_ident
+
+## Follow-up 2026-11-13 (ACCS certificate expiry)
+
+Scheduled re-check of the ACCS certificate, which was due to end on 12 Nov 2026.
+
+- ACCS registry, Persona Identities Inc (https://accscheme.com/registry/age-estimation/persona-identities-inc/), opened 13 Nov 2026: still lists ACCS 1:2020 Technical Requirements for Age Estimation Technologies, Level 2, Persona Selfie Age Estimation dashboard v2.2.1, valid to 12/11/2026. No renewal, extension, suspension notice or ISO/IEC 27566-1 / ACCS 1:2025 certificate shown. Page metadata: last modified 30 Jun 2026. Certificate PDF linked from the entry: Persona-Certificate-Of-Conformity-Issue-date-13.11.24.pdf.
+- Searches for a Persona renewal, ACCS 1:2025 or ISO/IEC 27566-1 certificate: none found. (A 2025 ISO 27566-1 practice statement for Persona exists on ageassurance.com.au; it is a practice statement, not a certificate, and was not opened.)
+
+Change:
+- `certifications`: removed "Age Check Certification Scheme (ACCS 1:2020, Level 2)" (was `confirmed`, source 14). A certificate past its end date with no renewal on the register is not counted as confirmed. Source 14 kept for the record.
+- Effect: the age-verification matrix "Age assurance certification" cell for Persona now shows KJM (vendor-stated) only; the glossary and category tables that read certifications update from the record.
+- `verification_notes`: the old "re-check after 12/11/2026" note replaced with the result.
+- `updated` 2026-11-10 -> 2026-11-13. `last_verified` unchanged (2026-10-22): this was a single-fact check, not a full re-verification.
+- Ranking cards: no change needed. No Persona card, pro, FAQ or category text mentions ACCS. Score unchanged (the v3.1 rubric draft does not reference the ACCS certificate; owner to confirm if compliance scoring should reflect it).
+
+To do: re-add as `confirmed` if ACCS posts a renewal (registry entry or certificate with new dates).
