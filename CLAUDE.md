@@ -39,6 +39,7 @@ All pages are generated from templates + data. There is no hand-written page HTM
 | Article cover images (1600x900, og:image, schema `image`, post cards) | front matter `cover_label` / `cover_motif` / `cover_palette` (see `docs/article-spec.md`), motifs in `scripts/cover-motifs.cjs`; `npm run covers` renders missing covers into `src/assets/img/covers/<slug>.png` (`--force` re-renders all); picked up automatically by `src/_lib/article-data.js` |
 | "Follow BeVerified on Google" (preferred source) block at the end of articles | `src/_layouts/article.njk` (card + `btn--secondary` with Google G icon, styles `.pref-source` in v3.css), link in `site.json` → `v3.preferredSourceHref` (deeplink, no Google script) |
 | Reading progress bar and "Back to top" button (articles: guide, news, publications; reviews get the button only) | `src/_layouts/article.njk` (markup + inline script, hidden without JS); reviews: `src/_includes/v3/to-top.njk`; styles `.read-progress`, `.to-top` at the end of v3.css |
+| News candidates (daily AML/KYC news collection; drafting task opens PRs, owner merges) | sources and topic rules `scripts/news/sources.yml`, collector `scripts/news/collect.mjs`, workflow `.github/workflows/news-candidates.yml` (writes only to branch `news-candidates`), spec `docs/news-pipeline.md` |
 | Blog index `/blog/` and archives `/category/<section>/` | `src/blog.njk` + `src/_data/blogArchives.js` |
 | Legacy URLs `/author/beverified/` (refresh to author page), `/contact-us/` | `src/legacy/` |
 | Font | self-hosted `src/assets/fonts/Geist-Variable.woff2` |
