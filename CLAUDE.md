@@ -43,6 +43,7 @@ All pages are generated from templates + data. There is no hand-written page HTM
 | News candidates (daily AML/KYC news collection; drafting task opens PRs, owner merges) | sources and topic rules `scripts/news/sources.yml`, collector `scripts/news/collect.mjs`, workflow `.github/workflows/news-candidates.yml` (writes only to branch `news-candidates`), spec `docs/news-pipeline.md` |
 | Blog index `/blog/` and archives `/category/<section>/` | `src/blog.njk` + `src/_data/blogArchives.js` |
 | Legacy URLs `/author/beverified/` (refresh to author page), `/contact-us/` | `src/legacy/` |
+| Icons (all pages) | library `src/_lib/icons.js` (77 stroke icons + meaning maps for rankings, article sections, evidence levels); shortcodes `{% icon %}` / `{% iconFor %}` in `eleventy.config.js`; styles `.i`, `.i--*`, `.i-tile` at the end of v3.css; rules `docs/icons.md`; preview `npm run icons` → `design/icons.html`; check `scripts/checks/icons.mjs` (a new ranking key needs an icon) |
 | Font | self-hosted `src/assets/fonts/Geist-Variable.woff2` |
 | Analytics (GA4) | ID in `site.json` → `v3.analytics.ga4`; loaded only after consent by `src/_includes/v3/consent.njk`. No other third-party scripts or cookies: the privacy policy (`#analytics`) describes exactly this |
 | Favicon, touch icons, manifest, default og:image (1200x630) | `src/assets/brand/`, `src/favicon.ico`; a page can set `ogImage` in front matter |
