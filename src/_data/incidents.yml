@@ -14,6 +14,30 @@
 # appeal: {received, outcome: pending | upheld | partly_upheld | rejected, decided, note}  a vendor appeal and its result
 checked: '2026-11-05'
 items:
+- id: chainalysis-2026-10
+  slug: chainalysis
+  vendor: Chainalysis
+  date: '2026-10-30'
+  occurred: 'Activity detected in Oct 2026; disclosed 30 Oct 2026; wider exposure found 2 Nov and disclosed 4 Nov 2026'
+  type: breach
+  sensitivity: medium
+  status: investigating
+  counted: false
+  title: Attacker reached internal tools and exposed login data for all users
+  summary: Chainalysis says an external actor used "offensive agentic techniques" to get into its systems and internal tools. Its first notice on 30 October 2026 listed user IDs, names, email addresses and organisation role labels. On 4 November it said names, usernames, password hashes and live tokens for all Chainalysis users had been exposed, and that a subset of customer passwords was exposed through an on-path attack. It took Reactor, Data Solutions, KYT and its address screening products offline, and is notifying customers whose KYT accounts appear to have been accessed.
+  data: [Names and email addresses, Usernames and organisation roles, Password hashes and live tokens, Some customer passwords]
+  scale: All Chainalysis users for names, usernames, password hashes and tokens, per Chainalysis; number of users not disclosed
+  response: Chainalysis says it found no evidence that investigations data was accessed or that its attribution data was manipulated. It says it patched the exploited vulnerabilities, locked affected accounts, brought in third-party security experts, and restored services with IP allowlisting and forced credential resets. It asks users to reset passwords from its login page, rotate API keys and turn on two-factor authentication.
+  since: Reactor, KYT and Address Screening restored on 7 Nov 2026 and Data Solutions on 10 Nov 2026, per Chainalysis's notice. No root cause or final count published as of 16 Nov 2026. Chainalysis is tracked but not reviewed, so there is no score to deduct from.
+  sources:
+  - title: 'Updated Nov 10: Chainalysis Security Incident Information'
+    publisher: Chainalysis
+    url: https://www.chainalysis.com/blog/security-incident-october-30/
+    accessed: '2026-11'
+  - title: Chainalysis Discloses Data Breach Following AI-Driven Cyberattack
+    publisher: SecurityWeek
+    url: https://www.securityweek.com/chainalysis-discloses-data-breach-following-ai-driven-cyberattack/
+    accessed: '2026-11'
 - id: relycomply-2026-09
   slug: relycomply
   vendor: RelyComply
