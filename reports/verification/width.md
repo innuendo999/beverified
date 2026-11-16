@@ -58,7 +58,7 @@ Ranking: **#8 of 9** in `travel-rule`, after Ospree (3.5) and above Block Infras
 
 ## Ranking card (`travel-rule`)
 
-Added at #8 with `award: null` (proposed: "Best for an All-in-One Compliance Platform"), `legacy_price_shown: On request`, `size: Banks, payment firms and VASPs (vendor-stated)`.
+Added at #8 with award "Best for an All-in-One Compliance Platform" (owner, 2026-11-16), `legacy_price_shown: On request`, `size: Banks, payment firms and VASPs (vendor-stated)`.
 
 ## Other changes
 
@@ -69,7 +69,9 @@ Added at #8 with `award: null` (proposed: "Best for an All-in-One Compliance Pla
 ## Suggestions for the owner (not done)
 
 - Other rankings: WIDTH sells KYC with passive liveness, KYB, sanctions/PEP/adverse media screening, KYT with Chainalysis, Elliptic and TRM Labs data, and transaction monitoring. It could be considered for `crypto`, `aml` and possibly `cheap-kyc` (published $0.50 KYC rate, but promotional and credit-based). Each needs its own data pass.
-- Pricing Index: excluded for now; add only if the owner wants the promotional KYC rate there.
+- Pricing Index: not added (owner, 2026-11-16).
+- G2: the Cynopsis listing does not count for WIDTH (owner, 2026-11-16).
+- Sponsored card: the 21 Analytics card stays on this review (owner, 2026-11-16).
 
 ## Score flag
 
