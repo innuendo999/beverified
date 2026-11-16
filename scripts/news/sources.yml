@@ -1,0 +1,192 @@
+# News pipeline: sources and topic filters.
+# Read by scripts/news/collect.mjs (GitHub Action "News candidates", daily).
+# The collector only finds and sorts candidates. It never writes or publishes an article:
+# a drafting task picks one candidate, opens the primary source, writes the post and opens a PR;
+# the owner merges. Spec: docs/news-pipeline.md.
+#
+# Owner decisions (2026-11-16):
+# - a fine gets its own news item only from USD 5M; smaller fines go to the monthly digest
+# - funding rounds are not covered (unless the round changes who owns the provider)
+# - focus US, UK, EU; other regions only through FATF
+# - EBA, MAS and Ofcom are skipped (their sites could not be read by our tools)
+#
+# Feed status checked 2026-11-16 (WebFetch). "html" sources are parsed from the listing page
+# because the publisher offers no feed; their link patterns are a best guess until the first run.
+
+checked: 2026-11-16
+
+sources:
+  # Tier 1: primary sources. A news item can be written from these.
+  - id: fca
+    name: Financial Conduct Authority (UK)
+    tier: 1
+    region: UK
+    type: rss
+    url: https://www.fca.org.uk/news/rss.xml
+    note: "pubDate is not RFC 822 (\"Thursday, November 12, 2026 - 10:05\"); the parser handles it."
+  - id: fincen-fr
+    name: FinCEN in the Federal Register
+    tier: 1
+    region: US
+    type: rss
+    url: https://www.federalregister.gov/api/v1/documents.rss?conditions[agencies][]=financial-crimes-enforcement-network&order=newest
+  - id: fed-enforcement
+    name: Federal Reserve enforcement actions
+    tier: 1
+    region: US
+    type: rss
+    url: https://www.federalreserve.gov/feeds/press_enforcement.xml
+  - id: ofac
+    name: OFAC recent actions
+    tier: 1
+    region: US
+    type: html
+    url: https://ofac.treasury.gov/recent-actions
+    link_pattern: '^/recent-actions/\d{8}'
+    note: "No RSS (email alerts only). Routine designations go to the digest, see sanctions rule."
+  - id: fatf
+    name: FATF publications
+    tier: 1
+    region: Global
+    type: html
+    url: https://www.fatf-gafi.org/en/publications.html
+    link_pattern: '^/en/publications/[^?#]+\.html$'
+    note: "Listing has no dates; the drafting task takes the date from the publication itself."
+  - id: amla
+    name: EU Anti-Money Laundering Authority
+    tier: 1
+    region: EU
+    type: rss
+    url: https://www.amla.europa.eu/node/2/rss_en
+    note: "Feed is announced on the news page but listed 0 items on 2026-11-16; watch the first runs."
+  - id: govuk-hmt
+    name: GOV.UK, HM Treasury
+    tier: 1
+    region: UK
+    type: atom
+    url: https://www.gov.uk/search/news-and-communications.atom?organisations[]=hm-treasury
+  - id: govuk-ofsi
+    name: GOV.UK, Office of Financial Sanctions Implementation
+    tier: 1
+    region: UK
+    type: atom
+    url: https://www.gov.uk/search/news-and-communications.atom?organisations[]=office-of-financial-sanctions-implementation
+  - id: govuk-dsit
+    name: GOV.UK, Department for Science, Innovation and Technology
+    tier: 1
+    region: UK
+    type: atom
+    url: https://www.gov.uk/search/news-and-communications.atom?organisations[]=department-for-science-innovation-and-technology
+    note: "Broad department: only items matching a topic rule are kept (DIATF register, digital ID)."
+
+  # Tier 2: discovery only. Never the source of a news item: the drafting task must find
+  # the primary source (regulator, court, company announcement) or drop the candidate.
+  - id: biometricupdate
+    name: Biometric Update
+    tier: 2
+    region: Global
+    type: rss
+    url: https://www.biometricupdate.com/feed
+  - id: gnews-providers
+    name: Google News search for providers in our records
+    tier: 2
+    region: Global
+    type: gnews_providers
+    url: https://news.google.com/rss/search?hl=en-US&gl=US&ceid=US:en&q=
+    batch: 6
+    note: "Queries are built from provider names in src/_data/providers and src/_data/tracked.yml."
+
+# Provider names that are ordinary words or shared with other companies:
+# a match needs a context keyword in the same title or summary, and Google News
+# queries add "identity verification" to them.
+ambiguous_names: [Persona, Regula, Verified, Enigma, Napier, Sardine, TRP, SEON, Strise, Signicat, Complead, Prove, Vouched]
+
+context_keywords: [kyc, kyb, aml, identity, verification, onboarding, compliance, fraud, biometric, liveness, deepfake, sanctions, travel rule, regtech, fintech]
+
+max_age_days: 7
+
+fines:
+  # A fine at or above the threshold can be its own news item; below it goes to the digest.
+  threshold: 5000000
+  currency: USD
+  # EUR, GBP and CHF amounts are compared at face value (each is worth more than USD,
+  # so a 5M EUR fine is above USD 5M). Any other currency is flagged for a manual check.
+  face_value_currencies: [USD, EUR, GBP, CHF]
+
+regions:
+  focus: [US, UK, EU, Global]
+  # Keywords that mark a story as outside the focus regions when the source itself is global.
+  other_markers: [india, nigeria, kenya, pakistan, philippines, indonesia, malaysia, australia, new zealand, japan, korea, china, hong kong, singapore, brazil, mexico, argentina, colombia, south africa, uae, dubai, saudi, qatar, turkey, russia, canada]
+
+# Rules are tried in order; a candidate takes the first rule whose conditions match.
+# route: news | incident | record-check | digest | research-check | skip
+rules:
+  - id: funding
+    any: [raises, "series a", "series b", "series c", "series d", "seed round", funding round, "in funding", growth investment]
+    unless: [acquire, acquisition, acquires, takeover, majority stake]
+    route: skip
+    reason: "Funding rounds are not covered (owner, 2026-11-16)."
+
+  - id: vendor-marketing
+    any: [webinar, podcast, "named a leader", "recognized as", "recognised as", award, wins, "report finds", survey, whitepaper, e-book, ebook, "partners with", partnership, sponsored, "join us"]
+    unless: [acquire, acquisition, fine, penalty, breach]
+    route: skip
+    reason: "Vendor marketing, not news for buyers."
+
+  - id: provider-incident
+    needs_provider: true
+    any: [breach, "data leak", leaked, exposed, hack, hacked, cyberattack, "cyber incident", ransomware, outage, "class action", lawsuit, sued, "security incident", fine, fined, penalty, "enforcement action", "consent order"]
+    route: incident
+    priority: 1
+    reason: "Incident, lawsuit or regulatory action at a provider in our records: goes to /incidents/ with the vendor's response."
+
+  - id: provider-ownership
+    needs_provider: true
+    any: [acquire, acquires, acquired, acquisition, merger, merge, takeover, "majority stake", rebrand, rebrands, renamed, "now part of", "shuts down", "wind down", "winds down", "ceases operations", sold, divest]
+    route: news
+    also: record-check
+    priority: 1
+    reason: "Ownership or brand change at a ranked provider: news item plus a check of the provider record."
+
+  - id: provider-evidence
+    needs_provider: true
+    any: [ibeta, "iso/iec 30107", "iso 30107", "iso 27001", "soc 2", "digital verification services", diatf, "trust framework", certified, certification, "nist frte", pricing, "price change"]
+    route: record-check
+    priority: 2
+    reason: "Possible change to certifications or prices in a provider record."
+
+  - id: sanctions
+    sources: [ofac, govuk-ofsi]
+    any: [designation, designations, "sdn", sanctions]
+    news_if: [mixer, "virtual currency", "digital asset", crypto, exchange, "sanctions regulations", "program", "programme", removal, removes, lifts, "general license", "general licence", "50 percent", "screening"]
+    route: digest
+    priority: 3
+    reason: "Routine designations go to the monthly digest; programme changes and crypto actions can be news."
+
+  - id: enforcement
+    any: [fine, fined, fines, penalty, penalties, "civil money penalty", "consent order", "cease and desist", "enforcement action", "final notice", settlement, settles, "agrees to pay"]
+    context: ["money laundering", aml, kyc, "customer due diligence", cdd, "know your customer", sanctions, "bank secrecy act", bsa, "transaction monitoring", "financial crime", "identity verification"]
+    route: digest
+    news_if_fine_at_least_threshold: true
+    priority: 2
+    reason: "AML or KYC enforcement: news from USD 5M, otherwise the monthly digest."
+
+  - id: regulation
+    any: [travel rule, "recommendation 16", "r.16", amla, amlr, "aml package", "anti-money laundering authority", "customer due diligence", "beneficial ownership", "corporate transparency act", "boi reporting", "customer identification program", "money laundering regulations", "mlr 2017", eidas, "eudi wallet", "digital identity wallet", "european digital identity", mica, "transfer of funds regulation", "online safety act", "age assurance", "age verification", "digital verification services", diatf, "trust framework", "digital id", "grey list", "increased monitoring", "high-risk third countries", "high-risk third country", plenary, "nist sp 800-63", "800-63", "bank secrecy act"]
+    # Generic words count only together with an AML/KYC/identity context word.
+    generic: ["regulatory technical standards", rts, "final rule", "proposed rule", "notice of proposed rulemaking", consultation, guidance, guidelines, "special measure", "policy statement", "new rules"]
+    context: ["money laundering", aml, kyc, kyb, "customer due diligence", cdd, "know your customer", "terrorist financing", "financial crime", "identity verification", "digital identity", "virtual asset", crypto, sanctions, "beneficial owner", "age verification", "age assurance"]
+    route: news
+    priority: 1
+    reason: "Rule, standard or deadline that changes what KYC and AML buyers must do."
+
+  - id: threat-research
+    any: [deepfake, "injection attack", "face swap", "face-swap", "presentation attack", "synthetic identity", "document fraud", "identity fraud"]
+    needs_research: [study, research, report, paper, lab, nist, europol, fincen, "advisory", "alert"]
+    route: research-check
+    priority: 3
+    reason: "Threat research: only if a lab, regulator or academic source is behind it."
+
+  - id: fallback
+    route: skip
+    reason: "No topic rule matched."
