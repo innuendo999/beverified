@@ -4,15 +4,25 @@ seo:
   title: KYC & AML Software Reviews and Rankings 2026 | BeVerified
   description: Independent reviews and rankings of KYC, KYB and AML software, compared on coverage, accuracy, pricing and support.
 h1: Find the right KYC & AML provider.
-h1_muted: Independently reviewed
-lede: Independent reviews and rankings of KYC, KYB and AML software, compared on coverage, accuracy, pricing and support.
+lede: Reviews and rankings of KYC, KYB and AML vendors, built from price lists, lab certification letters and public registers. Every score lists its sources and the date we last checked them.
 
-quick_picks:            # label + provider slug; reason = provider tagline unless set
-  - { label: Best overall, slug: shufti-pro }      # #1 in rankings.yml → identity-verification and kyc (v3.1)
-  - { label: Best for AML, slug: sumsub }          # #1 in rankings.yml → aml
-  - { label: Best for banks, slug: complyadvantage }  # #1 in rankings.yml → aml/banks
+# First screen (owner approved the "Identity palette" design canvas, 2026-11-16). Nothing below is a typed
+# score or count: the card reads the top of `ranking` in rankings.yml and the provider records; the strip
+# counts published reviews per group (record lists one of the categories, or the provider sits in one of
+# those rankings).
+hero:
+  ranking: kyc                 # rankings.yml key shown in the card
+  top: 3                       # rows in the card
+  cta: { label: See the KYC ranking, href: /providers/kyc/ }
+  evidence: [iBeta lab letters, UK DIATF register, FIDO certificates, Vendor price lists]
+  count_groups:
+    - { name: Identity verification, url: /providers/identity-verification/, categories: [kyc, e-kyc, identity-verification, liveness-detection] }
+    - { name: AML screening and monitoring, url: /providers/aml/, categories: [aml, aml/banks] }
+    - { name: KYB, url: /providers/kyb/, categories: [kyb] }
+    - { name: Crypto KYC and Travel Rule, url: /providers/travel-rule/, categories: [crypto, travel-rule] }
+    - { name: Age verification, url: /providers/age-verification/, categories: [age-verification] }
+    - { name: Know Your Agent, url: /providers/know-your-agent/, categories: [know-your-agent] }
 
-logo_strip: [sumsub, complyadvantage, onfido, kycaid, feedzai, trulioo, jumio, seon]
 
 use_case_groups: [Identity, Business, Financial crime, Crypto, Budget]   # order of the groups in the homepage use-case panel
 

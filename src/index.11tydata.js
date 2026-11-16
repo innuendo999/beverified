@@ -1,13 +1,17 @@
 // Computed data for the homepage (src/index.njk). Content: src/_data/home.yml.
-import { activePlacements } from "./_lib/placements.js";
+import { activePlacements, heroPlacement } from "./_lib/placements.js";
+import { heroCard, heroCounts, guilloche } from "./_lib/hero.js";
 
 export default {
   permalink: "/",
   eleventyComputed: {
     seoTitle: (d) => d.home.seo.title,
     seoDescription: (d) => d.home.seo.description,
-    picks: (d) => d.home.quick_picks.map((q) => ({ ...q, p: d.providers[q.slug] })).filter((q) => q.p),
-    strip: (d) => d.home.logo_strip.map((s) => d.providers[s]).filter((p) => p && p.logo.wordmark),
+    // First screen (owner, 2026-11-16): top of one ranking with each provider's confirmed independent
+    // checks, review counts per group, and an optional sponsor row. Builders: src/_lib/hero.js.
+    hero: (d) => heroCard(d, heroPlacement(d.placements, { rankings: d.rankings, providers: d.providers, hero: d.home.hero })),
+    heroCounts: (d) => heroCounts(d),
+    guilloche: () => guilloche(),
     topRated: (d) => Object.values(d.providers).filter((p) => p.score != null && p.methodology === d.site.v3.methodologyVersion)
       .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name)).slice(0, d.home.top_rated_count),
     // "Pick by use case" (layout A, owner 2026-11-10): use cases grouped in the order of

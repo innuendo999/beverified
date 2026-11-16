@@ -17,7 +17,7 @@ export function placementIssues(placements, { rankings, providers, useCases }) {
   const keys = new Set((useCases || []).map((u) => u.slug));
   const seen = {};
   (placements || []).forEach((e, i) => {
-    if (e?.surface === "review") return; // checked by reviewPlacementIssues
+    if (e?.surface === "review" || e?.surface === "hero") return; // checked by reviewPlacementIssues / heroPlacementIssues
     const id = `placements[${i}] ${e?.use_case ?? "?"}/${e?.slug ?? "?"}`;
     const start = iso(e?.start), end = iso(e?.end);
     if (!e?.use_case || !keys.has(e.use_case)) issues.push(`${id}: use_case is not a homepage use case`);
@@ -39,7 +39,7 @@ export function placementIssues(placements, { rankings, providers, useCases }) {
 export function activePlacements(placements, ctx, today = new Date().toISOString().slice(0, 10)) {
   const out = {};
   (placements || []).forEach((e) => {
-    if (e?.surface === "review") return;
+    if (e?.surface === "review" || e?.surface === "hero") return;
     if (placementIssues([e], ctx).length) return;
     if (iso(e.start) > today || iso(e.end) < today || out[e.use_case]) return;
     const list = ctx.rankings[e.use_case].providers;
@@ -109,4 +109,41 @@ export function reviewSponsor(placements, { rankings, providers, categories, men
 export function liveSponsors(placements, ctx, today = new Date().toISOString().slice(0, 10)) {
   return [...new Set((placements || []).filter((e) => e?.surface === "review"
     && !reviewPlacementIssues([e], ctx).length && iso(e.start) <= today && iso(e.end) >= today).map((e) => e.slug))];
+}
+
+// ---- Homepage first screen (owner, 2026-11-16) ----
+// One sponsor row under the editorial rows of the first-screen card. Entry: { surface: hero, slug, start, end }.
+// - the sponsor has a published review with a score and is ranked in home.yml hero.ranking,
+//   but not among the rows the card already shows (hero.top);
+// - the row always says "Sponsored", shows the real rank and score, and its outbound link is rel="sponsored" (data-ad);
+// - start and end are ISO dates, start <= end; hero slots never overlap.
+export function heroPlacementIssues(placements, { rankings, providers, hero }) {
+  const issues = [];
+  const seen = [];
+  (placements || []).forEach((e, i) => {
+    if (e?.surface !== "hero") return;
+    const id = `placements[${i}] hero/${e?.slug ?? "?"}`;
+    const start = iso(e?.start), end = iso(e?.end);
+    const p = providers?.[e?.slug];
+    if (!p || p.status !== "published" || p.score == null) issues.push(`${id}: no published review with a score`);
+    if (!p?.link?.url) issues.push(`${id}: provider record has no link.url`);
+    const rank = inRanking(rankings, hero?.ranking, e?.slug);
+    if (rank < 0) issues.push(`${id}: sponsor is not ranked in ${hero?.ranking}`);
+    else if (rank < (hero?.top || 3)) issues.push(`${id}: sponsor is already shown in the card`);
+    if (!ISO.test(start) || !ISO.test(end)) issues.push(`${id}: start and end must be YYYY-MM-DD`);
+    else if (start > end) issues.push(`${id}: start is after end`);
+    for (const o of seen) if (start <= o.end && o.start <= end) issues.push(`${id}: overlaps ${o.id}`);
+    seen.push({ id, start, end });
+  });
+  return issues;
+}
+
+// The hero sponsor on the build date, or null.
+export function heroPlacement(placements, ctx, today = new Date().toISOString().slice(0, 10)) {
+  for (const e of placements || []) {
+    if (e?.surface !== "hero" || heroPlacementIssues([e], ctx).length) continue;
+    if (iso(e.start) > today || iso(e.end) < today) continue;
+    return { slug: e.slug, rank: inRanking(ctx.rankings, ctx.hero.ranking, e.slug) + 1, provider: ctx.providers[e.slug] };
+  }
+  return null;
 }
