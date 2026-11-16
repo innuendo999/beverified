@@ -18,7 +18,9 @@
       "route": "news",
       "priority": 1,
       "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
-      "first_seen": "2026-11-16"
+      "first_seen": "2026-11-16",
+      "status": "drafted",
+      "pr": "https://github.com/innuendo999/beverified/pull/125"
     },
     {
       "id": "12ba24883fe36d0e",
@@ -36,8 +38,9 @@
       "matched": "bank secrecy act",
       "route": "news",
       "priority": 1,
-      "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
-      "first_seen": "2026-11-16"
+      "reason": "covered by https://beverified.org/news/fincen-withdraws-250-travel-rule-proposal/ (same FR Doc. 2026-22809)",
+      "first_seen": "2026-11-16",
+      "status": "dropped"
     },
     {
       "id": "23239213a9261863",
