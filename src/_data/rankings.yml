@@ -1610,6 +1610,23 @@ travel-rule:
     legacy_price_shown: On request
     legacy_rating_shown: null
     segments: []
+  - slug: width
+    name: WIDTH
+    award: Best for an All-in-One Compliance Platform   # owner, 2026-11-16
+    tagline: Singapore compliance platform, formerly Cynopsis Solutions, that adds Travel Rule messaging to its KYC, wallet screening and case management.
+    coverage: Asia-Pacific focus; 85+ Travel Rule jurisdictions (vendor-stated); data in Singapore, the EU or the UAE
+    size: Banks, payment firms and VASPs (vendor-stated)
+    pros:
+    - Travel Rule records in the same platform as KYC, KYB, wallet screening and case management
+    - Names TRP, Sygna Bridge, Notabene, Veriscope and OpenVASP routes, with fallback per counterparty
+    - Data kept in Singapore, the EU or the UAE; Satoshi test or signature proofs for self-hosted wallets
+    cons:
+    - None of the networks it names lists WIDTH, and there are no public Travel Rule API docs
+    - No Travel Rule price; ISO/IEC 27001:2022 certificate shared only under NDA
+    - WIDTH company registered in January 2026 after a change of owner; no Travel Rule customer named
+    legacy_price_shown: On request
+    legacy_rating_shown: null
+    segments: []
   - slug: block-infrastructure
     name: Block Infrastructure
     award: null   # owner to choose; proposed "Best for Pre-Settlement Screening"
