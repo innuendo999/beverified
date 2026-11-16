@@ -51,7 +51,8 @@ sources:
     type: html
     url: https://www.fatf-gafi.org/en/publications.html
     link_pattern: '^/en/publications/[^?#]+\.html$'
-    note: "Listing has no dates; the drafting task takes the date from the publication itself."
+    enabled: false
+    note: "Off since 2026-11-16: the site answers the Action with HTTP 403 (bot protection). We do not spoof a browser to get past it; FATF items come from gnews-fatf below, and the drafting task opens the FATF page itself."
   - id: amla
     name: EU Anti-Money Laundering Authority
     tier: 1
@@ -87,6 +88,13 @@ sources:
     region: Global
     type: rss
     url: https://www.biometricupdate.com/feed
+  - id: gnews-fatf
+    name: Google News search for fatf-gafi.org
+    tier: 2
+    region: Global
+    type: rss
+    url: https://news.google.com/rss/search?q=site:fatf-gafi.org+when:7d&hl=en-US&gl=US&ceid=US:en
+    note: "Discovery for FATF while its site blocks the Action. Primary source = the FATF page itself."
   - id: gnews-providers
     name: Google News search for providers in our records
     tier: 2
@@ -154,6 +162,19 @@ rules:
     route: record-check
     priority: 2
     reason: "Possible change to certifications or prices in a provider record."
+
+  - id: fatf
+    sources: [gnews-fatf]
+    any: [plenary, "grey list", "increased monitoring", "high-risk jurisdictions", "call for action", "recommendation 16", "travel rule", "virtual asset", "public statement", outcomes, guidance, "beneficial ownership", "payment transparency"]
+    route: news
+    priority: 1
+    reason: "FATF decision or guidance that changes what KYC and AML buyers must do."
+
+  - id: fatf-other
+    sources: [gnews-fatf]
+    route: digest
+    priority: 3
+    reason: "Other FATF publication (mutual evaluations, typologies): monthly digest."
 
   - id: sanctions
     sources: [ofac, govuk-ofsi]
