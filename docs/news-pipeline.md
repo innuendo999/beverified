@@ -15,6 +15,10 @@ Nothing in this pipeline publishes on its own. Google treats unreviewed generate
 - Focus **US, UK, EU**. Other regions appear only through FATF; a story from elsewhere goes to the digest.
 - **EBA, MAS and Ofcom are skipped**: our tools could not read their sites.
 
+## FATF
+
+The FATF site answers the Action with HTTP 403 (checked 2026-11-16), so its listing source is off (`enabled: false`). We do not spoof a browser to get past bot protection. FATF items are found through Google News (`gnews-fatf`): plenary outcomes, lists and guidance go to `news`, mutual evaluations and typologies to `digest`. The drafting task opens the FATF page itself as the primary source.
+
 ## Routes
 
 | Route | What happens |
@@ -26,7 +30,7 @@ Nothing in this pipeline publishes on its own. Google treats unreviewed generate
 | `digest` | Smaller fines, routine sanctions designations, stories outside US/UK/EU. Collected for a monthly roundup. |
 | `skip` | Funding, vendor marketing, no matching topic, older than 7 days, already a source on the site. Listed in `skipped.json` with the rule. |
 
-Tier 2 sources (Biometric Update, Google News search for our providers) are for discovery only: `needs_primary_source: true`. The article is written from the regulator, court or company announcement, or the candidate is dropped.
+Tier 2 sources (Biometric Update, Google News search for our providers, Google News search for fatf-gafi.org) are for discovery only: `needs_primary_source: true`. The article is written from the regulator, court or company announcement, or the candidate is dropped.
 
 ## Candidate status
 

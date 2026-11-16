@@ -210,7 +210,18 @@ async function load(source) {
   }
   const text = fixturesDir ? fixture(source.id) : await fetchText(source.url);
   if (text == null) return [];
-  return source.type === 'html' ? parseListing(text, source) : parseFeed(text);
+  if (source.type === 'html') return parseListing(text, source);
+  const items = parseFeed(text);
+  if (source.url.includes('news.google.com')) {
+    for (const it of items) {
+      const m = it.title.match(/^(.*) - ([^-]+)$/);
+      if (m) {
+        it.title = m[1].trim();
+        it.publisher = it.publisher || m[2].trim();
+      }
+    }
+  }
+  return items;
 }
 
 // ---------- classification ----------
@@ -245,7 +256,7 @@ function largestAmount(raw) {
 
 function region(source, text) {
   if (source.region !== 'Global') return source.region;
-  if (/\bfatf\b/.test(text)) return 'Global';
+  if (source.id === 'gnews-fatf' || /\bfatf\b/.test(text)) return 'Global';
   const other = hasAny(text, config.regions.other_markers);
   return other ? `other:${other}` : 'Global';
 }
@@ -263,7 +274,7 @@ function classify(item, source) {
 
     if (rule.id === 'fallback') return { ...base, rule: rule.id, route: rule.route, reason: rule.reason };
 
-    let hit = hasAny(text, rule.any);
+    let hit = rule.any ? hasAny(text, rule.any) : 'source';
     if (!hit && rule.generic) {
       const g = hasAny(text, rule.generic);
       if (g && hasAny(text, rule.context)) hit = g;
@@ -348,6 +359,7 @@ const errors = [];
 const today = NOW.toISOString().slice(0, 10);
 
 for (const source of config.sources) {
+  if (source.enabled === false) continue;
   let items;
   try {
     items = await load(source);
