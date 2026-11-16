@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import fs from "node:fs";
 import yaml from "js-yaml";
 import { providersFor } from "./src/_lib/glossary.js";
+import { renderIcon, iconNameFor } from "./src/_lib/icons.js";
 
 // YAML front matter turns 2026-10-18 into a Date; normalise to "2026-10-18".
 const isoDate = (v) => (v instanceof Date ? v.toISOString().slice(0, 10) : String(v || ""));
@@ -135,6 +136,9 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("pad2", (n) => String(n).padStart(2, "0"));
   eleventyConfig.addFilter("usd2", (n) => (n == null ? "" : "$" + Number(n).toFixed(2)));
 
+  // Icon library (src/_lib/icons.js): {% icon "liveness" %}, {% icon "aml", "AML screening" %}, {% iconFor "category", "kyb" %}
+  eleventyConfig.addShortcode("icon", (name, label, size, cls) => renderIcon(name, label, size, cls));
+  eleventyConfig.addShortcode("iconFor", (kind, key, label, size, cls) => renderIcon(iconNameFor(kind, key), label, size, cls));
   eleventyConfig.addFilter("score1", (n) => (n == null ? "" : Number(n).toFixed(1)));
   // First sentence of a paragraph (review V5 product lede): up to the first ". " before a capital letter.
   eleventyConfig.addFilter("firstSentence", (t) => { const s = String(t || ""); const m = s.match(/^(.+?[.!?])\s+(?=[A-Z0-9])/); return m ? m[1] : s; });
