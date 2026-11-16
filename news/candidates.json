@@ -58,8 +58,9 @@
       "matched": "age assurance",
       "route": "news",
       "priority": 1,
-      "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
-      "first_seen": "2026-11-16"
+      "reason": "weekly roundup by Biometric Update (Chris Burt), no single new rule, deadline or enforcement action; items are tier 2 summaries",
+      "first_seen": "2026-11-16",
+      "status": "dropped"
     },
     {
       "id": "b1274a72ead1275c",
@@ -83,8 +84,9 @@
       "matched": "age assurance",
       "route": "news",
       "priority": 1,
-      "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
-      "first_seen": "2026-11-16"
+      "reason": "vendor marketing: Shufti product launch and US patent 12,749,342 B1 announced in a paid GlobeNewswire release (13 Nov 2026); USPTO record not readable; no rule, enforcement or ownership change. Shufti record already lists age estimation and iBeta Level 3",
+      "first_seen": "2026-11-16",
+      "status": "dropped"
     },
     {
       "id": "2dbc64dbc73c8eff",
@@ -109,7 +111,9 @@
       "route": "incident",
       "priority": 1,
       "reason": "Incident, lawsuit or regulatory action at a provider in our records: goes to /incidents/ with the vendor's response.",
-      "first_seen": "2026-11-16"
+      "first_seen": "2026-11-16",
+      "status": "drafted",
+      "pr": "https://github.com/innuendo999/beverified/pull/126"
     },
     {
       "id": "23762a54ba9f0343",
