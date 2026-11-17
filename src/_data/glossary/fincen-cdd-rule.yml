@@ -28,7 +28,7 @@ body: |
 
   ## Recent changes and common confusions
 
-  A [FinCEN order](https://www.fincen.gov/system/files/2026-02/FinCEN-Order-CCDExceptiveRelief.pdf) dated 13 February 2026 (FIN-2026-R001) gives exceptive relief from paragraph (b), which required beneficial owners to be identified and verified at each new account opening. Institutions may instead do it when a legal entity customer first opens an account, when they know of facts that call the earlier information into question, and as their risk-based procedures require. All other AML obligations stay in place.
+  A [FinCEN order](https://www.fincen.gov/system/files/2026-02/FinCEN-Order-CCDExceptiveRelief.pdf) dated 13 February 2026 (FIN-2026-R001) gives exceptive relief from paragraph (b), which required beneficial owners to be identified and verified at each new account opening. Institutions may instead do it when a legal entity customer first opens an account, when they know of facts that call the earlier information into question, and as their risk-based procedures require. All other AML obligations stay in place. On 17 November 2026 FinCEN [proposed](/news/fincen-proposes-cdd-rule-changes/) writing this relief into the rule, listing the data to collect on each owner and ruling out an ITIN as a substitute for a Social Security number; comments close 60 days after Federal Register publication.
 
   The CDD Rule is often confused with Corporate Transparency Act reporting. The CDD Rule puts the duty on financial institutions to collect beneficial ownership from their customers. The Corporate Transparency Act made companies report to FinCEN, and FinCEN's [final rule](https://www.fincen.gov/BOI), effective 14 August 2026, makes US companies and US persons permanently exempt from that reporting. US banks therefore rely on their own collection under the CDD Rule. Compare this with the EU and UK tests on our [ultimate beneficial owner](/glossary/ultimate-beneficial-owner/) page, and see our [KYB ranking](/providers/kyb/) for tools that support the checks.
 buyer_questions:
@@ -57,6 +57,10 @@ sources:
     publisher: FinCEN
     url: https://www.fincen.gov/system/files/2026-02/FinCEN-Order-CCDExceptiveRelief.pdf
     accessed: 2026-10
+  - title: Customer Due Diligence Requirements for Covered Financial Institutions, notice of proposed rulemaking (17 November 2026)
+    publisher: FinCEN
+    url: https://home.treasury.gov/system/files/136/CDD_NPRM_11_12_2026_508FINAL.pdf
+    accessed: 2026-11
   - title: Beneficial ownership information reporting
     publisher: FinCEN
     url: https://www.fincen.gov/BOI
@@ -67,4 +71,4 @@ sources:
     accessed: 2026-10
 author: andrii-klymenko
 published: 2026-10-29
-updated: 2026-10-29
+updated: 2026-11-17
