@@ -2,12 +2,17 @@ slug: identity-verification
 url: /providers/identity-verification/
 seo:
   title: Top Identity Verification Companies in 2026 | BeVerified
-  description: 'Sumsub, Incode and KYCAID lead our 2026 ranking of identity verification companies. Compare iBeta liveness levels, NFC, SOC 2 and trust-framework listings.'
+  description: 'Shufti Pro, Sumsub and Veriff lead our 2026 ranking of identity verification companies for fintech and iGaming. Compare iBeta liveness levels, NFC, SOC 2 and trust frameworks.'
   h1: Top Identity Verification Companies in 2026
 breadcrumb_label: Top Identity Verification Companies
-quick_answer: 'Shufti Pro is our top identity verification platform: its liveness passed iBeta''s ISO/IEC 30107-3 Level 3 test and it publishes prices, with a free plan for testing. Sumsub, also at Level 3, is the runner-up with KYB and AML in one platform, and Veriff adds UK DIATF certification. We compared 10 providers on liveness tests, NFC, certifications and pricing.'
+quick_answer: 'Shufti Pro is our top identity verification provider: its liveness passed iBeta''s ISO/IEC 30107-3 Level 3 test, and it met every DHS goal in the RIVR selfie-to-ID trial. Sumsub, also at Level 3, is second, with published prices and AML in one platform. Veriff, third, holds UK DIATF certification. We compared 10 providers on fraud defense, coverage, cost and compliance.'
 last_verified: '2026-10-18'
-updated: '2026-11-05'
+updated: '2026-11-17'
+score_source: category
+score_label: IDV score
+rubric: rubricIdv
+methodology_label: IDV 1.0
+methodology_anchor: '#identity-verification'
 legacy_stats:
 - value: '4'
   label: providers compared
@@ -49,11 +54,11 @@ explainer_html:
   <p><a href="/methodology/">How we evaluate every provider on this list →</a></p>'
 faq:
 - q: 'Which identity verification providers are SOC 2 certified?'
-  a: 'Sumsub, Incode, Persona, Veriff, Shufti Pro, Onfido and Jumio say they have a SOC 2 Type 2 report; we have not seen the reports, so the table marks them vendor-stated. SOC 2 is an auditor''s examination report rather than a certificate. We found no SOC 2 claim for KYCAID, Regula or Veridas; Veridas hosts a SOC 3 report for 2023. Ask for the latest SOC 2 report under NDA before you sign.'
+  a: 'Sumsub, Incode, Persona, Veriff, Shufti Pro, Onfido, Jumio and iDenfy say they have a SOC 2 Type 2 report. We have not seen the reports, so the table marks them vendor-stated. SOC 2 is an auditor''s examination report rather than a certificate. We found no SOC 2 claim for ComplyCube, and KYCAID says its SOC 2 is in progress. Ask for the latest report under NDA before you sign.'
 - q: 'Which providers have iBeta Level 2 or Level 3 liveness?'
-  a: 'Sumsub, Incode and Shufti Pro have iBeta confirmation letters for ISO/IEC 30107-3 Level 3. Persona, Veriff, Regula, Veridas, Onfido and Jumio are confirmed at Level 2. We found no iBeta letter for KYCAID. Each provider''s review links the letter and names the tested product, because a letter covers one product version, not the vendor''s whole platform.'
+  a: 'Sumsub, Incode and Shufti Pro have iBeta confirmation letters for ISO/IEC 30107-3 Level 3. Persona, Veriff, Onfido and Jumio are confirmed at Level 2. ComplyCube and iDenfy state an ISO/IEC 30107-3 result, but we found no iBeta letter under their names, and none for KYCAID. Each provider''s review links the letter and names the tested product, because a letter covers one product version, not the vendor''s whole platform.'
 - q: 'Which identity verification providers support NFC chip reading?'
-  a: 'Sumsub, Incode, Persona, Veriff, Shufti Pro, Regula, Veridas, Onfido and Jumio can read the chip in ePassports or eID cards. Sumsub and Veriff enable it on request. We found no NFC chip reading for KYCAID. A chip read lets the app check the issuer''s digital signature on the stored data, which a photo of the document cannot prove.'
+  a: 'Sumsub, Incode, Persona, Veriff, Shufti Pro, Onfido, Jumio and KYCAID can read the chip in ePassports or eID cards, and ComplyCube and iDenfy sell it as an add-on. Sumsub and Veriff enable it on request. A chip read lets the app check the issuer''s digital signature on the stored data, which a photo of the document cannot prove.'
 - q: 'What is NIST IAL2?'
   a: 'IAL2 is the middle identity assurance level in NIST SP 800-63, the US federal digital identity guidelines: it needs stronger evidence than IAL1 and, unlike IAL3, can be done remotely without an agent. Revision 4 (SP 800-63-4), published on 31 July 2025, replaced SP 800-63-3. Incode lists a Kantara IAL2 Trust Mark, Persona a Kantara assessment against SP 800-63 and Onfido IAL2 under SP 800-63-3. All three claims are vendor-stated.'
 - q: 'Is identity verification the same as KYC?'
@@ -78,9 +83,6 @@ segments:
 - segment: 'US public sector and regulated healthcare'
   slug: persona
   reason: 'Persona for Government holds FedRAMP Moderate authorization, and Persona states HIPAA compliance for US health data.'
-- segment: 'Document fraud with strict data residency'
-  slug: regula
-  reason: 'Regula checks documents against 16,500+ templates and runs self-hosted or offline, so verification data can stay inside your own infrastructure.'
 - segment: 'Developers who want self-serve pricing'
   slug: veriff
   reason: 'Veriff publishes self-serve plans from a $49 monthly minimum and $0.80 per verification, with SDKs, a hosted page and a 15-day free trial.'
