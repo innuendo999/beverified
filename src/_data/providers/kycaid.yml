@@ -262,8 +262,10 @@ capabilities:
     note: per-transaction check, all plans
     source: 1
   nfc:
-    status: not_disclosed
-    note: no NFC reading found
+    status: 'yes'
+    note: chip reading of passports and ID cards in the native SDK (July 2026 update)
+    source: 21
+    checked: '2026-11'
   video_ident:
     status: add_on
     note: Agent-led video calls, standalone solution
@@ -550,6 +552,10 @@ sources:
 - title: 'Face SDK'
   publisher: KYCAID
   url: https://kycaid.com/face-sdk/
+  accessed: '2026-11'
+- title: 'Product updates, summer 2026'
+  publisher: KYCAID
+  url: https://kycaid.com/blog/product-updates-summer-2026/
   accessed: '2026-11'
 entity:
   wikidata: null
