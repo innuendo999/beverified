@@ -52,3 +52,47 @@ export function evidenceChips(q) {
   if (has(mr) && mr.hours) out.push({ label: `Human review ${mr.hours.replace(/^24\/7, typically within about/, "24/7, about")}`, ok: false });
   return out.slice(0, 5);
 }
+
+// ---- Travel Rule (owner, 2026-11-17, canvas "BeVerified: Travel Rule ranking page, redesign proposal") ----
+// Green only where someone other than the vendor confirms it: a network that lists the provider
+// (networks[].evidence: independent) or an ISO/IEC 27001 certificate we opened (status confirmed).
+const NET_SHOWN = { built_in: "", live: "", own: "", bridge: " via bridge", outdated: " (old version)" };
+const netName = (n) => (/^own network$/i.test(n.name) ? "Own network" : n.name);
+const netList = (q) => (q?.networks || []).filter((n) => n.name && !/^other networks$/i.test(n.name));
+const confirmedNets = (q) => netList(q).filter((n) => n.evidence === "independent" && n.status in NET_SHOWN && n.status !== "outdated").map(netName);
+const vendorNets = (q) => netList(q).filter((n) => n.evidence !== "independent" && n.status in NET_SHOWN).map((n) => netName(n) + NET_SHOWN[n.status]);
+const iso27001 = (q) => certs(q).some((c) => /27001/.test(c.name) && c.status === "confirmed");
+const deployShort = (q, fit) => fit?.deploy?.[q.slug]?.short || null;
+
+export function travelRuleTop3(q, fit) {
+  const ok = confirmedNets(q), plain = vendorNets(q).slice(0, 2);
+  return {
+    cols: [
+      { label: "Networks", ok: ok.join(", "), text: plain.join(", ") || (ok.length ? "" : "None confirmed") },
+      { label: "Deployment", ok: "", text: deployShort(q, fit) || "Not stated" },
+    ],
+  };
+}
+
+export function travelRuleChips(q, fit) {
+  if (!q) return [];
+  const out = confirmedNets(q).map((n) => ({ label: `${n} link confirmed`, ok: true }));
+  if (iso27001(q)) out.push({ label: "ISO/IEC 27001 certified", ok: true });
+  for (const n of vendorNets(q)) out.push({ label: n, ok: false });
+  const d = deployShort(q, fit);
+  if (d) out.push({ label: d, ok: false });
+  return out.slice(0, 5);
+}
+
+// Columns of the top 3 table and the list chips for one ranking (category file `evidence`).
+export function v2Evidence(c, q, fit) {
+  if (c.evidence === "travel-rule") return { ...travelRuleTop3(q, fit), chips: travelRuleChips(q, fit) };
+  const f = top3Facts(q);
+  return {
+    cols: [
+      { label: "Liveness test (iBeta)", ok: f.padOk ? f.pad : "", text: f.padOk ? "" : f.pad },
+      { label: "Trust framework", ok: f.frameworkOk ? f.framework : "", text: f.frameworkOk ? "" : f.framework },
+    ],
+    chips: evidenceChips(q),
+  };
+}

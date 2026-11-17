@@ -4,7 +4,7 @@
 import { buildMatrix } from "./_lib/capabilities.js";
 import { termForCapability } from "./_lib/glossary.js";
 import { calcProvider } from "./_lib/budget.js";
-import { top3Facts, evidenceChips } from "./_lib/ranking-evidence.js";
+import { v2Evidence } from "./_lib/ranking-evidence.js";
 import { rankingSponsor } from "./_lib/placements.js";
 
 export default {
@@ -44,10 +44,19 @@ export default {
       const cs = d.c.budget_calc && q ? q.category_scores?.[d.c.slug] : null;
       const costS = cs?.cost_s ?? null, costM = cs?.cost_m ?? null;
       // Layout v2 (category file layout: v2): evidence for the top 3 table and the chips on each list row.
-      const bare = price ? String(price).replace(/^From\s+/i, "") : null;
-      const v2 = d.c.layout === "v2" && q ? { ...top3Facts(q), chips: evidenceChips(q), price: bare && /^[\d$€£]|^Free/i.test(bare) ? `From ${bare}` : bare } : null;
+      // Price chip shows the listed text as it is ("From" is already part of it where it applies).
+      const v2 = d.c.layout === "v2" && q ? { ...v2Evidence(d.c, q, d.travelRuleFit), price: price || null } : null;
       return { rank: i + 1, r, q, price, priceVerified, score, costS, costM, v2 };
     }),
+    // Layout v2: month of the oldest price check among the top 3 (pricing.verified), for the top 3 caption.
+    top3Checked: (d) => {
+      if (d.c.layout !== "v2") return null;
+      const ym = (d.rankings[d.c.slug]?.providers || []).slice(0, 3)
+        .map((r) => String(d.providers[r.slug]?.pricing?.verified || "").slice(0, 7)).filter((x) => /^\d{4}-\d{2}$/.test(x)).sort()[0];
+      return ym ? new Date(`${ym}-01T00:00:00Z`).toLocaleDateString("en-US", { month: "short", year: "numeric", timeZone: "UTC" }) : null;
+    },
+    // Layout v2: the commission disclosure shows only when the list carries an affiliate or paid link (owner, 2026-11-17).
+    hasPaidLink: (d) => (d.rankings[d.c.slug]?.providers || []).some((r) => r.site_link && ["affiliate", "paid"].includes(d.providers[r.slug]?.link?.type)),
     // Layout v2: one sponsor slot under the top 3 (placements.yml surface: ranking), with its real rank and the
     // score this page ranks on. Never changes the order of the list.
     rankSponsor: (d) => {

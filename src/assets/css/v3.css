@@ -1732,29 +1732,37 @@ html:not(.mm-js) .mm-item:hover .mm-panel, html:not(.mm-js) .mm-item:focus-withi
 .r2-sponsor__cta { display: flex; gap: 10px; flex-wrap: wrap; }
 .r2-sponsor__note { flex-basis: 100%; margin: 0; font-size: 13px; color: var(--muted); }
 .r2-rows { display: flex; flex-direction: column; gap: 12px; margin: 0; }
-.r2-row { padding: 20px 24px; display: flex; flex-direction: column; gap: 14px; }
-.r2-row--top { border-color: var(--accent); }
-.r2-row__head { display: flex; align-items: flex-start; gap: 18px; flex-wrap: wrap; }
-.r2-row__num { font-size: 28px; font-weight: 700; font-variant-numeric: tabular-nums; min-width: 44px; line-height: 1.1; }
-.r2-row__logo { margin-top: 6px; }
+/* Card grid (owner, 2026-11-17): rank | logo | content | score; chips, pros/cons and buttons share the content column. */
+.r2-row { padding: 22px 24px; display: grid; grid-template-columns: 44px 110px minmax(0, 1fr) 110px; column-gap: 20px; row-gap: 14px; align-items: start; }
+.r2-row--top { border: 2px solid var(--accent); background: var(--accent-soft); }
+.r2-row__num { grid-column: 1; grid-row: 1; font-size: 28px; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1.1; }
+.r2-row__brand { grid-column: 2; grid-row: 1; height: 32px; display: flex; align-items: center; }
 .r2-row__logo { height: 24px; width: 110px; object-fit: contain; object-position: left; }
-.r2-row__main { flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.r2-row__wm { font-weight: 700; font-size: 15px; line-height: 1.15; letter-spacing: -0.01em; }
+.r2-row__main { grid-column: 3; grid-row: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
 .r2-row__main p { margin: 0; font-size: 15px; color: var(--body); }
-.r2-row__title { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.r2-row__title { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; min-height: 32px; }
 .r2-row__title h3 { margin: 0; font-size: 19px; }
-.r2-row__score { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; min-width: 110px; font-variant-numeric: tabular-nums; }
+.r2-row__score { grid-column: 4; grid-row: 1; display: flex; flex-direction: column; align-items: flex-end; gap: 2px; font-variant-numeric: tabular-nums; }
 .r2-row__score strong { font-size: 22px; }
-.r2-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0 0 0 190px; }
+.r2-award { display: inline-flex; align-items: center; color: #fff; background: var(--accent); border: 0; border-radius: var(--radius-pill); font-weight: 600; font-size: 14px; padding: 5px 14px; white-space: nowrap; }
+.r2-chips { grid-column: 3 / 5; display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; }
 .r2-chips li { font-size: 13px; color: var(--body); background: var(--surface-soft); border: 1px solid var(--line-soft); border-radius: 8px; padding: 3px 10px; }
 .r2-chips li.is-ok { color: var(--ok); background: var(--ok-soft); border-color: transparent; }
-.r2-chips li.is-price { font-variant-numeric: tabular-nums; }
-.r2-row__more { padding-left: 190px; margin-top: -10px; }
+.r2-chips li.is-price { font-variant-numeric: tabular-nums; background: var(--surface); border-color: var(--line); }
+.r2-row__more { grid-column: 3 / 5; margin-top: -10px; }
 .r2-row__more summary { cursor: pointer; font-size: 14px; font-weight: 500; color: var(--accent); display: list-item; padding: 12px 0; line-height: 20px; width: max-content; }
 .r2-pc { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 10px; font-size: 14px; color: var(--body); }
 .r2-pc h4 { margin: 0 0 6px; font-size: 14px; color: var(--ink); }
 .r2-pc ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px; }
-.r2-row__foot { padding-left: 190px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.r2-row__foot { grid-column: 3 / 5; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding-top: 14px; border-top: 1px solid var(--line-soft); }
+.r2-row--top .r2-row__foot { border-top-color: #C9D6F5; }
 .r2-row__foot .btn { min-height: 44px; }
+.r2-row__foot .btn--secondary { background: transparent; }
+.r2-row__site { display: inline-flex; align-items: center; gap: 10px; margin-left: auto; }
+.r2-table tbody tr.is-first > * { background: var(--accent-soft); }
+.r2-table td[data-label="Best for"] { min-width: 170px; }
+.r2-table td[data-label="Deployment"] { white-space: nowrap; }
 .r2-method { font-size: 15px; color: var(--body); margin: 0; }
 @media (max-width: 720px) {
   .r2-table { min-width: 0; }
@@ -1768,13 +1776,16 @@ html:not(.mm-js) .mm-item:hover .mm-panel, html:not(.mm-js) .mm-item:focus-withi
   .r2-table__cta .btn { width: 100%; min-height: 44px; }
   .r2-sponsor__cta { width: 100%; }
   .r2-sponsor__cta .btn { flex: 1 1 0; min-height: 44px; }
-  .r2-row { padding: 16px; }
-  .r2-row__head { gap: 10px 12px; }
-  .r2-row__num { font-size: 22px; min-width: 32px; }
+  .r2-row { padding: 16px; grid-template-columns: 32px minmax(0, 1fr) auto; column-gap: 10px; row-gap: 12px; }
+  .r2-row__num { font-size: 22px; }
+  .r2-row__brand { height: 28px; }
   .r2-row__logo { width: 88px; height: 20px; }
-  .r2-row__main { flex-basis: 100%; order: 3; }
-  .r2-row__score { margin-left: auto; min-width: 0; }
-  .r2-chips, .r2-row__more, .r2-row__foot { padding-left: 0; }
+  .r2-row__score { grid-column: 3; }
+  .r2-row__main, .r2-chips, .r2-row__more, .r2-row__foot { grid-column: 1 / -1; }
+  .r2-row__main { grid-row: 2; }
   .r2-pc { grid-template-columns: minmax(0, 1fr); gap: 14px; }
-  .r2-row__foot .btn { flex: 1 1 100%; }
+  .r2-row__foot { flex-direction: column; align-items: stretch; }
+  .r2-row__foot .btn, .r2-row__site, .r2-row__site .btn { width: 100%; margin-left: 0; }
+  .r2-row__site { flex-direction: column; align-items: stretch; }
+  .r2-table td[data-label="Best for"] { min-width: 0; }
 }
