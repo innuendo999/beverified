@@ -335,6 +335,15 @@ coverage:
     status: 'yes'
     note: e-IDV Pro checks government data sources
     source: 22
+independent_tests:
+  rivr:
+  - track: Selfie Match to Document
+    alias: MTDS 15
+    goals_met: all
+    note: 'MdTF worst-case values for MTDS 15: selfie and document FTXR 0%, FNMR <0.68%, FMR <0.01%, within the DHS goals of FNMR 1% and FMR 0.01%; alias disclosed by Shufti'
+    source: 32
+    alias_source: 33
+    checked: '2026-11'
 track_record:
   ownership:
     status: stable
@@ -541,6 +550,14 @@ sources:
 - title: '1:1 Authentication'
   publisher: Shufti
   url: https://shuftipro.com/1-1-authentication/
+  accessed: '2026-11'
+- title: 'Remote Identity Validation Rally, results (Selfie Match to Document)'
+  publisher: DHS S&T, Maryland Test Facility
+  url: https://mdtf.org/rivr/Results
+  accessed: '2026-11'
+- title: 'Shufti recognised as a top performer in DHS RIVR 2025'
+  publisher: Shufti
+  url: https://shuftipro.com/blog/shufti-recognised-as-a-top-performer-in-dhs-rivr-2025/
   accessed: '2026-11'
 entity:
   wikidata: null
