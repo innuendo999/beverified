@@ -185,6 +185,25 @@ capabilities:
     status: partial
     note: Europe and USA environments; customer choice not stated
     source: 24
+  doc_forensics:
+    status: 'yes'
+    note: 'document authenticity checks on security features'
+    source: 30
+    checked: '2026-11'
+  manual_review:
+    status: 'not_disclosed'
+    note: 'no review by Veridas staff described'
+    hours: null
+    checked: '2026-11'
+  proof_of_address:
+    status: 'not_disclosed'
+    note: 'no proof-of-address product found'
+    checked: '2026-11'
+  reverification:
+    status: 'yes'
+    note: 'face biometric authentication of returning users'
+    source: 31
+    checked: '2026-11'
 integration:
   checked: '2026-11'
   docs_public:
@@ -423,6 +442,14 @@ sources:
 - title: "Veridas achieves CEN/TS 18099 High Level certification (10 Nov 2026)"
   publisher: Veridas via EIN Presswire
   url: https://www.einpresswire.com/article/955768944/veridas-achieves-cen-ts-18099-high-level-certification-the-only-international-standard-against-injection-attacks
+  accessed: '2026-11'
+- title: 'Document Verification'
+  publisher: Veridas
+  url: https://veridas.com/en/global-document-verification/
+  accessed: '2026-11'
+- title: 'Face biometric authentication'
+  publisher: Veridas
+  url: https://veridas.com/en/face-biometric-authentication/
   accessed: '2026-11'
 entity:
   wikidata: null

@@ -233,6 +233,26 @@ capabilities:
     status: 'yes'
     note: EU, US or Canada region for data at rest
     source: 21
+  doc_forensics:
+    status: 'yes'
+    note: 'visual authenticity and image integrity checks, including security features'
+    source: 25
+    checked: '2026-11'
+  manual_review:
+    status: 'yes'
+    note: 'hybrid AI and human expert review, stated in a customer story; no hours or turnaround published'
+    source: 26
+    hours: null
+    checked: '2026-11'
+  proof_of_address:
+    status: 'yes'
+    note: 'Proof of Address report on bank statements and utility bills'
+    source: 27
+    checked: '2026-11'
+  reverification:
+    status: 'not_disclosed'
+    note: 'Known Faces checks duplicates; no re-verification of returning users found'
+    checked: '2026-11'
 integration:
   checked: '2026-11'
   docs_public:
@@ -455,6 +475,18 @@ sources:
 - title: "Entrust identity verification"
   publisher: Entrust
   url: https://www.entrust.com/identity-verification/
+  accessed: '2026-11'
+- title: 'Document report'
+  publisher: Entrust
+  url: https://documentation.identity.entrust.com/guide/document-report/
+  accessed: '2026-11'
+- title: 'Neeyamo case study'
+  publisher: Entrust
+  url: https://www.entrust.com/resources/case-studies/neeyamo
+  accessed: '2026-11'
+- title: 'Proof of Address'
+  publisher: Entrust
+  url: https://documentation.identity.entrust.com/guide/proof-of-address-report/
   accessed: '2026-11'
 entity:
   wikidata: null

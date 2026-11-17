@@ -353,6 +353,25 @@ capabilities:
   data_residency:
     status: not_disclosed
     note: hosting region not stated
+  doc_forensics:
+    status: 'not_disclosed'
+    note: 'no document tampering or security-feature checks described on kycaid.com or in its docs'
+    checked: '2026-11'
+  manual_review:
+    status: 'yes'
+    note: 'human verification experts review cases the automatic check cannot decide; no hours or turnaround published on kycaid.com'
+    source: 18
+    hours: null
+    checked: '2026-11'
+  proof_of_address:
+    status: 'yes'
+    note: 'proof of address check with manual review when needed'
+    source: 18
+    checked: '2026-11'
+  reverification:
+    status: 'not_disclosed'
+    note: 'no re-verification of returning users described'
+    checked: '2026-11'
 integration:
   checked: '2026-11'
   docs_public:
@@ -501,6 +520,10 @@ sources:
 - title: Blacklist databases (API docs)
   publisher: KYCAID
   url: https://docs.kycaid.com/risks-check/blacklist-databases
+  accessed: '2026-11'
+- title: 'Proof of address'
+  publisher: KYCAID
+  url: https://kycaid.com/proof-of-address
   accessed: '2026-11'
 entity:
   wikidata: null

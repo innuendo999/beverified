@@ -272,6 +272,27 @@ capabilities:
     status: 'yes'
     note: choose US or EU data centers
     source: 2
+  doc_forensics:
+    status: 'yes'
+    note: 'checks to catch doctored government IDs'
+    source: 12
+    checked: '2026-11'
+  manual_review:
+    status: 'not_disclosed'
+    note: 'review queues and cases for the customer''s own team; no review by Persona staff described'
+    source: 12
+    hours: null
+    checked: '2026-11'
+  proof_of_address:
+    status: 'yes'
+    note: 'KYC + Address solution: ID, selfie and proof-of-address document'
+    source: 36
+    checked: '2026-11'
+  reverification:
+    status: 'yes'
+    note: 'reverification of existing users'
+    source: 37
+    checked: '2026-11'
 integration:
   checked: '2026-11'
   docs_public:
@@ -537,6 +558,14 @@ sources:
 - title: Introducing Know Your Agent on Chatbase (22 October 2026)
   publisher: Chatbase
   url: https://www.chatbase.co/blog/introducing-know-your-agent-on-chatbase
+  accessed: '2026-11'
+- title: 'KYC + Address Solution'
+  publisher: Persona
+  url: https://help.withpersona.com/articles/TOVyBm0zPfRYqr89lzZcU
+  accessed: '2026-11'
+- title: 'What is reverification and why does it matter?'
+  publisher: Persona
+  url: https://withpersona.com/blog/what-is-reverification-and-why-does-it-matter
   accessed: '2026-11'
 entity:
   wikidata: null

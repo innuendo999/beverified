@@ -232,6 +232,26 @@ capabilities:
   kyb_documents:
     status: not_disclosed
     note: company documents not described
+  doc_forensics:
+    status: 'yes'
+    note: 'checks for physical and digital tampering, microprint and security features'
+    source: 31
+    checked: '2026-11'
+  manual_review:
+    status: 'not_disclosed'
+    note: 'no review by Incode staff described'
+    hours: null
+    checked: '2026-11'
+  proof_of_address:
+    status: 'yes'
+    note: 'utility bills, bank statements and other proof-of-address documents'
+    source: 32
+    checked: '2026-11'
+  reverification:
+    status: 'yes'
+    note: 'face authentication of returning users and step-up checks'
+    source: 33
+    checked: '2026-11'
 integration:
   checked: '2026-11'
   docs_public:
@@ -477,6 +497,18 @@ sources:
 - title: "Incode launches Deepsight deepfake defense (2 Dec 2025)"
   publisher: Incode
   url: https://www.incode.com/press/incode-launches-deepsight-deepfake-defense-validated-by-purdue-study
+  accessed: '2026-11'
+- title: 'Document verification'
+  publisher: Incode
+  url: https://incode.com/our-technology/document-verification
+  accessed: '2026-11'
+- title: 'Non-ID document validation'
+  publisher: Incode
+  url: https://incode.com/products/non-id-document-validation/
+  accessed: '2026-11'
+- title: 'Authentication'
+  publisher: Incode
+  url: https://incode.com/use-cases/authentication/
   accessed: '2026-11'
 entity:
   wikidata: null
