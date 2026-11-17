@@ -112,3 +112,25 @@ Not done (suggestions for the owner):
 
 - Award "Best for EU CASPs" approved.
 - Logo: the editor supplied the CryptoSwift logo (purple icon, white wordmark text). Saved as `src/assets/img/wordmarks/cryptoswift.png`, 64 px tall, with the white text recoloured to the site ink colour so it reads on the light background.
+
+## Update 2026-11-17: partial re-check (networks, pricing, ratings)
+
+`last_verified` stays 2026-10-30 (not a full pass). Score and sub-scores unchanged until the Travel Rule methodology is published; only notes and copy changed.
+
+Newly readable: cryptoswift.network (target of cryptoswift.eu/ecosystem/) and docs.cryptoswift.eu (target of dev.cryptoswift.eu).
+
+| Item | Finding | Source |
+|---|---|---|
+| Ospree | Two-way message exchange announced 17 Nov 2026 (CryptoSwift blog, Uve Poom), no go-live date; Ospree docs describe the route, no direct integration needed | 30, 8 |
+| TRP | Network page: "We handle CODE, TAP, IVMS101, TRP and other protocols ... behind the scenes", no status. OpenVASP's TRP page names 21 Analytics, Blockchain Intelligence Group, Ospree, not CryptoSwift. New network status `claimed` | 29, 34 |
+| TAP | Named on the network page, not defined; not used in the record | 29 |
+| VASPs outside the network | Docs FAQ: give the VASP's name, email or contact details and CryptoSwift delivers the payload; recorded as `Email` fallback | 31 |
+| Network size | 254 connected VASPs (send and receive or receive only), 115 verified members, 28 partners, 2,500+ exchange profiles, 10,000+ other profiles; homepage still 250+ / 2,500+ reachable / 85+ jurisdictions | 29, 1 |
+| CODE | Still lists CryptoSwift (17 Nov 2026) | 7 |
+| Credits | Outgoing transfer 1, incoming detection 1 (only while enabled), KYW 1, self-hosted wallet verification 1, with risk score 2, AML screening 5, KYT on request; overage not described | 32 |
+| Partner API | Reseller (white-label) track and a network track; no network named | 33 |
+| Pricing page | Unchanged | 2 |
+| ISO/IEC 27001 | Still no certificate, body or scope; docs offer a compliance package for due diligence | 31 |
+| G2 | Editor's browser screenshot, 17 Nov 2026: 5 reviews, average 4.9, product "Travel Rule & Crypto Compliance Hub", newest 12 Nov 2026. Added to `user_ratings` with two praise themes; no criticism visible. "No user reviews yet" removed from cons and the ranking card. Pricing page re-checked by the editor's screenshot the same day: unchanged | editor |
+
+Not done: `pricing_calc` (the calculator parses "EUR 600 / month"; the record writes "€600", which also feeds the Pricing Index), category FAQ on self-hosted wallets, official e-Business Register and GLEIF.

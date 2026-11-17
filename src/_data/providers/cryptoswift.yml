@@ -21,11 +21,11 @@ link:
   url: https://cryptoswift.eu
   type: none
 last_verified: '2026-10-30'
-updated: '2026-11-11'   # last content edit; last_verified = last fact re-check
-verdict: "CryptoSwift suits EU crypto firms that want a hosted Travel Rule API with prices on the website. It reaches counterparties over its own STRIP network and through CODE, which lists it as connected, and it can receive Notabene transfers. The catch is reach and track record: we found no TRUST, TRP or TRISA link, its ISO/IEC 27001 certificate is not published, and the company is young and small (registered in 2023, €510,000 pre-seed in 2025)."
+updated: '2026-11-17'   # last content edit; last_verified = last fact re-check
+verdict: "CryptoSwift suits EU crypto firms that want a hosted Travel Rule API with prices on the website. It reaches counterparties over its own STRIP network, through CODE, which lists it as connected, and through Ospree, and it can receive Notabene transfers. The catch is reach and track record: we found no TRUST or TRISA link, its TRP claim is not confirmed by OpenVASP, its ISO/IEC 27001 certificate is not published, and the company is young and small (registered in 2023, €510,000 pre-seed in 2025)."
 what_is:
-- CryptoSwift is a hosted Travel Rule platform. A VASP sends transaction and originator and beneficiary data to one REST API, and CryptoSwift delivers it to the counterparty VASP, returns the delivery status and a risk result, and applies the customer's own rules to proceed, wait for more information, send the transfer to manual review or block it. Messages travel over STRIP, CryptoSwift's own open-source JSON messaging standard. Around the messaging sit a client dashboard, a rule engine, a Travel Rule risk score, a VASP directory with counterparty profiles, and wallet screening through KYT providers the customer already uses. An on-premises add-on called Outpost keeps personal data in the customer's own database while the cloud platform handles routing. The homepage claims 250+ connected VASPs, 2,500+ reachable VASPs and 85+ jurisdictions; we could not check those figures.
-- 'Before you buy, check how far CryptoSwift reaches outside its own network. CODE, the Korean Travel Rule network, lists CryptoSwift on its homepage among the networks it connects to, and CryptoSwift says it has received transfers from the Notabene network since September 2025. Ospree''s developer docs describe CryptoSwift as a route to VASPs on the CryptoSwift network. CryptoSwift''s FAQ explains TRP, TRUST, TRISA, Sygna Bridge and VerifyVASP, but we found no page saying CryptoSwift connects to any of them.'
+- CryptoSwift is a hosted Travel Rule platform. A VASP sends transaction and originator and beneficiary data to one REST API, and CryptoSwift delivers it to the counterparty VASP, returns the delivery status and a risk result, and applies the customer's own rules to proceed, wait for more information, send the transfer to manual review or block it. Messages travel over STRIP, CryptoSwift's own open-source JSON messaging standard. Around the messaging sit a client dashboard, a rule engine, a Travel Rule risk score, a VASP directory with counterparty profiles, and wallet screening through KYT providers the customer already uses. An on-premises add-on called Outpost keeps personal data in the customer's own database while the cloud platform handles routing. Its network page counts 254 connected VASPs, meaning VASPs that already receive messages through CryptoSwift, some of them receive-only, and 115 verified members that have claimed their account. The homepage also claims 2,500+ reachable VASPs and 85+ jurisdictions. We could not check any of these figures.
+- 'Before you buy, check how far CryptoSwift reaches outside its own network. CODE, the Korean Travel Rule network, lists CryptoSwift on its homepage among the networks it connects to. Ospree''s developer docs describe CryptoSwift as a route for Ospree customers, and on 17 November 2026 the two companies announced two-way message exchange. CryptoSwift says it has received transfers from the Notabene network since September 2025. Its network page says it handles TRP behind the scenes, but OpenVASP''s TRP page does not list CryptoSwift and no status is given, so treat TRP as unconfirmed. We found no TRUST or TRISA link. A counterparty outside the network can still get the data: CryptoSwift''s docs say you give the VASP''s name, email or other contact details and it delivers the message.'
 - The company is CryptoSwift OÜ of Tartu, Estonia (registry code 16668875). It says it was founded in 2022; the Estonian register shows the company registered on 3 February 2023. Indrek Ulst is CEO and founder and Uve Poom is COO and co-founder. In July 2025 it raised a €510,000 pre-seed round from Tenity, Startup Wise Guys, DEPO Ventures and angel investors. Blockpass, Global Ledger and Lexters have announced partnerships with it. Named customers include Januar, a Danish payment institution with a MiCA licence, Striga (now part of Lightspark), Change, CryptoVoucher and Instacoins.
 features:
 - One REST API for pre-transaction and post-transaction Travel Rule messages, with webhooks for message, transaction and wallet verification status.
@@ -34,8 +34,9 @@ features:
 - Self-hosted wallet checks by cryptographic signature, micro-transfer (Satoshi test), photo or video proof and self-declaration. CryptoSwift says signatures work with 600+ wallet apps on EVM networks, Bitcoin, Solana and Tron, and an optional guided selfie or source-of-funds step can be added.
 - A claim feature for incoming transfers that arrive without Travel Rule data, where CryptoSwift tries to identify the sending VASP and requests the missing information.
 - Free sandbox with separate credentials, a developer portal with interactive demos, and Outpost on the Enterprise plan for keeping personal data on your own premises.
+- A Partner API for compliance platforms that resell CryptoSwift under their own brand, and for Travel Rule networks that want to exchange messages with CryptoSwift customers.
 pricing:
-  summary: CryptoSwift publishes two of its three plans. Essentials costs €600 a month and Professional €1,200 a month, both billed annually and paid upfront, so the minimum is €7,200 or €14,400 a year. Quarterly billing costs €750 or €1,500 a month. Plans are sized in monthly credits (2,000, 6,000 and 20,000+), but the pricing page does not say what one credit buys. Enterprise is quoted. There is no setup fee and the integration sandbox is free.
+  summary: 'CryptoSwift publishes two of its three plans. Essentials costs €600 a month and Professional €1,200 a month, both billed annually and paid upfront, so the minimum is €7,200 or €14,400 a year. Quarterly billing costs €750 or €1,500 a month. Plans are sized in monthly credits (2,000, 6,000 and 20,000+). The developer docs price each action in credits: one for an outgoing Travel Rule transfer, a detected incoming transfer, a wallet check or a self-hosted wallet verification, two for a wallet verification with a risk score and five for an AML screening. KYT checks are quoted, and the docs do not say what happens when the credits run out. Enterprise is quoted. There is no setup fee and the integration sandbox is free.'
   plans:
   - tier: Essentials
     price: €600 / month, billed annually
@@ -57,7 +58,7 @@ pricing:
     - 'Essentials'
     - 'Professional'
     minimum_note: 'Plan fee, annual or quarterly'
-    included: 'Monthly credit allowance, no setup fee and a free sandbox; the page does not say what one credit buys'
+    included: 'Monthly credit allowance (1 credit per outgoing transfer), no setup fee and a free sandbox'
   items:
   - label: Essentials
     value: €600 / month on annual billing paid upfront (minimum €7,200 a year); €750 / month on quarterly billing; 2,000 monthly credits
@@ -80,9 +81,9 @@ pricing:
     source: 2
     verified: '2026-11'
   - label: What a credit buys
-    value: Not stated on the pricing page
+    value: 1 credit per outgoing Travel Rule transfer, detected incoming transfer, Know Your Wallet check or self-hosted wallet verification; 2 for a wallet verification with risk score; 5 for an AML screening; KYT checks quoted; overage not stated
     kind: official
-    source: 2
+    source: 32
     verified: '2026-11'
 facts:
 - label: From
@@ -118,12 +119,12 @@ facts:
   source: 4
   evidence: vendor
 - label: Networks and protocols
-  value: Own STRIP network; listed by CODE as a connected network; incoming Notabene transfers; no TRUST, TRP or TRISA link found
+  value: Own STRIP network; listed by CODE as a connected network; Ospree route in Ospree's docs and two-way exchange announced 17 Nov 2026; incoming Notabene transfers; TRP vendor-stated only; no TRUST or TRISA link found
   source: 7
   evidence: independent
 - label: Network size
-  value: 250+ connected and 2,500+ reachable VASPs, 85+ jurisdictions (vendor-stated)
-  source: 1
+  value: 254 connected VASPs and 115 verified members (network page); 2,500+ reachable VASPs and 85+ jurisdictions (homepage); vendor-stated
+  source: 29
   evidence: vendor
 - label: Self-hosted wallet checks
   value: Signature, micro-transfer (Satoshi test), photo or video proof, self-declaration
@@ -134,13 +135,13 @@ facts:
   source: 10
   evidence: vendor
 pros:
-- Prices on the website, from €600 a month on annual billing, with no setup fee and a free sandbox
+- Prices on the website, from €600 a month on annual billing, with a published credit table, no setup fee and a free sandbox
 - Four self-hosted wallet checks, including signatures that CryptoSwift says work with 600+ wallet apps
 - A rule engine and risk score that can approve, hold, escalate or block each transfer automatically
 cons:
-- No TRUST, TRP or TRISA link found; reach beyond its own STRIP network rests on CODE and incoming Notabene transfers
+- No TRUST or TRISA link found and its TRP claim is unconfirmed; reach beyond STRIP rests on CODE, Ospree and incoming Notabene transfers
 - ISO/IEC 27001:2022 is vendor-stated with no certificate, auditor or scope published, and there is no SOC 2 report
-- A young, small company (registered 2023, €510,000 pre-seed) with no user reviews yet, and the pricing page does not say what a credit buys
+- A young, small company (registered 2023, €510,000 pre-seed), and KYT checks are priced only on request
 alternatives:
 - slug: 21analytics
   name: 21 Analytics
@@ -162,17 +163,19 @@ choose_instead:
   text: your volumes are small and you would rather pay per message than an annual minimum.
 user_reviews:
   legacy_note: null
-  praise: []
+  praise:
+  - 'Simpler Travel Rule compliance: G2 reviewers say it makes sharing Travel Rule data and meeting the requirements easier.'
+  - 'Support: reviewers call the support team responsive and quick to solve problems specific to their business.'
   criticize: []
   by_profile:
   - EU crypto-asset service providers under the Transfer of Funds Regulation that want a hosted API and published prices are CryptoSwift's clearest fit.
-  - Firms that send most transfers to TRUST members, or to VASPs on TRP or TRISA, should get CryptoSwift to show how it reaches those counterparties before signing.
+  - Firms that send most transfers to TRUST members, or to VASPs on TRP or TRISA, should ask CryptoSwift to show in writing how it reaches those counterparties before signing.
   - Larger firms that must keep customer data on their own premises need the Enterprise plan, which is the only one with Outpost.
 faq:
 - q: How much does CryptoSwift cost?
-  a: Essentials costs €600 a month and Professional €1,200 a month, billed annually and paid upfront, so the yearly minimum is €7,200 or €14,400. Quarterly billing costs €750 or €1,500 a month. Enterprise is quoted. Plans include 2,000, 6,000 or 20,000+ monthly credits, but the pricing page does not say what one credit buys, so ask how transfers and wallet checks are counted.
+  a: Essentials costs €600 a month and Professional €1,200 a month, billed annually and paid upfront, so the yearly minimum is €7,200 or €14,400. Quarterly billing costs €750 or €1,500 a month. Enterprise is quoted. Plans include 2,000, 6,000 or 20,000+ monthly credits. An outgoing transfer, a detected incoming transfer or a wallet verification uses one credit and an AML screening uses five. KYT checks are quoted, and the docs do not say what happens when credits run out, so ask before you sign.
 - q: Which Travel Rule networks can CryptoSwift reach?
-  a: Its own STRIP network, which it says connects 250+ VASPs and reaches 2,500+. CODE lists CryptoSwift on its homepage as a connected network, CryptoSwift says it can receive transfers from the Notabene network, and Ospree's docs describe CryptoSwift as a route for Ospree customers. We found no connection to TRUST, TRP, TRISA, GTR or VerifyVASP, so check your main counterparties before you commit.
+  a: Its own STRIP network, which it says has 254 connected VASPs. CODE lists CryptoSwift on its homepage as a connected network, Ospree's docs describe CryptoSwift as a route for Ospree customers, and the two announced two-way exchange in November 2026. CryptoSwift says it can receive transfers from the Notabene network and that it handles TRP, but OpenVASP does not list it, so TRP is unconfirmed. We found no connection to TRUST, TRISA, GTR or VerifyVASP. For a VASP outside the network, you give its contact details and CryptoSwift sends the data there. Check your main counterparties before you commit.
 - q: What is STRIP?
   a: STRIP is CryptoSwift's own open-source, JSON-based standard for exchanging Travel Rule data. Its repository is public on GitLab. Other networks, such as CODE, reach CryptoSwift customers through their own integrations with CryptoSwift.
 - q: How does CryptoSwift verify self-hosted wallets?
@@ -199,7 +202,12 @@ certifications:
   what: Information security management; CryptoSwift says it passed certification, and Copla's July 2026 case study says it was achieved in two months. No body, number or scope published
   status: vendor_stated
   source: 10
-user_ratings: []
+user_ratings:
+- platform: G2
+  rating: 4.9
+  count: 5
+  checked: '2026-11'
+  url: https://www.g2.com/sellers/cryptoswift
 use_case_verdicts: []
 score_breakdown:
 - criterion: Compliance & certifications
@@ -210,12 +218,12 @@ score_breakdown:
 - criterion: Coverage
   weight: 20
   score: 4.0
-  note: CODE's homepage lists CryptoSwift as a connected network, Ospree documents a route to it, and CryptoSwift says it receives Notabene transfers. It also documents four self-hosted wallet checks and claims 2,500+ reachable VASPs in 85+ jurisdictions. We found no TRUST, TRP, TRISA, GTR or VerifyVASP connection.
+  note: CODE's homepage lists CryptoSwift as a connected network, Ospree documents a route to it, and CryptoSwift says it receives Notabene transfers. It also documents four self-hosted wallet checks, delivery to counterparties outside its network and 254 connected VASPs. Its TRP claim is not confirmed by OpenVASP, and we found no TRUST, TRISA, GTR or VerifyVASP connection.
   evidence: independent
 - criterion: Pricing transparency
   weight: 20
   score: 4.4
-  note: Prices for Essentials and Professional are published with annual minimums, quarterly rates, credit allowances and inclusions. Enterprise is quoted, and the page does not say what one credit buys.
+  note: Prices for Essentials and Professional are published with annual minimums, quarterly rates, credit allowances and inclusions. Enterprise and KYT checks are quoted. The credit cost of each action is in the developer docs, not on the pricing page.
   evidence: vendor
 - criterion: Integration & API depth
   weight: 15
@@ -225,7 +233,7 @@ score_breakdown:
 - criterion: Support responsiveness
   weight: 10
   score: 3.5
-  note: Priority support comes with Professional and 24/7 SLA-backed support with Enterprise, but no response times are published, the 99.9% uptime badge is not a contractual SLA, and GetApp and Software Advice show no user reviews.
+  note: Priority support comes with Professional and 24/7 SLA-backed support with Enterprise, but no response times are published and the 99.9% uptime badge is not a contractual SLA.
   evidence: vendor
 - criterion: Track record
   weight: 10
@@ -346,6 +354,30 @@ sources:
   publisher: EUR-Lex
   url: https://eur-lex.europa.eu/eli/reg/2023/1113/oj
   accessed: '2026-10'
+- title: CryptoSwift Network
+  publisher: CryptoSwift
+  url: https://cryptoswift.network/
+  accessed: '2026-11'
+- title: CryptoSwift and Ospree announce network interoperability
+  publisher: CryptoSwift
+  url: https://cryptoswift.eu/cryptoswift-and-ospree-announce-network-interoperability/
+  accessed: '2026-11'
+- title: Frequently asked questions
+  publisher: CryptoSwift docs
+  url: https://docs.cryptoswift.eu/en/docs/resources/faq
+  accessed: '2026-11'
+- title: Credit usage
+  publisher: CryptoSwift docs
+  url: https://docs.cryptoswift.eu/docs/resources/credit-usage
+  accessed: '2026-11'
+- title: CryptoSwift Partner API
+  publisher: CryptoSwift docs
+  url: https://docs.cryptoswift.eu/en/partners
+  accessed: '2026-11'
+- title: Travel Rule Protocol (TRP)
+  publisher: OpenVASP Association
+  url: https://www.openvasp.org/trp
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null
@@ -368,6 +400,7 @@ verification_notes:
 - 'User ratings: GetApp UK and Software Advice AU show 0 reviews (a star graphic is shown with no reviews behind it). No G2, Capterra or SourceForge reviews found. user_ratings left empty.'
 - 'Vendor claims checked and not used: "lightest integration effort on the market" (tech.eu quote, not measurable); payment logos (Mastercard Identity Check, VISA Secure, Swedbank) are checkout badges, not partners or customers.'
 - 'No enforcement action, breach disclosure, litigation or acquisition involving CryptoSwift found in searches to 30 Oct 2026.'
+- 'Update 17 Nov 2026 (partial re-check, last_verified unchanged): cryptoswift.network and docs.cryptoswift.eu are now readable by WebFetch (cryptoswift.eu/ecosystem/ 302s to cryptoswift.network; dev.cryptoswift.eu 302s to docs.cryptoswift.eu). Network page: "We handle CODE, TAP, IVMS101, TRP and other protocols and data standards behind the scenes", no status; 254 connected VASPs (Send & Receive and Receive only), 115 verified members (claimed account and onboarding), 28 partners, 2,500+ exchange profiles, 10,000+ other entity profiles; Travel Rule partners named: CodeVASP, Ospree. OpenVASP TRP page (17 Nov) names 21 Analytics, Blockchain Intelligence Group and Ospree, not CryptoSwift, so TRP is vendor-stated. TAP not defined on the page; not used. Ospree: CryptoSwift post 17 Nov 2026 (Uve Poom) announces mutual message exchange, no go-live date; Ospree docs page (undated) says no direct CryptoSwift integration is needed. CODE homepage still lists CryptoSwift (17 Nov). Docs FAQ: counterparty need not be on CryptoSwift, delivery from VASP name, email or contact details; a compliance package with audit evidence is offered for due diligence, no certificate named. Credit usage page: outgoing transfer 1, incoming detection 1 (only while enabled), KYW 1, self-hosted wallet verification 1, with risk score 2, AML screening 5, KYT on request; overage not described. Partner API: reseller (white-label) track and a network track; no external network named. Pricing page unchanged (17 Nov). Blog: no certification, funding or pricing news since Sep 2026. G2 seller page checked by the editor in a browser (screenshot, 17 Nov 2026): 5 reviews, average 4.9, product "Travel Rule & Crypto Compliance Hub", newest review 12 Nov 2026, the three visible reviews dated 12 Nov, 5 Nov and 15 Oct 2026 and all organic; no criticism in the visible reviews, so criticize stays empty. G2 is blocked for WebFetch and in the browser pane. User ratings are not part of the score. Score and score_breakdown values unchanged pending the Travel Rule methodology.'
 application_category: Travel Rule Compliance Software
 author: andrii-klymenko
 directory_categories:
@@ -390,11 +423,29 @@ networks:
   note: CODE lists CryptoSwift as a connected network
   evidence: independent
   source: 7
+- name: Ospree
+  status: live
+  note: Ospree documents a route to the CryptoSwift network; two-way exchange announced 17 Nov 2026
+  evidence: independent
+  source: 8
 - name: Notabene
   status: inbound
   note: Incoming Notabene transfers can be received
   evidence: vendor
-  source: 7
-- name: TRUST, TRP, TRISA
+  source: 9
+- name: TRP
+  status: claimed
+  note: CryptoSwift says it handles TRP; OpenVASP's TRP page does not list it
+  evidence: vendor
+  source: 29
+- name: Email
+  status: fallback
+  note: Delivery to a VASP outside the network from its name, email or other contact details
+  evidence: vendor
+  source: 31
+- name: TRUST, TRISA
   status: not_found
-  note: No connection found (Oct 2026)
+  note: No connection found (Nov 2026)
+changes:
+- date: '2026-11-17'
+  text: 'Networks, pricing and user ratings updated: Ospree route, TRP claim, delivery to VASPs outside the network, network figures, credit costs from the developer docs and G2 ratings.'
