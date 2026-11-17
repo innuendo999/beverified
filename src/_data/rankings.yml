@@ -282,7 +282,7 @@ australia:
   title: Best KYC & AML Providers for Australia in 2026
   # Scored providers: a check through the Australian Government DVS documented by the vendor, directly or via a partner
   # (owner, 2026-11-17). Evidence check 17 Nov 2026: reports/verification/australia-dvs-2026-11.md.
-  # Order: v3.1 score; unreviewed vendors last. Incode and NameScan left out (owner, 2026-11-17).
+  # Order: v3.1 score; unreviewed vendors last. Didit reviewed 2026-11-17 (was Review coming). Incode and NameScan left out (owner, 2026-11-17).
   providers:
   - slug: sumsub
     name: Sumsub
@@ -298,6 +298,21 @@ australia:
     - Monthly minimums of $149 and $299 on the published plans
     - KYB, non-document checks and transaction monitoring sit only in the custom, quoted plan
     - Disclosed in February 2026 that an attacker had access to a support system from July 2024 to January 2026
+    segments: []
+  - slug: didit
+    name: Didit
+    award: Best for Self-Serve Pricing
+    tagline: Self-serve identity checks with DVS lookups for Australian documents and a public price list.
+    coverage: Global
+    size: null
+    pros:
+    - Cross-checks captured Australian IDs against the DVS, per Didit
+    - Public price list with a free plan and no minimum or contract
+    - Liveness confirmed by iBeta at ISO/IEC 30107-3 Level 2
+    cons:
+    - Does not say how it connects to the DVS
+    - Young company, founded in 2023
+    - Support by email only, with no published hours or SLA
     segments: []
   - slug: persona
     name: Persona
@@ -389,21 +404,7 @@ australia:
     - Pricing and contract terms not yet checked by BeVerified
     - Independent liveness test results not yet checked by BeVerified
     segments: []
-  - slug: null
-    name: Didit
-    award: null
-    tagline: Identity API that cross-checks Australian documents against the DVS, with published per-query prices.
-    coverage: null
-    size: null
-    pros:
-    - Cross-checks captured Australian IDs against the DVS, per Didit
-    - Publishes a price for DVS checks of $0.45 per successful query, per Didit
-    - Every account includes 500 free verifications a month, per Didit
-    cons:
-    - Not yet reviewed by BeVerified, so it has no score
-    - Contract terms not yet checked by BeVerified
-    - Independent liveness test results not yet checked by BeVerified
-    segments: []
+
 brazil:
   title: Best KYC & AML Providers for Brazil in 2026
   providers:
@@ -1925,6 +1926,21 @@ nigeria:
     - NIN and BVN checks are non-document checks, which sit only in the custom, quoted plan
     - Monthly minimums of $149 and $299 on the published plans
     - Disclosed in February 2026 that an attacker had access to a support system from July 2024 to January 2026
+    segments: []
+  - slug: didit
+    name: Didit
+    award: null
+    tagline: Document-free NIN and BVN lookups with a selfie match, priced per lookup on a public price list.
+    coverage: Global
+    size: null
+    pros:
+    - Checks NIN against NIMC and BVN against bank records, with a selfie match, per Didit
+    - Publishes per-lookup prices for Nigerian NIN and BVN checks
+    - Free plan with $10 of credit a month and no minimum or contract
+    cons:
+    - Young company, founded in 2023
+    - KYB registry checks are still priced as staging rates
+    - Support by email only, with no published hours or SLA
     segments: []
   - slug: kycaid
     name: KYCAID
