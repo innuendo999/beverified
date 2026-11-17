@@ -278,6 +278,132 @@ aml:
     legacy_price_shown: From £105/mo (21 search credits)
     legacy_rating_shown: null
     segments: []
+australia:
+  title: Best KYC & AML Providers for Australia in 2026
+  # Scored providers: a check through the Australian Government DVS documented by the vendor, directly or via a partner
+  # (owner, 2026-11-17). Evidence check 17 Nov 2026: reports/verification/australia-dvs-2026-11.md.
+  # Order: v3.1 score; unreviewed vendors last. Incode and NameScan left out (owner, 2026-11-17).
+  providers:
+  - slug: sumsub
+    name: Sumsub
+    award: Editor's Choice
+    tagline: Real-time DVS checks of passports, driver licences and visas, on a platform with published plans.
+    coverage: Global
+    size: null
+    pros:
+    - Checks passports, driver licences and visas against the DVS in real time, per Sumsub
+    - Published per-verification pricing with a 14-day free trial
+    - KYC, KYB, monitoring and fraud prevention in one platform
+    cons:
+    - Monthly minimums of $149 and $299 on the published plans
+    - KYB, non-document checks and transaction monitoring sit only in the custom, quoted plan
+    - Disclosed in February 2026 that an attacker had access to a support system from July 2024 to January 2026
+    segments: []
+  - slug: persona
+    name: Persona
+    award: Best for Custom Workflows
+    tagline: Configurable verification workflows, with DVS and other Australian databases through its partnership with Data Zoo.
+    coverage: Global, 200+ countries and territories
+    size: Mid-market to Enterprise
+    pros:
+    - Supports the DVS and other Australian databases through Data Zoo, per Persona (September 2026)
+    - Highly customizable, reusable workflow templates
+    - Selfie Liveness 2.0 tested by iBeta to ISO/IEC 30107-3 Level 2
+    cons:
+    - DVS access runs through a partner, Data Zoo, not a direct gateway
+    - Only the entry plan has a published price, and it carries a 12-month minimum term
+    - Flexibility means a steeper configuration curve
+    segments: []
+  - slug: jumio
+    name: Jumio
+    award: null
+    tagline: Document and biometric verification with DVS access through National Crime Check's InstaID.
+    coverage: Global
+    size: null
+    pros:
+    - Offers access to the DVS powered by National Crime Check (InstaID), per Jumio
+    - Liveness detection independently tested by iBeta to ISO/IEC 30107-3 Level 2
+    - 5,000+ ID types across 200 countries and territories
+    cons:
+    - DVS access runs through a partner, National Crime Check, not a direct gateway
+    - Pricing is available only through sales, with no published rate card
+    - Heavier integration lift for teams without dedicated developer resources
+    segments: []
+  - slug: onfido
+    name: Onfido (Entrust)
+    award: null
+    tagline: Ready-made Australian workflows for DVS-only, 2+2 and 2+2 with DVS checks, now sold under the Entrust brand.
+    coverage: Global
+    size: null
+    pros:
+    - Its docs offer Australia DVS only, Australia 2+2 and Australia 2+2 with DVS workflows
+    - Liveness tested by iBeta to ISO/IEC 30107-3, with Level 2 letters for Onfido Liveness (2022)
+    - Strong developer SDKs and API tooling
+    cons:
+    - Its docs do not say how it connects to the DVS
+    - No published pricing; quoted via sales only
+    - Mixed reviews on support responsiveness
+    segments: []
+  - slug: gbg
+    name: GBG
+    award: Best Direct DVS Gateway
+    tagline: greenID, an approved DVS gateway service provider for Australia and New Zealand, assessed by the OAIC.
+    coverage: Global
+    size: null
+    pros:
+    - greenID is a DVS gateway service provider, assessed as one by the OAIC
+    - Customers appoint GBG as their information match agent to send requests to the DVS, per GBG's terms
+    - Publicly traded (LSE:GBG) with audited results
+    cons:
+    - The OAIC found greenID keeps images for up to 31 days by default, and GBG declined to change the default to zero
+    - No published pricing for identity and fraud products
+    - Broad product lineup spanning multiple acquisitions can be complex to navigate
+    segments: []
+  - slug: trulioo
+    name: Trulioo
+    award: null
+    tagline: Data-API identity platform that is an approved DVS gateway service provider, with KYB in the same platform.
+    coverage: Global
+    size: null
+    pros:
+    - Approved DVS gateway service provider, as an OAIC assessment confirmed
+    - 195 countries and 14,000+ ID document types, per Trulioo
+    - KYB and individual verification combined in one platform
+    cons:
+    - Requires meaningful technical resources to integrate its data-API model
+    - No published pricing; rates are quoted on request
+    - Leans more toward a data-API product than a no-code, UX-first platform
+    segments: []
+  - slug: null
+    name: Equifax
+    award: null
+    tagline: Credit bureau whose IDMatrix service reaches the DVS as an approved gateway service provider.
+    coverage: null
+    size: null
+    pros:
+    - IDMatrix accesses the DVS as an approved gateway service provider, per Equifax
+    - Matches document data with government records for AML/CTF identity obligations, per Equifax
+    - Combines Equifax data with document details, so customers need not be present, per Equifax
+    cons:
+    - Not yet reviewed by BeVerified, so it has no score
+    - Pricing and contract terms not yet checked by BeVerified
+    - Independent liveness test results not yet checked by BeVerified
+    segments: []
+  - slug: null
+    name: Didit
+    award: null
+    tagline: Identity API that cross-checks Australian documents against the DVS, with published per-query prices.
+    coverage: null
+    size: null
+    pros:
+    - Cross-checks captured Australian IDs against the DVS, per Didit
+    - Publishes a price for DVS checks of $0.45 per successful query, per Didit
+    - Every account includes 500 free verifications a month, per Didit
+    cons:
+    - Not yet reviewed by BeVerified, so it has no score
+    - Contract terms not yet checked by BeVerified
+    - Independent liveness test results not yet checked by BeVerified
+    segments: []
 brazil:
   title: Best KYC & AML Providers for Brazil in 2026
   providers:
