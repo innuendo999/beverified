@@ -172,7 +172,7 @@ function workflow(d) {
   return [clamp(keys.filter((k) => has(cap(d, k))).length + 1), lab(keys.filter((k) => has(cap(d, k)))), "vendor"];
 }
 
-export { fraudDefense, coverage, breadth, integration };
+export { fraudDefense, coverage, breadth, integration, pricing };
 const FN = { fraud_defense: fraudDefense, pricing, coverage, breadth, integration, trust, screening, workflow };
 
 // Kept on their v3.0 score until per-category methodologies exist (owner, 2026-11-05).

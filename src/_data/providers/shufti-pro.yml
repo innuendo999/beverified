@@ -270,6 +270,27 @@ capabilities:
     status: 'yes'
     note: regional hosting in EU, MENA, US, APAC
     source: 3
+  doc_forensics:
+    status: 'yes'
+    note: 'security feature analysis, forgery and tampering detection'
+    source: 28
+    checked: '2026-11'
+  manual_review:
+    status: 'yes'
+    note: 'verification specialists cross-check transactions; no hours or turnaround published'
+    source: 29
+    hours: null
+    checked: '2026-11'
+  proof_of_address:
+    status: 'yes'
+    note: 'address documents such as utility bills, matched to the ID'
+    source: 30
+    checked: '2026-11'
+  reverification:
+    status: 'yes'
+    note: '1:1 face authentication of returning users at login, payment and recovery'
+    source: 31
+    checked: '2026-11'
 integration:
   checked: '2026-11'
   docs_public:
@@ -504,6 +525,22 @@ sources:
 - title: "Liveness detection (blind spot audit)"
   publisher: Shufti
   url: https://shuftipro.com/blind-spot-audit/liveness-detection/
+  accessed: '2026-11'
+- title: 'Face and Document Verification (PDF)'
+  publisher: Shufti
+  url: https://shuftipro.com/collaterals-library/PDF-Face-and-Document.pdf
+  accessed: '2026-11'
+- title: 'Two Fold Verification'
+  publisher: Shufti
+  url: https://shuftipro.com/two-fold-technology
+  accessed: '2026-11'
+- title: 'Proof of Address'
+  publisher: Shufti
+  url: https://shuftipro.com/proof-of-address
+  accessed: '2026-11'
+- title: '1:1 Authentication'
+  publisher: Shufti
+  url: https://shuftipro.com/1-1-authentication/
   accessed: '2026-11'
 entity:
   wikidata: null

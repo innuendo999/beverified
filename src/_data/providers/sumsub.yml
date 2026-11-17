@@ -304,6 +304,27 @@ capabilities:
     status: 'no'
     note: quote only, custom plan
     source: 1
+  doc_forensics:
+    status: 'yes'
+    note: 'forgery indicators in ID and alteration checks in address documents'
+    source: 30
+    checked: '2026-11'
+  manual_review:
+    status: 'yes'
+    note: 'clients can ask Sumsub to re-check a profile; no hours or turnaround published'
+    source: 31
+    hours: null
+    checked: '2026-11'
+  proof_of_address:
+    status: 'yes'
+    note: 'document-based proof of address, checked for digital alteration'
+    source: 32
+    checked: '2026-11'
+  reverification:
+    status: 'yes'
+    note: 'face match against the previously verified user for repeat actions'
+    source: 33
+    checked: '2026-11'
 integration:
   checked: '2026-11'
   docs_public:
@@ -548,6 +569,22 @@ sources:
 - title: Sumsub and Sumvin Partner to Enable AI Agents to Transact Using Verified Human Identity (4 August 2026)
   publisher: Sumsub
   url: https://sumsub.com/newsroom/sumsub-and-sumvin-partner-to-enable-ai-agents-to-transact-using-verified-human-identity
+  accessed: '2026-11'
+- title: 'User verification check results'
+  publisher: Sumsub
+  url: https://docs.sumsub.com/docs/user-verification-check-results
+  accessed: '2026-11'
+- title: 'Manage applicant profiles'
+  publisher: Sumsub
+  url: https://docs.sumsub.com/docs/manage-results
+  accessed: '2026-11'
+- title: 'Document-based PoA'
+  publisher: Sumsub
+  url: https://docs.sumsub.com/docs/document-based-poa
+  accessed: '2026-11'
+- title: 'Face Match'
+  publisher: Sumsub
+  url: https://docs.sumsub.com/docs/face-match
   accessed: '2026-11'
 entity:
   wikidata: null

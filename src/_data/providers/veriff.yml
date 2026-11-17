@@ -340,6 +340,27 @@ capabilities:
   data_residency:
     status: not_disclosed
     note: security page names AWS backups, no region choice
+  doc_forensics:
+    status: 'yes'
+    note: 'document tampering checks such as data dependencies and font detection'
+    source: 38
+    checked: '2026-11'
+  manual_review:
+    status: 'yes'
+    note: 'verification specialists on the Plus and Premium plans; no hours or turnaround published'
+    source: 1
+    hours: null
+    checked: '2026-11'
+  proof_of_address:
+    status: 'yes'
+    note: 'document-based proof of address with authenticity checks'
+    source: 39
+    checked: '2026-11'
+  reverification:
+    status: 'yes'
+    note: 'reverification and biometric authentication of returning users'
+    source: 40
+    checked: '2026-11'
 integration:
   checked: '2026-11'
   docs_public:
@@ -627,6 +648,18 @@ sources:
 - title: Multiple class actions claim Total Wireless, Veriff failed to protect customer PII in data breach (5 March 2026)
   publisher: Top Class Actions
   url: https://topclassactions.com/lawsuit-settlements/lawsuit-news/multiple-class-actions-claim-total-wireless-veriff-failed-to-protect-customer-pii-in-data-breach
+  accessed: '2026-11'
+- title: 'Synthetic fraud and document tampering'
+  publisher: Veriff
+  url: https://www.veriff.com/fraud/business/what-is-synthetic-fraud-document-tampering
+  accessed: '2026-11'
+- title: 'Proof of Address'
+  publisher: Veriff
+  url: https://veriff.com/product/proof-of-address
+  accessed: '2026-11'
+- title: 'Reverification'
+  publisher: Veriff
+  url: https://www.veriff.com/use-cases/reverification
   accessed: '2026-11'
 entity:
   wikidata: null

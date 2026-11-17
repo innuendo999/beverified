@@ -189,6 +189,27 @@ capabilities:
     status: partial
     note: on premises option, no cloud region choice stated
     source: 14
+  doc_forensics:
+    status: 'yes'
+    note: 'Automatic Authenticity Control of document security features'
+    source: 18
+    checked: '2026-11'
+  manual_review:
+    status: 'no'
+    note: 'Regula''s own comparison lists vendor-operated human review for iDenfy, not for Regula'
+    source: 19
+    hours: null
+    checked: '2026-11'
+  proof_of_address:
+    status: 'yes'
+    note: 'IDV Platform flows can include proof-of-address verification'
+    source: 20
+    checked: '2026-11'
+  reverification:
+    status: 'yes'
+    note: 're-authentication and re-verification of returning users'
+    source: 19
+    checked: '2026-11'
 integration:
   checked: '2026-11'
   docs_public:
@@ -364,6 +385,18 @@ sources:
 - title: "Deepfake detection"
   publisher: Regula
   url: https://regulaforensics.com/solutions/use-cases/deepfake-detection/
+  accessed: '2026-11'
+- title: 'KYC verification'
+  publisher: Regula
+  url: https://regulaforensics.com/kyc-verification/
+  accessed: '2026-11'
+- title: 'Regula vs iDenfy'
+  publisher: Regula
+  url: https://regulaforensics.com/blog/regula-vs-idenfy/
+  accessed: '2026-11'
+- title: 'What makes an identity verification platform enterprise-grade?'
+  publisher: Regula
+  url: https://regulaforensics.com/blog/enterprise-grade-identity-verification-platform/
   accessed: '2026-11'
 entity:
   wikidata: null
