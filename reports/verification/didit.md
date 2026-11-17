@@ -13,7 +13,7 @@ Scope: new provider record `src/_data/providers/didit.yml`, scored under rubric 
 | Integration | 15 | 5 | public docs, SDKs, free sandbox, hosted flow |
 | Trust and track record | 10 | 3.5 | ISO/IEC 27001 confirmed (certificate opened), EU residency; founded 2023 |
 
-Overall 4.3 (Great).
+Overall 4.3 (Great) at first; 4.6 (Excellent) after the update below.
 
 ## Confirmed independently
 - iBeta ISO/IEC 30107-3 PAD Level 1, Didit Identity, Inc., Didit Biometric Authentication v2.0, iPhone 13 Pro, 4 Feb 2026, 0% IAPAR in 360 attempts.
@@ -32,3 +32,10 @@ Customer counts (3,000+ vs 1,500 conflict), speed/uptime/breach claims, logo wal
 ## Follow-ups for the owner
 - Whether to add Didit to Identity Verification and Budget KYC rankings (score 4.3 would place it among the top entries); the Budget KYC page now says it is reviewed but not yet scored there.
 - Re-check iBeta Level 2 letter.
+
+## Update, 17 Nov 2026 (owner approved the fetches)
+- iBeta Level 2 letter opened: signed by iBeta (Ryan Borgstrom), names Didit Identity, Didit Biometric Authentication v3.0, iPhone 17 / iOS 26.1, 9 Nov 2026, 300 attacks, IAPAR 0%. Published by Didit, so confirmed. Fraud defense 3.5 -> 4.5, overall 4.3 -> 4.6 (Excellent).
+- Spanish sandbox report opened (tesoro.es, Feb 2026): CNMV-supervised sandbox test, SEPBLAC took part, Nov 2024 to Jul 2025. The "as safe as in-person" claim is Didit's, not the supervisors' conclusion; only the test itself is stated on the page.
+- docs.didit.me opened: SDKs and sandbox confirmed; case management, adverse media, video ident not documented.
+- Logo and wordmark added from the image the owner sent.
+- Rankings unchanged in order: Australia #2 (Sumsub 4.8), Nigeria #3 (Shufti Pro 4.9, Sumsub 4.8).
