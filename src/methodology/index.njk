@@ -4,15 +4,15 @@ seoTitle: "Our Methodology: How BeVerified Scores KYC & AML Providers"
 seoDescription: "How BeVerified scores KYC, IDV and AML providers: a published rubric for each kind of product, scored from public evidence, with what a score cannot measure."
 h1: "Our Methodology"
 lede: "We score identity verification and KYC providers on one rubric and AML providers on another, using evidence anyone can check. Every claim on a review is labelled with where it came from."
-updated: "2026-11-11"
+updated: "2026-11-17"
 ---
 <section>
-<p>Methodology {{ site.v3.methodologyVersion }}, last updated Nov 11, 2026. <a href="#changelog">What changed</a></p>
+<p>Methodology {{ site.v3.methodologyVersion }}, last updated Nov 17, 2026. <a href="#changelog">What changed</a></p>
 </section>
 
 <section id="rubric">
 <h2>Scoring rubric</h2>
-<p>Each provider gets an editorial score from 1 to 5: the weighted result of six criteria. The criteria are the questions a buyer asks when choosing a vendor, so they differ by kind of product. Identity verification, eKYC, KYC, liveness, age verification and KYB providers use the first rubric; AML screening and monitoring providers use the second. Travel Rule providers are still scored on our previous rubric until their own methodology is published. Know Your Agent products and the Budget KYC ranking have rubrics of their own, set out below: <a href="#know-your-agent">Know Your Agent</a> and <a href="#budget-kyc">Budget KYC</a>.</p>
+<p>Each provider gets an editorial score from 1 to 5: the weighted result of six criteria. The criteria are the questions a buyer asks when choosing a vendor, so they differ by kind of product. Identity verification, eKYC, KYC, liveness, age verification and KYB providers use the first rubric; AML screening and monitoring providers use the second. Travel Rule providers are still scored on our previous rubric until their own methodology is published. The Identity Verification ranking, Know Your Agent products and the Budget KYC ranking have rubrics of their own, set out below: <a href="#identity-verification">Identity verification</a>, <a href="#know-your-agent">Know Your Agent</a> and <a href="#budget-kyc">Budget KYC</a>.</p>
 <table>
 <caption>Identity verification and KYC: criteria, weights and what we look at</caption>
 <thead><tr><th scope="col">Criterion</th><th scope="col">Weight</th><th scope="col">What we look at</th></tr></thead>
@@ -39,6 +39,26 @@ updated: "2026-11-11"
 </table>
 <p>Each sub-score comes from a fixed table of rules, so the same evidence always gives the same sub-score, and every review shows its breakdown. If we can't find public information for a criterion, the review says "Not publicly disclosed" and that criterion's weight is shared across the others. User ratings and any commercial relationship are never part of a score.</p>
 <p>Grades: Excellent from 4.5, Great 4.0 to 4.4, Very Good 3.5 to 3.9, Good 3.0 to 3.4, Fair below 3.0.</p>
+</section>
+
+<section id="identity-verification">
+<h2>Identity verification rubric</h2>
+<p>The <a href="/providers/identity-verification/">Identity Verification ranking</a> is ordered by a separate IDV score from the rubric below. It orders that ranking only. Each provider's review keeps its overall score.</p>
+<p>We built it for one kind of buyer: regulated fintech firms (neobanks, lenders, payment and brokerage firms) and licensed gambling and betting operators in the US, UK and EU, running roughly 1,000 to 100,000 checks a month. They lose money to spoofs, deepfakes and multiple accounts, they have to read the documents of every market they are licensed in, and a regulator has to accept the check. Marketplaces, large enterprises and other buyers get their own picks in the ranking's "Best pick by use case" table. Small teams that buy mainly on price should start with the <a href="/providers/cheap-kyc/">Budget KYC ranking</a>.</p>
+<table>
+<caption>Identity verification: criteria, weights and what we look at</caption>
+<thead><tr><th scope="col">Criterion</th><th scope="col">Weight</th><th scope="col">What we look at</th></tr></thead>
+<tbody>
+<tr><th scope="row">Fraud defense</th><td>30%</td><td>The highest iBeta ISO/IEC 30107-3 liveness level we could confirm, injection attack detection tested by an independent lab (for example under CEN/TS 18099), and NIST face recognition listings. Results from the US Department of Homeland Security's Remote Identity Validation Rally add points when the provider has disclosed them and we have matched them to the published results. A missing result never costs points, because DHS does not name the vendors it tests.</td></tr>
+<tr><th scope="row">Coverage</th><td>20%</td><td>180 or more countries and territories, NFC reading of passport and ID card chips, document fraud checks described in the vendor's documentation, and a route without a document (database, bank or registry checks) in at least one market.</td></tr>
+<tr><th scope="row">Pricing and total cost</th><td>15%</td><td>The same rule as the identity rubric above: published per-check prices, monthly minimums, and a free trial or free plan. A vendor that quotes only through sales scores 2 out of 5.</td></tr>
+<tr><th scope="row">Integration and user flow</th><td>15%</td><td>Public API documentation, web, iOS and Android SDKs, a self-serve sandbox or trial, a no-code or hosted flow, and human review of the cases the automated check can't decide, with published hours or turnaround.</td></tr>
+<tr><th scope="row">Compliance fit</th><td>15%</td><td>ISO/IEC 27001 or SOC 2 (more if we confirmed the certificate), listings on public registers we can check (UK DIATF, ISO/IEC TS 29003 under ACCS, ETSI TS 119 461, Kantara for NIST SP 800-63 IAL2), a choice of data region or an on-premises option, and security incidents or regulatory actions in the last 24 months. A framework the vendor claims but no register confirms earns no points here.</td></tr>
+<tr><th scope="row">Platform breadth</th><td>5%</td><td>Only the checks these buyers add to the same contract: sanctions and PEP screening, proof of address, facial age estimation, and re-verification after onboarding, at login, account recovery or a high-risk action.</td></tr>
+</tbody>
+</table>
+<p>To enter the ranking, a provider needs a published BeVerified review scored on the current rubric and a generally available product that does document verification, liveness and face match, on its own or as its own modules. A provider without an independent liveness test can still enter, and its ranking card says no independent test was found.</p>
+<p>The IDV score can't tell you how many good users pass, how many are wrongly rejected or how long a check takes on your traffic. We looked for independent public tests that compare the providers in this ranking on those points and found none we could use, and we don't run our own tests yet. Vendors' pass-rate and accuracy figures use different samples, so we leave them out. Run a pilot on your own users and devices before you sign.</p>
 </section>
 
 <section id="know-your-agent">
@@ -136,6 +156,7 @@ updated: "2026-11-11"
 <section id="changelog">
 <h2>What changed</h2>
 <ul>
+<li><strong>Nov 17, 2026 (IDV 1.0):</strong> added an identity verification rubric for the Identity Verification ranking, built for regulated fintech and gambling operators: fraud defense, coverage, total cost, integration and user flow, compliance fit and a narrow platform breadth. IDV scores are separate from overall scores and order only that ranking. Criteria and weights were published before any provider was scored.</li>
 <li><strong>Nov 11, 2026 (Budget KYC 1.0):</strong> added a Budget KYC rubric built on price for quality: cost per check at 100 and 1,000 checks a month, AML screening cost, quality for the money, entry terms and price transparency. Budget scores are separate from overall scores and order only the Budget KYC ranking. Criteria, weights and entry rules were published before any provider was scored.</li>
 <li><strong>Nov 10, 2026:</strong> sponsored placements on review pages described under <a href="#advertising">Sponsored placements</a>. They don't change scores, rankings or reviews.</li>
 <li><strong>Nov 10, 2026 (KYA 1.0):</strong> added a Know Your Agent rubric for products that verify AI agents acting for customers. KYA scores are separate from overall scores and order only the Know Your Agent ranking. Criteria and weights were published before any provider was scored.</li>
