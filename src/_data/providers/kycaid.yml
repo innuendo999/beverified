@@ -354,8 +354,9 @@ capabilities:
     status: not_disclosed
     note: hosting region not stated
   doc_forensics:
-    status: 'not_disclosed'
-    note: 'no document tampering or security-feature checks described on kycaid.com or in its docs'
+    status: 'yes'
+    note: 'forensic document analysis of holograms, fonts and edges'
+    source: 19
     checked: '2026-11'
   manual_review:
     status: 'yes'
@@ -399,6 +400,20 @@ integration:
     status: partial
     note: 24/7 priority support on Enterprise only
     source: 1
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 240
+    note: countries and territories
+    source: 7
+  document_types:
+    value: 14000
+    note: document types
+    source: 7
+  non_doc:
+    status: 'yes'
+    note: database check by national ID number, for example South Africa
+    source: 12
 track_record:
   ownership:
     status: changed_disclosed
@@ -524,6 +539,10 @@ sources:
 - title: 'Proof of address'
   publisher: KYCAID
   url: https://kycaid.com/proof-of-address
+  accessed: '2026-11'
+- title: 'ID verification software'
+  publisher: KYCAID
+  url: https://kycaid.com/id-verification/
   accessed: '2026-11'
 entity:
   wikidata: null
