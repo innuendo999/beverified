@@ -131,6 +131,6 @@ Newly readable: cryptoswift.network (target of cryptoswift.eu/ecosystem/) and do
 | Partner API | Reseller (white-label) track and a network track; no network named | 33 |
 | Pricing page | Unchanged | 2 |
 | ISO/IEC 27001 | Still no certificate, body or scope; docs offer a compliance package for due diligence | 31 |
-| G2 | Search snippet shows 4 reviews, 5.0 (one dated 15 Oct 2026). G2 blocked for WebFetch and the browser pane; `user_ratings` empty until the editor checks; "no user reviews yet" removed from cons and the ranking card | none |
+| G2 | Editor's browser screenshot, 17 Nov 2026: 5 reviews, average 4.9, product "Travel Rule & Crypto Compliance Hub", newest 12 Nov 2026. Added to `user_ratings` with two praise themes; no criticism visible. "No user reviews yet" removed from cons and the ranking card. Pricing page re-checked by the editor's screenshot the same day: unchanged | editor |
 
 Not done: `pricing_calc` (the calculator parses "EUR 600 / month"; the record writes "€600", which also feeds the Pricing Index), category FAQ on self-hosted wallets, official e-Business Register and GLEIF.

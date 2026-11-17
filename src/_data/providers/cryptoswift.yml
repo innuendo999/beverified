@@ -163,7 +163,9 @@ choose_instead:
   text: your volumes are small and you would rather pay per message than an annual minimum.
 user_reviews:
   legacy_note: null
-  praise: []
+  praise:
+  - 'Simpler Travel Rule compliance: G2 reviewers say it makes sharing Travel Rule data and meeting the requirements easier.'
+  - 'Support: reviewers call the support team responsive and quick to solve problems specific to their business.'
   criticize: []
   by_profile:
   - EU crypto-asset service providers under the Transfer of Funds Regulation that want a hosted API and published prices are CryptoSwift's clearest fit.
@@ -200,7 +202,12 @@ certifications:
   what: Information security management; CryptoSwift says it passed certification, and Copla's July 2026 case study says it was achieved in two months. No body, number or scope published
   status: vendor_stated
   source: 10
-user_ratings: []
+user_ratings:
+- platform: G2
+  rating: 4.9
+  count: 5
+  checked: '2026-11'
+  url: https://www.g2.com/sellers/cryptoswift
 use_case_verdicts: []
 score_breakdown:
 - criterion: Compliance & certifications
@@ -393,7 +400,7 @@ verification_notes:
 - 'User ratings: GetApp UK and Software Advice AU show 0 reviews (a star graphic is shown with no reviews behind it). No G2, Capterra or SourceForge reviews found. user_ratings left empty.'
 - 'Vendor claims checked and not used: "lightest integration effort on the market" (tech.eu quote, not measurable); payment logos (Mastercard Identity Check, VISA Secure, Swedbank) are checkout badges, not partners or customers.'
 - 'No enforcement action, breach disclosure, litigation or acquisition involving CryptoSwift found in searches to 30 Oct 2026.'
-- 'Update 17 Nov 2026 (partial re-check, last_verified unchanged): cryptoswift.network and docs.cryptoswift.eu are now readable by WebFetch (cryptoswift.eu/ecosystem/ 302s to cryptoswift.network; dev.cryptoswift.eu 302s to docs.cryptoswift.eu). Network page: "We handle CODE, TAP, IVMS101, TRP and other protocols and data standards behind the scenes", no status; 254 connected VASPs (Send & Receive and Receive only), 115 verified members (claimed account and onboarding), 28 partners, 2,500+ exchange profiles, 10,000+ other entity profiles; Travel Rule partners named: CodeVASP, Ospree. OpenVASP TRP page (17 Nov) names 21 Analytics, Blockchain Intelligence Group and Ospree, not CryptoSwift, so TRP is vendor-stated. TAP not defined on the page; not used. Ospree: CryptoSwift post 17 Nov 2026 (Uve Poom) announces mutual message exchange, no go-live date; Ospree docs page (undated) says no direct CryptoSwift integration is needed. CODE homepage still lists CryptoSwift (17 Nov). Docs FAQ: counterparty need not be on CryptoSwift, delivery from VASP name, email or contact details; a compliance package with audit evidence is offered for due diligence, no certificate named. Credit usage page: outgoing transfer 1, incoming detection 1 (only while enabled), KYW 1, self-hosted wallet verification 1, with risk score 2, AML screening 5, KYT on request; overage not described. Partner API: reseller (white-label) track and a network track; no external network named. Pricing page unchanged (17 Nov). Blog: no certification, funding or pricing news since Sep 2026. G2 seller page shows 4 reviews, 5.0, in a search snippet (one dated 15 Oct 2026); G2 is blocked for WebFetch and in the browser pane, so user_ratings stays empty until the editor checks it in a browser; the "no user reviews yet" wording was removed. Score and score_breakdown values unchanged pending the Travel Rule methodology.'
+- 'Update 17 Nov 2026 (partial re-check, last_verified unchanged): cryptoswift.network and docs.cryptoswift.eu are now readable by WebFetch (cryptoswift.eu/ecosystem/ 302s to cryptoswift.network; dev.cryptoswift.eu 302s to docs.cryptoswift.eu). Network page: "We handle CODE, TAP, IVMS101, TRP and other protocols and data standards behind the scenes", no status; 254 connected VASPs (Send & Receive and Receive only), 115 verified members (claimed account and onboarding), 28 partners, 2,500+ exchange profiles, 10,000+ other entity profiles; Travel Rule partners named: CodeVASP, Ospree. OpenVASP TRP page (17 Nov) names 21 Analytics, Blockchain Intelligence Group and Ospree, not CryptoSwift, so TRP is vendor-stated. TAP not defined on the page; not used. Ospree: CryptoSwift post 17 Nov 2026 (Uve Poom) announces mutual message exchange, no go-live date; Ospree docs page (undated) says no direct CryptoSwift integration is needed. CODE homepage still lists CryptoSwift (17 Nov). Docs FAQ: counterparty need not be on CryptoSwift, delivery from VASP name, email or contact details; a compliance package with audit evidence is offered for due diligence, no certificate named. Credit usage page: outgoing transfer 1, incoming detection 1 (only while enabled), KYW 1, self-hosted wallet verification 1, with risk score 2, AML screening 5, KYT on request; overage not described. Partner API: reseller (white-label) track and a network track; no external network named. Pricing page unchanged (17 Nov). Blog: no certification, funding or pricing news since Sep 2026. G2 seller page checked by the editor in a browser (screenshot, 17 Nov 2026): 5 reviews, average 4.9, product "Travel Rule & Crypto Compliance Hub", newest review 12 Nov 2026, the three visible reviews dated 12 Nov, 5 Nov and 15 Oct 2026 and all organic; no criticism in the visible reviews, so criticize stays empty. G2 is blocked for WebFetch and in the browser pane. User ratings are not part of the score. Score and score_breakdown values unchanged pending the Travel Rule methodology.'
 application_category: Travel Rule Compliance Software
 author: andrii-klymenko
 directory_categories:
@@ -441,4 +448,4 @@ networks:
   note: No connection found (Nov 2026)
 changes:
 - date: '2026-11-17'
-  text: 'Networks and pricing updated: Ospree route, TRP claim, delivery to VASPs outside the network, network figures and credit costs from the developer docs.'
+  text: 'Networks, pricing and user ratings updated: Ospree route, TRP claim, delivery to VASPs outside the network, network figures, credit costs from the developer docs and G2 ratings.'
