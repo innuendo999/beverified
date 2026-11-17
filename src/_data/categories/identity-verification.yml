@@ -13,6 +13,9 @@ score_label: IDV score
 rubric: rubricIdv
 methodology_label: IDV 1.0
 methodology_anchor: '#identity-verification'
+layout: v2
+list_noun: identity verification providers
+score_note: 'The IDV score can''t show how many good users pass or how long a check takes on your traffic. No independent public test we could use compares these providers on that, so run a pilot on your own users before you sign.'
 legacy_stats:
 - value: '4'
   label: providers compared

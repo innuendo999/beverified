@@ -95,6 +95,8 @@ Outbound link on a listing: by default ranking cards link only to the review. An
 
 `slug, url, seo, breadcrumb_label, quick_answer, reviewer, last_verified, explainer_html[] (legacy markup), faq[], adjacent[], capability_columns[], faq_templates[]`.
 
+Ranking layout v2 (added 2026-11-17, on Identity Verification only): `layout: v2` replaces the jump nav, the full ranked table, the rank cards and the "How we ranked" block with a top 3 table, a note (`score_note`, what the score does not measure), one sponsor slot (`placements.yml` `surface: ranking`), a list of every ranked provider with evidence chips, and a one-line methodology link. `list_noun` names the list heading ("All 10 <list_noun>, ranked"). Top 3 columns and chips come from the provider record via `src/_lib/ranking-evidence.js`: green only for a confirmed iBeta ISO/IEC 30107-3 letter, a DHS RIVR result with all goals met and a named alias, and a confirmed trust framework; NFC, vendor-stated tests and human review hours are plain.
+
 ## Reports (regenerated, not hand-edited)
 
 - `reports/content-inventory.csv` — every page with GSC metrics; fill the `decision` column (keep / rewrite / merge / new).
@@ -153,6 +155,8 @@ One record per incident (`id, slug, vendor, date, occurred, type, sensitivity, s
 ## `src/_data/placements.yml` (sponsored slots, added 2026-11-10)
 
 List of `{use_case, slug, start, end}`. One slot per use case in the homepage "Pick by use case" panel, shown from `start` to `end` (ISO dates, build date). `use_case` is a `rankings.yml` key listed in `home.yml` → `use_cases`; `slug` has a published review with a score, is in that ranking and not in its top 3; slots for one use case never overlap. The slot always shows the "Sponsored" label, the provider's real rank in that ranking, its record score and the ranking entry's `tagline` (else the record's), and links to the review. Rules in `src/_lib/placements.js`, checked by `scripts/checks/placements.mjs`; an entry that breaks a rule is never rendered. Empty until the advertising policy is published.
+
+Ranking page slot (added 2026-11-17): `{surface: ranking, category, slug, start, end}`. One slot under the top 3 of a layout v2 ranking. The sponsor has a published review with a score and a `link.url`, is ranked in `category` and not in its top 3; slots for one ranking never overlap. Shows the "Sponsored" label, the real rank, the score the page ranks on (category score when `score_source: category`) and the ranking entry's tagline; the outbound link is `rel="sponsored"`. Rules `rankingPlacementIssues` / `rankingSponsor`.
 
 ## `kya{}` (Know Your Agent data, KYA 1.0, added 2026-11-10)
 

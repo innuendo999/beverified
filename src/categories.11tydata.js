@@ -4,6 +4,8 @@
 import { buildMatrix } from "./_lib/capabilities.js";
 import { termForCapability } from "./_lib/glossary.js";
 import { calcProvider } from "./_lib/budget.js";
+import { top3Facts, evidenceChips } from "./_lib/ranking-evidence.js";
+import { rankingSponsor } from "./_lib/placements.js";
 
 export default {
   pagination: { data: "categories", size: 1, alias: "c", resolve: "values", addAllPagesToCollections: true },
@@ -41,8 +43,21 @@ export default {
       // Budget KYC: cost per check at 100 and 1,000 a month, from the generated category score block.
       const cs = d.c.budget_calc && q ? q.category_scores?.[d.c.slug] : null;
       const costS = cs?.cost_s ?? null, costM = cs?.cost_m ?? null;
-      return { rank: i + 1, r, q, price, priceVerified, score, costS, costM };
+      // Layout v2 (category file layout: v2): evidence for the top 3 table and the chips on each list row.
+      const bare = price ? String(price).replace(/^From\s+/i, "") : null;
+      const v2 = d.c.layout === "v2" && q ? { ...top3Facts(q), chips: evidenceChips(q), price: bare && /^[\d$€£]|^Free/i.test(bare) ? `From ${bare}` : bare } : null;
+      return { rank: i + 1, r, q, price, priceVerified, score, costS, costM, v2 };
     }),
+    // Layout v2: one sponsor slot under the top 3 (placements.yml surface: ranking), with its real rank and the
+    // score this page ranks on. Never changes the order of the list.
+    rankSponsor: (d) => {
+      if (d.c.layout !== "v2") return null;
+      const s = rankingSponsor(d.placements, { rankings: d.rankings, providers: d.providers }, d.c.slug);
+      if (!s) return null;
+      const q = s.provider;
+      const score = d.c.score_source === "category" ? q.category_scores?.[d.c.slug]?.score ?? null : q.score;
+      return { ...s, score };
+    },
     // Cost calculator input (category file budget_calc: true), built from each record's budget{} and pricing.items.
     budgetCalc: (d) => (d.c.budget_calc ? (d.rankings[d.c.slug]?.providers || [])
       .map((r, i) => (r.slug && d.providers[r.slug] ? calcProvider({ slug: r.slug, ...d.providers[r.slug] }, i + 1, r) : null))
