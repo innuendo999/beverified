@@ -11,7 +11,7 @@ const day = (v) => { const [y, m, d] = String(v || "").split("-").map(Number); r
 const month = (v) => { const [y, m] = String(v || "").split("-").map(Number); return m ? `${MONTHS[m - 1]} ${y}` : ""; };
 const fact = (p, label) => (p.facts || []).find((f) => f.label === label);
 
-const NET_STATUS = { built_in: "y", own: "y", live: "y", fallback: "y", bridge: "p", via_membership: "p", inbound: "p", pending: "plan", planned: "plan", outdated: "no", not_found: "n" };
+const NET_STATUS = { built_in: "y", own: "y", live: "y", fallback: "y", bridge: "p", via_membership: "p", inbound: "p", claimed: "p", pending: "plan", planned: "plan", outdated: "no", not_found: "n" };
 const PROOFS = { sig: /sign/i, sat: /satoshi|micro-?trans|test payment/i, aopp: /\baopp\b/i, vis: /screenshot|photo|video|visual/i };
 
 function networks(p, map) {
