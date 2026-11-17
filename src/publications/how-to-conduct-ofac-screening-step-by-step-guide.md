@@ -108,6 +108,8 @@ OFAC's framework names five components of that program:
 
 ## How to conduct OFAC screening, step by step
 
+{% include "figures/ofac-screening-flow.njk" %}
+
 ### Step 1: Assess your sanctions risk
 
 Map where sanctions exposure comes from: customer types, countries you serve, products (cross-border wires, trade finance, crypto), and third parties. The FFIEC manual names international funds transfers, nonresident alien accounts and foreign correspondent accounts as higher-risk areas. Your risk assessment decides how wide and how often you screen.

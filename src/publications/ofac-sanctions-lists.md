@@ -46,6 +46,10 @@ sources:
     publisher: "U.S. Treasury, OFAC"
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     accessed: 2026-11
+  - title: "Russian Harmful Foreign Activities Sanctions"
+    publisher: "U.S. Treasury, OFAC"
+    url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions"
+    accessed: 2026-11
   - title: "FAQ 1220: How does E.O. 14312 affect OFAC's Syria Sanctions Program?"
     publisher: "U.S. Treasury, OFAC"
     url: "https://ofac.treasury.gov/faqs/1220"
@@ -137,7 +141,7 @@ OFAC's [programmes page](https://ofac.treasury.gov/sanctions-programs-and-countr
 
 **Thematic programmes** cover counter terrorism, counter narcotics, transnational criminal organisations, cyber activity, Global Magnitsky (human rights and corruption), non-proliferation, the International Criminal Court, and hostage-taking.
 
-Russia remains the busiest area. The Russian Harmful Foreign Activities programme was last updated on 15 October 2026. Since 2022 the larger Russia risk has moved onto the SDN list: on 21 November 2024, for example, Treasury [designated Gazprombank](https://content.govdelivery.com/accounts/USTREAS/bulletins/3c32d96) and six of its foreign subsidiaries, along with more than 50 other Russian banks.
+Russia remains the busiest area. On 17 November 2026 the latest action listed on OFAC's [Russian Harmful Foreign Activities programme page](https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions) was dated 21 October 2026. Since 2022 the larger Russia risk has moved onto the SDN list: on 21 November 2024, for example, Treasury [designated Gazprombank](https://content.govdelivery.com/accounts/USTREAS/bulletins/3c32d96) and six of its foreign subsidiaries, along with more than 50 other Russian banks.
 
 ## What changed for Syria
 
@@ -183,6 +187,8 @@ OFAC's yearly totals swing widely, because one large case can dominate a year:
 | 2026 (to 27 October) | 10 | $297,513,285 |
 
 Sources: OFAC enforcement pages for [2023](https://ofac.treasury.gov/civil-penalties-and-enforcement-information/2023-enforcement-information), [2024](https://ofac.treasury.gov/civil-penalties-and-enforcement-information/2024-enforcement-information), [2025](https://ofac.treasury.gov/civil-penalties-and-enforcement-information/2025-enforcement-information) and [2026](https://ofac.treasury.gov/civil-penalties-and-enforcement-information). Binance's $968.6 million settlement made up most of 2023. In 2026, a $275 million settlement with Adani Enterprises accounts for most of the total.
+
+{% include "figures/ofac-penalties.njk" %}
 
 The most useful 2026 case for banks is smaller. On 13 October 2026 Bank of America settled 475 apparent violations for $11,662,930. OFAC's [enforcement release](https://ofac.treasury.gov/media/937231/download) points to delayed watchlist updates, an alert suppression rule, analysts clearing true matches, and a ranking flaw that treated exact name and date of birth matches as low or medium priority. OFAC also stressed that relying on a screening vendor does not transfer responsibility.
 

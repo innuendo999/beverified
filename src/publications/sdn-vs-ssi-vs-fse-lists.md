@@ -97,6 +97,8 @@ The SDN list is the one most people mean when they say "the OFAC list". It holds
 
 The SDN list also reaches companies that are not named on it. Under OFAC's 50 Percent Rule, an entity owned 50 percent or more, directly or indirectly, by one or more blocked persons is itself blocked. [OFAC FAQ 401](https://ofac.treasury.gov/faqs/401) works through examples: if blocked person X owns 50 percent of company A, and A owns 50 percent of company B, then B is blocked too. That is why sanctions screening needs ownership data, not just a name match. Our [KYB provider rankings](/providers/kyb/) cover tools that map beneficial ownership.
 
+{% include "figures/ofac-50-percent.njk" %}
+
 For a fuller tour of the SDN list and OFAC programmes, see our guide to [OFAC sanctions lists](/publications/ofac-sanctions-lists/).
 
 ## The SSI list
