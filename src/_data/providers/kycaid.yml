@@ -380,14 +380,17 @@ integration:
     note: docs.kycaid.com readable without login
     source: 6
   sdk_web:
-    status: not_disclosed
-    note: hosted form and iframe, no web SDK in docs
+    status: 'yes'
+    note: Face SDK page lists web, iOS, Android and hybrid SDKs; no public SDK docs, access on request
+    source: 20
   sdk_ios:
-    status: not_disclosed
-    note: WebView guide only; SDKs on request per vendor email
+    status: 'yes'
+    note: Face SDK page lists web, iOS, Android and hybrid SDKs; no public SDK docs, access on request
+    source: 20
   sdk_android:
-    status: not_disclosed
-    note: WebView guide only; SDKs on request per vendor email
+    status: 'yes'
+    note: Face SDK page lists web, iOS, Android and hybrid SDKs; no public SDK docs, access on request
+    source: 20
   sandbox:
     status: 'yes'
     note: welcome credit, no card; no separate sandbox
@@ -543,6 +546,10 @@ sources:
 - title: 'ID verification software'
   publisher: KYCAID
   url: https://kycaid.com/id-verification/
+  accessed: '2026-11'
+- title: 'Face SDK'
+  publisher: KYCAID
+  url: https://kycaid.com/face-sdk/
   accessed: '2026-11'
 entity:
   wikidata: null
