@@ -1,24 +1,20 @@
-# News candidates, 2026-11-16
+# News candidates, 2026-11-17
 
-New this run: 7 kept (news 4, incident 1, record-check 0, research-check 0, digest 2), 233 skipped.
-Open candidates in total: 7.
-
-## Source errors
-
-- fatf: HTTP 403
+New this run: 4 kept (news 1, incident 1, record-check 0, research-check 1, digest 1), 145 skipped.
+Open candidates in total: 6.
 
 ## news
 
-- [Imposition of Special Measure Prohibiting the Transmittal of Funds Involving MEXC Global](https://www.federalregister.gov/documents/2026/11/10/2026-22962/imposition-of-special-measure-prohibiting-the-transmittal-of-funds-involving-mexc-global) (FinCEN in the Federal Register, 2026-11-10)
-- [Threshold for the Requirement To Collect, Retain, and Transmit Information on Funds Transfers and Transmittals of Funds That Begin or End Outside the United States, and Clarification of the Requirement To Collect, Retain, and Transmit Information on Transactions Involving Convertible Virtual Currencies and Digital Assets With Legal Tender Status; Withdrawal](https://www.federalregister.gov/documents/2026/11/09/2026-22809/threshold-for-the-requirement-to-collect-retain-and-transmit-information-on-funds-transfers-and) (FinCEN in the Federal Register, 2026-11-09)
-- [Making digital identity work takes more than technology](https://www.biometricupdate.com/202611/making-digital-identity-work-takes-more-than-technology) (Biometric Update, 2026-11-14) · find primary source
-- [Shufti patents split-inference age assurance with on-device biometrics](https://www.biometricupdate.com/202611/shufti-patents-split-inference-age-assurance-with-on-device-biometrics) (Biometric Update, 2026-11-13) · find primary source
+- [Swedish privacy regulator rejects proposed national face biometrics register](https://www.biometricupdate.com/202611/swedish-privacy-regulator-rejects-proposed-national-face-biometrics-register) (Biometric Update, 2026-11-16) · find primary source
 
 ## incident
 
-- [Chainalysis Breach: What It Means for DeFi Compliance](https://news.google.com/rss/articles/CBMib0FVX3lxTE5hTmw5bkhfRW9jVW11cThkMVRmZk5ZSV9rWUZqSkFjQkJVcGZwdlg5NGRvVXk4bzZhZGFVLTlVVERJaW5rcHZ4NGxlRlBFRmRzdktFOG1DZk5UZGcyNFJPbkY4TzZCazJvR1VYLXVPMA?oc=5) (OneSafe, 2026-11-10) · find primary source
+- [Chainalysis Data Breach: All Users Exposed [2026]](https://news.google.com/rss/articles/CBMihwFBVV95cUxPcTAxUHdsV2hQLU01Wmo2YXdQb3d2UUxGMnZpMzE0VnNBNHllZ2NHU3M4YldnNGVPbTEzczhmT1JtbFEyM1R3OGJ6ZW5wMHY5ZUZJRnFfb0QtXzV0aGNnbEg3WnlERVJBRHlDbUJsRHRwUGZqdzRNYWlGWHFWOW12UDRwaTlwT2c?oc=5) (shattered.io, 2026-11-14) · find primary source
+
+## research-check
+
+- [Veriff’s Identity Fraud Report 2027 exposes 'Zombie Identities” fueling repeat fraud across businesses](https://news.google.com/rss/articles/CBMigwJBVV95cUxNNWZ5VVRIYzVaQzFpb3pVbUFwOFFVZW9kOHd2eVNhckhFbmFoNXZEbjhYNWdJY2lRMUJvdzJPcHlybWY1a2xWQXNvQ1RqWVB4NDFZcmxlSEhhZjBpTFp0T0N0TUx3Y1BWUVR2Vk1HWC14VGR6SVZCenRDaFZ4dXZ1T21WT1pvakxreFdzbW13N2FNTUNFUVBBeEFIcnBpeTZmRmExcmtaMFFLcHhfZ19HTmlyNTMxMXhoQlZuTzBCZUl6SEJEVjVaYzV4eHZCWjhDVjlhVUFoa2g4MGd6QUV4WEFFZkVJeVRhNmNEVHljaEJ0UmlqeUc5akFvT29fcU4tT2FR0gGIAkFVX3lxTE5vWkZxSmMyNXctNGVlbERMaV9OLVQ5OUx0czBqWDlON3FyekFWbHZSZjJFbU5WSG5YMlEwMlRybHBia0R0d2tfcUgzZ2lVYmdLNUxxa2Uyalg4Vmd5eVozQXdNLTV2QnNSRU5rbDhBSFBlXzdEVFlLZWd0VFVGbDhCSUd6MXFLeUMwcWxCYkVKLTlZYUE2Zk02aUFtTUFOc0paYllmaTRUSmptTy1wb0hYVG9qNWtWYXNCdnZjSmQtSjJQQTUyd0tHUFBMcTN3VDRuNTkydDVxRUhrWjZVUl9fdnQtbFZfSXRPSWc2UUhseGNnN1l0ZS10QVFzYUFEMEdPeklrQmlxLQ?oc=5) (The Manila Times, 2026-11-17) · find primary source
 
 ## digest
 
-- [Counter Narcotics and Counter Terrorism Designations](https://ofac.treasury.gov/recent-actions/20261113) (OFAC recent actions, 2026-11-13)
-- [Iran Designation Update](https://ofac.treasury.gov/recent-actions/20261109) (OFAC recent actions, 2026-11-09)
+- [Digital ID integration gaps hold back MENAAP economies: World Bank](https://www.biometricupdate.com/202611/digital-id-integration-gaps-hold-back-menaap-economies-world-bank) (Biometric Update, 2026-11-16) · find primary source
