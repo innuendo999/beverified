@@ -1,0 +1,64 @@
+term: Know Your Wallet
+abbr: KYW
+also_known_as: [Wallet screening, Wallet due diligence, Crypto address screening]
+cluster: crypto
+definition: Know Your Wallet (KYW) is an industry label for the checks a crypto business runs on a wallet address before it accepts or sends funds. It covers screening the address for links to sanctioned or illicit activity and, for self-hosted wallets, checking that the customer owns or controls it.
+seo_title: "What Is Know Your Wallet (KYW)? | BeVerified"
+seo_description: "Know Your Wallet (KYW): screening crypto addresses for sanctions and illicit links, and proving a customer controls a self-hosted wallet."
+capability: null
+rankings: [crypto, travel-rule]
+related: [self-hosted-wallet, satoshi-test, aopp, sanctions-screening, transaction-monitoring, travel-rule]
+provider_mentions: []
+body: |
+  ## What a KYW check covers
+
+  Know Your Wallet is an industry label rather than a defined legal term. Vendors use it for two different checks on a crypto address, and buyers often mean only one of them.
+
+  The first is risk screening. Before a deposit is credited or a withdrawal is sent, the address is checked against sanctions lists and against blockchain analytics data that links addresses to known services, such as exchanges, mixers, darknet markets or hacks. The result is usually a risk score or a list of exposures that feeds the same rules as [transaction monitoring](/glossary/transaction-monitoring/).
+
+  The second is an ownership check. When funds move to or from a [self-hosted wallet](/glossary/self-hosted-wallet/), the business asks the customer to prove control of the address, for example by signing a message or sending a small test amount (the [Satoshi test](/glossary/satoshi-test/)).
+
+  The two answer different questions. Screening asks whether the address is risky. The ownership check asks whether it belongs to your customer. A clean address can belong to someone else, and an address your customer controls can still have risky exposure.
+
+  ## What the rules say
+
+  OFAC adds crypto addresses to the SDN List. [FAQ 562](https://ofac.treasury.gov/faqs/562) says it may list digital currency addresses linked to a blocked person, that these listings are not likely to be exhaustive, and that parties holding such property should block it and report it. OFAC's [Sanctions Compliance Guidance for the Virtual Currency Industry](https://ofac.treasury.gov/media/913571/download) (October 2021) says companies may consider blockchain analytics tools to identify and mitigate sanctions risk, and suggests screening transactions for addresses, including digital wallet and IP addresses.
+
+  In the EU, recital 39 of the [Transfer of Funds Regulation](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1113) says that for transfers of more than EUR 1,000 to or from a self-hosted address, the crypto-asset service provider should verify that the address is owned or controlled by its customer. The European Banking Authority's [Travel Rule guidelines](https://www.eba.europa.eu/sites/default/files/2024-07/6de6e9b9-0ed9-49cd-985d-c0834b5b4356/Travel%20Rule%20Guidelines.pdf) (EBA/GL/2024/11) say providers should use available technical means, including blockchain analytics, to tell whether an address is self-hosted (paragraph 77), list ownership methods such as a test transfer and a signed message (paragraph 83), and say to combine methods where one alone is not reliable enough (paragraph 85).
+
+  ## What to check when you compare providers
+
+  Some vendors cover only one of the two checks. Address screening usually rests on a blockchain analytics data set, while ownership proofs often sit in [Travel Rule](/glossary/travel-rule/) tools, sometimes through [AOPP](/glossary/aopp/). Ask which part a vendor builds itself and which it resells from a data partner. Our [Crypto KYC ranking](/providers/crypto/) and [Travel Rule ranking](/providers/travel-rule/) compare the providers we review.
+buyer_questions:
+  - Which chains and tokens can you screen, and which data supplier does the address risk data come from?
+  - How quickly do new OFAC SDN address listings and other sanctions designations reach your screening?
+  - Do you screen only the counterparty address, or also indirect exposure several hops away, and can we set the threshold?
+  - Which ownership proofs do you support for self-hosted wallets, such as signed messages, AOPP or test transfers?
+  - How do you record the screening result and the ownership proof for each transfer, and can an auditor see them later?
+faq:
+  - q: Is Know Your Wallet a legal requirement?
+    a: Not under that name. The obligations come from sanctions rules, AML rules and, in the EU, the Transfer of Funds Regulation, which asks providers to verify ownership of self-hosted addresses for transfers over EUR 1,000. KYW is the label vendors use for the checks that help meet them.
+  - q: What is the difference between KYW and KYT?
+    a: Know Your Transaction (KYT) usually means monitoring transfers over time for illicit links. Know Your Wallet is often used for the check on a single address before funds move, plus the ownership check for self-hosted wallets. Many vendors sell both in one product.
+  - q: Does OFAC publish crypto addresses?
+    a: Yes. OFAC adds digital currency addresses to entries on the SDN List, but its FAQ 562 says these listings are not likely to be exhaustive, which is why many firms also use blockchain analytics.
+sources:
+  - title: "FAQ 562: How will OFAC identify digital currency-related information on the SDN List?"
+    publisher: U.S. Department of the Treasury, OFAC
+    url: https://ofac.treasury.gov/faqs/562
+    accessed: 2026-11
+  - title: Sanctions Compliance Guidance for the Virtual Currency Industry (October 2021)
+    publisher: U.S. Department of the Treasury, OFAC
+    url: https://ofac.treasury.gov/media/913571/download
+    accessed: 2026-11
+  - title: Regulation (EU) 2023/1113 on information accompanying transfers of funds and certain crypto-assets
+    publisher: EUR-Lex
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1113
+    accessed: 2026-11
+  - title: Guidelines on information requirements in relation to transfers of funds and certain crypto-assets transfers under Regulation (EU) 2023/1113 (EBA/GL/2024/11)
+    publisher: European Banking Authority
+    url: https://www.eba.europa.eu/sites/default/files/2024-07/6de6e9b9-0ed9-49cd-985d-c0834b5b4356/Travel%20Rule%20Guidelines.pdf
+    accessed: 2026-11
+author: andrii-klymenko
+published: 2026-11-17
+updated: 2026-11-17
