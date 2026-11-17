@@ -77,3 +77,19 @@
   - Know Your Agent
   description: Identity verification vendor with a Know Your Agent suite (Agent Checkpoint, KYA-OS, KnowThat.ai registry).
   review: null
+- name: Smile ID
+  categories:
+  - Identity Verification
+  description: African identity verification provider with NIN and BVN checks against Nigerian government databases.
+  review: null
+- name: Youverify
+  categories:
+  - Identity Verification
+  - AML
+  description: Nigerian KYC and AML platform with BVN checks through NIBSS and NIN checks through NIMC.
+  review: null
+- name: Dojah
+  categories:
+  - Identity Verification
+  description: African identity API with NIN, BVN and other government ID lookups in Nigeria.
+  review: null

@@ -419,6 +419,10 @@ sources:
   publisher: Signzy
   url: https://signzy.com/identity-verification
   accessed: '2026-11'
+- title: 'Nigeria NIN Verification API (checks against the NIMC database)'
+  publisher: Signzy
+  url: https://docs.signzy.com/us-apis/nigeria-nin-verification
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

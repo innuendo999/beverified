@@ -49,7 +49,7 @@ regions:                # area = section on /regions/; slug = region ranking pag
   - { name: India, short: India, area: Asia-Pacific, reg: RBI, x: 71, y: 38, slug: india, lon: 79, lat: 22, iso: "356" }
   - { name: Brazil, short: Brazil, area: Latin America, reg: BACEN, x: 36, y: 63, slug: brazil, lon: -52, lat: -10, iso: "076" }
   - { name: Mexico, short: Mexico, area: North America, reg: CNBV, x: 22, y: 39, slug: mexico, side: left, lon: -102, lat: 23, iso: "484" }
-  - { name: Nigeria, short: Nigeria, area: Middle East & Africa, reg: CBN, x: 52, y: 45 }
+  - { name: Nigeria, short: Nigeria, area: Middle East & Africa, reg: CBN, x: 52, y: 45, slug: nigeria, lon: 8, lat: 9.5, iso: "566" }
   - { name: Canada, short: Canada, area: North America, reg: FINTRAC, x: 22, y: 22, slug: canada, side: left, lon: -100, lat: 57, iso: "124" }
   - { name: Peru, short: Peru, area: Latin America, reg: SBS, x: 29, y: 56, slug: peru, side: left, lon: -75, lat: -9, iso: "604" }
   - { name: South Africa, short: South Africa, area: Middle East & Africa, reg: FIC, x: 56.6, y: 64.3, slug: south-africa, lon: 24, lat: -29, iso: "710" }

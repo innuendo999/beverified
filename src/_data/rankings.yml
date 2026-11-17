@@ -1765,6 +1765,131 @@ age-verification:
     legacy_price_shown: $1.35/verification
     legacy_rating_shown: null
     segments: []
+nigeria:
+  title: Best KYC & AML Providers for Nigeria in 2026
+  # Scored providers: a NIN or BVN check against a government database documented by the vendor (owner, 2026-11-17).
+  # Evidence check 17 Nov 2026: reports/verification/nigeria-nin-bvn-2026-11.md. Order: v3.1 score; unreviewed vendors last.
+  providers:
+  - slug: shufti-pro
+    name: Shufti Pro
+    award: Editor's Choice
+    tagline: Checks NIN against NIMC records with a BVN-first eIDV flow, plus CAC company checks and published entry pricing.
+    coverage: Global
+    size: null
+    pros:
+    - Checks NIN against NIMC records and uses BVN as its main electronic ID route in Nigeria, per Shufti
+    - KYB checks confirm company status in the CAC registry and capture beneficial owners, per Shufti
+    - Screening covers CBN watchlists, NFIU national lists and global PEP databases, per Shufti
+    cons:
+    - Enterprise pricing above the Essentials tier is quote-only
+    - The free tier is capped at 10 verifications a month
+    - Where Nigerian data residency applies, it offers South African cloud regions or on-premise hosting, not hosting in Nigeria
+    segments: []
+  - slug: sumsub
+    name: Sumsub
+    award: Best for Document-Free Checks
+    tagline: Document-free NIN and BVN checks with a selfie match against government sources, on a platform with published plans.
+    coverage: Global
+    size: null
+    pros:
+    - Checks NIN against a government source with 96% stated coverage, and BVN with 92%, per Sumsub's docs
+    - Each NIN or BVN check can include a selfie match against the record, per Sumsub's docs
+    - Published per-verification pricing with a 14-day free trial
+    cons:
+    - NIN and BVN checks are non-document checks, which sit only in the custom, quoted plan
+    - Monthly minimums of $149 and $299 on the published plans
+    - Disclosed in February 2026 that an attacker had access to a support system from July 2024 to January 2026
+    segments: []
+  - slug: kycaid
+    name: KYCAID
+    award: Best Pay-As-You-Go Pricing
+    tagline: Per-check prices with no monthly minimum, and a NIN lookup against the national database in its API.
+    coverage: Global
+    size: SMB to Mid-market
+    pros:
+    - Its API docs list a NIN check that queries the official national database and returns the holder's registered details
+    - Published prices, with non-document checks against government databases from €0.05 to €0.80 depending on the country
+    - No subscription or monthly minimum on the usage-based plan
+    cons:
+    - The NIN docs do not name NIMC as the source, and no BVN check is listed
+    - Ongoing monitoring is a €100 monthly add-on
+    - Smaller watchlist database than category leaders
+    segments: []
+  - slug: aiprise
+    name: AiPrise
+    award: null
+    tagline: One API for KYC and KYB in emerging markets, with BVN, NIN and voter ID checks in Nigeria.
+    coverage: Global
+    size: null
+    pros:
+    - Completes KYC with a BVN or NIN and a selfie, without an ID document, per AiPrise's docs
+    - Its government checks also cover the Nigerian voter ID number, per AiPrise's docs
+    - Combines individual KYC and business KYB in one platform
+    cons:
+    - Its docs do not name NIMC or NIBSS as the source of the Nigerian checks
+    - No price list on its own website; G2 shows only starting prices
+    - Younger brand with smaller scale than category leaders
+    segments: []
+  - slug: signzy
+    name: Signzy
+    award: null
+    tagline: No-code KYC builder from India with a NIN verification API that checks against the NIMC database.
+    coverage: Global
+    size: null
+    pros:
+    - Its NIN API checks name, date of birth, gender and phone number against the NIMC database and returns a match per field, per Signzy's docs
+    - No-code builder for compliance teams
+    - Modular pay-as-you-go pricing, so you pay for the APIs you use
+    cons:
+    - No documented BVN check; its NIN page carries leftover BVN references
+    - No published pricing
+    - Depth is concentrated in India; other markets need more configuration
+    segments: []
+  - slug: null
+    name: Smile ID
+    award: null
+    tagline: African identity verification provider that checks NIN, BVN and other numbers against Nigerian government ID databases.
+    coverage: null
+    size: null
+    pros:
+    - Checks customer data against 9 Nigerian government ID databases, per Smile ID
+    - Verifies up to 5 ID numbers, including NIN, BVN, phone number and voter's ID, per Smile ID
+    - Access to up to 132 million Nigerian ID records, per Smile ID
+    cons:
+    - Not yet reviewed by BeVerified, so it has no score
+    - Pricing and contract terms not yet checked by BeVerified
+    - Independent liveness test results not yet checked by BeVerified
+    segments: []
+  - slug: null
+    name: Youverify
+    award: null
+    tagline: Nigerian KYC and AML platform with direct BVN checks through NIBSS and NIN checks through NIMC.
+    coverage: null
+    size: null
+    pros:
+    - States direct integrations with NIBSS for BVN and NIMC for NIN, per Youverify
+    - Onboarding covers 100+ African government ID types, with liveness detection, per Youverify
+    - Lists transaction monitoring alongside onboarding on the same platform, per Youverify
+    cons:
+    - Not yet reviewed by BeVerified, so it has no score
+    - Pricing and contract terms not yet checked by BeVerified
+    - Independent liveness test results not yet checked by BeVerified
+    segments: []
+  - slug: null
+    name: Dojah
+    award: null
+    tagline: African identity API with NIN, BVN, phone, driver's licence and voter ID lookups in Nigeria.
+    coverage: null
+    size: null
+    pros:
+    - Looks up NIN, BVN, phone number, driver's licence and voter ID in Nigeria, per Dojah's docs
+    - BVN and NIN checks can match a selfie against the photo on file, per Dojah's docs
+    - One-off lookups run from the dashboard with no integration needed, per Dojah's docs
+    cons:
+    - Not yet reviewed by BeVerified, so it has no score
+    - Government lookups cover African countries only, per Dojah's docs
+    - Pricing and contract terms not yet checked by BeVerified
+    segments: []
 south-africa:
   title: Best KYC & AML Providers for South Africa in 2026
   providers:
