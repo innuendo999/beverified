@@ -1,14 +1,8 @@
 import { shortLabel } from "./placements.js";
 
 // Homepage first screen (owner approved the "Identity palette" design canvas, 2026-11-16).
-// Everything here is derived: ranks from rankings.yml, scores, certificates and price dates from the
+// Everything here is derived: ranks from rankings.yml, scores and certificates from the
 // provider records, counts from the records and rankings. Nothing is typed into home.yml but labels.
-
-const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-const month = (ym) => {
-  const m = /^(\d{4})-(\d{2})/.exec(String(ym || ""));
-  return m ? `${MONTHS[Number(m[2]) - 1]} ${m[1]}` : null;
-};
 
 // Short chip label for a certification that the record marks as confirmed (independent evidence only).
 // Order = priority; a card row shows at most two. Vendor-stated items (ISO 27001, SOC 2 ...) never show.
@@ -43,10 +37,8 @@ export function heroCard(d, sponsor) {
     if (!p) return null;
     return { rank: i + 1, slug: r.slug, name: p.name, wordmark: p.logo?.wordmark || null, score: score(p),
       checks: confirmedChecks(p), prices: ["core", "full"].includes(p.pricing?.model?.published),
-      priced: p.pricing?.verified || null, method: p.methodology };
+      method: p.methodology };
   }).filter(Boolean);
-  // The badge shows the OLDEST price check among the rows, so it never claims more than is true.
-  const dates = rows.map((r) => r.priced).filter(Boolean).sort();
   // Machine-readable-zone look (bottom of a passport), decoration only: aria-hidden in the template.
   const field = (s) => String(s).toUpperCase().replace(/[^A-Z0-9]+/g, "<");
   const mrzLine = (parts) => parts.map(field).join("<<").padEnd(44, "<").slice(0, 44);
@@ -57,7 +49,7 @@ export function heroCard(d, sponsor) {
     ranking: cfg.ranking, url: cat.url || `/providers/${cfg.ranking}/`,
     label: shortLabel(d.site?.v3?.menu, cfg.ranking) || cfg.ranking.toUpperCase(), total: list.length,
     rubric: !own && rows.length && rows.every((r) => r.method === d.site?.v3?.methodologyVersion) ? d.site.v3.methodologyVersion : null,
-    rows, pricesChecked: dates.length === rows.length ? month(dates[0]) : null,
+    rows,
     sponsor: sponsor ? { name: sponsor.provider.name, slug: sponsor.slug, rank: sponsor.rank, score: score(sponsor.provider),
       url: sponsor.provider.link?.url || null } : null,
   };

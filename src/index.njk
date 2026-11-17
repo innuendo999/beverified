@@ -8,9 +8,6 @@ layout: v3.njk
   <svg class="hero__guilloche" viewBox="0 0 1440 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">{% for g in guilloche %}<path d="{{ g.d }}"{% if g.strong %} class="is-strong"{% endif %}/>{% endfor %}</svg>
   <div class="hero__inner">
     <div class="hero__copy">
-      {%- if hero.pricesChecked %}
-      <p class="hero__badge"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><path d="M5.2 8.2l1.9 1.9 3.7-4"/></svg>{{ hero.label }} prices checked {{ hero.pricesChecked }}</p>
-      {%- endif %}
       <h1 id="hero-h1" class="hero__h1">{{ home.h1 }}</h1>
       <p class="hero__lede">{{ home.lede }}</p>
       <div class="cta-row">
