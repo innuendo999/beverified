@@ -7,7 +7,14 @@ seo:
 breadcrumb_label: Best Travel Rule Providers
 quick_answer: '21 Analytics is our top Travel Rule pick: self-hosted software with built-in TRUST and TRP connectivity. Notabene is the hosted option, with the largest network claim and a free plan but no direct TRUST link. CryptoSwift suits buyers who want published prices. We compared 9 providers on network reach, counterparty coverage and self-hosted wallet checks.'
 last_verified: '2026-09-15'
-updated: '2026-11-16'   # last content edit; last_verified = last fact re-check
+updated: '2026-11-17'   # last content edit; last_verified = last fact re-check
+# Ranking layout v2 (owner, 2026-11-17; canvas "BeVerified: Travel Rule ranking page, redesign proposal"):
+# top 3 columns and chips from ranking-evidence.js (evidence: travel-rule), no score_note (owner removed it).
+layout: v2
+evidence: travel-rule
+list_noun: Travel Rule providers
+top3_note: '✓ = confirmed by the network itself.'
+methodology_label: v3.0 (Travel Rule)
 legacy_stats:
 - value: '6'
   label: providers compared
@@ -39,10 +46,6 @@ explainer_html:
   <h3 style="font-size:14.5px;margin-bottom:8px;">How this differs from crypto KYC</h3>
 
   <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Travel Rule software exchanges identity data between VASPs at transfer time; <a href="/providers/crypto/">crypto KYC</a> screens the wallet''s own risk and onboarding history. Most platforms in this list also appear in Crypto KYC, since the same VASP often runs both.</p>
-
-  <h3 style="font-size:14.5px;margin-bottom:8px;">Regulatory context</h3>
-
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">Key references: FATF Recommendation 16, the VASP (Virtual Asset Service Provider) designation, and the IVMS101 messaging standard used to format Travel Rule data.</p>
 
   <h3 id="protocols" style="font-size:14.5px;margin-bottom:8px;">Travel Rule networks and protocols, explained</h3>
 
@@ -86,6 +89,27 @@ faq:
   a: Interoperability varies by provider. Some connect to shared networks such as TRUST and TRP, while others run their own protocol. Notabene, for example, is built around its own TAP protocol and provides TRP 1.0 endpoints (not the current 3.x version), but cannot connect directly to TRUST. Check a provider's networks against your counterparties before you commit.
 - q: Which Travel Rule provider works with self-hosted wallets?
   a: 21 Analytics verifies self-hosted (non-custodial) wallet ownership in one step using AOPP, the Address Ownership Proof Protocol. That helps when a VASP needs to prove who controls an external wallet before releasing funds.
+segments_heading: 'Best pick by what you need'
+segments_col: 'You need'
+segments:
+- segment: 'Counterparties on the TRUST network'
+  slug: 21analytics
+  reason: 'TRUST lists 21 Analytics as its only interoperability partner.'
+- segment: 'Hosted, with a free plan for incoming transfers'
+  slug: notabene
+  reason: 'Free plan answers unlimited incoming transfers and sends up to $10,000 a month with no integration.'
+- segment: 'Published prices for an EU CASP'
+  slug: cryptoswift
+  reason: 'Plans from €600 a month on annual billing, no setup fee and a free sandbox.'
+- segment: 'Asia-Pacific exchange counterparties'
+  slug: verifyvasp
+  reason: 'Live CODE connection documented by CODE, and Sygna Bridge with its Japanese members since April 2026.'
+- segment: 'KYC and Travel Rule from one vendor'
+  slug: blockpass
+  reason: 'KYC, KYB, wallet screening and Travel Rule in one platform, with per-check prices published.'
+- segment: 'Wallet screening in the same API'
+  slug: ospree
+  reason: 'Travel Rule messaging plus wallet screening with TRM Labs, Crystal and Global Ledger data.'
 adjacent:
 - crypto
 - aml

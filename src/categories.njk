@@ -113,7 +113,7 @@ layout: v3.njk
       <div class="card table-scroll">
         <table class="seg-table">
           <caption class="visually-hidden">{{ c.breadcrumb_label }}: our pick for each use case and why.</caption>
-          <thead><tr><th scope="col">Use case</th><th scope="col">Our pick</th><th scope="col">Why</th></tr></thead>
+          <thead><tr><th scope="col">{{ c.segments_col or "Use case" }}</th><th scope="col">Our pick</th><th scope="col">Why</th></tr></thead>
           <tbody>
           {%- for x in segmentPicks %}
             <tr><th scope="row">{{ x.segment }}</th><td><a href="/providers/{{ x.q.slug }}/">{{ x.q.name }}</a></td><td>{{ x.reason }}</td></tr>
