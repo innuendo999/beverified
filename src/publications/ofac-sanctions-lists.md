@@ -2,19 +2,19 @@
 title: "OFAC Sanctions Lists: What Banks Need to Know in 2026"
 seoTitle: "OFAC Sanctions Lists in 2026: Guide for Banks | BeVerified"
 seoDescription: "What OFAC's SDN and non-SDN lists are, which programmes are active in 2026, how the 50 Percent Rule works, what changed for Syria, and recent OFAC penalties."
-lede: "OFAC publishes the SDN list plus six smaller non-SDN lists, and US banks have to screen customers and payments against them. In October 2026 OFAC runs 36 active sanctions programmes; Syria's comprehensive programme is gone, replaced by targeted Assad-related sanctions."
+lede: "OFAC publishes the SDN list plus six smaller non-SDN lists, and US banks have to screen customers and payments against them. In November 2026 OFAC runs 36 active sanctions programmes; Syria's comprehensive programme is gone, replaced by targeted Assad-related sanctions."
 section: publications
 cover_label: "OFAC lists"
 cover_motif: magnifier
 published: 2025-04-18
-updated: 2026-10-18
+updated: 2026-11-17
 author: andrii-klymenko
 takeaways:
   - "The SDN list blocks property; the six non-SDN lists (SSI, FSE, NS-MBS, NS-PLC, CAPTA, NS-CMIC) carry narrower restrictions."
-  - "OFAC's programme page lists 36 active sanctions programmes in October 2026, including Russia-related, Iran, Cuba, North Korea, Venezuela and Belarus."
+  - "OFAC's programme page lists 36 active sanctions programmes in November 2026, including Russia-related, Iran, Cuba, North Korea, Venezuela and Belarus."
   - "Syria's comprehensive sanctions ended on 1 July 2025; what remains is the Promoting Accountability for Assad and Regional Stabilization Sanctions (PAARSS) programme."
   - "Entities owned 50 percent or more by blocked persons are blocked even when they are not on the list."
-  - "OFAC penalties totalled $265.7 million in 2025 and $296.0 million in 2026 up to mid-October."
+  - "OFAC penalties totalled $265.7 million in 2025 and $297.5 million in 2026 up to 27 October."
 topics: [OFAC, SDN list, Sanctions screening, Banking]
 provider_slugs: [complyadvantage, castellum-ai, smartsearch]
 ranking_keys: [aml/banks, aml]
@@ -41,11 +41,11 @@ sources:
   - title: "Other OFAC Sanctions Lists"
     publisher: "U.S. Treasury, OFAC"
     url: "https://ofac.treasury.gov/other-ofac-sanctions-lists"
-    accessed: 2026-10
+    accessed: 2026-11
   - title: "Sanctions Programs and Country Information"
     publisher: "U.S. Treasury, OFAC"
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information"
-    accessed: 2026-10
+    accessed: 2026-11
   - title: "FAQ 1220: How does E.O. 14312 affect OFAC's Syria Sanctions Program?"
     publisher: "U.S. Treasury, OFAC"
     url: "https://ofac.treasury.gov/faqs/1220"
@@ -97,7 +97,7 @@ sources:
   - title: "Civil Penalties and Enforcement Information"
     publisher: "U.S. Treasury, OFAC"
     url: "https://ofac.treasury.gov/civil-penalties-and-enforcement-information"
-    accessed: 2026-10
+    accessed: 2026-11
   - title: "Settlement Agreement between OFAC and Bank of America, N.A. (enforcement release, October 13, 2026)"
     publisher: "U.S. Treasury, OFAC"
     url: "https://ofac.treasury.gov/media/937231/download"
@@ -116,13 +116,13 @@ The Office of Foreign Assets Control is the US Treasury's sanctions office. In [
 
 The **Specially Designated Nationals and Blocked Persons (SDN) list** is the core. If a party is on it, US persons must block its property and generally cannot deal with it without OFAC authorisation.
 
-OFAC's [other sanctions lists page](https://ofac.treasury.gov/other-ofac-sanctions-lists) shows six non-SDN lists as of October 2026:
+OFAC's [other sanctions lists page](https://ofac.treasury.gov/other-ofac-sanctions-lists) shows six non-SDN lists as of 17 November 2026:
 
 | List | What it covers | Last updated |
 |---|---|---|
-| SSI | Persons in sectors of the Russian economy; restricts specific debt, equity and energy project dealings | 14 September 2026 |
+| SSI | Persons in sectors of the Russian economy; restricts specific debt, equity and energy project dealings | 4 November 2026 |
 | FSE | Foreign sanctions evaders under E.O. 13608 | 18 December 2025 (now empty) |
-| NS-MBS | Persons under "less than full blocking" menu-based sanctions | 17 July 2026 |
+| NS-MBS | Persons under "less than full blocking" menu-based sanctions | 19 October 2026 |
 | NS-PLC | Palestinian Legislative Council members not on the SDN list | 27 July 2026 |
 | CAPTA | Foreign banks subject to correspondent or payable-through account sanctions | 6 April 2022 |
 | NS-CMIC | Chinese military-industrial complex companies | 16 December 2021 |
@@ -131,7 +131,7 @@ The FSE list is a 2025 change worth noting: [OFAC FAQ 336](https://ofac.treasury
 
 ## Active sanctions programmes in 2026
 
-OFAC's [programmes page](https://ofac.treasury.gov/sanctions-programs-and-country-information) lists 36 active programmes in October 2026. They fall into two broad groups.
+OFAC's [programmes page](https://ofac.treasury.gov/sanctions-programs-and-country-information) lists 36 active programmes in November 2026. They fall into two broad groups.
 
 **Country and regional programmes** include Belarus, Burma, Cuba, Iran, Iraq, Lebanon, Libya, Mali, Nicaragua, North Korea, Russian Harmful Foreign Activities, Ukraine-/Russia-related, Sudan and Darfur, Venezuela and Yemen, among others. Some are close to full embargoes, others are lists of named targets. The page does not label them, so check each programme's own page before assuming what is prohibited.
 
@@ -156,7 +156,7 @@ Sanctions on Bashar al-Assad and other targets continue; the same order rewrote 
 
 Screening names is not enough. Under OFAC's 50 Percent Rule, any entity owned 50 percent or more by one or more blocked persons is blocked too, whether or not it is listed. Stakes are added up across blocked owners and through intermediate companies. [OFAC FAQ 401](https://ofac.treasury.gov/faqs/401) gives the examples: if blocked person X owns 50 percent of company A and A owns 50 percent of company B, B is blocked. If X owns 25 percent of A and 25 percent of B, and they each own 50 percent of C, C is not blocked, because neither A nor B is.
 
-This is why banks pair sanctions screening with beneficial ownership checks. Our [KYB rankings](/providers/kyb/) compare tools that build ownership trees from registry data.
+This is why banks pair [sanctions screening](/glossary/sanctions-screening/) with checks on the [ultimate beneficial owner](/glossary/ultimate-beneficial-owner/). Our [KYB rankings](/providers/kyb/) compare tools that build ownership trees from registry data.
 
 ## What banks are expected to do
 
@@ -180,7 +180,7 @@ OFAC's yearly totals swing widely, because one large case can dominate a year:
 | 2023 | 17 | $1,541,380,594 |
 | 2024 | 12 | $48,790,404 |
 | 2025 | 14 | $265,746,819 |
-| 2026 (to 13 October) | 9 | $295,983,600 |
+| 2026 (to 27 October) | 10 | $297,513,285 |
 
 Sources: OFAC enforcement pages for [2023](https://ofac.treasury.gov/civil-penalties-and-enforcement-information/2023-enforcement-information), [2024](https://ofac.treasury.gov/civil-penalties-and-enforcement-information/2024-enforcement-information), [2025](https://ofac.treasury.gov/civil-penalties-and-enforcement-information/2025-enforcement-information) and [2026](https://ofac.treasury.gov/civil-penalties-and-enforcement-information). Binance's $968.6 million settlement made up most of 2023. In 2026, a $275 million settlement with Adani Enterprises accounts for most of the total.
 

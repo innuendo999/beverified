@@ -2,12 +2,12 @@
 title: "How to Conduct OFAC Screening: A Step-by-Step Guide"
 seoTitle: "How to Conduct OFAC Screening: Step by Step | BeVerified"
 seoDescription: "OFAC screening process, requirements and best practices for 2026: what to screen, when, how to clear alerts, and the 10-business-day reporting and 10-year records rules."
-lede: "OFAC screening means checking customers, counterparties and payments against the US Treasury's sanctions lists before you deal with them, then blocking or rejecting anything that truly matches. This guide walks through the process step by step, with the reporting deadlines and record rules in force in October 2026."
+lede: "OFAC screening means checking customers, counterparties and payments against the US Treasury's sanctions lists before you deal with them, then blocking or rejecting anything that truly matches. This guide walks through the process step by step, with the reporting deadlines and record rules in force in November 2026."
 section: publications
 cover_label: "OFAC screening"
 cover_motif: list
 published: 2025-04-23
-updated: 2026-10-18
+updated: 2026-11-17
 author: andrii-klymenko
 takeaways:
   - "No regulation prescribes a specific OFAC compliance program, but US examiners expect a risk-based one, and OFAC's framework lists five components: management commitment, risk assessment, internal controls, testing and auditing, and training."
@@ -70,6 +70,10 @@ sources:
     publisher: "U.S. Treasury, OFAC"
     url: "https://ofac.treasury.gov/media/937231/download"
     accessed: 2026-10
+  - title: "Filing Reports with OFAC (FAQs 49 and 50, updated 26 October 2026)"
+    publisher: "U.S. Treasury, OFAC"
+    url: "https://ofac.treasury.gov/faqs/topic/1606"
+    accessed: 2026-11
   - title: "2025 Enforcement Information"
     publisher: "U.S. Treasury, OFAC"
     url: "https://ofac.treasury.gov/civil-penalties-and-enforcement-information/2025-enforcement-information"
@@ -88,7 +92,7 @@ OFAC, the Office of Foreign Assets Control at the US Treasury, administers US sa
 
 OFAC's rules bind US persons and transactions within the United States, which covers far more than banks. OFAC's [Framework for OFAC Compliance Commitments](https://ofac.treasury.gov/media/16331/download) lists the ways non-banks have run into trouble: foreign affiliates of US companies facilitating deals with sanctioned parties, re-exports of US goods, and payments routed through US banks. Recent OFAC penalties hit a logistics company, a consulting firm, a sports academy and a broker, according to OFAC's [2026 enforcement table](https://ofac.treasury.gov/civil-penalties-and-enforcement-information).
 
-Crypto firms are covered too. OFAC's [virtual currency FAQs](https://ofac.treasury.gov/faqs/topic/1626) say compliance obligations are the same for digital currency and fiat transactions, and OFAC adds wallet addresses to SDN entries.
+Crypto firms are covered too. OFAC's [virtual currency FAQs](https://ofac.treasury.gov/faqs/topic/1626) say compliance obligations are the same for digital currency and fiat transactions, and OFAC adds wallet addresses to SDN entries. Screening those addresses is what the industry calls [Know Your Wallet](/glossary/know-your-wallet/).
 
 ## Is OFAC screening required by law?
 
@@ -114,7 +118,7 @@ Names alone produce too many false hits. Collect full legal name, date of birth,
 
 ### Step 3: Screen against every OFAC list
 
-Screen against the SDN list and the non-SDN lists. OFAC's free [Sanctions List Search](https://sanctionssearch.ofac.treas.gov/) tool covers the SDN list together with the FSE, SSI, CAPTA and NS-PLC lists and uses fuzzy matching with an adjustable minimum score. OFAC does not recommend a particular score, and it says the tool does not replace due diligence. It works for occasional lookups; most regulated firms use commercial screening software fed with OFAC's list files.
+Screen against the SDN list and the non-SDN lists. OFAC's free [Sanctions List Search](https://sanctionssearch.ofac.treas.gov/) tool covers the SDN list together with the FSE, SSI, CAPTA and NS-PLC lists and uses [fuzzy matching](/glossary/fuzzy-name-matching/) with an adjustable minimum score. OFAC does not recommend a particular score, and it says the tool does not replace due diligence. It works for occasional lookups; most regulated firms use commercial screening software fed with OFAC's list files.
 
 Then check ownership. Under OFAC's 50 Percent Rule, a company owned 50 percent or more, directly or indirectly, by blocked persons is blocked even if it is not named. [OFAC FAQ 401](https://ofac.treasury.gov/faqs/401) explains how indirect stakes add up. This is where [KYB tools](/providers/kyb/) that map beneficial ownership come in.
 
@@ -141,7 +145,7 @@ If the match is confirmed, block the property or reject the transaction, dependi
 - **Blocked property:** report to OFAC within 10 business days of blocking, under [31 CFR 501.603](https://www.ecfr.gov/current/title-31/subtitle-B/chapter-V/part-501/subpart-C/section-501.603). Holders also file an annual report of property blocked as of 30 June, due by 30 September.
 - **Rejected transactions:** report within 10 business days of the rejection, under [31 CFR 501.604](https://www.ecfr.gov/current/title-31/subtitle-B/chapter-V/part-501/subpart-C/section-501.604).
 
-Reports are generally filed electronically through OFAC's reporting system.
+Both reports go through the OFAC Reporting System (ORS) with supporting documents such as payment instructions or invoices. Anyone holding blocked property on 30 June also files an Annual Report of Blocked Property through ORS by 30 September. OFAC restated these rules in [FAQs 49 and 50](https://ofac.treasury.gov/faqs/topic/1606), updated on 26 October 2026.
 
 ### Step 7: Keep records for 10 years
 
@@ -151,7 +155,7 @@ This changed in 2025. OFAC's final rule, published on 20 March 2025 and effectiv
 
 On 13 October 2026, OFAC announced a $11,662,930 settlement with Bank of America over 475 apparent violations across the Russia, Belarus, Iran, Burma, Somalia, narcotics and terrorism programmes. The [enforcement release](https://ofac.treasury.gov/media/937231/download) describes failures at almost every step above:
 
-- routing directory errors, delayed filter updates, analysts approving matches as false positives and an alert suppression rule let 403 payments worth about $14.3 million go through 35 blocked banks;
+- routing directory errors, delayed filter updates, analysts approving matches as [false positives](/glossary/screening-false-positive/) and an alert suppression rule let 403 payments worth about $14.3 million go through 35 blocked banks;
 - a design flaw ranked exact name and date of birth matches to blocked persons as low or medium priority;
 - vendor and technical problems delayed watchlist updates after new designations;
 - human error left a blocked person's business account unrestricted.
