@@ -24,7 +24,7 @@ layout: v3.njk
     </div>
   </section>
 
-  {%- if entries.length %}
+  {%- if entries.length and c.layout != "v2" %}
   <nav class="jump" aria-label="Jump to provider">
     {%- for e in entries %}<a href="#rank-{{ e.rank }}"><b>{{ e.rank | pad2 }}</b>{{ e.r.name }}</a>{% endfor %}
   </nav>
@@ -61,7 +61,9 @@ layout: v3.njk
   {%- endif %}
 
   <main id="main" class="cat-main">
-    {%- if entries.length %}
+    {%- if entries.length and c.layout == "v2" %}
+    {% include "v3/ranking-v2.njk" %}
+    {%- elif entries.length %}
     <section aria-label="Ranked providers">
       <p class="disclosure-line">{{ site.v3.disclosure }} <a href="{{ site.v3.disclosureHref }}">How we make money →</a></p>
       <ol class="stack list-none p-0">
@@ -130,6 +132,9 @@ layout: v3.njk
     </section>
     {%- endif %}
 
+    {%- if c.layout == "v2" %}
+    <p class="r2-method">How we score this ranking: <a href="{{ site.v3.methodologyHref }}{{ c.methodology_anchor or "" }}">{{ c.methodology_label or site.v3.methodologyVersion }} methodology →</a></p>
+    {%- else %}
     <section aria-labelledby="how-h">
       <h2 id="how-h" class="h-section">How we ranked this category</h2>
       <div class="card weights">
@@ -144,6 +149,7 @@ layout: v3.njk
         </div>
       </div>
     </section>
+    {%- endif %}
 
     {%- for h in c.explainer_html %}
     <section class="legacy-prose">{{ h | cleanHtml | safe }}</section>

@@ -17,7 +17,7 @@ export function placementIssues(placements, { rankings, providers, useCases }) {
   const keys = new Set((useCases || []).map((u) => u.slug));
   const seen = {};
   (placements || []).forEach((e, i) => {
-    if (e?.surface === "review" || e?.surface === "hero") return; // checked by reviewPlacementIssues / heroPlacementIssues
+    if (e?.surface === "review" || e?.surface === "hero" || e?.surface === "ranking") return; // checked by reviewPlacementIssues / heroPlacementIssues / rankingPlacementIssues
     const id = `placements[${i}] ${e?.use_case ?? "?"}/${e?.slug ?? "?"}`;
     const start = iso(e?.start), end = iso(e?.end);
     if (!e?.use_case || !keys.has(e.use_case)) issues.push(`${id}: use_case is not a homepage use case`);
@@ -39,7 +39,7 @@ export function placementIssues(placements, { rankings, providers, useCases }) {
 export function activePlacements(placements, ctx, today = new Date().toISOString().slice(0, 10)) {
   const out = {};
   (placements || []).forEach((e) => {
-    if (e?.surface === "review" || e?.surface === "hero") return;
+    if (e?.surface === "review" || e?.surface === "hero" || e?.surface === "ranking") return;
     if (placementIssues([e], ctx).length) return;
     if (iso(e.start) > today || iso(e.end) < today || out[e.use_case]) return;
     const list = ctx.rankings[e.use_case].providers;
@@ -144,6 +144,49 @@ export function heroPlacement(placements, ctx, today = new Date().toISOString().
     if (e?.surface !== "hero" || heroPlacementIssues([e], ctx).length) continue;
     if (iso(e.start) > today || iso(e.end) < today) continue;
     return { slug: e.slug, rank: inRanking(ctx.rankings, ctx.hero.ranking, e.slug) + 1, provider: ctx.providers[e.slug] };
+  }
+  return null;
+}
+
+// ---- Ranking pages (owner, 2026-11-17; first on Identity Verification, layout v2) ----
+// One sponsor slot under a ranking's top 3. Entry: { surface: ranking, category, slug, start, end }.
+// - category is a rankings.yml key; the sponsor has a published review with a score and a link.url,
+//   is ranked in that list and is not in its top 3 (the top 3 table shows those already);
+// - the slot always says "Sponsored", shows the sponsor's real rank and the score the page ranks on,
+//   and its outbound link is rel="sponsored" (data-ad). It never changes the order of the list;
+// - start and end are ISO dates, start <= end; slots for one ranking never overlap.
+export function rankingPlacementIssues(placements, { rankings, providers }) {
+  const issues = [];
+  const seen = {};
+  (placements || []).forEach((e, i) => {
+    if (e?.surface !== "ranking") return;
+    const id = `placements[${i}] ranking/${e?.category ?? "?"}/${e?.slug ?? "?"}`;
+    const start = iso(e?.start), end = iso(e?.end);
+    const p = providers?.[e?.slug];
+    if (!p || p.status !== "published" || p.score == null) issues.push(`${id}: no published review with a score`);
+    if (!p?.link?.url) issues.push(`${id}: provider record has no link.url`);
+    if (!e?.category || !rankings?.[e.category]) issues.push(`${id}: category is not a rankings.yml key`);
+    else {
+      const rank = inRanking(rankings, e.category, e.slug);
+      if (rank < 0) issues.push(`${id}: sponsor is not ranked in ${e.category}`);
+      else if (rank < 3) issues.push(`${id}: sponsor is already in the top 3 of ${e.category}`);
+    }
+    if (!ISO.test(start) || !ISO.test(end)) issues.push(`${id}: start and end must be YYYY-MM-DD`);
+    else if (start > end) issues.push(`${id}: start is after end`);
+    for (const o of seen[e?.category] || []) if (start <= o.end && o.start <= end) issues.push(`${id}: overlaps ${o.id}`);
+    (seen[e?.category] ||= []).push({ id, start, end });
+  });
+  return issues;
+}
+
+// The sponsor for one ranking page on the build date, or null.
+export function rankingSponsor(placements, ctx, category, today = new Date().toISOString().slice(0, 10)) {
+  for (const e of placements || []) {
+    if (e?.surface !== "ranking" || e.category !== category) continue;
+    if (rankingPlacementIssues([e], ctx).length) continue;
+    if (iso(e.start) > today || iso(e.end) < today) continue;
+    const rank = inRanking(ctx.rankings, category, e.slug);
+    return { slug: e.slug, rank: rank + 1, entry: ctx.rankings[category].providers[rank], provider: ctx.providers[e.slug] };
   }
   return null;
 }
