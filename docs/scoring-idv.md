@@ -122,7 +122,7 @@ Searched for public, independent tests of the ten providers ranked on 17 Nov 202
 | Source | What it tests | Use |
 |---|---|---|
 | iBeta ISO/IEC 30107-3 letters | Presentation attacks at the camera | Already scored (Fraud defense) |
-| CEN/TS 18099 injection tests (CLR Labs, Ingenium and others) | Injection attacks | Scored when a letter is opened. Found for iProov, Innovatrics, Keyless, Unissey; none of the ten found under its own name |
+| CEN/TS 18099 injection tests (CLR Labs, Ingenium and others) | Injection attacks | Scored when a letter is opened. Found for iProov, Innovatrics, Keyless, Unissey. Of the ten, Veridas states a CEN/TS 18099 High certification on its document verification page (seen 17 Nov 2026); its lab letter is not opened yet, so it does not score until then |
 | DHS S&T RIVR 2025 (MdTF): selfie to document, document validation, liveness | Full remote flow on consumer phones | Bonus (decision 6). Of the ten, only Incode disclosed results (selfie to document; two document-validation categories). Alias still to be matched on mdtf.org |
 | NIST FRTE / FATE | Face algorithms | Already scored |
 | KYC AML Guide (kycaml.guide), June 2026 | Fake and genuine document acceptance | Not used: no document count, no vendor list, no dates, no method for the fakes, sells vendor services, no disclosure of vendor relationships |
