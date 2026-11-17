@@ -211,6 +211,26 @@ capabilities:
     status: partial
     note: sovereign cloud as paid security add-on
     source: 2
+  doc_forensics:
+    status: 'yes'
+    note: 'document forgery detection in VideoID'
+    source: 24
+    checked: '2026-11'
+  manual_review:
+    status: 'yes'
+    note: 'VideoID High adds a manual review by a Signicat Registration Authority agent; no hours or turnaround published'
+    source: 25
+    hours: null
+    checked: '2026-11'
+  proof_of_address:
+    status: 'not_disclosed'
+    note: 'no proof-of-address document check found'
+    checked: '2026-11'
+  reverification:
+    status: 'yes'
+    note: 'MobileID Face Authentication at login'
+    source: 24
+    checked: '2026-11'
 integration:
   checked: '2026-11'
   docs_public:
@@ -419,6 +439,14 @@ sources:
 - title: Nordic Capital acquires digital identity firm Signicat (11 Apr 2019)
   publisher: Biometric Update
   url: https://www.biometricupdate.com/201904/nordic-capital-acquires-digital-identity-firm-signicat
+  accessed: '2026-11'
+- title: 'How Signicat uses AI'
+  publisher: Signicat
+  url: https://www.signicat.com/blog/how-signicat-uses-ai
+  accessed: '2026-11'
+- title: 'About VideoID'
+  publisher: Signicat
+  url: https://developer.signicat.com/docs/id-document-and-biometric-verification/provider-specific-integrations/signicat-videoid/about-videoid/
   accessed: '2026-11'
 entity:
   wikidata: null

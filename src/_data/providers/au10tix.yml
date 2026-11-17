@@ -281,6 +281,25 @@ capabilities:
     status: 'yes'
     note: Proof of Business document validation
     source: 19
+  doc_forensics:
+    status: 'yes'
+    note: 'forgery detection, including on address documents'
+    source: 20
+    checked: '2026-11'
+  manual_review:
+    status: 'not_disclosed'
+    note: 'manual review described only on a partner page; nothing found on au10tix.com'
+    hours: null
+    checked: '2026-11'
+  proof_of_address:
+    status: 'yes'
+    note: 'proof of residence and address validation'
+    source: 20
+    checked: '2026-11'
+  reverification:
+    status: 'not_disclosed'
+    note: 'no re-verification of returning users found'
+    checked: '2026-11'
 certifications:
 - name: UK DIATF certified identity service
   what: Right to work, right to rent, DBS (Kantara; valid to Dec 2028)
@@ -430,6 +449,10 @@ sources:
 - title: Business Verification
   publisher: AU10TIX
   url: https://www.au10tix.com/solutions/business-verification/
+  accessed: '2026-11'
+- title: 'Address verification'
+  publisher: AU10TIX
+  url: https://www.au10tix.com/solutions/address-verification/
   accessed: '2026-11'
 entity:
   wikidata: null

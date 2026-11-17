@@ -189,6 +189,26 @@ capabilities:
   case_management:
     status: not_disclosed
     note: hits link to partner dashboard, no own queue found
+  doc_forensics:
+    status: 'yes'
+    note: 'security features detection of holograms and OVDs'
+    source: 15
+    checked: '2026-11'
+  manual_review:
+    status: 'yes'
+    note: 'optional expert review by IDnow specialist agents; no hours or turnaround published'
+    source: 15
+    hours: null
+    checked: '2026-11'
+  proof_of_address:
+    status: 'yes'
+    note: 'optional proof-of-address module reviewed by ident specialists'
+    source: 23
+    checked: '2026-11'
+  reverification:
+    status: 'not_disclosed'
+    note: 'no re-verification of returning users found'
+    checked: '2026-11'
 integration:
   checked: '2026-11'
   docs_public:
@@ -396,6 +416,10 @@ sources:
 - title: "Deepfake detection, presentation attacks and liveness"
   publisher: IDnow
   url: https://idnow.io/blog/deepfake-detection-presentation-liveness-technology/
+  accessed: '2026-11'
+- title: 'Core features'
+  publisher: IDnow
+  url: https://doc.idnow.de/core-features
   accessed: '2026-11'
 entity:
   wikidata: null

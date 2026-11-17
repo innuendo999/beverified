@@ -254,6 +254,24 @@ capabilities:
     status: cloud
     note: AWS in Ireland
     source: 17
+  doc_forensics:
+    status: 'not_disclosed'
+    note: 'no document tampering checks found on fourthline.com'
+    checked: '2026-11'
+  manual_review:
+    status: 'not_disclosed'
+    note: 'no review by Fourthline staff described'
+    hours: null
+    checked: '2026-11'
+  proof_of_address:
+    status: 'yes'
+    note: 'digital proof of address using geolocation and device signals'
+    source: 21
+    checked: '2026-11'
+  reverification:
+    status: 'not_disclosed'
+    note: 'no re-verification of returning users found'
+    checked: '2026-11'
 certifications:
 - name: ISO/IEC 27001:2022
   what: Information security (EY CertifyPoint, cert. 2021-039)
@@ -385,6 +403,10 @@ sources:
 - title: Biometrics (Fourthline documentation)
   publisher: Fourthline
   url: https://docs.fourthline.com/docs/biometrics
+  accessed: '2026-11'
+- title: 'What is proof of address'
+  publisher: Fourthline
+  url: https://www.fourthline.com/glossary/proof-of-address-poa
   accessed: '2026-11'
 entity:
   wikidata: null

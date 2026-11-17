@@ -288,6 +288,27 @@ capabilities:
     status: 'yes'
     note: verifications case management portal
     source: 21
+  doc_forensics:
+    status: 'yes'
+    note: 'security features, fonts and templates checked against 16,000+ document types'
+    source: 29
+    checked: '2026-11'
+  manual_review:
+    status: 'yes'
+    note: 'in-house team double-checks verifications 24/7, typically within about 3 minutes'
+    source: 18
+    hours: '24/7, typically within about 3 minutes'
+    checked: '2026-11'
+  proof_of_address:
+    status: 'yes'
+    note: 'proof of address documents with manual review'
+    source: 30
+    checked: '2026-11'
+  reverification:
+    status: 'yes'
+    note: 'face authentication of returning users, for example on high-value transactions'
+    source: 31
+    checked: '2026-11'
 integration:
   checked: '2026-11'
   docs_public:
@@ -510,6 +531,18 @@ sources:
 - title: Supported documents (iDenfy documentation)
   publisher: iDenfy
   url: https://documentation.idenfy.com/resources/supported-documents.md
+  accessed: '2026-11'
+- title: 'Document verification software'
+  publisher: iDenfy
+  url: https://idenfy.com/document-verification-software/
+  accessed: '2026-11'
+- title: 'Proof of address verification'
+  publisher: iDenfy
+  url: https://idenfy.com/proof-of-address-verification/
+  accessed: '2026-11'
+- title: 'KYC mobile SDK'
+  publisher: iDenfy
+  url: https://www.idenfy.com/kyc-mobile-sdk
   accessed: '2026-11'
 entity:
   wikidata: null

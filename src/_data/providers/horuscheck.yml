@@ -195,6 +195,23 @@ capabilities:
   data_residency:
     status: not_disclosed
     note: hosting region not named
+  doc_forensics:
+    status: 'not_disclosed'
+    note: 'nothing found on 17 Nov 2026'
+    checked: '2026-11'
+  manual_review:
+    status: 'not_disclosed'
+    note: 'nothing found on 17 Nov 2026'
+    hours: null
+    checked: '2026-11'
+  proof_of_address:
+    status: 'not_disclosed'
+    note: 'nothing found on 17 Nov 2026'
+    checked: '2026-11'
+  reverification:
+    status: 'not_disclosed'
+    note: 'nothing found on 17 Nov 2026'
+    checked: '2026-11'
 integration:
   checked: '2026-11'
   docs_public:

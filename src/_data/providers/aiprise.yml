@@ -270,6 +270,25 @@ capabilities:
     status: 'yes'
     note: daily re-screening of users and businesses
     source: 17
+  doc_forensics:
+    status: 'yes'
+    note: 'tampering and edited-text detection on submitted documents'
+    source: 18
+    checked: '2026-11'
+  manual_review:
+    status: 'not_disclosed'
+    note: 'no review by AiPrise staff described'
+    hours: null
+    checked: '2026-11'
+  proof_of_address:
+    status: 'yes'
+    note: 'proof of address documents and data sources'
+    source: 19
+    checked: '2026-11'
+  reverification:
+    status: 'not_disclosed'
+    note: 'no re-verification of returning users found'
+    checked: '2026-11'
 certifications:
 - name: SOC 2 Type II
   what: Security controls report
@@ -387,6 +406,14 @@ sources:
 - title: Continuous Monitoring
   publisher: AiPrise
   url: https://www.aiprise.com/features/continuous-monitoring
+  accessed: '2026-11'
+- title: 'How does Proof of Address validation work?'
+  publisher: AiPrise
+  url: https://support.aiprise.com/articles/7810232795-how-does-proof-of-address-poa-validation-work
+  accessed: '2026-11'
+- title: 'Automated proof of address verification'
+  publisher: AiPrise
+  url: https://www.aiprise.com/services/automated-proof-address-verification-service
   accessed: '2026-11'
 entity:
   wikidata: null

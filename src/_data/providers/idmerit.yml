@@ -188,6 +188,25 @@ capabilities:
     status: 'yes'
     note: Dynamic Case Management named, no detail
     source: 9
+  doc_forensics:
+    status: 'yes'
+    note: 'tamper detection in IDMscan'
+    source: 14
+    checked: '2026-11'
+  manual_review:
+    status: 'not_disclosed'
+    note: 'no review by IDMERIT staff described'
+    hours: null
+    checked: '2026-11'
+  proof_of_address:
+    status: 'yes'
+    note: 'proof-of-address verification service'
+    source: 14
+    checked: '2026-11'
+  reverification:
+    status: 'not_disclosed'
+    note: 'no re-verification of returning users found'
+    checked: '2026-11'
 integration:
   checked: '2026-11'
   docs_public:
@@ -339,6 +358,10 @@ sources:
 - title: IDMerit disputes report of 1B records exposed in unsecured ID verification database (20 Feb 2026)
   publisher: Biometric Update
   url: https://www.biometricupdate.com/202602/idmerit-disputes-report-of-1b-records-exposed-in-unsecured-id-verification-database
+  accessed: '2026-11'
+- title: 'Know Your Customer'
+  publisher: IDMERIT
+  url: https://www.idmerit.com/?p=13320
   accessed: '2026-11'
 entity:
   wikidata: null
