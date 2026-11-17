@@ -29,7 +29,7 @@
 
 {%- if rankSponsor %}
 {%- set sp = rankSponsor %}
-<aside class="card r2-sponsor" aria-label="Sponsored" data-ad>
+<aside class="card r2-sponsor" aria-label="Sponsored">
   <span class="r2-sponsor__label">Sponsored</span>
   {%- if sp.provider.logo.wordmark %}<img class="wordmark wordmark--sm h-18 maxw-80" src="{{ sp.provider.logo.wordmark }}" alt="">{% endif %}
   <div class="r2-sponsor__body">
@@ -38,7 +38,7 @@
   </div>
   <div class="r2-sponsor__cta">
     <a class="btn btn--secondary btn--sm" href="/providers/{{ sp.slug }}/">Read review</a>
-    <a class="btn btn--primary btn--sm" href="{{ sp.provider.link.url }}" rel="sponsored noopener" target="_blank">Visit website <span aria-hidden="true">↗</span></a>
+    <a class="btn btn--primary btn--sm" href="{{ sp.provider.link.url }}" data-ad target="_blank">Visit website <span aria-hidden="true">↗</span></a>
   </div>
   <p class="r2-sponsor__note">Paid placement. It doesn't change scores or ranking order. <a href="{{ site.v3.methodologyHref }}#advertising">Advertising policy</a></p>
 </aside>
