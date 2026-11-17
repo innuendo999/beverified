@@ -7,7 +7,7 @@ section: publications
 cover_label: "SDN, SSI, FSE"
 cover_motif: stacks
 published: 2025-04-22
-updated: 2026-10-18
+updated: 2026-11-17
 author: andrii-klymenko
 takeaways:
   - "SDN means full blocking; SSI means restrictions on specific debt, equity and energy dealings with listed Russian companies."
@@ -26,22 +26,22 @@ faq:
   - q: "True or false: companies on these lists may also appear on the SDN list?"
     a: "True. OFAC's list pages say persons on the SSI and FSE lists may also appear on the SDN list, so a hit on one list does not rule out the other."
   - q: "Is the SSI list still active in 2026?"
-    a: "Yes. OFAC's other sanctions lists page shows the SSI list as last updated on 14 September 2026."
+    a: "Yes. OFAC's other sanctions lists page shows the SSI list as last updated on 4 November 2026 (checked 17 November 2026)."
   - q: "Do I need to screen non-SDN lists?"
     a: "OFAC's Sanctions List Search tool covers the SDN list together with the FSE, SSI, CAPTA and NS-PLC lists, and OFAC's compliance framework names failure to update screening for SDN and SSI list changes as a root cause of violations. Most firms screen all OFAC lists."
 sources:
   - title: "Other OFAC Sanctions Lists"
     publisher: "U.S. Treasury, OFAC"
     url: "https://ofac.treasury.gov/other-ofac-sanctions-lists"
-    accessed: 2026-10
+    accessed: 2026-11
   - title: "Foreign Sanctions Evaders (FSE) List"
     publisher: "U.S. Treasury, OFAC"
     url: "https://ofac.treasury.gov/consolidated-sanctions-list/foreign-sanctions-evaders-fse-list"
-    accessed: 2026-10
+    accessed: 2026-11
   - title: "Sectoral Sanctions Identifications (SSI) List"
     publisher: "U.S. Treasury, OFAC"
     url: "https://ofac.treasury.gov/consolidated-sanctions-list/sectoral-sanctions-identifications-ssi-list"
-    accessed: 2026-10
+    accessed: 2026-11
   - title: "FAQ 336: How do I know whether a person is identified under E.O. 13608?"
     publisher: "U.S. Treasury, OFAC"
     url: "https://ofac.treasury.gov/faqs/336"
@@ -87,7 +87,7 @@ OFAC, the US Treasury's sanctions office, publishes more than one list, and they
 | Legal basis | Many executive orders and statutes | E.O. 13662 and Directives 1 to 4 | E.O. 13608 |
 | Effect | Property blocked; US persons generally may not deal with them | Only the dealings described in the relevant directive are prohibited | Transactions by US persons or within the US involving FSEs are prohibited |
 | 50 Percent Rule | Yes | Yes, for the directive prohibitions | Not addressed on OFAC's FSE page |
-| Status in October 2026 | Active | Active, last updated 14 September 2026 | Empty since 18 December 2025 |
+| Status in November 2026 | Active | Active, last updated 4 November 2026 | Empty since 18 December 2025 |
 
 The SSI and FSE lists are "non-SDN" lists. [OFAC says](https://ofac.treasury.gov/other-ofac-sanctions-lists) that neither is part of the SDN list, but that persons on them may also appear on the SDN list.
 
@@ -96,6 +96,8 @@ The SSI and FSE lists are "non-SDN" lists. [OFAC says](https://ofac.treasury.gov
 The SDN list is the one most people mean when they say "the OFAC list". It holds parties designated under programmes covering countries, terrorism, narcotics, cyber activity, human rights abuses and more. When a party is on the SDN list, US persons must block its property and interests in property that come into their possession, and they generally cannot deal with it unless OFAC authorises the dealing.
 
 The SDN list also reaches companies that are not named on it. Under OFAC's 50 Percent Rule, an entity owned 50 percent or more, directly or indirectly, by one or more blocked persons is itself blocked. [OFAC FAQ 401](https://ofac.treasury.gov/faqs/401) works through examples: if blocked person X owns 50 percent of company A, and A owns 50 percent of company B, then B is blocked too. That is why sanctions screening needs ownership data, not just a name match. Our [KYB provider rankings](/providers/kyb/) cover tools that map beneficial ownership.
+
+{% include "figures/ofac-50-percent.njk" %}
 
 For a fuller tour of the SDN list and OFAC programmes, see our guide to [OFAC sanctions lists](/publications/ofac-sanctions-lists/).
 
@@ -124,9 +126,9 @@ The big change since 2025: the list is empty. [OFAC FAQ 336](https://ofac.treasu
 
 OFAC's [other sanctions lists page](https://ofac.treasury.gov/other-ofac-sanctions-lists) currently shows six non-SDN lists:
 
-- **SSI** (see above), last updated 14 September 2026.
+- **SSI** (see above), last updated 4 November 2026.
 - **FSE** (see above), empty since 18 December 2025.
-- **NS-MBS** (Non-SDN Menu-Based Sanctions), for persons under sanctions that are "less than full blocking sanctions". If full blocking applies, the person goes on the SDN list instead. Last updated 17 July 2026.
+- **NS-MBS** (Non-SDN Menu-Based Sanctions), for persons under sanctions that are "less than full blocking sanctions". If full blocking applies, the person goes on the SDN list instead. Last updated 19 October 2026.
 - **NS-PLC** (Non-SDN Palestinian Legislative Council), linked to a general licence that lets US financial institutions reject transactions with PLC members not named on the SDN list. Last updated 27 July 2026.
 - **CAPTA**, foreign financial institutions subject to correspondent or payable-through account sanctions. It excludes institutions already on the SDN list. Last updated 6 April 2022.
 - **NS-CMIC** (Non-SDN Chinese Military-Industrial Complex Companies), last updated 16 December 2021.
