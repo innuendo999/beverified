@@ -1,0 +1,84 @@
+slug: nigeria
+url: /providers/nigeria/
+seo:
+  title: Best KYC & AML Providers for Nigeria in 2026 | BeVerified
+  description: 'Shufti Pro, Sumsub, KYCAID, AiPrise and Signzy compared: the best KYC & AML providers for Nigeria in 2026, all with a documented NIN or BVN check against a government database.'
+  h1: Best KYC & AML Providers for Nigeria in 2026
+breadcrumb_label: Best KYC & AML Providers for Nigeria
+quick_answer: Shufti Pro ranks first in Nigeria, checking NIN against NIMC records and adding CAC company checks. Sumsub is next for document-free NIN and BVN checks with a selfie match. KYCAID suits teams that want per-check prices with no monthly minimum. We compared 8 providers, 5 of them scored, on NIN and BVN checks, pricing and AML screening.
+last_verified: '2026-11-17'
+updated: '2026-11-17'
+# Eligibility (owner, 2026-11-17): a scored provider must document a NIN or BVN check against a government
+# database in its own docs or on its own site. Evidence check 17 Nov 2026: reports/verification/nigeria-nin-bvn-2026-11.md.
+explainer_html:
+- '<h2>Who qualifies for this ranking</h2>
+
+  <p>Every scored provider on this page describes a NIN or BVN check against a government database in its own documentation or on its own website. We checked each one on 17 November 2026. Nigeria has no public register of certified verification services, so this is what the vendors say they offer, not a licence we could confirm. Ask any vendor to show how it reaches NIMC or NIBSS before you sign.</p>
+
+  <p>Some well-known providers are not here. GBG lists a Nigerian NIN check in its documentation, but marks it as coming soon. Incode lists NIN and BVN sources through Mono, but its documentation for them is not published yet. We found no documented NIN or BVN check for Trulioo, Veriff, Persona, ComplyCube, iDenfy or Onfido. Smile ID, Youverify and Dojah focus on African markets and appear in the list without a score, because we have not reviewed them yet.</p>
+
+  <h2>NIN and BVN: the two numbers Nigerian KYC runs on</h2>
+
+  <p>The National Identification Number (NIN) is issued by the National Identity Management Commission (NIMC). The Bank Verification Number (BVN) is issued to bank customers and run by the Nigeria Inter-Bank Settlement System (NIBSS) under the Central Bank of Nigeria (CBN). Both are 11 digits long, and both records hold a photo, so a provider can match a selfie against the record without asking for a document.</p>
+
+  <p>The CBN made these numbers the starting point of onboarding in its circular of 1 December 2023. Banks, other financial institutions and mobile money operators may not open a Tier 1 account or wallet without a BVN or NIN, and they must retrieve the customer data electronically from the NIBSS BVN or NIMC NIN database. Tier 2 and Tier 3 accounts need both numbers. Funded accounts without them were placed on Post No Debit or Credit from 1 March 2024.</p>
+
+  <h2>Rules Nigerian firms work to</h2>
+
+  <ul>
+
+  <li>The Money Laundering (Prevention and Prohibition) Act 2022, which repealed the 2011 Act. It places designated non-financial businesses and professions under the Special Control Unit against Money Laundering (SCUML), which sits within the EFCC.</li>
+
+  <li>The Nigerian Financial Intelligence Unit (NFIU) receives suspicious transaction reports.</li>
+
+  <li>The CBN <a href="https://www.cbn.gov.ng/Out/2026/CCD/CBN%20issues%20Baseline%20Standards%20for%20Automated%20Anti-Money%20Laundering%20Solution.pdf" rel="nofollow noopener" target="_blank">Baseline Standards for Automated AML Solutions</a>, issued on 10 March 2026. Deposit money banks must comply in full by 10 September 2027 and other financial institutions by 10 March 2028.</li>
+
+  <li>The Nigeria Data Protection Act 2023, enforced by the Nigeria Data Protection Commission, covers the identity and biometric data a KYC check collects.</li>
+
+  </ul>
+
+  <p>The FATF placed Nigeria under <a href="https://www.fatf-gafi.org/en/publications/High-risk-and-other-monitored-jurisdictions/increased-monitoring-october-2025.html" rel="nofollow noopener" target="_blank">increased monitoring</a> in February 2023 and removed it on 24 October 2025.</p>
+
+  <h2>How to choose a provider for Nigeria</h2>
+
+  <ul>
+
+  <li>Ask whether the NIN and BVN checks query NIMC and NIBSS live or match against a stored copy, and which licensed partner the vendor goes through.</li>
+
+  <li>Check that the selfie is matched against the photo on the NIN or BVN record, not only the name and date of birth.</li>
+
+  <li>Confirm the documents you need are supported: NIN slip, national ID card, voter''s card, driver''s licence and passport.</li>
+
+  <li>For business customers, ask for checks against the Corporate Affairs Commission (CAC) register, including beneficial owners.</li>
+
+  <li>Ask where identity and selfie data are stored and which subprocessors handle it.</li>
+
+  <li>Compare pricing models. Three of the five scored providers publish a starting price; the other two quote on request.</li>
+
+  </ul>
+
+  <p><a href="/methodology/">How we evaluate every provider on this list →</a></p>'
+faq:
+- q: Who regulates KYC and AML in Nigeria?
+  a: The Central Bank of Nigeria (CBN) sets KYC rules for banks, other financial institutions and mobile money operators. The Nigerian Financial Intelligence Unit (NFIU) receives suspicious transaction reports, and the Special Control Unit against Money Laundering (SCUML), within the EFCC, supervises designated non-financial businesses and professions under the Money Laundering (Prevention and Prohibition) Act 2022.
+- q: What is the difference between NIN and BVN?
+  a: The NIN is Nigeria's national identity number, issued by the National Identity Management Commission (NIMC). The BVN is a banking identity number for bank customers, run by NIBSS under the Central Bank of Nigeria. Both are 11 digits, and KYC providers can check either one against its database.
+- q: Do Nigerian banks have to check BVN or NIN at onboarding?
+  a: Yes. The CBN circular of 1 December 2023 bars new Tier 1 accounts and wallets without a BVN or NIN and requires institutions to retrieve customer data electronically from the NIBSS BVN or NIMC NIN database. Tier 2 and Tier 3 accounts need both numbers.
+- q: Is Nigeria still on the FATF grey list?
+  a: No. The FATF placed Nigeria under increased monitoring in February 2023 and removed it on 24 October 2025, at the same plenary that removed South Africa, Mozambique and Burkina Faso.
+- q: What do the CBN's automated AML standards require, and by when?
+  a: The CBN issued its Baseline Standards for Automated AML Solutions on 10 March 2026. Institutions had three months to submit an implementation roadmap. Deposit money banks must comply in full by 10 September 2027, and other financial institutions by 10 March 2028.
+- q: Why do Smile ID, Youverify and Dojah have no score?
+  a: We have not reviewed them yet. All three describe NIN and BVN checks on their own sites, so they appear in the list as "Review coming" and will get a score after a full review under our methodology.
+adjacent:
+- identity-verification
+- kyc
+- aml
+- south-africa
+price_source: record
+capability_columns: []
+faq_templates: []
+legacy_issues: []
+author: andrii-klymenko
+legacy_reviewer: null
