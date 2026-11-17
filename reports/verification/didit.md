@@ -39,3 +39,8 @@ Customer counts (3,000+ vs 1,500 conflict), speed/uptime/breach claims, logo wal
 - docs.didit.me opened: SDKs and sandbox confirmed; case management, adverse media, video ident not documented.
 - Logo and wordmark added from the image the owner sent.
 - Rankings unchanged in order: Australia #2 (Sumsub 4.8), Nigeria #3 (Shufti Pro 4.9, Sumsub 4.8).
+
+## Budget KYC, 17 Nov 2026 (owner asked to add Didit)
+- Pricing page re-read: Full KYC = ID verification + passive liveness + face match + device and IP analysis, $0.33. No minimums, no contracts. A declined session can still contain billable checks. $10 monthly Free credit not counted in cost (page does not say every account gets it without review).
+- `budget{}` added; `rescore-budget.mjs`: Budget 4.7 (cost 5, AML 4, fraud 4.5, coverage 5, breadth 4, integration 5, terms 5, transparency 4). #1 above Zyphe 4.1.
+- Only Didit written. `--write` would also move KYCAID 4.0 -> 4.2 (its IDV-pass data: NFC, 240 countries, non-doc route) and rewrite the other records; reverted, left for the owner.

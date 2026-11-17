@@ -550,6 +550,22 @@ canada:
 cheap-kyc:
   title: Best Cheap KYC Providers in 2026
   providers:
+  - slug: didit
+    name: Didit
+    award: null
+    tradeoff: Cheapest full check, with iBeta Level 2 liveness; support by email only
+    tagline: A full KYC check for $0.33 at list price, with face match and device checks, and no monthly minimum.
+    coverage: Global, 220+ countries
+    size: null
+    pros:
+    - $0.33 per full check on a public price list, face match included
+    - No monthly minimum or contract, and a free plan with $10 of credit a month
+    - Liveness confirmed by iBeta at ISO/IEC 30107-3 Level 2
+    cons:
+    - A declined session can still contain billable checks
+    - Support by email only, with no published hours or SLA
+    - Young company, founded in 2023
+    segments: []
   - slug: zyphe
     name: Zyphe
     award: Editor's Choice

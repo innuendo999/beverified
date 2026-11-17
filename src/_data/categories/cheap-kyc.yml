@@ -2,12 +2,12 @@ slug: cheap-kyc
 url: /providers/cheap-kyc/
 seo:
   title: Best Cheap KYC Providers in 2026 | BeVerified
-  description: Zyphe, KYCAID, Shufti Pro, Socure, Sumsub, ComplyCube and iDenfy ranked on what a full KYC check costs at 100 and 1,000 checks a month, AML cost and quality.
+  description: Didit, Zyphe, KYCAID, Shufti Pro, Socure, Sumsub, ComplyCube and iDenfy ranked on what a full KYC check costs at 100 and 1,000 checks a month, AML cost and quality.
   h1: Best Cheap KYC Providers in 2026
 breadcrumb_label: Best Cheap KYC Providers
-quick_answer: 'Zyphe is our top budget KYC pick: an ID and liveness check costs $0.40 with storage, and there is no monthly minimum. KYCAID is second, with no subscription or contract. Shufti Pro is third, with AML screening in the price and an iBeta Level 3 liveness result. We compared 7 providers on cost, AML cost, quality and entry terms.'
+quick_answer: 'Didit is our top budget KYC pick: a full check costs $0.33 at list price, with no monthly minimum and liveness tested by iBeta at Level 2. Zyphe is second, at $0.40 a check with storage. KYCAID is third, with no subscription or contract. We compared 8 providers on cost, AML cost, quality and entry terms.'
 last_verified: '2026-11-11'
-updated: '2026-11-11'
+updated: '2026-11-17'
 score_source: category
 score_label: Budget score
 rubric: rubricBudget
@@ -36,8 +36,6 @@ explainer_html:
 
   <li>Ondato: not reviewed yet. We rank a provider only after a full review.</li>
 
-  <li>Didit: reviewed in November 2026, not yet scored under the Budget KYC rubric.</li>
-
   </ul>'
 - '<h2>What to ask before you sign</h2>
 
@@ -56,13 +54,13 @@ explainer_html:
   </ul>'
 faq:
 - q: What is the cheapest KYC provider?
-  a: 'Zyphe publishes the lowest price for a full check among the providers we rank: $0.30 for an ID and liveness check, plus $0.10 a month in storage per user, with no monthly minimum. Socure ($0.80) and KYCAID (€0.75, about $0.84) come next. Prices checked Nov 11, 2026.'
+  a: 'Didit publishes the lowest price for a full check among the providers we rank: $0.33 at list price for ID verification, liveness, face match and device checks, with no monthly minimum (checked Nov 17, 2026). Zyphe is next at $0.40: $0.30 for ID and liveness plus $0.10 a month in storage per user. Then come Socure ($0.80) and KYCAID (€0.75, about $0.84), checked Nov 11, 2026.'
 - q: Is there a free KYC option?
-  a: Shufti Pro has a free plan with up to 10 verifications a month. Zyphe gives a one-time $25 credit and KYCAID a €50 credit on signup, and Sumsub and ComplyCube offer a 14-day trial with 50 checks. Socure lists $1,000 in monthly credits but does not publish who gets them.
+  a: Didit has a free plan with $10 of credit a month, and Shufti Pro a free plan with up to 10 verifications a month. Zyphe gives a one-time $25 credit and KYCAID a €50 credit on signup, and Sumsub and ComplyCube offer a 14-day trial with 50 checks. Socure lists $1,000 in monthly credits but does not publish who gets them.
 - q: Which budget KYC providers include AML screening?
-  a: Shufti Pro includes sanctions and PEP screening in its Essentials price. Socure adds it for $0.10 a check, KYCAID for €0.10 and Zyphe for $0.20. Sumsub offers it only on the Compliance plan ($1.85 a check, $299 minimum), and iDenfy does not publish a screening price.
+  a: Shufti Pro includes sanctions and PEP screening in its Essentials price. Socure adds it for $0.10 a check, KYCAID for €0.10, and Didit and Zyphe for $0.20. Sumsub offers it only on the Compliance plan ($1.85 a check, $299 minimum), and iDenfy does not publish a screening price.
 - q: Do cheap KYC providers have an independent liveness test?
-  a: 'Two of the seven do: Sumsub and Shufti Pro hold iBeta ISO/IEC 30107-3 Level 3 letters. On Nov 11, 2026 we found no iBeta letter under the names of Zyphe, KYCAID, Socure, ComplyCube or iDenfy. A vendor may use a tested supplier''s SDK, which we count as vendor-stated.'
+  a: 'Three of the eight do: Sumsub and Shufti Pro hold iBeta ISO/IEC 30107-3 Level 3 letters, and Didit a Level 2 letter dated Nov 9, 2026. On Nov 11, 2026 we found no iBeta letter under the names of Zyphe, KYCAID, Socure, ComplyCube or iDenfy. A vendor may use a tested supplier''s SDK, which we count as vendor-stated.'
 - q: How does a monthly minimum change the price?
   a: With a minimum that covers checks, you pay the larger of the minimum and your checks. Sumsub's $149 minimum works out at $1.49 a check at 100 checks a month, against $1.35 at 1,000. We leave out providers that do not say the minimum covers checks, such as Veriff.
 - q: How do you rank budget KYC providers?
