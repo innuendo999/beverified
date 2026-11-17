@@ -2,10 +2,10 @@ slug: australia
 url: /providers/australia/
 seo:
   title: Best KYC & AML Providers for Australia in 2026 | BeVerified
-  description: 'Sumsub, Persona, Jumio, Onfido, GBG and Trulioo compared: the best KYC & AML providers for Australia in 2026, all with a documented check through the government Document Verification Service (DVS).'
+  description: 'Sumsub, Didit, Persona, Jumio, Onfido, GBG and Trulioo compared: the best KYC & AML providers for Australia in 2026, all with a documented check through the government Document Verification Service (DVS).'
   h1: Best KYC & AML Providers for Australia in 2026
 breadcrumb_label: Best KYC & AML Providers for Australia
-quick_answer: Sumsub ranks first in Australia, with real-time DVS checks of passports, driver licences and visas and published prices. Persona is next for teams that build their own flows, with DVS through Data Zoo. GBG suits buyers who want a direct DVS gateway in greenID. We compared 8 providers, 6 of them scored, on DVS checks, pricing and integration.
+quick_answer: Sumsub ranks first in Australia, with real-time DVS checks of passports, driver licences and visas and published prices. Didit is next for self-serve DVS lookups on a public price list with no minimum. GBG suits buyers who want a direct DVS gateway in greenID. We compared 8 providers, 7 of them scored, on DVS checks, pricing and integration.
 last_verified: '2026-11-17'
 updated: '2026-11-17'
 # Eligibility (owner, 2026-11-17): a scored provider must document a check through the Australian Government
@@ -14,9 +14,9 @@ updated: '2026-11-17'
 explainer_html:
 - '<h2>Who qualifies for this ranking</h2>
 
-  <p>Every scored provider on this page describes a check through the Australian Government''s Document Verification Service (DVS) in its own documentation or on its own website. We checked each one on 17 November 2026. GBG (greenID) and Trulioo are approved DVS gateway service providers with a direct connection, which privacy assessments by the Office of the Australian Information Commissioner (OAIC) confirm. The others reach the DVS through a partner: Persona through Data Zoo and Jumio through National Crime Check. Sumsub and Onfido do not name the route they use.</p>
+  <p>Every scored provider on this page describes a check through the Australian Government''s Document Verification Service (DVS) in its own documentation or on its own website. We checked each one on 17 November 2026. GBG (greenID) and Trulioo are approved DVS gateway service providers with a direct connection, which privacy assessments by the Office of the Australian Information Commissioner (OAIC) confirm. The others reach the DVS through a partner: Persona through Data Zoo and Jumio through National Crime Check. Sumsub, Didit and Onfido do not name the route they use.</p>
 
-  <p>Some providers we review are not here. We found no documented DVS check for Shufti Pro, Veriff, ComplyCube, iDenfy, Zyphe or KYCAID. Incode supports the DVS only when the client gets its own DVS approval and appoints Incode as its agent. NameScan mentions the DVS in an article but does not describe a check. Equifax and Didit both document DVS checks and appear in the list without a score, because we have not reviewed them yet.</p>
+  <p>Some providers we review are not here. We found no documented DVS check for Shufti Pro, Veriff, ComplyCube, iDenfy, Zyphe or KYCAID. Incode supports the DVS only when the client gets its own DVS approval and appoints Incode as its agent. NameScan mentions the DVS in an article but does not describe a check. Equifax documents DVS checks and appears in the list without a score, because we have not reviewed it yet.</p>
 
   <h2>What the DVS checks, and what it does not</h2>
 
@@ -52,7 +52,7 @@ explainer_html:
 
   <li>Ask how long the vendor keeps document images and selfies, and where it stores them.</li>
 
-  <li>Compare pricing models. Two of the six scored providers publish a starting price; the other four quote on request.</li>
+  <li>Compare pricing models. Three of the seven scored providers publish a starting price; the other four quote on request.</li>
 
   </ul>
 
@@ -68,8 +68,8 @@ faq:
   a: Lawyers, accountants, conveyancers, real estate professionals, dealers in precious metals and stones, and trust and company service providers. Their AML/CTF obligations started on 1 July 2026, and they had to enrol with AUSTRAC by 29 July 2026.
 - q: Does a DVS check confirm the customer's face?
   a: No. The DVS checks document details against the issuer's record. Face matching against a government photo is a separate service, the Face Verification Service, so most KYC flows pair the DVS check with a selfie match and liveness check from the vendor.
-- q: Why do Equifax and Didit have no score?
-  a: We have not reviewed them yet. Both document DVS checks on their own sites, so they appear in the list as "Review coming" and will get a score after a full review under our methodology.
+- q: Why does Equifax have no score?
+  a: We have not reviewed it yet. Equifax documents DVS checks through its IDMatrix service, so it appears in the list as "Review coming" and will get a score after a full review under our methodology.
 adjacent:
 - identity-verification
 - kyc

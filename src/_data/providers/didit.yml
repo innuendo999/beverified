@@ -1,0 +1,527 @@
+slug: didit
+name: Didit
+alternate_names:
+- Didit Identity, Inc.
+- Didit Identity Spain S.L.
+status: published
+seo:
+  title: 'Didit Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Didit review: self-serve KYC, AML and fraud checks with a public price list, $0.33 for a full KYC check and a free plan. Features, pricing, pros & cons, alternatives.'
+  h1: 'Didit Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: null
+  background: null
+  wordmark: null
+tagline: Self-serve KYC, AML and fraud checks with a public per-module price list and a free plan
+score: 4.3
+grade: Great
+methodology: v3.1
+primary_category: identity-verification
+categories:
+- identity-verification
+- cheap-kyc
+- liveness-detection
+- age-verification
+- aml
+- kyb
+- crypto
+link:
+  url: https://didit.me
+  type: none
+last_verified: '2026-11-17'
+updated: '2026-11-17'   # last content edit; last_verified = last fact re-check
+verdict: 'Didit suits startups, fintechs and marketplaces that want to start KYC for free and pay a public list price per module, from $0.33 for a full KYC check, with no minimum or contract. It covers identity checks, database lookups in many countries, AML screening and transaction monitoring in one API. Its liveness has an iBeta Level 1 letter on the lab''s site and its ISO/IEC 27001 certificate is published. The company is young, KYB is still partly in staging, and support is email only.'
+what_is:
+- Didit sells identity verification and fraud prevention through one API and a web console. Its modules cover ID document checks with NFC chip reading, passive and active liveness, face match and face search, age estimation, proof of address, phone and email checks, checks against government databases without a document, AML screening with ongoing monitoring, transaction monitoring, crypto wallet screening, Travel Rule messages, reusable KYC and biometric login. Every module has a public list price, and a free plan includes monthly credit.
+- The company was founded in 2023 by twin brothers Alberto Rosas (CEO) and Alejandro Rosas, and says it has two headquarters, in San Francisco and Barcelona. The iBeta letter names Didit Identity, Inc., and the ISO/IEC 27001 certificate names Didit Identity Spain S.L. in Barcelona. Didit joined Y Combinator's Winter 2026 batch and announced in May 2026 a $6 million seed tranche that brought its total seed funding to $7.5 million.
+features:
+- ID document verification with NFC chip reading, passive and active liveness, 1:1 face match and 1:N face search for duplicate accounts.
+- Checks against government and bureau data without a document, priced per country, for example NIN and BVN in Nigeria and the Document Verification Service in Australia.
+- AML screening of people and companies, with ongoing monitoring priced per user per year.
+- Transaction monitoring, crypto wallet screening and Travel Rule messages in the same account.
+- Age estimation from a selfie, with a German FSM youth protection seal for its age verification, per Didit.
+- REST API, webhooks and SDKs for web, iOS, Android, React Native and Flutter, plus a free plan for testing.
+pricing:
+  summary: Didit publishes its prices. The Free plan costs $0 a month and includes $10 of credit each month; Growth ($99 a month) and Scale ($299 a month) include more credit and discounts off list prices, and Enterprise is quoted on an annual contract. A full KYC check costs $0.33 at list price, AML screening $0.20 and ongoing AML monitoring $0.07 per user per year. The pricing page says there are no minimums and no contracts. KYB registry prices are published as staging rates pending production rollout.
+  plans:
+  - tier: Free
+    price: $0 a month
+    note: $10 of credit every month, no card
+    extra: 1,000 monitored transactions a month included
+  - tier: Growth
+    price: $99 a month
+    note: $115 of credit a month, 4% off list prices
+    extra: 10,000 monitored transactions a month
+  - tier: Scale
+    price: $299 a month
+    note: $350 of credit a month, 10% off list prices
+    extra: 14-day free trial; 100,000 monitored transactions a month
+  - tier: Enterprise
+    price: Custom
+    note: Annual contract, priced by sales
+    extra: Regional or in-country data residency available
+  legacy_verified_note: null
+  verified: '2026-11'
+  model:
+    published: core
+    minimum: false
+    trial: true
+    source: 2
+  index:
+    product: 'KYC and AML checks'
+    price:
+    - 'Full KYC check'
+    - 'AML screening'
+    minimum_note: 'None; the pricing page says no minimums and no contracts'
+    included: 'Pay per module at list price; the Free plan includes monthly credit, and paid plans add credit and discounts'
+  items:
+  - label: Full KYC check
+    value: $0.33 per check (list price)
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: ID verification
+    value: $0.15 per check
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: NFC reading
+    value: $0.15 per check
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: Passive liveness
+    value: $0.10 per check
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: Active liveness
+    value: $0.15 per check
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: Face match (1:1)
+    value: $0.05 per check
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: Age estimation
+    value: $0.10 per check
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: Proof of address
+    value: $0.20 per check
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: AML screening
+    value: $0.20 per screening
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: Ongoing AML monitoring
+    value: $0.07 per user per year
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: Checks without a document
+    value: Priced per country, from $0.05 to $4.30 per lookup
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: Wallet screening
+    value: $0.15 per screening, or $0.02 with your own data provider
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: Transaction monitoring
+    value: $0.001 per transaction above the plan allowance
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: KYB registry check
+    value: From $2.00 per company (staging rates, pending production rollout)
+    kind: official
+    source: 2
+    verified: '2026-11'
+facts:
+- label: From
+  value: $0.33 per full KYC check (list price)
+  source: 2
+  evidence: vendor
+- label: Plans
+  value: Free ($0), Growth ($99 a month), Scale ($299 a month), Enterprise (custom)
+  source: 2
+  evidence: vendor
+- label: Founded
+  value: '2023'
+  source: 18
+  evidence: vendor
+- label: Legal entities
+  value: Didit Identity, Inc. (iBeta letter); Didit Identity Spain S.L., Barcelona (ISO/IEC 27001 certificate)
+  source: 6
+  evidence: independent
+- label: Headquarters
+  value: San Francisco and Barcelona
+  source: 4
+  evidence: vendor
+- label: Funding
+  value: $7.5 million seed in total, including a $6 million tranche announced in May 2026; Y Combinator W26
+  source: 4
+  evidence: vendor
+- label: Coverage
+  value: 220+ countries and 14,000+ document types
+  source: 1
+  evidence: vendor
+- label: Data location
+  value: EU (AWS) by default; other regions and in-country residency on Enterprise contracts
+  source: 3
+  evidence: vendor
+pros:
+- Public price list for every module, a free plan with monthly credit and no minimum or contract
+- Liveness confirmed by iBeta at ISO/IEC 30107-3 Level 1, and an ISO/IEC 27001 certificate from Bureau Veritas is published
+- Identity, database lookups, AML screening, transaction monitoring and wallet screening in one API with SDKs for web and mobile
+cons:
+- Young company, founded in 2023, with a short track record
+- KYB registry checks and document collection are still priced as staging rates pending production rollout
+- Support is by email only, with no published hours or SLA
+alternatives:
+- slug: sumsub
+  name: Sumsub
+  best_for: All-in-One KYC and AML at Scale
+- slug: shufti-pro
+  name: Shufti Pro
+  best_for: Widest Coverage with a Free Tier
+- slug: zyphe
+  name: Zyphe
+  best_for: Self-Serve KYC with AI Agents
+choose_instead:
+- slug: sumsub
+  need: Higher liveness assurance
+  text: you want liveness confirmed by iBeta at Level 3 and a vendor operating since 2015.
+- slug: shufti-pro
+  need: Longer track record
+  text: you want iBeta Level 3 liveness and coverage of 240+ countries from a vendor founded in 2017.
+- slug: zyphe
+  need: AI agents for reviews
+  text: you want AI agents to prepare alert and case reviews for a person to sign off.
+user_reviews:
+  legacy_note: null
+  praise: []
+  criticize: []
+  by_profile:
+  - Startups and small teams that want to test KYC for free and pay public list prices are Didit's clearest fit.
+  - Fintechs and marketplaces that need checks against government databases in several countries can compare Didit's per-country prices before signing.
+  - Banks and large regulated firms should ask for the SOC 2 report and support terms, since support hours and SLAs are not published.
+faq:
+- q: How much does Didit cost?
+  a: Didit publishes its prices. A full KYC check costs $0.33 at list price, AML screening $0.20 and ongoing AML monitoring $0.07 per user per year. The Free plan includes $10 of credit a month, Growth costs $99 a month and Scale $299 a month with more credit and discounts, and Enterprise is quoted. The pricing page says there are no minimums or contracts.
+- q: Is Didit's liveness detection certified?
+  a: iBeta's site publishes a Level 1 confirmation letter for ISO/IEC 30107-3 presentation attack detection, dated 4 February 2026, for Didit Identity, Inc.'s Didit Biometric Authentication v2.0, with no attack accepted in 360 attempts. Didit says iBeta also confirmed its active liveness at Level 2 on 9 November 2026; we have not yet checked that letter.
+- q: Is Didit ISO 27001 or SOC 2 certified?
+  a: Didit publishes an ISO/IEC 27001:2022 certificate from Bureau Veritas, number ES144068, valid until 3 June 2027. It says it holds a SOC 2 Type 2 report issued in July 2026, which it shares on request; we have not seen the report.
+- q: Where does Didit store data?
+  a: Didit says sessions are processed and stored in the EU on AWS by default. Other regions, and in-country residency where available, are offered on Enterprise contracts.
+- q: Does Didit verify identities without a document?
+  a: Yes. Didit checks ID numbers against government and bureau data in many countries and prices each lookup by country, from $0.05 to $4.30. Examples include NIN and BVN in Nigeria and the Document Verification Service in Australia.
+- q: What is the best alternative to Didit?
+  a: Sumsub and Shufti Pro both have iBeta Level 3 liveness and have operated longer. Zyphe is another self-serve option with a public rate card and AI agents for case reviews.
+segments: []
+capabilities:
+  checked: '2026-11'
+  identity_verification:
+    status: 'yes'
+    note: ID document checks with face match
+    source: 1
+  nfc:
+    status: 'yes'
+    note: NFC chip reading, priced per check
+    source: 2
+  liveness:
+    status: 'yes'
+    note: passive and active liveness
+    source: 2
+  injection_detection:
+    status: not_disclosed
+    note: no injection attack test found
+  video_ident:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  reusable_id:
+    status: 'yes'
+    note: reusable KYC, free
+    source: 2
+  age_facial_estimation:
+    status: 'yes'
+    note: age estimation from a selfie
+    source: 2
+  sanctions_pep:
+    status: 'yes'
+    note: AML screening of people and companies
+    source: 2
+  adverse_media:
+    status: not_disclosed
+    note: not itemised on the pages checked
+  ongoing_monitoring:
+    status: 'yes'
+    note: priced per user per year
+    source: 2
+  transaction_monitoring:
+    status: 'yes'
+    note: real-time, monitored transactions included in plans
+    source: 2
+  case_management:
+    status: not_disclosed
+    note: not checked on the pages read
+  kyb_registry:
+    status: 'yes'
+    note: EU, UK, US by state and major Latin American registries; staging rates
+    source: 7
+  kyb_ubo:
+    status: 'yes'
+    note: owners returned where the registry has them
+    source: 7
+  kyb_entity_screening:
+    status: 'yes'
+    note: company AML screening
+    source: 7
+  kyb_documents:
+    status: partial
+    note: document collection still in staging
+    source: 7
+  kyb_monitoring:
+    status: not_disclosed
+    note: registry monitoring listed as coming soon
+    source: 2
+  proof_of_address:
+    status: 'yes'
+    note: priced per check
+    source: 2
+  data_residency:
+    status: 'yes'
+    note: EU by default; other regions and in-country on Enterprise
+    source: 3
+  deployment:
+    status: cloud
+    note: AWS, EU by default
+    source: 3
+  published_pricing:
+    status: 'yes'
+    note: list price per module; KYB at staging rates
+    source: 2
+  manual_review:
+    status: not_disclosed
+    note: no review by Didit staff described
+    hours: null
+    checked: '2026-11'
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: API reference pages are public
+    source: 9
+  sdk_web:
+    status: 'yes'
+    note: web SDK
+    source: 1
+  sdk_ios:
+    status: 'yes'
+    note: iOS SDK
+    source: 1
+  sdk_android:
+    status: 'yes'
+    note: Android SDK, plus React Native and Flutter
+    source: 1
+  sandbox:
+    status: 'yes'
+    note: free plan with monthly credit and a sandbox
+    source: 2
+  no_code:
+    status: 'yes'
+    note: hosted verification flow and no-code workflow modules
+    source: 10
+  support_hours:
+    status: not_disclosed
+    note: email only, no hours or SLA
+    source: 8
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 220
+    note: countries
+    source: 1
+  document_types:
+    value: 14000
+    note: document types
+    source: 1
+  non_doc:
+    status: 'yes'
+    note: ID number lookups priced per country
+    source: 2
+track_record:
+  ownership:
+    status: stable
+    note: private, VC-backed; seed round May 2026
+    source: 4
+certifications:
+- name: iBeta ISO/IEC 30107-3 PAD Level 1
+  what: Liveness, Didit Biometric Authentication v2.0 (Feb 2026)
+  status: confirmed
+  source: 6
+- name: iBeta ISO/IEC 30107-3 PAD Level 2
+  what: Active liveness (Nov 2026); letter hosted by Didit, not yet checked
+  status: vendor_stated
+  source: 11
+- name: ISO/IEC 27001:2022
+  what: Information security, Bureau Veritas, cert. ES144068, valid to Jun 2027
+  status: confirmed
+  source: 12
+- name: SOC 2 Type 2
+  what: Report issued Jul 2026, shared on request
+  status: vendor_stated
+  source: 3
+user_ratings:
+- platform: G2
+  rating: 4.9
+  count: 18
+  checked: '2026-11'
+  url: https://www.g2.com/products/didit-identity-verification/reviews
+- platform: Capterra
+  rating: 5.0
+  count: 8
+  checked: '2026-11'
+  url: https://www.capterra.com/p/10023817/Didit/
+use_case_verdicts: []
+score_breakdown:
+- criterion: "Fraud defense"
+  weight: 25
+  score: 3.5
+  note: "PAD Level 1 lab result, NFC"
+  evidence: independent
+- criterion: "Pricing and total cost"
+  weight: 20
+  score: 5
+  note: "published, trial or free tier"
+  evidence: vendor
+- criterion: "Coverage"
+  weight: 15
+  score: 5
+  note: "220 countries and territories, 14,000 document types, checks without a document"
+  evidence: vendor
+- criterion: "Platform breadth"
+  weight: 15
+  score: 4
+  note: "6 of 8 modules: identity verification, KYB, sanctions screening, monitoring, reusable ID, age checks"
+  evidence: vendor
+- criterion: "Integration and time to launch"
+  weight: 15
+  score: 5
+  note: "public API docs, self-serve sandbox or trial, no-code or hosted flow, web, iOS and Android SDKs"
+  evidence: vendor
+- criterion: "Trust and track record"
+  weight: 10
+  score: 3.5
+  note: "ISO 27001 or SOC 2 confirmed, data residency or on-premises"
+  evidence: independent
+hands_on: null
+sources:
+- title: Didit homepage
+  publisher: Didit
+  url: https://didit.me/
+  accessed: '2026-11'
+- title: Pricing
+  publisher: Didit
+  url: https://didit.me/pricing
+  accessed: '2026-11'
+- title: Security and compliance
+  publisher: Didit
+  url: https://didit.me/security-compliance/
+  accessed: '2026-11'
+- title: Didit closes $7.5M seed to build the infrastructure for identity and fraud
+  publisher: Didit
+  url: https://didit.me/blog/didit-7-5m-seed-infrastructure-identity-fraud/
+  accessed: '2026-11'
+- title: About Didit
+  publisher: Didit
+  url: https://didit.me/about-us/
+  accessed: '2026-11'
+- title: Didit PAD Level 1 confirmation letter (4 February 2026)
+  publisher: iBeta Quality Assurance
+  url: https://www.ibeta.com/wp-content/uploads/2026/02/260104-Didit-PAD-Level-1-Confirmation-Letter-iOS.pdf
+  accessed: '2026-11'
+- title: KYB
+  publisher: Didit
+  url: https://didit.me/kyb/
+  accessed: '2026-11'
+- title: Contact
+  publisher: Didit
+  url: https://didit.me/contact/
+  accessed: '2026-11'
+- title: API reference, database validation (Australia, citizenship certificate)
+  publisher: Didit
+  url: https://docs.didit.me/api-reference/database-validation/australia/citizenship-certificate.md
+  accessed: '2026-11'
+- title: Australia passport verification via the DVS
+  publisher: Didit
+  url: https://updates.didit.me/blog/australia-passport-database-validation/
+  accessed: '2026-11'
+- title: Didit passes iBeta Level 2
+  publisher: Didit
+  url: https://didit.me/blog/didit-ibeta-level-2/
+  accessed: '2026-11'
+- title: ISO/IEC 27001:2022 certificate ES144068
+  publisher: Bureau Veritas (hosted by Didit)
+  url: https://didit.me/docs/ISO27001-Didit.pdf
+  accessed: '2026-11'
+- title: Identity verification and fraud in Australia
+  publisher: Didit
+  url: https://updates.didit.me/solutions/countries/australia/
+  accessed: '2026-11'
+- title: Non-document verification in Nigeria (NIN and BVN)
+  publisher: Didit
+  url: https://didit.me/blog/non-doc-verification-nigeria/
+  accessed: '2026-11'
+- title: Didit raises $6M to expand identity and fraud infrastructure platform
+  publisher: Biometric Update
+  url: https://www.biometricupdate.com/202605/didit-raises-6m-to-expand-identity-and-fraud-infrastructure-platform
+  accessed: '2026-11'
+- title: Didit, Identity Verification reviews
+  publisher: G2
+  url: https://www.g2.com/products/didit-identity-verification/reviews
+  accessed: '2026-11'
+- title: Didit
+  publisher: Capterra
+  url: https://www.capterra.com/p/10023817/Didit/
+  accessed: '2026-11'
+- title: Didit (YC W26), company page
+  publisher: LinkedIn
+  url: https://www.linkedin.com/company/diditprotocol
+  accessed: '2026-11'
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://didit.me/
+  - https://www.linkedin.com/company/diditprotocol
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- 'New record, first review 2026-11-17. No commercial relationship recorded; link.type none.'
+- 'iBeta Level 2: Didit''s blog says iBeta confirmed active liveness at Level 2 on 9 Nov 2026 and links a letter hosted on a Didit S3 bucket (service-strapi-artifacts-a0b1c2d3.s3.eu-west-1.amazonaws.com). The fetch needed approval and was not run; iBeta''s own site was not checked for a Level 2 letter either. Kept vendor_stated. If the letter names Didit, change to confirmed: fraud defense 3.5 to 4.5, overall about 4.3 to 4.6.'
+- 'Spain: Didit says Tesoro, Banco de España, SEPBLAC and CNMV concluded (report Feb 2026, test Nov 2024 to Jul 2025) that NFC plus liveness is at least as safe as in-person ID checks. Report at tesoro.es not opened (fetch needed approval); Biometric Update repeats the claim. Not used in pros or score.'
+- 'Pricing: page notes a price change on 1 Nov 2026 and does not say which version it shows; figures read 17 Nov 2026. Older Didit pages say 500 free verifications a month; the pricing page now gives $10 monthly credit on the Free plan, which is used here. Non-document prices from the pricing page: US $0.27, Nigeria NIN $0.20, BVN $0.35; the Australia country page gives $0.45 per DVS query.'
+- 'SOC 2: security page says Type 1 (ATOM, Apr 2026) and Type 2 (Atom Assurances, issued Jul 2026, period 9 Mar to 1 Jul 2026), reports behind a request form. Vendor-stated. FSM youth protection seal (29 Jun 2026) PDF on Didit''s site not opened.'
+- 'Customer counts conflict: homepage says 3,000+ organisations, Biometric Update (May 2026, from Didit''s release) says 1,500 customers. Neither used. Logo wall (Firecrawl, Slash, Crnogorski Telekom, UCSF Neuroscape, Bit2Me) not used.'
+- 'Vendor claims not used: 99% of verifications under 2 seconds, latency percentiles, 100% uptime, 0 breaches, 3 to 5 times cheaper than incumbents, +30% month-on-month growth, profitability.'
+- 'User ratings from search result pages on 17 Nov 2026 (G2 blocks the fetcher): G2 4.9 from 18 reviews, Capterra 5.0 from 8. Trustpilot shows 3.1 to 3.5 from 17 to 18 reviews depending on the country page; mostly end users, not added.'
+- 'docs.didit.me was not fetched (approval); public API reference pages appear in search results, so docs_public is yes. Case management, adverse media and video ident not checked; left not_disclosed.'
+- 'No breach, enforcement action or lawsuit involving Didit found in searches on 17 Nov 2026.'
+application_category: Identity Verification Software
+author: andrii-klymenko
+directory_categories:
+- Identity Verification
+- AML
+- KYB
+- Cheap KYC
+- Liveness Detection

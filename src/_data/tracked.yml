@@ -98,9 +98,3 @@
   - Identity Verification
   description: Credit bureau whose IDMatrix service verifies identities, including DVS checks in Australia.
   review: null
-- name: Didit
-  categories:
-  - Identity Verification
-  - AML
-  description: Identity API covering KYC, KYB, transaction monitoring and DVS checks in Australia.
-  review: null
