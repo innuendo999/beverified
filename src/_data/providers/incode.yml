@@ -194,8 +194,9 @@ capabilities:
     source: 2
   injection_detection:
     status: 'yes'
-    note: Deepsight camera trust blocks virtual cameras, no lab letter found
-    source: 22
+    note: vendor-stated, Deepsight blocks virtual cameras
+    source: 30
+    checked: '2026-11'
   reusable_id:
     status: 'yes'
     note: verify once, reuse everywhere
@@ -472,6 +473,10 @@ sources:
 - title: Incode Launches Agentic Identity to Verify and Secure AI Agents
   publisher: Incode
   url: https://incode.com/press/incode-launches-agentic-identity-to-verify-and-secure-ai-agents-2/
+  accessed: '2026-11'
+- title: "Incode launches Deepsight deepfake defense (2 Dec 2025)"
+  publisher: Incode
+  url: https://www.incode.com/press/incode-launches-deepsight-deepfake-defense-validated-by-purdue-study
   accessed: '2026-11'
 entity:
   wikidata: null

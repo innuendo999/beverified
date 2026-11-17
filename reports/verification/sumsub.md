@@ -78,3 +78,10 @@ All Sumsub entries in `src/_data/rankings.yml`:
 ### Score flag
 - v3.1 draft score 4.8 (unchanged); Trust and track record 4 after the incident deduction.
 - G2 re-read by the owner in a browser on 2026-11-05 (screenshot): 4.6 / 5 from 130 reviews, unchanged; `checked` → 2026-11.
+
+## Follow-up 2026-11-17
+
+Injection attack detection (new matrix column, liveness-detection and identity-verification).
+
+- `capabilities.injection_detection` stays not_disclosed. The Liveness and Deepfake Detection page (re-read 2026-11) says only that the system "incorporates new deepfake patterns and injection methods"; it does not say how injection is detected, and the liveness help page does not mention virtual cameras or emulators. No injection test letter found (BixeLab IAD list checked 2026-11).
+- Score: unchanged (rescore adds 0.5 only with `independent: true`). `last_verified` not moved: this was a one-field check.

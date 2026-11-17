@@ -106,3 +106,10 @@ Checked: idenfy.com/identity-verification-price, documentation.idenfy.com pay-as
 - case_management: yes, source 21 (verifications case management portal; KYB case management)
 - video_ident: not_disclosed (unchanged)
 - reusable_id: not_disclosed (unchanged)
+
+## Follow-up 2026-11-17
+
+Injection attack detection (new matrix column, liveness-detection and identity-verification).
+
+- `capabilities.injection_detection` yes, vendor-stated (source 23, liveness checks documentation re-read 2026-11): an optional check, enabled separately and requiring passive liveness, that flags virtual camera drivers and emulators with the fraud tag VIRTUAL_CAMERA. No injection lab letter found.
+- Score: unchanged (rescore adds 0.5 only with `independent: true`). `last_verified` not moved: this was a one-field check.

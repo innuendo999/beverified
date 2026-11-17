@@ -66,6 +66,7 @@ Each key is `{status, note, source}`; `source` = number in this record's `source
 | published_pricing | yes \| partial \| no |
 | nfc | yes \| add_on \| no \| not_disclosed (IDV, added 2026-10-23: SDK reads ePassport/eID chips) |
 | video_ident | yes \| add_on \| no \| not_disclosed (IDV, added 2026-10-23: live agent video call, not an automated selfie video) |
+| injection_detection | yes \| add_on \| no \| not_disclosed (IDV and liveness, added 2026-11-17: detects media that bypasses the camera, such as virtual cameras, emulators and injected or deepfake video streams). `note` starts with the evidence level: `independently tested` only when we opened a lab letter or test report that names injection attacks (for example under CEN/TS 18099 or a lab's own injection test), otherwise `vendor-stated`; then a few words. The note is always shown in matrices. Optional `checked: 'YYYY-MM'` = month this key was re-checked. Columns: liveness-detection and identity-verification matrices; glossary term `injection-attack-detection` |
 | age_document, age_facial_estimation, age_email_estimation, age_mobile_operator, age_credit_card, age_open_banking, age_digital_id, age_reusable | yes \| add_on \| no \| not_disclosed (age verification methods, added 2026-10-23; judged on the vendor's age verification pages) |
 | kyb_registry, kyb_ubo, kyb_entity_screening, kyb_monitoring, kyb_documents | yes \| add_on \| no \| not_disclosed (KYB, added 2026-10-25; kyb_registry note carries the vendor's registry/jurisdiction count with its source and is always shown) |
 | kyb_pricing | yes \| partial \| no (KYB price published on the vendor's own site; note = the price point, always shown) |
@@ -127,7 +128,7 @@ track_record:
   # incidents are not stored here: the score reads src/_data/incidents.yml (counted: false is not deducted)
 capabilities:                # new keys, same shape as the other capabilities
   liveness: {...}            # identity family: has a liveness product
-  injection_detection: {...} # add independent: true with a lab letter
+  injection_detection: {...} # see the capabilities table above; independent: true (moves the score) only with an opened lab letter, owner decision
   reusable_id: {...}
   data_residency: {...}      # customer can choose the processing or storage region
   ongoing_monitoring: {...}  # AML: re-screening of customers on list change

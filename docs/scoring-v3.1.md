@@ -124,7 +124,7 @@ Public evidence cannot show false rejection rate, completion rate, manual review
 
 - `integration{ docs_public, sdks[], sandbox, no_code, support_hours }`, each `{status, note, source}`.
 - `coverage{ countries, document_types, non_doc }`, each `{value, source}`; replaces free-text Regions for scoring (the fact row stays).
-- `capabilities.injection_detection` (planned 17 Nov task) and `capabilities.reusable_id`.
+- `capabilities.injection_detection` (collected 2026-11-17, see data-schema.md) and `capabilities.reusable_id`.
 - AML: `capabilities.list_updates`, `pep_tiers`, `fuzzy_matching`, `alert_explanation`, `audit_trail`, `batch_screening`.
 - `score_breakdown[]` is generated from these rules by a script, never typed by hand; `score` = its weighted result.
 

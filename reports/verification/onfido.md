@@ -97,3 +97,10 @@ Filled `capabilities` keys from vendor pages opened 2026-10-30. No existing valu
 
 - ongoing_monitoring: add_on, source 20 (Ongoing Monitoring on Watchlist Standard and AML reports, enabled per account; not for Watchlist Mesh)
 - unchanged not_disclosed: transaction_monitoring, kyb_registry and sub-keys, case_management, video_ident, reusable_id (Entrust IDV page and watchlist docs checked)
+
+## Follow-up 2026-11-17
+
+Injection attack detection (new matrix column, liveness-detection and identity-verification).
+
+- `capabilities.injection_detection` yes, vendor-stated (new source: Entrust identity verification page, read 2026-11): "Detect deepfakes and injection attacks with AI-powered document and biometric checks". No mechanism and no injection test letter. The products page (source 1) could not be re-opened this month.
+- Score: unchanged (rescore adds 0.5 only with `independent: true`). `last_verified` not moved: this was a one-field check.

@@ -86,3 +86,10 @@ Veridas states it gives access to AML watchlist databases "including ComplyAdvan
 
 - ongoing_monitoring: add_on, source 20 (watch-list page: screening "at onboarding and periodically throughout the customer lifecycle"; list data via partner ComplyAdvantage, as sanctions_pep)
 - unchanged not_disclosed: transaction_monitoring, kyb_registry and sub-keys, case_management, video_ident (homepage lists a Video-ID product but does not say it uses a live agent)
+
+## Follow-up 2026-11-17
+
+Injection attack detection (new matrix column, liveness-detection and identity-verification).
+
+- `capabilities.injection_detection` yes, vendor-stated (new source: Veridas release of 10 Nov 2026, read 2026-11). Veridas says CLR Labs certified its injection attack detection at CEN/TS 18099 High Level of Assurance. The release links no lab letter or certificate, and the Veridas certification page did not load, so this stays vendor-stated. Owner decision: once the CLR Labs letter is published and opened, switch the note to independently tested (and decide on `independent: true`, which adds 0.5 to Fraud defense).
+- Score: unchanged (rescore adds 0.5 only with `independent: true`). `last_verified` not moved: this was a one-field check.

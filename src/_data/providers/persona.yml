@@ -261,8 +261,9 @@ capabilities:
     source: 27
   injection_detection:
     status: 'yes'
-    note: vendor says it resists injection attacks
+    note: vendor-stated, emulators and rooted devices
     source: 27
+    checked: '2026-11'
   reusable_id:
     status: 'yes'
     note: Reusable Personas, moving to Verify with Persona

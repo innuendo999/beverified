@@ -80,3 +80,10 @@ Rescore (v3.1 draft): 4.6 -> 4.9, all criteria scored.
 
 - ongoing_monitoring: yes, source 24 (new: shuftipro.com/ongoing-monitoring/, "continuously re-screening verified individuals, businesses, UBOs")
 - case_management: yes, source 1 (pricing page: "Backoffice - Case Management Portal" with "Manual Review Section" on all plans; checkmarks are images, plan split not confirmed)
+
+## Follow-up 2026-11-17
+
+Injection attack detection (new matrix column, liveness-detection and identity-verification).
+
+- `capabilities.injection_detection` yes, vendor-stated (new source: Shufti liveness detection page, accessed 2026-11). The page says it can "detect virtual camera drivers and software-layer video injection". The only test it shows is iBeta ISO/IEC 30107-3 Level 3, which covers presentation attacks, not injection. Previous source (homepage, 2026-10) replaced.
+- Score: unchanged (rescore adds 0.5 only with `independent: true`). `last_verified` not moved: this was a one-field check.

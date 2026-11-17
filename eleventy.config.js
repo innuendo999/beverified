@@ -182,12 +182,14 @@ export default function (eleventyConfig) {
   });
 
   // Counts for one capability from provider records, for article prose ("12 of 16 confirmed"):
-  // {% set pad = allProviders | capabilityStats("liveness_pad") %} -> { total, recorded, confirmed, vendor_stated, yes, add_on, partial, checked }
+  // {% set pad = allProviders | capabilityStats("liveness_pad") %} -> { total, recorded, confirmed, vendor_stated, yes, add_on, partial, independent, checked }
+  // independent = rows whose note starts with "independently tested" (injection_detection evidence level).
   eleventyConfig.addFilter("capabilityStats", (allProviders, key) => {
     const r = providersFor(key, allProviders);
     if (!r) return null;
     const out = { total: r.rows.length, recorded: r.recorded, checked: r.checked };
     for (const row of r.rows) out[row.status] = (out[row.status] || 0) + 1;
+    out.independent = r.rows.filter((x) => /^independently tested/i.test(x.note || "")).length;
     out.levels = r.rows.filter((x) => x.status === "confirmed" && /^Level \d$/.test(x.label)).reduce((a, x) => ({ ...a, [x.label]: (a[x.label] || 0) + 1 }), {});
     return out;
   });

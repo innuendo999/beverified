@@ -87,3 +87,10 @@
 - kyb_registry: yes, source 21 (new: company verification docs; French companies only, official register via societe.com)
 - case_management: not_disclosed (AML hits link to nCino dashboard; no IDnow queue found)
 - transaction_monitoring: not_disclosed (unchanged)
+
+## Follow-up 2026-11-17
+
+Injection attack detection (new matrix column, liveness-detection and identity-verification).
+
+- `capabilities.injection_detection` not_disclosed → yes, vendor-stated (new source: IDnow blog on deepfake detection and liveness, updated 18 Sep 2026, read 2026-11): "Our liveness detection technology features three separate checks", one of them injection attack detection. No mechanism, no injection test letter.
+- Score: unchanged (rescore adds 0.5 only with `independent: true`). `last_verified` not moved: this was a one-field check.

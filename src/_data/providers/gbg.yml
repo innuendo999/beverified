@@ -201,7 +201,7 @@ capabilities:
     source: 5
   injection_detection:
     status: 'yes'
-    note: injection attack variant of liveness module, no lab letter found
+    note: vendor-stated, injection variant of the liveness module
     source: 22
   reusable_id:
     status: partial

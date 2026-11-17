@@ -108,3 +108,10 @@ Filled `capabilities` keys from vendor pages opened 2026-10-30. No existing valu
 
 - ongoing_monitoring: add_on, source 30 (AML Screening product: "continuously re-screening customers after initial onboarding")
 - unchanged not_disclosed: transaction_monitoring, kyb_ubo, kyb_monitoring, kyb_documents, case_management, video_ident, reusable_id
+
+## Follow-up 2026-11-17
+
+Injection attack detection (new matrix column, liveness-detection and identity-verification).
+
+- `capabilities.injection_detection` yes, vendor-stated (source 10, Liveness page re-read 2026-11): it names "injected video streams" and device checks for emulators and rooted devices. Only iBeta PAD letters are cited; no injection test letter found.
+- Score: unchanged (rescore adds 0.5 only with `independent: true`). `last_verified` not moved: this was a one-field check.

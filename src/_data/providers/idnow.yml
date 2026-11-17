@@ -166,8 +166,10 @@ capabilities:
     note: optional video liveness in AutoIdent
     source: 15
   injection_detection:
-    status: not_disclosed
-    note: deepfake detection claimed, injection detection not described
+    status: 'yes'
+    note: vendor-stated, method not described
+    source: 22
+    checked: '2026-11'
   reusable_id:
     status: partial
     note: accepts EUDI Wallet and wallet based credentials
@@ -390,6 +392,10 @@ sources:
 - title: Verifying company, API only (documentation)
   publisher: IDnow
   url: https://docs.idnow.io/docs/platform-guides/company-verification-v1
+  accessed: '2026-11'
+- title: "Deepfake detection, presentation attacks and liveness"
+  publisher: IDnow
+  url: https://idnow.io/blog/deepfake-detection-presentation-liveness-technology/
   accessed: '2026-11'
 entity:
   wikidata: null

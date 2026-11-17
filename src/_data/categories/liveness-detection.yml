@@ -105,6 +105,7 @@ adjacent:
 price_source: record
 capability_columns:
 - liveness_pad
+- injection_detection
 - trust_framework
 - published_pricing
 - price_from
