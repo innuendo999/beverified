@@ -1,0 +1,83 @@
+slug: australia
+url: /providers/australia/
+seo:
+  title: Best KYC & AML Providers for Australia in 2026 | BeVerified
+  description: 'Sumsub, Persona, Jumio, Onfido, GBG and Trulioo compared: the best KYC & AML providers for Australia in 2026, all with a documented check through the government Document Verification Service (DVS).'
+  h1: Best KYC & AML Providers for Australia in 2026
+breadcrumb_label: Best KYC & AML Providers for Australia
+quick_answer: Sumsub ranks first in Australia, with real-time DVS checks of passports, driver licences and visas and published prices. Persona is next for teams that build their own flows, with DVS through Data Zoo. GBG suits buyers who want a direct DVS gateway in greenID. We compared 8 providers, 6 of them scored, on DVS checks, pricing and integration.
+last_verified: '2026-11-17'
+updated: '2026-11-17'
+# Eligibility (owner, 2026-11-17): a scored provider must document a check through the Australian Government
+# Document Verification Service (DVS) in its own docs or on its own site, directly or through a partner.
+# Evidence check 17 Nov 2026: reports/verification/australia-dvs-2026-11.md.
+explainer_html:
+- '<h2>Who qualifies for this ranking</h2>
+
+  <p>Every scored provider on this page describes a check through the Australian Government''s Document Verification Service (DVS) in its own documentation or on its own website. We checked each one on 17 November 2026. GBG (greenID) and Trulioo are approved DVS gateway service providers with a direct connection, which privacy assessments by the Office of the Australian Information Commissioner (OAIC) confirm. The others reach the DVS through a partner: Persona through Data Zoo and Jumio through National Crime Check. Sumsub and Onfido do not name the route they use.</p>
+
+  <p>Some providers we review are not here. We found no documented DVS check for Shufti Pro, Veriff, ComplyCube, iDenfy, Zyphe or KYCAID. Incode supports the DVS only when the client gets its own DVS approval and appoints Incode as its agent. NameScan mentions the DVS in an article but does not describe a check. Equifax and Didit both document DVS checks and appear in the list without a score, because we have not reviewed them yet.</p>
+
+  <h2>What the DVS checks, and what it does not</h2>
+
+  <p>The <a href="https://www.idmatch.gov.au/node/1105" rel="nofollow noopener" target="_blank">Document Verification Service</a>, run by the Attorney-General''s Department, checks whether the details on an identity document match the record held by the agency that issued it. It covers 14 document types and is used by more than 3,500 government and private organisations in Australia and New Zealand. A DVS check confirms that the document is genuine, not that the person holding it is its owner. Matching a face against a government photo is a separate service, the Face Verification Service.</p>
+
+  <p>Businesses reach the DVS through an approved gateway service provider, which has a direct connection, or through a vendor that works with one. Each business user appoints the provider that sends its requests as its information match agent.</p>
+
+  <h2>Rules Australian firms work to</h2>
+
+  <ul>
+
+  <li>The Anti-Money Laundering and Counter-Terrorism Financing Amendment Act 2024 and the AML/CTF Rules 2025, in force from 31 March 2026. Existing reporting entities may keep their current customer identification procedures for initial customer due diligence until 30 March 2029, but the new ongoing due diligence duties apply from 31 March 2026.</li>
+
+  <li>Tranche 2: lawyers, accountants, conveyancers, real estate professionals, dealers in precious metals and stones, and trust and company service providers have had AML/CTF obligations since 1 July 2026. <a href="https://www.austrac.gov.au/node/1248" rel="nofollow noopener" target="_blank">AUSTRAC</a> opened enrolment on 31 March 2026, and these businesses had to be enrolled by 29 July 2026.</li>
+
+  <li>The Digital ID Act 2024, under which the ACCC, as Digital ID Regulator, keeps the register of accredited digital ID providers. The government plans to let accredited private-sector providers join the Australian Government Digital ID System from 30 November 2026.</li>
+
+  <li>The Privacy Act 1988, enforced by the OAIC, which also assesses how DVS gateway service providers handle personal information.</li>
+
+  </ul>
+
+  <h2>How to choose a provider for Australia</h2>
+
+  <ul>
+
+  <li>Ask whether the vendor connects to the DVS directly as a gateway service provider or through a partner, and which one.</li>
+
+  <li>Pair the DVS check with a selfie match and liveness check, because the DVS confirms the document, not the person.</li>
+
+  <li>Check which DVS document types the vendor supports, and confirm current availability on the DVS availability dashboard.</li>
+
+  <li>If you were a reporting entity before 31 March 2026, check that the flow fits the initial due diligence approach you use during the transition.</li>
+
+  <li>Ask how long the vendor keeps document images and selfies, and where it stores them.</li>
+
+  <li>Compare pricing models. Two of the six scored providers publish a starting price; the other four quote on request.</li>
+
+  </ul>
+
+  <p><a href="/methodology/">How we evaluate every provider on this list →</a></p>'
+faq:
+- q: What is the Document Verification Service (DVS)?
+  a: The DVS is a government service run by the Attorney-General's Department that checks whether the details on an identity document, such as a passport or driver licence, match the record of the agency that issued it. It returns a match or no-match result and covers 14 document types.
+- q: Who regulates KYC and AML in Australia?
+  a: AUSTRAC supervises AML/CTF compliance under the Anti-Money Laundering and Counter-Terrorism Financing Act. The ACCC is the Digital ID Regulator under the Digital ID Act 2024, and the Office of the Australian Information Commissioner enforces the Privacy Act 1988.
+- q: What changed in Australian AML/CTF rules on 31 March 2026?
+  a: The AML/CTF Amendment Act 2024 and the AML/CTF Rules 2025 took effect. Existing reporting entities can keep their current customer identification procedures for initial due diligence until 30 March 2029, but the new ongoing due diligence duties apply to all customers from 31 March 2026.
+- q: Which businesses does Tranche 2 cover, and from when?
+  a: Lawyers, accountants, conveyancers, real estate professionals, dealers in precious metals and stones, and trust and company service providers. Their AML/CTF obligations started on 1 July 2026, and they had to enrol with AUSTRAC by 29 July 2026.
+- q: Does a DVS check confirm the customer's face?
+  a: No. The DVS checks document details against the issuer's record. Face matching against a government photo is a separate service, the Face Verification Service, so most KYC flows pair the DVS check with a selfie match and liveness check from the vendor.
+- q: Why do Equifax and Didit have no score?
+  a: We have not reviewed them yet. Both document DVS checks on their own sites, so they appear in the list as "Review coming" and will get a score after a full review under our methodology.
+adjacent:
+- identity-verification
+- kyc
+- aml
+- uk
+price_source: record
+capability_columns: []
+faq_templates: []
+legacy_issues: []
+author: andrii-klymenko
+legacy_reviewer: null

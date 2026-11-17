@@ -46,6 +46,7 @@ regions:                # area = section on /regions/; slug = region ranking pag
   - { name: United States, short: US, area: North America, reg: FinCEN, x: 23, y: 31, side: left }
   - { name: UAE, short: UAE, area: Middle East & Africa, reg: CBUAE, x: 65.5, y: 36.5, side: left }
   - { name: Singapore, short: Singapore, area: Asia-Pacific, reg: MAS, x: 78.8, y: 49.2, side: left }
+  - { name: Australia, short: Australia, area: Asia-Pacific, reg: AUSTRAC, x: 85, y: 68, slug: australia, lon: 134, lat: -25, iso: "036" }
   - { name: India, short: India, area: Asia-Pacific, reg: RBI, x: 71, y: 38, slug: india, lon: 79, lat: 22, iso: "356" }
   - { name: Brazil, short: Brazil, area: Latin America, reg: BACEN, x: 36, y: 63, slug: brazil, lon: -52, lat: -10, iso: "076" }
   - { name: Mexico, short: Mexico, area: North America, reg: CNBV, x: 22, y: 39, slug: mexico, side: left, lon: -102, lat: 23, iso: "484" }
