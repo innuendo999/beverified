@@ -273,6 +273,26 @@ capabilities:
   data_residency:
     status: not_disclosed
     note: no hosting region choice found
+  doc_forensics:
+    status: 'yes'
+    note: 'fake ID detection and fraud models in Predictive DocV'
+    source: 20
+    checked: '2026-11'
+  manual_review:
+    status: 'no'
+    note: 'Socure markets DocV as replacing manual review teams'
+    source: 21
+    hours: null
+    checked: '2026-11'
+  proof_of_address:
+    status: 'not_disclosed'
+    note: 'no proof-of-address document check found'
+    checked: '2026-11'
+  reverification:
+    status: 'yes'
+    note: 'Selfie Reverification against the earlier DocV headshot'
+    source: 22
+    checked: '2026-11'
 integration:
   checked: '2026-11'
   docs_public:
@@ -457,6 +477,18 @@ sources:
 - title: Socure Launches Agent Intelligence to Detect, Score and Credential AI Agents
   publisher: ID Tech
   url: https://idtechwire.com/socure-launches-agent-intelligence-to-detect-score-and-credential-ai-agents/
+  accessed: '2026-11'
+- title: 'Predictive DocV'
+  publisher: Socure
+  url: https://www.socure.com/berbix-acquisition-document-verification
+  accessed: '2026-11'
+- title: 'Document verification'
+  publisher: Socure
+  url: https://socure.com/products/document-verification
+  accessed: '2026-11'
+- title: 'Selfie Reverification'
+  publisher: Socure
+  url: https://help.socure.com/riskos/docs/selfie-reverification
   accessed: '2026-11'
 entity:
   wikidata: null

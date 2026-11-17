@@ -249,6 +249,24 @@ capabilities:
   video_ident:
     status: not_disclosed
     note: nothing found on vendor pages
+  doc_forensics:
+    status: 'yes'
+    note: 'document fraud prevention in nCino identity verification'
+    source: 14
+    checked: '2026-11'
+  manual_review:
+    status: 'not_disclosed'
+    note: 'no review by nCino staff described'
+    hours: null
+    checked: '2026-11'
+  proof_of_address:
+    status: 'not_disclosed'
+    note: 'no proof-of-address document check found'
+    checked: '2026-11'
+  reverification:
+    status: 'not_disclosed'
+    note: 'no re-verification of returning users found'
+    checked: '2026-11'
 certifications: []
 user_ratings:
 - platform: G2

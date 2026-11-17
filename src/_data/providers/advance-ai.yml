@@ -253,6 +253,26 @@ capabilities:
     status: 'yes'
     note: AML case review workflow, KYB auditor review
     source: 12
+  doc_forensics:
+    status: 'yes'
+    note: 'forgery detection on IDs'
+    source: 21
+    checked: '2026-11'
+  manual_review:
+    status: 'not_disclosed'
+    note: 'no review by ADVANCE.AI staff described'
+    hours: null
+    checked: '2026-11'
+  proof_of_address:
+    status: 'yes'
+    note: 'utility bills for proof of address checks'
+    source: 22
+    checked: '2026-11'
+  reverification:
+    status: 'yes'
+    note: 'face authentication service keeps a facial image per user'
+    source: 22
+    checked: '2026-11'
 certifications:
 - name: ISO/IEC 27001:2013
   what: Information security (obtained Feb 2020, Indonesia)
@@ -376,6 +396,14 @@ sources:
 - title: "Biometric confirmation letters (Advance.AI, Injection Attack Detection, CEN/TS 18099, 29 May 2026)"
   publisher: BixeLab
   url: https://bixelab.com/confirmation-letter/
+  accessed: '2026-11'
+- title: 'Fintech identity verification'
+  publisher: ADVANCE.AI
+  url: https://advance.ai/fintech/
+  accessed: '2026-11'
+- title: 'Privacy notice'
+  publisher: ADVANCE.AI
+  url: https://info.advance.ai/privacy-notice
   accessed: '2026-11'
 entity:
   wikidata: null

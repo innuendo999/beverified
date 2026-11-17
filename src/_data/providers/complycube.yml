@@ -315,6 +315,26 @@ capabilities:
     status: add_on
     note: monthly fee on Core, included on Growth
     source: 1
+  doc_forensics:
+    status: 'yes'
+    note: 'document checks including visual security elements'
+    source: 19
+    checked: '2026-11'
+  manual_review:
+    status: 'not_disclosed'
+    note: 'no current review by ComplyCube staff described'
+    hours: null
+    checked: '2026-11'
+  proof_of_address:
+    status: 'yes'
+    note: 'proof-of-address documents checked against client and location data'
+    source: 20
+    checked: '2026-11'
+  reverification:
+    status: 'yes'
+    note: 'biometric authentication of returning users'
+    source: 21
+    checked: '2026-11'
 certifications:
 - name: UK DIATF certified identity service
   what: UK digital identity trust framework (Kantara, Mar 2026 to Mar 2029)
@@ -456,6 +476,18 @@ sources:
 - title: "Liveness detection"
   publisher: ComplyCube
   url: https://www.complycube.com/en/solutions/due-diligence-compliance/know-your-customer/liveness-detection/
+  accessed: '2026-11'
+- title: 'Customer due diligence'
+  publisher: ComplyCube
+  url: https://www.complycube.com/solutions/due-diligence-compliance/customer-due-diligence/
+  accessed: '2026-11'
+- title: 'Platform'
+  publisher: ComplyCube
+  url: https://www.complycube.com/platform
+  accessed: '2026-11'
+- title: 'Biometric verification'
+  publisher: ComplyCube
+  url: https://complycube.com/solutions/identity-assurance/biometric-verification
   accessed: '2026-11'
 entity:
   wikidata: null

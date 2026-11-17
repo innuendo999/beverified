@@ -219,6 +219,25 @@ capabilities:
     status: 'yes'
     note: scheduled in-life re-screening
     source: 19
+  doc_forensics:
+    status: 'yes'
+    note: '50+ forensic document authentication tests'
+    source: 28
+    checked: '2026-11'
+  manual_review:
+    status: 'yes'
+    note: 'GBG experts review unclassified documents; no hours or turnaround published'
+    source: 28
+    hours: null
+    checked: '2026-11'
+  proof_of_address:
+    status: 'not_disclosed'
+    note: 'no proof-of-address document check found'
+    checked: '2026-11'
+  reverification:
+    status: 'not_disclosed'
+    note: 'no re-verification of returning users found'
+    checked: '2026-11'
 integration:
   checked: '2026-11'
   docs_public:
@@ -439,6 +458,10 @@ sources:
 - title: Digital ID Portal overview (GBG Go documentation)
   publisher: GBG
   url: https://docs.go.gbgplc.com/docs/go-v1/digital-id-portal/overview.md
+  accessed: '2026-11'
+- title: 'Document authentication'
+  publisher: GBG
+  url: https://www.gbg.com/en/prove/identity-document-verification/
   accessed: '2026-11'
 entity:
   wikidata: null

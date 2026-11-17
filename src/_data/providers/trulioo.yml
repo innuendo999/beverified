@@ -235,6 +235,26 @@ capabilities:
     status: 'yes'
     note: US, EU, APAC or Canada hosting region
     source: 19
+  doc_forensics:
+    status: 'yes'
+    note: 'document liveness checks against fake or tampered IDs'
+    source: 23
+    checked: '2026-11'
+  manual_review:
+    status: 'not_disclosed'
+    note: 'no review by Trulioo staff described'
+    hours: null
+    checked: '2026-11'
+  proof_of_address:
+    status: 'yes'
+    note: 'proof of address by data match or document'
+    source: 24
+    checked: '2026-11'
+  reverification:
+    status: 'yes'
+    note: 'a new selfie matched against document images from an earlier transaction'
+    source: 25
+    checked: '2026-11'
 integration:
   checked: '2026-11'
   docs_public:
@@ -423,6 +443,18 @@ sources:
 - title: Know Your Agent (KYA) | AI Agent Verification
   publisher: Trulioo
   url: https://www.trulioo.com/products/kya-verification
+  accessed: '2026-11'
+- title: 'Verify ID documents across the globe'
+  publisher: Trulioo
+  url: https://content.trulioo.com/flip-book/351985/886495/page/2
+  accessed: '2026-11'
+- title: 'Proof of Address'
+  publisher: Trulioo
+  url: https://www.trulioo.com/?p=19515
+  accessed: '2026-11'
+- title: 'Customer API 2.5'
+  publisher: Trulioo
+  url: https://docs.verification.trulioo.com/api/customer/2.5/index.html
   accessed: '2026-11'
 entity:
   wikidata: null
