@@ -1659,3 +1659,51 @@ html:not(.mm-js) .mm-item:hover .mm-panel, html:not(.mm-js) .mm-item:focus-withi
 .i--32 { width: 32px; height: 32px; stroke-width: 1.5; }
 .i-tile { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 10px; background: var(--accent-soft); color: var(--accent); }
 .i-tile .i { width: 22px; height: 22px; }
+
+/* ---------- Homepage, phone pass (2026-11-17). Kept last so it wins over earlier breakpoints. ---------- */
+@media (max-width: 860px) {
+  .hero__inner { padding-top: 28px; padding-bottom: 20px; gap: 28px; }
+  .hero__lede { font-size: 17px; margin-bottom: 24px; }
+  .hero__copy .cta-row { margin-bottom: 24px; }
+  /* Card row: rank, logo and score on one line, check chips across the full width below */
+  .idcard__row { grid-template-columns: 22px minmax(0,1fr) auto; grid-template-areas: "rank who score" "chips chips chips"; row-gap: 10px; align-items: center; padding: 14px 16px; }
+  .idcard__rank { grid-area: rank; padding-top: 0; }
+  .idcard__who { display: contents; }
+  .idcard__logo { grid-area: who; }
+  .idcard__checks { grid-area: chips; }
+  .idcard__score { grid-area: score; flex-direction: row; align-items: center; gap: 10px; }
+  .idcard__score .meter { margin-top: 0; width: 56px; }
+  .idcard__head { padding: 14px 16px; }
+  .idcard__sp { padding: 12px 16px; }
+  .idcard__more { padding: 12px 16px; border-top: 1px solid var(--line-soft); }
+  .idcard__mrz { display: none; }
+  .hero__counts { padding-bottom: 28px; }
+  .hero__counts a { min-height: 0; gap: 4px; padding: 12px 14px; }
+  #faq .home-uc__intro { margin-bottom: 20px; }
+  .faq details p { padding-right: 0; }
+  .hero + .home-section { padding-top: 64px; }
+  /* Top rated: rows no longer stretch to the tallest card */
+  .top-grid { grid-auto-rows: auto; gap: 10px; }
+  .top-card { display: grid; grid-template-columns: minmax(0,1fr) auto; grid-template-areas: "head head" "pill pill" "name score" "meter meter" "reason reason" "go go"; column-gap: 12px; padding: 16px; }
+  .top-card__head { grid-area: head; height: 28px; }
+  .top-card__head img { height: 22px; }
+  .top-card__head span { font-size: 20px; }
+  .top-card .pill { grid-area: pill; justify-self: start; margin-top: 10px; }
+  .top-card__name { grid-area: name; margin-top: 12px; align-self: center; }
+  .top-card__score { grid-area: score; margin-top: 12px; }
+  .top-card__score b { font-size: 28px; }
+  .top-card .meter { grid-area: meter; }
+  .top-card__reason { grid-area: reason; margin: 10px 0 0; }
+  .top-card__go { grid-area: go; margin-top: 12px; padding-top: 10px; }
+  /* Region map: cards scroll sideways instead of a long stack */
+  .rmap.is-live .rmap__cards { display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px; margin-inline: -16px; padding-inline: 16px; scrollbar-width: none; }
+  .rmap.is-live .rmap__cards::-webkit-scrollbar { display: none; }
+  .rmap.is-live .rmap__card, .rmap.is-live .rmap__card.is-on, .rmap.is-live .rmap__card--flip.is-on { flex: 0 0 78%; scroll-snap-align: start; }
+  .rmap__logo { width: auto; flex: 1 1 0; min-width: 0; }
+}
+@media (max-width: 560px) {
+  .hero__h1 { font-size: 38px; }
+  .hero__evidence > span { flex-basis: 100%; }
+  .hero__evidence li { font-size: 12px; padding: 3px 8px; }
+  .site-footer__cols { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 24px; }
+}
