@@ -179,8 +179,9 @@ capabilities:
     source: 5
   injection_detection:
     status: 'yes'
-    note: vendor lists injected video streams, no lab letter
-    source: 5
+    note: vendor-stated, virtual cameras and emulators
+    source: 17
+    checked: '2026-11'
   reusable_id:
     status: not_disclosed
     note: nothing found on vendor pages
@@ -359,6 +360,10 @@ sources:
 - title: Regula developer documentation
   publisher: Regula
   url: https://docs.regulaforensics.com/
+  accessed: '2026-11'
+- title: "Deepfake detection"
+  publisher: Regula
+  url: https://regulaforensics.com/solutions/use-cases/deepfake-detection/
   accessed: '2026-11'
 entity:
   wikidata: null

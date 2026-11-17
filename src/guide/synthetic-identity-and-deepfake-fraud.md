@@ -8,7 +8,7 @@ cover_label: "Fake faces, fake people"
 cover_motif: face
 cover_palette: dark
 published: 2026-10-29
-updated: 2026-10-29
+updated: 2026-11-17
 author: andrii-klymenko
 takeaways:
   - "Identity abuse is already large: FinCEN found that about 1.6 million suspicious activity reports filed in 2021, 42% of the total, involved identity, covering about $212 billion."
@@ -99,6 +99,7 @@ sources:
 ---
 
 {%- set pad = allProviders | capabilityStats("liveness_pad") -%}
+{%- set inj = allProviders | capabilityStats("injection_detection") -%}
 {%- set nfc = allProviders | capabilityStats("nfc") %}
 Onboarding fraud used to mean a stolen passport and a photo held up to a webcam. Two newer techniques now sit beside it. A [synthetic identity](/glossary/synthetic-identity-fraud/) is a person who does not exist, assembled from real and invented data. A [deepfake](/glossary/deepfake-identity-fraud/) is AI-made or AI-altered media: a face, a video, a voice or an ID document. Fraudsters often combine them, and they defeat different checks.
 
@@ -128,7 +129,7 @@ A case from Hong Kong shows the pattern. In April 2025, police said a ring had r
 
 Three things follow. A liveness result says little about injected video, because [ISO/IEC 30107-3](https://www.iso.org/standard/79520.html) only covers attacks at the capture device during presentation. A chip read proves more than a photo of a document, but [ICAO Doc 9303 Part 11](https://www.icao.int/Security/FAL/TRIP/PublishingImages/Pages/Publications/Doc%209303%207th%20Part11.pdf) says passive authentication alone "does not prevent exact copying" of the chip content or chip substitution; active or chip authentication closes that gap where the document supports it. And none of the biometric controls tells you whether the data belongs to a real, consistent identity.
 
-How common are these controls among the providers we review? Of the {{ pad.total }} with an ISO/IEC 30107-3 liveness result on record, we opened the lab's letter or certificate for {{ pad.confirmed }}; the other {{ pad.vendor_stated }} are vendor-stated only. {{ nfc.yes }} providers include NFC chip reading in the core product and {{ nfc.add_on }} sell it as an add-on (data checked {{ pad.checked | displayDate }}). Our records do not yet track injection attack detection, so ask for it directly.
+How common are these controls among the providers we review? Of the {{ pad.total }} with an ISO/IEC 30107-3 liveness result on record, we opened the lab's letter or certificate for {{ pad.confirmed }}; the other {{ pad.vendor_stated }} are vendor-stated only. {{ nfc.yes }} providers include NFC chip reading in the core product and {{ nfc.add_on }} sell it as an add-on (data checked {{ pad.checked | displayDate }}). {{ inj.total }} providers on record claim injection attack detection: {{ inj.yes }} in the core product{% if inj.partial %}, {{ inj.add_on }} as an add-on or higher plan and {{ inj.partial }} only in part{% else %} and {{ inj.add_on }} as an add-on or higher plan{% endif %}. {% if inj.independent %}For {{ inj.independent }} of them we opened a lab's injection test letter; the rest are vendor-stated, so ask who tested it.{% else %}All of these claims are vendor-stated: we have not opened a lab's injection test letter for any of them, so ask who tested it and against which test plan.{% endif %}
 
 ## Why synthetic identity fraud is hard to detect
 

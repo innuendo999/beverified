@@ -94,3 +94,10 @@
 
 - ongoing_monitoring: yes, source 13 (AML Monitoring every 24 hours)
 - transaction_monitoring, video_ident, reusable_id, kyb_*: not_disclosed (unchanged; Re-KYC page describes remediation from documents on file, not reusable ID)
+
+## Follow-up 2026-11-17
+
+Injection attack detection (new matrix column, liveness-detection and identity-verification).
+
+- `capabilities.injection_detection` stays not_disclosed: Fourthline's own pages still do not describe it (checked 2026-11). Veridas, which completed its merger with Fourthline on 3 Nov 2026, sells injection attack detection; re-check once the two platforms are integrated.
+- Score: unchanged (rescore adds 0.5 only with `independent: true`). `last_verified` not moved: this was a one-field check.

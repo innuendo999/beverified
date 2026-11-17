@@ -170,3 +170,10 @@ Not disclosed: pep_tiers, audit_trail, risk_scoring, batch_screening (docs show 
 Rescore: 4.6 -> 4.1 (all criteria scored). Workflow sub-score 2 is the weak point: no case management, audit trail, risk scoring or batch screening on public pages.
 
 Score flag: Companies House shows a change of controlling person at the operator (Compligate Ltd) on 12 Nov 2025 (source 14, already in verification_notes). No incident found. Note for the owner: the existing pro "24/7 chat support, with a stated 15-minute SLA" is not matched by the current pricing page, which lists 24/7 priority support for Enterprise only and no chat; review that pro in the next fact pass.
+
+## Follow-up 2026-11-17
+
+Injection attack detection (new matrix column, liveness-detection and identity-verification).
+
+- `capabilities.injection_detection` added as not_disclosed. The liveness check page (read 2026-11) names deepfakes and presentation attacks and says PAD is "engineered to" iBeta Level 2; it does not mention injection attacks, virtual cameras or emulators.
+- Score: unchanged (rescore adds 0.5 only with `independent: true`). `last_verified` not moved: this was a one-field check.

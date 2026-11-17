@@ -80,3 +80,10 @@
 - kyb_documents: yes, source 19 (Proof of Business)
 - kyb_pricing: not added (outside this brief)
 - transaction_monitoring, video_ident, reusable_id, case_management: unchanged
+
+## Follow-up 2026-11-17
+
+Injection attack detection (new matrix column, liveness-detection and identity-verification).
+
+- `capabilities.injection_detection` add_on, vendor-stated (source 1, pricing page re-read 2026-11): "Injection detection" is listed in the Enhanced KYC plan and Enterprise, not in Basic. No injection test letter found.
+- Score: unchanged (rescore adds 0.5 only with `independent: true`). `last_verified` not moved: this was a one-field check.

@@ -239,7 +239,8 @@ capabilities:
     source: 1
   injection_detection:
     status: not_disclosed
-    note: no independent injection test letter found
+    note: named only in passing on the deepfake page
+    checked: '2026-11'
   ongoing_monitoring:
     status: add_on
     note: Ongoing AML Monitoring on the Compliance plan

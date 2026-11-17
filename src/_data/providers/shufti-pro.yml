@@ -259,8 +259,9 @@ capabilities:
     source: 3
   injection_detection:
     status: 'yes'
-    note: vendor lists deepfakes and injected video, no lab letter
-    source: 3
+    note: vendor-stated, virtual camera and stream injection
+    source: 27
+    checked: '2026-11'
   reusable_id:
     status: 'yes'
     note: Fast ID reusable identity
@@ -499,6 +500,10 @@ sources:
 - title: Shufti Launches Know Your Agent to Verify AI Agent Identity, Human Authorization & Permissions in a Single Flow (28 October 2026)
   publisher: Shufti
   url: https://shuftipro.com/press-release/shufti-launches-know-your-agent-to-verify-ai-agents/
+  accessed: '2026-11'
+- title: "Liveness detection (blind spot audit)"
+  publisher: Shufti
+  url: https://shuftipro.com/blind-spot-audit/liveness-detection/
   accessed: '2026-11'
 entity:
   wikidata: null

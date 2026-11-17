@@ -84,3 +84,10 @@ Filled `capabilities` keys from vendor pages opened 2026-10-30. No existing valu
 
 - ongoing_monitoring: add_on, source 6 (AML Screening page: "ongoing monitoring after the initial onboarding process")
 - unchanged not_disclosed: kyb_registry and kyb sub-keys (no business verification product on /products/ or /platform/), case_management (Jumio Watch has "centralized alert management" in the Portal, not a case queue)
+
+## Follow-up 2026-11-17
+
+Injection attack detection (new matrix column, liveness-detection and identity-verification).
+
+- `capabilities.injection_detection` not_disclosed → add_on, vendor-stated (new source: Jumio press release of 18 Jun 2025, read 2026-11). Jumio Liveness Premium is described as a higher tier on top of Jumio Liveness that blocks "injection attacks and deepfakes"; the mechanism is not described and no injection test is cited.
+- Score: unchanged (rescore adds 0.5 only with `independent: true`). `last_verified` not moved: this was a one-field check.

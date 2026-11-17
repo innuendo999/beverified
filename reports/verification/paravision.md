@@ -148,3 +148,10 @@ None. The NIST 1:N rank Paravision cites fell from top 5 (July 2025) to 11th (Oc
 - No incident or ownership change.
 - For the script owner: pricing scores 2 ("third-party contract data") only because the record has `kind: third_party` items for GetApp and Capterra that say there is no price. That is not contract data; pricing should probably be n/d.
 - Paravision is a biometric component vendor (primary_category liveness-detection); the identity rubric's coverage and breadth criteria do not fit it well. Owner review suggested.
+
+## Follow-up 2026-11-17
+
+Injection attack detection (new matrix column, liveness-detection and identity-verification).
+
+- `capabilities.injection_detection` stays not_disclosed. Paravision's January 2025 article names injection attack detection as a complementary tool alongside its own technology, not as a Paravision feature (read 2026-11). Paravision's Ingenium result is a PAD evaluation, not injection.
+- Score: unchanged (rescore adds 0.5 only with `independent: true`). `last_verified` not moved: this was a one-field check.

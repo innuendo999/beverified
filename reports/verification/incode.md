@@ -94,3 +94,10 @@ Filled `capabilities` keys from vendor pages opened 2026-10-30. No existing valu
 - kyb_ubo, kyb_entity_screening, kyb_monitoring: yes, source 27
 - kyb_documents: not_disclosed
 - transaction_monitoring: not_disclosed (unchanged)
+
+## Follow-up 2026-11-17
+
+Injection attack detection (new matrix column, liveness-detection and identity-verification).
+
+- `capabilities.injection_detection` yes, vendor-stated (new source: Incode press release 2 Dec 2025, read 2026-11): Deepsight blocks "injected virtual cameras" and validates camera and device authenticity. The Purdue study cited there tested deepfake detection, not injection. No injection lab letter found.
+- Score: unchanged (rescore adds 0.5 only with `independent: true`). `last_verified` not moved: this was a one-field check.

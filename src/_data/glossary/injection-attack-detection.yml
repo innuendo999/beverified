@@ -1,6 +1,7 @@
 term: Injection attack detection
 also_known_as: [Injection attack prevention, Digital injection attack detection, Biometric data injection attack detection, IAD]
 cluster: identity
+capability: injection_detection
 definition: Injection attack detection spots fake images or video that are fed straight into an identity check instead of coming from a real camera, for example through a virtual camera, a device emulator or a tampered app. It covers the gap that liveness detection leaves, because liveness only judges what is shown to the camera.
 seo_description: "Injection attack detection catches fake video fed into an ID check through virtual cameras or emulators. CEN/TS 18099, NIST rules and vendor questions."
 rankings: [liveness-detection]

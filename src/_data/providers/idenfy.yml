@@ -270,8 +270,9 @@ capabilities:
     source: 23
   injection_detection:
     status: 'yes'
-    note: optional injection and virtual camera check, no lab letter found
+    note: vendor-stated, optional virtual camera check
     source: 23
+    checked: '2026-11'
   reusable_id:
     status: not_disclosed
     note: face authentication for returning users only, no reusable ID product found

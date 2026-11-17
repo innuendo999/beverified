@@ -223,8 +223,9 @@ capabilities:
     source: 1
   injection_detection:
     status: 'yes'
-    note: defenses against deepfakes and injection attacks, no lab letter found
-    source: 1
+    note: vendor-stated, method not described
+    source: 24
+    checked: '2026-11'
   reusable_id:
     status: not_disclosed
     note: onboarding identity reused for passkeys only, no reusable ID product found
@@ -450,6 +451,10 @@ sources:
 - title: Identity Enhanced report (developer documentation)
   publisher: Entrust
   url: https://documentation.identity.entrust.com/guide/identity-enhanced-report
+  accessed: '2026-11'
+- title: "Entrust identity verification"
+  publisher: Entrust
+  url: https://www.entrust.com/identity-verification/
   accessed: '2026-11'
 entity:
   wikidata: null

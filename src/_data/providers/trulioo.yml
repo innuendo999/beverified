@@ -226,7 +226,7 @@ capabilities:
     source: 17
   injection_detection:
     status: 'yes'
-    note: vendor says it detects injection attacks, no lab letter
+    note: vendor-stated, method not described
     source: 17
   reusable_id:
     status: not_disclosed

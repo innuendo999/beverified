@@ -95,6 +95,7 @@ adjacent:
 - liveness-detection
 capability_columns:
 - liveness_pad
+- injection_detection
 - nfc
 - soc2
 - iso_27001

@@ -29,3 +29,10 @@ New record `src/_data/providers/socure.yml`, built from public sources under doc
 ## Ranking cards
 
 Socure is not in `src/_data/rankings.yml`. At 3.8 it would sit below the current Identity Verification top 10 (lowest 4.5). Adding it to any ranking, and to the KYC Pricing Index (`pricing.index`), is the owner's decision.
+
+## Follow-up 2026-11-17
+
+Injection attack detection (new matrix column, liveness-detection and identity-verification).
+
+- `capabilities.injection_detection` yes, vendor-stated (source 8, DocV product page re-read 2026-11): "Detect and prevent presentation and API-layer injection attacks", two pending patents on injection attack detection. No virtual camera detail and no independent injection test.
+- Score: unchanged (rescore adds 0.5 only with `independent: true`). `last_verified` not moved: this was a one-field check.

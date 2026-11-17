@@ -105,3 +105,10 @@ Change:
 - Ranking cards: no change needed. No Persona card, pro, FAQ or category text mentions ACCS. Score unchanged (the v3.1 rubric draft does not reference the ACCS certificate; owner to confirm if compliance scoring should reflect it).
 
 To do: re-add as `confirmed` if ACCS posts a renewal (registry entry or certificate with new dates).
+
+## Follow-up 2026-11-17
+
+Injection attack detection (new matrix column, liveness-detection and identity-verification).
+
+- `capabilities.injection_detection` yes, vendor-stated (source 27, selfie page re-read 2026-11): "protection against sophisticated injection attacks", flags emulators and rooted devices, and claims "alignment with EU standards for injection attack detection" (CEN/TS 18099). Alignment is not a test result; no lab letter found.
+- Score: unchanged (rescore adds 0.5 only with `independent: true`). `last_verified` not moved: this was a one-field check.

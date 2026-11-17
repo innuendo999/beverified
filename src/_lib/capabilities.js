@@ -4,7 +4,7 @@ export const CAP_LABELS = {
   sanctions_pep: "Sanctions & PEP", adverse_media: "Adverse media", transaction_monitoring: "Transaction monitoring",
   case_management: "Case management", identity_verification: "Identity verification", deployment: "Deployment",
   published_pricing: "Published pricing",
-  liveness_pad: "Liveness test (ISO 30107-3)", nfc: "NFC chip reading", video_ident: "Video ident (live agent)",
+  liveness_pad: "Liveness test (ISO 30107-3)", injection_detection: "Injection attack detection", nfc: "NFC chip reading", video_ident: "Video ident (live agent)",
   soc2: "SOC 2", iso_27001: "ISO 27001", trust_framework: "Government trust framework",
   age_document: "ID document", age_facial_estimation: "Facial age estimation", age_email_estimation: "Email age estimation",
   age_mobile_operator: "Mobile operator", age_credit_card: "Credit card", age_open_banking: "Open banking",
@@ -17,8 +17,9 @@ export const CAP_LABELS = {
   kya_step_up: "Re-verifies the person at risky actions", kya_limits_expiry: "Spend or scope limits and expiry",
   kya_revocation: "Revocation", kya_audit_log: "Agent action log", kya_protocols: "Agent protocols named",
 };
-// Keys whose note is always shown (coverage counts, price points), not only for add-on or partial cells.
-export const NOTE_KEYS = ["kyb_registry", "kyb_pricing", "kya_protocols"];
+// Keys whose note is always shown (coverage counts, price points, evidence level), not only for add-on or partial cells.
+// injection_detection notes start with the evidence level: "independently tested" or "vendor-stated".
+export const NOTE_KEYS = ["kyb_registry", "kyb_pricing", "kya_protocols", "injection_detection"];
 export const CAP_STATUS = {
   yes: ["full", "Yes"], add_on: ["half", "Add-on"], no: ["empty", "No"], not_disclosed: ["unknown", "Not disclosed"],
   partial: ["half", "Partial"], cloud: ["", "Cloud"], on_prem: ["", "On-premises"], cloud_and_on_prem: ["", "Cloud and on-premises"],

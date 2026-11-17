@@ -72,3 +72,10 @@ Fact drift: the Document Reader SDK page now says 17,000+ templates and document
 
 - case_management: yes, source 15 (IDV Platform 3.1 release notes: Session data review with manual status change and audit trail)
 - unchanged not_disclosed: ongoing_monitoring (only onboarding AML/PEP screening via connectors), transaction_monitoring, kyb_registry and sub-keys, video_ident, reusable_id (Profiles exist but are not described as reuse for returning users)
+
+## Follow-up 2026-11-17
+
+Injection attack detection (new matrix column, liveness-detection and identity-verification).
+
+- `capabilities.injection_detection` yes, vendor-stated (new source: Regula deepfake detection page, read 2026-11): it "verifies that media originates from a physical device, not a virtual camera, emulator, or injected stream". The only independent test named is iBeta ISO/IEC 30107-3. The Face SDK page (source 5) could not be re-opened this month.
+- Score: unchanged (rescore adds 0.5 only with `independent: true`). `last_verified` not moved: this was a one-field check.

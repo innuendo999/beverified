@@ -207,7 +207,8 @@ capabilities:
     source: 6
   injection_detection:
     status: not_disclosed
-    note: liveness and deepfake pages do not mention injection attacks
+    note: named as a separate complementary tool
+    checked: '2026-11'
   reusable_id:
     status: not_disclosed
     note: biometric SDK vendor, nothing found

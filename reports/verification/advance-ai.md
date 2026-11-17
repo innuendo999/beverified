@@ -80,3 +80,10 @@ AML screening documented in AdvanGuard docs (no data provider named; periodic re
 - kyb_monitoring: not_disclosed
 - reusable_id: not_disclosed (unchanged)
 - transaction_monitoring, video_ident, kyb_registry: unchanged
+
+## Follow-up 2026-11-17
+
+Injection attack detection (new matrix column, liveness-detection and identity-verification).
+
+- `capabilities.injection_detection` yes (new source: BixeLab confirmation letter register, read 2026-11). BixeLab lists a letter dated 29 May 2026 for the Advance.AI Liveness Detection SDK (iOS v8.5.7, Android v4.1.5), testing type Injection Attack Detection, tested to CEN/TS 18099. ADVANCE.AI's blog (16 Jun 2026) reports zero bypasses in 600 injection attempts. The letter PDF itself could not be opened in this run, so the note stays vendor-stated. Owner decision: open the letter (LoC_26_BXL061_Injection on bixelab.com); if it confirms the result, change the note to independently tested and decide on `independent: true` (+0.5 Fraud defense).
+- Score: unchanged (rescore adds 0.5 only with `independent: true`). `last_verified` not moved: this was a one-field check.

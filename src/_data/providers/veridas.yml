@@ -174,8 +174,9 @@ capabilities:
     source: 8
   injection_detection:
     status: 'yes'
-    note: vendor stated; CEN/TS 18099 audit not finished
-    source: 25
+    note: vendor-stated, CLR Labs letter not published
+    source: 29
+    checked: '2026-11'
   reusable_id:
     status: 'yes'
     note: Nexus Wallet stores verified credentials
@@ -418,6 +419,10 @@ sources:
 - title: 'Fourthline and Veridas complete merger (3 November 2026)'
   publisher: Fourthline
   url: https://www.fourthline.com/news/fourthline-and-veridas-complete-merger
+  accessed: '2026-11'
+- title: "Veridas achieves CEN/TS 18099 High Level certification (10 Nov 2026)"
+  publisher: Veridas via EIN Presswire
+  url: https://www.einpresswire.com/article/955768944/veridas-achieves-cen-ts-18099-high-level-certification-the-only-international-standard-against-injection-attacks
   accessed: '2026-11'
 entity:
   wikidata: null

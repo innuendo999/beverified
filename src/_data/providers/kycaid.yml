@@ -245,6 +245,10 @@ capabilities:
     status: 'yes'
     note: Liveness and face match sold as a module (EUR 0.25 a check on the pricing page)
     source: 1
+  injection_detection:
+    status: not_disclosed
+    note: liveness page covers presentation attacks only
+    checked: '2026-11'
   sanctions_pep:
     status: 'yes'
     note: Database screening check, all plans

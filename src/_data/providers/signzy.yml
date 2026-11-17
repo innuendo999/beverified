@@ -194,7 +194,7 @@ capabilities:
     source: 18
   injection_detection:
     status: partial
-    note: blog says stream integrity checks run first, no lab letter
+    note: vendor-stated, stream integrity checks on the blog
     source: 22
   reusable_id:
     status: not_disclosed

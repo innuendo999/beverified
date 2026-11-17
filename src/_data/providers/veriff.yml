@@ -331,8 +331,9 @@ capabilities:
     source: 6
   injection_detection:
     status: 'yes'
-    note: injected video streams named; no injection lab test found
+    note: vendor-stated, injected video streams and emulators
     source: 10
+    checked: '2026-11'
   reusable_id:
     status: not_disclosed
     note: no reusable ID product found

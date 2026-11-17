@@ -195,8 +195,9 @@ capabilities:
     source: 8
   injection_detection:
     status: 'yes'
-    note: vendor says DocV detects injection and deepfakes, no independent test found
-    source: 9
+    note: vendor-stated, API-layer injection named
+    source: 8
+    checked: '2026-11'
   nfc:
     status: not_disclosed
     note: no chip reading found on DocV pages

@@ -277,9 +277,10 @@ capabilities:
     note: photo liveness from Starter
     source: 1
   injection_detection:
-    status: partial
-    note: 2021 release names injected video
-    source: 15
+    status: 'yes'
+    note: vendor-stated, injected videos named
+    source: 18
+    checked: '2026-11'
   reusable_id:
     status: not_disclosed
     note: nothing found on vendor pages
@@ -451,6 +452,10 @@ sources:
 - title: Company Search & Insights (developer documentation)
   publisher: ComplyCube
   url: https://docs.complycube.com/documentation/product-guides/kyc-automation-services/company-search.md
+  accessed: '2026-11'
+- title: "Liveness detection"
+  publisher: ComplyCube
+  url: https://www.complycube.com/en/solutions/due-diligence-compliance/know-your-customer/liveness-detection/
   accessed: '2026-11'
 entity:
   wikidata: null

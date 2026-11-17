@@ -217,8 +217,9 @@ capabilities:
     source: 11
   injection_detection:
     status: 'yes'
-    note: vendor says it flags injection attacks
-    source: 11
+    note: vendor-stated, BixeLab lists a CEN/TS 18099 letter
+    source: 20
+    checked: '2026-11'
   reusable_id:
     status: not_disclosed
     note: nothing found on vendor pages
@@ -371,6 +372,10 @@ sources:
 - title: About KYB and product comparison (AdvanGuard documentation)
   publisher: ADVANCE.AI
   url: https://advanguard-docs.advance.ai/docs/about-business-verification-kyb
+  accessed: '2026-11'
+- title: "Biometric confirmation letters (Advance.AI, Injection Attack Detection, CEN/TS 18099, 29 May 2026)"
+  publisher: BixeLab
+  url: https://bixelab.com/confirmation-letter/
   accessed: '2026-11'
 entity:
   wikidata: null

@@ -200,8 +200,10 @@ capabilities:
     note: Premium Liveness Detection product
     source: 18
   injection_detection:
-    status: not_disclosed
-    note: no independent injection test letter found
+    status: add_on
+    note: vendor-stated, Liveness Premium tier
+    source: 22
+    checked: '2026-11'
   reusable_id:
     status: 'yes'
     note: selfie.DONE reusable identity, worldwide since Sep 2026
@@ -413,6 +415,10 @@ sources:
 - title: Age verification
   publisher: Jumio
   url: https://www.jumio.com/use-case/age-verification/
+  accessed: '2026-11'
+- title: "Jumio launches premium liveness detection solution (18 Jun 2025)"
+  publisher: Jumio
+  url: https://www.jumio.com/about/press-releases/jumio-launches-premium-liveness-detection-solution/
   accessed: '2026-11'
 entity:
   wikidata: null

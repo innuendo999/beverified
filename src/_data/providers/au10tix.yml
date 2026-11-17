@@ -242,8 +242,9 @@ capabilities:
     source: 13
   injection_detection:
     status: add_on
-    note: Enhanced KYC plan, vendor-stated
+    note: vendor-stated, Enhanced KYC plan
     source: 1
+    checked: '2026-11'
   reusable_id:
     status: add_on
     note: Reusable Digital ID, Enterprise plan
