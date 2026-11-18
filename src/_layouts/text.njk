@@ -3,7 +3,7 @@ layout: v3.njk
 ---
 {#- Generic text page (Methodology, For providers, About, legal). Design: design/Text Page V3 (Desktop).dc.html -#}
 {%- set toc = content | toc -%}
-<div class="container">
+<main id="main" class="container">
   <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li class="sep" aria-hidden="true">›</li><li aria-current="page">{{ h1 }}</li></ol></nav>
   <header class="text-hero">
     <h1 class="h-display">{{ h1 }}</h1>
@@ -16,6 +16,6 @@ layout: v3.njk
       {%- for t in toc %}<a href="#{{ t.id }}">{{ t.title | safe }}</a>{% endfor %}
     </nav>
     {%- endif %}
-    <main id="main" class="text-body legacy-prose">{{ content | safe }}</main>
+    <div class="text-body legacy-prose">{{ content | safe }}</div>
   </div>
-</div>
+</main>

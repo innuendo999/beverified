@@ -1,5 +1,5 @@
 {#- Glossary hub. Terms: src/_data/glossary/*.yml. Every term is a crawlable link (no script needed). -#}
-<div class="container">
+<main id="main" class="container">
   <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li class="sep" aria-hidden="true">›</li><li aria-current="page">Glossary</li></ol></nav>
   <header class="text-hero gl-hub__hero">
     <h1 class="h-display">KYC, AML and identity verification glossary</h1>
@@ -8,7 +8,7 @@
   <nav class="gl-hub__jump" aria-label="Glossary sections">
     {%- for g in groups %}<a class="pill-link" href="#{{ g.key }}">{{ g.label }} <small>{{ g.terms.length }}</small></a>{% endfor %}
   </nav>
-  <main id="main" class="gl-hub">
+  <div class="gl-hub">
     {%- for g in groups %}
     <section class="gl-hub__group" id="{{ g.key }}" aria-labelledby="{{ g.key }}-h">
       <h2 id="{{ g.key }}-h" class="h-section">{{ g.label }}</h2>
@@ -23,5 +23,5 @@
       <h2 id="az-h" class="h-section">A to Z</h2>
       <ul class="gl-hub__az">{% for x in glossaryTerms %}<li><a href="{{ x.url }}">{{ x.term }}{% if x.abbr %} ({{ x.abbr }}){% endif %}</a></li>{% endfor %}</ul>
     </section>
-  </main>
-</div>
+  </div>
+</main>
