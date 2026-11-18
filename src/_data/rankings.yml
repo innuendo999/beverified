@@ -1751,6 +1751,23 @@ travel-rule:
     legacy_price_shown: On request
     legacy_rating_shown: null
     segments: []
+  - slug: ledgerbrain
+    name: LedgerBrain
+    award: null   # owner to choose; proposed "Best for Screening-First Teams"
+    tagline: Wallet and transaction screening platform from South Africa that adds IVMS-101 Travel Rule messaging with counterparty checks on its Enterprise plan.
+    coverage: Global (vendor-stated); company in South Africa
+    size: Small to mid-sized VASPs and banks (vendor-stated)
+    pros:
+    - Travel Rule messages in the same workspace as wallet screening, counterparty due diligence and case management
+    - Release review with sanctions, PEP and wallet risk checks before IVMS-101 data is sent
+    - Screening plans priced on the site from $115 a month, no sales call to start
+    cons:
+    - No Travel Rule protocol or network named, and no self-hosted wallet proof found
+    - Travel Rule only in the Enterprise plan, which has no published price
+    - ISO/IEC 27001 shown only as a badge; no Travel Rule API docs or named customer
+    legacy_price_shown: Enterprise plan, on request
+    legacy_rating_shown: null
+    segments: []
   - slug: block-infrastructure
     name: Block Infrastructure
     award: null   # owner to choose; proposed "Best for Pre-Settlement Screening"

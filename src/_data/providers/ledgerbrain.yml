@@ -1,0 +1,356 @@
+slug: ledgerbrain
+name: LedgerBrain
+alternate_names:
+- Silver Sixpence (Pty) Ltd
+- Sixpence
+status: published
+seo:
+  title: 'LedgerBrain Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'LedgerBrain review: a South African wallet screening and KYT platform from Sixpence that adds IVMS-101 Travel Rule messaging on its Enterprise plan. Features, pricing, pros & cons, alternatives.'
+  h1: 'LedgerBrain Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/ledgerbrain.png
+  background: '#0C1C2C'
+tagline: Wallet and transaction screening platform from South Africa that adds IVMS-101 Travel Rule messaging with counterparty checks on its Enterprise plan
+score: 3.1
+grade: Good
+primary_category: travel-rule
+categories:
+- travel-rule
+link:
+  url: https://ledgerbrain.io/
+  type: none
+last_verified: '2026-11-18'
+updated: '2026-11-18'   # last content edit; last_verified = last fact re-check
+verdict: "LedgerBrain fits a VASP that mainly wants wallet and transaction screening and would like Travel Rule messages handled in the same workspace, with counterparty screening and a release review before data is sent. The screening plans have published prices from $115 a month. The Travel Rule side is thin on evidence: it sits only in the custom-priced Enterprise plan, the site names no Travel Rule protocol or network, we found no self-hosted wallet proof, and the ISO/IEC 27001 badge comes with no certificate."
+what_is:
+- 'LedgerBrain is a blockchain intelligence platform for compliance teams at VASPs and banks. Its main jobs are screening wallets and transactions before funds move (KYT), due diligence on counterparties and entities (KYE), tracing flows of funds, case management and custom risk policies with score bands. The Travel Rule module prepares and exchanges IVMS-101 originator and beneficiary data with counterparties. In the product demo, each transfer sits in an inbox with Sent, Awaiting response, Completed, Rejected and Expired views, a counterparty directory, due diligence records and a release review that checks the institution, sanctions and PEP status and the destination wallet before a message is approved. LedgerBrain says it is live in a morning with no sales call, but Travel Rule is listed only in the Enterprise plan.'
+- 'The site names no Travel Rule protocol or network. One demo screen labels a counterparty "Verified Envoy node". Envoy is the name of TRISA''s open-source Travel Rule node, but LedgerBrain does not say it uses TRISA, and we found no LedgerBrain or Sixpence entry in TRISA material. The "Supported networks" section lists blockchains (Bitcoin, Ethereum, Tron, Solana and others), not Travel Rule networks.'
+- 'LedgerBrain is made by Sixpence, the trading name of Silver Sixpence (Pty) Ltd, a blockchain data company founded in Pretoria, South Africa, in 2020. Carel de Jager is founder and CEO. Sixpence''s LedgerCore data engine also runs its LedgerWatch investigations product and the Coinfig tax tool. Sixpence says audit firm Mazars used its Merkle tree tool in 2022 proof-of-reserves reports and that Coinbase picked it in 2023 for a proof-of-reserves grant. LedgerBrain also sells pay-per-report KYT, KYE and Know Your Agent screening to AI agents over the x402 payment protocol, at $0.10 a report in USDC. No Travel Rule customer is named.'
+features:
+- IVMS-101 Travel Rule messages with a transfer inbox (sent, awaiting response, completed, rejected, expired), a counterparty directory and due diligence records, on the Enterprise plan.
+- Release review before a message is sent, with institution screening, sanctions and PEP checks and a destination wallet risk check, plus an audit history and a PDF audit record.
+- Wallet and transaction risk scores with direct and indirect exposure, custom score bands and exposure rules, and continuous monitoring with risk change alerts every 12 hours, 24 hours or 7 days.
+- Know Your Entity due diligence on exchanges and VASPs, flow of funds tracing with sanctions exposure, and case management.
+- Coverage of 14 blockchains, including Bitcoin, Ethereum, Tron, Solana, Polygon, BNB Chain, Base, Arbitrum and Optimism.
+- Public OpenAPI spec for pay-per-report KYT, KYE and Know Your Agent reports over x402 (USDC on Base, no API key), plus an MCP server for AI agents.
+pricing:
+  summary: LedgerBrain publishes three monthly screening plans, Basic at $115, Standard at $230 and Compliance at $460, with 500, 1,250 and 3,000 credits a month and 20% off on annual billing. Travel Rule is listed only in the Enterprise plan, which is priced on request. Pay-per-report API calls over x402 cost $0.10 each in USDC.
+  plans:
+  - tier: Basic
+    price: $115 / month
+    note: 500 credits a month; multi-chain support, transaction, entity and AML risk scoring, tracing, reports, case management, address monitoring and API access
+    extra: Email support; Travel Rule not included
+  - tier: Standard
+    price: $230 / month
+    note: 1,250 credits a month; everything in Basic plus extended limits and 180-day data retention
+    extra: Priority support; Travel Rule not included
+  - tier: Compliance
+    price: $460 / month
+    note: 3,000 credits a month; everything in Standard plus the highest limits, 365-day retention and custom integrations
+    extra: Dedicated support; Travel Rule not included
+  - tier: Enterprise
+    price: Custom
+    note: Everything in Compliance plus Travel Rule, fund tracing, custom policies, case management, volume pricing and custom integration planning
+    extra: Contact sales
+  legacy_verified_note: null
+  verified: '2026-11'
+  index_exclude: Travel Rule is sold only in the custom-priced Enterprise plan, and the published plans are screening credits that do not say how many credits a report uses
+  items:
+  - label: Basic
+    value: $115 / month, 500 credits a month
+    kind: official
+    source: 1
+    verified: '2026-11'
+  - label: Standard
+    value: $230 / month, 1,250 credits a month
+    kind: official
+    source: 1
+    verified: '2026-11'
+  - label: Compliance
+    value: $460 / month, 3,000 credits a month
+    kind: official
+    source: 1
+    verified: '2026-11'
+  - label: Annual billing
+    value: 20% less than monthly billing
+    kind: official
+    source: 1
+    verified: '2026-11'
+  - label: Travel Rule
+    value: Enterprise plan only; custom pricing, contact sales
+    kind: official
+    source: 1
+    verified: '2026-11'
+  - label: x402 pay-per-report
+    value: $0.10 per KYT, KYE or Know Your Agent report, in USDC on Base
+    kind: official
+    source: 5
+    verified: '2026-11'
+facts:
+- label: From
+  value: $115 / month for screening; Travel Rule only on the custom-priced Enterprise plan
+  source: 1
+  evidence: vendor
+- label: Legal entity
+  value: Silver Sixpence (Pty) Ltd, trading as Sixpence (South Africa); registration number not published
+  source: 7
+  evidence: vendor
+- label: Headquarters
+  value: Pretoria, South Africa, per Sixpence; no street address published
+  source: 7
+  evidence: vendor
+- label: Founded
+  value: 2020 as Silver Sixpence, per Sixpence; LedgerBrain launched in 2026
+  source: 7
+  evidence: vendor
+- label: Leadership
+  value: Carel de Jager (Founder and CEO)
+  source: 7
+  evidence: vendor
+- label: Funding
+  value: Not publicly disclosed
+- label: Deployment
+  value: Hosted web workspace and API, per LedgerBrain; Sixpence says its LedgerCore platform can also run on premises or in a private cloud
+  source: 10
+  evidence: vendor
+- label: Self-hosted option
+  value: None described for LedgerBrain's Travel Rule module
+  source: 1
+  evidence: vendor
+- label: Network
+  value: No Travel Rule protocol or network named (TRP, TRISA, TRUST, GTR, CODE, Sygna); one demo screen labels a counterparty "Verified Envoy node"
+  source: 3
+  evidence: vendor
+- label: Self-hosted wallet checks
+  value: None found; the release review screens the destination wallet's risk only
+  source: 2
+  evidence: vendor
+- label: API and docs
+  value: Public OpenAPI spec for x402 KYT, KYE and Know Your Agent reports; no public Travel Rule API docs
+  source: 4
+  evidence: vendor
+- label: Sandbox
+  value: Demo workspace preview on the site; no Travel Rule sandbox described
+  source: 3
+  evidence: vendor
+- label: Certifications
+  value: ISO/IEC 27001 badge on the site, with no certificate, certification body or scope published; no SOC 2 claim
+  source: 1
+  evidence: vendor
+pros:
+- Travel Rule messages sit in the same workspace as wallet screening, counterparty due diligence, fund tracing and case management
+- A release review checks the counterparty, sanctions and PEP status and the destination wallet before IVMS-101 data is sent, and keeps an audit record
+- Screening plans are priced on the site from $115 a month, with no sales call needed to start
+cons:
+- No Travel Rule protocol or network is named, and we found no self-hosted wallet proof
+- Travel Rule is only in the Enterprise plan, which has no published price
+- ISO/IEC 27001 shown only as a badge, no Travel Rule API docs, and no Travel Rule customer named
+alternatives:
+- slug: ospree
+  name: Ospree
+  best_for: Built-In Wallet Screening
+- slug: blockpass
+  name: Blockpass
+  best_for: KYC and Travel Rule in One
+- slug: cryptoswift
+  name: CryptoSwift
+  best_for: EU CASPs
+choose_instead:
+- slug: ospree
+  need: Screening and Travel Rule with named routes
+  text: you want wallet screening and Travel Rule messaging from one hosted API with routes that are documented. Ospree screens wallets with TRM Labs, Crystal and Global Ledger data, has live routes to TRP, TRISA, the CryptoSwift network and email, and publishes developer docs with a sandbox.
+- slug: blockpass
+  need: Envoy on TRISA and TRP
+  text: you want a hosted Travel Rule service that names its protocols. Blockpass Envoy sends over TRISA and TRP with an email fallback, next to KYC, KYB and wallet screening with per-check prices.
+- slug: cryptoswift
+  need: A published Travel Rule price
+  text: you need to see a Travel Rule price before a sales call. CryptoSwift publishes plans from €600 a month on annual billing with a free sandbox, and verifies self-hosted wallets by signature, micro-transfer, photo or self-declaration.
+user_reviews:
+  legacy_note: null
+  praise: []
+  criticize: []
+  by_profile:
+  - Small and mid-sized VASPs that want wallet and transaction screening first, with Travel Rule messages in the same workspace, are LedgerBrain's clearest fit.
+  - VASPs whose counterparties sit on TRUST, TRP, TRISA, GTR or CODE should ask which of them LedgerBrain can reach, since the site names none.
+  - Buyers who must verify self-hosted wallets should ask how LedgerBrain handles them, since we found no ownership proof.
+faq:
+- q: How much does LedgerBrain cost?
+  a: LedgerBrain publishes three screening plans, Basic at $115 a month, Standard at $230 and Compliance at $460, with 500, 1,250 and 3,000 credits a month and 20% off on annual billing. Travel Rule is listed only in the Enterprise plan, which is priced on request. Pay-per-report API calls over x402 cost $0.10 each in USDC.
+- q: Which Travel Rule protocols does LedgerBrain support?
+  a: LedgerBrain says it exchanges IVMS-101 Travel Rule messages with counterparties, but its site names no protocol or network, such as TRP, TRISA, TRUST, GTR, CODE or Sygna. One demo screen labels a counterparty "Verified Envoy node", and Envoy is TRISA's open-source Travel Rule node, but LedgerBrain does not say it uses TRISA. Ask for the list of networks it can reach before you sign.
+- q: Does LedgerBrain verify self-hosted wallets?
+  a: We found no method for proving that a customer controls a self-hosted wallet, such as a signed message, a Satoshi test, AOPP or a screenshot. The release review before a Travel Rule message screens the destination wallet's risk, which is a different check.
+- q: Is LedgerBrain ISO 27001 certified?
+  a: The site shows an ISO/IEC 27001 badge, but it does not publish the certificate, the certification body or the scope, and we found no register entry, so we treat it as vendor-stated. We found no SOC 2 claim.
+- q: Who makes LedgerBrain?
+  a: LedgerBrain is made by Sixpence, the trading name of Silver Sixpence (Pty) Ltd, a blockchain data company founded in Pretoria, South Africa, in 2020 and led by founder and CEO Carel de Jager. Sixpence also runs the LedgerCore data engine, the LedgerWatch investigations product and the Coinfig tax tool.
+- q: Does LedgerBrain also do KYT and wallet screening?
+  a: Yes, that is its main product. It scores wallets and transactions for direct and indirect exposure, traces flows of funds, monitors addresses every 12 hours, 24 hours or 7 days, and runs due diligence on counterparties and entities. AI agents can buy single KYT, KYE or Know Your Agent reports over x402 for $0.10 each.
+- q: What is the best alternative to LedgerBrain?
+  a: Ospree if you want wallet screening and Travel Rule from one hosted API with documented TRP and TRISA routes. Blockpass if you want a hosted Envoy service on TRISA and TRP next to KYC. CryptoSwift if you need a published Travel Rule price and self-hosted wallet checks.
+segments: []
+capabilities:
+  deployment:
+    status: cloud
+    note: hosted workspace and API
+    source: 1
+  published_pricing:
+    status: partial
+    note: screening plans published; Travel Rule only in the quoted Enterprise plan
+    source: 1
+  transaction_monitoring:
+    status: 'yes'
+    note: wallet and transaction risk scoring with continuous monitoring
+    source: 1
+  sanctions_pep:
+    status: 'yes'
+    note: sanctions and PEP checks in the Travel Rule release review
+    source: 2
+  case_management:
+    status: 'yes'
+    note: case management and compliance reports
+    source: 1
+  identity_verification:
+    status: not_disclosed
+    note: no customer KYC product found
+    source: 1
+  audit_trail:
+    status: 'yes'
+    note: every decision recorded, PDF audit record
+    source: 2
+  risk_scoring:
+    status: 'yes'
+    note: custom score bands and exposure rules
+    source: 1
+  checked: '2026-11'
+certifications:
+- name: ISO/IEC 27001
+  what: Information security; badge on the site, no certificate, certification body or scope published
+  status: vendor_stated
+  source: 1
+user_ratings: []
+use_case_verdicts: []
+score_breakdown:
+- criterion: Compliance & certifications
+  weight: 25
+  score: 3.4
+  note: The site shows an ISO/IEC 27001 badge, but no certificate, certification body or scope is published and we found no register entry. There is no SOC 2 claim. Terms, privacy, DPA and subprocessor pages exist, and the company behind it, Silver Sixpence (Pty) Ltd, is named only in Sixpence's own material. LedgerBrain claims no licence of its own.
+  evidence: vendor
+- criterion: Coverage
+  weight: 20
+  score: 2.6
+  note: IVMS-101 messages, a counterparty directory and due diligence, and screening on 14 blockchains, but the site names no Travel Rule protocol or network, no fallback for VASPs without a Travel Rule tool, and no self-hosted wallet proof. A demo label points to TRISA's Envoy node without a statement that LedgerBrain uses TRISA.
+  evidence: vendor
+- criterion: Pricing transparency
+  weight: 20
+  score: 3.3
+  note: Three screening plans and the x402 report price are published, but Travel Rule is only in the Enterprise plan, which is quoted, and the plans do not say how many credits a report uses.
+  evidence: vendor
+- criterion: Integration & API depth
+  weight: 15
+  score: 3.2
+  note: A public OpenAPI spec, an MCP server and account-free x402 calls cover screening and Know Your Agent reports, and the screening plans start without a sales call. There are no public Travel Rule API docs, SDK or Travel Rule sandbox.
+  evidence: vendor
+- criterion: Support responsiveness
+  weight: 10
+  score: 3.0
+  note: Email support on Basic, priority support on Standard and dedicated support on Compliance and Enterprise, plus a support email address, but no hours, response times or SLA are published.
+  evidence: vendor
+- criterion: Track record
+  weight: 10
+  score: 3.0
+  note: Sixpence has built blockchain data tools since 2020 and names Mazars and a Coinbase proof-of-reserves grant, but LedgerBrain launched in 2026, has no named Travel Rule customer and no user reviews, and no funding is disclosed. We found no regulatory actions or breach disclosures.
+  evidence: vendor
+hands_on: null
+sources:
+- title: LedgerBrain homepage, including pricing and FAQ (screenshot supplied by the editor)
+  publisher: LedgerBrain
+  url: https://ledgerbrain.io/
+  accessed: '2026-11'
+- title: Compliance operations page, KYT, Travel Rule and entity due diligence (screenshot supplied by the editor)
+  publisher: LedgerBrain
+  url: https://ledgerbrain.io/compliance
+  accessed: '2026-11'
+- title: Travel Rule workspace, demo preview (screenshot supplied by the editor)
+  publisher: LedgerBrain
+  url: https://ledgerbrain.io/travel-rule
+  accessed: '2026-11'
+- title: LedgerCore / LedgerBrain x402 API, OpenAPI spec
+  publisher: LedgerBrain
+  url: https://api.ledgercore.io/openapi.json
+  accessed: '2026-11'
+- title: x402 catalog
+  publisher: LedgerBrain
+  url: https://api.ledgercore.io/api/v1/x402/catalog
+  accessed: '2026-11'
+- title: Partner Program
+  publisher: LedgerBrain
+  url: https://ledgerbrain.io/partners
+  accessed: '2026-11'
+- title: Press kit, Carel de Jager
+  publisher: Carel de Jager
+  url: https://careldejager.com/press-kit/
+  accessed: '2026-11'
+- title: Carel de Jager biography (September 2026)
+  publisher: Carel de Jager
+  url: https://careldejager.com/press/Carel_de_Jager_Bio_2026-09.pdf
+  accessed: '2026-11'
+- title: Sixpence homepage
+  publisher: Sixpence
+  url: https://sixpence.io/
+  accessed: '2026-11'
+- title: LedgerCore homepage
+  publisher: Sixpence
+  url: https://ledgercore.io/
+  accessed: '2026-11'
+- title: LedgerBrain
+  publisher: Product Hunt
+  url: https://www.producthunt.com/products/ledgerbrain
+  accessed: '2026-11'
+  type: listing
+- title: LedgerBrain x402 KYA KYT KYE Compliance API
+  publisher: x402 List
+  url: https://x402-list.com/services/ledgerbrain-x402-kya-kyt-kye-compliance-api
+  accessed: '2026-11'
+  type: listing
+- title: trisacrypto/envoy
+  publisher: TRISA (GitHub)
+  url: https://github.com/trisacrypto/envoy
+  accessed: '2026-11'
+  type: counterparty
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://ledgerbrain.io/
+  - https://www.producthunt.com/products/ledgerbrain
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- 'Record decisions: link.type none (suggested by 21 Analytics, a partner ranked in Travel Rule; no commercial relationship with LedgerBrain or Sixpence recorded, and the suggestion has no influence on the score). Categories travel-rule only; Know Your Agent is a suggestion for the owner. Grade "Good" as on the other Travel Rule records (v3.0). Not in src/_data/providers under another slug and not in tracked.yml. Logo: brain mark (#007fff) from the provider site, https://ledgerbrain.io/lb-logo.svg, supplied by the owner as SVG on 18 Nov 2026 (our fetcher could not load that URL), rendered to a 512 px PNG on the dark navy (#0C1C2C) of the dark version the owner sent the same day; no wordmark.'
+- 'Access: ledgerbrain.io pages render by script. WebFetch saw only titles and metadata (homepage "LedgerBrain, Digital-Asset Risk Decisions"; /compliance "KYT, Travel Rule & Entity Due Diligence"; /travel-rule "Sign in"; /partners metadata names Silver Sixpence (Pty) Ltd as publisher); Chromium was refused by the session proxy (403 on ledgerbrain.io). Page content comes from three full-page screenshots the owner supplied in chat on 18 Nov 2026: (a) a landing page "Make an explainable decision before value moves" with three cards (screen deposits and withdrawals, know your counterparty, exchange Travel Rule messages), footer with an ISO 27001 badge; source 2 assumes this is /compliance, the screenshot shows no URL; (b) the homepage with features, supported networks, pricing and FAQ; (c) the Travel Rule demo workspace at ledgerbrain.io/travel-rule ("Demo preview").'
+- 'Travel Rule evidence: hero copy "exchange IVMS-101 Travel Rule messages"; card "Prepare and manage IVMS-101 Travel Rule information with counterparties"; homepage card "Travel Rule compliance: connect counterparties" and "Screen counterparties. Control message release. Keep the evidence."; demo release review (Revision 3) with institution screening, sanctions and PEP, destination wallet, "Release approved", "IVMS-101", "Every decision recorded", "Audit record PDF", counterparty "Northgate Ramp, Verified Envoy node". Workspace menu: Inbox, Needs review, Sent, Awaiting response, Completed, Rejected, Expired, Directory, Due diligence, Release reviews; transfers marked "Hosted/direct". FAQ item "How does Travel Rule compliance work on the platform?" was collapsed in the screenshot: its answer was not read and may name protocols.'
+- 'Not found: any named Travel Rule protocol or network, an email fallback, a self-hosted wallet ownership proof, Travel Rule API endpoints (the OpenAPI spec, version 1.0.0, lists KYT, KYE, KYA job, KYA traces and metals price only; contact "LedgerLink Team", info@ledgerlink.io), a TRISA directory entry for LedgerBrain or Sixpence (web search only; the TRISA GDS was not queried). "Verified Envoy node" is read as a hint, not a claim.'
+- 'Pricing (homepage screenshot, Monthly and Individual selected): Basic $115/month, 500 credits; Standard $230, 1,250 credits; Compliance $460, 3,000 credits; annual billing 20% less; Enterprise custom with Travel Rule, Trace Funds, Custom Policies, Manage Cases, volume pricing, custom integration planning, security and procurement support, dedicated support. The Organization toggle and yearly prices were not seen. x402: live catalog $0.10 per KYT, KYE and KYA report (and $1.00 for a metals price); the agent docs README example shows 1.00 USDC per call; the record uses the live catalog.'
+- 'Company: Silver Sixpence (Pty) Ltd, Pretoria, founded 2020, from the founder''s press kit and bio; CIPC register not opened, registration number unknown. Sixpence homepage names Mazars (testimonial) and the Coinbase proof-of-reserves grant; LedgerCore names Nedbank among implementations of LedgerCore, not of LedgerBrain, so Nedbank is not stated in the record. The OpenAPI contact "LedgerLink" is not explained on any page we read.'
+- 'User ratings: Product Hunt shows 1 upvote and no reviews; no G2 or Capterra listing found. x402 List traction (48 settlements all-time from one buyer) not used.'
+- 'Vendor claims not used as facts: "live in a morning", "no sales call required" (true only for screening plans), "explainable decision" wording, demo figures (risk score 61, balances), the 1,282 counter in the demo header.'
+- 'No enforcement action, breach disclosure or litigation involving LedgerBrain or Sixpence found in searches to 18 Nov 2026.'
+application_category: Travel Rule Compliance Software
+author: andrii-klymenko
+directory_categories:
+- Travel Rule
+fit:
+  'yes':
+  - want Travel Rule messages in the same workspace as your wallet screening, counterparty due diligence and case management
+  - want a release review with sanctions, PEP and wallet risk checks before any IVMS-101 data leaves
+  'no':
+  - text: need a Travel Rule price before a sales call. Travel Rule is only in the quoted Enterprise plan
+    alt: cryptoswift
+networks:
+- name: Other networks
+  status: not_found
+  note: No TRP, TRISA, TRUST, GTR, CODE or Sygna route named (Nov 2026); a demo screen labels a counterparty "Verified Envoy node"
+  evidence: vendor
+  source: 3
