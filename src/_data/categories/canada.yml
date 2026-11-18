@@ -5,9 +5,9 @@ seo:
   description: 'KYCAID, Veriff, Onfido, and Trulioo compared: the best KYC & AML providers for Canada in 2026, ranked on document coverage, bilingual support, and FINTRAC-readiness.'
   h1: Best KYC & AML Providers for Canada in 2026
 breadcrumb_label: Best KYC & AML Providers for Canada
-quick_answer: Veriff is the best overall pick for Canada, with passive liveness tested by iBeta to ISO/IEC 30107-3 Level 2 and published self-serve plans. KYCAID is second, with verification flows you configure from one dashboard and per-check prices. Onfido, now Entrust Identity Verification, is third for broad document coverage. We compared 4 providers on document coverage, bilingual support and FINTRAC readiness.
-last_verified: '2026-10-18'
-updated: '2026-11-05'
+quick_answer: 'Veriff ranks first for Canada, with passive liveness tested by iBeta to ISO/IEC 30107-3 Level 2 and published self-serve plans. KYCAID is second, with verification flows you configure from one dashboard and per-check prices. Onfido, now Entrust Identity Verification, is third for broad document coverage. We compared 4 providers on document coverage, liveness tests, AML screening and pricing.'
+last_verified: '2026-11-18'
+updated: '2026-11-18'
 legacy_stats:
 - value: '4'
   label: providers compared
@@ -20,7 +20,7 @@ explainer_html:
 
   <h2 style="font-size:19px;margin-bottom:10px;">What Canada-ready KYC means</h2>
 
-  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">FINTRAC sets customer due diligence and reporting obligations for money services businesses and financial entities operating in Canada, while OSFI supervises the ongoing risk management of federally regulated banks and insurers. A provider built for this market accepts Canadian passports, provincial driver''s licences, and PR cards, and supports bilingual EN/FR flows for Quebec and nationwide deployments.</p>
+  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">FINTRAC sets customer due diligence and reporting obligations for money services businesses and financial entities operating in Canada, while OSFI supervises the ongoing risk management of federally regulated banks and insurers. A provider built for this market accepts Canadian passports, provincial driver''s licences, and PR cards, and can run the flow in French for customers in Quebec.</p>
 
   <h3 style="font-size:14.5px;margin-bottom:10px;">The stacks you''ll find here</h3>
 
@@ -28,9 +28,9 @@ explainer_html:
 
   <li style="list-style:disc;">Document parsing for Canadian passports, provincial driver''s licences, and PR cards</li>
 
-  <li style="list-style:disc;">Bilingual EN/FR onboarding flows</li>
+  <li style="list-style:disc;">Onboarding flows available in English and French</li>
 
-  <li style="list-style:disc;">PIPEDA-aligned data residency and handling for biometric and identity data</li>
+  <li style="list-style:disc;">Clear answers on where identity and biometric data are stored and processed, for PIPEDA</li>
 
   <li style="list-style:disc;">Sanctions/PEP screening covering FINTRAC reporting obligations</li>
 
@@ -51,7 +51,7 @@ faq:
 - q: Who regulates KYC/AML in Canada?
   a: FINTRAC sets customer due diligence and reporting obligations for money services businesses and financial entities, while OSFI supervises the ongoing risk management of federally regulated banks and insurers.
 - q: Does Canadian KYC need to support French?
-  a: Yes for most consumer-facing deployments. Bilingual EN/FR support is expected for institutions serving Quebec and federally regulated entities nationwide.
+  a: 'Canadian KYC flows usually need French for customers in Quebec. Ask each vendor whether its capture screens, error messages and emails are available in French as well as English.'
 - q: What documents do Canadian KYC providers accept?
   a: Common accepted documents include Canadian passports, provincial driver's licences, and Permanent Resident (PR) cards.
 - q: How does PIPEDA affect KYC vendor selection?
@@ -68,6 +68,7 @@ adjacent:
 capability_columns: []
 faq_templates: []
 legacy_issues: []
+price_source: record
 author: andrii-klymenko
 legacy_reviewer:
   name: Elena Marsh

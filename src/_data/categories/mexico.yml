@@ -5,9 +5,9 @@ seo:
   description: 'KYCAID, Sumsub, Veriff, and Trulioo compared: the best KYC & AML providers for Mexico in 2026, ranked on Ley Fintech readiness, document coverage, and decisioning speed.'
   h1: Best KYC & AML Providers for Mexico in 2026
 breadcrumb_label: Best KYC & AML Providers for Mexico
-quick_answer: Sumsub ranks first in Mexico, with published per-verification prices and coverage of 220+ countries and territories. Veriff is second, with passive liveness tested by iBeta to ISO/IEC 30107-3 Level 2, and KYCAID adds non-document CURP checks against government databases. We compared 4 providers on Ley Fintech readiness, document coverage and decisioning speed.
-last_verified: '2026-10-18'
-updated: '2026-11-05'
+quick_answer: 'Sumsub ranks first in Mexico, with published per-verification prices and coverage of 220+ countries and territories. Veriff is second, with passive liveness tested by iBeta to ISO/IEC 30107-3 Level 2, and KYCAID adds non-document CURP checks against government databases. We compared 4 providers on document and liveness checks, CURP checks, pricing and coverage.'
+last_verified: '2026-11-18'
+updated: '2026-11-18'
 legacy_stats:
 - value: '4'
   label: providers compared
@@ -20,7 +20,7 @@ explainer_html:
 
   <h2 style="font-size:19px;margin-bottom:10px;">What Mexico-ready KYC means</h2>
 
-  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">The CNBV supervises banks and fintechs operating in Mexico, and Ley Fintech, the country''s Fintech Law, sets specific onboarding and identity-verification requirements for electronic payment institutions and crowdfunding platforms. The market these providers serve is sizeable: Mexico counted 773 fintech startups as of 2024, and its digital-identity-verification market is projected to reach $159.1 million by 2030.</p>
+  <p style="font-size:15px;line-height:1.7;margin-bottom:18px;">The CNBV supervises banks and fintechs operating in Mexico, and Ley Fintech, the country''s Fintech Law, sets specific onboarding and identity-verification requirements for electronic payment institutions and crowdfunding platforms. Finnovista''s Fintech Radar México (February 2024) counted 773 Mexican fintechs at the end of 2023, plus 217 foreign fintechs operating in the country.</p>
 
   <h3 style="font-size:14.5px;margin-bottom:10px;">The stacks you''ll find here</h3>
 
@@ -31,8 +31,6 @@ explainer_html:
   <li style="list-style:disc;">CNBV-aligned onboarding workflows for regulated fintechs</li>
 
   <li style="list-style:disc;">Sanctions/PEP screening covering domestic and international lists</li>
-
-  <li style="list-style:disc;">Straight-through decisioning built to handle high applicant volume across many small fintechs</li>
 
   </ul>
 
@@ -51,7 +49,7 @@ faq:
 - q: Who regulates KYC/AML in Mexico?
   a: The CNBV (Comisión Nacional Bancaria y de Valores) supervises banks and fintechs, and Mexico's Ley Fintech sets specific onboarding and operating requirements for fintech institutions.
 - q: How big is Mexico's fintech market?
-  a: Mexico counted 773 fintech startups as of 2024, and the country's digital-identity-verification market is projected to reach $159.1 million by 2030.
+  a: 'Finnovista counted 773 Mexican fintechs at the end of 2023, plus 217 foreign ones operating in Mexico, in its Fintech Radar México published in February 2024.'
 - q: What is Ley Fintech?
   a: Ley Fintech is Mexico's Fintech Law. It sets licensing and operating requirements, including identity verification obligations, for electronic payment institutions and crowdfunding platforms.
 - q: Does CNBV registration cover ongoing AML monitoring?
@@ -59,7 +57,7 @@ faq:
 - q: What documents do Mexican KYC providers accept?
   a: Common accepted documents include the INE voter ID card, passports, and CURP-linked identification.
 - q: Is Mexico's KYC market consolidated or fragmented?
-  a: "Mexico's KYC market is fragmented across many small and mid-sized fintechs: 773 fintech companies were operating there as of 2024."
+  a: 'Mexico''s fintech market, the main buyer of KYC checks there, is spread across many firms: Finnovista counted 773 Mexican fintechs and 217 foreign ones at the end of 2023.'
 adjacent:
 - aml
 - aml/banks
@@ -68,6 +66,7 @@ adjacent:
 capability_columns: []
 faq_templates: []
 legacy_issues: []
+price_source: record
 author: andrii-klymenko
 legacy_reviewer:
   name: Elena Marsh
