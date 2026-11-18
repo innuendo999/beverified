@@ -50,6 +50,7 @@ export function heroCard(d, sponsor) {
     label: shortLabel(d.site?.v3?.menu, cfg.ranking) || cfg.ranking.toUpperCase(), total: list.length,
     rubric: !own && rows.length && rows.every((r) => r.method === d.site?.v3?.methodologyVersion) ? d.site.v3.methodologyVersion : null,
     rows,
+    scoreLabel: cat.score_label || "Score",
     sponsor: sponsor ? { name: sponsor.provider.name, slug: sponsor.slug, rank: sponsor.rank, score: score(sponsor.provider),
       url: sponsor.provider.link?.url || null } : null,
   };

@@ -316,7 +316,7 @@
       {%- for x in alts %}
       <a class="rv4-card rv4-alt" href="/providers/{{ x.q.slug }}/">
         {%- if x.q.logo.wordmark %}<img src="{{ x.q.logo.wordmark }}" alt="{{ x.q.name }}" loading="lazy">{% else %}<b class="rv4-alt__name">{{ x.q.name }}</b>{% endif %}
-        {%- if x.q.score != null %}<span class="num rv4-alt__score"><b>{{ x.q.score | score1 }}</b> / 5</span>{% endif %}
+        {%- if x.q.score != null %}<span class="num rv4-alt__score"><span class="score-lbl score-lbl--in">Score</span><b>{{ x.q.score | score1 }}</b> / 5</span>{% endif %}
         <span class="rv4-alt__text">Choose {{ x.q.name }} if {{ x.text }}</span>
         <span class="rv4-alt__go">Read review →</span>
       </a>

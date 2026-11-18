@@ -40,7 +40,7 @@ layout: v3.njk
               {%- endif %}
             </span>
             {%- if r.score != null %}
-            <span class="idcard__score"><span><b>{{ r.score | score1 }}</b><small> / 5</small></span>
+            <span class="idcard__score"><span class="score-lbl">{{ hero.scoreLabel }}</span><span><b>{{ r.score | score1 }}</b><small> / 5</small></span>
               <span class="meter meter--sm" aria-hidden="true">{% for w in (r.score | meter) %}<span><i class="w-{{ w }}"></i></span>{% endfor %}</span>
             </span>
             {%- endif %}
@@ -53,7 +53,7 @@ layout: v3.njk
       <div class="idcard__sp">
         <div>
           <p class="idcard__sp-name"><span class="sp-tag"><svg width="11" height="11" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 6.5v3h2.5L9 12.5v-9L4.5 6.5z"/><path d="M11.5 6a3 3 0 0 1 0 4"/></svg>Sponsored</span><a href="/providers/{{ sp.slug }}/">{{ sp.name }}</a></p>
-          <p class="idcard__sp-meta">#{{ sp.rank }} in {{ hero.label }} · {{ sp.score | score1 }} / 5 · Paid placement, it does not change the ranking</p>
+          <p class="idcard__sp-meta">#{{ sp.rank }} in {{ hero.label }} · {{ hero.scoreLabel }} {{ sp.score | score1 }} / 5 · Paid placement, it does not change the ranking</p>
         </div>
         <a class="btn btn--secondary btn--sm" href="{{ sp.url }}" data-ad target="_blank">Visit site <span aria-hidden="true">↗</span></a>
       </div>
@@ -107,7 +107,7 @@ layout: v3.njk
               {%- endif %}
             </span>
             {%- if t.score != null %}
-            <span class="ucx__score"><b>{{ t.score | score1 }}</b><small> / 5</small>
+            <span class="ucx__score"><span class="score-lbl">{{ u.scoreLabel }}</span><b>{{ t.score | score1 }}</b><small> / 5</small>
               <span class="meter meter--sm" aria-hidden="true">{% for w in (t.score | meter) %}<span><i class="w-{{ w }}"></i></span>{% endfor %}</span>
             </span>
             {%- endif %}
@@ -122,7 +122,7 @@ layout: v3.njk
         <a class="ucx__sp-row" href="{{ sp.url }}">
           <span class="ucx__tile ucx__tile--sm{% if not sp.logo %} ucx__tile--wm{% elif sp.fit == 'contain' %} ucx__tile--contain{% endif %}"{% if sp.logo and sp.bg != '#FFFFFF' %} style="background:{{ sp.bg }}"{% endif %}>{% if sp.logo %}<img src="{{ sp.logo }}" alt="" loading="lazy" decoding="async">{% elif sp.wordmark %}<img src="{{ sp.wordmark }}" alt="" loading="lazy" decoding="async">{% else %}<span>{{ sp.name }}</span>{% endif %}</span>
           <span class="ucx__who"><span class="ucx__name">{{ sp.name }}</span>{% if sp.line %}<span class="ucx__line">{{ sp.line }}</span>{% endif %}</span>
-          <span class="ucx__sp-meta">#{{ sp.rank }} in our {{ u.name }} ranking · {{ sp.score | score1 }} / 5<span class="ucx__sp-go">Read review →</span></span>
+          <span class="ucx__sp-meta">#{{ sp.rank }} in our {{ u.name }} ranking · {{ u.scoreLabel }} {{ sp.score | score1 }} / 5<span class="ucx__sp-go">Read review →</span></span>
         </a>
       </div>
       {%- endif %}
@@ -240,7 +240,7 @@ layout: v3.njk
         <div class="top-card__head">{% if p.logo.wordmark %}<img src="{{ p.logo.wordmark }}" alt="" loading="lazy">{% else %}<b class="top-card__wm">{{ p.name }}</b>{% endif %}<span>{{ loop.index | pad2 }}</span></div>
         {%- if loop.first %}<span class="pill pill--dark self-start mt-12">◆ Editor's choice</span>{% endif %}
         <div class="top-card__name">{{ p.name }}</div>
-        <div class="top-card__score" aria-hidden="true"><b>{{ p.score | score1 }}</b><small>/ 5</small></div>
+        <div class="top-card__score" aria-hidden="true"><span class="score-lbl">Score</span><b>{{ p.score | score1 }}</b><small>/ 5</small></div>
         <div class="meter meter--sm" aria-hidden="true">{% for w in (p.score | meter) %}<span><i class="w-{{ w }}"></i></span>{% endfor %}</div>
         {%- if p.best_for %}<span class="pill self-start mt-16">Best for · {{ p.best_for }}</span>{% endif %}
         <p class="top-card__reason">{{ p.tagline }}</p>
