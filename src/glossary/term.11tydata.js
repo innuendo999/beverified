@@ -24,7 +24,18 @@ export default {
     cluster: (d) => CLUSTERS.find((c) => c.key === d.t.cluster) || null,
     bodyHtml: (d) => renderMd(d.t.body),
     offer: (d) => providersFor(d.t.capability, d.allProviders),
-    rankingsFor: (d) => (d.t.rankings || []).map((k) => ({ c: d.allCategories?.[k], n: d.rankings?.[k]?.providers?.length || 0 })).filter((x) => x.c),
+    // "Compare providers": each linked ranking with its top 3 reviewed providers (rank, score with its
+    // label, link to the review), so a term page links to the reviews as well as to the ranking.
+    rankingsFor: (d) => (d.t.rankings || []).map((k) => {
+      const c = d.allCategories?.[k], list = d.rankings?.[k]?.providers || [];
+      if (!c) return null;
+      const own = c.score_source === "category";
+      const top = list.map((r, i) => ({ r, pos: i + 1, p: r.slug ? d.allProviders?.[r.slug] : null }))
+        .filter((x) => x.p && x.p.status === "published").slice(0, 3)
+        .map((x) => ({ pos: x.pos, name: x.p.name, slug: x.p.slug,
+          score: (own ? x.p.category_scores?.[c.slug]?.score : x.p.score) ?? null }));
+      return { c, n: list.length, label: c.score_label || "Score", top };
+    }).filter(Boolean),
     relatedTerms: (d) => (d.t.related || []).map((s) => d.glossaryTerms.find((x) => x.slug === s)).filter(Boolean),
     sameCluster: (d) => d.glossaryTerms.filter((x) => x.cluster === d.t.cluster && x.slug !== d.t.slug && !(d.t.related || []).includes(x.slug)),
     jsonld: (d) => {
