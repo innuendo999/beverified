@@ -17,8 +17,9 @@
       "matched": "eidas",
       "route": "news",
       "priority": 1,
-      "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
-      "first_seen": "2026-11-17"
+      "reason": "regulator consultation response, not a new rule: IMY's remissvar of 22 Oct 2026 (IMY-2026-12007, Ju2026/01595) on the memo 'Ett statligt identitetskort' opposes storing facial biometrics in the Swedish passport and ID card register. Proposal not adopted; no KYC/AML obligation for private firms. Primary: https://www.regeringen.se/contentassets/fb845236f1644441b825770e07d07cde/integritetsskyddsmyndigheten.pdf",
+      "first_seen": "2026-11-17",
+      "status": "dropped"
     },
     {
       "id": "bdc0bb7413ca91c0",
@@ -42,8 +43,10 @@
       "matched": "breach",
       "route": "incident",
       "priority": 1,
-      "reason": "Incident, lawsuit or regulatory action at a provider in our records: goes to /incidents/ with the vendor's response.",
-      "first_seen": "2026-11-17"
+      "reason": "same Chainalysis breach already in src/_data/incidents.yml (chainalysis-2026-10, PR #126); Chainalysis notice re-checked 2026-11-18: latest dated update still 10 Nov 2026, no root cause or user count, nothing new to add",
+      "first_seen": "2026-11-17",
+      "status": "dropped",
+      "merged-with": "2dbc64dbc73c8eff"
     },
     {
       "id": "51f492715f53e8e1",
