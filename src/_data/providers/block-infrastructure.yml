@@ -163,7 +163,7 @@ faq:
 - q: What is the BlockTravel compliance oracle on Canton?
   a: In May 2026 Block Infrastructure showed BlockTravel at the Bermuda Digital Finance Forum in a simulated transfer on Canton DevNet, the Canton Network's test environment. Smart contracts called the oracle to run Travel Rule, sanctions and AML policy checks before settlement, the outcome was written on-chain as an audit record, and Canton Coin then moved in one atomic step. The protocols used in the demo were not named.
 - q: Is Block Infrastructure ISO 27001 or SOC 2 certified?
-  a: We found no claim of either. The site lists frameworks its customers work under, such as FATF, MiCA, FCA and MAS rules, and technical standards such as OAuth2 and mTLS, but none of these is a certification. Block Infrastructure claims no licence or registration of its own.
+  a: We found no ISO 27001 or SOC 2 claim from Block Infrastructure. The site lists frameworks its customers work under, such as FATF, MiCA, FCA and MAS rules, and technical standards such as OAuth2 and mTLS, but none of these is a certification. Block Infrastructure claims no licence or registration of its own.
 - q: Who is behind Block Infrastructure?
   a: Block Infrastructure Ltd was registered in London on 21 October 2024. Its co-founders are Richard Beverley (CEO), Kurtis Wright (COO) and Joshan Mahmud (CTO), who previously worked at ClearBank according to the team page. The company calls itself seed stage and names no investors. In January 2026 Companies House recorded a first Gazette notice for compulsory strike-off, which was discontinued a week later, the day after a late confirmation statement was filed.
 - q: What is the best alternative to BlockTravel?

@@ -35,7 +35,7 @@ faq:
   - q: What is the difference between alert management and case management?
     a: Alert management is the triage of individual hits from screening or monitoring. Case management groups related alerts, holds the investigation and records the final decision, including whether a suspicious activity report was filed.
   - q: How long do AML case records have to be kept?
-    a: It depends on the rule. The EU Directive sets five years after the end of the business relationship, US banks keep SARs and supporting documents for five years from filing, and OFAC requires transaction records to be available for at least 10 years.
+    a: Retention for AML case records depends on the rule, from five years to at least ten. The EU Directive sets five years after the end of the business relationship, US banks keep SARs and supporting documents for five years from filing, and OFAC requires transaction records to be available for at least 10 years.
   - q: Do we need a separate case management tool?
     a: Not necessarily. Some screening and monitoring products include one, and the provider table on this page shows which reviewed providers do. A separate tool makes sense when alerts come from several systems and need one queue and one audit trail.
 sources:

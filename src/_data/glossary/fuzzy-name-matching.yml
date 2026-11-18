@@ -32,11 +32,11 @@ buyer_questions:
   - How do you treat weak aliases on the OFAC list?
 faq:
   - q: What match score should we use for sanctions screening?
-    a: There is no official number. OFAC says it cannot recommend a match threshold score and that users must set their own based on their risk assessment and compliance practices.
+    a: There is no official match score for sanctions screening. OFAC says it cannot recommend a match threshold score and that users must set their own based on their risk assessment and compliance practices.
   - q: What algorithms are used for fuzzy name matching?
     a: Typical methods measure how similar the characters are, how similar the names sound, or both. OFAC's own Sanctions List Search uses Jaro-Winkler and Soundex and reports the higher of a full-name score and a name-part score.
   - q: Why does fuzzy matching create so many false positives?
-    a: It is designed to flag names that are close but not identical, so common names and short or generic aliases match many people. Tuning the threshold and using other identifiers such as date of birth reduce the noise.
+    a: Fuzzy name matching is designed to flag names that are close but not identical, so common names and short or generic aliases match many people. Tuning the threshold and using other identifiers such as date of birth reduce the noise.
 sources:
   - title: "OFAC FAQ 249: How is the Score calculated?"
     publisher: US Department of the Treasury, Office of Foreign Assets Control

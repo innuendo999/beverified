@@ -34,7 +34,7 @@ buyer_questions:
   - Can we test a threshold or rule change on our historical data before it goes live?
 faq:
   - q: What is a false positive in sanctions screening?
-    a: It is an alert where a customer's name looks like a sanctioned person's name but, after review, the customer is a different person. OFAC says many potential matches from screening are false positives.
+    a: A false positive in sanctions screening is an alert where a customer's name looks like a sanctioned person's name but, after review, the customer is a different person. OFAC says many potential matches from screening are false positives.
   - q: What is the difference between a false positive and a false negative?
     a: A false positive is an alert that turns out not to be a real match. A false negative is a real match that the system did not flag. False negatives are the failure that screening exists to prevent.
   - q: Will OFAC confirm whether a match is a false positive?

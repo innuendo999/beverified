@@ -31,7 +31,7 @@ faq:
   - q: "Which identity verification vendor did Webull use?"
     a: "FINRA does not name it. The settlement refers only to a third-party vendor and finds that Webull did not reasonably supervise it."
   - q: "Can a broker-dealer rely on an identity verification vendor for CIP?"
-    a: "It can use one, but the firm's own customer identification program still has to be reasonably designed. In the Webull case FINRA held the firm responsible for approving accounts the vendor could not verify and for not supervising the vendor's photo ID checks."
+    a: "A broker-dealer can use an identity verification vendor, but the firm's own customer identification program still has to be reasonably designed. In the Webull case FINRA held the firm responsible for approving accounts the vendor could not verify and for not supervising the vendor's photo ID checks."
   - q: "Did Webull admit the violations?"
     a: "No. Webull consented to FINRA's findings without admitting or denying them."
 sources:

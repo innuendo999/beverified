@@ -38,7 +38,7 @@ faq:
   - q: What is the difference between document verification and identity verification?
     a: Document verification checks that the ID document is genuine and reads its data. Identity verification also checks that the person presenting it is the document holder, usually with a face match and a liveness check.
   - q: Can document verification detect fake IDs?
-    a: It can catch many forgeries by checking templates, security features, MRZ data and signs of tampering, but an image check only judges what the camera shows. Reading the chip, where the document has one, gives a cryptographic check of the issuer's signature.
+    a: Document verification can catch many forgeries by checking templates, security features, MRZ data and signs of tampering, but an image check only judges what the camera shows. Reading the chip, where the document has one, gives a cryptographic check of the issuer's signature.
   - q: What is the MRZ on a passport?
     a: The machine readable zone is the coded area of the data page defined by ICAO Doc 9303. It holds details such as the document number, date of birth and expiry date with check digits, and document verification compares it with the printed data.
 sources:

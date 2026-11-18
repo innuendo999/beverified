@@ -36,7 +36,7 @@ faq:
   - q: Is an iBeta Level 2 result an ISO certification?
     a: No. ISO/IEC 30107-3 describes how to test and report presentation attack detection but has no levels. Levels 1 to 3 are iBeta's own test levels, and iBeta states that a pass is not a certification of the product.
   - q: Does liveness detection stop deepfakes?
-    a: It can catch a deepfake shown to the camera on a screen. A deepfake injected straight into the video stream through a virtual camera bypasses the camera, so it needs injection attack detection as well.
+    a: Liveness detection can catch a deepfake shown to the camera on a screen. A deepfake injected straight into the video stream through a virtual camera bypasses the camera, so it needs injection attack detection as well.
 sources:
   - title: Guidelines on the use of remote customer onboarding solutions under Article 13(1) of Directive (EU) 2015/849 (EBA/GL/2022/15)
     publisher: European Banking Authority

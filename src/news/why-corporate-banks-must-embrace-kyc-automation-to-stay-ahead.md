@@ -21,7 +21,7 @@ faq:
   - q: "Why is corporate KYC slower than retail KYC?"
     a: "A business customer has an ownership chain, directors and beneficial owners, each of whom needs checking, and the evidence sits in registries and filings that differ by country. Collecting and reconciling it by hand takes analyst time."
   - q: "What does public-data KYC automation do?"
-    a: "It pulls registry extracts, filings and ownership information from official sources, turns the documents into structured data, maps the ownership structure and identifies beneficial owners, so analysts review a prepared file instead of building one."
+    a: "Public-data KYC automation pulls registry extracts, filings and ownership information from official sources, turns the documents into structured data, maps the ownership structure and identifies beneficial owners, so analysts review a prepared file instead of building one."
   - q: "Can a bank rely only on a beneficial ownership register?"
     a: "In the EU, AMLA's final draft CDD standards of 30 September 2026 say central registers are necessary but not sufficient on their own for verification. Banks need at least one other reliable source."
 sources:

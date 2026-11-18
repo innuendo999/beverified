@@ -21,7 +21,7 @@ faq:
   - q: "Which banks did the HKMA fine in July 2025?"
     a: "Indian Overseas Bank, Hong Kong Branch (HK$8.5M), Bank of Communications (Hong Kong) Limited (HK$4M) and Bank of Communications Co., Ltd., Hong Kong Branch (HK$3.7M), a total of HK$16.2M."
   - q: "What did the banks do wrong?"
-    a: "They did not keep effective procedures to monitor business relationships. At the two Bank of Communications entities, certain transaction types were not loaded into the monitoring system. At Indian Overseas Bank's branch, the HKMA found weak management oversight, poor procedures and unexamined unusual transactions for ten customers."
+    a: "The three banks did not keep effective procedures to monitor business relationships. At the two Bank of Communications entities, certain transaction types were not loaded into the monitoring system. At Indian Overseas Bank's branch, the HKMA found weak management oversight, poor procedures and unexamined unusual transactions for ten customers."
   - q: "What is the legal basis for transaction monitoring in Hong Kong?"
     a: "Schedule 2 of the AMLO (Cap. 615). Section 5(1) requires continuous monitoring of business relationships and examination of unusual transactions, and section 19(3) requires effective procedures to carry those duties out."
   - q: "How many customers were affected?"

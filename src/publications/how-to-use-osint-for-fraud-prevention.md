@@ -20,7 +20,7 @@ provider_slugs: [seon]
 ranking_keys: [kyb, aml, identity-verification]
 faq:
   - q: "What is OSINT in fraud prevention?"
-    a: "It is the use of publicly available information, such as company registries, court records, news, websites, domain records and social media, to confirm who a customer or counterparty is and to spot signs of fraud or hidden risk."
+    a: "OSINT in fraud prevention is the use of publicly available information, such as company registries, court records, news, websites, domain records and social media, to confirm who a customer or counterparty is and to spot signs of fraud or hidden risk."
   - q: "Is OSINT legal?"
     a: "Collecting public information is generally lawful, but data protection law still applies to personal data you gather and keep. Regulators have fined companies for scraping personal data at scale, so agree a lawful basis and retention rules with your privacy team first."
   - q: "What are the steps of an OSINT investigation?"
