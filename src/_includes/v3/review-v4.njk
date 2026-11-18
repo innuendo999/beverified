@@ -9,7 +9,7 @@
 <svg class="rv4-mark rv4-mark--{{ kind }}" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">{% if kind == "yes" %}<path d="M5 12.5l4.5 4.5L19 7.5"/>{% elif kind == "no" %}<path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/>{% elif kind == "plus" %}<path d="M12 5v14M5 12h14"/>{% else %}<path d="M5 12h14"/>{% endif %}</svg>
 {%- endmacro %}
 
-<div class="rv4">
+<main id="main" class="rv4">
 <section class="rv4-hero" aria-labelledby="h1">
   <div class="container">
     <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -90,7 +90,7 @@
   </div>
 </nav>
 
-<main id="main">
+<div class="rv4-main">
 {%- if v4.fit.yes.length or v4.fit.no.length or p.pros.length %}
 <section id="fit" class="rv4-band rv4-band--white">
   <div class="container">
@@ -400,8 +400,8 @@
   </div>
 </section>
 {%- endif %}
-</main>
 </div>
+</main>
 {%- if p.link.url and p.link.sticky %}
 {#- Sticky "Visit site" bar (owner, 2026-11-11): only for providers the owner names (link.sticky: true in the record).
     Shown after the hero score card scrolls away, hidden at the footer. Same link and rel as the score card. -#}
