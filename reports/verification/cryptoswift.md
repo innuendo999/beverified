@@ -134,3 +134,18 @@ Newly readable: cryptoswift.network (target of cryptoswift.eu/ecosystem/) and do
 | G2 | Editor's browser screenshot, 17 Nov 2026: 5 reviews, average 4.9, product "Travel Rule & Crypto Compliance Hub", newest 12 Nov 2026. Added to `user_ratings` with two praise themes; no criticism visible. "No user reviews yet" removed from cons and the ranking card. Pricing page re-checked by the editor's screenshot the same day: unchanged | editor |
 
 Not done: `pricing_calc` (the calculator parses "EUR 600 / month"; the record writes "€600", which also feeds the Pricing Index), category FAQ on self-hosted wallets, official e-Business Register and GLEIF.
+
+## Update 2026-11-18: answers from CryptoSwift and ISO/IEC 27001 check
+
+`last_verified` stays 2026-10-30 (not a full pass). Score and sub-scores unchanged; the Compliance sub-score (3.8) was set while ISO/IEC 27001 was vendor-stated and is left to the editor.
+
+| Item | Finding | Source |
+|---|---|---|
+| ISO/IEC 27001:2022 | Certificate 273AGIC080104, CryptoSwift OÜ, Rukki 28 Tartu; SoA v1.0 of 18 May 2026; issued 9 Jul 2026, expires 8 Jul 2029; surveillance audits 8 Jul 2027 and 8 Jul 2028. Scope: SaaS compliance platform for digital currency service providers (Travel Rule, VoP, counterparty due diligence, sanctions and watchlist screening, wallet screening and KYT). Same record returned by the public register query on accurateiso.com (editor screenshot and WebFetch, 18 Nov 2026). Status `confirmed` | 35 |
+| Certification body | Accurate Global states accreditation by United Accreditation Foundation (UAF) under ISO/IEC 17021. IAF lists UAF as an IAF MLA signatory; IAF resolution 2022-16 extended its MLA scope to ISO/IEC 27006 / ISO/IEC 27001. IAF CertSearch not checked | accurateiso.com/accreditation, iaf.nu |
+| TRP | CryptoSwift: TRP support added, no counterparty live yet. Network status `claimed` to `pending` | email, 29, 34 |
+| Notabene | CryptoSwift: incoming only | email, 9 |
+| Overage | CryptoSwift: usage above the allowance is billed, price per extra credit = monthly fee / included transactions. Not on the pricing page or the credit usage page (18 Nov 2026), so stated in copy as told to us, not added as a pricing item | email |
+| Screenshots | Publication of sandbox screenshots allowed; demo-environment screenshots with dummy data offered. None received | email |
+
+Cons changed: the ISO con is replaced by "No SOC 2 report, and no support response times are published" (both already in the record).

@@ -1662,8 +1662,8 @@ travel-rule:
     - Listed by CODE as a connected network, linked with Ospree, and receives transfers from Notabene
     - Self-hosted wallet checks by signature, micro-transfer, photo or self-declaration
     cons:
-    - No TRUST or TRISA link found, and its TRP claim is not confirmed by OpenVASP
-    - ISO/IEC 27001:2022 is vendor-stated with no certificate published, and there is no SOC 2
+    - No TRUST or TRISA link found, and no counterparty is live on its TRP support yet
+    - No SOC 2 report, and no support response times are published
     - Registered in 2023 with a €510,000 pre-seed; KYT checks priced only on request
     legacy_price_shown: From €600 / month
     legacy_rating_shown: null
