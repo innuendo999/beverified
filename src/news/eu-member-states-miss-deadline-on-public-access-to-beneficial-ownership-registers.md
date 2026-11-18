@@ -21,7 +21,7 @@ faq:
   - q: "Are EU beneficial ownership registers public?"
     a: "Not in general. After the CJEU's November 2022 ruling, AMLD6 limits access to authorities, obliged entities and people who can demonstrate a legitimate interest. Journalists, civil society organisations and some other groups are presumed to have one."
   - q: "What was the 10 July 2025 deadline?"
-    a: "It was the date by which Member States had to transpose Article 74 of AMLD6, which amended Articles 30(5) and 31(4) of the Fourth AML Directive to give legitimate-interest access to beneficial ownership information on companies and trusts."
+    a: "10 July 2025 was the date by which Member States had to transpose Article 74 of AMLD6, which amended Articles 30(5) and 31(4) of the Fourth AML Directive to give legitimate-interest access to beneficial ownership information on companies and trusts."
   - q: "Which countries received formal notices in 2026?"
     a: "Austria, Belgium, Bulgaria, Croatia, Cyprus, Czechia, Estonia, Finland, France, Germany, Greece, Lithuania, Luxembourg, the Netherlands, Poland, Portugal, Romania and Spain, for not fully transposing AMLD6 Articles 11, 12, 13 and 15 by 10 July 2026."
   - q: "What happens after a letter of formal notice?"

@@ -24,11 +24,11 @@ faq:
   - q: "How much does KYC cost per check?"
     a: "On published price lists, a document check with a selfie and liveness test usually costs under two dollars per verification, while database and watchlist lookups cost cents. The exact figures for each provider, with the date we checked them, are in the official price table of this index."
   - q: "Which KYC provider is the cheapest?"
-    a: "It depends on volume and what you need checked. Pay-per-check providers with no monthly minimum cost least at low volume, while providers with a monthly minimum can be cheaper per check once you use the whole allowance. Our cheap KYC ranking compares the options on published pricing."
+    a: "No single KYC provider is cheapest at every volume, and the answer also depends on what you need checked. Pay-per-check providers with no monthly minimum cost least at low volume, while providers with a monthly minimum can be cheaper per check once you use the whole allowance. Our cheap KYC ranking compares the options on published pricing."
   - q: "Do KYC providers charge a monthly minimum?"
     a: "Many do. Several published plans combine a per-verification price with a monthly minimum, and others charge a flat monthly plan fee with a set allowance. A few charge purely per check with no minimum."
   - q: "Why don't Jumio, Onfido or Trulioo publish prices?"
-    a: "They sell mostly to larger companies on negotiated contracts, so their sites ask buyers to contact sales. The only figures available come from public procurement listings and buyer-data services, which their BeVerified reviews show as third-party estimates."
+    a: "Jumio, Onfido and Trulioo sell mostly to larger companies on negotiated contracts, so their sites ask buyers to contact sales. The only figures available come from public procurement listings and buyer-data services, which their BeVerified reviews show as third-party estimates."
   - q: "Is there a free KYC tool?"
     a: "Some providers offer a small free monthly allowance, a sign-up credit or a free trial. These cover testing and very low volumes, not a production onboarding flow."
 sources:

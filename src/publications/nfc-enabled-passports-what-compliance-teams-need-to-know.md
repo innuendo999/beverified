@@ -20,7 +20,7 @@ provider_slugs: [regula, sumsub, onfido, idenfy]
 ranking_keys: [identity-verification, e-kyc, liveness-detection]
 faq:
   - q: "What is an NFC passport?"
-    a: "It is a passport with a contactless chip, also called an ePassport or eMRTD. The chip stores the data page details and the facial image, signed by the issuing country, and a phone or reader with NFC can read it once it has the access key from the printed MRZ or CAN."
+    a: "An NFC passport is a passport with a contactless chip, also called an ePassport or eMRTD. The chip stores the data page details and the facial image, signed by the issuing country, and a phone or reader with NFC can read it once it has the access key from the printed MRZ or CAN."
   - q: "What is the difference between passive and active authentication?"
     a: "Passive authentication checks the issuer's digital signature over the chip data, so it proves the data is genuine and unchanged. Active authentication has the chip sign a fresh challenge with a private key it cannot export, which proves the chip itself is not a copy."
   - q: "Can any phone read an NFC passport?"

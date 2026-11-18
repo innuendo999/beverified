@@ -31,7 +31,7 @@ buyer_questions:
   - How are suspected deepfakes routed to manual review, and what evidence do we get for a suspicious activity report?
 faq:
   - q: Can liveness detection stop deepfakes?
-    a: It can catch a deepfake played on a screen in front of the camera. A deepfake injected straight into the video stream bypasses the camera, so it needs injection attack detection as well.
+    a: Liveness detection can catch a deepfake played on a screen in front of the camera. A deepfake injected straight into the video stream bypasses the camera, so it needs injection attack detection as well.
   - q: What did FinCEN say about deepfakes?
     a: In alert FIN-2024-Alert004 of 13 November 2024, FinCEN described criminals using AI-generated images and documents to open accounts, listed red flags, and asked institutions to use the key term FIN-2024-DEEPFAKEFRAUD in related suspicious activity reports.
   - q: Are deepfakes used to create synthetic identities?

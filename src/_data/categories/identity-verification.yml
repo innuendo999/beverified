@@ -67,7 +67,7 @@ faq:
 - q: 'Is identity verification the same as KYC?'
   a: 'No. KYC is the customer due diligence that anti-money laundering law requires of regulated firms, and identity verification is one part of it. Identity verification is also used outside KYC: at login, account recovery and high-risk actions, and by businesses with no AML duty at all.'
 - q: 'How do vendors detect deepfakes and injection attacks?'
-  a: 'They pair liveness checks on the selfie with checks that the video really comes from the device camera. ISO/IEC 30107-3 tests cover attacks shown to the camera; injected deepfakes fall under a separate specification, CEN/TS 18099. Veriff, Incode and Jumio describe deepfake defences on their own pages. Ask any vendor whether a lab has tested its injection detection, not only its liveness.'
+  a: 'Identity verification vendors pair liveness checks on the selfie with checks that the video really comes from the device camera. ISO/IEC 30107-3 tests cover attacks shown to the camera; injected deepfakes fall under a separate specification, CEN/TS 18099. Veriff, Incode and Jumio describe deepfake defences on their own pages. Ask any vendor whether a lab has tested its injection detection, not only its liveness.'
 - q: 'When does identity verification run besides onboarding?'
   a: 'Common triggers are a login from a new device, a password or account recovery request, a change of payout details and a high-value or high-risk transaction. Some vendors package this as a reusable credential, such as Jumio''s selfie.DONE for returning users.'
 - q: 'Do identity verification vendors store biometric data?'

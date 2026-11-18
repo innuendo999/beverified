@@ -21,7 +21,7 @@ faq:
   - q: "What does whitelisted mean?"
     a: "Whitelisted means something has been put on an approved list, so it is let through without the block or extra check that applies to everything else. A whitelisted email sender skips the spam filter; a whitelisted IP address can reach a system others cannot."
   - q: "What does whitelisted mean in a bank?"
-    a: "It usually means one of three things: a payee you added to your trusted beneficiaries list, an IP address or system the bank lets connect to its API, or a customer the bank's screening team has marked as a confirmed false positive against a sanctions or PEP list. The last one still has to be re-checked when lists change."
+    a: "In a bank, whitelisted usually means one of three things: a payee you added to your trusted beneficiaries list, an IP address or system the bank lets connect to its API, or a customer the bank's screening team has marked as a confirmed false positive against a sanctions or PEP list. The last one still has to be re-checked when lists change."
   - q: "Is whitelist the same as allowlist?"
     a: "Yes. Allowlist and denylist mean the same as whitelist and blacklist. Groups such as the UK National Cyber Security Centre and the Inclusive Naming Initiative recommend the newer words because they describe the action directly."
   - q: "What is the opposite of a whitelist?"

@@ -39,7 +39,7 @@ buyer_questions:
   - What happens when the capture is too poor to estimate an age?
 faq:
   - q: How accurate is facial age estimation?
-    a: It depends on the algorithm, the person's age and sex, image quality and region of birth, according to NIST. NIST publishes mean absolute error and false positive rates per algorithm but does not set a pass mark.
+    a: Facial age estimation accuracy depends on the algorithm, the person's age and sex, image quality and region of birth, according to NIST. NIST publishes mean absolute error and false positive rates per algorithm but does not set a pass mark.
   - q: Does facial age estimation identify the person?
     a: No. It estimates age from facial features and does not compare the face with a document or a database of known people. That comparison is face matching, a different process.
   - q: Is facial age estimation allowed under the UK Online Safety Act?

@@ -34,7 +34,7 @@ faq:
   - q: "What is the difference between synthetic identity fraud and deepfake fraud?"
     a: "Synthetic identity fraud invents a person from real and fake data, for example a real Social Security number with a new name. Deepfake fraud uses AI-made or AI-altered images, video, audio or documents to get through a check. Criminals combine them: FinCEN reports AI-generated images being paired with stolen or fake personal data to build synthetic identities."
   - q: "Can liveness detection stop deepfakes?"
-    a: "It can catch a deepfake played on a screen in front of the camera. A deepfake injected straight into the video stream through a virtual camera or emulator never passes the camera, so it needs injection attack detection as well."
+    a: "Liveness detection can catch a deepfake played on a screen in front of the camera. A deepfake injected straight into the video stream through a virtual camera or emulator never passes the camera, so it needs injection attack detection as well."
   - q: "Does an iBeta Level 2 liveness result mean a product stops deepfakes?"
     a: "No. iBeta's levels are its own test levels for presentation attack detection under ISO/IEC 30107-3, and iBeta says a pass is not a certification. That standard covers attacks at the capture device only, so injected deepfakes are outside its scope."
   - q: "How do you detect a synthetic identity at onboarding?"

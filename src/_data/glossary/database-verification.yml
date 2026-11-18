@@ -31,9 +31,9 @@ buyer_questions:
   - What signals do you add to show that the person entering the data is its owner?
 faq:
   - q: Is database verification enough for KYC?
-    a: It depends on the country and the risk. US and UK rules allow verification from reliable electronic sources as well as documents, but a database match proves that the identity exists, not that the applicant is that person.
+    a: Database verification is enough for KYC only in some countries and at some risk levels. US and UK rules allow verification from reliable electronic sources as well as documents, but a database match proves that the identity exists, not that the applicant is that person.
   - q: What is non-documentary verification?
-    a: It is the US Customer Identification Program term for verifying identity without a document, for example by comparing the customer's details with a consumer reporting agency, a public database or another source.
+    a: Non-documentary verification is the US Customer Identification Program term for verifying identity without a document, for example by comparing the customer's details with a consumer reporting agency, a public database or another source.
   - q: What is eCBSV?
     a: eCBSV is the Social Security Administration's fee-based service that tells permitted financial institutions whether a name, date of birth and Social Security number match SSA records, with the number holder's written consent.
 sources:

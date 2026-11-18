@@ -28,7 +28,7 @@ faq:
   - q: "Which age verification methods does Ofcom accept at 16?"
     a: "The rapid assessment names four methods that can be highly effective at 16: photo ID matching, digital identity services, banking-based checks and facial age estimation. Ofcom says the list is not exhaustive."
   - q: "What is a challenge age in age verification?"
-    a: "It is a buffer above the legal age. A user whose estimated age falls below the challenge age gets a second check, such as photo ID matching. Ofcom suggests a challenge age of 19 for a 16 threshold, set according to the error of the technology used."
+    a: "A challenge age is a buffer above the legal age. A user whose estimated age falls below the challenge age gets a second check, such as photo ID matching. Ofcom suggests a challenge age of 19 for a 16 threshold, set according to the error of the technology used."
   - q: "Can credit card checks prove a user is over 16?"
     a: "No. Ofcom treats credit card checks as capable of being highly effective at 18, but not at 16, because they cannot reliably separate 16 and 17 year olds from younger children."
   - q: "When does the UK under-16 social media ban start?"

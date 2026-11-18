@@ -33,7 +33,7 @@ faq:
   - q: "Does the MEXC order apply to crypto transfers?"
     a: "Yes. The order defines a transmittal of funds to include convertible virtual currency. Where an incoming crypto transfer cannot practically be rejected, for example because it sat in an unhosted wallet for a long time, FinCEN lets the institution act on the facts of the transaction."
   - q: "Is MEXC on the OFAC sanctions list?"
-    a: "This is a FinCEN order, not an OFAC designation. Treasury's announcement lists no new OFAC designations, and the order says it does not change anyone's OFAC obligations."
+    a: "The action against MEXC is a FinCEN order, not an OFAC designation. Treasury's announcement lists no new OFAC designations, and the order says it does not change anyone's OFAC obligations."
 sources:
   - title: "Imposition of Special Measure Prohibiting the Transmittal of Funds Involving MEXC Global (FR Doc. 2026-22962, public inspection copy)"
     publisher: "Federal Register"

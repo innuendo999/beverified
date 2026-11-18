@@ -69,7 +69,7 @@ faq:
 - q: Does a DVS check confirm the customer's face?
   a: No. The DVS checks document details against the issuer's record. Face matching against a government photo is a separate service, the Face Verification Service, so most KYC flows pair the DVS check with a selfie match and liveness check from the vendor.
 - q: Why does Equifax have no score?
-  a: We have not reviewed it yet. Equifax documents DVS checks through its IDMatrix service, so it appears in the list as "Review coming" and will get a score after a full review under our methodology.
+  a: Equifax has no score because we have not reviewed it yet. Equifax documents DVS checks through its IDMatrix service, so it appears in the list as "Review coming" and will get a score after a full review under our methodology.
 adjacent:
 - identity-verification
 - kyc

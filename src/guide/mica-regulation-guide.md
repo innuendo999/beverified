@@ -20,7 +20,7 @@ provider_slugs: [sumsub, complyadvantage]
 ranking_keys: [crypto, travel-rule, aml]
 faq:
   - q: "What is MiCA compliance?"
-    a: "It means meeting the rules of the EU Markets in Crypto-Assets Regulation (EU) 2023/1114: holding CASP authorisation (or an Article 60 notification) to provide crypto-asset services, meeting prudential, conduct and custody rules, and, for token issuers, the white paper and stablecoin requirements."
+    a: "MiCA compliance means meeting the rules of the EU Markets in Crypto-Assets Regulation (EU) 2023/1114: holding CASP authorisation (or an Article 60 notification) to provide crypto-asset services, meeting prudential, conduct and custody rules, and, for token issuers, the white paper and stablecoin requirements."
   - q: "When did the MiCA transitional period end?"
     a: "On 1 July 2026 at the latest. Article 143(3) let firms operating under national law before 30 December 2024 continue until then, and some Member States chose shorter periods."
   - q: "Does MiCA apply to NFTs?"

@@ -19,7 +19,7 @@ provider_slugs: [complyadvantage, castellum-ai]
 ranking_keys: [aml, aml/banks]
 faq:
   - q: "Are there still US sanctions on Syria?"
-    a: "There is no country-wide programme any more, but targeted sanctions remain on Bashar al-Assad, former regime figures, Captagon traffickers and others under the PAARSS programme and counter-terrorism authorities. Screening for those SDN entries is still required."
+    a: "There is no country-wide US sanctions programme on Syria any more, but targeted sanctions remain on Bashar al-Assad, former regime figures, Captagon traffickers and others under the PAARSS programme and counter-terrorism authorities. Screening for those SDN entries is still required."
   - q: "When did OFAC remove the Syrian Sanctions Regulations?"
     a: "On 26 August 2025, in a final rule published in the Federal Register at 90 FR 41505, effective the same day."
   - q: "Can OFAC still penalise old Syria violations?"

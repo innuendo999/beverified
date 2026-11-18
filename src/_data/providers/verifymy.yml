@@ -24,7 +24,7 @@ link:
   legacy_rel: nofollow sponsored
 last_verified: '2026-10-22'
 updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
-verdict: 'VerifyMy is narrower than most providers in this batch by design: it focuses on age assurance and content moderation, with a method that estimates age from an email address alongside mobile, credit card, facial estimation and ID document checks. Its platform is certified to ISO/IEC 27566-1 by the Age Check Certification Scheme. That focus makes it a strong fit for platforms with age-gating obligations, though it is not a general-purpose KYC or AML platform.'
+verdict: 'VerifyMy is narrower than most providers we review by design: it focuses on age assurance and content moderation, with a method that estimates age from an email address alongside mobile, credit card, facial estimation and ID document checks. Its platform is certified to ISO/IEC 27566-1 by the Age Check Certification Scheme. That focus makes it a strong fit for platforms with age-gating obligations, though it is not a general-purpose KYC or AML platform.'
 what_is:
 - 'VerifyMy is a safety-technology company that launched with age assurance in 2019. Its UK entity, Verifymy Limited, was incorporated in England and Wales on 14 June 2019 as KYC AVC UK Ltd and took its current name in June 2024; the registered office is in London. Founder and CEO Ryan Shaw built the original product, VerifyMyAge, as an age-verification tool for businesses selling age-restricted products and services.'
 - 'The company has since added identity verification, content moderation and consent management, has staff in London, Lisbon and São Paulo, and says it has verified more than 35 million users.'
@@ -83,7 +83,7 @@ facts:
   source: 4
   evidence: independent
 pros:
-- Email-based age estimation, a method few vendors in this category offer
+- Email-based age estimation, a method few age assurance vendors offer
 - Platform certified to ISO/IEC 27566-1 by the Age Check Certification Scheme, listed on its public register
 - 35M+ users verified, according to VerifyMy
 cons:

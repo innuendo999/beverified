@@ -27,7 +27,7 @@ mention_orgs:
     url: "https://home.treasury.gov/"
 faq:
   - q: "What does FinCEN's November 2026 CDD proposal change?"
-    a: "It would make the February 2026 relief from re-identifying beneficial owners at each new account permanent, list the information institutions must collect on each beneficial owner, exclude ITINs as a substitute for a Social Security number, allow information from third-party sources and let institutions rely on a customer's confirmation for later updates."
+    a: "FinCEN's November 2026 CDD proposal would make the February 2026 relief from re-identifying beneficial owners at each new account permanent, list the information institutions must collect on each beneficial owner, exclude ITINs as a substitute for a Social Security number, allow information from third-party sources and let institutions rely on a customer's confirmation for later updates."
   - q: "When is the comment deadline for the FinCEN CDD proposal?"
     a: "60 days after the proposal is published in the Federal Register. On 17 November 2026 FinCEN had released the text but it had not yet appeared in the Federal Register, so there was no calendar date yet."
   - q: "Does the proposal remove beneficial ownership verification?"

@@ -37,13 +37,13 @@ buyer_questions:
   - Do you flag differences between the register and what the customer declared, so we can report discrepancies where required?
 faq:
   - q: What percentage makes someone a beneficial owner?
-    a: It depends on the rule. Directive (EU) 2015/849 treats 25% plus one share or more than 25% as an indication, the EU AML Regulation from 10 July 2027 uses 25% or more, the UK PSC regime uses more than 25%, and the FinCEN CDD Rule uses 25 percent or more. Each rule also looks at control, not only shares.
+    a: Most rules put the beneficial ownership threshold at 25%, but the exact test differs by rule. Directive (EU) 2015/849 treats 25% plus one share or more than 25% as an indication, the EU AML Regulation from 10 July 2027 uses 25% or more, the UK PSC regime uses more than 25%, and the FinCEN CDD Rule uses 25 percent or more. Each rule also looks at control, not only shares.
   - q: Are EU beneficial ownership registers public?
     a: Not in general. In November 2022 the Court of Justice struck down general public access. Under Article 30(5) of Directive (EU) 2015/849 as amended by the Sixth AML Directive, access goes to authorities and FIUs, obliged entities, and people who can demonstrate a legitimate interest.
   - q: Do US companies still report beneficial owners to FinCEN?
     a: No. FinCEN's final rule, effective 14 August 2026, permanently exempts US companies and US persons. Foreign entities registered to do business in the US still report their foreign beneficial owners.
   - q: Is a UBO the same as a PSC?
-    a: They overlap. PSC is the UK Companies House term for a person with significant control, which covers the same idea of ownership above 25%, plus control by other means.
+    a: UBO and PSC overlap. PSC is the UK Companies House term for a person with significant control, which covers the same idea of ownership above 25%, plus control by other means.
 sources:
   - title: Directive (EU) 2015/849, Article 3(6) (consolidated text)
     publisher: EUR-Lex

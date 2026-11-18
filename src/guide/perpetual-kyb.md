@@ -25,7 +25,7 @@ faq:
   - q: "What changes should trigger a perpetual KYB review?"
     a: "Common triggers are new or removed directors, a change in shareholders or beneficial owners, a status change such as insolvency or strike-off, a sanctions or PEP match on the company or its people, adverse media, and activity that does not fit the customer's profile."
   - q: "What are the best perpetual KYB solutions?"
-    a: "It depends on your markets and stack. Among providers we review, FullCircl (now nCino Identity Solutions), Strise, KYC Hub, SmartSearch and iDenfy list KYB together with ongoing monitoring in their records. Check registry coverage for your countries, how changes are detected and how alerts reach your case management."
+    a: "The best perpetual KYB solution depends on your markets and stack. Among providers we review, FullCircl (now nCino Identity Solutions), Strise, KYC Hub, SmartSearch and iDenfy list KYB together with ongoing monitoring in their records. Check registry coverage for your countries, how changes are detected and how alerts reach your case management."
 sources:
   - title: "AMLR Article 26: Ongoing monitoring of the business relationship (text of OJ L, 2024/1624)"
     publisher: "Springlex"

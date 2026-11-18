@@ -35,7 +35,7 @@ faq:
   - q: Is face matching the same as facial recognition?
     a: Face matching in KYC is one-to-one verification, comparing a selfie with one document photo. Facial recognition often means one-to-many identification, searching a face against a large gallery. Both use similar technology for different jobs.
   - q: How accurate is face matching?
-    a: It depends on the algorithm, image quality and threshold. NIST SP 800-63A-4 sets a false match rate of 1:10,000 or better and a false non-match rate of 1:100 or better for one-to-one comparison in identity proofing.
+    a: Face matching accuracy depends on the algorithm, image quality and threshold. NIST SP 800-63A-4 sets a false match rate of 1:10,000 or better and a false non-match rate of 1:100 or better for one-to-one comparison in identity proofing.
   - q: Does face matching stop deepfakes?
     a: No. Face matching only checks that two faces look alike. A deepfake selfie that resembles the document photo can pass it, which is why liveness detection and injection attack detection run alongside it.
 sources:

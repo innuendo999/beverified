@@ -29,7 +29,7 @@ mention_orgs:
     url: "https://www.cssf.lu/"
 faq:
   - q: "What are the AMLA CDD RTS?"
-    a: "They are draft regulatory technical standards under Article 28(1) of the EU AML Regulation. They set what information firms must collect and verify for standard, simplified and enhanced due diligence, which sources count as reliable, and how electronic identification and other remote methods may be used."
+    a: "The AMLA CDD RTS are draft regulatory technical standards under Article 28(1) of the EU AML Regulation. They set what information firms must collect and verify for standard, simplified and enhanced due diligence, which sources count as reliable, and how electronic identification and other remote methods may be used."
   - q: "When do the AMLA CDD standards apply?"
     a: "Six months after they enter into force, and they enter into force 20 days after publication in the Official Journal. The Commission still has to adopt them, so no date is fixed yet. The AML Regulation itself applies from 10 July 2027."
   - q: "Do the AMLA standards allow selfie and document checks for remote onboarding?"
