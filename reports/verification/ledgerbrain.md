@@ -1,8 +1,8 @@
-# LedgerBrain: pre-review check 2026-11-18 (review not built)
+# LedgerBrain: review 2026-11-18 (pre-check, second search, full review)
 
 Scheduled task: full Travel Rule review of LedgerBrain (https://ledgerbrain.io/), slug `ledgerbrain`. Suggested by 21 Analytics, a partner ranked in Travel Rule; the suggestion has no influence on any review or score.
 
-**Result: stopped before writing a record.** Every public source we could open describes LedgerBrain as wallet and transaction risk screening (KYT, KYA "Know Your Address", KYE) and as a compliance control layer for AI agents. None describes a Travel Rule messaging product: no protocol, network, IVMS101 exchange, counterparty VASP directory or self-hosted wallet proof. A Travel Rule review and a place in the `travel-rule` ranking would rest on no evidence, so neither was created. No record, ranking, `tracked.yml` or category change in this PR.
+**First pass result (superseded by the full review below): stopped before writing a record.** Every public source we could open describes LedgerBrain as wallet and transaction risk screening (KYT, KYA "Know Your Address", KYE) and as a compliance control layer for AI agents. None describes a Travel Rule messaging product: no protocol, network, IVMS101 exchange, counterparty VASP directory or self-hosted wallet proof. A Travel Rule review and a place in the `travel-rule` ranking would rest on no evidence, so neither was created. No record, ranking, `tracked.yml` or category change in this PR.
 
 Not in `src/_data/providers/` under any slug and not in `src/_data/tracked.yml` (checked 18 Nov 2026).
 
