@@ -1,0 +1,65 @@
+term: AML/CTF Act (Australia)
+also_known_as: [Anti-Money Laundering and Counter-Terrorism Financing Act 2006, AML/CTF Act 2006, AML/CTF Amendment Act 2024]
+cluster: standards
+definition: The Anti-Money Laundering and Counter-Terrorism Financing Act 2006 is Australia's main AML law, enforced by AUSTRAC. It applies to businesses that provide designated services. Reforms passed in 2024 took effect for current reporting entities on 31 March 2026 and extend the law to lawyers, accountants and real estate from 1 July 2026.
+seo_title: "What Is Australia's AML/CTF Act? | BeVerified"
+seo_description: "Australia's AML/CTF Act 2006 and the 2024 reforms: 31 March and 1 July 2026 dates, tranche two, virtual assets, CDD changes and what to ask vendors."
+rankings: [australia, aml]
+related: [customer-due-diligence, customer-risk-scoring, risk-based-approach, money-laundering-reporting-officer, virtual-asset-service-provider, anti-money-laundering]
+body: |
+  ## What the Act covers
+
+  The [Anti-Money Laundering and Counter-Terrorism Financing Act 2006](https://www.legislation.gov.au/C2006A00169/latest/text) (No. 169, 2006) is the main law behind AUSTRAC's work. AUSTRAC calls it the main piece of legislation behind its functions and businesses' obligations. The Act is built around designated services: a business that provides one is a reporting entity. It must enroll with AUSTRAC and meet obligations such as running an AML/CTF program, customer due diligence and reporting suspicious matters.
+
+  ## The 2024 reforms
+
+  The [AML/CTF Amendment Act 2024](https://www.homeaffairs.gov.au/criminal-justice/Pages/overview-of-the-amlctf-amendment-act.aspx) passed Parliament on 29 November 2024. According to the Department of Home Affairs, most of the changes started on 31 March 2026. They include changes for the virtual asset sector, value transfer obligations, revised AML/CTF program requirements, customer due diligence changes and a lower gambling threshold of $5,000.
+
+  For virtual assets, the term "digital currency" gives way to a new "virtual asset" definition that includes stablecoins and NFTs. Regulation reaches beyond exchanges between virtual assets and money to exchanges between virtual assets, transfers on a customer's behalf, and safekeeping of virtual assets.
+
+  The program rules move from a check-box approach to outcome-focused obligations, and the separate Part A and Part B structure is gone. A reporting entity must assess the money laundering, terrorism financing and proliferation financing risks it may reasonably face, looking at customer types, designated services, delivery methods and jurisdictions, and keep that assessment up to date. It must appoint an AML/CTF compliance officer at management level, and a senior manager approves changes to the program.
+
+  ## Tranche two
+
+  From 1 July 2026, new designated services come under the Act. Home Affairs names real estate professionals, dealers in precious metals and stones, and professional service providers such as lawyers, conveyancers, accountants and trust and company service providers. Only businesses that provide the new designated services are regulated, not every business in those sectors. These businesses could enroll with AUSTRAC from 31 March 2026.
+
+  ## What to check when comparing providers
+
+  Firms that come under the Act for the first time need customer due diligence and screening in place. Ask vendors how their customer due diligence flow records the identity and risk information the reformed rules expect, and how their risk scoring maps to the factors in your risk assessment. Our [Australia ranking](/providers/australia/) lists reviewed providers that document checks through the government Document Verification Service.
+buyer_questions:
+  - How does your onboarding flow collect and verify the customer information that the reformed AML/CTF Act expects as part of initial customer due diligence?
+  - Can your risk model use the factors our risk assessment covers, such as customer type, designated service, delivery method and jurisdiction?
+  - Do you support the virtual asset services that came under the Act from 31 March 2026?
+  - Can the AML/CTF compliance officer and the approving senior manager see and sign off program changes in the tool?
+  - Where is customer data stored, and can it stay in Australia?
+faq:
+  - q: When did the AML/CTF reforms start?
+    a: For businesses already regulated, most changes started on 31 March 2026. New tranche two businesses take on obligations from 1 July 2026 and could enroll with AUSTRAC from 31 March 2026.
+  - q: Who is covered by tranche two?
+    a: Businesses that provide new designated services, which Home Affairs lists as real estate professionals, dealers in precious metals and stones, and professional service providers such as lawyers, conveyancers, accountants and trust and company service providers.
+  - q: Who enforces the AML/CTF Act?
+    a: AUSTRAC, which describes the Act as the main piece of legislation that regulates its functions and the obligations of the businesses it supervises.
+sources:
+  - title: Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (latest compilation)
+    publisher: Federal Register of Legislation, Australian Government
+    url: https://www.legislation.gov.au/C2006A00169/latest/text
+    accessed: 2026-11
+  - title: Overview of the AML/CTF Amendment Act
+    publisher: Australian Government, Department of Home Affairs
+    url: https://www.homeaffairs.gov.au/criminal-justice/Pages/overview-of-the-amlctf-amendment-act.aspx
+    accessed: 2026-11
+  - title: Changes to AML/CTF program requirements
+    publisher: Australian Government, Department of Home Affairs
+    url: https://www.homeaffairs.gov.au/criminal-justice/Pages/changes-to-amlctf-program-requirements.aspx
+    accessed: 2026-11
+  - title: Legislation
+    publisher: AUSTRAC
+    url: https://www.austrac.gov.au/about-us/legislation
+    accessed: 2026-11
+  - title: AML/CTF reform
+    publisher: AUSTRAC
+    url: https://www.austrac.gov.au/amlctf-reform
+    accessed: 2026-11
+author: andrii-klymenko
+published: 2026-11-18
+updated: 2026-11-18

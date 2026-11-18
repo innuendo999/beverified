@@ -1,0 +1,58 @@
+term: Money laundering reporting officer
+abbr: MLRO
+also_known_as: [Nominated officer, AML compliance officer]
+cluster: aml
+definition: A money laundering reporting officer (MLRO) is the person a regulated firm appoints to oversee its compliance with anti-money laundering rules and to receive staff reports of suspicion. In the UK the role usually also covers the nominated officer, who decides whether to report to the National Crime Agency.
+seo_description: "An MLRO oversees a firm's AML compliance and handles suspicion reports. UK rules (MLR regulation 21, FCA), the nominated officer and what to ask vendors."
+rankings: [aml, uk]
+related: [suspicious-activity-report, uk-money-laundering-regulations, aml-case-management, anti-money-laundering, risk-based-approach]
+body: |
+  ## What the MLRO does
+
+  The [FCA](https://www.fca.org.uk/firms/financial-crime/money-laundering-regulations) tells firms it supervises to appoint a Money Laundering Reporting Officer. It describes the MLRO as the focus for the firm's AML activity and the person who oversees the firm's compliance with its AML obligations. Sole traders with no employees do not have to appoint one.
+
+  Where the MLRO is also the nominated officer, they handle concerns raised inside the firm and are responsible for reporting suspicious activity to the National Crime Agency as a [suspicious activity report](/glossary/suspicious-activity-report/).
+
+  ## What the UK rules say
+
+  Two roles sit in the law. Under [regulation 21](https://www.legislation.gov.uk/uksi/2017/692/regulation/21) of the [UK Money Laundering Regulations 2017](/glossary/uk-money-laundering-regulations/), where it is appropriate to the size and nature of its business, a firm must appoint one individual who is a member of its board, or of senior management if there is no board, as the officer responsible for its compliance with the Regulations. Regulation 21(3) separately requires an individual in the firm to be appointed as a nominated officer. Under regulation 21(4), the firm must tell its supervisory authority who holds these roles within 14 days of the appointment.
+
+  The FCA describes the nominated officer as the person responsible for reporting suspicious activity to the National Crime Agency under Part 7 of the Proceeds of Crime Act 2002. In many firms the MLRO and the nominated officer are the same person, but the FCA page does not say they must be.
+
+  ## Common confusions
+
+  The MLRO is a UK term. Other regimes set out a similar role under another name. Australia's reformed rules require an AML/CTF compliance officer at management level to oversee the program day to day. Singapore's [MAS Notice 626](/glossary/mas-notice-626/) asks banks for an AML/CFT compliance officer at management level with enough resources and access to records.
+
+  For software buyers the role matters because the MLRO is usually the main user of [case management](/glossary/aml-case-management/) and reporting tools. A vendor can prepare a report and keep the evidence, but the decision to report stays with this person. AML platforms are compared in the [AML software ranking](/providers/aml/), and the [UK ranking](/providers/uk/) lists identity providers on the UK government's digital verification services register.
+buyer_questions:
+  - Can the MLRO see every escalated case in one queue, with the decision and reasons recorded?
+  - Does the tool keep a record of who referred a case, when, and what the MLRO decided, for audits by the supervisor?
+  - Can the MLRO produce management reports on alerts, cases and reports filed for the board?
+  - How do you restrict access to reporting decisions so that only the MLRO and named deputies can see them?
+faq:
+  - q: Is the MLRO the same as the nominated officer?
+    a: Often, but not always. UK law requires a nominated officer under regulation 21(3) of the Money Laundering Regulations, and the FCA asks firms to appoint an MLRO. Many firms give both roles to one person.
+  - q: Does every UK firm need an MLRO?
+    a: Firms the FCA supervises under the Money Laundering Regulations are expected to appoint one. The FCA says sole traders with no employees do not have to.
+  - q: How quickly must a UK firm tell its supervisor about a new appointment?
+    a: Within 14 days of the appointment, under regulation 21(4) of the Money Laundering Regulations 2017.
+sources:
+  - title: Money Laundering Regulations
+    publisher: Financial Conduct Authority
+    url: https://www.fca.org.uk/firms/financial-crime/money-laundering-regulations
+    accessed: 2026-11
+  - title: "SI 2017/692, regulation 21: Internal controls"
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/uksi/2017/692/regulation/21
+    accessed: 2026-11
+  - title: Changes to AML/CTF program requirements
+    publisher: Australian Government, Department of Home Affairs
+    url: https://www.homeaffairs.gov.au/criminal-justice/Pages/changes-to-amlctf-program-requirements.aspx
+    accessed: 2026-11
+  - title: "MAS Notice 626 (last revised 30 June 2025), paragraphs 15.10 and 15.11"
+    publisher: Monetary Authority of Singapore
+    url: https://www.mas.gov.sg/-/media/amld-amendments---30-june-2025/mas-notice-626.pdf
+    accessed: 2026-11
+author: andrii-klymenko
+published: 2026-11-18
+updated: 2026-11-18

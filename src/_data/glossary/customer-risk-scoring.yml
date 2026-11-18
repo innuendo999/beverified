@@ -1,0 +1,56 @@
+term: Customer risk scoring
+also_known_as: [Customer risk rating, Customer risk assessment, Customer risk profile]
+cluster: aml
+definition: Customer risk scoring is how a regulated firm rates each customer's money laundering and terrorist financing risk, usually as a score or a band such as low, medium or high, from factors like customer type, products used, geography and expected activity. The rating decides how much due diligence and monitoring the customer gets.
+seo_description: "Customer risk scoring rates each customer's AML risk from type, products and geography. What FinCEN, FFIEC, MAS and AUSTRAC rules say and what to ask vendors."
+rankings: [aml, aml/banks]
+related: [risk-based-approach, customer-due-diligence, enhanced-due-diligence, simplified-due-diligence, transaction-monitoring, perpetual-kyc]
+body: |
+  ## How customer risk scoring works
+
+  A risk score turns what a firm knows about a customer into a rating it can act on. Inputs usually include who the customer is, which products and channels they use, which countries are involved and how the account is expected to be used. Some findings move a customer up on their own: MAS Notice 626, for example, requires enhanced measures when a customer or its beneficial owner is a [PEP](/glossary/politically-exposed-person/). The output then drives the rest of the [risk-based approach](/glossary/risk-based-approach/): higher-rated customers get [enhanced due diligence](/glossary/enhanced-due-diligence/) and closer monitoring, lower-rated ones may qualify for simplified measures.
+
+  A score is not set once. Changes in activity, new screening hits or a periodic review should feed back into it, which is the idea behind [perpetual KYC](/glossary/perpetual-kyc/).
+
+  ## What the rules say
+
+  In the US, the [FinCEN CDD Rule](/glossary/fincen-cdd-rule/) asks banks to have procedures for understanding the nature and purpose of customer relationships for the purpose of developing a customer risk profile ([31 CFR 1020.210(a)(2)(v)(A)](https://www.law.cornell.edu/cfr/text/31/1020.210)). The [FFIEC BSA/AML examination manual](https://bsaaml.ffiec.gov/manual/AssessingComplianceWithBSARegulatoryRequirements/02) treats the customer risk profile, also called the customer risk rating, as the bank's own determination. It says there are no required risk profile categories. Banks should consider products and services, customers and entities, and geographic locations, may weight factors differently, and no single indicator is necessarily decisive.
+
+  Singapore's [MAS Notice 626](/glossary/mas-notice-626/) requires banks to identify and assess their money laundering and terrorist financing risks in relation to customers, countries, products and delivery channels, and to have systems to identify higher-risk customers who need enhanced measures. In Australia, the reformed [AML/CTF Act](/glossary/aml-ctf-act/) requires a risk assessment that considers customer types, designated services, delivery methods and jurisdictions, and keeps it up to date.
+
+  ## What to check when comparing providers
+
+  Most AML platforms let you configure a risk model, but they differ in how open it is. Ask whether you can see and change each factor and its weight, whether every score comes with the reasons behind it, and what events trigger a new score. A rating that nobody can explain is hard to defend when a supervisor asks why a customer was treated as low risk. The [AML software ranking](/providers/aml/) compares reviewed platforms.
+buyer_questions:
+  - Can we see and change every risk factor and its weight, or is the model fixed by you?
+  - Does each customer's score show the factors that produced it, in words an examiner can follow?
+  - Which events trigger a new score, such as a screening hit, a change in activity or a periodic review?
+  - Is every change to the model and to an individual customer's rating logged with who made it and why?
+  - Can we test a change to the model on our existing customers before it goes live?
+faq:
+  - q: Is there a required set of customer risk categories?
+    a: Not in the US. The FFIEC manual says there are no required risk profile categories, and each bank sets the number and detail of its categories to fit its size and complexity.
+  - q: What factors go into a customer risk score?
+    a: Regulators name customer type, products and services, delivery channels and geography. Banks may weight them differently, and the FFIEC manual says no single indicator is necessarily decisive.
+  - q: Is customer risk scoring the same as the risk-based approach?
+    a: No. The risk-based approach is the principle that controls should match risk. Customer risk scoring is one tool for applying it to individual customers.
+sources:
+  - title: "31 CFR 1020.210: Anti-money laundering program requirements for banks"
+    publisher: Legal Information Institute, Cornell Law School (text of the Code of Federal Regulations)
+    url: https://www.law.cornell.edu/cfr/text/31/1020.210
+    accessed: 2026-11
+  - title: "BSA/AML examination manual: Customer due diligence, overview"
+    publisher: Federal Financial Institutions Examination Council
+    url: https://bsaaml.ffiec.gov/manual/AssessingComplianceWithBSARegulatoryRequirements/02
+    accessed: 2026-11
+  - title: "MAS Notice 626 (last revised 30 June 2025), paragraphs 4 and 8"
+    publisher: Monetary Authority of Singapore
+    url: https://www.mas.gov.sg/-/media/amld-amendments---30-june-2025/mas-notice-626.pdf
+    accessed: 2026-11
+  - title: Changes to AML/CTF program requirements
+    publisher: Australian Government, Department of Home Affairs
+    url: https://www.homeaffairs.gov.au/criminal-justice/Pages/changes-to-amlctf-program-requirements.aspx
+    accessed: 2026-11
+author: andrii-klymenko
+published: 2026-11-18
+updated: 2026-11-18

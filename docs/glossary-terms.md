@@ -33,6 +33,10 @@ Slug, term, cluster, capability key (generated provider table), ranking keys, ex
 | transaction-monitoring | Transaction monitoring | aml | transaction_monitoring | aml, aml/banks | /guide/transaction-monitoring-a-complete-guide/ |
 | aml-case-management | AML case management | aml | case_management | aml | |
 | suspicious-activity-report | Suspicious activity report (SAR) | aml | | aml | |
+| customer-risk-scoring | Customer risk scoring | aml | | aml, aml/banks | |
+| money-laundering-reporting-officer | Money laundering reporting officer (MLRO) | aml | | aml, uk | |
+| currency-transaction-report | Currency transaction report (CTR) | aml | | aml, aml/banks | |
+| structuring | Structuring | aml | | aml, aml/banks | /guide/transaction-monitoring-a-complete-guide/ |
 | know-your-business | Know Your Business (KYB) | kyb | | kyb | /guide/perpetual-kyb/ |
 | ultimate-beneficial-owner | Ultimate beneficial owner (UBO) | kyb | kyb_ubo | kyb | /news/eu-member-states-miss-deadline-on-public-access-to-beneficial-ownership-registers/ |
 | company-registry-check | Company registry check | kyb | kyb_registry | kyb | |
@@ -62,6 +66,8 @@ Slug, term, cluster, capability key (generated provider table), ranking keys, ex
 | eidas-2 | eIDAS 2 and the EU Digital Identity Wallet | standards | | identity-verification | |
 | nist-sp-800-63 | NIST SP 800-63 | standards | | identity-verification | |
 | uk-money-laundering-regulations | UK Money Laundering Regulations 2017 (MLR) | standards | | aml | /news/uk-lifts-money-laundering-threshold/ |
+| aml-ctf-act | AML/CTF Act (Australia) | standards | | australia, aml | |
+| mas-notice-626 | MAS Notice 626 | standards | | aml, aml/banks | |
 | soc-2 | SOC 2 | standards | soc2 | identity-verification, aml | |
 | iso-27001 | ISO/IEC 27001 | standards | iso_27001 | identity-verification, aml | |
 | iso-iec-30107-3 | ISO/IEC 30107-3 | standards | liveness_pad | liveness-detection | |
