@@ -61,7 +61,7 @@ Sources:
 
 ## Full review, 18 Nov 2026 (after the owner's screenshots)
 
-The owner sent three full-page screenshots of ledgerbrain.io (landing page, homepage with pricing and FAQ, Travel Rule demo workspace). They show a Travel Rule module, so the review went ahead. New record `src/_data/providers/ledgerbrain.yml`, `link.type: none`, categories `travel-rule` only. Logo: brain mark supplied by the owner as SVG on 18 Nov 2026, rendered to `src/assets/img/logos/ledgerbrain.png` (512 px, transparent); `logoTiles.json` regenerated; no wordmark.
+The owner sent three full-page screenshots of ledgerbrain.io (landing page, homepage with pricing and FAQ, Travel Rule demo workspace). They show a Travel Rule module, so the review went ahead. New record `src/_data/providers/ledgerbrain.yml`, `link.type: none`, categories `travel-rule` only. Logo: brain mark from the provider site (https://ledgerbrain.io/lb-logo.svg), supplied by the owner as SVG on 18 Nov 2026, rendered to `src/assets/img/logos/ledgerbrain.png` (512 px, transparent); `logoTiles.json` regenerated; no wordmark.
 
 Score **3.1 (Good)**, Travel Rule rubric v3.0 (`site.json` → `v3.rubricTravel`):
 
