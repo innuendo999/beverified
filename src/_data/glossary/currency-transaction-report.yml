@@ -1,0 +1,63 @@
+term: Currency transaction report
+abbr: CTR
+also_known_as: [FinCEN CTR, FinCEN Form 112, Cash transaction report]
+cluster: aml
+definition: A currency transaction report (CTR) is a report that a US financial institution files with FinCEN for each transaction in currency of more than $10,000. Several cash transactions by or for the same person on one business day count as one. The report is due within 15 days.
+seo_description: "A CTR is filed with FinCEN for cash transactions over $10,000. The aggregation rule, the 15-day deadline, how it differs from a SAR, and vendor questions."
+rankings: [aml, aml/banks]
+related: [structuring, suspicious-activity-report, transaction-monitoring, anti-money-laundering, customer-due-diligence]
+body: |
+  ## How the CTR rule works
+
+  The rule sits in [31 CFR 1010.311](https://www.law.cornell.edu/cfr/text/31/1010.311). Each financial institution other than a casino must file a report of each deposit, withdrawal, exchange of currency or other payment or transfer that involves a transaction in currency of more than $10,000. Casinos are left out of this section. The trigger is a transaction in currency, so the cash itself, not the size of the payment.
+
+  The amount is not judged one transaction at a time. Under [31 CFR 1010.313](https://www.law.cornell.edu/cfr/text/31/1010.313), multiple currency transactions are treated as a single transaction when the institution knows they are made by or on behalf of the same person and together come to more than $10,000 in cash in, or cash out, during one business day. Deposits made at night, over a weekend or on a holiday count toward the next business day. That is why a bank needs to link cash activity across tellers, branches and accounts that belong to one customer.
+
+  The filing deadline is in [31 CFR 1010.306](https://www.law.cornell.edu/cfr/text/31/1010.306): the report must be filed within 15 days following the day on which the reportable transaction occurred. FinCEN says the CTR (FinCEN Form 112) is filed electronically through the BSA E-Filing System and that it no longer accepts legacy paper reports.
+
+  ## CTR, SAR and structuring
+
+  A CTR is a routine report. It is filed because of the amount, not because anyone suspects the customer. A [suspicious activity report](/glossary/suspicious-activity-report/) is different: it is filed because the bank knows or suspects something is wrong, and the US threshold for banks starts at $5,000.
+
+  The two meet when a customer tries to stay under the CTR line. Breaking up cash so that no CTR is filed is [structuring](/glossary/structuring/), which is a crime in itself and a classic reason to file a SAR. A bank's monitoring therefore looks at more than the daily total. It also looks for repeated cash amounts just under $10,000 across days, branches or related accounts.
+
+  ## What to check when comparing providers
+
+  CTR filing is usually handled by a bank's core or BSA reporting system, while [transaction monitoring](/glossary/transaction-monitoring/) tools look for the patterns around it. When you compare vendors, ask how they aggregate cash by customer across accounts and branches, how they treat after-hours and weekend deposits, and whether the same data feeds both the CTR and the structuring rules. Reviewed AML platforms are compared in the [AML for banks ranking](/providers/aml/banks/).
+buyer_questions:
+  - How do you aggregate cash transactions by customer across accounts, branches and channels within one business day?
+  - Do you move night, weekend and holiday deposits to the next business day, as 31 CFR 1010.313 describes?
+  - Can the tool prepare a FinCEN CTR for BSA E-Filing, or does it only flag the transactions?
+  - Which rules look for cash amounts kept just under $10,000 across several days or locations, and can we tune them?
+  - Do the CTR aggregation and the structuring alerts use the same customer and account links?
+faq:
+  - q: What is the CTR threshold?
+    a: More than $10,000 in currency. A report is required for a single cash transaction above that amount, and for several cash transactions by or for the same person that add up to more than $10,000 on one business day.
+  - q: Is a CTR the same as a SAR?
+    a: No. A CTR is filed because of the cash amount, with no suspicion needed. A SAR is filed when the institution knows or suspects that a transaction is linked to crime or is designed to evade reporting.
+  - q: How long does a bank have to file a CTR?
+    a: The report must be filed within 15 days following the day on which the reportable transaction occurred, under 31 CFR 1010.306.
+sources:
+  - title: "31 CFR 1010.311: Filing obligations for reports of transactions in currency"
+    publisher: Legal Information Institute, Cornell Law School (text of the Code of Federal Regulations)
+    url: https://www.law.cornell.edu/cfr/text/31/1010.311
+    accessed: 2026-11
+  - title: "31 CFR 1010.313: Aggregation of currency transactions"
+    publisher: Legal Information Institute, Cornell Law School (text of the Code of Federal Regulations)
+    url: https://www.law.cornell.edu/cfr/text/31/1010.313
+    accessed: 2026-11
+  - title: "31 CFR 1010.306: Filing of reports"
+    publisher: Legal Information Institute, Cornell Law School (text of the Code of Federal Regulations)
+    url: https://www.law.cornell.edu/cfr/text/31/1010.306
+    accessed: 2026-11
+  - title: "FinCEN Ruling 2005-6: Suspicious activity reporting (structuring)"
+    publisher: Financial Crimes Enforcement Network
+    url: https://www.fincen.gov/resources/statutes-regulations/administrative-rulings/suspicious-activity-reporting-structuring
+    accessed: 2026-11
+  - title: Filing information (BSA E-Filing, FinCEN CTR)
+    publisher: Financial Crimes Enforcement Network
+    url: https://www.fincen.gov/resources/filing-information
+    accessed: 2026-11
+author: andrii-klymenko
+published: 2026-11-18
+updated: 2026-11-18

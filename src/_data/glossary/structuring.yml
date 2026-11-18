@@ -1,0 +1,54 @@
+term: Structuring
+also_known_as: [Structuring transactions, Cash structuring]
+cluster: aml
+definition: Structuring means conducting cash transactions in a way meant to evade a reporting requirement, most often by splitting a sum over $10,000 into smaller amounts so that no currency transaction report is filed. In the US it is a federal crime even when the money itself is legal.
+seo_description: "Structuring is splitting cash to avoid a $10,000 CTR. The US definition, 31 U.S.C. 5324 penalties, how banks report it and what to ask monitoring vendors."
+rankings: [aml, aml/banks]
+related: [currency-transaction-report, suspicious-activity-report, transaction-monitoring, anti-money-laundering, aml-case-management]
+body: |
+  ## What counts as structuring
+
+  The US definition is in [31 CFR 1010.100(xx)](https://www.law.cornell.edu/cfr/text/31/1010.100). A person structures a transaction if, alone or with others, they conduct or try to conduct currency transactions in any amount, at one or more financial institutions, on one or more days, in any manner, for the purpose of evading the [currency transaction report](/glossary/currency-transaction-report/) rules. Splitting a single sum over $10,000 into smaller amounts is one example, not the only one. The transactions do not have to exceed $10,000 at any one institution on any one day.
+
+  The test is purpose. A customer who deposits $9,000 on Monday because that is what the shop took is not structuring. A customer who deposits $9,900 on three days in a row so that the bank files no report is.
+
+  FinCEN's [Ruling 2005-6](https://www.fincen.gov/resources/statutes-regulations/administrative-rulings/suspicious-activity-reporting-structuring) describes two basic forms. In the first, a customer deposits currency on several days in amounts under $10,000, for example $9,900. The deposits fall on different business days, so they are not added up for the CTR, but they still meet the definition. In the second, a customer makes several transactions on one day or over several days, possibly at different branches, to avoid a CTR or another Bank Secrecy Act requirement, such as recordkeeping for funds transfers of $3,000 or more.
+
+  ## The law and the reporting duty
+
+  [31 U.S.C. 5324](https://www.law.cornell.edu/uscode/text/31/5324) makes it a crime to structure, or help structure, transactions with financial institutions to evade a reporting requirement. The penalty is a fine, up to 5 years in prison, or both. If the offense comes with a violation of another US law, or is part of a pattern of illegal activity involving more than $100,000 in a 12-month period, the maximum fine doubles and the prison term can reach 10 years.
+
+  For the bank, structuring is a reason to report. The same ruling says a bank should file a [suspicious activity report](/glossary/suspicious-activity-report/) when a transaction involves or aggregates at least $5,000 and the bank knows, suspects or has reason to suspect that it is designed to evade Bank Secrecy Act requirements. The bank does not decide whether a crime took place. It reports what it sees.
+
+  ## What to check when comparing providers
+
+  Structuring is found by [transaction monitoring](/glossary/transaction-monitoring/), not by the CTR itself. Ask vendors which rules look for cash kept just under the threshold, over how many days the rules look back, and whether they link deposits by related people and accounts. The [AML for banks ranking](/providers/aml/banks/) compares reviewed platforms.
+buyer_questions:
+  - Which rules detect cash amounts kept just under $10,000, and over how many days do they look back?
+  - Can the rules link deposits made by related customers, at different branches or into different accounts?
+  - "How do you separate a business with steady cash takings from a customer who is avoiding the report?"
+  - Does a structuring alert open a case with the transactions already attached, ready for a SAR decision?
+  - Can we test a change to the structuring rules on our historical data before it goes live?
+faq:
+  - q: Is structuring illegal if the money is legal?
+    a: Yes, in the US. 31 U.S.C. 5324 makes structuring itself an offense when the purpose is to evade a reporting requirement, whatever the source of the money.
+  - q: Does a bank have to report structuring?
+    a: FinCEN Ruling 2005-6 says a bank should file a SAR when a transaction involves or aggregates at least $5,000 and the bank knows, suspects or has reason to suspect it is designed to evade Bank Secrecy Act requirements.
+  - q: Can deposits on different days be structuring?
+    a: Yes. The definition covers transactions on one or more days and at one or more institutions, and FinCEN's ruling gives deposits of $9,900 on several days as an example.
+sources:
+  - title: "31 CFR 1010.100(xx): General definitions, structure (structuring)"
+    publisher: Legal Information Institute, Cornell Law School (text of the Code of Federal Regulations)
+    url: https://www.law.cornell.edu/cfr/text/31/1010.100
+    accessed: 2026-11
+  - title: "31 U.S.C. 5324: Structuring transactions to evade reporting requirement prohibited"
+    publisher: Legal Information Institute, Cornell Law School (text of the United States Code)
+    url: https://www.law.cornell.edu/uscode/text/31/5324
+    accessed: 2026-11
+  - title: "FinCEN Ruling 2005-6: Suspicious activity reporting (structuring)"
+    publisher: Financial Crimes Enforcement Network
+    url: https://www.fincen.gov/resources/statutes-regulations/administrative-rulings/suspicious-activity-reporting-structuring
+    accessed: 2026-11
+author: andrii-klymenko
+published: 2026-11-18
+updated: 2026-11-18

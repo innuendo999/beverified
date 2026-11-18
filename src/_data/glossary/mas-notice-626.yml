@@ -1,0 +1,51 @@
+term: MAS Notice 626
+also_known_as: [Notice 626, "MAS Notice 626 on Prevention of Money Laundering and Countering the Financing of Terrorism, Banks"]
+cluster: standards
+definition: MAS Notice 626 is the Monetary Authority of Singapore's anti-money laundering and counter-terrorist financing notice for banks. It sets the rules on risk assessment, customer due diligence, politically exposed persons, wire transfers, record keeping and suspicious transaction reporting. It was last revised on 30 June 2025.
+seo_description: "MAS Notice 626 sets Singapore's AML/CFT rules for banks: risk assessment, CDD, PEPs, wire transfers, STRs. Key paragraphs and what to ask KYC and AML vendors."
+rankings: [aml, aml/banks]
+related: [customer-due-diligence, customer-risk-scoring, enhanced-due-diligence, politically-exposed-person, suspicious-activity-report, money-laundering-reporting-officer]
+body: |
+  ## Who it applies to
+
+  [Notice 626](https://www.mas.gov.sg/regulation/notices/notice-626), titled Prevention of Money Laundering and Countering the Financing of Terrorism for banks, applies to locally incorporated full banks, branches of foreign full banks, locally incorporated wholesale banks and wholesale bank branches in Singapore. MAS issues it under section 16 of the Financial Services and Markets Act 2022. The current version was last revised on 30 June 2025, with the amendments in force from 1 July 2025. MAS also publishes separate guidelines to the notice.
+
+  ## What the notice requires
+
+  The [full text](https://www.mas.gov.sg/-/media/amld-amendments---30-june-2025/mas-notice-626.pdf) is organised by obligation. The parts most relevant to KYC and AML tools:
+
+  - **Risk assessment (paragraph 4).** A bank must identify, assess and understand its money laundering and terrorist financing risks in relation to customers, countries, products and delivery channels, document the assessment and keep it up to date. New products and technologies need a risk assessment before launch (paragraph 5).
+  - **Customer due diligence (paragraph 6).** No anonymous or fictitious accounts. A bank must identify and verify the customer, connected parties and beneficial owners using reliable, independent source data, documents or information. CDD is also triggered for non-account holders on transactions over S$20,000 and on wire transfers over S$1,500. Where the bank never meets the customer, its measures must be at least as robust as for face-to-face contact.
+  - **Simplified and enhanced CDD (paragraphs 7 and 8).** [Simplified due diligence](/glossary/simplified-due-diligence/) is allowed only where the bank is satisfied the risk is low. For [politically exposed persons](/glossary/politically-exposed-person/), the bank needs senior management approval, checks on source of wealth and source of funds, and enhanced monitoring.
+  - **Reliance on third parties (paragraph 9).** A bank may rely on a supervised third party for CDD but stays responsible, and may not rely on a third party for ongoing monitoring.
+  - **Wire transfers, records and reporting (paragraphs 11, 12 and 14).** Originator details travel with wire transfers, records are kept for at least 5 years, and suspicious transactions, including attempted ones, are reported promptly to the Suspicious Transaction Reporting Office (STRO) whatever the amount.
+  - **Compliance (paragraph 15).** A bank appoints an AML/CFT compliance officer at management level with adequate resources and access to records.
+
+  ## What to check when comparing providers
+
+  For remote onboarding, ask vendors how their checks meet the face-to-face standard in paragraph 6. The ban on relying on third parties for ongoing monitoring matters too: a vendor can run your monitoring, but the bank owns it. We do not yet rank providers for Singapore; the [AML for banks ranking](/providers/aml/banks/) compares reviewed AML platforms.
+buyer_questions:
+  - How do your non-face-to-face checks meet the standard in paragraph 6 of MAS Notice 626, which asks for measures at least as robust as face-to-face contact?
+  - Can your tool record senior management approval, source of wealth and source of funds for a PEP, as paragraph 8 describes?
+  - Do you keep CDD and transaction records for at least 5 years after the relationship ends, with export for the bank?
+  - Does your wire transfer screening carry and check originator details above and below S$1,500?
+  - Can a case be prepared as a suspicious transaction report for STRO, including attempted transactions?
+faq:
+  - q: Who does MAS Notice 626 apply to?
+    a: Banks in Singapore. It covers locally incorporated full and wholesale banks and the Singapore branches of foreign full and wholesale banks.
+  - q: How long must banks keep records under MAS Notice 626?
+    a: For at least 5 years after the business relationship ends or the transaction is completed, under paragraph 12.
+  - q: Can a bank rely on a vendor for ongoing monitoring under MAS Notice 626?
+    a: A bank may use a supervised third party to perform CDD, but paragraph 9.3 says no bank shall rely on a third party to conduct ongoing monitoring. The bank can use software for it, but the obligation stays with the bank.
+sources:
+  - title: "Notice 626: Prevention of Money Laundering and Countering the Financing of Terrorism, Banks"
+    publisher: Monetary Authority of Singapore
+    url: https://www.mas.gov.sg/regulation/notices/notice-626
+    accessed: 2026-11
+  - title: "MAS Notice 626 (last revised 30 June 2025), full text"
+    publisher: Monetary Authority of Singapore
+    url: https://www.mas.gov.sg/-/media/amld-amendments---30-june-2025/mas-notice-626.pdf
+    accessed: 2026-11
+author: andrii-klymenko
+published: 2026-11-18
+updated: 2026-11-18
