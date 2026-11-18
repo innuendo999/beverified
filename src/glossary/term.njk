@@ -50,7 +50,19 @@
       {%- if rankingsFor.length %}
       <section class="art__block" aria-labelledby="rr-h">
         <h2 id="rr-h" class="h-sub">Compare providers</h2>
-        <div class="grid-3">{% for r in rankingsFor %}<a class="card cat-card" href="{{ r.c.url }}"><b>{{ r.c.breadcrumb_label }}</b><span>See all {{ r.n }} providers →</span></a>{% endfor %}</div>
+        {%- for r in rankingsFor %}
+        <div class="gl__rank">
+          <p class="gl__note"><a href="{{ r.c.url }}">{{ r.c.breadcrumb_label }}</a>{% if r.top.length %}: the top {{ r.top.length }} of {{ r.n }} ranked providers{% endif %}</p>
+          {%- if r.top.length %}
+          <ol class="card nf__list gl__offer">
+            {%- for x in r.top %}
+            <li><span class="art__prov"><strong>#{{ x.pos }} {{ x.name }}</strong></span><span class="gl__status">{% if x.score != null %}{{ r.label }} {{ x.score | score1 }} / 5{% endif %}</span><a href="/providers/{{ x.slug }}/">Review →</a></li>
+            {%- endfor %}
+          </ol>
+          {%- endif %}
+          <p class="gl__more"><a href="{{ r.c.url }}">See all {{ r.n }} providers →</a></p>
+        </div>
+        {%- endfor %}
       </section>
       {%- endif %}
 

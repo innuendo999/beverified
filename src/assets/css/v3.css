@@ -1789,6 +1789,8 @@ html:not(.mm-js) .mm-item:hover .mm-panel, html:not(.mm-js) .mm-item:focus-withi
   .r2-row__site { flex-direction: column; align-items: stretch; }
   .r2-table td[data-label="Best for"] { min-width: 0; }
 }
+.gl__rank + .gl__rank { margin-top: 24px; }
+.gl__more { margin: 10px 0 0; font-size: 15px; font-weight: 500; }
 
 /* Visible score label (audit 18 Nov 2026): every score says which score it is. */
 .score-lbl { display: block; font-size: 12px; font-weight: 400; letter-spacing: 0; color: var(--muted); line-height: 1.3; }
