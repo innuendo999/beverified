@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-17T13:33:36.384Z",
+  "generated": "2026-11-18T13:09:57.908Z",
   "items": [
     {
-      "id": "62c8140523129fc9",
-      "title": "Swedish privacy regulator rejects proposed national face biometrics register",
-      "url": "https://www.biometricupdate.com/202611/swedish-privacy-regulator-rejects-proposed-national-face-biometrics-register",
-      "date": "2026-11-16",
+      "id": "e11d02cc9028dda7",
+      "title": "UK begins testing DVS for checks at scale, publishes guidance for data sharing",
+      "url": "https://www.biometricupdate.com/202611/uk-begins-testing-dvs-for-checks-at-scale-publishes-guidance-for-data-sharing",
+      "date": "2026-11-17",
       "source": "biometricupdate",
       "source_name": "Biometric Update",
       "publisher": "Biometric Update",
@@ -14,39 +14,30 @@
       "providers": [],
       "region": "Global",
       "rule": "regulation",
-      "matched": "eidas",
+      "matched": "trust framework",
       "route": "news",
       "priority": 1,
-      "reason": "regulator consultation response, not a new rule: IMY's remissvar of 22 Oct 2026 (IMY-2026-12007, Ju2026/01595) on the memo 'Ett statligt identitetskort' opposes storing facial biometrics in the Swedish passport and ID card register. Proposal not adopted; no KYC/AML obligation for private firms. Primary: https://www.regeringen.se/contentassets/fb845236f1644441b825770e07d07cde/integritetsskyddsmyndigheten.pdf",
-      "first_seen": "2026-11-17",
-      "status": "dropped"
+      "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
+      "first_seen": "2026-11-18"
     },
     {
-      "id": "bdc0bb7413ca91c0",
-      "title": "Chainalysis Data Breach: All Users Exposed [2026]",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPcTAxUHdsV2hQLU01Wmo2YXdQb3d2UUxGMnZpMzE0VnNBNHllZ2NHU3M4YldnNGVPbTEzczhmT1JtbFEyM1R3OGJ6ZW5wMHY5ZUZJRnFfb0QtXzV0aGNnbEg3WnlERVJBRHlDbUJsRHRwUGZqdzRNYWlGWHFWOW12UDRwaTlwT2c?oc=5",
-      "date": "2026-11-14",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "shattered.io",
+      "id": "f9efb38222f66c96",
+      "title": "Entrust: Identity fraud is moving beyond one-time verification",
+      "url": "https://www.biometricupdate.com/202611/entrust-identity-fraud-is-moving-beyond-one-time-verification",
+      "date": "2026-11-17",
+      "source": "biometricupdate",
+      "source_name": "Biometric Update",
+      "publisher": "Biometric Update",
       "tier": 2,
       "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": null,
-          "name": "Chainalysis",
-          "reviewed": false
-        }
-      ],
+      "providers": [],
       "region": "Global",
-      "rule": "provider-incident",
-      "matched": "breach",
-      "route": "incident",
-      "priority": 1,
-      "reason": "same Chainalysis breach already in src/_data/incidents.yml (chainalysis-2026-10, PR #126); Chainalysis notice re-checked 2026-11-18: latest dated update still 10 Nov 2026, no root cause or user count, nothing new to add",
-      "first_seen": "2026-11-17",
-      "status": "dropped",
-      "merged-with": "2dbc64dbc73c8eff"
+      "rule": "threat-research",
+      "matched": "identity fraud",
+      "route": "research-check",
+      "priority": 3,
+      "reason": "Threat research: only if a lab, regulator or academic source is behind it.",
+      "first_seen": "2026-11-18"
     },
     {
       "id": "51f492715f53e8e1",
@@ -129,6 +120,53 @@
       "priority": 3,
       "reason": "Routine designations go to the monthly digest; programme changes and crypto actions can be news.",
       "first_seen": "2026-11-16"
+    },
+    {
+      "id": "62c8140523129fc9",
+      "title": "Swedish privacy regulator rejects proposed national face biometrics register",
+      "url": "https://www.biometricupdate.com/202611/swedish-privacy-regulator-rejects-proposed-national-face-biometrics-register",
+      "date": "2026-11-16",
+      "source": "biometricupdate",
+      "source_name": "Biometric Update",
+      "publisher": "Biometric Update",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "regulation",
+      "matched": "eidas",
+      "route": "news",
+      "priority": 1,
+      "reason": "regulator consultation response, not a new rule: IMY's remissvar of 22 Oct 2026 (IMY-2026-12007, Ju2026/01595) on the memo 'Ett statligt identitetskort' opposes storing facial biometrics in the Swedish passport and ID card register. Proposal not adopted; no KYC/AML obligation for private firms. Primary: https://www.regeringen.se/contentassets/fb845236f1644441b825770e07d07cde/integritetsskyddsmyndigheten.pdf",
+      "first_seen": "2026-11-17",
+      "status": "dropped"
+    },
+    {
+      "id": "bdc0bb7413ca91c0",
+      "title": "Chainalysis Data Breach: All Users Exposed [2026]",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPcTAxUHdsV2hQLU01Wmo2YXdQb3d2UUxGMnZpMzE0VnNBNHllZ2NHU3M4YldnNGVPbTEzczhmT1JtbFEyM1R3OGJ6ZW5wMHY5ZUZJRnFfb0QtXzV0aGNnbEg3WnlERVJBRHlDbUJsRHRwUGZqdzRNYWlGWHFWOW12UDRwaTlwT2c?oc=5",
+      "date": "2026-11-14",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "shattered.io",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Chainalysis",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "provider-incident",
+      "matched": "breach",
+      "route": "incident",
+      "priority": 1,
+      "reason": "same Chainalysis breach already in src/_data/incidents.yml (chainalysis-2026-10, PR #126); Chainalysis notice re-checked 2026-11-18: latest dated update still 10 Nov 2026, no root cause or user count, nothing new to add",
+      "first_seen": "2026-11-17",
+      "status": "dropped",
+      "merged-with": "2dbc64dbc73c8eff"
     },
     {
       "id": "0745f58e17d2fc84",
