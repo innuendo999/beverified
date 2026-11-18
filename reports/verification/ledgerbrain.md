@@ -58,3 +58,45 @@ Sources:
 - `/know-your-agent` metadata: "agent screening", "agent risk reports". It is a risk report on an agent, not a delegation or permission control product; the KYA 1.0 fit is weaker than the first check suggested.
 
 **Conclusion unchanged:** one page title mentions Travel Rule, with no readable product description, protocol, network or wallet proof. That is not enough for a Travel Rule review or a ranking place. The owner can open `ledgerbrain.io/compliance` in a browser; if it names protocols or networks, a review can go ahead.
+
+## Full review, 18 Nov 2026 (after the owner's screenshots)
+
+The owner sent three full-page screenshots of ledgerbrain.io (landing page, homepage with pricing and FAQ, Travel Rule demo workspace). They show a Travel Rule module, so the review went ahead. New record `src/_data/providers/ledgerbrain.yml`, `link.type: none`, categories `travel-rule` only, logo null (owner to supply).
+
+Score **3.1 (Good)**, Travel Rule rubric v3.0 (`site.json` → `v3.rubricTravel`):
+
+| Criterion | Weight | Score | Why |
+|---|---|---|---|
+| Compliance & certifications | 25 | 3.4 | ISO/IEC 27001 badge only (no certificate, body or scope), no SOC 2, legal pages exist |
+| Coverage | 20 | 2.6 | IVMS-101, directory and due diligence, 14 chains; no named protocol or network, no fallback, no self-hosted wallet proof |
+| Pricing transparency | 20 | 3.3 | Screening plans and x402 price published; Travel Rule only in quoted Enterprise |
+| Integration & API depth | 15 | 3.2 | Public OpenAPI, MCP, x402; no Travel Rule API docs or sandbox |
+| Support responsiveness | 10 | 3.0 | Support levels per plan, no hours or SLA |
+| Track record | 10 | 3.0 | Sixpence since 2020; LedgerBrain new in 2026, no Travel Rule customer, no reviews |
+| **Weighted** | | **3.11, rounds to 3.1** | |
+
+Ranking: **#9 of 10** in `travel-rule`, after WIDTH (3.4) and above Block Infrastructure (3.0), which moves from #9 to #10. It does not rank above any provider with a higher or equal score.
+
+### What the screenshots show (vendor-stated)
+
+- Hero: "Screen deposits and withdrawals, run counterparty due diligence, and exchange IVMS-101 Travel Rule messages", "built for VASPs and banks", "No sales call required".
+- Homepage: Travel Rule card "Screen counterparties. Control message release. Keep the evidence."; release review with institution screening, sanctions and PEP, destination wallet risk, "Release approved", IVMS-101, PDF audit record; counterparty labelled "Verified Envoy node".
+- Demo workspace (`/travel-rule`): Inbox, Needs review, Sent, Awaiting response, Completed, Rejected, Expired, Directory, Due diligence, Release reviews; transfers marked "Hosted/direct"; sender and receiver fields (name, customer ID, address, wallet address).
+- Supported networks: 14 blockchains (Bitcoin, Ethereum, XRP, Avalanche, Arbitrum, Optimism, Tron, Polygon, BNB Chain, Solana, Cardano, Base, Litecoin, Dogecoin, Bitcoin Cash), not Travel Rule networks.
+- Pricing: Basic $115/month (500 credits), Standard $230 (1,250), Compliance $460 (3,000), annual 20% less; Travel Rule listed only under Enterprise (custom pricing).
+- Footer: ISO 27001 "Certified" badge, no certificate link.
+- FAQ "How does Travel Rule compliance work on the platform?" is collapsed; its answer was not read.
+
+### Ranking card (`travel-rule`)
+
+Added at #9, `award: null` (proposed "Best for Screening-First Teams"), `legacy_price_shown: Enterprise plan, on request`.
+
+### Other changes
+
+- `src/_data/travelRuleFit.yml`: deployment reading for `ledgerbrain` (hosted, no self-hosted option found).
+- `src/_data/categories/travel-rule.yml`: SEO description lists LedgerBrain; quick answer count 9 → 10. No capability matrix on the page (`capability_columns: []`).
+- `tracked.yml`: LedgerBrain was not listed.
+
+### Score flag
+
+Coverage moves most: if the collapsed FAQ or a sales answer names TRISA (Envoy), TRP or another network, and that network confirms it, Coverage could rise to about 3.3 to 3.5 and the score to about 3.2 to 3.3. A published ISO/IEC 27001 certificate would raise Compliance.

@@ -48,6 +48,7 @@ deploy:
   ospree: { self: not_found, hosted: yes, short: Hosted, fact: Self-hosted option }
   blockpass: { self: not_found, hosted: yes, short: Hosted, fact: Self-hosted option }
   width: { self: not_found, hosted: yes, short: Hosted, fact: Self-hosted option }
+  ledgerbrain: { self: not_found, hosted: yes, short: Hosted, fact: Self-hosted option }
 
 # Published prices, where capabilities.published_pricing is missing
 price:
