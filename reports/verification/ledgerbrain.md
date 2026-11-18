@@ -48,3 +48,13 @@ Sources:
 - https://sixpence.io/
 - https://ledgercore.io/
 - https://ledgerbrain.io/waitlist
+
+## Second search, 18 Nov 2026 (owner asked to search again)
+
+- `ledgerbrain.io/sitemap.xml` lists 156 URLs: product pages `/compliance`, `/know-your-agent`, `/x402`, `/mcp`, `/agentic-payments`, `/live-prices`, `/partners`, `/about`, legal pages dated 5 Nov 2026 and about 135 `/learn/` articles. No page named for Travel Rule.
+- `/compliance` has the page title "KYT, Travel Rule & Entity Due Diligence". It is the only place where LedgerBrain itself names Travel Rule. The page body renders by script and our fetcher saw only the title, so what the Travel Rule part does is unknown. Rendering it in Chromium was refused by this session's network policy (403 on `ledgerbrain.io`), so we did not try another route.
+- Public API (`api.ledgercore.io/openapi.json`, version 1.0.0, contact "LedgerLink Team", info@ledgerlink.io) has five paid endpoints: KYT report, KYE report, Know Your Agent (KYA) risk report (grade A to E from wallet, transaction, principal, registry, social and marketplace evidence), KYA marketplace trace, and a precious metals price. The x402 catalog prices each compliance report at $0.10 USDC on Base. No Travel Rule, IVMS101, VASP or originator/beneficiary endpoint.
+- `/partners` metadata names Silver Sixpence (Pty) Ltd as the publisher. No partner is named.
+- `/know-your-agent` metadata: "agent screening", "agent risk reports". It is a risk report on an agent, not a delegation or permission control product; the KYA 1.0 fit is weaker than the first check suggested.
+
+**Conclusion unchanged:** one page title mentions Travel Rule, with no readable product description, protocol, network or wallet proof. That is not enough for a Travel Rule review or a ranking place. The owner can open `ledgerbrain.io/compliance` in a browser; if it names protocols or networks, a review can go ahead.
