@@ -18,7 +18,7 @@ seoTitle: "Page not found | BeVerified"
     <div class="nf__label">Popular reviews</div>
     <ul class="card nf__list">
       {%- for p in popular %}
-      <li><span>{% if p.logo.wordmark %}<img src="{{ p.logo.wordmark }}" alt="{{ p.name }}">{% else %}<strong>{{ p.name }}</strong>{% endif %}</span><b>{{ p.score | score1 }}</b><a href="/providers/{{ p.slug }}/">Read review →</a></li>
+      <li><span>{% if p.logo.wordmark %}<img src="{{ p.logo.wordmark }}" alt="{{ p.name }}">{% else %}<strong>{{ p.name }}</strong>{% endif %}</span><b><span class="score-lbl score-lbl--in">Score</span>{{ p.score | score1 }}</b><a href="/providers/{{ p.slug }}/">Read review →</a></li>
       {%- endfor %}
     </ul>
   </div>

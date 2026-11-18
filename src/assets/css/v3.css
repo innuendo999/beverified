@@ -1791,3 +1791,9 @@ html:not(.mm-js) .mm-item:hover .mm-panel, html:not(.mm-js) .mm-item:focus-withi
 }
 .gl__rank + .gl__rank { margin-top: 24px; }
 .gl__more { margin: 10px 0 0; font-size: 15px; font-weight: 500; }
+
+/* Visible score label (audit 18 Nov 2026): every score says which score it is. */
+.score-lbl { display: block; font-size: 12px; font-weight: 400; letter-spacing: 0; color: var(--muted); line-height: 1.3; }
+.score-lbl--in { display: inline; margin-right: 5px; }
+.top-card__score { flex-wrap: wrap; }
+.top-card__score .score-lbl { flex-basis: 100%; }

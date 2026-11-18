@@ -11,6 +11,7 @@ layout: v3.njk
 {%- include "v3/review-v4.njk" %}
 {%- else %}
 
+<main id="main">
 <div class="container">
   <nav class="breadcrumb" aria-label="Breadcrumb">
     <ol>
@@ -83,7 +84,7 @@ layout: v3.njk
 </nav>
 
 <div class="review-body">
-<main id="main" class="review-main">
+<div class="review-main">
 
   <section id="what-is" aria-labelledby="what-is-h">
     <h2 id="what-is-h" class="h-section">What is {{ p.name }}?</h2>
@@ -357,7 +358,7 @@ layout: v3.njk
     </div>
   </section>
   {%- endif %}
-</main>
+</div>
 
 <aside class="review-aside" aria-label="Summary">
   <div class="card side">
@@ -376,6 +377,7 @@ layout: v3.njk
   </div>
 </aside>
 </div>
+</main>
 {%- endif %}
 {%- if p.sources and p.sources.length %}
 <script>
