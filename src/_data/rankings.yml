@@ -1066,11 +1066,11 @@ india:
   - slug: kycaid
     name: KYCAID
     award: Editor's Choice
-    tagline: Configurable eKYC flows with an Aadhaar OTP check listed among its country modules.
+    tagline: Configurable eKYC flows with an Aadhaar number check among its country modules.
     coverage: Global
     size: null
     pros:
-    - Aadhaar SMS OTP check listed on its pricing page
+    - Aadhaar number check listed on its pricing page at €0.80
     - Customisable verification flows from one dashboard
     - Published prices from €0.50 per document check
     cons:
@@ -1082,12 +1082,11 @@ india:
     segments: []
   - slug: onfido
     name: Onfido
-    award: Best Document-Fraud Detection
     tagline: AI document verification with NFC chip reading where supported, plus biometric liveness.
     coverage: Global
     size: null
     pros:
-    - AI document models built on tens of millions of verifications
+    - AI document models built on tens of millions of verifications, per Entrust
     - More than 2,500 document types across 195 countries
     - Liveness tested by iBeta to ISO/IEC 30107-3 (Level 2, 2022)
     cons:
@@ -1116,17 +1115,17 @@ india:
     segments: []
   - slug: signzy
     name: Signzy
-    award: Best India-Specific Registry Depth
-    tagline: India-focused RegTech with deep Aadhaar, PAN, and CKYC connections.
+    award: Best for CKYC and Video KYC
+    tagline: India-focused no-code KYC platform with Aadhaar, PAN and CKYC checks and V-CIP video KYC.
     coverage: India-focused
     size: null
     pros:
-    - Deep India-specific registry integration (Aadhaar, PAN, CKYC)
-    - Strong relationships with Indian banks
-    - PAN cross-checking built in
+    - Aadhaar-based checks, CKYC search and upload, and V-CIP video verification, per Signzy
+    - Face match against PAN and Aadhaar in its video KYC
+    - Bank account verification (penny drop, IFSC check) and Aadhaar eSign
     cons:
     - Depth is concentrated in India; it also lists US and Middle East stacks
-    - Smaller international brand recognition
+    - No outcome found for its unassisted video KYC in the RBI regulatory sandbox
     - Pricing not published
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.5
@@ -1491,7 +1490,7 @@ mexico:
     segments: []
   - slug: veriff
     name: Veriff
-    award: Best for Biometric Accuracy
+    award: Best for Self-Serve Pricing
     tagline: Passive liveness and document checks covering 12,500+ ID documents, per Veriff.
     coverage: Global
     size: null
@@ -1562,7 +1561,7 @@ peru:
     segments: []
   - slug: veriff
     name: Veriff
-    award: Best for Biometric Accuracy
+    award: Best for Self-Serve Pricing
     tagline: Passive liveness and document checks covering 12,500+ ID documents, per Veriff.
     coverage: Global
     size: null
@@ -2095,7 +2094,7 @@ south-africa:
     - Published prices from €0.50 per document check
     - Built-in PEP and sanctions screening with ongoing monitoring
     cons:
-    - South African ID number checks are in the API docs, but the data source is not named and no price is published
+    - South African ID number checks are priced (€0.10 to €0.80) but the data source is not named
     - No South African office listed
     - Its watchlist docs name no data provider (the sample response shows OpenSanctions)
     legacy_price_shown: From €0.50/check
