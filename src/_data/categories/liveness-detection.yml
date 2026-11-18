@@ -6,8 +6,8 @@ seo:
   h1: Best Liveness Detection Providers in 2026
 breadcrumb_label: Best Liveness Detection Providers
 quick_answer: Shufti Pro ranks first, with liveness tested by iBeta to ISO/IEC 30107-3 Level 3 and a free plan for testing. Sumsub is the runner-up, also at Level 3, with published per-verification prices. KYCAID is the pick for pay-per-check buying, with liveness and face match priced on their own. We compared 10 reviewed providers on liveness tests, certifications, coverage and pricing.
-last_verified: '2026-07-24'
-updated: '2026-11-05'
+last_verified: '2026-11-18'
+updated: '2026-11-18'
 legacy_stats:
 - value: '4'
   label: providers compared
@@ -84,7 +84,7 @@ segments:
   reason: 'Neobanks use Incode for onboarding and ongoing authentication in one platform, with passive liveness tested by iBeta to Level 3 on iOS and Android.'
 - segment: 'Banks'
   slug: veridas
-  reason: 'Veridas has been backed by BBVA since its founding, serves banking and insurance clients, and builds its own face and voice liveness, both tested by iBeta.'
+  reason: 'Veridas was founded in 2017 as a joint venture with BBVA, serves banking and insurance clients, and builds its own face and voice liveness, both tested by iBeta.'
 - segment: 'On-premise or offline deployment'
   slug: regula
   reason: 'Regula ships self-hosted Linux, Windows and Docker packages and supports offline mobile operation, so verification data can stay inside your own infrastructure. Its Face SDK liveness is tested by iBeta to Level 2.'
