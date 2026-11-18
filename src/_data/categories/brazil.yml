@@ -5,9 +5,9 @@ seo:
   description: 'KYCAID, Sumsub, idwall, and Trulioo compared: the best KYC & AML providers for Brazil in 2026, ranked on CPF/CNPJ coverage, decisioning speed, and local registry depth.'
   h1: Best KYC & AML Providers for Brazil in 2026
 breadcrumb_label: Best KYC & AML Providers for Brazil
-quick_answer: 'Sumsub ranks first in Brazil, with published prices and a stated 20-second average verification time that suits Pix-speed onboarding. KYCAID is second, with non-document CPF checks against government databases. idwall has the deepest local registry database but no full review yet. We compared 4 providers on CPF/CNPJ coverage, decision speed and local registry depth.'
-last_verified: '2026-07-24'
-updated: '2026-11-04'   # last content edit; last_verified = last fact re-check
+quick_answer: Sumsub ranks first in Brazil, with published prices and a stated 20-second average verification time. KYCAID is second, with non-document CPF checks against government databases at a published price. We compared 4 providers on CPF checks, document coverage, pricing and integration.
+last_verified: '2026-11-18'
+updated: '2026-11-18'   # last content edit; last_verified = last fact re-check
 legacy_stats:
 - value: '4'
   label: providers compared
@@ -56,10 +56,8 @@ faq:
   a: Pix, Brazil's instant-payment system, settles transfers in seconds, which pushes KYC decisioning toward near-real-time speed since slow onboarding creates friction against instant payment rails.
 - q: Do Brazilian KYC providers verify businesses as well as individuals?
   a: Many do, through CNPJ registry lookups, though verifying a business's beneficial owners is closer to KYB than individual KYC and sometimes requires a separate workflow.
-- q: Is Brazil's KYC market growing?
-  a: Brazil has one of Latin America's most active fintech and digital-banking markets, and demand for automated KYC has grown alongside Pix-driven account opening volume.
 - q: Do global KYC vendors support Brazilian document formats?
-  a: Leading vendors read Brazilian national ID (RG), CPF, and CNH driver's licenses natively, though document-fraud detection accuracy varies by provider.
+  a: Coverage of Brazilian documents differs by vendor. Ask which versions of the RG and the CNH a vendor reads, and whether it also checks the CPF against government data, as KYCAID does for €0.10 a check.
 adjacent:
 - kyb
 - aml
@@ -68,6 +66,7 @@ adjacent:
 capability_columns: []
 faq_templates: []
 legacy_issues: []
+price_source: record
 author: andrii-klymenko
 legacy_reviewer:
   name: Elena Marsh

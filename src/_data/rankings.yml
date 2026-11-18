@@ -436,10 +436,10 @@ brazil:
     - Customisable verification flows from one dashboard
     - Company check (KYB) covering UBOs and authorised persons
     cons:
-    - Smaller watchlist database than category leaders
-    - Single-module prices carry a fixed €100 monthly service fee
+    - Its watchlist docs name no data provider (the sample response shows OpenSanctions)
+    - Ongoing monitoring is a €100 monthly add-on on top of per-check prices
     - Non-document checks cover CPF only; no CNPJ check is listed
-    legacy_price_shown: From €0.50/check + €100/mo
+    legacy_price_shown: From €0.50/check
     legacy_rating_shown: 4.6
     segments: []
   - slug: trulioo
@@ -461,17 +461,16 @@ brazil:
     segments: []
   - slug: null
     name: idwall
-    award: Best Local Registry Depth
-    tagline: Brazilian identity verification with deep local registry integrations.
+    tagline: Brazilian document verification and background checks, with automatic CNH validation.
     coverage: Brazil-focused
     size: null
     pros:
-    - Local CPF/CNPJ registry integration
-    - Strong document-fraud detection for Brazilian IDs
-    - Established relationships with Brazilian institutions
+    - Automatic validation of the Brazilian driver's licence (CNH), per idwall
+    - Document verification and background checks in one product
+    - Lookups in Brazilian public data, per idwall
     cons:
-    - Limited coverage outside Brazil
-    - Smaller international brand recognition
+    - No coverage outside Brazil stated on its site
+    - Data sources are not named on its site
     - Pricing not published
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.5
@@ -508,9 +507,9 @@ canada:
     - Published prices from €0.50 per document check
     cons:
     - Prices are published in euros, not Canadian dollars
-    - Single-module prices carry a fixed €100 monthly service fee
-    - Smaller watchlist database than category leaders
-    legacy_price_shown: From €0.50/check + €100/mo
+    - Ongoing monitoring is a €100 monthly add-on on top of per-check prices
+    - Its watchlist docs name no data provider (the sample response shows OpenSanctions)
+    legacy_price_shown: From €0.50/check
     legacy_rating_shown: 4.6
     segments: []
   - slug: onfido
@@ -710,22 +709,21 @@ crypto:
     - Built-in PEP and sanctions screening with ongoing monitoring
     - Customisable verification flows from one dashboard
     cons:
-    - Crypto address check is in the API docs, but its price and data provider are not published
+    - Crypto address check (€0.50) names no data provider
     - No Travel Rule support listed
-    - Smaller watchlist database than category leaders
-    legacy_price_shown: From €0.50/check + €100/mo
+    - Its watchlist docs name no data provider (the sample response shows OpenSanctions)
+    legacy_price_shown: From €0.50/check
     legacy_rating_shown: 4.6
     segments: []
   - slug: null
     name: Chainalysis
-    award: Best for On-Chain Analytics
     tagline: KYT engine tracing on-chain fund flows and wallet-address risk.
     coverage: Global
     size: Mid-market to Enterprise
     pros:
     - Dedicated on-chain forensics and KYT tooling
     - Address Screening flags sanctioned wallets pre-transfer
-    - Widely trusted by regulators and law enforcement
+    - Says 50+ regulators worldwide use its data
     cons:
     - Off-chain KYC/onboarding is not the core product
     - Enterprise-only pricing
@@ -784,7 +782,7 @@ e-kyc:
     - No NFC chip reading disclosed
     - No eIDAS, UK DIATF or other trust-framework certification listed
     - Native mobile SDKs are provided on request, not in the public docs
-    legacy_price_shown: From €0.50/check + €100/mo
+    legacy_price_shown: From €0.50/check
     legacy_rating_shown: 4.6
     segments: []
   - slug: jumio
@@ -1077,9 +1075,9 @@ india:
     - Published prices from €0.50 per document check
     cons:
     - No CKYC registry lookup listed
-    - Smaller watchlist database than category leaders
-    - Single-module prices carry a fixed €100 monthly service fee
-    legacy_price_shown: From €0.50/check + €100/mo
+    - Its watchlist docs name no data provider (the sample response shows OpenSanctions)
+    - Ongoing monitoring is a €100 monthly add-on on top of per-check prices
+    legacy_price_shown: From €0.50/check
     legacy_rating_shown: 4.6
     segments: []
   - slug: onfido
@@ -1200,7 +1198,7 @@ kyb:
     cons:
     - No registry or country coverage list is published for company checks
     - No AML screening of companies found, and ongoing monitoring is described for individuals only
-    - Single-module prices, including the company check, carry a fixed €100 monthly service fee
+    - Ongoing monitoring is a €100 monthly add-on on top of per-check prices
     legacy_price_shown: €10/company check
     legacy_rating_shown: 4.6
     segments: []
@@ -1420,7 +1418,7 @@ liveness-detection:
     cons:
     - No prices on its own site; the AWS Marketplace price needs a 12-month contract
     - No SOC 2 Type II statement found, and its only public ISO 27001 certificate copy expired in March 2024
-    - Pending merger with Fourthline, agreed in July 2026, may change the product and brand
+    - Merged into Fourthline in November 2026, with the platforms to be integrated in phases, so product and brand changes are likely
     legacy_rating_shown: null
     segments: []
   - slug: jumio
@@ -1519,10 +1517,10 @@ mexico:
     - Customisable verification flows from one dashboard
     - 24/7 chat support with a stated 15-minute SLA for resolving issues
     cons:
-    - Smaller watchlist database than category leaders
-    - Single-module prices carry a fixed €100 monthly service fee
+    - Its watchlist docs name no data provider (the sample response shows OpenSanctions)
+    - Ongoing monitoring is a €100 monthly add-on on top of per-check prices
     - Prices are published in euros, not Mexican pesos
-    legacy_price_shown: From €0.50/check + €100/mo
+    legacy_price_shown: From €0.50/check
     legacy_rating_shown: 4.6
     segments: []
   - slug: trulioo
@@ -1590,10 +1588,10 @@ peru:
     - Customisable verification flows from one dashboard
     - Built-in PEP and sanctions screening with ongoing monitoring
     cons:
-    - Smaller watchlist database than category leaders
+    - Its watchlist docs name no data provider (the sample response shows OpenSanctions)
     - Mobile SDKs are provided on request, not in the public docs
-    - Single-module prices carry a fixed €100 monthly service fee
-    legacy_price_shown: From €0.50/check + €100/mo
+    - Ongoing monitoring is a €100 monthly add-on on top of per-check prices
+    legacy_price_shown: From €0.50/check
     legacy_rating_shown: 4.6
     segments: []
   - slug: trulioo
@@ -1838,7 +1836,7 @@ age-verification:
     - Age estimation is listed under face verification, with no accuracy data published
     - Document-first flows add friction for simple age gates
     - Names no age assurance certification or regulator approval
-    legacy_price_shown: From €0.75/verification
+    legacy_price_shown: From €0.50/check
     legacy_rating_shown: null
     segments: []
   - slug: persona
@@ -1955,7 +1953,7 @@ nigeria:
     cons:
     - The NIN docs do not name NIMC as the source, and no BVN check is listed
     - Ongoing monitoring is a €100 monthly add-on
-    - Smaller watchlist database than category leaders
+    - Its watchlist docs name no data provider (the sample response shows OpenSanctions)
     segments: []
   - slug: aiprise
     name: AiPrise
@@ -2082,8 +2080,8 @@ south-africa:
     cons:
     - South African ID number checks are in the API docs, but the data source is not named and no price is published
     - No South African office listed
-    - Smaller watchlist database than category leaders
-    legacy_price_shown: From €0.50/check + €100/mo
+    - Its watchlist docs name no data provider (the sample response shows OpenSanctions)
+    legacy_price_shown: From €0.50/check
     legacy_rating_shown: null
     segments: []
   - slug: incode
@@ -2197,9 +2195,9 @@ kyc:
     - Customisable verification flows from one dashboard, with multiple workspaces in one account
     cons:
     - No SOC 2 report yet (KYCAID expects one in early 2027) and no published ISO/IEC 30107-3 liveness test
-    - Single-module prices carry a fixed €100 monthly service fee
+    - Ongoing monitoring is a €100 monthly add-on on top of per-check prices
     - Native mobile SDKs are provided on request, not in the public docs
-    legacy_price_shown: From €0.50/check + €100/mo
+    legacy_price_shown: From €0.50/check
   - slug: persona
     name: Persona
     award: Best for Flexible Orchestration
@@ -2243,7 +2241,7 @@ kyc:
     cons:
     - PEP and AML screening is a third-party check on ComplyAdvantage data
     - No prices on its own site; the AWS Marketplace price needs a 12-month contract
-    - Pending merger with Fourthline, agreed in July 2026, may change the product and brand
+    - Merged into Fourthline in November 2026, with the platforms to be integrated in phases, so product and brand changes are likely
     legacy_price_shown: From $1.37/verification (AWS, 12-mo contract)
   - slug: idenfy
     name: iDenfy
