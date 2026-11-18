@@ -33,7 +33,7 @@ export default {
         const s = live[u.slug];
         const sponsor = s ? { name: s.provider.name, url: `/providers/${s.slug}/`, rank: s.rank, score: sc(s.provider),
           line: s.entry.tagline || s.provider.tagline || "", ...tile(s.slug) } : null;
-        return { ...u, id: u.slug.replace(/\//g, "-"), url: cat?.url || `/providers/${u.slug}/`, top, sponsor };
+        return { ...u, id: u.slug.replace(/\//g, "-"), url: cat?.url || `/providers/${u.slug}/`, scoreLabel: cat?.score_label || "Score", top, sponsor };
       });
       const order = d.home.use_case_groups || [...new Set(items.map((u) => u.group))];
       return order.map((g) => ({ name: g, items: items.filter((u) => u.group === g) })).filter((g) => g.items.length);
