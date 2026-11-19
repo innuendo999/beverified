@@ -30,7 +30,7 @@ explainer_html:
 
   <li style="list-style:disc;">Real-time sanctioned-address screening (OFAC SDN and equivalent lists)</li>
 
-  <li style="list-style:disc;">Travel Rule message exchange between VASPs, typically over IVMS101-based protocols such as TRP, OpenVASP, Shyft, or VerifyVASP</li>
+  <li style="list-style:disc;">Travel Rule message exchange between VASPs, typically over IVMS101-based protocols such as TRP, TRISA, Shyft Veriscope or VerifyVASP</li>
 
   <li style="list-style:disc;">Ongoing on-chain transaction monitoring (KYT) as a wallet''s risk profile changes after onboarding</li>
 
