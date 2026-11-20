@@ -232,6 +232,11 @@
         "label": "Incidents",
         "href": "/incidents/",
         "key": "incidents"
+      },
+      {
+        "label": "Certifications",
+        "href": "/kyc-certification-tracker/",
+        "key": "certifications"
       }
     ],
     "navAside": {
@@ -513,6 +518,10 @@
           [
             "Incident tracker",
             "/incidents/"
+          ],
+          [
+            "KYC Certification Tracker",
+            "/kyc-certification-tracker/"
           ]
         ],
         "links": [

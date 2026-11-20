@@ -108,6 +108,7 @@ export const ICONS = {
   external: { group: "Interface", label: "External link", svg: '<path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>' },
   "arrow-right": { group: "Interface", label: "Arrow", svg: '<path d="M5 12h14M13 6l6 6-6 6"/>' },
   "chevron-down": { group: "Interface", label: "Expand", svg: '<path d="M6 9l6 6 6-6"/>' },
+  search: { group: "Interface", label: "Search", svg: '<circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.4-4.4"/>' },
   dot: { group: "Interface", label: "Fallback", svg: '<circle cx="12" cy="12" r="3"/>' },
 };
 

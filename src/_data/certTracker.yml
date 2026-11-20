@@ -1,0 +1,32 @@
+# KYC Certification Tracker page settings. Rows are built from provider records (src/_lib/cert-tracker.js).
+# `checked` = date the registers were last read in full (manual re-check until the watcher runs; then the watcher sets it).
+# `sources[].checked` overrides the date for one register. `changes` = dated, sourced events already in the records.
+checked: '2026-11-20'
+sources:
+  - name: iBeta
+    url: https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/
+  - name: UK DVS register
+    url: https://www.access-dvs-register.service.gov.uk/register
+  - name: FIDO Alliance
+    url: https://fidoalliance.org/certification/identity-verification/face-verification/fido-certified-products/
+  - name: ACCS
+    url: https://accscheme.com/registry/
+  - name: DHS RIVR
+    url: https://mdtf.org/rivr/Results
+    checked: '2026-11-17'
+changes:
+  - date: '2026-11-09'
+    slug: didit
+    text: iBeta Level 2 letter for Didit Biometric Authentication v3.0
+  - date: '2026-11-04'
+    slug: onfido
+    text: iBeta Level 2 letter for Entrust Facial Similarity Report Motion v2
+  - date: '2026-09-17'
+    slug: sumsub
+    text: iBeta Level 3 letter for Sumsub Liveness, listed under Raritex Trade
+  - date: '2026-09-14'
+    slug: gbg
+    text: UK DVS certification for GBG Go, ID3global, Identify, IDscan Enterprise and oZone, valid to Sep 27, 2029
+  - date: '2026-06-29'
+    slug: signicat
+    text: UK DVS certification for ReadID, valid to Jun 29, 2029

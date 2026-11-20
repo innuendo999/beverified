@@ -1,0 +1,139 @@
+---
+layout: v3.njk
+---
+{#- KYC Certification Tracker (owner approved the design canvas "BeVerified: KYC Certification Tracker, page design", 2026-11-20).
+    Rows are <details>, so every entry opens without JS; search and filters need JS and stay hidden without it.
+    No source link per certificate (owner): sources ship in the CSV/JSON download. Rows A to Z, never ranked. -#}
+<main id="main" class="container ct">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li class="sep" aria-hidden="true">›</li><li aria-current="page">KYC Certification Tracker</li></ol></nav>
+
+  <header class="ct-head">
+    <h1 class="ct-head__title">KYC Certification Tracker</h1>
+    <p class="ct-head__lede">Independent test results and certifications for {{ list.length }} of the KYC and identity verification providers we review. A green check means we found the provider named on the issuer’s register or letter. Everything else is what the vendor says about itself.</p>
+    <p class="ct-head__meta num">Checked <time datetime="{{ certTracker.checked | iso }}">{{ certTracker.checked | displayDate }}</time> against
+      {%- for s in sourcesMain %} <a href="{{ s.url }}" rel="noopener">{{ s.name }}</a>{{ "," if not loop.last else "." }}{% endfor %}
+      {%- for s in sourcesOther %} <a href="{{ s.url }}" rel="noopener">{{ s.name }}</a> checked <time datetime="{{ s.checked | iso }}">{{ s.checked | displayDate }}</time>.{% endfor %}
+      <a href="#reuse">Download the data (CSV, JSON)</a></p>
+  </header>
+
+  <div class="ct-tools" data-ct-tools hidden>
+    <div class="ct-search">
+      <label for="ct-q" class="ct-search__label">Find a provider</label>
+      <span class="ct-search__box">{% icon "search", "", 18 %}<input id="ct-q" class="ct-search__input" type="search" autocomplete="off" spellcheck="false" placeholder="Type a provider name"></span>
+    </div>
+    <div class="ct-filters" role="group" aria-label="Show providers with a confirmed">
+      {%- for f in filters %}
+      <button type="button" class="ct-filter num" data-filter="{{ f.key }}" aria-pressed="{{ 'true' if loop.first else 'false' }}">{{ f.label }}</button>
+      {%- endfor %}
+    </div>
+    <p class="ct-shown num" aria-live="polite" data-ct-shown>Showing all {{ list.length }} providers</p>
+  </div>
+
+  <section aria-labelledby="ct-h">
+    <h2 id="ct-h" class="visually-hidden">Providers and their checks</h2>
+    <div class="ct-scroll">
+      <div class="ct-table">
+        <div class="ct-cols" aria-hidden="true"><span>Provider</span>{% for c in columns %}<span>{{ c.label }}</span>{% endfor %}</div>
+        <ol class="ct-list">
+          {%- for r in list %}
+          <li id="{{ r.slug }}" class="ct-row" data-ct-name="{{ r.name | lower }}" data-ct-ok="{{ r.okKeys }}">
+            <details>
+              <summary>
+                <span class="ct-name">{% icon "chevron-down", "", 16 %}<b>{{ r.name }}</b></span>
+                {%- for c in r.cells %}
+                <span class="ct-cell ct-cell--{{ c.kind }}"><span class="visually-hidden">{{ columns[loop.index0].label }}: </span>{% if c.kind == 'ok' %}{% icon "check", "", 16 %}{% endif %}{{ c.text }}</span>
+                {%- endfor %}
+              </summary>
+              <div class="ct-entry">
+                <ul class="ct-entries">
+                  {%- for e in r.entries %}
+                  <li><span class="ct-badge ct-badge--{{ e.status }}">{{ e.statusLabel }}</span><span><b>{{ e.name }}</b>{% if e.what %}. {{ e.what }}{% endif %}</span></li>
+                  {%- endfor %}
+                </ul>
+                <p class="ct-links"><a href="/providers/{{ r.slug }}/">Read the {{ r.name }} review</a></p>
+              </div>
+            </details>
+          </li>
+          {%- endfor %}
+        </ol>
+        <p class="ct-empty" data-ct-empty hidden><span data-ct-empty-text></span> The tracker lists only providers we review. <a href="/providers/">See all reviews</a></p>
+      </div>
+    </div>
+    <p class="ct-note">Sorted A to Z. The tracker does not rank providers and has no effect on their scores. “None” means we found no public claim.</p>
+  </section>
+
+  <div class="ct-notes">
+    <section aria-labelledby="ct-what">
+      <h2 id="ct-what">What each test proves, and what it does not</h2>
+      <dl class="ct-dl">
+        <div><dt>iBeta ISO/IEC 30107-3</dt><dd>A lab letter that one product version resisted presentation attacks such as printed photos and masks, at Level 1, 2 or 3. It covers that product and version only, and it does not test injected camera feeds.</dd></div>
+        <div><dt>UK DVS register</dt><dd>The UK government’s list of identity services certified against its digital verification services trust framework. The entry names one service and has an expiry date.</dd></div>
+        <div><dt>FIDO IDV</dt><dd>FIDO Alliance certification of a face verification product or a document authenticity product, tested by an accredited lab.</dd></div>
+        <div><dt>DHS RIVR</dt><dd>Results of the US DHS remote identity validation rally, published under aliases. We list a result only when the vendor has said which alias is theirs.</dd></div>
+        <div><dt>ACCS</dt><dd>The Age Check Certification Scheme registry, which covers identity proofing (ISO/IEC TS 29003) and age checks.</dd></div>
+        <div><dt>ISO/IEC 27001 and SOC 2</dt><dd>There is no public register. We mark these confirmed only when we could open the certificate or report issued by the certification body or auditor.</dd></div>
+      </dl>
+    </section>
+    <aside aria-labelledby="ct-changes">
+      <h2 id="ct-changes">Recent changes</h2>
+      <ol class="ct-changes">
+        {%- for c in changeList %}
+        <li><time class="num" datetime="{{ c.date | iso }}">{{ c.date | displayDate }}</time><span><a href="#{{ c.slug }}" data-ct-open="{{ c.slug }}">{{ c.name }}</a>: {{ c.text }}</span></li>
+        {%- endfor %}
+      </ol>
+    </aside>
+  </div>
+
+  <div class="ct-bottom">
+    <section id="reuse" class="ct-card" aria-labelledby="reuse-h">
+      <h2 id="reuse-h">Cite or reuse this data</h2>
+      <p>The data is free to reuse under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener">CC BY 4.0</a> with a link back to this page. The download includes the source of every entry.</p>
+      <p class="ct-cite">BeVerified, “KYC Certification Tracker”, sources checked {{ certTracker.checked | displayDate }}, {{ site.url }}/kyc-certification-tracker/</p>
+      <p class="ct-btns"><a class="btn btn--primary" href="/kyc-certification-tracker/certifications.csv" download>Download CSV</a><a class="btn btn--secondary" href="/kyc-certification-tracker/certifications.json" download>Download JSON</a></p>
+    </section>
+    <section class="ct-card" aria-labelledby="fix-h">
+      <h2 id="fix-h">Something wrong in your entry?</h2>
+      <p>Write to <a href="mailto:support@beverified.org?subject=KYC%20Certification%20Tracker%3A%20correction">support@beverified.org</a> with a link to the register entry or letter that names your company. Entries are free, and payment never changes them.</p>
+    </section>
+  </div>
+</main>
+
+<script>
+(() => {
+  const rows = [...document.querySelectorAll(".ct-row")];
+  const btns = [...document.querySelectorAll("[data-filter]")];
+  const input = document.getElementById("ct-q");
+  const shown = document.querySelector("[data-ct-shown]");
+  const empty = document.querySelector("[data-ct-empty]");
+  const emptyText = document.querySelector("[data-ct-empty-text]");
+  const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
+  let filter = "all";
+  const apply = () => {
+    const q = input.value.trim();
+    const nq = norm(q);
+    let n = 0;
+    rows.forEach((r) => {
+      const byF = filter === "all" || r.dataset.ctOk.split(" ").includes(filter);
+      const byQ = !nq || norm(r.dataset.ctName).includes(nq);
+      r.hidden = !(byF && byQ);
+      if (!r.hidden) n++;
+    });
+    btns.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.filter === filter)));
+    shown.textContent = filter === "all" && !nq ? `Showing all ${rows.length} providers` : `Showing ${n} of ${rows.length} providers`;
+    empty.hidden = n > 0;
+    if (!n) emptyText.textContent = `No provider matches “${q}”${filter !== "all" ? " with this filter" : ""}.`;
+  };
+  btns.forEach((b) => b.addEventListener("click", () => { filter = b.dataset.filter; apply(); }));
+  input.addEventListener("input", apply);
+  const open = (id) => {
+    const li = document.getElementById(id);
+    if (!li) return;
+    if (li.hidden) { filter = "all"; input.value = ""; apply(); }
+    li.querySelector("details").open = true;
+    li.scrollIntoView({ block: "start" });
+  };
+  if (location.hash) open(location.hash.slice(1));
+  window.addEventListener("hashchange", () => open(location.hash.slice(1)));
+  document.querySelector("[data-ct-tools]").hidden = false;
+})();
+</script>
