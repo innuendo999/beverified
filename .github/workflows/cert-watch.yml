@@ -1,0 +1,53 @@
+name: Certification watch
+
+# Daily check of the issuers' registers for the KYC Certification Tracker.
+# Writes only to the `cert-watch` branch (never to main, so it never triggers a deploy).
+# A scheduled Claude task reads cert-watch/latest.md on weekdays and opens a PR for the
+# owner when a record needs a change. Spec: docs/cert-tracker.md
+
+on:
+  schedule:
+    - cron: "7 5 * * *"   # 05:07 UTC daily
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cert-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Check out the state branch
+        run: |
+          if git ls-remote --exit-code --heads origin cert-watch; then
+            git fetch --depth 1 origin cert-watch
+            git worktree add -B cert-watch state origin/cert-watch
+          else
+            git worktree add --orphan -b cert-watch state
+          fi
+      - name: Watch
+        run: node scripts/cert-watch/watch.mjs --state state/cert-watch
+      - name: Commit and push the state
+        working-directory: state
+        run: |
+          git config user.name "beverified-cert-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cert-watch
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Certification watch $(date -u +%F)"
+            git push origin cert-watch
+          fi
+      - name: Summary
+        run: cat state/cert-watch/latest.md >> "$GITHUB_STEP_SUMMARY"

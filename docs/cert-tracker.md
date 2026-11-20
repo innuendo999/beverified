@@ -1,6 +1,6 @@
 # KYC Certification Tracker
 
-Status: data (PR #168), certification re-check (PR #169 to #171) and the page are built. Watcher not built yet. Planning doc (Ukrainian, owner decisions): Docs "BeVerified: реєстр незалежних перевірок і watcher, специфікація" (https://claude.ai/artifact/QSk3ga8ZJVYAjSFpGztJc5).
+Status: data (PR #168), certification re-check (PR #169 to #171), the page (PR #173) and the watcher are built. Planning doc (Ukrainian, owner decisions): Docs "BeVerified: реєстр незалежних перевірок і watcher, специфікація" (https://claude.ai/artifact/QSk3ga8ZJVYAjSFpGztJc5).
 
 ## What it is
 
@@ -26,22 +26,25 @@ The provider or its legal entity is named on the issuer's register or in the iss
 - `src/_data/certWatch.yml`: source URLs and the names each provider has on each register (Sumsub appears on iBeta's list as Raritex Trade).
 - Still to add from the registers on the watcher's first run, never parsed from free text: `product`, `issued`, `valid_to`, `register_name`, `confirmed` (date the owner merged it).
 
-## Watcher (planned, PR 2)
+## Watcher (built 2026-11-20)
 
-Daily GitHub Action, writes snapshots and a report to the `cert-watch` branch only (no deploy). A scheduled Claude task reads the report on weekdays, opens the letters, checks that they name the provider, and opens one PR with full CI. The owner merges.
+Script `scripts/cert-watch/watch.mjs`, workflow `.github/workflows/cert-watch.yml` (daily 05:07 UTC). It writes only to the `cert-watch` branch, folder `cert-watch/`: `snapshots/<source>.json`, `checked.json` (last good run per source), `latest.md` / `latest.json`, `history/<date>.md`. It never edits records and never deploys.
 
-| Event | Action |
-|---|---|
-| New row for a provider in `certWatch.yml` | PR proposes a `confirmed` entry |
-| Row removed from a register | PR flags it; status is not changed automatically |
-| Expiry date changed or passed (DVS, FIDO, ACCS) | PR with the new date or an "expired" note |
-| `valid_to` within 60 days | reminder line in the report |
-| Vendor not in `certWatch.yml` | ignored |
-| Source unreadable or its structure changed | run summary shows the failure; that source's "checked" date is not moved |
+Sources and parsing:
 
-The watcher never changes scores, statuses or `last_verified`, and never merges. A confirmed change that may move a score is flagged; the re-score is a separate PR with the matching `rescore-*.mjs`.
+| Source | How it is read | Matched by |
+|---|---|---|
+| iBeta letter list | table rows: date, vendor, level, product, version, PDF | `certWatch.yml` names (`ibeta_pad`) |
+| UK DVS register | the "Download register CSV" link on the register page, columns found by header name | `certWatch.yml` names (`uk_dvs`) |
+| FIDO IDV products | blocks starting "Company Name", fields Product Name, Component, Level, Certificate Expiration | `certWatch.yml` names (`fido_face`) |
+| ACCS registry | each registry page cited by a provider's `accs` entry: "no certification listed", "Certification validity" dates, page hash | record source URL |
+| DHS RIVR | page text hash and aliases; fails when the page returns almost no text (script-rendered) | none: an alias maps only when the vendor disclosed it |
 
-The page shows two dates: "Sources checked {last successful watcher run}" for the page, and "Confirmed {date}" per row.
+Report sections: new rows for providers we review; rows removed; rows changed (for example a new expiry date); items to check against the record (iBeta letters from the last 18 months not in the record, ACCS pages that list nothing for a confirmed entry, validity passed, page changed); certifications ending within 60 days (register expiry dates and "valid to" dates in confirmed record entries); tracked vendors without a review (candidates only). The first run of each source is a baseline and reports no new rows. A source that parses 0 rows, or under half of the previous run, is reported as failed and its snapshot is kept.
+
+Tested on fixtures only (`scripts/cert-watch/fixtures/run1`, `run2`: `node scripts/cert-watch/watch.mjs --state /tmp/cw --fixtures scripts/cert-watch/fixtures/run1`, then `run2`). The real page structure is confirmed by the first scheduled run; a session cannot start the workflow by hand.
+
+The drafting step is a scheduled Claude task (weekdays): it reads `cert-watch/latest.md`, opens each new letter or register entry, checks that it names the provider, and opens one PR with record changes and, where needed, `certTracker.yml` (`checked`, `changes`). The owner merges. The deploy workflow also runs daily (03:41 UTC) so dated content goes live without a merge.
 
 ## Findings while building PR 1
 

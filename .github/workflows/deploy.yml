@@ -3,6 +3,10 @@ name: Build and deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  schedule:
+    # Daily rebuild (owner, 2026-11-20): dated content such as placement end dates and the
+    # KYC Certification Tracker dates goes live without waiting for the next merge.
+    - cron: "41 3 * * *"   # 03:41 UTC
   workflow_dispatch:
     inputs:
       indexnow_all:
