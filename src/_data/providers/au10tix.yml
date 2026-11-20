@@ -337,6 +337,11 @@ certifications:
   what: Texas public-sector cloud security
   status: vendor_stated
   source: 2
+- name: KJM approval (Germany)
+  program: other
+  what: Age verification, positive evaluation by Germany's KJM, per AU10TIX
+  status: vendor_stated
+  source: 2
 user_ratings:
 - platform: G2
   rating: 4.5
@@ -479,6 +484,7 @@ verification_notes:
 - 'Pricing page FAQ uses different tier names (Basic, Advanced, Corporate) than the plan cards (Basic KYC, Enhanced KYC, Enterprise). We use the plan card names.'
 - 'G2 review text is not visible without login; user themes come from the 3 Capterra reviews (2021 to 2024) only.'
 - 'Preferred shareholders gained exit rights from 3 Jul 2026 (FY2025 20-F); no sale announced as of the check date.'
+- 'Certification re-check 2026-11-20 (owner screenshot of the trust centre): lists SOC 2 Type II, ISO/IEC 27001, ISO/IEC 27701, TX-RAMP Level 2, KJM age verification, US state gaming authorizations, ISO/IEC 30107-3 PAD Levels 1 and 2, Kantara IAL2 (NIST 800-63A), NIST and DHS face benchmarks and UK DIATF. No certification body, auditor or certificate is named; evidence pack on request. KJM added as vendor_stated; the rest already in the record.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

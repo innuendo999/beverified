@@ -103,7 +103,15 @@ Vendor-stated entries, vendor page re-read:
 | IDMERIT | homepage: data access policies "adhere to" ISO 27001 and SOC 2 requirements, badges only | **wording of both entries narrowed** |
 | Advance.AI | ISO/IEC 27001:2013 obtained Feb 2020 in Indonesia | none; owner note: the 2013 edition's transition period ended in Oct 2025, so this certificate is likely lapsed or re-issued under 2022. Ask Advance.AI |
 
-Not re-checkable by our tools (script-rendered trust centres): AU10TIX, IDnow, Incode. Owner can check them in a browser.
+Trust centres checked from the owner's screenshots (2026-11-20):
+
+| Provider | What the trust centre shows | Change |
+|---|---|---|
+| AU10TIX | SOC 2 Type II, ISO/IEC 27001, ISO/IEC 27701, TX-RAMP Level 2, KJM, US state gaming authorizations, ISO/IEC 30107-3 PAD L1 and L2, Kantara IAL2, NIST and DHS face benchmarks, UK DIATF; no body or certificate named | KJM added as vendor-stated; rest already in the record |
+| IDnow | ISO 27001:2022 cert I-12353/25 (all four entities); eIDAS 2.0 QES component certificates (LSTI); ETSI TS 119 461 v2.1.1; ANSSI PVID 1953/ANSSI/SDE/NP valid to 24 Jul 2027; TISAX AL3; ISAE 3402 Type 2 (restricted) | none; certificates are public ("Open") and would move entries to confirmed once opened |
+| Incode | SOC 2 Type 2, ISO 27001 and ISO 42001 (Sensiba), HIPAA, ISO/IEC 30107-3, FedRAMP Moderate, Kantara IAL2; reviewed by Sensiba, A-LIGN, Zygma, iBeta; no ACCS | FedRAMP entry updated from the FedRAMP Marketplace: Incode Platform, Class C (Moderate), Agency Auth In Process since 25 Sep 2026 (kept vendor-stated, see below) |
+
+Template issue found (owner decision, not changed): the trust-framework matrix column (`src/_lib/capabilities.js`) shows a FedRAMP "in progress" entry as Confirmed FedRAMP, because only some columns read "progress" in the name. Incode's FedRAMP entry stays vendor-stated until that is fixed.
 
 Not covered in this pass: the 44 vendor-stated "other" entries (Cyber Essentials, PCI DSS, KJM, Kantara and similar). They are not columns in the tracker and show only in expanded rows.
 
@@ -121,5 +129,8 @@ Not covered in this pass: the 44 vendor-stated "other" entries (Cyber Essentials
 | kycaid | ISO wording narrowed; SOC 2 Type 2 added (vendor-stated) |
 | idmerit | ISO and SOC 2 wording narrowed |
 | idenfy | SOC 2 auditor added; conflicting ISO certificate noted |
+| incode | FedRAMP entry: Moderate, Agency Auth In Process (FedRAMP Marketplace), replaces "Ready (High baseline)"; trust centre notes |
+| au10tix | KJM added (vendor-stated) |
+| idnow | trust centre certificate numbers recorded in verification notes |
 
 Every changed record has a dated `verification_notes` line. `rescore.mjs`, `rescore-idv.mjs`, `rescore-budget.mjs` and `rescore-kya.mjs` give identical output before and after (no score input changes).
