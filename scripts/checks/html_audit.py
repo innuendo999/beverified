@@ -43,6 +43,7 @@ for f in pages:
     for tag in ("main", "header", "footer"):
         n = len(soup.find_all(tag)) if tag == "main" else len(soup.select(f"body > {tag}, body > * > {tag}")) or len(soup.find_all(tag))
         if tag == "main" and n != 1: flag("main count != 1", rel, str(n))
+        if tag == "header" and rel.endswith("/embed/"): continue  # embeddable widget page, no site header
         if tag != "main" and n == 0: flag(f"no {tag}", rel)
     navs = soup.find_all("nav")
     if len(navs) > 1:

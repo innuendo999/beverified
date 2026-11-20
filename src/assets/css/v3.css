@@ -1975,3 +1975,24 @@ html:not(.mm-js) .mm-item:hover .mm-panel, html:not(.mm-js) .mm-item:focus-withi
   .ct-entry { padding-left: 20px; }
   .ct-card { padding: 22px; }
 }
+
+/* ---- KYC cost calculator in the KYC Pricing Index hero (.pcalc reuses .bcalc*) and the compact block on /providers/kyc/ (owner approved canvas, 2026-11-20) */
+.pcalc { margin: 8px 0 32px; }
+.pcalc .bcalc__badge--proof { text-decoration: none; }
+.pcalc__more { margin: 0; }
+.pcalc__nofull { font-size: 14px; line-height: 1.55; color: var(--body); }
+.pcalc__nofull summary { cursor: pointer; font-weight: 600; color: var(--ink); min-height: 32px; }
+.pcalc__nofull p { margin: 8px 0 0; }
+.pcalc__links { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 0; font-size: 14px; }
+.pcalc__embed { font-size: 14px; color: var(--body); }
+.pcalc__embed summary { cursor: pointer; font-weight: 500; color: var(--accent); min-height: 32px; }
+.pcalc__embed textarea { width: 100%; box-sizing: border-box; font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; padding: 10px 12px; border: 1px solid var(--line-strong); border-radius: var(--radius-btn); background: var(--surface-soft); color: var(--ink); resize: vertical; }
+.pcalc-embed { margin: 0; padding: 12px; background: var(--bg); font-family: var(--font); color: var(--ink); }
+.pcalc-embed .pcalc { margin: 0; }
+.pcalc__by { margin: 10px 4px 0; font-size: 13px; }
+.pcalc-mini { margin-top: 24px; padding: 24px; display: flex; flex-wrap: wrap; gap: 16px 40px; align-items: flex-start; }
+.pcalc-mini__in { flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+.pcalc-mini__vol { font: inherit; font-size: 18px; width: 180px; max-width: 100%; min-height: 44px; padding: 0 14px; border: 1px solid var(--line-strong); border-radius: var(--radius-btn); background: var(--surface-soft); color: var(--ink); box-sizing: border-box; font-variant-numeric: tabular-nums; }
+.pcalc-mini__list { flex: 2 1 420px; min-width: 0; list-style: none; margin: 0; padding: 0; }
+.pcalc-mini__list li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; padding: 12px 0; border-bottom: 1px solid var(--line-soft); }
+.pcalc-mini__link { flex: 1 1 100%; margin: 0; font-size: 14px; }

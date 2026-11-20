@@ -2,7 +2,8 @@
 title: "KYC Pricing Index 2026: How Much KYC Costs, Provider by Provider"
 seoTitle: "KYC Pricing Index 2026: How Much KYC Costs | BeVerified"
 seoDescription: "Every published KYC, AML and KYB price we track, checked on vendor pricing pages in November 2026, with monthly minimums and free tiers."
-lede: "A KYC check costs anywhere from a few cents for a database lookup to a couple of dollars for a document and selfie check, but the monthly minimum often matters more than the unit price. This index lists every price that the providers we review publish on their own sites, with the date we last checked it. Marketplace and buyer-data estimates stay in the provider reviews."
+lede: "Enter your monthly volume to see what each provider with a public price list would charge you, minimums included. The research below explains how KYC is priced."
+calculator: true
 section: publications
 cover_label: "Published KYC prices"
 cover_motif: coin
@@ -196,6 +197,14 @@ Official prices from each provider's own website. Currencies are as published; w
 For {{ pricingIndex.counts.thirdPartyOnly }} of the providers we review, the vendor publishes no price but a third party does: a software marketplace (G2, Capterra, AWS Marketplace), the UK government's G-Cloud procurement listings or Vendr's buyer data. These are {% for t in pricingIndex.thirdPartyOnlyList %}{% if loop.last %}and {% endif %}[{{ t.name }}](/providers/{{ t.slug }}/){% if not loop.last %}, {% endif %}{% endfor %}. Each review shows those figures in its pricing section, labelled as third-party estimates and linked to where they came from. They are a rough guide to what a provider charges, not a quote, so we keep them out of the table above.
 
 Buyer data shows how wide the range is once contracts are negotiated. In Vendr's data, Trulioo's median annual cost is {{ pricingIndex.price("trulioo", "Median annual cost (Vendr buyer data)") }} and Jumio's median annual contract is {{ pricingIndex.price("jumio", "Median annual contract (Vendr buyer data, Feb 2026)") }}. Those are what companies actually sign, usually at volumes the self-serve plans above do not cover, so they do not compare directly with a per-check list price.
+
+## How the calculator works
+
+The calculator at the top of this page uses only the prices each provider publishes on its own pricing page, read from the same records as the tables below. It covers the KYC and identity verification providers that publish a full check, meaning a document check, liveness and face match. Where a plan page does not name face match, the row says so.
+
+For each provider it picks the cheapest published plan for your volume and options. A monthly minimum counts as a floor when the provider says it covers checks, or when its own cost estimator shows that. Otherwise the minimum is added on top, and the row says so. Above the volume where a provider says it quotes instead of using its list price, the provider moves to "not priced".
+
+AML screening and ongoing monitoring are added only where the provider publishes their price. Prices in euros are converted to US dollars at the European Central Bank reference rate on the day we checked them. Tax, discounts, signup credit and free plans are not subtracted, and a price we have not re-checked for 90 days drops out until we check it again. The order is by your monthly cost, not by our ranking; the [cheap KYC ranking](/providers/cheap-kyc/) also weighs quality and terms.
 
 ## How we built the index
 

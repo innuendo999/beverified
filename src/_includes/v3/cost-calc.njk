@@ -1,0 +1,129 @@
+{#- KYC cost calculator (owner approved the canvas "BeVerified: KYC Pricing Index with cost calculator, design", 2026-11-20).
+    Data: costCalc (src/_data/costCalc.js), the same figures as the Budget KYC calculator. Used in the KYC Pricing Index hero
+    (front matter calculator: true) and on the embed page. Set calcEmbed = true before including to drop the internal links. -#}
+<section class="card bcalc pcalc" id="calculator" aria-labelledby="pcalc-h">
+  <div class="bcalc__head">
+    {% set hTag = "h1" if calcEmbed else "h2" %}<{{ hTag }} id="pcalc-h" class="h-section m-0">What will KYC cost you?</{{ hTag }}>
+  </div>
+  <form class="bcalc__form" onsubmit="return false">
+    <div class="bcalc__field">
+      <label for="pcalc-vol">Verifications a month</label>
+      <input id="pcalc-vol" type="number" min="1" step="50" value="1000" inputmode="numeric">
+      <div class="bcalc__presets" role="group" aria-label="Common volumes">
+        {%- for v in [[100, "100"], [1000, "1,000"], [10000, "10,000"], [50000, "50,000"]] %}<button type="button" value="{{ v[0] }}" aria-pressed="{{ 'true' if v[0] == 1000 else 'false' }}">{{ v[1] }}</button>{% endfor %}
+      </div>
+    </div>
+    <fieldset class="bcalc__field">
+      <legend>Add to each check</legend>
+      <label class="bcalc__check"><input id="pcalc-aml" type="checkbox"> AML screening at onboarding</label>
+      <label class="bcalc__check"><input id="pcalc-mon" type="checkbox"> Ongoing monitoring</label>
+    </fieldset>
+  </form>
+  <p class="bcalc__caption" id="pcalc-caption" aria-live="polite">Document, liveness and face match always included. Sorted by your monthly cost, not by our ranking.</p>
+  <ol class="bcalc__list" id="pcalc-list"></ol>
+  <p class="pcalc__more" id="pcalc-more-wrap" hidden><button type="button" class="btn btn--secondary" id="pcalc-more" aria-expanded="false">Show all providers with public prices</button></p>
+  <p class="bcalc__notes" id="pcalc-unpriced" hidden></p>
+  <noscript><p class="fs-14 c-body">The calculator needs JavaScript. The official price table below lists every published price.</p></noscript>
+  {%- set noFull = costCalc.partial.length + costCalc.onRequest.length + costCalc.stale.length %}
+  {%- if noFull %}
+  <details class="pcalc__nofull">
+    <summary>{{ noFull }} more KYC providers we review publish no full price</summary>
+    {%- if costCalc.partial.length %}<p><b>Partial prices:</b> {% for p in costCalc.partial %}{% if not calcEmbed %}<a href="/providers/{{ p.slug }}/">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %} ({{ p.text }}){{ "; " if not loop.last else "." }}{% endfor %}</p>{% endif %}
+    {%- if costCalc.onRequest.length %}<p><b>Price on request:</b> {% for p in costCalc.onRequest %}{% if not calcEmbed %}<a href="/providers/{{ p.slug }}/">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}{{ ", " if not loop.last else "." }}{% endfor %}</p>{% endif %}
+    {%- if costCalc.stale.length %}<p><b>Price re-check due:</b> {% for p in costCalc.stale %}{{ p.name }}{{ ", " if not loop.last else "." }}{% endfor %}</p>{% endif %}
+  </details>
+  {%- endif %}
+  <p class="bcalc__note">List prices from each vendor's own pricing page, checked {% if costCalc.checkedFrom == costCalc.checkedTo %}{{ costCalc.checkedFrom | displayDate }}{% else %}between {{ costCalc.checkedFrom | displayDate }} and {{ costCalc.checkedTo | displayDate }}{% endif %}. Before tax, discounts and free credit; euro prices converted at the ECB reference rate on the day we checked them.</p>
+  {%- if not calcEmbed %}
+  <p class="pcalc__links"><a href="#how-the-calculator-works">How we calculate</a><a href="/publications/kyc-pricing-index/calculator-prices.csv" download>Download prices (CSV)</a><a href="/publications/kyc-pricing-index/calculator-prices.json" download>JSON</a></p>
+  <details class="pcalc__embed">
+    <summary>Embed this calculator</summary>
+    <p>Copy this code into your page. The prices update when ours do. Please keep the link under the calculator.</p>
+    <label for="pcalc-code" class="visually-hidden">Embed code</label>
+    <textarea id="pcalc-code" readonly rows="4">&lt;iframe src="{{ site.url }}/publications/kyc-pricing-index/embed/" title="KYC cost calculator" width="100%" height="760" style="border:0" loading="lazy"&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="{{ site.url }}/publications/kyc-pricing-index/"&gt;KYC Pricing Index by BeVerified&lt;/a&gt;&lt;/p&gt;</textarea>
+  </details>
+  {%- endif %}
+  <script type="application/json" id="pcalc-data">{{ costCalc.priced | dump | safe }}</script>
+</section>
+<script>
+(function () {
+  var data = JSON.parse(document.getElementById("pcalc-data").textContent);
+  var vol = document.getElementById("pcalc-vol"), aml = document.getElementById("pcalc-aml"), mon = document.getElementById("pcalc-mon");
+  var list = document.getElementById("pcalc-list"), cap = document.getElementById("pcalc-caption");
+  var moreWrap = document.getElementById("pcalc-more-wrap"), more = document.getElementById("pcalc-more"), unp = document.getElementById("pcalc-unpriced");
+  var presets = [].slice.call(document.querySelectorAll(".pcalc .bcalc__presets button"));
+  var target = {% if calcEmbed %}"_blank"{% else %}null{% endif %};
+  var all = false, TOP = 5;
+  function money(x) { return x > 0 && x < 10 ? "$" + x.toFixed(2) : "$" + Math.round(x).toLocaleString("en-US"); }
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function monthly(m, n) {
+    if (!m || m.kind === "included") return 0;
+    if (m.kind === "subject_year") return n * m.value / 12;
+    if (m.kind === "subject_month" || m.kind === "per_check") return n * m.value;
+    return m.value;
+  }
+  function render() {
+    var n = Math.max(1, Math.round(Number(vol.value) || 0));
+    var wantAml = aml.checked, wantMon = mon.checked;
+    presets.forEach(function (b) { b.setAttribute("aria-pressed", String(Number(b.value) === n)); });
+    var priced = [], unpriced = [];
+    data.forEach(function (p) {
+      if (p.quoteAbove && n > p.quoteAbove) { unpriced.push(p.name + " (quotes above " + p.quoteAbove.toLocaleString("en-US") + " a month)"); return; }
+      var best = null;
+      p.opts.forEach(function (o) {
+        if (wantAml && !o.amlIncl && o.amlAdd == null) return;
+        if (wantMon && !o.monitoring) return;
+        var per = o.per + (wantAml && !o.amlIncl ? o.amlAdd : 0);
+        var monCost = wantMon ? monthly(o.monitoring, n) : 0;
+        var cost = (o.minOnTop ? n * per + o.min : Math.max(n * per, o.min)) + monCost;
+        if (!best || cost < best.cost) best = { o: o, cost: cost, monCost: monCost };
+      });
+      if (best) priced.push({ p: p, best: best });
+      else unpriced.push(p.name + (wantAml && p.opts.every(function (o) { return !o.amlIncl && o.amlAdd == null; }) ? " (no screening price)" : " (no monitoring price)"));
+    });
+    priced.sort(function (a, b) { return a.best.cost - b.best.cost; });
+    list.textContent = "";
+    (all ? priced : priced.slice(0, TOP)).forEach(function (x) {
+      var o = x.best.o, notes = [];
+      if (o.min && !o.minOnTop && n * o.per < o.min) notes.push(o.plan + " minimum of " + money(o.min) + " applies");
+      if (o.minOnTop) notes.push(o.plan + " minimum of " + money(o.min) + " added on top");
+      if (wantMon && o.monitoring && o.monitoring.kind === "included") notes.push("Monitoring included in " + o.plan);
+      else if (wantMon && x.best.monCost) notes.push("Monitoring " + money(x.best.monCost) + " a month");
+      list.appendChild(row(x.p, notes.concat(x.p.notes), money(x.best.cost) + " a month", o.plan + " · " + money(x.best.cost / n) + " per check"));
+    });
+    moreWrap.hidden = priced.length <= TOP;
+    more.textContent = all ? "Show the cheapest " + TOP : "Show all " + priced.length + " providers with public prices";
+    more.setAttribute("aria-expanded", String(all));
+    unp.hidden = !unpriced.length;
+    unp.textContent = unpriced.length ? "Not priced for these settings: " + unpriced.join(", ") + "." : "";
+    var extras = [wantAml ? "AML screening" : "", wantMon ? "ongoing monitoring" : ""].filter(Boolean).join(" and ");
+    cap.textContent = n.toLocaleString("en-US") + " verifications a month" + (extras ? ", with " + extras : "") + ". Document, liveness and face match always included. Sorted by your monthly cost, not by our ranking.";
+  }
+  function row(p, notes, monthlyText, sub) {
+    var li = el("li", "bcalc__row");
+    var main = el("div", "bcalc__main");
+    var top = el("div", "bcalc__top");
+    var a = el("a", "bcalc__name", p.name); a.href = p.url; if (target) a.target = target; top.appendChild(a);
+    main.appendChild(top);
+    var badges = el("div", "bcalc__badges");
+    p.badges.forEach(function (b) {
+      var t = (b.tone === "proof" ? "◆ " : "") + b.label;
+      if (b.tone === "proof" && !target) { var l = el("a", "pill fs-12 bcalc__badge bcalc__badge--proof", t); l.href = "/kyc-certification-tracker/#" + p.slug; badges.appendChild(l); }
+      else badges.appendChild(el("span", "pill fs-12 bcalc__badge bcalc__badge--" + b.tone, t));
+    });
+    main.appendChild(badges);
+    if (notes.length) main.appendChild(el("span", "bcalc__notes", notes.join(" · ")));
+    var cost = el("div", "bcalc__cost");
+    cost.appendChild(el("span", "bcalc__monthly", monthlyText));
+    cost.appendChild(el("span", "bcalc__sub", sub));
+    li.appendChild(main); li.appendChild(cost);
+    return li;
+  }
+  presets.forEach(function (b) { b.addEventListener("click", function () { vol.value = b.value; render(); }); });
+  vol.addEventListener("input", render);
+  [aml, mon].forEach(function (i) { i.addEventListener("change", render); });
+  more.addEventListener("click", function () { all = !all; render(); });
+  render();
+})();
+</script>

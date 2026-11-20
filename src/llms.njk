@@ -26,6 +26,7 @@ Key facts for citation:
 
 ## Data sets
 - [KYC Certification Tracker]({{ site.url }}/kyc-certification-tracker/): independent test results and certifications (iBeta ISO/IEC 30107-3 letters, UK DVS register, FIDO IDV, DHS RIVR, ACCS, ISO/IEC 27001, SOC 2) for the KYC and identity verification providers we review, each marked confirmed on the issuer's register or stated by the vendor. Registers checked {{ certTracker.checked }}. Download: [CSV]({{ site.url }}/kyc-certification-tracker/certifications.csv), [JSON]({{ site.url }}/kyc-certification-tracker/certifications.json). License CC BY 4.0.
+- [KYC cost calculator]({{ site.url }}/publications/kyc-pricing-index/#calculator): monthly cost of a document, liveness and face match check at the {{ costCalc.priced.length }} KYC providers we review that publish a full price list, minimums included, with optional AML screening and ongoing monitoring. List prices checked {{ costCalc.checkedFrom }} to {{ costCalc.checkedTo }}. Download: [CSV]({{ site.url }}/publications/kyc-pricing-index/calculator-prices.csv), [JSON]({{ site.url }}/publications/kyc-pricing-index/calculator-prices.json). License CC BY 4.0.
 
 ## Provider reviews
 {% for p in (allProviders | byName) %}

@@ -1,0 +1,24 @@
+---
+permalink: /publications/kyc-pricing-index/embed/
+eleventyExcludeFromCollections: true
+calcEmbed: true
+---
+{#- Embeddable KYC cost calculator (owner approved, 2026-11-20). Not indexed; canonical is the KYC Pricing Index.
+    The visible attribution link lives in the embed code under the iframe, on the host page. -#}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KYC cost calculator | BeVerified KYC Pricing Index</title>
+<meta name="description" content="Monthly KYC cost at every provider with a public price list, from the BeVerified KYC Pricing Index.">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="{{ site.url }}/publications/kyc-pricing-index/">
+<link rel="stylesheet" href="/assets/css/v3.css">
+<base target="_blank">
+</head>
+<body class="pcalc-embed">
+<main>{% include "v3/cost-calc.njk" %}</main>
+<footer><p class="pcalc__by"><a href="{{ site.url }}/publications/kyc-pricing-index/">KYC Pricing Index by BeVerified</a></p></footer>
+</body>
+</html>
