@@ -47,7 +47,8 @@ All pages are generated from templates + data. There is no hand-written page HTM
 | Icons (all pages) | library `src/_lib/icons.js` (77 stroke icons + meaning maps for rankings, article sections, evidence levels); shortcodes `{% icon %}` / `{% iconFor %}` in `eleventy.config.js`; styles `.i`, `.i--*`, `.i-tile` at the end of v3.css; rules `docs/icons.md`; preview `npm run icons` → `design/icons.html`; check `scripts/checks/icons.mjs` (a new ranking key needs an icon) |
 | Font | self-hosted `src/assets/fonts/Geist-Variable.woff2` |
 | Analytics (GA4) | ID in `site.json` → `v3.analytics.ga4`; loaded only after consent by `src/_includes/v3/consent.njk`. No other third-party scripts or cookies: the privacy policy (`#analytics`) describes exactly this |
-| Favicon, touch icons, manifest, default og:image (1200x630) | `src/assets/brand/`, `src/favicon.ico`; a page can set `ogImage` in front matter |
+| Brand assets block on About `/about/#brand` (logo, icon and avatar downloads, colours, typeface, name) | section `#brand` in `src/about/index.njk`, styles `.brand-*` at the end of v3.css; files `src/assets/brand/beverified-*` built by `python3 scripts/brand-assets.py` (needs fonttools, brotli, Chrome). Footer link in `site.json` → `v3.footer.company` |
+| Favicon, touch icons, manifest, default og:image (1200x630) | `src/assets/brand/`, `src/favicon.ico`, all rebuilt in the identity palette by `python3 scripts/brand-assets.py`; a page can set `ogImage` in front matter |
 | IndexNow (Bing, Yandex, Seznam, Naver; not Google) | key in `site.json` → `v3.indexnow`, key file `/<key>.txt` from `src/indexnow-key.njk`; `scripts/indexnow.mjs`. The deploy workflow submits new or changed sitemap URLs (by `lastmod`) after each deploy; run the workflow manually with "indexnow_all" to submit every URL |
 | `/llms.txt` | `src/llms.njk`, generated from the same data (rankings, providers, articles) |
 | For providers page | `src/placement-options/index.njk` |
