@@ -264,7 +264,7 @@
     {%- if incidentList.length %}
     <ol class="rv4-card rv4-inc" id="incidents">
       {%- for x in incidentList %}
-      <li><span class="num"><time datetime="{{ x.date | iso }}">{{ x.date | displayDate }}</time></span><div><b>{{ x.title }}</b>{% if x.counted == false %} <span class="rv4-sub">(not counted in score)</span>{% endif %}<p>{{ x.summary }} <a href="/incidents/#{{ x.id }}">Vendor response and sources</a></p></div></li>
+      <li><span class="num"><time datetime="{{ x.date | iso }}">{{ x.date | displayDate }}</time></span><div><b>{{ x.title }}</b>{% if x.counted == false %} <span class="rv4-sub">(not counted in score)</span>{% endif %}<p>{{ x.summary }} <a href="/incidents/#{{ x.id }}">Vendor response and timeline</a></p></div></li>
       {%- endfor %}
     </ol>
     {%- endif %}

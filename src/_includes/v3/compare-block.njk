@@ -123,7 +123,7 @@
   <div>
     <h3>{{ p[0].name }}</h3>
     {%- if p[1].length %}
-    {%- for x in p[1] %}<p><b>{{ x.title }}</b> (<time datetime="{{ x.date | iso }}">{{ x.date | displayDate }}</time>). {{ x.summary }} <a href="/incidents/#{{ x.id }}">Vendor response and sources</a></p>{% endfor %}
+    {%- for x in p[1] %}<p><b>{{ x.title }}</b> (<time datetime="{{ x.date | iso }}">{{ x.date | displayDate }}</time>). {{ x.summary }} <a href="/incidents/#{{ x.id }}">Vendor response and timeline</a></p>{% endfor %}
     {%- else %}<p>No breach, data exposure or security incident found in our <a href="/incidents/">incident tracker</a> as of {{ incidents.checked | displayDate }}.</p>{% endif %}
   </div>
   {%- endfor %}
