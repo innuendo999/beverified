@@ -6,7 +6,8 @@
 # iBeta names copied from the iBeta ISO/IEC 30107-3 confirmation letter list
 # (https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/),
 # checked 2026-11-20. UK DVS and FIDO names are added as they are confirmed on those
-# registers; a brand name alone is never enough to mark a row confirmed.
+# registers; a brand name alone is never enough to mark a row confirmed. UK DVS names copied
+# from the register CSV on 2026-11-20.
 
 sources:
   ibeta_pad:
@@ -35,10 +36,12 @@ names:
   jumio:
     ibeta_pad: [Jumio Corp.]
   onfido:
+    uk_dvs: ["Onfido Ltd"]
     ibeta_pad: [Onfido, Entrust]
   paravision:
     ibeta_pad: [Paravision]
   persona:
+    uk_dvs: ["Persona Identities Inc"]
     ibeta_pad: ["Persona Identities, Inc."]
   regula:
     ibeta_pad: [Regula Forensics]
@@ -53,3 +56,13 @@ names:
     ibeta_pad: [Veriff]
     uk_dvs: [Veriff OÜ]
     fido_face: [Veriff]
+  au10tix:
+    uk_dvs: ["AU10TIX Ltd"]
+  complycube:
+    uk_dvs: ["Teemo Technology Ltd"]
+  gbg:
+    uk_dvs: ["GB Group PLC"]
+  signicat:
+    uk_dvs: ["Signicat B.V"]
+  smartsearch:
+    uk_dvs: ["SmartCredit Limited", "Credas Technologies Ltd"]  # Credas Connect kept under SmartSearch (owner, 2026-11-10)

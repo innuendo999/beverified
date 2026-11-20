@@ -81,6 +81,10 @@ const hash = (s) => crypto.createHash('sha1').update(s).digest('hex').slice(0, 1
 // US "11/04/26" -> 2026-11-04; "18/03/2027" (day first) handled by the caller.
 const usDate = (s) => { const m = String(s).match(/(\d{1,2})\/(\d{1,2})\/(\d{2,4})/); if (!m) return null;
   const y = m[3].length === 2 ? `20${m[3]}` : m[3]; return `${y}-${m[1].padStart(2, '0')}-${m[2].padStart(2, '0')}`; };
+// UK registers write 14/01/2029 (day first).
+const ukDate = (s) => { const m = String(s).match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/); return m ? `${m[3]}-${m[2].padStart(2, '0')}-${m[1].padStart(2, '0')}` : null; };
+// Bump when the shape or meaning of snapshot rows changes: an older snapshot then counts as a new baseline.
+const SCHEMA = 2;
 const MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
 const textDate = (s) => { // "14 January 2029", "January 14, 2029", "Jun 2029"
   let m = String(s).match(/(\d{1,2})\s+([A-Za-z]{3})[a-z]*\.?\s+(\d{4})/);
@@ -138,10 +142,10 @@ export function parseDvs(csv) {
   const ci = { provider: col(/provider|company|organisation/i), service: col(/service/i), expiry: col(/expir/i), cert: col(/(date of )?certif.*date|certified on|date of certification/i), roles: col(/role/i), codes: col(/supplement/i) };
   if (ci.provider < 0 || ci.service < 0) return [];
   return body.map((r) => {
-    const g = (k) => (ci[k] >= 0 ? (r[ci[k]] || '').trim() : '');
-    const expiry = textDate(g('expiry')) || usDate(g('expiry')) || g('expiry');
+    const g = (k) => (ci[k] >= 0 ? (r[ci[k]] || '').replace(/\s+/g, ' ').trim() : '');
+    const expiry = ukDate(g('expiry')) || textDate(g('expiry')) || g('expiry');
     return { key: `${g('provider')}|${g('service')}`, vendor: g('provider'), service: g('service'), roles: g('roles'), codes: g('codes'),
-      certified: textDate(g('cert')) || g('cert'), expiry };
+      certified: ukDate(g('cert')) || textDate(g('cert')) || g('cert'), expiry };
   }).filter((r) => r.vendor);
 }
 
@@ -183,6 +187,7 @@ async function runSource(id, fn) {
     let prev = readJson(file, null);
     // A snapshot whose vendor names hold no letters came from a parser bug: treat this run as a new baseline.
     if (prev?.rows && prev.rows.length && prev.rows.every((r) => !/[a-z0-9]/i.test(r.vendor || ''))) prev = null;
+    if (prev && prev.schema !== SCHEMA) prev = null;
     if (Array.isArray(rows)) {
       if (!rows.length) throw new Error('parsed 0 rows: page structure may have changed');
       if (rows.every((r) => !/[a-z0-9]/i.test(r.vendor || ''))) throw new Error('rows parsed without vendor names: page structure may have changed');
@@ -196,10 +201,10 @@ async function runSource(id, fn) {
           const diff = Object.keys(r).filter((k) => k !== 'key' && JSON.stringify(r[k]) !== JSON.stringify(o[k]));
           if (diff.length) report.changedRows.push({ source: id, ...r, changes: diff.map((k) => `${k}: ${o[k] || '(empty)'} -> ${r[k] || '(empty)'}`) }); }
       }
-      writeJson(file, { date: TODAY, rows });
+      writeJson(file, { schema: SCHEMA, date: TODAY, rows });
       report.sources[id] = { ok: true, rows: rows.length, baseline: !prev };
     } else {
-      writeJson(file, { date: TODAY, ...rows });
+      writeJson(file, { schema: SCHEMA, date: TODAY, ...rows });
       report.sources[id] = { ok: true, ...rows.summary };
     }
     checked[id] = TODAY;
