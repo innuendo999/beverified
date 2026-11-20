@@ -1,0 +1,30 @@
+{#- AI agents guide: vendor claims tracker. Data: front matter agent_claims (owner approved the canvas, 2026-11-20) -#}
+{%- set C = agent_claims -%}
+{%- macro st(s) -%}
+<span class="agent-claims__state agent-claims__state--{{ s.state }}">
+{%- if s.state == "partial" -%}<svg aria-hidden="true" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="8" cy="8" r="6.2"/><path d="M8 4.5v4"/><path d="M8 11.2v.1"/></svg>
+{%- elif s.state == "na" -%}<svg aria-hidden="true" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 8h8"/></svg>
+{%- else -%}<svg aria-hidden="true" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="8" cy="8" r="6.2"/><path d="M3.8 12.2 12.2 3.8"/></svg>
+{%- endif -%}<span>{{ s.text }}</span></span>
+{%- endmacro -%}
+<figure class="agent-fig agent-claims" aria-labelledby="agent-claims-title">
+<div class="agent-fig__head">
+<p class="agent-fig__title" id="agent-claims-title">{{ C.title }}</p>
+<p class="agent-fig__note">{{ C.note }}</p>
+</div>
+<table class="agent-claims__table">
+<caption class="visually-hidden">{{ C.title }}: claim, method and independent test per vendor</caption>
+<thead><tr><th scope="col">Provider</th><th scope="col">What the vendor claims</th><th scope="col">Method</th><th scope="col">Independent test</th></tr></thead>
+<tbody>
+{%- for r in C.rows %}
+<tr>
+<th scope="row"><a href="/providers/{{ r.slug }}/">{{ r.provider }}</a></th>
+<td class="agent-claims__claim{% if r.no_figure %} agent-claims__claim--none{% endif %}">{{ r.claim }}</td>
+<td data-label="Method">{{ st(r.method) }}</td>
+<td data-label="Independent test">{{ st(r.test) }}</td>
+</tr>
+{%- endfor %}
+</tbody>
+</table>
+<figcaption class="agent-fig__caption">{{ C.caption }}</figcaption>
+</figure>

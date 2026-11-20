@@ -1,0 +1,25 @@
+{#- AI agents guide: who closes what under the AMLR. Data: front matter agent_ladder (owner approved the canvas "BeVerified: AI agents guide, visual blocks proposal", 2026-11-20) -#}
+{%- set L = agent_ladder -%}
+<figure class="agent-fig agent-ladder" aria-labelledby="agent-ladder-title">
+<div class="agent-fig__head">
+<p class="agent-fig__title" id="agent-ladder-title">{{ L.title }}</p>
+<p class="agent-fig__note">{{ L.note }}</p>
+</div>
+<ol class="agent-ladder__rungs">
+{%- for r in L.rungs %}
+<li class="agent-ladder__rung agent-ladder__rung--{{ loop.index }}">
+<span class="agent-ladder__mark" aria-hidden="true">{{ loop.index }}</span>
+<div class="agent-ladder__body">
+<p class="agent-ladder__name">{{ r.title }}</p>
+<p class="agent-ladder__desc">{{ r.desc }}</p>
+<ul class="agent-ladder__items">
+{%- for it in r.items %}
+<li><span class="agent-ladder__decision">{{ it.decision }}</span><span class="agent-ladder__basis">{{ it.basis }}</span></li>
+{%- endfor %}
+</ul>
+</div>
+</li>
+{%- endfor %}
+</ol>
+<figcaption class="agent-fig__caption">{{ L.caption }}</figcaption>
+</figure>

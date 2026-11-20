@@ -1797,3 +1797,49 @@ html:not(.mm-js) .mm-item:hover .mm-panel, html:not(.mm-js) .mm-item:focus-withi
 .score-lbl--in { display: inline; margin-right: 5px; }
 .top-card__score { flex-wrap: wrap; }
 .top-card__score .score-lbl { flex-basis: 100%; }
+
+/* AI agents guide figures (src/_includes/figures/agent-ladder.njk, agent-claims.njk; owner approved the canvas 2026-11-20). Text, not images; no green */
+.agent-fig { margin: 24px 0 32px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-card); padding: 28px 32px 22px; display: flex; flex-direction: column; gap: 22px; }
+.legacy-prose .agent-fig__title { font-size: 21px; line-height: 1.3; font-weight: 600; color: var(--ink); letter-spacing: -0.01em; margin: 0 0 6px; }
+.legacy-prose .agent-fig__note { font-size: 14px; line-height: 1.5; color: var(--muted); margin: 0; }
+.agent-fig__caption { font-size: 13px; line-height: 1.45; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; }
+.legacy-prose .agent-ladder__rungs { list-style: none; padding: 0; margin: 0; }
+.agent-ladder__rung { display: grid; grid-template-columns: 36px minmax(0, 1fr); column-gap: 20px; position: relative; padding-bottom: 26px; }
+.agent-ladder__rung:last-child { padding-bottom: 0; }
+.agent-ladder__rung:not(:last-child)::before { content: ""; position: absolute; left: 17px; top: 42px; bottom: 6px; width: 2px; background: var(--line); }
+.agent-ladder__mark { width: 36px; height: 36px; border-radius: var(--radius-pill); box-sizing: border-box; border: 2px solid var(--accent); color: var(--accent); background: var(--surface); display: inline-flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.agent-ladder__rung--2 .agent-ladder__mark { background: var(--accent); color: #fff; }
+.agent-ladder__rung--3 .agent-ladder__mark { background: var(--ink); border-color: var(--ink); color: #fff; }
+.legacy-prose .agent-ladder__name { font-size: 18px; line-height: 1.4; font-weight: 600; color: var(--ink); margin: 6px 0 4px; }
+.legacy-prose .agent-ladder__desc { font-size: 14px; line-height: 1.5; color: var(--body); margin: 0 0 8px; }
+.legacy-prose .agent-ladder__items { list-style: none; padding: 0; margin: 0; }
+.legacy-prose .agent-ladder__items li { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; padding: 11px 0; border-top: 1px solid var(--line-soft); font-size: 15px; line-height: 1.45; }
+.agent-ladder__decision { color: var(--ink); }
+.agent-ladder__basis { font-size: 13px; color: var(--muted); white-space: nowrap; }
+.legacy-prose table.agent-claims__table { display: table; width: 100%; table-layout: fixed; background: transparent; border-radius: 0; overflow: visible; margin: 0; font-size: 14px; line-height: 1.45; }
+.agent-claims__table thead th:nth-child(1) { width: 22%; }
+.agent-claims__table thead th:nth-child(3) { width: 22%; }
+.agent-claims__table thead th:nth-child(4) { width: 18%; }
+.legacy-prose .agent-claims__table th, .legacy-prose .agent-claims__table td { padding: 12px 12px 12px 0; border-top: 0; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+.legacy-prose .agent-claims__table thead th { font-size: 13px; font-weight: 600; color: var(--ink); padding-bottom: 10px; border-bottom-color: var(--line-strong); }
+.agent-claims__table tbody th { font-weight: 600; }
+.agent-claims__table tbody th a { color: var(--ink); }
+.agent-claims__claim { color: var(--ink); }
+.agent-claims__claim--none { color: var(--muted); }
+.agent-claims__state { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--body); }
+.agent-claims__state svg { flex: 0 0 14px; color: var(--muted); }
+.agent-claims__state--partial svg { color: var(--accent); }
+.agent-claims__state--na svg { color: var(--faint); }
+@media (max-width: 640px) {
+  .agent-fig { padding: 20px 20px 16px; }
+  .legacy-prose .agent-fig__title { font-size: 19px; }
+  .legacy-prose .agent-ladder__items li { flex-direction: column; gap: 3px; padding: 11px 0; }
+  .agent-ladder__basis { white-space: normal; }
+  .agent-ladder__rung { column-gap: 14px; }
+  .agent-claims__table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .legacy-prose table.agent-claims__table, .agent-claims__table tbody, .agent-claims__table tr, .agent-claims__table th, .agent-claims__table td { display: block; width: 100%; }
+  .agent-claims__table tr { padding: 12px 0; border-top: 1px solid var(--line-soft); }
+  .legacy-prose .agent-claims__table th, .legacy-prose .agent-claims__table td { padding: 2px 0; border: 0; }
+  .legacy-prose .agent-claims__table td[data-label] { display: inline-flex; width: auto; margin-right: 16px; gap: 6px; }
+  .agent-claims__table td[data-label]::before { content: attr(data-label) ":"; font-size: 13px; color: var(--muted); }
+}
