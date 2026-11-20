@@ -252,38 +252,50 @@ track_record:
     source: 28
 certifications:
 - name: iBeta ISO/IEC 30107-3 PAD Level 2
+  program: ibeta_pad
+  level: 2
   what: Liveness, Veridas Passive Liveness Detection (Apr 2024)
   status: confirmed
   source: 8
 - name: iBeta ISO/IEC 30107-3 PAD Level 1
+  program: ibeta_pad
+  level: 1
   what: Liveness, Veridas Passive Liveness Detection (Mar 2024)
   status: confirmed
   source: 8
 - name: iBeta ISO/IEC 30107-3 PAD Level 1
+  program: ibeta_pad
+  level: 1
   what: Voice liveness, Voice Shield (Dec 2024)
   status: confirmed
   source: 8
 - name: eIDAS conformity (EN 319 401, ETSI TS 119 461)
+  program: other
   what: Identity proofing, hybrid manual and automated (DEKRA, 2026)
   status: confirmed
   source: 13
 - name: ISO/IEC 27001
+  program: iso27001
   what: Information security
   status: vendor_stated
   source: 14
 - name: ENS (Esquema Nacional de Seguridad)
+  program: other
   what: Spanish national security scheme, identity verification service
   status: vendor_stated
   source: 15
 - name: SOC 3
+  program: other
   what: Security controls report, period 1 Jan to 31 Dec 2023
   status: vendor_stated
   source: 16
 - name: SOC 2 Type II
+  program: soc2
   what: Security controls attestation
   status: not_found
   source: null
 - name: NIST FRVT 1:N (2023)
+  program: other
   what: Face recognition benchmark, 4th place per Veridas
   status: vendor_stated
   source: 9

@@ -267,14 +267,17 @@ track_record:
     source: 6
 certifications:
 - name: ISO/IEC 27001
+  program: iso27001
   what: Information security
   status: vendor_stated
   source: 1
 - name: SOC 2 Type II
+  program: soc2
   what: Security controls report
   status: vendor_stated
   source: 1
 - name: PCI DSS
+  program: other
   what: Payment card data security
   status: vendor_stated
   source: 1

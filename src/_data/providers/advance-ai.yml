@@ -275,10 +275,13 @@ capabilities:
     checked: '2026-11'
 certifications:
 - name: ISO/IEC 27001:2013
+  program: iso27001
   what: Information security (obtained Feb 2020, Indonesia)
   status: vendor_stated
   source: 1
 - name: ISO/IEC 30107-3 PAD Level 2 (iBeta)
+  program: ibeta_pad
+  level: 2
   what: Liveness, presentation attack detection (iBeta letter, Sep 2024)
   status: confirmed
   source: 6

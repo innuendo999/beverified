@@ -351,34 +351,45 @@ track_record:
     source: 10
 certifications:
 - name: iBeta ISO/IEC 30107-3 PAD Level 3
+  program: ibeta_pad
+  level: 3
   what: Liveness, presentation attack detection
   status: confirmed
   source: 5
 - name: iBeta ISO/IEC 30107-3 PAD Level 2
+  program: ibeta_pad
+  level: 2
   what: Liveness, presentation attack detection
   status: confirmed
   source: 11
 - name: iBeta ISO/IEC 30107-3 PAD Level 1
+  program: ibeta_pad
+  level: 1
   what: Liveness, presentation attack detection
   status: confirmed
   source: 6
 - name: ISO/IEC 27001:2022
+  program: iso27001
   what: Information security
   status: vendor_stated
   source: 4
 - name: SOC 2 Type II
+  program: soc2
   what: Security controls report
   status: vendor_stated
   source: 4
 - name: PCI DSS
+  program: other
   what: Payment card data security
   status: vendor_stated
   source: 4
 - name: Cyber Essentials Plus
+  program: other
   what: UK cyber security scheme
   status: vendor_stated
   source: 4
 - name: 'KJM approval (Germany)'
+  program: other
   what: Age verification to protect minors, announced 2020
   status: vendor_stated
   source: 18

@@ -359,14 +359,17 @@ track_record:
     source: 2
 certifications:
 - name: ISO/IEC 27001:2022
+  program: iso27001
   what: Information security (cert. ISMS-1851/A, CERT International, valid to Jun 2029)
   status: confirmed
   source: 4
 - name: SOC 2 Type II
+  program: soc2
   what: Security, availability, confidentiality (12-month audit period)
   status: vendor_stated
   source: 11
 - name: ISO/IEC 30107-3 (iBeta)
+  program: ibeta_pad
   what: Liveness / presentation attack detection
   status: vendor_stated
   source: 11

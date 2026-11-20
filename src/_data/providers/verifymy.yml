@@ -239,14 +239,17 @@ track_record:
     source: 18
 certifications:
 - name: ISO/IEC 27566-1:2025 and ACCS 1:2025
+  program: accs
   what: Age assurance systems
   status: confirmed
   source: 4
 - name: IEEE 2089.1-2024
+  program: other
   what: Online age verification (face age estimation)
   status: confirmed
   source: 4
 - name: KJM approval (Germany)
+  program: other
   what: Youth media protection, facial age estimation (2022, per VerifyMy)
   status: vendor_stated
   source: 10

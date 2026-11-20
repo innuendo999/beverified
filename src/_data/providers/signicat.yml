@@ -280,26 +280,32 @@ track_record:
     source: 23
 certifications:
 - name: ISO/IEC 27001:2022
+  program: iso27001
   what: Information security (DNV, valid to Oct 2029)
   status: confirmed
   source: 6
 - name: UK DIATF (ReadID)
+  program: uk_dvs
   what: UK digital identity trust framework (Kantara, valid to Jun 2029)
   status: confirmed
   source: 13
 - name: eIDAS Qualified Trust Service Provider
+  program: other
   what: Qualified trust services
   status: vendor_stated
   source: 5
 - name: SOC 2
+  program: soc2
   what: Security controls report (Type 2 stated for 2019)
   status: vendor_stated
   source: 5
 - name: Cyber Essentials Plus
+  program: other
   what: UK cyber security scheme
   status: vendor_stated
   source: 5
 - name: ENS High (Spain)
+  program: other
   what: Spanish National Security Framework (AENOR, valid to Mar 2028)
   status: confirmed
   source: 14

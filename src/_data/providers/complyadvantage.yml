@@ -314,10 +314,12 @@ track_record:
     source: 2
 certifications:
 - name: ISO/IEC 27001
+  program: iso27001
   what: Information security (BSI, per G-Cloud listing)
   status: vendor_stated
   source: 4
 - name: SOC 2 Type 2
+  program: soc2
   what: Security controls report
   status: vendor_stated
   source: 4

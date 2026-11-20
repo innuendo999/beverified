@@ -292,18 +292,23 @@ track_record:
     source: 1
 certifications:
 - name: ISO/IEC 27001:2022
+  program: iso27001
   what: Information security
   status: vendor_stated
   source: 4
 - name: SOC 2 Type 2
+  program: soc2
   what: Security controls audit
   status: vendor_stated
   source: 4
 - name: PCI DSS
+  program: other
   what: Payment card data security
   status: vendor_stated
   source: 4
 - name: ISO/IEC 30107-3 Level 2 (iBeta)
+  program: ibeta_pad
+  level: 2
   what: Liveness / presentation attack detection
   status: confirmed
   source: 5

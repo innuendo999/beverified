@@ -343,34 +343,43 @@ track_record:
     source: 4
 certifications:
 - name: FedRAMP Moderate (Persona for Government)
+  program: other
   what: US federal cloud security, certified since 10 Apr 2026
   status: confirmed
   source: 3
 - name: ISO/IEC 30107-3 Level 2 (iBeta)
+  program: ibeta_pad
+  level: 2
   what: Liveness / presentation attack detection, Persona Selfie Liveness 2.0 (Nov 2023)
   status: confirmed
   source: 6
 - name: UK DVS trust framework (DIATF)
+  program: uk_dvs
   what: Persona, Right to Work and Right to Rent; Kantara, 15 Dec 2025 to 15 Dec 2028
   status: confirmed
   source: 33
 - name: SOC 2 Type II
+  program: soc2
   what: Security controls audit
   status: vendor_stated
   source: 2
 - name: ISO/IEC 27001
+  program: iso27001
   what: Information security
   status: vendor_stated
   source: 2
 - name: Kantara (NIST SP 800-63)
+  program: other
   what: US identity assurance
   status: vendor_stated
   source: 2
 - name: HIPAA
+  program: other
   what: US health data
   status: vendor_stated
   source: 2
 - name: KJM
+  program: other
   what: Age verification (Germany)
   status: vendor_stated
   source: 2

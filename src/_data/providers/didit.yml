@@ -370,18 +370,24 @@ track_record:
     source: 4
 certifications:
 - name: iBeta ISO/IEC 30107-3 PAD Level 1
+  program: ibeta_pad
+  level: 1
   what: Liveness, Didit Biometric Authentication v2.0 (Feb 2026)
   status: confirmed
   source: 6
 - name: iBeta ISO/IEC 30107-3 PAD Level 2
+  program: ibeta_pad
+  level: 2
   what: Didit Biometric Authentication v3.0, iPhone 17 (Nov 2026)
   status: confirmed
   source: 18
 - name: ISO/IEC 27001:2022
+  program: iso27001
   what: Information security, Bureau Veritas, cert. ES144068, valid to Jun 2027
   status: confirmed
   source: 12
 - name: SOC 2 Type 2
+  program: soc2
   what: Report issued Jul 2026, shared on request
   status: vendor_stated
   source: 3

@@ -274,18 +274,23 @@ capabilities:
     checked: '2026-11'
 certifications:
 - name: ISO/IEC 27001:2022
+  program: iso27001
   what: Information security (EY CertifyPoint, cert. 2021-039)
   status: vendor_stated
   source: 1
 - name: eIDAS qualified trust service provider
+  program: other
   what: Qualified e-signature certificates (Fourthline Trust Services AB, Aug 2026)
   status: vendor_stated
   source: 10
 - name: ISO/IEC 30107-3 (iBeta Level 1 and 2)
+  program: ibeta_pad
+  level: [1, 2]
   what: Liveness / presentation attack detection
   status: vendor_stated
   source: 2
 - name: ISAE 3000
+  program: other
   what: Assurance report
   status: vendor_stated
   source: 2

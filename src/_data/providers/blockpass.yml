@@ -292,10 +292,12 @@ capabilities:
   checked: '2026-11'
 certifications:
 - name: ISO/IEC 27001:2022
+  program: iso27001
   what: Information security management; certificate 241611 from British Assessment Bureau (Amtivo), scope KYC and AML software tools, issued 11 March 2026, valid to 8 March 2029
   status: confirmed
   source: 13
 - name: Cyber Essentials Plus
+  program: other
   what: UK government baseline cyber security scheme; mark shown on the Blockpass site, register entry not checked
   status: vendor_stated
   source: 5

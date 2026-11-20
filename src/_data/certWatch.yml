@@ -1,0 +1,55 @@
+# KYC Certification Tracker: how each reviewed provider is named on each register.
+# The watcher (planned, scripts/cert-watch/) matches register rows to provider slugs
+# with these names only. A provider missing here is not matched; unknown vendors are ignored.
+# Spec: docs/cert-tracker.md
+#
+# iBeta names copied from the iBeta ISO/IEC 30107-3 confirmation letter list
+# (https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/),
+# checked 2026-11-20. UK DVS and FIDO names are added as they are confirmed on those
+# registers; a brand name alone is never enough to mark a row confirmed.
+
+sources:
+  ibeta_pad:
+    url: https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/
+    format: html-table
+  uk_dvs:
+    url: https://www.access-dvs-register.service.gov.uk/register
+    format: csv  # "Download register CSV" on the All services page
+  fido_face:
+    url: https://fidoalliance.org/certification/identity-verification/face-verification/fido-certified-products/
+    format: html  # the same page lists DocAuth entries
+  rivr:
+    url: https://mdtf.org/rivr/Results
+    format: html  # aliases only; an alias maps to a vendor only when the vendor disclosed it
+  accs:
+    url: https://accscheme.com/registry/
+    format: html
+
+names:
+  advance-ai:
+    ibeta_pad: [Advance Intelligence, Advance AI]
+  didit:
+    ibeta_pad: [Didit Identity]
+  incode:
+    ibeta_pad: [Incode Technologies, "Incode Technologies, Inc.", Incode]
+  jumio:
+    ibeta_pad: [Jumio Corp.]
+  onfido:
+    ibeta_pad: [Onfido, Entrust]
+  paravision:
+    ibeta_pad: [Paravision]
+  persona:
+    ibeta_pad: ["Persona Identities, Inc."]
+  regula:
+    ibeta_pad: [Regula Forensics]
+  shufti-pro:
+    ibeta_pad: [Shufti Pro]
+    rivr: [MTDS 15]  # disclosed by Shufti, see independent_tests.rivr in the record
+  sumsub:
+    ibeta_pad: [Raritex Trade]  # product "Sumsub Liveness"
+  veridas:
+    ibeta_pad: [Veridas]
+  veriff:
+    ibeta_pad: [Veriff]
+    uk_dvs: [Veriff OÜ]
+    fido_face: [Veriff]

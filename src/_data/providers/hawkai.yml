@@ -234,10 +234,12 @@ track_record:
     source: 4
 certifications:
 - name: ISO/IEC 27001:2022
+  program: iso27001
   what: Information security (TÜV SÜD, valid to Nov 2028)
   status: confirmed
   source: 7
 - name: SOC 2 Type II
+  program: soc2
   what: Security controls report (A-Lign)
   status: vendor_stated
   source: 6

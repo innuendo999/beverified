@@ -337,26 +337,33 @@ capabilities:
     checked: '2026-11'
 certifications:
 - name: UK DIATF certified identity service
+  program: uk_dvs
   what: UK digital identity trust framework (Kantara, Mar 2026 to Mar 2029)
   status: confirmed
   source: 4
 - name: ISO/IEC 27001:2022
+  program: iso27001
   what: Information security
   status: vendor_stated
   source: 2
 - name: ISO 9001:2015
+  program: other
   what: Quality management
   status: vendor_stated
   source: 2
 - name: ISO/IEC 30107-3 Level 2
+  program: pad_other
+  level: 2
   what: Liveness / presentation attack detection (lab not named)
   status: vendor_stated
   source: 2
 - name: Cyber Essentials
+  program: other
   what: UK baseline cyber security
   status: vendor_stated
   source: 2
 - name: ACCS 4:2020 (Age Check Certification Scheme)
+  program: accs
   what: Age assurance
   status: vendor_stated
   source: 2

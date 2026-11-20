@@ -202,34 +202,42 @@ track_record:
     source: 4
 certifications:
 - name: ISO/IEC 27001:2022
+  program: iso27001
   what: Information security
   status: vendor_stated
   source: 3
 - name: ISO/IEC 27017:2015
+  program: other
   what: Cloud security controls
   status: vendor_stated
   source: 3
 - name: ISO 22301
+  program: other
   what: Business continuity
   status: vendor_stated
   source: 3
 - name: ISO 9001:2015
+  program: other
   what: Quality management
   status: vendor_stated
   source: 3
 - name: SOC 2
+  program: soc2
   what: Security controls audit (Type 1 reports per Trust Center updates)
   status: vendor_stated
   source: 3
 - name: Cyber Essentials Plus
+  program: other
   what: UK cyber security
   status: vendor_stated
   source: 3
 - name: IRAP
+  program: other
   what: Australian government security assessment
   status: vendor_stated
   source: 3
 - name: NHS DSPT
+  program: other
   what: UK health data security
   status: vendor_stated
   source: 3
