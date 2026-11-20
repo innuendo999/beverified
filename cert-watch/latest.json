@@ -2,12 +2,14 @@
   "date": "2026-11-20",
   "sources": {
     "ibeta_pad": {
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true,
+      "rows": 290,
+      "baseline": true
     },
     "uk_dvs": {
-      "ok": false,
-      "error": "no \"Download register CSV\" link found on the register page"
+      "ok": true,
+      "rows": 67,
+      "baseline": true
     },
     "fido": {
       "ok": true,
@@ -26,18 +28,16 @@
   "newRows": [],
   "removedRows": [],
   "changedRows": [],
-  "toCheck": [],
+  "toCheck": [
+    {
+      "source": "ibeta_pad",
+      "slug": "regula",
+      "note": "iBeta letter not cited in the record: Regula Forensics, Regula Face Mobile SDK, Level 1, 2025-10-27: https://www.ibeta.com/wp-content/uploads/2025/12/251027-Regula-PAD-Level-1-Confirmation-Letter-Android.pdf"
+    }
+  ],
   "candidates": [],
   "expiring": [],
   "errors": [
-    {
-      "source": "ibeta_pad",
-      "error": "fetch failed"
-    },
-    {
-      "source": "uk_dvs",
-      "error": "no \"Download register CSV\" link found on the register page"
-    },
     {
       "source": "rivr",
       "error": "page returned almost no text (script-rendered); check it in a browser"
