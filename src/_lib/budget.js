@@ -43,6 +43,9 @@ export function calcProvider(d, rank, entry) {
       plan: o.plan,
       per: sum([...o.check, ...(o.per_user_monthly || [])]),
       min: o.minimum ? usd(o.minimum.item) : 0,
+      // covers_checks true (vendor says so) or "estimator" (the vendor's own cost estimator shows no separate minimum
+      // line): the minimum is a floor. Otherwise it is counted on top of the checks.
+      minOnTop: !!o.minimum && !o.minimum.covers_checks,
       amlIncl: !!o.aml_included,
       amlAdd: o.aml ? sum(o.aml) : null,
       monitoring,
@@ -54,13 +57,17 @@ export function calcProvider(d, rank, entry) {
   const badges = [
     t.self_serve === "yes" ? { label: "Self-serve", tone: "plain" } : null,
     t.contract === "none" ? { label: "No contract", tone: "plain" } : null,
-    lowMin === 0 ? { label: "No minimum", tone: "plain" } : { label: "Minimum covers checks", tone: "plain" },
+    lowMin === 0 ? { label: "No minimum", tone: "plain" }
+      : opts.some((o) => o.minOnTop) ? { label: "Minimum counted on top", tone: "plain" }
+      : b.options.some((o) => o.minimum?.covers_checks === "estimator") ? { label: "Minimum covers checks, per estimator", tone: "plain" }
+      : { label: "Minimum covers checks", tone: "plain" },
     lvl ? { label: `iBeta Level ${lvl}`, tone: "proof" } : { label: "No lab liveness letter", tone: "warn" },
   ].filter(Boolean);
   const notes = [
     ...(b.currency !== "USD" ? [`Priced in ${b.currency === "EUR" ? "euros" : "pounds"}`] : []),
     ...(b.starting_from ? ['"Starting from" price'] : []),
     ...(b.face_match === "not_named" ? ["Face match not named"] : []),
+    ...(b.options.some((o) => o.minimum?.covers_checks === "estimator") ? ["Minimum treated as covering checks, as the vendor's cost estimator shows"] : []),
     ...(b.billing_note ? [b.billing_note] : []),
     ...(b.free_note ? [b.free_note] : []),
   ];

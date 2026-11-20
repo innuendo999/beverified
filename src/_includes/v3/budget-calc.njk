@@ -41,7 +41,7 @@
   function monthly(m, n) {
     if (!m || m.kind === "included") return 0;
     if (m.kind === "subject_year") return n * m.value / 12;
-    if (m.kind === "subject_month") return n * m.value;
+    if (m.kind === "subject_month" || m.kind === "per_check") return n * m.value;
     return m.value; // flat_month
   }
   function render() {
@@ -57,7 +57,7 @@
         if (wantMon && !o.monitoring) return;
         var per = o.per + (wantAml && !o.amlIncl ? o.amlAdd : 0);
         var monCost = wantMon ? monthly(o.monitoring, n) : 0;
-        var cost = Math.max(n * per, o.min) + monCost;
+        var cost = (o.minOnTop ? n * per + o.min : Math.max(n * per, o.min)) + monCost;
         if (!best || cost < best.cost) best = { o: o, cost: cost, monCost: monCost };
       });
       if (best) priced.push({ p: p, best: best }); else unpriced.push(p);
