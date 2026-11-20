@@ -18,6 +18,7 @@ Slug, term, cluster, capability key (generated provider table), ranking keys, ex
 | reusable-digital-identity | Reusable digital identity | identity | | identity-verification | |
 | synthetic-identity-fraud | Synthetic identity fraud | identity | | identity-verification | /publications/identity-theft-cases/ |
 | deepfake-identity-fraud | Deepfake identity fraud | identity | | liveness-detection | |
+| identity-farming | Identity farming | identity | | identity-verification, liveness-detection | |
 | anti-money-laundering | Anti-money laundering (AML) | aml | | aml | |
 | customer-due-diligence | Customer due diligence (CDD) | aml | | aml | |
 | enhanced-due-diligence | Enhanced due diligence (EDD) | aml | | aml | |
