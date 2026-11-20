@@ -186,7 +186,7 @@ layout: v3.njk
   {%- if p.certifications and p.certifications.length %}
   <section id="certifications" aria-labelledby="cert-h">
     <h2 id="cert-h" class="h-section h-section--tight">Certifications &amp; independent tests</h2>
-    <p class="section-lede">"Confirmed" means we found the certificate or register entry ourselves.</p>
+    <p class="section-lede">"Confirmed" means we found the certificate or register entry ourselves.{% if certTrackerRow %} <a href="{{ certTrackerRow }}">Compare with other providers in the KYC Certification Tracker</a>{% endif %}</p>
     {%- set certShown = 4 %}
     <div class="card">
       {%- for c in p.certifications %}

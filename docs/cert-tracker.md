@@ -59,3 +59,11 @@ The drafting step is a scheduled Claude task (weekdays): it reads `cert-watch/la
 - "Recent changes" are hand-entered in `certTracker.yml`, each one already in a provider record with its source. The watcher will add them later.
 - Downloads: `/kyc-certification-tracker/certifications.csv` and `.json`, one line per certification entry with source title and URL.
 - JSON-LD: CollectionPage with ItemList of providers, Dataset with the two downloads, BreadcrumbList.
+
+## Internal links (owner approved A, B, C, F on 2026-11-20)
+
+- A: review certifications block, "Compare with other providers in the KYC Certification Tracker", linking to `#<slug>`, on the 29 listed reviews only (`certTrackerRow` in `src/reviews.11tydata.js`, same `isListed()` rule).
+- B: glossary "Providers that offer it" note on certificate terms (`offer.cert`): ISO/IEC 30107-3, liveness detection, UK DIATF, ISO 27001, SOC 2, ISO/IEC 27566-1.
+- C: one line next to the methodology link on the identity-verification, e-kyc, liveness-detection, cheap-kyc and age-verification rankings (`src/categories.njk`).
+- F: "Data sets" section in `/llms.txt` with the page and both downloads.
+- Not done (not chosen): methodology evidence section, incident tracker cross-links.
