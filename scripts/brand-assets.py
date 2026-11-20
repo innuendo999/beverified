@@ -87,5 +87,71 @@ def main():
     print("wrote", ", ".join(list(files) + [r[1] for r in renders]))
 
 
+
+# ---- Site icons and default og:image (identity palette, 2026-11-20) ----
+GROUND, FAINT_BAR, MID_BAR, MUTED = "#F3F6FA", "#DDE3EC", "#C9D2E0", "#8A95AB"
+
+
+def render(html, png, w, h, transparent=False):
+    chrome = shutil.which("google-chrome") or shutil.which("chromium")
+    with tempfile.TemporaryDirectory() as tmp:
+        page = pathlib.Path(tmp) / "p.html"
+        page.write_text(html)
+        args = [chrome, "--headless=new", "--no-sandbox", "--disable-gpu", "--hide-scrollbars",
+                f"--window-size={w},{h}", f"--screenshot={png}", page.as_uri()]
+        if transparent:
+            args.insert(-1, "--default-background-color=00000000")
+        subprocess.run(args, check=True, capture_output=True)
+
+
+def site_icons():
+    from PIL import Image
+    (OUT / "favicon.svg").write_text(
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><style>.i{fill:%s}'
+        '@media (prefers-color-scheme:dark){.i{fill:%s}}</style>'
+        '<rect x="3" y="15" width="7" height="14" rx="1.5" class="i"/>'
+        '<rect x="12.5" y="9" width="7" height="20" rx="1.5" class="i"/>'
+        '<rect x="22" y="3" width="7" height="26" rx="1.5" fill="%s"/></svg>\n' % (INK, GROUND, ACCENT))
+    tile = (OUT / "beverified-mark.svg").as_uri()
+    for name, size in (("apple-touch-icon.png", 180), ("icon-192.png", 192), ("icon-512.png", 512)):
+        pad = round(size * 0.14)
+        render(f"<html><body style='margin:0;background:{GROUND}'><img src='{tile}' "
+               f"style='display:block;width:{size - 2 * pad}px;margin:{pad}px'></body></html>", OUT / name, size, size)
+        Image.open(OUT / name).convert("RGB").save(OUT / name)
+    ico_src = OUT / "_ico.png"
+    render(f"<html><body style='margin:0;background:transparent'><img src='{(OUT / 'favicon.svg').as_uri()}' "
+           "style='display:block;width:48px'></body></html>", ico_src, 48, 48, transparent=True)
+    im = Image.open(ico_src).convert("RGBA")
+    for target in (OUT / "favicon.ico", ROOT / "src/favicon.ico"):
+        im.save(target, sizes=[(16, 16), (32, 32), (48, 48)])
+    ico_src.unlink()
+
+
+def og_default():
+    font = FONT.as_uri()
+    logo = (OUT / "beverified-logo.svg").as_uri()
+    html = f"""<html><head><style>
+@font-face {{ font-family: Geist; src: url('{font}') format('woff2'); font-weight: 100 900; }}
+body {{ margin: 0; width: 1200px; height: 630px; background: {GROUND}; font-family: Geist; position: relative; overflow: hidden; }}
+.logo {{ position: absolute; left: 84px; top: 76px; height: 38px; }}
+h1 {{ position: absolute; left: 80px; top: 268px; margin: 0; font-size: 76px; line-height: 1.0; letter-spacing: -0.04em; font-weight: 600; color: {INK}; z-index: 1; }}
+h1 span {{ color: {MUTED}; }}
+.url {{ position: absolute; left: 82px; top: 528px; font-size: 26px; color: #3D4A63; letter-spacing: -0.01em; }}
+.bar {{ position: absolute; bottom: 0; width: 74px; border-radius: 10px 10px 0 0; }}
+</style></head><body>
+<img class="logo" src="{logo}">
+<div class="bar" style="left:854px;height:190px;background:{FAINT_BAR}"></div>
+<div class="bar" style="left:950px;height:290px;background:{MID_BAR}"></div>
+<div class="bar" style="left:1046px;height:400px;background:{ACCENT}"></div>
+<h1>Find the right KYC &amp;<br>AML provider.<br><span>Independently reviewed.</span></h1>
+<div class="url">beverified.org</div>
+</body></html>"""
+    render(html, OUT / "og-default.png", 1200, 630)
+    from PIL import Image
+    Image.open(OUT / "og-default.png").convert("RGB").save(OUT / "og-default.png", optimize=True)
+
+
 if __name__ == "__main__":
     main()
+    site_icons()
+    og_default()
