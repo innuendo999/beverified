@@ -154,6 +154,10 @@ sources:
     publisher: "AML Watcher"
     url: "https://amlwatcher.com/press-release/aml-watcher-introduces-trurisk-to-accelerate-manual-alert-review/"
     accessed: 2026-11
+  - title: "AML Watcher announces availability of its proprietary databases over MCP server (September 2025)"
+    publisher: "AML Watcher"
+    url: "https://amlwatcher.com/press-release/aml-watcher-announces-availability-of-its-proprietary-databases-over-mcp-server/"
+    accessed: 2026-11
   - title: "AiPrise homepage (AI agents)"
     publisher: "AiPrise"
     url: "https://www.aiprise.com/"
@@ -224,7 +228,7 @@ We checked the agent pages of nine vendors on 20 November 2026. Everything in th
 
 [NICE Actimize](/providers/nice-actimize/) describes the same pattern for large banks: in its [June 2026 infographic](https://resources.niceactimize.com/wp-content/uploads/2026/06/A-Step-by-Step-Look-at-How-Agentic-AI-Increases-AML-Investigation-Productivity_Infographic.pdf) agents pre-fill SAR fields and draft the narrative, and investigators make the final determinations.
 
-The last column is where products really differ. Strise records the rationale for every match it clears in the audit trail. Castellum.AI lets the customer set intervention points by risk appetite. Unit21's homepage does not say whether a person signs off before a filing goes out. AML Watcher also exposes its screening databases to outside agents through an MCP server, so a firm's own agent can query them directly.
+The last column is where products really differ. [Strise](https://strise.ai/product/screening-and-alert-triage) records the rationale for every match it clears in the audit trail. [Castellum.AI](https://www.castellum.ai/) lets the customer set intervention points by risk appetite. [Hawk](https://hawk.ai/) ties how much an agent may do to the approval each step needs. [Feedzai](https://www.feedzai.com/solutions/ai/) says people stay accountable while Farol takes on operational work. [Unit21's homepage](https://www.unit21.ai/) does not say whether a person signs off before a filing goes out, while [AML Watcher](https://amlwatcher.com/press-release/aml-watcher-introduces-trurisk-to-accelerate-manual-alert-review/) keeps final outcomes with the compliance team. AML Watcher also [opened its databases to outside agents](https://amlwatcher.com/press-release/aml-watcher-announces-availability-of-its-proprietary-databases-over-mcp-server/) through an MCP server in September 2025, so a firm's own agent can query them directly.
 
 ## Can an AI agent approve or reject a customer?
 
