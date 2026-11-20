@@ -28,6 +28,7 @@ faq:
     a: "Veriff lists company registry checks in more than 300 jurisdictions, but in a limited access program with quote-only pricing, and we found no UBO feature. Persona offers KYB with registry checks in 150+ countries, UBO verification and business monitoring from its Growth plan."
   - q: "Are Veriff and Persona certified in the UK?"
     a: "Yes. Both appear on the UK register of digital verification services, certified by Kantara for Right to Work and Right to Rent checks."
+sources_inline: generated   # source links are rendered in the generated comparison tables
 sources:
   - title: "Veriff pricing"
     publisher: "Veriff"

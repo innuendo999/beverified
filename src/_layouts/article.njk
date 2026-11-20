@@ -62,12 +62,7 @@ layout: v3.njk
       </section>
       {%- endif %}
 
-      {%- if sources.length %}
-      <section class="art__block" aria-labelledby="src-h">
-        <h2 id="src-h" class="h-sub">Sources</h2>
-        <ol class="art__sources">{% for s in sources %}<li><span><a href="{{ s.url }}" rel="noopener" target="_blank">{{ s.title }}</a>{% if s.publisher %}, {{ s.publisher }}{% endif %}</span>{% if s.accessed %}<small>Accessed {{ s.accessed | displayDate }}</small>{% endif %}</li>{% endfor %}</ol>
-      </section>
-      {%- endif %}
+      {#- No visible Sources block (owner, 2026-11-20): every source is linked inline in the body; front matter `sources` still feeds the validator and JSON-LD `citation`. -#}
 
       {%- if au %}
       <section class="card author-box art__block" aria-label="About the author">

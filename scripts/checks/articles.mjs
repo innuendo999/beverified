@@ -61,6 +61,9 @@ for (const f of only) {
     if (u.startsWith("/")) { if (!urls.has(u.split("#")[0].replace(/([^/])$/, "$1")) && !urls.has(u)) err(f, `internal link not found: ${u}`); }
     else if (/^https?:/.test(u) && !sourceUrls.has(u)) err(f, `external link not in sources: ${u}`);
   }
+  // No visible Sources block on articles (owner, 2026-11-20): every source must be linked inline.
+  // Pages whose tables are generated from data (e.g. the KYC Pricing Index) set sources_inline: generated.
+  if (d.sources_inline !== "generated") for (const s of d.sources || []) if (s.url && !body.includes(s.url)) err(f, `source not linked in the body: ${s.url}`);
   const internal = [...body.matchAll(/\]\((\/[^)\s]*)\)/g)].length;
   // internal_links_min: lower floor for third-party text published verbatim (template still adds review and ranking links)
   const minInternal = Number.isInteger(d.internal_links_min) ? d.internal_links_min : 3;

@@ -31,6 +31,7 @@ faq:
     a: "Jumio, Onfido and Trulioo sell mostly to larger companies on negotiated contracts, so their sites ask buyers to contact sales. The only figures available come from public procurement listings and buyer-data services, which their BeVerified reviews show as third-party estimates."
   - q: "Is there a free KYC tool?"
     a: "Some providers offer a small free monthly allowance, a sign-up credit or a free trial. These cover testing and very low volumes, not a production onboarding flow."
+sources_inline: generated   # pricing source links are rendered in the generated tables
 sources:
   - title: "Pricing"
     publisher: "Sumsub"

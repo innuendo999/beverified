@@ -80,6 +80,7 @@ Planned, not built yet: topic pages, comparison pages (`comparisons.yml`), `enti
 - One provider record must feed every place the provider appears. Never retype a rating, price or count.
 - No number ships without a source and a verified date. Unknown = "Not publicly disclosed". Never invent data.
 - Work in small steps; stop for review after each step.
+- Articles (guides, news, publications, comparisons) have no visible Sources block (owner, 2026-11-20): every front matter source is linked inline in the body, checked by `scripts/checks/articles.mjs`. Reviews and glossary terms keep their Sources lists.
 - OpenVASP is not a protocol (owner, 2026-11-19). The OpenVASP protocol was discontinued and replaced by TRP, which the OpenVASP Association now develops. Never list "OpenVASP" as a protocol, network or route next to TRP, TRISA, Sygna Bridge and the rest, even when a vendor or an AI answer does; write "TRP" or "the OpenVASP Association". If a vendor lists OpenVASP as a route, say once that the protocol was replaced by TRP and do not count it. Checked by `node scripts/checks/terms.mjs` in `npm run check` and CI.
 
 ## Writing rules

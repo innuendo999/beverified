@@ -56,7 +56,7 @@ Two European identity verification vendors are now one company. Fourthline sells
 
 [Fourthline's announcement](https://www.fourthline.com/news/fourthline-and-veridas-complete-merger) says the merger closed on 3 November 2026, "following the satisfaction of all closing conditions". The deal was [first announced on 16 July 2026](https://www.fourthline.com/news/fourthline-and-veridas-join-forces-to-fight-identity-fraud-with-a-global-identity-platform). The announcement does not list the conditions or the price.
 
-The money comes from three firms. Finch Capital, already a Fourthline shareholder, Seaya Andromeda as a new equity investor and Ashgrove Capital as a debt lender provide up to €65m together. The companies say it will pay for product work, acquisitions, refinancing of debt and a reorganisation of shareholdings that gives Veridas shareholders partial liquidity.
+The money comes from three firms. Finch Capital, already a Fourthline shareholder, Seaya Andromeda as a new equity investor and Ashgrove Capital as a debt lender provide up to €65m together, as [The Next Web](https://thenextweb.com/news/fourthline-veridas-merger-complete-65m-digital-identity) and [Biometric Update](https://www.biometricupdate.com/202611/fourthline-veridas-close-merger-backed-by-up-to-e65m-in-funding) also reported. The companies say it will pay for product work, acquisitions, refinancing of debt and a reorganisation of shareholdings that gives Veridas shareholders partial liquidity.
 
 ## Who runs it
 
