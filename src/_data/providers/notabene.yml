@@ -192,10 +192,12 @@ capabilities:
   checked: '2026-11'
 certifications:
 - name: ISO/IEC 27001:2022
+  program: iso27001
   what: Information security; certification body and certificate number not stated publicly, certificate shared through the Trust Center
   status: vendor_stated
   source: 4
 - name: SOC 2 Type II
+  program: soc2
   what: Annual audit covering Security and Privacy; auditor not named publicly, first clean report announced January 2022
   status: vendor_stated
   source: 4

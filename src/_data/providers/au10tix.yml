@@ -302,30 +302,38 @@ capabilities:
     checked: '2026-11'
 certifications:
 - name: UK DIATF certified identity service
+  program: uk_dvs
   what: Right to work, right to rent, DBS (Kantara; valid to Dec 2028)
   status: confirmed
   source: 8
 - name: ISO/IEC 27001
+  program: iso27001
   what: Information security
   status: vendor_stated
   source: 2
 - name: ISO/IEC 27701
+  program: other
   what: Privacy information management
   status: vendor_stated
   source: 2
 - name: SOC 2 Type II
+  program: soc2
   what: Security, availability, confidentiality controls
   status: vendor_stated
   source: 2
 - name: ISO/IEC 30107-3 PAD Levels 1 and 2 (iBeta)
+  program: ibeta_pad
+  level: [1, 2]
   what: Liveness, presentation attack detection
   status: vendor_stated
   source: 2
 - name: Kantara IAL2
+  program: other
   what: NIST SP 800-63A identity assurance
   status: vendor_stated
   source: 2
 - name: TX-RAMP Level 2
+  program: other
   what: Texas public-sector cloud security
   status: vendor_stated
   source: 2

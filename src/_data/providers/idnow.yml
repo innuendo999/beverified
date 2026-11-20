@@ -257,30 +257,37 @@ track_record:
     source: 8
 certifications:
 - name: ISO/IEC 30107 PAD, substantial (LSTI, VideoIdent)
+  program: pad_other
   what: Presentation attack detection
   status: confirmed
   source: 5
 - name: PVID (ANSSI), substantial, IDCheck PVID
+  program: other
   what: French remote identity verification, valid to Jul 2027
   status: vendor_stated
   source: 10
 - name: ETSI TS 119 461
+  program: other
   what: Remote identity proofing (AutoIdent, VideoIdent, IdentityTM, IDCheck PVID)
   status: vendor_stated
   source: 10
 - name: eIDAS qualified trust service provider (IDnow Trust Services AB)
+  program: other
   what: Qualified e-signatures, seals and time stamps, supervised by Sweden's PTS
   status: vendor_stated
   source: 11
 - name: ISO/IEC 27001:2022
+  program: iso27001
   what: Information security (all four IDnow group entities)
   status: vendor_stated
   source: 10
 - name: ISAE 3402 Type 2
+  program: other
   what: Controls over the VideoIdent procedure (FY 2025 report)
   status: vendor_stated
   source: 10
 - name: TISAX AL3
+  program: other
   what: Automotive information security (IDnow GmbH)
   status: vendor_stated
   source: 10

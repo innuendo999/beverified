@@ -317,6 +317,7 @@ capabilities:
     note: nothing found on vendor pages
 certifications:
 - name: SOC 2 Type 2
+  program: soc2
   what: Security, availability and confidentiality controls
   status: vendor_stated
   source: 7

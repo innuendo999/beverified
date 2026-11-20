@@ -45,7 +45,7 @@ Fields prefixed `legacy_` hold what the old pages showed. They are kept for refe
 | faq[] | `{q, a}` | filled |
 | score_breakdown[] | `{criterion, weight, score, evidence}` | empty |
 | use_case_verdicts[] | `{use_case, verdict, reason, evidence, source}` | empty |
-| certifications[] | `{name, status: confirmed \| vendor_stated \| not_found, url}` | empty |
+| certifications[] | `{name, program, level?, status: confirmed \| vendor_stated \| not_found, source}`. `program`: `ibeta_pad`, `pad_other` (PAD claim without an iBeta letter), `uk_dvs`, `fido_face`, `fido_docauth`, `rivr`, `accs`, `iso27001`, `soc2`, `other`. `level`: number or `[1, 2]`, for iBeta, other PAD and FIDO Face. Read by the KYC Certification Tracker (`docs/cert-tracker.md`); register names per provider in `src/_data/certWatch.yml` | empty |
 | segments[], capabilities{} | for "best for" blocks and the capability matrix (see below) | empty |
 | hands_on | hands-on test block (later) | empty |
 | sources[] | `{title, publisher, url, accessed}` | empty |

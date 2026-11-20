@@ -182,10 +182,12 @@ segments: []
 capabilities: {}
 certifications:
 - name: SOC 2 Type II
+  program: soc2
   what: Security, availability and processing integrity for the VerifyVASP platform, 1 Feb 2025 to 31 Jan 2026; auditor not named, report on request
   status: vendor_stated
   source: 10
 - name: ISO/IEC 27001 (Sygna)
+  program: iso27001
   what: Information security for Sygna Bridge (SGS, 2021) and all Sygna products (2022), per Sygna, whose homepage still claims it; no certificate or current validity seen
   status: vendor_stated
   source: 38

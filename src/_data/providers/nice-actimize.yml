@@ -223,10 +223,12 @@ track_record:
     source: 6
 certifications:
 - name: ISO/IEC 27001 (Actimize Insights Network)
+  program: iso27001
   what: Information security, one product
   status: vendor_stated
   source: 22
 - name: SOC 2 Type II (Actimize Insights Network)
+  program: soc2
   what: Security controls report, one product
   status: vendor_stated
   source: 22

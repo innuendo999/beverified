@@ -426,10 +426,12 @@ track_record:
     source: 14
 certifications:
 - name: ISO/IEC 27001
+  program: iso27001
   what: Information security
   status: vendor_stated
   source: 3
 - name: PCI DSS
+  program: other
   what: Payment card data security
   status: vendor_stated
   source: 3

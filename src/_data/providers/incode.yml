@@ -302,34 +302,43 @@ track_record:
     source: 13
 certifications:
 - name: ISO/IEC 30107-3 Level 3 (iBeta)
+  program: ibeta_pad
+  level: 3
   what: Liveness / presentation attack detection
   status: confirmed
   source: 4
 - name: SOC 2 Type 2
+  program: soc2
   what: Security controls audit
   status: vendor_stated
   source: 3
 - name: ISO/IEC 27001:2022
+  program: iso27001
   what: Information security
   status: vendor_stated
   source: 3
 - name: ISO/IEC 42001:2023
+  program: other
   what: AI management system
   status: vendor_stated
   source: 3
 - name: FedRAMP Ready (High baseline)
+  program: other
   what: US federal cloud security, readiness stage, not an authorization
   status: vendor_stated
   source: 12
 - name: Kantara IAL2 Trust Mark
+  program: other
   what: Identity assurance (NIST 800-63)
   status: vendor_stated
   source: 3
 - name: Age Check Certification Scheme (ACCS)
+  program: accs
   what: Age assurance (UK), register entry without listed scope or dates
   status: confirmed
   source: 15
 - name: 'KJM approval (Germany)'
+  program: other
   what: ID and selfie age check for gambling, announced 2022
   status: vendor_stated
   source: 19

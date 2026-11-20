@@ -258,18 +258,23 @@ track_record:
     source: 3
 certifications:
 - name: ISO/IEC 30107-3 Level 2 (iBeta)
+  program: ibeta_pad
+  level: 2
   what: Liveness / presentation attack detection, Regula Face Mobile SDK (Mar 2025, Dec 2025)
   status: confirmed
   source: 6
 - name: ISO/IEC 27001:2022
+  program: iso27001
   what: Information security (software products; certifier named as Insight Assurance)
   status: vendor_stated
   source: 4
 - name: ISO 9001:2015
+  program: other
   what: Quality management (optoelectronic equipment)
   status: vendor_stated
   source: 4
 - name: ISO 14001:2015
+  program: other
   what: Environmental management
   status: vendor_stated
   source: 4

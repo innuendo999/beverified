@@ -291,6 +291,7 @@ capabilities:
     checked: '2026-11'
 certifications:
 - name: SOC 2 Type II
+  program: soc2
   what: Security controls report
   status: vendor_stated
   source: 8

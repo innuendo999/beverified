@@ -386,10 +386,12 @@ track_record:
     source: 17
 certifications:
 - name: SOC 2 (in progress)
+  program: soc2
   what: Type I audit targeted for Oct 2026; no report issued yet
   status: vendor_stated
   source: 3
 - name: ISO/IEC 27001 (in progress)
+  program: iso27001
   what: Stage 1 and 2 audits targeted for Oct to Dec 2026; not certified yet
   status: vendor_stated
   source: 3

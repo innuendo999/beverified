@@ -27,7 +27,7 @@ for (const s of slugs) {
   (d.sources || []).forEach((x, i) => { if (!x.url || !/^https?:\/\//.test(x.url) || !x.title || !x.accessed) err(s, `sources[${i}] incomplete`); });
   const ref = (where, v) => { if (v != null && (!Number.isInteger(v) || v < 1 || v > n)) err(s, `${where}.source ${v} is not a valid source number (1..${n})`); };
   (d.facts || []).forEach((f, i) => { ref(`facts[${i}]`, f.source); if (f.evidence && !["vendor", "independent", "user", "hands_on"].includes(f.evidence)) err(s, `facts[${i}].evidence invalid`); });
-  (d.certifications || []).forEach((c, i) => { ref(`certifications[${i}]`, c.source); if (!["confirmed", "vendor_stated", "not_found"].includes(c.status)) err(s, `certifications[${i}].status invalid`); if (c.status === "confirmed" && !c.source) err(s, `certifications[${i}] confirmed without source`); });
+  (d.certifications || []).forEach((c, i) => { ref(`certifications[${i}]`, c.source); if (!["confirmed", "vendor_stated", "not_found"].includes(c.status)) err(s, `certifications[${i}].status invalid`); if (c.status === "confirmed" && !c.source) err(s, `certifications[${i}] confirmed without source`); if (!["ibeta_pad", "pad_other", "uk_dvs", "fido_face", "fido_docauth", "rivr", "accs", "iso27001", "soc2", "other"].includes(c.program)) err(s, `certifications[${i}].program missing or invalid`); });
   (d.pricing?.items || []).forEach((x, i) => { ref(`pricing.items[${i}]`, x.source); if (!["official", "third_party"].includes(x.kind)) err(s, `pricing.items[${i}].kind invalid`); });
   if ((d.pros || []).length !== 3 || (d.cons || []).length !== 3) err(s, `pros/cons must be 3 and 3 (${(d.pros || []).length}/${(d.cons || []).length})`);
   for (const [p, v] of walk(d, "", [])) {

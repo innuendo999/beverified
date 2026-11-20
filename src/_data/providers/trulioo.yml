@@ -304,10 +304,12 @@ track_record:
     source: 5
 certifications:
 - name: ISO/IEC 27001:2022
+  program: iso27001
   what: Information security (since 2015)
   status: vendor_stated
   source: 6
 - name: SOC 2 Type 2
+  program: soc2
   what: Security controls attestation (since Feb 2024)
   status: vendor_stated
   source: 6

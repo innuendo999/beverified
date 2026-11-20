@@ -261,14 +261,17 @@ track_record:
     source: 10
 certifications:
 - name: ISO/IEC 27001:2022
+  program: iso27001
   what: Information security
   status: confirmed
   source: 13
 - name: ISO 9001:2015
+  program: other
   what: Quality management
   status: confirmed
   source: 14
 - name: SOC 2 Type II
+  program: soc2
   what: Security and availability
   status: vendor_stated
   source: 12

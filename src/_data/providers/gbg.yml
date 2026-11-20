@@ -288,26 +288,32 @@ track_record:
     source: 2
 certifications:
 - name: UK DIATF certified services
+  program: uk_dvs
   what: GBG Go (identity, orchestration), ID3global, Identify, IDscan Enterprise (identity) and oZone FYQ2 (component), Sep 2026 to Sep 2029
   status: confirmed
   source: 13
 - name: ISO/IEC 27001:2022
+  program: iso27001
   what: Information security (global scope)
   status: vendor_stated
   source: 6
 - name: SOC 2 Type 2
+  program: soc2
   what: Security controls report
   status: vendor_stated
   source: 6
 - name: PCI DSS v4.0.1
+  program: other
   what: Payment card data security
   status: vendor_stated
   source: 6
 - name: Cyber Essentials Plus
+  program: other
   what: UK cyber security
   status: vendor_stated
   source: 6
 - name: FedRAMP Moderate (Acuant COFRS)
+  program: other
   what: US federal cloud authorisation, held by Acuant, Inc. since Nov 2021
   status: confirmed
   source: 14

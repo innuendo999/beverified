@@ -254,10 +254,12 @@ track_record:
     source: 2
 certifications:
 - name: ISO/IEC 27001:2022
+  program: iso27001
   what: Information security
   status: vendor_stated
   source: 2
 - name: ISO/IEC 27701:2019
+  program: other
   what: Privacy information management
   status: vendor_stated
   source: 2

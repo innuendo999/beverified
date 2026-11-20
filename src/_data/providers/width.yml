@@ -240,10 +240,12 @@ capabilities:
   checked: '2026-11'
 certifications:
 - name: ISO/IEC 27001:2022
+  program: iso27001
   what: Information security; certificate shared under NDA, certification body and scope not published
   status: vendor_stated
   source: 3
 - name: ISO/IEC 27701 (in progress)
+  program: other
   what: Privacy management; "in progress" on the security and demo pages, "achieved" in the October 2026 launch release
   status: vendor_stated
   source: 3

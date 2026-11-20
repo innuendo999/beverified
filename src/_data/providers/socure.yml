@@ -343,22 +343,28 @@ track_record:
     source: 4
 certifications:
 - name: FedRAMP Moderate (Socure for Government)
+  program: other
   what: US federal cloud security, SaaS
   status: confirmed
   source: 3
 - name: ISO/IEC 27001:2022
+  program: iso27001
   what: Information security
   status: vendor_stated
   source: 2
 - name: SOC 2 Type 2
+  program: soc2
   what: Security controls audit
   status: vendor_stated
   source: 2
 - name: Kantara (NIST SP 800-63-3 IAL2)
+  program: other
   what: US identity assurance, awarded February 2022
   status: vendor_stated
   source: 16
 - name: ISO/IEC 30107-3 (liveness, "NIST PAD Level 2")
+  program: pad_other
+  level: 2
   what: Presentation attack detection, no lab letter found
   status: vendor_stated
   source: 8
