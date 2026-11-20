@@ -1,0 +1,54 @@
+term: Identity farming
+also_known_as: [KYC farming, Identity recycling, Farmed identities]
+cluster: identity
+definition: Identity farming is the paid or coerced collection of real people's identity documents, selfies and digital IDs, which criminals then use to pass KYC checks and open accounts they control. The identity is genuine, so checks built to spot forged documents or fake faces can miss it.
+seo_description: "Identity farming uses real people's documents and faces, bought or coerced, to pass KYC. How it works, what FATF and Europol report, and what to ask vendors."
+rankings: [identity-verification, liveness-detection]
+related: [synthetic-identity-fraud, deepfake-identity-fraud, liveness-detection, face-matching, document-verification, transaction-monitoring]
+body: |
+  ## How identity farming works
+
+  Most identity fraud fakes something: a forged document, a stolen photo, a deepfake. Identity farming fakes nothing. Criminals get a real person to hand over a real identity, by paying them, tricking them or pressuring them, and then use it to open accounts they control.
+
+  The [FATF, Interpol and Egmont Group report on cyber-enabled fraud](https://www.fatf-gafi.org/content/fatf-gafi/en/publications/Methodsandtrends/illicit-financial-flows-cyber-enabled-fraud.html) (November 2023) lists buying identities and deceiving people into handing them over next to phishing as ways criminals obtain identities, and notes that the named account holders may not know their accounts are being used. One case in the report comes from Singapore: 147 people had given their national digital identities to criminal syndicates, which used them to open 276 accounts remotely at eight banks. The financial intelligence unit found the network through shared transactions, device IDs and contact details.
+
+  In December 2024 the biometrics company iProov reported a group in Latin America that had built a large collection of identity documents with matching face images, which it said people had provided in exchange for payment. Europol's money mule operation EMMA 9 in 2023 described a related pattern: criminals visiting victims in person to collect copies of identity documents and signatures, and coercing vulnerable people into opening bank accounts.
+
+  ## Why standard checks miss it
+
+  [Document verification](/glossary/document-verification/) looks for forgery and tampering, and a farmed document is genuine. [Face matching](/glossary/face-matching/) compares a selfie with the document photo, and a farmed collection supplies both from the same person. [Liveness detection](/glossary/liveness-detection/) makes the attack harder, because a stored photo is not a live face. But if the seller takes part in the session, every onboarding check sees a real document and a real person.
+
+  This is the difference from [synthetic identity fraud](/glossary/synthetic-identity-fraud/), where the person does not exist, and from [deepfake identity fraud](/glossary/deepfake-identity-fraud/), where the face is generated. Here the person exists and agrees, at least at the start. It is closest to money muling: the identity is sold or handed over in the same way an account is.
+
+  ## What to check when you compare providers
+
+  Detection moves from the single check to patterns across many checks and to what happens after onboarding. The Singapore case was found through shared device IDs and contact details. In the same FATF report, Spain's FIU used one person opening accounts at three or more institutions within 20 days as a mule indicator. Ask whether a provider links checks that share a device, phone number, address or face across your customers, whether it can tell you that the same document or face was already used for another account, and how its signals feed your [transaction monitoring](/glossary/transaction-monitoring/). Our [identity verification ranking](/providers/identity-verification/) and [liveness detection ranking](/providers/liveness-detection/) compare the providers we review.
+buyer_questions:
+  - Can you flag when the same document, face or device has already been used to open another account with us?
+  - Do you link checks that share a phone number, email, address or device, and how is that shown to our team?
+  - Do you compare faces across all our past checks, or only against the document photo in the current check?
+  - Which signals do you give us after onboarding, such as re-verification or device changes, to catch accounts handed to someone else?
+  - Can you run a pilot on our historical applications and report how many linked identities you find?
+faq:
+  - q: Is identity farming the same as identity theft?
+    a: No. In identity theft the person does not know their identity is being used. In identity farming they usually hand it over themselves, for payment or under pressure, although they may not know what it will be used for.
+  - q: Can liveness detection stop identity farming?
+    a: Only partly. Liveness detection stops someone from using a stored photo of the seller. It cannot help when the seller completes the check in person, so checks across accounts and monitoring after onboarding are needed too.
+  - q: How is identity farming related to money mules?
+    a: Both rely on real people lending their identity to criminals. A money mule usually lends an account and moves money through it. In identity farming the identity itself is sold or handed over, and criminals open and run the accounts.
+sources:
+  - title: Illicit Financial Flows from Cyber-enabled Fraud (November 2023), paragraph 35 and Boxes 15 and 23
+    publisher: FATF, Interpol and Egmont Group
+    url: https://www.fatf-gafi.org/content/fatf-gafi/en/publications/Methodsandtrends/illicit-financial-flows-cyber-enabled-fraud.html
+    accessed: 2026-11
+  - title: "Paper trail ends in jail time for 1 013 money mules (EMMA 9, 4 December 2023)"
+    publisher: European Banking Federation
+    url: https://www.ebf.eu/ebf-media-centre/paper-trail-ends-in-jail-time-for-1-013-money-mules-2-822-banks-and-financial-institutions-join-forces-with-law-enforcement-agencies-in-global-effort-against-money-laundering/
+    accessed: 2026-11
+  - title: iProov Discovers Major Dark Web Identity Farming Operation (23 December 2024, vendor press release)
+    publisher: iProov via Business Wire
+    url: https://www.businesswire.com/news/home/20241223578781/en/iProov-Discovers-Major-Dark-Web-Identity-Farming-Operation
+    accessed: 2026-11
+author: andrii-klymenko
+published: 2026-11-20
+updated: 2026-11-20
