@@ -31,38 +31,35 @@ what_is:
 features:
 - UK and international AML checks for individuals and businesses.
 - Sanctions and PEP screening, with the Dow Jones WatchList updated daily.
-- Ongoing monitoring, with KYC checks re-run every night. The pricing page lists ongoing sanctions, PEP and adverse media monitoring among the solutions for its Enterprise Compliance tier.
+- Ongoing monitoring, with KYC checks re-run every night. The pricing page lists ongoing reporting under monitoring but does not say which tier includes it.
 - SmartDoc document check with facial recognition, certified under the UK DIATF.
 - KYB checks on businesses, which SmartSearch says run in minutes.
 - Browser-based platform and API access.
 pricing:
-  summary: Prices are not published. SmartSearch lists three tiers (Starter, Growth and Enterprise Compliance) without prices, says its pricing is modular rather than a fixed rate card, and quotes on request.
+  summary: Prices are not published. SmartSearch lists three tiers (Basic, Standard and Enhanced) without prices, says pricing is tailored to the business and its expected usage, and quotes on request.
   plans:
-  - tier: Starter Compliance
+  - tier: Basic
     price: Not publicly disclosed
-    note: For small businesses and growing teams
-    extra: 'Commonly used: individual AML (KYC), KYB, sanctions and PEP screening, SmartDoc'
-  - tier: Growth Compliance
+    note: Full range of ID, AML, KYB and source of funds checks, due diligence dashboard, unlimited users
+  - tier: Standard
     price: Not publicly disclosed
-    note: For medium-sized and scaling businesses
-    extra: 'Commonly used: international checks, fraud checks, EDD, source of funds via open banking'
-  - tier: Enterprise Compliance
+    note: Basic plus credit rollover, dynamic workflows and risk assessments, advanced reporting, API access, SSO
+  - tier: Enhanced
     price: Not publicly disclosed
-    note: For large, complex and highly regulated organisations
-    extra: 'Commonly used: ongoing sanctions, PEP and adverse media monitoring, perpetual KYC, re-screening alerts'
+    note: Standard plus extra credit rollover, workflow design, advanced API integrations, more training and document storage
   legacy_verified_note: null
-  verified: '2026-10'
+  verified: '2026-11'
   items:
   - label: Published pricing
     value: Not publicly disclosed; three tiers listed without prices, quoted on request
     kind: official
     source: 9
-    verified: '2026-10'
+    verified: '2026-11'
   - label: Ongoing monitoring
-    value: Listed among commonly used solutions for the Enterprise Compliance tier
+    value: Listed under monitoring on the pricing page; not tied to a tier
     kind: official
     source: 9
-    verified: '2026-10'
+    verified: '2026-11'
   model:
     published: none
     minimum: null
@@ -137,7 +134,7 @@ user_reviews:
   - Businesses needing global reach beyond the UK often evaluate broader competitors.
 faq:
 - q: How much does SmartSearch cost?
-  a: SmartSearch does not publish prices. Its pricing page lists Starter, Growth and Enterprise Compliance tiers without prices and says pricing is modular; it quotes on request. Ongoing sanctions, PEP and adverse media monitoring is listed under the Enterprise Compliance tier.
+  a: SmartSearch does not publish prices. Its pricing page lists Basic, Standard and Enhanced tiers without prices and says pricing is tailored to each business and its expected usage; it quotes on request. The page lists ongoing reporting under monitoring but does not tie it to a tier.
 - q: What is JMLSG compliance?
   a: JMLSG (Joint Money Laundering Steering Group) publishes UK AML guidance for the financial sector. SmartSearch builds its checks for UK regulated firms that follow this guidance.
 - q: Does SmartSearch verify both individuals and businesses?
@@ -398,6 +395,7 @@ verification_notes:
 - 'Pricing page tiers are labelled "Commonly Used Solutions" and the page calls pricing modular; it does not say a solution is only available in one tier. Record words monitoring as "listed under" Enterprise, not "Enterprise only".'
 - 'User ratings: G2 product page (source 12) shows 5.0 from 1 review (March 2024) and does not show a seller website; matched on name and AML description. Capterra UK lists SmartSearch with 0 reviews and a "from US$500 per user" starting price that the vendor does not publish; not used.'
 - '2026-10-22 capabilities pass: transaction screening appears only as a homepage line in what an AML check includes; no product page describing it was found.'
+- 'Pricing re-check 20 Nov 2026: the pricing page (source 9) now names the tiers Basic, Standard and Enhanced (was Starter, Growth and Enterprise Compliance) and no longer ties ongoing monitoring to a tier. Still no prices. Tier records and FAQ updated; no score change.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

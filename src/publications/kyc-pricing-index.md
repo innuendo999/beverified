@@ -8,7 +8,7 @@ cover_label: "Published KYC prices"
 cover_motif: coin
 cover_palette: warm
 published: 2026-11-02
-updated: 2026-11-02
+updated: 2026-11-20
 author: andrii-klymenko
 takeaways:
   - "Most KYC providers we review do not publish prices; the official table covers only those that do, and the rest are quoted by sales."
@@ -203,7 +203,7 @@ A price counts as official if the provider shows it on its own website without a
 
 Each figure lives once, in that provider's record in our database, with its source and the month we checked it. The tables on this page, the pricing block on each review and our rankings read from the same record. The methodology behind the reviews is on our [methodology page](/methodology/).
 
-We re-opened every official pricing page on 2 November 2026 and corrected the records where something had changed. One page, TRP's, blocked our fetcher that day, so its row still shows the October 2026 check.
+We re-opened every official pricing page on 2 November 2026 and again on 20 November 2026, and corrected the records where something had changed. TRP's page blocked our fetcher both times, so its row still shows the October 2026 check.
 
 We leave {{ pricingIndex.excluded.length }} records with official figures out of the main table. {% for e in pricingIndex.excluded %}{{ e.name }}: {{ e.reason }}. {% endfor %}Tax is excluded unless the vendor says otherwise; KYCAID and TRP both state that their prices exclude VAT.
 
