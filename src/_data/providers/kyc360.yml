@@ -112,7 +112,7 @@ pricing:
     source: 1
     verified: '2026-10'
   - label: KYC360 Academy (training)
-    value: From £3,500 / yr (up to 25 users)
+    value: From £3,000 / yr (up to 100 learners)
     kind: official
     source: 8
     verified: '2026-11'
@@ -404,6 +404,7 @@ verification_notes:
 - 'ISO 27001: only the financial crime compliance page (source 11) says "full EU data residency and ISO 27001 accreditation". No certificate, certification body, scope or certified entity found; the company, API and privacy pages do not mention it, and the IAF CertSearch register shows no result without JavaScript. Kept as vendor_stated. A TrustRadius listing describes an "ISO 27001-accredited hosting environment", so the scope (KYC360 or its host) is unclear.'
 - 'User ratings: G2 RiskScreen page (source 12, vendor KYC Global Technologies) shows 4.0 from 2 reviews on 2026-10-22. Capterra RiskScreen shows 0 reviews and "from $900 per user per year", which conflicts with the vendor page and was not used. Praise and criticism themes stay empty.'
 - 'Experian Ascend integration: KYC360 FAQ (source 13, Nov 2025, updated Apr 2026) says integration into Ascend is "planned over the next year"; no page found saying it is live as of 2026-10-22.'
+- 'Pricing re-check 20 Nov 2026: KYC360 Academy pricing page (source 8) now starts at £3,000 a year for up to 100 learners (Starter), was £3,500 for up to 25 users; tiers run to Diamond £21,000 for 1,500 learners, Enterprise on request. Screening credit packages unchanged.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

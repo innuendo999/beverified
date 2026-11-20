@@ -35,7 +35,7 @@ features:
 - KYB and UBO checks against registers and licensed sources in 160+ countries, with every party in the ownership chain screened, plus a configurable customer risk model with 500+ scoring templates.
 - Case management with SAR and STR drafting, an AML agent that closes, routes or escalates alerts by confidence bands you set, and a Nova AI assistant that drafts rule changes but cannot change live settings without approval.
 pricing:
-  summary: 'Complead does not publish prices for its platform; transaction monitoring, fraud, KYB, risk assessment and the AI agents are quoted after a demo. The only published price is for its screening product: the Sanction Scanner Starter plan costs €990 a month for 100 entities, with two months free on annual billing, and covers sanctions, PEP and adverse media screening with daily ongoing monitoring. Overage is billed at standard rates that are not listed. No free trial is mentioned, though Complead says sandbox keys are available straight away.'
+  summary: 'Complead does not publish prices for its platform; transaction monitoring, fraud, KYB, risk assessment and the AI agents are quoted after a demo. The only published price is for its screening product: the Sanction Scanner Starter plan costs €990 a month for 100 entities, with two months free on annual billing, and covers sanctions, PEP and adverse media screening with daily ongoing monitoring. Overage is billed at standard rates that are not listed. Complead''s site offers a 7-day free trial with no credit card, and sandbox keys are available straight away.'
   plans:
   - tier: Sanction Scanner Starter
     price: €990 / mo
@@ -84,10 +84,10 @@ pricing:
     source: 1
     verified: '2026-10'
   - label: Free trial
-    value: Not mentioned; Complead says sandbox keys are available immediately
+    value: 7 days, no credit card required; sandbox keys available immediately
     kind: official
     source: 1
-    verified: '2026-10'
+    verified: '2026-11'
 facts:
 - label: From
   value: €990/mo for screening only (Sanction Scanner Starter, 100 entities); platform quoted
@@ -552,6 +552,7 @@ verification_notes:
 - 'Support: no support email, hours or SLA published; contact page lists office phone numbers and a form (source 20). Status page at status.sanctionscanner.com not opened.'
 - 'Regulatory: no enforcement action, breach disclosure or litigation involving Complead or Sanction Scanner found in searches to 23 Oct 2026.'
 - 'Logo: owner supplied src/assets/img/wordmarks/complead.png; brand colour not read (complead.ai blocked to direct download and the fetcher returned no CSS). Wikidata id and kg_mid not found.'
+- 'Pricing re-check 20 Nov 2026: complead.ai (source 1) now offers a 7-day free trial with no credit card; the Free trial item and summary updated. pricing.model.trial left false because it describes the Sanction Scanner pricing page (source 22), which shows no trial. Sanction Scanner Starter €990 a month for 100 entities unchanged. No score change (partial pricing scores 3 either way).'
 application_category: AML Software
 author: andrii-klymenko
 directory_categories:
