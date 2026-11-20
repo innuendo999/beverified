@@ -26,6 +26,7 @@ layout: v3.njk
           <span>{{ content | readingTime }} min read</span>
         </div>
       </header>
+      {%- if calculator and costCalc %}{% include "v3/cost-calc.njk" %}{% endif %}
       {%- if cover %}
       <figure class="art__cover"><img src="{{ cover }}" alt="" width="1600" height="900" fetchpriority="high" decoding="async" style="width:100%;height:auto"></figure>
       {%- endif %}

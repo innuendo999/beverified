@@ -1,0 +1,48 @@
+{#- Compact "What would this cost you?" block on /providers/kyc/ (owner approved, 2026-11-20): the cheapest three of this
+    ranking's providers that publish a full price, from costCalc (same figures as the KYC Pricing Index calculator). -#}
+{%- set rankSlugs = [] %}{% for e in entries %}{% if e.q %}{% set rankSlugs = (rankSlugs.push(e.q.slug), rankSlugs) %}{% endif %}{% endfor %}
+<section class="card pcalc-mini" aria-labelledby="pcm-h">
+  <div class="pcalc-mini__in">
+    <h2 id="pcm-h" class="h-sub m-0">What would this cost you?</h2>
+    <p class="fs-14 c-body m-0">Monthly cost for document, liveness and face match at the providers in this ranking that publish full prices.</p>
+    <label for="pcm-vol" class="fs-14 fw-500">Verifications a month</label>
+    <input id="pcm-vol" class="pcalc-mini__vol" type="number" min="1" step="50" value="1000" inputmode="numeric">
+  </div>
+  <ol class="pcalc-mini__list" id="pcm-list"></ol>
+  <p class="pcalc-mini__link"><a href="/publications/kyc-pricing-index/#calculator">Compare all providers with public prices in the KYC Pricing Index</a></p>
+  <script type="application/json" id="pcm-data">{{ costCalc.priced | dump | safe }}</script>
+  <script type="application/json" id="pcm-slugs">{{ rankSlugs | dump | safe }}</script>
+  <script>
+  (function () {
+    var slugs = JSON.parse(document.getElementById("pcm-slugs").textContent);
+    var data = JSON.parse(document.getElementById("pcm-data").textContent).filter(function (p) { return slugs.indexOf(p.slug) > -1; });
+    var vol = document.getElementById("pcm-vol"), list = document.getElementById("pcm-list");
+    function money(x) { return x > 0 && x < 10 ? "$" + x.toFixed(2) : "$" + Math.round(x).toLocaleString("en-US"); }
+    function render() {
+      var n = Math.max(1, Math.round(Number(vol.value) || 0));
+      var rows = [];
+      data.forEach(function (p) {
+        if (p.quoteAbove && n > p.quoteAbove) return;
+        var best = null;
+        p.opts.forEach(function (o) { var c = o.minOnTop ? n * o.per + o.min : Math.max(n * o.per, o.min); if (!best || c < best.c) best = { o: o, c: c }; });
+        if (best) rows.push({ p: p, b: best });
+      });
+      rows.sort(function (a, b) { return a.b.c - b.b.c; });
+      list.textContent = "";
+      rows.slice(0, 3).forEach(function (r) {
+        var li = document.createElement("li");
+        var a = document.createElement("a"); a.href = r.p.url; a.textContent = r.p.name;
+        var plan = document.createElement("span"); plan.className = "c-muted fs-13"; plan.textContent = " " + r.b.o.plan;
+        var left = document.createElement("span"); left.appendChild(a); left.appendChild(plan);
+        var right = document.createElement("span"); right.className = "num";
+        var b = document.createElement("b"); b.textContent = money(r.b.c) + " a month";
+        var per = document.createElement("span"); per.className = "c-muted fs-13"; per.textContent = " " + money(r.b.c / n) + " per check";
+        right.appendChild(b); right.appendChild(per);
+        li.appendChild(left); li.appendChild(right); list.appendChild(li);
+      });
+    }
+    vol.addEventListener("input", render);
+    render();
+  })();
+  </script>
+</section>

@@ -135,6 +135,14 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter("pad2", (n) => String(n).padStart(2, "0"));
   eleventyConfig.addFilter("usd2", (n) => (n == null ? "" : "$" + Number(n).toFixed(2)));
+  // KYC Pricing Index calculator download: one line per provider plan (src/_data/costCalc.js).
+  eleventyConfig.addFilter("calcCsv", (c) => {
+    const cols = ["provider", "review", "plan", "per_check_usd", "monthly_minimum_usd", "minimum", "aml_included", "aml_add_on_usd", "monitoring", "monitoring_usd", "quote_above", "checked"];
+    const q = (v) => { const s = String(v ?? ""); return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s; };
+    const rows = (c?.priced || []).flatMap((p) => p.opts.map((o) => [p.name, `/providers/${p.slug}/`, o.plan, o.per, o.min,
+      o.min ? (o.minOnTop ? "added on top" : "floor") : "", o.amlIncl ? "yes" : "no", o.amlAdd ?? "", o.monitoring?.kind ?? "", o.monitoring?.value ?? "", p.quoteAbove ?? "", p.checked]));
+    return [cols.join(","), ...rows.map((r) => r.map(q).join(","))].join("\n") + "\n";
+  });
 
   // Icon library (src/_lib/icons.js): {% icon "liveness" %}, {% icon "aml", "AML screening" %}, {% iconFor "category", "kyb" %}
   eleventyConfig.addShortcode("icon", (name, label, size, cls) => renderIcon(name, label, size, cls));

@@ -58,6 +58,7 @@ layout: v3.njk
     </table>
   </div>
   {%- if budgetCalc and budgetCalc.length %}{% include "v3/budget-calc.njk" %}{% endif %}
+  {%- if c.slug == "kyc" and costCalc %}{% include "v3/cost-calc-mini.njk" %}{% endif %}
   {%- endif %}
 
   <div class="cat-main">
