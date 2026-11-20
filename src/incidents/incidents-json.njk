@@ -1,0 +1,7 @@
+---
+permalink: /incidents/incidents.json
+eleventyExcludeFromCollections: true
+eleventyComputed:
+  jsonld: null
+---
+{{ incidentsJson | dump(2) | safe }}

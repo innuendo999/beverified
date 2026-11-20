@@ -11,6 +11,10 @@
 # sensitivity: high (ID documents, biometrics, national ID numbers) | medium (contact or account data) | low (no personal data reported)
 # status: contained | investigating | disputed | litigation | resolved
 # corrections: [{date, change}]  every accepted correction, newest first (shown on the entry)
+# not_counted_reason (when counted: false): test_system | older_than_24_months | not_reviewed
+# confirmed_by: who confirms the incident, in a few words, from the sources above (shown in the register row)
+# timeline: [{when, what}] dated steps taken from `occurred`, `since` and the sources; no step without a source
+# customer_actions: steps the vendor itself asked customers to take (shown as "If you use {vendor}"); empty = none published
 # appeal: {received, outcome: pending | upheld | partly_upheld | rejected, decided, note}  a vendor appeal and its result
 checked: '2026-11-05'
 items:
@@ -23,6 +27,14 @@ items:
   sensitivity: medium
   status: investigating
   counted: false
+  not_counted_reason: not_reviewed
+  confirmed_by: Vendor notice
+  timeline:
+  - {when: Oct 2026, what: Activity detected}
+  - {when: 'Oct 30, 2026', what: First notice}
+  - {when: 'Nov 4, 2026', what: Wider exposure disclosed}
+  - {when: 'Nov 7 and 10, 2026', what: Services restored}
+  customer_actions: [Reset your password from the login page, Rotate API keys, Turn on two-factor authentication]
   title: Attacker reached internal tools and exposed login data for all users
   summary: Chainalysis says an external actor used "offensive agentic techniques" to get into its systems and internal tools. Its first notice on 30 October 2026 listed user IDs, names, email addresses and organisation role labels. On 4 November it said names, usernames, password hashes and live tokens for all Chainalysis users had been exposed, and that a subset of customer passwords was exposed through an on-path attack. It took Reactor, Data Solutions, KYT and its address screening products offline, and is notifying customers whose KYT accounts appear to have been accessed.
   data: [Names and email addresses, Usernames and organisation roles, Password hashes and live tokens, Some customer passwords]
@@ -47,6 +59,13 @@ items:
   sensitivity: high
   status: contained
   counted: true
+  confirmed_by: Vendor notice; reported to South Africa's Information Regulator
+  timeline:
+  - {when: 'Sep 8, 2026', what: Unauthorised access found}
+  - {when: 'Sep 10, 2026', what: Reported to the regulator}
+  - {when: 'Sep 16, 2026', what: Disclosed}
+  - {when: 'Oct 1, 2026', what: Forensic review ended}
+  - {when: 'Nov 2, 2026', what: Notice last updated}
   title: Zero-day in a third-party reporting tool led to data removal
   summary: An attacker used a zero-day vulnerability in a third-party application used for internal reporting, then used credentials obtained there to reach systems holding customer data. A forensic investigation that ended on 1 October 2026 confirmed data was removed but could not say which records.
   data: [Identity and contact details, Screening and risk data, Transaction data, Some ID verification records]
@@ -67,6 +86,11 @@ items:
   sensitivity: high
   status: disputed
   counted: true
+  confirmed_by: Researchers only; IDMERIT disputes it
+  timeline:
+  - {when: 'Feb 20, 2026', what: Reported by Cybernews}
+  - {when: After disclosure, what: Database reportedly secured}
+  - {when: Open, what: Scope not confirmed}
   title: Researchers report an unsecured database linked to IDMERIT; the company disputes it
   summary: Cybernews researchers said they found an unsecured server they believed was tied to IDMERIT, with about 1 billion records containing personal data such as names, dates of birth, addresses and national ID numbers across at least 26 countries. The database was reportedly secured after disclosure.
   data: [Names and dates of birth, Addresses and contact details, National ID numbers]
@@ -87,6 +111,11 @@ items:
   sensitivity: low
   status: resolved
   counted: false
+  not_counted_reason: test_system
+  confirmed_by: Researchers; Persona says it was fixed
+  timeline:
+  - {when: Feb 2026, what: Reported by researchers}
+  - {when: Feb 2026, what: 'Fixed, per Persona'}
   title: Frontend code found on a publicly reachable server
   summary: Researchers found Persona's uncompressed frontend code reachable from the open internet on a US government authorised server, showing how its checks are built. The report did not say that personal data was exposed.
   data: [Source code, No personal data reported]
@@ -107,6 +136,11 @@ items:
   sensitivity: medium
   status: contained
   counted: true
+  confirmed_by: Vendor notice
+  timeline:
+  - {when: Jul 2024, what: Access began}
+  - {when: Jan 2026, what: Found in a security review}
+  - {when: 'Feb 4, 2026', what: Disclosed}
   title: Attacker in a support system went unnoticed for 18 months
   summary: An attacker entered a support-related internal environment through a malicious attachment sent via a third-party ticketing platform in July 2024. Sumsub found the activity in a security review in January 2026.
   data: [Names, Some email addresses or phone numbers]
@@ -127,6 +161,13 @@ items:
   sensitivity: high
   status: litigation
   counted: true
+  confirmed_by: Customer's breach notice to Massachusetts
+  timeline:
+  - {when: 'Nov 18, 2025', what: 'Access, approximately'}
+  - {when: 'Dec 10, 2025', what: Affected people listed}
+  - {when: 'Jan 9, 2026', what: Notices sent}
+  - {when: Jan 2026, what: Three class actions filed}
+  customer_actions: [Use single sign-on (SSO) for dashboard access, Turn on IP allowlisting, Give staff least-privilege access]
   title: ID images of Total Wireless customers taken from Veriff's systems
   summary: Total Wireless, a Verizon prepaid brand, told customers that an unauthorised party obtained images of the government-issued IDs they gave Veriff for a promotion, and for some people their postal address and date of birth. Total Wireless says its own systems were not affected.
   data: [ID document images, Postal addresses, Dates of birth]
@@ -156,6 +197,11 @@ items:
   sensitivity: medium
   status: investigating
   counted: true
+  confirmed_by: Press reports; Signzy confirmed an incident
+  timeline:
+  - {when: Late Nov 2024, what: 'Attack, as reported'}
+  - {when: 'Dec 3, 2024', what: Reported in the press}
+  - {when: 'Nov 5, 2026', what: No findings published yet}
   title: Cyberattack reported at Signzy
   summary: TechCrunch, citing multiple sources, reported that Signzy was hit by a cyberattack in late November 2024. India's CERT-In said it was aware of the incident. The data involved was not disclosed.
   data: [Not publicly disclosed]
@@ -176,6 +222,12 @@ items:
   sensitivity: high
   status: resolved
   counted: false
+  not_counted_reason: older_than_24_months
+  confirmed_by: Press report; AU10TIX confirmed the credentials
+  timeline:
+  - {when: Late 2022, what: Credentials stolen by malware}
+  - {when: Mar 2023, what: Posted on Telegram}
+  - {when: 'Jun 26, 2024', what: Reported by 404 Media}
   title: Admin credentials to a logging platform were exposed for over a year
   summary: 404 Media reported that credentials of an AU10TIX employee, taken by malware and later posted on Telegram, gave access to a logging platform with links to identity documents and verification results, and still worked in June 2024.
   data: [ID document images, Names and dates of birth, ID numbers]

@@ -1,38 +1,69 @@
 ---
 layout: v3.njk
 ---
-{#- Security incident tracker. Data: src/_data/incidents.yml; computed fields: incidents.11tydata.js.
-    Concept: a public register. Each row opens to the record and the vendor's reply side by side. -#}
+{#- Security incident tracker (owner approved the design canvas "BeVerified: Incident tracker, UX proposal", 2026-11-20).
+    Data: src/_data/incidents.yml; rows, filters, lookup and export: src/_lib/incidents.js via incidents.11tydata.js.
+    Rows are <details>, so every entry opens without JS; the vendor check and the filters need JS and stay hidden without it.
+    No sources list and no score paragraph inside an entry (owner): sources are in the CSV/JSON download. -#}
 <main id="main" class="container reg">
   <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li class="sep" aria-hidden="true">›</li><li aria-current="page">Incident tracker</li></ol></nav>
 
-  <header class="reg-head">
-    <h1 class="reg-head__title">Security incidents at the identity and AML vendors we review</h1>
-    <p class="reg-head__lede">A register of breaches, data exposures and security incidents, each with what the record shows and what the vendor says. {{ stats.total }} entries, {{ stats.recent }} from the last 24 months. Checked on <time datetime="{{ incidents.checked | iso }}">{{ incidents.checked | displayDate }}</time>.</p>
-    <p class="reg-head__aside">Are you one of these vendors? You can <a href="#appeals">correct or appeal an entry</a>.</p>
-  </header>
+  <div class="reg-top">
+    <header class="reg-head">
+      <h1 class="reg-head__title">Security incidents at the identity and AML vendors we review</h1>
+      <p class="reg-head__lede">Breaches, data exposures and regulatory actions since 2024. Each entry shows what was exposed, who confirmed it, what the vendor says and whether it lowers the vendor's score.</p>
+      <p class="reg-head__meta num">{{ list.length }} entries. Sources checked <time datetime="{{ incidents.checked | iso }}">{{ incidents.checked | displayDate }}</time>. <a href="#reuse">Download CSV or JSON</a></p>
+    </header>
 
-  <section class="reg" aria-labelledby="reg-h">
+    <form class="reg-check" role="search" data-reg-check hidden>
+      <label for="reg-q" class="reg-check__label">Check a vendor</label>
+      <p class="reg-check__hint">Any of the {{ reviewedCount }} vendors we review.</p>
+      <input id="reg-q" class="reg-check__input" type="text" autocomplete="off" spellcheck="false" placeholder="Type a vendor name">
+      <div class="reg-check__out" aria-live="polite" data-reg-out data-reg-dir="/providers/"><p class="c-muted">The answer shows here: entries for that vendor, or that we found none.</p></div>
+    </form>
+  </div>
+
+  <div class="reg-bar" data-reg-filters hidden>
+    <span class="reg-bar__label" id="reg-show">Show</span>
+    <div class="reg-filters" role="group" aria-labelledby="reg-show">
+      {%- for f in filters %}
+      <button type="button" class="reg-filter num" data-filter="{{ f.key }}" aria-pressed="{{ 'true' if loop.first else 'false' }}">{{ f.label }} <span>{{ f.count }}</span></button>
+      {%- endfor %}
+    </div>
+    <label class="visually-hidden" for="reg-fsel">Show</label>
+    <select id="reg-fsel" class="reg-fsel" data-reg-fsel>
+      {%- for f in filters %}<option value="{{ f.key }}">{{ f.label }} ({{ f.count }})</option>{% endfor %}
+    </select>
+  </div>
+  <p class="reg-key">{% icon "id-card", "", 18 %}<span><b>ID data</b> = ID document images, biometrics or national ID numbers</span></p>
+
+  <section aria-labelledby="reg-h">
     <h2 id="reg-h" class="visually-hidden">Register</h2>
-    <div class="reg-cols" aria-hidden="true"><span>Date</span><span>Vendor and what happened</span><span>Data exposed</span><span>Status</span></div>
+    <div class="reg-cols num" aria-hidden="true"><span>Reported</span><span>Vendor and what happened</span><span>What was exposed</span><span>Who confirms it</span><span>Now, and score effect</span><span></span></div>
     <ol class="reg-list">
       {%- for x in list %}
-      <li id="{{ x.id }}" class="reg-row">
+      <li id="{{ x.id }}" class="reg-row" data-reg-keys="{{ x.filterKeys }}">
         <details>
           <summary>
             <span class="reg-date num"><time datetime="{{ x.date | iso }}">{{ x.date | displayDate }}</time></span>
             <span class="reg-what"><b>{{ x.vendor }}</b><span>{{ x.title }}</span></span>
-            <span class="reg-data reg-data--{{ x.sensitivity }}">{{ x.dataText }}</span>
-            <span class="reg-status">{{ x.statusLabel }}{% if x.counted == false %}<em>Not counted in score</em>{% endif %}{% if x.appealLabel %}<em>{{ x.appealLabel }}</em>{% endif %}</span>
+            <span class="reg-data">{% if x.idData %}<b class="reg-id">{% icon "id-card", "", 18 %}ID data</b>{% endif %}{{ x.dataText }}</span>
+            <span class="reg-conf">{{ x.confirmed_by }}</span>
+            <span class="reg-status num">{{ x.statusLabel }}<em>{{ x.scoreLine }}</em>{% if x.appealLabel %}<em>{{ x.appealLabel }}</em>{% endif %}</span>
+            <span class="reg-chev" aria-hidden="true">{% icon "chevron-down", "", 16 %}</span>
           </summary>
           <div class="reg-entry">
+            {%- if x.timeline and x.timeline.length %}
+            <ol class="reg-time num" aria-label="Timeline">
+              {%- for s in x.timeline %}<li><b>{{ s.when }}</b><span>{{ s.what }}</span></li>{% endfor %}
+            </ol>
+            {%- endif %}
             <div class="reg-split">
               <div class="reg-side">
                 <h3>What the record shows</h3>
                 <p>{{ x.summary }}</p>
                 <dl class="reg-facts">
                   <div><dt>Type</dt><dd>{{ x.typeLabel }}</dd></div>
-                  <div><dt>When</dt><dd>{{ x.occurred }}</dd></div>
                   <div><dt>Scale</dt><dd>{{ x.scale }}</dd></div>
                 </dl>
               </div>
@@ -44,41 +75,118 @@ layout: v3.njk
                 {%- endif %}
               </div>
             </div>
-            <p class="reg-since"><b>Since then.</b> {{ x.since }}</p>
-            {%- if x.corrections and x.corrections.length %}
-            <div class="reg-corr"><h4>Corrections</h4><ul>{% for c in x.corrections %}<li><time datetime="{{ c.date | iso }}">{{ c.date | displayDate }}</time>: {{ c.change }}</li>{% endfor %}</ul></div>
-            {%- endif %}
-            <div class="reg-foot">
-              <ol class="reg-sources">{% for s in x.sources %}<li><a href="{{ s.url }}" rel="nofollow noopener">{{ s.title }}</a>, {{ s.publisher }}</li>{% endfor %}</ol>
-              <p class="reg-links">
-                {%- if x.news %}<a href="{{ x.news }}">Our report</a>{% endif %}
-                {%- if x.p %}<a href="/providers/{{ x.slug }}/">{{ x.vendor }} review</a>{% endif %}
-                <a href="{{ x.mailto }}">Correct or appeal this entry</a>
-              </p>
+            <div class="reg-more">
+              {%- if x.customer_actions and x.customer_actions.length %}
+              <h3>If you use {{ x.vendor }}</h3>
+              <p class="c-muted">What {{ x.vendor }} asked customers to do:</p>
+              <ul>{% for a in x.customer_actions %}<li>{{ a }}</li>{% endfor %}</ul>
+              {%- endif %}
+              <h3>Since then</h3>
+              <p>{{ x.since }}</p>
+              {%- if x.corrections and x.corrections.length %}
+              <h3>Corrections</h3>
+              <ul>{% for c in x.corrections %}<li><time datetime="{{ c.date | iso }}">{{ c.date | displayDate }}</time>: {{ c.change }}</li>{% endfor %}</ul>
+              {%- endif %}
             </div>
+            <p class="reg-links">
+              {%- if x.news %}<a href="{{ x.news }}">Our report</a>{% endif %}
+              {%- if x.p %}<a href="/providers/{{ x.slug }}/">{{ x.vendor }} review</a>{% endif %}
+              <a href="#{{ x.id }}" data-reg-copy>Copy link to this entry</a>
+              <a href="{{ x.mailto }}">Correct or appeal</a>
+            </p>
           </div>
         </details>
       </li>
       {%- endfor %}
     </ol>
+    <p class="reg-empty" data-reg-empty hidden>No entry matches this filter.</p>
   </section>
 
   <div class="reg-notes">
     <section aria-labelledby="scope-h">
-      <h2 id="scope-h">What is in the register</h2>
-      <p>Data breaches, exposures of personal data, confirmed security incidents and regulatory actions at vendors we review, reported since 2024. Private lawsuits with no breach behind them, such as biometric consent suits, are left out, and so are incidents at a vendor's customer that never touched the vendor's systems.</p>
-      <p>We rely on the vendor's own statement, official breach notices, regulators and courts first, and name any news report we use. What a lawsuit claims is reported as a claim. Every vendor is treated the same way, including those we earn money from.</p>
-      <p>In the data column, <b>bold</b> marks ID documents, biometrics or national ID numbers. An incident from the last 24 months feeds the track record part of the provider's score, as set out in <a href="/methodology/">our methodology</a>, unless the entry says "Not counted in score".</p>
+      <h2 id="scope-h">What we include</h2>
+      <p>Breaches, exposures of personal data, confirmed security incidents and regulatory actions at vendors we review, reported since 2024. Lawsuits with no breach behind them and incidents at a vendor's customer that never touched the vendor's systems are left out. The vendor's own statement, official breach notices, regulators and courts come first; what a lawsuit claims is reported as a claim. Vendors we earn money from are treated the same way.</p>
+    </section>
+    <section aria-labelledby="score-h">
+      <h2 id="score-h">How it affects scores</h2>
+      <p>An entry from the last 24 months lowers the track record part of the vendor's score, as set out in <a href="/methodology/">our methodology</a>. Entries limited to a test system with no personal data, older than 24 months or about vendors we don't review are shown and not counted. Each row says which applies.</p>
     </section>
     <section id="appeals" aria-labelledby="ap-h">
       <h2 id="ap-h">Corrections and appeals</h2>
-      <p>A vendor named here can ask us to correct a fact or appeal an entry. Use the link at the bottom of the entry, or write to <a href="mailto:support@beverified.org?subject=Incident%20tracker%3A%20correction%20or%20appeal">support@beverified.org</a>, and include:</p>
-      <ol>
-        <li>the entry you mean and the sentence you dispute;</li>
-        <li>a source we can check, such as your own published statement, a regulator's finding or a court document;</li>
-        <li>if you want it shown, the response you want next to the entry.</li>
-      </ol>
-      <p>We check every request against its source. A correction that holds up is made to the entry and listed under Corrections with its date. An appeal is shown on the entry while we review it, then as upheld, partly upheld or not upheld, with a short reason. An appeal can remove an entry only if the source shows the incident did not happen at your company. Payment or a commercial relationship never changes an entry.</p>
+      <p>A vendor named here can ask us to correct a fact or appeal an entry. Use the link on the entry or write to <a href="mailto:support@beverified.org?subject=Incident%20tracker%3A%20correction%20or%20appeal">support@beverified.org</a> with the sentence you dispute, a source we can check and, if you want it shown, your response.</p>
+      <p>Accepted corrections are listed on the entry with their date. An appeal is shown while we review it, then as upheld, partly upheld or not upheld, with a short reason. An appeal removes an entry only if the source shows the incident did not happen at your company. Payment never changes an entry.</p>
     </section>
   </div>
+
+  <section id="reuse" class="reg-reuse" aria-labelledby="reuse-h">
+    <div>
+      <h2 id="reuse-h">Cite or reuse this data</h2>
+      <p>Free to reuse under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener">CC BY 4.0</a> with a link to this page. The download includes the source links for every entry. Cite as: BeVerified, “Security incidents at the identity and AML vendors we review”, checked {{ incidents.checked | displayDate }}.</p>
+    </div>
+    <p class="reg-reuse__btns"><a class="btn btn--secondary" href="/incidents/incidents.csv" download>Download CSV</a><a class="btn btn--secondary" href="/incidents/incidents.json" download>Download JSON</a></p>
+  </section>
 </main>
+
+<script type="application/json" id="reg-vendors">{{ lookupData | dump | safe }}</script>
+<script>
+(() => {
+  const rows = [...document.querySelectorAll(".reg-row")];
+  const empty = document.querySelector("[data-reg-empty]");
+  const btns = [...document.querySelectorAll("[data-filter]")];
+  const sel = document.querySelector("[data-reg-fsel]");
+  const setFilter = (key) => {
+    let shown = 0;
+    rows.forEach((r) => { const on = key === "all" || r.dataset.regKeys.split(" ").includes(key); r.hidden = !on; if (on) shown++; });
+    btns.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.filter === key)));
+    if (sel) sel.value = key;
+    empty.hidden = shown > 0;
+  };
+  btns.forEach((b) => b.addEventListener("click", () => setFilter(b.dataset.filter)));
+  sel?.addEventListener("change", () => setFilter(sel.value));
+  document.querySelector("[data-reg-filters]").hidden = false;
+
+  const openEntry = (id) => {
+    const li = document.getElementById(id);
+    if (!li) return;
+    if (li.hidden) setFilter("all");
+    li.querySelector("details").open = true;
+    li.scrollIntoView({ block: "start" });
+  };
+  if (location.hash) openEntry(location.hash.slice(1));
+  window.addEventListener("hashchange", () => openEntry(location.hash.slice(1)));
+
+  document.querySelectorAll("[data-reg-copy]").forEach((a) => a.addEventListener("click", (e) => {
+    e.preventDefault();
+    const url = location.origin + location.pathname + a.getAttribute("href");
+    history.replaceState(null, "", a.getAttribute("href"));
+    navigator.clipboard?.writeText(url).then(() => { const t = a.textContent; a.textContent = "Link copied"; setTimeout(() => { a.textContent = t; }, 1600); }, () => {});
+  }));
+
+  const form = document.querySelector("[data-reg-check]");
+  const input = document.getElementById("reg-q");
+  const out = document.querySelector("[data-reg-out]");
+  const vendors = JSON.parse(document.getElementById("reg-vendors").textContent);
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const initial = out.innerHTML;
+  const dirHref = out.dataset.regDir;
+  const one = (v) => {
+    const review = v.r ? ' <a href="' + esc(v.h) + '">' + esc(v.n) + ' review</a>' : "";
+    if (!v.e.length) return `<p><b>${esc(v.n)}</b>: no entry in our register since 2024. We list only incidents with a public source, so no entry does not prove nothing happened.${review}</p>`;
+    const c = v.e.filter((x) => x.c).length;
+    const head = `${v.e.length} ${v.e.length === 1 ? "entry" : "entries"} since 2024, ${c ? `${c} lowering its score now` : "none lowering a score now"}.`;
+    return `<p><b>${esc(v.n)}</b>: ${head}</p>` + v.e.map((x) => `<p><a href="#${esc(x.id)}">${esc(x.d)}: ${esc(x.t)}</a></p>`).join("");
+  };
+  const answer = () => {
+    const q = input.value.trim().toLowerCase();
+    if (q.length < 2) { out.innerHTML = initial; return; }
+    const exact = vendors.filter((x) => x.n.toLowerCase() === q);
+    const starts = vendors.filter((x) => x.n.toLowerCase().startsWith(q));
+    const found = (exact.length ? exact : starts.length ? starts : vendors.filter((x) => x.n.toLowerCase().includes(q))).slice(0, 3);
+    if (!found.length) { out.innerHTML = '<p>We don\u2019t review a vendor by that name, so the register does not track it. <a href="' + dirHref + '">All reviewed vendors</a></p>'; return; }
+    out.innerHTML = found.map(one).join("");
+  };
+  input.addEventListener("input", answer);
+  form.addEventListener("submit", (e) => { e.preventDefault(); const a = out.querySelector('a[href^="#"]'); if (a) openEntry(a.getAttribute("href").slice(1)); });
+  form.hidden = false;
+})();
+</script>
