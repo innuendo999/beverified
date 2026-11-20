@@ -16,6 +16,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import { execFileSync } from 'node:child_process';
 import yaml from 'js-yaml';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '../..');
@@ -56,9 +57,16 @@ async function get(id, url, ext = 'html') {
     if (!fs.existsSync(f)) throw new Error(`no fixture ${id}.${ext}`);
     return fs.readFileSync(f, 'utf8');
   }
-  const res = await fetch(url, { headers: { 'user-agent': UA, accept: 'text/html,text/csv,*/*' }, signal: AbortSignal.timeout(45000), redirect: 'follow' });
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  return res.text();
+  // Node fetch first; on a network error (TLS, HTTP/2, reset) fall back to curl, which some hosts accept.
+  let why;
+  try {
+    const res = await fetch(url, { headers: { 'user-agent': UA, accept: 'text/html,text/csv,*/*' }, signal: AbortSignal.timeout(45000), redirect: 'follow' });
+    if (res.ok) return res.text();
+    why = `HTTP ${res.status}`;
+  } catch (e) { why = `${e.message}${e.cause ? ` (${e.cause.code || e.cause.message})` : ''}`; }
+  try {
+    return execFileSync('curl', ['-sSL', '--compressed', '--max-time', '60', '-A', UA, '-f', url], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
+  } catch (e) { throw new Error(`fetch: ${why}; curl: ${String(e.stderr || e.message).trim().split('\n').pop()}`); }
 }
 const ENT = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ', ndash: '-', mdash: '-', rsquo: "'", lsquo: "'", ldquo: '"', rdquo: '"' };
 const decode = (s) => s.replace(/&(#x?[0-9a-f]+|[a-z]+);/gi, (m, e) =>
@@ -102,8 +110,11 @@ export function parseIbeta(html) {
 }
 
 export function findDvsCsvLink(html, base) {
-  const m = html.match(/href="([^"]*csv[^"]*)"/i);
-  return m ? new URL(decode(m[1]), base).href : null;
+  // The register page links "Download register CSV" to /register/download-register (checked 2026-11-20).
+  const byText = html.match(/<a[^>]+href="([^"]+)"[^>]*>[^<]*download[^<]*<\/a>/i);
+  const byHref = html.match(/href="([^"]*(?:download|\.csv)[^"]*)"/i);
+  const m = byText || byHref;
+  return m ? new URL(decode(m[1]), base).href : new URL('/register/download-register', base).href;
 }
 
 export function parseCsv(text) {
@@ -136,9 +147,10 @@ export function parseDvs(csv) {
 
 export function parseFido(html) {
   const text = toText(html);
-  const blocks = text.split(/\n(?=Company Name:?)/i).slice(1);
+  const blocks = text.split(/^(?=Company Name)/im).filter((b) => /^Company Name/i.test(b));
   return blocks.map((b) => {
-    const f = (label) => { const m = b.match(new RegExp(`${label}:?\\s*\\n?\\s*([^\\n]+)`, 'i')); return m ? m[1].trim() : ''; };
+    // Label and value may sit in separate cells, with the colon in its own element: skip spaces, newlines and colons.
+    const f = (label) => { const m = b.match(new RegExp(`${label}[\\s:]*([^\\n:][^\\n]*)`, 'i')); return m ? m[1].trim() : ''; };
     const vendor = f('Company Name'), product = f('Product Name'), component = f('Component');
     const level = (f('Level and Reference Type').match(/Level\s*(\d)/i) || [])[1];
     const expiry = textDate(f('Certificate Expiration')) || f('Certificate Expiration');
@@ -149,8 +161,14 @@ export function parseFido(html) {
 export function parseAccs(html) {
   const text = toText(html);
   const none = /no (similar )?certifications? (listed|yet)/i.test(text);
-  const validity = [...text.matchAll(/Certification validity:?\s*(\d{2})\/(\d{2})\/(\d{4})/gi)].map((m) => `${m[3]}-${m[2]}-${m[1]}`);
-  return { none, validity, hash: hash(text) };
+  const validity = [];
+  for (const m of text.matchAll(/Certification validity[\s:]*([^\n]{0,40})/gi)) {
+    const v = m[1].match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+    const d = v ? `${v[3]}-${v[2].padStart(2, '0')}-${v[1].padStart(2, '0')}` : textDate(m[1]);
+    if (d) validity.push(d);
+  }
+  const i = text.search(/validity/i);
+  return { none, validity, hash: hash(text), excerpt: i > -1 ? text.slice(Math.max(0, i - 80), i + 120) : text.slice(0, 200) };
 }
 
 // ---------- run ----------
@@ -162,9 +180,12 @@ async function runSource(id, fn) {
   try {
     const rows = await fn();
     const file = path.join(stateDir, 'snapshots', `${id}.json`);
-    const prev = readJson(file, null);
+    let prev = readJson(file, null);
+    // A snapshot whose vendor names hold no letters came from a parser bug: treat this run as a new baseline.
+    if (prev?.rows && prev.rows.length && prev.rows.every((r) => !/[a-z0-9]/i.test(r.vendor || ''))) prev = null;
     if (Array.isArray(rows)) {
       if (!rows.length) throw new Error('parsed 0 rows: page structure may have changed');
+      if (rows.every((r) => !/[a-z0-9]/i.test(r.vendor || ''))) throw new Error('rows parsed without vendor names: page structure may have changed');
       if (prev && prev.rows.length > 10 && rows.length < prev.rows.length * 0.5) throw new Error(`parsed ${rows.length} rows, previous run had ${prev.rows.length}: page structure may have changed`);
       if (prev) {
         const before = new Set(prev.rows.map((r) => r.key)), now = new Set(rows.map((r) => r.key));
@@ -193,8 +214,11 @@ await runSource('uk_dvs', async () => {
   if (fixturesDir) return parseDvs(await get('uk_dvs', '', 'csv'));
   const page = await get('uk_dvs', cfg.sources.uk_dvs.url);
   const link = findDvsCsvLink(page, cfg.sources.uk_dvs.url);
-  if (!link) throw new Error('no "Download register CSV" link found on the register page');
-  return parseDvs(await get('uk_dvs', link, 'csv'));
+  const csv = await get('uk_dvs', link, 'csv');
+  if (/^\s*</.test(csv)) throw new Error(`${link} returned HTML, not CSV`);
+  const rows = parseDvs(csv);
+  if (!rows.length) throw new Error(`CSV header not recognised: ${csv.split(/\r?\n/)[0].slice(0, 200)}`);
+  return rows;
 });
 await runSource('fido', async () => parseFido(await get('fido', cfg.sources.fido_face.url)));
 await runSource('rivr', async () => {
