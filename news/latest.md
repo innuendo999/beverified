@@ -1,22 +1,20 @@
-# News candidates, 2026-11-19
+# News candidates, 2026-11-20
 
-New this run: 9 kept (news 7, incident 1, record-check 0, research-check 0, digest 1), 229 skipped.
-Open candidates in total: 14.
+New this run: 7 kept (news 5, incident 1, record-check 1, research-check 0, digest 0), 162 skipped.
+Open candidates in total: 21.
 
 ## news
 
-- [Customer Due Diligence Requirements for Covered Financial Institutions](https://www.federalregister.gov/documents/2026/11/19/2026-23614/customer-due-diligence-requirements-for-covered-financial-institutions) (FinCEN in the Federal Register, 2026-11-19)
-- [EUDI Wallets on track for uneven launch and hesitant relying parties](https://www.biometricupdate.com/202611/eudi-wallets-on-track-for-uneven-launch-and-hesitant-relying-parties) (Biometric Update, 2026-11-18) · find primary source
-- [Liberian Parliament rejects $52M national digital ID contract proposal](https://www.biometricupdate.com/202611/liberian-parliament-rejects-52m-national-digital-id-contract-proposal) (Biometric Update, 2026-11-18) · find primary source
-- [UK Companies House reaches 90% digital ID compliance after first year](https://www.biometricupdate.com/202611/uk-companies-house-reaches-90-digital-id-compliance-after-first-year) (Biometric Update, 2026-11-18) · find primary source
-- [Swiss campaign seeks constitutional safeguards as digital identity rollout advances](https://www.biometricupdate.com/202611/swiss-campaign-seeks-constitutional-safeguards-as-digital-identity-rollout-advances) (Biometric Update, 2026-11-18) · find primary source
-- [UK Companies House reaches 90% digital ID compliance after first year](https://news.google.com/rss/articles/CBMiqwFBVV95cUxPLTAtLXFELTV2TUY2ck9YVHRkWFhaRGRFZF9rRWdELTNPcldUeW0yTzhJYTBfVVhoN09VdlNoOGRpRVBNQ1ZKZ0VMdzZZbzdUTkxDYTJyT1dhSFF6VU5wUU5GYm9JdDlDOE9pb2xVTjlDQ3UwTzlnS0w4cUlUWTNWbXRRSy1jcUFKV2tfeHlVcWNpc1Vua21xQm5MOXhReThXNU9qZGZTUWhhbkU?oc=5) (Biometric Update, 2026-11-18) · find primary source
-- [Equifax Insider Sold Shares Worth $2,867,425, According to a Recent SEC Filing](https://news.google.com/rss/articles/CBMiyAFBVV95cUxOcHhFNUx2eHg2Z1NzeDNXVmdmWWVaanRjQUplVElYSU5ndGRUcTNDeXR4RTRhQkphMFpLY0VhS2p2a09LZG95YWc4V1ZLMDBKWEtOSTBtb1JGMlh4TFE0VmZPS01PUkVWUEdwdnUyVkpCZ08xSTk2NjdmWXBFd2pGaXprV3RaUHUtTW50aVpob25zV1BLQVlFelJELTV4V3lSVUU5cFVmSnotNWtNa3QxaU13MGw1WVotT3h4aTkybmdoUzM3YmZMbQ?oc=5) (www.marketscreener.com, 2026-11-12) · find primary source, record-check
+- [What the UK's Economic Crime and Corporate Transparency Act changed for directors](https://news.google.com/rss/articles/CBMijgFBVV95cUxQTVNPWWdrNHgzY1NNUFAtUGhWaFZxX0M3LS1FWWQzenlfS2VIRUlPb3VrbVhtRUd4Z1BhWWQ0YUdGdG5kRFp2TnVkQm1nMTNIajc4WGticVdrbXJKSFV4bl9kamFxTU9ZbXp1XzhHVEVFWXVZSEJGTjRtMTV3Tkx2TjQwTGU5dXIwblh2ZUNn?oc=5) (CEO경제신문, 2026-11-20) · find primary source
+- [youniqx opens testing environment for EU Digital Identity Wallets, relaunches MIA](https://www.biometricupdate.com/202611/youniqx-opens-testing-environment-for-eu-digital-identity-wallets-relaunches-mia) (Biometric Update, 2026-11-19) · find primary source
+- [Africa’s expanding digital ID infrastructure faces a cybersecurity capacity gap](https://www.biometricupdate.com/202611/africas-expanding-digital-id-infrastructure-faces-a-cybersecurity-capacity-gap) (Biometric Update, 2026-11-19) · find primary source
+- [New data on age check circumvention helps build case for platform accountability](https://www.biometricupdate.com/202611/new-data-on-age-check-circumvention-helps-build-case-for-platform-accountability) (Biometric Update, 2026-11-19) · find primary source
+- [Counter Narcotics Designations; Cyber-related Designations; Issuance of Illicit Drugs General License; Issuance of Amended Russia-related General License and Frequently Asked Questions](https://ofac.treasury.gov/recent-actions/20261119) (OFAC recent actions, 2026-11-19)
 
 ## incident
 
-- [Zoom, Salesforce, HSBC, and Equifax Named in an Optimizely Data Breach](https://news.google.com/rss/articles/CBMingFBVV95cUxQMUVGOFUybjdJdXZ1MmFGU2ZaM0lUbTNMbi1BbkxWTHRRSW9Jc01NWFluaV9OV0tDcG1rVEFnUUZDd2Nac3NZN0xhTWNtZFY1cDl2SGlzMEZKNTdUclBFRHI5cGV1Nk5SRVJrZzVXZkU4OU9zZmk5VkZWdTF1NXk4OHV3RXVTZ0F5UXJneGFTWk9HYkJZdTZmNEQxcF9Cdw?oc=5) (TipRanks, 2026-11-17) · find primary source
+- [The Crypto Detectives Got Hacked: The Chainalysis Breach, Explained | by Hartarto | Nov, 2026](https://news.google.com/rss/articles/CBMitwFBVV95cUxObThsNWVzYkhxZDh6VXZjVUNMZGQ4QV9OWUlBRzR3VzZHZ29ESk1GeFNzU1RJSmF6aDZxRFl3UmNlRHRpcDFaRXlvUFgwNFgwY0dkOHRuSDVrMEFXb0FvRk9LbnJoNHh6cHdKdmY5Z19JSkhsSjN1cENEVG9fZUNSTlVwQzBCR3ljTTN0eHl4WW9OLUtCZk85V1BQY1Y0bGxjZEw4a1oyUXNOdUVWRk1SSzZCQXJ2RUk?oc=5) (DataDrivenInvestor, 2026-11-15) · find primary source
 
-## digest
+## record-check
 
-- [Counter Terrorism Designations](https://ofac.treasury.gov/recent-actions/20261118) (OFAC recent actions, 2026-11-18)
+- [Pindrop, 1Kosmos and IdRamp target workforce identity gaps from hiring to help desk](https://www.biometricupdate.com/202611/pindrop-1kosmos-and-idramp-target-workforce-identity-gaps-from-hiring-to-help-desk) (Biometric Update, 2026-11-19) · find primary source
