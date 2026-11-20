@@ -29,6 +29,43 @@ mention_orgs:
     url: "https://www.fatf-gafi.org/"
   - name: "The Wolfsberg Group"
     url: "https://wolfsberg-group.org/"
+agent_ladder:
+  title: "Who closes what under the EU AML Regulation"
+  note: "Our reading of Articles 69 and 76(5) AMLR, which apply from 10 July 2027. Not legal advice."
+  caption: "Source: Regulation (EU) 2024/1624, Articles 69 and 76. Article 76(5) also limits automated decisions to data collected under the due diligence chapter."
+  rungs:
+    - title: "The agent can close it"
+      desc: "Under your own policy, with the reason recorded and a sample re-checked by people."
+      items:
+        - { decision: "Clear a screening match that does not fit the customer's identifiers", basis: "Not in Art. 76(5)(b)" }
+        - { decision: "Close a monitoring alert as not suspicious", basis: "Not in Art. 76(5)(b)" }
+        - { decision: "Escalate an alert or recommend a risk rating", basis: "A recommendation, not a decision" }
+        - { decision: "Draft a suspicious activity report", basis: "Drafting is not filing" }
+    - title: "A person decides, the agent can prepare"
+      desc: "Meaningful human intervention is required, and the customer can ask for an explanation and challenge the decision."
+      items:
+        - { decision: "Take on a new customer", basis: "Art. 76(5)(b)" }
+        - { decision: "Refuse a customer or end a relationship", basis: "Art. 76(5)(b) and (c)" }
+        - { decision: "Carry out or refuse an occasional transaction", basis: "Art. 76(5)(b)" }
+        - { decision: "Move a customer to enhanced or simplified due diligence", basis: "Art. 76(5)(b)" }
+    - title: "The compliance officer sends it"
+      desc: "Reports of suspicion go to the financial intelligence unit through the compliance officer."
+      items:
+        - { decision: "Send a suspicious activity report to the FIU", basis: "Art. 69(6)" }
+agent_claims:
+  title: "What vendors claim about their AI agents"
+  note: "Seven of nine quote a figure. None publishes the method or an independent test. Checked on vendor pages on 20 November 2026."
+  caption: "Figures are the vendors' own. Most count work removed; only Hawk AI's says anything about true positives, the number that matters for compliance."
+  rows:
+    - { provider: "ComplyAdvantage", slug: complyadvantage, claim: "Agentic workflows resolve up to 85% of routine alerts autonomously", method: { state: "no", text: "Not published" }, test: { state: "no", text: "None" } }
+    - { provider: "Castellum.AI", slug: castellum-ai, claim: "83% of L1 and L2 alerts resolved instantly; 94% fewer false positives in screening", method: { state: "no", text: "Not published" }, test: { state: "no", text: "None" } }
+    - { provider: "AiPrise", slug: aiprise, claim: "AML Agent: 95% fewer false positives", method: { state: "no", text: "Not published" }, test: { state: "no", text: "None" } }
+    - { provider: "Hawk AI", slug: hawkai, claim: "In one customer test: every confirmed true positive escalated, 98% of known false positives cleared", method: { state: "partial", text: "One sentence, no report" }, test: { state: "no", text: "None" } }
+    - { provider: "Feedzai", slug: feedzai, claim: "Alerts closed 20% quicker; rule analysis 13 times faster", method: { state: "no", text: "Not published" }, test: { state: "no", text: "None" } }
+    - { provider: "Sardine", slug: sardine, claim: "Risk teams two to five times more efficient", method: { state: "no", text: "Not published" }, test: { state: "no", text: "None" } }
+    - { provider: "Strise", slug: strise, claim: "30% fewer false positives reaching analysts", method: { state: "no", text: "Not published" }, test: { state: "no", text: "None" } }
+    - { provider: "Unit21", slug: unit21, claim: "No headline figure on the homepage", no_figure: true, method: { state: "na", text: "No figure" }, test: { state: "no", text: "None" } }
+    - { provider: "AML Watcher", slug: amlwatcher, claim: "No figure for TruRisk", no_figure: true, method: { state: "na", text: "No figure" }, test: { state: "no", text: "None" } }
 faq:
   - q: "What is agentic AI in AML?"
     a: "Agentic AI in AML is software that works an alert or case through several steps on its own: it pulls customer and transaction data, checks screening and adverse media results, decides whether to close or escalate, and records why. A copilot only answers when an analyst asks."
@@ -191,19 +228,9 @@ The last column is where products really differ. Strise records the rationale fo
 
 ## Can an AI agent approve or reject a customer?
 
-In the EU, not without a person. From 10 July 2027, [Article 76(5) of the AML Regulation](https://www.springlex.eu/en/packages/aml/amlr-regulation/article-76/) lists the decisions that need meaningful human intervention when they come from automated processes or AI systems, and the customer can ask for an explanation and challenge them. Other steps are left to the firm's own policy. Here is how that maps onto agent work, in our reading:
+In the EU, not without a person. From 10 July 2027, [Article 76(5) of the AML Regulation](https://www.springlex.eu/en/packages/aml/amlr-regulation/article-76/) lists the decisions that need meaningful human intervention when they come from automated processes or AI systems, and the customer can ask for an explanation and challenge them. Other steps are left to the firm's own policy. Here is how that maps onto agent work:
 
-| Decision | Can an agent close it alone? | Basis |
-|---|---|---|
-| Clear a screening match that does not fit the customer's identifiers | Yes, under your policy, with the reason recorded | Not listed in Art. 76(5)(b) |
-| Close a monitoring alert as not suspicious | Yes, under your policy, with the reason recorded and a sample re-checked by people | Not listed in Art. 76(5)(b) |
-| Escalate an alert or recommend a risk rating | Yes | A recommendation is not a decision under Art. 76(5)(b) |
-| Draft a suspicious activity report | Yes, as a draft | Drafting is not filing |
-| Send the report to the FIU | No | Art. 69(6): the compliance officer transmits it |
-| Take on a new customer | No | Art. 76(5)(b): entering a business relationship |
-| Refuse a customer or end a relationship | No, and the customer can ask for an explanation | Art. 76(5)(b) and (c) |
-| Carry out or refuse an occasional transaction | No | Art. 76(5)(b) |
-| Move a customer to enhanced or simplified due diligence | No | Art. 76(5)(b): changing the extent of CDD |
+{% include "figures/agent-ladder.njk" %}
 
 Article 76(5) also limits the data an automated system may use to what was collected under the regulation's due diligence chapter. The regulation does not define what makes intervention meaningful; in our view, a person who only confirms whatever the agent proposes is unlikely to meet it. [Article 69](https://www.springlex.eu/en/packages/aml/amlr-regulation/article-69/) puts the duty to report suspicions on the obliged entity, and its paragraph 6 has the compliance officer transmit reports to the FIU. The AMLR applies from [10 July 2027](https://www.springlex.eu/en/packages/aml/amlr-regulation/article-90/). This is a reading of the text, not legal advice.
 
@@ -219,21 +246,11 @@ None of them bans AI agents in AML or approves them as a class.
 
 ## How accurate are AI agents?
 
-We found no independent measurement. Seven of the nine vendors quote figures; none publishes how they were measured.
+We found no independent measurement. The accuracy figures on vendor sites come without a published method, baseline or independent test.
 
-| Provider | What the vendor claims | Method published | Independent test |
-|---|---|---|---|
-| ComplyAdvantage | Agentic workflows resolve up to 85% of routine alerts autonomously | No | No |
-| Castellum.AI | 83% of L1 and L2 alerts resolved instantly; 94% fewer false positives in screening | No | No |
-| AiPrise | AML Agent: 95% fewer false positives | No | No |
-| Hawk AI | In one customer test, the agent escalated every confirmed true positive and cleared 98% of known false positives | Test described in a sentence, no report | No |
-| Feedzai | Alerts closed 20% quicker; rule analysis 13 times faster | No | No |
-| Sardine | Risk teams two to five times more efficient | No | No |
-| Strise | 30% fewer false positives reaching analysts | No | No |
-| Unit21 | No headline figure on the homepage | n/a | No |
-| AML Watcher | No figure for TruRisk | n/a | No |
+{% include "figures/agent-claims.njk" %}
 
-Checked on vendor pages on 20 November 2026. Most figures count work removed: alerts closed, false positives cleared. Only Hawk's says anything about true positives, which is the number that matters for compliance. That is why our [methodology](/methodology/) does not score vendor accuracy claims.
+That is why our [methodology](/methodology/) does not score vendor accuracy claims.
 
 ## How to back-test an AI agent on your own alerts
 
