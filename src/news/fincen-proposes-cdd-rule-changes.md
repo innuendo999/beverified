@@ -8,10 +8,10 @@ cover_label: "Beneficial owners"
 cover_motif: org
 cover_palette: dark
 published: 2026-11-17
-updated: 2026-11-17
+updated: 2026-11-20
 author: andrii-klymenko
 takeaways:
-  - "FinCEN issued the proposal on 17 November 2026 as part of Treasury's work under Executive Order 14406. Comments close 60 days after it is published in the Federal Register (docket FINCEN-2026-0298, RIN 1506-AB78)."
+  - "FinCEN issued the proposal on 17 November 2026 as part of Treasury's work under Executive Order 14406. The Federal Register published it on 19 November 2026 (91 FR 74514), and comments are due by 19 January 2027 (docket FINCEN-2026-0298, RIN 1506-AB78)."
   - "It would make the February 2026 relief (FIN-2026-R001) permanent: beneficial owners are identified and verified when a business customer first opens an account, when facts call the earlier information into question, and as risk-based procedures require."
   - "It lists the information to collect on each beneficial owner and says an ITIN is not an acceptable substitute for a Social Security number."
   - "Institutions could take the information from a third-party source, and for later updates a customer's oral or written confirmation could replace a new certification."
@@ -29,7 +29,7 @@ faq:
   - q: "What does FinCEN's November 2026 CDD proposal change?"
     a: "FinCEN's November 2026 CDD proposal would make the February 2026 relief from re-identifying beneficial owners at each new account permanent, list the information institutions must collect on each beneficial owner, exclude ITINs as a substitute for a Social Security number, allow information from third-party sources and let institutions rely on a customer's confirmation for later updates."
   - q: "When is the comment deadline for the FinCEN CDD proposal?"
-    a: "60 days after the proposal is published in the Federal Register. On 17 November 2026 FinCEN had released the text but it had not yet appeared in the Federal Register, so there was no calendar date yet."
+    a: "Comments on the FinCEN CDD proposal must be received by 19 January 2027. The proposal appeared in the Federal Register on 19 November 2026 (91 FR 74514), under docket FINCEN-2026-0298."
   - q: "Does the proposal remove beneficial ownership verification?"
     a: "No. FinCEN says it does not change institutions' existing obligation to verify the identity of beneficial owners, and verification still follows the customer identification program procedures. It changes when owners are identified and verified, not whether."
   - q: "Can banks still accept an ITIN for a beneficial owner?"
@@ -46,6 +46,10 @@ sources:
   - title: "FinCEN Issues Proposed Rule to Strengthen Customer Due Diligence Requirements for Covered Financial Institutions (press release sb0691)"
     publisher: "U.S. Department of the Treasury"
     url: "https://home.treasury.gov/news/press-releases/sb0691"
+    accessed: 2026-11
+  - title: "Customer Due Diligence Requirements for Covered Financial Institutions, proposed rule, 91 FR 74514 (19 November 2026)"
+    publisher: "Federal Register (U.S. Government Publishing Office)"
+    url: "https://www.govinfo.gov/content/pkg/FR-2026-11-19/html/2026-23614.htm"
     accessed: 2026-11
   - title: "Order Granting Exceptive Relief from the Customer Due Diligence Requirements (FIN-2026-R001, 13 February 2026)"
     publisher: "FinCEN"
@@ -102,3 +106,7 @@ Comments close 60 days after the proposal is published in the Federal Register; 
 ## What it means for KYB checks
 
 For most institutions the timing change is not new: the February relief has been available since it was issued. The parts that could change day-to-day work are the explicit list of data per owner, the end of ITINs as a stand-in for a Social Security number and the option to use third-party sources. If you rely on a [KYB provider](/providers/kyb/) to collect ownership data from registries, ask how it records the source of each data point, whether it captures confirmations from the customer with a timestamp, and how it flags owners identified only by an ITIN. Our [AML for banks ranking](/providers/aml/banks/) covers the screening side of the same onboarding.
+
+## What has happened since
+
+Status as of 20 November 2026: the proposal was [published in the Federal Register](https://www.govinfo.gov/content/pkg/FR-2026-11-19/html/2026-23614.htm) on 19 November 2026 at 91 FR 74514, as document 2026-23614. That fixes the comment deadline: comments must be received by 19 January 2027, under docket FINCEN-2026-0298. The published text keeps the three triggers for identifying beneficial owners described above. We checked the Federal Register copy on govinfo.gov. We will update this item when FinCEN publishes a final rule or changes the comment period.
