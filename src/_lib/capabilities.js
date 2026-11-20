@@ -55,10 +55,14 @@ export const certCell = (key, certs = []) => {
     return { status: top.status, level: lvl(top) || null, source: top.source };
   }
   if (key === "trust_framework" || key === "age_certification") {
-    const hits = [];
+    // An entry whose name says "in progress" is not held yet: it never counts as confirmed or vendor-stated.
+    const hits = [], pending = [];
     for (const c of [...ok].sort((a, b) => CERT_RANK[b.status] - CERT_RANK[a.status]))
-      for (const [re, label] of (key === "trust_framework" ? FRAMEWORKS : AGE_CERTS)) if (re.test(c.name) && !hits.some((h) => h.label === label)) hits.push({ label, status: c.status });
-    if (!hits.length) return { status: "not_disclosed" };
+      for (const [re, label] of (key === "trust_framework" ? FRAMEWORKS : AGE_CERTS)) {
+        const list = prog(c) ? pending : hits;
+        if (re.test(c.name) && !list.some((h) => h.label === label)) list.push({ label, status: c.status });
+      }
+    if (!hits.length) return pending.length ? { status: "in_progress", names: pending.map((h) => h.label).join(", ") } : { status: "not_disclosed" };
     const conf = hits.filter((h) => h.status === "confirmed");
     return { status: conf.length ? "confirmed" : "vendor_stated", names: (conf.length ? conf : hits).map((h) => h.label).join(", ") };
   }

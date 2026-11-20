@@ -268,6 +268,11 @@ certifications:
   what: Information security (software products; certifier named as Insight Assurance)
   status: vendor_stated
   source: 4
+- name: SOC 2 Type II
+  program: soc2
+  what: Security controls audit (no date, period or auditor given)
+  status: vendor_stated
+  source: 4
 - name: ISO 9001:2015
   program: other
   what: Quality management (optoelectronic equipment)
@@ -418,6 +423,7 @@ verification_notes:
 - 'Template count: SDK page says 16,500+ templates (Oct 2026); the vendor fact sheet of Oct 2025 says 15,500+. The current page figure is used.'
 - 'Customer count: about page says over 2,000 enterprises; the 2026 Gartner release says more than 2,000 organizations; the Oct 2025 fact sheet said more than 1,000 organizations and 80 border control authorities. Vendor figures only.'
 - 'Review themes are general statements; they were not matched against individual G2 or Gartner reviews.'
+- 'Certification re-check 2026-11-20: the certificates page also says Regula completed a SOC 2 Type II audit (no date, period or auditor); added as vendor_stated.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

@@ -445,12 +445,12 @@ certifications:
 - name: FIDO Face Verification, Level 2
   program: fido_face
   level: 2
-  what: Face matching, Full Auto IDV product
+  what: Face matching, Full Auto IDV product (Ingenium Biometric Laboratories, valid to 13 Nov 2029)
   status: confirmed
   source: 22
 - name: FIDO Document Authenticity (DocAuth)
   program: fido_docauth
-  what: Document checks, Full Auto IDV product
+  what: Document checks, Full Auto IDV product (Ingenium Biometric Laboratories, valid to 1 Oct 2029)
   status: confirmed
   source: 22
 - name: 'KJM approval (Germany)'
@@ -689,6 +689,7 @@ verification_notes:
 - 'KYB is still a limited access program (sign-up page says the full KYB service is "launching mid-2026"); general availability not confirmed as of 2026-10-22.'
 - 'FIDO register entries list an expiry (DocAuth 1 Oct 2029, Face Verification 13 Nov 2029) but no issue date. DocAuth covers the Full Auto IDV product only, not hybrid review. The direct DocAuth products page did not load; both entries were read on the Face Verification products page.'
 - 'Homepage also lists CCPA/CPRA and GDPR compliance; these are compliance statements, not certificates, and are not listed.'
+- 'Certification re-check 2026-11-20: FIDO certified products page lists Veriff Face Verification Level 2 (expires 13 Nov 2029) and DocAuth (expires 1 Oct 2029), both tested by Ingenium; UK DVS entry matches the register (14 Jan 2026 to 14 Jan 2029).'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
