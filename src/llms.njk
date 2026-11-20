@@ -24,6 +24,9 @@ Key facts for citation:
 - [{{ allCategories[r.slug].seo.h1 }}]({{ site.url }}{{ allCategories[r.slug].url }}): regulator {{ r.reg }}, {{ rankings[r.slug].providers.length }} providers ranked.{% endif %}{% endfor %}
 - [All regions]({{ site.url }}/regions/)
 
+## Data sets
+- [KYC Certification Tracker]({{ site.url }}/kyc-certification-tracker/): independent test results and certifications (iBeta ISO/IEC 30107-3 letters, UK DVS register, FIDO IDV, DHS RIVR, ACCS, ISO/IEC 27001, SOC 2) for the KYC and identity verification providers we review, each marked confirmed on the issuer's register or stated by the vendor. Registers checked {{ certTracker.checked }}. Download: [CSV]({{ site.url }}/kyc-certification-tracker/certifications.csv), [JSON]({{ site.url }}/kyc-certification-tracker/certifications.json). License CC BY 4.0.
+
 ## Provider reviews
 {% for p in (allProviders | byName) %}
 - [{{ p.name }} review]({{ site.url }}/providers/{{ p.slug }}/): {{ p.tagline }}. Score {{ p.score | score1 }}/5{% if p.last_verified %}, last verified {{ p.last_verified }}{% endif %}.{% endfor %}

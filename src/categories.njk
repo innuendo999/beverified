@@ -134,6 +134,7 @@ layout: v3.njk
 
     {%- if c.layout == "v2" %}
     <p class="r2-method">How we score this ranking: <a href="{{ site.v3.methodologyHref }}{{ c.methodology_anchor or "" }}">{{ c.methodology_label or site.v3.methodologyVersion }} methodology →</a></p>
+    {%- if c.slug in ["identity-verification", "e-kyc", "liveness-detection", "cheap-kyc", "age-verification"] %}<p class="r2-method">Certificates and lab letters for every provider in this ranking: <a href="/kyc-certification-tracker/">KYC Certification Tracker</a>.</p>{% endif %}
     {%- else %}
     <section aria-labelledby="how-h">
       <h2 id="how-h" class="h-section">How we ranked this category</h2>
@@ -142,6 +143,7 @@ layout: v3.njk
           {%- set rub = site.v3[c.rubric] if c.rubric else (site.v3.rubricTravel if c.slug == "travel-rule" else (site.v3.rubricAml if c.slug.startsWith("aml") else site.v3.rubric)) %}
           {%- for r in rub %}<div class="weights__row"><span>{{ r.name }}</span><span class="bar" aria-hidden="true"><i class="w-{{ r.weight * 4 }}"></i></span><span>{{ r.weight }}%</span></div>{% endfor %}
           <p class="mt-12 fs-14"><a href="{{ site.v3.methodologyHref }}{{ c.methodology_anchor or "" }}">Full methodology {{ c.methodology_label or ("v3.0 (Travel Rule)" if c.slug == "travel-rule" else site.v3.methodologyVersion) }} →</a></p>
+          {%- if c.slug in ["identity-verification", "e-kyc", "liveness-detection", "cheap-kyc", "age-verification"] %}<p class="mt-12 fs-14">Certificates and lab letters for every provider in this ranking: <a href="/kyc-certification-tracker/">KYC Certification Tracker</a>.</p>{% endif %}
         </div>
         <div class="weights__key">
           <span>Evidence levels we rely on</span>

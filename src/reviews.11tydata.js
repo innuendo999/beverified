@@ -6,6 +6,7 @@ import { buildSidebar, companyFacts } from "./_lib/sidebar.js";
 import { reviewSponsor, shortLabel } from "./_lib/placements.js";
 import { profileFor, heroFacts, networkRows, factRows, certRows, incidentRow, fitRows, questions, sourceGroups, reviewYear, pricingCalc, productJobs } from "./_lib/review-v4.js";
 import { fitCheckData, deployHero } from "./_lib/fit-check.js";
+import { isListed as inCertTracker } from "./_lib/cert-tracker.js";
 
 export default {
   pagination: { data: "providers", size: 1, alias: "p", resolve: "values", addAllPagesToCollections: true },
@@ -13,6 +14,8 @@ export default {
   navCurrent: "reviews",
   ogType: "article",
   eleventyComputed: {
+    // Review is listed in the KYC Certification Tracker (same rule as the page): its certifications block links to its row.
+    certTrackerRow: (d) => (d.p && d.p.status === "published" && (d.p.certifications || []).length && inCertTracker(d.p) ? `/kyc-certification-tracker/#${d.p.slug}` : null),
     seoTitle: (d) => d.p.seo?.title || `${d.p.name} Review | BeVerified`,
     seoDescription: (d) => d.p.seo?.description,
     updated: (d) => [d.p.updated, d.p.last_verified].filter(Boolean).sort().pop(),
