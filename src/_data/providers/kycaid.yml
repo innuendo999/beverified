@@ -427,7 +427,12 @@ track_record:
 certifications:
 - name: ISO/IEC 27001
   program: iso27001
-  what: Information security
+  what: Information security; the privacy policy says compliance is continuously verified and does not say certified
+  status: vendor_stated
+  source: 3
+- name: SOC 2 Type 2
+  program: soc2
+  what: Named in the privacy policy as a standard whose compliance is continuously verified; no report or auditor named
   status: vendor_stated
   source: 3
 - name: PCI DSS
@@ -583,6 +588,7 @@ verification_notes:
 - 'Watchlist source: the blacklist databases doc names no data provider; its sample response shows "Open Sanctions Default". "Smaller watchlist database than category leaders" is an editorial comparison, not a measured figure.'
 - 'User ratings: G2 (Kycaid ID Verification) and Capterra (Kycaid) show 0 reviews; no Gartner Peer Insights page found. Trustpilot 2.2 from 38 reviews is mostly end users being verified, not buyers.'
 - 'Verification speed: about page gives both "20-sec" and "under 11 seconds"; not used.'
+- 'Certification re-check 2026-11-20: privacy policy section 14 says compliance with ISO/IEC 27001, SOC 2 Type 2 and PCI DSS is continuously verified; it does not claim certification. ISO entry wording narrowed, SOC 2 added as vendor_stated.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

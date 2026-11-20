@@ -378,9 +378,9 @@ certifications:
 - name: iBeta ISO/IEC 30107-3 PAD Level 2
   program: ibeta_pad
   level: 2
-  what: Didit Biometric Authentication v3.0, iPhone 17 (Nov 2026)
+  what: Liveness, Didit Biometric Authentication v3.0, iPhone 17, iOS 26.1 (Nov 2026)
   status: confirmed
-  source: 18
+  source: 21
 - name: ISO/IEC 27001:2022
   program: iso27001
   what: Information security, Bureau Veritas, cert. ES144068, valid to Jun 2027
@@ -516,6 +516,10 @@ sources:
   publisher: LinkedIn
   url: https://www.linkedin.com/company/diditprotocol
   accessed: '2026-11'
+- title: 'Didit Identity PAD Level 2 confirmation letter, Didit Biometric Authentication v3.0 (9 Nov 2026)'
+  publisher: iBeta Quality Assurance
+  url: https://www.ibeta.com/wp-content/uploads/2026/11/261109-Didit-Identity-PAD-Level-2-Confirmation-Letter-iOS.pdf
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null
@@ -535,6 +539,7 @@ verification_notes:
 - 'User ratings from search result pages on 17 Nov 2026 (G2 blocks the fetcher): G2 4.9 from 18 reviews, Capterra 5.0 from 8. Trustpilot shows 3.1 to 3.5 from 17 to 18 reviews depending on the country page; mostly end users, not added.'
 - 'docs.didit.me opened 17 Nov 2026: SDKs for web, iOS and Android, sandbox mentioned. No case management feature, adverse media or video ident documented on the docs home page; left not_disclosed.'
 - 'No breach, enforcement action or lawsuit involving Didit found in searches on 17 Nov 2026.'
+- 'Certification re-check 2026-11-20: the Level 2 letter (9 Nov 2026) is now listed on iBeta''s own page under Didit Identity; the entry cites the ibeta.com copy instead of the copy on Didit''s storage.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 directory_categories:

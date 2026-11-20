@@ -322,11 +322,11 @@ certifications:
   what: AI management system
   status: vendor_stated
   source: 3
-- name: FedRAMP Ready (High baseline)
+- name: FedRAMP Moderate (agency authorization in progress)
   program: other
-  what: US federal cloud security, readiness stage, not an authorization
+  what: Incode Platform, Class C (Moderate), Agency Auth In Process since 25 Sep 2026 on the FedRAMP Marketplace; not yet an authorization
   status: vendor_stated
-  source: 12
+  source: 35
 - name: Kantara IAL2 Trust Mark
   program: other
   what: Identity assurance (NIST 800-63)
@@ -334,9 +334,9 @@ certifications:
   source: 3
 - name: Age Check Certification Scheme (ACCS)
   program: accs
-  what: Age assurance (UK), register entry without listed scope or dates
-  status: confirmed
-  source: 15
+  what: Age verification, announced Jun 2024; the ACCS registry pages for Incode list no current certificate
+  status: vendor_stated
+  source: 34
 - name: 'KJM approval (Germany)'
   program: other
   what: ID and selfie age check for gambling, announced 2022
@@ -519,6 +519,14 @@ sources:
   publisher: Incode
   url: https://incode.com/use-cases/authentication/
   accessed: '2026-11'
+- title: 'Incode receives ACCS certification for its age verification solution (24 Jun 2024)'
+  publisher: Incode
+  url: https://incode.com/press/incode-receives-accs-certification-for-its-age-verification-solution/
+  accessed: '2026-11'
+- title: 'FedRAMP Marketplace: Incode Platform (FR2510341317)'
+  publisher: FedRAMP
+  url: https://www.fedramp.gov/marketplace/products/FR2510341317/
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null
@@ -529,12 +537,13 @@ entity:
 legacy_issues: []
 legacy_editorial_note: null
 verification_notes:
-- SOC 2 Type 2, ISO/IEC 27001:2022, ISO/IEC 42001:2023 and Kantara IAL2 are listed on the trust centre only (source 3); no certificate opened, and the Kantara Trust Status List does not render.
-- FedRAMP conflict: trust centre lists "FedRAMP Moderate" (source 3), but Incode's Nov 2025 release says FedRAMP Ready at the High baseline with authorization still to come (source 12). No FedRAMP Marketplace entry for Incode could be opened. Page shows the Ready status.
+- SOC 2 Type 2, ISO/IEC 27001:2022, ISO/IEC 42001:2023 and Kantara IAL2 are listed on the trust centre only (source 3); no certificate opened, and the Kantara Trust Status List does not render. Trust centre re-checked from the owner's screenshot 2026-11-20: auditors named as Sensiba (SOC 2, ISO 27001, ISO 42001), A-LIGN, Zygma and iBeta QA; ISO/IEC 27001:2022 and the Kantara IAL2 Trust Mark documents show no lock (public download); no ACCS entry on the trust centre.
+- FedRAMP conflict resolved 2026-11-20: the FedRAMP Marketplace lists Incode Platform (FR2510341317) at Class C (Moderate), status Agency Auth In Process as of 25 Sep 2026 (source 35). This matches the trust centre's "FedRAMP Moderate" badge; the Nov 2025 release (source 12) describes the earlier Ready stage at the High baseline. Kept as vendor_stated (not confirmed) because the trust-framework matrix column does not yet treat "in progress" names as in progress and would show a green Confirmed FedRAMP.
 - ACCS registry lists "Incode Technologies Inc" (source 15) but the entry shows no certified scope, standard or dates. Incode's July 2024 release says it covers facial age estimation and document-based age verification; not added as scope.
 - Gartner Magic Quadrant Leader placements (2024, 2025, 2026) rest on Incode's release and landing page (source 1; Gartner document dated 28 Jul 2026); the Gartner report itself is gated and was not opened.
 - Gartner Peer Insights counts differ by view (product page 55 ratings; vendor page 53 Identity Verification reviews, 57 all markets). Product page figure used.
 - Nov 2025 Bloomberg report (reprinted by Incode) of talks to raise $150M to $300M at up to $3B valuation; no closed round found, so the page keeps only the 2021 $1.25B figure (sources 8, 11).
+- 'Certification re-check 2026-11-20: the ACCS registry pages for Incode Technologies Inc (uncategorized and data-privacy) say no certification is listed. The ACCS entry moved from confirmed to vendor_stated, citing Incode''s June 2024 announcement.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

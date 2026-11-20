@@ -308,6 +308,12 @@ certifications:
   what: Liveness / presentation attack detection, Onfido Liveness 2.0 on iOS (Jan 2022) and Android (Jun 2022)
   status: confirmed
   source: 8
+- name: ISO/IEC 30107-3 Level 2 (iBeta)
+  program: ibeta_pad
+  level: 2
+  what: Liveness / presentation attack detection, Entrust Facial Similarity Report Motion v2 on Android, iOS and web (Nov 2026)
+  status: confirmed
+  source: 29
 - name: ISO/IEC 30107-3 Level 1 (iBeta)
   program: ibeta_pad
   level: 1
@@ -501,6 +507,10 @@ sources:
   publisher: Entrust (Onfido) developer docs
   url: https://documentation.identity.entrust.com/guide/australia/
   accessed: '2026-11'
+- title: 'Entrust PAD Level 2 confirmation letter, Facial Similarity Report: Motion v2 (4 Nov 2026)'
+  publisher: iBeta Quality Assurance
+  url: https://www.ibeta.com/wp-content/uploads/2026/11/261104-Entrust-PAD-Level-2-Confirmation-Letter.pdf
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null
@@ -517,6 +527,7 @@ verification_notes:
 - Entrust's Remote IDV Practice Statement (Dec 2025) says Facial Similarity Motion holds iBeta PAD Level 1 and Level 2; iBeta's public list shows only Level 1 for Motion v2.0 (Jul 2026). Level 2 for Motion not shown as confirmed.
 - ISO/IEC 27001:2022, SOC 2 Type II, ETSI TS 119 461 / EN 319 401 and NIST 800-63-3 IAL2 are vendor-stated; no certificate, audit report or register entry opened.
 - Gartner Peer Insights shows 4.3 from 47 ratings in the identity verification market and 4.4 from 60 on the all-markets product page; the market page is used.
+- 'Certification re-check 2026-11-20: iBeta lists an Entrust Level 2 letter dated 4 Nov 2026 for Facial Similarity Report: Motion v2 (Samsung Galaxy S26, iPhone 17, web on Safari); letter opened, signed by iBeta. Added as a confirmed entry. Highest iBeta level unchanged (Level 2), so no score input changes.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

@@ -256,12 +256,12 @@ track_record:
 certifications:
 - name: SOC 2 Type 2
   program: soc2
-  what: Security controls audit
+  what: Homepage says its data access policies adhere to SOC 2 requirements and shows a SOC2-TYPE2 badge; no report or auditor named
   status: vendor_stated
   source: 1
 - name: ISO/IEC 27001
   program: iso27001
-  what: Information security
+  what: Homepage says its data access policies adhere to ISO 27001 requirements; no certificate or body named
   status: vendor_stated
   source: 1
 user_ratings:
@@ -379,6 +379,7 @@ verification_notes:
 - 'Coverage figures differ on IDMERIT''s own pages: homepage says 180+ countries and 440+ data sources (source 1); Our Story says over 90 countries and the FAQ says over 600 databases in over 90 countries (sources 2, 3). Homepage figures used. Rechecked 2026-10-22, unchanged.'
 - 'The $0.10 per user per month figure appears only on the Capterra/GetApp listing (source 4), not on idmerit.com; idmerit.com/pricing returned an error again on 2026-10-22. The unit (per user per month) is unclear for an identity check product.'
 - 'SOC 2 Type 2 and ISO 27001 are badges on the homepage, which says data access policies follow "ISO 27001 and SOC2 requirements" (source 1). The only public certification evidence is an April 2020 press release on ISO/IEC 27001:2013 from an unnamed ANAB-accredited body (source 6); no current certificate, certification body or SOC 2 report found. Both stay vendor_stated.'
+- 'Certification re-check 2026-11-20: the homepage says data access policies adhere to ISO 27001 and SOC 2 requirements and shows badges; it does not name a certificate, report or auditor. Wording of both entries narrowed.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
