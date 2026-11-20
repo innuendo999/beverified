@@ -12,7 +12,8 @@ const dir = path.join(root, "src/_data/providers");
 const args = process.argv.slice(2);
 const WRITE = args.includes("--write");
 const only = args.filter((a) => !a.startsWith("--"));
-const TODAY = new Date("2026-11-05");
+// Date the 24-month incident window is measured from. Pinned to the v3.1 re-score day; set RESCORE_TODAY=YYYY-MM-DD to re-score later.
+const TODAY = new Date(process.env.RESCORE_TODAY || "2026-11-05");
 // Incidents come from the tracker file (one record feeds /incidents/, reviews and the score).
 const INCIDENTS = (yaml.load(fs.readFileSync(path.join(root, "src/_data/incidents.yml"), "utf8")).items || []);
 

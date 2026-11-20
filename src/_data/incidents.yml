@@ -16,7 +16,7 @@
 # timeline: [{when, what}] dated steps taken from `occurred`, `since` and the sources; no step without a source
 # customer_actions: steps the vendor itself asked customers to take (shown as "If you use {vendor}"); empty = none published
 # appeal: {received, outcome: pending | upheld | partly_upheld | rejected, decided, note}  a vendor appeal and its result
-checked: '2026-11-05'
+checked: '2026-11-20'
 items:
 - id: chainalysis-2026-10
   slug: chainalysis
@@ -25,7 +25,7 @@ items:
   occurred: 'Activity detected in Oct 2026; disclosed 30 Oct 2026; wider exposure found 2 Nov and disclosed 4 Nov 2026'
   type: breach
   sensitivity: medium
-  status: investigating
+  status: contained
   counted: false
   not_counted_reason: not_reviewed
   confirmed_by: Vendor notice
@@ -34,15 +34,16 @@ items:
   - {when: 'Oct 30, 2026', what: First notice}
   - {when: 'Nov 4, 2026', what: Wider exposure disclosed}
   - {when: 'Nov 7 and 10, 2026', what: Services restored}
+  - {when: 'Nov 13, 2026', what: Declared contained}
   customer_actions: [Reset your password from the login page, Rotate API keys, Turn on two-factor authentication]
   title: Attacker reached internal tools and exposed login data for all users
   summary: Chainalysis says an external actor used "offensive agentic techniques" to get into its systems and internal tools. Its first notice on 30 October 2026 listed user IDs, names, email addresses and organisation role labels. On 4 November it said names, usernames, password hashes and live tokens for all Chainalysis users had been exposed, and that a subset of customer passwords was exposed through an on-path attack. It took Reactor, Data Solutions, KYT and its address screening products offline, and is notifying customers whose KYT accounts appear to have been accessed.
   data: [Names and email addresses, Usernames and organisation roles, Password hashes and live tokens, Some customer passwords]
   scale: All Chainalysis users for names, usernames, password hashes and tokens, per Chainalysis; number of users not disclosed
   response: Chainalysis says it found no evidence that investigations data was accessed or that its attribution data was manipulated. It says it patched the exploited vulnerabilities, locked affected accounts, brought in third-party security experts, and restored services with IP allowlisting and forced credential resets. It asks users to reset passwords from its login page, rotate API keys and turn on two-factor authentication.
-  since: Reactor, KYT and Address Screening restored on 7 Nov 2026 and Data Solutions on 10 Nov 2026, per Chainalysis's notice. No root cause or final count published as of 16 Nov 2026. Chainalysis is tracked but not reviewed, so there is no score to deduct from.
+  since: Reactor, KYT and Address Screening restored on 7 Nov 2026 and Data Solutions on 10 Nov 2026, per Chainalysis's notice. On 13 Nov 2026 Chainalysis said the incident was contained and it had found no unauthorised access since 4 Nov 2026; its investigation is ongoing. No root cause or final count published as of 20 Nov 2026. Chainalysis is tracked but not reviewed, so there is no score to deduct from.
   sources:
-  - title: 'Updated Nov 10: Chainalysis Security Incident Information'
+  - title: Chainalysis Security Incident Information (updated 13 Nov 2026)
     publisher: Chainalysis
     url: https://www.chainalysis.com/blog/security-incident-october-30/
     accessed: '2026-11'
@@ -88,7 +89,8 @@ items:
   counted: true
   confirmed_by: Researchers only; IDMERIT disputes it
   timeline:
-  - {when: 'Feb 20, 2026', what: Reported by Cybernews}
+  - {when: 'Nov 11, 2025', what: 'Database found, per Cybernews'}
+  - {when: 'Feb 20, 2026', what: Reported in the press}
   - {when: After disclosure, what: Database reportedly secured}
   - {when: Open, what: Scope not confirmed}
   title: Researchers report an unsecured database linked to IDMERIT; the company disputes it
@@ -102,6 +104,10 @@ items:
     publisher: Biometric Update
     url: https://www.biometricupdate.com/202602/idmerit-disputes-report-of-1b-records-exposed-in-unsecured-id-verification-database
     accessed: '2026-11'
+  - title: Data leak at digital identity verification provider exposes 1 billion records
+    publisher: Bitdefender
+    url: https://www.bitdefender.com/en-us/blog/hotforsecurity/leak-at-digital-identity-verification-provider
+    accessed: '2026-11'
 - id: persona-2026-02
   slug: persona
   vendor: Persona
@@ -114,18 +120,22 @@ items:
   not_counted_reason: test_system
   confirmed_by: Researchers; Persona says it was fixed
   timeline:
-  - {when: Feb 2026, what: Reported by researchers}
-  - {when: Feb 2026, what: 'Fixed, per Persona'}
+  - {when: 'Feb 16, 2026', what: Researchers publish their findings}
+  - {when: 'Feb 24, 2026', what: Persona publishes a post-incident review}
   title: Frontend code found on a publicly reachable server
   summary: Researchers found Persona's uncompressed frontend code reachable from the open internet on a US government authorised server, showing how its checks are built. The report did not say that personal data was exposed.
   data: [Source code, No personal data reported]
   scale: Not applicable
   response: Persona's CEO said the flagged issues were fixed quickly. Persona says the environment was a test system with no personal data.
-  since: Fixed, according to Persona. Shown here and not counted in the score.
+  since: Fixed, according to Persona. Its post-incident review of 24 February 2026 says the exposed files were frontend source maps on a non-production subdomain and that no customer data or backend systems were affected. Shown here and not counted in the score.
   sources:
   - title: Persona pushes back against fears its age assurance tech isn't secure
     publisher: Biometric Update
     url: https://www.biometricupdate.com/202602/persona-pushes-back-against-fears-its-age-assurance-tech-isnt-secure
+    accessed: '2026-11'
+  - title: 'Post-incident review: source map exposure on a non-production subdomain'
+    publisher: Persona
+    url: https://withpersona.com/blog/post-incident-review-source-map-exposure-non-production-subdomain
     accessed: '2026-11'
 - id: sumsub-2026-02
   slug: sumsub
@@ -173,7 +183,7 @@ items:
   data: [ID document images, Postal addresses, Dates of birth]
   scale: 8,583 people notified
   response: A Veriff spokesperson attributed the incident to phishing that captured a customer employee's credentials, said customers following its security recommendations were not affected, and urged SSO, IP allowlisting and least-privilege access. Total Wireless says Veriff secured its systems and hired a cybersecurity firm.
-  since: Three class actions naming Veriff OÜ and Total Wireless were filed in the Southern District of New York in January 2026; the complaints allege the data was unencrypted. No settlement reported as of July 2026.
+  since: Three class actions naming Veriff OÜ and Total Wireless were filed in the Southern District of New York in January 2026; the complaints allege the data was unencrypted. No settlement found as of 20 Nov 2026.
   news: /news/veriff-total-wireless-data-breach/
   sources:
   - title: Total Wireless notice of data breach (9 January 2026)
@@ -201,13 +211,13 @@ items:
   timeline:
   - {when: Late Nov 2024, what: 'Attack, as reported'}
   - {when: 'Dec 3, 2024', what: Reported in the press}
-  - {when: 'Nov 5, 2026', what: No findings published yet}
+  - {when: 'Nov 20, 2026', what: No findings published yet}
   title: Cyberattack reported at Signzy
   summary: TechCrunch, citing multiple sources, reported that Signzy was hit by a cyberattack in late November 2024. India's CERT-In said it was aware of the incident. The data involved was not disclosed.
   data: [Not publicly disclosed]
   scale: Not publicly disclosed
   response: Signzy said it had been informed of a security incident, was investigating and had hired a professional agency. Its customer PayU said Signzy confirmed in writing that none of PayU's data was compromised.
-  since: No findings or root cause published as of 5 Nov 2026.
+  since: No findings or root cause published as of 20 Nov 2026.
   sources:
   - title: Fintech SaaS startup Signzy suffers cyberattack
     publisher: Inc42

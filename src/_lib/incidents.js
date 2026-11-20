@@ -16,7 +16,7 @@ const dataText = (data) => (data || []).map((s, i) => (i && /^[A-Z][a-z]/.test(s
 function scoreLine(x, today) {
   if (x.counted === false) return NOT_COUNTED[x.not_counted_reason] || "Not counted in score";
   const until = new Date(day(x.date).getTime() + WINDOW_DAYS * 864e5);
-  if (until < today) return "Past 24 months, drops out at the next re-score";
+  if (until.getTime() + 864e5 <= today.getTime()) return "Past 24 months, drops out at the next re-score"; // counted through the "until" day, as in rescore.mjs
   return `Lowers score until ${fmt(until)}`;
 }
 
