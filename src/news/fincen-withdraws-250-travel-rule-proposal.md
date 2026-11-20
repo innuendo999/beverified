@@ -111,7 +111,7 @@ The review follows the FATF's [July 2026 targeted update](https://www.fatf-gafi.
 Other outcomes that feed straight into country risk settings:
 
 - Bulgaria, Côte d'Ivoire, the Democratic Republic of the Congo and Monaco left the [grey list](https://www.fatf-gafi.org/en/publications/High-risk-and-other-monitored-jurisdictions/increased-monitoring-october-2026.html). No jurisdiction was added, so 18 remain.
-- The FATF warned Vietnam about the pace of its progress and expects tangible results by February 2027.
+- The FATF [warned Vietnam](https://financialcrime.lu/2026/10/30/FATF-Outcomes-FATF-Plenary-28-30-October-2026/) about the pace of its progress and expects tangible results by February 2027.
 - The black list is unchanged. Countermeasures against Iran stay in place and cover virtual asset service providers and virtual asset transactions.
 - The plenary adopted the mutual evaluations of the United States and Mexico. Both reports will be published in December 2026.
 - It also approved a report on the money flows behind scam compounds.

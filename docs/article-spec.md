@@ -56,6 +56,7 @@ Then run `npm run covers` (renders `src/assets/img/covers/<slug>.png`, 1600x900;
 - Do not repeat the H1, the lede or the takeaways in the body.
 - Internal links: 3-8 natural links to our pages (provider reviews, rankings, hubs, methodology) plus 1-3 links to sibling articles. Only URLs from the list in `scripts/checks/articles.mjs` output (`--urls`) are valid.
 - External links: link to the primary source inline where the claim is made (regulator, official journal, law text, vendor page). Every such URL must also be in `sources`.
+- Articles show no Sources block at the end (owner, 2026-11-20). Every `sources` entry must therefore be linked inline in the body; `articles.mjs` fails otherwise. `sources` stays in front matter: it feeds the validator and the JSON-LD `citation`. Pages whose source links live in generated tables (KYC Pricing Index, comparisons) set `sources_inline: generated`.
 - News items keep the original story and its date, then end with a section `## What has happened since` (status as of the refresh date, sourced). If nothing changed, say so and say what was checked.
 - Guides and publications are refreshed to be correct as of the `updated` date: new laws, deadlines that passed, changed thresholds, renamed lists, acquisitions.
 

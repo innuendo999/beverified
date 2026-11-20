@@ -28,6 +28,7 @@ faq:
     a: "Not as a listed product. Jumio's product list has no business verification module, while Sumsub offers KYB with registry checks and UBO verification on its custom plan."
   - q: "Can I use Sumsub or Jumio for AML screening?"
     a: "Both offer sanctions, PEP and adverse media screening. Sumsub includes AML screening from its Compliance plan; Jumio sells AML Screening and Transaction Monitoring as separate products."
+sources_inline: generated   # source links are rendered in the generated comparison tables
 sources:
   - title: "Pricing"
     publisher: "Sumsub"

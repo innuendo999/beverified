@@ -53,7 +53,7 @@ sources:
     accessed: 2026-10
 ---
 
-Our October 2025 story ran with a round number: AML and KYC spending heading for $3 billion. The figure came from [Burton-Taylor](https://tpicap.com/burtontaylor/Research%20Headline), the market research brand of TP ICAP, which projected that global spending on AML and KYC data and services would total a record $2.9 billion in 2025, up 12.3% on the year before. Burton-Taylor also said these budgets had grown at a compound rate of 22% over the previous five years.
+Our October 2025 story ran with a round number: AML and KYC spending heading for $3 billion. The figure came from [Burton-Taylor](https://tpicap.com/burtontaylor/Research%20Headline), the market research brand of TP ICAP, which projected that global spending on AML and KYC data and services would total a [record $2.9 billion in 2025](https://tpicap.com/burtontaylor/reports/04/2025/anti-money-launderingknow-your-customer-data-services-global-market-share-2025), up 12.3% on the year before. Burton-Taylor also said these budgets had grown at a compound rate of 22% over the previous five years.
 
 That is worth reading carefully. The number is what financial institutions pay data vendors for screening lists, adverse media, corporate records and related services. It is not the full cost of a bank's compliance function, which also covers staff, in-house systems and case management.
 
