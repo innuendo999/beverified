@@ -334,9 +334,9 @@ certifications:
   source: 3
 - name: Age Check Certification Scheme (ACCS)
   program: accs
-  what: Age assurance (UK), register entry without listed scope or dates
-  status: confirmed
-  source: 15
+  what: Age verification, announced Jun 2024; the ACCS registry pages for Incode list no current certificate
+  status: vendor_stated
+  source: 34
 - name: 'KJM approval (Germany)'
   program: other
   what: ID and selfie age check for gambling, announced 2022
@@ -519,6 +519,10 @@ sources:
   publisher: Incode
   url: https://incode.com/use-cases/authentication/
   accessed: '2026-11'
+- title: 'Incode receives ACCS certification for its age verification solution (24 Jun 2024)'
+  publisher: Incode
+  url: https://incode.com/press/incode-receives-accs-certification-for-its-age-verification-solution/
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null
@@ -535,6 +539,7 @@ verification_notes:
 - Gartner Magic Quadrant Leader placements (2024, 2025, 2026) rest on Incode's release and landing page (source 1; Gartner document dated 28 Jul 2026); the Gartner report itself is gated and was not opened.
 - Gartner Peer Insights counts differ by view (product page 55 ratings; vendor page 53 Identity Verification reviews, 57 all markets). Product page figure used.
 - Nov 2025 Bloomberg report (reprinted by Incode) of talks to raise $150M to $300M at up to $3B valuation; no closed round found, so the page keeps only the 2021 $1.25B figure (sources 8, 11).
+- 'Certification re-check 2026-11-20: the ACCS registry pages for Incode Technologies Inc (uncategorized and data-privacy) say no certification is listed. The ACCS entry moved from confirmed to vendor_stated, citing Incode''s June 2024 announcement.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

@@ -1,6 +1,6 @@
 # Certification re-check, KYC Certification Tracker providers (November 2026)
 
-Scope: the 29 KYC providers listed in the KYC Certification Tracker (`docs/cert-tracker.md`), 142 `certifications[]` entries. Checked 2026-11-20 against the issuers' own pages. Part 1 covers the independent registers; part 2 (ACCS, DHS RIVR, ISO/IEC 27001, SOC 2 and other entries) is still open. Scores and `last_verified` are not changed: this is not a full record re-check.
+Scope: the 29 KYC providers listed in the KYC Certification Tracker (`docs/cert-tracker.md`), 142 `certifications[]` entries. Checked 2026-11-20 against the issuers' own pages. Part 1 covers iBeta, the UK DVS register and FIDO; part 2 covers ACCS, DHS RIVR, ISO/IEC 27001 and SOC 2. Scores and `last_verified` are not changed: this is not a full record re-check.
 
 ## Part 1: iBeta, UK DVS register, FIDO (done)
 
@@ -51,11 +51,61 @@ Source: https://fidoalliance.org/certification/identity-verification/face-verifi
 - Veriff DocAuth, Ingenium, expires 1 Oct 2029: matches; lab and expiry added.
 - No FIDO IDV entry for any other tracker provider (iProov is listed but not reviewed).
 
-## Part 2: still open (needs page access)
+## Part 2: ACCS, DHS RIVR, ISO/IEC 27001, SOC 2 (done where readable)
 
-- ACCS registry: Incode, Paravision, VerifyMy (Sumsub re-read 2026-11-20: ISO/IEC 29115 and TS 29003, Active, valid to 8 Sep 2028, matches), ComplyCube (vendor-stated).
-- DHS RIVR (mdtf.org/rivr/Results): Paravision says its systems are PAD-P 9 and MTDS 12. Under the tracker rule (an alias counts when the vendor disclosed it, as for Shufti Pro's MTDS 15) these may move to confirmed once the values are checked against the results page.
-- ISO/IEC 27001 (25), SOC 2 (19) and other entries (50): confirmed ones against the issuing body's certificate, vendor-stated ones against the vendor page cited.
+### ACCS registry
+
+| Provider | Registry page | Result |
+|---|---|---|
+| Sumsub | ISO/IEC 29115:2013 and ISO/IEC TS 29003:2018, LoA2/LoA3, LoIP2/LoIP3, Active, valid to 8 Sep 2028 | matches |
+| Paravision | Age Estimation, ACCS 1:2020, Level 3 "Highly Effective Compliance", valid to 18 Mar 2027 | matches |
+| VerifyMy | ACCS 1:2025 and ISO/IEC 27566-1:2025, Active, AVID Certification Services, valid to 20 May 2029; IEEE 2089.1-2024 for the VerifyMy Age Estimation API, valid to 21 Sep 2027 | matches |
+| Incode | both registry pages for Incode Technologies Inc (uncategorized, data-privacy) say no certification is listed | **was confirmed; moved to vendor_stated**, citing Incode's June 2024 announcement |
+| ComplyCube (vendor-stated) | security page says ACCS 4:2020 certified; no registry entry checked | stays vendor-stated |
+
+Effect on pages: Incode's age-certification cell on `/providers/age-verification/` and its row on the ISO/IEC 27566-1 glossary term change from Confirmed to Vendor-stated. No score input changes.
+
+### DHS RIVR
+
+mdtf.org/rivr/Results now returns an empty page to our tools (script-rendered). Paravision's disclosed aliases (PAD-P 9, MTDS 12) could not be checked against the values, so both entries stay vendor-stated. Shufti Pro's MTDS 15 (checked 17 Nov 2026) is unchanged. Owner: a browser check of the Results page would settle both.
+
+### ISO/IEC 27001 and SOC 2
+
+Confirmed certificates opened again: Didit (Bureau Veritas, ES144068, 7 Apr 2026 to 3 Jun 2027), iDenfy (CERT International, ISMS-1851/A, to 2 Jun 2029), Signicat (DNV, C849517, to 11 Oct 2029). All match.
+
+Other confirmed entries opened again: Signicat ENS ALTA (AENOR, to 5 Mar 2028), Veridas ETSI EN 319 401 and TS 119 461 (DEKRA, issued 7 Aug 2026, two years), FedRAMP Moderate for Acuant COFRS (GBG, since 24 Nov 2021), Persona for Government (since 10 Apr 2026) and Socure for Government (since 19 Mar 2025). All match.
+
+Vendor-stated entries, vendor page re-read:
+
+| Provider | What the page says now | Change |
+|---|---|---|
+| Shufti Pro | ISO/IEC 27001:2022 by Insight Assurance; SOC 2 Type II | none |
+| Veriff | ISO/IEC 27001:2022 (+27017, 27018); SOC 2 Type II | none |
+| Trulioo | ISO 27001 since 2015; SOC 2 Type 2 since Feb 2024 | none |
+| Persona | SOC 2 Type II, ISO 27001; copies on request | none |
+| Socure | ISO/IEC 27001:2022; SOC 2 Type 2 | none |
+| Jumio | ISO/IEC 27001:2022, PCI DSS, SOC 2 Type 2 | none |
+| ComplyCube | ISO/IEC 27001:2022, ACCS, PAD Level 2 (lab not named); no SOC 2 | none |
+| Regula | ISO/IEC 27001:2022 (Insight Assurance); **SOC 2 Type II audit completed** | **SOC 2 added as vendor-stated** |
+| Didit | SOC 2 Type 1 (Apr 2026) and Type 2 (Jul 2026) by Atom Assurances | none |
+| iDenfy | SOC 2 Type II by House of CPA; **docs page names a different ISO certificate** (TUV Thuringen, No. 1512120135) | auditor added; ISO conflict noted, ask iDenfy |
+| Signicat | SOC 2 Type 1 (2018) and Type 2 (2019) | none |
+| GBG | ISO/IEC 27001:2022, SOC 2 Type 2 | none |
+| Fourthline | ISO/IEC 27001:2022, EY CertifyPoint 2021-039; homepage still says iBeta Level 1 and 2 | none |
+| Signzy | ISO 27001, SOC 2 Type II, PCI DSS | none |
+| Onfido (Entrust) | Practice statement v1.5 (Dec 2025): ISO/IEC 27001:2022, SOC 2 Type II | none |
+| Sumsub | trust centre lists ISO/IEC 27001:2022, SOC 2 Type 2, PCI DSS and more; no body named | none |
+| AiPrise | SOC 2 Type II, audited annually; no ISO | none |
+| Veridas | ISO/IEC 27001 and ENS; no SOC 2 | none |
+| Verified | ISO 27001; no SOC 2 | none |
+| Zyphe | both still in progress (SOC 2 Type I targeted Oct 2026, ISO Stage 2 Nov to Dec 2026) | none |
+| KYCAID | privacy policy: compliance with ISO/IEC 27001, SOC 2 Type 2 and PCI DSS "continuously verified", not certified | **ISO wording narrowed; SOC 2 added as vendor-stated** |
+| IDMERIT | homepage: data access policies "adhere to" ISO 27001 and SOC 2 requirements, badges only | **wording of both entries narrowed** |
+| Advance.AI | ISO/IEC 27001:2013 obtained Feb 2020 in Indonesia | none; owner note: the 2013 edition's transition period ended in Oct 2025, so this certificate is likely lapsed or re-issued under 2022. Ask Advance.AI |
+
+Not re-checkable by our tools (script-rendered trust centres): AU10TIX, IDnow, Incode. Owner can check them in a browser.
+
+Not covered in this pass: the 44 vendor-stated "other" entries (Cyber Essentials, PCI DSS, KJM, Kantara and similar). They are not columns in the tracker and show only in expanded rows.
 
 ## Changes in this PR
 
@@ -66,5 +116,10 @@ Source: https://fidoalliance.org/certification/identity-verification/face-verifi
 | didit | iBeta L2 cites the ibeta.com letter |
 | signicat | UK DVS entry cites the register; roles and dates from the register |
 | veriff | FIDO entries get lab and expiry |
+| incode | ACCS confirmed → vendor_stated (registry lists no certificate) |
+| regula | SOC 2 Type II added (vendor-stated) |
+| kycaid | ISO wording narrowed; SOC 2 Type 2 added (vendor-stated) |
+| idmerit | ISO and SOC 2 wording narrowed |
+| idenfy | SOC 2 auditor added; conflicting ISO certificate noted |
 
-Every changed record has a dated `verification_notes` line. `rescore.mjs`, `rescore-idv.mjs` and `rescore-budget.mjs` give identical output before and after (no score input changes).
+Every changed record has a dated `verification_notes` line. `rescore.mjs`, `rescore-idv.mjs`, `rescore-budget.mjs` and `rescore-kya.mjs` give identical output before and after (no score input changes).
