@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-20",
+  "sources": {
+    "ibeta_pad": {
+      "ok": false,
+      "error": "fetch failed"
+    },
+    "uk_dvs": {
+      "ok": false,
+      "error": "no \"Download register CSV\" link found on the register page"
+    },
+    "fido": {
+      "ok": true,
+      "rows": 8,
+      "baseline": true
+    },
+    "rivr": {
+      "ok": false,
+      "error": "page returned almost no text (script-rendered); check it in a browser"
+    },
+    "accs": {
+      "ok": true,
+      "pages": 3
+    }
+  },
+  "newRows": [],
+  "removedRows": [],
+  "changedRows": [],
+  "toCheck": [],
+  "candidates": [],
+  "expiring": [],
+  "errors": [
+    {
+      "source": "ibeta_pad",
+      "error": "fetch failed"
+    },
+    {
+      "source": "uk_dvs",
+      "error": "no \"Download register CSV\" link found on the register page"
+    },
+    {
+      "source": "rivr",
+      "error": "page returned almost no text (script-rendered); check it in a browser"
+    }
+  ]
+}
