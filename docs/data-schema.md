@@ -174,7 +174,10 @@ Inputs for `scripts/rescore-budget.mjs` (rules: `docs/scoring-budget-kyc.md`). N
 
 - `checked`: date the vendor's pricing page was last opened for these figures (eligibility: 90 days).
 - `currency`: `USD`, `EUR` or `GBP`; non-USD needs `fx{ rate, date, source }` (ECB reference rate on the check date, USD per unit).
-- `options[]`: plans that include a full KYC check (document + liveness + face match): `plan`, `check[]` (item labels, summed), optional `aml[]` (screening add-on labels), `aml_included: true` when the plan's price already covers sanctions and PEP screening, optional `minimum{ item, covers_checks }` (`covers_checks: true` only when the vendor says so; otherwise the provider is not ranked), optional `fee_on_top` (item label), optional `per_user_monthly[]` (per-user monthly fees such as storage, counted once per check).
+- `options[]`: plans that include a full KYC check (document + liveness + face match): `plan`, `check[]` (item labels, summed), optional `aml[]` (screening add-on labels), `aml_included: true` when the plan's price already covers sanctions and PEP screening, optional `minimum{ item, covers_checks }` (`covers_checks: true` only when the vendor says so; otherwise the provider is not ranked. `covers_checks: estimator` = the vendor's own cost estimator shows no separate minimum line: the cost calculators treat the minimum as a floor and say so, but the provider is still not ranked. Missing or false: calculators add the minimum on top of the checks), optional `fee_on_top` (item label), optional `per_user_monthly[]` (per-user monthly fees such as storage, counted once per check).
+- `monitoring{ item, basis }`: `basis` = `flat_month`, `subject_month`, `subject_year` or `per_check` (an add-on charged per verification); or `{ plan, included: true }`.
+- `face_match: not_named` when the plan page does not name face match.
+- `quote_above`: monthly volume above which the vendor quotes instead of using the list price.
 - `aml_status`: `not_priced` (sold, no public price) or `not_sold`.
 - `terms{ contract: none|monthly|annual|fixed_term|not_stated, self_serve: yes|no|not_stated, free_start: yes|no|programme|not_stated }`.
 - `transparency{ parts_priced, aml_priced, tiers_published, addons_listed }` (booleans).
