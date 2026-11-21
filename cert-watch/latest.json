@@ -1,20 +1,20 @@
 {
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "sources": {
     "ibeta_pad": {
       "ok": true,
       "rows": 290,
-      "baseline": true
+      "baseline": false
     },
     "uk_dvs": {
       "ok": true,
       "rows": 67,
-      "baseline": true
+      "baseline": false
     },
     "fido": {
       "ok": true,
       "rows": 8,
-      "baseline": true
+      "baseline": false
     },
     "rivr": {
       "ok": false,
