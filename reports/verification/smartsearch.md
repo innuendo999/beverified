@@ -75,3 +75,7 @@ Added (key: status, source):
 Not disclosed: alert_explanation, batch_screening (a "120 clients onboarded in bulk" caption only), data_residency, docs_public (integrations page links no public API reference), sdk_web, sdk_ios, sdk_android, sandbox.
 
 Rescore: 4.4 -> 4.3 (scored weight 80%; pricing n/d). Score flag: none.
+
+## UK DVS register re-check 2026-11-23
+
+Register row(s) present with the same certificate and expiry dates as the record, per the GOV.UK register CSV downloaded by the certification watcher on 22 Nov 2026. No change to `certifications[]`; `last_verified` unchanged (single-fact check). Details and limits: `reports/verification/uk-register-2026-11-23.md`.

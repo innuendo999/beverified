@@ -88,3 +88,7 @@ Injection attack detection (new matrix column, liveness-detection and identity-v
 
 - `capabilities.injection_detection` partial → yes, vendor-stated (new source: ComplyCube liveness detection page, read 2026-11): it distinguishes real people from "tampered images or injected videos". `partial` is not a valid status for this key; the old source was a 2021 press release. No virtual camera or emulator detail, no injection lab letter.
 - Score: unchanged (rescore adds 0.5 only with `independent: true`). `last_verified` not moved: this was a one-field check.
+
+## UK DVS register re-check 2026-11-23
+
+Register row(s) present with the same certificate and expiry dates as the record, per the GOV.UK register CSV downloaded by the certification watcher on 22 Nov 2026. No change to `certifications[]`; `last_verified` unchanged (single-fact check). Details and limits: `reports/verification/uk-register-2026-11-23.md`.

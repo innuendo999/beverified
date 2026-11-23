@@ -112,3 +112,7 @@ Injection attack detection (new matrix column, liveness-detection and identity-v
 
 - `capabilities.injection_detection` yes, vendor-stated (source 27, selfie page re-read 2026-11): "protection against sophisticated injection attacks", flags emulators and rooted devices, and claims "alignment with EU standards for injection attack detection" (CEN/TS 18099). Alignment is not a test result; no lab letter found.
 - Score: unchanged (rescore adds 0.5 only with `independent: true`). `last_verified` not moved: this was a one-field check.
+
+## UK DVS register re-check 2026-11-23
+
+Register row(s) present with the same certificate and expiry dates as the record, per the GOV.UK register CSV downloaded by the certification watcher on 22 Nov 2026. No change to `certifications[]`; `last_verified` unchanged (single-fact check). Details and limits: `reports/verification/uk-register-2026-11-23.md`.
