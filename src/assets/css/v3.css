@@ -2097,3 +2097,5 @@ html:not(.mm-js) .mm-item:hover .mm-panel, html:not(.mm-js) .mm-item:focus-withi
 @media (prefers-reduced-motion: reduce) { .fd-launch { transition: none; } }
 .fd-panel { z-index: 52; }
 @media (max-width: 640px) { .fd.is-open .fd-backdrop { z-index: 51; } }
+/* Finder off on phones (owner, 2026-11-23) */
+@media (max-width: 640px) { .fd { display: none !important; } }

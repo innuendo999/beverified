@@ -32,7 +32,8 @@
 <script>
 (function () {
   var root = document.getElementById("finder");
-  if (!root || !window.fetch) return;
+  // Not on phones (owner, 2026-11-23): the widget stays off below 641 px.
+  if (!root || !window.fetch || window.matchMedia("(max-width: 640px)").matches) return;
   var launch = root.querySelector(".fd-launch"), panel = root.querySelector(".fd-panel"), body = root.querySelector(".fd-body");
   var sub = root.querySelector(".fd-sub"), back = root.querySelector(".fd-back"), closeBtn = root.querySelector(".fd-close"), shade = root.querySelector(".fd-backdrop");
   var KEY = "bv-finder", D = null, st = { step: "need", need: null, country: null, price: null, vol: 1000 };
