@@ -1,7 +1,7 @@
 # KYC Certification Tracker page settings. Rows are built from provider records (src/_lib/cert-tracker.js).
 # `checked` = date the registers were last read in full (manual re-check until the watcher runs; then the watcher sets it).
 # `sources[].checked` overrides the date for one register. `changes` = dated, sourced events already in the records.
-checked: '2026-11-20'
+checked: '2026-11-22'
 sources:
   - name: iBeta
     url: https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/
