@@ -204,8 +204,11 @@ capabilities:
     source: 3
   adverse_media:
     status: 'yes'
+    evidence: named
+    evidence_source: 9
     note: live web search
     source: 3
+    checked: '2026-11-23'
   transaction_monitoring:
     status: not_disclosed
     note: not found on product pages
@@ -232,8 +235,9 @@ capabilities:
     note: continuous batch screening of customer names
     source: 9
   list_updates:
-    status: not_disclosed
+    status: 'not_disclosed'
     note: data vendors named, no list update frequency
+    checked: '2026-11-23'
   pep_tiers:
     status: not_disclosed
     note: PEP data, no tiers or RCA described
@@ -260,6 +264,47 @@ capabilities:
     status: partial
     note: EU data residency, on-prem option
     source: 11
+  list_coverage:
+    status: 'partial'
+    lists: [ofac, eu, un]
+    note: names OFAC, UN and EU; UK list not named
+    source: 9
+    checked: '2026-11-23'
+  data_provenance:
+    status: 'yes'
+    note: choice of Dow Jones, World-Check or LexisNexis data
+    source: 9
+    checked: '2026-11-23'
+  transliteration:
+    status: 'not_disclosed'
+    note: name variants across languages; transliteration not described
+    checked: '2026-11-23'
+  secondary_identifiers:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-23'
+  whitelisting:
+    status: 'yes'
+    note: excludes hits already viewed
+    source: 9
+    checked: '2026-11-23'
+  calibration_docs:
+    status: 'not_disclosed'
+    note: no public documentation of matching settings
+    checked: '2026-11-23'
+  alert_reporting:
+    status: 'yes'
+    note: matches dashboard and real-time reporting of match handling
+    source: 9
+    checked: '2026-11-23'
+  model_validation:
+    status: 'not_disclosed'
+    note: input data quality tool only
+    checked: '2026-11-23'
+  transfer_screening:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-23'
 integration:
   checked: '2026-11'
   docs_public:
@@ -284,6 +329,10 @@ integration:
   support_hours:
     status: not_disclosed
     note: no support hours published
+  webhooks:
+    status: 'not_disclosed'
+    note: API described; no webhooks
+    checked: '2026-11-23'
 track_record:
   ownership:
     status: changed_disclosed

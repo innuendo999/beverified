@@ -1,0 +1,55 @@
+{
+  "unit21": {
+    "capabilities": {
+      "list_coverage": {"status": "partial", "lists": ["ofac"], "note": "OFAC named on the homepage; screening page says only global sanctions lists", "source": 1, "checked": "2026-11-23"},
+      "list_updates": {"merge": true, "checked": "2026-11-23"},
+      "data_provenance": {"status": "not_disclosed", "note": "data source not stated", "checked": "2026-11-23"},
+      "transliteration": {"status": "not_disclosed", "note": "not described", "checked": "2026-11-23"},
+      "secondary_identifiers": {"status": "not_disclosed", "note": "filters by entity type, risk level and jurisdiction; DOB or nationality not named", "checked": "2026-11-23"},
+      "whitelisting": {"status": "not_disclosed", "note": "threshold changes only; suppression of cleared matches not described", "checked": "2026-11-23"},
+      "calibration_docs": {"status": "not_disclosed", "note": "documentation behind a login", "checked": "2026-11-23"},
+      "alert_reporting": {"status": "not_disclosed", "note": "no alert reports described", "checked": "2026-11-23"},
+      "model_validation": {"status": "not_disclosed", "note": "not described", "checked": "2026-11-23"},
+      "transfer_screening": {"status": "yes", "note": "screens customers, counterparties and transactions", "source": 9, "checked": "2026-11-23"},
+      "ongoing_monitoring": {"merge": true, "trigger": "list_change", "trigger_source": 9, "checked": "2026-11-23"}
+    },
+    "integration": {
+      "webhooks": {"status": "not_disclosed", "note": "documentation behind a login", "checked": "2026-11-23"}
+    }
+  },
+  "napier": {
+    "capabilities": {
+      "list_coverage": {"status": "not_disclosed", "lists": [], "note": "public sanctions lists; none named", "checked": "2026-11-23"},
+      "list_updates": {"merge": true, "note": "list changes managed with quality checks; no update time stated", "checked": "2026-11-23"},
+      "data_provenance": {"status": "not_disclosed", "note": "partners with data providers; none named", "checked": "2026-11-23"},
+      "transliteration": {"status": "yes", "note": "transliteration; 20+ languages incl. simplified Chinese and Arabic", "source": 6, "checked": "2026-11-23"},
+      "secondary_identifiers": {"status": "yes", "note": "date of birth, ID, nationality and address used to discount matches", "source": 6, "checked": "2026-11-23"},
+      "whitelisting": {"status": "yes", "note": "whitelist; repeat hits already cleared and unchanged are suppressed", "source": 6, "checked": "2026-11-23"},
+      "calibration_docs": {"status": "not_disclosed", "note": "tunable thresholds described; no public documentation of the settings", "checked": "2026-11-23"},
+      "alert_reporting": {"status": "yes", "note": "dashboards with hit history, top-hit customers and backlogs", "source": 6, "checked": "2026-11-23"},
+      "model_validation": {"status": "yes", "note": "settings tested in a no-code sandbox on real data before go-live", "source": 6, "checked": "2026-11-23"},
+      "transfer_screening": {"status": "yes", "note": "transaction screening of payments before settlement", "source": 6, "checked": "2026-11-23"}
+    },
+    "integration": {
+      "webhooks": {"status": "not_disclosed", "note": "not described", "checked": "2026-11-23"}
+    }
+  },
+  "kyc360": {
+    "capabilities": {
+      "list_coverage": {"status": "partial", "lists": ["ofac", "eu", "un"], "note": "names OFAC, UN and EU; UK list not named", "source": 9, "checked": "2026-11-23"},
+      "list_updates": {"merge": true, "checked": "2026-11-23"},
+      "adverse_media": {"merge": true, "evidence": "named", "evidence_source": 9, "checked": "2026-11-23"},
+      "data_provenance": {"status": "yes", "note": "choice of Dow Jones, World-Check or LexisNexis data", "source": 9, "checked": "2026-11-23"},
+      "transliteration": {"status": "not_disclosed", "note": "name variants across languages; transliteration not described", "checked": "2026-11-23"},
+      "secondary_identifiers": {"status": "not_disclosed", "note": "not described", "checked": "2026-11-23"},
+      "whitelisting": {"status": "yes", "note": "excludes hits already viewed", "source": 9, "checked": "2026-11-23"},
+      "calibration_docs": {"status": "not_disclosed", "note": "no public documentation of matching settings", "checked": "2026-11-23"},
+      "alert_reporting": {"status": "yes", "note": "matches dashboard and real-time reporting of match handling", "source": 9, "checked": "2026-11-23"},
+      "model_validation": {"status": "not_disclosed", "note": "input data quality tool only", "checked": "2026-11-23"},
+      "transfer_screening": {"status": "not_disclosed", "note": "not described", "checked": "2026-11-23"}
+    },
+    "integration": {
+      "webhooks": {"status": "not_disclosed", "note": "API described; no webhooks", "checked": "2026-11-23"}
+    }
+  }
+}

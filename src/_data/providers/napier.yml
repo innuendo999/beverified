@@ -167,8 +167,9 @@ capabilities:
     note: daily screening cited; list change trigger not stated
     source: 6
   list_updates:
-    status: not_disclosed
-    note: lists and data providers not named
+    status: 'not_disclosed'
+    note: list changes managed with quality checks; no update time stated
+    checked: '2026-11-23'
   pep_tiers:
     status: not_disclosed
   fuzzy_matching:
@@ -195,6 +196,49 @@ capabilities:
     status: not_disclosed
     note: SaaS, private cloud or on-premise; no region choice stated
   checked: '2026-10'
+  list_coverage:
+    status: 'not_disclosed'
+    lists: []
+    note: public sanctions lists; none named
+    checked: '2026-11-23'
+  data_provenance:
+    status: 'not_disclosed'
+    note: partners with data providers; none named
+    checked: '2026-11-23'
+  transliteration:
+    status: 'yes'
+    note: transliteration; 20+ languages incl. simplified Chinese and Arabic
+    source: 6
+    checked: '2026-11-23'
+  secondary_identifiers:
+    status: 'yes'
+    note: date of birth, ID, nationality and address used to discount matches
+    source: 6
+    checked: '2026-11-23'
+  whitelisting:
+    status: 'yes'
+    note: whitelist; repeat hits already cleared and unchanged are suppressed
+    source: 6
+    checked: '2026-11-23'
+  calibration_docs:
+    status: 'not_disclosed'
+    note: tunable thresholds described; no public documentation of the settings
+    checked: '2026-11-23'
+  alert_reporting:
+    status: 'yes'
+    note: dashboards with hit history, top-hit customers and backlogs
+    source: 6
+    checked: '2026-11-23'
+  model_validation:
+    status: 'yes'
+    note: settings tested in a no-code sandbox on real data before go-live
+    source: 6
+    checked: '2026-11-23'
+  transfer_screening:
+    status: 'yes'
+    note: transaction screening of payments before settlement
+    source: 6
+    checked: '2026-11-23'
 integration:
   checked: '2026-11'
   docs_public:
@@ -217,6 +261,10 @@ integration:
     status: 'yes'
     note: 24-hour support portal and success manager
     source: 1
+  webhooks:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-23'
 track_record:
   ownership:
     status: changed_disclosed
