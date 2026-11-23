@@ -4,7 +4,7 @@ seoTitle: "About BeVerified: Independent KYC, KYB & AML Software Reviews"
 seoDescription: "BeVerified is an independent database of KYC, KYB and AML providers, started in 2021 to make choosing a verification vendor less of a guessing game."
 h1: "About BeVerified"
 lede: "We started BeVerified in 2021 because picking a KYC or AML provider had become hard work. Too many vendors, too many similar claims, and very few places to compare them side by side."
-updated: "2026-11-20"
+updated: "2026-11-23"
 ---
 <section id="summary" aria-label="Summary">
 <p>{{ entity.long }}</p>
@@ -91,6 +91,54 @@ updated: "2026-11-20"
   <div class="brand-colour"><span class="brand-colour__chip" style="background:#0B7A5C"></span><strong>Green</strong><code>#0B7A5C</code><span>Only for a confirmed check</span></div>
 </div>
 <p>All text, including the wordmark, is set in <a href="https://vercel.com/font" rel="noopener" target="_blank">Geist</a> (weight 600 in the logo), which is free under the SIL Open Font License.</p>
+</section>
+
+<section id="awards">
+<h2>Awards and badges</h2>
+<p>Every award comes from one of our rankings: Editor's Choice goes to the provider ranked first, and a "Best for" award names what a provider in the top 3 does best for a buyer, backed by a fact in its review. Awards are never sold. Payment, sponsored placements and paid links never change who gets one.</p>
+<p>An award lasts as long as the ranking keeps it, and at most until 31 December {{ awards.year }}. The badge image is served from beverified.org, so when an award ends it turns into a plain "Reviewed on BeVerified" badge by itself. Copy the code as HTML, keep the link to the ranking and do not edit the image; site builders that re-upload images stop the badge from updating.</p>
+{%- if awards.badges.length %}
+<div class="aw" id="aw" hidden>
+  <div class="aw__controls">
+    <label for="aw-pick">Find your award</label>
+    <select id="aw-pick">
+      {%- for g in awards.groups %}<optgroup label="{{ g.title }}">{% for b in g.items %}<option value="{{ b.base }}" data-aw-href="{{ b.href }}" data-aw-alt="{{ b.award }}, {{ b.ranking }}, BeVerified">#{{ b.rank }} {{ b.name }}: {{ b.award }}</option>{% endfor %}</optgroup>{% endfor %}
+    </select>
+    <fieldset class="aw__opts"><legend>Size</legend>
+      {%- for o in [["card", "Card 300 x 130"], ["square", "Square 200 x 200"], ["small", "Small 120 x 120"], ["banner", "Banner 468 x 60"], ["compact", "Compact"]] %}<label><input type="radio" name="aw-size" value="{{ o[0] }}"{% if loop.first %} checked{% endif %}> {{ o[1] }}</label>{% endfor %}
+    </fieldset>
+    <fieldset class="aw__opts"><legend>Background</legend>
+      <label><input type="radio" name="aw-theme" value="light" checked> Light</label><label><input type="radio" name="aw-theme" value="dark"> Dark</label>
+    </fieldset>
+  </div>
+  <div class="aw__out">
+    <div class="aw__preview"><img id="aw-img" src="" alt=""></div>
+    <label for="aw-code">Embed code</label>
+    <textarea id="aw-code" readonly rows="4"></textarea>
+    <button type="button" class="btn btn--primary" id="aw-copy">Copy code</button>
+  </div>
+</div>
+<noscript><p>The badge picker needs JavaScript. Write to <a href="mailto:support@beverified.org">support@beverified.org</a> and we will send the code.</p></noscript>
+<script>
+(function () {
+  var box = document.getElementById("aw"); if (!box) return; box.hidden = false;
+  var pick = document.getElementById("aw-pick"), img = document.getElementById("aw-img"), code = document.getElementById("aw-code"), copy = document.getElementById("aw-copy");
+  var W = { card: 300, square: 200, small: 120, banner: 468, compact: 0 };
+  var esc = function (s) { return s.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;"); };
+  function val(n) { var r = box.querySelector('input[name="' + n + '"]:checked'); return r ? r.value : ""; }
+  function render() {
+    var o = pick.options[pick.selectedIndex], size = val("aw-size"), theme = val("aw-theme");
+    var src = "{{ site.url }}" + o.value + "-" + size + "-" + theme + ".svg", alt = o.getAttribute("data-aw-alt");
+    img.src = o.value + "-" + size + "-" + theme + ".svg"; img.alt = alt;
+    code.value = '<a href="{{ site.url }}' + o.getAttribute("data-aw-href") + '"><img src="' + src + '" alt="' + esc(alt) + '"' + (W[size] ? ' width="' + W[size] + '"' : "") + "></a>";
+  }
+  box.addEventListener("change", render);
+  copy.addEventListener("click", function () { code.select(); try { navigator.clipboard.writeText(code.value); copy.textContent = "Copied"; setTimeout(function () { copy.textContent = "Copy code"; }, 1500); } catch (e) { document.execCommand("copy"); } });
+  if (location.hash.length > 1) { var h = location.hash.slice(1); for (var i = 0; i < pick.options.length; i++) if (pick.options[i].value.split("/").pop() === h) { pick.selectedIndex = i; break; } }
+  render();
+})();
+</script>
+{%- endif %}
 </section>
 
 <section id="contact">
