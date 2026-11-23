@@ -1,0 +1,11 @@
+---
+pagination:
+  data: awards.files
+  size: 1
+  alias: badge
+permalink: "{{ badge.path }}"
+eleventyExcludeFromCollections: true
+eleventyComputed:
+  layout: false
+---
+{{ badge.svg | safe }}

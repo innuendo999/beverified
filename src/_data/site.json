@@ -10,7 +10,7 @@
   "v3": {
     "disclosure": "We may earn a commission from some links. Payment never changes scores or ranking order.",
     "disclosureHref": "/methodology/#disclosure",
-    "adPolicy": ["Providers can buy a sponsored placement on review pages. A placement covers every review in one ranking, or only the reviews of providers the sponsor names. It shows the sponsor's name, its BeVerified score and rank, a link to its website and a link to its review. On a ranking page, a sponsor can also take one slot under the top 3, if it is ranked on that page outside the top 3; the slot shows its real rank and score. In the provider finder at the bottom right of our pages, one sponsor per ranking can take a row under the reader's matches, labelled \"Sponsored\", only when it fits the reader's answers and is not already listed; it shows its real rank and score.", "Every placement carries the label \"Sponsored\". It appears on the first screen of a review and again after the editorial alternatives. It never appears on the sponsor's own review, a review shows one sponsor at a time, and links in a placement are marked rel=\"sponsored\".", "Payment never changes a score, a ranking position, an award or what a review says. A sponsor must already have a published review. We don't sell the removal of sponsored placements or of editorial alternatives from any review."],
+    "adPolicy": ["Providers can buy a sponsored placement on review pages. A placement covers every review in one ranking, or only the reviews of providers the sponsor names. It shows the sponsor's name, its BeVerified score and rank, a link to its website and a link to its review. On a ranking page, a sponsor can also take one slot under the top 3, if it is ranked on that page outside the top 3; the slot shows its real rank and score. In the provider finder at the bottom right of our pages, one sponsor per ranking can take a row under the reader's matches, labelled \"Sponsored\", only when it fits the reader's answers and is not already listed; it shows its real rank and score.", "Every placement carries the label \"Sponsored\". It appears on the first screen of a review and again after the editorial alternatives. It never appears on the sponsor's own review, a review shows one sponsor at a time, and links in a placement are marked rel=\"sponsored\".", "Payment never changes a score, a ranking position, an award or what a review says. A sponsor must already have a published review. We don't sell the removal of sponsored placements or of editorial alternatives from any review. Awards and award badges are never sold."],
     "methodologyVersion": "v3.1",
     "methodologyHref": "/methodology/",
     "rubric": [
@@ -540,6 +540,12 @@
       "onfido"
     ],
     "promoHideNote": "Providers left out of promotional spots (mega menu top 3, homepage region map). Owner, 2026-11-10: Onfido brand search is expected to fall after the Entrust rebrand. Rankings and reviews are not affected.",
+    "awards": {
+      "note": "Award badges (owner, 2026-11-23): awards of the top 3 in each ranking (Editor's Choice at rank 1, ranks 2 and 3) can be shown by the provider with a badge served from /badges/. Rules and embed code on /about/#awards. Never sold. exclude = 'ranking/slug' pairs held back after the award check. Spec docs/award-badges.md.",
+      "year": 2026,
+      "until": "2026-12-31",
+      "exclude": []
+    },
     "finder": {
       "note": "Provider finder, bottom right on every v3 page except exclude (owner approved the canvas 'BeVerified: Provider finder widget, logic and design', 2026-11-23). Data src/_data/finder.js, include src/_includes/v3/finder.njk, styles .fd-* in v3.css.",
       "exclude": ["/methodology/", "/terms/", "/privacy/"],

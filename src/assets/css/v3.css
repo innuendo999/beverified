@@ -2099,3 +2099,17 @@ html:not(.mm-js) .mm-item:hover .mm-panel, html:not(.mm-js) .mm-item:focus-withi
 @media (max-width: 640px) { .fd.is-open .fd-backdrop { z-index: 51; } }
 /* Finder off on phones (owner, 2026-11-23) */
 @media (max-width: 640px) { .fd { display: none !important; } }
+
+/* Award badges picker on /about/#awards (owner, 2026-11-23). Badge SVGs: src/_lib/badge-svg.js */
+.aw[hidden] { display: none; }
+.aw { display: flex; flex-wrap: wrap; gap: 24px; margin: 20px 0 8px; padding: 24px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-card); }
+.aw__controls { flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 14px; }
+.aw__controls > label, .aw__out > label { font-size: 14px; font-weight: 600; }
+.aw__controls select { font: inherit; font-size: 15px; min-height: 44px; padding: 0 10px; border: 1px solid var(--line-strong); border-radius: var(--radius-btn); background: var(--surface-soft); color: var(--ink); max-width: 100%; }
+.aw__opts { border: 0; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px; }
+.aw__opts legend { font-weight: 600; margin-bottom: 6px; padding: 0; }
+.aw__opts label { display: inline-flex; align-items: center; gap: 6px; min-height: 32px; cursor: pointer; }
+.aw__out { flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
+.aw__preview { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 220px; padding: 16px; box-sizing: border-box; border-radius: var(--radius-tile); background: var(--bg); }
+.aw__preview img { max-width: 100%; height: auto; }
+.aw__out textarea { width: 100%; box-sizing: border-box; font: 12px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; padding: 10px 12px; border: 1px solid var(--line-strong); border-radius: var(--radius-btn); background: var(--surface-soft); color: var(--ink); resize: vertical; }
