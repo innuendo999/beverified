@@ -138,7 +138,7 @@ aml:
     - AML screening starts on the Compliance plan ($1.85 per verification, $299 monthly minimum)
     - KYB, transaction monitoring and fraud prevention are only in the custom, quoted plan
     - Some reviewers report occasional false-positive flags
-    legacy_price_shown: From $1.35/verification
+    legacy_price_shown: From $1.85/check (Compliance plan)
     legacy_rating_shown: 4.8
     segments: []
   - slug: castellum-ai
@@ -155,7 +155,7 @@ aml:
     - Smaller team and scale than category giants
     - Screening/data-focused rather than a full identity-verification platform
     - No published pricing
-    legacy_price_shown: Not published
+    legacy_price_shown: Quote only
     legacy_rating_shown: null
     segments: []
   - slug: hawkai
@@ -172,7 +172,7 @@ aml:
     - Enterprise/mid-market focus, not built for very small teams
     - No published pricing
     - Transaction-monitoring/AML focus, not document-first identity verification
-    legacy_price_shown: Custom pricing
+    legacy_price_shown: Quote only
     legacy_rating_shown: null
     segments: []
   - slug: smartsearch
@@ -189,7 +189,7 @@ aml:
     - UK-centric; international checks exist but the product and client base centre on the UK
     - No published pricing
     - Built around data-based AML checks; document and facial checks come through SmartDoc rather than a document-first IDV flow
-    legacy_price_shown: Not published
+    legacy_price_shown: Quote only
     legacy_rating_shown: null
     segments: []
   - slug: napier
@@ -206,7 +206,7 @@ aml:
     - Does not perform identity verification, so it needs a separate IDV vendor alongside it
     - No published pricing
     - Enterprise-only focus, less suited to early-stage fintechs
-    legacy_price_shown: Custom pricing
+    legacy_price_shown: Quote only
     legacy_rating_shown: null
     segments: []
   - slug: strise
@@ -223,7 +223,7 @@ aml:
     - Smaller company than most AML competitors, with a $10.8M Series A in 2023
     - Customer base is mostly Nordic; reach outside the Nordics and UK is less proven
     - No published rate card; usage-based pricing is quoted on request
-    legacy_price_shown: Not published
+    legacy_price_shown: Quote only
     legacy_rating_shown: null
     segments: []
 
@@ -241,6 +241,7 @@ aml:
     - Public docs do not name its sanctions lists, update times or data provider
     - Ongoing monitoring is a flat €100 a month add-on
     - No audit trail or case management described
+    legacy_price_shown: €0.10/check
     segments: []
   - slug: kyc360
     name: KYC360
@@ -273,7 +274,7 @@ aml:
     - No published prices; a quote needs a demo and a pilot
     - SOC 2 is described only as "aligned", not as an audited report
     - Younger, smaller brand than established category leaders
-    legacy_price_shown: Custom pricing
+    legacy_price_shown: Quote only
     legacy_rating_shown: null
     segments: []
 australia:

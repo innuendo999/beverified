@@ -125,7 +125,12 @@ layout: v3.njk
     </section>
     {%- endif %}
 
-    {%- if matrix %}
+    {%- if capGrid %}
+    <section aria-labelledby="cap-h">
+      <h2 id="cap-h" class="h-section r2-h"><span class="i-tile">{% icon "compare" %}</span>Capabilities compared</h2>
+      {%- include "v3/cap-grid-aml.njk" %}
+    </section>
+    {%- elif matrix %}
     <section aria-labelledby="cap-h">
       <h2 id="cap-h" class="h-section">Capabilities compared</h2>
       {%- set matrixCaption = c.breadcrumb_label + ": capabilities of each ranked provider, with sources." %}

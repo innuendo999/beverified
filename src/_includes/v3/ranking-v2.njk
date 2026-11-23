@@ -4,11 +4,11 @@
     category file's `evidence`; rankSponsor from placements.yml (surface: ranking). -#}
 {%- set noun = c.list_noun or "providers" %}
 <section class="r2-top" aria-labelledby="top3-h">
-  <div class="section-head mb-12"><h2 id="top3-h" class="h-section m-0">Top 3 {{ noun }}</h2><a class="fs-15 fw-500" href="#list">See all {{ entries.length }} providers</a></div>
+  <div class="section-head mb-12"><h2 id="top3-h" class="h-section m-0 r2-h"><span class="i-tile">{% icon "award" %}</span>Top 3 {{ noun }}</h2><a class="fs-15 fw-500" href="#list">See all {{ entries.length }} providers</a></div>
   <div class="card r2-top__box">
     <table class="r2-table">
       <caption>Top 3 by {{ c.score_label or "score" }}.{% if c.top3_note %} {{ c.top3_note }}{% endif %}{% if top3Checked %} Prices checked {{ top3Checked }}.{% endif %}</caption>
-      <thead><tr><th scope="col">Provider</th><th scope="col">{{ c.score_label or "Score" }}</th>{% for col in entries[0].v2.cols %}<th scope="col">{{ col.label }}</th>{% endfor %}<th scope="col">Starting price</th><th scope="col">Best for</th><th scope="col"><span class="visually-hidden">Review</span></th></tr></thead>
+      <thead><tr><th scope="col">Provider</th><th scope="col">{{ c.score_label or "Score" }}</th>{% for col in entries[0].v2.cols %}<th scope="col">{% if col.icon %}<span class="r2-th">{% icon col.icon %}{{ col.label }}</span>{% else %}{{ col.label }}{% endif %}</th>{% endfor %}<th scope="col">{% if c.evidence == "aml" %}<span class="r2-th">{% icon "price-tag" %}Starting price</span>{% else %}Starting price{% endif %}</th><th scope="col">Best for</th><th scope="col"><span class="visually-hidden">Review</span></th></tr></thead>
       <tbody>
       {%- for e in entries %}{% if e.rank <= 3 %}
         <tr{% if e.rank == 1 %} class="is-first"{% endif %}>
@@ -18,12 +18,13 @@
           <td data-label="{{ col.label }}">{% if col.ok %}<span class="r2-ok"><span aria-hidden="true">✓</span> {{ col.ok }}</span>{% endif %}{% if col.ok and col.text %} <span class="c-muted" aria-hidden="true">·</span> {% endif %}{{ col.text }}</td>
           {%- endfor %}
           <td data-label="Starting price">{{ e.price or "Not listed" }}</td>
-          <td data-label="Best for">{% if e.rank == 1 and e.r.award %}<span class="r2-award">◆ {{ e.r.award }}</span>{% else %}{{ e.r.award }}{% endif %}</td>
+          <td data-label="Best for">{% if e.rank == 1 and e.r.award %}<a class="r2-award" href="/about/#awards">{% icon "award" %}{{ e.r.award }}</a>{% else %}{{ e.r.award }}{% endif %}</td>
           <td class="r2-table__cta">{% if e.q %}<a class="btn btn--secondary btn--sm" href="/providers/{{ e.q.slug }}/">Read review</a>{% endif %}</td>
         </tr>
       {%- endif %}{% endfor %}
       </tbody>
     </table>
+    <div class="r2-mrz" aria-hidden="true">{{ ("RNK<<" + c.slug + "<<TOP3<<" + site.v3.awards.year + "<<" + (entries | slice3names)) | mrzLine }}</div>
   </div>
   {%- if c.score_note %}<p class="r2-note">{{ c.score_note }} <a href="{{ site.v3.methodologyHref }}{{ c.methodology_anchor or "" }}">What the score measures</a></p>{% endif %}
 </section>
@@ -50,14 +51,14 @@
 {%- endif %}
 
 <section id="list" class="r2-list" aria-labelledby="list-h">
-  <h2 id="list-h" class="h-section">All {{ entries.length }} {{ noun }}</h2>
+  <h2 id="list-h" class="h-section r2-h"><span class="i-tile">{% iconFor "category", c.slug %}</span>All {{ entries.length }} {{ noun }}</h2>
   <ol class="r2-rows list-none p-0">
   {%- for e in entries %}
     <li id="rank-{{ e.rank }}" class="card r2-row{% if e.rank == 1 %} r2-row--top{% endif %}">
       <span class="r2-row__num">{{ e.rank | pad2 }}</span>
       <span class="r2-row__brand">{% if e.q and e.q.logo.wordmark %}<img class="wordmark r2-row__logo" src="{{ e.q.logo.wordmark }}" alt="">{% else %}<span class="r2-row__wm" aria-hidden="true">{{ e.r.name }}</span>{% endif %}</span>
       <div class="r2-row__main">
-        <div class="r2-row__title"><h3>{{ e.r.name }}</h3>{% if e.r.award %}<span class="pill{% if e.rank == 1 %} r2-award{% endif %} fs-12">{% if e.rank == 1 %}◆ {% endif %}{{ e.r.award }}</span>{% endif %}</div>
+        <div class="r2-row__title"><h3>{{ e.r.name }}</h3>{% if e.r.award %}{% if e.rank == 1 %}<a class="r2-award fs-12" href="/about/#awards">{% icon "award" %}{{ e.r.award }}</a>{% else %}<span class="pill fs-12">{{ e.r.award }}</span>{% endif %}{% endif %}</div>
         {%- if e.r.tagline %}<p>{{ e.r.tagline }}</p>{% endif %}
       </div>
       <div class="r2-row__score">
@@ -65,11 +66,11 @@
         {%- else %}<span class="pill">Review coming</span>{% endif %}
       </div>
       <ul class="r2-chips list-none" aria-label="Evidence">
-        {%- for ch in e.v2.chips %}<li class="{% if ch.ok %}is-ok{% endif %}">{% if ch.ok %}<span aria-hidden="true">✓ </span>{% endif %}{{ ch.label }}</li>{% endfor %}
-        {%- if e.v2.price %}<li class="is-price">{{ e.v2.price }}</li>{% endif %}
+        {%- for ch in e.v2.chips %}<li class="{% if ch.ok %}is-ok{% endif %}">{% if ch.icon %}{% icon ch.icon %}{% if ch.ok %}<span class="visually-hidden">Confirmed: </span>{% endif %}{% elif ch.ok %}<span aria-hidden="true">✓ </span>{% endif %}{{ ch.label }}</li>{% endfor %}
+        {%- if e.v2.price %}<li class="is-price">{% if c.evidence == "aml" %}{% icon "price-tag" %}{% endif %}{{ e.v2.price }}</li>{% endif %}
       </ul>
       {%- if e.r.pros.length or e.r.cons.length %}
-      <details class="r2-row__more">
+      <details class="r2-row__more"{% if e.rank == 1 %} open{% endif %}>
         <summary>Pros and cons</summary>
         <div class="r2-pc">
           <div><h4>Pros</h4><ul>{% for t in e.r.pros %}<li>{{ t }}</li>{% endfor %}</ul></div>
@@ -81,6 +82,7 @@
         {%- if e.q %}<a class="btn btn--secondary" href="/providers/{{ e.q.slug }}/">Read {{ e.r.name }} review <span aria-hidden="true">→</span></a>{% endif %}
         {%- if e.r.site_link and e.q and e.q.link.url %}<span class="r2-row__site"><a class="btn btn--primary" href="{{ e.q.link.url }}" rel="{{ e.q.link | outRel }}" target="_blank">Visit website <span aria-hidden="true">↗</span></a>{% if (e.q.link.type == "paid" or e.q.link.type == "affiliate") and e.q.link.label != false %}<span class="paid-note">Sponsored link</span>{% endif %}</span>{% endif %}
       </div>
+      {%- if e.rank == 1 and e.r.award %}<div class="r2-mrz r2-row__mrz" aria-hidden="true">{{ ("AWD<<" + c.slug + "<<" + site.v3.awards.year + "<<" + e.r.name + "<<" + e.r.award) | mrzLine }}</div>{% endif %}
     </li>
   {%- endfor %}
   </ol>

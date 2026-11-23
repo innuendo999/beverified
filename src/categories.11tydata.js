@@ -6,6 +6,7 @@ import { termForCapability } from "./_lib/glossary.js";
 import { calcProvider } from "./_lib/budget.js";
 import { v2Evidence } from "./_lib/ranking-evidence.js";
 import { rankingSponsor } from "./_lib/placements.js";
+import { amlGrid } from "./_lib/aml-grid.js";
 
 export default {
   pagination: { data: "categories", size: 1, alias: "c", resolve: "values", addAllPagesToCollections: true },
@@ -71,6 +72,8 @@ export default {
     budgetCalc: (d) => (d.c.budget_calc ? (d.rankings[d.c.slug]?.providers || [])
       .map((r, i) => (r.slug && d.providers[r.slug] ? calcProvider({ slug: r.slug, ...d.providers[r.slug] }, i + 1, r) : null))
       .filter(Boolean) : null),
+    // AML ranking: grouped capabilities grid instead of the capability matrix (category file capability_grid: aml).
+    capGrid: (d) => (d.c.capability_grid === "aml" ? amlGrid(d.entries, d.logoTiles) : null),
     // Capability matrix: columns from the category file, cells from each ranked provider's capabilities{}
     // and, for certificate columns, from its certifications[].
     matrix: (d) => buildMatrix(

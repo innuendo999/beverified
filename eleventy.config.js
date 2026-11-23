@@ -135,6 +135,9 @@ export default function (eleventyConfig) {
 
   // Passport-style machine-readable line for the provider finder launcher: upper case, other characters become "<", padded to 26.
   eleventyConfig.addFilter("mrz", (s) => String(s || "").toUpperCase().replace(/[^A-Z0-9<]+/g, "<").padEnd(26, "<").slice(0, 26));
+  // MRZ-style decorative line for ranking pages (owner request 2026-11-23): full text, padded with "<" to 88 characters.
+  eleventyConfig.addFilter("mrzLine", (s) => String(s || "").toUpperCase().replace(/[^A-Z0-9<]+/g, "<").replace(/<{3,}/g, "<<").padEnd(88, "<").slice(0, 88));
+  eleventyConfig.addFilter("slice3names", (entries) => (entries || []).slice(0, 3).map((e) => e.r?.name || "").join("<<"));
   eleventyConfig.addFilter("pad2", (n) => String(n).padStart(2, "0"));
   eleventyConfig.addFilter("usd2", (n) => (n == null ? "" : "$" + Number(n).toFixed(2)));
   // KYC Pricing Index calculator download: one line per provider plan (src/_data/costCalc.js).

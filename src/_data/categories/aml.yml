@@ -10,7 +10,12 @@ score_label: AML score
 rubric: rubricAmlRanking
 methodology_label: AML 1.0
 methodology_anchor: '#aml'
-quick_answer: ComplyAdvantage is our top AML pick because its public pages cover the most of what supervisors check, from all four core sanctions lists to payment screening and webhooks. Sumsub suits teams that want identity verification and AML screening from one vendor, and Castellum.AI leads on match controls. We compared 10 providers on screening data, match controls, monitoring and pricing.
+layout: v2
+evidence: aml
+list_noun: AML software providers
+# The capabilities table on this page is the grouped AML grid (src/_lib/aml-grid.js), not capability_columns.
+capability_grid: aml
+quick_answer: 'ComplyAdvantage is our top AML pick: it names the OFAC, EU, UK and UN sanctions lists and says list changes reach it within minutes. Sumsub suits teams that want identity verification and AML screening from one vendor, and Castellum.AI matches names across 100+ languages. We compared 10 providers on screening data, match controls, monitoring and pricing.'
 last_verified: '2026-10-18'
 updated: '2026-11-23'
 legacy_stats:
