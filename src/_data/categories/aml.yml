@@ -2,14 +2,19 @@ slug: aml
 url: /providers/aml/
 seo:
   title: Best AML Software Providers in 2026 | BeVerified
-  description: Sumsub, ComplyAdvantage and Hawk AI lead our 2026 ranking of AML software. Compare sanctions screening, transaction monitoring, case management and pricing, with a source for each claim.
+  description: ComplyAdvantage, Sumsub and Castellum.AI lead our 2026 ranking of AML software. Compare sanctions screening, transaction monitoring, case management and pricing, with a source for each claim.
   h1: Best AML Software Providers in 2026
 breadcrumb_label: Best AML Software Providers
-quick_answer: Sumsub is our top AML pick if you want identity verification and AML screening from one vendor. ComplyAdvantage suits teams that need sanctions, PEP and adverse-media screening on its own risk data, and Castellum.AI is built on in-house risk data it refreshes every 5 minutes. We compared 10 providers on screening, monitoring, case management and pricing.
+score_source: category
+score_label: AML score
+rubric: rubricAmlRanking
+methodology_label: AML 1.0
+methodology_anchor: '#aml'
+quick_answer: ComplyAdvantage is our top AML pick because its public pages cover the most of what supervisors check, from all four core sanctions lists to payment screening and webhooks. Sumsub suits teams that want identity verification and AML screening from one vendor, and Castellum.AI leads on match controls. We compared 11 providers on screening data, match controls, monitoring and pricing.
 last_verified: '2026-10-18'
-updated: '2026-11-05'
+updated: '2026-11-23'
 legacy_stats:
-- value: '10'
+- value: '11'
   label: providers compared
 - value: 40+
   label: countries covered
@@ -47,7 +52,7 @@ faq:
 - q: Which AML software also verifies identity?
   a: Sumsub, KYC Hub, SmartSearch and RelyComply include identity verification; Unit21 and KYC360 offer it through partners. ComplyAdvantage, Hawk AI and Napier do not, so they are usually paired with a separate identity verification provider. The capabilities table shows the source for each.
 - q: How much does AML software cost?
-  a: ComplyAdvantage, KYC360 and Sumsub publish entry prices; most enterprise platforms in this ranking quote on request. Entry plans often leave out transaction monitoring or ongoing monitoring, so check what each plan includes on the provider's review.
+  a: ComplyAdvantage, KYCAID, KYC360 and Sumsub publish entry prices; most enterprise platforms in this ranking quote on request. Entry plans often leave out transaction monitoring or ongoing monitoring, so check what each plan includes on the provider's review.
 - q: Can AML software run on premises?
   a: Napier and KYC360 offer cloud and on-premises deployment, per their own pages. The other providers in this ranking are cloud-based or do not say.
 - q: Is AML software legally required?

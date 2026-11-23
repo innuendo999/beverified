@@ -100,3 +100,20 @@ Unit21: overall 3.5, AML 2.3 (scored weight 100%)
   Pricing and total cost            15%  2  no published price, quoted by sales
   Integration                       10%  1.5  no-code dashboard
 ```
+
+## Candidate not in the list: KYCAID
+
+KYCAID has `primary_category: aml`, sells sanctions and PEP screening and an ongoing monitoring add-on, and is scored on v3.1, so it is eligible under AML 1.0 but was never in the `aml` list. Data collected 23 Nov 2026 (`scripts/aml-data/batch-4-kycaid.json`).
+
+```
+
+KYCAID: overall 4.1, AML 2.9 (scored weight 100%)
+  Sanctions, PEP and media data     25%  1  none found
+  Match quality controls            20%  3.5  configurable matching threshold, secondary identifiers, match explanation (half)
+  Calibration, testing and audit    15%  2  public calibration documentation
+  Ongoing and transfer monitoring   15%  3.5  re-screening, trigger not stated (half), transaction monitoring, payment or transfer screening
+  Pricing and total cost            15%  5  published, trial or free tier
+  Integration                       10%  4  public API docs, sandbox or trial, webhooks (half), no-code dashboard
+```
+
+With KYCAID added, it ties Strise at 2.9 and, with no current rank, sorts after it: #8 of 11. A top 10 would then drop Unit21 (2.3). Owner to decide.

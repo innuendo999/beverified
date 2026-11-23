@@ -1,0 +1,23 @@
+{
+  "kycaid": {
+    "sources": [
+      {"title": "Verification status changed (callback)", "publisher": "KYCAID", "url": "https://docs.kycaid.com/callbacks/verification-status-changed", "accessed": "2026-11"}
+    ],
+    "capabilities": {
+      "list_coverage": {"status": "partial", "lists": ["ofac"], "note": "OFAC named; API docs say only global and local sanctions databases", "source": 1, "checked": "2026-11-23"},
+      "list_updates": {"merge": true, "checked": "2026-11-23"},
+      "data_provenance": {"status": "not_disclosed", "note": "provider not stated (sample API response shows an OpenSanctions database name)", "checked": "2026-11-23"},
+      "transliteration": {"status": "not_disclosed", "note": "name input accepts Latin characters only; transliteration not described", "checked": "2026-11-23"},
+      "secondary_identifiers": {"status": "yes", "note": "date of birth, residence country and gender, each with a weight", "source": 17, "checked": "2026-11-23"},
+      "whitelisting": {"status": "not_disclosed", "note": "not described", "checked": "2026-11-23"},
+      "alert_explanation": {"status": "partial", "note": "name and total match scores returned; derivation not explained", "source": 17, "checked": "2026-11-23"},
+      "calibration_docs": {"status": "yes", "note": "API docs define the similarity threshold and per-field weights", "source": 17, "checked": "2026-11-23"},
+      "alert_reporting": {"status": "not_disclosed", "note": "no alert reports described", "checked": "2026-11-23"},
+      "model_validation": {"status": "not_disclosed", "note": "not described", "checked": "2026-11-23"},
+      "transfer_screening": {"status": "yes", "note": "per-transaction monitoring rules and crypto address check", "source": 11, "checked": "2026-11-23"}
+    },
+    "integration": {
+      "webhooks": {"status": "partial", "note": "verification status callbacks; monitoring alert callbacks not described", "source": "@1", "checked": "2026-11-23"}
+    }
+  }
+}
