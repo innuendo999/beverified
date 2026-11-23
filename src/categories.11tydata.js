@@ -80,7 +80,10 @@ export default {
       d.c.capability_columns,
       (d.rankings[d.c.slug]?.providers || []).map((r) => (r.slug ? d.providers[r.slug] : null)),
       termForCapability(d.glossaryTerms),
+      d.logoTiles,
     ),
+    // Rank and the score this page ranks on, for the first column of the capabilities table.
+    matrixRank: (d) => Object.fromEntries((d.entries || []).filter((e) => e.q).map((e) => [e.q.slug, { rank: e.rank, score: e.score }])),
     // "Best for" by industry or use case: category file c.segments = [{segment, slug, reason}].
     segmentPicks: (d) => (d.c.segments || [])
       .map((x) => ({ segment: x.segment, reason: x.reason, q: x.slug ? d.providers[x.slug] : null }))
