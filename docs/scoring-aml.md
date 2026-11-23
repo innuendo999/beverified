@@ -173,7 +173,7 @@ Approved to plan, not to build yet (owner, 2026-11-23):
 - `capabilities.list_updates` gains `hours` (number, the stated time for sanctions changes; omitted when the vendor states none).
 - `capabilities.transliteration`, `secondary_identifiers`, `whitelisting`, `data_provenance`, `calibration_docs`, `alert_reporting`, `model_validation`, `transfer_screening`, and `integration.webhooks`: same shape as other capabilities (`{status, note, source}`, optional `checked`). Add them to `docs/data-schema.md` in the data PR.
 - `category_scores.aml{ score, breakdown[], methodology: aml-1.0, scored }`, written by `scripts/rescore-aml.mjs --write`, never by hand.
-- Category file `aml.yml`: `score_source: category`, `score_label: AML score`, `rubric: rubricAml`, `methodology_label: AML 1.0`, `methodology_anchor: '#aml'`.
+- Category file `aml.yml`: `score_source: category`, `score_label: AML score`, `rubric: rubricAmlRanking`, `methodology_label: AML 1.0`, `methodology_anchor: '#aml'`.
 
 ## Page (proposal, needs owner approval before it is built)
 
@@ -186,7 +186,7 @@ Approved to plan, not to build yet (owner, 2026-11-23):
 ## Rollout
 
 1. This file (owner approved the rules on 2026-11-23).
-2. Methodology page: an "AML" section with criteria, weights, buyer profile and date, plus a changelog entry, and `site.json` `v3.rubricAml`. Published before any score.
+2. Methodology page: an "AML" section with criteria, weights, buyer profile and date, plus a changelog entry, and `site.json` `v3.rubricAmlRanking`. Published before any score.
 3. Data in three batches for the ten providers in `aml` (Sumsub, ComplyAdvantage, Castellum.AI, SmartSearch, Hawk, KYC Hub, Strise, Unit21, Napier, KYC360), with `aml-watch` built in the first batch.
 4. `scripts/rescore-aml.mjs` reuses the v3.1 functions from `scripts/rescore.mjs` and writes `reports/rescore-aml-1.0.csv` (old rank, new rank, AML score, each sub-score, eligibility reason). Owner reviews; manual overrides only with a written reason.
 5. One PR: ranking re-ordered, cards and quick answer rewritten from the records (humanizer, invisible-characters, pre-publish check), page blocks as approved.
