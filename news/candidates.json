@@ -36,8 +36,9 @@
       "matched": "age assurance",
       "route": "news",
       "priority": 1,
-      "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
-      "first_seen": "2026-11-21"
+      "reason": "vendor commentary (Helix argues for voice age estimation); no new rule, deadline, enforcement action or provider event",
+      "first_seen": "2026-11-21",
+      "status": "dropped"
     },
     {
       "id": "54852c681a7cfe73",
@@ -55,8 +56,9 @@
       "matched": "digital identity wallet",
       "route": "news",
       "priority": 1,
-      "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
-      "first_seen": "2026-11-21"
+      "reason": "Tanzania national ID card and wallet contract: outside US/UK/EU focus",
+      "first_seen": "2026-11-21",
+      "status": "digest"
     },
     {
       "id": "0a942fdd2070cc5e",
@@ -74,8 +76,9 @@
       "matched": "digital id",
       "route": "news",
       "priority": 1,
-      "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
-      "first_seen": "2026-11-21"
+      "reason": "Spanish court case on digital ID for electoral voting devices; no KYC/AML or relying-party obligation for private firms",
+      "first_seen": "2026-11-21",
+      "status": "dropped"
     },
     {
       "id": "e28d8e79e39dd5fb",
@@ -93,8 +96,10 @@
       "matched": "eidas",
       "route": "news",
       "priority": 1,
-      "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
-      "first_seen": "2026-11-21"
+      "reason": "update to /news/eu-digital-identity-wallet-deadline-december-2026/ (What has happened since): Council of Ministers adopted UC122 on 17 Nov 2026, primary gov.pl/web/premier",
+      "first_seen": "2026-11-21",
+      "status": "drafted",
+      "pr": "https://github.com/innuendo999/beverified/pull/183"
     },
     {
       "id": "65227851daa07fb1",
