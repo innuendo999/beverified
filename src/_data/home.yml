@@ -57,15 +57,15 @@ regions:                # area = section on /regions/; slug = region ranking pag
 
 top_rated_count: 8
 
-faq:   # questions from Google Search Console (homepage, last 3 months, Oct 2026)
+faq:   # brand questions only (owner, 2026-11-23): ranking, price and "best" questions live on the ranking pages and the KYC Pricing Index, so the homepage does not compete with them
   - q: Is BeVerified the same as BeenVerified?
     a: No. BeVerified.org is an independent review site for KYC, KYB and AML software used by compliance teams. It is a different organisation from BeenVerified, the US people-search service, and it does not run background checks or sell personal records.
   - q: Can BeVerified verify my identity or my business?
     a: No. We don't perform identity, business or AML checks ourselves. We compare the providers that do, so you can choose one to run checks for your customers. Start with a use case (eKYC, KYB or AML) to see the providers we ranked for it.
-  - q: Which trusted KYC platform gets the highest ratings from compliance teams?
-    a: "{top}"   # generated from provider scores
-  - q: Which beneficial ownership (KYB) check provider is worth the investment?
-    a: "{kyb}"   # generated from the KYB ranking
+  - q: How does BeVerified score providers?
+    a: Each provider gets an editorial score out of 5 from a published, weighted rubric. We use only evidence anyone can check, such as lab letters, public registers, vendor price lists and documentation. Some rankings, such as Identity Verification and Budget KYC, have their own rubric. Every claim on a review shows where it came from.
+  - q: How does BeVerified make money?
+    a: We may earn a commission or a fee from some links, and providers can buy placements that are always labelled "Sponsored". Payment never changes a score, a ranking position, an award or what a review says.
   - q: Is there a free KYC check?
     a: BeVerified doesn't run checks, free or paid. For low-cost options, see our Budget KYC ranking, and check each review for the vendor's published pricing and trial terms.
   - q: What does "verified" mean on a BeVerified AML or KYC review?
