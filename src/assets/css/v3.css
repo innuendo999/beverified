@@ -2215,3 +2215,8 @@ td > .cg-v:first-child { margin-left: 0; }
 .cg-key > span { display: inline-flex; align-items: center; gap: 8px; }
 @media (max-width: 720px) { .cg-first { min-width: 0; } .cg-rank { display: none; } }
 .cg-m--nd::before { content: ""; width: 10px; height: 2px; border-radius: 1px; background: var(--line-strong); }
+/* Shared capability tables (cap-matrix.njk) in the AML grid style (owner, 2026-11-23). */
+.cg-m--ok { background: var(--ok); }
+.cg-note { display: inline-block; margin-left: 8px; font-size: 12px; color: var(--muted); white-space: normal; max-width: 220px; vertical-align: middle; }
+.cg-cols th a { color: inherit; text-decoration: underline; text-decoration-color: var(--line-strong); text-underline-offset: 3px; }
+.cg-cols th a:hover { color: var(--accent); }

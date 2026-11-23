@@ -1,22 +1,36 @@
-{#- Capability matrix table: legend + scrolling table. Needs `matrix` (buildMatrix in src/_lib/capabilities.js)
-    and `matrixCaption`. Used by category pages and by the Alternatives section of reviews. -#}
+{#- Capability table, same style as the AML grid (owner, 2026-11-23): marks instead of dots, brand in a sticky first
+    column, one-line rows. Needs `matrix` (buildMatrix in src/_lib/capabilities.js) and `matrixCaption`; optional
+    `matrixRank` (slug -> rank, score) on ranking pages. Used by category pages and the Alternatives section of reviews.
+    Green only for a certificate we confirmed (status confirmed); every other mark is plain. -#}
+{%- set mr = matrixRank if matrixRank else {} %}
 <p class="cap-legend">Checked against each provider's own pages{% if matrix.checked %}, {{ matrix.checked | displayDate }}{% endif %}. Sources for each cell are on the provider's review.{% if matrix.certNote %} {{ matrix.certNote }}{% endif %}</p>
-<p class="cap-legend cap-legend--key">{% for l in matrix.legend %}<span><i class="cap-dot cap-dot--{{ l[0] }}" aria-hidden="true"></i>{{ l[1] }}</span>{% if not loop.last %} {% endif %}{% endfor %}</p>
-<div class="card cap-matrix">
-  <div class="cap-matrix__scroll" role="region" aria-label="Capability matrix, scrolls sideways" tabindex="0">
-    <table class="cap-table">
+<div class="card cg">
+  <div class="cg__scroll" role="region" aria-label="Capabilities table, scrolls sideways" tabindex="0">
+    <table class="cg-table">
       <caption class="visually-hidden">{{ matrixCaption }}</caption>
-      <thead><tr><th scope="col">Provider</th>{% for col in matrix.cols %}<th scope="col">{% if col.term %}<a href="{{ col.term }}" title="What is {{ col.label }}?">{{ col.label }}</a>{% else %}{{ col.label }}{% endif %}</th>{% endfor %}</tr></thead>
+      <thead><tr class="cg-cols"><th scope="col" class="cg-first">Provider{% if c and c.score_label %} · {{ c.score_label }}{% elif mr | length %} · Score{% endif %}</th>{% for col in matrix.cols %}<th scope="col">{% if col.term %}<a href="{{ col.term }}" title="What is {{ col.label }}?">{{ col.label }}</a>{% else %}{{ col.label }}{% endif %}</th>{% endfor %}</tr></thead>
       <tbody>
       {%- for row in matrix.rows %}
-        <tr>
-          <th scope="row"><a href="/providers/{{ row.slug }}/">{{ row.name }}</a></th>
+        {%- set rk = mr[row.slug] %}
+        <tr{% if rk and rk.rank == 1 %} class="is-first"{% endif %}>
+          <th scope="row" class="cg-first"><a class="cg-prov" href="/providers/{{ row.slug }}/">{% if rk %}<span class="cg-rank">{{ rk.rank | pad2 }}</span>{% endif %}<span class="cg-brand">{% if row.wordmark %}<img src="{{ row.wordmark }}" alt="{{ row.name }}" loading="lazy">{% elif row.logo %}<span class="cg-tile" style="background: {{ row.tileBg }}"><img src="{{ row.logo }}" alt="" loading="lazy" style="object-fit: {{ row.tileFit }}"></span><span class="cg-wm">{{ row.name }}</span>{% else %}<span class="cg-wm">{{ row.name }}</span>{% endif %}</span>{% if rk and rk.score != null %}<span class="cg-score">{{ rk.score | score1 }}</span>{% endif %}</a></th>
           {%- for cell in row.cells %}
-          <td>{% if cell.sym %}<i class="cap-dot cap-dot--{{ cell.sym }}" aria-hidden="true"></i>{% endif %}{{ cell.label }}{% if cell.note %}<small>{{ cell.note }}</small>{% endif %}</td>
+          <td>
+            {%- if cell.sym == "full" %}<span class="cg-m cg-m--yes{% if cell.status == "confirmed" %} cg-m--ok{% endif %}">{% icon "check", cell.label %}</span>{% if cell.label not in ["Yes", "Confirmed"] %}<span class="cg-v">{{ cell.label }}</span>{% endif %}
+            {%- elif cell.sym == "half" %}<span class="cg-m cg-m--half">{% icon "check" %}</span><span class="cg-tag">{{ cell.label }}</span>
+            {%- elif cell.sym == "empty" %}<span class="cg-m cg-m--no" role="img" aria-label="{{ cell.label }}">✕</span>
+            {%- elif cell.sym == "unknown" %}{% if cell.label == "Not disclosed" %}<span class="cg-m cg-m--nd" role="img" aria-label="Not disclosed"></span>{% else %}<span class="cg-m cg-m--nd" aria-hidden="true"></span><span class="cg-tag">{{ cell.label }}</span>{% endif %}
+            {%- else %}<span class="cg-v{% if cell.key == "price_from" %} cg-v--strong{% endif %}">{{ cell.label }}</span>{% endif %}
+            {%- if cell.note %}<span class="cg-note">{{ cell.note }}</span>{% endif -%}
+          </td>
           {%- endfor %}
         </tr>
       {%- endfor %}
       </tbody>
     </table>
   </div>
+  <div class="cg-key">{% for l in matrix.legend %}<span>{% if l[0] == "full" %}<span class="cg-m cg-m--yes">{% icon "check" %}</span>{% elif l[0] == "half" %}<span class="cg-m cg-m--half">{% icon "check" %}</span>{% elif l[0] == "empty" %}<span class="cg-m cg-m--no">✕</span>{% else %}<span class="cg-m cg-m--nd"></span>{% endif %}{{ l[1] }}</span>{% endfor %}</div>
+  {%- if c and c.slug %}
+  <div class="r2-mrz" aria-hidden="true">{{ ("CAP<<" + c.slug + "<<" + site.v3.awards.year + "<<" + (matrix.cols | length) + "<<FEATURES<<" + (matrix.rows | length) + "<<PROVIDERS") | mrzLine }}</div>
+  {%- endif %}
 </div>
