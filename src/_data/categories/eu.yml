@@ -1,0 +1,58 @@
+slug: eu
+url: /providers/eu/
+seo:
+  title: Best KYC & AML Providers for the EU in 2026 | BeVerified
+  description: 'Shufti Pro, Sumsub, Didit, Verified and Persona compared: the best KYC & AML providers for the EU in 2026, each with a documented eID, ETSI TS 119 461 or BaFin video route.'
+  h1: Best KYC & AML Providers for the EU in 2026
+breadcrumb_label: Best KYC & AML Providers for the EU
+quick_answer: Shufti Pro is our top EU pick, with eID checks through BankID, MitID, itsme and SPID and video identification built for BaFin rules. Sumsub is next for German eID onboarding and a Nordic eID bundle. Veridas suits buyers who want an ETSI TS 119 461 certificate they can check. We compared 10 providers on eID coverage, certification, pricing and integration.
+last_verified: '2026-11-23'
+updated: '2026-11-23'
+# Eligibility (owner, 2026-11-23): a scored provider documents at least one EU route in its own docs or on its own site:
+# an ETSI TS 119 461 or ANSSI PVID certificate, a live check through an EU member-state eID or the EUDI Wallet, or video
+# identification under BaFin rules. Evidence check 23 Nov 2026: reports/verification/eu-2026-11.md. Top 10 by v3.1 score.
+explainer_html:
+- |
+  <h2>Who qualifies for this ranking</h2>
+  <p>Every provider on this page describes at least one EU identity route in its own documentation or on its own website: a check through a national eID or the EU Digital Identity Wallet, a remote identity proofing certificate under ETSI TS 119 461 or France's PVID, or video identification under BaFin rules. We checked each one on 23 November 2026. The EU has no single public register of verification services like the UK DVS register, so most of this is what the vendors say they offer. The one certificate we could open at the source is Veridas's, issued by DEKRA against ETSI TS 119 461.</p>
+  <p>The list shows the top 10 by score. Six more providers meet the rule and rank below them: <a href="/providers/jumio/">Jumio</a>, <a href="/providers/onfido/">Onfido (Entrust)</a>, <a href="/providers/signicat/">Signicat</a>, <a href="/providers/gbg/">GBG</a>, <a href="/providers/idnow/">IDnow</a> and <a href="/providers/fourthline/">Fourthline</a>. Signicat and IDnow are European specialists with broad eID coverage, so read their reviews if eIDs matter more to you than the rest of the platform. We found no documented EU eID, ETSI or BaFin route for Veriff, KYCAID, Trulioo or AU10TIX.</p>
+  <h2>eID, wallet, certificate or video: what each route gives you</h2>
+  <p>An eID check signs the customer in with a credential that a member state or a group of banks has already issued, such as MitID in Denmark, BankID in Sweden, itsme in Belgium or SPID in Italy. The scheme returns signed identity data, so there is no document photo to fake. Coverage is national: a Swedish BankID does not help with a customer from Spain, so count which of your markets each provider covers.</p>
+  <p>The <a href="/glossary/eidas-2/">EU Digital Identity Wallet</a> is meant to work the same way in every member state. The European Commission expects wallets for citizens by the end of 2026, and most providers here list wallet acceptance as a sandbox or as coming soon, not as a live check.</p>
+  <p>A certificate under ETSI TS 119 461 means an assessor has checked the provider's identity proofing process against that standard. <a href="https://eur-lex.europa.eu/eli/reg_impl/2025/1566/oj/eng" rel="nofollow noopener" target="_blank">Commission Implementing Regulation (EU) 2025/1566</a> makes version 2.1.1 the reference for checking a person's identity before a qualified certificate or a qualified electronic attestation of attributes is issued. Ask for the certificate itself and the name of the body that issued it.</p>
+  <p>Video identification with a trained agent is an established route in Germany. <a href="https://www.bafin.de/ref/19621456" rel="nofollow noopener" target="_blank">BaFin Circular 3/2017 (GW)</a>, in force since 15 June 2017, sets the requirements for the firms BaFin supervises. Ask the provider how its flow maps to the circular and when its agents are available.</p>
+  <h2>What changes with the AMLR and the AMLA standards</h2>
+  <p>The <a href="/glossary/eu-aml-regulation/">EU AML Regulation</a> applies from 10 July 2027 and replaces the national laws based on the earlier AML directives with one rulebook. AMLA's final draft standards on customer due diligence, sent to the European Commission in autumn 2026, say firms should use eIDAS electronic identification at substantial or high level, including EUDI Wallets, and qualified trust services wherever possible. Other remote methods, such as document and selfie checks, stay allowed under listed safeguards. The Commission can still amend the draft; <a href="/news/amla-sends-cdd-standards-to-the-commission/">our news story</a> has the details.</p>
+  <p>For buyers, this makes eID coverage and wallet plans worth comparing now. A provider that only offers document and selfie checks can still be used, but you will need to justify that choice to your supervisor.</p>
+  <h2>Rules EU firms work to</h2>
+  <ul>
+  <li><a href="https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng" rel="nofollow noopener" target="_blank">Regulation (EU) 2024/1624</a> (AMLR), from 10 July 2027, with Directive (EU) 2024/1640 (AMLD6). Until then, national laws based on the earlier AML directives apply.</li>
+  <li>Regulation (EU) 2024/1620, which set up the <a href="/glossary/amla/">Anti-Money Laundering Authority (AMLA)</a> in Frankfurt. Its direct supervision of selected firms starts in 2028.</li>
+  <li>The eIDAS Regulation, (EU) No 910/2014, as amended by <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1183" rel="nofollow noopener" target="_blank">Regulation (EU) 2024/1183</a> (eIDAS 2).</li>
+  <li>The GDPR, which treats biometric data used to identify a person as a special category of personal data.</li>
+  <li>National rules on remote identification, such as BaFin Circular 3/2017 (GW) in Germany.</li>
+  </ul>
+faq:
+- q: Is there an EU register of certified KYC providers?
+  a: No. The EU has no single public register of identity verification services like the UK DVS register. That is why this ranking rests on the routes each provider documents itself, and why we say which evidence we could check at the source.
+- q: Which KYC providers accept the EU Digital Identity Wallet?
+  a: Persona takes part in the French and German wallet sandboxes, Didit lists the wallet as coming soon, and Zyphe says its wallet support is in production. The European Commission expects wallets for citizens by the end of 2026, so ask each provider which national wallets it accepts on the day you sign.
+- q: What is ETSI TS 119 461?
+  a: ETSI TS 119 461 is the European standard for identity proofing of trust service subjects. Commission Implementing Regulation (EU) 2025/1566 makes version 2.1.1 the reference for identity checks before qualified certificates are issued. In this ranking, Veridas holds a certificate we could open, issued by DEKRA in 2026; Persona and Sumsub state eIDAS identity proofing certification, but we could not open their certificates.
+- q: Does the AMLR require eID for remote onboarding?
+  a: No, not as the only option. AMLA's final draft standards on customer due diligence say eIDAS electronic identification at substantial or high level and qualified trust services should be used wherever possible, and allow other remote methods under listed safeguards. The AML Regulation applies from 10 July 2027.
+- q: What does BaFin require for video identification?
+  a: BaFin Circular 3/2017 (GW), in force since 15 June 2017, sets the technical and organisational requirements for video identification by firms that BaFin supervises. Shufti Pro describes a VideoIdent flow built for it, and IDnow built its business on it.
+- q: Why is Veriff not in the EU ranking?
+  a: Veriff is not in the EU ranking because we found no eID, EUDI Wallet, ETSI TS 119 461 or BaFin video route on its own product pages on 23 November 2026, although the company is based in Estonia. Its service on the UK DVS register puts it in our UK ranking.
+adjacent:
+- e-kyc
+- identity-verification
+- kyc
+- uk
+price_source: record
+capability_columns: []
+faq_templates: []
+legacy_issues: []
+author: andrii-klymenko
+legacy_reviewer: null

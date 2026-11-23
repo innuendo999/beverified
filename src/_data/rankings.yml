@@ -2568,3 +2568,161 @@ know-your-agent:
     legacy_price_shown: null
     legacy_rating_shown: null
     segments: []
+eu:
+  title: Best KYC & AML Providers for the EU in 2026
+  # Scored providers: at least one EU route documented by the vendor: an ETSI TS 119 461 or ANSSI PVID certificate,
+  # a live check through an EU member-state eID or the EUDI Wallet, or video identification under BaFin rules (owner, 2026-11-23).
+  # Evidence check 23 Nov 2026: reports/verification/eu-2026-11.md. Order: v3.1 score, top 10 only.
+  # Ties: Persona above ComplyCube (4.0, as in the UK ranking); at 3.7 Veridas (confirmed certificate), then iDenfy
+  # (documented scheme list); Jumio (press release, no scheme list) is 11th and not shown. Provisional, owner to confirm.
+  providers:
+  - slug: shufti-pro
+    name: Shufti Pro
+    award: Editor's Choice
+    tagline: eID checks through BankID, MitID, iDIN, itsme, Smart-ID and SPID, plus attended video identification built for BaFin rules.
+    coverage: Global, 240+ countries and territories
+    size: null
+    pros:
+    - Connects to more than 30 national eID schemes, including BankID, MitID, iDIN, itsme, Smart-ID and SPID, per Shufti
+    - Attended video identification (VideoIdent) that Shufti maps step by step to BaFin and GwG requirements
+    - One contract also covers customers outside the EU, in 240+ countries and territories
+    cons:
+    - eID checks and VideoIdent sit on the quote-only Enterprise plan
+    - ISO 27001, SOC 2 Type II and PCI DSS are vendor-stated, with reports only on request under NDA
+    - Setup fees, minimums and trial terms are not stated on the pricing page
+    segments: []
+  - slug: sumsub
+    name: Sumsub
+    award: Best for German eID
+    tagline: German eID onboarding on the Personalausweis scheme and a Nordic eID bundle, on a platform with published plans.
+    coverage: Global
+    size: null
+    pros:
+    - German eID check on the notified Personalausweis scheme, which Sumsub describes as GwG and eIDAS compliant
+    - Nordic eID bundle with Swedish BankID, Danish MitID, Norwegian BankID and Finnish FTN in one integration, launched September 2026
+    - Published per-verification pricing with a 14-day free trial
+    cons:
+    - The Nordic eID checks are non-document checks, which sit only in the custom, quoted plan
+    - Its eIDAS 2.0 certification, announced in June 2026, is vendor-stated; we could not open the certificate
+    - Disclosed in February 2026 that an attacker had access to a support system from July 2024 to January 2026
+    segments: []
+  - slug: didit
+    name: Didit
+    award: Best for Self-Serve Pricing
+    tagline: Five eIDs live in seven EU countries, priced per sign-in on a public price list, next to document checks.
+    coverage: Global
+    size: null
+    pros:
+    - MitID, Swedish BankID, Finnish Trust Network, Smart-ID and Mobile-ID are live in seven EU countries, per Didit
+    - Publishes a price for each eID sign-in, with a free plan and no minimum or contract
+    - Liveness confirmed by iBeta at ISO/IEC 30107-3 Level 2
+    cons:
+    - The German eID, itsme, FranceConnect and the EUDI Wallet are still marked coming soon
+    - Young company, founded in 2023
+    - Support by email only, with no published hours or SLA
+    segments: []
+  - slug: verified
+    name: Verified
+    award: Best for Nordic eIDs
+    tagline: Nordic and Baltic eIDs for onboarding and e-signing, with daily AML screening in the same suite.
+    coverage: Nordics and Baltics
+    size: null
+    pros:
+    - Identifies people with Swedish and Norwegian BankID, MitID, Finnish Trust Network, Freja and Smart-ID, per Verified
+    - E-signing covers simple, advanced and qualified eIDAS signatures
+    - Daily PEP, sanctions and adverse media screening of every customer, with automatic risk reassessment
+    cons:
+    - No eID from Germany, France, Italy or Spain is listed on its identification page
+    - No published prices; Verified quotes after a demo
+    - Few public user reviews
+    segments: []
+  - slug: zyphe
+    name: Zyphe
+    award: null
+    tagline: Self-serve KYC with sign-in through Italy's SPID and CIE, per Zyphe, on a public per-check rate card.
+    coverage: Global
+    size: null
+    pros:
+    - Says SPID and CIE support is native and in production (post of March 2026, revised October 2026)
+    - Public rate card for ID and liveness checks, with no monthly fee
+    - KYC, KYB, screening and transaction monitoring in one self-serve platform with a sandbox
+    cons:
+    - The eID claim comes from a blog post, and Zyphe names no eID scheme outside Italy
+    - No SOC 2 or ISO/IEC 27001 certificate yet, and no published lab test of its liveness check
+    - Young company with a short track record and only a handful of public user reviews
+    segments: []
+  - slug: persona
+    name: Persona
+    award: Best for Custom Workflows
+    tagline: National eIDs in 14 EU countries and EUDI Wallet sandboxes in France and Germany, inside configurable workflows.
+    coverage: Global, 200+ countries and territories
+    size: Mid-market to Enterprise
+    pros:
+    - Lists national eIDs as available today in 14 EU countries, including France Identité, SPID and Cl@ve, per Persona
+    - Takes part in the French and German EUDI Wallet sandboxes, per Persona
+    - Selfie Liveness 2.0 tested by iBeta to ISO/IEC 30107-3 Level 2
+    cons:
+    - Says it is certified under ETSI TS 119 461 but does not name the certification body
+    - Only the entry plan has a published price, and it carries a 12-month minimum term
+    - Flexibility means a steeper configuration curve
+    segments: []
+  - slug: complycube
+    name: ComplyCube
+    award: null
+    tagline: eID checks with itsme, MitID, BankID, iDIN and the German Personalausweis, on an API-first platform with self-serve plans.
+    coverage: Global
+    size: null
+    pros:
+    - Its eID check covers itsme, MitID, Finnish and Swedish BankID, iDIN and the German Personalausweis, per ComplyCube's docs
+    - Self-serve plans with published monthly prices
+    - On the UK DVS register, for firms that also onboard UK customers
+    cons:
+    - eID checks are on the quote-only Growth tier and above
+    - No iBeta liveness letter found under its name
+    - Smaller scale and brand recognition than category leaders
+    segments: []
+  - slug: incode
+    name: Incode
+    award: null
+    tagline: Accepts 20+ European eIDs, including MitID, BankID, itsme, SPID and Smart-ID, alongside enterprise biometrics.
+    coverage: Global
+    size: null
+    pros:
+    - Developer docs list more than 20 European eID schemes, including MitID, BankID, itsme, SPID and Smart-ID
+    - Passive liveness tested by iBeta to ISO/IEC 30107-3 Level 3 on iOS and Android
+    - Gartner Magic Quadrant Leader for Identity Verification in 2024, 2025 and 2026
+    cons:
+    - The docs give no status per eID scheme; countries are enabled through an Incode representative
+    - No published pricing; licensing is quoted by volume and deployment scope
+    - Enterprise-oriented, so pricier for smaller teams
+    segments: []
+  - slug: veridas
+    name: Veridas
+    award: Best for Certified eIDAS Proofing
+    tagline: The only provider here with an ETSI TS 119 461 certificate we could open, issued by DEKRA in 2026.
+    coverage: Global
+    size: null
+    pros:
+    - eIDAS conformity certificate against ETSI TS 119 461 and EN 319 401, issued by DEKRA in 2026
+    - In-house face and voice biometrics, with passive liveness tested by iBeta to Level 2
+    - Backed by BBVA since its founding
+    cons:
+    - Merged into Fourthline in November 2026, with the platforms to be integrated in phases, so product and brand changes are likely
+    - No prices on its own site; the AWS Marketplace price needs a 12-month contract
+    - No SOC 2 Type II statement found, and its only public ISO 27001 certificate copy expired in March 2024
+    segments: []
+  - slug: idenfy
+    name: iDenfy
+    award: null
+    tagline: eID onboarding with Swedish BankID, MitID, Smart-ID, Mobile-ID and iDIN, plus published per-check KYC prices.
+    coverage: Global
+    size: null
+    pros:
+    - Lists eIDs from across the EU, including Swedish BankID, MitID, Smart-ID, Mobile-ID, iDIN and Czech Bank iD, per iDenfy
+    - Published per-check KYC pricing
+    - In-house reviewers double-check verifications around the clock, as a paid add-on
+    cons:
+    - No iBeta liveness letter found under its name
+    - $135 monthly minimum on Basic ($325 on Premium)
+    - AML screening price not published
+    segments: []

@@ -50,7 +50,7 @@ export default {
           .slice(0, 3).map((x) => { const p = d.providers[x.slug], t = d.logoTiles?.[x.slug] || {};
             return { name: p.name, logo: p.logo?.src || null, wordmark: p.logo?.wordmark || null, bg: t.bg || "#FFFFFF", fit: t.fit || "contain" }; });
         const x = ((r.lon + 180) / 360) * 100, y = ((g.top - r.lat) / (g.top - g.bottom)) * 100;
-        return { code: String(i + 1), slug, name: r.name, reg: r.reg, url: cat.url, top,
+        return { code: g.codes ? g.codes[i] : String(i + 1), slug, name: r.name, reg: r.reg, url: cat.url, top,
           x: Math.round(x * 10) / 10, y: Math.round(y * 10) / 10, flip: x > 60 };
       }).filter(Boolean);
     },

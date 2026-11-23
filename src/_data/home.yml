@@ -42,7 +42,7 @@ use_cases:              # group = section on /use-cases/ and in the homepage pan
 
 regions:                # area = section on /regions/; slug = region ranking page if one exists; lon/lat = pin on the homepage pixel map, iso = ISO 3166 numeric code used by scripts/region-map.mjs to light the country (x/y: old grid map, unused)
   - { name: United Kingdom, short: UK, area: Europe, reg: FCA, x: 49.6, y: 21, side: left, slug: uk, lon: -2, lat: 54, iso: "826" }
-  - { name: European Union, short: EU, area: Europe, reg: AMLA, x: 53, y: 24 }
+  - { name: European Union, short: EU, area: Europe, reg: AMLA, x: 53, y: 24, slug: eu, lon: 15, lat: 44.5, iso: [ "040", "056", "100", "191", "196", "203", "208", "233", "246", "250", "276", "300", "348", "372", "380", "428", "440", "442", "470", "528", "616", "620", "642", "703", "705", "724", "752" ] }
   - { name: United States, short: US, area: North America, reg: FinCEN, x: 23, y: 31, side: left }
   - { name: UAE, short: UAE, area: Middle East & Africa, reg: CBUAE, x: 65.5, y: 36.5, side: left }
   - { name: Singapore, short: Singapore, area: Asia-Pacific, reg: MAS, x: 78.8, y: 49.2, side: left }

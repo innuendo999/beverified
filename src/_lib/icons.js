@@ -118,7 +118,7 @@ export const MAP = {
     kyc: "id-card", "identity-verification": "person-check", "e-kyc": "phone", "liveness-detection": "liveness",
     "age-verification": "age", kyb: "company", aml: "screening", "aml/banks": "bank", crypto: "wallet",
     "travel-rule": "travel-rule", "cheap-kyc": "price-tag", "know-your-agent": "agent",
-    uk: "location", australia: "location", brazil: "location", canada: "location", india: "location", mexico: "location", nigeria: "location", peru: "location", "south-africa": "location",
+    uk: "location", eu: "location", australia: "location", brazil: "location", canada: "location", india: "location", mexico: "location", nigeria: "location", peru: "location", "south-africa": "location",
   },
   section: { news: "news", guide: "guide", publications: "research", compare: "compare", incidents: "incident", glossary: "info" },
   evidence: { independent: "lab", "vendor-stated": "vendor-stated", "user-reported": "star", "hands-on": "hands-on" },
