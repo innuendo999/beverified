@@ -190,12 +190,16 @@ capabilities:
     source: 12
   ongoing_monitoring:
     status: 'yes'
+    trigger: list_change
+    trigger_source: 6
     note: re-screening when lists or media change
     source: 6
+    checked: '2026-11-23'
   list_updates:
     status: 'yes'
     note: Dow Jones incl. OFAC, EU, UN, HMT; real time updates
     source: 6
+    checked: '2026-11-23'
   pep_tiers:
     status: 'yes'
     note: family and close associates, configurable PEP scope
@@ -222,6 +226,46 @@ capabilities:
   data_residency:
     status: not_disclosed
     note: hosting region choice not stated
+  list_coverage:
+    status: 'yes'
+    lists: [ofac, eu, uk, un]
+    note: names OFAC, EU, UN and HMT
+    source: 6
+    checked: '2026-11-23'
+  data_provenance:
+    status: 'yes'
+    note: Dow Jones as primary data source
+    source: 6
+    checked: '2026-11-23'
+  transliteration:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-23'
+  secondary_identifiers:
+    status: 'yes'
+    note: date of birth, nationality, jurisdiction and entity type
+    source: 6
+    checked: '2026-11-23'
+  whitelisting:
+    status: 'not_disclosed'
+    note: cleared matches logged with rationale; suppression on re-screen not described
+    checked: '2026-11-23'
+  calibration_docs:
+    status: 'not_disclosed'
+    note: no public documentation of matching settings
+    checked: '2026-11-23'
+  alert_reporting:
+    status: 'not_disclosed'
+    note: no alert reports described
+    checked: '2026-11-23'
+  model_validation:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-23'
+  transfer_screening:
+    status: 'not_disclosed'
+    note: screens entities; payments not described
+    checked: '2026-11-23'
 integration:
   checked: '2026-11'
   docs_public:
@@ -247,6 +291,11 @@ integration:
   support_hours:
     status: not_disclosed
     note: support email, no hours stated
+  webhooks:
+    status: 'partial'
+    note: outbound webhooks in alpha, access on request
+    source: 18
+    checked: '2026-11-23'
 track_record:
   ownership:
     status: stable
@@ -370,6 +419,10 @@ sources:
 - title: Strise Connect API reference (clientAccessTokenGenerate)
   publisher: Strise
   url: https://graphql.strise.ai/connect/docs/llms.mdx/mutations/client-access-token-generate
+  accessed: '2026-11'
+- title: Webhooks
+  publisher: Strise
+  url: https://docs.strise.ai/api/webhooks/
   accessed: '2026-11'
 entity:
   wikidata: null

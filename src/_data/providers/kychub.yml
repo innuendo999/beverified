@@ -169,8 +169,11 @@ capabilities:
     source: 2
   case_management:
     status: 'yes'
+    four_eyes: 'partial'
+    four_eyes_source: 7
     note: alert triage to SAR filing
     source: 7
+    checked: '2026-11-23'
   identity_verification:
     status: 'yes'
     note: documents, liveness and face match
@@ -213,9 +216,11 @@ capabilities:
     note: continuous monitoring with risk status alerts
     source: 9
   list_updates:
-    status: partial
+    status: 'partial'
+    hours: 24
     note: daily updates stated, lists not named
     source: 9
+    checked: '2026-11-23'
   pep_tiers:
     status: not_disclosed
     note: PEP screening, no tiers or RCA described
@@ -241,6 +246,45 @@ capabilities:
     status: add_on
     note: region-specific data residency, Enterprise tier
     source: 2
+  list_coverage:
+    status: 'not_disclosed'
+    lists: []
+    note: 1000s of sanctions lists in 200+ countries; no list named
+    checked: '2026-11-23'
+  data_provenance:
+    status: 'not_disclosed'
+    note: data source not stated
+    checked: '2026-11-23'
+  transliteration:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-23'
+  secondary_identifiers:
+    status: 'not_disclosed'
+    note: contextual matching and entity resolution; identifiers not named
+    checked: '2026-11-23'
+  whitelisting:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-23'
+  calibration_docs:
+    status: 'not_disclosed'
+    note: no public documentation of matching settings
+    checked: '2026-11-23'
+  alert_reporting:
+    status: 'partial'
+    note: regulator reports and case progress from case data; no alert reports
+    source: 7
+    checked: '2026-11-23'
+  model_validation:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-23'
+  transfer_screening:
+    status: 'yes'
+    note: screens customers, payments and transactions in real time
+    source: 9
+    checked: '2026-11-23'
 integration:
   checked: '2026-11'
   docs_public:
@@ -266,6 +310,10 @@ integration:
   support_hours:
     status: not_disclosed
     note: no support hours published
+  webhooks:
+    status: 'not_disclosed'
+    note: APIs and email notifications; no webhooks described
+    checked: '2026-11-23'
 track_record:
   ownership:
     status: stable
