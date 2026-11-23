@@ -179,7 +179,7 @@ Approved to plan, not to build yet (owner, 2026-11-23):
 - `category_scores.aml{ score, breakdown[], methodology: aml-1.0, scored }`, written by `scripts/rescore-aml.mjs --write`, never by hand.
 - Category file `aml.yml`: `score_source: category`, `score_label: AML score`, `rubric: rubricAmlRanking`, `methodology_label: AML 1.0`, `methodology_anchor: '#aml'`.
 
-## Page (proposal, needs owner approval before it is built)
+## Page (owner approved the canvas "BeVerified: AML ranking page, redesign proposal", 2026-11-23; built)
 
 - Ranking layout v2 with the AML score labelled "AML score", and the top 3 table columns: core lists, stated update time, match controls, published screening price.
 - A plain line next to the table on what the score does not measure.

@@ -85,7 +85,42 @@ export function travelRuleChips(q, fit) {
 }
 
 // Columns of the top 3 table and the list chips for one ranking (category file `evidence`).
+
+// ---- AML (AML 1.0, proposal 2026-11-23, canvas "BeVerified: AML ranking page, redesign proposal").
+// Green only for a check someone other than the vendor confirmed (an ISO/IEC 27001 certificate we opened).
+const amlLists = (q) => ["ofac", "eu", "uk", "un"].filter((l) => (q?.capabilities?.list_coverage?.lists || []).includes(l));
+const LIST_NAME = { ofac: "OFAC", eu: "EU", uk: "UK", un: "UN" };
+const amlUpdates = (q) => {
+  const h = q?.capabilities?.list_updates?.hours;
+  return !h ? "No update time stated" : h <= 1 ? "Within 1 hour" : h <= 24 ? "Daily" : "Some sources monthly";
+};
+const amlMatch = (q) => ["fuzzy_matching", "transliteration", "secondary_identifiers", "whitelisting"].filter((k) => has(q?.capabilities?.[k])).length;
+export function amlTop3(q) {
+  const l = amlLists(q);
+  return { cols: [
+    { label: "Core sanctions lists", icon: "sanctions", ok: "", text: l.length ? l.map((x) => LIST_NAME[x]).join(", ") : "Not named" },
+    { label: "List updates", icon: "clock", ok: "", text: amlUpdates(q) },
+    { label: "Match controls", icon: "search", ok: "", text: `${amlMatch(q)} of 4` },
+  ] };
+}
+export function amlChips(q) {
+  if (!q) return [];
+  const c = q.capabilities || {}, out = [];
+  if (certs(q).some((x) => /27001/.test(x.name) && x.status === "confirmed")) out.push({ label: "ISO/IEC 27001 certified", ok: true, icon: "certificate" });
+  const n = amlLists(q).length;
+  out.push({ label: n === 4 ? "All 4 core lists named" : n === 3 ? "3 of 4 core lists named" : "Core lists not named", ok: false, icon: "sanctions" });
+  const u = amlUpdates(q);
+  out.push({ label: u === "Within 1 hour" ? "Lists updated within 1 hour" : u === "Daily" ? "Lists updated daily" : u, ok: false, icon: "clock" });
+  if (has(c.transliteration)) out.push({ label: "Transliteration", ok: false, icon: "languages" });
+  const t = c.ongoing_monitoring?.trigger;
+  if (t) out.push({ label: t === "list_change" ? "Re-screens on list change" : "Re-screens daily", ok: false, icon: "refresh" });
+  if (["yes", "add_on"].includes(c.transfer_screening?.status)) out.push({ label: "Payment screening", ok: false, icon: "transfer" });
+  if (q.integration?.webhooks?.status === "yes") out.push({ label: "Webhooks", ok: false, icon: "integration" });
+  return out.slice(0, 3);
+}
+
 export function v2Evidence(c, q, fit) {
+  if (c.evidence === "aml") return { ...amlTop3(q), chips: amlChips(q) };
   if (c.evidence === "travel-rule") return { ...travelRuleTop3(q, fit), chips: travelRuleChips(q, fit) };
   const f = top3Facts(q);
   return {

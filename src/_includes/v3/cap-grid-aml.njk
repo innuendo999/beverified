@@ -1,0 +1,33 @@
+{#- AML capabilities grid (owner chose variant B on the canvas "BeVerified: AML ranking page, redesign proposal",
+    2026-11-23). Data: capGrid from src/_lib/aml-grid.js. Marks: filled = stated in the core product, outlined =
+    add-on or partly stated, ✕ = not offered, short line = not stated on public pages. Never green: vendor-stated only. -#}
+{%- macro cell(x) -%}
+{%- if x.lists -%}<span class="cg-lists">{% for l in x.lists %}<span class="cg-list{% if l.on %} is-on{% endif %}">{{ l.label }}<span class="visually-hidden">{% if l.on %} named{% else %} not named{% endif %}</span></span>{% endfor %}</span>
+{%- elif x.mark == "yes" %}<span class="cg-m cg-m--yes">{% icon "check", "Yes" %}</span>{% if x.text %}<span class="cg-v">{{ x.text }}</span>{% endif %}
+{%- elif x.mark == "half" %}<span class="cg-m cg-m--half">{% icon "check" %}</span><span class="cg-tag">{{ x.tag }}</span>{% if x.text %}<span class="cg-v">{{ x.text }}</span>{% endif %}
+{%- elif x.mark == "no" %}<span class="cg-m cg-m--no" role="img" aria-label="Not offered">✕</span>
+{%- elif x.mark == "nd" %}<span class="cg-m cg-m--nd" role="img" aria-label="Not stated"></span>
+{%- else %}<span class="cg-v{% if x.strong %} cg-v--strong{% endif %}">{{ x.value }}</span>{% endif %}
+{%- endmacro %}
+<p class="cap-legend">What each vendor states on its own pages{% if capGrid.checked %}, checked {{ capGrid.checked | displayDate }}{% endif %}. Sources for every cell are on the provider's review.</p>
+<div class="card cg">
+  <div class="cg__scroll" role="region" aria-label="Capabilities table, scrolls sideways" tabindex="0">
+    <table class="cg-table">
+      <caption class="visually-hidden">{{ c.breadcrumb_label }}: lists, matching, monitoring, integration and price of each ranked provider, from each vendor's own pages.</caption>
+      <thead>
+        <tr class="cg-groups"><td class="cg-corner"></td>{% for g in capGrid.groups %}<th scope="colgroup" colspan="{{ g.cols.length }}" class="cg-gs"><span class="cg-gh">{% icon g.icon %}{{ g.label }}</span></th>{% endfor %}</tr>
+        <tr class="cg-cols"><th scope="col" class="cg-first">Provider · {{ c.score_label or "Score" }}</th>{% for g in capGrid.groups %}{% for col in g.cols %}<th scope="col"{% if loop.first %} class="cg-gs"{% endif %}>{{ col[1] }}</th>{% endfor %}{% endfor %}</tr>
+      </thead>
+      <tbody>
+      {%- for r in capGrid.rows %}
+        <tr{% if r.rank == 1 %} class="is-first"{% endif %}>
+          <th scope="row" class="cg-first"><a class="cg-prov" href="/providers/{{ r.slug }}/"><span class="cg-rank">{{ r.rank | pad2 }}</span><span class="cg-brand">{% if r.wordmark %}<img src="{{ r.wordmark }}" alt="{{ r.name }}" loading="lazy">{% else %}<span class="cg-tile" style="background: {{ r.tileBg }}"><img src="{{ r.logo }}" alt="" loading="lazy" style="object-fit: {{ r.tileFit }}"></span><span class="cg-wm">{{ r.name }}</span>{% endif %}</span><span class="cg-score">{{ r.score | score1 }}</span></a></th>
+          {%- for g in capGrid.groups %}{% for col in g.cols %}<td{% if loop.first %} class="cg-gs"{% endif %}>{{ cell(r.cells[col[0]]) }}</td>{% endfor %}{% endfor %}
+        </tr>
+      {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="cg-key"><span><span class="cg-m cg-m--yes">{% icon "check" %}</span>Stated, in the core product</span><span><span class="cg-m cg-m--half">{% icon "check" %}</span>Add-on, or partly stated</span><span><span class="cg-m cg-m--no">✕</span>Not offered</span><span><span class="cg-m cg-m--nd"></span>Not stated on public pages</span><span><span class="cg-lists"><span class="cg-list is-on">OFAC</span><span class="cg-list">UK</span></span>List named, not named</span></div>
+  <div class="r2-mrz" aria-hidden="true">{{ ("CAP<<" + c.slug + "<<" + site.v3.awards.year + "<<LISTS<<MATCHING<<MONITORING<<INTEGRATION<<PRICE") | mrzLine }}</div>
+</div>
