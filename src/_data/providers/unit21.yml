@@ -157,12 +157,16 @@ capabilities:
   checked: '2026-10'
   ongoing_monitoring:
     status: 'yes'
+    trigger: list_change
+    trigger_source: 9
     note: re-screening when watchlists change
     source: 9
+    checked: '2026-11-23'
   list_updates:
-    status: partial
+    status: 'partial'
     note: OFAC and global lists, update frequency not stated
     source: 1
+    checked: '2026-11-23'
   pep_tiers:
     status: not_disclosed
     note: PEP lists named, no tiers or RCA stated
@@ -188,6 +192,45 @@ capabilities:
   data_residency:
     status: not_disclosed
     note: storage region not stated
+  list_coverage:
+    status: 'partial'
+    lists: [ofac]
+    note: OFAC named on the homepage; screening page says only global sanctions lists
+    source: 1
+    checked: '2026-11-23'
+  data_provenance:
+    status: 'not_disclosed'
+    note: data source not stated
+    checked: '2026-11-23'
+  transliteration:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-23'
+  secondary_identifiers:
+    status: 'not_disclosed'
+    note: filters by entity type, risk level and jurisdiction; DOB or nationality not named
+    checked: '2026-11-23'
+  whitelisting:
+    status: 'not_disclosed'
+    note: threshold changes only; suppression of cleared matches not described
+    checked: '2026-11-23'
+  calibration_docs:
+    status: 'not_disclosed'
+    note: documentation behind a login
+    checked: '2026-11-23'
+  alert_reporting:
+    status: 'not_disclosed'
+    note: no alert reports described
+    checked: '2026-11-23'
+  model_validation:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-23'
+  transfer_screening:
+    status: 'yes'
+    note: screens customers, counterparties and transactions
+    source: 9
+    checked: '2026-11-23'
 integration:
   checked: '2026-11'
   docs_public:
@@ -213,6 +256,10 @@ integration:
   support_hours:
     status: not_disclosed
     note: support SLA page needs a login
+  webhooks:
+    status: 'not_disclosed'
+    note: documentation behind a login
+    checked: '2026-11-23'
 track_record:
   ownership:
     status: stable
