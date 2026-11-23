@@ -74,7 +74,7 @@ layout: v3.njk
 </section>
 
 <section id="use-case" class="container home-section" aria-labelledby="uc-h">
-  <div class="section-head"><h2 id="uc-h" class="h-split h-split--xl">Pick by use case.<span>One ranking for each job</span></h2><a class="btn btn--secondary btn--sm" href="/use-cases/">All use cases</a></div>
+  <div class="section-head"><div><h2 id="uc-h" class="h-plain">Rankings by use case</h2><p class="section-sub">Each ranking compares providers for one job and is ordered by score.</p></div><a class="section-link" href="/use-cases/">All use cases →</a></div>
   {#- Layout A (owner, 2026-11-10). Data: index.11tydata.js → useCaseGroups (top 3 from rankings.yml, sponsor from placements.yml).
       Without JS every panel is shown in a plain list. With JS (.is-live): desktop = buttons on the left, one panel on the right;
       under 860px = accordion (button, then its panel). Each button controls the panel with the same id. -#}
@@ -156,7 +156,7 @@ layout: v3.njk
 </section>
 
 <section id="region" class="container home-section" aria-labelledby="rg-h">
-  <div class="section-head"><h2 id="rg-h" class="h-split h-split--xl">Pick by region.<span>Local regulators, local documents</span></h2><a class="btn btn--secondary btn--sm" href="/providers/">All providers</a></div>
+  <div class="section-head"><div><h2 id="rg-h" class="h-plain">Rankings by country</h2><p class="section-sub">Each ranking looks at the local checks that matter in that country.</p></div><a class="section-link" href="/regions/">All regions →</a></div>
   {#- Pixel map: land grid from src/_data/regionGrid.json (scripts/region-map.mjs), pins and cards from index.11tydata.js → regionMap.
       Without JS the pins and cards are plain links; the script draws the map and moves the open card. -#}
   <div class="card rmap" data-rmap>
@@ -232,7 +232,7 @@ layout: v3.njk
 </section>
 
 <section id="top-rated" class="container home-section" aria-labelledby="tr-h">
-  <div class="section-head"><h2 id="tr-h" class="h-split h-split--xl">Top rated providers.<span>In true score order</span></h2><a class="btn btn--secondary btn--sm" href="/providers/">See all providers</a></div>
+  <div class="section-head"><div><h2 id="tr-h" class="h-plain">Highest scores across all reviews</h2><p class="section-sub">Editorial scores from our methodology, highest first.</p></div><a class="section-link" href="/providers/">All providers A to Z →</a></div>
   <ol class="grid-4 top-grid">
     {%- for p in topRated %}
     <li>
