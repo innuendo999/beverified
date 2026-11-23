@@ -1,7 +1,7 @@
 name: Price watch
 
 # Daily read of the vendor pricing pages our records cite (KYC cost calculator, Pricing Index, provider finder).
-# Writes only to the `price-watch` branch (never to main, so it never triggers a deploy).
+# Writes only to the `price-watch-state` branch (never to main, so it never triggers a deploy).
 # A scheduled Claude task reads price-watch/latest.md once a week and opens a PR for the
 # owner when a record needs a change. Spec: docs/price-watch.md
 
@@ -29,11 +29,11 @@ jobs:
       - run: npm ci
       - name: Check out the state branch
         run: |
-          if git ls-remote --exit-code --heads origin price-watch; then
-            git fetch --depth 1 origin price-watch
-            git worktree add -B price-watch state origin/price-watch
+          if git ls-remote --exit-code --heads origin price-watch-state; then
+            git fetch --depth 1 origin price-watch-state
+            git worktree add -B price-watch-state state origin/price-watch-state
           else
-            git worktree add --orphan -b price-watch state
+            git worktree add --orphan -b price-watch-state state
           fi
       - name: Watch
         run: node scripts/price-watch/watch.mjs --state state/price-watch
@@ -47,7 +47,7 @@ jobs:
             echo "No changes"
           else
             git commit -m "Price watch $(date -u +%F)"
-            git push origin price-watch
+            git push origin price-watch-state
           fi
       - name: Summary
         run: cat state/price-watch/latest.md >> "$GITHUB_STEP_SUMMARY"

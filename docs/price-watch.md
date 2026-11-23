@@ -4,7 +4,7 @@ Calculator PR 3 (owner, 2026-11-20 plan; built 2026-11-23). Keeps the prices beh
 
 ## What it does
 
-`scripts/price-watch/watch.mjs`, run daily by `.github/workflows/price-watch.yml` (05:37 UTC), writes only to branch `price-watch`, folder `price-watch/`:
+`scripts/price-watch/watch.mjs`, run daily by `.github/workflows/price-watch.yml` (05:37 UTC), writes only to branch `price-watch-state`, folder `price-watch/`:
 
 1. Collects every vendor page that a published record cites for an `official` pricing item with a money value (32 pages on 23 Nov 2026).
 2. Reads each page (fetch, then curl), turns it into text and lists the money figures on it ($, €, £, USD, EUR, GBP, CHF).
