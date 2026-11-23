@@ -10,12 +10,12 @@ Approved by the owner on 2026-11-23:
 
 1. Phase 1 uses public evidence only. BeVerified's own sandbox tests (time to list, match test set) are phase 2, added when vendor access exists; see "Phase 2". Until then the page says plainly what the score cannot measure.
 2. Buyer profile (ICP): **fintechs, e-money institutions, payment firms and crypto-asset service providers** in the EU, UK and US, roughly 1,000 to 500,000 customers screened, with a compliance team of 1 to 10 people. Buyer: MLRO or head of compliance, with engineering for the integration. Banks are served by `aml/banks`.
+3. A platform whose main product is not AML (for example an identity verification suite with a screening module) is eligible only under eligibility rule 4: at least 2 points in both data and match controls from its own documentation (option A, 2026-11-23).
 
 Proposed, waiting for the owner:
 
-3. The ranking gets its own rubric under the standing rule of 2026-11-05: a separate score per category, the ranking sorts by it, the overall score on reviews is unchanged.
-4. One AML ranking for now. A separate sanctions-screening ranking only if search demand shows it.
-5. A platform whose main product is not AML (for example an identity verification suite with a screening module) is eligible only under eligibility rule 4.
+4. The ranking gets its own rubric under the standing rule of 2026-11-05: a separate score per category, the ranking sorts by it, the overall score on reviews is unchanged.
+5. One AML ranking for now. A separate sanctions-screening ranking only if search demand shows it.
 6. Vendor accuracy figures ("90% fewer false positives", "99% match accuracy") never enter the score: they use different samples and methods and cannot be compared. Counts of lists or profiles without names do not score either.
 7. Platform breadth has no weight here. Modules stay visible in the capability matrix on the page.
 
@@ -41,7 +41,7 @@ All must hold, each stored with a source and a date:
 1. The provider has a published BeVerified review, scored on v3.1.
 2. It sells name screening against sanctions and PEP data itself (`capabilities.sanctions_pep` is `yes` or `add_on`) and ongoing monitoring (`capabilities.ongoing_monitoring` is `yes` or `add_on`).
 3. The product is generally available.
-4. Proposed (decision 5): if `primary_category` is not an AML category, the provider is eligible only when its own public documentation earns at least 2 points in both "Sanctions, PEP and media data" and "Match quality controls". A screening module described in one marketing line is not enough.
+4. If `primary_category` is not an AML category, the provider is eligible only when its own public documentation earns at least 2 points in both "Sanctions, PEP and media data" and "Match quality controls". A screening module described in one marketing line is not enough.
 
 A provider that fails a rule is left out, not scored low.
 
