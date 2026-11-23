@@ -41,6 +41,7 @@
 {% include "v3/header.njk" %}
 {{ content | safe }}
 {% include "v3/footer.njk" %}
+{%- if finder and not (page.url in site.v3.finder.exclude) %}{% include "v3/finder.njk" %}{% endif %}
 {% include "v3/consent.njk" %}
 <script>
 (function () {

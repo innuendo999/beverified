@@ -535,6 +535,13 @@
     "promoHide": [
       "onfido"
     ],
-    "promoHideNote": "Providers left out of promotional spots (mega menu top 3, homepage region map). Owner, 2026-11-10: Onfido brand search is expected to fall after the Entrust rebrand. Rankings and reviews are not affected."
+    "promoHideNote": "Providers left out of promotional spots (mega menu top 3, homepage region map). Owner, 2026-11-10: Onfido brand search is expected to fall after the Entrust rebrand. Rankings and reviews are not affected.",
+    "finder": {
+      "note": "Provider finder, bottom right on every v3 page except exclude (owner approved the canvas 'BeVerified: Provider finder widget, logic and design', 2026-11-23). Data src/_data/finder.js, include src/_includes/v3/finder.njk, styles .fd-* in v3.css.",
+      "exclude": ["/methodology/", "/terms/", "/privacy/"],
+      "needs": [["kyc", "Verify people (KYC)"], ["kyb", "Verify businesses (KYB)"], ["aml", "AML screening and monitoring"], ["travel-rule", "Crypto Travel Rule"], ["age-verification", "Age verification"], ["liveness-detection", "Liveness and deepfakes"], ["know-your-agent", "AI agents (KYA)"]],
+      "biz": [["crypto", "Crypto exchange or wallet"], ["aml/banks", "Bank or credit union"], ["e-kyc", "Remote onboarding (eKYC)"], ["cheap-kyc", "Startup on a budget"]],
+      "costLists": ["kyc", "e-kyc", "cheap-kyc", "age-verification", "liveness-detection", "crypto", "identity-verification"]
+    }
   }
 }

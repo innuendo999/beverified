@@ -1,0 +1,206 @@
+{#- Provider finder, bottom right (owner approved the canvas "BeVerified: Provider finder widget, logic and design", 2026-11-23).
+    Launcher = ID card tab with a scan frame and an MRZ line; the panel loads /assets/finder.json on first open.
+    Context: a review prefills its ranking and leaves the provider out; a ranking page prefills its category or country.
+    Hidden without JS. Styles .fd-* at the end of v3.css. Spec docs/provider-finder.md. -#}
+{%- set fd = { need: "", country: "", alt: "", label: "Find a provider", mrz: "KYC<AML<KYB<TRAVEL<RULE<<" } -%}
+{%- if p and p.slug and page.url == "/providers/" + p.slug + "/" and finder.providers[p.slug] and finder.providers[p.slug].home -%}
+  {%- set fdNeed = finder.providers[p.slug].home -%}
+  {%- set fd = { need: fdNeed, country: "", alt: p.slug, label: "Alternatives to " + p.name, mrz: (p.name + "<<" + finder.lists[fdNeed].name + "<RANKING") | mrz } -%}
+{%- elif c and c.slug and finder.regionByRank[c.slug] -%}
+  {%- set fdC = finder.regionByRank[c.slug] -%}
+  {%- set fd = { need: "", country: fdC.id, alt: "", label: "Providers for " + fdC.name, mrz: (fdC.name + "<<KYC<AML<KYB") | mrz } -%}
+{%- elif c and c.slug and finder.lists[c.slug] -%}
+  {%- set fd = { need: c.slug, country: "", alt: "", label: "Find a provider", mrz: (finder.lists[c.slug].name + "<<RANKING") | mrz } -%}
+{%- endif %}
+<div class="fd" id="finder" data-fd-need="{{ fd.need }}" data-fd-country="{{ fd.country }}" data-fd-alt="{{ fd.alt }}" hidden>
+  <button type="button" class="fd-launch" aria-expanded="false" aria-controls="fd-panel" aria-label="{{ fd.label }}">
+    <svg class="fd-frame" width="36" height="36" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path class="fd-frame__c" d="M2 11V5a3 3 0 0 1 3-3h6M29 2h6a3 3 0 0 1 3 3v6M38 29v6a3 3 0 0 1-3 3h-6M11 38H5a3 3 0 0 1-3-3v-6" stroke-width="2.2" stroke-linecap="round"/><circle cx="20" cy="16" r="5.5" stroke="currentColor" stroke-width="1.8"/><path d="M10.5 31c1.6-4.6 5.1-7 9.5-7s7.9 2.4 9.5 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    <span class="fd-launch__txt"><span class="fd-launch__label">{{ fd.label }}</span><span class="fd-launch__mrz" aria-hidden="true">{{ fd.mrz }}</span></span>
+    <svg class="fd-launch__chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg>
+  </button>
+  <div class="fd-backdrop" hidden></div>
+  <section class="fd-panel" id="fd-panel" role="dialog" aria-modal="false" aria-labelledby="fd-h" hidden>
+    <header class="fd-head">
+      <button type="button" class="fd-icon-btn fd-back" aria-label="Back" hidden><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <svg class="fd-frame fd-head__frame" width="36" height="36" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path class="fd-frame__c" d="M2 11V5a3 3 0 0 1 3-3h6M29 2h6a3 3 0 0 1 3 3v6M38 29v6a3 3 0 0 1-3 3h-6M11 38H5a3 3 0 0 1-3-3v-6" stroke-width="2.2" stroke-linecap="round"/><circle cx="20" cy="16" r="5.5" stroke="currentColor" stroke-width="1.8"/><path d="M10.5 31c1.6-4.6 5.1-7 9.5-7s7.9 2.4 9.5 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <div class="fd-head__txt"><h2 id="fd-h">Find a provider</h2><p class="fd-sub" aria-live="polite"></p></div>
+      <button type="button" class="fd-icon-btn fd-close" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </header>
+    <div class="fd-body" tabindex="-1"></div>
+  </section>
+</div>
+<script>
+(function () {
+  var root = document.getElementById("finder");
+  if (!root || !window.fetch) return;
+  var launch = root.querySelector(".fd-launch"), panel = root.querySelector(".fd-panel"), body = root.querySelector(".fd-body");
+  var sub = root.querySelector(".fd-sub"), back = root.querySelector(".fd-back"), closeBtn = root.querySelector(".fd-close"), shade = root.querySelector(".fd-backdrop");
+  var KEY = "bv-finder", D = null, st = { step: "need", need: null, country: null, price: null, vol: 1000 };
+  var ctx = { need: root.getAttribute("data-fd-need"), country: root.getAttribute("data-fd-country"), alt: root.getAttribute("data-fd-alt") };
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) {}
+  ["need", "country", "price", "vol"].forEach(function (k) { if (saved[k] != null) st[k] = saved[k]; });
+  if (ctx.need) st.need = ctx.need;
+  if (ctx.country) st.country = ctx.country;
+  if (saved.closed) root.classList.add("is-compact");
+  function track(name, params) { if (window.gtag) try { window.gtag("event", name, params || {}); } catch (e) {} }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify({ need: st.need, country: st.country, price: st.price, vol: st.vol, closed: root.classList.contains("is-compact") })); } catch (e) {} }
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function money(x) { return x > 0 && x < 10 ? "$" + x.toFixed(2) : "$" + Math.round(x).toLocaleString("en-US"); }
+  function cost(slug, n) {
+    var c = null; D.calc.forEach(function (x) { if (x.slug === slug) c = x; });
+    if (!c || (c.quoteAbove && n > c.quoteAbove)) return null;
+    var best = null;
+    c.opts.forEach(function (o) { var v = o.top ? n * o.per + o.min : Math.max(n * o.per, o.min); if (!best || v < best.v) best = { v: v, plan: o.plan }; });
+    return best;
+  }
+  function country(id) { var r = D.countries[0]; D.countries.forEach(function (c) { if (c.id === id) r = c; }); return r; }
+  function chip(label, on, pick, cls) {
+    var b = el("button", "fd-chip" + (cls ? " " + cls : "")); b.type = "button"; b.setAttribute("aria-pressed", on ? "true" : "false");
+    if (typeof label === "string") b.textContent = label; else label.forEach(function (n) { b.appendChild(n); });
+    b.addEventListener("click", pick); return b;
+  }
+  function go(step) { st.step = step; save(); render(); body.focus({ preventScroll: true }); }
+  function render() {
+    var steps = ["need", "where", "price", "results"], i = steps.indexOf(st.step);
+    back.hidden = i < 1; root.querySelector(".fd-head__frame").style.display = i < 1 ? "" : "none";
+    sub.textContent = st.step === "results" ? "Matches from our rankings" : "Question " + (i + 1) + " of 3";
+    body.textContent = "";
+    if (st.step === "need") {
+      body.appendChild(el("p", "fd-q", "What do you need to check?"));
+      var g = el("div", "fd-chips");
+      D.needs.forEach(function (n) { if (D.lists[n[0]]) g.appendChild(chip(n[1], st.need === n[0], function () { st.need = n[0]; track("finder_answer", { step: "need", value: n[0] }); go(ctx.country ? "price" : "where"); })); });
+      body.appendChild(g);
+      body.appendChild(el("p", "fd-q fd-q--small", "Or start from your business"));
+      var b2 = el("div", "fd-chips");
+      D.biz.forEach(function (n) { if (D.lists[n[0]]) b2.appendChild(chip(n[1], st.need === n[0], function () { st.need = n[0]; track("finder_answer", { step: "need", value: n[0] }); go(ctx.country ? "price" : "where"); })); });
+      body.appendChild(b2);
+    } else if (st.step === "where") {
+      body.appendChild(el("p", "fd-q", "Where are your customers?"));
+      var g3 = el("div", "fd-chips");
+      D.countries.forEach(function (c) { g3.appendChild(chip(c.name, st.country === c.id, function () { st.country = c.id; track("finder_answer", { step: "country", value: c.id }); go("price"); }, c.rank ? "fd-chip--ranked" : "")); });
+      body.appendChild(g3);
+      body.appendChild(el("p", "fd-hint", "Countries in bold have a BeVerified country ranking. For the others we show the category ranking and say so."));
+    } else if (st.step === "price") {
+      body.appendChild(el("p", "fd-q", "How should we treat price?"));
+      var g4 = el("div", "fd-chips fd-chips--col");
+      var opts = [["any", "Doesn't matter", "Show the ranking order"], ["public", "Only public prices", "Hide providers that quote on request"]];
+      if (D.costLists.indexOf(st.need) > -1) opts.push(["volume", "Estimate my monthly cost", "From published list prices for a full KYC check"]);
+      opts.forEach(function (o) {
+        g4.appendChild(chip([el("span", "fd-chip__t", o[1]), el("span", "fd-chip__h", o[2])], st.price === o[0], function () {
+          st.price = o[0]; track("finder_answer", { step: "price", value: o[0] });
+          if (o[0] === "volume") { save(); render(); var v = body.querySelector("input"); if (v) v.focus(); } else go("results");
+        }, "fd-chip--block"));
+      });
+      body.appendChild(g4);
+      if (st.price === "volume" && D.costLists.indexOf(st.need) > -1) {
+        var lab = el("label", "fd-label", "Verifications a month"); lab.htmlFor = "fd-vol";
+        var row = el("div", "fd-volrow"), inp = el("input", "fd-in"); inp.id = "fd-vol"; inp.type = "number"; inp.min = "1"; inp.inputMode = "numeric"; inp.value = st.vol;
+        inp.addEventListener("input", function () { st.vol = inp.value; });
+        inp.addEventListener("keydown", function (e) { if (e.key === "Enter") go("results"); });
+        var b = el("button", "btn btn--primary", "Show matches"); b.type = "button"; b.addEventListener("click", function () { go("results"); });
+        row.appendChild(inp); row.appendChild(b); body.appendChild(lab); body.appendChild(row);
+      }
+    } else results();
+  }
+  function results() {
+    var L = D.lists[st.need]; if (!L) { st.step = "need"; return render(); }
+    var n = Math.max(1, Math.round(Number(st.vol) || 0));
+    var vol = st.price === "volume" && D.costLists.indexOf(st.need) > -1;
+    var priceMode = st.price === "volume" && !vol ? "any" : st.price;
+    // Country rankings cover identity checks only, so they shape identity results; other categories get a plain note.
+    var idv = D.costLists.indexOf(st.need) > -1;
+    var c = country(st.country), R = idv && c.rank && D.lists[c.rank] ? D.lists[c.rank].slugs : null;
+    var list = L.slugs.filter(function (s) { return s !== ctx.alt; }), pool = list.slice(), tags = {}, note = "";
+    if (R) {
+      var inR = list.filter(function (s) { return R.indexOf(s) > -1; }), rest = list.filter(function (s) { return R.indexOf(s) < 0; });
+      inR.forEach(function (s) { tags[s] = "In our " + c.name + " ranking"; });
+      pool = inR.concat(rest);
+    } else if (c.rank && !idv) {
+      note = "Our " + c.name + " ranking covers identity checks only, so these come from the " + L.name + " ranking. Check " + c.name + " support with the vendor.";
+    } else if (st.country && st.country !== "world") {
+      note = "We have no " + c.name + " ranking yet, so these come from the " + L.name + " ranking. Check " + c.name + " support with the vendor.";
+    }
+    if (priceMode === "public") pool = pool.filter(function (s) { return D.providers[s].price; });
+    if (vol) pool = pool.filter(function (s) { return cost(s, n); });
+    var shown = pool.slice(0, 3);
+    if (R) {
+      var inShown = shown.filter(function (s) { return tags[s]; }).length;
+      if (inShown < shown.length) note = (inShown ? "Only " + inShown + " of these " + (inShown === 1 ? "is" : "are") : "None of these is") + " in our " + c.name + " ranking. The others come from the " + L.name + " ranking: check " + c.name + " support with the vendor.";
+    }
+    var chips = el("div", "fd-answers");
+    [[L.name, "need"], [c.name, "where"], [({ any: "Any price", public: "Public prices", volume: n.toLocaleString("en-US") + " checks a month" })[priceMode] || "Any price", "price"]].forEach(function (a) {
+      var b = el("button", "fd-answer"); b.type = "button"; b.textContent = a[0]; b.setAttribute("aria-label", "Change: " + a[0]);
+      b.addEventListener("click", function () { go(a[1]); }); chips.appendChild(b);
+    });
+    body.appendChild(chips);
+    if (ctx.alt && D.providers[ctx.alt]) body.appendChild(el("p", "fd-hint", "Alternatives to " + D.providers[ctx.alt].name + ", which is left out of this list."));
+    if (note) body.appendChild(el("p", "fd-note", note));
+    var paid = shown.some(function (s) { var x = D.providers[s].in[st.need]; return x.site && x.site.paid; });
+    var order = R ? "Providers in our " + c.name + " ranking first, then by rank" : "In ranking order";
+    var disc = el("p", "fd-disc", order + (vol ? ", with your monthly cost at list prices. " : ". ") + (paid ? "Some links earn us a commission. " : "") + "Payment never changes a rank. ");
+    var how = el("a", null, "How we earn"); how.href = "/methodology/#advertising"; disc.appendChild(how);
+    body.appendChild(disc);
+    if (!shown.length) body.appendChild(el("p", "fd-hint", priceMode === "public" || vol ? "No provider in this ranking publishes a price for this. Change the price answer to see the ranking." : "No match."));
+    var ol = el("ol", "fd-list");
+    shown.forEach(function (s) {
+      var p = D.providers[s], x = p.in[st.need], li = el("li", "fd-row");
+      var top = el("div", "fd-row__top");
+      top.appendChild(el("span", "fd-rank", "#" + (L.slugs.indexOf(s) + 1)));
+      var a = el("a", "fd-name", p.name); a.href = p.url; a.addEventListener("click", function () { track("finder_click", { provider: s, link: "review", list: st.need }); }); top.appendChild(a);
+      if (x.score != null) top.appendChild(el("span", "fd-score", Number(x.score).toFixed(1) + " / 5"));
+      if (tags[s]) top.appendChild(el("span", "fd-tag", tags[s]));
+      li.appendChild(top);
+      if (x.award) li.appendChild(el("p", "fd-award", x.award));
+      if (x.line) li.appendChild(el("p", "fd-line", x.line));
+      var foot = el("div", "fd-row__foot"), cc = vol ? cost(s, n) : null;
+      foot.appendChild(el("span", "fd-price", cc ? money(cc.v) + " a month on " + cc.plan : (p.price || "Price on request")));
+      var acts = el("span", "fd-acts"), r = el("a", null, "Review"); r.href = p.url; acts.appendChild(r);
+      if (x.site) { var v = el("a", null, x.site.label + " ↗"); v.href = x.site.url; v.rel = x.site.rel; v.target = "_blank"; v.addEventListener("click", function () { track("finder_click", { provider: s, link: "site", list: st.need }); }); acts.appendChild(v); }
+      foot.appendChild(acts); li.appendChild(foot); ol.appendChild(li);
+    });
+    body.appendChild(ol);
+    var more = el("div", "fd-more"), all = el("a", null, "See all " + L.slugs.length + " in the " + L.name + " ranking"); all.href = L.url; more.appendChild(all);
+    if (vol) { var pi = el("a", null, "Compare every public price in the KYC Pricing Index"); pi.href = "/publications/kyc-pricing-index/#calculator"; more.appendChild(pi); }
+    var rs = el("button", "fd-reset", "Start again"); rs.type = "button";
+    rs.addEventListener("click", function () { st.need = ctx.need || null; st.country = ctx.country || null; st.price = null; go(st.need ? (st.country ? "price" : "where") : "need"); });
+    more.appendChild(rs); body.appendChild(more);
+    track("finder_results", { list: st.need, country: st.country || "world", price: priceMode || "any", shown: shown.length });
+  }
+  function open() {
+    var first = !D;
+    (D ? Promise.resolve(D) : fetch("/assets/finder.json").then(function (r) { return r.json(); })).then(function (d) {
+      D = d;
+      if (first) st.step = st.need ? (st.country ? (st.price ? "results" : "price") : "where") : "need";
+      panel.hidden = false; shade.hidden = false; launch.hidden = true; launch.setAttribute("aria-expanded", "true");
+      root.classList.add("is-open"); render(); body.focus({ preventScroll: true });
+      track("finder_open", { context: ctx.alt ? "review" : ctx.country ? "country" : ctx.need ? "ranking" : "page" });
+    });
+  }
+  function close() {
+    panel.hidden = true; shade.hidden = true; launch.hidden = false; launch.setAttribute("aria-expanded", "false");
+    root.classList.remove("is-open"); root.classList.add("is-compact"); save(); launch.focus();
+  }
+  launch.addEventListener("click", open);
+  closeBtn.addEventListener("click", close);
+  shade.addEventListener("click", close);
+  back.addEventListener("click", function () { var s = ["need", "where", "price", "results"], i = s.indexOf(st.step); if (i > 0) go(s[i - 1]); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !panel.hidden) close(); });
+  // Show after the first screen, never over the cookie banner; share the corner with Back to top.
+  var consent = document.getElementById("consent"), lastY = window.scrollY, ticking = false;
+  function place() {
+    ticking = false;
+    var y = window.scrollY, shortPage = document.documentElement.scrollHeight < window.innerHeight * 1.6;
+    root.hidden = !!(consent && !consent.hidden) || !(shortPage || y > window.innerHeight * 0.6);
+    if (window.matchMedia("(max-width: 640px)").matches && !root.classList.contains("is-open")) root.classList.toggle("is-scrolling", y > lastY + 4);
+    lastY = y;
+    if (!root.hidden) document.documentElement.style.setProperty("--fd-w", launch.offsetWidth + "px");
+    document.documentElement.classList.toggle("has-finder", !root.hidden);
+  }
+  function onScroll() { if (!ticking) { ticking = true; window.requestAnimationFrame(place); } }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll);
+  if (consent && window.MutationObserver) new MutationObserver(onScroll).observe(consent, { attributes: true, attributeFilter: ["hidden"] });
+  place();
+})();
+</script>
