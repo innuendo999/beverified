@@ -2113,3 +2113,28 @@ html:not(.mm-js) .mm-item:hover .mm-panel, html:not(.mm-js) .mm-item:focus-withi
 .aw__preview { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 220px; padding: 16px; box-sizing: border-box; border-radius: var(--radius-tile); background: var(--bg); }
 .aw__preview img { max-width: 100%; height: auto; }
 .aw__out textarea { width: 100%; box-sizing: border-box; font: 12px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; padding: 10px 12px; border: 1px solid var(--line-strong); border-radius: var(--radius-btn); background: var(--surface-soft); color: var(--ink); resize: vertical; }
+
+/* Finder launcher, accented (owner, 2026-11-23): inverted colours (ink tile, white icon) and a blue gradient
+   running around the border. The gradient angle is animated through a registered custom property; browsers
+   without @property show a still gradient. No motion with prefers-reduced-motion. */
+@property --fd-a { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
+@keyframes fd-run { to { --fd-a: 360deg; } }
+.fd-launch {
+  color: #FFFFFF;
+  border: 3px solid transparent;
+  background:
+    linear-gradient(var(--ink), var(--ink)) padding-box,
+    conic-gradient(from var(--fd-a), #1F4FD8 0deg, #7FA2FF 45deg, #FFFFFF 75deg, #7FA2FF 105deg, #1F4FD8 150deg, #22336B 210deg, #22336B 300deg, #1F4FD8 360deg) border-box;
+  box-shadow: 0 0 0 1px rgba(11,23,48,0.10), 0 12px 32px rgba(31,79,216,0.32);
+  animation: fd-run 3.2s linear infinite;
+}
+.fd-launch .fd-frame { color: #FFFFFF; }
+.fd-launch .fd-frame__c { stroke: #7FA2FF; }
+.fd-launch__mrz { color: #9AA6BA; }
+.fd-launch__chev { color: #9AA6BA; }
+.fd-launch:hover { border-color: transparent; background:
+    linear-gradient(#16244A, #16244A) padding-box,
+    conic-gradient(from var(--fd-a), #1F4FD8 0deg, #7FA2FF 45deg, #FFFFFF 75deg, #7FA2FF 105deg, #1F4FD8 150deg, #22336B 210deg, #22336B 300deg, #1F4FD8 360deg) border-box; }
+.fd-launch:hover .fd-launch__chev { color: #FFFFFF; }
+.fd-launch:focus-visible { outline: 2px solid #7FA2FF; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { .fd-launch { animation: none; } }
