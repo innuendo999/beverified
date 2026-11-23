@@ -15,7 +15,8 @@ Rules:
 - Country rankings cover identity checks only. For an identity need, providers that are also in the country ranking come first (tag "In our X ranking"), then the rest of the category ranking, and the panel says how many are in the country ranking. For AML, KYB, Travel Rule and KYA the panel says the country ranking covers identity checks only. For a country without a ranking it says so. We never claim a provider supports a country.
 - A review page prefills that provider's ranking (primary category, else its first category ranking) and leaves the provider out: launcher "Alternatives to {name}".
 - A ranking page prefills its category; a country page prefills the country.
-- "Visit website" only where the rankings.yml entry has `site_link: true` (the listing-link rule), rel from the provider record. The commission sentence shows only when a shown link is affiliate or paid.
+- Row: logo tile (logoTiles.json, as in the menu), name, rank, score, award, country tag; price on the right (monthly cost at the reader's volume, else a short "from" price from the Pricing Index labels, else "On request"). No tagline (owner, 2026-11-23: less text).
+- "Visit website" only where the rankings.yml entry has `site_link: true` (the listing-link rule), rel from the provider record. No "how we earn / payment never changes rank" line in the panel (owner, 2026-11-23: it is on every page already); the short "Some links earn us a commission." shows only when a shown link is affiliate or paid, to keep the disclosure above that link.
 - Answers are kept in localStorage (`bv-finder`). After the first close the launcher stays compact (56 px tile); on phones it is compact while scrolling down.
 - GA4 events, only after consent: `finder_open`, `finder_answer`, `finder_results`, `finder_click` (provider, link review or site).
 
