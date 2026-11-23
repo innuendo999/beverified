@@ -20,6 +20,10 @@ Rules:
 - Answers are kept in localStorage (`bv-finder`). After the first close the launcher stays compact (56 px tile); on phones it is compact while scrolling down.
 - GA4 events, only after consent: `finder_open`, `finder_answer`, `finder_results`, `finder_click` (provider, link review or site).
 
+## Launcher look
+
+Owner, 2026-11-23: inverted colours (ink tile, white icon and label, light blue scan frame) and a blue gradient running around a 3 px border (conic gradient animated through `@property --fd-a`, 3.2 s a turn). Still gradient where `@property` is not supported; no motion with `prefers-reduced-motion`.
+
 ## Where it shows
 
 Every page on the v3 layout except `v3.finder.exclude` (/methodology/, /terms/, /privacy/). Not on the calculator embed page. Not on phones: off below 641 px (owner, 2026-11-23). Visible from page load on wider screens (owner, 2026-11-23); while the cookie banner is open the launcher sits above it, and an open panel covers the banner. The panel always opens at question 1 unless the page sets the answer (ranking, country or review page); saved answers only preselect. Shares the corner with Back to top (left of the launcher) and sits above the sticky "Visit site" bar on V4/V5 reviews. Hidden in print.
