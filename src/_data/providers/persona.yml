@@ -293,6 +293,24 @@ capabilities:
     note: 'reverification of existing users'
     source: 37
     checked: '2026-11'
+  kyb_website_check:
+    status: 'yes'
+    note: "Business Website Verification, 14 checks"
+    source: 41
+    checked: '2026-11'
+  kyb_industry_class:
+    status: 'yes'
+    note: "Business Classification Report, NAICS or MCC from the website"
+    source: 42
+    checked: '2026-11'
+  kyb_match_vmss:
+    status: not_disclosed
+    note: "not found in public docs"
+    checked: '2026-11'
+  kyb_card_data:
+    status: not_disclosed
+    note: "not found in public docs"
+    checked: '2026-11'
 integration:
   checked: '2026-11'
   docs_public:
@@ -587,6 +605,14 @@ sources:
 - title: 'Persona supports France and Germany EUDI Wallets (18 Jun 2026)'
   publisher: Persona
   url: https://withpersona.com/blog/persona-supports-france-and-germany-eudi-wallets-for-secure-private-identity-verification
+  accessed: '2026-11'
+- title: "Business Website Verification"
+  publisher: Persona
+  url: https://help.withpersona.com/articles/6YMwMNVZpOYO4n6bpUhokY
+  accessed: '2026-11'
+- title: "Business Classification Report"
+  publisher: Persona
+  url: https://help.withpersona.com/articles/60dDv0ttzy8rDFNPLaiszs/
   accessed: '2026-11'
 entity:
   wikidata: null

@@ -255,6 +255,23 @@ capabilities:
     note: 'a new selfie matched against document images from an earlier transaction'
     source: 25
     checked: '2026-11'
+  kyb_website_check:
+    status: not_disclosed
+    note: "not found in public docs"
+    checked: '2026-11'
+  kyb_industry_class:
+    status: 'yes'
+    note: "industry code in Business Insights responses; MCC not named"
+    source: 27
+    checked: '2026-11'
+  kyb_match_vmss:
+    status: not_disclosed
+    note: "not found in public docs"
+    checked: '2026-11'
+  kyb_card_data:
+    status: not_disclosed
+    note: "not found in public docs"
+    checked: '2026-11'
 integration:
   checked: '2026-11'
   docs_public:
@@ -461,6 +478,10 @@ sources:
 - title: 'Handling of personal information: Trulioo (DVS gateway service provider assessment, March 2018)'
   publisher: Office of the Australian Information Commissioner
   url: https://www.oaic.gov.au/privacy/privacy-assessments-and-decisions/privacy-assessments/handling-personal-information-trulioo
+  accessed: '2026-11'
+- title: "Business verification API: Step 4B Verify"
+  publisher: Trulioo
+  url: https://developer.trulioo.com/docs/step-4b-verify
   accessed: '2026-11'
 entity:
   wikidata: null

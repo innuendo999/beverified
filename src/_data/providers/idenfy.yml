@@ -309,6 +309,24 @@ capabilities:
     note: 'face authentication of returning users, for example on high-value transactions'
     source: 31
     checked: '2026-11'
+  kyb_website_check:
+    status: 'yes'
+    note: "Website audit in KYB, domain legitimacy and risk score"
+    source: 34
+    checked: '2026-11'
+  kyb_industry_class:
+    status: 'yes'
+    note: "industry classification in the AI company report; MCC not named"
+    source: 35
+    checked: '2026-11'
+  kyb_match_vmss:
+    status: not_disclosed
+    note: "not found in public docs"
+    checked: '2026-11'
+  kyb_card_data:
+    status: not_disclosed
+    note: "not found in public docs"
+    checked: '2026-11'
 integration:
   checked: '2026-11'
   docs_public:
@@ -554,6 +572,14 @@ sources:
 - title: 'eIDAS (compliance guide)'
   publisher: iDenfy
   url: https://documentation.idenfy.com/guides/compliance/eidas.md
+  accessed: '2026-11'
+- title: "KYB documentation: feature list"
+  publisher: iDenfy
+  url: https://documentation.idenfy.com/kyb/overview
+  accessed: '2026-11'
+- title: "AI-generated company report"
+  publisher: iDenfy
+  url: https://idenfy.com/ai-company-report-service/
   accessed: '2026-11'
 entity:
   wikidata: null

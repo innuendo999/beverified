@@ -315,6 +315,25 @@ capabilities:
   video_ident:
     status: not_disclosed
     note: nothing found on vendor pages
+  kyb_website_check:
+    status: 'no'
+    note: "high-risk keywords in website URLs only; docs say no content scan"
+    source: 22
+    checked: '2026-11'
+  kyb_industry_class:
+    status: 'yes'
+    note: "NAICS 2017 and Enigma descriptions; MCC not named"
+    source: 23
+    checked: '2026-11'
+  kyb_match_vmss:
+    status: not_disclosed
+    note: "not found in public docs"
+    checked: '2026-11'
+  kyb_card_data:
+    status: 'yes'
+    note: "US card revenue, processing volume and ticket size"
+    source: 24
+    checked: '2026-11'
 certifications:
 - name: SOC 2 Type 2
   program: soc2
@@ -445,6 +464,18 @@ sources:
   publisher: Enigma
   url: https://documentation.enigma.com/kyb/kyb-packages
   accessed: '2026-10'
+- title: "High-risk activities attribute"
+  publisher: Enigma
+  url: https://documentation.enigma.com/v1/reference/attributes/kyb-and-identity-attributes/high-risk-activities
+  accessed: '2026-11'
+- title: "Industries attribute"
+  publisher: Enigma
+  url: https://documentation.enigma.com/v1/reference/attributes/identity-and-firmographics-attributes/industries
+  accessed: '2026-11'
+- title: "Payment providers"
+  publisher: Enigma
+  url: https://www.enigma.io/solutions/payment-processors-and-platforms
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null
