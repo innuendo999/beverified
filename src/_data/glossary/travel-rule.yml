@@ -3,7 +3,7 @@ abbr: null
 also_known_as: [Crypto Travel Rule, FATF Travel Rule, FATF Recommendation 16]
 cluster: crypto
 definition: The Travel Rule is the FATF requirement, set out in Recommendation 16, that the provider sending a transfer collects originator and beneficiary information and passes it to the receiving provider. Since 2019 it also covers virtual asset transfers between VASPs, which must send the data immediately and securely.
-seo_description: "The Travel Rule makes crypto and payment providers send originator and beneficiary data with each transfer. FATF R.16, the EU TFR and what to ask vendors."
+seo_description: "The Travel Rule makes payment and crypto providers send sender and recipient data with each transfer. FATF R.16, the US $3,000 rule and the EU TFR."
 capability: null
 rankings: [travel-rule, crypto]
 related: [virtual-asset-service-provider, transfer-of-funds-regulation, ivms101, sunrise-issue, travel-rule-interoperability, self-hosted-wallet]
@@ -23,7 +23,9 @@ body: |
 
   Adoption is uneven. The FATF's [targeted update of 16 July 2026](https://www.fatf-gafi.org/en/news/targeted-updated-va-vasps-2026.html) found that 83% of surveyed jurisdictions had passed Travel Rule legislation, up from 73% in 2025, and that a further 11 jurisdictions reported implementation under way. A provider in a country with the rule can still face a counterparty in a country without it. This gap is known as the [sunrise issue](/glossary/sunrise-issue/).
 
-  ## How the EU applies it
+  ## How the US and the EU apply it
+
+  In the United States the Travel Rule sits in the Bank Secrecy Act regulations, at [31 CFR 1010.410(f)](https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-D/section-1010.410). For a transfer of $3,000 or more, the sending bank or non-bank financial institution puts the sender's name, account number and address, the amount, the execution date and the recipient's institution into the payment order. It also passes on the recipient's name, address and account number when it has them, and any intermediary institution forwards the same data. FinCEN's 2019 guidance FIN-2019-G001 treats crypto transactions as transmittals of funds, so a money transmitter that moves crypto has the same duty at $3,000 or its equivalent, before or at the time of the transfer. A 2020 plan to cut the threshold to $250 for cross-border transfers [has been withdrawn](/news/fincen-withdraws-250-travel-rule-proposal/).
 
   In the EU the Travel Rule for crypto sits in the [Transfer of Funds Regulation](/glossary/transfer-of-funds-regulation/), Regulation (EU) 2023/1113, which has applied since 30 December 2024. Its recitals say transfers of crypto-assets should be subject to the same requirements regardless of their amount, so there is no low-value exemption between crypto-asset service providers. Transfers to and from [self-hosted wallets](/glossary/self-hosted-wallet/) have their own rules.
 
@@ -44,8 +46,8 @@ faq:
     a: No. The recitals of Regulation (EU) 2023/1113 say transfers of crypto-assets should be subject to the same requirements regardless of their amount. A EUR 1,000 threshold applies only to the extra ownership check for transfers to or from self-hosted addresses.
   - q: Why is it called the Travel Rule?
     a: The required information has to travel with the transfer, from the sending provider to the receiving one. The FATF uses the name for Recommendation 16 in the context of virtual assets.
-  - q: When does the revised FATF Recommendation 16 take effect?
-    a: The FATF says the changes agreed at its June 2025 Plenary will come into effect by the end of 2030, and that it will produce guidance before then.
+  - q: What does the Travel Rule require banks to do for funds transfers of $3,000 or more?
+    a: "For a transfer of $3,000 or more, the US Travel Rule (31 CFR 1010.410(f)) makes the sending bank include the sender's name, account number and address, the amount, the execution date and the recipient's bank in the payment order. It also passes on the recipient's name, address and account number when it has them. Intermediary banks forward the same data."
 sources:
   - title: 12 Month Review of Revised FATF Standards on Virtual Assets and Virtual Asset Service Providers (includes Recommendation 15, its Interpretive Note and FATF definitions)
     publisher: FATF
@@ -59,10 +61,18 @@ sources:
     publisher: FATF
     url: https://www.fatf-gafi.org/en/news/targeted-updated-va-vasps-2026.html
     accessed: 2026-10
+  - title: 31 CFR 1010.410, Records to be made and retained by financial institutions (paragraph (f), Travel Rule)
+    publisher: eCFR, US Government Publishing Office
+    url: https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-D/section-1010.410
+    accessed: 2026-11
+  - title: Application of FinCEN's Regulations to Certain Business Models Involving Convertible Virtual Currencies (FIN-2019-G001), section 2.1
+    publisher: FinCEN
+    url: https://www.fincen.gov/system/files/2019-05/FinCEN%20Guidance%20CVC%20FINAL%20508.pdf
+    accessed: 2026-11
   - title: Regulation (EU) 2023/1113 on information accompanying transfers of funds and certain crypto-assets
     publisher: EUR-Lex
     url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1113
     accessed: 2026-10
 author: andrii-klymenko
 published: 2026-10-29
-updated: 2026-10-29
+updated: 2026-11-23
