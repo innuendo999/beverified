@@ -1,11 +1,11 @@
-# Certification watch, 2026-11-22
+# Certification watch, 2026-11-23
 
 ## Sources
 
 - ibeta_pad: ok, 290 rows
 - uk_dvs: ok, 67 rows
 - fido: ok, 8 rows
-- rivr: **failed**: page returned almost no text (script-rendered); check it in a browser
+- rivr: ok
 - accs: ok
 
 ## New rows for providers we review (0)

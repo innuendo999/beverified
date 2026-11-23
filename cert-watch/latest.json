@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "sources": {
     "ibeta_pad": {
       "ok": true,
@@ -17,8 +17,8 @@
       "baseline": false
     },
     "rivr": {
-      "ok": false,
-      "error": "page returned almost no text (script-rendered); check it in a browser"
+      "ok": true,
+      "aliases": 4
     },
     "accs": {
       "ok": true,
@@ -37,10 +37,5 @@
   ],
   "candidates": [],
   "expiring": [],
-  "errors": [
-    {
-      "source": "rivr",
-      "error": "page returned almost no text (script-rendered); check it in a browser"
-    }
-  ]
+  "errors": []
 }
