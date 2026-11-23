@@ -76,3 +76,7 @@ Notes: the countries figure comes from ReadID (NFC) only; owner may prefer null.
 
 - ongoing_monitoring: yes, source 18 (KYC/KYB platform: "Continuous monitoring: stay compliant after onboarding")
 - unchanged not_disclosed: transaction_monitoring, kyb_documents (only "document requirements" configurable), case_management
+
+## UK DVS register re-check 2026-11-23
+
+Register row(s) present with the same certificate and expiry dates as the record, per the GOV.UK register CSV downloaded by the certification watcher on 22 Nov 2026. No change to `certifications[]`; `last_verified` unchanged (single-fact check). Details and limits: `reports/verification/uk-register-2026-11-23.md`.

@@ -104,3 +104,7 @@ Injection attack detection (new matrix column, liveness-detection and identity-v
 
 - `capabilities.injection_detection` yes, vendor-stated (new source: Entrust identity verification page, read 2026-11): "Detect deepfakes and injection attacks with AI-powered document and biometric checks". No mechanism and no injection test letter. The products page (source 1) could not be re-opened this month.
 - Score: unchanged (rescore adds 0.5 only with `independent: true`). `last_verified` not moved: this was a one-field check.
+
+## UK DVS register re-check 2026-11-23
+
+Register row(s) present with the same certificate and expiry dates as the record, per the GOV.UK register CSV downloaded by the certification watcher on 22 Nov 2026. No change to `certifications[]`; `last_verified` unchanged (single-fact check). Details and limits: `reports/verification/uk-register-2026-11-23.md`.
