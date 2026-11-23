@@ -1,7 +1,7 @@
 // KYC cost calculator in the KYC Pricing Index hero and the compact block on /providers/kyc/
 // (owner approved the canvas "BeVerified: KYC Pricing Index with cost calculator, design", 2026-11-20).
 // Built only from provider records: budget{} + pricing.items via calcProvider() in src/_lib/budget.js,
-// the same figures as the Budget KYC calculator. Spec: docs/cost-calculator.md.
+// the same figures as the Budget KYC calculator. Spec: docs/cost-calculator.md. Prices watched daily: docs/price-watch.md.
 import fs from "node:fs";
 import yaml from "js-yaml";
 import { calcProvider, padLevel } from "../_lib/budget.js";
