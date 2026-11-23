@@ -55,16 +55,7 @@ export default {
           x: Math.round(x * 10) / 10, y: Math.round(y * 10) / 10, flip: x > 60 };
       }).filter(Boolean);
     },
-    faqs: (d) => {
-      const top = Object.values(d.providers).filter((p) => p.score != null && p.methodology === d.site.v3.methodologyVersion).sort((a, b) => b.score - a.score || a.name.localeCompare(b.name));
-      const kyb = d.rankings?.kyb?.providers || [];
-      if (top.length < 3 || kyb.length < 3) return d.home.faq.filter((f) => !f.a.startsWith("{"));
-      const fill = {
-        "{top}": `On our editorial scores, ${top[0].name} leads at ${top[0].score.toFixed(1)} out of 5, followed by ${top[1].name} at ${top[1].score.toFixed(1)} and ${top[2].name} at ${top[2].score.toFixed(1)}. These scores come from our weighted rubric (fraud defense or screening quality, pricing and total cost, coverage, platform breadth, integration and track record), not from a satisfaction survey.`,
-        "{kyb}": `In our KYB ranking, ${kyb[0]?.name} ranks first, with ${kyb[1]?.name} and ${kyb[2]?.name} next. We compared ${kyb.length} KYB providers.`,
-      };
-      return d.home.faq.map((f) => ({ q: f.q, a: fill[f.a] || f.a }));
-    },
+    faqs: (d) => d.home.faq,
     jsonld: (d) => ({
       "@context": "https://schema.org",
       "@graph": [
