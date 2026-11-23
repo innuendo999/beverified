@@ -4,15 +4,15 @@ seoTitle: "Our Methodology: How BeVerified Scores KYC & AML Providers"
 seoDescription: "How BeVerified scores KYC, IDV and AML providers: a published rubric for each kind of product, scored from public evidence, with what a score cannot measure."
 h1: "Our Methodology"
 lede: "We score identity verification and KYC providers on one rubric and AML providers on another, using evidence anyone can check. Every claim on a review is labelled with where it came from."
-updated: "2026-11-17"
+updated: "2026-11-23"
 ---
 <section>
-<p>Methodology {{ site.v3.methodologyVersion }}, last updated Nov 17, 2026. <a href="#changelog">What changed</a></p>
+<p>Methodology {{ site.v3.methodologyVersion }}, last updated Nov 23, 2026. <a href="#changelog">What changed</a></p>
 </section>
 
 <section id="rubric">
 <h2>Scoring rubric</h2>
-<p>Each provider gets an editorial score from 1 to 5: the weighted result of six criteria. The criteria are the questions a buyer asks when choosing a vendor, so they differ by kind of product. Identity verification, eKYC, KYC, liveness, age verification and KYB providers use the first rubric; AML screening and monitoring providers use the second. Travel Rule providers are still scored on our previous rubric until their own methodology is published. The Identity Verification ranking, Know Your Agent products and the Budget KYC ranking have rubrics of their own, set out below: <a href="#identity-verification">Identity verification</a>, <a href="#know-your-agent">Know Your Agent</a> and <a href="#budget-kyc">Budget KYC</a>.</p>
+<p>Each provider gets an editorial score from 1 to 5: the weighted result of six criteria. The criteria are the questions a buyer asks when choosing a vendor, so they differ by kind of product. Identity verification, eKYC, KYC, liveness, age verification and KYB providers use the first rubric; AML screening and monitoring providers use the second. Travel Rule providers are still scored on our previous rubric until their own methodology is published. The Identity Verification ranking, Know Your Agent products, the Budget KYC ranking and the AML Software ranking have rubrics of their own, set out below: <a href="#identity-verification">Identity verification</a>, <a href="#know-your-agent">Know Your Agent</a>, <a href="#budget-kyc">Budget KYC</a> and the <a href="#aml">AML ranking</a>.</p>
 <table>
 <caption>Identity verification and KYC: criteria, weights and what we look at</caption>
 <thead><tr><th scope="col">Criterion</th><th scope="col">Weight</th><th scope="col">What we look at</th></tr></thead>
@@ -101,6 +101,27 @@ updated: "2026-11-17"
 <p>The Budget score works from list prices. It can't see discounts you negotiate, checks you pay for twice when a user retries, VAT on your invoice, or how many good users a cheap check turns away. Ask about these before you sign.</p>
 </section>
 
+<section id="aml">
+<h2>AML ranking rubric</h2>
+<p>The <a href="/providers/aml/">AML Software ranking</a> is ordered by a separate AML score from the rubric below. It orders that ranking only. Each provider's review keeps its overall score, and the <a href="/providers/aml/banks/">AML Software for Banks</a> ranking keeps its own list.</p>
+<p>We built it for one kind of buyer: fintechs, e-money institutions, payment firms and crypto-asset service providers in the EU, UK and US, screening roughly 1,000 to 500,000 customers with a compliance team of one to ten people. They have to catch every name on the sanctions lists they are bound by, see new designations quickly, keep false alerts low enough to clear, and show a regulator how the tool is set up. The criteria follow what supervisors ask of screening systems (the UK FCA, OFAC, the New York DFS and the European Banking Authority) and the screening guidance of the Wolfsberg Group of global banks.</p>
+<table>
+<caption>AML ranking: criteria, weights and what we look at</caption>
+<thead><tr><th scope="col">Criterion</th><th scope="col">Weight</th><th scope="col">What we look at</th></tr></thead>
+<tbody>
+<tr><th scope="row">Sanctions, PEP and media data</th><td>25%</td><td>Whether the vendor names the OFAC SDN list, the EU consolidated financial sanctions list, the UK Sanctions List and the UN Security Council consolidated list, how many hours it says list changes take to arrive (24 hours or less scores best), PEP data with tiers or relatives and close associates, adverse media from named or counted sources, and whether it says where its data comes from.</td></tr>
+<tr><th scope="row">Match quality controls</th><td>20%</td><td>A match threshold you can set, matching across transliterations and non-Latin scripts, date of birth, nationality or ID numbers used to rule out a match, a way to stop a cleared match from coming back on every re-screen, and the reason for a match shown on the alert.</td></tr>
+<tr><th scope="row">Calibration, testing and audit</th><td>15%</td><td>An audit trail of every alert and decision, case management with a second reviewer or approval step, public documentation of how the matching settings work, reports on alerts, true matches and list update times, and help with validating the setup. Security incidents and regulatory actions in the last 24 months cost points here.</td></tr>
+<tr><th scope="row">Ongoing and transfer monitoring</th><td>15%</td><td>Automatic re-screening of your customers when lists change or at least daily, transaction monitoring rules, screening of payments or crypto transfers before they go through, and customer risk scores that update on new data.</td></tr>
+<tr><th scope="row">Pricing and total cost</th><td>15%</td><td>The same rule as the rubrics above, with name screening as the core product: published prices per screen or per monitored customer, monthly minimums, and a free trial or free plan. A vendor that quotes only through sales scores 2 out of 5.</td></tr>
+<tr><th scope="row">Integration</th><td>10%</td><td>Public API documentation, a self-serve sandbox or trial, batch screening by file upload or SFTP, webhooks for monitoring alerts, and a dashboard where analysts can search and review cases without code.</td></tr>
+</tbody>
+</table>
+<p>A feature we can't find in the vendor's public material earns no points. Its weight doesn't move to other criteria, so keeping documentation private never lifts a score. Pricing is the one exception and follows the general rule above. Vendor figures such as "90% fewer false positives", and counts of lists or profiles that don't name the lists, never enter the score.</p>
+<p>To enter the ranking, a provider needs a published BeVerified review scored on the current rubric and a generally available product that screens names against sanctions and PEP data and keeps monitoring customers after onboarding. A platform whose main product is something else, for example identity verification with a screening module, also has to describe its screening in its own documentation well enough to earn at least 2 points in both the data and match quality criteria. A provider that doesn't qualify is left out of the ranking, not scored low.</p>
+<p>The AML score can't tell you how many real hits a system misses, how many false alerts it raises on your customers, or how fast a new designation reaches it in practice. We don't run our own screening tests yet. Before you sign, screen a sample of your own customers, add known listed names in several spellings and scripts, ask how many hours a new OFAC, EU or UK designation takes to appear, and ask for the calibration documentation you would show your regulator.</p>
+</section>
+
 <section id="evidence">
 <h2>Where the evidence comes from</h2>
 <p>Every fact on a review carries one of four labels, so you can see how much weight to give it:</p>
@@ -156,6 +177,7 @@ updated: "2026-11-17"
 <section id="changelog">
 <h2>What changed</h2>
 <ul>
+<li><strong>Nov 23, 2026 (AML 1.0):</strong> added an AML rubric for the AML Software ranking, built for fintechs, e-money institutions, payment firms and crypto-asset service providers: sanctions, PEP and media data, match quality controls, calibration and audit, ongoing and transfer monitoring, total cost and integration. AML scores are separate from overall scores and order only that ranking. Criteria, weights and entry rules were published before any provider was scored.</li>
 <li><strong>Nov 17, 2026 (IDV 1.0):</strong> added an identity verification rubric for the Identity Verification ranking, built for regulated fintech and gambling operators: fraud defense, coverage, total cost, integration and user flow, compliance fit and a narrow platform breadth. IDV scores are separate from overall scores and order only that ranking. Criteria and weights were published before any provider was scored.</li>
 <li><strong>Nov 11, 2026 (Budget KYC 1.0):</strong> added a Budget KYC rubric built on price for quality: cost per check at 100 and 1,000 checks a month, AML screening cost, quality for the money, entry terms and price transparency. Budget scores are separate from overall scores and order only the Budget KYC ranking. Criteria, weights and entry rules were published before any provider was scored.</li>
 <li><strong>Nov 10, 2026:</strong> sponsored placements on review pages described under <a href="#advertising">Sponsored placements</a>. They don't change scores, rankings or reviews.</li>

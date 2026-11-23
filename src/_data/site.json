@@ -168,6 +168,38 @@
         "weight": 5
       }
     ],
+    "rubricAmlRanking": [
+      {
+        "key": "data",
+        "name": "Sanctions, PEP and media data",
+        "weight": 25
+      },
+      {
+        "key": "matching",
+        "name": "Match quality controls",
+        "weight": 20
+      },
+      {
+        "key": "audit",
+        "name": "Calibration, testing and audit",
+        "weight": 15
+      },
+      {
+        "key": "monitoring",
+        "name": "Ongoing and transfer monitoring",
+        "weight": 15
+      },
+      {
+        "key": "pricing",
+        "name": "Pricing and total cost",
+        "weight": 15
+      },
+      {
+        "key": "integration",
+        "name": "Integration",
+        "weight": 10
+      }
+    ],
     "rubricKya": [
       {
         "key": "detection",
