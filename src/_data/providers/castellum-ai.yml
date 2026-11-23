@@ -144,8 +144,11 @@ capabilities:
     source: 1
   adverse_media:
     status: 'yes'
+    evidence: taxonomy
+    evidence_source: 18
     note: AI-powered screening
     source: 1
+    checked: '2026-11-23'
   transaction_monitoring:
     status: 'yes'
     note: transaction screening plus AI monitoring agent
@@ -173,12 +176,17 @@ capabilities:
     source: 1
   ongoing_monitoring:
     status: 'yes'
+    trigger: list_change
+    trigger_source: 16
     note: real-time monitoring, notice of risk changes
     source: 1
+    checked: '2026-11-23'
   list_updates:
     status: 'yes'
-    note: sanctions, export control, forced labor lists; stated refresh cycle
+    hours: 1
+    note: database updates every 5 minutes
     source: 10
+    checked: '2026-11-23'
   pep_tiers:
     status: not_disclosed
     note: no PEP tiers or relatives described
@@ -204,6 +212,51 @@ capabilities:
   data_residency:
     status: not_disclosed
     note: not stated
+  list_coverage:
+    status: 'yes'
+    lists: [ofac, eu, uk, un]
+    note: names OFAC SDN, UN Security Council, EU and UK lists
+    source: 15
+    checked: '2026-11-23'
+  data_provenance:
+    status: 'yes'
+    note: list data sourced directly from issuing authorities
+    source: 10
+    checked: '2026-11-23'
+  transliteration:
+    status: 'yes'
+    note: transliterations; 100+ languages incl. Arabic, Chinese, Farsi, Korean, Russian
+    source: 10
+    checked: '2026-11-23'
+  secondary_identifiers:
+    status: 'yes'
+    note: IDs, birth dates and addresses added to list entries for matching
+    source: 10
+    checked: '2026-11-23'
+  whitelisting:
+    status: 'partial'
+    note: delta screening alerts only on new or updated list entries
+    source: 16
+    checked: '2026-11-23'
+  calibration_docs:
+    status: 'yes'
+    note: public articles on how search and Jgram matching work
+    source: 17
+    checked: '2026-11-23'
+  alert_reporting:
+    status: 'not_disclosed'
+    note: no alert reports described
+    checked: '2026-11-23'
+  model_validation:
+    status: 'yes'
+    note: joint test with standard test files at your configuration before go-live
+    source: 11
+    checked: '2026-11-23'
+  transfer_screening:
+    status: 'yes'
+    note: transaction screening and crypto wallet screening through the API
+    source: 14
+    checked: '2026-11-23'
 integration:
   checked: '2026-11'
   docs_public:
@@ -230,6 +283,10 @@ integration:
   support_hours:
     status: not_disclosed
     note: knowledge base only, no hours found
+  webhooks:
+    status: 'not_disclosed'
+    note: notification channel depends on your setup; no webhooks described
+    checked: '2026-11-23'
 track_record:
   ownership:
     status: stable
@@ -331,6 +388,22 @@ sources:
 - title: Compliance API
   publisher: Castellum.AI
   url: https://www.castellum.ai/products/api
+  accessed: '2026-11'
+- title: What are Delisted Lists?
+  publisher: Castellum.AI
+  url: https://support.castellum.ai/hc/en-us/articles/48512040215188-What-are-Delisted-Lists
+  accessed: '2026-11'
+- title: Delta Screening vs. Real-Time Monitoring
+  publisher: Castellum.AI
+  url: https://support.castellum.ai/hc/en-us/articles/37891509248788-Delta-Screening-vs-Real-Time-Monitoring
+  accessed: '2026-11'
+- title: Screening & Monitoring (knowledge base)
+  publisher: Castellum.AI
+  url: https://support.castellum.ai/hc/en-us/categories/4405709966740-Screening-Monitoring
+  accessed: '2026-11'
+- title: Adverse Media Buyer's Guide
+  publisher: Castellum.AI
+  url: https://www.castellum.ai/insights/adverse-media-buyers-guide
   accessed: '2026-11'
 entity:
   wikidata: null

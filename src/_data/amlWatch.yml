@@ -1,0 +1,8 @@
+# Extra vendor pages for the AML watcher (scripts/aml-watch/watch.mjs, spec docs/aml-watch.md).
+# The watcher already reads every page a ranked AML record cites for an AML 1.0 field; list here only
+# pages the record does not cite yet (a coverage or data page, a help-centre article) so new lists and
+# features on them show up as candidates.
+extra:
+  castellum-ai:
+    - https://www.castellum.ai/products/bulk-data
+    - https://www.castellum.ai/real-time-monitoring

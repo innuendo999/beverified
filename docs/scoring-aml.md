@@ -72,10 +72,10 @@ Points, sub-score = points + 1, cap 5:
 
 | Evidence | Points |
 |---|---|
-| All four core sanctions lists named: OFAC SDN, EU consolidated financial sanctions list, UK Sanctions List, UN Security Council consolidated list (`capabilities.list_coverage.lists[]`) | +1 (three of four: +0.5) |
+| All four core sanctions lists named: OFAC SDN, EU consolidated financial sanctions list, UK Sanctions List, UN Security Council consolidated list (`capabilities.list_coverage.lists[]` holds `ofac`, `eu`, `uk`, `un`; HMT or OFSI counts as the UK list) | +1 (three of four: +0.5) |
 | Stated time for sanctions list changes of 24 hours or less (`capabilities.list_updates.hours`) | +1 (a frequency longer than 24 hours: +0.5; "regularly" or no time: 0) |
 | PEP data with tiers or relatives and close associates (`capabilities.pep_tiers`) | +1 |
-| Adverse media from named or counted sources, or a published risk taxonomy (`capabilities.adverse_media`) | +1 |
+| Adverse media from named or counted sources, or a published risk taxonomy (`capabilities.adverse_media.evidence` is `named`, `counted` or `taxonomy`) | +1 |
 | Data source stated: own research team or a named data supplier (`capabilities.data_provenance`) | +0.5 |
 
 ### Match quality controls (20%)
@@ -98,7 +98,7 @@ Points, sub-score = points + 1, cap 5:
 | Evidence | Points |
 |---|---|
 | Audit trail or decision log of every alert and disposition (`capabilities.audit_trail`) | +1 |
-| Case management with dispositions and a second-reviewer or approval step (`capabilities.case_management`) | +1 |
+| Case management with dispositions and a second-reviewer or approval step (`capabilities.case_management` with `four_eyes: yes`; `four_eyes: partial`, or case management without a stated approval step: +0.5) | +1 |
 | Public documentation of how matching settings work and can be tuned (`capabilities.calibration_docs`) | +1 |
 | Reports on alerts, true matches and list update times, for management information (`capabilities.alert_reporting`) | +1 |
 | Validation support: a model validation report, test pack or tuning service offered to clients (`capabilities.model_validation`) | +0.5 |
@@ -111,7 +111,7 @@ Points, sub-score = points + 1, cap 5:
 
 | Evidence | Points |
 |---|---|
-| Automatic re-screening of the customer base when lists change, or at least daily (`capabilities.ongoing_monitoring`; the note states the trigger) | +1 (re-screening less often than daily: +0.5) |
+| Automatic re-screening of the customer base when lists change, or at least daily (`capabilities.ongoing_monitoring.trigger` is `list_change` or `daily`) | +1 (`periodic`, or monitoring sold with no stated trigger: +0.5) |
 | Transaction monitoring with rules or scenarios (`capabilities.transaction_monitoring`) | +1 |
 | Screening of payments or crypto transfers against lists before execution (`capabilities.transfer_screening`) | +1 |
 | Customer risk scoring that updates on new data (`capabilities.risk_scoring`) | +1 |
@@ -169,8 +169,12 @@ Approved to plan, not to build yet (owner, 2026-11-23):
 
 ## New data fields
 
-- `capabilities.list_coverage{ status, lists[], note, source }`, `lists[]` from `ofac_sdn`, `eu_fsf`, `uk_sanctions_list`, `un_sc`, plus free names for other lists.
-- `capabilities.list_updates` gains `hours` (number, the stated time for sanctions changes; omitted when the vendor states none).
+- `capabilities.list_coverage{ status, lists[], note, source }`, `lists[]` from `ofac`, `eu`, `uk`, `un` (only lists the vendor names).
+- `capabilities.list_updates` gains `hours`: the stated update time, rounded up to whole hours ("every 5 minutes" = 1, "daily" = 24, "a couple of hours to 1 month" = 720); omitted when the vendor states no time.
+- `capabilities.adverse_media` gains `evidence` (`named`, `counted`, `taxonomy`; omitted when sources are only described) and `evidence_source`.
+- `capabilities.ongoing_monitoring` gains `trigger` (`list_change`, `daily`, `periodic`) and `trigger_source`.
+- `capabilities.case_management` gains `four_eyes` (`yes`, `partial`) and `four_eyes_source`.
+- Data is written with `scripts/set-capabilities.py` from one JSON file per batch in `scripts/aml-data/`, so the record files keep their layout.
 - `capabilities.transliteration`, `secondary_identifiers`, `whitelisting`, `data_provenance`, `calibration_docs`, `alert_reporting`, `model_validation`, `transfer_screening`, and `integration.webhooks`: same shape as other capabilities (`{status, note, source}`, optional `checked`). Add them to `docs/data-schema.md` in the data PR.
 - `category_scores.aml{ score, breakdown[], methodology: aml-1.0, scored }`, written by `scripts/rescore-aml.mjs --write`, never by hand.
 - Category file `aml.yml`: `score_source: category`, `score_label: AML score`, `rubric: rubricAmlRanking`, `methodology_label: AML 1.0`, `methodology_anchor: '#aml'`.

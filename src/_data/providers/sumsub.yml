@@ -210,8 +210,11 @@ capabilities:
     source: 1
   case_management:
     status: 'yes'
+    four_eyes: 'yes'
+    four_eyes_source: 11
     note: AML and fraud case workspace
     source: 11
+    checked: '2026-11-23'
   identity_verification:
     status: 'yes'
     note: all plans incl. Basic
@@ -242,9 +245,12 @@ capabilities:
     note: named only in passing on the deepfake page
     checked: '2026-11'
   ongoing_monitoring:
-    status: add_on
+    status: 'add_on'
+    trigger: daily
+    trigger_source: 39
     note: Ongoing AML Monitoring on the Compliance plan
     source: 1
+    checked: '2026-11-23'
   reusable_id:
     status: 'yes'
     note: Reusable KYC and Sumsub ID on Basic
@@ -325,6 +331,85 @@ capabilities:
     note: 'face match against the previously verified user for repeat actions'
     source: 33
     checked: '2026-11'
+  list_coverage:
+    status: 'yes'
+    lists: [ofac, eu, uk, un]
+    note: names OFAC, UN, HMT, EU and DFAT
+    source: 9
+    checked: '2026-11-23'
+  list_updates:
+    status: 'yes'
+    hours: 720
+    note: partner sources refresh from a couple of hours to 1 month
+    source: 39
+    checked: '2026-11-23'
+  pep_tiers:
+    status: 'yes'
+    note: PEPs, relatives and close associates
+    source: 9
+    checked: '2026-11-23'
+  data_provenance:
+    status: 'yes'
+    note: ComplyAdvantage by default, or World-Check One
+    source: 44
+    checked: '2026-11-23'
+  fuzzy_matching:
+    status: 'yes'
+    note: fuzziness configurable per data attribute
+    source: 40
+    checked: '2026-11-23'
+  transliteration:
+    status: 'yes'
+    note: matches names transliterated from non-Latin scripts
+    source: 40
+    checked: '2026-11-23'
+  secondary_identifiers:
+    status: 'yes'
+    note: country, entity type, date of birth; TIN, ID number, address
+    source: 40
+    checked: '2026-11-23'
+  whitelisting:
+    status: 'not_disclosed'
+    note: false positive status; behaviour on re-screen not described
+    checked: '2026-11-23'
+  alert_explanation:
+    status: 'yes'
+    note: reasoning note and report with each match
+    source: 9
+    checked: '2026-11-23'
+  audit_trail:
+    status: 'yes'
+    note: timeline of every screening, review and monitoring update
+    source: 41
+    checked: '2026-11-23'
+  calibration_docs:
+    status: 'yes'
+    note: matching settings explained per attribute
+    source: 40
+    checked: '2026-11-23'
+  alert_reporting:
+    status: 'partial'
+    note: case analytics on workloads and review flows
+    source: 11
+    checked: '2026-11-23'
+  model_validation:
+    status: 'not_disclosed'
+    note: no validation support described
+    checked: '2026-11-23'
+  transfer_screening:
+    status: 'yes'
+    note: counterparty screening in transaction monitoring and Travel Rule
+    source: 42
+    checked: '2026-11-23'
+  risk_scoring:
+    status: 'yes'
+    note: dynamic risk scoring of users and businesses
+    source: 45
+    checked: '2026-11-23'
+  batch_screening:
+    status: 'not_disclosed'
+    note: no batch screening by file described
+    checked: '2026-11-23'
   kyb_website_check:
     status: not_disclosed
     note: "not found in public docs"
@@ -370,6 +455,11 @@ integration:
   support_hours:
     status: not_disclosed
     note: support via dashboard, no hours published
+  webhooks:
+    status: 'yes'
+    note: AML case webhooks and applicant status webhooks
+    source: 43
+    checked: '2026-11-23'
 coverage:
   checked: '2026-11'
   countries:
@@ -634,6 +724,34 @@ sources:
 - title: 'Sumsub recertified under eIDAS 2.0 with a High level of confidence (16 Jun 2026)'
   publisher: Sumsub
   url: https://sumsub.com/newsroom/sumsub-recertified-under-eidas-2-0-with-a-high-level-of-confidence-for-identity-and-business-verification/
+  accessed: '2026-11'
+- title: How often do we update AML data sources
+  publisher: Sumsub
+  url: https://docs.sumsub.com/docs/data-sources-and-refreshment-times
+  accessed: '2026-11'
+- title: Matching techniques in AML Screening
+  publisher: Sumsub
+  url: https://docs.sumsub.com/docs/fuzzy-matching
+  accessed: '2026-11'
+- title: AML screening events
+  publisher: Sumsub
+  url: https://docs.sumsub.com/docs/aml-screening-events
+  accessed: '2026-11'
+- title: 'AML Transaction Monitoring: Watchlist Screening Features'
+  publisher: Sumsub
+  url: https://docs.sumsub.com/docs/aml-transaction-monitoring-watchlist-screening-features
+  accessed: '2026-11'
+- title: Case management webhooks
+  publisher: Sumsub
+  url: https://docs.sumsub.com/docs/case-management-webhooks
+  accessed: '2026-11'
+- title: Configure AML screening
+  publisher: Sumsub
+  url: https://docs.sumsub.com/docs/configure-aml-screening
+  accessed: '2026-11'
+- title: AML compliance
+  publisher: Sumsub
+  url: https://sumsub.com/customers/aml-compliance/
   accessed: '2026-11'
 entity:
   wikidata: null
