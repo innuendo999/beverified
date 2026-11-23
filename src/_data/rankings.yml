@@ -107,26 +107,9 @@ aml/banks:
 aml:
   title: Best AML Software Providers in 2026
   providers:
-  - slug: sumsub
-    name: Sumsub
-    award: Editor's Choice
-    tagline: All-in-one KYC/AML platform with published per-verification pricing.
-    coverage: Global
-    size: SMB to Enterprise
-    pros:
-    - Sanctions and PEP screening, including OFAC, UN, HMT, EU and DFAT lists
-    - KYC, KYB, transaction monitoring and fraud prevention in one platform
-    - Stated average verification time of 20 seconds
-    cons:
-    - AML screening starts on the Compliance plan ($1.85 per verification, $299 monthly minimum)
-    - KYB, transaction monitoring and fraud prevention are only in the custom, quoted plan
-    - Some reviewers report occasional false-positive flags
-    legacy_price_shown: From $1.35/verification
-    legacy_rating_shown: 4.8
-    segments: []
   - slug: complyadvantage
     name: ComplyAdvantage
-    award: Best for Screening with Published Pricing
+    award: Editor's Choice
     tagline: AML risk data and agentic alert workflows, with real-time transaction monitoring on the Enterprise plan.
     coverage: Global
     size: SMB to Enterprise
@@ -140,6 +123,23 @@ aml:
     - Enterprise tier with unlimited usage is quoted only
     legacy_price_shown: From $99/mo
     legacy_rating_shown: 4.7
+    segments: []
+  - slug: sumsub
+    name: Sumsub
+    award: Best for KYC and AML in One Platform
+    tagline: All-in-one KYC/AML platform with published per-verification pricing.
+    coverage: Global
+    size: SMB to Enterprise
+    pros:
+    - Sanctions and PEP screening, including OFAC, UN, HMT, EU and DFAT lists
+    - KYC, KYB, transaction monitoring and fraud prevention in one platform
+    - Stated average verification time of 20 seconds
+    cons:
+    - AML screening starts on the Compliance plan ($1.85 per verification, $299 monthly minimum)
+    - KYB, transaction monitoring and fraud prevention are only in the custom, quoted plan
+    - Some reviewers report occasional false-positive flags
+    legacy_price_shown: From $1.35/verification
+    legacy_rating_shown: 4.8
     segments: []
   - slug: castellum-ai
     name: Castellum.AI
@@ -155,23 +155,6 @@ aml:
     - Smaller team and scale than category giants
     - Screening/data-focused rather than a full identity-verification platform
     - No published pricing
-    legacy_price_shown: Not published
-    legacy_rating_shown: null
-    segments: []
-  - slug: smartsearch
-    name: SmartSearch
-    award: Best for UK Regulated Professions
-    tagline: UK-first AML/KYC verification built for JMLSG-regulated professions.
-    coverage: UK-focused; international checks offered
-    size: null
-    pros:
-    - Strong fit for UK legal, property, accountancy and financial-services firms
-    - Individual and business verification in one platform
-    - DIATF-certified SmartDoc identity check, with Credas Connect added through the 2026 acquisition
-    cons:
-    - UK-centric; international checks exist but the product and client base centre on the UK
-    - No published pricing
-    - Built around data-based AML checks; document and facial checks come through SmartDoc rather than a document-first IDV flow
     legacy_price_shown: Not published
     legacy_rating_shown: null
     segments: []
@@ -192,20 +175,37 @@ aml:
     legacy_price_shown: Custom pricing
     legacy_rating_shown: null
     segments: []
-  - slug: kychub
-    name: KYC Hub
-    award: Best for No-Code Workflows
-    tagline: No-code financial-crime orchestration covering the full lifecycle in one platform.
-    coverage: 190+ countries
+  - slug: smartsearch
+    name: SmartSearch
+    award: Best for UK Regulated Professions
+    tagline: UK-first AML/KYC verification built for JMLSG-regulated professions.
+    coverage: UK-focused; international checks offered
     size: null
     pros:
-    - Full financial-crime lifecycle (identity, screening, monitoring, case management) in one no-code platform, with monitoring from the Growth tier
-    - 'Fast configuration: 100+ templates to ship flows in hours, per the vendor'
-    - Modular pricing that lets you change tiers or add and remove modules at any time
+    - Strong fit for UK legal, property, accountancy and financial-services firms
+    - Individual and business verification in one platform
+    - DIATF-certified SmartDoc identity check, with Credas Connect added through the 2026 acquisition
     cons:
-    - No published prices; a quote needs a demo and a pilot
-    - SOC 2 is described only as "aligned", not as an audited report
-    - Younger, smaller brand than established category leaders
+    - UK-centric; international checks exist but the product and client base centre on the UK
+    - No published pricing
+    - Built around data-based AML checks; document and facial checks come through SmartDoc rather than a document-first IDV flow
+    legacy_price_shown: Not published
+    legacy_rating_shown: null
+    segments: []
+  - slug: napier
+    name: Napier
+    award: Best for On-Premises Deployment
+    tagline: AI-native transaction monitoring and sanctions screening for financial institutions.
+    coverage: Global (offices in Europe, Middle East, APAC and US)
+    size: null
+    pros:
+    - Built-in sandbox lets teams test monitoring rules before deploying them live
+    - Trusted by 150+ institutions, per Napier, including Banco do Brasil and Australia Post
+    - AI fuzzy name matching in more than 20 languages, including simplified Chinese and Arabic, helps cut false positives
+    cons:
+    - Does not perform identity verification, so it needs a separate IDV vendor alongside it
+    - No published pricing
+    - Enterprise-only focus, less suited to early-stage fintechs
     legacy_price_shown: Custom pricing
     legacy_rating_shown: null
     segments: []
@@ -227,39 +227,20 @@ aml:
     legacy_rating_shown: null
     segments: []
 
-  - slug: unit21
-    name: Unit21
-    award: Best for US Fintech and Payments
-    tagline: Fraud and AML platform with AI agents that handle investigations, beyond alerts.
-    coverage: null
+  - slug: kycaid
+    name: KYCAID
+    award: Best for No-Minimum Screening
+    tagline: Pay-per-check sanctions, PEP and adverse-media screening with public API docs and no monthly minimum.
+    coverage: Global
     size: null
     pros:
-    - AI agents that carry investigation work forward rather than only summarizing alerts; one customer case study (Nexo) cites a 93% cut in false positives
-    - Used by 180+ customers, per Unit21, including Chime, Green Dot, and Sallie Mae
-    - Covers RTP, FedNow, ACH, card and crypto payments in one platform
+    - PEP and sanctions screening costs €0.10 a check, with no subscription or monthly minimum
+    - Public API docs explain the match threshold and the weight of each field
+    - €50 credit on registration, no card needed
     cons:
-    - No published rate card
-    - Best suited to regulated financial institutions rather than early-stage startups
-    - CEO change in April 2026 (co-founder Trisha Kothari moved to chair) brings some organizational change
-    legacy_price_shown: Not published
-    legacy_rating_shown: null
-    segments: []
-  - slug: napier
-    name: Napier
-    award: Best for On-Premises Deployment
-    tagline: AI-native transaction monitoring and sanctions screening for financial institutions.
-    coverage: Global (offices in Europe, Middle East, APAC and US)
-    size: null
-    pros:
-    - Built-in sandbox lets teams test monitoring rules before deploying them live
-    - Trusted by 150+ institutions, per Napier, including Banco do Brasil and Australia Post
-    - AI fuzzy name matching in more than 20 languages, including simplified Chinese and Arabic, helps cut false positives
-    cons:
-    - Does not perform identity verification, so it needs a separate IDV vendor alongside it
-    - No published pricing
-    - Enterprise-only focus, less suited to early-stage fintechs
-    legacy_price_shown: Custom pricing
-    legacy_rating_shown: null
+    - Public docs do not name its sanctions lists, update times or data provider
+    - Ongoing monitoring is a flat €100 a month add-on
+    - No audit trail or case management described
     segments: []
   - slug: kyc360
     name: KYC360
@@ -276,6 +257,40 @@ aml:
     - More focused on AML screening and lifecycle than document-first identity verification
     - Experian announced integration into its Ascend platform from 2026, so the combined offer is still new
     legacy_price_shown: From £105/mo (21 search credits)
+    legacy_rating_shown: null
+    segments: []
+  - slug: kychub
+    name: KYC Hub
+    award: Best for No-Code Workflows
+    tagline: No-code financial-crime orchestration covering the full lifecycle in one platform.
+    coverage: 190+ countries
+    size: null
+    pros:
+    - Full financial-crime lifecycle (identity, screening, monitoring, case management) in one no-code platform, with monitoring from the Growth tier
+    - 'Fast configuration: 100+ templates to ship flows in hours, per the vendor'
+    - Modular pricing that lets you change tiers or add and remove modules at any time
+    cons:
+    - No published prices; a quote needs a demo and a pilot
+    - SOC 2 is described only as "aligned", not as an audited report
+    - Younger, smaller brand than established category leaders
+    legacy_price_shown: Custom pricing
+    legacy_rating_shown: null
+    segments: []
+  - slug: unit21
+    name: Unit21
+    award: Best for US Fintech and Payments
+    tagline: Fraud and AML platform with AI agents that handle investigations, beyond alerts.
+    coverage: null
+    size: null
+    pros:
+    - AI agents that carry investigation work forward rather than only summarizing alerts; one customer case study (Nexo) cites a 93% cut in false positives
+    - Used by 180+ customers, per Unit21, including Chime, Green Dot, and Sallie Mae
+    - Covers RTP, FedNow, ACH, card and crypto payments in one platform
+    cons:
+    - No published rate card
+    - Best suited to regulated financial institutions rather than early-stage startups
+    - CEO change in April 2026 (co-founder Trisha Kothari moved to chair) brings some organizational change
+    legacy_price_shown: Not published
     legacy_rating_shown: null
     segments: []
 australia:
