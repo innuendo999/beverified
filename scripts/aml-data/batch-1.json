@@ -1,0 +1,104 @@
+{
+  "complyadvantage": {
+    "sources": [
+      {"title": "Managing webhooks", "publisher": "ComplyAdvantage", "url": "https://complyadvantage-knowledge-base.help.usepylon.com/articles/4975130734-managing-webhooks", "accessed": "2026-11"},
+      {"title": "ComplyAdvantage Payment Screening (G-Cloud service listing)", "publisher": "Crown Commercial Service, Digital Marketplace", "url": "https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/441197968824603", "accessed": "2026-11"}
+    ],
+    "capabilities": {
+      "list_coverage": {"status": "yes", "lists": ["ofac", "eu", "uk", "un"], "note": "names OFAC, UN, HMT, EU and DFAT", "source": 11, "checked": "2026-11-23"},
+      "list_updates": {"merge": true, "hours": 1, "checked": "2026-11-23"},
+      "adverse_media": {"merge": true, "evidence": "counted", "evidence_source": 11, "checked": "2026-11-23"},
+      "data_provenance": {"status": "yes", "note": "own risk data; controls ingestion and enrichment", "source": 11, "checked": "2026-11-23"},
+      "transliteration": {"status": "not_disclosed", "note": "lists crawled in 14 languages; transliteration not described", "checked": "2026-11-23"},
+      "secondary_identifiers": {"status": "yes", "note": "birth year filter and year-of-birth match types; country filter", "source": 13, "checked": "2026-11-23"},
+      "whitelisting": {"status": "yes", "note": "client reference dismisses future identical results; whitelist flag", "source": 13, "checked": "2026-11-23"},
+      "calibration_docs": {"status": "yes", "note": "help article explains the 0 to 100 match threshold and fuzziness", "source": 10, "checked": "2026-11-23"},
+      "alert_reporting": {"status": "yes", "note": "reports for examiner requests; dashboards with hits and hit rate", "source": 11, "checked": "2026-11-23"},
+      "model_validation": {"status": "not_disclosed", "note": "performance analytics for tuning; no validation support described", "checked": "2026-11-23"},
+      "transfer_screening": {"status": "yes", "note": "real-time payment screening, ISO 20022", "source": "@2", "checked": "2026-11-23"},
+      "ongoing_monitoring": {"merge": true, "trigger": "daily", "trigger_source": 10, "checked": "2026-11-23"},
+      "case_management": {"merge": true, "four_eyes": "partial", "four_eyes_source": "@2", "checked": "2026-11-23"}
+    },
+    "integration": {
+      "webhooks": {"status": "yes", "note": "webhooks on case creation and status changes", "source": "@1", "checked": "2026-11-23"}
+    }
+  },
+  "castellum-ai": {
+    "sources": [
+      {"title": "What are Delisted Lists?", "publisher": "Castellum.AI", "url": "https://support.castellum.ai/hc/en-us/articles/48512040215188-What-are-Delisted-Lists", "accessed": "2026-11"},
+      {"title": "Delta Screening vs. Real-Time Monitoring", "publisher": "Castellum.AI", "url": "https://support.castellum.ai/hc/en-us/articles/37891509248788-Delta-Screening-vs-Real-Time-Monitoring", "accessed": "2026-11"},
+      {"title": "Screening & Monitoring (knowledge base)", "publisher": "Castellum.AI", "url": "https://support.castellum.ai/hc/en-us/categories/4405709966740-Screening-Monitoring", "accessed": "2026-11"},
+      {"title": "Adverse Media Buyer's Guide", "publisher": "Castellum.AI", "url": "https://www.castellum.ai/insights/adverse-media-buyers-guide", "accessed": "2026-11"}
+    ],
+    "capabilities": {
+      "list_coverage": {"status": "yes", "lists": ["ofac", "eu", "uk", "un"], "note": "names OFAC SDN, UN Security Council, EU and UK lists", "source": "@1", "checked": "2026-11-23"},
+      "list_updates": {"merge": true, "hours": 1, "note": "database updates every 5 minutes", "checked": "2026-11-23"},
+      "adverse_media": {"merge": true, "evidence": "taxonomy", "evidence_source": "@4", "checked": "2026-11-23"},
+      "data_provenance": {"status": "yes", "note": "list data sourced directly from issuing authorities", "source": 10, "checked": "2026-11-23"},
+      "transliteration": {"status": "yes", "note": "transliterations; 100+ languages incl. Arabic, Chinese, Farsi, Korean, Russian", "source": 10, "checked": "2026-11-23"},
+      "secondary_identifiers": {"status": "yes", "note": "IDs, birth dates and addresses added to list entries for matching", "source": 10, "checked": "2026-11-23"},
+      "whitelisting": {"status": "partial", "note": "delta screening alerts only on new or updated list entries", "source": "@2", "checked": "2026-11-23"},
+      "calibration_docs": {"status": "yes", "note": "public articles on how search and Jgram matching work", "source": "@3", "checked": "2026-11-23"},
+      "alert_reporting": {"status": "not_disclosed", "note": "no alert reports described", "checked": "2026-11-23"},
+      "model_validation": {"status": "yes", "note": "joint test with standard test files at your configuration before go-live", "source": 11, "checked": "2026-11-23"},
+      "transfer_screening": {"status": "yes", "note": "transaction screening and crypto wallet screening through the API", "source": 14, "checked": "2026-11-23"},
+      "ongoing_monitoring": {"merge": true, "trigger": "list_change", "trigger_source": "@2", "checked": "2026-11-23"}
+    },
+    "integration": {
+      "webhooks": {"status": "not_disclosed", "note": "notification channel depends on your setup; no webhooks described", "checked": "2026-11-23"}
+    }
+  },
+  "smartsearch": {
+    "capabilities": {
+      "list_coverage": {"status": "partial", "lists": ["eu", "uk", "un"], "note": "names UN, UK Consolidated and EU Consolidated lists; OFAC not named", "source": 14, "checked": "2026-11-23"},
+      "list_updates": {"merge": true, "hours": 24, "checked": "2026-11-23"},
+      "data_provenance": {"status": "yes", "note": "Dow Jones Watchlist and LSEG World-Check One", "source": 14, "checked": "2026-11-23"},
+      "transliteration": {"status": "yes", "note": "matching covers aliases, misspellings and transliterations", "source": 14, "checked": "2026-11-23"},
+      "secondary_identifiers": {"status": "not_disclosed", "note": "identifying information mentioned; which fields not stated", "checked": "2026-11-23"},
+      "whitelisting": {"status": "not_disclosed", "note": "false positives can be filtered; behaviour on re-screen not described", "checked": "2026-11-23"},
+      "calibration_docs": {"status": "not_disclosed", "note": "no public documentation of matching settings", "checked": "2026-11-23"},
+      "alert_reporting": {"status": "partial", "note": "tailored reports; alert reports not detailed", "source": 15, "checked": "2026-11-23"},
+      "model_validation": {"status": "not_disclosed", "note": "no validation support described", "checked": "2026-11-23"},
+      "transfer_screening": {"status": "partial", "note": "says customers and transactions are checked; no payment screening product described", "source": 14, "checked": "2026-11-23"},
+      "ongoing_monitoring": {"merge": true, "trigger": "daily", "trigger_source": 14, "checked": "2026-11-23"},
+      "case_management": {"merge": true, "four_eyes": "partial", "four_eyes_source": 14, "checked": "2026-11-23"}
+    },
+    "integration": {
+      "webhooks": {"status": "not_disclosed", "note": "no API or webhook documentation found", "checked": "2026-11-23"}
+    }
+  },
+  "sumsub": {
+    "sources": [
+      {"title": "How often do we update AML data sources", "publisher": "Sumsub", "url": "https://docs.sumsub.com/docs/data-sources-and-refreshment-times", "accessed": "2026-11"},
+      {"title": "Matching techniques in AML Screening", "publisher": "Sumsub", "url": "https://docs.sumsub.com/docs/fuzzy-matching", "accessed": "2026-11"},
+      {"title": "AML screening events", "publisher": "Sumsub", "url": "https://docs.sumsub.com/docs/aml-screening-events", "accessed": "2026-11"},
+      {"title": "AML Transaction Monitoring: Watchlist Screening Features", "publisher": "Sumsub", "url": "https://docs.sumsub.com/docs/aml-transaction-monitoring-watchlist-screening-features", "accessed": "2026-11"},
+      {"title": "Case management webhooks", "publisher": "Sumsub", "url": "https://docs.sumsub.com/docs/case-management-webhooks", "accessed": "2026-11"},
+      {"title": "Configure AML screening", "publisher": "Sumsub", "url": "https://docs.sumsub.com/docs/configure-aml-screening", "accessed": "2026-11"},
+      {"title": "AML compliance", "publisher": "Sumsub", "url": "https://sumsub.com/customers/aml-compliance/", "accessed": "2026-11"}
+    ],
+    "capabilities": {
+      "list_coverage": {"status": "yes", "lists": ["ofac", "eu", "uk", "un"], "note": "names OFAC, UN, HMT, EU and DFAT", "source": 9, "checked": "2026-11-23"},
+      "list_updates": {"status": "yes", "hours": 720, "note": "partner sources refresh from a couple of hours to 1 month", "source": "@1", "checked": "2026-11-23"},
+      "pep_tiers": {"status": "yes", "note": "PEPs, relatives and close associates", "source": 9, "checked": "2026-11-23"},
+      "data_provenance": {"status": "yes", "note": "ComplyAdvantage by default, or World-Check One", "source": "@6", "checked": "2026-11-23"},
+      "fuzzy_matching": {"status": "yes", "note": "fuzziness configurable per data attribute", "source": "@2", "checked": "2026-11-23"},
+      "transliteration": {"status": "yes", "note": "matches names transliterated from non-Latin scripts", "source": "@2", "checked": "2026-11-23"},
+      "secondary_identifiers": {"status": "yes", "note": "country, entity type, date of birth; TIN, ID number, address", "source": "@2", "checked": "2026-11-23"},
+      "whitelisting": {"status": "not_disclosed", "note": "false positive status; behaviour on re-screen not described", "checked": "2026-11-23"},
+      "alert_explanation": {"status": "yes", "note": "reasoning note and report with each match", "source": 9, "checked": "2026-11-23"},
+      "audit_trail": {"status": "yes", "note": "timeline of every screening, review and monitoring update", "source": "@3", "checked": "2026-11-23"},
+      "calibration_docs": {"status": "yes", "note": "matching settings explained per attribute", "source": "@2", "checked": "2026-11-23"},
+      "alert_reporting": {"status": "partial", "note": "case analytics on workloads and review flows", "source": 11, "checked": "2026-11-23"},
+      "model_validation": {"status": "not_disclosed", "note": "no validation support described", "checked": "2026-11-23"},
+      "transfer_screening": {"status": "yes", "note": "counterparty screening in transaction monitoring and Travel Rule", "source": "@4", "checked": "2026-11-23"},
+      "risk_scoring": {"status": "yes", "note": "dynamic risk scoring of users and businesses", "source": "@7", "checked": "2026-11-23"},
+      "batch_screening": {"status": "not_disclosed", "note": "no batch screening by file described", "checked": "2026-11-23"},
+      "ongoing_monitoring": {"merge": true, "trigger": "daily", "trigger_source": "@1", "checked": "2026-11-23"},
+      "case_management": {"merge": true, "four_eyes": "yes", "four_eyes_source": 11, "checked": "2026-11-23"}
+    },
+    "integration": {
+      "webhooks": {"status": "yes", "note": "AML case webhooks and applicant status webhooks", "source": "@5", "checked": "2026-11-23"}
+    }
+  }
+}

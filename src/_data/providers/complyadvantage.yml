@@ -200,16 +200,22 @@ capabilities:
     source: 1
   adverse_media:
     status: 'yes'
+    evidence: counted
+    evidence_source: 11
     note: all plans incl. Starter
     source: 1
+    checked: '2026-11-23'
   transaction_monitoring:
     status: add_on
     note: Enterprise plan only
     source: 1
   case_management:
     status: 'yes'
+    four_eyes: 'partial'
+    four_eyes_source: 16
     note: configurable review workflows
     source: 6
+    checked: '2026-11-23'
   identity_verification:
     status: 'no'
     note: no ID document checks
@@ -246,12 +252,17 @@ capabilities:
     source: 1
   ongoing_monitoring:
     status: 'yes'
+    trigger: daily
+    trigger_source: 10
     note: ongoing monitoring on all plans
     source: 1
+    checked: '2026-11-23'
   list_updates:
     status: 'yes'
+    hours: 1
     note: sanctions list changes available within minutes
     source: 11
+    checked: '2026-11-23'
   pep_tiers:
     status: 'yes'
     note: PEPs and RCAs on all plans
@@ -280,6 +291,50 @@ capabilities:
     status: partial
     note: EU, US and APAC API regions
     source: 13
+  list_coverage:
+    status: 'yes'
+    lists: [ofac, eu, uk, un]
+    note: names OFAC, UN, HMT, EU and DFAT
+    source: 11
+    checked: '2026-11-23'
+  data_provenance:
+    status: 'yes'
+    note: own risk data; controls ingestion and enrichment
+    source: 11
+    checked: '2026-11-23'
+  transliteration:
+    status: 'not_disclosed'
+    note: lists crawled in 14 languages; transliteration not described
+    checked: '2026-11-23'
+  secondary_identifiers:
+    status: 'yes'
+    note: birth year filter and year-of-birth match types; country filter
+    source: 13
+    checked: '2026-11-23'
+  whitelisting:
+    status: 'yes'
+    note: client reference dismisses future identical results; whitelist flag
+    source: 13
+    checked: '2026-11-23'
+  calibration_docs:
+    status: 'yes'
+    note: help article explains the 0 to 100 match threshold and fuzziness
+    source: 10
+    checked: '2026-11-23'
+  alert_reporting:
+    status: 'yes'
+    note: reports for examiner requests; dashboards with hits and hit rate
+    source: 11
+    checked: '2026-11-23'
+  model_validation:
+    status: 'not_disclosed'
+    note: performance analytics for tuning; no validation support described
+    checked: '2026-11-23'
+  transfer_screening:
+    status: 'yes'
+    note: real-time payment screening, ISO 20022
+    source: 16
+    checked: '2026-11-23'
 integration:
   checked: '2026-11'
   docs_public:
@@ -307,6 +362,11 @@ integration:
     status: partial
     note: ticket and email; hours only for video calls
     source: 14
+  webhooks:
+    status: 'yes'
+    note: webhooks on case creation and status changes
+    source: 15
+    checked: '2026-11-23'
 track_record:
   ownership:
     status: stable
@@ -418,6 +478,14 @@ sources:
 - title: How to contact support
   publisher: ComplyAdvantage
   url: https://complyadvantage-knowledge-base.help.usepylon.com/articles/5261580702-how-to-contact-support
+  accessed: '2026-11'
+- title: Managing webhooks
+  publisher: ComplyAdvantage
+  url: https://complyadvantage-knowledge-base.help.usepylon.com/articles/4975130734-managing-webhooks
+  accessed: '2026-11'
+- title: ComplyAdvantage Payment Screening (G-Cloud service listing)
+  publisher: Crown Commercial Service, Digital Marketplace
+  url: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/441197968824603
   accessed: '2026-11'
 entity:
   wikidata: null

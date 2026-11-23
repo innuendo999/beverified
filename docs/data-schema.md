@@ -124,6 +124,7 @@ integration:
   sandbox: {status, note, source}        # self-serve sandbox or free trial, no sales call
   no_code: {status, note, source}        # no-code workflow builder or hosted verification link
   support_hours: {status, note, source}  # published support channels AND hours or SLA
+  webhooks: {status, note, source}       # AML 1.0: webhooks or callbacks for monitoring alerts
 coverage:                    # identity family only
   checked: '2026-11'
   countries: {value: 220, note: 'countries and territories', source}   # integer or null
@@ -145,6 +146,19 @@ capabilities:                # new keys, same shape as the other capabilities
   audit_trail: {...}         # AML: decision log or audit trail
   risk_scoring: {...}        # AML: risk scoring or rules engine
   batch_screening: {...}     # AML: bulk or batch screening
+  list_coverage: {status, lists: [ofac, eu, uk, un], note, source}   # AML 1.0: core lists the vendor names
+  data_provenance: {...}     # AML 1.0: own research or a named data supplier
+  transliteration: {...}     # AML 1.0: matching across transliterations / non-Latin scripts
+  secondary_identifiers: {...} # AML 1.0: DOB, nationality, ID numbers used to rule out matches
+  whitelisting: {...}        # AML 1.0: cleared matches suppressed on re-screening
+  calibration_docs: {...}    # AML 1.0: public documentation of matching settings
+  alert_reporting: {...}     # AML 1.0: reports on alerts, true matches, list update times
+  model_validation: {...}    # AML 1.0: validation report, test pack or tuning service
+  transfer_screening: {...}  # AML 1.0: payments or crypto transfers screened before execution
+  # AML 1.0 extra fields on existing keys: list_updates.hours (stated time, rounded up to hours),
+  # adverse_media.evidence (named|counted|taxonomy) + evidence_source,
+  # ongoing_monitoring.trigger (list_change|daily|periodic) + trigger_source,
+  # case_management.four_eyes (yes|partial) + four_eyes_source. Rules: docs/scoring-aml.md
 ```
 
 `score_breakdown[]` is written by `node scripts/rescore.mjs --write`; never type it by hand.

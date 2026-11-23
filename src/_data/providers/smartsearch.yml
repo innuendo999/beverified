@@ -161,8 +161,11 @@ capabilities:
     source: 1
   case_management:
     status: 'yes'
+    four_eyes: 'partial'
+    four_eyes_source: 14
     note: configurable workflow
     source: 10
+    checked: '2026-11-23'
   identity_verification:
     status: 'yes'
     note: SmartDoc document and biometric check
@@ -198,12 +201,17 @@ capabilities:
     source: 1
   ongoing_monitoring:
     status: 'yes'
+    trigger: daily
+    trigger_source: 14
     note: nightly re-screening of monitored customers
     source: 14
+    checked: '2026-11-23'
   list_updates:
     status: 'yes'
+    hours: 24
     note: Dow Jones Watchlist updated daily
     source: 14
+    checked: '2026-11-23'
   pep_tiers:
     status: 'yes'
     note: relatives and close associates of PEPs
@@ -229,6 +237,48 @@ capabilities:
   data_residency:
     status: not_disclosed
     note: hosting location not stated
+  list_coverage:
+    status: 'partial'
+    lists: [eu, uk, un]
+    note: names UN, UK Consolidated and EU Consolidated lists; OFAC not named
+    source: 14
+    checked: '2026-11-23'
+  data_provenance:
+    status: 'yes'
+    note: Dow Jones Watchlist and LSEG World-Check One
+    source: 14
+    checked: '2026-11-23'
+  transliteration:
+    status: 'yes'
+    note: matching covers aliases, misspellings and transliterations
+    source: 14
+    checked: '2026-11-23'
+  secondary_identifiers:
+    status: 'not_disclosed'
+    note: identifying information mentioned; which fields not stated
+    checked: '2026-11-23'
+  whitelisting:
+    status: 'not_disclosed'
+    note: false positives can be filtered; behaviour on re-screen not described
+    checked: '2026-11-23'
+  calibration_docs:
+    status: 'not_disclosed'
+    note: no public documentation of matching settings
+    checked: '2026-11-23'
+  alert_reporting:
+    status: 'partial'
+    note: tailored reports; alert reports not detailed
+    source: 15
+    checked: '2026-11-23'
+  model_validation:
+    status: 'not_disclosed'
+    note: no validation support described
+    checked: '2026-11-23'
+  transfer_screening:
+    status: 'partial'
+    note: says customers and transactions are checked; no payment screening product described
+    source: 14
+    checked: '2026-11-23'
 integration:
   checked: '2026-11'
   docs_public:
@@ -254,6 +304,10 @@ integration:
     status: 'yes'
     note: phone support, weekday office hours
     source: 1
+  webhooks:
+    status: 'not_disclosed'
+    note: no API or webhook documentation found
+    checked: '2026-11-23'
 track_record:
   ownership:
     status: changed_disclosed

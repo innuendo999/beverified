@@ -1,0 +1,53 @@
+name: AML watch
+
+# Daily read of the vendor pages our AML records cite for AML 1.0 fields (AML ranking).
+# Writes only to the `aml-watch-state` branch (never to main, so it never triggers a deploy).
+# A scheduled Claude task reads aml-watch/latest.md once a week and opens a PR for the
+# owner when a record needs a change. Spec: docs/aml-watch.md
+
+on:
+  schedule:
+    - cron: "13 6 * * *"   # 06:13 UTC daily
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: aml-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Check out the state branch
+        run: |
+          if git ls-remote --exit-code --heads origin aml-watch-state; then
+            git fetch --depth 1 origin aml-watch-state
+            git worktree add -B aml-watch-state state origin/aml-watch-state
+          else
+            git worktree add --orphan -b aml-watch-state state
+          fi
+      - name: Watch
+        run: node scripts/aml-watch/watch.mjs --state state/aml-watch
+      - name: Commit and push the state
+        working-directory: state
+        run: |
+          git config user.name "beverified-aml-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add aml-watch
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "AML watch $(date -u +%F)"
+            git push origin aml-watch-state
+          fi
+      - name: Summary
+        run: cat state/aml-watch/latest.md >> "$GITHUB_STEP_SUMMARY"
