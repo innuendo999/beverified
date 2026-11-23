@@ -276,23 +276,6 @@ aml:
     legacy_price_shown: Custom pricing
     legacy_rating_shown: null
     segments: []
-  - slug: unit21
-    name: Unit21
-    award: Best for US Fintech and Payments
-    tagline: Fraud and AML platform with AI agents that handle investigations, beyond alerts.
-    coverage: null
-    size: null
-    pros:
-    - AI agents that carry investigation work forward rather than only summarizing alerts; one customer case study (Nexo) cites a 93% cut in false positives
-    - Used by 180+ customers, per Unit21, including Chime, Green Dot, and Sallie Mae
-    - Covers RTP, FedNow, ACH, card and crypto payments in one platform
-    cons:
-    - No published rate card
-    - Best suited to regulated financial institutions rather than early-stage startups
-    - CEO change in April 2026 (co-founder Trisha Kothari moved to chair) brings some organizational change
-    legacy_price_shown: Not published
-    legacy_rating_shown: null
-    segments: []
 australia:
   title: Best KYC & AML Providers for Australia in 2026
   # Scored providers: a check through the Australian Government DVS documented by the vendor, directly or via a partner
