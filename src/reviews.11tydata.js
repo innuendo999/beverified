@@ -1,6 +1,7 @@
 // Computed data for provider review pages (src/reviews.njk).
 // Everything comes from src/_data/providers/<slug>.yml; nothing is typed here.
 import { buildMatrix } from "./_lib/capabilities.js";
+import { organization, offerFor } from "./_lib/schema.js";
 import { termForCapability } from "./_lib/glossary.js";
 import { buildSidebar, companyFacts } from "./_lib/sidebar.js";
 import { reviewSponsor, shortLabel } from "./_lib/placements.js";
@@ -131,7 +132,10 @@ export default {
         {
           "@type": "SoftwareApplication", "@id": `${url}#software`, name: p.name,
           ...(p.alternate_names?.length ? { alternateName: p.alternate_names } : {}),
-          applicationCategory: p.application_category || "BusinessApplication",
+          // Google accepts only its app types here; the record's own label goes to applicationSubCategory.
+          applicationCategory: "BusinessApplication",
+          ...(p.application_category ? { applicationSubCategory: p.application_category } : {}),
+          ...(offerFor(p) ? { offers: offerFor(p) } : {}),
           operatingSystem: "Web",
           ...(p.entity?.same_as?.length ? { sameAs: p.entity.same_as } : {}),
           ...(p.screenshots?.length ? { screenshot: p.screenshots.map((x) => ({ "@type": "ImageObject", url: `${d.site.url}${x.file}`, caption: x.long || x.caption, width: x.width, height: x.height })) } : {}),
@@ -141,7 +145,7 @@ export default {
               reviewRating: { "@type": "Rating", ratingValue: p.score, bestRating: 5, worstRating: 1 },
               author: author ? { "@type": "Person", name: author.name, ...(author.url ? { url: d.site.url + author.url } : {}) }
                              : { "@type": "Organization", name: "BeVerified" },
-              publisher: { "@type": "Organization", name: "BeVerified", url: `${d.site.url}/` },
+              publisher: organization(d.site),
               ...(p.last_verified ? { datePublished: p.last_verified } : {}),
               ...(p.pros?.length ? { positiveNotes: { "@type": "ItemList", itemListElement: p.pros.map((t, i) => ({ "@type": "ListItem", position: i + 1, name: t })) } } : {}),
               ...(p.cons?.length ? { negativeNotes: { "@type": "ItemList", itemListElement: p.cons.map((t, i) => ({ "@type": "ListItem", position: i + 1, name: t })) } } : {}),
