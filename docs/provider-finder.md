@@ -22,7 +22,7 @@ Rules:
 
 ## Where it shows
 
-Every page on the v3 layout except `v3.finder.exclude` (/methodology/, /terms/, /privacy/). Not on the calculator embed page. Hidden while the cookie banner is open and until the reader scrolls past 60% of the first screen (short pages: at once). Shares the corner with Back to top (left of the launcher) and sits above the sticky "Visit site" bar on V4/V5 reviews. Hidden in print.
+Every page on the v3 layout except `v3.finder.exclude` (/methodology/, /terms/, /privacy/). Not on the calculator embed page. Visible from page load (owner, 2026-11-23); while the cookie banner is open the launcher sits above it, and an open panel covers the banner. The panel always opens at question 1 unless the page sets the answer (ranking, country or review page); saved answers only preselect. Shares the corner with Back to top (left of the launcher) and sits above the sticky "Visit site" bar on V4/V5 reviews. Hidden in print.
 
 ## Files
 

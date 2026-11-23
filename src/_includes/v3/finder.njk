@@ -188,7 +188,8 @@
     var first = !D;
     (D ? Promise.resolve(D) : fetch("/assets/finder.json").then(function (r) { return r.json(); })).then(function (d) {
       D = d;
-      if (first) st.step = st.need ? (st.country ? (st.price ? "results" : "price") : "where") : "need";
+      // Start at question 1 unless the page itself sets the answer (ranking, country or review page); saved answers only preselect.
+      if (first) st.step = ctx.need ? (ctx.country ? "price" : "where") : "need";
       panel.hidden = false; shade.hidden = false; launch.hidden = true; launch.setAttribute("aria-expanded", "true");
       root.classList.add("is-open"); render(); body.focus({ preventScroll: true });
       track("finder_open", { context: ctx.alt ? "review" : ctx.country ? "country" : ctx.need ? "ranking" : "page" });
@@ -203,16 +204,17 @@
   shade.addEventListener("click", close);
   back.addEventListener("click", function () { var s = ["need", "where", "price", "results"], i = s.indexOf(st.step); if (i > 0) go(s[i - 1]); });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !panel.hidden) close(); });
-  // Show after the first screen, never over the cookie banner; share the corner with Back to top.
+  // Visible from page load. While the cookie banner is open the launcher sits above it; it shares the corner with Back to top.
   var consent = document.getElementById("consent"), lastY = window.scrollY, ticking = false;
+  root.hidden = false;
   function place() {
     ticking = false;
-    var y = window.scrollY, shortPage = document.documentElement.scrollHeight < window.innerHeight * 1.6;
-    root.hidden = !!(consent && !consent.hidden) || !(shortPage || y > window.innerHeight * 0.6);
+    var y = window.scrollY, banner = consent && !consent.hidden ? consent.offsetHeight + 16 : 0;
+    document.documentElement.style.setProperty("--fd-lift", banner + "px");
     if (window.matchMedia("(max-width: 640px)").matches && !root.classList.contains("is-open")) root.classList.toggle("is-scrolling", y > lastY + 4);
     lastY = y;
-    if (!root.hidden) document.documentElement.style.setProperty("--fd-w", launch.offsetWidth + "px");
-    document.documentElement.classList.toggle("has-finder", !root.hidden);
+    document.documentElement.style.setProperty("--fd-w", launch.offsetWidth + "px");
+    document.documentElement.classList.add("has-finder");
   }
   function onScroll() { if (!ticking) { ticking = true; window.requestAnimationFrame(place); } }
   window.addEventListener("scroll", onScroll, { passive: true });
