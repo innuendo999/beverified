@@ -1,19 +1,16 @@
-# AML scoring methodology, AML 1.0 (draft, 2026-11-23)
+# AML scoring methodology, AML 1.0 (2026-11-23)
 
-Status: draft for owner review. Criteria, weights, buyer profile and eligibility are proposals until the owner approves them. Not on /methodology/. No provider has an AML score yet.
+Status: criteria, weights, buyer profile and eligibility approved by the owner on 2026-11-23. No provider has an AML score yet.
 
 Applies to the ranking `/providers/aml/` (rankings.yml key `aml`). `aml/banks` keeps its own list and is not scored by this rubric. The H1 and title stay as they are.
 
 ## Decisions
 
-Approved by the owner on 2026-11-23:
+All approved by the owner on 2026-11-23:
 
 1. Phase 1 uses public evidence only. BeVerified's own sandbox tests (time to list, match test set) are phase 2, added when vendor access exists; see "Phase 2". Until then the page says plainly what the score cannot measure.
 2. Buyer profile (ICP): **fintechs, e-money institutions, payment firms and crypto-asset service providers** in the EU, UK and US, roughly 1,000 to 500,000 customers screened, with a compliance team of 1 to 10 people. Buyer: MLRO or head of compliance, with engineering for the integration. Banks are served by `aml/banks`.
 3. A platform whose main product is not AML (for example an identity verification suite with a screening module) is eligible only under eligibility rule 4: at least 2 points in both data and match controls from its own documentation (option A, 2026-11-23).
-
-Proposed, waiting for the owner:
-
 4. The ranking gets its own rubric under the standing rule of 2026-11-05: a separate score per category, the ranking sorts by it, the overall score on reviews is unchanged.
 5. One AML ranking for now. A separate sanctions-screening ranking only if search demand shows it.
 6. Vendor accuracy figures ("90% fewer false positives", "99% match accuracy") never enter the score: they use different samples and methods and cannot be compared. Counts of lists or profiles without names do not score either.
@@ -188,7 +185,7 @@ Approved to plan, not to build yet (owner, 2026-11-23):
 
 ## Rollout
 
-1. This file, approved by the owner.
+1. This file (owner approved the rules on 2026-11-23).
 2. Methodology page: an "AML" section with criteria, weights, buyer profile and date, plus a changelog entry, and `site.json` `v3.rubricAml`. Published before any score.
 3. Data in three batches for the ten providers in `aml` (Sumsub, ComplyAdvantage, Castellum.AI, SmartSearch, Hawk, KYC Hub, Strise, Unit21, Napier, KYC360), with `aml-watch` built in the first batch.
 4. `scripts/rescore-aml.mjs` reuses the v3.1 functions from `scripts/rescore.mjs` and writes `reports/rescore-aml-1.0.csv` (old rank, new rank, AML score, each sub-score, eligibility reason). Owner reviews; manual overrides only with a written reason.
