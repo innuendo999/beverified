@@ -7,7 +7,7 @@ seo:
 breadcrumb_label: Best Travel Rule Providers
 quick_answer: '21 Analytics is our top Travel Rule pick: self-hosted software with built-in TRUST and TRP connectivity. Notabene is the hosted option, with the largest network claim and a free plan but no direct TRUST link. CryptoSwift suits buyers who want published prices. We compared 10 providers on network reach, counterparty coverage and self-hosted wallet checks.'
 last_verified: '2026-09-15'
-updated: '2026-11-18'   # last content edit; last_verified = last fact re-check
+updated: '2026-11-23'   # last content edit; last_verified = last fact re-check
 # Ranking layout v2 (owner, 2026-11-17; canvas "BeVerified: Travel Rule ranking page, redesign proposal"):
 # top 3 columns and chips from ranking-evidence.js (evidence: travel-rule), no score_note (owner removed it).
 layout: v2
@@ -69,7 +69,7 @@ explainer_html:
 
   <h3 id="us-context" style="font-size:14.5px;margin-bottom:8px;">Travel Rule in the United States</h3>
 
-  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">In the US, Travel Rule obligations trace back to FinCEN and the Bank Secrecy Act, which apply a recordkeeping and transmittal requirement to qualifying transfers. Many regulated US exchanges exchange this data over the TRUST network, so network reach matters as much as protocol support when a provider serves the US market.</p>
+  <p style="font-size:14.5px;line-height:1.65;margin-bottom:18px;">In the US, the Travel Rule comes from the Bank Secrecy Act regulations (31 CFR 1010.410(f)): for a transfer of $3,000 or more, the sending institution passes sender and recipient data to the next one. FinCEN applies the same rule to crypto, so the <a href="/glossary/travel-rule/">US threshold for crypto is also $3,000</a>. Many regulated US exchanges exchange this data over the TRUST network, so network reach matters as much as protocol support when a provider serves the US market.</p>
 
   <a class="entity-card__cta" href="/methodology/">See how we evaluate every provider on this list in our full methodology →</a>
 
@@ -77,14 +77,16 @@ explainer_html:
 faq:
 - q: What is the crypto Travel Rule?
   a: The Travel Rule, FATF Recommendation 16, requires a sending Virtual Asset Service Provider (VASP) to pass originator and beneficiary information to the receiving VASP before or during a transfer above the relevant threshold.
+- q: Who does the Travel Rule apply to?
+  a: The Travel Rule applies to the provider that sends a transfer, the one that receives it and any intermediary in between. Under FATF standards that means banks and virtual asset service providers (VASPs). In the US it covers banks and non-bank financial institutions, including money transmitters that move crypto, for transfers of $3,000 or more. In the EU it covers crypto-asset service providers for transfers of any amount.
 - q: What's the difference between Travel Rule compliance and crypto KYC?
   a: Travel Rule software exchanges identity data between VASPs at transfer time. Crypto KYC screens the wallet's own risk and onboarding history. Most VASPs run both, often from different vendors.
 - q: What is IVMS101?
   a: IVMS101 is the data-model standard that defines how originator and beneficiary information is formatted for Travel Rule message exchange between VASPs.
 - q: What is the "Sunrise Issue"?
   a: The Sunrise Issue refers to the compliance gap that arises when a sending VASP's jurisdiction has implemented Travel Rule requirements but the receiving jurisdiction has not yet adopted equivalent rules.
-- q: Do all crypto transfers require Travel Rule data?
-  a: No. Most jurisdictions apply a minimum transfer threshold below which Travel Rule data exchange isn't required, though thresholds vary by country.
+- q: How does the Travel Rule apply to crypto?
+  a: 'For crypto, the Travel Rule makes the sending VASP pass originator and beneficiary data to the receiving VASP before or at the time of the transfer. A blockchain transaction has no field for names, so the data goes over a separate network such as TRUST or TRP. The threshold depends on the country: $3,000 in the US under FinCEN guidance FIN-2019-G001, none in the EU.'
 - q: Can different Travel Rule protocols talk to each other?
   a: Interoperability varies by provider. Some connect to shared networks such as TRUST and TRP, while others run their own protocol. Notabene, for example, is built around its own TAP protocol and provides TRP 1.0 endpoints (not the current 3.x version), but cannot connect directly to TRUST. Check a provider's networks against your counterparties before you commit.
 - q: Which Travel Rule provider works with self-hosted wallets?
