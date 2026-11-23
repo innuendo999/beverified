@@ -17,7 +17,7 @@ export function placementIssues(placements, { rankings, providers, useCases }) {
   const keys = new Set((useCases || []).map((u) => u.slug));
   const seen = {};
   (placements || []).forEach((e, i) => {
-    if (e?.surface === "review" || e?.surface === "hero" || e?.surface === "ranking") return; // checked by reviewPlacementIssues / heroPlacementIssues / rankingPlacementIssues
+    if (e?.surface === "review" || e?.surface === "hero" || e?.surface === "ranking" || e?.surface === "finder") return; // checked by reviewPlacementIssues / heroPlacementIssues / rankingPlacementIssues / finderPlacementIssues
     const id = `placements[${i}] ${e?.use_case ?? "?"}/${e?.slug ?? "?"}`;
     const start = iso(e?.start), end = iso(e?.end);
     if (!e?.use_case || !keys.has(e.use_case)) issues.push(`${id}: use_case is not a homepage use case`);
@@ -39,7 +39,7 @@ export function placementIssues(placements, { rankings, providers, useCases }) {
 export function activePlacements(placements, ctx, today = new Date().toISOString().slice(0, 10)) {
   const out = {};
   (placements || []).forEach((e) => {
-    if (e?.surface === "review" || e?.surface === "hero" || e?.surface === "ranking") return;
+    if (e?.surface === "review" || e?.surface === "hero" || e?.surface === "ranking" || e?.surface === "finder") return;
     if (placementIssues([e], ctx).length) return;
     if (iso(e.start) > today || iso(e.end) < today || out[e.use_case]) return;
     const list = ctx.rankings[e.use_case].providers;
@@ -189,4 +189,42 @@ export function rankingSponsor(placements, ctx, category, today = new Date().toI
     return { slug: e.slug, rank: rank + 1, entry: ctx.rankings[category].providers[rank], provider: ctx.providers[e.slug] };
   }
   return null;
+}
+
+// Provider finder (bottom-right widget, owner 2026-11-23): one sponsor per category, shown as one labelled row under the
+// reader's matches, only when it passes the reader's answers and is not already listed; never on its own review.
+export function finderPlacementIssues(placements, { rankings, providers }) {
+  const issues = [];
+  const seen = {};
+  (placements || []).forEach((e, i) => {
+    if (e?.surface !== "finder") return;
+    const id = `placements[${i}] finder/${e?.category ?? "?"}/${e?.slug ?? "?"}`;
+    const start = iso(e?.start), end = iso(e?.end);
+    const p = providers?.[e?.slug];
+    if (!p || p.status !== "published" || p.score == null) issues.push(`${id}: no published review with a score`);
+    if (!p?.link?.url) issues.push(`${id}: provider record has no link.url`);
+    if (!e?.category || !rankings?.[e.category]) issues.push(`${id}: category is not a rankings.yml key`);
+    else {
+      const rank = inRanking(rankings, e.category, e.slug);
+      if (rank < 0) issues.push(`${id}: sponsor is not ranked in ${e.category}`);
+      else if (rank < 3) issues.push(`${id}: sponsor is already in the top 3 of ${e.category}`);
+    }
+    if (!ISO.test(start) || !ISO.test(end)) issues.push(`${id}: start and end must be YYYY-MM-DD`);
+    else if (start > end) issues.push(`${id}: start is after end`);
+    for (const o of seen[e?.category] || []) if (start <= o.end && o.start <= end) issues.push(`${id}: overlaps ${o.id}`);
+    (seen[e?.category] ||= []).push({ id, start, end });
+  });
+  return issues;
+}
+
+// Live finder sponsors at build time: { category: slug }.
+export function finderSponsors(placements, ctx, today = new Date().toISOString().slice(0, 10)) {
+  const out = {};
+  for (const e of placements || []) {
+    if (e?.surface !== "finder" || out[e.category]) continue;
+    if (finderPlacementIssues([e], ctx).length) continue;
+    if (iso(e.start) > today || iso(e.end) < today) continue;
+    out[e.category] = e.slug;
+  }
+  return out;
 }

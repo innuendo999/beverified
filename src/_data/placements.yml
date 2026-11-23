@@ -17,6 +17,15 @@
 #     end: 2026-12-31
 #   Rules: heroPlacementIssues in src/_lib/placements.js.
 #
+# Provider finder, bottom right (owner, 2026-11-23): one sponsor row per ranking, under the reader's matches.
+#   - surface: finder
+#     category: kyc              # rankings.yml key the finder shows
+#     slug: kycaid               # published review with a score and link.url, ranked in `category`, outside its top 3
+#     start: 2026-12-01
+#     end: 2026-12-31
+#   Shown only when it passes the reader's answers (country ranking, public price, monthly cost) and is not already listed;
+#   never on the sponsor's own review. "Visit website" from the record, rel="sponsored". Rules: finderPlacementIssues.
+#
 # Homepage "Pick by use case" panel:
 #
 # One entry per slot:

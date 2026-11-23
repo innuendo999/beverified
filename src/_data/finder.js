@@ -4,6 +4,7 @@
 import fs from "node:fs";
 import yaml from "js-yaml";
 import costCalc from "./costCalc.js";
+import { finderSponsors } from "../_lib/placements.js";
 
 const read = (rel) => yaml.load(fs.readFileSync(new URL(rel, import.meta.url), "utf8"));
 const MONEY = /(?:[$€£]|\b(?:CHF|USD|EUR|GBP)\s?)\d|\d(?:\.\d+)?p\b/;
@@ -66,6 +67,12 @@ export default function () {
     const pc = P[slug].primary_category;
     pr.home = pc && pr.in[pc] ? pc : Object.keys(pr.in).find((k) => !regionKeys.includes(k)) || null;
   }
+  // Sponsored row: live finder placements (placements.yml surface: finder). Link from the record, always rel="sponsored".
+  const sponsors = {};
+  for (const [cat, slug] of Object.entries(finderSponsors(read("./placements.yml") || [], { rankings, providers: P }))) {
+    if (!providers[slug] || !lists[cat]) continue;
+    sponsors[cat] = { slug, url: P[slug].link.url };
+  }
   const cc = costCalc();
   for (const [slug, pr] of Object.entries(providers)) pr.short = shortPrice(P[slug], cc.priced.find((x) => x.slug === slug));
   const calc = cc.priced.map((p) => ({ slug: p.slug, quoteAbove: p.quoteAbove || null, opts: p.opts.map((o) => ({ plan: o.plan, per: o.per, min: o.min || 0, top: !!o.minOnTop })) }));
@@ -73,6 +80,6 @@ export default function () {
     needs: cfg.needs, biz: cfg.biz, costLists: cfg.costLists, exclude: cfg.exclude,
     countries: [{ id: "world", name: "Worldwide", short: "Worldwide", rank: null }, ...regions],
     regionByRank: Object.fromEntries(regions.filter((r) => r.rank).map((r) => [r.rank, { id: r.id, name: r.name }])),
-    lists, providers, calc, calcChecked: cc.checkedTo,
+    lists, providers, sponsors, calc, calcChecked: cc.checkedTo,
   };
 }

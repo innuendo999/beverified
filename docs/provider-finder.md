@@ -22,7 +22,7 @@ Rules:
 
 ## Where it shows
 
-Every page on the v3 layout except `v3.finder.exclude` (/methodology/, /terms/, /privacy/). Not on the calculator embed page. Hidden while the cookie banner is open and until the reader scrolls past 60% of the first screen (short pages: at once). Shares the corner with Back to top (left of the launcher) and sits above the sticky "Visit site" bar on V4/V5 reviews. Hidden in print.
+Every page on the v3 layout except `v3.finder.exclude` (/methodology/, /terms/, /privacy/). Not on the calculator embed page. Visible from page load (owner, 2026-11-23); while the cookie banner is open the launcher sits above it, and an open panel covers the banner. The panel always opens at question 1 unless the page sets the answer (ranking, country or review page); saved answers only preselect. Shares the corner with Back to top (left of the launcher) and sits above the sticky "Visit site" bar on V4/V5 reviews. Hidden in print.
 
 ## Files
 
@@ -31,7 +31,10 @@ Every page on the v3 layout except `v3.finder.exclude` (/methodology/, /terms/, 
 - Styles: `.fd-*` at the end of `src/assets/css/v3.css`.
 - Filter `mrz` in `eleventy.config.js` (launcher MRZ line).
 
+## Sponsored row (PR 2, owner 2026-11-23)
+
+`placements.yml` entry `surface: finder` with `category`, `slug`, `start`, `end`. One sponsor per category (slots never overlap). The sponsor needs a published review with a score and `link.url`, and must be ranked in that category outside its top 3 (`finderPlacementIssues`, CI). In the panel it is one row after the matches, label "Sponsored", real rank and score, award, price, "Visit website" with `rel="sponsored noopener"` and `data-ad`. Shown only when it passes the reader's answers (in the country ranking when one applies, a public price for "Only public prices", a monthly cost for "Estimate my monthly cost"), is not already among the matches, and the reader is not on its own review. GA4 (after consent): `finder_sponsor_view`, `finder_click` with `link: sponsored`. Policy sentence in `site.json` `v3.adPolicy`.
+
 ## Not built yet
 
-- PR 2: sponsored match row (`placements.yml` `surface: finder`, one sponsor per category, under the three matches, label "Sponsored", real rank and score, only when the sponsor passes the reader's filters and is not already shown, never on its own review; rules in `placements.js`, CI check, one adPolicy sentence).
 - Lead form ("Get quotes"): deferred by the owner on 2026-11-23 (needs a backend, privacy policy change and consent).

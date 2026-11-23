@@ -140,8 +140,8 @@
     if (paid) body.appendChild(el("p", "fd-disc", "Some links earn us a commission."));
     if (!shown.length) body.appendChild(el("p", "fd-hint", priceMode === "public" || vol ? "No provider in this ranking publishes a price for this. Change the price answer to see the ranking." : "No match."));
     var ol = el("ol", "fd-list");
-    shown.forEach(function (s) {
-      var p = D.providers[s], x = p.in[st.need], li = el("li", "fd-row"), cc = vol ? cost(s, n) : null;
+    function row(s, sp) {
+      var p = D.providers[s], x = p.in[st.need], li = el("li", "fd-row" + (sp ? " fd-row--sp" : "")), cc = vol ? cost(s, n) : null;
       var logo = el("span", "fd-logo");
       if (p.logo) { logo.style.background = p.logo.bg; var im = el("img"); im.src = p.logo.src; im.alt = ""; im.loading = "lazy"; if (p.logo.fit === "contain") logo.className += " fd-logo--contain"; logo.appendChild(im); }
       else { logo.className += " fd-logo--txt"; logo.textContent = p.name.charAt(0); }
@@ -155,13 +155,27 @@
       if (x.award) meta.appendChild(el("span", "fd-award", x.award));
       if (tags[s]) meta.appendChild(el("span", "fd-tag", tags[s]));
       if (meta.childNodes.length) mid.appendChild(meta);
-      if (x.site) { var v = el("a", "fd-site", x.site.label + " ↗"); v.href = x.site.url; v.rel = x.site.rel; v.target = "_blank"; v.addEventListener("click", function () { track("finder_click", { provider: s, link: "site", list: st.need }); }); mid.appendChild(v); }
+      if (sp) mid.insertBefore(el("span", "fd-sp", "Sponsored"), top);
+      var site = sp ? { url: sp.url, rel: "sponsored noopener", label: "Visit website" } : x.site;
+      if (site) { var v = el("a", "fd-site", site.label + " ↗"); v.href = site.url; v.rel = site.rel; v.target = "_blank"; if (sp) v.setAttribute("data-ad", ""); v.addEventListener("click", function () { track("finder_click", { provider: s, link: sp ? "sponsored" : "site", list: st.need }); }); mid.appendChild(v); }
       li.appendChild(mid);
       var pr = el("div", "fd-price");
       if (cc) { pr.appendChild(el("b", null, money(cc.v))); pr.appendChild(el("span", null, "a month")); }
-      else if (p.short) pr.appendChild(el("span", "fd-price__txt", p.short)); else if (!p.price) pr.appendChild(el("span", "fd-price__txt", "On request"));
-      li.appendChild(pr); ol.appendChild(li);
-    });
+      else if (p.short) {
+        var m = p.short.match(/^(from )?([$€£]\S+) (.+)$/);
+        if (m) { var l1 = el("span", "fd-price__l1"); if (m[1]) l1.appendChild(el("span", null, "from ")); l1.appendChild(el("b", null, m[2])); pr.appendChild(l1); pr.appendChild(el("span", null, m[3])); }
+        else pr.appendChild(el("span", "fd-price__txt", p.short));
+      } else if (!p.price) pr.appendChild(el("span", "fd-price__txt", "On request"));
+      li.appendChild(pr); return li;
+    }
+    shown.forEach(function (s) { ol.appendChild(row(s)); });
+    // Sponsored row (placements.yml surface: finder): only when the sponsor passes every answer and is not already listed.
+    var sp = D.sponsors && D.sponsors[st.need];
+    if (sp && sp.slug !== ctx.alt && shown.indexOf(sp.slug) < 0 && L.slugs.indexOf(sp.slug) > -1 && (!R || R.indexOf(sp.slug) > -1)
+      && (priceMode !== "public" || D.providers[sp.slug].price) && (!vol || cost(sp.slug, n))) {
+      ol.appendChild(row(sp.slug, sp));
+      track("finder_sponsor_view", { provider: sp.slug, list: st.need });
+    }
     body.appendChild(ol);
     var more = el("div", "fd-more"), all = el("a", null, "See all " + L.slugs.length + " in the " + L.name + " ranking"); all.href = L.url; more.appendChild(all);
     if (vol) { var pi = el("a", null, "Compare every public price in the KYC Pricing Index"); pi.href = "/publications/kyc-pricing-index/#calculator"; more.appendChild(pi); }
@@ -174,7 +188,8 @@
     var first = !D;
     (D ? Promise.resolve(D) : fetch("/assets/finder.json").then(function (r) { return r.json(); })).then(function (d) {
       D = d;
-      if (first) st.step = st.need ? (st.country ? (st.price ? "results" : "price") : "where") : "need";
+      // Start at question 1 unless the page itself sets the answer (ranking, country or review page); saved answers only preselect.
+      if (first) st.step = ctx.need ? (ctx.country ? "price" : "where") : "need";
       panel.hidden = false; shade.hidden = false; launch.hidden = true; launch.setAttribute("aria-expanded", "true");
       root.classList.add("is-open"); render(); body.focus({ preventScroll: true });
       track("finder_open", { context: ctx.alt ? "review" : ctx.country ? "country" : ctx.need ? "ranking" : "page" });
@@ -189,16 +204,17 @@
   shade.addEventListener("click", close);
   back.addEventListener("click", function () { var s = ["need", "where", "price", "results"], i = s.indexOf(st.step); if (i > 0) go(s[i - 1]); });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !panel.hidden) close(); });
-  // Show after the first screen, never over the cookie banner; share the corner with Back to top.
+  // Visible from page load. While the cookie banner is open the launcher sits above it; it shares the corner with Back to top.
   var consent = document.getElementById("consent"), lastY = window.scrollY, ticking = false;
+  root.hidden = false;
   function place() {
     ticking = false;
-    var y = window.scrollY, shortPage = document.documentElement.scrollHeight < window.innerHeight * 1.6;
-    root.hidden = !!(consent && !consent.hidden) || !(shortPage || y > window.innerHeight * 0.6);
+    var y = window.scrollY, banner = consent && !consent.hidden ? consent.offsetHeight + 16 : 0;
+    document.documentElement.style.setProperty("--fd-lift", banner + "px");
     if (window.matchMedia("(max-width: 640px)").matches && !root.classList.contains("is-open")) root.classList.toggle("is-scrolling", y > lastY + 4);
     lastY = y;
-    if (!root.hidden) document.documentElement.style.setProperty("--fd-w", launch.offsetWidth + "px");
-    document.documentElement.classList.toggle("has-finder", !root.hidden);
+    document.documentElement.style.setProperty("--fd-w", launch.offsetWidth + "px");
+    document.documentElement.classList.add("has-finder");
   }
   function onScroll() { if (!ticking) { ticking = true; window.requestAnimationFrame(place); } }
   window.addEventListener("scroll", onScroll, { passive: true });
