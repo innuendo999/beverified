@@ -16,6 +16,20 @@ function priceText(d) {
   return it && it.kind === "official" && MONEY.test(String(it.value)) ? cut(`${it.label}: ${it.value}`, 80) : null;
 }
 
+// Short price for a finder row: the Pricing Index price of the record, first non-zero money value, cut at the first clause.
+function shortPrice(d, calc) {
+  if (calc) return "from $" + Math.min(...calc.opts.map((o) => o.per)).toFixed(2) + " a check";
+  const items = d.pricing?.items || [];
+  const labels = [].concat(d.pricing?.index?.price || [], d.pricing?.index?.minimum || []);
+  for (const l of labels) {
+    const it = items.find((i) => i.label === l && i.kind === "official");
+    const v = it && String(it.value);
+    if (!v || !MONEY.test(v) || /^(\$0\b|free)/i.test(v)) continue;
+    return v.split(/;| \(|, | on /)[0].replace(/^From /, "from ").trim();
+  }
+  return null;
+}
+
 export default function () {
   const site = JSON.parse(fs.readFileSync(new URL("./site.json", import.meta.url), "utf8"));
   const cfg = site.v3.finder;
@@ -28,7 +42,10 @@ export default function () {
     if (d?.status === "published") P[d.slug] = d;
   }
   const names = Object.fromEntries((home.use_cases || []).map((u) => [u.slug, u.name]));
-  const regions = (home.regions || []).map((r) => ({ id: r.slug || r.short?.toLowerCase() || r.name.toLowerCase().replace(/\W+/g, "-"), name: r.name, rank: r.slug && rankings[r.slug] ? r.slug : null }));
+  const regions = (home.regions || []).map((r) => ({ id: r.slug || r.short?.toLowerCase() || r.name.toLowerCase().replace(/\W+/g, "-"), name: r.name, short: r.short || r.name, rank: r.slug && rankings[r.slug] ? r.slug : null }));
+  // Logo tiles as in the mega menu and the homepage use-case panel (src/_data/logoTiles.json).
+  const tilesUrl = new URL("./logoTiles.json", import.meta.url);
+  const tiles = fs.existsSync(tilesUrl) ? JSON.parse(fs.readFileSync(tilesUrl, "utf8")) : {};
   const lists = {};
   const providers = {};
   const keys = new Set([...cfg.needs, ...cfg.biz].map(([k]) => k).concat(Object.keys(rankings)));
@@ -37,7 +54,8 @@ export default function () {
     lists[k] = { name: names[k] || rankings[k]?.title || k, url: `/providers/${k}/`, slugs: entries.map((e) => e.slug) };
     for (const e of entries) {
       const d = P[e.slug];
-      const pr = (providers[e.slug] ||= { name: d.name, url: `/providers/${d.slug}/`, price: priceText(d), in: {} });
+      const pr = (providers[e.slug] ||= { name: d.name, url: `/providers/${d.slug}/`, price: priceText(d), short: null, in: {},
+        logo: d.logo?.src ? { src: d.logo.src, bg: tiles[d.slug]?.bg || d.logo.background || "#FFFFFF", fit: tiles[d.slug]?.fit || "contain" } : null });
       const link = e.site_link && d.link?.url ? { url: d.link.url, paid: ["affiliate", "paid"].includes(d.link.type), rel: d.link.rel || (["affiliate", "paid"].includes(d.link.type) ? "sponsored noopener" : "nofollow noopener"), label: d.link.label || "Visit website" } : null;
       pr.in[k] = { score: d.category_scores?.[k]?.score ?? d.score ?? null, award: e.award || null, line: cut(e.tagline || e.tradeoff, 100), site: link };
     }
@@ -49,10 +67,11 @@ export default function () {
     pr.home = pc && pr.in[pc] ? pc : Object.keys(pr.in).find((k) => !regionKeys.includes(k)) || null;
   }
   const cc = costCalc();
+  for (const [slug, pr] of Object.entries(providers)) pr.short = shortPrice(P[slug], cc.priced.find((x) => x.slug === slug));
   const calc = cc.priced.map((p) => ({ slug: p.slug, quoteAbove: p.quoteAbove || null, opts: p.opts.map((o) => ({ plan: o.plan, per: o.per, min: o.min || 0, top: !!o.minOnTop })) }));
   return {
     needs: cfg.needs, biz: cfg.biz, costLists: cfg.costLists, exclude: cfg.exclude,
-    countries: [{ id: "world", name: "Worldwide", rank: null }, ...regions],
+    countries: [{ id: "world", name: "Worldwide", short: "Worldwide", rank: null }, ...regions],
     regionByRank: Object.fromEntries(regions.filter((r) => r.rank).map((r) => [r.rank, { id: r.id, name: r.name }])),
     lists, providers, calc, calcChecked: cc.checkedTo,
   };
