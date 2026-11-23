@@ -78,7 +78,7 @@ export const EXTRA_COLS = { price_from: "Starting price" };
 
 // One matrix, used by category pages (ranked providers) and by review pages (the review plus its alternatives).
 // cols = capability, certificate or extra keys; provs = provider records in row order.
-export const buildMatrix = (cols, provs, terms = {}) => {
+export const buildMatrix = (cols, provs, terms = {}, tiles = {}) => {
   cols = (cols || []).filter((k) => CAP_LABELS[k] || EXTRA_COLS[k]);
   if (!cols.length) return null;
   const capCols = cols.filter((k) => CAP_LABELS[k]);
@@ -87,6 +87,8 @@ export const buildMatrix = (cols, provs, terms = {}) => {
     .filter((q) => q && ((q.capabilities && capCols.some((k) => q.capabilities[k])) || (certMode && q.certifications?.length) || (q.kya && capCols.some(isKya))))
     .map((q) => ({
       slug: q.slug, name: q.name,
+      // Brand for the first column (owner, 2026-11-23: same table style as the AML grid): wordmark, else logo tile + name.
+      wordmark: q.logo?.wordmark || null, logo: q.logo?.src || null, tileBg: tiles[q.slug]?.bg || "#FFFFFF", tileFit: tiles[q.slug]?.fit || "contain",
       cells: cols.map((k) => {
         if (k === "price_from") {
           const f = (q.facts || []).find((x) => x.label === "From");
@@ -97,7 +99,9 @@ export const buildMatrix = (cols, provs, terms = {}) => {
           : (q.capabilities?.[k] || { status: "not_disclosed" });
         const status = String(v.status || "not_disclosed");
         const st = CAP_STATUS[status] || CAP_STATUS.not_disclosed;
-        let label = st[1], note = (["add_on", "partial", "beta", "planned"].includes(status) || (NOTE_KEYS.includes(k) && status !== "not_disclosed")) ? v.note : null;
+        // Notes only where they carry the value (counts, prices, evidence level, names); the reason for an add-on
+        // or partial cell is on the provider's review, so rows stay one line (owner, 2026-11-23).
+        let label = st[1], note = (NOTE_KEYS.includes(k) && status !== "not_disclosed") ? v.note : null;
         if (k === "liveness_pad" && v.level) { label = `Level ${v.level}`; if (status === "vendor_stated") note = "Vendor-stated"; }
         if (note) note = note.charAt(0).toUpperCase() + note.slice(1);
         // Framework names keep their own casing (eIDAS, not EIDAS).

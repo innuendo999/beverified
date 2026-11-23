@@ -31,7 +31,7 @@ export default {
       if (!cols?.length) return null;
       const alts = (d.p.choose_instead || []).filter((a) => a.slug && d.providers[a.slug]).map((a) => d.providers[a.slug]);
       if (!alts.length) return null;
-      return buildMatrix(cols, [d.p, ...alts], termForCapability(d.glossaryTerms));
+      return buildMatrix(cols, [d.p, ...alts], termForCapability(d.glossaryTerms), d.logoTiles);
     },
     // Sidebar rows and the "Company facts" section (src/_lib/sidebar.js)
     side: (d) => buildSidebar(d.p, d.incidents?.items, (d.p.choose_instead || [])
