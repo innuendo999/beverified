@@ -133,6 +133,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("outRel", (link) =>
     link?.rel ? link.rel : ["affiliate", "paid"].includes(link?.type) ? "sponsored noopener" : "nofollow noopener");
 
+  // Passport-style machine-readable line for the provider finder launcher: upper case, other characters become "<", padded to 26.
+  eleventyConfig.addFilter("mrz", (s) => String(s || "").toUpperCase().replace(/[^A-Z0-9<]+/g, "<").padEnd(26, "<").slice(0, 26));
   eleventyConfig.addFilter("pad2", (n) => String(n).padStart(2, "0"));
   eleventyConfig.addFilter("usd2", (n) => (n == null ? "" : "$" + Number(n).toFixed(2)));
   // KYC Pricing Index calculator download: one line per provider plan (src/_data/costCalc.js).
