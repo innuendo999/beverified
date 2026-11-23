@@ -1,0 +1,59 @@
+{
+  "hawkai": {
+    "capabilities": {
+      "list_coverage": {"status": "yes", "lists": ["ofac", "eu", "uk", "un"], "note": "names OFAC, HM Treasury, EU Consolidated List and UN Security Council", "source": 8, "checked": "2026-11-23"},
+      "list_updates": {"merge": true, "note": "OFAC, HMT, EU and UN named; no update time stated", "checked": "2026-11-23"},
+      "data_provenance": {"status": "not_disclosed", "note": "integrates common watchlists; provider not named", "checked": "2026-11-23"},
+      "transliteration": {"status": "not_disclosed", "note": "misspellings, phonetics, name inversions and nicknames; transliteration not described", "checked": "2026-11-23"},
+      "secondary_identifiers": {"status": "yes", "note": "date of birth, nationality and gender used to clear hits", "source": 8, "checked": "2026-11-23"},
+      "whitelisting": {"status": "yes", "note": "remembers past analyst decisions; alerts only when customer or list data changes", "source": 8, "checked": "2026-11-23"},
+      "calibration_docs": {"status": "not_disclosed", "note": "self-serve tuning described; no public documentation of the settings", "checked": "2026-11-23"},
+      "alert_reporting": {"status": "not_disclosed", "note": "no alert reports described", "checked": "2026-11-23"},
+      "model_validation": {"status": "not_disclosed", "note": "says it holds up to model risk review; no validation support described", "checked": "2026-11-23"},
+      "transfer_screening": {"status": "yes", "note": "payment screening product", "source": 9, "checked": "2026-11-23"},
+      "ongoing_monitoring": {"merge": true, "trigger": "list_change", "trigger_source": 8, "checked": "2026-11-23"}
+    },
+    "integration": {
+      "webhooks": {"status": "not_disclosed", "note": "batch and real-time API listed; no webhooks described", "checked": "2026-11-23"}
+    }
+  },
+  "kychub": {
+    "capabilities": {
+      "list_coverage": {"status": "not_disclosed", "lists": [], "note": "1000s of sanctions lists in 200+ countries; no list named", "checked": "2026-11-23"},
+      "list_updates": {"merge": true, "hours": 24, "checked": "2026-11-23"},
+      "data_provenance": {"status": "not_disclosed", "note": "data source not stated", "checked": "2026-11-23"},
+      "transliteration": {"status": "not_disclosed", "note": "not described", "checked": "2026-11-23"},
+      "secondary_identifiers": {"status": "not_disclosed", "note": "contextual matching and entity resolution; identifiers not named", "checked": "2026-11-23"},
+      "whitelisting": {"status": "not_disclosed", "note": "not described", "checked": "2026-11-23"},
+      "calibration_docs": {"status": "not_disclosed", "note": "no public documentation of matching settings", "checked": "2026-11-23"},
+      "alert_reporting": {"status": "partial", "note": "regulator reports and case progress from case data; no alert reports", "source": 7, "checked": "2026-11-23"},
+      "model_validation": {"status": "not_disclosed", "note": "not described", "checked": "2026-11-23"},
+      "transfer_screening": {"status": "yes", "note": "screens customers, payments and transactions in real time", "source": 9, "checked": "2026-11-23"},
+      "case_management": {"merge": true, "four_eyes": "partial", "four_eyes_source": 7, "checked": "2026-11-23"}
+    },
+    "integration": {
+      "webhooks": {"status": "not_disclosed", "note": "APIs and email notifications; no webhooks described", "checked": "2026-11-23"}
+    }
+  },
+  "strise": {
+    "sources": [
+      {"title": "Webhooks", "publisher": "Strise", "url": "https://docs.strise.ai/api/webhooks/", "accessed": "2026-11"}
+    ],
+    "capabilities": {
+      "list_coverage": {"status": "yes", "lists": ["ofac", "eu", "uk", "un"], "note": "names OFAC, EU, UN and HMT", "source": 6, "checked": "2026-11-23"},
+      "list_updates": {"merge": true, "checked": "2026-11-23"},
+      "data_provenance": {"status": "yes", "note": "Dow Jones as primary data source", "source": 6, "checked": "2026-11-23"},
+      "transliteration": {"status": "not_disclosed", "note": "not described", "checked": "2026-11-23"},
+      "secondary_identifiers": {"status": "yes", "note": "date of birth, nationality, jurisdiction and entity type", "source": 6, "checked": "2026-11-23"},
+      "whitelisting": {"status": "not_disclosed", "note": "cleared matches logged with rationale; suppression on re-screen not described", "checked": "2026-11-23"},
+      "calibration_docs": {"status": "not_disclosed", "note": "no public documentation of matching settings", "checked": "2026-11-23"},
+      "alert_reporting": {"status": "not_disclosed", "note": "no alert reports described", "checked": "2026-11-23"},
+      "model_validation": {"status": "not_disclosed", "note": "not described", "checked": "2026-11-23"},
+      "transfer_screening": {"status": "not_disclosed", "note": "screens entities; payments not described", "checked": "2026-11-23"},
+      "ongoing_monitoring": {"merge": true, "trigger": "list_change", "trigger_source": 6, "checked": "2026-11-23"}
+    },
+    "integration": {
+      "webhooks": {"status": "partial", "note": "outbound webhooks in alpha, access on request", "source": "@1", "checked": "2026-11-23"}
+    }
+  }
+}

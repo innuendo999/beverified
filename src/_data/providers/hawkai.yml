@@ -170,12 +170,16 @@ capabilities:
   checked: '2026-10'
   ongoing_monitoring:
     status: 'yes'
+    trigger: list_change
+    trigger_source: 8
     note: rescreening when customer or list data changes
     source: 8
+    checked: '2026-11-23'
   list_updates:
-    status: partial
-    note: OFAC, HMT, EU and UN named; no list refresh schedule
+    status: 'partial'
+    note: OFAC, HMT, EU and UN named; no update time stated
     source: 8
+    checked: '2026-11-23'
   pep_tiers:
     status: 'yes'
     note: PEP levels and RCA
@@ -203,6 +207,47 @@ capabilities:
   data_residency:
     status: not_disclosed
     note: SaaS or private cloud, no region choice stated
+  list_coverage:
+    status: 'yes'
+    lists: [ofac, eu, uk, un]
+    note: names OFAC, HM Treasury, EU Consolidated List and UN Security Council
+    source: 8
+    checked: '2026-11-23'
+  data_provenance:
+    status: 'not_disclosed'
+    note: integrates common watchlists; provider not named
+    checked: '2026-11-23'
+  transliteration:
+    status: 'not_disclosed'
+    note: misspellings, phonetics, name inversions and nicknames; transliteration not described
+    checked: '2026-11-23'
+  secondary_identifiers:
+    status: 'yes'
+    note: date of birth, nationality and gender used to clear hits
+    source: 8
+    checked: '2026-11-23'
+  whitelisting:
+    status: 'yes'
+    note: remembers past analyst decisions; alerts only when customer or list data changes
+    source: 8
+    checked: '2026-11-23'
+  calibration_docs:
+    status: 'not_disclosed'
+    note: self-serve tuning described; no public documentation of the settings
+    checked: '2026-11-23'
+  alert_reporting:
+    status: 'not_disclosed'
+    note: no alert reports described
+    checked: '2026-11-23'
+  model_validation:
+    status: 'not_disclosed'
+    note: says it holds up to model risk review; no validation support described
+    checked: '2026-11-23'
+  transfer_screening:
+    status: 'yes'
+    note: payment screening product
+    source: 9
+    checked: '2026-11-23'
 integration:
   checked: '2026-11'
   docs_public:
@@ -227,6 +272,10 @@ integration:
   support_hours:
     status: not_disclosed
     note: no support hours published
+  webhooks:
+    status: 'not_disclosed'
+    note: batch and real-time API listed; no webhooks described
+    checked: '2026-11-23'
 track_record:
   ownership:
     status: stable
