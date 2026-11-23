@@ -9,11 +9,11 @@ Applies to the ranking `/providers/aml/` (rankings.yml key `aml`). `aml/banks` k
 Approved by the owner on 2026-11-23:
 
 1. Phase 1 uses public evidence only. BeVerified's own sandbox tests (time to list, match test set) are phase 2, added when vendor access exists; see "Phase 2". Until then the page says plainly what the score cannot measure.
+2. Buyer profile (ICP): **fintechs, e-money institutions, payment firms and crypto-asset service providers** in the EU, UK and US, roughly 1,000 to 500,000 customers screened, with a compliance team of 1 to 10 people. Buyer: MLRO or head of compliance, with engineering for the integration. Banks are served by `aml/banks`.
 
 Proposed, waiting for the owner:
 
-2. The ranking gets its own rubric under the standing rule of 2026-11-05: a separate score per category, the ranking sorts by it, the overall score on reviews is unchanged.
-3. Buyer profile (ICP): **fintechs, e-money institutions, payment firms and crypto-asset service providers** in the EU, UK and US, roughly 1,000 to 500,000 customers screened, with a compliance team of 1 to 10 people. Buyer: MLRO or head of compliance, with engineering for the integration. Banks are served by `aml/banks`.
+3. The ranking gets its own rubric under the standing rule of 2026-11-05: a separate score per category, the ranking sorts by it, the overall score on reviews is unchanged.
 4. One AML ranking for now. A separate sanctions-screening ranking only if search demand shows it.
 5. A platform whose main product is not AML (for example an identity verification suite with a screening module) is eligible only under eligibility rule 4.
 6. Vendor accuracy figures ("90% fewer false positives", "99% match accuracy") never enter the score: they use different samples and methods and cannot be compared. Counts of lists or profiles without names do not score either.
