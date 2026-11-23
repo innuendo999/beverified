@@ -11,6 +11,8 @@ export const CAP_LABELS = {
   age_digital_id: "Digital ID or wallet", age_reusable: "Reusable age result", age_certification: "Age assurance certification",
   kyb_registry: "Company registry checks", kyb_ubo: "UBO discovery", kyb_entity_screening: "Business and officer screening",
   kyb_monitoring: "Ongoing business monitoring", kyb_documents: "Company document checks", kyb_pricing: "Published KYB pricing",
+  kyb_website_check: "Merchant website check", kyb_industry_class: "Industry classification (MCC or NAICS)",
+  kyb_match_vmss: "MATCH or VMSS check", kyb_card_data: "Card revenue data",
   // Know Your Agent columns read the record's kya{} block (key without the kya_ prefix).
   kya_detect_undeclared: "Detects undeclared agents", kya_verify_signed: "Verifies signed or registered agents",
   kya_bind_person: "Agent bound to a verified person", kya_bind_business: "Agent bound to a verified business",

@@ -361,6 +361,22 @@ capabilities:
     note: 'reverification and biometric authentication of returning users'
     source: 40
     checked: '2026-11'
+  kyb_website_check:
+    status: not_disclosed
+    note: "not found in public docs"
+    checked: '2026-11'
+  kyb_industry_class:
+    status: not_disclosed
+    note: "not found in public docs"
+    checked: '2026-11'
+  kyb_match_vmss:
+    status: not_disclosed
+    note: "not found in public docs"
+    checked: '2026-11'
+  kyb_card_data:
+    status: not_disclosed
+    note: "not found in public docs"
+    checked: '2026-11'
 integration:
   checked: '2026-11'
   docs_public:

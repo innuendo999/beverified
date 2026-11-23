@@ -74,7 +74,7 @@ layout: v3.njk
 </section>
 
 <section id="use-case" class="container home-section" aria-labelledby="uc-h">
-  <div class="section-head"><h2 id="uc-h" class="h-split h-split--xl">Pick by use case.<span>One ranking for each job</span></h2><a class="btn btn--secondary btn--sm" href="/use-cases/">All use cases</a></div>
+  <div class="section-head"><div><h2 id="uc-h" class="h-plain">Rankings by use case</h2><p class="section-sub">Each ranking compares providers for one job and is ordered by score.</p></div><a class="section-link" href="/use-cases/">All use cases →</a></div>
   {#- Layout A (owner, 2026-11-10). Data: index.11tydata.js → useCaseGroups (top 3 from rankings.yml, sponsor from placements.yml).
       Without JS every panel is shown in a plain list. With JS (.is-live): desktop = buttons on the left, one panel on the right;
       under 860px = accordion (button, then its panel). Each button controls the panel with the same id. -#}
@@ -156,7 +156,7 @@ layout: v3.njk
 </section>
 
 <section id="region" class="container home-section" aria-labelledby="rg-h">
-  <div class="section-head"><h2 id="rg-h" class="h-split h-split--xl">Pick by region.<span>Local regulators, local documents</span></h2><a class="btn btn--secondary btn--sm" href="/providers/">All providers</a></div>
+  <div class="section-head"><div><h2 id="rg-h" class="h-plain">Rankings by country</h2><p class="section-sub">Each ranking looks at the local checks that matter in that country.</p></div><a class="section-link" href="/regions/">All regions →</a></div>
   {#- Pixel map: land grid from src/_data/regionGrid.json (scripts/region-map.mjs), pins and cards from index.11tydata.js → regionMap.
       Without JS the pins and cards are plain links; the script draws the map and moves the open card. -#}
   <div class="card rmap" data-rmap>
@@ -232,7 +232,7 @@ layout: v3.njk
 </section>
 
 <section id="top-rated" class="container home-section" aria-labelledby="tr-h">
-  <div class="section-head"><h2 id="tr-h" class="h-split h-split--xl">Top rated providers.<span>In true score order</span></h2><a class="btn btn--secondary btn--sm" href="/providers/">See all providers</a></div>
+  <div class="section-head"><div><h2 id="tr-h" class="h-plain">Highest scores across all reviews</h2><p class="section-sub">Editorial scores from our methodology, highest first.</p></div><a class="section-link" href="/providers/">All providers A to Z →</a></div>
   <ol class="grid-4 top-grid">
     {%- for p in topRated %}
     <li>
@@ -252,12 +252,24 @@ layout: v3.njk
 </section>
 
 <section id="faq" class="container home-section home-uc" aria-labelledby="faq-h">
-  <div class="home-uc__intro"><h2 id="faq-h" class="h-split h-split--xl">Questions<span>buyers ask.</span></h2></div>
+  <div class="home-uc__intro"><h2 id="faq-h" class="h-plain">Questions buyers ask</h2></div>
   <div class="faq">{% for f in faqs %}<details{% if loop.first %} open{% endif %}><summary><h3>{{ f.q }}</h3></summary><p>{{ f.a }}</p></details>{% endfor %}</div>
 </section>
 
-<section id="for-providers" class="container home-section home-fp" aria-labelledby="fp-h">
-  <h2 id="fp-h">For providers</h2>
-  <a class="card fp-card" href="/placement-options/"><span><b>Claim your profile</b><small>Correct facts and add documentation</small></span><span aria-hidden="true">→</span></a>
+<section id="for-providers" class="container home-section" aria-labelledby="fp-h">
+  <div class="hfp">
+    <div class="hfp__main">
+      <h2 id="fp-h">Is your company reviewed here?</h2>
+      <p class="hfp__lede">Claim your profile to fix a wrong fact or send us evidence we missed. Your score changes only when the evidence does.</p>
+      <div class="hfp__acts"><a class="hfp__btn" href="/placement-options/">Claim your profile <span aria-hidden="true">→</span></a><a class="hfp__link" href="/methodology/">How we review providers</a></div>
+    </div>
+    <ul class="hfp__list">
+      <li><span class="hfp__ic">{% icon "source", "", 20 %}</span><div><b>Correct a fact</b><span>Send the page or document that shows it. We check it against the source before anything changes.</span></div></li>
+      <li><span class="hfp__ic">{% icon "certificate", "", 20 %}</span><div><b>Add evidence</b><span>Lab letters, register entries, certificates and price lists. A test counts as confirmed when the issuer names your company.</span></div></li>
+      <li><span class="hfp__ic">{% icon "award", "", 20 %}</span><div><b>Use your award badge</b><span>Providers in the top 3 of a ranking can <a href="/about/#awards">embed their award badge</a>. Badges are never sold.</span></div></li>
+    </ul>
+    <p class="hfp__pol"><span>{{ site.v3.disclosure }}</span><a class="hfp__link" href="/methodology/#advertising">Advertising policy</a></p>
+    <div class="hfp__mrz" aria-hidden="true">P&lt;BVO&lt;&lt;PROVIDER&lt;&lt;CLAIM&lt;&lt;PROFILE&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</div>
+  </div>
 </section>
 </main>

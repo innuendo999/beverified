@@ -231,6 +231,23 @@ capabilities:
     note: 'MobileID Face Authentication at login'
     source: 24
     checked: '2026-11'
+  kyb_website_check:
+    status: add_on
+    note: "through partner TrueBiz, announced May 2026"
+    source: 27
+    checked: '2026-11'
+  kyb_industry_class:
+    status: not_disclosed
+    note: "not found in public docs"
+    checked: '2026-11'
+  kyb_match_vmss:
+    status: not_disclosed
+    note: "not found in public docs"
+    checked: '2026-11'
+  kyb_card_data:
+    status: not_disclosed
+    note: "not found in public docs"
+    checked: '2026-11'
 integration:
   checked: '2026-11'
   docs_public:
@@ -457,6 +474,10 @@ sources:
 - title: 'Register of digital verification services: ReadID (Signicat B.V)'
   publisher: GOV.UK, Office for Digital Identities and Attributes
   url: https://www.access-dvs-register.service.gov.uk/register?SearchText=Signicat
+  accessed: '2026-11'
+- title: "Signicat partners with TrueBiz (21 May 2026)"
+  publisher: TrueBiz
+  url: https://truebiz.io/blog/signicat-truebiz-partnership
   accessed: '2026-11'
 entity:
   wikidata: null
