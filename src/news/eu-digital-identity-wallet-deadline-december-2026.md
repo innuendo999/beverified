@@ -8,7 +8,7 @@ cover_label: "EU wallet countdown"
 cover_motif: wallet
 cover_palette: violet
 published: 2026-11-13
-updated: 2026-11-13
+updated: 2026-11-23
 author: andrii-klymenko
 takeaways:
   - "Article 5a(1) of Regulation (EU) 2024/1183 gives each member state 24 months from the entry into force of the implementing acts to provide a wallet; the first acts entered into force on 24 December 2024, which puts the deadline at 24 December 2026."
@@ -85,6 +85,18 @@ sources:
     publisher: "SmartWorld"
     url: "https://www.smartworld.it/news/wallet-digitale-europeo-italia-ritardo-scadenza.html"
     accessed: 2026-11
+  - title: "Projekt ustawy o zmianie ustawy o usługach zaufania oraz identyfikacji elektronicznej oraz niektórych innych ustaw (Council of Ministers decision)"
+    publisher: "Chancellery of the Prime Minister of Poland"
+    url: "https://www.gov.pl/web/premier/projekt-ustawy-o-zmianie-ustawy-o-uslugach-zaufania-oraz-identyfikacji-elektronicznej-oraz-niektorych-innych-ustaw3"
+    accessed: 2026-11
+  - title: "Projekt ustawy o zmianie ustawy o usługach zaufania oraz identyfikacji elektronicznej oraz niektórych innych ustaw (UC122)"
+    publisher: "Chancellery of the Prime Minister of Poland, list of legislative work"
+    url: "https://www.gov.pl/web/premier/projekt-ustawy-o-zmianie-ustawy-o-uslugach-zaufania-oraz-identyfikacji-elektronicznej-oraz-niektorych-innych-ustaw2"
+    accessed: 2026-11
+  - title: "mObywatel Europa: projekt ustawy przyjęty przez rząd (secondary)"
+    publisher: "Cashless"
+    url: "https://www.cashless.pl/19983-mobywatel-europa-projekt-ustawy-przyjety-przez-rzad"
+    accessed: 2026-11
 ---
 
 The EU set itself a hard date for digital identity, and that date is now six weeks away. Every member state is supposed to offer its residents a European Digital Identity Wallet before the end of 2026. A year later the obligation reaches the private sector: banks, payment firms and other businesses that have to authenticate users strongly must accept the wallet when a customer chooses to use it.
@@ -144,3 +156,13 @@ We have not seen a public source showing that any provider we review accepts EUD
 - Will you accept attestations of attributes, such as address or age, alongside identity data?
 
 Our [eKYC ranking](/providers/e-kyc/) and [identity verification ranking](/providers/identity-verification/) compare the reviewed providers on public evidence, scored under our [methodology](/methodology/). Neither score includes wallet support yet, because the public evidence is not there.
+
+## What has happened since
+
+**Poland, 17 November 2026.** The Polish Council of Ministers [adopted a government bill](https://www.gov.pl/web/premier/projekt-ustawy-o-zmianie-ustawy-o-uslugach-zaufania-oraz-identyfikacji-elektronicznej-oraz-niektorych-innych-ustaw3) that amends the Act on Trust Services and Electronic Identification to implement Regulation (EU) 2024/1183. The Minister of Digital Affairs submitted it and will be responsible for providing the wallet to natural and legal persons. In the first stage the wallet will be a separate app that can also be opened from mObywatel, the government's existing ID app; later the two are to be merged into one. The government names opening a bank account as one of the private services it can be used for, and wallet holders get free qualified electronic signatures for non-professional use.
+
+The [legislative work record (UC122)](https://www.gov.pl/web/premier/projekt-ustawy-o-zmianie-ustawy-o-uslugach-zaufania-oraz-identyfikacji-elektronicznej-oraz-niektorych-innych-ustaw2) shows the parts that matter for relying parties. The same minister keeps the register of relying parties, confirms their identity and records in the register which data each relying party will request from users. The minister, or a unit it supervises, also supervises wallet providers and trust service providers. The record mentions no anti-money laundering rules.
+
+This is a bill, not yet a law. The government says the new rules should in principle take effect 14 days after publication in the Journal of Laws, and we found no publication date. Nor did we find a government launch date. [Cashless reports](https://www.cashless.pl/19983-mobywatel-europa-projekt-ustawy-przyjety-przez-rzad) (secondary) that the Central Informatics Centre director responsible for developing mObywatel said in early October that Poland was ready to start a pilot in December 2026, with real benefits for citizens expected in the second half of 2027.
+
+The table above still shows the status as of 13 November 2026. We checked the Polish government pages on 23 November 2026; for the other countries in the table we have not re-checked since publication.
