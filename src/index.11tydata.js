@@ -1,5 +1,6 @@
 // Computed data for the homepage (src/index.njk). Content: src/_data/home.yml.
 import { activePlacements, heroPlacement } from "./_lib/placements.js";
+import { organization } from "./_lib/schema.js";
 import { heroCard, heroCounts, guilloche } from "./_lib/hero.js";
 
 export default {
@@ -67,7 +68,7 @@ export default {
     jsonld: (d) => ({
       "@context": "https://schema.org",
       "@graph": [
-        { "@type": "Organization", "@id": `${d.site.url}/#organization`, name: "BeVerified", url: `${d.site.url}/`,
+        { ...organization(d.site),
           description: d.entity.long, email: "support@beverified.org", publishingPrinciples: `${d.site.url}/methodology/`,
           ownershipFundingInfo: `${d.site.url}/methodology/#disclosure`, foundingDate: "2021",
           sameAs: (d.site.profiles || []).map((x) => x.url) },
