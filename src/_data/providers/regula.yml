@@ -263,6 +263,12 @@ certifications:
   what: Liveness / presentation attack detection, Regula Face Mobile SDK (Mar 2025, Dec 2025)
   status: confirmed
   source: 6
+- name: ISO/IEC 30107-3 Level 1 (iBeta)
+  program: ibeta_pad
+  level: 1
+  what: Liveness / presentation attack detection, Regula Face Mobile SDK API v7.2.3994 on Android 16 (Oct 2025)
+  status: confirmed
+  source: 21
 - name: ISO/IEC 27001:2022
   program: iso27001
   what: Information security (software products; certifier named as Insight Assurance)
@@ -408,6 +414,10 @@ sources:
   publisher: Regula
   url: https://regulaforensics.com/blog/enterprise-grade-identity-verification-platform/
   accessed: '2026-11'
+- title: 'ISO 30107-3 PAD Level 1 confirmation letter: Regula Face Mobile SDK, Android (27 October 2025)'
+  publisher: iBeta Quality Assurance
+  url: https://www.ibeta.com/wp-content/uploads/2025/12/251027-Regula-PAD-Level-1-Confirmation-Letter-Android.pdf
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null
@@ -424,6 +434,7 @@ verification_notes:
 - 'Customer count: about page says over 2,000 enterprises; the 2026 Gartner release says more than 2,000 organizations; the Oct 2025 fact sheet said more than 1,000 organizations and 80 border control authorities. Vendor figures only.'
 - 'Review themes are general statements; they were not matched against individual G2 or Gartner reviews.'
 - 'Certification re-check 2026-11-20: the certificates page also says Regula completed a SOC 2 Type II audit (no date, period or auditor); added as vendor_stated.'
+- 'Certification watch 2026-11-24: added the iBeta Level 1 letter of 27 Oct 2025 (source 21). The letter names Regula Face Mobile SDK API v7.2.3994 with Web Service 7.2.599.1453 on a Samsung Galaxy S24 Ultra, Android 16, APCER 0% over 900 attacks; the iBeta list names the vendor Regula Forensics. No expiry is stated.'
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
