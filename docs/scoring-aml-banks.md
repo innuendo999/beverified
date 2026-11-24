@@ -93,7 +93,9 @@ Public evidence cannot show detection rates on your data, false-positive volumes
 
 ## New data fields
 
-`aml_banks{}` block per record, each item `{status, note, source, checked}` unless stated: `bank_evidence`, `scenario_library`, `realtime_monitoring`, `channels[]` (values `cards`, `wires`, `ach_sepa`, `instant`, `cash`, `cheques`), `behavioural_models`, `entity_resolution`, `tuning_simulation`, `change_audit`, `message_formats[]` (`swift_mt`, `iso20022`), `regulatory_filing`, `case_consolidation`, `tprm_docs`, `core_connectors`, `batch_ingestion`. AML 1.0 fields are reused as they are. NICE Actimize, Feedzai and Quantexa need the AML 1.0 fields filled too. Scorer `scripts/rescore-aml-banks.mjs` reuses the AML 1.0 functions; checks in `scripts/checks/aml.mjs`.
+Evidence for this rubric lives in one file, `src/_data/amlBanksEvidence.yml`, one entry per provider: each value with its URL and the date checked, plus the `fit` items (no points). The scorer `scripts/rescore-aml-banks.mjs` reads it together with the AML 1.0 fields in the provider record (`capabilities{}`, `integration{}`, `certifications[]`) and `incidents.yml`; where a record has no AML 1.0 screening fields (NICE Actimize, Feedzai, Quantexa), the `screening` block in the evidence file is used. Report `reports/rescore-aml-banks-1.0.csv`; `--write` adds `category_scores.aml-banks`.
+
+Scoring details fixed after the owner's approval on 2026-11-24: the alert reason earns 1 point only when the vendor says the alert shows which rules or risk factors fired (a general "explainable AI" claim earns 0.5); report filing earns 1 point only when the channel is named (FinCEN BSA e-filing, goAML), 0.5 when filing or pre-filled reports are claimed without the channel. Ties are broken by the unrounded score, then by the current order.
 
 ## Rollout
 
