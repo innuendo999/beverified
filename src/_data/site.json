@@ -200,6 +200,15 @@
         "weight": 10
       }
     ],
+    "rubricAmlBanks": [
+      { "key": "detection", "name": "Detection", "weight": 20 },
+      { "key": "alerts", "name": "Alert quality and analyst workload", "weight": 20 },
+      { "key": "tuning", "name": "Tuning without depending on the vendor", "weight": 15 },
+      { "key": "validation", "name": "Validation and audit for examiners", "weight": 15 },
+      { "key": "integration", "name": "Implementation and data integration", "weight": 15 },
+      { "key": "screening", "name": "Sanctions screening of customers and payments", "weight": 10 },
+      { "key": "vendor", "name": "Vendor risk and cost transparency", "weight": 5 }
+    ],
     "rubricKya": [
       {
         "key": "detection",

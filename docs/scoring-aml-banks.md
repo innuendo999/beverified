@@ -1,6 +1,6 @@
-# AML for Banks scoring methodology, AML Banks 1.0 (proposal, 2026-11-24)
+# AML for Banks scoring methodology, AML Banks 1.0 (2026-11-24)
 
-Status: **proposal.** Buyer profile approved by the owner on 2026-11-24 (option C); criteria and weights wait for approval. No provider has an AML Banks score yet, and nothing on the site changes until the owner approves this file.
+Status: **approved by the owner on 2026-11-24** (buyer profile option C, seven criteria and weights below). Methodology section `/methodology/#aml-banks` and `site.json v3.rubricAmlBanks` published before any score. No provider has an AML Banks score yet, and nothing on the site changes until the owner approves this file.
 
 Applies to the ranking `/providers/aml/banks/` (rankings.yml key `aml/banks`). The H1 and title stay as they are. The AML ranking `/providers/aml/` keeps AML 1.0 (`docs/scoring-aml.md`).
 
@@ -13,7 +13,7 @@ Applies to the ranking `/providers/aml/banks/` (rankings.yml key `aml/banks`). T
 5. Phase 1 uses public evidence only. Vendor accuracy figures, analyst positions (Chartis, Forrester, Gartner), awards, client logos and user ratings never enter the score.
 6. Situational needs are a fit check, not points: on-premises or SaaS, data region, named core banking system, overlay on an existing system, fraud and AML together, FinCEN or goAML filing, bank size. Each shows yes, no or not stated, with a source.
 
-Pending owner approval: criteria and weights below (revised 2026-11-24 after the critique and dry run).
+Criteria and weights approved by the owner on 2026-11-24, after the critique and the dry run.
 
 ## What the buyer is choosing on
 

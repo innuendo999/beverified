@@ -7,7 +7,7 @@ seo:
 breadcrumb_label: Best AML Software for Banks
 quick_answer: ComplyAdvantage is our top AML pick for banks, with sanctions screening and transaction monitoring on its own risk data. Hawk AI is next for explainable AI monitoring and screening, and Unit21 for AI agents that work investigations. We compared 6 providers on screening, monitoring, case management and deployment.
 last_verified: '2026-10-18'
-updated: '2026-11-05'
+updated: '2026-11-24'
 legacy_stats:
 - value: '4'
   label: providers compared
@@ -24,7 +24,7 @@ explainer_html:
 
   <h2>Model governance and explainability</h2>
 
-  <p>Machine-learning monitoring models are models in the supervisory sense. In the US, the Federal Reserve and OCC guidance <a href="https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm">SR 11-7 on model risk management</a> sets the expectation that banks validate and document the models they rely on, and examiners use the FFIEC BSA/AML Examination Manual when they review a bank''s monitoring program. Ask each vendor what documentation and alert-level explanations it provides for validation.</p>
+  <p>Machine-learning monitoring models are models in the supervisory sense. In April 2026 the Federal Reserve, OCC and FDIC replaced SR 11-7 with <a href="https://www.federalreserve.gov/supervisionreg/srletters/sr2602.htm">revised guidance on model risk management (SR 26-2)</a>. It asks for a risk-based approach and applies to models bought from vendors as well as models built in-house, so a bank still has to understand and document the models it relies on. Examiners use the FFIEC BSA/AML Examination Manual when they review a bank''s monitoring program. Ask each vendor what documentation and alert-level explanations it provides for validation.</p>
 
   <h2>Regulatory context</h2>
 
@@ -47,7 +47,7 @@ faq:
 - q: Do these platforms include sanctions screening?
   a: ComplyAdvantage, NICE Actimize, Hawk AI, Unit21 and Napier include sanctions and PEP screening.
 - q: What is model explainability in AML monitoring?
-  a: Explainability means the bank can show why a model raised or cleared an alert. In the US, SR 11-7 expects banks to validate and document the models they use, so examiners may ask for this evidence during a BSA/AML review.
+  a: Explainability means the bank can show why a model raised or cleared an alert. In the US, the model risk guidance SR 26-2 (April 2026) covers vendor models as well as in-house ones, so examiners may ask for this evidence during a BSA/AML review.
 - q: When does the EU AMLA start supervising banks?
   a: The EU Anti-Money Laundering Authority is due to begin direct supervision of up to 40 high-risk financial institutions in 2028, after a selection process in the second half of 2027. The new EU Anti-Money Laundering Regulation applies from 10 July 2027.
 adjacent:

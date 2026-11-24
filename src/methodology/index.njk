@@ -7,7 +7,7 @@ lede: "We score identity verification and KYC providers on one rubric and AML pr
 updated: "2026-11-23"
 ---
 <section>
-<p>Methodology {{ site.v3.methodologyVersion }}, last updated Nov 23, 2026. <a href="#changelog">What changed</a></p>
+<p>Methodology {{ site.v3.methodologyVersion }}, last updated Nov 24, 2026. <a href="#changelog">What changed</a></p>
 </section>
 
 <section id="rubric">
@@ -103,7 +103,7 @@ updated: "2026-11-23"
 
 <section id="aml">
 <h2>AML ranking rubric</h2>
-<p>The <a href="/providers/aml/">AML Software ranking</a> is ordered by a separate AML score from the rubric below. It orders that ranking only. Each provider's review keeps its overall score, and the <a href="/providers/aml/banks/">AML Software for Banks</a> ranking keeps its own list.</p>
+<p>The <a href="/providers/aml/">AML Software ranking</a> is ordered by a separate AML score from the rubric below. It orders that ranking only. Each provider's review keeps its overall score, and the <a href="/providers/aml/banks/">AML Software for Banks</a> ranking has <a href="#aml-banks">its own rubric</a>.</p>
 <p>We built it for one kind of buyer: fintechs, e-money institutions, payment firms and crypto-asset service providers in the EU, UK and US, screening roughly 1,000 to 500,000 customers with a compliance team of one to ten people. They have to catch every name on the sanctions lists they are bound by, see new designations quickly, keep false alerts low enough to clear, and show a regulator how the tool is set up. The criteria follow what supervisors ask of screening systems (the UK FCA, OFAC, the New York DFS and the European Banking Authority) and the screening guidance of the Wolfsberg Group of global banks.</p>
 <table>
 <caption>AML ranking: criteria, weights and what we look at</caption>
@@ -120,6 +120,29 @@ updated: "2026-11-23"
 <p>A feature we can't find in the vendor's public material earns no points. Its weight doesn't move to other criteria, so keeping documentation private never lifts a score. Pricing is the one exception and follows the general rule above. Vendor figures such as "90% fewer false positives", and counts of lists or profiles that don't name the lists, never enter the score.</p>
 <p>To enter the ranking, a provider needs a published BeVerified review scored on the current rubric and a generally available product that screens names against sanctions and PEP data and keeps monitoring customers after onboarding. A platform whose main product is something else, for example identity verification with a screening module, also has to describe its screening in its own documentation well enough to earn at least 2 points in both the data and match quality criteria. A provider that doesn't qualify is left out of the ranking, not scored low.</p>
 <p>The AML score can't tell you how many real hits a system misses, how many false alerts it raises on your customers, or how fast a new designation reaches it in practice. We don't run our own screening tests yet. Before you sign, screen a sample of your own customers, add known listed names in several spellings and scripts, ask how many hours a new OFAC, EU or UK designation takes to appear, and ask for the calibration documentation you would show your regulator.</p>
+</section>
+
+<section id="aml-banks">
+<h2>AML for Banks rubric</h2>
+<p>The <a href="/providers/aml/banks/">AML Software for Banks ranking</a> is ordered by a separate AML for Banks score from the rubric below. It orders that ranking only, and each provider's review keeps its overall score.</p>
+<p>We built it for banks, credit unions and building societies in the US, UK and EU that are buying or replacing a transaction monitoring and screening system, from community banks to mid-size and digital banks. The buyer is the BSA officer or MLRO, with the head of financial crime technology, and IT security and vendor risk teams sign off. The criteria follow what supervisors expect of monitoring systems (the US model risk guidance SR 26-2 of April 2026, the New York DFS rule on transaction monitoring and filtering, and the EU Digital Operational Resilience Act) and the Wolfsberg Group's statements on effective monitoring for suspicious activity.</p>
+<table>
+<caption>AML for Banks ranking: criteria, weights and what we look at</caption>
+<thead><tr><th scope="col">Criterion</th><th scope="col">Weight</th><th scope="col">What we look at</th></tr></thead>
+<tbody>
+<tr><th scope="row">Detection</th><td>20%</td><td>Named typologies or scenarios, a stated latency or monitoring before a payment goes through, the payment channels covered, links found across accounts and counterparties, segmentation or peer groups, and customer risk scores that update.</td></tr>
+<tr><th scope="row">Alert quality and analyst workload</th><td>20%</td><td>Alerts ranked by risk, the reason for each alert shown to the analyst, suspicious activity reports filed from the platform, and a second reviewer or approval step.</td></tr>
+<tr><th scope="row">Tuning without depending on the vendor</th><td>15%</td><td>Whether your team can create and change rules itself, and test a change on its own data (simulation, back-testing or shadow mode) before it goes live.</td></tr>
+<tr><th scope="row">Validation and audit for examiners</th><td>15%</td><td>Model documentation or a validation pack for clients, a log of rule and model changes with who approved them, and an audit trail of every alert and decision.</td></tr>
+<tr><th scope="row">Implementation and data integration</th><td>15%</td><td>Public API documentation, a published data model or ingestion specification, batch and streaming data loads, and a sandbox or test environment.</td></tr>
+<tr><th scope="row">Sanctions screening of customers and payments</th><td>10%</td><td>The same evidence as the AML rubric above: the four core sanctions lists, the stated update time, screening of payments, and matching across spellings and scripts.</td></tr>
+<tr><th scope="row">Vendor risk and cost transparency</th><td>5%</td><td>A confirmed ISO/IEC 27001 certificate or SOC 2 report, and whether the vendor says what its price depends on. Regulatory actions and security incidents in the last 24 months cost points.</td></tr>
+</tbody>
+</table>
+<p>We look for evidence the same way for every provider: product pages, the documentation portal, brochures and datasheets on the vendor's own site, and its trust centre. Pages behind a login or a contact form don't count. A feature we can't find earns no points, and its weight doesn't move to other criteria. Vendor figures such as "70% fewer false positives", analyst reports, awards and customer logos never enter the score.</p>
+<p>Some needs depend on your bank rather than on the product: on-premises or cloud, where your data must stay, your core banking system, running on top of the system you already have, fraud and AML in one tool, and filing to FinCEN or through goAML. These don't earn points. The ranking page shows them for each provider as yes, no or not stated, with a source.</p>
+<p>To enter the ranking, a provider needs a published BeVerified review and a generally available product that does transaction monitoring, sanctions and PEP screening and case management itself, and its own site has to name a bank, credit union or building society as a customer or publish a bank case study. A provider that doesn't qualify is left out of the ranking, not scored low.</p>
+<p>The AML for Banks score can't tell you how much a system detects on your data, how many false alerts it raises, how clean your data has to be, how long the project really takes, or how the vendor supports you in an exam. Before you sign, run the vendor's scenarios on a sample of your historical transactions, including cases you reported, ask whether alerts for one customer land in one case, change a threshold in the simulation tool and read the impact report, and ask for the model documentation and the implementation plan for your core system.</p>
 </section>
 
 <section id="evidence">
@@ -177,6 +200,7 @@ updated: "2026-11-23"
 <section id="changelog">
 <h2>What changed</h2>
 <ul>
+<li><strong>Nov 24, 2026 (AML for Banks 1.0):</strong> added a rubric for the AML Software for Banks ranking, built for banks, credit unions and building societies: detection, alert quality and analyst workload, tuning without the vendor, validation and audit for examiners, implementation and data integration, sanctions screening, and vendor risk with cost transparency. Needs that depend on the bank, such as on-premises deployment or the core banking system, are shown per provider without points. Scores are separate from overall scores and order only that ranking. Criteria, weights and entry rules were published before any provider was scored.</li>
 <li><strong>Nov 23, 2026 (AML 1.0):</strong> added an AML rubric for the AML Software ranking, built for fintechs, e-money institutions, payment firms and crypto-asset service providers: sanctions, PEP and media data, match quality controls, calibration and audit, ongoing and transfer monitoring, total cost and integration. AML scores are separate from overall scores and order only that ranking. Criteria, weights and entry rules were published before any provider was scored.</li>
 <li><strong>Nov 17, 2026 (IDV 1.0):</strong> added an identity verification rubric for the Identity Verification ranking, built for regulated fintech and gambling operators: fraud defense, coverage, total cost, integration and user flow, compliance fit and a narrow platform breadth. IDV scores are separate from overall scores and order only that ranking. Criteria and weights were published before any provider was scored.</li>
 <li><strong>Nov 11, 2026 (Budget KYC 1.0):</strong> added a Budget KYC rubric built on price for quality: cost per check at 100 and 1,000 checks a month, AML screening cost, quality for the money, entry terms and price transparency. Budget scores are separate from overall scores and order only the Budget KYC ranking. Criteria, weights and entry rules were published before any provider was scored.</li>
