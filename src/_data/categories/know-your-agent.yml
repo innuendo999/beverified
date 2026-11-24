@@ -5,9 +5,9 @@ seo:
   description: 'Incode, Shufti Pro, Sumsub, Persona and Socure compared on Know Your Agent: agent detection, binding to a verified person, permissions, revocation and audit.'
   h1: Best Know Your Agent (KYA) Providers in 2026
 breadcrumb_label: Best Know Your Agent Providers
-quick_answer: Incode ranks first for Know Your Agent, giving each agent a mandate with scope, amount and duration that is checked before every action. Shufti Pro is next, verifying the person or business behind an agent. Sumsub adds data filtering for agents connected over MCP. We compared 7 providers, 5 of them scored, on detection, binding, permissions and audit.
+quick_answer: Incode ranks first for Know Your Agent, giving each agent a mandate with scope, amount and duration that is checked before every action. Shufti Pro is next, verifying the person or business behind an agent. Sumsub adds data filtering for agents connected over MCP. We compared 6 providers, 5 of them scored, on detection, binding, permissions and audit.
 last_verified: '2026-11-10'
-updated: '2026-11-10'
+updated: '2026-11-24'
 score_source: category
 score_label: KYA score
 rubric: rubricKya
@@ -26,7 +26,7 @@ explainer_html:
   </ul>
   <p>Agents also reach businesses through MCP, A2A, AP2 and ACP. We count the protocols a vendor names for its KYA product, but none of these is a certificate, and this page does not treat support for one as proof that a product is secure.</p>'
 - '<h2>Who is not ranked, and why</h2>
-  <p>We rank a provider only when its KYA product is launched and sold, an open beta or pilot included. <a href="/providers/trulioo/">Trulioo</a> has a KYA product built around a signed Digital Agent Profile, but its page says KYA is in alpha and open only to organizations whose domains have been enabled, so it is not ranked yet. Vouched and Prove sell KYA products but have no BeVerified review yet, so they are listed without a score. Payment network programmes and protocols, and workforce identity tools for a company''s own agents, are out of scope.</p>'
+  <p>We rank a provider only when its KYA product is launched and sold, an open beta or pilot included. <a href="/providers/trulioo/">Trulioo</a> has a KYA product built around a signed Digital Agent Profile, but its page says KYA is in alpha and open only to organizations whose domains have been enabled, so it is not ranked yet. <a href="/providers/prove/">Prove</a> announced its Verified Agent product in October 2025, but its product page still asks buyers to contact sales about availability and names no customer, so it is not ranked yet. Vouched sells a KYA product but has no BeVerified review yet, so it is listed without a score. Payment network programmes and protocols, and workforce identity tools for a company''s own agents, are out of scope.</p>'
 - '<h2>What to test in a proof of concept</h2>
   <ul>
   <li>Run the vendor''s detection on your own traffic for two weeks and compare what it calls an agent with your logs.</li>

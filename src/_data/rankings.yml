@@ -2550,23 +2550,6 @@ know-your-agent:
     legacy_price_shown: null
     legacy_rating_shown: null
     segments: []
-  - slug: null
-    name: Prove
-    award: null
-    tagline: Prove Verified Agent links people and businesses in the Prove Identity Graph to the agents acting for them.
-    coverage: null
-    size: null
-    pros:
-    - Identity-bound tokens link the verified person, the agent and the credential
-    - Session-level authorization limits, with each interaction co-signed by user and merchant keys
-    - A trust registry of agent publishers, merchants and payment networks
-    cons:
-    - Not yet reviewed by BeVerified, so it has no score
-    - The launch release gives no availability dates, regions or pricing
-    - Supports only AP2 at launch
-    legacy_price_shown: null
-    legacy_rating_shown: null
-    segments: []
 eu:
   title: Best KYC & AML Providers for the EU in 2026
   # Scored providers: at least one EU route documented by the vendor: an ETSI TS 119 461 or ANSSI PVID certificate,
