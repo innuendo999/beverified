@@ -17,7 +17,7 @@ v3.1, KYB guide (`node scripts/rescore.mjs middesk`): **3.1 (Good)**.
 
 ## Ranking: tie for #10 in KYB, owner decision
 
-Middesk's unrounded score (3.050) is exactly equal to Trulioo's (3.050), the current #10 in the KYB list. Not added to `rankings.yml` in this PR. Options:
+Middesk's unrounded score (3.050) is exactly equal to Trulioo's (3.050), the current #10 in the KYB list. **Owner decision 2026-11-24: Middesk takes #10 on the tie-break (KYB guide sub-score: Middesk 4, Trulioo 2 on fraud defense); Trulioo leaves the KYB list.** Options that were offered:
 
 1. Trulioo stays #10, Middesk is reviewed but not ranked (current state of this PR).
 2. Middesk takes #10 on a tie-break (for example the KYB guide sub-score: Middesk 4, Trulioo 2 on fraud defense), Trulioo leaves the KYB list.
@@ -46,4 +46,3 @@ Middesk's unrounded score (3.050) is exactly equal to Trulioo's (3.050), the cur
 ## Still open
 
 - Logo and wordmark: added from the owner's images on 2026-11-24.
-- KYB ranking placement (above).

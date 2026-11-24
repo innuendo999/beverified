@@ -20,7 +20,7 @@ Score flag for the owner: the v3.1 identity rubric gives no credit for phone pos
 ## Rankings
 
 - **Identity Verification (IDV 1.0):** not scored. With no liveness and no document checks it would sit far below #10 (top 10 only).
-- **Know Your Agent:** `kya{}` collected; KYA 1.0 would give **2.4** (90% of weight scored). **Not eligible today** in this PR: `kya.availability = announced`. The Oct 2025 release says "launch", but the Agentic Suite page words most items as "designed to", calls Agent Wallet exploratory, asks buyers to contact sales about availability and names no customer. Owner to confirm. If the owner treats it as GA, set `availability.status: ga` and run `node scripts/rescore-kya.mjs --write prove`; its KYA score would be 2.5, which places it 4th, above Persona (2.3) and Socure (2.1).
+- **Know Your Agent:** `kya{}` collected; KYA 1.0 would give **2.4** (90% of weight scored). **Not eligible today** in this PR: `kya.availability = announced`. The Oct 2025 release says "launch", but the Agentic Suite page words most items as "designed to", calls Agent Wallet exploratory, asks buyers to contact sales about availability and names no customer. **Owner decision 2026-11-24: not ranked for now.** If the owner treats it as GA, set `availability.status: ga` and run `node scripts/rescore-kya.mjs --write prove`; its KYA score would be 2.5, which places it 4th, above Persona (2.3) and Socure (2.1).
 - The "Review coming" Prove card was removed from the KYA ranking; the explainer now says why Prove is not ranked, and the quick answer says 6 providers compared (5 scored).
 
 ## Facts used (vendor-stated unless noted)
@@ -40,5 +40,5 @@ Score flag for the owner: the v3.1 identity rubric gives no credit for phone pos
 ## Still open
 
 - Logo and wordmark: added from the owner's images on 2026-11-24.
-- KYA eligibility (above).
+- KYA: re-check availability at the next review.
 - Re-check biometrics at the next review: a launched liveness product with a lab letter would move Fraud defense.
