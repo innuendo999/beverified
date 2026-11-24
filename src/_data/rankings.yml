@@ -72,14 +72,14 @@ aml/banks:
     segments: []
   - slug: hawkai
     name: Hawk AI
-    award: Best for Explainable AI Monitoring
+    award: Best AI Overlay for Existing Monitoring
     tagline: Explainable-AI AML transaction monitoring, screening and fraud detection for banks and fintechs.
     coverage: null
     size: null
     pros:
     - Explainable AI built for regulator-facing audit transparency
     - AML monitoring, screening and fraud detection on one platform with a unified case manager
-    - Vendor-reported 70% fewer false alerts and 62% less AML investigation time
+    - AML AI Overlay adds AI detection on top of an existing monitoring system, with direct integrations to CSI, FIS, Fiserv and Jack Henry cores
     cons:
     - Enterprise/mid-market focus, not built for very small teams
     - No published pricing
