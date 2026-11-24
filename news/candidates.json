@@ -17,8 +17,9 @@
       "matched": "digital id",
       "route": "news",
       "priority": 1,
-      "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
-      "first_seen": "2026-11-23"
+      "reason": "Sri Lanka digital ID plans: outside US/UK/EU focus",
+      "first_seen": "2026-11-23",
+      "status": "digest"
     },
     {
       "id": "e94ec6a0a605b083",
@@ -193,8 +194,9 @@
       "matched": "corporate transparency act",
       "route": "news",
       "priority": 1,
-      "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
-      "first_seen": "2026-11-20"
+      "reason": "explainer on what ECCTA already changed for directors; no new rule, deadline or enforcement action (the Companies House one-year update is drafted in PR #209)",
+      "first_seen": "2026-11-20",
+      "status": "dropped"
     },
     {
       "id": "fc17b4fee7cd7d88",
@@ -231,8 +233,9 @@
       "matched": "digital id",
       "route": "news",
       "priority": 1,
-      "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
-      "first_seen": "2026-11-20"
+      "reason": "Africa digital ID cybersecurity: outside US/UK/EU focus, no new rule",
+      "first_seen": "2026-11-20",
+      "status": "digest"
     },
     {
       "id": "6bb3bd95d6058363",
@@ -363,8 +366,9 @@
       "matched": "digital id",
       "route": "news",
       "priority": 1,
-      "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
-      "first_seen": "2026-11-19"
+      "reason": "Liberia national digital ID contract: outside US/UK/EU focus",
+      "first_seen": "2026-11-19",
+      "status": "digest"
     },
     {
       "id": "b5a02526988b9303",
@@ -389,7 +393,9 @@
       "route": "news",
       "priority": 1,
       "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
-      "first_seen": "2026-11-19"
+      "first_seen": "2026-11-19",
+      "status": "drafted",
+      "pr": "https://github.com/innuendo999/beverified/pull/209"
     },
     {
       "id": "bd9463de3495371b",
@@ -407,8 +413,9 @@
       "matched": "digital id",
       "route": "news",
       "priority": 1,
-      "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
-      "first_seen": "2026-11-19"
+      "reason": "Swiss campaign on e-ID safeguards: outside US/UK/EU focus, no new rule yet",
+      "first_seen": "2026-11-19",
+      "status": "digest"
     },
     {
       "id": "209d324de8353cf5",
@@ -426,8 +433,10 @@
       "matched": "digital id",
       "route": "news",
       "priority": 1,
-      "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
-      "first_seen": "2026-11-19"
+      "reason": "same story as b5a02526988b9303 (Companies House one year of ID verification), drafted in PR #209",
+      "first_seen": "2026-11-19",
+      "status": "dropped",
+      "merged-with": "b5a02526988b9303"
     },
     {
       "id": "1b223eed6fa4059c",
@@ -451,9 +460,10 @@
       "matched": "sold",
       "route": "news",
       "priority": 1,
-      "reason": "Ownership or brand change at a ranked provider: news item plus a check of the provider record.",
+      "reason": "Equifax insider share sale (SEC Form 4): not a KYC/AML rule, enforcement action or provider event",
       "also": "record-check",
-      "first_seen": "2026-11-19"
+      "first_seen": "2026-11-19",
+      "status": "dropped"
     },
     {
       "id": "cc11b83b14bb2593",
