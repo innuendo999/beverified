@@ -77,6 +77,45 @@ items:
     publisher: RelyComply
     url: https://relycomply.com/relycomply-cyber-incident-what-happened-and-what-you-can-do/
     accessed: '2026-11'
+- id: yoti-2026-03
+  slug: yoti
+  vendor: Yoti
+  date: '2026-03-10'
+  occurred: 'AEPD investigation opened Dec 2023; fine published 10 Mar 2026'
+  type: regulatory
+  sensitivity: high
+  status: litigation
+  counted: true
+  confirmed_by: Spain's data protection authority (AEPD), reported by trade press
+  timeline:
+  - {when: 'Dec 2023', what: AEPD opens its investigation}
+  - {when: 'Mar 10, 2026', what: AEPD fines Yoti €950,000}
+  - {when: 'Apr 2026', what: Fine suspended while the appeal is heard}
+  - {when: 'Sep 10, 2026', what: Yoti removes its Digital ID app from Spanish app stores}
+  customer_actions: []
+  title: Spain's data protection authority fined Yoti €950,000 over its Digital ID app
+  summary: The AEPD found that the Yoti Digital ID app processed biometric data without a lawful basis, collected consent in a way that was not valid, and kept some data, such as liveness videos and fraudulent ID documents, for too long. It fined Yoti €500,000 for the biometric processing, €200,000 for consent and the rest for data retention. The decision concerns the app; no data breach was reported.
+  data: [Facial biometric templates, Liveness videos, ID document images]
+  scale: Users of the Yoti Digital ID app in Spain; number not disclosed
+  response: Yoti rejects the decision and is appealing at Spain's National Court (Audiencia Nacional). It says it fully cooperated with the AEPD and that a non-biometric login would be less secure, so it removed the app from Spanish app stores from 10 September 2026 instead of changing it. Existing users can keep using the app.
+  since: The fine was suspended in April 2026 while the appeal is heard. Appeal pending as of 24 Nov 2026.
+  sources:
+  - title: Withdrawing the Yoti ID app from Spain
+    publisher: Yoti
+    url: https://www.yoti.com/blog/withdrawing-yoti-id-app-spain/
+    accessed: '2026-11'
+  - title: Spain's AEPD fines Yoti $1.1M for biometric data handling violations
+    publisher: Biometric Update
+    url: https://www.biometricupdate.com/202603/spains-aepd-fines-yoti-1-1m-for-biometric-data-handling-violations
+    accessed: '2026-11'
+  - title: Spain fines Yoti €950,000 over biometric data and consent failures
+    publisher: PPC Land
+    url: https://ppc.land/spain-fines-yoti-eu950-000-over-biometric-data-and-consent-failures/
+    accessed: '2026-11'
+  - title: Digital wallet Yoti sees Spanish GDPR fine temporarily suspended
+    publisher: MLex
+    url: https://www.mlex.com/mlex/articles/2465505
+    accessed: '2026-11'
 - id: idmerit-2026-02
   slug: idmerit
   vendor: IDMERIT
