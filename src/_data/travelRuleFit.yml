@@ -27,6 +27,7 @@ own_network:
   verifyvasp: verifyvasp
   trp: trpnet
   ospree: ospree
+  codevasp: code
 
 # Extra rows read from a record's own network note
 also:
@@ -49,6 +50,7 @@ deploy:
   blockpass: { self: not_found, hosted: yes, short: Hosted, fact: Self-hosted option }
   width: { self: not_found, hosted: yes, short: Hosted, fact: Self-hosted option }
   ledgerbrain: { self: not_found, hosted: yes, short: Hosted, fact: Self-hosted option }
+  codevasp: { self: not_found, hosted: yes, short: Hosted, fact: Self-hosted option }
 
 # Published prices, where capabilities.published_pricing is missing
 price:
