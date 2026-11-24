@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "sources": {
     "ibeta_pad": {
       "ok": true,
@@ -8,7 +8,7 @@
     },
     "uk_dvs": {
       "ok": true,
-      "rows": 67,
+      "rows": 68,
       "baseline": false
     },
     "fido": {
@@ -28,13 +28,7 @@
   "newRows": [],
   "removedRows": [],
   "changedRows": [],
-  "toCheck": [
-    {
-      "source": "ibeta_pad",
-      "slug": "regula",
-      "note": "iBeta letter not cited in the record: Regula Forensics, Regula Face Mobile SDK, Level 1, 2025-10-27: https://www.ibeta.com/wp-content/uploads/2025/12/251027-Regula-PAD-Level-1-Confirmation-Letter-Android.pdf"
-    }
-  ],
+  "toCheck": [],
   "candidates": [],
   "expiring": [],
   "errors": []

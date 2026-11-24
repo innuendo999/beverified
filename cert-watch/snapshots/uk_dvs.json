@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "rows": [
     {
       "key": "Amiqus Resolution Limited|Amiqus",
@@ -55,6 +55,15 @@
       "codes": "",
       "certified": "2025-12-03",
       "expiry": "2028-12-03"
+    },
+    {
+      "key": "Atlantic Data Ltd|Digital ID",
+      "vendor": "Atlantic Data Ltd",
+      "service": "Digital ID",
+      "roles": "",
+      "codes": "",
+      "certified": "2026-11-04",
+      "expiry": "2029-10-20"
     },
     {
       "key": "AU10TIX Ltd|Identity Document Verification Suite",
