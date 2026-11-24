@@ -30,7 +30,7 @@ for f in pages:
             if k.startswith("data-") and k not in ("data-filter", "data-cats", "data-consent", "data-ad", "data-shot", "data-step", "data-close",
                                                     # review V5: fit check, pricing calculator, screenshot switcher
                                                     "data-slug", "data-group", "data-single", "data-id", "data-act", "data-part", "data-out", "data-i", "data-state",
-                                                    "data-main", "data-main-cap", "data-shot-open", "data-shot-show", "data-label") and not k.startswith(("data-mm", "data-rmap", "data-ucx", "data-reg", "data-ct", "data-fd", "data-aw")): flag("unexpected data- attribute", rel, k)
+                                                    "data-main", "data-main-cap", "data-shot-open", "data-shot-show", "data-label") and not k.startswith(("data-mm", "data-rmap", "data-ucc", "data-reg", "data-ct", "data-fd", "data-aw")): flag("unexpected data- attribute", rel, k)
             if FOOTPRINT.search(v) and k not in ("href", "src") : flag("footprint in attribute", rel, f"{k}={v[:60]}")
     if soup.find("meta", attrs={"name": "generator"}): flag("meta generator", rel)
     if legacy: continue
