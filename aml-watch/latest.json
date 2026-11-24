@@ -1,0 +1,290 @@
+{
+  "date": "2026-11-24",
+  "pages": 61,
+  "read": 50,
+  "gone": [
+    {
+      "name": "Sumsub",
+      "slug": "sumsub",
+      "field": "capabilities.alert_reporting",
+      "url": "https://sumsub.com/case-management",
+      "what": "term for alert_reporting not found"
+    },
+    {
+      "name": "Sumsub",
+      "slug": "sumsub",
+      "field": "capabilities.list_updates",
+      "url": "https://docs.sumsub.com/docs/data-sources-and-refreshment-times",
+      "what": "no stated update time found on the page"
+    },
+    {
+      "name": "Sumsub",
+      "slug": "sumsub",
+      "field": "capabilities.transfer_screening",
+      "url": "https://docs.sumsub.com/docs/aml-transaction-monitoring-watchlist-screening-features",
+      "what": "term for transfer_screening not found"
+    },
+    {
+      "name": "Castellum.AI",
+      "slug": "castellum-ai",
+      "field": "capabilities.fuzzy_matching",
+      "url": "https://www.castellum.ai/products/sanctions-and-peps-screening",
+      "what": "term for fuzzy_matching not found"
+    },
+    {
+      "name": "Castellum.AI",
+      "slug": "castellum-ai",
+      "field": "capabilities.secondary_identifiers",
+      "url": "https://www.castellum.ai/products/sanctions-and-peps-screening",
+      "what": "term for secondary_identifiers not found"
+    },
+    {
+      "name": "SmartSearch",
+      "slug": "smartsearch",
+      "field": "capabilities.case_management.four_eyes",
+      "url": "https://www.smartsearch.com/solutions/sanctions-and-pep-sip-rca-screening",
+      "what": "term for four_eyes not found"
+    },
+    {
+      "name": "SmartSearch",
+      "slug": "smartsearch",
+      "field": "capabilities.transfer_screening",
+      "url": "https://www.smartsearch.com/solutions/sanctions-and-pep-sip-rca-screening",
+      "what": "term for transfer_screening not found"
+    },
+    {
+      "name": "SmartSearch",
+      "slug": "smartsearch",
+      "field": "capabilities.alert_reporting",
+      "url": "https://www.smartsearch.com/solutions/configurability-and-automation",
+      "what": "term for alert_reporting not found"
+    },
+    {
+      "name": "Napier",
+      "slug": "napier",
+      "field": "capabilities.alert_reporting",
+      "url": "https://www.napier.ai/client-screening",
+      "what": "term for alert_reporting not found"
+    },
+    {
+      "name": "Napier",
+      "slug": "napier",
+      "field": "capabilities.model_validation",
+      "url": "https://www.napier.ai/client-screening",
+      "what": "term for model_validation not found"
+    },
+    {
+      "name": "Strise",
+      "slug": "strise",
+      "field": "capabilities.fuzzy_matching",
+      "url": "https://strise.ai/product/screening-and-alert-triage",
+      "what": "term for fuzzy_matching not found"
+    },
+    {
+      "name": "KYCAID",
+      "slug": "kycaid",
+      "field": "capabilities.transfer_screening",
+      "url": "https://docs.kycaid.com/risks-check/crypto",
+      "what": "term for transfer_screening not found"
+    },
+    {
+      "name": "KYCAID",
+      "slug": "kycaid",
+      "field": "integration.webhooks",
+      "url": "https://docs.kycaid.com/callbacks/verification-status-changed",
+      "what": "term for webhooks not found"
+    },
+    {
+      "name": "KYC360",
+      "slug": "kyc360",
+      "field": "capabilities.fuzzy_matching",
+      "url": "https://kyc360.com/solutions/aml-kyc-screening",
+      "what": "term for fuzzy_matching not found"
+    },
+    {
+      "name": "KYC360",
+      "slug": "kyc360",
+      "field": "capabilities.whitelisting",
+      "url": "https://kyc360.com/solutions/aml-kyc-screening",
+      "what": "term for whitelisting not found"
+    },
+    {
+      "name": "KYC360",
+      "slug": "kyc360",
+      "field": "capabilities.alert_reporting",
+      "url": "https://kyc360.com/solutions/aml-kyc-screening",
+      "what": "term for alert_reporting not found"
+    },
+    {
+      "name": "KYC Hub",
+      "slug": "kychub",
+      "field": "capabilities.case_management.four_eyes",
+      "url": "https://www.kychub.com/compliance-case-management",
+      "what": "term for four_eyes not found"
+    },
+    {
+      "name": "KYC Hub",
+      "slug": "kychub",
+      "field": "capabilities.alert_reporting",
+      "url": "https://www.kychub.com/compliance-case-management",
+      "what": "term for alert_reporting not found"
+    },
+    {
+      "name": "KYC Hub",
+      "slug": "kychub",
+      "field": "capabilities.list_updates",
+      "url": "https://www.kychub.com/aml-screening",
+      "what": "no stated update time found on the page"
+    },
+    {
+      "name": "KYC Hub",
+      "slug": "kychub",
+      "field": "capabilities.transfer_screening",
+      "url": "https://www.kychub.com/aml-screening",
+      "what": "term for transfer_screening not found"
+    }
+  ],
+  "candidates": [
+    {
+      "name": "Hawk AI",
+      "slug": "hawkai",
+      "field": "capabilities.data_provenance",
+      "what": "\"Services. Get support Similar products Payment Screening By ComplyAdvantage Payment Screening by ComplyAdvantage is an intelligent, rea\""
+    },
+    {
+      "name": "Hawk AI",
+      "slug": "hawkai",
+      "field": "capabilities.transliteration",
+      "what": "\"choosing how Hawk treats extra tokens, phonetic variations, transliteration, and other naming differences. Proven results In an\""
+    },
+    {
+      "name": "Hawk AI",
+      "slug": "hawkai",
+      "field": "capabilities.calibration_docs",
+      "what": "\"es disposition steps for your team to review. You configure fuzzy matching and list logic yourself, self-serve, and test chan\""
+    },
+    {
+      "name": "SmartSearch",
+      "slug": "smartsearch",
+      "field": "capabilities.secondary_identifiers",
+      "what": "\"your customer by simply entering in their name, address and date of birth. Taking just a few seconds to complete, our robust system a\""
+    },
+    {
+      "name": "SmartSearch",
+      "slug": "smartsearch",
+      "field": "capabilities.calibration_docs",
+      "what": "\"are rescreened every night for changes in status. Advanced fuzzy matching accounts for aliases, misspellings, transliteratio\""
+    },
+    {
+      "name": "Napier",
+      "slug": "napier",
+      "field": "capabilities.calibration_docs",
+      "what": "\"e layers. Multi-configuration screening lets your team tune thresholds and rules per customer risk profile first, cutting out the\""
+    },
+    {
+      "name": "Strise",
+      "slug": "strise",
+      "field": "capabilities.calibration_docs",
+      "what": "\"be treated. Set risk weights, escalation rules, and review thresholds once, then the same policy applies consistently across eve\""
+    },
+    {
+      "name": "Strise",
+      "slug": "strise",
+      "field": "capabilities.case_management.four_eyes",
+      "what": "\"for review Each time an assessment is sent to reviewers for four-eyes sign-off, including a resubmission after changes were reque\""
+    },
+    {
+      "name": "KYCAID",
+      "slug": "kycaid",
+      "field": "capabilities.transliteration",
+      "what": "\"ag inside <head> : < script src = \"https://forms.kycaid.com/scripts/iframe-resizer.min.js\" ></ script > Initialise the resizer.\""
+    },
+    {
+      "name": "KYC Hub",
+      "slug": "kychub",
+      "field": "capabilities.list_coverage",
+      "what": "lists named on a watched page but not in the record: eu"
+    },
+    {
+      "name": "KYC Hub",
+      "slug": "kychub",
+      "field": "capabilities.calibration_docs",
+      "what": "\"nd adverse media in 100+ languages. You can configure match thresholds, fuzzy logic and rescreen cadences per segment. Alerts rou\""
+    },
+    {
+      "name": "KYC Hub",
+      "slug": "kychub",
+      "field": "integration.webhooks",
+      "what": "\"tion-Ready Integrations Drop into your stack via REST APIs, webhooks and pre-built core-banking connectors. Audit-Ready By Defau\""
+    }
+  ],
+  "changed": [],
+  "unreadable": [
+    {
+      "id": "complyadvantage-766450",
+      "name": "ComplyAdvantage",
+      "url": "https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/441197968824603",
+      "why": "fetch: HTTP 404; curl: curl: (22) The requested URL returned error: 404"
+    },
+    {
+      "id": "castellum-ai-f71daf",
+      "name": "Castellum.AI",
+      "url": "https://support.castellum.ai/hc/en-us/articles/32906410850580-Will-we-get-a-notice-if-the-screened-party-generates-an-alert",
+      "why": "fetch: HTTP 403; curl: curl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "castellum-ai-5175b9",
+      "name": "Castellum.AI",
+      "url": "https://support.castellum.ai/hc/en-us/articles/37891509248788-Delta-Screening-vs-Real-Time-Monitoring",
+      "why": "fetch: HTTP 403; curl: curl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "castellum-ai-a9ce30",
+      "name": "Castellum.AI",
+      "url": "https://support.castellum.ai/hc/en-us/articles/4414202083476-Using-Batch-Screen",
+      "why": "fetch: HTTP 403; curl: curl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "castellum-ai-82141a",
+      "name": "Castellum.AI",
+      "url": "https://support.castellum.ai/hc/en-us/articles/48512040215188-What-are-Delisted-Lists",
+      "why": "fetch: HTTP 403; curl: curl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "castellum-ai-fea07d",
+      "name": "Castellum.AI",
+      "url": "https://support.castellum.ai/hc/en-us/categories/4405709966740-Screening-Monitoring",
+      "why": "fetch: HTTP 403; curl: curl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "castellum-ai-9c0545",
+      "name": "Castellum.AI",
+      "url": "https://www.castellum.ai/products/api",
+      "why": "fetch: HTTP 404; curl: curl: (22) The requested URL returned error: 404"
+    },
+    {
+      "id": "castellum-ai-abbf09",
+      "name": "Castellum.AI",
+      "url": "https://www.castellum.ai/products/bulk-data",
+      "why": "fetch: HTTP 404; curl: curl: (22) The requested URL returned error: 404"
+    },
+    {
+      "id": "hawkai-1dc10e",
+      "name": "Hawk AI",
+      "url": "https://hawk.ai/",
+      "why": "fetch: HTTP 403; curl: curl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "hawkai-f2c5ab",
+      "name": "Hawk AI",
+      "url": "https://hawk.ai/our-products/customer-screening",
+      "why": "fetch: HTTP 403; curl: curl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "hawkai-c6d31b",
+      "name": "Hawk AI",
+      "url": "https://hawk.ai/our-products/customer-risk-rating",
+      "why": "fetch: HTTP 403; curl: curl: (22) The requested URL returned error: 403"
+    }
+  ]
+}
