@@ -5,7 +5,7 @@ seo:
   description: 'Yoti, Veriff, Persona, ComplyCube and SmartSearch compared: the best KYC & AML providers for the UK in 2026, all with a service on the government DVS register.'
   h1: Best KYC & AML Providers for the UK in 2026
 breadcrumb_label: Best KYC & AML Providers for the UK
-quick_answer: Yoti is our top UK pick, with Yoti IDV and Post Office EasyID on the government DVS register for Right to Work, Right to Rent and DBS checks, and iBeta Level 3 liveness. Veriff is next, with published self-serve prices. Persona suits teams that build their own verification flows. We compared 9 providers on DVS certification, pricing, coverage and integration.
+quick_answer: Yoti is our top UK pick, with Yoti IDV and Post Office EasyID on the government DVS register for Right to Work, Right to Rent and DBS checks, and iBeta Level 3 liveness. Veriff is next, with published self-serve prices. Persona suits teams that build their own verification flows. We compared 10 providers on DVS certification, pricing, coverage and integration.
 # Register presence and certificate dates re-checked against the GOV.UK register CSV of 22 Nov 2026
 # (reports/verification/uk-register-2026-11-23.md); schemes per service from the 10 Nov 2026 check.
 last_verified: '2026-11-22'
@@ -59,7 +59,7 @@ explainer_html:
 
   <li>Ask whether sanctions screening runs against the UK Sanctions List and how quickly list changes reach you.</li>
 
-  <li>Compare pricing models. Five of the nine providers publish a starting price; the others quote on request.</li>
+  <li>Compare pricing models. Five of the ten providers publish a starting price; the others quote on request.</li>
 
   </ul>
 
@@ -74,9 +74,9 @@ faq:
 - q: Can a UK firm use a digital identity provider to meet the Money Laundering Regulations?
   a: Yes. HM Treasury guidance of 26 February 2026 says firms can meet the identity verification step of regulation 28 with a certified service listed on the DVS register. The firm keeps responsibility for the rest of customer due diligence, including the risk assessment and enhanced due diligence.
 - q: Which KYC providers are on the UK DVS register?
-  a: All 9 providers in this ranking have at least one service on the register, checked against the register download on 22 November 2026 and, for Yoti, on 24 November 2026. Yoti, Veriff, Persona, ComplyCube, SmartSearch, Onfido (Entrust), Signicat, GBG and AU10TIX each list a certified service. Sumsub, Shufti Pro, Veridas, Trulioo and Socure were not on the register that day.
+  a: All 10 providers in this ranking have at least one service on the register, checked against the register download on 22 November 2026 and, for Yoti and iProov, on 24 November 2026. Yoti, Veriff, Persona, ComplyCube, SmartSearch, Onfido (Entrust), iProov, Signicat, GBG and AU10TIX each list a certified service. Sumsub, Shufti Pro, Veridas, Trulioo and Socure were not on the register that day.
 - q: Do these providers support Right to Work, Right to Rent and DBS checks?
-  a: Yoti, Veriff, Persona, ComplyCube, Onfido (Entrust), GBG and AU10TIX list Right to Work and Right to Rent on their register entries, and Yoti, ComplyCube, Onfido, GBG and AU10TIX also list DBS. SmartSearch covers these schemes through Credas Connect. Signicat's ReadID lists no supplementary scheme.
+  a: Yoti, Veriff, Persona, ComplyCube, Onfido (Entrust), GBG and AU10TIX list Right to Work and Right to Rent on their register entries, and Yoti, ComplyCube, Onfido, GBG and AU10TIX also list DBS. SmartSearch covers these schemes through Credas Connect. Signicat's ReadID and iProov ID list no supplementary scheme.
 - q: What is the difference between DIATF and the DVS trust framework?
   a: DIATF and the DVS trust framework are the same framework under two names. Versions before 1.0 were called the UK digital identity and attributes trust framework (DIATF); version 1.0, published in June 2026, is called the UK digital verification services trust framework.
 - q: Does a DVS certificate expire?
