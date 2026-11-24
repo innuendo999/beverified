@@ -258,25 +258,35 @@ h1, h2, h3, p, ul, ol, figure { margin: 0; }
 .author-box__meta { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 14px; color: var(--body); font-variant-numeric: tabular-nums; }
 .author-box__meta a { font-weight: 500; }
 
-/* ---------- Footer ---------- */
-.site-footer { background: var(--footer-bg); border-top: 1px solid var(--line-mid); }
-.site-footer__inner { max-width: var(--container); margin: 0 auto; padding: 56px var(--gutter) 36px; }
-.site-footer__top { display: flex; justify-content: space-between; align-items: flex-start; gap: 32px; padding-bottom: 28px; border-bottom: 1px solid var(--line-strong); }
-.site-footer__about { max-width: 420px; }
-.site-footer__profiles a { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid var(--line-strong); border-radius: 12px; background: var(--bg); color: var(--ink); }
-.site-footer__profiles a:hover { border-color: var(--accent); color: var(--accent); }
-.site-footer__cols { display: grid; grid-template-columns: repeat(6, minmax(0,1fr)); gap: 32px; padding: 28px 0 40px; }
-.site-footer__sub { margin: 14px 0 6px; font-size: 13px; font-weight: 500; color: var(--muted); }
-.site-footer__col h2 + .site-footer__sub { margin-top: 0; }
-.site-footer__col--cont { padding-top: 13px; }
-.site-footer__about p { font-size: 14px; line-height: 1.5; color: var(--body); margin-top: 14px; }
-.site-footer__col h2 { font-size: 14px; font-weight: 600; margin-bottom: 10px; }
-.site-footer__col a { display: block; font-size: 14px; color: var(--body); padding: 4px 0; }
-.site-footer__col a:hover { color: var(--ink); }
-.site-footer__col a.more { color: var(--accent); font-weight: 500; }
-.site-footer__bottom { display: grid; grid-template-columns: minmax(0,2fr) minmax(0,1fr); gap: 32px; padding-top: 24px; border-top: 1px solid var(--line-strong); font-size: 14px; line-height: 1.6; color: var(--body); }
-.site-footer__bottom strong { color: var(--ink); font-weight: 600; }
+/* ---------- Footer: variant B "security paper" (owner, 2026-11-24) ----------
+   Navy ground, guilloche rosette top right, microprint lines instead of rules, MRZ band.
+   Rosette and microprint are static SVGs from scripts/footer-art.mjs. */
+.site-footer { position: relative; overflow: hidden; background: var(--ink); color: #fff; }
+.site-footer::before { content: ""; position: absolute; right: -170px; top: -250px; width: 760px; height: 760px; background: url("/assets/img/footer-rosette.svg") no-repeat center / contain; pointer-events: none; }
+.site-footer__inner { position: relative; max-width: var(--container); margin: 0 auto; padding: 64px var(--gutter) 0; }
+.site-footer__top { display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; padding-bottom: 28px; }
+.site-footer__about { max-width: 460px; }
+.site-footer .brand__name { color: #fff; font-size: 19px; }
+.site-footer .brand svg rect { fill: #fff; }
+.site-footer .brand svg rect:last-child { fill: #7E9BF0; }
+.site-footer__about p { font-size: 15px; line-height: 1.5; color: #C9D3E6; margin-top: 14px; }
+.site-footer__profiles a { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid #2C3C62; border-radius: 12px; background: #16244A; color: #fff; }
+.site-footer__profiles a:hover { border-color: #AFC3F5; color: #fff; }
+.site-footer__micro { height: 8px; background: url("/assets/img/footer-microprint.svg") repeat-x left center / 600px 8px; }
+.site-footer__cols { display: grid; grid-template-columns: repeat(6, minmax(0,1fr)); gap: 32px; padding: 32px 0 40px; }
+.site-footer__col h2 { font-size: 14px; line-height: 21px; font-weight: 600; margin: 0 0 10px; color: #fff; }
+.site-footer__spacer { display: block; height: 31px; }
+.site-footer__sub { margin: 14px 0 6px; font-size: 13px; font-weight: 500; color: #8A9BC4; }
+.site-footer__col h2 + .site-footer__sub, .site-footer__spacer + .site-footer__sub { margin-top: 0; }
+.site-footer__col a { display: block; font-size: 14px; color: #C9D3E6; padding: 4px 0; }
+.site-footer__col a:hover { color: #fff; }
+.site-footer__col a.more { color: #AFC3F5; font-weight: 500; }
+.site-footer a:focus-visible { outline-color: #AFC3F5; }
+.site-footer__bottom { display: grid; grid-template-columns: minmax(0,2fr) minmax(0,1fr); gap: 32px; padding: 22px 0 30px; font-size: 14px; line-height: 1.6; color: #C9D3E6; }
+.site-footer__bottom strong { color: #fff; font-weight: 600; }
 .site-footer__bottom div { text-align: right; }
+.site-footer__mrz { position: relative; background: #0E1D3D; border-top: 1px solid #24324F; }
+.site-footer__mrz div { max-width: var(--container); margin: 0 auto; padding: 14px var(--gutter) 18px; font-family: ui-monospace, 'SFMono-Regular', Menlo, monospace; font-size: 13px; line-height: 1.6; letter-spacing: 0.18em; color: #4F6290; white-space: nowrap; overflow: hidden; }
 
 /* ---------- Responsive (design: Mobile V3, 390px) ---------- */
 @media (max-width: 1024px) {
@@ -1280,7 +1290,7 @@ html:not(.mm-js) .mm-item:hover .mm-panel, html:not(.mm-js) .mm-item:focus-withi
   .mm-blog { grid-template-columns: 300px minmax(0,1fr); }
   .mm-blog > .mm-list { display: none; }
 }
-@media (max-width: 1024px) { .site-footer__cols { grid-template-columns: repeat(3, minmax(0,1fr)); } .site-footer__col--cont { padding-top: 0; } }
+@media (max-width: 1024px) { .site-footer__cols { grid-template-columns: repeat(3, minmax(0,1fr)); } }
 @media (max-width: 860px) {
   .mm-item { border-bottom: 1px solid var(--line-soft); }
   .mm-top { width: 100%; justify-content: space-between; height: 56px; font-size: 17px; font-weight: 500; color: var(--ink); }
@@ -1300,7 +1310,9 @@ html:not(.mm-js) .mm-item:hover .mm-panel, html:not(.mm-js) .mm-item:focus-withi
   .mm-rank + .mm-foot .mm-more { margin-left: 0; }
   .mm-foot__gap { display: none; }
   .site-footer__top { padding-bottom: 20px; }
-  .site-footer__col--cont { padding-top: 0; }
+  .site-footer__inner { padding-top: 48px; }
+  .site-footer::before { width: 480px; height: 480px; right: -200px; top: -180px; }
+  .site-footer__mrz div { font-size: 11px; letter-spacing: 0.12em; padding: 12px var(--gutter) 14px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .mm-panel, .mm-pv.is-on, .mm-fan, .mm-stage { animation: none !important; }
