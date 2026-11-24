@@ -10,8 +10,9 @@ seo:
   description: 'CODE review: the Korean Travel Rule network set up by Bithumb, Coinone and Korbit, with 350+ connected VASPs (vendor-stated), links to Sumsub, GTR, VerifyVASP and Sygna, and public developer docs. Pricing, pros & cons, alternatives.'
   h1: 'CODE (CodeVASP) Review 2026: Pricing, Features & Alternatives'
 logo:
-  src: null
-  background: null
+  src: /assets/img/logos/codevasp.png
+  background: '#56B9C0'
+  wordmark: /assets/img/wordmarks/codevasp.png
 tagline: Korean Travel Rule network set up by Bithumb, Coinone and Korbit, with links to Sumsub, GTR, VerifyVASP and Sygna
 score: 3.4
 grade: Good
@@ -314,7 +315,7 @@ verification_notes:
 - 'Certifications: homepage shows ISO 27001 and ISO 37301 with IAF, IAS and KCI logos; no certificate, number or body published. ISO 37301 news via CoinNess on CoinMarketCap (about Jan 2026). vendor_stated.'
 - 'Docs: docs.codevasp.com public (Korean and English), onboarding Registration, Connection Setup, Data Mapping, Testing and Go-Live; sandbox stated. Deployment reading: hosted gateway; "Your infrastructure. Your keys" on the homepage refers to keys and data staying with the VASP, not a self-hosted CODE install.'
 - 'No enforcement action, breach disclosure or litigation involving CODE found in searches to 24 Nov 2026.'
-- 'No logo file yet: ask the owner.'
+- 'Logo tile and wordmark from the owner''s images (2026-11-24).'
 application_category: Travel Rule Compliance Software
 author: andrii-klymenko
 directory_categories:

@@ -31,4 +31,4 @@ v3.1, identity family, age scope (`node scripts/rescore.mjs yoti`): **4.8 (Excel
 - ACCS Level 2 age estimation: registry page not readable; snippet showed validity 21/10/2026. Listed as vendor_stated; re-check in a browser.
 - SOC 2 Type II vendor-stated only.
 - Document and selfie IDV has no public price.
-- Logo and wordmark files: ask the owner.
+- Logo and wordmark: added from the owner's images on 2026-11-24.
