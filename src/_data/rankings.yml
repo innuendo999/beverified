@@ -2433,6 +2433,21 @@ uk:
     - AML/watchlist screening is a separate module
     - Mixed reviews on support responsiveness
     segments: []
+  - slug: iproov
+    name: iProov
+    award: Best for Face Verification
+    tagline: Face verification and liveness specialist whose iProov ID service is on the DVS register, used by the NHS login and large banks.
+    coverage: null
+    size: null
+    pros:
+    - iProov ID is on the DVS register in the Holder role (certified Oct 2025 to Oct 2028)
+    - FIDO Face Verification certificate and iBeta Level 2 letters for its liveness
+    - Users include the UK NHS login, UBS and ING
+    cons:
+    - The register entry lists no supplementary codes, so check Right to Work or DBS use with iProov
+    - Document checks and AML screening need another vendor
+    - No published pricing; quoted on request
+    segments: []
   - slug: signicat
     name: Signicat
     award: Best for NFC Chip Reading
