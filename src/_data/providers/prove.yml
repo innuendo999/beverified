@@ -9,8 +9,9 @@ seo:
   description: 'Prove review: phone-centric identity verification with Pre-Fill, possession checks and PEP and sanctions screening, plus the Verified Agent product. Pricing, pros & cons, alternatives.'
   h1: 'Prove Review 2026: Pricing, Features & Alternatives'
 logo:
-  src: null
-  background: null
+  src: /assets/img/logos/prove.png
+  background: '#FFFFFF'
+  wordmark: /assets/img/wordmarks/prove.png
 tagline: Phone-centric identity verification that checks possession of a phone number and pre-fills identity data
 score: 2.4
 grade: Fair
@@ -477,7 +478,7 @@ verification_notes:
 - 'Customers: homepage says 2,000+ companies; an Oct 2025 release says 1,500+ brands and a June 2026 blog footer says 2,500+. Homepage figure used.'
 - 'User ratings: G2 not readable by our tools. Not recorded.'
 - 'IDV 1.0: no category score computed. With no liveness product and no document checks its IDV score would sit far below #10 (ranking is top 10 only).'
-- 'No logo file yet: ask the owner for Prove''s logo and wordmark.'
+- 'Logo tile and wordmark from the owner''s images (2026-11-24).'
 - 'Incidents: none found in searches on 2026-11-24.'
 application_category: Identity Verification Software
 author: andrii-klymenko

@@ -8,8 +8,9 @@ seo:
   description: 'Middesk review: US business verification (KYB) across all 50 states and DC, with TIN matching, owner checks, OFAC screening and monitoring. Pricing, pros & cons, alternatives.'
   h1: 'Middesk Review 2026: Pricing, Features & Alternatives'
 logo:
-  src: null
-  background: null
+  src: /assets/img/logos/middesk.png
+  background: '#A8FF1C'
+  wordmark: /assets/img/wordmarks/middesk.png
 tagline: US business verification across every Secretary of State, with TIN matching, owner checks and ongoing monitoring
 score: 3.1
 grade: Good
@@ -440,7 +441,7 @@ verification_notes:
 - 'Pricing: middesk.com/pricing returned an error; /pricing/business-onboarding shows packages without figures and a contact form. G2 and TrustRadius list no prices. Vendr range (source 25) labelled third-party; Vendr does not say how the range was built.'
 - 'User ratings: G2 not readable by our tools; a TrustRadius snippet shows 8.9 out of 10 without a review count. Not recorded.'
 - 'Vendor performance figures not used: 7M businesses verified a year, 150K a week, 92% of records updated in under 10 days, 10% of new US businesses verified within 90 days, Rho case study figures.'
-- 'No logo file yet: ask the owner for Middesk''s logo and wordmark.'
+- 'Logo tile and wordmark from the owner''s images (2026-11-24).'
 - 'Incidents: none found in searches on 2026-11-24.'
 application_category: Identity Verification Software
 author: andrii-klymenko

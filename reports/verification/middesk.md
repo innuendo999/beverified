@@ -45,5 +45,5 @@ Middesk's unrounded score (3.050) is exactly equal to Trulioo's (3.050), the cur
 
 ## Still open
 
-- Logo and wordmark files (ask the owner).
+- Logo and wordmark: added from the owner's images on 2026-11-24.
 - KYB ranking placement (above).

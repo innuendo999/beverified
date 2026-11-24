@@ -39,6 +39,6 @@ Score flag for the owner: the v3.1 identity rubric gives no credit for phone pos
 
 ## Still open
 
-- Logo and wordmark files (ask the owner).
+- Logo and wordmark: added from the owner's images on 2026-11-24.
 - KYA eligibility (above).
 - Re-check biometrics at the next review: a launched liveness product with a lab letter would move Fraud defense.
