@@ -1,0 +1,195 @@
+# AML for Banks 1.0 evidence (docs/scoring-aml-banks.md), one entry per provider in the aml/banks ranking.
+# Read by scripts/rescore-aml-banks.mjs together with the provider record (capabilities{}, integration{}, certifications[]).
+# Evidence protocol: product pages, documentation portal, brochures and datasheets on the vendor's own domain, trust centre.
+# Pages behind a login or a form do not count. Every value has a url and the date it was checked.
+# Values the scorer reads:
+#   typologies: named | count | none          latency: stated | none
+#   channels: [names as the vendor writes them]  entity_links, segmentation, alert_priority, self_service_rules, simulation: yes | partial | no
+#   alert_reason: factors (rules or risk factors shown) | generic | no
+#   filing: named_channel (FinCEN BSA e-filing, goAML) | claimed (filing or pre-filled reports, channel not named) | no
+#   change_log: with_approvals | log_only | no      data_model: published | described | no      ingestion: both | one | no
+#   four_eyes: yes | no
+# fit: no points; shown per provider as yes, no or not stated.
+complyadvantage:
+  checked: '2026-11-24'
+  bank_evidence: {value: Hampshire Trust Bank (UK specialist bank) case study, url: 'https://complyadvantage.com/customer-stories/how-htb-deployed-an-agile-scalable-transaction-monitoring-and-customer-screening-program/'}
+  typologies: {value: count, note: rule categories such as velocity and average amount; no scenario list, url: 'https://complyadvantage.com/transaction-monitoring/'}
+  latency: {value: stated, note: sub-second responses, aggregation under 20 ms, url: 'https://complyadvantage.com/transaction-monitoring/'}
+  channels: {value: [cards, crypto], url: 'https://complyadvantage.com/transaction-monitoring/'}
+  entity_links: {value: no, note: related entities shown in the case view only, url: 'https://complyadvantage.com/transaction-monitoring/'}
+  segmentation: {value: yes, note: customers grouped by attributes and risk level, url: 'https://complyadvantage.com/transaction-monitoring/'}
+  alert_priority: {value: yes, note: alert priorities set to the firm's risk appetite, url: 'https://complyadvantage.com/transaction-monitoring/'}
+  alert_reason: {value: factors, note: risk score component breakdown and natural-language reasoning, url: 'https://complyadvantage.com/transaction-monitoring/'}
+  filing: {value: claimed, note: SAR and CTR reports and filing; channel not named, url: 'https://complyadvantage.com/transaction-monitoring/'}
+  four_eyes: {value: no, note: review stages for workflows; no second-reviewer rule stated, url: 'https://complyadvantage.com/transaction-monitoring/'}
+  self_service_rules: {value: partial, note: natural-language rule building, but the FAQ says rules are created during implementation, url: 'https://complyadvantage.com/transaction-monitoring/'}
+  simulation: {value: partial, note: sandbox shows alert-volume impact before go-live; historical data not stated, url: 'https://complyadvantage.com/transaction-monitoring/'}
+  model_docs: {value: partial, note: independent validation and bias management mentioned; no documentation pack, url: 'https://complyadvantage.com/transaction-monitoring/'}
+  change_log: {value: no, url: 'https://complyadvantage.com/transaction-monitoring/'}
+  data_model: {value: described, note: composable data model over a JSON REST API; no public specification, url: 'https://complyadvantage.com/transaction-monitoring/'}
+  ingestion: {value: one, note: real-time API; batch for transactions not stated, url: 'https://complyadvantage.com/transaction-monitoring/'}
+  fit:
+    deployment: {value: vendor-hosted cloud, url: 'https://complyadvantage.com/customer-stories/how-htb-deployed-an-agile-scalable-transaction-monitoring-and-customer-screening-program/'}
+    core_systems: {value: not stated}
+    overlay: {value: not stated}
+    framl: {value: yes, url: 'https://complyadvantage.com/transaction-monitoring/'}
+    filing_channel: {value: not stated}
+hawkai:
+  checked: '2026-11-24'
+  bank_evidence: {value: Ecobank and Vakif Bank shown as customers on Hawk's site, url: 'https://hawk.ai/'}
+  typologies: {value: named, note: structuring, layering, smurfing, url: 'https://hawk.ai/our-products/transaction-monitoring'}
+  latency: {value: none, url: 'https://hawk.ai/our-products/transaction-monitoring'}
+  channels: {value: [], note: all client, product and transaction types; none named, url: 'https://hawk.ai/our-products/transaction-monitoring'}
+  entity_links: {value: no, url: 'https://hawk.ai/our-products/transaction-monitoring'}
+  segmentation: {value: no, url: 'https://hawk.ai/our-products/transaction-monitoring'}
+  alert_priority: {value: no, url: 'https://hawk.ai/our-products/transaction-monitoring'}
+  alert_reason: {value: generic, note: AI explanations for alerts, url: 'https://hawk.ai/our-products/transaction-monitoring'}
+  filing: {value: named_channel, note: prefilled SARs e-filed to FinCEN with status tracking, url: 'https://hawk.ai/our-products/framl'}
+  four_eyes: {value: yes, note: 4-eye review, url: 'https://hawk.ai/our-products/transaction-monitoring'}
+  self_service_rules: {value: yes, note: self-serve rule configuration, url: 'https://hawk.ai/our-products/transaction-monitoring'}
+  simulation: {value: yes, note: sandbox tenant mirrors production; simulate rule changes on a chosen sample and timeframe of transactions, url: 'https://hawk.ai/platform/production-sandbox'}
+  model_docs: {value: no, url: 'https://hawk.ai/our-products/transaction-monitoring'}
+  change_log: {value: log_only, note: automated audit trails and model approval processes, not tied to rule changes, url: 'https://hawk.ai/our-products/transaction-monitoring'}
+  data_model: {value: no, url: 'https://hawk.ai/our-products/transaction-monitoring'}
+  ingestion: {value: no, url: 'https://hawk.ai/our-products/transaction-monitoring'}
+  fit:
+    deployment: {value: cloud (record)}
+    core_systems: {value: [CSI, FIS, Fiserv, Jack Henry], url: 'https://hawk.ai/our-products/framl'}
+    overlay: {value: yes, note: AML AI Overlay on an existing monitoring system, url: 'https://hawk.ai/solutions/aml/ai-overlay'}
+    framl: {value: yes, url: 'https://hawk.ai/our-products/framl'}
+    filing_channel: {value: FinCEN, url: 'https://hawk.ai/our-products/framl'}
+unit21:
+  checked: '2026-11-24'
+  bank_evidence: {value: Sunrise Banks, Patriot Bank, i3 Bank case studies, url: 'https://www.unit21.ai/customers/sunrise-banks'}
+  typologies: {value: count, note: one pattern named (money mules), url: 'https://www.unit21.ai/products/transaction-monitoring'}
+  latency: {value: none, note: real-time without a stated time, url: 'https://www.unit21.ai/products/transaction-monitoring'}
+  channels: {value: [], url: 'https://www.unit21.ai/products/transaction-monitoring'}
+  entity_links: {value: yes, note: graph rules and link analysis across datasets, url: 'https://www.unit21.ai/products/transaction-monitoring'}
+  segmentation: {value: partial, note: filters by entity type; no peer groups, url: 'https://www.unit21.ai/products/transaction-monitoring'}
+  alert_priority: {value: yes, note: AI risk scores prioritise investigations, url: 'https://www.unit21.ai/products/transaction-monitoring'}
+  alert_reason: {value: no, note: the page does not say alerts show a reason, url: 'https://www.unit21.ai/products/transaction-monitoring'}
+  filing: {value: named_channel, note: SAR e-filing to FinCEN, CTR and goAML reporting, url: 'https://unit21.ai/products/regulatory-filing'}
+  four_eyes: {value: no, url: 'https://www.unit21.ai/products/transaction-monitoring'}
+  self_service_rules: {value: yes, url: 'https://www.unit21.ai/products/transaction-monitoring'}
+  simulation: {value: yes, note: backtesting on any timeframe and shadow mode, url: 'https://www.unit21.ai/products/transaction-monitoring'}
+  model_docs: {value: no, url: 'https://www.unit21.ai/products/transaction-monitoring'}
+  change_log: {value: no, url: 'https://www.unit21.ai/products/transaction-monitoring'}
+  data_model: {value: published, note: Unit21 schema in the public API docs, url: 'https://docs.unit21.ai/reference/flat-file-ingestion-compared-to-api-ingestion'}
+  ingestion: {value: both, note: API ingestion and flat-file ingestion (S3 or dashboard), url: 'https://docs.unit21.ai/reference/flat-file-ingestion-compared-to-api-ingestion'}
+  fit:
+    deployment: {value: not stated}
+    core_systems: {value: [Fiserv Premier, Fiserv DNA, Jack Henry SilverLake, Finxact], url: 'https://www.unit21.ai/integrations'}
+    overlay: {value: yes, note: overlay on Jack Henry SilverLake, url: 'https://www.unit21.ai/integrations'}
+    framl: {value: yes, url: 'https://www.unit21.ai/products/transaction-monitoring'}
+    filing_channel: {value: FinCEN and goAML, url: 'https://unit21.ai/products/regulatory-filing'}
+napier:
+  checked: '2026-11-24'
+  bank_evidence: {value: Starling Bank named as a client, url: 'https://www.napier.ai'}
+  typologies: {value: count, note: 100+ inbuilt typologies, not listed, url: 'https://www.napier.ai/transaction-monitoring'}
+  latency: {value: none, url: 'https://www.napier.ai/transaction-monitoring'}
+  channels: {value: [], url: 'https://www.napier.ai/transaction-monitoring'}
+  entity_links: {value: no, url: 'https://www.napier.ai/transaction-monitoring'}
+  segmentation: {value: no, url: 'https://www.napier.ai/transaction-monitoring'}
+  alert_priority: {value: yes, note: rule-based and AI scores to prioritise workload, url: 'https://www.napier.ai/transaction-monitoring'}
+  alert_reason: {value: factors, note: plain-language explanation of what drives the alert, url: 'https://www.napier.ai/transaction-monitoring'}
+  filing: {value: claimed, note: reports filed from the platform where supported, fields pre-populated; channel not named, url: 'https://www.napier.ai/regulatory-reporting-manager'}
+  four_eyes: {value: no, url: 'https://www.napier.ai/transaction-monitoring'}
+  self_service_rules: {value: yes, note: no-code rules builder, url: 'https://www.napier.ai/transaction-monitoring'}
+  simulation: {value: yes, note: sandbox on production behaviour or the client's own datasets, url: 'https://www.napier.ai/transaction-monitoring'}
+  model_docs: {value: no, url: 'https://www.napier.ai/transaction-monitoring'}
+  change_log: {value: log_only, note: audit trail and automatic version history; approvals not stated, url: 'https://www.napier.ai/transaction-monitoring'}
+  data_model: {value: no, url: 'https://www.napier.ai/transaction-monitoring'}
+  ingestion: {value: no, url: 'https://www.napier.ai/transaction-monitoring'}
+  fit:
+    deployment: {value: cloud or on-premises, url: 'https://www.napier.ai'}
+    core_systems: {value: [Mambu], note: listed on Mambu's partner page, url: 'https://www.mambu.com/partner/napier'}
+    overlay: {value: not stated}
+    framl: {value: not stated}
+    filing_channel: {value: not stated}
+nice-actimize:
+  checked: '2026-11-24'
+  bank_evidence: {value: TF Bank chose NICE Actimize AML SaaS (NICE press release, 21 Nov 2024), url: 'https://www.fintechfutures.com/press-releases/nice-actimize-aml-saas-solutions-chosen-by-tf-bank-to-elevate-its-financial-crime-program'}
+  typologies: {value: count, note: hundreds of engineered models; typologies not listed, url: 'https://info.nice.com/rs/338-EJP-431/images/AML_SAM%20Brochure_v2_2022.pdf'}
+  latency: {value: none, note: 200 ms is stated for payment screening, not for monitoring, url: 'https://www.niceactimize.com/Documents/aml_payments_screening_datasheet_2024.pdf'}
+  channels: {value: [cash, wires, ACH, deposit accounts, securities], url: 'https://cn.niceactimize.com/Lists/Brochures/NICE_Actimize_AML_Suspicious_Activity_Monitoring_Brochure.pdf'}
+  entity_links: {value: yes, note: graph technology and network analytics, url: 'https://www.niceactimize.com/anti-money-laundering/suspicious-activity-monitoring'}
+  segmentation: {value: yes, note: machine-learning segmentation and peer comparison, url: 'https://www.niceactimize.com/Documents/Anomaly_Detection_Datasheet.pdf'}
+  alert_priority: {value: yes, note: predictive scoring prioritises high-risk alerts, url: 'https://www.niceactimize.com/anti-money-laundering/suspicious-activity-monitoring'}
+  alert_reason: {value: generic, note: explanations of AI insights in ActOne (record), url: 'https://www.niceactimize.com/anti-money-laundering/suspicious-activity-monitoring'}
+  filing: {value: claimed, note: e-filing to the relevant FIU, pre-filled fields and drafted narrative; channel not named, url: 'https://www.niceactimize.com/anti-money-laundering/suspicious-transaction-activity-reporting'}
+  four_eyes: {value: no, url: 'https://www.niceactimize.com/anti-money-laundering/suspicious-activity-monitoring'}
+  self_service_rules: {value: partial, note: clients can build their own machine-learning analytics; rule changes without the vendor not stated, url: 'https://www.niceactimize.com/anti-money-laundering/suspicious-activity-monitoring'}
+  simulation: {value: yes, note: SAM simulation environment before models go live, url: 'https://www.niceactimize.com/anti-money-laundering/actimizewatch-for-aml'}
+  model_docs: {value: partial, note: model governance included; no documentation pack named, url: 'https://www.niceactimize.com/Documents/Anomaly_Detection_Datasheet.pdf'}
+  change_log: {value: no, url: 'https://www.niceactimize.com/anti-money-laundering/suspicious-activity-monitoring'}
+  data_model: {value: no, url: 'https://www.niceactimize.com/anti-money-laundering/suspicious-activity-monitoring'}
+  ingestion: {value: no, url: 'https://www.niceactimize.com/anti-money-laundering/suspicious-activity-monitoring'}
+  screening:
+    lists: {value: [], note: no lists named, url: 'https://www.niceactimize.com/Lists/Brochures/wl_x_brochure_real_time_screening.pdf'}
+    update_hours: {value: null}
+    payment_screening: {value: yes, note: ISO 20022 payment screening and interdiction, url: 'https://www.niceactimize.com/Documents/aml_payments_screening_datasheet_2024.pdf'}
+    fuzzy_and_transliteration: {value: both, note: fuzzy matching and culture/name matching, url: 'https://www.niceactimize.com/anti-money-laundering/sanctions-screening'}
+  fit:
+    deployment: {value: cloud or on-premises (record)}
+    core_systems: {value: not stated}
+    overlay: {value: no}
+    framl: {value: not stated}
+    filing_channel: {value: FIUs, not named, url: 'https://www.niceactimize.com/anti-money-laundering/suspicious-transaction-activity-reporting'}
+feedzai:
+  checked: '2026-11-24'
+  bank_evidence: {value: CaixaBank named as a customer, url: 'https://feedzai.com'}
+  typologies: {value: named, note: 20+ scenarios incl. rapid fund movement, threshold avoidance, dormant accounts, url: 'https://www.feedzai.com/solutions/aml-transaction-monitoring/'}
+  latency: {value: none, url: 'https://www.feedzai.com/solutions/aml-transaction-monitoring/'}
+  channels: {value: [], url: 'https://www.feedzai.com/solutions/aml-transaction-monitoring/'}
+  entity_links: {value: yes, note: visual link analysis across entities, accounts and companies, url: 'https://www.feedzai.com/solutions/aml-transaction-monitoring/'}
+  segmentation: {value: no, url: 'https://www.feedzai.com/solutions/aml-transaction-monitoring/'}
+  alert_priority: {value: yes, note: model assigns a priority to each scenario alert, url: 'https://www.feedzai.com/solutions/aml-transaction-monitoring/'}
+  alert_reason: {value: generic, note: whitebox explanation cited in a third-party quote, url: 'https://www.feedzai.com/solutions/aml-transaction-monitoring/'}
+  filing: {value: claimed, note: SAR Manager generates and e-files reports, templates for eight countries; channel not named, url: 'https://www.feedzai.com/solutions/aml-transaction-monitoring/'}
+  four_eyes: {value: no, url: 'https://www.feedzai.com/solutions/aml-transaction-monitoring/'}
+  self_service_rules: {value: yes, note: self-service custom rules and threshold changes, url: 'https://www.feedzai.com/solutions/aml-transaction-monitoring/'}
+  simulation: {value: no, url: 'https://www.feedzai.com/solutions/aml-transaction-monitoring/'}
+  model_docs: {value: no, url: 'https://www.feedzai.com/solutions/aml-transaction-monitoring/'}
+  change_log: {value: no, url: 'https://www.feedzai.com/solutions/aml-transaction-monitoring/'}
+  data_model: {value: no, url: 'https://www.feedzai.com/solutions/aml-transaction-monitoring/'}
+  ingestion: {value: no, url: 'https://www.feedzai.com/solutions/aml-transaction-monitoring/'}
+  screening:
+    lists: {value: [ofac, un, eu], url: 'https://www.feedzai.com/blog/transaction-screening/'}
+    update_hours: {value: null, note: automatic updates without a stated time}
+    payment_screening: {value: yes, note: ISO 20022 transaction screening, url: 'https://www.feedzai.com/blog/transaction-screening/'}
+    fuzzy_and_transliteration: {value: fuzzy, url: 'https://feedzai.com/solutions/watchlist-screening/'}
+  fit:
+    deployment: {value: cloud, url: 'https://www.feedzai.com/solutions/aml-transaction-monitoring/'}
+    core_systems: {value: not stated}
+    overlay: {value: not stated}
+    framl: {value: yes (record)}
+    filing_channel: {value: eight countries, not named, url: 'https://www.feedzai.com/solutions/aml-transaction-monitoring/'}
+quantexa:
+  checked: '2026-11-24'
+  bank_evidence: {value: HSBC and Standard Chartered customer stories, url: 'https://www.quantexa.com/resources/hsbc-financial-crime/'}
+  typologies: {value: none, url: 'https://www.quantexa.com/solutions/cloud-aml/'}
+  latency: {value: none, url: 'https://www.quantexa.com/solutions/cloud-aml/'}
+  channels: {value: [], url: 'https://www.quantexa.com/solutions/cloud-aml/'}
+  entity_links: {value: yes, note: entity resolution and network generation, url: 'https://quantexa.com/solutions/aml/'}
+  segmentation: {value: no, url: 'https://www.quantexa.com/solutions/cloud-aml/'}
+  alert_priority: {value: yes, note: high-risk cases prioritised automatically, url: 'https://www.quantexa.com/solutions/cloud-aml/'}
+  alert_reason: {value: no, url: 'https://www.quantexa.com/solutions/cloud-aml/'}
+  filing: {value: named_channel, note: SAR filing integrated with FinCEN, url: 'https://www.quantexa.com/solutions/cloud-aml/'}
+  four_eyes: {value: no, url: 'https://www.quantexa.com/solutions/cloud-aml/'}
+  self_service_rules: {value: no, url: 'https://www.quantexa.com/solutions/cloud-aml/'}
+  simulation: {value: no, url: 'https://www.quantexa.com/solutions/cloud-aml/'}
+  model_docs: {value: no, url: 'https://www.quantexa.com/solutions/cloud-aml/'}
+  change_log: {value: no, url: 'https://www.quantexa.com/solutions/cloud-aml/'}
+  data_model: {value: described, note: unified data foundation and ingestion described, url: 'https://www.quantexa.com/solutions/cloud-aml/'}
+  ingestion: {value: one, url: 'https://www.quantexa.com/solutions/cloud-aml/'}
+  screening:
+    lists: {value: [], note: no lists named}
+    update_hours: {value: null}
+    payment_screening: {value: no}
+    fuzzy_and_transliteration: {value: no}
+  fit:
+    deployment: {value: cloud (Cloud AML), url: 'https://www.quantexa.com/solutions/cloud-aml/'}
+    core_systems: {value: not stated}
+    overlay: {value: yes, note: enhances an existing stack or replaces it, url: 'https://www.quantexa.com/solutions/cloud-aml/'}
+    framl: {value: not stated}
+    filing_channel: {value: FinCEN, url: 'https://www.quantexa.com/solutions/cloud-aml/'}

@@ -42,7 +42,7 @@ A provider that fails a rule is left out, not scored low.
 
 ## Rules for every criterion
 
-As AML 1.0: sub-scores 1 to 5 in steps of 0.5; `yes` and `add_on` earn the point, `partial` half; a feature with no public evidence earns no point and its weight does not move; values are read from the record, never retyped; AML Banks score = weighted average rounded to 0.1, stored in `category_scores.aml-banks`. Payment, affiliate or sponsored status never enters any criterion.
+As AML 1.0: sub-scores 1 to 5 in steps of 0.5; `yes` and `add_on` earn the point, `partial` half; a feature with no public evidence earns no point and its weight does not move; values are read from the record, never retyped; AML Banks score = weighted average rounded to 0.1, stored in `category_scores["aml/banks"]`. Payment, affiliate or sponsored status never enters any criterion.
 
 ## Criteria and weights
 
@@ -93,7 +93,7 @@ Public evidence cannot show detection rates on your data, false-positive volumes
 
 ## New data fields
 
-Evidence for this rubric lives in one file, `src/_data/amlBanksEvidence.yml`, one entry per provider: each value with its URL and the date checked, plus the `fit` items (no points). The scorer `scripts/rescore-aml-banks.mjs` reads it together with the AML 1.0 fields in the provider record (`capabilities{}`, `integration{}`, `certifications[]`) and `incidents.yml`; where a record has no AML 1.0 screening fields (NICE Actimize, Feedzai, Quantexa), the `screening` block in the evidence file is used. Report `reports/rescore-aml-banks-1.0.csv`; `--write` adds `category_scores.aml-banks`.
+Evidence for this rubric lives in one file, `src/_data/amlBanksEvidence.yml`, one entry per provider: each value with its URL and the date checked, plus the `fit` items (no points). The scorer `scripts/rescore-aml-banks.mjs` reads it together with the AML 1.0 fields in the provider record (`capabilities{}`, `integration{}`, `certifications[]`) and `incidents.yml`; where a record has no AML 1.0 screening fields (NICE Actimize, Feedzai, Quantexa), the `screening` block in the evidence file is used. Report `reports/rescore-aml-banks-1.0.csv`; `--write` adds `category_scores["aml/banks"]`.
 
 Scoring details fixed after the owner's approval on 2026-11-24: the alert reason earns 1 point only when the vendor says the alert shows which rules or risk factors fired (a general "explainable AI" claim earns 0.5); report filing earns 1 point only when the channel is named (FinCEN BSA e-filing, goAML), 0.5 when filing or pre-filled reports are claimed without the channel. Ties are broken by the unrounded score, then by the current order.
 
