@@ -1,0 +1,483 @@
+slug: yoti
+name: Yoti
+alternate_names:
+- Yoti Ltd
+status: published
+seo:
+  title: 'Yoti Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Yoti review: age verification with ten methods from £0.15 a check, facial age estimation, UK DVS certified identity checks and iBeta Level 3 liveness. Pricing, pros & cons, alternatives.'
+  h1: 'Yoti Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: null
+  background: null
+tagline: Age verification with ten methods, facial age estimation and UK-certified identity checks, at published prices
+score: 4.8
+grade: Excellent
+methodology: v3.1
+primary_category: age-verification
+categories:
+- age-verification
+- liveness-detection
+- uk
+link:
+  url: https://www.yoti.com
+  type: none
+last_verified: '2026-11-24'
+updated: '2026-11-24'   # last content edit; last_verified = last fact re-check
+verdict: 'Yoti suits platforms that must check age at scale, and UK employers, landlords and regulated firms that need certified identity checks. It offers ten age check methods behind one integration, from facial age estimation to ID documents and its Digital ID app, and an age check costs £0.15 with a £15 monthly minimum. Its liveness holds an iBeta Level 3 letter and its identity services are on the UK DVS register. Spain''s data protection authority fined it €950,000 in March 2026 over its Digital ID app; Yoti is appealing.'
+what_is:
+- Yoti is a London digital identity company founded in 2014. It runs the Yoti Digital ID app, sells age verification, identity verification, eSignatures and in-branch checks to businesses, and powers the Post Office EasyID app. Its age check page names Spotify, Lebara, NCR Voyix and Yubo among its customers.
+- Yoti's products share one platform. Age checks can use facial age estimation, an ID document, the Digital ID app, eID schemes, a credit card, a mobile number, a database or an email address. Identity verification reads documents, checks a selfie with liveness and can add PEP and sanctions screening, with Yoti's own staff reviewing harder cases. Four Yoti services are certified on the UK DVS register for Right to Work, Right to Rent and DBS checks.
+features:
+- Ten age check methods in one integration, including facial age estimation, ID document, Digital ID, eID, credit card, mobile, database and email age estimation.
+- Yoti Keys let a user keep access on a device without proving their age again.
+- Identity verification with document checks, selfie match and passive liveness (MyFace), with human review by Yoti's own team.
+- PEP and sanctions screening as an add-on to Yoti Verify and identity verification.
+- Reusable Yoti Digital ID app, which can read the chip in ePassports.
+- UK DVS certified services for Right to Work, Right to Rent and DBS checks, plus in-branch checks at the Post Office.
+- Web SDKs, mobile SDKs for iOS, Android and React Native, a no-code portal, and the Yoti Hub with a sandbox.
+- eSignatures (Yoti Sign) with a 30-day free trial.
+pricing:
+  summary: Yoti publishes prices in pounds. An age-only check costs £0.15, with a £15 minimum spend a month. Yoti Verify, which shares details from the Yoti Digital ID, starts at £0.30, and a PEP and sanctions check at £0.15. Volume prices are on request. Yoti Sign starts at £6 a month after a 30-day free trial.
+  plans:
+  - tier: Age Check
+    price: £0.15 / check
+    note: Age only
+    extra: £15 minimum spend a month
+  - tier: Yoti Verify
+    price: From £0.30 / verify
+    note: Basic or advanced details from the Yoti Digital ID
+    extra: AML check from £0.15
+  - tier: Yoti Sign
+    price: £6 / month
+    note: First user; £3 per extra user
+    extra: 30-day free trial
+  legacy_verified_note: null
+  verified: '2026-11'
+  items:
+  - label: Age check
+    value: £0.15 per check (age only)
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: Age check minimum
+    value: £15 a month
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: Yoti Verify
+    value: From £0.30 per verify
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: PEP and sanctions check
+    value: From £0.15 per check
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: Remember Me ID (Yoti Login)
+    value: £0.24 per individual per year
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: Yoti Sign
+    value: £6 a month for the first user, £3 for each extra user; 30-day free trial
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: Identity verification (document and selfie)
+    value: Not published; quoted on request
+    kind: official
+    source: 2
+    verified: '2026-11'
+  model:
+    published: core
+    minimum: true
+    trial: false
+    source: 2
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: developer docs open without login
+    source: 5
+  sdk_web:
+    status: 'yes'
+    note: seven web SDKs
+    source: 5
+  sdk_ios:
+    status: 'yes'
+    note: iOS SDK
+    source: 5
+  sdk_android:
+    status: 'yes'
+    note: Android and React Native SDKs
+    source: 5
+  sandbox:
+    status: 'yes'
+    note: Yoti Hub account with a sandbox, set up by the customer
+    source: 14
+  no_code:
+    status: 'yes'
+    note: no-code portal for identity verification
+    source: 4
+  support_hours:
+    status: not_disclosed
+    note: contact form, no hours published
+    source: 5
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 200
+    note: countries and territories (identity verification)
+    source: 12
+  document_types:
+    value: 12000
+    note: document types
+    source: 12
+  non_doc:
+    status: 'yes'
+    note: database, mobile and credit card age checks
+    source: 3
+track_record:
+  ownership:
+    status: stable
+    note: independent, founded 2014, no sale found
+    source: 19
+facts:
+- label: From
+  value: £0.15 per age check
+  source: 2
+  evidence: vendor
+- label: Founded
+  value: '2014'
+  source: 19
+  evidence: independent
+- label: HQ
+  value: London, UK
+  source: 9
+  evidence: independent
+- label: Regions
+  value: Identity checks in 200+ countries and territories; Yoti Verify covers customers from 160+ countries
+  source: 12
+  evidence: vendor
+- label: Document types
+  value: 12,000+
+  source: 12
+  evidence: vendor
+- label: Liveness
+  value: iBeta ISO/IEC 30107-3 Level 3 (MyFace, January 2026)
+  source: 7
+  evidence: independent
+- label: UK DVS register
+  value: Yoti IDV, Yoti Digital ID, Post Office EasyID and Digital ID Connect, certified 6 Oct 2026 to 4 Nov 2028
+  source: 8
+  evidence: independent
+- label: Regulatory action
+  value: €950,000 fine from Spain's AEPD (March 2026), under appeal
+  source: 17
+  evidence: independent
+pros:
+- Ten age check methods behind one integration, with a published price of £0.15 per age-only check
+- Liveness with an iBeta Level 3 letter (January 2026) and four services certified on the UK DVS register
+- ISO/IEC 27001 and 27701 certificate opened, issued by Intertek and valid to April 2027
+cons:
+- Spain's data protection authority fined Yoti €950,000 in March 2026 over biometric data in its Digital ID app; Yoti is appealing and withdrew the app from Spanish app stores
+- Document and selfie identity verification is not priced on the public price list
+- Age checks carry a £15 minimum spend a month, and support hours are not published
+alternatives:
+- slug: incode
+  name: Incode
+  best_for: Biometrics and AI Agent Checks
+- slug: persona
+  name: Persona
+  best_for: Configurable Document and Selfie Flows
+- slug: shufti-pro
+  name: Shufti Pro
+  best_for: Age Checks Inside a Full KYC Platform
+choose_instead:
+- slug: incode
+  need: Liveness plus AI agent checks
+  text: you want liveness with an iBeta Level 3 letter and a product that verifies AI agents acting for your customers.
+- slug: persona
+  need: One configurable identity flow
+  text: you need government ID and selfie checks, with UK DVS certification, built in a no-code workflow.
+- slug: shufti-pro
+  need: Age checks next to KYB and AML
+  text: you want age checks on the same platform as registry checks, UBO discovery and ongoing screening.
+user_reviews:
+  legacy_note: null
+  praise: []
+  criticize: []
+  by_profile:
+  - Social, gaming, dating and adult platforms that must check age at scale are Yoti's core fit.
+  - UK employers, landlords and DBS checkers can use its DVS-certified services.
+  - Businesses that need KYB or transaction monitoring will need a second vendor.
+faq:
+- q: How much does Yoti cost?
+  a: Yoti publishes prices in pounds. An age-only check costs £0.15 with a £15 minimum spend a month. Yoti Verify starts at £0.30 per verify and a PEP and sanctions check at £0.15. Document and selfie identity verification is quoted on request.
+- q: Which age check methods does Yoti offer?
+  a: Yoti lists ten methods. They are facial age estimation, the Yoti Digital ID, an ID document with a selfie, Yoti Keys, a credit card, a mobile number, an eID scheme, an SSN check, a database check and email age estimation.
+- q: Is Yoti's liveness independently tested?
+  a: Yes. iBeta's letter of 23 January 2026 confirms Yoti's MyFace passive liveness at ISO/IEC 30107-3 Level 3, with no attacks passing in 450 attempts across three attack types. Earlier versions held Level 1 and Level 2 letters.
+- q: Is Yoti certified for UK Right to Work checks?
+  a: Yes. The UK DVS register lists Yoti IDV, Yoti Digital ID and Post Office EasyID for Right to Work, Right to Rent and DBS checks, certified on 6 October 2026 until 4 November 2028.
+- q: Why was Yoti fined in Spain?
+  a: Spain's data protection authority, the AEPD, fined Yoti €950,000 in March 2026 over its Digital ID app, citing how it processed biometric data, how it collected consent and how long it kept data. Yoti rejects the decision, is appealing at Spain's National Court, and removed the app from Spanish app stores from 10 September 2026. Yoti says no data breach was involved.
+- q: Is Yoti ISO 27001 certified?
+  a: Yes. Intertek certifies Yoti Ltd to ISO/IEC 27001:2022, extended by ISO/IEC 27701, for its global ID verification services. The certificate we opened is valid until 29 April 2027. Yoti also says it passes an annual SOC 2 Type II audit.
+- q: What is the best alternative to Yoti?
+  a: Incode is the closest alternative for liveness with an iBeta Level 3 letter. Persona fits teams that want UK-certified identity checks in a configurable workflow.
+segments: []
+capabilities:
+  checked: '2026-11'
+  identity_verification:
+    status: 'yes'
+    note: document, selfie match and liveness
+    source: 4
+  liveness:
+    status: 'yes'
+    note: MyFace passive liveness
+    source: 7
+  injection_detection:
+    status: not_disclosed
+    note: no injection test found
+    checked: '2026-11'
+  nfc:
+    status: 'yes'
+    note: Digital ID app reads ePassport chips
+    source: 13
+  doc_forensics:
+    status: 'yes'
+    note: document authenticity checks
+    source: 15
+  manual_review:
+    status: 'yes'
+    note: Yoti's own team reviews harder cases
+    source: 4
+    hours: null
+  sanctions_pep:
+    status: add_on
+    note: PEP and sanctions check, from £0.15
+    source: 2
+  reusable_id:
+    status: 'yes'
+    note: Yoti Digital ID app
+    source: 3
+  video_ident:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  transaction_monitoring:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  case_management:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  data_residency:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  age_document:
+    status: 'yes'
+    note: ID document with selfie match
+    source: 3
+  age_facial_estimation:
+    status: 'yes'
+    note: facial age estimation from a selfie
+    source: 3
+  age_email_estimation:
+    status: 'yes'
+    note: email age estimation
+    source: 3
+  age_mobile_operator:
+    status: 'yes'
+    note: payer data linked to the phone number
+    source: 3
+  age_credit_card:
+    status: 'yes'
+    note: temporary card charge
+    source: 3
+  age_open_banking:
+    status: not_disclosed
+    note: not listed on the age page
+  age_digital_id:
+    status: 'yes'
+    note: Yoti Digital ID and national eID schemes
+    source: 3
+  age_reusable:
+    status: 'yes'
+    note: Yoti Keys on the user's device
+    source: 3
+certifications:
+- name: ISO/IEC 30107-3 Level 3 (iBeta)
+  program: ibeta_pad
+  level: 3
+  what: Liveness (MyFace, letter 23 Jan 2026)
+  status: confirmed
+  source: 7
+- name: UK DVS trust framework (DIATF)
+  program: uk_dvs
+  what: Identity services on the UK DVS register
+  status: confirmed
+  source: 8
+- name: ISO/IEC 27001:2022
+  program: iso27001
+  what: Information security, extended by ISO/IEC 27701 (Intertek, to 29 Apr 2027)
+  status: confirmed
+  source: 9
+- name: SOC 2 Type II
+  program: soc2
+  what: Annual audit
+  status: vendor_stated
+  source: 10
+- name: ACCS 1:2020 age estimation Level 2
+  program: accs
+  what: Facial age estimation
+  status: vendor_stated
+  source: 11
+user_ratings: []
+use_case_verdicts: []
+score_breakdown:
+- criterion: "Fraud defense"
+  weight: 25
+  score: 5
+  note: "PAD Level 3 lab result, NFC"
+  evidence: independent
+- criterion: "Pricing and total cost"
+  weight: 20
+  score: 4
+  note: "published, monthly minimum"
+  evidence: vendor
+- criterion: "Coverage"
+  weight: 15
+  score: 5
+  note: "200 countries and territories, 12,000 document types, checks without a document"
+  evidence: vendor
+- criterion: "Platform breadth"
+  weight: 15
+  score: 5
+  note: "7 of 8 age modules: ID document, facial age estimation, email estimation, mobile operator, credit card, digital ID, reusable age result"
+  evidence: vendor
+- criterion: "Integration and time to launch"
+  weight: 15
+  score: 5
+  note: "public API docs, self-serve sandbox or trial, no-code or hosted flow, web, iOS and Android SDKs"
+  evidence: vendor
+- criterion: "Trust and track record"
+  weight: 10
+  score: 4.5
+  note: "ISO 27001 or SOC 2 confirmed, trust framework confirmed, operating since 2014, incident 2026-03-10"
+  evidence: independent
+hands_on: null
+sources:
+- title: Yoti homepage
+  publisher: Yoti
+  url: https://www.yoti.com/
+  accessed: '2026-11'
+- title: Business pricing
+  publisher: Yoti
+  url: https://www.yoti.com/business/pricing/
+  accessed: '2026-11'
+- title: Age verification
+  publisher: Yoti
+  url: https://www.yoti.com/business/age-verification/
+  accessed: '2026-11'
+- title: Identity verification
+  publisher: Yoti
+  url: https://yoti.com/business/identity-verification
+  accessed: '2026-11'
+- title: Yoti developer documentation
+  publisher: Yoti
+  url: https://developers.yoti.com/
+  accessed: '2026-11'
+- title: ISO/IEC 30107-3 PAD confirmation letters
+  publisher: iBeta
+  url: https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/
+  accessed: '2026-11'
+- title: Yoti PAD Level 3 confirmation letter (23 Jan 2026)
+  publisher: iBeta
+  url: https://www.ibeta.com/wp-content/uploads/2026/01/260123-Yoti-PAD-Level-3-Confirmation-Letter-1.pdf
+  accessed: '2026-11'
+- title: 'Digital verification services register: Yoti Ltd'
+  publisher: GOV.UK
+  url: https://www.access-dvs-register.service.gov.uk/register/provider-details?providerId=38&fromServicePage=True
+  accessed: '2026-11'
+- title: ISO/IEC 27001:2022 extended by ISO/IEC 27701 certificate 0170917
+  publisher: Intertek
+  url: https://cdn.aws.yoti.com/wp-content/uploads/2026/04/Yoti-Ltd_ISO27701-2026.pdf
+  accessed: '2026-11'
+- title: Security and privacy
+  publisher: Yoti
+  url: https://www.yoti.com/?p=21833
+  accessed: '2026-11'
+- title: 'ACCS registry: Yoti Ltd'
+  publisher: Age Check Certification Scheme
+  url: https://accscheme.com/registry/age-estimation/yoti-ltd/
+  accessed: '2026-11'
+- title: 'Identity verification: the facts'
+  publisher: Yoti
+  url: https://cdn.aws.yoti.com/wp-content/uploads/2025/08/Identity-verification-the-facts.pdf
+  accessed: '2026-11'
+- title: 'Digital Identity Wallet (G-Cloud listing)'
+  publisher: GOV.UK Digital Marketplace
+  url: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/938783178811735
+  accessed: '2026-11'
+- title: 'Identity Verification (G-Cloud listing)'
+  publisher: GOV.UK Digital Marketplace
+  url: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/615462452489660
+  accessed: '2026-11'
+- title: Identity verification integration guide
+  publisher: Yoti
+  url: https://developers.yoti.com/v9.0/identity-verification
+  accessed: '2026-11'
+- title: Withdrawing the Yoti ID app from Spain
+  publisher: Yoti
+  url: https://www.yoti.com/blog/withdrawing-yoti-id-app-spain/
+  accessed: '2026-11'
+- title: Spain's AEPD fines Yoti $1.1M for biometric data handling violations
+  publisher: Biometric Update
+  url: https://www.biometricupdate.com/202603/spains-aepd-fines-yoti-1-1m-for-biometric-data-handling-violations
+  accessed: '2026-11'
+- title: Yoti's passive biometric liveness detection first to pass iBeta Level 3 PAD test
+  publisher: Biometric Update
+  url: https://www.biometricupdate.com/202601/yotis-passive-biometric-liveness-detection-first-to-pass-ibeta-level-3-pad-test
+  accessed: '2026-11'
+- title: Yoti
+  publisher: Wikipedia
+  url: https://en.wikipedia.org/wiki/Yoti
+  accessed: '2026-11'
+- title: "Prioritising privacy and security: Yoti's commitment to meeting ISO standards"
+  publisher: Yoti
+  url: https://yoti.com/blog/prioritising-privacy-and-security-yotis-commitment-to-meeting-iso-standards
+  accessed: '2026-11'
+- title: Yoti pulls Spanish ID app after €950,000 fine over processing biometric data
+  publisher: MLex
+  url: https://www.mlex.com/mlex/articles/2521156
+  accessed: '2026-11'
+- title: Spain fines Yoti €950,000 over biometric data and consent failures
+  publisher: PPC Land
+  url: https://ppc.land/spain-fines-yoti-eu950-000-over-biometric-data-and-consent-failures/
+  accessed: '2026-11'
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://www.yoti.com
+  - https://en.wikipedia.org/wiki/Yoti
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- 'link.type set to none: no commercial relationship with Yoti is recorded.'
+- 'iBeta: Level 3 letter opened (23 Jan 2026, myface12122025, iPhone 16 Pro, 450 attacks, APCER 0%). Older letters on iBeta''s page: Level 1 (Feb 2022), Level 2 (Feb 2023), Levels 1 and 2 partial retest (Oct 2025).'
+- 'UK DVS register opened 24 Nov 2026: four services, trust marks 021001 to 021004, certified 6 Oct 2026, expire 4 Nov 2028.'
+- 'ISO: Intertek certificate 0170917 (27001:2022 extended by 27701) opened; linked 27001 certificate 0148208; HQ address from the certificate. SOC 2 Type II only from Yoti''s security page (source 10, a ?p= URL returned by search); vendor_stated.'
+- 'ACCS: a search snippet of the registry page showed "ACCS 1:2020 ... Level 2, Facial Age Estimation with API model version Aug24, validity 21/10/2026"; our fetch of the page showed no entries. Status vendor_stated (ACCS logo on Yoti''s age page). Validity may have lapsed or been renewed; re-check in a browser.'
+- 'AEPD: the resolution (PS-00164-2025, EXP202317887) is on aepd.es but robots blocks our tool; amounts and articles from Biometric Update, PPC Land and MLex: €500,000 (Art. 9), €200,000 (Art. 7), €250,000 (Art. 5.1.e by difference; PPC Land gives the breakdown). Fine suspended pending appeal (MLex, 15 Apr 2026). Added to incidents.yml as type regulatory, counted (within 24 months).'
+- 'NFC: chip reading is stated for the Digital ID app in a G-Cloud listing (vendor-supplied); not stated for the IDV SDK.'
+- 'Pricing: the public list covers age checks, Yoti Verify (Digital ID sharing), AML checks, Login and Sign; document and selfie IDV has no public price (G-Cloud lists £0.20 to £2.50 a transaction for the wallet service; not used). Free trial: G-Cloud says one is available; not on yoti.com except for Sign; trial set false.'
+- 'Customers: age page names Spotify, Lebara, NCR Voyix, Yubo and Kids Web Services. FT figures (23M app downloads, revenue £32M+ in 2025) seen only in a secondary summary; not used.'
+- 'User ratings: not checked (G2 not readable).'
+application_category: Identity Verification Software
+author: andrii-klymenko
+directory_categories:
+- Age Verification
+- Liveness Detection

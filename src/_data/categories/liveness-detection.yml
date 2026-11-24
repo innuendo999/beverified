@@ -7,7 +7,7 @@ seo:
 breadcrumb_label: Best Liveness Detection Providers
 quick_answer: Shufti Pro ranks first, with liveness tested by iBeta to ISO/IEC 30107-3 Level 3 and a free plan for testing. Sumsub is the runner-up, also at Level 3, with published per-verification prices. KYCAID is the pick for pay-per-check buying, with liveness and face match priced on their own. We compared 10 reviewed providers on liveness tests, certifications, coverage and pricing.
 last_verified: '2026-11-18'
-updated: '2026-11-18'
+updated: '2026-11-24'
 legacy_stats:
 - value: '4'
   label: providers compared
@@ -65,7 +65,7 @@ faq:
 - q: What is liveness detection?
   a: Liveness detection checks that a selfie or face video comes from a live person in front of the camera, not a photo, screen replay, mask or deepfake. It runs during remote onboarding, before the face is matched to the photo on an ID document.
 - q: Which liveness detection providers are tested by iBeta to Level 2 or Level 3?
-  a: 'Among the 10 providers ranked here, Sumsub, Incode and Shufti Pro hold iBeta ISO/IEC 30107-3 Level 3 letters. Veriff, Veridas, Persona, Regula and Jumio hold Level 2 letters, and Onfido holds Level 2 for Liveness 2.0 (2022) but only Level 1 for its newest Motion v2.0. We found no lab letter for KYCAID. The matrix on this page shows the level for each provider, as of November 2026.'
+  a: 'Among the 10 providers ranked here, Sumsub, Yoti, Incode and Shufti Pro hold iBeta ISO/IEC 30107-3 Level 3 letters. Veriff, Veridas, Persona, Regula and Jumio hold Level 2 letters. We found no lab letter for KYCAID. The matrix on this page shows the level for each provider, as of November 2026.'
 - q: Is an iBeta Level 2 result an ISO certification?
   a: No. ISO/IEC 30107-3 sets out how to test and report presentation attack detection, but it has no levels. Levels 1 to 3 are iBeta's own test levels, and iBeta states that a pass is not a certification of the product.
 - q: Does liveness detection stop deepfakes?

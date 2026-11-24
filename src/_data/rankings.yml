@@ -1354,6 +1354,23 @@ liveness-detection:
     - Some reviewers report occasional false-positive flags
     legacy_rating_shown: null
     segments: []
+  - slug: yoti
+    name: Yoti
+    award: Best Passive Liveness for Age Checks
+    tagline: Passive single-selfie liveness tested by iBeta to ISO/IEC 30107-3 Level 3, used across Yoti's age and identity checks.
+    coverage: Global, 200+ countries and territories
+    size: null
+    pros:
+    - Liveness tested by iBeta to ISO/IEC 30107-3 Level 3 (January 2026), with no attacks passing in 450 attempts
+    - Identity services on the UK DVS register for Right to Work, Right to Rent and DBS
+    - Published price of £0.15 per age-only check
+    cons:
+    - Document and selfie identity verification is quoted, not on the public price list
+    - No independent injection attack test found
+    - Spain's data protection authority fined Yoti €950,000 in March 2026 over its Digital ID app; Yoti is appealing
+    legacy_price_shown: null
+    legacy_rating_shown: null
+    segments: []
   - slug: veriff
     name: Veriff
     award: Best for FIDO-Certified Face Matching
@@ -1466,22 +1483,6 @@ liveness-detection:
     - Core products are SDKs and hardware that need engineering work to integrate
     - No SOC 2 report among the certificates it lists, and ISO/IEC 27001 is vendor-stated
     legacy_rating_shown: null
-    segments: []
-  - slug: onfido
-    name: Onfido
-    award: Best Bundled with Document Checks
-    tagline: Liveness detection bundled into a broader document-and-biometric flow.
-    coverage: Global, 195 countries
-    size: null
-    pros:
-    - One vendor for liveness plus document verification
-    - More than 2,500 document types across 195 countries
-    - Strong developer SDKs
-    cons:
-    - Newest liveness version (Motion v2.0) holds an iBeta Level 1 letter, not Level 2
-    - No published pricing; quoted via Entrust sales
-    - Mixed reviews on support responsiveness
-    legacy_rating_shown: 4.6
     segments: []
 mexico:
   title: Best KYC & AML Providers for Mexico in 2026
@@ -1834,6 +1835,23 @@ age-verification:
     - A full KYC platform can be more than a simple age gate needs
     - Email and phone based age checks are not listed on its age verification page
     legacy_price_shown: From $1.35/verification
+    legacy_rating_shown: null
+    segments: []
+  - slug: yoti
+    name: Yoti
+    award: Best Age Check Specialist
+    tagline: Ten age check methods behind one integration, from facial age estimation to the Yoti Digital ID, at £0.15 per age-only check.
+    coverage: Global, 200+ countries and territories
+    size: null
+    pros:
+    - Ten age check methods in one integration, including facial age estimation, ID document, Digital ID, mobile, credit card and email
+    - Liveness tested by iBeta to ISO/IEC 30107-3 Level 3 (January 2026)
+    - Published price of £0.15 per age-only check
+    cons:
+    - £15 minimum spend a month on age checks
+    - Spain's data protection authority fined Yoti €950,000 in March 2026 over its Digital ID app; Yoti is appealing
+    - Open banking age checks are not listed
+    legacy_price_shown: null
     legacy_rating_shown: null
     segments: []
   - slug: veriff
@@ -2325,9 +2343,24 @@ uk:
   # reports/verification/uk-register-2026-11.md. Order: v3.1 score; Persona above ComplyCube (owner, tie at 4.0);
   # GBG above AU10TIX (tie at 3.3, provisional: more registered services).
   providers:
+  - slug: yoti
+    name: Yoti
+    award: Editor's Choice
+    tagline: Four services on the UK DVS register for Right to Work, Right to Rent and DBS, including Yoti IDV and Post Office EasyID, with iBeta Level 3 liveness.
+    coverage: Global, 200+ countries and territories
+    size: null
+    pros:
+    - Yoti IDV, Yoti Digital ID and Post Office EasyID are on the DVS register for Right to Work, Right to Rent and DBS (certified Oct 2026 to Nov 2028)
+    - Liveness tested by iBeta to ISO/IEC 30107-3 Level 3 (January 2026)
+    - In-branch identity checks at the Post Office for people who cannot verify online
+    cons:
+    - Document and selfie identity verification is quoted, not on the public price list
+    - Spain's data protection authority fined Yoti €950,000 in March 2026 over its Digital ID app; Yoti is appealing
+    - Support hours are not published
+    segments: []
   - slug: veriff
     name: Veriff
-    award: Editor's Choice
+    award: Best for Global Coverage
     tagline: UK identity service on the DVS register for Right to Work and Right to Rent, with published self-serve prices.
     coverage: Global, 230+ countries and territories
     size: null
