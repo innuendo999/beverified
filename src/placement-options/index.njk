@@ -3,36 +3,30 @@ layout: v3.njk
 seoTitle: "For KYC & AML Providers: Claim Your BeVerified Profile"
 seoDescription: "Claim your BeVerified profile to correct facts, add documentation and respond to our review. Payment never changes scores or ranking order."
 ---
-{#- For providers. Design: design/For Providers V3 (Desktop).dc.html. Advertising text: site.json v3.adPolicy (same words on /methodology/#advertising and /terms/#third-parties). -#}
+{#- For providers. Advertising text: site.json v3.adPolicy (same words on /methodology/#advertising and /terms/#third-parties).
+    Slot examples reuse the live slot classes (rv4-ad, r2-sponsor, idcard__sp, ucx__sp, fd-row); rules: src/_lib/placements.js.
+    Example rank and score are placeholders, stated on the page. -#}
 <main id="main" class="container fp">
   <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li class="sep" aria-hidden="true">›</li><li aria-current="page">For providers</li></ol></nav>
   <section class="fp-hero">
     <div>
       <h1 class="h-display">Keep your BeVerified profile accurate</h1>
-      <p>Claim your profile to correct facts, add documentation and respond to our review. You can't buy or change a score.</p>
-      <div class="cta-row"><a class="btn btn--primary" href="mailto:support@beverified.org?subject=Claim%20profile">Claim your profile</a><a class="btn btn--secondary" href="/methodology/">Read our methodology</a></div>
+      <p>Claim your profile to fix facts and reply to our review. You can also book a sponsored placement. Neither changes a score or a rank.</p>
+      <div class="cta-row"><a class="btn btn--primary" href="mailto:support@beverified.org?subject=Claim%20profile">Claim your profile</a><a class="btn btn--secondary" href="#advertising">See ad placements</a></div>
     </div>
-    <div class="score-card p-20-24"><div class="fs-13 c-muted mb-6">Policy</div><div class="fs-19 fw-600 lh-1_3">Payment never changes scores or ranking order.</div></div>
+    <div class="fp-policy"><div class="fp-policy__k">Policy</div><div class="fs-19 fw-600 lh-1_3">Payment never changes scores or ranking order.</div></div>
   </section>
 
-  <section class="fp-block" aria-labelledby="who-h">
-    <h2 id="who-h" class="h-section">Who reads BeVerified</h2>
-    <div class="grid-3">
-      <div class="card card--pad"><h3 class="card__title">Compliance officers &amp; MLROs</h3><p class="fp-muted">Shortlisting vendors and documenting due diligence.</p></div>
-      <div class="card card--pad"><h3 class="card__title">Fintech &amp; crypto founders</h3><p class="fp-muted">Choosing a first KYC/AML stack before launch.</p></div>
-      <div class="card card--pad"><h3 class="card__title">Product &amp; engineering leads</h3><p class="fp-muted">Comparing SDKs, pricing models and integration effort.</p></div>
-    </div>
-  </section>
-
-  <section class="fp-block" aria-labelledby="can-h">
-    <h2 id="can-h" class="h-section">What claiming your profile lets you do</h2>
+  <section class="fp-block" aria-labelledby="claim-h">
+    <h2 id="claim-h" class="h-section">Claim your profile</h2>
+    <p class="fp-lede">Email <a href="mailto:support@beverified.org?subject=Claim%20profile">support@beverified.org</a> from your company domain. Name the profile and the contact person. Send each correction with a public link or a document we can check. We log every accepted change. A score moves only if the <a href="/methodology/">methodology</a> says it should.</p>
     <div class="grid-2">
-      <div class="card card--pad"><h3 class="card__title">You can</h3>
+      <div class="card card--pad"><h3 class="card__title fp-yes">You can</h3>
         <div class="list-row"><span>Correct facts: pricing, coverage, ownership, certifications</span></div>
         <div class="list-row"><span>Add documentation: test letters, audit reports, register entries</span></div>
         <div class="list-row"><span>Respond to the review in a labelled vendor statement</span></div>
       </div>
-      <div class="card card--pad"><h3 class="card__title">You can't</h3>
+      <div class="card card--pad"><h3 class="card__title fp-no">You can't</h3>
         <div class="list-row"><span>Change your score or sub-scores</span></div>
         <div class="list-row"><span>Change your ranking position</span></div>
         <div class="list-row"><span>Remove cons or user-reported themes</span></div>
@@ -40,27 +34,184 @@ seoDescription: "Claim your BeVerified profile to correct facts, add documentati
     </div>
   </section>
 
-  <section class="fp-block" aria-labelledby="how-h">
-    <h2 id="how-h" class="h-section">How it works</h2>
-    <ol class="grid-3 list-none p-0">
-      <li class="card card--pad"><div class="fp-step">01</div><h3 class="card__title">Email us from your company domain</h3><p class="fp-muted">Tell us which profile and who should be the contact.</p></li>
-      <li class="card card--pad"><div class="fp-step">02</div><h3 class="card__title">Send corrections with sources</h3><p class="fp-muted">Each change needs a public link or a document we can verify.</p></li>
-      <li class="card card--pad"><div class="fp-step">03</div><h3 class="card__title">We verify and update</h3><p class="fp-muted">Accepted changes are logged and the evidence tag updated. A score only moves if the rubric says it should.</p></li>
-    </ol>
-  </section>
-
   <section class="fp-block" id="advertising" aria-labelledby="ad-h">
     <h2 id="ad-h" class="h-section">Sponsored placements</h2>
+    <p class="fp-lede">There are five places to advertise. The same rules apply to all of them:</p>
+    <ul class="fp-rules">
+      <li>You need a published BeVerified review first.</li>
+      <li>Every slot says "Sponsored" and shows your real rank and score from that review. Links carry <code>rel="sponsored"</code>.</li>
+      <li>Payment never changes a score, a rank, an award or what a review says.</li>
+    </ul>
+    <p class="fp-small">The examples below use the live slot designs. "Your company", the rank and the score are placeholders.</p>
+
+    <article class="fp-slot" aria-labelledby="slot-review">
+      <div class="fp-slot__text">
+        <h3 id="slot-review" class="fp-slot__h"><span class="fp-num">1</span>Review pages</h3>
+        <p>One booking puts your card in two spots on a competitor's review: next to the score on the first screen, and again after "Alternatives".</p>
+        <dl class="fp-dl">
+          <div><dt>Targeting</dt><dd>Every review in one ranking, or only the reviews you name</dd></div>
+          <div><dt>Eligible</dt><dd>Ranked in that ranking</dd></div>
+          <div><dt>Limits</dt><dd>One sponsor per review. Never on your own review.</dd></div>
+          <div><dt>Live on</dt><dd>Travel Rule provider reviews</dd></div>
+        </dl>
+      </div>
+      <div class="fp-ex">
+        <div class="fp-ex__bar" aria-hidden="true"><span class="fp-ex__dots"><i></i><i></i><i></i></span><span class="fp-ex__url">beverified.org/providers/<b>a-competitor</b>/</span><span class="fp-ex__badge">Example</span></div>
+        <div class="fp-ex__body">
+        <p class="fp-ex__tag">First screen</p>
+        <div class="fp-ex__split">
+          <div class="fp-ex__ghost" aria-hidden="true"><i></i><i></i><i class="s"></i></div>
+          <aside class="rv4-ad fp-hl" aria-label="Sponsored, example">
+            <p class="rv4-ad__label"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><path d="M8 7v4.5M8 4.8v.2"/></svg>Sponsored</p>
+            <div class="rv4-ad__row">
+              <span class="rv4-ad__logo">Logo</span>
+              <span class="rv4-ad__text"><a href="#advertising">Your company</a><span class="num">4.2 / 5 · #5 in Travel Rule</span></span>
+              <span class="rv4-ad__btn">Visit site <span aria-hidden="true">↗</span></span>
+            </div>
+          </aside>
+        </div>
+        <p class="fp-ex__tag">After Alternatives</p>
+        <aside class="rv4-card rv4-ad-wide fp-ex__wide fp-hl" aria-label="Sponsored, example">
+          <span class="rv4-ad__logo rv4-ad__logo--lg">Logo</span>
+          <div class="rv4-ad-wide__body">
+            <p class="rv4-ad__label"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><path d="M8 7v4.5M8 4.8v.2"/></svg>Sponsored</p>
+            <p class="rv4-ad-wide__name">Your company</p>
+            <p class="num fp-ex__sub">4.2 / 5 · #5 in Travel Rule</p>
+            <p class="fp-ex__p">Your tagline from your review.</p>
+          </div>
+          <div class="rv4-ad-wide__cta">
+            <span class="btn btn--primary">Visit site <span aria-hidden="true">↗</span></span>
+            <span class="fp-ex__link">Read our review</span>
+          </div>
+          <p class="fp-small rv4-ad-wide__note">Paid placement. It does not change scores or rankings.</p>
+        </aside>
+        </div>
+      </div>
+    </article>
+
+    <article class="fp-slot" aria-labelledby="slot-ranking">
+      <div class="fp-slot__text">
+        <h3 id="slot-ranking" class="fp-slot__h"><span class="fp-num">2</span>Ranking page, under the top 3</h3>
+        <p>One slot directly under the top 3 table, above the full list.</p>
+        <dl class="fp-dl">
+          <div><dt>Eligible</dt><dd>Ranked on that page, outside the top 3</dd></div>
+          <div><dt>Limits</dt><dd>One sponsor per ranking</dd></div>
+          <div><dt>Live on</dt><dd><a href="/providers/identity-verification/">Identity Verification</a>, <a href="/providers/aml/">AML</a>, <a href="/providers/travel-rule/">Travel Rule</a></dd></div>
+        </dl>
+      </div>
+      <div class="fp-ex">
+        <div class="fp-ex__bar" aria-hidden="true"><span class="fp-ex__dots"><i></i><i></i><i></i></span><span class="fp-ex__url">beverified.org/providers/<b>identity-verification</b>/</span><span class="fp-ex__badge">Example</span></div>
+        <div class="fp-ex__body">
+        <div class="fp-ex__ghost fp-ex__ghost--table" aria-hidden="true"><i></i><i></i><i></i></div>
+        <aside class="card r2-sponsor fp-hl" aria-label="Sponsored, example">
+          <span class="r2-sponsor__label">Sponsored</span>
+          <div class="r2-sponsor__body">
+            <strong>Your company</strong>
+            <span>#5 in this ranking · IDV score 4.2 · Your tagline</span>
+          </div>
+          <div class="r2-sponsor__cta">
+            <span class="btn btn--secondary btn--sm">Read review</span>
+            <span class="btn btn--primary btn--sm">Visit website <span aria-hidden="true">↗</span></span>
+          </div>
+          <p class="r2-sponsor__note">Paid placement. It doesn't change scores or ranking order.</p>
+        </aside>
+        <div class="fp-ex__ghost" aria-hidden="true"><i class="s"></i></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="fp-slot" aria-labelledby="slot-hero">
+      <div class="fp-slot__text">
+        <h3 id="slot-hero" class="fp-slot__h"><span class="fp-num">3</span>Homepage, first screen</h3>
+        <p>A row in the KYC ranking card at the top of the homepage, under the top 3.</p>
+        <dl class="fp-dl">
+          <div><dt>Eligible</dt><dd>Ranked in the <a href="/providers/kyc/">KYC ranking</a>, outside the top 3</dd></div>
+          <div><dt>Limits</dt><dd>One sponsor at a time</dd></div>
+        </dl>
+      </div>
+      <div class="fp-ex">
+        <div class="fp-ex__bar" aria-hidden="true"><span class="fp-ex__dots"><i></i><i></i><i></i></span><span class="fp-ex__url">beverified.org</span><span class="fp-ex__badge">Example</span></div>
+        <div class="fp-ex__body">
+        <div class="fp-ex__card">
+          <ol class="fp-ex__rows" aria-hidden="true"><li><b>1</b><i></i></li><li><b>2</b><i></i></li><li><b>3</b><i></i></li></ol>
+          <div class="idcard__sp fp-hl-in">
+            <div>
+              <p class="idcard__sp-name"><span class="sp-tag"><svg width="11" height="11" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 6.5v3h2.5L9 12.5v-9L4.5 6.5z"/><path d="M11.5 6a3 3 0 0 1 0 4"/></svg>Sponsored</span>Your company</p>
+              <p class="idcard__sp-meta">#5 in KYC · Score 4.2 / 5 · Paid placement, it does not change the ranking</p>
+            </div>
+            <span class="btn btn--secondary btn--sm">Visit site <span aria-hidden="true">↗</span></span>
+          </div>
+        </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="fp-slot" aria-labelledby="slot-usecase">
+      <div class="fp-slot__text">
+        <h3 id="slot-usecase" class="fp-slot__h"><span class="fp-num">4</span>Homepage, "Pick by use case"</h3>
+        <p>A row under the top 3 in one use-case panel: KYC, AML, KYB, Identity Verification, Travel Rule and the others. The KYC panel is open by default. The rest open on click.</p>
+        <dl class="fp-dl">
+          <div><dt>Eligible</dt><dd>Ranked in that use case's ranking, outside the top 3</dd></div>
+          <div><dt>Limits</dt><dd>One sponsor per use case</dd></div>
+          <div><dt>Links to</dt><dd>Your review</dd></div>
+        </dl>
+      </div>
+      <div class="fp-ex">
+        <div class="fp-ex__bar" aria-hidden="true"><span class="fp-ex__dots"><i></i><i></i><i></i></span><span class="fp-ex__url">beverified.org · Pick by use case</span><span class="fp-ex__badge">Example</span></div>
+        <div class="fp-ex__body">
+        <div class="fp-ex__ghost" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="ucx__sp fp-hl">
+          <p class="ucx__sp-note"><span class="sp-tag"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 6.5v3h2.5L9 12.5v-9L4.5 6.5z"/><path d="M11.5 6a3 3 0 0 1 0 4"/></svg>Sponsored</span>Paid placement. It does not change the ranking above.</p>
+          <div class="ucx__sp-row">
+            <span class="ucx__tile ucx__tile--sm"><span>Logo</span></span>
+            <span class="ucx__who"><span class="ucx__name">Your company</span><span class="ucx__line">Your award or tagline</span></span>
+            <span class="ucx__sp-meta">#5 in our KYC ranking · Score 4.2 / 5<span class="ucx__sp-go">Read review →</span></span>
+          </div>
+        </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="fp-slot" aria-labelledby="slot-finder">
+      <div class="fp-slot__text">
+        <h3 id="slot-finder" class="fp-slot__h"><span class="fp-num">5</span>Provider finder</h3>
+        <p>The finder opens from the bottom right of our pages. Readers answer three questions and get their matches. A sponsor row goes under the matches.</p>
+        <dl class="fp-dl">
+          <div><dt>Eligible</dt><dd>Ranked in that ranking, outside the top 3</dd></div>
+          <div><dt>Shown when</dt><dd>You fit the reader's answers (country, public price, monthly volume) and are not already in the matches</dd></div>
+          <div><dt>Limits</dt><dd>One sponsor per ranking. Never on your own review.</dd></div>
+        </dl>
+      </div>
+      <div class="fp-ex">
+        <div class="fp-ex__bar" aria-hidden="true"><span class="fp-ex__dots"><i></i><i></i><i></i></span><span class="fp-ex__url">Find a provider · your matches</span><span class="fp-ex__badge">Example</span></div>
+        <div class="fp-ex__body">
+        <ol class="fd-list">
+          <li class="fd-row fp-ex__fdghost" aria-hidden="true"><span class="fd-logo fd-logo--txt"></span><div class="fd-row__mid"><i></i></div><div class="fd-price"><i></i></div></li>
+          <li class="fd-row fp-ex__fdghost" aria-hidden="true"><span class="fd-logo fd-logo--txt"></span><div class="fd-row__mid"><i></i></div><div class="fd-price"><i></i></div></li>
+          <li class="fd-row fp-hl-row">
+            <span class="fd-logo fd-logo--txt">Logo</span>
+            <div class="fd-row__mid">
+              <span class="fd-sp">Sponsored</span>
+              <div class="fd-row__top"><span class="fd-name">Your company</span><span class="fd-rank">#5</span><span class="fd-score">4.2</span></div>
+              <span class="fd-site">Visit website ↗</span>
+            </div>
+            <div class="fd-price"><span class="fd-price__txt">Your price</span></div>
+          </li>
+        </ol>
+        </div>
+      </div>
+    </article>
+
+    <h3 class="fp-slot__h fp-policy-h">Advertising policy</h3>
     <div class="prose">
       {%- for para in site.v3.adPolicy %}
       <p>{{ para }}</p>
       {%- endfor %}
-      <p><a href="mailto:support@beverified.org?subject=Sponsored%20placement">Ask about sponsored placements</a></p>
     </div>
   </section>
 
-  <section class="card fp-cta" aria-label="Claim your profile">
-    <div><div class="fs-19 fw-600">Ready to claim your profile?</div><div class="fp-muted">support@beverified.org · subject "Claim profile"</div></div>
-    <a class="btn btn--primary" href="mailto:support@beverified.org?subject=Claim%20profile">Email us</a>
+  <section class="fp-cta fp-cta--ink" aria-label="Contact">
+    <div><div class="fs-19 fw-600">Claim a profile or book a placement</div><div class="fp-muted">support@beverified.org. Tell us the slot, the pages and the dates. Prices on request.</div></div>
+    <div class="cta-row"><a class="btn btn--primary" href="mailto:support@beverified.org?subject=Sponsored%20placement">Ask about placements</a><a class="btn btn--secondary" href="mailto:support@beverified.org?subject=Claim%20profile">Claim your profile</a></div>
   </section>
 </main>
