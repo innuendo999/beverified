@@ -680,6 +680,8 @@ a.ucc__card:hover { color: var(--ink); text-decoration: none; border-color: var(
 .fp-ex__fdghost .fd-price i { width: 48px; }
 .fp-ex .rv4-ad__btn, .fp-ex .btn { pointer-events: none; }
 .fp-policy-h { margin-top: 40px; }
+.fp-ex__cards { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 10px; }
+.fp-ex__cards i { display: block; height: 64px; border-radius: 12px; background: var(--surface); box-shadow: 0 0 0 1px var(--line-soft); }
 .fp-ex__split > * { min-width: 0; }
 @media (max-width: 860px) { .fp-slot { grid-template-columns: 1fr; gap: 20px; } .fp-ex__split { grid-template-columns: 1fr; } .fp-ex__split .fp-ex__ghost { display: none; } .fp-ex .fp-ex__wide { padding: 20px; } .fp-ex__body { padding: 14px; } .fp-num { width: 24px; height: 24px; font-size: 13px; } }
 .legacy-prose table { display: block; overflow-x: auto; }
