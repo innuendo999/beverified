@@ -1,16 +1,17 @@
-# News candidates, 2026-11-23
+# News candidates, 2026-11-24
 
-New this run: 3 kept (news 1, incident 1, record-check 0, research-check 1, digest 0), 109 skipped.
-Open candidates in total: 28.
+New this run: 4 kept (news 1, incident 2, record-check 0, research-check 0, digest 1), 163 skipped.
+Open candidates in total: 24.
 
 ## news
 
-- [Sri Lanka seeks Ukraine, Estonia, and Google expertise for digital ID plans](https://www.biometricupdate.com/202611/sri-lanka-seeks-ukraine-estonia-and-google-expertise-for-digital-id-plans) (Biometric Update, 2026-11-23) · find primary source
+- [Wultra-Led Consortium Secures Landmark Tender for Czech European Digital Identity Wallet](https://news.google.com/rss/articles/CBMiqwFBVV95cUxPWmNZVnJ3YWwwbHE2eUpQVUJMQkhWTWhUTm5pVk9OTDRGeEZtSldqY3Q5cjdHellhZC1rNDJsWmZYbThlZjFJaEhJZHIzWE9TTDJ2ckFyQk1FYnNwcm8xWHpSZVcwb3B5X0tPZGRUSEFPQzRPM21QOEVmQ19aZW5ETWxpcVU1OFFiUVctX0ZFQ1ZYZXQxSjNRVDM4Q1FrY3VrU1BpNHpLRnQxTG8?oc=5) (FF News, 2026-11-24) · find primary source
 
 ## incident
 
-- [Chainalysis Breach Exposes Password Hashes and Live Tokens](https://news.google.com/rss/articles/CBMilwFBVV95cUxOV2tESTBRTS0wQ2pBS3Q4UFl6S01PNndLbEhia3gxT2Roc0M0NlczVGlYWHQyZjJHeFBYVmt1ejRsUldGV2VmMmJkRVg0cVVPT0QxaXpfVHRIbkNVeXA3c2pmUzdRcjllSVlaYjVicFQzWlA5R3FYQldLVWh3bnJnQmUtRUpaN3lMZUM2VVFCNFFyWGphTGw0?oc=5) (eSecurity Planet, 2026-11-20) · find primary source
+- [Chainalysis traces billions stolen in Binance hack with its new AI tool](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1pb3hwc0Q4REU0cUU5QW9za1I1WlV4cEV3aF9jRTlzamZaS2JtY3J0M1pEcUtOcS1aTHotSU1YUzZjRWdBVktqS3I5T1B5djZJakxoNmxvZ084UQ?oc=5) (Cryptonews.net, 2026-11-24) · find primary source
+- [US: Former Equifax CEO apologizes for hack](https://news.google.com/rss/articles/CBMihwFBVV95cUxPZ2FuSTdjSWhKeHlFa1FMdDlIS3lIbm44OVpOY05ROExONHRBYndEZzFmWmlQQXJIZUtLLTlKSGlGS3BpendYLXNLS0NaVXEwd3BJWkM3OU1kMzlKcVFOc29YYXFVQVNaamRaWUdHdndfS1MwbEpNYi01dVVlWFplUU5wR2VhS0U?oc=5) (Yeni Safak English, 2026-11-22) · find primary source
 
-## research-check
+## digest
 
-- [Veriff Report Reveals Real IDs Behind Nearly Half of All BNPL Document Fraud](https://news.google.com/rss/articles/CBMiswFBVV95cUxNbWpUTWg2dU9wTWl2M1d2dzdoY1RhVllRYzZHLTVndHBhbENfaDNRekJYQVBPcGlFc3kxX3g0NzZiQTRpVGdZeEpjNDkyc0ZmdDRiWmJkQmhmVi1fbGFmZzUxODdLYjlJWFR1SjZDQ3lEamw1TGUwUmVZNjlLbS02dW9LZk9nbzNmUUxfMUNhSUcyaXhWbVMyNXBJVEd0YUlhTS1TQVZlRUljWlR0WGNsMUJQWQ?oc=5) (FF News, 2026-11-23) · find primary source
+- [Iran-related Designations](https://ofac.treasury.gov/recent-actions/20261123) (OFAC recent actions, 2026-11-23)
