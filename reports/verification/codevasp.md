@@ -19,4 +19,4 @@ Travel Rule **#9**, after WIDTH (both 3.4; placed below WIDTH as the newer entry
 
 - Plan note asked to check owners (Digital-X instead of Korbit), 350+ VASPs and 60 jurisdictions, ISO 27001: Digital X is Korbit's operator renamed under Mirae Asset (Korea Herald, Aug 2026); network size and ISO are vendor-stated.
 - Notabene and CryptoSwift links named only on CODE's homepage.
-- No logo yet.
+- Logo and wordmark: added from the owner's images on 2026-11-24.
