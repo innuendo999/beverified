@@ -8,8 +8,9 @@ seo:
   description: 'iProov review: face verification and liveness used by banks and governments, with FIDO Face certification, iBeta Level 2 letters and a UK DVS certified service. Pricing, pros & cons, alternatives.'
   h1: 'iProov Review 2026: Pricing, Features & Alternatives'
 logo:
-  src: null
-  background: null
+  src: /assets/img/logos/iproov.png
+  background: '#FFFFFF'
+  wordmark: /assets/img/wordmarks/iproov.png
 tagline: Face verification and liveness specialist used by banks and government digital identity programmes
 score: 3.4
 grade: Good
@@ -376,7 +377,7 @@ verification_notes:
 - 'Founded: about page says 2011 and "trading since 2013"; 2011 used.'
 - 'Pricing: G-Cloud figures are iProov''s own public sector offers on the UK marketplace, labelled third_party per verification-spec. A competitor page (Didit) mentions a $500 monthly minimum and a 2024 credential exposure; neither confirmed, not used.'
 - 'Coverage: no country or document count published, so the Coverage criterion is not scored and its weight is shared out.'
-- 'No logo file yet: ask the owner.'
+- 'Logo tile and wordmark from the owner''s images (2026-11-24).'
 - 'Incidents: none found in searches on 2026-11-24.'
 application_category: Identity Verification Software
 author: andrii-klymenko

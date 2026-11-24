@@ -24,4 +24,4 @@ v3.1, liveness scope: **3.4 (Good)**, unrounded 3.412, 85% of weight scored (no 
 
 - Confirmed: iBeta Level 2 (iBeta list), FIDO Face Verification Level 1 certificate (opened), UK DVS entry (opened).
 - Vendor-stated: CEN/TS 18099 High injection test (press release; Ingenium publishes no results), SOC 2, ISO 27001, CSA STAR 2, eIDAS / ETSI TS 119 461 (TÜV Austria).
-- No logo yet.
+- Logo and wordmark: added from the owner's images on 2026-11-24.
