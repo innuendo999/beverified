@@ -3,8 +3,14 @@
 // category URLs from src/_data/categories, top 3 per ranking from rankings.yml (order = rank),
 // provider name, logo and tagline from src/_data/providers. Posts are added in the template
 // from collections.articles. A key or slug that does not resolve is dropped, never invented.
+// Menu v2 (owner, 2026-11-24): the Rankings preview lists the top 3 with real rank, award and the score that ranking
+// sorts on, plus the ranking's sponsored row (placements.yml surface: ranking, only with menu: true). Providers in v3.promoHide are left out
+// of the preview but keep everyone else's real rank. Reviews and Blog panels get one sponsored slot each
+// (surface: menu-reviews, menu-blog); rules in src/_lib/placements.js.
 import fs from "node:fs";
 import yaml from "js-yaml";
+import { rankingSponsor, menuReviewsSponsor, menuBlogSponsor } from "../_lib/placements.js";
+import { articleIndex } from "../_lib/article-index.js";
 
 const read = (rel) => new URL(rel, import.meta.url);
 const loadDir = (rel, keyOf) => {
@@ -24,35 +30,49 @@ export default function () {
   const cats = loadDir("./categories/", (f, c) => c.slug);
   const provs = loadDir("./providers/", (f) => f.replace(/\.yml$/, ""));
   // Tile colour and fit per logo, measured by scripts/menu-logo-tiles.py
+  const placements = yaml.load(fs.readFileSync(read("./placements.yml"), "utf8")) || [];
+  const ctx = { rankings, providers: provs };
+  const pageScore = (c, slug) => { const p = provs[slug]; return (c?.score_source === "category" ? p?.category_scores?.[c.slug]?.score : p?.score) ?? null; };
   const tiles = fs.existsSync(read("./logoTiles.json")) ? JSON.parse(fs.readFileSync(read("./logoTiles.json"), "utf8")) : {};
 
   const card = (slug) => {
     const p = provs[slug];
     if (!p || p.status === "draft") return null;
     const logo = p.logo || {};
-    return { slug, name: p.name, href: `/providers/${slug}/`, tagline: p.tagline || "",
+    return { slug, name: p.name, href: `/providers/${slug}/`, tagline: p.tagline || "", score: p.score ?? null,
       logo: logo.src || null, wordmark: logo.wordmark || null,
       bg: tiles[slug]?.bg || "#FFFFFF", fit: tiles[slug]?.fit || "contain" };
   };
   const anchor = (key) => key.replace(/[^a-z0-9]+/g, "-");
 
   const groups = menu.rankings.groups.map((g) => ({
-    title: g.title,
+    title: g.title, col: g.col || 1,
     items: g.items.map(([key, label]) => {
       const c = cats[key];
       if (!c) return null;
-      const top = (rankings[key]?.providers || []).filter((r) => !hide.includes(r.slug)).slice(0, 3).map((r) => (r.slug ? card(r.slug) : null) || { name: r.name });
-      return { key, id: anchor(key), label, href: c.url, top, on: key === menu.rankings.preview };
+      const top = (rankings[key]?.providers || []).slice(0, 3)
+        .map((r, i) => ({ r, rank: i + 1 })).filter(({ r }) => !hide.includes(r.slug))
+        .map(({ r, rank }) => ({ ...((r.slug ? card(r.slug) : null) || { name: r.name }), rank, award: r.award || "", score: r.slug ? pageScore(c, r.slug) : null }));
+      const s = rankingSponsor(placements, ctx, key);
+      // Shown in the menu only when the booking says so (menu: true on the surface: ranking entry, owner decision per deal).
+      const sponsor = s && s.menu && !hide.includes(s.slug) ? { ...card(s.slug), rank: s.rank, score: pageScore(c, s.slug), url: s.provider.link.url } : null;
+      const mrz = ["RANKING", label, ...top.map((p) => p.name)].join(" ");
+      return { key, id: anchor(key), label, href: c.url, top, sponsor, mrz, scoreLabel: c.score_label || "Score", on: key === menu.rankings.preview };
     }).filter(Boolean),
   }));
   const regions = menu.rankings.regions.map(([key, label]) => (cats[key] ? { label, href: cats[key].url } : null)).filter(Boolean);
 
   const r = menu.reviews;
+  const rs = menuReviewsSponsor(placements, { ...ctx, mostRead: r.mostRead });
+  const bs = menuBlogSponsor(placements, { articles: articleIndex(new URL("../", import.meta.url).pathname) });
+  const rsCat = rs ? cats[rs.category] : null;
+  const labels = Object.fromEntries(menu.rankings.groups.flatMap((g) => g.items));
   return {
     rankings: { ...menu.rankings, groups, regions },
     reviews: { ...r,
       mostRead: r.mostRead.map(card).filter(Boolean),
-      alternatives: r.alternatives.map(card).filter(Boolean) },
-    blog: menu.blog,
+      alternatives: r.alternatives.map(card).filter(Boolean),
+      sponsor: rs ? { ...card(rs.slug), rank: rs.rank, ranking: labels[rs.category] || rsCat?.title || rs.category, rankingHref: rsCat?.url, url: rs.provider.link.url } : null },
+    blog: { ...menu.blog, sponsor: bs },
   };
 }
