@@ -1765,6 +1765,23 @@ travel-rule:
     legacy_price_shown: On request
     legacy_rating_shown: null
     segments: []
+  - slug: codevasp
+    name: CODE
+    award: Best for Korean Exchanges
+    tagline: Korean Travel Rule network set up by Bithumb, Coinone and Korbit, with links to Sumsub, GTR, VerifyVASP and Sygna.
+    coverage: Korea-led; 350+ VASPs in 60 jurisdictions (vendor-stated)
+    size: Exchanges and custodians
+    pros:
+    - Main Travel Rule route to Korean exchanges such as Bithumb, Coinone and Digital X
+    - Sumsub confirms CODE as a bridge; CODE documents links to GTR, VerifyVASP and Sygna
+    - Public developer docs, a sandbox and VASP lookup by transaction ID
+    cons:
+    - No TRUST, TRISA or TRP route; the VerifyVASP link covers Korean domestic transfers only
+    - No published prices, and no certificate published for its ISO claims
+    - Shareholders have changed and the current split is not disclosed
+    legacy_price_shown: On request
+    legacy_rating_shown: null
+    segments: []
   - slug: ledgerbrain
     name: LedgerBrain
     award: null   # owner to choose; proposed "Best for Screening-First Teams"
