@@ -261,6 +261,12 @@ layout: v3.njk
   </ol>
 </section>
 
+<section id="latest" class="container home-section" aria-labelledby="la-h">
+  <div class="section-head"><div><h2 id="la-h" class="h-plain">Latest articles</h2><p class="section-sub">News, guides and research, newest first.</p></div><a class="section-link" href="/blog/">All articles →</a></div>
+  {#- Newest 3 from collections.articles (guide, news, publications, compare; sorted by published date in eleventy.config.js). Same card as the blog. -#}
+  <div class="grid-3 post-grid">{% for a in collections.articles %}{% if loop.index <= 3 %}{% include "v3/post-card.njk" %}{% endif %}{% endfor %}</div>
+</section>
+
 <section id="faq" class="container home-section home-uc" aria-labelledby="faq-h">
   <div class="home-uc__intro"><h2 id="faq-h" class="h-plain">Questions buyers ask</h2></div>
   <div class="faq">{% for f in faqs %}<details{% if loop.first %} open{% endif %}><summary><h3>{{ f.q }}</h3></summary><p>{{ f.a }}</p></details>{% endfor %}</div>
