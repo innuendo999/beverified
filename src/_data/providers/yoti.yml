@@ -90,6 +90,7 @@ pricing:
     kind: official
     source: 2
     verified: '2026-11'
+  index_exclude: 'Its published figures are for age-only checks, reuse of the Yoti Digital ID and AML screening; document and selfie identity verification is quoted on request'
   model:
     published: core
     minimum: true
