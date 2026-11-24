@@ -1,0 +1,449 @@
+slug: middesk
+name: Middesk
+alternate_names:
+- Middesk, Inc.
+status: published
+seo:
+  title: 'Middesk Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Middesk review: US business verification (KYB) across all 50 states and DC, with TIN matching, owner checks, OFAC screening and monitoring. Pricing, pros & cons, alternatives.'
+  h1: 'Middesk Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/middesk.png
+  background: '#A8FF1C'
+  wordmark: /assets/img/wordmarks/middesk.png
+tagline: US business verification across every Secretary of State, with TIN matching, owner checks and ongoing monitoring
+score: 3.1
+grade: Good
+methodology: v3.1
+primary_category: kyb
+categories:
+- kyb
+link:
+  url: https://www.middesk.com
+  type: none
+last_verified: '2026-11-24'
+updated: '2026-11-24'   # last content edit; last_verified = last fact re-check
+verdict: 'Middesk suits US fintechs, banks, lenders and payment platforms that onboard US businesses at volume. One API call searches every Secretary of State in the 50 states and DC, matches the TIN with the IRS, lists owners and officers and screens OFAC lists, and monitoring sends webhooks when a record changes. International verification started with 30 countries and needs the Verify plan. Prices are not published, and the SOC 2 Type II report is shared through its trust center.'
+what_is:
+- Middesk is a San Francisco and New York business identity company that went through Y Combinator in Winter 2019. Its founders, CEO Kyle Mack and CTO Kurt Ruppel, worked at Checkr before starting it. It raised a $4 million seed round led by Accel with Sequoia and Y Combinator in September 2019, and a $57 million Series B co-led by Insight Partners and Canapi Ventures in June 2022. Its about page reports more than 600 customers and 135 staff.
+- Middesk builds one profile per business from more than 400 government and other sources, according to its platform page. Products cover business verification (KYB), fraud models and AI agents for reviews, underwriting searches (liens, UCC, bankruptcies), monitoring, and state tax registration for payroll. Logos on its homepage include Toast, Mercury, Brex, Ramp, Plaid, Rippling, Gusto and Shopify.
+features:
+- Secretary of State search across all 50 states and DC with every business verification, with registration status summarised in review tasks.
+- IRS TIN and name match, plus name and address verification.
+- Owners and officers list researched for each business; people you submit are checked against it.
+- OFAC screening on eight lists by default, with an enhanced screening option that adds PEP lists and thousands of other watchlists.
+- Articles of incorporation, good standing certificates and UCC filings retrieved from government sources.
+- Monitoring with webhooks for registration, watchlist, bankruptcy and TIN changes.
+- Website analysis and industry classification with NAICS, SIC and MCC codes for merchant onboarding.
+- KYC on associated people through Socure, as a separate module.
+- International business verification in 30 countries across Canada, Europe and APAC, on the Verify plan.
+pricing:
+  summary: Middesk does not publish prices. Its business onboarding pricing page asks for monthly volume and routes buyers to sales. Vendr, a third party, reports that buyers with 1,000 to 5,000 requests a month often pay $2 to $5 per verification.
+  plans:
+  - tier: Custom Quote
+    price: Custom
+    note: Business verification packages, priced by volume
+    extra: Not publicly disclosed; contact sales
+  legacy_verified_note: null
+  verified: '2026-11'
+  items:
+  - label: Published prices
+    value: Not published on middesk.com; quoted by sales
+    kind: official
+    source: 4
+    verified: '2026-11'
+  - label: Business verification (Vendr estimate, 1,000 to 5,000 requests a month)
+    value: $2 to $5 per verification
+    kind: third_party
+    source: 25
+    verified: '2026-11'
+  model:
+    published: none
+    minimum: false
+    trial: false
+    source: 4
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: guides and API reference open without login
+    source: 18
+  sdk_web:
+    status: not_disclosed
+    note: REST API only; document capture SDK belongs to Socure
+  sdk_ios:
+    status: not_disclosed
+    note: no Middesk mobile SDK found
+  sdk_android:
+    status: not_disclosed
+    note: no Middesk mobile SDK found
+  sandbox:
+    status: partial
+    note: sandbox key in the Dashboard; self-serve sign-up not stated
+    source: 15
+  no_code:
+    status: partial
+    note: Dashboard to create businesses and turn on monitoring; verification by API
+    source: 11
+  support_hours:
+    status: partial
+    note: support email, no hours published
+    source: 18
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 31
+    note: US (50 states and DC) plus 30 countries in Canada, Europe and APAC
+    source: 6
+  document_types:
+    value: null
+    note: no identity document checks of its own
+  non_doc:
+    status: add_on
+    note: PII checks on associated people through Socure
+    source: 10
+track_record:
+  ownership:
+    status: stable
+    note: independent, venture backed, no sale found
+    source: 19
+facts:
+- label: From
+  value: Not publicly disclosed
+- label: Founded
+  value: '2019'
+  source: 22
+  evidence: vendor
+- label: HQ
+  value: San Francisco and New York, US
+  source: 22
+  evidence: vendor
+- label: Funding
+  value: $57M Series B (June 2022, co-led by Insight Partners and Canapi Ventures)
+  source: 19
+  evidence: vendor
+- label: Regions
+  value: US (50 states and DC); 30 countries in Canada, Europe and APAC on the Verify plan
+  source: 6
+  evidence: vendor
+- label: Data sources
+  value: 400+ government and other sources
+  source: 2
+  evidence: vendor
+- label: Customers
+  value: 600+ (vendor count)
+  source: 3
+  evidence: vendor
+- label: Certifications
+  value: SOC 2 Type II (vendor-stated)
+  source: 16
+  evidence: vendor
+pros:
+- Searches every US Secretary of State (50 states and DC) and matches the TIN with the IRS in one verification
+- Pulls formation documents and good standing certificates from government sources, and sends webhooks when registrations, watchlist results, bankruptcies or TINs change
+- Covers merchant onboarding checks too, with website analysis and NAICS, SIC and MCC industry codes
+cons:
+- No published prices; every plan is quoted by sales
+- International verification is new, starts with 30 countries on the Verify plan only, and the country list is not published
+- KYC on owners runs through Socure as a separate module, so document and selfie checks are not Middesk's own
+alternatives:
+- slug: enigma
+  name: Enigma
+  best_for: US KYB with a Published Rate Card
+- slug: trulioo
+  name: Trulioo
+  best_for: Best for Global Registry Reach
+- slug: persona
+  name: Persona
+  best_for: KYC plus KYB in One Workflow
+choose_instead:
+- slug: enigma
+  need: US KYB with public prices
+  text: you want US business verification by API with a published per-match price list and no charge when a search finds no match.
+- slug: trulioo
+  need: Business verification outside the US
+  text: you need business verification across many countries from one vendor.
+- slug: persona
+  need: KYB and person checks in one flow
+  text: you want KYB and individual identity verification with document and selfie checks in one no-code workflow.
+user_reviews:
+  legacy_note: null
+  praise: []
+  criticize: []
+  by_profile:
+  - US fintechs, banks, lenders and payment platforms onboarding US businesses at volume are Middesk's core fit.
+  - Payroll and HR platforms can also use its state tax registration product for their customers.
+  - Teams onboarding many businesses outside Canada, Europe and APAC will need a second KYB vendor.
+faq:
+- q: How much does Middesk cost?
+  a: Middesk does not publish prices. Its pricing page asks for your monthly onboarding volume and routes you to sales. Vendr, a third party, reports that buyers with 1,000 to 5,000 requests a month often pay $2 to $5 per verification.
+- q: Does Middesk verify businesses outside the US?
+  a: Yes, but coverage is new. Middesk's International Business Verification started with 30 countries across Canada, Europe and APAC, on the Verify plan, and returns registrations in the same format as US Secretary of State data. Middesk calls it phase one and does not publish the country list.
+- q: Does Middesk provide beneficial ownership (UBO) data?
+  a: Partly. Middesk researches an aggregate list of owners, officers and registered agents for each business from multiple sources, and checks the people you submit against it. Its documentation does not describe a separate beneficial owner register output.
+- q: Which sanctions lists does Middesk screen?
+  a: By default Middesk screens businesses against eight OFAC lists, including the SDN list, and pulls them from government sources daily. Enhanced screening adds PEP lists and 5,704 more sources, such as international sanctions lists, regulatory exclusions and law enforcement lists.
+- q: Does Middesk monitor businesses after onboarding?
+  a: Yes. Middesk monitoring sends webhook events and email notifications when a business's registrations, watchlist results, bankruptcies or TIN records change. It can be turned on per business, for all businesses or by policy. The documentation does not state how often changes are checked.
+- q: Is Middesk SOC 2 certified?
+  a: Middesk says it undergoes annual SOC 2 Type II audits by an independent third party and shares the report through its trust center. We have not seen the report, so we list it as vendor-stated.
+- q: What is the best alternative to Middesk?
+  a: Enigma is the closest alternative for US KYB with a published price list. Trulioo fits teams that need business verification in many countries.
+segments: []
+capabilities:
+  checked: '2026-11'
+  kyb_registry:
+    status: 'yes'
+    note: all 50 states and DC; 30 countries on the Verify plan
+    source: 5
+  kyb_ubo:
+    status: 'yes'
+    note: owners and officers list from multiple sources
+    source: 8
+  kyb_entity_screening:
+    status: 'yes'
+    note: OFAC lists by default; PEP in enhanced screening
+    source: 9
+  kyb_monitoring:
+    status: 'yes'
+    note: webhooks for registration, watchlist, bankruptcy and TIN changes
+    source: 11
+  kyb_documents:
+    status: 'yes'
+    note: filings retrieved from government sources
+    source: 12
+  kyb_pricing:
+    status: 'no'
+    note: quoted by sales
+    source: 4
+  kyb_website_check:
+    status: 'yes'
+    note: website content, domain age, policies, risky keywords
+    source: 13
+    checked: '2026-11'
+  kyb_industry_class:
+    status: 'yes'
+    note: NAICS, SIC and MCC from name, address or website
+    source: 14
+    checked: '2026-11'
+  kyb_match_vmss:
+    status: not_disclosed
+    note: not found in public docs
+    checked: '2026-11'
+  kyb_card_data:
+    status: not_disclosed
+    note: not found in public docs
+    checked: '2026-11'
+  identity_verification:
+    status: add_on
+    note: KYC on associated people through Socure
+    source: 10
+  liveness:
+    status: not_disclosed
+    note: no liveness product of its own found
+  injection_detection:
+    status: not_disclosed
+    note: no liveness product of its own found
+  reusable_id:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  data_residency:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  sanctions_pep:
+    status: 'yes'
+    note: OFAC by default; PEP and global lists in enhanced screening
+    source: 9
+  adverse_media:
+    status: add_on
+    note: separate adverse media order
+    source: 23
+  ongoing_monitoring:
+    status: 'yes'
+    note: watchlist result changes sent by webhook
+    source: 11
+  transaction_monitoring:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  case_management:
+    status: 'yes'
+    note: review tasks, edge cases routed to human reviewers
+    source: 2
+  video_ident:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  deployment:
+    status: cloud
+    note: hosted API and Dashboard
+    source: 2
+certifications:
+- name: SOC 2 Type II
+  program: soc2
+  what: Security, availability and confidentiality controls
+  status: vendor_stated
+  source: 16
+user_ratings: []
+use_case_verdicts: []
+score_breakdown:
+- criterion: "Fraud defense"
+  weight: 25
+  score: 4
+  note: "KYB guide"
+  evidence: vendor
+- criterion: "Pricing and total cost"
+  weight: 20
+  score: 2
+  note: "no published price, quoted by sales"
+  evidence: vendor
+- criterion: "Coverage"
+  weight: 15
+  score: 2
+  note: "31 countries and territories, checks without a document"
+  evidence: vendor
+- criterion: "Platform breadth"
+  weight: 15
+  score: 5
+  note: "5 of 5 kyb modules: registry checks, UBO discovery, entity screening, ongoing monitoring, company documents"
+  evidence: vendor
+- criterion: "Integration and time to launch"
+  weight: 15
+  score: 2
+  note: "public API docs"
+  evidence: vendor
+- criterion: "Trust and track record"
+  weight: 10
+  score: 3
+  note: "ISO 27001 or SOC 2 vendor-stated, operating since 2019"
+  evidence: vendor
+hands_on: null
+sources:
+- title: Middesk homepage
+  publisher: Middesk
+  url: https://www.middesk.com/
+  accessed: '2026-11'
+- title: Platform
+  publisher: Middesk
+  url: https://www.middesk.com/platform
+  accessed: '2026-11'
+- title: About
+  publisher: Middesk
+  url: https://www.middesk.com/about
+  accessed: '2026-11'
+- title: 'Pricing: business onboarding'
+  publisher: Middesk
+  url: https://middesk.com/pricing/business-onboarding
+  accessed: '2026-11'
+- title: Secretary of State registration verification
+  publisher: Middesk
+  url: https://docs.middesk.com/verify-business/registration
+  accessed: '2026-11'
+- title: International Business Verification is live
+  publisher: Middesk
+  url: https://www.middesk.com/product-releases/international-business-verification-is-live
+  accessed: '2026-11'
+- title: Verify international businesses
+  publisher: Middesk
+  url: https://docs.middesk.com/verify-business/international
+  accessed: '2026-11'
+- title: Verify owners and officers
+  publisher: Middesk
+  url: https://docs.middesk.com/verify-business/owners-officers
+  accessed: '2026-11'
+- title: Screen for sanctions
+  publisher: Middesk
+  url: https://docs.middesk.com/verify-business/sanctions
+  accessed: '2026-11'
+- title: Implement KYC
+  publisher: Middesk
+  url: https://docs.middesk.com/verify-business/kyc
+  accessed: '2026-11'
+- title: How monitoring works
+  publisher: Middesk
+  url: https://docs.middesk.com/monitor-activity/how-monitoring-works
+  accessed: '2026-11'
+- title: Document object
+  publisher: Middesk
+  url: https://docs.middesk.com/reference/document
+  accessed: '2026-11'
+- title: Analyze web presence
+  publisher: Middesk
+  url: https://docs.middesk.com/online-presence/web-presence
+  accessed: '2026-11'
+- title: Verify business industry classification
+  publisher: Middesk
+  url: https://docs.middesk.com/online-presence/industry-classification
+  accessed: '2026-11'
+- title: Use the sandbox and production environments
+  publisher: Middesk
+  url: https://docs.middesk.com/environments
+  accessed: '2026-11'
+- title: Security certifications, frameworks, and principles
+  publisher: Middesk
+  url: https://docs.middesk.com/security/certifications-principles
+  accessed: '2026-11'
+- title: Security at Middesk
+  publisher: Middesk
+  url: https://middesk.com/security
+  accessed: '2026-11'
+- title: Middesk documentation
+  publisher: Middesk
+  url: https://docs.middesk.com/
+  accessed: '2026-11'
+- title: Announcing our $57M Series B
+  publisher: Middesk
+  url: https://www.middesk.com/blog/announcing-our-57m-series-b
+  accessed: '2026-11'
+- title: "Middesk's Next Chapter"
+  publisher: Middesk
+  url: https://www.middesk.com/blog/middesks-next-chapter
+  accessed: '2026-11'
+- title: Middesk company profile
+  publisher: Y Combinator
+  url: https://www.ycombinator.com/companies/middesk
+  accessed: '2026-11'
+- title: Middesk llms.txt
+  publisher: Middesk
+  url: https://www.middesk.com/llms.txt
+  accessed: '2026-11'
+- title: Search for adverse media
+  publisher: Middesk
+  url: https://docs.middesk.com/verify-business/adverse-media
+  accessed: '2026-11'
+- title: 'Changelog: International Business Verification added (10 Aug 2026)'
+  publisher: Middesk
+  url: https://docs.middesk.com/guides/get-started/changelog/2026/8/10
+  accessed: '2026-11'
+- title: Middesk pricing
+  publisher: Vendr
+  url: https://www.vendr.com/marketplace/middesk
+  accessed: '2026-11'
+- title: Accel and Sequoia seed Middesk with $4M to background check businesses
+  publisher: TechCrunch
+  url: https://techcrunch.com/2019/09/12/middesk
+  accessed: '2026-11'
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://www.middesk.com
+  - https://www.ycombinator.com/companies/middesk
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- 'link.type set to none: no commercial relationship with Middesk is recorded.'
+- 'Founded: Middesk''s own llms.txt (source 22) and Y Combinator (source 21) say 2019; Crunchbase and some profiles say 2018 (co-founded before the YC W19 batch). 2019 used.'
+- 'Funding: vendor blog posts give the $4M seed (Sept 2019, source 20) and $57M Series B (June 2022, source 19). Third-party profiles give $77M total and a $16M Series A (Mar 2021); not used in copy.'
+- 'International coverage: the release (source 6) and docs (source 7) say 30 countries in phase one and name only Canada, the UK and Singapore as examples; the homepage teaser mentions 65+ countries including Latin America, which no release or docs page confirms. 30 used. Release has no date; the docs changelog dates the API change 10 Aug 2026 (source 24). Available on the Verify plan; access through sales.'
+- 'UBO: docs describe an aggregate list of owners, officers and registered agents "from multiple sources" and validation of submitted beneficial owners; no FinCEN BOI or register source named. kyb_ubo yes with that note, as for Enigma.'
+- 'Sanctions: eight OFAC lists by default, pulled daily at 3:00 AM PT (source 9). Enhanced screening adds 5,704 sources incl. PEP; no update schedule stated for those. Docs do not describe periodic re-screening; monitoring docs list watchlist_result.created/updated webhook events (source 11).'
+- 'SOC 2 Type II: docs (source 16) say annual audits by an independent third party, report in the trust center; auditor and period not seen. vendor_stated. No ISO/IEC 27001 claim found.'
+- 'Sandbox: environments docs say sandbox keys come from the Dashboard; whether a Dashboard account is self-serve is not stated. xpay.sh notes a self-serve dashboard but production through sales; not used.'
+- 'Pricing: middesk.com/pricing returned an error; /pricing/business-onboarding shows packages without figures and a contact form. G2 and TrustRadius list no prices. Vendr range (source 25) labelled third-party; Vendr does not say how the range was built.'
+- 'User ratings: G2 not readable by our tools; a TrustRadius snippet shows 8.9 out of 10 without a review count. Not recorded.'
+- 'Vendor performance figures not used: 7M businesses verified a year, 150K a week, 92% of records updated in under 10 days, 10% of new US businesses verified within 90 days, Rho case study figures.'
+- 'Logo tile and wordmark from the owner''s images (2026-11-24).'
+- 'Incidents: none found in searches on 2026-11-24.'
+application_category: Identity Verification Software
+author: andrii-klymenko
+directory_categories:
+- KYB

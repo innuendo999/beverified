@@ -1302,22 +1302,22 @@ kyb:
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.5
     segments: []
-  - slug: trulioo
-    name: Trulioo
-    award: Best for Global Registry Reach
-    tagline: KYB on 700M+ business entities from hundreds of government registries, with UBO Discovery where registries fall short, per Trulioo.
-    coverage: Hundreds of government registries
-    size: Enterprise
+  - slug: middesk
+    name: Middesk
+    award: Best for US KYB with Monitoring
+    tagline: US business verification across every Secretary of State, with IRS TIN matching, owner checks, OFAC screening and change alerts by webhook.
+    coverage: US (50 states and DC); 30 countries on the Verify plan
+    size: null
     pros:
-    - UBO Discovery fills ownership gaps where registries fall short
-    - Business sanctions and adverse media screening, plus reverification and perpetual monitoring
-    - Credit decisioning added to its KYB product in November 2025
+    - Searches every US Secretary of State (50 states and DC) and matches the TIN with the IRS in one verification
+    - Pulls formation documents from government sources and sends webhooks when registrations, watchlist results, bankruptcies or TINs change
+    - Website analysis and NAICS, SIC and MCC codes for merchant onboarding
     cons:
-    - No published pricing; rates are quoted on request
-    - Registry document retrieval varies by country
-    - Needs meaningful technical resources to integrate its data-API model
+    - No published pricing; plans are quoted by sales
+    - International verification is new, starts with 30 countries and needs the Verify plan
+    - KYC on owners runs through Socure as a separate module
     legacy_price_shown: Custom pricing
-    legacy_rating_shown: 4.5
+    legacy_rating_shown: null
     segments: []
 liveness-detection:
   title: Best Liveness Detection Providers in 2026
@@ -2547,23 +2547,6 @@ know-your-agent:
     - Not yet reviewed by BeVerified, so it has no score
     - Paid prices are not listed on its KYA page
     - Detection on its own blocks nothing; enforcement is set up separately
-    legacy_price_shown: null
-    legacy_rating_shown: null
-    segments: []
-  - slug: null
-    name: Prove
-    award: null
-    tagline: Prove Verified Agent links people and businesses in the Prove Identity Graph to the agents acting for them.
-    coverage: null
-    size: null
-    pros:
-    - Identity-bound tokens link the verified person, the agent and the credential
-    - Session-level authorization limits, with each interaction co-signed by user and merchant keys
-    - A trust registry of agent publishers, merchants and payment networks
-    cons:
-    - Not yet reviewed by BeVerified, so it has no score
-    - The launch release gives no availability dates, regions or pricing
-    - Supports only AP2 at launch
     legacy_price_shown: null
     legacy_rating_shown: null
     segments: []

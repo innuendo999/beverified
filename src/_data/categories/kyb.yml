@@ -7,7 +7,7 @@ seo:
 breadcrumb_label: Best KYB Solution Providers
 quick_answer: 'Shufti Pro is our top KYB pick: registry checks, UBO discovery, screening and ongoing monitoring sit next to its identity checks, on published plans. Sumsub is the strongest alternative, with registry coverage in 200+ countries and territories and UBO verification. We compared 10 providers on registries, UBOs, screening, monitoring and pricing.'
 last_verified: '2026-10-18'
-updated: '2026-11-05'
+updated: '2026-11-24'
 legacy_stats:
 - value: '7'
   label: providers compared
@@ -63,7 +63,7 @@ faq:
 - q: 'How long does a KYB check take?'
   a: 'There is no standard time for a KYB check, and our reviews do not list a verified KYB completion time for any provider in this ranking. Time depends mostly on the company: a single-layer business with an online registry record is the simple case, while foreign holding companies, trusts, registries without online access, missing documents and screening hits all add manual review. Ask vendors for times measured on your own customer mix.'
 - q: 'What is perpetual KYB?'
-  a: 'Perpetual KYB is ongoing monitoring of business customers: the provider watches registry status, directors, ownership and screening results and raises an alert when something changes, instead of waiting for a scheduled review. In this ranking, iDenfy sells a product called Perpetual KYB, Trulioo offers perpetual monitoring, Shufti Pro sends webhooks on registry and director changes, and Sumsub runs risk-based rechecks.'
+  a: 'Perpetual KYB is ongoing monitoring of business customers: the provider watches registry status, directors, ownership and screening results and raises an alert when something changes, instead of waiting for a scheduled review. In this ranking, iDenfy sells a product called Perpetual KYB, Middesk sends webhooks when registrations, watchlist results, bankruptcies or TINs change, Shufti Pro sends webhooks on registry and director changes, and Sumsub runs risk-based rechecks.'
 - q: 'Which KYB providers publish their prices?'
   a: 'Few do. KYCAID lists a company check at €10 on its module price list, which carries a €100 monthly service fee, and Enigma charges $1.50 or $2.50 per US business match, with no charge when nothing matches. Zyphe prices an AI agent''s company and UBO review at $3.00 but does not list KYB itself. Vespia''s homepage still showed reports from €35 on 22 October 2026, but Veriff, which bought Vespia, quotes KYB on request. Shufti Pro includes KYB in its Essentials plan without a separate price, and the other providers in this ranking quote on request.'
 - q: 'Which KYB providers cover only the US?'

@@ -1,0 +1,487 @@
+slug: prove
+name: Prove
+alternate_names:
+- Prove Identity, Inc.
+- Payfone
+status: published
+seo:
+  title: 'Prove Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'Prove review: phone-centric identity verification with Pre-Fill, possession checks and PEP and sanctions screening, plus the Verified Agent product. Pricing, pros & cons, alternatives.'
+  h1: 'Prove Review 2026: Pricing, Features & Alternatives'
+logo:
+  src: /assets/img/logos/prove.png
+  background: '#FFFFFF'
+  wordmark: /assets/img/wordmarks/prove.png
+tagline: Phone-centric identity verification that checks possession of a phone number and pre-fills identity data
+score: 2.4
+grade: Fair
+methodology: v3.1
+primary_category: identity-verification
+categories:
+- identity-verification
+link:
+  url: https://www.prove.com
+  type: none
+last_verified: '2026-11-24'
+updated: '2026-11-24'   # last content edit; last_verified = last fact re-check
+verdict: 'Prove suits US banks, fintechs, gaming operators and marketplaces that want to verify and re-authenticate customers through their phone number, with few extra steps for the user. It checks that the user holds the phone, links the number to identity data in its identity graph, pre-fills the sign-up form and screens PEP and sanctions lists. It runs no document, selfie or liveness checks today, so flows that need them need a second vendor. Prices are not published.'
+what_is:
+- Prove Identity is a New York company founded in 2008 as Payfone. It renamed itself Prove in July 2020, when it announced a $100 million investment and bought the mobile authentication business of Early Warning Services. In January 2025 it acquired Portabl, a reusable digital ID start-up. Its homepage says more than 2,000 companies use it, including 19 of the 20 top banks.
+- Prove's products start from the phone number. Pre-Fill checks possession of the phone (Mobile Auth, Instant Link or a one-time code) and returns verified identity data to fill in a form; Prove Identity and Account Opening match identity data and screen it; Unified Authentication re-authenticates returning users; Verified User shows a trusted status that platforms can reuse. Prove says its network covers more than 200 countries and regions. In June 2026 it announced biometric products with liveness and document checks as in development.
+features:
+- Pre-Fill returns verified name, address and other identity data after a phone possession check, so users type less at sign-up.
+- Possession checks through Mobile Auth (silent network check), Instant Link and SMS one-time codes.
+- Prove Identity screens applicants against PEP and sanctions lists for CIP and AML programmes.
+- Pre-Fill for Business links an individual applicant to a business and checks business entities and EIN/TIN.
+- Unified Authentication re-authenticates returning users by phone and device keys.
+- Verified User gives platforms a reusable verified status for their users.
+- Human Assurance classifies accounts as human, bot or uncertain from phone and identity graph signals.
+- Verified Agent ties an AI agent to a verified person and logs each agent action with signed consent records.
+pricing:
+  summary: Prove does not publish prices. Its pricing page links only to sales, and the free developer portal gives sandbox access without a contract.
+  plans:
+  - tier: Custom Quote
+    price: Custom
+    note: Priced per product and volume
+    extra: Not publicly disclosed; contact sales
+  legacy_verified_note: null
+  verified: '2026-11'
+  items:
+  - label: Published prices
+    value: Not published on prove.com; quoted by sales
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: Developer sandbox
+    value: Free with a company email address, no credit card
+    kind: official
+    source: 15
+    verified: '2026-11'
+  model:
+    published: none
+    minimum: false
+    trial: false
+    source: 2
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: partial
+    note: changelog public; most guides ask for a portal login
+    source: 17
+  sdk_web:
+    status: 'yes'
+    note: Web SDK
+    source: 16
+  sdk_ios:
+    status: 'yes'
+    note: iOS SDK
+    source: 16
+  sdk_android:
+    status: 'yes'
+    note: Android SDK
+    source: 16
+  sandbox:
+    status: 'yes'
+    note: free developer portal with sandbox test users
+    source: 15
+  no_code:
+    status: not_disclosed
+    note: no no-code builder or hosted flow found
+  support_hours:
+    status: not_disclosed
+    note: no support hours published
+coverage:
+  checked: '2026-11'
+  countries:
+    value: 200
+    note: countries and regions covered by its phone network (vendor)
+    source: 13
+  document_types:
+    value: null
+    note: no document checks today
+  non_doc:
+    status: 'yes'
+    note: phone possession and identity data checks without a document
+    source: 6
+track_record:
+  ownership:
+    status: stable
+    note: independent, venture backed, renamed from Payfone in 2020
+    source: 4
+facts:
+- label: From
+  value: Not publicly disclosed
+- label: Founded
+  value: '2008'
+  source: 3
+  evidence: vendor
+- label: HQ
+  value: New York, US
+  source: 11
+  evidence: vendor
+- label: Former name
+  value: Payfone (renamed Prove in July 2020)
+  source: 4
+  evidence: vendor
+- label: Funding
+  value: $100M investment announced with the 2020 rebrand
+  source: 4
+  evidence: vendor
+- label: Regions
+  value: 200+ countries and regions (vendor); product pages list the US, Canada, the UK, Australia, France, Germany, Brazil and others
+  source: 13
+  evidence: vendor
+- label: Customers
+  value: 2,000+ companies, including 19 of the 20 top banks (vendor)
+  source: 1
+  evidence: vendor
+- label: Certifications
+  value: Not publicly disclosed
+pros:
+- Verifies people from a phone number and a few inputs, with possession checks and pre-filled identity data, so many users skip a document upload
+- Web, iOS and Android SDKs and a free developer sandbox that needs only a company email
+- Goes beyond onboarding, with PEP and sanctions screening, re-authentication, a reusable verified status and an AI agent product
+cons:
+- No document, selfie or liveness checks today; Prove announced biometric products in June 2026 as still in development
+- No published prices; every product is quoted by sales
+- No security certification or independent test published on prove.com, and most developer guides need a portal login
+alternatives:
+- slug: socure
+  name: Socure
+  best_for: US Identity Data with Published Prices
+- slug: persona
+  name: Persona
+  best_for: Configurable Document and Selfie Flows
+- slug: incode
+  name: Incode
+  best_for: Biometrics and AI Agent Checks
+choose_instead:
+- slug: socure
+  need: Document checks plus US data
+  text: you want document and selfie verification on top of US identity data checks, with self-serve prices for startups.
+- slug: persona
+  need: Document and selfie flows
+  text: you need government ID and selfie checks with an iBeta Level 2 liveness letter, built in a no-code workflow.
+- slug: incode
+  need: Strong liveness and agent checks
+  text: you want liveness with an iBeta Level 3 letter, and a product that verifies AI agents acting for your customers.
+user_reviews:
+  legacy_note: null
+  praise: []
+  criticize: []
+  by_profile:
+  - US banks, fintechs, card issuers and gaming operators with mobile-first sign-up are Prove's core fit.
+  - Teams that want fewer document uploads can use Prove first and send only the users it cannot verify to a document check.
+  - Regulated flows that require a document and selfie check for every user will need another vendor.
+faq:
+- q: How much does Prove cost?
+  a: Prove does not publish prices. Its pricing page links to sales. Developers can test Pre-Fill for free in the developer portal sandbox with a company email address and no credit card.
+- q: Does Prove do document and selfie verification?
+  a: Not today. Prove's products verify people through their phone number, possession checks and identity data. In June 2026 Prove announced biometric products with liveness detection and document verification, described as in development with design partners. We found no product page or lab test for them yet.
+- q: How does Prove Pre-Fill work?
+  a: The user enters a phone number and a challenge such as a date of birth or the last four digits of the SSN. Prove checks that the user holds the phone, with a silent network check, an Instant Link or an SMS code, then returns verified identity data to pre-fill the form.
+- q: Which countries does Prove cover?
+  a: Prove says its network covers more than 200 countries and regions. Its product pages list the US, Canada, the UK, Australia, France, Germany, Brazil and a few others for the main features, and some features, such as Signals, work only in the US.
+- q: Does Prove verify AI agents?
+  a: Prove launched Verified Agent in October 2025. It ties an agent to a verified person, checks participants against a registry before each delegated action and keeps a consent log signed by user and merchant keys. Its product page asks buyers to contact sales about availability, so it is not yet in our Know Your Agent ranking.
+- q: Is Prove SOC 2 or ISO 27001 certified?
+  a: We found no security certification on prove.com. The site says it uses bank-grade security but names no audit, report or certificate.
+- q: What is the best alternative to Prove?
+  a: Socure is the closest alternative for US identity data checks, and it adds document and selfie verification. Persona and Incode fit teams that need document and liveness checks with a lab letter.
+segments: []
+capabilities:
+  checked: '2026-11'
+  identity_verification:
+    status: 'yes'
+    note: phone-centric; possession and identity data match
+    source: 6
+  liveness:
+    status: 'no'
+    note: no liveness product yet; announced June 2026 as in development
+    source: 19
+  injection_detection:
+    status: not_disclosed
+    note: no liveness product yet
+  nfc:
+    status: not_disclosed
+    note: no document checks
+  doc_forensics:
+    status: not_disclosed
+    note: no document checks
+  kyb_registry:
+    status: add_on
+    note: business entity and EIN/TIN checks in Pre-Fill for Business
+    source: 8
+  kyb_ubo:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  sanctions_pep:
+    status: 'yes'
+    note: PEP and sanctions lists in Prove Identity
+    source: 7
+  adverse_media:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  ongoing_monitoring:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  transaction_monitoring:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  case_management:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  video_ident:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  reusable_id:
+    status: 'yes'
+    note: Verified User status; Portabl reusable ID acquired 2025
+    source: 5
+  data_residency:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  deployment:
+    status: cloud
+    note: hosted APIs and SDKs
+    source: 16
+certifications: []
+kya:
+  checked: '2026-11-24'
+  methodology: kya-1.0
+  product_name:
+    status: 'yes'
+    note: 'Verified Agent; Agentic Suite: Agent Auth, Agent ID, Agent Payment ID, Agent Wallet, Agent Protect'
+    source: 10
+  availability:
+    status: announced
+    note: launch announced 23 Oct 2025; product page says "designed to" and asks buyers to contact sales about availability; no customer named
+    source: 10
+  availability_date:
+    status: 'yes'
+    note: launch press release 23 Oct 2025
+    source: 11
+  detect_undeclared:
+    status: not_found
+    note: registry filters unverified automation; no detection of undeclared agents described
+    source: 11
+  verify_signed:
+    status: 'yes'
+    note: participants checked against a live registry of agent publishers, merchants and networks
+    source: 11
+  trust_score:
+    status: not_found
+    note: nothing found
+  shared_reputation:
+    status: 'yes'
+    note: registry shared across agent publishers, relying parties, merchants and networks
+    source: 11
+  bind_person:
+    status: 'yes'
+    note: each agent authorised to act for a verified individual or entity
+    source: 11
+  bind_business:
+    status: partial
+    note: '"verified individual or entity"; KYB not named'
+    source: 11
+  step_up:
+    status: not_found
+    note: nothing found
+  scoped_permissions:
+    status: 'yes'
+    note: permitted actions carried in tokens, headers or credentials (Agent ID)
+    source: 10
+  limits_expiry:
+    status: partial
+    note: session-level authorisation limits; expiry not stated
+    source: 11
+  revocation:
+    status: not_found
+    note: nothing found
+  pre_action_check:
+    status: 'yes'
+    note: participants checked against the registry before any delegated action
+    source: 11
+  chaining:
+    status: not_found
+    note: nothing found
+  credential_format:
+    status: partial
+    note: signed credentials and identity-bound tokens; format not named
+    source: 11
+  protocols:
+    status: 'yes'
+    note: AP2
+    source: 11
+  open_spec:
+    status: not_found
+    note: nothing found
+  audit_log:
+    status: 'yes'
+    note: consent and outcome log for every interaction
+    source: 11
+  tamper_evident:
+    status: 'yes'
+    note: each interaction co-signed by user and merchant keys
+    source: 11
+  behaviour_monitoring:
+    status: not_found
+    note: nothing found
+  log_export:
+    status: not_found
+    note: nothing found
+  price:
+    status: 'no'
+    note: not published
+    source: 2
+  docs_public:
+    status: not_found
+    note: no developer docs for Verified Agent found
+  self_serve:
+    status: not_found
+    note: developer portal covers Pre-Fill, not Verified Agent
+user_ratings: []
+use_case_verdicts: []
+score_breakdown:
+- criterion: "Fraud defense"
+  weight: 25
+  score: 1.5
+  note: "no liveness product"
+  evidence: vendor
+- criterion: "Pricing and total cost"
+  weight: 20
+  score: 2
+  note: "no published price, quoted by sales"
+  evidence: vendor
+- criterion: "Coverage"
+  weight: 15
+  score: 3.5
+  note: "200 countries and territories, checks without a document"
+  evidence: vendor
+- criterion: "Platform breadth"
+  weight: 15
+  score: 3
+  note: "4 of 8 modules: identity verification, KYB, sanctions screening, reusable ID"
+  evidence: vendor
+- criterion: "Integration and time to launch"
+  weight: 15
+  score: 3
+  note: "self-serve sandbox or trial, web, iOS and Android SDKs"
+  evidence: vendor
+- criterion: "Trust and track record"
+  weight: 10
+  score: 2
+  note: "operating since 2008"
+  evidence: vendor
+hands_on: null
+sources:
+- title: Prove homepage
+  publisher: Prove
+  url: https://www.prove.com/
+  accessed: '2026-11'
+- title: Pricing
+  publisher: Prove
+  url: https://www.prove.com/pricing
+  accessed: '2026-11'
+- title: About Prove
+  publisher: Prove
+  url: https://prove.com/about
+  accessed: '2026-11'
+- title: Prove Sets Standard for Modern Identity Authentication with New Brand, First Major Acquisition, and $100M Investment
+  publisher: Prove
+  url: https://www.prove.com/blog/prove-sets-standard-for-modern-identity-authentication-with-new-brand-first-major-acquisition-and-100m-investment
+  accessed: '2026-11'
+- title: Prove Acquires Portabl to Advance Seamless, Secure, and Interoperable Identity Networks
+  publisher: Prove
+  url: https://prove.com/blog/prove-acquires-portabl
+  accessed: '2026-11'
+- title: Prove Account Opening
+  publisher: Prove
+  url: https://www.prove.com/solutions/account-opening
+  accessed: '2026-11'
+- title: Compliance use case
+  publisher: Prove
+  url: https://www.prove.com/use-cases/compliance
+  accessed: '2026-11'
+- title: Prove Pre-Fill for Business
+  publisher: Prove
+  url: https://www.prove.com/solutions/pre-fill-business
+  accessed: '2026-11'
+- title: Prove Human Assurance
+  publisher: Prove
+  url: https://www.prove.com/solutions/human-assurance
+  accessed: '2026-11'
+- title: Prove Agentic Suite
+  publisher: Prove
+  url: https://www.prove.com/solutions/agentic-suite
+  accessed: '2026-11'
+- title: Prove Launches Verified Agent Solution to Secure the $1.7 Trillion Agentic Commerce Revolution
+  publisher: Business Wire
+  url: https://www.businesswire.com/news/home/20251023729694/en
+  accessed: '2026-11'
+- title: Prove Verified Agent
+  publisher: Prove
+  url: https://www.prove.com/blog/prove-verified-agent-secure-agentic-commerce
+  accessed: '2026-11'
+- title: Global solutions
+  publisher: Prove
+  url: https://www.prove.com/uk-solutions
+  accessed: '2026-11'
+- title: Prove llms.txt
+  publisher: Prove
+  url: https://www.prove.com/llms.txt
+  accessed: '2026-11'
+- title: Empower your development workflow with the Prove developer portal
+  publisher: Prove
+  url: https://prove.com/blog/empower-your-development-workflow-prove-identity-new-developer-portal
+  accessed: '2026-11'
+- title: Prove Pre-Fill implementation guide
+  publisher: Prove
+  url: https://developer.prove.com/docs/prove-pre-fill-implementation-guide
+  accessed: '2026-11'
+- title: Prove platform changelog
+  publisher: Prove
+  url: https://developer.prove.com/changelog
+  accessed: '2026-11'
+- title: Prove appoints Frances Zelazny to bring privacy-preserving biometrics to its identity platform
+  publisher: Prove
+  url: https://www.prove.com/blog/prove-frances-zelazny-privacy-preserving-biometrics-digital-identity-platform
+  accessed: '2026-11'
+- title: Prove Lines Up Identity Industry Veterans for Biometrics and Platform Strategy Push
+  publisher: ID Tech Wire
+  url: https://idtechwire.com/prove-lines-up-identity-industry-veterans-for-biometrics-and-platform-strategy-push/
+  accessed: '2026-11'
+- title: Prove Verified Users
+  publisher: Prove
+  url: https://prove.com/solutions/prove-verified-users
+  accessed: '2026-11'
+- title: Payfone rebrands, buys authentication tech from Early Warning
+  publisher: American Banker
+  url: https://www.americanbanker.com/payments/news/payfone-rebrands-buys-authentication-tech-from-early-warning
+  accessed: '2026-11'
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://www.prove.com
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- 'link.type set to none: no commercial relationship with Prove is recorded.'
+- 'Liveness: capabilities.liveness set to no because no liveness, document or selfie product appears on prove.com, Human Assurance (source 9) is a bot and human classification from phone signals, and the June 2026 releases (sources 18, 19) describe biometrics with liveness and document checks as in development with design partners, GA planned later in 2026. Re-check at the next review; if a product page or lab letter appears, Fraud defense moves.'
+- 'Know Your Agent: kya.availability set to announced, so Prove is not eligible for the KYA ranking yet (owner decision 2026-11-24: not ranked for now). The Oct 2025 release says "launch", but the Agentic Suite page (source 10) words most items as "designed to", calls Agent Wallet exploratory and asks buyers to contact sales about availability; no customer is named.'
+- 'Certifications: prove.com names no SOC 2, ISO/IEC 27001 or other certificate; footer badges are images without readable text. A third-party security profile (Nudge Security) lists SOC 2, ISO 27001, PCI, FedRAMP and more without sources; not used.'
+- 'Coverage: homepage and global page (source 13) say 200+ countries and regions; product pages list 8 to 10 named countries for core features plus "+25" or "+200 additional"; Signals is US only (source 17). 200 used as vendor-stated for the scorer; copy says the main features list fewer countries.'
+- 'KYB: Pre-Fill for Business (source 8) says it verifies business entities and EIN/TIN; no registry list, UBO or monitoring described. Recorded as kyb_registry add_on. A Prove blog mentions a Baselayer partnership for business verification in ProveX; not opened.'
+- 'Docs: developer.prove.com guides and reference pages redirect to a portal login for our fetch tool; search engines show their text, and the changelog is public. docs_public partial.'
+- 'Funding: CB Insights lists $261.3M raised and a Series I; not used. $100M in 2020 from Prove''s own release.'
+- 'Customers: homepage says 2,000+ companies; an Oct 2025 release says 1,500+ brands and a June 2026 blog footer says 2,500+. Homepage figure used.'
+- 'User ratings: G2 not readable by our tools. Not recorded.'
+- 'IDV 1.0: no category score computed. With no liveness product and no document checks its IDV score would sit far below #10 (ranking is top 10 only).'
+- 'Logo tile and wordmark from the owner''s images (2026-11-24).'
+- 'Incidents: none found in searches on 2026-11-24.'
+application_category: Identity Verification Software
+author: andrii-klymenko
+directory_categories:
+- Identity Verification
+- Know Your Agent
