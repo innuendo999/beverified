@@ -1,17 +1,19 @@
 # AML for Banks scoring methodology, AML Banks 1.0 (proposal, 2026-11-24)
 
-Status: **proposal, not approved.** Criteria, weights, buyer profile and eligibility wait for the owner. No provider has an AML Banks score yet, and nothing on the site changes until the owner approves this file.
+Status: **proposal.** Buyer profile approved by the owner on 2026-11-24 (option C); criteria and weights wait for approval. No provider has an AML Banks score yet, and nothing on the site changes until the owner approves this file.
 
 Applies to the ranking `/providers/aml/banks/` (rankings.yml key `aml/banks`). The H1 and title stay as they are. The AML ranking `/providers/aml/` keeps AML 1.0 (`docs/scoring-aml.md`).
 
-## Decisions for the owner
+## Decisions
 
-1. **Buyer profile (ICP).** Proposed: banks, credit unions and building societies in the US, UK and EU that buy or replace a transaction monitoring and screening system, from community banks to mid-size and digital banks. Buyer: BSA officer or MLRO with the head of financial crime technology; IT security and procurement sign off. Tier-1 global banks that build in-house are not the target reader, but nothing excludes vendors that serve them.
-2. **Pricing has no weight.** Proposed: 0%. Every provider on the current list quotes through sales; a criterion where all score 2 does not separate them. Published prices, where they exist, still show in the table and on the review.
-3. **Eligibility needs bank evidence.** Proposed: a provider is eligible only if its own site names a bank, credit union or building society as a customer or publishes a bank case study (rule 4 below). Customer names never earn points.
-4. **Quantexa** (still on v3.0, out of rankings until a per-category rubric exists) is scored under this rubric and returns to the ranking if it qualifies.
-5. Phase 1 uses public evidence only, as AML 1.0. Vendor accuracy figures ("70% fewer false positives"), analyst positions (Chartis, Forrester, Gartner), awards and client logos never enter the score.
-6. Separate score per category (standing rule, 2026-11-05): the ranking sorts by the AML Banks score; the overall score on reviews is unchanged.
+1. **Buyer profile: one ranking with segments (owner, 2026-11-24, option C).** Banks, credit unions and building societies in the US, UK and EU. Segments (community banks, on-premises, FRAML, overlay on an existing system) are chosen from record facts, as in IDV 1.0. Nasdaq Verafin and Abrigo go into the review plan; the community bank segment opens when they are reviewed.
+2. Pricing has no criterion of its own. Whether the vendor says what the price depends on counts under "Vendor risk and cost transparency" (5%).
+3. Eligibility needs bank evidence (rule 4 below). Customer names never earn points.
+4. Quantexa (still on v3.0) is scored under this rubric and returns to the ranking if it qualifies.
+5. Phase 1 uses public evidence only. Vendor accuracy figures, analyst positions (Chartis, Forrester, Gartner), awards, client logos and user ratings never enter the score.
+6. Situational needs are a fit check, not points: on-premises or SaaS, data region, named core banking system, overlay on an existing system, fraud and AML together, FinCEN or goAML filing, bank size. Each shows yes, no or not stated, with a source.
+
+Pending owner approval: criteria and weights below (revised 2026-11-24 after the critique and dry run).
 
 ## What the buyer is choosing on
 
@@ -46,84 +48,48 @@ As AML 1.0: sub-scores 1 to 5 in steps of 0.5; `yes` and `add_on` earn the point
 
 | Criterion | Weight | Buyer question |
 |---|---|---|
-| Transaction monitoring and detection | 25% | Will it catch what our examiners expect us to catch, on all our channels? |
-| Model governance, testing and explainability | 20% | Can we validate it, tune it safely and explain every alert? |
-| Sanctions and payment screening | 15% | Are customers and payments screened against the right lists, fast enough? |
-| Investigation, case management and reporting | 15% | Can analysts work cases and file reports in one place? |
-| Deployment, security and third-party risk | 15% | Will it pass our IT security, data residency and vendor risk review? |
-| Integration and data onboarding | 10% | How hard is it to feed our core banking data in? |
+| Detection | 20% | Will it catch what our examiners expect, on all our channels and across linked accounts? |
+| Alert quality and analyst workload | 20% | How much of our analysts' day goes on noise, and how fast is a case closed and filed? |
+| Tuning without depending on the vendor | 15% | Can we change and test rules ourselves? |
+| Validation and audit for examiners | 15% | Can our model risk team validate it and can we show every change? |
+| Implementation and data integration | 15% | How hard is it to get our data in? |
+| Sanctions screening of customers and payments | 10% | Right lists, fast enough, on payments too? |
+| Vendor risk and cost transparency | 5% | Will it pass vendor risk review, and do we know what drives the price? |
 
-### Transaction monitoring and detection (25%)
+Points per criterion, sub-score = 1 + points, cap 5. Each piece of evidence counts in one criterion only.
 
-Points, sub-score = points + 1, cap 5:
+**Detection (20%).** Named typologies or scenarios (+1; a count without names: +0.5). Stated latency or monitoring before execution (+1; "real-time" without a time: 0). At least three payment channels named (+1; two: +0.5). Entity resolution or links across accounts and counterparties (+1). Segmentation or peer groups (+0.5). Customer risk scoring that updates (`capabilities.risk_scoring`, +0.5).
 
-| Evidence | Points |
-|---|---|
-| Scenario or typology library published or listed by name (`aml_banks.scenario_library`) | +1 |
-| Monitoring before execution or with a stated latency (`aml_banks.realtime_monitoring`; post-event batch only: 0) | +1 |
-| Payment channels named: at least three of cards, wires, ACH or SEPA, instant payments, cash, cheques (`aml_banks.channels[]`; two named: +0.5) | +1 |
-| Behavioural or machine-learning detection with documented segmentation or peer groups (`aml_banks.behavioural_models`) | +0.5 |
-| Entity resolution or network analytics across customers and counterparties (`aml_banks.entity_resolution`) | +0.5 |
-| Customer risk scoring that updates on new data (`capabilities.risk_scoring`, AML 1.0 field) | +0.5 |
+**Alert quality and analyst workload (20%).** Alert prioritisation or alert risk scores (+1). Reason for the alert shown to the analyst (`capabilities.alert_explanation`, +1). Regulatory report filing from the platform (+1; drafting only: +0.5). Second reviewer or approval step (`case_management.four_eyes: yes`, +0.5). Automatic closing of alerts earns nothing unless it can be tested and logged (see Validation).
 
-### Model governance, testing and explainability (20%)
+**Tuning without depending on the vendor (15%).** Clients create and change rules without the vendor (+1.5). Simulation, back-testing or shadow mode on the client's data before a change goes live (+1.5).
 
-| Evidence | Points |
-|---|---|
-| Reason for the alert shown to the analyst: rules fired or model features (`capabilities.alert_explanation`, AML 1.0 field) | +1 |
-| Model documentation or a validation pack offered to clients (`capabilities.model_validation`, AML 1.0 field) | +1 |
-| Rule or threshold changes tested on historical data before going live: simulation, back-testing, above- and below-the-line testing (`aml_banks.tuning_simulation`) | +1 |
-| Audit trail of rule and model changes, with who approved them (`aml_banks.change_audit`) | +0.5 |
-| Independent evidence: a published third-party model validation or test we opened | +0.5 |
+**Validation and audit for examiners (15%).** Model documentation or a validation pack for clients (`capabilities.model_validation`, +1). Log of rule and model changes with who approved them (+1; log without approvals: +0.5). Audit trail of alerts and dispositions (`capabilities.audit_trail`, +1).
 
-### Sanctions and payment screening (15%)
+**Implementation and data integration (15%).** Public API documentation (`integration.docs_public`, +1). Published data model or ingestion specification (+1). Batch and streaming ingestion (+1; one of them: +0.5). Sandbox or test environment (+0.5).
 
-| Evidence | Points |
-|---|---|
-| All four core lists named: OFAC SDN, EU, UK, UN (`capabilities.list_coverage`; three: +0.5) | +1 |
-| Stated list update time of 24 hours or less (`capabilities.list_updates.hours`; longer: +0.5) | +1 |
-| Payment message screening: SWIFT MT or ISO 20022 messages, or payments screened before release (`capabilities.transfer_screening`, AML 1.0 field, plus `aml_banks.message_formats[]`) | +1 |
-| Fuzzy matching and transliteration (`capabilities.fuzzy_matching` and `capabilities.transliteration`; one of the two: +0.5) | +1 |
+**Sanctions screening (10%).** AML 1.0 rules: four core lists named (+1; three: +0.5), stated update time of 24 hours or less (+1; longer: +0.5), payment or transfer screening (+1), fuzzy matching and transliteration (+1; one: +0.5).
 
-### Investigation, case management and reporting (15%)
+**Vendor risk and cost transparency (5%).** ISO/IEC 27001 or SOC 2 confirmed (+1.5). The vendor says what the price depends on, or publishes prices (+1; partly: +0.5). Regulatory action, disclosed breach or incident in the last 24 months: -1 each, from `incidents.yml`.
 
-| Evidence | Points |
-|---|---|
-| Case management with a second reviewer or approval step (`capabilities.case_management.four_eyes`; without a stated step: +0.5) | +1 |
-| Regulatory report filing from the platform: FinCEN SAR e-filing, goAML or a named FIU format (`aml_banks.regulatory_filing`; report drafting without filing: +0.5) | +1 |
-| Audit trail of every alert and disposition (`capabilities.audit_trail`) | +1 |
-| Management information on alerts, cases and productivity (`capabilities.alert_reporting`) | +0.5 |
-| Case consolidation across alerts and products for one customer (`aml_banks.case_consolidation`) | +0.5 |
+Dropped after the dry run because no provider publishes them, so they would only add zeros: above- and below-the-line testing, alert consolidation per customer, published independent validation, published implementation approach, DORA or third-party risk documentation. They move to "What to ask in a pilot".
 
-### Deployment, security and third-party risk (15%)
+### Evidence protocol
 
-| Evidence | Points |
-|---|---|
-| Deployment choice: on-premises or private cloud as well as SaaS (`capabilities.deployment` `cloud_and_on_prem`; SaaS only with a single-tenant option: +0.5) | +1 |
-| Data residency regions named (`capabilities.data_residency`) | +1 |
-| ISO/IEC 27001 or SOC 2 Type II confirmed (`certifications[]` with status `confirmed`; vendor-stated: 0) | +1 |
-| Published material for regulated-firm vendor review: DORA, outsourcing or third-party risk documentation (`aml_banks.tprm_docs`) | +0.5 |
+The dry run showed that the score follows how deep we search: NICE Actimize's product page names almost nothing, while its brochures name channels, segmentation, simulation and alert scoring. So every provider gets the same search: product pages, documentation portal, brochures and datasheets on the vendor's own domain, and trust centre. A feature found in any of them counts. Pages behind a login or a form do not count. Every point stores its source URL and the date checked.
 
-Deductions: public regulatory action, disclosed breach or incident in the last 24 months, -1 each, from `incidents.yml` (`counted: false` is not deducted).
+### Dry run (2026-11-24, not published)
 
-### Integration and data onboarding (10%)
-
-| Evidence | Points |
-|---|---|
-| Public API documentation without login (`integration.docs_public`) | +1 |
-| Named core banking or payment system connectors, or a published data model for ingestion (`aml_banks.core_connectors`) | +1 |
-| Batch or file ingestion (`capabilities.batch_screening` or `aml_banks.batch_ingestion`) | +1 |
-| Sandbox, trial or test environment offered (`integration.sandbox`) | +0.5 |
-
-Pricing: 0% (decision 2). Published prices are shown, never scored.
+One pass over 1 to 3 public pages per vendor plus existing record fields, with the criteria above. AML 1.0 screening fields are missing for NICE Actimize, Feedzai and Quantexa, so their screening scores are too low. Result: ComplyAdvantage 3.4, Napier 2.9, Unit21 2.5, NICE Actimize 2.5, Hawk 2.4, Feedzai 2.4, Quantexa 2.0. The criteria separate providers (sub-score spread 2 to 3 points per criterion), but the order is not final until the evidence protocol has been run in full for every provider.
 
 ## What the score cannot measure
 
-Public evidence cannot show detection rates on your data, false-positive volumes, how long implementation takes, or how good the vendor's support is in an exam. The page says so next to the table and keeps a "What to test in a pilot" block:
+Public evidence cannot show detection rates on your data, false-positive volumes, data quality, how long implementation really takes, or support quality during an exam. The page says so next to the table and keeps a "What to ask in a pilot" block:
 - run the vendor's scenarios on a sample of your historical transactions, including cases you filed SARs on;
-- ask for the model documentation your model risk team would validate;
-- change one threshold in the vendor's simulation tool and check the impact report;
-- ask for the DORA or third-party risk pack and the exit plan your vendor risk team needs.
+- ask whether alerts for one customer are consolidated into one case;
+- change one threshold in the simulation tool and check the impact report, including what falls below the line;
+- ask for the model documentation your model risk team would validate, and any independent validation;
+- ask for the implementation plan for your core system and the DORA or third-party risk pack.
 
 ## New data fields
 
