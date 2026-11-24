@@ -624,6 +624,66 @@ a.ucc__card:hover { color: var(--ink); text-decoration: none; border-color: var(
 .fp-step { font-size: 32px; font-weight: 600; letter-spacing: -0.03em; color: var(--faint); margin-bottom: 12px; }
 .fp-cta { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px 28px; }
 @media (max-width: 860px) { .fp-hero { grid-template-columns: 1fr; } .fp-cta { flex-direction: column; align-items: flex-start; } }
+.fp-lede { font-size: 16px; line-height: 1.6; color: var(--body); max-width: 720px; margin: 0 0 20px; }
+.fp-small { font-size: 13px; color: var(--muted); margin: 0; }
+.fp-rules { margin: 0 0 12px; padding-left: 20px; font-size: 16px; line-height: 1.6; color: var(--ink); max-width: 720px; }
+.fp-rules code { font-size: 14px; }
+.fp-slot { align-items: start; display: grid; grid-template-columns: minmax(0,5fr) minmax(0,7fr); gap: 40px; padding: 36px 0; border-top: 1px solid var(--line); }
+.fp-slot:first-of-type { margin-top: 28px; }
+.fp-slot__h { font-size: 20px; font-weight: 600; letter-spacing: -0.015em; margin: 0 0 10px; }
+.fp-slot__text > p { font-size: 15px; line-height: 1.6; color: var(--body); margin: 0 0 16px; }
+.fp-dl { margin: 0; display: grid; gap: 8px; font-size: 14px; line-height: 1.5; }
+.fp-dl > div { display: grid; grid-template-columns: 96px minmax(0,1fr); gap: 12px; }
+.fp-dl dt { color: var(--muted); }
+.fp-dl dd { margin: 0; color: var(--ink); }
+.fp-ex { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; min-width: 0; box-shadow: 0 1px 2px rgba(11,23,48,.04), 0 12px 32px rgba(11,23,48,.07); }
+.fp-ex__bar { display: flex; align-items: center; gap: 12px; padding: 9px 14px; background: var(--ink); color: #C9D3E6; font-size: 12px; }
+.fp-ex__dots { display: flex; gap: 5px; flex-shrink: 0; }
+.fp-ex__dots i { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,.22); }
+.fp-ex__url { flex: 1 1 auto; min-width: 0; font-family: ui-monospace, 'SFMono-Regular', Menlo, monospace; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fp-ex__url b { color: #fff; font-weight: 500; }
+.fp-ex__badge { flex-shrink: 0; padding: 2px 8px; border-radius: 6px; background: var(--accent); color: #fff; font-weight: 500; }
+.fp-ex__body { background: linear-gradient(180deg, var(--accent-soft), var(--bg) 70%); padding: 18px 20px 22px; display: flex; flex-direction: column; gap: 12px; }
+.fp-ex .fp-hl { box-shadow: 0 0 0 2px var(--accent), 0 10px 28px rgba(31,79,216,.16); border-color: transparent; }
+.fp-ex .fp-hl-in { background: var(--accent-soft); box-shadow: inset 3px 0 0 var(--accent); border-top-color: transparent; }
+.fp-ex .fp-hl-row { margin: 0 -14px; padding: 12px 14px; background: var(--accent-soft); box-shadow: inset 3px 0 0 var(--accent); }
+.fp-num { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; margin-right: 10px; border-radius: 8px; background: var(--accent); color: #fff; font-size: 14px; font-weight: 600; vertical-align: 2px; }
+.fp-yes::before, .fp-no::before { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; margin-right: 8px; border-radius: 50%; font-size: 13px; vertical-align: 1px; }
+.fp-yes::before { content: "✓"; background: var(--accent-soft); color: var(--accent); }
+.fp-no::before { content: "✕"; background: var(--surface-sunk); color: var(--body); }
+.fp-policy { background: var(--ink); color: #fff; border-radius: 16px; padding: 22px 26px; }
+.fp-policy__k { font-size: 13px; color: #9FB0D0; margin-bottom: 6px; }
+.fp-policy .fw-600 { color: #fff; }
+.fp-cta--ink { background: var(--ink); color: #fff; border-radius: 16px; }
+.fp-cta--ink .fp-muted { color: #C9D3E6; }
+.fp-cta--ink .btn--primary { background: #fff; color: var(--ink); border-color: #fff; }
+.fp-cta--ink .btn--secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,.4); }
+.fp-ex__tag { margin: 0; font-size: 12px; font-weight: 500; color: var(--accent); }
+.fp-ex__body > * + .fp-ex__tag { margin-top: 8px; }
+.fp-ex__ghost { display: flex; flex-direction: column; gap: 8px; }
+.fp-ex__ghost i, .fp-ex__rows i, .fp-ex__fdghost i { display: block; height: 10px; border-radius: 5px; background: rgba(11,23,48,.07); }
+.fp-ex__ghost--table i { background: var(--surface); box-shadow: 0 0 0 1px var(--line-soft); }
+.fp-ex__ghost i.s { width: 60%; }
+.fp-ex__ghost--table i { height: 28px; border-radius: 8px; }
+.fp-ex__split { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.3fr); gap: 16px; align-items: center; }
+.fp-ex .fp-ex__wide { margin-top: 0; padding: 22px 24px; gap: 16px 24px; }
+.fp-ex__sub { margin: 2px 0 0; font-size: 13px; color: var(--muted); }
+.fp-ex__p { margin: 8px 0 0; font-size: 15px; color: var(--body); }
+.fp-ex__link { color: var(--accent); }
+.fp-ex__card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+.fp-ex__rows { list-style: none; margin: 0; padding: 8px 20px; }
+.fp-ex__rows li { display: grid; grid-template-columns: 20px minmax(0,1fr); gap: 12px; align-items: center; padding: 10px 0; font-size: 13px; color: var(--muted); }
+.fp-ex__rows li + li { border-top: 1px solid var(--line-soft); }
+.fp-ex .fd-list { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 0 14px; }
+.fp-ex .fd-row:first-child { border-top: 0; }
+.fp-ex__fdghost i { width: 70%; }
+.fp-ex__fdghost .fd-price i { width: 48px; }
+.fp-ex .rv4-ad__btn, .fp-ex .btn { pointer-events: none; }
+.fp-policy-h { margin-top: 40px; }
+.fp-ex__cards { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 10px; }
+.fp-ex__cards i { display: block; height: 64px; border-radius: 12px; background: var(--surface); box-shadow: 0 0 0 1px var(--line-soft); }
+.fp-ex__split > * { min-width: 0; }
+@media (max-width: 860px) { .fp-slot { grid-template-columns: 1fr; gap: 20px; } .fp-ex__split { grid-template-columns: 1fr; } .fp-ex__split .fp-ex__ghost { display: none; } .fp-ex .fp-ex__wide { padding: 20px; } .fp-ex__body { padding: 14px; } .fp-num { width: 24px; height: 24px; font-size: 13px; } }
 .legacy-prose table { display: block; overflow-x: auto; }
 .text-layout > * { min-width: 0; }
 .cat-main > section, .cat-main { min-width: 0; }
