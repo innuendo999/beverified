@@ -18,23 +18,6 @@ aml/banks:
     legacy_price_shown: From $99/mo (Starter; monitoring on Enterprise)
     legacy_rating_shown: 4.7
     segments: []
-  - slug: hawkai
-    name: Hawk AI
-    award: Best for Explainable AI Monitoring
-    tagline: Explainable-AI AML transaction monitoring, screening and fraud detection for banks and fintechs.
-    coverage: null
-    size: null
-    pros:
-    - Explainable AI built for regulator-facing audit transparency
-    - AML monitoring, screening and fraud detection on one platform with a unified case manager
-    - Vendor-reported 70% fewer false alerts and 62% less AML investigation time
-    cons:
-    - Enterprise/mid-market focus, not built for very small teams
-    - No published pricing
-    - Transaction-monitoring/AML focus, not document-first identity verification
-    legacy_price_shown: Custom pricing
-    legacy_rating_shown: null
-    segments: []
   - slug: unit21
     name: Unit21
     award: Best for Real-Time Payment Rails
@@ -87,6 +70,23 @@ aml/banks:
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.6
     segments: []
+  - slug: hawkai
+    name: Hawk AI
+    award: Best for Explainable AI Monitoring
+    tagline: Explainable-AI AML transaction monitoring, screening and fraud detection for banks and fintechs.
+    coverage: null
+    size: null
+    pros:
+    - Explainable AI built for regulator-facing audit transparency
+    - AML monitoring, screening and fraud detection on one platform with a unified case manager
+    - Vendor-reported 70% fewer false alerts and 62% less AML investigation time
+    cons:
+    - Enterprise/mid-market focus, not built for very small teams
+    - No published pricing
+    - Transaction-monitoring/AML focus, not document-first identity verification
+    legacy_price_shown: Custom pricing
+    legacy_rating_shown: null
+    segments: []
   - slug: feedzai
     name: Feedzai
     award: Best for Payment Fraud at Scale
@@ -103,6 +103,23 @@ aml/banks:
     - Pricing not published
     legacy_price_shown: Custom pricing
     legacy_rating_shown: 4.6
+    segments: []
+  - slug: quantexa
+    name: Quantexa
+    award: Best for Entity Resolution
+    tagline: Decision intelligence built on entity resolution and graph analytics, with contextual monitoring for banks.
+    coverage: Global
+    size: null
+    pros:
+    - Genuinely differentiated entity-resolution and graph-analytics depth
+    - Enterprise scale, with HSBC, Standard Chartered and ING among named users
+    - Broad applicability across AML, fraud, and KYC from one data foundation
+    cons:
+    - Core platform is enterprise-oriented and complex for smaller organizations
+    - No published pricing
+    - Requires significant data and implementation resources
+    legacy_price_shown: Custom pricing
+    legacy_rating_shown: null
     segments: []
 aml:
   title: Best AML Software Providers in 2026

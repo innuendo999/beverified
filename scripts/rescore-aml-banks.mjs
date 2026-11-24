@@ -1,6 +1,6 @@
 // AML for Banks 1.0 scorer (docs/scoring-aml-banks.md).
 // node scripts/rescore-aml-banks.mjs          -> report: reports/rescore-aml-banks-1.0.csv (+ table on stdout)
-// node scripts/rescore-aml-banks.mjs --write  -> also writes category_scores.aml-banks into eligible records
+// node scripts/rescore-aml-banks.mjs --write  -> also writes category_scores["aml/banks"] into eligible records
 // Reads src/_data/amlBanksEvidence.yml plus the provider record (capabilities{}, integration{}, certifications[], incidents.yml).
 // The overall score is never touched.
 import fs from "node:fs";
@@ -10,7 +10,7 @@ import { grade } from "./rescore.mjs";
 
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const dir = path.join(root, "src/_data/providers");
-const KEY = "aml-banks";
+const KEY = "aml/banks"; // = the ranking slug, which the category template reads
 const TODAY = new Date();
 const load = (f) => yaml.load(fs.readFileSync(path.join(root, f), "utf8"));
 const EV = load("src/_data/amlBanksEvidence.yml");
