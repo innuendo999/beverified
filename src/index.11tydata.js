@@ -2,6 +2,7 @@
 import { activePlacements, heroPlacement } from "./_lib/placements.js";
 import { organization } from "./_lib/schema.js";
 import { heroCard, heroCounts, guilloche } from "./_lib/hero.js";
+import { wordmarkBox } from "./_lib/wordmark.js";
 
 export default {
   permalink: "/",
@@ -15,29 +16,32 @@ export default {
     guilloche: () => guilloche(),
     topRated: (d) => Object.values(d.providers).filter((p) => p.score != null && p.methodology === d.site.v3.methodologyVersion)
       .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name)).slice(0, d.home.top_rated_count),
-    // "Pick by use case" (layout A, owner 2026-11-10): use cases grouped in the order of
-    // home.yml → use_case_groups; each panel shows the ranking's top 3 in rank order (award, score,
-    // logo tile from the record) and, when placements.yml has a live slot, one Sponsored row.
-    useCaseGroups: (d) => {
-      const tiles = d.logoTiles || {};
-      const tile = (slug) => { const p = d.providers[slug], t = tiles[slug] || {};
-        return { logo: p?.logo?.src || null, wordmark: p?.logo?.wordmark || null, bg: t.bg || "#FFFFFF", fit: t.fit || "contain" }; };
+    // Use-case block (variant C, owner 2026-11-24): category tabs from home.yml → use_case_tabs, the use
+    // cases under each, one panel per use case with the ranking's top 3 as cards (wordmark sized by area,
+    // award, score) and, when placements.yml has a live slot, one Sponsored row.
+    useCaseTabs: (d) => {
+      const brand = (slug) => { const p = d.providers[slug];
+        return { mark: wordmarkBox(p?.logo?.wordmark) }; };
       const live = activePlacements(d.placements, { rankings: d.rankings, providers: d.providers, useCases: d.home.use_cases });
-      const items = d.home.use_cases.map((u) => {
+      const item = (slug) => {
+        const u = d.home.use_cases.find((x) => x.slug === slug);
+        if (!u) return null;
         const list = d.rankings[u.slug]?.providers || [];
         const cat = Object.values(d.categories).find((c) => c.slug === u.slug);
         // Categories with their own rubric (score_source: category) show that category's score.
         const sc = (p) => (cat?.score_source === "category" ? p?.category_scores?.[u.slug]?.score : p?.score) ?? null;
         const top = list.slice(0, 3).map((r, i) => { const p = r.slug ? d.providers[r.slug] : null;
           return { rank: i + 1, name: p?.name || r.name, url: p ? `/providers/${r.slug}/` : null, award: r.award || "",
-            score: sc(p), ...tile(r.slug) }; });
+            score: sc(p), ...brand(r.slug) }; });
         const s = live[u.slug];
         const sponsor = s ? { name: s.provider.name, url: `/providers/${s.slug}/`, rank: s.rank, score: sc(s.provider),
-          line: s.entry.tagline || s.provider.tagline || "", ...tile(s.slug) } : null;
-        return { ...u, id: u.slug.replace(/\//g, "-"), url: cat?.url || `/providers/${u.slug}/`, scoreLabel: cat?.score_label || "Score", top, sponsor };
-      });
-      const order = d.home.use_case_groups || [...new Set(items.map((u) => u.group))];
-      return order.map((g) => ({ name: g, items: items.filter((u) => u.group === g) })).filter((g) => g.items.length);
+          line: s.entry.tagline || s.provider.tagline || "", ...brand(s.slug) } : null;
+        const label = cat?.score_label || "Score";
+        return { ...u, id: u.slug.replace(/\//g, "-"), url: cat?.url || `/providers/${u.slug}/`, scoreLabel: label,
+          scoreSuffix: label === "Score" ? "" : label, top, sponsor };
+      };
+      return (d.home.use_case_tabs || []).map((t, i) => ({ label: t.label, id: `c${i + 1}`, items: t.items.map(item).filter(Boolean) }))
+        .filter((t) => t.items.length);
     },
     // Homepage pixel map: regions with a ranking, pin position from lon/lat on the grid built by
     // scripts/region-map.mjs, top 3 from rankings.yml (minus site.v3.promoHide), logos from the records.

@@ -24,9 +24,14 @@ hero:
     - { name: Know Your Agent, url: /providers/know-your-agent/, categories: [know-your-agent] }
 
 
-use_case_groups: [Identity, Business, Financial crime, Crypto, Budget]   # order of the groups in the homepage use-case panel
+use_case_tabs:          # homepage use-case block (owner approved variant C, 2026-11-24): category tabs, the use cases under each, in this order; ids are rankings.yml keys from use_cases below
+  - { label: KYC & Identity, items: [kyc, identity-verification, e-kyc, liveness-detection, age-verification, know-your-agent] }
+  - { label: AML, items: [aml, aml/banks] }
+  - { label: KYB, items: [kyb] }
+  - { label: Crypto, items: [crypto, travel-rule] }
+  - { label: Budget, items: [cheap-kyc] }
 
-use_cases:              # group = section on /use-cases/ and in the homepage panel; category slug in rankings.yml; top 3 and count are computed
+use_cases:              # group = section on /use-cases/; category slug in rankings.yml; top 3 and count are computed
   - { name: KYC, slug: kyc, group: Identity, def: "Full-stack customer onboarding: document and selfie checks plus sanctions and PEP screening in one platform." }
   - { name: AML, slug: aml, group: Financial crime, def: "Screening against sanctions, PEP and adverse-media lists, plus ongoing transaction monitoring." }
   - { name: KYB, slug: kyb, group: Business, def: "Verifying a business, its registry record and its ultimate beneficial owners." }
