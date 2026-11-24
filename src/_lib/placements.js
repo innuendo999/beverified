@@ -10,6 +10,8 @@
 // - start and end are ISO dates, start <= end; slots for one use case never overlap.
 
 const ISO = /^\d{4}-\d{2}-\d{2}$/;
+// Entries with a surface have their own rules; entries without one are homepage use-case slots.
+const SURFACES = new Set(["review", "hero", "ranking", "finder", "menu-reviews", "menu-blog"]);
 const iso = (v) => (v instanceof Date ? v.toISOString().slice(0, 10) : String(v ?? ""));
 
 export function placementIssues(placements, { rankings, providers, useCases }) {
@@ -17,7 +19,7 @@ export function placementIssues(placements, { rankings, providers, useCases }) {
   const keys = new Set((useCases || []).map((u) => u.slug));
   const seen = {};
   (placements || []).forEach((e, i) => {
-    if (e?.surface === "review" || e?.surface === "hero" || e?.surface === "ranking" || e?.surface === "finder") return; // checked by reviewPlacementIssues / heroPlacementIssues / rankingPlacementIssues / finderPlacementIssues
+    if (SURFACES.has(e?.surface)) return; // checked by the surface rules below
     const id = `placements[${i}] ${e?.use_case ?? "?"}/${e?.slug ?? "?"}`;
     const start = iso(e?.start), end = iso(e?.end);
     if (!e?.use_case || !keys.has(e.use_case)) issues.push(`${id}: use_case is not a homepage use case`);
@@ -39,7 +41,7 @@ export function placementIssues(placements, { rankings, providers, useCases }) {
 export function activePlacements(placements, ctx, today = new Date().toISOString().slice(0, 10)) {
   const out = {};
   (placements || []).forEach((e) => {
-    if (e?.surface === "review" || e?.surface === "hero" || e?.surface === "ranking" || e?.surface === "finder") return;
+    if (SURFACES.has(e?.surface)) return;
     if (placementIssues([e], ctx).length) return;
     if (iso(e.start) > today || iso(e.end) < today || out[e.use_case]) return;
     const list = ctx.rankings[e.use_case].providers;
@@ -186,7 +188,7 @@ export function rankingSponsor(placements, ctx, category, today = new Date().toI
     if (rankingPlacementIssues([e], ctx).length) continue;
     if (iso(e.start) > today || iso(e.end) < today) continue;
     const rank = inRanking(ctx.rankings, category, e.slug);
-    return { slug: e.slug, rank: rank + 1, entry: ctx.rankings[category].providers[rank], provider: ctx.providers[e.slug] };
+    return { slug: e.slug, rank: rank + 1, entry: ctx.rankings[category].providers[rank], provider: ctx.providers[e.slug], menu: e.menu === true };
   }
   return null;
 }
@@ -227,4 +229,73 @@ export function finderSponsors(placements, ctx, today = new Date().toISOString()
     out[e.category] = e.slug;
   }
   return out;
+}
+
+// ---- Header menu (owner, 2026-11-24; canvas "BeVerified: footer, visual proposal", page "Header menu") ----
+// Rankings panel: the preview under each ranking's top 3 reuses the ranking slot (surface: ranking, rankingSponsor),
+// only when the entry has menu: true. Off by default, so a booking sold for the ranking page never spreads to
+// every page of the site without the sponsor and the owner agreeing to it.
+//
+// Reviews panel: one sponsor card after the "Most read" cards, never inside them.
+// Entry: { surface: menu-reviews, slug, category, start, end }. The sponsor has a published review with a score and a
+// link.url, is ranked in `category` (its rank is shown) and is not one of the "Most read" picks (site.json v3.menu).
+// One card at a time: entries never overlap.
+export function menuReviewsPlacementIssues(placements, { rankings, providers, mostRead = [] }) {
+  const issues = [];
+  const seen = [];
+  (placements || []).forEach((e, i) => {
+    if (e?.surface !== "menu-reviews") return;
+    const id = `placements[${i}] menu-reviews/${e?.slug ?? "?"}`;
+    const start = iso(e?.start), end = iso(e?.end);
+    const p = providers?.[e?.slug];
+    if (!p || p.status !== "published" || p.score == null) issues.push(`${id}: no published review with a score`);
+    if (!p?.link?.url) issues.push(`${id}: provider record has no link.url`);
+    if (mostRead.includes(e?.slug)) issues.push(`${id}: sponsor is already a "Most read" pick`);
+    if (!e?.category || !rankings?.[e.category]) issues.push(`${id}: category is not a rankings.yml key`);
+    else if (inRanking(rankings, e.category, e.slug) < 0) issues.push(`${id}: sponsor is not ranked in ${e.category}`);
+    if (!ISO.test(start) || !ISO.test(end)) issues.push(`${id}: start and end must be YYYY-MM-DD`);
+    else if (start > end) issues.push(`${id}: start is after end`);
+    for (const o of seen) if (start <= o.end && o.start <= end) issues.push(`${id}: overlaps ${o.id}`);
+    seen.push({ id, start, end });
+  });
+  return issues;
+}
+
+export function menuReviewsSponsor(placements, ctx, today = new Date().toISOString().slice(0, 10)) {
+  for (const e of placements || []) {
+    if (e?.surface !== "menu-reviews" || menuReviewsPlacementIssues([e], ctx).length) continue;
+    if (iso(e.start) > today || iso(e.end) < today) continue;
+    return { slug: e.slug, category: e.category, rank: inRanking(ctx.rankings, e.category, e.slug) + 1, provider: ctx.providers[e.slug] };
+  }
+  return null;
+}
+
+// Blog panel: one "Partner content" row. Entry: { surface: menu-blog, url, start, end }. url is a published article
+// (src/<section>/<slug>.md → /<section>/<slug>/) whose front matter names the partner in sponsored_by; the article page
+// then carries the Sponsored label too. One row at a time: entries never overlap.
+export function menuBlogPlacementIssues(placements, { articles = {} }) {
+  const issues = [];
+  const seen = [];
+  (placements || []).forEach((e, i) => {
+    if (e?.surface !== "menu-blog") return;
+    const id = `placements[${i}] menu-blog/${e?.url ?? "?"}`;
+    const start = iso(e?.start), end = iso(e?.end);
+    const a = articles[e?.url];
+    if (!a) issues.push(`${id}: url is not an article`);
+    else if (!a.sponsored_by) issues.push(`${id}: article has no sponsored_by in its front matter`);
+    if (!ISO.test(start) || !ISO.test(end)) issues.push(`${id}: start and end must be YYYY-MM-DD`);
+    else if (start > end) issues.push(`${id}: start is after end`);
+    for (const o of seen) if (start <= o.end && o.start <= end) issues.push(`${id}: overlaps ${o.id}`);
+    seen.push({ id, start, end });
+  });
+  return issues;
+}
+
+export function menuBlogSponsor(placements, ctx, today = new Date().toISOString().slice(0, 10)) {
+  for (const e of placements || []) {
+    if (e?.surface !== "menu-blog" || menuBlogPlacementIssues([e], ctx).length) continue;
+    if (iso(e.start) > today || iso(e.end) < today) continue;
+    return { url: e.url };
+  }
+  return null;
 }

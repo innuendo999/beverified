@@ -26,6 +26,22 @@
 #   Shown only when it passes the reader's answers (country ranking, public price, monthly cost) and is not already listed;
 #   never on the sponsor's own review. "Visit website" from the record, rel="sponsored". Rules: finderPlacementIssues.
 #
+# Header menu (owner, 2026-11-24):
+#   Rankings preview: add `menu: true` to a surface: ranking entry to show that sponsor under the ranking's top 3 in the
+#   header menu too (every page). Off by default: a ranking-page booking never spreads to the menu on its own.
+#   Reviews panel, one card after the "Most read" reviews:
+#   - surface: menu-reviews
+#     slug: persona              # published review with a score and link.url, ranked in `category`, not a "Most read" pick
+#     category: kyc              # its rank in this ranking is shown
+#     start: 2026-12-01
+#     end: 2026-12-31
+#   Blog panel, one "Partner content" row under Latest:
+#   - surface: menu-blog
+#     url: /guide/some-article/  # article whose front matter has sponsored_by: <partner name>; the article page shows the label too
+#     start: 2026-12-01
+#     end: 2026-12-31
+#   One menu-reviews and one menu-blog entry at a time. Rules: menuReviewsPlacementIssues / menuBlogPlacementIssues.
+#
 # Homepage "Pick by use case" panel:
 #
 # One entry per slot:

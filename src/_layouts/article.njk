@@ -17,6 +17,7 @@ layout: v3.njk
     <main id="main" class="art"><article>
       <header class="art__head">
         <span class="pill">{{ section | sectionLabel }}</span>
+        {%- if sponsored_by %}<p class="art__sponsored"><strong>Sponsored.</strong> Partner content by {{ sponsored_by }}. Paid placement. It doesn't change scores or ranking order. <a href="{{ site.v3.methodologyHref }}#advertising">Advertising policy</a></p>{% endif %}
         <h1 class="h-display art__h1">{{ title }}</h1>
         {%- if lede %}<p class="art__lede">{{ lede }}</p>{% endif %}
         <div class="byline">

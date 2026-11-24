@@ -10,7 +10,7 @@
   "v3": {
     "disclosure": "We may earn a commission from some links. Payment never changes scores or ranking order.",
     "disclosureHref": "/methodology/#disclosure",
-    "adPolicy": ["Providers can buy sponsored placements in five places: review pages, the slot under the top 3 of a ranking, the first-screen KYC card on the homepage, the homepage \"Pick by use case\" panel and the provider finder.", "A review placement covers every review in one ranking, or only the reviews the sponsor names. It shows on the first screen and again after the editorial alternatives.", "In the other four places the sponsor must be ranked in that list outside the top 3. The finder shows the sponsor only when it fits the reader's answers and is not already listed.", "Every placement is labelled \"Sponsored\" and shows the sponsor's real score and rank. Its links are marked rel=\"sponsored\". A review shows one sponsor at a time, and a sponsor never appears on its own review.", "Payment never changes a score, a ranking position, an award or what a review says. A sponsor must already have a published review. We don't sell the removal of sponsored placements or of editorial alternatives. Awards and award badges are never sold."],
+    "adPolicy": ["Providers can buy sponsored placements in seven places: review pages, the slot under the top 3 of a ranking (it also shows in the ranking preview of the header menu), the first-screen KYC card on the homepage, the homepage \"Pick by use case\" panel, the provider finder, one card in the Reviews menu and one partner article in the Blog menu.", "A review placement covers every review in one ranking, or only the reviews the sponsor names. It shows on the first screen and again after the editorial alternatives.", "On the homepage, in the ranking slot and in the finder the sponsor must be ranked in that list outside the top 3. The finder shows the sponsor only when it fits the reader's answers and is not already listed. The Reviews menu card needs a place in one of our rankings and never sits among the \"Most read\" reviews.", "Every provider placement is labelled \"Sponsored\" and shows the sponsor's real score and rank. Its links are marked rel=\"sponsored\". A review shows one sponsor at a time, and a sponsor never appears on its own review. A partner article is labelled \"Sponsored\" with the partner's name, in the menu and on the article itself.", "Payment never changes a score, a ranking position, an award or what a review says. A provider sponsor must already have a published review. We don't sell the removal of sponsored placements or of editorial alternatives. Awards and award badges are never sold."],
     "methodologyVersion": "v3.1",
     "methodologyHref": "/methodology/",
     "rubric": [
@@ -363,6 +363,7 @@
         "groups": [
           {
             "title": "Identity",
+            "col": 1,
             "items": [
               [
                 "kyc",
@@ -392,6 +393,7 @@
           },
           {
             "title": "Business and AML",
+            "col": 2,
             "items": [
               [
                 "kyb",
@@ -409,6 +411,7 @@
           },
           {
             "title": "Crypto",
+            "col": 2,
             "items": [
               [
                 "crypto",
@@ -422,6 +425,7 @@
           },
           {
             "title": "Cost",
+            "col": 3,
             "items": [
               [
                 "cheap-kyc",

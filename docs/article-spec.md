@@ -34,6 +34,8 @@ sources:                                   # every external fact in the body mus
     publisher: "U.S. Treasury, OFAC"
     url: "https://ofac.treasury.gov/..."
     accessed: 2026-10
+sponsored_by: "Partner name"               # only for a paid partner article (owner, 2026-11-24): shows the "Sponsored" label on the
+                                           # article and makes it eligible for the Blog menu slot (placements.yml surface: menu-blog)
 ---
 ```
 
