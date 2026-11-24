@@ -1,4 +1,6 @@
-{#- Footer columns mirror the header menu (src/_data/megaMenu.js); company and legal links from site.json → v3.footer. -#}
+{#- Footer columns mirror the header menu (src/_data/megaMenu.js); company and legal links from site.json → v3.footer.
+    Look = variant B "security paper" (owner, 2026-11-24): navy ground, guilloche rosette and microprint lines
+    (static SVGs from scripts/footer-art.mjs), MRZ band at the bottom. Decoration only, all aria-hidden. -#}
 {%- set f = site.v3.footer %}
 {%- set mm = megaMenu %}
 <footer class="site-footer">
@@ -16,13 +18,14 @@
       </div>
       {%- endif %}
     </div>
+    <div class="site-footer__micro" aria-hidden="true"></div>
     <div class="site-footer__cols">
       {%- for g in mm.rankings.groups %}
       {%- if loop.first %}
       <nav class="site-footer__col" aria-label="Rankings"><h2>{{ mm.rankings.label }}</h2>
       {%- elif loop.index == 2 %}
       </nav>
-      <nav class="site-footer__col site-footer__col--cont" aria-label="More rankings">
+      <nav class="site-footer__col site-footer__col--cont" aria-label="More rankings"><span class="site-footer__spacer" aria-hidden="true"></span>
       {%- endif %}
         <p class="site-footer__sub">{{ g.title }}</p>
         {%- for it in g.items %}<a href="{{ it.href }}">{{ it.label }}</a>{% endfor %}
@@ -59,9 +62,11 @@
         {%- endif %}
       </nav>
     </div>
+    <div class="site-footer__micro" aria-hidden="true"></div>
     <div class="site-footer__bottom">
       <p><strong>Disclosure.</strong> {{ site.v3.disclosure }} Scores are editorial opinions based on the published methodology, not legal advice.</p>
       <div>{{ f.copyright }}{% if updated %}<br>Page updated {{ updated | displayDate }}{% endif %}</div>
     </div>
   </div>
+  <div class="site-footer__mrz" aria-hidden="true"><div>P&lt;BVO&lt;&lt;BEVERIFIED&lt;ORG&lt;&lt;INDEPENDENT&lt;REVIEWS&lt;&lt;&lt;<br>KYC&lt;KYB&lt;AML&lt;&lt;RANKINGS&lt;AND&lt;REVIEWS&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</div></div>
 </footer>
