@@ -79,6 +79,9 @@ layout: v3.njk
             {%- if e.r.coverage or e.r.size %}
             <div class="rank-card__meta">{% if e.r.coverage %}<span>Coverage <b>{{ e.r.coverage }}</b></span>{% endif %}{% if e.r.size %}<span>Fits <b>{{ e.r.size }}</b></span>{% endif %}</div>
             {%- endif %}
+            {%- if e.fit and e.fit.length %}
+            <div class="rank-card__meta"><span class="rank-card__fit-h">For banks</span>{% for x in e.fit %}<span>{{ x.label }} <b>{{ x.value }}</b></span>{% endfor %}</div>
+            {%- endif %}
             {%- if e.r.pros.length or e.r.cons.length %}
             <div class="rank-card__pc">
               <div><h3>+ Pros</h3><ul>{% for t in e.r.pros %}<li>{{ t }}</li>{% endfor %}</ul></div>

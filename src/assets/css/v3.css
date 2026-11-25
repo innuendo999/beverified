@@ -348,6 +348,7 @@ h1, h2, h3, p, ul, ol, figure { margin: 0; }
 .rank-card__tagline { font-size: 15px; color: var(--body); margin-bottom: 10px; }
 .rank-card__meta { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 14px; color: var(--muted); margin-bottom: 16px; }
 .rank-card__meta span b { font-weight: 400; color: var(--ink); }
+.rank-card__meta .rank-card__fit-h { font-weight: 600; color: var(--ink); }
 .rank-card__score { text-align: right; min-width: 110px; }
 .rank-card__score .num-big { font-size: 36px; font-weight: 600; letter-spacing: -0.04em; font-variant-numeric: tabular-nums; }
 .rank-card__score .meter { margin-top: 6px; }
