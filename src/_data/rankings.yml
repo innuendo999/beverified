@@ -1969,6 +1969,21 @@ age-verification:
     legacy_price_shown: From $250/mo
     legacy_rating_shown: null
     segments: []
+  - slug: ondato
+    name: Ondato
+    award: null
+    tagline: 'Facial age estimation without a document, document checks and a reusable age result, with KJM approval stated.'
+    coverage: '192 countries for document checks'
+    pros:
+    - 'Checks age from a selfie with no document upload'
+    - 'KJM-approved age verification and IEEE 2089.1 age estimation, per Ondato'
+    - 'Age verification priced from €0.01 on its pricing page'
+    cons:
+    - 'Approvals are shown without a certifier or certificate number'
+    - 'No liveness lab letter in Ondatos own name; its liveness comes from an unnamed supplier'
+    - 'Volume tiers behind its price ranges are not published'
+    legacy_price_shown: 'From €0.01'
+    segments: []
   - slug: incode
     name: Incode
     award: Best on-device age estimation
@@ -1985,21 +2000,6 @@ age-verification:
     - No public pricing
     legacy_price_shown: Custom pricing
     legacy_rating_shown: null
-    segments: []
-  - slug: ondato
-    name: Ondato
-    award: null
-    tagline: 'Facial age estimation without a document, document checks and a reusable age result, with KJM approval stated.'
-    coverage: '192 countries for document checks'
-    pros:
-    - 'Checks age from a selfie with no document upload'
-    - 'KJM-approved age verification and IEEE 2089.1 age estimation, per Ondato'
-    - 'Age verification priced from €0.01 on its pricing page'
-    cons:
-    - 'Approvals are shown without a certifier or certificate number'
-    - 'No liveness lab letter in Ondatos own name; its liveness comes from an unnamed supplier'
-    - 'Volume tiers behind its price ranges are not published'
-    legacy_price_shown: 'From €0.01'
     segments: []
   - slug: idenfy
     name: iDenfy
@@ -2341,21 +2341,6 @@ kyc:
     - Only the Essential plan is priced (from $250 a month), with a 12-month minimum term
     - We found no Persona transaction monitoring engine; it opens cases from your own monitoring alerts
     legacy_price_shown: From $250/mo
-  - slug: incode
-    name: Incode
-    award: Best for Enterprise Biometrics
-    tagline: Biometric onboarding and authentication platform, with sanctions and PEP screening sold as a Watchlist module.
-    coverage: Global, 190+ countries
-    size: Mid-market to Enterprise
-    pros:
-    - Passive liveness tested by iBeta to ISO/IEC 30107-3 Level 3 on iOS and Android
-    - 4,900+ ID document types across 190+ countries, with NFC chip reading in the mobile SDK
-    - Deepsight module for deepfake and synthetic ID defense
-    cons:
-    - No published pricing; licensing is quoted by volume and deployment scope
-    - Screening is a separate Watchlist module, and we found no transaction monitoring on its pages
-    - SOC 2 Type 2, ISO/IEC 27001 and Kantara IAL2 are listed only on its trust centre
-    legacy_price_shown: Custom pricing
   - slug: ondato
     name: Ondato
     award: null
@@ -2371,6 +2356,21 @@ kyc:
     - 'ISO/IEC 27001 and eIDAS certification shown without a certifier or certificate number'
     legacy_price_shown: 'From €0.50/verification'
     segments: []
+  - slug: incode
+    name: Incode
+    award: Best for Enterprise Biometrics
+    tagline: Biometric onboarding and authentication platform, with sanctions and PEP screening sold as a Watchlist module.
+    coverage: Global, 190+ countries
+    size: Mid-market to Enterprise
+    pros:
+    - Passive liveness tested by iBeta to ISO/IEC 30107-3 Level 3 on iOS and Android
+    - 4,900+ ID document types across 190+ countries, with NFC chip reading in the mobile SDK
+    - Deepsight module for deepfake and synthetic ID defense
+    cons:
+    - No published pricing; licensing is quoted by volume and deployment scope
+    - Screening is a separate Watchlist module, and we found no transaction monitoring on its pages
+    - SOC 2 Type 2, ISO/IEC 27001 and Kantara IAL2 are listed only on its trust centre
+    legacy_price_shown: Custom pricing
   - slug: veridas
     name: Veridas
     award: Best for Face and Voice Biometrics
@@ -2805,6 +2805,20 @@ eu:
     - No iBeta liveness letter found under its name
     - Smaller scale and brand recognition than category leaders
     segments: []
+  - slug: ondato
+    name: Ondato
+    award: null
+    tagline: 'Smart-ID and Mobile-ID in its docs, plus document, NFC and video identification, with published per-check prices in euros.'
+    coverage: 'Global'
+    pros:
+    - 'Smart-ID and Mobile-ID are documented in its developer docs'
+    - 'Identity proofing certified under eIDAS in April 2025, per Ondato'
+    - 'Published per-check prices in euros, charged only for completed verifications'
+    cons:
+    - 'The eIDAS certificate has no published certifier or number'
+    - 'No liveness lab letter in Ondatos own name; its liveness comes from an unnamed supplier'
+    - 'Its docs document only Smart-ID and Mobile-ID among EU eIDs'
+    segments: []
   - slug: incode
     name: Incode
     award: null
@@ -2819,20 +2833,6 @@ eu:
     - The docs give no status per eID scheme; countries are enabled through an Incode representative
     - No published pricing; licensing is quoted by volume and deployment scope
     - Enterprise-oriented, so pricier for smaller teams
-    segments: []
-  - slug: ondato
-    name: Ondato
-    award: null
-    tagline: 'Smart-ID and Mobile-ID in its docs, plus document, NFC and video identification, with published per-check prices in euros.'
-    coverage: 'Global'
-    pros:
-    - 'Smart-ID and Mobile-ID are documented in its developer docs'
-    - 'Identity proofing certified under eIDAS in April 2025, per Ondato'
-    - 'Published per-check prices in euros, charged only for completed verifications'
-    cons:
-    - 'The eIDAS certificate has no published certifier or number'
-    - 'No liveness lab letter in Ondatos own name; its liveness comes from an unnamed supplier'
-    - 'Its docs document only Smart-ID and Mobile-ID among EU eIDs'
     segments: []
   - slug: veridas
     name: Veridas
