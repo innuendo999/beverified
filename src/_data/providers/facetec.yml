@@ -1,0 +1,380 @@
+slug: facetec
+name: FaceTec
+alternate_names:
+- FaceTec, Inc.
+- ZoOm
+status: published
+seo:
+  title: 'FaceTec Review 2026: Pricing, Features & Alternatives | BeVerified'
+  description: 'FaceTec review: 3D liveness and face matching software you run on your own servers, with iBeta Level 2 letters, lab-tested injection attack detection and a spoof bounty. Pricing, pros & cons, alternatives.'
+  h1: 'FaceTec Review 2026: Pricing, Features & Alternatives'
+tagline: 3D liveness and face matching software that runs on your own servers, with lab-tested spoof and injection defences
+score: 3.5
+grade: Very Good
+methodology: v3.1
+primary_category: liveness-detection
+categories:
+- liveness-detection
+link:
+  url: https://www.facetec.com
+  type: none
+last_verified: '2026-11-25'
+updated: '2026-11-25'   # last content edit; last_verified = last fact re-check
+verdict: 'FaceTec suits teams that want strong liveness and face matching and are able to run the software themselves. Its 3D Liveness has iBeta Level 1 and 2 letters, and BixeLab and Ingenium letters from late 2025 report no successful injection attacks, the Ingenium one at a level it calls equivalent to CEN/TS 18099 High. Everything runs on your servers, so no user data goes to FaceTec. The trade-offs: no published prices and a monthly minimum, no ISO 27001 or SOC 2 claim, and you host, scale and update the servers yourself.'
+what_is:
+- FaceTec, Inc. is a US biometrics software company. Its press releases are datelined Summerlin, Nevada, and a third-party software listing gives 2013 as its founding year. FaceTec says its software runs over 3.7 billion 3D Liveness checks a year.
+- FaceTec sells 3D Liveness, 3D face matching, Photo ID Match with OCR, barcode and NFC scanning, and age checks as device SDKs plus a Server SDK. The customer runs the Server SDK on its own servers or cloud, so FaceTec does not receive end-user biometric data or personal data. FaceTec also runs a $600,000 Spoof Bounty Program.
+features:
+- 3D Liveness from a short video selfie, with device SDKs for iOS, Android and the browser.
+- 3D face matching for onboarding and re-verification; FaceTec states a false acceptance rate of 1 in 125 million at under 1% false rejection.
+- Photo ID Match that matches the face to the ID photo, with OCR, barcode and NFC scanning, included for customers at no extra charge per FaceTec.
+- Age checks from the face, returned as age bands.
+- Server SDK that the customer hosts, so biometric data and personal data stay on the customer's own servers or cloud.
+- $600,000 Spoof Bounty Program for anyone who can bypass its liveness.
+pricing:
+  summary: FaceTec does not publish prices. It bills monthly for 3D Liveness usage, per check or per user depending on the account, with a minimum monthly commitment, and quotes on request. Photo ID scans are included at no charge, and firms that cannot meet the minimum can buy through distribution partners with no monthly minimum, per FaceTec.
+  plans:
+  - tier: Custom Quote
+    price: Custom
+    note: Billed monthly per 3D Liveness check or per user
+    extra: Minimum monthly commitment; amount not published
+  legacy_verified_note: null
+  verified: '2026-11'
+  items:
+  - label: Published prices
+    value: Not published; quoted on request
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: Minimum
+    value: Minimum monthly commitment, amount not published
+    kind: official
+    source: 2
+    verified: '2026-11'
+  - label: Photo ID scans
+    value: Included at no charge for customers and partners
+    kind: official
+    source: 2
+    verified: '2026-11'
+  model:
+    published: none
+    minimum: true
+    trial: false
+    source: 2
+integration:
+  checked: '2026-11'
+  docs_public:
+    status: 'yes'
+    note: REST API reference published as a public Postman collection
+    source: 11
+  sdk_web:
+    status: 'yes'
+    note: browser SDK
+    source: 1
+  sdk_ios:
+    status: 'yes'
+    note: iOS SDK
+    source: 1
+  sdk_android:
+    status: 'yes'
+    note: Android SDK
+    source: 1
+  sandbox:
+    status: 'yes'
+    note: free developer account with test access to liveness, matching, ID OCR and NFC
+    source: 3
+  no_code:
+    status: not_disclosed
+    note: no hosted or no-code flow; SDK and self-hosted server only
+  support_hours:
+    status: not_disclosed
+    note: no support hours published
+coverage:
+  checked: '2026-11'
+  countries:
+    value: null
+    note: no country count published for ID scanning
+  document_types:
+    value: null
+    note: no document type count published
+  non_doc:
+    status: not_disclosed
+    note: nothing found on vendor pages
+track_record:
+  ownership:
+    status: stable
+    note: privately held
+    source: 14
+facts:
+- label: From
+  value: Not publicly disclosed
+- label: Founded
+  value: 2013 (third-party software listing; not stated on FaceTec's site)
+  source: 14
+  evidence: independent
+- label: HQ
+  value: Summerlin, Nevada, US (press release dateline)
+  source: 10
+  evidence: vendor
+- label: Funding
+  value: Not publicly disclosed
+- label: Deployment
+  value: Device SDKs plus a Server SDK that the customer hosts; no end-user data sent to FaceTec
+  source: 3
+  evidence: vendor
+- label: Liveness
+  value: iBeta ISO/IEC 30107-3 Level 1 (2018) and Level 2 (2019)
+  source: 5
+  evidence: independent
+- label: Injection attack tests
+  value: BixeLab (Oct 2025) and Ingenium, Level 2 IAD equivalent to CEN/TS 18099 High (Nov 2025); no successful attack reported
+  source: 8
+  evidence: independent
+- label: Usage
+  value: Over 3.7 billion 3D Liveness checks a year (vendor-stated)
+  source: 1
+  evidence: vendor
+- label: Certifications
+  value: No ISO/IEC 27001 or SOC 2 claim found
+  source: 3
+  evidence: vendor
+pros:
+- iBeta Level 1 and 2 letters, plus BixeLab and Ingenium injection attack tests from late 2025 with no successful attack
+- Runs on your own servers, so no end-user biometric or personal data goes to FaceTec
+- Photo ID scanning with OCR, barcode and NFC is included at no extra charge, per FaceTec
+cons:
+- No published prices, and a minimum monthly commitment
+- You host, scale and patch the Server SDK yourself, and integrators say the device SDK must be updated every 90 days or it stops working
+- No ISO/IEC 27001 or SOC 2 claim, and no published support hours
+alternatives:
+- slug: iproov
+  name: iProov
+  best_for: Certified Face Verification
+- slug: incode
+  name: Incode
+  best_for: Biometrics and AI Agent Checks
+- slug: sumsub
+  name: Sumsub
+  best_for: Best All-in-One Platform
+choose_instead:
+- slug: iproov
+  need: A hosted liveness service with a FIDO certificate
+  text: you want face verification run as a service, with a FIDO Face Verification certificate and a UK DVS certified reusable ID, instead of servers you run yourself.
+- slug: incode
+  need: Liveness inside a full identity platform
+  text: you want liveness with an iBeta Level 3 letter together with document checks and AML screening from one vendor.
+- slug: sumsub
+  need: KYC, KYB and AML in one platform
+  text: you need liveness inside a platform that also covers KYB, transaction monitoring and published per-verification prices.
+user_reviews:
+  legacy_note: null
+  praise: []
+  criticize: []
+  by_profile:
+  - Banks, governments and large platforms that need data to stay in their own infrastructure are FaceTec's core fit.
+  - Identity vendors that build their own KYC flow can license FaceTec as the liveness and face matching layer.
+  - Small teams that want a hosted service with self-serve prices will find simpler options elsewhere.
+faq:
+- q: How much does FaceTec cost?
+  a: FaceTec does not publish prices. It bills monthly for 3D Liveness usage, per check or per user depending on the account, with a minimum monthly commitment, and quotes on request. Photo ID scans are included at no charge. Firms that cannot meet the minimum can buy through FaceTec's distribution partners, which have no monthly minimum, per FaceTec.
+- q: Is FaceTec's liveness independently tested?
+  a: Yes. iBeta's public list shows FaceTec ZoOm at Level 1 (August 2018) and Level 2 (February 2019). In late 2025, BixeLab and Ingenium Biometric Laboratories tested FaceTec against injection attacks and their letters report no successful attack; Ingenium calls its level equivalent to CEN/TS 18099 High. FaceTec also says BixeLab and Ingenium passed it at PAD Level 3 in 2025.
+- q: Does FaceTec store my users' data?
+  a: No. FaceTec sells device SDKs and a Server SDK that you run on your own servers or cloud, and it says no end-user biometric data or personal data is sent to FaceTec. You are responsible for hosting, storing and securing that data.
+- q: Does FaceTec check identity documents?
+  a: Yes, as part of Photo ID Match. It matches the face to the photo on the ID and reads the document with OCR, barcode and NFC scanning. FaceTec does not publish a country or document type count, and it does not sell AML screening.
+- q: Is FaceTec SOC 2 or ISO 27001 certified?
+  a: We found no ISO/IEC 27001 or SOC 2 claim on FaceTec's site. Because the software runs on your servers, your own security controls cover most of the data handling.
+- q: What is the best alternative to FaceTec?
+  a: iProov is the closest alternative if you want face verification run as a hosted service with a FIDO certificate. Incode and Sumsub suit teams that want liveness inside a full identity platform.
+segments: []
+capabilities:
+  checked: '2026-11'
+  identity_verification:
+    status: 'yes'
+    note: Photo ID Match with OCR, barcode and NFC
+    source: 1
+  liveness:
+    status: 'yes'
+    note: 3D Liveness
+    source: 1
+  injection_detection:
+    status: 'yes'
+    note: BixeLab IAD letter (Oct 2025) and Ingenium Level 2 IAD letter, equivalent to CEN/TS 18099 High (Nov 2025)
+    source: 8
+    independent: true
+    checked: '2026-11'
+  nfc:
+    status: 'yes'
+    note: NFC scanning in Photo ID Match
+    source: 3
+  reusable_id:
+    status: not_disclosed
+    note: UR Codes carry a face credential, but FaceTec does not describe a reusable identity service
+  video_ident:
+    status: not_disclosed
+    note: no agent video ident found
+  age_facial_estimation:
+    status: 'yes'
+    note: age checks returned as age bands
+    source: 3
+  sanctions_pep:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  transaction_monitoring:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  case_management:
+    status: not_disclosed
+    note: nothing found on vendor pages
+  data_residency:
+    status: 'yes'
+    note: data stays on the customer's own servers or cloud
+    source: 3
+  deployment:
+    status: on_prem
+    note: Server SDK hosted by the customer
+    source: 3
+certifications:
+- name: ISO/IEC 30107-3 Level 2 (iBeta)
+  program: ibeta_pad
+  level: 2
+  what: Liveness (ZoOm v6.9.11, Feb 2019)
+  status: confirmed
+  source: 5
+- name: ISO/IEC 30107-3 Level 1 (iBeta)
+  program: ibeta_pad
+  level: 1
+  what: Liveness (ZoOm v6.6.0, Aug 2018)
+  status: confirmed
+  source: 5
+- name: Injection attack detection (BixeLab)
+  program: other
+  what: 48 injection attacks rejected, SDK Mobile v9.7.83 and Web v9.7.76 (Oct 2025)
+  status: confirmed
+  source: 7
+- name: CEN/TS 18099 High equivalent (Ingenium Level 2 IAD)
+  program: other
+  what: Injection attack detection (Nov 2025)
+  status: confirmed
+  source: 8
+- name: ISO/IEC 30107-3 Level 3 (BixeLab and Ingenium)
+  program: other
+  what: Liveness against high-effort masks (2025, letters not opened)
+  status: vendor_stated
+  source: 4
+user_ratings: []
+use_case_verdicts: []
+score_breakdown:
+- criterion: "Fraud defense"
+  weight: 25
+  score: 5
+  note: "PAD Level 2 lab result, tested injection detection, NFC"
+  evidence: independent
+- criterion: "Pricing and total cost"
+  weight: 20
+  score: 2
+  note: "no published price, quoted by sales"
+  evidence: vendor
+- criterion: "Coverage"
+  weight: 15
+  score: null
+  note: "country count not disclosed"
+  evidence: null
+- criterion: "Platform breadth"
+  weight: 15
+  score: 3
+  note: "3 of 5 liveness modules: identity verification, liveness, facial age estimation"
+  evidence: vendor
+- criterion: "Integration and time to launch"
+  weight: 15
+  score: 4
+  note: "public API docs, self-serve sandbox or trial, web, iOS and Android SDKs"
+  evidence: vendor
+- criterion: "Trust and track record"
+  weight: 10
+  score: 2.5
+  note: "data residency or on-premises, operating since 2013"
+  evidence: vendor
+hands_on: null
+sources:
+- title: FaceTec homepage
+  publisher: FaceTec
+  url: https://facetec.com/
+  accessed: '2026-11'
+- title: FaceTec pricing
+  publisher: FaceTec
+  url: https://www.facetec.com/pricing
+  accessed: '2026-11'
+- title: FaceTec for developers
+  publisher: FaceTec
+  url: https://www.facetec.com/developers
+  accessed: '2026-11'
+- title: FaceTec's third-party testing and security initiatives (21 Nov 2025)
+  publisher: FaceTec
+  url: https://www.facetec.com/FaceTec_3rd_Party_Testing_Report.pdf
+  accessed: '2026-11'
+- title: ISO/IEC 30107-3 PAD confirmation letters
+  publisher: iBeta
+  url: https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/
+  accessed: '2026-11'
+- title: FaceTec PAD Level 2 confirmation letter
+  publisher: iBeta
+  url: https://www.ibeta.com/wp-content/uploads/2019/07/FaceTec-PAD-Level-2-Confirmation-Letter.pdf
+  accessed: '2026-11'
+- title: Letter of confirmation, injection attack detection evaluation of the FaceTec SDK
+  publisher: BixeLab
+  url: https://facetec.com/FaceTec_Bixelab_Level_5_Pass_Letter.pdf
+  accessed: '2026-11'
+- title: 'Evaluation statement: FaceTec 3D FaceScan, Level 2 IAD (CEN High)'
+  publisher: Ingenium Biometric Laboratories
+  url: https://facetec.com/FaceTec_Ingenium_Level_5_Pass_Letter.pdf
+  accessed: '2026-11'
+- title: FaceTec 3D-2D face matching test report v2.1
+  publisher: BixeLab
+  url: https://facetec.com/FaceTec_BixeLab_3D-2D_Test_Report_Final_v2.1.pdf
+  accessed: '2026-11'
+- title: FaceTec 3D Liveness passes Level 3 PAD and Level 5 IAD from both Ingenium and BixeLab
+  publisher: PR Newswire
+  url: https://www.prnewswire.com/news-releases/facetec-3d-liveness-passes-level-3-pad--level-5-iad-from-both-ingenium-and-bixelab-302629572.html
+  accessed: '2026-11'
+- title: FaceTec REST API documentation
+  publisher: FaceTec (Postman)
+  url: https://api-docs-postman.facetec.com/view/metadata/TVKEXHPv
+  accessed: '2026-11'
+- title: FaceTec integration guide
+  publisher: Signicat
+  url: https://developer.signicat.com/docs/id-document-and-biometric-verification/provider-specific-integrations/facetec/
+  accessed: '2026-11'
+- title: BIPA lawsuit against FaceTec has been formally dismissed
+  publisher: PRWeb
+  url: https://www.prweb.com/releases/bipa_lawsuit_against_facetec_has_been_formally_dismissed/prweb19342419.htm
+  accessed: '2026-11'
+- title: FaceTec 3D Face Authentication
+  publisher: FitGap
+  url: https://us.fitgap.com/products/020130/facetec-3d-face-authentication
+  accessed: '2026-11'
+entity:
+  wikidata: null
+  kg_mid: null
+  same_as:
+  - https://www.facetec.com
+legacy_issues: []
+legacy_editorial_note: null
+verification_notes:
+- 'link.type set to none: no commercial relationship with FaceTec is recorded.'
+- 'iBeta: the full list on iBeta''s page shows FaceTec ZoOm v6.6.0 Level 1 (20 Aug 2018) and v6.9.11 Level 2 (7 Feb 2019), checked 25 Nov 2026. No newer iBeta entry.'
+- 'PAD Level 3 (BixeLab, Oct 2025; Ingenium, Nov 2025): stated in FaceTec''s testing report and press release; the Level 3 letters on facetec.com could not be opened from this session (owner to open facetec.com/FaceTec_Bixelab_Level_3_Pass_Letter.pdf). If the letter names FaceTec and Level 3, change that certification to confirmed with level 3. Fraud defense is already 5 (capped), so the score would not change.'
+- 'Injection: BixeLab IAD letter opened (issued to FaceTec, test report 27 Oct 2025, SDK Mobile v9.7.83 and Web v9.7.76, 48 injection attacks rejected; BixeLab says the outcome is not NVLAP-accredited). Ingenium evaluation statement opened (Level 2 IAD, consistent with CEN TS 18099 High, 20 Nov 2025, PASS). Both lab letters are published on facetec.com, treated as confirmed like the Didit iBeta letter.'
+- 'Praetorian "Level 4" bypass and reverse engineering test (Aug to Sep 2025) is a security assessment, not a liveness standard; mentioned in the testing report, not scored.'
+- 'HQ: press releases are datelined Summerlin, Nevada; the developers page metadata points to Orlando, Florida and FitGap gives Los Angeles. Summerlin used, labelled as the dateline.'
+- 'Founded: 2013 from FitGap only (third party). FaceTec''s own pages do not state a year. Used for the 5-year track record point.'
+- 'SDK update policy: Signicat''s FaceTec guide says the SDK must be updated every 90 days or the FaceTec service stops working, citing dev.facetec.com/updating. Used in the cons.'
+- 'Coverage: no country or document count published, so the Coverage criterion is not scored and its weight is shared out.'
+- 'No logo yet: owner to supply the logo tile and wordmark.'
+- 'Incidents: none found (searched 25 Nov 2026). A 2023 BIPA suit naming FaceTec was dismissed; private BIPA suits without a breach are not tracked.'
+- 'Ondato''s security page describes a third-party facial technology with "NIST Level 1 & 2 PAD testing" and a "$100,000 Spoof Bounty Program", close to FaceTec''s wording, but Ondato does not name its supplier. Not stated on either review.'
+application_category: Identity Verification Software
+author: andrii-klymenko
+directory_categories:
+- Liveness Detection
