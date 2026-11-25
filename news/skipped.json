@@ -1,40 +1,6 @@
 {
-  "generated": "2026-11-24T14:56:42.852Z",
+  "generated": "2026-11-25T14:30:41.804Z",
   "items": [
-    {
-      "id": "81c349e0bc16fdaf",
-      "title": "Smarter regulation means understanding the trade-offs",
-      "url": "https://www.fca.org.uk/news/blogs/smarter-regulation-means-understanding-trade-offs",
-      "date": "2026-11-24",
-      "source": "fca",
-      "source_name": "Financial Conduct Authority (UK)",
-      "publisher": "Financial Conduct Authority (UK)",
-      "tier": 1,
-      "needs_primary_source": false,
-      "providers": [],
-      "region": "UK",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "0dc2f0b99409103f",
-      "title": "Kandoo Car Credit Ltd enters administration",
-      "url": "https://www.fca.org.uk/news/news-stories/kandoo-car-credit-ltd-enters-administration",
-      "date": "2026-11-23",
-      "source": "fca",
-      "source_name": "Financial Conduct Authority (UK)",
-      "publisher": "Financial Conduct Authority (UK)",
-      "tier": 1,
-      "needs_primary_source": false,
-      "providers": [],
-      "region": "UK",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
     {
       "id": "16e6b076083bdf6e",
       "title": "The not-so-fine print: making consumer contracts fair",
@@ -335,10 +301,10 @@
       "reason": "Older than 7 days."
     },
     {
-      "id": "ae241d6328c84a7c",
-      "title": "Nuclear Regulatory Review: joint ministerial letter to industry",
-      "url": "https://www.gov.uk/government/publications/nuclear-regulatory-review-joint-ministerial-letter-to-industry",
-      "date": "2026-11-24",
+      "id": "908e2b3b783979b2",
+      "title": "Government reappoints AI Champions to drive next phase of AI in financial services",
+      "url": "https://www.gov.uk/government/news/government-reappoints-ai-champions-to-drive-next-phase-of-ai-in-financial-services",
+      "date": "2026-11-25",
       "source": "govuk-hmt",
       "source_name": "GOV.UK, HM Treasury",
       "publisher": "GOV.UK, HM Treasury",
@@ -349,12 +315,12 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "67e9b311795a0b0e",
-      "title": "Better regulation chief appointed to cut unnecessary bureaucracy",
-      "url": "https://www.gov.uk/government/news/better-regulation-chief-appointed-to-cut-unnecessary-bureaucracy",
+      "id": "fdd7a75015dd2b54",
+      "title": "20 million households to receive £100 payment",
+      "url": "https://www.gov.uk/government/news/20-million-households-to-receive-100-payment",
       "date": "2026-11-24",
       "source": "govuk-hmt",
       "source_name": "GOV.UK, HM Treasury",
@@ -366,7 +332,24 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "9813bf5831a7bedb",
+      "title": "Daniel E. Pinto appointed to the Bank of England’s Financial Policy Committee",
+      "url": "https://www.gov.uk/government/news/daniel-e-pinto-appointed-to-the-bank-of-englands-financial-policy-committee",
+      "date": "2026-11-24",
+      "source": "govuk-hmt",
+      "source_name": "GOV.UK, HM Treasury",
+      "publisher": "GOV.UK, HM Treasury",
+      "tier": 1,
+      "needs_primary_source": false,
+      "providers": [],
+      "region": "UK",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
     },
     {
       "id": "f5804d246d4cfa99",
@@ -463,45 +446,6 @@
       "id": "a92d7ee4f43454da",
       "title": "UK boosts support to Ukraine with £10 billion package",
       "url": "https://www.gov.uk/government/news/uk-boosts-support-to-ukraine-with-10-billion-package",
-      "date": "2026-10-28",
-      "source": "govuk-hmt",
-      "source_name": "GOV.UK, HM Treasury",
-      "publisher": "GOV.UK, HM Treasury",
-      "tier": 1,
-      "needs_primary_source": false,
-      "rule": "too-old",
-      "reason": "Older than 7 days."
-    },
-    {
-      "id": "7252ad9fb75e61b1",
-      "title": "Budget 2026 speech",
-      "url": "https://www.gov.uk/government/speeches/budget-2026-speech",
-      "date": "2026-10-28",
-      "source": "govuk-hmt",
-      "source_name": "GOV.UK, HM Treasury",
-      "publisher": "GOV.UK, HM Treasury",
-      "tier": 1,
-      "needs_primary_source": false,
-      "rule": "too-old",
-      "reason": "Older than 7 days."
-    },
-    {
-      "id": "f8bb0e965bb5a1f6",
-      "title": "Budget 2026 Fact Sheet: Delivering for Every Region",
-      "url": "https://www.gov.uk/government/news/budget-2026-fact-sheet-delivering-for-every-region",
-      "date": "2026-10-28",
-      "source": "govuk-hmt",
-      "source_name": "GOV.UK, HM Treasury",
-      "publisher": "GOV.UK, HM Treasury",
-      "tier": 1,
-      "needs_primary_source": false,
-      "rule": "too-old",
-      "reason": "Older than 7 days."
-    },
-    {
-      "id": "9b7edddadb0df30c",
-      "title": "Further support for Ukraine",
-      "url": "https://www.gov.uk/government/news/further-support-for-ukraine",
       "date": "2026-10-28",
       "source": "govuk-hmt",
       "source_name": "GOV.UK, HM Treasury",
@@ -1019,9 +963,28 @@
       "reason": "Older than 7 days."
     },
     {
-      "id": "fd9251642b9441f4",
-      "title": "Indicio: AI agents need verifiable identity before businesses can trust them",
-      "url": "https://www.biometricupdate.com/202611/indicio-ai-agents-need-verifiable-identity-before-businesses-can-trust-them",
+      "id": "70a004d28bf04910",
+      "title": "UK rules out joining EU Digital Identity Wallet as digital partnership takes shape",
+      "url": "https://www.biometricupdate.com/202611/uk-rules-out-joining-eu-digital-identity-wallet-as-digital-partnership-takes-shape",
+      "date": "2026-11-24",
+      "source": "biometricupdate",
+      "source_name": "Biometric Update",
+      "publisher": "Biometric Update",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "vendor-marketing",
+      "matched": "partnership",
+      "route": "skip",
+      "priority": null,
+      "reason": "Vendor marketing, not news for buyers.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "1a7b11292bc2c2a6",
+      "title": "Cameroon urged to strengthen birth registration law and women’s role in legal identity",
+      "url": "https://www.biometricupdate.com/202611/cameroon-urged-to-strengthen-birth-registration-law-and-womens-role-in-legal-identity",
       "date": "2026-11-24",
       "source": "biometricupdate",
       "source_name": "Biometric Update",
@@ -1033,12 +996,25 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "df018da94a277452",
-      "title": "FBI moves toward 2027 competition for biometric matching algorithms",
-      "url": "https://www.biometricupdate.com/202611/fbi-moves-toward-2027-competition-for-biometric-matching-algorithms",
+      "id": "5f444ff1f138465a",
+      "title": "Wultra-led consortium wins Czech EUDI Wallet concession, Valetka due by end of 2027",
+      "url": "https://www.biometricupdate.com/202611/wultra-led-consortium-wins-czech-eudi-wallet-concession-valetka-due-by-end-of-2027",
+      "date": "2026-11-24",
+      "source": "biometricupdate",
+      "source_name": "Biometric Update",
+      "publisher": "Biometric Update",
+      "tier": 2,
+      "needs_primary_source": true,
+      "rule": "covered",
+      "reason": "Already a source of an article on the site."
+    },
+    {
+      "id": "5e3c92f3a1f8ce15",
+      "title": "ICE considers 1,500 contractor analysts for biometric intelligence and agentic AI",
+      "url": "https://www.biometricupdate.com/202611/ice-considers-1500-contractor-analysts-for-biometric-intelligence-and-agentic-ai",
       "date": "2026-11-24",
       "source": "biometricupdate",
       "source_name": "Biometric Update",
@@ -1050,16 +1026,84 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "38c0be94e51cce7c",
-      "title": "Kazakhstan enters UN’s top digital government tier as AI raises the stakes",
-      "url": "https://www.biometricupdate.com/202611/kazakhstan-enters-uns-top-digital-government-tier-as-ai-raises-the-stakes",
+      "id": "c35784b12ea4a98f",
+      "title": "ACCA and Enterprise Uzbekistan partner to advance AI and finance skills",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOTnJoQzZTancwR1FkTlA3Q3lzRzBaaUNxZjZvTlg1TkVWMTFWaHVRVVE1MzRSeGNnMFpIV3QwWkNqbjdtcTJ5bE0yWTlOOXdrSjlscVRSS2tzQzZJLU1PSWx2OEtWTlhxRXNieGVRZnUyT1d6R3JQMVQ1cVM5NnhMUm1BamtaN1lHUVVMV0Z0Y1l4UQ?oc=5",
       "date": "2026-11-24",
-      "source": "biometricupdate",
-      "source_name": "Biometric Update",
-      "publisher": "Biometric Update",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Yahoo Finance",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "b63a55ebc7ba6626",
+      "title": "VU receives $12.5M to advance AI learning and operations",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxONzJNYWczaEdTNzdkN3JVWGdqcU5tZlVYb3doMlF2cW96TUtVck82UDlraFdwa2lDQ0tmTGo1aFRjT1BmOEdXeTZaU1h0SHY0Vi1uM3NmM2dTajd4RXV5SHQ5UjFkX2c0Sk1hSEdrdk52T2o1TUVLY0I4ZkdyMGFCRGFGWGFnNWNDbG1wdDctUk5rVklzR3h30gGcAUFVX3lxTFA5R1pnZ3kxQ0kyakJyQlB1NmthWHExTlhpZTdnNHNZMnBEaGpqZXpWWnRLRmZ4RDA0b2FoLWhqaVRJVXJ5X3ZtZF9IakI1emI1WDNkVHh1Q1lOeWNqa0cyTGlad3JVdlhrVnFaU2Vqa3VCVzkwZ2ZYQlRXelp1NUU2SGdPMG1yX1Q0d2g4SGg2Qks1R1dJVG11RXFucg?oc=5",
+      "date": "2026-11-24",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "MyWabashValley.com",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "8ca00fffbc58e7cf",
+      "title": "Draganfly and Estonian-Ukrainian DOD Solution Sign Agreement to Advance AI-Powered Autonomy for Unmanned Systems",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNVHF3ZEtQaVplaGtaN1FIY3RwX25tUmo1dXpQaHdCbW1POVkxRVozd0wyUWo2R1QzbjVIMHptRmhNMlRKZGFTRWdzTHNLVFpiUXJMUFdlNmljQXJTbF9sbVpyWmdFVmd1LWlmcnNGUGZ2R2dET2dBMHlENlF3Ykl4Ukg3SFhIZG1rTHVNaTk4NHU1WTVyaFlCNUlrWW5Nc2lSMXNwTGdialM4YS1TUFE3NmFJTUxsMXBpNnhiSlUydUxIeWtlRzJvNkNGT1dkRnNNVXRQSkJ1WS1JLVhfREkycFo1YklEWmtSM2JzMWtOVHlxUGdBOTcxRWl3Y0U?oc=5",
+      "date": "2026-11-23",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Morningstar",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "fbabf780bcbb8377",
+      "title": "Anthropic Expanding in Zurich to Advance AI Research",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdTl2aC1pNUJsc3JjcWJFNVJqQ3o3eFZWY3VaZjZaZUZMXzFKTU9ldi1MNDU3Y3VucWlucWxJUkhnbXVGTHVsVG9RWGdnN0VObkJ0b19rR2xJd0J2b1E2MTZHZEJMYWR3ZlA5VmdCMU5HcmJoUGhKd3RlaEJMQXFlSnZtVU9fM3R5azg1YTV4d19UMm56R3FST3NmeERUVEVlWEM3dmwxaUw?oc=5",
+      "date": "2026-11-25",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "marketscreener.com",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "412bb8a63ff09a86",
+      "title": "Aqura Systems raises £2.1M to advance AI-powered fish farm monitoring",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPYmVnTzMxRlZFMjFIMkhpbkJOZmMzRjVwMjlLdDVSZFhhVUNoMEVFdXd2Tnd1a2lPTEROcHJDaHRDNnRFblZPc1dXN293WVhaXzN0bUF5OUYxa2QzVjhKSHhjRDVVMk0xN045czYyS3U5dXM2YnNxY2RpWEJ1NWhrMG54T2FXdFg2UFlTQmZKZkNoTUxhTE5zeHRrY1R2Zw?oc=5",
+      "date": "2026-11-25",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Tech.eu",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [],
@@ -1069,16 +1113,16 @@
       "route": "skip",
       "priority": null,
       "reason": "Funding rounds are not covered (owner, 2026-11-16).",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "e97fa616bc02208e",
-      "title": "Fiji advances voluntary biometric ID law, maps 788 government services for digitization",
-      "url": "https://www.biometricupdate.com/202611/fiji-advances-voluntary-biometric-id-law-maps-788-government-services-for-digitization",
+      "id": "6322c09961ffaf18",
+      "title": "PatentVest Introduces Predictive Examination to Advance AI-Enabled Patent Drafting",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNMU1DZWl2Rld3WFVOSF9IbTc5MjZSWldzank3eGp4RGVaTTJieWpERUczd205bWd5ZVF0VjBOMF9XZjE1bDFaMDloRE4yM011eFFZTURaaUV0eWxHbjVlSEtWTnVwRXBhQkVUZjFQNDhxZWhCb1A5REZQbzdIbmlBT21tR1RqT3YwUktkWGtENW83R2tCNWN4OHRFQVM4T2RfRnJfcXA4c1NKeG5OQ21pZ3VoSnZpcFVkeFJfOTRRSW5pSzA?oc=5",
       "date": "2026-11-24",
-      "source": "biometricupdate",
-      "source_name": "Biometric Update",
-      "publisher": "Biometric Update",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Quantisnow",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [],
@@ -1086,16 +1130,16 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "0c1d6cc58776d232",
-      "title": "NIST FRTE 1:1 face verification results reveal wide accuracy gaps across applications",
-      "url": "https://www.biometricupdate.com/202611/nist-frte-11-face-verification-results-reveal-wide-accuracy-gaps-across-applications",
-      "date": "2026-11-23",
-      "source": "biometricupdate",
-      "source_name": "Biometric Update",
-      "publisher": "Biometric Update",
+      "id": "7a232a7ed16ef791",
+      "title": "Rakovina Therapeutics and NanoPalm Advance AI-Driven Therapeutic Discovery and Precision Delivery Collaboration",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQaEJGZ3NWM1FTa3pCdXRKLWJqbnBUYUttNW1rVXJiTC1IZTFGTkZGOVF4V3QzWjlndEl4U3NQczRsUFJwWUVMd1dUd1NRb1RmbWNNVjNtbUI4REVDNkpLQldlY0FPTXRrZ3dEazh5OExLUFg0NHdmdmJCRFdKYWR1SUtxdDVGOVN6YnJxaTd6V0tYX0xsTmpQUVlfeFVIMUNKbE95c3RHWHZUUmJkSFVoOGdYcTJQcU80WHZFS2ZfV3dkbFNQcXp1LXdBaXhkQkw5WDFfdnlwT1BITVd3NzRIR3dwS2RCNVZiNGRxbFZYYVh5TGdpNnhJb1MySzJ6RGVNeEJKZGRZSkgzeHp5WWFEVQ?oc=5",
+      "date": "2026-11-25",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "GlobeNewswire",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [],
@@ -1103,73 +1147,22 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "0a2d31d0a01f22cb",
-      "title": "US seeks replacement for 430M-face passport and visa biometric matching system",
-      "url": "https://www.biometricupdate.com/202611/us-seeks-replacement-for-430m-face-passport-and-visa-biometric-matching-system",
-      "date": "2026-11-23",
-      "source": "biometricupdate",
-      "source_name": "Biometric Update",
-      "publisher": "Biometric Update",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "59442bce995ab996",
-      "title": "BehavLabs posts low keystroke biometric error rates in ongoing benchmark",
-      "url": "https://www.biometricupdate.com/202611/behavlabs-posts-low-keystroke-biometric-error-rates-in-ongoing-benchmark",
-      "date": "2026-11-23",
-      "source": "biometricupdate",
-      "source_name": "Biometric Update",
-      "publisher": "Biometric Update",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "5beca6df7fba2b4d",
-      "title": "Houston-area police withdraw proposed $288K Clearview AI facial recognition contract",
-      "url": "https://www.biometricupdate.com/202611/houston-area-police-withdraw-proposed-288k-clearview-ai-facial-recognition-contract",
-      "date": "2026-11-23",
-      "source": "biometricupdate",
-      "source_name": "Biometric Update",
-      "publisher": "Biometric Update",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "8b4117893e9e99a9",
-      "title": "TikTok taps Jumio for biometric verification in AI likeness detection rollout",
-      "url": "https://www.biometricupdate.com/202611/tiktok-taps-jumio-for-biometric-verification-in-ai-likeness-detection-rollout",
-      "date": "2026-11-23",
-      "source": "biometricupdate",
-      "source_name": "Biometric Update",
-      "publisher": "Biometric Update",
+      "id": "4756266738df5309",
+      "title": "Polymarket Promo Code FOX: Claim a $25 Bonus When Trading on the NBA Cup Tonight",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNR0wzOUlsem1ZZnNTSkdzLURhcmZhbllNVUlqNXBBM3p4MU9jN0NwSjhxZllQbWloc3Fmd1pnQ2RLN2RxaFFmaDRJZEFqN3BtQzIzcnhXSWtKckUyQndkdmQyb3FZc3NuajQwa25YR1ZJVnVZai1vOXpSRmloMWdCX29wRFk0d194dGs0UW5YVXpIWmotSFFTeG1MTFhsb2htNjFVSXVqWFRPa1llaS1SRNIBsAFBVV95cUxNR0wzOUlsem1ZZnNTSkdzLURhcmZhbllNVUlqNXBBM3p4MU9jN0NwSjhxZllQbWloc3Fmd1pnQ2RLN2RxaFFmaDRJZEFqN3BtQzIzcnhXSWtKckUyQndkdmQyb3FZc3NuajQwa25YR1ZJVnVZai1vOXpSRmloMWdCX29wRFk0d194dGs0UW5YVXpIWmotSFFTeG1MTFhsb2htNjFVSXVqWFRPa1llaS1SRA?oc=5",
+      "date": "2026-11-25",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "FOX Sports",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [
         {
-          "slug": "jumio",
-          "name": "Jumio",
+          "slug": "codevasp",
+          "name": "CODE",
           "reviewed": true
         }
       ],
@@ -1177,306 +1170,769 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "00acc0a24dfb8f80",
-      "title": "ICO flags urgent oversight gaps in Met Police retrospective facial recognition",
-      "url": "https://www.biometricupdate.com/202611/ico-flags-urgent-oversight-gaps-in-met-police-retrospective-facial-recognition",
-      "date": "2026-11-23",
-      "source": "biometricupdate",
-      "source_name": "Biometric Update",
-      "publisher": "Biometric Update",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "644b7ec52ce85dad",
-      "title": "Elastic and HoneyHive join forces to advance AI observability and evaluation",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcWU0SXdHZGNqcjR0MWc2Zk9Ua1JCc2VSbVdDeTZodGVfek1IUVNMYks4dXFMUXhnX2lOOFUtXzBUQlh0b2x2ZlBneEllQlJVbGNTY2JsY1IzVndBQXEwRVE4WExQMHBDZHR6WEYwaXR6RzlIa1VUSUsxcmMyZU9sNTdCUkFKRk9aaXBRQV9oU3g0azRFRnV6Y0dScDVJMnNEay1j?oc=5",
-      "date": "2026-11-19",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "OrangeSlices AI",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "f7e57bbed98d43d0",
-      "title": "Paradromics Partners With NVIDIA to Advance AI-Powered Brain-Computer Interfaces",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTlI5YWhuUkRTM2k2V041RVRrYXlvMEVJbXZ0ZVlUWEdzQkxQd3NKVnBqRm5pbEJKZ0VCMVQ2djBoZEV3dWQ4WHJobTlidVQ2T1VSU0FtcThsaUwzd2R6SUg5b2drbFQtRGw3d25pcGJSdnNSWllzOERKcHRVbVM1NUx3R2QxMWh1WkhVUExOa1BLVVR0aDMwYkxXMzV3Um96emVsNkN4SW5fanZxLUNaNA?oc=5",
+      "id": "0f3db65d054533fd",
+      "title": "Polymarket invite code STAR | $25 bonus for NFL Thanksgiving Games, NCAAF & more",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZFJUeVpReXVNMVRILXZQSzFEa1R3aHo5MG8wWWI5Q1o1Qmk1eXRYTWhLMFJoSVU4bjkybzN0Q2hWR0FOZmVOR2hnWkE3TUw5Z3IyeC1zRGlKSEgzcC1ycnJpR0Raamg1R1kzQnhaYVA5OTFJeVBWWjhTQjlMbjVONEd0MHlsYmZEcnhPTjJHeDNmYkx5a2FXRmN0c25LcGR2T045N1EtbkNKcmZpXzdUNXd2dw?oc=5",
       "date": "2026-11-24",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "HLTH",
+      "publisher": "IndyStar",
       "tier": 2,
       "needs_primary_source": true,
-      "providers": [],
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
       "region": "Global",
-      "rule": "vendor-marketing",
-      "matched": "partners with",
+      "rule": "fallback",
       "route": "skip",
-      "priority": null,
-      "reason": "Vendor marketing, not news for buyers.",
-      "first_seen": "2026-11-24"
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "33845c434bd29a93",
-      "title": "AMD completes acquisition of Taalas to advance AI inference innovation",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNM1B2MGE1cjl1QTduVVJhWll3TDFGQmN1OTV1cUpqYUpsemFhc0JqQ2xzZXNLOTZGM2R5b3dBdW8zLXJFejUtNzlTeFRNa0JqckIyOE80Uk82aFZNUWFnYlhiS05DWmNUM2FFcUozV2FMdm4zYlA4bnB4VXRUdkJMZmlpd0ZCSGt2dXJyR2JTNXNQS280US1BeGJzbFVoeW5yN2tyTHgwS2lxNHZnZE1SYzJUanI4alF1UlJHOFZ4WF9pWGtSYWJxUWhJVTdCQTNuOXpTb9IB2gFBVV95cUxNZ1dCWWdjdUx0RUhobDFsVG5FNWxpTW82bk1HbDFWYzNiZGdGWUNhWTdtZ2hlcldDT3NreWppenBKSnlaWTNXc1BsSGtNVW0yNjRKZll5YWdUbUJsd1pibXR0Y3J3UDFHQjhjQ2dkNDZYT2NSZFV3bkZlQUlFM3BJTTZTVWpvOXlaS3luVUczLUMyU1h6ejhNTEFUOTBFVHRLT2oyRFZ5Qnc5cE1ROXEtTFpkODV4R2xkNk5nN1UwUm1MVGpaT3JlZ3RMaUVqa3BZTnVpOTZ0V2tJQQ?oc=5",
+      "id": "96ed38f9705a6ac7",
+      "title": "Kalshi promo code FREEP | $25 bonus for NFL Week 12, college football (Nov. 24)",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOQXRGbmJlSndyNXNmY1hIVU81UW9nWWpER2VFMWhka0VVbmxHZTRHNVN3T2dBZUM3ZVk0WGt6OHdzWFVDTnFkZjlZVG1wSmpnQ2x3X1RLOGQwbmIyT0w0Y0w5bElZcUNWZU9CNEJYQTQ2SUtnUGVOaDBWbENoRURZUHU0eXRNNWVzWGNRNV9IUEZCSDNncjBQUVFYQmF5dVpJZzJSU1RYdGw4MmZlQ2c?oc=5",
       "date": "2026-11-24",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "TelecomTV",
+      "publisher": "Detroit Free Press",
       "tier": 2,
       "needs_primary_source": true,
-      "providers": [],
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
       "region": "Global",
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "266a4c4e7d4e21eb",
-      "title": "OOG and the American Diabetes Association Announce Collaboration to Advance AI-Powered Diabetes Education for Healthcare Professionals",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNNFlBRkRPREJXUEdrNmFBenE1Y1hHRTV3eHpyNEVTMnFCeHpQT1hScFJPNFlLNjN1THlxVU84aWRyNld5TGJUZ0ZiWDl4R0ZqWnc5cWNOVnpKSl9tbXVIVzhMam9yV3ZzbmdhRG8yZURBdTg0UVd4aVpkVGdCaHM2ODhOUy1YZm5XN3B6bVR1Y01MUGt3TFRybC1fWkJUYmJSejhwRXVn?oc=5",
-      "date": "2026-11-17",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Yahoo Finance",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "16c96b29e8ba7229",
-      "title": "Students help advance AI-driven neurological drug discovery through industry partnership",
-      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPbE5fLWw1RWVURk9yMVB4dWVxbGpvVFd3X0wxSU5HQlJBamRmcll2VlRFS1MxSHBNbklCcDhVZ1ZoYkZxbm9VVVZpTlZEWkFLSElvWlFPMkUyNVlTS3FIb0pWX29fV2xVMWtyVlFDbjVqejZheURUc0VTSnNVYjNHakN4TzNSM1p3YnhoSno2eVJoRlZOLWZhLVRaWTNLZWlLTEVXOHFCcU1DZTBsRlhRS3Zsd3VFaEQ2OEdydUZFRE05SWNkZWJVV0pNd3ZPb2pZMkxvVzRMb1FNY1Z4M3R3Rm9jZGh2NG5QWUlacHYyQQ?oc=5",
-      "date": "2026-11-24",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "The University of Melbourne",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "vendor-marketing",
-      "matched": "partnership",
-      "route": "skip",
-      "priority": null,
-      "reason": "Vendor marketing, not news for buyers.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "77121cfa79880d81",
-      "title": "ACCA and Enterprise Uzbekistan partner to advance AI and finance skills",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQMTE4cjRVLXlaR1F0T3hmTVhILS1aREo5WUdKdjFsV19PRXY5ME5FZU9WU1pucFFES3NGU0c1dDBmS2dDTm1Ibjk5TWtyeWx6a0tFZ015VjE5UE9wei1WRFJtMEtqNml1LW5rOG9EcXRpa3B0eUVNMERoQV92dXNTN0ZpbUZhQ3lURlhuZ3AwNVNkc3NZdWRWelVrMGlzVTlrYVk4TFA5LTVoWFIwMURUQ3VrOXE?oc=5",
-      "date": "2026-11-24",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "The Accountant Online",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "604f0a4f59ba5ec0",
-      "title": "Makro consolidates data infrastructure to advance AI-driven operations via Tencent Cloud",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTUp5VF9XRi1pV18wV2NpVXNxcl9JZ3BHR2UzVnFjdzZzeDFjWTY3SFEybGZLMFFBQjc5RUZHS1dFVkNKLU02ZkJISVBiNERKbHl0MHU2TjVsVWU5VzVLQ2dtY2wxd2w5VUpDeXNSODBZdkEtVVljcnF4ejR2MldoUVFNSGp0R1hBanNDS2dzYU5jWUQ5VjNFYXNMSFFRRGVzVUdjUjd5NFFBYmRsNDNMNFNXV1l1bzg?oc=5",
-      "date": "2026-11-24",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "marketech apac",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "95c6e4177ee78e61",
-      "title": "Acer founder Stan Shih plans new impact investment fund in Singapore to advance AI and net-zero technologies",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQR29NUjN0Q1EzXzhaaFpZZENCMkplQWx2QldaZ3lzV0tBcS1YYUR6QlByMkxQUC1LX2MybVNtSkhjY0ljdHNzNTNzS2VpWnhjYzNBaU9JcEg2QmxINjU5eWNlZWFDNDdLSGNYdnJxb25odW5MMHM0amhkc1pNZVdIRUlLaFMyNFdQMGZnYmliemgtano1MFVlUVdZQnZWUQ?oc=5",
-      "date": "2026-11-24",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "digitimes",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "other:singapore",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "18cc40dbddafcd93",
-      "title": "Draganfly and Estonian-Ukrainian DOD Solution Sign Agreement to Advance AI-Powered Autonomy for Unmanned Systems",
-      "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxQNTdfZ19lWUN3ajUzRmU3Y1NUNEtPWEtINFBid2kzOGRnOGMzbExPazB5WGl0RHNLNXltUTdUYWUtdklnLUR5STlOX1M4czRxbkZBc0JvcmpwRmlJaGJrZ2lSdEx6SHQ3NGlpN29MYUlaRHQ4dkFBNjl6Snl6ZXo3WjlMWXFJaFJiaE8yMmxxV3hrZ1RuUGRnS0RLdmNpdTBteDhPaDhVM2t3dERZN2dnOERxQTZtOVFLR3I5ejVLaWIxS0JaTGZvNS1tcl9zcF93MnUzQ3p4bVJ5T0pfdldhMWxIZ2xxWUoxbXl6XzlOa29SejBIMDc5WkV1eExCVG9hVWNLUllvN1FRaW8wbkdGRUJGLU15eG1Yc0dicQ?oc=5",
-      "date": "2026-11-23",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Toronto Star",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "4e37684bd0058bb7",
-      "title": "du and RADX partner to advance AI adoption in the UAE",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQM2RNSjhPNW9GY2d6WXVtVng3RnhNazBfWThJZVRLT21wUDhZckh6TG1aQ20tYjBHb1ZYTjU0TkNNeTZHVmtIWjJUSkZoVXJYQXFOaXdCOTdWYUoxZDJhdnV2WDktNWFLU0VHMFl2TS0tNGZXMEZUT05GcGFvSUV3OGNzenl1OWhyN3J0dnQ4U3lWQy1rX3IxZ0JQMDlMeS1i?oc=5",
-      "date": "2026-11-23",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Intelligent CIO",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "other:uae",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "4deb02489dd7daeb",
-      "title": "TACTICAᴬᴵ and Dubai Police sign MoU to advance AI-enabled policing and decision intelligence",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNMXoxR0RtT2NEWWhaSmRSYmx0QlBla0dTbGR2Z09Bd0ZZbHpoVWFjWGNsUmdDa1N4YjB4S0dRaU5yQ3JRajRHT1F4bVdHRDg1OHBDQTg0WHFFOE9KVmRUUElyeGNJamV3UWpBQldiUEpHMi14UjlUZU1FVlkwVzF3d0lleHUxTlpKUDJZUnF4NlRsQ2dyLUc0OTRXaThLVGtGTXNtcnBuQWZNd0hQd2hiUTUxZk1RSzBRMTRpVU9UekZ1ZzNtZ2xSYUZSazFmNWVGd2JHM0o4Y3dNU1JRbEM3LWdiVDF0ZlU?oc=5",
-      "date": "2026-11-24",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Zawya",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "other:dubai",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "46313e3e07ed53b0",
-      "title": "Dubai CommerCity, Government of Karnataka to advance AI innovation, drive startup growth",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNN3IzNW13dFNvdmRXNUdoNVhnd1NVM3lNZGVVeEQ3WEY2UnRGOGlpT3c5LUd0YTJXdWhjbnM1OVptcnlfLW5BNWFNOVd3V3hKblh5MXpTcl9LMXp4RS1qNmRwaVFCRmIxR0kwNzB5cGNINVhSRVpObDBZWUV6bkhVS1JGNnQxU2VPR2xr?oc=5",
-      "date": "2026-11-19",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "www.wam.ae",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "other:dubai",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "654ae157394db414",
-      "title": "WideBot Signs Strategic Partnership with Etisalat Egypt Business in Collaboration with M Empire to Advance AI Infrastructure in Egypt",
-      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPM2dsZHRrWXZ2bi1iRUtiOXVTcEFnZVFRZHpQdEJBTHFhVDhxcGxTSVlCZlExc3ZtTUJhcDAwaENQSmgtRnhmcGRncnJMY1FaUUZqVlppbDZza3FTR01nU1ZVZVNmcS14ZjgzdWdVUEFLb3FQQTlwT0MyQW1XOU52Q01WdUY2N3ZxUlF2SktwSWJldHZsU1p6a09Yb2dVM0plZkJCVVVCb0owR3pOdlBjZkJYd3lpRE1MVHRpT3VLSkUxOFZ0YzVEdnhfa1JxelNZQ1FrcG8yU0FWdElKQUtfX1g0cFlvbzFnbFdKRlYwNXU3dw?oc=5",
+      "id": "1f9ead0b5c375a41",
+      "title": "Stake Promo Code WTOP: Get 250,000 Gold Coins + 25 Stake Cash (Nov. 21) – WTOP News",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTnVyYnh0d1poWHlXRmpTUmNSdW0teFRtR0UxbFU4ZWJ1VGg1YjJzdHVpcUNkZFZpZEt2ckZfSzctUWx0R240T2hXaEZ1eFdpZlMzTEs1LUdSOGtCajE0dGZ2VHdqUWY0Ny1NVE1uWUwwODlSVDMzLXdHLTV0SEZQUU9SLXZEdnAyeFk1Q0U3cURHZGNGOTUzcHVNTQ?oc=5",
       "date": "2026-11-21",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "followict",
+      "publisher": "WTOP News",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "6874dc7b1b169162",
+      "title": "Polymarket Invite Code SBWIRE: Get $25 for NFL, NBA, NCAAF & More",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcHlxNUowN3FHak9nRDJ3UTd6MHhSaWVXSUVuMmNucHBaVDNmRVRacmVLU09SZkpRZmdBcGd6N2lyVjMxM3JTQm9SeHZmdm92aURQMjNsM2dQVEtVa19rSWszdEZXVWdpNEpKOHhCY3pNZ08yUTdXZEpXZnhidklrQk9ydTN5TGRJalBxU2JoVTI0WDM1cTlKNFhkZ3dKTm42aDB6NVFzV2QxZlJXNXpzd0xpemlNOW9kMEExN0tIUFdkTGph?oc=5",
+      "date": "2026-11-22",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Chiefs Wire",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "999226b0cebd99e0",
+      "title": "New Polymarket promo code “CUSE” renews $25 referral promo in time for Cavaliers-Pacers NBA Cup",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQUWxhWW0yeER1YWFNdU5LTnNoeDFfTkZkWVJBZGpFRllva01IOG05VkwtMTZWdUFCMXZ0bE9uR1hIZ0RaMnJtaTBkUTZhSVprTmlSZFZZTlAtT1FINFRveFEzdTZQTXpvbUV4alhTeHFfTVBBRm5JWlJKM0l3Q00wd0R5dXdLdFhyYjhsNGdEUTR5YkxwQldjaFJRMHFlY0h3X2xIbktTdzd2aW9Jb1RQUXhiR0tBRFp2R2M2Mjg1N2VIazBEdXl6cHZld2lYY1VFU2tzeg?oc=5",
+      "date": "2026-11-20",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Syracuse.com",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "3c09fe281ca02ad6",
+      "title": "Stake Promo Code BROAD: Claim 250K Gold Coins + Free 25 Stake Cash (Nov. 23)",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQSTJVM1QwUjJWTU4wdzRmUEllaktzaGNPOXZZWFltOUdCUnpiYVlPVUZpR1hkdzEydGpkVURKbHo1dVctd2NQNFlTLURQaEZrTVJjdnBKaEpDS0FMbExPVDRwUU1DdzRSZ3I2REk2aGUtVkh4WFRTVUFPT0FEbnphQXFVNm9JU2UzUHJrcDFKcG5EOUdCS2hIeDI5cUphdnp2UGU2d2RDaDZ4bG1YQ3hEbVJEWXZZUGthT19MR1hnNA?oc=5",
+      "date": "2026-11-23",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Crossing Broad",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "6b119af4e7a2c365",
+      "title": "Polymarket Promo Code STREET: Get $25 Bonus for NCAAF, NBA, NFL Games",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPRkcyclR1ZXdSd3BmT1R5dng0Q2JXcnBvTkpTRF9mTGduNE1VZ3pKTkF3ZmduVWdyMGpSSkc4NEZuSUl6U3I3a0sxaXhMZGdZQmNrOVgtUnA5LW0xZ3lwT3ZSQUdKMDBYMFc3YXg0cFJnSTh2c0dhYjN4bWRHaFUzZmNtN1kyemNraFg1SVFQa0VsS0FEb0ZIOXpEMTlTWjlsY2J5Y1JnZXpPY3NKLUpQUVZHa3A4Njd6b3N0Z1hfbExDZw?oc=5",
+      "date": "2026-11-21",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Russell Street Report",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "2e408d2dfda111e4",
+      "title": "Kalshi promo code STAR scores $25 bonus for NFL Thanksgiving Week games, NCAAF",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOM3o1OWhXcGdfUThyU3gtUWZ5dHFkc2ZudUdhWlVvaFRkSl9jT3pwc1JNX0lYYmpxOFNqRFZLeURzMnVzMWlqMVA0Q25kdWo1dDhsdm8wdmltVjlWcmFJZEZSNjlMc0NhNFdJZjlnM3FRMXF0SHFtVzRwRVFkQzhBSW93MEgzc0FFSFk5TzVtRnBwaTVvNkYtN29BckQtTmQxb3hNLWgzMGR2SUJu?oc=5",
+      "date": "2026-11-24",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "IndyStar",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "538148c4a76935d9",
+      "title": "Polymarket Promo Code FOX Unlocks a $25 Bonus When Trading on Any CFB Matchup in Week 12",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWWE0bkJRMFpuSkJ0QVRsd1Y4NlJRNjdTbFEyR1hmR1lMeVJUYlB6ZmI0a2lNR3NrQnE3WWFYdi00S3FnM2tyNE5aNHRucGdBaE5IT1VXMGVidTdGMVVibFJwWVFfSlk4MUlLbHFLNTdwSEEwT2VxSnBjeTM4Z3FWZmJ6ZHVxYUxTQ3FXd21TSFZSVi1vQjJaRWJFZndvazlJZ19KdnltV2hXLTZUOVVQZ0xQV1hfeU15Rm5MQUZR0gG-AUFVX3lxTE1ZYTRuQlEwWm5KQnRBVGx3Vjg2UlE2N1NsUTJHWGZHWUx5UlRiUHpmYjRraU1Hc2tCcTdZYVh2LTRLcWcza3I0Tlo0dG5wZ0FoTkhPVVcwZWJ1N0YxVWJsUnBZUV9KWTgxSUtscUs1N3BIQTBPZXFKcGN5MzhncVZmYnpkdXFhTFNDcVd3bVNIVlJWLW9CMlpFYkVmd29rOUlnX0p2eW1XaFctNlQ5VVBnTFBXWF95TXlGbkxBRlE?oc=5",
+      "date": "2026-11-21",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "FOX Sports",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "c3a4912d6e66d345",
+      "title": "Kalshi promo code FREEP | $25 bonus for NFL, college football, NBA & more",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxORGpLOU8wY1h4VGQ0Yjl5aHB0TGhGbWlJR3dtdmgtV3FTckFuRE1ITl91YVpVYmZyNmJscDk3bUJnRnJ3REVYVTAwQ2Jib05sQThfR09sbnp3ZnFtQXlUSHppVnJZYnZqVVRLVWNWc0t3QmpmV2VpSzJiR3NpazZqbUdxYlQ5aW1LVi1fanJHaS0tMEd1MUNPT29feV9RejhZQlZOS2FFWkY5NEVtMXpwTmZn?oc=5",
+      "date": "2026-11-20",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Detroit Free Press",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "201e8260412d665f",
+      "title": "Stake Promo Code WTOP: Claim 250,000 Gold Coins + Free 25 Stake Cash (Nov. 20) – WTOP News",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPeEQ1ZkhGZGk5cjNXa09lanhycXg3QjB3dEZtZEE5VlFPU2w2VDZHWWN1RGVhTVFEa3pNeUw4SURrdVdtVHpBZm5scW1EZFB1Q0N6b2xIcWxYRUtXdlBIU0V6aENDZmxxRkVWY3o1SVRfMk80Q2xTaU5WejhiZkpwS0VFaVBHVkxMMlhDS0tjbzVLU3YtY0tQMlBxZENQQWozSmxrcw?oc=5",
+      "date": "2026-11-20",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "WTOP News",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "75f6c7d179cb13dd",
+      "title": "Kalshi code “SYRACUSE” $55 bonus launched for Bengals vs. Commanders on Monday Night Football",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSm5pTkxlVm1fYTQyWmRJc2h6cm5VeTJULUJNNzR6UkVKQ2UxcnhFVjU5d3NIMUtHa2Q0YlVobHFOZXJYNHBmR0lDZGZ3THdRMm1YUjNJb0RId293UUdWOGI4bUtiSC1mUGF1MDdIVUR3NjBpeV94TlI4c3VjbzQ2Tks1empuNG9aRGJxTG5aYVl5U1FpMjlmQ2toSUtRaGJjZlZjbmpaVVVLdlNzcWpudk9LMTlVb1hMa0VmREZGWU96OUJ5eXBGVnFVU0lnWHhL?oc=5",
+      "date": "2026-11-24",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Syracuse.com",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "9f3b84e4809dde5f",
+      "title": "Kalshi promo code FREEP scores $25 bonus for NFL Week 11, NBA & more (Nov. 20)",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSHktc0lwcmR4dlRFZjhtZ1p4N2J6MXdBZEp6OUZlRXYtQTAteEJ3dmRfLVh6dkpZMWYzeThfdzJiWmM5ejlHT01UZTRjTTd3cFhzVUpxd2xIWENrSXIxTXNfWWVGRW5ORENGVGZKdWZDVXA2WXhpeU5qN1h6WnZsMTRrb2Z3dzlUSnp5TEhIS0FrN2JKQTFOTU9zX080bTg5dkRKZkJYNF9ESUt1?oc=5",
+      "date": "2026-11-19",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Detroit Free Press",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "5c320b4540011483",
+      "title": "Stake Promo Code WTOP: Start With 25 Stake Cash, 250K Gold Coins (Nov. 19) – WTOP News",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSk9reWk4UExMNzdjZ19OTENCT1lIU2pzeFF1TFZvajNMODBVYW55alQ0Si0yMVRnVldZbHBFSV82RC1JRnFjX1REcnN5MDk0MjdfU0FJS0FobXhRRWJfWWM4OEE2OXlIUzlKRVpWVmxMcGFJX1MxNjZNZS1SSi1ja2JDMEtzRy1pTVcyWWhGTDNfS1RzQ0Y2WnlxZkdzcktmc2c?oc=5",
+      "date": "2026-11-19",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "WTOP News",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "3117135c4607552b",
+      "title": "Kalshi promo code “SYRACUSE” updates new $55 bonus for college football Saturday in CA, FL and TX",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQT1UwelVtYW5zMkN6T3FXa3h0R1RVT3FfZkZqcG5MNVdDbVZLazlRcjg2aUUtWWREU3M3cDljNHVtSk5MYl85S0NiMzB1VEgxdzhWMVh1d2VlX2JKQ29ZU3VyaXFLMk5UX0ZuT2cweHRCX2Fjb3hoMGZWZ2VFLXZ2MFdPTzNGNW82cG9tZ1hTN19ZQ2U1S2FSNTN0dlRjMmF6UEpXbHNGQ1hDemptMmx6TXNHa2xCY09LaWVfQmFZR2l4emtySUlYNGxpLXNUR3dDRmRiWkFR?oc=5",
+      "date": "2026-11-21",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Syracuse.com",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "8ed7ac022b70236c",
+      "title": "ProphetX sign-up bonus code FREEP delivers $40 for NFL, NBA, NCAAF (Nov. 22)",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQQnFaVElCRTJPMHBTRG44R1RwNzJsbUlma0RucEJsR1VZbFptVDhlejFUUGxpZ2NmbnU0a1Q3c3N1M21xVWUwWkU0RjVmdFdDcGg1bU1OcEFoa2p2ZVVTa1BTd0Y0bkxMRUgyMnVoc2l0LS1lTWl2VS1xMkd5dFpudEVjOVgxOEdVZlpyWnUyY1VIenBCX2w3UE9QU01BbW5LcTl3VHBpNk1rM2tPQnhlYQ?oc=5",
+      "date": "2026-11-23",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Detroit Free Press",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "430c8601428f4208",
+      "title": "Novig promo code FREEP | $50 in bonus credits for NFL, NCAAF & more (Nov. 20)",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUUx0RXpyeTZWenRfNFJwSDM2RHFSazhZbkZOYUlXald6UUZsMEpnSVVxclhQSmJ5UWJSdXZmOUo5MXNGSU5US2czTHQ0MTd5b0c3RVc2bTRfYVpCemI4QmhWYmxCZm9hLTlCSGxlTHVrYkhuM0hjXzc0RTN0UVo3MlBEcWxPWHlpdDVyOUROR096UTRLU3pvbzJZb3FsZFpKbHgtYzRDZ28?oc=5",
+      "date": "2026-11-20",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Detroit Free Press",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "eb839aebcde116bc",
+      "title": "ProphetX promo code FREEP delivers $40 bonus for NFL, college football, NBA (Nov. 21)",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNd3gyRlFDMzAxd3c4M19pTGV3RFNDMkJVZlJmT3RDUUtSLWZ4eUxnZWE1U01uNlZaWnE3ZWRHMW4ybFk5X09YS0xIR2xfNV9CamdxcXkwT3RpeTJOYlRUaE52S0NEcnd1SlhMWXkycnFZcjg2djNza0hUOHBOZmVKeDVIMlY0UTJtRV9TUkdpSWxjcE9kMk5zSUNtR0E5SE5BRnExZnJOc2QyR2ts?oc=5",
+      "date": "2026-11-21",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Detroit Free Press",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "425e8ff02a8027ea",
+      "title": "Novig Promo Code STREET: Deposit $10, Get $50 in Trade Credits (Nov. 21)",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxORENRMjFhVlU3S3k3NmlFeGNRUFVTdkF4SjFGckhOZl9mVkZiT0RMWGlIQU9fVWVvdFo5c0RIb2d3NFRyd19zSGd4QkFjbFhPZm5jQ3FlOUc0VGdCTXg1M1p4UURmLV9DMGJWMGR6dmQ5YVF1Wkp4cHNQVk5GcGpaU2lrYWx2b0J1SGI5bmdSdXlMc0RwWEFfaGJWMEpCNl9IcVpBXzVOXzBlM1hXY1hYR3VCMWEtQjlWeFdwT0hFOUVMQQ?oc=5",
+      "date": "2026-11-21",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Russell Street Report",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "2b81ef3972a08379",
+      "title": "Polymarket Promo Code SBWIRE Snags $25 Bonus for NFL Week 11, NCAAF, Politics",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQOXV4T1VhTkFNU25WLWtiUVJyYXJOakNjZkhhRklVWW9MdjVncnBwZEVqVEZqSVI5UjJqRWEwOFM5ZWc4eEVpb2F0VTBqd2NEWV9lV3I2V0hOU1hSTXV0STV3aktNaHYwTkFIRmt1M1R1YU9Ucjh4UmhpZWVfcjVpWjdvWDBmQ2tOeTR0T3BHSVk1cms0dmZicEhhc2xYeEJKZDZzZlYxUXAzUWtFVHhhSQ?oc=5",
+      "date": "2026-11-21",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Golfweek",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "424cca737ed3f959",
+      "title": "Polymarket upgrades $25 promo code “CUSE” for NBA and college basketball",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQVHVsQUZoS0MydVRUcUJ2NkNjc1lKUVNNX24yOE9wbHZtc3ZRZjhKRUJidGVJaFRYS1JKci1vbjAzZWx2cjB6dUtyOXE2dGh4RktqQTdFd0NTal9zYS1LcnR1ZG1HSUVrQW9fUUpkY3M5QnpUblJLRV9sd25YUWtFaEhTTnkyV3pWYkt1LXB3YXRNOHFPdkszU0toY2IxdTMxOWp2VkpvdGNFOVZXUEUxRWgyTl90dw?oc=5",
+      "date": "2026-11-24",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Syracuse.com",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "294f7b2c33bacaf5",
+      "title": "NFL Polymarket promo code “MASS” upgrades $25 Week 11 deal",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOSHBPU25EbnRXRURkVW5rdFdVNVVZZE1aUk45dXJUck9lc3hIdzNjS19DSTRWay1Qbjlhd0N5aWJ1WTFZb2tMVDNjY18zMkxJZ1llX1BXbm9PazRoNEN4MWtLZGZzcGVDWEp3WUlmdjFIQzNrWlNTRkVsTlB6M2haYXFyZENTYjk4czFhYTBSLWhEQzR4aUtIS0Z3WGUxa3BEb2Q4?oc=5",
+      "date": "2026-11-22",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "MassLive",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "ba28350e0d275433",
+      "title": "Kalshi upgrades $55 college football promo code “MASSLIVE1” for Saturday night",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRGN3TXNTdlVhejdiR0NIcXI4NzhYbmViRFM2V2RDcE5RSjIwT3Z4UG1QY2NPUFBHSVFtSHY2UmFsdGoydUFMbmpGdjdUSHJxT09aWVk5T3FKN1dyOU9SY3BzYmIwckhUZS15MnNkSFZnUWp0NmhCUF9TenQ5REw1YW1VNGdyUkZHejFkdHQtNDJPVXYyVHVqYU5RR3VZakZPRlhBb1lpMDNwS2lYM1B4LUlvNUdsZzZpRmhZWXFR?oc=5",
+      "date": "2026-11-22",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "MassLive",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "f123c53ecb7359c3",
+      "title": "Kalshi updates $55 NBA Cup promo code “MASSLIVE1” for Friday night",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNX0l4YjV4eWhpRmZndWhfWkRicE9kZ21CRHpqNUp0Q2dEbUxDZ2lzT0xoYXZMRy1MVWg4U0RORTU5WTF3VTFYNTVWVjNaNkZQcmlVb19xd3U5bFhKLU9CT2RmLTJ3RmdGNDVGN0JvYWFBc3N2YXRYOWVVeEtKa1NEazhvQXNzVTVvd0RhODRIMVdfSV9rNUtWWWtycTdxQ3RjZTZKNHdTbjhPa1p6X2c?oc=5",
+      "date": "2026-11-20",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "MassLive",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "596d295fa1c3642f",
+      "title": "Kalshi promo code PBPOST scores $25 bonus for NFL, college football, crypto",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPY3dkRW1rMXdtejdWVmdxTGFDMmtzZWstTXNycVpiNkx2d1h6RHQzTTN4emJmeHM5NFNmTjRLRFN6VkpnZ2kxTEpqVDVyN29HbnBHOHNpZzFhSXhLbjhhcGgwdy12Um8xUG5uQVNsdmRzWWZ3SXFxRWxxQ0JJZmRiTEpzYmpPLTFteENPbFhnTHhDTG9saHJlaG9oZ0xKU0FrUnYzbEYzZkYzeVgwMWJ3?oc=5",
+      "date": "2026-11-22",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "The Palm Beach Post",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "a4439cb7f38be908",
+      "title": "Kalshi extends $55 promo code “MASSLIVE1” for Celtics-Wizards NBA in Massachusetts",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPN3JzalBtX2FSVGxqZEJndEY2b2ZqZ1VFeWQzTEVRcHFsVmRpNDZuLUM3Q1E2U0lsT25HSFJzelI3MGJjQjRRYUNnUnIyYmxMVExWeDlSSWhEMjNFd3pmdURmNEpPck1ocEdDV1RFVUxrd2dzVWVUU1M1dWROd0JtTXRySFVhWXZ5eVN1NkxiQzdnUEJXZi1iVjg2bkxJa3ZhSFdES2QzWURzTGdscUl3eDNHVkVLOVotckgyeHllMTIwNjA?oc=5",
+      "date": "2026-11-25",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "MassLive",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "66aeb7684f42a01d",
+      "title": "Kalshi promo code “SYRACUSE” upgrades new $55 bonus for NFL today in CA, FL and TX",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPeWJwdU84N1dhazJ3R3RlZjNBYVcyc2xQeEVfN3V3TGJBNjlwYU4tclBFRkhINUdFR28xV1JsclFkYjQ5MzB0YVBjWDZ2U2dHblBJSXMzT0FjRlJHSGgxVXRTdWZ4cTJoNnh2QzhLWlhnbXdyNWVydTdXNjEzeUFzamVkaDFsdF9hMTZnUmVQMkhjbWJGWnE4QWNPU2hUS3l5aHBYYVZNTzlNenhSUkRIc2xtYUh0am51eHdCYU50UUJpMW12?oc=5",
+      "date": "2026-11-22",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Syracuse.com",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "ed0d7eb2455073e2",
+      "title": "New Polymarket promo code “CUSE” unlocks $25 referral promo in time for Tuesday night NBA",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOQjg2MkZRZGdXYjN2NGtnT2xHa2xBSFU2R1QzMDdlTVk3b1JYd09fT2JtazBHT2swcFlBOWNpSUZWcFJhWGdNUzF0ZllxVFdKNzN3MlJaTi1mczN1T1BucHJ6bkFfWkhRd0tUYTNZMk5fUGlIWkxLdU1sckZvcTlqYUxkOW1iM3pIYXFPNGhOVWJJeXZMbDVGS04xUHZ3TUQ1RkhDY3htOTRxeVhtZWVpX3VPaG9XazFYVjV4MlgxN3lqRVR4T3Y3aHZNZUE?oc=5",
+      "date": "2026-11-24",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Syracuse.com",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "921675d088c71a29",
+      "title": "Kalshi promo code “SILIVE55” renews new $55 bonus for NBA Cup games tonight in CA, FL and TX",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQQnIzYVhtVkNFb3ROTHpnTG11ZEM1MHhFT09LZlNGX1dXczNPbmVIUm45ZktLZVRSY1c2YUdaS1E5b3dTVUFWeVBsenNHeWw2MzdWaG9tOVUzUEFKRG5ZUHk0d2Iyd1UzRVdZRXRHUU52amZfQWZ0QVZpbGN4Y0tHM3lXdlQ0Zkl2WTBjb1Qtdlc4MFNBQXdFa3dEQ3VoUWJNZEp6VHBESDBLcU1iMDlvNHdFOVdNbDFyYTlZNXVqTnY3THZWNGU2R1NMUU0?oc=5",
+      "date": "2026-11-20",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "SILive.com",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "d0372f50c411ae97",
+      "title": "New $55 Kalshi promo code “SILIVE55” unlocked for NFL Week 11 and NBA",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPUDB2cVd4QUYyb1Z0YVVwaVdFSjJvSmFUbk5kYkNFMEh5S3YzRzlKbjktRUQ3MThhR2oxT2FHLVQtdnNLLXh1MXcwOE1oNVlFLTY0am90UGxsRzNmRFRpUGVuSXB3aVY3Vk15QjdHcTJndDJIa2FtNXQydG0zRVJxLU8xS2pONTVSZThVcHVTQXFTYVE4UWVEY0E1NVBTMEtTQkFWSmsxOXlMSGxTM2dF?oc=5",
+      "date": "2026-11-22",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "SILive.com",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "a5004c309e262c33",
+      "title": "NBA Kalshi promo code “SILIVE55” upgrades $55 Tuesday night bonus",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbW55VmtRUjV6UFVFcnpBeDdaN0xBSjZMNFYyLWs2LXZKaFNmd2piTlJORXBiM003WExhdHJ2b0pNYzhsZ01KU2pGeWxzWnplU0ZHNkJFd1Z2MUttR0NST0ZKeUlNVDBESzhMeVVwRTA2U2FJaXktcHoxdlIzRUpucVl5a3ItVTRraU11aDlfQmV0NmFvVVRpQndGbXlaN0RrcEVtTGdDM0h4UQ?oc=5",
+      "date": "2026-11-25",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "SILive.com",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "cf2cae6399f7aaaa",
+      "title": "NFL Kalshi promo code “SILIVE55” updates $55 Bengals-Commanders bonus",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPeTVSUnNlWXAyYkNhTTRmLUpQbC1tQ0ZsMUc4TTh0ZzdTM1Z4R2hYRUthVmViME1KeUVGZERRNDd0Zy1lc2NEcWRBeFc1bExscWFnc3NyZUkwejlYbFZZaGpjRjRMYjE2Wl81N1BQUTVFVDdIdzhRckhUU1NDRUFtU0FFb0tEcUxmalJvR3kxMmRkenRVeURpU2tYQzRQWEJQT2piamJ5aEVyM1RlME5r?oc=5",
+      "date": "2026-11-24",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "SILive.com",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "69ec49ec2fafea63",
+      "title": "Yanolja's YCS Brings 'ID-Free Check-In' to Indian Hotels, Secures UIDAI Authentication",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE03OVkwM0stcmY1anQ5bXltbDJNUVN0bnI5OW5ORHd6dDg1YTNNLVI0eFlpbnR3YS1XeXBNakpnYXlJbjUydmhNdlFjelpJZjBSVFJ0VjJHX3lPLXBxZFBXNFpJNjJXYXEyLW5nMzZmX0FJTGhrZXc?oc=5",
+      "date": "2026-11-19",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "BigGo Finance",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [],
       "region": "Global",
-      "rule": "vendor-marketing",
-      "matched": "partnership",
-      "route": "skip",
-      "priority": null,
-      "reason": "Vendor marketing, not news for buyers.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "323e1c691321ca7b",
-      "title": "Cytora and GBG move financial crime checks into underwriting",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPajNrcEoxSGxlUFV0MGxGdjhXNzhfVUg5SnR6V2xzWGF6Qm1lZG10bDZBb18tZzNJNkZRYnBQTUxLNDBXTDRKVWtyQWdpa1FaQ2Z2M3MzTnY1VjVYTVZKczVXRkVqZkZ1ZVBGdmpNeFhmUGpKQnFoZWZodHlOWDR3cTBFUi00ZVVWRjZmUWZyeXcxUmViTk5yS2hFMA?oc=5",
-      "date": "2026-11-24",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "FinTech Global",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": "gbg",
-          "name": "GBG",
-          "reviewed": true
-        }
-      ],
-      "region": "Global",
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "658e97255d79daa8",
-      "title": "GBG: Core growth and cost action offset Americas Identity attrition and a major impairment",
-      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPYUtXaXFPZC1sWjE0UGJPOXFscVg2MC1WNzNTcUlCTTlxOXFGODZ4YnQ3NUNydWhub1Fqd1JMTTdoY283X3hEaVhnNGpjU2R6dlV6ZEdrNUR6LUNwQUNZTjF2YlF6akFiY19LOXgyQlVIdTVxNXNqLTVxTzJINWY5a3FZWm5KYUF5X0p2NVBRX1lRUVgtdUpTQVRxOVkzay1aMWp0Z1oyTEcwc1B1OV9ORlZSLW5qUXZLMzFCcUdhYlNBaGFVbDNFbDdzLTM2cktRdW5KZWJSV19QYkJZdHdJWU1wWWlpelZPei1yRVFELWYzY2pwdlBHUmFLZlhCNEFRdHc?oc=5",
-      "date": "2026-11-24",
+      "id": "a89e0534df384b41",
+      "title": "[NOTICE] 2026 AND2BLE FAN-CON In Seoul — ‘N:DCLO ZONE’ Information",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE83UXhIblVFOENZc2FZQ0poOVpZeHhZbHYydHZvVTJyWlIxbVRFcWtrX3BuWXdZQWtTdkhUYldPdEQyamN2TzBpdDdROG5OVWNj?oc=5",
+      "date": "2026-11-25",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "TradingView",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": "gbg",
-          "name": "GBG",
-          "reviewed": true
-        }
-      ],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "92471b1fbaa6a2a6",
-      "title": "GB Group shares rise as maintained outlook offsets CFO departure",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQUGNSUlAweTZkVmx1aXFOdS0tZS1hNWpRd05LNHlnWm05bjBGVnZLWHZYRG56NDdKNkwtQjdyUzJuOFNteFYzajhEeklZcklCajlZU09qMDdfOFYtdl9tX25WZFRaYW9jWGVyZkt1Q0NoaEFDaHlSbmZEaVlOTEtLalJPQ3ZWc2Z3bkFSTElJOUl3NlhaZEhHQVdBSGtaV3hXcVppWUFtdjM2MkZLbWFrSmc3R25DSkpGbklYdmRDTkQzbV9TOTVBZVZrMWhCbFZi?oc=5",
-      "date": "2026-11-24",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Proactive financial news",
+      "publisher": "Weverse",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [],
@@ -1484,22 +1940,39 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "6b15b99663c747e7",
-      "title": "GBG H1 FY27 slides: core growth offset by Americas headwinds",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNQnJ6SVhVeG9VSjl1dERVUkYzWmlrNk5ZekgxdlVFbVg4X3RYR1R1b0pIczdmS1FGSkFwU3JIQUdMRWd6OTFnV1BMc19PSFpFbmNCVXJmcS1lWkw2V21TUW4tVklJdVF4M1F5dVZVLUJoMHlUS0REelRUaVlLTEVraXpKamlxa2FWU2JUX1RHSVZfX3FCWG9ESFMyNkJFSi1FaE5INU9sMmVwaXdRZi03Yk5fRDZncWc?oc=5",
+      "id": "1d17093b4a0587a0",
+      "title": "Government investigates alleged 740GB eCitizen data theft",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1OWmV6Zm1ncFN0di1VZjNrS2NxVzBScHZ4eDJkeU52MUk3N2c5eHhuR1NqZENEeTVBVTFhYzBfajFUSE1sNlQzUEFJMTFaSHFfQkxYUmltQUxXU2RScmZBNkxvWlZ5U0xtZDI1RHJ1eF9CS0F2Sk5KbjdYcw?oc=5",
+      "date": "2026-11-25",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "5050 Markets",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "cc7b7211e8e9845e",
+      "title": "Kalshi Promo Code HANDLE55: Trade $25, Get $55 for Pistons-Magic",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPcXZXeVo5Tk5xbnJndExWMVB0MHdoXzlWdXdPZG1ZdzlSMlc0Y3NFQkdHdkZ5bWNBejQ2R3hmN0JFVVo5d3R1VjRoV0E0ZU9UZktwUTJmLXdQY2hSUjFNNXZodS12ZnFfVDlpWE9vdVl5bUVJU050ZlFGZ1FxWkJVaVZTOERUdHFOZXV1aF9UYw?oc=5",
       "date": "2026-11-24",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "Investing.com",
+      "publisher": "SportsHandle",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [
         {
-          "slug": "gbg",
-          "name": "GBG",
+          "slug": "codevasp",
+          "name": "CODE",
           "reviewed": true
         }
       ],
@@ -1507,22 +1980,22 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "ba7628936711311c",
-      "title": "GB : Cytora and GBG partner to bring identity and financial crime checks into commercial underwriting",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQUWl0bnB0aV94ZmdsRUVFdDZKbGp3RVFZTG9GbFFtbGhjcmMzODBONUVtckNFY1JUUHBUZjdOaWhveW9helQ1QXp5eWtmS2xuU3FJN1ZWVWdHMV9kQUdBZWNBTzQ0RUJ5UzdJWWxqVUtzWGR2SmZSSnBjcmpYeGh3S2pya0dhTWV6Z0hEOXFGVk9pZ1BnNl9Yenh0TnlaOWhPQmswOENtZUVLTzhqb3ctYURmRnM5ZWM1NnR5ZGJGY2E0QWpDczhhYUd6NGtZRmhTN3ltWl90cUVpYXBQQ3JpT2l0LWczUQ?oc=5",
-      "date": "2026-11-23",
+      "id": "072b3c1eab8ac36f",
+      "title": "Kalshi Promo Code HANDLE55: Trade $25, Get $55 for Raiders-Broncos",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPaTF1aTFZU0dvdF9mbXJIcEcxZ1dVOHFJMUswcGM2dEpSUkllOE1WUVBMendzbmtUVTMtNWRud3ZRMVpCaERTX1FQaDJCLXFYckQzWHVGb21rUWZPdGJaZVE2T2lfc2lHX2xaUUdLdTJHS0RTc3RScEhQNXRrOE5DRjM4ZDJyOGVFVkN4akwxTVF2UQ?oc=5",
+      "date": "2026-11-22",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "www.marketscreener.com",
+      "publisher": "SportsHandle",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [
         {
-          "slug": "gbg",
-          "name": "GBG",
+          "slug": "codevasp",
+          "name": "CODE",
           "reviewed": true
         }
       ],
@@ -1530,45 +2003,56 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "2f651eb8ed1e06fe",
-      "title": "What GB Group (GBG) Said on Its H1 Earnings Call",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdjNDa0JyR3VWVjlLVG95QlgzR3V0RE1SaDdqb3Vzd2FFMlc4UFNHV2tUcm02RUhMNDVWTWRKeHNyclNNLVllVlFxY0k3TEU4MURwd1BVSW9jNUZXbmRDdVBoWng3a19qaDdwa0tzbGNJV1lWX0M3YkxvUUxEZTFqRnBvbFk4bVdIa0FIbUJB?oc=5",
+      "id": "97e62d3a9ad41f07",
+      "title": "Yanolja Cloud Solution introduces mobile identity verification hotel check-in service in India",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQcmdhcWN4c05fdXZnZlRyRjQtLU1iRmNXNl9GQVVzSkpQamRkWVU3cHI3dDJUeXNIbkREeWtrOHVmcktYQzFHVXdfVWlPb19FZXhyazZiWXl0Rl9Pb2NOX2pXMjljTVRPUDBfSzlmYmpmNmlrTjdjTFFCRHAtcjZwWWZoS0Y2TlcyQnUtNEJwNU8yZE1jS2tQYTBLZ09JOGp5V1pzaDdmLUxjMGxuMXA4c1g5Tzg3cld5MURQNTVLeG9md2R3aWc?oc=5",
+      "date": "2026-11-19",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "디지털투데이",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "other:india",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "63550211baf1a296",
+      "title": "What data is at risk in the alleged 740GB eCitizen data breach?",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxORW5Vd2NGRUJyZnduVjE5aWNrZTFPX251MDdjVXRuMlVxZ2ZFcW9qcUZWUGRreGdzTmRMb3F1cXd3M1Z3eUR5cU1RaVNVY19Pb2R0dF9aTWhZUWRjMXRNZm9VZjUwZ3dSN2pZWDc0eU5GU3FOOEp4Rk5MNW00YjlDMDFzemxIQWZLX3czejhyeFpyM0FQcHJQbnRRajNLNWEwT2F0LXV0SnZZYl9vT2kyVjFn?oc=5",
       "date": "2026-11-24",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "Yahoo Finance",
+      "publisher": "Pulse Kenya",
       "tier": 2,
       "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": "gbg",
-          "name": "GBG",
-          "reviewed": true
-        }
-      ],
-      "region": "Global",
+      "providers": [],
+      "region": "other:kenya",
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "60c6e08307032928",
-      "title": "GBG: Core growth and cost actions support unchanged FY 2027 guidance despite Americas and GFS weakness",
-      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPS3BrVFR6YTlENXo3VTBwWFNFc25oVEwzQ0RtOXRHTmFLdmRXVURLY2pqQkYtUUZFZ2lTMEdWdUROcHpsX0syUXhmYU94XzlqYldLR3lxRk1FQTMyM3RQRGhDX05SdHlMNGxFSTBnUGQyUm12VUE4YW9HaWZGbldyT0hRMHR3S3ZlUG9VMVFwMkxIdjNpaS15T1hkV29OMWpFTHJBMGxCdGdPWmNtU1F2QW1uNG5IU2VEd0RKeUN3VDdPS3cyb0FYdngzVWdNZnR3b09DblNwS0c5QW0wYjlHSHBKdUtLV3JxcjNpSUtGbDM4UThSN1VuRC0yb3k3T3VHNjBxS09OR0J3WEtOMG8tSXpsZVpMUDg?oc=5",
-      "date": "2026-11-24",
+      "id": "ed23f335cc85405f",
+      "title": "NBA Cup 2026: Polymarket offers $25 trading credit with FOX promo code; here's how eligible new users can claim it",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQc0lNS0MwSGRkSWlKY0JXTkhXeElucThjbHVyb3BnWEdDVFowUnpocDR1S0NKcjZ3a3o4ekZPOTdrUlhFVnZFcFBGa3NoT1lGdXdKbTE2SkpkRmM3RFh0RHpHNktJU3l5cUZabl95dHlkRkxRbDVQSG95OEcwd2IxOUFuRW0zckt6ZmZiUlp4dHdGbm5rR19Vb0dNZFZrS2E0UDA0dWFwQVc5YlF4WXAzckhYaDZuUWx4R19oUm15ZC1hVFNZWkxTTE9PRTJrNWlDUE9WM0MyWjJZeEhValN4UFc2Q1ZNTTl1NXhNNE1kTS1ZcWZka0dyTTg2Y9IBgAJBVV95cUxNTXpoSGZTd3ZLNVpvY1pac21JbFdrQ3A1OHhwLWw0cldWT3d3OU9nWGVONjFWWXBOYlhkLWlNYndEMzB5SmE5ck5rcTlJZU5SVUt5YnlwbjNVLVBVM0tOd21xa3o3YW5MQUUwa1d3TnZLOG1rZ1pRZDl4Zm5CWG5DWE51MjB5RGR6Z29pSVBKSnRJTUF1THpVNGVGeF8tazRRazhXUGhhYW9kdTlJVkNNUmRNbkNDR2RZLTBSWFVzMWhfeng4aWx6TldoOXRaYllRa1piTVlqV0lENW1MbWc3UUtoOXYycFE2V3BjaEMxVVgzcm10RWNzemtYMTVHQ2RT?oc=5",
+      "date": "2026-11-25",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "TradingView",
+      "publisher": "Livemint",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [
         {
-          "slug": "gbg",
-          "name": "GBG",
+          "slug": "codevasp",
+          "name": "CODE",
           "reviewed": true
         }
       ],
@@ -1576,22 +2060,22 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "7c6b8bbdd4e58c96",
-      "title": "Earnings call transcript: GBG H1 2026 shows core growth but Americas drag",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNNU9vRGZENWZxWG1yZEhXN3MxakJiNmp3ZEZMUVZfMVh0XzRsRXVvcmlGTm9IaGtsLTJIcFVidVlqTHpFel9OUk1IVVR4SGtHZks2cGhVRDNQRE1KM2dKVERLRFZMc2h2aDhHcGUzTXg0WVJuV0o4aU1jVWFGNGpLOERwRFZXXzlkak1nRlZhZXRuLTRxVENuMjZRMHM3eElCX2RHWmZUeWlxWm9sc3RYb2x4RVpPblhWSmZLZmVsdzRpM3pUa0diTjVFeXNIdw?oc=5",
-      "date": "2026-11-24",
+      "id": "80d956d227a02e78",
+      "title": "Cop Or Copycat? Soon, Scan QR-Code IDs to Verify Mumbai Police Identities",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOVmpBbzViYXp6eTZMbUdkX2JQdzZUd3ZkT24xM2VRSm1EMTlTc2RIaVppc2hfcEJmVUVENHNuMmdkeUJyaVdjbmlkZ0hCcHBWLW43SS1MTlFCYzNJVmJhTkhzYldGNGdOMGh2MElMdHA1VHVCbVl2S1JpblBELXNKZUd0b09CVnlFLWxUZVhkOExiZ2RRNWdzTEJmTDAtNTU1cVkzMVlPaVBYYmFwdzdWMGVQbUpQYUNTX2hLUUF2UdIBxAFBVV95cUxQVDRLQVVtVUZ6OHRSX1M2VFFVVFg4WldWNW1VNXdwSEF5UTJnYk0wTGZMMTlHUUhqVWdtZXltUXFmU3l5eGZfc2Ixc1E4dWdtUF9mYm5DUmhuMk9TNF9XY3JUZUhudkdmdDNDdzktbXRvdHhac05EUHNPcFpVY3NuRnpZOF9VLXY3WVdBRXhkNlNMNXVtVmoyemdWaFlWZDhMdlJGOERMakF3WjhXcTl4eXZsbEpoaTYxbThSMl9FOW5iRmg3?oc=5",
+      "date": "2026-11-22",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "Investing.com UK",
+      "publisher": "Free Press Journal",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [
         {
-          "slug": "gbg",
-          "name": "GBG",
+          "slug": "codevasp",
+          "name": "CODE",
           "reviewed": true
         }
       ],
@@ -1599,13 +2083,36 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "802acc2e4a9ee858",
-      "title": "SALVATOR Verm.verw. GmbH I (GBG.MU) Seasonal returns chart",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5mSkxnQ0NnY2x6alJKTDRjTTM3SEV2TmM4SGdWdDBiaEtldUd6Szhxak9jLTdsOGlsd0FlRDRSREhNdVkyN3I1Tk9rMnJsclN1cjlQblVpNXczdzJyRDZrb282Yng?oc=5",
-      "date": "2026-11-23",
+      "id": "3b1f9dca9f0490b0",
+      "title": "ComplyCube Transforms Customer Data Capture with Smarter, Context-Aware Forms",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQRlRxaFVSSWQ0dnNMc3JuNmxTb2ozR0NUVnVjaVJ3RGtsY01GSE9tYklvclZHVDIzbV8wZVFjdGkxZXlHemVJRHg1TWNVWG1Sd1pYWUhZc29maWtVdU1NOXVncmlqWVg2UFdVRjVkWFlTZEpWdmVrRVpUWXZKVk0yTEF3Vm5YNEdyMUZObDlLZkphRDhOMmNSbll5YmtoMEpET2YtTWs0WkFEM09VWmI4S0wxdU9pY1VHenk2eUludEpxc183T2ttOGhZOGtRd3VQMVRmNQ?oc=5",
+      "date": "2026-11-18",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "The Des Moines Register",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "complycube",
+          "name": "ComplyCube",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "8749aef4875eac39",
+      "title": "GB Group plc (GBG.L) stock price, news, quote and history",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE03aU9NTVg0TG5wbmhmRld3RXBJUlF1NmxsNjgwUW9aR2RpbjBKVGxSUS1nLXQ2SGVQdE40ZUVqMG1weVk4ZURTUWM1WGI3SV9lU2VJ?oc=5",
+      "date": "2026-11-24",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
       "publisher": "Yahoo Finance UK",
@@ -1622,16 +2129,16 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "67ad604b4a88f1fa",
-      "title": "GBG: Core segments grew 4.5%, while cost actions underpin unchanged FY27 guidance",
-      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPN1VmN1FSU0NWVnJkZ1hneHE0UWpUNWFYVWcxa1ZPTVJDcGxyVEFGeXF3ajd5MUdyVmtTNDFYWXJ2dW8zY0xTVDNka1l1cHk2cmotMGMxdHMyVWhkYThkSjJZelJUNjdLTU80TnBvamVCN1RjejdGTVJCb0dnMXlpVC1tQUxqTW1YT042QUt5REJNXzV2ZjRaMjF5b1VjTktzUkJlUk1CN2w5Z0NlX0F0ODNEYUc4ZFVCeGJKeWNVV1BLUTllRjRyRm5FR1ptcDZMc0RtdnZVemlWSDBCN212MmVNMDhybUp5a2lyRzF6Tkpoekk?oc=5",
+      "id": "6f42ad096350b32b",
+      "title": "GB Group (LSE:GBG) Bets On Unified Identity Platform As Interim Results Approach",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNd3J6MUtXeE1TQkVXVDFXS3A0d0xYN0NVM1Y4ZEk4cnVJRmNsLUMzcHZzdVpBUHpyNW9kZHdlZ1VFZzNMOUQ4WTFxTGRILWVZMk5PWGY5VThXMko4VG9WRkVLQXMySWFRc3JMclFWMVY0MDh3djF0V2JlRG9ncVJockVkVUJmdkZfVVFuQ3Ixc2dlazE0Q2wySjFaS0drd1dMNzJiZTM2QjFyWHVfOGNGaHhBTG9mQ2syRVNNMVVNUlhFUUdw?oc=5",
       "date": "2026-11-24",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "TradingView",
+      "publisher": "Foreign Policy Journal",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [
@@ -1645,44 +2152,22 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "18c104dd68be44ed",
-      "title": "REG - GB Group PLC - Director change",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSi12c20zTnVRRWNnYzlQbHFmeGROWmlubGl3QzlSTkFIRWdUQkJyNV9Ya2FYSUhFU3JrSXJ2U29PQ0xvTU9zM2VaNnlCYUhIcnZ3WTRUZmJINzBMZ0RiOHJwZUJEdjFaUmd6Mmx3cjAyZTNDYi16OWsxWEJWUkZzUDNhMGs4TGQ5UUhnUi1UWHdjSlFVTS01ckxxd1U0TW5abW5tWlFUa0JVeTNC?oc=5",
-      "date": "2026-11-24",
+      "id": "c5e8271bc7890ce2",
+      "title": "Risk: Cytora Teams Up With GBG on Financial Crime Data -",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPaXVCSXBtVF9EaXZPdlRtU2pCbFFWd1hiMndwMDZRQ09OQXFfbWlid2hSQ2cwTExqRVNzcTNPcTNablNHNlhsSDBmVWRVYkt4Q1M2MGVtXzBWSVlrV1BDYnE5NHpWVTRJclBFS3FkZG0yYzE3VU85ZlRTMlpZMTBLNmc0ZnRxVU00VU9oam9BSTNfalVuNG5j?oc=5",
+      "date": "2026-11-25",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "TradingView",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "05a387903f630dc0",
-      "title": "Incode launches Incode Know Your Agent to anchor AI agent trust in verified human identity",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZ25NVlJCS09jV3VObTQ4ZDM0YzRKSzlPNU9ocThMRWtGbTFwb1RuMjNEMGR5TF9XRnktbFo2cmZQY1Y0XzBrQkp3TmFmNWZsd19wUUw5VkQ1TDkyd0UzS0Q1ek5GZ0QwVmJfRHJ3SWMzRUF0MGJ2eHZmeVNDZ0tHOWY1bDQzZ3p0MFg3QmtUb0g1RUlobjgyOG93djRsM04wSWkyYWRqYkhJcFlpVXNabHVWdk13dw?oc=5",
-      "date": "2026-11-17",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "VMblog",
+      "publisher": "Insurance Edge",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [
         {
-          "slug": "incode",
-          "name": "Incode",
-          "reviewed": true
-        },
-        {
-          "slug": "verified",
-          "name": "Verified",
+          "slug": "gbg",
+          "name": "GBG",
           "reviewed": true
         }
       ],
@@ -1690,16 +2175,39 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "a0775e74ea6811d2",
-      "title": "TikTok taps Jumio for biometric verification in AI likeness detection rollout",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQTUhuc05xTTRleGYyNlhvQmw3ZUJfc3pETENsb0p5U2xwSUtDdlZwcERRYWpITEhpQm9UX0dwelVBN3dOS3VZRG1TMm5rM09RQVZoQ2FvMlI3V3B4QjlyaUJ5MFQ3bzc3S3ZBcUVoOHN6NXJScF9uVWpLMUZIc0c5MER6OGxHdVJxX2toVjhZMWdxOEN4WDFpTEpiWDZwVWhmR3F5VEgyQUEwYTRZSDBidXFTTDZ4SDg?oc=5",
-      "date": "2026-11-23",
+      "id": "185a93007067ab9e",
+      "title": "Earnings call transcript: GBG H1 2026 shows core growth but Americas drag By Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQMHJRV2hTS21IWGZpeU1iLU5BRkl2TGN4S2poSVViZWtoT0F5ODZYVmFsZ3NCd0NJQ1NHQVAtYmMtZlZsejZpWkhiQVpjNXFYT3U5X19YcTJjUkMySDV4T1dHeU1GcGd6UHpFYml2M3ltc3F5MjZOczhMRjBUQ205bkQ2SU41WW5vVldFcHlPeThDVzFETnFMZ3FjVzFtNXRRc29mUHFKczZCZmhLOEtZUURjT2xXY2ZyLXNBNHNyRUQ4S1FfMnY0ZWFQcFFWUQ?oc=5",
+      "date": "2026-11-24",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "Biometric Update",
+      "publisher": "Investing.com India",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "gbg",
+          "name": "GBG",
+          "reviewed": true
+        }
+      ],
+      "region": "other:india",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "7313a48650730706",
+      "title": "Jumio study exposes widening trust gap in identity checks",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNdVFGMjBqVGJibVJDTTh0THMxajJsSlJyd2NzMXFrNTVoTHhjckhWTmczak9KS2xSY3lreTlEUmpJakRRX0xUVkt2bzR3TmRrZzB4WnVNbW43UGN6RjVTeVRBWU9BblF6MC1uREJxVWhhZENBUnFOMGhUVDBDWTlkemMzYXI0aFdRZW1UcGNLSTlvd2YyNTJz?oc=5",
+      "date": "2026-11-25",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "FinTech Global",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [
@@ -1713,107 +2221,22 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "a84225e765264986",
-      "title": "12 Fraud Detection Software: The 2026 Buyer’s Verdict Guide",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9uWmpZNzUzeVVVQ2c2TjJQMmpueFp5WkJSeFhuUmFwN0haSjloMWNpZnRDM2RxOTgzWmc3dy0yVXF2ektQU0xqclZZalZmVnZ6LVZfY3RzTHoyTEczYVpCanhzTU50Z9IBZkFVX3lxTE9uWmpZNzUzeVVVQ2c2TjJQMmpueFp5WkJSeFhuUmFwN0haSjloMWNpZnRDM2RxOTgzWmc3dy0yVXF2ektQU0xqclZZalZmVnZ6LVZfY3RzTHoyTEczYVpCanhzTU50Zw?oc=5",
-      "date": "2026-11-24",
+      "id": "780a516f0ecb1c6e",
+      "title": "Jumio Trust Snapshot: Who’s Willing to Share Their Identity with Your Business?",
+      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQV0ZaeUdpY1BVbmJLWm9WUXRMZ0xBQWtLYlA4dE9uSHN3a0M1UmlPcmtlR1NrMGlBdHgyejUxdHcyR045cXVDT0dDOFpTOThXTGhOTGx4aEtsT0J5QnpVWFVTeGZHMmMzTXVQN0Q2TzVhV3VMYzRQN0VEQXhTd2R5M2lDZ0MxRVJGM19EaWJzY19GcFM3OG1uYk5EUmhMN01kdzFvanp4UXRLU1NMYWsyYzRQVFhoMXdZZUU0LVFueUU0Zm9QMmdtWVE3Tk5UQnJEQm1xTHBvQTZodnJ1Q19PQlVjLW1KeHRZUWRrY1pkcURYSW5RdTNpTUVQdkNDRXFa?oc=5",
+      "date": "2026-11-19",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "GBHackers News",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "a3edf1ee56ec7b19",
-      "title": "UK boosts cyber guidance as consumers prefer humans over AI",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQYUNoRzhxY05sZmlObk9HWlppR1VXMFFsTUpKX3hQVGItczRtMjBLNXlUc1pfMzVGSkNPVzd2bWZoQTh1OWY1STVfNEdUTE1qZWVVWm1ORWxnQTM5YjJNZGhWcmRiTTRVaFRRZWh1ZjA2OUVoeFJ3eG9KY2dxRk1hQVNUc1dFQUF2?oc=5",
-      "date": "2026-11-24",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "CoinGeek",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "93d6e03a125d9d86",
-      "title": "How workforce impersonation exploits gaps in employee identity verification",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPaXBScHd1REZxLVp4RnFRZ2RXcGRLdUlvMDkzQ2NEc1ZpYW9CMHNTcHZxUTVlSWk0SHFSdTZyYTdiVE5EVGhkTklTVmhEQUZVY3p4SWVKN2gzZDR3UFlid2RzQzNhNDlIYnlnR2wta0J1czR6SnM2bFlYTlo5RFo3SU5HMFFTQmFGanU3U2Ryb2FvQ1NoMmtZbGY2a1RWLVluaEE1Wi1FcDJnaDJUUnAyTzhESXg?oc=5",
-      "date": "2026-11-23",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Biometric Update",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "0e3d986d701c1853",
-      "title": "Companies House reports strong uptake of mandatory ID verification",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQVDZkVTlTc2x4NjFCQ1VsdFVORjRrSkJuNXVsbE1tZzNtSU1oZG1KdFJhdzRIdDc2a1YtRTBxMGNlaHNNcnJKSEpsSDRpM0Rydkpqc3c0RUc4azJLVlhGX29BaklvSTZDc2pDTGdFbUxRM2xQUDdkeUVhUlh2RVl4Y2tMU0RiTDJDTVFSdjM2UENlb0FvUmJKNTdpUFJYOWxwOERNUU1R?oc=5",
-      "date": "2026-11-24",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "UKAuthority",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "4aaaaba4f2efab1b",
-      "title": "Janjilah proposes integration with SarawakPass to strengthen transaction security",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQazB5ZnAtVXZCaDlkc3VjbDc0VDhZdjNtY0tVYzM5VGVrdnZzdHFkMzkyWWZkVEgzSWx3VlZia0U5RWdwSDFZekI5YUY2bEdDbGx1QzlkZ0hvZE5kdGplclBobnNtUDh2aDZNeGRNRTlaNngxTnhqVHNUZ08xV2Y5anY2NVhXUEk2SmxuYnJ4Z3BmcjVOS1JVUlhHakE2Z2dfbmVmWWpUUk5LUmMyOHg2M05VdjZHZkI0WmxTMHJXMno?oc=5",
-      "date": "2026-11-22",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Borneo Post",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "aa91dba755d29ea5",
-      "title": "New drone prototype folds itself through gaps half its width during flight",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBwMjZtb3R6S1NKODA1MnhtOVNfTXNGODhVMzVfV2tTSTFhcVNOb3RoTnFPMEYxNlJqd3M0eDBLdVdYZ2ptaVZrcjYwVUxmdHRiZ21SZmZObUdWSGEweW5mb21KS2trUzdOWVFWa3UyenhRc1ZMZmNJUTFnZm5IWUk?oc=5",
-      "date": "2026-11-23",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Tech Xplore",
+      "publisher": "Rutland Herald",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [
         {
-          "slug": "width",
-          "name": "WIDTH",
+          "slug": "jumio",
+          "name": "Jumio",
           "reviewed": true
         }
       ],
@@ -1821,22 +2244,22 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "a36d05b663d00bee",
-      "title": "Used MDF continuous press line/Used 8ft width Particle board line/Used wood based panel line",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOVFk4RXVnS1NSczRIcnZKVFFzVFdYWno0SGRoVTdtd21tQl9TX19POXE5MVo2aXpjaTkxd1M4NkV6dVk4MFl4cDFWMGxiYVQzVzFsM2ZfWHVPbGR1aUlqSHFza09HVFR5X0I4eFhkY19iUXNfQjhVVTRkZldOQ1ZRaVZ6dUF5b1B5YnVyVlltVzZuQmZzWGlURzNfc2hvRkdPZ042SGMzdmQ1bnFueEZvbDJHeTVHUVNSZ2I1eWx1X0c2TXJMWHBnYm45U1o?oc=5",
-      "date": "2026-11-22",
+      "id": "c711818ad33e523f",
+      "title": "Jumio Trust Snapshot: Who’s Willing to Share Their Identity with Your Business?",
+      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOcktrRkFzTTJpY0xFWl91RGh1MTZ0R1JrelRXVDEyX3BxSU5ZZFg1UU5lcGg1MEdiVW9IM2VHWHBxbklTaVA4MUl6bkt4czU4R2VnYXFMMXdjalRlS2FKRDNpNnBvWUh0LXgtVDBaellWb19Sc2h3SDR6MEMtVEpFZ3JTMnd3NTJnU2dMRWFfZ25yWnpnbkJRdW9iNFJFU2lpYzBUb2NqOGYwNDVMd0FnLTNJeXZncFhOY0E4aVBXRzliNnFnMXVFUWJ3VUZTcUNMZlRhQUpwYy0yQkpXZ3lpR0c1cUlIWTFkeDRVWG11TTF2d1FmMlpuZTdLZWduQ2dtZUxISnp5amdkTDdk?oc=5",
+      "date": "2026-11-19",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "Fordaq",
+      "publisher": "The Joplin Globe",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [
         {
-          "slug": "width",
-          "name": "WIDTH",
+          "slug": "jumio",
+          "name": "Jumio",
           "reviewed": true
         }
       ],
@@ -1844,16 +2267,16 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "71810f352e30bd3e",
-      "title": "Eastern Europe crypto flows fall 7.9% as Ukraine draws $12B in stablecoins",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNa1h5Z0R6TE9qQlk0V0RLTmtCQWFYc0g5UHlPSXNSV0QtQUgtX21kLVNRNGlTUFhKSFY5WEt2dHhNVzNEM3BTQ2FOdXIwZzRObW9QLWZ2RDJQbFMyOVFDT3N0T3Z0ZzJPcW82OUFfTGRlWXcwZjB0WkIwLUV4SnNNNVVZLVgxRjlxcXZkbWNPWF9RUmRiV2ZYQkw1b3g0QWtEckVFYl9qTERFbGxaazgwUnJjY2dsZm0xTUREYVVsTUZ1Y3dfYUJrb19td243dUFM?oc=5",
-      "date": "2026-11-17",
+      "id": "f4debebd66e7cea6",
+      "title": "Patrick Manser and Evan Luthra Break Ground on BANURU Resort & Residences in Zanzibar",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOQmVtNnJHQ1N1T1lDWGNBUklnbVlGd0d6S3hlUnZUaG1QUXJiWERDUnRVTzg0enM1U3llRjhsMTRTTlhtLTlVdmN6SldSM09PWHJaX2Q2azZTRFFmOEhtczVvTnFNUmwxM3I4eGEwVFZhTXdxTGIzRXcxdXB6Qk40Z0k0QUdfUHNKa084czNobi1uUGM3WHNlYmF1VGFkOUQwSUdMd3VkWkR5MlJDdzRpTnZiUW1Da2QzSFE?oc=5",
+      "date": "2026-11-20",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "TradingView",
+      "publisher": "greatreporter",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [],
@@ -1861,749 +2284,72 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "8319f7de72c93e58",
-      "title": "KSR120 Signs are Sweeping Across the Commonwealth",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQalBCajFHNlg1eW10MWgtZ2ZlYnlVV0FIQ1Y3Q2dxWHIyZGtNSTZQdnBBZ0xiMDBfTnpTeFBnT2VGUk5ESGdETWdVYU9xUHVULVUzNG5WSXVrU2xfSDhKdnVDdVdMVkpNUTNsWFdWRGZVSl9rSmx2cXBQVkpoSV9QWmVVT1cyYUVMRGNzUXE5ZmdodGxjamQ3dE1pM04tTG90?oc=5",
-      "date": "2026-11-23",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "On3",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "b2d771a3ed1b374b",
-      "title": "BAC's bands hit a 1-year low. What does a squeeze tell you? for NYSE:BAC by EdoLab-Markets",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZmM4RlA1eGxsNmJYZmYtRjRQeGxCNHFPcFJOYTRhaGQxcG83UGtZSENtdlNEa1NwSDA0MXVLMUNtaHJaUEV0MkZvZFNMWGx2dUNoam9iQzcxcmtLaDRMbXY1WTRySG9TMmN2M3FvVm04NWJqcWRXUEpZUUFvYVp4ZGdUX1NxdUdEMDBKVEVRX1ZGcko0bEhIQjJ1Z2NscXU2ZmhLWDB5WU0?oc=5",
+      "id": "b9f74fea704eeb77",
+      "title": "Only 10% of consumers trust social media to protect data",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQMEY3V0RvNG5tdU9uT2FCY0stQnc3bU9CbW5XcXFVQWNpZlBWdGFuRWFSZHd0Z09sdGJOVkEyYVljdjBteHZ0RVY4cEpEdGd6dEFNajFPOGQtYTM3cXNSajFlSldLc3lSendZNUJqRGlhazZUYWZCdkpXUGRqZ1VVV29DNTFzanNMRWRNaUdkX0R0RHROY1VWTV9BN1I?oc=5",
       "date": "2026-11-19",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "TradingView",
+      "publisher": "Singapore Business Review",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [],
-      "region": "Global",
+      "region": "other:singapore",
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "a8dff6b6e2e7ad1c",
-      "title": "Chainalysis: India Ranks Second Globally in Crypto Transaction Volume",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUmVrTFp2NzNkd0lvWGlqTTJEZnVsR09DX2JWRldiZXBXVzgxR09EZElPN2kwamlzQTN5Zm9PUUhDWElCM2htSDNvenRRUFowcEh2OHJiV2VDMEhNeDVNSnZhVnJUd05ta1hhbXc3VURhOWowdlhudmJSWUt6YmNod1BrcE1kSUhXTlhrZkR4NE9NaUN2M3phWW93RmFvbUNBOHpBTjJaTXh5Rnl6QWlj?oc=5",
-      "date": "2026-11-22",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "CoinMarketCap",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": null,
-          "name": "Chainalysis",
-          "reviewed": false
-        }
-      ],
-      "region": "other:india",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "c18770ce526d68c6",
-      "title": "Eastern Europe's crypto economy shrinks 7.9% to $642.1 billion as P2P volume jumps 330%",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE41ckdjWnRHZUwzRzVJRDkwZmdLMzFDSDQ5cUljeGltLWFwNTk1R2F0d3BtTzJRNVVyUERzR1BXQXA3blNHQVJWc2hna2JhMXpUZ3BGQzR0cDJOOFV4VlhUWWl0dE0yd05scksxRDJsMjBLTUZYTnc?oc=5",
-      "date": "2026-11-17",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Crypto Briefing",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "d0bd2aaab509faf8",
-      "title": "Noise Area Bands [Badr Edge]— Indicateur par kh_badrr",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE11cDlQY3RiVGF1WG1mSWd2dl9uN0ZiUk0zQ1dpMUhxeVZvbjRkUGdVUEVRd3JYbFpidUQ2TlItMUNYa1FTU3ozWFhQWVVzbDZ2UWk2M2ZoQTE0aHVtbXgzUVFFcTRvVWFKU0RwRzByWmc3TUE1SHl6ajBn?oc=5",
-      "date": "2026-11-19",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "TradingView",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "3a4aacc7f3002856",
-      "title": "Kindly Myers on new Kentucky Hockey poster",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNRkhpNEdxY2VEQ1RWZUNwU0pBZ1N3R1VmdWtZYkJEc0NLYlA2OWd5dkNrVTM1Mk9iNjltQXB3NWRNdVVJdjBRaGdkbTZQRFFMUG1ZLXdhckFBVW5NSG1tNmpfRUw3d3pEcUM1T3RnWm5MMVFkRWZPYzZVQWY1Z0ZZZkgwRTIwV2VPN041U2hOQ3lfZ1V0amxz?oc=5",
-      "date": "2026-11-23",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "On3",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "36c7993161f4325c",
-      "title": "Coiled Spring Breakout Signals [Jayadev Rana] — Indicator by JayadevRana",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcHpHXzlrN2VGSFlrcGxyYm1nMFBINVhHWXhibFpCOFlvZUVVS0V1eHRrQWhLTDNXTWFveW9zcG1YT1BnSTh3ckh3RWVkWE40WDNJVVhDWFdYM05FTFdGUmpnYXVRMkU3VEdDdFBPU1NtaTNrcl9sa3Zjck1wUTJDellxXzB5NWdKRGZHV1lkVU12UQ?oc=5",
+      "id": "2e50d9e17ec70b17",
+      "title": "Spain’s Marina Escobar Wins the Islantilla Open, the LET Access Series Season Finale",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOWjRaRklwTlh2cXNLRGJ6RmZGMGVRajlPb3ZmRi1ZTnFjSG5rN2J5bVlvOTROX21oZWdsYWF2aDhNZ0RnSFBTN3Q5LVl4NG9fTWpjMDBvYU1FMXZlSlZnMkVaTm9HQjZnMGhvNjZKbDhYZ0M0Y0t4WnRGRFVWY1dWV3U2RWljQklvNnktRExMS1A2azBGcGRjdU5OTXhKdzNjX3FZRTVZY0hKbkR5UmlOUEJhVGc1ZFpnemc?oc=5",
       "date": "2026-11-21",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "TradingView",
+      "publisher": "greatreporter",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [],
       "region": "Global",
-      "rule": "fallback",
+      "rule": "vendor-marketing",
+      "matched": "wins",
       "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "priority": null,
+      "reason": "Vendor marketing, not news for buyers.",
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "d3d927aad52f2caf",
-      "title": "ella gross face cc | anatomically detailed + 432hz",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9EX0k4eGVyQzNRRUpjdWJSS0hSdnUwcVY3bDc1cVA2eTNCOTgwdm5KSnlkS3pNYi1QWk5vLTNjU1piX2JaSk84X3ZWU01RYnl2RDduSDg5dEN3VTFE?oc=5",
-      "date": "2026-11-18",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "YouTube",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "ca7f738a7d050d0c",
-      "title": "Piker the Biker",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBqLXJhNzhfMHl3cFdxOENFajBWU2VoUlN2b21pOEZpMmJDelFEeG9rYkM0dG9oaC0wNExFZTJZMml3aG9QVThMTjE0eXBOM0o5ZHhfNWZxY2hwdTNyRC1Jbk90MHJIa3RndkE?oc=5",
-      "date": "2026-11-19",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "texasinsider.org",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "958a92f9f91863a9",
-      "title": "Minimalist News and Updates",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1kZFRzR0F3YnN5dHJ4dDB4LUV1Vm9zeGNkUmE5OFByNjAwaThyRWpLSjBjNURDb0dWLUxwRzctUEwxQm1lbkU0MQ?oc=5",
-      "date": "2026-11-20",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Adgully",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "2910640eedd7a83a",
-      "title": "The Laughing Cow News and Updates",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5uWk1vRDVVajYxX2FnWWVMZ1ItMURuTmxYOUN6TnY2bk5McWIwRTFEX2pGWXc2clNuRWtaR2Y3eWVRSFkxUDE1Zw?oc=5",
-      "date": "2026-11-19",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Adgully",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "428747c44ea88b94",
-      "title": "Shri Gaurav Dwivedi News and Updates",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBCQjB6MGxzLUlLNGFBbDJEWF9VT1hDWWdReW0tWGgyc1M5OGR3Vzkwd3FKUno4NVBhTG1BVlJpaUlnUS01dzN2Mg?oc=5",
-      "date": "2026-11-19",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Adgully",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "7f4988d18fafc73f",
-      "title": "Firefox News and Updates",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1sUzN5TGtVNVVyczQ3OVJPaUlieVEyaElyMDJPLUQ5LWpHc21ST2ZTN2F4VllwS05NdllqY25BbUFIRjYyUmtZOQ?oc=5",
-      "date": "2026-11-19",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Adgully",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "b246b24c64741705",
-      "title": "Aman Jain News and Updates",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBkd1BhbENyckVOYmVkVEVaeGs3NGFEZXFXTzZqNVprVTZKXzlVc3diby1qbVZPb1UzMzBMcm1ZdTNtQzVXVTZONg?oc=5",
-      "date": "2026-11-19",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Adgully",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "bc9502e1786accda",
-      "title": "Rishabh Singh Sambyal News and Updates",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5yUE1fOHNIWkhvT2NtWmZFMTd6OHE1LUttaGpPdjEwNXJuNzAtSWpFLUZxbjlmVzBtZ1dMUTdRY201MExiM0VkNw?oc=5",
-      "date": "2026-11-20",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Adgully",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "39b60ad5321000f7",
-      "title": "Indus Towers News and Updates",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBrbnVBNnM0LTNHWVMyMXFYaGFOa3dkMjdVOEIzQ1JNSXQ0VmVlUHlyclE1YlBPelZZeFRNdkVVbzBBMWs4eVhrbg?oc=5",
-      "date": "2026-11-19",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Adgully",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "ba53e8419bb6bef4",
-      "title": "Britannia Fudge It News and Updates",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBleElFQmhseDlkUmVEVE1PTjQxVk5KN1U0S2FjT3BwczBRdWdYcXhjMEF1MUZkVnB2S29GazlqbFM1UUhWZ25reA?oc=5",
-      "date": "2026-11-19",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Adgully",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "04dfb36998c6a270",
-      "title": "Shri Sanjay C Purao News and Updates",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5hdGp4NWhTOTl3Tld3Q3AyZkVjOExDTkZiTzJyZnBNSnRVWDFOZXp3T0JfNUhiQ3JvUDJma1l4aGJEYldlRnAycg?oc=5",
-      "date": "2026-11-19",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Adgully",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "47d083a4eedbd30c",
-      "title": "Best formations EA FC 24 & custom tactics for current meta",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNSDRSNHUzODljclJ5dm9oQlBzMEZmd2p6US1tUjFGNWdjTnZNVnA5SEsxRWNBdEVYc2gzNnp0OVA1WVMybnFjY3FERDRZWTg2V19paFdFSzZjU29qaUdTTmFVZkt4M0c2czM4U3o3Q3N4X2NrNHV6S1NYU1l6eVlhVDlIZXZ5RDBPbU5YWUhFR0RLQlc1RXVSQ0UzUjJ5N201b3h0Mk9jY1QyNkxaREtpMVJ2OWY?oc=5",
-      "date": "2026-11-18",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Dexerto",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "ffaefc62761c462c",
-      "title": "Small Business Due Diligence",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVnoxaVhFakhXX0NVWXhRa29QYTVkNE1ZSldlcDFTbFBvYmYzMmliSXpvb2d6eFE4Z2p1eElVS1B2d1NfYzc2SVM4M29LS01DeW0ySjZJY1NHOF9sVlQ4bVF1ZzlzMDBRNWN0Yk1BNVIwVTBsSzhwd0s2bXFWSFgyWndqd2RDSDY1QUFScDJ6VEtkaEZnOVFJLUdlemFLZkVTMlJJcm1jRTVMbFVOZ3dNTHpaTQ?oc=5",
-      "date": "2026-11-20",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "LexisNexis Risk Solutions",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": null,
-          "name": "LexisNexis Risk Solutions",
-          "reviewed": false
-        }
-      ],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "6cf716faf1ae4755",
-      "title": "Erste Group initiated coverage on RELX",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQaEMySkFUTHBfenVUM3BROWVwYmd3eVhFSURWUXVvUzBvOXlhUjBCdmQ4d0I0bFEwNnc5WFlKcE8wemIweEFGWjZ1RUVkX1hyaGpPdWZxTW1VMzFXaXYyTzl2TE9qbkdiVjZaVXVUZTFQNnNaWWpwd0pWMWVvTXgzSXdtaXJTSi1B?oc=5",
-      "date": "2026-11-18",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Quantisnow",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "62caf02763b77df6",
-      "title": "RELX (LSE:REL) Stock May Be 33% Undervalued On New Government AI Tool",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNVmZsWGR0enZRZ2dOaS0wQWJjbUZQcEgwd0IxdTFBNTJiZGtUWmMyZVVmZlFWdGVIQXI5bEVjZVNLaVdCcVltMUxQeVVJajZzM0Z3M1U0bnBPYlA4QTlZM1pFYjMwSGV5c0pKRlNfWlZlTlM4SjNXamFBREVTWFpJbGN4elZSWEo1MF8yMDN2OF8wTjZUekJzZjUwNkZoYnRyQjVaaU43dXBXTmN2N193TzhIT2l3bFJ1TFpJLTJucHAySnpmemUtczRLZkRueTJwbklXdG1yRzfSAdgBQVVfeXFMTVZmbFhkdHp2UWdnTmktMEFiY21GUHBIMHdCMXUxQTUyYmRrVFpjMmVVZmZRVnRlSEFyOWxFY2VTS2lXQnFZbTFMUHlVSWo2czNGdzNVNG5wT2JQOEE5WTNaRWIzMEhleXNKSkZTX1pWZU5TOEozV2phQURFU1haSWxjeHpWUlhKNTBfMjAzdjhfME42VHpCc2Y1MDZGaGJ0ckI1WmlON3VwV05jdjdfd084SE9pd2xSdUxaSS0ybnBwMkp6ZnplLXM0S2ZEbnkycG5JV3Rtckc3?oc=5",
-      "date": "2026-11-23",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Simply Wall St",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "96370c6ed26e5c55",
-      "title": "Identity verification faces challenges on both sides of the trust equation",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaHktcGI2OXloWWhPS0VXTU1NTVB2Wi1NODkwbndVTnJXaTludVkwQ0Jldkg5RDRSSG9Gb3hhTVJ2ajQzQjJaaXVSeld6TGp1NmFhU1YyOWFQVlFtRXRGSV9oQzNwS0txd0M4ZnB4eG53SEFlR1FVOFVyZmtFTWZBSF9qYW96bk1rRks2TjRpbTY1TGVudnZMSGptd2Z3aktEUGhZa19ZTXk4Ni0xV2Q0YVRlVQ?oc=5",
-      "date": "2026-11-23",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Biometric Update",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "602e5d9274a3b48b",
-      "title": "Ethiopia’s Digital Signature Market Starts With a High Bar",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9tMllTMTZ2VFh5NnoyZmZWWGhyVGh0UkZWU0NJcUVCOVRWdWtjTHFHOEJRYUwyWTFQRXlVN2lXRElSYWtDNUFKQ2swRlBmb09wVG1JWmlFRQ?oc=5",
-      "date": "2026-11-24",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Shega",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "1ff8b41f32b7dcfb",
-      "title": "Important deadline nears for $100M Equifax settlement, but claims are still open",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOcjkxZFpHZVktamh5YXZyVy1Dd3MxdHlfYW83RDFvS0tJdDlBZHB4ZUxVeXFDaEUyM21pNUpGU0RYM3dqN09oR1ctdnpXT3dudEdhaW5mQ3UydDRhTi1LTENmM0V3OWttT2lzZ242X3ROdDZtaE40Ql9WMEpSM3JCVDZZR05jVFFHVXZDWlE1Z2NPVDdqUVBvbDl0SWNUTDBwaXd2a0h3?oc=5",
-      "date": "2026-11-24",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "New Haven Register",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": null,
-          "name": "Equifax",
-          "reviewed": false
-        }
-      ],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "52bdd28eea61d5a7",
-      "title": "Hegde v. Equifax: FCRA Claim Survives Over Disputed 30-Day Deadline",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbmV2RkY1SlpZS2wyQXVlWVowTFVPOGFFd3dSQm1uS3BZR0xreHpxX0I3SkdZTFdndUMwYjVjVF9sVmROd3diTHhXTGF4UjRKNEtMZi1WVTU3OHl0OW93OGlOeWlxRnJpZlktNV9MaHNSWWxhemlGcUpBM1FnRmlYMEZFVVhydXZPWG02X1V1STRxcVZJbVVSRjMxY1pZTmN1OVk1Vm1R?oc=5",
-      "date": "2026-11-23",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "ACA International",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": null,
-          "name": "Equifax",
-          "reviewed": false
-        }
-      ],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "93fd9e3c381cdfb3",
-      "title": "Equifax loses domain dispute against gripe domain",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNkZ1VjFJZC1NRnNRTXpOS1ZBRGJBZjZKQ0pZRWoxanpFcjFVM3o2cEVQaHUyVWVHZlJkWHNFU0VGRS1lQVkxb3ZiRzBaREM2Q28zdmVGbVZCR3pPSXJhT3NXLWxZSFpYVzBnN094RFBmYzNxd3JPQU1JZmpoZVBHS2NVZFJjTmJzY1dpTnFRTE9Idw?oc=5",
-      "date": "2026-11-24",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Domain Name Wire",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": null,
-          "name": "Equifax",
-          "reviewed": false
-        }
-      ],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "896bd234fd7ee133",
-      "title": "Equifax Warns of Deeper Mortgage Slump, Sees Growth in Government and Mexico Deal",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNdk5fbkhwTDNrVjN3bGpQcmtSZXBKVlFmaExpQjBoVlpNUjlpVUJldmV5V1JrcnpoNlhUZ2g5Y0hRbG93LUg1Zjd6TERhbFFvRk8wYzNnNWl1bGw1ZHNVZlNSRERQRDRlenRqUFBiX2FLU2kyY0JMMy0wYUF5enVNMGxGaWZvWkhuSmprUDduNV9CSEI4a01yOGcxZWowZw?oc=5",
-      "date": "2026-11-24",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Yahoo Finance",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": null,
-          "name": "Equifax",
-          "reviewed": false
-        }
-      ],
-      "region": "other:mexico",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "6b4e4bb74f23b650",
-      "title": "Equifax Inc. stock rises Monday, still underperforms market",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPYUpzdDNLbG1ZUldGODRDMS1mdEh1YU0zOHJBekk3SW9pWlpNcHNfYnAzY3pHQm93b0I0TUExMFVDQVRSNTRzVTJwN1ZPc1RKdVNJeUxHdjZ1YTh3Q3dTNFhEaV9faEhWV0JzTnpUYXIyTnBKbGRxVEZrZERqd1EyQmZJRDFlTG1GbGM0N0FFRlZ0TE9vNThPM19KYWsydUV1RGlSS0FtVC0xVHE0SVc3dkI3ZUw2dVJhaEVfZ0RWNHNKbnN6a2JSWGxpN2NaYW00?oc=5",
-      "date": "2026-11-23",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "MarketWatch",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": null,
-          "name": "Equifax",
-          "reviewed": false
-        }
-      ],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "bce48a8e85c4916a",
-      "title": "Equifax Warns of Deeper US Mortgage Market Decline",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA2cFFET0hpenk5QUUxV3Y2YnM2WWREZTBhRENRdDYwYmRCdUdpYk9BYXlUVV9zeExsZVRzYkl3QllydGpaVnNSUnBQZTBmSEZUOEw4dzhyakFVblpHUkR6Nk5zd0dUQ0JjOXdJLTRR?oc=5",
-      "date": "2026-11-24",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "cwibc.co.id",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": null,
-          "name": "Equifax",
-          "reviewed": false
-        }
-      ],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "bf46a345edf48f4c",
-      "title": "Equifax Canada Report: Rising Interest Rates, Record Mortgage Delinquency and Growing Debt Pressure Weigh on Homeowners",
-      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPbE12bXJ4MHdnMk9kZWtuOENfbkREb21uYzdqWGhKSlh0YVAtVVY3V2dzajNvLXUxRkFPVHVxLXZjeWkybzhmQk14YjlocjhvdVNOTzQwR3YyZW9yV1NIOVdfUktCdmNkN2JidTdBVHR1LUFSdGRRU0J2dGVZY3pEb3VVV1paOHlTbWFxclpXQVhjMi00dFpuQmZfVHdudVplS1RfbVNxMngyNXdHdlBaUHBkLU9uTEZjZGxhbUlVV29yVGlmQW00T0lMcUMyUmRCc1JESWJlaVZrX0R5ZU05b3ZtUUZnZTlXRDA0RQ?oc=5",
-      "date": "2026-11-24",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Quiver Quantitative",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": null,
-          "name": "Equifax",
-          "reviewed": false
-        }
-      ],
-      "region": "other:canada",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "029ce683c5969d04",
-      "title": "Mortgage delinquency rate up 31% in Q3, driven by Ontario and B.C.: Equifax report",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOWm9LZ1p3QnJQbWJoTEs2cnRlLXBLWG1KRjFYZVNoaGJWM25scXlBUkVFdEJ4Y1pDMGdFdjVwLUdhMW9tRkVoaTBRTWwzTXMyMjFTN2ZBaFBPWmxGMHRTdWswNWlSeWlQbGh3d2lTQmZhb0J6bUpvSkY5Tl9jdUxuQ1NXQ1Q5NEJSOVhRbXF6N2U4Y0VYVnVqZklYVWpDMjNianF2LXhrbXYxM0JmakxSQmVzYTRnVFlzelhjUjZB?oc=5",
-      "date": "2026-11-24",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "CP24",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": null,
-          "name": "Equifax",
-          "reviewed": false
-        }
-      ],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "e55b525be36381df",
-      "title": "Rising Borrowing Costs Drive Mortgage Delinquencies to Multi-Year High, Equifax Canada Says",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPdHdVbmd3QkR2UUlrYzlwZFpITUpWZWhpWmFrQWwtVFZRT3FINGNKNm1wbEJrUnB1eGxlQTYyVnVfSUk5V3AyNWMyb3VPUjVhdkszVVFqelJ1a1JmWkM3SktIdHZrNWFrUU1mZ0JTeVMxbGpNOFE3Tl9GZE5PaHhPREZyLUs3Yjd2alctUmN2a0hOQUx2MlBhX0g0eDRMRG5NR05ud1RydnlhWU5HQ2ZCbjFFSW1PZ0lhNU1EMnM4NXRwVU51RXg3c2VvaWFBNjV0c0ZLWGtmdTZqUmc?oc=5",
-      "date": "2026-11-24",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "marketscreener.com",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": null,
-          "name": "Equifax",
-          "reviewed": false
-        }
-      ],
-      "region": "other:canada",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "b7229afba346319d",
-      "title": "Mortgage delinquency rate up 31% in Q3, driven by Ontario and B.C.: Equifax report",
-      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPeGxMQWQ2TlVobWJVdWFqU1RnYTlfTE1ZdC1NeEVMVWZtU0Z2OEpWVFVHQzZaTjdHdDlSNFp5UUV3QkRLQ04tcjQ2RkRzU01YMHZYN0FlNUJEX19YbDU2d0I1TWZueFVyMTFmQmxfZGRNTm1QUnRDNjA1Z0JrVWdhLThncFl2Tm14c3ZHUjk4cGhCSGxrcFlyN1VERWM4ZEdLempVS2Q0Rm4ybmpjU0Z0akpTajlCWWxPeC12UW9DQ1FFNWh1ZHhkdGs5aVpZZjluZUZGempEeXc3OEMya3lzS0FybE8zbk82VVdOM1lsczVvQS1JNzNJZks0TlQ4T1JiMlV5dUJ4aWxvOEZkLXc?oc=5",
-      "date": "2026-11-24",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Toronto Star",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": null,
-          "name": "Equifax",
-          "reviewed": false
-        }
-      ],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "4892b2e3ee373793",
-      "title": "Mortgage delinquencies hit highest level since 2013 as rates rise",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5VWVNKamp5Wk1ScFdXTnYzSFZZYzlteFdCOXgzWFd1WU5WZGFCRmdjdkNDRjJUdDV3cUxKaUlxXzM4Ym9RMXZUWnhMN3JIQkIwMG9VZ1AzMkItRGFmZmVmZGRqWW5RQVRKUFN6VA?oc=5",
-      "date": "2026-11-24",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Barrie 360",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "c285bb9368849713",
-      "title": "Equifax (0II3) Q1 2025 Earnings Report - Results, Call & Slides",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5YaDlZNGpiOU13Z201cnpLZ1AwaXJGcXU3MWlCOVFxUk1WLUpHbXoxZ0ZUbzRzVlVJbDlaS0NMdEtJLTE1cDA5blYzZEFTc2huLXdGWnZQNHg2MnVoWWJMV1Bid0FOQmF2cHdxeURsQkU?oc=5",
-      "date": "2026-11-19",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "TipRanks",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": null,
-          "name": "Equifax",
-          "reviewed": false
-        }
-      ],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "1bacab4b39010e8d",
-      "title": "One in four mortgages held by younger Ontarians may be underwater: Equifax",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNQnYydVdKTjJpc2VRMFBjVlNQdUJ6WTUwaG9RbUVBRVZ6ZFU0WWx3SXVid1RUT2JkQ19OZ18wOFh5elFZZVlOb1Z3eFVWckhuaU9yS2dPLU90RzFjYkt2VXhydDctZE83MV9VYXBOcUx5YkZRTTFpMTlXVHJVa1FPSDZIVW1pR2JuYWR3UFROcnFHT0lUZFBGelZtN3l1VTUyM1JMOUdnaw?oc=5",
-      "date": "2026-11-24",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Real Estate Magazine Canada",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": null,
-          "name": "Equifax",
-          "reviewed": false
-        }
-      ],
-      "region": "other:canada",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "60b4f0b2d7e71d5f",
-      "title": "Equifax report — Mortgage delinquency rate up 31% in Q3, driven by Ontario and B.C",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQeGZ5XzRUaXgxSG00eV85VllNaVNfOWJRY01VT0FkUnRNc29oalNqOWVJbGdJcjFTb3BOSG5nbHI4Z2ZETVVzTDk5RFNyWjhkcGZGMWRxeVJGU25rd3VWMDI4QlFhcU1pWWdLNnpONG1pS21mRzFQNEtTckE5ZS0tcUIzTDlVOG1rM3VEN0JHODI?oc=5",
-      "date": "2026-11-24",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "cedarnews.net",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": null,
-          "name": "Equifax",
-          "reviewed": false
-        }
-      ],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
-    },
-    {
-      "id": "17343267614458c0",
-      "title": "Lisa Nelson - CEO, Financial & Corporate Compliance, Wolters Kluwer",
-      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1GcnR1dklMbElTNFU5RFRDLXpiYktKSnp5ekFSWmhIVTFhRGl1czVycWN0N09tT2ZvTzFGd0RzN0wzazdDOGc?oc=5",
+      "id": "a70b0768d3d129a6",
+      "title": "Quantexa - Contextual Decision Intelligence",
+      "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE9Ick81cXRKR19JTWxkRWZJbXZidU1NTHB1SHE5UlZ1bWNZa2g3ZHFCWXpXSjhydkhLUzlwY2t1ZEV4UQ?oc=5",
       "date": "2026-11-22",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "yespress.io",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "quantexa",
+          "name": "Quantexa",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "eb7dbc65ac16125b",
+      "title": "Raghunandan G - Founder and CEO, Zolve",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5BdlpoWXhwVU1ULTRraEhLMU5nb1BiZlRuMEZ2M0J4LUV1czdORUNQQ1YxdTJLX3RGVHBMSGNaMWpONXdwUllhTg?oc=5",
+      "date": "2026-11-21",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
       "publisher": "yespress.io",
@@ -2614,22 +2360,130 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "fb895926ed858d4a",
-      "title": "Equifax Flags Deeper 2027 Mortgage Market Decline",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4yelBuWmxlRnZoODhfNW1RazM1ZW9Nemk3VXdMMjBQLVE5cjA0LXlXRFoxOU1KNEJMeFFYMW0yaXhnNzVEMS0wUmVDeGhJb05LTGtidTFTUTNVTXRaSGZDbDlWcmRfbzRIdEJyMU5uWQ?oc=5",
+      "id": "595b795dd2576a20",
+      "title": "U2 announces North American stadium dates for Carnaval De Luz Presents: The Greatest Show on Earth World Tour 2027",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOaTM5MkktQWRhM0xnU3huNEdGTDZyWkw5b3NUalQ2ODdZTVR1U1FZWTRFMzJxSFNxbngzTXhqbTl6ODI0RmhycG9HLVRqd3ZRZldHQmw0V01VZjFYb0dPOHFVVy0yMS04UmVyMzN5RHM1NEtUUVEzb3Q5V1M3MkN5QUU1cnliTmdZNEphOXJxNExnXzBpT2ZzOGRoNHNxd3FVTkVFZFFzb2VkaFVmQk9DR1ZVcjVlbXBHUzB1eTVCVmVOcWVyaFY0djZIcjlRd1Q3c2gwS3hvN09XUnFhNk9RZG5iUS0?oc=5",
       "date": "2026-11-24",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "SuaraGarut.ID",
+      "publisher": "NottinghamMD.com",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "057f50c74b333f31",
+      "title": "Identity Verification Market is projected to reach USD 50.96 billion by 2034, expanding at a robust 15.2% CAGR",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPN2Y3SzBQV3BZVWs1UW9MbnJGS1I5UXBvSVRrWXI1QXRuVDVJbTBTbWFyS1RUVHpVM1IxcnRxa2EyQzNvb0QxUkRzT2FBMlpyZ0c5QTBfdnhnWHJqR21lUzZSanR4STQtd2hEb01Pd0RjOWViZHY5OW1SWEF3R1EydWpEZ1hDSXV3bFNUWkM0YkM2VWJ6eXQ5MEhEVFc?oc=5",
+      "date": "2026-11-25",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "openPR.com",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "717ee3b47e3ec53d",
+      "title": "12 Account Takeover (ATO) Protection Solutions : The 2026 Buyer’s Verdict Guide",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9QREZYUUdPazdWdHhJNEtDT296ZHhsTEMtTDh5NDVaUGNWSW82WUs0VjZzSVlBTUI1eERjSUk5dEpURkZ5WWVjc29kUlF5SVpSdURqdVJtbi1KeEZHMm9aTDg2UHI5QXBKc2NNbjExNmTSAXZBVV95cUxNS0l2X2ZQT3NkZ0JSTmw0MWRVZV9yV01xREMzWUNKcXRBUFUtaXV0c05Zb2NUQTlFb0djSHY4SHAwMEdvZmN2dVkwcHpSNmIzdWpZb2lSVHFaazNRQWhpeUNMOExDRGs0YnlxQ2JYVXNROHVMOU5n?oc=5",
+      "date": "2026-11-25",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "GBHackers News",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "6f0fda5fa7ae3ad1",
+      "title": "Identity Authentication in the Digital Economy",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNUGp5M2VXaXhFczVrclJHbHIwRjdDUVVMWWludm9qSGc1Y24ydVBMN0ljZ2ZMWVpjem1ZMmNKaFp5bjB2VFE5WnVXTllqaWNYTDB4ZzZTSUxpUll5MXBfR2tENHphM2h4M1YwQ1V6THFYNnhSRmdadGdRX3BZQVVpbzFSTkxnb3VhLVc2WldrV3U?oc=5",
+      "date": "2026-11-25",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Summit Partners",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "7ce657bf94d4077f",
+      "title": "Polymarket Promo Code MLIVE25BONUS delivers a $25 trading bonus for MACtion college football",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNeFJsdHprRUpfQ2pBWmRnZVltbGFEZ2s2WWNnM29lNmVEeFUwSU40TXBaTFBDcGFiMUFIY3Y1dlVmbFBDc01OdTkzRDlDekNGZ0h5bFp6WFNhVU9EanlVR2dpYUYxcC1OeUptdHZiaDFnd1ptSFg4TUhtbi1JM1hpSG05UGp0enlTWTVlcktFeTBSbnRBZk9zWWpTTjhmR0N4dm9lYk1WeUNEVU1GODhPUWFjZFpfZmx2aGIyWk5LeW9VakRHbk1yN3JfYjZTd2ZISWxqOHZST1c?oc=5",
+      "date": "2026-11-24",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "MLive.com",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "bcf10885d36c545c",
+      "title": "Identity verification is making the UK’s company register more trustworthy",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNX29CcnliMVZKMnFoVjZEVUlmRmtuTktpN2NRQ3hhb2tWckF3U3R4bzFEUG9WdlZiSm5fRTYyZ05ZTzRTQzVmbGtkdWpTRlFpMmo5ajFQd1I3M0lHSFEyOWNsYkQtQmRxVmlab1FTNXRvMHNnTldwdlNSZkktYlgxOHdMTUk4QmZsYXhfRUFFcHpJaVdmcWdHdHJjQWI0WmM3V2NqRGhoOE5rQQ?oc=5",
+      "date": "2026-11-19",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "PAYadvice.UK",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "98cb9ccb30481150",
+      "title": "Europol operation involving Binance, Coinbase and Chainalysis traces more than $28.5 million in crypto behind illegal streaming services",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQb2ZsUU9wU1k2MXdLeUpzbEpvaVRNaFo1VWw3ajBVbFBBUXNVWWNadHhCUGI0NlpvOS1YOEZTcEdfd1hSdzhGRlNQTEN3d1B6UFpPZjNHU1NPNnBDcnIzNHN1SU5LbDNYUG15SHlzMTdoanpuT05fdmdOSGZSWEd0aVVVSU10eWc3ZGVLUVhzSElPSXE5aThHa3FTUXJQLUNidFlTcllCSEpzaW0xTVdXTTBOV3VqLVFiZS1IdHZ0enNteGUzMTk1clBLOVYwNTNwUGw1b0QzQ0NITmNWcVh0eTEySEI2d0g2bGVsZF9Yaw?oc=5",
+      "date": "2026-11-24",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "The Block",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [
         {
           "slug": null,
-          "name": "Equifax",
+          "name": "Chainalysis",
           "reviewed": false
         }
       ],
@@ -2637,33 +2491,108 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "d2921fa8e2048467",
-      "title": "Buy Now, Pay Later shoppers urged to check five things before Black Friday spending",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOX0dUN2FyV2tpLWZQeWVaOFcxRHN2S0FsbERwNTZTSDJDQ2RHUUtLWjMyYzNJOC00MWl5OUJtVHUtT003Y0pTRVZKdWxoVEVTaktSeDFESWlYLUNVNEF1b3dBQzFRb0N5cVRCOG5Jai1HckRheG9MX25Ra0c3SEVtalRPQlFhaTBZYU85ZNIBjAFBVV95cUxOX0dUN2FyV2tpLWZQeWVaOFcxRHN2S0FsbERwNTZTSDJDQ2RHUUtLWjMyYzNJOC00MWl5OUJtVHUtT003Y0pTRVZKdWxoVEVTaktSeDFESWlYLUNVNEF1b3dBQzFRb0N5cVRCOG5Jai1HckRheG9MX25Ra0c3SEVtalRPQlFhaTBZYU85ZA?oc=5",
-      "date": "2026-11-23",
+      "id": "51e3aefaafc8aed3",
+      "title": "Red Cell Distribution Width and 30-Day Mortality in Adult Patients With Sepsis: A Prospective Observational Cohort Study",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNb2p6TzNYME5WcHRMRkpfYTRreWg1Q2NzSnlfaFhoY1BqbmVDb2NmM3d1OUExOTh3ZUdiVUR4TzFpcWFTbzRRdnlibThEejNoQnM1OVBPUzY5eEFMV2dGQnFYYUxPeUxfQkdROVBBSENtOUlMZlU5blpTXzRSM0RVQklHTV90cE5sWkt5ZnJTQmo2Q1VIZkF2QS1uNDh2VXVCRGJ4elNLdE5EbEt4VjVEU1pXMHQxc3NYTmt2S2JRVDl5dEVFdjV3Q0JVRWhuS1MweFZpWDlvMGgtNlQ2cnF1YmZDNU45cjZWS2VDZUZmVQ?oc=5",
+      "date": "2026-11-25",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "Daily Record",
+      "publisher": "Cureus",
       "tier": 2,
       "needs_primary_source": true,
-      "providers": [],
+      "providers": [
+        {
+          "slug": "width",
+          "name": "WIDTH",
+          "reviewed": true
+        }
+      ],
       "region": "Global",
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     },
     {
-      "id": "b9cbc89c9907ab13",
-      "title": "Canadian Mortgage Delinquencies Surge 31.1 Percent in Q3",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA0cW9wRUlwY2dGWmJ4dEEzcWZsaWl6RVh0VWdESzlickNYbTNkOXNsYjBreGg3NVJGSXRLODVhNFllQ016YUdZeFdlalgyWGtLNFdWRnhWMjJZSWFwaVltTUJfM29xNTlIdmN1OTZWVQ?oc=5",
+      "id": "362b09fa06c23d72",
+      "title": "Plaque Outweighs Soft Tissue Width in Peri-Implant Health Study",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOYWNEdUt4dk92dXUySXNxbmhDMzNvc3doZXlNWnFWam5IbjdrYW80VldZZHc5YjF3MkkzYktobnJBMmpLQnFqajVPaEZvNmcweTI2VVFnVUpTYmVjYXVaNlZ3b29vbzYzWHlQeFlBSWxrVDJzUWQzS2ZpckxPS194TmZyZzdaWTJZcy11Um9LNXJhUQ?oc=5",
       "date": "2026-11-24",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "SuaraGarut.ID",
+      "publisher": "Bioengineer.org",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "width",
+          "name": "WIDTH",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "da0df35d67938eda",
+      "title": "Cowboys Coach: Width Alone Won’t Stop Saquon Barkley",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMmRNNDF0d1JnNVZxdW1zbFgwTG1IQ0tnYl9XeGJkODhEbEZ1VHcxdnBFd0xoaGpVMkVVNXZ4NmgwWEluMHVOMTF5SEdlVnQ1X1d2cHRIdWU0dW5SNTFDZTZCVmhOVElyb1JZakZXcDc1S0U1eXQwNGhLSlRJcUtNT2VZX0NvcGZicTAyV05OZGJPWEE?oc=5",
+      "date": "2026-11-24",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Dallas Hoops Journal",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "width",
+          "name": "WIDTH",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "2145ebd9fb0905cd",
+      "title": "Width restrictions removed and load limit lifted on embattled bridge",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWmViTU5uRFJ0TEpuR2lxZEpXT0ZQcnJwR2Z0am1mZmVZVWJoSnl5RDRsMjZ4TnNpZ1ZNaWxFNThUVDdTME9uME16TjQyQkprYmhtU0pQdXBRVGM3YU1KbkM3Rkd6MkN4SnJXMXNDN2J3X2ZQNElHRzVHb3F5OFJSd0J2YWJFN0FBSmtCNUh3OVc1UlBUUlY1YnNfdXpNM1UzUVlfaHdn?oc=5",
+      "date": "2026-11-25",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Big Rigs",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "width",
+          "name": "WIDTH",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "id": "45d696f442d665eb",
+      "title": "Top Players in the Anti-Money Laundering Market: FMI Forecasts USD 15.5 Billion by 2036",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPeFQ2dGQtSHZqVU9SVktMU2ltN0RjNnQybXA5Z0ZiLTIwT0UySS1TcHY0Mno1Q19aeXB3dklHTmtmSHFMTzFMRjZOV00zeU5jREpqR2haQmJQa3FrT1V5dGZRb09IR3ExRlVudWVhbFY1RWtVbUZXTUxtc3hxaEk5NV9DM2s3VkJqX2d5eGN2NlF6Mm9JTEExQ0VyLWhmdw?oc=5",
+      "date": "2026-11-25",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "openPR.com",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [],
@@ -2671,7 +2600,7 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-24"
+      "first_seen": "2026-11-25"
     }
   ]
 }

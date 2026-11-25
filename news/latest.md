@@ -1,17 +1,16 @@
-# News candidates, 2026-11-24
+# News candidates, 2026-11-25
 
-New this run: 4 kept (news 1, incident 2, record-check 0, research-check 0, digest 1), 163 skipped.
-Open candidates in total: 24.
+New this run: 6 kept (news 5, incident 1, record-check 0, research-check 0, digest 0), 151 skipped.
+Open candidates in total: 29.
 
 ## news
 
-- [Wultra-Led Consortium Secures Landmark Tender for Czech European Digital Identity Wallet](https://news.google.com/rss/articles/CBMiqwFBVV95cUxPWmNZVnJ3YWwwbHE2eUpQVUJMQkhWTWhUTm5pVk9OTDRGeEZtSldqY3Q5cjdHellhZC1rNDJsWmZYbThlZjFJaEhJZHIzWE9TTDJ2ckFyQk1FYnNwcm8xWHpSZVcwb3B5X0tPZGRUSEFPQzRPM21QOEVmQ19aZW5ETWxpcVU1OFFiUVctX0ZFQ1ZYZXQxSjNRVDM4Q1FrY3VrU1BpNHpLRnQxTG8?oc=5) (FF News, 2026-11-24) · find primary source
+- [Alabama seeks industry input on app store age verification standards](https://www.biometricupdate.com/202611/alabama-seeks-industry-input-on-app-store-age-verification-standards) (Biometric Update, 2026-11-25) · find primary source
+- [Colorado digital ID breach puts state’s technology overhaul in the spotlight](https://www.biometricupdate.com/202611/colorado-digital-id-breach-puts-states-technology-overhaul-in-the-spotlight) (Biometric Update, 2026-11-25) · find primary source
+- [iDenfy Prepares for EUDI Wallet Integration to Meet New EU AML Standards](https://news.google.com/rss/articles/CBMid0FVX3lxTE03SmJKTTJCRjlNZGx3YjdVS2NyRm9Qb1c0NHBjMXpHcmRneS1oTV84TTdhTlpyWk5MWlg0UWxxZzdpWXk0eDRYeEVMc0VhMl9iZzVyNFl0dE9zMnRXZnZDcGZHWW11dFI2ZlVfeGVKOER4RHJST0RF?oc=5) (FF News, 2026-11-25) · find primary source
+- [EDPS calls for limits on age estimation in EU KIDS Act, drawing industry criticism](https://www.biometricupdate.com/202611/edps-calls-for-limits-on-age-estimation-in-eu-kids-act-drawing-industry-criticism) (Biometric Update, 2026-11-24) · find primary source
+- [Italy opens digital ID wallet to public with legally valid driving licenses and IDs](https://www.biometricupdate.com/202611/italy-opens-digital-id-wallet-to-public-with-legally-valid-driving-licenses-and-ids) (Biometric Update, 2026-11-24) · find primary source
 
 ## incident
 
-- [Chainalysis traces billions stolen in Binance hack with its new AI tool](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1pb3hwc0Q4REU0cUU5QW9za1I1WlV4cEV3aF9jRTlzamZaS2JtY3J0M1pEcUtOcS1aTHotSU1YUzZjRWdBVktqS3I5T1B5djZJakxoNmxvZ084UQ?oc=5) (Cryptonews.net, 2026-11-24) · find primary source
-- [US: Former Equifax CEO apologizes for hack](https://news.google.com/rss/articles/CBMihwFBVV95cUxPZ2FuSTdjSWhKeHlFa1FMdDlIS3lIbm44OVpOY05ROExONHRBYndEZzFmWmlQQXJIZUtLLTlKSGlGS3BpendYLXNLS0NaVXEwd3BJWkM3OU1kMzlKcVFOc29YYXFVQVNaamRaWUdHdndfS1MwbEpNYi01dVVlWFplUU5wR2VhS0U?oc=5) (Yeni Safak English, 2026-11-22) · find primary source
-
-## digest
-
-- [Iran-related Designations](https://ofac.treasury.gov/recent-actions/20261123) (OFAC recent actions, 2026-11-23)
+- [Chainalysis discloses breach of internal systems and access to some customer information](https://news.google.com/rss/articles/CBMiREFVX3lxTFA2UFdRUVluLTR2Mnp5ZTVrcUpPV0QzbEdKTnR1bGtWdkNrUDVrQTBsTGxsQTN5TnFjVjJYZHRnUWJYM2FV?oc=5) (Digg, 2026-11-23) · find primary source
