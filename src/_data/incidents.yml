@@ -252,6 +252,31 @@ items:
     publisher: Inc42
     url: https://inc42.com/buzz/fintech-saas-startup-signzy-suffers-cyberattack-report
     accessed: '2026-11'
+- id: ondato-2024-07
+  slug: ondato
+  vendor: Ondato
+  date: '2024-07-24'
+  occurred: 'Leak on 24 Jul 2024; reported to the Estonian regulator; decision published 2025'
+  type: breach
+  sensitivity: high
+  status: resolved
+  counted: false
+  not_counted_reason: older_than_24_months
+  confirmed_by: Estonian Data Protection Inspectorate decision
+  timeline:
+  - {when: 'Jul 24, 2024', what: Data leaked after a cyber attack}
+  - {when: 2025, what: Regulator reprimanded the client and closed the case}
+  title: A client's identity data leaked from a database Ondato ran as processor
+  summary: Estonia's Data Protection Inspectorate says an attacker, probably using one of the client's own accounts, took identity data that the client held in Ondato's system, and that some of it was offered for sale on the dark web. The regulator reprimanded the client. It could not determine whether the client or Ondato caused the leak, did not find Ondato's security measures insufficient, and said Ondato did not cooperate enough with the client in the investigation.
+  data: [Names and dates of birth, Personal ID codes and document numbers, Document and face photos, Contact details, IP and browser data]
+  scale: Not publicly disclosed
+  response: We found no public statement from Ondato about this incident.
+  since: Outside the 24-month window our scores use, so not deducted.
+  sources:
+  - title: Decision on a personal data breach (EE SA 2025-04)
+    publisher: Estonian Data Protection Inspectorate (via EDPB)
+    url: https://www.edpb.europa.eu/system/files/2025-08/ee-sa-2025-04-decisionpublic.pdf
+    accessed: '2026-11'
 - id: au10tix-2024-06
   slug: au10tix
   vendor: AU10TIX
