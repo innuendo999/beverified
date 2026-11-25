@@ -43,7 +43,8 @@
         <p class="site-footer__sub">Most read</p>
         {%- for p in mm.reviews.mostRead %}<a href="{{ p.href }}">{{ p.name }}</a>{% endfor %}
         {%- for a in collections.articles | articleAt(mm.reviews.compare) %}
-        <p class="site-footer__sub">Comparisons</p>
+        {%- if loop.first %}
+        <p class="site-footer__sub">Comparisons</p>{% endif %}
         <a href="{{ a.url }}">{{ a.data.cover_label or a.data.title }}</a>
         {%- endfor %}
         <a class="more" href="/providers/">All providers A to Z</a>

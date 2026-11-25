@@ -121,8 +121,8 @@ export default function (eleventyConfig) {
   // Mega menu: the newest n articles, skipping the featured URL
   eleventyConfig.addFilter("menuLatest", (list, skipUrl, n = 3) =>
     (list || []).filter((a) => a.url !== skipUrl).slice(0, n));
-  // Mega menu: one article by URL (empty list when it does not exist)
-  eleventyConfig.addFilter("articleAt", (list, url) => (list || []).filter((a) => a.url === url).slice(0, 1));
+  // Mega menu: articles by URL, one URL or a list, in the order given (missing ones are dropped)
+  eleventyConfig.addFilter("articleAt", (list, url) => [].concat(url || []).map((u) => (list || []).find((a) => a.url === u)).filter(Boolean));
   eleventyConfig.addFilter("displayDate", (iso) => {
     if (!iso) return "";
     const [y, m, d] = isoDate(iso).split("-").map(Number);

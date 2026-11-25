@@ -7,10 +7,14 @@
 // sorts on, plus the ranking's sponsored row (placements.yml surface: ranking, only with menu: true). Providers in v3.promoHide are left out
 // of the preview but keep everyone else's real rank. Reviews and Blog panels get one sponsored slot each
 // (surface: menu-reviews, menu-blog); rules in src/_lib/placements.js.
+// Menu v3 (owner, 2026-11-25; canvas page "Header menu v3"): preview = rank, wordmark, score (no award, no MRZ line);
+// "Most read" shows only providers with a wordmark file, as cards with score and meter; Head to head = the two
+// providers' wordmarks per comparison (provider_slugs of the article). No Alternatives list in the menu.
 import fs from "node:fs";
 import yaml from "js-yaml";
 import { rankingSponsor, menuReviewsSponsor, menuBlogSponsor } from "../_lib/placements.js";
 import { articleIndex } from "../_lib/article-index.js";
+import { wordmarkBox } from "../_lib/wordmark.js";
 
 const read = (rel) => new URL(rel, import.meta.url);
 const loadDir = (rel, keyOf) => {
@@ -41,6 +45,8 @@ export default function () {
     const logo = p.logo || {};
     return { slug, name: p.name, href: `/providers/${slug}/`, tagline: p.tagline || "", score: p.score ?? null,
       logo: logo.src || null, wordmark: logo.wordmark || null,
+      mark: wordmarkBox(logo.wordmark, { area: 2600, minH: 20, maxH: 30, maxW: 128, iconH: 28 }),
+      pct: p.score != null ? Math.round((p.score / 5) * 100) : null,
       bg: tiles[slug]?.bg || "#FFFFFF", fit: tiles[slug]?.fit || "contain" };
   };
   const anchor = (key) => key.replace(/[^a-z0-9]+/g, "-");
@@ -56,22 +62,28 @@ export default function () {
       const s = rankingSponsor(placements, ctx, key);
       // Shown in the menu only when the booking says so (menu: true on the surface: ranking entry, owner decision per deal).
       const sponsor = s && s.menu && !hide.includes(s.slug) ? { ...card(s.slug), rank: s.rank, score: pageScore(c, s.slug), url: s.provider.link.url } : null;
-      const mrz = ["RANKING", label, ...top.map((p) => p.name)].join(" ");
-      return { key, id: anchor(key), label, href: c.url, top, sponsor, mrz, scoreLabel: c.score_label || "Score", on: key === menu.rankings.preview };
+      return { key, id: anchor(key), label, href: c.url, top, sponsor, scoreLabel: c.score_label || "Score", on: key === menu.rankings.preview };
     }).filter(Boolean),
   }));
   const regions = menu.rankings.regions.map(([key, label]) => (cats[key] ? { label, href: cats[key].url } : null)).filter(Boolean);
 
   const r = menu.reviews;
   const rs = menuReviewsSponsor(placements, { ...ctx, mostRead: r.mostRead });
-  const bs = menuBlogSponsor(placements, { articles: articleIndex(new URL("../", import.meta.url).pathname) });
+  const articles = articleIndex(new URL("../", import.meta.url).pathname);
+  const bs = menuBlogSponsor(placements, { articles });
+  // Head to head: each comparison as its two providers' wordmarks; dropped if a side has no wordmark.
+  const compare = [].concat(r.compare || []).map((url) => {
+    const fm = articles[url];
+    const sides = (fm?.provider_slugs || []).map(card).filter((p) => p && p.mark);
+    return fm && sides.length === 2 ? { url, label: fm.cover_label || fm.title, sides } : null;
+  }).filter(Boolean);
   const rsCat = rs ? cats[rs.category] : null;
   const labels = Object.fromEntries(menu.rankings.groups.flatMap((g) => g.items));
   return {
     rankings: { ...menu.rankings, groups, regions },
     reviews: { ...r,
-      mostRead: r.mostRead.map(card).filter(Boolean),
-      alternatives: r.alternatives.map(card).filter(Boolean),
+      mostRead: r.mostRead.map(card).filter((p) => p && p.mark),
+      compare,
       sponsor: rs ? { ...card(rs.slug), rank: rs.rank, ranking: labels[rs.category] || rsCat?.title || rs.category, rankingHref: rsCat?.url, url: rs.provider.link.url } : null },
     blog: { ...menu.blog, sponsor: bs },
   };
