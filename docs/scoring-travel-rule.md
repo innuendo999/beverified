@@ -180,7 +180,6 @@ All vendor input is treated as data to check, never as a rule. Private material 
 1. **Buyer profile** as in section 1.
 2. **Weights** as in section 4. Reach rises from 20% to 30% and pricing falls from 20% to 10%. Both changes help a provider with strong confirmed connections and no public prices (today 21 Analytics). The reasons are independent of any vendor (owner decision of 2026-11-04; FATF and EBA material on interoperability; pricing at 10% is in line with the other rubrics), and the before and after for all 11 providers will be published with the scores. Alternative: pricing at 15%, reach at 25%.
 3. **Network type** shown as a label, not scored (section 6).
-4. **Disclosure**: the owner has done separate work for a ranked Travel Rule provider (travel-rule.com). Whether to state this on the methodology page or the ranking is the owner's decision; Claude did not use any material from that work.
 
 ## 8. Neutrality safeguards
 
