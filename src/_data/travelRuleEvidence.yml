@@ -1,0 +1,216 @@
+# Travel Rule 1.0 evidence (docs/scoring-travel-rule.md, PR #231), one entry per provider in the travel-rule ranking.
+# Collected 2026-11-25 for the dry run. Not read by the build yet; the scorer (scripts/rescore-travel-rule.mjs) comes after
+# the owner approves the network-size rule (A or B) and the calibration rule.
+# Evidence protocol: vendor product pages, documentation, security and privacy pages, network operators' and protocol
+# pages for confirmations. Pages behind a login or a form do not count. A field with no public evidence is `no`.
+# Reach (criterion 1) is read from networks[] in each provider record; corrections found here are listed under reach_fix.
+# Points per field are in the spec; `pts` below is the dry-run reading, for review only.
+
+_lists:   # public lists of participants by name, counted for option B (reachable participants)
+  trust: {count: 98, note: 'logos counted on the TRUST page from the owner''s screenshot, about +-3; no date on the page', url: 'https://www.coinbase.com/travelrule', checked: '2026-11-25'}
+  ospree: {count: 122, note: '155 rows, of which 33 marked "Expected to be incorporated in Q1 2027" are left out', url: 'https://docs.ospree.io/learn/network-directory.md', checked: '2026-11-25'}
+  cryptoswift_strip: {count: 253, note: '253 connected VASPs receiving messages, 114 verified members; paginated list by name', url: 'https://cryptoswift.network/', checked: '2026-11-25'}
+  code: {count: null, note: 'alliance list by name over 14 pages (20 on page 1), includes non-VASPs such as ACAMS, CertiK, Blockaid; full count still to do; homepage states 350+', url: 'https://www.codevasp.com/en/alliances', checked: '2026-11-25'}
+  sygna: {count: 39, note: 'Sygna Alliance members by name; part of VerifyVASP since Apr 2026', url: 'https://www.sygna.io/client/', checked: '2026-11-25'}
+  verifyvasp: {count: null, note: 'alliance page shows no names (150+ and 130+ in metadata)', url: 'https://www.verifyvasp.com/en/alliance/', checked: '2026-11-25'}
+  trisa: {count: null, note: 'no public list by name found; GDS lookup is for members', url: 'https://trisacrypto.github.io/reference/faq/index.html', checked: '2026-11-25'}
+  notabene: {count: null, note: 'directory data is for signed-up VASPs; vendor figures only', url: 'https://notabene.id/travel-rule-messaging-protocols', checked: '2026-11-25'}
+  openvasp_trp: {names: [21 Analytics, Blockchain Intelligence Group, Ospree], url: 'https://www.openvasp.org/trp', checked: '2026-11-25'}
+
+21analytics:
+  checked: '2026-11-25'
+  reach_fix: {trp: confirmed, note: 'OpenVASP TRP page lists 21 Analytics as a TRP compatible solution', url: 'https://www.openvasp.org/trp'}
+  discovery: {value: partial, pts: 1, note: 'transfers to TRUST members detected automatically; TRP counterparties managed in the dashboard', url: 'https://www.21analytics.co/trust/'}
+  vasp_dd: {value: no, note: 'TRP untrusted VASP needs counterparty due diligence by the user; "Custom Vendor Due Diligence" on Enterprise, not described', url: 'https://www.21analytics.co/products-overview/'}
+  network_dd: {value: [TRUST], pts: 1, url: 'https://www.coinbase.com/travelrule'}
+  sunrise: {value: no, note: '21 Sunrise (email) counted under reach', url: 'https://www.21analytics.co/products-overview/'}
+  directory_freshness: {value: no}
+  shw_methods: {value: [AOPP, signed message, Satoshi test, screenshot or video], pts: 3, url: 'https://docs.21analytics.ch/8.4.0/'}
+  shw_detection: {value: no, url: 'https://docs.21analytics.ch/8.4.0/gui/transactions/index.html'}
+  shw_proof_stored: {value: no, note: 'not stated', url: 'https://docs.21analytics.ch/8.4.0/gui/transactions/index.html'}
+  country_rules: {value: no, url: 'https://www.21analytics.co/products-overview/'}
+  missing_data_detect: {value: no, url: 'https://docs.21analytics.ch/8.4.0/gui/transactions/index.html'}
+  missing_data_actions: {value: no, note: 'approve, decline, cancel by hand; no rule for missing data stated', url: 'https://docs.21analytics.ch/8.4.0/gui/transactions/index.html'}
+  audit_export: {value: yes, pts: 1, note: 'Export Transactions plus event history per transaction', url: 'https://docs.21analytics.ch/8.4.0/gui/transactions/export_transactions.html'}
+  e2e_or_no_transit: {value: yes, pts: 1.5, note: 'self-hosted; "cannot access PII data, logging data or configuration data"', url: 'https://docs.21analytics.ch/8.4.0/security.html'}
+  data_location_choice: {value: yes, pts: 1, note: 'customer infrastructure', url: 'https://www.21analytics.co/data-security/'}
+  retention_controls: {value: yes, pts: 0.5, note: 'customer keeps data as long as required', url: 'https://www.21analytics.co/data-security/'}
+  dpa_public: {value: gdpr_statement, pts: 0.5, url: 'https://www.21analytics.co/data-security/'}
+  api_docs_public: {value: yes, pts: 1, url: 'https://docs.21analytics.ch/8.4.0/'}
+  sandbox: {value: on_request, pts: 0.5, note: 'free, time-limited, after an introductory call', url: 'https://docs.21analytics.ch/8.4.0/'}
+  chains_listed: {value: yes, pts: 0.5, note: 'DTI asset list file linked', url: 'https://docs.21analytics.ch/8.4.0/supported_assets.html'}
+  critical_response_hours: {value: 24, pts: 1, note: 'Enterprise 24 hours; Essentials 3 business days (record, pricing page)', url: 'https://www.21analytics.co/pricing/'}
+  uptime_sla: {value: n/a, note: self-hosted}
+  security_page: {value: partial, note: 'access model and least privilege described; encryption not', url: 'https://docs.21analytics.ch/8.4.0/security.html'}
+
+notabene:
+  checked: '2026-11-25'
+  reach_fix: {no_tool: yes, note: 'counterparties without a solution can send and receive (free plan, dashboard)', url: 'https://notabene.id/travel-rule-compliance'}
+  discovery: {value: yes, pts: 1, note: 'VASP incorporation, regulatory and Travel Rule information; wallet identification', url: 'https://notabene.id/travel-rule-compliance'}
+  vasp_dd: {value: yes, pts: 1, note: 'regulatory information plus sanctions screening', url: 'https://notabene.id/travel-rule-compliance'}
+  network_dd: {value: no, note: 'profiles marked verified or pending; no check before joining documented'}
+  sunrise: {value: no, note: 'no-tool reach counted under reach'}
+  directory_freshness: {value: real_time, pts: 0.5, note: 'counterparty information "updated in real time"', url: 'https://notabene.id/travel-rule-compliance'}
+  shw_methods: {value: [signature, micro-transaction, screenshot, self-declaration], pts: 2.5, url: 'https://devx.notabene.id/v2.0/docs/self-hosted-wallet-verification-1'}
+  shw_detection: {value: yes, pts: 0.5, note: 'self-hosted wallet identification', url: 'https://notabene.id/travel-rule-compliance'}
+  shw_proof_stored: {value: yes, pts: 0.5, note: 'proof sent in the transfer (beneficiaryProof) and reviewed in the dashboard', url: 'https://devx.notabene.id/v2.0/docs/self-hosted-wallet-verification-1'}
+  country_rules: {value: yes, pts: 1, note: '"automate compliance thresholds per jurisdiction"', url: 'https://notabene.id/travel-rule-compliance'}
+  missing_data_detect: {value: no}
+  missing_data_actions: {value: no, note: 'approve or decline, configurable risk rules; not tied to missing data'}
+  audit_export: {value: yes, pts: 1, note: '"Every action is logged and exportable"', url: 'https://notabene.id/security'}
+  e2e_or_no_transit: {value: unclear, note: 'encrypted at rest and in transit, customer-managed keys optional; not stated whether Notabene can decrypt', url: 'https://notabene.id/security'}
+  data_location_choice: {value: yes, pts: 1, note: 'US or EU region', url: 'https://notabene.id/security'}
+  retention_controls: {value: documented, pts: 0.5, note: 'encrypted PII stored up to five years', url: 'https://notabene.id/travel-rule-compliance'}
+  dpa_public: {value: gdpr_statement, pts: 0.5, note: 'aligned with EU GDPR and Singapore PDPA', url: 'https://notabene.id/security'}
+  api_docs_public: {value: yes, pts: 1, url: 'https://devx.notabene.id/reference'}
+  sandbox: {value: self_serve, pts: 1, url: 'https://devx.notabene.id/v2.0/docs/automated-testing'}
+  chains_listed: {value: yes, pts: 0.5, note: 'signature proof chains listed', url: 'https://devx.notabene.id/v2.0/docs/self-hosted-wallet-verification-1'}
+  critical_response_hours: {value: 0.5, pts: 1, note: 'P1 30 minutes, 24/7', url: 'https://notabene.id/agreements/service-level-agreement'}
+  uptime_sla: {value: '99.5%', pts: 0.5, url: 'https://notabene.id/agreements/service-level-agreement'}
+  security_page: {value: yes, pts: 1, url: 'https://notabene.id/security'}
+  certs_note: 'ISO/IEC 27001:2022 and SOC 2 Type II, Johanson Group named; no certificate number or public report: vendor-stated'
+
+cryptoswift:
+  checked: '2026-11-25'
+  reach_fix: {own_list: yes, note: 'STRIP list of connected VASPs by name', url: 'https://cryptoswift.network/'}
+  discovery: {value: yes, pts: 1, note: 'VASP directory and heuristic wallet attribution', url: 'https://cryptoswift.eu/product/'}
+  vasp_dd: {value: yes, pts: 1, note: 'risk and regulatory context per VASP; sanctions and watchlist screening', url: 'https://cryptoswift.eu/product/'}
+  network_dd: {value: [CODE], pts: 1, url: 'https://www.codevasp.com/en'}
+  sunrise: {value: no}
+  directory_freshness: {value: no}
+  shw_methods: {value: [signature, micro-transfer, photo or video, self-declaration], pts: 2.5, url: 'https://cryptoswift.eu/self-hosted-wallet-verification/'}
+  shw_detection: {value: no, url: 'https://cryptoswift.eu/product/'}
+  shw_proof_stored: {value: no, url: 'https://cryptoswift.eu/product/'}
+  country_rules: {value: no, note: 'thresholds only as FAQ information', url: 'https://cryptoswift.eu/product/'}
+  missing_data_detect: {value: yes, pts: 1, note: 'claims for transfers that arrive without data; "Wait for additional information" outcome', url: 'https://docs.cryptoswift.eu/en/docs/resources/faq'}
+  missing_data_actions: {value: yes, pts: 1, note: 'rule engine outcomes Proceed, Wait, Review, Block', url: 'https://cryptoswift.eu/product/'}
+  audit_export: {value: yes, pts: 1, note: 'audit history; search, filter and export transaction data', url: 'https://cryptoswift.eu/product/'}
+  e2e_or_no_transit: {value: no, note: 'encryption mentioned, end-to-end not stated', url: 'https://cryptoswift.eu/product/'}
+  data_location_choice: {value: enterprise_only, pts: 1, note: 'Outpost keeps PII in your own database (Enterprise)', url: 'https://cryptoswift.eu/product/'}
+  retention_controls: {value: no, note: 'privacy notice covers website and account data only'}
+  dpa_public: {value: gdpr_statement, pts: 0.5, url: 'https://cryptoswift.eu/privacy-policy/'}
+  api_docs_public: {value: yes, pts: 1, url: 'https://docs.cryptoswift.eu/en/docs/resources/faq'}
+  sandbox: {value: self_serve, pts: 1, url: 'https://docs.cryptoswift.eu/en/docs/resources/faq'}
+  chains_listed: {value: no, note: '"Blockchain Agnostic", no list'}
+  critical_response_hours: {value: no}
+  uptime_sla: {value: no, note: '"99.9% uptime" badge without SLA terms', url: 'https://cryptoswift.eu/product/'}
+  security_page: {value: no}
+
+verifyvasp:
+  checked: '2026-11-25'
+  discovery: {value: yes, pts: 1, note: 'member directory with contact details (record)', url: 'https://www.verifyvasp.com/en/products/travel-rule'}
+  vasp_dd: {value: yes, pts: 1, note: 'assists with counterparty due diligence of members; sanctions screening', url: 'https://www.verifyvasp.com/en/products/travel-rule'}
+  network_dd: {value: [own], pts: 1, note: 'due diligence phase before joining; Wolfsberg questionnaire for unlicensed applicants', url: 'https://www.verifyvasp.com/en/company/faq'}
+  sunrise: {value: yes, pts: 0.5, note: 'VerifyNAME for counterparties in jurisdictions without rules (record)', url: 'https://www.verifyvasp.com/en/company/faq'}
+  directory_freshness: {value: no}
+  shw_methods: {value: [signature challenge, test payment], pts: 2, url: 'https://www.verifyvasp.com/en/products/verify-wallet'}
+  shw_detection: {value: no}
+  shw_proof_stored: {value: no}
+  country_rules: {value: yes, pts: 1, note: 'per-member trigger rules by jurisdiction (record)', url: 'https://www.verifyvasp.com/en/products/travel-rule'}
+  missing_data_detect: {value: no}
+  missing_data_actions: {value: no}
+  audit_export: {value: no}
+  e2e_or_no_transit: {value: yes, pts: 1.5, note: 'only the beneficiary VASP can decrypt; central infrastructure stores no PII', url: 'https://www.verifyvasp.com/en/company/faq'}
+  data_location_choice: {value: yes, pts: 1, note: 'region-specific nodes', url: 'https://www.verifyvasp.com/en/company/faq'}
+  retention_controls: {value: no}
+  dpa_public: {value: dpa_with_members, pts: 0.5, note: 'all members sign DPAs', url: 'https://www.verifyvasp.com/en/company/faq'}
+  api_docs_public: {value: yes, pts: 1, note: 'Sygna Bridge developer center; VerifyVASP docs page has no API detail', url: 'https://developers.sygna.io/'}
+  sandbox: {value: on_request, pts: 0.5, note: 'team assists with sandbox testing', url: 'https://www.verifyvasp.com/en/company/faq'}
+  chains_listed: {value: examples_only, note: 'reference list maintained, examples only'}
+  critical_response_hours: {value: no}
+  uptime_sla: {value: no, url: 'https://www.sygna.io/bridge/'}
+  security_page: {value: no}
+
+trp:
+  checked: '2026-11-25'
+  note: 'travel-rule.com homepage could not be fetched on 2026-11-25; values from the docs and the record (homepage viewed by the editor 19 Oct 2026)'
+  discovery: {value: yes, pts: 1, note: 'Registry API to discover and identify participants', url: 'https://docs.travel-rule.com/'}
+  vasp_dd: {value: no}
+  network_dd: {value: no, note: 'vetting criteria not described'}
+  sunrise: {value: no, note: 'email fallback counted under reach'}
+  shw_methods: {value: [Satoshi test, signature challenge, email self-attestation], pts: 2, url: 'https://docs.travel-rule.com/pages/satoshi-test-guide'}
+  country_rules: {value: no}
+  missing_data_detect: {value: no}
+  missing_data_actions: {value: no}
+  audit_export: {value: no}
+  e2e_or_no_transit: {value: no, note: 'HTTPS between VASPs only', url: 'https://docs.travel-rule.com/'}
+  data_location_choice: {value: no}
+  dpa_public: {value: not_checked, note: 'homepage unreachable'}
+  api_docs_public: {value: yes, pts: 1, url: 'https://docs.travel-rule.com/'}
+  sandbox: {value: no}
+  security_page: {value: no}
+
+blockpass:
+  checked: '2026-11-25'
+  discovery: {value: yes, pts: 1, note: 'TRISA GDS and Daybreak directories, manual entry', url: 'https://help.blockpass.org/hc/en-us/articles/45897192220049-Blockpass-Envoy-Travel-Rule-Solution-Guide'}
+  vasp_dd: {value: no}
+  network_dd: {value: [TRISA], pts: 1, url: 'https://trisacrypto.github.io/joining-trisa/index.html'}
+  sunrise: {value: no, note: 'Sunrise email counted under reach'}
+  shw_methods: {value: [signed message], pts: 1, url: 'https://www.blockpass.org/unhostedwalletkyc'}
+  missing_data_actions: {value: no, note: 'Accepted, Rejected, Pending set by hand'}
+  audit_export: {value: no, note: 'transaction history lookup, no export stated', url: 'https://www.blockpass.org/crypto-travel-hub/travel-rule-solution/'}
+  e2e_or_no_transit: {value: no, note: 'hosted Envoy node; PII access not stated'}
+  data_location_choice: {value: no, note: 'Netherlands, no choice', url: 'https://www.blockpass.org/privacy/'}
+  dpa_public: {value: no, note: 'privacy policy does not name GDPR', url: 'https://www.blockpass.org/privacy/'}
+  api_docs_public: {value: no, note: 'no public Envoy API reference'}
+  sandbox: {value: no, note: '7-day trial, no sandbox'}
+  security_page: {value: no}
+
+ospree:
+  checked: '2026-11-25'
+  reach_fix: {own_list: yes, note: 'network directory by name, 122 current rows', url: 'https://docs.ospree.io/learn/network-directory.md'}
+  discovery: {value: yes, pts: 1, url: 'https://docs.ospree.io/dashboard/accounts-directory/vasps/request-a-vasp'}
+  vasp_dd: {value: no, note: 'address screening only; directory has names and country, no licence data', url: 'https://docs.ospree.io/learn/network-directory.md'}
+  network_dd: {value: [TRISA], pts: 1, url: 'https://trisacrypto.github.io/joining-trisa/index.html'}
+  directory_freshness: {value: continuous, pts: 0.5, note: '"continuously reviewed and updated"', url: 'https://docs.ospree.io/learn/network-directory.md'}
+  shw_methods: {value: [signed attestation], pts: 1}
+  missing_data_actions: {value: yes, pts: 1, note: 'rule engine flags, blocks or escalates', url: 'https://docs.ospree.io/developers/rule-engine.md'}
+  audit_export: {value: no, note: 'user activity auditable; report export not described', url: 'https://www.ospree.io/blog/ospree-security-features'}
+  e2e_or_no_transit: {value: no, url: 'https://www.ospree.io/blog/ospree-security-features'}
+  data_location_choice: {value: no, url: 'https://www.ospree.io/blog/ospree-security-features'}
+  dpa_public: {value: gdpr_statement, pts: 0.5, url: 'https://www.ospree.io/legal/privacy'}
+  api_docs_public: {value: yes, pts: 1, url: 'https://docs.ospree.io/llms.txt'}
+  sandbox: {value: on_request, pts: 0.5, note: 'sandbox environment in the record; no docs page'}
+  chains_listed: {value: api_only, note: 'tokens listed through an API endpoint'}
+  security_page: {value: yes, pts: 1, url: 'https://www.ospree.io/blog/ospree-security-features'}
+
+width:
+  checked: '2026-11-25'
+  discovery: {value: yes, pts: 1, url: 'https://www.width.com/travel-rule'}
+  vasp_dd: {value: yes, pts: 1, note: 'checked against licensed-entity registries, LEI and pinned key before PII is sent', url: 'https://www.width.com/travel-rule'}
+  network_dd: {value: [Sygna Bridge], pts: 1, note: 'vendor-stated link to a network with documented member due diligence'}
+  shw_methods: {value: [Satoshi test, signature, self-declaration], pts: 2}
+  shw_proof_stored: {value: yes, pts: 0.5, note: 'counterparty proof and beneficiary attestation in each transfer record', url: 'https://www.width.com/travel-rule'}
+  country_rules: {value: yes, pts: 1, note: 'jurisdiction-specific thresholds and fields', url: 'https://www.width.com/travel-rule'}
+  audit_export: {value: yes, pts: 1, note: '"exportable on demand"', url: 'https://www.width.com/travel-rule'}
+  e2e_or_no_transit: {value: yes, pts: 1.5, note: 'encrypted end to end to the counterparty''s pinned key; backend stores only the encrypted envelope', url: 'https://www.width.com/travel-rule'}
+  data_location_choice: {value: yes, pts: 1, note: 'Singapore, EU or UAE', url: 'https://www.width.com/security'}
+  retention_controls: {value: documented, pts: 0.5, note: 'seven-year baseline for the audit ledger', url: 'https://www.width.com/security'}
+  dpa_public: {value: gdpr_statement, pts: 0.5, note: 'GDPR Art. 44 to 50 for EU residency; DPA under NDA', url: 'https://www.width.com/security'}
+  api_docs_public: {value: no, note: 'no public Travel Rule API docs'}
+  sandbox: {value: on_request, pts: 0.5, note: 'sandbox VASP in the demo call', url: 'https://www.width.com/travel-rule'}
+  security_page: {value: yes, pts: 1, url: 'https://www.width.com/security'}
+
+codevasp:
+  checked: '2026-11-25'
+  reach_fix: {own_list: yes, note: 'alliance list by name', url: 'https://www.codevasp.com/en/alliances'}
+  discovery: {value: yes, pts: 1, note: 'lookup by wallet address and transaction ID (record)'}
+  vasp_dd: {value: yes, pts: 1, note: '"VASP Risk Assessment" by expert due diligence', url: 'https://www.codevasp.com/en'}
+  network_dd: {value: [own], pts: 1, note: 'GDF questionnaire before connection (record)'}
+  shw_methods: {value: [signature], pts: 1, url: 'https://www.codevasp.com/en'}
+  shw_detection: {value: yes, pts: 0.5, note: 'unhosted wallet identification solution (news item)', url: 'https://www.codevasp.com/en'}
+  missing_data_detect: {value: yes, pts: 1, note: 'post-transaction flow identifies origin VASP and requests missing data', url: 'https://www.codevasp.com/en'}
+  e2e_or_no_transit: {value: yes, pts: 1.5, note: '"CODE cannot access the user''s personal information"', url: 'https://docs-en.codevasp.com/'}
+  data_location_choice: {value: yes, pts: 1, note: 'VASP connects its own server and keeps its keys and customer data', url: 'https://www.codevasp.com/en'}
+  dpa_public: {value: no}
+  api_docs_public: {value: yes, pts: 1, url: 'https://docs-en.codevasp.com/'}
+  sandbox: {value: after_approval, pts: 0.5}
+  security_page: {value: partial, note: 'security section on the homepage, no page'}
+
+ledgerbrain:
+  checked: '2026-11-25'
+  eligibility_note: 'no Travel Rule protocol or network named; the Travel Rule page needs a sign-in. Owner to decide whether it passes eligibility'
+  discovery: {value: yes, pts: 1, note: 'counterparty directory (record)'}
+  vasp_dd: {value: yes, pts: 1, note: 'institution screening and Know Your Entity due diligence (record)'}
+  audit_export: {value: yes, pts: 1, note: 'audit history and PDF audit record (record)'}
+  chains_listed: {value: yes, pts: 0.5, note: '14 blockchains (record)'}
