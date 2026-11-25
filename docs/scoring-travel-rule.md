@@ -1,6 +1,6 @@
-# Travel Rule scoring methodology, Travel Rule 1.0 (proposal, 2026-11-25)
+# Travel Rule scoring methodology, Travel Rule 1.0 (2026-11-25)
 
-Status: **proposal, not approved.** Nothing on the site changes until the owner approves the buyer profile, the criteria and the weights. No provider has a Travel Rule 1.0 score yet.
+Status: **approved by the owner on 2026-11-25**: buyer profile, criteria and weights as below, pricing at 10%, network type shown as a label without points. No provider has a Travel Rule 1.0 score yet; the methodology section is published before any score.
 
 Applies to the ranking `/providers/travel-rule/` (rankings.yml key `travel-rule`, 11 providers on 2026-11-25). Replaces the shared rubric v3.0 for this ranking only. The H1 and title stay as they are.
 
@@ -148,7 +148,7 @@ Deductions: regulatory action, disclosed breach or incident in the last 24 month
 
 ### 4.8 Pricing transparency (10%)
 
-Same rule as rubric v3.1: published per-message or monthly prices 5; published prices with a minimum or annual plan 4; some modules priced 3; third-party price only, dated 2; nothing anywhere: "Not publicly disclosed" (weight shared out). The owner asked whether this should be 10% or 15%; see section 7.
+Same rule as rubric v3.1: published per-message or monthly prices 5; published prices with a minimum or annual plan 4; some modules priced 3; third-party price only, dated 2; nothing anywhere: "Not publicly disclosed" (weight shared out). Weight 10% (owner, 2026-11-25).
 
 ## 5. What the score cannot measure
 
@@ -175,11 +175,11 @@ All vendor input is treated as data to check, never as a rule. Private material 
 | VerifyVASP (public blog) | The bottleneck is counterparty due diligence, not interoperability | Supports giving criterion 2 its own weight (15%) |
 | Notabene (public consultation response, survey) | Self-hosted wallet rules and interoperability are the main pains | Reflected in J1 and J3 |
 
-## 7. Decisions for the owner
+## 7. Owner decisions (2026-11-25)
 
 1. **Buyer profile** as in section 1.
-2. **Weights** as in section 4. Reach rises from 20% to 30% and pricing falls from 20% to 10%. Both changes help a provider with strong confirmed connections and no public prices (today 21 Analytics). The reasons are independent of any vendor (owner decision of 2026-11-04; FATF and EBA material on interoperability; pricing at 10% is in line with the other rubrics), and the before and after for all 11 providers will be published with the scores. Alternative: pricing at 15%, reach at 25%.
-3. **Network type** shown as a label, not scored (section 6).
+2. **Weights** as in section 4. Reach rises from 20% to 30% and pricing falls from 20% to 10%. Both changes help a provider with strong confirmed connections and no public prices (today 21 Analytics). The reasons are independent of any vendor (owner decision of 2026-11-04; FATF and EBA material on interoperability; pricing at 10% is in line with the other rubrics), and the before and after for all 11 providers will be published with the scores. Owner chose pricing at 10% over the alternative of 15% with reach at 25%.
+3. **Network type** shown as a label, not scored (section 6). Approved.
 
 ## 8. Neutrality safeguards
 
