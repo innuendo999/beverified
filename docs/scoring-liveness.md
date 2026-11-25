@@ -1,6 +1,6 @@
 # Liveness scoring methodology, Liveness 1.0 (draft, 2026-11-25)
 
-Status: **draft for the owner**. Nothing on the site changes until the owner approves this file. Same process as AML for Banks 1.0 and Travel Rule 1.0: buyer profile and jobs, criteria and weights, critique, dry run on all candidates, then the methodology section, then scores.
+Status: **approved by the owner on 2026-11-25**: one ranking for platforms and specialists together (a separate specialist list later, once more specialists are reviewed), criteria and weights as below, +0.5 recency for a version tested in the last 24 months. Calibration follows the owner's decision on the Travel Rule calibration rule. Nothing on the site changes until the dry run is reviewed. Same process as AML for Banks 1.0 and Travel Rule 1.0: buyer profile and jobs, criteria and weights, critique, dry run on all candidates, then the methodology section, then scores.
 
 Applies to the ranking `/providers/liveness-detection/` (rankings.yml key `liveness-detection`). The H1 and title stay as they are. Replaces the shared rubric v3.1 for this ranking only. The ranking stays **top 10 only** (owner, 2026-11-03).
 
@@ -139,12 +139,12 @@ How many real attacks a product stops in production, its conversion rate with yo
 | Platforms vs specialists | Platforms win breadth, specialists win depth | No breadth criterion; reuse counts only face features (re-verification, 1:N) |
 | Lab differences | iBeta, BixeLab and Ingenium use different protocols | All NVLAP or ISO/IEC 17025 accredited labs count the same; the letter's level is used as written, typos noted |
 
-## 7. Owner decisions needed
+## 7. Owner decisions (2026-11-25)
 
-1. **Buyer profile:** one ranking for platforms and specialists together (as drafted), or a separate list for specialists?
-2. **Weights:** IAD 25% and PAD 20% (as drafted), or PAD and IAD equal at 22.5%?
-3. **Recency:** +0.5 for a letter on a version tested in the last 24 months (as drafted), or a stricter rule that letters older than 36 months score one level lower?
-4. **Calibration:** apply the Travel Rule calibration rule here too?
+1. **Buyer profile:** one ranking for platforms and specialists together. Approved. A separate specialist list once Daon, Innovatrics, Paravision and other specialists are reviewed.
+2. **Weights:** IAD 25%, PAD 20% as drafted. Approved.
+3. **Recency:** +0.5 for a version tested in the last 24 months. Approved.
+4. **Calibration:** same decision as for Travel Rule 1.0 (pending there).
 
 ## 8. Rollout
 
