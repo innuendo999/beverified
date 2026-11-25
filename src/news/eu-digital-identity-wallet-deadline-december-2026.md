@@ -8,7 +8,7 @@ cover_label: "EU wallet countdown"
 cover_motif: wallet
 cover_palette: violet
 published: 2026-11-13
-updated: 2026-11-23
+updated: 2026-11-25
 author: andrii-klymenko
 takeaways:
   - "Article 5a(1) of Regulation (EU) 2024/1183 gives each member state 24 months from the entry into force of the implementing acts to provide a wallet; the first acts entered into force on 24 December 2024, which puts the deadline at 24 December 2026."
@@ -97,6 +97,14 @@ sources:
     publisher: "Cashless"
     url: "https://www.cashless.pl/19983-mobywatel-europa-projekt-ustawy-przyjety-przez-rzad"
     accessed: 2026-11
+  - title: "Stát vybral dodavatele evropské peněženky digitální identity"
+    publisher: "Digital and Information Agency of the Czech Republic (DIA)"
+    url: "https://www.dia.gov.cz/cs/aktuality/stat-vybral-dodavatele-evropske-penezenky-digitalni-identity"
+    accessed: 2026-11
+  - title: "Wultra-led consortium wins Czech EUDI Wallet concession, Valetka due by end of 2027 (secondary)"
+    publisher: "Biometric Update"
+    url: "https://www.biometricupdate.com/202611/wultra-led-consortium-wins-czech-eudi-wallet-concession-valetka-due-by-end-of-2027"
+    accessed: 2026-11
 ---
 
 The EU set itself a hard date for digital identity, and that date is now six weeks away. Every member state is supposed to offer its residents a European Digital Identity Wallet before the end of 2026. A year later the obligation reaches the private sector: banks, payment firms and other businesses that have to authenticate users strongly must accept the wallet when a customer chooses to use it.
@@ -165,4 +173,10 @@ The [legislative work record (UC122)](https://www.gov.pl/web/premier/projekt-ust
 
 This is a bill, not yet a law. The government says the new rules should in principle take effect 14 days after publication in the Journal of Laws, and we found no publication date. Nor did we find a government launch date. [Cashless reports](https://www.cashless.pl/19983-mobywatel-europa-projekt-ustawy-przyjety-przez-rzad) (secondary) that the Central Informatics Centre director responsible for developing mObywatel said in early October that Poland was ready to start a pilot in December 2026, with real benefits for citizens expected in the second half of 2027.
 
-The table above still shows the status as of 13 November 2026. We checked the Polish government pages on 23 November 2026; for the other countries in the table we have not re-checked since publication.
+**Czechia, 24 November 2026.** The Czech Digital and Information Agency (DIA) [announced](https://www.dia.gov.cz/cs/aktuality/stat-vybral-dodavatele-evropske-penezenky-digitalni-identity) that it has picked the supplier of the Czech wallet, which will be called Valetka. The state is buying it as a concession, and the winner is a consortium led by the Czech security firm Wultra. Payment is tied to results: if the app misses the agreed goals, the supplier gets less money. DIA plans to sign the contract by the end of November 2026 and then publish it, with its measurable goals, in the Czech register of contracts. It gave no contract value or duration. The wallet is to be available for download by the end of 2027, so about a year after the 24 December 2026 date we read in the regulation.
+
+At launch Valetka is meant to cover proof of identity, ID card data, driving entitlement, age verification and representation, with more documents later. It will be voluntary and free for citizens, and plastic documents and the existing eDoklady app stay valid. DIA writes that from the end of 2027 selected companies, banks among them, will have to accept the wallet, and that it will keep a register of the authorities and firms allowed to verify it. The app's code will be public and must pass independent certification before launch; DIA does not name the certifier. The announcement says nothing about fees for relying parties or about anti-money laundering checks.
+
+DIA names only Wultra. [Biometric Update reports](https://www.biometricupdate.com/202611/wultra-led-consortium-wins-czech-eudi-wallet-concession-valetka-due-by-end-of-2027) (secondary) that the consortium also includes [iProov](/providers/iproov/), [Signicat](/providers/signicat/), Youniqx Identity AG and Partners Bank, with Amdocs as a subcontractor. We have not seen that list confirmed by the agency or the companies, and it does not change anything in our reviews of the two providers.
+
+The table above still shows the status as of 13 November 2026. We checked the Polish government pages on 23 November 2026 and the Czech announcement on 25 November 2026; for the other countries in the table we have not re-checked since publication.
