@@ -7,6 +7,7 @@ import { calcProvider } from "./_lib/budget.js";
 import { v2Evidence } from "./_lib/ranking-evidence.js";
 import { rankingSponsor } from "./_lib/placements.js";
 import { amlGrid } from "./_lib/aml-grid.js";
+import { amlBanksFit } from "./_lib/aml-banks-fit.js";
 
 export default {
   pagination: { data: "categories", size: 1, alias: "c", resolve: "values", addAllPagesToCollections: true },
@@ -47,7 +48,9 @@ export default {
       // Layout v2 (category file layout: v2): evidence for the top 3 table and the chips on each list row.
       // Price chip shows the listed text as it is ("From" is already part of it where it applies).
       const v2 = d.c.layout === "v2" && q ? { ...v2Evidence(d.c, q, d.travelRuleFit), price: price || null } : null;
-      return { rank: i + 1, r, q, price, priceVerified, score, costS, costM, v2 };
+      // AML for Banks: "For banks" facts the vendor states (category file fit_line: aml-banks).
+      const fit = d.c.fit_line === "aml-banks" && q ? amlBanksFit(q, d.amlBanksEvidence?.[q.slug]) : null;
+      return { rank: i + 1, r, q, price, priceVerified, score, costS, costM, v2, fit };
     }),
     // Layout v2: month of the oldest price check among the top 3 (pricing.verified), for the top 3 caption.
     top3Checked: (d) => {

@@ -10,6 +10,7 @@ score_label: AML for Banks score
 rubric: rubricAmlBanks
 methodology_label: AML for Banks 1.0
 methodology_anchor: '#aml-banks'
+fit_line: aml-banks
 quick_answer: "ComplyAdvantage is our top AML pick for banks: it names all four core sanctions lists and states sub-second monitoring. Unit21 is next for integration, with a public data schema and Fiserv and Jack Henry connectors. Napier follows for tuning, with no-code rules and sandbox tests. We compared 7 providers on detection, alerts, tuning, validation and integration."
 last_verified: '2026-11-24'
 updated: '2026-11-24'
@@ -57,6 +58,21 @@ faq:
   a: Explainability means the bank can show why a model raised or cleared an alert. In the US, the model risk guidance SR 26-2 (April 2026) covers vendor models as well as in-house ones, so examiners may ask for this evidence during a BSA/AML review.
 - q: When does the EU AMLA start supervising banks?
   a: The EU Anti-Money Laundering Authority is due to begin direct supervision of up to 40 high-risk financial institutions in 2028, after a selection process in the second half of 2027. The new EU Anti-Money Laundering Regulation applies from 10 July 2027.
+segments_heading: 'Best pick by your bank''s setup'
+segments_col: 'If your bank needs'
+segments:
+- segment: 'To run it on your own servers'
+  slug: napier
+  reason: 'Napier can be deployed in the cloud or on premises, and its no-code rule builder lets your team test rule changes in a sandbox before they go live.'
+- segment: 'To keep your current monitoring system'
+  slug: hawkai
+  reason: 'Hawk''s AML AI Overlay adds AI detection on top of an existing monitoring system, and Hawk names direct integrations with CSI, FIS, Fiserv and Jack Henry cores.'
+- segment: 'A ready connection to a Fiserv or Jack Henry core'
+  slug: unit21
+  reason: 'Unit21 lists integrations with Fiserv Premier and DNA, Jack Henry SilverLake and Finxact, publishes its data schema and files SARs to FinCEN.'
+- segment: 'To find links across accounts and counterparties'
+  slug: quantexa
+  reason: 'Quantexa is built on entity resolution and network analytics, which join records from many sources into one view of each customer and the people they deal with.'
 adjacent:
 - aml
 - kyb
