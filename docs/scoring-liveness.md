@@ -45,104 +45,120 @@ Not scored: vendor accuracy or "99.9%" claims, bounty programmes, number of atta
 
 ## 4. Eligibility, criteria, weights and score
 
-**Eligibility.** A published BeVerified review, and liveness sold by the provider today as its own product or inside its platform (`capabilities.liveness` yes). A lab letter counts only if it names the provider (or its own product) and the product version; a supplier's letter does not count for a reseller (same rule as IDV 1.0). A provider that fails is left out, not scored low.
+Revised on 2026-11-25 after the first batch showed that an additive "1 + points" scale left most providers at 1 on criteria where almost nobody has evidence yet. All criteria now use steps (as Fraud defense in IDV 1.0), fixed before the full evidence pass.
+
+**Eligibility.** A published BeVerified review, and liveness sold by the provider today as its own product or inside its platform (`capabilities.liveness` yes). A provider that fails is left out, not scored low.
+
+**Whose letter counts.** A lab letter counts at full value only if it names the provider (or its own product) and the version. If a provider names its liveness supplier and documents that it uses the supplier's SDK unchanged, the supplier's letter counts one step lower. An unnamed supplier's letter does not count.
 
 | # | Criterion | Weight |
 |---|---|---|
 | 1 | Presentation attack defence (PAD) | 20% |
-| 2 | Injection and deepfake defence (IAD) | 25% |
-| 3 | Genuine users and fairness | 15% |
-| 4 | Independent certification beyond PAD | 10% |
+| 2 | Injection and deepfake defence (IAD) | 20% |
+| 3 | Genuine users | 15% |
+| 4 | Compliance evidence | 15% |
 | 5 | Biometric data handling | 10% |
 | 6 | Integration and reuse | 10% |
 | 7 | Pricing transparency | 10% |
 
-Sub-score = 1 + points, cap 5. Only public evidence earns points; nothing private does, and no weight moves to another criterion. Each piece of evidence counts in one criterion only. Liveness score = weighted average, rounded to 0.1, minus 0.3 per disclosed breach, security incident or regulatory action in the last 24 months (`incidents.yml`, `counted: false` excluded), floor 1. Grades as v3.1. Stored in `category_scores.liveness-detection`. Calibration as proposed for Travel Rule 1.0 if the owner approves it there: a row no provider earns is dropped, and a criterion's top is set by the best result found, not below 3 points.
+Only public evidence counts; each piece of evidence counts in one criterion only; no weight moves. Liveness score = weighted average, rounded to 0.1, minus 0.3 per disclosed breach, security incident or regulatory action in the last 24 months (`incidents.yml`, `counted: false` excluded), floor 1. Grades as v3.1. Stored in `category_scores.liveness-detection`. Calibration follows the owner's decision on the Travel Rule calibration rule.
 
 ### 4.1 Presentation attack defence (20%)
 
-| Evidence (lab letter opened, NVLAP-accredited lab: iBeta, BixeLab or equivalent) | Points |
-|---|---|
-| Highest confirmed level: Level 3 | 3 |
-| Level 2 | 2.5 |
-| Level 1 | 1.5 |
-| Tested version dated in the last 24 months | +0.5 |
-| Mobile and web both tested (in one or more letters) | +0.5 |
-| Liveness sold, no letter in the provider's name | 0 (sub-score 1) |
+Steps by the highest level confirmed in a letter from an accredited lab (NVLAP or ISO/IEC 17025: iBeta, BixeLab, Ingenium, CLR Labs and others):
 
-### 4.2 Injection and deepfake defence (25%)
+| Highest confirmed level | Sub-score |
+|---|---|
+| Level 3 | 4.5 |
+| Level 2 | 4 |
+| Level 1 | 3 |
+| Liveness sold, no letter that counts | 1.5 |
+
+Adjustments, then cap 5 and floor 1.5:
+- **+0.5** if the tested version is dated in the last 24 months.
+- **One step lower** if the newest letter at that level is older than 36 months (Level 2 counts as Level 1).
+- **−0.5** if the error rate for genuine users (BPCER) for that test is not published anywhere public (letter, report, or the vendor's release quoting the lab's report).
+
+### 4.2 Injection and deepfake defence (20%)
+
+| Evidence | Sub-score |
+|---|---|
+| Lab IAD letter opened, level High (or the lab's stated equivalent), covering both web and mobile capture | 5 |
+| Lab IAD letter opened, level High, one capture type only | 4.5 |
+| Lab IAD letter opened, level Substantial or not stated | 4 |
+| Lab IAD result or independent penetration test announced, letter or report not found | 3 |
+| Technical controls documented in the vendor's docs: virtual camera, emulator, rooted or jailbroken device, or app tampering detection | 2.5 |
+| Nothing found | 1.5 |
+
+### 4.3 Genuine users (15%)
+
+Sub-score = 2 + points, cap 5:
 
 | Evidence | Points |
 |---|---|
-| Lab IAD letter opened, aligned with CEN/TS 18099, level High (or the lab's equivalent) | 3 |
-| Lab IAD letter opened, Substantial or level not stated | 2 |
-| A second lab IAD letter, or a test on both mobile and web | +0.5 |
-| Documented detection of virtual cameras, emulators, rooted or jailbroken devices, or tampered apps (in docs, not marketing copy) | +0.5 |
-| Vendor-stated IAD result we could not open | +0.5 (instead of the lab rows) |
-
-### 4.3 Genuine users and fairness (15%)
-
-| Evidence | Points |
-|---|---|
-| Bona fide error rate (BPCER) published in a lab letter | 1 |
-| Third-party demographic test published (FIDO Face Verification, ISO/IEC 19795-10 evaluation, NIST FRTE demographics) | 1.5 |
-| Passive capture available (no user action) | 0.5 |
+| Passive capture available (no user action) | 1 |
+| Third-party demographic test published (ISO/IEC 19795-10 evaluation, NIST FRTE demographic results) | 1 |
+| Capture on web as well as mobile | 0.5 |
 | Documented fallback for users the machine cannot decide (retry rules, human review) | 0.5 |
-| Accessibility guidance or conformance statement for the capture flow | 0.5 |
+| Accessibility conformance stated for the capture flow (WCAG 2.1 or 2.2 AA) | 0.5 |
 
-### 4.4 Independent certification beyond PAD (10%)
+Completion rates, time to complete and behaviour on low-end devices are not public and go to "What to test in a pilot".
 
-| Evidence (confirmed on the issuer's register or certificate) | Points |
+### 4.4 Compliance evidence (15%)
+
+Sub-score = 1.5 + points, cap 5. Confirmed on the issuer's register, certificate or report:
+
+| Evidence | Points |
 |---|---|
 | FIDO Face Verification certificate | 2 |
-| NIST FRTE or FATE listing for a face algorithm (matching, PAD or age) | 1 |
-| DHS RIVR results disclosed and matched on mdtf.org | 1 |
-| Trust framework certification that covers the face check: UK DIATF, ETSI TS 119 461, Kantara IAL2 | 1 |
+| NIST FATE PAD or FRTE listing for the face algorithm, or DHS RIVR results matched on mdtf.org | 1 |
+| Trust framework certification of a service that includes the face check: UK DIATF, ETSI TS 119 461, Kantara IAL2 | 1 |
+| ISO/IEC 27001 or SOC 2 Type II confirmed (vendor-stated: 0.5) | 1 |
+
+NIST FATE age estimation is not counted here: it tests age, not liveness.
 
 ### 4.5 Biometric data handling (10%)
 
+Sub-score = 1.5 + points, cap 5:
+
 | Evidence | Points |
 |---|---|
-| Documented retention period or customer-set retention, plus deletion (API or setting) | 1 |
+| Documented retention period or customer-set retention, plus deletion (API or setting) | 1.5 |
 | Region choice or on-premises deployment | 1 |
-| Consent capture or BIPA/GDPR biometric guidance for customers | 0.5 |
-| ISO/IEC 27001 or SOC 2 Type II confirmed (vendor-stated: 0.5) | 1 |
 | Face data never leaves the customer's infrastructure | 0.5 |
+| Consent capture or biometric privacy guidance for customers (GDPR Art. 9, BIPA) | 0.5 |
 
 ### 4.6 Integration and reuse (10%)
 
-| Evidence | Points |
-|---|---|
-| Public API documentation | 1 |
-| SDKs for web, iOS and Android (two of three: 0.5) | 1 |
-| Self-serve sandbox (on request: 0.5) | 1 |
-| Re-verification or authentication against an enrolled face | 0.5 |
-| Duplicate face search (1:N) or face blocklist | 0.5 |
+Sub-score = 1 + points, cap 5: public API docs 1; SDKs for web, iOS and Android 1 (two of three 0.5); self-serve sandbox 1 (on request 0.5); re-verification or authentication against an enrolled face 0.5; duplicate face search (1:N) or face blocklist 0.5.
 
 ### 4.7 Pricing transparency (10%)
 
-Liveness priced as its own item, published: 5. Published only inside a bundle (for example document plus selfie): 4. Some modules priced, liveness not: 3. Price on request, or only a dated third-party price: 2. Always scored, as in Travel Rule 1.0.
+Liveness priced as its own item, published: 5. Published only inside a bundle: 4. Some modules priced, liveness not: 3. Price on request, or only a dated third-party price: 2.
 
 ## 5. What the score cannot measure
 
 How many real attacks a product stops in production, its conversion rate with your users and devices, and whether the tested version is the one you will run. The page keeps a "What to test in a pilot" block: ask for the lab letter of the exact SDK version you will ship; run a red-team test with a virtual camera and an emulator; measure false rejects on your own traffic, split by device and age group; ask where face templates are stored and for how long.
 
-## 6. Critique of this draft
+## 6. Critique (2026-11-25) and what changed
 
-| Risk | Why it matters | Mitigation in the draft |
-|---|---|---|
-| IAD gets 25% while few vendors have an IAD letter | Most providers will score 1 to 1.5 there, so the total drops for nearly everyone | This is the real differentiator in 2026 (J2); calibration lifts the scale; vendor-stated IAD still earns 0.5 |
-| Old letters | A 2020 Level 2 letter and a 2025 Level 2 letter look the same on iBeta's list | +0.5 only for a tested version dated in the last 24 months |
-| Letters hosted by the vendor | Only the vendor publishes some lab letters (FaceTec, Didit) | Count a lab-signed letter that names the vendor and version, wherever it is hosted; record the URL |
-| Suppliers and resellers | Platforms license liveness from specialists (Ondato names none) | Only letters in the provider's own name count |
-| Fairness is thinly evidenced | Few vendors publish demographic tests | Weighted 1.5 of 4 points in criterion 3, not a criterion of its own |
-| Platforms vs specialists | Platforms win breadth, specialists win depth | No breadth criterion; reuse counts only face features (re-verification, 1:N) |
-| Lab differences | iBeta, BixeLab and Ingenium use different protocols | All NVLAP or ISO/IEC 17025 accredited labs count the same; the letter's level is used as written, typos noted |
+| Problem | Change |
+|---|---|
+| A "1 + points" scale left most providers at 1 where almost nobody has evidence | Steps for every criterion |
+| A lab pass says nothing about genuine users if BPCER is hidden | −0.5 on PAD when BPCER is not public |
+| Old letters cost almost nothing | Letters older than 36 months count one step lower |
+| NIST FATE age estimation was counted as liveness evidence | Removed; only FATE PAD or FRTE count |
+| A letter on one SDK says little about the web flow, where most injection happens | Top IAD step needs web and mobile |
+| Resellers with a strong supplier scored as if they had nothing | Named supplier with unchanged SDK counts one step lower |
+| Trust frameworks cover the whole service, FIDO Face tests the face check | FIDO 2 points, trust frameworks 1 |
+| Lab tests cost money and favour large vendors | Kept: untested is a real risk for the buyer; said openly on the page |
+| Conversion and friction matter most to many buyers but are not public | Kept at 15% on what is public; the rest goes to the pilot checklist |
+| Scores measure evidence of testing, not production performance | Said on the page; pilot checklist |
 
 ## 7. Owner decisions (2026-11-25)
 
 1. **Buyer profile:** one ranking for platforms and specialists together. Approved. A separate specialist list once Daon, Innovatrics, Paravision and other specialists are reviewed.
-2. **Weights:** IAD 25%, PAD 20% as drafted. Approved.
+2. **Weights:** revised the same day to PAD 20, IAD 20, genuine users 15, compliance evidence 15, data 10, integration 10, pricing 10, with steps instead of additive points (owner approved the mix and the eight changes in section 6).
 3. **Recency:** +0.5 for a version tested in the last 24 months. Approved.
 4. **Calibration:** same decision as for Travel Rule 1.0 (pending there).
 
