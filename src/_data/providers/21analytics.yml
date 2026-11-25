@@ -152,7 +152,7 @@ facts:
   evidence: independent
 pros:
 - Built-in TRUST connectivity, and TRUST's own page lists 21 Analytics as its only interoperability partner
-- Runs in your own infrastructure; 21 Analytics says it sends no telemetry and cannot see customer data
+- Runs in your own infrastructure, so 21 Analytics does not host or see customer data; it also says the software sends no telemetry
 - Four ways to prove self-hosted wallet ownership, plus public versioned docs and a release every few months
 cons:
 - The pricing page shows no prices; the CHF 900 monthly Starter figure comes only from G2 and Capterra
@@ -221,7 +221,7 @@ score_breakdown:
 - criterion: Compliance & certifications
   weight: 25
   score: 4.3
-  note: The ISO/IEC 27001:2022 certificate (InterCert IC-IS-2604284, April 2026) is public in the Compliance Centre and comes from a body the Standards Council of Canada accredits for ISO/IEC 27001, but we found no SOC 2 report, further security reports need an access request or NDA, and the claim that the vendor cannot access a deployment is vendor-stated.
+  note: The ISO/IEC 27001:2022 certificate (InterCert IC-IS-2604284, April 2026) is public in the Compliance Centre and comes from a body the Standards Council of Canada accredits for ISO/IEC 27001, but we found no SOC 2 report, and further security reports need an access request or NDA. The software runs on the customer's own infrastructure, so 21 Analytics does not host customer data and has no access to a deployment unless the customer gives it, for example by screen sharing.
   evidence: independent
 - criterion: Coverage
   weight: 20
