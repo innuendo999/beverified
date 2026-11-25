@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-24",
-  "pages": 32,
-  "read": 29,
+  "date": "2026-11-25",
+  "pages": 34,
+  "read": 30,
   "mismatches": [
     {
       "slug": "cryptoswift",
@@ -74,9 +74,109 @@
       "missing": [
         "$10000"
       ]
+    },
+    {
+      "slug": "ondato",
+      "name": "Ondato",
+      "url": "https://ondato.com/identity-verification-pricing/",
+      "label": "AML screening",
+      "value": "€0.45 to €0.04 per check",
+      "missing": [
+        "€0.45",
+        "€0.04"
+      ]
+    },
+    {
+      "slug": "ondato",
+      "name": "Ondato",
+      "url": "https://ondato.com/identity-verification-pricing/",
+      "label": "AML monitoring",
+      "value": "€0.32 to €0.04 per user per month",
+      "missing": [
+        "€0.32",
+        "€0.04"
+      ]
+    },
+    {
+      "slug": "ondato",
+      "name": "Ondato",
+      "url": "https://ondato.com/identity-verification-pricing/",
+      "label": "Proof of address",
+      "value": "€0.60 to €0.30 per verification",
+      "missing": [
+        "€0.6",
+        "€0.3"
+      ]
+    },
+    {
+      "slug": "ondato",
+      "name": "Ondato",
+      "url": "https://ondato.com/identity-verification-pricing/",
+      "label": "Video identification",
+      "value": "€0.90 to €0.15 per minute",
+      "missing": [
+        "€0.9",
+        "€0.15"
+      ]
+    },
+    {
+      "slug": "ondato",
+      "name": "Ondato",
+      "url": "https://ondato.com/identity-verification-pricing/",
+      "label": "Biometric authentication",
+      "value": "€0.20 to €0.10 per check",
+      "missing": [
+        "€0.2",
+        "€0.1"
+      ]
+    },
+    {
+      "slug": "ondato",
+      "name": "Ondato",
+      "url": "https://ondato.com/identity-verification-pricing/",
+      "label": "Age verification",
+      "value": "From €0.01",
+      "missing": [
+        "€0.01"
+      ]
+    },
+    {
+      "slug": "ondato",
+      "name": "Ondato",
+      "url": "https://ondato.com/identity-verification-pricing/",
+      "label": "Lost and stolen document check",
+      "value": "€0.32 to €0.22 per check",
+      "missing": [
+        "€0.32",
+        "€0.22"
+      ]
     }
   ],
-  "changed": [],
+  "changed": [
+    {
+      "id": "didit",
+      "url": "https://didit.me/pricing",
+      "names": [
+        "Didit"
+      ],
+      "added": [],
+      "removed": [
+        "$67",
+        "$69"
+      ]
+    },
+    {
+      "id": "gbg",
+      "url": "https://www.loqate.com/en-gb/pricing/",
+      "names": [
+        "GBG"
+      ],
+      "added": [
+        "£500000"
+      ],
+      "removed": []
+    }
+  ],
   "unreadable": [
     {
       "id": "complead",
@@ -92,6 +192,11 @@
       "id": "persona",
       "url": "https://withpersona.com/pricing",
       "why": "fetch: HTTP 403; curl: curl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "yoti",
+      "url": "https://www.yoti.com/business/pricing/",
+      "why": "fetch: HTTP 404; curl: curl: (22) The requested URL returned error: 404"
     }
   ],
   "budgetDue": []
