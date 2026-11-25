@@ -1,4 +1,4 @@
-# Certification watch, 2026-11-24
+# Certification watch, 2026-11-25
 
 ## Sources
 
