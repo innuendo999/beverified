@@ -117,6 +117,8 @@ Sub-score = 1.5 + points, cap 5. Confirmed on the issuer's register, certificate
 
 NIST FATE age estimation is not counted here: it tests age, not liveness.
 
+"Confirmed" for ISO/IEC 27001 means a certificate that names the certification body, the certificate number and a validity date that has not passed, or an entry in that body's public register. A trust-centre badge or a statement that the report is available under NDA is vendor-stated. A claim of ISO/IEC 27001:2013 alone earns nothing: under IAF MD 26 every 2013-edition certificate expired or was withdrawn on 31 October 2025. SOC 2 reports are private by design, so SOC 2 is confirmed only by a public SOC 3 report from the same examination whose period ended within the last 18 months.
+
 ### 4.5 Biometric data handling (10%)
 
 Sub-score = 1.5 + points, cap 5:

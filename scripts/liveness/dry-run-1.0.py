@@ -35,7 +35,7 @@ def score(d):
     comp = 1.5
     if any('FIDO Face' in x['name'] and x['status']=='confirmed' for x in certs): comp += 2
     if any(x['status']=='confirmed' and re.search(r'DIATF|DVS|ETSI TS 119 461|Kantara|eIDAS',x['name']+' '+str(x.get('what',''))) for x in certs): comp += 1
-    sec=[x for x in certs if re.search(r'27001|SOC 2',x['name'])]
+    sec=[x for x in certs if re.search(r'27001|SOC 2',x['name']) and not re.search(r'27001:2013',x['name'])]  # 2013 edition invalid after 31 Oct 2025 (IAF MD 26)
     comp += 1 if any(x['status']=='confirmed' for x in sec) else (0.5 if sec else 0)
     dep=st('deployment')
     data = 1.5 + (1.5 if s in RETENTION else 0) + (1 if st('data_residency') in ('yes','partial') or dep in ('on_prem','cloud_and_on_prem') else 0) \

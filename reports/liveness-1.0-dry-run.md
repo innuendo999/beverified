@@ -16,7 +16,7 @@ Rules: `docs/scoring-liveness.md` (steps version, owner-approved changes of 25 N
 | 8 | iproov | 3.2 (3.15) | 3.4 | - | 2.5 | 3 | 4.0 | 5 | 1.5 | 3.5 | 2 |
 | 9 | regula | 3.1 (3.12) | 3.6 | 10 | 4.0 | 2.5 | 3.5 | 2.0 | 3.0 | 5 | 2 |
 | 10 | veridas | 3.1 (3.12) | 3.7 | 8 | 3.5 | 3 | 3.5 | 3.0 | 2.5 | 4.0 | 2 |
-| 11 | advance-ai | 3.1 (3.08) | 3.5 | - | 3.5 | 4 | 3.5 | 2.0 | 1.5 | 4.0 | 2 |
+| 11 | advance-ai | 3.0 (3.00) | 3.5 | - | 3.5 | 4 | 3.5 | 1.5 | 1.5 | 4.0 | 2 |
 | 12 | onfido | 2.9 (2.92) | 3.6 | - | 2.5 | 2.5 | 3.5 | 3.0 | 4.0 | 3.5 | 2 |
 | 13 | persona | 2.9 (2.92) | 4.0 | 6 | 2.5 | 2.5 | 2.5 | 3.0 | 4.0 | 4.0 | 3 |
 | 14 | idenfy | 2.9 (2.90) | 3.7 | - | 1.5 | 2.5 | 3.5 | 2.5 | 4.0 | 4.0 | 4 |
@@ -53,6 +53,27 @@ In: FaceTec, Didit, iProov. Out: KYCAID (no lab letter in its name), Persona (Le
 - IAD lab letters opened: FaceTec (BixeLab, Ingenium). Advance.AI: BixeLab lists a CEN/TS 18099-aligned letter (to open). Announced without a letter: iProov (Ingenium), Veridas (CLR Labs, Nov 2026), Incode (SocialProof Security pen test). Documented controls: Yoti SICAP blocks virtual camera software; Didit capture channel integrity (virtual camera, emulator); Entrust Motion resists network injection; Sumsub names reverse engineering, man-in-the-middle and replay; Shufti Pro, Veriff, Persona, Regula, Jumio (Liveness Premium), Paravision, iDenfy, ComplyCube, Socure, Signzy from their records.
 - Retention and deletion documented: Sumsub, Veriff, Persona, Shufti Pro, Incode, Entrust (Onfido), Didit, iDenfy; FaceTec runs on the customer's servers.
 - Accessibility: iProov WCAG 2.2 AA; Entrust Motion WCAG 2.1 (Scrive integration docs).
+
+## ISO/IEC 27001 and SOC 2 check (25 Nov 2026)
+
+Rule: confirmed means a certificate with body, number and an unexpired date, or the body's public register. Schellman's directory and UKAS CertCheck are search forms that could not be opened from here, so no register lookup was possible this round.
+
+| Provider | Before | After | What was found |
+|---|---|---|---|
+| Didit | confirmed | confirmed | Bureau Veritas ES144068, ISO/IEC 27001:2022, valid to 3 Jun 2027 (certificate PDF) |
+| Yoti | confirmed | confirmed | Intertek 0170917, ISO/IEC 27001:2022 with 27701 (certificate PDF, 2026) |
+| Veriff | vendor-stated | vendor-stated | Trust centre (28 May 2026) reports a passed surveillance audit and points to the Schellman directory; certificate under NDA |
+| Shufti | vendor-stated | vendor-stated | Certifications page names Insight Assurance; no number, date or file. SOC 2 auditor not named on the page (2023 press: Insight Assurance) |
+| Regula | vendor-stated | vendor-stated | Certificates page names Insight Assurance; trust centre lists the certificate, no public file |
+| Sumsub | vendor-stated | vendor-stated | Trust centre has a "View Certificate" button but no public body or number; SOC 2 report on request (auditor BARR Advisory per 2022 release) |
+| Incode | vendor-stated | vendor-stated | SafeBase trust centre, documents gated |
+| iProov | vendor-stated | vendor-stated | States British Assessment Bureau certificate 231387 (older page says the 2013 edition; compliance page says 2022). Not checked on a register |
+| Veridas | vendor-stated | vendor-stated | The only public certificate (Bureau Veritas ES118275-003-3) is ISO/IEC 27001:2013 and expired 17 Mar 2024. SOC 3 covers calendar 2023, too old |
+| Advance.AI | vendor-stated | none | Claim is ISO/IEC 27001:2013 (Feb 2020). That edition is invalid since 31 Oct 2025 (IAF MD 26): -0.5 compliance, total 3.08 to 3.00 |
+
+No new confirmations. Top 10 order does not change.
+
+Record fixes proposed (not applied, live data): Advance.AI and Veridas certification notes should say the public evidence is for a lapsed 2013-edition certificate.
 
 ## Where the leaders lose points
 - No lab injection letter (sub-score 2.5 instead of 4 to 5): everyone except FaceTec and Advance.AI.
