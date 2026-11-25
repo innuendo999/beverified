@@ -1,6 +1,6 @@
 # Travel Rule scoring methodology, Travel Rule 1.0 (2026-11-25)
 
-Status: **approved by the owner on 2026-11-25**: buyer profile, criteria and weights as below, pricing at 10%, network type shown as a label without points. No provider has a Travel Rule 1.0 score yet; the methodology section is published before any score.
+Status: **approved by the owner on 2026-11-25**: buyer profile, criteria and weights as below, pricing at 10%, network type shown as a label without points. Revised the same day after a critique the owner approved (open-protocol confirmation, own-network list, IVMS101 as eligibility, country rules, incident deduction on the total, wallet proof weighting, eligibility and score scale, self-hosted scaling in 4.6, pricing always scored). Shared draft: Google Doc "BeVerified Travel Rule Methodology 1.0 (draft for comment, v2)", comments to support@beverified.org by 2 Dec 2026. No provider has a Travel Rule 1.0 score yet; the methodology section is published before any score.
 
 Applies to the ranking `/providers/travel-rule/` (rankings.yml key `travel-rule`, 11 providers on 2026-11-25). Replaces the shared rubric v3.0 for this ranking only. The H1 and title stay as they are.
 
@@ -49,106 +49,106 @@ FATF context: in its July 2026 update, 83% of surveyed jurisdictions had Travel 
 | Hosted or self-hosted? Data region? Which networks matter to me? | Yes, but the answer depends on the buyer | Fit check (exists on reviews), no points |
 | Does it work at my volume, and how fast are messages delivered? | No public evidence | "What to test in a pilot" |
 
-## 4. Criteria and weights (proposed)
+## 4. Eligibility, criteria, weights and score
 
-| # | Criterion | Weight | v3.0 equivalent |
-|---|---|---|---|
-| 1 | Counterparty reach | 30% | part of Coverage (20%) |
-| 2 | Counterparty identification and due diligence | 15% | new |
-| 3 | Self-hosted wallet verification | 10% | part of Coverage |
-| 4 | Missing data handling and audit trail | 10% | part of Compliance |
-| 5 | Data protection in transit and at rest | 10% | part of Compliance |
-| 6 | Integration and support | 10% | Integration (15%) + Support (10%) |
-| 7 | Vendor security assurance | 5% | part of Compliance (25%) |
-| 8 | Pricing transparency | 10% | Pricing transparency (20%) |
+**Eligibility.** A published BeVerified review, and a generally available product that sends and receives Travel Rule messages using the IVMS101 data standard. A provider that fails is left out, not scored low. (IVMS101 moved here from a scored row: every candidate has it, so as points it would only add the same score to all.)
 
-Sub-scores 1 to 5 in steps of 0.5, sub-score = 1 + points, cap 5. A feature with no public evidence earns no points and its weight does not move. Values are read from the provider record (`networks[]`, `facts[]`, `certifications[]`, `pricing`, `incidents.yml`) and a new `travel_rule{}` block; nothing is retyped. Each evidence item counts in one criterion only.
+| # | Criterion | Weight |
+|---|---|---|
+| 1 | Counterparty reach | 30% |
+| 2 | Counterparty identification and due diligence | 15% |
+| 3 | Self-hosted wallet verification | 10% |
+| 4 | Country rules, missing data and audit trail | 10% |
+| 5 | Data protection in transit and at rest | 10% |
+| 6 | Integration and support | 10% |
+| 7 | Vendor security assurance | 5% |
+| 8 | Pricing transparency | 10% |
+
+Sub-score = 1 + points, in steps of 0.5, cap 5. A feature with no public evidence earns no points, and no weight moves, for every criterion including pricing. Each evidence item counts in one criterion only.
+
+**Travel Rule score** = weighted average of the eight sub-scores, rounded to 0.1, minus 0.3 for each regulatory action, disclosed breach or security incident in the last 24 months (`incidents.yml`, `counted: false` excluded), floor 1. Grades: Excellent 4.5+, Great 4.0 to 4.4, Very Good 3.5 to 3.9, Good 3.0 to 3.4, Fair below 3.0. Stored in `category_scores.travel-rule`.
 
 ### 4.1 Counterparty reach (30%)
 
-Each network or protocol the provider connects to is counted once, by its status:
+| Connection | Points |
+|---|---|
+| Live and confirmed by the other side | 1 |
+| Live, stated only by the provider | 0.5 |
+| Bridge built on someone else's software | 0.5 |
+| Works only through the customer's own membership, or inbound only | 0.25 |
+| Provider's own network with a published list of participants by name | 1 |
+| Provider's own network without such a list | 0.5 |
+| Old major version only, "on request", planned, pending, historical | 0 |
+| Reach for counterparties without a tool (secure email or web form) | 0.5, once |
 
-| Status | Points | Example |
-|---|---|---|
-| Live and confirmed by the other side (the network operator's or the other vendor's own page lists the connection) | 1 | TRUST's page listing its interoperability partner |
-| Live, stated by the provider only | 0.5 | a protocol the vendor says it implements, with docs |
-| Bridge through a third party's software | 0.5 | TRISA through a TRP bridge |
-| Works only through the customer's own membership, or inbound only | 0.25 | |
-| The provider's own network | 1 if it publishes a participant list or count with a date; 0.5 otherwise | |
-| Old major protocol version only, "on request", claimed, planned, pending, historical | 0 | TRP 1.0 endpoint while the current major version is 3 |
-| Fallback for counterparties with no tool (secure email or web form) | +0.5, once | |
-
-Points = sum, capped at 4 (sub-score 5).
-
-Rules:
-- A protocol counts only in its current major version (TRP: 3.x on 2026-11-25), or a version the protocol's own documentation says is compatible with it. Versions are checked against the protocol's own repository or site.
-- "On request", "coming soon" and "in testing" count 0 until the connection is documented as available.
-- Network size is never scored or compared: participant counts are self-declared and not comparable (21 Analytics made the same point, see section 6).
-- The type of network (open protocol, member-governed network, vendor-run network) is shown as a label next to each connection, never scored. Membership due diligence done by a network counts under criterion 2, by the same rule for every network.
-- OpenVASP is not a protocol (rule of 2026-11-19): a vendor listing "OpenVASP" gets nothing for it; TRP counts.
+Points summed, cap 4. "Confirmed by the other side" = the network operator lists the connection; or the protocol lists the provider as an implementer; or another implementer of the protocol has published a working connection with the provider. This lets connections to open protocols (no operator) be confirmed as well as connections to operated networks. A protocol counts only in its current major version or a version its own documentation calls compatible, checked against its repository or site. "On request" and "coming soon" score 0 until documented as available. OpenVASP is not counted as a protocol; TRP is. Network size is never scored; network type is a label only.
 
 ### 4.2 Counterparty identification and due diligence (15%)
 
 | Evidence | Points |
 |---|---|
-| Counterparty discovery: identifies whether an address belongs to a VASP and which one (directory lookup, address attribution or both) | +1 |
-| VASP due diligence data offered to the customer: licence or registration status, questionnaire, sanctions check of the counterparty | +1 |
-| Membership due diligence done by the network itself (members must pass AML, security or privacy checks before joining), documented by the network | +1 |
-| Sunrise handling: documented way to deal with counterparties in jurisdictions where the rule is not yet in force (store data, send with warning, or manual route) | +0.5 |
-| Directory freshness stated: how often counterparty records are updated | +0.5 |
+| Tells whether an address belongs to a VASP and which one (directory, attribution or both) | 1 |
+| Due diligence data on the counterparty: licence status, questionnaire or sanctions check | 1 |
+| Live connection (0.5 points or more in 4.1) to a network that checks members before they join, documented by the network | 1 |
+| Documented handling of counterparties where the rule is not yet in force | 0.5 |
+| Stated update frequency of counterparty records | 0.5 |
 
 ### 4.3 Self-hosted wallet verification (10%)
 
 | Evidence | Points |
 |---|---|
-| Each ownership proof method offered, from the EBA list or equivalent: signed message, micro-transaction (Satoshi test), AOPP or another automated wallet protocol, screenshot or video | +0.75 each, up to 3 |
-| At least one method works without manual review by the CASP | +0.5 |
-| Self-hosted address detection (tells the CASP that an address is self-hosted) | +0.5 |
+| Each method that can be checked cryptographically or on-chain: signed message, micro-transaction, AOPP or another wallet protocol | 1 each |
+| Screenshot or video | 0.5 |
+| Proof methods together, at most | 3 |
+| Flags an address as self-hosted | 0.5 |
+| Stores the proof with the transfer record | 0.5 |
 
-The number of wallets a vendor says it supports is not scored.
-
-### 4.4 Missing data handling and audit trail (10%)
+### 4.4 Country rules, missing data and audit trail (10%)
 
 | Evidence | Points |
 |---|---|
-| Detects missing or incomplete originator or beneficiary data before the transfer is credited | +1 |
-| Configurable decisions on missing data: execute, reject, return or suspend (EBA/GL/2024/11) | +1 |
-| IVMS101 data model | +1 |
-| Audit log and export of every message and decision | +1 |
+| Applies each country's thresholds and data requirements automatically | 1 |
+| Detects missing or incomplete data before the transfer is credited | 1 |
+| Configurable decision on missing data: execute, reject, return or suspend | 1 |
+| Log of every message and decision, with export | 1 |
 
 ### 4.5 Data protection in transit and at rest (10%)
 
 | Evidence | Points |
 |---|---|
-| Personal data is not readable by the vendor in transit: end-to-end encryption between the two VASPs, or a design where the data never passes through the vendor | +1.5 |
-| The customer can choose where data is stored (region), or the data stays on the customer's own infrastructure | +1 |
-| Retention and deletion controls documented | +0.5 |
-| Data processing terms (DPA) or a GDPR statement published | +0.5 |
+| Vendor cannot read personal data in transit (end-to-end encryption, or data never passes through the vendor) | 1.5 |
+| Customer chooses the storage region, or data stays on the customer's infrastructure | 1 |
+| Retention and deletion settings documented | 0.5 |
+| Data processing terms or GDPR statement published | 0.5 |
 
-Hosting choice itself is not scored. The first two rows reward the outcome (who can read the data, where it sits), which hosted and self-hosted products can both reach.
+A self-hosted product earns the first two rows by design; a hosted product can earn them with end-to-end encryption and a region choice. The spec and the public text say this openly.
 
 ### 4.6 Integration and support (10%)
 
 | Evidence | Points |
 |---|---|
-| Public API documentation without login | +1 |
-| Test environment: self-serve sandbox +1; sandbox on request +0.5 | +1 |
-| Supported blockchains or assets listed | +0.5 |
-| Published response time for critical incidents | +1 (24 hours or faster); +0.5 (slower) |
-| Published uptime SLA, for hosted products only; for self-hosted products this row is left out and the criterion is scored on the other rows | +0.5 |
+| API documentation without login | 1 |
+| Self-serve sandbox 1; on request 0.5 | 1 |
+| Published list of supported blockchains or assets | 0.5 |
+| Published critical-incident response time: 24 hours or faster 1; slower 0.5 | 1 |
+| Published uptime commitment, hosted products only | 0.5 |
+
+Self-hosted products: the uptime row is left out and the other points are scaled by 4 / 3.5, so both can reach the same maximum.
 
 ### 4.7 Vendor security assurance (5%)
 
 | Evidence | Points |
 |---|---|
-| ISO/IEC 27001 or SOC 2 Type II confirmed (certificate number and body, or report seen) | +2 |
-| Vendor-stated only | +0.5 |
+| ISO/IEC 27001 or SOC 2 Type II confirmed (certificate number and issuing body, or report) | 2 |
+| A second one, also confirmed | 1 |
+| Public security page describing encryption and access controls | 1 |
+| Vendor-stated certificate we could not confirm | 0.5 |
 
-Deductions: regulatory action, disclosed breach or incident in the last 24 months, -1 each, from `incidents.yml`.
+Incidents are deducted from the total score (above), not only here, so they carry real weight.
 
 ### 4.8 Pricing transparency (10%)
 
-Same rule as rubric v3.1: published per-message or monthly prices 5; published prices with a minimum or annual plan 4; some modules priced 3; third-party price only, dated 2; nothing anywhere: "Not publicly disclosed" (weight shared out). Weight 10% (owner, 2026-11-25).
+Published per message or per month 5; with a minimum spend or annual plan 4; some modules priced 3; price only on request, or only a dated third-party price 2. Always scored: if the criterion dropped out when nothing is published, a vendor hiding its prices would beat one whose price leaked to a marketplace. (Differs from v3.1, where "nothing anywhere" shared the weight out.)
 
 ## 5. What the score cannot measure
 
@@ -191,7 +191,7 @@ All vendor input is treated as data to check, never as a rule. Private material 
 
 ## 9. New data fields
 
-`travel_rule{}` per record, each item `{value, url, checked}`: `discovery` (directory, attribution, both, no), `vasp_dd` (yes, partial, no), `network_dd` (per network, documented by the network), `sunrise`, `directory_freshness`, `shw_methods[]`, `shw_automated`, `shw_detection`, `missing_data_detect`, `missing_data_actions`, `ivms101`, `audit_export`, `e2e_or_no_transit`, `data_location_choice`, `retention_controls`, `dpa_public`, `chains_listed`, `critical_response_hours`, `uptime_sla`. Network entries in `networks[]` gain `confirmed_by` (url of the other side's page) and `version` where a protocol is versioned, plus `type` (open protocol, member network, vendor network) for the label. Scorer `scripts/rescore-travel-rule.mjs`, report `reports/rescore-travel-rule-1.0.csv`, `--write` adds `category_scores.travel-rule`.
+`travel_rule{}` per record, each item `{value, url, checked}`: `discovery` (directory, attribution, both, no), `vasp_dd` (yes, partial, no), `network_dd` (per network, documented by the network), `sunrise`, `directory_freshness`, `shw_methods[]`, `shw_automated`, `shw_detection`, `country_rules`, `missing_data_detect`, `missing_data_actions`, `ivms101` (eligibility), `audit_export`, `shw_proof_stored`, `security_page`, `e2e_or_no_transit`, `data_location_choice`, `retention_controls`, `dpa_public`, `chains_listed`, `critical_response_hours`, `uptime_sla`. Network entries in `networks[]` gain `confirmed_by` (url of the other side's page) and `version` where a protocol is versioned, plus `type` (open protocol, member network, vendor network) for the label. Scorer `scripts/rescore-travel-rule.mjs`, report `reports/rescore-travel-rule-1.0.csv`, `--write` adds `category_scores.travel-rule`.
 
 ## 10. Rollout
 
