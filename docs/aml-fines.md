@@ -1,6 +1,6 @@
 # BeVerified AML Fines Tracker: specification
 
-Status: approved and merged (PR #238, 26 Nov 2026). Data, check and fetch script: second PR (26 Nov 2026). Page: not built yet.
+Status: approved and merged (PR #238, 26 Nov 2026). Data, check and fetch script: PR #239. Page: built from the approved design canvas "BeVerified: AML Fines Tracker page, design proposal" (https://claude.ai/artifact/PJLjsH9gpXnJgSc9dGFet9), 26 Nov 2026.
 
 ## 1. What it is
 
@@ -12,7 +12,7 @@ Owner decisions (26 Nov 2026):
 |---|---|
 | Name | BeVerified AML Fines Tracker |
 | URL | `/aml-fines/`; yearly reports at `/aml-fines/2025/`, `/aml-fines/2026/` |
-| H1 | AML Fines Tracker: Money Laundering Enforcement Against Banks and Fintechs |
+| H1 | AML Fines Tracker (owner shortened it on the design canvas, 26 Nov 2026; first decision was "AML Fines Tracker: Money Laundering Enforcement Against Banks and Fintechs") |
 | Title tag | AML Fines Tracker 2026: Bank and Fintech Money Laundering Penalties \| BeVerified (year changes on 1 January) |
 | Firms | All financial firms (scope B), plus individuals at those firms; headline figures also computed for non-banks |
 | Period | From 1 January 2025 |
