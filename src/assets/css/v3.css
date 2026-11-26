@@ -2525,6 +2525,8 @@ td > .cg-v:first-child { margin-left: 0; }
   .ct-legend .ct-shown { margin-left: 0; flex-basis: 100%; }
   .ct-must { flex: 1 1 100%; } .ct-must select { flex: 1; min-width: 0; }
   .ct-q { max-width: none; }
+}
+
 /* Header "Data & tools" panel (owner, 2026-11-27): two columns of tools with one line each, navy card with the newest tracker entry. */
 .mm-tools { grid-template-columns: minmax(0,1fr) 320px; gap: 48px; align-items: start; }
 .mm-tools__list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 4px 32px; }
