@@ -39,8 +39,8 @@ items:
     region: US
     list_url: https://www.occ.gov/topics/laws-and-regulations/enforcement-actions/index-enforcement-actions.html
     tracked_since: '2026-11-26'
-    live: false
-    readable: Monthly "Enforcement Actions for {month}" releases readable; search tool not tested
+    live: true
+    readable: Monthly "Enforcement Actions for {month}" releases and order PDFs (eaAA-ENF-*.pdf) readable, with occasional site errors; search tool not tested
     cite: bluebook
   fed:
     name: Board of Governors of the Federal Reserve System

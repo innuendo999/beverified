@@ -78,6 +78,7 @@ One record per action, newest first. Hand-written fields only: machine fields (h
 - `earlier` items are an entry id, or an object `{regulator, date, title, amount, pin}` for actions before 2025 or by regulators we do not track.
 - `credits`, `parallel`, `payment_note`, `position_pin` / `position_note`, `repeat_note`, and for OFAC `sanctions: {apparent_violations, egregious, self_disclosed, programs}`.
 - Document type `enforcement_release` (OFAC) and `decision` were added.
+- `requirements: [{text, pin}]`: what an order makes the firm do (look-backs, programme fixes); an entry needs `findings` or `requirements`, so a cease and desist order without its own quotable findings can be recorded. `parallel_note` for a parallel action known only from the regulator's release.
 
 Planning sketch:
 

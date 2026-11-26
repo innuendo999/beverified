@@ -51,9 +51,11 @@ jobs:
           git commit -m "AML fines: document check $(date -u +%F)"
           git push -f origin enforcement-docs-auto
           if [ -z "$(gh pr list --head enforcement-docs-auto --state open --json number --jq '.[0].number')" ]; then
+            # Repos can forbid Actions from opening PRs; then the branch stays and the owner opens it.
             gh pr create --base main --head enforcement-docs-auto \
               --title "AML fines: document check $(date -u +%F)" \
-              --body-file report.md
+              --body-file report.md \
+            || echo "::warning::Could not open the PR (Actions may not create PRs in this repo). Open it from the branch enforcement-docs-auto: https://github.com/${{ github.repository }}/compare/main...enforcement-docs-auto"
           else
             gh pr comment enforcement-docs-auto --body-file report.md
           fi

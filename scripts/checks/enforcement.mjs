@@ -27,7 +27,7 @@ for (const it of items) {
   const id = it.id || "(no id)";
   if (ids.has(id)) err(id, "duplicate id");
   ids.add(id);
-  for (const f of ["case_id", "firm", "firm_type", "country", "regulator", "date", "date_basis", "action", "position", "document", "findings", "verified"]) {
+  for (const f of ["case_id", "firm", "firm_type", "country", "regulator", "date", "date_basis", "action", "position", "document", "verified"]) {
     if (it[f] == null || it[f] === "") err(id, `missing ${f}`);
   }
   if (!regs[it.regulator]) err(id, `unknown regulator "${it.regulator}"`);
@@ -52,6 +52,10 @@ for (const it of items) {
   if (it.repeat && !(it.earlier || []).length) err(id, "repeat: true needs the earlier action in `earlier`");
   for (const e of it.earlier || []) if (typeof e === "string" && !items.some((x) => x.id === e)) err(id, `earlier "${e}" is not an entry`);
 
+  if (!(it.findings || []).length && !(it.requirements || []).length) err(id, "needs findings or requirements");
+  for (const [n, rq] of (it.requirements || []).entries()) {
+    if (!rq.text || !rq.pin) err(id, `requirements[${n}]: needs text and pin`);
+  }
   const federal = FEDERAL.has(it.regulator);
   for (const [n, fd] of (it.findings || []).entries()) {
     const w = `${id}: findings[${n}]`;
@@ -64,6 +68,7 @@ for (const it of items) {
   // Visible text: no en or em dashes.
   const visible = [it.firm, it.payment_note, it.position_note, it.repeat_note, it.document?.title,
     ...(it.findings || []).flatMap((f) => [f.text, f.pin]),
+    ...(it.requirements || []).flatMap((f) => [f.text, f.pin]), it.parallel_note, it.ranking_override_note,
     ...(it.earlier || []).flatMap((e) => (typeof e === "object" ? [e.title, e.pin] : []))];
   for (const v of visible) if (v && DASH.test(v)) err(id, `dash in visible text: "${v}"`);
 
