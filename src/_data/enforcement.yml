@@ -21,6 +21,9 @@
 #   on the same failure (e.g. FinCEN calling a firm a recidivist).
 # credits: amounts the regulator credits against its penalty for other regulators' penalties.
 # parallel: other regulators' actions on the same conduct named in the document.
+# parallel_note: a parallel action known from the regulator's release rather than the document.
+# requirements: what the order makes the firm do (lookbacks, programme fixes), with pins.
+#   Used mainly for non-monetary orders; an entry needs findings or requirements.
 checked: '2026-11-26'
 items:
 
@@ -323,5 +326,215 @@ items:
   parallel:
   - {regulator: FINRA, value: 20000000, currency: USD, pin: '§ IV, p. 43'}
   - {regulator: SEC, value: 20000000, currency: USD, pin: '§ IV, p. 43'}
+  verified: '2026-11-26'
+  corrections: []
+
+- id: occ-aa-enf-2026-41
+  case_id: bank-of-america-2026-10
+  firm: Bank of America, N.A.
+  firm_group: Bank of America
+  firm_type: bank
+  country: US
+  regulator: occ
+  date: '2026-10-13'
+  date_basis: signed
+  action: penalty
+  monetary: true
+  amount: {value: 750000000, currency: USD, pin: 'Art. III(1), p. 6'}
+  failures: [aml_programme, sar, correspondent_cdd, travel_rule]
+  ranking_override: [aml, aml/banks]
+  ranking_override_note: The Travel Rule finding here is the wire transfer rule for banks (31 CFR 1010.410(f)), not the crypto Travel Rule, so the entry does not link to the Travel Rule ranking.
+  position: neither_admit_nor_deny
+  position_pin: 'Art. II, p. 2'
+  document:
+    title: Consent Order for the Assessment of a Civil Money Penalty
+    type: consent_order
+    number: AA-ENF-2026-41
+    url: https://www.occ.gov/static/enforcement-actions/eaAA-ENF-2026-41.pdf
+  findings:
+  - text: The OCC found that Bank of America did not run a BSA/AML compliance programme suited to its size.
+    pin: 'Art. II(2), p. 3'
+    excerpt: the OCC found that the Bank failed to implement a BSA/AML compliance program appropriate for its size
+    level: order
+  - text: The bank received written reports showing it was failing to file suspicious activity reports.
+    pin: 'Art. II(3), p. 3'
+    excerpt: received written reports showing that the Bank was failing to file suspicious activity reports
+    level: order
+  - text: It had no effective due diligence programme for its foreign branches.
+    pin: 'Art. II(12), p. 5'
+    excerpt: failed to establish an effective due diligence program for its foreign branches
+    level: order
+  - text: Outgoing wires carried inaccurate names for the sender, in breach of the wire transfer Travel Rule (31 CFR 1010.410(f)).
+    pin: 'Art. II(13), p. 5'
+    excerpt: sent wires with inaccurate transmittor name information in outgoing wire transfers
+    level: order
+  earlier:
+  - {regulator: OCC, date: '2024-12-23', title: Cease and desist order AA-ENF-2024-56 for violations of 12 CFR 21.11 and 21.21, pin: 'p. 1'}
+  repeat: false
+  repeat_note: The order refers to the December 2024 cease and desist order but does not say the conduct continued after it.
+  verified: '2026-11-26'
+  corrections: []
+
+- id: occ-aa-enf-2026-47
+  case_id: american-express-2026-10
+  firm: American Express National Bank
+  firm_group: American Express
+  firm_type: bank
+  country: US
+  regulator: occ
+  date: '2026-10-08'
+  date_basis: signed
+  action: penalty
+  monetary: true
+  amount: {value: 350000000, currency: USD, pin: 'Art. III(1), p. 5'}
+  failures: [aml_programme, sar, cdd]
+  position: neither_admit_nor_deny
+  position_pin: 'Art. II, p. 2'
+  conduct_period: {from: '2014-06', to: '2025-05', pin: 'Art. II(3), p. 4'}
+  document:
+    title: Consent Order for the Assessment of a Civil Money Penalty
+    type: consent_order
+    number: AA-ENF-2026-47
+    url: https://www.occ.gov/static/enforcement-actions/eaAA-ENF-2026-47.pdf
+  findings:
+  - text: American Express National Bank did not establish and maintain a reasonably designed BSA/AML compliance programme.
+    pin: 'Art. II(1)-(2), p. 2'
+    excerpt: However, the Bank has not established and maintained a reasonably designed BSA/AML compliance program.
+    level: order
+  - text: Weak controls around suspicious activity reports led to late, missed or incomplete reports.
+    pin: 'Art. II(2)(d), p. 3'
+    excerpt: Weaknesses in the Bank's controls surrounding SARs were significant and resulted in untimely, missed, or incomplete SARs
+    level: order
+  - text: The bank had no effective framework for ongoing customer due diligence.
+    pin: 'Art. II(2)(b), p. 3'
+    excerpt: The Bank failed to establish and maintain an effective framework to conduct ongoing CDD
+    level: order
+  - text: Its customer identification procedures had substantial gaps.
+    pin: 'Art. II(2)(c), p. 3'
+    excerpt: The Bank's CIP procedures had substantial gaps
+    level: order
+  - text: Between about June 2014 and May 2025 the bank processed roughly $13 billion of suspected trade-based money laundering activity.
+    pin: 'Art. II(3), p. 4'
+    level: order
+  earlier: []
+  repeat: false
+  parallel_note: The OCC's release (NR 2026-87, 8 Oct 2026) says the Federal Reserve Board issued a cease and desist order against American Express Company and American Express Travel Related Services Company at the same time.
+  verified: '2026-11-26'
+  corrections: []
+
+- id: occ-aa-enf-2026-46
+  case_id: american-express-2026-10
+  firm: American Express National Bank
+  firm_group: American Express
+  firm_type: bank
+  country: US
+  regulator: occ
+  date: '2026-10-08'
+  date_basis: signed
+  action: cease_and_desist
+  monetary: false
+  failures: [aml_programme, risk_assessment, cdd, edd, monitoring, sar]
+  position: neither_admit_nor_deny
+  position_pin: 'Art. II, p. 2'
+  document:
+    title: Consent Order
+    type: consent_order
+    number: AA-ENF-2026-46
+    url: https://www.occ.gov/static/enforcement-actions/eaAA-ENF-2026-46.pdf
+  findings: []
+  requirements:
+  - text: Build a BSA/AML risk assessment, refresh it at least every 12 months and have it tested independently each year.
+    pin: 'Art. V, pp. 7-10'
+  - text: Adopt a customer due diligence programme covering risk ratings, enhanced due diligence and customer identification.
+    pin: 'Art. VI, pp. 10-12'
+  - text: Run a suspicious activity review programme with monitoring thresholds and timely, complete reports.
+    pin: 'Art. VIII, pp. 13-16'
+  - text: Hire an independent consultant for a look-back of suspicious activity reporting.
+    pin: 'Art. IX, pp. 16-18'
+  earlier: []
+  repeat: false
+  verified: '2026-11-26'
+  corrections: []
+
+- id: occ-aa-enf-2026-29
+  case_id: united-texas-bank-2026-06
+  firm: United Texas Bank, N.A.
+  firm_group: United Texas Bank
+  firm_type: bank
+  country: US
+  regulator: occ
+  date: '2026-06-16'
+  date_basis: signed
+  action: cease_and_desist
+  monetary: false
+  failures: [aml_programme, cdd, monitoring, sar, sanctions]
+  position: not_stated
+  position_note: The order has no admission or denial clause; the bank consents and waives its hearing and review rights (Art. IX, p. 10).
+  document:
+    title: Consent Order
+    type: consent_order
+    number: AA-ENF-2026-29
+    url: https://www.occ.gov/static/enforcement-actions/eaAA-ENF-2026-29.pdf
+  findings:
+  - text: The OCC found significant deficiencies in the bank's BSA/AML risk management and compliance with applicable laws.
+    pin: 'p. 1'
+    level: order
+  requirements:
+  - text: Revise the BSA/AML programme, including the risk assessment, independent testing, a qualified compliance officer and training.
+    pin: 'Art. IV, pp. 4-5'
+  - text: Strengthen customer due diligence, fix deficient customer files and risk-rate customers.
+    pin: 'Art. V, pp. 6-7'
+  - text: Improve suspicious activity monitoring, alert handling and reporting.
+    pin: 'Art. VI, pp. 7-9'
+  - text: Improve OFAC sanctions screening, risk assessment, training and policies.
+    pin: 'Art. VII, p. 9'
+  earlier:
+  - {regulator: Federal Reserve Bank of Dallas and Texas Department of Banking, date: '2024-08-29', title: Cease and desist order (Docket 24-021-B-SM), pin: 'p. 1'}
+  repeat: false
+  repeat_note: The OCC order replaces the 2024 order after the bank converted to a national bank (OCC Corporate Decision 1375); it does not find conduct continuing after that order.
+  verified: '2026-11-26'
+  corrections: []
+
+- id: occ-aa-enf-2025-21
+  case_id: community-federal-savings-bank-2026-04
+  firm: Community Federal Savings Bank
+  firm_group: Community Federal Savings Bank
+  firm_type: bank
+  country: US
+  regulator: occ
+  date: '2026-04-24'
+  date_basis: signed
+  action: order_no_penalty
+  monetary: false
+  failures: [aml_programme, monitoring, cdd, sar, records]
+  position: neither_admit_nor_deny
+  position_pin: 'Art. II, p. 2'
+  document:
+    title: Consent Order
+    type: consent_order
+    number: AA-ENF-2025-21
+    url: https://www.occ.gov/static/enforcement-actions/eaAA-ENF-2025-21.pdf
+  findings:
+  - text: The bank's BSA/AML programme did not keep pace with the growth of its payment processing business, including cross-border activity.
+    pin: 'Art. II, pp. 2-4'
+    level: order
+  - text: Monitoring alerts were closed automatically, customer due diligence was ineffective and independent testing was weak.
+    pin: 'Art. II, pp. 2-4'
+    level: order
+  - text: The OCC found violations of the BSA/AML programme rule, the suspicious activity reporting rule and the 314(a) information sharing rule.
+    pin: 'Art. II, p. 4'
+    excerpt: resulted in a BSA/AML Program violation under 12 C.F.R. § 21.21
+    level: order
+  - text: The OCC says the findings are largely unrelated to customers involved in digital asset activity.
+    pin: 'p. 1'
+    excerpt: largely unrelated to customers involved in digital assets activities
+    level: order
+  requirements:
+  - text: Commission an end-to-end third-party assessment of the BSA/AML programme.
+    pin: 'Art. V, pp. 6-7'
+  - text: Hire an independent consultant for a look-back of suspicious activity reporting.
+    pin: 'Art. VIII, pp. 10-12'
+  earlier: []
+  repeat: false
   verified: '2026-11-26'
   corrections: []
