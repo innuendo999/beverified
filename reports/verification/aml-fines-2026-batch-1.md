@@ -26,20 +26,17 @@ Case total for Bank of America (FinCEN + OFAC rows, OCC credit not double counte
 - **Coinbase Ireland Limited**, Central Bank of Ireland, 22 Oct 2026, €3,252,618: breaches of the E-Money Regulations 2011 on safeguarding and outsourcing, not AML.
 - **Order Express, Inc.**, NYDFS, Aug 2026, $250,000: cybersecurity regulation (23 NYCRR 500).
 - **Santander Consumer USA Inc.**, NYDFS, 3 Jun 2026, $400,000: consumer lending fees.
+- **Swedbank AB (publ) and NY Branch**, NYDFS, 16 Jul 2026, $50,000,000: Banking Law § 125(3), failing to give the Department information it asked for (¶ 35). Owner decision 26 Nov 2026: not included; withholding information from a regulator is not an AML control failure.
 - **OFAC 2026 penalties on non-financial firms** (Extreme Networks, Pegasus Worldwide Logistics, Rice Lake Weighing Systems, FTI Consulting, Adani Enterprises, IMG Academy, two individuals not at financial firms).
-
-## Held for the owner
-
-- **Swedbank AB (publ) and NY Branch**, NYDFS, 16 Jul 2026, $50,000,000. The violation is Banking Law § 125(3): failing to give the Department information it asked for (Panama Papers-linked customers and Baltic subsidiaries), ¶ 35. The subject is AML risk, but the breach is withholding information from the regulator, not an AML control. In or out? If in, failure key `records`.
 
 ## Discrepancies to resolve
 
-- **UBS figures in our news item.** `/news/aml-fines-q3-2026-bank-of-america-ubs-fca/` says "more than 50,000 foreign currency wires worth over $10 billion". The consent order says more than 61,500 wires with an aggregate value of more than $10.5 billion (pp. 8, 32, 34, 36). The news figure may come from FinCEN's press release; check and correct the news item if not.
-- **OFAC amount as quoted in the FinCEN order.** The fetch tool's summary of the FinCEN order (p. 67) gave the OFAC penalty as $11,000,000, while OFAC's own release says $11,662,930. Probably a summarising error; the entry uses OFAC's figure. Check p. 67 when the PDF is open.
+- **UBS figures in our news item.** `/news/aml-fines-q3-2026-bank-of-america-ubs-fca/` said "more than 50,000 foreign currency wires worth over $10 billion". The consent order says more than 61,500 wires with an aggregate value of more than $10.5 billion (pp. 8, 32, 34, 36). Owner asked to update the news item (26 Nov 2026): separate PR `news-ubs-figures`.
+- **OFAC amount as quoted in the FinCEN order.** The fetch tool's summary of the FinCEN order (p. 67) gave the OFAC penalty as $11,000,000, while OFAC's own release says $11,662,930. Probably a summarising error; the entry uses OFAC's figure. The owner will check p. 67 in the PDF (26 Nov 2026).
 
 ## Not covered yet (2026)
 
 - OCC (the $750,000,000 Bank of America order and other 2026 AML orders), Federal Reserve, FDIC: documents not readable from the session; to be added once the Action or the owner can read them.
 - FCA, OFSI, HMRC, FINRA, CSSF, ACPR: not readable from the session (robots.txt or refused requests).
-- NYDFS 2026 list checked in full: SEB is the only in-scope action besides Swedbank (held).
+- NYDFS 2026 list checked in full: SEB is the only in-scope action.
 - Central Bank of Ireland: only the first page of press releases was checked.
