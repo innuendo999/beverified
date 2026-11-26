@@ -1,4 +1,4 @@
-# AML watch 2026-11-25
+# AML watch 2026-11-26
 
 50 of 61 pages read for 10 providers in the AML ranking.
 
