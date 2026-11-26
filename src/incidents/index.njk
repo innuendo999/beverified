@@ -87,6 +87,7 @@ layout: v3.njk
             <p class="inc-doc__title">{{ x.title }}</p>
             {%- if x.idData %}<p class="inc-id">{% icon "id-card", "", 16 %}ID documents, biometrics or ID numbers exposed</p>{% endif %}
             <table class="af-ledger">
+              <caption class="visually-hidden">Status of this entry</caption>
               <tbody>
                 <tr><th scope="row">Status</th><td class="is-strong">{{ x.statusLabel }}{% if x.appealLabel %}, {{ x.appealLabel | lower }}{% endif %}</td></tr>
                 <tr><th scope="row">Score effect</th><td class="num">{{ x.scoreLine }}</td></tr>

@@ -67,7 +67,7 @@ layout: v3.njk
             <summary><span class="af-month__name">{{ m.label }}</span><span class="af-month__count num" data-af-count>{{ m.count }} {{ "action" if m.count == 1 else "actions" }}</span>{% icon "chevron-down", "af-month__chev", 16 %}<span class="af-month__firms">{{ m.firms }}</span></summary>
             <ol class="af-rows">
               {%- for r in m.rows %}
-              <li data-af-row data-id="{{ r.id }}" data-year="{{ r.year }}" data-nb="{{ 'nb' if r.nonBank else 'bank' }}" data-q="{{ r.search }}">
+              <li data-af-row data-id="{{ r.id }}" data-af-y="{{ r.year }}" data-af-nb="{{ 'nb' if r.nonBank else 'bank' }}" data-af-s="{{ r.search }}">
                 <a class="af-row" href="#{{ r.id }}" data-af-pick="{{ r.id }}">
                   <span class="af-row__top"><b>{{ r.firm }}</b><span class="num{% if not r.monetary %} is-none{% endif %}">{{ r.amountShort }}</span></span>
                   <span class="af-row__meta"><span>{{ r.dayShort }} · {{ r.reg }} · {{ r.firmType }}</span><span>{{ r.action }}</span></span>
@@ -221,7 +221,7 @@ layout: v3.njk
     const term = (q.value || "").trim().toLowerCase();
     let n = 0;
     rows.forEach((r) => {
-      const on = (year === "all" || r.dataset.year === year) && (kind === "all" || r.dataset.nb === kind) && (!term || r.dataset.q.includes(term));
+      const on = (year === "all" || r.dataset.afY === year) && (kind === "all" || r.dataset.afNb === kind) && (!term || r.dataset.afS.includes(term));
       r.hidden = !on; if (on) n++;
     });
     months.forEach((m, i) => {
