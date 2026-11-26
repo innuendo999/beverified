@@ -18,7 +18,9 @@
       "route": "news",
       "priority": 1,
       "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
-      "first_seen": "2026-11-25"
+      "first_seen": "2026-11-25",
+      "status": "drafted",
+      "pr": "https://github.com/innuendo999/beverified/pull/236"
     },
     {
       "id": "5bf792dca32cf2f6",
