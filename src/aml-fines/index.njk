@@ -1,0 +1,248 @@
+---
+layout: v3.njk
+---
+{#- AML Fines Tracker (owner approved the design canvas "BeVerified: AML Fines Tracker page, design proposal", 26 Nov 2026).
+    Data: src/_data/enforcement.yml via src/_lib/aml-fines-page.js. Without JS every order is shown, one under another,
+    and the list links to them; with JS the list selects one order into the document pane, and filters and search appear.
+    Sources are shown as documents (header, findings with pins, archive copy, hash), never as a sources column (owner). -#}
+{%- set s = af.now -%}
+<main id="main" class="af" data-af>
+  <div class="af-top">
+    <svg class="af-top__guilloche" viewBox="0 0 1280 460" preserveAspectRatio="none" aria-hidden="true" focusable="false">{% for g in af.guilloche %}<path d="{{ g.d }}"{% if g.strong %} class="is-strong"{% endif %}/>{% endfor %}</svg>
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li class="sep" aria-hidden="true">›</li><li aria-current="page">AML fines tracker</li></ol></nav>
+      <header class="af-hero">
+        <div class="af-hero__text">
+          <h1 class="af-hero__title">AML Fines Tracker</h1>
+          <p class="af-hero__sub">AML, KYC and sanctions actions against banks and fintechs since 2025, each read from the regulator's own order.</p>
+          {%- set big = s.largest %}
+          <p class="af-hero__answer">The largest {{ s.year }} case in our data is {{ big.firm }}: {{ big.usdText }} from {{ big.regText }} on {{ big.date }}. Suspicious activity reporting was cited in {{ s.controls.sar }} of the {{ s.actions }} actions we recorded in {{ s.year }}.</p>
+          <p class="af-hero__cta"><a class="btn btn--primary" href="#actions">Browse the {{ af.rows.length }} actions</a><a class="btn btn--secondary" href="#reuse">Download the data</a></p>
+          <p class="af-hero__meta">Regulators tracked: {{ af.regsText }}. Checked <time datetime="{{ af.checked | iso }}">{{ af.checked | displayDate }}</time>.</p>
+        </div>
+        <aside class="af-card" aria-labelledby="af-card-h">
+          <div class="af-card__body">
+            <h2 id="af-card-h" class="af-card__title">In {{ s.year }} so far</h2>
+            <p class="af-card__big num">{{ s.usdShort }}</p>
+            <p class="af-card__note num">{{ s.usdText }} in penalties across {{ s.actions }} actions in {{ s.cases }} cases, each case counted once.</p>
+            <dl class="af-card__rows num">
+              <div><dt>Against non-banks</dt><dd>{{ s.nonBankActions }} actions, {{ s.nonBankShort }}</dd></div>
+              <div><dt>Transaction monitoring cited</dt><dd>{{ s.controls.monitoring }} of {{ s.actions }}</dd></div>
+              <div><dt>Same failure after an earlier order</dt><dd>{{ s.repeats.length }}{% if s.repeats.length == 1 %}, {{ s.repeats[0] }}{% endif %}</dd></div>
+            </dl>
+            {%- if af.prev %}
+            <p class="af-card__prev num">{{ af.prev.year }}: {{ af.prev.usdShort }} across {{ af.prev.actions }} actions, {{ af.prev.nonBankActions }} of them against non-banks.</p>
+            {%- endif %}
+          </div>
+          <div class="af-mrz" aria-hidden="true"><div>{{ ["AMLF", "YTD", s.year, "", s.actions, "ACTIONS", "", s.cases, "CASES"] | join("<") | mrzLine }}</div><div>{{ ["CHECKED", af.checked | iso | replace("-", ""), "", "BEVERIFIED", "ORG"] | join("<") | mrzLine }}</div></div>
+        </aside>
+      </header>
+    </div>
+  </div>
+  <div class="container">
+    <div class="af-micro" aria-hidden="true"></div>
+
+    <div class="af-work" id="actions">
+      <section class="af-list" aria-labelledby="af-list-h">
+        <h2 id="af-list-h" class="visually-hidden">Actions</h2>
+        <div class="af-tools" data-af-tools hidden>
+          <label for="af-q" class="visually-hidden">Find a firm</label>
+          <input id="af-q" class="af-search" type="search" autocomplete="off" spellcheck="false" placeholder="Find a firm, e.g. Block or UBS" data-af-q>
+          <div class="af-segs">
+            <div class="af-seg" role="group" aria-label="Year">
+              <button type="button" aria-pressed="true" data-af-year="all">All years</button>
+              {%- for y in af.years %}<button type="button" aria-pressed="false" data-af-year="{{ y }}">{{ y }}</button>{% endfor %}
+            </div>
+            <div class="af-seg" role="group" aria-label="Firms">
+              <button type="button" aria-pressed="true" data-af-kind="all">All firms</button>
+              <button type="button" aria-pressed="false" data-af-kind="bank">Banks</button>
+              <button type="button" aria-pressed="false" data-af-kind="nb">Non-banks</button>
+            </div>
+          </div>
+          <p class="af-shown num" aria-live="polite" data-af-shown>All {{ af.rows.length }} actions since 1 January 2025</p>
+        </div>
+        <div class="af-months">
+          {%- for m in af.months %}
+          <details class="af-month" data-af-month="{{ m.key }}"{% if loop.first %} open{% endif %}>
+            <summary><span class="af-month__name">{{ m.label }}</span><span class="af-month__count num" data-af-count>{{ m.count }} {{ "action" if m.count == 1 else "actions" }}</span>{% icon "chevron-down", "af-month__chev", 16 %}<span class="af-month__firms">{{ m.firms }}</span></summary>
+            <ol class="af-rows">
+              {%- for r in m.rows %}
+              <li data-af-row data-id="{{ r.id }}" data-year="{{ r.year }}" data-nb="{{ 'nb' if r.nonBank else 'bank' }}" data-q="{{ r.search }}">
+                <a class="af-row" href="#{{ r.id }}" data-af-pick="{{ r.id }}">
+                  <span class="af-row__top"><b>{{ r.firm }}</b><span class="num{% if not r.monetary %} is-none{% endif %}">{{ r.amountShort }}</span></span>
+                  <span class="af-row__meta"><span>{{ r.dayShort }} · {{ r.reg }} · {{ r.firmType }}</span><span>{{ r.action }}</span></span>
+                  <span class="af-row__fails">{{ r.failText }}{% if r.repeat %} <b class="af-repeat-text">· Repeat finding</b>{% endif %}</span>
+                </a>
+              </li>
+              {%- endfor %}
+            </ol>
+          </details>
+          {%- endfor %}
+        </div>
+        <p class="af-empty" data-af-empty hidden>No action matches. Clear the search or pick another filter.</p>
+      </section>
+
+      <div class="af-pane" data-af-pane>
+        {%- for r in af.rows %}
+        <article id="{{ r.id }}" class="af-doc{% if r.id == af.firstOpen %} is-on{% endif %}" aria-labelledby="{{ r.id }}-h">
+          <header class="af-doc__head">
+            <span class="af-seal" aria-hidden="true">{{ r.reg }}</span>
+            <div>
+              <p class="af-doc__reg">{{ r.regFull }}</p>
+              <h2 id="{{ r.id }}-h" class="af-doc__title">{{ r.docTitle }}</h2>
+              <p class="af-doc__line num">{{ r.docLine }}</p>
+            </div>
+          </header>
+          <div class="af-micro af-micro--doc" aria-hidden="true"></div>
+          <div class="af-doc__body">
+            <p class="af-doc__matter">In the matter of</p>
+            <p class="af-doc__firm">{{ r.firm }}</p>
+            <p class="af-doc__sub">{{ r.firmType }}{% if r.firmDesc %}: {{ r.firmDesc }}{% endif %} · {{ r.position }}</p>
+            {%- if r.position_note %}<p class="af-doc__note">{{ r.position_note }}</p>{% endif %}
+            {%- if r.repeat %}<p class="af-stamp">{% icon "refresh", "", 14 %}Repeat finding: same failure after an earlier order</p>{% endif %}
+
+            <table class="af-ledger num">
+              <caption>Money</caption>
+              <tbody>{% for l in r.ledger %}<tr><th scope="row">{{ l.k }}</th><td{% if l.strong %} class="is-strong"{% endif %}>{{ l.v }}</td></tr>{% endfor %}</tbody>
+            </table>
+            {%- if r.payment_note %}<p class="af-doc__note">{{ r.payment_note }}</p>{% endif %}
+
+            {%- if r.findings.length %}
+            <h3 class="af-h3">What the order found</h3>
+            <ol class="af-finds">
+              {%- for f in r.findings %}
+              <li>
+                {%- if f.excerpt %}
+                <details class="af-pin"><summary class="num" title="Show the passage">{{ f.pin }}</summary></details>
+                {%- else %}
+                <span class="af-pin af-pin--plain num" title="Paraphrased; no excerpt">{{ f.pin }}</span>
+                {%- endif %}
+                <p>{{ f.text }}</p>
+                {%- if f.excerpt %}<blockquote class="af-quote">“{{ f.excerpt }}”<span class="af-quote__lvl">{{ f.level }}, {{ f.pin }}</span></blockquote>{% endif %}
+              </li>
+              {%- endfor %}
+            </ol>
+            {%- endif %}
+            {%- if r.requirements.length %}
+            <h3 class="af-h3">What the order requires</h3>
+            <ol class="af-finds af-finds--req">
+              {%- for q in r.requirements %}<li><span class="af-pin af-pin--plain num">{{ q.pin }}</span><p>{{ q.text }}</p></li>{% endfor %}
+            </ol>
+            {%- endif %}
+
+            <div class="af-doc__cols">
+              <div>
+                <h3 class="af-h3">Document trail</h3>
+                <ol class="af-trail">{% for t in r.trail %}<li class="is-{{ t.kind }}">{{ t.text }}</li>{% endfor %}</ol>
+              </div>
+              <div>
+                <h3 class="af-h3">Controls that failed</h3>
+                <ul class="af-ctrl">{% for c in r.controls %}<li>{{ c.label }}{% if c.href %} · <a href="{{ c.href }}">{{ c.link }}</a>{% endif %}</li>{% endfor %}</ul>
+              </div>
+            </div>
+          </div>
+          <div class="af-doc__foot">
+            <span class="af-checked">{% icon "check", "", 16 %}Checked against the order on <time datetime="{{ r.checked | iso }}">{{ r.checked | displayDate }}</time></span>
+            <a href="{{ r.docUrl }}" rel="noopener">Open the order</a>
+            {%- if r.archiveUrl %}<a href="{{ r.archiveUrl }}" rel="noopener">Archived copy, {{ r.archived }}</a>{% endif %}
+            {%- if r.sha %}<span class="af-hash" title="SHA-256 of the file we checked">SHA-256 {{ r.sha | truncate(12, true, "") }}…</span>{% endif %}
+            <details class="af-cite"><summary>Cite this</summary>
+              <p class="af-cite__k">This entry</p><p class="af-cite__v">BeVerified, AML Fines Tracker, entry {{ r.id }} (checked {{ r.checked | displayDate }}), {{ site.url | replace("https://", "") }}/aml-fines/#{{ r.id }}</p>
+              <p class="af-cite__k">The order</p><p class="af-cite__v">{{ r.firm }}, {{ r.reg }}{% if r.docLine %} {{ r.docLine | replace(" · ", ", ") }}{% endif %}</p>
+            </details>
+            <a href="mailto:support@beverified.org?subject={{ ('AML fines tracker: correction to ' + r.id) | urlencode }}">Correct this entry</a>
+          </div>
+          <div class="af-mrz" aria-hidden="true"><div>{{ r.mrz1 | mrzLine }}</div><div>{{ r.mrz2 | mrzLine }}</div></div>
+        </article>
+        {%- endfor %}
+      </div>
+    </div>
+
+    <section class="af-controls" aria-labelledby="af-ctrl-h">
+      <h2 id="af-ctrl-h" class="af-h2">What failed, and where to compare vendors for it</h2>
+      <p class="af-lede">Each control links to the ranking where we compare the vendors that sell it. Counts are actions whose order names the control.</p>
+      <p class="af-legend">{% for y in af.legend %}<span class="af-legend__k is-{{ loop.index0 }}">{{ y.year }}, of {{ y.actions }} actions</span>{% endfor %}</p>
+      <ol class="af-bars">
+        {%- for c in af.controls %}
+        <li>
+          <span class="af-bars__name">{{ c.full }}</span>
+          <span class="af-bars__vals">{% for y in c.years %}<span class="af-bar is-{{ loop.index0 }}"><span style="width: {{ y.w }}%"></span><b class="num">{{ y.n }}</b><span class="visually-hidden"> of {{ y.of }} actions in {{ y.year }}</span></span>{% endfor %}</span>
+          <span class="af-bars__link">{% if c.href %}<a href="{{ c.href }}">{{ c.link }}</a>{% else %}<span class="c-muted">{{ c.link }}</span>{% endif %}</span>
+        </li>
+        {%- endfor %}
+      </ol>
+    </section>
+
+    <section id="reuse" class="reg-reuse af-reuse" aria-labelledby="reuse-h">
+      <div>
+        <h2 id="reuse-h">Cite or reuse this data</h2>
+        <p>Free to reuse under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener">CC BY 4.0</a> with a link to this page. The download includes the document number, page references, archived copy and SHA-256 for every entry. We include final actions by the regulators named above for AML, KYC and sanctions failures at financial firms since 1 January 2025; criminal resolutions are left out. To correct an entry, write to <a href="mailto:support@beverified.org?subject=AML%20fines%20tracker%3A%20correction">support@beverified.org</a>.</p>
+      </div>
+      <p class="reg-reuse__btns"><a class="btn btn--secondary" href="/aml-fines/aml-fines.csv" download>Download CSV</a><a class="btn btn--secondary" href="/aml-fines/aml-fines.json" download>Download JSON</a></p>
+    </section>
+  </div>
+</main>
+
+<script>
+(() => {
+  const root = document.querySelector("[data-af]");
+  if (!root) return;
+  root.classList.add("af-js");
+  const docs = [...root.querySelectorAll(".af-doc")];
+  const rows = [...root.querySelectorAll("[data-af-row]")];
+  const months = [...root.querySelectorAll("[data-af-month]")];
+  const tools = root.querySelector("[data-af-tools]");
+  const q = root.querySelector("[data-af-q]");
+  const shown = root.querySelector("[data-af-shown]");
+  const empty = root.querySelector("[data-af-empty]");
+  const pane = root.querySelector("[data-af-pane]");
+  const total = rows.length;
+  let year = "all", kind = "all";
+  tools.hidden = false;
+
+  const select = (id, scroll) => {
+    if (!docs.some((d) => d.id === id)) return;
+    docs.forEach((d) => d.classList.toggle("is-on", d.id === id));
+    rows.forEach((r) => r.querySelector("a").setAttribute("aria-current", r.dataset.id === id ? "true" : "false"));
+    const row = rows.find((r) => r.dataset.id === id);
+    const m = row && row.closest("details");
+    if (m) m.open = true;
+    if (scroll && window.matchMedia("(max-width: 960px)").matches) pane.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+  root.addEventListener("click", (e) => {
+    const a = e.target.closest("[data-af-pick]");
+    if (!a) return;
+    e.preventDefault();
+    history.replaceState(null, "", "#" + a.dataset.afPick);
+    select(a.dataset.afPick, true);
+  });
+
+  const apply = () => {
+    const term = (q.value || "").trim().toLowerCase();
+    let n = 0;
+    rows.forEach((r) => {
+      const on = (year === "all" || r.dataset.year === year) && (kind === "all" || r.dataset.nb === kind) && (!term || r.dataset.q.includes(term));
+      r.hidden = !on; if (on) n++;
+    });
+    months.forEach((m, i) => {
+      const vis = [...m.querySelectorAll("[data-af-row]")].filter((r) => !r.hidden).length;
+      m.hidden = vis === 0;
+      m.querySelector("[data-af-count]").textContent = vis + (vis === 1 ? " action" : " actions");
+      if (term && vis) m.open = true;
+    });
+    if (!term) { let first = true; months.forEach((m) => { if (!m.hidden) { m.open = first || m.contains(rows.find((r) => r.querySelector("[aria-current='true']"))?.querySelector("a") || null); first = false; } }); }
+    shown.textContent = n === total ? "All " + total + " actions since 1 January 2025" : n + " of " + total + " actions shown";
+    empty.hidden = n > 0;
+  };
+  const seg = (attr, set) => root.querySelectorAll("[" + attr + "]").forEach((b) => b.addEventListener("click", () => {
+    root.querySelectorAll("[" + attr + "]").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    set(b.getAttribute(attr)); apply();
+  }));
+  seg("data-af-year", (v) => { year = v; });
+  seg("data-af-kind", (v) => { kind = v; });
+  q.addEventListener("input", apply);
+
+  const start = location.hash.slice(1);
+  select(docs.some((d) => d.id === start) ? start : docs[0].id, false);
+})();
+</script>
