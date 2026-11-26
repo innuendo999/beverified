@@ -78,6 +78,7 @@ One record per action, newest first. Hand-written fields only: machine fields (h
 - `earlier` items are an entry id, or an object `{regulator, date, title, amount, pin}` for actions before 2025 or by regulators we do not track.
 - `credits`, `parallel`, `payment_note`, `position_pin` / `position_note`, `repeat_note`, and for OFAC `sanctions: {apparent_violations, egregious, self_disclosed, programs}`.
 - Document type `enforcement_release` (OFAC) and `decision` were added.
+- `firm_desc`: what the firm does, in the regulator's own description. `joint_with`: other regulators that signed the same document (multistate orders). `sanctions.egregious` may be `partial` with `egregious_count`.
 - `requirements: [{text, pin}]`: what an order makes the firm do (look-backs, programme fixes); an entry needs `findings` or `requirements`, so a cease and desist order without its own quotable findings can be recorded. `parallel_note` for a parallel action known only from the regulator's release.
 
 Planning sketch:
@@ -140,6 +141,7 @@ An action can carry several failures. A failure is recorded only when the docume
 | `sanctions` | Sanctions screening | `aml` |
 | `travel_rule` | Travel Rule | `travel-rule` |
 | `crypto_controls` | Crypto-specific controls (wallet screening, mixers) | `crypto` |
+| `registration` | Registration and licensing (e.g. operating as an unregistered MSB) | none |
 | `records` | Record keeping and reporting other than SARs | none |
 | `remediation` | Failure to fix earlier findings | none |
 

@@ -64,10 +64,10 @@ items:
     pin: '§ II.D.3, p. 28'
     excerpt: failing to report suspicious money order deposits totaling over $600 million
     level: order
-  - text: Its customer due diligence processes did not meet the bank's AML programme obligations.
+  - text: Its customer due diligence processes did not meet the bank's AML program obligations.
     pin: '§ II.D.3, p. 31'
     level: order
-  - text: FinCEN found violations of the AML programme, correspondent account due diligence and suspicious activity reporting rules.
+  - text: FinCEN found violations of the AML program, correspondent account due diligence and suspicious activity reporting rules.
     pin: '§ III, p. 61'
     level: order
   earlier:
@@ -102,7 +102,7 @@ items:
     type: enforcement_release
     url: https://ofac.treasury.gov/media/937231/download?inline
   findings:
-  - text: Bank of America settled 475 apparent violations of OFAC sanctions programmes for $11,662,930.
+  - text: Bank of America settled 475 apparent violations of OFAC sanctions programs for $11,662,930.
     pin: 'p. 1'
     excerpt: has agreed to pay $11,662,930 to settle its potential civil liability for 475 apparent violations of OFAC sanctions programs
     level: order
@@ -110,7 +110,7 @@ items:
     pin: 'p. 3'
     excerpt: Ultimately, Bank of America processed 403 transactions totaling $14,340,100 between February 2022 and March 2025
     level: order
-  - text: A design flaw in the bank's alert prioritisation logic affected how sanctions alerts were ranked.
+  - text: A design flaw in the bank's alert prioritization logic affected how sanctions alerts were ranked.
     pin: 'p. 3'
     excerpt: Due to a design flaw in its alert prioritization logic
     level: order
@@ -213,7 +213,7 @@ items:
     pin: 'p. 28'
     excerpt: FinCEN has identified hundreds of suspicious transactions for which UBSFS failed to timely and accurately file a SAR
     level: order
-  - text: The firm did not maintain an AML programme meeting the minimum requirements of the Bank Secrecy Act.
+  - text: The firm did not maintain an AML program meeting the minimum requirements of the Bank Secrecy Act.
     pin: '§ III, p. 31'
     excerpt: UBSFS willfully failed to implement and maintain an AML program that met the minimum requirements of the BSA
     level: order
@@ -305,7 +305,7 @@ items:
     number: '2026-01'
     url: https://www.fincen.gov/system/files/2026-03/Canaccord-Consent-Order-No-2026-01.pdf
   findings:
-  - text: Canaccord Genuity did not maintain an AML programme meeting the minimum requirements of the Bank Secrecy Act.
+  - text: Canaccord Genuity did not maintain an AML program meeting the minimum requirements of the Bank Secrecy Act.
     pin: '§ III, p. 39'
     excerpt: willfully failed to implement and maintain an AML program that met the minimum requirements of the BSA
     level: order
@@ -352,7 +352,7 @@ items:
     number: AA-ENF-2026-41
     url: https://www.occ.gov/static/enforcement-actions/eaAA-ENF-2026-41.pdf
   findings:
-  - text: The OCC found that Bank of America did not run a BSA/AML compliance programme suited to its size.
+  - text: The OCC found that Bank of America did not run a BSA/AML compliance program suited to its size.
     pin: 'Art. II(2), p. 3'
     excerpt: the OCC found that the Bank failed to implement a BSA/AML compliance program appropriate for its size
     level: order
@@ -360,7 +360,7 @@ items:
     pin: 'Art. II(3), p. 3'
     excerpt: received written reports showing that the Bank was failing to file suspicious activity reports
     level: order
-  - text: It had no effective due diligence programme for its foreign branches.
+  - text: It had no effective due diligence program for its foreign branches.
     pin: 'Art. II(12), p. 5'
     excerpt: failed to establish an effective due diligence program for its foreign branches
     level: order
@@ -397,7 +397,7 @@ items:
     number: AA-ENF-2026-47
     url: https://www.occ.gov/static/enforcement-actions/eaAA-ENF-2026-47.pdf
   findings:
-  - text: American Express National Bank did not establish and maintain a reasonably designed BSA/AML compliance programme.
+  - text: American Express National Bank did not establish and maintain a reasonably designed BSA/AML compliance program.
     pin: 'Art. II(1)-(2), p. 2'
     excerpt: However, the Bank has not established and maintained a reasonably designed BSA/AML compliance program.
     level: order
@@ -445,9 +445,9 @@ items:
   requirements:
   - text: Build a BSA/AML risk assessment, refresh it at least every 12 months and have it tested independently each year.
     pin: 'Art. V, pp. 7-10'
-  - text: Adopt a customer due diligence programme covering risk ratings, enhanced due diligence and customer identification.
+  - text: Adopt a customer due diligence program covering risk ratings, enhanced due diligence and customer identification.
     pin: 'Art. VI, pp. 10-12'
-  - text: Run a suspicious activity review programme with monitoring thresholds and timely, complete reports.
+  - text: Run a suspicious activity review program with monitoring thresholds and timely, complete reports.
     pin: 'Art. VIII, pp. 13-16'
   - text: Hire an independent consultant for a look-back of suspicious activity reporting.
     pin: 'Art. IX, pp. 16-18'
@@ -480,7 +480,7 @@ items:
     pin: 'p. 1'
     level: order
   requirements:
-  - text: Revise the BSA/AML programme, including the risk assessment, independent testing, a qualified compliance officer and training.
+  - text: Revise the BSA/AML program, including the risk assessment, independent testing, a qualified compliance officer and training.
     pin: 'Art. IV, pp. 4-5'
   - text: Strengthen customer due diligence, fix deficient customer files and risk-rate customers.
     pin: 'Art. V, pp. 6-7'
@@ -515,13 +515,13 @@ items:
     number: AA-ENF-2025-21
     url: https://www.occ.gov/static/enforcement-actions/eaAA-ENF-2025-21.pdf
   findings:
-  - text: The bank's BSA/AML programme did not keep pace with the growth of its payment processing business, including cross-border activity.
+  - text: The bank's BSA/AML program did not keep pace with the growth of its payment processing business, including cross-border activity.
     pin: 'Art. II, pp. 2-4'
     level: order
   - text: Monitoring alerts were closed automatically, customer due diligence was ineffective and independent testing was weak.
     pin: 'Art. II, pp. 2-4'
     level: order
-  - text: The OCC found violations of the BSA/AML programme rule, the suspicious activity reporting rule and the 314(a) information sharing rule.
+  - text: The OCC found violations of the BSA/AML program rule, the suspicious activity reporting rule and the 314(a) information sharing rule.
     pin: 'Art. II, p. 4'
     excerpt: resulted in a BSA/AML Program violation under 12 C.F.R. § 21.21
     level: order
@@ -530,11 +530,392 @@ items:
     excerpt: largely unrelated to customers involved in digital assets activities
     level: order
   requirements:
-  - text: Commission an end-to-end third-party assessment of the BSA/AML programme.
+  - text: Commission an end-to-end third-party assessment of the BSA/AML program.
     pin: 'Art. V, pp. 6-7'
   - text: Hire an independent consultant for a look-back of suspicious activity reporting.
     pin: 'Art. VIII, pp. 10-12'
   earlier: []
   repeat: false
+  verified: '2026-11-26'
+  corrections: []
+
+- id: fincen-2025-02
+  case_id: paxful-2025-12
+  firm: Paxful, Inc. and Paxful USA, Inc.
+  firm_group: Paxful
+  firm_type: vasp
+  firm_desc: Peer-to-peer virtual currency marketplace with a hosted wallet, treated by FinCEN as a money services business
+  country: US
+  regulator: fincen
+  date: '2025-12-09'
+  date_basis: signed
+  action: penalty
+  monetary: true
+  amount: {value: 3500000, currency: USD, pin: '§ V.B, p. 25'}
+  credits:
+  - {regulator: DOJ, value: 1750000, currency: USD, pin: '§ V.B, p. 25'}
+  amount_payable: {value: 1750000, currency: USD, pin: '§ V.B, p. 25'}
+  failures: [registration, aml_programme, sar, crypto_controls]
+  position: admitted
+  position_pin: '§ VI, p. 25'
+  conduct_period: {from: '2015-02', to: '2023-04', pin: '§ II, p. 5'}
+  document:
+    title: Consent Order Imposing Civil Money Penalty
+    type: consent_order
+    number: '2025-02'
+    url: https://www.fincen.gov/system/files/2025-12/PaxfulConsentOrder.pdf
+  findings:
+  - text: FinCEN imposed a civil money penalty of $3.5 million, half of it credited against Paxful's payment to the Department of Justice.
+    pin: '§ V.B, p. 25'
+    excerpt: FinCEN has determined to impose a Civil Money Penalty of $3.5 million in this matter.
+    level: order
+  - text: Paxful operated without registering with FinCEN as a money services business.
+    pin: '§ III, p. 20'
+    excerpt: Paxful willfully failed to register as an MSB with FinCEN
+    level: order
+  - text: It did not develop and maintain an effective AML program or report suspicious transactions accurately and on time.
+    pin: '§ III, p. 20'
+    excerpt: failed to develop, implement, and maintain an effective AML program
+    level: order
+  - text: Paxful processed over 4 million transactions worth over $24 million involving Backpage without filing a suspicious activity report.
+    pin: '§ II.D.1.i, p. 9'
+    excerpt: Paxful processed over 4 million transactions involving Backpage valued at over $24 million.
+    level: order
+  - text: The Black Axe fraud network moved over $620 million through Paxful in bitcoin, gift cards and wires.
+    pin: '§ II.D.6, p. 19'
+    excerpt: Black Axe conducted over $620 million in transfers via bitcoin, gift cards, and wire transmissions through Paxful.
+    level: order
+  - text: Paxful addresses dealt with 16 virtual asset service providers operating from Iran and Venezuela.
+    pin: '§ II.E.5, pp. 18-19'
+    excerpt: Paxful addresses interacted with 16 virtual asset service providers
+    level: order
+  earlier: []
+  repeat: false
+  parallel_note: Paxful agreed to pay $4 million to the Department of Justice in a separate, parallel investigation (§ IV.10, p. 23). DOJ resolutions are not recorded in the tracker.
+  verified: '2026-11-26'
+  corrections: []
+
+- id: ofac-2025-12-16-exodus
+  case_id: exodus-2025-12
+  firm: Exodus Movement, Inc.
+  firm_group: Exodus
+  firm_type: other
+  firm_desc: Fintech company offering free digital asset wallet software, earning fees when users trade through third-party exchanges
+  country: US
+  regulator: ofac
+  date: '2025-12-16'
+  date_basis: published
+  action: settlement
+  monetary: true
+  amount: {value: 3103360, currency: USD, pin: 'p. 1'}
+  failures: [sanctions, crypto_controls]
+  position: not_stated
+  conduct_period: {from: '2017-10', to: '2019-01', pin: 'p. 2'}
+  sanctions: {apparent_violations: 254, egregious: partial, egregious_count: 12, self_disclosed: none, programs: [Iran (ITSR)]}
+  document:
+    title: Enforcement Release
+    type: enforcement_release
+    url: https://ofac.treasury.gov/media/934831/download?inline
+  findings:
+  - text: Exodus settled 254 apparent violations of Iran sanctions for $3,103,360; OFAC found 12 of them egregious.
+    pin: 'p. 1'
+    excerpt: has agreed to pay $3,103,360 to settle its potential civil liability for 254 apparent violations
+    level: order
+  - text: Apart from its terms of use, Exodus had no meaningful way to stop its wallet being used in sanctioned jurisdictions.
+    pin: 'p. 3'
+    excerpt: did not provide any other meaningful mechanism to prevent the use of Exodus Wallet in sanctioned jurisdictions
+    level: order
+  - text: It had no effective compliance program to screen users for sanctioned jurisdictions.
+    pin: 'p. 3'
+    excerpt: Exodus failed to employ an effective compliance program to screen such users for sanctioned jurisdictions
+    level: order
+  - text: Employees were not told about or trained on the sanctions prohibitions in its own terms of use.
+    pin: 'p. 2'
+    excerpt: Exodus did not adequately notify or train its employees regarding these sanctions-related prohibitions in the Terms of Use
+    level: order
+  earlier: []
+  repeat: false
+  verified: '2026-11-26'
+  corrections: []
+
+- id: ofac-2025-09-22-shapeshift
+  case_id: shapeshift-2025-09
+  firm: ShapeShift AG
+  firm_group: ShapeShift
+  firm_type: vasp
+  firm_desc: Digital asset exchange incorporated in Switzerland and operated from Denver, Colorado, between 2014 and 2021
+  country: CH
+  regulator: ofac
+  date: '2025-09-22'
+  date_basis: published
+  action: settlement
+  monetary: true
+  amount: {value: 750000, currency: USD, pin: 'p. 1'}
+  failures: [sanctions, crypto_controls]
+  position: not_stated
+  conduct_period: {from: '2016-12', to: '2018-10', pin: 'pp. 1-2'}
+  sanctions: {apparent_violations: 17183, egregious: false, self_disclosed: none, programs: [Cuba (CACR), Iran (ITSR), Sudan (SSR), Syria (SySR)]}
+  document:
+    title: Enforcement Release
+    type: enforcement_release
+    url: https://ofac.treasury.gov/media/934641/download?inline
+  findings:
+  - text: ShapeShift settled 17,183 apparent sanctions violations for $750,000.
+    pin: 'pp. 1-2'
+    excerpt: has agreed to pay $750,000 to settle its potential civil liability for apparent violations
+    level: order
+  - text: During the period it had no sanctions compliance program to screen users or transactions.
+    pin: 'p. 2'
+    excerpt: had no sanctions compliance program in place to screen users or transactions
+    level: order
+  - text: It had no internal controls to stop users in sanctioned jurisdictions from trading.
+    pin: 'p. 3'
+    excerpt: failed to implement internal controls to prevent users located in sanctioned jurisdictions from conducting transactions
+    level: order
+  earlier: []
+  repeat: false
+  verified: '2026-11-26'
+  corrections: []
+
+- id: nydfs-2025-08-07-paxos
+  case_id: paxos-2025-08
+  firm: Paxos Trust Company, LLC
+  firm_group: Paxos
+  firm_type: vasp
+  firm_desc: Virtual currency company operating as a New York limited purpose trust company
+  country: US
+  regulator: nydfs
+  date: '2025-08-07'
+  date_basis: signed
+  action: penalty
+  monetary: true
+  amount: {value: 26500000, currency: USD, pin: '¶ 49'}
+  failures: [aml_programme, monitoring, cdd, crypto_controls, remediation]
+  position: not_stated
+  position_note: The order states the Department's findings and has no admission clause.
+  document:
+    title: Consent Order
+    type: consent_order
+    url: https://www.dfs.ny.gov/industry-guidance/enforcement-discipline/ea20250807-co-paxos-trust-company
+  findings:
+  - text: Paxos did not maintain an effective AML program (3 NYCRR 116.2) or transaction monitoring program (Part 504).
+    pin: '¶¶ 45, 48'
+    level: order
+  - text: The geofencing of its partner Binance was deficient and U.S. persons could get around it.
+    pin: '¶ 16'
+    excerpt: Binance's geofencing was deficient and circumventable by U.S. persons
+    level: order
+  - text: A blockchain analytics review found $1.6 billion of transactions involving illicit actors flowing to or from the Binance platform.
+    pin: '¶ 21'
+    excerpt: $1.6 billion in transactions flowing to or from the Binance platform involving illicit actors
+    level: order
+  - text: Paxos onboarded 11 businesses located in the same single-story strip mall in South Florida.
+    pin: '¶ 29'
+    excerpt: Paxos onboarded 11 businesses located in the same single-story strip mall in South Florida
+    level: order
+  - text: It did not investigate 79 of 188 law enforcement information requests.
+    pin: '¶ 40'
+    excerpt: failed to investigate 79 of 188 information requests
+    level: order
+  - text: The Department also found that Paxos breached its 2020 letter agreement with the Department.
+    pin: '¶ 47'
+    level: order
+  requirements:
+  - text: Commit at least $22 million to further improve its compliance program, set aside across 2025, 2026 and 2027.
+    pin: '¶¶ 52-53'
+  earlier:
+  - {regulator: NYDFS, date: '2020', title: Letter agreement with the Department, pin: '¶ 12'}
+  - {regulator: NYDFS, date: '2023-02-13', title: Order to stop minting Paxos-issued BUSD, pin: '¶ 23'}
+  repeat: false
+  repeat_note: The breached 2020 letter agreement is a supervisory agreement, not an enforcement action, so the entry is not marked as a repeat; the breach is recorded as a failure to fix earlier findings.
+  verified: '2026-11-26'
+  corrections: []
+
+- id: ofac-2025-07-15-interactive-brokers
+  case_id: interactive-brokers-2025-07
+  firm: Interactive Brokers LLC
+  firm_group: Interactive Brokers
+  firm_type: broker
+  firm_desc: Global electronic broker-dealer based in Greenwich, Connecticut
+  country: US
+  regulator: ofac
+  date: '2025-07-15'
+  date_basis: published
+  action: settlement
+  monetary: true
+  amount: {value: 11832136, currency: USD, pin: 'p. 1'}
+  failures: [sanctions]
+  position: not_stated
+  conduct_period: {from: '2016-07', to: '2024-01', pin: 'p. 1'}
+  sanctions: {apparent_violations: 12367, egregious: false, self_disclosed: all, programs: [Iran (ITSR), Cuba (CACR), Syria (SySR), Crimea (E.O. 13685), Russia (E.O. 14024, E.O. 14071, RuHSR), Chinese Military-Industrial Complex (CMICSR), Global Magnitsky (GMSR), Venezuela (VSR)]}
+  document:
+    title: Enforcement Release
+    type: enforcement_release
+    url: https://ofac.treasury.gov/media/934501/download?inline
+  findings:
+  - text: Interactive Brokers settled 12,367 apparent violations across eight sanctions programs for $11,832,136; it disclosed them voluntarily and OFAC found the case non-egregious.
+    pin: 'pp. 1, 7'
+    level: order
+  - text: The firm did not audit or test its IP geo-blocking systems adequately.
+    pin: 'p. 3'
+    excerpt: IB did not adequately audit or test these systems during this time period.
+    level: order
+  - text: Margin-related automatic liquidation orders were processed without sanctions screening of the securities.
+    pin: 'p. 4'
+    excerpt: did not incorporate sanctions-related securities screening prior to processing margin-related automatic liquidation orders.
+    level: order
+  - text: Staff closed a genuine sanctions alert as a false positive.
+    pin: 'p. 6'
+    excerpt: IB staff, however, incorrectly dispositioned the sanctions alert as a false positive.
+    level: order
+  - text: An account of a blocked person stayed open for more than a month after screening flagged a potential match.
+    pin: 'p. 6'
+    excerpt: IB failed to block Blocked Person-2's account for more than a month after IB's screening function identified Blocked Person-2 as a potential match.
+    level: order
+  earlier: []
+  repeat: false
+  verified: '2026-11-26'
+  corrections: []
+
+- id: nydfs-2025-07-09-wise-us
+  case_id: wise-us-2025-07
+  firm: Wise US Inc.
+  firm_group: Wise
+  firm_type: msb
+  firm_desc: Licensed money transmitter
+  country: US
+  regulator: nydfs
+  joint_with: [California DFPI, Massachusetts Division of Banks, Minnesota Department of Commerce, Nebraska Department of Banking and Finance, Texas Department of Banking]
+  date: '2025-07-09'
+  date_basis: signed
+  action: penalty
+  monetary: true
+  amount: {value: 4200000, currency: USD, pin: '¶ 10'}
+  payment_note: The $4.2 million is divided among the six participating regulators; the order does not give New York's share (¶ 10).
+  failures: [aml_programme, sar, monitoring, remediation]
+  position: neither_admit_nor_deny
+  position_note: Wise does not admit any wrongdoing, allegations or implications of fact (recitals, p. 3).
+  conduct_period: {from: '2022-07', to: '2023-09', pin: 'recitals, p. 1'}
+  document:
+    title: Settlement Agreement and Consent Order
+    type: consent_order
+    url: https://www.dfs.ny.gov/industry-guidance/enforcement-discipline/ea20250709-co-mse-wise-us-inc
+  findings:
+  - text: A multistate examination found no independent review of the AML program, weak suspicious activity investigation and late reports, transaction monitoring data integrity problems and past deficiencies not corrected in time.
+    pin: 'recitals, pp. 1-2'
+    level: order
+  requirements:
+  - text: Run a look-back review of accounts closed between 1 March 2023 and 1 March 2025.
+    pin: '¶ 4(c)'
+  - text: Put in place a stronger program to keep customer information accurate and complete.
+    pin: '¶ 5'
+  - text: Have the AML program independently reviewed at least once a year.
+    pin: '¶ 6'
+  earlier: []
+  repeat: false
+  verified: '2026-11-26'
+  corrections: []
+
+- id: nydfs-2025-04-10-block
+  case_id: block-2025-04
+  firm: Block, Inc.
+  firm_group: Block
+  firm_type: payment
+  firm_desc: Money transmitter and virtual currency licensee (Cash App)
+  country: US
+  regulator: nydfs
+  date: '2025-04-10'
+  date_basis: signed
+  action: penalty
+  monetary: true
+  amount: {value: 40000000, currency: USD, pin: '¶ 41'}
+  failures: [aml_programme, monitoring, sar, sanctions, crypto_controls, cdd]
+  position: not_stated
+  position_note: The order states the Department's findings and has no admission clause.
+  conduct_period: {from: '2021-02', to: '2022-09', pin: 'recitals'}
+  document:
+    title: Consent Order
+    type: consent_order
+    url: https://www.dfs.ny.gov/industry-guidance/enforcement-discipline/ea20250410-block
+  findings:
+  - text: Block's AML program breached 3 NYCRR 417.2 and 23 NYCRR 200.15.
+    pin: '¶ 36'
+    level: order
+  - text: Between 2018 and 2021 Block had a significant backlog of transaction monitoring alerts.
+    pin: '¶ 13'
+    excerpt: Block experienced a significant transaction monitoring alerts backlog.
+    level: order
+  - text: On average 129 days passed between a monitoring alert and the suspicious activity report it led to.
+    pin: '¶ 15'
+    excerpt: the transaction monitoring alert and the SAR filing was 129 days
+    level: order
+  - text: Block reported fifteen rejected bitcoin transactions to OFAC late.
+    pin: '¶ 20'
+    excerpt: Block also reported fifteen rejected Bitcoin transactions late with OFAC
+    level: order
+  - text: Transactions exposed to crypto mixers were rated medium risk instead of high.
+    pin: '¶ 24'
+    level: order
+  - text: Users linked to a criminal network opened 8,359 Cash App accounts with falsified information.
+    pin: '¶ 28'
+    excerpt: were able to open 8,359 Cash App accounts using falsified information
+    level: order
+  requirements:
+  - text: Work with an independent monitor chosen by the Department for 12 months, which the Department can extend.
+    pin: '¶¶ 46-50'
+  earlier: []
+  repeat: false
+  verified: '2026-11-26'
+  corrections: []
+
+- id: fincen-2025-01
+  case_id: brinks-2025-01
+  firm: Brink's Global Services USA, Inc.
+  firm_group: Brink's
+  firm_type: msb
+  firm_desc: Cross-border shipper of bulk currency and valuables, required by FinCEN to register as a money services business
+  country: US
+  regulator: fincen
+  date: '2025-01-31'
+  date_basis: published
+  action: penalty
+  monetary: true
+  amount: {value: 37000000, currency: USD, pin: '§ V.B, p. 27'}
+  credits:
+  - {regulator: DOJ, value: 20000000, currency: USD, pin: '§ V.B, p. 27'}
+  amount_payable: {value: 17000000, currency: USD, pin: '§ V.B, p. 27'}
+  failures: [registration, aml_programme, cdd, sar]
+  position: admitted
+  position_pin: '§ VII, p. 32'
+  conduct_period: {from: '2018-10', to: '2020-10', pin: '§ II, p. 7'}
+  document:
+    title: Consent Order Imposing Civil Money Penalty
+    type: consent_order
+    number: '2025-01'
+    url: https://www.fincen.gov/system/files/enforcement_action/2025-02-06/FinCEN-Brinks-FINALv508.pdf
+  findings:
+  - text: FinCEN imposed a civil money penalty of $37 million, crediting $20 million paid to the Department of Justice.
+    pin: '§ V.B, p. 27'
+    excerpt: FinCEN has determined to impose a Civil Money Penalty of $37 million in this matter
+    level: order
+  - text: Brink's was required to register as a money services business and did not.
+    pin: '§ III, p. 22'
+    excerpt: Brink's was required to register as an MSB with FinCEN and willfully failed to do so throughout the Relevant Time Period.
+    level: order
+  - text: While unregistered it shipped about $800 million of bulk currency.
+    pin: '§ II.C, p. 9'
+    excerpt: facilitated the shipment of approximately $800 million of bulk currency transactions
+    level: order
+  - text: It repeatedly did no due diligence on non-customers who gave shipment instructions.
+    pin: '§ II.D.1, p. 15'
+    excerpt: repeatedly failed to follow this policy by not performing any due diligence on non-customers
+    level: order
+  - text: Brink's did not file a single suspicious activity report despite identifying hundreds of potentially suspicious transactions.
+    pin: '§ IV, p. 24'
+    excerpt: yet Brink's failed to file a single SAR with FinCEN
+    level: order
+  earlier: []
+  repeat: false
+  parallel_note: Brink's entered a non-prosecution agreement with the Department of Justice on 31 January 2025 and agreed to pay $50 million, part of it suspended (§ IV, p. 27). DOJ resolutions are not recorded in the tracker.
   verified: '2026-11-26'
   corrections: []
