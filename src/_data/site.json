@@ -268,18 +268,8 @@
         "desc": "our own test"
       }
     },
-    "nav": [
-      {
-        "label": "Incidents",
-        "href": "/incidents/",
-        "key": "incidents"
-      },
-      {
-        "label": "Certifications",
-        "href": "/kyc-certification-tracker/",
-        "key": "certifications"
-      }
-    ],
+    "navNote": "Incidents and Certifications moved into the Data & tools dropdown (owner, 2026-11-27).",
+    "nav": [],
     "navAside": {
       "label": "For providers",
       "href": "/placement-options/"
@@ -529,8 +519,22 @@
           ]
         ]
       },
+      "tools": {
+        "label": "Data & tools",
+        "key": "tools",
+        "note": "Owner, 2026-11-27: one dropdown for the trackers and tools, replacing the loose Incidents and Certifications links. Lines are descriptions, no counts. The card shows the newest dated entry across the three trackers (megaMenu.js). The finder item opens the bottom-right widget and is hidden where the widget is off. [label, href, line, navCurrent key]",
+        "items": [
+          ["KYC Certification Tracker", "/kyc-certification-tracker/", "Who holds iBeta, UK DVS, FIDO and ACCS results", "certifications"],
+          ["Vendor Incident Tracker", "/incidents/", "Breaches and regulator actions since 2024", "incidents"],
+          ["AML Fines Tracker", "/aml-fines/", "Bank and fintech penalties since 2025", "aml-fines"],
+          ["KYC cost calculator", "/publications/kyc-pricing-index/#calculator", "Monthly cost at your volume", ""],
+          ["KYC Pricing Index", "/publications/kyc-pricing-index/", "Public list prices, side by side", ""]
+        ],
+        "finder": ["Provider finder", "Three questions, up to three matches"]
+      },
       "blog": {
-        "label": "Blog",
+        "label": "Insights",
+        "labelNote": "Renamed from Blog (owner, 2026-11-27). The /blog/ page keeps its own title.",
         "href": "/blog/",
         "key": "blog",
         "feature": {
@@ -568,9 +572,13 @@
           [
             "KYC Certification Tracker",
             "/kyc-certification-tracker/"
+          ],
+          [
+            "AML Fines Tracker",
+            "/aml-fines/"
           ]
         ],
-        "referenceNote": "Footer only (menu v3, owner 2026-11-25): the header already links Incidents and Certifications.",
+        "referenceNote": "Footer only: the header links the trackers in Data & tools (owner, 2026-11-27).",
         "links": [
           [
             "All posts",
