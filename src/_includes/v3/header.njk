@@ -93,6 +93,32 @@
         </div>
       </div>
 
+      {%- if mm.tools %}
+      {#- Data & tools (owner, 2026-11-27): trackers and tools with one line each; card = newest tracker entry. -#}
+      <div class="mm-item" data-mm-item>
+        <button type="button" class="mm-top{% if navCurrent and navCurrent in mm.tools.keys %} is-current{% endif %}" aria-expanded="false" aria-controls="mm-tools">{{ mm.tools.label }}{{ chev | safe }}</button>
+        <div class="mm-panel" id="mm-tools">
+          <div class="mm-wrap mm-tools">
+            <ul class="mm-tools__list">
+              {%- for t in mm.tools.items %}
+              <li><a href="{{ t[1] }}"{% if t[3] and t[3] == navCurrent %} aria-current="page"{% endif %}><b>{{ t[0] }}</b><span>{{ t[2] }}</span></a></li>
+              {%- endfor %}
+              {%- if mm.tools.finder %}
+              <li data-mm-finder hidden><button type="button"><b>{{ mm.tools.finder[0] }}</b><span>{{ mm.tools.finder[1] }}</span></button></li>
+              {%- endif %}
+            </ul>
+            {%- if mm.tools.latest %}{% set l = mm.tools.latest %}
+            <a class="mm-tools__card" href="{{ l.href }}">
+              <span class="mm-tools__k">Latest entry · <time datetime="{{ l.date }}">{{ l.day }}</time></span>
+              <b>{{ l.text }}</b>
+              <span class="mm-tools__src">{{ l.tracker }}</span>
+              <span class="mm-tools__mrz" aria-hidden="true">{{ ["NEW", l.date | replace("-", ""), "", "BEVERIFIED", "ORG"] | join("<") | mrzLine | truncate(34, true, "") }}</span>
+            </a>
+            {%- endif %}
+          </div>
+        </div>
+      </div>
+      {%- endif %}
       <div class="mm-item" data-mm-item>
         <button type="button" class="mm-top{% if navCurrent == 'blog' %} is-current{% endif %}" aria-expanded="false" aria-controls="mm-blog">{{ mm.blog.label }}{{ chev | safe }}</button>
         <div class="mm-panel" id="mm-blog">

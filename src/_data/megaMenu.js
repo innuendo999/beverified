@@ -26,6 +26,22 @@ const loadDir = (rel, keyOf) => {
   return out;
 };
 
+
+// Data & tools panel (owner, 2026-11-27): the newest dated entry across the three trackers, read from their data files.
+const M = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const day = (iso) => { const [y, m, d] = String(iso).slice(0, 10).split("-").map(Number); return `${M[m - 1]} ${d}, ${y}`; };
+function latestEntry() {
+  const y = (f) => (fs.existsSync(read(f)) ? yaml.load(fs.readFileSync(read(f), "utf8")) : null);
+  const inc = y("./incidents.yml"), enf = y("./enforcement.yml"), regs = y("./regulators.yml"), ct = y("./certTracker.yml");
+  const provs = loadDir("./providers/", (f) => f.replace(/\.yml$/, ""));
+  const out = [];
+  for (const x of inc?.items || []) out.push({ date: String(x.date).slice(0, 10), tracker: "Vendor Incident Tracker", text: `${x.vendor}: ${x.title}`, href: `/incidents/#${x.id}` });
+  for (const x of enf?.items || []) out.push({ date: String(x.date).slice(0, 10), tracker: "AML Fines Tracker", text: `${x.firm}, action by ${regs?.items?.[x.regulator]?.short || x.regulator}`, href: `/aml-fines/#${x.id}` });
+  for (const x of ct?.changes || []) out.push({ date: String(x.date).slice(0, 10), tracker: "KYC Certification Tracker", text: `${provs[x.slug]?.name || x.slug}: ${x.text}`, href: `/kyc-certification-tracker/#${x.slug}` });
+  const top = out.filter((x) => /^\d{4}-\d{2}-\d{2}$/.test(x.date)).sort((a, b) => b.date.localeCompare(a.date))[0];
+  return top ? { ...top, day: day(top.date) } : null;
+}
+
 export default function () {
   const site = JSON.parse(fs.readFileSync(read("./site.json"), "utf8"));
   const menu = site.v3.menu;
@@ -86,5 +102,6 @@ export default function () {
       compare,
       sponsor: rs ? { ...card(rs.slug), rank: rs.rank, ranking: labels[rs.category] || rsCat?.title || rs.category, rankingHref: rsCat?.url, url: rs.provider.link.url } : null },
     blog: { ...menu.blog, sponsor: bs },
+    tools: menu.tools ? { ...menu.tools, keys: menu.tools.items.map((t) => t[3]).filter(Boolean), latest: latestEntry() } : null,
   };
 }

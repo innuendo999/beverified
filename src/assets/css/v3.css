@@ -2525,4 +2525,27 @@ td > .cg-v:first-child { margin-left: 0; }
   .ct-legend .ct-shown { margin-left: 0; flex-basis: 100%; }
   .ct-must { flex: 1 1 100%; } .ct-must select { flex: 1; min-width: 0; }
   .ct-q { max-width: none; }
+/* Header "Data & tools" panel (owner, 2026-11-27): two columns of tools with one line each, navy card with the newest tracker entry. */
+.mm-tools { grid-template-columns: minmax(0,1fr) 320px; gap: 48px; align-items: start; }
+.mm-tools__list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 4px 32px; }
+.mm-tools__list a, .mm-tools__list button { display: block; width: 100%; padding: 10px 12px; margin: 0 -12px; border: 0; border-radius: var(--radius-btn); background: none; font: inherit; text-align: left; color: var(--ink); cursor: pointer; }
+.mm-tools__list a:hover, .mm-tools__list button:hover { background: var(--surface-soft); text-decoration: none; color: var(--ink); }
+.mm-tools__list a:hover b, .mm-tools__list button:hover b { color: var(--accent); }
+.mm-tools__list a[aria-current="page"] b { color: var(--accent); }
+.mm-tools__list b { display: block; font-size: 15px; font-weight: 600; }
+.mm-tools__list span { display: block; margin-top: 2px; font-size: 13px; line-height: 1.45; color: var(--muted); }
+.mm-tools__card { position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 6px; padding: 20px 20px 0; border-radius: 14px; background: var(--ink); color: #fff; }
+.mm-tools__card::before { content: ""; position: absolute; right: -150px; top: -160px; width: 340px; height: 340px; background: url("/assets/img/footer-rosette.svg") center / contain no-repeat; opacity: 0.4; pointer-events: none; }
+.mm-tools__card > * { position: relative; }
+.mm-tools__card:hover { color: #fff; text-decoration: none; }
+.mm-tools__card:hover b { text-decoration: underline; }
+.mm-tools__k { font-size: 12px; color: #AFC0E6; }
+.mm-tools__card b { font-size: 15px; line-height: 1.4; font-weight: 600; }
+.mm-tools__src { font-size: 13px; color: #C9D4EE; }
+.mm-tools__mrz { margin: 12px -20px 0; padding: 8px 20px 10px; background: #0E1D3D; font-family: ui-monospace, 'SFMono-Regular', Menlo, monospace; font-size: 11px; letter-spacing: 0.16em; color: #4F6290; white-space: nowrap; overflow: hidden; }
+@media (max-width: 1100px) { .mm-tools { grid-template-columns: minmax(0,1fr); } .mm-tools__card { display: none; } }
+@media (max-width: 860px) {
+  .mm-tools { padding: 0 0 16px; }
+  .mm-tools__list { grid-template-columns: 1fr; gap: 0; }
+  .mm-tools__list a, .mm-tools__list button { margin: 0; padding: 10px 0; }
 }

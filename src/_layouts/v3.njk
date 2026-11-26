@@ -88,6 +88,17 @@
       if (open) { closeAll(); open.querySelector('.mm-top').focus(); }
     });
     document.addEventListener('click', function (e) { if (!h.contains(e.target)) closeAll(); });
+    // Data & tools: "Provider finder" opens the bottom-right widget; hidden on pages and screens where the widget is off.
+    var fItem = h.querySelector('[data-mm-finder]'), fLaunch = document.querySelector('.fd-launch');
+    if (fItem && fLaunch && fLaunch.getClientRects().length) {
+      fItem.hidden = false;
+      fItem.querySelector('button').addEventListener('click', function () {
+        closeAll(); h.classList.remove('is-open');
+        var t = h.querySelector('.nav-toggle'); if (t) t.setAttribute('aria-expanded', 'false');
+        if (fLaunch.getAttribute('aria-expanded') !== 'true') fLaunch.click();
+        fLaunch.focus();
+      });
+    }
   }
   // Open a collapsed list (sources, certifications) when a footnote link points into it.
   function reveal(id) {
