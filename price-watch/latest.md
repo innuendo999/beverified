@@ -1,4 +1,4 @@
-# Price watch 2026-11-25
+# Price watch 2026-11-26
 
 30 of 34 pricing pages read.
 
@@ -25,8 +25,7 @@ Each line is a price in our record that the vendor page no longer shows. Open th
 
 Figures added to or removed from a page since the previous read. Often a new plan or a price change; sometimes a banner or currency switch.
 
-- Didit: added none; removed $67, $69. https://didit.me/pricing
-- GBG: added £500000; removed none. https://www.loqate.com/en-gb/pricing/
+- GBG: added none; removed £500000. https://www.loqate.com/en-gb/pricing/
 
 ## Pages we could not read
 

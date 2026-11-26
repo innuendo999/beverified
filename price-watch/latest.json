@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "pages": 34,
   "read": 30,
   "mismatches": [
@@ -154,27 +154,15 @@
   ],
   "changed": [
     {
-      "id": "didit",
-      "url": "https://didit.me/pricing",
-      "names": [
-        "Didit"
-      ],
-      "added": [],
-      "removed": [
-        "$67",
-        "$69"
-      ]
-    },
-    {
       "id": "gbg",
       "url": "https://www.loqate.com/en-gb/pricing/",
       "names": [
         "GBG"
       ],
-      "added": [
+      "added": [],
+      "removed": [
         "£500000"
-      ],
-      "removed": []
+      ]
     }
   ],
   "unreadable": [
