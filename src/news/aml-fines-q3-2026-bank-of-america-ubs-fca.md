@@ -8,13 +8,13 @@ cover_label: "AML enforcement"
 cover_motif: gavel
 cover_palette: dark
 published: 2026-11-12
-updated: 2026-11-12
+updated: 2026-11-26
 author: andrii-klymenko
 takeaways:
   - "FinCEN assessed a $1.2 billion penalty on Bank of America on 13 October 2026 and credited the OCC's $750 million penalty against it, so $450 million is payable under FinCEN's consent order."
   - "FinCEN says Bank of America missed or delayed reporting of over $5 billion of suspicious activity between January 2018 and July 2025; the bank admitted willful Bank Secrecy Act violations."
   - "OFAC settled 475 apparent sanctions violations with Bank of America for $11,662,930 on the same day."
-  - "FinCEN fined UBS Financial Services $125 million on 3 August 2026 after more than 50,000 foreign currency wires worth over $10 billion went unmonitored, years after a 2018 order over the same gap."
+  - "FinCEN fined UBS Financial Services $125 million on 3 August 2026 after more than 61,500 foreign currency wires worth more than $10.5 billion went unmonitored, years after a 2018 order over the same gap."
   - "Corlytics counted 25 fines of $1 million or more worldwide in Q3 2026, worth roughly $2 billion, according to FinTech Global."
 topics: [AML Enforcement, Transaction Monitoring, FinCEN, Sanctions Screening, Correspondent Banking]
 provider_slugs: []
@@ -35,7 +35,7 @@ faq:
   - q: "Why was Bank of America fined by FinCEN?"
     a: "FinCEN found that the bank did not maintain an AML program meeting the Bank Secrecy Act's minimum requirements, did not conduct required due diligence on correspondent accounts for foreign financial institutions, and did not file suspicious activity reports on time. The bank admitted the violations were willful."
   - q: "Why did FinCEN fine UBS Financial Services $125 million?"
-    a: "FinCEN says UBSFS failed to monitor over 50,000 foreign currency wires worth more than $10 billion, did not assess source of wealth and money laundering risk for some high-risk customers, and filed hundreds of suspicious transaction reports late. It had already been penalised $14.5 million in 2018, partly over foreign currency wire monitoring."
+    a: "FinCEN says UBSFS failed to monitor more than 61,500 foreign currency wires worth more than $10.5 billion, did not assess source of wealth and money laundering risk for some high-risk customers, and filed hundreds of suspicious transaction reports late. It had already been penalised $14.5 million in 2018, partly over foreign currency wire monitoring."
   - q: "Which firms did the FCA restrict in October 2026?"
     a: "Kingscrown Finance Ltd, MOMSB Ltd, Momentus Capital Ltd, Grosvenor Funding Ltd, Grosvenor Funding (North West) Ltd and Abbital Ltd, all unregulated lenders registered as Annex 1 firms. The restrictions were imposed at each firm's request after the FCA raised concerns about their AML controls. They are not fines."
   - q: "How many large regulatory fines were issued in Q3 2026?"
@@ -117,7 +117,7 @@ FinCEN's order now requires four independent reviews paid for by the bank: a SAR
 
 On 3 August 2026 [FinCEN assessed $125 million](https://www.fincen.gov/news/news-releases/fincen-assesses-historic-125-million-penalty-against-ubs-financial-services-inc) on UBS Financial Services Inc. (UBSFS), which it describes as the largest BSA penalty ever imposed on a broker-dealer. It is FinCEN's second action against the firm. A December 2018 consent order had imposed $14.5 million, in part for not monitoring foreign currency wires.
 
-FinCEN says the same weakness in an automated monitoring system then left over 50,000 foreign currency wires, worth more than $10 billion, unmonitored after UBSFS had promised to fix it. FinCEN also found that the firm did not assess source of wealth and money laundering risk for some high-risk customers with ties to Russia and Latin America, ignored negative news alleging corruption, fraud and money laundering, and reported hundreds of suspicious transactions late. UBSFS admitted willful violations. It must commission a third-party lookback and an independent review of its AML program, and FinCEN will waive up to $15 million of the expenses once that work is completed to its satisfaction.
+FinCEN says the same weakness in an automated monitoring system then left more than 61,500 foreign currency wires, worth more than $10.5 billion, unmonitored after UBSFS had promised to fix it. FinCEN also found that the firm did not assess source of wealth and money laundering risk for some high-risk customers with ties to Russia and Latin America, ignored negative news alleging corruption, fraud and money laundering, and reported hundreds of suspicious transactions late. UBSFS admitted willful violations. It must commission a third-party lookback and an independent review of its AML program, and FinCEN will waive up to $15 million of the expenses once that work is completed to its satisfaction.
 
 ## FCA: six Annex 1 lenders restricted
 
