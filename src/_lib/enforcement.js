@@ -21,10 +21,10 @@ export const FAILURES = {
 
 export const FIRM_TYPES = ["bank", "broker", "msb", "emi", "payment", "neobank", "vasp", "card", "casino", "individual", "other"];
 export const NON_BANK = new Set(["broker", "msb", "emi", "payment", "neobank", "vasp", "card", "casino", "other"]);
-export const ACTIONS = ["penalty", "settlement", "restriction", "licence_revoked", "cease_and_desist", "order_no_penalty"];
+export const ACTIONS = ["penalty", "settlement", "restriction", "licence_revoked", "cease_and_desist", "order_no_penalty", "formal_agreement"];
 export const POSITIONS = ["admitted", "neither_admit_nor_deny", "contested", "not_stated"];
 export const LEVELS = ["order", "press_notice", "media"];
-export const DOC_TYPES = ["consent_order", "assessment", "final_notice", "settlement_notice", "enforcement_release", "decision", "press_release_only"];
+export const DOC_TYPES = ["consent_order", "formal_agreement", "assessment", "final_notice", "settlement_notice", "enforcement_release", "decision", "press_release_only"];
 // Regulators whose documents are US federal works (verbatim excerpts allowed at any length).
 export const FEDERAL = new Set(["fincen", "ofac", "occ", "fed", "fdic"]);
 

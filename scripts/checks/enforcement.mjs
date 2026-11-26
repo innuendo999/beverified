@@ -68,7 +68,7 @@ for (const it of items) {
   // Visible text: no en or em dashes.
   const visible = [it.firm, it.payment_note, it.position_note, it.repeat_note, it.document?.title,
     ...(it.findings || []).flatMap((f) => [f.text, f.pin]),
-    ...(it.requirements || []).flatMap((f) => [f.text, f.pin]), it.parallel_note, it.ranking_override_note,
+    ...(it.requirements || []).flatMap((f) => [f.text, f.pin]), it.parallel_note, it.ranking_override_note, it.status_note,
     ...(it.earlier || []).flatMap((e) => (typeof e === "object" ? [e.title, e.pin] : []))];
   for (const v of visible) if (v && DASH.test(v)) err(id, `dash in visible text: "${v}"`);
 
