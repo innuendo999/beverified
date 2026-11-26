@@ -1,6 +1,6 @@
 # BeVerified AML Fines Tracker: specification
 
-Status: draft for owner approval (26 Nov 2026). Nothing in this file is built yet.
+Status: draft for owner approval (26 Nov 2026; owner answered the open questions the same day). Nothing in this file is built yet.
 
 ## 1. What it is
 
@@ -14,24 +14,28 @@ Owner decisions (26 Nov 2026):
 | URL | `/aml-fines/`; yearly reports at `/aml-fines/2025/`, `/aml-fines/2026/` |
 | H1 | AML Fines Tracker: Money Laundering Enforcement Against Banks and Fintechs |
 | Title tag | AML Fines Tracker 2026: Bank and Fintech Money Laundering Penalties \| BeVerified (year changes on 1 January) |
-| Firms | All financial firms (scope B); headline figures also computed for non-banks |
+| Firms | All financial firms (scope B), plus individuals at those firms; headline figures also computed for non-banks |
 | Period | From 1 January 2025 |
 | Non-monetary actions | Included, marked as non-monetary |
 | Sources | No "Sources" column and no inline text links: the document is shown as a document (section 7) |
+| Individuals | Included (e.g. an MLRO fined by the FCA), firm type `individual` |
+| DOJ criminal resolutions | Not included |
+| Data licence | CC BY 4.0 for the CSV and JSON |
+| Reports | Yearly report only; no quarterly summaries |
 
 ## 2. Scope
 
 **In:**
+- Individuals: officers and employees of financial firms (e.g. a money laundering reporting officer) penalised by a listed regulator for AML, KYC or sanctions failures. Firm type `individual`; the entry names the person only as the regulator's published document does.
 - Firms: banks and credit unions, broker-dealers and investment firms, money services businesses and money transmitters, e-money and payment institutions, neobanks, crypto exchanges and other VASPs, card and payment processors, casinos only when the action is taken by a listed financial regulator (e.g. FinCEN).
 - Actions: a final action by a listed regulator (section 3) for failures in AML/CFT programmes, customer due diligence, transaction monitoring, suspicious activity reporting, sanctions compliance, Travel Rule or beneficial ownership checks. Monetary (fine, civil money penalty, settlement) and non-monetary (restriction, voluntary requirement imposed at the regulator's request, licence revocation, cease and desist, consent order without a penalty).
 
 **Out:**
 - Non-financial firms, even when penalised by a listed regulator (e.g. OFAC penalties on exporters or logistics firms).
+- Criminal resolutions by the DOJ or other prosecutors (plea agreements, deferred or non-prosecution agreements), even when they run alongside a listed regulator's action. The regulator's action is recorded; the criminal resolution is not.
 - Proposed actions, warning notices, allegations, lawsuits, actions under appeal before a final decision (an appeal after a final decision is shown on the entry).
 - Market abuse, conduct, consumer protection and cybersecurity actions with no AML, KYC or sanctions finding (e.g. NYDFS cybersecurity settlements).
 - A vendor we review that is itself penalised: goes to `/incidents/`, with a cross-link here only if it also fits this scope.
-
-Open questions for the owner are in section 13.
 
 ## 3. Regulators
 
@@ -47,9 +51,14 @@ Launch set: regulators whose lists and documents our tools could read on 26 Nov 
 | FCA | UK | No: robots.txt blocks our fetch tool; RSS already used by the news collector | RSS + final notice; owner checks in a browser when a document cannot be fetched |
 | OFSI | UK | Not tested | |
 | Central Bank of Ireland | EU | Yes: press releases (e.g. Coinbase Ireland, 22 Oct 2026) | Release + public statement / settlement notice |
+| FINRA | US | No: robots.txt blocks our fetch tool | Disciplinary actions under Rule 3310 (broker-dealer AML) |
+| FDIC | US | No: request refused from the session | Enforcement orders |
+| HMRC | UK | No: request refused from the session (gov.uk list of businesses that did not comply with the Money Laundering Regulations) | Published penalty lists (UK MSBs and other supervised businesses) |
+| CSSF | EU (LU) | No: robots.txt blocks our fetch tool | Administrative sanctions |
+| ACPR | EU (FR) | No: request refused from the session | Sanctions committee decisions |
 | Bank of Lithuania, DNB, BaFin, FIAU Malta | EU | No: request refused from the session | Re-test from Actions; added only if readable |
 
-Proposed additions (owner decides, section 13): FINRA (broker-dealer AML under Rule 3310), FDIC, HMRC (supervises UK MSBs), CSSF Luxembourg, ACPR France.
+FINRA, FDIC, HMRC, CSSF and ACPR were added to the set by the owner on 26 Nov 2026. Like every source here, each goes live on the page only after its list and documents are readable from GitHub Actions or checked by the owner in a browser.
 
 Rule: a regulator is listed on the page ("Regulators we track") with the date we started tracking it. Figures never claim coverage of a regulator that is not listed.
 
@@ -70,7 +79,7 @@ items:
   case_id: bofa-2026-10
   firm: Bank of America, N.A.
   firm_group: Bank of America             # for repeat findings across entities
-  firm_type: bank                         # bank | broker | msb | emi | payment | neobank | vasp | card | casino | other
+  firm_type: bank                         # bank | broker | msb | emi | payment | neobank | vasp | card | casino | individual | other
   country: US                             # firm's country as named in the document
   regulator: fincen                       # key from src/_data/regulators.yml
   date: '2026-10-13'                      # date the document was signed or issued
@@ -165,7 +174,7 @@ Computed from the data at build time, never typed. Each is a sentence with its p
 - Share of repeat findings.
 - Largest action in the period.
 
-The quick answer uses one of them. The yearly report pages (`/aml-fines/2026/`) hold the full set for that year and are the material for distribution.
+The quick answer uses one of them. The yearly report pages (`/aml-fines/2025/`, `/aml-fines/2026/`) hold the full set for that year and are the material for distribution. There are no quarterly summaries (owner, 26 Nov 2026). Figures for individuals are shown separately and never added to firm totals.
 
 ## 10. Page outline
 
@@ -175,9 +184,9 @@ The quick answer uses one of them. The yearly report pages (`/aml-fines/2026/`) 
 4. The full table: date, firm, firm type, regulator, action, amount (USD and original), failures, repeat marker. Each row expands into the document view (section 7). Filters: regulator, firm type, failure, year, monetary or not. The full list is in static HTML; filters only narrow it with JS.
 5. "What failed, and what to check in a vendor": one short block per failure type, built from the findings, with a link to the matching ranking.
 6. "Why fintechs get fined": the topic section, written only from findings in the data.
-7. FAQ (recent AML fines, BSA penalties, OFAC penalties, AML fines in 2026), inclusion rules, regulators we track, corrections policy, CSV and JSON download, changelog.
+7. FAQ (recent AML fines, BSA penalties, OFAC penalties, AML fines in 2026), inclusion rules, regulators we track, corrections policy, CSV and JSON download under CC BY 4.0 (re-users credit "BeVerified AML Fines Tracker" with a link), changelog.
 
-Look: the register style of `/incidents/`. Design canvas before any build. JSON-LD: `Dataset` (with `distribution` for CSV and JSON) and `FAQPage`.
+Look: the register style of `/incidents/`. Design canvas before any build. JSON-LD: `Dataset` (with `distribution` for CSV and JSON and `license` set to CC BY 4.0) and `FAQPage`.
 
 Keyword map (Ahrefs, US, 26 Nov 2026): fintech money laundering 150 → topic and quick answer; bsa violation penalties 50 and ofac penalties 40 → FAQ and filter; recent aml fines 40 → "Recent actions"; aml fines 2026 20 → yearly figures; brand fine queries → rows (news items from USD 5M link to the row).
 
@@ -185,19 +194,20 @@ Keyword map (Ahrefs, US, 26 Nov 2026): fintech money laundering 150 → topic an
 
 - Rule `enforcement` in `scripts/news/sources.yml` routes small fines to `digest`, which was never built. New route `tracker`: the drafting task writes the entry (section 5, findings and pins included) from the document and opens a PR; the owner merges.
 - From USD 5M, the task also writes a news item as now, and the news item links to the entry.
-- Sources to add to the collector: FinCEN enforcement list, NYDFS press releases, OCC monthly releases, Central Bank of Ireland press releases.
+- Sources to add to the collector: FinCEN enforcement list, NYDFS press releases, OCC monthly releases, Central Bank of Ireland press releases; FINRA, FDIC, HMRC, CSSF and ACPR once readable from Actions.
+- The yearly report is written in January for the year before (first: `/aml-fines/2025/`, then `/aml-fines/2026/` in January 2027).
 
 ## 12. Corrections
 
 Same as the incident tracker: a firm or regulator can ask for a correction by email (prefilled link per entry); accepted corrections are shown on the entry with a date. No response deadline is promised.
 
-## 13. Open questions for the owner
+## 13. Owner decisions on the open questions (26 Nov 2026)
 
-1. Actions against individuals (e.g. an MLRO fined by the FCA): in, as a separate firm type `individual`, or out?
-2. Criminal resolutions by the DOJ (plea agreements, deferred prosecution) that run alongside a listed regulator's action: in as part of the case, or out?
-3. Add FINRA, FDIC, HMRC, CSSF and ACPR to the launch set?
-4. Licence for the CSV and JSON (e.g. CC BY 4.0, which asks re-users to credit BeVerified)?
-5. Summary cadence: quarterly news item plus the yearly report, or yearly only?
+1. Actions against individuals: included, firm type `individual`, figures shown separately.
+2. DOJ criminal resolutions: not included.
+3. FINRA, FDIC, HMRC, CSSF and ACPR: added to the set (live only once readable, section 3).
+4. Data licence: CC BY 4.0.
+5. Reports: yearly only.
 
 ## 14. Phases (one PR each)
 
@@ -206,4 +216,4 @@ Same as the incident tracker: a firm or regulator can ask for a correction by em
 3. Design canvas for the page and the document view.
 4. Page build, CSV and JSON, JSON-LD.
 5. Pipeline route `tracker`.
-6. First yearly report (`/aml-fines/2025/`) and the 2026 report in January 2027.
+6. First yearly report (`/aml-fines/2025/`) when the 2025 data is complete; the 2026 report in January 2027.
