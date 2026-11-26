@@ -1,5 +1,78 @@
 {
-  "generated": null,
-  "docs": {},
+  "generated": "2026-11-26",
+  "docs": {
+    "fincen-2026-03": {
+      "sha256": "fafad48328f8b899e01a2ebf21b741f9a9901d5f7288d494cfab3b72bd97671d",
+      "pages": 95,
+      "format": "pdf",
+      "bytes": 1062673,
+      "link_status": "ok",
+      "checked": "2026-11-26",
+      "excerpts_checked": 3,
+      "excerpts_missing": [],
+      "archive_url": "https://web.archive.org/web/20261116034934/https://www.fincen.gov/system/files/2026-10/BoA-Consent-Order-Execution-Final.pdf",
+      "archived": "2026-11-16"
+    },
+    "ofac-2026-10-13-bank-of-america": {
+      "sha256": "4350da2698cf9bebb238cd563c6f149d71f73d56bb696f035911f5a9465dcc99",
+      "pages": 6,
+      "format": "pdf",
+      "bytes": 239775,
+      "link_status": "ok",
+      "checked": "2026-11-26",
+      "excerpts_checked": 4,
+      "excerpts_missing": [],
+      "archive_url": "https://web.archive.org/web/20261014172324/https://ofac.treasury.gov/media/937231/download?inline",
+      "archived": "2026-10-14"
+    },
+    "nydfs-2026-10-15-seb": {
+      "sha256": "0da3bb8177dd6a8ffccef673795c86ab00dc204442c907eab8f2db4f67eac976",
+      "pages": 28,
+      "format": "pdf",
+      "bytes": 371249,
+      "link_status": "ok",
+      "checked": "2026-11-26",
+      "excerpts_checked": 3,
+      "excerpts_missing": [],
+      "archive_url": "https://web.archive.org/web/20261017000028/https://www.dfs.ny.gov/system/files/documents/2026/10/ea20261015-order-skandinaviska-enskilda-banken-ab.pdf",
+      "archived": "2026-11-26"
+    },
+    "fincen-2026-02": {
+      "sha256": "b074af9d2bb7617d7cd56041b83ea62376a40460dc769e4521db84bf417f4f16",
+      "pages": 55,
+      "format": "pdf",
+      "bytes": 448975,
+      "link_status": "ok",
+      "checked": "2026-11-26",
+      "excerpts_checked": 5,
+      "excerpts_missing": [],
+      "archive_url": "https://web.archive.org/web/20261001045005/https://www.fincen.gov/system/files/2026-07/UBS-Consent-Order.pdf",
+      "archived": "2026-10-01"
+    },
+    "ofac-2026-03-17-tradestation": {
+      "sha256": "d14302b0db2bbca14d552493a6353a6525f55d89452962309bd2898f97f3ecb3",
+      "pages": 5,
+      "format": "pdf",
+      "bytes": 301982,
+      "link_status": "ok",
+      "checked": "2026-11-26",
+      "excerpts_checked": 5,
+      "excerpts_missing": [],
+      "archive_url": "https://web.archive.org/web/20261011005601/https://ofac.treasury.gov/media/935351/download?inline",
+      "archived": "2026-10-11"
+    },
+    "fincen-2026-01": {
+      "sha256": "a3e8e0de3cdfe64a21e9d405471171d31e327c5f4a56a8bb4d53a6d4f3c05d92",
+      "pages": 53,
+      "format": "pdf",
+      "bytes": 455781,
+      "link_status": "ok",
+      "checked": "2026-11-26",
+      "excerpts_checked": 4,
+      "excerpts_missing": [],
+      "archive_url": "https://web.archive.org/web/20261001044956/https://www.fincen.gov/system/files/2026-03/Canaccord-Consent-Order-No-2026-01.pdf",
+      "archived": "2026-10-01"
+    }
+  },
   "fx": {}
 }
