@@ -3,7 +3,7 @@
 // amount and the ECB rate stored by scripts/enforcement/fetch.mjs, case totals from the rows.
 
 export const FAILURES = {
-  aml_programme: { label: "AML programme and governance", rankings: ["aml"] },
+  aml_programme: { label: "AML program and governance", rankings: ["aml"] },
   risk_assessment: { label: "Risk assessment", rankings: ["aml"] },
   cdd: { label: "Customer due diligence and KYC", rankings: ["kyc", "identity-verification"] },
   edd: { label: "Enhanced due diligence (high-risk, PEP)", rankings: ["aml"] },
@@ -14,6 +14,7 @@ export const FAILURES = {
   sanctions: { label: "Sanctions screening", rankings: ["aml"] },
   travel_rule: { label: "Travel Rule", rankings: ["travel-rule"] },
   crypto_controls: { label: "Crypto-specific controls", rankings: ["crypto"] },
+  registration: { label: "Registration and licensing", rankings: [] },
   records: { label: "Record keeping and reporting other than SARs", rankings: [] },
   remediation: { label: "Failure to fix earlier findings", rankings: [] },
 };
