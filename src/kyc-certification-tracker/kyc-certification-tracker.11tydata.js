@@ -2,6 +2,7 @@
 // Rows, filters and export: src/_lib/cert-tracker.js from provider records. Page settings: src/_data/certTracker.yml.
 // CSV/JSON: tracker-csv.njk, tracker-json.njk. Spec: docs/cert-tracker.md.
 import { COLUMNS, rows, filters, exportRows, toCsv } from "../_lib/cert-tracker.js";
+import { guillocheLines } from "../_lib/aml-fines-page.js";
 
 export default {
   permalink: "/kyc-certification-tracker/",
@@ -13,6 +14,21 @@ export default {
     list: (d) => rows(d),
     filters: (d) => filters(rows(d)),
     confirmedCount: (d) => rows(d).filter((r) => r.okKeys).length,
+    // 2026-11 redesign (AML Fines Tracker style): column counts, hero card figures, row filter keys. All derived.
+    ct: (d) => {
+      const l = rows(d);
+      const all = l.flatMap((r) => r.entries);
+      const ok = l.filter((r) => r.cells.some((c) => c.kind === "ok")).length;
+      return {
+        guilloche: guillocheLines(),
+        cols: COLUMNS.map((c) => ({ ...c, ok: l.filter((r) => r.cells.some((x) => x.key === c.key && x.kind === "ok")).length })),
+        okProviders: ok, noOk: l.length - ok,
+        nConfirmed: all.filter((e) => e.status === "confirmed").length,
+        nStated: all.filter((e) => e.status === "vendor_stated").length,
+        has: Object.fromEntries(l.map((r) => [r.slug, r.cells.filter((c) => c.kind !== "none").map((c) => c.key).join(" ")])),
+        okAny: Object.fromEntries(l.map((r) => [r.slug, r.cells.filter((c) => c.kind === "ok").map((c) => c.key).join(" ")])),
+      };
+    },
     sourcesMain: (d) => (d.certTracker?.sources || []).filter((s) => !s.checked),
     sourcesOther: (d) => (d.certTracker?.sources || []).filter((s) => s.checked),
     changeList: (d) => (d.certTracker?.changes || []).map((c) => ({ ...c, name: d.allProviders?.[c.slug]?.name || c.slug })),

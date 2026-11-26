@@ -22,7 +22,7 @@ items:
   slug: chainalysis
   vendor: Chainalysis
   date: '2026-10-30'
-  occurred: 'Activity detected in Oct 2026; disclosed 30 Oct 2026; wider exposure found 2 Nov and disclosed 4 Nov 2026'
+  occurred: 'Activity detected in Oct 2026; disclosed Oct 30, 2026; wider exposure found Nov 2 and disclosed Nov 4, 2026'
   type: breach
   sensitivity: medium
   status: investigating
@@ -54,7 +54,7 @@ items:
   slug: relycomply
   vendor: RelyComply
   date: '2026-09-16'
-  occurred: 'Unauthorised access found 8 Sep 2026; disclosed 16 Sep 2026'
+  occurred: 'Unauthorised access found Sep 8, 2026; disclosed Sep 16, 2026'
   type: security_incident
   sensitivity: high
   status: contained
@@ -81,7 +81,7 @@ items:
   slug: yoti
   vendor: Yoti
   date: '2026-03-10'
-  occurred: 'AEPD investigation opened Dec 2023; fine published 10 Mar 2026'
+  occurred: 'AEPD investigation opened Dec 2023; fine published Mar 10, 2026'
   type: regulatory
   sensitivity: high
   status: litigation
@@ -89,7 +89,7 @@ items:
   confirmed_by: Spain's data protection authority (AEPD), reported by trade press
   timeline:
   - {when: 'Dec 2023', what: AEPD opens its investigation}
-  - {when: 'Mar 10, 2026', what: AEPD fines Yoti €950,000}
+  - {when: 'Mar 10, 2026', what: 'AEPD fines Yoti €950,000'}
   - {when: 'Apr 2026', what: Fine suspended while the appeal is heard}
   - {when: 'Sep 10, 2026', what: Yoti removes its Digital ID app from Spanish app stores}
   customer_actions: []
@@ -120,7 +120,7 @@ items:
   slug: idmerit
   vendor: IDMERIT
   date: '2026-02-20'
-  occurred: 'Reported 20 Feb 2026'
+  occurred: 'Reported Feb 20, 2026'
   type: exposure
   sensitivity: high
   status: disputed
@@ -129,7 +129,6 @@ items:
   timeline:
   - {when: 'Feb 20, 2026', what: Reported by Cybernews}
   - {when: After disclosure, what: Database reportedly secured}
-  - {when: Open, what: Scope not confirmed}
   title: Researchers report an unsecured database linked to IDMERIT; the company disputes it
   summary: Cybernews researchers said they found an unsecured server they believed was tied to IDMERIT, with about 1 billion records containing personal data such as names, dates of birth, addresses and national ID numbers across at least 26 countries. The database was reportedly secured after disclosure.
   data: [Names and dates of birth, Addresses and contact details, National ID numbers]
@@ -170,7 +169,7 @@ items:
   slug: sumsub
   vendor: Sumsub
   date: '2026-02-04'
-  occurred: 'Access from Jul 2024; found Jan 2026; disclosed 4 Feb 2026'
+  occurred: 'Access from Jul 2024; found Jan 2026; disclosed Feb 4, 2026'
   type: security_incident
   sensitivity: medium
   status: contained
@@ -195,7 +194,7 @@ items:
   slug: veriff
   vendor: Veriff
   date: '2025-12-10'
-  occurred: 'Access around 18 Nov 2025; affected people listed 10 Dec 2025; notices from 9 Jan 2026'
+  occurred: 'Access around Nov 18, 2025; affected people listed Dec 10, 2025; notices from Jan 9, 2026'
   type: breach
   sensitivity: high
   status: litigation
@@ -231,7 +230,7 @@ items:
   slug: signzy
   vendor: Signzy
   date: '2024-12-03'
-  occurred: 'Reported attack in late Nov 2024; reported 3 Dec 2024'
+  occurred: 'Reported attack in late Nov 2024; reported Dec 3, 2024'
   type: security_incident
   sensitivity: medium
   status: investigating
@@ -240,7 +239,6 @@ items:
   timeline:
   - {when: Late Nov 2024, what: 'Attack, as reported'}
   - {when: 'Dec 3, 2024', what: Reported in the press}
-  - {when: 'Nov 5, 2026', what: No findings published yet}
   title: Cyberattack reported at Signzy
   summary: TechCrunch, citing multiple sources, reported that Signzy was hit by a cyberattack in late November 2024. India's CERT-In said it was aware of the incident. The data involved was not disclosed.
   data: [Not publicly disclosed]
@@ -256,7 +254,7 @@ items:
   slug: ondato
   vendor: Ondato
   date: '2024-07-24'
-  occurred: 'Leak on 24 Jul 2024; reported to the Estonian regulator; decision published 2025'
+  occurred: 'Leak on Jul 24, 2024; reported to the Estonian regulator; decision published 2025'
   type: breach
   sensitivity: high
   status: resolved
