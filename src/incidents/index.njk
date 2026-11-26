@@ -1,192 +1,255 @@
 ---
 layout: v3.njk
 ---
-{#- Security incident tracker (owner approved the design canvas "BeVerified: Incident tracker, UX proposal", 2026-11-20).
-    Data: src/_data/incidents.yml; rows, filters, lookup and export: src/_lib/incidents.js via incidents.11tydata.js.
-    Rows are <details>, so every entry opens without JS; the vendor check and the filters need JS and stay hidden without it.
-    No sources list and no score paragraph inside an entry (owner): sources are in the CSV/JSON download. -#}
-<main id="main" class="container reg">
-  <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li class="sep" aria-hidden="true">›</li><li aria-current="page">Incident tracker</li></ol></nav>
-
-  <div class="reg-top">
-    <header class="reg-head">
-      <h1 class="reg-head__title">Security incidents at the identity and AML vendors we review</h1>
-      <p class="reg-head__lede">Breaches, data exposures and regulatory actions since 2024. Each entry shows what was exposed, who confirmed it, what the vendor says and whether it lowers the vendor's score.</p>
-      <p class="reg-head__meta num">{{ list.length }} entries. Sources checked <time datetime="{{ incidents.checked | iso }}">{{ incidents.checked | displayDate }}</time>. <a href="#reuse">Download CSV or JSON</a></p>
-    </header>
-
-    <form class="reg-check" role="search" data-reg-check hidden>
-      <label for="reg-q" class="reg-check__label">Check a vendor</label>
-      <p class="reg-check__hint">Any of the {{ reviewedCount }} vendors we review.</p>
-      <input id="reg-q" class="reg-check__input" type="text" autocomplete="off" spellcheck="false" placeholder="Type a vendor name">
-      <div class="reg-check__out" aria-live="polite" data-reg-out data-reg-dir="/providers/"><p class="c-muted">The answer shows here: entries for that vendor, or that we found none.</p></div>
-    </form>
-  </div>
-
-  <div class="reg-bar" data-reg-filters hidden>
-    <span class="reg-bar__label" id="reg-show">Show</span>
-    <div class="reg-filters" role="group" aria-labelledby="reg-show">
-      {%- for f in filters %}
-      <button type="button" class="reg-filter num" data-filter="{{ f.key }}" aria-pressed="{{ 'true' if loop.first else 'false' }}">{{ f.label }} <span>{{ f.count }}</span></button>
-      {%- endfor %}
+{#- KYC and AML Vendor Incident Tracker. Redesigned in the AML Fines Tracker style (owner approved the canvas pages
+    "Incidents" in "BeVerified: AML Fines Tracker page, design proposal", 27 Nov 2026; H1 approved the same day).
+    Data: src/_data/incidents.yml; rows, filters, lookup, view and export: src/_lib/incidents.js via incidents.11tydata.js.
+    Without JS every entry is shown, one under another, and the list links to them; with JS the list selects one entry
+    into the pane, and the vendor search and filter appear. Sources are in the CSV/JSON download (owner). -#}
+{%- set s = inc.stats -%}
+<main id="main" class="af inc" data-inc>
+  <div class="af-top">
+    <svg class="af-top__guilloche" viewBox="0 0 1280 460" preserveAspectRatio="none" aria-hidden="true" focusable="false">{% for g in inc.guilloche %}<path d="{{ g.d }}"{% if g.strong %} class="is-strong"{% endif %}/>{% endfor %}</svg>
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li class="sep" aria-hidden="true">›</li><li aria-current="page">Incident tracker</li></ol></nav>
+      <header class="af-hero">
+        <div class="af-hero__text">
+          <h1 class="af-hero__title">KYC and AML Vendor Incident Tracker</h1>
+          <p class="af-hero__sub">Data breaches, exposures and regulatory actions at identity verification and AML vendors since {{ s.since }}. Each entry shows what was exposed, who confirmed it, what the vendor says and whether it lowers the vendor's score.</p>
+          <p class="af-hero__cta"><a class="btn btn--primary" href="#entries">See the {{ s.total }} incidents</a><a class="btn btn--secondary" href="#reuse">Download the data</a></p>
+          <p class="af-hero__meta">Sources checked <time datetime="{{ incidents.checked | iso }}">{{ incidents.checked | displayDate }}</time>. Vendors can ask for a <a href="#appeals">correction or appeal</a> on every entry.</p>
+        </div>
+        <aside class="af-card" aria-labelledby="inc-card-h">
+          <div class="af-card__body">
+            <h2 id="inc-card-h" class="af-card__title">Since {{ s.since }}</h2>
+            <p class="af-card__big num">{{ s.total }}</p>
+            <p class="af-card__note num">incidents at {{ s.vendors }} vendors, newest {{ s.newest }}.</p>
+            <dl class="af-card__rows num">
+              <div><dt>ID documents, biometrics or ID numbers exposed</dt><dd>{{ s.idData }}</dd></div>
+              <div><dt>Lower a vendor's score now</dt><dd>{{ s.lowers }}</dd></div>
+              <div><dt>Not settled yet</dt><dd>{{ s.open }}</dd></div>
+            </dl>
+          </div>
+          <div class="af-mrz" aria-hidden="true"><div>{{ ["INCD", "SINCE", s.since, "", s.total, "ENTRIES"] | join("<") | mrzLine }}</div><div>{{ ["CHECKED", incidents.checked | iso | replace("-", ""), "", "BEVERIFIED", "ORG"] | join("<") | mrzLine }}</div></div>
+        </aside>
+      </header>
     </div>
-    <label class="visually-hidden" for="reg-fsel">Show</label>
-    <select id="reg-fsel" class="reg-fsel" data-reg-fsel>
-      {%- for f in filters %}<option value="{{ f.key }}">{{ f.label }} ({{ f.count }})</option>{% endfor %}
-    </select>
   </div>
-  <p class="reg-key">{% icon "id-card", "", 18 %}<span><b>ID data</b> = ID document images, biometrics or national ID numbers</span></p>
+  <div class="container">
+    <div class="af-micro" aria-hidden="true"></div>
 
-  <section aria-labelledby="reg-h">
-    <h2 id="reg-h" class="visually-hidden">Register</h2>
-    <div class="reg-cols num" aria-hidden="true"><span>Reported</span><span>Vendor and what happened</span><span>What was exposed</span><span>Who confirms it</span><span>Now, and score effect</span><span></span></div>
-    <ol class="reg-list">
-      {%- for x in list %}
-      <li id="{{ x.id }}" class="reg-row" data-reg-keys="{{ x.filterKeys }}">
-        <details>
-          <summary>
-            <span class="reg-date num"><time datetime="{{ x.date | iso }}">{{ x.date | displayDate }}</time></span>
-            <span class="reg-what"><b>{{ x.vendor }}</b><span>{{ x.title }}</span></span>
-            <span class="reg-data">{% if x.idData %}<b class="reg-id">{% icon "id-card", "", 18 %}ID data</b>{% endif %}{{ x.dataText }}</span>
-            <span class="reg-conf">{{ x.confirmed_by }}</span>
-            <span class="reg-status num">{{ x.statusLabel }}<em>{{ x.scoreLine }}</em>{% if x.appealLabel %}<em>{{ x.appealLabel }}</em>{% endif %}</span>
-            <span class="reg-chev" aria-hidden="true">{% icon "chevron-down", "", 16 %}</span>
-          </summary>
-          <div class="reg-entry">
+    <div class="af-work" id="entries">
+      <section class="af-list" aria-labelledby="inc-list-h">
+        <h2 id="inc-list-h" class="visually-hidden">Incidents</h2>
+        <div class="af-tools" data-inc-tools hidden>
+          <label for="inc-q" class="visually-hidden">Check a vendor</label>
+          <input id="inc-q" class="af-search" type="search" autocomplete="off" spellcheck="false" placeholder="Check a vendor, e.g. Veriff or Sumsub" data-inc-q>
+          <div class="inc-answer" aria-live="polite" data-inc-answer hidden></div>
+          <div class="af-segs">
+            <div class="af-seg" role="group" aria-label="Show">
+              {%- for f in filters %}<button type="button" aria-pressed="{{ 'true' if loop.first else 'false' }}" data-inc-f="{{ f.key }}">{{ f.label }}</button>{% endfor %}
+            </div>
+          </div>
+          <p class="af-shown num" data-inc-shown>All {{ s.total }} incidents since {{ s.since }}</p>
+        </div>
+        {%- for y in inc.years %}
+        <div class="inc-year" data-inc-year>
+          <p class="inc-year__head"><span class="inc-year__name">{{ y.year }}</span><span class="inc-year__count num" data-inc-count>{{ y.count }} {{ "incident" if y.count == 1 else "incidents" }}</span></p>
+          <ol class="af-rows">
+            {%- for x in y.rows %}
+            <li data-inc-row data-id="{{ x.id }}" data-inc-keys="{{ x.filterKeys }}" data-inc-v="{{ x.vendor | lower }}">
+              <a class="af-row" href="#{{ x.id }}" data-inc-pick="{{ x.id }}">
+                <span class="af-row__top"><b>{{ x.vendor }}</b><span class="inc-row__type">{{ x.typeLabel }}</span></span>
+                <span class="inc-row__title">{{ x.title }}</span>
+                <span class="af-row__meta num"><span>{{ x.day }}{% if x.idData %} · <b class="inc-row__id">ID data</b>{% endif %}</span><span>{{ x.statusLabel }}</span></span>
+              </a>
+            </li>
+            {%- endfor %}
+          </ol>
+        </div>
+        {%- endfor %}
+        <p class="af-empty" data-inc-empty hidden>No entry matches. Clear the search or pick another filter.</p>
+      </section>
+
+      <div class="af-pane" data-inc-pane>
+        {%- for x in list %}
+        <article id="{{ x.id }}" class="af-doc{% if loop.first %} is-on{% endif %}" aria-labelledby="{{ x.id }}-h">
+          <header class="af-doc__head">
+            <span class="af-seal inc-seal" aria-hidden="true">{{ x.seal }}</span>
+            <div>
+              <p class="af-doc__reg num">{{ x.typeLabel }} · reported <time datetime="{{ x.date | iso }}">{{ x.day }}</time></p>
+              <h2 id="{{ x.id }}-h" class="af-doc__title inc-doc__vendor">{{ x.vendor }}</h2>
+              <p class="af-doc__line num">{{ x.occurred }}</p>
+            </div>
+          </header>
+          <div class="af-micro af-micro--doc" aria-hidden="true"></div>
+          <div class="af-doc__body">
+            <p class="inc-doc__title">{{ x.title }}</p>
+            {%- if x.idData %}<p class="inc-id">{% icon "id-card", "", 16 %}ID documents, biometrics or ID numbers exposed</p>{% endif %}
+            <table class="af-ledger">
+              <tbody>
+                <tr><th scope="row">Status</th><td class="is-strong">{{ x.statusLabel }}{% if x.appealLabel %}, {{ x.appealLabel | lower }}{% endif %}</td></tr>
+                <tr><th scope="row">Score effect</th><td class="num">{{ x.scoreLine }}</td></tr>
+                <tr><th scope="row">Confirmed by</th><td>{{ x.confirmed_by }}</td></tr>
+                <tr><th scope="row">Scale</th><td>{{ x.scale }}</td></tr>
+              </tbody>
+            </table>
+
             {%- if x.timeline and x.timeline.length %}
-            <ol class="reg-time num" aria-label="Timeline">
-              {%- for s in x.timeline %}<li><b>{{ s.when }}</b><span>{{ s.what }}</span></li>{% endfor %}
+            <h3 class="af-h3">Timeline</h3>
+            <ol class="inc-time num">
+              {%- for t in x.timeline %}<li{% if loop.last %} class="is-last"{% endif %}><b>{{ t.when }}</b><span>{{ t.what }}</span></li>{% endfor %}
             </ol>
             {%- endif %}
-            <div class="reg-split">
-              <div class="reg-side">
-                <h3>What the record shows</h3>
-                <p>{{ x.summary }}</p>
-                <dl class="reg-facts">
-                  <div><dt>Type</dt><dd>{{ x.typeLabel }}</dd></div>
-                  <div><dt>Scale</dt><dd>{{ x.scale }}</dd></div>
-                </dl>
+
+            <div class="inc-split">
+              <div>
+                <h3 class="af-h3">What the record shows</h3>
+                <p class="inc-p">{{ x.summary }}</p>
+                <p class="inc-exposed">Exposed: {{ x.dataText or "Not publicly disclosed" }}</p>
               </div>
-              <div class="reg-side reg-side--reply">
-                <h3>What {{ x.vendor }} says</h3>
-                <p>{{ x.response }}</p>
+              <div class="inc-reply">
+                <h3 class="af-h3">What {{ x.vendor }} says</h3>
+                <p class="inc-p">{{ x.response }}</p>
                 {%- if x.appeal %}
-                <p class="reg-appeal"><b>{{ x.appealLabel }}</b>{% if x.appeal.decided %}, <time datetime="{{ x.appeal.decided | iso }}">{{ x.appeal.decided | displayDate }}</time>{% endif %}. {{ x.appeal.note }}</p>
+                <p class="inc-p"><b>{{ x.appealLabel }}</b>{% if x.appeal.decided %}, <time datetime="{{ x.appeal.decided | iso }}">{{ x.appeal.decided | displayDate }}</time>{% endif %}. {{ x.appeal.note }}</p>
                 {%- endif %}
               </div>
             </div>
-            <div class="reg-more">
-              {%- if x.customer_actions and x.customer_actions.length %}
-              <h3>If you use {{ x.vendor }}</h3>
-              <p class="c-muted">What {{ x.vendor }} asked customers to do:</p>
-              <ul>{% for a in x.customer_actions %}<li>{{ a }}</li>{% endfor %}</ul>
-              {%- endif %}
-              <h3>Since then</h3>
-              <p>{{ x.since }}</p>
-              {%- if x.corrections and x.corrections.length %}
-              <h3>Corrections</h3>
-              <ul>{% for c in x.corrections %}<li><time datetime="{{ c.date | iso }}">{{ c.date | displayDate }}</time>: {{ c.change }}</li>{% endfor %}</ul>
-              {%- endif %}
-            </div>
-            <p class="reg-links">
-              {%- if x.news %}<a href="{{ x.news }}">Our report</a>{% endif %}
-              {%- if x.p %}<a href="/providers/{{ x.slug }}/">{{ x.vendor }} review</a>{% endif %}
-              <a href="#{{ x.id }}" data-reg-copy>Copy link to this entry</a>
-              <a href="{{ x.mailto }}">Correct or appeal</a>
-            </p>
-          </div>
-        </details>
-      </li>
-      {%- endfor %}
-    </ol>
-    <p class="reg-empty" data-reg-empty hidden>No entry matches this filter.</p>
-  </section>
 
-  <div class="reg-notes">
-    <section aria-labelledby="scope-h">
-      <h2 id="scope-h">What we include</h2>
-      <p>Breaches, exposures of personal data, confirmed security incidents and regulatory actions at vendors we review, reported since 2024. Lawsuits with no breach behind them and incidents at a vendor's customer that never touched the vendor's systems are left out. The vendor's own statement, official breach notices, regulators and courts come first; what a lawsuit claims is reported as a claim. Vendors we earn money from are treated the same way.</p>
-    </section>
-    <section aria-labelledby="score-h">
-      <h2 id="score-h">How it affects scores</h2>
-      <p>An entry from the last 24 months lowers the track record part of the vendor's score, as set out in <a href="/methodology/">our methodology</a>. Entries limited to a test system with no personal data, older than 24 months or about vendors we don't review are shown and not counted. Each row says which applies.</p>
-    </section>
-    <section id="appeals" aria-labelledby="ap-h">
-      <h2 id="ap-h">Corrections and appeals</h2>
-      <p>A vendor named here can ask us to correct a fact or appeal an entry. Use the link on the entry or write to <a href="mailto:support@beverified.org?subject=Incident%20tracker%3A%20correction%20or%20appeal">support@beverified.org</a> with the sentence you dispute, a source we can check and, if you want it shown, your response.</p>
-      <p>Accepted corrections are listed on the entry with their date. An appeal is shown while we review it, then as upheld, partly upheld or not upheld, with a short reason. An appeal removes an entry only if the source shows the incident did not happen at your company. Payment never changes an entry.</p>
+            {%- if x.customer_actions and x.customer_actions.length %}
+            <h3 class="af-h3">If you use {{ x.vendor }}</h3>
+            <p class="inc-p c-muted">What {{ x.vendor }} asked customers to do:</p>
+            <ul class="inc-list">{% for a in x.customer_actions %}<li>{{ a }}</li>{% endfor %}</ul>
+            {%- endif %}
+            <h3 class="af-h3">Since then</h3>
+            <p class="inc-p">{{ x.since }}</p>
+            {%- if x.corrections and x.corrections.length %}
+            <h3 class="af-h3">Corrections</h3>
+            <ul class="inc-list">{% for c in x.corrections %}<li><time datetime="{{ c.date | iso }}">{{ c.date | displayDate }}</time>: {{ c.change }}</li>{% endfor %}</ul>
+            {%- endif %}
+          </div>
+          <div class="af-doc__foot">
+            {%- if x.news %}<a href="{{ x.news }}">Our report</a>{% endif %}
+            {%- if x.p %}<a href="/providers/{{ x.slug }}/">{{ x.vendor }} review</a>{% endif %}
+            <a href="#{{ x.id }}" data-inc-copy>Copy link to this entry</a>
+            <a href="{{ x.mailto }}">Correct or appeal</a>
+          </div>
+          <div class="af-mrz" aria-hidden="true"><div>{{ x.mrz1 | mrzLine }}</div><div>{{ x.mrz2 | mrzLine }}</div></div>
+        </article>
+        {%- endfor %}
+      </div>
+    </div>
+
+    <div class="reg-notes inc-notes">
+      <section aria-labelledby="scope-h">
+        <h2 id="scope-h">What we include</h2>
+        <p>Breaches, exposures of personal data, confirmed security incidents and regulatory actions at vendors we review, reported since 2024. Lawsuits with no breach behind them and incidents at a vendor's customer that never touched the vendor's systems are left out. The vendor's own statement, official breach notices, regulators and courts come first; what a lawsuit claims is reported as a claim. Vendors we earn money from are treated the same way.</p>
+      </section>
+      <section aria-labelledby="score-h">
+        <h2 id="score-h">How it affects scores</h2>
+        <p>An entry from the last 24 months lowers the track record part of the vendor's score, as set out in <a href="/methodology/">our methodology</a>. Entries limited to a test system with no personal data, older than 24 months or about vendors we don't review are shown and not counted. Each entry says which applies.</p>
+      </section>
+      <section id="appeals" aria-labelledby="ap-h">
+        <h2 id="ap-h">Corrections and appeals</h2>
+        <p>A vendor named here can ask us to correct a fact or appeal an entry. Use the link on the entry or write to <a href="mailto:support@beverified.org?subject=Incident%20tracker%3A%20correction%20or%20appeal">support@beverified.org</a> with the sentence you dispute, a source we can check and, if you want it shown, your response.</p>
+        <p>Accepted corrections are listed on the entry with their date. An appeal is shown while we review it, then as upheld, partly upheld or not upheld, with a short reason. An appeal removes an entry only if the source shows the incident did not happen at your company. Payment never changes an entry.</p>
+      </section>
+    </div>
+
+    <section id="reuse" class="reg-reuse af-reuse" aria-labelledby="reuse-h">
+      <div>
+        <h2 id="reuse-h">Cite or reuse this data</h2>
+        <p>Free to reuse under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener">CC BY 4.0</a> with a link to this page. The download includes the source links for every entry. Cite as: BeVerified, “KYC and AML Vendor Incident Tracker”, checked {{ incidents.checked | displayDate }}.</p>
+      </div>
+      <p class="reg-reuse__btns"><a class="btn btn--secondary" href="/incidents/incidents.csv" download>Download CSV</a><a class="btn btn--secondary" href="/incidents/incidents.json" download>Download JSON</a></p>
     </section>
   </div>
-
-  <section id="reuse" class="reg-reuse" aria-labelledby="reuse-h">
-    <div>
-      <h2 id="reuse-h">Cite or reuse this data</h2>
-      <p>Free to reuse under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener">CC BY 4.0</a> with a link to this page. The download includes the source links for every entry. Cite as: BeVerified, “Security incidents at the identity and AML vendors we review”, checked {{ incidents.checked | displayDate }}.</p>
-    </div>
-    <p class="reg-reuse__btns"><a class="btn btn--secondary" href="/incidents/incidents.csv" download>Download CSV</a><a class="btn btn--secondary" href="/incidents/incidents.json" download>Download JSON</a></p>
-  </section>
 </main>
 
-<script type="application/json" id="reg-vendors">{{ lookupData | dump | safe }}</script>
+<script type="application/json" id="inc-vendors">{{ lookupData | dump | safe }}</script>
 <script>
 (() => {
-  const rows = [...document.querySelectorAll(".reg-row")];
-  const empty = document.querySelector("[data-reg-empty]");
-  const btns = [...document.querySelectorAll("[data-filter]")];
-  const sel = document.querySelector("[data-reg-fsel]");
-  const setFilter = (key) => {
-    let shown = 0;
-    rows.forEach((r) => { const on = key === "all" || r.dataset.regKeys.split(" ").includes(key); r.hidden = !on; if (on) shown++; });
-    btns.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.filter === key)));
-    if (sel) sel.value = key;
-    empty.hidden = shown > 0;
-  };
-  btns.forEach((b) => b.addEventListener("click", () => setFilter(b.dataset.filter)));
-  sel?.addEventListener("change", () => setFilter(sel.value));
-  document.querySelector("[data-reg-filters]").hidden = false;
-
-  const openEntry = (id) => {
-    const li = document.getElementById(id);
-    if (!li) return;
-    if (li.hidden) setFilter("all");
-    li.querySelector("details").open = true;
-    li.scrollIntoView({ block: "start" });
-  };
-  if (location.hash) openEntry(location.hash.slice(1));
-  window.addEventListener("hashchange", () => openEntry(location.hash.slice(1)));
-
-  document.querySelectorAll("[data-reg-copy]").forEach((a) => a.addEventListener("click", (e) => {
-    e.preventDefault();
-    const url = location.origin + location.pathname + a.getAttribute("href");
-    history.replaceState(null, "", a.getAttribute("href"));
-    navigator.clipboard?.writeText(url).then(() => { const t = a.textContent; a.textContent = "Link copied"; setTimeout(() => { a.textContent = t; }, 1600); }, () => {});
-  }));
-
-  const form = document.querySelector("[data-reg-check]");
-  const input = document.getElementById("reg-q");
-  const out = document.querySelector("[data-reg-out]");
-  const vendors = JSON.parse(document.getElementById("reg-vendors").textContent);
+  const root = document.querySelector("[data-inc]");
+  if (!root) return;
+  root.classList.add("af-js");
+  const docs = [...root.querySelectorAll(".af-doc")];
+  const rows = [...root.querySelectorAll("[data-inc-row]")];
+  const groups = [...root.querySelectorAll("[data-inc-year]")];
+  const q = root.querySelector("[data-inc-q]");
+  const out = root.querySelector("[data-inc-answer]");
+  const shown = root.querySelector("[data-inc-shown]");
+  const empty = root.querySelector("[data-inc-empty]");
+  const pane = root.querySelector("[data-inc-pane]");
+  const vendors = JSON.parse(document.getElementById("inc-vendors").textContent);
+  const total = rows.length, base = shown.textContent;
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-  const initial = out.innerHTML;
-  const dirHref = out.dataset.regDir;
-  const one = (v) => {
-    const review = v.r ? ' <a href="' + esc(v.h) + '">' + esc(v.n) + ' review</a>' : "";
-    if (!v.e.length) return `<p><b>${esc(v.n)}</b>: no entry in our register since 2024. We list only incidents with a public source, so no entry does not prove nothing happened.${review}</p>`;
-    const c = v.e.filter((x) => x.c).length;
-    const head = `${v.e.length} ${v.e.length === 1 ? "entry" : "entries"} since 2024, ${c ? `${c} lowering its score now` : "none lowering a score now"}.`;
-    return `<p><b>${esc(v.n)}</b>: ${head}</p>` + v.e.map((x) => `<p><a href="#${esc(x.id)}">${esc(x.d)}: ${esc(x.t)}</a></p>`).join("");
+  let filter = "all";
+  root.querySelector("[data-inc-tools]").hidden = false;
+
+  const select = (id, scroll) => {
+    if (!docs.some((d) => d.id === id)) return;
+    docs.forEach((d) => d.classList.toggle("is-on", d.id === id));
+    rows.forEach((r) => r.querySelector("a").setAttribute("aria-current", r.dataset.id === id ? "true" : "false"));
+    if (scroll && window.matchMedia("(max-width: 960px)").matches) pane.scrollIntoView({ behavior: "smooth", block: "start" });
   };
-  const answer = () => {
-    const q = input.value.trim().toLowerCase();
-    if (q.length < 2) { out.innerHTML = initial; return; }
-    const exact = vendors.filter((x) => x.n.toLowerCase() === q);
-    const starts = vendors.filter((x) => x.n.toLowerCase().startsWith(q));
-    const found = (exact.length ? exact : starts.length ? starts : vendors.filter((x) => x.n.toLowerCase().includes(q))).slice(0, 3);
-    if (!found.length) { out.innerHTML = '<p>We don\u2019t review a vendor by that name, so the register does not track it. <a href="' + dirHref + '">All reviewed vendors</a></p>'; return; }
-    out.innerHTML = found.map(one).join("");
+  root.addEventListener("click", (e) => {
+    const copy = e.target.closest("[data-inc-copy]");
+    if (copy) {
+      e.preventDefault();
+      const h = copy.getAttribute("href");
+      history.replaceState(null, "", h);
+      navigator.clipboard?.writeText(location.origin + location.pathname + h).then(() => { const t = copy.textContent; copy.textContent = "Link copied"; setTimeout(() => { copy.textContent = t; }, 1600); }, () => {});
+      return;
+    }
+    const a = e.target.closest("[data-inc-pick]");
+    if (!a) return;
+    e.preventDefault();
+    history.replaceState(null, "", "#" + a.dataset.incPick);
+    select(a.dataset.incPick, true);
+  });
+
+  const answer = (term) => {
+    if (term.length < 2) { out.hidden = true; out.innerHTML = ""; return; }
+    const exact = vendors.filter((v) => v.n.toLowerCase() === term);
+    const starts = vendors.filter((v) => v.n.toLowerCase().startsWith(term));
+    const found = (exact.length ? exact : starts.length ? starts : vendors.filter((v) => v.n.toLowerCase().includes(term))).slice(0, 2);
+    out.hidden = false;
+    if (!found.length) { out.innerHTML = "<p>We don’t review a vendor by that name, so the tracker does not follow it. <a href=\"/providers/\">All reviewed vendors</a></p>"; return; }
+    out.innerHTML = found.map((v) => {
+      const review = v.r ? ' <a href="' + esc(v.h) + '">' + esc(v.n) + " review</a>" : "";
+      if (!v.e.length) return "<p><b>" + esc(v.n) + "</b>: no entry since 2024. We list only incidents with a public source, so no entry does not prove nothing happened." + review + "</p>";
+      const c = v.e.filter((x) => x.c).length;
+      return "<p><b>" + esc(v.n) + "</b>: " + v.e.length + (v.e.length === 1 ? " entry" : " entries") + " since 2024, " + (c ? c + " lowering its score now" : "none lowering a score now") + "." + review + "</p>";
+    }).join("");
   };
-  input.addEventListener("input", answer);
-  form.addEventListener("submit", (e) => { e.preventDefault(); const a = out.querySelector('a[href^="#"]'); if (a) openEntry(a.getAttribute("href").slice(1)); });
-  form.hidden = false;
+  const apply = () => {
+    const term = (q.value || "").trim().toLowerCase();
+    let n = 0;
+    rows.forEach((r) => {
+      const on = (filter === "all" || r.dataset.incKeys.split(" ").includes(filter)) && (!term || r.dataset.incV.includes(term));
+      r.hidden = !on; if (on) n++;
+    });
+    groups.forEach((g) => {
+      const vis = [...g.querySelectorAll("[data-inc-row]")].filter((r) => !r.hidden).length;
+      g.hidden = vis === 0;
+      g.querySelector("[data-inc-count]").textContent = vis + (vis === 1 ? " incident" : " incidents");
+    });
+    shown.textContent = n === total ? base : n + " of " + total + " incidents shown";
+    empty.hidden = n > 0;
+    answer(term);
+    const first = rows.find((r) => !r.hidden);
+    if (first && !rows.some((r) => !r.hidden && r.querySelector("[aria-current='true']"))) select(first.dataset.id, false);
+  };
+  root.querySelectorAll("[data-inc-f]").forEach((b) => b.addEventListener("click", () => {
+    root.querySelectorAll("[data-inc-f]").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    filter = b.dataset.incF; apply();
+  }));
+  q.addEventListener("input", apply);
+
+  const open = (id) => { if (docs.some((d) => d.id === id)) select(id, false); };
+  const start = location.hash.slice(1);
+  select(docs.some((d) => d.id === start) ? start : docs[0].id, false);
+  window.addEventListener("hashchange", () => open(location.hash.slice(1)));
 })();
 </script>

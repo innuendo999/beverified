@@ -1,65 +1,94 @@
 ---
 layout: v3.njk
 ---
-{#- KYC Certification Tracker (owner approved the design canvas "BeVerified: KYC Certification Tracker, page design", 2026-11-20).
+{#- KYC Certification Tracker (owner approved the design canvas "BeVerified: KYC Certification Tracker, page design", 2026-11-20;
+    redesigned in the AML Fines Tracker style, canvas page "Certification Tracker", approved 2026-11-27).
     Rows are <details>, so every entry opens without JS; search and filters need JS and stay hidden without it.
     No source link per certificate (owner): sources ship in the CSV/JSON download. Rows A to Z, never ranked. -#}
-<main id="main" class="container ct">
-  <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li class="sep" aria-hidden="true">›</li><li aria-current="page">KYC Certification Tracker</li></ol></nav>
-
-  <header class="ct-head">
-    <h1 class="ct-head__title">KYC Certification Tracker</h1>
-    <p class="ct-head__lede">Independent test results and certifications for {{ list.length }} of the KYC and identity verification providers we review. A green check means we found the provider named on the issuer’s register or letter. Everything else is what the vendor says about itself.</p>
-    <p class="ct-head__meta num">Checked <time datetime="{{ certTracker.checked | iso }}">{{ certTracker.checked | displayDate }}</time> against
-      {%- for s in sourcesMain %} <a href="{{ s.url }}" rel="noopener">{{ s.name }}</a>{{ "," if not loop.last else "." }}{% endfor %}
-      {%- for s in sourcesOther %} <a href="{{ s.url }}" rel="noopener">{{ s.name }}</a> checked <time datetime="{{ s.checked | iso }}">{{ s.checked | displayDate }}</time>.{% endfor %}
-      <a href="#reuse">Download the data (CSV, JSON)</a></p>
-  </header>
+<main id="main" class="af ct" data-ct>
+  <div class="af-top">
+    <svg class="af-top__guilloche" viewBox="0 0 1280 460" preserveAspectRatio="none" aria-hidden="true" focusable="false">{% for g in ct.guilloche %}<path d="{{ g.d }}"{% if g.strong %} class="is-strong"{% endif %}/>{% endfor %}</svg>
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li class="sep" aria-hidden="true">›</li><li aria-current="page">KYC Certification Tracker</li></ol></nav>
+      <header class="af-hero">
+        <div class="af-hero__text">
+          <h1 class="af-hero__title">KYC Certification Tracker</h1>
+          <p class="af-hero__sub">Independent test results and certifications for {{ list.length }} KYC and identity verification providers we review. A green check means we found the provider on the issuer’s register or letter. Everything else is the vendor’s own claim.</p>
+          <p class="af-hero__cta"><a class="btn btn--primary" href="#matrix">Compare the {{ list.length }} providers</a><a class="btn btn--secondary" href="#reuse">Download the data</a></p>
+          <p class="af-hero__meta num">Checked <time datetime="{{ certTracker.checked | iso }}">{{ certTracker.checked | displayDate }}</time> against
+            {%- for s in sourcesMain %}{% if not loop.first %}{% if loop.last %} and{% else %},{% endif %}{% endif %} <a href="{{ s.url }}" rel="noopener">{{ s.name }}</a>{% if loop.last %}.{% endif %}{% endfor %}
+            {%- for s in sourcesOther %} <a href="{{ s.url }}" rel="noopener">{{ s.name }}</a> checked <time datetime="{{ s.checked | iso }}">{{ s.checked | displayDate }}</time>.{% endfor %}</p>
+        </div>
+        <aside class="af-card" aria-labelledby="ct-card-h">
+          <div class="af-card__body">
+            <h2 id="ct-card-h" class="af-card__title">Confirmed with the issuer</h2>
+            <p class="af-card__big num">{{ ct.okProviders }}<span class="ct-card__of"> of {{ list.length }}</span></p>
+            <p class="af-card__note">providers hold at least one result we could confirm.</p>
+            <dl class="af-card__rows num">
+              <div><dt>Results we confirmed</dt><dd>{{ ct.nConfirmed }}</dd></div>
+              <div><dt>Stated by the vendor only</dt><dd>{{ ct.nStated }}</dd></div>
+              <div><dt>Providers with no confirmed result</dt><dd>{{ ct.noOk }}</dd></div>
+            </dl>
+          </div>
+          <div class="af-mrz" aria-hidden="true"><div>{{ ["CERT", "KYC", "", ct.okProviders, "OF", list.length, "CONFIRMED"] | join("<") | mrzLine }}</div><div>{{ ["CHECKED", certTracker.checked | iso | replace("-", ""), "", "BEVERIFIED", "ORG"] | join("<") | mrzLine }}</div></div>
+        </aside>
+      </header>
+    </div>
+  </div>
+  <div class="container">
+  <div class="af-micro" aria-hidden="true"></div>
 
   <div class="ct-tools" data-ct-tools hidden>
-    <div class="ct-search">
-      <label for="ct-q" class="ct-search__label">Find a provider</label>
-      <span class="ct-search__box">{% icon "search", "", 18 %}<input id="ct-q" class="ct-search__input" type="search" autocomplete="off" spellcheck="false" placeholder="Type a provider name"></span>
+    <label for="ct-q" class="visually-hidden">Find a provider</label>
+    <input id="ct-q" class="af-search ct-q" type="search" autocomplete="off" spellcheck="false" placeholder="Find a provider">
+    <label class="ct-must">Must hold
+      <select data-ct-must>
+        <option value="any">Any certification</option>
+        {%- for c in columns %}<option value="{{ c.key }}">{{ c.label }}</option>{% endfor %}
+      </select>
+    </label>
+    <div class="af-seg" role="group" aria-label="Show">
+      <button type="button" aria-pressed="true" data-ct-seg="all">All providers</button><button type="button" aria-pressed="false" data-ct-seg="ok">With a confirmed result</button>
     </div>
-    <div class="ct-filters" role="group" aria-label="Show providers with a confirmed">
-      {%- for f in filters %}
-      <button type="button" class="ct-filter num" data-filter="{{ f.key }}" aria-pressed="{{ 'true' if loop.first else 'false' }}">{{ f.label }}</button>
-      {%- endfor %}
-    </div>
-    <p class="ct-shown num" aria-live="polite" data-ct-shown>Showing all {{ list.length }} providers</p>
+  </div>
+  <div class="ct-legend">
+    <span class="ct-cell--ok">{% icon "check", "", 16 %}Confirmed on the issuer’s register or letter</span>
+    <span><span class="ct-chip">Vendor says</span>stated by the vendor only</span>
+    <span><span class="ct-dot" aria-hidden="true">·</span>none found</span>
+    <span class="ct-shown num" aria-live="polite" data-ct-shown>All {{ list.length }} providers</span>
   </div>
 
-  <section aria-labelledby="ct-h">
+  <section id="matrix" aria-labelledby="ct-h">
     <h2 id="ct-h" class="visually-hidden">Providers and their checks</h2>
     <div class="ct-scroll">
       <div class="ct-table">
-        <div class="ct-cols" aria-hidden="true"><span>Provider</span>{% for c in columns %}<span>{{ c.label }}</span>{% endfor %}</div>
+        <div class="ct-cols" aria-hidden="true"><span>Provider</span>{% for c in ct.cols %}<span>{{ c.label }}<em class="num">{{ c.ok }} confirmed</em></span>{% endfor %}</div>
         <ol class="ct-list">
           {%- for r in list %}
-          <li id="{{ r.slug }}" class="ct-row" data-ct-name="{{ r.name | lower }}" data-ct-ok="{{ r.okKeys }}">
+          <li id="{{ r.slug }}" class="ct-row" data-ct-name="{{ r.name | lower }}" data-ct-ok="{{ ct.okAny[r.slug] }}" data-ct-has="{{ ct.has[r.slug] }}">
             <details>
               <summary>
                 <span class="ct-name">{% icon "chevron-down", "", 16 %}<b>{{ r.name }}</b></span>
                 {%- for c in r.cells %}
-                <span class="ct-cell ct-cell--{{ c.kind }}"><span class="visually-hidden">{{ columns[loop.index0].label }}: </span>{% if c.kind == 'ok' %}{% icon "check", "", 16 %}{% endif %}{{ c.text }}</span>
+                <span class="ct-cell ct-cell--{{ c.kind }}"><span class="visually-hidden">{{ columns[loop.index0].label }}: </span>{% if c.kind == 'ok' %}{% icon "check", "", 16 %}{{ c.text }}{% elif c.kind == 'stated' %}<span class="ct-chip">Vendor says</span>{% elif c.kind == 'progress' %}<span class="ct-chip">In progress</span>{% else %}<span class="ct-dot" aria-hidden="true">·</span><span class="visually-hidden">{{ c.text }}</span>{% endif %}</span>
                 {%- endfor %}
               </summary>
               <div class="ct-entry">
-                <ul class="ct-entries">
+                <ul class="ct-cards">
                   {%- for e in r.entries %}
-                  <li><span class="ct-badge ct-badge--{{ e.status }}">{{ e.statusLabel }}</span><span><b>{{ e.name }}</b>{% if e.what %}. {{ e.what }}{% endif %}</span></li>
+                  <li><b>{{ e.name }}</b>{% if e.what %}<span>{{ e.what }}</span>{% endif %}<em class="ct-st ct-st--{{ e.status }}">{{ e.statusLabel }}</em></li>
                   {%- endfor %}
                 </ul>
-                <p class="ct-links"><a href="/providers/{{ r.slug }}/">Read the {{ r.name }} review</a></p>
+                <p class="ct-links"><a href="/providers/{{ r.slug }}/">{{ r.name }} review</a></p>
               </div>
             </details>
           </li>
           {%- endfor %}
         </ol>
-        <p class="ct-empty" data-ct-empty hidden><span data-ct-empty-text></span> The tracker lists only providers we review. <a href="/providers/">See all reviews</a></p>
+        <p class="ct-empty" data-ct-empty hidden><span data-ct-empty-text></span> Clear the search or pick another certification. The tracker lists only providers we review. <a href="/providers/">See all reviews</a></p>
       </div>
     </div>
-    <p class="ct-note">Sorted A to Z. The tracker does not rank providers and has no effect on their scores. “None” means we found no public claim.</p>
+    <p class="ct-note">Sorted A to Z. The tracker does not rank providers and has no effect on their scores. A dot means we found no public claim.</p>
   </section>
 
   <div class="ct-notes">
@@ -96,44 +125,50 @@ layout: v3.njk
       <p>Write to <a href="mailto:support@beverified.org?subject=KYC%20Certification%20Tracker%3A%20correction">support@beverified.org</a> with a link to the register entry or letter that names your company. Entries are free, and payment never changes them.</p>
     </section>
   </div>
+  </div>
 </main>
 
 <script>
 (() => {
-  const rows = [...document.querySelectorAll(".ct-row")];
-  const btns = [...document.querySelectorAll("[data-filter]")];
+  const root = document.querySelector("[data-ct]");
+  const rows = [...root.querySelectorAll(".ct-row")];
+  const segs = [...root.querySelectorAll("[data-ct-seg]")];
+  const must = root.querySelector("[data-ct-must]");
   const input = document.getElementById("ct-q");
-  const shown = document.querySelector("[data-ct-shown]");
-  const empty = document.querySelector("[data-ct-empty]");
-  const emptyText = document.querySelector("[data-ct-empty-text]");
+  const shown = root.querySelector("[data-ct-shown]");
+  const empty = root.querySelector("[data-ct-empty]");
+  const emptyText = root.querySelector("[data-ct-empty-text]");
   const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
-  let filter = "all";
+  let seg = "all";
   const apply = () => {
-    const q = input.value.trim();
-    const nq = norm(q);
+    const nq = norm(input.value.trim());
+    const m = must.value;
     let n = 0;
     rows.forEach((r) => {
-      const byF = filter === "all" || r.dataset.ctOk.split(" ").includes(filter);
+      const ok = r.dataset.ctOk ? r.dataset.ctOk.split(" ") : [];
+      const has = r.dataset.ctHas ? r.dataset.ctHas.split(" ") : [];
+      const byF = seg === "ok" ? (m === "any" ? ok.length > 0 : ok.includes(m)) : (m === "any" || has.includes(m));
       const byQ = !nq || norm(r.dataset.ctName).includes(nq);
       r.hidden = !(byF && byQ);
       if (!r.hidden) n++;
     });
-    btns.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.filter === filter)));
-    shown.textContent = filter === "all" && !nq ? `Showing all ${rows.length} providers` : `Showing ${n} of ${rows.length} providers`;
+    segs.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.ctSeg === seg)));
+    shown.textContent = n === rows.length ? `All ${rows.length} providers` : `${n} of ${rows.length} providers shown`;
     empty.hidden = n > 0;
-    if (!n) emptyText.textContent = `No provider matches “${q}”${filter !== "all" ? " with this filter" : ""}.`;
+    if (!n) emptyText.textContent = "No provider matches.";
   };
-  btns.forEach((b) => b.addEventListener("click", () => { filter = b.dataset.filter; apply(); }));
+  segs.forEach((b) => b.addEventListener("click", () => { seg = b.dataset.ctSeg; apply(); }));
+  must.addEventListener("change", apply);
   input.addEventListener("input", apply);
   const open = (id) => {
     const li = document.getElementById(id);
-    if (!li) return;
-    if (li.hidden) { filter = "all"; input.value = ""; apply(); }
+    if (!li || !li.classList.contains("ct-row")) return;
+    if (li.hidden) { seg = "all"; must.value = "any"; input.value = ""; apply(); }
     li.querySelector("details").open = true;
     li.scrollIntoView({ block: "start" });
   };
   if (location.hash) open(location.hash.slice(1));
   window.addEventListener("hashchange", () => open(location.hash.slice(1)));
-  document.querySelector("[data-ct-tools]").hidden = false;
+  root.querySelector("[data-ct-tools]").hidden = false;
 })();
 </script>
