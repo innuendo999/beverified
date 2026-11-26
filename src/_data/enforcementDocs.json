@@ -132,6 +132,98 @@
       "excerpts_missing": [],
       "archive_url": "https://web.archive.org/web/20261114155925/https://www.occ.gov/static/enforcement-actions/eaAA-ENF-2025-21.pdf",
       "archived": "2026-11-14"
+    },
+    "fincen-2025-02": {
+      "sha256": "ddda8a063452205e5f3710764d44f724a651fe1570cd8184bbb1da4a89a92293",
+      "pages": 32,
+      "format": "pdf",
+      "bytes": 340189,
+      "link_status": "ok",
+      "checked": "2026-11-26",
+      "excerpts_checked": 6,
+      "excerpts_missing": [],
+      "archive_url": "https://web.archive.org/web/20261109144638/https://www.fincen.gov/system/files/2025-12/PaxfulConsentOrder.pdf",
+      "archived": "2026-11-09"
+    },
+    "ofac-2025-12-16-exodus": {
+      "sha256": "293a1aa8460b070d662a48feeb35825fbef781cc0e0d1a390541446d5168bfc8",
+      "pages": 6,
+      "format": "pdf",
+      "bytes": 234175,
+      "link_status": "ok",
+      "checked": "2026-11-26",
+      "excerpts_checked": 4,
+      "excerpts_missing": [],
+      "archive_url": "https://web.archive.org/web/20261011011229/https://ofac.treasury.gov/media/934831/download?inline",
+      "archived": "2026-10-11"
+    },
+    "ofac-2025-09-22-shapeshift": {
+      "sha256": "1066718a51aea8e06d26f894186d7bb929534c098521ed5f02bfb8665fd21cd9",
+      "pages": 5,
+      "format": "pdf",
+      "bytes": 250325,
+      "link_status": "ok",
+      "checked": "2026-11-26",
+      "excerpts_checked": 3,
+      "excerpts_missing": [],
+      "archive_url": "https://web.archive.org/web/20261011011229/https://ofac.treasury.gov/media/934641/download?inline",
+      "archived": "2026-10-11"
+    },
+    "nydfs-2025-08-07-paxos": {
+      "sha256": "6d203f61a9ab69cba53856a199a43f5859ec6a0b5128e04b70a0aad7201b2e44",
+      "pages": 26,
+      "format": "pdf",
+      "bytes": 250781,
+      "link_status": "ok",
+      "checked": "2026-11-26",
+      "excerpts_checked": 4,
+      "excerpts_missing": [],
+      "archive_url": "https://web.archive.org/web/20261013165505/https://www.dfs.ny.gov/system/files/documents/2025/08/ea20250807-co-paxos-trust-co.pdf",
+      "archived": "2026-11-26"
+    },
+    "ofac-2025-07-15-interactive-brokers": {
+      "sha256": "5109ac1cf5fa3eba02b8302b01d9764f583ccbe034b0c5c2229118e03934c910",
+      "pages": 9,
+      "format": "pdf",
+      "bytes": 240084,
+      "link_status": "ok",
+      "checked": "2026-11-26",
+      "excerpts_checked": 4,
+      "excerpts_missing": [],
+      "archive_url": "https://web.archive.org/web/20261011011229/https://ofac.treasury.gov/media/934501/download?inline",
+      "archived": "2026-10-11"
+    },
+    "nydfs-2025-07-09-wise-us": {
+      "sha256": "895544cfbea5b6463f94d30f3c7b72bc2c889517664e1565875afc90ca444fc6",
+      "pages": 11,
+      "format": "pdf",
+      "bytes": 229461,
+      "link_status": "ok",
+      "checked": "2026-11-26",
+      "excerpts_checked": 0,
+      "excerpts_missing": []
+    },
+    "nydfs-2025-04-10-block": {
+      "sha256": "c8aca7a5cfe34492e5d07217c3cb4bf5c3edc270447667322120a9e32d583e29",
+      "pages": 21,
+      "format": "pdf",
+      "bytes": 343439,
+      "link_status": "ok",
+      "checked": "2026-11-26",
+      "excerpts_checked": 4,
+      "excerpts_missing": []
+    },
+    "fincen-2025-01": {
+      "sha256": "cce8245751195473f0f7a053783a64fb664d9adc48958ab2ae6c593edf916e3d",
+      "pages": 41,
+      "format": "pdf",
+      "bytes": 525728,
+      "link_status": "ok",
+      "checked": "2026-11-26",
+      "excerpts_checked": 5,
+      "excerpts_missing": [],
+      "archive_url": "https://web.archive.org/web/20261020211832/https://www.fincen.gov/system/files/enforcement_action/2025-02-06/FinCEN-Brinks-FINALv508.pdf",
+      "archived": "2026-10-20"
     }
   },
   "fx": {}
