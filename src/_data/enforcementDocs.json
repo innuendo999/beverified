@@ -201,7 +201,9 @@
       "link_status": "ok",
       "checked": "2026-11-26",
       "excerpts_checked": 0,
-      "excerpts_missing": []
+      "excerpts_missing": [],
+      "archive_url": "https://web.archive.org/web/20260227022731/https://www.dfs.ny.gov/system/files/documents/2025/07/ea20250709-co-mse-wise-us-inc.pdf",
+      "archived": "2026-11-26"
     },
     "nydfs-2025-04-10-block": {
       "sha256": "c8aca7a5cfe34492e5d07217c3cb4bf5c3edc270447667322120a9e32d583e29",
@@ -211,7 +213,9 @@
       "link_status": "ok",
       "checked": "2026-11-26",
       "excerpts_checked": 4,
-      "excerpts_missing": []
+      "excerpts_missing": [],
+      "archive_url": "https://web.archive.org/web/20261126201337/https://www.dfs.ny.gov/system/files/documents/2025/04/ea20250410-block.pdf",
+      "archived": "2026-11-26"
     },
     "fincen-2025-01": {
       "sha256": "cce8245751195473f0f7a053783a64fb664d9adc48958ab2ae6c593edf916e3d",
@@ -224,6 +228,30 @@
       "excerpts_missing": [],
       "archive_url": "https://web.archive.org/web/20261020211832/https://www.fincen.gov/system/files/enforcement_action/2025-02-06/FinCEN-Brinks-FINALv508.pdf",
       "archived": "2026-10-20"
+    },
+    "ofac-2025-12-02-ipi-partners": {
+      "sha256": "0ede1e53f3e110ef05261dee0e3145f577aa58a053273db2f7834f3727668347",
+      "pages": 6,
+      "format": "pdf",
+      "bytes": 200603,
+      "link_status": "ok",
+      "checked": "2026-11-26",
+      "excerpts_checked": 2,
+      "excerpts_missing": [],
+      "archive_url": "https://web.archive.org/web/20261011011150/https://ofac.treasury.gov/media/934786/download?inline",
+      "archived": "2026-10-11"
+    },
+    "ofac-2025-06-12-gva-capital": {
+      "sha256": "29e25f07a9a4bc14b0de05978687192bdf8160432744949d33ac2356433dea6e",
+      "pages": 8,
+      "format": "pdf",
+      "bytes": 258476,
+      "link_status": "ok",
+      "checked": "2026-11-26",
+      "excerpts_checked": 4,
+      "excerpts_missing": [],
+      "archive_url": "https://web.archive.org/web/20261011011229/https://ofac.treasury.gov/media/934366/download?inline",
+      "archived": "2026-10-11"
     }
   },
   "fx": {}
