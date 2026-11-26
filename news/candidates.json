@@ -1,10 +1,40 @@
 {
-  "generated": "2026-11-25T14:30:41.804Z",
+  "generated": "2026-11-26T13:58:44.575Z",
   "items": [
     {
-      "id": "0239fd548c1138a6",
-      "title": "Alabama seeks industry input on app store age verification standards",
-      "url": "https://www.biometricupdate.com/202611/alabama-seeks-industry-input-on-app-store-age-verification-standards",
+      "id": "0bb044e72eb587b5",
+      "title": "Wultra, Iproov, Signicat, Youniqx Identity Ag, Partners Bank, and Amdocs Form Consortium to Deliver and Operate the Czech European Digital Identity Wallet",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOUFhlcVNOTVRNVjFtOE85OW1IYUhrZnphXzdCeUFqMENLNXpFMWI1U05xSm10MWpiTVVSTzlzQkdndWttRldtNXBVY1U3SGdpNERjaTZVMGVwdGtxdW9XZm1HOENlLUNoRExPT3pJaWhMZWpZX3htU1hQQVRocTVORWF3Q000Z2p5OTB4QnREdG0tREFvcGJhX0MtbEFVQ05KOEJhNG5VRUduTExjbWc2bHhKR0E2NXBhMWVsemRPT3VrX3RSS19PNU5yWUlvWDhsX2lPS3YyLU1KQlgxZE9yMg?oc=5",
+      "date": "2026-11-26",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "marketscreener.com",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "iproov",
+          "name": "iProov",
+          "reviewed": true
+        },
+        {
+          "slug": "signicat",
+          "name": "Signicat",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "regulation",
+      "matched": "digital identity wallet",
+      "route": "news",
+      "priority": 1,
+      "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
+      "first_seen": "2026-11-26"
+    },
+    {
+      "id": "836a83f7c6e35ffc",
+      "title": "Sri Lanka’s digital ID could unlock credit for rural entrepreneurs",
+      "url": "https://www.biometricupdate.com/202611/sri-lankas-digital-id-could-unlock-credit-for-rural-entrepreneurs",
       "date": "2026-11-25",
       "source": "biometricupdate",
       "source_name": "Biometric Update",
@@ -14,13 +44,99 @@
       "providers": [],
       "region": "Global",
       "rule": "regulation",
-      "matched": "age verification",
+      "matched": "digital id",
       "route": "news",
       "priority": 1,
       "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
-      "first_seen": "2026-11-25",
-      "status": "drafted",
-      "pr": "https://github.com/innuendo999/beverified/pull/236"
+      "first_seen": "2026-11-26"
+    },
+    {
+      "id": "5ff056e0676b85bb",
+      "title": "Peru rolls out digital national ID in Inji-based wallet",
+      "url": "https://www.biometricupdate.com/202611/peru-rolls-out-digital-national-id-in-inji-based-wallet",
+      "date": "2026-11-25",
+      "source": "biometricupdate",
+      "source_name": "Biometric Update",
+      "publisher": "Biometric Update",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "regulation",
+      "matched": "digital id",
+      "route": "news",
+      "priority": 1,
+      "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
+      "first_seen": "2026-11-26"
+    },
+    {
+      "id": "4a1b873ff935708c",
+      "title": "Switzerland awards $5.3M deepfake detection contract to secure digital ID rollout",
+      "url": "https://www.biometricupdate.com/202611/switzerland-awards-5-3m-deepfake-detection-contract-to-secure-digital-id-rollout",
+      "date": "2026-11-25",
+      "source": "biometricupdate",
+      "source_name": "Biometric Update",
+      "publisher": "Biometric Update",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "regulation",
+      "matched": "digital id",
+      "route": "news",
+      "priority": 1,
+      "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
+      "first_seen": "2026-11-26"
+    },
+    {
+      "id": "8052a10d03e3794e",
+      "title": "₹1L fine on ward engineer for falsifying road width in Bandra | Mumbai news",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQWWl2dW5NblpLbzdsbnNmM3hNT1gyN1Z1Y1A0emlrcUFlQ3BjYjZIckFWdlpkV3V0eDRZMjdlVGY1RkNHd1FIdEdtZDJwRGNySWdoTzR0VUR5WTR0X1NuRGF2aW1QVTh3LXE0cVZtT0FSWVd3d24tUUc4cGdrTnlOT19QNHRwRXlYU0cxR2NlcTRERS1FM2JFTlB5allJOGVWMWU3MmNGOXlTdUVsY1FFaVhldUpuUWRwcXdtQWE1R3dEeEVPZUw3cU1nQdIB0AFBVV95cUxOWjVUZ09fTnZtX1dyVG5rTVJJcDZjTE83ZnBjRHkwd0tmdUFhUzR1dTBpWk8tb3dyZFNTZmhzV3ZEX0FqdU9vNkZaSXRtVVNSNXkwdVN1dU80dkw5d3R1R2QyQkZDeXJPNHRSNk96eGsyWnNyc1lDTFFLM080amtGOWY3VFlObEcyNVM2RDVRU1pyQkxyVEt1WFFvU05rV0dYc1NyaG1VTTVVYlk3aUtmajJsbEY4U2wyaGtoMzlXNTNoWV9CMnl4X2p6T1JyM0tL?oc=5",
+      "date": "2026-11-26",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Hindustan Times",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "width",
+          "name": "WIDTH",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "provider-incident",
+      "matched": "fine",
+      "route": "incident",
+      "priority": 1,
+      "reason": "Incident, lawsuit or regulatory action at a provider in our records: goes to /incidents/ with the vendor's response.",
+      "first_seen": "2026-11-26"
+    },
+    {
+      "id": "d7441551265e5bab",
+      "title": "Veriff report on BNPL identity fraud",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMEpsYk9vdDFwcnlmc0UyUFNGWnktZjJpRjBqREJQQUNZRi1VRXRtNmRDemczVmQ3cVlWNHRKRFlyQTJPd0hweDQzMVRhYlc4eWo4cENtM0ZMWXJlNmtxOU5fMFBlZGU0STBCYTJkbFhKajVHYjA5Wl8tM3VCRG5WZmc4STVlcWwybE9ZRFJhTkc2M1ZVN3VVUXlzTDZMbzY5bkxMVmRYUmdraTg?oc=5",
+      "date": "2026-11-25",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "The Paypers",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "veriff",
+          "name": "Veriff",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "threat-research",
+      "matched": "identity fraud",
+      "route": "research-check",
+      "priority": 3,
+      "reason": "Threat research: only if a lab, regulator or academic source is behind it.",
+      "first_seen": "2026-11-26"
     },
     {
       "id": "5bf792dca32cf2f6",
@@ -631,6 +747,27 @@
       "priority": 3,
       "reason": "Routine designations go to the monthly digest; programme changes and crypto actions can be news.",
       "first_seen": "2026-11-16"
+    },
+    {
+      "id": "0239fd548c1138a6",
+      "title": "Alabama seeks industry input on app store age verification standards",
+      "url": "https://www.biometricupdate.com/202611/alabama-seeks-industry-input-on-app-store-age-verification-standards",
+      "date": "2026-11-25",
+      "source": "biometricupdate",
+      "source_name": "Biometric Update",
+      "publisher": "Biometric Update",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "regulation",
+      "matched": "age verification",
+      "route": "news",
+      "priority": 1,
+      "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
+      "first_seen": "2026-11-25",
+      "status": "drafted",
+      "pr": "https://github.com/innuendo999/beverified/pull/236"
     },
     {
       "id": "ba8ba1f4480c96c0",
