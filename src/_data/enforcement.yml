@@ -6,7 +6,7 @@
 # date_basis: signed (the date on the signature page) | published (the regulator's list
 #   or release date, used when the document leaves the signature date blank)
 # firm_type: bank | broker | msb | emi | payment | neobank | vasp | card | casino | individual | other
-# action: penalty | settlement | restriction | licence_revoked | cease_and_desist | order_no_penalty
+# action: penalty | settlement | restriction | licence_revoked | cease_and_desist | order_no_penalty | formal_agreement
 # position: admitted | neither_admit_nor_deny | contested | not_stated
 # failures: keys of the taxonomy in docs/aml-fines.md, section 5.1
 # findings[].level: order | press_notice | media
@@ -21,6 +21,7 @@
 #   on the same failure (e.g. FinCEN calling a firm a recidivist).
 # credits: amounts the regulator credits against its penalty for other regulators' penalties.
 # parallel: other regulators' actions on the same conduct named in the document.
+# status_note: what happened to the action later (e.g. terminated by the regulator), with the source.
 # parallel_note: a parallel action known from the regulator's release rather than the document.
 # requirements: what the order makes the firm do (lookbacks, programme fixes), with pins.
 #   Used mainly for non-monetary orders; an entry needs findings or requirements.
@@ -1002,5 +1003,88 @@ items:
     level: order
   earlier: []
   repeat: false
+  verified: '2026-11-26'
+  corrections: []
+
+- id: occ-aa-so-2025-46
+  case_id: first-national-bank-of-pasco-2025-09
+  firm: First National Bank of Pasco
+  firm_group: First National Bank of Pasco
+  firm_type: bank
+  firm_desc: National bank in Dade City, Florida
+  country: US
+  regulator: occ
+  date: '2025-09-18'
+  date_basis: signed
+  action: formal_agreement
+  monetary: false
+  failures: [aml_programme, sar, correspondent_cdd, cdd, monitoring]
+  position: not_stated
+  document:
+    title: Agreement by and between First National Bank of Pasco and the Office of the Comptroller of the Currency
+    type: formal_agreement
+    number: AA-SO-2025-46
+    url: https://www.occ.gov/static/enforcement-actions/eaAA-SO-2025-46.pdf
+  findings:
+  - text: The OCC found unsafe or unsound practices in BSA/AML risk management and suspicious activity reporting.
+    pin: 'p. 1'
+    level: order
+  - text: It found a violation of the suspicious activity reporting rule.
+    pin: 'p. 1'
+    excerpt: including 12 C.F.R. § 21.11 (Suspicious Activity Reports)
+    level: order
+  - text: It found a violation of the due diligence rule for correspondent accounts of foreign financial institutions.
+    pin: 'p. 1'
+    excerpt: 31 C.F.R. § 1010.610 (Due diligence programs for correspondent accounts for foreign financial institutions)
+    level: order
+  requirements:
+  - text: Keep a qualified BSA officer with enough independence, authority and resources, and review staffing every year.
+    pin: 'Art. VI, pp. 14-16'
+  - text: Adopt a customer due diligence program with risk ratings, complete customer information and periodic reviews.
+    pin: 'Art. VIII, pp. 18-21'
+  - text: Adopt a suspicious activity monitoring and reporting program, validate monitoring systems and act on a 2023 model validation report.
+    pin: 'Art. IX, pp. 21-25'
+  - text: Set up independent BSA/AML testing that checks whether earlier audit findings were fixed.
+    pin: 'Art. X, pp. 25-26'
+  earlier: []
+  repeat: false
+  verified: '2026-11-26'
+  corrections: []
+
+- id: occ-aa-ne-2025-05
+  case_id: patriot-bank-2025-01
+  firm: Patriot Bank, N.A.
+  firm_group: Patriot Bank
+  firm_type: bank
+  firm_desc: National bank in Stamford, Connecticut, with a prepaid card business run through third-party program managers
+  country: US
+  regulator: occ
+  date: '2025-01-14'
+  date_basis: signed
+  action: formal_agreement
+  monetary: false
+  failures: [aml_programme, cdd, sar, risk_assessment]
+  position: not_stated
+  document:
+    title: Agreement by and between Patriot Bank, National Association and the Office of the Comptroller of the Currency
+    type: formal_agreement
+    number: AA-NE-2025-05
+    url: https://www.occ.gov/static/enforcement-actions/eaAA-NE-2025-05.pdf
+  findings:
+  - text: The OCC found unsafe or unsound practices and violations of law, including in BSA/AML risk management and the oversight of payment activities.
+    pin: 'p. 1'
+    level: order
+  requirements:
+  - text: Run a customer identification program for reloadable prepaid card accounts that meets 31 CFR 1020.220.
+    pin: 'Art. VII, pp. 16-17'
+  - text: Carry out due diligence and ongoing monitoring of third-party prepaid program managers, including their FinCEN registration and AML programs.
+    pin: 'Art. VIII, pp. 18-20'
+  - text: Review prepaid program manager fraud alerts from 31 December 2022 to 31 December 2023 for suspicious activity reports that were not filed or were wrong.
+    pin: 'Art. X, pp. 22-23'
+  - text: Oversee ACH and wire payment activity, including its BSA/AML risks, with board reporting on return rates and high-risk originators.
+    pin: 'Art. XIII, pp. 28-29'
+  earlier: []
+  repeat: false
+  status_note: The OCC terminated this agreement in July 2026 (NR 2026-59, docket AA-ENF-2026-34).
   verified: '2026-11-26'
   corrections: []
