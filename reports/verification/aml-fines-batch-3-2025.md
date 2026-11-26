@@ -26,12 +26,14 @@ Tracker total after this batch: 19 actions in 16 cases.
 - Paxos: the order finds a breach of a 2020 letter agreement with the Department. A letter agreement is a supervisory agreement, not an enforcement action, so the entry is not a repeat; the breach is recorded as `remediation`.
 - DOJ amounts appear only as credits (Paxful, Brink's) and in `parallel_note`; DOJ resolutions are not recorded (owner rule).
 
-## Held for the owner
+## Added after the owner's decision (26 Nov 2026)
 
-- **GVA Capital Ltd.** (OFAC, 12 Jun 2025, $215,988,868, the statutory maximum): a San Francisco venture capital firm that managed an investment for a sanctioned person (Kerimov), egregious, not self-disclosed.
-- **IPI Partners, LLC** (OFAC, 2 Dec 2025, $11,485,352): a Chicago private equity firm that buys and runs data centers; it kept dealing with a sanctioned investor's representative (Gadzhiev) in one of its funds, non-egregious.
+The owner decided to include investment managers. Added in a follow-up PR:
 
-Both are investment managers rather than banks, brokers or payment firms. In or out?
+- **GVA Capital Ltd.** (OFAC, 12 Jun 2025, $215,988,868, the statutory maximum, by Penalty Notice): a San Francisco venture capital firm that knowingly managed an investment for a sanctioned person between April 2018 and May 2021; egregious, not self-disclosed; also 28 violations of OFAC's reporting rules (31 CFR 501.602) for late subpoena responses. Failures: sanctions, beneficial ownership, records.
+- **IPI Partners, LLC** (OFAC, 2 Dec 2025, $11,485,352): a Chicago private equity firm that buys and runs data centers; it had reason to doubt an investor's ownership attestation and kept dealing with the sanctioned owner's staff; non-egregious, not self-disclosed. Failures: sanctions, beneficial ownership.
+
+Both are firm type `other` with the regulator's description in `firm_desc`. Tracker total: 21 actions in 18 cases.
 
 ## Checked and left out
 

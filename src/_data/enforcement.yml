@@ -919,3 +919,88 @@ items:
   parallel_note: Brink's entered a non-prosecution agreement with the Department of Justice on 31 January 2025 and agreed to pay $50 million, part of it suspended (§ IV, p. 27). DOJ resolutions are not recorded in the tracker.
   verified: '2026-11-26'
   corrections: []
+
+- id: ofac-2025-12-02-ipi-partners
+  case_id: ipi-partners-2025-12
+  firm: IPI Partners, LLC
+  firm_group: IPI Partners
+  firm_type: other
+  firm_desc: Chicago-based private equity firm that buys, develops and operates data centers
+  country: US
+  regulator: ofac
+  date: '2025-12-02'
+  date_basis: published
+  action: settlement
+  monetary: true
+  amount: {value: 11485352, currency: USD, pin: 'p. 1'}
+  failures: [sanctions, kyb_ubo]
+  position: not_stated
+  conduct_period: {from: '2018-07', to: '2022-06', pin: 'p. 3'}
+  sanctions: {apparent_violations: 51, egregious: false, self_disclosed: none, programs: [Ukraine and Russia (31 CFR part 589)]}
+  document:
+    title: Enforcement Release
+    type: enforcement_release
+    url: https://ofac.treasury.gov/media/934786/download?inline
+  findings:
+  - text: IPI Partners settled apparent violations of Russia-related sanctions for $11,485,352; OFAC found the case non-egregious and not voluntarily disclosed.
+    pin: 'pp. 1, 4'
+    level: order
+  - text: IPI had reason to know that an investor's ownership attestation was inaccurate and did not ask further.
+    pin: 'p. 3'
+    excerpt: IPI had reason to know that the attestation was inaccurate
+    level: order
+  - text: After the investor's owner was designated, IPI kept dealing directly with him and his staff on the fund investment.
+    pin: 'p. 3'
+    excerpt: continued to deal directly with Gadzhiev and his employees in managing Definition's investment in the IPI Fund
+    level: order
+  - text: OFAC notes that legal advice only protects a firm when it rests on all the material facts.
+    pin: 'p. 5'
+    level: order
+  earlier: []
+  repeat: false
+  verified: '2026-11-26'
+  corrections: []
+
+- id: ofac-2025-06-12-gva-capital
+  case_id: gva-capital-2025-06
+  firm: GVA Capital Ltd.
+  firm_group: GVA Capital
+  firm_type: other
+  firm_desc: Venture capital firm based in San Francisco, California
+  country: US
+  regulator: ofac
+  date: '2025-06-12'
+  date_basis: published
+  action: penalty
+  monetary: true
+  amount: {value: 215988868, currency: USD, pin: 'p. 1'}
+  failures: [sanctions, kyb_ubo, records]
+  position: not_stated
+  position_note: OFAC imposed the penalty by a Penalty Notice; it is not a settlement.
+  conduct_period: {from: '2018-04', to: '2021-05', pin: 'p. 1'}
+  sanctions: {apparent_violations: null, egregious: true, self_disclosed: none, programs: ['Ukraine and Russia (31 CFR part 589)', 'Reporting, Procedures and Penalties (31 CFR part 501)']}
+  document:
+    title: Enforcement Release
+    type: enforcement_release
+    url: https://ofac.treasury.gov/media/934366/download?inline
+  findings:
+  - text: OFAC imposed the statutory maximum penalty, $215,988,868, by Penalty Notice.
+    pin: 'p. 1'
+    excerpt: By issuing this Penalty Notice, OFAC is imposing on GVA Capital the statutory maximum civil monetary penalty.
+    level: order
+  - text: Between April 2018 and May 2021 GVA Capital knowingly managed an investment for a sanctioned person.
+    pin: 'p. 1'
+    excerpt: Between April 2018 and May 2021, GVA Capital knowingly managed an investment for sanctioned
+    level: order
+  - text: The firm wrongly concluded that the investing company was not itself blocked property.
+    pin: 'p. 4'
+    excerpt: concluded incorrectly that Prosperity was not itself blocked property
+    level: order
+  - text: In answering OFAC's subpoena, it did not mention further responsive material for about two years; OFAC cites 28 violations of its reporting rules (31 CFR 501.602).
+    pin: 'p. 6'
+    excerpt: GVA Capital made no mention of additional responsive materials for roughly two years.
+    level: order
+  earlier: []
+  repeat: false
+  verified: '2026-11-26'
+  corrections: []
