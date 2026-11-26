@@ -1,6 +1,6 @@
 # BeVerified AML Fines Tracker: specification
 
-Status: draft for owner approval (26 Nov 2026; owner answered the open questions the same day). Nothing in this file is built yet.
+Status: approved and merged (PR #238, 26 Nov 2026). Data, check and fetch script: second PR (26 Nov 2026). Page: not built yet.
 
 ## 1. What it is
 
@@ -70,7 +70,16 @@ Rule: a regulator is listed on the page ("Regulators we track") with the date we
 
 ## 5. Data: `src/_data/enforcement.yml`
 
-One record per action, newest first. Fields (the example uses facts from our Q3 2026 news item; fields marked null are not checked yet):
+One record per action, newest first. Hand-written fields only: machine fields (hash, pages, archive copy, link status, excerpt check, ECB rates) live in `src/_data/enforcementDocs.json`, written by `scripts/enforcement/fetch.mjs`. The example below is the planning sketch; the live file and its header comment are the reference. Changes made while building the first batch (26 Nov 2026):
+
+- `date_basis: signed | published`: FinCEN and OFAC documents leave the signature date blank, so their date is the regulator's list date (`published`).
+- `verified` is the date the entry was checked against the document.
+- `ranking_keys` are computed from `failures` (`src/_lib/enforcement.js`); `ranking_override` with a note only when needed.
+- `earlier` items are an entry id, or an object `{regulator, date, title, amount, pin}` for actions before 2025 or by regulators we do not track.
+- `credits`, `parallel`, `payment_note`, `position_pin` / `position_note`, `repeat_note`, and for OFAC `sanctions: {apparent_violations, egregious, self_disclosed, programs}`.
+- Document type `enforcement_release` (OFAC) and `decision` were added.
+
+Planning sketch:
 
 ```yaml
 checked: '2026-11-26'          # last full pass over all sources
@@ -106,7 +115,7 @@ items:
     excerpt: null                         # verbatim only for US federal documents; otherwise empty or under 15 words
     level: order                          # order | press_notice | media
   earlier: []                             # earlier actions the document itself refers to
-  repeat: false                           # computed: true only when the document refers to an earlier action on the same failure
+  repeat: false                           # true only when the document says the conduct continued after an earlier action on the same failure
   ranking_keys: [aml, aml/banks]          # computed from failures (5.1); an override needs a note
   news: /news/aml-fines-q3-2026-bank-of-america-ubs-fca/
   verified: {date: null, by: andrii-klymenko}
@@ -150,7 +159,7 @@ No "Sources" column and no inline text links. The document is the evidence, show
 
 1. **Document header** on every entry: issuer, document type, number, date signed, page count, the firm's position. Example: `FinCEN · Consent Order · No. 2026-03 · 13 Oct 2026 · {pages} pp · admitted`.
 2. **Findings with pin cites.** Each finding is one sentence with `¶` or page. Opening the pin shows the passage inside the row. Verbatim excerpts only from US federal documents (public domain); for UK and EU documents a paraphrase, or an excerpt under 15 words.
-3. **Document trail.** Other actions in the same case and earlier actions the document refers to, in date order. "Repeat finding" appears only when the document itself refers to the earlier action on the same failure.
+3. **Document trail.** Other actions in the same case and earlier actions the document refers to, in date order. "Repeat finding" appears only when the document itself says the conduct continued after an earlier action on the same failure (e.g. FinCEN calling UBS Financial Services a recidivist). An earlier action that falls inside the same conduct period is shown in the trail but is not a repeat.
 4. **Source level per finding**: Order, Regulator notice, or Media. When the order is not published: "Order not published. Findings from the {regulator} press notice."
 5. **Durability.** Archived copy and date, SHA-256 of the file, "Checked against the order on {date}". If the original link stops working, the entry points to the archived copy and says so.
 6. **Cite this.** A stable anchor per entry (`/aml-fines/#fincen-2026-03`) and two ready citations: our entry, and the order itself (Bluebook for US documents, OSCOLA for UK).
@@ -159,9 +168,9 @@ Pin cites and findings are written by hand during verification and never guessed
 
 ## 8. Automation (GitHub Actions)
 
-- `scripts/enforcement/fetch.mjs`: for each `document.url`, download the file, store `sha256` and `pages`, request a Wayback snapshot, store `archive_url` and `archived`. Runs on a PR that changes `enforcement.yml` and weekly.
+- `scripts/enforcement/fetch.mjs` (workflow `.github/workflows/enforcement-docs.yml`): for each `document.url`, download the file, store `sha256` and `pages`, check every excerpt against the document text, request a Wayback snapshot, store `archive_url` and `archived`, store ECB rates for EUR and GBP amounts. Runs when `enforcement.yml` changes on main, weekly, and by hand; writes `src/_data/enforcementDocs.json` on the branch `enforcement-docs-auto` and opens a PR.
 - Weekly link check: a dead original sets `link_status: archived_only`; the page then points to the archive and says so. Report-only; never fails the build.
-- `scripts/enforcement/usd.mjs`: computes `usd` and stores the ECB rate used.
+- USD is computed at build time by `toUsd()` in `src/_lib/enforcement.js` from the amount and the stored ECB rate.
 - CI check (`scripts/checks/enforcement.mjs` in `npm run check`): required fields, known taxonomy keys, `usd` not typed by hand, every finding has `pin` and `level`, no excerpt over 15 words for non-US documents, ranking keys match the taxonomy unless a note explains the override.
 
 ## 9. Headline figures

@@ -1,0 +1,125 @@
+# Regulators tracked by the AML Fines Tracker (docs/aml-fines.md, section 3).
+# live: true only once the regulator's list and documents are readable (from GitHub Actions
+# or checked by the owner in a browser). Only live regulators are named on the page, and
+# headline figures never claim coverage of a regulator that is not live.
+# readable: what our tools could read on `checked`.
+# cite: how the order is cited in "Cite this" (bluebook for US, oscola for UK, plain for EU).
+checked: '2026-11-26'
+items:
+  fincen:
+    name: Financial Crimes Enforcement Network
+    short: FinCEN
+    region: US
+    list_url: https://www.fincen.gov/news/enforcement-actions/
+    tracked_since: '2026-11-26'
+    live: true
+    readable: Enforcement list with matter numbers and consent order PDFs
+    cite: bluebook
+  ofac:
+    name: Office of Foreign Assets Control
+    short: OFAC
+    region: US
+    list_url: https://ofac.treasury.gov/civil-penalties-and-enforcement-information
+    tracked_since: '2026-11-26'
+    live: true
+    readable: Civil penalties list with dates, amounts and enforcement release PDFs
+    cite: bluebook
+  nydfs:
+    name: New York State Department of Financial Services
+    short: NYDFS
+    region: US
+    list_url: https://www.dfs.ny.gov/industry_guidance/enforcement_actions
+    tracked_since: '2026-11-26'
+    live: true
+    readable: Enforcement actions list; consent orders published as HTML pages
+    cite: bluebook
+  occ:
+    name: Office of the Comptroller of the Currency
+    short: OCC
+    region: US
+    list_url: https://www.occ.gov/topics/laws-and-regulations/enforcement-actions/index-enforcement-actions.html
+    tracked_since: '2026-11-26'
+    live: false
+    readable: Monthly "Enforcement Actions for {month}" releases readable; search tool not tested
+    cite: bluebook
+  fed:
+    name: Board of Governors of the Federal Reserve System
+    short: Federal Reserve
+    region: US
+    list_url: https://www.federalreserve.gov/supervisionreg/enforcementactions.htm
+    tracked_since: '2026-11-26'
+    live: false
+    readable: List page needs JavaScript; the press_enforcement RSS feed is used by the news collector
+    cite: bluebook
+  fdic:
+    name: Federal Deposit Insurance Corporation
+    short: FDIC
+    region: US
+    list_url: https://www.fdic.gov/bank-examinations/enforcement-decisions-and-orders
+    tracked_since: '2026-11-26'
+    live: false
+    readable: Request refused from the session on 26 Nov 2026
+    cite: bluebook
+  finra:
+    name: Financial Industry Regulatory Authority
+    short: FINRA
+    region: US
+    list_url: https://www.finra.org/rules-guidance/oversight-enforcement/finra-disciplinary-actions
+    tracked_since: '2026-11-26'
+    live: false
+    readable: robots.txt blocks our fetch tool
+    cite: bluebook
+  fca:
+    name: Financial Conduct Authority
+    short: FCA
+    region: UK
+    list_url: https://www.fca.org.uk/news/news-stories
+    tracked_since: '2026-11-26'
+    live: false
+    readable: robots.txt blocks our fetch tool; the RSS feed is used by the news collector
+    cite: oscola
+  ofsi:
+    name: Office of Financial Sanctions Implementation
+    short: OFSI
+    region: UK
+    list_url: https://www.gov.uk/government/collections/enforcement-of-financial-sanctions
+    tracked_since: '2026-11-26'
+    live: false
+    readable: Not tested
+    cite: oscola
+  hmrc:
+    name: HM Revenue and Customs
+    short: HMRC
+    region: UK
+    list_url: https://www.gov.uk/government/publications/businesses-that-have-not-complied-with-the-money-laundering-regulations
+    tracked_since: '2026-11-26'
+    live: false
+    readable: Request refused from the session on 26 Nov 2026
+    cite: oscola
+  cbi:
+    name: Central Bank of Ireland
+    short: Central Bank of Ireland
+    region: EU
+    list_url: https://www.centralbank.ie/news-media/press-releases
+    tracked_since: '2026-11-26'
+    live: true
+    readable: Press releases and settlement notice PDFs
+    cite: plain
+  cssf:
+    name: Commission de Surveillance du Secteur Financier
+    short: CSSF
+    region: EU
+    list_url: https://www.cssf.lu/en/
+    tracked_since: '2026-11-26'
+    live: false
+    readable: robots.txt blocks our fetch tool
+    cite: plain
+  acpr:
+    name: Autorité de contrôle prudentiel et de résolution
+    short: ACPR
+    region: EU
+    list_url: https://acpr.banque-france.fr/en
+    tracked_since: '2026-11-26'
+    live: false
+    readable: Request refused from the session on 26 Nov 2026
+    cite: plain

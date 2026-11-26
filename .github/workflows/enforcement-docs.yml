@@ -1,0 +1,59 @@
+name: AML fines documents
+
+# Fetches every document in src/_data/enforcement.yml: hash, page count, excerpt check,
+# Wayback copy, dead-link fallback and ECB rates (scripts/enforcement/fetch.mjs).
+# Writes src/_data/enforcementDocs.json on the branch `enforcement-docs-auto` and opens a
+# PR for the owner. Never pushes to main. Spec: docs/aml-fines.md, section 8.
+
+on:
+  schedule:
+    - cron: "23 6 * * 1"   # Mondays 06:23 UTC
+  push:
+    branches: [main]
+    paths: [src/_data/enforcement.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: enforcement-docs
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Install poppler (pdfinfo, pdftotext)
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+      - name: Fetch documents
+        run: node scripts/enforcement/fetch.mjs --report report.md
+      - name: Summary
+        run: cat report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Open or update the PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if git diff --quiet -- src/_data/enforcementDocs.json; then
+            echo "No changes"; exit 0
+          fi
+          git config user.name "beverified-docs-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B enforcement-docs-auto
+          git add src/_data/enforcementDocs.json
+          git commit -m "AML fines: document check $(date -u +%F)"
+          git push -f origin enforcement-docs-auto
+          if [ -z "$(gh pr list --head enforcement-docs-auto --state open --json number --jq '.[0].number')" ]; then
+            gh pr create --base main --head enforcement-docs-auto \
+              --title "AML fines: document check $(date -u +%F)" \
+              --body-file report.md
+          else
+            gh pr comment enforcement-docs-auto --body-file report.md
+          fi
