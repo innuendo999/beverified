@@ -1,0 +1,327 @@
+# AML Fines Tracker data: one record per regulator document (docs/aml-fines.md).
+# Hand-written fields only. Machine fields (sha256, pages, archive copy, link status,
+# excerpt check, FX rates) live in src/_data/enforcementDocs.json, written by
+# scripts/enforcement/fetch.mjs in GitHub Actions. Never type a USD conversion here.
+#
+# date_basis: signed (the date on the signature page) | published (the regulator's list
+#   or release date, used when the document leaves the signature date blank)
+# firm_type: bank | broker | msb | emi | payment | neobank | vasp | card | casino | individual | other
+# action: penalty | settlement | restriction | licence_revoked | cease_and_desist | order_no_penalty
+# position: admitted | neither_admit_nor_deny | contested | not_stated
+# failures: keys of the taxonomy in docs/aml-fines.md, section 5.1
+# findings[].level: order | press_notice | media
+# findings[].excerpt: verbatim text from the document. Full sentences only from US federal
+#   documents (FinCEN, OFAC, OCC, Fed, FDIC); under 15 words for every other source.
+#   fetch.mjs checks that each excerpt appears in the document text.
+# earlier: earlier actions the document itself refers to (id of an entry here, or an
+#   object for actions before 2025 or by regulators we do not track).
+# verified: date the entry was last checked against the document itself.
+# ranking_keys: computed from failures (src/_lib/enforcement.js); set ranking_override with a note only when needed.
+# repeat: true only when the document says the conduct continued after an earlier action
+#   on the same failure (e.g. FinCEN calling a firm a recidivist).
+# credits: amounts the regulator credits against its penalty for other regulators' penalties.
+# parallel: other regulators' actions on the same conduct named in the document.
+checked: '2026-11-26'
+items:
+
+- id: fincen-2026-03
+  case_id: bank-of-america-2026-10
+  firm: Bank of America, N.A.
+  firm_group: Bank of America
+  firm_type: bank
+  country: US
+  regulator: fincen
+  date: '2026-10-13'
+  date_basis: published
+  action: penalty
+  monetary: true
+  amount: {value: 1200000000, currency: USD, pin: 'p. 67'}
+  credits:
+  - {regulator: OCC, value: 750000000, currency: USD, pin: 'p. 68'}
+  amount_payable: {value: 450000000, currency: USD, pin: 'p. 68'}
+  failures: [aml_programme, monitoring, sar, correspondent_cdd, cdd]
+  position: admitted
+  position_pin: '§ VII, p. 87'
+  conduct_period: {from: '2018-01', to: '2025-07', pin: '§ II, p. 4'}
+  document:
+    title: Consent Order Imposing Civil Money Penalty
+    type: consent_order
+    number: '2026-03'
+    url: https://www.fincen.gov/system/files/2026-10/BoA-Consent-Order-Execution-Final.pdf
+  findings:
+  - text: Bank of America missed or delayed the detection and reporting of over $5 billion of suspicious activity.
+    pin: '§ II.D, pp. 6-7'
+    excerpt: missed and delayed detection and reporting by Bank of America of over $5 billion of suspicious activity
+    level: order
+  - text: A 2024 lookback found nearly 8,900 suspicious activity reports that should have been filed, on activity of nearly $4 billion.
+    pin: '§ II.D.1.c, p. 14'
+    excerpt: failed to identify and file nearly 8,900 SARs, with transaction activity totaling nearly $4 billion
+    level: order
+  - text: The bank did not report suspicious money order deposits of over $600 million.
+    pin: '§ II.D.3, p. 28'
+    excerpt: failing to report suspicious money order deposits totaling over $600 million
+    level: order
+  - text: Its customer due diligence processes did not meet the bank's AML programme obligations.
+    pin: '§ II.D.3, p. 31'
+    level: order
+  - text: FinCEN found violations of the AML programme, correspondent account due diligence and suspicious activity reporting rules.
+    pin: '§ III, p. 61'
+    level: order
+  earlier:
+  - {regulator: OCC, date: '2024-12', title: Cease and Desist Order on BSA deficiencies, pin: '§ II.D.1.c, p. 14'}
+  repeat: false
+  repeat_note: The OCC order of December 2024 falls inside the conduct period, so FinCEN does not describe the bank as a repeat offender. FinCEN states the bank has no prior enforcement history with FinCEN (p. 64).
+  parallel:
+  - {regulator: OCC, value: 750000000, currency: USD, pin: 'p. 67'}
+  - {regulator: OFAC, pin: 'p. 67'}
+  news: /news/aml-fines-q3-2026-bank-of-america-ubs-fca/
+  verified: '2026-11-26'
+  corrections: []
+
+- id: ofac-2026-10-13-bank-of-america
+  case_id: bank-of-america-2026-10
+  firm: Bank of America, N.A.
+  firm_group: Bank of America
+  firm_type: bank
+  country: US
+  regulator: ofac
+  date: '2026-10-13'
+  date_basis: published
+  action: settlement
+  monetary: true
+  amount: {value: 11662930, currency: USD, pin: 'p. 1'}
+  failures: [sanctions]
+  position: not_stated
+  conduct_period: {from: '2021-09', to: '2025-04'}
+  sanctions: {apparent_violations: 475, egregious: false, self_disclosed: 62, programs: [Russia, Belarus, Iran, Burma, Somalia, Narcotics, Global terrorism]}
+  document:
+    title: Enforcement Release
+    type: enforcement_release
+    url: https://ofac.treasury.gov/media/937231/download?inline
+  findings:
+  - text: Bank of America settled 475 apparent violations of OFAC sanctions programmes for $11,662,930.
+    pin: 'p. 1'
+    excerpt: has agreed to pay $11,662,930 to settle its potential civil liability for 475 apparent violations of OFAC sanctions programs
+    level: order
+  - text: The bank processed 403 transactions worth $14,340,100 involving blocked banks between February 2022 and March 2025.
+    pin: 'p. 3'
+    excerpt: Ultimately, Bank of America processed 403 transactions totaling $14,340,100 between February 2022 and March 2025
+    level: order
+  - text: A design flaw in the bank's alert prioritisation logic affected how sanctions alerts were ranked.
+    pin: 'p. 3'
+    excerpt: Due to a design flaw in its alert prioritization logic
+    level: order
+  - text: Human error at a third-party vendor delayed sanctions watchlist updates between May and June 2023.
+    pin: 'p. 4'
+    level: order
+  - text: OFAC found the case non-egregious; 62 of the apparent violations were voluntarily self-disclosed.
+    pin: 'p. 5'
+    excerpt: the Apparent Violations constitute a non-egregious case.
+    level: order
+  earlier: []
+  repeat: false
+  news: /news/aml-fines-q3-2026-bank-of-america-ubs-fca/
+  verified: '2026-11-26'
+  corrections: []
+
+- id: nydfs-2026-10-15-seb
+  case_id: seb-2026-10
+  firm: Skandinaviska Enskilda Banken AB and its New York Branch
+  firm_group: SEB
+  firm_type: bank
+  country: SE
+  regulator: nydfs
+  date: '2026-10-15'
+  date_basis: signed
+  action: penalty
+  monetary: true
+  amount: {value: 33000000, currency: USD, pin: '¶ 65'}
+  failures: [cdd, edd, correspondent_cdd, monitoring, sanctions]
+  position: not_stated
+  position_note: The order has no admission clause. It records that SEB acknowledged fault in its 2008 to 2015 SAR filing practices in a 2018 internal audit report (¶ 61).
+  conduct_period: {from: '2015', to: '2019', pin: '¶ 10'}
+  document:
+    title: Consent Order
+    type: consent_order
+    url: https://www.dfs.ny.gov/industry-guidance/enforcement-discipline/ea20261015-order-skandinaviska-enskilda-banken-ab
+  findings:
+  - text: SEB did not carry out adequate due diligence on non-resident accounts, correspondent banks and RMA relationships, in breach of 3 NYCRR 116.2.
+    pin: '¶ 63'
+    level: order
+  - text: Its transaction monitoring system was inadequate, in breach of 3 NYCRR 504.3.
+    pin: '¶ 64'
+    level: order
+  - text: SEB Estonia did not follow its own onboarding process for private clients who needed enhanced due diligence.
+    pin: '¶ 13'
+    excerpt: failed to follow its own onboarding processes for private enhanced due diligence clients
+    level: order
+  - text: The monitoring system used in the Baltic subsidiaries did not identify suspicious transactions effectively.
+    pin: '¶ 51'
+    excerpt: FCRM failed to effectively identify suspicious transactions.
+    level: order
+  - text: When the sanctions screening system was down, payments went through without screening against sanctions lists.
+    pin: '¶ 58'
+    excerpt: payments are processed without screening against sanction lists
+    level: order
+  earlier:
+  - {regulator: Swedish FSA, date: '2019-2020', title: AML findings and fines on SEB and its Baltic subsidiaries, pin: preamble}
+  - {regulator: Estonian FSA, date: '2019-2020', title: AML findings and fines, pin: preamble}
+  - {regulator: Latvian FCMC, date: '2019-2020', title: AML findings and fines, pin: preamble}
+  repeat: false
+  repeat_note: The earlier Swedish, Estonian and Latvian actions concern the same period of conduct (2015 to 2019), not conduct after them.
+  verified: '2026-11-26'
+  corrections: []
+
+- id: fincen-2026-02
+  case_id: ubs-financial-services-2026-08
+  firm: UBS Financial Services Inc.
+  firm_group: UBS
+  firm_type: broker
+  country: US
+  regulator: fincen
+  date: '2026-08-03'
+  date_basis: published
+  action: penalty
+  monetary: true
+  amount: {value: 125000000, currency: USD, pin: 'p. 36'}
+  credits:
+  - {regulator: 'CFTC, SEC and FINRA', value: 48000000, currency: USD, pin: 'pp. 36-37'}
+  amount_payable: {value: 62000000, currency: USD, pin: 'p. 37'}
+  payment_note: A further $15 million is due to FinCEN by 31 May 2028 unless FinCEN waives it (p. 37).
+  failures: [aml_programme, monitoring, sar, remediation]
+  position: admitted
+  position_pin: '§ VII, p. 46'
+  conduct_period: {from: '2019-01', to: '2023-06', pin: '§ II, p. 3'}
+  document:
+    title: Consent Order Imposing Civil Money Penalty
+    type: consent_order
+    number: '2026-02'
+    url: https://www.fincen.gov/system/files/2026-07/UBS-Consent-Order.pdf
+  findings:
+  - text: For more than four years UBS Financial Services did not properly monitor over 61,500 foreign currency wires worth over $10.5 billion.
+    pin: 'p. 8'
+    excerpt: For more than four years, UBSFS failed to appropriately monitor more than 61,500 foreign currency wires
+    level: order
+  - text: More than 5% of foreign currency wires were left out of the automated monitoring system altogether.
+    pin: 'p. 17'
+    excerpt: more than five percent of foreign currency wires were completely excluded from the automated monitoring system
+    level: order
+  - text: FinCEN identified hundreds of suspicious transactions with no timely and accurate suspicious activity report.
+    pin: 'p. 28'
+    excerpt: FinCEN has identified hundreds of suspicious transactions for which UBSFS failed to timely and accurately file a SAR
+    level: order
+  - text: The firm did not maintain an AML programme meeting the minimum requirements of the Bank Secrecy Act.
+    pin: '§ III, p. 31'
+    excerpt: UBSFS willfully failed to implement and maintain an AML program that met the minimum requirements of the BSA
+    level: order
+  - text: FinCEN calls the firm a recidivist because the same violations continued after its 2018 consent order.
+    pin: 'p. 34'
+    excerpt: These failures were that of a recidivist, which allowed UBSFS to continue the same BSA violations
+    level: order
+  earlier:
+  - {regulator: FinCEN, date: '2018-12-11', title: Consent Order with a $14.5 million civil money penalty, amount: {value: 14500000, currency: USD}, pin: 'p. 5'}
+  repeat: true
+  parallel:
+  - {regulator: FINRA, value: 20000000, currency: USD, pin: 'p. 36'}
+  - {regulator: SEC, value: 20000000, currency: USD, pin: 'p. 36'}
+  - {regulator: CFTC, value: 8000000, currency: USD, pin: 'p. 36'}
+  news: /news/aml-fines-q3-2026-bank-of-america-ubs-fca/
+  verified: '2026-11-26'
+  corrections: []
+
+- id: ofac-2026-03-17-tradestation
+  case_id: tradestation-2026-03
+  firm: TradeStation Securities, Inc.
+  firm_group: TradeStation
+  firm_type: broker
+  country: US
+  regulator: ofac
+  date: '2026-03-17'
+  date_basis: published
+  action: settlement
+  monetary: true
+  amount: {value: 1110661, currency: USD, pin: 'p. 4'}
+  failures: [sanctions]
+  position: not_stated
+  conduct_period: {from: '2021-06', to: '2022-06'}
+  sanctions: {apparent_violations: 481, egregious: false, self_disclosed: all, programs: [Iran (ITSR), Syria (SySR), Ukraine and Russia (URSR)]}
+  document:
+    title: Enforcement Release
+    type: enforcement_release
+    url: https://ofac.treasury.gov/media/935351/download?inline
+  findings:
+  - text: A flaw left the second tier of TradeStation's IP geo-blocking ineffective for users of its mobile platform.
+    pin: 'p. 3'
+    excerpt: ineffective for users of its mobile platform
+    level: order
+  - text: After a software update the first tier of geo-blocking was left effectively disabled.
+    pin: 'p. 3'
+    excerpt: This left TradeStation's first-tier geo-blocking controls effectively disabled
+    level: order
+  - text: The firm had no effective way to test that its geo-blocking controls worked.
+    pin: 'p. 3'
+    excerpt: TradeStation had no effective testing mechanism
+    level: order
+  - text: Daily OFAC alerts lapsed for over eight months because an employee did not renew a subscription.
+    pin: 'p. 4'
+    excerpt: This employee failed to renew the subscription
+    level: order
+  - text: OFAC found the case non-egregious and the apparent violations voluntarily self-disclosed.
+    pin: 'p. 4'
+    excerpt: OFAC determined that TradeStation self-disclosed the Apparent Violations
+    level: order
+  earlier: []
+  repeat: false
+  verified: '2026-11-26'
+  corrections: []
+
+- id: fincen-2026-01
+  case_id: canaccord-genuity-2026-03
+  firm: Canaccord Genuity LLC
+  firm_group: Canaccord Genuity
+  firm_type: broker
+  country: US
+  regulator: fincen
+  date: '2026-03-06'
+  date_basis: published
+  action: penalty
+  monetary: true
+  amount: {value: 80000000, currency: USD, pin: '§ V, p. 44'}
+  credits:
+  - {regulator: SEC, value: 20000000, currency: USD, pin: '§ V, p. 44'}
+  - {regulator: FINRA, value: 20000000, currency: USD, pin: '§ V, p. 44'}
+  amount_payable: {value: 35000000, currency: USD, pin: '§ V, p. 44'}
+  payment_note: A further $5 million is suspended while the firm meets the order's undertaking (§ V, p. 44).
+  failures: [aml_programme, sar, correspondent_cdd]
+  position: admitted
+  position_pin: '§ VII, p. 46'
+  conduct_period: {from: '2018-03', to: '2024-06', pin: '§ II, p. 6'}
+  document:
+    title: Consent Order Imposing Civil Money Penalty
+    type: consent_order
+    number: '2026-01'
+    url: https://www.fincen.gov/system/files/2026-03/Canaccord-Consent-Order-No-2026-01.pdf
+  findings:
+  - text: Canaccord Genuity did not maintain an AML programme meeting the minimum requirements of the Bank Secrecy Act.
+    pin: '§ III, p. 39'
+    excerpt: willfully failed to implement and maintain an AML program that met the minimum requirements of the BSA
+    level: order
+  - text: The firm did not report suspicious transactions to FinCEN accurately and on time.
+    pin: '§ III, p. 39'
+    excerpt: willfully failed to accurately and timely report suspicious transactions to FinCEN
+    level: order
+  - text: The firm did not carry out due diligence on correspondent accounts.
+    pin: '§ III, p. 39'
+    excerpt: willfully failed to conduct due diligence on correspondent accounts
+    level: order
+  - text: FinCEN notes the firm had no AML-related enforcement history before this order.
+    pin: '§ IV, pp. 41-42'
+    excerpt: no AML-related enforcement history
+    level: order
+  earlier: []
+  repeat: false
+  parallel:
+  - {regulator: FINRA, value: 20000000, currency: USD, pin: '§ IV, p. 43'}
+  - {regulator: SEC, value: 20000000, currency: USD, pin: '§ IV, p. 43'}
+  verified: '2026-11-26'
+  corrections: []
