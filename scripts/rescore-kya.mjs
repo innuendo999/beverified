@@ -13,7 +13,7 @@ const dir = path.join(root, "src/_data/providers");
 const only = process.argv.slice(2).filter((a) => !a.startsWith("--"));
 const WRITE = process.argv.includes("--write");
 const KEY = "know-your-agent";
-const grade = (s) => (s >= 4.5 ? "Excellent" : s >= 4.0 ? "Great" : s >= 3.5 ? "Very Good" : s >= 3.0 ? "Good" : "Fair");
+import { grade } from "../src/_lib/grade.js";
 
 export const RUBRIC = [
   ["detection", "Agent detection and recognition", 20],

@@ -17,7 +17,7 @@ const WRITE = process.argv.includes("--write");
 const KEY = "cheap-kyc";
 const TODAY = new Date(process.env.BUDGET_TODAY || new Date().toISOString().slice(0, 10));
 const VOLUMES = { s: 100, m: 1000 };
-const grade = (s) => (s >= 4.5 ? "Excellent" : s >= 4.0 ? "Great" : s >= 3.5 ? "Very Good" : s >= 3.0 ? "Good" : "Fair");
+import { grade } from "../src/_lib/grade.js";
 const half = (x) => Math.round(x * 2) / 2;
 const clamp = (x) => Math.max(1, Math.min(5, x));
 const usd = (n) => `$${n.toFixed(2)}`;

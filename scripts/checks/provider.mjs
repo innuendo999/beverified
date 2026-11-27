@@ -22,7 +22,7 @@ for (const s of slugs) {
   try { d = yaml.load(fs.readFileSync(file, "utf8")); } catch (e) { err(s, "YAML does not parse: " + e.message.split("\n")[0]); continue; }
   let old = null;
   try { old = yaml.load(execSync(`git -C "${root}" show HEAD:src/_data/providers/${s}.yml`, { stdio: ["ignore", "pipe", "ignore"] }).toString()); } catch {}
-  if (old) for (const k of ["slug", "name", "score", "grade", "author"]) if (JSON.stringify(old[k]) !== JSON.stringify(d[k])) err(s, `${k} must not change (${old[k]} → ${d[k]})`);
+  if (old) for (const k of ["slug", "name", "score", "author"]) if (JSON.stringify(old[k]) !== JSON.stringify(d[k])) err(s, `${k} must not change (${old[k]} → ${d[k]})`);
   const n = (d.sources || []).length;
   (d.sources || []).forEach((x, i) => { if (!x.url || !/^https?:\/\//.test(x.url) || !x.title || !x.accessed) err(s, `sources[${i}] incomplete`); });
   const ref = (where, v) => { if (v != null && (!Number.isInteger(v) || v < 1 || v > n)) err(s, `${where}.source ${v} is not a valid source number (1..${n})`); };

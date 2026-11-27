@@ -44,7 +44,7 @@
         <div class="rv6-score">
           <div class="rv6-score__in">
             <div class="rv6-score__label">BeVerified score</div>
-            <div class="rv6-score__row"><span class="rv6-score__num">{{ p.score | score1 }}</span><span class="rv6-score__of">/ 5</span>{% if p.grade %}<span class="rv6-score__grade">{{ p.grade }}</span>{% endif %}</div>
+            <div class="rv6-score__row"><span class="rv6-score__num">{{ p.score | score1 }}</span><span class="rv6-score__of">/ 5</span>{% if p.score %}<span class="rv6-score__grade">{{ p.score | grade }}</span>{% endif %}</div>
             <div class="rv6-score__bar" role="img" aria-label="{{ p.score | score1 }} out of 5"><i style="width:{{ p.score * 20 }}%"></i></div>
             {%- if v.awards.headline %}<a class="rv6-score__award" href="#awards">{% icon "award", "", 16 %}<span>{{ v.awards.headline }}</span></a>{% endif %}
             {%- if v.evidence %}<p class="rv6-score__ev"><span aria-hidden="true">◆</span> {{ v.evidence }}</p>{% endif %}
