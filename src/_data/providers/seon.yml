@@ -546,3 +546,17 @@ legacy_reviewer:
 directory_categories:
 - AML
 - Crypto KYC
+category_scores:
+  fraud-prevention:
+    score: 3.7
+    methodology: fraud-1.0
+    scored: '2026-11-27'
+    breakdown:
+    - {key: coverage, score: 3.5}
+    - {key: signals, score: 5}
+    - {key: decisioning, score: 4}
+    - {key: investigations, score: 3.5}
+    - {key: fit, score: 2.5}
+    - {key: integration, score: 3.5}
+    - {key: trust, score: 3}
+    - {key: pricing, score: 4}

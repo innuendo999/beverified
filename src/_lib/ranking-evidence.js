@@ -119,8 +119,35 @@ export function amlChips(q) {
   return out.slice(0, 3);
 }
 
+// Fraud Prevention ranking (Fraud 1.0, docs/scoring-fraud.md): fraud types and signals from capabilities{}; only yes and add_on count.
+const on = (v) => ["yes", "add_on"].includes(v?.status);
+const FRAUD_TYPES = [["fraud_scam", "Scams"], ["fraud_ato", "Account takeover"], ["fraud_transaction", "Card and payment"], ["fraud_check", "Check"], ["fraud_onboarding", "Onboarding"], ["fraud_mule", "Mules"]];
+const FRAUD_SIGNALS = [["behavioral_biometrics", "Behavioural"], ["device_intelligence", "Device"], ["graph_analytics", "Graph"], ["fraud_consortium", "Consortium"]];
+const list = (q, keys) => keys.filter(([k]) => on(q?.capabilities?.[k])).map(([, l]) => l);
+export function fraudTop3(q) {
+  const t = list(q, FRAUD_TYPES), s = list(q, FRAUD_SIGNALS);
+  return { cols: [
+    { label: "Fraud types", icon: "fraud", ok: "", text: t.length ? `${t.length} of 6: ${t.join(", ")}` : "None described" },
+    { label: "Signals", icon: "fingerprint", ok: "", text: s.length ? s.join(", ") : "None described" },
+    { label: "Rule testing", icon: "lab", ok: "", text: on(q?.capabilities?.rule_testing) ? "Backtest or shadow mode" : "Not described" },
+  ] };
+}
+export function fraudChips(q) {
+  if (!q) return [];
+  const c = q.capabilities || {}, out = [];
+  if (certs(q).some((x) => /27001|SOC 2.*Type (2|II)\b/i.test(x.name) && x.status === "confirmed")) out.push({ label: "Security certificate confirmed", ok: true, icon: "certificate" });
+  if (on(c.fraud_scam)) out.push({ label: "Scam detection", ok: false, icon: "fraud" });
+  if (on(c.behavioral_biometrics)) out.push({ label: "Behavioural biometrics", ok: false, icon: "fingerprint" });
+  if (on(c.rule_testing)) out.push({ label: "Rule testing before go-live", ok: false, icon: "lab" });
+  if (on(c.instant_payments)) out.push({ label: "Instant payment rails", ok: false, icon: "transfer" });
+  if (on(c.payment_interventions)) out.push({ label: "Hold, warn or step up", ok: false, icon: "shield-check" });
+  if (on(c.transaction_monitoring)) out.push({ label: "Fraud and AML in one platform", ok: false, icon: "monitoring" });
+  return out.slice(0, 3);
+}
+
 export function v2Evidence(c, q, fit) {
   if (c.evidence === "aml") return { ...amlTop3(q), chips: amlChips(q) };
+  if (c.evidence === "fraud") return { ...fraudTop3(q), chips: fraudChips(q) };
   if (c.evidence === "travel-rule") return { ...travelRuleTop3(q, fit), chips: travelRuleChips(q, fit) };
   const f = top3Facts(q);
   return {

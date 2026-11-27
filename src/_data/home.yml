@@ -26,7 +26,7 @@ hero:
 
 use_case_tabs:          # homepage use-case block (owner approved variant C, 2026-11-24): category tabs, the use cases under each, in this order; ids are rankings.yml keys from use_cases below
   - { label: KYC & Identity, items: [kyc, identity-verification, e-kyc, liveness-detection, age-verification, know-your-agent] }
-  - { label: AML, items: [aml, aml/banks] }
+  - { label: AML, items: [aml, aml/banks, fraud-prevention] }
   - { label: KYB, items: [kyb] }
   - { label: Crypto, items: [crypto, travel-rule] }
   - { label: Budget, items: [cheap-kyc] }
@@ -41,6 +41,7 @@ use_cases:              # group = section on /use-cases/; category slug in ranki
   - { name: Crypto KYC, slug: crypto, group: Crypto, def: "Onboarding checks for exchanges and wallets, often paired with wallet screening." }
   - { name: Travel Rule, slug: travel-rule, group: Crypto, def: "Exchanging originator and beneficiary data between VASPs under FATF R.16." }
   - { name: AML for Banks, slug: aml/banks, group: Financial crime, def: "Monitoring and case management built for Tier-1 volume and examiner review." }
+  - { name: Fraud Prevention, slug: fraud-prevention, group: Financial crime, def: "Stopping payment fraud, account takeover, scams and mule accounts at banks and fintechs before the money moves." }
   - { name: Age Verification, slug: age-verification, group: Identity, def: "Checking a user is over a set age, by selfie or email estimation, ID document or database." }
   - { name: Budget KYC, slug: cheap-kyc, group: Budget, def: "Providers with published per-check or monthly pricing and low minimums." }
   - { name: Know Your Agent, slug: know-your-agent, group: Identity, def: "Checking the AI agents that act for customers: which agent it is, who stands behind it and what it may do." }
