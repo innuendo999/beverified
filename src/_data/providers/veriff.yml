@@ -134,6 +134,11 @@ pricing:
     kind: official
     source: 2
     verified: '2026-11'
+  - label: Free trial, in our Station account
+    value: 15 days and 20 verifications on the Premium plan, with the add-ons included free; seen 27 Nov 2026
+    kind: official
+    source: 41
+    verified: '2026-11'
 facts:
 - label: From
   value: $49/mo minimum + $0.80 per verification
@@ -158,6 +163,14 @@ facts:
 - label: Documents
   value: 12,500+ ID documents
   source: 3
+  evidence: vendor
+- label: FaceBlock
+  value: Blocklist of faces from sessions you suspect of fraud, added from a declined session; seen in Station, 27 Nov 2026
+  source: 41
+  evidence: vendor
+- label: Test sessions
+  value: A test integration returns sample approved and declined sessions with extracted data; Veriff does not verify them; seen in Station, 27 Nov 2026
+  source: 41
   evidence: vendor
 - label: Languages
   value: 50 languages and dialects
@@ -688,6 +701,10 @@ sources:
   publisher: Veriff
   url: https://www.veriff.com/use-cases/reverification
   accessed: '2026-11'
+- title: Veriff Station, trial account (BeVerified, signed in)
+  publisher: Veriff
+  url: https://station.veriff.com/
+  accessed: '2026-11-27'
 entity:
   wikidata: null
   kg_mid: null
@@ -778,3 +795,62 @@ category_scores:
       note: "sanctions and PEP screening, proof of address, facial age estimation, re-verification"
       evidence: vendor
 # end IDV score
+screenshots:
+- file: /assets/img/screens/veriff/01-verifications.webp
+  width: 1422
+  height: 638
+  caption: Verifications
+  alt: Veriff Station list of verifications with session status, risk insights, PEP and sanctions, name, document country and type, with filters
+  long: Every session with its decision, filters by status, rejection category, document and PEP result, and CSV export.
+- file: /assets/img/screens/veriff/02-session-approved.webp
+  width: 1422
+  height: 694
+  caption: Session overview
+  alt: Veriff session overview for an approved sample session with creation date, data retention date and three attempts
+  long: One session with its attempts, the date its data is deleted and a PDF export.
+- file: /assets/img/screens/veriff/03-extracted-data.webp
+  width: 1422
+  height: 694
+  caption: Extracted data
+  alt: Person and document data extracted from a sample passport, with name, date of birth, personal number, country, type, number and expiry
+  long: The data Veriff reads from the document, field by field.
+- file: /assets/img/screens/veriff/04-declined-reason.webp
+  width: 1422
+  height: 694
+  caption: Decline reason
+  alt: Declined sample session with the reason Suspected document tampering
+  long: A declined session shows the reason, here suspected document tampering.
+- file: /assets/img/screens/veriff/05-countries-documents.webp
+  width: 1422
+  height: 694
+  caption: Countries and documents
+  alt: Per-country switches for passport, ID card, driver's license and resident permit in a Veriff integration
+  long: You choose which documents to accept, country by country.
+- file: /assets/img/screens/veriff/06-install-snippet.webp
+  width: 1422
+  height: 694
+  caption: Installation
+  alt: Veriff JavaScript installation options with a live form preview and the code snippet, plus links to the API docs and iOS and Android SDKs
+  long: A JavaScript snippet with a live preview, or the API and mobile SDKs.
+- file: /assets/img/screens/veriff/07-pricing-breakdown.webp
+  width: 1422
+  height: 638
+  caption: Price per verification
+  alt: Veriff subscription breakdown for the Premium plan, $1.89 plus add-ons for retention, data extraction, PEP and sanctions and monitoring, $3.22 in total
+  long: Premium at $1.89 a verification comes to $3.22 with all four add-ons.
+- file: /assets/img/screens/veriff/08-user-flow-start.webp
+  width: 1422
+  height: 638
+  caption: What your customer sees first
+  alt: Start of the Veriff verification flow on a desktop, asking the user to continue on a smartphone by QR code or SMS link, shown in Ukrainian
+  long: 'On a desktop the flow sends the user to their phone by QR code or SMS. It opened in Ukrainian, our browser language.'
+screenshots_meta:
+  origin: beverified
+  provided: '2026-11-27'
+  environment: a Veriff Station trial account
+  sample_data: true
+  note: "The two sessions are the samples Veriff adds to every trial account, and test sessions are not verified, so these screens show how the product works, not how accurate it is. We ran no live checks."
+  permission: own trial account; Veriff not asked yet (owner to decide)
+changes:
+- date: '2026-11-27'
+  text: Screenshots from our own Station trial account added; prices in the account match the published ones.
