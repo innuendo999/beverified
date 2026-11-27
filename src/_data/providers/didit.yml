@@ -6,7 +6,7 @@ alternate_names:
 status: published
 seo:
   title: 'Didit Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'Didit review: self-serve KYC, AML and fraud checks with a public price list, $0.33 for a full KYC check and a free plan. Features, pricing, pros & cons, alternatives.'
+  description: 'Didit review: #1 in our Cheap KYC ranking, $0.33 per full check at list price, with a free plan, iBeta Level 2 liveness and a sandbox we tested.'
   h1: 'Didit Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/didit.png
@@ -15,10 +15,10 @@ logo:
 tagline: Self-serve KYC, AML and fraud checks with a public per-module price list and a free plan
 score: 4.6
 methodology: v3.1
-primary_category: identity-verification
+primary_category: cheap-kyc
 categories:
-- identity-verification
 - cheap-kyc
+- identity-verification
 - liveness-detection
 - age-verification
 - aml
@@ -29,8 +29,9 @@ link:
   type: none
 last_verified: '2026-11-17'
 updated: '2026-11-27'   # last content edit; last_verified = last fact re-check
-verdict: 'Didit is an identity verification provider for startups, fintechs and marketplaces that want to start free and pay a public list price per module, with no minimum or contract. A full KYC check costs $0.33, and iBeta has confirmed its liveness at Level 2. The company was founded in 2023, KYB is partly priced at staging rates, and support is by email only.'
+verdict: 'Didit ranks first in our Cheap KYC ranking, a self-serve provider for startups that want to start free and pay a public list price per check, with iBeta Level 2 liveness. A full KYC check costs $0.33, and the Free plan gives $10 of credit a month to work-email sign-ups. The company was founded in 2023, and our console priced AML screening at $0.27, not the published $0.20.'
 what_is:
+- Didit is a self-serve KYC provider that publishes a list price for every check. In our own sandbox account we picked the result of a test session before it started, used Didit's sample passport instead of a real ID, and replayed the session with a ready-made AML scenario. The workflow editor shows the list price of every step and adds them up per finished session, $0.65 for ID, liveness, face match, AML screening and device checks; the same screen priced AML screening at $0.27, above the $0.20 on the pricing page.
 - Didit sells identity verification and fraud prevention through one API and a web console. Its modules cover ID document checks with NFC chip reading, passive and active liveness, face match and face search, age estimation, proof of address, phone and email checks, checks against government databases without a document, AML screening with ongoing monitoring, transaction monitoring, crypto wallet screening, Travel Rule messages, reusable KYC and biometric login. Every module has a public list price, and a free plan includes monthly credit.
 - The company was founded in 2023 by twin brothers Alberto Rosas (CEO) and Alejandro Rosas, and says it has two headquarters, in San Francisco and Barcelona. The iBeta letter names Didit Identity, Inc., and the ISO/IEC 27001 certificate names Didit Identity Spain S.L. in Barcelona. Didit joined Y Combinator's Winter 2026 batch and announced in May 2026 a $6 million seed tranche that brought its total seed funding to $7.5 million.
 features:
@@ -41,11 +42,11 @@ features:
 - Age estimation from a selfie, with a German FSM youth protection seal for its age verification, per Didit.
 - REST API, webhooks and SDKs for web, iOS, Android, React Native and Flutter, plus a free plan for testing.
 pricing:
-  summary: Didit publishes its prices. The Free plan costs $0 a month and includes $10 of credit each month; Growth ($99 a month) and Scale ($299 a month) include more credit and discounts off list prices, and Enterprise is quoted on an annual contract. A full KYC check costs $0.33 at list price, AML screening $0.20 and ongoing AML monitoring $0.07 per user per year. The pricing page says there are no minimums and no contracts. KYB registry prices are published as staging rates pending production rollout.
+  summary: Didit publishes its prices. The Free plan costs $0 a month and includes $10 of credit each month for work-email sign-ups; Growth ($99 a month) and Scale ($299 a month) include more credit and discounts off list prices, and Enterprise starts at $15,000 a year on an annual contract. A full KYC check costs $0.33 at list price, AML screening $0.20 and ongoing AML monitoring $0.07 per user per year. The pricing page says there are no minimums and no contracts. KYB registry prices are published as staging rates pending production rollout.
   plans:
   - tier: Free
     price: $0 a month
-    note: $10 of credit every month, no card
+    note: $10 of credit every month for work-email sign-ups, no card
     extra: 1,000 monitored transactions a month included
   - tier: Growth
     price: $99 a month
@@ -56,8 +57,8 @@ pricing:
     note: $350 of credit a month, 10% off list prices
     extra: 14-day free trial; 100,000 monitored transactions a month
   - tier: Enterprise
-    price: Custom
-    note: Annual contract, priced by sales
+    price: From $15,000 a year
+    note: Annual contract, prices set in the contract
     extra: Regional or in-country data residency available
   legacy_verified_note: null
   verified: '2026-11'
@@ -218,9 +219,9 @@ pros:
 - Liveness confirmed by iBeta at ISO/IEC 30107-3 Level 2, and an ISO/IEC 27001 certificate from Bureau Veritas is published
 - Identity, database lookups, AML screening, transaction monitoring and wallet screening in one API with SDKs for web and mobile
 cons:
-- Young company, founded in 2023, with a short track record
-- KYB registry checks and document collection are still priced as staging rates pending production rollout
-- Support is by email only, with no published hours or SLA
+- Our console priced AML screening at $0.27 per screening, above the $0.20 on the public pricing page
+- Liveness is confirmed by iBeta at Level 2, while Sumsub and Shufti Pro hold Level 3 letters
+- Founded in 2023, and KYB registry checks are still priced as staging rates pending production rollout
 alternatives:
 - slug: sumsub
   name: Sumsub
@@ -245,10 +246,7 @@ user_reviews:
   legacy_note: null
   praise: []
   criticize: []
-  by_profile:
-  - Startups and small teams that want to test KYC for free and pay public list prices are Didit's clearest fit.
-  - Fintechs and marketplaces that need checks against government databases in several countries can compare Didit's per-country prices before signing.
-  - Banks and large regulated firms should ask for the SOC 2 report and support terms, since support hours and SLAs are not published.
+  by_profile: []
 faq:
 - q: How much does Didit cost?
   a: Didit publishes its prices. A full KYC check costs $0.33 at list price, AML screening $0.20 and ongoing AML monitoring $0.07 per user per year. The Free plan includes $10 of credit a month, Growth costs $99 a month and Scale $299 a month with more credit and discounts, and Enterprise is quoted. The pricing page says there are no minimums or contracts.
@@ -260,8 +258,6 @@ faq:
   a: Didit says sessions are processed and stored in the EU on AWS by default. Other regions, and in-country residency where available, are offered on Enterprise contracts.
 - q: Does Didit verify identities without a document?
   a: Yes. Didit checks ID numbers against government and bureau data in many countries and prices each lookup by country, from $0.05 to $4.30. Examples include NIN and BVN in Nigeria and the Document Verification Service in Australia.
-- q: What is the best alternative to Didit?
-  a: Sumsub and Shufti Pro both have iBeta Level 3 liveness and have operated longer. Zyphe is another self-serve option with a public rate card and AI agents for case reviews.
 segments: []
 capabilities:
   checked: '2026-11'
@@ -296,8 +292,9 @@ capabilities:
     note: AML screening of people and companies
     source: 2
   adverse_media:
-    status: not_disclosed
-    note: not itemised on the pages checked
+    status: 'yes'
+    note: listed in the AML screening step and the KYC plus AML template in our console
+    source: 24
   ongoing_monitoring:
     status: 'yes'
     note: priced per user per year
@@ -307,8 +304,9 @@ capabilities:
     note: real-time, monitored transactions included in plans
     source: 2
   case_management:
-    status: not_disclosed
-    note: not checked on the pages read
+    status: 'yes'
+    note: review queue with assignees, SLA timers and an activity log, seen in our console
+    source: 24
   kyb_registry:
     status: 'yes'
     note: EU, UK, US by state and major Latin American registries; staging rates
@@ -377,9 +375,9 @@ integration:
     note: hosted verification flow and no-code workflow modules
     source: 10
   support_hours:
-    status: not_disclosed
-    note: email only, no hours or SLA
-    source: 8
+    status: 'yes'
+    note: replies within 1 business day on Growth and 24 hours on Scale; AI assistant with a person on request on Free
+    source: 2
 coverage:
   checked: '2026-11'
   countries:
