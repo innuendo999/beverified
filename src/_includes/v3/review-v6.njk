@@ -1,0 +1,298 @@
+{#- Review page V6 (owner, 2026-11-27). Design: canvas "BeVerified: review page V6 for all reviews, proposal".
+    Data: src/_data/providers/<slug>.yml via src/reviews.11tydata.js → v6 (builders in src/_lib/review-v6.js).
+    No Sources list and no [n] refs (owner, 2026-11-27): up to five plain text links in "How this review works".
+    Every block without data is skipped. -#}
+{%- set v = v6 %}{% set sp = v.sponsor %}{% set ev = site.v3.evidence %}
+<main id="main" class="rv6">
+
+<div class="rv6-hero">
+  <svg class="rv6-hero__guilloche" viewBox="0 0 1440 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">{% for g in v.g %}<path d="{{ g.d }}"{% if g.strong %} class="is-strong"{% endif %}/>{% endfor %}</svg>
+  <div class="container rv6-hero__in">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol><li><a href="/">Home</a></li><li class="sep" aria-hidden="true">›</li><li><a href="/providers/">Reviews</a></li><li class="sep" aria-hidden="true">›</li><li aria-current="page">{{ p.name }}</li></ol>
+    </nav>
+    <div class="rv6-hero__grid">
+      <div class="rv6-hero__main">
+        <div class="rv6-brand">
+          {%- if p.logo.wordmark %}<img class="wordmark" src="{{ p.logo.wordmark }}" alt="{{ p.name }} logo">{% else %}<span class="wordmark-text">{{ p.name }}</span>{% endif %}
+          {%- if p.rebranded_to %}<span class="rv6-brand__note">now {{ p.rebranded_to }}</span>{% endif %}
+        </div>
+        <h1 id="h1" class="rv6-h1">{{ p.seo.h1 or (p.name + " Review") }}</h1>
+        {%- if p.verdict %}<p class="rv6-verdict">{{ p.verdict }}</p>{% endif %}
+        <div class="rv6-byline">
+          {%- if author %}<img class="avatar" src="{{ author.photo }}" alt=""><span>By {% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}</span><span class="dot" aria-hidden="true">·</span>{% endif %}
+          {%- if p.last_verified %}<span>Facts re-checked <time datetime="{{ p.last_verified }}">{{ p.last_verified | displayDate }}</time></span><span class="dot" aria-hidden="true">·</span>{% endif %}
+          <a href="#method">How we review</a>
+        </div>
+        {%- if p.link.url %}<p class="rv6-disclosure">{{ site.v3.disclosure }} <a href="{{ site.v3.disclosureHref }}">How we make money</a></p>{% endif %}
+        <div class="rv6-cta">
+          {%- if p.link.url %}<a class="btn btn--primary" href="{{ p.link.url }}" rel="{{ p.link | outRel }}" target="_blank">Visit {{ p.name }} <span aria-hidden="true">↗</span></a>{% if (p.link.type == "paid" or p.link.type == "affiliate") and p.link.label != false %}<span class="paid-note">Sponsored link</span>{% endif %}{% endif %}
+          {%- if v.alts.length %}<a class="btn btn--secondary" href="#alternatives">Compare {{ v.alts.length }} alternative{% if v.alts.length > 1 %}s{% endif %}</a>{% endif %}
+        </div>
+      </div>
+
+      <div class="rv6-side">
+        {%- if sp %}
+        <div class="rv6-ad">
+          <span class="rv6-ad__label">Sponsored</span>
+          <a class="rv6-ad__name" href="/providers/{{ sp.provider.slug }}/">{{ sp.provider.name }}</a>
+          <span class="rv6-ad__meta num">{{ sp.provider.score | score1 }} · #{{ sp.rank }} in {{ sp.category }}</span>
+          <a class="rv6-ad__go" href="{{ sp.provider.link.url }}" data-ad target="_blank">Visit <span aria-hidden="true">↗</span></a>
+        </div>
+        {%- endif %}
+        {%- if p.score != null %}
+        <div class="rv6-score">
+          <div class="rv6-score__in">
+            <div class="rv6-score__label">BeVerified score</div>
+            <div class="rv6-score__row"><span class="rv6-score__num">{{ p.score | score1 }}</span><span class="rv6-score__of">/ 5</span>{% if p.grade %}<span class="rv6-score__grade">{{ p.grade }}</span>{% endif %}</div>
+            <div class="rv6-score__bar" role="img" aria-label="{{ p.score | score1 }} out of 5"><i style="width:{{ p.score * 20 }}%"></i></div>
+            {%- if v.awards.headline %}<a class="rv6-score__award" href="#awards">{% icon "award", "", 16 %}<span>{{ v.awards.headline }}</span></a>{% endif %}
+            {%- if v.evidence %}<p class="rv6-score__ev"><span aria-hidden="true">◆</span> {{ v.evidence }}</p>{% endif %}
+            {%- if p.score_breakdown and p.score_breakdown.length %}
+            <details class="rv6-score__how">
+              <summary>How the {{ p.score | score1 }} is made</summary>
+              <ul>
+                {%- for b in p.score_breakdown %}
+                <li><span>{{ b.criterion }}{% if b.evidence == "independent" %} <span aria-label="independent evidence">◆</span>{% endif %}</span><span class="rv6-score__mini" aria-hidden="true"><i style="width:{{ (b.score or 0) * 20 }}%"></i></span><b class="num">{% if b.score != null %}{{ b.score | score1 }}{% else %}n/a{% endif %}</b></li>
+                {%- endfor %}
+              </ul>
+              <p>Weights {% for b in p.score_breakdown %}{{ b.weight }}%{% if not loop.last %}, {% endif %}{% endfor %}. ◆ independent evidence; the rest is vendor-stated. <a href="#method">How we score</a></p>
+            </details>
+            {%- endif %}
+          </div>
+          <div class="rv6-mrz" aria-hidden="true">{{ (p.name + "<<SCORE<" + (p.score | score1) + "<<CHECKED<" + (p.last_verified or "")) | mrzLine }}</div>
+        </div>
+        {%- endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  {%- if v.facts.length %}
+  <dl class="rv6-facts">
+    {%- for f in v.facts %}<div><dt>{{ f.label }}</dt><dd>{{ f.value }}</dd>{% if f.sub %}<dd class="rv6-facts__sub">{{ f.sub }}</dd>{% endif %}</div>{% endfor %}
+  </dl>
+  {%- endif %}
+  <nav class="rv6-nav" aria-label="On this page">{% for n in v.nav %}<a href="#{{ n[0] }}">{{ n[1] }}</a>{% endfor %}</nav>
+</div>
+
+<div class="container rv6-body">
+
+  {#- Who it's for -#}
+  <section id="fit" aria-labelledby="fit-h">
+    <h2 id="fit-h" class="rv6-h2">Who {{ p.name }} is for</h2>
+    <div class="rv6-fit">
+      <div>
+        <h3 class="rv6-h3">Strongest in</h3>
+        {%- if v.fit.strong.length %}
+        <ul class="rv6-list">{% for s in v.fit.strong %}<li><span class="rv6-mark rv6-mark--yes" aria-hidden="true">✓</span><span><a href="{{ s.url }}">#{{ s.pos }} in {{ s.title }}</a>{% if s.why %}: {{ s.why }}{% endif %}</span></li>{% endfor %}</ul>
+        {%- else %}
+        <ul class="rv6-list">{% for t in p.pros %}<li><span class="rv6-mark rv6-mark--yes" aria-hidden="true">✓</span><span>{{ t }}</span></li>{% endfor %}</ul>
+        {%- endif %}
+      </div>
+      {%- if v.fit.away.length %}
+      <div>
+        <h3 class="rv6-h3">Look elsewhere if you need</h3>
+        <ul class="rv6-list">{% for a in v.fit.away %}<li><span class="rv6-mark rv6-mark--no" aria-hidden="true">✕</span><span>{% if a.need %}{{ a.need | lower }}: {% endif %}<a href="{{ a.url }}">{{ a.name }}</a></span></li>{% endfor %}</ul>
+      </div>
+      {%- endif %}
+    </div>
+    {%- set ur = p.user_ratings[0] if p.user_ratings else null %}
+    {%- if ur %}
+    <p class="rv6-users"><b>{% if ur.url %}<a href="{{ ur.url }}" rel="noopener" target="_blank">{{ ur.platform }}</a>{% else %}{{ ur.platform }}{% endif %} users: {{ ur.rating }} / 5{% if ur.count %} from {{ ur.count }} reviews{% endif %}</b> <span class="c-muted">{% if ur.checked %}{{ ur.checked | displayDate }} · {% endif %}not in our score</span>{% if p.user_reviews.praise and p.user_reviews.praise.length %}<br>Praise: {{ p.user_reviews.praise[0] }}{% if p.user_reviews.criticize and p.user_reviews.criticize.length %} Complaints: {{ p.user_reviews.criticize[0] }}{% endif %}{% endif %}</p>
+    {%- endif %}
+  </section>
+
+  {#- Pricing -#}
+  <section id="pricing" aria-labelledby="pr-h">
+    <div class="rv6-head"><h2 id="pr-h" class="rv6-h2">{{ p.name }} pricing</h2>{% if p.pricing.verified %}<span class="rv6-head__note">Pricing verified: <b>{{ p.pricing.verified | displayDate }}</b></span>{% endif %}</div>
+    {%- if v.plans.length %}
+    <div class="rv6-plans">
+      {%- for pl in v.plans %}
+      <div class="rv6-plan{% if loop.index == 2 and v.plans.length == 3 %} rv6-plan--mid{% endif %}">
+        {%- if pl.tier %}<div class="rv6-plan__tier">{{ pl.tier }}</div>{% endif %}
+        <div class="rv6-plan__price num">{{ pl.price }}</div>
+        {%- if pl.note %}<p>{{ pl.note }}</p>{% endif %}
+        {%- if pl.extra %}<p class="c-muted">{{ pl.extra }}</p>{% endif %}
+      </div>
+      {%- endfor %}
+    </div>
+    {%- elif v.official.length %}
+    <div class="rv6-card"><dl class="rv6-kv">{% for i in v.official %}<div><dt>{{ i.label }}</dt><dd class="num">{{ i.value }}</dd></div>{% endfor %}</dl></div>
+    {%- elif p.pricing.summary %}
+    <p class="rv6-p">{{ p.pricing.summary }}</p>
+    {%- endif %}
+    {%- if v.cost %}
+    <div class="rv6-cost">{% for r in v.cost.rows %}<div><span>At {{ r.n }} checks a month ({{ v.cost.plan }})</span><b class="num">${{ r.total }}, about ${{ r.each }} a check</b></div>{% endfor %}</div>
+    <p class="rv6-small">Worked out from the published plan, before tax. <a href="/publications/kyc-pricing-index/">Compare it in the KYC cost calculator</a></p>
+    {%- endif %}
+    {%- if v.estimates.length %}
+    <div class="rv6-card rv6-card--sunk"><div class="rv6-card__title">Third-party estimates <span class="c-muted">· not official</span></div><dl class="rv6-kv">{% for e in v.estimates %}<div><dt>{{ e.label }}{% if e.verified %} · checked {{ e.verified | displayDate }}{% endif %}</dt><dd class="num">{{ e.value }}</dd></div>{% endfor %}</dl></div>
+    {%- endif %}
+  </section>
+
+  {#- Alternatives -#}
+  {%- if v.alts.length %}
+  <section id="alternatives" aria-labelledby="alt-h">
+    <h2 id="alt-h" class="rv6-h2">Alternatives to {{ p.name }}</h2>
+    <div class="rv6-table" role="table" aria-label="Alternatives to {{ p.name }}">
+      <div class="rv6-table__head" role="row"><span role="columnheader">Provider</span><span role="columnheader">Choose it if you</span><span role="columnheader">Score</span><span role="columnheader"><span class="visually-hidden">Link</span></span></div>
+      {%- for x in v.alts %}
+      <div class="rv6-table__row" role="row">
+        <span role="cell" class="rv6-table__brand">{% if x.q.logo.wordmark %}<img class="wordmark wordmark--sm" loading="lazy" src="{{ x.q.logo.wordmark }}" alt="{{ x.q.name }}">{% else %}<b>{{ x.q.name }}</b>{% endif %}</span>
+        <span role="cell">{% if x.need %}<b class="rv6-table__need">{{ x.need }}</b>{% endif %}{{ x.text }}</span>
+        <span role="cell" class="num">{% if x.q.score != null %}{{ x.q.score | score1 }}{% endif %}</span>
+        <span role="cell"><a href="/providers/{{ x.q.slug }}/">Read review<span class="visually-hidden"> of {{ x.q.name }}</span> →</a></span>
+      </div>
+      {%- endfor %}
+      {%- if sp %}
+      <div class="rv6-table__row rv6-table__row--ad" role="row">
+        <span role="cell" class="rv6-table__brand"><span class="rv6-ad__label">Sponsored</span><b>{{ sp.provider.name }}</b></span>
+        <span role="cell">{{ sp.provider.tagline }} <span class="c-muted">#{{ sp.rank }} in {{ sp.category }}</span></span>
+        <span role="cell" class="num">{{ sp.provider.score | score1 }}</span>
+        <span role="cell"><a href="{{ sp.provider.link.url }}" data-ad target="_blank">Visit ↗</a></span>
+      </div>
+      {%- endif %}
+    </div>
+    {%- if altMatrix %}
+    <details class="rv6-more"><summary>Compare them on price, tests and coverage</summary>
+      {%- set matrix = altMatrix %}{% set matrixCaption = p.name + " and its alternatives: starting price, capabilities and certificates from each provider's record." %}
+      {%- include "v3/cap-matrix.njk" %}
+    </details>
+    {%- endif %}
+  </section>
+  {%- endif %}
+
+  {#- In use: our screenshots and video -#}
+  {%- if v.shots.length or p.video %}
+  <section id="in-use" aria-labelledby="iu-h">
+    <div class="rv6-head"><h2 id="iu-h" class="rv6-h2">{{ p.name }} in use</h2>{% if p.screenshots_meta %}<span class="rv6-head__note">{% if p.screenshots_meta.origin == "vendor" %}Screenshots provided by {{ p.name }}{% else %}Captured by BeVerified{% if p.screenshots_meta.environment %} in {{ p.screenshots_meta.environment }}{% endif %}{% endif %}{% if p.screenshots_meta.sample_data %} · sample data{% endif %}{% if p.screenshots_meta.provided %} · {{ p.screenshots_meta.provided | displayDate }}{% endif %}</span>{% endif %}</div>
+    {%- if p.screenshots_meta.note %}<p class="rv6-p">{{ p.screenshots_meta.note }}</p>{% endif %}
+    {%- if p.video and p.video.youtube %}
+    <div class="rv6-video"><a href="https://www.youtube.com/watch?v={{ p.video.youtube }}" target="_blank" rel="noopener"><span class="rv6-video__play" aria-hidden="true">▶</span><span>{{ p.video.title or ("Watch the " + p.name + " walkthrough") }}</span></a></div>
+    {%- endif %}
+    <div class="rv6-shots">
+      {%- for s in v.shots %}
+      <figure><a href="{{ s.file }}" target="_blank" rel="noopener"><img src="{{ s.file }}" width="{{ s.width }}" height="{{ s.height }}" loading="lazy" alt="{{ s.alt }}"></a><figcaption><b>{{ s.caption }}</b>{% if s.long %} {{ s.long }}{% endif %}</figcaption></figure>
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endif %}
+
+  {#- What it does -#}
+  <section id="product" aria-labelledby="pd-h">
+    <h2 id="pd-h" class="rv6-h2">What {{ p.name }} does</h2>
+    {%- if v.groups.length %}
+    <p class="rv6-legend"><span class="rv6-mark rv6-mark--yes" aria-hidden="true">✓</span> available <span class="rv6-mark rv6-mark--plus" aria-hidden="true">＋</span> higher plan, add-on or partial <span class="rv6-mark rv6-mark--no" aria-hidden="true">✕</span> not offered <span class="rv6-mark" aria-hidden="true">?</span> not disclosed</p>
+    <div class="rv6-jobs">
+      {%- for g in v.groups %}
+      <div class="rv6-card">
+        <h3 class="rv6-h3">{{ g.title }}</h3>
+        <ul class="rv6-caps">
+          {%- for r in g.rows %}
+          {%- set word = {"yes": "Available", "plus": "Higher plan, add-on or partial", "no": "Not offered", "unknown": "Not disclosed"} %}
+          <li><span class="rv6-mark{% if r.mark != 'text' and r.mark != 'unknown' %} rv6-mark--{{ r.mark }}{% endif %}" aria-hidden="true">{% if r.mark == "yes" %}✓{% elif r.mark == "plus" %}＋{% elif r.mark == "no" %}✕{% elif r.mark == "text" %}·{% else %}?{% endif %}</span><span>{{ r.label }}{% if r.mark != "text" %}<span class="visually-hidden">: {{ word[r.mark] }}</span>{% endif %}{% if r.value %}: {{ r.value }}{% endif %}</span>{% if r.note %}<small>{{ r.note }}</small>{% endif %}</li>
+          {%- endfor %}
+        </ul>
+      </div>
+      {%- endfor %}
+    </div>
+    {%- elif p.features and p.features.length %}
+    <ul class="rv6-list">{% for f in p.features %}<li><span class="rv6-mark rv6-mark--yes" aria-hidden="true">✓</span><span>{{ f }}</span></li>{% endfor %}</ul>
+    {%- endif %}
+  </section>
+
+  {#- Trust record -#}
+  <section id="trust" aria-labelledby="tr-h">
+    <h2 id="tr-h" class="rv6-h2">Trust record</h2>
+    <div class="rv6-doc">
+      <div class="rv6-doc__head">
+        <span class="rv6-seal" aria-hidden="true">BV</span>
+        <div><p class="rv6-doc__kicker">{{ v.legal or p.name }}{% for f in p.facts %}{% if f.label == "HQ" %} · {{ f.value }}{% endif %}{% if f.label == "Founded" %} · founded {{ f.value }}{% endif %}{% endfor %}</p>
+        <p class="rv6-doc__title">{{ v.confirmed.length }} confirmed with the issuer · {{ v.claimed.length }} vendor claim{% if v.claimed.length != 1 %}s{% endif %} · {{ v.incidents.length }} incident{% if v.incidents.length != 1 %}s{% endif %}</p></div>
+      </div>
+      <div class="rv6-doc__body">
+        {%- if v.confirmed.length %}
+        <div><h3 class="rv6-doc__h">Confirmed with the issuer</h3>
+        <div class="rv6-certs">{% for c in v.confirmed %}<div><span class="rv6-ok">✓ {{ c.name }}</span>{% if c.what %}<span>{{ c.what }}</span>{% endif %}</div>{% endfor %}</div></div>
+        {%- endif %}
+        {%- if v.claimed.length %}
+        <div><h3 class="rv6-doc__h">{{ p.name }} says it holds <span class="c-muted">(no register entry or letter found)</span></h3>
+        <div class="rv6-chips">{% for c in v.claimed %}<span>◇ {{ c.name }}</span>{% endfor %}</div></div>
+        {%- endif %}
+        {%- if not v.confirmed.length and not v.claimed.length %}<p class="rv6-p">No security certificate or independent test is published or claimed.</p>{% endif %}
+        {%- for x in v.incidents %}
+        <div class="rv6-inc"><span class="num"><time datetime="{{ x.date | iso }}">{{ x.date | displayDate }}</time></span><div><b>{{ x.title }}</b><p>{{ x.summary }} <a href="/incidents/#{{ x.id }}">Full entry and vendor reply</a></p></div></div>
+        {%- endfor %}
+        {%- if v.ownership %}<p class="rv6-p"><b>Ownership:</b> {{ v.ownership }}.</p>{% endif %}
+        {%- if v.company.length %}<dl class="rv6-kv">{% for f in v.company %}<div><dt>{{ f.label }}{% if f.evidence == "independent" %} <span aria-label="independent">◆</span>{% endif %}</dt><dd>{{ f.value }}</dd></div>{% endfor %}</dl>{% endif %}
+        {%- if p.product_history and p.product_history.length %}
+        <div><h3 class="rv6-doc__h">Company timeline</h3>
+        <ol class="rv6-timeline">{% for e in p.product_history %}<li><span class="num"><time datetime="{{ e.date }}">{{ e.date | displayDate }}</time></span><span>{{ e.text }}</span></li>{% endfor %}</ol></div>
+        {%- endif %}
+        {%- if certTrackerRow %}<p class="rv6-small"><a href="{{ certTrackerRow }}">Compare certificates in the KYC Certification Tracker</a></p>{% endif %}
+      </div>
+      <div class="rv6-mrz rv6-mrz--light" aria-hidden="true">{{ ((v.legal or p.name) + "<<CONFIRMED<" + v.confirmed.length + "<<CLAIMED<" + v.claimed.length + "<<INC<" + v.incidents.length) | mrzLine }}</div>
+    </div>
+  </section>
+
+  {#- Pros and cons -#}
+  <section id="pros-cons" aria-labelledby="pc-h">
+    <h2 id="pc-h" class="rv6-h2">Pros and cons</h2>
+    <div class="rv6-pc">
+      <div class="rv6-card"><h3 class="rv6-h3">Pros</h3><ul class="rv6-list">{% for t in p.pros %}<li><span class="rv6-mark rv6-mark--yes" aria-hidden="true">+</span><span>{{ t }}</span></li>{% endfor %}</ul></div>
+      <div class="rv6-card"><h3 class="rv6-h3">Cons</h3><ul class="rv6-list">{% for t in p.cons %}<li><span class="rv6-mark rv6-mark--no" aria-hidden="true">−</span><span>{{ t }}</span></li>{% endfor %}</ul></div>
+    </div>
+  </section>
+
+  {#- Awards -#}
+  {%- if v.awards.total %}
+  <section id="awards" aria-labelledby="aw-h">
+    <h2 id="aw-h" class="rv6-h2">{{ p.name }}’s awards</h2>
+    <div class="rv6-awards">
+      {%- for a in v.awards.featured %}
+      <a class="rv6-award" href="{{ a.rankingUrl }}"><span class="rv6-award__icon">{% icon "award", "", 18 %}</span><span><b>{{ a.award }} · {{ a.short }}</b>{% if a.reason %}<span>{{ a.reason }}</span>{% endif %}</span></a>
+      {%- endfor %}
+    </div>
+    {%- if v.awards.more.length %}
+    <details class="rv6-more"><summary>{{ v.awards.more.length }} more award{% if v.awards.more.length > 1 %}s{% endif %} at #2 and #3</summary>
+      <ul class="rv6-awardlist">{% for a in v.awards.more %}<li><b class="num">#{{ a.rank }}</b><span>{{ a.award }}</span><a href="{{ a.rankingUrl }}">{{ a.short }}</a></li>{% endfor %}</ul>
+    </details>
+    {%- endif %}
+    <p class="rv6-small"><a href="/about/#{{ p.slug }}">Badge for {{ p.name }}’s site</a></p>
+  </section>
+  {%- endif %}
+
+  {#- FAQ -#}
+  {%- if p.faq and p.faq.length %}
+  <section id="faq" aria-labelledby="faq-h">
+    <h2 id="faq-h" class="rv6-h2">FAQ</h2>
+    <div class="faq">{% for f in p.faq %}<details{% if loop.first %} open{% endif %}><summary><h3>{{ f.q }}</h3></summary><p>{{ f.a }}</p></details>{% endfor %}</div>
+  </section>
+  {%- endif %}
+
+  {#- How this review works: author, policies, up to five sources, change log -#}
+  <section id="method" aria-labelledby="mt-h">
+    <h2 id="mt-h" class="rv6-h2">How this review works</h2>
+    <div class="rv6-card rv6-method">
+      {%- if author %}
+      <div class="rv6-author"><img class="avatar avatar--lg" src="{{ author.photo }}" alt="{{ author.name }}"><p><b>{{ author.name }}</b>, {{ author.role }}{% if p.last_verified %}, re-checked the facts on {{ p.last_verified | displayDate }}{% endif %}{% if v.sources.length %}. Main sources: {% for s in v.sources %}<a href="{{ s.url }}" rel="noopener" target="_blank">{{ s.label }}</a>{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}. {% if author.url %}<a href="{{ author.url }}">Author profile</a>{% endif %}</p></div>
+      {%- endif %}
+      <div class="rv6-policies">
+        <a href="{{ site.v3.methodologyHref }}"><b>How we score</b><span>{{ p.score_breakdown.length or 6 }} criteria, weights and evidence levels · method {{ p.methodology or "v3.1" }}</span></a>
+        <a href="/about/#awards"><b>How awards work</b><span>Top 3 of each ranking, from the score order, never sold</span></a>
+        <a href="{{ site.v3.disclosureHref }}"><b>How we make money</b><span>Commissions and labelled sponsor slots; neither moves a score</span></a>
+      </div>
+      {%- if p.changes and p.changes.length %}
+      <div class="rv6-changes"><b>What changed</b><ul>{% for c in p.changes %}<li><span class="num">{{ c.date | displayDate }}</span> {{ c.text }}</li>{% endfor %}</ul></div>
+      {%- endif %}
+    </div>
+    {%- set reading = collections.articles | articlesAbout("providers", p.slug, 3) %}
+    {%- if reading.length %}
+    <p class="rv6-next"><b>Read next</b> {% for a in reading %}<a href="{{ a.url }}">{{ a.data.title }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>
+    {%- endif %}
+  </section>
+
+</div>
+</main>

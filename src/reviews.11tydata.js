@@ -8,6 +8,12 @@ import { reviewSponsor, shortLabel } from "./_lib/placements.js";
 import { profileFor, heroFacts, networkRows, factRows, certRows, incidentRow, fitRows, questions, sourceGroups, reviewYear, pricingCalc, productJobs } from "./_lib/review-v4.js";
 import { fitCheckData, deployHero } from "./_lib/fit-check.js";
 import { isListed as inCertTracker } from "./_lib/cert-tracker.js";
+import { productGroups, keyFacts, bestEvidence, awardsFor, fitBlock, costAtVolume, keySources } from "./_lib/review-v6.js";
+import { currentAwards } from "./_lib/awards.js";
+import { guilloche } from "./_lib/hero.js";
+
+let awardList = null; // computed once per build
+const awardsAll = () => (awardList ??= currentAwards().out);
 
 export default {
   pagination: { data: "providers", size: 1, alias: "p", resolve: "values", addAllPagesToCollections: true },
@@ -90,6 +96,48 @@ export default {
           })[0] || null,
         pricingOfficial: (p.pricing?.items || []).filter((i) => i.kind !== "third_party"),
         pricingEstimates: (p.pricing?.items || []).filter((i) => i.kind === "third_party"),
+      };
+    },
+    // Review page V6 (owner, 2026-11-27): every profile without v4. Template src/_includes/v3/review-v6.njk.
+    v6: (d) => {
+      const p = d.p;
+      if (profileFor(p, d.reviewProfiles)?.v4) return null;
+      const ctx = { rankings: d.rankings, providers: d.providers, categories: d.categories, menu: d.site.v3.menu };
+      const alts = (p.choose_instead || []).filter((a) => a.slug && d.providers[a.slug])
+        .map((a) => ({ text: a.text, need: a.need || null, q: d.providers[a.slug] }));
+      const official = (p.pricing?.items || []).filter((i) => i.kind !== "third_party");
+      return {
+        year: reviewYear(p),
+        g: guilloche(),
+        facts: keyFacts(p),
+        evidence: bestEvidence(p),
+        awards: awardsFor(p, awardsAll(), d.rankings),
+        fit: fitBlock(p, d.rankings, d.categories, d.providers),
+        alts,
+        sponsor: reviewSponsor(d.placements, ctx, p.slug),
+        plans: p.pricing?.plans || [],
+        official,
+        estimates: (p.pricing?.items || []).filter((i) => i.kind === "third_party"),
+        cost: costAtVolume(p),
+        groups: productGroups(p),
+        confirmed: (p.certifications || []).filter((c) => c.status === "confirmed"),
+        claimed: (p.certifications || []).filter((c) => c.status === "vendor_stated"),
+        incidents: (d.incidents?.items || []).filter((x) => x.slug === p.slug).sort((a, b) => b.date.localeCompare(a.date)),
+        company: companyFacts(p).filter((f) => !["Founded", "HQ", "Headquarters", "Regions", "Coverage"].includes(f.label)),
+        ownership: p.track_record?.ownership?.note || null,
+        legal: String(p.what_is?.[0] || "").match(/legal name ([^)]+)\)/)?.[1] || null,
+        sources: keySources(p),
+        shots: (p.screenshots || []).map((s, i) => ({ ...s, i })),
+        nav: [
+          ["fit", "Who it’s for", true],
+          ["pricing", "Pricing", true],
+          ["alternatives", "Alternatives", alts.length > 0],
+          ["in-use", "In use", (p.screenshots || []).length > 0 || !!p.video],
+          ["product", "What it does", true],
+          ["trust", "Trust record", true],
+          ["awards", "Awards", awardsAll().some((x) => x.slug === p.slug)],
+          ["faq", "FAQ", (p.faq || []).length > 0],
+        ].filter((n) => n[2]),
       };
     },
     navItems: (d) => {
