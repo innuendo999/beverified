@@ -123,6 +123,14 @@ facts:
   value: 4,000+ companies, incl. Bybit and Wirex
   source: 2
   evidence: vendor
+- label: AML screening sub-processors
+  value: ComplyAdvantage and AML Watcher
+  source: 46
+  evidence: vendor
+- label: AI processing
+  value: OpenAI, Azure OpenAI and Amazon Bedrock extract document data; Azure inference may run in any region
+  source: 46
+  evidence: vendor
 pros:
 - Transparent, published pricing, which is rare among KYC providers
 - 'Unified platform: KYC, KYB, monitoring, and fraud prevention in one suite'
@@ -221,8 +229,8 @@ capabilities:
     source: 1
   deployment:
     status: cloud
-    note: AWS with regional data processing
-    source: 12
+    note: AWS, data hosted in Germany by default; Google Cloud where an AWS region is unavailable; local storage in Turkey on request
+    source: 46
   nfc:
     status: 'yes'
     note: Mobile SDK reads ePassport chips, on request
@@ -753,6 +761,10 @@ sources:
   publisher: Sumsub
   url: https://sumsub.com/customers/aml-compliance/
   accessed: '2026-11'
+- title: Third-party processors and affiliates (updated 2 Nov 2026)
+  publisher: Sumsub
+  url: https://docs.sumsub.com/docs/third-party-processors-and-affiliates
+  accessed: '2026-11-27'
 entity:
   wikidata: null
   kg_mid: null
