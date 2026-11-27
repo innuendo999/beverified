@@ -24,7 +24,7 @@
           {%- if p.last_verified %}<span>Facts re-checked <time datetime="{{ p.last_verified }}">{{ p.last_verified | displayDate }}</time></span><span class="dot" aria-hidden="true">·</span>{% endif %}
           <a href="#method">How we review</a>
         </div>
-        {%- if p.link.url %}<p class="rv6-disclosure">{{ site.v3.disclosure }} <a href="{{ site.v3.disclosureHref }}">How we make money</a></p>{% endif %}
+        {%- if p.link.url and (p.link.type == "affiliate" or p.link.type == "paid") %}<p class="rv6-disclosure">{{ site.v3.disclosure }} <a href="{{ site.v3.disclosureHref }}">How we make money</a></p>{% endif %}
         <div class="rv6-cta">
           {%- if p.link.url %}<a class="btn btn--primary" href="{{ p.link.url }}" rel="{{ p.link | outRel }}" target="_blank">Visit {{ p.name }} <span aria-hidden="true">↗</span></a>{% if (p.link.type == "paid" or p.link.type == "affiliate") and p.link.label != false %}<span class="paid-note">Sponsored link</span>{% endif %}{% endif %}
           {%- if v.alts.length %}<a class="btn btn--secondary" href="#alternatives">Compare {{ v.alts.length }} alternative{% if v.alts.length > 1 %}s{% endif %}</a>{% endif %}
@@ -56,7 +56,6 @@
                 <li><span>{{ b.criterion }}{% if b.evidence == "independent" %} <span aria-label="independent evidence">◆</span>{% endif %}</span><span class="rv6-score__mini" aria-hidden="true"><i style="width:{{ (b.score or 0) * 20 }}%"></i></span><b class="num">{% if b.score != null %}{{ b.score | score1 }}{% else %}n/a{% endif %}</b></li>
                 {%- endfor %}
               </ul>
-              <p>Weights {% for b in p.score_breakdown %}{{ b.weight }}%{% if not loop.last %}, {% endif %}{% endfor %}. ◆ independent evidence; the rest is vendor-stated. <a href="#method">How we score</a></p>
             </details>
             {%- endif %}
           </div>
