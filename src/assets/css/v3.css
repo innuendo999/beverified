@@ -2581,6 +2581,8 @@ td > .cg-v:first-child { margin-left: 0; }
 .rv6-score__num { font-size: 56px; font-weight: 600; letter-spacing: -0.03em; line-height: 1; }
 .rv6-score__of { font-size: 18px; color: #B8C2D3; }
 .rv6-score__grade { margin-left: auto; font-size: 16px; font-weight: 500; }
+.rv6-score__legacy { margin: -4px 0 10px; font-size: 13px; color: #B8C2D3; }
+.rv6-score__legacy a { color: #9DB6FF; }
 .rv6-score__bar { height: 6px; background: #2A3856; border-radius: 3px; margin-bottom: 14px; }
 .rv6-score__bar i { display: block; height: 100%; background: #fff; border-radius: 3px; }
 .rv6-score__award { display: flex; gap: 8px; align-items: center; color: #fff; font-size: 14px; }

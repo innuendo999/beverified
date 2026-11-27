@@ -44,7 +44,7 @@
         <div class="rv6-score">
           <div class="rv6-score__in">
             <div class="rv6-score__label">BeVerified score</div>
-            <div class="rv6-score__row"><span class="rv6-score__num">{{ p.score | score1 }}</span><span class="rv6-score__of">/ 5</span>{% if p.score %}<span class="rv6-score__grade">{{ p.score | grade }}</span>{% endif %}</div>
+            <div class="rv6-score__row"><span class="rv6-score__num">{{ p.score | score1 }}</span><span class="rv6-score__of">/ 5</span>{% set gw = p.score | grade(p.methodology) %}{% if gw %}<span class="rv6-score__grade">{{ gw }}</span>{% endif %}</div>{% if p.score and not gw %}<p class="rv6-score__legacy">Method {{ p.methodology }} · re-score pending <a href="{{ site.v3.methodologyHref }}">Why</a></p>{% endif %}
             <div class="rv6-score__bar" role="img" aria-label="{{ p.score | score1 }} out of 5"><i style="width:{{ p.score * 20 }}%"></i></div>
             {%- if v.awards.headline %}<a class="rv6-score__award" href="#awards">{% icon "award", "", 16 %}<span>{{ v.awards.headline }}</span></a>{% endif %}
             {%- if v.evidence %}<p class="rv6-score__ev"><span aria-hidden="true">◆</span> {{ v.evidence }}</p>{% endif %}
@@ -279,7 +279,7 @@
       <div class="rv6-author"><img class="avatar avatar--lg" src="{{ author.photo }}" alt="{{ author.name }}"><p><b>{{ author.name }}</b>, {{ author.role }}{% if p.last_verified %}, re-checked the facts on {{ p.last_verified | displayDate }}{% endif %}.{% if author.url %}<br><a href="{{ author.url }}">Author profile</a>{% endif %}</p></div>
       {%- endif %}
       <div class="rv6-policies">
-        <a href="{{ site.v3.methodologyHref }}"><b>How we score</b><span>{{ p.score_breakdown.length or 6 }} criteria, weights and evidence levels · method {{ p.methodology or "v3.1" }}</span></a>
+        <a href="{{ site.v3.methodologyHref }}"><b>How we score</b><span>{{ p.score_breakdown.length or 6 }} criteria, weights and evidence levels · method {{ p.methodology }}</span></a>
         <a href="/about/#awards"><b>How awards work</b><span>Top 3 of each ranking, from the score order, never sold</span></a>
         <a href="{{ site.v3.disclosureHref }}"><b>How we make money</b><span>Commissions and labelled sponsor slots; neither moves a score</span></a>
       </div>

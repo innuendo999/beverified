@@ -57,7 +57,7 @@ export default {
         a, b,
         crit,
         glance: [
-          ["Our score", `${a.score.toFixed(1)} out of 5 (${grade(a.score)})`, `${b.score.toFixed(1)} out of 5 (${grade(b.score)})`],
+          ["Our score", `${a.score.toFixed(1)} out of 5 (${grade(a.score, a.methodology) || "method " + a.methodology})`, `${b.score.toFixed(1)} out of 5 (${grade(b.score, b.methodology) || "method " + b.methodology})`],
           ["Starting price", fact(a, "From"), fact(b, "From")],
           ["Founded", fact(a, "Founded"), fact(b, "Founded")],
           ["Headquarters", fact(a, "HQ"), fact(b, "HQ")],
