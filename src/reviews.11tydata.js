@@ -120,6 +120,7 @@ export default {
         estimates: (p.pricing?.items || []).filter((i) => i.kind === "third_party"),
         cost: costAtVolume(p),
         groups: productGroups(p),
+        notDisclosed: productGroups(p).flatMap((g) => g.unknown),
         confirmed: (p.certifications || []).filter((c) => c.status === "confirmed"),
         claimed: (p.certifications || []).filter((c) => c.status === "vendor_stated"),
         incidents: (d.incidents?.items || []).filter((x) => x.slug === p.slug).sort((a, b) => b.date.localeCompare(a.date)),

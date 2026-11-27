@@ -2719,3 +2719,20 @@ td > .cg-v:first-child { margin-left: 0; }
   .rv6-h2 { font-size: 24px; }
   .rv6-mrz { display: none; }
 }
+
+/* V6 "What it does", compact (owner, 2026-11-27): one row per job, capabilities as chips */
+.rv6-jobs { display: flex; flex-direction: column; gap: 0; grid-template-columns: none; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-tile); }
+.rv6-job { display: grid; grid-template-columns: 170px minmax(0,1fr); gap: 16px; padding: 14px 18px; border-top: 1px solid var(--line-soft); }
+.rv6-job:first-child { border-top: 0; }
+.rv6-job__t { font-size: 14px; font-weight: 600; padding-top: 5px; }
+.rv6-chips2 { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.rv6-chip2 { display: inline-flex; align-items: baseline; gap: 5px; border: 1px solid var(--line); border-radius: var(--radius-pill); padding: 4px 10px; font-size: 13px; color: var(--ink); background: var(--surface); }
+.rv6-chip2 > span:first-child { color: var(--faint); font-weight: 600; }
+.rv6-chip2--yes > span:first-child { color: var(--ok); }
+.rv6-chip2--plus { border-color: #C9D6F7; background: var(--accent-soft); }
+.rv6-chip2--plus > span:first-child { color: var(--accent); }
+.rv6-chip2--no { color: var(--muted); }
+.rv6-chip2--no > span:first-child { color: var(--bad); }
+.rv6-chip2 small { font-size: 12px; color: var(--muted); }
+.rv6-chip2 small::before { content: "· "; }
+@media (max-width: 640px) { .rv6-job { grid-template-columns: minmax(0,1fr); gap: 8px; } .rv6-job__t { padding-top: 0; } }

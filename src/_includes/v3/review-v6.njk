@@ -184,20 +184,21 @@
   <section id="product" aria-labelledby="pd-h">
     <h2 id="pd-h" class="rv6-h2">What {{ p.name }} does</h2>
     {%- if v.groups.length %}
-    <p class="rv6-legend"><span class="rv6-mark rv6-mark--yes" aria-hidden="true">✓</span> available <span class="rv6-mark rv6-mark--plus" aria-hidden="true">＋</span> higher plan, add-on or partial <span class="rv6-mark rv6-mark--no" aria-hidden="true">✕</span> not offered <span class="rv6-mark" aria-hidden="true">?</span> not disclosed</p>
+    <p class="rv6-legend"><span class="rv6-mark rv6-mark--yes" aria-hidden="true">✓</span> available <span class="rv6-mark rv6-mark--plus" aria-hidden="true">＋</span> higher plan, add-on or partial <span class="rv6-mark rv6-mark--no" aria-hidden="true">✕</span> not offered </p>
     <div class="rv6-jobs">
+      {%- set word = {"yes": "Available", "plus": "Higher plan, add-on or partial", "no": "Not offered"} %}
       {%- for g in v.groups %}
-      <div class="rv6-card">
-        <h3 class="rv6-h3">{{ g.title }}</h3>
-        <ul class="rv6-caps">
+      <div class="rv6-job">
+        <h3 class="rv6-job__t">{{ g.title }}</h3>
+        <ul class="rv6-chips2">
           {%- for r in g.rows %}
-          {%- set word = {"yes": "Available", "plus": "Higher plan, add-on or partial", "no": "Not offered", "unknown": "Not disclosed"} %}
-          <li><span class="rv6-mark{% if r.mark != 'text' and r.mark != 'unknown' %} rv6-mark--{{ r.mark }}{% endif %}" aria-hidden="true">{% if r.mark == "yes" %}✓{% elif r.mark == "plus" %}＋{% elif r.mark == "no" %}✕{% elif r.mark == "text" %}·{% else %}?{% endif %}</span><span>{{ r.label }}{% if r.mark != "text" %}<span class="visually-hidden">: {{ word[r.mark] }}</span>{% endif %}{% if r.value %}: {{ r.value }}{% endif %}</span>{% if r.note %}<small>{{ r.note }}</small>{% endif %}</li>
+          <li class="rv6-chip2{% if r.mark != 'text' %} rv6-chip2--{{ r.mark }}{% endif %}"><span aria-hidden="true">{% if r.mark == "yes" %}✓{% elif r.mark == "plus" %}＋{% elif r.mark == "no" %}✕{% else %}·{% endif %}</span>{{ r.label }}{% if r.value %}: {{ r.value }}{% endif %}{% if r.mark != "text" %}<span class="visually-hidden">: {{ word[r.mark] }}</span>{% endif %}{% if r.note %}<small>{{ r.note }}</small>{% endif %}</li>
           {%- endfor %}
         </ul>
       </div>
       {%- endfor %}
     </div>
+    {%- if v.notDisclosed.length %}<p class="rv6-small">Not disclosed: {{ v.notDisclosed | join(", ") | lower }}.</p>{% endif %}
     {%- elif p.features and p.features.length %}
     <ul class="rv6-list">{% for f in p.features %}<li><span class="rv6-mark rv6-mark--yes" aria-hidden="true">✓</span><span>{{ f }}</span></li>{% endfor %}</ul>
     {%- endif %}

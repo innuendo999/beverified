@@ -55,8 +55,12 @@ export function productGroups(p) {
       if (!text && !MARK[v.status]) continue;
       rows.push({ label, mark: text ? "text" : MARK[v.status], value: text || null, note: v.note ? String(v.note).slice(0, 70) : "" });
     }
-    // A group where we know nothing is noise: keep it only if at least one row is known.
-    if (rows.some((r) => r.mark !== "unknown")) out.push({ title, rows });
+    // Compact view (owner, 2026-11-27): chips per job; a note only where it says which plan or add-on;
+    // rows we know nothing about go to one "not disclosed" line under the grid.
+    const known = rows.filter((r) => r.mark !== "unknown");
+    if (!known.length) continue;
+    out.push({ title, rows: known.map((r) => ({ ...r, note: r.mark === "plus" || r.mark === "text" ? r.note.split(/[;,]/)[0] : "" })),
+      unknown: rows.filter((r) => r.mark === "unknown").map((r) => r.label) });
   }
   return out;
 }
