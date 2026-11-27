@@ -23,8 +23,8 @@ link:
   type: null
   legacy_rel: null
 last_verified: '2026-10-22'
-updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
-verdict: AMLRanger (styled AML Ranger) is not a separate company. It is an AI screening assistant made by Ondato, the London-headquartered KYC and AML vendor, and went live in October 2025. It runs sanctions, PEP and adverse-media checks and returns short sourced reports, and it is free to use with monthly credits. It suits quick individual checks; teams that need case management, ongoing monitoring or a documented API should look at Ondato's main AML software or a dedicated screening platform.
+updated: '2026-11-27'   # last content edit; last_verified = last fact re-check
+verdict: 'AMLRanger is a free AI screening assistant from Ondato for quick sanctions, PEP and adverse-media checks that return short sourced reports. It is free with monthly credits, but the allowance is not published. It has no announced case management, ongoing monitoring or public API, so teams that need those should look at Ondato''s main AML software.'
 what_is:
 - AMLRanger is an AI-powered AML screening assistant launched by Ondato in October 2025. It offers three assistants (PEP Screening Ranger, Sanctions Screening Ranger and Adverse Media Ranger) that search global and local sources in real time and summarise findings with sources, in under 30 seconds per check according to Ondato. It is free to use with monthly credits. Ondato was founded in 2018, is headquartered in London and runs R&D in Vilnius, Lithuania.
 features:

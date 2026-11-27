@@ -23,8 +23,8 @@ link:
   url: https://www.prove.com
   type: none
 last_verified: '2026-11-24'
-updated: '2026-11-24'   # last content edit; last_verified = last fact re-check
-verdict: 'Prove suits US banks, fintechs, gaming operators and marketplaces that want to verify and re-authenticate customers through their phone number, with few extra steps for the user. It checks that the user holds the phone, links the number to identity data in its identity graph, pre-fills the sign-up form and screens PEP and sanctions lists. It runs no document, selfie or liveness checks today, so flows that need them need a second vendor. Prices are not published.'
+updated: '2026-11-27'   # last content edit; last_verified = last fact re-check
+verdict: 'Prove is an identity verification provider for US banks, fintechs and marketplaces that want to verify customers through their phone number with few extra steps. Prices are quoted by sales; the developer sandbox is free. It runs no document, selfie or liveness checks today, so those need a second vendor.'
 what_is:
 - Prove Identity is a New York company founded in 2008 as Payfone. It renamed itself Prove in July 2020, when it announced a $100 million investment and bought the mobile authentication business of Early Warning Services. In January 2025 it acquired Portabl, a reusable digital ID start-up. Its homepage says more than 2,000 companies use it, including 19 of the 20 top banks.
 - Prove's products start from the phone number. Pre-Fill checks possession of the phone (Mobile Auth, Instant Link or a one-time code) and returns verified identity data to fill in a form; Prove Identity and Account Opening match identity data and screen it; Unified Authentication re-authenticates returning users; Verified User shows a trusted status that platforms can reuse. Prove says its network covers more than 200 countries and regions. In June 2026 it announced biometric products with liveness and document checks as in development.

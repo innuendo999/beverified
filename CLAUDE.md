@@ -108,6 +108,8 @@ Category quick answer (`quick_answer` in `src/_data/categories/<slug>.yml`), wri
 
 Category meta description (`seo.description`, owner 2026-11-27), checked by `node scripts/checks/descriptions.mjs` in `npm run check` and CI: name the #1 provider first, keep any other ranked providers in rank order, never name a reviewed provider that is not in that ranking, and take the criteria from the quick answer's last sentence. Aim for 160 characters at most (longer is reported as a note). Set in bulk with `python3 scripts/set-descriptions.py scripts/seo-data/<batch>.json`.
 
+Review verdict (`verdict` in `src/_data/providers/<slug>.yml`, the hero text; owner 2026-11-27), checked by `node scripts/checks/verdicts.mjs` in `npm run check` and CI: three sentences built on the provider's `primary_category`: (1) what it is in that category, for whom and why, naming the provider so the sentence reads on its own; (2) the entry price, or that prices are not published; (3) the main limit or risk. At most 4 sentences and 70 words. "Top pick" only for the #1 of the primary-category ranking. Every figure must already be in the record. Set in bulk with `python3 scripts/set-verdicts.py scripts/seo-data/<batch>.json`.
+
 Humanizer never adds facts. If style and provenance conflict, provenance wins. Do not touch front matter, data, links, quotes or provider names while humanizing.
 
 ## Git
