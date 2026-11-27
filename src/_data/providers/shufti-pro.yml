@@ -82,6 +82,21 @@ pricing:
     kind: official
     source: 1
     verified: '2026-11'
+  - label: Sandbox trial, in our Backoffice account
+    value: 50 free verifications for 15 days in the sandbox; seen 27 Nov 2026
+    kind: official
+    source: 37
+    verified: '2026-11'
+  - label: Pay as you go on Free Forever, in our Backoffice account
+    value: $2 per verification beyond the 10 free ones, no volume commitment; seen 27 Nov 2026
+    kind: official
+    source: 37
+    verified: '2026-11'
+  - label: Essentials, in our Backoffice account
+    value: $0.95 per verification at the default slider volume of 4,500 (range 500 to 20,000); the page shows $1.50 as the starting price; seen 27 Nov 2026
+    kind: official
+    source: 37
+    verified: '2026-11'
 facts:
 - label: From
   value: Free (10/mo); $1.50/verification
@@ -106,6 +121,18 @@ facts:
   value: iBeta ISO/IEC 30107-3 Level 3 (Apr 2026)
   source: 5
   evidence: independent
+- label: AML screening options
+  value: Sanctions, warnings, fitness and probity, SIP, SIE, insolvency and PEP classes 1 to 4; fuzzy match threshold (85 by default), relatives and close associates, aliases, photo-based screening and batch screening; seen in the sandbox, 27 Nov 2026
+  source: 37
+  evidence: vendor
+- label: AI Compliance Co-Pilot
+  value: Beta; sorts screening hits into potential true positive, potential match, uncertain, potential false positive and potential true negative, with a written narrative; seen in the sandbox, 27 Nov 2026
+  source: 37
+  evidence: vendor
+- label: Journey library
+  value: Ready-made onboarding journeys by regulation, for example UK Gambling Commission, Austria FMA and German BaFin; seen in the sandbox, 27 Nov 2026
+  source: 37
+  evidence: vendor
 pros:
 - Coverage of 240+ countries and territories and 150+ languages, among the widest of the providers we review
 - Own technology stack, not resold third-party models
@@ -597,6 +624,10 @@ sources:
   publisher: Shufti
   url: https://shuftipro.com/collaterals-library/VIdeoIdent-Germany.pdf
   accessed: '2026-11'
+- title: Shufti Backoffice, sandbox account (BeVerified, signed in)
+  publisher: Shufti
+  url: https://backoffice.shuftipro.com/
+  accessed: '2026-11-27'
 entity:
   wikidata: null
   kg_mid: null
@@ -613,6 +644,68 @@ verification_notes:
 - Homepage claims G2 4.6 and Trustpilot 4.8. The G2 page shows 4.5 from 155 reviews (recorded). Trustpilot was not recorded; user_ratings use G2, Capterra and Gartner Peer Insights only. No Gartner Peer Insights page for Shufti was found.
 - Capterra reviews (source 12) include end users who completed a check, not only business buyers; its themes (image capture rejections, glitches) were not added to user_reviews.
 - '2026-10-22 Cyber Essentials Plus: Shufti''s Cyber Essentials page (source 14) says certificates are renewed annually, available on request and verifiable on the IASME certificate checker, but gives no number or dates. The IASME search could not be opened from our tools; status stays as recorded until the register is checked by hand.'
+clips:
+- file: /assets/video/shufti-pro/aml-screening.mp4
+  poster: /assets/img/screens/shufti-pro/aml-screening-poster.webp
+  width: 1280
+  height: 624
+  seconds: 13
+  caption: AML screening of our editor, with the AI Co-Pilot
+  alt: Screen recording of a Shufti AML check on the name Andrii Klymenko, its settings, 12 results with a high risk level, and the AI Compliance Co-Pilot sorting the hits
+  long: We screened our editor's name at the default 85% match threshold. Shufti returned 12 people with similar names and a "failed" decision under its default risk rules; the AI Co-Pilot then marked 11 as uncertain and 1 as a likely false positive. We blurred the other people's details.
+screenshots:
+- file: /assets/img/screens/shufti-pro/01-aml-search-settings.webp
+  width: 1422
+  height: 694
+  caption: AML search settings
+  alt: Shufti AML screening settings with watchlists, risk engine, match score slider, AI Co-Pilot switch, relatives and aliases options
+  long: Choose the lists, the risk rules and how fuzzy the name match is.
+- file: /assets/img/screens/shufti-pro/02-aml-results.webp
+  width: 1422
+  height: 694
+  caption: AML results
+  alt: Shufti AML results for Andrii Klymenko with 12 results, the databases hit, risk level high and a potential match at 85%
+  long: Results per database with the risk level and decision from your rules; the matched person is blurred.
+- file: /assets/img/screens/shufti-pro/03-ai-copilot.webp
+  width: 1422
+  height: 694
+  caption: AI Compliance Co-Pilot
+  alt: AI Compliance Co-Pilot summary sorting 12 hits into 11 uncertain and 1 potential false positive
+  long: The beta Co-Pilot sorts hits for the analyst; it does not close them.
+- file: /assets/img/screens/shufti-pro/04-products.webp
+  width: 1422
+  height: 694
+  caption: Products in the sandbox
+  alt: Shufti Backoffice products page with IDV on the Free Forever plan and KYB, AML screening and 1:1 authentication to test in the sandbox
+  long: What you can test in the sandbox, beyond the free plan.
+- file: /assets/img/screens/shufti-pro/05-journey-library.webp
+  width: 1422
+  height: 638
+  caption: Journey library
+  alt: Shufti journey library with onboarding templates for UK Gambling Commission rules, Austria FMA and German BaFin
+  long: Ready-made onboarding journeys by regulation, region and industry.
+- file: /assets/img/screens/shufti-pro/06-vendor-comparison.webp
+  width: 1422
+  height: 638
+  caption: Vendor comparison
+  alt: Shufti vendor comparison list with a sample batch comparing pass rate, fraudulent documents and extraction rate against Vendor X
+  long: Run a batch of your past verifications and compare pass and extraction rates with your current vendor; this is Shufti's sample.
+- file: /assets/img/screens/shufti-pro/07-dashboard.webp
+  width: 1422
+  height: 638
+  caption: Dashboard
+  alt: Shufti dashboard with total, verified and declined verifications and the services used
+  long: Our one AML check counted as declined and not billed in the sandbox.
+screenshots_meta:
+  origin: beverified
+  provided: '2026-11-27'
+  environment: a Shufti sandbox account
+  sample_data: true
+  note: "The AML check is a real sandbox check on our editor's name; the people it matched are others with similar names and are blurred. The vendor comparison is Shufti's own sample. These screens show how the product works, not how accurate it is."
+  permission: own sandbox account; Shufti not asked yet (owner to decide)
+changes:
+- date: '2026-11-27'
+  text: Screenshots and a short screen recording from our own sandbox account added, with the AML options, AI Co-Pilot, journey library and the prices shown in the Backoffice.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
