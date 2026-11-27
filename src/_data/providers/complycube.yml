@@ -66,6 +66,11 @@ pricing:
     - 'Core plan'
     included: 'The monthly fee converts into credits for any check; continuous AML monitoring on Core only'
   items:
+  - label: Free trial, in our portal
+    value: Test mode with preloaded sample data from sign-up; a 14-day live trial with 50 free verifications after you activate a live account; seen 27 Nov 2026
+    kind: official
+    source: 23
+    verified: '2026-11'
   - label: Starter plan
     value: $99 per month (credited against checks)
     kind: official
@@ -190,6 +195,14 @@ facts:
   value: UK DIATF (register), ISO/IEC 27001 (vendor-stated)
   source: 4
   evidence: independent
+- label: Screening automation
+  value: Global rules set the match thresholds (by default no results below 85, auto-reject from 85 to 90, review above 90), fuzzy or exact search, and exclusions such as deceased persons, inactive entities or matches without a date of birth; seen in test mode, 27 Nov 2026
+  source: 23
+  evidence: vendor
+- label: Workflows
+  value: Versioned verification flows with analysis per version, custom country risk scores and banned-face lists; seen in test mode, 27 Nov 2026
+  source: 23
+  evidence: vendor
 pros:
 - API-first design with web and mobile SDKs aimed at fast developer integration
 - Published per-check prices and self-serve plans from $99 a month
@@ -499,6 +512,10 @@ sources:
   publisher: ComplyCube
   url: https://docs.complycube.com/documentation/checks/eid-check
   accessed: '2026-11'
+- title: ComplyCube portal, test mode (BeVerified account, signed in)
+  publisher: ComplyCube
+  url: https://portal.complycube.com/
+  accessed: '2026-11-27'
 entity:
   wikidata: null
   kg_mid: null
@@ -514,6 +531,68 @@ verification_notes:
 - ISO/IEC 27001:2022, ISO 9001:2015, ISO/IEC 30107-3 Level 2 (lab not named), Cyber Essentials and ACCS 4:2020 are vendor-stated only. trust.complycube.com showed no certificate content, and no certification-body, lab, IASME or ACCS register entry was found.
 - The developer docs compliance page also lists SOC 2 Type II as "compliant" (no auditor or report date) and the Security & Compliance Center lists ACCS 2:2021; neither added as a certification.
 - G2 and Capterra review text is behind a login, so user review themes are general statements, not counted themes.
+clips:
+- file: /assets/video/complycube/aml-screening.mp4
+  poster: /assets/img/screens/complycube/aml-screening-poster.webp
+  width: 1280
+  height: 574
+  seconds: 12
+  caption: Running an AML check from a client profile
+  alt: Screen recording of an extensive AML screening started from the client profile of Andrii Klymenko in ComplyCube test mode, ending with a clear outcome and the list categories checked
+  long: In test mode we opened the sample client with our editor's name, picked extensive AML screening without monitoring and ran it. Test mode returns a sample result, so "clear" here says nothing about real lists; the clip shows the steps and the categories covered.
+screenshots:
+- file: /assets/img/screens/complycube/01-checks.webp
+  width: 1422
+  height: 694
+  caption: Checks
+  alt: ComplyCube checks list with age estimation, extensive AML screening, document, identity, eID and identity fraud checks on sample clients
+  long: Every check on every client, with type, status and outcome.
+- file: /assets/img/screens/complycube/02-document-analysis.webp
+  width: 1422
+  height: 638
+  caption: Document check breakdown
+  alt: ComplyCube document check analysis with consistency, forensic, content, RFID, format, MRZ, integrity checks and a liveness score
+  long: What the document check looked at, item by item.
+- file: /assets/img/screens/complycube/03-document-data.webp
+  width: 1422
+  height: 638
+  caption: Document data
+  alt: ComplyCube document information with a German specimen ID card, extracted fields and MRZ
+  long: The document image next to the data read from it. Test mode pairs a specimen card with fixed sample data.
+- file: /assets/img/screens/complycube/04-aml-outcome.webp
+  width: 1422
+  height: 638
+  caption: AML outcome summary
+  alt: ComplyCube AML outcome summary listing sanctions and watchlist, PEP levels 1 to 4, adverse media and other list categories
+  long: The list categories an extensive screening covers.
+- file: /assets/img/screens/complycube/05-automation-rules.webp
+  width: 1422
+  height: 638
+  caption: Automation rules
+  alt: ComplyCube global automation rules for screening checks with match thresholds, search mode and exclusion rules
+  long: Thresholds decide what is dropped, auto-rejected or sent to review.
+- file: /assets/img/screens/complycube/06-workflow-versions.webp
+  width: 1422
+  height: 638
+  caption: Workflow versions
+  alt: Enhanced due diligence workflow with three versions, their checks and a workflow analysis button
+  long: Flows keep their versions, so you can see what changed and compare results.
+- file: /assets/img/screens/complycube/07-workflows.webp
+  width: 1422
+  height: 638
+  caption: Workflows
+  alt: ComplyCube list of sample workflows such as age estimation, national eID verification and enhanced due diligence
+  long: Ready-made flows to start from.
+screenshots_meta:
+  origin: beverified
+  provided: '2026-11-27'
+  environment: ComplyCube's test mode
+  sample_data: true
+  note: "Test mode comes with sample clients and checks and returns sample results, so these screens show how the product works, not how accurate it is."
+  permission: own account in test mode; ComplyCube not asked yet (owner to decide)
+changes:
+- date: '2026-11-27'
+  text: Screenshots and a short screen recording from our own account in test mode added, with the screening automation and workflow features seen there.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:
