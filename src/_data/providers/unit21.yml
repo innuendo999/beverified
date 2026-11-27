@@ -547,3 +547,16 @@ category_scores:
       note: "no evidence found"
       evidence: Vendor-stated
 # end AML Banks score
+  fraud-prevention:
+    score: 3.6
+    methodology: fraud-1.0
+    scored: '2026-11-27'
+    breakdown:
+    - {key: coverage, score: 4}
+    - {key: signals, score: 4}
+    - {key: decisioning, score: 4}
+    - {key: investigations, score: 5}
+    - {key: fit, score: 3.5}
+    - {key: integration, score: 1}
+    - {key: trust, score: 3}
+    - {key: pricing, score: 2}

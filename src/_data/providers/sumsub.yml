@@ -1220,3 +1220,16 @@ category_scores:
       note: "public API docs, sandbox or trial, webhooks, no-code dashboard"
       evidence: vendor
 # end AML score
+  fraud-prevention:
+    score: 3.4
+    methodology: fraud-1.0
+    scored: '2026-11-27'
+    breakdown:
+    - {key: coverage, score: 3.5}
+    - {key: signals, score: 3}
+    - {key: decisioning, score: 4}
+    - {key: investigations, score: 3.5}
+    - {key: fit, score: 3}
+    - {key: integration, score: 4.5}
+    - {key: trust, score: 2.5}
+    - {key: pricing, score: 3}

@@ -1,0 +1,83 @@
+slug: fraud-prevention
+url: /providers/fraud-prevention/
+seo:
+  title: Best Fraud Prevention Solutions for Banks and Fintechs in 2026 | BeVerified
+  description: 'SEON, Sardine and Unit21 lead our 2026 fraud prevention ranking for banks and fintechs, compared on fraud coverage, signals, decisioning and investigations.'
+  h1: Best Fraud Prevention Solutions for Banks and Fintechs in 2026
+breadcrumb_label: Best Fraud Prevention Solutions
+quick_answer: 'SEON is our top fraud prevention pick for banks and fintechs: it combines device, behavioural and consortium signals and lets teams backtest a rule before it goes live. Sardine is second for spotting coached and remote-controlled sessions, and Unit21 third for investigations and sub-150 ms payment scoring. We compared 10 providers on fraud coverage, signals, decisioning and investigations.'
+last_verified: '2026-11-27'
+updated: '2026-11-27'
+score_source: category
+score_label: Fraud score
+rubric: rubricFraud
+methodology_label: Fraud 1.0
+methodology_anchor: '#fraud-prevention'
+layout: v2
+evidence: fraud
+price_source: record
+list_noun: fraud prevention solutions
+score_note: 'The Fraud score can''t show how much fraud a system catches on your traffic, how many good customers it blocks, or how many scam refunds it would save you. No independent public test compares these vendors on that, so run a pilot in shadow mode on your own history before you sign.'
+explainer_html:
+- '<h2>What fraud prevention software does for a bank or fintech</h2>
+
+  <p>Fraud prevention software scores logins, payments and new accounts before they go through, and decides whether to approve, block, hold or ask for more proof. It draws on the payment itself, the device and how the customer behaves in the session, links between accounts, and fraud data shared across the vendor''s customers. Analysts work the alerts it raises in a case manager.</p>
+
+  <p>The losses have moved. A growing share of fraud now passes through a real login, or comes from a customer talked into sending money, so card and password checks alone miss it. In the UK, banks refund most of these scam losses under the <a href="https://www.psr.org.uk/information-for-consumers/app-scams-reimbursement-dashboard/" rel="nofollow">Payment Systems Regulator''s reimbursement rules</a>, and the EU has <a href="https://www.dlapiper.com/en/insights/publications/2026/03/psd3-and-psr" rel="nofollow">agreed similar duties</a> for bank impersonation scams, along with a payee name check on every credit transfer.</p>
+
+  <h2>Vendors we have not reviewed yet</h2>
+
+  <p>Featurespace, BioCatch, Alloy, DataVisor, Oscilar and Verafin also sell fraud prevention to banks and fintechs. They enter this ranking once their reviews are published, and the ranking is then scored again.</p>
+
+  <h2>Fraud prevention, AML monitoring and identity verification</h2>
+
+  <p>AML transaction monitoring looks for money laundering after the fact and leads to suspicious activity reports; fraud prevention tries to stop a loss before it happens. Several vendors here sell both on one platform, which helps when the same mule account shows up in both teams'' queues. Checks on the person at sign-up sit with <a href="/providers/identity-verification/">identity verification providers</a>; for AML tools see <a href="/providers/aml/">AML software</a> and <a href="/providers/aml/banks/">AML software for banks</a>.</p>
+
+  <h2>What to test in a pilot</h2>
+
+  <ul>
+
+  <li>Run the vendor in shadow mode on your own transaction history, including cases you lost money on.</li>
+
+  <li>Measure fraud caught at the alert volume your team can handle, and false positives per thousand transactions.</li>
+
+  <li>Count goodwill credits and scam refunds on the test set, and analyst time per case.</li>
+
+  <li>Time the decision on your own payment rails, from request to answer.</li>
+
+  </ul>
+
+  <p><a href="/methodology/#fraud-prevention">How we score fraud prevention solutions →</a></p>'
+faq:
+- q: What is the best fraud prevention solution for banks and fintechs?
+  a: SEON ranks first on our Fraud score, ahead of Sardine and Unit21. The order comes from public evidence on fraud coverage, signals, decisioning, investigations, fit for banks and fintechs, integration, trust and pricing, set out in our methodology.
+- q: Which fraud prevention tools detect scam payments?
+  a: Sardine, Unit21, Hawk AI, ComplyAdvantage, NICE Actimize, Feedzai and Quantexa describe detection of scams where the customer is manipulated into paying. Feedzai describes delaying the payment, stepping up authentication or warning the customer in the session when a scam is likely.
+- q: Which vendors cover check fraud?
+  a: Hawk AI, ComplyAdvantage and NICE Actimize describe check and deposit fraud, including mobile deposits and check image analysis in Hawk AI's case. Sardine and Unit21 list checks among the payment rails they monitor.
+- q: Can we test a rule before it blocks real customers?
+  a: SEON, Sardine, Unit21 and NICE Actimize describe testing rules on past data or in shadow mode on live traffic, and Sumsub describes a dry-run mode. For the others we found no such feature on their public pages.
+- q: Why are vendor detection rates not in the score?
+  a: Each vendor measures on different data, so their figures can't be compared, and no independent public test of fraud vendors exists that we could use. Run a pilot on your own history instead.
+segments_heading: 'Best pick by use case'
+segments:
+- segment: 'Banks and credit unions'
+  slug: nice-actimize
+  reason: 'NICE Actimize covers all six fraud types we track, including check and deposit fraud, and can run on premises or in the cloud.'
+- segment: 'Neobanks and fintechs'
+  slug: seon
+  reason: 'SEON publishes a Starter plan, has public API documentation and SDKs, and lets teams backtest rules before they go live.'
+- segment: 'Scam and APP fraud'
+  slug: feedzai
+  reason: 'Feedzai describes scam detection with behavioural biometrics and can delay a payment, step up authentication or warn the customer in the session.'
+- segment: 'Fraud and AML on one platform'
+  slug: unit21
+  reason: 'Unit21 runs real-time payment fraud scoring next to AML transaction monitoring, case management and pre-filled SARs.'
+adjacent:
+- aml/banks
+- aml
+- identity-verification
+- kyb
+faq_templates: []
+legacy_issues: []
+author: andrii-klymenko

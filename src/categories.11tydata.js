@@ -25,7 +25,8 @@ export default {
     entries: (d) => (d.rankings[d.c.slug]?.providers || []).map((r, i) => {
       const q = r.slug ? d.providers[r.slug] || null : null;
       let price = r.legacy_price_shown || null, priceVerified = null;
-      if (d.c.price_source === "record" && q) {
+      // price_from: false on a ranking entry = no price shown (the record's "From" is for another product, e.g. on the Fraud ranking).
+      if (d.c.price_source === "record" && q && r.price_from !== false) {
         const item = r.price_item ? (q.pricing?.items || []).find((x) => x.label === r.price_item) : null;
         if (r.price_item && !item) throw new Error(`${d.c.slug}: price_item "${r.price_item}" not found in ${q.slug}`);
         const from = item ? item.value : (q.facts || []).find((x) => x.label === "From")?.value;

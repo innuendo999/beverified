@@ -78,3 +78,35 @@
   - Identity Verification
   description: Credit bureau whose IDMatrix service verifies identities, including DVS checks in Australia.
   review: null
+- name: Featurespace
+  categories:
+  - Fraud Prevention
+  description: Real-time fraud and financial crime prevention for banks and payment companies, part of Visa.
+  review: null
+- name: BioCatch
+  categories:
+  - Fraud Prevention
+  description: Behavioural biometrics for banks, used against account takeover, scams and mule accounts.
+  review: null
+- name: Alloy
+  categories:
+  - Fraud Prevention
+  - Identity Verification
+  description: Identity and fraud prevention platform for banks, credit unions and fintechs.
+  review: null
+- name: DataVisor
+  categories:
+  - Fraud Prevention
+  description: Fraud and risk platform for financial institutions built on unsupervised machine learning.
+  review: null
+- name: Oscilar
+  categories:
+  - Fraud Prevention
+  description: AI risk decisioning platform for fraud, credit and compliance at fintechs and banks.
+  review: null
+- name: Verafin
+  categories:
+  - Fraud Prevention
+  - AML for Banks
+  description: Fraud detection and AML platform for banks and credit unions, part of Nasdaq.
+  review: null

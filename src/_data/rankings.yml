@@ -2849,3 +2849,139 @@ eu:
     - No prices on its own site; the AWS Marketplace price needs a 12-month contract
     - No SOC 2 Type II statement found, and its only public ISO 27001 certificate copy expired in March 2024
     segments: []
+fraud-prevention:
+  title: Best Fraud Prevention Solutions for Banks and Fintechs in 2026
+  providers:
+  - slug: seon
+    name: SEON
+    award: Editor's Choice
+    tagline: Device, behavioural and digital-footprint signals with rules you can backtest, and a published entry plan.
+    price_item: Starter plan
+    pros:
+    - Device intelligence, behavioural biometrics, link analysis and consortium data from 5,000+ customers
+    - New and changed rules can be backtested on past transactions while the live rule keeps running
+    - Starter plan published at $699 a month for 2,500 fraud checks
+    cons:
+    - No check fraud product and no detection of scam payments the customer authorises
+    - No payee name check and no instant payment rails named
+    - Case management is on the Premium plan only
+    segments: []
+  - slug: sardine
+    name: Sardine
+    award: Best for Device and Behaviour Signals
+    tagline: Device and behaviour signals that spot coached and remote-controlled sessions, with shadow mode for new rules.
+    price_from: false
+    pros:
+    - Flags remote access tools and guided sessions, a common sign of a scam in progress
+    - Rules can be backtested on history and run in shadow mode on live traffic
+    - Covers RTP, FedNow, SEPA and Zelle, with fraud and AML monitoring in one platform
+    cons:
+    - API documentation is not public
+    - Prices are quoted only
+    - Its SOC 2 report type is not stated
+    segments: []
+  - slug: unit21
+    name: Unit21
+    award: Best for Fraud Investigations
+    tagline: Real-time payment fraud scoring under 150 ms with a US fraud consortium and an investigation agent.
+    price_from: false
+    pros:
+    - Scores payments in under 150 ms on FedNow, RTP, ACH, wires and cards
+    - Shadow mode, validation on past data and a sandbox before a rule goes live
+    - Investigation agent drafts case narratives and SAR filings are pre-filled
+    cons:
+    - API documentation sits behind a password page
+    - No onboarding or application fraud product described
+    - Prices are quoted only
+    segments: []
+  - slug: sumsub
+    name: Sumsub
+    tagline: Fraud prevention next to KYC, with device intelligence, mule detection and dry-run rules.
+    price_from: false
+    pros:
+    - Account takeover, payment fraud, mule and synthetic identity products on one platform
+    - Can step up, hold or block a payment, and test rules in dry-run mode first
+    - Public API documentation, SDKs and a sandbox
+    cons:
+    - Scam payments the customer authorises and check fraud are not covered
+    - Fraud prevention is in the custom, quoted plan
+    - A security incident disclosed in February 2026 lowers its trust score
+    segments: []
+  - slug: hawkai
+    name: Hawk AI
+    tagline: Real-time fraud models for scams, mules, account takeover and checks, with a confirmed ISO/IEC 27001 certificate.
+    price_from: false
+    pros:
+    - Covers scams, mules, account takeover, card and check fraud, the last with check image analysis
+    - 150 ms average decision time, with reason codes for each decision
+    - ISO/IEC 27001 certificate confirmed
+    cons:
+    - No link analysis or shared fraud data across customers described
+    - Backtesting of rules is not described, only a sandbox with live data
+    - API documentation is not public and prices are quoted only
+    segments: []
+  - slug: complyadvantage
+    name: ComplyAdvantage
+    tagline: Payment fraud scenarios, from APP scams to mobile check deposits, next to its AML screening.
+    price_from: false
+    pros:
+    - 50+ payment fraud scenarios, including APP scams, account takeover and check fraud
+    - Names FedNow, Faster Payments and RTP
+    - No-code rule builder, and every alert says why it was raised
+    cons:
+    - No device intelligence or shared fraud data described
+    - No rule testing before go-live described
+    - Its fraud product is priced by quote; published prices cover screening only
+    segments: []
+  - slug: nice-actimize
+    name: NICE Actimize
+    tagline: Enterprise fraud management for large banks, covering cards, checks, scams, mules and new accounts.
+    price_from: false
+    pros:
+    - Covers all six fraud types we track, including check and deposit fraud
+    - Strategies can be simulated before they go live
+    - Automated SAR filing and AI help in investigations
+    cons:
+    - NICE is running a sale process for the unit
+    - No device intelligence or decision explanations described
+    - No public documentation, and prices are quoted only
+    segments: []
+  - slug: feedzai
+    name: Feedzai
+    tagline: Real-time payment fraud and scam prevention for banks, with step-up, payment delays and in-session alerts.
+    price_from: false
+    pros:
+    - Can delay a payment, step up authentication or alert the customer in session when a scam is likely
+    - Behavioural biometrics, device intelligence and pooled intelligence across its customers
+    - Customers can import their own machine learning models
+    cons:
+    - No backtesting or shadow mode described
+    - No mule or check fraud product described
+    - No public documentation, and prices are quoted only
+    segments: []
+  - slug: socure
+    name: Socure
+    tagline: Identity, synthetic and first-party fraud checks at onboarding, with published per-evaluation prices.
+    price_item: KYC + Fraud + Watchlist, DocV step-up
+    pros:
+    - Synthetic identity and first-party fraud models at onboarding
+    - Device behaviour, device and graph signals
+    - Public documentation, a sandbox and published prices from $1.00 per evaluation with fraud included
+    cons:
+    - No payment, scam, mule or check fraud product described
+    - No rule testing before go-live described
+    - No hosting region choice found
+    segments: []
+  - slug: quantexa
+    name: Quantexa
+    tagline: Entity resolution and network analytics for scam, mule and lending fraud, with an investigation copilot.
+    price_from: false
+    pros:
+    - Entity resolution and graph analytics link accounts, people and payments
+    - Q Assist copilot helps triage alerts and investigate
+    - Runs on premises, in the cloud or hybrid
+    cons:
+    - Near-real-time detection only; no real-time decisions described
+    - No no-code rules or rule testing described
+    - No device or behavioural signals described
+    segments: []
