@@ -1,4 +1,4 @@
-# AML watch 2026-11-26
+# AML watch 2026-11-27
 
 50 of 61 pages read for 10 providers in the AML ranking.
 
@@ -40,14 +40,16 @@ A term is not a point. Read the passage on the page; change the record only if i
 - **Strise** (strise) `capabilities.calibration_docs`: "be treated. Set risk weights, escalation rules, and review thresholds once, then the same policy applies consistently across eve"
 - **Strise** (strise) `capabilities.case_management.four_eyes`: "for review Each time an assessment is sent to reviewers for four-eyes sign-off, including a resubmission after changes were reque"
 - **KYCAID** (kycaid) `capabilities.transliteration`: "ag inside <head> : < script src = "https://forms.kycaid.com/scripts/iframe-resizer.min.js" ></ script > Initialise the resizer."
+- **KYC360** (kyc360) `capabilities.list_coverage`: lists named on a watched page but not in the record: uk
 - **KYC Hub** (kychub) `capabilities.list_coverage`: lists named on a watched page but not in the record: eu
 - **KYC Hub** (kychub) `capabilities.calibration_docs`: "nd adverse media in 100+ languages. You can configure match thresholds, fuzzy logic and rescreen cadences per segment. Alerts rou"
 - **KYC Hub** (kychub) `integration.webhooks`: "tion-Ready Integrations Drop into your stack via REST APIs, webhooks and pre-built core-banking connectors. Audit-Ready By Defau"
 
 ## Changes since the last run
 
-None (or first run).
+Lists, terms or stated update times added (+) or removed (-) on a page since the previous read.
 
+- KYC360 (kyc360-1d0356): lists +uk. https://kyc360.com/ad-hoc-screening
 
 ## Pages we could not read
 

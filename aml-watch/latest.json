@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "pages": 61,
   "read": 50,
   "gone": [
@@ -200,6 +200,12 @@
       "what": "\"ag inside <head> : < script src = \"https://forms.kycaid.com/scripts/iframe-resizer.min.js\" ></ script > Initialise the resizer.\""
     },
     {
+      "name": "KYC360",
+      "slug": "kyc360",
+      "field": "capabilities.list_coverage",
+      "what": "lists named on a watched page but not in the record: uk"
+    },
+    {
       "name": "KYC Hub",
       "slug": "kychub",
       "field": "capabilities.list_coverage",
@@ -218,7 +224,21 @@
       "what": "\"tion-Ready Integrations Drop into your stack via REST APIs, webhooks and pre-built core-banking connectors. Audit-Ready By Defau\""
     }
   ],
-  "changed": [],
+  "changed": [
+    {
+      "name": "KYC360",
+      "id": "kyc360-1d0356",
+      "url": "https://kyc360.com/ad-hoc-screening",
+      "la": [
+        "uk"
+      ],
+      "lr": [],
+      "ta": [],
+      "tr": [],
+      "ua": [],
+      "ur": []
+    }
+  ],
   "unreadable": [
     {
       "id": "complyadvantage-766450",
