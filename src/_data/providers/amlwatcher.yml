@@ -22,7 +22,7 @@ link:
   url: https://amlwatcher.com
   type: none
 last_verified: '2026-10-22'
-updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
+updated: '2026-11-27'   # last content edit; last_verified = last fact re-check
 verdict: 'AML Watcher fits small and mid-sized fintechs and payment firms that want sanctions, PEP and adverse media screening by API or dashboard, with on-premises or in-country hosting as an option. Its ISO/IEC 27001:2022 certificate checks out. The weak spots are evidence and price: coverage figures change from page to page, the pricing page shows no prices and there is no SOC 2 report. Ask for a written quote before you sign.'
 what_is:
 - AML Watcher is a screening and monitoring product sold by Risk Watcher LLC, a Delaware company that does business under the AML Watcher name. It screens people and companies against sanctions lists, watchlists, PEP data, adverse media and leak databases, with ongoing monitoring, batch search, case management, configurable risk scoring and Arabic name matching. Newer products are Transaction Watcher for transaction monitoring (announced in late 2025) and TruRisk, a paid AI add-on that ranks name matches using date of birth, nationality and other identifiers. AML Watcher says final decisions stay with the compliance team. It also offers crypto wallet screening, vessel screening and a Travel Rule module, and it exposes its data to AI agents through an MCP server.
@@ -349,6 +349,16 @@ score_breakdown:
   note: "ISO 27001 or SOC 2 confirmed, data residency or on-premises"
   evidence: independent
 hands_on: null
+product_history:   # dated company and product events, newest first; each from sources[]
+- date: '2026-04-08'
+  text: 'ISO/IEC 27001:2022 certificate issued by Americo Quality Standards Registech, valid to 7 April 2029 with yearly surveillance audits.'
+  source: 7
+- date: '2025-11'
+  text: 'Announced in-Kingdom data residency for customers in Saudi Arabia.'
+  source: 16
+- date: '2025-07'
+  text: 'Oonagh van den Berg, founder of Raw Compliance, joined as Executive Director, Growth and Advisory.'
+  source: 25
 sources:
 - title: AML Watcher homepage
   publisher: AML Watcher

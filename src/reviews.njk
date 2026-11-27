@@ -103,6 +103,18 @@ layout: v3.njk
   </section>
   {%- endif %}
 
+  {%- if p.product_history and p.product_history.length %}
+  <section id="history" aria-labelledby="hist-h">
+    <h2 id="hist-h" class="h-section h-section--tight">Company timeline</h2>
+    <p class="section-lede">Dated company and product events, newest first, each linked to its source at the end of the review.</p>
+    <ol class="rv-inc">
+      {%- for e in p.product_history %}
+      <li><span class="rv-inc__date num"><time datetime="{{ e.date }}">{{ e.date | displayDate }}</time></span><div><p>{{ e.text }} <a href="#src-{{ e.source }}" aria-label="Source {{ e.source }}">[{{ e.source }}]</a></p></div></li>
+      {%- endfor %}
+    </ol>
+  </section>
+  {%- endif %}
+
   {%- if hasBreakdown %}
   <section id="score" aria-labelledby="score-h">
     <h2 id="score-h" class="h-section h-section--tight">Score breakdown</h2>

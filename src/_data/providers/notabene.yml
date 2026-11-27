@@ -20,7 +20,7 @@ link:
   url: https://notabene.id
   type: none
 last_verified: '2026-11-04'
-updated: '2026-11-11'   # last content edit; last_verified = last fact re-check
+updated: '2026-11-27'   # last content edit; last_verified = last fact re-check
 verdict: "Notabene is the hosted choice: exchanges, custodians and payment firms get a Travel Rule service with no software of their own to run, a large network by Notabene's own count, and a free plan that answers incoming transfers with no integration. The limits show beyond that network. TRUST works only through your own membership, TRP is version 1.0 unless you ask for the current one, the paid platform is quoted, and the ISO and SOC 2 evidence sits behind a Trust Center request."
 what_is:
 - Notabene sells Travel Rule compliance to crypto firms as a hosted service. Before a transfer goes on chain, it works out which institution controls the counterparty wallet, exchanges the originator and beneficiary data that FATF Recommendation 16 requires, and records whether the counterparty accepted. Rules decide which transfers need data, which thresholds apply in each jurisdiction and when a transfer is approved, held or rejected. Notabene says 2,300+ regulated institutions are in its network and that it has 280+ customers; it gives other figures on other pages, and we could not check any of them.
@@ -235,6 +235,19 @@ score_breakdown:
   evidence: independent
   note: Founded in 2020, Notabene raised a Series A in 2021 and a $14.5 million Series B in November 2024, both reported by trade press, and Ripple invested in July 2026. Fireblocks and Ripple Custody integrate it. We found no regulatory actions, breach disclosures or litigation.
 hands_on: null
+product_history:   # dated company and product events, newest first; each from sources[]
+- date: '2026-07-23'
+  text: 'Announced a strategic investment from Ripple; the amount was not disclosed.'
+  source: 23
+- date: '2024-11-12'
+  text: 'Raised a $14.5 million Series B led by DRW VC.'
+  source: 25
+- date: '2022-01-10'
+  text: 'Announced SOC 2 certification (vendor announcement).'
+  source: 22
+- date: '2021-11-08'
+  text: 'Raised a $10.2 million Series A.'
+  source: 26
 sources:
 - title: Notabene homepage
   publisher: Notabene

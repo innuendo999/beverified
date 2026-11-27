@@ -24,7 +24,7 @@ link:
   type: null
   legacy_rel: nofollow sponsored
 last_verified: '2026-10-22'
-updated: '2026-10-22'   # last content edit; last_verified = last fact re-check
+updated: '2026-11-27'   # last content edit; last_verified = last fact re-check
 verdict: Hawk (formerly HAWK:AI) built one of the earlier explainable-AI approaches to AML transaction monitoring, pairing rules with behavioral AI and adding screening, fraud detection and AI agents for investigations on one platform. It serves Tier-1 banks down to mid-market fintechs, and by its own figures cuts false alerts by 70% and AML investigation time by 62%.
 what_is:
 - Hawk is an AML, screening and fraud-prevention company founded in 2018 in Munich, Germany, by Tobias Schweiger (CEO) and Wolfgang Berner; it was originally known as HAWK:AI and its legal entity is Hawk AI GmbH. In April 2025 it raised a $56 million Series C led by One Peak, with Macquarie Capital, Rabobank, BlackFin Capital Partners and others, and at that point served more than 80 clients from Tier-1 banks to mid-market fintechs. Customers shown on its site include Ecobank, Vakif Bank, Synctera, VR Payment, Ebury and Alviere.
@@ -326,6 +326,10 @@ score_breakdown:
   note: "ISO 27001 or SOC 2 confirmed, operating since 2018"
   evidence: independent
 hands_on: null
+product_history:   # dated company and product events, newest first; each from sources[]
+- date: '2025-04'
+  text: 'Raised a $56 million Series C led by One Peak, at a time when it served more than 80 clients.'
+  source: 4
 sources:
 - title: About Hawk
   publisher: Hawk

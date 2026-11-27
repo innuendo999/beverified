@@ -97,6 +97,7 @@ export default {
       const alts = (p.choose_instead || []).filter((a) => a.slug && d.providers[a.slug]);
       return [
         ["what-is", "Overview", true],
+        ["history", "Timeline", has(p.product_history)],
         ["score", "Score", has(p.score_breakdown)],
         ["use-cases", "Use cases", has(p.use_case_verdicts)],
         ["pricing", "Pricing", true],
