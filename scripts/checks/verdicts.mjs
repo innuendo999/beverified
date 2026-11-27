@@ -3,6 +3,7 @@
 // 3) the main limit or risk. At most 4 sentences and 70 words.
 // "top pick" is allowed only for the #1 provider of the record's primary_category ranking,
 // so a ranking change cannot leave a stale claim in the hero.
+// A record must not store its own grade word (owner, 2026-11-27): src/_lib/grade.js derives it from score.
 // node scripts/checks/verdicts.mjs   (exits 1 on any issue)
 import fs from "node:fs";
 import path from "node:path";
@@ -18,6 +19,7 @@ const fail = (s, m) => { issues++; console.log(`${s}: ${m}`); };
 for (const f of fs.readdirSync(dir).filter((x) => x.endsWith(".yml"))) {
   const p = yaml.load(fs.readFileSync(path.join(dir, f), "utf8"));
   const s = p.slug, v = (p.verdict || "").trim();
+  if ("grade" in p) fail(s, "remove top-level `grade`: the hero word is computed from `score` by src/_lib/grade.js");
   if (!v) { fail(s, "no verdict"); continue; }
   const words = v.split(/\s+/).length;
   const sentences = v.split(/(?<=[.!?])\s+(?=[A-Z0-9])/).length;

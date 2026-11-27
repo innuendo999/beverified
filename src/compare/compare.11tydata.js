@@ -1,3 +1,4 @@
+import { grade } from "../_lib/grade.js";
 import { articleData } from "../_lib/article-data.js";
 import { CAP_STATUS, certCell } from "../_lib/capabilities.js";
 // Comparisons ("X vs Y"): Markdown text + data blocks built here from both provider records,
@@ -56,7 +57,7 @@ export default {
         a, b,
         crit,
         glance: [
-          ["Our score", `${a.score.toFixed(1)} out of 5 (${a.grade})`, `${b.score.toFixed(1)} out of 5 (${b.grade})`],
+          ["Our score", `${a.score.toFixed(1)} out of 5 (${grade(a.score)})`, `${b.score.toFixed(1)} out of 5 (${grade(b.score)})`],
           ["Starting price", fact(a, "From"), fact(b, "From")],
           ["Founded", fact(a, "Founded"), fact(b, "Founded")],
           ["Headquarters", fact(a, "HQ"), fact(b, "HQ")],

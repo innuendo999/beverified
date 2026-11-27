@@ -57,8 +57,8 @@
         {%- if p.score != null %}
         <div class="rv4-score">
           <div class="rv4-score__label">BeVerified score</div>
-          <div class="rv4-score__value" role="img" aria-label="BeVerified score {{ p.score | score1 }} out of 5{% if p.grade %}, {{ p.grade }}{% endif %}">
-            <span class="num" aria-hidden="true">{{ p.score | score1 }}</span><span class="rv4-score__of" aria-hidden="true">/ 5</span>{% if p.grade %}<span class="rv4-score__grade" aria-hidden="true">{{ p.grade }}</span>{% endif %}
+          <div class="rv4-score__value" role="img" aria-label="BeVerified score {{ p.score | score1 }} out of 5{% if p.score %}, {{ p.score | grade }}{% endif %}">
+            <span class="num" aria-hidden="true">{{ p.score | score1 }}</span><span class="rv4-score__of" aria-hidden="true">/ 5</span>{% if p.score %}<span class="rv4-score__grade" aria-hidden="true">{{ p.score | grade }}</span>{% endif %}
           </div>
           <div class="meter" aria-hidden="true">{% for w in (p.score | meter) %}<span><i class="w-{{ w }}"></i></span>{% endfor %}</div>
           {%- if v4.rank %}<p class="rv4-score__rank"><a href="{{ v4.rank.url }}">#{{ v4.rank.pos }} in {{ v4.rank.label }}</a></p>{% endif %}

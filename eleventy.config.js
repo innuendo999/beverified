@@ -1,3 +1,4 @@
+import { grade } from "./src/_lib/grade.js";
 import { createHash } from "node:crypto";
 import fs from "node:fs";
 import yaml from "js-yaml";
@@ -152,6 +153,7 @@ export default function (eleventyConfig) {
   // Icon library (src/_lib/icons.js): {% icon "liveness" %}, {% icon "aml", "AML screening" %}, {% iconFor "category", "kyb" %}
   eleventyConfig.addShortcode("icon", (name, label, size, cls) => renderIcon(name, label, size, cls));
   eleventyConfig.addShortcode("iconFor", (kind, key, label, size, cls) => renderIcon(iconNameFor(kind, key), label, size, cls));
+  eleventyConfig.addFilter("grade", grade);
   eleventyConfig.addFilter("score1", (n) => (n == null ? "" : Number(n).toFixed(1)));
   // First sentence of a paragraph (review V5 product lede): up to the first ". " before a capital letter.
   eleventyConfig.addFilter("firstSentence", (t) => { const s = String(t || ""); const m = s.match(/^(.+?[.!?])\s+(?=[A-Z0-9])/); return m ? m[1] : s; });

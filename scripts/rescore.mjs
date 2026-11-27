@@ -178,7 +178,8 @@ const FN = { fraud_defense: fraudDefense, pricing, coverage, breadth, integratio
 // Kept on their v3.0 score until per-category methodologies exist (owner, 2026-11-05).
 export const HOLD = { quantexa: "entity resolution layer", verified: "Nordic eID and AML", verifymy: "age assurance", paravision: "face biometrics engine" };
 // Grade bands for v3.1 (owner asked to reset them, 2026-11-05).
-export const grade = (s) => (s >= 4.5 ? "Excellent" : s >= 4.0 ? "Great" : s >= 3.5 ? "Very Good" : s >= 3.0 ? "Good" : "Fair");
+import { grade } from "../src/_lib/grade.js";
+export { grade };
 export function score(d) {
   const fam = familyOf(d);
   if (!fam || HOLD[d.slug]) return null;
@@ -220,9 +221,8 @@ for (const slug of files) {
     const block = "score_breakdown:\n" + r.rows.map((x) => `- criterion: ${JSON.stringify(x.criterion)}\n  weight: ${x.weight}\n  score: ${x.score ?? "null"}\n  note: ${JSON.stringify(x.note)}\n  evidence: ${x.evidence ?? "null"}`).join("\n") + "\n";
     const next = text.replace(/^score_breakdown:(?:\s*\[\])?\n(?:(?:-|  ).*\n)*/m, block)
       .replace(/^score: .*$/m, `score: ${r.total.toFixed(1)}`)
-      .replace(/^grade: .*$/m, `grade: ${grade(r.total)}`)
       .replace(/^methodology: .*\n/m, "")
-      .replace(/^(grade: .*)$/m, "$1\nmethodology: v3.1");
+      .replace(/^(score: .*)$/m, "$1\nmethodology: v3.1");
     fs.writeFileSync(file, next);
   }
 }

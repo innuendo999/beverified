@@ -25,7 +25,7 @@ Fields prefixed `legacy_` hold what the old pages showed. They are kept for refe
 | seo.title, seo.description, seo.h1 | current meta | filled |
 | logo.src, logo.background | logo file and tile colour | filled |
 | tagline | one-line positioning | filled |
-| score, grade | editorial score from the provider's own page (single source of truth) | filled |
+| score | editorial score from the provider's own page (single source of truth). The grade word is not stored: `src/_lib/grade.js` derives it (4.5+ Excellent, 4.0 Great, 3.5 Very Good, 3.0 Good, below Fair; `grade` filter in templates) | filled |
 | primary_category, categories | category slugs | filled |
 | link.url, link.type | outbound link; type = affiliate / paid / none (owner decides). affiliate or paid → rel="sponsored noopener" plus a visible "Sponsored link" label; optional link.rel overrides the rel value (used for KYCAID by agreement); optional link.label: false hides the "Sponsored link" label (KYCAID, editor decision); none or empty → rel="nofollow noopener" (filter `outRel`) | url filled, type empty |
 | reviewer.name, reviewer.credential, last_verified | byline | filled |
