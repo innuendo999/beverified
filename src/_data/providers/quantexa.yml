@@ -178,6 +178,115 @@ capabilities:
   data_residency:
     status: not_disclosed
     note: hybrid, cloud or on-prem; no region choice stated
+  fraud_transaction:
+    status: 'partial'
+    note: payment fraud optimisation; scoring not described
+    source: 14
+    checked: '2026-11-27'
+  fraud_ato:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  fraud_scam:
+    status: 'yes'
+    note: scam victim detection
+    source: 14
+    checked: '2026-11-27'
+  fraud_check:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  fraud_onboarding:
+    status: 'yes'
+    note: lending application fraud before and after application
+    source: 15
+    checked: '2026-11-27'
+  fraud_mule:
+    status: 'yes'
+    note: scams and mule network detection
+    source: 14
+    checked: '2026-11-27'
+  behavioral_biometrics:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  device_intelligence:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  graph_analytics:
+    status: 'yes'
+    note: entity resolution and graph analytics
+    source: 14
+    checked: '2026-11-27'
+  fraud_consortium:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  realtime_decisioning:
+    status: 'partial'
+    note: near-real-time detection
+    source: 14
+    checked: '2026-11-27'
+  fraud_rules:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  rule_testing:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  payment_interventions:
+    status: 'partial'
+    note: blocking payments mentioned
+    source: 14
+    checked: '2026-11-27'
+  explainability:
+    status: 'yes'
+    note: explainable data linking and decision models
+    source: 14
+    checked: '2026-11-27'
+  ai_investigation:
+    status: 'yes'
+    note: Q Assist investigations copilot
+    source: 14
+    checked: '2026-11-27'
+  regulatory_filing:
+    status: 'partial'
+    note: report generation and filing; SAR not named
+    source: 14
+    checked: '2026-11-27'
+  alert_prioritisation:
+    status: 'yes'
+    note: risk prioritisation and alert triage
+    source: 14
+    checked: '2026-11-27'
+  payee_verification:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  instant_payments:
+    status: 'not_disclosed'
+    note: no rail named
+    checked: '2026-11-27'
+  custom_models:
+    status: 'yes'
+    note: build with own data
+    source: 14
+    checked: '2026-11-27'
+  data_orchestration:
+    status: 'yes'
+    note: ingestion of internal and external sources
+    source: 14
+    checked: '2026-11-27'
+  named_fi_customers:
+    status: 'not_disclosed'
+    note: not on the page checked
+    checked: '2026-11-27'
+  fraud_pricing:
+    status: quote
+    note: quote only
+    checked: '2026-11-27'
 integration:
   checked: '2026-11'
   docs_public:
@@ -303,6 +412,14 @@ sources:
   publisher: Quantexa
   url: https://www.quantexa.com/discover/sanctions
   accessed: '2026-10'
+- title: Fraud solutions
+  publisher: Quantexa
+  url: https://www.quantexa.com/solutions/fraud/
+  accessed: '2026-11'
+- title: Lending fraud
+  publisher: Quantexa
+  url: https://www.quantexa.com/solutions/lending-fraud/
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

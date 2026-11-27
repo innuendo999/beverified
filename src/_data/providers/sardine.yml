@@ -191,6 +191,123 @@ capabilities:
   data_residency:
     status: not_disclosed
     note: 'not stated on security page'
+  fraud_transaction:
+    status: 'yes'
+    note: payment fraud and card issuing fraud products
+    source: 16
+    checked: '2026-11-27'
+  fraud_ato:
+    status: 'yes'
+    note: account takeover protection at login and in session
+    source: 18
+    checked: '2026-11-27'
+  fraud_scam:
+    status: 'yes'
+    note: detects remote access tools and guided sessions, social engineering scams
+    source: 18
+    checked: '2026-11-27'
+  fraud_check:
+    status: 'partial'
+    note: checks listed among monitored bank rails; check fraud not described
+    source: 19
+    checked: '2026-11-27'
+  fraud_onboarding:
+    status: 'yes'
+    note: synthetic, stolen and deepfake identities at onboarding
+    source: 16
+    checked: '2026-11-27'
+  fraud_mule:
+    status: 'yes'
+    note: mule activity detection in transaction monitoring
+    source: 16
+    checked: '2026-11-27'
+  behavioral_biometrics:
+    status: 'yes'
+    note: typing cadence, mouse movement, tap pressure
+    source: 18
+    checked: '2026-11-27'
+  device_intelligence:
+    status: 'yes'
+    note: fingerprinting, emulator, root and bot detection
+    source: 18
+    checked: '2026-11-27'
+  graph_analytics:
+    status: 'yes'
+    note: connections graph across users, devices and transactions
+    source: 16
+    checked: '2026-11-27'
+  fraud_consortium:
+    status: 'yes'
+    note: cross-industry consortium (Sonar)
+    source: 16
+    checked: '2026-11-27'
+  realtime_decisioning:
+    status: 'yes'
+    note: real-time detection and actions; no latency figure
+    source: 17
+    checked: '2026-11-27'
+  fraud_rules:
+    status: 'yes'
+    note: no-code rule builder
+    source: 17
+    checked: '2026-11-27'
+  rule_testing:
+    status: 'yes'
+    note: backtest on historical data, shadow mode on live traffic
+    source: 17
+    checked: '2026-11-27'
+  payment_interventions:
+    status: 'yes'
+    note: step-up via 3DS challenge and deeper identity checks
+    source: 17
+    checked: '2026-11-27'
+  explainability:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  ai_investigation:
+    status: 'yes'
+    note: Agentic Fraud Ops agents for alert review and investigations
+    source: 16
+    checked: '2026-11-27'
+  regulatory_filing:
+    status: 'partial'
+    note: SAR generation agent listed; filing not described
+    source: 16
+    checked: '2026-11-27'
+  alert_prioritisation:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  payee_verification:
+    status: 'partial'
+    note: bank account ownership validation; not framed as payee verification
+    source: 16
+    checked: '2026-11-27'
+  instant_payments:
+    status: 'yes'
+    note: RTP, FedNow, SEPA, Zelle named
+    source: 19
+    checked: '2026-11-27'
+  custom_models:
+    status: 'partial'
+    note: custom risk agents and credit models; custom fraud models not described
+    source: 16
+    checked: '2026-11-27'
+  data_orchestration:
+    status: 'yes'
+    note: Sardine Flow connects third-party APIs and data sources
+    source: 16
+    checked: '2026-11-27'
+  named_fi_customers:
+    status: 'yes'
+    note: National Bank of Canada, Nubank, Live Oak Bank, bunq
+    source: 16
+    checked: '2026-11-27'
+  fraud_pricing:
+    status: quote
+    note: quote only
+    checked: '2026-11-27'
 integration:
   checked: '2026-11'
   docs_public:
@@ -327,6 +444,22 @@ sources:
 - title: 'Business Verification (KYB) (Sardine documentation)'
   publisher: 'Sardine'
   url: https://docs.sardine.ai/guides/public/risk/account-risk/kyb
+  accessed: '2026-11'
+- title: Sardine home page
+  publisher: Sardine
+  url: https://www.sardine.ai/
+  accessed: '2026-11'
+- title: Rules engine
+  publisher: Sardine
+  url: https://www.sardine.ai/rules-engine
+  accessed: '2026-11'
+- title: Device and behavior
+  publisher: Sardine
+  url: https://www.sardine.ai/device-and-behavior
+  accessed: '2026-11'
+- title: Bank transactions
+  publisher: Sardine
+  url: https://www.sardine.ai/bank-transactions
   accessed: '2026-11'
 entity:
   wikidata: null

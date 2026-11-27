@@ -230,6 +230,123 @@ capabilities:
     note: screens customers, counterparties and transactions
     source: 9
     checked: '2026-11-23'
+  fraud_transaction:
+    status: 'yes'
+    note: real-time scoring across cards and payment rails
+    source: 12
+    checked: '2026-11-27'
+  fraud_ato:
+    status: 'yes'
+    note: suspicious logins, device and location changes
+    source: 12
+    checked: '2026-11-27'
+  fraud_scam:
+    status: 'yes'
+    note: 'APP and social engineering: new payees, unusual amounts, urgency cues'
+    source: 12
+    checked: '2026-11-27'
+  fraud_check:
+    status: 'partial'
+    note: checks among covered rails; check fraud detection not described
+    source: 12
+    checked: '2026-11-27'
+  fraud_onboarding:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  fraud_mule:
+    status: 'yes'
+    note: device intelligence to stop mule networks
+    source: 1
+    checked: '2026-11-27'
+  behavioral_biometrics:
+    status: 'partial'
+    note: behavioural signals; biometrics not described
+    source: 1
+    checked: '2026-11-27'
+  device_intelligence:
+    status: 'yes'
+    note: device risk score
+    source: 1
+    checked: '2026-11-27'
+  graph_analytics:
+    status: 'yes'
+    note: graph analysis in case management
+    source: 1
+    checked: '2026-11-27'
+  fraud_consortium:
+    status: 'yes'
+    note: fraud consortium covering 80M+ US adults
+    source: 1
+    checked: '2026-11-27'
+  realtime_decisioning:
+    status: 'yes'
+    note: evaluated in under 150 ms
+    source: 12
+    checked: '2026-11-27'
+  fraud_rules:
+    status: 'yes'
+    note: visual decision trees without engineering tickets
+    source: 12
+    checked: '2026-11-27'
+  rule_testing:
+    status: 'yes'
+    note: shadow mode, validation on history, sandbox
+    source: 12
+    checked: '2026-11-27'
+  payment_interventions:
+    status: 'partial'
+    note: approve, block or escalate; no hold or step-up
+    source: 12
+    checked: '2026-11-27'
+  explainability:
+    status: 'yes'
+    note: traceable, explainable outcomes
+    source: 1
+    checked: '2026-11-27'
+  ai_investigation:
+    status: 'yes'
+    note: investigation agent drafts case narratives
+    source: 1
+    checked: '2026-11-27'
+  regulatory_filing:
+    status: 'yes'
+    note: pre-populates SARs and other filings
+    source: 1
+    checked: '2026-11-27'
+  alert_prioritisation:
+    status: 'yes'
+    note: highest-risk activity surfaced first
+    source: 1
+    checked: '2026-11-27'
+  payee_verification:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  instant_payments:
+    status: 'yes'
+    note: FedNow and RTP named
+    source: 12
+    checked: '2026-11-27'
+  custom_models:
+    status: 'partial'
+    note: configurable models; customer models not described
+    source: 1
+    checked: '2026-11-27'
+  data_orchestration:
+    status: 'partial'
+    note: integrations listed; orchestration not described
+    source: 1
+    checked: '2026-11-27'
+  named_fi_customers:
+    status: 'yes'
+    note: Chime, Green Dot, Kinecta
+    source: 1
+    checked: '2026-11-27'
+  fraud_pricing:
+    status: quote
+    note: quote only
+    checked: '2026-11-27'
 integration:
   checked: '2026-11'
   docs_public:
@@ -357,6 +474,10 @@ sources:
 - title: Unit21 documentation (login)
   publisher: Unit21
   url: https://docs.unit21.ai/
+  accessed: '2026-11'
+- title: Real-time payment fraud prevention
+  publisher: Unit21
+  url: https://www.unit21.ai/products/real-time-payment-fraud-prevention
   accessed: '2026-11'
 entity:
   wikidata: null

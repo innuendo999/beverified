@@ -448,6 +448,119 @@ capabilities:
     status: not_disclosed
     note: "not found in public docs"
     checked: '2026-11'
+  fraud_transaction:
+    status: 'yes'
+    note: payment fraud product
+    source: 48
+    checked: '2026-11-27'
+  fraud_ato:
+    status: 'yes'
+    note: account takeover prevention
+    source: 48
+    checked: '2026-11-27'
+  fraud_scam:
+    status: 'not_disclosed'
+    note: APP scams not described
+    checked: '2026-11-27'
+  fraud_check:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  fraud_onboarding:
+    status: 'yes'
+    note: fake and synthetic identities before KYC
+    source: 48
+    checked: '2026-11-27'
+  fraud_mule:
+    status: 'yes'
+    note: money muling prevention
+    source: 48
+    checked: '2026-11-27'
+  behavioral_biometrics:
+    status: 'partial'
+    note: behaviour monitoring; biometrics not described
+    source: 48
+    checked: '2026-11-27'
+  device_intelligence:
+    status: 'yes'
+    note: device intelligence product
+    source: 48
+    checked: '2026-11-27'
+  graph_analytics:
+    status: 'yes'
+    note: fraud network detection
+    source: 48
+    checked: '2026-11-27'
+  fraud_consortium:
+    status: 'not_disclosed'
+    note: own database only
+    checked: '2026-11-27'
+  realtime_decisioning:
+    status: 'yes'
+    note: real-time detection, block or hold
+    source: 48
+    checked: '2026-11-27'
+  fraud_rules:
+    status: 'yes'
+    note: custom rules with no coding
+    source: 49
+    checked: '2026-11-27'
+  rule_testing:
+    status: 'yes'
+    note: dry-run mode before live
+    source: 49
+    checked: '2026-11-27'
+  payment_interventions:
+    status: 'yes'
+    note: step-ups, block, hold or escalate
+    source: 48
+    checked: '2026-11-27'
+  explainability:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  ai_investigation:
+    status: 'partial'
+    note: AI automation in investigations; Summy copilot not described
+    source: 48
+    checked: '2026-11-27'
+  regulatory_filing:
+    status: 'yes'
+    note: FIU reports in goAML format
+    source: 49
+    checked: '2026-11-27'
+  alert_prioritisation:
+    status: 'partial'
+    note: not described as prioritisation
+    source: 48
+    checked: '2026-11-27'
+  payee_verification:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  instant_payments:
+    status: 'not_disclosed'
+    note: no rail named
+    checked: '2026-11-27'
+  custom_models:
+    status: 'yes'
+    note: custom rules on the customer's own data sources
+    source: 49
+    checked: '2026-11-27'
+  data_orchestration:
+    status: 'partial'
+    note: external data implied; not described
+    source: 48
+    checked: '2026-11-27'
+  named_fi_customers:
+    status: 'yes'
+    note: iFAST Global Bank, Wirex
+    source: 48
+    checked: '2026-11-27'
+  fraud_pricing:
+    status: model
+    note: fraud modules priced in plans; figures for fraud not published
+    checked: '2026-11-27'
 integration:
   checked: '2026-11'
   docs_public:
@@ -827,6 +940,14 @@ sources:
   publisher: Sumsub
   url: https://cockpit.sumsub.com/checkus/pricing
   accessed: '2026-11-27'
+- title: Fraud prevention
+  publisher: Sumsub
+  url: https://sumsub.com/fraud-prevention/
+  accessed: '2026-11'
+- title: AML transaction monitoring
+  publisher: Sumsub
+  url: https://sumsub.com/aml-transaction-monitoring/
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

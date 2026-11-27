@@ -211,6 +211,120 @@ capabilities:
     status: partial
     note: 'US and APAC API endpoints besides default'
     source: 18
+  fraud_transaction:
+    status: 'yes'
+    note: real-time payment screening, card testing and stolen cards
+    source: 22
+    checked: '2026-11-27'
+  fraud_ato:
+    status: 'yes'
+    note: SIM-swap, new-device and new-country login checks
+    source: 22
+    checked: '2026-11-27'
+  fraud_scam:
+    status: 'partial'
+    note: login monitoring mentions phishing and social engineering; no scam payment detection
+    source: 22
+    checked: '2026-11-27'
+  fraud_check:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  fraud_onboarding:
+    status: 'yes'
+    note: synthetic IDs at signup, pre-KYC enrichment
+    source: 22
+    checked: '2026-11-27'
+  fraud_mule:
+    status: 'yes'
+    note: mule account detection across the account lifecycle
+    source: 24
+    checked: '2026-11-27'
+  behavioral_biometrics:
+    status: 'yes'
+    note: typing and mouse patterns to catch bots and session hijacking
+    source: 22
+    checked: '2026-11-27'
+  device_intelligence:
+    status: 'yes'
+    note: device fingerprinting, emulator and spoofing detection
+    source: 22
+    checked: '2026-11-27'
+  graph_analytics:
+    status: 'yes'
+    note: links accounts through shared devices and identifiers
+    source: 22
+    checked: '2026-11-27'
+  fraud_consortium:
+    status: 'yes'
+    note: consortium data from 5,000+ customers
+    source: 22
+    checked: '2026-11-27'
+  realtime_decisioning:
+    status: 'yes'
+    note: decisions in milliseconds via API; no latency figure
+    source: 22
+    checked: '2026-11-27'
+  fraud_rules:
+    status: 'yes'
+    note: rules built in the UI or with an AI rule builder, no engineering
+    source: 23
+    checked: '2026-11-27'
+  rule_testing:
+    status: 'yes'
+    note: rules backtested on historical transactions while the live version runs
+    source: 23
+    checked: '2026-11-27'
+  payment_interventions:
+    status: 'partial'
+    note: approve, review or decline; no hold or step-up described
+    source: 23
+    checked: '2026-11-27'
+  explainability:
+    status: 'yes'
+    note: rules and signals behind each score shown
+    source: 23
+    checked: '2026-11-27'
+  ai_investigation:
+    status: 'yes'
+    note: AI case summaries, Investigate With AI
+    source: 22
+    checked: '2026-11-27'
+  regulatory_filing:
+    status: 'not_disclosed'
+    note: not described for fraud cases
+    checked: '2026-11-27'
+  alert_prioritisation:
+    status: 'partial'
+    note: edge cases left for review; no named prioritisation
+    source: 22
+    checked: '2026-11-27'
+  payee_verification:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  instant_payments:
+    status: 'not_disclosed'
+    note: no rail named
+    checked: '2026-11-27'
+  custom_models:
+    status: 'yes'
+    note: AI score trained on the customer's own fraud outcomes
+    source: 23
+    checked: '2026-11-27'
+  data_orchestration:
+    status: 'not_disclosed'
+    note: signals gathered first-hand; third-party data not described
+    checked: '2026-11-27'
+  named_fi_customers:
+    status: 'yes'
+    note: Revolut, Wise, Afterpay among logos
+    source: 22
+    checked: '2026-11-27'
+  fraud_pricing:
+    status: entry_plan
+    note: Starter plan published, larger plans quoted
+    checked: '2026-11-27'
 integration:
   checked: '2026-11'
   docs_public:
@@ -397,6 +511,18 @@ sources:
 - title: 'API reference (SEON Docs)'
   publisher: 'SEON'
   url: https://docs.seon.io/api-reference
+  accessed: '2026-11'
+- title: Fraud prevention
+  publisher: SEON
+  url: https://seon.io/products/fraud-prevention/
+  accessed: '2026-11'
+- title: Rules and AI risk decisioning
+  publisher: SEON
+  url: https://seon.io/products/rules-ai-risk-decisioning/
+  accessed: '2026-11'
+- title: Mule account detection
+  publisher: SEON
+  url: https://seon.io/use-cases/mule-account-detection/
   accessed: '2026-11'
 entity:
   wikidata: null

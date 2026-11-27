@@ -334,6 +334,116 @@ capabilities:
     note: real-time payment screening, ISO 20022
     source: 16
     checked: '2026-11-23'
+  fraud_transaction:
+    status: 'yes'
+    note: 50+ payment fraud scenarios
+    source: 17
+    checked: '2026-11-27'
+  fraud_ato:
+    status: 'yes'
+    note: account takeover listed
+    source: 17
+    checked: '2026-11-27'
+  fraud_scam:
+    status: 'yes'
+    note: APP fraud listed
+    source: 17
+    checked: '2026-11-27'
+  fraud_check:
+    status: 'yes'
+    note: check, mobile deposit and duplicate check scenarios
+    source: 17
+    checked: '2026-11-27'
+  fraud_onboarding:
+    status: 'yes'
+    note: synthetic identity scenario
+    source: 17
+    checked: '2026-11-27'
+  fraud_mule:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  behavioral_biometrics:
+    status: 'partial'
+    note: behavioural analytics; biometrics not described
+    source: 17
+    checked: '2026-11-27'
+  device_intelligence:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  graph_analytics:
+    status: 'yes'
+    note: graph network detection
+    source: 17
+    checked: '2026-11-27'
+  fraud_consortium:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  realtime_decisioning:
+    status: 'yes'
+    note: real-time API, 24x7 for instant payments
+    source: 17
+    checked: '2026-11-27'
+  fraud_rules:
+    status: 'yes'
+    note: no-code rule builder
+    source: 17
+    checked: '2026-11-27'
+  rule_testing:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  payment_interventions:
+    status: 'not_disclosed'
+    note: alerts and cases only
+    checked: '2026-11-27'
+  explainability:
+    status: 'yes'
+    note: reason shown for each alert
+    source: 17
+    checked: '2026-11-27'
+  ai_investigation:
+    status: 'partial'
+    note: AI-prioritised alerts; agentic resolution described elsewhere for AML
+    source: 17
+    checked: '2026-11-27'
+  regulatory_filing:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  alert_prioritisation:
+    status: 'yes'
+    note: alerts tagged high to lowest
+    source: 17
+    checked: '2026-11-27'
+  payee_verification:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  instant_payments:
+    status: 'yes'
+    note: FedNow, Faster Payments, RTP named
+    source: 17
+    checked: '2026-11-27'
+  custom_models:
+    status: 'partial'
+    note: custom rules and data formats
+    source: 17
+    checked: '2026-11-27'
+  data_orchestration:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  named_fi_customers:
+    status: 'not_disclosed'
+    note: not on the page checked
+    checked: '2026-11-27'
+  fraud_pricing:
+    status: quote
+    note: fraud product priced by quote
+    checked: '2026-11-27'
 integration:
   checked: '2026-11'
   docs_public:
@@ -485,6 +595,10 @@ sources:
 - title: ComplyAdvantage Payment Screening (G-Cloud service listing)
   publisher: Crown Commercial Service, Digital Marketplace
   url: https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/441197968824603
+  accessed: '2026-11'
+- title: Fraud Detection
+  publisher: ComplyAdvantage
+  url: https://complyadvantage.com/fraud-detection/
   accessed: '2026-11'
 entity:
   wikidata: null
