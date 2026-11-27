@@ -28,8 +28,10 @@
       "matched": "digital identity wallet",
       "route": "news",
       "priority": 1,
-      "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
-      "first_seen": "2026-11-26"
+      "reason": "same story as ba8ba1f4480c96c0 (Czech EUDI Wallet consortium), already handled in PR #226",
+      "first_seen": "2026-11-26",
+      "status": "merged-with",
+      "merged-with": "ba8ba1f4480c96c0"
     },
     {
       "id": "836a83f7c6e35ffc",
@@ -47,8 +49,9 @@
       "matched": "digital id",
       "route": "news",
       "priority": 1,
-      "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
-      "first_seen": "2026-11-26"
+      "reason": "Sri Lanka: outside US/UK/EU focus",
+      "first_seen": "2026-11-26",
+      "status": "digest"
     },
     {
       "id": "5ff056e0676b85bb",
@@ -66,8 +69,9 @@
       "matched": "digital id",
       "route": "news",
       "priority": 1,
-      "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
-      "first_seen": "2026-11-26"
+      "reason": "Peru: outside US/UK/EU focus",
+      "first_seen": "2026-11-26",
+      "status": "digest"
     },
     {
       "id": "4a1b873ff935708c",
@@ -85,8 +89,9 @@
       "matched": "digital id",
       "route": "news",
       "priority": 1,
-      "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
-      "first_seen": "2026-11-26"
+      "reason": "Switzerland (not EU) procurement contract, no new rule; outside US/UK/EU focus",
+      "first_seen": "2026-11-26",
+      "status": "digest"
     },
     {
       "id": "8052a10d03e3794e",
@@ -154,8 +159,10 @@
       "matched": "digital id",
       "route": "news",
       "priority": 1,
-      "reason": "Rule, standard or deadline that changes what KYC and AML buyers must do.",
-      "first_seen": "2026-11-25"
+      "reason": "primary source mycolorado.gov update of 25 Nov 2026",
+      "first_seen": "2026-11-25",
+      "status": "drafted",
+      "pr": "https://github.com/innuendo999/beverified/pull/255"
     },
     {
       "id": "993fc77952d91946",
