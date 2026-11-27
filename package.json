@@ -5,8 +5,9 @@
   "scripts": {
     "build": "rm -rf _site && eleventy",
     "serve": "eleventy --serve",
-    "check": "node scripts/checks/css.mjs && node scripts/checks/content.mjs && node scripts/checks/links.mjs && node scripts/checks/quick-answers.mjs && node scripts/checks/placements.mjs && node scripts/checks/icons.mjs && node scripts/checks/terms.mjs && node scripts/checks/awards.mjs && node scripts/checks/aml.mjs && node scripts/checks/enforcement.mjs",
+    "check": "node scripts/checks/css.mjs && node scripts/checks/content.mjs && node scripts/checks/links.mjs && node scripts/checks/quick-answers.mjs && node scripts/checks/descriptions.mjs && node scripts/checks/placements.mjs && node scripts/checks/icons.mjs && node scripts/checks/terms.mjs && node scripts/checks/awards.mjs && node scripts/checks/aml.mjs && node scripts/checks/enforcement.mjs",
     "check:quick-answers": "node scripts/checks/quick-answers.mjs",
+    "check:descriptions": "node scripts/checks/descriptions.mjs",
     "gaps": "node scripts/checks/gaps.mjs",
     "inventory": "python3 scripts/inventory.py",
     "extract": "python3 scripts/extract.py",

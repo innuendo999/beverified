@@ -106,6 +106,8 @@ Category quick answer (`quick_answer` in `src/_data/categories/<slug>.yml`), wri
 - Last sentence: "We compared N providers on A, B and C." N equals the ranking length.
 - No scores (the table shows them). A price or count only when it is the reason for the pick, and it must match the provider record.
 
+Category meta description (`seo.description`, owner 2026-11-27), checked by `node scripts/checks/descriptions.mjs` in `npm run check` and CI: name the #1 provider first, keep any other ranked providers in rank order, never name a reviewed provider that is not in that ranking, and take the criteria from the quick answer's last sentence. Aim for 160 characters at most (longer is reported as a note). Set in bulk with `python3 scripts/set-descriptions.py scripts/seo-data/<batch>.json`.
+
 Humanizer never adds facts. If style and provenance conflict, provenance wins. Do not touch front matter, data, links, quotes or provider names while humanizing.
 
 ## Git
