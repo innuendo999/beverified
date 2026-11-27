@@ -4,15 +4,15 @@ seoTitle: "Our Methodology: How BeVerified Scores KYC & AML Providers"
 seoDescription: "How BeVerified scores KYC, IDV and AML providers: a published rubric for each kind of product, scored from public evidence, with what a score cannot measure."
 h1: "Our Methodology"
 lede: "We score identity verification and KYC providers on one rubric and AML providers on another, using evidence anyone can check. Every claim on a review is labelled with where it came from."
-updated: "2026-11-23"
+updated: "2026-11-27"
 ---
 <section>
-<p>Methodology {{ site.v3.methodologyVersion }}, last updated Nov 24, 2026. <a href="#changelog">What changed</a></p>
+<p>Methodology {{ site.v3.methodologyVersion }}, last updated Nov 27, 2026. <a href="#changelog">What changed</a></p>
 </section>
 
 <section id="rubric">
 <h2>Scoring rubric</h2>
-<p>Each provider gets an editorial score from 1 to 5: the weighted result of six criteria. The criteria are the questions a buyer asks when choosing a vendor, so they differ by kind of product. Identity verification, eKYC, KYC, liveness, age verification and KYB providers use the first rubric; AML screening and monitoring providers use the second. Travel Rule providers are still scored on our previous rubric until their own methodology is published. The Identity Verification ranking, Know Your Agent products, the Budget KYC ranking and the AML Software ranking have rubrics of their own, set out below: <a href="#identity-verification">Identity verification</a>, <a href="#know-your-agent">Know Your Agent</a>, <a href="#budget-kyc">Budget KYC</a> and the <a href="#aml">AML ranking</a>.</p>
+<p>Each provider gets an editorial score from 1 to 5: the weighted result of six criteria. The criteria are the questions a buyer asks when choosing a vendor, so they differ by kind of product. Identity verification, eKYC, KYC, liveness, age verification and KYB providers use the first rubric; AML screening and monitoring providers use the second. Travel Rule providers are still scored on our previous rubric until their own methodology is published. The Identity Verification ranking, Know Your Agent products, the Budget KYC ranking, the AML Software rankings and the Fraud Prevention ranking have rubrics of their own, set out below: <a href="#identity-verification">Identity verification</a>, <a href="#know-your-agent">Know Your Agent</a>, <a href="#budget-kyc">Budget KYC</a>, the <a href="#aml">AML ranking</a> and <a href="#fraud-prevention">fraud prevention</a>.</p>
 <table>
 <caption>Identity verification and KYC: criteria, weights and what we look at</caption>
 <thead><tr><th scope="col">Criterion</th><th scope="col">Weight</th><th scope="col">What we look at</th></tr></thead>
@@ -145,6 +145,29 @@ updated: "2026-11-23"
 <p>The AML for Banks score can't tell you how much a system detects on your data, how many false alerts it raises, how clean your data has to be, how long the project really takes, or how the vendor supports you in an exam. Before you sign, run the vendor's scenarios on a sample of your historical transactions, including cases you reported, ask whether alerts for one customer land in one case, change a threshold in the simulation tool and read the impact report, and ask for the model documentation and the implementation plan for your core system.</p>
 </section>
 
+<section id="fraud-prevention">
+<h2>Fraud prevention rubric</h2>
+<p>The Fraud Prevention ranking is ordered by a separate Fraud score from the rubric below. It orders that ranking only, and each provider's review keeps its overall score.</p>
+<p>We built it for the head of fraud at a bank, credit union, neobank, lender, payment company or brokerage in the US, UK and EU. Banks and credit unions tend to start from card and check fraud, scam payments they may have to refund, and fraud and AML teams working on the same customers. Neobanks and fintechs tend to start from fraud at sign-up, account takeover, how fast they can go live and price. One score covers both; the ranking's picks by use case show where they differ. The weights follow where fraud losses now come from: a growing share passes through a legitimate login or a customer talked into paying, and banks in the UK and soon the EU must refund many of those scams.</p>
+<table>
+<caption>Fraud prevention ranking: criteria, weights and what we look at</caption>
+<thead><tr><th scope="col">Criterion</th><th scope="col">Weight</th><th scope="col">What we look at</th></tr></thead>
+<tbody>
+<tr><th scope="row">Fraud coverage</th><td>25%</td><td>Which fraud types the vendor describes a product or model for: scams and impersonation (authorised push payment fraud) and account takeover count most, then card and payment fraud, check and deposit fraud, fraud at sign-up or on applications (synthetic and stolen identities) and money mule accounts.</td></tr>
+<tr><th scope="row">Signals</th><td>15%</td><td>Behavioural biometrics, including signs that a customer is being coached or the session is remote-controlled, counts most; then device intelligence, links found across accounts, devices and payments, and fraud data shared across the vendor's customers. Machine learning and rules alone earn nothing: every vendor here has them.</td></tr>
+<tr><th scope="row">Decisioning and control</th><td>15%</td><td>A decision returned before the payment or login completes, rules your team writes and changes without code, testing a rule or model on past data or in shadow mode before it goes live, responses between approve and block (holding a payment, a scam warning in the app, extra authentication), and the reason for each decision.</td></tr>
+<tr><th scope="row">Investigations</th><td>10%</td><td>Case management with alerts grouped by customer, AI help for analysts that leaves the decision with them, suspicious activity reports drafted or filed from the fraud case, and alerts ranked by risk.</td></tr>
+<tr><th scope="row">Bank and fintech fit</th><td>10%</td><td>A payee name check before a transfer (Confirmation of Payee or Verification of Payee), named support for real-time payment rails such as RTP, FedNow, Faster Payments or SEPA Instant, fraud and AML monitoring on one platform, on-premises or regional data hosting, and named bank, credit union or regulated fintech customers on the vendor's own site.</td></tr>
+<tr><th scope="row">Integration and openness</th><td>10%</td><td>Public API documentation, a self-serve sandbox or trial, room for your own data and models in the decision, third-party data and signals called from the same flow, and SDKs for web and mobile.</td></tr>
+<tr><th scope="row">Trust</th><td>10%</td><td>A confirmed ISO/IEC 27001 certificate or SOC 2 Type 2 report, a PCI DSS attestation where the product handles card data, and no sale or change of owner announced in the last 12 months. Regulatory actions and security incidents in the last 24 months cost points.</td></tr>
+<tr><th scope="row">Pricing transparency</th><td>5%</td><td>Published prices per check or transaction, a published entry plan, or at least a stated pricing model. A vendor that quotes only through sales scores 2 out of 5.</td></tr>
+</tbody>
+</table>
+<p>We look for evidence the same way for every provider: product pages, documentation, datasheets on the vendor's own site and its trust centre. Pages behind a login or a contact form don't count. A feature we can't find earns no points, and its weight doesn't move to other criteria. Vendor figures such as detection rates or "70% fewer false positives", analyst reports, awards and customer logos never enter the score.</p>
+<p>To enter the ranking, a provider needs a published BeVerified review and a generally available fraud product for financial institutions or fintechs, described on its own site: scoring of payments or transactions, account takeover detection, scam detection or detection of fraud at sign-up. Transaction monitoring for AML alone doesn't qualify. The ranking lists the top 10. A provider that doesn't qualify is left out, not scored low.</p>
+<p>The Fraud score can't tell you how much fraud a system catches on your traffic, how many good customers it blocks or slows down, or how many scam refunds it would have saved you. Before you sign, run the vendor in shadow mode on your own history, including cases you lost money on, and measure fraud caught at the alert volume your team can handle, false positives per thousand transactions, analyst time per case and decision time on your payment rails.</p>
+</section>
+
 <section id="evidence">
 <h2>Where the evidence comes from</h2>
 <p>Every fact on a review carries one of four labels, so you can see how much weight to give it:</p>
@@ -200,6 +223,7 @@ updated: "2026-11-23"
 <section id="changelog">
 <h2>What changed</h2>
 <ul>
+<li><strong>Nov 27, 2026 (Fraud 1.0):</strong> added a rubric for the Fraud Prevention ranking, built for fraud teams at banks, credit unions and fintechs: fraud coverage with scams and account takeover weighted most, signals, decisioning and control, investigations, bank and fintech fit, integration and openness, trust and pricing transparency. Fraud scores are separate from overall scores and order only that ranking. Criteria, weights and entry rules were published before any provider was scored.</li>
 <li><strong>Nov 24, 2026 (AML for Banks 1.0):</strong> added a rubric for the AML Software for Banks ranking, built for banks, credit unions and building societies: detection, alert quality and analyst workload, tuning without the vendor, validation and audit for examiners, implementation and data integration, sanctions screening, and vendor risk with cost transparency. Needs that depend on the bank, such as on-premises deployment or the core banking system, are shown per provider without points. Scores are separate from overall scores and order only that ranking. Criteria, weights and entry rules were published before any provider was scored.</li>
 <li><strong>Nov 23, 2026 (AML 1.0):</strong> added an AML rubric for the AML Software ranking, built for fintechs, e-money institutions, payment firms and crypto-asset service providers: sanctions, PEP and media data, match quality controls, calibration and audit, ongoing and transfer monitoring, total cost and integration. AML scores are separate from overall scores and order only that ranking. Criteria, weights and entry rules were published before any provider was scored.</li>
 <li><strong>Nov 17, 2026 (IDV 1.0):</strong> added an identity verification rubric for the Identity Verification ranking, built for regulated fintech and gambling operators: fraud defense, coverage, total cost, integration and user flow, compliance fit and a narrow platform breadth. IDV scores are separate from overall scores and order only that ranking. Criteria and weights were published before any provider was scored.</li>

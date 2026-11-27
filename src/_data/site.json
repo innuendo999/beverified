@@ -209,6 +209,16 @@
       { "key": "screening", "name": "Sanctions screening of customers and payments", "weight": 10 },
       { "key": "vendor", "name": "Vendor risk and cost transparency", "weight": 5 }
     ],
+    "rubricFraud": [
+      { "key": "coverage", "name": "Fraud coverage", "weight": 25 },
+      { "key": "signals", "name": "Signals", "weight": 15 },
+      { "key": "decisioning", "name": "Decisioning and control", "weight": 15 },
+      { "key": "investigations", "name": "Investigations", "weight": 10 },
+      { "key": "fit", "name": "Bank and fintech fit", "weight": 10 },
+      { "key": "integration", "name": "Integration and openness", "weight": 10 },
+      { "key": "trust", "name": "Trust", "weight": 10 },
+      { "key": "pricing", "name": "Pricing transparency", "weight": 5 }
+    ],
     "rubricKya": [
       {
         "key": "detection",
