@@ -338,6 +338,22 @@ score_breakdown:
   note: "ISO 27001 or SOC 2 vendor-stated, trust framework confirmed, operating since 2017"
   evidence: vendor
 hands_on: null
+product_history:   # dated company and product events, newest first; each from sources[]
+- date: '2026-11-03'
+  text: 'Completed its merger with Fourthline. Fourthline CEO Paul Stoddart leads the combined company, with Eduardo Azanza as president.'
+  source: 28
+- date: '2026-07'
+  text: 'Agreed to merge with Fourthline.'
+  source: 6
+- date: '2024-12'
+  text: 'Voice Shield passed iBeta Level 1 presentation attack testing.'
+  source: 8
+- date: '2024-04'
+  text: 'Passive Liveness Detection passed iBeta ISO/IEC 30107-3 Level 2 testing.'
+  source: 8
+- date: '2023-04'
+  text: 'Announced a EUR 15 million capital increase from its existing partners.'
+  source: 11
 sources:
 - title: About us
   publisher: Veridas
