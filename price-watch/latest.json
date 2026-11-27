@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-26",
-  "pages": 34,
+  "date": "2026-11-27",
+  "pages": 35,
   "read": 30,
   "mismatches": [
     {
@@ -159,10 +159,10 @@
       "names": [
         "GBG"
       ],
-      "added": [],
-      "removed": [
+      "added": [
         "£500000"
-      ]
+      ],
+      "removed": []
     }
   ],
   "unreadable": [
@@ -180,6 +180,11 @@
       "id": "persona",
       "url": "https://withpersona.com/pricing",
       "why": "fetch: HTTP 403; curl: curl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "sumsub-7da645",
+      "url": "https://cockpit.sumsub.com/checkus/pricing",
+      "why": "no money figures in the page text (rendered by script?)"
     },
     {
       "id": "yoti",

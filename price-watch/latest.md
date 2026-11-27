@@ -1,6 +1,6 @@
-# Price watch 2026-11-26
+# Price watch 2026-11-27
 
-30 of 34 pricing pages read.
+30 of 35 pricing pages read.
 
 ## Record figures not found on the page
 
@@ -25,7 +25,7 @@ Each line is a price in our record that the vendor page no longer shows. Open th
 
 Figures added to or removed from a page since the previous read. Often a new plan or a price change; sometimes a banner or currency switch.
 
-- GBG: added none; removed £500000. https://www.loqate.com/en-gb/pricing/
+- GBG: added £500000; removed none. https://www.loqate.com/en-gb/pricing/
 
 ## Pages we could not read
 
@@ -34,6 +34,7 @@ Check these by hand (browser) or ask the owner for a screenshot.
 - complead: fetch: HTTP 404; curl: curl: (22) The requested URL returned error: 404. https://sanctionscanner.com/pricing
 - ledgerbrain-f66a49: no money figures in the page text (rendered by script?). https://api.ledgercore.io/api/v1/x402/catalog
 - persona: fetch: HTTP 403; curl: curl: (22) The requested URL returned error: 403. https://withpersona.com/pricing
+- sumsub-7da645: no money figures in the page text (rendered by script?). https://cockpit.sumsub.com/checkus/pricing
 - yoti: fetch: HTTP 404; curl: curl: (22) The requested URL returned error: 404. https://www.yoti.com/business/pricing/
 
 ## Calculator prices due for a re-check
