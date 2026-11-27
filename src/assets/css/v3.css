@@ -2655,6 +2655,12 @@ td > .cg-v:first-child { margin-left: 0; }
 .rv6-more summary { color: var(--accent); cursor: pointer; }
 .rv6-video a { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; aspect-ratio: 16 / 9; background: var(--ink); color: #fff; border-radius: var(--radius-tile); margin-bottom: 14px; font-weight: 500; }
 .rv6-video__play { width: 56px; height: 56px; border-radius: 50%; background: #fff; color: var(--ink); display: flex; align-items: center; justify-content: center; font-size: 20px; }
+.rv6-clips { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; margin-bottom: 16px; }
+.rv6-clips figure { margin: 0; }
+.rv6-clips video { display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); background: var(--ink); }
+.rv6-clips figcaption { margin-top: 6px; font-size: 13px; line-height: 1.5; color: var(--body); }
+.rv6-clips figcaption b { color: var(--ink); font-weight: 600; }
+@media (max-width: 640px) { .rv6-clips { grid-template-columns: minmax(0,1fr); } }
 .rv6-shots { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; }
 .rv6-shots figure { margin: 0; }
 .rv6-shots img { display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); }
