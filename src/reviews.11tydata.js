@@ -165,7 +165,7 @@ export default {
           ["reach", "Reach", nets.length > 0],
           ["pricing", "Pricing", true],
           ["alternatives", "Alternatives", alts.length > 0],
-          ["in-use", "In use", (p.screenshots || []).length > 0 || !!p.video],
+          ["in-use", "In use", (p.screenshots || []).length > 0 || !!p.video || (p.clips || []).length > 0],
           ["product", "What it does", true],
           ["trust", "Trust record", true],
           ["awards", "Awards", awardsAll().some((x) => x.slug === p.slug)],

@@ -106,6 +106,11 @@ pricing:
     kind: official
     source: 9
     verified: '2026-11'
+  - label: Free trial, in our dashboard
+    value: 14 days or 10 verifications, plus 10 AML screening checks and 5 company reports in the dashboard demos; seen 27 Nov 2026
+    kind: official
+    source: 36
+    verified: '2026-11'
 facts:
 - label: From
   value: $1.35/verification (Basic)
@@ -130,6 +135,14 @@ facts:
 - label: Model
   value: Per check; approved-only billing as add-on
   source: 10
+  evidence: vendor
+- label: AML screening lists
+  value: OFAC, EU Council, UN Security Council, HMT/OFSI, PEP registries and adverse media in the trial; iDenfy says the full product adds regulatory enforcement, profiles of interest, insolvency and disqualified directors; seen 27 Nov 2026
+  source: 36
+  evidence: vendor
+- label: KYB AI reviewer
+  value: Recommends Approved, Flagged or Denied with its reasons, on paid plans; seen in the dashboard demo, 27 Nov 2026
+  source: 36
   evidence: vendor
 pros:
 - 'Approved-only billing option: rejected verifications cost nothing'
@@ -580,6 +593,10 @@ sources:
   publisher: iDenfy
   url: https://idenfy.com/ai-company-report-service/
   accessed: '2026-11'
+- title: iDenfy dashboard, trial account (BeVerified, signed in)
+  publisher: iDenfy
+  url: https://admin.idenfy.com/
+  accessed: '2026-11-27'
 entity:
   wikidata: null
   kg_mid: null
@@ -601,6 +618,76 @@ verification_notes:
 - 'SOC 2 Type II auditor named by iDenfy as House of CPA; report not public (on request).'
 - 'Trustpilot reviews include end users being verified, not only business customers. Trustpilot count fell from 31 to 29 since 2026-10-18.'
 - 'Certification re-check 2026-11-20: the ISO/IEC 27001 certificate PDF on idenfy.com names CERT International, ISMS-1851/A, valid 3 Jun 2026 to 2 Jun 2029; the compliance docs page names a different certificate (TUV Thuringen, No. 1512120135). The record keeps the certificate that was opened; ask iDenfy which is current.'
+clips:
+- file: /assets/video/idenfy/aml-screening.mp4
+  poster: /assets/img/screens/idenfy/aml-screening-poster.webp
+  width: 1280
+  height: 624
+  seconds: 10
+  caption: AML screening of our editor
+  alt: Screen recording of an iDenfy AML check on the name Andrii Klymenko, with results per list and 14 matched profiles of other people
+  long: We typed our editor's name and ran one check. Six lists came back in seconds; PEP and adverse media flag 14 people with similar names, which you then mark true or false. We blurred those other people's details.
+- file: /assets/video/idenfy/kyb-check.mp4
+  poster: /assets/img/screens/idenfy/kyb-check-poster.webp
+  width: 1280
+  height: 574
+  seconds: 13
+  caption: Company check on iDenfy's sample company
+  alt: Screen recording of an iDenfy KYB report on its sample company, showing the register record, a name mismatch warning, owners and the AI reviewer
+  long: A credit bureau report on iDenfy's sample company flags that the registered name differs from the search and shows two 50% owners.
+screenshots:
+- file: /assets/img/screens/idenfy/01-verifications.webp
+  width: 1422
+  height: 638
+  caption: Verifications
+  alt: iDenfy list of sample verifications with status icons, name, date and document type
+  long: Sessions with their result; one sample is approved but flagged for AML.
+- file: /assets/img/screens/idenfy/02-sample-verification.webp
+  width: 1422
+  height: 638
+  caption: Verification review
+  alt: iDenfy verification review with a specimen passport, extracted data, MRZ and the result Approved and suspected
+  long: The document next to the data read from it, with MRZ validation and a one-click AML check.
+- file: /assets/img/screens/idenfy/03-checks-and-result.webp
+  width: 1422
+  height: 638
+  caption: Checks and final result
+  alt: List of identity checks with their status and the final result Approved (suspected) with the AML suspicion tag
+  long: Which checks ran and why the result is "approved, suspected".
+- file: /assets/img/screens/idenfy/04-new-verification.webp
+  width: 1422
+  height: 638
+  caption: New verification
+  alt: New verification form with device type, email request, advanced settings, client data and redirects
+  long: Create a link for a browser or a code for the mobile app, or send it by email.
+- file: /assets/img/screens/idenfy/05-products.webp
+  width: 1422
+  height: 638
+  caption: Products you can add
+  alt: iDenfy products page with AML verifications, business verifications, proof of address and age estimation, each with a free trial
+  long: Add-on products you can try from the same dashboard.
+- file: /assets/img/screens/idenfy/06-kyb-owners.webp
+  width: 1422
+  height: 638
+  caption: Company owners
+  alt: iDenfy KYB report showing two 50% owners and the extra checks available on paid plans
+  long: Owners from the register, and the checks a paid plan adds.
+- file: /assets/img/screens/idenfy/07-kyb-ai-review.webp
+  width: 1422
+  height: 638
+  caption: AI reviewer and reports
+  alt: iDenfy KYB AI reviewer description and the reports you can order
+  long: On paid plans an AI reviewer recommends a decision with reasons.
+screenshots_meta:
+  origin: beverified
+  provided: '2026-11-27'
+  environment: an iDenfy trial account
+  sample_data: true
+  note: "The verifications and the company are iDenfy's own samples, so these screens show how the product works, not how accurate it is. The AML check is a real check on our editor's name; the matched profiles belong to other people and are blurred."
+  permission: own trial account; iDenfy not asked yet (owner to decide)
+changes:
+- date: '2026-11-27'
+  text: Screenshots and two short screen recordings from our own trial account added, with the AML lists and KYB AI reviewer seen there.
 application_category: Identity Verification Software
 author: andrii-klymenko
 legacy_reviewer:

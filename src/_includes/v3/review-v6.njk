@@ -198,12 +198,19 @@
   {%- endif %}
 
   {#- In use: our screenshots and video -#}
-  {%- if v.shots.length or p.video %}
+  {%- if v.shots.length or p.video or (p.clips and p.clips.length) %}
   <section id="in-use" aria-labelledby="iu-h">
     <div class="rv6-head"><h2 id="iu-h" class="rv6-h2">{{ p.name }} in use</h2>{% if p.screenshots_meta %}<span class="rv6-head__note">{% if p.screenshots_meta.origin == "vendor" %}Screenshots provided by {{ p.name }}{% else %}Captured by BeVerified{% if p.screenshots_meta.environment %} in {{ p.screenshots_meta.environment }}{% endif %}{% endif %}{% if p.screenshots_meta.sample_data %} · sample data{% endif %}{% if p.screenshots_meta.provided %} · {{ p.screenshots_meta.provided | displayDate }}{% endif %}</span>{% endif %}</div>
     {%- if p.screenshots_meta.note %}<p class="rv6-p">{{ p.screenshots_meta.note }}</p>{% endif %}
     {%- if p.video and p.video.youtube %}
     <div class="rv6-video"><a href="https://www.youtube.com/watch?v={{ p.video.youtube }}" target="_blank" rel="noopener"><span class="rv6-video__play" aria-hidden="true">▶</span><span>{{ p.video.title or ("Watch the " + p.name + " walkthrough") }}</span></a></div>
+    {%- endif %}
+    {%- if p.clips and p.clips.length %}
+    <div class="rv6-clips">
+      {%- for c in p.clips %}
+      <figure><video controls muted playsinline preload="none" width="{{ c.width }}" height="{{ c.height }}"{% if c.poster %} poster="{{ c.poster }}"{% endif %} aria-label="{{ c.alt }}"><source src="{{ c.file }}" type="video/mp4"></video><figcaption><b>{{ c.caption }}</b>{% if c.seconds %} <span class="c-muted">· {{ c.seconds }} s, no sound.</span>{% endif %}{% if c.long %} {{ c.long }}{% endif %}</figcaption></figure>
+      {%- endfor %}
+    </div>
     {%- endif %}
     <div class="rv6-shots">
       {%- for s in v.shots %}
