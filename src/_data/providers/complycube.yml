@@ -4,18 +4,18 @@ alternate_names: []
 status: published
 seo:
   title: 'ComplyCube Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'ComplyCube review: API-first KYC/AML platform with published per-check pricing and plans from $99 a month. Features, pricing, pros & cons, alternatives.'
+  description: 'ComplyCube review: UK DIATF-certified identity verification and AML screening with per-check prices and plans from $99 a month. Pricing, pros and cons.'
   h1: 'ComplyCube Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/complycube.webp
   background: '#9166F2'
   wordmark: /assets/img/wordmarks/complycube.png
-tagline: API-first KYC/AML platform aimed at straightforward developer integration
+tagline: UK DIATF-certified identity verification and AML screening with published per-check prices from $99 a month
 score: 4.0
 methodology: v3.1
-primary_category: e-kyc
-legacy_rank_claim: 'ranked #3 in eKYC'
+primary_category: uk
 categories:
+- uk
 - e-kyc
 - aml
 link:
@@ -24,9 +24,10 @@ link:
   legacy_rel: nofollow sponsored
 last_verified: '2026-10-22'
 updated: '2026-11-27'   # last content edit; last_verified = last fact re-check
-verdict: 'ComplyCube is an eKYC API for small and mid-market teams that want document checks, biometrics and AML screening with a developer-friendly integration. Self-serve plans start at $99 a month, credited against checks. Higher tiers, NFC and video liveness are quoted, and its independent track record is thinner than the larger providers''.'
+verdict: 'ComplyCube is a UK identity verification and AML provider for small and mid-market teams that want a UK DIATF-certified service and published per-check prices. Self-serve plans start at $99 a month, credited against checks, and on Starter only successful verifications are charged. Its liveness test names no lab, and its other certificates are claims we could not confirm.'
 what_is:
-- ComplyCube is a KYC and AML technology company based in London, UK, operated by Teemo Technology Ltd. It offers an API-first platform for identity verification, biometric authentication, KYB and AML screening, and says it supports 220+ countries and territories. It targets fintechs and regulated businesses that want document verification, liveness checks, and sanctions/PEP screening through a single integration, positioned as a more accessible alternative to enterprise-only IDV platforms. Its identity service is certified under the UK digital identity and attributes trust framework (DIATF).
+- 'ComplyCube checks a person from an ID document and a selfie, screens them against sanctions, PEP and adverse-media lists, and adds KYB, address and eID checks on higher plans, all through one API or a no-code flow. Its identity service is certified under the UK digital identity and attributes trust framework (DIATF) on the government register. In our account in test mode in November 2026 a document check showed a breakdown of what it tested (MRZ, forensic, content and RFID analysis), screening ran under rules that set the match thresholds and exclusions, verification flows kept numbered versions, and country risk scores and a banned-face list could be set by the customer.'
+- 'ComplyCube is operated by Teemo Technology Ltd, a UK company incorporated in January 2020 with a registered office in London. It says it supports 220+ countries and territories; its document guide lists 13,000+ identity document types.'
 features:
 - Document verification with OCR and authenticity checks.
 - Biometric face-match and liveness detection.
@@ -188,7 +189,7 @@ facts:
   source: 4
   evidence: independent
 - label: Regions
-  value: 220+ countries and territories
+  value: 220+ countries and territories (About page); the document guide lists 250+ for document checks
   source: 3
   evidence: vendor
 - label: Certifications
@@ -204,13 +205,13 @@ facts:
   source: 23
   evidence: vendor
 pros:
-- API-first design with web and mobile SDKs aimed at fast developer integration
-- Published per-check prices and self-serve plans from $99 a month
-- Certified UK DIATF identity service, with ISO/IEC 27001 and ISO/IEC 30107-3 claims on its trust page
+- 'Certified UK DIATF identity service on the government register (Kantara, March 2026 to March 2029)'
+- 'Published per-check prices on self-serve plans from $99 a month, and on Starter only successful verifications are charged'
+- 'One API for document, biometric and AML checks, with screening rules and versioned flows you set yourself'
 cons:
-- Smaller scale and brand recognition than category leaders
-- Growth and Enterprise tiers, and checks such as NFC and video liveness, are quote-only
-- Less independent track record and case-study depth than larger competitors
+- 'ComplyCube says its liveness passed ISO/IEC 30107-3 Level 2 but names no lab, and we found no lab letter'
+- 'ISO/IEC 27001, SOC 2, Cyber Essentials and the age-check certificate are vendor claims; its trust page showed no certificates and we found no register entries'
+- 'Growth and Enterprise plans, and checks such as NFC and video liveness, are quoted on request'
 alternatives:
 - slug: sumsub
   name: Sumsub
@@ -222,39 +223,33 @@ alternatives:
   name: Onfido
   best_for: Developer-Friendly
 choose_instead:
-- slug: sumsub
-  text: you want a more established, larger-scale all-in-one platform.
-- slug: shufti-pro
-  text: you want a vendor with a longer enterprise track record across many languages and markets.
-- slug: onfido
-  text: you want a more established developer-tools ecosystem at enterprise scale.
+- slug: yoti
+  need: Confirmed liveness and age checks
+  text: you need liveness with an iBeta Level 3 letter, four services on the UK DVS register and an ISO/IEC 27001 certificate you can open, or age checks from £0.15.
+- slug: veriff
+  need: Certificates you can check
+  text: you want a UK DIATF service plus iBeta liveness and FIDO face and document certification, with self-serve plans from $0.80 per verification and a $49 monthly minimum.
+- slug: smartsearch
+  need: Law, property and accountancy firms
+  text: you are a UK legal, property or accountancy firm and want an AML and KYC tool built for JMLSG-regulated professions, with two services on the DVS register.
 user_reviews:
   legacy_note: null
-  praise:
-  - 'Integration: the API and SDKs are the main reason developer teams shortlist it.'
-  - 'Bundled scope: having document, biometric and AML checks in one place suits smaller teams.'
-  criticize:
-  - 'Scale: less brand recognition and case-study depth than category leaders.'
-  - 'Plan limits: some checks and features are only available on quote-based tiers.'
-  by_profile:
-  - Small and mid-market fintechs can start on a self-serve plan and use the API directly.
-  - Smaller compliance teams get document, biometric, and AML checks bundled together.
-  - Enterprises needing a long track record at scale more often evaluate larger, more established platforms.
+  praise: []
+  criticize: []
+  by_profile: []
 faq:
 - q: How much does ComplyCube cost?
   a: ComplyCube publishes its prices. The Starter plan is $99 a month and Core is $299 a month, with the fee used as credit for checks. A document check costs $1.05 on Starter or $0.75 on Core, and a photo liveness check costs $0.35 or $0.20. Growth and Enterprise plans are quoted on request.
 - q: Does ComplyCube support KYB?
   a: Yes. ComplyCube offers business verification (KYB) alongside its individual identity-verification and AML screening tools.
 - q: Is ComplyCube good for developers?
-  a: Yes, ComplyCube is built API-first, with web and mobile SDKs and a no-code workflow builder for teams that do not want to code the flow.
+  a: ComplyCube offers a REST API with web and mobile SDKs, and a no-code workflow builder for teams that do not want to code the flow. In test mode the sandbox comes preloaded with sample clients and checks, so you can see results before integrating.
 - q: Does ComplyCube do AML screening?
   a: Yes. ComplyCube includes sanctions, PEP, watchlist and adverse-media screening with continuous monitoring, alongside its document and biometric verification.
 - q: Is ComplyCube certified under the UK trust framework?
   a: Yes. The UK government register lists the ComplyCube Platform (Teemo Technology Ltd) as a certified identity service, certified by Kantara on 30 March 2026 until 30 March 2029.
 - q: What is the best alternative to ComplyCube?
-  a: Sumsub is the best alternative for a more established, larger-scale platform. Shufti Pro is the closest fit if you want a vendor with a longer enterprise track record.
-- q: Who are ComplyCube's main competitors?
-  a: ComplyCube competes with Sumsub, Shufti Pro, and Onfido, differentiating through its API-first focus and published pricing.
+  a: It depends on what you need. In the UK, Yoti has liveness with an iBeta Level 3 letter and four services on the DVS register, Veriff adds iBeta and FIDO certification to its UK DIATF service with plans from $0.80 per verification, and SmartSearch is built for JMLSG-regulated professions such as law and accountancy firms.
 segments: []
 capabilities:
   checked: '2026-10'
