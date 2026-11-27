@@ -9,7 +9,10 @@ map:
   travel-rule: travel-rule
 
 travel-rule:
-  v4: true
+  # V6 (owner, 2026-11-27; canvas page "Travel Rule"): Travel Rule reviews use review-v6.njk with the
+  # blocks below (fit lines, folded fit check, reach table, jobs, pricing details). V4/V5 template kept, off.
+  v4: false
+  pricing_details: true
   # V5 (owner, 2026-11-11): fit check, no score section, Before you sign hidden until the data is there, alternatives from this ranking only
   fit_check: true
   score_section: false

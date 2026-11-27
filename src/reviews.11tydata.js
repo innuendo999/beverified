@@ -12,6 +12,18 @@ import { productGroups, keyFacts, bestEvidence, awardsFor, fitBlock, costAtVolum
 import { currentAwards } from "./_lib/awards.js";
 import { guilloche } from "./_lib/hero.js";
 
+// Travel Rule key facts: price, deployment, networks built in, founded (canvas page "Travel Rule")
+function trFacts(p, base, dep, nets) {
+  const out = [base.find((x) => /^Price/.test(x.label))];
+  if (dep) out.push({ label: dep.label, value: dep.value, sub: dep.sub.length > 60 ? dep.sub.split(";")[0] : dep.sub });
+  const built = nets.filter((n) => ["built_in", "own", "live"].includes(n.status)).map((n) => n.name);
+  const other = nets.filter((n) => !n.off && !["built_in", "own", "live"].includes(n.status)).length;
+  if (built.length) out.push({ label: "Built-in networks", value: built.join(", "), sub: other ? `+ ${other} through a bridge, membership or email` : "" });
+  const founded = base.find((x) => x.label === "Founded");
+  if (founded) out.push(founded);
+  return out.filter(Boolean).slice(0, 4);
+}
+
 let awardList = null; // computed once per build
 const awardsAll = () => (awardList ??= currentAwards().out);
 
@@ -101,15 +113,29 @@ export default {
     // Review page V6 (owner, 2026-11-27): every profile without v4. Template src/_includes/v3/review-v6.njk.
     v6: (d) => {
       const p = d.p;
-      if (profileFor(p, d.reviewProfiles)?.v4) return null;
+      const prof = profileFor(p, d.reviewProfiles);
+      if (prof?.v4) return null;
       const ctx = { rankings: d.rankings, providers: d.providers, categories: d.categories, menu: d.site.v3.menu };
-      const alts = (p.choose_instead || []).filter((a) => a.slug && d.providers[a.slug])
+      // A profile can keep alternatives inside one ranking, so a provider from another category never shows its score here
+      const sameRanking = prof?.alts_same_ranking ? new Set((d.rankings?.[prof.alts_same_ranking]?.providers || []).map((x) => x.slug)) : null;
+      const alts = (p.choose_instead || []).filter((a) => a.slug && d.providers[a.slug] && (!sameRanking || sameRanking.has(a.slug)))
         .map((a) => ({ text: a.text, need: a.need || null, q: d.providers[a.slug] }));
+      // Travel Rule blocks (canvas page "Travel Rule"): fit lines, fit check, reach table, jobs
+      const nets = prof?.fit_check ? networkRows(p) : [];
+      const tr = prof?.fit_check ? {
+        fit: fitRows(p, d.providers),
+        networks: nets,
+        jobs: productJobs(p),
+        fitCheck: fitCheckData(d.providers, d.rankings, d.travelRuleFit),
+        questions: questions(p, nets),
+        // Pricing model and support lines under the plan cards, minus rows that repeat a plan tier
+        pricingRows: prof.pricing_details ? (p.pricing?.items || []).filter((i) => i.kind !== "third_party" && !(p.pricing?.plans || []).some((pl) => pl.tier === i.label)) : [],
+      } : null;
       const official = (p.pricing?.items || []).filter((i) => i.kind !== "third_party");
       return {
         year: reviewYear(p),
         g: guilloche(),
-        facts: keyFacts(p),
+        facts: tr ? trFacts(p, keyFacts(p), deployHero(p, d.travelRuleFit), nets) : keyFacts(p),
         evidence: bestEvidence(p),
         awards: awardsFor(p, awardsAll(), d.rankings),
         fit: fitBlock(p, d.rankings, d.categories, d.providers),
@@ -119,19 +145,24 @@ export default {
         official,
         estimates: (p.pricing?.items || []).filter((i) => i.kind === "third_party"),
         cost: costAtVolume(p),
-        groups: productGroups(p),
-        notDisclosed: productGroups(p).flatMap((g) => g.unknown),
+        // Travel Rule records describe the product as buyer jobs (product_jobs) or features; the identity capability groups do not fit
+        groups: tr ? [] : productGroups(p),
+        notDisclosed: tr ? [] : productGroups(p).flatMap((g) => g.unknown),
         confirmed: (p.certifications || []).filter((c) => c.status === "confirmed"),
         claimed: (p.certifications || []).filter((c) => c.status === "vendor_stated"),
         incidents: (d.incidents?.items || []).filter((x) => x.slug === p.slug).sort((a, b) => b.date.localeCompare(a.date)),
-        company: companyFacts(p).filter((f) => !["Founded", "HQ", "Headquarters", "Regions", "Coverage"].includes(f.label)),
+        // Travel Rule keeps only company facts in the trust record; product facts already show in reach, pricing and jobs
+        company: companyFacts(p).filter((f) => !["Founded", "HQ", "Headquarters", "Regions", "Coverage"].includes(f.label)
+          && (!tr || [...(prof.company_facts || []), "Leadership"].includes(f.label))),
         ownership: p.track_record?.ownership?.note || null,
         legal: String(p.what_is?.[0] || "").match(/legal name ([^)]+)\)/)?.[1] || null,
         src: sourceLinks(p),
         priceSrc: p.pricing?.model?.source || (p.pricing?.items || []).find((i) => i.source)?.source || null,
         shots: (p.screenshots || []).map((s, i) => ({ ...s, i })),
+        tr,
         nav: [
           ["fit", "Who it’s for", true],
+          ["reach", "Reach", nets.length > 0],
           ["pricing", "Pricing", true],
           ["alternatives", "Alternatives", alts.length > 0],
           ["in-use", "In use", (p.screenshots || []).length > 0 || !!p.video],

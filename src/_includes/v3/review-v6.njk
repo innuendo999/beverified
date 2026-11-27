@@ -44,7 +44,7 @@
         <div class="rv6-score">
           <div class="rv6-score__in">
             <div class="rv6-score__label">BeVerified score</div>
-            <div class="rv6-score__row"><span class="rv6-score__num">{{ p.score | score1 }}</span><span class="rv6-score__of">/ 5</span>{% if p.score %}<span class="rv6-score__grade">{{ p.score | grade }}</span>{% endif %}</div>
+            <div class="rv6-score__row"><span class="rv6-score__num">{{ p.score | score1 }}</span><span class="rv6-score__of">/ 5</span>{% set gw = p.score | grade(p.methodology) %}{% if gw %}<span class="rv6-score__grade">{{ gw }}</span>{% endif %}</div>{% if p.score and not gw %}<p class="rv6-score__legacy">Method {{ p.methodology }} · re-score pending <a href="{{ site.v3.methodologyHref }}">Why</a></p>{% endif %}
             <div class="rv6-score__bar" role="img" aria-label="{{ p.score | score1 }} out of 5"><i style="width:{{ p.score * 20 }}%"></i></div>
             {%- if v.awards.headline %}<a class="rv6-score__award" href="#awards">{% icon "award", "", 16 %}<span>{{ v.awards.headline }}</span></a>{% endif %}
             {%- if v.evidence %}<p class="rv6-score__ev"><span aria-hidden="true">◆</span> {{ v.evidence }}</p>{% endif %}
@@ -81,6 +81,20 @@
   {#- Who it's for -#}
   <section id="fit" aria-labelledby="fit-h">
     <h2 id="fit-h" class="rv6-h2">Who {{ p.name }} is for</h2>
+    {%- if v.tr and v.tr.fit.yes.length %}
+    <div class="rv6-fit">
+      <div>
+        <h3 class="rv6-h3">A good fit if you</h3>
+        <ul class="rv6-list">{% for s in v.tr.fit.yes %}<li><span class="rv6-mark rv6-mark--yes" aria-hidden="true">✓</span><span>{{ s }}</span></li>{% endfor %}</ul>
+      </div>
+      {%- if v.tr.fit.no.length %}
+      <div>
+        <h3 class="rv6-h3">Look elsewhere if you</h3>
+        <ul class="rv6-list">{% for a in v.tr.fit.no %}<li><span class="rv6-mark rv6-mark--no" aria-hidden="true">✕</span><span>{{ a.text }}{% if a.alt %}: <a href="{{ a.alt.url }}">{{ a.alt.name }}</a>{% endif %}</span></li>{% endfor %}</ul>
+      </div>
+      {%- endif %}
+    </div>
+    {%- else %}
     <div class="rv6-fit">
       <div>
         <h3 class="rv6-h3">Strongest in</h3>
@@ -97,11 +111,28 @@
       </div>
       {%- endif %}
     </div>
-    {%- set ur = p.user_ratings[0] if p.user_ratings else null %}
-    {%- if ur %}
-    <p class="rv6-users"><b>{% if ur.url %}<a href="{{ ur.url }}" rel="nofollow noopener" target="_blank">{{ ur.platform }}</a>{% else %}{{ ur.platform }}{% endif %} users: {{ ur.rating }} / 5{% if ur.count %} from {{ ur.count }} reviews{% endif %}</b> <span class="c-muted">{% if ur.checked %}{{ ur.checked | displayDate }} · {% endif %}not in our score</span>{% if p.user_reviews.praise and p.user_reviews.praise.length %}<br>Praise: {{ p.user_reviews.praise[0] }}{% if p.user_reviews.criticize and p.user_reviews.criticize.length %} Complaints: {{ p.user_reviews.criticize[0] }}{% endif %}{% endif %}</p>
     {%- endif %}
+    {%- if v.tr and v.tr.fitCheck %}{% include "v3/fit-check-v6.njk" %}{% endif %}
   </section>
+
+  {#- Who you can reach (Travel Rule): networks[] from the record, who confirms each -#}
+  {%- if v.tr and v.tr.networks.length %}
+  <section id="reach" aria-labelledby="re-h">
+    <div class="rv6-head"><h2 id="re-h" class="rv6-h2">Who you can reach</h2>{% if p.last_verified %}<span class="rv6-head__note">Checked {{ p.last_verified | displayDate }}</span>{% endif %}</div>
+    <p class="rv6-p">Each network once, with who confirms it. Participant counts stated by vendors are not shown.</p>
+    <div class="rv6-reach" data-fold="2">
+      <div class="rv6-reach__head" aria-hidden="true"><span>Network</span><span>How it connects</span><span>Confirmed by</span></div>
+      {%- for n in v.tr.networks %}
+      <div class="rv6-reach__row{% if n.off %} is-off{% endif %}" data-fold-item>
+        <b>{{ n.name }}</b>
+        <span>{{ n.line }}</span>
+        <span class="rv6-reach__by">{% if n.off %}<span class="visually-hidden">Not connected</span>{% elif n.evidence == "independent" %}<span class="rv6-ok">◆ {% if v.src[n.source] %}<a href="{{ v.src[n.source] }}" rel="nofollow noopener" target="_blank">Independent source</a>{% else %}Independent source{% endif %}</span>{% else %}◇ {{ p.name }}{% endif %}</span>
+      </div>
+      {%- endfor %}
+      <button type="button" class="rv6-fold__more" data-fold-more hidden>Show all {{ v.tr.networks.length }} networks</button>
+    </div>
+  </section>
+  {%- endif %}
 
   {#- Pricing -#}
   <section id="pricing" aria-labelledby="pr-h">
@@ -117,6 +148,9 @@
       </div>
       {%- endfor %}
     </div>
+    {%- if v.tr and v.tr.pricingRows.length %}
+    <div class="rv6-card"><dl class="rv6-kv">{% for i in v.tr.pricingRows %}<div><dt>{{ i.label }}</dt><dd>{{ i.value }}</dd></div>{% endfor %}</dl></div>
+    {%- endif %}
     {%- elif v.official.length %}
     <div class="rv6-card"><dl class="rv6-kv">{% for i in v.official %}<div><dt>{{ i.label }}</dt><dd class="num">{{ i.value }}</dd></div>{% endfor %}</dl></div>
     {%- elif p.pricing.summary %}
@@ -173,7 +207,7 @@
     {%- endif %}
     <div class="rv6-shots">
       {%- for s in v.shots %}
-      <figure><a href="{{ s.file }}" target="_blank" rel="noopener"><img src="{{ s.file }}" width="{{ s.width }}" height="{{ s.height }}" loading="lazy" alt="{{ s.alt }}"></a><figcaption><b>{{ s.caption }}</b>{% if s.long %} {{ s.long }}{% endif %}</figcaption></figure>
+      <figure id="shot-{{ s.i }}"><a href="{{ s.file }}" target="_blank" rel="noopener"><img src="{{ s.file }}" width="{{ s.width }}" height="{{ s.height }}" loading="lazy" alt="{{ s.alt }}"></a><figcaption><b>{{ s.caption }}</b>{% if s.long %} {{ s.long }}{% endif %}</figcaption></figure>
       {%- endfor %}
     </div>
   </section>
@@ -187,17 +221,26 @@
     <div class="rv6-jobs">
       {%- set word = {"yes": "Available", "plus": "Higher plan, add-on or partial", "no": "Not offered"} %}
       {%- for g in v.groups %}
-      <div class="rv6-job">
-        <h3 class="rv6-job__t">{{ g.title }}</h3>
+      <details class="rv6-job" data-fold-open open>
+        <summary><h3 class="rv6-job__t">{{ g.title }}</h3><span class="rv6-job__count" aria-hidden="true">{{ g.rows.length }}</span></summary>
         <ul class="rv6-chips2">
           {%- for r in g.rows %}
           <li class="rv6-chip2{% if r.mark != 'text' %} rv6-chip2--{{ r.mark }}{% endif %}"><span aria-hidden="true">{% if r.mark == "yes" %}✓{% elif r.mark == "plus" %}＋{% elif r.mark == "no" %}✕{% else %}·{% endif %}</span>{{ r.label }}{% if r.value %}: {{ r.value }}{% endif %}{% if r.mark != "text" %}<span class="visually-hidden">: {{ word[r.mark] }}</span>{% endif %}{% if r.note %}<small>{{ r.note }}</small>{% endif %}</li>
           {%- endfor %}
         </ul>
-      </div>
+      </details>
       {%- endfor %}
     </div>
     {%- if v.notDisclosed.length %}<p class="rv6-small">Not disclosed: {{ v.notDisclosed | join(", ") | lower }}.</p>{% endif %}
+    {%- elif v.tr and v.tr.jobs.length %}
+    <div class="rv6-jobs">
+      {%- for j in v.tr.jobs %}
+      <details class="rv6-job" data-fold-open open>
+        <summary><h3 class="rv6-job__t">{{ j.title }}</h3></summary>
+        <p class="rv6-job__text">{{ j.text }}{% for s in j.shots %} <a href="#shot-{{ s.i }}">{{ s.label }}</a>{% if not loop.last %} ·{% endif %}{% endfor %}</p>
+      </details>
+      {%- endfor %}
+    </div>
     {%- elif p.features and p.features.length %}
     <ul class="rv6-list">{% for f in p.features %}<li><span class="rv6-mark rv6-mark--yes" aria-hidden="true">✓</span><span>{{ f }}</span></li>{% endfor %}</ul>
     {%- endif %}
@@ -227,6 +270,10 @@
         {%- endfor %}
         {%- if v.ownership %}<p class="rv6-p"><b>Ownership:</b> {{ v.ownership }}.</p>{% endif %}
         {%- if v.company.length %}<dl class="rv6-kv">{% for f in v.company %}<div><dt>{{ f.label }}{% if f.evidence == "independent" %} <span aria-label="independent">◆</span>{% endif %}</dt><dd>{{ f.value }}</dd></div>{% endfor %}</dl>{% endif %}
+        {%- set ur = p.user_ratings[0] if p.user_ratings else null %}
+        {%- if ur %}
+        <p class="rv6-users"><span class="c-muted">User ratings, not in our score:</span> <b>{% if ur.url %}<a href="{{ ur.url }}" rel="nofollow noopener" target="_blank">{{ ur.platform }}</a>{% else %}{{ ur.platform }}{% endif %} {{ ur.rating }} / 5</b>{% if ur.count %} from {{ ur.count }} reviews{% endif %}{% if ur.checked %}, checked {{ ur.checked | displayDate }}{% endif %}{% if p.user_reviews.praise and p.user_reviews.praise.length %}<br>Praise: {{ p.user_reviews.praise[0] }}{% if p.user_reviews.criticize and p.user_reviews.criticize.length %} Complaints: {{ p.user_reviews.criticize[0] }}{% endif %}{% endif %}</p>
+        {%- endif %}
         {%- if p.product_history and p.product_history.length %}
         <div><h3 class="rv6-doc__h">Company timeline</h3>
         <ol class="rv6-timeline">{% for e in p.product_history %}<li><span class="num"><time datetime="{{ e.date }}">{{ e.date | displayDate }}</time></span><span>{{ e.text }}</span></li>{% endfor %}</ol></div>
@@ -279,7 +326,7 @@
       <div class="rv6-author"><img class="avatar avatar--lg" src="{{ author.photo }}" alt="{{ author.name }}"><p><b>{{ author.name }}</b>, {{ author.role }}{% if p.last_verified %}, re-checked the facts on {{ p.last_verified | displayDate }}{% endif %}.{% if author.url %}<br><a href="{{ author.url }}">Author profile</a>{% endif %}</p></div>
       {%- endif %}
       <div class="rv6-policies">
-        <a href="{{ site.v3.methodologyHref }}"><b>How we score</b><span>{{ p.score_breakdown.length or 6 }} criteria, weights and evidence levels · method {{ p.methodology or "v3.1" }}</span></a>
+        <a href="{{ site.v3.methodologyHref }}"><b>How we score</b><span>{{ p.score_breakdown.length or 6 }} criteria, weights and evidence levels · method {{ p.methodology }}</span></a>
         <a href="/about/#awards"><b>How awards work</b><span>Top 3 of each ranking, from the score order, never sold</span></a>
         <a href="{{ site.v3.disclosureHref }}"><b>How we make money</b><span>Commissions and labelled sponsor slots; neither moves a score</span></a>
       </div>
@@ -290,4 +337,19 @@
   </section>
 
 </div>
+<script>
+/* Phone folds (canvas page "Travel Rule"): below 641 px the "What it does" groups start closed and long reach tables show
+   their first rows with a button. Without JS everything stays open. */
+(function () {
+  if (!window.matchMedia || !window.matchMedia("(max-width: 640px)").matches) return;
+  document.querySelectorAll("[data-fold-open]").forEach(function (d) { d.open = false; });
+  document.querySelectorAll("[data-fold]").forEach(function (box) {
+    var n = +box.getAttribute("data-fold"), items = box.querySelectorAll("[data-fold-item]"), btn = box.querySelector("[data-fold-more]");
+    if (items.length <= n + 1 || !btn) return;
+    items.forEach(function (x, i) { if (i >= n) x.hidden = true; });
+    btn.hidden = false;
+    btn.addEventListener("click", function () { items.forEach(function (x) { x.hidden = false; }); btn.hidden = true; });
+  });
+})();
+</script>
 </main>

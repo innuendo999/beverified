@@ -1,0 +1,218 @@
+{#- Fit check, review page V6 for Travel Rule (owner, 2026-11-27; canvas page "Travel Rule", board "Fit check, open").
+    Closed by default under "Who it's for". Same data and statuses as the V5 check (v6.tr.fitCheck from src/_lib/fit-check.js):
+    questions on the left as chips, a navy result card on the right that updates on each tap, gaps turned into
+    questions to copy, closer fits from the same records in ranking order (never from placements).
+    Without JavaScript the chips are hidden and the record's own questions for the sales call show instead. -#}
+{%- set fc = v.tr.fitCheck %}
+<details class="fc6" id="fit-check" data-slug="{{ p.slug }}">
+  <summary class="fc6__sum">
+    <span class="fc6__icon" aria-hidden="true">{% icon "document-check", "", 22 %}</span>
+    <span class="fc6__intro"><b>Does {{ p.name }} fit your setup?</b><span>4 quick questions, about a minute. See what it covers, what is missing, and get the questions to ask sales.</span></span>
+    <span class="fc6__go"><span class="fc6__go-open">Start the check</span><span class="fc6__go-close">Hide</span> <span aria-hidden="true">▾</span></span>
+  </summary>
+  <div class="fc6__body">
+    <div class="fc6__static" data-part="static">
+      {%- if v.tr.questions.length %}
+      <p class="rv6-p">Questions to ask {{ p.name }} before you sign, from gaps in our review data:</p>
+      <ol class="fc6__qs">{% for q in v.tr.questions %}<li>{{ q }}</li>{% endfor %}</ol>
+      {%- endif %}
+    </div>
+    <div class="fc6__grid" data-part="live" hidden>
+      <div class="fc6__pick">
+        <p class="fc6__lede">Pick what applies. The result updates as you go; nothing is sent anywhere.</p>
+        <fieldset class="fc6__q" data-group="run" data-single>
+          <legend><span class="fc6__n" aria-hidden="true">1</span>Where must it run? <small>pick one</small></legend>
+          <div class="fc6__chips">
+            <button type="button" class="fc6__chip" data-id="self" aria-pressed="false">Our own servers or cloud</button>
+            <button type="button" class="fc6__chip" data-id="hosted" aria-pressed="false">Hosted by the vendor</button>
+            <button type="button" class="fc6__chip" data-id="" aria-pressed="true">Either is fine</button>
+          </div>
+        </fieldset>
+        <fieldset class="fc6__q" data-group="net">
+          <legend><span class="fc6__n" aria-hidden="true">2</span>Which networks are your counterparties on? <small>pick any</small></legend>
+          <div class="fc6__chips">{% for n in fc.networks %}<button type="button" class="fc6__chip" data-id="{{ n.key }}" aria-pressed="false">{{ n.label }}</button>{% endfor %}</div>
+        </fieldset>
+        <fieldset class="fc6__q" data-group="proof">
+          <legend><span class="fc6__n" aria-hidden="true">3</span>Which self-hosted wallet proofs do you need? <small>pick any</small></legend>
+          <div class="fc6__chips">
+            <button type="button" class="fc6__chip" data-id="sig" aria-pressed="false">Signed message</button>
+            <button type="button" class="fc6__chip" data-id="sat" aria-pressed="false">Satoshi test</button>
+            <button type="button" class="fc6__chip" data-id="aopp" aria-pressed="false">AOPP</button>
+            <button type="button" class="fc6__chip" data-id="vis" aria-pressed="false">Screenshot or video</button>
+          </div>
+        </fieldset>
+        <fieldset class="fc6__q" data-group="buy">
+          <legend><span class="fc6__n" aria-hidden="true">4</span>Before the first sales call you need <small>pick any</small></legend>
+          <div class="fc6__chips">
+            <button type="button" class="fc6__chip" data-id="price" aria-pressed="false">A published price</button>
+            <button type="button" class="fc6__chip" data-id="iso" aria-pressed="false">ISO/IEC 27001, confirmed</button>
+            <button type="button" class="fc6__chip" data-id="soc2" aria-pressed="false">SOC 2 report</button>
+          </div>
+        </fieldset>
+      </div>
+      <div class="fc6__card" aria-live="polite">
+        <div class="fc6__card-in">
+          <p class="fc6__k">{{ p.name }} on your setup</p>
+          <div data-part="empty"><p class="fc6__big"><span>0</span> needs picked</p><p class="fc6__hint">Pick on the left. We check each answer against our review data for {{ p.name }} and the other {{ fc.providers.length - 1 }} Travel Rule providers we rank.</p></div>
+          <div data-part="full" hidden>
+            <p class="fc6__big"><span data-out="yes"></span> <span data-out="of"></span><span class="fc6__part" data-out="counts"></span></p>
+            <div class="fc6__meter" data-out="meter" aria-hidden="true"></div>
+            <div class="fc6__rows" data-out="rows"></div>
+            <div class="fc6__acts">
+              <button type="button" class="fc6__btn" data-act="copyq">Copy questions</button>
+              <button type="button" class="fc6__btn fc6__btn--ghost" data-act="clear">Reset</button>
+              <button type="button" class="fc6__btn fc6__btn--ghost" data-act="link">Copy link</button>
+            </div>
+            <ol class="fc6__ask" data-out="ask"></ol>
+          </div>
+        </div>
+        <div class="fc6__mrz" aria-hidden="true" data-out="mrz">{{ ("FITCHECK<<" + p.name) | mrzLine }}</div>
+      </div>
+    </div>
+    <div class="fc6__others" data-part="others" hidden>
+      <b>Closer fits on this setup</b>
+      <div data-out="others"></div>
+      <span class="fc6__note">Same questions, scored from each provider's record. Ranking order breaks ties; placements play no part.</span>
+    </div>
+  </div>
+</details>
+<script type="application/json" id="fc-data">{{ fc | dump | safe }}</script>
+<script>
+(function () {
+  var root = document.getElementById("fit-check"), raw = document.getElementById("fc-data");
+  if (!root || !raw) return;
+  var D = JSON.parse(raw.textContent), slug = root.getAttribute("data-slug");
+  var me = D.providers.filter(function (x) { return x.slug === slug; })[0];
+  if (!me) return;
+  root.querySelector('[data-part="static"]').hidden = true;
+  root.querySelector('[data-part="live"]').hidden = false;
+  var NET = {}; D.networks.forEach(function (n) { NET[n.key] = n.label; });
+  var PROOF = { sig: "Signed message", sat: "Satoshi test", aopp: "AOPP", vis: "Screenshot or video" };
+  var BUY = { price: "A published price", iso: "ISO/IEC 27001, confirmed", soc2: "SOC 2 report" };
+  // status → [word, mark, css]
+  var LOOK = { y: ["Yes", "✓", "ok"], p: ["Partly", "＋", "part"], plan: ["Planned", "＋", "part"], no: ["No", "✕", "no"], n: ["Not found", "✕", "no"], u: ["Not checked", "?", "unk"] };
+  var st = { run: "", net: [], proof: [], buy: [] }, copied = "";
+
+  function needs() {
+    var out = [];
+    if (st.run === "self") out.push({ key: "self", label: "Runs on your own servers or cloud", short: "self-hosting", q: function (n) { return "Can we run " + n + " in our own infrastructure, and which parts stay with you?"; } });
+    if (st.run === "hosted") out.push({ key: "hosted", label: "Hosted by the vendor", short: "hosted service", q: function () { return "Do you offer a hosted or managed service, and who operates it?"; } });
+    D.networks.forEach(function (n) {
+      if (st.net.indexOf(n.key) < 0) return;
+      if (n.key === "email") out.push({ key: "net_email", label: "Email for VASPs with no tool", short: "email fallback", q: function () { return "How do we exchange data with VASPs that have no Travel Rule tool?"; } });
+      else out.push({ key: "net_" + n.key, label: "Reaches " + n.label, short: n.label, q: function () { return "How do we reach counterparties on " + n.label + ", and at what cost?"; } });
+    });
+    Object.keys(PROOF).forEach(function (k) { if (st.proof.indexOf(k) >= 0) out.push({ key: "p_" + k, label: PROOF[k] + " proofs", short: PROOF[k], q: function () { return "Do you support " + PROOF[k].toLowerCase() + " proofs for self-hosted wallets?"; } }); });
+    if (st.buy.indexOf("price") >= 0) out.push({ key: "price", label: BUY.price, short: "price", q: function () { return "What is the written price for our expected transfer volume?"; } });
+    if (st.buy.indexOf("iso") >= 0) out.push({ key: "iso", label: "ISO/IEC 27001", short: "ISO 27001", q: function (n, s) { return s === "p" ? "Can we see the ISO/IEC 27001 certificate and its scope?" : "Which security certifications do you hold, and can we see them?"; } });
+    if (st.buy.indexOf("soc2") >= 0) out.push({ key: "soc2", label: "SOC 2 report", short: "SOC 2", q: function (n, s) { return s === "p" ? "Can we see the SOC 2 Type II report before we sign?" : "Do you have a SOC 2 Type II report, and can we see it before we sign?"; } });
+    return out;
+  }
+  function evaluate(P, list) {
+    var c = { y: 0, p: 0, plan: 0, no: 0, n: 0, u: 0 };
+    var rows = list.map(function (nd) {
+      var hit = P.s[nd.key] || ["u", "Not in our review data yet", 0];
+      c[hit[0]] += 1;
+      return { nd: nd, status: hit[0], text: hit[1], ind: hit[2] && hit[0] === "y" };
+    });
+    return { rows: rows, c: c };
+  }
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function q(sel) { return root.querySelector(sel); }
+
+  function render() {
+    root.querySelectorAll(".fc6__q").forEach(function (g) {
+      var key = g.getAttribute("data-group");
+      g.querySelectorAll(".fc6__chip").forEach(function (b) {
+        var id = b.getAttribute("data-id");
+        b.setAttribute("aria-pressed", (key === "run" ? st.run === id : st[key].indexOf(id) >= 0) ? "true" : "false");
+      });
+    });
+    var list = needs(), total = list.length;
+    q('[data-part="empty"]').hidden = total > 0;
+    q('[data-part="full"]').hidden = total === 0;
+    q('[data-part="others"]').hidden = total === 0;
+    q('[data-act="link"]').textContent = copied === "link" ? "Link copied" : "Copy link";
+    if (!total) { q('[data-out="mrz"]').textContent = ("FITCHECK<<" + me.name.toUpperCase().replace(/[^A-Z0-9]+/g, "<") + "<<<<<<<<<<<<<<<<<<<<<<<<"); return; }
+    var ev = evaluate(me, list), part = ev.c.p + ev.c.plan, gapsN = total - ev.c.y;
+    q('[data-out="yes"]').textContent = ev.c.y;
+    q('[data-out="of"]').textContent = "of " + total + (total === 1 ? " need met" : " needs met");
+    var bits = [];
+    if (part) bits.push(part + " partly");
+    if (ev.c.u) bits.push(ev.c.u + " not checked");
+    q('[data-out="counts"]').textContent = bits.join(" · ");
+    var meter = q('[data-out="meter"]'); meter.textContent = "";
+    ev.rows.slice().sort(function (a, b) { return "y p plan u n no".indexOf(a.status) - "y p plan u n no".indexOf(b.status); })
+      .forEach(function (r) { meter.appendChild(el("i", "is-" + LOOK[r.status][2])); });
+    var box = q('[data-out="rows"]'); box.textContent = "";
+    ev.rows.forEach(function (r) {
+      var L = LOOK[r.status], row = el("div", "fc6__row is-" + L[2]);
+      row.appendChild(el("span", "fc6__mark", L[1]));
+      var body = el("div");
+      var name = el("span", "fc6__name", r.nd.label);
+      body.appendChild(name);
+      body.appendChild(el("span", "visually-hidden", ": " + L[0] + ". "));
+      if (r.ind) body.appendChild(el("span", "fc6__ind", " ◆ confirmed"));
+      if (r.text && !(r.status === "y" && /^p_/.test(r.nd.key))) body.appendChild(el("span", "fc6__note", r.text));
+      row.appendChild(body); box.appendChild(row);
+    });
+    var gaps = ev.rows.filter(function (r) { return r.status !== "y"; });
+    var ask = q('[data-out="ask"]'); ask.textContent = "";
+    gaps.forEach(function (r) { ask.appendChild(el("li", null, r.nd.q(me.name, r.status))); });
+    var cq = q('[data-act="copyq"]');
+    cq.hidden = !gaps.length;
+    cq.textContent = copied === "q" ? "Copied" : "Copy " + gaps.length + " question" + (gaps.length === 1 ? "" : "s") + " for the sales call";
+    q('[data-out="mrz"]').textContent = ("FITCHECK<<" + me.name.toUpperCase().replace(/[^A-Z0-9]+/g, "<") + "<<" + ev.c.y + "<OF<" + total + "<<" + gapsN + "<GAPS<<<<<<<<<<<<<<<<");
+
+    var others = D.providers.filter(function (x) { return x.slug !== slug; }).map(function (P) {
+      var e = evaluate(P, list);
+      return { P: P, yes: e.c.y, gapsN: e.c.no + e.c.n + e.c.plan };
+    }).filter(function (o) { return o.yes > ev.c.y; })
+      .sort(function (a, b) { return b.yes - a.yes || a.gapsN - b.gapsN || a.P.rank - b.P.rank; }).slice(0, 3);
+    var ob = q('[data-out="others"]'); ob.textContent = "";
+    if (!others.length) ob.appendChild(el("span", "fc6__note", "No ranked provider meets more of these needs than " + me.name + "."));
+    others.forEach(function (o) {
+      var a = el("a", "fc6__other"); a.href = "/providers/" + o.P.slug + "/#fit-check";
+      a.appendChild(el("b", null, o.P.name));
+      a.appendChild(el("span", null, " · " + o.yes + " of " + total + " · #" + o.P.rank + " in Travel Rule"));
+      ob.appendChild(a);
+    });
+  }
+  function code() {
+    var c = [];
+    if (st.run) c.push("run:" + st.run);
+    ["net", "proof", "buy"].forEach(function (k) { if (st[k].length) c.push(k + ":" + st[k].join(",")); });
+    return c.join(";");
+  }
+  function copy(text, tag) { try { if (navigator.clipboard) navigator.clipboard.writeText(text); } catch (e) {} copied = tag; render(); }
+  root.addEventListener("click", function (e) {
+    var b = e.target.closest("button"); if (!b || !root.contains(b)) return;
+    if (b.classList.contains("fc6__chip")) {
+      var g = b.closest(".fc6__q").getAttribute("data-group"), id = b.getAttribute("data-id");
+      if (g === "run") st.run = id;
+      else st[g] = st[g].indexOf(id) >= 0 ? st[g].filter(function (x) { return x !== id; }) : st[g].concat(id);
+      copied = ""; render(); return;
+    }
+    var act = b.getAttribute("data-act");
+    if (act === "clear") { st = { run: "", net: [], proof: [], buy: [] }; copied = ""; render(); }
+    if (act === "link") copy(location.origin + location.pathname + "#fit=" + code(), "link");
+    if (act === "copyq") {
+      var items = Array.prototype.map.call(q('[data-out="ask"]').children, function (li, i) { return (i + 1) + ". " + li.textContent; });
+      copy("Questions for " + me.name + "\n" + items.join("\n"), "q");
+    }
+  });
+  // A shared link opens the check with the answers set: #fit=run:self;net:trust,trp;proof:sig;buy:price
+  var m = location.hash.match(/^#fit=(.*)$/);
+  if (m) {
+    decodeURIComponent(m[1]).split(";").forEach(function (part) {
+      var kv = part.split(":"), k = kv[0], v = (kv[1] || "").split(",").filter(Boolean);
+      if (k === "run" && (v[0] === "self" || v[0] === "hosted")) st.run = v[0];
+      if (k === "net") st.net = v.filter(function (x) { return NET[x]; });
+      if (k === "proof") st.proof = v.filter(function (x) { return PROOF[x]; });
+      if (k === "buy") st.buy = v.filter(function (x) { return BUY[x]; });
+    });
+  }
+  if (m || location.hash === "#fit-check") { root.open = true; root.scrollIntoView(); }
+  render();
+})();
+</script>

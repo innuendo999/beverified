@@ -9,7 +9,12 @@ export const GRADE_SCALE = [
   [0, "Fair"],
 ];
 
-export function grade(score) {
+// Scores still on the old v3.0 method sit on a higher scale (reports/rescore-v3.1.md),
+// so they get no word until they are re-scored: pass the record's methodology.
+export const LEGACY_METHODS = ["v3.0"];
+
+export function grade(score, methodology) {
+  if (methodology && LEGACY_METHODS.includes(methodology)) return "";
   if (score == null || score === "" || Number.isNaN(Number(score))) return "";
   const s = Math.round(Number(score) * 10) / 10;
   return GRADE_SCALE.find(([min]) => s >= min)[1];

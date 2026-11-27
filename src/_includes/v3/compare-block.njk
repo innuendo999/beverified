@@ -8,7 +8,7 @@
   {%- for p in [A, B] %}
   <div class="cmp-head__col">
     {%- if p.logo and p.logo.wordmark %}<img class="cmp-head__logo" src="{{ p.logo.wordmark }}" alt="{{ p.name }}" loading="lazy">{% else %}<b class="cmp-head__name">{{ p.name }}</b>{% endif %}
-    <p class="cmp-head__score"><span class="num">{{ p.score | score1 }}</span> out of 5, {{ p.score | grade }}</p>
+    <p class="cmp-head__score"><span class="num">{{ p.score | score1 }}</span> out of 5{% set gw = p.score | grade(p.methodology) %}{% if gw %}, {{ gw }}{% else %}, method {{ p.methodology }}{% endif %}</p>
     <p class="cmp-head__tag">{{ p.tagline }}</p>
     <a href="/providers/{{ p.slug }}/">Read the full {{ p.name }} review</a>
   </div>
