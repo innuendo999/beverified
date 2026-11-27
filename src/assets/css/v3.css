@@ -2736,3 +2736,5 @@ td > .cg-v:first-child { margin-left: 0; }
 .rv6-chip2 small { font-size: 12px; color: var(--muted); }
 .rv6-chip2 small::before { content: "· "; }
 @media (max-width: 640px) { .rv6-job { grid-template-columns: minmax(0,1fr); gap: 8px; } .rv6-job__t { padding-top: 0; } }
+.rv6-doc__kicker a { color: #9DB6FF; }
+.rv6-ok a { color: inherit; text-decoration: underline; text-decoration-color: rgba(11,122,92,0.35); text-underline-offset: 2px; }

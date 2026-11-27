@@ -138,17 +138,20 @@ export function costAtVolume(p) {
   return { plan: o.plan, rows: [at(100), at(1000)] };
 }
 
-// Up to five sources, shown as plain text links (owner, 2026-11-27: no Sources list, no [n] refs).
-// Independent publishers first, then the vendor's pricing page.
-export function keySources(p) {
-  const all = (p.sources || []).map((s, i) => ({ ...s, n: i + 1 }));
-  const vendor = (s) => !s.publisher || s.publisher.toLowerCase().startsWith(String(p.name).toLowerCase().split(" ")[0]);
-  const indep = all.filter((s) => !vendor(s));
-  const seen = new Set(), pick = [];
-  for (const s of indep) { const k = s.publisher || s.url; if (seen.has(k)) continue; seen.add(k); pick.push({ label: s.publisher, url: s.url }); }
-  const priceN = p.pricing?.model?.source || (p.pricing?.items || []).find((i) => i.source)?.source;
-  const price = priceN ? all[priceN - 1] : null;
-  const out = pick.slice(0, price ? 4 : 5);
-  if (price) out.push({ label: `${p.name} pricing page`, url: price.url });
+// Source links (owner, 2026-11-27): no Sources list, no [n] refs and no "main sources" line. A fact that is
+// shown links to its source as a plain nofollow anchor, for at most five distinct URLs: independent
+// evidence first (confirmed certificates, independent facts), then the vendor's pricing page.
+// Returns { [source number]: url } for the numbers that may be linked.
+export function sourceLinks(p) {
+  const all = p.sources || [];
+  const order = [
+    ...(p.certifications || []).filter((c) => c.status === "confirmed").map((c) => c.source),
+    ...(p.facts || []).filter((f) => f.evidence === "independent").map((f) => f.source),
+    p.pricing?.model?.source || (p.pricing?.items || []).find((i) => i.source)?.source,
+  ].filter((n) => Number.isInteger(n) && all[n - 1]?.url);
+  const urls = [];
+  for (const n of order) { const u = all[n - 1].url; if (!urls.includes(u) && urls.length < 5) urls.push(u); }
+  const out = {};
+  all.forEach((s, i) => { if (urls.includes(s.url)) out[i + 1] = s.url; });
   return out;
 }
