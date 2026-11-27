@@ -6,17 +6,16 @@ rebranded_to: Shufti   # real rebrand or acquisition: shown as "now ..." under t
 status: published
 seo:
   title: 'Shufti Pro Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'Shufti Pro review: AI-driven identity verification covering 240+ countries and territories and 150+ languages, from $1.50 per verification. Features, pricing, pros & cons, alternatives.'
+  description: 'Shufti Pro review: identity verification for 240+ countries, iBeta Level 3 liveness, from $1.50 per verification and a free plan. Pricing, pros and cons.'
   h1: 'Shufti Pro Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/shufti-pro.png
   background: '#6F3EE0'
   wordmark: /assets/img/wordmarks/shufti-pro.png
-tagline: AI-driven identity verification with the widest geographic and language coverage in the category
+tagline: Identity verification for 240+ countries and territories, the most of any provider we review, with liveness tested by iBeta at Level 3
 score: 4.9
 methodology: v3.1
 primary_category: identity-verification
-legacy_rank_claim: 'ranked #2 in Identity Verification'
 categories:
 - identity-verification
 - kyb
@@ -27,8 +26,9 @@ link:
   legacy_rel: nofollow sponsored
 last_verified: '2026-10-22'
 updated: '2026-11-27'   # last content edit; last_verified = last fact re-check
-verdict: 'Shufti Pro is our top identity verification pick for teams that need coverage of 240+ countries and territories and a choice of SaaS, private cloud or on-premise deployment. A free tier covers 10 verifications a month, and Essentials starts at $1.50 per verification. Enterprise volumes are quoted, and its certifications page names no ISO 27001 certification body.'
+verdict: 'Shufti Pro is our top identity verification pick for teams that need coverage of 240+ countries and territories, liveness tested by iBeta at Level 3 and on-premise deployment as an option. A free plan covers 10 verifications a month, and Essentials starts at $1.50 per verification, falling with volume. Its ISO 27001, SOC 2 and PCI DSS claims name no certification body, and the one certificate it links has expired.'
 what_is:
+- 'Shufti Pro checks a person from an ID document and a selfie, and sells AML screening, KYB, video identification, address and age checks on the same platform. In our sandbox in November 2026 the AML screen let us choose the lists (sanctions, warnings, fitness and probity, insolvency, PEP classes 1 to 4), set how closely a name must match and add relatives, aliases or a photo; a beta AI Co-Pilot then sorted the hits for review. The Backoffice also has ready-made onboarding journeys for specific regulators, such as the UK Gambling Commission, Austria''s FMA and Germany''s BaFin, and a tool that compares its results with your current vendor on a batch of your own past verifications.'
 - Shufti Pro, which now trades as Shufti, is an identity-verification and KYC/AML platform founded in 2017 by Shahid Hanif (CEO) and Victor Fredung (Chairman). Its UK company, Shufti Pro Limited, is registered in London, and it lists offices in the UK, Sweden, the UAE, Singapore, Hong Kong, Pakistan, Cyprus and the US. It says it builds and owns its own technology stack instead of reselling third-party models, and markets itself on the breadth of its geographic and language coverage. It says more than 2,000 businesses use it.
 features:
 - Document verification and facial biometrics with liveness detection (iBeta ISO/IEC 30107-3 Level 3 tested).
@@ -93,7 +93,7 @@ pricing:
     source: 37
     verified: '2026-11'
   - label: Essentials, in our Backoffice account
-    value: $0.95 per verification at the default slider volume of 4,500 (range 500 to 20,000); the page shows $1.50 as the starting price; seen 27 Nov 2026
+    value: $0.95 per verification at the default slider volume of 4,500 (range 500 to 20,000); the pricing page shows only the $1.50 starting rate; seen 27 Nov 2026
     kind: official
     source: 37
     verified: '2026-11'
@@ -102,9 +102,6 @@ facts:
   value: Free (10/mo); $1.50/verification
   source: 1
   evidence: vendor
-- label: Effective
-  value: Not publicly disclosed
-  source: null
 - label: Founded
   value: '2017'
   source: 10
@@ -113,6 +110,10 @@ facts:
   value: London, UK
   source: 10
   evidence: independent
+- label: Languages
+  value: ID documents in 150+ languages
+  source: 1
+  evidence: vendor
 - label: Regions
   value: 240+ countries/territories
   source: 3
@@ -135,12 +136,12 @@ facts:
   evidence: vendor
 pros:
 - Coverage of 240+ countries and territories and 150+ languages, among the widest of the providers we review
-- Own technology stack, not resold third-party models
+- 'Independently tested: liveness by iBeta at ISO/IEC 30107-3 Level 3 (April 2026), and selfie-to-document matching met all DHS goals in the MdTF RIVR test'
 - 'Flexible deployment: SaaS, private cloud, or on-premise'
 cons:
-- Enterprise pricing above the Essentials tier is quote-only
-- The free tier is capped at 10 verifications a month
-- Certificate details (ISO 27001 certification body, PCI DSS level) are not published on its certifications page
+- 'ISO 27001, SOC 2 and PCI DSS are stated without a certification body, and the one certificate Shufti links (Cyber Essentials Plus) expired in February 2025'
+- 'The price for your volume is only shown in the Backoffice: the site says Essentials starts at $1.50, and our sandbox showed $0.95 at a volume of 4,500'
+- Some Capterra reviews, including from people being verified, describe image capture rejections and glitches
 alternatives:
 - slug: sumsub
   name: Sumsub
@@ -153,11 +154,14 @@ alternatives:
   best_for: Developer-Friendly
 choose_instead:
 - slug: sumsub
-  text: you want published compliance-tier pricing that bundles AML screening and a 14-day free trial.
+  need: Lower entry price
+  text: you want a lower published entry rate ($1.35 per verification) with liveness also tested by iBeta at Level 3.
+- slug: veriff
+  need: More certificates you can check
+  text: you want certificates you can look up yourself, including UK DIATF and FIDO face and document certification, and self-serve plans from $0.80 per verification with a $49 monthly minimum.
 - slug: jumio
-  text: you need the broadest enterprise track record and don't mind sales-only pricing.
-- slug: onfido
-  text: strong developer SDKs and Entrust-backed infrastructure matter more than raw country/language coverage.
+  need: Enterprise scale
+  text: you are a large enterprise that wants a vendor with more than 1 billion transactions processed, per Jumio, and accepts sales-only pricing.
 user_reviews:
   legacy_note: null
   praise:
@@ -165,13 +169,11 @@ user_reviews:
   - 'Deployment flexibility: regulated clients can use on-premise and private-cloud options.'
   criticize:
   - 'Enterprise pricing: volume pricing above the Essentials tier needs a sales quote.'
-  by_profile:
-  - Global platforms serving many jurisdictions value the breadth of country and language coverage.
-  - Regulated industries favor the private-cloud and on-premise deployment options.
-  - Smaller teams can start on the free tier or the per-verification Essentials plan before talking to sales.
+  - 'Image capture: some Capterra reviews, including from people being verified, describe rejected photos and glitches.'
+  by_profile: []
 faq:
 - q: How much does Shufti Pro cost?
-  a: Shufti Pro publishes its pricing. The Free Forever plan covers up to 10 verifications a month, Essentials starts from $1.50 per verification for up to 20,000 verifications, and Enterprise pricing is quoted on request.
+  a: Shufti Pro publishes its pricing. The Free Forever plan covers up to 10 verifications a month, Essentials starts from $1.50 per verification for up to 20,000 verifications and falls with volume ($0.95 at a volume of 4,500 in our sandbox in November 2026), and Enterprise pricing is quoted on request.
 - q: Does Shufti Pro support KYB?
   a: Yes. Shufti Pro offers business verification (KYB), UBO verification and due diligence alongside its individual identity-verification and AML screening tools.
 - q: What certifications does Shufti Pro hold?
@@ -179,9 +181,7 @@ faq:
 - q: Can Shufti Pro deploy on-premise?
   a: Yes. Shufti Pro supports SaaS, private-cloud, and on-premise deployment, which suits clients with strict data-residency requirements.
 - q: What is the best alternative to Shufti Pro?
-  a: Sumsub is the strongest alternative if you want a published compliance tier that bundles AML screening, ongoing monitoring and a free trial.
-- q: Who are Shufti Pro's main competitors?
-  a: Shufti Pro competes with Sumsub, Jumio, and Onfido, differentiating mainly through geographic/language breadth and flexible deployment options.
+  a: It depends on what you need. Sumsub has a lower published entry rate, $1.35 per verification, and liveness also tested by iBeta at Level 3. Veriff has certificates you can check yourself, including UK DIATF and FIDO, with plans from $0.80 per verification and a $49 monthly minimum. Jumio suits large enterprises that accept sales-only pricing.
 segments: []
 capabilities:
   checked: '2026-10'
