@@ -8,7 +8,7 @@ import { reviewSponsor, shortLabel } from "./_lib/placements.js";
 import { profileFor, heroFacts, networkRows, factRows, certRows, incidentRow, fitRows, questions, sourceGroups, reviewYear, pricingCalc, productJobs } from "./_lib/review-v4.js";
 import { fitCheckData, deployHero } from "./_lib/fit-check.js";
 import { isListed as inCertTracker } from "./_lib/cert-tracker.js";
-import { productGroups, keyFacts, bestEvidence, awardsFor, fitBlock, costAtVolume, keySources } from "./_lib/review-v6.js";
+import { productGroups, keyFacts, bestEvidence, awardsFor, fitBlock, costAtVolume, sourceLinks } from "./_lib/review-v6.js";
 import { currentAwards } from "./_lib/awards.js";
 import { guilloche } from "./_lib/hero.js";
 
@@ -120,13 +120,15 @@ export default {
         estimates: (p.pricing?.items || []).filter((i) => i.kind === "third_party"),
         cost: costAtVolume(p),
         groups: productGroups(p),
+        notDisclosed: productGroups(p).flatMap((g) => g.unknown),
         confirmed: (p.certifications || []).filter((c) => c.status === "confirmed"),
         claimed: (p.certifications || []).filter((c) => c.status === "vendor_stated"),
         incidents: (d.incidents?.items || []).filter((x) => x.slug === p.slug).sort((a, b) => b.date.localeCompare(a.date)),
         company: companyFacts(p).filter((f) => !["Founded", "HQ", "Headquarters", "Regions", "Coverage"].includes(f.label)),
         ownership: p.track_record?.ownership?.note || null,
         legal: String(p.what_is?.[0] || "").match(/legal name ([^)]+)\)/)?.[1] || null,
-        sources: keySources(p),
+        src: sourceLinks(p),
+        priceSrc: p.pricing?.model?.source || (p.pricing?.items || []).find((i) => i.source)?.source || null,
         shots: (p.screenshots || []).map((s, i) => ({ ...s, i })),
         nav: [
           ["fit", "Who it’s for", true],
