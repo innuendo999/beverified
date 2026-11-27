@@ -130,6 +130,18 @@ facts:
   value: Signature, micro-transfer (Satoshi test), photo or video proof, self-declaration
   source: 5
   evidence: vendor
+- label: AML check providers
+  value: Scorechain, AMLBot and Lukka, connected with your own key; seen in the sandbox settings, 27 Nov 2026
+  source: 36
+  evidence: vendor
+- label: Notabene integration
+  value: Webhook setting that brings incoming Notabene messages into the CryptoSwift dashboard; seen in the sandbox settings, 27 Nov 2026
+  source: 36
+  evidence: vendor
+- label: Rule decisions
+  value: Proceed, wait, review or block, on status, risk severity, risk score, amount, transaction hash, counterparty and counterparty country; rules can be simulated before publishing; seen in the sandbox, 27 Nov 2026
+  source: 36
+  evidence: vendor
 - label: Certifications
   value: ISO/IEC 27001:2022, certificate 273AGIC080104 from Accurate Global, valid until 8 July 2029 (listed in the certification body's register); no SOC 2 claim found
   source: 35
@@ -385,6 +397,10 @@ sources:
   type: register
   url: https://accurateiso.com/app/activeclients.php?company_name=&certificate_no=273AGIC080104
   accessed: '2026-11'
+- title: CryptoSwift dashboard, sandbox (BeVerified sandbox account, signed in)
+  publisher: CryptoSwift
+  url: https://dashboard-dev.cryptoswift.eu/
+  accessed: '2026-11-27'
 entity:
   wikidata: null
   kg_mid: null
@@ -454,7 +470,83 @@ networks:
 - name: TRUST, TRISA
   status: not_found
   note: No connection found (Nov 2026)
+screenshots:
+- file: /assets/img/screens/cryptoswift/02-transactions.webp
+  width: 1422
+  height: 636
+  caption: Travel Rule transactions
+  alt: CryptoSwift transactions list with originator, beneficiary, counterparty VASP, transaction risk, amount, direction and status
+  long: Incoming and outgoing transfers with the counterparty VASP, a risk score and the delivery status.
+- file: /assets/img/screens/cryptoswift/03-tx-parties-risk.webp
+  width: 1422
+  height: 636
+  caption: Transfer details
+  alt: CryptoSwift transaction details with originator and beneficiary data and a Travel Rule risk score of 0, low
+  long: Originator and beneficiary data next to the Travel Rule risk score of the transfer.
+- file: /assets/img/screens/cryptoswift/04-tx-blockchain-vasps.webp
+  width: 1422
+  height: 636
+  caption: Blockchain data and both VASPs
+  alt: Blockchain info with amount, hash and wallets, AML check links, and cards for the beneficiary and originator VASPs
+  long: Hash and wallets with AML check links, and the profile of each VASP.
+- file: /assets/img/screens/cryptoswift/05-tx-history.webp
+  width: 1422
+  height: 636
+  caption: Rule result and history
+  alt: Rule engine result and a transaction history table with event, actor, status, policy version, changed fields and PII changed
+  long: The rule engine result and an audit trail that shows which policy version applied and whether personal data changed.
+- file: /assets/img/screens/cryptoswift/06-vasp-directory.webp
+  width: 1422
+  height: 636
+  caption: VASP directory
+  alt: CryptoSwift VASP directory listing 14,784 entries with country, risk score, severity, type, network and assessment status
+  long: The VASP directory with a risk score per counterparty; the sandbox listed 14,784 entries.
+- file: /assets/img/screens/cryptoswift/07-vasp-record.webp
+  width: 1422
+  height: 636
+  caption: Counterparty record
+  alt: VASP record for 001K Bot with an entity risk of 58, medium, and status flags for verified, in network, risk assessed and MiCA
+  long: One counterparty with its entity risk and MiCA, network and verification flags.
+- file: /assets/img/screens/cryptoswift/08-rule-create.webp
+  width: 1422
+  height: 636
+  caption: Rule builder
+  alt: Create Rule dialog with IF conditions on risk severity and a THEN decision of review
+  long: 'A rule in plain terms: if these conditions match, proceed, wait, review or block.'
+- file: /assets/img/screens/cryptoswift/09-rule-simulation.webp
+  width: 1422
+  height: 636
+  caption: Rule simulation
+  alt: Rule engine simulation tab to test draft or published rules with status, risk severity and risk score inputs
+  long: Draft and published rules can be tested before they go live.
+- file: /assets/img/screens/cryptoswift/10-wallet-proof-widget.webp
+  width: 1422
+  height: 692
+  caption: Wallet ownership widget
+  alt: Wallet ownership widget preview offering wallet signature, Satoshi test, visual proof and self-declaration
+  long: 'What your customer sees: four ways to prove they own a self-hosted wallet.'
+- file: /assets/img/screens/cryptoswift/11-integrations.webp
+  width: 1422
+  height: 636
+  caption: Integrations
+  alt: External integrations settings with a Notabene webhook and Scorechain, AMLBot and Lukka as AML check providers
+  long: Notabene messages in by webhook, and AML checks through your own Scorechain, AMLBot or Lukka key.
+- file: /assets/img/screens/cryptoswift/01-dashboard.webp
+  width: 1422
+  height: 636
+  caption: Dashboard
+  alt: CryptoSwift sandbox dashboard with used credits, plan name and counts of transfers to confirm and pending
+  long: Credits used this month and transfers waiting for you.
+screenshots_meta:
+  origin: beverified
+  provided: '2026-11-27'
+  environment: CryptoSwift's sandbox
+  sample_data: true
+  note: "The transfers are test transfers between our sandbox account and CryptoSwift's demo bank, so these screens show how the product works, not how it performs with live counterparties. The VASP directory and the widget show CryptoSwift's own sandbox data."
+  permission: own sandbox account; CryptoSwift not asked yet (owner to decide)
 changes:
+- date: '2026-11-27'
+  text: 'Screenshots from our own sandbox account added, with AML providers, the Notabene webhook and rule decisions seen there.'
 - date: '2026-11-18'
   text: 'ISO/IEC 27001:2022 certificate confirmed in the certification body''s register. TRP status, the one-way Notabene link and billing above the credit allowance updated from CryptoSwift''s answers.'
 - date: '2026-11-17'
