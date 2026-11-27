@@ -52,7 +52,7 @@ A provider that fails a rule is left out, not scored low, and the page's "Not in
 As v3.1, IDV 1.0 and Budget KYC 1.0:
 - Sub-score 1 to 5, in steps of 0.5, from the guide below (round half up). The same data gives the same sub-score.
 - Each sub-score lists its evidence level (Independent, Vendor-stated, Hands-on). Almost all fraud evidence is Vendor-stated; the review says so.
-- No public data for a criterion: "Not publicly disclosed", no sub-score, its weight shared out in proportion over the scored criteria.
+- A feature we can't find in the vendor's public material earns no points, and the criterion's weight does not move to other criteria, so keeping documentation private never lifts a score (same rule as AML 1.0 and AML for Banks 1.0). Pages behind a login or a contact form don't count.
 - Fraud score = weighted average, rounded to 0.1. Stored in `category_scores.fraud-prevention`, never replaces the overall score.
 - User ratings stay outside. Payment, affiliate, paid-link or sponsored status never enters any criterion.
 - Values are read from the record (`capabilities{}`, `integration{}`, `certifications[]`, `pricing`, `incidents.yml`), never retyped. `yes` and `add_on` both count.
@@ -185,7 +185,7 @@ Review coming (tracked, not ranked): Featurespace (Visa), BioCatch, Alloy, DataV
 ## Rollout
 
 1. This file (owner approved 2026-11-27).
-2. Methodology page: a "Fraud prevention" section with criteria, weights, the buyer profile and the date, plus a changelog entry, and `site.json` `v3.rubricFraud`. Published before any score.
+2. Methodology page (done in the PR after this file): a "Fraud prevention" section with criteria, weights, the buyer profile and the date, plus a changelog entry, and `site.json` `v3.rubricFraud`. Published before any score.
 3. Data: the new capability keys for every candidate record, sources dated, written with `scripts/set-capabilities.py`; `tracked.yml` entries for the "Review coming" vendors.
 4. `scripts/rescore-fraud.mjs` writes `reports/rescore-fraud-1.0.csv` (eligibility reason, Fraud score, each sub-score). Owner reviews; manual overrides only with a written reason.
 5. Page PR: category file, cards and quick answer from the records (humanizer, invisible-characters, pre-publish check), menu link.
