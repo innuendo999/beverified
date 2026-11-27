@@ -798,10 +798,16 @@ category_scores:
 screenshots:
 - file: /assets/img/screens/veriff/01-verifications.webp
   width: 1422
-  height: 638
+  height: 694
   caption: Verifications
-  alt: Veriff Station list of verifications with session status, risk insights, PEP and sanctions, name, document country and type, with filters
+  alt: Veriff Station list of verifications with our two test sessions not started and two sample sessions, approved and declined, with filters
   long: Every session with its decision, filters by status, rejection category, document and PEP result, and CSV export.
+- file: /assets/img/screens/veriff/09-create-session.webp
+  width: 1422
+  height: 694
+  caption: Create a session
+  alt: Create a new verification dialog in Veriff Station with the test integration, the user's first and last name and a unique identifier
+  long: A session can be created by hand and sent as a link or QR code; Veriff warns that test sessions get no decision.
 - file: /assets/img/screens/veriff/02-session-approved.webp
   width: 1422
   height: 694
@@ -840,10 +846,10 @@ screenshots:
   long: Premium at $1.89 a verification comes to $3.22 with all four add-ons.
 - file: /assets/img/screens/veriff/08-user-flow-start.webp
   width: 1422
-  height: 638
+  height: 694
   caption: What your customer sees first
-  alt: Start of the Veriff verification flow on a desktop, asking the user to continue on a smartphone by QR code or SMS link, shown in Ukrainian
-  long: 'On a desktop the flow sends the user to their phone by QR code or SMS. It opened in Ukrainian, our browser language.'
+  alt: Start of the Veriff verification flow on a desktop, asking the user to continue on a smartphone by QR code or SMS link
+  long: On a desktop the flow sends the user to their phone by QR code or SMS.
 screenshots_meta:
   origin: beverified
   provided: '2026-11-27'
