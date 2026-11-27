@@ -191,6 +191,120 @@ capabilities:
   data_residency:
     status: not_disclosed
     note: not stated
+  fraud_transaction:
+    status: 'yes'
+    note: transaction fraud across payment channels
+    source: 17
+    checked: '2026-11-27'
+  fraud_ato:
+    status: 'partial'
+    note: behaviour and device signals flag manipulation; ATO not named
+    source: 15
+    checked: '2026-11-27'
+  fraud_scam:
+    status: 'yes'
+    note: scams where victims authorise payments
+    source: 16
+    checked: '2026-11-27'
+  fraud_check:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  fraud_onboarding:
+    status: 'yes'
+    note: secure onboarding and account opening
+    source: 15
+    checked: '2026-11-27'
+  fraud_mule:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  behavioral_biometrics:
+    status: 'yes'
+    note: behavioural biometrics listed as a scam signal
+    source: 16
+    checked: '2026-11-27'
+  device_intelligence:
+    status: 'yes'
+    note: device intelligence with behavioural intelligence
+    source: 15
+    checked: '2026-11-27'
+  graph_analytics:
+    status: 'partial'
+    note: network intelligence cited; graph not described
+    source: 15
+    checked: '2026-11-27'
+  fraud_consortium:
+    status: 'yes'
+    note: Feedzai IQ pools intelligence across its customer base
+    source: 17
+    checked: '2026-11-27'
+  realtime_decisioning:
+    status: 'yes'
+    note: real-time, low-latency decisions; no figure
+    source: 17
+    checked: '2026-11-27'
+  fraud_rules:
+    status: 'partial'
+    note: rule management via Farol; no-code not stated
+    source: 15
+    checked: '2026-11-27'
+  rule_testing:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  payment_interventions:
+    status: 'yes'
+    note: step-up authentication, payment delays, in-session alerts
+    source: 16
+    checked: '2026-11-27'
+  explainability:
+    status: 'yes'
+    note: explainable AI
+    source: 17
+    checked: '2026-11-27'
+  ai_investigation:
+    status: 'yes'
+    note: Farol agentic AI for investigations
+    source: 15
+    checked: '2026-11-27'
+  regulatory_filing:
+    status: 'partial'
+    note: Farol handles SARs; filing not described
+    source: 15
+    checked: '2026-11-27'
+  alert_prioritisation:
+    status: 'partial'
+    note: alert handling; prioritisation not described
+    source: 15
+    checked: '2026-11-27'
+  payee_verification:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  instant_payments:
+    status: 'not_disclosed'
+    note: no rail named
+    checked: '2026-11-27'
+  custom_models:
+    status: 'yes'
+    note: import and export of ML models
+    source: 17
+    checked: '2026-11-27'
+  data_orchestration:
+    status: 'partial'
+    note: Feedzai Orchestration listed; third-party sources not detailed
+    source: 15
+    checked: '2026-11-27'
+  named_fi_customers:
+    status: 'yes'
+    note: CaixaBank, Raiffeisen Bank International, BTG Pactual
+    source: 15
+    checked: '2026-11-27'
+  fraud_pricing:
+    status: quote
+    note: quote only
+    checked: '2026-11-27'
 integration:
   checked: '2026-11'
   docs_public:
@@ -322,6 +436,18 @@ sources:
   publisher: Capterra UK
   url: https://www.capterra.co.uk/software/156229/feedzai-ds
   accessed: '2026-10'
+- title: Feedzai home page
+  publisher: Feedzai
+  url: https://feedzai.com/
+  accessed: '2026-11'
+- title: Scam prevention
+  publisher: Feedzai
+  url: https://www.feedzai.com/solutions/scam-prevention/
+  accessed: '2026-11'
+- title: Transaction fraud
+  publisher: Feedzai
+  url: https://www.feedzai.com/solutions/transaction-fraud/
+  accessed: '2026-11'
 entity:
   wikidata: null
   kg_mid: null

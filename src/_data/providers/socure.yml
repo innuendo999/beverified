@@ -292,6 +292,119 @@ capabilities:
     note: 'Selfie Reverification against the earlier DocV headshot'
     source: 22
     checked: '2026-11'
+  fraud_transaction:
+    status: 'partial'
+    note: transaction-level risk signals in payment screening
+    source: 24
+    checked: '2026-11-27'
+  fraud_ato:
+    status: 'partial'
+    note: adaptive login checks; ATO not named
+    source: 23
+    checked: '2026-11-27'
+  fraud_scam:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  fraud_check:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  fraud_onboarding:
+    status: 'yes'
+    note: Sigma identity, synthetic and first-party fraud
+    source: 23
+    checked: '2026-11-27'
+  fraud_mule:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  behavioral_biometrics:
+    status: 'yes'
+    note: device behavioural biometrics
+    source: 23
+    checked: '2026-11-27'
+  device_intelligence:
+    status: 'yes'
+    note: passive device verification
+    source: 23
+    checked: '2026-11-27'
+  graph_analytics:
+    status: 'yes'
+    note: graph intelligence on the identity graph
+    source: 23
+    checked: '2026-11-27'
+  fraud_consortium:
+    status: 'partial'
+    note: known outcomes on the identity graph; consortium not stated
+    source: 23
+    checked: '2026-11-27'
+  realtime_decisioning:
+    status: 'partial'
+    note: real-time decisioning claimed; no figure
+    source: 23
+    checked: '2026-11-27'
+  fraud_rules:
+    status: 'yes'
+    note: no-code RiskOS workflows
+    source: 24
+    checked: '2026-11-27'
+  rule_testing:
+    status: 'partial'
+    note: testing before deployment mentioned
+    source: 23
+    checked: '2026-11-27'
+  payment_interventions:
+    status: 'partial'
+    note: adaptive authentication; step-up not described
+    source: 23
+    checked: '2026-11-27'
+  explainability:
+    status: 'partial'
+    note: transparency mentioned; reason codes not
+    source: 23
+    checked: '2026-11-27'
+  ai_investigation:
+    status: 'yes'
+    note: RiskOS agents for investigations
+    source: 23
+    checked: '2026-11-27'
+  regulatory_filing:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  alert_prioritisation:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  payee_verification:
+    status: 'partial'
+    note: bank account ownership and status checks
+    source: 23
+    checked: '2026-11-27'
+  instant_payments:
+    status: 'not_disclosed'
+    note: no rail named
+    checked: '2026-11-27'
+  custom_models:
+    status: 'partial'
+    note: customised RiskOS deployments
+    source: 23
+    checked: '2026-11-27'
+  data_orchestration:
+    status: 'yes'
+    note: RiskOS described as an orchestration platform
+    source: 23
+    checked: '2026-11-27'
+  named_fi_customers:
+    status: 'yes'
+    note: Citi, Capital One, Chime, SoFi
+    source: 23
+    checked: '2026-11-27'
+  fraud_pricing:
+    status: entry_plan
+    note: self-serve Launch plan published
+    checked: '2026-11-27'
 integration:
   checked: '2026-11'
   docs_public:
@@ -494,6 +607,14 @@ sources:
 - title: 'Selfie Reverification'
   publisher: Socure
   url: https://help.socure.com/riskos/docs/selfie-reverification
+  accessed: '2026-11'
+- title: Socure home page
+  publisher: Socure
+  url: https://www.socure.com/
+  accessed: '2026-11'
+- title: Payment screening
+  publisher: Socure
+  url: https://www.socure.com/use-cases/payment-screening
   accessed: '2026-11'
 entity:
   wikidata: null

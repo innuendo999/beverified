@@ -247,6 +247,117 @@ capabilities:
     note: payment screening product
     source: 9
     checked: '2026-11-23'
+  fraud_transaction:
+    status: 'yes'
+    note: transaction fraud across channels and payment methods
+    source: 11
+    checked: '2026-11-27'
+  fraud_ato:
+    status: 'yes'
+    note: account takeover named
+    source: 11
+    checked: '2026-11-27'
+  fraud_scam:
+    status: 'yes'
+    note: APP scam use case and scam-specific models
+    source: 12
+    checked: '2026-11-27'
+  fraud_check:
+    status: 'yes'
+    note: check image forensics and cross-channel check protection
+    source: 11
+    checked: '2026-11-27'
+  fraud_onboarding:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  fraud_mule:
+    status: 'yes'
+    note: mule detection across incoming and outgoing funds
+    source: 12
+    checked: '2026-11-27'
+  behavioral_biometrics:
+    status: 'yes'
+    note: behavioural analytics and biometrics
+    source: 11
+    checked: '2026-11-27'
+  device_intelligence:
+    status: 'partial'
+    note: device usage signals only
+    source: 11
+    checked: '2026-11-27'
+  graph_analytics:
+    status: 'not_disclosed'
+    note: not described for fraud
+    checked: '2026-11-27'
+  fraud_consortium:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  realtime_decisioning:
+    status: 'yes'
+    note: 150 ms average
+    source: 11
+    checked: '2026-11-27'
+  fraud_rules:
+    status: 'yes'
+    note: self-serve no-code rule builder
+    source: 11
+    checked: '2026-11-27'
+  rule_testing:
+    status: 'partial'
+    note: production-grade sandbox with live data; backtesting not named
+    source: 11
+    checked: '2026-11-27'
+  payment_interventions:
+    status: 'partial'
+    note: blocking before payments clear; graduated steps not described
+    source: 11
+    checked: '2026-11-27'
+  explainability:
+    status: 'yes'
+    note: reason codes and AI explanations
+    source: 11
+    checked: '2026-11-27'
+  ai_investigation:
+    status: 'partial'
+    note: contextual AI explanations for case review
+    source: 11
+    checked: '2026-11-27'
+  regulatory_filing:
+    status: 'not_disclosed'
+    note: not described for fraud
+    checked: '2026-11-27'
+  alert_prioritisation:
+    status: 'not_disclosed'
+    note: not described for fraud
+    checked: '2026-11-27'
+  payee_verification:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  instant_payments:
+    status: 'not_disclosed'
+    note: no rail named
+    checked: '2026-11-27'
+  custom_models:
+    status: 'yes'
+    note: Day One Defense models fine-tuned on the institution's data
+    source: 11
+    checked: '2026-11-27'
+  data_orchestration:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  named_fi_customers:
+    status: 'yes'
+    note: Ebury, Alviere
+    source: 13
+    checked: '2026-11-27'
+  fraud_pricing:
+    status: quote
+    note: quote only
+    checked: '2026-11-27'
 integration:
   checked: '2026-11'
   docs_public:
@@ -369,6 +480,18 @@ sources:
 - title: Customer risk rating
   publisher: Hawk
   url: https://hawk.ai/our-products/customer-risk-rating
+  accessed: '2026-11'
+- title: Hawk fraud solution
+  publisher: Hawk AI
+  url: https://hawk.ai/de/node/360
+  accessed: '2026-11'
+- title: Hawk scam and mule detection
+  publisher: Hawk AI
+  url: https://hawk.ai/solutions/fraud/scams-mules
+  accessed: '2026-11'
+- title: Hawk home page
+  publisher: Hawk
+  url: https://www.hawk.ai/
   accessed: '2026-11'
 entity:
   wikidata: null

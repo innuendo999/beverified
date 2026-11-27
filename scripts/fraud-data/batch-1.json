@@ -1,0 +1,1584 @@
+{
+ "seon": {
+  "sources": [
+   {
+    "title": "Fraud prevention",
+    "publisher": "SEON",
+    "url": "https://seon.io/products/fraud-prevention/",
+    "accessed": "2026-11"
+   },
+   {
+    "title": "Rules and AI risk decisioning",
+    "publisher": "SEON",
+    "url": "https://seon.io/products/rules-ai-risk-decisioning/",
+    "accessed": "2026-11"
+   },
+   {
+    "title": "Mule account detection",
+    "publisher": "SEON",
+    "url": "https://seon.io/use-cases/mule-account-detection/",
+    "accessed": "2026-11"
+   }
+  ],
+  "capabilities": {
+   "fraud_transaction": {
+    "status": "yes",
+    "note": "real-time payment screening, card testing and stolen cards",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_ato": {
+    "status": "yes",
+    "note": "SIM-swap, new-device and new-country login checks",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_scam": {
+    "status": "partial",
+    "note": "login monitoring mentions phishing and social engineering; no scam payment detection",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_check": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "fraud_onboarding": {
+    "status": "yes",
+    "note": "synthetic IDs at signup, pre-KYC enrichment",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_mule": {
+    "status": "yes",
+    "note": "mule account detection across the account lifecycle",
+    "source": "@3",
+    "checked": "2026-11-27"
+   },
+   "behavioral_biometrics": {
+    "status": "yes",
+    "note": "typing and mouse patterns to catch bots and session hijacking",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "device_intelligence": {
+    "status": "yes",
+    "note": "device fingerprinting, emulator and spoofing detection",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "graph_analytics": {
+    "status": "yes",
+    "note": "links accounts through shared devices and identifiers",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_consortium": {
+    "status": "yes",
+    "note": "consortium data from 5,000+ customers",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "realtime_decisioning": {
+    "status": "yes",
+    "note": "decisions in milliseconds via API; no latency figure",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_rules": {
+    "status": "yes",
+    "note": "rules built in the UI or with an AI rule builder, no engineering",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "rule_testing": {
+    "status": "yes",
+    "note": "rules backtested on historical transactions while the live version runs",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "payment_interventions": {
+    "status": "partial",
+    "note": "approve, review or decline; no hold or step-up described",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "explainability": {
+    "status": "yes",
+    "note": "rules and signals behind each score shown",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "ai_investigation": {
+    "status": "yes",
+    "note": "AI case summaries, Investigate With AI",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "regulatory_filing": {
+    "status": "not_disclosed",
+    "note": "not described for fraud cases",
+    "checked": "2026-11-27"
+   },
+   "alert_prioritisation": {
+    "status": "partial",
+    "note": "edge cases left for review; no named prioritisation",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "payee_verification": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "instant_payments": {
+    "status": "not_disclosed",
+    "note": "no rail named",
+    "checked": "2026-11-27"
+   },
+   "custom_models": {
+    "status": "yes",
+    "note": "AI score trained on the customer's own fraud outcomes",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "data_orchestration": {
+    "status": "not_disclosed",
+    "note": "signals gathered first-hand; third-party data not described",
+    "checked": "2026-11-27"
+   },
+   "named_fi_customers": {
+    "status": "yes",
+    "note": "Revolut, Wise, Afterpay among logos",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_pricing": {
+    "status": "entry_plan",
+    "note": "Starter plan published, larger plans quoted",
+    "checked": "2026-11-27"
+   }
+  }
+ },
+ "sardine": {
+  "sources": [
+   {
+    "title": "Sardine home page",
+    "publisher": "Sardine",
+    "url": "https://www.sardine.ai/",
+    "accessed": "2026-11"
+   },
+   {
+    "title": "Rules engine",
+    "publisher": "Sardine",
+    "url": "https://www.sardine.ai/rules-engine",
+    "accessed": "2026-11"
+   },
+   {
+    "title": "Device and behavior",
+    "publisher": "Sardine",
+    "url": "https://www.sardine.ai/device-and-behavior",
+    "accessed": "2026-11"
+   },
+   {
+    "title": "Bank transactions",
+    "publisher": "Sardine",
+    "url": "https://www.sardine.ai/bank-transactions",
+    "accessed": "2026-11"
+   }
+  ],
+  "capabilities": {
+   "fraud_transaction": {
+    "status": "yes",
+    "note": "payment fraud and card issuing fraud products",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_ato": {
+    "status": "yes",
+    "note": "account takeover protection at login and in session",
+    "source": "@3",
+    "checked": "2026-11-27"
+   },
+   "fraud_scam": {
+    "status": "yes",
+    "note": "detects remote access tools and guided sessions, social engineering scams",
+    "source": "@3",
+    "checked": "2026-11-27"
+   },
+   "fraud_check": {
+    "status": "partial",
+    "note": "checks listed among monitored bank rails; check fraud not described",
+    "source": "@4",
+    "checked": "2026-11-27"
+   },
+   "fraud_onboarding": {
+    "status": "yes",
+    "note": "synthetic, stolen and deepfake identities at onboarding",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_mule": {
+    "status": "yes",
+    "note": "mule activity detection in transaction monitoring",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "behavioral_biometrics": {
+    "status": "yes",
+    "note": "typing cadence, mouse movement, tap pressure",
+    "source": "@3",
+    "checked": "2026-11-27"
+   },
+   "device_intelligence": {
+    "status": "yes",
+    "note": "fingerprinting, emulator, root and bot detection",
+    "source": "@3",
+    "checked": "2026-11-27"
+   },
+   "graph_analytics": {
+    "status": "yes",
+    "note": "connections graph across users, devices and transactions",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_consortium": {
+    "status": "yes",
+    "note": "cross-industry consortium (Sonar)",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "realtime_decisioning": {
+    "status": "yes",
+    "note": "real-time detection and actions; no latency figure",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "fraud_rules": {
+    "status": "yes",
+    "note": "no-code rule builder",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "rule_testing": {
+    "status": "yes",
+    "note": "backtest on historical data, shadow mode on live traffic",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "payment_interventions": {
+    "status": "yes",
+    "note": "step-up via 3DS challenge and deeper identity checks",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "explainability": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "ai_investigation": {
+    "status": "yes",
+    "note": "Agentic Fraud Ops agents for alert review and investigations",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "regulatory_filing": {
+    "status": "partial",
+    "note": "SAR generation agent listed; filing not described",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "alert_prioritisation": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "payee_verification": {
+    "status": "partial",
+    "note": "bank account ownership validation; not framed as payee verification",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "instant_payments": {
+    "status": "yes",
+    "note": "RTP, FedNow, SEPA, Zelle named",
+    "source": "@4",
+    "checked": "2026-11-27"
+   },
+   "custom_models": {
+    "status": "partial",
+    "note": "custom risk agents and credit models; custom fraud models not described",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "data_orchestration": {
+    "status": "yes",
+    "note": "Sardine Flow connects third-party APIs and data sources",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "named_fi_customers": {
+    "status": "yes",
+    "note": "National Bank of Canada, Nubank, Live Oak Bank, bunq",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_pricing": {
+    "status": "quote",
+    "note": "quote only",
+    "checked": "2026-11-27"
+   }
+  }
+ },
+ "feedzai": {
+  "sources": [
+   {
+    "title": "Feedzai home page",
+    "publisher": "Feedzai",
+    "url": "https://feedzai.com/",
+    "accessed": "2026-11"
+   },
+   {
+    "title": "Scam prevention",
+    "publisher": "Feedzai",
+    "url": "https://www.feedzai.com/solutions/scam-prevention/",
+    "accessed": "2026-11"
+   },
+   {
+    "title": "Transaction fraud",
+    "publisher": "Feedzai",
+    "url": "https://www.feedzai.com/solutions/transaction-fraud/",
+    "accessed": "2026-11"
+   }
+  ],
+  "capabilities": {
+   "fraud_transaction": {
+    "status": "yes",
+    "note": "transaction fraud across payment channels",
+    "source": "@3",
+    "checked": "2026-11-27"
+   },
+   "fraud_ato": {
+    "status": "partial",
+    "note": "behaviour and device signals flag manipulation; ATO not named",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_scam": {
+    "status": "yes",
+    "note": "scams where victims authorise payments",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "fraud_check": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "fraud_onboarding": {
+    "status": "yes",
+    "note": "secure onboarding and account opening",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_mule": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "behavioral_biometrics": {
+    "status": "yes",
+    "note": "behavioural biometrics listed as a scam signal",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "device_intelligence": {
+    "status": "yes",
+    "note": "device intelligence with behavioural intelligence",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "graph_analytics": {
+    "status": "partial",
+    "note": "network intelligence cited; graph not described",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_consortium": {
+    "status": "yes",
+    "note": "Feedzai IQ pools intelligence across its customer base",
+    "source": "@3",
+    "checked": "2026-11-27"
+   },
+   "realtime_decisioning": {
+    "status": "yes",
+    "note": "real-time, low-latency decisions; no figure",
+    "source": "@3",
+    "checked": "2026-11-27"
+   },
+   "fraud_rules": {
+    "status": "partial",
+    "note": "rule management via Farol; no-code not stated",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "rule_testing": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "payment_interventions": {
+    "status": "yes",
+    "note": "step-up authentication, payment delays, in-session alerts",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "explainability": {
+    "status": "yes",
+    "note": "explainable AI",
+    "source": "@3",
+    "checked": "2026-11-27"
+   },
+   "ai_investigation": {
+    "status": "yes",
+    "note": "Farol agentic AI for investigations",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "regulatory_filing": {
+    "status": "partial",
+    "note": "Farol handles SARs; filing not described",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "alert_prioritisation": {
+    "status": "partial",
+    "note": "alert handling; prioritisation not described",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "payee_verification": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "instant_payments": {
+    "status": "not_disclosed",
+    "note": "no rail named",
+    "checked": "2026-11-27"
+   },
+   "custom_models": {
+    "status": "yes",
+    "note": "import and export of ML models",
+    "source": "@3",
+    "checked": "2026-11-27"
+   },
+   "data_orchestration": {
+    "status": "partial",
+    "note": "Feedzai Orchestration listed; third-party sources not detailed",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "named_fi_customers": {
+    "status": "yes",
+    "note": "CaixaBank, Raiffeisen Bank International, BTG Pactual",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_pricing": {
+    "status": "quote",
+    "note": "quote only",
+    "checked": "2026-11-27"
+   }
+  }
+ },
+ "unit21": {
+  "sources": [
+   {
+    "title": "Unit21 home page",
+    "publisher": "Unit21",
+    "url": "https://www.unit21.ai/",
+    "accessed": "2026-11"
+   },
+   {
+    "title": "Real-time payment fraud prevention",
+    "publisher": "Unit21",
+    "url": "https://www.unit21.ai/products/real-time-payment-fraud-prevention",
+    "accessed": "2026-11"
+   }
+  ],
+  "capabilities": {
+   "fraud_transaction": {
+    "status": "yes",
+    "note": "real-time scoring across cards and payment rails",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "fraud_ato": {
+    "status": "yes",
+    "note": "suspicious logins, device and location changes",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "fraud_scam": {
+    "status": "yes",
+    "note": "APP and social engineering: new payees, unusual amounts, urgency cues",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "fraud_check": {
+    "status": "partial",
+    "note": "checks among covered rails; check fraud detection not described",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "fraud_onboarding": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "fraud_mule": {
+    "status": "yes",
+    "note": "device intelligence to stop mule networks",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "behavioral_biometrics": {
+    "status": "partial",
+    "note": "behavioural signals; biometrics not described",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "device_intelligence": {
+    "status": "yes",
+    "note": "device risk score",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "graph_analytics": {
+    "status": "yes",
+    "note": "graph analysis in case management",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_consortium": {
+    "status": "yes",
+    "note": "fraud consortium covering 80M+ US adults",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "realtime_decisioning": {
+    "status": "yes",
+    "note": "evaluated in under 150 ms",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "fraud_rules": {
+    "status": "yes",
+    "note": "visual decision trees without engineering tickets",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "rule_testing": {
+    "status": "yes",
+    "note": "shadow mode, validation on history, sandbox",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "payment_interventions": {
+    "status": "partial",
+    "note": "approve, block or escalate; no hold or step-up",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "explainability": {
+    "status": "yes",
+    "note": "traceable, explainable outcomes",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "ai_investigation": {
+    "status": "yes",
+    "note": "investigation agent drafts case narratives",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "regulatory_filing": {
+    "status": "yes",
+    "note": "pre-populates SARs and other filings",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "alert_prioritisation": {
+    "status": "yes",
+    "note": "highest-risk activity surfaced first",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "payee_verification": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "instant_payments": {
+    "status": "yes",
+    "note": "FedNow and RTP named",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "custom_models": {
+    "status": "partial",
+    "note": "configurable models; customer models not described",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "data_orchestration": {
+    "status": "partial",
+    "note": "integrations listed; orchestration not described",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "named_fi_customers": {
+    "status": "yes",
+    "note": "Chime, Green Dot, Kinecta",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_pricing": {
+    "status": "quote",
+    "note": "quote only",
+    "checked": "2026-11-27"
+   }
+  }
+ },
+ "hawkai": {
+  "sources": [
+   {
+    "title": "Hawk fraud solution",
+    "publisher": "Hawk AI",
+    "url": "https://hawk.ai/de/node/360",
+    "accessed": "2026-11"
+   },
+   {
+    "title": "Hawk scam and mule detection",
+    "publisher": "Hawk AI",
+    "url": "https://hawk.ai/solutions/fraud/scams-mules",
+    "accessed": "2026-11"
+   },
+   {
+    "title": "Hawk home page",
+    "publisher": "Hawk",
+    "url": "https://www.hawk.ai/",
+    "accessed": "2026-11"
+   }
+  ],
+  "capabilities": {
+   "fraud_transaction": {
+    "status": "yes",
+    "note": "transaction fraud across channels and payment methods",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_ato": {
+    "status": "yes",
+    "note": "account takeover named",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_scam": {
+    "status": "yes",
+    "note": "APP scam use case and scam-specific models",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "fraud_check": {
+    "status": "yes",
+    "note": "check image forensics and cross-channel check protection",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_onboarding": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "fraud_mule": {
+    "status": "yes",
+    "note": "mule detection across incoming and outgoing funds",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "behavioral_biometrics": {
+    "status": "yes",
+    "note": "behavioural analytics and biometrics",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "device_intelligence": {
+    "status": "partial",
+    "note": "device usage signals only",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "graph_analytics": {
+    "status": "not_disclosed",
+    "note": "not described for fraud",
+    "checked": "2026-11-27"
+   },
+   "fraud_consortium": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "realtime_decisioning": {
+    "status": "yes",
+    "note": "150 ms average",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_rules": {
+    "status": "yes",
+    "note": "self-serve no-code rule builder",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "rule_testing": {
+    "status": "partial",
+    "note": "production-grade sandbox with live data; backtesting not named",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "payment_interventions": {
+    "status": "partial",
+    "note": "blocking before payments clear; graduated steps not described",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "explainability": {
+    "status": "yes",
+    "note": "reason codes and AI explanations",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "ai_investigation": {
+    "status": "partial",
+    "note": "contextual AI explanations for case review",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "regulatory_filing": {
+    "status": "not_disclosed",
+    "note": "not described for fraud",
+    "checked": "2026-11-27"
+   },
+   "alert_prioritisation": {
+    "status": "not_disclosed",
+    "note": "not described for fraud",
+    "checked": "2026-11-27"
+   },
+   "payee_verification": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "instant_payments": {
+    "status": "not_disclosed",
+    "note": "no rail named",
+    "checked": "2026-11-27"
+   },
+   "custom_models": {
+    "status": "yes",
+    "note": "Day One Defense models fine-tuned on the institution's data",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "data_orchestration": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "named_fi_customers": {
+    "status": "yes",
+    "note": "Ebury, Alviere",
+    "checked": "2026-11-27",
+    "source": "@3"
+   },
+   "fraud_pricing": {
+    "status": "quote",
+    "note": "quote only",
+    "checked": "2026-11-27"
+   }
+  }
+ },
+ "socure": {
+  "sources": [
+   {
+    "title": "Socure home page",
+    "publisher": "Socure",
+    "url": "https://www.socure.com/",
+    "accessed": "2026-11"
+   },
+   {
+    "title": "Payment screening",
+    "publisher": "Socure",
+    "url": "https://www.socure.com/use-cases/payment-screening",
+    "accessed": "2026-11"
+   }
+  ],
+  "capabilities": {
+   "fraud_transaction": {
+    "status": "partial",
+    "note": "transaction-level risk signals in payment screening",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "fraud_ato": {
+    "status": "partial",
+    "note": "adaptive login checks; ATO not named",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_scam": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "fraud_check": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "fraud_onboarding": {
+    "status": "yes",
+    "note": "Sigma identity, synthetic and first-party fraud",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_mule": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "behavioral_biometrics": {
+    "status": "yes",
+    "note": "device behavioural biometrics",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "device_intelligence": {
+    "status": "yes",
+    "note": "passive device verification",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "graph_analytics": {
+    "status": "yes",
+    "note": "graph intelligence on the identity graph",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_consortium": {
+    "status": "partial",
+    "note": "known outcomes on the identity graph; consortium not stated",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "realtime_decisioning": {
+    "status": "partial",
+    "note": "real-time decisioning claimed; no figure",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_rules": {
+    "status": "yes",
+    "note": "no-code RiskOS workflows",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "rule_testing": {
+    "status": "partial",
+    "note": "testing before deployment mentioned",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "payment_interventions": {
+    "status": "partial",
+    "note": "adaptive authentication; step-up not described",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "explainability": {
+    "status": "partial",
+    "note": "transparency mentioned; reason codes not",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "ai_investigation": {
+    "status": "yes",
+    "note": "RiskOS agents for investigations",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "regulatory_filing": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "alert_prioritisation": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "payee_verification": {
+    "status": "partial",
+    "note": "bank account ownership and status checks",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "instant_payments": {
+    "status": "not_disclosed",
+    "note": "no rail named",
+    "checked": "2026-11-27"
+   },
+   "custom_models": {
+    "status": "partial",
+    "note": "customised RiskOS deployments",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "data_orchestration": {
+    "status": "yes",
+    "note": "RiskOS described as an orchestration platform",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "named_fi_customers": {
+    "status": "yes",
+    "note": "Citi, Capital One, Chime, SoFi",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_pricing": {
+    "status": "entry_plan",
+    "note": "self-serve Launch plan published",
+    "checked": "2026-11-27"
+   }
+  }
+ },
+ "nice-actimize": {
+  "sources": [
+   {
+    "title": "Fraud management",
+    "publisher": "NICE Actimize",
+    "url": "https://www.niceactimize.com/fraud-management/",
+    "accessed": "2026-11"
+   },
+   {
+    "title": "Payments fraud",
+    "publisher": "NICE Actimize",
+    "url": "https://www.niceactimize.com/fraud-management/payment",
+    "accessed": "2026-11"
+   },
+   {
+    "title": "IFM brochure",
+    "publisher": "NICE Actimize",
+    "url": "https://resources.niceactimize.com/wp-content/uploads/2025/08/brochure-ifm-prevent-fraud-pervasive-ai.pdf",
+    "accessed": "2026-11"
+   }
+  ],
+  "capabilities": {
+   "fraud_transaction": {
+    "status": "yes",
+    "note": "IFM card fraud and payments fraud",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "fraud_ato": {
+    "status": "yes",
+    "note": "ATO among covered typologies",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "fraud_scam": {
+    "status": "yes",
+    "note": "scams and mule defense",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_check": {
+    "status": "yes",
+    "note": "check and deposit fraud",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "fraud_onboarding": {
+    "status": "yes",
+    "note": "new account fraud",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_mule": {
+    "status": "yes",
+    "note": "mule detection",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "behavioral_biometrics": {
+    "status": "partial",
+    "note": "behavioural signals; biometrics not described",
+    "source": "@3",
+    "checked": "2026-11-27"
+   },
+   "device_intelligence": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "graph_analytics": {
+    "status": "partial",
+    "note": "network-level intelligence; graph not named",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_consortium": {
+    "status": "yes",
+    "note": "collective intelligence, Actimize Insights Network",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "realtime_decisioning": {
+    "status": "yes",
+    "note": "real-time fraud prevention; no figure",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_rules": {
+    "status": "partial",
+    "note": "strategy and rule management; no-code not stated",
+    "source": "@3",
+    "checked": "2026-11-27"
+   },
+   "rule_testing": {
+    "status": "yes",
+    "note": "strategies simulated before activation",
+    "source": "@3",
+    "checked": "2026-11-27"
+   },
+   "payment_interventions": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "explainability": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "ai_investigation": {
+    "status": "yes",
+    "note": "generative AI in investigations",
+    "source": "@3",
+    "checked": "2026-11-27"
+   },
+   "regulatory_filing": {
+    "status": "yes",
+    "note": "automated SAR filings",
+    "source": "@3",
+    "checked": "2026-11-27"
+   },
+   "alert_prioritisation": {
+    "status": "partial",
+    "note": "alert triage",
+    "source": "@3",
+    "checked": "2026-11-27"
+   },
+   "payee_verification": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "instant_payments": {
+    "status": "partial",
+    "note": "real-time payments, no rail named",
+    "source": "@3",
+    "checked": "2026-11-27"
+   },
+   "custom_models": {
+    "status": "yes",
+    "note": "data from any source",
+    "source": "@3",
+    "checked": "2026-11-27"
+   },
+   "data_orchestration": {
+    "status": "yes",
+    "note": "Actimize Marketplace partners",
+    "source": "@3",
+    "checked": "2026-11-27"
+   },
+   "named_fi_customers": {
+    "status": "not_disclosed",
+    "note": "not on the pages checked",
+    "checked": "2026-11-27"
+   },
+   "fraud_pricing": {
+    "status": "quote",
+    "note": "quote only",
+    "checked": "2026-11-27"
+   }
+  }
+ },
+ "quantexa": {
+  "sources": [
+   {
+    "title": "Fraud solutions",
+    "publisher": "Quantexa",
+    "url": "https://www.quantexa.com/solutions/fraud/",
+    "accessed": "2026-11"
+   },
+   {
+    "title": "Lending fraud",
+    "publisher": "Quantexa",
+    "url": "https://www.quantexa.com/solutions/lending-fraud/",
+    "accessed": "2026-11"
+   }
+  ],
+  "capabilities": {
+   "fraud_transaction": {
+    "status": "partial",
+    "note": "payment fraud optimisation; scoring not described",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_ato": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "fraud_scam": {
+    "status": "yes",
+    "note": "scam victim detection",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_check": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "fraud_onboarding": {
+    "status": "yes",
+    "note": "lending application fraud before and after application",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "fraud_mule": {
+    "status": "yes",
+    "note": "scams and mule network detection",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "behavioral_biometrics": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "device_intelligence": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "graph_analytics": {
+    "status": "yes",
+    "note": "entity resolution and graph analytics",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_consortium": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "realtime_decisioning": {
+    "status": "partial",
+    "note": "near-real-time detection",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_rules": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "rule_testing": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "payment_interventions": {
+    "status": "partial",
+    "note": "blocking payments mentioned",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "explainability": {
+    "status": "yes",
+    "note": "explainable data linking and decision models",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "ai_investigation": {
+    "status": "yes",
+    "note": "Q Assist investigations copilot",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "regulatory_filing": {
+    "status": "partial",
+    "note": "report generation and filing; SAR not named",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "alert_prioritisation": {
+    "status": "yes",
+    "note": "risk prioritisation and alert triage",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "payee_verification": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "instant_payments": {
+    "status": "not_disclosed",
+    "note": "no rail named",
+    "checked": "2026-11-27"
+   },
+   "custom_models": {
+    "status": "yes",
+    "note": "build with own data",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "data_orchestration": {
+    "status": "yes",
+    "note": "ingestion of internal and external sources",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "named_fi_customers": {
+    "status": "not_disclosed",
+    "note": "not on the page checked",
+    "checked": "2026-11-27"
+   },
+   "fraud_pricing": {
+    "status": "quote",
+    "note": "quote only",
+    "checked": "2026-11-27"
+   }
+  }
+ },
+ "complyadvantage": {
+  "sources": [
+   {
+    "title": "Fraud Detection",
+    "publisher": "ComplyAdvantage",
+    "url": "https://complyadvantage.com/fraud-detection/",
+    "accessed": "2026-11"
+   }
+  ],
+  "capabilities": {
+   "fraud_transaction": {
+    "status": "yes",
+    "note": "50+ payment fraud scenarios",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_ato": {
+    "status": "yes",
+    "note": "account takeover listed",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_scam": {
+    "status": "yes",
+    "note": "APP fraud listed",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_check": {
+    "status": "yes",
+    "note": "check, mobile deposit and duplicate check scenarios",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_onboarding": {
+    "status": "yes",
+    "note": "synthetic identity scenario",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_mule": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "behavioral_biometrics": {
+    "status": "partial",
+    "note": "behavioural analytics; biometrics not described",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "device_intelligence": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "graph_analytics": {
+    "status": "yes",
+    "note": "graph network detection",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_consortium": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "realtime_decisioning": {
+    "status": "yes",
+    "note": "real-time API, 24x7 for instant payments",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_rules": {
+    "status": "yes",
+    "note": "no-code rule builder",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "rule_testing": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "payment_interventions": {
+    "status": "not_disclosed",
+    "note": "alerts and cases only",
+    "checked": "2026-11-27"
+   },
+   "explainability": {
+    "status": "yes",
+    "note": "reason shown for each alert",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "ai_investigation": {
+    "status": "partial",
+    "note": "AI-prioritised alerts; agentic resolution described elsewhere for AML",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "regulatory_filing": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "alert_prioritisation": {
+    "status": "yes",
+    "note": "alerts tagged high to lowest",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "payee_verification": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "instant_payments": {
+    "status": "yes",
+    "note": "FedNow, Faster Payments, RTP named",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "custom_models": {
+    "status": "partial",
+    "note": "custom rules and data formats",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "data_orchestration": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "named_fi_customers": {
+    "status": "not_disclosed",
+    "note": "not on the page checked",
+    "checked": "2026-11-27"
+   },
+   "fraud_pricing": {
+    "status": "quote",
+    "note": "fraud product priced by quote",
+    "checked": "2026-11-27"
+   }
+  }
+ },
+ "sumsub": {
+  "sources": [
+   {
+    "title": "Fraud prevention",
+    "publisher": "Sumsub",
+    "url": "https://sumsub.com/fraud-prevention/",
+    "accessed": "2026-11"
+   },
+   {
+    "title": "AML transaction monitoring",
+    "publisher": "Sumsub",
+    "url": "https://sumsub.com/aml-transaction-monitoring/",
+    "accessed": "2026-11"
+   }
+  ],
+  "capabilities": {
+   "fraud_transaction": {
+    "status": "yes",
+    "note": "payment fraud product",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_ato": {
+    "status": "yes",
+    "note": "account takeover prevention",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_scam": {
+    "status": "not_disclosed",
+    "note": "APP scams not described",
+    "checked": "2026-11-27"
+   },
+   "fraud_check": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "fraud_onboarding": {
+    "status": "yes",
+    "note": "fake and synthetic identities before KYC",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_mule": {
+    "status": "yes",
+    "note": "money muling prevention",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "behavioral_biometrics": {
+    "status": "partial",
+    "note": "behaviour monitoring; biometrics not described",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "device_intelligence": {
+    "status": "yes",
+    "note": "device intelligence product",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "graph_analytics": {
+    "status": "yes",
+    "note": "fraud network detection",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_consortium": {
+    "status": "not_disclosed",
+    "note": "own database only",
+    "checked": "2026-11-27"
+   },
+   "realtime_decisioning": {
+    "status": "yes",
+    "note": "real-time detection, block or hold",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_rules": {
+    "status": "yes",
+    "note": "custom rules with no coding",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "rule_testing": {
+    "status": "yes",
+    "note": "dry-run mode before live",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "payment_interventions": {
+    "status": "yes",
+    "note": "step-ups, block, hold or escalate",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "explainability": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "ai_investigation": {
+    "status": "partial",
+    "note": "AI automation in investigations; Summy copilot not described",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "regulatory_filing": {
+    "status": "yes",
+    "note": "FIU reports in goAML format",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "alert_prioritisation": {
+    "status": "partial",
+    "note": "not described as prioritisation",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "payee_verification": {
+    "status": "not_disclosed",
+    "note": "not described",
+    "checked": "2026-11-27"
+   },
+   "instant_payments": {
+    "status": "not_disclosed",
+    "note": "no rail named",
+    "checked": "2026-11-27"
+   },
+   "custom_models": {
+    "status": "yes",
+    "note": "custom rules on the customer's own data sources",
+    "source": "@2",
+    "checked": "2026-11-27"
+   },
+   "data_orchestration": {
+    "status": "partial",
+    "note": "external data implied; not described",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "named_fi_customers": {
+    "status": "yes",
+    "note": "iFAST Global Bank, Wirex",
+    "source": "@1",
+    "checked": "2026-11-27"
+   },
+   "fraud_pricing": {
+    "status": "model",
+    "note": "fraud modules priced in plans; figures for fraud not published",
+    "checked": "2026-11-27"
+   }
+  }
+ }
+}

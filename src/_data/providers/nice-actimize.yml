@@ -195,6 +195,120 @@ capabilities:
     source: 9
   data_residency:
     status: not_disclosed
+  fraud_transaction:
+    status: 'yes'
+    note: IFM card fraud and payments fraud
+    source: 27
+    checked: '2026-11-27'
+  fraud_ato:
+    status: 'yes'
+    note: ATO among covered typologies
+    source: 27
+    checked: '2026-11-27'
+  fraud_scam:
+    status: 'yes'
+    note: scams and mule defense
+    source: 26
+    checked: '2026-11-27'
+  fraud_check:
+    status: 'yes'
+    note: check and deposit fraud
+    source: 27
+    checked: '2026-11-27'
+  fraud_onboarding:
+    status: 'yes'
+    note: new account fraud
+    source: 26
+    checked: '2026-11-27'
+  fraud_mule:
+    status: 'yes'
+    note: mule detection
+    source: 26
+    checked: '2026-11-27'
+  behavioral_biometrics:
+    status: 'partial'
+    note: behavioural signals; biometrics not described
+    source: 28
+    checked: '2026-11-27'
+  device_intelligence:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  graph_analytics:
+    status: 'partial'
+    note: network-level intelligence; graph not named
+    source: 26
+    checked: '2026-11-27'
+  fraud_consortium:
+    status: 'yes'
+    note: collective intelligence, Actimize Insights Network
+    source: 26
+    checked: '2026-11-27'
+  realtime_decisioning:
+    status: 'yes'
+    note: real-time fraud prevention; no figure
+    source: 26
+    checked: '2026-11-27'
+  fraud_rules:
+    status: 'partial'
+    note: strategy and rule management; no-code not stated
+    source: 28
+    checked: '2026-11-27'
+  rule_testing:
+    status: 'yes'
+    note: strategies simulated before activation
+    source: 28
+    checked: '2026-11-27'
+  payment_interventions:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  explainability:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  ai_investigation:
+    status: 'yes'
+    note: generative AI in investigations
+    source: 28
+    checked: '2026-11-27'
+  regulatory_filing:
+    status: 'yes'
+    note: automated SAR filings
+    source: 28
+    checked: '2026-11-27'
+  alert_prioritisation:
+    status: 'partial'
+    note: alert triage
+    source: 28
+    checked: '2026-11-27'
+  payee_verification:
+    status: 'not_disclosed'
+    note: not described
+    checked: '2026-11-27'
+  instant_payments:
+    status: 'partial'
+    note: real-time payments, no rail named
+    source: 28
+    checked: '2026-11-27'
+  custom_models:
+    status: 'yes'
+    note: data from any source
+    source: 28
+    checked: '2026-11-27'
+  data_orchestration:
+    status: 'yes'
+    note: Actimize Marketplace partners
+    source: 28
+    checked: '2026-11-27'
+  named_fi_customers:
+    status: 'not_disclosed'
+    note: not on the pages checked
+    checked: '2026-11-27'
+  fraud_pricing:
+    status: quote
+    note: quote only
+    checked: '2026-11-27'
 integration:
   checked: '2026-11'
   docs_public:
@@ -375,6 +489,18 @@ sources:
 - title: Support and maintenance
   publisher: NICE Actimize
   url: https://niceactimize.com/services/support-maintenance
+  accessed: '2026-11'
+- title: Fraud management
+  publisher: NICE Actimize
+  url: https://www.niceactimize.com/fraud-management/
+  accessed: '2026-11'
+- title: Payments fraud
+  publisher: NICE Actimize
+  url: https://www.niceactimize.com/fraud-management/payment
+  accessed: '2026-11'
+- title: IFM brochure
+  publisher: NICE Actimize
+  url: https://resources.niceactimize.com/wp-content/uploads/2025/08/brochure-ifm-prevent-fraud-pervasive-ai.pdf
   accessed: '2026-11'
 entity:
   wikidata: null

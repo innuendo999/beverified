@@ -83,6 +83,20 @@ Plus `checked: '2026-10'`. `yes` = in the core product per the vendor's current 
 
 Certificate columns for category matrices (`liveness_pad`, `soc2`, `iso_27001`, `trust_framework`, `age_certification` = ACCS / ISO/IEC 27566-1, KJM, IEEE 2089.1) are not stored here: `src/categories.11tydata.js` reads them from the record's `certifications[]` (name match, best status wins; `confirmed` beats `vendor_stated`; a name containing "in progress" shows as In progress). Keep certification names standard (e.g. "ISO/IEC 30107-3 Level 2 (iBeta)", "SOC 2 Type II", "UK DIATF ...") so the match works.
 
+### Fraud keys in `capabilities{}` (Fraud 1.0, added 2026-11-27)
+
+Same shape as the other capabilities: `{status, note, source, checked}`; `status` is `yes`, `add_on`, `partial`, `no` or `not_disclosed`, and only `yes` and `add_on` earn points (`docs/scoring-fraud.md`). Written with `python3 scripts/set-capabilities.py scripts/fraud-data/<batch>.json`; scored by `scripts/rescore-fraud.mjs`.
+
+| Key | Meaning |
+|---|---|
+| fraud_transaction, fraud_ato, fraud_scam, fraud_check, fraud_onboarding, fraud_mule | fraud types the vendor's own site describes a product or model for |
+| behavioral_biometrics, device_intelligence, graph_analytics, fraud_consortium | signals |
+| realtime_decisioning, fraud_rules, rule_testing, payment_interventions, explainability | decisioning and control |
+| ai_investigation, regulatory_filing, alert_prioritisation | investigations (with the existing `case_management`) |
+| payee_verification, instant_payments, named_fi_customers | bank and fintech fit (with `transaction_monitoring`, `deployment`, `data_residency`) |
+| custom_models, data_orchestration | integration and openness |
+| fraud_pricing | `status`: `published_list`, `entry_plan`, `model` or `quote`, for the fraud product |
+
 ## Category `segments` (added 2026-10-23)
 
 `segments: [{segment, slug, reason}]` in `src/_data/categories/<slug>.yml` renders the "Best pick by use case" table (heading override: `segments_heading`). `reason` = one plain sentence built only from facts in that provider's record; the review link carries the sources.
