@@ -4,7 +4,7 @@ alternate_names: []
 status: published
 seo:
   title: 'iDenfy Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'iDenfy review: identity verification at $1.35 per check on the entry plan, with an approved-only billing option and in-house manual review. Features, pricing, pros & cons, alternatives.'
+  description: 'iDenfy review: identity verification from $1.35 per check, with in-house review and an option to pay only for approved checks. Pricing, pros and cons.'
   h1: 'iDenfy Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/idenfy.png
@@ -14,7 +14,6 @@ tagline: 'Published per-check pricing, with an option to pay only for verificati
 score: 3.7
 methodology: v3.1
 primary_category: identity-verification
-legacy_rank_claim: 'ranked #14 in Identity Verification'
 categories:
 - identity-verification
 - kyb
@@ -24,8 +23,9 @@ link:
   legacy_rel: nofollow sponsored
 last_verified: '2026-10-22'
 updated: '2026-11-27'   # last content edit; last_verified = last fact re-check
-verdict: 'iDenfy is an identity verification provider for cost-conscious fintech, crypto and gaming teams, with in-house reviewers who double-check verifications around the clock. It publishes $1.35 per verification on Basic with a $135 monthly minimum, and for $0.50 more per check you pay only for approved ones. AML screening, 24/7 review and 3D liveness cost extra.'
+verdict: 'iDenfy is an identity verification provider for cost-conscious fintech, crypto and gaming teams that want in-house reviewers to double-check automated results and an option to pay only for approved checks. It publishes $1.35 per verification on Basic with a $135 monthly minimum, and approved-only billing costs $0.50 more per check. iDenfy gives no level or date for its iBeta liveness test, and we did not find it on iBeta''s list.'
 what_is:
+- 'iDenfy checks a person from a government ID and a selfie: AI reads and checks the document and the face, and in-house reviewers double-check the result; round-the-clock review is a paid add-on. In our trial dashboard in November 2026 each verification showed the document next to the data read from it, with MRZ validation, the list of checks that ran and a final result such as "approved, suspected" when the AML check flagged the person. The same dashboard sells AML screening, KYB, proof of address and age estimation as separate products with their own free trials, and keeps blocklists by selfie, by the face on the document and by document data.'
 - iDenfy (UAB "iDenfy") is an identity-verification company founded in 2017 and based in Kaunas, Lithuania, with offices in the United Kingdom and the USA. CEO Domantas Ciulde leads a team of 50+. It serves fintech, crypto, gaming and marketplace businesses, combining AI-driven document and biometric checks with in-house experts who double-check verifications. It says it supports onboarding in 200+ countries and territories, extracts data from government-issued documents and is used by 1,000+ businesses.
 features:
 - AI document and biometric verification with liveness, double-checked by in-house reviewers (24/7 manual review is a paid add-on).
@@ -149,9 +149,9 @@ pros:
 - Published self-serve pricing ($1.35 per check on Basic) with a free trial
 - In-house manual review on top of automated checks, with 24/7 coverage as an add-on
 cons:
-- Smaller brand and scale than category leaders
-- Approved-only billing and many checks (AML, 24/7 review, 3D liveness) cost extra per verification
-- Primary focus and case studies skew toward the EU market
+- iDenfy says its liveness was tested under iBeta's ISO/IEC 30107-3 methodology but gives no level or date, and we did not find it on iBeta's list
+- 'Add-on prices (approved-only billing, 24/7 review) appear only in a ROI calculator that calls them estimates subject to change'
+- 'Two different ISO/IEC 27001 certificates are cited (CERT International on the website, TÜV Thüringen in the compliance docs), and we could not confirm which is current'
 alternatives:
 - slug: sumsub
   name: Sumsub
@@ -164,11 +164,14 @@ alternatives:
   best_for: Broadest Coverage
 choose_instead:
 - slug: sumsub
-  text: you want a larger-scale, published per-check pricing platform.
+  need: Lab-tested liveness at the same price
+  text: you want liveness confirmed by iBeta at Level 3 at the same $1.35 entry rate per verification.
 - slug: complycube
-  text: you want a comparably budget-friendly API-first alternative.
+  need: UK certified identity service
+  text: you need a certified UK DIATF identity service, with self-serve plans from $99 a month and published per-check prices.
 - slug: shufti-pro
-  text: you need broader country and language coverage than a smaller EU-focused vendor.
+  need: Widest coverage
+  text: you need coverage of 240+ countries and territories and liveness confirmed by iBeta at Level 3, with a free plan of 10 verifications a month.
 user_reviews:
   legacy_note: null
   praise:
@@ -177,10 +180,7 @@ user_reviews:
   criticize:
   - 'Rejections: some Trustpilot reviewers report repeated rejections or failed face matches without a clear reason.'
   - 'Support: a few reviews criticise slow back-and-forth with technical support.'
-  by_profile:
-  - Cost-conscious fintech, crypto, and gaming teams value the published per-check rate and approved-only option.
-  - EU-based businesses benefit from a Lithuania-based vendor with ISO 27001 certification.
-  - Larger enterprises sometimes prefer a bigger-brand vendor for procurement reasons.
+  by_profile: []
 faq:
 - q: How does iDenfy's pricing work?
   a: iDenfy's Basic plan costs $1.35 per verification with a $135 monthly minimum, and Premium costs $1.30 per verification with a $325 monthly minimum. Its ROI calculator lists approved-only billing at $0.50 more per check, so rejected verifications are not charged. Enterprise pricing is custom and, according to iDenfy, drops to $0.55 per verification at volume. A 14-day free trial includes 10 checks.
@@ -190,10 +190,10 @@ faq:
   a: Yes. iDenfy offers business verification (KYB) with access to 180+ company registries in 120 countries, plus UBO verification.
 - q: Where is iDenfy based?
   a: iDenfy (UAB "iDenfy") is based in Kaunas, Lithuania, with offices in the United Kingdom and the USA.
+- q: Is iDenfy's liveness certified?
+  a: iDenfy says its liveness was tested under iBeta's ISO/IEC 30107-3 methodology, but it publishes no level or date, and the test was not on the readable part of iBeta's confirmation-letter list when we checked. We treat it as a vendor claim.
 - q: What is the best alternative to iDenfy?
-  a: Sumsub is the best alternative for larger scale and published pricing. ComplyCube is the closest fit for a comparably budget-friendly API-first option.
-- q: Who are iDenfy's main competitors?
-  a: iDenfy competes with Sumsub, ComplyCube, and Shufti Pro, differentiating through its approved-only billing option and published per-check pricing.
+  a: It depends on what iDenfy does not give you. Sumsub has the same $1.35 entry rate with liveness confirmed by iBeta at Level 3. ComplyCube is a certified UK DIATF identity service with plans from $99 a month. Shufti Pro covers 240+ countries and territories, also has iBeta Level 3 liveness and offers a free plan of 10 verifications a month.
 segments: []
 capabilities:
   checked: '2026-10'
