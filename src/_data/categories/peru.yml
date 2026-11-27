@@ -7,7 +7,7 @@ seo:
 breadcrumb_label: Best KYC & AML Providers for Peru
 quick_answer: 'Sumsub ranks first in Peru, with published per-verification prices and coverage of 220+ countries and territories. Veriff is second, with passive liveness tested by iBeta to ISO/IEC 30107-3 Level 2, and KYCAID adds non-document DNI checks against government databases. We compared 4 providers on DNI checks, liveness tests, pricing and coverage.'
 last_verified: '2026-11-18'
-updated: '2026-11-18'
+updated: '2026-11-27'
 legacy_stats:
 - value: '4'
   label: providers compared
@@ -46,6 +46,10 @@ faq:
   a: 'The DNI (Documento Nacional de Identidad) is Peru''s national identity document. KYC providers read it from a photo, and some, such as KYCAID, also check the DNI number against government data, for €0.10 a check.'
 - q: What sanctions lists do Peruvian KYC providers screen against?
   a: Providers typically screen against both domestic watchlists and international lists such as OFAC and UN sanctions lists.
+- q: Which KYC providers check a Peruvian DNI number against government data?
+  a: 'In this ranking, KYCAID runs non-document DNI checks against government databases on its per-check price list. Sumsub offers non-document verification against government databases only on its custom, quoted plan, and Trulioo offers database checks for non-documentary identity proofing on quoted pricing. Veriff''s published plans cover document and liveness checks.'
+- q: Can I test a KYC provider for Peru before signing a contract?
+  a: 'Yes, with three of the four. Sumsub has a 14-day free trial with 50 checks, Veriff a 15-day free trial of up to 50 sessions, and KYCAID gives new accounts €50 of credit on registration. Trulioo quotes on request.'
 adjacent:
 - brazil
 - mexico
