@@ -144,6 +144,26 @@ pricing:
     kind: official
     source: 2
     verified: '2026-11'
+  - label: AML screening, in our console
+    value: $0.27 per screening (list price shown in the workflow editor, 27 Nov 2026; the pricing page lists $0.20)
+    kind: official
+    source: 24
+    verified: '2026-11'
+  - label: KYC and AML workflow, in our console
+    value: $0.65 per completed session at list price (ID verification $0.15, liveness $0.15, face match $0.05, AML screening $0.27, device and IP $0.03), seen 27 Nov 2026
+    kind: official
+    source: 24
+    verified: '2026-11'
+  - label: Enterprise, in our console
+    value: From $15,000 a year, 15% to 40% off every list price, seen 27 Nov 2026
+    kind: official
+    source: 24
+    verified: '2026-11'
+  - label: Sandbox, in our console
+    value: Free and unlimited; test usage never appears on invoices, seen 27 Nov 2026
+    kind: official
+    source: 24
+    verified: '2026-11'
 facts:
 - label: From
   value: $0.33 per full KYC check (list price)
@@ -180,6 +200,18 @@ facts:
 - label: Data location
   value: EU (AWS) by default; other regions and in-country residency on Enterprise contracts
   source: 3
+  evidence: vendor
+- label: Sandbox testing
+  value: Hosted test sessions where you pick the result (approved, in review or declined) and the check that causes it, sample passports, ID cards and driving licences, and replayable scenarios such as an AML hit on a politically exposed person; seen 27 Nov 2026
+  source: 24
+  evidence: vendor
+- label: AML settings
+  value: Risk score thresholds for approve, review and decline, a match score threshold (93 by default), adjustable weights for name, date of birth and country, and ongoing monitoring at $0.07 per user per year; seen 27 Nov 2026
+  source: 24
+  evidence: vendor
+- label: Case handling
+  value: Review queue with statuses, assignees, SLA timers, an activity log and keyboard shortcuts for approve, decline and resubmit, for both identity sessions and monitored transactions; seen 27 Nov 2026
+  source: 24
   evidence: vendor
 pros:
 - Public price list for every module, a free plan with monthly credit and no minimum or contract
@@ -551,6 +583,10 @@ sources:
   publisher: Didit
   url: https://docs.didit.me/core-technology/id-verification/digital-id-wallets.md
   accessed: '2026-11'
+- title: Didit Business Console, sandbox (BeVerified account, signed in)
+  publisher: Didit
+  url: https://business.didit.me/
+  accessed: '2026-11-27'
 entity:
   wikidata: null
   kg_mid: null
@@ -571,6 +607,93 @@ verification_notes:
 - 'docs.didit.me opened 17 Nov 2026: SDKs for web, iOS and Android, sandbox mentioned. No case management feature, adverse media or video ident documented on the docs home page; left not_disclosed.'
 - 'No breach, enforcement action or lawsuit involving Didit found in searches on 17 Nov 2026.'
 - 'Certification re-check 2026-11-20: the Level 2 letter (9 Nov 2026) is now listed on iBeta''s own page under Didit Identity; the entry cites the ibeta.com copy instead of the copy on Didit''s storage.'
+- 'Sandbox pass 27 Nov 2026 (own account, signed in by the owner): the workflow editor lists AML screening at $0.27 per screening, while the public pricing page read on 17 Nov 2026 lists $0.20. Recorded as a separate console item; budget, verdict and scores still use the pricing page until it is re-read. Liveness shows $0.15 in the editor without saying passive or active. Billing shows Enterprise from $15,000 a year with 15% to 40% off list prices. Our test session paired Brazil passport data with Didit''s Argentine sample passport image; treated as simulated data. No standalone AML search by name in the console (API only, as far as we saw), so no name search was recorded.'
+clips:
+- file: /assets/video/didit/sandbox-test.mp4
+  poster: /assets/img/screens/didit/sandbox-test-poster.webp
+  width: 1280
+  height: 616
+  seconds: 25
+  caption: A sandbox test, from the hosted flow to the declined session
+  alt: Screen recording of a Didit sandbox test, choosing a declined result and an MRZ cause, adding a sample passport, then replaying the session with an AML hit on a politically exposed person and opening the declined session in the console
+  long: We opened the hosted flow in the sandbox, chose a declined result, picked Didit's sample passport and stopped at the selfie step, because we do not film faces. We then replayed the session with Didit's "AML, politically exposed person" scenario. Sandbox results are simulated, so the clip shows the steps and the console, not how accurate the checks are.
+screenshots:
+- file: /assets/img/screens/didit/01-test-result.webp
+  width: 1440
+  height: 694
+  caption: Choosing a test result
+  alt: Didit hosted verification flow in sandbox asking to choose a test result, approved, in review or declined
+  long: In the sandbox you pick the outcome before the flow starts, then the check that causes it.
+- file: /assets/img/screens/didit/02-sample-document.webp
+  width: 1440
+  height: 638
+  caption: Sample documents
+  alt: Didit sandbox flow offering upload from a phone, a file or a webcam, plus sample passport, national ID card and driving licence images
+  long: Sample documents let you test without a real ID.
+- file: /assets/img/screens/didit/03-sandbox-scenarios.webp
+  width: 1440
+  height: 675
+  caption: Sandbox scenarios
+  alt: Didit Run sandbox scenario dialog listing curated outcomes such as happy path, non-document lookup results and wallet sign-in failures
+  long: Replay a session with a set outcome to test warnings, statuses and webhooks. Nothing is charged.
+- file: /assets/img/screens/didit/04-verifications.webp
+  width: 1440
+  height: 675
+  caption: User verifications
+  alt: Didit user verifications list in sandbox with example sessions, statuses and risk warnings such as a possible AML match and an IP address on a blocklist
+  long: Our test session sits at the top; the others are Didit's example sessions.
+- file: /assets/img/screens/didit/05-session.webp
+  width: 1440
+  height: 675
+  caption: Session overview
+  alt: Didit session page for a declined sandbox session with the warning MRZ is not valid, the workflow, risk level and the cost of the session
+  long: Why the session was declined, what it cost and who should act on it.
+- file: /assets/img/screens/didit/06-workflows.webp
+  width: 1440
+  height: 675
+  caption: Workflows
+  alt: Didit workflows list with templates for KYC plus AML, account opening, online gaming and company onboarding
+  long: Templates and your own workflows, each with its steps, countries and status.
+- file: /assets/img/screens/didit/07-workflow-editor.webp
+  width: 1440
+  height: 675
+  caption: Workflow editor with prices
+  alt: Didit workflow editor for a KYC plus AML flow showing each step with its list price, a phone preview and a total of $0.65 per completed session
+  long: Each step shows its list price, and the editor adds them up per completed session.
+- file: /assets/img/screens/didit/08-aml-step.webp
+  width: 1440
+  height: 675
+  caption: AML screening rules
+  alt: Didit AML screening step settings with risk score thresholds for approved, in review and declined, and a price of $0.27 per screening
+  long: Thresholds decide which hits pass, go to review or decline the session.
+- file: /assets/img/screens/didit/09-aml-monitoring.webp
+  width: 1440
+  height: 675
+  caption: Monitoring and match weights
+  alt: Didit AML screening advanced settings with ongoing monitoring at $0.07 a year and match score weights for name similarity, date of birth and country
+  long: Ongoing monitoring is a switch on the step, priced per user per year.
+- file: /assets/img/screens/didit/10-plans.webp
+  width: 1440
+  height: 675
+  caption: Plans
+  alt: Didit billing page with Free, Growth at $99 a month, Scale at $299 a month and Enterprise from $15,000 a year
+  long: One plan covers identity, authentication and transaction monitoring.
+- file: /assets/img/screens/didit/11-transactions.webp
+  width: 1440
+  height: 675
+  caption: Transaction monitoring
+  alt: Didit transactions list in sandbox with example crypto and card transactions, rule hits, risk scores and review statuses
+  long: Transactions and Travel Rule sit in the same console; these are Didit's example records.
+screenshots_meta:
+  origin: beverified
+  provided: '2026-11-27'
+  environment: Didit's sandbox
+  sample_data: true
+  note: "The sandbox comes with example sessions and transactions and returns simulated results, so these screens show how the product works, not how accurate it is."
+  permission: own account in the sandbox; Didit not asked yet (owner to decide)
+changes:
+- date: '2026-11-27'
+  text: Screenshots and a short screen recording from our own sandbox account added, with the sandbox testing, AML settings and console prices seen there.
 application_category: Identity Verification Software
 author: andrii-klymenko
 directory_categories:
