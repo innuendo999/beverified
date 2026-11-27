@@ -28,6 +28,12 @@ for (const s of slugs) {
   const ref = (where, v) => { if (v != null && (!Number.isInteger(v) || v < 1 || v > n)) err(s, `${where}.source ${v} is not a valid source number (1..${n})`); };
   (d.facts || []).forEach((f, i) => { ref(`facts[${i}]`, f.source); if (f.evidence && !["vendor", "independent", "user", "hands_on"].includes(f.evidence)) err(s, `facts[${i}].evidence invalid`); });
   (d.certifications || []).forEach((c, i) => { ref(`certifications[${i}]`, c.source); if (!["confirmed", "vendor_stated", "not_found"].includes(c.status)) err(s, `certifications[${i}].status invalid`); if (c.status === "confirmed" && !c.source) err(s, `certifications[${i}] confirmed without source`); if (!["ibeta_pad", "pad_other", "uk_dvs", "fido_face", "fido_docauth", "rivr", "accs", "iso27001", "soc2", "other"].includes(c.program)) err(s, `certifications[${i}].program missing or invalid`); });
+  (d.product_history || []).forEach((e, i) => {
+    if (!/^\d{4}-\d{2}(-\d{2})?$/.test(String(e.date || ""))) err(s, `product_history[${i}].date must be YYYY-MM or YYYY-MM-DD`);
+    if (!e.text) err(s, `product_history[${i}] has no text`);
+    if (e.source == null) err(s, `product_history[${i}] has no source`); else ref(`product_history[${i}]`, e.source);
+    if (i && String(e.date) > String(d.product_history[i - 1].date)) err(s, `product_history[${i}] is out of order (newest first)`);
+  });
   (d.pricing?.items || []).forEach((x, i) => { ref(`pricing.items[${i}]`, x.source); if (!["official", "third_party"].includes(x.kind)) err(s, `pricing.items[${i}].kind invalid`); });
   if ((d.pros || []).length !== 3 || (d.cons || []).length !== 3) err(s, `pros/cons must be 3 and 3 (${(d.pros || []).length}/${(d.cons || []).length})`);
   for (const [p, v] of walk(d, "", [])) {

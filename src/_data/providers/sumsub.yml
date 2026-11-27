@@ -37,7 +37,7 @@ features:
 - Transaction monitoring for AML compliance, in the custom plan.
 - Fraud-prevention tooling layered on top of the core verification flow, in the custom plan.
 pricing:
-  summary: 'Sumsub publishes its pricing. Basic is $1.35 per verification with a $149 monthly minimum, aimed at non-regulated businesses, and covers ID verification, liveness and face match, reusable KYC, email and phone checks and Travel Rule. Compliance is $1.85 per verification with a $299 monthly minimum and adds AML screening, ongoing AML monitoring and address verification. A custom plan, quoted on request, adds non-document verification, business verification, transaction monitoring and fraud prevention. A 14-day free trial includes 50 free checks.'
+  summary: 'Sumsub publishes its pricing. Basic is $1.35 per verification with a $149 monthly minimum, aimed at non-regulated businesses, and covers ID verification, liveness and face match, reusable KYC, email and phone checks and Travel Rule. Compliance is $1.85 per verification with a $299 monthly minimum and adds AML screening and ongoing AML monitoring; address verification costs $1.35 more per check. Enterprise starts from $12,000 a year and adds non-document verification, business verification, transaction monitoring and fraud prevention. A 14-day free trial includes 50 free checks once Sumsub has verified your company.'
   plans:
   - tier: Basic
     price: $1.35 / verification
@@ -45,12 +45,12 @@ pricing:
     extra: 14-day free trial with 50 checks
   - tier: Compliance
     price: $1.85 / verification
-    note: '$299/mo minimum: adds AML screening, ongoing monitoring and address verification'
+    note: '$299/mo minimum: adds AML screening and ongoing monitoring; address verification +$1.35 per check'
     extra: 14-day free trial with 50 checks
-  - tier: Custom plan
-    price: Custom
+  - tier: Enterprise
+    price: From $12,000 / year
     note: Adds non-doc checks, business verification, transaction monitoring, fraud prevention
-    extra: Contact sales for a quote
+    extra: Per-check prices quoted
   legacy_verified_note: null
   verified: '2026-11'
   model:
@@ -66,7 +66,7 @@ pricing:
     minimum:
     - 'Basic, monthly minimum'
     - 'Compliance, monthly minimum'
-    included: 'Basic covers ID verification, liveness and face match; Compliance adds AML screening, ongoing monitoring and address checks'
+    included: 'Basic covers ID verification, liveness and face match; Compliance adds AML screening and ongoing monitoring; address checks cost extra'
   items:
   - label: Basic, per verification
     value: $1.35 / verification
@@ -97,6 +97,21 @@ pricing:
     value: 14 days, 50 free checks
     kind: official
     source: 1
+    verified: '2026-11'
+  - label: Compliance, address verification
+    value: +$1.35 / verification
+    kind: official
+    source: 47
+    verified: '2026-11'
+  - label: Enterprise
+    value: From $12,000 / year
+    kind: official
+    source: 47
+    verified: '2026-11'
+  - label: Trial condition
+    value: Starts after Sumsub verifies your company
+    kind: official
+    source: 47
     verified: '2026-11'
 facts:
 - label: From
@@ -138,7 +153,7 @@ pros:
 cons:
 - Minimum monthly commitments ($149 and $299) can be steep for very small teams
 - KYB, non-document checks and transaction monitoring are only in the custom, quote-based plan
-- In February 2026 Sumsub disclosed that an attacker had access to a support system from July 2024 until January 2026, which may have exposed names, emails or phone numbers from some customer accounts
+- Support hours are not published
 alternatives:
 - slug: jumio
   name: Jumio
@@ -189,7 +204,7 @@ user_reviews:
   - Very small teams sometimes find monthly minimums high relative to their verification volume.
 faq:
 - q: How much does Sumsub cost?
-  a: Sumsub's Basic plan is $1.35 per verification with a $149 monthly minimum. Compliance is $1.85 per verification with a $299 monthly minimum and adds AML screening, ongoing monitoring and address checks. A custom plan with KYB, non-document checks and transaction monitoring is quoted on request. A 14-day free trial includes 50 checks.
+  a: Sumsub's Basic plan is $1.35 per verification with a $149 monthly minimum. Compliance is $1.85 per verification with a $299 monthly minimum and adds AML screening and ongoing monitoring; address checks cost $1.35 more. Enterprise, with KYB, non-document checks and transaction monitoring, starts from $12,000 a year. A 14-day free trial with 50 checks starts once Sumsub has verified your company.
 - q: Does Sumsub support KYB?
   a: Yes. Sumsub offers business verification, including UBO checks, in its custom plan alongside its individual identity-verification tools.
 - q: Is Sumsub good for crypto businesses?
@@ -580,6 +595,50 @@ score_breakdown:
   note: "ISO 27001 or SOC 2 vendor-stated, trust framework confirmed, data residency or on-premises, operating since 2015, incident 2026-02-04"
   evidence: vendor
 hands_on: null
+screenshots:   # captured by BeVerified in its own Sumsub sandbox, 27 Nov 2026; sample applicants, document images blurred
+- file: /assets/img/screens/sumsub/applicant-forgery.webp
+  width: 1440
+  height: 675
+  caption: 'Rejected for forgery'
+  alt: 'Sumsub dashboard applicant page with a final rejection: identity document marked Forgery, reason text and API rejection codes; document images blurred by BeVerified.'
+  long: 'A sample applicant rejected with the reason shown to the reviewer ("Signs of edited data were found on the document") and the API codes fake_editedId and fraudulentPatterns_fake.'
+- file: /assets/img/screens/sumsub/applicant-rejected.webp
+  width: 1440
+  height: 620
+  caption: 'Asked to resubmit'
+  alt: 'Sumsub dashboard applicant page with a resubmission request for an unsupported ID card type and an approved selfie step; document images blurred by BeVerified.'
+  long: 'A sample applicant asked to retake the ID step because the document type is not supported (API code badDocument_wrongType); the selfie step passed.'
+- file: /assets/img/screens/sumsub/level-builder.webp
+  width: 1440
+  height: 620
+  caption: 'Verification level builder'
+  alt: 'Sumsub level builder showing the id-and-liveness level with an identity document step (ID card, passport, residence permit, driver’s license) and a selfie step with advanced liveness.'
+  long: 'The id-and-liveness level: accepted documents, the selfie step and SDK branding, edited without code. Run level opens the flow for a test.'
+- file: /assets/img/screens/sumsub/applicants-list.webp
+  width: 1440
+  height: 675
+  caption: 'Applicants queue'
+  alt: 'Sumsub applicants list with approved, rejected (Forgery) and pending sample applicants and filter buttons.'
+  long: 'Status, rejection label, level and timing for each applicant, with filters by document, country and status.'
+- file: /assets/img/screens/sumsub/dashboard-trial-gate.webp
+  width: 1440
+  height: 675
+  caption: 'Trial needs company verification'
+  alt: 'Sumsub dashboard banner: verify your company to start the 14-day free trial with 50 verifications.'
+  long: 'The 14-day trial with 50 checks starts only after Sumsub verifies your company.'
+- file: /assets/img/screens/sumsub/transaction-monitoring-enterprise.webp
+  width: 1440
+  height: 620
+  caption: 'Transaction monitoring is Enterprise-only'
+  alt: 'Sumsub Transactions page offering transaction monitoring for fiat and crypto, labelled Enterprise-only, with an Upgrade to enterprise button.'
+  long: 'The Transactions section in a self-serve account is an upgrade page marked Enterprise-only.'
+screenshots_meta:
+  origin: beverified
+  provided: '2026-11-27'
+  environment: Sumsub's sandbox
+  sample_data: true
+  note: 'The applicants are the samples Sumsub preloads in every sandbox, so these screens show how the product works, not how accurate it is. We ran no live checks.'
+  permission: own sandbox account; Sumsub not asked yet (owner to decide)
 sources:
 - title: Pricing
   publisher: Sumsub
@@ -764,6 +823,10 @@ sources:
 - title: Third-party processors and affiliates (updated 2 Nov 2026)
   publisher: Sumsub
   url: https://docs.sumsub.com/docs/third-party-processors-and-affiliates
+  accessed: '2026-11-27'
+- title: Sumsub dashboard, Billing and Solutions pages (BeVerified sandbox account, signed in)
+  publisher: Sumsub
+  url: https://cockpit.sumsub.com/checkus/pricing
   accessed: '2026-11-27'
 entity:
   wikidata: null

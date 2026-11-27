@@ -320,6 +320,13 @@ score_breakdown:
   note: "ISO 27001 or SOC 2 vendor-stated, data residency or on-premises, operating since 2015"
   evidence: vendor
 hands_on: null
+product_history:   # dated company and product events, newest first; each from sources[]
+- date: '2025-02'
+  text: 'Marlin Equity Partners announced a majority growth investment in Napier AI.'
+  source: 4
+- date: '2025-01-31'
+  text: 'Companies House lists Lapis Bidco Limited as holding 75% or more of the shares of Napier Technologies Limited from this date.'
+  source: 9
 sources:
 - title: Napier AI homepage
   publisher: Napier AI

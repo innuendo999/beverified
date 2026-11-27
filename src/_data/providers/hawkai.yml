@@ -326,6 +326,10 @@ score_breakdown:
   note: "ISO 27001 or SOC 2 confirmed, operating since 2018"
   evidence: independent
 hands_on: null
+product_history:   # dated company and product events, newest first; each from sources[]
+- date: '2025-04'
+  text: 'Raised a $56 million Series C led by One Peak, at a time when it served more than 80 clients.'
+  source: 4
 sources:
 - title: About Hawk
   publisher: Hawk

@@ -235,6 +235,19 @@ score_breakdown:
   evidence: independent
   note: Founded in 2020, Notabene raised a Series A in 2021 and a $14.5 million Series B in November 2024, both reported by trade press, and Ripple invested in July 2026. Fireblocks and Ripple Custody integrate it. We found no regulatory actions, breach disclosures or litigation.
 hands_on: null
+product_history:   # dated company and product events, newest first; each from sources[]
+- date: '2026-07-23'
+  text: 'Announced a strategic investment from Ripple; the amount was not disclosed.'
+  source: 23
+- date: '2024-11-12'
+  text: 'Raised a $14.5 million Series B led by DRW VC.'
+  source: 25
+- date: '2022-01-10'
+  text: 'Announced SOC 2 certification (vendor announcement).'
+  source: 22
+- date: '2021-11-08'
+  text: 'Raised a $10.2 million Series A.'
+  source: 26
 sources:
 - title: Notabene homepage
   publisher: Notabene
