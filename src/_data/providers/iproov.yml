@@ -23,8 +23,8 @@ link:
   url: https://www.iproov.com
   type: none
 last_verified: '2026-11-24'
-updated: '2026-11-24'   # last content edit; last_verified = last fact re-check
-verdict: 'iProov suits banks, governments and large platforms that need strong face verification and liveness inside an identity flow they already run. Its Dynamic Liveness holds a FIDO Face Verification certificate, iBeta Level 2 letters from 2020 and, per iProov, an injection attack test at CEN/TS 18099 High, and its iProov ID service is on the UK DVS register. It does not sell a full KYC platform with document checks and AML screening, and prices are quoted.'
+updated: '2026-11-27'   # last content edit; last_verified = last fact re-check
+verdict: 'iProov is a liveness provider for banks, governments and large platforms that need strong face verification inside an identity flow they already run; its Dynamic Liveness holds a FIDO certificate and iProov ID is on the UK DVS register. Prices are quoted. It sells no document checks or AML screening, and its iBeta letters date from 2020.'
 what_is:
 - iProov is a London biometrics company founded in 2011 by its CEO, Andrew Bud, and is privately owned. In January 2022 it raised $70 million from Sumeru Partners. Its about page names UBS, ING, Rabobank, the UK NHS login and government programmes in Singapore and Australia among its users.
 - iProov sells face verification for remote onboarding, authentication, account recovery and workforce access. Dynamic Liveness checks a user against the photo on their ID or an earlier enrolment, using a sequence of screen colours to show the face is real and present; Express Liveness is a passive version. iProov runs its own Security Operations Center (iSOC) that monitors attacks and updates its defences.

@@ -23,8 +23,8 @@ link:
   url: https://www.facetec.com
   type: none
 last_verified: '2026-11-25'
-updated: '2026-11-25'   # last content edit; last_verified = last fact re-check
-verdict: 'FaceTec suits teams that want strong liveness and face matching and are able to run the software themselves. Its 3D Liveness has iBeta Level 1 and 2 letters, a BixeLab PAD Level 3 letter, and BixeLab and Ingenium letters from late 2025 report no successful injection attacks, the Ingenium one at a level it calls equivalent to CEN/TS 18099 High. Everything runs on your servers, so no user data goes to FaceTec. The trade-offs: no published prices and a monthly minimum, no ISO 27001 or SOC 2 claim, and you host, scale and update the servers yourself.'
+updated: '2026-11-27'   # last content edit; last_verified = last fact re-check
+verdict: 'FaceTec is a liveness and face matching provider for teams that can host it themselves, so no user data goes to FaceTec; its 3D Liveness holds iBeta and BixeLab lab letters. Prices are not published, and there is a monthly minimum. You host, scale and update the servers yourself, and it makes no ISO/IEC 27001 or SOC 2 claim.'
 what_is:
 - FaceTec, Inc. is a US biometrics software company. Its press releases are datelined Summerlin, Nevada, and a third-party software listing gives 2013 as its founding year. FaceTec says its software runs over 3.7 billion 3D Liveness checks a year.
 - FaceTec sells 3D Liveness, 3D face matching, Photo ID Match with OCR, barcode and NFC scanning, and age checks as device SDKs plus a Server SDK. The customer runs the Server SDK on its own servers or cloud, so FaceTec does not receive end-user biometric data or personal data. FaceTec also runs a $600,000 Spoof Bounty Program.
