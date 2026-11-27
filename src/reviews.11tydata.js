@@ -158,7 +158,13 @@ export default {
         legal: String(p.what_is?.[0] || "").match(/legal name ([^)]+)\)/)?.[1] || null,
         src: sourceLinks(p),
         priceSrc: p.pricing?.model?.source || (p.pricing?.items || []).find((i) => i.source)?.source || null,
-        shots: (p.screenshots || []).map((s, i) => ({ ...s, i })),
+        // In use viewer (owner, 2026-11-27): clips first, then screenshots, in page order; m = position in the viewer.
+        clips: (p.clips || []).map((c, i) => ({ ...c, m: i })),
+        shots: (p.screenshots || []).map((s, i) => ({ ...s, i, m: (p.clips || []).length + i })),
+        media: [
+          ...(p.clips || []).map((c) => ({ type: "video", src: c.file, poster: c.poster || null, w: c.width, h: c.height, alt: c.alt || "", caption: c.caption || "", long: c.long || "", seconds: c.seconds || null })),
+          ...(p.screenshots || []).map((s) => ({ type: "image", src: s.file, w: s.width, h: s.height, alt: s.alt || "", caption: s.caption || "", long: s.long || "" })),
+        ],
         tr,
         nav: [
           ["fit", "Who it’s for", true],

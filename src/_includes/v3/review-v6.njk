@@ -205,18 +205,42 @@
     {%- if p.video and p.video.youtube %}
     <div class="rv6-video"><a href="https://www.youtube.com/watch?v={{ p.video.youtube }}" target="_blank" rel="noopener"><span class="rv6-video__play" aria-hidden="true">▶</span><span>{{ p.video.title or ("Watch the " + p.name + " walkthrough") }}</span></a></div>
     {%- endif %}
-    {%- if p.clips and p.clips.length %}
+    {%- if v.clips.length %}
     <div class="rv6-clips">
-      {%- for c in p.clips %}
-      <figure><video controls muted playsinline preload="none" width="{{ c.width }}" height="{{ c.height }}"{% if c.poster %} poster="{{ c.poster }}"{% endif %} aria-label="{{ c.alt }}"><source src="{{ c.file }}" type="video/mp4"></video><figcaption><b>{{ c.caption }}</b>{% if c.seconds %} <span class="c-muted">· {{ c.seconds }} s, no sound.</span>{% endif %}{% if c.long %} {{ c.long }}{% endif %}</figcaption></figure>
+      {%- for c in v.clips %}
+      <figure><a class="rv6-tile rv6-tile--video" href="{{ c.file }}" data-media="{{ c.m }}" aria-label="Play video: {{ c.caption }}">{% if c.poster %}<img src="{{ c.poster }}" width="{{ c.width }}" height="{{ c.height }}" loading="lazy" alt="">{% else %}<span class="rv6-tile__blank" style="aspect-ratio: {{ c.width }} / {{ c.height }}"></span>{% endif %}<span class="rv6-tile__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg></span>{% if c.seconds %}{% set ss = c.seconds % 60 %}<span class="rv6-tile__time num">{{ (c.seconds / 60) | int }}:{{ "0" if ss < 10 }}{{ ss }}</span>{% endif %}</a><figcaption><b>{{ c.caption }}</b>{% if c.seconds %} <span class="c-muted">· {{ c.seconds }} s, no sound.</span>{% endif %}{% if c.long %} {{ c.long }}{% endif %}</figcaption></figure>
       {%- endfor %}
     </div>
     {%- endif %}
     <div class="rv6-shots">
       {%- for s in v.shots %}
-      <figure id="shot-{{ s.i }}"><a href="{{ s.file }}" target="_blank" rel="noopener"><img src="{{ s.file }}" width="{{ s.width }}" height="{{ s.height }}" loading="lazy" alt="{{ s.alt }}"></a><figcaption><b>{{ s.caption }}</b>{% if s.long %} {{ s.long }}{% endif %}</figcaption></figure>
+      <figure id="shot-{{ s.i }}"><a class="rv6-tile" href="{{ s.file }}" data-media="{{ s.m }}" aria-label="Open screenshot: {{ s.caption }}"><img src="{{ s.file }}" width="{{ s.width }}" height="{{ s.height }}" loading="lazy" alt="{{ s.alt }}"></a><figcaption><b>{{ s.caption }}</b>{% if s.long %} {{ s.long }}{% endif %}</figcaption></figure>
       {%- endfor %}
     </div>
+    {%- if v.media.length %}
+    {#- Viewer for screenshots and clips (owner, 2026-11-27): opens on this page, arrows, swipe and thumbnails move between items.
+        Without JS or <dialog> the tiles stay plain links to the files. -#}
+    <dialog class="mv" id="rv6-viewer" aria-label="{{ p.name }} screenshots and videos">
+      <div class="mv__top">
+        <span class="mv__count num" data-mv-count></span>
+        <button type="button" class="mv__close" data-mv-close aria-label="Close viewer"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+      </div>
+      <div class="mv__stage" data-mv-stage>
+        <button type="button" class="mv__nav mv__nav--prev" data-mv-step="-1" aria-label="Previous"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="mv__media" data-mv-media></div>
+        <button type="button" class="mv__nav mv__nav--next" data-mv-step="1" aria-label="Next"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div>
+      <p class="mv__cap" data-mv-cap aria-live="polite"></p>
+      {%- if v.media.length > 1 %}
+      <div class="mv__thumbs" role="group" aria-label="All items">
+        {%- for x in v.media %}
+        <button type="button" class="mv__thumb{% if x.type == 'video' %} mv__thumb--video{% endif %}" data-mv-go="{{ loop.index0 }}" aria-label="{{ 'Video' if x.type == 'video' else 'Screenshot' }} {{ loop.index }}: {{ x.caption }}">{% if x.type == "video" and not x.poster %}<span class="mv__thumb-blank"></span>{% else %}<img src="{{ x.poster if x.type == 'video' else x.src }}" alt="" loading="lazy">{% endif %}</button>
+        {%- endfor %}
+      </div>
+      {%- endif %}
+    </dialog>
+    <script type="application/json" id="rv6-media">{{ v.media | dump | replace("<", "\\u003c") | safe }}</script>
+    {%- endif %}
   </section>
   {%- endif %}
 
@@ -244,7 +268,7 @@
       {%- for j in v.tr.jobs %}
       <details class="rv6-job" data-fold-open open>
         <summary><h3 class="rv6-job__t">{{ j.title }}</h3></summary>
-        <p class="rv6-job__text">{{ j.text }}{% for s in j.shots %} <a href="#shot-{{ s.i }}">{{ s.label }}</a>{% if not loop.last %} ·{% endif %}{% endfor %}</p>
+        <p class="rv6-job__text">{{ j.text }}{% for s in j.shots %} <a href="#shot-{{ s.i }}" data-media="{{ v.clips.length + s.i }}">{{ s.label }}</a>{% if not loop.last %} ·{% endif %}{% endfor %}</p>
       </details>
       {%- endfor %}
     </div>
@@ -359,4 +383,76 @@
   });
 })();
 </script>
+{%- if v.media.length %}
+<script>
+/* In use viewer (owner, 2026-11-27): screenshots and clips open on this page in one <dialog>.
+   Arrows, keys, swipe and thumbnails move between items; Esc or the backdrop closes it; a playing clip stops when you move on. */
+(function () {
+  var box = document.getElementById("rv6-viewer"), data = document.getElementById("rv6-media");
+  if (!box || !data || typeof box.showModal !== "function") return;
+  var items = JSON.parse(data.textContent), n = items.length, cur = 0, opener = null;
+  var stage = box.querySelector("[data-mv-media]"), cap = box.querySelector("[data-mv-cap]"), count = box.querySelector("[data-mv-count]");
+  var thumbs = box.querySelectorAll("[data-mv-go]"), navs = box.querySelectorAll("[data-mv-step]");
+  navs.forEach(function (b) { b.hidden = n < 2; });
+  function el(tag, attrs) { var e = document.createElement(tag); for (var k in attrs) if (attrs[k] != null) e.setAttribute(k, attrs[k]); return e; }
+  function show(i) {
+    cur = (i + n) % n;
+    var x = items[cur], m;
+    stage.querySelectorAll("video").forEach(function (v) { v.pause(); });
+    stage.textContent = "";
+    if (x.type === "video") {
+      m = el("video", { src: x.src, poster: x.poster, width: x.w, height: x.h, controls: "", muted: "", playsinline: "", autoplay: "", preload: "auto", "aria-label": x.alt });
+      m.muted = true;
+    } else {
+      m = el("img", { src: x.src, width: x.w, height: x.h, alt: x.alt });
+    }
+    stage.appendChild(m);
+    cap.textContent = "";
+    var b = document.createElement("b"); b.textContent = x.caption; cap.appendChild(b);
+    if (x.long) cap.appendChild(document.createTextNode(" " + x.long));
+    count.textContent = (cur + 1) + " / " + n;
+    thumbs.forEach(function (t) {
+      var on = Number(t.getAttribute("data-mv-go")) === cur;
+      t.setAttribute("aria-current", on ? "true" : "false");
+      if (on && t.scrollIntoView) t.scrollIntoView({ block: "nearest", inline: "nearest" });
+    });
+    [cur + 1, cur - 1].forEach(function (j) { var y = items[(j + n) % n]; if (y.type === "image") { var pre = new Image(); pre.src = y.src; } });
+  }
+  function open(i, from) { opener = from || null; show(i); if (!box.open) box.showModal(); }
+  document.querySelectorAll("[data-media]").forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
+      e.preventDefault();
+      open(Number(a.getAttribute("data-media")), a);
+    });
+  });
+  box.addEventListener("click", function (e) {
+    var t = e.target.closest ? e.target.closest("button") : null;
+    if (e.target === box) { box.close(); return; }
+    if (!t) return;
+    if (t.hasAttribute("data-mv-close")) box.close();
+    else if (t.hasAttribute("data-mv-step")) show(cur + Number(t.getAttribute("data-mv-step")));
+    else if (t.hasAttribute("data-mv-go")) show(Number(t.getAttribute("data-mv-go")));
+  });
+  box.addEventListener("keydown", function (e) {
+    if (e.target.tagName === "VIDEO" && (e.key === "ArrowLeft" || e.key === "ArrowRight")) return;
+    if (e.key === "ArrowRight") { e.preventDefault(); show(cur + 1); }
+    if (e.key === "ArrowLeft") { e.preventDefault(); show(cur - 1); }
+  });
+  var x0 = null, y0 = null;
+  stage.parentNode.addEventListener("touchstart", function (e) { if (e.touches.length === 1) { x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; } }, { passive: true });
+  stage.parentNode.addEventListener("touchend", function (e) {
+    if (x0 == null) return;
+    var dx = e.changedTouches[0].clientX - x0, dy = e.changedTouches[0].clientY - y0;
+    x0 = null;
+    if (Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy) * 1.5) show(cur + (dx < 0 ? 1 : -1));
+  }, { passive: true });
+  box.addEventListener("close", function () {
+    stage.querySelectorAll("video").forEach(function (v) { v.pause(); });
+    stage.textContent = "";
+    if (opener && opener.focus) opener.focus();
+  });
+})();
+</script>
+{%- endif %}
 </main>
