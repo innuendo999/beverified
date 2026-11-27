@@ -4,7 +4,7 @@ alternate_names: []
 status: published
 seo:
   title: 'Veriff Review 2026: Pricing, Features & Alternatives | BeVerified'
-  description: 'Veriff review: AI plus human-review identity verification across 230+ countries with published self-serve pricing from a $49 monthly minimum. Features, pricing, pros & cons, alternatives.'
+  description: 'Veriff review: identity verification with AI and human review for 230+ countries, self-serve plans from a $49 monthly minimum. Pricing, pros and cons.'
   h1: 'Veriff Review 2026: Pricing, Features & Alternatives'
 logo:
   src: /assets/img/logos/veriff.jpg
@@ -24,8 +24,9 @@ link:
   legacy_rel: nofollow sponsored
 last_verified: '2026-10-22'
 updated: '2026-11-27'   # last content edit; last_verified = last fact re-check
-verdict: 'Veriff is an identity verification provider for teams that want automated decisions backed by human review, with iBeta Level 2 liveness and a UK DIATF-certified service. Self-serve plans start at $0.80 per verification with a $49 monthly minimum. In November 2025 an intruder took ID images of 8,583 Total Wireless customers from Veriff''s systems.'
+verdict: 'Veriff is an identity verification provider for teams that want automated decisions backed by human review, with iBeta Level 2 liveness and a UK DIATF-certified service. Self-serve plans start at $0.80 per verification with a $49 monthly minimum. In November 2025 ID images of 8,583 Total Wireless customers were taken from Veriff''s systems; Veriff says a phished login of a customer employee was used.'
 what_is:
+- 'Veriff checks a person from a photo of a government ID and a selfie. On the Essential plan the decision is fully automated; Plus adds review by Veriff''s verification specialists, and Premium uses hybrid review with the most settings. Teams work in Veriff Station, a web dashboard where each session shows the decision, the reason for a decline and the data read from the document. In our trial account in November 2026 you could choose which documents to accept country by country, block faces you suspect of fraud with FaceBlock, and the prices matched the published ones.'
 - 'Veriff is an identity-verification company based in Tallinn, Estonia. Veriff OÜ was entered in the Estonian business register on 20 October 2015. Kaarel Kotkas founded the company and is its CEO; Veriff also names Janer Gorohhov as a co-founder. Veriff acquired device-intelligence company BrowserID in January 2019, opened a New York office in November 2019, and raised a $100 million Series C at a reported $1.5 billion valuation in early 2022.'
 - 'Veriff says it supports 12,500+ government-issued ID documents from 230+ countries and territories and serves 3,000+ businesses. In February 2026 it announced the acquisition of Estonian KYB provider Vespia, and it now offers business verification through a limited access program.'
 features:
@@ -37,7 +38,7 @@ features:
 - Fraud tools that cross-link risky identities, documents and devices, building on its 2019 BrowserID acquisition.
 - Hosted verification page, SDKs and webhooks.
 pricing:
-  summary: 'Veriff publishes self-serve plans that combine a monthly minimum with a per-verification fee: Essential ($49 minimum, $0.80 per verification), Plus ($99, $1.39) and Premium ($209, $1.89). Enterprise pricing for 5,000+ verifications a month is quoted on request. PEP and sanctions screening costs $0.64 extra per verification, and a 15-day free trial covers up to 50 sessions.'
+  summary: 'Veriff publishes self-serve plans that combine a minimum monthly commitment with a per-verification fee: Essential ($49 minimum, $0.80 per verification), Plus ($99, $1.39) and Premium ($209, $1.89). Enterprise pricing for 5,000+ verifications a month is quoted on request. PEP and sanctions screening costs $0.64 extra per verification, and a 15-day free trial includes 50 live verifications per plan plus unlimited sandbox tests.'
   plans:
   - tier: Essential
     price: $49 / mo minimum
@@ -130,12 +131,17 @@ pricing:
     source: 1
     verified: '2026-11'
   - label: Free trial
-    value: 15 days, up to 50 sessions, no credit card
+    value: 15 days on Premium, 50 live verifications per plan and unlimited sandbox tests; your account must pass Veriff's own identity check within the 15 days
     kind: official
     source: 2
     verified: '2026-11'
   - label: Free trial, in our Station account
-    value: 15 days and 20 verifications on the Premium plan, with the add-ons included free; seen 27 Nov 2026
+    value: 15 days and a counter of 20 verifications on the Premium plan, add-ons free; seen 27 Nov 2026
+    kind: official
+    source: 41
+    verified: '2026-11'
+  - label: Data retention on Premium
+    value: 6 months on the plans page; our Premium trial in Station said 3 months (27 Nov 2026)
     kind: official
     source: 41
     verified: '2026-11'
@@ -144,8 +150,8 @@ facts:
   value: $49/mo minimum + $0.80 per verification
   source: 1
   evidence: vendor
-- label: Effective
-  value: $0.80 to $1.89 per verification (self-serve)
+- label: Per verification
+  value: $0.80 to $1.89 (self-serve plans), before add-ons
   source: 1
   evidence: vendor
 - label: Founded
@@ -187,10 +193,10 @@ facts:
 pros:
 - Published self-serve pricing with per-verification rates, which is rare among KYC providers
 - 'Broad document coverage: 12,500+ ID documents from 230+ countries and territories, per Veriff'
-- Passive liveness tested by iBeta to ISO/IEC 30107-3 Level 2, plus UK DIATF certification
+- 'Independently certified: liveness tested by iBeta to ISO/IEC 30107-3 Level 2, FIDO Face Verification Level 2 and FIDO document authenticity, and UK DIATF'
 cons:
-- Per-verification fees sit on top of the monthly minimum, and AML screening is a paid add-on
-- An intruder took ID images, addresses and dates of birth of 8,583 Total Wireless customers from Veriff's systems in November 2025, and three class actions name Veriff
+- 'Low volumes cost more than the per-check rate: every plan has a monthly minimum commitment ($49 on Essential), and AML screening is a paid add-on'
+- ID images, addresses and dates of birth of 8,583 Total Wireless customers were taken from Veriff's systems in November 2025 (Veriff blames a phished customer login), and three class actions name Veriff
 - End users on Trustpilot report selfie capture failures and failed checks with no reason given
 alternatives:
 - slug: sumsub
@@ -236,17 +242,14 @@ user_reviews:
   criticize:
   - 'Verification issues and cost: some G2 reviewers report glitches that slow approvals, and some want lower prices.'
   - 'End-user experience: Trustpilot reviews, mostly from people asked to verify, describe selfie capture failures and unexplained rejections.'
-  by_profile:
-  - Startups value Veriff's published self-serve plans for predictable budgeting.
-  - Global platforms benefit from its deep document coverage.
-  - Companies above 5,000 verifications a month move to custom Enterprise pricing.
+  by_profile: []
 faq:
 - q: How much does Veriff cost?
-  a: 'Veriff publishes self-serve plans with a monthly minimum plus a per-verification fee: Essential ($49 minimum, $0.80 per verification), Plus ($99, $1.39) and Premium ($209, $1.89). Enterprise pricing for 5,000+ verifications a month is quoted on request, and PEP and sanctions screening is a $0.64 add-on.'
+  a: 'Veriff publishes self-serve plans with a minimum monthly commitment and a per-verification fee: Essential ($49 minimum, $0.80 per verification), Plus ($99, $1.39) and Premium ($209, $1.89). Enterprise pricing for 5,000+ verifications a month is quoted on request, and PEP and sanctions screening is a $0.64 add-on.'
 - q: Has Veriff had a data breach?
   a: Yes. Total Wireless, a Verizon prepaid brand, told customers in January 2026 that an unauthorised party obtained images of government-issued IDs, and for some people postal addresses and dates of birth, from Veriff's systems. Veriff gave Total Wireless the list of affected people on 10 December 2025, and 8,583 customers were notified. Veriff told CyberInsider the incident came from phishing that compromised a customer employee's credentials. Three class actions naming Veriff were filed in New York federal court in January 2026.
 - q: Does Veriff detect deepfakes?
-  a: Veriff says its passive liveness check detects deepfakes and injected media. The liveness product passed iBeta's ISO/IEC 30107-3 Level 1 and Level 2 presentation attack tests in 2024.
+  a: Veriff says its passive liveness check detects deepfakes and injected media. The liveness product passed iBeta's ISO/IEC 30107-3 Level 1 and Level 2 presentation attack tests in 2024, and its face matching holds FIDO Face Verification Level 2 certification, valid to November 2029.
 - q: How many countries does Veriff cover?
   a: Veriff says it supports 12,500+ government-issued ID documents from 230+ countries and territories.
 - q: Who founded Veriff?
@@ -255,8 +258,6 @@ faq:
   a: Yes. Veriff announced the acquisition of KYB provider Vespia in February 2026. Its business verification product draws on register data from 300+ jurisdictions and is offered through a limited access program.
 - q: "What are the best alternatives to Veriff?"
   a: "The best Veriff alternatives depend on the gap you need to fill. Sumsub adds KYB with UBO checks and case management on one platform, iDenfy lets you pay only for approved checks, and ComplyCube includes sanctions and PEP screening on its cheapest plan. Persona suits teams that build their own flows, Incode adds live agent video calls, and Onfido suits enterprises that want Entrust's developer SDKs."
-- q: Who are Veriff's main competitors?
-  a: Veriff competes with Sumsub, iDenfy, and Onfido, differentiating through document depth and published self-serve pricing.
 segments: []
 capabilities:
   checked: '2026-10'
