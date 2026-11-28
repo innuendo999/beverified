@@ -1,6 +1,6 @@
-# Price watch 2026-11-27
+# Price watch 2026-11-28
 
-30 of 35 pricing pages read.
+31 of 37 pricing pages read.
 
 ## Record figures not found on the page
 
@@ -8,6 +8,9 @@ Each line is a price in our record that the vendor page no longer shows. Open th
 
 - **CryptoSwift** (cryptoswift), "Professional": record says "€1,200 / month on annual billing paid upfront (minimum €14,400 a year); €1,500 / month on quarterly billing; 6,000 monthly credits"; not on the page: €1200, €14400, €1500. https://cryptoswift.eu/pricing/
 - **Didit** (didit), "Checks without a document": record says "Priced per country, from $0.05 to $4.30 per lookup"; not on the page: $4.3. https://didit.me/pricing
+- **Didit** (didit), "AML screening, in our console": record says "$0.27 per screening (list price shown in the workflow editor, 27 Nov 2026; the pricing page lists $0.20)"; not on the page: $0.27, $0.2. https://business.didit.me/
+- **Didit** (didit), "KYC and AML workflow, in our console": record says "$0.65 per completed session at list price (ID verification $0.15, liveness $0.15, face match $0.05, AML screening $0.27, device and IP $0.03), seen 27 Nov 2026"; not on the page: $0.65, $0.15, $0.05, $0.27, $0.03. https://business.didit.me/
+- **Didit** (didit), "Enterprise, in our console": record says "From $15,000 a year, 15% to 40% off every list price, seen 27 Nov 2026"; not on the page: $15000. https://business.didit.me/
 - **iDenfy** (idenfy), "Premium, per verification": record says "$1.30"; not on the page: $1.3. https://www.idenfy.com/identity-verification-price
 - **LedgerBrain** (ledgerbrain), "Basic": record says "$115 / month, 500 credits a month"; not on the page: $115. https://ledgerbrain.io/
 - **LedgerBrain** (ledgerbrain), "Standard": record says "$230 / month, 1,250 credits a month"; not on the page: $230. https://ledgerbrain.io/
@@ -25,7 +28,7 @@ Each line is a price in our record that the vendor page no longer shows. Open th
 
 Figures added to or removed from a page since the previous read. Often a new plan or a price change; sometimes a banner or currency switch.
 
-- GBG: added £500000; removed none. https://www.loqate.com/en-gb/pricing/
+- GBG: added none; removed £500000. https://www.loqate.com/en-gb/pricing/
 
 ## Pages we could not read
 
@@ -34,6 +37,7 @@ Check these by hand (browser) or ask the owner for a screenshot.
 - complead: fetch: HTTP 404; curl: curl: (22) The requested URL returned error: 404. https://sanctionscanner.com/pricing
 - ledgerbrain-f66a49: no money figures in the page text (rendered by script?). https://api.ledgercore.io/api/v1/x402/catalog
 - persona: fetch: HTTP 403; curl: curl: (22) The requested URL returned error: 403. https://withpersona.com/pricing
+- shufti-pro-cd6c10: no money figures in the page text (rendered by script?). https://backoffice.shuftipro.com/
 - sumsub-7da645: no money figures in the page text (rendered by script?). https://cockpit.sumsub.com/checkus/pricing
 - yoti: fetch: HTTP 404; curl: curl: (22) The requested URL returned error: 404. https://www.yoti.com/business/pricing/
 

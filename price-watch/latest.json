@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-27",
-  "pages": 35,
-  "read": 30,
+  "date": "2026-11-28",
+  "pages": 37,
+  "read": 31,
   "mismatches": [
     {
       "slug": "cryptoswift",
@@ -23,6 +23,41 @@
       "value": "Priced per country, from $0.05 to $4.30 per lookup",
       "missing": [
         "$4.3"
+      ]
+    },
+    {
+      "slug": "didit",
+      "name": "Didit",
+      "url": "https://business.didit.me/",
+      "label": "AML screening, in our console",
+      "value": "$0.27 per screening (list price shown in the workflow editor, 27 Nov 2026; the pricing page lists $0.20)",
+      "missing": [
+        "$0.27",
+        "$0.2"
+      ]
+    },
+    {
+      "slug": "didit",
+      "name": "Didit",
+      "url": "https://business.didit.me/",
+      "label": "KYC and AML workflow, in our console",
+      "value": "$0.65 per completed session at list price (ID verification $0.15, liveness $0.15, face match $0.05, AML screening $0.27, device and IP $0.03), seen 27 Nov 2026",
+      "missing": [
+        "$0.65",
+        "$0.15",
+        "$0.05",
+        "$0.27",
+        "$0.03"
+      ]
+    },
+    {
+      "slug": "didit",
+      "name": "Didit",
+      "url": "https://business.didit.me/",
+      "label": "Enterprise, in our console",
+      "value": "From $15,000 a year, 15% to 40% off every list price, seen 27 Nov 2026",
+      "missing": [
+        "$15000"
       ]
     },
     {
@@ -159,10 +194,10 @@
       "names": [
         "GBG"
       ],
-      "added": [
+      "added": [],
+      "removed": [
         "£500000"
-      ],
-      "removed": []
+      ]
     }
   ],
   "unreadable": [
@@ -180,6 +215,11 @@
       "id": "persona",
       "url": "https://withpersona.com/pricing",
       "why": "fetch: HTTP 403; curl: curl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "shufti-pro-cd6c10",
+      "url": "https://backoffice.shuftipro.com/",
+      "why": "no money figures in the page text (rendered by script?)"
     },
     {
       "id": "sumsub-7da645",
