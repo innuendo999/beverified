@@ -1,40 +1,6 @@
 {
-  "generated": "2026-11-27T13:57:36.675Z",
+  "generated": "2026-11-28T13:10:00.197Z",
   "items": [
-    {
-      "id": "d2985e457905a11d",
-      "title": "Cyber resilience: building confidence as threats evolve",
-      "url": "https://www.fca.org.uk/news/speeches/cyber-resilience-building-confidence-threats-evolve",
-      "date": "2026-11-27",
-      "source": "fca",
-      "source_name": "Financial Conduct Authority (UK)",
-      "publisher": "Financial Conduct Authority (UK)",
-      "tier": 1,
-      "needs_primary_source": false,
-      "providers": [],
-      "region": "UK",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "a17c382ca04fdbab",
-      "title": "Authorities complete 2026 review of payments Memorandum of Understanding",
-      "url": "https://www.fca.org.uk/news/statements/payments-authorities-mou-review-2026",
-      "date": "2026-11-26",
-      "source": "fca",
-      "source_name": "Financial Conduct Authority (UK)",
-      "publisher": "Financial Conduct Authority (UK)",
-      "tier": 1,
-      "needs_primary_source": false,
-      "providers": [],
-      "region": "UK",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
     {
       "id": "16e6b076083bdf6e",
       "title": "The not-so-fine print: making consumer contracts fair",
@@ -268,40 +234,6 @@
       "needs_primary_source": false,
       "rule": "too-old",
       "reason": "Older than 7 days."
-    },
-    {
-      "id": "e927ddfe8a18f21d",
-      "title": "Government correspondence on the regulation of actuaries",
-      "url": "https://www.gov.uk/government/publications/government-correspondence-on-the-regulation-of-actuaries",
-      "date": "2026-11-27",
-      "source": "govuk-hmt",
-      "source_name": "GOV.UK, HM Treasury",
-      "publisher": "GOV.UK, HM Treasury",
-      "tier": 1,
-      "needs_primary_source": false,
-      "providers": [],
-      "region": "UK",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "cee4ecb42ac3a033",
-      "title": "Economic Secretary to the Treasury speech at TechUK",
-      "url": "https://www.gov.uk/government/speeches/economic-secretary-to-the-treasury-speech-at-techuk",
-      "date": "2026-11-26",
-      "source": "govuk-hmt",
-      "source_name": "GOV.UK, HM Treasury",
-      "publisher": "GOV.UK, HM Treasury",
-      "tier": 1,
-      "needs_primary_source": false,
-      "providers": [],
-      "region": "UK",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
     },
     {
       "id": "f5804d246d4cfa99",
@@ -850,72 +782,10 @@
       "reason": "Older than 7 days."
     },
     {
-      "id": "503ce107800e4f40",
-      "title": "Listen: Why a TSA PreCheck pioneer wants more travelers in the fast lane",
-      "url": "https://www.biometricupdate.com/202611/listen-why-a-tsa-precheck-pioneer-wants-more-travelers-in-the-fast-lane",
+      "id": "a7d762390c8c358e",
+      "title": "iProov urges UK to target infrastructure behind AI disinformation",
+      "url": "https://www.biometricupdate.com/202611/iproov-urges-uk-to-target-infrastructure-behind-ai-disinformation",
       "date": "2026-11-27",
-      "source": "biometricupdate",
-      "source_name": "Biometric Update",
-      "publisher": "Biometric Update",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "996c7f4d975f75d8",
-      "title": "NIST facial recognition identification tests reopen with new entry rules",
-      "url": "https://www.biometricupdate.com/202611/nist-facial-recognition-identification-tests-reopen-with-new-entry-rules",
-      "date": "2026-11-26",
-      "source": "biometricupdate",
-      "source_name": "Biometric Update",
-      "publisher": "Biometric Update",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "other:australia",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "84ba3f072c42d2b9",
-      "title": "NIST age estimation results show why rankings change by use case",
-      "url": "https://www.biometricupdate.com/202611/nist-age-estimation-results-show-why-rankings-change-by-use-case",
-      "date": "2026-11-26",
-      "source": "biometricupdate",
-      "source_name": "Biometric Update",
-      "publisher": "Biometric Update",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": "paravision",
-          "name": "Paravision",
-          "reviewed": true
-        },
-        {
-          "slug": "shufti-pro",
-          "name": "Shufti Pro",
-          "reviewed": true
-        }
-      ],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "d24bbc32f28b0e16",
-      "title": "GOV.UK One Login keeps iProov biometrics, liveness in deal worth up to £45M",
-      "url": "https://www.biometricupdate.com/202611/gov-uk-one-login-keeps-iproov-biometrics-liveness-in-deal-worth-up-to-45m",
-      "date": "2026-11-26",
       "source": "biometricupdate",
       "source_name": "Biometric Update",
       "publisher": "Biometric Update",
@@ -926,97 +796,19 @@
           "slug": "iproov",
           "name": "iProov",
           "reviewed": true
-        },
-        {
-          "slug": "signicat",
-          "name": "Signicat",
-          "reviewed": true
-        },
-        {
-          "slug": "veriff",
-          "name": "Veriff",
-          "reviewed": true
         }
       ],
       "region": "Global",
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
+      "first_seen": "2026-11-28"
     },
     {
-      "id": "b2e6205ef4bb5a42",
-      "title": "US Homeland Security seeks tools to verify AI-generated digital twins",
-      "url": "https://www.biometricupdate.com/202611/us-homeland-security-seeks-tools-to-verify-ai-generated-digital-twins",
-      "date": "2026-11-26",
-      "source": "biometricupdate",
-      "source_name": "Biometric Update",
-      "publisher": "Biometric Update",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "22a3f2472f4122a6",
-      "title": "Cameroon to verify over 580,000 birth certificates in family allowance audit",
-      "url": "https://www.biometricupdate.com/202611/cameroon-to-verify-over-580000-birth-certificates-in-family-allowance-audit",
-      "date": "2026-11-26",
-      "source": "biometricupdate",
-      "source_name": "Biometric Update",
-      "publisher": "Biometric Update",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "c0aa74191738cff7",
-      "title": "Turks and Caicos pushes first national ID cards to 2028",
-      "url": "https://www.biometricupdate.com/202611/turks-and-caicos-pushes-first-national-id-cards-to-2028",
-      "date": "2026-11-26",
-      "source": "biometricupdate",
-      "source_name": "Biometric Update",
-      "publisher": "Biometric Update",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "5589c063d63280b4",
-      "title": "US flags 1,579 federal contractors in E-Verify sweep",
-      "url": "https://www.biometricupdate.com/202611/us-flags-1579-federal-contractors-in-e-verify-sweep",
-      "date": "2026-11-26",
-      "source": "biometricupdate",
-      "source_name": "Biometric Update",
-      "publisher": "Biometric Update",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "405838c591b5014a",
-      "title": "Kenya court asked to block Smartmatic election tech award",
-      "url": "https://www.biometricupdate.com/202611/kenya-court-asked-to-block-smartmatic-election-tech-award",
-      "date": "2026-11-26",
+      "id": "0ad01bcf37f5a87c",
+      "title": "Kenya probes 740GB eCitizen data breach claim",
+      "url": "https://www.biometricupdate.com/202611/kenya-probes-740gb-ecitizen-data-breach-claim",
+      "date": "2026-11-27",
       "source": "biometricupdate",
       "source_name": "Biometric Update",
       "publisher": "Biometric Update",
@@ -1024,40 +816,19 @@
       "needs_primary_source": true,
       "providers": [],
       "region": "other:kenya",
-      "rule": "vendor-marketing",
-      "matched": "award",
+      "rule": "fallback",
       "route": "skip",
-      "priority": null,
-      "reason": "Vendor marketing, not news for buyers.",
-      "first_seen": "2026-11-27"
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
     },
     {
-      "id": "eaa177d1d7a0c42e",
-      "title": "Leash Biosciences raises US$11m to advance AI drug discovery",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZ09CTVdUMS10TzlSbVZXWlZ1dnlxLVYzaW5Ia05lRkRBY0hnMUZnMmlNQ1FmaG93NEZEMngtUGFPNGhYeGxRQWdGZWhtQ1FyajdYRUNVRlA4Sm9uQ3pENkM1d1F2RHJHaHZqVmRueTViNmZSWWlCVVgzdUM2ei02dDF5NkI4eVNEbVM5QjIzVVFHNS1JanNtVks0RlhMUQ?oc=5",
-      "date": "2026-11-26",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Health Tech World",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "funding",
-      "matched": "raises",
-      "route": "skip",
-      "priority": null,
-      "reason": "Funding rounds are not covered (owner, 2026-11-16).",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "59cdeaa393d8cf0d",
-      "title": "Iraq Enters 5G Era as Asiacell Opens First 5G Research Lab to Advance AI, IoT & Digital Innovation",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNV1RyV3VuN3ZfRTNrTnVSVmx4ZVhBbml1NDBvMnJ4WnBuNGJja2J5S2ZLbHhXTmlqelNwcTdlcXk1TlhtU09nNTlyeGI5Z3QwSDE4VkNrX0tHZmxpZGo5QkVoeml6ZUFZc2FsaTJ3aXBkZ1MwaXBULTZ3T3N5bkI0R2JfSG9vY1VlajljR0c2NmlfcE1naVFuRGZ1MVZSZFR5MlZDZXlmVEdSV0IzUWhtazExNlZtUjZIM1ZBUUpkZTFPT1FQR1FyNlhLZ0VvdGs3ZjJiLTJ0VlM5NlBhcGpsZ3c3Ni0?oc=5",
+      "id": "5ec8d6b9b60d8bf0",
+      "title": "Live facial recognition procurement under scrutiny in UK policing inquiry",
+      "url": "https://www.biometricupdate.com/202611/live-facial-recognition-procurement-under-scrutiny-in-uk-policing-inquiry",
       "date": "2026-11-27",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "The Fast Mode",
+      "source": "biometricupdate",
+      "source_name": "Biometric Update",
+      "publisher": "Biometric Update",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [],
@@ -1065,101 +836,16 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
+      "first_seen": "2026-11-28"
     },
     {
-      "id": "5ca714576431b2d8",
-      "title": "Tendata Launches iTrader V6.0 to Advance AI-Powered Trade Intelligence",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTGlEOGVyNk44MUlNNHQ1cFE0dnFBWk1fdk14bGVrMUFYZlRJY2o4NzVhaTVWTEdtYjNRcHhKakZhMDlKVHFBVkVlXzJhN2RGMkpjRWlVeHlvcU5Iam5QdEVCQ0FQelRMcjFnMVF3aTN3ZThhMll2dk1oNGp6aXR6VlBad3hocW9BalBQRHk3Q2pfQ3Nkd0xJdFpiRU9wbUFGX0NpeDRzYkFYZ1NtRzhCT0hSNmxJenV4RnU3UzZNZ0RRem5aQXBvTw?oc=5",
-      "date": "2026-11-24",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "StreetInsider",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "30e7f26cc4e7b194",
-      "title": "Draganfly and Estonian-Ukrainian DOD Solution Sign Agreement to Advance AI-Powered Autonomy for Unmanned Systems",
-      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxQTnNWYWJpV1VSSVEyTm5VTWkwdWhfUXdfSVluRTJneDZ2STNuR18zYTc1a3RaX3dPRGpZRml4UGx6LWhONFU0ZnZDaGZiMUlpWEVsVlUzU0pKd0JLQnlHa1FRcDdyNDB4clVpdDAwMWlfTUw4eDJUZmgyWU0ySzlFOXRfMmFWMXNIemRJdTQzVzY0Q2hnWG9odmxRenFYeG9qNmRCYUIxSVdPdVZPTjZFcHoxSTVLYVVuU1Iwc3BVUG83aGtWaDdJWFAtaUV2anczMjVQbHp1Y3NER3ZHUGtvX0UtODFQdUQ0bS14c001LUNGclc0cGE1YWlSZk5pak5XWG54T29PUGFnY1VUTGJ0R1E5YnLSAZoCQVVfeXFMUF8wRjY1VU00N2I4RmZidV9PRjc5SDdaU1V0N0tadDZFN3MwX3JfMG8xS3dFTE5maHZQQ0dNaVNZU3Z1cHhsalBfMUN4RzRpbmp3MDNXTFZTQ0ZrLTZmdzc4Wl9YWjdWQy1Cdmg0SWtxTmpXb1F3Sm5sNHZYV3dYaFFfQlR0NExfS3doQ1hJYnBtMEQ2MUlIMU5NcXVKaGt0SV9hUXpsaHlaa1kwdWR1enhhckMtM3lMWGxnUXcySjhTTHlMOW0yT1FZMEtVS1FlbnlvVjFVdUp5b21fM2VSaHB2dk1UeFdtalV1eDFVYXNUTG1OdkU5NW9SNVpkdWduTXFtMXZqZ04tWXo0ZGtrZVRGX3FPSVIyRl93?oc=5",
-      "date": "2026-11-23",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "The Manila Times",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "fcb69d876a7f2d65",
-      "title": "Nocera and B.Grimm Advance AI Data Center Power Projects",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1iaTZNRGlLR3RyRVJ0b0VtVER0N0pUOGxxbnYyczhqNTBsRm9McEJFWDJTQVJjenZmMHRhYXEyTksydHlBSFhTd1ZrQ0JSUF9uMnZsX0ZId1VlNjJnbGxEbi1B?oc=5",
-      "date": "2026-11-25",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "cwibc.co.id",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "f6fafdb7d0e15157",
-      "title": "Google Announces $5 Million Funding for IIT Kharagpur to Advance AI Research and Education",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNMWRPZjVidVZVYk5VbU5PUjJQZ005amZhY2xsVXlVYlU0N2pmVGtodWJVT09CMWtkRDBfd3NUZ19PQ2l2WW0wSEtubFNrU2pvcG9wOWN1WVNjX05hY19La1RDTW9PUHJLSXZjcEx6QVNSUnVUMS1kTDljZ0hKREw1TTN3Rk1WSTNKeWZDX2JTN2dFT3p6LXJYVnA1WGUya1pxdG56SFNfT3loLVR5dUJuS3dMTGZZVlNDZ05qczJpQ3BOQjF2dDhmWHBpcDRmSFprYnZMTWZSVFN2QQ?oc=5",
-      "date": "2026-11-24",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Entrepreneur India",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "other:india",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "d7ea11d0b34e593c",
-      "title": "Mobihealth, AwaDoc partner to advance AI-powered healthcare in Africa",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPQmJSaFZNU1AyN0dTSmdObHMwWnVJN0ZqNk5TMktzdWo4THE3VU5HVWpaVE55dUFPbm9IUzB3VHEyOXdvSTM4OEg3Qm03QTlaZm12ckxNN1pxbHFpa3V3UHRtQVJBcHdIanR5bG5WSjUzTURLSjdpZkt5VTlOQnp3SmxzQXpkUjY0ZUFrMzBUdnJUX2tvZW5CemF3?oc=5",
-      "date": "2026-11-25",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "The Guardian Nigeria News",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "other:nigeria",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "cbe635f4f91bb73e",
-      "title": "Xiaomi and Singtel Singapore Partner to Advance AI-powered Smart Living",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOUW04TWVJM2N1eWU5anN3V2lzR09kZmlTcW1KdjVGeXhVXzBPMHlvRjBwUk9hcnhoeGlNQzFIT3dwb2VhNDJBQWh1cTZfUHk2Q2tSMzJnRnE5ellEMVJaM1paRjlqM1c0NV9KWmhmd0NFZTRadC1jSDdYc0VxdTRjUVUyQjV3bVpBclV0Q0MyaktmdmlfUGVmOUtrVnBmMngydkFzUmxtcjBsNER6am9OS0Z4a2JNNW93TU9IM3haZGFkVVF4ZWlIbGdFbnFUcFFGSndYRERjNllTVXQ4VndReNIB4AFBVV95cUxOUW04TWVJM2N1eWU5anN3V2lzR09kZmlTcW1KdjVGeXhVXzBPMHlvRjBwUk9hcnhoeGlNQzFIT3dwb2VhNDJBQWh1cTZfUHk2Q2tSMzJnRnE5ellEMVJaM1paRjlqM1c0NV9KWmhmd0NFZTRadC1jSDdYc0VxdTRjUVUyQjV3bVpBclV0Q0MyaktmdmlfUGVmOUtrVnBmMngydkFzUmxtcjBsNER6am9OS0Z4a2JNNW93TU9IM3haZGFkVVF4ZWlIbGdFbnFUcFFGSndYRERjNllTVXQ4VndReA?oc=5",
-      "date": "2026-11-26",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "The Manila Times",
+      "id": "4b94a5e6096e90d3",
+      "title": "Amadeus–Idemia PS deal faces Singapore review over border biometrics",
+      "url": "https://www.biometricupdate.com/202611/amadeus-idemia-ps-deal-faces-singapore-review-over-border-biometrics",
+      "date": "2026-11-27",
+      "source": "biometricupdate",
+      "source_name": "Biometric Update",
+      "publisher": "Biometric Update",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [],
@@ -1167,35 +853,75 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
+      "first_seen": "2026-11-28"
     },
     {
-      "id": "493a58db99d2eb60",
-      "title": "Leash Biosciences Raises $11M to Expand AI-Driven Drug Discovery Research",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZ295T2xWR3kzVlI2WXQ4V280RkRlMXhsbVlCVVZwdkxWOWlBeUZna1RMVnBPT1ZLMTNna1dmRDVGaXh2ck5Cb0IxY0x1TjhtdlJ6RlptN1ZGRUlqVlFLSURUbEJLbjRpNVJ4Tnowd2w4bEdtaExvY016QnJheEdiNzJFVEdLdnh0YzYtOHZ4NXZMQWdscDVv?oc=5",
-      "date": "2026-11-26",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Digital Health News",
+      "id": "55971f020358bf57",
+      "title": "Equifax wins £5.2M GOV.UK One Login fraud checks contract",
+      "url": "https://www.biometricupdate.com/202611/equifax-wins-5-2m-gov-uk-one-login-fraud-checks-contract",
+      "date": "2026-11-27",
+      "source": "biometricupdate",
+      "source_name": "Biometric Update",
+      "publisher": "Biometric Update",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Equifax",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "vendor-marketing",
+      "matched": "wins",
+      "route": "skip",
+      "priority": null,
+      "reason": "Vendor marketing, not news for buyers.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "0d3ac1fcf51a62c5",
+      "title": "Security flaws put traveler identity records at risk across six countries",
+      "url": "https://www.biometricupdate.com/202611/security-flaws-put-traveler-identity-records-at-risk-across-six-countries",
+      "date": "2026-11-27",
+      "source": "biometricupdate",
+      "source_name": "Biometric Update",
+      "publisher": "Biometric Update",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [],
-      "region": "Global",
-      "rule": "funding",
-      "matched": "raises",
+      "region": "other:nigeria",
+      "rule": "fallback",
       "route": "skip",
-      "priority": null,
-      "reason": "Funding rounds are not covered (owner, 2026-11-16).",
-      "first_seen": "2026-11-27"
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
     },
     {
-      "id": "7c0d1ff547b79c5a",
-      "title": "Draganfly, DOD Solution Sign MOU to Advance AI-Powered Autonomy",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPamVuendTWDhlUUREeU9telQ0VkppRUdUOTZDQ05DbEZIUGN1WjlZVXBramJndXdWUlhZdGJnQy14VWdRdjNENnZNMFRteldzcXRxbEJJaGJLOTd4cmdxQmp3T2JZMkhkMFhKbmx4Y0xCeGVCaW5hWGdzcTNUaHhzV3VWbFR3YjJqX0xpYnIwTERZQWU2bFZybUNWa2hKRVl0a1c2VnB6djV2dFdfMk54X1UwNkQ?oc=5",
-      "date": "2026-11-23",
+      "id": "df118c03512ff382",
+      "title": "Philippines signs Meta safety pact as it weighs national ID for age checks",
+      "url": "https://www.biometricupdate.com/202611/philippines-signs-meta-safety-pact-as-it-weighs-national-id-for-age-checks",
+      "date": "2026-11-27",
+      "source": "biometricupdate",
+      "source_name": "Biometric Update",
+      "publisher": "Biometric Update",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "other:philippines",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "b0c07ce5014e3e1c",
+      "title": "IMDA accredits VAST Data to advance AI adoption",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5GbnRUa2hGOVEtbG5uOEp0SmEwMkNCbTAtcVdQZktvZVF6YlZqazFoWC1lV2dwbXJhSVpTYjRTSjFROXBMSTRpZXJld1dJQmR2MmVKbDFjWUF4UG14cl90c0J1eFBQTkhoZ3lvU1NxSmpVNGNYVm5BbldsUQ?oc=5",
+      "date": "2026-11-27",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "TipRanks",
+      "publisher": "FutureCIO",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [],
@@ -1203,13 +929,47 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
+      "first_seen": "2026-11-28"
     },
     {
-      "id": "3a320babbc964e87",
-      "title": "Polymarket invite code STAR | $25 bonus for NFL Thanksgiving Games, NCAAF & more",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUmxGUjU3a0tUYmJXYm4ySjM5SHcwRWQzVnN3VmtQT01lRzBKX3VYT0dYdEdVUEk3TTAtUWtFZXZVR293cHJvRXZHM3gxZDFBWWRib3ZVNEQ2M294TUdGQXYzT2tHbnhPZ0xCSXNZa0tXME1hcW1sQjQzYXdzS2VDWkhGQ0ZONVZiWlhLS1VMUUYyOWFUX0s5bjBncW9yZ1IydWlscU5wdUoySmViYzQzOXp2dUZoZEtr?oc=5",
+      "id": "1abba4eb6a10fb47",
+      "title": "Ministry of Ayush, IndiaAI Sign MoU to Advance AI in Traditional Medicine",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWDMzdEJDR2VCal91bGx0YzF4dF9xcHNqdm41R2puUjlKMjV5RnV2Q2h4Z0VrVjNqcUx5OUp6RnRwUG9JS2pDN3BRd25fVzZ6RXdnS1dnRTE0ZlN1d21IeFp4bkpBUHpoY05ZYkF0SVZyT2ZsZXFRQ0xTS085Qk1kR2lMM1NjdGZIYmdyTnpvZ3o5MjFsbWhLY1J2U1llT1E?oc=5",
+      "date": "2026-11-27",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "DD News",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "e43b1eeb0d60d615",
+      "title": "Xiaomi and Singtel Singapore Partner to Advance AI-powered Smart Living",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPX3hPcHo1Yi1Mc01wMGFwMkZVdUtEbkxGY3FUMk9fVklscjZJVHRqRjNpaFJWbDUzMHpRVlpoZS1jX05oZnIwS1J3YXNZcVFuYVZUblU3VTdkRzI1THRDNWRqWjdZSmR4a2YyaUpKRkRPaThFQnJZa1JZNy1qSU9hV2o1RndIaUUyY1lobjFjU1Zyck02Ykg0amJoMUFVLWcwa2E0VnRmUWJOaVY2ZEJPUUl2X2kycFVoYTJJ?oc=5",
       "date": "2026-11-26",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "The Malaysian Reserve",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "other:singapore",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "2d84e503b829c435",
+      "title": "Polymarket invite code STAR | $25 bonus for NFL Week 12, NCAAF & more",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWC1HNVdKejRoUXd4SEFUOUdkOGw0TUpVQVV1eHF6SmxJdGFRQlgwaHBxT21hM0pUSzZsN0txbWxtemVWYkpjZFZVTE1OR0RPdmVrUHJKRW14ZUpOUUlFbHdhODlmdUpoY08zcmZXR2VDRWgtY3RIcGRPRHl0YWtpbFEycTFDVlRiWEQ4WVZrTS12bTJFX1ZBaG1SdmVZcC00VEoxOXNselg2NFRqVkxMalFIbw?oc=5",
+      "date": "2026-11-27",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
       "publisher": "IndyStar",
@@ -1226,13 +986,13 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
+      "first_seen": "2026-11-28"
     },
     {
-      "id": "2b1f001db9846bcb",
+      "id": "f3bdd62ba971306a",
       "title": "Polymarket Invite Code SBWIRE: Get $25 for NFL, NBA, NCAAF & More",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNREhiSktManM0c2toR3pGTGM5bUZ3RmR6cThRNnY1NU5qOGxVZWx1OFduX1lCa1lGMDh0UVdHek41cHBBeW50elFEa21MWGstbUlMTXpHNWJXeWVFakJDcnlzdF8zdXJtclhEMEE0ZzNJNnEzQlo5bUd0VDVKbEhXR1Jha2tleTNpN1JkRHVpTXFPTnV1YXBMdkJyUDBCVTNLR0psb0oweC16T1FkMEphcXVXZVQ4eG51cXFNLU94MA?oc=5",
-      "date": "2026-11-26",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTUpzbkh2TzVFZ0I3cndSZlRJWExvSE9kV0xXWlN5M1U1Y2ZPMEZmTjhERmJUS3FlTVB4STE5dHYtSlZDcmpnZEpZNGRPOUtPQTVyTEZ3THdsZ0hBaEktTVNHVk5YR25vNURHSEFST3UwZ016SjR0NDVoV2o2bzZJbGNoSXp6ZFB5YndoMW9GU0xnMXBrcGVZRTd5OXE1RE8zejk5NXR6YkFTeHZMNWJfcDl3ZUZSNWJo?oc=5",
+      "date": "2026-11-25",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
       "publisher": "Chiefs Wire",
@@ -1249,16 +1009,85 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
+      "first_seen": "2026-11-28"
     },
     {
-      "id": "40c2216eb5ad92f8",
-      "title": "Novig promo code FREEP | $50 in bonus credits for NFL, NCAAF & more (Nov. 24)",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPUWNhS3JPbnk3THh6Q3BKaUJ4NWhETG9OdkVyeEVydVNMc0FjeTdZNGlTcUpKZDVLY1BXUzFKcHhaUmRCZjlYUVRfaU40RGE1a0d5Wm9RSkd6d0VpWllWVjdIQ2kwdU9hNF9ZVnU4ME1yS2VxSWJpcnJzRWctc05nR21pU2dBeHpjRVpYWEt3QV9ya1QyczVFN19wNmlSUXh4ZzQxZ1YtRXdQSWZ0?oc=5",
+      "id": "9874e066b5b4b17d",
+      "title": "Kalshi promo code STAR scores $25 bonus for NFL Week 12, NCAAF",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOYkF0RnQxWnEtaWRBOElCQktzam1oVFBVMThPWjVoWWNkWHpYVnF0YjdYdUZoalJzS21qWVdMSDZjSFdYM1paZkRTVGFJVW9WVUtqVFVYTFRLX1pFMDFtc2FmbFhSM2Qwa1FiZFYtTExaR1lBbzRNMGNrU1N6cUdsaTV1dXE2aXhKRWt4MjR4OFdGZjA0aENVa05kMC1YR1dwaG5yWA?oc=5",
+      "date": "2026-11-27",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "IndyStar",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "49d46cbcadee3ef1",
+      "title": "Exclusive Novig Referral Code SBWIRE | Score $50 in Trade Credits Today",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPLW9VcjJDbnNfeU1DbFNYMm5GS2I3V21fcGthQ1ZHWlVGWW52TFFVcFFFWEF5MGRSSnMwMDFtWmNtMWNnb1hYd0hXWXV2YjNYbElzdnMxWEthTVVad01WTEM0NjBESHJNZ01XWjdsTzdQZlFBX3lrQ1l1T2J5Qm1Ma1JGc3lqUDhfeFl5dnk4QlpBMWZaODNvcHViWQ?oc=5",
+      "date": "2026-11-27",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "USA Today",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "7e6df8120a829458",
+      "title": "ProphetX sign-up bonus code FREEP delivers $40 for NFL, NBA, NCAAF & more",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUWpTamM3d0VBOG5LNzRzODQ3VzlEaHgyR2xOOUhreHVVYndTUDcyUmw0X2loU0FzRkFnMmludUYySVRzMXhCQkdDbUNoX2ZEb2Q5QjByamVOUHZzYmRsalk2N2tjaVN0ODByNElJOTFaaGN6dGNieVFoRXVrNHdqZzlLUHU2MEJCNlVlY3Z1LW1IYWpQQ1I0VUYwMWM5ejROc1VPVEtpZ3ZSSVhhWUJuMWtOTmM?oc=5",
+      "date": "2026-11-27",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Detroit Free Press",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "4050ae26552f709f",
+      "title": "Polymarket Promo Code SBWIRE Snags $25 Bonus for NFL Week 12, NBA, Politics",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUUFXbUllOFIzZ0xsY0pRM0IyNWdNYmpwNTdwSFNnQXV6Wk44TC1GaGhUdjJZd0t2YjJyQUZ5V3FjTE9NZnhTVy0wa0drcjZvbFdmRzJ1akpSRmZoSElGcFkzR2dQSmRXdURkM1NfRXl6U1Vja0I0UmJoM2lOWWxad2NId1BvX2I3U2hFbHF5TDhMWW9KUkc5X3VzQnh1TlE0RDVheUhaVjFLQ3M?oc=5",
       "date": "2026-11-24",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "Detroit Free Press",
+      "publisher": "Golfweek",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [
@@ -1272,35 +1101,12 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
+      "first_seen": "2026-11-28"
     },
     {
-      "id": "86ea294b7d020638",
-      "title": "ProphetX promo code FREEP delivers $40 bonus for NFL, NCAAF, NBA (Nov. 26)",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNN2FQS080RWdjT21NU2J3bk9nY0M5eVBGZUpfQ2d5X3EyWmI1MElxS1V2QncxcG0yUXYxT2ZoaDJHWXZGNUMtUDF1bDhHeUNsdkljb2YxZWNla2tQUkZsOE5sQTVvZ3dkOEVCNmprOUVaV081a1lkd3Z1c1hJUTFQUTNiemxmcVNSS1czTVgzRk1MZFFrQmNTUUpvQmRtYkt1VXlidHFwUTBRQ2pO?oc=5",
-      "date": "2026-11-26",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Detroit Free Press",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": "codevasp",
-          "name": "CODE",
-          "reviewed": true
-        }
-      ],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "3e549c5771d76a0c",
-      "title": "NFL Kalshi promo code “SILIVE55” renews $55 Thanksgiving night football bonus",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdUlCRGliYXJzeGZ6dVBYOC1raEstNTZ3aE0tWUdMeGl6M0x6TXA4NUlqcWxQQ2t1dkJVYVFvWTFDS04tYVNGYzBzQndsWjhUQkc4TzBOU3RRY1NLb2NJYy1sRWlBaHhFOVp1Q19jc2dqQjJfX2swaDhGV2dBbHlad3lGbEs3QlN5alNhMjY5R2RHUS13TlpxeWdfMGtZTVNFU1M4Q3lxbzlVNWJUWHU3MWhscl9yYUdMVWc?oc=5",
+      "id": "541a261fd02ebc99",
+      "title": "Kalshi promo code “SILIVE55” extends new $55 bonus for Black Friday CFB games in CA, FL and TX",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQRFNvQ28xa01fMTNPTGk3UkxvOFdRM0FLWjFNSlUxdDVmeGdoZjNxQVY5Mm9EUXh4UEZmYUtFUUhIend4cjNjQzVYNzg4NGR5c0dla0dnVTA5d2ZLYktmV2YwWVNPMm81cWFueWJXVG1NOWxySXVjd0lqS2hNdUtyNk50alRiZFZ5UVIzYTNsSENfYU5rRjA4YmQySjJETjRzVVRLR0x5UDNBUWtvUG84SUg5TzEySXhxcm9lUzV6Y1lzeTloTVhDV3VObWhjUmJPVXh3aTdfMHlEYXFoTU5ZSE9FWQ?oc=5",
       "date": "2026-11-27",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
@@ -1318,16 +1124,16 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
+      "first_seen": "2026-11-28"
     },
     {
-      "id": "ed9f5ce5c57915f4",
-      "title": "Best Crypto Sign-Up Bonus: Free Bitcoin Promo Codes in 2026",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE01cUxISUlPQ1FmZ2oxNnFyNjY2aVhIUWxJbVMzMUszTmhJY2FKTFY1UnhnRDI3V3VuYnI1bFo2SjNvU0Rub2g3cmJ2R29OMS1tSm1tSzBHX2c?oc=5",
-      "date": "2026-11-23",
+      "id": "8d05da4e160730dc",
+      "title": "CAT 2026 to introduce AI face recognition: How IIMs will verify candidates, what happens if technology fai",
+      "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxQclEzRTduZE9KR09COElUdy1iTG1Kd3g5X2thYUhubHZ0MWtNU2hDWHpEel9jUS1PTjlEUDJ3eW1hS25SNzExZGVmQWJ5OUxqelJZTF9ZWUJTLW9rTVMzZ2V5QkREaWE3QXZhWnRwTjl0UVJuWktkS0x2VHdkWEdZQWIwQTlQQUpOQzVVcTBQVzZEWGdHOU1POFljYXF3Tzh5MXd2UmxzZzJ6RHM1R2FhRW0xQktGR2tPeGdzMEI4endxUW1KU3hoWHcxNHBnZWJRRHdUSVR3Q2U2Ui04LTRuODhUYl9jZmZrQXdZU1hSLV9aNG12Q3h0VGNZaHVKbkl1aGg4OTVMQ2R0ZUxGQ21qekpJemxSd3FpMWJxRTFkQVhEclVEaGw2Qk9xWHlPejZKcWowdDNZWE1UYkdFSWZ2VjJGcGI3NzJWTWxZ0gHQAkFVX3lxTE9NbV80OTFHSjdyTlNPNU5EODQ0em93UWdmZGxCcmVidkJnZVlsVFFwMG8wVGt3c3FKT21WbmFkRmFLV1BrWTdEc2piUWhtSHVCNEFpN0UwSEFJcDNlVU9OLTZWaXRjWlZ1MVQwc21KVTdmOGpNTUMzMzZHdXBJVHhpalM5b0pydlhiNjRyb3c0Y29feDVnTnJxVDM4N3doVTd6UzVYQmhweTZZSC0wMFdrNUE5c0tiVnJQSHR6MW13ZGNWR3FEM0lyZmNZUUdyX3R3NkJJNmxwb2wzN0dteWZiUV9oOUZpZlA4MDQ3QW1VQzBwOE9wU2Q5bnE2aXlkRkpsb1NFLUhjOWRaTEZ6Y3l2bHVEWWhTMDVPc05xOG05QnhJY2VzeVR1UFd1WGNsaGczcEthZzVpMDVXc0hWNHkwWmpLdHVYVTJNODdQbk5tYg?oc=5",
+      "date": "2026-11-28",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "Techiexpert.com",
+      "publisher": "The Economic Times",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [],
@@ -1335,47 +1141,133 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
+      "first_seen": "2026-11-28"
     },
     {
-      "id": "c1d597eb23b01bab",
-      "title": "Cytora partners with GBG",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNTC1JY0FPcVRZdGJxNTExeWhPbUpwVWlycGpFRHN2TGt2MUViMmhNMC0xX3Q1eFRhWFJxZC10c2xXWHUyeVZoTWYyRFhmLVBJR3N1SDM2OWlXN3VvOXJpTVFYRDkzWkJ4MGowUnZVMkJHcnNLSXpEWnY2NnJyWEg1aGtva3pPOWdGSGlLMXFoSnVrZHZ0Z3NxS3pDVUFYNjZEM2dQUHRvbUJQOE0?oc=5",
+      "id": "d96071b0cfa84f9c",
+      "title": "NADRA Rolls Out QR-Based CNICs in Major Identity System Upgrade",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNbXp6bWJPc1RVUnlsVkt3V21aNHlVc0xid0R4UjRWdjJtYzJXWmh5eHBENGdOcHhwbjZudTdFWldRUFdkelZPdUtnWGdlSUo5SmY3VDJfQ2FVTlo3YS02YnVhQWxEbHVWdG81aVlaWmFGbDlnTjZSekM5ZWxacGpfQlNZbnlyU0Y1T3JNaHR6UzFoSG8?oc=5",
       "date": "2026-11-27",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "The Paypers",
+      "publisher": "TechJuice",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "9a4e54414339790e",
+      "title": "Cytora and GBG Partner to Bring Identity and Financial Crime Checks Into Commercial Underwriting",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQN0YtTjY0ejBvTDIzU3ROS3c5RmZITXdUbzlZeDVkQXhSU2dZRUFtR3pfd3VVWFNYUTJZVjNGcWdKeUxNQVNFZ3J3RnhCdHc5T2VVWE1MazBnVFlBNmVjb3g4djlKQWlRSTE0RVc3cHBxaDdjcVU0M0R1WV9JVV9CeUlDRy1MY2Q2dDMzRmVnaUUzMmxQTEtOYjVVSU1ZQ3lXTGw2MHJPVFc2MVlSZHdkbXVib0p3NHMzX3c?oc=5",
+      "date": "2026-11-24",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Financial IT",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [
         {
           "slug": "gbg",
           "name": "GBG",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "12cd028cc4cd33c5",
+      "title": "What GB Group (GBG) Said on Its H1 Earnings Call",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZVNYZ1g5bFpxR2tGNUNpRVZZYVVSakRWUXRIMVR0Q3d2WXRQTWlVanVaSGhKY05sU3ZvY2JKSUNtTlpQYUJuX012ZFBYTm5vUHJmaE96Um9QTEUtM0xsaFl4U1lMOVlYZlQ4UWZtUHVFWGhwVEkyUXFQMWtmWEItQ1JpblNMdi10Szd3eGxGaVFlSDRxN1A3ZFcxMXQwN043WERCMFBiZjNkZ1U?oc=5",
+      "date": "2026-11-24",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "TradingView",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "gbg",
+          "name": "GBG",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "6bd72377c345981c",
+      "title": "iProov urges UK to target infrastructure behind AI disinformation",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNR3VpeUpoVnN1b1B3UWhJNDBCX3YzNWZjaEVMZkFJUG9kbUg0LVJaTi1SdXdmcnBnOUcwV1M4OWNabkhrSTVoUFMzUlo5V2Jld3l2WXIxVy1qcU11NWIyc2kxNWRDYVo2UEVkTjFxbjJxVll4V2dYS1M1QXptaTZfd3pZbGRraUw3WXFDZDZucTdGNVBuTmtuYWxGQXlEa1RoYlJKcTh2Zw?oc=5",
+      "date": "2026-11-27",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Biometric Update",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "iproov",
+          "name": "iProov",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "b477403b17046f6e",
+      "title": "iProov Wins £45m GOV.UK One Login Contract",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQR3IxXzZHTlM4bUl4UmVyNUQ2OTdrcmdhcUFGMTNWV0hHY2Zadl9RcThRWlFhOHpOTlRPM2l4eWcwSElXalhjQzJUYThoVnVPSFBsZXZXWlBONE9pU0hPNUQzSktmSmZrdFY3cDVKNFNkM0I0UDNfbzdqWGdKNXpubjZoNV92aktiTFBoZDd6bkpEcE1yVk83bUlGZ201WFNtTUZDUEJnNDBIY2ZfLWhzakZoamFVZw?oc=5",
+      "date": "2026-11-27",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Security Informed",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "iproov",
+          "name": "iProov",
           "reviewed": true
         }
       ],
       "region": "Global",
       "rule": "vendor-marketing",
-      "matched": "partners with",
+      "matched": "wins",
       "route": "skip",
       "priority": null,
       "reason": "Vendor marketing, not news for buyers.",
-      "first_seen": "2026-11-27"
+      "first_seen": "2026-11-28"
     },
     {
-      "id": "eefa2261ee95931b",
-      "title": "How Did GB Group (LSE:GBG) Grow Its Identity and Location Businesses in This Week's Half-Year Results?",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNTVJUNXFOdl9CTkFoMzdES2hTS0N4UW5yYmozYkpzQXkwNWdHcU55cHlHNk1rbXgteGt1YV9xLUZBbDFvemczN01RajVYVDRPNU9yUmRkZ1RhOVpMTDVVZ3hlVjVXTUxab0NucGJBVUt2c2RNTGlpMW9vUFJETXpndXpZeFlrMXhXTmIyUXEyOVlYczJEWWZFb3RZNEdjTEtsU3kwQU9RdkJpZGQySFJkeFBiS0ltMTgzTV9oOHRrLWpVMENncjd6VWV3amMwTWUzd2o2YWR3?oc=5",
-      "date": "2026-11-26",
+      "id": "aefa339be320dde3",
+      "title": "Jumio Study: Only 7% of Consumers Trust Dating Apps to Protect Their Personal Data",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQYmdOR183Vk1weXd1S0x2OGd3cS1QeGJQdnk5a3NiS0pHcFQwWktvcXNmcjBvWGwwOUJPRFhKZ2dlMjFzN0dHY2VWNXlZcHFza2hlTlNhWVdZd0t3N3h0ZFlTMlpFRjl6NnFFdlBpY2lEUnY0ZERHRm0xMkVGR0g5bFVKdkJsX3pZR2w3OXg3UmhGQdIBlwFBVV95cUxNNEtCdjNZLUhQTFZlLTNZNEdidzktZkNMdzluY082VWROdnRQNlhVT3pmUkFXZWlJU2hTWmd3RXVrZU9wZVQ4aVFuMHk1VkFIcUY5SV95TzMxcTdIdnNWbHpZNmxVU3BKWEd3b2U3c1RmRnVoVGhfYUN2eG1zSmhSZWV6NFNnSGQ1WmVOX2owUVZZU3dIS3Fj?oc=5",
+      "date": "2026-11-27",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "Kalkine Media",
+      "publisher": "Global Dating Insights",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [
         {
-          "slug": "gbg",
-          "name": "GBG",
+          "slug": "jumio",
+          "name": "Jumio",
           "reviewed": true
         }
       ],
@@ -1383,36 +1275,55 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
+      "first_seen": "2026-11-28"
     },
     {
-      "id": "791d13b0d588f0c2",
-      "title": "Completion rates and eID top fintech priorities, iDenfy finds at Singapore FinTech Festival 2026",
-      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOYVk4QTlxbDhPRVFHYTVOWHY2bDhQU1ZrdXNwYVB4QmxPREw2QTNBMF9UQzhxeHQ3aXdLcGFhU1NZS1FXV1Y3R3VPc2ZHVWlkYVpwbFhGOWZabW82dW5BU0x2R0tSYXNHUkRYcGl2eDdwbXlsS0lXaDNna2tOZFlZSjBtNlItcDZBa3hsRWcxQUVqR04tRVN3WTBpUElaazNTdS1sWlRXSEZ1Q3dodmxaODBPNzhEcVZnbFN4anpVM3NaX2wzZWdIcG1iOHd1VHVyQlJsWUlPaXZwMVZrVlJIejZmY0ozTVBFb3NNaXdHWFdhRVZR?oc=5",
+      "id": "da2a29fe2ce809dc",
+      "title": "iProov wins GOV.UK One Login contract worth up to £45 million",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBjamN2SGNRY0xCdWdnRmMxNndCZ3MwdnRVTEpLLUhoT1hpbUF3Zkd4Vjd0QTZsUHFsVUh2UzA3M0EtbXNtMURWTk5IQmVKMGJJMXd1Z0lWd29CRHRDTzZkTF85cnBBZy1NUHhiRXcxbzlyTWhSQTJj?oc=5",
       "date": "2026-11-26",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "FinancialContent",
+      "publisher": "Security Journal UK",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [
         {
-          "slug": "idenfy",
-          "name": "iDenfy",
+          "slug": "iproov",
+          "name": "iProov",
           "reviewed": true
         }
       ],
-      "region": "other:singapore",
+      "region": "Global",
+      "rule": "vendor-marketing",
+      "matched": "wins",
+      "route": "skip",
+      "priority": null,
+      "reason": "Vendor marketing, not news for buyers.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "ace6d8d539104cd7",
+      "title": "12 Fraud Detection Software: The 2026 Buyer’s Verdict Guide",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5CQUFLSTE2OVZYdUxmdi1LXzFtV01VdENIX2thNzc0c2VNak5ucGlHeDVVNVZWWk5sQlNydWowaXRGOElPUWttT2w3ZFIxMmgySzVpWG14YW9NVFIzSkJhWdIBZkFVX3lxTE9uWmpZNzUzeVVVQ2c2TjJQMmpueFp5WkJSeFhuUmFwN0haSjloMWNpZnRDM2RxOTgzWmc3dy0yVXF2ektQU0xqclZZalZmVnZ6LVZfY3RzTHoyTEczYVpCanhzTU50Zw?oc=5",
+      "date": "2026-11-24",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "GBHackers News",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
+      "first_seen": "2026-11-28"
     },
     {
-      "id": "2f0f1f0ad0af0922",
-      "title": "iDenfy Flags AI Fraud as Fintech Priority",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNY0N1UTVVRVBBaV9lMVpJZVFrNzM0bGt2YkhqMzR6cnVHQXZOdE5CMEY2U0R2Z09DX0x3bEkwOW10c09MMmtrd0tBcTh2X1N6bG12VkpEbml2MkJBT2p0VXZ0eHdfUmZiMUhhQU1nSVBHMHBZXzdoVGFYeG5KWmpfenJxOHN0VnNJTUE?oc=5",
-      "date": "2026-11-26",
+      "id": "9912b644c631cf26",
+      "title": "Persona Links Missing Sensor Data to Selfie Fraud",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPN0JvREx6ZzAwdU9ZN0JEczdKY1BWZjJGM1ZZTG1CX2lxZlpGWHNOQkJ6SHRYX2NFd252NFpIV1JPZEpQdDVFdGFTa0JtRERRcWplVjBHMlhQSWd5S3gtdFl4SE5vTlA3eUtJaXVoUVBIcURKNFdkb3ZBNzcyTUR3cDJJLWpYcGJrRkVaTVJlRWsxdmZzT0Rmd2M1WQ?oc=5",
+      "date": "2026-11-27",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
       "publisher": "Wisevoter",
@@ -1420,8 +1331,8 @@
       "needs_primary_source": true,
       "providers": [
         {
-          "slug": "idenfy",
-          "name": "iDenfy",
+          "slug": "persona",
+          "name": "Persona",
           "reviewed": true
         }
       ],
@@ -1429,252 +1340,56 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
+      "first_seen": "2026-11-28"
     },
     {
-      "id": "9f6d7aa33534be3b",
-      "title": "British firm iProov wins GOV.UK One Login contract worth up to £45 million",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNTUVla0NyLUdVUmpnS2FVaEpvcHJFVFVXeFVvYVhpNW41M0ZDSzY3TzlGWHhWNVY1UDdtdjNlMUhxM2NzTzBNRG10aERYWk1iTDBXT2NhUTRydmhvcE5OSnNpYVFMY0N2UlBvaHQxbi16OUd1T0NlMHlWWUZ0aGFwaWUxMW13X0lmQktXODN4UzdUNXN5YXVDaVpOSVZueUh2?oc=5",
-      "date": "2026-11-26",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Planet Biometrics",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": "iproov",
-          "name": "iProov",
-          "reviewed": true
-        }
-      ],
-      "region": "Global",
-      "rule": "vendor-marketing",
-      "matched": "wins",
-      "route": "skip",
-      "priority": null,
-      "reason": "Vendor marketing, not news for buyers.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "089e26e7677fc62a",
-      "title": "UK Scraps Digital ID but Keeps One Login Selfie Checks: iProov Wins Up to $59 Million Contract",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSjFPYi1BNG1jdmxubWw2dFFZU3FvWXN5X01hbDlGek1kUkZSZXJEWlZaak50WnhmYU9sX1RabHZscUg5VUJ2X0c0TTlCd2tmR3hJRmxsTWY5c0tJVEhfLXlGYU1XeUt4TUhRTS1fSnBXU1cwZ0Nab1k5UjlZb0FwaHRoemJlX2hKZUxGWm1WTzNzRG9PTlZUOFFDcGVXN2ZBWUdseWRnOV9SU3FCX091QzQ3SVZHc1hDbHNFNDRCSThLeVBlRXZwbXRicEpTTVpwSGxn?oc=5",
-      "date": "2026-11-27",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Tech Times",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": "iproov",
-          "name": "iProov",
-          "reviewed": true
-        }
-      ],
-      "region": "Global",
-      "rule": "vendor-marketing",
-      "matched": "wins",
-      "route": "skip",
-      "priority": null,
-      "reason": "Vendor marketing, not news for buyers.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "192733cd2bf49042",
-      "title": "iProov to deliver biometric identity checks for GOV.UK",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPZ0YxNi1ETHRZbHdwT29kOHhNZWVhejN1OXZQX1JQN3dfOWpTT3hGZDVjVTZrVUR4aUVDV01QZUwtYkk4WjBVWGNOOTNwLTRFSEU1XzBrOWUzaklQOU1CVFYwMVRPRC1lQ0hZdjg4VjRtVXlzWnBrQU5XR2NkOW9PaWJQTldwOTNLbENJN1ZON2VqUEpwS0Z6dk1RU056dzk3Z0I4YjhQQTl2VDRQZ2FvMllNVQ?oc=5",
-      "date": "2026-11-27",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "SourceSecurity.com",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": "iproov",
-          "name": "iProov",
-          "reviewed": true
-        }
-      ],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "b3e559974b2f5553",
-      "title": "iProov wins £45m contract to power ID verification for GOV.UK's One Login",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOLTgxLTdzQ05IU3R2ZDgtaFItMV96UmVIckVUOWk5ZWlmeDRNQTNaVGVNSVEzQkZZR0VNYVNmeVoySU55TEdvTGk2VHJhdHUyUVlmSEtCN2JfM3FQVWh5X2ZSblNIdUFBSUhIVlZsY3VqaDZXOGprWUVrcS0xUWF5djA3dExkaFB6cndJUEpjYndsOFlDakU1U2traHBpY1JKaEwwal9YR0dDVUIxY2pIaDhQYUhUWFJSUGpBX01SMXUwcWRJTkltcg?oc=5",
-      "date": "2026-11-27",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "FinTech Futures",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": "iproov",
-          "name": "iProov",
-          "reviewed": true
-        }
-      ],
-      "region": "Global",
-      "rule": "vendor-marketing",
-      "matched": "wins",
-      "route": "skip",
-      "priority": null,
-      "reason": "Vendor marketing, not news for buyers.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "7f56dd9de5369979",
-      "title": "iProov secures GOV.UK One Login ID verification deal",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOenl0Nkk4Q0ZTTm9wM0t6d3dxbW9EWUNoQUN2UzFON01TWlBpQWZRTHhObGRwREo4bjhwWEJMektpdTVnLXQ0YU52QWwwVEhMcnZZU09oWW5YS1BZRXB0VGgycC0xN1lNZDhxSVZ1aUtiUUtKak1xYWZCVnBRdVQ4djNRTktkMHNWS2d0UnNhSlZZSkNXT21uZXF2YWFxdF9nMWExb0FOdC1SSmRtel9RUlRaNA?oc=5",
-      "date": "2026-11-27",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "The Paypers",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": "iproov",
-          "name": "iProov",
-          "reviewed": true
-        }
-      ],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "7fedb630af47b22f",
-      "title": "iProov Secures £45 Million UK Government Contract for GOV.UK One Login Biometric Verification",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQM2ZzbzZEd3hzTS0xNEZVOHdiQkpUYUZIN0tVVm1tc3A2VVRJaWh1Y2UwaW12OWlRTHNkR1hjV2lHNmJlMGRNZjVVMHFPYmIxVXBESjEtMlVTWVBWYnBOcmlvbkotYmFTczIxcGMwUjAtVzZvRVB4NWxzazQ0S3g4dGVzQ1pUVGMwY2d3eklGTHlSejRFajJEMzJlTk5UamtsQkwtYVA5R1Fhdw?oc=5",
-      "date": "2026-11-26",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "FF News",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": "iproov",
-          "name": "iProov",
-          "reviewed": true
-        }
-      ],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "001fdb764bec369c",
-      "title": "GOV.UK One Login keeps iProov biometrics, liveness in deal worth up to £45M",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQVTJfQUFjdEJ0c29BQldabDVMcy1DdnJYR3RQOVQ2WVU5UkFHUEx2VXNGcnJ4QUJSWFA4bDUtcmdkbzc3VFBvRTZsdGxXbnNJcmtpejBjTUVfUjhxM3dkY0o0RURBYW42WTBtZTFEUUdSTTV4X0lpdmJOU0VmTndxaUxHc3U4VjROcGdLVWQ4OV9LOTJZR2F1MWdOaGFidVhkcHFoVTVXY2VIbmZlUjVkQXBR?oc=5",
-      "date": "2026-11-26",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Biometric Update",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": "iproov",
-          "name": "iProov",
-          "reviewed": true
-        }
-      ],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "71d090cd7687180b",
-      "title": "iProov Secures Up to £45M Deal for UK Government ID Checks",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9HcmowM2syOHdHUDU3VEp2Nk4yRnVxS18tTk95V2ZabGM4azdFdXhFbzdRWnVuYjhyRk1DVzAzLWtnamxYa0JsaFlJSUVFbVNqdUFvNzZqTmkxeFVFc2Z3a2kxVjdtOXQ5dExNMTRlNDAyVkU3dzRrVFA0NA?oc=5",
-      "date": "2026-11-27",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "FintechNews CH",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": "iproov",
-          "name": "iProov",
-          "reviewed": true
-        }
-      ],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "9b9c8700cf192275",
-      "title": "BTS and Veridas Forge Global Alliance to Combat Identity Fraud with Biometric Authentication",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOb1B5bHVvelBYV2ZiWUp3WHl2QVJBY1JTUTJkbDQ3QUFLMEQ5S2FBNEhfQUMtOFk0endMRUV6X2xibkN0X2Nhc1lUYUZHR05SaFpCRDB3ZV9lVEVrUEtXUFFqM1hlWi1mYUxzSnQ4Z1BobGl5bHMyekJQNlZTeFRHZFN1TXVEbGZSNDRPSzNzZXhnVllWQVdxUFZHR2tPVG9lelpzcVJ3UkY5WHF3?oc=5",
-      "date": "2026-11-26",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "FF News",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": "veridas",
-          "name": "Veridas",
-          "reviewed": true
-        }
-      ],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "90848bdfc24df944",
-      "title": "BTS and Veridas pair mobile network signals with biometric verification",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOOEZ1ZnozcEE1UnFXQVlrSlBxX0NQa2tlZXBhSVk5YzRFbGl0bmJ2dHNvelJDRkN4SWFFcVMxREhpR1J1RDFPcXpvZDF0TDhldkN2LUNtYlpxbE51Z1ltYXNtTWVVNkFoREZjZng2Uk9FbDdTN3RWU0M5ZURhU24yWWFlOE12NkVmUXQxdjNQVzlSVFFHRERqYXRLY3ZWZG9XN3Y2YUkwZV9xQngwTkRn?oc=5",
-      "date": "2026-11-26",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Biometric Update",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": "veridas",
-          "name": "Veridas",
-          "reviewed": true
-        }
-      ],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "9aff21f936de463c",
-      "title": "Kalshi promo code STAR scores $25 bonus for NFL Thanksgiving Week games, NCAAF",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZ2tRYzZYZlR1dl9KTktONTM2TzBMQ3NOZTFSLWQ2MDNjSGUwNEVxbDl4cUk1b25meklwaFBGb1BmYTJVSFRTNXE3dUtfTWNyaDVtTGVjSGNHUld0NXhaaThWRmM1NF9wd0tOMV9CSkRqekpKXzNmcU5IUkVJeGVwQlNLbFJPcDRaYWR6eXptb3B1ZE5uQXo5Ni03eno0UjlQVXdiWkhzQ1J1WWpf?oc=5",
+      "id": "764c27399c927127",
+      "title": "BTS and Veridas Partner to Strengthen Digital Identity and Fraud Prevention",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA0c090d2c5eWVpdTlxT3ljZTdPN3otc1AwNlRwQnk2VWxKWDlxb3ZvS090ZFB4UDBDMmpxVTBHSzdqLU1PUUVPWHI0RFRuZDRYVGVBeXF5Nk1oMzlpWnBkZQ?oc=5",
       "date": "2026-11-25",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "IndyStar",
+      "publisher": "TMCnet",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "veridas",
+          "name": "Veridas",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "b792bedf4052da45",
+      "title": "Vertex Announces Extension of PDUFA Target Action Date by up to Three Months as FDA Completes Review of the Biologics License Application for Povetacicept in IgA Nephropathy",
+      "url": "https://news.google.com/rss/articles/CBMi5gJBVV95cUxQa2FCU21DUmZmVkZsd2plQ3d0OUI4dnVnVE9naTRrQXVhZldDM2MtcFVWdG1KaTFCYzBkUVg5UmFLeUw4TkhRNEdPbHdfa283djVPN2VOVHMwNTdSdHRSQ00zN08yeUVldnVIMXh3bWpla3JselVUUy1rMmdQZ2lrSnJnUm9LSUFNclpKY0IyVTJlaXdiQzc2aG51RWh5UGtEVW4xN0loTHNXYXVpNFVoSC1uTDNoYm1hdG5JeWNIMXhwN3h5WkszR0JGZU5SeTNjdjN2alJkS1dlbkRwb2Z1UWlfMmJ0b0ZVUWxjZEZ4QWIwU3JXV3ZKSDRTc0NLSmhtdEtxajNHVzNFRzhkVk5tN3VEaE8zRlFmWmdTMEcwNi1sRlE3aHIyQjRIaXVzVHNKdmR0TFVHSFhkS0dRaXlGNlp6c3N5QWNEaVIyVzRvanllU3FJbEgtU0x1VHh2eThhSU55cHJ3?oc=5",
+      "date": "2026-11-25",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Via Ritzau",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "8f31ec4d9c651635",
+      "title": "Polymarket Invite Code SBWIRE: Get $25 for NFL, NBA, NCAAF & More",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQN1hvbzBrQk5VamFGTTJfd0ZpNGMxWUJnX0lBNEt4MGRMZ1hMUDhoVl92UGd2emZ3MU9DaDROcU9VMy1RdnkyWWd6UE1FV1hfMzhaU3ZiVjFzNWtDWXR6ZUlZTVVWVlZwdzl4eUhNNFdnWHV5QVA3WDVRcWNHZDlpMWhjY09OVFdQcFVVQVJ5UWtQdkQ3V3ozcl9ISTVYUDZfSVBERk5IZWZNVHlac0R2T0FFSFVuUXFvWFhVQ2hBbFVveFBU?oc=5",
+      "date": "2026-11-24",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Chiefs Wire",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [
@@ -1688,16 +1403,39 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
+      "first_seen": "2026-11-28"
     },
     {
-      "id": "ef6dc5ba106f9098",
-      "title": "Aton CEO Woo Gil-soo says AI transactions must be verified for legitimacy, calls for PQC transition in finance sector",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9DNEFkTmlXb3ZDamNIX2pzT2NFeHJpNnRfZ3RRSE1jVnZ6S0d4MXFhcS1sc3IybUpmQmtqLVBiRHhUY0gxMGt1TDJ3a3lMRW5wQk1XS0RQelEwRUZsb1J3b2NWT3lkd3I4RW9F?oc=5",
-      "date": "2026-11-27",
+      "id": "f3e4ba8b1a610032",
+      "title": "CFB Kalshi promo code “SILIVE55” enhances $55 Friday night bonus for Texas vs. Texas A&M",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPaXFEQ2tJdFFwTjhlX2hsRE9uTF8zSENsYkxnVzRpRld3a2dJOTVMRTlwQ3gzLVk2Q3d6Q19hZjJ5RTBNNzB4b3JTczMtNTFyV1JHeFRqM1hLd1N2dlFIVE5uR3lFVkdKM0tXaUphU3F0T0xqcC13RWdsbElNSlRLTzZjdTVSY2pIbzlsX25MNGtsNEpiZll0T2ZHMU5lWkY1UkJNNEJvc1o1UDFBZndLTFNjNlBuRWY0a1dvc29JMlVLekNSaGc?oc=5",
+      "date": "2026-11-28",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "머니투데이",
+      "publisher": "SILive.com",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "codevasp",
+          "name": "CODE",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "0e2f27e2cf169f4f",
+      "title": "How to Buy Bitcoin Anonymously Without ID or Verification in 2026",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE50RmpNV0RJXzVCbnZpMXA2NjRpMngwOTY3VnBHa3gycW5yT2Rvd0JZYWJpVnFJVWozbnVOdFVEOENrRHBYcGtsVGQ2dVJ0bDF6ZXNhTGlCX1hoc3JzWDNXWXlnMnJSMTNaU3c?oc=5",
+      "date": "2026-11-23",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "99Bitcoins",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [],
@@ -1705,16 +1443,16 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
+      "first_seen": "2026-11-28"
     },
     {
-      "id": "799a8bda44ad68c0",
-      "title": "Mandatory seller identity verification from January 1, 2027, and multi-channel data integration for tax management.",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPdW5Cb2daYl9jQUVTU0pSbWRkb3U3YVBUMlcyZmNDLWdRendCeU1kSmFONHAtblJDNTZYLWtlRlJTV3RGOVB0WDJYQ0M4Y0ZNbkxINmJ1TnRkZnc4ZGxfQTBLYXV5SHV4R0JSdXRReUdrNWpabnc5bVlUOVZvMXhjbl96X054N0JIX2hsSU55eGpIc29UdzlCT05JNlZnaEl4bUN4TjhRVU9pcDZLak5OTDVkRjQyZndDMUs0ZFRn?oc=5",
-      "date": "2026-11-27",
+      "id": "ca0d77c9a9fe0713",
+      "title": "How to Complete MEXC Identity Verification (KYC): Step-by-Step",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE52VW5UREFrY0I0eG5nYnJTYmp4am5MblhCTVQteTdTUG04a3VuUXczZkpqb2hlNmRndzBQcVdNdHBkU0VDY3dEcjlkUnZsNUNTMmNLaXRRVlZtYS1FNTFoV1RxYXQ5UHBHeU1mdlVYakFzV296SE84bGRJSVVoUQ?oc=5",
+      "date": "2026-11-24",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "Vietnam.vn",
+      "publisher": "MEXC",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [],
@@ -1722,12 +1460,1401 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
+      "first_seen": "2026-11-28"
     },
     {
-      "id": "32612e4af82f623a",
-      "title": "Uniken - Identity and Transaction Security",
-      "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE13RDhTOThzRWdxMmo4Nm5xZm9pMktWeFB5QnJZMHYxblA3UGRRNjlLNGV3M2Ridkh6VFl4V1lRdw?oc=5",
+      "id": "89bcbcabb78c52be",
+      "title": "Buying a TikTok Shop Affiliate Account in 2026: What to Check Before You Pay",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeUl1SHU0ZEtIVEZGek1BdHNiRkdSU2gwTGlxVGIySWl1emE4RFdiYlhDeGVIbnM3OTVyM0pFdXg0eEI4ZU5HSm05a1RwUk5PZzJFTUVpcEJTcDdZUHNCOHBqdEFfVmx5NXJkTGhHOFBicW9UaU1QNUJfX2ZyVHdGekpXb0FtMnFXbnVlblVlOUhIUWJycGVPbldQVHFBMm9wYUE?oc=5",
+      "date": "2026-11-28",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "TechBullion",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "6215110b0b50b797",
+      "title": "Spinsy Casino Review 2026: What Players in Greece Should Know",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1UM3M2X0Z3TjZwUWJhYnFWUUQyZGw5dmZWVkFCR0VCV0hjSk0tVmtUdDhxd3NQT0FwNHplTkVyM096UWVPUW9GQkRVUjBYMHMxX1NXeDNLLTc5ZVlJQ09GSFVJTQ?oc=5",
+      "date": "2026-11-27",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "PM News Nigeria",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "other:nigeria",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "58828e0fec840cc9",
+      "title": "Researchers Halve Quantum Dot Emission Line Width",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbXBYZi1leTZQRUp1SkI4UW5UeWROVTVJak1tWGJsYXluY01nMjNmOWZTMkZlSm1DS3E0a3llTjh6Y2FObld2Y0V3bkpnd2xwUVFNbWVBS0hpazdUX2dLdjFiXzFMZi1WeUVrWGc0ZDBSc21JM3VBUENGSGhJNVNlSzBob2xJeEk2Y2RtOEVB?oc=5",
+      "date": "2026-11-27",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Quantum Zeitgeist",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "width",
+          "name": "WIDTH",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "1c711885407cc36d",
+      "title": "Huawei’s AI Memory Design Has Twice the Interface Width of Samsung’s HBM4",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPMTRzNEZHRGVYSzZURmwwZmtFRTV5THE5dW1aWC03U0Iwckl3MktlWGZlOFlLcXBUR2FOT0xtbTNmeTN5Q1B1Zk9vMWJwR0YzekQwUjZNb2d3X3h4MWtDZ1I0SHpGSGFQSjBmWW16S0haa2UyZTZya1pjWXhkVFJ3ZGhwNzFQcmxRc1dUeXFFSFQ1UDQ?oc=5",
+      "date": "2026-11-27",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "TechRepublic",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "width",
+          "name": "WIDTH",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "35d936ae13bd69fd",
+      "title": "Commentary: John Cole’s Tennessee: Margin of victory",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQXBJT01hR2xhdjQ1Rk94Zi00YUVJejNjanRYcnhUemxNbWpsc1RwMEpqdmV4YU5wRUJUVUZHeFlnNVVDdEpacDJkZFdEY0RDV1Nmc3BkLUZMSFFId2Q3Q3dsb2tWVXJ3d25FS2dZVGM5cnVKa0hYY3pHUTgzV2ZXTlA4NU5uQQ?oc=5",
+      "date": "2026-11-25",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Tennessee Lookout",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "aaec7e7a8b047c39",
+      "title": "5 Best Hiking Shoes For Wide Feet in 2026",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4wN3ppM1o4QmVfZm5VNFFwTHJkcVJTMUNLVWdOTHRxM3hRV0pTaW42bkpSTjR5MXBDZkZmanVrSWFHNFl3dmNEQS00UXg3ajNFTkFGdDdfbkQyYVdYTEloMA?oc=5",
+      "date": "2026-11-25",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "RunRepeat",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "cdcc037a92a88965",
+      "title": "Ferromagnetism Found Beyond Flat-band Limit",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE84S3paQmRkZE42NHFXZEhqTkgtU1V1bGoyRG1OSWt6Tkpmdi0zRThINHRCYU16OFh2NFh4WmdkSHJ3elY4UE9JQ0JPZGNqUktGVkNuc28yMlQzZU9fMDUyLTdtVm9DaE8yWlI3Y2hlUVFFRVRMRHpyaEx4WDlKQU0?oc=5",
+      "date": "2026-11-27",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Quantum Zeitgeist",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "2ceddb436939f033",
+      "title": "Black Crows Atris Birdie Review",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSDAwb2JhNUg5aHEyVmtmM3BZQVZVWlVlcEdFbk5XYnN1TVJ0ekoxV1BJMUsxNnhlOTFzekVFSF94OHpkc2xseGhkallLb3VadVRTS21seUpSTXN3cXpVM09YbmtIam9ycWdCNGdUbnB6eVZsbXVuMFZjYXZpakUwTmQ0NllKU2xSY0M2MEdUcmdyWHhJdEl2YldkWUV2cUx3aXc?oc=5",
+      "date": "2026-11-25",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "GearLab",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "2bd38357f9267101",
+      "title": "Ranking 2026: los 5 monovolúmenes y furgonetas de pasajeros que mejor alojan tres sillas infantiles en la misma fila",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQNE4zS2x4aXp3YmN0MGROeDNhWDRqZGRmY09SM1ZKcTQtTm1BMy11a1hIdy1jek9BOGRKcUZ3V0dUdjhTMzBpMEMyR01SRGhmNkdnTW1ZZ1dmY3NTc2U4enlEaGU2ZVBpbEZ3eVlMM0dtbmNpZVhLSTA2ZUR3T2loRExQbnF0d0hmZURvMDhsZzNydmRsd0ZURVFsM0pqdzJNdTNsWU9SQnRIVWdWVHR5anota0piOTFXZVlxUk9fY0hIbzFld3NOWmhSWnF0Y3NvdWVyWk9WQU1Idw?oc=5",
+      "date": "2026-11-28",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Highmotor",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "4dc471b959be91c0",
+      "title": "Best gravel bike tyres 2026 and how to choose the right ones",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5pSTBkbi1KSFpuMnh2VWtCaWhYd2oxSkhGTUJ0eVVWR093TDdDRXJNQnVOX2p6YWtPa3BKX0xFb0JJVkVEN1B1am1HXzRUdzFZOXdtaFBOc1FBSUJCLU1CaW9HU3JzUmJWdThSX1BpWQ?oc=5",
+      "date": "2026-11-25",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "www.cyclist.co.uk",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "8a7c19979655f55e",
+      "title": "grace kelly face cc | anatomically detailed + 432hz (requested)",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ySTdHQURwU0Z1cm9GZVBsTXhaRUN6bFlKM2xXUDlYYVduNjRaend5V05Ob0N4dlVRaDRGZkZ1N3ZkYk9aYy1icXRLOWc2N3JHVmVBNmdXa0MtdFJo?oc=5",
+      "date": "2026-11-27",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "YouTube",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "f7126588c879bc7b",
+      "title": "The Coalition’s historic win is one of width – not depth",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNaGlCWWM5ZU5feWxZRWZYSExoTUpMWi0ycXo1bzRNSmNISEVtRUdZYXduanFBUVFRbHBYa1RuRFlzcWcyTmNvaU5Cb3RPSmktUEVKOG9tUzJLdUNySVkwckE5dTlnZk81TzZldjRFUjdSWWEwZlozNFplWmdOeEdLYTI1MDJZTHBmQTJKYkJLRm1BR2c2b2VIRXdwQWR4ZEk4U0hyaS1UUFdackVGZ0tOR0xIR0ZoWXdhZ3Nn?oc=5",
+      "date": "2026-11-28",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "The Age",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": "width",
+          "name": "WIDTH",
+          "reviewed": true
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "4dfc6122d7d5437a",
+      "title": "Scotch Whisky News and Updates",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBlQ1RTUGFaWS1vYXRwcEQ0ZWRvZG1wMTZ1UHRYV010TDcxLVpFTEEtZURZTXBISk5SYUtJd3JKOUZEMnYzRWNlYg?oc=5",
+      "date": "2026-11-28",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Adgully",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "8e77ac23ab6499b7",
+      "title": "Telugu film News and Updates",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFByQlUtR3BUczlOZ2stNmRaalJEbG4wYVE5bHRFTmVjQU9jMDVxQmtESnUyVVBKMmhNQXo0eTBWZEtieTdhanlsUA?oc=5",
+      "date": "2026-11-28",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Adgully",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "645097f390aee2ae",
+      "title": "Reel of - In The Beginning...A Voice | Dr. Sandra G. Kennedy",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE03eUxyVVROcGp3ck5WS3VjWW9lTnVIRFQ4MFRqWkFvYmNCVWhBVVR2YjVIcGlfV2pUTzNZb3ZheDVpS0hsMmVNellBTjJDaUh5R2x3?oc=5",
+      "date": "2026-11-24",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "GodTube.com",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "2e29f1024a386064",
+      "title": "La Primera ☝️ Resurrección ⬆️ y la Segunda ✌️ Resurrección ⬆️",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBvdjBUdlBnTk40Q3NublAzcUVYcDlCczFFaE9za2sxYUhGX3kxR2t4VG9ieU9NZl9HM3dDRFlqSEVtQWlZWHZrWDdhLVotLVQ1WFNj?oc=5",
+      "date": "2026-11-24",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "GodTube.com",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "4b771d20fc05d3c1",
+      "title": "Fenergo revenue rises as company pays out €104m dividends to parent",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNSHNWaC1QSDdRZmtjWTFEcTBRQklVMkt5YUlMdkQwcHNSZVZLUEhadDFOZ0pCS255dlVUNG82Q3k1cHQwR3RxNkVtQmRqOFB5MnBvWW1KRG9uZE5uVEdudkpYTGVidHJiTkJWQktOM2dBb1R3M3M5amdKSnpWeXp6ZmlJZnFqaVFBczd1V2RDQWJidlQ3cl9LbDNiQmpWUl85TmpVbzBjSUpYT2lTcE1jOVlNOUY?oc=5",
+      "date": "2026-11-28",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "The Irish Times",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Fenergo",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "f7d88143a39d56a8",
+      "title": "Fenergo doubles profits as its weighs future direction",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPcGxhUHhFYnlHZWptM0Q4UXJUNjZqOWp0dDdsNkRKYlR4akhUNTJjSE56U19XMnJfZ0k4YkMxQlg0aVBna2RZNE43T3UyX3dOaEpjdE1RVmU0RGNTZ3pDcmMtejBkY2hOalVFV3BWVU5kVzk3Zk9FanJIUE5lWW5QYWR1UGJvRXQ4M1NRcEVRd0JBQQ?oc=5",
+      "date": "2026-11-28",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Business Post",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Fenergo",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "dc3293f00c4f5d95",
+      "title": "RELX (LSE:REL) Stock May Be 33% Undervalued On New Government AI Tool",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZlU3V2V4Z0hjZlljQjg3dFRXTi1fQVFRcGJjNkNhWFU3QzV5WjVEbDZMeExkZk5XekRUVUREdkR3ZERwR2FGNGgxRkxmRHp1alBfRVo4bkVaaVhWUEtXd2doYzc5TmhOU0ZjUHNVY0lPVnNHRlFVS2c4LVJkUnhjemJkbFlXdjJ0b1ozamJ0dWtPUTRVbll1cGhQU3VUR0s3c2o5aUJUZXdDVjFTWHlNNlBnQUl1TUtkVHZkbFBsaDJnYlhtVkxtbVFndFNrWURSX25n0gHYAUFVX3lxTE1WZmxYZHR6dlFnZ05pLTBBYmNtRlBwSDB3QjF1MUE1MmJka1RaYzJlVWZmUVZ0ZUhBcjlsRWNlU0tpV0JxWW0xTFB5VUlqNnMzRnczVTRucE9iUDhBOVkzWkViMzBIZXlzSkpGU19aVmVOUzhKM1dqYUFERVNYWklsY3h6VlJYSjUwXzIwM3Y4XzBONlR6QnNmNTA2RmhidHJCNVppTjd1cFdOY3Y3X3dPOEhPaXdsUnVMWkktMm5wcDJKemZ6ZS1zNEtmRG55MnBuSVd0bXJHNw?oc=5",
+      "date": "2026-11-23",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Simply Wall St",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "9cfcc1e43d96b355",
+      "title": "HKUST Researchers 3D Print a Titanium Alloy That Keeps Hardening Under Strain",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQd2pMLXJpdUFLZFM3RGdnMHpVdTAwT3Z6blNHYVJ6MUVRUG04ck5pV240d2tjZXJkakdpSHExcE1wcEp5My1oTFV4Mkp0dHlYeGFEd3FKMkN2TUM3TFE1bXV2M3RqWThhVEhiZGdqcTRsTjRqNVFpb0t3dDg3MWF0ajM2cHVqTGg2eGxvODVHMDd2NDFfTDlvWGtZa01IZURZXzg5QS1WTElpZw?oc=5",
+      "date": "2026-11-23",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "https://3dprinting.com/",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "fec089cb2d74d48b",
+      "title": "Best aluminium bikes 2026 reviewed",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBVVm9zMHRvYS11dnhUMGlxQW1NMVp4RTg5bFdoLVczRWdwSUJ1d0lzX05kOGFxdWNzazBfN1RaMTVwWlFuaEFaZUpuTWs3UHNxanhvMGUwVWxxdXRmXy00cVI1bE52M2JJcU9mMC1SSG15Qnc?oc=5",
+      "date": "2026-11-28",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Cyclist",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "8fc781f60a9d6690",
+      "title": "Cleveland Golf unveils all-new RTZ wedges featuring new steel formula ‘Z-Alloy’",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWmFHVHAtYUVkWVVxaUVHeG9NekQzOG03a0ZqVFpISkJFVVdkMnRhQXBFNklWY1VWdTVTTjhWYlFfbmpFMkFGOExGUU9FVEpPMnlfSXRJYVJPRkhaLWFPTFBsaF83MmFISFVMRzVOWTFveU9WREtEZ3k1SjRDYzhTakxjVW1HS3hybllNWjBKbGVJX2lWVzI2QlNpbWlQRnZ2UkJlb1p5WTA?oc=5",
+      "date": "2026-11-25",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "GolfWRX",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "21c594d746b1f2d7",
+      "title": "Ferro-alloy Resources Stock Price Forecast. Should You Buy FAR.L?",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBYTExsNUpmQmRDZEROVTRrMUxMYlJNaV9FWVlNYVRkbzVUZzNPcjlmblRxcUZ5U2Z4VTRTbkllamc3WjNNS2NEUzN3?oc=5",
+      "date": "2026-11-25",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "StockInvest.us",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "81ab2ae217986dcb",
+      "title": "Sandia Trains AI to Predict Alloy Behavior from Electron Fingerprints",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZVZ6U3NjTHVuM29WQjd2OWNHVmlZTjVSbFVLb0lsb2I0Rk1SRU1fMGFxVGE4ck41WjNOaXh5dENZbG9OQ19KMUtubDNhQm1aRjdXTVVfNzh3SVAyWHY5UGZERUlXVlVDUU5XbkRWSGF4cU14cVNmNjJlem1vVUVPZDNWUFRjbUJvdkR1ZW00RWY3eGRLaDFYZzBUMmlVUFBLcmZaLUprNUFZamM?oc=5",
+      "date": "2026-11-24",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "HPCwire",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "b15d1f86018b1bf8",
+      "title": "GAC builds 100,000th amorphous alloy electric drive unit",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNOXBfQ082V3VfY2RxWDFnek9Rb19VdlJYcTIxNzhRb0RDUXM4Q3JjdExZZVd3UzBKLS1wblpKR2VDMjBtSi1XVHJ2SWtValpzUXptRTNTUzNoVzh6LU1iUFNrWk9qZlJiUXFMTU55RHlVV0Y0alhGalo5T3BUTEtaV0Etbkt2RVVIcXo4amdocVY5Wl9lSmxBeQ?oc=5",
+      "date": "2026-11-26",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Automotive World",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "03202d76849c8fd0",
+      "title": "Scandium Canada Announces That Safran Landing Systems Is Putting Its Alloy Subsidiary's Scalium(R) Plates to the Test",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNYTNhVDhhc2Z2aW1rMXZ2a0w2UnRUZkl3TEhnX0hoV0QzejNLcVRqU01Jai1oLTVVSk81ZEtEYUtKSjlLcFRrY1BYbW1RNUlWWGhpRWtsQTNRdy0wb3dSbVBvQmhyZEhaTmVpcFhIS1Q2eDh1R2hMSmtyaUlDbktHU19STTB5RVpSbjlMYVBOWk8yUy1RT1k0UC1UNjNpQjNYaW1F?oc=5",
+      "date": "2026-11-24",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Yahoo Finance",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "other:canada",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "f5f8ae98ba03bf57",
+      "title": "Yttrium Segregation Drives Anomalous Hardening in Magnesium Alloy During Warm Torsion",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRHBXS0ZrZGZLc1JJbUhZamxzUGFndWFlb0l0SWwwTXd6cWRFdDBOTVRCck5uQV9yMHBUVjliRnROMkszX3JHbENVUDNOMzA0LThrbU5qT1hiaFFOblRnSDdtQzF2MW5zRUJ1cTFYeHpQRmh4SjlOZEpnWjFCd1B5N3dGV1d2T000eGZMVkZxdWtwa3NXUzJiNU42WVpsdFA0dVhvLXVJMVQ1UGROVkdJ?oc=5",
+      "date": "2026-11-28",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Bioengineer.org",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "339150c8e24fbade",
+      "title": "2026 DEMO Kona Process 134 27.5 alloy free shipping For Sale",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBFaWlZVjRLSnZfaTZjdU5XNHIxVDRaS3JyRW0yZ3RUOHN5TFUzSnIyZUVsTEVWcF9MbS11Z0ZuYmRURm9qNUt5cEFGdEJnQjJhYmRr?oc=5",
+      "date": "2026-11-21",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Pinkbike",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "9b1d29f162ea9b34",
+      "title": "United Alloy-Tech Breaks Into Starlink Supply Chain; Serbian Plant Wins 8-Year High-Pressure Housing Order, Shipments to Start by Year-End",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA5U0FENnJXaEZQY3I0dzNvQjdrNS1Icnh6NFVVNEJBZXpTWndFaEZucU9SWjB3bHpuY1BNWjBCVE9UNHcyd1hWVll0X09jSFJSSVF3dFd5d19WV0Vhdm1KOVR2UTNTMXJBTzJLUnRwTDg4QUw3clE?oc=5",
+      "date": "2026-11-23",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "finance.biggo.com",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "vendor-marketing",
+      "matched": "wins",
+      "route": "skip",
+      "priority": null,
+      "reason": "Vendor marketing, not news for buyers.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "5af3f694274543a3",
+      "title": "One of region's largest business groups gets new CEO",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNcXFGQ0c4S00yeGlKY191ODFDM1VGY09faC1ITkxMMlQ4TG9meWdmNVAtLTFhUFR4NEJEcGpqUDNMZFk5T255TGZjb2dQX1NWSkQxRXNwYllZMGNDTUJOeUhHRk1IZ29OS0VvRkNDRXdzV0NrVlVJb1pCRGU4aDlzUFFtSVNUaHdjWWFYWmtrZlRkNHlTbmZOU0FpUjY2OHNiX0g4cnh1NA?oc=5",
+      "date": "2026-11-23",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "WKRC",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "4913904d9cca6d15",
+      "title": "Shenhuo's 1A00 Aluminum Alloy Approved for EV Battery Components",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPV2VGbEFkZy1NMkFIY3hrOGRNcF9PMWlJSkFvdHBvQnNRY0h4b1pSY3N0dVR0cEZNS1NJeUVGdFg2U25JVEluRFctem5Nc3o3bTl0Z3BUMjdoWXZjamN5amFVbWRPZXR4U0gtZHh2YjBoTlVUT1JzWEpwbFZmZ1U2N0E4dXBmb3UzSk9VcVlNUGpBVVlSRWtFQ1pKMGdEYjhDMnNSSkVULTRsOVB3b1JaVFc4WXowRF82bTlfLUpuY19qTXl6LUV4NXdYZENWSmF4cGNmaQ?oc=5",
+      "date": "2026-11-27",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Shanghai Metals Market",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "9fef1bfe24a11508",
+      "title": "Tether Launches Alloy, US Dollar-Pegged Stablecoin Backed by Gold",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQMUdNT1JvWmIxdDA4LWRkcENJNHlmTWNyY3Z6a2Z0WjMyZ3BSc254eF9xSmJabENrYnlHX0NtZUhqTmxad0pzNTBWMDcwRFlRRzh1cGVISDRIcnh2QkFWZzRGT3JxN0ZvMHpnMWk5VFpWUjdHOGlLRlhEZUZmVlJHM0Q0TUpzMFAxLXFHcldINjVEc1NleU9vLUFSZ1FsVDFfWlpPdFlJMXZsUQ?oc=5",
+      "date": "2026-11-22",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "CoinMarketCap",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "8b2fe4d4829831c0",
+      "title": "Scientists’ new 3D printing breakthrough could transform titanium alloy design",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNcThZbkM4S0Vwc1FFdHp0aUNZRHc0N1c2eXgyU05pRFhjaDNIM3l0VDZSX3EzSkRyTEk3SjU0MExCZDNzWTZNU1ZLcmVMdVdGLUFJSXRZTFlvLUJTTkZjTGVtSVVHN1hTZUN6YXNScVNMUVBxOGtVaXozQ01LU2xSaWNtZU52bWFOcVpPX0lxaTQ?oc=5",
+      "date": "2026-11-23",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Interesting Engineering",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "cdcf3a1a6ba34989",
+      "title": "Controlled Forging Deformation Optimizes Aluminum Alloy Strength and Corrosion Resistance",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWUJtcjBlZG4xRlZ5ZkJMRVFWNzMxUzVaUnJTS3dxSUNMRkR0WnloSkJwUVJYcW15UHNmRG9ZRHU0Z09kdDVLb1U1c0FuRW9BV29haVJDUktoY0steUtFZWZTZFdlVVFUUjV0ckxzcGo1czVrRG1iNGZrOGlqbVRxdXVDem5qWWdSYzhPMXhTZ3VtM183cGt4cnBOX2Ztd1pDeU1DRnNmblJnZUF2bXVSQURXbW8?oc=5",
+      "date": "2026-11-22",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Bioengineer.org",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "699dbf313d4e94fc",
+      "title": "Hammer Peening and Deep Cryogenic Treatment Strengthen Printed High-Entropy Alloy",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOc2YyMmptenBSR0JuekR6Z0Zma21vNWQwSl9TeFEzbUF6ekh4UHdMRVltQ1I0TFR4X2NfUUxqcGhCRFJwYU5Na2ZOQjBMR0tKRHhvMk0xTDVsYVJYZGtSY1J2WGZUSWcySGpMbV9ZTDVxbExXTTJldWlRbGpQc0dUVF94bVg5UzJNSzhtUEI4QjRlS3EzbXhWNnBURzhFVUZ6bHlzNm5JVnRTQQ?oc=5",
+      "date": "2026-11-27",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Bioengineer.org",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "0b5e71aa7c3c63ec",
+      "title": "Finite Element Analysis Shows Titanium Alloy Provides Superior Knee Implant Stress Resistance",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQckxRNnoxRkJpLVRwNGhlQmotMG9iR09iYTU1WDlRU182ekJfY3h1R240dkVFSGxfRUgySEpydV92ZnpQR2NYZnhEMTM2Ni1sMFpGV1pTZG1uRmpMeXgzOWxkeFUzTmZtWXFOSW5oSGlZemRHbG9kbW8wbXZIRTlTSWFxMWZNallpajJPaTBXNWFmNEpkWEFMNnR5WEo3dTNWMHJuRGVDUnh0U1RVbjdMN3Y0bU1JWWNzX3c?oc=5",
+      "date": "2026-11-26",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Bioengineer.org",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "933d5c5a2d65637f",
+      "title": "Annealing Laser-Cladded High-Entropy Alloy at 750 °C Minimizes Friction and Wear",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVTZUbzNUd2lQdmhYRkhuMm9qUy15aV9SNzhITDVSSEVpeHZMT2MtMWtadHNmSDFnWTQ5S0dZeEZ4Wkc1WGIwN3N2QXJJUHl2b28tZ0pMVnRubGVpUkxwT3BuZ1dRZTlrZm5NU1ZGMV9OVTJYQkp2Y1MyaW5zNWdaSVpuUllYeDNGZUc0U1QxWDlyWGNLdDJrcVlEelFnTmJkWXA0cVJtRQ?oc=5",
+      "date": "2026-11-23",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Bioengineer.org",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "16e9565e2d815856",
+      "title": "Fractal Models Reveal How Surface Roughness Accelerates Titanium Alloy Wear",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOd2VKX0tfMzQ2U1hXRWFNRDJ5UGxqbXRhcVBIS1pGNy10OG1HcXFTLUxnV0xubEZGM213SlktOTVwYTQ3RUJra1FvVTJDLUlteXpuOG5uM01KMHA2dG9jak50QzAxNEtVYUhxQ1JZc1MwcVNmaHpFZVdFSlJXckNvSUVuUXItOVhyaWluYU5kVHlLa3NmLXpBSmd6Q1p0TzR1T2c?oc=5",
+      "date": "2026-11-24",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Bioengineer.org",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "11923868201fdc4e",
+      "title": "Review Assesses Reinforcement Fillers and Strengthening Mechanisms in High-Entropy Alloy Composites",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQSVFlV1dhSnRmRFVtWk85Sy1leEJvaldFWFU5VU5Pa2VfTXNwRm54eUdyU3NLNEozWjFGRkw1c2ZtT2pKdWR3SGxlQWIxV1ExTVZZWC1JWWtkelNTQ19BcHBTNHhwSktNQ3Q0M0pFZHlTTHNmeVF1cmU5THY1b0NxbWc3c0Y2REJSam8tWWoteDhxRzNoeXZiSERwYVhlRlc2MmFENmhjbFkwVW1FTVlQeDlLcGJ6dU53cWJnNHloUTVZZw?oc=5",
+      "date": "2026-11-26",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Bioengineer.org",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "cefadd6a4d4d2f9c",
+      "title": "Higher Iron Content Accelerates Corrosion in As-Cast AZ81 Magnesium Alloys",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOV3ZLdXg4WjZ3SV9lSkFkWFU4Q0ZaSXhiZjRDYmVKbGMzeUF1Yl9DUUxWUlFjSHl2MmdrdTdyWGRGdlJFejBoMlFhemU1cWZiTEV6QXJnUnlYcHc2RWN0MmU0NHV5OGFaSnI2UmM4eTVWYkhiQ3VCMUNNWmRHMmU0eHN4ekthRkt0ME9zNVA3cTEtOG5ENndfMUJ6WVRCMlpa?oc=5",
+      "date": "2026-11-28",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Bioengineer.org",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "9c87c9fbc06827f6",
+      "title": "Enterprise normal production, die-casting zinc alloy operation recovery [SMM die-casting zinc alloy weekly review]",
+      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNbGdvcFRGWjNrbEV3LXNMZHptQnphR3gzSXF3dmdwUkhxWndHNmF5X05NUVJHRmtudlhLd2hnanlrc0JqbGpBQ04wRXk4akZXNHJsYU91em5QRl82WjZCUnRubHo4dk5GUHJCT01fa0JXN3lob3NoVUpiNkhXUzlLdU1SNU82NDZfNzIyREFLX2N6U2hPM0VMV01xcC0zTzRqRVl4czlDc1BRSXE3TTFqY0EzR2tyaTJ2b3hVNTljT013SEJ4TVltQ2d4eEJ6LWI1ZEJOUi1jZnJoVHMtUkhOOW5WNndyX1YxeV8weWJEZTFaSUNZMGtrZ0J4ZjdZV2hEc1dmVFV5SFUtZHBQemluNVI2Wkg?oc=5",
+      "date": "2026-11-27",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Shanghai Metals Market",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "2cee54c35ecd7e94",
+      "title": "Nasdaq Targets 2027 Equity Token Launch as AI and FinTech Growth Accelerate",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNazZ2eUZETVBLOENJeXJxdmJUbnVIOXJKN3d0UzhPOXlIYzJuekpkSnBWeUdOeVBaMjFrWElTeEtUUThpR2Q3X3pJWUp3c085NU42c2h6SFp2WTBkeFBzNE9rTEUxVVR5WVFJOHkyOExBN0NpRzg1elp4UzV4czVlRHlUaDM3RWNCMk0tcTFtaHl2cXd2WFdzZ0k3eVFGakNGTktEQ3pSQTU1c1FCdUR4NHZxVGFBeElfLU1wQk9EczlGaUlqOVltVFdHTHNGNS16VlE?oc=5",
+      "date": "2026-11-22",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "TradingView",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "6143b947d3b8f17c",
+      "title": "Global manganese reshuffle: supply and alloy trade shifts for mine planners",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNM0RzdWpIVlFXVmtXblRraUdRY3R2TDZnX3hxS1A1SjR2ZHdNdHRfNlRhWHpkT1lMeHFsVzBWeFpRZUd3M3Z1QmdlWUdTLTBEUzA2THJ5U3FIU0c2YkZENm8zeDdEakZuZl9QaDMtWlMzblRMaThPSFFtYnUxSzFjbmRuMkxJX0dEa0dZdEkxMExLeWdjb2t6Ym9uRjl2OVJXTjRoa0RwWDkzQWRhcTJLUnJ1TXRZQQ?oc=5",
+      "date": "2026-11-28",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Geomechanics.io",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "536b3994a9db479c",
+      "title": "Novelis & Reazn validate master aluminium alloy made with 100% recycled zinc",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNeUVnMUFuOGFuaHRtLTdKTmh2cTVXRExpajNzOXJDVFpVbGJnS0cwUlhjNHNIbFJGZ01QbmptaGVBbk96cXFVVVZWYVdUQnFnd1ZUdmc0dERwY21TbW9xQUJLSEhzMXMtRm1qUFNQMGRmQzFMUWxidHVyd0VZMDQzSVNPOHJhYUNQUTk3MnFjSlAzV3JiaW9YdzZuTW1WLUs0d2R5bEt4bEFIck5EeEE?oc=5",
+      "date": "2026-11-26",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Yieh Corp.",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "e29c124cb97ed6b2",
+      "title": "Weekly Recap: Secure Communications at 66% and QNX customers move to SDP 8",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOU3VUbTZoOWhWNWVMY001NHEyLWN1dWU0UnFIU19XRE10VndfZ3RJTU5yY190QWJBQV9oTmVycXRTcTdfd056VFQ3N1JTajlyT1YxRFluVjRaQXR6WGEycmpvSDR5bTF6UTFJMTk5MGhtcHlQMUhYcTIxcHdiLUozQWgwaWdoaW0wNzZFYUpjcHhWcTdvVVc0Q1h2Zng2bG1TRjZfWVV4ek1yNnYxeTBhTnBJZFRub0kwMHM4RXZEMlM0cVV4clFWTzlLN2wwN2c?oc=5",
+      "date": "2026-11-23",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "TradingView",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "ca8777d9383e34ca",
+      "title": "Metal detectorist unearths uber-rare, 3,000- year-old axe head in Britain",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPQURKVk9fNUswdlkzTHdCMWxHM0trdHlmMm5XZXFCYTVXaGNXcTVQQVVSUUM3T2VjRnFmcmptcTNCNnQxUUZhdU1hQ3VuY3pYNThDWDRCcFlwR25tazJXQXJSYnhmckx4UHdIdktURzN2REUxcTYzMzdiUTlobVJxZE11UlJBMkdScEp6Y2xadTZqczVOMFVYZzB5WWhscnlBeVg4Rmx6RjNCclJ4aXdxTGFn?oc=5",
+      "date": "2026-11-24",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "New York Post",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "c1e04599eac10faf",
+      "title": "SHFE Cast Aluminum Alloy Warrant Volume Decreases by 210 mt to 6,093 mt on Nov 27",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQW1PWlFyN0VHRzFSdTlxN3dIcjVDQmY2cGsyWHJBNzduVy1YM1dTVC1YWTE5SU5WSm1tQTlEaWQzWEI5QTFmUVVFb293UHF6dzlXY3JWQlU0RXF3MVB0SlJ5eG8xdHhFYlpPbVFobzl1eVV0N21icjZXVXZBQWhTVXY3M0VTZEhGRk85N203ZzlyV0NIS3ZTMlp0VUZkcC1td3VVaDJDTnlHMU5rVDBfNHIyNEpkdVVnTkFuaHo1Y2ZtQUJ0cTN2X0MxSzZQTndYSTRiTEVYaU1JY0VoNGUzeXNOblJVZ3B2Y0RV?oc=5",
+      "date": "2026-11-27",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Shanghai Metals Market",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "c3c0203e874716b6",
+      "title": "Superbacteria threaten nursing homes as copper alloy surfaces offer 24-hour self-sterilizing solution",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBMRzVFQ09rd3NjaWphLU5UTjAzTV9EMkFMd2lpRkVrUy1pTHhzbHZBSzZIdkZuNFFqUC1KZlJTTjN3LTlFSkhUYzJpVXdDU2tlWmVGRXBnSQ?oc=5",
+      "date": "2026-11-25",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "헤럴드경제",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "fb4c123c85f06c7d",
+      "title": "Our 2009 Maruti Alto gets a long-awaited upgrade to OEM alloy wheels - Team-BHP",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPaGhseGsxek9GTjc0bnZLSHVkTzNEQ0lwWDVBOFBuc3V2YjhqRHpMUDJvYnRUemkyTFZiLUNOUDRtM24yS2N0bUtnZ0Z4NFFqLXdBWmNDM19wamNFZVFDbEhKUU1BYjA1ajBTdGl5QWIzSUcyazlJQVhKWUtDcVNnODRGRzA5d3pMaENib2lsMVg5UDVoeU4xRtIBngFBVV95cUxNcjRucnlzVUVwMjVYMVNzdDJwbEx2b1NfSk9ZZlZxTWJTZlhhcnZLdHdYVnk0S0pnMVZEaHBQMXNHdEN2TEhzOGJmbGgtM3VDWGhXeDdveUpwNUc4X0JDaGQ3aWNsZlMzR2dWTWlzLUdtN2Q1Y25iOVpoRUVyWXA3Q251b2JxOUthMGhzR2Y2MnNKOVpOX0ZJcVpGUkQyZw?oc=5",
+      "date": "2026-11-26",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Team-BHP",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "3d0c351251c36af8",
+      "title": "Yian Technology Receives Approval for Biodegradable Magnesium Bone Screws - foundry-planet.com",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNYUtCcTNodjduNkIxZDhXSEdVQ3U2LWhWQ3hUX1BFWGstVVh2SGt5UGJ2QlA4Wl9QWExXc1hoV0MtdTdQSnlQZENwQ1F6c0N0cWUwbmZuSUplNkVWajFJd0ZIMC1GbFo0Y0dkMXhOSE5fNDZfNmt2WThzajFsUGNSVnlERjQzamtyS1VsV2FkcF9jZ3YzYmRIbFdQRmc0TE1QVnRUenhpaTVpWTQ?oc=5",
+      "date": "2026-11-26",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "foundry-planet.com",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "edfbce86a95cf2f8",
+      "title": "SeAH Besteel nears US alloy production to target aerospace market",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNVnYxeDlWMHE1VjlJc3JzeGkycl9JOTBXV2swTWtrellsVUJyU05hYWpMRUFYR3RybzYtVktEV1ZOSS15MWRTVFp4eERLNDZiVzFWU3RHOXpvTUVEUzc4ZUJQS0Y0ZXVmRXVkY3hieGlNLUt4bjhtazVwRGliR2x4QU5R0gGWAUFVX3lxTE9yRld6ZDlicTF3Z0xBb0RMMVNILS1Ub19sY19lVHlZY3pqb04yZkZmSVhSUVBKUU9SYktfeDZNdnpycGhDUGl3aXZBZlMzd3QwSTZFRXZrRFNycE5RdkZWVzAwbWc3MHRRbWoyMWhUdGJmbnY4WV9OaWdFOThPdjZpcnNtYXdSMk5ENnhfR3V5YWJtcVlmUQ?oc=5",
+      "date": "2026-11-26",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Chosunbiz",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "6d5e44a5569e2ad0",
+      "title": "Gangliangjie Logistics Supports SMM in Creating the \"2027 SMM National Low-Carbon Cast Aluminum Alloy Enterprise Distribution Map\"",
+      "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNVVd5cWlsMFE4eHktcjgxV2RlVVJJVV9yUGdtaWRsNlhORTNjS1dzVTg2c1BIVmZwUWJHUHpqWlVNcHpHRnd6YVF5ZWZoLVVVVGNhQmdhSmNlZk12WEtFTl9JazRleXV0bXJtRmNENG56WlVCeFVBRVlleC1TY2Z1TExDMWZpdUVZcWpXWUN0ZGhCWEJ2eFdIWHhMblVWYzE2UTV6Z1FGdDdjOWludzRVWjYtUzZxNHMtTzE3WlFZb1c1NGwzS0xsYl9QTk9samdHNzJtSmo5NzZXb1dvRDQyNXZ4M2tCa0xDM3ZVZmU5R1Q3Y09MS2lLZ3ZyZ0YyMG1YQ25xOUZuVDduUDlRYVlZQ3hvMzBxdlJXRjRyaDJvZWV1UW1aVG1udldCMA?oc=5",
+      "date": "2026-11-27",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Shanghai Metals Market",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "f32a078219a5718a",
+      "title": "BlackBerry Sees QNX Growth in Smarter Cars as Royalty Backlog Climbs $250 Million",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOUUEzMFVYcXpFclBlZ283akFzSVZkNGdJbDBqMlVla0d0dGNwVHp6UjlBdmlERWlzd1d1WEZZMUlyeG11WUxrazM1VGI5Vk14SjRlVEcyOWVpTzBJdndRamZGYS1lSnNyQkhlNnpYdDhVZVNQVFF6cWkyRmREaU5WaDFQS1QxZVpja2tRNXZQSWkwbTR5R0VVcXpnaG0wUEhZazZZSUd4Smc1R25ZcGx1aFNYWWdoaXdWcGpTa2lSelNNLXFHRkFGWEVWQzNKeER5R2dJcTdWb0g?oc=5",
+      "date": "2026-11-24",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "TradingView",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "5158977896940d5e",
+      "title": "Noble Metal Alloy Bridges Market To 2035: Aging Population Supports Growth - News and Statistics",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbXhvZERuQ2ZOcW9BVVp6U2VpUTY3S19QbzdRS0tKTE5weTJFWmhDOHp4OHExNnlyc01sS05mUzU5UGNENjZvdnhSZV9UWXdmY1dQSW5TNGczcERsQWo0LTJrN3Axd3NQWmdqS3pTMk0xVW1hajRlZERoYUpxYXNwTzE2V1RVZ2ZnM3FjdVhBbFlxVW5xY0RwZDl6ZVhybTdJY2pSZGZnM1NIa1dFbVhxSThySXZQY2xX?oc=5",
+      "date": "2026-11-28",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "IndexBox",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "fa769a59552ac0f1",
+      "title": "Opinion: Sometimes, even keeping intellectual property in Canada doesn’t keep the wealth",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPWkV2WHctNzEyYVl1RFc0bUxYbmRHb05JeHYwUFhxc1RvRTRIck5QZUFIbEFDczJYTEkzRVA2dWZsc3NrRlFJVHJ4THRYb1FIZm5GU1VMOTI5QklBYlhNUksxN2tBeTRNbEg2V1lEWmdzeWFWZWZMenBtVFhzMUVDQ2lVdmt4NURMX3ZGOEl5OVVvNDRmcWd2ejNSV0NCS21GM0dibTN1X25CeG5GZFVBS0llU24yOFRnUjViYWNhRlQxal90SFRVQVRDYw?oc=5",
+      "date": "2026-11-26",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "The Globe and Mail",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "other:canada",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "abad3337b2e21375",
+      "title": "First Atlantic Nickel & Cobalt Raises Total of $9.9 Million with Second September Financing; Strategic Investor Exercises Participation Right to Maintain 9.9% Ownership in $3.77 Million No-Warrant, Non-Brokered Private Placement | FANCF - First Atlantic Nick",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQZ2JaSUt3OHdKOUVrNXNDemRjLV9JaEdxRlhIQ1Y4OE55Y1U2aWNZLVk0Rjk0cHRkcUJhVFBHblc1MUxheWlUZEpLWURWLTI3WHkxMXlUNXRoRm8xVzVCeXpxRTg5NXVSTmc0TUNmVW1VLU4zV3RTcnZoN2QxQUxMdjdDUkQ3R0s4cmd1ZzFQTEJCM0xXYll5aUgwVEg2SXBibEhvdmY4d2hkT1ZkbHJjS3hkbF94SXlyOUZhMTExNTZfN2VDVGR6UWthblNzMm05RzQ0V2lua1FCVE9VczMtRFRfMUhYdmxkeFc4TnptdmdmNy1JbEtEend1MzBBTTZEaFpZeQ?oc=5",
+      "date": "2026-11-23",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "OTC Markets",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "funding",
+      "matched": "raises",
+      "route": "skip",
+      "priority": null,
+      "reason": "Funding rounds are not covered (owner, 2026-11-16).",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "19c3cbd07f9b3b57",
+      "title": "First Look: Santa Cruz Nomad Alloy R V4",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcEs2bng0WTB4NG5KcjM4azJ3bVFwUWpsRm1VQ1hybkV2V3M0S2tiY1V2akVXV2pqbjk3cENMbHNzcHM2S0UtTmdPM0JyQTJXVUQ2T1J3T3U2VFEwc2ppcXFBRjZ0cy1WQi1pQW5VeXFISWpxRjgtVlFRY3VSWHJLQWc1R1FPYzVKU0xtY2VtRG55X2dIbk5pMmhMZWM0bjRZWnNKVTAxTW0?oc=5",
+      "date": "2026-11-27",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Road.cc",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "dd3e76ffb4f7d9f6",
+      "title": "India: Pearl coke prices ease in Nov'26 amid weaker alloy demand",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbFdCX3h5ZTVOS3U3dmVlSWhra3huc3RVZV94Zncxb2p1X3dFU3owOEtTUTlMZmNZSXMzMWRJeGdwSXdGSEZBWktzMHgwVEw5RGR5bEp2cTAxVkdaVVU3Z0pJaFF6TFZmWTVOWGZFQzNqSmMzQ0ZMaTA2MDEzeTFOQ0t0RUg3dnZzcjJSdkhnaEl5OUZIdDQ0cjVQQlNZNW5za0JPLXZDaWthZjZz?oc=5",
+      "date": "2026-11-23",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "BigMint",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "other:india",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "9ac90a5d51a98557",
+      "title": "Metal 3D printing enables a titanium alloy with a deliberately varied microstructure",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxORjFjQUhUMlpiakszLUR4WWE5VndHVlk1SEppbW12cGN4VTdQZ1NBVlhQM3QteXpOdTdUdUYyNXY1TndhZnFKRTNYRmVIRmphY2xySU9mYnBYY0hZdXgzWHpNSFluVUhRY1k2QUtGb2JjU1AxcXJxWWx5RU85X1JvUExhcjZOU2M1NDJTS0VrT2s2OUF6TW9adjBTUndNNnR3ZGl3RkRZeUlaTXoyY2ZVNEtXaGxIa2tIUDFiYjN5Ukk4OFk?oc=5",
+      "date": "2026-11-24",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "3Druck.com",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "3eeed9be9eb7b4a6",
+      "title": "Manganese Supply Chain Shift: Gabon, Ghana Export Bans and Alloy Repositioning - News and Statistics",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPYmNyX055QkY1bDRGVFVhT0VCX3RmSEtWSjVrSFhud1FqNUFfd3FUeHk3eUJoU1ExaHhqSHlLTzVQZl9HY1ExQTc1WVhncGVOTzdKVWd2RlJMX1RLS0pYS2xUODlhdTA1allyckttU1dWb3ZsLUJwblBkUXN6LUtmNjhtVktodVVhQ2dMM18tREdCVjgzaUpnRnQzUk1IcUpITjV4WUhCcXdKNm91OUxxUWxIVExua2c?oc=5",
+      "date": "2026-11-27",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "IndexBox",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "2ba01a159886868c",
+      "title": "Cubex Tubings Limited says five alloy products replace imports",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPYXo4clFvb095aWw5TzMydVRrSUM1NkpFOTRYa0lGWXRUbXpNNUZqWjNTTVNlZ3o1bENJMHpTQzdIMnd0M2xTY0V6c0NkdWY0ckdnU0tLVnM2SzNRT2hHMmVaYW5JaEticklGN3plX3BtLXBFRV9lVGtHMUk5QzdDTnRfUWFwSkdHYXN6ZFVTLUMydUlsRGNIOXZqbDRQMkd2V3o5TC1HU2RZMzVQQUE?oc=5",
+      "date": "2026-11-26",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Multibagg AI",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "99d1d9a491533b4f",
+      "title": "Honda CB500 vs Honda CB350C: Price & Mileage",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5la1plRkNxYzRjRmZsWEVzYTFmT29lQ1paMjB2VklUeE5QdUFNOHpHWHNEREt2UXAyU2ZobkVLQ25rSFN6SjA0SC1oWl90azk5SHVFcWVBOG1JRFN4dTRYSFZVTmJlNVRpSEJBaDRTVllQbV9EVm1ra01n?oc=5",
+      "date": "2026-11-27",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "ZigWheels.com",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "1ceb659ef89ecf2d",
+      "title": "Cubex Tubings Ltd Issues FY27 Capacity Presentation",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZ2hVM1ROc1AyNEJoS0Uwc2FfenNDdVQtbHJoWk02eHNnRnpLVU9Bc1FrVG14UzRZbzByVTZ2OG1CNGZ1THUtNEk0dFFiWVBIbDZRemswcDlJbXpZNGpPRmNadHhqd1FoLVdOSW9lcFhSeE1KYTBQSzkxcUpvZXR5SmptRW15b29jQ3BhQ0E2S3p4em5Pbmw0M3VSNUFma21uWWJvcnlOOENnVTlNMkdrZXpqaw?oc=5",
+      "date": "2026-11-26",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Multibagg AI",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "c951ab342ee0a815",
+      "title": "Police appeal after alloy wheel stolen from garden",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQd3ljdmlEaXdKUVFuaXNfb2FuSjFPSnp4dHlQODJZNzlGOWF0eFRENkpUbHZCMExVaW1jdmJLUkEyeWtLQ01QNkNaNVB2MDJYQVBEeE5scHdLSW8xN0FyRzY3cVotLTdyanZMSWV1QV9COU1ZWS1fZ2hDZXFPLWM0c1dteFd4TmZDSEU1U3pUN1gwZw?oc=5",
+      "date": "2026-11-23",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Dorset Echo",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "508a212cf7a049e7",
+      "title": "Second Hand 2017 Volkswagen Ameo Highline Plus 1.5L AT (D)16 Alloy for sale at Rs. 4,60,000 in Bangalore.",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQcHpGME90d0pYUk9KM05LeWtfdENtOEFjNlM1MnR3UXpxdlpGV1ItaXJadTRRejd5UGJhbFNPbWR0ZjFOS2I1YjFrY0NfemNLdmFWR2V5cVhyMHFFemlnUEtsVHQ2UGh3bWp5ZDFndFdIMFRmTF9FME42UW5Dd3FoMHBvQQ?oc=5",
+      "date": "2026-11-27",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "CarTrade",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "361adf8f6eb1c0a9",
+      "title": "GravaStar Mercury S1 PRO Gaming Mouse Features Magnesium Alloy Shell and PAW3955 Sensor",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOajd4WWx4SlkxaVNIbDRSbE50WmpKQmtETmFucVRmaEZEa25CUGtyQ3R6dzF3ZDg2ZFNVN0t5MmdCNzF4NEdmUEFXXzYyN003QjJ6aXlMMlY1MW03dlZvdmZNNlpXZFN5YmJqNHpUNjdYeTI4T3d2amRkaVNzQlNsS1RSbFNaZ08td3ZjdEhCRi01TldaT2FzMXdBSWVXdW05WWZpdEsxWDhTNUNabmZQMnln?oc=5",
+      "date": "2026-11-21",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "XiaomiToday",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "d5c92876cc0785dc",
+      "title": "QBTS Stock Gains Premarket: Nasdaq Verafin Picks D-Wave’s Quantum Technology For Financial Crime Detection",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPWWFFbE9QWTNnTEZzUS1mTHg4Sm5nN01GSlZYSm9tNFVDWGFXaG9ac2JoeDZ1NWFsQ1Y2bUtPUWx4UzFRRWM5NVpobHhoWjNMN1pjWEU2eXdjb21KYmt5Y2RrVVlJMXE1cUd5RXpYVnRGZXprUldsMWoyYUY1SVE3YmZTOW8xU2NSOWZpM2QxUTY3M2c1LXh1bHo1bWcyenJQM2RQLVI1Wm56cVlCRVVqUzhIa0hyUlRneS1fN0pNWl8xZ1RkZHN1VGFOY0VyX09RRUljQUNFZWZLbFE?oc=5",
+      "date": "2026-11-26",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Stocktwits",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Verafin",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "c5e6536cc7863ab7",
+      "title": "Brittanie Maxwell",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1pRmxoT094S3hrdDczUndvbUFIeHRXQWhjTm9McThRYkIyNWtDeEZDTkdaUkI5cjRlWXpFaGgyajMxOHRmUkw5UjRLWEZxUQ?oc=5",
       "date": "2026-11-26",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
@@ -1739,402 +2866,22 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
+      "first_seen": "2026-11-28"
     },
     {
-      "id": "acdf6f7abdcfc899",
-      "title": "Mastercard Is Expanding Its Partnership With Ripple (XRP). Here’s the Latest",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNDd2QjNZYU5yYmNmVkRvZnh3ZmdNVHQ0dTV5YXNVcDFkNDd0WndnRUIxT01RTlRPWE1keVF6cnI0aEpoN3ZxclBQaHZlQ3NlYnZFT01CTFBfSjlKSWdJUE9hdXJYemN0VnJvY2x5WmhXcnE2bVBHbDRVNTczNEhDRVBtandBbkJrVFZkYlBlMjJ6THZRYVhtbGE2Vzhad1k?oc=5",
-      "date": "2026-11-25",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Times Tabloid",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "vendor-marketing",
-      "matched": "partnership",
-      "route": "skip",
-      "priority": null,
-      "reason": "Vendor marketing, not news for buyers.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "8de561d1f3450b2b",
-      "title": "Lane shifts scheduled on New Hope-Lambertville Toll Bridge for Dec. 1",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTDlLS2o2UmxzMzVfcWVETHhTOGJFcXhKUm84djFHRk44QzFWQ3drZ3pCQkI1N0JiNnAtb2hwZ1pfZlNJTkYzdWE0NUR3LVhFNE1FWnA5QXFFV1lEaUttcGV6RTlsc2R3bElTRi1Ibm1LOXczTXBBelZRQThfNDFEckNObVFYMEtHb2VpZVlCVGp5OTFwd3c?oc=5",
-      "date": "2026-11-27",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "WRNJ Radio",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "3ea14742e99c3821",
-      "title": "Pinnacle Silver and Gold Corp. (PINN) Reports Up to 5.75m True Width at Potrero",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQLTQ5LUR4NnhmaFE1ZDBvYnFtQWdacGE3ZUM0RHkzUXBQOWpMbDNyakRqUllrMHIwTEZaSlZGLVNTUzhWb01kLTZaNHpvS2NrakJDNDROU1puUjVwVmk1OUdhYWk4QjgtbHpyU1NWYVJWM1RJcWlUR2ZJR25XSjd2Mmd0SUZEZWQ4YmR6eGVIbEZ4a0hPVnpES1h6VTJheWVfRDZPQnhodDUtdHB2Tmp3OXJ6aVpOZkdVcmFnamNIZ1ZGaTZ2SzM3bTZJV0RNSHVlLXdWRA?oc=5",
+      "id": "b7aa47969d3aec55",
+      "title": "University of Tokyo Team Cuts AI Error by 68% in Predicting Alloy Properties Beyond Training Data",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPVm9JQzcwaVJwR3hMZDg1aDg5UW1jZzZxdjR3REJ4aWpFNTBSM3hfNW50Q1dxWklGcU5TVl9fZUJDN2dzLUh4LXdLSWp0Sllsb25jd2pNaTZqLXBRcWhybEozVmR6Uk1ZT0VrS01BWllUbmE3dXNRUUQtREpTWXBiVS13eGVDQ3c?oc=5",
       "date": "2026-11-26",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "TradingView",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": "width",
-          "name": "WIDTH",
-          "reviewed": true
-        }
-      ],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "28682fb686f1c143",
-      "title": "Huawei's new HBM memory doubles the interface width, aiming to challenge Samsung and SK Hynix",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTEhPZ2dnZXFyWHQwOXJUOXVkcHNJcWE0NEt0amU4UllHNjZrWDBqRlJDUE1Nc2o0aEZGeXEzMnREak5DcHg1Nm9hYXo0NlFxRkFIV2tEZzY4R3ZENTNodFA1R3FzamxUYmR5ODBidzNBRlNicGktc19HTkVacUhFQ2l3M1Nqek5lZ05JaWx2bnRWcG8tVTIxeFROeFpYdk15YUpKN2hDYkVYUXFDVWxsVFdTb0NiSGl0Zy10ag?oc=5",
-      "date": "2026-11-26",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "KuCoin",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": "width",
-          "name": "WIDTH",
-          "reviewed": true
-        }
-      ],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "d910e4011415c49c",
-      "title": "Huawei Lists 4,096-Pin HBM Memory for Chip Conference: Twice HBM4 Width, No Speed Disclosed",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPZWFnSFB4Y2wzYkpLeGwzSEE3WlVkd3cyUmt6Vl81bWJrVE9zNW41eUwyZVNfQmIzcEcxc0d6Q1gxWDdQN0RKRjhOWTlscHRZSG9rSktWdFhMYWswSkxvVjR2dFpBQVFoRE9FQnhHV1NmOTR0T0JZR1VYdG9EUTF1Zy1iTlhrc0hEQXRSQm1qa2V4X3hsQ2t3TUZzZTNFbUlHbGJCLTUtQXV0djh4alhQQ3FfV0hSaEZBLTQzY1ZneHZZYU5wOThpbjFhdkRfOHhYYXRtTlh3?oc=5",
-      "date": "2026-11-27",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Tech Times",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": "width",
-          "name": "WIDTH",
-          "reviewed": true
-        }
-      ],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "17838c1eb182f727",
-      "title": "If your shoes pinch by lunchtime, this list of wide toe box shoes is for you",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5OandpdjRyWTFyLUpPR3IxNXQyUHBtRTgxMDZkNDcyTlBFeDBhbHh0bEdLR2ZzdXUxdlRJeEI0a3Z4Z3pKa25ZejdHdl91aS1qam5hc1U5cWdIclh1eE5xY1AtWkh4TE4wc0Z1OU4zRkIxY0U1UjBpQ29KRi1mNTA?oc=5",
-      "date": "2026-11-24",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "NBC News",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "cd11df10f4b1bef5",
-      "title": "Cut in half: Saucony Endorphin Speed 6 Review (2026)",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE11XzJCYk9BXzExQnljYm5tXzB6X1E1VHYtRDB5bnZOenpJeXMtMnhWaldnR3gxZzVyUzlfb202RzUxTEthX3pYY0dvVGZQMEl5Znh0SUFMdDVaS3c?oc=5",
-      "date": "2026-11-25",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "RunRepeat",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "24d8fd2927b1aafb",
-      "title": "S&M 12 Step Bars Review – Joke or Genius?",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5uRDg3ZWxwOFhyOS01Y2ZXX0pmSVpaV0tuZTdZM3QxclVRdXVTcDJvZXV1cEp5bW4zMGtPSi04Z2YwU3ZOeEJ2UTI2X2tVSGQ2?oc=5",
-      "date": "2026-11-24",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "The BMX Dude",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "54d404d968af0047",
-      "title": "5 Best Hiking Boots With A Wide Toebox in 2026",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1JUXJpUzRuMGNsbUhxY1BhRXJkWDkybXJuTm1YSUI0OTRyTlpxWTlsUGNlZXhHUnZ6b2JvWGxZcHlUM0tkQWkxUS1OSFZXNmRtRDBGSzBLc0gyQkNYZHpRdEd1S0pLX3RaQnc?oc=5",
-      "date": "2026-11-23",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "RunRepeat",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "056090dcc537f934",
-      "title": "El Gobierno autoriza licitar por 42 millones de euros las obras para adaptar a ancho mixto las instalaciones de seguridad del tramo La Encina-Alicante",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOU1JhR1dmVXJKWUt4Tk1wVmh3T3ZlZTlOSUZrV0RISklBUUNtelVfSjVUTy0xMDFRUk9LV2pzR1JDZnVfc2k4d0dfX280REJvOWhmU1BHZ2xiMzM4Nm5JZXZPTC02UlRYOXFxajFWb28ya3VmcHZvMlFqTVpxUk90MnpPMVQ1YTR5TnlRenFjWkU?oc=5",
-      "date": "2026-11-20",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Ministerio de Transportes y Movilidad Sostenible",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "b61dff211fb7a43c",
-      "title": "Comparison: Width Suzuki Ignis 2027 vs. rivals 2026",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9qdXZfMW8xUkNpWC02TGxwdlNfdFIwNWwtVFpCZjcwNnJRb2NmcUlXS3g0MWFGSGM3aUg1Y25zMDFDZWZ0Wk44MFl1TTM1U3l0UllJSVBGMGNHcmFFS3ozSVNJdEZlVExpeTNiWlItTUdmQQ?oc=5",
-      "date": "2026-11-26",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Autohled.cz",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": "width",
-          "name": "WIDTH",
-          "reviewed": true
-        }
-      ],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "d3800358302684f4",
-      "title": "The Width of a Post podcast: Crunchy Eggs and Short Blankets",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPYTc4Ql9zUEQybHJVRFFOa01rdlU5cVM4RlZIZHJ4UjJyeEVLcE1scks2Z1AxdEtObHQtZXR6QXZMLVBqaHFhQnpMcFk2a0lVSU1vOHNkaWxTSk9TWm94QnlUYUFFV1kwOGNRTlFqVzJuRmoyS3lzREV2OU9VWnNrVU1Oc0xRNkFwcGQxVjBGdU5hZHZsUmx4QzVHV3g?oc=5",
-      "date": "2026-11-27",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "WidthOfAPost",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": "width",
-          "name": "WIDTH",
-          "reviewed": true
-        }
-      ],
-      "region": "Global",
-      "rule": "vendor-marketing",
-      "matched": "podcast",
-      "route": "skip",
-      "priority": null,
-      "reason": "Vendor marketing, not news for buyers.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "327730aeb9ad0388",
-      "title": "Big on style, easy on the wallet: Men's sunglasses worth buying",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUWw1ajlkQTVSbC1RQnByYUlnUEJRUGZzMGJ4ckQ1SUFGcGxqcTN0UjJ2bzFzVVpMZ3o1dFZvc3E2c3R6SGFLdnFfblFOaF9Nd19IcE1uTDVVU05yRjZtLVZIUnJXVTByY0dyVjZ2RGxfMW41QUtMVE5HU2lSSEpTYlNBM24tWmlpRkR3ZkJTR2NaREdZUnc5LWtWWFRsd2hqOVkzY1RBdU1LTlhlakpQTUlpWnhuSnFycjh1MnNpRdIB0gFBVV95cUxOekhrUjRrMUlINElSSGhzdkxXRUczckJ5NlhnRHBGVXE2akNVR0pocEhqZzlVb19qRUZvYXdGQVRiNnduaFZ0VEhKdkNlN1pMMlRibXJmWlpkYjZSQUkyY293LWdUeUl2SlM2ZFg2YzBTaU5qYW9VZjM5cG05S3Qzb05iTWJfSnNCc05mbXhOU3VDemFUYms0VXhjUmFvNUxnVjgxNWdnMW8wZ0F0Y3RJNi1NUE5Lc2l0VURPcDFWcVhGdXplRTdHR1JOMnkwa2JuRGc?oc=5",
-      "date": "2026-11-25",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Gulf News",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "fdab8b8d64703633",
-      "title": "Soon high-rises on sub-9m roads",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZ0E4STNOTF9WbmxBMEViTDBWZTV0NDNKRHZlMjlKYzdaSVZwbFlob25lMjUtWm40amNBWWNkd3FoaVkzaG9ucmdCMW1jZmZKVDV3am5IZHh0TWpXLXMyN2VaZm14QWhCaUNJeXY1U3kzZ3haSWdwUXFmNV9PRXJMYg?oc=5",
-      "date": "2026-11-25",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Mumbai Mirror",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "c0b6388a80670610",
-      "title": "felicia hardy face cc | anatomically detailed + 432hz (requested)",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE91RldYb1hjVE1pMzMtTWQ0ajk2YUd4bEgxaXpMd2NZTXhlVWQtNmxTQWt6T2FqMzMtVHBZa0xUZnc0VVpCRUdSMTRfRmhfWmg0NE9aRG1BTkVva0ZD?oc=5",
-      "date": "2026-11-26",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "YouTube",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "642925ab3fbb9d34",
-      "title": "Dark Chocolate News and Updates",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5WNnkyaU91VUk4aXZMdE5tdWViYzllNldKSEFXdzNmUVlkdmpKV1NDckpZeDBIV0wyWDUxa3BLeWhmbEFkVGotcA?oc=5",
-      "date": "2026-11-26",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Adgully",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "7313fe795ed7a766",
-      "title": "Mohit Yadav News and Updates",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFByeExIWUQwa2RyOW9rVjNVLWg5UjBEOTNkTlpHOTFCQU1pb1RWWVZLNW9pbzdSeE9uZHJfcHNwY1JGaGk1MDQ0eg?oc=5",
-      "date": "2026-11-20",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Adgully",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "8ea446eaaba4948b",
-      "title": "The Ministry of Jesus",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9rRERhaVdVLTI3WmF0MFVsT3FteU1MM0JQYXZLLVh4cWJPamwtc2xYWEVIallzeWNYMlZCdjlGWjRYQlhRZThlZVJTempCakdXc1pN?oc=5",
-      "date": "2026-11-22",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "GodTube.com",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "45150c811393cb9f",
-      "title": "Particle WCX Ultralight: 1,100-gram gravel wheels with 32 mm internal width",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNOHZ3R1lJOVFmVzFsWHBzM1o1ODQxZk9yT3VkSHgzVkFhWUxfWVR1OWJRLThwUjZyT3RrWEdqY2w5MTYtV1Y4dDBPNDNXOC1TOHA3dksxNjRyVHl0TElVemhrek9jV25ScWVkN1o1YnRNZFU0TnQ0OVA5YWVFUHJMcERuNnZZTzRIQzdoY2k0dElodHlfYzdpamRYUG5iVXk1ZXNQN0pGNHBDRmlMdkpEN053?oc=5",
-      "date": "2026-11-24",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "Foro3D",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [
-        {
-          "slug": "width",
-          "name": "WIDTH",
-          "reviewed": true
-        }
-      ],
-      "region": "Global",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "d5f1a90d2d1fd3a3",
-      "title": "Good news for UAE beachgoers as Ras Al Khaimah lifts all hotel beach restrictions",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSV9yREI1V2Z1NjYzbTFjbkNuR1h4VTRkZmJoVTVULVZBeU9SaHUxdDBBUTdXaXBIMW9nMXlnNGtrX1dPVGhUT19PUXRqOW5oX0hBVFltcm5xOV9iNUpLSm43SXhHbEowNEN0cVpqVGlDRTMyQW1hQmlXc3FVNmNlWF9pVF9oU0tlaW9ES0VzY1JQTklpTFVZWjFQS2EzUlYtdURtNW0xODJobmtpOHRvOA?oc=5",
-      "date": "2026-11-27",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "www.travelsdubai.com",
-      "tier": 2,
-      "needs_primary_source": true,
-      "providers": [],
-      "region": "other:uae",
-      "rule": "fallback",
-      "route": "skip",
-      "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
-    },
-    {
-      "id": "1fbd31767ec4eabb",
-      "title": "Vendor Risk Management Solutions",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUGN2XzIxOHQ4QUFkOGZBVHdFSTh6LWgtOEJZOFlCN0luNDNPRU1pRFE2Z3VXcmhvaWtZYXNOdl91X2lWcHRzVzNndkxFSU94Wjljem0yalpURk1xS3JmdmZSSmxrbHpORjR6LVVod2dpSzlIOFYtVFo1dWx1ZlhsTmJ6SzdXMGFFdmhCVEJmaUV0T2h2bXY4Xy1ZcmJMeXY4cXM0UXlDZndGVzA?oc=5",
-      "date": "2026-11-20",
-      "source": "gnews-providers",
-      "source_name": "Google News search for providers in our records",
-      "publisher": "LexisNexis Risk Solutions",
+      "publisher": "XenoSpectrum",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [
         {
           "slug": null,
-          "name": "LexisNexis Risk Solutions",
+          "name": "Alloy",
           "reviewed": false
         }
       ],
@@ -2142,16 +2889,16 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
+      "first_seen": "2026-11-28"
     },
     {
-      "id": "e35bc95b0a56fbd0",
-      "title": "KYC Refresh Backlogs and How Banks Are Clearing Periodic Reviews",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOenh6Y0VSdlJ5OVo1REhuY3BMTVBSQ2ladDVMU3I2QWVMS1UxanhhZEh4YzI2VS1zb1VaZUp4eWdoUWtfUjF3X0dybDQtZGtMS0ladnVfbklseFVFaXBoaWpTS2hJVDhiYklXUkJWbmctRGc4eTVBd1Zzajl5MjVORnJPaVBRSzRnYlJhMlZuM29yaFNTeVZoX25FRFprVHRJcHJHQU9LSTNRVkVockdz?oc=5",
-      "date": "2026-11-26",
+      "id": "8f410ef3f6339c37",
+      "title": "Where to Sell Gold: 8 Best Places for Cash (2026)",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE11ODNBSUZ0OVMtU1FqNW8wRVpRUDZrYUhPQmdqdjF6N1NGZUwwSk54LVJZYlRRUXRxYjZWSThhc3RsT0JRWmFidmtUWmExZnVFTEIyNGE2dnVQZw?oc=5",
+      "date": "2026-11-24",
       "source": "gnews-providers",
       "source_name": "Google News search for providers in our records",
-      "publisher": "Nasscom",
+      "publisher": "Well Kept Wallet",
       "tier": 2,
       "needs_primary_source": true,
       "providers": [],
@@ -2159,7 +2906,30 @@
       "rule": "fallback",
       "route": "skip",
       "reason": "No topic rule matched.",
-      "first_seen": "2026-11-27"
+      "first_seen": "2026-11-28"
+    },
+    {
+      "id": "62fadc29ec5a7c82",
+      "title": "Buy Grey Zinc Alloy Key Cover for Toyota Corolla Cross | Elite Series Metallic Luxury Smart Key",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPTjZpeWplcm9yUG5qVVJQSWxVSTZKalNhbVc3RVQyVTBvdWw0c1kwSlNRT0wxSEx3M3JPdy00NG9YaV9YN0NScVlOMWh5NGtWdTBrd1hraDNRdkJHVHprREppeGJFZWtJVE1tQy14TmdiNkd2VzM1S0syVjBFaGdrclJRTTJxWUgzRFBXUFBxQU1aNVhqeWZQV1dSS2w1WHNnTlJFZ3VLNWQzcWhyb09vNVJpOC0zT1VaVHMwSGxRUUZseUQwSF9GNlNtWFF4ZEZoTkNsenZyUTJ0eTQzZTByWW5QNjZ4QllzaFBYLTFR?oc=5",
+      "date": "2026-11-25",
+      "source": "gnews-providers",
+      "source_name": "Google News search for providers in our records",
+      "publisher": "Pakwheels",
+      "tier": 2,
+      "needs_primary_source": true,
+      "providers": [
+        {
+          "slug": null,
+          "name": "Alloy",
+          "reviewed": false
+        }
+      ],
+      "region": "Global",
+      "rule": "fallback",
+      "route": "skip",
+      "reason": "No topic rule matched.",
+      "first_seen": "2026-11-28"
     }
   ]
 }
