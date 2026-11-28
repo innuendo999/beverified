@@ -1,4 +1,4 @@
-# AML watch 2026-11-27
+# AML watch 2026-11-28
 
 50 of 61 pages read for 10 providers in the AML ranking.
 
@@ -47,9 +47,8 @@ A term is not a point. Read the passage on the page; change the record only if i
 
 ## Changes since the last run
 
-Lists, terms or stated update times added (+) or removed (-) on a page since the previous read.
+None (or first run).
 
-- KYC360 (kyc360-1d0356): lists +uk. https://kyc360.com/ad-hoc-screening
 
 ## Pages we could not read
 
